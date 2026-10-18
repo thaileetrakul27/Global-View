@@ -122,6 +122,31 @@ export interface AboutFile {
   articles: AboutArticle[];
 }
 
+export interface WatchingEntry {
+  code: string;
+  editions: number;
+  baseline: number | null;
+  share: number;
+  sample: string[];
+}
+
+export interface UnwatchedEntry {
+  code: string;
+  matching: number;
+  total: number;
+  editions: number;
+  sample: string[];
+}
+
+/** Humanitarian signals estimated from headlines. */
+export interface CrisesFile {
+  updated: string;
+  /** Countries the world has suddenly turned to, with emergency headlines. */
+  watching: WatchingEntry[];
+  /** Countries whose own news is an emergency almost nobody else is reading about. */
+  unwatched: UnwatchedEntry[];
+}
+
 /** Optional files: null when the pipeline has not produced them yet. */
 async function loadOptional<T>(path: string): Promise<T | null> {
   const res = await fetch(path);
@@ -135,6 +160,7 @@ export const loadAttention = () => loadOptional<AttentionFile>("/data/attention.
 export const loadHistoryIndex = () => loadOptional<HistoryIndex>("/data/history/index.json");
 export const loadSnapshot = (date: string) => loadOptional<Snapshot>(`/data/history/${date}.json`);
 export const loadAbout = (code: string) => loadOptional<AboutFile>(`/data/about/${code}.json`);
+export const loadCrises = () => loadOptional<CrisesFile>("/data/crises.json");
 
 export async function loadIndex(): Promise<IndexFile> {
   const res = await fetch("/data/index.json");

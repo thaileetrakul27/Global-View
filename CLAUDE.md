@@ -9,6 +9,7 @@ A light, clean website with an interactive globe. Clicking a country lists the m
 - The Claude API (Haiku) is used for exactly two things: translating headlines into English and noting which countries they are about, and grouping headlines that describe the same event across countries. Each headline is translated once and cached by link in cache/headlines.json. Nothing else is sent to a model.
 - Every model call is optional. Without ANTHROPIC_API_KEY, or with --no-ai, the feeds still publish and the previous shared-story file is kept.
 - A failed fetch keeps the previous data for that country; nothing is ever replaced with an empty list.
+- Humanitarian signals (public/data/crises.json) are estimated from headline keywords only and are shown as estimates. "How to help" links are a fixed set of UN and Red Cross pages that exist for every country (see src/lib/help.ts). The site never chooses charities, never takes donations, and no model picks a link.
 - Mobile layout must work at 375px wide.
 - Keep components small and commented. Write a test for every pipeline function.
 

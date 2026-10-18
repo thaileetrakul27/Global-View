@@ -53,6 +53,7 @@ Each feed gets one retry. A country that fails twice keeps its previous file and
 | `public/data/attention.json` | Per country, how many of its top stories are about each other country |
 | `public/data/about/TH.json` | The foreign top stories about Thailand, with the country each was read in |
 | `public/data/history/` | One small snapshot per day plus an index, for the time machine |
+| `public/data/crises.json` | Countries the world has turned to, and emergencies nobody is watching |
 | `cache/headlines.json` | Translation cache, committed so runs on GitHub Actions share it |
 
 ## Shared stories across runs
@@ -62,6 +63,15 @@ Grouping is redone every run, so each new story is matched against the previous 
 ## Daily archive
 
 Every run writes `public/data/history/<YYYY-MM-DD>.json`: the top five articles of each local-edition country and the ten most-shared stories, as last seen that UTC day. `history/index.json` lists the days. The site's day control steps through them. `npx tsx pipeline/derive.ts` recomputes the attention counts, the "about" files and today's snapshot from the data already on disk without fetching.
+
+## Humanitarian signals
+
+`public/data/crises.json` holds two lists, both estimated from English headlines against the word list in `pipeline/config/crisis-terms.json`:
+
+- **watching**: countries that are suddenly in many editions' top stories (at least 8, and double their median over the previous days; 15 with under three days of history) where at least 40% of those foreign stories, and at least three, describe an emergency.
+- **unwatched**: local-edition countries where at least four of their own top stories, and at least 30%, describe an emergency, while two or fewer other editions have them in their top stories.
+
+Daily snapshots record each country's inbound edition count so the baseline builds up over the first week. The site shows a "How to help" block on these countries with fixed UN and Red Cross links; it never selects organisations.
 
 ## Tests
 

@@ -6,6 +6,7 @@ import {
   loadAbout,
   loadAttention,
   loadCountry,
+  loadCrises,
   loadHistoryIndex,
   loadIndex,
   loadShared,
@@ -13,6 +14,7 @@ import {
   type AboutFile,
   type AttentionFile,
   type CountryFile,
+  type CrisesFile,
   type IndexFile,
   type SharedFile,
   type Snapshot,
@@ -32,6 +34,7 @@ import WorldStories from "./WorldStories";
 import StoryPanel from "./StoryPanel";
 import WorldSummary from "./WorldSummary";
 import TimeControl from "./TimeControl";
+import CrisisCard from "./CrisisCard";
 import type { SharedRef } from "./ArticleList";
 
 /** Desktop side panel width in px, capped so the globe keeps two thirds. */
@@ -60,6 +63,7 @@ export default function App() {
   const [snapshots, setSnapshots] = useState<Record<string, Snapshot | null>>({});
   // Foreign articles about each country, fetched when its inbound view opens.
   const [abouts, setAbouts] = useState<Record<string, AboutFile | null>>({});
+  const [crises, setCrises] = useState<CrisesFile | null>(null);
   // Country files already fetched, keyed by code. Null marks "no file".
   const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
@@ -92,6 +96,7 @@ export default function App() {
       })
       .catch(console.error);
     loadAttention().then(setAttention).catch(console.error);
+    loadCrises().then(setCrises).catch(console.error);
     loadHistoryIndex()
       .then((h) => {
         const dates = h?.dates ?? [];
@@ -286,6 +291,16 @@ export default function App() {
   }, [selectedCode, filterAbout, focusStoryId, focusedStory, byCode, historyDate]);
 
   const topStory = dayStories[0] ?? null;
+  const selectedCrisis = useMemo(
+    () =>
+      selectedCode && crises
+        ? {
+            watching: crises.watching.find((w) => w.code === selectedCode) ?? null,
+            unwatched: crises.unwatched.find((u) => u.code === selectedCode) ?? null,
+          }
+        : undefined,
+    [crises, selectedCode],
+  );
   const watched = useMemo(() => mostWatched(attention, 1)[0] ?? null, [attention]);
 
   const countryState: CountryState = useMemo(() => {
@@ -420,6 +435,12 @@ export default function App() {
         </div>
       )}
 
+      {!selected && !focusedStory && !historyDate && crises && vp.isDesktop && (crises.watching.length > 0 || crises.unwatched.length > 0) && (
+        <div className="pointer-events-none absolute right-5 top-28 z-20 sm:right-7">
+          <CrisisCard crises={crises} nameOf={nameOf} onSelect={(c) => select(c)} />
+        </div>
+      )}
+
       {!selected && !focusedStory && dayStories.length > 0 && vp.isDesktop && (
         <div className="pointer-events-none absolute bottom-6 left-5 z-20 sm:left-7">
           <WorldStories
@@ -459,6 +480,7 @@ export default function App() {
               shared={sharedRefs}
               onStory={openStory}
               name={nameOf(selected.properties.code)}
+              crisis={selectedCrisis}
               about={{
                 articles: !hasInbound
                   ? []
@@ -495,6 +517,7 @@ export default function App() {
               shared={sharedRefs}
               onStory={openStory}
               name={nameOf(selected.properties.code)}
+              crisis={selectedCrisis}
               about={{
                 articles: !hasInbound
                   ? []

@@ -1,0 +1,11 @@
+{
+  "_comment": "Words that mark a headline as describing a humanitarian emergency. Matched case-insensitively on whole words in the English headline. Keep to events that call for aid, not politics or sport.",
+  "terms": [
+    "earthquake", "quake", "tsunami", "flood", "floods", "flooding", "landslide", "mudslide", "typhoon", "hurricane", "cyclone", "storm surge", "tornado",
+    "wildfire", "wildfires", "bushfire", "eruption", "volcano", "drought", "famine", "starvation", "malnutrition", "food crisis", "heatwave",
+    "outbreak", "epidemic", "cholera", "ebola", "measles", "pandemic",
+    "war", "airstrike", "airstrikes", "shelling", "bombing", "bombardment", "offensive", "massacre", "genocide", "ethnic cleansing", "siege", "ceasefire",
+    "refugees", "displaced", "displacement", "evacuated", "evacuation", "evacuations", "humanitarian", "aid convoy", "relief effort", "rescue", "rescuers",
+    "death toll", "killed", "dead", "deaths", "casualties", "missing", "collapse", "collapsed", "explosion", "blast", "crash", "stampede", "mine disaster", "dam burst"
+  ]
+}

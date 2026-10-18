@@ -5,7 +5,8 @@
 //   npx tsx pipeline/derive.ts [--out public/data]
 import fs from "node:fs";
 import { buildAboutFiles, buildAttention } from "./lib/attention";
-import { addDay, buildSnapshot, dayOf, type HistoryIndex } from "./lib/history";
+import { addDay, buildSnapshot, dayOf, readBaselines, type HistoryIndex } from "./lib/history";
+import { detectCrises, inboundEditions, loadCrisisTerms } from "./lib/crises";
 import { writeJson } from "./lib/io";
 import type { CountryFile, IndexFile } from "./lib/publish";
 import type { SharedFile } from "./lib/shared";
@@ -17,16 +18,20 @@ const now = new Date().toISOString();
 const all = Object.entries(index.countries)
   .filter(([, e]) => (e.kind ?? "local") === "local")
   .map(([code]) => ({ code, articles: (JSON.parse(fs.readFileSync(`${outDir}/countries/${code}.json`, "utf8")) as CountryFile).articles }));
-writeJson(`${outDir}/attention.json`, buildAttention(all, now));
+const attention = buildAttention(all, now);
+writeJson(`${outDir}/attention.json`, attention);
 const aboutDir = `${outDir}/about`;
 const abouts = buildAboutFiles(all, now);
 fs.mkdirSync(aboutDir, { recursive: true });
 for (const name of fs.readdirSync(aboutDir)) if (!(name.replace(/\.json$/, "") in abouts)) fs.unlinkSync(`${aboutDir}/${name}`);
 for (const [code, file] of Object.entries(abouts)) writeJson(`${aboutDir}/${code}.json`, file);
 console.log(`Wrote attention.json and ${Object.keys(abouts).length} about files`);
-const snapshot = buildSnapshot(now, all, shared?.stories ?? []);
+const snapshot = buildSnapshot(now, all, shared?.stories ?? [], inboundEditions(attention));
 const indexFile = `${outDir}/history/index.json`;
 const historyIndex: HistoryIndex | null = fs.existsSync(indexFile) ? (JSON.parse(fs.readFileSync(indexFile, "utf8")) as HistoryIndex) : null;
 writeJson(`${outDir}/history/${snapshot.date}.json`, snapshot);
 writeJson(indexFile, addDay(historyIndex, dayOf(now)));
 console.log(`Wrote ${outDir}/history/${snapshot.date}.json: ${Object.keys(snapshot.countries).length} countries, ${snapshot.stories.length} stories`);
+const crises = detectCrises({ attention, abouts, locals: all, baselines: readBaselines(`${outDir}/history`, dayOf(now)), terms: loadCrisisTerms(), now });
+writeJson(`${outDir}/crises.json`, crises);
+console.log(`Wrote crises.json: ${crises.watching.length} watched, ${crises.unwatched.length} unwatched`);

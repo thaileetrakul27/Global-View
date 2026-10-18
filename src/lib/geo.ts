@@ -6,6 +6,8 @@ export interface CountryProperties {
   name: string;
   /** Longer administrative name from Natural Earth, e.g. "United States of America". */
   admin: string;
+  /** ISO 3166-1 alpha-3 code, used for links to humanitarian pages. */
+  iso3?: string;
 }
 
 export interface CountryFeature {

@@ -26,7 +26,8 @@ import { buildSearchUrl, fetchFeed, fetchFeedUrl, type Article } from "./lib/goo
 import { sleep, writeJson } from "./lib/io";
 import { mergeIndex, readIndex, type CountryFile, type IndexEntry } from "./lib/publish";
 import { collectCandidates, findSharedStories, reconcileStories, type SharedFile } from "./lib/shared";
-import { addDay, buildSnapshot, dayOf, type HistoryIndex } from "./lib/history";
+import { addDay, buildSnapshot, dayOf, readBaselines, type HistoryIndex } from "./lib/history";
+import { detectCrises, inboundEditions, loadCrisisTerms } from "./lib/crises";
 import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle } from "./lib/translate";
 
 /** Most model calls one run may make; a guard against runaway cost. */
@@ -183,10 +184,23 @@ async function main() {
   const historyDir = `${args.outDir}/history`;
   const indexFile = `${historyDir}/index.json`;
   const historyIndex: HistoryIndex | null = fs.existsSync(indexFile) ? (JSON.parse(fs.readFileSync(indexFile, "utf8")) as HistoryIndex) : null;
-  const snapshot = buildSnapshot(now, all, shared?.stories ?? []);
+  const watched = inboundEditions(attention);
+  const snapshot = buildSnapshot(now, all, shared?.stories ?? [], watched);
   writeJson(`${historyDir}/${snapshot.date}.json`, snapshot);
   writeJson(indexFile, addDay(historyIndex, dayOf(now)));
   log(`History: snapshot for ${snapshot.date} with ${Object.keys(snapshot.countries).length} countries`);
+
+  // 6. Humanitarian signals: sudden world attention, and emergencies nobody is watching.
+  const crises = detectCrises({
+    attention,
+    abouts,
+    locals: all,
+    baselines: readBaselines(historyDir, dayOf(now)),
+    terms: loadCrisisTerms(),
+    now,
+  });
+  writeJson(`${args.outDir}/crises.json`, crises);
+  log(`Crises: ${crises.watching.length} watched, ${crises.unwatched.length} unwatched`);
 }
 
 main().catch((err) => {
