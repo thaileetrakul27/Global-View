@@ -60,7 +60,7 @@ describe("detectCrises", () => {
     expect(out.unwatched[0]).toMatchObject({ matching: 4, total: 6, editions: 1 });
   });
   it("lists verified alerts whose main country few editions read about, skipping regional ones", () => {
-    const alert = (id: string, countries: string[]) => ({ id, type: "flood" as const, level: "Orange" as const, title: id, name: null, countries, from: now, to: now, url: "u" });
+    const alert = (id: string, countries: string[]) => ({ id, type: "flood" as const, level: "Orange" as const, title: id, description: null, name: null, countries, from: now, to: now, url: "u" });
     const att: AttentionFile = { updated: now, mentions: { ...mentionsFrom("MX", 12), ...mentionsFrom("TD", 1) } };
     const alerts = [alert("a", ["MX"]), alert("b", ["TD", "NE"]), alert("c", ["LY"]), alert("d", ["TD"]), alert("e", ["AT", "BE", "CH", "DE", "DK", "ES", "FR"])];
     const out = detectCrises({ attention: att, abouts: {}, locals: [], baselines: {}, terms, alerts, now });

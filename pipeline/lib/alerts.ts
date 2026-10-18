@@ -21,6 +21,8 @@ export interface Alert {
   level: AlertLevel;
   /** GDACS's own one-line title. */
   title: string;
+  /** GDACS's plain-language summary of the event, when it gives one. */
+  description: string | null;
   /** Named event, e.g. a cyclone name, when there is one. */
   name: string | null;
   /** ISO 3166-1 alpha-2 codes of the countries the alert names, primary first. */
@@ -108,6 +110,7 @@ export function buildResolver(features: GlobeFeature[], configs: CountryConfig[]
 
 interface Item {
   title?: string;
+  description?: string;
   link?: string;
   "gdacs:eventid"?: string | number;
   "gdacs:eventtype"?: string;
@@ -118,6 +121,11 @@ interface Item {
   "gdacs:fromdate"?: string;
   "gdacs:todate"?: string;
   "gdacs:datemodified"?: string;
+}
+
+/** Drops the summaries that only restate the level ("The Drought notification level is Orange."). */
+function usefulDescription(d: string): string | null {
+  return d && !/notification level is/i.test(d) ? d : null;
 }
 
 const text = (v: unknown): string => (v === undefined || v === null ? "" : String(v).trim());
@@ -167,6 +175,7 @@ export function parseAlerts(xml: string, resolve: CountryResolver, now: string):
       type: TYPES[text(it["gdacs:eventtype"])] ?? "other",
       level,
       title: text(it.title),
+      description: usefulDescription(text(it.description)),
       name: text(it["gdacs:eventname"]) || null,
       countries,
       from,

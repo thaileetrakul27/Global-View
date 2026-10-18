@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-18T18:45:45.328Z",
+  "updated": "2026-10-18T18:55:20.192Z",
   "watching": [
     {
       "code": "CA",
       "editions": 22,
       "baseline": null,
-      "share": 0.65,
+      "share": 0.68,
       "sample": [
-        "Canadian military base fire: Death toll confirmed and cause under investigation",
+        "Canada Wainwright fire: Four dead and dozens injured, Carney says - follow live",
         "Four dead and dozens injured after explosion and fire at Canadian military base",
-        "Four dead in explosion and fire at army base in Canada / Article"
+        "Several dead after fire at military base in Canada"
       ]
     }
   ],
@@ -20,6 +20,7 @@
       "type": "cyclone",
       "level": "Orange",
       "title": "Orange notification for tropical cyclone SIMON-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 62 .",
+      "description": "From 07/10/2026 to 16/10/2026, a Tropical Depression (maximum wind speed of 250 km/h) SIMON-26 was active in EastPacific. The cyclone affects these countries: México (vulnerability Medium). Estimated population affected by category 1 (120 km/h) wind speeds or higher is 62 .",
       "name": "SIMON-26",
       "countries": [
         "MX"
@@ -33,6 +34,7 @@
       "type": "drought",
       "level": "Orange",
       "title": "Drought is on going in Democratic Republic of Congo, Central African Republic, Cameroon, Djibouti, Eritrea, Ethiopia, Kenya, Niger, Nigeria, Sudan, Somalia, South Sudan, Chad",
+      "description": null,
       "name": "East Africa, Central Sahel-2026",
       "countries": [
         "CD",
@@ -58,6 +60,7 @@
       "type": "drought",
       "level": "Orange",
       "title": "Drought is on going in Democratic Republic of Congo, Kenya, Tanzania, Uganda",
+      "description": null,
       "name": "Uganda, Kenya, Tanzania-2026",
       "countries": [
         "CD",
@@ -74,6 +77,7 @@
       "type": "drought",
       "level": "Orange",
       "title": "Drought is on going in The Bahamas, Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador",
+      "description": null,
       "name": "Central America-2026",
       "countries": [
         "BS",
@@ -97,6 +101,7 @@
       "type": "drought",
       "level": "Orange",
       "title": "Drought is on going in Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Moldova, Montenegro, Netherlands, Norway, Poland, Romania, Serbia, Russia, Sweden, Slovenia, Slovakia, San Marino, Ukraine,",
+      "description": null,
       "name": "Europe-2026",
       "countries": [
         "AT",
@@ -136,7 +141,7 @@
     {
       "code": "MX",
       "alert": "1001335",
-      "editions": 2
+      "editions": 1
     },
     {
       "code": "CD",

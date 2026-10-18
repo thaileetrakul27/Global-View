@@ -147,6 +147,8 @@ export interface Alert {
   type: AlertType;
   level: AlertLevel;
   title: string;
+  /** GDACS's plain-language summary of the event, when it gives one. */
+  description: string | null;
   /** Named event, e.g. a cyclone name. */
   name: string | null;
   /** Countries the alert names, primary first. */
@@ -190,6 +192,50 @@ export const loadAttention = () => loadOptional<AttentionFile>("/data/attention.
 export const loadHistoryIndex = () => loadOptional<HistoryIndex>("/data/history/index.json");
 export const loadSnapshot = (date: string) => loadOptional<Snapshot>(`/data/history/${date}.json`);
 export const loadAbout = (code: string) => loadOptional<AboutFile>(`/data/about/${code}.json`);
+/** A country's own Red Cross or Red Crescent society, from IFRC's directory. */
+export interface Society {
+  name: string;
+  url: string | null;
+  directory: string | null;
+}
+
+/** An active IFRC appeal; amounts in Swiss francs. */
+export interface Appeal {
+  code: string;
+  country: string;
+  name: string;
+  kind: string;
+  disaster: string;
+  requested: number;
+  funded: number;
+  people: number | null;
+  start: string;
+  end: string;
+  url: string;
+}
+
+/** A UN-coordinated humanitarian response plan; amounts in US dollars. */
+export interface Plan {
+  id: number;
+  name: string;
+  countries: string[];
+  required: number;
+  funded: number | null;
+  end: string;
+  url: string;
+}
+
+/** Where help is needed and where to send it, from IFRC and UN OCHA. */
+export interface HelpFile {
+  updated: string;
+  sources: { societies: string | null; appeals: string | null; plans: string | null };
+  societies: Record<string, Society>;
+  appeals: Appeal[];
+  plans: Plan[];
+}
+
+export const loadHelp = () => loadOptional<HelpFile>("/data/help.json");
+
 /** Files written before alerts existed lack the two alert lists. */
 export const loadCrises = async (): Promise<CrisesFile | null> => {
   const c = await loadOptional<CrisesFile>("/data/crises.json");

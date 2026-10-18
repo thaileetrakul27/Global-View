@@ -29,6 +29,7 @@ import { collectCandidates, findSharedStories, reconcileStories, type SharedFile
 import { addDay, buildSnapshot, dayOf, readBaselines, type HistoryIndex } from "./lib/history";
 import { buildResolver, fetchAlerts } from "./lib/alerts";
 import { detectCrises, inboundEditions, loadCrisisTerms, type CrisesFile } from "./lib/crises";
+import { buildHelp, fetchAppeals, fetchPlans, fetchSocieties, type HelpFile } from "./lib/help";
 import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle } from "./lib/translate";
 
 /** Most model calls one run may make; a guard against runaway cost. */
@@ -196,7 +197,8 @@ async function main() {
   // alerts from the previous run.
   const crisesPath = `${args.outDir}/crises.json`;
   const previousCrises: CrisesFile | null = fs.existsSync(crisesPath) ? (JSON.parse(fs.readFileSync(crisesPath, "utf8")) as CrisesFile) : null;
-  const alerts = (await fetchAlerts(buildResolver(loadGlobeFeatures(), local), now, deps)) ?? previousCrises?.alerts ?? [];
+  const resolver = buildResolver(loadGlobeFeatures(), local);
+  const alerts = (await fetchAlerts(resolver, now, deps)) ?? previousCrises?.alerts ?? [];
   const crises = detectCrises({
     attention,
     abouts,
@@ -208,6 +210,19 @@ async function main() {
   });
   writeJson(crisesPath, crises);
   log(`Crises: ${crises.alerts.length} alerts, ${crises.quiet.length} quiet, ${crises.watching.length} watched, ${crises.unwatched.length} unwatched`);
+
+  // 7. Where help is needed and where to send it: national Red Cross and
+  // Red Crescent societies, IFRC appeals and UN response plans. Each
+  // source that fails keeps the previous run's data.
+  const helpPath = `${args.outDir}/help.json`;
+  const previousHelp: HelpFile | null = fs.existsSync(helpPath) ? (JSON.parse(fs.readFileSync(helpPath, "utf8")) as HelpFile) : null;
+  const help = buildHelp(
+    previousHelp,
+    { societies: await fetchSocieties(deps), appeals: await fetchAppeals(now, deps), plans: await fetchPlans(resolver, now, deps) },
+    now,
+  );
+  writeJson(helpPath, help);
+  log(`Help: ${Object.keys(help.societies).length} societies, ${help.appeals.length} appeals, ${help.plans.length} plans`);
 }
 
 main().catch((err) => {

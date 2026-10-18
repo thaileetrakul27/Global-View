@@ -19,6 +19,7 @@ const feed = (items: string[]) => `<?xml version="1.0"?><rss version="2.0" xmlns
 
 const cyclone = item({
   title: "Orange notification for tropical cyclone SIMON-26.",
+  description: "From 07/10/2026 to 16/10/2026, a Tropical Depression SIMON-26 was active in EastPacific.",
   link: "https://www.gdacs.org/report.aspx?eventtype=TC&amp;eventid=1001335",
   "gdacs:eventid": "1001335",
   "gdacs:eventtype": "TC",
@@ -31,6 +32,7 @@ const cyclone = item({
 });
 const drought = item({
   title: "Drought is on going in Democratic Republic of Congo, Kenya, Atlantis",
+  description: "The Drought notification level is Red.",
   link: "https://www.gdacs.org/report.aspx?eventtype=DR&amp;eventid=1027465",
   "gdacs:eventid": "1027465",
   "gdacs:eventtype": "DR",
@@ -99,13 +101,14 @@ describe("parseAlerts", () => {
     expect(out[1]).toMatchObject({
       type: "cyclone",
       level: "Orange",
+      description: "From 07/10/2026 to 16/10/2026, a Tropical Depression SIMON-26 was active in EastPacific.",
       name: "SIMON-26",
       countries: ["MX"],
       from: "2026-10-07T00:00:00.000Z",
       to: "2026-10-16T00:00:00.000Z",
       url: "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001335",
     });
-    expect(out[0]).toMatchObject({ type: "drought", level: "Red", name: null, countries: ["CD", "KE"] });
+    expect(out[0]).toMatchObject({ type: "drought", level: "Red", name: null, description: null, countries: ["CD", "KE"] });
   });
   it("keeps a Red alert longer than an Orange one", () => {
     const later = "2026-10-30T12:00:00.000Z";

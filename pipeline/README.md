@@ -54,6 +54,7 @@ Each feed gets one retry. A country that fails twice keeps its previous file and
 | `public/data/about/TH.json` | The foreign top stories about Thailand, with the country each was read in |
 | `public/data/history/` | One small snapshot per day plus an index, for the time machine |
 | `public/data/crises.json` | Current GDACS disaster alerts, the countries the world has turned to, and emergencies nobody is watching |
+| `public/data/help.json` | Each country's Red Cross or Red Crescent society, active IFRC appeals and UN response plans with funding |
 | `cache/headlines.json` | Translation cache, committed so runs on GitHub Actions share it |
 
 ## Shared stories across runs
@@ -76,7 +77,17 @@ Two more are estimated from English headlines against the word list in `pipeline
 - **watching**: countries that are suddenly in many editions' top stories (at least 8, and double their median over the previous days; 15 with under three days of history) where at least 40% of those foreign stories, and at least three, describe an emergency.
 - **unwatched**: local-edition countries where at least four of their own top stories, and at least 30%, describe an emergency, while two or fewer other editions have them in their top stories.
 
-Daily snapshots record each country's inbound edition count so the baseline builds up over the first week. The site shows a "How to help" block on these countries with the alert's GDACS report and fixed UN and Red Cross links; it never selects organisations. `npx tsx pipeline/derive.ts --alerts` refreshes the alerts without running the whole pipeline.
+Daily snapshots record each country's inbound edition count so the baseline builds up over the first week. The site shows a "How to help" block on these countries with the alert's GDACS report and fixed UN and Red Cross links; it never selects organisations. `npx tsx pipeline/derive.ts --fetch` refreshes the alerts and the help sources without running the whole pipeline.
+
+## Where to give
+
+`public/data/help.json` is built from official registries so the site never picks an organisation:
+
+- **societies**: every country's own Red Cross or Red Crescent society, with its website and IFRC directory page, from the IFRC GO country list.
+- **appeals**: IFRC's active DREF and Emergency Appeal operations that have not ended, with the amount asked for and funded (Swiss francs) and the people they aim to reach, each linked to its IFRC GO page.
+- **plans**: UN-coordinated humanitarian response plans for this year and last that are still running, with requirements and funding reported to OCHA's Financial Tracking Service (US dollars), linked to FTS. One funding call per plan.
+
+Each source that fails keeps the previous run's data for that source; `sources` records when each was last fetched.
 
 ## Tests
 

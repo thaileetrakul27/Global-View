@@ -2,8 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import type { Mention } from "@/lib/attention";
-import type { AboutArticle, Alert, Article, CountryFile, SnapshotArticle, UnwatchedEntry, WatchingEntry } from "@/lib/data";
+import type { AboutArticle, Article, CountryFile, SnapshotArticle } from "@/lib/data";
+import type { Need } from "@/lib/help";
 import HelpBlock from "./HelpBlock";
+import HelpFooter from "./HelpFooter";
 import AboutList from "./AboutList";
 import type { CountryFeature } from "@/lib/geo";
 import { relativeTime } from "@/lib/time";
@@ -44,8 +46,8 @@ interface Props {
   history?: { label: string; articles: SnapshotArticle[] | null } | null;
   /** Foreign top stories about this country (null while loading) and how many editions exist. */
   about?: { articles: AboutArticle[] | null; editions: number };
-  /** Humanitarian signals for this country, if any. */
-  crisis?: { alerts: Alert[]; watching: WatchingEntry | null; unwatched: UnwatchedEntry | null };
+  /** What is needed here and where to give; undefined while loading. */
+  need?: Need;
 }
 
 // Contents of the country panel: the name, when the list was refreshed, who
@@ -64,7 +66,7 @@ export default function CountryPanel({
   name,
   history = null,
   about,
-  crisis,
+  need,
 }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
 
@@ -163,9 +165,7 @@ export default function CountryPanel({
           </p>
         )}
 
-        {!history && data && crisis && (
-          <HelpBlock name={name} iso3={country.properties.iso3} alerts={crisis.alerts} watching={crisis.watching} unwatched={crisis.unwatched} />
-        )}
+        {!history && data && need && <HelpBlock name={name} iso3={country.properties.iso3} need={need} />}
 
         {!history && world && (
           <p className="mt-3 rounded-md bg-card px-3 py-2 text-xs leading-snug text-muted">
@@ -233,6 +233,7 @@ export default function CountryPanel({
             <ArticleList articles={articles} shared={shared} onStory={onStory} />
           </div>
         )}
+        {!history && data && need && !need.any && need.society && <HelpFooter name={name} society={need.society} />}
       </div>
 
       <footer className="border-t border-line px-5 py-3 text-xs text-muted sm:px-6">

@@ -1,15 +1,17 @@
 // Recomputes the derived files (attention counts, "about" files and today's
 // history snapshot) from the data already in public/data, without fetching
-// anything. Useful after a change to a derived format. With --alerts it
-// also refreshes the GDACS disaster alerts; otherwise the stored ones stay.
+// anything. Useful after a change to a derived format. With --fetch it
+// also refreshes the GDACS alerts and the help sources (IFRC, OCHA);
+// otherwise the stored ones stay.
 //
-//   npx tsx pipeline/derive.ts [--out public/data] [--alerts]
+//   npx tsx pipeline/derive.ts [--out public/data] [--fetch]
 import fs from "node:fs";
 import { buildResolver, fetchAlerts } from "./lib/alerts";
 import { buildAboutFiles, buildAttention } from "./lib/attention";
 import { addDay, buildSnapshot, dayOf, readBaselines, type HistoryIndex } from "./lib/history";
 import { loadCountryConfig, loadGlobeFeatures } from "./lib/countries";
 import { detectCrises, inboundEditions, loadCrisisTerms, type CrisesFile } from "./lib/crises";
+import { buildHelp, fetchAppeals, fetchPlans, fetchSocieties, type HelpFile } from "./lib/help";
 import { sleep } from "./lib/io";
 import { writeJson } from "./lib/io";
 import type { CountryFile, IndexFile } from "./lib/publish";
@@ -42,9 +44,10 @@ async function main() {
   console.log(`Wrote ${outDir}/history/${snapshot.date}.json: ${Object.keys(snapshot.countries).length} countries, ${snapshot.stories.length} stories`);
   const crisesPath = `${outDir}/crises.json`;
   const previousCrises: CrisesFile | null = fs.existsSync(crisesPath) ? (JSON.parse(fs.readFileSync(crisesPath, "utf8")) as CrisesFile) : null;
-  const fetched = process.argv.includes("--alerts")
-    ? await fetchAlerts(buildResolver(loadGlobeFeatures(), loadCountryConfig()), now, { fetch, sleep, log: console.log })
-    : null;
+  const refresh = process.argv.includes("--fetch");
+  const deps = { fetch, sleep, log: console.log };
+  const resolver = buildResolver(loadGlobeFeatures(), loadCountryConfig());
+  const fetched = refresh ? await fetchAlerts(resolver, now, deps) : null;
   const alerts = fetched ?? previousCrises?.alerts ?? [];
   const crises = detectCrises({
     attention,
@@ -59,6 +62,17 @@ async function main() {
   console.log(
     `Wrote crises.json: ${crises.alerts.length} alerts, ${crises.quiet.length} quiet, ${crises.watching.length} watched, ${crises.unwatched.length} unwatched`,
   );
+  const helpPath = `${outDir}/help.json`;
+  const previousHelp: HelpFile | null = fs.existsSync(helpPath) ? (JSON.parse(fs.readFileSync(helpPath, "utf8")) as HelpFile) : null;
+  const help = buildHelp(
+    previousHelp,
+    refresh
+      ? { societies: await fetchSocieties(deps), appeals: await fetchAppeals(now, deps), plans: await fetchPlans(resolver, now, deps) }
+      : { societies: null, appeals: null, plans: null },
+    now,
+  );
+  writeJson(helpPath, help);
+  console.log(`Wrote help.json: ${Object.keys(help.societies).length} societies, ${help.appeals.length} appeals, ${help.plans.length} plans`);
 }
 
 main().catch((err) => {

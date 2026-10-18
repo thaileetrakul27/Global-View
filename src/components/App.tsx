@@ -7,6 +7,7 @@ import {
   loadAttention,
   loadCountry,
   loadCrises,
+  loadHelp,
   loadHistoryIndex,
   loadIndex,
   loadShared,
@@ -15,11 +16,13 @@ import {
   type AttentionFile,
   type CountryFile,
   type CrisesFile,
+  type HelpFile,
   type IndexFile,
   type SharedFile,
   type Snapshot,
   type SnapshotStory,
 } from "@/lib/data";
+import { needFor } from "@/lib/help";
 import { displayName } from "@/lib/names";
 import { inbound, mostWatched, outbound, tintMap } from "@/lib/attention";
 import { readUrlState, writeUrlState } from "@/lib/urlState";
@@ -65,6 +68,7 @@ export default function App() {
   // Foreign articles about each country, fetched when its inbound view opens.
   const [abouts, setAbouts] = useState<Record<string, AboutFile | null>>({});
   const [crises, setCrises] = useState<CrisesFile | null>(null);
+  const [help, setHelp] = useState<HelpFile | null>(null);
   // Country files already fetched, keyed by code. Null marks "no file".
   const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
@@ -98,6 +102,7 @@ export default function App() {
       .catch(console.error);
     loadAttention().then(setAttention).catch(console.error);
     loadCrises().then(setCrises).catch(console.error);
+    loadHelp().then(setHelp).catch(console.error);
     loadHistoryIndex()
       .then((h) => {
         const dates = h?.dates ?? [];
@@ -292,17 +297,7 @@ export default function App() {
   }, [selectedCode, filterAbout, focusStoryId, focusedStory, byCode, historyDate]);
 
   const topStory = dayStories[0] ?? null;
-  const selectedCrisis = useMemo(
-    () =>
-      selectedCode && crises
-        ? {
-            alerts: crises.alerts.filter((a) => a.countries.includes(selectedCode)),
-            watching: crises.watching.find((w) => w.code === selectedCode) ?? null,
-            unwatched: crises.unwatched.find((u) => u.code === selectedCode) ?? null,
-          }
-        : undefined,
-    [crises, selectedCode],
-  );
+  const selectedNeed = useMemo(() => (selectedCode && crises ? needFor(selectedCode, crises, help) : undefined), [crises, help, selectedCode]);
   const watched = useMemo(() => mostWatched(attention, 1)[0] ?? null, [attention]);
 
   const countryState: CountryState = useMemo(() => {
@@ -439,13 +434,13 @@ export default function App() {
 
       {!selected && !focusedStory && !historyDate && crises && vp.isDesktop && (
         <div className="pointer-events-none absolute right-5 top-28 z-20 sm:right-7">
-          <CrisisCard crises={crises} nameOf={nameOf} onSelect={(c) => select(c)} />
+          <CrisisCard crises={crises} help={help} nameOf={nameOf} onSelect={(c) => select(c)} />
         </div>
       )}
 
       {!panelOpen && !historyDate && crises && !vp.isDesktop && (
         <div className="pointer-events-none absolute inset-x-0 bottom-11 z-20">
-          <CrisisStrip crises={crises} nameOf={nameOf} onSelect={(c) => select(c)} />
+          <CrisisStrip crises={crises} help={help} nameOf={nameOf} onSelect={(c) => select(c)} />
         </div>
       )}
 
@@ -488,7 +483,7 @@ export default function App() {
               shared={sharedRefs}
               onStory={openStory}
               name={nameOf(selected.properties.code)}
-              crisis={selectedCrisis}
+              need={selectedNeed}
               about={{
                 articles: !hasInbound
                   ? []
@@ -525,7 +520,7 @@ export default function App() {
               shared={sharedRefs}
               onStory={openStory}
               name={nameOf(selected.properties.code)}
-              crisis={selectedCrisis}
+              need={selectedNeed}
               about={{
                 articles: !hasInbound
                   ? []

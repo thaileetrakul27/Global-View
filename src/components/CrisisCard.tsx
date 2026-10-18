@@ -1,22 +1,27 @@
 "use client";
 
 import { alertLabel } from "@/lib/alerts";
-import type { CrisesFile } from "@/lib/data";
+import type { CrisesFile, HelpFile } from "@/lib/data";
+import { leastFunded } from "@/lib/help";
+import { money, percent } from "@/lib/money";
 
 interface Props {
   crises: CrisesFile;
+  help: HelpFile | null;
   nameOf: (code: string) => string;
   onSelect: (code: string) => void;
 }
 
-// Landing card: disasters few are reading about, any country the world
-// has suddenly turned to, and emergencies nobody is watching. Clicking a
-// country opens its panel with help links.
-export default function CrisisCard({ crises, nameOf, onSelect }: Props) {
+// Landing card: disasters few are reading about, the UN plans with the
+// least funding, any country the world has suddenly turned to, and
+// emergencies nobody is watching. Clicking a country opens its panel
+// with what is needed and where to give.
+export default function CrisisCard({ crises, help, nameOf, onSelect }: Props) {
   const watching = crises.watching.slice(0, 2);
-  const quiet = crises.quiet.slice(0, 4).map((q) => ({ ...q, alert: crises.alerts.find((a) => a.id === q.alert) })).filter((q) => q.alert);
-  const unwatched = crises.unwatched.slice(0, 3);
-  if (!watching.length && !quiet.length && !unwatched.length) return null;
+  const quiet = crises.quiet.slice(0, 3).map((q) => ({ ...q, alert: crises.alerts.find((a) => a.id === q.alert) })).filter((q) => q.alert);
+  const plans = leastFunded(help, 3);
+  const unwatched = crises.unwatched.slice(0, 2);
+  if (!watching.length && !quiet.length && !plans.length && !unwatched.length) return null;
   const row = "w-full py-2 text-left text-ink hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent";
   const heading = (text: string, first: boolean) => (
     <h2 className={`text-xs font-medium uppercase tracking-wide text-muted ${first ? "" : "mt-3"}`}>{text}</h2>
@@ -62,9 +67,26 @@ export default function CrisisCard({ crises, nameOf, onSelect }: Props) {
           </ol>
         </>
       )}
+      {plans.length > 0 && (
+        <>
+          {heading("Least funded UN response plans", !watching.length && !quiet.length)}
+          <ol className="mt-1 divide-y divide-line">
+            {plans.map((p) => (
+              <li key={p.id}>
+                <button type="button" onClick={() => onSelect(p.countries[0])} className={row}>
+                  <span className="block font-serif text-[0.95rem] leading-snug">{nameOf(p.countries[0])}</span>
+                  <span className="block text-xs text-muted">
+                    {percent(p.funded!, p.required)}% of {money(p.required, "USD")} funded · {p.name}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
       {unwatched.length > 0 && (
         <>
-          {heading("Emergencies the world is not watching", !watching.length && !quiet.length)}
+          {heading("Emergencies the world is not watching", !watching.length && !quiet.length && !plans.length)}
           <ol className="mt-1 divide-y divide-line">
             {unwatched.map((u) => (
               <li key={u.code}>
