@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import type { GlobeProps } from "./Globe";
 
 // react-globe.gl touches `window` and WebGL on import, so it must only ever
 // load in the browser. The placeholder keeps the layout stable meanwhile.
@@ -20,10 +21,10 @@ function GlobePlaceholder() {
   );
 }
 
-export default function GlobeView() {
+export default function GlobeView(props: GlobeProps) {
   return (
     <div className="absolute inset-0">
-      <Globe />
+      <Globe {...props} />
     </div>
   );
 }
