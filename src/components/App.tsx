@@ -76,11 +76,12 @@ export default function App() {
     };
   }, [selectedCode, files, index]);
 
-  // Codes of countries that have stories, for colouring the globe.
-  const withData = useMemo(
-    () => new Set(index ? Object.keys(index.countries) : []),
-    [index],
-  );
+  // What kind of coverage each country has, for colouring the globe.
+  const coverage = useMemo(() => {
+    const m = new Map<string, "local" | "world">();
+    for (const [code, entry] of Object.entries(index?.countries ?? {})) m.set(code, entry.kind ?? "local");
+    return m;
+  }, [index]);
 
   // Lookups by country code: display name and a point to draw arcs from.
   const byCode = useMemo(() => new Map(countries.map((c) => [c.properties.code, c])), [countries]);
@@ -105,7 +106,8 @@ export default function App() {
     } else if (focusStoryId) {
       picked = stories.filter((s) => s.id === focusStoryId).map((story) => ({ story, strength: 1 }));
     } else {
-      picked = stories.slice(0, 8).map((story) => ({ story, strength: 0.45 }));
+      // Only the three most-shared stories, or the globe turns to spaghetti.
+      picked = stories.slice(0, 3).map((story) => ({ story, strength: 0.4 }));
     }
     const out = new Map<string, GlobeArc>();
     for (const { story, strength } of picked) {
@@ -131,10 +133,14 @@ export default function App() {
     return [...out.values()];
   }, [shared, selectedCode, focusStoryId, centroids]);
 
+  // World-coverage countries have no "own news", so only the inbound view applies.
+  const selectedKind = selectedCode ? (coverage.get(selectedCode) ?? "local") : "local";
+  const effectiveMode: AttentionMode = selectedKind === "world" ? "inbound" : attentionMode;
+
   // Tints: who the selected country is reading about, or who reads about it.
   const mentions = useMemo(
-    () => (selectedCode ? (attentionMode === "outbound" ? outbound(attention, selectedCode, 12) : inbound(attention, selectedCode, 12)) : []),
-    [attention, selectedCode, attentionMode],
+    () => (selectedCode ? (effectiveMode === "outbound" ? outbound(attention, selectedCode, 12) : inbound(attention, selectedCode, 12)) : []),
+    [attention, selectedCode, effectiveMode],
   );
   const tints = useMemo(() => tintMap(mentions), [mentions]);
   // Until the pipeline has translated anything, there is nothing to show.
@@ -228,7 +234,7 @@ export default function App() {
     <main className="relative h-full w-full overflow-hidden">
       <GlobeView
         countries={countries}
-        withData={withData}
+        coverage={coverage}
         tints={tints}
         arcs={arcs}
         selected={selected}
@@ -276,7 +282,11 @@ export default function App() {
               country={selected}
               state={countryState}
               onClose={close}
-              attention={hasAttention ? { mode: attentionMode, onMode: changeMode, mentions } : null}
+              attention={
+                hasAttention
+                  ? { mode: effectiveMode, onMode: changeMode, mentions, inboundOnly: selectedKind === "world" }
+                  : null
+              }
               nameOf={nameOf}
               onSelect={select}
               filterAbout={filterAbout}
@@ -294,7 +304,11 @@ export default function App() {
               country={selected}
               state={countryState}
               onClose={close}
-              attention={hasAttention ? { mode: attentionMode, onMode: changeMode, mentions } : null}
+              attention={
+                hasAttention
+                  ? { mode: effectiveMode, onMode: changeMode, mentions, inboundOnly: selectedKind === "world" }
+                  : null
+              }
               nameOf={nameOf}
               onSelect={select}
               filterAbout={filterAbout}

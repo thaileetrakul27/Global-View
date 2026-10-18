@@ -1,6 +1,6 @@
 # Global View
 
-A light, clean website with an interactive globe. Click a country to see the most popular news stories there right now, each linking to its publisher. Headlines stay in the country's language with an English translation underneath. Arcs on the globe join countries reading the same story, and each country's panel shows who it is reading about and who is reading about it.
+A light, clean website with an interactive globe. Click a country to see the most popular news stories there right now, each linking to its publisher. Countries without a local news edition show recent world coverage about them instead, clearly labelled. Headlines stay in the country's language with an English translation underneath. Arcs on the globe join countries reading the same story, and each country's panel shows who it is reading about and who is reading about it.
 
 The site is a static Next.js export. A GitHub Actions job refreshes the data every three hours from each country's Google News top-stories feed, translates new headlines with the Claude API, and commits the results to `public/data`; Netlify redeploys on every commit. The website never calls an API.
 

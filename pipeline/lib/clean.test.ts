@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dedupeArticles, normalizeTitle, titleKey } from "./clean";
+import { dedupeArticles, isJunkHeadline, normalizeTitle, titleKey } from "./clean";
 import type { Article } from "./googlenews";
 
 function art(url: string, title: string): Article {
@@ -17,6 +17,26 @@ describe("normalizeTitle and titleKey", () => {
   });
 });
 
+describe("isJunkHeadline", () => {
+  it("catches stream spam and leaves real headlines alone", () => {
+    expect(isJunkHeadline("+[#!LIVESTREAMs!]™ Fiji vs Cook Islands Live Free Oct 18")).toBe(true);
+    expect(isJunkHeadline("Watch Luxembourg vs Bulgaria live stream")).toBe(true);
+    expect(isJunkHeadline("[YouTube/LIVE] Cook Islands vs Fiji 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ")).toBe(true);
+    expect(isJunkHeadline("̳!$[LIVE!#NOW]*Fiji v Cook Islands 𝕃𝕚𝕧𝕖 Ｆｒｅｅ Ｓｔｒｅａｍｓ")).toBe(true);
+    expect(isJunkHeadline("[WATCHLIVE]TODAY!] Cook Islands vs Fiji 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ")).toBe(true);
+    expect(isJunkHeadline("√(RUGBY-WC-@LIVE) FIJI - COOK ISLANDS RUGBY LIVE 18-09.")).toBe(true);
+    expect(isJunkHeadline("[CBS TV ]] Fiji Cook Islands Rugby 𝐋𝐈𝐕𝐄 Rugby League")).toBe(true);
+    expect(isJunkHeadline("**%[[[𝑺𝑷𝑶𝑹𝑻 Fiji vs Cook Islands")).toBe(true);
+    expect(isJunkHeadline("&𝐖𝐀𝐓𝐂𝐇@ Cook Islands vs Fiji Live Rugby League")).toBe(true);
+    expect(isJunkHeadline("Fiji beat Cook Islands 24-10 in Pacific Championship")).toBe(false);
+    expect(isJunkHeadline("LIVE: Protests spread across France as unions call strike")).toBe(false);
+    expect(isJunkHeadline("🇲🇳 Mongolia: Beck changes song for Eurovision Asia")).toBe(false);
+    expect(isJunkHeadline("“No to torture!” Saturday march in Tbilisi (photos)")).toBe(false);
+    expect(isJunkHeadline("Mongolia becomes new donor to World Bank fund")).toBe(false);
+    expect(isJunkHeadline("Protests live: thousands march in Paris")).toBe(false);
+  });
+});
+
 describe("dedupeArticles", () => {
   it("drops duplicate urls and near-duplicate headlines, keeping the first", () => {
     const kept = dedupeArticles([
@@ -26,6 +46,7 @@ describe("dedupeArticles", () => {
       art("u3", "Other story"),
       art("u4", "Other  story"),
       art("u5", "   "),
+      art("u6", "Team A vs Team B live stream free"),
     ]);
     expect(kept.map((a) => a.url)).toEqual(["u1", "u3"]);
   });

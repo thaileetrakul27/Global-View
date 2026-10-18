@@ -1,13 +1,25 @@
 {
   "code": "MX",
   "name": "Mexico",
-  "updated": "2026-10-18T13:25:26.752Z",
+  "kind": "local",
+  "updated": "2026-10-18T13:48:46.764Z",
   "source": {
     "name": "Google News",
     "edition": "MX:es-419",
     "url": "https://news.google.com/rss?hl=es-419&gl=MX&ceid=MX%3Aes-419"
   },
   "articles": [
+    {
+      "title": "\"No hay lugar para la violencia\": edificios en llamas, saqueos y más de 1.200 detenidos en multitudinarias protestas en Francia",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE53S3ZJVm1XMUJENk8zX2h1eDFsMGUxbVZzeWZPQXVqUzdsQWZZWWZPbF9TcmpFTE9OQWFxLTdzd01zV2pBbWRKT0dsWUhhWlhxQkdTZXpMREEyb0pp?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-10-18T09:08:48.000Z",
+      "en": "\"There is no place for violence\": burning buildings, looting and more than 1,200 detained in massive protests in France",
+      "about": [
+        "FR"
+      ]
+    },
     {
       "title": "Detención de César Jáuregui, por operativo con la CIA: Fiscalía de Chihuahua; \"buen resultado, no justifica violar la ley\"",
       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNX2tXR284YTA3UFRLd1JhREoyOUlzR0I5RnBQZTBlYWtaeS1DSnlTNVRLWnlUVFVpNDBNUUpLYVZ5Mng1MFJKUjVOWDRIYUpQVjVtOFFyQ1JQSUtoUzJCYkZRWFpRSlpKZkpfQm00V3BCZEE0VkFvT2F0eFNYUS1vdVFNa2xzcGhxaTRGSWFTZXFEckFJWXNVZ1k0TXpIaFZqYjhXaFNrMWltYk1vSDJ6ZFZzS3pqRjZCbGtvRTlrWTAwTEdaR0VmRFMwazBoU19LZzk5akhhSFROMHhHdXhFV2xfeElla3czMzRR?oc=5",
@@ -18,17 +30,6 @@
       "about": [
         "MX",
         "US"
-      ]
-    },
-    {
-      "title": "\"No hay lugar para la violencia\": edificios en llamas, saqueos y más de 1.200 detenidos en multitudinarias protestas en Francia",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE53S3ZJVm1XMUJENk8zX2h1eDFsMGUxbVZzeWZPQXVqUzdsQWZZWWZPbF9TcmpFTE9OQWFxLTdzd01zV2pBbWRKT0dsWUhhWlhxQkdTZXpMREEyb0pp?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-10-18T09:08:48.000Z",
-      "en": "\"There is no place for violence\": burning buildings, looting and more than 1,200 detained in massive protests in France",
-      "about": [
-        "FR"
       ]
     },
     {
@@ -130,39 +131,32 @@
       ]
     },
     {
+      "title": "Meta niega interferir en elecciones de Brasil tras acusación de Lula; dice que hubo \"incidentes técnicos\"",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQS0NGWkxoWS1ZWmx4V2Y1OFZRcm02VWpmdTdQMEdtUm5WOG43ZUg3Zml2MjJsS3JmcW1LZWJtOWNtUFVxM295M2h5QlphYUExdmhibTZNclZqQ1gwVm5RVEFpNnJnaGwydWFvTXBKOE82cGtIRUxqcGZYUENXT29PRlpsbU9HLWtHQUJyd0twNG9zZjdyNC1Fam9uN2Qwcko3c0tncXNoeUp4Y0huSDdrdlVmNEl2clBsMExmdmpTV2wwNEphMUFFSUxtMXpndFJIRDdpWVpaVdIB6wFBVV95cUxOVmV5UFlIZlVxYURWRXVDcld6LWJNVVp5VEE5ZTRIUEVkeWtiaWdlYzNWM3RuaUg1MTFFNnYwOXhWdUtSRVh2dzU3NzlfdXFJSXlQTV9BVF9mMjd6OTJadWtNQUR2aWJ4SWVCcUpHMktvaEswNkRGX2JYTVpzTGRwT1ZQQW9EY19lVm5RTDNCWEtNYTVTS3hqNTJUR3g2QnZZbE5lLUNYQzBVeVVpRkJ1S3BQQXpRVVNCZDRJZHZxeExOLXp4LTN1TkthV2Y1a3Zjb1QySTNRWGRkbEViWHExcFVPUWROWlQtdXJJ?oc=5",
+      "outlet": "El Universal",
+      "outletUrl": "https://www.eluniversal.com.mx",
+      "published": "2026-10-17T03:40:29.000Z"
+    },
+    {
+      "title": "Renuncia la cuestionada nueva vocera de la Casa Blanca",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdENmZ0RyaGRGV2RnZ2tORlBMaHhhdDBKWnZZYW9lbC1XM20wZlVPQ1luUHVlN2RGcDhIV0lQcmRNY1JaSGNRWW1KQTZaQ0pyc3oxZHp2U0lyZ0lwcFpkNWhJODJtWWFYYWQ5WThUQzhETDlMU1RrOTBReGhFWmZJOEQ1T0tyVHlwYmtYWVBHZkHSAZABQVVfeXFMTlVKU1ByUXVFeDdxTUYyYUM0aUg2MG5XZllEVlIyVnlMX1B0WlEyYU9CeERTLWNGRUgxa0NPMGRoNUkzTVpRclg5dXN0YVFSazB4NzZwWFZIYUhQN0lrWGNqaVJTVXB2cEJDd0t2V21TTkN5eGY5dG1mZzROTFFkaFhXeTFoRXhKN0o3Q3MwSm9H?oc=5",
+      "outlet": "dw.com",
+      "outletUrl": "https://www.dw.com",
+      "published": "2026-10-17T07:13:00.000Z",
+      "en": "The controversial new White House spokesperson resigns",
+      "about": [
+        "US"
+      ]
+    },
+    {
       "title": "Protestas No Kings en todo EEUU alientan el voto anticipado a dos semana de elecciones de medio término",
       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVC1TcXhkV2J5MGtLbXpUS2czSWZYcDRKd1B2Vk0taDFhZmo4b0NTX3hlUnZNYUFqT3hQcWVodEE5LVZUejFhcUNONEd6ZFJGNng3NWtWM3Y2TVN4eVE2aXhudnY1SHlMTUtheG1zaDhfb3AtVm9KU292REg5VjRqQTJjRzR4eWNZdGpUN2RxdnlocHF6VEhpLTVTdl9xYVJOWjNoTjBkcmxJeEkwdFBWWkdUTkF5d09CYUFmZFJPZm5ESUczZzVpd1VnSTBNSm00TExFOWFicVcwVGVjTm5xNjZyN2Z3aTNCM1lkedIB7AFBVV95cUxNbUZhMzE2V3RXdHA0WjA5aWdFWnpfN1ptRVRGTzdhRkpxbzJ0R0ZZUHJaVDJSR2t3eTVteU5jdUdVNXI4WXhuUnhhejItbGlIbWFZemtkLW1iZUZoeXJGZkdrNTl5T3Z6SXhWSHlXVzdXb2lTWEpvNC10SEFaSDN4RnI5VzZqWU51Q3Z5VFFhS01RRjlPeWc5WVJXZjRlUHZTT3dOdlV0SUZtZ29QdFYtZENGWWpjWHd5SmtxNFJ3R2ZnUWtvN2d4ZDdfcEFueXlkbUZtYVJXajdKM1d5aGVleDVRVFhCek5qejlHUA?oc=5",
       "outlet": "DW.com",
       "outletUrl": "https://www.dw.com",
-      "published": "2026-10-18T00:44:58.000Z",
+      "published": "2026-10-18T00:09:18.000Z",
       "en": "No Kings protests across the US encourage early voting two weeks before midterm elections",
       "about": [
         "US"
-      ]
-    },
-    {
-      "title": "Trump despide a su vocera Katie Zacharia; \"fue un honor trabajar para él\", dice ella",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOLU51ckVmUDNtdldzcnFhdWphN0VUa0JxSElmYmR0RTVRUlpHVlR4a0t4X3h6MEN4WXM3SEIzN1VLZHNCeUpNZkI5bFhTVjVRN1hZYnVQQTFSLThvZVcyVkYwaUVxdTNRQWZFcFZTbXQ1X3NzNGFQRTVDYzNYMTRyR25oeDVVV1NBQ2staGtVSXVVakdCeEc3SXFIb3QxQUtmaVVjX0RzWHMwQVN3X2hFY0dvVWNKOWo3dl9TVVFEX3pTQ1hTVGRTTUVrVmVGNUhDaGM2OHR4M0FvZWpFMEZYMUs0N3dXOGfSAfsBQVVfeXFMTlNQbVpQMVo4bFlpRFA1TUdLcE9VTFVzalJSS3dyMGItYmlOSkFsa242M2RBNGozWXNjeU11WS1adzlJSHhZaEZqQ1c5UnNraERidl8wMUhYS3NSZDdYbllzTW1uQmN1cUYtMjRwdTk4c1I1Q2p2UTIycnpFdW5neUxwRVVOTjRGQXFWSnhSSkV4VFVLS1Zkb0twcUF2aVF6SUhEUEh5MGk1SkZJOTdsS2lOem90Z1NKZGJQaGpoOUg2TXpRZmZaSDhTcGVDejBkeVpLQ3RSMXJja0R4RzFoM0kxbTMwRXlwWGJhek5wNUJwWnBMbHRtVTJQeVk?oc=5",
-      "outlet": "El Universal",
-      "outletUrl": "https://www.eluniversal.com.mx",
-      "published": "2026-10-17T01:56:00.000Z",
-      "en": "Trump fires his spokeswoman Katie Zacharia; \"it was an honor to work for him,\" she says",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Colonos israelíes atacan a un alcalde francés, un cónsul belga y representantes católicos, en Cisjordania",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUHFOWVUwNkVXY3V0RUJQSmlBTWcxVlFuN2JnM1hfOWl2Sldpdzc2ZUdCalpHckRWV080NkYyXzRLeXNRMm5tQTJzZzZ2eWpaUGFpT3FxQVQ2ZjBuOG16TGFkQ2RsbnlrTjZqeWhoZFpkNC12REYwWWRBYUtUbGVxdUFUUTZCX0ZTLUVIdlFUUlFUc2pPaHZVenIyTFB6Z1NGUU45YURjUW96TnJySll0RFhCZkVUVkNIRFJKSHRMVFlSaVBKQWlPZUpxbVVhbzJBYTFwYmY4ckVzb08zX3c?oc=5",
-      "outlet": "La Jornada",
-      "outletUrl": "https://www.jornada.com.mx",
-      "published": "2026-10-17T15:21:00.000Z",
-      "en": "Israeli settlers attack a French mayor, a Belgian consul and Catholic representatives, in the West Bank",
-      "about": [
-        "IL",
-        "PS",
-        "FR",
-        "BE"
       ]
     },
     {
@@ -201,11 +195,7 @@
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM0NvNTVVX2JpbW94dEVhZzJMR2wwcUt1bi13N0xEbzFaZ1hMVExmVHJfWGd3Y2N4akl3Y2FKS24xZ0JpcnU2eGFJQmZ3bVFoTElGVEFxMUZlZkFDajBFU1g5WVgyWk9xbHFXM3c0MW82TXJiUGZVSjhNcjVuanZyaG1MSDkxX2paWXRxdjBBUWppXzlwZWJUNkJXU3Q5a3pHMmQweGhTR0ZhZWVnTUhrYS1QV05zUGIwODlF0gHAAUFVX3lxTE42UHRtb0VkQzBMbjl4S2VQWEo1TTNsN254c0J5Q01kNjgtMnZJZ3AzaFYyaUl2N0hwOVV4T1JJSml3RDNpdXB2U2hVN3hTWXEwcmtCd3NWX0M0aEFhZ2k1QkxTM1V5SHZmYkJMbVg3MXhFMEpjQk8wQnhQWTlvQkJjMUZYWVVFMzJYamV0RVZkTjFpOWNEeFM1YlR6V1VKZkdpSk00S2t0eHVPTFJRN2p3MVdDLWJfdTdfa19iNHRleg?oc=5",
       "outlet": "Xataka México",
       "outletUrl": "https://www.xataka.com.mx",
-      "published": "2026-10-13T21:07:00.000Z",
-      "en": "Televisa will buy AT&T Mexico for 2,000 million dollars. This is everything we know",
-      "about": [
-        "MX"
-      ]
+      "published": "2026-10-13T21:07:00.000Z"
     },
     {
       "title": "Super Mario Bros Wonder ya tiene port nativo para PC, Mac y Android, pero requiere compilación propia – Guía de Instalación",
@@ -239,9 +229,7 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbm1PUmtydVR3SFJKb0hXRXdMbmhhaU5CQWo1cFdRai1tUG1TMm9FdlVTUmNubnZ1NVE3M1RtX0trTFl6aUhQSEgzV2o5NDVIbi1KdkEzQVdqeFhlaHpkRHZzUktCUTcxNjgxVGZMM3JaUmhsTlNpcXJoZkVPM1FYcQ?oc=5",
       "outlet": "PC Master Race Latinoamérica",
       "outletUrl": "https://www.pcmrace.com",
-      "published": "2026-10-15T18:45:51.000Z",
-      "en": "GTA 6 – Official Launch Trailer",
-      "about": []
+      "published": "2026-10-15T18:45:51.000Z"
     },
     {
       "title": "NPR restituye mensaje de Félix Contreras sobre migrantes cortado en Tiny Desk de Los Tigres del Norte",
@@ -289,23 +277,23 @@
       ]
     },
     {
-      "title": "León - América en vivo: goles, minuto a minuto y marcador J12 Liga MX 2026, en directo",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeTRScHJUR2xvcVpBTW5fTDR1Yl9vcmN3ZVZhOUtoN2dsLTFxN3YxT3h6ZEFKeFJkZFhBemN6WDYyNDh4LUpuNHBsdWpueGpBRFktS3NSVkV6Z05LTDM2NkF5SFpXM2M2bjk5TGFkQ0ZWQVlSdTAtS0dFMmpiakdMMkRRN2RybHc1UnJFMFI1QVJtbkVCNWdJX2ZZZW1iempGaTFua0pTSkRvbkFMZDNjakdmWmRmUjM2NnowTWtWRW15emQ4TXZIUTFMS1d2Yi1SQS000gHnAUFVX3lxTE5uZmJBU0ctRkV4aEQwZkxfTGV1My1IVU5uODhtdlpTTm5ha2VvM0ZfUWx5WlNVWW9TeGN6blhtOWZGMklPMUNrczVwbzlGbE0xUm82N3JPNmFMamxsdVRPMHBlVnAya1BSU2VHSk9fVFVtbHpVM0ZyeDNjSURlbzhzbUxjdkZodWlQVDRQTl82OWdMY2V0b2d3cGJjOXBOb2V4VjZEdFV0TEFLNlprdmxQeFd5WmltNExtTmJQdVg2d2dQRnlyanlqVDVOWktSS3lwQ0lWckdhMnlHeUVxMjJmdU93QXpnYw?oc=5",
-      "outlet": "AS México",
-      "outletUrl": "https://mexico.as.com",
-      "published": "2026-10-18T03:09:08.000Z",
-      "en": "León - América live: goals, minute by minute and score, Liga MX 2026 Matchday 12, live",
-      "about": [
-        "MX"
-      ]
-    },
-    {
       "title": "Huiqui sacudió a Cruz Azul y sus cambios responden ante Juárez",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYU1pSGdxYlozUjRZVTJ5c28wOC1KcTRPN2x0azk0aFpSYzhDVUcyV2ZMSnNVQ3NfNWpUSHlUd19MWGxhWHc1ejFyZUdSS3ZjWno5RUJZWkFDSG1LMzdCYVl5UVc1V0UtdmYyWFhVVlhsbzU4SEY5a3FmRVF4QXVVb0hHd0Ruc080WkNqVS11UUwzRmtuR3VSZUR3eGFEb1Z2?oc=5",
       "outlet": "ESPN México",
       "outletUrl": "https://www.espn.com.mx",
       "published": "2026-10-18T06:29:52.000Z",
       "en": "Huiqui shook up Cruz Azul and his changes respond to Juárez",
+      "about": [
+        "MX"
+      ]
+    },
+    {
+      "title": "León - América en vivo: goles, minuto a minuto y marcador J12 Liga MX 2026, en directo",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeTRScHJUR2xvcVpBTW5fTDR1Yl9vcmN3ZVZhOUtoN2dsLTFxN3YxT3h6ZEFKeFJkZFhBemN6WDYyNDh4LUpuNHBsdWpueGpBRFktS3NSVkV6Z05LTDM2NkF5SFpXM2M2bjk5TGFkQ0ZWQVlSdTAtS0dFMmpiakdMMkRRN2RybHc1UnJFMFI1QVJtbkVCNWdJX2ZZZW1iempGaTFua0pTSkRvbkFMZDNjakdmWmRmUjM2NnowTWtWRW15emQ4TXZIUTFMS1d2Yi1SQS000gHnAUFVX3lxTE5uZmJBU0ctRkV4aEQwZkxfTGV1My1IVU5uODhtdlpTTm5ha2VvM0ZfUWx5WlNVWW9TeGN6blhtOWZGMklPMUNrczVwbzlGbE0xUm82N3JPNmFMamxsdVRPMHBlVnAya1BSU2VHSk9fVFVtbHpVM0ZyeDNjSURlbzhzbUxjdkZodWlQVDRQTl82OWdMY2V0b2d3cGJjOXBOb2V4VjZEdFV0TEFLNlprdmxQeFd5WmltNExtTmJQdVg2d2dQRnlyanlqVDVOWktSS3lwQ0lWckdhMnlHeUVxMjJmdU93QXpnYw?oc=5",
+      "outlet": "AS México",
+      "outletUrl": "https://mexico.as.com",
+      "published": "2026-10-18T03:09:08.000Z",
+      "en": "León - América live: goals, minute by minute and score, Liga MX 2026 Matchday 12, live",
       "about": [
         "MX"
       ]
@@ -320,13 +308,11 @@
       "about": []
     },
     {
-      "title": "¡Dramático! Dibu Martínez sale en camilla tras fuerte choque con Brantwhaite",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMkl0MmxuLXlORktTam9BVkRJbzV5cHF0RlRjaGoyZ2Q4dG9jd3ZERnIzcUpQQlAyN2U0aUhPc3B5ZTJkRnVfUlU1MU5GWlJ2Q05RWVRSd1prNjdfcFpDd0txaWZNSHpPM1lEd1U1RHozdGlxYXdaYkcxN05tNWo3VjBBZDFVNWMwQ2pWc2hWOU9EN21CbjRvLTRIOHBGZnFsQ2gtVm1qZUN3SGwwMzVpajhB0gGyAUFVX3lxTE40cXdiSzVzb2oyUW42bWh1cUdwSS1ZQW5DMjVVb0loS1RjMVpDVlBwNjM2UlZBN3VneWRabFBGS21pNDdwY1VYMl9aQ25FZmV0VjdqZ0prMzN4SHFMbm9TRHFjWmZXTFIxM2FlMzRNRTV5djFuZTdkUHdCYjdSa1E2ZEw0dWNRWFRmd3BXOTdtdU5Db1BxVDdOcVp4LUxMMmR3RWRNNDA1QUZRcnI5V0V2QlE?oc=5",
-      "outlet": "Mediotiempo",
-      "outletUrl": "https://www.mediotiempo.com",
-      "published": "2026-10-17T14:28:00.000Z",
-      "en": "Dramatic! Dibu Martínez leaves on a stretcher after a strong collision with Brantwhaite",
-      "about": []
+      "title": "Daniel Dubois destroza a Fabio Wardley en dos asaltos y retiene título",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSjdlSWZMOVBkb1ByX0pZanZ4RDFPZ2RkRm43T1JYdEV3Y1FreWdIN2VhVmFqNGMzNnRDMFdac2JnN3RvelJOYW1oNFVuRGFfZUQwVFVkUnBKQ0dtWE9fLXBtdXdJNTZNZV9HVXpzMHM2R0Zody1hQ3dfRGhuN05oNjZseFNUMk9qVFRuMW5ZTm4?oc=5",
+      "outlet": "ESPN México",
+      "outletUrl": "https://www.espn.com.mx",
+      "published": "2026-10-17T23:35:02.000Z"
     }
   ]
 }

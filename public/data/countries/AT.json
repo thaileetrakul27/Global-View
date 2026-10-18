@@ -1,7 +1,8 @@
 {
   "code": "AT",
   "name": "Austria",
-  "updated": "2026-10-18T13:25:26.752Z",
+  "kind": "local",
+  "updated": "2026-10-18T13:48:46.764Z",
   "source": {
     "name": "Google News",
     "edition": "AT:de",
@@ -9,15 +10,13 @@
   },
   "articles": [
     {
-      "title": "Tote und Verletzte nach großem Feuer auf kanadischer Militärbasis, Arzt spricht von \"Katastrophe\"",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUXppamMtcDhvRmF5eTZvYU5vTXh3dTRPYl84dFNBaVdnQVE1RWlxcFlXWnVHT2RIcmctTDRvenp2YmJ3NkxQVWxVX1hwMlB6VmxZUThGRWJsNDFxSGJ2eHpveWptOGEyVUt1bUxwVkxFNWg5ZGxUNm5HczMteElTTDRWdFl1dkprdmRFOHlYYXMwVnhFWTYtRHRpcDk1QjR1SnpvTDYtZGhOSjdY?oc=5",
-      "outlet": "Der Standard",
-      "outletUrl": "https://www.derstandard.at",
-      "published": "2026-10-18T09:26:00.000Z",
-      "en": "Dead and injured after major fire at Canadian military base, doctor speaks of \"catastrophe\"",
-      "about": [
-        "CA"
-      ]
+      "title": "Nach Krebsoperation: Papst meldet sich mit Angelus-Gebet zurück",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5UMkxlYVRDUFljZFZzcHVncGxhaE9wVm4xWUoxcWd6UUNNeVBOampvX3E2S0cxSlo0Z3FMaVFTR3pObVMweFE?oc=5",
+      "outlet": "ORF",
+      "outletUrl": "https://orf.at",
+      "published": "2026-10-18T10:39:25.000Z",
+      "en": "After cancer surgery: Pope returns with Angelus prayer",
+      "about": []
     },
     {
       "title": "Frankreich-Proteste: \"Entsetzliches Ausmaß an Gewalt\" - NÖN.at - Niederösterreichische Nachrichten",
@@ -32,6 +31,27 @@
       ]
     },
     {
+      "title": "Tanner wüscht sich frühere Verlängerung des Zivildienstes",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE95SHYzZmpzaEFNaXlCSTB4U3YwaFFTQzFxc0NfQ2dCM2lzQjNGUjBwZElYUlc3LUU0bjR4LXp3U25yMVNhdHc?oc=5",
+      "outlet": "ORF",
+      "outletUrl": "https://orf.at",
+      "published": "2026-10-18T11:39:08.000Z"
+    },
+    {
+      "title": "Tote und Verletzte bei Zwischenfall auf kanadischer Militärbasis",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYkQ0V05BVVk0TVZ0MEoyM250bVZUWDdlVWhhSkhDMWluRVZwOGVjNGdOSE12YXVYMlRCeFMxNGVyeUpEVUNBc1NPb0hvWW55cUJ6dC1ZeTBHS0ViZTVlemdtUWZZdU5QeU1BNVZWZmxvaFJMV2lPemVRa2NWN2F2b3pXaGRGckJMTFR0bU9HR3JHWmt6TndRc08wX3R2bUpaZ0E?oc=5",
+      "outlet": "DiePresse.com",
+      "outletUrl": "https://www.diepresse.com",
+      "published": "2026-10-18T09:01:46.000Z"
+    },
+    {
+      "title": "Ruhiges Herbstwetter in Österreich bis zur Wochenmitte",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNE5XSVFXYUNzSmtWU1ptRERPY2t2UWszV1Z6OEI4VjJyUTVqRXp2SVhqbldfUGh1cWhzZmE4ZmhENm41NDdnNmlrZWZvUF81T3cxcXI0U3FGRmQyYk5aZHFmRkJNQzAxejJhYzZpUTI5Vm56ZkdacE1QbHl3SUkzd1R1c3UxYXd5SV9QNzg4WXRud2dzYVVCcWZGZUdnVjd2VjNJbV9R?oc=5",
+      "outlet": "Der Standard",
+      "outletUrl": "https://www.derstandard.at",
+      "published": "2026-10-18T11:22:00.000Z"
+    },
+    {
       "title": "Kommt Kurz? Pilnacek-U-Ausschuss geht möglicherweise in die Verlängerung",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaUxrRHZDY2Y0aHpJOUhxOEU1UThlc243QkNXX2twSk0xVlNNY01mNE8xaFVDTU81N3ZRS1F0X0x3aEtEMWdRRnR3YzVxOUdtQ1p2eVBFQUdzdWlWUmJrN21SMlpSYW93YzBVUHVfaWhxcFFELUIzbERiazNEeGFxdGplbTN4T2lySWpyVHIxaHZqamJnSDQxRg?oc=5",
       "outlet": "Kurier",
@@ -43,97 +63,50 @@
       ]
     },
     {
-      "title": "Angelus-Gebet: Papst bedankte sich nach Krebs-OP bei Spitalspersonal",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdVFfRUlFVjhwVE9pZUNhTVo5N1E3VkRVeURDSm1fN0ZGVng5bHRhYWpidGFKN3lQMEZmYW1xcHZrZk02WGlreG4wSUpSZTl5ZElGbHFKRUJKVFlFTXZQZm1GMHlCdWZaei1SWEd4WXFFd1E3S3ZDXzFnTzFOVFVZRmJYb1NEX1lKQmU3eTVfMTdkQVBoRGdXSjFlZVNPWkMzTXN3MW85RF8?oc=5",
+      "title": "Von Kürzung über Erhöhung bis Demo: Die wichtigsten Fragen und Antworten zum Uni-Budget",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMTJBV0RWdkV1STRreDV4M2NJcXlGTkhFMlotZmI2aThucFdJNV9oaTBvV0x6M3BDbHBncGtyZ25rTXlLNG1qRE9VdXAwTzZtOUVaWkx3Tl8waW5XVHlsZ1dkbVN2a3dvSG9pcHB3LW10Y2ZHdzVyZGNNSklzdENYUnFpTEhDTm5NZkpRTG5LQjFYVTVhUWdFQ2hiYWF4UHlzQmZHa0RPcGZTeDJ0dmFGOHZBcEkzZG9ocTVxQVZwdTVCU3dZS0VuUXpYY2VQbVgzRVE?oc=5",
       "outlet": "Der Standard",
       "outletUrl": "https://www.derstandard.at",
-      "published": "2026-10-18T09:02:00.000Z",
-      "en": "Angelus prayer: Pope thanked hospital staff after cancer surgery",
-      "about": []
+      "published": "2026-10-18T13:00:00.000Z"
     },
     {
-      "title": "Regierung einigt sich auf 16 Mrd. Uni-Budget und Zukunftsdepot",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzNfcjhacXB2QzF2d0lGanF4c1ZhenJfUV9tY2l6Zm1WN1FfcDZib2ExNU9PYThOaE9SNzFZenc3UHo3WTVhQzZhZWFLZmVmYi1nSU5ZRkNPcnpVWUlxVWp6SDBjNU1uUTNvYjkyWGhUUmJRVWNaUHc3dEt2S2ZMUmRZN3R5dlFzQnM0UWhEZmYySjVJb2dPSjBoaXZXc01qYk9lQkhYdGwyOHBtQWdZNQ?oc=5",
-      "outlet": "Salzburger Nachrichten",
-      "outletUrl": "https://www.sn.at",
-      "published": "2026-10-17T16:24:00.000Z",
-      "en": "Government agrees on 16 billion euro university budget and future fund",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "Ein Psychologe entlarvt die progressive Oberschicht – wenn elitäre...",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdDlTeHZBUTVBdU9aYVNxY09TSVBhUGdHeGdIWVJlalVqNUZINjEyVXl6VnBRdkRVbWFIcFVvNnA3TGJmV0R1WWdYdGpsdUJrM3Uxd1dBdmNGQVMtMkVySmNjYm1aREVYMFpXVGVpRnB5YWc3bGN3c0I5NnVTdC14dVZldkxuYXBTZVNvcW5DLTNfSVRGRWd6UUhCbnZDdkpWYmJpZEdMbw?oc=5",
-      "outlet": "DiePresse.com",
-      "outletUrl": "https://www.diepresse.com",
-      "published": "2026-10-18T09:10:57.000Z",
-      "en": "A psychologist exposes the progressive upper class – when elitist...",
-      "about": []
-    },
-    {
-      "title": "Proteste bei FPÖ-Landesparteitag",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1TTWVMNGc2VkZEZVV0Q2RFd2hQUkdveXNvYlFhMl85ZWFjS3Q0NzFDcHUyY2FBQkU1V2x1MUVDaHBnYU42dUV2elRfZjRkejNkelJuLQ?oc=5",
-      "outlet": "burgenland.ORF.at",
-      "outletUrl": "https://burgenland.orf.at",
-      "published": "2026-10-18T09:04:20.000Z",
-      "en": "Protests at FPÖ state party conference",
-      "about": [
-        "AT"
-      ]
+      "title": "FPÖ-Landesparteitag: Demonstranten draußen, Streithähne drinnen",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU2d2RDdwdDVQZ2xrcXcwOHNsWW56MUlpN3R5MTYxVW9YOTFXRmVLcEd4RHp6S1diNlZrZ2dzV1VDY2YtT3l1OU1iTDlOaDRhQ2k4cGtldkpwdXMwVUZ6Y2MyMVRJUXA2MDJhbFZGRVM2VURJOGpmazFxempTcUhqb2VGVUdTcWlyc1YxS3VFMTlHaTk1czFNei00NGwwb04tV2RrWlhoZkJGTElwejJGQQ?oc=5",
+      "outlet": "Kurier",
+      "outletUrl": "https://kurier.at",
+      "published": "2026-10-18T11:24:00.000Z"
     },
     {
       "title": "Opfer 16 und 18 Jahre alt: Zwei junge Flachgauer starben bei schwerem Verkehrsunfall in Nußdorf",
       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQc1FFanJjREozSGtVRnMxWmlYa0RZaFRSRjViQ2ZIRXdjRWd5dmZqUzdhdXdUSzNCN1A5Mm4zZVVyQlJLRVpLaDJPb1lmbWhMVFU3UXc5bU1kdmk4aVNwU0dIZUdFcEZMbEtWOFFUdXNRd1FEbkt1Z0NOQkJZbU1MN1N6Y0FoOFE1NWtFdmZtLTBuX2NEb2xrNHN6eFdDZFNGUmxEUUpUY3pzYmpNeUpxMHA4SG5vQTlkUTd0MXYwMEEzR1J6SjVrUWV6WC0xX3ZwUFRlVzJLbXM?oc=5",
       "outlet": "Salzburger Nachrichten",
       "outletUrl": "https://www.sn.at",
-      "published": "2026-10-18T11:36:00.000Z",
-      "en": "Victims aged 16 and 18: Two young men from Flachgau died in a serious traffic accident in Nußdorf",
-      "about": [
-        "AT"
-      ]
+      "published": "2026-10-18T11:36:00.000Z"
     },
     {
       "title": "Gedenkplattform eröffnet: 70 Jahre Volksaufstand: Gedenken an der Brücke von Andau",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZFFtc2dPRk5CQjdneXhtUThzcWlOZzBOSjRoeElYd1pYcEZQUFY1OTZUVHJhejVWS2Npb01MMFBWN0RUMWIxOHN4YV9ObnRZU25GQVRJc0sxWWhkWGU5MHp2cHBaeFFKY3l4dWFpX2xDUGs3QmRHVXlhb0ZaRkZyTmZDa3E1V3dTenQ0YVlCVjc2b3lhLU9Ed19DSW55SFRITk1oRGc5aVV3Q2VDSXZWLXlLTjI5bkJy?oc=5",
       "outlet": "MeinBezirk.at",
       "outletUrl": "https://www.meinbezirk.at",
-      "published": "2026-10-18T06:08:34.000Z",
-      "en": "Memorial platform opened: 70 years of the Popular Uprising: commemoration at the Andau bridge",
-      "about": [
-        "AT",
-        "HU"
-      ]
-    },
-    {
-      "title": "VÖZ über Medienpaket der Regierung erfreut – Niki Fellner weniger",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVThaVTR0MlhaTVB6WkRrQ1Q5bG5WaVVwRnE2QnhwN2lZbTFoWTdFb3I0M1duZFJkcDQxNFdzQm52OXp5SlhRcnZoZ3dzYjJiXzBRczNySkwxOFVaOHhTZ2FQNThsTEI3TjFFQVFfQndfcERIRHRaa3dFTEZKYnd1ZzZSQjV0NUdxWFJFU3Zob0VTRkF6S0hwc3ZvSWk5dURZMjdmS2szaUo4SkFERVppT0RB?oc=5",
-      "outlet": "derStandard.de",
-      "outletUrl": "https://www.derstandard.de",
-      "published": "2026-10-18T12:25:00.000Z",
-      "en": "VÖZ pleased with government media package – Niki Fellner less so",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "Alarm wegen unbekannten Flugobjekts an Nato-Ostflanke",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONUY0SERYVzZQRWdCcGs5UG9ocWtOUHpwOGwzeXhKVFFySGdReFpoS1lhdDhFUHRhaTRhMGJsQTZLOTdCOG1vLXZHTjRlX2daVnBYZlB1UkV3YXZxM2xIRk1zNG1vWWlFNk11M3JqbWZxYzE0R19hdVpZWVJZVk5zRkFxc1dOMmZoYVdXOE10M0J5UQ?oc=5",
-      "outlet": "DiePresse.com",
-      "outletUrl": "https://www.diepresse.com",
-      "published": "2026-10-18T09:43:37.000Z",
-      "en": "Alarm over unidentified flying object at NATO's eastern flank",
-      "about": []
+      "published": "2026-10-18T06:08:34.000Z"
     },
     {
       "title": "Westjordanland: EU fordert Maßnahmen gegen Siedlergewalt",
       "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE93THNUX21CbldSampjZ2FPSjdGdmtTZk5sM01femVJVnpkMTZPVTJ5T1lNRW9OWmVNdUNoUTdpYVhUcmJtdGc?oc=5",
       "outlet": "ORF",
       "outletUrl": "https://orf.at",
-      "published": "2026-10-18T13:04:10.000Z",
-      "en": "West Bank: EU calls for measures against settler violence",
+      "published": "2026-10-18T13:04:25.000Z"
+    },
+    {
+      "title": "Bürger sollen in Schutzräume: Alarm wegen unbekanntem Flugobjekt in Litauen und Lettland",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWUx6SzY0dzhlTXVRNzZJUnF3VFA0SS1zSWlPbDNQaFVqel91RVREV3Q1QmRlOXJyWnpfbG5hUjI3NW1KcWswRU1yWUdXeWhrUFIydnZDNVBENlFQUlE4QjExNUhJUG90R3ZwaktZZTR3QVFQMU1XbDNVQmhBbXlGRllmUFdOWnRzVTNOeGNWd19ucjlySG9lQk9YTUxoUnZmWGxoaERXbHdFLTR1?oc=5",
+      "outlet": "Kurier",
+      "outletUrl": "https://kurier.at",
+      "published": "2026-10-18T11:55:57.000Z",
+      "en": "Citizens to shelters: alarm over unknown flying object in Lithuania and Latvia",
       "about": [
-        "PS"
+        "LT",
+        "LV"
       ]
     },
     {
@@ -152,17 +125,13 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeVZiSGhmbUw4bnU0SXRXTTBvczNWa19XZjlwTzdVUGZ5RmVFeGQxT0JYMmwxcjZ5clF3NXVuWFpsNFFhWkx6NXkxX0U4SnpfOHlqWEJHOGQ4RXZsWEx6Z2ZtUkN4ZHVQNlFpdS1JaGpLMzAwblY0LXBobEZyZ0xpZ2F0R2tqLU1JTkUtZlNxbXBmaW5YVkRTUXVta2tSQk9yRXFETg?oc=5",
       "outlet": "Salzburger Nachrichten",
       "outletUrl": "https://www.sn.at",
-      "published": "2026-10-18T10:58:00.000Z",
-      "en": "Another security incident at Leipzig airport",
-      "about": [
-        "DE"
-      ]
+      "published": "2026-10-18T10:58:00.000Z"
     },
     {
       "title": "Schall, Rauch und Raketendüsen: Analyse des neuen Tesla Roadsters",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPT3dhVFBna2ZQVTNFQ1owdUdoWWFCVVJSTGZDYnVVOWNuMDVTdWR4SW1fTEYyWHlhcjJaYWU4QnFncEIyTlFiN1hPODVPNVBBaU14b2xjNVBlUkV5dlg3M0l1bS0xUFozazJwYTFRWVVjMkhhUlp3SzI2N21qMzdWTjh1c0RiU0Z3dURRUGZRWTNWdWNBaW95b0JZbGxlSXQ1NEtQejRINTNoVWJtU3RCRVhhN2dyNHJOeXc0?oc=5",
-      "outlet": "Der Standard",
-      "outletUrl": "https://www.derstandard.at",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWDcyYjU3emtHQmFid3AtQzcxeURfM1N6aUx4bjFkcEkzaDlzUlRua3NhSVVPZFJ3cUhpbXR6bVV2ZWVER2lPWHR3UGc4dFV3S2Izems4MzEzQVZ3TGFpcVNtRl9SdW9tWklRUm80TG1zMVFSWUFPX2lSZkx6ZWhaajk3MUREYkFFMTdLcEkzVmNyVEkyWkJhaHFkWjBQSXNRbzJ5SHhzMWQzaHMxcjZRUQ?oc=5",
+      "outlet": "derStandard.de",
+      "outletUrl": "https://www.derstandard.de",
       "published": "2026-10-18T10:00:00.000Z",
       "en": "Sound, smoke and rocket nozzles: analysis of the new Tesla Roadster",
       "about": [
@@ -182,15 +151,6 @@
       ]
     },
     {
-      "title": "Jetzt kommen die E-Lastwagen mit Solarzellen",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNUlaZVRJWUJMR2xLWEQ2NjFpdnBfNVhlWmJMMzZsUDNmc3dWR00tTE1FLWdZLXVDWE9yUG5rWUdIdEhPNVViQzJMRkdyQkNLQ0I3LU5rM0ZtRkFVMzRHUWVBWHFoQVVmR3pVengwb185Q1pKYUprNi1Ra0I4cUwwV3F5NEstZTBxb2x0ODMxcGthMjl4M1ZWdE14VWRUWU0zY0tjRlNIc2paaXYzQ0tyUlNR?oc=5",
-      "outlet": "Der Standard",
-      "outletUrl": "https://www.derstandard.at",
-      "published": "2026-10-18T08:11:00.000Z",
-      "en": "Now the electric trucks with solar cells are coming",
-      "about": []
-    },
-    {
       "title": "Gewerkschaft GPA: Keine Verlängerung der Ladenöffnungszeiten auf dem Rücken der Beschäftigten",
       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNUG5DR0c5S2c2el9oSGgxWkgwbWZrRmN4OWM3cVoxOVI4MHFZbFNGd2hYUExFQnMzNURlbUI5UDZvNkhyTC1yZWk4N0NMU08ydWxpeEJQQ2UweEUxblA1SkU5bXZ6RnVBUFJjZmZWamNFMkdUQVdfd2F2M3RKZXZuTldycXM0eGlRTGVfb01lVjhZNGdwT1RCSXVQTUo0SDhzdlNMOHBhTTQ4bjhCaXNQeFJSanFSSmh2Sl9KSHRhRjYwTjhyMzBlNFVfTDhrQjFsdkxYdVVNS2JzTGI4Tzg3ejh0NWRiQVVf?oc=5",
       "outlet": "OTS.at",
@@ -200,6 +160,15 @@
       "about": [
         "AT"
       ]
+    },
+    {
+      "title": "Jetzt kommen die E-Lastwagen mit Solarzellen",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNUlaZVRJWUJMR2xLWEQ2NjFpdnBfNVhlWmJMMzZsUDNmc3dWR00tTE1FLWdZLXVDWE9yUG5rWUdIdEhPNVViQzJMRkdyQkNLQ0I3LU5rM0ZtRkFVMzRHUWVBWHFoQVVmR3pVengwb185Q1pKYUprNi1Ra0I4cUwwV3F5NEstZTBxb2x0ODMxcGthMjl4M1ZWdE14VWRUWU0zY0tjRlNIc2paaXYzQ0tyUlNR?oc=5",
+      "outlet": "Der Standard",
+      "outletUrl": "https://www.derstandard.at",
+      "published": "2026-10-18T08:11:00.000Z",
+      "en": "Now the electric trucks with solar cells are coming",
+      "about": []
     },
     {
       "title": "Ubuntu Touch 24.04-2.1: Update bringt acht neue Geräte und schließt Sicherheitslücken",
@@ -254,17 +223,6 @@
       ]
     },
     {
-      "title": "„König Ubu“ am Burgtheater: Eine Einspringerin rettet einen disparaten Theaterabend",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeUpqSHFNdWItLU01QVNBNlp5ZGJNVVNhVTQ2RXFiT05CYlNlTEFSVjI2aG1MZWU4MlE4NWphNnhWUGtlX0JqcHdRbVhGN0w1dFhXVWozd2stOUhHVUM4RUZsQ21MSEJzN2I4VFlvMDdVT3F6ODVpRjU3QW5sMUh4SnpjQXVLcW5oS0xMbm01Z2J3eDRpbHRCSUdlbXZJRVE0akVISTliaGU2Ujk1anN4MjNPeUxackpFTFlHektSbXVfMDBCS2c?oc=5",
-      "outlet": "Salzburger Nachrichten",
-      "outletUrl": "https://www.sn.at",
-      "published": "2026-10-18T09:23:00.000Z",
-      "en": "\"King Ubu\" at the Burgtheater: A substitute actress rescues a disparate theater evening",
-      "about": [
-        "AT"
-      ]
-    },
-    {
       "title": "„Lasse die Bombe platzen“: Helene Fischer sorgt in Silbereisen-Show für Aufsehen",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdFVxdUVxSnhKTl9SV0h2VG03WXY4TjNxU044UU9JYU1ZNjF4dWZpZm1fLTRsbk8wSG9ZNkRRN3RMMUtsaGwxdmwzLVViN2VzM0ZNSzRrR3NkMjA3VjJTaUpFRDhzN25vRHdZMzg3aHluQXYwaWtUUjdiTTZaVE9YM1hEZXBxblMxMzYzYnhicjduUi1JbkotNzh4b3lQN3k5N2w0eVozXzlGbUxzNnVhRDVVWUg?oc=5",
       "outlet": "Tiroler Tageszeitung",
@@ -273,6 +231,17 @@
       "en": "\"I'm going to drop the bomb\": Helene Fischer causes a sensation in Silbereisen show",
       "about": [
         "DE"
+      ]
+    },
+    {
+      "title": "„König Ubu“ am Burgtheater: Eine Einspringerin rettet einen disparaten Theaterabend",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeUpqSHFNdWItLU01QVNBNlp5ZGJNVVNhVTQ2RXFiT05CYlNlTEFSVjI2aG1MZWU4MlE4NWphNnhWUGtlX0JqcHdRbVhGN0w1dFhXVWozd2stOUhHVUM4RUZsQ21MSEJzN2I4VFlvMDdVT3F6ODVpRjU3QW5sMUh4SnpjQXVLcW5oS0xMbm01Z2J3eDRpbHRCSUdlbXZJRVE0akVISTliaGU2Ujk1anN4MjNPeUxackpFTFlHektSbXVfMDBCS2c?oc=5",
+      "outlet": "Salzburger Nachrichten",
+      "outletUrl": "https://www.sn.at",
+      "published": "2026-10-18T09:23:00.000Z",
+      "en": "\"King Ubu\" at the Burgtheater: A substitute actress rescues a disparate theater evening",
+      "about": [
+        "AT"
       ]
     },
     {
@@ -300,7 +269,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRklabXBDbDR4Z0ltSXpobWZKbjZ6c2lQVFRHU3ptMmVxUHlsdXB4MGROdkxQVE9rMHRvR2p2OXRfYWl4VGhFbnFVeTV4dFprOUIwU25VbFhZeC1laWJNNWNVcGI4S3k4MlB1M2UzclNRUlZ4c05TZVJ4UThPUFBBQ3hNaUgtZ3kzVnFpMmY4czJkTVd3?oc=5",
       "outlet": "ÖTV",
       "outletUrl": "https://www.oetv.at",
-      "published": "2026-10-18T10:52:30.000Z",
+      "published": "2026-10-18T10:59:35.000Z",
       "en": "ATP Shanghai: Historic triumph for Miedler/Oberleitner",
       "about": [
         "CN",

@@ -1,7 +1,8 @@
 {
   "code": "MY",
   "name": "Malaysia",
-  "updated": "2026-10-18T13:25:26.752Z",
+  "kind": "local",
+  "updated": "2026-10-18T13:48:46.764Z",
   "source": {
     "name": "Google News",
     "edition": "MY:ms",
@@ -20,17 +21,6 @@
       ]
     },
     {
-      "title": "IPU di 26 lokasi rekod bacaan tidak sihat",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWVhqckh5Y0hITFNZYVY0ZW9NNEZab1RiTXNLOWoyYlpWNjdFdzBsYm1Qbzc4VmdPTExsMzVJREVWQnlLOUlSTUg5eURndUV0N0RkbWxBWkpKaUZrQ2tFMmJlZk1kTVdsQnBnS0lhbl9iSEFzaWtDSHcyVDlONHgxT25pVGFxemI3XzBPNldJNXhsV0tieG94RFdzQTc2dXJPWHfSAacBQVVfeXFMT2FjOEJndllYbFc5VDk5S1JxMUl4bmNjSkVRZ1d4eWQtMjRwLVg2cGJhNXdOclpxbU1YMEE3bkpsX0N4TGx6dV83UDYyODN0d0hhWDFBLTUwNFpWallmNlBrb3RTb0VSbEtYRDhXenNCblg3RUJ6UFdlNS1aUDEwUGlnbVFDNzA4ZU9yc09zSHRDMXhyT2V2UUE4R2VZSzgzSktqNDNicUE?oc=5",
-      "outlet": "Berita Harian",
-      "outletUrl": "https://www.bharian.com.my",
-      "published": "2026-10-18T10:09:35.000Z",
-      "en": "Air Pollutant Index (IPU) at 26 locations records unhealthy readings",
-      "about": [
-        "MY"
-      ]
-    },
-    {
       "title": "Serangan di Arab Saudi: Penuntut Kelantan selamat, kuliah tidak terganggu - Exco | Sinar Harian",
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSTZOd3RZdk1DTlIxSDBYdEE0UjktZ09KX01US1RKbkM2Mlcwa2JsRjRVdHFWY0FIRFpLYzl3cTNVQjhaV3FBX2hhSV9PRWlhYmdsYXZvQlhiR0JBbldUenkteWFhY3Vtb1lyUVVvVmt6aWF4aml0eUlVOGtvQUs1dzdBZ1lDS0FTeDJJcElMN0pvd0xCSm1PMV83ZUpRMGdlZVg4eGpFVzlGT1RNVHJHWFVzdkY2QlVjZFZhYmpGRVE0RDVoSXoxQTJPUnJNbHN5ZEw3etIBXEFVX3lxTE4zUmxJNGZWNlAzM21PTVFrNHBub3lSaURFWEt4eURhRDFqU0hteVVCWEtJcHZpYlp6cFRVTUcyY0luLVRRcUxKaXFEY0ZqN2VwYjB5R0JiNnBnTVlC?oc=5",
       "outlet": "Sinar Harian",
@@ -39,6 +29,17 @@
       "en": "Attack in Saudi Arabia: Kelantan students safe, lectures not disrupted - Exco | Sinar Harian",
       "about": [
         "SA",
+        "MY"
+      ]
+    },
+    {
+      "title": "IPU di 26 lokasi rekod bacaan tidak sihat",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWVhqckh5Y0hITFNZYVY0ZW9NNEZab1RiTXNLOWoyYlpWNjdFdzBsYm1Qbzc4VmdPTExsMzVJREVWQnlLOUlSTUg5eURndUV0N0RkbWxBWkpKaUZrQ2tFMmJlZk1kTVdsQnBnS0lhbl9iSEFzaWtDSHcyVDlONHgxT25pVGFxemI3XzBPNldJNXhsV0tieG94RFdzQTc2dXJPWHfSAacBQVVfeXFMT2FjOEJndllYbFc5VDk5S1JxMUl4bmNjSkVRZ1d4eWQtMjRwLVg2cGJhNXdOclpxbU1YMEE3bkpsX0N4TGx6dV83UDYyODN0d0hhWDFBLTUwNFpWallmNlBrb3RTb0VSbEtYRDhXenNCblg3RUJ6UFdlNS1aUDEwUGlnbVFDNzA4ZU9yc09zSHRDMXhyT2V2UUE4R2VZSzgzSktqNDNicUE?oc=5",
+      "outlet": "Berita Harian",
+      "outletUrl": "https://www.bharian.com.my",
+      "published": "2026-10-18T10:09:35.000Z",
+      "en": "Air Pollutant Index (IPU) at 26 locations records unhealthy readings",
+      "about": [
         "MY"
       ]
     },
@@ -69,54 +70,36 @@
       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQaFIyRWdTRVYtRTNvcVZpb2dEd2NreW9pZ09VTlY1bzlONEJ2NlhOX2RmNk5tSktLMFFxcGoyeG1QWFpaai1aYVdyQ1pLci1sczZiOVhJcG9Ba1NHYkpxWmg0blNjelB6T1BPQlBidUNYcXVkZ3JHdkgzQjc2V19YTU4wQWd2azVSNWdxNncwbjd3d0w0WmhMbWtFNGJ0UW11U0FvQnBFd1M0TEtuYkVGMHA2Zk1kc2tyS1VESTlLaWVRVFJYYUZhUmVaVUNBb1VWakNId2NBMlc?oc=5",
       "outlet": "Astro Awani",
       "outletUrl": "https://www.astroawani.com",
-      "published": "2026-10-18T07:45:00.000Z",
-      "en": "[LATEST] Haze: All schools in Selangor to reopen tomorrow, no outdoor activities outside the classroom - JPN Selangor",
-      "about": [
-        "MY"
-      ]
+      "published": "2026-10-18T07:45:00.000Z"
     },
     {
-      "title": "[TERKINI] Demonstrasi Perancis: Rakyat Malaysia dinasihat tangguh perjalanan tidak penting - Wisma Putra",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQczhzeHZwakdld0JNZTF5dEoyWFBmUG1qZlhCRTA3d3A5QjBWbENKSDZpdnM2dEZhRmJCaDRiUDhRTW9CRzA1T3hxN19LWXJ0ZTNUN3pIeXJZRE50VzZqM1BNMjRad0p5R0F1TXJ0U0g5VC0taFo4QmJNZ0RwQWp5ZHpVUHQzcGNfLXV6Z2RORkNQY01qNUJQcllNSG1rNVVYbnZ6WjFIRV8yU1FxbGZESTFYUDNCd3hyZi1QVmltT3NCOTN2ZnJwdUJZamthVUtkRjVtNVlB?oc=5",
-      "outlet": "Astro Awani",
-      "outletUrl": "https://www.astroawani.com",
-      "published": "2026-10-18T05:35:00.000Z",
-      "en": "[LATEST] France protests: Malaysians advised to postpone non-essential travel - Wisma Putra",
-      "about": [
-        "FR",
-        "MY"
-      ]
+      "title": "Protes ganas Perancis: 1,800 ditahan, 1,500 premis perniagaan musnah | Sinar Harian",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRnp0U1BoZWlEN0lSSlFUNE5DLTI2dXR4NFo3RkpKbHhkRkIwZ25tZVJ5LXJzZUQ5NHhTcDFmZUNkWHlaLTU0TFdlZTFnUFk1VTdnSTFrOW90WkNvcXZtZXVsaG5jZ1JVUFpjYWhETWMxV2dBOVBvcUVPTjlaM2FnQVUtQ1MxQ1ZTUGJ3bGhxTVlKSHlQalFlOWV4SG9lUmF2RTB6Qmk3ekRkQy1HUUZJeEtnNmpQSnVa0gFcQVVfeXFMUERZVjZMbUlJNVlXR3lQUGVINmc2TTlnMjhYd2JQS3l6MFh0YXA5V1d5Vjc0Z0dyTFY3UDQ5LXZ3UFE1MUhoNUNsNnFHU21rRl9jeGVrOVAweTIwMy0?oc=5",
+      "outlet": "Sinar Harian",
+      "outletUrl": "https://www.sinarharian.com.my",
+      "published": "2026-10-18T10:37:00.000Z"
     },
     {
-      "title": "Isu Rohingya: Polis Kelantan buka kertas siasatan ke atas aktivis sosial",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYnlwZ21LWnd4R0FQa3lqeFFxWm1QV2ZTam9fdGZraDFVUFV2dUtsUUQ5YW9iYVpDcjlOc295X294ZXQ4TjczWlZRZ2E4S3NBVDRWWS1QWDlyZ25NTVgyU0JISUVsVHpUQlRBX19KbWtDeERfMi1WMUVCLWRJVUxWa0JGWVhTdUozNHBwRVlTUHhLYVF3akJPVkY2T1VKVk03MVpPN1dKbmk2RDZaamR5eEZoaFY1dw?oc=5",
+      "title": "Pejuang harap bertanding satu, dua kerusi PRN Melaka",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZjBsa0hmWnZJZERkS2xKaXN5bUxndEN5TmZpMmNTbU5wa0gza3JLc1M4b3RSQjRXa18zVGhTU2xsWXFVUmRGZW9CZGFBVDY5bVZ5T2ZzYldidkVtamxscmtjMHZhVEdYQ2t3VVZsZENMUUh0cGUwRG1hMzJtZ2dHcHVqYWM0bHB3cWE2VmpXcFNTeWVFQk53cy1xZw?oc=5",
       "outlet": "Utusan Malaysia",
       "outletUrl": "https://www.utusan.com.my",
-      "published": "2026-10-18T07:34:00.000Z",
-      "en": "Rohingya issue: Kelantan police open investigation paper on social activist",
-      "about": [
-        "MY",
-        "MM"
-      ]
+      "published": "2026-10-18T10:09:00.000Z"
     },
     {
-      "title": "Fahmi kecam buli dan ugut Ummi Umairah",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUVp6dFNiWG1ORmJuTUhrMEY4UnQ1M3AyLUdPSUFFSmU3MjZ2S01hVWdIUXlBeVN5SVhubkZhWGRFWXJCLTZTZ05kd2V1a2h5TV9RNWppbVdFVWZkdlF4RjFmVkNOUEtnUElKMkNCOHZ6U2FoelJhWU1jYVFMdjJkVjhqRlNkUQ?oc=5",
-      "outlet": "Malaysiakini",
-      "outletUrl": "https://www.malaysiakini.com",
-      "published": "2026-10-18T08:46:00.000Z",
-      "en": "Fahmi condemns bullying and threats against Ummi Umairah",
-      "about": [
-        "MY"
-      ]
+      "title": "Polis Kelantan buka dua kertas siasatan isu aktivis, pelarian Myanmar",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVVhMdURXLW5Ob1dnaUJzYjFDb1dNYk1LaUNCTTc1aGVnMmtidjFsR21QX1BHNHhpQXBsam9ReUhiQVgwRkRKVERWUmhoVHVHRENSVlZPdDdZUjRSWGVsSkxKTXhxWTJZMnVyNm9HX2NvWUVfcXk0cHlwY21UaWdaTUo1eWZJS04zR3haQmg3cFVsX1dVLXpzN3U0azZJNE5JVHc4NWNyaGRkWVdfVkw5aw?oc=5",
+      "outlet": "Astro Awani",
+      "outletUrl": "https://www.astroawani.com",
+      "published": "2026-10-18T10:30:00.000Z"
     },
     {
-      "title": "Ribut petir landa beberapa negeri hingga malam ini",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZHBEMlVyXzdzNWd1b0ZEczJuLWZETnU1TEJtX2JOc1ZFNTBPbUEyc0hKblhBYXFweTFJNzRUdDktd2RZbThCMkhnNXQ2UGpaekswWEJWekZfbEJFVnhfZExDbzVvTTllQUh0Q2RSYU5od1A1TjFRVFlIczFBNGJjaEk4aTkza2ltRHYyRzRQZHRaSUk?oc=5",
-      "outlet": "Kosmo Online",
-      "outletUrl": "https://www.kosmo.com.my",
-      "published": "2026-10-18T09:44:00.000Z",
-      "en": "Thunderstorms to hit several states until tonight",
+      "title": "Amaran ribut petir, hujan lebat dan angin kencang di 10 negeri | Sinar Harian",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQa1g5aUVMVzZVR0tQVHJNdktoZHFUdlEyVXRNWnJjODRfV2F5NzdZaHhQOXMzRnhid1Q4MTNvbWQ1cGI2TlJHbW9YSEY0c0FOMjh3MnhZSExzbWNrVl9kSzBmaDRjU2tqNUVJYlFpMUtadExZUGZILU9nWHV6UmVONG5DSlpFTUh3aGFfV3VWdWNhMzYyTGRWYldiWFEtdnJfYTE5QmFXSmFqVmtxS0pqRG9zVTc4ZUxKbkxEZ3h30gFcQVVfeXFMTW52UWw3eGoyRVBzdm9LQ21BcUhzMnhrMUtmSTZKTmJxWE93bXRPSTJLVmQ3ck1rZ3NnWXNLUTYwRGxxVlhNTEN2YWtWODZkeXZZTDVQWThvTjVRSUo?oc=5",
+      "outlet": "Sinar Harian",
+      "outletUrl": "https://www.sinarharian.com.my",
+      "published": "2026-10-18T08:16:00.000Z",
+      "en": "Warning of thunderstorms, heavy rain and strong winds in 10 states | Sinar Harian",
       "about": [
         "MY"
       ]
@@ -126,12 +109,7 @@
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPajBpb0hCWjRwRDdxZVEtZk90am51dXgxTTNqalkxcGZ5TkE1VXJKaF9GYlBUZVQ0amg4TjU3TjdpTVVzWHlYY182WHpVTXB6TEtMTEtuc1pSWWUzbTdvTkxfaWtESlFJbVB1V1ZEWTVmX2V4MnNwd0w2YWFUYUlzX0hfb0tfSzhWa1RyZlZBQWFmRlZNOE9NNUJoUXZQMnBsN2lOR0dlTDdKUXlxLTQ2c1MzX19nV2gwM204VHBZQTA5Zw?oc=5",
       "outlet": "Astro Awani",
       "outletUrl": "https://www.astroawani.com",
-      "published": "2026-10-18T08:11:00.000Z",
-      "en": "US \"deeply disturbed\" by attack on American photojournalist in West Bank - Rubio",
-      "about": [
-        "US",
-        "PS"
-      ]
+      "published": "2026-10-18T08:11:00.000Z"
     },
     {
       "title": "Zelensky bimbang Trump longgar lebih banyak sekatan ke atas Russia",
@@ -151,11 +129,7 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQS25lSmh2WV9SZUQyWHM4cnQtUExoNjZYTHR5ZXZ2TlVKc1FPS1l5UXZabklSUFotUW9NZGUydFRWaDl5Z1MxZENfUll3bnBmd0dHQUNqeE1heHlFYVNUOHVQY01ieGJGckx6QXVwS3Q4QUFXNG5KN3ROdkdZcmQ4NjBkMXBsNXRQUWpZWXBoc29zTG54b0Y5Vk9zRTlzQU5iWmVGYmRidTB0U2dMbDdLTklyWlE3UHNyRGJHVm11QdIBxAFBVV95cUxPaGI3TU1WbXJEQXJ3bkwzN2cyQnhCOEM1SFNxUjBSMVZtVHF6QjFUOXo1eGJMXzhBNGdZWGlGSmp5VlhNN0Y4cW9nNVhkRFNJQnZ6Z3NGR3FZNU00dGtQRnQ4YWd2OEQ4dG84VTNTXzhMSzY5dUhMWE1BRm5Edm96eF94RlUzVjNLc19WRTRDcVROSFE5YnJEOHNETU9iT0ltZGpqZHJVMHU5cjNnVndHNWdscDVfanZJaUhhZVBUWGNZRUdI?oc=5",
       "outlet": "Harian Metro",
       "outletUrl": "https://www.hmetro.com.my",
-      "published": "2026-10-17T13:24:37.000Z",
-      "en": "Indonesia scatters 2.4 tonnes of dry ice in trial to disperse haze in South Sumatra",
-      "about": [
-        "ID"
-      ]
+      "published": "2026-10-17T13:24:37.000Z"
     },
     {
       "title": "Dua maut helikopter terhempas di Najran, Arab Saudi",
@@ -180,15 +154,6 @@
       ]
     },
     {
-      "title": "Tesla perkenal V2L Powershare, Roadster dibuka untuk tempahan",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRVJEaVNCeFVubjdqVmpxUDFzV3d3NkdRUWJDWVppT1IteHlCbE95YmpFTFUydi1uWG53cmRpd1REdjdrenlQR0Q3eVk2T2UwT0NwSVlNWmJETHptLU5iSHJhRXA0QmZmNmJXUmZWLUY5WnJUUnhRRngyd013cDczdExxNjM2ZXBBa0Fza1pSWjVYOGZ5T2pkMFI5dTdYYmNXZkZ5XzdLbUZpUGYzdW5BTWE3cHkwQdIBuwFBVV95cUxNRUFzMVcxVXlsQXdqaE9nOHdaQUxMUWdTU1I4bVByUWwzbmhfUGFFVGJhdUlYYk9IZTBWLWJHbGxTUjVsZ2xvRWhBT1I1ZlBpVlhuSWs5aFkzMFVSa3dreUw5ZG5lZGZwQ2NkOHpqTTFRb3RtOXpWbmNMeGNQVXNSNDY0ZUlyV05yQ09ic09jWE1tdVJwQnhQZDg0QWtTX2N6TGpSVC13cW9KMVg3dXBWR0NoeDN4al9ZNlVJ?oc=5",
-      "outlet": "Berita Harian",
-      "outletUrl": "https://www.bharian.com.my",
-      "published": "2026-10-18T07:25:48.000Z",
-      "en": "Tesla introduces V2L Powershare, Roadster opens for orders",
-      "about": []
-    },
-    {
       "title": "Zetrix diberi tempoh pulihkan pelanggaran syarat Sukuk Wakalah",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQVJIM3FDbWRSa2Y5X3pQbXg0UlJrZUJ0a01LTVY5Z1poRkdrbEMxLTBMRnJ1dWlQRjJWNHJqUzNFay14ZlBZUXg4am90bG5zM01HQTcwa2IyOWQ4LUZWbHpRcmVNR2I1R0FONkRQUlFaYzVOQ3NGLXRZWmhMQ0FEWTktd28tWUxMalcxcmdJeklMU3NYeFo2R1RTNEtJQnR0Z0txUmtxa1ZUT2prSzFKNmZQTWUtV0dYRnE5Zk45X1ZKYldScHBoRTdoRTE?oc=5",
       "outlet": "Portal Berita RTM",
@@ -198,6 +163,15 @@
       "about": [
         "MY"
       ]
+    },
+    {
+      "title": "Tesla perkenal V2L Powershare, Roadster dibuka untuk tempahan",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRVJEaVNCeFVubjdqVmpxUDFzV3d3NkdRUWJDWVppT1IteHlCbE95YmpFTFUydi1uWG53cmRpd1REdjdrenlQR0Q3eVk2T2UwT0NwSVlNWmJETHptLU5iSHJhRXA0QmZmNmJXUmZWLUY5WnJUUnhRRngyd013cDczdExxNjM2ZXBBa0Fza1pSWjVYOGZ5T2pkMFI5dTdYYmNXZkZ5XzdLbUZpUGYzdW5BTWE3cHkwQdIBuwFBVV95cUxNRUFzMVcxVXlsQXdqaE9nOHdaQUxMUWdTU1I4bVByUWwzbmhfUGFFVGJhdUlYYk9IZTBWLWJHbGxTUjVsZ2xvRWhBT1I1ZlBpVlhuSWs5aFkzMFVSa3dreUw5ZG5lZGZwQ2NkOHpqTTFRb3RtOXpWbmNMeGNQVXNSNDY0ZUlyV05yQ09ic09jWE1tdVJwQnhQZDg0QWtTX2N6TGpSVC13cW9KMVg3dXBWR0NoeDN4al9ZNlVJ?oc=5",
+      "outlet": "Berita Harian",
+      "outletUrl": "https://www.bharian.com.my",
+      "published": "2026-10-18T07:25:48.000Z",
+      "en": "Tesla introduces V2L Powershare, Roadster opens for orders",
+      "about": []
     },
     {
       "title": "BYD Malaysia Lantik Inokom, Bakal Pasang Kereta CKD di Kulim",
@@ -245,12 +219,12 @@
       ]
     },
     {
-      "title": "“Saya pernah buat sampai 60 kali“ - Zul Ariffin sanggup berlakon ulang babak sama hingga puas",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVlE5elpLSk5zWGdfenpIRy1uVVpyenBubUFLeVVkOV8tYnV5cEZ4ZUtoVFhsYmtpS0YxcXhCU3FjUmFiYk9FcXgzUms0aEZDSWVwWGp3WEZ4cEttMmpsLVRwZFpraHFNaGo1TDYzREFhRVlSYjZ3M2R0SE50WlFsZzVnelZvSDZ5ekNFM0NYSmNSbDg0TkxOUnhFbzk0N2o0OENlZXpTRUtWWVluZjhWbDFDMmNSX0NPblg5blZhcW8?oc=5",
-      "outlet": "Suria FM",
-      "outletUrl": "https://suria.my",
-      "published": "2026-10-18T10:51:24.000Z",
-      "en": "\"I've done it up to 60 times\" - Zul Ariffin willing to re-enact the same scene until satisfied",
+      "title": "“Saya terkedu sekejap“ - Liyana Jasmay meremang bulu roma, penonton dakwa nampak cahaya misteri dalam ‘Pemuja Syaitan‘",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNZHZPSjVzNmpHVGZpamN0ZloxaE5jQzlGTFlqSDdfbi1QY1JmdXdxUWpQVkNpcmxnUDN5ZzZodmpaVlh4S3FnbVN4TnRRdk9YaUQzSkQwZmxkTXY2Q1duVkV2ZXRhQlNYeURnM09Cb1o1OFBJNzVKcllBdUpvZFlHemFURnRLSDktUEZzMFRrWUUxSU5iNmFOemlQZE1sY0dpTF9KUVpIOHNBZFpJZ0gzSDRKczM2Mm4wNi12eEpuRVFOVTFrZENWTkVyX0dsbHBBb1FUelNycS1TYS0wWUVvUHVrOWlacjR6djROUzhCSEJzZTBPNHBIR0FwTQ?oc=5",
+      "outlet": "mStar",
+      "outletUrl": "https://www.mstar.com.my",
+      "published": "2026-10-17T08:30:00.000Z",
+      "en": "\"I was stunned for a moment\" - Liyana Jasmay gets goosebumps, audiences claim seeing a mysterious light in 'Pemuja Syaitan'",
       "about": [
         "MY"
       ]

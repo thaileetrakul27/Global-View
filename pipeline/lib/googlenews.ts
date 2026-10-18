@@ -23,6 +23,12 @@ export function buildFeedUrl(e: Edition): string {
   return `${FEED_ENDPOINT}?${params}`;
 }
 
+/** World coverage: recent English-edition search results about a country. */
+export function buildSearchUrl(query: string): string {
+  const params = new URLSearchParams({ q: `${query} when:3d`, hl: "en-US", gl: "US", ceid: "US:en" });
+  return `${FEED_ENDPOINT}/search?${params}`;
+}
+
 /** Google News appends " - Outlet" to every headline; remove it. */
 export function stripOutletSuffix(title: string, outlet: string): string {
   const t = title.trim();
@@ -85,12 +91,17 @@ export const USER_AGENT = "Mozilla/5.0 (compatible; GlobalView/0.1; +https://git
  * Fetches one edition's top stories, retrying once after `delayMs` on any
  * failure. Returns null when both attempts fail so the run can carry on.
  */
-export async function fetchFeed(
-  edition: Edition,
+export function fetchFeed(edition: Edition, delayMs: number, deps: FetchDeps) {
+  return fetchFeedUrl(buildFeedUrl(edition), edition.ceid, delayMs, deps);
+}
+
+/** Fetches and parses any Google News feed URL with the same retry rule. */
+export async function fetchFeedUrl(
+  url: string,
+  label: string,
   delayMs: number,
   deps: FetchDeps,
 ): Promise<{ url: string; articles: Article[] } | null> {
-  const url = buildFeedUrl(edition);
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
       const res = await deps.fetch(url, {
@@ -103,7 +114,7 @@ export async function fetchFeed(
       return { url, articles: parseFeed(text) };
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
-      deps.log(`  ${edition.ceid}: attempt ${attempt} failed: ${msg}`);
+      deps.log(`  ${label}: attempt ${attempt} failed: ${msg}`);
       if (attempt === 1) await deps.sleep(delayMs);
     }
   }

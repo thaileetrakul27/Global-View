@@ -1,7 +1,8 @@
 {
   "code": "BR",
   "name": "Brazil",
-  "updated": "2026-10-18T13:25:26.752Z",
+  "kind": "local",
+  "updated": "2026-10-18T13:48:46.764Z",
   "source": {
     "name": "Google News",
     "edition": "BR:pt-419",
@@ -20,7 +21,7 @@
       ]
     },
     {
-      "title": "Após entrevista à CNN, Van Hattem pede proteção a Roberta Luchsinger",
+      "title": "Após entrevista à CNN, deputados pedem proteção a Roberta Luchsinger",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYXN1N0lFUExJLVJFVko4UkxST1kzLUo0VlFFTl9udHJCTjdpSU1LMXlzcEc4ZkdRLUFLZ1NROWJZZ1oxQmJpbG5XWWRCWk9ES1NHQ2hfUnhrZzJBaGZ4d1JyaHdGT2l1M1ktNjBiUlpQeFB1OFAzcHFvQ0pXcnItUTJfOXI5eXZpcjBzbmE4el9NX1o5ZHhKNUxIMHBORDlJVzVqUGVQNk9Idw?oc=5",
       "outlet": "CNN Brasil",
       "outletUrl": "https://www.cnnbrasil.com.br",
@@ -86,26 +87,11 @@
       ]
     },
     {
-      "title": "TSE mantém atos pró-democracia deste domingo (18) e nega veto a shows",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOODFQaHZCRDl4c0t5WklHaTRLTUw5cWgyZlVyV1NlUWxIUVY1Q1U5eFpsc0VzNDI4ZXlhaTlLa01Obmg0M1hOVVVSa21mWXZ1VV9kYmxQM2pjcGRDbFNPdVRPa2FLX0g1anYxa1ZMeEotZG00RUlFdnVpal9FM0E0b1pDQ0FhZmM5aXBEZHp0SXF6RlVlTVF4ZUpHd2hpWExSOTBwUWpVZTR5QQ?oc=5",
-      "outlet": "CNN Brasil",
-      "outletUrl": "https://www.cnnbrasil.com.br",
-      "published": "2026-10-17T22:23:29.000Z",
-      "en": "TSE keeps pro-democracy acts this Sunday (18) and denies veto on shows",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Manifestante é atropelado durante ato pró-Lula em BH; veja vídeo",
+      "title": "VÍDEO: manifestante é atropelado em ato pró-Lula em BH; motorista é preso",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWHFvWmdpczlCSjVoNEpVcGUwSHhwVEwyaF9rbDJWYzZ0VnNLZmdhMUM1U2tEMnRCX0Z4QUtfTERTNEt6am5NM0V0bVFycHp2Mm1fa3FvbU5DZWtFT2htYmhMUVpmX3B4X0FnbGd1eUpyWEhURmJPWUxpTElUU0FhSTRGZzBqNjJRTzhUbzJBU2ZSU1JxUGYzYXljUkYxb3VoR3Ztdnk2QW1LNmpEdndrNA?oc=5",
       "outlet": "G1",
       "outletUrl": "https://g1.globo.com",
-      "published": "2026-10-18T12:16:41.000Z",
-      "en": "Protester run over during pro-Lula rally in BH; watch video",
-      "about": [
-        "BR"
-      ]
+      "published": "2026-10-18T12:16:41.000Z"
     },
     {
       "title": "Cleitinho reage a projeto de Simões sobre redução do IPVA, diz que fará estudos e volta a criticar situação financeira de MG",
@@ -114,6 +100,17 @@
       "outletUrl": "https://g1.globo.com",
       "published": "2026-10-17T17:33:48.000Z",
       "en": "Cleitinho reacts to Simões's bill on reducing IPVA, says he will conduct studies and again criticizes the financial situation of MG",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "TSE mantém atos pró-democracia deste domingo (18) e nega veto a shows",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOODFQaHZCRDl4c0t5WklHaTRLTUw5cWgyZlVyV1NlUWxIUVY1Q1U5eFpsc0VzNDI4ZXlhaTlLa01Obmg0M1hOVVVSa21mWXZ1VV9kYmxQM2pjcGRDbFNPdVRPa2FLX0g1anYxa1ZMeEotZG00RUlFdnVpal9FM0E0b1pDQ0FhZmM5aXBEZHp0SXF6RlVlTVF4ZUpHd2hpWExSOTBwUWpVZTR5QQ?oc=5",
+      "outlet": "CNN Brasil",
+      "outletUrl": "https://www.cnnbrasil.com.br",
+      "published": "2026-10-17T22:23:29.000Z",
+      "en": "TSE keeps pro-democracy acts this Sunday (18) and denies veto on shows",
       "about": [
         "BR"
       ]
@@ -195,15 +192,11 @@
       ]
     },
     {
-      "title": "Rede de supermercados terá 2 mil ofertas em campanha de aniversário",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORFBsNC1YUUpIX28zWW1hd1hadDhNRXdiVnpsN2xVNlFRM1l2N2sxdDkyVTc3blYzRlVTZk53dHRPRmhHTGhhckJ4dTNUUV90S3luVUpocDR5RExnajlfOHZXNF9UODlOQTY4S0NVVE5qdFpmMzBmc3pucFBsMmZfa0pvWXRQcmtIenc5eFo5dmoxN01EYWtIcC1GSVpiVXJEWUdJdDFJWU1ydUllSndmTm9zR2gwYUJoOURRSmQ1NNIBzgFBVV95cUxQQjZVN3V3amNrdWxJZXpzVW5GTHpvX2pKcE5VQjRBZldUbW0teDRqekFDU3BIc25pNDRNX0l5Q3R4clEtVkxaSThnczI4WmtiRjQ4Rm5aU0VkdTdnMWtBUkcycjl1MGllRzg2c1E5dnBYbDJSbFQ5TEctODdrSWRjVGR1YnRtWkV1Vm9KZVBPR1MxU1JGVGIyNkQ2aE16UzB3VEJiMXVEaktDcnRwZFFvUlFHbFpaSEVGY3daOG5KX1VHMmZ0WUlrUWJqeS1GZw?oc=5",
-      "outlet": "Extra online",
-      "outletUrl": "https://extra.globo.com",
-      "published": "2026-10-18T07:00:01.000Z",
-      "en": "Supermarket chain will have 2 thousand offers in anniversary campaign",
-      "about": [
-        "BR"
-      ]
+      "title": "Mega-Sena: quanto rendem R$ 170 milhões na poupança, Tesouro Direto ou CDB",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQT01NTnJZWTJ2MzFyVllFOC10QnM0RUVYNVVZVXhKQk1PSUhtZGxzcUlDWFdza3daTTZpSjBUZHNMTExNVjZMUndjVEZCMklkUEE4ZDBZMUhSR2IxbklBbG1kc05kMXZiSVdxOUZQeEJZOHpjS3FYQTFIN2xtVFlxaUozWm5ybXFGaGg2VERiNGxEclJ1QW8xT3RXOTA5Q2xWU2c2NDFNUDI0bEh1N3hEbG9kcmNQMXN2S2hCWllIWjhrX1FzaUlwb21xOENZU01K?oc=5",
+      "outlet": "CNN Brasil",
+      "outletUrl": "https://www.cnnbrasil.com.br",
+      "published": "2026-10-18T08:05:43.000Z"
     },
     {
       "title": "'Óculos pervertidos': versão sem câmera poderá salvar o produto da Meta?",
@@ -255,6 +248,13 @@
       ]
     },
     {
+      "title": "Com infecção viral, Carlos Alberto de Nóbrega precisará fazer cirurgia no coração",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTk1WbEdZWEdQMkRCUXZEZ2hIdmRVTTFqdGppc1BQbzliZmVWMEM0QjIxbllMekcxUi02aWlVdFg5VGRqWnVQY0hPQ1R0STRJMDVzSGxyT3Y1ZXNKYU1mQVMwMHU0OXVvT3Z0VE1rcVNrT0VXSDNJZUV2cFJVdTlXOVZTcklUMHRMTmg2T0pyYU10X2pFdlRObXVQYm00LWx6REd1NGNoSC1tZXhDVFA0bHNRUDNwN1l5bU5maGR3ZU5DcXBZTTAtZF9oVW5xMEFqME5SSG1sQdIB5gFBVV95cUxNaENVMy00WUNJaWNTcEhTWXBzVmF0M2NJTlExTzhmNkVlaEdYQkNGYzE5UGM2MUlUakxTaS13SGJlWTQ0MVFUd0MweHhra3RsX0tXSVREY1ZGR1FORERCMFlraFFiQnE0aXZPeHBLeFVyQS1rM0FyQnE5Z3RreEFJdm5uNVJYcHVnWVo0elhvWkRLYm0xX3dlU3FXWTZwbDkyUjcydDI5Rk9HVnRLT2tKcnNjVF92RG5TTEJXZFR2LUk3SjRlUmVWa25EdVJjOXdnWUZuM19ZUHQzX3ZqNER3OV9JUmY0dw?oc=5",
+      "outlet": "Notícias da TV",
+      "outletUrl": "https://noticiasdatv.uol.com.br",
+      "published": "2026-10-17T21:20:00.000Z"
+    },
+    {
       "title": "‘Quem ama cuida’: Adriana descobre que Ulisses usou uma pessoa da família como laranja. Saiba quem",
       "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPenlmVUkxWUo3dTBISHZ4QmpqbzFJbjVNSjdwajJKQ1lJQXd1ejNOWV9QaVFvdHdJdkY3QnVsVVVkOW9VLUpqdmduaWtmUlRzYkFKcXpwZ3BVRnNuZVRCYlJ0cGlNR2FXa3BnaWwwX3hISnhTV3owbS1GZlh5ZlJld0ExZF96Tl9ZQk80a1F2WGVYbjU5VmdBbTRfWGpabjdHVk1JcDF1eUlZUnp6OWZrd3NIcFc1NlhQaDRGc1VZUWt0ck1BSEVxREZ1UU5PVTZEVDJFNFAwZTF3LWpudmtRWUZmNlduRzFlSmpvZXNB0gH8AUFVX3lxTE1qUG1xdVNfelppa1NheTJULU5ORmk3TUpSczJhNm5LSTVHT0RtTjZhMHJKaTVYVmZIdGhFTWxwMU94bENLVTh2MDN4UWU1QS12VjRhcFVVaU55SWZ6MGJEMXpPTUZtcFNiQ2RrN1ZybVNjQ3VQR2hkTmJxekktcGdlb2gyakZOMFFEVjBMQkg2TmhsTENBN2F2N01BcEVibGQxTHN1NHV1MVlaNF9taWRFY0JQdGx3ejhGSm9tbHEyMl96UzR4cnVjSWlOZVBIbHdBc2tqekpQbTNtbnNmWmtDOGlMamxzeWpTWUVxaUhBQlJ3djZHTnFKcWt5TA?oc=5",
       "outlet": "O GLOBO",
@@ -266,45 +266,26 @@
       ]
     },
     {
-      "title": "Resumo de Quem Ama Cuida: Próximo capítulo da novela, segunda, 19 de outubro",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNLUJvQmFLUWdBUF8wMXZCcDA4THotbWJaTWdWY1JtMFJCTjlaWEF1WTNBVDc1S1NQQzF6X1NSc3FxVk9hcjBfVmRrakswVWdMaXd6Tk9WVVd6cFl1UWZNajBJbHlHeDRRNFRaZUY1cEhUcFRibVp4ZFpqS29PMVM0endvRUVRX3dzdVNXbGpnTGR6bm1Celdsb3BQM2JmVV9WNE5uQzQ3Z0RLTVVzSFZYeFpxcTU3TTFKRXB3WUUxLWJ4cUtLbDZr0gHWAUFVX3lxTE5jR3hmQTRUdFN2dzlUb3RVd3FSei1jdTNUMGpaXzhWa2ZQRkQwRDBWNG5nQmtQTkhzdjhMblJZOFpWY1EtN2VfY3gzcXBrNVZDRTFTTXV6YzZxZ2o2emVfRVVPQUo4cmsxY3dqSWwwR2NueGpsdzFNb3NIYmxmeWpWcHdUQ3VfUXRlUmUzeDVGRWpYekZmNnJBNWpQeVo3SnNxRUNHN1VLZzBBeHNhUDNCLWx1WDJTWmpjZjFRQndsUXh5U0sxQ0ZTNWlraFFIYV9taUFHOGc?oc=5",
-      "outlet": "Notícias da TV",
-      "outletUrl": "https://noticiasdatv.uol.com.br",
-      "published": "2026-10-18T00:10:00.000Z",
-      "en": "Summary of Quem Ama Cuida: Next chapter of the soap opera, Monday, October 19",
-      "about": [
-        "BR"
-      ]
+      "title": "Quem Ama Cuida 19/10/2026 (segunda): resumo do capítulo da novela das nove da Globo",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTEpRbGo2aDN6WU5VbmlGSjVQWWtUY1V4WER4UjR3ZEFLM25hMkV6RXMwcWpkZDVkM040cEdDal9UdE5kanhVNktmY0V5ZUUyY3F0cF9QeTlrd0NmSW9zNFR0S3RLTkhBYjMtM1pJbnFuUWVMbk9EMnpjWkRUSGtjajF0Z0FFa0RzMzdua0lrZkFhdW45cTBlRENqNXFvMUtwSDY4Tkw0Sl91TmNpSHBPWXFmM2pvckU?oc=5",
+      "outlet": "Portal iG",
+      "outletUrl": "https://resumodasnovelas.ig.com.br",
+      "published": "2026-10-18T02:21:03.000Z"
     },
     {
-      "title": "Paolla Oliveira beija Iza ao ser coroada rainha de bateria da Imperatriz",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZEJvRlRpUXZrMWdPTDRxMFI5TjUyMDg4TEpGalRVSHE0b1NKQ2x5eEswUkZYeWhCaUpCSGdwMXdhNl9vN1A4aXZnQ3l6NlRCTzltcDlaVUE5d3ktR3JQc3QxbDBmUkxvX0ZCWmdib3l5ZGkzUnN2M1RVaXIwUVlpV2NicU94cEJ6ZnZUUThZT0laWm9LMC10ZFl0ZjBlM2NmMm4wOGRhaTZFWHNwQ29wSWl1TURzcnYy?oc=5",
-      "outlet": "CNN Brasil",
-      "outletUrl": "https://www.cnnbrasil.com.br",
-      "published": "2026-10-17T21:36:02.000Z",
-      "en": "Paolla Oliveira kisses Iza after being crowned drum queen of Imperatriz",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Athletico x Palmeiras: derrota não surpreende, mas mostra limitações | Ge",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOU3EtVXVDQWRVNWJuQW1RUFFnU3otOGFOMGhoN0x0SnM2cUUyLTJsNEdzbTZBRjhMMTJXa2d6cVA4bnJBcEJYbmw2TjhWVGcxYWhPYzQ4Ul9Ra1NRVm1KSUFZc21PdEY2NFBZbmJhN0pvWHF0bW9WTVVwTGVoZGpTbS1HU3dJb2VfZDM3cWNFa09JclkzaTdjZ0RaQjhNMDRRSmM5TGxPUHJ0bm03R1ZsT2FVQ2YxSFFmNFFpZWNCWjluUUtlalpXNnVlbnZYM0k3cnBPSWw5UDVJOFVzYkpndzBFclNvSEJFd0EzdUh0QVJqcHB0Tm5nTGZpSVVsWThG?oc=5",
-      "outlet": "ge",
-      "outletUrl": "https://ge.globo.com",
-      "published": "2026-10-18T07:00:01.000Z",
-      "en": "Athletico x Palmeiras: defeat is no surprise, but shows limitations | Ge",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "São Paulo x Vasco: onde assistir ao vivo e escalações do jogo do Brasileirão",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTFB0bzF3NF9GcEJYMjhqZ044OU1nMzVialk0a1dwWGxWUmE5TmhGQ04tWWZhUjh4RTZOQllNUTJuQU81ajlEWXZKbUNEVV9VYTFtNFpDdUNCSFZrWlpQblRGc0JfRkJoXzJkTFM5SzRwVHJZQkFZWmk1cTFMOUZ6UmJXRzJLcEhNU3FvQ2ZBM1BKNmdrNWFUZjFLR3FVZmtuQkVxRmppd0M1LWZRSVNsRDZiVTZsNlNuZWd1ZXltUmVLOFpGeE9uZ2xlQkc2eFk?oc=5",
+      "title": "Andreas Pereira se desculpa por expulsão 'bizarra' em vitória do Palmeiras no Brasileirão: 'Foi um instinto meu'",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQd3FWMWJRTGJkVjdSUTRwQ2VYUUpNOEdndmhHRVpfcWZOZmw2NFd2T1NKWFVoc0Vhcl9XNU4xajVKTzRkZTRGSU9PVUYxc1hKMklyaDBfZG84Yms5UEowOTJrRHVmclQ3Ui00WF9XQVlkNzREWm9FbVNpZTcyd0RQbjVKVmxxVURKSndSSDJkNWh5SnNDTFZZUUk3eGxnU2tCQ1hJdE1ZekprbGpuNlJLM29TOENOZkJkaWprMmRfQVhUaHdjdTBpUEE5R2dDUi05N2RabDBBVWVlcTVfS3JBemlnX2k0NGk5UTBJ?oc=5",
       "outlet": "ESPN Brasil",
       "outletUrl": "https://www.espn.com.br",
-      "published": "2026-10-17T23:35:00.000Z",
-      "en": "São Paulo x Vasco: where to watch live and lineups for the Brasileirão match",
+      "published": "2026-10-18T01:51:00.000Z"
+    },
+    {
+      "title": "São Paulo x Vasco: escalações e onde assistir ao jogo do Brasileirão",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNY0VNVHgxTm9MZV9aeDBRSkJ5TU1ya2t5MFd6cFptcWlXRC13U2ZJMkJacEhVamM0clN0eXJpUGdCay1UQW05SEUtcTVpZV9yMnYyeDBkRXQzMV9IVXlEZUFNdGhxbGJUaE80b1FJc2tVZGRDV0tFN0d2RmwyRkVjYUNlZk9Ka1RUZ1YyQlBvVEl4UDF5dXJSNjlfbUVZVk9JbWZhT05MWFVrQjZTcGJSbFNmM0thbzRJNGc?oc=5",
+      "outlet": "CNN Brasil",
+      "outletUrl": "https://www.cnnbrasil.com.br",
+      "published": "2026-10-17T23:02:37.000Z",
+      "en": "São Paulo vs Vasco: line-ups and where to watch the Brasileirão match",
       "about": [
         "BR"
       ]
@@ -321,15 +302,11 @@
       ]
     },
     {
-      "title": "Fluminense x Santos: onde assistir ao vivo, horário e escalações",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEdvRk13eUViRlUtQ2VReVJBY1VfSmhJRkZQWUQ1UmFaalRmelBXQ3plOEpLaXZDTFZIZjBpWlh2d29xRlpzX0VyNERvelRmeGw0Zkw0Tk5WS25hNVRfalh6VXg1YzB2MTFFU19RcFBqUmVfbDF0aXAxeUxDdEN3N2Y5bHFXOFo4cWQ4eWtraEZZd3M2bWJTU2ttaUJucy1YMVJOa3EtTFNhMnhnNFlENVFxMU1VTlB0enYwUllxakRnbUZLUUMxUWRXNE5LRkFXS19jTHB30gHkAUFVX3lxTE1FYzBVMEw1ZzdfbV9iNHdZZTRQRFVKaWNLYVFnSDRnUDA1VkpCZjAzb2lfU1RFQTdwcmpMRXY5SWZUY2xxWk9KYU5GTC1ESml6b0psNFVZS1JDZmRMRXp6anZ0T2w0UlQ2ZF9KREh2ZmthWFRYZ3RqOVBUUXZNSFVmQW04OEF0NDdodTdwRzNiTUp1V195eFZLM2d1WGhyZ0xEWUtvWVZaRWp1Q2RJVGswUG9CSEJDSVNXS2d3cWhLWlRHZkJVY1Nua0pnNFVlRl8tR3NPa0d2Z0FXVHRwb1BNMEZqMA?oc=5",
+      "title": "Tiquinho desabafa após encerrar jejum e garantir vitória do Botafogo: \"Passa um filme\"",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSi1ZUW5KQlBXMjZMLVFYVjJSQ0dHWHRSX1AxWjFnWVd1VVlFX2RPMURlV0dMTkVqd0NYWWF6VmpIWS1ZamI1bmxiZk83Q2JzcG5FdlFfRV81UC1yUWxjc2RGWVZjeGNmR1lZR2VWalNCajBLUHpaY0czNVRhR0hkM0RBTWdkODUteFBibXZGODdhSi1LdUZnU3BXa1dOSXVaRllqSHlpWmlRWXB5OUNXY3FRbmN4N0ZoYnJvTE15UzFMTkNsS1N30gHWAUFVX3lxTE1RNnpmMFB0U1FmM2xtcEZkNFZFU21oYUY1bUY3ZE9QSzdybjBWaWk5VGpBV0J6RWVocFZuaTBNcjdRbkRPaTZYOUZnaENiV2IzRkEzU0pBcVctME91TzZzM2pDa001M21LU3RCa0hXT3pCNnJxRzlIZ2V0UEV3S043ZGJSWjdVQ2NKTF82enhYSjdkMjItTy1RcFlqZTBUbXpxbm1uX3NuT0kyM0ZvZG1GU1kxSFB0TXQ1Y1FBVzAwZ0JReG1SX04yVFptVnlBYTl5VVVoQnc?oc=5",
       "outlet": "ge",
       "outletUrl": "https://ge.globo.com",
-      "published": "2026-10-18T06:00:00.000Z",
-      "en": "Fluminense x Santos: where to watch live, time and lineups",
-      "about": [
-        "BR"
-      ]
+      "published": "2026-10-17T23:26:09.000Z"
     }
   ]
 }

@@ -17,9 +17,17 @@ export interface Article {
   about?: string[];
 }
 
+/**
+ * local: the country's own Google News top stories, what its public reads.
+ * world: the country has no edition, so this is coverage about it from elsewhere.
+ */
+export type CoverageKind = "local" | "world";
+
 export interface CountryFile {
   code: string;
   name: string;
+  /** Absent in older files, which are all local. */
+  kind?: CoverageKind;
   /** When this country's list was last refreshed. */
   updated: string;
   source: { name: string; edition: string; url: string };
@@ -28,6 +36,7 @@ export interface CountryFile {
 
 export interface IndexCountry {
   name: string;
+  kind?: CoverageKind;
   articles: number;
   updated: string;
 }

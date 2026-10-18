@@ -4,7 +4,11 @@ Fetches each country's most popular articles and writes the JSON the website rea
 
 ## What "most popular" means
 
-The top stories feed of that country's Google News edition. Each run keeps up to 30 articles per country, in Google's order, after removing duplicate headlines. No article text is fetched or stored; the site shows headlines, outlet names, times and links.
+The top stories feed of that country's Google News edition. Each run keeps up to 30 articles per country, in Google's order, after removing duplicate and junk headlines. No article text is fetched or stored; the site shows headlines, outlet names, times and links.
+
+## World coverage
+
+Google publishes editions for about 68 countries. Every other country on the globe gets a Google News search for recent articles about it (`"Mongolia" when:3d` in the English edition), capped at 20 and labelled "world coverage" on the site. `pipeline/config/world-queries.json` holds hand-written queries for names that are ambiguous (Georgia, Jordan, Chad, Niger, Guinea) and a short skip list (Antarctica). World coverage is what others write about a country, not what its people read, so it is excluded from shared stories and attention counts.
 
 ## What the model does
 
@@ -13,7 +17,7 @@ Two small jobs, both on Claude Haiku, both optional:
 1. **Translate.** New headlines go to the model in batches of 40 per country, with the edition named so unnamed places resolve correctly. It returns an English headline and the ISO codes of the countries each headline is about. Results are cached by article link in `cache/headlines.json`, pruned after 48 hours out of every feed, so a headline is never translated twice.
 2. **Group shared stories.** One call per run receives every translated headline with its country code and returns groups that describe the same event in at least two countries, each with a short neutral title. Groups are validated: bad indices and single-country groups are dropped.
 
-The "who reads about whom" counts come from the translation step's country codes and need no extra call. A run makes at most 120 model calls; the first run for 52 countries makes about 53, later runs far fewer. If the model call fails, untranslated headlines are retried next run and the previous `shared.json` is kept.
+The "who reads about whom" counts come from the translation step's country codes and need no extra call. A run makes at most 250 model calls; the first run for 52 countries makes about 53, later runs far fewer. If the model call fails, untranslated headlines are retried next run and the previous `shared.json` is kept.
 
 Set `ANTHROPIC_API_KEY` to enable the model. `GLOBAL_VIEW_MODEL` overrides the model id.
 

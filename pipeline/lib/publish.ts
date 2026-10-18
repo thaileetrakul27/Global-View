@@ -3,9 +3,13 @@
 import fs from "node:fs";
 import type { EnrichedArticle } from "./translate";
 
+export type CoverageKind = "local" | "world";
+
 export interface CountryFile {
   code: string;
   name: string;
+  /** local: the country's own top stories. world: coverage about it from elsewhere. */
+  kind: CoverageKind;
   /** When this country's list was last refreshed. */
   updated: string;
   source: { name: string; edition: string; url: string };
@@ -14,6 +18,7 @@ export interface CountryFile {
 
 export interface IndexEntry {
   name: string;
+  kind: CoverageKind;
   articles: number;
   updated: string;
 }

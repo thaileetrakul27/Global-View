@@ -1,0 +1,42 @@
+{
+  "_comment": "Google News search queries for countries without a local edition, where the plain name would be ambiguous or misspelt. Countries not listed use their full name in quotes. Codes listed under skip get no feed at all.",
+  "skip": [
+    "AQ",
+    "TF"
+  ],
+  "queries": {
+    "GE": "\"Georgia\" (Tbilisi OR Georgian OR Kobakhidze OR \"Georgian Dream\") -Atlanta -Bulldogs -\"Georgia Tech\" -\"secretary of state\" -Kemp -Savannah",
+    "JO": "\"Jordan\" (Amman OR Jordanian OR Hashemite OR \"King Abdullah\")",
+    "TD": "\"Chad\" (N'Djamena OR Chadian)",
+    "NE": "\"Niger\" (Niamey OR Nigerien)",
+    "GN": "\"Guinea\" (Conakry OR Guinean) -Papua -Equatorial -Bissau",
+    "CD": "\"DR Congo\" OR \"Democratic Republic of the Congo\" OR Kinshasa",
+    "CG": "\"Republic of the Congo\" OR \"Congo-Brazzaville\" OR Brazzaville",
+    "PS": "Palestine OR Palestinian OR Gaza OR \"West Bank\"",
+    "CYN": "\"Northern Cyprus\"",
+    "SOL": "Somaliland",
+    "SS": "\"South Sudan\"",
+    "KP": "\"North Korea\"",
+    "TL": "\"Timor-Leste\" OR \"East Timor\"",
+    "SZ": "Eswatini",
+    "BS": "\"The Bahamas\" OR Bahamian",
+    "GM": "\"The Gambia\" OR Gambian",
+    "CI": "\"Ivory Coast\" OR \"Côte d'Ivoire\"",
+    "BA": "Bosnia",
+    "MK": "\"North Macedonia\"",
+    "DO": "\"Dominican Republic\"",
+    "CF": "\"Central African Republic\"",
+    "GQ": "\"Equatorial Guinea\"",
+    "GW": "\"Guinea-Bissau\"",
+    "TT": "\"Trinidad and Tobago\"",
+    "SB": "\"Solomon Islands\"",
+    "FK": "\"Falkland Islands\"",
+    "NC": "\"New Caledonia\"",
+    "PR": "\"Puerto Rico\"",
+    "EH": "\"Western Sahara\"",
+    "LA": "\"Laos\" OR Vientiane OR Laotian",
+    "GL": "Greenland",
+    "XK": "Kosovo",
+    "MN": "\"Mongolia\" OR Ulaanbaatar -\"Inner Mongolia\""
+  }
+}

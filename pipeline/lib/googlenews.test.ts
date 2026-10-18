@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { buildFeedUrl, fetchFeed, parseFeed, stripOutletSuffix } from "./googlenews";
+import { buildFeedUrl, buildSearchUrl, fetchFeed, parseFeed, stripOutletSuffix } from "./googlenews";
 
 const edition = { hl: "th", gl: "TH", ceid: "TH:th" };
 
@@ -19,6 +19,15 @@ describe("buildFeedUrl", () => {
     expect(u.searchParams.get("hl")).toBe("th");
     expect(u.searchParams.get("gl")).toBe("TH");
     expect(u.searchParams.get("ceid")).toBe("TH:th");
+  });
+});
+
+describe("buildSearchUrl", () => {
+  it("searches the English edition for recent coverage", () => {
+    const u = new URL(buildSearchUrl('"Mongolia"'));
+    expect(u.pathname).toBe("/rss/search");
+    expect(u.searchParams.get("q")).toBe('"Mongolia" when:3d');
+    expect(u.searchParams.get("ceid")).toBe("US:en");
   });
 });
 

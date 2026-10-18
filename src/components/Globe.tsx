@@ -17,8 +17,8 @@ export interface GlobeArc {
 
 export interface GlobeProps {
   countries: CountryFeature[];
-  /** Codes of countries that have stories; they are drawn in a deeper sand. */
-  withData: Set<string>;
+  /** Coverage per country code: local editions in deeper sand, world coverage a shade paler. */
+  coverage: Map<string, "local" | "world">;
   /** Countries to tint towards the accent, 0..1 by how strongly. */
   tints: Map<string, number>;
   arcs: GlobeArc[];
@@ -58,7 +58,7 @@ function token(name: string, fallback: string): string {
   );
 }
 
-export default function Globe({ countries, withData, tints, arcs, selected, onSelect, inset }: GlobeProps) {
+export default function Globe({ countries, coverage, tints, arcs, selected, onSelect, inset }: GlobeProps) {
   const globeRef = useRef<GlobeMethods | undefined>(undefined);
   const wrapRef = useRef<HTMLDivElement>(null);
   // Last known mouse or pen position, so the tooltip can appear in the right
@@ -77,6 +77,7 @@ export default function Globe({ countries, withData, tints, arcs, selected, onSe
       ocean: token("--ocean", "#dce4ea"),
       land: token("--land", "#f0ebdf"),
       landData: token("--land-data", "#e7dab6"),
+      landWorld: token("--land-world", "#ebe3cf"),
       landHover: token("--land-hover", "#dccca3"),
       landSelected: token("--land-selected", "#d2c08f"),
       border: token("--border", "#ffffff"),
@@ -164,11 +165,12 @@ export default function Globe({ countries, withData, tints, arcs, selected, onSe
       if (d === selected) return colors.landSelected;
       if (d === hovered) return colors.landHover;
       const code = (d as CountryFeature).properties.code;
-      const base = withData.has(code) ? colors.landData : colors.land;
+      const kind = coverage.get(code);
+      const base = kind === "local" ? colors.landData : kind === "world" ? colors.landWorld : colors.land;
       const tint = tints.get(code);
       return tint === undefined ? base : mixHex(base, colors.accent, 0.14 + 0.36 * tint);
     },
-    [hovered, selected, withData, tints, colors],
+    [hovered, selected, coverage, tints, colors],
   );
 
   const arcColor = useCallback(

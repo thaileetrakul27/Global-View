@@ -13,15 +13,25 @@ import { createAiClient } from "./lib/ai";
 import { parseUpdateArgs } from "./lib/args";
 import { buildAttention } from "./lib/attention";
 import { dedupeArticles } from "./lib/clean";
-import { loadCountryConfig, loadGlobeCodes, selectCountries, type CountryConfig } from "./lib/countries";
-import { fetchFeed, type Article } from "./lib/googlenews";
+import {
+  loadCountryConfig,
+  loadGlobeCodes,
+  loadGlobeFeatures,
+  loadWorldQueries,
+  selectCountries,
+  worldCountries,
+  type CountryConfig,
+} from "./lib/countries";
+import { buildSearchUrl, fetchFeed, fetchFeedUrl, type Article } from "./lib/googlenews";
 import { sleep, writeJson } from "./lib/io";
 import { mergeIndex, readIndex, type CountryFile, type IndexEntry } from "./lib/publish";
 import { collectCandidates, findSharedStories, type SharedFile } from "./lib/shared";
 import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle } from "./lib/translate";
 
 /** Most model calls one run may make; a guard against runaway cost. */
-const MAX_AI_CALLS = 120;
+const MAX_AI_CALLS = 250;
+/** World coverage lists are capped lower: they are a fallback, not a ranking. */
+const MAX_WORLD_ARTICLES = 20;
 /** Countries translated at the same time. Keeps the first run well under the job timeout. */
 const TRANSLATE_CONCURRENCY = 4;
 const CACHE_PATH = "cache/headlines.json";
@@ -34,27 +44,40 @@ interface Fetched {
 
 async function main() {
   const args = parseUpdateArgs(process.argv.slice(2));
-  const countries = selectCountries(loadCountryConfig(), args.countries);
+  const local = loadCountryConfig();
+  const world = worldCountries(local, loadGlobeFeatures(), loadWorldQueries());
+  const countries = selectCountries([...local, ...world], args.countries);
   const indexPath = `${args.outDir}/index.json`;
   const previous = readIndex(indexPath);
   const log = console.log;
   const deps = { fetch, sleep, log };
 
   // 1. Feeds
-  log(`Updating ${countries.length} countr${countries.length === 1 ? "y" : "ies"}, up to ${args.maxArticles} articles each`);
+  const localCount = countries.filter((c) => c.kind === "local").length;
+  log(`Updating ${countries.length} countries: ${localCount} local editions, ${countries.length - localCount} world coverage`);
   const fetched: Fetched[] = [];
   const failed: string[] = [];
   for (const [i, country] of countries.entries()) {
     if (i > 0) await sleep(args.delayMs);
-    const result = await fetchFeed(country.edition, args.delayMs, deps);
+    const result =
+      country.kind === "local" && country.edition
+        ? await fetchFeed(country.edition, args.delayMs, deps)
+        : await fetchFeedUrl(buildSearchUrl(country.query ?? `"${country.name}"`), country.code, args.delayMs, deps);
     if (!result) {
       failed.push(country.code);
       log(`  ${country.code}: kept previous data`);
       continue;
     }
-    const articles = dedupeArticles(result.articles).slice(0, args.maxArticles);
+    const max = country.kind === "local" ? args.maxArticles : Math.min(args.maxArticles, MAX_WORLD_ARTICLES);
+    const articles = dedupeArticles(result.articles).slice(0, max);
+    // A feed that is all junk today should not wipe yesterday's real list.
+    if (articles.length === 0 && (previous?.countries[country.code]?.articles ?? 0) > 0) {
+      failed.push(country.code);
+      log(`  ${country.code}: nothing usable in feed, kept previous data`);
+      continue;
+    }
     fetched.push({ country, feedUrl: result.url, articles });
-    log(`  ${country.code}: ${result.articles.length} in feed, ${articles.length} kept`);
+    log(`  ${country.code}${country.kind === "world" ? " (world)" : ""}: ${result.articles.length} in feed, ${articles.length} kept`);
   }
   if (failed.length === countries.length) throw new Error("Every country failed; nothing was written");
 
@@ -94,12 +117,17 @@ async function main() {
     const file: CountryFile = {
       code: f.country.code,
       name: f.country.name,
+      kind: f.country.kind,
       updated: now,
-      source: { name: "Google News", edition: f.country.edition.ceid, url: f.feedUrl },
+      source: {
+        name: "Google News",
+        edition: f.country.kind === "local" ? (f.country.edition?.ceid ?? "") : "search",
+        url: f.feedUrl,
+      },
       articles: f.articles,
     };
     writeJson(`${args.outDir}/countries/${f.country.code}.json`, file);
-    fresh[f.country.code] = { name: f.country.name, articles: f.articles.length, updated: now };
+    fresh[f.country.code] = { name: f.country.name, kind: f.country.kind, articles: f.articles.length, updated: now };
   }
   const untouched = Object.keys(previous?.countries ?? {}).filter(
     (code) => !(code in fresh) && !failed.includes(code) && !countries.some((c) => c.code === code),
@@ -108,11 +136,14 @@ async function main() {
   writeJson(indexPath, index);
   log(`Wrote ${indexPath}: ${Object.keys(index.countries).length} countries${failed.length ? `, ${failed.length} kept from before (${failed.join(", ")})` : ""}`);
 
-  // 4. Attention and shared stories use every published country, including
-  //    the ones kept from before.
-  const all: { code: string; articles: EnrichedArticle[] }[] = enriched.map((f) => ({ code: f.country.code, articles: f.articles }));
-  for (const code of Object.keys(index.countries)) {
-    if (all.some((c) => c.code === code)) continue;
+  // 4. Attention and shared stories use every published local country,
+  //    including the ones kept from before. World coverage is left out: it
+  //    is what others write about a country, not what that country reads.
+  const all: { code: string; articles: EnrichedArticle[] }[] = enriched
+    .filter((f) => f.country.kind === "local")
+    .map((f) => ({ code: f.country.code, articles: f.articles }));
+  for (const [code, entry] of Object.entries(index.countries)) {
+    if ((entry.kind ?? "local") !== "local" || all.some((c) => c.code === code)) continue;
     const path = `${args.outDir}/countries/${code}.json`;
     if (fs.existsSync(path)) all.push({ code, articles: (JSON.parse(fs.readFileSync(path, "utf8")) as CountryFile).articles });
   }
