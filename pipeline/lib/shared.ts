@@ -124,6 +124,8 @@ export function toStories(groups: z.infer<typeof sharedSchema>, candidates: Cand
 export async function findSharedStories(ai: AiClient, candidates: Candidate[]): Promise<SharedStory[] | null> {
   if (candidates.length < 2) return null;
   const { system, user } = buildSharedPrompt(candidates);
-  const result = await ai.parse({ schema: sharedSchema, system, user, maxTokens: 32000, effort: "low" });
+  // 16k is the most the SDK allows without streaming; with candidates limited
+  // to cross-border topics, 80 short groups fit comfortably.
+  const result = await ai.parse({ schema: sharedSchema, system, user, maxTokens: 16000, effort: "low" });
   return result ? toStories(result, candidates) : null;
 }

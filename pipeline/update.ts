@@ -122,6 +122,7 @@ async function main() {
 
   if (ai && ai.calls < MAX_AI_CALLS) {
     const candidates = collectCandidates(all);
+    log(`Shared stories: grouping ${candidates.length} cross-border headlines`);
     const stories = await findSharedStories(ai, candidates);
     if (stories) {
       const shared: SharedFile = { updated: now, stories };
