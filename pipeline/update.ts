@@ -22,6 +22,8 @@ import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle }
 
 /** Most model calls one run may make; a guard against runaway cost. */
 const MAX_AI_CALLS = 120;
+/** Countries translated at the same time. Keeps the first run well under the job timeout. */
+const TRANSLATE_CONCURRENCY = 4;
 const CACHE_PATH = "cache/headlines.json";
 
 interface Fetched {
@@ -64,13 +66,22 @@ async function main() {
   const globeCodes = loadGlobeCodes();
   let translated = 0;
   if (ai) {
-    for (const f of fetched) {
-      if (ai.calls >= MAX_AI_CALLS) {
-        log(`  reached the cap of ${MAX_AI_CALLS} model calls; remaining headlines wait for the next run`);
-        break;
+    // A small pool of workers pulls countries off a shared queue.
+    const queue = [...fetched];
+    let capped = false;
+    const worker = async () => {
+      for (let f = queue.shift(); f; f = queue.shift()) {
+        if (ai.calls >= MAX_AI_CALLS) {
+          capped = true;
+          return;
+        }
+        const n = await translateNew(ai, f.country, f.articles, cache, globeCodes, now);
+        translated += n;
+        if (n) log(`  ${f.country.code}: ${n} headlines translated`);
       }
-      translated += await translateNew(ai, f.country, f.articles, cache, globeCodes, now);
-    }
+    };
+    await Promise.all(Array.from({ length: TRANSLATE_CONCURRENCY }, worker));
+    if (capped) log(`  reached the cap of ${MAX_AI_CALLS} model calls; remaining headlines wait for the next run`);
   }
   const enriched = fetched.map((f) => ({ ...f, articles: applyCache(f.articles, cache, now) }));
   const pruned = pruneCache(cache, now);
