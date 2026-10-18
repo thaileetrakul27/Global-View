@@ -11,7 +11,7 @@ import { buildAboutFiles, buildAttention } from "./lib/attention";
 import { addDay, buildSnapshot, dayOf, readBaselines, type HistoryIndex } from "./lib/history";
 import { loadCountryConfig, loadGlobeFeatures } from "./lib/countries";
 import { detectCrises, inboundEditions, loadCrisisTerms, type CrisesFile } from "./lib/crises";
-import { buildHelp, fetchAppeals, fetchPlans, fetchSocieties, type HelpFile } from "./lib/help";
+import { buildHelp, refreshHelp, type HelpFile } from "./lib/help";
 import { sleep } from "./lib/io";
 import { writeJson } from "./lib/io";
 import type { CountryFile, IndexFile } from "./lib/publish";
@@ -64,15 +64,13 @@ async function main() {
   );
   const helpPath = `${outDir}/help.json`;
   const previousHelp: HelpFile | null = fs.existsSync(helpPath) ? (JSON.parse(fs.readFileSync(helpPath, "utf8")) as HelpFile) : null;
-  const help = buildHelp(
-    previousHelp,
-    refresh
-      ? { societies: await fetchSocieties(deps), appeals: await fetchAppeals(now, deps), plans: await fetchPlans(resolver, now, deps) }
-      : { societies: null, appeals: null, plans: null },
-    now,
-  );
+  const help = refresh
+    ? await refreshHelp(previousHelp, resolver, now, deps)
+    : buildHelp(previousHelp, { societies: null, appeals: null, plans: null, events: null, uncr: null }, now);
   writeJson(helpPath, help);
-  console.log(`Wrote help.json: ${Object.keys(help.societies).length} societies, ${help.appeals.length} appeals, ${help.plans.length} plans`);
+  console.log(
+    `Wrote help.json: ${Object.keys(help.societies).length} societies, ${help.appeals.length} appeals, ${Object.keys(help.events).length} emergencies, ${help.plans.length} plans, ${Object.keys(help.uncr).length} UN donation pages`,
+  );
 }
 
 main().catch((err) => {

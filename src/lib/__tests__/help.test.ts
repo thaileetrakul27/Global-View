@@ -5,12 +5,14 @@ import { helpLinks, leastFunded, needFor, societyLink } from "../help";
 const now = "2026-10-18T12:00:00.000Z";
 const help: HelpFile = {
   updated: now,
-  sources: { societies: now, appeals: now, plans: now },
+  sources: { societies: now, appeals: now, plans: now, events: now, uncr: now },
+  events: {},
+  uncr: { SD: "https://crisisrelief.un.org/donate-sudan-crisis" },
   societies: {
-    SD: { name: "Sudanese Red Crescent", url: "http://www.srcs.sd/", directory: "https://www.ifrc.org/national-societies-directory/sudanese-red-crescent" },
-    TD: { name: "Red Cross of Chad", url: null, directory: null },
+    SD: { name: "Sudanese Red Crescent", url: "http://www.srcs.sd/", directory: "https://www.ifrc.org/national-societies-directory/sudanese-red-crescent", donate: null },
+    TD: { name: "Red Cross of Chad", url: null, directory: null, donate: null },
   },
-  appeals: [{ code: "MDRSD030", country: "SD", name: "Sudan", kind: "Emergency Appeal", disaster: "Complex Emergency", requested: 5e7, funded: 1.8e7, people: null, start: now, end: now, url: "u" }],
+  appeals: [{ code: "MDRSD030", country: "SD", name: "Sudan", kind: "Emergency Appeal", disaster: "Complex Emergency", requested: 5e7, funded: 1.8e7, people: null, start: now, end: now, url: "u", event: null }],
   plans: [
     { id: 1, name: "Sudan plan", countries: ["SD"], required: 2.8e9, funded: 1.2e9, end: now, url: "u1" },
     { id: 2, name: "Regional plan", countries: ["TD", "SD"], required: 1e9, funded: 1e8, end: now, url: "u2" },
@@ -49,9 +51,10 @@ describe("needFor", () => {
     expect(n.appeals.map((a) => a.code)).toEqual(["MDRSD030"]);
     expect(n.plans.map((p) => p.id)).toEqual([1, 2]);
     expect(n.society?.name).toBe("Sudanese Red Crescent");
+    expect(n.uncr).toBe("https://crisisrelief.un.org/donate-sudan-crisis");
   });
   it("reports nothing for a country nothing names, keeping its society", () => {
-    const n = needFor("TH", crises, { ...help, societies: { TH: { name: "Thai Red Cross Society", url: "x", directory: null } } });
+    const n = needFor("TH", crises, { ...help, societies: { TH: { name: "Thai Red Cross Society", url: "x", directory: null, donate: null } } });
     expect(n.any).toBe(false);
     expect(n.society?.name).toBe("Thai Red Cross Society");
     expect(needFor("TH", null, null).any).toBe(false);

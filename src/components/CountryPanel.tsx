@@ -3,9 +3,9 @@
 import { useEffect, useRef } from "react";
 import type { Mention } from "@/lib/attention";
 import type { AboutArticle, Article, CountryFile, SnapshotArticle } from "@/lib/data";
+import type { Lead } from "@/lib/crisis";
 import type { Need } from "@/lib/help";
 import HelpBlock from "./HelpBlock";
-import HelpFooter from "./HelpFooter";
 import AboutList from "./AboutList";
 import type { CountryFeature } from "@/lib/geo";
 import { relativeTime } from "@/lib/time";
@@ -48,6 +48,8 @@ interface Props {
   about?: { articles: AboutArticle[] | null; editions: number };
   /** What is needed here and where to give; undefined while loading. */
   need?: Need;
+  /** The biggest crisis right now, or null when nothing names the country. */
+  lead?: Lead | null;
 }
 
 // Contents of the country panel: the name, when the list was refreshed, who
@@ -67,6 +69,7 @@ export default function CountryPanel({
   history = null,
   about,
   need,
+  lead = null,
 }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
 
@@ -165,7 +168,7 @@ export default function CountryPanel({
           </p>
         )}
 
-        {!history && data && need && <HelpBlock name={name} iso3={country.properties.iso3} need={need} />}
+        {!history && data && need && lead && <HelpBlock name={name} iso3={country.properties.iso3} need={need} lead={lead} />}
 
         {!history && world && (
           <p className="mt-3 rounded-md bg-card px-3 py-2 text-xs leading-snug text-muted">
@@ -233,7 +236,7 @@ export default function CountryPanel({
             <ArticleList articles={articles} shared={shared} onStory={onStory} />
           </div>
         )}
-        {!history && data && need && !need.any && need.society && <HelpFooter name={name} society={need.society} />}
+        {!history && data && need && !lead && <HelpBlock name={name} iso3={country.properties.iso3} need={need} lead={null} />}
       </div>
 
       <footer className="border-t border-line px-5 py-3 text-xs text-muted sm:px-6">

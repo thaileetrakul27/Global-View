@@ -11,12 +11,32 @@ export interface HelpLink {
 }
 
 export const IFRC_DIRECTORY = "https://www.ifrc.org/national-societies-directory";
+export const UNCR_HOME = "https://crisisrelief.un.org/";
 
 /** The link for a national society: its own site, else its IFRC directory page. */
 export function societyLink(society: Society, countryName: string): HelpLink {
   return society.url
     ? { label: society.name, url: society.url, note: `${countryName}'s own Red Cross or Red Crescent society. Its website is the official place to give locally.` }
     : { label: society.name, url: society.directory ?? IFRC_DIRECTORY, note: `${countryName}'s own Red Cross or Red Crescent society, in IFRC's directory.` };
+}
+
+/**
+ * Official donation pages for a country, most specific first: the Red
+ * Cross Red Crescent donation platform's page for its society, UN Crisis
+ * Relief's page for its crisis, then the society's own site and UN Crisis
+ * Relief's general fund. Every country gets at least the last two.
+ */
+export function donationLinks(society: Society | null, uncr: string | null, countryName: string): HelpLink[] {
+  const links: HelpLink[] = [];
+  if (society?.donate) {
+    links.push({ label: `Donate to the ${society.name}`, url: society.donate, note: "On the Red Cross Red Crescent donation platform, run by IFRC for its national societies." });
+  }
+  if (uncr) {
+    links.push({ label: `UN Crisis Relief: ${countryName}`, url: uncr, note: "The UN's donation page for this crisis; money goes to its pooled humanitarian funds." });
+  }
+  if (society && !society.donate) links.push(societyLink(society, countryName));
+  if (!uncr) links.push({ label: "UN Crisis Relief", url: UNCR_HOME, note: "Donate to UN-coordinated emergency funds for current crises." });
+  return links;
 }
 
 export function helpLinks(iso3: string | undefined, name: string, society: Society | null = null): HelpLink[] {
@@ -52,6 +72,8 @@ export interface Need {
   watching: WatchingEntry | null;
   unwatched: UnwatchedEntry | null;
   society: Society | null;
+  /** UN Crisis Relief's donation page for this country, when it has one. */
+  uncr: string | null;
   /** True when any alert, appeal, plan or headline signal names the country. */
   any: boolean;
 }
@@ -69,6 +91,7 @@ export function needFor(code: string, crises: CrisesFile | null, help: HelpFile 
     watching,
     unwatched,
     society: help?.societies[code] ?? null,
+    uncr: help?.uncr[code] ?? null,
     any: alerts.length > 0 || appeals.length > 0 || plans.length > 0 || watching !== null || unwatched !== null,
   };
 }

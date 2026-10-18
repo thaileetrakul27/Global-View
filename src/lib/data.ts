@@ -197,6 +197,8 @@ export interface Society {
   name: string;
   url: string | null;
   directory: string | null;
+  /** Its page on the Red Cross Red Crescent donation platform, when it is on it. */
+  donate: string | null;
 }
 
 /** An active IFRC appeal; amounts in Swiss francs. */
@@ -212,6 +214,16 @@ export interface Appeal {
   start: string;
   end: string;
   url: string;
+  event: number | null;
+}
+
+/** An IFRC GO emergency: what is happening, in IFRC's words. */
+export interface Emergency {
+  id: number;
+  name: string;
+  summary: string | null;
+  severity: string | null;
+  figures: { number: string; label: string; source: string | null }[];
 }
 
 /** A UN-coordinated humanitarian response plan; amounts in US dollars. */
@@ -228,13 +240,21 @@ export interface Plan {
 /** Where help is needed and where to send it, from IFRC and UN OCHA. */
 export interface HelpFile {
   updated: string;
-  sources: { societies: string | null; appeals: string | null; plans: string | null };
+  sources: { societies: string | null; appeals: string | null; plans: string | null; events: string | null; uncr: string | null };
   societies: Record<string, Society>;
   appeals: Appeal[];
   plans: Plan[];
+  /** IFRC GO emergencies behind the appeals, by id. */
+  events: Record<string, Emergency>;
+  /** UN Crisis Relief donation pages, by country code. */
+  uncr: Record<string, string>;
 }
 
-export const loadHelp = () => loadOptional<HelpFile>("/data/help.json");
+/** Files written before emergencies and UN pages existed lack those maps. */
+export const loadHelp = async (): Promise<HelpFile | null> => {
+  const h = await loadOptional<HelpFile>("/data/help.json");
+  return h ? { ...h, events: h.events ?? {}, uncr: h.uncr ?? {} } : null;
+};
 
 /** Files written before alerts existed lack the two alert lists. */
 export const loadCrises = async (): Promise<CrisesFile | null> => {

@@ -54,7 +54,7 @@ Each feed gets one retry. A country that fails twice keeps its previous file and
 | `public/data/about/TH.json` | The foreign top stories about Thailand, with the country each was read in |
 | `public/data/history/` | One small snapshot per day plus an index, for the time machine |
 | `public/data/crises.json` | Current GDACS disaster alerts, the countries the world has turned to, and emergencies nobody is watching |
-| `public/data/help.json` | Each country's Red Cross or Red Crescent society, active IFRC appeals and UN response plans with funding |
+| `public/data/help.json` | Each country's Red Cross or Red Crescent society and donation pages, active IFRC appeals and the emergencies behind them, UN response plans with funding |
 | `cache/headlines.json` | Translation cache, committed so runs on GitHub Actions share it |
 
 ## Shared stories across runs
@@ -86,8 +86,10 @@ Daily snapshots record each country's inbound edition count so the baseline buil
 - **societies**: every country's own Red Cross or Red Crescent society, with its website and IFRC directory page, from the IFRC GO country list.
 - **appeals**: IFRC's active DREF and Emergency Appeal operations that have not ended, with the amount asked for and funded (Swiss francs) and the people they aim to reach, each linked to its IFRC GO page.
 - **plans**: UN-coordinated humanitarian response plans for this year and last that are still running, with requirements and funding reported to OCHA's Financial Tracking Service (US dollars), linked to FTS. One funding call per plan.
+- **events**: the IFRC GO emergency behind each appeal: IFRC's own summary (first sentences, as plain text), its Red/Orange/Yellow severity and its key figures with sources. One call per emergency.
+- **donation pages**: each society's `donate` is its page on the Red Cross Red Crescent donation platform IFRC hosts (`donate.redcrossredcrescent.org/<cc>/default/`), found by probing that fixed URL: it redirects into the country's own path when the society is on the platform and to the front page when it is not. `uncr` maps countries to UN Crisis Relief's per-crisis donation pages, read from its sitemap (`donate-<country>-crisis` slugs).
 
-Each source that fails keeps the previous run's data for that source; `sources` records when each was last fetched.
+The site picks each country's "biggest crisis right now" from these by a fixed score (graded severity first, then the size of the response) and shows the donation pages beside it. Each source that fails keeps the previous run's data for that source; `sources` records when each was last fetched.
 
 ## Tests
 

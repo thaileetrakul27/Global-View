@@ -22,6 +22,7 @@ import {
   type Snapshot,
   type SnapshotStory,
 } from "@/lib/data";
+import { leadCrisis } from "@/lib/crisis";
 import { needFor } from "@/lib/help";
 import { displayName } from "@/lib/names";
 import { inbound, mostWatched, outbound, tintMap } from "@/lib/attention";
@@ -298,6 +299,10 @@ export default function App() {
 
   const topStory = dayStories[0] ?? null;
   const selectedNeed = useMemo(() => (selectedCode && crises ? needFor(selectedCode, crises, help) : undefined), [crises, help, selectedCode]);
+  const selectedLead = useMemo(
+    () => (selectedCode && selectedNeed ? leadCrisis(selectedNeed, help, nameOf(selectedCode)) : null),
+    [help, nameOf, selectedCode, selectedNeed],
+  );
   const watched = useMemo(() => mostWatched(attention, 1)[0] ?? null, [attention]);
 
   const countryState: CountryState = useMemo(() => {
@@ -484,6 +489,7 @@ export default function App() {
               onStory={openStory}
               name={nameOf(selected.properties.code)}
               need={selectedNeed}
+              lead={selectedLead}
               about={{
                 articles: !hasInbound
                   ? []
@@ -521,6 +527,7 @@ export default function App() {
               onStory={openStory}
               name={nameOf(selected.properties.code)}
               need={selectedNeed}
+              lead={selectedLead}
               about={{
                 articles: !hasInbound
                   ? []
