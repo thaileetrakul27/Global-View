@@ -1,0 +1,8 @@
+# Netlify picks these up automatically when the repository is connected,
+# so no build settings need to be typed into the Netlify UI.
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
