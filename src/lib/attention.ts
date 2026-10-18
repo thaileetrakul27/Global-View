@@ -25,6 +25,15 @@ function sortMentions(m: Mention[]): Mention[] {
   return m.sort((a, b) => b.count - a.count || a.code.localeCompare(b.code));
 }
 
+/** Countries most written about across every edition's top stories, most first. */
+export function mostWatched(att: AttentionFile | null, limit = 3): Mention[] {
+  const totals = new Map<string, number>();
+  for (const row of Object.values(att?.mentions ?? {})) {
+    for (const [code, n] of Object.entries(row)) totals.set(code, (totals.get(code) ?? 0) + n);
+  }
+  return sortMentions([...totals.entries()].map(([code, count]) => ({ code, count }))).slice(0, limit);
+}
+
 /** Scales counts to 0..1 for tinting the globe, the largest count being 1. */
 export function tintMap(mentions: Mention[]): Map<string, number> {
   const max = Math.max(1, ...mentions.map((m) => m.count));

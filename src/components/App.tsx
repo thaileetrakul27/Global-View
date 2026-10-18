@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { countryFocus, loadCountries, type CountryFeature } from "@/lib/geo";
 import {
   loadAttention,
@@ -13,7 +13,8 @@ import {
   type SharedFile,
   type SharedStory,
 } from "@/lib/data";
-import { inbound, outbound, tintMap } from "@/lib/attention";
+import { inbound, mostWatched, outbound, tintMap } from "@/lib/attention";
+import { readUrlState, writeUrlState } from "@/lib/urlState";
 import { useViewport } from "@/lib/useViewport";
 import GlobeView from "./GlobeView";
 import type { GlobeArc } from "./Globe";
@@ -23,6 +24,7 @@ import type { AttentionMode } from "./AttentionChips";
 import BottomSheet from "./BottomSheet";
 import WorldStories from "./WorldStories";
 import StoryPanel from "./StoryPanel";
+import WorldSummary from "./WorldSummary";
 import type { SharedRef } from "./ArticleList";
 
 /** Desktop side panel width in px, capped so the globe keeps two thirds. */
@@ -50,12 +52,34 @@ export default function App() {
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
   const vp = useViewport();
 
+  // The address the page opened with, so a shared link can be applied once
+  // the data it points at has loaded. Not rendered, so it is safe to read
+  // during the first client render.
+  const [initialSearch] = useState(() => (typeof window === "undefined" ? "" : window.location.search));
+  const urlApplied = useRef(false);
+
   useEffect(() => {
-    loadCountries().then(setCountries).catch(console.error);
+    const wanted = readUrlState(initialSearch);
+    loadCountries()
+      .then((list) => {
+        setCountries(list);
+        const codes = new Set(list.map((c) => c.properties.code));
+        if (wanted.country && codes.has(wanted.country)) {
+          setSelectedCode(wanted.country);
+          setFilterAbout(wanted.about && codes.has(wanted.about) ? wanted.about : null);
+        }
+        urlApplied.current = true;
+      })
+      .catch(console.error);
     loadIndex().then(setIndex).catch(console.error);
-    loadShared().then(setShared).catch(console.error);
+    loadShared()
+      .then((data) => {
+        setShared(data);
+        if (wanted.story && data?.stories.some((st) => st.id === wanted.story)) setFocusStoryId(wanted.story);
+      })
+      .catch(console.error);
     loadAttention().then(setAttention).catch(console.error);
-  }, []);
+  }, [initialSearch]);
 
   // Fetch the selected country's stories once, then keep them. The index
   // says which countries have a file, so no request is made for the rest.
@@ -157,6 +181,32 @@ export default function App() {
     [shared, focusStoryId],
   );
 
+  // Keep the address bar and title in step with what is open.
+  useEffect(() => {
+    if (!urlApplied.current) return;
+    const query = writeUrlState({
+      country: selectedCode ?? undefined,
+      about: filterAbout ?? undefined,
+      story: focusStoryId ?? undefined,
+    });
+    const url = `${window.location.pathname}${query}`;
+    if (url !== `${window.location.pathname}${window.location.search}`) window.history.replaceState(null, "", url);
+    const selectedName = selectedCode ? byCode.get(selectedCode)?.properties.name : undefined;
+    const title = focusedStory
+      ? `${focusedStory.title} · Global View`
+      : selectedName
+        ? `${selectedName} · Global View`
+        : "Global View";
+    document.title = title;
+    // Next applies the static page title once hydration settles, which can
+    // land after a fast data load; set it again shortly after.
+    const t = setTimeout(() => (document.title = title), 1500);
+    return () => clearTimeout(t);
+  }, [selectedCode, filterAbout, focusStoryId, focusedStory, byCode]);
+
+  const topStory = shared?.stories[0] ?? null;
+  const watched = useMemo(() => mostWatched(attention, 1)[0] ?? null, [attention]);
+
   const countryState: CountryState = useMemo(() => {
     if (!selectedCode) return { status: "loading" };
     if (index && !(selectedCode in index.countries)) return { status: "none" };
@@ -250,6 +300,9 @@ export default function App() {
           <p className="mt-1.5 max-w-xs text-sm leading-snug text-muted">
             The stories each country is reading right now.
           </p>
+          {!panelOpen && (
+            <WorldSummary topStory={topStory} mostWatched={watched} nameOf={nameOf} onStory={openStory} onCountry={(c) => select(c)} />
+          )}
         </div>
         <div className="pointer-events-auto w-full md:absolute md:left-1/2 md:w-80 md:-translate-x-1/2">
           <CountrySearch countries={countries} onSelect={select} />

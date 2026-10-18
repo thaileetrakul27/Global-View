@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { inbound, outbound, tintMap } from "@/lib/attention";
+import { inbound, mostWatched, outbound, tintMap } from "@/lib/attention";
 import type { AttentionFile } from "@/lib/data";
 
 const att: AttentionFile = {
@@ -16,6 +16,10 @@ describe("attention", () => {
   it("lists inbound mentions", () => {
     expect(inbound(att, "TH")).toEqual([{ code: "GB", count: 2 }, { code: "US", count: 1 }]);
     expect(inbound(att, "US", 1)).toEqual([{ code: "GB", count: 5 }]);
+  });
+  it("sums inbound mentions to find the most-watched countries", () => {
+    expect(mostWatched(att, 2)).toEqual([{ code: "US", count: 8 }, { code: "TH", count: 3 }]);
+    expect(mostWatched(null)).toEqual([]);
   });
   it("scales tints to the largest count", () => {
     const t = tintMap(outbound(att, "TH"));
