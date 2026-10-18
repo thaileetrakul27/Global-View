@@ -1,1338 +1,1559 @@
 {
-  "updated": "2026-10-18T19:26:23.178Z",
+  "updated": "2026-10-18T19:37:04.143Z",
   "sources": {
-    "societies": "2026-10-18T19:26:23.178Z",
-    "appeals": "2026-10-18T19:26:23.178Z",
-    "plans": "2026-10-18T19:26:23.178Z",
-    "events": "2026-10-18T19:26:23.178Z",
-    "uncr": "2026-10-18T19:26:23.178Z"
+    "societies": "2026-10-18T19:37:04.143Z",
+    "appeals": "2026-10-18T19:37:04.143Z",
+    "plans": "2026-10-18T19:37:04.143Z",
+    "events": "2026-10-18T19:37:04.143Z",
+    "uncr": "2026-10-18T19:37:04.143Z"
   },
   "societies": {
     "AF": {
       "name": "Afghan Red Crescent",
       "url": "http://www.arcs.org.af/",
       "directory": "https://www.ifrc.org/national-societies-directory/afghan-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AL": {
       "name": "Albanian Red Cross",
       "url": "http://www.kksh.org.al/",
       "directory": "https://www.ifrc.org/national-societies-directory/albanian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "DZ": {
       "name": "Algerian Red Crescent",
       "url": "http://www.cra-algerie.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/algerian-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "AS": {
       "name": "American Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AD": {
       "name": "Andorran Red Cross",
       "url": "http://www.creuroja.ad/",
       "directory": "https://www.ifrc.org/national-societies-directory/andorran-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AO": {
       "name": "Angola Red Cross",
       "url": "http://www.cruzvermelha.og.ao",
       "directory": "https://www.ifrc.org/national-societies-directory/angola-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AI": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AG": {
       "name": "Antigua and Barbuda Red Cross",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/antigua-and-barbuda-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AR": {
       "name": "Argentine Red Cross",
       "url": "http://www.cruzroja.org.ar/",
       "directory": "https://www.ifrc.org/national-societies-directory/argentine-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AM": {
       "name": "Armenian Red Cross Society",
       "url": "http://www.redcross.am/",
       "directory": "https://www.ifrc.org/national-societies-directory/armenian-red-cross-society",
-      "donate": "https://donate.redcrossredcrescent.org/am/default/"
+      "donate": "https://donate.redcrossredcrescent.org/am/default/",
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AU": {
       "name": "Australian Red Cross",
       "url": "http://www.redcross.org.au/",
       "directory": "https://www.ifrc.org/national-societies-directory/australian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AT": {
       "name": "Austrian Red Cross",
       "url": "http://www.roteskreuz.at/",
       "directory": "https://www.ifrc.org/national-societies-directory/austrian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "AZ": {
       "name": "Red Crescent Society of Azerbaijan",
       "url": "http://www.redcrescent.az/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-crescent-society-azerbaijan",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BS": {
       "name": "The Bahamas Red Cross Society",
       "url": "http://www.bahamasredcross.org",
       "directory": "https://www.ifrc.org/national-societies-directory/bahamas-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BH": {
       "name": "Bahrain Red Crescent Society",
       "url": "http://www.rcsbahrain.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/bahrain-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BD": {
       "name": "Bangladesh Red Crescent Society",
       "url": "http://www.bdrcs.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/bangladesh-red-crescent-society",
-      "donate": "https://donate.redcrossredcrescent.org/bd/default/"
+      "donate": "https://donate.redcrossredcrescent.org/bd/default/",
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BB": {
       "name": "The Barbados Red Cross Society",
       "url": "https://www.barbadosredcross.com/",
       "directory": "https://www.ifrc.org/national-societies-directory/barbados-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BY": {
       "name": "Belarus Red Cross",
       "url": "http://www.redcross.by/",
       "directory": "https://www.ifrc.org/national-societies-directory/belarus-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BE": {
       "name": "Belgian Red Cross",
       "url": "http://www.redcross.be/",
       "directory": "https://www.ifrc.org/national-societies-directory/belgian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BZ": {
       "name": "Belize Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/belize-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BX": {
       "name": "Benelux ERU",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BJ": {
       "name": "Red Cross of Benin",
       "url": "http://croixrougebenin.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-benin",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BT": {
       "name": "Bhutan Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/bhutan-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BO": {
       "name": "Bolivian Red Cross",
       "url": "http://www.cruzrojaboliviana.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/bolivian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BA": {
       "name": "Red Cross Society of Bosnia and Herzegovina",
       "url": "http://www.rcsbh.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-bosnia-and-herzegovina",
-      "donate": "https://donate.redcrossredcrescent.org/ba/default/"
+      "donate": "https://donate.redcrossredcrescent.org/ba/default/",
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BW": {
       "name": "Botswana Red Cross Society",
       "url": "http://www.botswanaredcross.org.bw/",
       "directory": "https://www.ifrc.org/national-societies-directory/botswana-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BV": {
       "name": "Norwegian Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BR": {
       "name": "Brazilian Red Cross",
       "url": "http://www.cruzvermelha.org.br/",
       "directory": "https://www.ifrc.org/national-societies-directory/brazilian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "IO": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "VG": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "BN": {
       "name": "Brunei Darussalam Red Crescent Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/brunei-darussalam-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BG": {
       "name": "Bulgarian Red Cross",
       "url": "http://www.redcross.bg/",
       "directory": "https://www.ifrc.org/national-societies-directory/bulgarian-red-cross",
-      "donate": "https://donate.redcrossredcrescent.org/bg/default/"
+      "donate": "https://donate.redcrossredcrescent.org/bg/default/",
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BF": {
       "name": "Burkinabe Red Cross Society",
       "url": "http://www.croixrougebf.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/burkinabe-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "BI": {
       "name": "Burundi Red Cross",
       "url": "http://croixrouge.bi/",
       "directory": "https://www.ifrc.org/national-societies-directory/burundi-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "CV": {
       "name": "Red Cross of Cape Verde",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-cape-verde",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KH": {
       "name": "Cambodian Red Cross Society",
       "url": "http://www.redcross.org.kh/",
       "directory": "https://www.ifrc.org/national-societies-directory/cambodian-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CM": {
       "name": "Cameroon Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/cameroon-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CA": {
       "name": "Canadian Red Cross Society",
       "url": "http://www.redcross.ca/",
       "directory": "https://www.ifrc.org/national-societies-directory/canadian-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "KY": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CF": {
       "name": "Central African Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/central-african-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "TD": {
       "name": "Red Cross of Chad",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-chad",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CL": {
       "name": "Chilean Red Cross",
       "url": "http://www.cruzroja.cl/",
       "directory": "https://www.ifrc.org/national-societies-directory/chilean-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CN": {
       "name": "Red Cross Society of China",
       "url": "http://www.redcross.org.cn/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-china",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CX": {
       "name": "Australian Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CC": {
       "name": "Australian Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "CO": {
       "name": "Colombian Red Cross Society",
       "url": "http://www.cruzrojacolombiana.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/colombian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KM": {
       "name": "The Comoros Red Crescent",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/comoros-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CG": {
       "name": "Congolese Red Cross",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/congolese-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "CK": {
       "name": "Cook Islands Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/cook-islands-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "CR": {
       "name": "Costa Rican Red Cross",
       "url": "http://www.cruzroja.or.cr/",
       "directory": "https://www.ifrc.org/national-societies-directory/costa-rican-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CI": {
       "name": "Red Cross Society of Côte d'Ivoire",
       "url": "http://www.croixrouge.ci/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-cote-divoire",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "HR": {
       "name": "Croatian Red Cross",
       "url": "http://www.hck.hr/",
       "directory": "https://www.ifrc.org/national-societies-directory/croatian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CU": {
       "name": "Cuban Red Cross",
       "url": "http://www.sld.cu/sitios/cruzroja/",
       "directory": "https://www.ifrc.org/national-societies-directory/cuban-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CY": {
       "name": "Cyprus Red Cross Society",
       "url": "http://www.redcross.org.cy/",
       "directory": "https://www.ifrc.org/national-societies-directory/cyprus-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CZ": {
       "name": "Czech Red Cross",
       "url": "http://www.cck-cr.cz/",
       "directory": "https://www.ifrc.org/national-societies-directory/czech-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KP": {
       "name": "Red Cross Society of the Democratic People's Republic of Korea",
       "url": "http://www.friend.com.kp/dprkrcs",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-democratic-peoples-republic-korea",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CD": {
       "name": "Red Cross of the Democratic Republic of the Congo",
       "url": "https://www.croixrouge-rdc.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-democratic-republic-congo",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "DK": {
       "name": "Danish Red Cross",
       "url": "http://www.drk.dk/",
       "directory": "https://www.ifrc.org/national-societies-directory/danish-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "DJ": {
       "name": "Red Crescent Society of Djibouti",
       "url": "http://www.cr-djib.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-crescent-society-djibouti",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "DM": {
       "name": "Dominica Red Cross Society",
       "url": "https://www.dominicaredcross.com",
       "directory": "https://www.ifrc.org/national-societies-directory/dominica-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "DO": {
       "name": "Dominican Red Cross",
       "url": "http://www.cruzroja.org.do/",
       "directory": "https://www.ifrc.org/national-societies-directory/dominican-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "EC": {
       "name": "Ecuadorian Red Cross",
       "url": "http://www.cruzroja.org.ec/",
       "directory": "https://www.ifrc.org/national-societies-directory/ecuadorian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "EG": {
       "name": "Egyptian Red Crescent Society",
       "url": "http://www.egyptianrc.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/egyptian-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SV": {
       "name": "Salvadorean Red Cross Society",
       "url": "http://www.cruzrojasal.org.sv/",
       "directory": "https://www.ifrc.org/national-societies-directory/salvadorean-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GQ": {
       "name": "Red Cross of Equatorial Guinea",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-equatorial-guinea",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ER": {
       "name": "Red Cross Society of Eritrea",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "EE": {
       "name": "Estonian Red Cross",
       "url": "http://www.redcross.ee/",
       "directory": "https://www.ifrc.org/national-societies-directory/estonian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SZ": {
       "name": "Baphalali Eswatini Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/baphalali-eswatini-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ET": {
       "name": "Ethiopian Red Cross Society",
       "url": "http://www.redcrosseth.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/ethiopian-red-cross-society",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/et/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "FK": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "FO": {
       "name": "Danish Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "FJ": {
       "name": "Fiji Red Cross Society",
       "url": "http://www.redcross.com.fj/",
       "directory": "https://www.ifrc.org/national-societies-directory/fiji-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "FI": {
       "name": "Finnish Red Cross",
       "url": "http://www.redcross.fi/",
       "directory": "https://www.ifrc.org/national-societies-directory/finnish-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "FR": {
       "name": "French Red Cross",
       "url": "http://www.croix-rouge.fr/",
       "directory": "https://www.ifrc.org/national-societies-directory/french-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GA": {
       "name": "Gabonese Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/gabonese-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GM": {
       "name": "Gambia Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/gambia-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GE": {
       "name": "Red Cross Society of Georgia",
       "url": "http://www.redcross.ge/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-georgia",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/ge/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "DE": {
       "name": "German Red Cross",
       "url": "http://www.drk.de/",
       "directory": "https://www.ifrc.org/national-societies-directory/german-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GH": {
       "name": "Ghana Red Cross Society",
       "url": "https://redcrossghana.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/ghana-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GI": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GR": {
       "name": "Hellenic Red Cross",
       "url": "http://www.redcross.gr/",
       "directory": "https://www.ifrc.org/national-societies-directory/hellenic-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GL": {
       "name": "Danish Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GD": {
       "name": "Grenada Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/grenada-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GU": {
       "name": "American Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GT": {
       "name": "Guatemalan Red Cross",
       "url": "https://www.cruzroja.gt/",
       "directory": "https://www.ifrc.org/national-societies-directory/guatemalan-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GG": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GN": {
       "name": "Red Cross Society of Guinea",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-guinea",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GW": {
       "name": "Red Cross Society of Guinea-Bissau",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-guinea-bissau",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GY": {
       "name": "Guyana Red Cross Society",
       "url": "http://guyanaredcross.org.gy/",
       "directory": "https://www.ifrc.org/national-societies-directory/guyana-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "HT": {
       "name": "Haiti Red Cross Society",
       "url": "http://www.croixrouge.ht/",
       "directory": "https://www.ifrc.org/national-societies-directory/haiti-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "HM": {
       "name": "Australian Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "HN": {
       "name": "Honduran Red Cross",
       "url": "http://www.cruzroja.org.hn/",
       "directory": "https://www.ifrc.org/national-societies-directory/honduran-red-cross",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/hn/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "HU": {
       "name": "Hungarian Red Cross",
       "url": "http://www.voroskereszt.hu/",
       "directory": "https://www.ifrc.org/national-societies-directory/hungarian-red-cross",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/hu/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "IS": {
       "name": "Icelandic Red Cross",
       "url": "http://www.redcross.is/",
       "directory": "https://www.ifrc.org/national-societies-directory/icelandic-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "IN": {
       "name": "Indian Red Cross Society",
       "url": "http://www.indianredcross.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/indian-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ID": {
       "name": "Indonesian Red Cross Society",
       "url": "http://www.pmi.or.id",
       "directory": "https://www.ifrc.org/national-societies-directory/indonesian-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "IR": {
       "name": "Red Crescent Society of the Islamic Republic of Iran",
       "url": "http://www.rcs.ir/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-crescent-society-islamic-republic-iran",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "IQ": {
       "name": "Iraqi Red Crescent Society",
       "url": "https://en.ircs.org.iq/",
       "directory": "https://www.ifrc.org/national-societies-directory/iraqi-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "IE": {
       "name": "Irish Red Cross Society",
       "url": "http://www.redcross.ie/",
       "directory": "https://www.ifrc.org/national-societies-directory/irish-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "IM": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "IL": {
       "name": "Magen David Adom in Israel",
       "url": "http://www.mdais.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/israel-magen-david-adom-israel",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "IT": {
       "name": "Italian Red Cross",
       "url": "http://www.cri.it/",
       "directory": "https://www.ifrc.org/national-societies-directory/italian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "JM": {
       "name": "Jamaica Red Cross",
       "url": "https://www.jamaicaredcross.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/jamaica-red-cross",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/jm/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "JP": {
       "name": "Japanese Red Cross Society",
       "url": "http://www.jrc.or.jp/",
       "directory": "https://www.ifrc.org/national-societies-directory/japanese-red-cross-society",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/jp/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "JE": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "JO": {
       "name": "Jordan National Red Crescent Society",
       "url": "http://jnrcs.org/en",
       "directory": "https://www.ifrc.org/national-societies-directory/jordan-national-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KZ": {
       "name": "Red Crescent Society of the Republic of Kazakhstan",
       "url": "http://www.redcrescent.kz/",
       "directory": "https://www.ifrc.org/national-societies-directory/kazakh-red-crescent",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/kz/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KE": {
       "name": "Kenya Red Cross Society",
       "url": "https://www.redcross.or.ke/",
       "directory": "https://www.ifrc.org/national-societies-directory/kenya-red-cross-society",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/ke/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KI": {
       "name": "Kiribati Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/kiribati-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "XK": {
       "name": "The Red Cross of Serbia",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KW": {
       "name": "Kuwait Red Crescent Society",
       "url": "http://www.krcs.org.kw/",
       "directory": "https://www.ifrc.org/national-societies-directory/kuwait-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KG": {
       "name": "Red Crescent Society of Kyrgyzstan",
       "url": "http://www.krc.kg/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-crescent-society-kyrgyzstan",
-      "donate": "https://donate.redcrossredcrescent.org/kg/default/"
+      "donate": "https://donate.redcrossredcrescent.org/kg/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LA": {
       "name": "Lao Red Cross",
       "url": "http://www.laoredcross.org.la/",
       "directory": "https://www.ifrc.org/national-societies-directory/lao-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LV": {
       "name": "Latvian Red Cross",
       "url": "http://www.redcross.lv/lv/",
       "directory": "https://www.ifrc.org/national-societies-directory/latvian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LB": {
       "name": "Lebanese Red Cross",
       "url": "http://www.redcross.org.lb/",
       "directory": "https://www.ifrc.org/national-societies-directory/lebanese-red-cross",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/lb/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LS": {
       "name": "Lesotho Red Cross Society",
       "url": "http://www.redcross.org.ls/",
       "directory": "https://www.ifrc.org/national-societies-directory/lesotho-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LR": {
       "name": "Liberian Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/liberian-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LY": {
       "name": "Libyan Red Crescent",
       "url": "https://lrc.org.ly/",
       "directory": "https://www.ifrc.org/national-societies-directory/libyan-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LI": {
       "name": "Liechtenstein Red Cross",
       "url": "http://www.roteskreuz.li/",
       "directory": "https://www.ifrc.org/national-societies-directory/liechtenstein-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LT": {
       "name": "Lithuanian Red Cross Society",
       "url": "http://www.redcross.lt/",
       "directory": "https://www.ifrc.org/national-societies-directory/lithuanian-red-cross-society",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/lt/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LU": {
       "name": "Luxembourg Red Cross",
       "url": "http://www.croix-rouge.lu/",
       "directory": "https://www.ifrc.org/national-societies-directory/luxembourg-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MO": {
       "name": "Macau Red Cross",
       "url": "http://www.redcross.org.mo/",
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MG": {
       "name": "Malagasy Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/malagasy-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MW": {
       "name": "Malawi Red Cross Society",
       "url": "https://www.redcross.mw/",
       "directory": "https://www.ifrc.org/national-societies-directory/malawi-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MY": {
       "name": "Malaysian Red Crescent Society",
       "url": "http://www.redcrescent.org.my/",
       "directory": "https://www.ifrc.org/national-societies-directory/malaysian-red-crescent-society",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/my/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MV": {
       "name": "Maldivian Red Crescent",
       "url": "http://www.redcrescent.org.mv/",
       "directory": "https://www.ifrc.org/national-societies-directory/maldivian-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ML": {
       "name": "Mali Red Cross",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/mali-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MT": {
       "name": "Malta Red Cross Society",
       "url": "http://www.redcross.org.mt/",
       "directory": "https://www.ifrc.org/national-societies-directory/malta-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MH": {
       "name": "Marshall Islands Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/marshall-islands-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MR": {
       "name": "Mauritanian Red Crescent",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/mauritanian-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MU": {
       "name": "Mauritius Red Cross Society",
       "url": "http://www.redcrossmauritius.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/mauritius-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MX": {
       "name": "Mexican Red Cross",
       "url": "http://www.cruzrojamexicana.org.mx/",
       "directory": "https://www.ifrc.org/national-societies-directory/mexican-red-cross",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/mx/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "FM": {
       "name": "Micronesia Red Cross",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/micronesia-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MD": {
       "name": "Red Cross Society of the Republic of Moldova",
       "url": "http://www.redcross.md/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-republic-moldova",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MC": {
       "name": "Red Cross of Monaco",
       "url": "http://www.croix-rouge.mc/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-monaco",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MN": {
       "name": "Mongolian Red Cross Society",
       "url": "http://www.redcross.mn/",
       "directory": "https://www.ifrc.org/national-societies-directory/mongolian-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ME": {
       "name": "Red Cross of Montenegro",
       "url": "http://www.ckcg.co.me/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-montenegro",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/me/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MS": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MA": {
       "name": "Moroccan Red Crescent",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/moroccan-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MZ": {
       "name": "Mozambique Red Cross Society",
       "url": "https://www.redcross.org.mz/",
       "directory": "https://www.ifrc.org/national-societies-directory/mozambique-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MM": {
       "name": "Myanmar Red Cross Society",
       "url": "https://www.redcross.org.mm/",
       "directory": "https://www.ifrc.org/national-societies-directory/myanmar-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "NA": {
       "name": "Namibia Red Cross",
       "url": "http://www.redcross.org.na/",
       "directory": "https://www.ifrc.org/national-societies-directory/namibia-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "NP": {
       "name": "Nepal Red Cross Society",
       "url": "http://www.nrcs.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/nepal-red-cross-society",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/np/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "NL": {
       "name": "The Netherlands Red Cross",
       "url": "http://www.rodekruis.nl/",
       "directory": "https://www.ifrc.org/national-societies-directory/netherlands-red-cross",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/nl/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "NZ": {
       "name": "New Zealand Red Cross",
       "url": "http://www.redcross.org.nz/",
       "directory": "https://www.ifrc.org/national-societies-directory/new-zealand-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "NI": {
       "name": "Nicaraguan Red Cross",
       "url": "https://cruzrojanicaraguense.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/nicaraguan-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "NE": {
       "name": "Red Cross Society of Niger",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-niger",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "NG": {
       "name": "Nigerian Red Cross Society",
       "url": "https://www.redcrossnigeria.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/nigerian-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "NF": {
       "name": "Australian Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MP": {
       "name": "American Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "MK": {
       "name": "Red Cross of the Republic of North Macedonia",
       "url": "https://ckrm.org.mk/en/home/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-republic-north-macedonia",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "NO": {
       "name": "Norwegian Red Cross",
       "url": "http://www.redcross.no/",
       "directory": "https://www.ifrc.org/national-societies-directory/norwegian-red-cross",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/no/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PK": {
       "name": "Pakistan Red Crescent",
       "url": "http://www.prcs.org.pk/",
       "directory": "https://www.ifrc.org/national-societies-directory/pakistan-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PW": {
       "name": "Palau Red Cross Society",
       "url": "http://palauredcross.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/palau-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PS": {
       "name": "Palestine Red Crescent Society",
       "url": "http://www.palestinercs.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/palestine-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PA": {
       "name": "Red Cross Society of Panama",
       "url": "https://www.cruzroja.org.pa/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-society-panama",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PG": {
       "name": "Papua New Guinea Red Cross Society",
       "url": "http://www.redcross.org.pg/",
       "directory": "https://www.ifrc.org/national-societies-directory/papua-new-guinea-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PY": {
       "name": "Paraguayan Red Cross",
       "url": "http://www.cruzroja.org.py/",
       "directory": "https://www.ifrc.org/national-societies-directory/paraguayan-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PE": {
       "name": "Peruvian Red Cross",
       "url": "http://www.cruzroja.org.pe/",
       "directory": "https://www.ifrc.org/national-societies-directory/peruvian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PH": {
       "name": "Philippine Red Cross",
       "url": "http://www.redcross.org.ph/",
       "directory": "https://www.ifrc.org/national-societies-directory/philippine-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PL": {
       "name": "Polish Red Cross",
       "url": "http://www.pck.org.pl/",
       "directory": "https://www.ifrc.org/national-societies-directory/polish-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PT": {
       "name": "Portuguese Red Cross",
       "url": "http://www.cruzvermelha.org.pt",
       "directory": "https://www.ifrc.org/national-societies-directory/portuguese-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "PR": {
       "name": "American Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "QA": {
       "name": "Qatar Red Crescent Society",
       "url": "http://www.qrcs.org.qa/",
       "directory": "https://www.ifrc.org/national-societies-directory/qatar-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KR": {
       "name": "The Republic of Korea National Red Cross",
       "url": "http://www.redcross.or.kr/",
       "directory": "https://www.ifrc.org/national-societies-directory/republic-korea-national-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "RO": {
       "name": "Romanian Red Cross",
       "url": "http://www.crucearosie.ro/",
       "directory": "https://www.ifrc.org/national-societies-directory/romanian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "RU": {
       "name": "Russian Red Cross",
       "url": "http://www.redcross.ru/",
       "directory": "https://www.ifrc.org/national-societies-directory/russian-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "RW": {
       "name": "Rwandan Red Cross",
       "url": "http://www.rwandaredcross.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/rwandan-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SH": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "KN": {
       "name": "Saint Kitts and Nevis Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/saint-kitts-and-nevis-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LC": {
       "name": "Saint Lucia Red Cross",
       "url": "https://www.saintluciaredcross.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/saint-lucia-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "VC": {
       "name": "Saint Vincent and the Grenadines Red Cross",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/saint-vincent-and-grenadines-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "WS": {
       "name": "Samoa Red Cross Society",
       "url": "http://www.redcross.org.ws/",
       "directory": "https://www.ifrc.org/national-societies-directory/samoa-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SM": {
       "name": "Red Cross of the Republic of San Marino",
       "url": "https://www.crs.sm/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-republic-san-marino",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ST": {
       "name": "Sao Tome and Principe Red Cross",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/sao-tome-and-principe-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SA": {
       "name": "Saudi Red Crescent Authority",
       "url": "http://www.srcs.org.sa/",
       "directory": "https://www.ifrc.org/national-societies-directory/saudi-red-crescent-authority",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SN": {
       "name": "Senegalese Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/senegalese-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "RS": {
       "name": "Red Cross of Serbia",
       "url": "http://www.redcross.org.rs/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-cross-serbia",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SC": {
       "name": "Seychelles Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/seychelles-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SL": {
       "name": "Sierra Leone Red Cross Society",
       "url": "http://sierraleoneredcross.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/sierra-leone-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SG": {
       "name": "Singapore Red Cross Society",
       "url": "http://www.redcross.org.sg/",
       "directory": "https://www.ifrc.org/national-societies-directory/singapore-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SK": {
       "name": "Slovak Red Cross",
       "url": "http://www.redcross.sk/",
       "directory": "https://www.ifrc.org/national-societies-directory/slovak-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SI": {
       "name": "Slovenian Red Cross",
       "url": "http://www.rks.si/",
       "directory": "https://www.ifrc.org/national-societies-directory/slovenian-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SB": {
       "name": "The Solomon Islands Red Cross",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/solomon-islands-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SO": {
       "name": "Somali Red Crescent Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/somali-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ZA": {
       "name": "The South African Red Cross Society",
       "url": "http://www.redcross.org.za/",
       "directory": "https://www.ifrc.org/national-societies-directory/south-african-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "GS": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SS": {
       "name": "South Sudan Red Cross",
       "url": "https://www.ssdredcross.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/south-sudan-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ES": {
       "name": "Spanish Red Cross",
       "url": "http://www.cruzroja.es/",
       "directory": "https://www.ifrc.org/national-societies-directory/spanish-red-cross",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/es/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "LK": {
       "name": "Sri Lanka Red Cross Society",
       "url": "http://www.redcross.lk/",
       "directory": "https://www.ifrc.org/national-societies-directory/sri-lanka-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SD": {
       "name": "Sudanese Red Crescent",
       "url": "http://www.srcs.sd/",
       "directory": "https://www.ifrc.org/national-societies-directory/sudanese-red-crescent",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/sd/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SR": {
       "name": "Suriname Red Cross",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/suriname-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "SE": {
       "name": "Swedish Red Cross",
       "url": "http://www.redcross.se/",
       "directory": "https://www.ifrc.org/national-societies-directory/swedish-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "CH": {
       "name": "Swiss Red Cross",
       "url": "http://www.redcross.ch/",
       "directory": "https://www.ifrc.org/national-societies-directory/swiss-red-cross",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/ch/default/",
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "SY": {
       "name": "Syrian Arab Red Crescent",
       "url": "https://sarc.sy/home/",
       "directory": "https://www.ifrc.org/national-societies-directory/syrian-arab-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TJ": {
       "name": "Red Crescent Society of Tajikistan",
       "url": "http://www.redcrescent.tj/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-crescent-society-tajikistan",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TZ": {
       "name": "Tanzania Red Cross National Society",
       "url": "http://trcs.or.tz",
       "directory": "https://www.ifrc.org/national-societies-directory/tanzania-red-cross-national-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TH": {
       "name": "Thai Red Cross Society",
       "url": "http://www.redcross.or.th/",
       "directory": "https://www.ifrc.org/national-societies-directory/thai-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TL": {
       "name": "Timor-Leste Red Cross Society",
       "url": "http://www.redcross.tl/",
       "directory": "https://www.ifrc.org/national-societies-directory/timor-leste-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TG": {
       "name": "Togolese Red Cross",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/togolese-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TO": {
       "name": "Tonga Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/tonga-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TT": {
       "name": "The Trinidad and Tobago Red Cross Society",
       "url": "https://ttrcs.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/trinidad-and-tobago-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TN": {
       "name": "Tunisian Red Crescent",
       "url": "http://www.tunisianredcrescent.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/tunisian-red-crescent",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TR": {
       "name": "Turkish Red Crescent Society",
       "url": "http://www.kizilay.org.tr/",
       "directory": "https://www.ifrc.org/national-societies-directory/turkish-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TM": {
       "name": "Red Crescent Society of Turkmenistan",
       "url": "http://www.tgymj.gov.tm/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-crescent-society-turkmenistan",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TC": {
       "name": "British Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "TV": {
       "name": "Tuvalu Red Cross Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/tuvalu-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "UG": {
       "name": "Uganda Red Cross Society",
       "url": "http://www.redcrossug.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/uganda-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "UA": {
       "name": "Ukrainian Red Cross Society",
       "url": "http://www.redcross.org.ua/",
       "directory": "https://www.ifrc.org/national-societies-directory/ukrainian-red-cross-society",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/ua/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "AE": {
       "name": "Red Crescent Society of the United Arab Emirates",
       "url": "http://www.rcuae.ae/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-crescent-society-united-arab-emirates",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:37:04.143Z"
     },
     "GB": {
       "name": "British Red Cross",
       "url": "http://www.redcross.org.uk/",
       "directory": "https://www.ifrc.org/national-societies-directory/british-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "US": {
       "name": "American Red Cross",
       "url": "http://www.redcross.org",
       "directory": "https://www.ifrc.org/national-societies-directory/american-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "VI": {
       "name": "American Red Cross",
       "url": null,
       "directory": null,
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "UY": {
       "name": "Uruguayan Red Cross",
       "url": "https://cruzroja.org.uy/",
       "directory": "https://www.ifrc.org/national-societies-directory/uruguayan-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "UZ": {
       "name": "Red Crescent Society of Uzbekistan",
       "url": "http://www.redcrescent.uz/",
       "directory": "https://www.ifrc.org/national-societies-directory/red-crescent-society-uzbekistan",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "VU": {
       "name": "Vanuatu Red Cross Society",
       "url": "http://www.vanuaturedcross.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/vanuatu-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "VE": {
       "name": "Venezuelan Red Cross",
       "url": "http://www.cruzrojavenezolana.org/",
       "directory": "https://www.ifrc.org/national-societies-directory/venezuelan-red-cross",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "VN": {
       "name": "Vietnam Red Cross Society",
       "url": "http://www.redcross.org.vn/",
       "directory": "https://www.ifrc.org/national-societies-directory/vietnam-red-cross-society",
-      "donate": null
+      "donate": "https://donate.redcrossredcrescent.org/vn/default/",
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "YE": {
       "name": "Yemen Red Crescent Society",
       "url": null,
       "directory": "https://www.ifrc.org/national-societies-directory/yemen-red-crescent-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ZM": {
       "name": "Zambia Red Cross Society",
       "url": "http://www.zamcross.org.zm/",
       "directory": "https://www.ifrc.org/national-societies-directory/zambia-red-cross-society",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     },
     "ZW": {
       "name": "Zimbabwe Red Cross Society",
       "url": "http://www.redcrosszim.org.zw/",
       "directory": "https://www.ifrc.org/national-societies-directory/cruz-roja-de-zimbabue",
-      "donate": null
+      "donate": null,
+      "checked": "2026-10-18T19:10:00.000Z"
     }
   },
   "appeals": [

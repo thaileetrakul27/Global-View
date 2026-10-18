@@ -9,6 +9,7 @@ import {
   fetchPlans,
   fetchSocieties,
   fetchUncr,
+  nextToCheck,
   opening,
   probeDonate,
   refreshHelp,
@@ -49,9 +50,15 @@ describe("toSocieties", () => {
   it("keeps real countries, trims urls and leaves missing ones null", () => {
     const out = toSocieties(goCountries);
     expect(Object.keys(out)).toEqual(["SD", "TD"]);
-    expect(out.SD).toEqual({ name: "Sudanese Red Crescent", url: "http://www.srcs.sd/", directory: "https://www.ifrc.org/national-societies-directory/sudanese-red-crescent", donate: null });
-    expect(out.TD).toEqual({ name: "Red Cross of Chad", url: null, directory: null, donate: null });
-    expect(toSocieties(goCountries, { SD: "https://donate.redcrossredcrescent.org/sd/default/" }).SD.donate).toBe("https://donate.redcrossredcrescent.org/sd/default/");
+    expect(out.SD).toEqual({ name: "Sudanese Red Crescent", url: "http://www.srcs.sd/", directory: "https://www.ifrc.org/national-societies-directory/sudanese-red-crescent", donate: null, checked: null });
+    expect(out.TD).toEqual({ name: "Red Cross of Chad", url: null, directory: null, donate: null, checked: null });
+    const prev = { SD: { ...out.SD, donate: "https://donate.redcrossredcrescent.org/sd/default/", checked: now } };
+    expect(toSocieties(goCountries, prev).SD).toMatchObject({ donate: "https://donate.redcrossredcrescent.org/sd/default/", checked: now });
+  });
+  it("nextToCheck asks about never-checked societies first, then the longest ago", () => {
+    const soc = (checked: string | null) => ({ name: "x", url: null, directory: null, donate: null, checked });
+    const all = { A: soc("2026-10-18T00:00:00Z"), B: soc(null), C: soc("2026-10-17T00:00:00Z"), D: soc(null) };
+    expect(nextToCheck(all, 3)).toEqual(["B", "D", "C"]);
   });
 });
 
@@ -81,19 +88,23 @@ describe("fetchers", () => {
   const platform = async (url: string) => {
     if (url.includes("/country/")) return json({ results: goCountries });
     const cc = /\.org\/([a-z]{2})\//.exec(url)?.[1];
-    return new Response("", { status: 303, headers: { location: cc === "sd" ? `https://donate.redcrossredcrescent.org/${cc}/default/~my-donation` : "https://donate.redcrossredcrescent.org/?lang=" } });
+    return new Response("", { status: 303, headers: { location: cc === "sd" ? `/${cc}/default/~my-donation?_cv=1` : "/?lang=&_cv=1" } });
   };
 
-  it("fetchSocieties parses the GO list and marks who is on the donation platform; null on failure", async () => {
-    const out = await fetchSocieties({}, deps(platform), 0);
-    expect(out?.SD.donate).toBe("https://donate.redcrossredcrescent.org/sd/default/");
-    expect(out?.TD.donate).toBeNull();
-    expect(await fetchSocieties({}, deps(async () => new Response("", { status: 500 })), 0)).toBeNull();
+  it("fetchSocieties parses the GO list and checks a batch against the donation platform; null on failure", async () => {
+    const out = await fetchSocieties({}, now, deps(platform), 0, 1);
+    expect(out?.SD).toMatchObject({ donate: "https://donate.redcrossredcrescent.org/sd/default/", checked: now });
+    expect(out?.TD).toMatchObject({ donate: null, checked: null });
+    expect(await fetchSocieties({}, now, deps(async () => new Response("", { status: 500 })), 0)).toBeNull();
   });
 
-  it("probeDonate keeps a code's previous answer when its request fails", async () => {
-    const out = await probeDonate(["SD", "TD"], { SD: "kept" }, deps(async () => Promise.reject(new Error("offline"))), 1);
-    expect(out).toEqual({ SD: "kept", TD: null });
+  it("probeDonate answers only what it saw clearly and stops at a 429", async () => {
+    expect(await probeDonate(["SD"], deps(async () => Promise.reject(new Error("offline"))), 0)).toEqual({});
+    let calls = 0;
+    const limited = await probeDonate(["SD", "TD", "MX"], deps(async () => (++calls === 2 ? new Response("", { status: 429 }) : new Response("", { status: 303, headers: { location: "/?lang=&_cv=1" } }))), 0);
+    expect(limited).toEqual({ SD: null });
+    expect(calls).toBe(2);
+    expect(await probeDonate(["SD"], deps(async () => new Response("", { status: 303, headers: { location: "https://donate.redcrossredcrescent.org/sd/default/~my-donation?_cv=1" } })), 0)).toEqual({ SD: "https://donate.redcrossredcrescent.org/sd/default/" });
   });
 
   it("fetchAppeals parses the GO list, and returns null on failure", async () => {
@@ -185,7 +196,7 @@ describe("buildHelp", () => {
     const previous: HelpFile = {
       updated: "2026-10-17T00:00:00.000Z",
       sources: { societies: "2026-10-17T00:00:00.000Z", appeals: "2026-10-16T00:00:00.000Z", plans: null, events: null, uncr: "2026-10-15T00:00:00.000Z" },
-      societies: { SD: { name: "Old", url: null, directory: null, donate: null } },
+      societies: { SD: { name: "Old", url: null, directory: null, donate: null, checked: null } },
       appeals: [],
       plans: [],
       events: {},

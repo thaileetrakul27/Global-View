@@ -9,8 +9,8 @@ const help: HelpFile = {
   events: {},
   uncr: { SD: "https://crisisrelief.un.org/donate-sudan-crisis" },
   societies: {
-    SD: { name: "Sudanese Red Crescent", url: "http://www.srcs.sd/", directory: "https://www.ifrc.org/national-societies-directory/sudanese-red-crescent", donate: null },
-    TD: { name: "Red Cross of Chad", url: null, directory: null, donate: null },
+    SD: { name: "Sudanese Red Crescent", url: "http://www.srcs.sd/", directory: "https://www.ifrc.org/national-societies-directory/sudanese-red-crescent", donate: null, checked: null },
+    TD: { name: "Red Cross of Chad", url: null, directory: null, donate: null, checked: null },
   },
   appeals: [{ code: "MDRSD030", country: "SD", name: "Sudan", kind: "Emergency Appeal", disaster: "Complex Emergency", requested: 5e7, funded: 1.8e7, people: null, start: now, end: now, url: "u", event: null }],
   plans: [
@@ -54,7 +54,7 @@ describe("needFor", () => {
     expect(n.uncr).toBe("https://crisisrelief.un.org/donate-sudan-crisis");
   });
   it("reports nothing for a country nothing names, keeping its society", () => {
-    const n = needFor("TH", crises, { ...help, societies: { TH: { name: "Thai Red Cross Society", url: "x", directory: null, donate: null } } });
+    const n = needFor("TH", crises, { ...help, societies: { TH: { name: "Thai Red Cross Society", url: "x", directory: null, donate: null, checked: null } } });
     expect(n.any).toBe(false);
     expect(n.society?.name).toBe("Thai Red Cross Society");
     expect(needFor("TH", null, null).any).toBe(false);

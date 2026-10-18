@@ -41,13 +41,13 @@ describe("leadCrisis", () => {
 });
 
 describe("donationLinks", () => {
-  const society = { name: "Sudanese Red Crescent", url: "http://www.srcs.sd/", directory: null, donate: "https://donate.redcrossredcrescent.org/sd/default/" };
+  const society = { name: "Sudanese Red Crescent", url: "http://www.srcs.sd/", directory: null, donate: "https://donate.redcrossredcrescent.org/sd/default/", checked: null };
   it("leads with the platform page and the UN page for the crisis", () => {
     const links = donationLinks(society, "https://crisisrelief.un.org/donate-sudan-crisis", "Sudan");
     expect(links.map((l) => l.url)).toEqual(["https://donate.redcrossredcrescent.org/sd/default/", "https://crisisrelief.un.org/donate-sudan-crisis"]);
   });
   it("falls back to the society's site and the UN's general fund, and still gives two links with no society", () => {
-    const links = donationLinks({ ...society, donate: null }, null, "Sudan");
+    const links = donationLinks({ ...society, donate: null, checked: null }, null, "Sudan");
     expect(links.map((l) => l.url)).toEqual(["http://www.srcs.sd/", "https://crisisrelief.un.org/"]);
     expect(donationLinks(null, null, "Nowhere").map((l) => l.url)).toEqual(["https://crisisrelief.un.org/"]);
   });

@@ -199,6 +199,7 @@ export interface Society {
   directory: string | null;
   /** Its page on the Red Cross Red Crescent donation platform, when it is on it. */
   donate: string | null;
+  checked: string | null;
 }
 
 /** An active IFRC appeal; amounts in Swiss francs. */

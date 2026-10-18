@@ -30,6 +30,8 @@ export interface Society {
   directory: string | null;
   /** Its page on the Red Cross Red Crescent donation platform, when it is on it. */
   donate: string | null;
+  /** When `donate` was last checked; null until the platform has been asked. */
+  checked: string | null;
 }
 
 /** An active IFRC appeal. Amounts are Swiss francs, as IFRC reports them. */
@@ -134,8 +136,8 @@ interface GoAppeal {
   country: { iso: string | null; id: number };
 }
 
-/** Maps IFRC GO's country list onto national societies, keyed by country code. */
-export function toSocieties(rows: GoCountry[], donate: Record<string, string | null> = {}): Record<string, Society> {
+/** Maps IFRC GO's country list onto national societies, keyed by country code, carrying over earlier platform answers. */
+export function toSocieties(rows: GoCountry[], previous: Record<string, Society> = {}): Record<string, Society> {
   const out: Record<string, Society> = {};
   for (const r of rows) {
     if (r.record_type !== 1 || !r.iso || !r.society_name) continue;
@@ -144,36 +146,54 @@ export function toSocieties(rows: GoCountry[], donate: Record<string, string | n
       name: r.society_name,
       url: r.society_url?.trim() || null,
       directory: r.url_ifrc?.trim() || null,
-      donate: donate[code] ?? null,
+      donate: previous[code]?.donate ?? null,
+      checked: previous[code]?.checked ?? null,
     };
   }
   return out;
 }
 
+/** Societies asked about per run: the platform rate-limits after about fifty requests. */
+export const DONATE_BATCH = 40;
+
 /**
- * Asks the donation platform whether a society is on it: its country page
- * redirects into the country's own path when it is, and to the front page
- * when it is not. A code whose request fails keeps its previous answer.
+ * Asks the donation platform whether each society is on it: its country
+ * page redirects into the country's own path when it is, and to the front
+ * page when it is not. Only those two answers count. Requests go one at a
+ * time with a pause, and the run stops at the first 429, so the rest keep
+ * their earlier answer. Returns only the clear answers.
  */
-export async function probeDonate(codes: string[], previous: Record<string, string | null>, deps: FetchDeps, concurrency = 8): Promise<Record<string, string | null>> {
+export async function probeDonate(codes: string[], deps: FetchDeps, pauseMs = 400): Promise<Record<string, string | null>> {
   const out: Record<string, string | null> = {};
-  const queue = [...codes];
-  const worker = async () => {
-    for (let code = queue.shift(); code; code = queue.shift()) {
-      const cc = code.toLowerCase();
-      const url = `${RCRC_DONATE}/${cc}/default/`;
-      try {
-        const res = await deps.fetch(url, { headers: { "User-Agent": USER_AGENT }, redirect: "manual", signal: AbortSignal.timeout(20_000) });
-        const target = res.headers.get("location") ?? "";
-        out[code] = res.status >= 300 && res.status < 400 && target.includes(`/${cc}/`) ? url : null;
-      } catch (err) {
-        deps.log(`Donation platform ${code}: ${err instanceof Error ? err.message : String(err)}`);
-        out[code] = previous[code] ?? null;
+  for (const code of codes) {
+    const cc = code.toLowerCase();
+    const url = `${RCRC_DONATE}/${cc}/default/`;
+    try {
+      const res = await deps.fetch(url, { headers: { "User-Agent": USER_AGENT }, redirect: "manual", signal: AbortSignal.timeout(20_000) });
+      if (res.status === 429) {
+        deps.log(`Donation platform: rate limited after ${Object.keys(out).length} answers; the rest wait for the next run`);
+        break;
       }
+      // The location is a path such as "/sd/default/~my-donation" or "/?lang=".
+      const target = (res.headers.get("location") ?? "").replace(/^https?:\/\/[^/]+/, "").split("?")[0];
+      const redirected = res.status >= 300 && res.status < 400;
+      if (redirected && target.includes(`/${cc}/`)) out[code] = url;
+      else if (redirected && (target === "/" || target === "")) out[code] = null;
+      else deps.log(`Donation platform ${code}: unexpected ${res.status} ${target}`);
+    } catch (err) {
+      deps.log(`Donation platform ${code}: ${err instanceof Error ? err.message : String(err)}`);
     }
-  };
-  await Promise.all(Array.from({ length: concurrency }, worker));
+    await deps.sleep(pauseMs);
+  }
   return out;
+}
+
+/** The societies to ask about this run: never checked first, then the longest ago. */
+export function nextToCheck(societies: Record<string, Society>, batch = DONATE_BATCH): string[] {
+  return Object.entries(societies)
+    .sort(([a, sa], [b, sb]) => (sa.checked ?? "").localeCompare(sb.checked ?? "") || a.localeCompare(b))
+    .slice(0, batch)
+    .map(([code]) => code);
 }
 
 /** Keeps the active appeals that name a country and have not ended. */
@@ -203,12 +223,13 @@ export function toAppeals(rows: GoAppeal[], now: string): Appeal[] {
   return out.sort((a, b) => b.requested - a.requested || a.start.localeCompare(b.start));
 }
 
-export async function fetchSocieties(previous: Record<string, Society>, deps: FetchDeps, delayMs = 5_000): Promise<Record<string, Society> | null> {
+export async function fetchSocieties(previous: Record<string, Society>, now: string, deps: FetchDeps, delayMs = 5_000, batch = DONATE_BATCH): Promise<Record<string, Society> | null> {
   const rows = await attempt("IFRC societies", () => getJson<{ results: GoCountry[] }>(`${GO_API}/country/?limit=500`, deps), deps, delayMs);
   if (!rows) return null;
-  const codes = rows.results.filter((r) => r.record_type === 1 && r.iso && r.society_name).map((r) => r.iso!.toUpperCase());
-  const known = Object.fromEntries(Object.entries(previous).map(([code, s]) => [code, s.donate]));
-  return toSocieties(rows.results, await probeDonate(codes, known, deps));
+  const societies = toSocieties(rows.results, previous);
+  const answers = await probeDonate(nextToCheck(societies, batch), deps);
+  for (const [code, donate] of Object.entries(answers)) societies[code] = { ...societies[code], donate, checked: now };
+  return societies;
 }
 
 const ENTITIES: Record<string, string> = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", rsquo: "\u2019", lsquo: "\u2018", rdquo: "\u201d", ldquo: "\u201c", ndash: "\u2013", mdash: "\u2014", hellip: "\u2026" };
@@ -408,7 +429,7 @@ export function buildHelp(
 
 /** Fetches every help source in turn, keeping the previous file's data where one fails. */
 export async function refreshHelp(previous: HelpFile | null, resolve: CountryResolver, now: string, deps: FetchDeps): Promise<HelpFile> {
-  const societies = await fetchSocieties(previous?.societies ?? {}, deps);
+  const societies = await fetchSocieties(previous?.societies ?? {}, now, deps);
   const appeals = await fetchAppeals(now, deps);
   const events = appeals ? await fetchEmergencies(appeals, previous?.events ?? {}, deps) : null;
   const plans = await fetchPlans(resolve, now, deps);
