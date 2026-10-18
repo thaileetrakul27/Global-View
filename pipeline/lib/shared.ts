@@ -39,12 +39,32 @@ export interface Candidate {
   article: EnrichedArticle & { en: string };
 }
 
-/** Every translated article across all countries, in a stable order. */
+/**
+ * Translated articles that could plausibly be shared across borders: those
+ * about a country that articles from at least two different editions are
+ * also about. Purely domestic stories are left out, which keeps the single
+ * grouping call small enough to answer in full.
+ */
 export function collectCandidates(countries: { code: string; articles: EnrichedArticle[] }[]): Candidate[] {
+  // Which editions mention each country code.
+  const editionsByTopic = new Map<string, Set<string>>();
+  for (const c of countries) {
+    for (const a of c.articles) {
+      for (const topic of a.about ?? []) {
+        let set = editionsByTopic.get(topic);
+        if (!set) editionsByTopic.set(topic, (set = new Set()));
+        set.add(c.code);
+      }
+    }
+  }
+  const crossBorder = (topic: string) => (editionsByTopic.get(topic)?.size ?? 0) >= 2;
+
   const out: Candidate[] = [];
   for (const c of countries) {
     for (const a of c.articles) {
-      if (a.en) out.push({ code: c.code, article: a as EnrichedArticle & { en: string } });
+      if (a.en && (a.about ?? []).some(crossBorder)) {
+        out.push({ code: c.code, article: a as EnrichedArticle & { en: string } });
+      }
     }
   }
   return out;
@@ -55,7 +75,8 @@ export function buildSharedPrompt(candidates: Candidate[]) {
     "You are given today's top headlines from many countries, one per line as: number, tab, country code, tab, English headline.",
     "Group headlines that report the same specific news event. Only form a group when it spans at least two different country codes; headlines that appear in a single country are not reported.",
     "A headline belongs to at most one group. Do not group headlines that merely share a topic; they must be about the same event.",
-    "For each group give a short, neutral English title of at most twelve words, and list the headline numbers in items.",
+    "For each group give a short, neutral English title of at most ten words, and list the headline numbers in items.",
+    "Return at most 80 groups, largest first. Output only the JSON.",
   ].join(" ");
   const user = candidates.map((c, i) => `${i}\t${c.code}\t${c.article.en}`).join("\n");
   return { system, user };
@@ -103,6 +124,6 @@ export function toStories(groups: z.infer<typeof sharedSchema>, candidates: Cand
 export async function findSharedStories(ai: AiClient, candidates: Candidate[]): Promise<SharedStory[] | null> {
   if (candidates.length < 2) return null;
   const { system, user } = buildSharedPrompt(candidates);
-  const result = await ai.parse({ schema: sharedSchema, system, user, maxTokens: 16000, effort: "medium" });
+  const result = await ai.parse({ schema: sharedSchema, system, user, maxTokens: 32000, effort: "low" });
   return result ? toStories(result, candidates) : null;
 }

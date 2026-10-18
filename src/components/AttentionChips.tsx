@@ -11,12 +11,15 @@ interface Props {
   mentions: Mention[];
   nameOf: (code: string) => string;
   onSelect: (code: string) => void;
+  /** Chip currently used as a filter, if any. */
+  activeCode?: string | null;
 }
 
 // "Who is reading about whom", as a row of clickable country chips. The
 // toggle flips between countries in this country's news and countries
-// whose news is about this country.
-export default function AttentionChips({ countryName, mode, onMode, mentions, nameOf, onSelect }: Props) {
+// whose news is about this country. In the first mode a chip filters this
+// country's list; in the second it opens that country's list, filtered.
+export default function AttentionChips({ countryName, mode, onMode, mentions, nameOf, onSelect, activeCode }: Props) {
   return (
     <section aria-label="Attention" className="pt-3">
       <div className="flex gap-1 text-xs" role="tablist">
@@ -41,10 +44,15 @@ export default function AttentionChips({ countryName, mode, onMode, mentions, na
             <li key={m.code}>
               <button
                 type="button"
+                aria-pressed={activeCode === m.code}
                 onClick={() => onSelect(m.code)}
-                className="rounded-full border border-line bg-card px-2.5 py-1 text-xs text-ink hover:border-accent hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className={`rounded-full border px-2.5 py-1 text-xs focus:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                  activeCode === m.code
+                    ? "border-accent bg-accent text-paper"
+                    : "border-line bg-card text-ink hover:border-accent hover:text-accent"
+                }`}
               >
-                {nameOf(m.code)} <span className="text-muted">{m.count}</span>
+                {nameOf(m.code)} <span className={activeCode === m.code ? "text-paper/80" : "text-muted"}>{m.count}</span>
               </button>
             </li>
           ))}

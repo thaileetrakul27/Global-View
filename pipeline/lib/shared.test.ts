@@ -11,12 +11,18 @@ const a = (code: string, url: string, en: string) => ({
 const cands: Candidate[] = [a("TH", "t1", "Floods in the north"), a("GB", "g1", "Rates held"), a("US", "u1", "Fed holds rates"), a("TH", "t2", "Fed keeps rates steady"), a("FR", "f1", "Protests in Paris")];
 
 describe("collectCandidates", () => {
-  it("keeps only translated articles, in order", () => {
+  const art = (url: string, about: string[], en = "x") => ({ url, title: en, en, outlet: "O", outletUrl: null, published: now, about });
+  it("keeps translated articles about a country that two or more editions cover", () => {
     const out = collectCandidates([
-      { code: "TH", articles: [{ ...cands[0].article }, { url: "x", title: "ก", outlet: "O", outletUrl: null, published: now }] },
-      { code: "GB", articles: [cands[1].article] },
+      { code: "TH", articles: [art("t-us", ["US"]), art("t-home", ["TH"]), art("t-fr", ["FR"]), { url: "t-raw", title: "ก", outlet: "O", outletUrl: null, published: now, about: ["US"] }] },
+      { code: "GB", articles: [art("g-us", ["US", "GB"]), art("g-home", ["GB"])] },
+      { code: "US", articles: [art("u-home", ["US"])] },
     ]);
-    expect(out.map((c) => c.article.url)).toEqual(["t1", "g1"]);
+    // US is covered by TH, GB and US editions; TH and GB only by themselves; FR only by TH.
+    expect(out.map((c) => c.article.url)).toEqual(["t-us", "g-us", "u-home"]);
+  });
+  it("returns nothing when no topic crosses a border", () => {
+    expect(collectCandidates([{ code: "TH", articles: [art("a", ["TH"])] }])).toEqual([]);
   });
 });
 

@@ -46,7 +46,7 @@ export function buildTranslationPrompt(country: { code: string; name: string }, 
     `The headlines come from the ${country.name} (${country.code}) edition of a news service, so unnamed places and institutions are usually in ${country.name}.`,
     "Return exactly one item per headline, with i set to the headline's number.",
     "en: a faithful English translation of the headline. If it is already in English, copy it unchanged. Do not add, remove or editorialise.",
-    `about: ISO 3166-1 alpha-2 codes of the countries the headline is about or names, including ${country.code} when it concerns ${country.name}. Use an empty list when no country applies.`,
+    `about: ISO 3166-1 alpha-2 codes of the countries the headline is mainly about, including ${country.code} when it concerns ${country.name}. A country, its government, its people or a place in it must be a main subject; do not tag a country only because a company, team or person from it is named. Use an empty list when no country applies.`,
   ].join(" ");
   const user = headlines.map((h, i) => `${i}\t${h}`).join("\n");
   return { system, user };

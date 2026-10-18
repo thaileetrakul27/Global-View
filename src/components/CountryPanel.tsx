@@ -23,13 +23,27 @@ interface Props {
   /** Null when the pipeline has not produced attention data yet. */
   attention: { mode: AttentionMode; onMode: (m: AttentionMode) => void; mentions: Mention[] } | null;
   nameOf: (code: string) => string;
-  onSelect: (code: string) => void;
+  /** Open another country, optionally showing only its stories about `about`. */
+  onSelect: (code: string, about?: string) => void;
+  /** Only show this country's stories about this code. */
+  filterAbout: string | null;
+  onFilter: (code: string | null) => void;
   sharedCounts: Map<string, number>;
 }
 
 // Contents of the country panel: the name, when the list was refreshed, who
 // this country is reading about, and the ranked articles.
-export default function CountryPanel({ country, state, onClose, attention, nameOf, onSelect, sharedCounts }: Props) {
+export default function CountryPanel({
+  country,
+  state,
+  onClose,
+  attention,
+  nameOf,
+  onSelect,
+  filterAbout,
+  onFilter,
+  sharedCounts,
+}: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
 
   // Move focus to the heading when a new country opens, for keyboard users.
@@ -39,6 +53,20 @@ export default function CountryPanel({ country, state, onClose, attention, nameO
 
   const data = state.status === "ready" ? state.data : null;
   const name = country.properties.name;
+  const code = country.properties.code;
+
+  const articles = data
+    ? filterAbout
+      ? data.articles.filter((a) => a.about?.includes(filterAbout))
+      : data.articles
+    : [];
+
+  // "In X's news": a chip narrows this list. "Talking about X": a chip opens
+  // that country, narrowed to its stories about X.
+  const onChip = (chip: string) => {
+    if (attention?.mode === "inbound") onSelect(chip, code);
+    else onFilter(filterAbout === chip ? null : chip);
+  };
 
   return (
     <div className="flex h-full min-h-0 flex-col">
@@ -93,13 +121,29 @@ export default function CountryPanel({ country, state, onClose, attention, nameO
             onMode={attention.onMode}
             mentions={attention.mentions}
             nameOf={nameOf}
-            onSelect={onSelect}
+            onSelect={onChip}
+            activeCode={attention.mode === "outbound" ? filterAbout : null}
           />
+        )}
+
+        {data && filterAbout && (
+          <div className="mt-3 flex items-center justify-between gap-3 rounded-md bg-card px-3 py-2 text-xs text-ink">
+            <span>
+              {articles.length} {articles.length === 1 ? "story" : "stories"} about {nameOf(filterAbout)}
+            </span>
+            <button
+              type="button"
+              onClick={() => onFilter(null)}
+              className="shrink-0 text-accent hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              Show all {data.articles.length}
+            </button>
+          </div>
         )}
 
         {data && (
           <div className={attention ? "mt-3 border-t border-line" : ""}>
-            <ArticleList articles={data.articles} sharedCounts={sharedCounts} />
+            <ArticleList articles={articles} sharedCounts={sharedCounts} />
           </div>
         )}
       </div>

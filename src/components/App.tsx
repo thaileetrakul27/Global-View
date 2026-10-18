@@ -36,6 +36,8 @@ export default function App() {
   const [shared, setShared] = useState<SharedFile | null>(null);
   const [attention, setAttention] = useState<AttentionFile | null>(null);
   const [attentionMode, setAttentionMode] = useState<AttentionMode>("outbound");
+  // When set, the panel lists only the selected country's stories about this code.
+  const [filterAbout, setFilterAbout] = useState<string | null>(null);
   // A shared story picked on the landing card; only its arcs are drawn.
   const [focusStoryId, setFocusStoryId] = useState<string | null>(null);
   // Country files already fetched, keyed by code. Null marks "no file".
@@ -149,8 +151,18 @@ export default function App() {
     [countries, selectedCode],
   );
 
-  const select = useCallback((code: string | null) => setSelectedCode(code), []);
-  const close = useCallback(() => setSelectedCode(null), []);
+  const select = useCallback((code: string | null, about?: string) => {
+    setSelectedCode(code);
+    setFilterAbout(about ?? null);
+  }, []);
+  const close = useCallback(() => {
+    setSelectedCode(null);
+    setFilterAbout(null);
+  }, []);
+  const changeMode = useCallback((m: AttentionMode) => {
+    setAttentionMode(m);
+    setFilterAbout(null);
+  }, []);
 
   // Escape deselects, unless a control such as the search list handles it first.
   useEffect(() => {
@@ -222,9 +234,11 @@ export default function App() {
               country={selected}
               state={countryState}
               onClose={close}
-              attention={hasAttention ? { mode: attentionMode, onMode: setAttentionMode, mentions } : null}
+              attention={hasAttention ? { mode: attentionMode, onMode: changeMode, mentions } : null}
               nameOf={nameOf}
               onSelect={select}
+              filterAbout={filterAbout}
+              onFilter={setFilterAbout}
               sharedCounts={sharedCounts}
             />
           )}
@@ -236,9 +250,11 @@ export default function App() {
               country={selected}
               state={countryState}
               onClose={close}
-              attention={hasAttention ? { mode: attentionMode, onMode: setAttentionMode, mentions } : null}
+              attention={hasAttention ? { mode: attentionMode, onMode: changeMode, mentions } : null}
               nameOf={nameOf}
               onSelect={select}
+              filterAbout={filterAbout}
+              onFilter={setFilterAbout}
               sharedCounts={sharedCounts}
             />
           )}
