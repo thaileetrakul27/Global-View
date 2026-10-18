@@ -1,20 +1,34 @@
 {
-  "updated": "2026-10-18T20:14:09.968Z",
+  "updated": "2026-10-18T20:59:07.408Z",
   "watching": [
     {
       "code": "CA",
       "editions": 20,
       "baseline": null,
-      "share": 0.6,
+      "share": 0.52,
       "sample": [
-        "Accident with ammunition? - Four dead in fire at military base in Canada",
-        "Canadian military base fire: Death toll confirmed and cause under investigation",
-        "Canadian military base fire: Death toll confirmed and cause under investigation"
+        "Dead and injured at Canadian military base Wainwright after major fire",
+        "Canadian Prime Minister confirms military base fire has killed 4 and injured dozens",
+        "Accident with ammunition? - Four dead in fire at military base in Canada"
       ]
     }
   ],
   "unwatched": [],
   "alerts": [
+    {
+      "id": "1001338",
+      "type": "cyclone",
+      "level": "Red",
+      "title": "Red notification for tropical cyclone CHAMPI-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0.179 million .",
+      "description": "From 14/10/2026 to 18/10/2026, a Hurricane/Typhoon > 74 mph (maximum wind speed of 250 km/h) CHAMPI-26 was active in NWPacific. The cyclone affects these countries: Guam, Northern Mariana Islands, Japan (vulnerability Medium). Estimated population affected by category 1 (120 km/h) wind speeds or higher is 0.179 million .",
+      "name": "CHAMPI-26",
+      "countries": [
+        "JP"
+      ],
+      "from": "2026-10-14T12:00:00.000Z",
+      "to": "2026-10-18T18:00:00.000Z",
+      "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001338"
+    },
     {
       "id": "1001335",
       "type": "cyclone",
@@ -138,6 +152,11 @@
     }
   ],
   "quiet": [
+    {
+      "code": "MX",
+      "alert": "1001335",
+      "editions": 2
+    },
     {
       "code": "CD",
       "alert": "1027465",
