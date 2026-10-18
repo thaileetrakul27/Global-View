@@ -5,7 +5,7 @@ import type { Mention } from "@/lib/attention";
 import type { CountryFile } from "@/lib/data";
 import type { CountryFeature } from "@/lib/geo";
 import { relativeTime } from "@/lib/time";
-import ArticleList from "./ArticleList";
+import ArticleList, { type SharedRef } from "./ArticleList";
 import AttentionChips, { type AttentionMode } from "./AttentionChips";
 import PlaceholderStoryCard from "./PlaceholderStoryCard";
 
@@ -28,7 +28,8 @@ interface Props {
   /** Only show this country's stories about this code. */
   filterAbout: string | null;
   onFilter: (code: string | null) => void;
-  sharedCounts: Map<string, number>;
+  shared: Map<string, SharedRef>;
+  onStory: (id: string) => void;
 }
 
 // Contents of the country panel: the name, when the list was refreshed, who
@@ -42,7 +43,8 @@ export default function CountryPanel({
   onSelect,
   filterAbout,
   onFilter,
-  sharedCounts,
+  shared,
+  onStory,
 }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
 
@@ -143,7 +145,7 @@ export default function CountryPanel({
 
         {data && (
           <div className={attention ? "mt-3 border-t border-line" : ""}>
-            <ArticleList articles={articles} sharedCounts={sharedCounts} />
+            <ArticleList articles={articles} shared={shared} onStory={onStory} />
           </div>
         )}
       </div>

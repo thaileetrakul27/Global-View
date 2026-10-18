@@ -13,7 +13,7 @@ interface Props {
 const LIMIT = 6;
 
 // Landing card: the stories most countries are reading at once. Clicking one
-// draws only its arcs on the globe.
+// opens the story's panel and draws only its arcs on the globe.
 export default function WorldStories({ stories, focusId, onFocus, nameOf }: Props) {
   const top = stories.slice(0, LIMIT);
   if (!top.length) return null;

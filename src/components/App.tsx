@@ -22,6 +22,8 @@ import CountryPanel, { type CountryState } from "./CountryPanel";
 import type { AttentionMode } from "./AttentionChips";
 import BottomSheet from "./BottomSheet";
 import WorldStories from "./WorldStories";
+import StoryPanel from "./StoryPanel";
+import type { SharedRef } from "./ArticleList";
 
 /** Desktop side panel width in px, capped so the globe keeps two thirds. */
 export const PANEL_WIDTH = 440;
@@ -38,8 +40,11 @@ export default function App() {
   const [attentionMode, setAttentionMode] = useState<AttentionMode>("outbound");
   // When set, the panel lists only the selected country's stories about this code.
   const [filterAbout, setFilterAbout] = useState<string | null>(null);
-  // A shared story picked on the landing card; only its arcs are drawn.
+  // A shared story opened from the landing card or an article badge. It
+  // takes over the panel and only its arcs are drawn.
   const [focusStoryId, setFocusStoryId] = useState<string | null>(null);
+  // Country to return to when the story panel closes.
+  const [storyFrom, setStoryFrom] = useState<string | null>(null);
   // Country files already fetched, keyed by code. Null marks "no file".
   const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
@@ -129,12 +134,16 @@ export default function App() {
   // Until the pipeline has translated anything, there is nothing to show.
   const hasAttention = !!attention && Object.keys(attention.mentions).length > 0;
 
-  // How many countries share each article's story, by article link.
-  const sharedCounts = useMemo(() => {
-    const m = new Map<string, number>();
-    for (const s of shared?.stories ?? []) for (const a of s.articles) m.set(a.url, s.countries.length);
+  // Which shared story each article belongs to, by article link.
+  const sharedRefs = useMemo(() => {
+    const m = new Map<string, SharedRef>();
+    for (const s of shared?.stories ?? []) for (const a of s.articles) m.set(a.url, { id: s.id, count: s.countries.length });
     return m;
   }, [shared]);
+  const focusedStory = useMemo(
+    () => (focusStoryId ? (shared?.stories.find((s) => s.id === focusStoryId) ?? null) : null),
+    [shared, focusStoryId],
+  );
 
   const countryState: CountryState = useMemo(() => {
     if (!selectedCode) return { status: "loading" };
@@ -154,30 +163,56 @@ export default function App() {
   const select = useCallback((code: string | null, about?: string) => {
     setSelectedCode(code);
     setFilterAbout(about ?? null);
+    setFocusStoryId(null);
+    setStoryFrom(null);
   }, []);
   const close = useCallback(() => {
     setSelectedCode(null);
     setFilterAbout(null);
+    setFocusStoryId(null);
+    setStoryFrom(null);
   }, []);
+  const openStory = useCallback(
+    (id: string | null) => {
+      if (!id) {
+        setFocusStoryId(null);
+        return;
+      }
+      setStoryFrom(selectedCode);
+      setSelectedCode(null);
+      setFilterAbout(null);
+      setFocusStoryId(id);
+    },
+    [selectedCode],
+  );
+  const closeStory = useCallback(() => {
+    setFocusStoryId(null);
+    setSelectedCode(storyFrom);
+    setStoryFrom(null);
+  }, [storyFrom]);
   const changeMode = useCallback((m: AttentionMode) => {
     setAttentionMode(m);
     setFilterAbout(null);
   }, []);
 
-  // Escape deselects, unless a control such as the search list handles it first.
+  // Escape closes the story or the country, unless a control such as the
+  // search list handles it first.
   useEffect(() => {
-    if (!selectedCode) return;
+    if (!selectedCode && !focusStoryId) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && !e.defaultPrevented) close();
+      if (e.key !== "Escape" || e.defaultPrevented) return;
+      if (focusStoryId) closeStory();
+      else close();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [selectedCode, close]);
+  }, [selectedCode, focusStoryId, close, closeStory]);
 
   // How much of the viewport the open panel covers, so the globe can shift
   // its centre into the remaining space.
   const panelWidth = Math.min(PANEL_WIDTH, vp.width * 0.38);
-  const inset = selected
+  const panelOpen = !!selected || !!focusedStory;
+  const inset = panelOpen
     ? vp.isDesktop
       ? { right: panelWidth, bottom: 0 }
       : { right: 0, bottom: vp.height * SHEET_PEEK }
@@ -209,7 +244,7 @@ export default function App() {
         </div>
       </header>
 
-      {!selected && (
+      {!panelOpen && (
         <p className="pointer-events-none absolute inset-x-0 bottom-5 text-center text-xs text-muted sm:bottom-6">
           Drag to turn the globe, or click a country
         </p>
@@ -217,18 +252,19 @@ export default function App() {
 
       {!selected && shared && vp.isDesktop && (
         <div className="pointer-events-none absolute bottom-6 left-5 z-20 sm:left-7">
-          <WorldStories stories={shared.stories} focusId={focusStoryId} onFocus={setFocusStoryId} nameOf={nameOf} />
+          <WorldStories stories={shared.stories} focusId={focusStoryId} onFocus={openStory} nameOf={nameOf} />
         </div>
       )}
 
       {vp.isDesktop ? (
         <aside
-          aria-label="Country"
-          aria-hidden={!selected}
-          inert={!selected}
+          aria-label={focusedStory ? "Story" : "Country"}
+          aria-hidden={!panelOpen}
+          inert={!panelOpen}
           className="absolute inset-y-0 right-0 z-30 flex w-[min(440px,38vw)] flex-col border-l border-line bg-paper transition-transform duration-300 ease-out"
-          style={{ transform: selected ? "translateX(0)" : "translateX(100%)" }}
+          style={{ transform: panelOpen ? "translateX(0)" : "translateX(100%)" }}
         >
+          {focusedStory && <StoryPanel story={focusedStory} nameOf={nameOf} onClose={closeStory} onSelectCountry={select} />}
           {selected && (
             <CountryPanel
               country={selected}
@@ -239,12 +275,14 @@ export default function App() {
               onSelect={select}
               filterAbout={filterAbout}
               onFilter={setFilterAbout}
-              sharedCounts={sharedCounts}
+              shared={sharedRefs}
+              onStory={openStory}
             />
           )}
         </aside>
       ) : (
-        <BottomSheet open={!!selected} onClose={close} peek={SHEET_PEEK}>
+        <BottomSheet open={panelOpen} onClose={focusedStory ? closeStory : close} peek={SHEET_PEEK}>
+          {focusedStory && <StoryPanel story={focusedStory} nameOf={nameOf} onClose={closeStory} onSelectCountry={select} />}
           {selected && (
             <CountryPanel
               country={selected}
@@ -255,7 +293,8 @@ export default function App() {
               onSelect={select}
               filterAbout={filterAbout}
               onFilter={setFilterAbout}
-              sharedCounts={sharedCounts}
+              shared={sharedRefs}
+              onStory={openStory}
             />
           )}
         </BottomSheet>
