@@ -30,6 +30,7 @@ import { addDay, buildSnapshot, dayOf, readBaselines, type HistoryIndex } from "
 import { buildResolver, fetchAlerts } from "./lib/alerts";
 import { detectCrises, inboundEditions, loadCrisisTerms, type CrisesFile } from "./lib/crises";
 import { refreshHelp, type HelpFile } from "./lib/help";
+import { refreshNeeds, type NeedsFile } from "./lib/needs";
 import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle } from "./lib/translate";
 
 /** Most model calls one run may make; a guard against runaway cost. */
@@ -219,6 +220,14 @@ async function main() {
   const help = await refreshHelp(previousHelp, resolver, now, deps);
   writeJson(helpPath, help);
   log(`Help: ${Object.keys(help.societies).length} societies, ${help.appeals.length} appeals, ${Object.keys(help.events).length} emergencies, ${help.plans.length} plans, ${Object.keys(help.uncr).length} UN donation pages`);
+
+  // 8. Long-term needs: water, sanitation, electricity, hunger, poverty,
+  // schooling, literacy and child mortality from the World Bank's open data.
+  const needsPath = `${args.outDir}/needs.json`;
+  const previousNeeds: NeedsFile | null = fs.existsSync(needsPath) ? (JSON.parse(fs.readFileSync(needsPath, "utf8")) as NeedsFile) : null;
+  const needs = await refreshNeeds(previousNeeds, resolver, now, deps);
+  writeJson(needsPath, needs);
+  log(`Needs: ${Object.keys(needs.countries).length} countries with a listed need, ${Object.values(needs.fetched).filter(Boolean).length} of 8 indicators fetched`);
 }
 
 main().catch((err) => {

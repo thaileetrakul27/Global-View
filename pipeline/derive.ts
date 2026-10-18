@@ -12,6 +12,7 @@ import { addDay, buildSnapshot, dayOf, readBaselines, type HistoryIndex } from "
 import { loadCountryConfig, loadGlobeFeatures } from "./lib/countries";
 import { detectCrises, inboundEditions, loadCrisisTerms, type CrisesFile } from "./lib/crises";
 import { buildHelp, refreshHelp, type HelpFile } from "./lib/help";
+import { buildNeeds, refreshNeeds, type NeedsFile } from "./lib/needs";
 import { sleep } from "./lib/io";
 import { writeJson } from "./lib/io";
 import type { CountryFile, IndexFile } from "./lib/publish";
@@ -71,6 +72,11 @@ async function main() {
   console.log(
     `Wrote help.json: ${Object.keys(help.societies).length} societies, ${help.appeals.length} appeals, ${Object.keys(help.events).length} emergencies, ${help.plans.length} plans, ${Object.keys(help.uncr).length} UN donation pages`,
   );
+  const needsPath = `${outDir}/needs.json`;
+  const previousNeeds: NeedsFile | null = fs.existsSync(needsPath) ? (JSON.parse(fs.readFileSync(needsPath, "utf8")) as NeedsFile) : null;
+  const needs = refresh ? await refreshNeeds(previousNeeds, resolver, now, deps) : buildNeeds(previousNeeds, {}, now);
+  writeJson(needsPath, needs);
+  console.log(`Wrote needs.json: ${Object.keys(needs.countries).length} countries with a listed need`);
 }
 
 main().catch((err) => {

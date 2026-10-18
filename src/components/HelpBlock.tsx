@@ -1,7 +1,9 @@
 import { alertDate, alertLabel } from "@/lib/alerts";
 import type { Lead } from "@/lib/crisis";
+import type { CountryNeed } from "@/lib/data";
 import { donationLinks, type Need } from "@/lib/help";
 import { count, money, percent } from "@/lib/money";
+import { needPages, needSentence, needSource } from "@/lib/needs";
 
 interface Props {
   name: string;
@@ -9,6 +11,8 @@ interface Props {
   need: Need;
   /** The biggest thing happening, or null when nothing names the country. */
   lead: Lead | null;
+  /** Long-term needs from the latest UN figures, most severe first. */
+  needs: CountryNeed[];
 }
 
 const link = "font-medium text-ink underline decoration-line underline-offset-2 hover:decoration-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent";
@@ -17,11 +21,14 @@ const heading = "mt-3 text-[11px] font-medium uppercase tracking-wide text-muted
 const dot = (severity: string | null) => (severity === "Red" ? "bg-red-700" : severity === "Orange" ? "bg-amber-500" : "bg-line");
 
 // Every country's "How to help": the biggest crisis right now in the
-// source's own words, the official donation pages for it, and anything
-// else that names the country. Countries nothing names still get their
-// donation pages, with a line saying no crisis is recorded.
-export default function HelpBlock({ name, iso3, need, lead }: Props) {
+// source's own words, the long-term needs the UN's figures show, the
+// official donation pages for them, and anything else that names the
+// country. Countries with none of these still get their donation pages,
+// with a line saying so.
+export default function HelpBlock({ name, iso3, need, lead, needs }: Props) {
   const donations = donationLinks(need.society, need.uncr, name);
+  const agencies = needPages(needs);
+  const sev = (s: number) => (s >= 1 ? "bg-red-700" : s >= 0.5 ? "bg-amber-500" : "bg-line");
   const funded = (f: number, r: number) => (r > 0 && f >= r ? "fully funded" : `${percent(f, r)}% funded`);
   // Everything else, minus the item shown as the lead.
   const otherAlerts = need.alerts.filter((a) => !(lead?.kind === "alert" && lead.url === a.url));
@@ -29,7 +36,7 @@ export default function HelpBlock({ name, iso3, need, lead }: Props) {
   const otherPlans = need.plans.filter((p) => !(lead?.kind === "plan" && lead.url === p.url));
   const others = otherAlerts.length + otherAppeals.length + otherPlans.length;
   return (
-    <section aria-label="How to help" className={`mt-3 rounded-lg border bg-card p-4 ${lead ? "border-accent/40" : "border-line"}`}>
+    <section aria-label="How to help" className={`mt-3 rounded-lg border bg-card p-4 ${lead || needs.length ? "border-accent/40" : "border-line"}`}>
       <h3 className="text-xs font-medium uppercase tracking-wide text-accent">How to help</h3>
 
       {lead ? (
@@ -64,13 +71,31 @@ export default function HelpBlock({ name, iso3, need, lead }: Props) {
         </div>
       ) : (
         <p className="mt-1.5 text-sm leading-snug text-ink">
-          No disaster alert, Red Cross appeal or UN response plan names {name} right now. These pages take donations at any time.
+          No disaster alert, Red Cross appeal or UN response plan names {name} right now.
+          {needs.length ? " The latest UN figures do show long-term needs." : " These pages take donations at any time."}
         </p>
+      )}
+
+      {needs.length > 0 && (
+        <>
+          <p className={heading}>Long-term needs</p>
+          <ul className="mt-1 flex flex-col gap-1.5">
+            {needs.map((n) => (
+              <li key={n.key} className="flex items-start gap-2 text-sm leading-snug">
+                <span aria-hidden="true" className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${sev(n.severity)}`} />
+                <span>
+                  <span className="text-ink">{needSentence(n)}</span>
+                  <span className="block text-xs text-muted">{needSource(n)}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </>
       )}
 
       <p className={heading}>Official donation pages</p>
       <ul className="mt-1 flex flex-col gap-2">
-        {donations.map((l) => (
+        {[...donations, ...agencies].map((l) => (
           <li key={l.url}>
             <a href={l.url} target="_blank" rel="noopener noreferrer" className={give}>
               {l.label}
@@ -135,8 +160,8 @@ export default function HelpBlock({ name, iso3, need, lead }: Props) {
       )}
 
       <p className="mt-3 text-[11px] leading-snug text-muted">
-        Crises and donation pages come from IFRC, UN OCHA, UN Crisis Relief and GDACS, found by fixed rules; Global View chooses no charities and takes no
-        donations.
+        Crises come from IFRC, UN OCHA and GDACS, long-term needs from UN figures via the World Bank, and donation pages from a fixed list of UN and Red
+        Cross pages. Global View chooses no charities and takes no donations.
       </p>
     </section>
   );

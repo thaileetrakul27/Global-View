@@ -55,6 +55,7 @@ Each feed gets one retry. A country that fails twice keeps its previous file and
 | `public/data/history/` | One small snapshot per day plus an index, for the time machine |
 | `public/data/crises.json` | Current GDACS disaster alerts, the countries the world has turned to, and emergencies nobody is watching |
 | `public/data/help.json` | Each country's Red Cross or Red Crescent society and donation pages, active IFRC appeals and the emergencies behind them, UN response plans with funding |
+| `public/data/needs.json` | Per country, its long-term needs from UN figures via the World Bank: water, sanitation, electricity, hunger, poverty, schooling, literacy, child mortality |
 | `cache/headlines.json` | Translation cache, committed so runs on GitHub Actions share it |
 
 ## Shared stories across runs
@@ -90,6 +91,10 @@ Daily snapshots record each country's inbound edition count so the baseline buil
 - **donation pages**: each society's `donate` is its page on the Red Cross Red Crescent donation platform IFRC hosts (`donate.redcrossredcrescent.org/<cc>/default/`), found by probing that fixed URL: it redirects into the country's own path when the society is on the platform and to the front page when it is not. The platform rate-limits after about fifty requests, so each run asks about forty societies (never-checked first, then the longest ago), stops at the first 429 and keeps earlier answers; `checked` records when each was last asked. `uncr` maps countries to UN Crisis Relief's per-crisis donation pages, read from its sitemap (`donate-<country>-crisis` slugs).
 
 The site picks each country's "biggest crisis right now" from these by a fixed score (graded severity first, then the size of the response) and shows the donation pages beside it. Each source that fails keeps the previous run's data for that source; `sources` records when each was last fetched.
+
+## Long-term needs
+
+`public/data/needs.json` comes from the World Bank's open data API, which republishes UN agencies' figures: WHO/UNICEF on basic drinking water and sanitation, FAO on undernourishment, UNESCO on children out of primary school and adult literacy, the UN inter-agency group on under-five mortality, and the Bank's own extreme poverty and electricity access series. One request per indicator, latest non-empty value per country. Coverage figures are turned into gaps (people without), figures older than 15 years are dropped, and each need gets a severity of its value over a fixed "severe" level (for example 25% without water, 20% undernourished, 60 deaths per 1,000). A country keeps its four most severe needs at severity 0.3 or more. A failed indicator keeps the previous run's figures. The site shows the needs under the biggest crisis and adds a fixed list of UN agency donation pages by kind of need (UNICEF, World Food Programme, Education Cannot Wait, WHO Foundation).
 
 ## Tests
 

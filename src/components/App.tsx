@@ -9,6 +9,7 @@ import {
   loadCrises,
   loadHelp,
   loadHistoryIndex,
+  loadNeeds,
   loadIndex,
   loadShared,
   loadSnapshot,
@@ -18,12 +19,14 @@ import {
   type CrisesFile,
   type HelpFile,
   type IndexFile,
+  type NeedsFile,
   type SharedFile,
   type Snapshot,
   type SnapshotStory,
 } from "@/lib/data";
 import { leadCrisis } from "@/lib/crisis";
 import { needFor } from "@/lib/help";
+import { needsFor } from "@/lib/needs";
 import { displayName } from "@/lib/names";
 import { inbound, mostWatched, outbound, tintMap } from "@/lib/attention";
 import { readUrlState, writeUrlState } from "@/lib/urlState";
@@ -70,6 +73,7 @@ export default function App() {
   const [abouts, setAbouts] = useState<Record<string, AboutFile | null>>({});
   const [crises, setCrises] = useState<CrisesFile | null>(null);
   const [help, setHelp] = useState<HelpFile | null>(null);
+  const [needs, setNeeds] = useState<NeedsFile | null>(null);
   // Country files already fetched, keyed by code. Null marks "no file".
   const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
@@ -104,6 +108,7 @@ export default function App() {
     loadAttention().then(setAttention).catch(console.error);
     loadCrises().then(setCrises).catch(console.error);
     loadHelp().then(setHelp).catch(console.error);
+    loadNeeds().then(setNeeds).catch(console.error);
     loadHistoryIndex()
       .then((h) => {
         const dates = h?.dates ?? [];
@@ -490,6 +495,7 @@ export default function App() {
               name={nameOf(selected.properties.code)}
               need={selectedNeed}
               lead={selectedLead}
+              needs={selectedCode ? needsFor(needs, selectedCode) : []}
               about={{
                 articles: !hasInbound
                   ? []
@@ -528,6 +534,7 @@ export default function App() {
               name={nameOf(selected.properties.code)}
               need={selectedNeed}
               lead={selectedLead}
+              needs={selectedCode ? needsFor(needs, selectedCode) : []}
               about={{
                 articles: !hasInbound
                   ? []

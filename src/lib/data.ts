@@ -251,6 +251,22 @@ export interface HelpFile {
   uncr: Record<string, string>;
 }
 
+/** A long-term need from the World Bank's open data: a percentage, or deaths per 1,000 for child mortality. */
+export interface CountryNeed {
+  key: string;
+  value: number;
+  year: number;
+  severity: number;
+}
+
+export interface NeedsFile {
+  updated: string;
+  fetched: Record<string, string | null>;
+  countries: Record<string, CountryNeed[]>;
+}
+
+export const loadNeeds = () => loadOptional<NeedsFile>("/data/needs.json");
+
 /** Files written before emergencies and UN pages existed lack those maps. */
 export const loadHelp = async (): Promise<HelpFile | null> => {
   const h = await loadOptional<HelpFile>("/data/help.json");

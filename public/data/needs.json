@@ -1,0 +1,2233 @@
+{
+  "updated": "2026-10-18T20:03:41.018Z",
+  "fetched": {
+    "water": "2026-10-18T20:01:29.347Z",
+    "sanitation": "2026-10-18T20:01:29.347Z",
+    "electricity": "2026-10-18T20:01:29.347Z",
+    "hunger": "2026-10-18T20:01:29.347Z",
+    "poverty": "2026-10-18T20:01:29.347Z",
+    "school": "2026-10-18T20:01:29.347Z",
+    "literacy": "2026-10-18T20:01:29.347Z",
+    "mortality": "2026-10-18T20:01:29.347Z"
+  },
+  "countries": {
+    "AF": [
+      {
+        "key": "literacy",
+        "value": 62.7,
+        "year": 2021,
+        "severity": 2
+      },
+      {
+        "key": "hunger",
+        "value": 27.8,
+        "year": 2024,
+        "severity": 1.39
+      },
+      {
+        "key": "sanitation",
+        "value": 45.5,
+        "year": 2024,
+        "severity": 0.91
+      },
+      {
+        "key": "mortality",
+        "value": 53,
+        "year": 2024,
+        "severity": 0.88
+      }
+    ],
+    "AO": [
+      {
+        "key": "school",
+        "value": 36.8,
+        "year": 2023,
+        "severity": 1.84
+      },
+      {
+        "key": "poverty",
+        "value": 39.3,
+        "year": 2018,
+        "severity": 1.57
+      },
+      {
+        "key": "water",
+        "value": 32,
+        "year": 2024,
+        "severity": 1.28
+      },
+      {
+        "key": "literacy",
+        "value": 31.8,
+        "year": 2023,
+        "severity": 1.06
+      }
+    ],
+    "AZ": [
+      {
+        "key": "mortality",
+        "value": 17.9,
+        "year": 2024,
+        "severity": 0.3
+      }
+    ],
+    "BD": [
+      {
+        "key": "literacy",
+        "value": 21,
+        "year": 2022,
+        "severity": 0.7
+      },
+      {
+        "key": "sanitation",
+        "value": 32.4,
+        "year": 2024,
+        "severity": 0.65
+      },
+      {
+        "key": "mortality",
+        "value": 30.5,
+        "year": 2024,
+        "severity": 0.51
+      },
+      {
+        "key": "hunger",
+        "value": 8.2,
+        "year": 2024,
+        "severity": 0.41
+      }
+    ],
+    "BF": [
+      {
+        "key": "water",
+        "value": 50,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "literacy",
+        "value": 58.4,
+        "year": 2023,
+        "severity": 1.95
+      },
+      {
+        "key": "school",
+        "value": 34.3,
+        "year": 2024,
+        "severity": 1.72
+      },
+      {
+        "key": "poverty",
+        "value": 42.1,
+        "year": 2021,
+        "severity": 1.68
+      }
+    ],
+    "BG": [
+      {
+        "key": "school",
+        "value": 5.9,
+        "year": 2024,
+        "severity": 0.3
+      }
+    ],
+    "BI": [
+      {
+        "key": "poverty",
+        "value": 74.2,
+        "year": 2020,
+        "severity": 2
+      },
+      {
+        "key": "electricity",
+        "value": 79.9,
+        "year": 2024,
+        "severity": 1.6
+      },
+      {
+        "key": "water",
+        "value": 34.1,
+        "year": 2024,
+        "severity": 1.36
+      },
+      {
+        "key": "school",
+        "value": 26.5,
+        "year": 2025,
+        "severity": 1.33
+      }
+    ],
+    "BJ": [
+      {
+        "key": "literacy",
+        "value": 48.6,
+        "year": 2022,
+        "severity": 1.62
+      },
+      {
+        "key": "sanitation",
+        "value": 77.8,
+        "year": 2024,
+        "severity": 1.56
+      },
+      {
+        "key": "mortality",
+        "value": 74.7,
+        "year": 2024,
+        "severity": 1.25
+      },
+      {
+        "key": "water",
+        "value": 30.4,
+        "year": 2024,
+        "severity": 1.22
+      }
+    ],
+    "BO": [
+      {
+        "key": "hunger",
+        "value": 19.5,
+        "year": 2024,
+        "severity": 0.98
+      },
+      {
+        "key": "sanitation",
+        "value": 28.4,
+        "year": 2024,
+        "severity": 0.57
+      },
+      {
+        "key": "school",
+        "value": 9.3,
+        "year": 2024,
+        "severity": 0.47
+      }
+    ],
+    "BS": [
+      {
+        "key": "school",
+        "value": 15.9,
+        "year": 2024,
+        "severity": 0.8
+      }
+    ],
+    "BT": [
+      {
+        "key": "literacy",
+        "value": 35.1,
+        "year": 2022,
+        "severity": 1.17
+      },
+      {
+        "key": "school",
+        "value": 10.5,
+        "year": 2024,
+        "severity": 0.53
+      }
+    ],
+    "BW": [
+      {
+        "key": "hunger",
+        "value": 18.2,
+        "year": 2024,
+        "severity": 0.91
+      },
+      {
+        "key": "poverty",
+        "value": 21.4,
+        "year": 2015,
+        "severity": 0.86
+      },
+      {
+        "key": "sanitation",
+        "value": 27.9,
+        "year": 2024,
+        "severity": 0.56
+      },
+      {
+        "key": "mortality",
+        "value": 33.3,
+        "year": 2024,
+        "severity": 0.55
+      }
+    ],
+    "BZ": [
+      {
+        "key": "school",
+        "value": 10.7,
+        "year": 2024,
+        "severity": 0.53
+      },
+      {
+        "key": "literacy",
+        "value": 12.1,
+        "year": 2022,
+        "severity": 0.4
+      },
+      {
+        "key": "sanitation",
+        "value": 15.7,
+        "year": 2024,
+        "severity": 0.31
+      }
+    ],
+    "CD": [
+      {
+        "key": "poverty",
+        "value": 85.3,
+        "year": 2020,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 64.3,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "hunger",
+        "value": 39.5,
+        "year": 2024,
+        "severity": 1.98
+      },
+      {
+        "key": "sanitation",
+        "value": 83.7,
+        "year": 2024,
+        "severity": 1.67
+      }
+    ],
+    "CF": [
+      {
+        "key": "poverty",
+        "value": 71.6,
+        "year": 2021,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 63.5,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "literacy",
+        "value": 57.6,
+        "year": 2019,
+        "severity": 1.92
+      },
+      {
+        "key": "school",
+        "value": 37.9,
+        "year": 2012,
+        "severity": 1.9
+      }
+    ],
+    "CG": [
+      {
+        "key": "sanitation",
+        "value": 79.4,
+        "year": 2021,
+        "severity": 1.59
+      },
+      {
+        "key": "poverty",
+        "value": 39.2,
+        "year": 2011,
+        "severity": 1.57
+      },
+      {
+        "key": "hunger",
+        "value": 25,
+        "year": 2024,
+        "severity": 1.25
+      },
+      {
+        "key": "water",
+        "value": 26.5,
+        "year": 2021,
+        "severity": 1.06
+      }
+    ],
+    "CI": [
+      {
+        "key": "literacy",
+        "value": 50,
+        "year": 2021,
+        "severity": 1.67
+      },
+      {
+        "key": "sanitation",
+        "value": 59.6,
+        "year": 2024,
+        "severity": 1.19
+      },
+      {
+        "key": "mortality",
+        "value": 64.5,
+        "year": 2024,
+        "severity": 1.08
+      },
+      {
+        "key": "water",
+        "value": 22.8,
+        "year": 2024,
+        "severity": 0.91
+      }
+    ],
+    "CM": [
+      {
+        "key": "water",
+        "value": 28.6,
+        "year": 2024,
+        "severity": 1.14
+      },
+      {
+        "key": "mortality",
+        "value": 64.8,
+        "year": 2024,
+        "severity": 1.08
+      },
+      {
+        "key": "poverty",
+        "value": 26.7,
+        "year": 2021,
+        "severity": 1.07
+      },
+      {
+        "key": "sanitation",
+        "value": 52.9,
+        "year": 2024,
+        "severity": 1.06
+      }
+    ],
+    "CO": [
+      {
+        "key": "school",
+        "value": 7.3,
+        "year": 2022,
+        "severity": 0.37
+      },
+      {
+        "key": "poverty",
+        "value": 8.5,
+        "year": 2024,
+        "severity": 0.34
+      }
+    ],
+    "DJ": [
+      {
+        "key": "poverty",
+        "value": 25.4,
+        "year": 2017,
+        "severity": 1.02
+      },
+      {
+        "key": "mortality",
+        "value": 48.9,
+        "year": 2024,
+        "severity": 0.82
+      },
+      {
+        "key": "water",
+        "value": 20.3,
+        "year": 2024,
+        "severity": 0.81
+      },
+      {
+        "key": "hunger",
+        "value": 14.7,
+        "year": 2024,
+        "severity": 0.74
+      }
+    ],
+    "DO": [
+      {
+        "key": "mortality",
+        "value": 30.6,
+        "year": 2024,
+        "severity": 0.51
+      }
+    ],
+    "DZ": [
+      {
+        "key": "mortality",
+        "value": 21.6,
+        "year": 2024,
+        "severity": 0.36
+      },
+      {
+        "key": "water",
+        "value": 7.6,
+        "year": 2024,
+        "severity": 0.3
+      }
+    ],
+    "EC": [
+      {
+        "key": "hunger",
+        "value": 10.8,
+        "year": 2024,
+        "severity": 0.54
+      },
+      {
+        "key": "water",
+        "value": 7.9,
+        "year": 2024,
+        "severity": 0.32
+      }
+    ],
+    "EG": [
+      {
+        "key": "literacy",
+        "value": 20.5,
+        "year": 2022,
+        "severity": 0.68
+      },
+      {
+        "key": "hunger",
+        "value": 8.4,
+        "year": 2024,
+        "severity": 0.42
+      },
+      {
+        "key": "mortality",
+        "value": 22.4,
+        "year": 2024,
+        "severity": 0.37
+      }
+    ],
+    "ER": [
+      {
+        "key": "school",
+        "value": 40.4,
+        "year": 2022,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 48.2,
+        "year": 2016,
+        "severity": 1.93
+      },
+      {
+        "key": "sanitation",
+        "value": 88.1,
+        "year": 2016,
+        "severity": 1.76
+      },
+      {
+        "key": "electricity",
+        "value": 44.7,
+        "year": 2024,
+        "severity": 0.89
+      }
+    ],
+    "ET": [
+      {
+        "key": "sanitation",
+        "value": 89.6,
+        "year": 2024,
+        "severity": 1.79
+      },
+      {
+        "key": "water",
+        "value": 44.4,
+        "year": 2024,
+        "severity": 1.78
+      },
+      {
+        "key": "poverty",
+        "value": 38.6,
+        "year": 2021,
+        "severity": 1.54
+      },
+      {
+        "key": "literacy",
+        "value": 39.5,
+        "year": 2022,
+        "severity": 1.32
+      }
+    ],
+    "FJ": [
+      {
+        "key": "mortality",
+        "value": 29.1,
+        "year": 2024,
+        "severity": 0.49
+      },
+      {
+        "key": "hunger",
+        "value": 7.2,
+        "year": 2024,
+        "severity": 0.36
+      }
+    ],
+    "GA": [
+      {
+        "key": "school",
+        "value": 28.8,
+        "year": 2019,
+        "severity": 1.44
+      },
+      {
+        "key": "hunger",
+        "value": 23.3,
+        "year": 2024,
+        "severity": 1.17
+      },
+      {
+        "key": "sanitation",
+        "value": 42.6,
+        "year": 2024,
+        "severity": 0.85
+      },
+      {
+        "key": "mortality",
+        "value": 32.6,
+        "year": 2024,
+        "severity": 0.54
+      }
+    ],
+    "GE": [
+      {
+        "key": "school",
+        "value": 6.2,
+        "year": 2024,
+        "severity": 0.31
+      }
+    ],
+    "GH": [
+      {
+        "key": "poverty",
+        "value": 39,
+        "year": 2016,
+        "severity": 1.56
+      },
+      {
+        "key": "sanitation",
+        "value": 68.4,
+        "year": 2024,
+        "severity": 1.37
+      },
+      {
+        "key": "literacy",
+        "value": 23.5,
+        "year": 2021,
+        "severity": 0.78
+      },
+      {
+        "key": "mortality",
+        "value": 35.9,
+        "year": 2024,
+        "severity": 0.6
+      }
+    ],
+    "GL": [
+      {
+        "key": "sanitation",
+        "value": 37.5,
+        "year": 2022,
+        "severity": 0.75
+      }
+    ],
+    "GM": [
+      {
+        "key": "literacy",
+        "value": 48.4,
+        "year": 2021,
+        "severity": 1.61
+      },
+      {
+        "key": "sanitation",
+        "value": 51.8,
+        "year": 2024,
+        "severity": 1.04
+      },
+      {
+        "key": "hunger",
+        "value": 17.5,
+        "year": 2024,
+        "severity": 0.88
+      },
+      {
+        "key": "poverty",
+        "value": 22,
+        "year": 2020,
+        "severity": 0.88
+      }
+    ],
+    "GN": [
+      {
+        "key": "literacy",
+        "value": 60.4,
+        "year": 2018,
+        "severity": 2
+      },
+      {
+        "key": "mortality",
+        "value": 92.1,
+        "year": 2024,
+        "severity": 1.54
+      },
+      {
+        "key": "sanitation",
+        "value": 67.4,
+        "year": 2024,
+        "severity": 1.35
+      },
+      {
+        "key": "water",
+        "value": 25.8,
+        "year": 2024,
+        "severity": 1.03
+      }
+    ],
+    "GQ": [
+      {
+        "key": "school",
+        "value": 65.6,
+        "year": 2015,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 35.3,
+        "year": 2017,
+        "severity": 1.41
+      },
+      {
+        "key": "mortality",
+        "value": 68,
+        "year": 2024,
+        "severity": 1.13
+      },
+      {
+        "key": "electricity",
+        "value": 34.9,
+        "year": 2024,
+        "severity": 0.7
+      }
+    ],
+    "GT": [
+      {
+        "key": "hunger",
+        "value": 12.7,
+        "year": 2024,
+        "severity": 0.64
+      },
+      {
+        "key": "literacy",
+        "value": 17.9,
+        "year": 2024,
+        "severity": 0.6
+      },
+      {
+        "key": "sanitation",
+        "value": 28.8,
+        "year": 2024,
+        "severity": 0.58
+      },
+      {
+        "key": "school",
+        "value": 8.4,
+        "year": 2024,
+        "severity": 0.42
+      }
+    ],
+    "GW": [
+      {
+        "key": "poverty",
+        "value": 39.9,
+        "year": 2021,
+        "severity": 1.6
+      },
+      {
+        "key": "water",
+        "value": 38.2,
+        "year": 2024,
+        "severity": 1.53
+      },
+      {
+        "key": "sanitation",
+        "value": 71.1,
+        "year": 2024,
+        "severity": 1.42
+      },
+      {
+        "key": "literacy",
+        "value": 36.1,
+        "year": 2022,
+        "severity": 1.2
+      }
+    ],
+    "GY": [
+      {
+        "key": "school",
+        "value": 18,
+        "year": 2023,
+        "severity": 0.9
+      },
+      {
+        "key": "literacy",
+        "value": 14.4,
+        "year": 2020,
+        "severity": 0.48
+      },
+      {
+        "key": "mortality",
+        "value": 25.2,
+        "year": 2024,
+        "severity": 0.42
+      }
+    ],
+    "HN": [
+      {
+        "key": "school",
+        "value": 26.6,
+        "year": 2024,
+        "severity": 1.33
+      },
+      {
+        "key": "hunger",
+        "value": 14.3,
+        "year": 2024,
+        "severity": 0.72
+      },
+      {
+        "key": "poverty",
+        "value": 15.7,
+        "year": 2024,
+        "severity": 0.63
+      },
+      {
+        "key": "literacy",
+        "value": 11.8,
+        "year": 2024,
+        "severity": 0.39
+      }
+    ],
+    "HT": [
+      {
+        "key": "hunger",
+        "value": 51.4,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "poverty",
+        "value": 40.4,
+        "year": 2012,
+        "severity": 1.62
+      },
+      {
+        "key": "sanitation",
+        "value": 70.9,
+        "year": 2024,
+        "severity": 1.42
+      },
+      {
+        "key": "literacy",
+        "value": 32,
+        "year": 2017,
+        "severity": 1.07
+      }
+    ],
+    "ID": [
+      {
+        "key": "water",
+        "value": 11,
+        "year": 2024,
+        "severity": 0.44
+      },
+      {
+        "key": "hunger",
+        "value": 6.3,
+        "year": 2024,
+        "severity": 0.32
+      },
+      {
+        "key": "mortality",
+        "value": 17.7,
+        "year": 2024,
+        "severity": 0.3
+      }
+    ],
+    "IN": [
+      {
+        "key": "literacy",
+        "value": 21.8,
+        "year": 2024,
+        "severity": 0.73
+      },
+      {
+        "key": "hunger",
+        "value": 9.8,
+        "year": 2024,
+        "severity": 0.49
+      },
+      {
+        "key": "mortality",
+        "value": 26.6,
+        "year": 2024,
+        "severity": 0.44
+      },
+      {
+        "key": "sanitation",
+        "value": 16.6,
+        "year": 2024,
+        "severity": 0.33
+      }
+    ],
+    "IQ": [
+      {
+        "key": "hunger",
+        "value": 13.4,
+        "year": 2024,
+        "severity": 0.67
+      },
+      {
+        "key": "literacy",
+        "value": 15.9,
+        "year": 2021,
+        "severity": 0.53
+      },
+      {
+        "key": "mortality",
+        "value": 21.8,
+        "year": 2024,
+        "severity": 0.36
+      }
+    ],
+    "IR": [
+      {
+        "key": "literacy",
+        "value": 11.1,
+        "year": 2023,
+        "severity": 0.37
+      },
+      {
+        "key": "hunger",
+        "value": 6.7,
+        "year": 2024,
+        "severity": 0.34
+      }
+    ],
+    "JM": [
+      {
+        "key": "water",
+        "value": 12.4,
+        "year": 2024,
+        "severity": 0.5
+      },
+      {
+        "key": "hunger",
+        "value": 8,
+        "year": 2024,
+        "severity": 0.4
+      },
+      {
+        "key": "mortality",
+        "value": 17.8,
+        "year": 2024,
+        "severity": 0.3
+      }
+    ],
+    "JO": [
+      {
+        "key": "hunger",
+        "value": 12.2,
+        "year": 2024,
+        "severity": 0.61
+      }
+    ],
+    "KE": [
+      {
+        "key": "poverty",
+        "value": 45.5,
+        "year": 2022,
+        "severity": 1.82
+      },
+      {
+        "key": "hunger",
+        "value": 34.9,
+        "year": 2024,
+        "severity": 1.75
+      },
+      {
+        "key": "school",
+        "value": 32.9,
+        "year": 2022,
+        "severity": 1.65
+      },
+      {
+        "key": "water",
+        "value": 34.4,
+        "year": 2024,
+        "severity": 1.38
+      }
+    ],
+    "KH": [
+      {
+        "key": "literacy",
+        "value": 28.1,
+        "year": 2021,
+        "severity": 0.94
+      },
+      {
+        "key": "water",
+        "value": 17.2,
+        "year": 2024,
+        "severity": 0.69
+      },
+      {
+        "key": "sanitation",
+        "value": 16.7,
+        "year": 2024,
+        "severity": 0.33
+      },
+      {
+        "key": "mortality",
+        "value": 18.4,
+        "year": 2024,
+        "severity": 0.31
+      }
+    ],
+    "KP": [
+      {
+        "key": "hunger",
+        "value": 47,
+        "year": 2018,
+        "severity": 2
+      },
+      {
+        "key": "electricity",
+        "value": 38.6,
+        "year": 2024,
+        "severity": 0.77
+      },
+      {
+        "key": "sanitation",
+        "value": 15.2,
+        "year": 2023,
+        "severity": 0.3
+      }
+    ],
+    "KW": [
+      {
+        "key": "school",
+        "value": 7.5,
+        "year": 2016,
+        "severity": 0.38
+      }
+    ],
+    "KZ": [
+      {
+        "key": "school",
+        "value": 7.9,
+        "year": 2025,
+        "severity": 0.4
+      }
+    ],
+    "LA": [
+      {
+        "key": "literacy",
+        "value": 24.4,
+        "year": 2023,
+        "severity": 0.81
+      },
+      {
+        "key": "school",
+        "value": 10.4,
+        "year": 2025,
+        "severity": 0.52
+      },
+      {
+        "key": "hunger",
+        "value": 10,
+        "year": 2024,
+        "severity": 0.5
+      },
+      {
+        "key": "mortality",
+        "value": 29.4,
+        "year": 2024,
+        "severity": 0.49
+      }
+    ],
+    "LB": [
+      {
+        "key": "school",
+        "value": 22.5,
+        "year": 2024,
+        "severity": 1.13
+      },
+      {
+        "key": "hunger",
+        "value": 11.1,
+        "year": 2024,
+        "severity": 0.55
+      },
+      {
+        "key": "water",
+        "value": 7.4,
+        "year": 2024,
+        "severity": 0.3
+      }
+    ],
+    "LK": [
+      {
+        "key": "school",
+        "value": 9.1,
+        "year": 2023,
+        "severity": 0.45
+      },
+      {
+        "key": "water",
+        "value": 9.8,
+        "year": 2024,
+        "severity": 0.39
+      }
+    ],
+    "LR": [
+      {
+        "key": "school",
+        "value": 38.3,
+        "year": 2022,
+        "severity": 1.91
+      },
+      {
+        "key": "hunger",
+        "value": 37.3,
+        "year": 2024,
+        "severity": 1.86
+      },
+      {
+        "key": "sanitation",
+        "value": 76.7,
+        "year": 2024,
+        "severity": 1.53
+      },
+      {
+        "key": "mortality",
+        "value": 86.4,
+        "year": 2024,
+        "severity": 1.44
+      }
+    ],
+    "LS": [
+      {
+        "key": "poverty",
+        "value": 41.9,
+        "year": 2017,
+        "severity": 1.68
+      },
+      {
+        "key": "school",
+        "value": 32.2,
+        "year": 2024,
+        "severity": 1.61
+      },
+      {
+        "key": "sanitation",
+        "value": 52.1,
+        "year": 2024,
+        "severity": 1.04
+      },
+      {
+        "key": "mortality",
+        "value": 60,
+        "year": 2024,
+        "severity": 1
+      }
+    ],
+    "LY": [
+      {
+        "key": "hunger",
+        "value": 18.7,
+        "year": 2024,
+        "severity": 0.94
+      },
+      {
+        "key": "electricity",
+        "value": 22.6,
+        "year": 2024,
+        "severity": 0.45
+      }
+    ],
+    "MA": [
+      {
+        "key": "literacy",
+        "value": 35.7,
+        "year": 2014,
+        "severity": 1.19
+      },
+      {
+        "key": "hunger",
+        "value": 6.5,
+        "year": 2024,
+        "severity": 0.33
+      },
+      {
+        "key": "water",
+        "value": 7.8,
+        "year": 2024,
+        "severity": 0.31
+      }
+    ],
+    "MG": [
+      {
+        "key": "hunger",
+        "value": 41.8,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "poverty",
+        "value": 69.2,
+        "year": 2021,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 44.7,
+        "year": 2024,
+        "severity": 1.79
+      },
+      {
+        "key": "sanitation",
+        "value": 84.6,
+        "year": 2024,
+        "severity": 1.69
+      }
+    ],
+    "ML": [
+      {
+        "key": "literacy",
+        "value": 64.4,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "school",
+        "value": 34,
+        "year": 2023,
+        "severity": 1.7
+      },
+      {
+        "key": "poverty",
+        "value": 36.1,
+        "year": 2021,
+        "severity": 1.44
+      },
+      {
+        "key": "mortality",
+        "value": 73,
+        "year": 2024,
+        "severity": 1.22
+      }
+    ],
+    "MM": [
+      {
+        "key": "mortality",
+        "value": 36.9,
+        "year": 2024,
+        "severity": 0.62
+      },
+      {
+        "key": "water",
+        "value": 14.3,
+        "year": 2024,
+        "severity": 0.57
+      },
+      {
+        "key": "sanitation",
+        "value": 25.8,
+        "year": 2024,
+        "severity": 0.52
+      },
+      {
+        "key": "poverty",
+        "value": 10.3,
+        "year": 2017,
+        "severity": 0.41
+      }
+    ],
+    "MN": [
+      {
+        "key": "water",
+        "value": 13.9,
+        "year": 2024,
+        "severity": 0.56
+      },
+      {
+        "key": "sanitation",
+        "value": 25.7,
+        "year": 2024,
+        "severity": 0.51
+      },
+      {
+        "key": "school",
+        "value": 8.6,
+        "year": 2024,
+        "severity": 0.43
+      }
+    ],
+    "MR": [
+      {
+        "key": "literacy",
+        "value": 40.5,
+        "year": 2020,
+        "severity": 1.35
+      },
+      {
+        "key": "electricity",
+        "value": 47.8,
+        "year": 2024,
+        "severity": 0.96
+      },
+      {
+        "key": "water",
+        "value": 22.7,
+        "year": 2024,
+        "severity": 0.91
+      },
+      {
+        "key": "sanitation",
+        "value": 41.3,
+        "year": 2024,
+        "severity": 0.83
+      }
+    ],
+    "MW": [
+      {
+        "key": "poverty",
+        "value": 75.4,
+        "year": 2019,
+        "severity": 2
+      },
+      {
+        "key": "electricity",
+        "value": 84.4,
+        "year": 2024,
+        "severity": 1.69
+      },
+      {
+        "key": "hunger",
+        "value": 24.5,
+        "year": 2024,
+        "severity": 1.23
+      },
+      {
+        "key": "water",
+        "value": 26.9,
+        "year": 2024,
+        "severity": 1.08
+      }
+    ],
+    "MY": [
+      {
+        "key": "school",
+        "value": 12,
+        "year": 2024,
+        "severity": 0.6
+      }
+    ],
+    "MZ": [
+      {
+        "key": "poverty",
+        "value": 81.4,
+        "year": 2022,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 33.4,
+        "year": 2024,
+        "severity": 1.34
+      },
+      {
+        "key": "literacy",
+        "value": 38.3,
+        "year": 2022,
+        "severity": 1.28
+      },
+      {
+        "key": "electricity",
+        "value": 63.1,
+        "year": 2024,
+        "severity": 1.26
+      }
+    ],
+    "NA": [
+      {
+        "key": "sanitation",
+        "value": 61.3,
+        "year": 2024,
+        "severity": 1.23
+      },
+      {
+        "key": "hunger",
+        "value": 20.1,
+        "year": 2024,
+        "severity": 1.01
+      },
+      {
+        "key": "poverty",
+        "value": 22.9,
+        "year": 2015,
+        "severity": 0.92
+      },
+      {
+        "key": "electricity",
+        "value": 40.7,
+        "year": 2024,
+        "severity": 0.81
+      }
+    ],
+    "NE": [
+      {
+        "key": "literacy",
+        "value": 64.4,
+        "year": 2022,
+        "severity": 2
+      },
+      {
+        "key": "poverty",
+        "value": 60.5,
+        "year": 2021,
+        "severity": 2
+      },
+      {
+        "key": "school",
+        "value": 40.4,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 46.6,
+        "year": 2024,
+        "severity": 1.86
+      }
+    ],
+    "NG": [
+      {
+        "key": "mortality",
+        "value": 115.6,
+        "year": 2024,
+        "severity": 1.93
+      },
+      {
+        "key": "poverty",
+        "value": 41.8,
+        "year": 2022,
+        "severity": 1.67
+      },
+      {
+        "key": "school",
+        "value": 24.3,
+        "year": 2023,
+        "severity": 1.22
+      },
+      {
+        "key": "hunger",
+        "value": 22.2,
+        "year": 2024,
+        "severity": 1.11
+      }
+    ],
+    "NI": [
+      {
+        "key": "hunger",
+        "value": 17.3,
+        "year": 2022,
+        "severity": 0.87
+      },
+      {
+        "key": "literacy",
+        "value": 12.7,
+        "year": 2014,
+        "severity": 0.42
+      },
+      {
+        "key": "school",
+        "value": 6.7,
+        "year": 2023,
+        "severity": 0.34
+      }
+    ],
+    "NP": [
+      {
+        "key": "literacy",
+        "value": 31.3,
+        "year": 2019,
+        "severity": 1.04
+      },
+      {
+        "key": "mortality",
+        "value": 25.1,
+        "year": 2024,
+        "severity": 0.42
+      }
+    ],
+    "OM": [
+      {
+        "key": "hunger",
+        "value": 7.1,
+        "year": 2024,
+        "severity": 0.36
+      }
+    ],
+    "PA": [
+      {
+        "key": "school",
+        "value": 7.7,
+        "year": 2024,
+        "severity": 0.39
+      }
+    ],
+    "PE": [
+      {
+        "key": "sanitation",
+        "value": 21.2,
+        "year": 2024,
+        "severity": 0.42
+      }
+    ],
+    "PG": [
+      {
+        "key": "water",
+        "value": 46.7,
+        "year": 2024,
+        "severity": 1.87
+      },
+      {
+        "key": "hunger",
+        "value": 30.5,
+        "year": 2024,
+        "severity": 1.53
+      },
+      {
+        "key": "sanitation",
+        "value": 76.4,
+        "year": 2024,
+        "severity": 1.53
+      },
+      {
+        "key": "electricity",
+        "value": 56.7,
+        "year": 2024,
+        "severity": 1.13
+      }
+    ],
+    "PH": [
+      {
+        "key": "school",
+        "value": 11.6,
+        "year": 2024,
+        "severity": 0.58
+      },
+      {
+        "key": "mortality",
+        "value": 26.5,
+        "year": 2024,
+        "severity": 0.44
+      }
+    ],
+    "PK": [
+      {
+        "key": "literacy",
+        "value": 41.1,
+        "year": 2021,
+        "severity": 1.37
+      },
+      {
+        "key": "mortality",
+        "value": 56,
+        "year": 2024,
+        "severity": 0.93
+      },
+      {
+        "key": "poverty",
+        "value": 23,
+        "year": 2024,
+        "severity": 0.92
+      },
+      {
+        "key": "school",
+        "value": 17.9,
+        "year": 2024,
+        "severity": 0.89
+      }
+    ],
+    "PL": [
+      {
+        "key": "water",
+        "value": 9.9,
+        "year": 2024,
+        "severity": 0.4
+      }
+    ],
+    "PR": [
+      {
+        "key": "school",
+        "value": 13.3,
+        "year": 2024,
+        "severity": 0.67
+      }
+    ],
+    "PS": [
+      {
+        "key": "mortality",
+        "value": 37.9,
+        "year": 2024,
+        "severity": 0.63
+      },
+      {
+        "key": "school",
+        "value": 9.6,
+        "year": 2023,
+        "severity": 0.48
+      }
+    ],
+    "PY": [
+      {
+        "key": "school",
+        "value": 13.3,
+        "year": 2024,
+        "severity": 0.67
+      }
+    ],
+    "RO": [
+      {
+        "key": "school",
+        "value": 15.6,
+        "year": 2023,
+        "severity": 0.78
+      }
+    ],
+    "RW": [
+      {
+        "key": "poverty",
+        "value": 38.6,
+        "year": 2023,
+        "severity": 1.54
+      },
+      {
+        "key": "water",
+        "value": 38.6,
+        "year": 2024,
+        "severity": 1.54
+      },
+      {
+        "key": "hunger",
+        "value": 22.6,
+        "year": 2024,
+        "severity": 1.13
+      },
+      {
+        "key": "literacy",
+        "value": 21.2,
+        "year": 2022,
+        "severity": 0.71
+      }
+    ],
+    "SB": [
+      {
+        "key": "poverty",
+        "value": 40.3,
+        "year": 2012,
+        "severity": 1.61
+      },
+      {
+        "key": "school",
+        "value": 30.1,
+        "year": 2024,
+        "severity": 1.51
+      },
+      {
+        "key": "hunger",
+        "value": 27,
+        "year": 2024,
+        "severity": 1.35
+      },
+      {
+        "key": "sanitation",
+        "value": 65.4,
+        "year": 2024,
+        "severity": 1.31
+      }
+    ],
+    "SD": [
+      {
+        "key": "school",
+        "value": 43.8,
+        "year": 2019,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 35.1,
+        "year": 2024,
+        "severity": 1.4
+      },
+      {
+        "key": "mortality",
+        "value": 61.6,
+        "year": 2024,
+        "severity": 1.03
+      },
+      {
+        "key": "sanitation",
+        "value": 34.3,
+        "year": 2024,
+        "severity": 0.69
+      }
+    ],
+    "SL": [
+      {
+        "key": "literacy",
+        "value": 56.4,
+        "year": 2019,
+        "severity": 1.88
+      },
+      {
+        "key": "poverty",
+        "value": 41.5,
+        "year": 2018,
+        "severity": 1.66
+      },
+      {
+        "key": "mortality",
+        "value": 90.5,
+        "year": 2024,
+        "severity": 1.51
+      },
+      {
+        "key": "sanitation",
+        "value": 75.1,
+        "year": 2024,
+        "severity": 1.5
+      }
+    ],
+    "SN": [
+      {
+        "key": "literacy",
+        "value": 49.6,
+        "year": 2023,
+        "severity": 1.65
+      },
+      {
+        "key": "school",
+        "value": 24.5,
+        "year": 2024,
+        "severity": 1.23
+      },
+      {
+        "key": "sanitation",
+        "value": 37.5,
+        "year": 2024,
+        "severity": 0.75
+      },
+      {
+        "key": "poverty",
+        "value": 17.9,
+        "year": 2021,
+        "severity": 0.72
+      }
+    ],
+    "SO": [
+      {
+        "key": "hunger",
+        "value": 56.5,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "mortality",
+        "value": 101.1,
+        "year": 2024,
+        "severity": 1.68
+      },
+      {
+        "key": "literacy",
+        "value": 45.9,
+        "year": 2022,
+        "severity": 1.53
+      },
+      {
+        "key": "sanitation",
+        "value": 55.5,
+        "year": 2024,
+        "severity": 1.11
+      }
+    ],
+    "SR": [
+      {
+        "key": "school",
+        "value": 16.2,
+        "year": 2024,
+        "severity": 0.81
+      },
+      {
+        "key": "hunger",
+        "value": 12.7,
+        "year": 2024,
+        "severity": 0.64
+      }
+    ],
+    "SS": [
+      {
+        "key": "poverty",
+        "value": 76.5,
+        "year": 2016,
+        "severity": 2
+      },
+      {
+        "key": "school",
+        "value": 64.7,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 60.3,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "electricity",
+        "value": 94.6,
+        "year": 2024,
+        "severity": 1.89
+      }
+    ],
+    "SV": [
+      {
+        "key": "school",
+        "value": 8.7,
+        "year": 2024,
+        "severity": 0.43
+      },
+      {
+        "key": "literacy",
+        "value": 10.2,
+        "year": 2024,
+        "severity": 0.34
+      },
+      {
+        "key": "water",
+        "value": 8.4,
+        "year": 2024,
+        "severity": 0.34
+      }
+    ],
+    "SY": [
+      {
+        "key": "hunger",
+        "value": 40.8,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "school",
+        "value": 21.8,
+        "year": 2024,
+        "severity": 1.09
+      },
+      {
+        "key": "poverty",
+        "value": 18,
+        "year": 2022,
+        "severity": 0.72
+      },
+      {
+        "key": "mortality",
+        "value": 18.4,
+        "year": 2024,
+        "severity": 0.31
+      }
+    ],
+    "SZ": [
+      {
+        "key": "poverty",
+        "value": 44.5,
+        "year": 2016,
+        "severity": 1.78
+      },
+      {
+        "key": "water",
+        "value": 19.6,
+        "year": 2024,
+        "severity": 0.78
+      },
+      {
+        "key": "hunger",
+        "value": 15.1,
+        "year": 2024,
+        "severity": 0.76
+      },
+      {
+        "key": "mortality",
+        "value": 45.1,
+        "year": 2024,
+        "severity": 0.75
+      }
+    ],
+    "TD": [
+      {
+        "key": "literacy",
+        "value": 69.4,
+        "year": 2019,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 47.8,
+        "year": 2024,
+        "severity": 1.91
+      },
+      {
+        "key": "sanitation",
+        "value": 86.9,
+        "year": 2024,
+        "severity": 1.74
+      },
+      {
+        "key": "electricity",
+        "value": 86.6,
+        "year": 2024,
+        "severity": 1.73
+      }
+    ],
+    "TG": [
+      {
+        "key": "sanitation",
+        "value": 74.8,
+        "year": 2024,
+        "severity": 1.5
+      },
+      {
+        "key": "water",
+        "value": 35.2,
+        "year": 2024,
+        "severity": 1.41
+      },
+      {
+        "key": "poverty",
+        "value": 34.7,
+        "year": 2021,
+        "severity": 1.39
+      },
+      {
+        "key": "mortality",
+        "value": 56.1,
+        "year": 2024,
+        "severity": 0.94
+      }
+    ],
+    "TH": [
+      {
+        "key": "literacy",
+        "value": 8.9,
+        "year": 2022,
+        "severity": 0.3
+      }
+    ],
+    "TJ": [
+      {
+        "key": "mortality",
+        "value": 28.1,
+        "year": 2024,
+        "severity": 0.47
+      },
+      {
+        "key": "water",
+        "value": 10.8,
+        "year": 2024,
+        "severity": 0.43
+      },
+      {
+        "key": "hunger",
+        "value": 8,
+        "year": 2024,
+        "severity": 0.4
+      }
+    ],
+    "TL": [
+      {
+        "key": "poverty",
+        "value": 44,
+        "year": 2014,
+        "severity": 1.76
+      },
+      {
+        "key": "literacy",
+        "value": 30.6,
+        "year": 2022,
+        "severity": 1.02
+      },
+      {
+        "key": "hunger",
+        "value": 16.9,
+        "year": 2024,
+        "severity": 0.85
+      },
+      {
+        "key": "mortality",
+        "value": 47.6,
+        "year": 2024,
+        "severity": 0.79
+      }
+    ],
+    "TM": [
+      {
+        "key": "mortality",
+        "value": 39,
+        "year": 2024,
+        "severity": 0.65
+      }
+    ],
+    "TN": [
+      {
+        "key": "literacy",
+        "value": 13.8,
+        "year": 2023,
+        "severity": 0.46
+      }
+    ],
+    "TT": [
+      {
+        "key": "hunger",
+        "value": 10.4,
+        "year": 2024,
+        "severity": 0.52
+      },
+      {
+        "key": "school",
+        "value": 7.2,
+        "year": 2024,
+        "severity": 0.36
+      },
+      {
+        "key": "mortality",
+        "value": 18.8,
+        "year": 2024,
+        "severity": 0.31
+      }
+    ],
+    "TZ": [
+      {
+        "key": "poverty",
+        "value": 51.3,
+        "year": 2018,
+        "severity": 2
+      },
+      {
+        "key": "water",
+        "value": 35.4,
+        "year": 2024,
+        "severity": 1.42
+      },
+      {
+        "key": "sanitation",
+        "value": 62.8,
+        "year": 2024,
+        "severity": 1.26
+      },
+      {
+        "key": "hunger",
+        "value": 19.1,
+        "year": 2024,
+        "severity": 0.96
+      }
+    ],
+    "UA": [
+      {
+        "key": "school",
+        "value": 12.9,
+        "year": 2024,
+        "severity": 0.65
+      },
+      {
+        "key": "hunger",
+        "value": 10.8,
+        "year": 2024,
+        "severity": 0.54
+      }
+    ],
+    "UG": [
+      {
+        "key": "poverty",
+        "value": 54.4,
+        "year": 2023,
+        "severity": 2
+      },
+      {
+        "key": "sanitation",
+        "value": 76.1,
+        "year": 2024,
+        "severity": 1.52
+      },
+      {
+        "key": "water",
+        "value": 37,
+        "year": 2024,
+        "severity": 1.48
+      },
+      {
+        "key": "hunger",
+        "value": 20.9,
+        "year": 2024,
+        "severity": 1.05
+      }
+    ],
+    "VE": [
+      {
+        "key": "mortality",
+        "value": 24.2,
+        "year": 2024,
+        "severity": 0.4
+      }
+    ],
+    "VN": [
+      {
+        "key": "hunger",
+        "value": 6.1,
+        "year": 2024,
+        "severity": 0.31
+      }
+    ],
+    "VU": [
+      {
+        "key": "sanitation",
+        "value": 52.2,
+        "year": 2024,
+        "severity": 1.04
+      },
+      {
+        "key": "poverty",
+        "value": 19.5,
+        "year": 2019,
+        "severity": 0.78
+      },
+      {
+        "key": "electricity",
+        "value": 34.5,
+        "year": 2024,
+        "severity": 0.69
+      },
+      {
+        "key": "water",
+        "value": 12.9,
+        "year": 2024,
+        "severity": 0.52
+      }
+    ],
+    "YE": [
+      {
+        "key": "school",
+        "value": 30.6,
+        "year": 2016,
+        "severity": 1.53
+      },
+      {
+        "key": "poverty",
+        "value": 33.3,
+        "year": 2014,
+        "severity": 1.33
+      },
+      {
+        "key": "water",
+        "value": 25,
+        "year": 2024,
+        "severity": 1
+      },
+      {
+        "key": "sanitation",
+        "value": 36.9,
+        "year": 2024,
+        "severity": 0.74
+      }
+    ],
+    "ZA": [
+      {
+        "key": "poverty",
+        "value": 17.4,
+        "year": 2022,
+        "severity": 0.7
+      },
+      {
+        "key": "mortality",
+        "value": 35.1,
+        "year": 2024,
+        "severity": 0.59
+      },
+      {
+        "key": "hunger",
+        "value": 11.2,
+        "year": 2024,
+        "severity": 0.56
+      },
+      {
+        "key": "sanitation",
+        "value": 22.6,
+        "year": 2024,
+        "severity": 0.45
+      }
+    ],
+    "ZM": [
+      {
+        "key": "hunger",
+        "value": 41,
+        "year": 2024,
+        "severity": 2
+      },
+      {
+        "key": "poverty",
+        "value": 71.7,
+        "year": 2022,
+        "severity": 2
+      },
+      {
+        "key": "sanitation",
+        "value": 62.5,
+        "year": 2024,
+        "severity": 1.25
+      },
+      {
+        "key": "water",
+        "value": 26.6,
+        "year": 2024,
+        "severity": 1.06
+      }
+    ],
+    "ZW": [
+      {
+        "key": "poverty",
+        "value": 49.2,
+        "year": 2019,
+        "severity": 1.97
+      },
+      {
+        "key": "sanitation",
+        "value": 65.4,
+        "year": 2024,
+        "severity": 1.31
+      },
+      {
+        "key": "water",
+        "value": 32.8,
+        "year": 2024,
+        "severity": 1.31
+      },
+      {
+        "key": "mortality",
+        "value": 64.7,
+        "year": 2024,
+        "severity": 1.08
+      }
+    ]
+  }
+}
