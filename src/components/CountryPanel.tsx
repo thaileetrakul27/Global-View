@@ -2,7 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import type { Mention } from "@/lib/attention";
-import type { Article, CountryFile, SnapshotArticle } from "@/lib/data";
+import type { AboutArticle, Article, CountryFile, SnapshotArticle } from "@/lib/data";
+import AboutList from "./AboutList";
 import type { CountryFeature } from "@/lib/geo";
 import { relativeTime } from "@/lib/time";
 import ArticleList, { type SharedRef } from "./ArticleList";
@@ -40,6 +41,8 @@ interface Props {
   name: string;
   /** Archive view: the day's label and that day's articles (null when none archived). */
   history?: { label: string; articles: SnapshotArticle[] | null } | null;
+  /** Foreign top stories about this country (null while loading) and how many editions exist. */
+  about?: { articles: AboutArticle[] | null; editions: number };
 }
 
 // Contents of the country panel: the name, when the list was refreshed, who
@@ -57,6 +60,7 @@ export default function CountryPanel({
   onStory,
   name,
   history = null,
+  about,
 }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
 
@@ -66,7 +70,6 @@ export default function CountryPanel({
   }, [country]);
 
   const data = state.status === "ready" ? state.data : null;
-  const code = country.properties.code;
   const world = data?.kind === "world";
   const archived: Article[] | null = history?.articles
     ? history.articles.map((a) => ({ ...a, outletUrl: null, published: "" }))
@@ -78,12 +81,9 @@ export default function CountryPanel({
       : data.articles
     : [];
 
-  // "In X's news": a chip narrows this list. "Talking about X": a chip opens
-  // that country, narrowed to its stories about X.
-  const onChip = (chip: string) => {
-    if (attention?.mode === "inbound") onSelect(chip, code);
-    else onFilter(filterAbout === chip ? null : chip);
-  };
+  // "X reads about…": a chip narrows this list to X's stories about that country.
+  const onChip = (chip: string) => onFilter(filterAbout === chip ? null : chip);
+  const inbound = attention?.mode === "inbound";
 
   return (
     <div className="flex h-full min-h-0 flex-col">
@@ -179,6 +179,16 @@ export default function CountryPanel({
           />
         )}
 
+        {!history && data && attention && inbound && about && (
+          <AboutList
+            countryName={name}
+            articles={about.articles}
+            editions={about.editions}
+            nameOf={nameOf}
+            onSelect={(c) => onSelect(c)}
+          />
+        )}
+
         {!history && data && filterAbout && (
           <div className="mt-3 flex items-center justify-between gap-3 rounded-md bg-card px-3 py-2 text-xs text-ink">
             <span>
@@ -202,13 +212,17 @@ export default function CountryPanel({
           </p>
         )}
 
-        {!history && data && data.articles.length > 0 && (
+        {!history && data && data.articles.length > 0 && !inbound && (
           <div className={attention ? "mt-3 border-t border-line" : ""}>
-            <ArticleList
-              articles={articles}
-              shared={shared}
-              onStory={onStory}
-            />
+            <ArticleList articles={articles} shared={shared} onStory={onStory} />
+          </div>
+        )}
+        {!history && data && data.articles.length > 0 && inbound && (
+          <div className="mt-5 border-t border-line pt-3">
+            <p className="text-xs font-medium uppercase tracking-wide text-muted">
+              {world ? `World coverage about ${name}` : `${name}'s own top stories`}
+            </p>
+            <ArticleList articles={articles} shared={shared} onStory={onStory} />
           </div>
         )}
       </div>

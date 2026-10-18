@@ -11,7 +11,7 @@
 import fs from "node:fs";
 import { createAiClient } from "./lib/ai";
 import { parseUpdateArgs } from "./lib/args";
-import { buildAttention } from "./lib/attention";
+import { buildAboutFiles, buildAttention } from "./lib/attention";
 import { dedupeArticles } from "./lib/clean";
 import {
   loadCountryConfig,
@@ -151,6 +151,15 @@ async function main() {
   const attention = buildAttention(all, now);
   writeJson(`${args.outDir}/attention.json`, attention);
   log(`Attention: ${Object.keys(attention.mentions).length} countries mention another`);
+  // The foreign articles behind those counts, one file per country written about.
+  const aboutDir = `${args.outDir}/about`;
+  const abouts = buildAboutFiles(all, now);
+  fs.mkdirSync(aboutDir, { recursive: true });
+  for (const name of fs.readdirSync(aboutDir)) {
+    if (!(name.replace(/\.json$/, "") in abouts)) fs.unlinkSync(`${aboutDir}/${name}`);
+  }
+  for (const [code, file] of Object.entries(abouts)) writeJson(`${aboutDir}/${code}.json`, file);
+  log(`About: ${Object.keys(abouts).length} countries are written about elsewhere`);
 
   const sharedPath = `${args.outDir}/shared.json`;
   let shared: SharedFile | null = fs.existsSync(sharedPath) ? (JSON.parse(fs.readFileSync(sharedPath, "utf8")) as SharedFile) : null;

@@ -40,12 +40,12 @@ export default function AttentionChips({ countryName, mode, onMode, mentions, na
           </button>
         ))}
       </div>
-      <p className="mt-1.5 text-xs text-muted">
-        {mode === "outbound"
-          ? `Other countries that appear in ${countryName}'s top stories, with the number of stories.`
-          : `Countries whose own top stories are about ${countryName}, with the number of stories.`}
-      </p>
-      {mentions.length ? (
+      {mode === "outbound" && (
+        <p className="mt-1.5 text-xs text-muted">
+          Other countries that appear in {countryName}&apos;s top stories, with the number of stories. Click one to narrow the list.
+        </p>
+      )}
+      {mode === "inbound" ? null : mentions.length ? (
         <ul className="mt-2 flex flex-wrap gap-1.5">
           {mentions.map((m) => (
             <li key={m.code}>
@@ -65,11 +65,7 @@ export default function AttentionChips({ countryName, mode, onMode, mentions, na
           ))}
         </ul>
       ) : (
-        <p className="mt-2 text-xs text-muted">
-          {mode === "outbound"
-            ? `None right now: ${countryName}'s top stories are all domestic.`
-            : `None right now: no other country has ${countryName} in its top stories.`}
-        </p>
+        <p className="mt-2 text-xs text-muted">None right now: {countryName}&apos;s top stories are all domestic.</p>
       )}
     </section>
   );

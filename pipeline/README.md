@@ -51,6 +51,7 @@ Each feed gets one retry. A country that fails twice keeps its previous file and
 | `public/data/countries/TH.json` | That country's articles: title, link, outlet, outlet site, publish time, English translation and the countries it is about |
 | `public/data/shared.json` | Stories read in two or more countries, with the articles behind each |
 | `public/data/attention.json` | Per country, how many of its top stories are about each other country |
+| `public/data/about/TH.json` | The foreign top stories about Thailand, with the country each was read in |
 | `public/data/history/` | One small snapshot per day plus an index, for the time machine |
 | `cache/headlines.json` | Translation cache, committed so runs on GitHub Actions share it |
 
@@ -60,7 +61,7 @@ Grouping is redone every run, so each new story is matched against the previous 
 
 ## Daily archive
 
-Every run writes `public/data/history/<YYYY-MM-DD>.json`: the top five articles of each local-edition country and the ten most-shared stories, as last seen that UTC day. `history/index.json` lists the days. The site's day control steps through them. `npx tsx pipeline/snapshot.ts` writes today's snapshot from the data already on disk without fetching.
+Every run writes `public/data/history/<YYYY-MM-DD>.json`: the top five articles of each local-edition country and the ten most-shared stories, as last seen that UTC day. `history/index.json` lists the days. The site's day control steps through them. `npx tsx pipeline/derive.ts` recomputes the attention counts, the "about" files and today's snapshot from the data already on disk without fetching.
 
 ## Tests
 

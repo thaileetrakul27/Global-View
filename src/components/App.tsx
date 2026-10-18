@@ -3,12 +3,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { countryFocus, loadCountries, type CountryFeature } from "@/lib/geo";
 import {
+  loadAbout,
   loadAttention,
   loadCountry,
   loadHistoryIndex,
   loadIndex,
   loadShared,
   loadSnapshot,
+  type AboutFile,
   type AttentionFile,
   type CountryFile,
   type IndexFile,
@@ -56,6 +58,8 @@ export default function App() {
   const [historyDates, setHistoryDates] = useState<string[]>([]);
   const [historyDate, setHistoryDate] = useState<string | null>(null);
   const [snapshots, setSnapshots] = useState<Record<string, Snapshot | null>>({});
+  // Foreign articles about each country, fetched when its inbound view opens.
+  const [abouts, setAbouts] = useState<Record<string, AboutFile | null>>({});
   // Country files already fetched, keyed by code. Null marks "no file".
   const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
@@ -138,6 +142,7 @@ export default function App() {
     for (const [code, entry] of Object.entries(index?.countries ?? {})) m.set(code, entry.kind ?? "local");
     return m;
   }, [index]);
+  const editions = useMemo(() => [...coverage.values()].filter((k) => k === "local").length, [coverage]);
 
   // Lookups by country code: display name and a point to draw arcs from.
   const byCode = useMemo(() => new Map(countries.map((c) => [c.properties.code, c])), [countries]);
@@ -212,6 +217,23 @@ export default function App() {
   // World-coverage countries have no "own news", so only the inbound view applies.
   const selectedKind = selectedCode ? (coverage.get(selectedCode) ?? "local") : "local";
   const effectiveMode: AttentionMode = selectedKind === "world" ? "inbound" : attentionMode;
+
+  // Fetch the "about" file the first time a country's inbound view is shown.
+  // Countries nobody writes about have no file, which loads as null.
+  // The attention counts already say whether anything exists, so countries
+  // nobody writes about never request a file.
+  const hasInbound = !!selectedCode && inbound(attention, selectedCode, 1).length > 0;
+  const wantAbout = selectedCode && !historyDate && effectiveMode === "inbound" && hasInbound ? selectedCode : null;
+  useEffect(() => {
+    if (!wantAbout || wantAbout in abouts) return;
+    const code = wantAbout;
+    loadAbout(code)
+      .then((file) => setAbouts((m) => ({ ...m, [code]: file })))
+      .catch((err) => {
+        console.error(err);
+        setAbouts((m) => ({ ...m, [code]: null }));
+      });
+  }, [wantAbout, abouts]);
 
   // Tints: who the selected country is reading about, or who reads about it.
   // Attention is not archived, so past days show none.
@@ -437,6 +459,14 @@ export default function App() {
               shared={sharedRefs}
               onStory={openStory}
               name={nameOf(selected.properties.code)}
+              about={{
+                articles: !hasInbound
+                  ? []
+                  : selected.properties.code in abouts
+                    ? (abouts[selected.properties.code]?.articles ?? [])
+                    : null,
+                editions,
+              }}
               history={
                 historyDate && historyLabel
                   ? { label: historyLabel, articles: snapshot?.countries[selected.properties.code] ?? null }
@@ -465,6 +495,14 @@ export default function App() {
               shared={sharedRefs}
               onStory={openStory}
               name={nameOf(selected.properties.code)}
+              about={{
+                articles: !hasInbound
+                  ? []
+                  : selected.properties.code in abouts
+                    ? (abouts[selected.properties.code]?.articles ?? [])
+                    : null,
+                editions,
+              }}
               history={
                 historyDate && historyLabel
                   ? { label: historyLabel, articles: snapshot?.countries[selected.properties.code] ?? null }

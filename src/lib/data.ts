@@ -106,6 +106,22 @@ export interface HistoryIndex {
   dates: string[];
 }
 
+/** A foreign top story about a country, with where it was read. */
+export interface AboutArticle {
+  from: string;
+  url: string;
+  title: string;
+  en?: string;
+  outlet: string;
+  published: string;
+}
+
+export interface AboutFile {
+  code: string;
+  updated: string;
+  articles: AboutArticle[];
+}
+
 /** Optional files: null when the pipeline has not produced them yet. */
 async function loadOptional<T>(path: string): Promise<T | null> {
   const res = await fetch(path);
@@ -118,6 +134,7 @@ export const loadShared = () => loadOptional<SharedFile>("/data/shared.json");
 export const loadAttention = () => loadOptional<AttentionFile>("/data/attention.json");
 export const loadHistoryIndex = () => loadOptional<HistoryIndex>("/data/history/index.json");
 export const loadSnapshot = (date: string) => loadOptional<Snapshot>(`/data/history/${date}.json`);
+export const loadAbout = (code: string) => loadOptional<AboutFile>(`/data/about/${code}.json`);
 
 export async function loadIndex(): Promise<IndexFile> {
   const res = await fetch("/data/index.json");
