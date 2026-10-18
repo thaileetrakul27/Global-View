@@ -61,8 +61,8 @@ describe("toStories", () => {
 
 describe("storySubject", () => {
   it("picks the most common country, ties by code, null when none", () => {
-    expect(storySubject([{ about: ["FR"] }, { about: ["FR", "BE"] }, { about: ["BE"] }])).toBe("FR");
-    expect(storySubject([{ about: ["FR"] }, { about: ["BE"] }])).toBe("BE");
+    expect(storySubject([{ about: ["FR"] }, { about: ["FR", "BE"] }, { about: ["BE"] }, { about: ["FR"] }])).toBe("FR");
+    expect(storySubject([{ about: ["FR"] }, { about: ["BE"] }])).toBe("BE"); // tie: alphabetical
     expect(storySubject([{ about: [] }])).toBeNull();
   });
 });
