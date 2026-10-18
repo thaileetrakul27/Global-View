@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import type { Mention } from "@/lib/attention";
-import type { AboutArticle, Article, CountryFile, SnapshotArticle, UnwatchedEntry, WatchingEntry } from "@/lib/data";
+import type { AboutArticle, Alert, Article, CountryFile, SnapshotArticle, UnwatchedEntry, WatchingEntry } from "@/lib/data";
 import HelpBlock from "./HelpBlock";
 import AboutList from "./AboutList";
 import type { CountryFeature } from "@/lib/geo";
@@ -45,7 +45,7 @@ interface Props {
   /** Foreign top stories about this country (null while loading) and how many editions exist. */
   about?: { articles: AboutArticle[] | null; editions: number };
   /** Humanitarian signals for this country, if any. */
-  crisis?: { watching: WatchingEntry | null; unwatched: UnwatchedEntry | null };
+  crisis?: { alerts: Alert[]; watching: WatchingEntry | null; unwatched: UnwatchedEntry | null };
 }
 
 // Contents of the country panel: the name, when the list was refreshed, who
@@ -164,7 +164,7 @@ export default function CountryPanel({
         )}
 
         {!history && data && crisis && (
-          <HelpBlock name={name} iso3={country.properties.iso3} watching={crisis.watching} unwatched={crisis.unwatched} />
+          <HelpBlock name={name} iso3={country.properties.iso3} alerts={crisis.alerts} watching={crisis.watching} unwatched={crisis.unwatched} />
         )}
 
         {!history && world && (

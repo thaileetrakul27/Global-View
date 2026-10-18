@@ -53,7 +53,7 @@ Each feed gets one retry. A country that fails twice keeps its previous file and
 | `public/data/attention.json` | Per country, how many of its top stories are about each other country |
 | `public/data/about/TH.json` | The foreign top stories about Thailand, with the country each was read in |
 | `public/data/history/` | One small snapshot per day plus an index, for the time machine |
-| `public/data/crises.json` | Countries the world has turned to, and emergencies nobody is watching |
+| `public/data/crises.json` | Current GDACS disaster alerts, the countries the world has turned to, and emergencies nobody is watching |
 | `cache/headlines.json` | Translation cache, committed so runs on GitHub Actions share it |
 
 ## Shared stories across runs
@@ -66,12 +66,17 @@ Every run writes `public/data/history/<YYYY-MM-DD>.json`: the top five articles 
 
 ## Humanitarian signals
 
-`public/data/crises.json` holds two lists, both estimated from English headlines against the word list in `pipeline/config/crisis-terms.json`:
+`public/data/crises.json` holds four lists. Two come from GDACS, the Global Disaster Alert and Coordination System run by the UN and the European Commission, whose RSS feed is public domain:
+
+- **alerts**: its current Orange (likely humanitarian impact) and Red (severe) alerts, each attached to the countries it names and kept for 10 days (Orange) or 21 days (Red) after GDACS last saw it active. Green alerts are routine and are dropped, as are alerts naming no country the globe can show. A failed fetch keeps the previous run's alerts.
+- **quiet**: alerts whose main country two or fewer editions have in their top stories, skipping regional alerts that name more than six countries.
+
+Two more are estimated from English headlines against the word list in `pipeline/config/crisis-terms.json`:
 
 - **watching**: countries that are suddenly in many editions' top stories (at least 8, and double their median over the previous days; 15 with under three days of history) where at least 40% of those foreign stories, and at least three, describe an emergency.
 - **unwatched**: local-edition countries where at least four of their own top stories, and at least 30%, describe an emergency, while two or fewer other editions have them in their top stories.
 
-Daily snapshots record each country's inbound edition count so the baseline builds up over the first week. The site shows a "How to help" block on these countries with fixed UN and Red Cross links; it never selects organisations.
+Daily snapshots record each country's inbound edition count so the baseline builds up over the first week. The site shows a "How to help" block on these countries with the alert's GDACS report and fixed UN and Red Cross links; it never selects organisations. `npx tsx pipeline/derive.ts --alerts` refreshes the alerts without running the whole pipeline.
 
 ## Tests
 

@@ -59,6 +59,22 @@ describe("detectCrises", () => {
     expect(out.unwatched.map((u) => u.code)).toEqual(["SD"]);
     expect(out.unwatched[0]).toMatchObject({ matching: 4, total: 6, editions: 1 });
   });
+  it("lists verified alerts whose main country few editions read about, skipping regional ones", () => {
+    const alert = (id: string, countries: string[]) => ({ id, type: "flood" as const, level: "Orange" as const, title: id, name: null, countries, from: now, to: now, url: "u" });
+    const att: AttentionFile = { updated: now, mentions: { ...mentionsFrom("MX", 12), ...mentionsFrom("TD", 1) } };
+    const alerts = [alert("a", ["MX"]), alert("b", ["TD", "NE"]), alert("c", ["LY"]), alert("d", ["TD"]), alert("e", ["AT", "BE", "CH", "DE", "DK", "ES", "FR"])];
+    const out = detectCrises({ attention: att, abouts: {}, locals: [], baselines: {}, terms, alerts, now });
+    expect(out.alerts).toHaveLength(5);
+    expect(out.quiet).toEqual([
+      { code: "TD", alert: "b", editions: 1 },
+      { code: "LY", alert: "c", editions: 0 },
+    ]);
+  });
+  it("writes empty alert lists when none are given", () => {
+    const out = detectCrises({ attention: { updated: now, mentions: {} }, abouts: {}, locals: [], baselines: {}, terms, now });
+    expect(out.alerts).toEqual([]);
+    expect(out.quiet).toEqual([]);
+  });
   it("loads the real term list", () => {
     expect(loadCrisisTerms().terms).toContain("earthquake");
   });

@@ -138,13 +138,43 @@ export interface UnwatchedEntry {
   sample: string[];
 }
 
-/** Humanitarian signals estimated from headlines. */
+export type AlertLevel = "Orange" | "Red";
+export type AlertType = "earthquake" | "cyclone" | "flood" | "drought" | "wildfire" | "volcano" | "other";
+
+/** A verified disaster alert from GDACS, the UN and EU alert system. */
+export interface Alert {
+  id: string;
+  type: AlertType;
+  level: AlertLevel;
+  title: string;
+  /** Named event, e.g. a cyclone name. */
+  name: string | null;
+  /** Countries the alert names, primary first. */
+  countries: string[];
+  from: string;
+  to: string;
+  /** Report page on gdacs.org. */
+  url: string;
+}
+
+/** An alert whose main country almost no edition is reading about. */
+export interface QuietEntry {
+  code: string;
+  alert: string;
+  editions: number;
+}
+
+/** Humanitarian signals: verified alerts plus estimates from headlines. */
 export interface CrisesFile {
   updated: string;
   /** Countries the world has suddenly turned to, with emergency headlines. */
   watching: WatchingEntry[];
   /** Countries whose own news is an emergency almost nobody else is reading about. */
   unwatched: UnwatchedEntry[];
+  /** Current Orange and Red GDACS alerts, Red first. */
+  alerts: Alert[];
+  /** Alerts whose main country few editions are reading about. */
+  quiet: QuietEntry[];
 }
 
 /** Optional files: null when the pipeline has not produced them yet. */
@@ -160,7 +190,11 @@ export const loadAttention = () => loadOptional<AttentionFile>("/data/attention.
 export const loadHistoryIndex = () => loadOptional<HistoryIndex>("/data/history/index.json");
 export const loadSnapshot = (date: string) => loadOptional<Snapshot>(`/data/history/${date}.json`);
 export const loadAbout = (code: string) => loadOptional<AboutFile>(`/data/about/${code}.json`);
-export const loadCrises = () => loadOptional<CrisesFile>("/data/crises.json");
+/** Files written before alerts existed lack the two alert lists. */
+export const loadCrises = async (): Promise<CrisesFile | null> => {
+  const c = await loadOptional<CrisesFile>("/data/crises.json");
+  return c ? { ...c, alerts: c.alerts ?? [], quiet: c.quiet ?? [] } : null;
+};
 
 export async function loadIndex(): Promise<IndexFile> {
   const res = await fetch("/data/index.json");

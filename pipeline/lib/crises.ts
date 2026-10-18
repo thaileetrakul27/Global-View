@@ -3,8 +3,11 @@
 //             and most of those stories describe an emergency;
 //   unwatched: a country's own top stories are dominated by an emergency
 //              that almost nobody else is reading about.
-// Both are computed from headlines alone and are estimates.
+// Both are computed from headlines alone and are estimates. Alongside them
+// sit verified disaster alerts from GDACS (see alerts.ts), and
+//   quiet: an alert for a country that almost no edition is reading about.
 import fs from "node:fs";
+import type { Alert } from "./alerts";
 import type { AboutFile, AttentionFile } from "./attention";
 import type { EnrichedArticle } from "./translate";
 
@@ -52,10 +55,21 @@ export interface UnwatchedEntry {
   sample: string[];
 }
 
+export interface QuietEntry {
+  code: string;
+  /** Id of the alert in `alerts`. */
+  alert: string;
+  editions: number;
+}
+
 export interface CrisesFile {
   updated: string;
   watching: WatchingEntry[];
   unwatched: UnwatchedEntry[];
+  /** Current Orange and Red GDACS alerts, Red first. */
+  alerts: Alert[];
+  /** Alerts whose main country almost nobody is reading about. */
+  quiet: QuietEntry[];
 }
 
 export interface CrisisInput {
@@ -66,6 +80,8 @@ export interface CrisisInput {
   /** Per country, inbound edition counts on previous days (oldest first). */
   baselines: Record<string, number[]>;
   terms: CrisisTerms;
+  /** Verified disaster alerts; empty when none or when the feed failed before any were stored. */
+  alerts?: Alert[];
   now: string;
 }
 
@@ -79,6 +95,9 @@ export const UNWATCHED_MAX_EDITIONS = 2;
 export const UNWATCHED_MIN_MATCHING = 4;
 export const UNWATCHED_MIN_SHARE = 0.3;
 export const UNWATCHED_LIMIT = 8;
+/** Quiet alert rules: an alert naming more countries than this is regional, not one place's crisis. */
+export const QUIET_MAX_EDITIONS = 2;
+export const QUIET_MAX_COUNTRIES = 6;
 
 function median(values: number[]): number {
   const s = [...values].sort((a, b) => a - b);
@@ -113,5 +132,14 @@ export function detectCrises(input: CrisisInput): CrisesFile {
   }
   unwatched.sort((a, b) => b.matching / b.total - a.matching / a.total || b.matching - a.matching);
 
-  return { updated: input.now, watching, unwatched: unwatched.slice(0, UNWATCHED_LIMIT) };
+  const alerts = input.alerts ?? [];
+  const quiet: QuietEntry[] = [];
+  for (const a of alerts) {
+    if (a.countries.length > QUIET_MAX_COUNTRIES) continue;
+    const code = a.countries[0];
+    const e = editions[code] ?? 0;
+    if (e <= QUIET_MAX_EDITIONS && !quiet.some((q) => q.code === code)) quiet.push({ code, alert: a.id, editions: e });
+  }
+
+  return { updated: input.now, watching, unwatched: unwatched.slice(0, UNWATCHED_LIMIT), alerts, quiet };
 }

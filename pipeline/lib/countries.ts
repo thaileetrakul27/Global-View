@@ -47,6 +47,8 @@ export interface GlobeFeature {
   name: string;
   /** Full name, e.g. "Democratic Republic of the Congo". */
   admin: string;
+  /** ISO 3166-1 alpha-3 code, e.g. "COD", where the map data has one. */
+  iso3?: string;
 }
 
 export function loadGlobeFeatures(path = "public/geo/countries.geojson"): GlobeFeature[] {

@@ -27,7 +27,8 @@ import { sleep, writeJson } from "./lib/io";
 import { mergeIndex, readIndex, type CountryFile, type IndexEntry } from "./lib/publish";
 import { collectCandidates, findSharedStories, reconcileStories, type SharedFile } from "./lib/shared";
 import { addDay, buildSnapshot, dayOf, readBaselines, type HistoryIndex } from "./lib/history";
-import { detectCrises, inboundEditions, loadCrisisTerms } from "./lib/crises";
+import { buildResolver, fetchAlerts } from "./lib/alerts";
+import { detectCrises, inboundEditions, loadCrisisTerms, type CrisesFile } from "./lib/crises";
 import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle } from "./lib/translate";
 
 /** Most model calls one run may make; a guard against runaway cost. */
@@ -190,17 +191,23 @@ async function main() {
   writeJson(indexFile, addDay(historyIndex, dayOf(now)));
   log(`History: snapshot for ${snapshot.date} with ${Object.keys(snapshot.countries).length} countries`);
 
-  // 6. Humanitarian signals: sudden world attention, and emergencies nobody is watching.
+  // 6. Humanitarian signals: verified GDACS alerts, sudden world attention,
+  // and emergencies nobody is watching. A failed alert fetch keeps the
+  // alerts from the previous run.
+  const crisesPath = `${args.outDir}/crises.json`;
+  const previousCrises: CrisesFile | null = fs.existsSync(crisesPath) ? (JSON.parse(fs.readFileSync(crisesPath, "utf8")) as CrisesFile) : null;
+  const alerts = (await fetchAlerts(buildResolver(loadGlobeFeatures(), local), now, deps)) ?? previousCrises?.alerts ?? [];
   const crises = detectCrises({
     attention,
     abouts,
     locals: all,
     baselines: readBaselines(historyDir, dayOf(now)),
     terms: loadCrisisTerms(),
+    alerts,
     now,
   });
-  writeJson(`${args.outDir}/crises.json`, crises);
-  log(`Crises: ${crises.watching.length} watched, ${crises.unwatched.length} unwatched`);
+  writeJson(crisesPath, crises);
+  log(`Crises: ${crises.alerts.length} alerts, ${crises.quiet.length} quiet, ${crises.watching.length} watched, ${crises.unwatched.length} unwatched`);
 }
 
 main().catch((err) => {

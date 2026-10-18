@@ -35,6 +35,7 @@ import StoryPanel from "./StoryPanel";
 import WorldSummary from "./WorldSummary";
 import TimeControl from "./TimeControl";
 import CrisisCard from "./CrisisCard";
+import CrisisStrip from "./CrisisStrip";
 import type { SharedRef } from "./ArticleList";
 
 /** Desktop side panel width in px, capped so the globe keeps two thirds. */
@@ -295,6 +296,7 @@ export default function App() {
     () =>
       selectedCode && crises
         ? {
+            alerts: crises.alerts.filter((a) => a.countries.includes(selectedCode)),
             watching: crises.watching.find((w) => w.code === selectedCode) ?? null,
             unwatched: crises.unwatched.find((u) => u.code === selectedCode) ?? null,
           }
@@ -435,9 +437,15 @@ export default function App() {
         </div>
       )}
 
-      {!selected && !focusedStory && !historyDate && crises && vp.isDesktop && (crises.watching.length > 0 || crises.unwatched.length > 0) && (
+      {!selected && !focusedStory && !historyDate && crises && vp.isDesktop && (
         <div className="pointer-events-none absolute right-5 top-28 z-20 sm:right-7">
           <CrisisCard crises={crises} nameOf={nameOf} onSelect={(c) => select(c)} />
+        </div>
+      )}
+
+      {!panelOpen && !historyDate && crises && !vp.isDesktop && (
+        <div className="pointer-events-none absolute inset-x-0 bottom-11 z-20">
+          <CrisisStrip crises={crises} nameOf={nameOf} onSelect={(c) => select(c)} />
         </div>
       )}
 
