@@ -1,13 +1,27 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { loadCountries, type CountryFeature } from "@/lib/geo";
-import { loadCountry, loadIndex, type CountryFile, type IndexFile } from "@/lib/data";
+import { countryFocus, loadCountries, type CountryFeature } from "@/lib/geo";
+import {
+  loadAttention,
+  loadCountry,
+  loadIndex,
+  loadShared,
+  type AttentionFile,
+  type CountryFile,
+  type IndexFile,
+  type SharedFile,
+  type SharedStory,
+} from "@/lib/data";
+import { inbound, outbound, tintMap } from "@/lib/attention";
 import { useViewport } from "@/lib/useViewport";
 import GlobeView from "./GlobeView";
+import type { GlobeArc } from "./Globe";
 import CountrySearch from "./CountrySearch";
 import CountryPanel, { type CountryState } from "./CountryPanel";
+import type { AttentionMode } from "./AttentionChips";
 import BottomSheet from "./BottomSheet";
+import WorldStories from "./WorldStories";
 
 /** Desktop side panel width in px, capped so the globe keeps two thirds. */
 export const PANEL_WIDTH = 440;
@@ -19,6 +33,11 @@ export const SHEET_PEEK = 0.42;
 export default function App() {
   const [countries, setCountries] = useState<CountryFeature[]>([]);
   const [index, setIndex] = useState<IndexFile | null>(null);
+  const [shared, setShared] = useState<SharedFile | null>(null);
+  const [attention, setAttention] = useState<AttentionFile | null>(null);
+  const [attentionMode, setAttentionMode] = useState<AttentionMode>("outbound");
+  // A shared story picked on the landing card; only its arcs are drawn.
+  const [focusStoryId, setFocusStoryId] = useState<string | null>(null);
   // Country files already fetched, keyed by code. Null marks "no file".
   const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
@@ -27,6 +46,8 @@ export default function App() {
   useEffect(() => {
     loadCountries().then(setCountries).catch(console.error);
     loadIndex().then(setIndex).catch(console.error);
+    loadShared().then(setShared).catch(console.error);
+    loadAttention().then(setAttention).catch(console.error);
   }, []);
 
   // Fetch the selected country's stories once, then keep them. The index
@@ -53,6 +74,65 @@ export default function App() {
     () => new Set(index ? Object.keys(index.countries) : []),
     [index],
   );
+
+  // Lookups by country code: display name and a point to draw arcs from.
+  const byCode = useMemo(() => new Map(countries.map((c) => [c.properties.code, c])), [countries]);
+  const nameOf = useCallback((code: string) => byCode.get(code)?.properties.name ?? code, [byCode]);
+  const centroids = useMemo(() => {
+    const m = new Map<string, { lat: number; lng: number }>();
+    for (const c of countries) {
+      const f = countryFocus(c);
+      m.set(c.properties.code, { lat: f.lat, lng: f.lng });
+    }
+    return m;
+  }, [countries]);
+
+  // Arcs: a selected country's shared stories; otherwise the focused story,
+  // or faintly the stories most countries share.
+  const arcs = useMemo<GlobeArc[]>(() => {
+    const stories = shared?.stories ?? [];
+    let picked: { story: SharedStory; strength: number }[];
+    if (selectedCode) {
+      picked = stories.filter((s) => s.countries.includes(selectedCode)).map((story) => ({ story, strength: 1 }));
+    } else if (focusStoryId) {
+      picked = stories.filter((s) => s.id === focusStoryId).map((story) => ({ story, strength: 1 }));
+    } else {
+      picked = stories.slice(0, 8).map((story) => ({ story, strength: 0.45 }));
+    }
+    const out = new Map<string, GlobeArc>();
+    for (const { story, strength } of picked) {
+      const hub = selectedCode && story.countries.includes(selectedCode) ? selectedCode : story.countries[0];
+      const from = centroids.get(hub);
+      if (!from) continue;
+      for (const code of story.countries) {
+        if (code === hub) continue;
+        const to = centroids.get(code);
+        if (!to) continue;
+        const key = [hub, code].sort().join("-");
+        const prev = out.get(key);
+        if (!prev || prev.strength < strength) {
+          out.set(key, { startLat: from.lat, startLng: from.lng, endLat: to.lat, endLng: to.lng, strength });
+        }
+      }
+    }
+    return [...out.values()];
+  }, [shared, selectedCode, focusStoryId, centroids]);
+
+  // Tints: who the selected country is reading about, or who reads about it.
+  const mentions = useMemo(
+    () => (selectedCode ? (attentionMode === "outbound" ? outbound(attention, selectedCode, 12) : inbound(attention, selectedCode, 12)) : []),
+    [attention, selectedCode, attentionMode],
+  );
+  const tints = useMemo(() => tintMap(mentions), [mentions]);
+  // Until the pipeline has translated anything, there is nothing to show.
+  const hasAttention = !!attention && Object.keys(attention.mentions).length > 0;
+
+  // How many countries share each article's story, by article link.
+  const sharedCounts = useMemo(() => {
+    const m = new Map<string, number>();
+    for (const s of shared?.stories ?? []) for (const a of s.articles) m.set(a.url, s.countries.length);
+    return m;
+  }, [shared]);
 
   const countryState: CountryState = useMemo(() => {
     if (!selectedCode) return { status: "loading" };
@@ -96,6 +176,8 @@ export default function App() {
       <GlobeView
         countries={countries}
         withData={withData}
+        tints={tints}
+        arcs={arcs}
         selected={selected}
         onSelect={select}
         inset={inset}
@@ -121,6 +203,12 @@ export default function App() {
         </p>
       )}
 
+      {!selected && shared && vp.isDesktop && (
+        <div className="pointer-events-none absolute bottom-6 left-5 z-20 sm:left-7">
+          <WorldStories stories={shared.stories} focusId={focusStoryId} onFocus={setFocusStoryId} nameOf={nameOf} />
+        </div>
+      )}
+
       {vp.isDesktop ? (
         <aside
           aria-label="Country"
@@ -129,11 +217,31 @@ export default function App() {
           className="absolute inset-y-0 right-0 z-30 flex w-[min(440px,38vw)] flex-col border-l border-line bg-paper transition-transform duration-300 ease-out"
           style={{ transform: selected ? "translateX(0)" : "translateX(100%)" }}
         >
-          {selected && <CountryPanel country={selected} state={countryState} onClose={close} />}
+          {selected && (
+            <CountryPanel
+              country={selected}
+              state={countryState}
+              onClose={close}
+              attention={hasAttention ? { mode: attentionMode, onMode: setAttentionMode, mentions } : null}
+              nameOf={nameOf}
+              onSelect={select}
+              sharedCounts={sharedCounts}
+            />
+          )}
         </aside>
       ) : (
         <BottomSheet open={!!selected} onClose={close} peek={SHEET_PEEK}>
-          {selected && <CountryPanel country={selected} state={countryState} onClose={close} />}
+          {selected && (
+            <CountryPanel
+              country={selected}
+              state={countryState}
+              onClose={close}
+              attention={hasAttention ? { mode: attentionMode, onMode: setAttentionMode, mentions } : null}
+              nameOf={nameOf}
+              onSelect={select}
+              sharedCounts={sharedCounts}
+            />
+          )}
         </BottomSheet>
       )}
     </main>

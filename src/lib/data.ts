@@ -11,6 +11,10 @@ export interface Article {
   outletUrl: string | null;
   /** ISO 8601 publish time. */
   published: string;
+  /** English headline, when translated. Equals title for English headlines. */
+  en?: string;
+  /** Country codes the headline is about, when known. */
+  about?: string[];
 }
 
 export interface CountryFile {
@@ -33,6 +37,44 @@ export interface IndexFile {
   updated: string;
   countries: Record<string, IndexCountry>;
 }
+
+export interface SharedArticle {
+  code: string;
+  url: string;
+  title: string;
+  en: string;
+  outlet: string;
+}
+
+export interface SharedStory {
+  id: string;
+  title: string;
+  /** Country codes reading it, most first. */
+  countries: string[];
+  articles: SharedArticle[];
+}
+
+export interface SharedFile {
+  updated: string;
+  stories: SharedStory[];
+}
+
+export interface AttentionFile {
+  updated: string;
+  /** mentions[TH][US] = how many of Thailand's top stories are about the US. */
+  mentions: Record<string, Record<string, number>>;
+}
+
+/** Optional files: null when the pipeline has not produced them yet. */
+async function loadOptional<T>(path: string): Promise<T | null> {
+  const res = await fetch(path);
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`Could not load ${path} (${res.status})`);
+  return (await res.json()) as T;
+}
+
+export const loadShared = () => loadOptional<SharedFile>("/data/shared.json");
+export const loadAttention = () => loadOptional<AttentionFile>("/data/attention.json");
 
 export async function loadIndex(): Promise<IndexFile> {
   const res = await fetch("/data/index.json");

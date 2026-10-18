@@ -6,9 +6,11 @@ A light, clean website with an interactive globe. Clicking a country lists the m
 - Tailwind CSS. Light theme only. Background #FAFAF7, white cards, grey borders, no heavy shadows.
 - The website reads only JSON from public/data. All fetching lives in /pipeline and runs in GitHub Actions.
 - "Most popular" means the top stories feed of that country's Google News edition. Show headline, outlet, time and link only. Never store or republish article text.
+- The Claude API (Haiku) is used for exactly two things: translating headlines into English and noting which countries they are about, and grouping headlines that describe the same event across countries. Each headline is translated once and cached by link in cache/headlines.json. Nothing else is sent to a model.
+- Every model call is optional. Without ANTHROPIC_API_KEY, or with --no-ai, the feeds still publish and the previous shared-story file is kept.
 - A failed fetch keeps the previous data for that country; nothing is ever replaced with an empty list.
 - Mobile layout must work at 375px wide.
 - Keep components small and commented. Write a test for every pipeline function.
 
 ## Out of scope for now
-Bias labelling and story grouping were removed from the plan. Do not reintroduce ratings, spectrum colours or AI labelling without being asked.
+Bias labelling was removed from the plan. Do not reintroduce outlet ratings, spectrum colours or AI bias labelling without being asked.

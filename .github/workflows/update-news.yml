@@ -31,14 +31,17 @@ jobs:
       - run: npm test
 
       # Exits non-zero if every feed fails, so nothing below runs and the
-      # previous data stays live.
+      # previous data stays live. Without the API key the feeds still
+      # publish; only translation and shared-story grouping are skipped.
       - run: npm run pipeline:update
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data
+          git add public/data cache
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0

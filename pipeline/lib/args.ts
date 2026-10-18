@@ -9,12 +9,15 @@ export interface UpdateArgs {
   delayMs: number;
   /** Directory the website reads from. */
   outDir: string;
+  /** Skip translation and story grouping even when credentials exist. */
+  noAi: boolean;
 }
 
 export const DEFAULT_UPDATE_ARGS: UpdateArgs = {
   maxArticles: 30,
   delayMs: 2000,
   outDir: "public/data",
+  noAi: false,
 };
 
 /**
@@ -40,6 +43,9 @@ export function parseUpdateArgs(argv: string[]): UpdateArgs {
       case "out":
         args.outDir = value;
         break;
+      case "no-ai":
+        args.noAi = true;
+        break;
       default:
         throw new Error(`Unknown flag --${flag}`);
     }
@@ -47,11 +53,18 @@ export function parseUpdateArgs(argv: string[]): UpdateArgs {
   return args;
 }
 
+/** Flags that take no value. */
+const BOOLEAN_FLAGS = new Set(["no-ai"]);
+
 function toPairs(argv: string[]): [string, string][] {
   const pairs: [string, string][] = [];
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (!a.startsWith("--")) throw new Error(`Unexpected argument ${a}`);
+    if (BOOLEAN_FLAGS.has(a.slice(2))) {
+      pairs.push([a.slice(2), "true"]);
+      continue;
+    }
     const eq = a.indexOf("=");
     if (eq > -1) {
       pairs.push([a.slice(2, eq), a.slice(eq + 1)]);

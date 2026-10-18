@@ -5,10 +5,23 @@ import GlobeGL, { type GlobeMethods } from "react-globe.gl";
 import { AmbientLight, DirectionalLight, MeshLambertMaterial } from "three";
 import { countryFocus, type CountryFeature } from "@/lib/geo";
 
+/** A line between two countries reading the same story. */
+export interface GlobeArc {
+  startLat: number;
+  startLng: number;
+  endLat: number;
+  endLng: number;
+  /** 0..1; stronger arcs are brighter and thicker. */
+  strength: number;
+}
+
 export interface GlobeProps {
   countries: CountryFeature[];
   /** Codes of countries that have stories; they are drawn in a deeper sand. */
   withData: Set<string>;
+  /** Countries to tint towards the accent, 0..1 by how strongly. */
+  tints: Map<string, number>;
+  arcs: GlobeArc[];
   selected: CountryFeature | null;
   onSelect: (code: string) => void;
   /** Screen space covered by panels, so the globe can shift away from them. */
@@ -17,6 +30,23 @@ export interface GlobeProps {
 
 /** How long the camera takes to travel to a clicked country. */
 const FLY_MS = 1200;
+
+/** Blends two hex colours; t = 0 gives a, t = 1 gives b. */
+function mixHex(a: string, b: string, t: number): string {
+  const pa = parseInt(a.slice(1), 16);
+  const pb = parseInt(b.slice(1), 16);
+  const ch = (shift: number) => {
+    const x = (pa >> shift) & 255;
+    const y = (pb >> shift) & 255;
+    return Math.round(x + (y - x) * t);
+  };
+  return `rgb(${ch(16)}, ${ch(8)}, ${ch(0)})`;
+}
+
+function hexToRgba(hex: string, alpha: number): string {
+  const p = parseInt(hex.slice(1), 16);
+  return `rgba(${(p >> 16) & 255}, ${(p >> 8) & 255}, ${p & 255}, ${alpha})`;
+}
 
 // Colours are read from the CSS tokens in globals.css so the globe always
 // matches the rest of the page.
@@ -28,7 +58,7 @@ function token(name: string, fallback: string): string {
   );
 }
 
-export default function Globe({ countries, withData, selected, onSelect, inset }: GlobeProps) {
+export default function Globe({ countries, withData, tints, arcs, selected, onSelect, inset }: GlobeProps) {
   const globeRef = useRef<GlobeMethods | undefined>(undefined);
   const wrapRef = useRef<HTMLDivElement>(null);
   // Last known mouse or pen position, so the tooltip can appear in the right
@@ -133,10 +163,19 @@ export default function Globe({ countries, withData, selected, onSelect, inset }
     (d: object) => {
       if (d === selected) return colors.landSelected;
       if (d === hovered) return colors.landHover;
-      return withData.has((d as CountryFeature).properties.code) ? colors.landData : colors.land;
+      const code = (d as CountryFeature).properties.code;
+      const base = withData.has(code) ? colors.landData : colors.land;
+      const tint = tints.get(code);
+      return tint === undefined ? base : mixHex(base, colors.accent, 0.14 + 0.36 * tint);
     },
-    [hovered, selected, withData, colors],
+    [hovered, selected, withData, tints, colors],
   );
+
+  const arcColor = useCallback(
+    (d: object) => hexToRgba(colors.accent, 0.25 + 0.45 * (d as GlobeArc).strength),
+    [colors.accent],
+  );
+  const arcStroke = useCallback((d: object) => 0.18 + 0.3 * (d as GlobeArc).strength, []);
   const strokeColor = useCallback(
     (d: object) => (d === selected ? colors.accent : colors.border),
     [selected, colors],
@@ -189,6 +228,18 @@ export default function Globe({ countries, withData, selected, onSelect, inset }
           polygonsTransitionDuration={0}
           onPolygonHover={handleHover}
           onPolygonClick={handleClick}
+          arcsData={arcs}
+          arcStartLat="startLat"
+          arcStartLng="startLng"
+          arcEndLat="endLat"
+          arcEndLng="endLng"
+          arcColor={arcColor}
+          arcStroke={arcStroke}
+          arcAltitudeAutoScale={0.35}
+          arcDashLength={0.5}
+          arcDashGap={0.3}
+          arcDashAnimateTime={6000}
+          arcsTransitionDuration={600}
           onGlobeReady={handleReady}
         />
       )}

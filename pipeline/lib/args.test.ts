@@ -16,6 +16,9 @@ describe("parseUpdateArgs", () => {
       outDir: "tmp",
     });
   });
+  it("accepts --no-ai without a value", () => {
+    expect(parseUpdateArgs(["--no-ai", "--max", "5"])).toMatchObject({ noAi: true, maxArticles: 5 });
+  });
   it("rejects unknown flags, missing values and bad numbers", () => {
     expect(() => parseUpdateArgs(["--nope", "1"])).toThrow(/Unknown flag/);
     expect(() => parseUpdateArgs(["--countries"])).toThrow(/needs a value/);

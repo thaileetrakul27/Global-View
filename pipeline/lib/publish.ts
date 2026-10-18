@@ -1,7 +1,7 @@
 // Shapes of the files the website reads, and the logic that merges a run's
 // results with what was published before.
 import fs from "node:fs";
-import type { Article } from "./googlenews";
+import type { EnrichedArticle } from "./translate";
 
 export interface CountryFile {
   code: string;
@@ -9,7 +9,7 @@ export interface CountryFile {
   /** When this country's list was last refreshed. */
   updated: string;
   source: { name: string; edition: string; url: string };
-  articles: Article[];
+  articles: EnrichedArticle[];
 }
 
 export interface IndexEntry {
