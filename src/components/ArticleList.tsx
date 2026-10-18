@@ -44,10 +44,14 @@ export default function ArticleList({ articles, shared, onStory }: Props) {
               </a>
               <div className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted">
                 <span className="truncate">{a.outlet}</span>
-                <span aria-hidden>·</span>
-                <time dateTime={a.published} className="shrink-0">
-                  {shortRelativeTime(a.published)}
-                </time>
+                {a.published && (
+                  <>
+                    <span aria-hidden>·</span>
+                    <time dateTime={a.published} className="shrink-0">
+                      {shortRelativeTime(a.published)}
+                    </time>
+                  </>
+                )}
                 {ref && ref.count > 1 && onStory && (
                   <button
                     type="button"

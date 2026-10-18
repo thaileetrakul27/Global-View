@@ -25,7 +25,8 @@ import {
 import { buildSearchUrl, fetchFeed, fetchFeedUrl, type Article } from "./lib/googlenews";
 import { sleep, writeJson } from "./lib/io";
 import { mergeIndex, readIndex, type CountryFile, type IndexEntry } from "./lib/publish";
-import { collectCandidates, findSharedStories, type SharedFile } from "./lib/shared";
+import { collectCandidates, findSharedStories, reconcileStories, type SharedFile } from "./lib/shared";
+import { addDay, buildSnapshot, dayOf, type HistoryIndex } from "./lib/history";
 import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle } from "./lib/translate";
 
 /** Most model calls one run may make; a guard against runaway cost. */
@@ -151,19 +152,32 @@ async function main() {
   writeJson(`${args.outDir}/attention.json`, attention);
   log(`Attention: ${Object.keys(attention.mentions).length} countries mention another`);
 
+  const sharedPath = `${args.outDir}/shared.json`;
+  let shared: SharedFile | null = fs.existsSync(sharedPath) ? (JSON.parse(fs.readFileSync(sharedPath, "utf8")) as SharedFile) : null;
   if (ai && ai.calls < MAX_AI_CALLS) {
     const candidates = collectCandidates(all);
     log(`Shared stories: grouping ${candidates.length} cross-border headlines`);
-    const stories = await findSharedStories(ai, candidates);
-    if (stories) {
-      const shared: SharedFile = { updated: now, stories };
-      writeJson(`${args.outDir}/shared.json`, shared);
-      log(`Shared stories: ${stories.length} across ${candidates.length} headlines`);
+    const fresh = await findSharedStories(ai, candidates);
+    if (fresh) {
+      const stories = reconcileStories(fresh, shared?.stories, now);
+      const carried = stories.filter((st) => st.since !== now).length;
+      shared = { updated: now, stories };
+      writeJson(sharedPath, shared);
+      log(`Shared stories: ${stories.length} across ${candidates.length} headlines, ${carried} carried over from the previous run`);
     } else {
       log("Shared stories: grouping failed; previous file kept");
     }
   }
   if (ai) log(`Model calls this run: ${ai.calls}`);
+
+  // 5. Daily snapshot for the time machine.
+  const historyDir = `${args.outDir}/history`;
+  const indexFile = `${historyDir}/index.json`;
+  const historyIndex: HistoryIndex | null = fs.existsSync(indexFile) ? (JSON.parse(fs.readFileSync(indexFile, "utf8")) as HistoryIndex) : null;
+  const snapshot = buildSnapshot(now, all, shared?.stories ?? []);
+  writeJson(`${historyDir}/${snapshot.date}.json`, snapshot);
+  writeJson(indexFile, addDay(historyIndex, dayOf(now)));
+  log(`History: snapshot for ${snapshot.date} with ${Object.keys(snapshot.countries).length} countries`);
 }
 
 main().catch((err) => {

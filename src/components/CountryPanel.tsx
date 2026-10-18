@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import type { Mention } from "@/lib/attention";
-import type { CountryFile } from "@/lib/data";
+import type { Article, CountryFile, SnapshotArticle } from "@/lib/data";
 import type { CountryFeature } from "@/lib/geo";
 import { relativeTime } from "@/lib/time";
 import ArticleList, { type SharedRef } from "./ArticleList";
@@ -36,6 +36,10 @@ interface Props {
   onFilter: (code: string | null) => void;
   shared: Map<string, SharedRef>;
   onStory: (id: string) => void;
+  /** Display name for this country. */
+  name: string;
+  /** Archive view: the day's label and that day's articles (null when none archived). */
+  history?: { label: string; articles: SnapshotArticle[] | null } | null;
 }
 
 // Contents of the country panel: the name, when the list was refreshed, who
@@ -51,6 +55,8 @@ export default function CountryPanel({
   onFilter,
   shared,
   onStory,
+  name,
+  history = null,
 }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
 
@@ -60,9 +66,11 @@ export default function CountryPanel({
   }, [country]);
 
   const data = state.status === "ready" ? state.data : null;
-  const name = country.properties.name;
   const code = country.properties.code;
   const world = data?.kind === "world";
+  const archived: Article[] | null = history?.articles
+    ? history.articles.map((a) => ({ ...a, outletUrl: null, published: "" }))
+    : null;
 
   const articles = data
     ? filterAbout
@@ -89,9 +97,11 @@ export default function CountryPanel({
             {name}
           </h2>
           <p className="mt-2 text-xs text-muted">
-            {data
-              ? `${world ? "World coverage" : "Top stories"} · Updated ${relativeTime(data.updated)}`
-              : "Top stories"}
+            {history
+              ? `Top stories on ${history.label}`
+              : data
+                ? `${world ? "World coverage" : "Top stories"} · Updated ${relativeTime(data.updated)}`
+                : "Top stories"}
           </p>
         </div>
         <div className="-mr-1 flex shrink-0 items-start">
@@ -119,7 +129,16 @@ export default function CountryPanel({
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-6 sm:px-6">
-        {state.status === "loading" && (
+        {history && archived && <ArticleList articles={archived} />}
+        {history && !archived && (
+          <p className="pt-3 text-sm text-muted">
+            No archive for {name} on {history.label}. Only countries with a
+            local news edition are archived, and only from the day they were
+            added.
+          </p>
+        )}
+
+        {!history && state.status === "loading" && (
           <div aria-busy className="divide-y divide-line">
             {[0, 1, 2, 3, 4, 5].map((i) => (
               <PlaceholderStoryCard key={i} seed={i} />
@@ -127,27 +146,27 @@ export default function CountryPanel({
           </div>
         )}
 
-        {state.status === "none" && (
+        {!history && state.status === "none" && (
           <p className="pt-3 text-sm text-muted">
             No stories for {name} yet. Countries are added as their news feeds
             are checked.
           </p>
         )}
 
-        {state.status === "error" && (
+        {!history && state.status === "error" && (
           <p className="pt-3 text-sm text-muted">
             Could not load stories just now. Try again in a moment.
           </p>
         )}
 
-        {world && (
+        {!history && world && (
           <p className="mt-3 rounded-md bg-card px-3 py-2 text-xs leading-snug text-muted">
             {name} has no local news edition, so this is what the world is
             writing about it, not what people in {name} are reading.
           </p>
         )}
 
-        {data && attention && (
+        {!history && data && attention && (
           <AttentionChips
             countryName={name}
             mode={attention.mode}
@@ -160,7 +179,7 @@ export default function CountryPanel({
           />
         )}
 
-        {data && filterAbout && (
+        {!history && data && filterAbout && (
           <div className="mt-3 flex items-center justify-between gap-3 rounded-md bg-card px-3 py-2 text-xs text-ink">
             <span>
               {articles.length} {articles.length === 1 ? "story" : "stories"}{" "}
@@ -176,14 +195,14 @@ export default function CountryPanel({
           </div>
         )}
 
-        {data && data.articles.length === 0 && (
+        {!history && data && data.articles.length === 0 && (
           <p className="pt-3 text-sm text-muted">
             Nothing usable found about {name} in the last few days. The list
             refreshes every three hours.
           </p>
         )}
 
-        {data && data.articles.length > 0 && (
+        {!history && data && data.articles.length > 0 && (
           <div className={attention ? "mt-3 border-t border-line" : ""}>
             <ArticleList
               articles={articles}
@@ -195,11 +214,13 @@ export default function CountryPanel({
       </div>
 
       <footer className="border-t border-line px-5 py-3 text-xs text-muted sm:px-6">
-        {data
-          ? world
-            ? `Recent ${data.source.name} results about ${name}. Translations are automatic. Links open the publisher.`
-            : `Ranked by ${data.source.name} top stories, ${name} edition. Translations are automatic. Links open the publisher.`
-          : "Links open the publisher."}
+        {history
+          ? `From the daily archive: the top five as last seen on ${history.label}. Links open the publisher.`
+          : data
+            ? world
+              ? `Recent ${data.source.name} results about ${name}. Translations are automatic. Links open the publisher.`
+              : `Ranked by ${data.source.name} top stories, ${name} edition. Translations are automatic. Links open the publisher.`
+            : "Links open the publisher."}
       </footer>
     </div>
   );

@@ -10,6 +10,10 @@ describe("readUrlState", () => {
     expect(readUrlState("?story=france-riots")).toEqual({ story: "france-riots" });
     expect(readUrlState("?country=TH&story=france-riots")).toEqual({ country: "TH" });
   });
+  it("reads a date alongside anything else", () => {
+    expect(readUrlState("?country=TH&date=2026-10-17")).toEqual({ country: "TH", date: "2026-10-17" });
+    expect(readUrlState("?date=yesterday")).toEqual({});
+  });
   it("ignores malformed values", () => {
     expect(readUrlState("?country=thailand&about=1&story=../x")).toEqual({});
     expect(readUrlState("")).toEqual({});
@@ -18,7 +22,7 @@ describe("readUrlState", () => {
 
 describe("writeUrlState", () => {
   it("round-trips", () => {
-    for (const s of [{ country: "TH" }, { country: "TH", about: "US" }, { story: "a-b" }, {}]) {
+    for (const s of [{ country: "TH" }, { country: "TH", about: "US" }, { story: "a-b" }, { date: "2026-10-17" }, { country: "TH", date: "2026-10-17" }, {}]) {
       expect(readUrlState(writeUrlState(s))).toEqual(s);
     }
     expect(writeUrlState({})).toBe("");

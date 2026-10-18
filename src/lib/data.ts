@@ -59,6 +59,8 @@ export interface SharedArticle {
 export interface SharedStory {
   id: string;
   title: string;
+  /** When the story was first seen; absent in older files. */
+  since?: string;
   /** The country the story is mostly about; absent in older files. */
   subject?: string | null;
   /** Country codes reading it, most first. */
@@ -77,6 +79,33 @@ export interface AttentionFile {
   mentions: Record<string, Record<string, number>>;
 }
 
+export interface SnapshotArticle {
+  title: string;
+  en?: string;
+  url: string;
+  outlet: string;
+}
+
+export interface SnapshotStory {
+  id: string;
+  title: string;
+  subject: string | null;
+  countries: string[];
+}
+
+/** One UTC day as the pipeline last saw it. Local-edition countries only. */
+export interface Snapshot {
+  date: string;
+  updated: string;
+  countries: Record<string, SnapshotArticle[]>;
+  stories: SnapshotStory[];
+}
+
+export interface HistoryIndex {
+  /** Available days, oldest first, YYYY-MM-DD. */
+  dates: string[];
+}
+
 /** Optional files: null when the pipeline has not produced them yet. */
 async function loadOptional<T>(path: string): Promise<T | null> {
   const res = await fetch(path);
@@ -87,6 +116,8 @@ async function loadOptional<T>(path: string): Promise<T | null> {
 
 export const loadShared = () => loadOptional<SharedFile>("/data/shared.json");
 export const loadAttention = () => loadOptional<AttentionFile>("/data/attention.json");
+export const loadHistoryIndex = () => loadOptional<HistoryIndex>("/data/history/index.json");
+export const loadSnapshot = (date: string) => loadOptional<Snapshot>(`/data/history/${date}.json`);
 
 export async function loadIndex(): Promise<IndexFile> {
   const res = await fetch("/data/index.json");

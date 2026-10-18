@@ -5,14 +5,18 @@ import { countryFocus, loadCountries, type CountryFeature } from "@/lib/geo";
 import {
   loadAttention,
   loadCountry,
+  loadHistoryIndex,
   loadIndex,
   loadShared,
+  loadSnapshot,
   type AttentionFile,
   type CountryFile,
   type IndexFile,
   type SharedFile,
-  type SharedStory,
+  type Snapshot,
+  type SnapshotStory,
 } from "@/lib/data";
+import { displayName } from "@/lib/names";
 import { inbound, mostWatched, outbound, tintMap } from "@/lib/attention";
 import { readUrlState, writeUrlState } from "@/lib/urlState";
 import { useViewport } from "@/lib/useViewport";
@@ -25,6 +29,7 @@ import BottomSheet from "./BottomSheet";
 import WorldStories from "./WorldStories";
 import StoryPanel from "./StoryPanel";
 import WorldSummary from "./WorldSummary";
+import TimeControl from "./TimeControl";
 import type { SharedRef } from "./ArticleList";
 
 /** Desktop side panel width in px, capped so the globe keeps two thirds. */
@@ -47,6 +52,10 @@ export default function App() {
   const [focusStoryId, setFocusStoryId] = useState<string | null>(null);
   // Country to return to when the story panel closes.
   const [storyFrom, setStoryFrom] = useState<string | null>(null);
+  // Time machine: archived days, the one being viewed, and loaded snapshots.
+  const [historyDates, setHistoryDates] = useState<string[]>([]);
+  const [historyDate, setHistoryDate] = useState<string | null>(null);
+  const [snapshots, setSnapshots] = useState<Record<string, Snapshot | null>>({});
   // Country files already fetched, keyed by code. Null marks "no file".
   const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
@@ -79,7 +88,30 @@ export default function App() {
       })
       .catch(console.error);
     loadAttention().then(setAttention).catch(console.error);
+    loadHistoryIndex()
+      .then((h) => {
+        const dates = h?.dates ?? [];
+        setHistoryDates(dates);
+        if (wanted.date && dates.includes(wanted.date)) setHistoryDate(wanted.date);
+      })
+      .catch(console.error);
   }, [initialSearch]);
+
+  // Fetch a snapshot the first time its day is viewed.
+  useEffect(() => {
+    if (!historyDate || historyDate in snapshots) return;
+    const date = historyDate;
+    loadSnapshot(date)
+      .then((snap) => setSnapshots((m) => ({ ...m, [date]: snap })))
+      .catch((err) => {
+        console.error(err);
+        setSnapshots((m) => ({ ...m, [date]: null }));
+      });
+  }, [historyDate, snapshots]);
+  const snapshot = historyDate ? (snapshots[historyDate] ?? null) : null;
+  const historyLabel = historyDate
+    ? new Date(`${historyDate}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })
+    : null;
 
   // Fetch the selected country's stories once, then keep them. The index
   // says which countries have a file, so no request is made for the rest.
@@ -109,7 +141,7 @@ export default function App() {
 
   // Lookups by country code: display name and a point to draw arcs from.
   const byCode = useMemo(() => new Map(countries.map((c) => [c.properties.code, c])), [countries]);
-  const nameOf = useCallback((code: string) => byCode.get(code)?.properties.name ?? code, [byCode]);
+  const nameOf = useCallback((code: string) => displayName(code, byCode.get(code)?.properties.name), [byCode]);
   const centroids = useMemo(() => {
     const m = new Map<string, { lat: number; lng: number }>();
     for (const c of countries) {
@@ -122,19 +154,32 @@ export default function App() {
   // Arcs: a selected country's shared stories; otherwise the focused story,
   // or faintly the stories most countries share. Lines start from the
   // country a story is about, so the globe shows where attention points.
+  // Stories for the current day: the archive's when a past day is viewed.
+  const dayStories = useMemo<SnapshotStory[]>(
+    () =>
+      historyDate
+        ? (snapshot?.stories ?? [])
+        : (shared?.stories ?? []).map((s) => ({ id: s.id, title: s.title, subject: s.subject ?? null, countries: s.countries })),
+    [historyDate, snapshot, shared],
+  );
+
+  /** Most reader countries drawn for the landing story. */
+  const LANDING_ARCS = 20;
+
   const arcs = useMemo<GlobeArc[]>(() => {
-    const stories = shared?.stories ?? [];
-    let picked: { story: SharedStory; strength: number }[];
+    const stories = dayStories;
+    let picked: { story: SnapshotStory; strength: number; limit: number }[];
     if (selectedCode) {
-      picked = stories.filter((s) => s.countries.includes(selectedCode)).map((story) => ({ story, strength: 1 }));
+      picked = stories.filter((s) => s.countries.includes(selectedCode)).map((story) => ({ story, strength: 1, limit: Infinity }));
     } else if (focusStoryId) {
-      picked = stories.filter((s) => s.id === focusStoryId).map((story) => ({ story, strength: 1 }));
+      picked = stories.filter((s) => s.id === focusStoryId).map((story) => ({ story, strength: 1, limit: Infinity }));
     } else {
-      // Only the three most-shared stories, or the globe turns to spaghetti.
-      picked = stories.slice(0, 3).map((story) => ({ story, strength: 0.4 }));
+      // Only the most-shared story, and only its strongest readers, so the
+      // landing globe stays calm.
+      picked = stories.slice(0, 1).map((story) => ({ story, strength: 0.4, limit: LANDING_ARCS }));
     }
     const out = new Map<string, GlobeArc>();
-    for (const { story, strength } of picked) {
+    for (const { story, strength, limit } of picked) {
       const hub =
         selectedCode && story.countries.includes(selectedCode)
           ? selectedCode
@@ -143,8 +188,10 @@ export default function App() {
             : story.countries[0];
       const from = centroids.get(hub);
       if (!from) continue;
+      let drawn = 0;
       for (const code of story.countries) {
-        if (code === hub) continue;
+        if (code === hub || drawn >= limit) continue;
+        drawn++;
         const to = centroids.get(code);
         if (!to) continue;
         const key = [hub, code].sort().join("-");
@@ -155,16 +202,22 @@ export default function App() {
       }
     }
     return [...out.values()];
-  }, [shared, selectedCode, focusStoryId, centroids]);
+  }, [dayStories, selectedCode, focusStoryId, centroids]);
 
   // World-coverage countries have no "own news", so only the inbound view applies.
   const selectedKind = selectedCode ? (coverage.get(selectedCode) ?? "local") : "local";
   const effectiveMode: AttentionMode = selectedKind === "world" ? "inbound" : attentionMode;
 
   // Tints: who the selected country is reading about, or who reads about it.
+  // Attention is not archived, so past days show none.
   const mentions = useMemo(
-    () => (selectedCode ? (effectiveMode === "outbound" ? outbound(attention, selectedCode, 12) : inbound(attention, selectedCode, 12)) : []),
-    [attention, selectedCode, effectiveMode],
+    () =>
+      selectedCode && !historyDate
+        ? effectiveMode === "outbound"
+          ? outbound(attention, selectedCode, 12)
+          : inbound(attention, selectedCode, 12)
+        : [],
+    [attention, selectedCode, effectiveMode, historyDate],
   );
   const tints = useMemo(() => tintMap(mentions), [mentions]);
   // Until the pipeline has translated anything, there is nothing to show.
@@ -188,6 +241,7 @@ export default function App() {
       country: selectedCode ?? undefined,
       about: filterAbout ?? undefined,
       story: focusStoryId ?? undefined,
+      date: historyDate ?? undefined,
     });
     const url = `${window.location.pathname}${query}`;
     if (url !== `${window.location.pathname}${window.location.search}`) window.history.replaceState(null, "", url);
@@ -202,9 +256,9 @@ export default function App() {
     // land after a fast data load; set it again shortly after.
     const t = setTimeout(() => (document.title = title), 1500);
     return () => clearTimeout(t);
-  }, [selectedCode, filterAbout, focusStoryId, focusedStory, byCode]);
+  }, [selectedCode, filterAbout, focusStoryId, focusedStory, byCode, historyDate]);
 
-  const topStory = shared?.stories[0] ?? null;
+  const topStory = dayStories[0] ?? null;
   const watched = useMemo(() => mostWatched(attention, 1)[0] ?? null, [attention]);
 
   const countryState: CountryState = useMemo(() => {
@@ -252,6 +306,13 @@ export default function App() {
     setSelectedCode(storyFrom);
     setStoryFrom(null);
   }, [storyFrom]);
+  // Changing day keeps the country but drops anything that needs live data.
+  const changeDate = useCallback((date: string | null) => {
+    setHistoryDate(date);
+    setFocusStoryId(null);
+    setStoryFrom(null);
+    setFilterAbout(null);
+  }, []);
   const changeMode = useCallback((m: AttentionMode) => {
     setAttentionMode(m);
     setFilterAbout(null);
@@ -301,7 +362,14 @@ export default function App() {
             The stories each country is reading right now.
           </p>
           {!panelOpen && (
-            <WorldSummary topStory={topStory} mostWatched={watched} nameOf={nameOf} onStory={openStory} onCountry={(c) => select(c)} />
+            <WorldSummary
+              topStory={topStory}
+              mostWatched={watched}
+              nameOf={nameOf}
+              onStory={openStory}
+              onCountry={(c) => select(c)}
+              past={historyLabel}
+            />
           )}
         </div>
         <div className="pointer-events-auto w-full md:absolute md:left-1/2 md:w-80 md:-translate-x-1/2">
@@ -315,9 +383,26 @@ export default function App() {
         </p>
       )}
 
-      {!selected && shared && vp.isDesktop && (
+      {(historyDates.length > 1 || historyDate) && (
+        <div
+          className={`pointer-events-none absolute z-20 flex justify-center ${
+            vp.isDesktop ? "inset-x-0 bottom-14" : "inset-x-0 top-[7.5rem]"
+          } ${!vp.isDesktop && panelOpen ? "hidden" : ""}`}
+        >
+          <TimeControl dates={historyDates} date={historyDate} onChange={changeDate} />
+        </div>
+      )}
+
+      {!selected && !focusedStory && dayStories.length > 0 && vp.isDesktop && (
         <div className="pointer-events-none absolute bottom-6 left-5 z-20 sm:left-7">
-          <WorldStories stories={shared.stories} focusId={focusStoryId} onFocus={openStory} nameOf={nameOf} />
+          <WorldStories
+            stories={dayStories}
+            focusId={focusStoryId}
+            onFocus={openStory}
+            nameOf={nameOf}
+            heading={historyLabel ? `Stories the world shared on ${historyLabel}` : "Stories the world shares"}
+            interactive={!historyDate}
+          />
         </div>
       )}
 
@@ -346,6 +431,12 @@ export default function App() {
               onFilter={setFilterAbout}
               shared={sharedRefs}
               onStory={openStory}
+              name={nameOf(selected.properties.code)}
+              history={
+                historyDate && historyLabel
+                  ? { label: historyLabel, articles: snapshot?.countries[selected.properties.code] ?? null }
+                  : null
+              }
             />
           )}
         </aside>
@@ -368,6 +459,12 @@ export default function App() {
               onFilter={setFilterAbout}
               shared={sharedRefs}
               onStory={openStory}
+              name={nameOf(selected.properties.code)}
+              history={
+                historyDate && historyLabel
+                  ? { label: historyLabel, articles: snapshot?.countries[selected.properties.code] ?? null }
+                  : null
+              }
             />
           )}
         </BottomSheet>

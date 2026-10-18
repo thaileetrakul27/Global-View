@@ -17,6 +17,8 @@ export interface SharedStory {
   id: string;
   /** Short neutral English title for the event. */
   title: string;
+  /** When this story was first seen, ISO 8601. */
+  since: string;
   /** The country the story is mostly about, or null when no country dominates. */
   subject: string | null;
   /** Country codes reading it, most first. */
@@ -130,10 +132,43 @@ export function toStories(groups: z.infer<typeof sharedSchema>, candidates: Cand
     }
     if (counts.size < 2 || !g.title.trim()) continue;
     const countries = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([code]) => code);
-    stories.push({ id: storyId(g.title), title: g.title.trim(), subject: storySubject(articles), countries, articles });
+    stories.push({ id: storyId(g.title), title: g.title.trim(), since: "", subject: storySubject(articles), countries, articles });
   }
   stories.sort((a, b) => b.countries.length - a.countries.length || b.articles.length - a.articles.length);
   return stories;
+}
+
+/** Share of the smaller story's articles that also appear in the other. */
+function overlap(a: SharedStory, b: { articles: { url: string }[] }): number {
+  const urls = new Set(b.articles.map((x) => x.url));
+  const hits = a.articles.filter((x) => urls.has(x.url)).length;
+  return hits / Math.min(a.articles.length, b.articles.length || 1);
+}
+
+/**
+ * Carries ids, titles and first-seen times over from the previous run when
+ * a new story is mostly the same articles, so links and titles stay stable
+ * while the grouping is redone every few hours. Unmatched stories start now.
+ */
+export function reconcileStories(fresh: SharedStory[], previous: SharedStory[] | undefined, now: string): SharedStory[] {
+  const used = new Set<string>();
+  return fresh.map((story) => {
+    let best: SharedStory | null = null;
+    let bestScore = 0;
+    for (const old of previous ?? []) {
+      if (used.has(old.id)) continue;
+      const score = overlap(story, old);
+      if (score > bestScore) {
+        best = old;
+        bestScore = score;
+      }
+    }
+    if (best && bestScore >= 0.5) {
+      used.add(best.id);
+      return { ...story, id: best.id, title: best.title, since: best.since || now };
+    }
+    return { ...story, since: now };
+  });
 }
 
 /**

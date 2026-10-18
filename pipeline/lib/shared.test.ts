@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import type { AiClient } from "./ai";
-import { buildSharedPrompt, collectCandidates, findSharedStories, storyId, storySubject, toStories, type Candidate } from "./shared";
+import { buildSharedPrompt, collectCandidates, findSharedStories, reconcileStories, storyId, storySubject, toStories, type Candidate, type SharedStory } from "./shared";
 
 const now = "2026-10-18T12:00:00.000Z";
 const a = (code: string, url: string, en: string) => ({
@@ -49,13 +49,39 @@ describe("toStories", () => {
       cands,
     );
     expect(stories).toHaveLength(1);
-    expect(stories[0]).toMatchObject({ id: "fed-holds-rates", title: "Fed holds rates", subject: "US" });
+    expect(stories[0]).toMatchObject({ id: "fed-holds-rates", title: "Fed holds rates", subject: "US", since: "" });
     expect(stories[0].countries).toEqual(["GB", "TH", "US"]);
     expect(stories[0].articles.map((x) => x.url)).toEqual(["g1", "u1", "t2"]);
   });
   it("orders countries by article count then code", () => {
     const s = toStories({ stories: [{ title: "x", items: [3, 2, 0] }] }, cands);
     expect(s[0].countries).toEqual(["TH", "US"]);
+  });
+});
+
+describe("reconcileStories", () => {
+  const mk = (id: string, title: string, urls: string[], since = ""): SharedStory => ({
+    id,
+    title,
+    since,
+    subject: null,
+    countries: ["TH", "GB"],
+    articles: urls.map((u) => ({ code: "TH", url: u, title: u, en: u, outlet: "O", about: [] })),
+  });
+  it("keeps the old id, title and first-seen time when most articles match", () => {
+    const prev = [mk("old-id", "Old title", ["a", "b", "c"], "2026-10-18T06:00:00.000Z")];
+    const out = reconcileStories([mk("new-id", "New title", ["b", "c", "d", "e"])], prev, "now");
+    expect(out[0]).toMatchObject({ id: "old-id", title: "Old title", since: "2026-10-18T06:00:00.000Z" });
+    expect(out[0].articles).toHaveLength(4);
+  });
+  it("starts a new story when overlap is small, and never reuses one old story twice", () => {
+    const prev = [mk("old", "Old", ["a", "b", "c", "d"], "then")];
+    const out = reconcileStories([mk("x", "X", ["a", "b", "c"]), mk("y", "Y", ["a", "q", "r"]), mk("z", "Z", ["m", "n"])], prev, "now");
+    expect(out.map((s) => s.id)).toEqual(["old", "y", "z"]);
+    expect(out[1].since).toBe("now");
+  });
+  it("handles no previous file", () => {
+    expect(reconcileStories([mk("x", "X", ["a"])], undefined, "now")[0].since).toBe("now");
   });
 });
 

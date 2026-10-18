@@ -8,6 +8,8 @@ export interface UrlState {
   about?: string;
   /** Open shared story id. */
   story?: string;
+  /** A past day being viewed, YYYY-MM-DD. */
+  date?: string;
 }
 
 const CODE = /^[A-Z]{2,3}$/;
@@ -22,6 +24,8 @@ export function readUrlState(search: string): UrlState {
   if (country && CODE.test(country)) state.country = country;
   if (state.country && about && CODE.test(about)) state.about = about;
   if (!state.country && story && /^[a-z0-9-]{1,80}$/.test(story)) state.story = story;
+  const date = p.get("date");
+  if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) state.date = date;
   return state;
 }
 
@@ -34,6 +38,7 @@ export function writeUrlState(state: UrlState): string {
   } else if (state.story) {
     p.set("story", state.story);
   }
+  if (state.date) p.set("date", state.date);
   const s = p.toString();
   return s ? `?${s}` : "";
 }
