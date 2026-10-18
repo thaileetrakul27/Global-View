@@ -39,8 +39,8 @@ export default function WorldStories({ stories, focusId, onFocus, nameOf }: Prop
               >
                 <span className="block font-serif text-[0.95rem] leading-snug">{s.title}</span>
                 <span className="mt-0.5 block text-xs text-muted">
-                  {s.countries.length} countries · {s.countries.slice(0, 4).map(nameOf).join(", ")}
-                  {s.countries.length > 4 ? "…" : ""}
+                  {s.subject ? `About ${nameOf(s.subject)} · ` : ""}
+                  read in {s.countries.length} countries
                 </span>
               </button>
             </li>

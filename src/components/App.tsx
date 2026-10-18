@@ -95,7 +95,8 @@ export default function App() {
   }, [countries]);
 
   // Arcs: a selected country's shared stories; otherwise the focused story,
-  // or faintly the stories most countries share.
+  // or faintly the stories most countries share. Lines start from the
+  // country a story is about, so the globe shows where attention points.
   const arcs = useMemo<GlobeArc[]>(() => {
     const stories = shared?.stories ?? [];
     let picked: { story: SharedStory; strength: number }[];
@@ -108,7 +109,12 @@ export default function App() {
     }
     const out = new Map<string, GlobeArc>();
     for (const { story, strength } of picked) {
-      const hub = selectedCode && story.countries.includes(selectedCode) ? selectedCode : story.countries[0];
+      const hub =
+        selectedCode && story.countries.includes(selectedCode)
+          ? selectedCode
+          : story.subject && centroids.has(story.subject)
+            ? story.subject
+            : story.countries[0];
       const from = centroids.get(hub);
       if (!from) continue;
       for (const code of story.countries) {

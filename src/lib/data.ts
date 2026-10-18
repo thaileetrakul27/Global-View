@@ -44,11 +44,14 @@ export interface SharedArticle {
   title: string;
   en: string;
   outlet: string;
+  about?: string[];
 }
 
 export interface SharedStory {
   id: string;
   title: string;
+  /** The country the story is mostly about; absent in older files. */
+  subject?: string | null;
   /** Country codes reading it, most first. */
   countries: string[];
   articles: SharedArticle[];

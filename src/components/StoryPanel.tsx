@@ -37,6 +37,7 @@ export default function StoryPanel({ story, nameOf, onClose, onSelectCountry }: 
             {story.title}
           </h2>
           <p className="mt-2 text-xs text-muted">
+            {story.subject ? `About ${nameOf(story.subject)} · ` : ""}
             Read in {story.countries.length} countries · {story.articles.length} articles
           </p>
         </div>

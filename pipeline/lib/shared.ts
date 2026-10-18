@@ -9,12 +9,16 @@ export interface SharedArticle {
   title: string;
   en: string;
   outlet: string;
+  /** Countries this headline is about. */
+  about: string[];
 }
 
 export interface SharedStory {
   id: string;
   /** Short neutral English title for the event. */
   title: string;
+  /** The country the story is mostly about, or null when no country dominates. */
+  subject: string | null;
   /** Country codes reading it, most first. */
   countries: string[];
   articles: SharedArticle[];
@@ -92,6 +96,14 @@ export function storyId(title: string): string {
     .slice(0, 60);
 }
 
+/** The country most of a story's headlines are about, if any. */
+export function storySubject(articles: { about: string[] }[]): string | null {
+  const counts = new Map<string, number>();
+  for (const a of articles) for (const code of a.about) counts.set(code, (counts.get(code) ?? 0) + 1);
+  const best = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0];
+  return best ? best[0] : null;
+}
+
 /**
  * Turns the model's groups into stories, dropping bad indices, repeats and
  * groups that do not span two countries. Sorted by how many countries share them.
@@ -106,12 +118,19 @@ export function toStories(groups: z.infer<typeof sharedSchema>, candidates: Cand
       const c = candidates[i];
       if (!c || used.has(i)) continue;
       used.add(i);
-      articles.push({ code: c.code, url: c.article.url, title: c.article.title, en: c.article.en, outlet: c.article.outlet });
+      articles.push({
+        code: c.code,
+        url: c.article.url,
+        title: c.article.title,
+        en: c.article.en,
+        outlet: c.article.outlet,
+        about: c.article.about ?? [],
+      });
       counts.set(c.code, (counts.get(c.code) ?? 0) + 1);
     }
     if (counts.size < 2 || !g.title.trim()) continue;
     const countries = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([code]) => code);
-    stories.push({ id: storyId(g.title), title: g.title.trim(), countries, articles });
+    stories.push({ id: storyId(g.title), title: g.title.trim(), subject: storySubject(articles), countries, articles });
   }
   stories.sort((a, b) => b.countries.length - a.countries.length || b.articles.length - a.articles.length);
   return stories;
