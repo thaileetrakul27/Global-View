@@ -170,7 +170,12 @@ export default function App() {
     const stories = dayStories;
     let picked: { story: SnapshotStory; strength: number; limit: number }[];
     if (selectedCode) {
-      picked = stories.filter((s) => s.countries.includes(selectedCode)).map((story) => ({ story, strength: 1, limit: Infinity }));
+      // The selected country's three most-shared stories; everything it
+      // shares with anyone would be a burst of dozens of lines.
+      picked = stories
+        .filter((s) => s.countries.includes(selectedCode))
+        .slice(0, 3)
+        .map((story) => ({ story, strength: 1, limit: LANDING_ARCS }));
     } else if (focusStoryId) {
       picked = stories.filter((s) => s.id === focusStoryId).map((story) => ({ story, strength: 1, limit: Infinity }));
     } else {
