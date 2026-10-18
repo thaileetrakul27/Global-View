@@ -2,46 +2,522 @@
   "countries": [
     {
       "code": "TH",
-      "gdelt": "TH",
       "name": "Thailand",
       "enabled": true,
-      "axis": {
-        "summary": "Reformist and anti-establishment to conservative and pro-establishment",
-        "left": "reformist",
-        "right": "conservative"
+      "edition": {
+        "hl": "th",
+        "gl": "TH",
+        "ceid": "TH:th"
       }
     },
     {
       "code": "GB",
-      "gdelt": "UK",
       "name": "United Kingdom",
       "enabled": true,
-      "axis": {
-        "summary": "Labour-leaning left to Conservative and Reform-leaning right",
-        "left": "left",
-        "right": "right"
+      "edition": {
+        "hl": "en-GB",
+        "gl": "GB",
+        "ceid": "GB:en"
       }
     },
     {
       "code": "US",
-      "gdelt": "US",
       "name": "United States",
       "enabled": true,
-      "axis": {
-        "summary": "Democratic-leaning to Republican-leaning",
-        "left": "Democratic",
-        "right": "Republican"
+      "edition": {
+        "hl": "en-US",
+        "gl": "US",
+        "ceid": "US:en"
+      }
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "enabled": true,
+      "edition": {
+        "hl": "ja",
+        "gl": "JP",
+        "ceid": "JP:ja"
+      }
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "enabled": true,
+      "edition": {
+        "hl": "de",
+        "gl": "DE",
+        "ceid": "DE:de"
+      }
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "enabled": true,
+      "edition": {
+        "hl": "fr",
+        "gl": "FR",
+        "ceid": "FR:fr"
+      }
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "enabled": true,
+      "edition": {
+        "hl": "en-IN",
+        "gl": "IN",
+        "ceid": "IN:en"
+      }
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "enabled": true,
+      "edition": {
+        "hl": "pt-BR",
+        "gl": "BR",
+        "ceid": "BR:pt-419"
+      }
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "enabled": true,
+      "edition": {
+        "hl": "en-AU",
+        "gl": "AU",
+        "ceid": "AU:en"
+      }
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "enabled": true,
+      "edition": {
+        "hl": "en-CA",
+        "gl": "CA",
+        "ceid": "CA:en"
+      }
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "enabled": true,
+      "edition": {
+        "hl": "ko",
+        "gl": "KR",
+        "ceid": "KR:ko"
+      }
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "enabled": true,
+      "edition": {
+        "hl": "id",
+        "gl": "ID",
+        "ceid": "ID:id"
+      }
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "enabled": true,
+      "edition": {
+        "hl": "es-419",
+        "gl": "MX",
+        "ceid": "MX:es-419"
+      }
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "enabled": true,
+      "edition": {
+        "hl": "es",
+        "gl": "ES",
+        "ceid": "ES:es"
+      }
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "enabled": true,
+      "edition": {
+        "hl": "it",
+        "gl": "IT",
+        "ceid": "IT:it"
+      }
+    },
+    {
+      "code": "TR",
+      "name": "Turkey",
+      "enabled": true,
+      "edition": {
+        "hl": "tr",
+        "gl": "TR",
+        "ceid": "TR:tr"
+      }
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "enabled": true,
+      "edition": {
+        "hl": "vi",
+        "gl": "VN",
+        "ceid": "VN:vi"
+      }
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "enabled": true,
+      "edition": {
+        "hl": "en-ZA",
+        "gl": "ZA",
+        "ceid": "ZA:en"
+      }
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "enabled": true,
+      "edition": {
+        "hl": "en-NG",
+        "gl": "NG",
+        "ceid": "NG:en"
+      }
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "enabled": true,
+      "edition": {
+        "hl": "ar",
+        "gl": "EG",
+        "ceid": "EG:ar"
+      }
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "enabled": true,
+      "edition": {
+        "hl": "es-419",
+        "gl": "AR",
+        "ceid": "AR:es-419"
+      }
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "enabled": true,
+      "edition": {
+        "hl": "en-PH",
+        "gl": "PH",
+        "ceid": "PH:en"
+      }
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "enabled": true,
+      "edition": {
+        "hl": "ms-MY",
+        "gl": "MY",
+        "ceid": "MY:ms"
+      }
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "enabled": true,
+      "edition": {
+        "hl": "en-NZ",
+        "gl": "NZ",
+        "ceid": "NZ:en"
+      }
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "enabled": true,
+      "edition": {
+        "hl": "en-IE",
+        "gl": "IE",
+        "ceid": "IE:en"
+      }
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "enabled": true,
+      "edition": {
+        "hl": "nl",
+        "gl": "NL",
+        "ceid": "NL:nl"
+      }
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "enabled": true,
+      "edition": {
+        "hl": "sv",
+        "gl": "SE",
+        "ceid": "SE:sv"
+      }
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "enabled": true,
+      "edition": {
+        "hl": "pl",
+        "gl": "PL",
+        "ceid": "PL:pl"
+      }
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "enabled": true,
+      "edition": {
+        "hl": "uk",
+        "gl": "UA",
+        "ceid": "UA:uk"
+      }
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "enabled": true,
+      "edition": {
+        "hl": "ar",
+        "gl": "SA",
+        "ceid": "SA:ar"
+      }
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "enabled": true,
+      "edition": {
+        "hl": "en-PK",
+        "gl": "PK",
+        "ceid": "PK:en"
+      }
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "enabled": true,
+      "edition": {
+        "hl": "en-KE",
+        "gl": "KE",
+        "ceid": "KE:en"
       }
     },
     {
       "code": "CN",
-      "gdelt": "CH",
       "name": "China",
-      "enabled": false,
-      "axis": {
-        "summary": "Critical of the government to aligned with the state line",
-        "left": "critical",
-        "right": "state-aligned"
+      "enabled": true,
+      "edition": {
+        "hl": "zh-CN",
+        "gl": "CN",
+        "ceid": "CN:zh-Hans"
+      }
+    },
+    {
+      "code": "TW",
+      "name": "Taiwan",
+      "enabled": true,
+      "edition": {
+        "hl": "zh-TW",
+        "gl": "TW",
+        "ceid": "TW:zh-Hant"
+      }
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "enabled": true,
+      "edition": {
+        "hl": "ru",
+        "gl": "RU",
+        "ceid": "RU:ru"
+      }
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "enabled": true,
+      "edition": {
+        "hl": "es-419",
+        "gl": "CO",
+        "ceid": "CO:es-419"
+      }
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "enabled": true,
+      "edition": {
+        "hl": "es-419",
+        "gl": "CL",
+        "ceid": "CL:es-419"
+      }
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "enabled": true,
+      "edition": {
+        "hl": "es-419",
+        "gl": "PE",
+        "ceid": "PE:es-419"
+      }
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "enabled": true,
+      "edition": {
+        "hl": "pt-PT",
+        "gl": "PT",
+        "ceid": "PT:pt-150"
+      }
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "enabled": true,
+      "edition": {
+        "hl": "el",
+        "gl": "GR",
+        "ceid": "GR:el"
+      }
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "enabled": true,
+      "edition": {
+        "hl": "he",
+        "gl": "IL",
+        "ceid": "IL:he"
+      }
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "enabled": true,
+      "edition": {
+        "hl": "bn",
+        "gl": "BD",
+        "ceid": "BD:bn"
+      }
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "enabled": true,
+      "edition": {
+        "hl": "en-GH",
+        "gl": "GH",
+        "ceid": "GH:en"
+      }
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "enabled": true,
+      "edition": {
+        "hl": "en-ET",
+        "gl": "ET",
+        "ceid": "ET:en"
+      }
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "enabled": true,
+      "edition": {
+        "hl": "fr",
+        "gl": "MA",
+        "ceid": "MA:fr"
+      }
+    },
+    {
+      "code": "HU",
+      "name": "Hungary",
+      "enabled": true,
+      "edition": {
+        "hl": "hu",
+        "gl": "HU",
+        "ceid": "HU:hu"
+      }
+    },
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "enabled": true,
+      "edition": {
+        "hl": "cs",
+        "gl": "CZ",
+        "ceid": "CZ:cs"
+      }
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "enabled": true,
+      "edition": {
+        "hl": "ro",
+        "gl": "RO",
+        "ceid": "RO:ro"
+      }
+    },
+    {
+      "code": "NO",
+      "name": "Norway",
+      "enabled": true,
+      "edition": {
+        "hl": "no",
+        "gl": "NO",
+        "ceid": "NO:no"
+      }
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "enabled": true,
+      "edition": {
+        "hl": "fr",
+        "gl": "BE",
+        "ceid": "BE:fr"
+      }
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "enabled": true,
+      "edition": {
+        "hl": "de",
+        "gl": "CH",
+        "ceid": "CH:de"
+      }
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "enabled": true,
+      "edition": {
+        "hl": "de",
+        "gl": "AT",
+        "ceid": "AT:de"
       }
     }
   ]

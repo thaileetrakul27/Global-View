@@ -1,40 +1,38 @@
 # Pipeline
 
-Everything that fetches and labels news lives here and runs in GitHub Actions. The website never calls an API; it only reads the JSON this pipeline writes into `public/data`.
+Fetches each country's most popular articles and writes the JSON the website reads into `public/data`. It runs in GitHub Actions every three hours (`.github/workflows/update-news.yml`). The website never calls an API.
 
-## Steps
+## What "most popular" means
 
-| Script | Phase | What it does |
-| --- | --- | --- |
-| `npm run pipeline:fetch` | 4 | Fetches recent articles for each enabled country from the GDELT DOC 2.0 API and writes cleaned lists to `pipeline/out/raw/<CODE>.json` |
+The top stories feed of that country's Google News edition. Each run keeps up to 30 articles per country, in Google's order, after removing duplicate headlines. No article text is fetched or stored; the site shows headlines, outlet names, times and links.
 
-Later phases add labelling, story grouping and publishing.
-
-## Fetch
+## Run it
 
 ```bash
-npm run pipeline:fetch                       # every enabled country in data/countries.json
-npm run pipeline:fetch -- --countries TH     # just Thailand, enabled or not
-npm run pipeline:fetch -- --countries TH,GB --timespan 6h --max 50
+npm run pipeline:update                          # every enabled country in data/countries.json
+npm run pipeline:update -- --countries TH        # one country, enabled or not
+npm run pipeline:update -- --countries TH,GB --max 20
 ```
 
 | Flag | Default | Meaning |
 | --- | --- | --- |
-| `--countries` | all enabled | Comma-separated ISO codes to fetch |
-| `--timespan` | `12h` | How far back GDELT looks |
-| `--max` | `75` | Records requested per country (GDELT caps at 250) |
-| `--delay` | `5000` | Milliseconds to wait between requests; GDELT asks for at least 5000 |
-| `--out` | `pipeline/out/raw` | Where raw results go |
+| `--countries` | all enabled | Comma-separated ISO codes |
+| `--max` | `30` | Articles kept per country |
+| `--delay` | `2000` | Milliseconds between feed requests |
+| `--out` | `public/data` | Where the site's JSON goes |
 
-Set `GDELT_ENDPOINT` to point the script at a local stand-in server when testing without the network.
+Set `NEWS_FEED_ENDPOINT` to point the script at a local stand-in server when testing without the network.
 
-GDELT answers rate limits and errors with plain text, so a request that does not come back as JSON counts as a failure. Each country gets one retry after the delay; if both attempts fail the country is skipped and the run continues. If every country fails the script exits non-zero and writes nothing.
+## Failure behaviour
 
-Cleaning drops, in this order: articles with no headline or URL, domains on `pipeline/config/non-news-domains.json` (subdomains included), and duplicates by URL or by normalised headline (case, punctuation and spacing ignored).
+Each feed gets one retry. A country that fails twice keeps its previous file and its previous index entry, so the site shows slightly older stories for it rather than nothing. The run exits non-zero only if every country fails, in which case nothing is written and the workflow commits nothing.
 
-## Country codes
+## Output
 
-GDELT filters by FIPS country code, not ISO, so each entry in `data/countries.json` carries a `gdelt` code: the United Kingdom is `UK`, China is `CH`. The full list is in `pipeline/data/gdelt-countries.txt` (from `http://data.gdeltproject.org/api/v2/guides/LOOKUP-COUNTRIES.TXT`) and the fetch script refuses to run with a code that is not on it.
+| File | Holds |
+| --- | --- |
+| `public/data/index.json` | When the pipeline last ran, and per country the name, article count and refresh time. Colours the globe |
+| `public/data/countries/TH.json` | That country's articles: title, link, outlet, outlet site, publish time |
 
 ## Tests
 
@@ -42,4 +40,4 @@ GDELT filters by FIPS country code, not ISO, so each entry in `data/countries.js
 npm test
 ```
 
-Every pipeline function has a test next to it (`*.test.ts`). Network calls are mocked.
+Every pipeline function has a test next to it (`*.test.ts`). Network calls are mocked. The tests also check that every country in `data/countries.json` exists in the globe's shapes.

@@ -1,22 +1,31 @@
 # Global View
 
-A light, clean website with an interactive globe. Click a country to see its top news stories, grouped by event, with each article labelled on that country's own political spectrum.
+A light, clean website with an interactive globe. Click a country to see the most popular news stories there right now, each linking to its publisher.
 
-The site is a static Next.js export. All news fetching and labelling lives in `/pipeline` and runs in GitHub Actions; the website only reads JSON from `public/data`.
+The site is a static Next.js export. A GitHub Actions job refreshes the data every three hours from each country's Google News top-stories feed and commits it to `public/data`; Netlify redeploys on every commit. The website never calls an API.
 
 ## Develop
 
 ```bash
 npm install
-npm run dev
+npm run dev          # site at http://localhost:3000
+npm test             # pipeline and helper tests
+npm run pipeline:update -- --countries TH   # refresh one country's data locally
 ```
 
 ## Build
 
 ```bash
-npm run build   # writes the static site to /out
+npm run build        # writes the static site to /out
 ```
 
-## Data
+## Layout
 
-- `public/geo/countries.geojson`: Natural Earth 110m country shapes (public domain), slimmed to a code, a name and rounded coordinates.
+| Path | What it is |
+| --- | --- |
+| `src/` | The website |
+| `pipeline/` | The update script and its tests (see `pipeline/README.md`) |
+| `data/countries.json` | Which countries are shown and which Google News edition each uses |
+| `public/data/` | Generated article lists the site reads; written by the pipeline |
+| `public/geo/countries.geojson` | Natural Earth 110m country shapes (public domain), slimmed down |
+| `.github/workflows/update-news.yml` | The three-hourly update job |

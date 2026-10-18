@@ -1,0 +1,48 @@
+name: Update news
+
+on:
+  schedule:
+    # Every 3 hours, a few minutes past the hour to avoid the busiest minute.
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Never run two updates at once; a late run waits for the earlier one.
+concurrency:
+  group: update-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
+
+      # Exits non-zero if every feed fails, so nothing below runs and the
+      # previous data stays live.
+      - run: npm run pipeline:update
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update news"
+          git pull --rebase origin main
+          git push

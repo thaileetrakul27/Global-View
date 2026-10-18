@@ -12,8 +12,7 @@ const newsreader = Newsreader({
 
 export const metadata: Metadata = {
   title: "Global View",
-  description:
-    "Click a country to see its top stories and where each outlet sits on that country's own political spectrum.",
+  description: "Spin the globe and click a country to see the stories it is reading right now.",
 };
 
 export default function RootLayout({

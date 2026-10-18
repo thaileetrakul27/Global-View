@@ -1,33 +1,29 @@
-// Command-line flags for the pipeline scripts.
+// Command-line flags for the update script.
 
-export interface FetchArgs {
+export interface UpdateArgs {
   /** ISO codes to fetch, upper-cased. Undefined means every enabled country. */
   countries?: string[];
-  /** GDELT timespan, e.g. "12h". */
-  timespan: string;
-  /** Most records to ask GDELT for per country (GDELT caps at 250). */
-  maxRecords: number;
-  /** Minimum wait between GDELT requests, in milliseconds. */
+  /** Most articles kept per country. */
+  maxArticles: number;
+  /** Minimum wait between feed requests, in milliseconds. */
   delayMs: number;
-  /** Directory for raw results. */
+  /** Directory the website reads from. */
   outDir: string;
 }
 
-export const DEFAULT_FETCH_ARGS: FetchArgs = {
-  timespan: "12h",
-  maxRecords: 75,
-  delayMs: 5000,
-  outDir: "pipeline/out/raw",
+export const DEFAULT_UPDATE_ARGS: UpdateArgs = {
+  maxArticles: 30,
+  delayMs: 2000,
+  outDir: "public/data",
 };
 
 /**
  * Parses `--flag value` and `--flag=value` pairs. Unknown flags throw so a
  * typo never silently runs the whole pipeline with defaults.
  */
-export function parseFetchArgs(argv: string[]): FetchArgs {
-  const args: FetchArgs = { ...DEFAULT_FETCH_ARGS };
-  const pairs = toPairs(argv);
-  for (const [flag, value] of pairs) {
+export function parseUpdateArgs(argv: string[]): UpdateArgs {
+  const args: UpdateArgs = { ...DEFAULT_UPDATE_ARGS };
+  for (const [flag, value] of toPairs(argv)) {
     switch (flag) {
       case "countries":
         args.countries = value
@@ -35,11 +31,8 @@ export function parseFetchArgs(argv: string[]): FetchArgs {
           .map((c) => c.trim().toUpperCase())
           .filter(Boolean);
         break;
-      case "timespan":
-        args.timespan = value;
-        break;
       case "max":
-        args.maxRecords = positiveInt(flag, value);
+        args.maxArticles = positiveInt(flag, value);
         break;
       case "delay":
         args.delayMs = positiveInt(flag, value);

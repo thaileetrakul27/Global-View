@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { loadCountryConfig, loadGdeltCodes, selectCountries, unknownGdeltCodes, type CountryConfig } from "./countries";
+import { loadCountryConfig, loadGlobeCodes, selectCountries, type CountryConfig } from "./countries";
 
-const axis = { summary: "", left: "", right: "" };
-const TH: CountryConfig = { code: "TH", gdelt: "TH", name: "Thailand", enabled: true, axis };
-const GB: CountryConfig = { code: "GB", gdelt: "UK", name: "United Kingdom", enabled: true, axis };
-const CN: CountryConfig = { code: "CN", gdelt: "CH", name: "China", enabled: false, axis };
+const ed = { hl: "en", gl: "XX", ceid: "XX:en" };
+const TH: CountryConfig = { code: "TH", name: "Thailand", enabled: true, edition: ed };
+const GB: CountryConfig = { code: "GB", name: "United Kingdom", enabled: true, edition: ed };
+const CN: CountryConfig = { code: "CN", name: "China", enabled: false, edition: ed };
 
 describe("selectCountries", () => {
   it("returns enabled countries by default", () => {
@@ -18,16 +18,19 @@ describe("selectCountries", () => {
   });
 });
 
-describe("real config files", () => {
-  it("every country has a code GDELT knows", () => {
-    const known = loadGdeltCodes();
-    expect(known.get("UK")).toBe("United Kingdom");
-    expect(known.get("CH")).toBe("China");
-    expect(unknownGdeltCodes(loadCountryConfig(), known)).toEqual([]);
+describe("real config file", () => {
+  const all = loadCountryConfig();
+  it("has unique codes that all exist on the globe", () => {
+    const globe = loadGlobeCodes();
+    const codes = all.map((c) => c.code);
+    expect(new Set(codes).size).toBe(codes.length);
+    expect(codes.filter((c) => !globe.has(c))).toEqual([]);
   });
-  it("flags codes GDELT does not know", () => {
-    const bad: CountryConfig = { ...GB, gdelt: "GB" }; // GB is Gabon in GDELT, so this is "known" but wrong
-    const fake: CountryConfig = { ...TH, gdelt: "ZZ" };
-    expect(unknownGdeltCodes([bad, fake], loadGdeltCodes())).toEqual([fake]);
+  it("has a complete edition for every country", () => {
+    for (const c of all) {
+      expect(c.edition.hl, c.code).toBeTruthy();
+      expect(c.edition.gl, c.code).toBe(c.code);
+      expect(c.edition.ceid, c.code).toMatch(/^[A-Z]{2}:[a-zA-Z0-9-]+$/);
+    }
   });
 });

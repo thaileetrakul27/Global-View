@@ -1,22 +1,25 @@
 import { describe, expect, it } from "vitest";
-import { DEFAULT_FETCH_ARGS, parseFetchArgs } from "./args";
+import { DEFAULT_UPDATE_ARGS, parseUpdateArgs } from "./args";
 
-describe("parseFetchArgs", () => {
+describe("parseUpdateArgs", () => {
   it("uses defaults with no flags", () => {
-    expect(parseFetchArgs([])).toEqual(DEFAULT_FETCH_ARGS);
+    expect(parseUpdateArgs([])).toEqual(DEFAULT_UPDATE_ARGS);
   });
   it("upper-cases and splits --countries", () => {
-    expect(parseFetchArgs(["--countries", "th, gb"]).countries).toEqual(["TH", "GB"]);
-    expect(parseFetchArgs(["--countries=us"]).countries).toEqual(["US"]);
+    expect(parseUpdateArgs(["--countries", "th, gb"]).countries).toEqual(["TH", "GB"]);
+    expect(parseUpdateArgs(["--countries=us"]).countries).toEqual(["US"]);
   });
   it("parses numbers and strings", () => {
-    const a = parseFetchArgs(["--timespan", "6h", "--max", "50", "--delay=7000", "--out", "tmp"]);
-    expect(a).toMatchObject({ timespan: "6h", maxRecords: 50, delayMs: 7000, outDir: "tmp" });
+    expect(parseUpdateArgs(["--max", "10", "--delay=500", "--out", "tmp"])).toMatchObject({
+      maxArticles: 10,
+      delayMs: 500,
+      outDir: "tmp",
+    });
   });
   it("rejects unknown flags, missing values and bad numbers", () => {
-    expect(() => parseFetchArgs(["--nope", "1"])).toThrow(/Unknown flag/);
-    expect(() => parseFetchArgs(["--countries"])).toThrow(/needs a value/);
-    expect(() => parseFetchArgs(["--max", "zero"])).toThrow(/positive whole number/);
-    expect(() => parseFetchArgs(["TH"])).toThrow(/Unexpected argument/);
+    expect(() => parseUpdateArgs(["--nope", "1"])).toThrow(/Unknown flag/);
+    expect(() => parseUpdateArgs(["--countries"])).toThrow(/needs a value/);
+    expect(() => parseUpdateArgs(["--max", "zero"])).toThrow(/positive whole number/);
+    expect(() => parseUpdateArgs(["TH"])).toThrow(/Unexpected argument/);
   });
 });

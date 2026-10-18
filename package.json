@@ -9,9 +9,10 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "pipeline:fetch": "tsx pipeline/fetch.ts"
+    "pipeline:update": "tsx pipeline/update.ts"
   },
   "dependencies": {
+    "fast-xml-parser": "^5.11.2",
     "next": "16.4.2",
     "react": "19.3.0",
     "react-dom": "19.3.0",

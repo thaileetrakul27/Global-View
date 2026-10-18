@@ -1,44 +1,265 @@
 {
-  "updated": "2026-10-18T09:12:00Z",
+  "updated": "2026-10-18T11:51:50.120Z",
   "countries": {
     "TH": {
       "name": "Thailand",
-      "stories": 5,
-      "articles": 18,
-      "balance": {
-        "0": 5,
-        "1": 3,
-        "2": 3,
-        "-2": 3,
-        "-1": 3,
-        "unclear": 1
-      }
+      "articles": 30,
+      "updated": "2026-10-18T11:49:42.390Z"
     },
     "GB": {
       "name": "United Kingdom",
-      "stories": 4,
-      "articles": 14,
-      "balance": {
-        "0": 3,
-        "1": 3,
-        "2": 1,
-        "-2": 2,
-        "-1": 4,
-        "unclear": 1
-      }
+      "articles": 30,
+      "updated": "2026-10-18T11:49:45.035Z"
     },
     "US": {
       "name": "United States",
-      "stories": 5,
-      "articles": 19,
-      "balance": {
-        "0": 6,
-        "1": 5,
-        "2": 3,
-        "-2": 1,
-        "-1": 3,
-        "unclear": 1
-      }
+      "articles": 30,
+      "updated": "2026-10-18T11:49:47.110Z"
+    },
+    "JP": {
+      "name": "Japan",
+      "articles": 30,
+      "updated": "2026-10-18T11:49:49.170Z"
+    },
+    "DE": {
+      "name": "Germany",
+      "articles": 30,
+      "updated": "2026-10-18T11:49:51.831Z"
+    },
+    "FR": {
+      "name": "France",
+      "articles": 30,
+      "updated": "2026-10-18T11:49:54.242Z"
+    },
+    "IN": {
+      "name": "India",
+      "articles": 30,
+      "updated": "2026-10-18T11:49:56.864Z"
+    },
+    "BR": {
+      "name": "Brazil",
+      "articles": 30,
+      "updated": "2026-10-18T11:49:59.415Z"
+    },
+    "AU": {
+      "name": "Australia",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:01.811Z"
+    },
+    "CA": {
+      "name": "Canada",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:04.241Z"
+    },
+    "KR": {
+      "name": "South Korea",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:06.304Z"
+    },
+    "ID": {
+      "name": "Indonesia",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:08.747Z"
+    },
+    "MX": {
+      "name": "Mexico",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:11.192Z"
+    },
+    "ES": {
+      "name": "Spain",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:13.922Z"
+    },
+    "IT": {
+      "name": "Italy",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:16.431Z"
+    },
+    "TR": {
+      "name": "Turkey",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:18.925Z"
+    },
+    "VN": {
+      "name": "Vietnam",
+      "articles": 26,
+      "updated": "2026-10-18T11:50:21.314Z"
+    },
+    "ZA": {
+      "name": "South Africa",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:23.886Z"
+    },
+    "NG": {
+      "name": "Nigeria",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:26.459Z"
+    },
+    "EG": {
+      "name": "Egypt",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:29.295Z"
+    },
+    "AR": {
+      "name": "Argentina",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:31.783Z"
+    },
+    "PH": {
+      "name": "Philippines",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:34.356Z"
+    },
+    "MY": {
+      "name": "Malaysia",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:37.006Z"
+    },
+    "NZ": {
+      "name": "New Zealand",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:39.309Z"
+    },
+    "IE": {
+      "name": "Ireland",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:41.878Z"
+    },
+    "NL": {
+      "name": "Netherlands",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:44.337Z"
+    },
+    "SE": {
+      "name": "Sweden",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:47.024Z"
+    },
+    "PL": {
+      "name": "Poland",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:49.699Z"
+    },
+    "UA": {
+      "name": "Ukraine",
+      "articles": 29,
+      "updated": "2026-10-18T11:50:52.042Z"
+    },
+    "SA": {
+      "name": "Saudi Arabia",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:54.468Z"
+    },
+    "PK": {
+      "name": "Pakistan",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:57.226Z"
+    },
+    "KE": {
+      "name": "Kenya",
+      "articles": 30,
+      "updated": "2026-10-18T11:50:59.759Z"
+    },
+    "CN": {
+      "name": "China",
+      "articles": 26,
+      "updated": "2026-10-18T11:51:02.274Z"
+    },
+    "TW": {
+      "name": "Taiwan",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:04.811Z"
+    },
+    "RU": {
+      "name": "Russia",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:07.199Z"
+    },
+    "CO": {
+      "name": "Colombia",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:09.684Z"
+    },
+    "CL": {
+      "name": "Chile",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:12.061Z"
+    },
+    "PE": {
+      "name": "Peru",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:14.540Z"
+    },
+    "PT": {
+      "name": "Portugal",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:17.062Z"
+    },
+    "GR": {
+      "name": "Greece",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:19.553Z"
+    },
+    "IL": {
+      "name": "Israel",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:22.020Z"
+    },
+    "BD": {
+      "name": "Bangladesh",
+      "articles": 26,
+      "updated": "2026-10-18T11:51:24.609Z"
+    },
+    "GH": {
+      "name": "Ghana",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:27.123Z"
+    },
+    "ET": {
+      "name": "Ethiopia",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:29.814Z"
+    },
+    "MA": {
+      "name": "Morocco",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:32.538Z"
+    },
+    "HU": {
+      "name": "Hungary",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:35.092Z"
+    },
+    "CZ": {
+      "name": "Czechia",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:37.622Z"
+    },
+    "RO": {
+      "name": "Romania",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:39.988Z"
+    },
+    "NO": {
+      "name": "Norway",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:42.441Z"
+    },
+    "BE": {
+      "name": "Belgium",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:44.939Z"
+    },
+    "CH": {
+      "name": "Switzerland",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:47.468Z"
+    },
+    "AT": {
+      "name": "Austria",
+      "articles": 30,
+      "updated": "2026-10-18T11:51:50.119Z"
     }
   }
 }

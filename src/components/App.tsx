@@ -107,7 +107,7 @@ export default function App() {
             Global View
           </h1>
           <p className="mt-1.5 max-w-xs text-sm leading-snug text-muted">
-            The news each country is reading, and where it leans.
+            The stories each country is reading right now.
           </p>
         </div>
         <div className="pointer-events-auto w-full md:absolute md:left-1/2 md:w-80 md:-translate-x-1/2">

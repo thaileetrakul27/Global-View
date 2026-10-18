@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
-/* Design tokens. Light theme only: off-white paper, white cards, soft lines.
-   Spectrum colours are teal / grey / amber, never red and blue. */
+/* Design tokens. Light theme only: off-white paper, white cards, soft lines. */
 :root {
   --paper: #fafaf7;
   --card: #ffffff;
@@ -17,13 +16,6 @@
   --land-hover: #dccca3;
   --land-selected: #d2c08f;
   --border: #ffffff;
-
-  /* Political spectrum, -2 .. +2 */
-  --spectrum-n2: #0f766e;
-  --spectrum-n1: #5eb1a8;
-  --spectrum-0: #9ca3af;
-  --spectrum-p1: #e0a84a;
-  --spectrum-p2: #b45309;
 }
 
 @theme inline {
@@ -35,11 +27,6 @@
   --color-accent: var(--accent);
   --color-ocean: var(--ocean);
   --color-land: var(--land);
-  --color-spectrum-n2: var(--spectrum-n2);
-  --color-spectrum-n1: var(--spectrum-n1);
-  --color-spectrum-0: var(--spectrum-0);
-  --color-spectrum-p1: var(--spectrum-p1);
-  --color-spectrum-p2: var(--spectrum-p2);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
 }

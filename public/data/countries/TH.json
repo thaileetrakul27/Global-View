@@ -1,245 +1,222 @@
 {
   "code": "TH",
   "name": "Thailand",
-  "axis": {
-    "summary": "Reformist and anti-establishment to conservative and pro-establishment",
-    "left": "reformist",
-    "right": "conservative"
+  "updated": "2026-10-18T11:49:42.390Z",
+  "source": {
+    "name": "Google News",
+    "edition": "TH:th",
+    "url": "https://news.google.com/rss?hl=th&gl=TH&ceid=TH%3Ath"
   },
-  "updated": "2026-10-18T09:12:00Z",
-  "stories": [
+  "articles": [
     {
-      "id": "th-1",
-      "title": "Parliament passes budget after late-night vote",
-      "blindspot": false,
-      "articles": [
-        {
-          "url": "https://siam-tribune.example/news/th-1-1",
-          "outlet": "siam-tribune.example",
-          "headline_original": "งบประมาณผ่านสภาหลังอภิปรายมาราธอน ฝ่ายค้านโวย",
-          "headline_en": "Budget passes after marathon session as opposition cries foul",
-          "published": "2026-10-18T06:12:00.000Z",
-          "outlet_rating": -1,
-          "article_score": -1,
-          "confidence": "high",
-          "reason": "Leads with opposition objections and describes the vote as rushed."
-        },
-        {
-          "url": "https://krungthep-ledger.example/news/th-1-2",
-          "outlet": "krungthep-ledger.example",
-          "headline_original": "สภาอนุมัติงบประมาณ 3.75 ล้านล้านบาท",
-          "headline_en": "Parliament approves 3.75 trillion baht budget",
-          "published": "2026-10-18T05:12:00.000Z",
-          "outlet_rating": 0,
-          "article_score": 0,
-          "confidence": "high",
-          "reason": "Reports the vote count and spending lines without taking a side."
-        },
-        {
-          "url": "https://chao-phraya-post.example/news/th-1-3",
-          "outlet": "chao-phraya-post.example",
-          "headline_original": "รัฐบาลผ่านงบฯ ฉลุย ลั่นเร่งเบิกจ่าย",
-          "headline_en": "Government secures budget win, promises faster disbursement",
-          "published": "2026-10-18T04:12:00.000Z",
-          "outlet_rating": 1,
-          "article_score": 1,
-          "confidence": "medium",
-          "reason": "Frames the result as a government success and quotes only ministers."
-        },
-        {
-          "url": "https://thai-national-daily.example/news/th-1-4",
-          "outlet": "thai-national-daily.example",
-          "headline_original": "งบฯ ผ่านแม้ฝ่ายค้านพยายามถ่วงเวลา",
-          "headline_en": "Budget passes despite opposition stalling tactics",
-          "published": "2026-10-18T03:12:00.000Z",
-          "outlet_rating": 2,
-          "article_score": 2,
-          "confidence": "high",
-          "reason": "Calls critics obstructive and credits the coalition for stability."
-        },
-        {
-          "url": "https://isan-voice.example/news/th-1-5",
-          "outlet": "isan-voice.example",
-          "headline_original": "งบใหม่กับภาคอีสาน",
-          "headline_en": "What the new budget means for the north-east",
-          "published": "2026-10-18T02:12:00.000Z",
-          "outlet_rating": null,
-          "article_score": -1,
-          "confidence": "low",
-          "reason": "Mostly explanatory, with a short critical line on regional allocations."
-        }
-      ]
+      "title": "กรมอุตุฯ เตือนฉบับ 4 หลายพื้นที่ในไทยเตรียมเผชิญฝนถล่ม 18-25 ต.ค.นี้",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUVE1dWdJR1NQSGgtYU8tQjdfMXJjZGhNOXQ3WElXVV8yTGlrQWUzRlNIS3lWWGpzeHphZE45cVdCeWlFMHFmQmgtNWpJN0JSX0ZpSHRPYS1KQUVSQnJtNEFKeE5wdVNqSjl3Qmhka0lna3FmVVhGRzA5MEVRUWQxajVtek81alZwanc?oc=5",
+      "outlet": "pptvhd36.com",
+      "outletUrl": "https://www.pptvhd36.com",
+      "published": "2026-10-18T09:56:00.000Z"
     },
     {
-      "id": "th-2",
-      "title": "Court to rule on party dissolution case next week",
-      "blindspot": false,
-      "articles": [
-        {
-          "url": "https://ratchadamnoen-review.example/news/th-2-1",
-          "outlet": "ratchadamnoen-review.example",
-          "headline_original": "คดียุบพรรค บททดสอบขอบเขตอำนาจตุลาการ",
-          "headline_en": "Dissolution case tests the limits of judicial power",
-          "published": "2026-10-18T07:12:00.000Z",
-          "outlet_rating": -2,
-          "article_score": -2,
-          "confidence": "high",
-          "reason": "Argues the case is politically motivated and quotes only critics of the court."
-        },
-        {
-          "url": "https://siam-tribune.example/news/th-2-2",
-          "outlet": "siam-tribune.example",
-          "headline_original": "ผู้สนับสนุนพรรคชุมนุมก่อนคำวินิจฉัย",
-          "headline_en": "Party supporters rally ahead of dissolution ruling",
-          "published": "2026-10-18T06:12:00.000Z",
-          "outlet_rating": -1,
-          "article_score": -1,
-          "confidence": "medium",
-          "reason": "Centres supporters' voices and their concerns about the process."
-        },
-        {
-          "url": "https://krungthep-ledger.example/news/th-2-3",
-          "outlet": "krungthep-ledger.example",
-          "headline_original": "ศาลรัฐธรรมนูญนัดวินิจฉัยคดียุบพรรค",
-          "headline_en": "Constitutional Court sets ruling date in dissolution case",
-          "published": "2026-10-18T05:12:00.000Z",
-          "outlet_rating": 0,
-          "article_score": 0,
-          "confidence": "high",
-          "reason": "States the schedule and the legal questions without commentary."
-        },
-        {
-          "url": "https://thai-national-daily.example/news/th-2-4",
-          "outlet": "thai-national-daily.example",
-          "headline_original": "ศาลต้องยืนตามกฎหมาย ไม่หวั่นแรงกดดันข้างถนน",
-          "headline_en": "Court must uphold the law regardless of street pressure",
-          "published": "2026-10-18T04:12:00.000Z",
-          "outlet_rating": 2,
-          "article_score": 2,
-          "confidence": "high",
-          "reason": "Editorial framing that treats the complaint as settled fact."
-        }
-      ]
+      "title": "กว่าจะได้เป็นเจ้าภาพ ‘IMF - World Bank’ ไม่ง่าย อดีต รมว.คลังเปิดเบื้องหลัง ต้องแข่งกับ 4 ประเทศ",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9saENPSVh0XzJPMnAxVmd6THZPSUplcm84aU1BQ0p2OTI0a0pfbkh5Z01QbG10NlhKeGI1bmdWRkJZUUFES3F0alRsS0staG1kMmI4UUF1NXNocmdq?oc=5",
+      "outlet": "bangkokbiznews",
+      "outletUrl": "https://www.bangkokbiznews.com",
+      "published": "2026-10-18T07:02:00.000Z"
     },
     {
-      "id": "th-3",
-      "title": "Floods displace thousands in the north",
-      "blindspot": false,
-      "articles": [
-        {
-          "url": "https://krungthep-ledger.example/news/th-3-1",
-          "outlet": "krungthep-ledger.example",
-          "headline_original": "น้ำท่วมเหนือ ประชาชนอพยพ 12,000 คน",
-          "headline_en": "Floods displace 12,000 in Chiang Rai and Nan",
-          "published": "2026-10-18T08:12:00.000Z",
-          "outlet_rating": 0,
-          "article_score": 0,
-          "confidence": "high",
-          "reason": "Straight reporting of damage figures and relief efforts."
-        },
-        {
-          "url": "https://chao-phraya-post.example/news/th-3-2",
-          "outlet": "chao-phraya-post.example",
-          "headline_original": "ทีมกู้ภัยเข้าถึงหมู่บ้านที่ถูกตัดขาด",
-          "headline_en": "Relief teams reach cut-off villages after two days",
-          "published": "2026-10-18T07:12:00.000Z",
-          "outlet_rating": 1,
-          "article_score": 0,
-          "confidence": "medium",
-          "reason": "Descriptive account of the response with quotes from both officials and residents."
-        },
-        {
-          "url": "https://isan-voice.example/news/th-3-3",
-          "outlet": "isan-voice.example",
-          "headline_original": "น้ำท่วมภาคเหนือ ช่วยได้อย่างไร",
-          "headline_en": "Northern floods: how to help",
-          "published": "2026-10-18T06:12:00.000Z",
-          "outlet_rating": null,
-          "article_score": 0,
-          "confidence": "high",
-          "reason": "Service journalism with no political framing."
-        }
-      ]
+      "title": "อธิบดี ปภ. ยันงบเยียวยาน้ำท่วมมีพอ ชงครม.ขยายวงเงินเพิ่ม 10,508 ล้านบาท",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmMDlPQ0hTNVdKQkZlUWExeE4xcnR3SFRZcDI2VG9PRzhlcDJjRFNuR0pIRUNQUGt0eUpQQjFLbk5UNmczTVdxRGVQU09FeG5acTZCaGNDNDJrSWc?oc=5",
+      "outlet": "ไทยโพสต์",
+      "outletUrl": "https://www.thaipost.net",
+      "published": "2026-10-18T06:44:09.000Z"
     },
     {
-      "id": "th-4",
-      "title": "Minimum wage rise approved for ten provinces",
-      "blindspot": true,
-      "articles": [
-        {
-          "url": "https://chao-phraya-post.example/news/th-4-1",
-          "outlet": "chao-phraya-post.example",
-          "headline_original": "ขึ้นค่าแรง ตอบแทนแรงงานในจังหวัดเศรษฐกิจโต",
-          "headline_en": "Wage rise rewards workers in growth provinces",
-          "published": "2026-10-18T03:12:00.000Z",
-          "outlet_rating": 1,
-          "article_score": 1,
-          "confidence": "high",
-          "reason": "Presents the policy as a government achievement with employer quotes only."
-        },
-        {
-          "url": "https://thai-national-daily.example/news/th-4-2",
-          "outlet": "thai-national-daily.example",
-          "headline_original": "ขึ้นค่าแรงแบบสมดุล ปกป้องธุรกิจรายย่อย",
-          "headline_en": "Balanced wage decision protects small business",
-          "published": "2026-10-18T01:12:00.000Z",
-          "outlet_rating": 2,
-          "article_score": 2,
-          "confidence": "high",
-          "reason": "Praises the decision and dismisses labour groups' call for a national rise."
-        },
-        {
-          "url": "https://chao-phraya-post.example/news/th-4-3",
-          "outlet": "chao-phraya-post.example",
-          "headline_original": "จังหวัดขานรับการขึ้นค่าแรงแบบขั้นบันได",
-          "headline_en": "Provinces welcome staged minimum wage increase",
-          "published": "2026-10-18T00:12:00.000Z",
-          "outlet_rating": 1,
-          "article_score": 1,
-          "confidence": "medium",
-          "reason": "Quotes governors and chambers of commerce, no worker voices."
-        }
-      ]
+      "title": "กองขยะปนเปื้อนเกลื่อนปราจีนฯภัยเงียบที่กำลังคุกคามชุมชน",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5uWm5vbEtBQzNIMG9pZC1xdlpPUnd2blVFTWZLWGJyRmpSQzlLT1IyUUk0TEhCNzNDMS00bzVWOFBkT0pMN0ZwYmZrUzhHZ1RYVnBWQWVfcERxUWdqY0FDZGkyWWJacFlnckFFa3lRck5mYlhtZHc?oc=5",
+      "outlet": "thestandard.co",
+      "outletUrl": "https://thestandard.co",
+      "published": "2026-10-18T04:05:21.000Z"
     },
     {
-      "id": "th-5",
-      "title": "University students rally against conscription",
-      "blindspot": true,
-      "articles": [
-        {
-          "url": "https://ratchadamnoen-review.example/news/th-5-1",
-          "outlet": "ratchadamnoen-review.example",
-          "headline_original": "นักศึกษาเรียกร้องยกเลิกจับใบดำใบแดง",
-          "headline_en": "Students demand an end to the draft lottery",
-          "published": "2026-10-17T23:12:00.000Z",
-          "outlet_rating": -2,
-          "article_score": -2,
-          "confidence": "high",
-          "reason": "Adopts protesters' framing throughout and omits the military's response."
-        },
-        {
-          "url": "https://siam-tribune.example/news/th-5-2",
-          "outlet": "siam-tribune.example",
-          "headline_original": "นักศึกษานับพันชุมนุมคัดค้านเกณฑ์ทหาร",
-          "headline_en": "Thousands join campus rallies over conscription",
-          "published": "2026-10-17T22:12:00.000Z",
-          "outlet_rating": -1,
-          "article_score": -1,
-          "confidence": "high",
-          "reason": "Sympathetic to protesters, with one line from the defence ministry."
-        },
-        {
-          "url": "https://ratchadamnoen-review.example/news/th-5-3",
-          "outlet": "ratchadamnoen-review.example",
-          "headline_original": "ทำไมข้อถกเถียงเรื่องเกณฑ์ทหารไม่จบ",
-          "headline_en": "Why the conscription debate will not go away",
-          "published": "2026-10-17T21:12:00.000Z",
-          "outlet_rating": -2,
-          "article_score": -2,
-          "confidence": "medium",
-          "reason": "Opinion piece that treats abolition as the only reasonable position."
-        }
-      ]
+      "title": "ประท้วงฝรั่งเศสเดือด! ลามเผา-ปล้นสะดม หลายเมืองจมกองเพลิง",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPYzFkT05wV0ZRTER3aWtIaEpQTUN4S1BDUjhHaDBYbDZzb3BOUWVBX3dadkx1ZzlZTmhnNjJScjFjZDkwa1AwOHM2bGgtVmhvbXdLM3duU0kyeXdobE9GUUlQYWR5d1pLQzBVRGlOTmItaWk2Uno0bG1MYUE1V3dwbFo2LUdoVW1NNDhVQmFtUnlMZlNEcHRxYzNpc1hVcEl1alFsZUt4VEtzNlVtMGd5U3VZcThsRFRSbURDOXZjX1NPWGNvaGc?oc=5",
+      "outlet": "pptvhd36.com",
+      "outletUrl": "https://www.pptvhd36.com",
+      "published": "2026-10-18T05:32:00.000Z"
+    },
+    {
+      "title": "เขตคลองเตยเร่งเก็บขยะ-ขัดล้างถนนหน้าตลาด หลังม็อบต้าน IMF ยุติชุมนุม การจราจรกลับปกติ",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9NRFFCWThvb05sTjNxQ09QSGlLZlU4c0lNbGVrYlBmRDl2MGhWUHpudG43OHhxRFEyZHd6OGdmdWtOWlR6R0YxMk9XVWRJMjlaemZJ?oc=5",
+      "outlet": "เดลินิวส์",
+      "outletUrl": "https://www.dailynews.co.th",
+      "published": "2026-10-17T02:57:00.000Z"
+    },
+    {
+      "title": "ตีเหล็กตอนร้อน พรรคส้มลากปมไทยพีเอสเข้าสภาฯ เรียกชี้แจงพ่วงบิ๊กขรก.",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpYjBHMndqWTZUTHIycGx5TjhCbE9udHRvWC16TGZmRWlWQi1iNFBFaHpLM0R5Y2xFcUdSWUhRTzFha2wzV2ZzcEtMMkp1UVhPNExUZg?oc=5",
+      "outlet": "ไทยโพสต์",
+      "outletUrl": "https://www.thaipost.net",
+      "published": "2026-10-18T08:51:41.000Z"
+    },
+    {
+      "title": "บอร์ด สปสช.หนุนยา ‘Risdiplam’ รักษา SMA วางโครงการดูแล 5 ปี หลังผ่านบัญชียาพิเศษ R1",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WdTZWeUhKSGs1aEJpZGdnUEVEbUFqTE55dzVRbHBMMWh2MXFTdlQ3SG52aThfWHByVEdWRkhhMlYzZ003aGxLbW5fdjcyWndhV0dCQzRwMjlkSXc?oc=5",
+      "outlet": "The Coverage",
+      "outletUrl": "https://www.thecoverage.info",
+      "published": "2026-10-18T02:57:31.000Z"
+    },
+    {
+      "title": "เปิดภาพแม่น้ำ 2 สี ปราจีนบุรี ชาวบ้านตั้งคำถามวิธีเก็บตัวอย่างน้ำ จี้หน่วยงานลงตรวจ หวั่นกระทบถึงช้างป่า",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5IZmNKSEtGckFhQzh1QnNFTzU3WUViNVNISVVNc1c2Rnc0TlhNbWhLdFdqWjE4UFdwaTl4bWdYMkNfWjlLWE8wUWxpNWlySHJuY0FJRTVpTjhpR2tJ?oc=5",
+      "outlet": "ผู้จัดการออนไลน์",
+      "outletUrl": "https://mgronline.com",
+      "published": "2026-10-18T07:56:00.000Z"
+    },
+    {
+      "title": "บีบไอเดียร์แจง เงินปันผล จากเว็บพนันสามี ส้มแฉไม่แจ้งถือครองหุ้น",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lcm15WF9tMEJIRVgzR0hkaTRNaDM0dEJmYzgybU5rSTYzZ05RdVNncjhtY3FTOGxYQVhRMzBfYnYzLVM0UnQ4NG0tOU9ZSHNlQTdVWEFyYw?oc=5",
+      "outlet": "Thairath.co.th",
+      "outletUrl": "https://www.thairath.co.th",
+      "published": "2026-10-18T02:01:43.000Z"
+    },
+    {
+      "title": "‘เซเลนสกี’ จวก ‘ทรัมป์’ อุ้มรัสเซีย เตือนยิ่งผ่อนปรนยิ่งเปิดทาง ‘ปูติน’ ถล่มยูเครน",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBNeUx6TjYxMUdtT3R4aUxqZ20wcDdRY1pzWnhIQVo4WXhXSUQtMHNpa1lVdUNXVVh4ek5SaUs4VmYxOHBURUk2NmRNd3RBdlhCVWJV?oc=5",
+      "outlet": "เดลินิวส์",
+      "outletUrl": "https://www.dailynews.co.th",
+      "published": "2026-10-18T00:14:00.000Z"
+    },
+    {
+      "title": "วงในแฉ! \"ทรัมป์\" โวยทีมงาน หลังรีพับลิกันเจอศึกหนักเลือกตั้งกลางเทอม",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTm5RanFHVlMxcnFHYjJORjczOTFmcTkxc1BtcE1LSEZrekNZaTV5ZmF3UzY1Z1JJWFhuSmFvWkRreGZVMDBSc3NEaVotaThiSjR5VUtxUllMM2JQSFYwNGliMjkzMHF4emJQSXRuSmk3cWdtc1NmLWZ3MkJwUDVScWhHSlJ5TlpuYWJqNFJrb0lhU2hpYVhoeU5RQWF6UjdRZ3JIcHUyTFNnaEpRZk1lSkZMQVNDRGprQ29VWHdqdWx4Y2ZuZEE?oc=5",
+      "outlet": "pptvhd36.com",
+      "outletUrl": "https://www.pptvhd36.com",
+      "published": "2026-10-18T08:52:00.000Z"
+    },
+    {
+      "title": "ตำรวจแอลเบเนียยิงกระสุนยางสลายม็อบ หลังนักศึกษาประท้วงครั้งใหญ่",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5tbmZleUJFeGV2TzZ5MmpvRGV5R2pwd3Z2X0F4dXhtbjE2VHhHOHN3SHQxblJGQjFvTXhwYjI3a0ZQcy1CdmJlWkNpaVg3RS1HMFUw?oc=5",
+      "outlet": "เดลินิวส์",
+      "outletUrl": "https://www.dailynews.co.th",
+      "published": "2026-10-18T04:21:00.000Z"
+    },
+    {
+      "title": "คณะทูต EU โดนผู้ตั้งถิ่นฐานชาวยิวทำร้ายในเขตเวสต์แบงก์",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0yTkxGSXhGMC1tVnV5OUlGTEpfVVBNRGlBY1hhNkVJQ2lNMlRSWWsxSkJhOTlKbUF2SGdlbmNUU0xWaTFEQWdjLS1pbnA3SGlMQ2dnczdjTWxrazQ?oc=5",
+      "outlet": "Thairath.co.th",
+      "outletUrl": "https://www.thairath.co.th",
+      "published": "2026-10-17T20:38:49.000Z"
+    },
+    {
+      "title": "เช็กราคาทอง 18 ต.ค. หลัง เปิดตลาดไม่ขยับ | The Better",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEazVlS182cTFjMkhUSk9hbFhlUVc4REhsSzJVRml2LWRFemZaQUtGYUVlb0xKcEhUY0tiYXBvQzdXZ3J1VjZRSXZlZkJKeXNwQTBsMUl3?oc=5",
+      "outlet": "LINE TODAY",
+      "outletUrl": "https://today.line.me",
+      "published": "2026-10-18T03:26:43.000Z"
+    },
+    {
+      "title": "“Bangkok Blueprint”ผลงานสำคัญของธปท. ใน 2026 IMF-World Bank Group Annual Meetings",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56bl95VTA1QVF4SkhyR0xtZUdlY1Y1dGVCRk0zZUJERGo4TXdyN3ZWZTAwQ3ZlX1dYOVktQUI2ckJlbk1fbDNseHgwVDM2M3NvU3FVV0tVSlYyMVFGN0w5V0V6OXREWXpGdkhlR3piaw?oc=5",
+      "outlet": "ThaiPublica",
+      "outletUrl": "https://thaipublica.org",
+      "published": "2026-10-18T07:40:05.000Z"
+    },
+    {
+      "title": "สรุปข่าวเด่นคริปโต 18 ต.ค. 2569: บิตคอยน์ฟื้น หุ้นโทเคนเจอแรงค้าน",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWkFVNXkxSV9CaWFYbHlHU3ljLVVuV1lUM0NyaUMwYXNOS0lBQncteDdqUV8xbFVmcjRYZndJUGRCTnNNTS1BNXdjMGloWm9iaVNyZ2dUOVI0cHVQNjJDRWptUVpTQkk2Q1N5d0ZsM0haTlJvS0tqa1ExLXE4NldnVjJ3?oc=5",
+      "outlet": "efinanceThai",
+      "outletUrl": "https://www.efinancethai.com",
+      "published": "2026-10-18T02:18:09.000Z"
+    },
+    {
+      "title": "จีนจ่อจำกัดส่งออกเทคโนโลยีโซลาร์เซลล์ขั้นสูง อ้างเรื่องความมั่นคง",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBwNEVkSXJtc0dBcmFCMl9hY2sxY1FTMThOVE5yX09XZHFiM052ODNnV3JPb3V5cE1rYzNvTWVrbnpWOFJLRnBtR19QWDFIU2sxM25r?oc=5",
+      "outlet": "เดลินิวส์",
+      "outletUrl": "https://www.dailynews.co.th",
+      "published": "2026-10-18T06:53:00.000Z"
+    },
+    {
+      "title": "Apple เตือนงด walk-in ซื้อ iPhone Duo วันแรก เพราะสินค้าหมดเรียบร้อย",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB6cU4tLTFuT3lvc0Uzb0hUU3VyT0lpaWpNTHdvUGhqclNxYWRPSFpyX0JLaExoRnJWaG1iZC1pZkFmRlB6Ui1yT3YzNlBacHBCQ2RhMjdwc2g4cnJ0RkwtVmRoMFc2dkpUbkUyU283bHBjUG1ndEZYcWtfWkU?oc=5",
+      "outlet": "Thisisgame Thailand",
+      "outletUrl": "https://thisisgamethailand.com",
+      "published": "2026-10-18T01:00:00.000Z"
+    },
+    {
+      "title": "สรุปจุดเด่น NVIDIA RTX Spark N1X ในโน้ตบุ๊ก ASUS รุ่นใหม่ ตอบโจทย์ยุค AI ให้งานเสร็จไวทันใจ! ใช้ AI โมเดล 120B สบายๆ !!",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE50QnUzbHY3dDRDZEE5azdKLWRiMlhFZDlyWVhxcG1ua3p0a203UXBQUlBrVGV2YUhpSDlkQWpkMTRfMjU2VW1XQUJjdjhKRnVNSHNSby1GQXgzLThJbndOQnoyekQ3cnNNMXB4ZjJWblAtOTM1QUdSRUE4Yw?oc=5",
+      "outlet": "Notebookspec",
+      "outletUrl": "https://notebookspec.com",
+      "published": "2026-10-17T03:07:35.000Z"
+    },
+    {
+      "title": "ทำความรู้จัก Samsung Galaxy S26 FE พร้อม AI ใช้ง่าย กล้องครบ แบต 4,900mAh",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE00M29ldkxGS013VFcxRWM2bHU2dUNFSi1Mc19YZjltTWJ0WEFyLTlFWnJzWDk3VnRuNm9UZXBnWDJ2ODQ3aUN4V2VjUDlsN0Z3UlJhVnJ3R251cTZ2dlR4V05GWmg1ZkJsckdwc2RzVEZJeFdyMDBaOVpn?oc=5",
+      "outlet": "iPhone-Droid",
+      "outletUrl": "https://www.iphone-droid.net",
+      "published": "2026-10-17T06:55:19.000Z"
+    },
+    {
+      "title": "vivo X500 Pro และ X500 Pro Max หลุดราคายุโรป เริ่ม 52,600 บาท พร้อม RAM 12GB ความจุสูงสุด 512GB ก่อนเปิดตัว 27 ตุลาคม",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNXFGQTZMdWJyMVVEckxib0ZaeXhvRWRkYzE0NWxYMGcyMXhNdk54TXo2XzY1UjVfWUpsRm5ndjdIRXFDaHhoTHFnTUE0dm1jYkFmVUozSGhzcjRVR3RZOXFObkNQRWZjTVgzajQ3SDRiMFNTOTNCWm9SOTMwQ3BGbXZRWW0tdDA?oc=5",
+      "outlet": "Thaimobilecenter",
+      "outletUrl": "https://www.thaimobilecenter.com",
+      "published": "2026-10-17T17:23:06.000Z"
+    },
+    {
+      "title": "Carrie อ่านอะไรในวันที่โลกไม่ใจดี",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE54SkF5Zk5qQ196WUxRS1c5dHpPWVhXQUNPeWowbEJOQm5zRWtlMmtZUVlyb1g1VkdUOUV1NkpVWlJ3S1Fva0R5TzZLOWdTX3FZZFpscC04TUtvSTkxOVA0Sy1qSWxfQQ?oc=5",
+      "outlet": "ThaiPublica",
+      "outletUrl": "https://thaipublica.org",
+      "published": "2026-10-18T07:59:42.000Z"
+    },
+    {
+      "title": "ปัญญาประดิษฐ์: เอไอกำลังทำให้งานศิลปะจากฝีมือมนุษย์กลายเป็น \"ความพรีเมียม\" อย่างไร",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBTaUVaZVdEU2tHMWNmU2pPeTJhMHU3dnM2S3cwd25sdEFrY2ppT0hLUzA3alE0OVhMUGRnMy1oSExYZW42VWVQZVAzeXVPWktZd0Ixb1p0WlBKVVXSAWBBVV95cUxOX1I0WjI0NTdrRlc4ZVcwa2tLSnlTQzNDb0g1TXRJY0tqSUNVVXRZMzJpYWxyMy04c2xfYlFSYzN5M2R5bFFoWDYwUWV0RzhrRE00LUVodmZZTlF1X0ZpMWc?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-10-13T09:01:23.000Z"
+    },
+    {
+      "title": "เส้นทางการแสดงของ \"ชเว อู ชิก\" จากข้ารับใช้ข้างกายองค์รัชทายาทใน Rooftop Prince สู่พระเอกแถวหน้าของเกาหลี",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5mMUFLc05YSnhkdXFzM2hXOHMyLUhjZ3hYY3hva01YbWJKdWRRdjcxb3RLTGVtWEY2ZmhJV2tXOEtEbTZyZHl2dWpPc2ZLVFQ1aWJwZ29mQQ?oc=5",
+      "outlet": "TrueVisions",
+      "outletUrl": "https://truevisions.co.th",
+      "published": "2026-10-16T16:53:00.000Z"
+    },
+    {
+      "title": "ยิ่งกว่าละครจะมาตรวจDNA! ลุงโยธิน เจอสายปริศนาร่ำไห้บอกเป็นลูกสาว แต่ลูกจริงกลับเงียบนิ่งเฉย",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8xclQ5Y1pwVTl6RkpiMExwUndta3JkcHJrTEJoOS1WSllSckNxUlpNaTFoVjhVVzROcDE1eTZoVnN3MkNNcjgzQjY3WEZUWkF0eW5uSDl3?oc=5",
+      "outlet": "LINE TODAY",
+      "outletUrl": "https://today.line.me",
+      "published": "2026-10-18T04:42:42.000Z"
+    },
+    {
+      "title": "เพชรเม็ดงามเมืองปทุม! \"น้องบุฟเฟต์\" พร้อมพามัธยมนครรังสิต ผงาดศึกลูกยางเยาวชน PMYC",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YYkFGVGV0bmYtWV9IREtpZmducEtPREFBTFR1SmFXYUlVVVZYMGxFSFNQS09zeXJ2bUhEMkliSkFBODVub3J6dWpHZXZoc21CSEhZ?oc=5",
+      "outlet": "เดลินิวส์",
+      "outletUrl": "https://www.dailynews.co.th",
+      "published": "2026-10-18T04:44:00.000Z"
+    },
+    {
+      "title": "ฟุตซอลไทยลีกเดือดระอุ แฟนท่าเรือ-ท่าขาม ซัดกันนัว ขว้างข้าวของวุ่นหลังสิ้นเสียงนกหวีด",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA0cjRPd3dpQ25wcnI1NFg0X1ZEamF6RFFMOU0waHRzV1Z5aU5uRE1DZnZuRTRqWGlGdjdCSXpIM3Bkb0FXVU10SXBVWkNhb2YwX3FhRjJPLTd2Ulky?oc=5",
+      "outlet": "ผู้จัดการออนไลน์",
+      "outletUrl": "https://mgronline.com",
+      "published": "2026-10-18T05:51:00.000Z"
+    },
+    {
+      "title": "เปิดฉากตระการตา! ศึกเอเชียนพาราเกมส์ 2026 ทัพพาราไทยพร้อมล่าเหรียญทอง",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4wN3NRTFdLNlMyeGdlWVdhY3RwTW9UQV9rMDNhM1JxMk5IdW5ld0stcDhTWk1BMVBtc3hrUGdlMDY2ZUlhQXBCU04xWXpYTTJtS2FMUGp1ZGZJVGhDN1VyXzlFRmxvb002TGFCcnRB?oc=5",
+      "outlet": "Siamsport",
+      "outletUrl": "https://www.siamsport.co.th",
+      "published": "2026-10-18T10:42:57.000Z"
+    },
+    {
+      "title": "LIVE : ดูบอลสด มหาสารคาม พบ เมืองทอง ฟุตบอลไทยลีก 2 เวลา 18.30 น.",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTHpZcDQ4eGp1b0hnTDkyVzBaN0R4ZXRLQlg4eFV4M0pmMWZINmFRVHpKZFMwelhHWWI4WFRzLWRHQXpWZFI2eXU5OEtXZmUydmNFc3c1My1FRjY4LW1reTlueEtaVWxGMjVWUTQzS1A3Ti1iV2tQYTRGeHpMcVFaakp1OWpTdE96cWZ1aTMxMFFLazZGYWMyR3NRQmFZdTFmbDA0c0RlVXcwdlpxdjBuOG54ZnlicjJCR1g0WndlcWVtUzRKYThGQXNzaTNkZFltdW1VMjRjUQ?oc=5",
+      "outlet": "Sporting News",
+      "outletUrl": "https://www.sportingnews.com",
+      "published": "2026-10-18T11:30:16.000Z"
     }
   ]
 }
