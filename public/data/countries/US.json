@@ -1,0 +1,256 @@
+{
+  "code": "US",
+  "name": "United States",
+  "axis": {
+    "summary": "Democratic-leaning to Republican-leaning",
+    "left": "Democratic",
+    "right": "Republican"
+  },
+  "updated": "2026-10-18T09:12:00Z",
+  "stories": [
+    {
+      "id": "us-1",
+      "title": "Senate advances border funding bill",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://coastal-review.example/news/us-1-1",
+          "outlet": "coastal-review.example",
+          "headline_original": "Border bill funds enforcement while ignoring asylum backlog",
+          "headline_en": "Border bill funds enforcement while ignoring asylum backlog",
+          "published": "2026-10-18T07:12:00.000Z",
+          "outlet_rating": -2,
+          "article_score": -2,
+          "confidence": "high",
+          "reason": "Quotes only immigrant advocates and calls the bill punitive."
+        },
+        {
+          "url": "https://capitol-dispatch.example/news/us-1-2",
+          "outlet": "capitol-dispatch.example",
+          "headline_original": "Senate advances border bill over objections from progressives",
+          "headline_en": "Senate advances border bill over objections from progressives",
+          "published": "2026-10-18T06:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": -1,
+          "confidence": "high",
+          "reason": "Leads with progressive objections but reports both sides."
+        },
+        {
+          "url": "https://harbor-times.example/news/us-1-3",
+          "outlet": "harbor-times.example",
+          "headline_original": "Senate advances $18 billion border funding bill",
+          "headline_en": "Senate advances $18 billion border funding bill",
+          "published": "2026-10-18T05:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Reports the vote, contents and next steps without taking a side."
+        },
+        {
+          "url": "https://prairie-gazette.example/news/us-1-4",
+          "outlet": "prairie-gazette.example",
+          "headline_original": "Border bill a long-overdue step, say sheriffs",
+          "headline_en": "Border bill a long-overdue step, say sheriffs",
+          "published": "2026-10-18T04:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "medium",
+          "reason": "Centres law enforcement voices and frames the bill as overdue."
+        },
+        {
+          "url": "https://liberty-ledger.example/news/us-1-5",
+          "outlet": "liberty-ledger.example",
+          "headline_original": "Senate finally acts on border crisis",
+          "headline_en": "Senate finally acts on border crisis",
+          "published": "2026-10-18T03:12:00.000Z",
+          "outlet_rating": 2,
+          "article_score": 2,
+          "confidence": "high",
+          "reason": "Uses loaded terms throughout and omits critics."
+        }
+      ]
+    },
+    {
+      "id": "us-2",
+      "title": "Federal Reserve holds rates steady",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://harbor-times.example/news/us-2-1",
+          "outlet": "harbor-times.example",
+          "headline_original": "Fed holds rates steady, signals patience on cuts",
+          "headline_en": "Fed holds rates steady, signals patience on cuts",
+          "published": "2026-10-18T08:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Straight account of the decision and the chair's remarks."
+        },
+        {
+          "url": "https://capitol-dispatch.example/news/us-2-2",
+          "outlet": "capitol-dispatch.example",
+          "headline_original": "Fed leaves rates unchanged as inflation cools slowly",
+          "headline_en": "Fed leaves rates unchanged as inflation cools slowly",
+          "published": "2026-10-18T07:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Explains the reasoning with economists from across the spectrum."
+        },
+        {
+          "url": "https://prairie-gazette.example/news/us-2-3",
+          "outlet": "prairie-gazette.example",
+          "headline_original": "Fed holds rates as farm borrowing costs bite",
+          "headline_en": "Fed holds rates as farm borrowing costs bite",
+          "published": "2026-10-18T06:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "medium",
+          "reason": "Focuses on costs to rural borrowers and criticises the administration."
+        }
+      ]
+    },
+    {
+      "id": "us-3",
+      "title": "Wildfire season stretches into late autumn",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://coastal-review.example/news/us-3-1",
+          "outlet": "coastal-review.example",
+          "headline_original": "Late wildfires show the cost of climate inaction",
+          "headline_en": "Late wildfires show the cost of climate inaction",
+          "published": "2026-10-18T05:12:00.000Z",
+          "outlet_rating": -2,
+          "article_score": -1,
+          "confidence": "high",
+          "reason": "Attributes the fires to policy failure and quotes climate groups."
+        },
+        {
+          "url": "https://harbor-times.example/news/us-3-2",
+          "outlet": "harbor-times.example",
+          "headline_original": "Wildfires burn 90,000 acres as season runs late",
+          "headline_en": "Wildfires burn 90,000 acres as season runs late",
+          "published": "2026-10-18T04:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Reports acreage, evacuations and weather outlook."
+        },
+        {
+          "url": "https://capitol-dispatch.example/news/us-3-3",
+          "outlet": "capitol-dispatch.example",
+          "headline_original": "Firefighters stretched as fire season refuses to end",
+          "headline_en": "Firefighters stretched as fire season refuses to end",
+          "published": "2026-10-18T03:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": 0,
+          "confidence": "medium",
+          "reason": "Human-interest framing with no political attribution."
+        },
+        {
+          "url": "https://liberty-ledger.example/news/us-3-4",
+          "outlet": "liberty-ledger.example",
+          "headline_original": "Forest mismanagement fuels another long fire season",
+          "headline_en": "Forest mismanagement fuels another long fire season",
+          "published": "2026-10-18T02:12:00.000Z",
+          "outlet_rating": 2,
+          "article_score": 1,
+          "confidence": "medium",
+          "reason": "Blames state land management and omits climate context."
+        }
+      ]
+    },
+    {
+      "id": "us-4",
+      "title": "State legislature passes school voucher expansion",
+      "blindspot": true,
+      "articles": [
+        {
+          "url": "https://prairie-gazette.example/news/us-4-1",
+          "outlet": "prairie-gazette.example",
+          "headline_original": "Voucher expansion gives families more school choice",
+          "headline_en": "Voucher expansion gives families more school choice",
+          "published": "2026-10-18T01:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "high",
+          "reason": "Adopts supporters' language and quotes only parents in favour."
+        },
+        {
+          "url": "https://liberty-ledger.example/news/us-4-2",
+          "outlet": "liberty-ledger.example",
+          "headline_original": "Legislature breaks union grip on schools",
+          "headline_en": "Legislature breaks union grip on schools",
+          "published": "2026-10-18T00:12:00.000Z",
+          "outlet_rating": 2,
+          "article_score": 2,
+          "confidence": "high",
+          "reason": "Hostile framing of teachers' unions; no opposing voices."
+        },
+        {
+          "url": "https://liberty-ledger.example/news/us-4-3",
+          "outlet": "liberty-ledger.example",
+          "headline_original": "Voucher win is a model for other states",
+          "headline_en": "Voucher win is a model for other states",
+          "published": "2026-10-17T23:12:00.000Z",
+          "outlet_rating": 2,
+          "article_score": 2,
+          "confidence": "medium",
+          "reason": "Opinion piece presenting the policy as settled good."
+        }
+      ]
+    },
+    {
+      "id": "us-5",
+      "title": "Supreme Court hears case on social media moderation",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://capitol-dispatch.example/news/us-5-1",
+          "outlet": "capitol-dispatch.example",
+          "headline_original": "Justices weigh whether states can dictate online moderation",
+          "headline_en": "Justices weigh whether states can dictate online moderation",
+          "published": "2026-10-18T04:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": -1,
+          "confidence": "medium",
+          "reason": "Sympathetic to platforms' free-speech argument."
+        },
+        {
+          "url": "https://prairie-gazette.example/news/us-5-2",
+          "outlet": "prairie-gazette.example",
+          "headline_original": "Court hears challenge to Big Tech censorship laws",
+          "headline_en": "Court hears challenge to Big Tech censorship laws",
+          "published": "2026-10-18T03:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "medium",
+          "reason": "Uses 'censorship' uncritically to describe moderation."
+        },
+        {
+          "url": "https://harbor-times.example/news/us-5-3",
+          "outlet": "harbor-times.example",
+          "headline_original": "Supreme Court hears arguments in social media moderation case",
+          "headline_en": "Supreme Court hears arguments in social media moderation case",
+          "published": "2026-10-18T02:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Summarises both sides' arguments and the justices' questions."
+        },
+        {
+          "url": "https://midwest-signal.example/news/us-5-4",
+          "outlet": "midwest-signal.example",
+          "headline_original": "What the social media case could mean for local news",
+          "headline_en": "What the social media case could mean for local news",
+          "published": "2026-10-18T01:12:00.000Z",
+          "outlet_rating": null,
+          "article_score": null,
+          "confidence": "low",
+          "reason": "Explainer; too little framing to judge."
+        }
+      ]
+    }
+  ]
+}

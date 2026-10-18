@@ -1,0 +1,194 @@
+{
+  "code": "GB",
+  "name": "United Kingdom",
+  "axis": {
+    "summary": "Labour-leaning left to Conservative and Reform-leaning right",
+    "left": "left",
+    "right": "right"
+  },
+  "updated": "2026-10-18T09:12:00Z",
+  "stories": [
+    {
+      "id": "gb-1",
+      "title": "Chancellor outlines spending plan ahead of autumn budget",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://northern-herald.example/news/gb-1-1",
+          "outlet": "northern-herald.example",
+          "headline_original": "Chancellor's plan leaves councils facing fresh cuts",
+          "headline_en": "Chancellor's plan leaves councils facing fresh cuts",
+          "published": "2026-10-18T07:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": -1,
+          "confidence": "high",
+          "reason": "Leads with council leaders' warnings and spending shortfalls."
+        },
+        {
+          "url": "https://the-weekly-ledger.example/news/gb-1-2",
+          "outlet": "the-weekly-ledger.example",
+          "headline_original": "Chancellor sets out spending priorities before budget",
+          "headline_en": "Chancellor sets out spending priorities before budget",
+          "published": "2026-10-18T06:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Summarises the statement and reactions from across the house."
+        },
+        {
+          "url": "https://albion-standard.example/news/gb-1-3",
+          "outlet": "albion-standard.example",
+          "headline_original": "Chancellor signals restraint as borrowing worries grow",
+          "headline_en": "Chancellor signals restraint as borrowing worries grow",
+          "published": "2026-10-18T05:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "medium",
+          "reason": "Frames borrowing as the main risk and quotes City economists."
+        },
+        {
+          "url": "https://westminster-wire.example/news/gb-1-4",
+          "outlet": "westminster-wire.example",
+          "headline_original": "Spending plan still too generous, say business leaders",
+          "headline_en": "Spending plan still too generous, say business leaders",
+          "published": "2026-10-18T04:12:00.000Z",
+          "outlet_rating": 2,
+          "article_score": 2,
+          "confidence": "high",
+          "reason": "Quotes only critics from business and calls the plan reckless."
+        },
+        {
+          "url": "https://clyde-courier.example/news/gb-1-5",
+          "outlet": "clyde-courier.example",
+          "headline_original": "Austerity by another name",
+          "headline_en": "Austerity by another name",
+          "published": "2026-10-18T03:12:00.000Z",
+          "outlet_rating": -2,
+          "article_score": -2,
+          "confidence": "high",
+          "reason": "Opinion framing that calls the plan an attack on public services."
+        }
+      ]
+    },
+    {
+      "id": "gb-2",
+      "title": "Rail strikes called off after pay deal",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://northern-herald.example/news/gb-2-1",
+          "outlet": "northern-herald.example",
+          "headline_original": "Rail workers win pay deal after months of action",
+          "headline_en": "Rail workers win pay deal after months of action",
+          "published": "2026-10-18T08:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": -1,
+          "confidence": "medium",
+          "reason": "Describes the outcome as a union victory with worker quotes."
+        },
+        {
+          "url": "https://the-weekly-ledger.example/news/gb-2-2",
+          "outlet": "the-weekly-ledger.example",
+          "headline_original": "Rail strikes suspended as union accepts offer",
+          "headline_en": "Rail strikes suspended as union accepts offer",
+          "published": "2026-10-18T07:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Reports terms of the deal and both sides' statements."
+        },
+        {
+          "url": "https://albion-standard.example/news/gb-2-3",
+          "outlet": "albion-standard.example",
+          "headline_original": "Commuters relieved as costly strikes finally end",
+          "headline_en": "Commuters relieved as costly strikes finally end",
+          "published": "2026-10-18T06:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "high",
+          "reason": "Emphasises disruption and cost, with no union voices."
+        }
+      ]
+    },
+    {
+      "id": "gb-3",
+      "title": "Water company fined over sewage discharges",
+      "blindspot": true,
+      "articles": [
+        {
+          "url": "https://northern-herald.example/news/gb-3-1",
+          "outlet": "northern-herald.example",
+          "headline_original": "Water firm fined £40m as sewage spills rise again",
+          "headline_en": "Water firm fined £40m as sewage spills rise again",
+          "published": "2026-10-18T05:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": -1,
+          "confidence": "high",
+          "reason": "Links the spills to privatisation and quotes campaigners."
+        },
+        {
+          "url": "https://clyde-courier.example/news/gb-3-2",
+          "outlet": "clyde-courier.example",
+          "headline_original": "Fines will not fix a broken water system",
+          "headline_en": "Fines will not fix a broken water system",
+          "published": "2026-10-18T04:12:00.000Z",
+          "outlet_rating": -2,
+          "article_score": -2,
+          "confidence": "high",
+          "reason": "Calls for public ownership and omits the regulator's position."
+        },
+        {
+          "url": "https://northern-herald.example/news/gb-3-3",
+          "outlet": "northern-herald.example",
+          "headline_original": "Anglers and swimmers welcome record sewage fine",
+          "headline_en": "Anglers and swimmers welcome record sewage fine",
+          "published": "2026-10-18T02:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": -1,
+          "confidence": "medium",
+          "reason": "Centres affected communities; company response is brief."
+        }
+      ]
+    },
+    {
+      "id": "gb-4",
+      "title": "Council housing targets missed in most regions",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://the-weekly-ledger.example/news/gb-4-1",
+          "outlet": "the-weekly-ledger.example",
+          "headline_original": "Most regions miss housing targets, figures show",
+          "headline_en": "Most regions miss housing targets, figures show",
+          "published": "2026-10-18T03:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Presents the statistics with comment from government and opposition."
+        },
+        {
+          "url": "https://albion-standard.example/news/gb-4-2",
+          "outlet": "albion-standard.example",
+          "headline_original": "Planning red tape blamed for housing shortfall",
+          "headline_en": "Planning red tape blamed for housing shortfall",
+          "published": "2026-10-18T01:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "medium",
+          "reason": "Attributes the shortfall to regulation, citing developers."
+        },
+        {
+          "url": "https://channel-post.example/news/gb-4-3",
+          "outlet": "channel-post.example",
+          "headline_original": "Housing figures: what they show for the south coast",
+          "headline_en": "Housing figures: what they show for the south coast",
+          "published": "2026-10-18T00:12:00.000Z",
+          "outlet_rating": null,
+          "article_score": null,
+          "confidence": "low",
+          "reason": "Local breakdown with little framing either way."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "code": "TH",
+  "name": "Thailand",
+  "axis": {
+    "summary": "Reformist and anti-establishment to conservative and pro-establishment",
+    "left": "reformist",
+    "right": "conservative"
+  },
+  "updated": "2026-10-18T09:12:00Z",
+  "stories": [
+    {
+      "id": "th-1",
+      "title": "Parliament passes budget after late-night vote",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://siam-tribune.example/news/th-1-1",
+          "outlet": "siam-tribune.example",
+          "headline_original": "งบประมาณผ่านสภาหลังอภิปรายมาราธอน ฝ่ายค้านโวย",
+          "headline_en": "Budget passes after marathon session as opposition cries foul",
+          "published": "2026-10-18T06:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": -1,
+          "confidence": "high",
+          "reason": "Leads with opposition objections and describes the vote as rushed."
+        },
+        {
+          "url": "https://krungthep-ledger.example/news/th-1-2",
+          "outlet": "krungthep-ledger.example",
+          "headline_original": "สภาอนุมัติงบประมาณ 3.75 ล้านล้านบาท",
+          "headline_en": "Parliament approves 3.75 trillion baht budget",
+          "published": "2026-10-18T05:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Reports the vote count and spending lines without taking a side."
+        },
+        {
+          "url": "https://chao-phraya-post.example/news/th-1-3",
+          "outlet": "chao-phraya-post.example",
+          "headline_original": "รัฐบาลผ่านงบฯ ฉลุย ลั่นเร่งเบิกจ่าย",
+          "headline_en": "Government secures budget win, promises faster disbursement",
+          "published": "2026-10-18T04:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "medium",
+          "reason": "Frames the result as a government success and quotes only ministers."
+        },
+        {
+          "url": "https://thai-national-daily.example/news/th-1-4",
+          "outlet": "thai-national-daily.example",
+          "headline_original": "งบฯ ผ่านแม้ฝ่ายค้านพยายามถ่วงเวลา",
+          "headline_en": "Budget passes despite opposition stalling tactics",
+          "published": "2026-10-18T03:12:00.000Z",
+          "outlet_rating": 2,
+          "article_score": 2,
+          "confidence": "high",
+          "reason": "Calls critics obstructive and credits the coalition for stability."
+        },
+        {
+          "url": "https://isan-voice.example/news/th-1-5",
+          "outlet": "isan-voice.example",
+          "headline_original": "งบใหม่กับภาคอีสาน",
+          "headline_en": "What the new budget means for the north-east",
+          "published": "2026-10-18T02:12:00.000Z",
+          "outlet_rating": null,
+          "article_score": -1,
+          "confidence": "low",
+          "reason": "Mostly explanatory, with a short critical line on regional allocations."
+        }
+      ]
+    },
+    {
+      "id": "th-2",
+      "title": "Court to rule on party dissolution case next week",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://ratchadamnoen-review.example/news/th-2-1",
+          "outlet": "ratchadamnoen-review.example",
+          "headline_original": "คดียุบพรรค บททดสอบขอบเขตอำนาจตุลาการ",
+          "headline_en": "Dissolution case tests the limits of judicial power",
+          "published": "2026-10-18T07:12:00.000Z",
+          "outlet_rating": -2,
+          "article_score": -2,
+          "confidence": "high",
+          "reason": "Argues the case is politically motivated and quotes only critics of the court."
+        },
+        {
+          "url": "https://siam-tribune.example/news/th-2-2",
+          "outlet": "siam-tribune.example",
+          "headline_original": "ผู้สนับสนุนพรรคชุมนุมก่อนคำวินิจฉัย",
+          "headline_en": "Party supporters rally ahead of dissolution ruling",
+          "published": "2026-10-18T06:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": -1,
+          "confidence": "medium",
+          "reason": "Centres supporters' voices and their concerns about the process."
+        },
+        {
+          "url": "https://krungthep-ledger.example/news/th-2-3",
+          "outlet": "krungthep-ledger.example",
+          "headline_original": "ศาลรัฐธรรมนูญนัดวินิจฉัยคดียุบพรรค",
+          "headline_en": "Constitutional Court sets ruling date in dissolution case",
+          "published": "2026-10-18T05:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "States the schedule and the legal questions without commentary."
+        },
+        {
+          "url": "https://thai-national-daily.example/news/th-2-4",
+          "outlet": "thai-national-daily.example",
+          "headline_original": "ศาลต้องยืนตามกฎหมาย ไม่หวั่นแรงกดดันข้างถนน",
+          "headline_en": "Court must uphold the law regardless of street pressure",
+          "published": "2026-10-18T04:12:00.000Z",
+          "outlet_rating": 2,
+          "article_score": 2,
+          "confidence": "high",
+          "reason": "Editorial framing that treats the complaint as settled fact."
+        }
+      ]
+    },
+    {
+      "id": "th-3",
+      "title": "Floods displace thousands in the north",
+      "blindspot": false,
+      "articles": [
+        {
+          "url": "https://krungthep-ledger.example/news/th-3-1",
+          "outlet": "krungthep-ledger.example",
+          "headline_original": "น้ำท่วมเหนือ ประชาชนอพยพ 12,000 คน",
+          "headline_en": "Floods displace 12,000 in Chiang Rai and Nan",
+          "published": "2026-10-18T08:12:00.000Z",
+          "outlet_rating": 0,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Straight reporting of damage figures and relief efforts."
+        },
+        {
+          "url": "https://chao-phraya-post.example/news/th-3-2",
+          "outlet": "chao-phraya-post.example",
+          "headline_original": "ทีมกู้ภัยเข้าถึงหมู่บ้านที่ถูกตัดขาด",
+          "headline_en": "Relief teams reach cut-off villages after two days",
+          "published": "2026-10-18T07:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 0,
+          "confidence": "medium",
+          "reason": "Descriptive account of the response with quotes from both officials and residents."
+        },
+        {
+          "url": "https://isan-voice.example/news/th-3-3",
+          "outlet": "isan-voice.example",
+          "headline_original": "น้ำท่วมภาคเหนือ ช่วยได้อย่างไร",
+          "headline_en": "Northern floods: how to help",
+          "published": "2026-10-18T06:12:00.000Z",
+          "outlet_rating": null,
+          "article_score": 0,
+          "confidence": "high",
+          "reason": "Service journalism with no political framing."
+        }
+      ]
+    },
+    {
+      "id": "th-4",
+      "title": "Minimum wage rise approved for ten provinces",
+      "blindspot": true,
+      "articles": [
+        {
+          "url": "https://chao-phraya-post.example/news/th-4-1",
+          "outlet": "chao-phraya-post.example",
+          "headline_original": "ขึ้นค่าแรง ตอบแทนแรงงานในจังหวัดเศรษฐกิจโต",
+          "headline_en": "Wage rise rewards workers in growth provinces",
+          "published": "2026-10-18T03:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "high",
+          "reason": "Presents the policy as a government achievement with employer quotes only."
+        },
+        {
+          "url": "https://thai-national-daily.example/news/th-4-2",
+          "outlet": "thai-national-daily.example",
+          "headline_original": "ขึ้นค่าแรงแบบสมดุล ปกป้องธุรกิจรายย่อย",
+          "headline_en": "Balanced wage decision protects small business",
+          "published": "2026-10-18T01:12:00.000Z",
+          "outlet_rating": 2,
+          "article_score": 2,
+          "confidence": "high",
+          "reason": "Praises the decision and dismisses labour groups' call for a national rise."
+        },
+        {
+          "url": "https://chao-phraya-post.example/news/th-4-3",
+          "outlet": "chao-phraya-post.example",
+          "headline_original": "จังหวัดขานรับการขึ้นค่าแรงแบบขั้นบันได",
+          "headline_en": "Provinces welcome staged minimum wage increase",
+          "published": "2026-10-18T00:12:00.000Z",
+          "outlet_rating": 1,
+          "article_score": 1,
+          "confidence": "medium",
+          "reason": "Quotes governors and chambers of commerce, no worker voices."
+        }
+      ]
+    },
+    {
+      "id": "th-5",
+      "title": "University students rally against conscription",
+      "blindspot": true,
+      "articles": [
+        {
+          "url": "https://ratchadamnoen-review.example/news/th-5-1",
+          "outlet": "ratchadamnoen-review.example",
+          "headline_original": "นักศึกษาเรียกร้องยกเลิกจับใบดำใบแดง",
+          "headline_en": "Students demand an end to the draft lottery",
+          "published": "2026-10-17T23:12:00.000Z",
+          "outlet_rating": -2,
+          "article_score": -2,
+          "confidence": "high",
+          "reason": "Adopts protesters' framing throughout and omits the military's response."
+        },
+        {
+          "url": "https://siam-tribune.example/news/th-5-2",
+          "outlet": "siam-tribune.example",
+          "headline_original": "นักศึกษานับพันชุมนุมคัดค้านเกณฑ์ทหาร",
+          "headline_en": "Thousands join campus rallies over conscription",
+          "published": "2026-10-17T22:12:00.000Z",
+          "outlet_rating": -1,
+          "article_score": -1,
+          "confidence": "high",
+          "reason": "Sympathetic to protesters, with one line from the defence ministry."
+        },
+        {
+          "url": "https://ratchadamnoen-review.example/news/th-5-3",
+          "outlet": "ratchadamnoen-review.example",
+          "headline_original": "ทำไมข้อถกเถียงเรื่องเกณฑ์ทหารไม่จบ",
+          "headline_en": "Why the conscription debate will not go away",
+          "published": "2026-10-17T21:12:00.000Z",
+          "outlet_rating": -2,
+          "article_score": -2,
+          "confidence": "medium",
+          "reason": "Opinion piece that treats abolition as the only reasonable position."
+        }
+      ]
+    }
+  ]
+}

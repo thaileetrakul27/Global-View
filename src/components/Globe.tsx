@@ -7,6 +7,8 @@ import { countryFocus, type CountryFeature } from "@/lib/geo";
 
 export interface GlobeProps {
   countries: CountryFeature[];
+  /** Codes of countries that have stories; they are drawn in a deeper sand. */
+  withData: Set<string>;
   selected: CountryFeature | null;
   onSelect: (code: string) => void;
   /** Screen space covered by panels, so the globe can shift away from them. */
@@ -26,7 +28,7 @@ function token(name: string, fallback: string): string {
   );
 }
 
-export default function Globe({ countries, selected, onSelect, inset }: GlobeProps) {
+export default function Globe({ countries, withData, selected, onSelect, inset }: GlobeProps) {
   const globeRef = useRef<GlobeMethods | undefined>(undefined);
   const wrapRef = useRef<HTMLDivElement>(null);
   // Last known mouse or pen position, so the tooltip can appear in the right
@@ -43,9 +45,10 @@ export default function Globe({ countries, selected, onSelect, inset }: GlobePro
   const colors = useMemo(
     () => ({
       ocean: token("--ocean", "#dce4ea"),
-      land: token("--land", "#efe6d2"),
-      landHover: token("--land-hover", "#e0d3b4"),
-      landSelected: token("--land-selected", "#d9cfae"),
+      land: token("--land", "#f0ebdf"),
+      landData: token("--land-data", "#e7dab6"),
+      landHover: token("--land-hover", "#dccca3"),
+      landSelected: token("--land-selected", "#d2c08f"),
       border: token("--border", "#ffffff"),
       accent: token("--accent", "#1f6f78"),
     }),
@@ -127,9 +130,12 @@ export default function Globe({ countries, selected, onSelect, inset }: GlobePro
   }, [selectedCode]);
 
   const capColor = useCallback(
-    (d: object) =>
-      d === selected ? colors.landSelected : d === hovered ? colors.landHover : colors.land,
-    [hovered, selected, colors],
+    (d: object) => {
+      if (d === selected) return colors.landSelected;
+      if (d === hovered) return colors.landHover;
+      return withData.has((d as CountryFeature).properties.code) ? colors.landData : colors.land;
+    },
+    [hovered, selected, withData, colors],
   );
   const strokeColor = useCallback(
     (d: object) => (d === selected ? colors.accent : colors.border),

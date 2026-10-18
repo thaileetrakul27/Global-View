@@ -10,11 +10,12 @@
   --line: #e6e4dd;
   --accent: #1f6f78;
 
-  /* Globe */
+  /* Globe. Countries with stories use the deeper sand; the rest stay pale. */
   --ocean: #dce4ea;
-  --land: #efe6d2;
-  --land-hover: #e0d3b4;
-  --land-selected: #d9cfae;
+  --land: #f0ebdf;
+  --land-data: #e7dab6;
+  --land-hover: #dccca3;
+  --land-selected: #d2c08f;
   --border: #ffffff;
 
   /* Political spectrum, -2 .. +2 */

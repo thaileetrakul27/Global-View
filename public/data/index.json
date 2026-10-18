@@ -1,0 +1,44 @@
+{
+  "updated": "2026-10-18T09:12:00Z",
+  "countries": {
+    "TH": {
+      "name": "Thailand",
+      "stories": 5,
+      "articles": 18,
+      "balance": {
+        "0": 5,
+        "1": 3,
+        "2": 3,
+        "-2": 3,
+        "-1": 3,
+        "unclear": 1
+      }
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "stories": 4,
+      "articles": 14,
+      "balance": {
+        "0": 3,
+        "1": 3,
+        "2": 1,
+        "-2": 2,
+        "-1": 4,
+        "unclear": 1
+      }
+    },
+    "US": {
+      "name": "United States",
+      "stories": 5,
+      "articles": 19,
+      "balance": {
+        "0": 6,
+        "1": 5,
+        "2": 3,
+        "-2": 1,
+        "-1": 3,
+        "unclear": 1
+      }
+    }
+  }
+}

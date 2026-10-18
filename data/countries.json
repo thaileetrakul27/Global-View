@@ -1,0 +1,44 @@
+{
+  "countries": [
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "enabled": true,
+      "axis": {
+        "summary": "Reformist and anti-establishment to conservative and pro-establishment",
+        "left": "reformist",
+        "right": "conservative"
+      }
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "enabled": true,
+      "axis": {
+        "summary": "Labour-leaning left to Conservative and Reform-leaning right",
+        "left": "left",
+        "right": "right"
+      }
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "enabled": true,
+      "axis": {
+        "summary": "Democratic-leaning to Republican-leaning",
+        "left": "Democratic",
+        "right": "Republican"
+      }
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "enabled": false,
+      "axis": {
+        "summary": "Critical of the government to aligned with the state line",
+        "left": "critical",
+        "right": "state-aligned"
+      }
+    }
+  ]
+}

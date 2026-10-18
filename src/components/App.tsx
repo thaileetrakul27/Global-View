@@ -2,10 +2,11 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { loadCountries, type CountryFeature } from "@/lib/geo";
+import { loadCountry, loadIndex, type CountryFile, type IndexFile } from "@/lib/data";
 import { useViewport } from "@/lib/useViewport";
 import GlobeView from "./GlobeView";
 import CountrySearch from "./CountrySearch";
-import CountryPanel from "./CountryPanel";
+import CountryPanel, { type CountryState } from "./CountryPanel";
 import BottomSheet from "./BottomSheet";
 
 /** Desktop side panel width in px, capped so the globe keeps two thirds. */
@@ -17,12 +18,51 @@ export const SHEET_PEEK = 0.42;
 // layout mode. The globe, search box and panel all read from here.
 export default function App() {
   const [countries, setCountries] = useState<CountryFeature[]>([]);
+  const [index, setIndex] = useState<IndexFile | null>(null);
+  // Country files already fetched, keyed by code. Null marks "no file".
+  const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
   const vp = useViewport();
 
   useEffect(() => {
     loadCountries().then(setCountries).catch(console.error);
+    loadIndex().then(setIndex).catch(console.error);
   }, []);
+
+  // Fetch the selected country's stories once, then keep them. The index
+  // says which countries have a file, so no request is made for the rest.
+  useEffect(() => {
+    if (!selectedCode || selectedCode in files) return;
+    if (index && !(selectedCode in index.countries)) return; // nothing to fetch
+    let cancelled = false;
+    loadCountry(selectedCode)
+      .then((data) => {
+        if (!cancelled) setFiles((f) => ({ ...f, [selectedCode]: data }));
+      })
+      .catch((err) => {
+        console.error(err);
+        if (!cancelled) setFiles((f) => ({ ...f, [selectedCode]: "error" }));
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedCode, files, index]);
+
+  // Codes of countries that have stories, for colouring the globe.
+  const withData = useMemo(
+    () => new Set(index ? Object.keys(index.countries) : []),
+    [index],
+  );
+
+  const countryState: CountryState = useMemo(() => {
+    if (!selectedCode) return { status: "loading" };
+    if (index && !(selectedCode in index.countries)) return { status: "none" };
+    if (!(selectedCode in files)) return { status: "loading" };
+    const f = files[selectedCode];
+    if (f === "error") return { status: "error" };
+    if (f === null) return { status: "none" };
+    return { status: "ready", data: f };
+  }, [selectedCode, files, index]);
 
   const selected = useMemo(
     () => countries.find((c) => c.properties.code === selectedCode) ?? null,
@@ -55,6 +95,7 @@ export default function App() {
     <main className="relative h-full w-full overflow-hidden">
       <GlobeView
         countries={countries}
+        withData={withData}
         selected={selected}
         onSelect={select}
         inset={inset}
@@ -88,11 +129,11 @@ export default function App() {
           className="absolute inset-y-0 right-0 z-30 flex w-[min(440px,38vw)] flex-col border-l border-line bg-paper transition-transform duration-300 ease-out"
           style={{ transform: selected ? "translateX(0)" : "translateX(100%)" }}
         >
-          {selected && <CountryPanel country={selected} onClose={close} />}
+          {selected && <CountryPanel country={selected} state={countryState} onClose={close} />}
         </aside>
       ) : (
         <BottomSheet open={!!selected} onClose={close} peek={SHEET_PEEK}>
-          {selected && <CountryPanel country={selected} onClose={close} />}
+          {selected && <CountryPanel country={selected} state={countryState} onClose={close} />}
         </BottomSheet>
       )}
     </main>
