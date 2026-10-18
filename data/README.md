@@ -9,6 +9,7 @@ One entry per country the pipeline may fetch.
 | Field | Meaning |
 | --- | --- |
 | `code` | ISO 3166-1 alpha-2 code, matching `public/geo/countries.geojson` |
+| `gdelt` | The country code GDELT uses, from `pipeline/data/gdelt-countries.txt`. GDELT uses FIPS codes, so the United Kingdom is `UK` and China is `CH`. Defaults to `code` when omitted |
 | `name` | Display name |
 | `enabled` | Whether the pipeline fetches this country |
 | `axis.summary` | One plain-words line describing the -2 to +2 axis for this country |

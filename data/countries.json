@@ -2,6 +2,7 @@
   "countries": [
     {
       "code": "TH",
+      "gdelt": "TH",
       "name": "Thailand",
       "enabled": true,
       "axis": {
@@ -12,6 +13,7 @@
     },
     {
       "code": "GB",
+      "gdelt": "UK",
       "name": "United Kingdom",
       "enabled": true,
       "axis": {
@@ -22,6 +24,7 @@
     },
     {
       "code": "US",
+      "gdelt": "US",
       "name": "United States",
       "enabled": true,
       "axis": {
@@ -32,6 +35,7 @@
     },
     {
       "code": "CN",
+      "gdelt": "CH",
       "name": "China",
       "enabled": false,
       "axis": {
