@@ -79,7 +79,7 @@ export async function translateNew(
   for (let start = 0; start < pending.length; start += BATCH_SIZE) {
     const batch = pending.slice(start, start + BATCH_SIZE);
     const { system, user } = buildTranslationPrompt(country, batch.map((a) => a.title));
-    const result = await ai.parse({ schema: translationSchema, system, user, maxTokens: 6000, effort: "low" });
+    const result = await ai.parse({ schema: translationSchema, system, user, maxTokens: 6000, effort: "low", purpose: "translate" });
     if (!result) continue;
     for (const item of result.items) {
       const article = batch[item.i];

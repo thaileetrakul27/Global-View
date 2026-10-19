@@ -279,6 +279,111 @@ export const loadCrises = async (): Promise<CrisesFile | null> => {
   return c ? { ...c, alerts: c.alerts ?? [], quiet: c.quiet ?? [] } : null;
 };
 
+// Disasters: public/data/disasters.json, written by pipeline/lib/disasters.
+// Same shapes as pipeline/lib/disasters/types.ts; coordinates are GeoJSON
+// order, [longitude, latitude].
+
+export type DisasterType =
+  | "earthquake"
+  | "tsunami"
+  | "cyclone"
+  | "storm"
+  | "flood"
+  | "landslide"
+  | "wildfire"
+  | "volcano"
+  | "drought"
+  | "heatwave"
+  | "coldwave"
+  | "dust";
+
+/** 1 = minor or local, 2 = significant, 3 = severe. */
+export type Severity = 1 | 2 | 3;
+export type DisasterSource = "gdacs" | "usgs" | "eonet" | "ifrc" | "news";
+export type Position = [number, number];
+export type AreaGeometry =
+  | { type: "Polygon"; coordinates: Position[][] }
+  | { type: "MultiPolygon"; coordinates: Position[][][] };
+
+/** affected: footprint; wind: cyclone wind zone (level km/h); shaking: quake intensity (level MMI); place: around an affected place. */
+export interface DisasterArea {
+  kind: "affected" | "wind" | "shaking" | "place";
+  level?: number;
+  geometry: AreaGeometry;
+}
+
+export interface DisasterPlace {
+  name: string;
+  admin?: string;
+  country: string;
+  lat: number;
+  lng: number;
+  kind: "city" | "town" | "district" | "region" | "site";
+  impact?: string;
+  source: string;
+}
+
+export interface DisasterFigure {
+  label: string;
+  value: string;
+  sourceName: string;
+  sourceUrl: string;
+}
+
+export interface DisasterAppeal {
+  code: string;
+  name: string;
+  kind: string;
+  requested: number;
+  funded: number;
+  url: string;
+  end: string;
+}
+
+export interface DonationLink {
+  label: string;
+  url: string;
+  org: string;
+  kind: "appeal" | "society" | "un" | "government" | "agency";
+  note: string;
+  via: "registry" | "research";
+}
+
+export interface Disaster {
+  id: string;
+  type: DisasterType;
+  title: string;
+  severity: Severity;
+  severityText?: string;
+  countries: string[];
+  lat: number;
+  lng: number;
+  /** exact: epicentre or mapped footprint; area: district or region; country: only the country is known. */
+  precision: "exact" | "area" | "country";
+  started: string;
+  updated: string;
+  areas: DisasterArea[];
+  track?: { past: Position[]; forecast: Position[] };
+  places: DisasterPlace[];
+  summary?: string;
+  summarySource?: { name: string; url: string };
+  figures: DisasterFigure[];
+  sources: { name: string; url: string }[];
+  appeals: DisasterAppeal[];
+  donate: DonationLink[];
+  reportedBy: DisasterSource[];
+  members: string[];
+  research?: { at: string; model: string; searches: number };
+}
+
+export interface DisastersFile {
+  updated: string;
+  fetched: Record<DisasterSource, string | null>;
+  disasters: Disaster[];
+}
+
+export const loadDisasters = () => loadOptional<DisastersFile>("/data/disasters.json");
+
 export async function loadIndex(): Promise<IndexFile> {
   const res = await fetch("/data/index.json");
   if (!res.ok) throw new Error(`Could not load index (${res.status})`);

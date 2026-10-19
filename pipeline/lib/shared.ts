@@ -180,6 +180,6 @@ export async function findSharedStories(ai: AiClient, candidates: Candidate[]): 
   const { system, user } = buildSharedPrompt(candidates);
   // 16k is the most the SDK allows without streaming; with candidates limited
   // to cross-border topics, 80 short groups fit comfortably.
-  const result = await ai.parse({ schema: sharedSchema, system, user, maxTokens: 16000, effort: "low" });
+  const result = await ai.parse({ schema: sharedSchema, system, user, maxTokens: 16000, effort: "low", purpose: "group" });
   return result ? toStories(result, candidates) : null;
 }
