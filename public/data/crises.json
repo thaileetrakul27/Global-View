@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-18T23:27:27.909Z",
+  "updated": "2026-10-19T04:58:17.408Z",
   "watching": [
     {
       "code": "CA",
-      "editions": 23,
+      "editions": 21,
       "baseline": null,
-      "share": 0.58,
+      "share": 0.55,
       "sample": [
+        "Dead, injured, major fire: \"tense situation\" at army base in Canada",
         "Canadian military base fire: Death toll confirmed and cause under investigation",
-        "Accident with ammunition? - Four dead in fire at military base in Canada",
-        "Canadian military base fire: Death toll confirmed and cause under investigation"
+        "4 dead, 39 injured due to grass fire at Canadian military camp"
       ]
     }
   ],
@@ -19,14 +19,14 @@
       "id": "1001338",
       "type": "cyclone",
       "level": "Red",
-      "title": "Red notification for tropical cyclone CHAMPI-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0.179 million .",
-      "description": "From 14/10/2026 to 18/10/2026, a Hurricane/Typhoon > 74 mph (maximum wind speed of 250 km/h) CHAMPI-26 was active in NWPacific. The cyclone affects these countries: Guam, Northern Mariana Islands, Japan (vulnerability Medium). Estimated population affected by category 1 (120 km/h) wind speeds or higher is 0.179 million .",
+      "title": "Red notification for tropical cyclone CHAMPI-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0.233 million .",
+      "description": "From 14/10/2026 to 19/10/2026, a Hurricane/Typhoon > 74 mph (maximum wind speed of 269 km/h) CHAMPI-26 was active in NWPacific. The cyclone affects these countries: Guam, Northern Mariana Islands, Japan (vulnerability Medium). Estimated population affected by category 1 (120 km/h) wind speeds or higher is 0.233 million .",
       "name": "CHAMPI-26",
       "countries": [
         "JP"
       ],
       "from": "2026-10-14T12:00:00.000Z",
-      "to": "2026-10-18T18:00:00.000Z",
+      "to": "2026-10-19T00:00:00.000Z",
       "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001338"
     },
     {
@@ -153,8 +153,8 @@
   ],
   "quiet": [
     {
-      "code": "MX",
-      "alert": "1001335",
+      "code": "CD",
+      "alert": "1027465",
       "editions": 2
     }
   ]
