@@ -18,6 +18,12 @@ describe("normalizeTitle and titleKey", () => {
 });
 
 describe("isJunkHeadline", () => {
+  it("keeps headlines in scripts that use combining marks", () => {
+    expect(isJunkHeadline("ฝรั่งเศสประกาศเคอร์ฟิวในปารีส-นีส หลังเกิดเหตุจลาจล")).toBe(false);
+    expect(isJunkHeadline("কক্সবাজারে পর্যটকদের ভিড়, হোটেল-মোটেলে ঠাঁই নেই")).toBe(false);
+    expect(isJunkHeadline("'เท้ง' กระต่ายขาเดียว ต้องซักฟอก 5 วัน จี้ 'ปธ.สภา' ประชุมวิป")).toBe(false);
+    expect(isJunkHeadline("الحكومة تُعلن خطة جديدة لدعم الأسر الفقيرة")).toBe(false);
+  });
   it("catches stream spam and leaves real headlines alone", () => {
     expect(isJunkHeadline("+[#!LIVESTREAMs!]™ Fiji vs Cook Islands Live Free Oct 18")).toBe(true);
     expect(isJunkHeadline("Watch Luxembourg vs Bulgaria live stream")).toBe(true);

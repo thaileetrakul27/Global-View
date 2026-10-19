@@ -175,8 +175,9 @@ export default function CountryPanel({
 
         {!history && world && (
           <p className="mt-3 rounded-md bg-card px-3 py-2 text-xs leading-snug text-muted">
-            {name} has no local news edition, so this is what the world is
-            writing about it, not what people in {name} are reading.
+            {name} has no Google News edition, so this is a news search instead: what
+            {name}&apos;s own outlets are publishing, in their language, followed by
+            international coverage in English.
           </p>
         )}
 
@@ -247,7 +248,7 @@ export default function CountryPanel({
           ? `From the daily archive: the top five as last seen on ${history.label}. Links open the publisher.`
           : data
             ? world
-              ? `Recent ${data.source.name} results about ${name}. Translations are automatic. Links open the publisher.`
+              ? `Recent ${data.source.name} search results about ${name}. Translations are automatic. Links open the publisher.`
               : `Ranked by ${data.source.name} top stories, ${name} edition. Translations are automatic. Links open the publisher.`
             : "Links open the publisher."}
       </footer>

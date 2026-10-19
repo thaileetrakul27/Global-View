@@ -58,6 +58,12 @@ Each feed gets one retry. A country that fails twice keeps its previous file and
 | `public/data/needs.json` | Per country, its long-term needs from UN figures via the World Bank: water, sanitation, electricity, hunger, poverty, schooling, literacy, child mortality |
 | `cache/headlines.json` | Translation cache, committed so runs on GitHub Actions share it |
 
+## Countries without an edition
+
+Google News has editions for 68 countries. The rest get "world coverage": a Bing News RSS search (`bing.com/news/search?format=rss&cc=XX&setlang=..`) for the country's own name in its press language, from `pipeline/config/languages.json`, which returns what its local outlets publish, two pages of about twelve items; then a Google News search in English for international coverage. The two lists are joined, deduplicated and capped at 20. Either source may fail; only both failing keeps the previous data. Bing's redirect links are unwrapped to the publisher's own URL. Countries not in the language table are searched in English by name.
+
+The junk filter allows combining marks (Thai and Bengali vowels and tones, Arabic diacritics); an earlier version counted them as symbols and dropped nearly every Thai headline.
+
 ## Shared stories across runs
 
 Grouping is redone every run, so each new story is matched against the previous file by article overlap. When at least half of the smaller story's articles match, the old id, title and first-seen time are kept; otherwise the story starts now. This keeps `?story=` links and titles stable while the news moves on.

@@ -27,8 +27,12 @@ export function titleKey(title: string): string {
 const JUNK =
   /live\s*stream|streams?\s+free|free\s+(live|online|stream)|watch\s*live|\blive\b.{0,40}\b(tv|free|hd)\b|[[(]\s*(live|watch)|™|#!|📺/i;
 
-/** Characters real headlines rarely use: brackets, @, *, $, |, √ and so on. */
-const SYMBOLS = /[^\p{L}\p{N}\s.,:;'"‘’“”\-–—!?()&/%+]/gu;
+/**
+ * Characters real headlines rarely use: brackets, @, *, $, |, √ and so on.
+ * Letters, digits and combining marks (Thai and Bengali vowels and tones,
+ * Arabic diacritics) are all fine.
+ */
+const SYMBOLS = /[^\p{L}\p{M}\p{N}\s.,:;'"‘’“”\-–—!?()&/%+]/gu;
 const SPORT = /\b(rugby|league|football|soccer|cricket|match|game|tv|hd)\b/i;
 
 export function isJunkHeadline(title: string): boolean {

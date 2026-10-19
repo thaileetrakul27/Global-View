@@ -24,8 +24,10 @@ export interface CountryConfig {
   kind: CoverageKind;
   /** Present for local coverage. */
   edition?: Edition;
-  /** Present for world coverage: the search query. */
+  /** Present for world coverage: the Google News search query. */
   query?: string;
+  /** Present for world coverage: the press language and the country's name in it, for Bing News. */
+  local?: { lang: string; name: string };
 }
 
 interface RawCountry {
@@ -71,6 +73,16 @@ export function loadWorldQueries(path = "pipeline/config/world-queries.json"): W
   return { skip: parsed.skip.map((c) => c.toUpperCase()), queries: parsed.queries };
 }
 
+export interface Languages {
+  languages: Record<string, { lang: string; name: string }>;
+}
+
+/** The press language and local name for countries without an edition. */
+export function loadLanguages(path = "pipeline/config/languages.json"): Languages {
+  const parsed = JSON.parse(fs.readFileSync(path, "utf8")) as Languages;
+  return { languages: Object.fromEntries(Object.entries(parsed.languages).map(([code, v]) => [code.toUpperCase(), v])) };
+}
+
 /** Full names that read oddly in a search query. */
 const NAME_PREFIXES = /^(The |Republic of |United Republic of |Kingdom of )/;
 
@@ -78,14 +90,21 @@ const NAME_PREFIXES = /^(The |Republic of |United Republic of |Kingdom of )/;
  * Every globe country without a local edition gets world coverage: a search
  * for its name, or a hand-written query where the name is ambiguous.
  */
-export function worldCountries(local: CountryConfig[], globe: GlobeFeature[], wq: WorldQueries): CountryConfig[] {
+export function worldCountries(local: CountryConfig[], globe: GlobeFeature[], wq: WorldQueries, langs: Languages = { languages: {} }): CountryConfig[] {
   const covered = new Set(local.map((c) => c.code));
   const skip = new Set(wq.skip);
   return globe
     .filter((f) => !covered.has(f.code) && !skip.has(f.code))
     .map((f) => {
       const name = f.admin.replace(NAME_PREFIXES, "");
-      return { code: f.code, name, enabled: true, kind: "world" as const, query: wq.queries[f.code] ?? `"${name}"` };
+      return {
+        code: f.code,
+        name,
+        enabled: true,
+        kind: "world" as const,
+        query: wq.queries[f.code] ?? `"${name}"`,
+        local: langs.languages[f.code] ?? { lang: "en", name },
+      };
     })
     .sort((a, b) => a.code.localeCompare(b.code));
 }

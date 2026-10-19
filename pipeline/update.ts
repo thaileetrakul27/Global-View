@@ -13,10 +13,12 @@ import { createAiClient } from "./lib/ai";
 import { parseUpdateArgs } from "./lib/args";
 import { buildAboutFiles, buildAttention } from "./lib/attention";
 import { dedupeArticles } from "./lib/clean";
+import { fetchBingFeed } from "./lib/bingnews";
 import {
   loadCountryConfig,
   loadGlobeCodes,
   loadGlobeFeatures,
+  loadLanguages,
   loadWorldQueries,
   selectCountries,
   worldCountries,
@@ -47,10 +49,25 @@ interface Fetched {
   articles: Article[];
 }
 
+/**
+ * World coverage: what the country's own outlets publish, from Bing News
+ * in the press language, followed by Google News search results in
+ * English. Either source may fail; both failing keeps the previous data.
+ */
+async function fetchWorld(country: CountryConfig, delayMs: number, deps: typeof fetchDeps): Promise<{ url: string; articles: Article[] } | null> {
+  const local = country.local ?? { lang: "en", name: country.name };
+  const bing = await fetchBingFeed(local.name, country.code.slice(0, 2), local.lang, delayMs, deps);
+  await deps.sleep(delayMs);
+  const google = await fetchFeedUrl(buildSearchUrl(country.query ?? `"${country.name}"`), country.code, delayMs, deps);
+  if (!bing && !google) return null;
+  return { url: bing?.url ?? google!.url, articles: [...(bing?.articles ?? []), ...(google?.articles ?? [])] };
+}
+const fetchDeps = { fetch, sleep, log: console.log };
+
 async function main() {
   const args = parseUpdateArgs(process.argv.slice(2));
   const local = loadCountryConfig();
-  const world = worldCountries(local, loadGlobeFeatures(), loadWorldQueries());
+  const world = worldCountries(local, loadGlobeFeatures(), loadWorldQueries(), loadLanguages());
   const countries = selectCountries([...local, ...world], args.countries);
   const indexPath = `${args.outDir}/index.json`;
   const previous = readIndex(indexPath);
@@ -64,10 +81,7 @@ async function main() {
   const failed: string[] = [];
   for (const [i, country] of countries.entries()) {
     if (i > 0) await sleep(args.delayMs);
-    const result =
-      country.kind === "local" && country.edition
-        ? await fetchFeed(country.edition, args.delayMs, deps)
-        : await fetchFeedUrl(buildSearchUrl(country.query ?? `"${country.name}"`), country.code, args.delayMs, deps);
+    const result = country.kind === "local" && country.edition ? await fetchFeed(country.edition, args.delayMs, deps) : await fetchWorld(country, args.delayMs, deps);
     if (!result) {
       failed.push(country.code);
       log(`  ${country.code}: kept previous data`);
@@ -125,7 +139,7 @@ async function main() {
       kind: f.country.kind,
       updated: now,
       source: {
-        name: "Google News",
+        name: f.country.kind === "local" ? "Google News" : "Bing News and Google News",
         edition: f.country.kind === "local" ? (f.country.edition?.ceid ?? "") : "search",
         url: f.feedUrl,
       },

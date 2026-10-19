@@ -1,13 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {
-  loadCountryConfig,
-  loadGlobeCodes,
-  loadGlobeFeatures,
-  loadWorldQueries,
-  selectCountries,
-  worldCountries,
-  type CountryConfig,
-} from "./countries";
+import { loadCountryConfig, loadGlobeCodes, loadGlobeFeatures, loadLanguages, loadWorldQueries, selectCountries, type CountryConfig, worldCountries } from "./countries";
 
 const ed = { hl: "en", gl: "XX", ceid: "XX:en" };
 const TH: CountryConfig = { code: "TH", name: "Thailand", enabled: true, kind: "local", edition: ed };
@@ -37,6 +29,9 @@ describe("worldCountries", () => {
   const wq = { skip: ["AQ"], queries: { GE: '"Georgia" (Tbilisi OR Georgian)' } };
   it("covers globe countries without an edition, skipping the skip list", () => {
     const out = worldCountries([TH], globe, wq);
+    expect(out.every((c) => c.local?.lang === "en" && c.local.name === c.name)).toBe(true);
+    const withLangs = worldCountries([TH], globe, wq, { languages: { MN: { lang: "mn", name: "Монгол" } } });
+    expect(withLangs.find((c) => c.code === "MN")?.local).toEqual({ lang: "mn", name: "Монгол" });
     expect(out.map((c) => c.code)).toEqual(["GE", "MN", "TZ"]);
     expect(out.every((c) => c.kind === "world" && c.enabled)).toBe(true);
   });
@@ -71,5 +66,18 @@ describe("real config files", () => {
     for (const code of Object.keys(wq.queries)) expect(globeCodes.has(code), `override ${code}`).toBe(true);
     expect(local.length + world.length + wq.skip.length).toBe(globe.length);
     for (const c of world) expect(c.query, c.code).toBeTruthy();
+  });
+});
+
+describe("loadLanguages", () => {
+  it("loads the real table with a language code and a name for every entry", () => {
+    const { languages } = loadLanguages();
+    expect(Object.keys(languages).length).toBeGreaterThan(80);
+    for (const [code, v] of Object.entries(languages)) {
+      expect(code).toMatch(/^[A-Z]{2,3}$/);
+      expect(v.lang).toMatch(/^[a-z]{2,3}(-[A-Za-z]{2,4})?$/);
+      expect(v.name.trim().length).toBeGreaterThan(1);
+    }
+    expect(languages.TD).toEqual({ lang: "fr", name: "Tchad" });
   });
 });
