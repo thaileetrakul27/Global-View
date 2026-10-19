@@ -2,20 +2,92 @@
   "code": "IR",
   "name": "Iran",
   "kind": "world",
-  "updated": "2026-10-19T20:45:07.723Z",
+  "updated": "2026-10-19T21:22:15.882Z",
   "source": {
-    "name": "Google News",
+    "name": "Bing News and Google News",
     "edition": "search",
-    "url": "https://news.google.com/rss/search?q=%22Iran%22+when%3A3d&hl=en-US&gl=US&ceid=US%3Aen"
+    "url": "https://www.bing.com/news/search?q=%D8%A7%DB%8C%D8%B1%D8%A7%D9%86&format=rss&cc=IR&setlang=fa"
   },
   "articles": [
     {
-      "title": "Live - Tehran hosts diplomatic visits with Pakistan’s top general due after Lavrov",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrcnBqMUFFX1cyREwxckpUbVNRS0FRcUhUS2dlMU1xWnZmWXFKR01HbFZqaHBhYTlJRk9Rb2kzN1FrbmNVbTRFVmViNFFtOVBRWkdXQWVXZkpyWEFfcGc?oc=5",
-      "outlet": "Iran International",
-      "outletUrl": "https://www.iranintl.com",
-      "published": "2026-10-19T18:38:15.000Z",
-      "en": "Live - Iran's new defense minister urges US personnel out of region as Washington signals longer stay",
+      "title": "زنده, دیدار وزیر خارجه روسیه با پزشکیان و عراقچی؛ لاوروف: همکاری با ایران را کنار نخواهیم گذاشت",
+      "url": "https://www.bbc.com/persian/live/cqvgr3kpl8dkt",
+      "outlet": "BBC",
+      "outletUrl": null,
+      "published": "2026-10-18T15:17:00.000Z",
+      "en": "Live: Russian Foreign Minister's meeting with Pezeshkian and Araghchi; Lavrov: We will not abandon cooperation with Iran",
+      "about": [
+        "RU",
+        "IR"
+      ]
+    },
+    {
+      "title": "روبیو: بخش وسیعی از ایران در برابر حملات احتمالی آینده آسیب‌پذیر است",
+      "url": "https://www.radiofarda.com/a/usrubio-says-palestine-easier-to-deal-with-if-iran-didn-t-exist/33879424.html",
+      "outlet": "رادیو فردا",
+      "outletUrl": null,
+      "published": "2026-10-19T04:32:00.000Z",
+      "en": "Rubio: A large part of Iran is vulnerable to possible future attacks",
+      "about": [
+        "US",
+        "IR"
+      ]
+    },
+    {
+      "title": "ونس: جنگ با ایران باید برای جلوگیری از احیای برنامه هسته‌ای تهران ادامه یابد",
+      "url": "https://www.radiofarda.com/a/jd-vance-he-war-must-continue-to-ensure-iran-does-not-rebuild-its-nuclear-capabilities/33878752.html",
+      "outlet": "رادیو فردا",
+      "outletUrl": null,
+      "published": "2026-10-18T00:29:00.000Z",
+      "en": "Vance: The war with Iran must continue to prevent the revival of Tehran's nuclear program",
+      "about": [
+        "US",
+        "IR"
+      ]
+    },
+    {
+      "title": "از ایروان تا بغداد؛ تحرک دیپلماتیک ایران در ۲ اجلاس مهم",
+      "url": "https://www.mehrnews.com/service/Politic/ForeignPolitic",
+      "outlet": "خبرگزاری مهر",
+      "outletUrl": null,
+      "published": "2017-10-31T16:45:00.000Z",
+      "en": "From Yerevan to Baghdad; Iran's diplomatic activity at 2 important summits",
+      "about": [
+        "IR",
+        "AM",
+        "IQ"
+      ]
+    },
+    {
+      "title": "پاکستان: بستن مرز با ایران، اقدامی موقت برای حمایت از تلاش‌های ضد تروریستی است/ به محض اتخاذ ...",
+      "url": "https://www.entekhab.ir/fa/news/943930/پاکستان-بستن-مرز-با-ایران-اقدامی-موقت-برای-حمایت-از-تلاش-های-ضد-تروریستی-است-به-محض-اتخاذ-تدابیر-مؤثر-مرز-بازگشایی-خواهد-شد",
+      "outlet": "انتخاب",
+      "outletUrl": null,
+      "published": "2026-10-17T17:00:00.000Z",
+      "en": "Pakistan: Closing the border with Iran is a temporary measure to support counter-terrorism efforts / Once ...",
+      "about": [
+        "PK",
+        "IR"
+      ]
+    },
+    {
+      "title": "فراخوان کارخانه هوش‌مصنوعی ایران برای حل مسائل فروش و پخش شرکت دینا",
+      "url": "https://www.zoomit.ir/iran-news/469395-iran-ai-factory-dina-reverse-pitch/",
+      "outlet": "زومیت",
+      "outletUrl": null,
+      "published": "2026-10-19T03:11:00.000Z",
+      "en": "Call by Iran's artificial intelligence company for solving sales and distribution issues of Dina company",
+      "about": [
+        "IR"
+      ]
+    },
+    {
+      "title": "قهرمانی تاریخی و اقتدار ملی کشتی آزاد امیدهای ایران در قلب آمریکا",
+      "url": "https://www.irna.ir/news/86296566/%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%DB%8C-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D9%88-%D8%A7%D9%82%D8%AA%D8%AF%D8%A7%D8%B1-%D9%85%D9%84%DB%8C-%DA%A9%D8%B4%D8%AA%DB%8C-%D8%A2%D8%B2%D8%A7%D8%AF-%D8%A7%D9%85%DB%8C%D8%AF%D9%87%D8%A7%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%AF%D8%B1-%D9%82%D9%84%D8%A8-%D8%A2%D9%85%D8%B1%DB%8C%DA%A9%D8%A7",
+      "outlet": "خبرگزاری جمهوری اسلامی",
+      "outletUrl": null,
+      "published": "2026-10-18T17:14:00.000Z",
+      "en": "Historic championship and national pride of Iran's young freestyle wrestlers in the heart of America",
       "about": [
         "IR",
         "US"
@@ -34,6 +106,18 @@
       ]
     },
     {
+      "title": "Live - Tehran hosts diplomatic visits with Pakistan’s top general due after Lavrov",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrcnBqMUFFX1cyREwxckpUbVNRS0FRcUhUS2dlMU1xWnZmWXFKR01HbFZqaHBhYTlJRk9Rb2kzN1FrbmNVbTRFVmViNFFtOVBRWkdXQWVXZkpyWEFfcGc?oc=5",
+      "outlet": "Iran International",
+      "outletUrl": "https://www.iranintl.com",
+      "published": "2026-10-19T18:38:15.000Z",
+      "en": "Live - Iran's new defense minister urges US personnel out of region as Washington signals longer stay",
+      "about": [
+        "IR",
+        "US"
+      ]
+    },
+    {
       "title": "Iran Escalates Before U.S. Midterm Elections",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9rN2lYaThDR2cwek41TnE5Z2ZsRWkwdEJjN3NyNkN3SnJYUEp6d2h2RGNXaTdnemlKaFdQbTJQWk5TakZXb28tVndacmFPSVczWEcwZTlfbjFXaEpjVG5idG9faG1ac3VnV0Q4c2tCTENVYm5nMWNnNHk1OA?oc=5",
       "outlet": "JINSA",
@@ -41,19 +125,6 @@
       "published": "2026-10-19T15:46:50.000Z",
       "en": "Iran Escalates Before U.S. Midterm Elections",
       "about": [
-        "IR",
-        "US"
-      ]
-    },
-    {
-      "title": "Russia’s Lavrov discusses US war and regional security during Tehran visit",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQlRWbm1ZdGNfX3BQcTV4MTZBMERabzQ1ZWEwSXhhdW5pZkUxMFBvZXFuRTBsMjZ6Q182MG9qZWhJNDJOb3Y0WU96Zng3bWpfWGgyMFdrUzVvdjhrRk1QSm1IdTZoTW1TZENrTVNyLWpxdmpwbU5PZXFnd2RReXhDaS1pNEN6azVDdGt3OEtCTnRHV1hybXZ2Y3FLMzVVQndkNlFEbWlZWEJ1WTlWN3FJX3A4U3I3SGvSAbwBQVVfeXFMT2J4YW5XUTF5ckF5M2xIaWx2LUJkeW9sUkdhWnVCRU8wT1BIa2hsckRiZlFqcmlWMTFCb21iODNXUngxM1ZDeXB0UnRLcEZkbjFRbDkxMjllYlpmbXZhd3NXTk9nRHI2a2VuUm5KVWprcG53RzJQMFdKa0Y1TWhkN1V3VVB2UmJ2OElZWU43VGVETTlrNkdOa3NYdFlEajlLYVJOZDNybnc0WW9EV19CZEN2LV9WMGhiU3doV2U?oc=5",
-      "outlet": "Al Jazeera",
-      "outletUrl": "https://www.aljazeera.com",
-      "published": "2026-10-19T16:22:51.000Z",
-      "en": "Russia's Lavrov discusses US war and regional security during Tehran visit",
-      "about": [
-        "RU",
         "IR",
         "US"
       ]
@@ -70,15 +141,28 @@
       ]
     },
     {
-      "title": "The Iran war is sprawling into an inflation nightmare for Trump ahead of the midterms",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBTeHVGX0E5X2xlTTZPcU0zYTdJa1EydERiU3pGZWM3aFpleHdudlRXclRSekl6RmtWQlFEdHdvZkhUUF80cUhIbDlIVS1rQ2VwWmVRUGV1TEpwaFVESUZjaA?oc=5",
-      "outlet": "MSN",
-      "outletUrl": "https://www.msn.com",
-      "published": "2026-10-19T18:04:37.000Z",
-      "en": "The Iran war is sprawling into an inflation nightmare for Trump ahead of the midterms",
+      "title": "Russia’s Lavrov discusses US war and regional security during Tehran visit",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQlRWbm1ZdGNfX3BQcTV4MTZBMERabzQ1ZWEwSXhhdW5pZkUxMFBvZXFuRTBsMjZ6Q182MG9qZWhJNDJOb3Y0WU96Zng3bWpfWGgyMFdrUzVvdjhrRk1QSm1IdTZoTW1TZENrTVNyLWpxdmpwbU5PZXFnd2RReXhDaS1pNEN6azVDdGt3OEtCTnRHV1hybXZ2Y3FLMzVVQndkNlFEbWlZWEJ1WTlWN3FJX3A4U3I3SGvSAbwBQVVfeXFMT2J4YW5XUTF5ckF5M2xIaWx2LUJkeW9sUkdhWnVCRU8wT1BIa2hsckRiZlFqcmlWMTFCb21iODNXUngxM1ZDeXB0UnRLcEZkbjFRbDkxMjllYlpmbXZhd3NXTk9nRHI2a2VuUm5KVWprcG53RzJQMFdKa0Y1TWhkN1V3VVB2UmJ2OElZWU43VGVETTlrNkdOa3NYdFlEajlLYVJOZDNybnc0WW9EV19CZEN2LV9WMGhiU3doV2U?oc=5",
+      "outlet": "Al Jazeera",
+      "outletUrl": "https://www.aljazeera.com",
+      "published": "2026-10-19T16:22:51.000Z",
+      "en": "Russia's Lavrov discusses US war and regional security during Tehran visit",
       "about": [
+        "RU",
         "IR",
         "US"
+      ]
+    },
+    {
+      "title": "Live Updates: Latest from Israel, Iran, and the Middle East",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5yS0FDd1duN1hYeEFmX2xiNVVIdTN2bXQ5ZW9rYnpjazhyeHRaSGtEMjVDMXF4OFJyRXBwUDIyNFJLdTY0SFRsUTlxbi1qNW83eHB4VFpXVGRmM2lfVUJOY3lpVS1PckxYQ3BIZmNWMmVYOXRJZXozbTQwUC1JRlE?oc=5",
+      "outlet": "The Jerusalem Post",
+      "outletUrl": "https://www.jpost.com",
+      "published": "2026-10-19T20:57:57.000Z",
+      "en": "Live Updates: Latest from Israel, Iran, and the Middle East",
+      "about": [
+        "IL",
+        "IR"
       ]
     },
     {
@@ -94,18 +178,6 @@
       ]
     },
     {
-      "title": "Live Updates: Latest from Israel, Iran, and the Middle East",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5yS0FDd1duN1hYeEFmX2xiNVVIdTN2bXQ5ZW9rYnpjazhyeHRaSGtEMjVDMXF4OFJyRXBwUDIyNFJLdTY0SFRsUTlxbi1qNW83eHB4VFpXVGRmM2lfVUJOY3lpVS1PckxYQ3BIZmNWMmVYOXRJZXozbTQwUC1JRlE?oc=5",
-      "outlet": "The Jerusalem Post",
-      "outletUrl": "https://www.jpost.com",
-      "published": "2026-10-19T19:27:57.000Z",
-      "en": "Live Updates: Latest from Israel, Iran, and the Middle East",
-      "about": [
-        "IL",
-        "IR"
-      ]
-    },
-    {
       "title": "People scour strait of Hormuz for spilt cargo after Iran attacks container ships",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMVd5NTdZejdJLW9KZFpNUFVhVFpHaUxWU09tMU9lTXMxNGl3aG8ydFhmekpmcEZEdHNWRWs1MEVrUU1JamVKN1NVVWxyTXUyVmpQOC1lcUJTWUtFSkNEU2hweGJ3cFVaa2hfQ0xEZ1hTbEFKcTlPMGY0RTRXS3dpWXpIdWVXUWdvcV9MRnBqaEJlS2pySWNhbXBiWTRYVXktMFpmWjVn?oc=5",
       "outlet": "The Guardian",
@@ -114,6 +186,18 @@
       "en": "People scour strait of Hormuz for spilt cargo after Iran attacks container ships",
       "about": [
         "IR"
+      ]
+    },
+    {
+      "title": "The Iran war is sprawling into an inflation nightmare for Trump ahead of the midterms",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBTeHVGX0E5X2xlTTZPcU0zYTdJa1EydERiU3pGZWM3aFpleHdudlRXclRSekl6RmtWQlFEdHdvZkhUUF80cUhIbDlIVS1rQ2VwWmVRUGV1TEpwaFVESUZjaA?oc=5",
+      "outlet": "MSN",
+      "outletUrl": "https://www.msn.com",
+      "published": "2026-10-19T18:04:37.000Z",
+      "en": "The Iran war is sprawling into an inflation nightmare for Trump ahead of the midterms",
+      "about": [
+        "IR",
+        "US"
       ]
     },
     {
@@ -141,12 +225,12 @@
       ]
     },
     {
-      "title": "‘The world will be amazed:’ Iran’s commanders prepare for further war",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB0eUE3NlZIYURIaERvcmpRV3o0NWZRakxqY0QyYWVZU055SUJJazMybTNUVzlSSEN1TjhOc241WU9ld0NjTS10TWFCV1BNVnVnNDFQaHdPRWVXbS03RTlnOGNBdEtpR2J2OWJGTXpUMFZUNE5pSjVnbWhpSQ?oc=5",
-      "outlet": "CNN",
-      "outletUrl": "https://www.cnn.com",
-      "published": "2026-10-19T04:00:45.000Z",
-      "en": "'The world will be amazed:' Iran's commanders prepare for further war",
+      "title": "Iran Names UN-Sanctioned Missile Chief As Defense Minister",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9OeTc1VE5lcEx0QzNhVlh6TnBVZUhfdi1MR0xZQnJOLWo2U3dHb09ucVhPNXctSTFXNTF6R3EwZEJXSl96SF9zS2FPUWFwcHpHeFVMaGtUckZiaGIydHc1SFMwT3U1R1h5WnMtY2RGUkdtYm1jV2VUMWFB?oc=5",
+      "outlet": "Radio Free Europe/Radio Liberty",
+      "outletUrl": "https://www.rferl.org",
+      "published": "2026-10-19T04:29:52.000Z",
+      "en": "Iran Names UN-Sanctioned Missile Chief As Defense Minister",
       "about": [
         "IR"
       ]
@@ -159,92 +243,6 @@
       "published": "2026-10-19T00:55:22.000Z",
       "en": "Security Alert: Iran – October 18, 2026",
       "about": [
-        "IR"
-      ]
-    },
-    {
-      "title": "Iran Names UN-Sanctioned Missile Chief As Defense Minister",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9OeTc1VE5lcEx0QzNhVlh6TnBVZUhfdi1MR0xZQnJOLWo2U3dHb09ucVhPNXctSTFXNTF6R3EwZEJXSl96SF9zS2FPUWFwcHpHeFVMaGtUckZiaGIydHc1SFMwT3U1R1h5WnMtY2RGUkdtYm1jV2VUMWFB?oc=5",
-      "outlet": "Radio Free Europe/Radio Liberty",
-      "outletUrl": "https://www.rferl.org",
-      "published": "2026-10-19T04:29:52.000Z",
-      "en": "Iran Names UN-Sanctioned Missile Chief As Defense Minister",
-      "about": [
-        "IR"
-      ]
-    },
-    {
-      "title": "Iran threatens stronger response to new US attack as Lavrov visits Tehran",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1NV0dFLWtqajhaelNMelVxMFVtVTFTTXlFejhEZ0hJSzZRYWxtUEwxVlF4OUh0Zmk3b1IyemxNNjdhcmp5bzNpa3RRMXVtY3dzS3c?oc=5",
-      "outlet": "Iran International",
-      "outletUrl": "https://www.iranintl.com",
-      "published": "2026-10-19T13:49:29.000Z",
-      "en": "Iran threatens stronger response to new US attack as Lavrov visits Tehran",
-      "about": [
-        "IR",
-        "US",
-        "RU"
-      ]
-    },
-    {
-      "title": "Iran support for Houthis probed as Yemen war re-erupts and Saudi cities hit",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVlNET3hzZkR6WThWY0ZMbkpUYjVCY1pqWG5GQm1CSlNiXzNzWXJTbFAyZEhROXljekhHenNVcEZfVjgyQ3VvcmRuS2VNWjVvYVRMWGxaaXVoUEZPZFZNV1NPUHBtRUFRMUZCTWhTT2g3cEtDZWJabGVLdDhDVGN0UjJwNGVCUWZGVnFYZ2Z3WkZqVllVWDI2eHRZaXozY1dLdVdyUjd5Q2ZuNlJOaTFhUF9pVEF5VnR00gG-AUFVX3lxTFBzaVFoRXFEcWhGVFVLaGo5OGUwWnNicXhwSzdhQ0lJT3VfNk5ySFBXcFhpQkotdnpKNzBSeWVJd3ZKaTBFRE9aRmFfTjcxRk5fLXZfdU5oX205VWVNX1dzS0g1R0RjTG9nTXptLWNKWUcwQW1VN1VwOF9QTkNGaUE2SGFYcFB2N1lDcmdzbzJUS0pMZ0tUSkxYNnExMmFrR2NFcktfMC1YS05mOFBnZmN5ZWhMUEQtOF9rYi1IbGc?oc=5",
-      "outlet": "Al Jazeera",
-      "outletUrl": "https://www.aljazeera.com",
-      "published": "2026-10-19T10:57:02.000Z",
-      "en": "Iran support for Houthis probed as Yemen war re-erupts and Saudi cities hit",
-      "about": [
-        "IR",
-        "YE",
-        "SA"
-      ]
-    },
-    {
-      "title": "Qatar warns global energy shockwaves from Iran war have yet to peak",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNU0VIWU5qMkFsVzFscGFuVFV1VEtOTWx1Wmg2OE1fQmZCalJJbkJNMHJid1JBUjJTLXVXYThDMEQyMVc4dGlMakxOTEFudklpU2NhdDU1Vm1xZDB1NXZ3RVU5em5IV01uTVI4T1RjMFhVbW12bV95Qy1EcnVkdURuT0Zyd3VtYVI3M25vN0RIUjVNeHJkU1dPbzYtUWw0RmJ5UWttS2g1b1NxVzUyQVHSAbMBQVVfeXFMT0V1ZDUxUjhWYW9iOENYbi1sNFhfSXlNSi12ZDZRbWJ6ZTVJWjRyd3BvUnBJZ2xRLWpSTUlnLWNVd0ZNZ0xTU2EzVUVsTWpNcXlJbkxLXzE4LVJ1OHNFM0NTQ1dxYy1IRUJLSGlqenFYeGVCVjhGVU5GYW1vSldqVE1weWRpRjhjeHk0QVFxVFE0aTBzN2hSQ2ZWYkd1YnlVaEYzQzN4TXIxcDFnNE5FMlJMTzA?oc=5",
-      "outlet": "Al Jazeera",
-      "outletUrl": "https://www.aljazeera.com",
-      "published": "2026-10-19T09:27:13.000Z",
-      "en": "Qatar warns global energy shockwaves from Iran war have yet to peak",
-      "about": [
-        "QA",
-        "IR"
-      ]
-    },
-    {
-      "title": "Don’t let history repeat: The next Congress must end the Iran War",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB2YUtUVVFVRGVvSjVJLURsemVBMWFpanJQXzVMcnNDNURYck96T2pIak1aRXBvTFhiUFZ1dXBrUFBXN0pHRUNDc0hkMk1XS19vRGJqNTNnTk5MbEszYkx2UXRjSVJYRTZSQ1UxaVdDOC1oc3l2VlppbE43MGTSAYIBQVVfeXFMT1ZRQ01mWkROQi1BQl9tcmoxSEppVmpxYWJnOW5Id09YWUJaOFZ5c195cF9JdEY2UW5JSThvbmtzWVhHQjBPdXZ6N25TbG5sUFQ0al81bjByWTZpU09WbFlKUW9TRFdHakc2bjhJaUhsSU9abnViWUJhc1hET3dUeTRxZw?oc=5",
-      "outlet": "The Hill",
-      "outletUrl": "https://thehill.com",
-      "published": "2026-10-19T14:57:00.000Z",
-      "en": "Don’t let history repeat: The next Congress must end the Iran War",
-      "about": [
-        "US",
-        "IR"
-      ]
-    },
-    {
-      "title": "Exclusive: Breakthrough expected in US-Iran mediation efforts this week",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTlRaRnRhZnVjcjhLTV96ZmRXVDBBVWRHNF9IRjR1cGUyMko4ZlM3LUpRdC1Nak9xd1hJUlNRbG04NXdDbW9qMXpKU0FRcmx5VTlBNWdtbDFaTmR2eGJ4QkpESnlTN3FZVHNDdkxYdkpsUjMyd3VqZGlJbE1USXJWWjVWcFdkSzJhNWFGT2tkZw?oc=5",
-      "outlet": "The New Arab",
-      "outletUrl": "https://www.newarab.com",
-      "published": "2026-10-19T12:03:28.000Z",
-      "en": "Exclusive: Breakthrough expected in US-Iran mediation efforts this week",
-      "about": [
-        "US",
-        "IR"
-      ]
-    },
-    {
-      "title": "Trump Endorses Netanyahu Days Before Israeli Election as Iran War Tests Friendship",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZGpOOWxtVmkyYUM5V1dyMjdBQjlUbzhWcWJUNXJNOFZmTkRRUE80ODNpZFdfVWhadGd0dmpoTEtlbk5oNjB1VWdMRlhzOHNBckV0dm9wcDJpSTBWZ2R5WERqQ2s0R2RkUENncGQ2MHJVaFZuWEUybDR5ZUg5UGY0YXVYaldfUDQ?oc=5",
-      "outlet": "Time Magazine",
-      "outletUrl": "https://time.com",
-      "published": "2026-10-19T10:30:14.000Z",
-      "en": "Trump Endorses Netanyahu Days Before Israeli Election as Iran War Tests Friendship",
-      "about": [
-        "US",
-        "IL",
         "IR"
       ]
     }
