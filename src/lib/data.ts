@@ -1,5 +1,6 @@
 // Types for the JSON the pipeline writes into public/data, and loaders for it.
 // The website reads nothing else.
+import { cleanDisasters } from "./disasters";
 
 export interface Article {
   title: string;
@@ -122,63 +123,6 @@ export interface AboutFile {
   articles: AboutArticle[];
 }
 
-export interface WatchingEntry {
-  code: string;
-  editions: number;
-  baseline: number | null;
-  share: number;
-  sample: string[];
-}
-
-export interface UnwatchedEntry {
-  code: string;
-  matching: number;
-  total: number;
-  editions: number;
-  sample: string[];
-}
-
-export type AlertLevel = "Orange" | "Red";
-export type AlertType = "earthquake" | "cyclone" | "flood" | "drought" | "wildfire" | "volcano" | "other";
-
-/** A verified disaster alert from GDACS, the UN and EU alert system. */
-export interface Alert {
-  id: string;
-  type: AlertType;
-  level: AlertLevel;
-  title: string;
-  /** GDACS's plain-language summary of the event, when it gives one. */
-  description: string | null;
-  /** Named event, e.g. a cyclone name. */
-  name: string | null;
-  /** Countries the alert names, primary first. */
-  countries: string[];
-  from: string;
-  to: string;
-  /** Report page on gdacs.org. */
-  url: string;
-}
-
-/** An alert whose main country almost no edition is reading about. */
-export interface QuietEntry {
-  code: string;
-  alert: string;
-  editions: number;
-}
-
-/** Humanitarian signals: verified alerts plus estimates from headlines. */
-export interface CrisesFile {
-  updated: string;
-  /** Countries the world has suddenly turned to, with emergency headlines. */
-  watching: WatchingEntry[];
-  /** Countries whose own news is an emergency almost nobody else is reading about. */
-  unwatched: UnwatchedEntry[];
-  /** Current Orange and Red GDACS alerts, Red first. */
-  alerts: Alert[];
-  /** Alerts whose main country few editions are reading about. */
-  quiet: QuietEntry[];
-}
-
 /** Optional files: null when the pipeline has not produced them yet. */
 async function loadOptional<T>(path: string): Promise<T | null> {
   const res = await fetch(path);
@@ -192,92 +136,6 @@ export const loadAttention = () => loadOptional<AttentionFile>("/data/attention.
 export const loadHistoryIndex = () => loadOptional<HistoryIndex>("/data/history/index.json");
 export const loadSnapshot = (date: string) => loadOptional<Snapshot>(`/data/history/${date}.json`);
 export const loadAbout = (code: string) => loadOptional<AboutFile>(`/data/about/${code}.json`);
-/** A country's own Red Cross or Red Crescent society, from IFRC's directory. */
-export interface Society {
-  name: string;
-  url: string | null;
-  directory: string | null;
-  /** Its page on the Red Cross Red Crescent donation platform, when it is on it. */
-  donate: string | null;
-  checked: string | null;
-}
-
-/** An active IFRC appeal; amounts in Swiss francs. */
-export interface Appeal {
-  code: string;
-  country: string;
-  name: string;
-  kind: string;
-  disaster: string;
-  requested: number;
-  funded: number;
-  people: number | null;
-  start: string;
-  end: string;
-  url: string;
-  event: number | null;
-}
-
-/** An IFRC GO emergency: what is happening, in IFRC's words. */
-export interface Emergency {
-  id: number;
-  name: string;
-  summary: string | null;
-  severity: string | null;
-  figures: { number: string; label: string; source: string | null }[];
-}
-
-/** A UN-coordinated humanitarian response plan; amounts in US dollars. */
-export interface Plan {
-  id: number;
-  name: string;
-  countries: string[];
-  required: number;
-  funded: number | null;
-  end: string;
-  url: string;
-}
-
-/** Where help is needed and where to send it, from IFRC and UN OCHA. */
-export interface HelpFile {
-  updated: string;
-  sources: { societies: string | null; appeals: string | null; plans: string | null; events: string | null; uncr: string | null };
-  societies: Record<string, Society>;
-  appeals: Appeal[];
-  plans: Plan[];
-  /** IFRC GO emergencies behind the appeals, by id. */
-  events: Record<string, Emergency>;
-  /** UN Crisis Relief donation pages, by country code. */
-  uncr: Record<string, string>;
-}
-
-/** A long-term need from the World Bank's open data: a percentage, or deaths per 1,000 for child mortality. */
-export interface CountryNeed {
-  key: string;
-  value: number;
-  year: number;
-  severity: number;
-}
-
-export interface NeedsFile {
-  updated: string;
-  fetched: Record<string, string | null>;
-  countries: Record<string, CountryNeed[]>;
-}
-
-export const loadNeeds = () => loadOptional<NeedsFile>("/data/needs.json");
-
-/** Files written before emergencies and UN pages existed lack those maps. */
-export const loadHelp = async (): Promise<HelpFile | null> => {
-  const h = await loadOptional<HelpFile>("/data/help.json");
-  return h ? { ...h, events: h.events ?? {}, uncr: h.uncr ?? {} } : null;
-};
-
-/** Files written before alerts existed lack the two alert lists. */
-export const loadCrises = async (): Promise<CrisesFile | null> => {
-  const c = await loadOptional<CrisesFile>("/data/crises.json");
-  return c ? { ...c, alerts: c.alerts ?? [], quiet: c.quiet ?? [] } : null;
-};
 
 // Disasters: public/data/disasters.json, written by pipeline/lib/disasters.
 // Same shapes as pipeline/lib/disasters/types.ts; coordinates are GeoJSON
@@ -382,7 +240,15 @@ export interface DisastersFile {
   disasters: Disaster[];
 }
 
-export const loadDisasters = () => loadOptional<DisastersFile>("/data/disasters.json");
+/**
+ * The disasters file, with malformed entries dropped (see cleanDisasters):
+ * the pipeline is fed by outside feeds and web research, and one bad entry
+ * must not blank the page.
+ */
+export async function loadDisasters(): Promise<DisastersFile | null> {
+  const file = await loadOptional<DisastersFile>("/data/disasters.json");
+  return file && { ...file, disasters: cleanDisasters(file.disasters) };
+}
 
 export async function loadIndex(): Promise<IndexFile> {
   const res = await fetch("/data/index.json");

@@ -111,3 +111,60 @@ export function searchCountries(
   );
   return scored.slice(0, limit).map((s) => s.f);
 }
+
+// --- Detailed shapes near the camera -----------------------------------------
+
+/** One polygon's bounding box in degrees. Natural Earth splits polygons at the antimeridian, so none wraps. */
+export interface Box {
+  minLat: number;
+  maxLat: number;
+  minLng: number;
+  maxLng: number;
+}
+
+/** The bounding box of each of a country's polygons (outer rings). */
+export function featureBoxes(feature: CountryFeature): Box[] {
+  const polygons: number[][][][] =
+    feature.geometry.type === "Polygon"
+      ? [feature.geometry.coordinates as number[][][]]
+      : (feature.geometry.coordinates as number[][][][]);
+  return polygons.map((polygon) => {
+    const box = { minLat: 90, maxLat: -90, minLng: 180, maxLng: -180 };
+    for (const [lng, lat] of polygon[0] ?? []) {
+      box.minLat = Math.min(box.minLat, lat);
+      box.maxLat = Math.max(box.maxLat, lat);
+      box.minLng = Math.min(box.minLng, lng);
+      box.maxLng = Math.max(box.maxLng, lng);
+    }
+    return box;
+  });
+}
+
+/** Great-circle distance in degrees from a point to the nearest point of a box. */
+export function degreesToBox(lat: number, lng: number, box: Box): number {
+  const nearLat = Math.min(box.maxLat, Math.max(box.minLat, lat));
+  // Longitude difference to the box, the short way round; 0 when inside its range.
+  const wrap = (d: number) => ((((d + 180) % 360) + 360) % 360) - 180;
+  const toMin = wrap(box.minLng - lng);
+  const toMax = wrap(box.maxLng - lng);
+  const inside = toMin <= 0 && toMax >= 0;
+  const dLng = inside ? 0 : Math.min(Math.abs(toMin), Math.abs(toMax));
+  const r = Math.PI / 180;
+  const h = Math.sin(((nearLat - lat) * r) / 2) ** 2 + Math.cos(lat * r) * Math.cos(nearLat * r) * Math.sin((dLng * r) / 2) ** 2;
+  return (2 * Math.asin(Math.min(1, Math.sqrt(h)))) / r;
+}
+
+/**
+ * Degrees around the centre of the view whose countries get detailed shapes
+ * at a camera altitude (globe radii): what the view shows, with a margin.
+ */
+export function detailReach(altitude: number): number {
+  return Math.min(60, 8 + altitude * 45);
+}
+
+/** Codes of the countries with any polygon within `reach` degrees of a point. */
+export function countriesNear(boxes: Map<string, Box[]>, lat: number, lng: number, reach: number): string[] {
+  const out: string[] = [];
+  for (const [code, list] of boxes) if (list.some((b) => degreesToBox(lat, lng, b) <= reach)) out.push(code);
+  return out;
+}

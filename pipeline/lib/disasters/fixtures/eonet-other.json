@@ -1,0 +1,1061 @@
+{
+ "title": "EONET Events",
+ "description": "Natural events from EONET.",
+ "link": "https://eonet.gsfc.nasa.gov/api/v3/events",
+ "events": [
+  {
+   "id": "EONET_25413",
+   "title": "Flood in Spain 1104235",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25413",
+   "closed": "2026-10-18T00:00:00Z",
+   "categories": [
+    {
+     "id": "floods",
+     "title": "Floods"
+    }
+   ],
+   "sources": [
+    {
+     "id": "GDACS",
+     "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104235"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2026-10-16T20:00:00Z",
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        2.3766254,
+        41.4938593
+       ],
+       [
+        2.3776436,
+        41.4943723
+       ],
+       [
+        2.3792368,
+        41.4949034
+       ],
+       [
+        2.3808655,
+        41.4956017
+       ],
+       [
+        2.3818433,
+        41.4961274
+       ],
+       [
+        2.3829991,
+        41.4967933
+       ],
+       [
+        2.3836477,
+        41.4971787
+       ],
+       [
+        2.3840286,
+        41.4973358
+       ],
+       [
+        2.3845934,
+        41.4976193
+       ],
+       [
+        2.3850262,
+        41.4978892
+       ],
+       [
+        2.3854503,
+        41.4981234
+       ],
+       [
+        2.3863443,
+        41.4985148
+       ],
+       [
+        2.3867446,
+        41.4988023
+       ],
+       [
+        2.3871901,
+        41.4990317
+       ],
+       [
+        2.3876028,
+        41.4992173
+       ],
+       [
+        2.3878712,
+        41.4993141
+       ],
+       [
+        2.3881134,
+        41.4993724
+       ],
+       [
+        2.3885003,
+        41.4993571
+       ],
+       [
+        2.3889231,
+        41.4992451
+       ],
+       [
+        2.3890411,
+        41.4991267
+       ],
+       [
+        2.388866,
+        41.4988688
+       ],
+       [
+        2.3889067,
+        41.4988179
+       ],
+       [
+        2.3890743,
+        41.4988475
+       ],
+       [
+        2.3895563,
+        41.4995757
+       ],
+       [
+        2.389434,
+        41.499723
+       ],
+       [
+        2.3895402,
+        41.499843
+       ],
+       [
+        2.3901325,
+        41.5002039
+       ],
+       [
+        2.3906281,
+        41.50043
+       ],
+       [
+        2.3910824,
+        41.5006425
+       ],
+       [
+        2.3912857,
+        41.5007312
+       ],
+       [
+        2.3913479,
+        41.50074
+       ],
+       [
+        2.3913952,
+        41.5007593
+       ],
+       [
+        2.3916506,
+        41.5008819
+       ],
+       [
+        2.3919754,
+        41.5010838
+       ],
+       [
+        2.3923248,
+        41.5012479
+       ],
+       [
+        2.3926874,
+        41.5014692
+       ],
+       [
+        2.3932383,
+        41.5018422
+       ],
+       [
+        2.3934363,
+        41.5019504
+       ],
+       [
+        2.3934748,
+        41.5019101
+       ],
+       [
+        2.3935698,
+        41.5019248
+       ],
+       [
+        2.3942903,
+        41.5022688
+       ],
+       [
+        2.3951202,
+        41.5027108
+       ],
+       [
+        2.3961332,
+        41.5031836
+       ],
+       [
+        2.3970662,
+        41.5035631
+       ],
+       [
+        2.397552,
+        41.5037641
+       ],
+       [
+        2.397823,
+        41.5038797
+       ],
+       [
+        2.3980014,
+        41.5039459
+       ],
+       [
+        2.398085,
+        41.5039728
+       ],
+       [
+        2.3981317,
+        41.5039949
+       ],
+       [
+        2.3981425,
+        41.5039892
+       ],
+       [
+        2.3981756,
+        41.5039741
+       ],
+       [
+        2.3982324,
+        41.5039825
+       ],
+       [
+        2.3982642,
+        41.5039932
+       ],
+       [
+        2.3982685,
+        41.5040524
+       ],
+       [
+        2.3983231,
+        41.5040932
+       ],
+       [
+        2.3983981,
+        41.5041203
+       ],
+       [
+        2.3986552,
+        41.5041809
+       ],
+       [
+        2.3988667,
+        41.5042295
+       ],
+       [
+        2.3990765,
+        41.5042441
+       ],
+       [
+        2.3992199,
+        41.5042527
+       ],
+       [
+        2.3993617,
+        41.504209
+       ],
+       [
+        2.3993941,
+        41.5041955
+       ],
+       [
+        2.3993881,
+        41.5041393
+       ],
+       [
+        2.399342,
+        41.5040522
+       ],
+       [
+        2.3992655,
+        41.5039647
+       ],
+       [
+        2.3992977,
+        41.5039315
+       ],
+       [
+        2.3993551,
+        41.503927
+       ],
+       [
+        2.3994583,
+        41.5039793
+       ],
+       [
+        2.3995144,
+        41.504048
+       ],
+       [
+        2.399586,
+        41.5041573
+       ],
+       [
+        2.3996476,
+        41.5042667
+       ],
+       [
+        2.3998259,
+        41.5046904
+       ],
+       [
+        2.3998633,
+        41.5048413
+       ],
+       [
+        2.4000428,
+        41.5050051
+       ],
+       [
+        2.4003744,
+        41.5051847
+       ],
+       [
+        2.401049,
+        41.5055039
+       ],
+       [
+        2.4019639,
+        41.5058636
+       ],
+       [
+        2.4027493,
+        41.5062375
+       ],
+       [
+        2.4017638,
+        41.5070455
+       ],
+       [
+        2.4016442,
+        41.5071349
+       ],
+       [
+        2.3998232,
+        41.5086627
+       ],
+       [
+        2.3969259,
+        41.5110951
+       ],
+       [
+        2.3953889,
+        41.5130846
+       ],
+       [
+        2.3938709,
+        41.5145604
+       ],
+       [
+        2.3916944,
+        41.5162441
+       ],
+       [
+        2.3890636,
+        41.5156597
+       ],
+       [
+        2.3874335,
+        41.5150701
+       ],
+       [
+        2.3847669,
+        41.5149793
+       ],
+       [
+        2.3835664,
+        41.5145135
+       ],
+       [
+        2.3828252,
+        41.5145303
+       ],
+       [
+        2.3825306,
+        41.5144451
+       ],
+       [
+        2.3821347,
+        41.5138605
+       ],
+       [
+        2.381409,
+        41.5135467
+       ],
+       [
+        2.3813272,
+        41.5135113
+       ],
+       [
+        2.3808677,
+        41.5130372
+       ],
+       [
+        2.3799382,
+        41.5124508
+       ],
+       [
+        2.3780629,
+        41.5112698
+       ],
+       [
+        2.3771957,
+        41.5110674
+       ],
+       [
+        2.3757747,
+        41.5101077
+       ],
+       [
+        2.3744446,
+        41.5095219
+       ],
+       [
+        2.3731772,
+        41.5088251
+       ],
+       [
+        2.3722348,
+        41.5084371
+       ],
+       [
+        2.3705226,
+        41.5064197
+       ],
+       [
+        2.370364,
+        41.505662
+       ],
+       [
+        2.369906,
+        41.5050345
+       ],
+       [
+        2.3697808,
+        41.5048659
+       ],
+       [
+        2.3697256,
+        41.5046785
+       ],
+       [
+        2.3697931,
+        41.5045614
+       ],
+       [
+        2.3697868,
+        41.5044438
+       ],
+       [
+        2.3697204,
+        41.5043188
+       ],
+       [
+        2.3695572,
+        41.5041899
+       ],
+       [
+        2.3689262,
+        41.5036914
+       ],
+       [
+        2.368233,
+        41.5035377
+       ],
+       [
+        2.3676999,
+        41.5033859
+       ],
+       [
+        2.3676084,
+        41.5031477
+       ],
+       [
+        2.3669093,
+        41.5029801
+       ],
+       [
+        2.3663618,
+        41.5026555
+       ],
+       [
+        2.3661136,
+        41.5024789
+       ],
+       [
+        2.3659654,
+        41.5022648
+       ],
+       [
+        2.3652436,
+        41.5017562
+       ],
+       [
+        2.3680066,
+        41.5000467
+       ],
+       [
+        2.3730225,
+        41.4967059
+       ],
+       [
+        2.3736399,
+        41.4969269
+       ],
+       [
+        2.3740247,
+        41.4964077
+       ],
+       [
+        2.3747165,
+        41.4954742
+       ],
+       [
+        2.3763244,
+        41.4942846
+       ],
+       [
+        2.3766254,
+        41.4938593
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_25291",
+   "title": "Flood in Libya 1104231",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25291",
+   "closed": "2026-10-14T00:00:00Z",
+   "categories": [
+    {
+     "id": "floods",
+     "title": "Floods"
+    }
+   ],
+   "sources": [
+    {
+     "id": "GDACS",
+     "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104231"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2026-10-12T20:00:00Z",
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        13.1449995,
+        32.8823784
+       ],
+       [
+        13.145071,
+        32.8824079
+       ],
+       [
+        13.145225,
+        32.8825243
+       ],
+       [
+        13.1454057,
+        32.8825937
+       ],
+       [
+        13.1457083,
+        32.8826713
+       ],
+       [
+        13.1458707,
+        32.8826784
+       ],
+       [
+        13.1459786,
+        32.8826843
+       ],
+       [
+        13.146036,
+        32.8827313
+       ],
+       [
+        13.1460584,
+        32.8828007
+       ],
+       [
+        13.146029,
+        32.8828619
+       ],
+       [
+        13.1459716,
+        32.8829066
+       ],
+       [
+        13.1458315,
+        32.8829148
+       ],
+       [
+        13.1456592,
+        32.8828972
+       ],
+       [
+        13.1453105,
+        32.882796
+       ],
+       [
+        13.1450948,
+        32.8827019
+       ],
+       [
+        13.1449043,
+        32.8825949
+       ],
+       [
+        13.1448539,
+        32.8825278
+       ],
+       [
+        13.1448497,
+        32.8824573
+       ],
+       [
+        13.1449449,
+        32.8823914
+       ],
+       [
+        13.1449995,
+        32.8823784
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_3621",
+   "title": "Saharan Dust Storm",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_3621",
+   "closed": "2018-08-16T00:00:00Z",
+   "categories": [
+    {
+     "id": "dustHaze",
+     "title": "Dust and Haze"
+    }
+   ],
+   "sources": [
+    {
+     "id": "EO",
+     "url": "https://earthobservatory.nasa.gov/images/92358/here-comes-the-saharan-dust"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2018-06-18T00:00:00Z",
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        -64.921875,
+        2.0805583803838728
+       ],
+       [
+        -64.921875,
+        27.787751937555857
+       ],
+       [
+        10.625,
+        27.787751937555857
+       ],
+       [
+        10.625,
+        2.0805583803838728
+       ],
+       [
+        -64.921875,
+        2.0805583803838728
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_4018",
+   "title": "Alexander Bay, South Africa Dust Storm",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_4018",
+   "closed": "2018-10-24T00:00:00Z",
+   "categories": [
+    {
+     "id": "dustHaze",
+     "title": "Dust and Haze"
+    }
+   ],
+   "sources": [
+    {
+     "id": "EO",
+     "url": "https://earthobservatory.nasa.gov/images/92927/dust-streams-from-southwestern-africa"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2018-10-20T00:00:00Z",
+     "type": "Point",
+     "coordinates": [
+      16.435546875,
+      -28.680949728554964
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_3437",
+   "title": "Central Asia Heatwave",
+   "description": "During the middle of February, temperatures averaged above normal over a wide area of Central Asia, including eastern Kazakhstan, northern Kyrgyzstan, Turkmenistan, and much of Afghanistan.",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_3437",
+   "closed": "2018-04-12T00:00:00Z",
+   "categories": [
+    {
+     "id": "tempExtremes",
+     "title": "Temperature Extremes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "EO",
+     "url": "https://earthobservatory.nasa.gov/IOTD/view.php?id=91851"
+    },
+    {
+     "id": "NOAA_CPC",
+     "url": "http://www.cpc.ncep.noaa.gov/products/fews/AFGHANISTAN/casia_hazard.pdf"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2018-02-10T00:00:00Z",
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        59.619140625,
+        29.814850204556606
+       ],
+       [
+        59.619140625,
+        42.76792998324712
+       ],
+       [
+        74.697265625,
+        42.76792998324712
+       ],
+       [
+        74.697265625,
+        29.814850204556606
+       ],
+       [
+        59.619140625,
+        29.814850204556606
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_3410",
+   "title": "Morocco Cold Wave",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_3410",
+   "closed": "2018-02-09T00:00:00Z",
+   "categories": [
+    {
+     "id": "tempExtremes",
+     "title": "Temperature Extremes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "GLIDE",
+     "url": "http://www.glidenumber.net/glide/public/search/details.jsp?glide=21010&record=4&last=6482"
+    },
+    {
+     "id": "ReliefWeb",
+     "url": "https://reliefweb.int/disaster/cw-2018-000008-mar"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2018-01-04T00:00:00Z",
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        -9.19921875,
+        29.968437701300218
+       ],
+       [
+        -9.19921875,
+        35.66370670431197
+       ],
+       [
+        -1.416015625,
+        35.66370670431197
+       ],
+       [
+        -1.416015625,
+        29.968437701300218
+       ],
+       [
+        -9.19921875,
+        29.968437701300218
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_2698",
+   "title": "Mongolia Extreme Cold (Dzud)",
+   "description": "Recent severe winter conditions worsened the situation with average temperature continuously being lower than normal and precipitation forming thicker layer of snow and ice over the grassland.",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_2698",
+   "closed": "2017-01-10T00:00:00Z",
+   "categories": [
+    {
+     "id": "tempExtremes",
+     "title": "Temperature Extremes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "GLIDE",
+     "url": "http://www.glidenumber.net/glide/public/search/details.jsp?glide=20784"
+    },
+    {
+     "id": "ReliefWeb",
+     "url": "http://reliefweb.int/disaster/cw-2017-000001-mng"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2016-12-15T00:00:00Z",
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        88.88671875,
+        46.539356736493296
+       ],
+       [
+        88.88671875,
+        51.47261177012118
+       ],
+       [
+        117.67578125,
+        51.47261177012118
+       ],
+       [
+        117.67578125,
+        46.539356736493296
+       ],
+       [
+        88.88671875,
+        46.539356736493296
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_3873",
+   "title": "Snowfall in Lesotho",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_3873",
+   "closed": "2018-08-15T00:00:00Z",
+   "categories": [
+    {
+     "id": "snow",
+     "title": "Snow"
+    }
+   ],
+   "sources": [
+    {
+     "id": "EO",
+     "url": "https://earthobservatory.nasa.gov/images/92617/a-winter-blanket-for-lesotho"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2018-08-09T00:00:00Z",
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        27.5390625,
+        -30.96424514150837
+       ],
+       [
+        27.5390625,
+        -28.818512832340733
+       ],
+       [
+        29.2138671875,
+        -28.818512832340733
+       ],
+       [
+        29.2138671875,
+        -30.96424514150837
+       ],
+       [
+        27.5390625,
+        -30.96424514150837
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_3046",
+   "title": "Myanmar (Burma) Floods and Landslides",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_3046",
+   "closed": "2017-07-25T00:00:00Z",
+   "categories": [
+    {
+     "id": "floods",
+     "title": "Floods"
+    },
+    {
+     "id": "landslides",
+     "title": "Landslides"
+    }
+   ],
+   "sources": [
+    {
+     "id": "ReliefWeb",
+     "url": "http://reliefweb.int/disaster/fl-2017-000091-mmr"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2017-07-01T00:00:00Z",
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        94.1162109375,
+        16.566901365779497
+       ],
+       [
+        94.1162109375,
+        22.86446488835066
+       ],
+       [
+        97.8125,
+        22.86446488835066
+       ],
+       [
+        97.8125,
+        16.566901365779497
+       ],
+       [
+        94.1162109375,
+        16.566901365779497
+       ]
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_3990",
+   "title": "Sulawesi, Indonesia M7.5 Earthquake",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_3990",
+   "closed": "2018-10-08T00:00:00Z",
+   "categories": [
+    {
+     "id": "earthquakes",
+     "title": "Earthquakes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "CEMS",
+     "url": "http://emergency.copernicus.eu/mapping/list-of-components/EMSR317"
+    },
+    {
+     "id": "EO",
+     "url": "https://earthobservatory.nasa.gov/images/92836/devastation-in-palu-after-earthquake-tsunami"
+    },
+    {
+     "id": "GDACS",
+     "url": "http://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1157757"
+    },
+    {
+     "id": "IDC",
+     "url": "https://disasterscharter.org/web/guest/activations/-/article/earthquake-in-indonesia-activation-587-"
+    },
+    {
+     "id": "NASA_DISP",
+     "url": "https://disasters.nasa.gov/sulawesi-island-indonesia-earthquake-and-tsunami-2018"
+    },
+    {
+     "id": "ReliefWeb",
+     "url": "https://reliefweb.int/disaster/eq-2018-000156-idn"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2018-09-28T10:02:00Z",
+     "type": "Point",
+     "coordinates": [
+      119.8401,
+      -0.1781
+     ]
+    }
+   ]
+  }
+ ]
+}

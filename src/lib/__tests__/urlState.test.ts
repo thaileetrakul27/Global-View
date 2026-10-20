@@ -10,6 +10,21 @@ describe("readUrlState", () => {
     expect(readUrlState("?story=france-riots")).toEqual({ story: "france-riots" });
     expect(readUrlState("?country=TH&story=france-riots")).toEqual({ country: "TH" });
   });
+  it("reads a disaster only when no country or story is set", () => {
+    expect(readUrlState("?disaster=gdacs-flood-fl-1104231")).toEqual({ disaster: "gdacs-flood-fl-1104231" });
+    expect(readUrlState("?disaster=eonet-cyclone-eonet_25340")).toEqual({ disaster: "eonet-cyclone-eonet_25340" });
+    expect(readUrlState("?country=PK&disaster=usgs-earthquake-us7000q1")).toEqual({ country: "PK" });
+    expect(readUrlState("?story=a-b&disaster=usgs-earthquake-us7000q1")).toEqual({ story: "a-b" });
+  });
+  it("drops the date that comes with a disaster, since past days have none", () => {
+    expect(readUrlState("?disaster=news-heatwave-pk&date=2026-10-17")).toEqual({ disaster: "news-heatwave-pk" });
+  });
+  it("ignores malformed disaster ids", () => {
+    expect(readUrlState("?disaster=../x")).toEqual({});
+    expect(readUrlState("?disaster=a%20b")).toEqual({});
+    expect(readUrlState(`?disaster=${"a".repeat(121)}`)).toEqual({});
+    expect(readUrlState("?disaster=")).toEqual({});
+  });
   it("reads a date alongside anything else", () => {
     expect(readUrlState("?country=TH&date=2026-10-17")).toEqual({ country: "TH", date: "2026-10-17" });
     expect(readUrlState("?date=yesterday")).toEqual({});
@@ -22,10 +37,23 @@ describe("readUrlState", () => {
 
 describe("writeUrlState", () => {
   it("round-trips", () => {
-    for (const s of [{ country: "TH" }, { country: "TH", about: "US" }, { story: "a-b" }, { date: "2026-10-17" }, { country: "TH", date: "2026-10-17" }, {}]) {
+    for (const s of [
+      { country: "TH" },
+      { country: "TH", about: "US" },
+      { story: "a-b" },
+      { disaster: "gdacs-flood-fl-1104231" },
+      { date: "2026-10-17" },
+      { country: "TH", date: "2026-10-17" },
+      {},
+    ]) {
       expect(readUrlState(writeUrlState(s))).toEqual(s);
     }
     expect(writeUrlState({})).toBe("");
     expect(writeUrlState({ story: "x", about: "US" })).toBe("?story=x");
+  });
+  it("writes one panel only, and no date with a disaster", () => {
+    expect(writeUrlState({ country: "PK", disaster: "news-heatwave-pk" })).toBe("?country=PK");
+    expect(writeUrlState({ story: "x", disaster: "news-heatwave-pk" })).toBe("?story=x");
+    expect(writeUrlState({ disaster: "news-heatwave-pk", date: "2026-10-17" })).toBe("?disaster=news-heatwave-pk");
   });
 });

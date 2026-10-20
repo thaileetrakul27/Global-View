@@ -108,13 +108,17 @@ export function createAiClient(log: (msg: string) => void, onUsage: UsageHook = 
 
     async parse({ schema, system, user, maxTokens, effort, purpose }) {
       calls++;
+      // create() rather than parse(): the SDK's parse() throws on a cut-off or
+      // invalid answer before its usage can be read, and that spend would
+      // then be missing from the ledger.
+      const format = zodOutputFormat(schema);
       try {
-        const res = await client.messages.parse({
+        const res = await client.messages.create({
           model: MODEL,
           max_tokens: maxTokens,
           system,
           messages: [{ role: "user", content: user }],
-          output_config: { format: zodOutputFormat(schema), effort },
+          output_config: { format, effort },
         });
         onUsage(purpose, readUsage(MODEL, res.usage));
         if (res.stop_reason === "refusal") {
@@ -122,10 +126,11 @@ export function createAiClient(log: (msg: string) => void, onUsage: UsageHook = 
           return null;
         }
         if (res.stop_reason === "max_tokens") log("  model output was cut off by max_tokens");
-        return res.parsed_output ?? null;
+        const text = res.content.map((b) => (b.type === "text" ? b.text : "")).join("");
+        return format.parse(text);
       } catch (err) {
         const msg = err instanceof Error ? err.message : String(err);
-        log(`  model call failed: ${msg}`);
+        log(`  model call failed: ${msg.slice(0, 300)}`);
         return null;
       }
     },

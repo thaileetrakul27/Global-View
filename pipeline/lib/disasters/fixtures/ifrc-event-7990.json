@@ -1,0 +1,157 @@
+{
+ "dtype": 2,
+ "countries": [
+  {
+   "iso": "VE",
+   "iso3": "VEN",
+   "id": 8,
+   "record_type": 1,
+   "record_type_display": "Country",
+   "region": 1,
+   "independent": true,
+   "is_deprecated": false,
+   "fdrs": "DVE001",
+   "average_household_size": null,
+   "name": "Venezuela",
+   "society_name": "Venezuelan Red Cross",
+   "translation_module_original_language": "en"
+  }
+ ],
+ "districts": [
+  {
+   "name": "Aragua",
+   "code": "VE004",
+   "id": 3332,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Carabobo",
+   "code": "VE007",
+   "id": 3335,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Distrito Capital",
+   "code": "VE010",
+   "id": 3339,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Falcon",
+   "code": "VE011",
+   "id": 3340,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Miranda",
+   "code": "VE015",
+   "id": 3344,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Trujillo",
+   "code": "VE021",
+   "id": 3350,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Vargas",
+   "code": "VE022",
+   "id": 3351,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Yaracuy",
+   "code": "VE023",
+   "id": 3352,
+   "is_enclave": false,
+   "is_deprecated": false
+  }
+ ],
+ "num_affected": 9730000,
+ "tab_two_title": "Logistic",
+ "tab_three_title": null,
+ "disaster_start_date": "2026-06-24T00:00:00Z",
+ "created_at": "2026-06-25T02:19:14.710401Z",
+ "auto_generated": true,
+ "appeals": [
+  {
+   "aid": "43649054305687733",
+   "num_beneficiaries": 300000,
+   "amount_requested": 50000000.0,
+   "code": "MDRVE015",
+   "amount_funded": 23007113.538115,
+   "status": 0,
+   "status_display": "Active",
+   "start_date": "2026-06-25T00:00:00Z",
+   "end_date": "2028-06-30T00:00:00Z",
+   "sector": "Venezuela Country Office",
+   "atype": 1,
+   "atype_display": "Emergency Appeal",
+   "id": 4452,
+   "translation_module_original_language": "en"
+  }
+ ],
+ "contacts": [],
+ "key_figures": [
+  {
+   "number": "16740",
+   "source": "Government",
+   "id": 671,
+   "deck": "Injured",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "6125",
+   "source": "Government",
+   "id": 672,
+   "deck": "Deaths",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "17907",
+   "source": "Government",
+   "id": 673,
+   "deck": "People without home",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "9730000",
+   "source": "GDACS",
+   "id": 674,
+   "deck": "Affected population",
+   "translation_module_original_language": "en"
+  }
+ ],
+ "is_featured": true,
+ "is_featured_region": true,
+ "field_reports": [],
+ "hide_attached_field_reports": false,
+ "hide_field_report_map": true,
+ "updated_at": "2026-09-29T16:06:36.992968Z",
+ "id": 7990,
+ "slug": null,
+ "tab_one_title": "Additional Information",
+ "ifrc_severity_level": 2,
+ "ifrc_severity_level_display": "Red",
+ "ifrc_severity_level_update_date": "2026-06-25T13:17:12Z",
+ "parent_event": null,
+ "glide": "EQ-2026-000093-VEN",
+ "featured_documents": [],
+ "links": [],
+ "emergency_response_contact_email": null,
+ "countries_for_preview": [],
+ "response_activity_count": 0,
+ "visibility": 3,
+ "active_deployments": 12,
+ "summary": "<p><img src=\"https://prddsgofilestorage.blob.core.windows.net/api/emergencies/7990/2026_VEN_EARTHQUAKE_IMPACTO.png\" alt=\"\" width=\"966\" height=\"683\"></p>\r\n<p>On 24 June 2026, two strong earthquakes, preliminarily measured at magnitudes 7.1 and 7.5, struck north-central Venezuela in rapid succession, with epicentres near Morón, Carabobo State. The earthquakes were felt across much of the country, including Caracas, La Guaira, Aragua, Carabobo and neighbouring states.  Therefore, the national goverment of Venezuela declared the state of emergency.</p>\r\n<p>Preliminary information indicates damage to residential and commercial buildings, with reports of structural collapses in parts of Caracas and damage to infrastructure in several affected areas. Search and rescue operations have been activated while authorities continue rapid damage assessments. Power and telecommunications interruptions have been reported in some locations, and hospitals are receiving injured people.</p>\r\n<p>The full humanitarian impact is still being assessed. Official information on casualties, displaced people and infrastructure damage remains limited. Significant aftershocks are expected, posing additional risks to affected communities and emergency responders. In addition, the National Headquarters of the Venezuelan Red Cross reported critical damage in the infrastructure.</p>\r\n<p>Critical damage has also been reported to essential social infrastructure, including the airport and hospitals, while public services are intermittent or completely disrupted.</p>",
+ "name": "Venezuela Earthquake",
+ "translation_module_original_language": "en"
+}

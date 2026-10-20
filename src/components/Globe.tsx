@@ -1,9 +1,14 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
 import GlobeGL, { type GlobeMethods } from "react-globe.gl";
 import { AmbientLight, DirectionalLight, MeshLambertMaterial } from "three";
 import { countryFocus, type CountryFeature } from "@/lib/geo";
+import type { Disaster } from "@/lib/data";
+import { disasterFocus } from "@/lib/disasterLayers";
+import { tooltipDetail } from "./disasters/markers";
+import { disasterPointerFilter, useDisasterLayers, useReducedMotion } from "./disasters/useDisasterLayers";
+import { useDetailedCountries } from "./useDetailedCountries";
 
 /** A line between two countries reading the same story. */
 export interface GlobeArc {
@@ -26,10 +31,35 @@ export interface GlobeProps {
   onSelect: (code: string) => void;
   /** Screen space covered by panels, so the globe can shift away from them. */
   inset: { right: number; bottom: number };
+  /** Disasters happening now, drawn as animated areas with markers. */
+  disasters: Disaster[];
+  /** The disaster whose donation pages are open; the camera flies to it. */
+  selectedDisasterId: string | null;
+  /** False hides every disaster layer. */
+  showDisasters: boolean;
+  /** Called when a disaster's marker, area or track is clicked. */
+  onSelectDisaster: (id: string) => void;
 }
 
 /** How long the camera takes to travel to a clicked country. */
 const FLY_MS = 1200;
+
+/** Country sides are invisible; a constant so the polygon layer is not re-processed on every render. */
+const noSide = () => "rgba(0,0,0,0)";
+
+/**
+ * Stops auto-rotation and any spin the controls are still easing out of, so
+ * a fly-to lands where it aims instead of drifting past it. Updating once
+ * with damping off applies the leftover spin and clears it.
+ */
+function stopSpin(globe: GlobeMethods) {
+  const controls = globe.controls();
+  controls.autoRotate = false;
+  const damping = controls.enableDamping;
+  controls.enableDamping = false;
+  controls.update();
+  controls.enableDamping = damping;
+}
 
 /** Blends two hex colours; t = 0 gives a, t = 1 gives b. */
 function mixHex(a: string, b: string, t: number): string {
@@ -58,19 +88,54 @@ function token(name: string, fallback: string): string {
   );
 }
 
-export default function Globe({ countries, coverage, tints, arcs, selected, onSelect, inset }: GlobeProps) {
+const codeOf = (d: object | null | undefined) => (d as CountryFeature | null | undefined)?.properties.code;
+
+export default function Globe({
+  countries,
+  coverage,
+  tints,
+  arcs,
+  selected,
+  onSelect,
+  inset,
+  disasters,
+  selectedDisasterId,
+  showDisasters,
+  onSelectDisaster,
+}: GlobeProps) {
   const globeRef = useRef<GlobeMethods | undefined>(undefined);
   const wrapRef = useRef<HTMLDivElement>(null);
   // Last known mouse or pen position, so the tooltip can appear in the right
-  // place the moment a country is hovered. Null until a pointer has moved,
+  // place the moment something is hovered. Null until a pointer has moved,
   // and for touch, where a hover tooltip would just linger after a tap.
   const pointerRef = useRef<{ x: number; y: number } | null>(null);
+  const lastPointer = useCallback(() => pointerRef.current, []);
   // Set once the user drags, scrolls, taps or selects; the globe then stays still.
   const touchedRef = useRef(false);
+  const reduced = useReducedMotion();
 
   const [size, setSize] = useState({ width: 0, height: 0 });
+  const [ready, setReady] = useState(false);
   const [hovered, setHovered] = useState<CountryFeature | null>(null);
-  const [pointer, setPointer] = useState<{ x: number; y: number } | null>(null);
+
+  // Sharper country shapes near a low camera.
+  const detailed = useDetailedCountries(countries);
+
+  // Disaster areas, rings, tracks and markers, and the one under the pointer.
+  const layers = useDisasterLayers({
+    globe: globeRef,
+    ready,
+    disasters,
+    selectedId: selectedDisasterId,
+    show: showDisasters,
+    rightInset: inset.right,
+    onSelect: onSelectDisaster,
+  });
+  const hoveredDisaster = layers.hovered;
+  // A disaster under the pointer takes the tooltip and the hover from the country beneath it.
+  const hoveredCountry = hoveredDisaster ? null : hovered;
+  const selectedCode = selected?.properties.code ?? null;
+  const hoveredCode = hoveredCountry?.properties.code ?? null;
 
   const colors = useMemo(
     () => ({
@@ -104,13 +169,14 @@ export default function Globe({ countries, coverage, tints, arcs, selected, onSe
     return () => ro.disconnect();
   }, []);
 
-  // Rotate slowly until the user interacts. Pause while a country is hovered
-  // so the tooltip does not flicker between neighbours.
+  // Rotate slowly until the user interacts, and never under reduced motion.
+  // Pause while a country or disaster is hovered (or a marker has keyboard
+  // focus) so the tooltip does not flicker and the marker stays in view.
   const setRotation = useCallback(() => {
     const controls = globeRef.current?.controls();
     if (!controls) return;
-    controls.autoRotate = !touchedRef.current && !hovered;
-  }, [hovered]);
+    controls.autoRotate = !touchedRef.current && !reduced && !hovered && !layers.engaged;
+  }, [hovered, layers.engaged, reduced]);
 
   useEffect(setRotation, [setRotation]);
 
@@ -133,7 +199,8 @@ export default function Globe({ countries, coverage, tints, arcs, selected, onSe
     const controls = globe.controls();
     controls.autoRotateSpeed = 0.4;
     controls.enablePan = false;
-    controls.minDistance = 160;
+    // Close enough to read a city-sized flood or fire.
+    controls.minDistance = 108;
     controls.maxDistance = 520;
     controls.addEventListener("start", () => {
       touchedRef.current = true;
@@ -142,35 +209,61 @@ export default function Globe({ countries, coverage, tints, arcs, selected, onSe
     setRotation();
 
     globe.pointOfView({ lat: 18, lng: 30, altitude: 2.1 * altitudeScale() }, 0);
+    // The fly-to effects below wait for this, so a shared link that arrived
+    // before the globe was ready still moves the camera.
+    setReady(true);
   }, [setRotation, altitudeScale]);
 
-  // Fly to the selected country. Runs when the selection changes, not when the
-  // user merely resizes, so it does not fight their own dragging.
-  const selectedCode = selected?.properties.code;
+  // Fly to the selected country. Runs when the selection changes (or the
+  // globe becomes ready), not when the user merely resizes, so it does not
+  // fight their own dragging.
   useEffect(() => {
     const globe = globeRef.current;
-    if (!globe || !selected) return;
+    if (!ready || !globe || !selected) return;
     touchedRef.current = true;
-    globe.controls().autoRotate = false;
+    stopSpin(globe);
+    detailed.prefetch();
     const focus = countryFocus(selected);
     globe.pointOfView(
       { lat: focus.lat, lng: focus.lng, altitude: focus.altitude * altitudeScale() },
       FLY_MS,
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedCode]);
+  }, [selectedCode, ready]);
 
+  // Fly to the selected disaster, framing its areas and places. Waits for the
+  // disaster list and the globe if the selection arrives first (a shared link).
+  const selectedDisaster = useMemo(
+    () => disasters.find((d) => d.id === selectedDisasterId) ?? null,
+    [disasters, selectedDisasterId],
+  );
+  useEffect(() => {
+    const globe = globeRef.current;
+    if (!ready || !globe || !selectedDisaster) return;
+    touchedRef.current = true;
+    stopSpin(globe);
+    detailed.prefetch();
+    const focus = disasterFocus(selectedDisaster);
+    globe.pointOfView(
+      { lat: focus.lat, lng: focus.lng, altitude: focus.altitude * altitudeScale() },
+      FLY_MS,
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedDisaster?.id, ready]);
+
+  // Country styling compares codes, not objects: near the camera the drawn
+  // shape is a more detailed copy of the selected country.
   const capColor = useCallback(
     (d: object) => {
-      if (d === selected) return colors.landSelected;
-      if (d === hovered) return colors.landHover;
-      const code = (d as CountryFeature).properties.code;
+      const code = codeOf(d)!;
+      if (code === selectedCode) return colors.landSelected;
+      if (code === hoveredCode) return colors.landHover;
       const kind = coverage.get(code);
       const base = kind === "local" ? colors.landData : kind === "world" ? colors.landWorld : colors.land;
       const tint = tints.get(code);
       return tint === undefined ? base : mixHex(base, colors.accent, 0.14 + 0.36 * tint);
     },
-    [hovered, selected, coverage, tints, colors],
+    [hoveredCode, selectedCode, coverage, tints, colors],
   );
 
   const arcColor = useCallback(
@@ -179,34 +272,56 @@ export default function Globe({ countries, coverage, tints, arcs, selected, onSe
   );
   const arcStroke = useCallback((d: object) => 0.18 + 0.3 * (d as GlobeArc).strength, []);
   const strokeColor = useCallback(
-    (d: object) => (d === selected ? colors.accent : colors.border),
-    [selected, colors],
+    (d: object) => (codeOf(d) === selectedCode ? colors.accent : colors.border),
+    [selectedCode, colors],
   );
   // Lift the selected country a touch so its outline draws over neighbours.
   const altitude = useCallback(
-    (d: object) => (d === selected ? 0.012 : 0.005),
-    [selected],
+    (d: object) => (codeOf(d) === selectedCode ? 0.012 : 0.005),
+    [selectedCode],
   );
 
   const handleHover = useCallback((d: object | null) => {
-    setPointer(pointerRef.current);
     setHovered((d as CountryFeature | null) ?? null);
   }, []);
 
   const handleClick = useCallback(
-    (d: object) => onSelect((d as CountryFeature).properties.code),
+    (d: object) => onSelect(codeOf(d)!),
     [onSelect],
   );
+
+  const globeOffset = useMemo<[number, number]>(() => [-inset.right / 2, -inset.bottom / 2], [inset.right, inset.bottom]);
+
+  const tip: { key: string; body: ReactNode } | null = hoveredDisaster
+    ? {
+        key: `d:${hoveredDisaster.id}`,
+        body: (
+          <span className="block max-w-64">
+            <span className="block font-medium leading-snug">{hoveredDisaster.title}</span>
+            <span className="block text-xs text-muted">{tooltipDetail(hoveredDisaster.type, hoveredDisaster.severity)}</span>
+          </span>
+        ),
+      }
+    : hoveredCountry && hoveredCode !== selectedCode
+      ? { key: `c:${hoveredCode}`, body: hoveredCountry.properties.name }
+      : null;
 
   return (
     <div
       ref={wrapRef}
       className="h-full w-full"
-      style={{ cursor: hovered ? "pointer" : "grab" }}
+      style={{ cursor: hovered || hoveredDisaster ? "pointer" : "grab" }}
       onPointerMove={(e) => {
-        if (e.pointerType === "touch") return;
-        pointerRef.current = { x: e.clientX, y: e.clientY };
-        if (hovered) setPointer(pointerRef.current);
+        pointerRef.current = e.pointerType === "touch" ? null : { x: e.clientX, y: e.clientY };
+      }}
+      onPointerLeave={() => {
+        pointerRef.current = null;
+      }}
+      // A keyboard user focusing a marker has taken over: stop turning for
+      // good, including any spin the controls are still easing out of.
+      onFocus={() => {
+        touchedRef.current = true;
+        if (globeRef.current) stopSpin(globeRef.current);
       }}
     >
       {size.width > 0 && (
@@ -214,7 +329,7 @@ export default function Globe({ countries, coverage, tints, arcs, selected, onSe
           ref={globeRef}
           width={size.width}
           height={size.height}
-          globeOffset={[-inset.right / 2, -inset.bottom / 2]}
+          globeOffset={globeOffset}
           backgroundColor="rgba(0,0,0,0)"
           globeMaterial={oceanMaterial}
           showAtmosphere
@@ -222,10 +337,10 @@ export default function Globe({ countries, coverage, tints, arcs, selected, onSe
           atmosphereAltitude={0.12}
           animateIn={false}
           rendererConfig={{ antialias: true, alpha: true }}
-          polygonsData={countries}
+          polygonsData={detailed.features}
           polygonAltitude={altitude}
           polygonCapColor={capColor}
-          polygonSideColor={() => "rgba(0,0,0,0)"}
+          polygonSideColor={noSide}
           polygonStrokeColor={strokeColor}
           polygonsTransitionDuration={0}
           onPolygonHover={handleHover}
@@ -240,21 +355,61 @@ export default function Globe({ countries, coverage, tints, arcs, selected, onSe
           arcAltitudeAutoScale={0.35}
           arcDashLength={0.5}
           arcDashGap={0.3}
-          arcDashAnimateTime={6000}
-          arcsTransitionDuration={600}
+          arcDashAnimateTime={reduced ? 0 : 6000}
+          arcsTransitionDuration={reduced ? 0 : 600}
+          {...layers.props}
+          pointerEventsFilter={disasterPointerFilter}
+          onZoom={detailed.onView}
           onGlobeReady={handleReady}
         />
       )}
 
-      {hovered && pointer && hovered !== selected && (
-        <div
-          role="tooltip"
-          className="pointer-events-none fixed z-10 rounded-md border border-line bg-card px-2.5 py-1.5 text-sm text-ink shadow-sm"
-          style={{ left: pointer.x + 14, top: pointer.y + 14 }}
-        >
-          {hovered.properties.name}
-        </div>
+      {tip && (
+        <HoverTip key={tip.key} wrap={wrapRef} initial={lastPointer}>
+          {tip.body}
+        </HoverTip>
       )}
+    </div>
+  );
+}
+
+/**
+ * The tooltip for whatever is hovered, following the pointer. It keeps the
+ * pointer position itself, so the globe does not re-render on every move.
+ */
+function HoverTip({
+  wrap,
+  initial,
+  children,
+}: {
+  wrap: RefObject<HTMLDivElement | null>;
+  /** Where the pointer was when the hover began. */
+  initial: () => { x: number; y: number } | null;
+  children: ReactNode;
+}) {
+  const [pos, setPos] = useState(initial);
+  useEffect(() => {
+    const el = wrap.current;
+    if (!el) return;
+    const move = (e: PointerEvent) => setPos(e.pointerType === "touch" ? null : { x: e.clientX, y: e.clientY });
+    // Over a card or the header the globe gets no more moves, so drop the
+    // tooltip rather than leave it stuck.
+    const leave = () => setPos(null);
+    el.addEventListener("pointermove", move);
+    el.addEventListener("pointerleave", leave);
+    return () => {
+      el.removeEventListener("pointermove", move);
+      el.removeEventListener("pointerleave", leave);
+    };
+  }, [wrap]);
+  if (!pos) return null;
+  return (
+    <div
+      role="tooltip"
+      className="pointer-events-none fixed z-10 rounded-md border border-line bg-card px-2.5 py-1.5 text-sm text-ink shadow-sm"
+      style={{ left: pos.x + 14, top: pos.y + 14 }}
+    >
+      {children}
     </div>
   );
 }

@@ -99,7 +99,7 @@ export interface Place {
   kind: PlaceKind;
   /** Short note from the source, e.g. "flooded", "evacuated", "epicentre". */
   impact?: string;
-  source: "ifrc" | "research" | "news" | "usgs" | "gdacs";
+  source: "ifrc" | "research" | "news" | "usgs" | "gdacs" | "eonet";
 }
 
 /** A number reported by a source, e.g. deaths or people displaced. */

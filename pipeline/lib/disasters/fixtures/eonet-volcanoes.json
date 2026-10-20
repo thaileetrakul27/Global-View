@@ -1,0 +1,221 @@
+{
+ "title": "EONET Events",
+ "description": "Natural events from EONET.",
+ "link": "https://eonet.gsfc.nasa.gov/api/v3/events",
+ "events": [
+  {
+   "id": "EONET_12367",
+   "title": "Kilauea Volcano, Hawaii",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_12367",
+   "closed": null,
+   "categories": [
+    {
+     "id": "volcanoes",
+     "title": "Volcanoes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "EO",
+     "url": "https://science.nasa.gov/earth/earth-observatory/restless-kilauea-launches-lava-and-ash/"
+    },
+    {
+     "id": "SIVolcano",
+     "url": "https://volcano.si.edu/volcano.cfm?vn=332010"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2024-12-23T00:00:00Z",
+     "type": "Point",
+     "coordinates": [
+      -155.287,
+      19.421
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_15811",
+   "title": "Kanlaon Volcano, Philippines",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_15811",
+   "closed": null,
+   "categories": [
+    {
+     "id": "volcanoes",
+     "title": "Volcanoes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "SIVolcano",
+     "url": "https://volcano.si.edu/volcano.cfm?vn=272020"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2025-09-10T00:00:00Z",
+     "type": "Point",
+     "coordinates": [
+      123.13,
+      10.4096
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_13342",
+   "title": "Popocatepetl Volcano, Mexico",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_13342",
+   "closed": null,
+   "categories": [
+    {
+     "id": "volcanoes",
+     "title": "Volcanoes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "SIVolcano",
+     "url": "https://volcano.si.edu/volcano.cfm?vn=341090"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2025-04-10T00:00:00Z",
+     "type": "Point",
+     "coordinates": [
+      -98.622,
+      19.023
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_980",
+   "title": "Fuego Volcano, Guatemala",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_980",
+   "closed": null,
+   "categories": [
+    {
+     "id": "volcanoes",
+     "title": "Volcanoes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "CEMS",
+     "url": "http://emergency.copernicus.eu/mapping/list-of-components/EMSR289"
+    },
+    {
+     "id": "EO",
+     "url": "https://earthobservatory.nasa.gov/NaturalHazards/event.php?id=91672"
+    },
+    {
+     "id": "GDACS",
+     "url": "http://www.gdacs.org/report.aspx?eventtype=VO&eventid=512"
+    },
+    {
+     "id": "IDC",
+     "url": "https://disasterscharter.org/web/guest/-/volcano-in-guatemala-activation-576-"
+    },
+    {
+     "id": "NASA_DISP",
+     "url": "https://disasters.nasa.gov/mount-fuego-eruption-2018"
+    },
+    {
+     "id": "ReliefWeb",
+     "url": "https://reliefweb.int/disaster/vo-2018-000066-gtm"
+    },
+    {
+     "id": "SIVolcano",
+     "url": "http://volcano.si.edu/volcano.cfm?vn=342090"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2002-01-04T00:00:00Z",
+     "type": "Point",
+     "coordinates": [
+      -90.88,
+      14.473
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_20392",
+   "title": "Ivao Group Volcano, Russia",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_20392",
+   "closed": null,
+   "categories": [
+    {
+     "id": "volcanoes",
+     "title": "Volcanoes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "SIVolcano",
+     "url": "https://volcano.si.edu/volcano.cfm?vn=290111"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2026-05-29T00:00:00Z",
+     "type": "Point",
+     "coordinates": [
+      149.6762,
+      45.7593
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_6175",
+   "title": "Stromboli Volcano, Italy",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_6175",
+   "closed": null,
+   "categories": [
+    {
+     "id": "volcanoes",
+     "title": "Volcanoes"
+    }
+   ],
+   "sources": [
+    {
+     "id": "SIVolcano",
+     "url": "http://volcano.si.edu/volcano.cfm?vn=211040"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2022-08-07T00:00:00Z",
+     "type": "Point",
+     "coordinates": [
+      15.213,
+      38.789
+     ]
+    }
+   ]
+  }
+ ]
+}

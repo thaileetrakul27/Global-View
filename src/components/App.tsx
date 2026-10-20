@@ -6,27 +6,21 @@ import {
   loadAbout,
   loadAttention,
   loadCountry,
-  loadCrises,
-  loadHelp,
+  loadDisasters,
   loadHistoryIndex,
-  loadNeeds,
   loadIndex,
   loadShared,
   loadSnapshot,
   type AboutFile,
   type AttentionFile,
   type CountryFile,
-  type CrisesFile,
-  type HelpFile,
+  type Disaster,
   type IndexFile,
-  type NeedsFile,
   type SharedFile,
   type Snapshot,
   type SnapshotStory,
 } from "@/lib/data";
-import { leadCrisis } from "@/lib/crisis";
-import { needFor } from "@/lib/help";
-import { needsFor } from "@/lib/needs";
+import { disastersIn, findDisaster } from "@/lib/disasters";
 import { displayName } from "@/lib/names";
 import { inbound, mostWatched, outbound, tintMap } from "@/lib/attention";
 import { readUrlState, writeUrlState } from "@/lib/urlState";
@@ -41,14 +35,55 @@ import WorldStories from "./WorldStories";
 import StoryPanel from "./StoryPanel";
 import WorldSummary from "./WorldSummary";
 import TimeControl from "./TimeControl";
-import CrisisCard from "./CrisisCard";
-import CrisisStrip from "./CrisisStrip";
+import DisasterList from "./DisasterList";
+import DisasterStrip from "./DisasterStrip";
+import DisasterPanel from "./DisasterPanel";
+import CopyLink from "./CopyLink";
 import type { SharedRef } from "./ArticleList";
 
 /** Desktop side panel width in px, capped so the globe keeps two thirds. */
 export const PANEL_WIDTH = 440;
 /** Fraction of the screen height the mobile sheet covers when peeking. */
 export const SHEET_PEEK = 0.42;
+/** localStorage key for the "Show on map" switch. */
+const SHOW_DISASTERS_KEY = "gv:show-disasters";
+
+/**
+ * How to find the control that opened a disaster again once its panel
+ * closes: the marker on the globe if that was it, otherwise the row or chip
+ * carrying the disaster's id (the list re-renders, so the old node is gone).
+ */
+function openerSelector(active: Element | null, id: string): string {
+  const safe = CSS.escape(id);
+  return active?.closest(".gv-dz") ? `.gv-dz[data-id="${safe}"]:not(.gv-hidden)` : `[data-disaster-id="${safe}"]`;
+}
+
+/**
+ * Focuses the first visible element matching any selector, once the render
+ * that closed the panel and its effects are done (a country panel coming
+ * back moves focus to its heading first). React flushes both before a
+ * timer fires; a frame callback could wait long behind a busy globe.
+ */
+function refocus(selectors: string[]): void {
+  setTimeout(() => {
+    for (const sel of selectors) {
+      const el = document.querySelector<HTMLElement>(sel);
+      if (el && el.getClientRects().length) {
+        el.focus({ preventScroll: true });
+        return;
+      }
+    }
+  }, 30);
+}
+
+/** The saved "Show on map" choice; on when nothing is saved or storage is blocked. */
+function readShowDisasters(): boolean {
+  try {
+    return typeof window === "undefined" || window.localStorage.getItem(SHOW_DISASTERS_KEY) !== "0";
+  } catch {
+    return true;
+  }
+}
 
 // Top-level client state: the country list, the selected country, and the
 // layout mode. The globe, search box and panel all read from here.
@@ -71,9 +106,14 @@ export default function App() {
   const [snapshots, setSnapshots] = useState<Record<string, Snapshot | null>>({});
   // Foreign articles about each country, fetched when its inbound view opens.
   const [abouts, setAbouts] = useState<Record<string, AboutFile | null>>({});
-  const [crises, setCrises] = useState<CrisesFile | null>(null);
-  const [help, setHelp] = useState<HelpFile | null>(null);
-  const [needs, setNeeds] = useState<NeedsFile | null>(null);
+  // Disasters happening now, the one whose donation pages are open, and
+  // whether the globe draws them. The switch is only rendered once the
+  // disasters have loaded, after hydration, so reading storage here is safe.
+  const [disasters, setDisasters] = useState<Disaster[]>([]);
+  const [selectedDisasterId, setSelectedDisasterId] = useState<string | null>(null);
+  // Country to return to when the disaster panel closes.
+  const [disasterFrom, setDisasterFrom] = useState<string | null>(null);
+  const [showDisasters, setShowDisasters] = useState(readShowDisasters);
   // Country files already fetched, keyed by code. Null marks "no file".
   const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
@@ -84,6 +124,11 @@ export default function App() {
   // during the first client render.
   const [initialSearch] = useState(() => (typeof window === "undefined" ? "" : window.location.search));
   const urlApplied = useRef(false);
+  // Set once the user opens or closes anything: a shared link's story or
+  // disaster that finishes loading later must not override what they chose.
+  const userActed = useRef(false);
+  // Where to put keyboard focus back when the open disaster closes.
+  const disasterOpener = useRef<string[] | null>(null);
 
   useEffect(() => {
     const wanted = readUrlState(initialSearch);
@@ -102,13 +147,18 @@ export default function App() {
     loadShared()
       .then((data) => {
         setShared(data);
-        if (wanted.story && data?.stories.some((st) => st.id === wanted.story)) setFocusStoryId(wanted.story);
+        if (!userActed.current && wanted.story && data?.stories.some((st) => st.id === wanted.story)) setFocusStoryId(wanted.story);
       })
       .catch(console.error);
     loadAttention().then(setAttention).catch(console.error);
-    loadCrises().then(setCrises).catch(console.error);
-    loadHelp().then(setHelp).catch(console.error);
-    loadNeeds().then(setNeeds).catch(console.error);
+    loadDisasters()
+      .then((file) => {
+        const list = file?.disasters ?? [];
+        setDisasters(list);
+        // A link to a disaster that has since ended opens nothing.
+        if (!userActed.current && wanted.disaster && list.some((d) => d.id === wanted.disaster)) setSelectedDisasterId(wanted.disaster);
+      })
+      .catch(console.error);
     loadHistoryIndex()
       .then((h) => {
         const dates = h?.dates ?? [];
@@ -277,6 +327,9 @@ export default function App() {
     () => (focusStoryId ? (shared?.stories.find((s) => s.id === focusStoryId) ?? null) : null),
     [shared, focusStoryId],
   );
+  // Disasters are current only: a past day shows none of them.
+  const liveDisasters = useMemo(() => (historyDate ? [] : disasters), [historyDate, disasters]);
+  const openDisaster = useMemo(() => findDisaster(liveDisasters, selectedDisasterId), [liveDisasters, selectedDisasterId]);
 
   // Keep the address bar and title in step with what is open.
   useEffect(() => {
@@ -285,6 +338,7 @@ export default function App() {
       country: selectedCode ?? undefined,
       about: filterAbout ?? undefined,
       story: focusStoryId ?? undefined,
+      disaster: openDisaster?.id,
       date: historyDate ?? undefined,
     });
     const url = `${window.location.pathname}${query}`;
@@ -292,21 +346,23 @@ export default function App() {
     const selectedName = selectedCode ? byCode.get(selectedCode)?.properties.name : undefined;
     const title = focusedStory
       ? `${focusedStory.title} · Global View`
-      : selectedName
-        ? `${selectedName} · Global View`
-        : "Global View";
+      : openDisaster
+        ? `${openDisaster.title} · Global View`
+        : selectedName
+          ? `${selectedName} · Global View`
+          : "Global View";
     document.title = title;
     // Next applies the static page title once hydration settles, which can
     // land after a fast data load; set it again shortly after.
     const t = setTimeout(() => (document.title = title), 1500);
     return () => clearTimeout(t);
-  }, [selectedCode, filterAbout, focusStoryId, focusedStory, byCode, historyDate]);
+  }, [selectedCode, filterAbout, focusStoryId, focusedStory, openDisaster, byCode, historyDate]);
 
   const topStory = dayStories[0] ?? null;
-  const selectedNeed = useMemo(() => (selectedCode && crises ? needFor(selectedCode, crises, help) : undefined), [crises, help, selectedCode]);
-  const selectedLead = useMemo(
-    () => (selectedCode && selectedNeed ? leadCrisis(selectedNeed, help, nameOf(selectedCode)) : null),
-    [help, nameOf, selectedCode, selectedNeed],
+  // Disasters naming the open country, for its "Disasters in … now" list.
+  const countryDisasters = useMemo(
+    () => (selectedCode ? disastersIn(liveDisasters, selectedCode) : []),
+    [liveDisasters, selectedCode],
   );
   const watched = useMemo(() => mostWatched(attention, 1)[0] ?? null, [attention]);
 
@@ -325,20 +381,29 @@ export default function App() {
     [countries, selectedCode],
   );
 
+  // Only one panel is open at a time: a country, a shared story or a
+  // disaster. Opening one closes the others.
   const select = useCallback((code: string | null, about?: string) => {
+    userActed.current = true;
     setSelectedCode(code);
     setFilterAbout(about ?? null);
     setFocusStoryId(null);
     setStoryFrom(null);
+    setSelectedDisasterId(null);
+    setDisasterFrom(null);
   }, []);
   const close = useCallback(() => {
+    userActed.current = true;
     setSelectedCode(null);
     setFilterAbout(null);
     setFocusStoryId(null);
     setStoryFrom(null);
+    setSelectedDisasterId(null);
+    setDisasterFrom(null);
   }, []);
   const openStory = useCallback(
     (id: string | null) => {
+      userActed.current = true;
       if (!id) {
         setFocusStoryId(null);
         return;
@@ -346,62 +411,148 @@ export default function App() {
       setStoryFrom(selectedCode);
       setSelectedCode(null);
       setFilterAbout(null);
+      setSelectedDisasterId(null);
+      setDisasterFrom(null);
       setFocusStoryId(id);
     },
     [selectedCode],
   );
+  // Open a disaster from the list, the globe or a country panel. Closing it
+  // returns to the country it was opened from, as a story does.
+  const openDisasterPanel = useCallback(
+    (id: string) => {
+      userActed.current = true;
+      if (id === selectedDisasterId) return;
+      const sel = openerSelector(document.activeElement, id);
+      disasterOpener.current = [sel, `[data-disaster-id="${CSS.escape(id)}"]`, `.gv-dz[data-id="${CSS.escape(id)}"]:not(.gv-hidden)`];
+      setDisasterFrom(selectedCode ?? disasterFrom);
+      setSelectedCode(null);
+      setFilterAbout(null);
+      setFocusStoryId(null);
+      setStoryFrom(null);
+      setSelectedDisasterId(id);
+    },
+    [selectedCode, selectedDisasterId, disasterFrom],
+  );
+  const closeDisaster = useCallback(() => {
+    userActed.current = true;
+    setSelectedDisasterId(null);
+    setSelectedCode(disasterFrom);
+    setDisasterFrom(null);
+    // Back to the marker, row or chip that opened it, for keyboard users.
+    if (disasterOpener.current) refocus(disasterOpener.current);
+    disasterOpener.current = null;
+  }, [disasterFrom]);
+  // The "Show on map" switch, remembered in this browser when storage allows.
+  const toggleDisasters = useCallback((on: boolean) => {
+    setShowDisasters(on);
+    try {
+      window.localStorage.setItem(SHOW_DISASTERS_KEY, on ? "1" : "0");
+    } catch {
+      // Storage blocked: the choice lasts until the page is closed.
+    }
+  }, []);
   const closeStory = useCallback(() => {
+    userActed.current = true;
     setFocusStoryId(null);
     setSelectedCode(storyFrom);
     setStoryFrom(null);
   }, [storyFrom]);
-  // Changing day keeps the country but drops anything that needs live data.
+  // Changing day keeps the country but drops anything that needs live data,
+  // including an open disaster.
   const changeDate = useCallback((date: string | null) => {
+    userActed.current = true;
     setHistoryDate(date);
     setFocusStoryId(null);
     setStoryFrom(null);
     setFilterAbout(null);
+    setSelectedDisasterId(null);
+    setDisasterFrom(null);
   }, []);
   const changeMode = useCallback((m: AttentionMode) => {
     setAttentionMode(m);
     setFilterAbout(null);
   }, []);
 
-  // Escape closes the story or the country, unless a control such as the
-  // search list handles it first.
+  // Escape closes the story, the disaster or the country, unless a control
+  // such as the search list handles it first.
+  const disasterOpen = !!openDisaster;
   useEffect(() => {
-    if (!selectedCode && !focusStoryId) return;
+    if (!selectedCode && !focusStoryId && !disasterOpen) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== "Escape" || e.defaultPrevented) return;
       if (focusStoryId) closeStory();
+      else if (disasterOpen) closeDisaster();
       else close();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [selectedCode, focusStoryId, close, closeStory]);
+  }, [selectedCode, focusStoryId, disasterOpen, close, closeStory, closeDisaster]);
 
   // How much of the viewport the open panel covers, so the globe can shift
   // its centre into the remaining space.
   const panelWidth = Math.min(PANEL_WIDTH, vp.width * 0.38);
-  const panelOpen = !!selected || !!focusedStory;
+  const panelOpen = !!selected || !!focusedStory || disasterOpen;
   const inset = panelOpen
     ? vp.isDesktop
       ? { right: panelWidth, bottom: 0 }
       : { right: 0, bottom: vp.height * SHEET_PEEK }
     : { right: 0, bottom: 0 };
 
-  return (
-    <main className="relative h-full w-full overflow-hidden">
-      <GlobeView
-        countries={countries}
-        coverage={coverage}
-        tints={tints}
-        arcs={arcs}
-        selected={selected}
-        onSelect={select}
-        inset={inset}
-      />
+  // The open panel's contents, shown in the desktop side panel or the phone sheet.
+  const storyPanel = focusedStory && (
+    <StoryPanel story={focusedStory} nameOf={nameOf} onClose={closeStory} onSelectCountry={select} />
+  );
+  const disasterPanel = openDisaster && (
+    <DisasterPanel
+      disaster={openDisaster}
+      nameOf={nameOf}
+      onClose={closeDisaster}
+      onSelectCountry={select}
+      actions={<CopyLink label="Copy link to this disaster" />}
+    />
+  );
+  const countryPanel = selected && (
+    <CountryPanel
+      country={selected}
+      state={countryState}
+      onClose={close}
+      attention={
+        hasAttention
+          ? { mode: effectiveMode, onMode: changeMode, mentions, inboundOnly: selectedKind === "world" }
+          : null
+      }
+      nameOf={nameOf}
+      onSelect={select}
+      filterAbout={filterAbout}
+      onFilter={setFilterAbout}
+      shared={sharedRefs}
+      onStory={openStory}
+      name={nameOf(selected.properties.code)}
+      disasters={countryDisasters}
+      onSelectDisaster={openDisasterPanel}
+      about={{
+        articles: !hasInbound
+          ? []
+          : selected.properties.code in abouts
+            ? (abouts[selected.properties.code]?.articles ?? [])
+            : null,
+        editions,
+      }}
+      history={
+        historyDate && historyLabel
+          ? { label: historyLabel, articles: snapshot?.countries[selected.properties.code] ?? null }
+          : null
+      }
+    />
+  );
 
+  return (
+    // The globe comes after the header and the landing cards in the page, so
+    // keyboard users reach the search box and the disaster list (the
+    // accessible way to open a disaster) before the markers on the globe.
+    // The overlays sit above it by z-index.
+    <main className="relative h-full w-full overflow-hidden">
       <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex flex-col gap-4 p-5 sm:p-7 md:flex-row md:items-start md:justify-between">
         <div className="pointer-events-auto">
           <h1 className="font-serif text-2xl leading-none tracking-tight text-ink sm:text-3xl">
@@ -427,34 +578,41 @@ export default function App() {
       </header>
 
       {!panelOpen && (
-        <p className="pointer-events-none absolute inset-x-0 bottom-5 text-center text-xs text-muted sm:bottom-6">
+        <p className="pointer-events-none absolute inset-x-0 bottom-5 z-10 text-center text-xs text-muted sm:bottom-6">
           Drag to turn the globe, or click a country
         </p>
       )}
 
       {(historyDates.length > 1 || historyDate) && (
         <div
-          className={`pointer-events-none absolute z-20 flex justify-center ${
-            vp.isDesktop ? "inset-x-0 bottom-14" : "inset-x-0 top-[7.5rem]"
-          } ${!vp.isDesktop && panelOpen ? "hidden" : ""}`}
+          // On phones it sits above the disaster chips, clear of the search box.
+          className={`pointer-events-none absolute inset-x-0 z-20 flex justify-center ${vp.isDesktop ? "bottom-14" : "bottom-28"} ${
+            !vp.isDesktop && panelOpen ? "hidden" : ""
+          }`}
         >
           <TimeControl dates={historyDates} date={historyDate} onChange={changeDate} />
         </div>
       )}
 
-      {!selected && !focusedStory && !historyDate && crises && vp.isDesktop && (
+      {!panelOpen && liveDisasters.length > 0 && vp.isDesktop && (
         <div className="pointer-events-none absolute right-5 top-28 z-20 sm:right-7">
-          <CrisisCard crises={crises} help={help} nameOf={nameOf} onSelect={(c) => select(c)} />
+          <DisasterList
+            disasters={liveDisasters}
+            nameOf={nameOf}
+            onSelect={openDisasterPanel}
+            showOnMap={showDisasters}
+            onToggleMap={toggleDisasters}
+          />
         </div>
       )}
 
-      {!panelOpen && !historyDate && crises && !vp.isDesktop && (
+      {!panelOpen && liveDisasters.length > 0 && !vp.isDesktop && (
         <div className="pointer-events-none absolute inset-x-0 bottom-11 z-20">
-          <CrisisStrip crises={crises} help={help} nameOf={nameOf} onSelect={(c) => select(c)} />
+          <DisasterStrip disasters={liveDisasters} nameOf={nameOf} onSelect={openDisasterPanel} />
         </div>
       )}
 
-      {!selected && !focusedStory && dayStories.length > 0 && vp.isDesktop && (
+      {!panelOpen && dayStories.length > 0 && vp.isDesktop && (
         <div className="pointer-events-none absolute bottom-6 left-5 z-20 sm:left-7">
           <WorldStories
             stories={dayStories}
@@ -467,89 +625,44 @@ export default function App() {
         </div>
       )}
 
+      <GlobeView
+        countries={countries}
+        coverage={coverage}
+        tints={tints}
+        arcs={arcs}
+        selected={selected}
+        onSelect={select}
+        inset={inset}
+        disasters={liveDisasters}
+        selectedDisasterId={openDisaster?.id ?? null}
+        // An open disaster is drawn even with the switch off, so the camera
+        // never flies to an empty patch of globe.
+        showDisasters={showDisasters || disasterOpen}
+        onSelectDisaster={openDisasterPanel}
+      />
+
       {vp.isDesktop ? (
         <aside
-          aria-label={focusedStory ? "Story" : "Country"}
+          aria-label={focusedStory ? "Story" : disasterOpen ? "Disaster" : "Country"}
           aria-hidden={!panelOpen}
           inert={!panelOpen}
           className="absolute inset-y-0 right-0 z-30 flex w-[min(440px,38vw)] flex-col border-l border-line bg-paper transition-transform duration-300 ease-out"
           style={{ transform: panelOpen ? "translateX(0)" : "translateX(100%)" }}
         >
-          {focusedStory && <StoryPanel story={focusedStory} nameOf={nameOf} onClose={closeStory} onSelectCountry={select} />}
-          {selected && (
-            <CountryPanel
-              country={selected}
-              state={countryState}
-              onClose={close}
-              attention={
-                hasAttention
-                  ? { mode: effectiveMode, onMode: changeMode, mentions, inboundOnly: selectedKind === "world" }
-                  : null
-              }
-              nameOf={nameOf}
-              onSelect={select}
-              filterAbout={filterAbout}
-              onFilter={setFilterAbout}
-              shared={sharedRefs}
-              onStory={openStory}
-              name={nameOf(selected.properties.code)}
-              need={selectedNeed}
-              lead={selectedLead}
-              needs={selectedCode ? needsFor(needs, selectedCode) : []}
-              about={{
-                articles: !hasInbound
-                  ? []
-                  : selected.properties.code in abouts
-                    ? (abouts[selected.properties.code]?.articles ?? [])
-                    : null,
-                editions,
-              }}
-              history={
-                historyDate && historyLabel
-                  ? { label: historyLabel, articles: snapshot?.countries[selected.properties.code] ?? null }
-                  : null
-              }
-            />
-          )}
+          {storyPanel}
+          {disasterPanel}
+          {countryPanel}
         </aside>
       ) : (
-        <BottomSheet open={panelOpen} onClose={focusedStory ? closeStory : close} peek={SHEET_PEEK}>
-          {focusedStory && <StoryPanel story={focusedStory} nameOf={nameOf} onClose={closeStory} onSelectCountry={select} />}
-          {selected && (
-            <CountryPanel
-              country={selected}
-              state={countryState}
-              onClose={close}
-              attention={
-                hasAttention
-                  ? { mode: effectiveMode, onMode: changeMode, mentions, inboundOnly: selectedKind === "world" }
-                  : null
-              }
-              nameOf={nameOf}
-              onSelect={select}
-              filterAbout={filterAbout}
-              onFilter={setFilterAbout}
-              shared={sharedRefs}
-              onStory={openStory}
-              name={nameOf(selected.properties.code)}
-              need={selectedNeed}
-              lead={selectedLead}
-              needs={selectedCode ? needsFor(needs, selectedCode) : []}
-              about={{
-                articles: !hasInbound
-                  ? []
-                  : selected.properties.code in abouts
-                    ? (abouts[selected.properties.code]?.articles ?? [])
-                    : null,
-                editions,
-              }}
-              history={
-                historyDate && historyLabel
-                  ? { label: historyLabel, articles: snapshot?.countries[selected.properties.code] ?? null }
-                  : null
-              }
-            />
-          )}
+        <BottomSheet
+          open={panelOpen}
+          onClose={focusedStory ? closeStory : disasterOpen ? closeDisaster : close}
+          peek={SHEET_PEEK}
+          label={focusedStory ? "Story" : disasterOpen ? "Disaster" : "Country"}
+        >
+          {storyPanel}
+          {disasterPanel}
+          {countryPanel}
         </BottomSheet>
       )}
     </main>

@@ -28,11 +28,12 @@ import { buildSearchUrl, fetchFeed, fetchFeedUrl, type Article } from "./lib/goo
 import { sleep, writeJson } from "./lib/io";
 import { mergeIndex, readIndex, type CountryFile, type IndexEntry } from "./lib/publish";
 import { collectCandidates, findSharedStories, reconcileStories, type SharedFile } from "./lib/shared";
-import { addDay, buildSnapshot, dayOf, readBaselines, type HistoryIndex } from "./lib/history";
-import { buildResolver, fetchAlerts } from "./lib/alerts";
-import { detectCrises, inboundEditions, loadCrisisTerms, type CrisesFile } from "./lib/crises";
-import { refreshHelp, type HelpFile } from "./lib/help";
-import { refreshNeeds, type NeedsFile } from "./lib/needs";
+import { addDay, buildSnapshot, dayOf, type HistoryIndex } from "./lib/history";
+import { buildResolver } from "./lib/resolve";
+import { canSpend, loadBudget, monthSpent, pruneLedger, readLedger, record, writeLedger } from "./lib/spend";
+import { updateDisasters } from "./lib/disasters/build";
+import { loadCountryShapes } from "./lib/disasters/geo";
+import type { NewsArticle } from "./lib/disasters/news";
 import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle } from "./lib/translate";
 
 /** Most model calls one run may make; a guard against runaway cost. */
@@ -102,8 +103,16 @@ async function main() {
 
   // 2. Translation, from cache plus the model for anything new
   const now = new Date().toISOString();
-  const ai = args.noAi ? null : createAiClient(log);
-  if (!ai) log(args.noAi ? "AI disabled by --no-ai" : "No ANTHROPIC_API_KEY; publishing without new translations");
+  // Every model call's real cost goes into the month's ledger; once the
+  // month nears its budget, the run continues without the model.
+  const ledger = readLedger();
+  const budget = loadBudget();
+  const startSpend = monthSpent(ledger, now);
+  const withinBudget = canSpend(ledger, budget, now);
+  const ai = args.noAi || !withinBudget ? null : createAiClient(log, (purpose, usage) => record(ledger, purpose, usage, new Date().toISOString(), log));
+  if (!ai) {
+    log(args.noAi ? "AI disabled by --no-ai" : !withinBudget ? `This month's model budget is used ($${startSpend.toFixed(2)} of $${budget.monthlyUsd}); publishing without the model` : "No ANTHROPIC_API_KEY; publishing without new translations");
+  }
   const cache = readCache(CACHE_PATH);
   const globeCodes = loadGlobeCodes();
   let translated = 0;
@@ -201,47 +210,40 @@ async function main() {
   const historyDir = `${args.outDir}/history`;
   const indexFile = `${historyDir}/index.json`;
   const historyIndex: HistoryIndex | null = fs.existsSync(indexFile) ? (JSON.parse(fs.readFileSync(indexFile, "utf8")) as HistoryIndex) : null;
-  const watched = inboundEditions(attention);
-  const snapshot = buildSnapshot(now, all, shared?.stories ?? [], watched);
+  const snapshot = buildSnapshot(now, all, shared?.stories ?? []);
   writeJson(`${historyDir}/${snapshot.date}.json`, snapshot);
   writeJson(indexFile, addDay(historyIndex, dayOf(now)));
   log(`History: snapshot for ${snapshot.date} with ${Object.keys(snapshot.countries).length} countries`);
 
-  // 6. Humanitarian signals: verified GDACS alerts, sudden world attention,
-  // and emergencies nobody is watching. A failed alert fetch keeps the
-  // alerts from the previous run.
-  const crisesPath = `${args.outDir}/crises.json`;
-  const previousCrises: CrisesFile | null = fs.existsSync(crisesPath) ? (JSON.parse(fs.readFileSync(crisesPath, "utf8")) as CrisesFile) : null;
-  const resolver = buildResolver(loadGlobeFeatures(), local);
-  const alerts = (await fetchAlerts(resolver, now, deps)) ?? previousCrises?.alerts ?? [];
-  const crises = detectCrises({
-    attention,
-    abouts,
-    locals: all,
-    baselines: readBaselines(historyDir, dayOf(now)),
-    terms: loadCrisisTerms(),
-    alerts,
+  // 6. The disaster map: every feed merged, researched within budget,
+  //    placed on the map and given donation pages.
+  const articles: NewsArticle[] = [];
+  for (const code of Object.keys(index.countries)) {
+    const path = `${args.outDir}/countries/${code}.json`;
+    if (!fs.existsSync(path)) continue;
+    for (const a of (JSON.parse(fs.readFileSync(path, "utf8")) as CountryFile).articles as EnrichedArticle[]) {
+      articles.push({ country: code, title: a.title, en: a.en, outlet: a.outlet, url: a.url, published: a.published, about: a.about });
+    }
+  }
+  const features = loadGlobeFeatures();
+  await updateDisasters({
+    outDir: args.outDir,
     now,
+    deps,
+    ai,
+    ledger,
+    budget,
+    articles,
+    resolve: buildResolver(features, local),
+    shapes: loadCountryShapes(),
+    globeCodes,
+    countryNames: Object.fromEntries(features.map((f) => [f.code, f.admin])),
+    log,
   });
-  writeJson(crisesPath, crises);
-  log(`Crises: ${crises.alerts.length} alerts, ${crises.quiet.length} quiet, ${crises.watching.length} watched, ${crises.unwatched.length} unwatched`);
 
-  // 7. Where help is needed and where to send it: national Red Cross and
-  // Red Crescent societies, IFRC appeals and UN response plans. Each
-  // source that fails keeps the previous run's data.
-  const helpPath = `${args.outDir}/help.json`;
-  const previousHelp: HelpFile | null = fs.existsSync(helpPath) ? (JSON.parse(fs.readFileSync(helpPath, "utf8")) as HelpFile) : null;
-  const help = await refreshHelp(previousHelp, resolver, now, deps);
-  writeJson(helpPath, help);
-  log(`Help: ${Object.keys(help.societies).length} societies, ${help.appeals.length} appeals, ${Object.keys(help.events).length} emergencies, ${help.plans.length} plans, ${Object.keys(help.uncr).length} UN donation pages`);
-
-  // 8. Long-term needs: water, sanitation, electricity, hunger, poverty,
-  // schooling, literacy and child mortality from the World Bank's open data.
-  const needsPath = `${args.outDir}/needs.json`;
-  const previousNeeds: NeedsFile | null = fs.existsSync(needsPath) ? (JSON.parse(fs.readFileSync(needsPath, "utf8")) as NeedsFile) : null;
-  const needs = await refreshNeeds(previousNeeds, resolver, now, deps);
-  writeJson(needsPath, needs);
-  log(`Needs: ${Object.keys(needs.countries).length} countries with a listed need, ${Object.values(needs.fetched).filter(Boolean).length} of 8 indicators fetched`);
+  writeLedger(pruneLedger(ledger, now));
+  const month = ledger.months[now.slice(0, 7)];
+  log(`Model spend: $${(monthSpent(ledger, now) - startSpend).toFixed(3)} this run, $${monthSpent(ledger, now).toFixed(2)} of $${budget.monthlyUsd} this month${month ? ` (${Object.entries(month.byPurpose).map(([k, v]) => `${k} $${v.toFixed(2)}`).join(", ")})` : ""}`);
 }
 
 main().catch((err) => {

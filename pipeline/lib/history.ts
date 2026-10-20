@@ -1,7 +1,6 @@
 // Daily snapshots, so the site can show what each country was reading on an
 // earlier day. One file per UTC day, overwritten by each run that day, so a
 // day's file ends up holding its last state.
-import fs from "node:fs";
 import type { SharedStory } from "./shared";
 import type { EnrichedArticle } from "./translate";
 
@@ -32,8 +31,6 @@ export interface Snapshot {
   /** Local-edition countries only. */
   countries: Record<string, SnapshotArticle[]>;
   stories: SnapshotStory[];
-  /** Per country, how many editions had it in their top stories; absent in older files. */
-  watched?: Record<string, number>;
 }
 
 export interface HistoryIndex {
@@ -49,7 +46,6 @@ export function buildSnapshot(
   now: string,
   countries: { code: string; articles: EnrichedArticle[] }[],
   stories: SharedStory[],
-  watched?: Record<string, number>,
 ): Snapshot {
   const out: Record<string, SnapshotArticle[]> = {};
   for (const c of countries) {
@@ -65,24 +61,7 @@ export function buildSnapshot(
     updated: now,
     countries: out,
     stories: stories.slice(0, SNAPSHOT_STORIES).map((s) => ({ id: s.id, title: s.title, subject: s.subject, countries: s.countries })),
-    ...(watched ? { watched } : {}),
   };
-}
-
-/** Reads previous days' inbound edition counts, oldest first, for spike baselines. */
-export function readBaselines(historyDir: string, today: string, days = 7): Record<string, number[]> {
-  const out: Record<string, number[]> = {};
-  if (!fs.existsSync(historyDir)) return out;
-  const files = fs
-    .readdirSync(historyDir)
-    .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f) && f.slice(0, 10) < today)
-    .sort()
-    .slice(-days);
-  for (const f of files) {
-    const snap = JSON.parse(fs.readFileSync(`${historyDir}/${f}`, "utf8")) as Snapshot;
-    for (const [code, n] of Object.entries(snap.watched ?? {})) (out[code] ??= []).push(n);
-  }
-  return out;
 }
 
 /** Adds a day to the index, keeping it sorted and free of repeats. */

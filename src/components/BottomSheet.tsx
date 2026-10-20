@@ -7,6 +7,8 @@ interface Props {
   onClose: () => void;
   /** Fraction of the viewport height shown when the sheet is collapsed. */
   peek: number;
+  /** What the sheet holds, for screen readers: "Country", "Disaster" or "Story". */
+  label: string;
   children: ReactNode;
 }
 
@@ -17,7 +19,7 @@ const SWIPE = 60;
 
 // Mobile bottom sheet with two resting positions, peek and full, that the
 // user drags between. Dragging down from peek closes it.
-export default function BottomSheet({ open, onClose, peek, children }: Props) {
+export default function BottomSheet({ open, onClose, peek, label, children }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [dragY, setDragY] = useState(0);
   const [dragging, setDragging] = useState(false);
@@ -74,7 +76,7 @@ export default function BottomSheet({ open, onClose, peek, children }: Props) {
 
   return (
     <section
-      aria-label="Country"
+      aria-label={label}
       aria-hidden={!open}
       inert={!open}
       className="absolute inset-x-0 bottom-0 z-30 flex flex-col rounded-t-2xl border-t border-line bg-paper shadow-[0_-1px_0_var(--line)]"
@@ -103,7 +105,8 @@ export default function BottomSheet({ open, onClose, peek, children }: Props) {
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
-        className="flex cursor-grab touch-none justify-center py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        // Tall enough (40 px) to grab with a thumb.
+        className="flex cursor-grab touch-none justify-center py-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
         <div className="h-1.5 w-10 rounded-full bg-line" />
       </div>

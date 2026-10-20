@@ -35,7 +35,8 @@ export const DISASTER_META: Record<DisasterType, DisasterMeta> = {
     plural: "Tropical cyclones",
     color: "#6d28d9",
     light: "#c4b5fd",
-    icon: "M12 9a3 3 0 1 0 0 6 3 3 0 1 0 0-6zM12 9c0-3 2.5-5.5 7-6M12 15c0 3-2.5 5.5-7 6M9 12c-3 0-5.5-2.5-6-7M15 12c3 0 5.5 2.5 6 7",
+    // The two-armed tropical cyclone symbol used on weather maps.
+    icon: "M12 9a3 3 0 1 0 0 6 3 3 0 1 0 0-6zM12 9c0-3.5 3-6 8-6M12 15c0 3.5-3 6-8 6",
   },
   storm: {
     label: "Storm",
