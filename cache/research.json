@@ -103,7 +103,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-cyclone-tc-1001335": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -267,7 +267,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#afb26aec",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -287,7 +287,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,NO,PL,RO,RS,RU,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -427,7 +427,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -477,107 +477,27 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,DJ,ER,ET,KE,NE,NG,SD,SO,SS,TD#d3aabe2f",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-drought-dr-1027465": {
-    "at": "2026-10-20T08:54:22.411Z",
+    "at": "2026-10-20T19:35:05.530Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Prolonged dry conditions have caused crop failure and food insecurity in Uganda's Karamoja sub-region, where some families report going days without food. Reuters links the drought to lower Ugandan coffee harvests, and August coffee exports fell 13.7% year on year. Northern Burundi also reported crop losses. A forecast of wetter October to December conditions may ease pasture and water shortages. Reports as of mid-October 2026 describe the drought as ongoing.",
+    "searches": 4,
+    "summary": "A drought affecting Uganda, Kenya, Tanzania, Rwanda, Burundi and parts of DR Congo began on 2026-05-21. The GDACS-derived alert feed, last updated 2026-10-20, rates it significant, covering about 172,173 km². No specific affected places or casualty figures were confirmed by the notes, and no official donation page was found.",
     "ongoing": true,
-    "places": [
-      {
-        "name": "Nabilatuk",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Crops failed, livestock lacked pasture and water"
-      },
-      {
-        "name": "Nakapiripirit",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Crops failed, livestock lacked pasture and water"
-      },
-      {
-        "name": "Amudat",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Crops failed, livestock lacked pasture and water"
-      },
-      {
-        "name": "Kotido",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Crops failed, livestock lacked pasture and water"
-      },
-      {
-        "name": "Karenga",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Crops failed, livestock lacked pasture and water"
-      },
-      {
-        "name": "Kaabong",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Crops failed, livestock lacked pasture and water"
-      },
-      {
-        "name": "Napak",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Crops failed, livestock lacked pasture and water"
-      },
-      {
-        "name": "Abim",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Crops failed, livestock lacked pasture and water"
-      },
-      {
-        "name": "Northern Lowlands",
-        "country": "BI",
-        "kind": "region",
-        "impact": "Bean losses estimated at 40–50%"
-      }
-    ],
+    "places": [],
     "figures": [
       {
-        "label": "Food insecure (Crisis or worse)",
-        "value": "3.6 million people",
-        "sourceName": "allafrica.com",
-        "sourceUrl": "https://allafrica.com/stories/202610090203.html"
-      },
-      {
-        "label": "Coffee exports, August 2026",
-        "value": "737,766 bags (down 13.7% year on year)",
-        "sourceName": "cnbcafrica.com",
-        "sourceUrl": "https://www.cnbcafrica.com/2026/uganda-august-coffee-shipments-down-14-on-drought"
+        "label": "Area affected",
+        "value": "172,173 km²",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://gdacs.org/"
       }
     ],
     "donation": [],
-    "sources": [
-      {
-        "name": "monitor.co.ug",
-        "url": "https://www.monitor.co.ug/uganda/news/national/dry-spell-leaves-karamoja-region-families-starving-5631472",
-        "title": "Dry spell leaves Karamoja region families starving"
-      },
-      {
-        "name": "birrmetrics.com",
-        "url": "https://birrmetrics.com/east-africa-dry-season-food-price-shock/",
-        "title": "East Africa Dry Season Food Price Shock"
-      }
-    ],
-    "membersHash": "gdacs|BI,CD,KE,RW,TZ,UG#0966275b",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "sources": [],
+    "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -740,7 +660,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#988157ed",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -753,7 +673,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|IN#057be8c4",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -918,7 +838,7 @@
       }
     ],
     "membersHash": "gdacs|TH#75720bb8",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-flood-fl-1104209": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1009,7 +929,7 @@
       }
     ],
     "membersHash": "gdacs|HN#37b0b7ff",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1098,7 +1018,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1347,7 +1267,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1415,7 +1335,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-volcano-vo-1000152": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1507,7 +1427,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-wildfire-wf-1032639": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1531,7 +1451,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1544,7 +1464,63 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032663": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A steppe fire began on 8 October 2026 in Khalkh Gol soum, Dornod province, Mongolia, and was reported extinguished on 12 October, according to Xinhua. The fire broke out along the border in Dong Ujimqin Banner, Inner Mongolia, China. As of 11 October it had not crossed into China. A separate Numrug reserve fire in Dornod was reported put out on 18 October; its link to this event has not been confirmed.",
+    "ongoing": false,
+    "places": [
+      {
+        "name": "Dornod",
+        "country": "MN",
+        "kind": "region",
+        "impact": "origin of steppe fire, extinguished 12 Oct"
+      },
+      {
+        "name": "Khalkh Gol",
+        "admin": "Dornod",
+        "country": "MN",
+        "kind": "district",
+        "impact": "origin of steppe fire, extinguished"
+      },
+      {
+        "name": "Dong Ujimqin Banner",
+        "admin": "Xilingol League, Inner Mongolia",
+        "country": "CN",
+        "kind": "district",
+        "impact": "threatened by fire, not burned"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Firefighters deployed (China)",
+        "value": "2,000+ firefighters",
+        "sourceName": "news.cgtn.com",
+        "sourceUrl": "https://news.cgtn.com/news/2026-10-13/Mongolia-grassland-fire-nears-Chinese-border-1RcKZ6rN29y/p.html"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "news.cn",
+        "url": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html",
+        "title": "Wildfires burn over 1 mln hectares of land in Mongolia so far this year-Xinhua"
+      },
+      {
+        "name": "news.cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-10-13/Mongolia-grassland-fire-nears-Chinese-border-1RcKZ6rN29y/p.html",
+        "title": "Mongolia grassland fire nears Chinese border - CGTN"
+      },
+      {
+        "name": "ecns.cn",
+        "url": "https://www.ecns.cn/cns-wire/2026-10-12/detail-ihfkxmcz6617673.shtml",
+        "title": "Fire in Mongolia approaches China's border, 2,000 firefighters mobilized"
+      }
+    ],
+    "membersHash": "gdacs|CN,MN#fbe9d9be"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1568,7 +1544,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1599,7 +1575,373 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032684": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Wildfires in Brazil's Amazon rainforest, which began on 8 October 2026, have filled northern Brazil with smoke and caused health problems for residents. Amazonas state has been hit hardest, with states of emergency in at least 36 municipalities. Manaus suspended classes and in-person work on 19 October. Pará has the most active fires in Brazil. No official containment figures have been reported.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Amazonas",
+        "country": "BR",
+        "kind": "region",
+        "impact": "Hardest hit; emergency decree covers many towns"
+      },
+      {
+        "name": "Manaus",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "city",
+        "impact": "Smoke covered city; classes and in-person work suspended"
+      },
+      {
+        "name": "Pará",
+        "country": "BR",
+        "kind": "region",
+        "impact": "Most active fires in Brazil"
+      },
+      {
+        "name": "Itacoatiara",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "city",
+        "impact": "Named in emergency decree towns"
+      },
+      {
+        "name": "Parintins",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "town",
+        "impact": "Named in emergency decree towns"
+      },
+      {
+        "name": "Tefé",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "town",
+        "impact": "Named in emergency decree towns"
+      },
+      {
+        "name": "Humaitá",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "town",
+        "impact": "Named in emergency decree towns"
+      },
+      {
+        "name": "Lábrea",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "town",
+        "impact": "Named in emergency decree towns"
+      },
+      {
+        "name": "Autazes",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "town",
+        "impact": "Fires reported"
+      },
+      {
+        "name": "Iranduba",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "town",
+        "impact": "Fires reported"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Hotspots, Brazil's Amazon, October to…",
+        "value": "more than 1,900",
+        "sourceName": "upi.com",
+        "sourceUrl": "https://www.upi.com/Top_News/World-News/2026/10/19/latam-brazil-amazon-fires/8421792431441/"
+      },
+      {
+        "label": "Active fires, Pará, 18–19 October",
+        "value": "469 in 48 hours",
+        "sourceName": "cnnbrasil.com.br",
+        "sourceUrl": "https://www.cnnbrasil.com.br/nacional/norte/pa/para-tem-a-maior-quantidade-de-focos-de-incendio-no-brasil-em-2026/"
+      },
+      {
+        "label": "Emergency declarations",
+        "value": "at least 36 municipalities",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/brazil-amazonas-fire-emergency-2026"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "upi.com",
+        "url": "https://www.upi.com/Top_News/World-News/2026/10/19/latam-brazil-amazon-fires/8421792431441/",
+        "title": "Amazon fires blanket northern Brazil in smoke, disrupt daily life - UPI.com"
+      },
+      {
+        "name": "iqair.com",
+        "url": "https://www.iqair.com/as/newsroom/wildfire-map-spotlight-brazil-wildfires",
+        "title": "Wildfire Map Spotlight: Brazil Fires"
+      },
+      {
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/brazil-amazonas-fire-emergency-2026",
+        "title": "Amazonas Fire Emergency Hits 36 Towns, Smoke Over Manaus"
+      },
+      {
+        "name": "usnews.com",
+        "url": "https://www.usnews.com/news/world/articles/2026-10-14/fires-surge-in-brazils-amazon-fueled-by-el-nino-and-climate-change",
+        "title": "Fires Surge in Brazil's Amazon, Fueled by El Niño and Climate Change"
+      }
+    ],
+    "membersHash": "gdacs|BR#730299f9",
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032702": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "firemaptoday.com",
+        "url": "https://firemaptoday.com/au/fire/fire-northern-territory-2026-10-03-3f41bc",
+        "title": "Fire near Central Desert, NT — 2 Oct 2026"
+      },
+      {
+        "name": "hipponics.com",
+        "url": "https://hipponics.com/nt-bushfire-map",
+        "title": "NT Fire & Incident Map — Current Fires Today (Bushfires NT data)"
+      }
+    ],
+    "membersHash": "gdacs|AU#0657c86c",
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032727": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Wildfires started on Oct. 8, 2026 in Dornod province, eastern Mongolia, including a fire in the core zone of the Numrug Strictly Protected Area. Xinhua, citing Mongolia's Ministry of Environment, reported the Numrug fire fully extinguished on Oct. 16. Sources dated Oct. 20 describe a fire threatening the China-Mongolia border, which conflicts with the extinguishment report. The Ministry puts the Numrug burned area at 528,765.5 hectares. One person was killed and two injured…",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Numrug Strictly Protected Area",
+        "admin": "Dornod",
+        "country": "MN",
+        "kind": "site",
+        "impact": "Core zone burned; about 80% estimated burned"
+      },
+      {
+        "name": "Khalkh Gol",
+        "admin": "Dornod",
+        "country": "MN",
+        "kind": "town",
+        "impact": "Steppe fire broke out"
+      },
+      {
+        "name": "Dong Ujimqin Banner",
+        "admin": "Xilingol League, Inner Mongolia",
+        "country": "CN",
+        "kind": "district",
+        "impact": "Fire near border; not reported crossed into China"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Burned area, Numrug reserve",
+        "value": "528,765.5 hectares",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/asiapacific/20261020/59a61b0659c54ed294a3723f683b2896/c.html"
+      },
+      {
+        "label": "Burned area, Mongolia 2026",
+        "value": "at least 1,016,908 hectares",
+        "sourceName": "news.cn",
+        "sourceUrl": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html"
+      },
+      {
+        "label": "Deaths",
+        "value": "one person",
+        "sourceName": "asianews.network",
+        "sourceUrl": "https://asianews.network/one-dead-two-injured-in-172-forest-and-steppe-fires-this-year-in-mongolia/"
+      },
+      {
+        "label": "Injured",
+        "value": "two people",
+        "sourceName": "asianews.network",
+        "sourceUrl": "https://asianews.network/one-dead-two-injured-in-172-forest-and-steppe-fires-this-year-in-mongolia/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/asiapacific/20261020/59a61b0659c54ed294a3723f683b2896/c.html",
+        "title": "Massive Japanese-related reserve wildfire in E. Mongolia burns over half mln hectares of land-Xinhua"
+      },
+      {
+        "name": "news.cn",
+        "url": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html",
+        "title": "Wildfires burn over 1 mln hectares of land in Mongolia so far this year-Xinhua"
+      },
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261020/50dba90d4244438fa6e9846f3e6d804f/c.html",
+        "title": "Explainer: How a Japan-invested firm sparks a major wildfire at Mongolia's protected reserve-Xinhua"
+      },
+      {
+        "name": "japantimes.co.jp",
+        "url": "https://www.japantimes.co.jp/news/2026/10/20/asia-pacific/mongolian-wildfire-kddi/",
+        "title": "KDDI subsidiary faces criticism and questions over Mongolian wildfire - The Japan Times"
+      },
+      {
+        "name": "ecns.cn",
+        "url": "https://www.ecns.cn/cns-wire/2026-10-12/detail-ihfkxmcz6617673.shtml",
+        "title": "Fire in Mongolia approaches China's border, 2,000 firefighters mobilized"
+      },
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261018/a0017a0ce4fd4541ab26265f123a7a5a/c.html",
+        "title": "Roundup: Public outcry grows in Mongolia over Japanese-linked reserve wildfire-Xinhua"
+      }
+    ],
+    "membersHash": "gdacs|CN,MN#83527d05",
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032785": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "dailynews.co.zw",
+        "url": "https://dailynews.co.zw/mat-south-veld-fires-surge/",
+        "title": "Mat South veld fires surge"
+      },
+      {
+        "name": "zimeye.net",
+        "url": "https://www.zimeye.net/2026/10/13/veld-fire-kills-shurugwi-woman-destroys-homesteads/",
+        "title": "Veld Fire Kills Shurugwi Woman, Destroys Homesteads"
+      },
+      {
+        "name": "dailynews.gov.bw",
+        "url": "https://dailynews.gov.bw/news-detail/92478",
+        "title": "Botswana to Experience El Nio conditions"
+      }
+    ],
+    "membersHash": "gdacs|BW,ZW#156b67c1",
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032789": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|ZM#116b6175",
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032810": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#5f58b82a",
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032847": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "gdacs.org",
+        "url": "https://gdacs.org/Wildfires/report.aspx?eventtype=WF&eventid=1031528&episodeid=5",
+        "title": "Overall Green Forest fire in Mozambique from 25 Aug 2026 00:00 UTC to 04 Sep 2026 00:00 UTC"
+      }
+    ],
+    "membersHash": "gdacs|MZ#da64b2be",
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032848": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": false,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "firemaptoday.com",
+        "url": "https://firemaptoday.com/au/fire/fire-northern-territory-2026-10-03-3f41bc",
+        "title": "Fire near Central Desert, NT — 2 Oct 2026"
+      },
+      {
+        "name": "abc.net.au",
+        "url": "https://www.abc.net.au/emergency/warning/nt/AUREMER-3f2b8c3f638a9a90013d953deb960c90",
+        "title": "Bushfire"
+      }
+    ],
+    "membersHash": "gdacs|AU#d564aadf"
+  },
+  "gdacs-wildfire-wf-1032855": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|MZ#dc62774d",
+    "seen": "2026-10-20T19:35:05.530Z"
+  },
+  "gdacs-wildfire-wf-1032919": {
+    "at": "2026-10-20T19:35:05.530Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "firemaptoday.com",
+        "url": "https://firemaptoday.com/au/fire/fire-northern-territory-2026-10-03-3f41bc",
+        "title": "Fire near Central Desert, NT — 2 Oct 2026"
+      }
+    ],
+    "membersHash": "gdacs|AU#e3c5d3e6",
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-earthquake-7990": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -1696,7 +2038,7 @@
       }
     ],
     "membersHash": "ifrc|VE#4aa9fe04",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-earthquake-8055": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1796,7 +2138,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1867,7 +2209,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -1978,7 +2320,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-flood-8025": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2060,7 +2402,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-flood-8050": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -2134,7 +2476,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2208,7 +2550,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2285,7 +2627,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2382,7 +2724,7 @@
       }
     ],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "ifrc-landslide-8111": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2480,7 +2822,7 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   },
   "usgs-earthquake-us7000q1": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -2548,6 +2890,6 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-20T14:35:40.688Z"
+    "seen": "2026-10-20T19:35:05.530Z"
   }
 }
