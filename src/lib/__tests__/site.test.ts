@@ -29,3 +29,18 @@ describe("link preview", () => {
     expect(SITE_DESCRIPTION.length).toBeLessThanOrEqual(160);
   });
 });
+
+describe("siteVerification", () => {
+  it("is left out until a code is set", async () => {
+    const { siteVerification } = await load({});
+    expect(siteVerification({})).toBeUndefined();
+    expect(siteVerification({ GOOGLE_SITE_VERIFICATION: "  " })).toBeUndefined();
+  });
+
+  it("carries Google's and Bing's codes", async () => {
+    const { siteVerification } = await load({});
+    expect(siteVerification({ GOOGLE_SITE_VERIFICATION: " abc123 " })).toEqual({ google: "abc123" });
+    expect(siteVerification({ BING_SITE_VERIFICATION: "XYZ" })).toEqual({ other: { "msvalidate.01": "XYZ" } });
+    expect(siteVerification({ GOOGLE_SITE_VERIFICATION: "g", BING_SITE_VERIFICATION: "b" })).toEqual({ google: "g", other: { "msvalidate.01": "b" } });
+  });
+});

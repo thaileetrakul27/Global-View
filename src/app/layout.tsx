@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Newsreader } from "next/font/google";
-import { OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, SITE_URL, siteVerification } from "@/lib/site";
 import "./globals.css";
 
 // One serif for headlines, one sans-serif for interface text.
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   title: SITE_NAME,
   description: SITE_DESCRIPTION,
   alternates: { canonical: "/" },
+  verification: siteVerification(),
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
