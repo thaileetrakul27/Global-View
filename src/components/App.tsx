@@ -107,8 +107,9 @@ export default function App() {
   // A shared story opened from the landing card or an article badge. It
   // takes over the panel and only its arcs are drawn.
   const [focusStoryId, setFocusStoryId] = useState<string | null>(null);
-  // Country to return to when the story panel closes.
+  // Country and map to return to when the story panel closes.
   const [storyFrom, setStoryFrom] = useState<string | null>(null);
+  const [storyFromMode, setStoryFromMode] = useState<MapMode | null>(null);
   // Time machine: archived days, the one being viewed, and loaded snapshots.
   const [historyDates, setHistoryDates] = useState<string[]>([]);
   const [historyDate, setHistoryDate] = useState<string | null>(null);
@@ -123,6 +124,9 @@ export default function App() {
   const [disasterFrom, setDisasterFrom] = useState<string | null>(null);
   const [disasterFromMode, setDisasterFromMode] = useState<MapMode | null>(null);
   const [showMinor, setShowMinor] = useState(false);
+  // Whether the country panel's "+N more" disasters are unfolded; kept here so
+  // closing a disaster opened from that list finds its row again.
+  const [countryDisastersOpen, setCountryDisastersOpen] = useState(false);
   // The "Drag to turn the globe" hint shows until the first turn. It is only
   // rendered once the countries have loaded, after hydration, so reading
   // storage here is safe.
@@ -180,7 +184,7 @@ export default function App() {
       .then((h) => {
         const dates = h?.dates ?? [];
         setHistoryDates(dates);
-        if (wanted.date && dates.includes(wanted.date)) setHistoryDate(wanted.date);
+        if (!userActed.current && wanted.date && dates.includes(wanted.date)) setHistoryDate(wanted.date);
       })
       .catch(console.error);
   }, [initialSearch]);
@@ -409,8 +413,10 @@ export default function App() {
     setSelectedCode(code);
     setFilterAbout(about ?? null);
     setReadersOpen(false);
+    setCountryDisastersOpen(false);
     setFocusStoryId(null);
     setStoryFrom(null);
+    setStoryFromMode(null);
     setSelectedDisasterId(null);
     setDisasterFrom(null);
     setDisasterFromMode(null);
@@ -421,11 +427,13 @@ export default function App() {
     setFilterAbout(null);
     setFocusStoryId(null);
     setStoryFrom(null);
+    setStoryFromMode(null);
     setSelectedDisasterId(null);
     setDisasterFrom(null);
     setDisasterFromMode(null);
   }, []);
-  // A shared story is news: it shows on the news map.
+  // A shared story is news: it shows on the news map. Closing it returns to
+  // the country and the map it was opened from.
   const openStory = useCallback(
     (id: string | null) => {
       userActed.current = true;
@@ -434,6 +442,7 @@ export default function App() {
         return;
       }
       setStoryFrom(selectedCode);
+      setStoryFromMode(focusStoryId ? storyFromMode : mode);
       setSelectedCode(null);
       setFilterAbout(null);
       setSelectedDisasterId(null);
@@ -442,7 +451,7 @@ export default function App() {
       setMode("news");
       setFocusStoryId(id);
     },
-    [selectedCode],
+    [selectedCode, focusStoryId, storyFromMode, mode],
   );
   // Open a disaster from the list, the globe or a country panel; it shows on
   // the disaster map. Closing it returns to the country and the map it was
@@ -459,6 +468,7 @@ export default function App() {
       setFilterAbout(null);
       setFocusStoryId(null);
       setStoryFrom(null);
+      setStoryFromMode(null);
       setHistoryDate(null);
       setMode("disasters");
       setSelectedDisasterId(id);
@@ -494,6 +504,7 @@ export default function App() {
           setFocusStoryId(null);
           setSelectedCode(storyFrom);
           setStoryFrom(null);
+          setStoryFromMode(null);
         }
         setHistoryDate(null);
       }
@@ -514,7 +525,9 @@ export default function App() {
     setFocusStoryId(null);
     setSelectedCode(storyFrom);
     setStoryFrom(null);
-  }, [storyFrom]);
+    if (storyFromMode) setMode(storyFromMode);
+    setStoryFromMode(null);
+  }, [storyFrom, storyFromMode]);
   // Changing day keeps the country but drops anything that needs live data,
   // including an open disaster.
   const changeDate = useCallback((date: string | null) => {
@@ -522,6 +535,7 @@ export default function App() {
     setHistoryDate(date);
     setFocusStoryId(null);
     setStoryFrom(null);
+    setStoryFromMode(null);
     setFilterAbout(null);
     setSelectedDisasterId(null);
     setDisasterFrom(null);
@@ -591,6 +605,8 @@ export default function App() {
       name={nameOf(selected.properties.code)}
       disasters={countryDisasters}
       onSelectDisaster={openDisasterPanel}
+      disastersOpen={countryDisastersOpen}
+      onDisastersOpen={setCountryDisastersOpen}
       about={{
         articles: !hasInbound
           ? []
@@ -619,7 +635,9 @@ export default function App() {
     // globe. The overlays sit above it by z-index.
     <main className="relative h-full w-full overflow-hidden">
       <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex flex-col gap-3 p-5 sm:p-7 md:flex-row md:items-start md:justify-between">
-        <div className="pointer-events-auto">
+        {/* From tablet width the search box and map switch sit in the middle,
+            so the text here wraps before it reaches them. */}
+        <div className="pointer-events-auto md:max-w-[min(28rem,calc(50vw-13rem))]">
           {/* On phones the map switch shares the title's row. */}
           <div className="flex items-center justify-between gap-3">
             <h1 className="font-serif text-2xl leading-none tracking-tight text-ink sm:text-3xl">Global View</h1>
@@ -648,7 +666,8 @@ export default function App() {
           <div className="min-w-0 flex-1 md:w-full md:flex-none">
             <CountrySearch countries={countries} onSelect={select} />
           </div>
-          {!vp.isDesktop && showTime && <TimeMenu dates={historyDates} date={historyDate} onChange={changeDate} />}
+          {/* Not while a panel is open: the sheet would cover its menu. */}
+          {!vp.isDesktop && showTime && !panelOpen && <TimeMenu dates={historyDates} date={historyDate} onChange={changeDate} />}
           {vp.isDesktop && <ModeSwitch mode={mode} onChange={changeMap} />}
         </div>
       </header>

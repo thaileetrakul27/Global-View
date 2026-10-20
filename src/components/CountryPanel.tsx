@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useId, useRef } from "react";
 import type { Mention } from "@/lib/attention";
 import type { AboutArticle, Article, CountryFile, Disaster, SnapshotArticle } from "@/lib/data";
 import { DISASTER_META } from "@/lib/disasterMeta";
@@ -53,6 +53,9 @@ interface Props {
   disasters?: Disaster[];
   /** Open a disaster's panel by id. */
   onSelectDisaster?: (id: string) => void;
+  /** Whether the "+N more" disasters are unfolded; held by the parent so it survives a disaster opening and closing. */
+  disastersOpen?: boolean;
+  onDisastersOpen?: (open: boolean) => void;
 }
 
 // Contents of the country panel: the name, when the list was refreshed, a
@@ -74,6 +77,8 @@ export default function CountryPanel({
   about,
   disasters = [],
   onSelectDisaster,
+  disastersOpen = false,
+  onDisastersOpen = () => {},
 }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -146,7 +151,7 @@ export default function CountryPanel({
 
       <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto px-5 pb-6 sm:px-6">
         {!history && onSelectDisaster && disasters.length > 0 && (
-          <DisasterLine name={name} disasters={disasters} onSelect={onSelectDisaster} />
+          <DisasterLine name={name} disasters={disasters} onSelect={onSelectDisaster} expanded={disastersOpen} onExpand={onDisastersOpen} />
         )}
 
         {!history && world && (
@@ -246,8 +251,19 @@ export default function CountryPanel({
 // One line for the disasters happening in this country now: the most
 // severe, which opens its panel with where to donate, and the rest folded
 // behind "+N more".
-function DisasterLine({ name, disasters, onSelect }: { name: string; disasters: Disaster[]; onSelect: (id: string) => void }) {
-  const [expanded, setExpanded] = useState(false);
+function DisasterLine({
+  name,
+  disasters,
+  onSelect,
+  expanded,
+  onExpand,
+}: {
+  name: string;
+  disasters: Disaster[];
+  onSelect: (id: string) => void;
+  expanded: boolean;
+  onExpand: (open: boolean) => void;
+}) {
   const listId = useId();
   const [first, ...rest] = disasters;
   const row = "flex min-w-0 items-center gap-2 text-left text-sm text-ink hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent";
@@ -264,7 +280,7 @@ function DisasterLine({ name, disasters, onSelect }: { name: string; disasters: 
             type="button"
             aria-expanded={expanded}
             aria-controls={listId}
-            onClick={() => setExpanded((v) => !v)}
+            onClick={() => onExpand(!expanded)}
             className="shrink-0 text-xs font-medium text-accent hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             {expanded ? "Fewer" : `+${rest.length} more`}

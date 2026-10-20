@@ -662,6 +662,44 @@ export function clusterMarkers(markers: ScreenMarker[]): MarkerClusters {
   return { heads, merged };
 }
 
+/**
+ * Where a cluster sits: the mean of its members' positions, with longitudes
+ * taken relative to the first, so a cluster across the 180° line stays there
+ * instead of averaging to the other side of the world.
+ */
+export function meanPosition(points: readonly LatLng[]): LatLng {
+  const lng0 = points[0].lng;
+  const wrap = (lng: number) => ((((lng + 180) % 360) + 360) % 360) - 180;
+  const lat = points.reduce((s, p) => s + p.lat, 0) / points.length;
+  const offset = points.reduce((s, p) => s + wrap(p.lng - lng0), 0) / points.length;
+  return { lat, lng: wrap(lng0 + offset) };
+}
+
+/**
+ * Screen offsets that spread each cluster's members in a ring around its
+ * head, for when the camera is as close as it goes and zooming cannot pull
+ * them apart (disasters placed at the same spot). The ring grows so the
+ * markers on it do not touch. Returns [dx, dy] px for each member.
+ */
+export function fanOffsets(clusters: MarkerClusters, markers: readonly ScreenMarker[]): Map<string, [number, number]> {
+  const byId = new Map(markers.map((m) => [m.id, m]));
+  const out = new Map<string, [number, number]>();
+  for (const [headId, members] of clusters.heads) {
+    const head = byId.get(headId);
+    if (!head) continue;
+    const biggest = Math.max(...members.map((id) => byId.get(id)?.size ?? 0));
+    const ring = Math.max(head.size / 2 + biggest / 2 + MARKER_GAP + 2, (members.length * (biggest + MARKER_GAP)) / (2 * Math.PI));
+    members.forEach((id, i) => {
+      const m = byId.get(id);
+      if (!m) return;
+      const angle = -Math.PI / 2 + (2 * Math.PI * i) / members.length;
+      // From the member's own spot to its place on the ring around the head.
+      out.set(id, [head.x + Math.cos(angle) * ring - m.x, head.y + Math.sin(angle) * ring - m.y]);
+    });
+  }
+  return out;
+}
+
 /** How far below the default view the camera must be before minor disasters appear on their own. */
 export const MINOR_REVEAL_ALTITUDE = 1;
 /** A cluster tapped at or below this altitude opens its head instead of zooming further. */

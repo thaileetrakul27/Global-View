@@ -57,7 +57,13 @@ body {
   cursor: pointer;
   border-radius: 9999px;
   outline: none;
-  transition: opacity 0.2s ease;
+  /* Moved, hit area and all, onto a ring around its cluster's head at the
+     closest zoom (see setMarkerNudge). The globe positions the element with
+     transform; translate adds to it. */
+  translate: var(--dz-nudge, 0 0);
+  transition:
+    opacity 0.2s ease,
+    translate 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 }
 /* A touch target of at least 44 px around the chip, whatever its size. */
@@ -548,6 +554,7 @@ body {
   .gv-dz[data-type] .gv-dz-fx::before {
     animation: none !important;
   }
+  .gv-dz,
   .gv-dz-chip,
   .gv-dz-ring,
   .gv-dz-stem {

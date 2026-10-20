@@ -323,17 +323,20 @@ export default function Globe({
       })),
     [arcs],
   );
-  const disasterPaths = layers.props;
+  // Rebuilt only when a path or its look changes: a new accessor makes the
+  // globe redraw every path, which restarts the storm tracks' moving dashes.
+  const { pathsData: trackData, pathColor: trackColor, pathStroke: trackStroke, pathDashLength: trackDash, pathDashGap: trackGap, pathDashAnimateTime: trackAnimate } =
+    layers.props;
   const pathProps = useMemo(
     () => ({
-      pathsData: [...((disasterPaths.pathsData as object[] | undefined) ?? []), ...readingPaths],
-      pathColor: (d: object) => (isReading(d) ? hexToRgba(colors.accent, 0.3 + 0.45 * d.strength) : call(disasterPaths.pathColor, d, colors.accent)),
-      pathStroke: (d: object) => (isReading(d) ? 1 + d.strength : call<number | null>(disasterPaths.pathStroke, d, null)),
-      pathDashLength: (d: object) => (isReading(d) ? 1 : call(disasterPaths.pathDashLength, d, 1)),
-      pathDashGap: (d: object) => (isReading(d) ? 0 : call(disasterPaths.pathDashGap, d, 0)),
-      pathDashAnimateTime: (d: object) => (isReading(d) ? 0 : call(disasterPaths.pathDashAnimateTime, d, 0)),
+      pathsData: readingPaths.length ? [...((trackData as object[] | undefined) ?? []), ...readingPaths] : trackData,
+      pathColor: (d: object) => (isReading(d) ? hexToRgba(colors.accent, 0.3 + 0.45 * d.strength) : call(trackColor, d, colors.accent)),
+      pathStroke: (d: object) => (isReading(d) ? 1 + d.strength : call<number | null>(trackStroke, d, null)),
+      pathDashLength: (d: object) => (isReading(d) ? 1 : call(trackDash, d, 1)),
+      pathDashGap: (d: object) => (isReading(d) ? 0 : call(trackGap, d, 0)),
+      pathDashAnimateTime: (d: object) => (isReading(d) ? 0 : call(trackAnimate, d, 0)),
     }),
-    [disasterPaths, readingPaths, colors.accent],
+    [trackData, trackColor, trackStroke, trackDash, trackGap, trackAnimate, readingPaths, colors.accent],
   );
   const onView = detailed.onView;
   const handleZoom = useCallback(

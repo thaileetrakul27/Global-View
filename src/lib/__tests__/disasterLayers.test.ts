@@ -9,6 +9,8 @@ import {
   activeRings,
   circleRing,
   clusterMarkers,
+  fanOffsets,
+  meanPosition,
   haloRadiusKm,
   insidePolygon,
   placeLabelFit,
@@ -504,6 +506,25 @@ describe("screen layout", () => {
     const shown = row.filter((m) => !merged.has(m.id));
     for (const a of shown) for (const b of shown) if (a !== b) expect(Math.hypot(a.x - b.x, a.y - b.y)).toBeGreaterThanOrEqual(22 + 3);
     expect([...heads.values()].flat().length).toBe(merged.size);
+  });
+
+  it("centres a cluster on its members, also across the 180° line", () => {
+    expect(meanPosition([{ lat: 10, lng: 20 }, { lat: 20, lng: 40 }])).toEqual({ lat: 15, lng: 30 });
+    const fiji = meanPosition([{ lat: -17.9, lng: 179.6 }, { lat: -18.3, lng: -179.6 }]);
+    expect(fiji.lat).toBeCloseTo(-18.1, 9);
+    expect(Math.abs(fiji.lng)).toBeCloseTo(180, 9);
+  });
+
+  it("fans a cluster's members out in a ring around its head, none touching", () => {
+    // Three disasters at the very same spot as the head.
+    const markers = ["h", "a", "b", "c"].map((id) => ({ id, x: 100, y: 100, size: 26, rank: id === "h" ? 3 : 1 }));
+    const clusters = clusterMarkers(markers);
+    const offsets = fanOffsets(clusters, markers);
+    expect([...offsets.keys()].sort()).toEqual(["a", "b", "c"]);
+    const spots = [{ x: 100, y: 100 }, ...[...offsets.values()].map(([dx, dy]) => ({ x: 100 + dx, y: 100 + dy }))];
+    for (const p of spots) for (const q of spots) if (p !== q) expect(Math.hypot(p.x - q.x, p.y - q.y)).toBeGreaterThanOrEqual(26);
+    // The first one goes straight up.
+    expect(offsets.get(clusters.heads.get("h")![0])![0]).toBeCloseTo(0, 9);
   });
 
   it("puts a place label on the side where it fits, else where there is more room", () => {

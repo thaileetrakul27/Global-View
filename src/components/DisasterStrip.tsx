@@ -53,9 +53,12 @@ export default function DisasterStrip({ disasters, nameOf, onSelect, showMinor, 
           type="button"
           aria-pressed={showMinor}
           onClick={() => onShowMinor(!showMinor)}
-          className="flex min-h-11 shrink-0 items-center rounded-full border border-dashed border-line bg-card/90 px-3 py-2.5 text-xs text-muted backdrop-blur-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          // One label; the pressed state says whether the minor ones are shown.
+          className={`flex min-h-11 shrink-0 items-center rounded-full border px-3 py-2.5 text-xs backdrop-blur-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+            showMinor ? "border-accent bg-accent text-paper" : "border-dashed border-line bg-card/90 text-muted"
+          }`}
         >
-          {showMinor ? "Hide minor" : `+${minor} minor`}
+          +{minor} minor
         </button>
       )}
     </nav>

@@ -93,6 +93,14 @@ export function createMarkerElement(m: MarkerItem, h: MarkerHandlers): HTMLEleme
   return el;
 }
 
+/** Moves a marker's chip by (dx, dy) px: onto a ring around its cluster's head when the cluster cannot be zoomed apart. */
+export function setMarkerNudge(el: HTMLElement, dx: number, dy: number): void {
+  const v = `${Math.round(dx)}px ${Math.round(dy)}px`;
+  if ((el.dataset.nudge ?? "0px 0px") === v) return;
+  el.dataset.nudge = v;
+  el.style.setProperty("--dz-nudge", v);
+}
+
 /**
  * Makes a marker the head of a cluster of `count` others centred at
  * (lat, lng), or a lone marker again when count is 0. A head shows the

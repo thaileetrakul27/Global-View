@@ -110,7 +110,12 @@ export default function BottomSheet({ open, onClose, peek, label, children }: Pr
       >
         <div className="h-1.5 w-10 rounded-full bg-line" />
       </div>
-      <div className={`min-h-0 flex-1 ${expanded ? "overflow-y-auto" : "overflow-hidden"}`}>
+      {/* At peek the part of the sheet below the screen is padded off, so the
+          panel inside ends at the screen's edge and can scroll to its end. */}
+      <div
+        className={`min-h-0 flex-1 ${expanded ? "overflow-y-auto" : "overflow-hidden"}`}
+        style={{ paddingBottom: expanded ? 0 : Math.max(0, fullPx - peekPx) }}
+      >
         {children}
       </div>
     </section>

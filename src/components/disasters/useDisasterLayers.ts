@@ -26,7 +26,9 @@ import {
   buildPlaceItems,
   buildRingItems,
   clusterMarkers,
+  fanOffsets,
   highlightTarget,
+  meanPosition,
   placeLabelFit,
   rgba,
   type AreaItem,
@@ -44,6 +46,7 @@ import {
   setElementVisible,
   setMarkerCluster,
   setMarkerMerged,
+  setMarkerNudge,
   setMarkerState,
   setPlaceSide,
 } from "./markers";
@@ -128,11 +131,17 @@ function ringFade(color: string, k: number): string[] {
   return steps;
 }
 
+/** Storm tracks while the layer is hidden: one constant, so the path layer is not rebuilt for nothing. */
+const NO_PATHS: PathItem[] = [];
+
 /**
  * Screen-space tidying, a few times a second: merges markers that overlap
  * into the most important one, which then shows how many it stands for,
- * and flips place labels that would run past the visible edge. Positions
- * come from the camera, so nothing is measured.
+ * and flips place labels that would run past the visible edge. With the
+ * camera as close as it goes, where zooming cannot pull a cluster apart,
+ * its markers fan out in a ring instead. The open disaster's marker is
+ * never part of a cluster, so the markers around it stay reachable.
+ * Positions come from the camera, so nothing is measured.
  */
 function layoutHtml(
   g: GlobeMethods,
@@ -146,9 +155,10 @@ function layoutHtml(
   const visibleMarkers: [MarkerItem, HTMLElement][] = [];
   for (const [item, el] of els) {
     if (item.kind === "marker" && el.classList.contains("gv-hidden")) {
-      // Past the horizon: neither a head nor merged.
+      // Past the horizon: neither a head nor merged nor moved.
       setMarkerCluster(el, 0);
       setMarkerMerged(el, false);
+      setMarkerNudge(el, 0, 0);
       continue;
     }
     if (el.classList.contains("gv-hidden")) continue;
@@ -166,20 +176,23 @@ function layoutHtml(
       visibleMarkers.push([item, el]);
     }
   }
-  const { heads, merged } = clusterMarkers(markers);
+  const pool = markers.filter((m) => m.id !== selectedId);
+  const clusters = clusterMarkers(pool);
+  const fan = g.pointOfView().altitude <= CLUSTER_MIN_ALTITUDE * 1.05;
+  const offsets = fan ? fanOffsets(clusters, pool) : null;
   const byId = new Map(visibleMarkers.map(([item]) => [item.disasterId, item]));
   for (const [item, el] of visibleMarkers) {
-    setMarkerMerged(el, merged.has(item.disasterId));
-    const members = heads.get(item.disasterId);
-    // The selected marker is never a cluster: it opens its own panel.
-    if (!members || item.disasterId === selectedId) {
+    const id = item.disasterId;
+    const members = clusters.heads.get(id);
+    setMarkerMerged(el, !fan && clusters.merged.has(id));
+    const [dx, dy] = offsets?.get(id) ?? [0, 0];
+    setMarkerNudge(el, dx, dy);
+    if (fan || !members) {
       setMarkerCluster(el, 0);
       continue;
     }
-    const all = [item, ...members.map((id) => byId.get(id)!)];
-    const lat = all.reduce((s, m) => s + m.lat, 0) / all.length;
-    const lng = all.reduce((s, m) => s + m.lng, 0) / all.length;
-    setMarkerCluster(el, members.length, Math.round(lat * 1e4) / 1e4, Math.round(lng * 1e4) / 1e4);
+    const centre = meanPosition([item, ...members.map((m) => byId.get(m)!)]);
+    setMarkerCluster(el, members.length, Math.round(centre.lat * 1e4) / 1e4, Math.round(centre.lng * 1e4) / 1e4);
   }
 }
 
@@ -381,7 +394,7 @@ export function useDisasterLayers({ globe, ready, disasters, selectedId, show, h
       ringRepeatPeriod: "period",
 
       // Storm tracks: past solid, forecast dashed and moving.
-      pathsData: show ? paths : [],
+      pathsData: show ? paths : NO_PATHS,
       pathPoints: "points",
       pathPointLat: "lat",
       pathPointLng: "lng",
