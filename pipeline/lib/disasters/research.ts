@@ -56,7 +56,7 @@ export const PARSE_ATTEMPTS = 2;
  * PARSE_SETTINGS.maxTokens; a cut-off answer fails to parse, and the same
  * limit again would fail the same way and waste the paid research.
  */
-export const PARSE_RETRY_MAX_TOKENS = 4000;
+export const PARSE_RETRY_MAX_TOKENS = 8000;
 
 /** Settings for the web research call. */
 export const RESEARCH_SETTINGS: { maxSearches: number; maxTokens: number; effort: Effort; purpose: Purpose } = {
@@ -66,9 +66,14 @@ export const RESEARCH_SETTINGS: { maxSearches: number; maxTokens: number; effort
   purpose: "research",
 };
 
-/** Settings for the call that turns the notes into structured data. */
+/**
+ * Settings for the call that turns the notes into structured data. The
+ * model's thinking counts towards max_tokens, so the limit leaves room for
+ * it: at 2,000 the first live run had answers cut off near 1,800 characters.
+ * Only the tokens used are paid for.
+ */
 export const PARSE_SETTINGS: { maxTokens: number; effort: Effort; purpose: Purpose } = {
-  maxTokens: 2000,
+  maxTokens: 4000,
   effort: "low",
   purpose: "research",
 };

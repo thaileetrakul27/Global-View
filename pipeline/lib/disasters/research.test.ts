@@ -825,7 +825,7 @@ describe("researchDisaster", () => {
     expect(webResearch.mock.calls[0][0].user).toContain("1. Typhoon Champi hits Okinawa (NHK)");
     expect(parse).toHaveBeenCalledTimes(1);
     const parseCall = parse.mock.calls[0][0];
-    expect(parseCall).toMatchObject({ maxTokens: 2000, effort: "low", purpose: "research", system: PARSE_SYSTEM });
+    expect(parseCall).toMatchObject({ maxTokens: 4000, effort: "low", purpose: "research", system: PARSE_SYSTEM });
     expect(parseCall).toMatchObject(PARSE_SETTINGS);
     expect(parseCall.schema).toBe(researchSchema);
     expect(parseCall.user).toContain("[2] https://reliefweb.int/report/japan/champi");
