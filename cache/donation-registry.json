@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-20T08:54:22.411Z",
+  "updated": "2026-10-20T14:35:40.688Z",
   "fetched": {
-    "societies": "2026-10-20T08:54:22.411Z",
-    "uncr": "2026-10-20T08:54:22.411Z"
+    "societies": "2026-10-20T14:35:40.688Z",
+    "uncr": "2026-10-20T14:35:40.688Z"
   },
   "societies": {
     "AF": {
@@ -1170,7 +1170,7 @@
       "directory": null,
       "hosts": [],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "KW": {
       "name": "Kuwait Red Crescent Society",
@@ -1990,7 +1990,7 @@
         "redcross.org.za"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "GS": {
       "name": "British Red Cross",
@@ -2226,7 +2226,7 @@
         "redcrossug.org"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "UA": {
       "name": "Ukrainian Red Cross Society",
@@ -2237,7 +2237,7 @@
         "redcross.org.ua"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "AE": {
       "name": "Red Crescent Society of the United Arab Emirates",
@@ -2271,7 +2271,7 @@
         "redcross.org"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "VI": {
       "name": "American Red Cross",
@@ -2292,7 +2292,7 @@
         "cruzroja.org.uy"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "UZ": {
       "name": "Red Crescent Society of Uzbekistan",
@@ -2303,7 +2303,7 @@
         "redcrescent.uz"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "VU": {
       "name": "Vanuatu Red Cross Society",
@@ -2314,7 +2314,7 @@
         "vanuaturedcross.org"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "VE": {
       "name": "Venezuelan Red Cross",
@@ -2325,7 +2325,7 @@
         "cruzrojavenezolana.org"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "VN": {
       "name": "Vietnam Red Cross Society",
@@ -2336,7 +2336,7 @@
         "redcross.org.vn"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "YE": {
       "name": "Yemen Red Crescent Society",
@@ -2345,7 +2345,7 @@
       "directory": "https://www.ifrc.org/national-societies-directory/yemen-red-crescent-society",
       "hosts": [],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "ZM": {
       "name": "Zambia Red Cross Society",
@@ -2357,7 +2357,7 @@
         "redcross.org.zm"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     },
     "ZW": {
       "name": "Zimbabwe Red Cross Society",
@@ -2368,7 +2368,7 @@
         "redcrosszim.org.zw"
       ],
       "donate": null,
-      "checked": null
+      "checked": "2026-10-20T14:35:40.688Z"
     }
   },
   "uncr": {
@@ -2852,18 +2852,18 @@
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-20T08:54:22.411Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-10-20T08:54:22.411Z"
+      ]
     },
     "ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-20T08:54:22.411Z",
       "chain": [
         "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU"
-      ],
-      "checked": "2026-10-20T08:54:22.411Z"
+      ]
     }
   }
 }

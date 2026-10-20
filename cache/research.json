@@ -103,7 +103,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001335": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -208,7 +208,7 @@
       }
     ],
     "membersHash": "gdacs|MX#4a2ce888",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001338": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -267,7 +267,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#afb26aec",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -287,7 +287,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,NO,PL,RO,RS,RU,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -427,7 +427,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -477,7 +477,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,DJ,ER,ET,KE,NE,NG,SD,SO,SS,TD#d3aabe2f",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -577,7 +577,7 @@
       }
     ],
     "membersHash": "gdacs|BI,CD,KE,RW,TZ,UG#0966275b",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -740,7 +740,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#988157ed",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -753,7 +753,601 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|IN#057be8c4",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "gdacs-flood-fl-1104169": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Flooding has affected Thailand since mid-September 2026, with the feed's 5 October date tied to a Chiang Mai flash flood. As of 20 October, the DDPM reported continued flooding in 19 provinces and Bangkok, with water levels stabilising or receding. Authorities are accelerating drainage and recovery and preparing for more heavy rain through 25 October. Thai PBS reported 80 deaths.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Mae Rim",
+        "admin": "Chiang Mai",
+        "country": "TH",
+        "kind": "district",
+        "impact": "Flash flood on 5 October at Mae Sa Noi Waterfall"
+      },
+      {
+        "name": "Nakhon Sawan",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Floodwater receding"
+      },
+      {
+        "name": "Phitsanulok",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Flooding confined to Bang Rakam district"
+      },
+      {
+        "name": "Bang Rakam",
+        "admin": "Phitsanulok",
+        "country": "TH",
+        "kind": "district",
+        "impact": "Flooded"
+      },
+      {
+        "name": "Nakhon Nayok",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Flooded"
+      },
+      {
+        "name": "Prachin Buri",
+        "country": "TH",
+        "kind": "region",
+        "impact": "40,308 households affected"
+      },
+      {
+        "name": "Chachoengsao",
+        "country": "TH",
+        "kind": "region",
+        "impact": "22,224 households affected"
+      },
+      {
+        "name": "Chon Buri",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Flooded"
+      },
+      {
+        "name": "Phra Nakhon Si Ayutthaya",
+        "country": "TH",
+        "kind": "region",
+        "impact": "74,110 households affected"
+      },
+      {
+        "name": "Pathum Thani",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Still affected"
+      },
+      {
+        "name": "Bangkok",
+        "country": "TH",
+        "kind": "city",
+        "impact": "210,648 households affected"
+      },
+      {
+        "name": "Lat Krabang",
+        "admin": "Bangkok",
+        "country": "TH",
+        "kind": "district",
+        "impact": "Affected by flooding"
+      },
+      {
+        "name": "Nong Chok",
+        "admin": "Bangkok",
+        "country": "TH",
+        "kind": "district",
+        "impact": "Affected by flooding"
+      },
+      {
+        "name": "Min Buri",
+        "admin": "Bangkok",
+        "country": "TH",
+        "kind": "district",
+        "impact": "Affected by flooding"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "80",
+        "sourceName": "thaipbsworld.com",
+        "sourceUrl": "https://www.thaipbsworld.com/around-thailand/571370"
+      },
+      {
+        "label": "People affected",
+        "value": "1.37 million people",
+        "sourceName": "nationthailand.com",
+        "sourceUrl": "https://nationthailand.com/news/general/40072531"
+      },
+      {
+        "label": "Households affected",
+        "value": "450,944 households",
+        "sourceName": "nationthailand.com",
+        "sourceUrl": "https://nationthailand.com/news/general/40072531"
+      },
+      {
+        "label": "Displaced",
+        "value": "8,000 people",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/field-reports/18596"
+      },
+      {
+        "label": "Farmland damaged",
+        "value": "about 270,000 hectares",
+        "sourceName": "science.nasa.gov",
+        "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/floodwaters-overwhelm-thailand/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "nationthailand.com",
+        "url": "https://nationthailand.com/news/general/40072531",
+        "title": "DDPM reports 1.37m people still affected by floods on October 20"
+      },
+      {
+        "name": "science.nasa.gov",
+        "url": "https://science.nasa.gov/earth/earth-observatory/floodwaters-overwhelm-thailand/",
+        "title": "Floodwaters Overwhelm Thailand - NASA Science"
+      },
+      {
+        "name": "khaosodenglish.com",
+        "url": "https://www.khaosodenglish.com/news/2026/10/05/flash-flood-hits-chiang-mai-waterfall-visitors-warned/",
+        "title": "Flash flood hits Chiang Mai waterfall, visitors warned"
+      },
+      {
+        "name": "thestar.com.my",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/10/flooding-affects-21-thai-provinces-and-bangkok-hitting-113-million-households",
+        "title": "Flooding affects 21 Thai provinces and Bangkok, hitting 1.13 million households"
+      },
+      {
+        "name": "nationthailand.com",
+        "url": "https://www.nationthailand.com/news/general/40072483",
+        "title": "Floods persist in 22 Thai provinces and three Bangkok districts"
+      },
+      {
+        "name": "thaipbsworld.com",
+        "url": "https://www.thaipbsworld.com/around-thailand/571370",
+        "title": "Flooding persists in Bangkok and 22 provinces"
+      }
+    ],
+    "membersHash": "gdacs|TH#75720bb8",
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "gdacs-flood-fl-1104209": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Rain-related flooding in Honduras began around 2 October 2026, with sudden floods in San Pedro Sula and families affected in Cortés. Copeco reported more than 600 families affected since 2 October as of 9 October. The notes report no ongoing flooding after early October; rain alerts remained active as of 17 to 19 October, with Cenaos forecasting intense rain on 19 October.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "San Pedro Sula",
+        "admin": "Cortés",
+        "country": "HN",
+        "kind": "city",
+        "impact": "Sudden floods; at least 120 families affected, 70 vehicles trapped"
+      },
+      {
+        "name": "Cortés",
+        "country": "HN",
+        "kind": "region",
+        "impact": "Over 200 families affected; evacuations from water entering homes"
+      },
+      {
+        "name": "Distrito Central",
+        "admin": "Francisco Morazán",
+        "country": "HN",
+        "kind": "district",
+        "impact": "Under alert only; no damage reported"
+      },
+      {
+        "name": "Lago de Yojoa",
+        "country": "HN",
+        "kind": "region",
+        "impact": "Under green alert only; no damage reported"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Families affected",
+        "value": "more than 600",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/honduras/2026/10/09/lluvias-en-honduras-dejan-mas-de-600-familias-afectadas-en-lo-que-va-de-octubre/"
+      },
+      {
+        "label": "Families affected in San Pedro Sula",
+        "value": "at least 120",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/honduras/2026/10/03/honduras-inundaciones-afectan-a-120-familias-y-dejan-70-vehiculos-atrapados-en-el-norte-de-pais/"
+      },
+      {
+        "label": "Families affected in Cortés",
+        "value": "more than 200",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/honduras/2026/10/05/lluvias-dejan-miles-de-afectados-inundaciones-y-rescates-en-varias-zonas-de-honduras/"
+      },
+      {
+        "label": "Vehicles trapped in San Pedro Sula",
+        "value": "about 70",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/honduras/2026/10/03/honduras-inundaciones-afectan-a-120-familias-y-dejan-70-vehiculos-atrapados-en-el-norte-de-pais/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "radiohrn.hn",
+        "url": "https://www.radiohrn.hn/alerta-verde-en-honduras-copeco-emite-medida-prevencion-lluvias-clima-cenaos-2026-10-17",
+        "title": "Copeco emite nueva alerta en estas zonas de Honduras por lluvias"
+      },
+      {
+        "name": "radiohrn.hn",
+        "url": "https://www.radiohrn.hn/vaguada-lluvias-lunes-19-octubre-cenaos-cinco-regiones-pronostico-2026-10-18",
+        "title": "Paso de dos vaguadas dejará lluvias fuertes en estas regiones este lunes: Cenaos"
+      },
+      {
+        "name": "infobae.com",
+        "url": "https://www.infobae.com/honduras/2026/10/03/honduras-inundaciones-afectan-a-120-familias-y-dejan-70-vehiculos-atrapados-en-el-norte-de-pais/",
+        "title": "Las autoridades mantienen evaluaciones en San Pedro Sula para determinar los daños provocados por las lluvias. - Infobae"
+      },
+      {
+        "name": "infobae.com",
+        "url": "https://www.infobae.com/honduras/2026/10/05/lluvias-dejan-miles-de-afectados-inundaciones-y-rescates-en-varias-zonas-de-honduras/",
+        "title": "Lluvias dejan miles de afectados, inundaciones y rescates en varias zonas de Honduras - Infobae"
+      },
+      {
+        "name": "tunota.com",
+        "url": "https://www.tunota.com/honduras-hoy/rios-inundaciones-y-derrumbes-copeco-activa-nuevas-alertas-2026-10-10",
+        "title": "Ríos, inundaciones y derrumbes: Copeco activa nuevas alertas"
+      }
+    ],
+    "membersHash": "gdacs|HN#37b0b7ff",
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "gdacs-flood-fl-1104218": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Flooding in Argentina since 6 October 2026, from rivers swollen by heavy rains linked to El Niño. The Paraná was still rising on 16 October, with levels above evacuation marks in Ituzaingó. Corrientes province reported 222 people displaced in a Civil Defence survey on 16 October, and one death was reported. The latest report found is dated 17 October; no later report was found.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Corrientes",
+        "admin": "Corrientes",
+        "country": "AR",
+        "kind": "city",
+        "impact": "Water advanced over streets, sidewalks and homes in Anahí; 14 families self-evacuated"
+      },
+      {
+        "name": "Ituzaingó",
+        "admin": "Corrientes",
+        "country": "AR",
+        "kind": "town",
+        "impact": "Evacuations after Paraná reached 4.7 meters"
+      },
+      {
+        "name": "Itatí",
+        "admin": "Corrientes",
+        "country": "AR",
+        "kind": "town",
+        "impact": "On alert"
+      },
+      {
+        "name": "Concordia",
+        "admin": "Entre Ríos",
+        "country": "AR",
+        "kind": "city",
+        "impact": "Evacuated people due to Uruguay River"
+      },
+      {
+        "name": "Iguazú National Park",
+        "admin": "Misiones",
+        "country": "AR",
+        "kind": "site",
+        "impact": "Access closed as precaution due to high water"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Displaced",
+        "value": "222 people",
+        "sourceName": "eltribuno.com",
+        "sourceUrl": "https://www.eltribuno.com/nacionales/2026-10-16-20-46-0-inundaciones-en-corrientes-el-rio-parana-avanza-sobre-viviendas-y-hay-mas-de-220-desplazados"
+      },
+      {
+        "label": "Affected",
+        "value": "more than 400 people",
+        "sourceName": "elliberal.com.ar",
+        "sourceUrl": "https://www.elliberal.com.ar/nota/94588/2026/10/inundaciones-en-entre-rios-y-corrientes--evacuados-por-la-crecida-de-los-rios"
+      },
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "eltribuno.com",
+        "sourceUrl": "https://www.eltribuno.com/nacionales/2026-10-17-0-0-0-crecida-del-parana-el-agua-entro-a-corrientes-y-hay-cientos-de-evacuados"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "washingtontimes.com",
+        "url": "https://www.washingtontimes.com/news/2026/oct/16/el-nino-rains-flood-south-america-sending-residents-fleeing-cattle/",
+        "title": "El Nino rains flood South America, sending residents fleeing and cattle swimming"
+      },
+      {
+        "name": "lapoliticambiental.com.ar",
+        "url": "https://lapoliticambiental.com.ar/contenido/8189/corrientes-misiones-y-entre-rios-el-litoral-bajo-el-agua-por-la-furia-de-los-rio",
+        "title": "Corrientes, Misiones y Entre Ríos: El Litoral bajo el agua por la furia de los ríos Paraná y Uruguay y el impacto implacable de El Niño"
+      },
+      {
+        "name": "eltribuno.com",
+        "url": "https://www.eltribuno.com/nacionales/2026-10-16-20-46-0-inundaciones-en-corrientes-el-rio-parana-avanza-sobre-viviendas-y-hay-mas-de-220-desplazados",
+        "title": "Inundaciones en Corrientes: el río Paraná avanza sobre viviendas y hay más de 220 desplazados"
+      },
+      {
+        "name": "elonce.com",
+        "url": "https://www.elonce.com/sociedad/inundaciones-en-corrientes-el-rio-parana-avanza-sobre-viviendas-y-ya-hay-222-personas-desplazadas.htm",
+        "title": "Inundaciones en Corrientes: el río Paraná avanza sobre viviendas y ya hay más de 220 personas desplazadas"
+      }
+    ],
+    "membersHash": "gdacs|AR#3cb2fe75",
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "gdacs-flood-fl-1104240": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Heavy rain flooded roads and caused damage across the Seoul metropolitan area and Incheon on 18 October 2026. Seoul fire authorities had received 129 rain-related damage reports as of 5 p.m. that day, and Incheon received 78. Incheon International Airport canceled 40 flights. On 18 October an official said the rain appeared to be easing. No reports dated 19 or 20 October describing current flooding were found.",
+    "ongoing": false,
+    "places": [
+      {
+        "name": "Seodaemun District",
+        "admin": "Seoul",
+        "country": "KR",
+        "kind": "district",
+        "impact": "Jeungsan Bridge underpass closed to traffic due to flooding"
+      },
+      {
+        "name": "Eunpyeong District",
+        "admin": "Seoul",
+        "country": "KR",
+        "kind": "district",
+        "impact": "Area around Yeonsinnae Station flooded"
+      },
+      {
+        "name": "Gangnam District",
+        "admin": "Seoul",
+        "country": "KR",
+        "kind": "district",
+        "impact": "Tree fell onto road after gust of wind"
+      },
+      {
+        "name": "Gangbuk District",
+        "admin": "Seoul",
+        "country": "KR",
+        "kind": "district",
+        "impact": "Highest hourly rainfall in country, 53.5 mm"
+      },
+      {
+        "name": "Incheon",
+        "country": "KR",
+        "kind": "city",
+        "impact": "Damage reported throughout city"
+      },
+      {
+        "name": "Pyeongnae-dong",
+        "admin": "Gyeonggi Province",
+        "country": "KR",
+        "kind": "town",
+        "impact": "Water overflowed onto sidewalks on a road"
+      },
+      {
+        "name": "Goyang",
+        "admin": "Gyeonggi Province",
+        "country": "KR",
+        "kind": "city",
+        "impact": "Rainwater rose above ankle level"
+      },
+      {
+        "name": "Paju",
+        "admin": "Gyeonggi Province",
+        "country": "KR",
+        "kind": "city",
+        "impact": "Roads near Yadang Station submerged"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Seoul rain damage reports",
+        "value": "129 reports",
+        "sourceName": "en.sedaily.com",
+        "sourceUrl": "https://en.sedaily.com/society/2026/10/18/seoul-reports-129-rain-damage-cases-as-gangbuk-gets-535mm"
+      },
+      {
+        "label": "Incheon rain damage reports",
+        "value": "78 reports",
+        "sourceName": "koreajoongangdaily.com",
+        "sourceUrl": "https://www.koreajoongangdaily.com/korea/wind-and-rains-wreak-havoc-on-greater-seoul-as-roads-flood-trees-fall/12926232"
+      },
+      {
+        "label": "Nationwide damage reports",
+        "value": "more than 100 reports",
+        "sourceName": "news.sbs.co.kr",
+        "sourceUrl": "https://news.sbs.co.kr/english/article.do?news_id=N1008803160"
+      },
+      {
+        "label": "Flights canceled at Incheon…",
+        "value": "40 flights",
+        "sourceName": "koreajoongangdaily.com",
+        "sourceUrl": "https://www.koreajoongangdaily.com/korea/wind-and-rains-wreak-havoc-on-greater-seoul-as-roads-flood-trees-fall/12926232"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "news.sbs.co.kr",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008803016",
+        "title": "Flooding and Traffic Control Across Seoul As Fallen Leaves Block Drains Amid Heavy Rain"
+      },
+      {
+        "name": "news.sbs.co.kr",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008803160",
+        "title": "Heavy Rain Blinds Drivers, Floods Roads Across South Korea"
+      },
+      {
+        "name": "en.sedaily.com",
+        "url": "https://en.sedaily.com/society/2026/10/18/seoul-reports-129-rain-damage-cases-as-gangbuk-gets-535mm",
+        "title": "Seoul Reports 129 Rain Damage Cases as Gangbuk Gets 53.5mm in an Hour - Seoul Economic Daily"
+      },
+      {
+        "name": "koreajoongangdaily.com",
+        "url": "https://www.koreajoongangdaily.com/korea/wind-and-rains-wreak-havoc-on-greater-seoul-as-roads-flood-trees-fall/12926232",
+        "title": "Heavy rain and strong winds flood Seoul roads, cancel 40 Incheon Airport flights"
+      },
+      {
+        "name": "news.sbs.co.kr",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008803414",
+        "title": "Flash Downpours Turn Downtowns to Water; Gale Damage Reports Pile Up"
+      }
+    ],
+    "membersHash": "gdacs|KR#a6a6d960"
+  },
+  "gdacs-flood-fl-1104241": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Flooding in Thailand began in mid-September 2026, according to the notes, though an alert feed gives 18 October as the start. The Department of Disaster Prevention and Mitigation said on 17 October that 704,699 households, or 2,148,896 people, were affected across 20 provinces and Bangkok. AP reported 31 deaths nationwide on 5 October. On 20 October the Thai Meteorological Department issued a heavy-rain warning running through 25 October.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Pathum Thani",
+        "admin": "Central",
+        "country": "TH",
+        "kind": "region",
+        "impact": "216,276 households affected (17 Oct)"
+      },
+      {
+        "name": "Bangkok",
+        "country": "TH",
+        "kind": "city",
+        "impact": "About 329,000 households affected; four deaths"
+      },
+      {
+        "name": "Samut Prakan",
+        "admin": "Central",
+        "country": "TH",
+        "kind": "region",
+        "impact": "225,442 households affected across six districts"
+      },
+      {
+        "name": "Phra Nakhon Si Ayutthaya",
+        "admin": "Central",
+        "country": "TH",
+        "kind": "region",
+        "impact": "67,360 households affected across 16 districts"
+      },
+      {
+        "name": "Suphan Buri",
+        "admin": "Central",
+        "country": "TH",
+        "kind": "region",
+        "impact": "21,758 households affected across eight districts"
+      },
+      {
+        "name": "Phitsanulok",
+        "admin": "North",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Flooding recorded"
+      },
+      {
+        "name": "Nakhon Sawan",
+        "admin": "North",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Flooding recorded"
+      },
+      {
+        "name": "Nakhon Nayok",
+        "admin": "East",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Flooding recorded"
+      },
+      {
+        "name": "Prachin Buri",
+        "admin": "East",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Flooding recorded"
+      },
+      {
+        "name": "Chachoengsao",
+        "admin": "East",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Flooding recorded"
+      },
+      {
+        "name": "Chon Buri",
+        "admin": "East",
+        "country": "TH",
+        "kind": "region",
+        "impact": "Flooding recorded"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Households affected",
+        "value": "704,699 households",
+        "sourceName": "nationthailand.com",
+        "sourceUrl": "https://www.nationthailand.com/news/general/40072407"
+      },
+      {
+        "label": "People affected",
+        "value": "2,148,896 people",
+        "sourceName": "nationthailand.com",
+        "sourceUrl": "https://www.nationthailand.com/news/general/40072407"
+      },
+      {
+        "label": "Deaths",
+        "value": "31",
+        "sourceName": "abcnews.com",
+        "sourceUrl": "https://abcnews.com/International/wireStory/thailand-braces-rain-death-toll-recent-flooding-hits-136997352"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "nationthailand.com",
+        "url": "https://www.nationthailand.com/news/general/40072407",
+        "title": "Over 2.1 million people across 20 provinces and Bangkok remain affected by floods"
+      },
+      {
+        "name": "nationthailand.com",
+        "url": "https://www.nationthailand.com/news/general/40072495",
+        "title": "Thailand faces heavy rain and flood risks until October 25"
+      },
+      {
+        "name": "abcnews.com",
+        "url": "https://abcnews.com/International/wireStory/thailand-braces-rain-death-toll-recent-flooding-hits-136997352",
+        "title": "Thailand braces for more rain as death toll from recent flooding hits 31 - ABC News"
+      },
+      {
+        "name": "nationthailand.com",
+        "url": "https://www.nationthailand.com/news/general/40072128",
+        "title": "Thai floods still affect 3.14 million people in 21 provinces and Bangkok as of October 11"
+      }
+    ],
+    "membersHash": "gdacs|TH#a7a6daf3",
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -821,7 +1415,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-volcano-vo-1000152": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -913,7 +1507,99 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "gdacs-wildfire-wf-1032639": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "allafrica.com",
+        "url": "https://allafrica.com/stories/202610190183.html",
+        "title": "Malawi to Roast in 42c Heatwave As Experts Warn Lives Could Be At Risk - allAfrica.com"
+      },
+      {
+        "name": "gdacs.org",
+        "url": "https://www.gdacs.org/Wildfires/report.aspx?eventtype=WF&eventid=1030042&episodeid=1",
+        "title": "Overall Green Forest fire in Zambia from 21 Jul 2026 00:00 UTC to 02 Aug 2026 00:00 UTC"
+      }
+    ],
+    "membersHash": "gdacs|MW,ZM#75f15591",
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "gdacs-wildfire-wf-1032653": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#ebe304c9",
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "gdacs-wildfire-wf-1032672": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "gdacs.org",
+        "url": "https://gdacs.org/",
+        "title": "GDACS - Global Disaster Awareness and Coordination System"
+      },
+      {
+        "name": "opais.co.mz",
+        "url": "https://opais.co.mz/depressao-tropical-forma-se-no-sudoeste-do-oceano-indico/",
+        "title": "Depressão tropical forma-se no sudoeste do oceano índico - O País - A verdade como notícia"
+      }
+    ],
+    "membersHash": "gdacs|MZ#f2e78cfc",
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "gdacs-wildfire-wf-1032677": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Forest fires in Mozambique started on 5 October 2026. The GDACS forest-fire listing records a burned area of 46,043 hectares, dated 18 October 2026. The notes do not name the affected locations, and no source says whether the fire is still burning as of 20 October 2026.",
+    "ongoing": true,
+    "places": [],
+    "figures": [
+      {
+        "label": "Burned area",
+        "value": "46,043 ha",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://gdacs.org/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "gdacs.org",
+        "url": "https://gdacs.org/",
+        "title": "GDACS - Global Disaster Awareness and Coordination System"
+      },
+      {
+        "name": "mznews.co.mz",
+        "url": "https://mznews.co.mz/manica-perde-anualmente-cerca-de-35-mil-hectares-de-floresta-devido-as-queimadas-descontroladas/",
+        "title": "Manica perde anualmente cerca de 35 mil hectares de floresta devido às queimadas descontroladas"
+      }
+    ],
+    "membersHash": "gdacs|MZ#efe78843",
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "ifrc-earthquake-7990": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -1010,7 +1696,7 @@
       }
     ],
     "membersHash": "ifrc|VE#4aa9fe04",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "ifrc-earthquake-8055": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1110,7 +1796,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1181,7 +1867,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -1292,7 +1978,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "ifrc-flood-8025": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1374,7 +2060,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "ifrc-flood-8050": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -1448,7 +2134,81 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "ifrc-flood-8052": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Flooding and landslides hit Limbe in Fako Division, South West Region, Cameroon, from 5 August 2026. At least three people were killed and six houses collapsed. Roads and bridges were damaged. The latest Fako-specific report found is dated 27 August 2026, and the notes do not say the effects have ended.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Limbe",
+        "admin": "South West Region",
+        "country": "CM",
+        "kind": "city",
+        "impact": "Landslide and flooding; several roads impassable"
+      },
+      {
+        "name": "Mbende",
+        "admin": "Fako Division",
+        "country": "CM",
+        "kind": "district",
+        "impact": "Landslide hit hillside neighbourhood; three killed"
+      },
+      {
+        "name": "Busumbu",
+        "admin": "Fako Division",
+        "country": "CM",
+        "kind": "district",
+        "impact": "Five houses collapsed"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "at least three",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/africa/20260806/382d7f1535d14787bc7c0ffc307abc8e/c.html"
+      },
+      {
+        "label": "Houses collapsed",
+        "value": "six",
+        "sourceName": "cameroon-tribune.cm",
+        "sourceUrl": "http://www.cameroon-tribune.cm/article.html/79608/fr.html/limbe-human-casualties-huge-material-damages-recorded"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "greenpeace.org",
+        "url": "https://www.greenpeace.org/africa/en/blog/61512/three-lives-lost-in-limbe-cameroon-cannot-keep-meeting-the-rains-with-bare-hands/",
+        "title": "Three lives lost in Limbe: Cameroon cannot keep meeting the rains with bare hands - Greenpeace Africa"
+      },
+      {
+        "name": "learning.foundation",
+        "url": "https://www.learning.foundation/fr/2026/08/25/analyse-rapide-du-genre-inondations-et-glissement-de-terrain-division-du-fako-sud-ouest-du-cameroun-aout-2026/",
+        "title": "Analyse rapide du genre : Inondations et glissement de terrain, Division du Fako, Sud-Ouest du Cameroun, août 2026"
+      },
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/africa/20260806/382d7f1535d14787bc7c0ffc307abc8e/c.html",
+        "title": "Landslide kills 3 in Cameroon-Xinhua"
+      },
+      {
+        "name": "cameroon-tribune.cm",
+        "url": "http://www.cameroon-tribune.cm/article.html/79608/fr.html/limbe-human-casualties-huge-material-damages-recorded",
+        "title": "Limbe: Human Casualties, Huge Material Damages Recorded"
+      },
+      {
+        "name": "panafricanvisions.com",
+        "url": "https://panafricanvisions.com/2026/08/cameroon-three-killed-as-torrential-rains-trigger-floods-landslides-in-limbe/",
+        "title": "Cameroon: Three Killed as Torrential Rains Trigger Floods, Landslides in Limbe - PAN AFRICAN VISIONS"
+      }
+    ],
+    "membersHash": "ifrc|CM#43a7e986",
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1525,7 +2285,104 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
+  },
+  "ifrc-flood-appeal-mdrgh023": {
+    "at": "2026-10-20T14:35:40.688Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "Heavy rains and flooding hit parts of Ghana in late June and early July 2026, including the capital Accra. The IFRC reported 34 deaths and about 89,000 people affected in an update dated 7 August 2026. The Red Cross launched a six-month response to support 30,000 people, and that operation is ongoing.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Accra",
+        "admin": "Greater Accra",
+        "country": "GH",
+        "kind": "city",
+        "impact": "Flooded; neighbourhoods under water"
+      },
+      {
+        "name": "Tema West",
+        "admin": "Greater Accra",
+        "country": "GH",
+        "kind": "district",
+        "impact": "Three deaths; 3,450 displaced"
+      },
+      {
+        "name": "Central and Western",
+        "country": "GH",
+        "kind": "region",
+        "impact": "More than 7,000 people homeless"
+      },
+      {
+        "name": "Volta",
+        "country": "GH",
+        "kind": "region",
+        "impact": "Named as hardest hit"
+      },
+      {
+        "name": "Western North",
+        "country": "GH",
+        "kind": "region",
+        "impact": "Named as hardest hit"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "34",
+        "sourceName": "graphic.com.gh",
+        "sourceUrl": "https://www.graphic.com.gh/news/general-news/ghana-news-red-cross-launches-ghc8-3m-flood-relief-operation.html"
+      },
+      {
+        "label": "Missing",
+        "value": "7",
+        "sourceName": "graphic.com.gh",
+        "sourceUrl": "https://www.graphic.com.gh/news/general-news/ghana-news-red-cross-launches-ghc8-3m-flood-relief-operation.html"
+      },
+      {
+        "label": "People affected",
+        "value": "about 89,000",
+        "sourceName": "graphic.com.gh",
+        "sourceUrl": "https://www.graphic.com.gh/news/general-news/ghana-news-red-cross-launches-ghc8-3m-flood-relief-operation.html"
+      },
+      {
+        "label": "Displaced",
+        "value": "more than 91,000",
+        "sourceName": "reliefweb.int",
+        "sourceUrl": "https://reliefweb.int/report/ghana/ghana-floods-dref-operational-update-mdrgh018"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "graphic.com.gh",
+        "url": "https://www.graphic.com.gh/news/general-news/ghana-news-red-cross-launches-ghc8-3m-flood-relief-operation.html",
+        "title": "Red Cross launches GH¢8.3m flood relief operation - Graphic Online"
+      },
+      {
+        "name": "myjoyonline.com",
+        "url": "https://www.myjoyonline.com/ghana-red-cross-launches-gh%C2%A28-3m-emergency-flood-response-to-assist-30000-victims/",
+        "title": "Ghana Red Cross launches GH¢8.3m emergency flood response to assist 30,000 victims - MyJoyOnline"
+      },
+      {
+        "name": "usnews.com",
+        "url": "https://www.usnews.com/news/world/articles/2026-06-30/heavy-rains-hit-ghana-killing-at-least-12-in-floods",
+        "title": "Heavy Rains Hit Ghana, Killing at Least 12 in Floods"
+      },
+      {
+        "name": "ghanabusinessnews.com",
+        "url": "https://www.ghanabusinessnews.com/2026/07/30/ghana-after-the-floods-comes-super-el-nino-and-potential-droughts/",
+        "title": "Ghana: After the floods comes Super El Niño and potential droughts - Ghana Business News"
+      },
+      {
+        "name": "global-flood.emergency.copernicus.eu",
+        "url": "https://global-flood.emergency.copernicus.eu/news/250-floods-and-landslides-in-ghana-june-2026/",
+        "title": "Floods and Landslides in Ghana, June 2026"
+      }
+    ],
+    "membersHash": "ifrc|GH#68f273f0",
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "ifrc-landslide-8111": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1623,7 +2480,7 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   },
   "usgs-earthquake-us7000q1": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -1691,6 +2548,6 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-20T08:54:22.411Z"
+    "seen": "2026-10-20T14:35:40.688Z"
   }
 }
