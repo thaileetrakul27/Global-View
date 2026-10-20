@@ -321,7 +321,10 @@ export default function Globe({
   return (
     <div
       ref={wrapRef}
-      className="h-full w-full"
+      // isolate: the marker renderer numbers each marker's z-index by
+      // distance, up to the marker count, so without a stacking context of
+      // their own the markers would rise above the panels and the sheet.
+      className="isolate h-full w-full"
       style={{ cursor: hovered || hoveredDisaster ? "pointer" : "grab" }}
       onPointerMove={(e) => {
         pointerRef.current = e.pointerType === "touch" ? null : { x: e.clientX, y: e.clientY };

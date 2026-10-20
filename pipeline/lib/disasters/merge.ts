@@ -424,6 +424,25 @@ export function quakeMagnitude(e: Pick<SourceEvent, "severityText" | "title">): 
   return Number.isFinite(v) && v > 0 && v < 10 ? v : null;
 }
 
+/** Two feeds' reports of one shock are this close in time, distance and magnitude. */
+export const SAME_SHOCK_MINUTES = 10;
+export const SAME_SHOCK_KM = 100;
+export const SAME_SHOCK_MAGNITUDE = 0.5;
+
+/**
+ * True when two quake reports are one shock seen by two feeds: different
+ * feeds, minutes apart, close together and of about the same magnitude.
+ * Stricter than quakesClose, which also links a large quake's aftershocks
+ * of the first hours.
+ */
+export function sameShock(a: SourceEvent, b: SourceEvent): boolean {
+  if (a.source === b.source) return false;
+  const ma = quakeMagnitude(a);
+  const mb = quakeMagnitude(b);
+  if (ma !== null && mb !== null && Math.abs(ma - mb) > SAME_SHOCK_MAGNITUDE) return false;
+  return Math.abs(ms(a.started) - ms(b.started)) <= SAME_SHOCK_MINUTES * 60_000 && distanceKm(a, b) <= SAME_SHOCK_KM;
+}
+
 /** Gardner-Knopoff aftershock distance for a main shock of magnitude m: about 53 km at M6, 71 km at M7, 86 km at M7.7. */
 export function aftershockKm(m: number): number {
   return 10 ** (0.1238 * m + 0.983);
@@ -435,7 +454,7 @@ export function aftershockKm(m: number): number {
  * shocks first; a weaker located quake within the main shock's
  * Gardner-Knopoff distance, from FORESHOCK_DAYS before it to AFTERSHOCK_DAYS
  * after it, is absorbed. Another feed's report of the main shock itself
- * (quakesClose) is never absorbed: it joins in clustering as usual.
+ * (sameShock) is never absorbed: it joins in clustering as usual.
  * Returns the events left to cluster and, per main shock's member key, the
  * reports folded into it.
  */
@@ -452,7 +471,7 @@ export function groupSequences(events: SourceEvent[]): { kept: SourceEvent[]; ab
     const start = ms(main.started);
     for (const other of quakes) {
       if (other === main || gone.has(other) || absorbed.has(memberKey(other))) continue;
-      if (quakeMagnitude(other)! > mag || quakesClose(main, other)) continue;
+      if (quakeMagnitude(other)! > mag || sameShock(main, other)) continue;
       const dt = ms(other.started) - start;
       if (dt < -FORESHOCK_DAYS * DAY_MS || dt > AFTERSHOCK_DAYS * DAY_MS) continue;
       if (distanceKm(main, other) > km) continue;
@@ -474,7 +493,7 @@ export function withAftershocks(d: Disaster, members: SourceEvent[], absorbed: M
   const keys = [...new Set([...d.members, ...folded.map(memberKey)])].sort(compareText);
   const updated = new Date(Math.max(ms(d.updated), ...folded.map((e) => ms(e.updated)))).toISOString();
   // One shock reported by two feeds counts once: group by epicentre and time.
-  const shocks = folded.filter((e, i) => !folded.slice(0, i).some((x) => quakesClose(x, e)));
+  const shocks = folded.filter((e, i) => !folded.slice(0, i).some((x) => sameShock(x, e)));
   const strongest = [...shocks].sort((a, b) => quakeMagnitude(b)! - quakeMagnitude(a)!)[0];
   const later = shocks.filter((e) => ms(e.started) >= ms(d.started)).length;
   const label = later === shocks.length ? "Aftershocks" : "Related quakes";

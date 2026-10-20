@@ -5,6 +5,7 @@ import { circlePolygon } from "./geo";
 import {
   aftershockKm,
   groupSequences,
+  sameShock,
   quakeMagnitude,
   withAftershocks,
   APART_KM,
@@ -902,9 +903,9 @@ describe("mergeEvents", () => {
       "gdacs-earthquake-eq-1572622",
       "gdacs-earthquake-eq-1572503",
       "ifrc-flood-8027",
-      "usgs-earthquake-us6000u18x", // the aftershock, 9.9 days since its last update
     ]);
-    expect(mergeEvents(all, null, "2026-10-20T02:00:00Z").map((d) => d.id)).not.toContain("usgs-earthquake-us6000u18x");
+    // The M5.8 aftershock folds into the M7.7 instead of standing alone.
+    expect(out.find((d) => d.id === "gdacs-earthquake-eq-1570339")?.members).toContain("usgs:us6000u18x");
   });
 
   it("drops events past their window", () => {
@@ -1015,12 +1016,13 @@ describe("mergeEvents on the live feeds of 19 October 2026", () => {
     const out = mergeEvents(fixture.events, null, fixture.now);
     const ids = out.map((d) => d.id);
     expect(ids.slice(0, 4)).toEqual(["gdacs-cyclone-tc-1001338", "gdacs-earthquake-eq-1570339", "gdacs-cyclone-tc-1001337", "gdacs-cyclone-tc-1001339"]);
-    // Aftershocks with a yellow PAGER alert (significant) stay for 21 days, as USGS lists them.
-    expect(ids).toContain("usgs-earthquake-us6000u18x");
-    expect(ids).toContain("usgs-earthquake-us6000u19w");
+    // The aftershocks fold into the M7.7's disaster rather than showing as their own.
+    expect(ids).not.toContain("usgs-earthquake-us6000u18x");
+    expect(ids).not.toContain("usgs-earthquake-us6000u19w");
+    const sequence = out.find((d) => d.id === "gdacs-earthquake-eq-1570339")!;
+    expect(sequence.members).toEqual(expect.arrayContaining(["usgs:us6000u18x", "usgs:us6000u19w"]));
+    expect(sequence.figures.some((f) => f.label === "Aftershocks")).toBe(true);
     const later = mergeEvents(fixture.events, null, "2026-10-31T00:00:00Z").map((d) => d.id);
-    expect(later).not.toContain("usgs-earthquake-us6000u18x");
-    expect(later).not.toContain("usgs-earthquake-us6000u19w");
     // The M7.7 (severe, with an open IFRC appeal) is still on the map then.
     expect(later).toContain("gdacs-earthquake-eq-1570339");
     // IFRC's Assam appeal is old but open, so it stays.
@@ -1080,6 +1082,25 @@ describe("earthquake sequences", () => {
   it("leaves a disaster without folded reports unchanged", () => {
     const d = dis({ id: "x", members: ["usgs:solo"] });
     expect(withAftershocks(d, [quake("usgs", "solo", 6, 0, 0, 1)], new Map())).toBe(d);
+  });
+
+  it("folds aftershocks of the first hours too, telling them from another feed's copy of the main shock (live Panama data)", () => {
+    const at = (iso: string) => ({ started: iso, updated: iso });
+    const m77 = { ...quake("usgs", "us6000u18k", 7.7, 7.5868, -80.769, 0, 3), ...at("2026-10-09T17:56:06.036Z") };
+    const g77 = { ...quake("gdacs", "EQ-1570339", 7.7, 7.5868, -80.769, 0, 3), ...at("2026-10-09T17:56:06.000Z") };
+    const a58 = { ...quake("usgs", "us6000u18x", 5.8, 7.4362, -80.4012, 0), ...at("2026-10-09T18:37:46.146Z") };
+    const a66 = { ...quake("usgs", "us6000u19w", 6.6, 7.7013, -81.444, 0, 2), ...at("2026-10-09T20:25:40.656Z") };
+    const g61 = { ...quake("gdacs", "EQ-1571161", 6.1, 7.7028, -81.4989, 0), ...at("2026-10-12T23:20:36.000Z") };
+    const u61 = { ...quake("usgs", "us6000u1wn", 6.1, 7.6896, -81.4896, 0), ...at("2026-10-12T23:20:36.003Z") };
+    expect(sameShock(m77, g77)).toBe(true);
+    expect(sameShock(m77, a58)).toBe(false);
+    expect(sameShock(g61, u61)).toBe(true);
+    const { kept, absorbed } = groupSequences([m77, g77, a58, a66, g61, u61]);
+    expect(kept.map(memberKeyOf).sort()).toEqual(["gdacs:EQ-1570339", "usgs:us6000u18k"]);
+    expect([...absorbed.values()].flat().map(memberKeyOf).sort()).toEqual(["gdacs:EQ-1571161", "usgs:us6000u18x", "usgs:us6000u19w", "usgs:us6000u1wn"]);
+    const out = mergeEvents([m77, g77, a58, a66, g61, u61], null, "2026-10-20T12:00:00.000Z");
+    expect(out).toHaveLength(1);
+    expect(out[0].figures.find((f) => f.label === "Aftershocks")?.value).toBe("3, strongest M6.6");
   });
 
   it("does not fold a stronger later quake into a weaker earlier one", () => {
