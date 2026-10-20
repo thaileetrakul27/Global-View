@@ -103,7 +103,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "gdacs-cyclone-tc-1001335": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -208,7 +208,7 @@
       }
     ],
     "membersHash": "gdacs|MX#4a2ce888",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "gdacs-cyclone-tc-1001338": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -267,7 +267,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#afb26aec",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -287,100 +287,147 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,NO,PL,RO,RS,RU,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-20T08:54:22.411Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A drought affecting Central America began on 21 April 2026 and is ongoing as of 20 October 2026. Honduras has red alerts in 103 municipalities across eight departments. El Salvador has had a national red alert since 25 August. Guatemala requested a red drought alert for 15 municipalities in the Trifinio Region. Red Cross early action targets more than 22,000 people in El Salvador, Guatemala and Colombia.",
+    "searches": 4,
+    "summary": "Drought across Central America since 21 April 2026, mainly in the Dry Corridor. Honduras's disaster agency COPECO said on 5 October that the drought was not over, with 103 municipalities on red alert. Maize losses and food insecurity are reported in Honduras and Guatemala. Ground-level crop assessments are ongoing. The GDACS end date of 25 September is unconfirmed.",
     "ongoing": true,
     "places": [
       {
-        "name": "Piraera",
+        "name": "Marcovia",
+        "country": "HN",
+        "kind": "district",
+        "impact": "15,000 families hit by drought and crop loss"
+      },
+      {
+        "name": "Choluteca",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "Comayagua",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "El Paraíso",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "Francisco Morazán",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "La Paz",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "Valle",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "Intibucá",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "Lempira",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "Copán",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "San Lorenzo",
         "country": "HN",
         "kind": "town",
-        "impact": "Maize and bean harvests failed"
+        "impact": "livestock dying"
       },
       {
-        "name": "Trifinio Region",
+        "name": "Chiquimula",
         "country": "GT",
         "kind": "region",
-        "impact": "Red drought alert requested for 15 municipalities"
+        "impact": "farmers saved under 3% of plantings"
       },
       {
-        "name": "Lake Güija",
+        "name": "Jalapa",
         "country": "GT",
-        "kind": "site",
-        "impact": "Water level has dropped"
-      },
-      {
-        "name": "Morazán",
-        "country": "SV",
         "kind": "region",
-        "impact": "Red Cross drought aid operating"
+        "impact": "farmers saved under 3% of plantings"
       },
       {
-        "name": "La Unión",
-        "country": "SV",
+        "name": "Huehuetenango",
+        "country": "GT",
         "kind": "region",
-        "impact": "Red Cross drought aid operating"
-      },
-      {
-        "name": "Guatajiagua",
-        "country": "SV",
-        "kind": "town",
-        "impact": "Red Cross aid reaches families"
-      },
-      {
-        "name": "Chilanga",
-        "country": "SV",
-        "kind": "town",
-        "impact": "Red Cross aid reaches families"
-      },
-      {
-        "name": "Lolotiquillo",
-        "country": "SV",
-        "kind": "town",
-        "impact": "Red Cross aid reaches families"
-      },
-      {
-        "name": "Cacaopera",
-        "country": "SV",
-        "kind": "town",
-        "impact": "Red Cross aid reaches families"
+        "impact": "reduced water access"
       }
     ],
     "figures": [
       {
-        "label": "People in need",
+        "label": "People under drought alert in Honduras",
+        "value": "5.6 million people",
+        "sourceName": "newsinamerica.com",
+        "sourceUrl": "https://newsinamerica.com/pdcc/boletin/2026/copeco-alerta-que-5-6-millones-de-hondurenos-continuan-en-riesgo-por-sequia/"
+      },
+      {
+        "label": "People who could need help in Honduras",
         "value": "708,000 people",
+        "sourceName": "hondudiario.com",
+        "sourceUrl": "https://www.hondudiario.com/2026/09/24/honduras-y-onu-lanzan-llamado-humanitario-por-60-millones-ante-emergencia-por-sequia/"
+      },
+      {
+        "label": "Households with maize destroyed in…",
+        "value": "36,431 households",
         "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
+        "sourceUrl": "https://www.riotimesonline.com/guatemala-drought-maize-dry-corridor-2026/"
       },
       {
-        "label": "People targeted by appeal",
-        "value": "538,000 people",
+        "label": "Acute food insecurity",
+        "value": "3.2 million people",
         "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
+        "sourceUrl": "https://www.riotimesonline.com/el-nino-food-crisis-honduras-guatemala-2026/"
       },
       {
-        "label": "Families receiving priority Red Cross…",
-        "value": "more than 600 families",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/el-salvador/2026/08/27/la-cruz-roja-activa-ayudas-anticipadas-por-la-sequia-en-zonas-del-corredor-seco-de-el-salvador/"
-      },
-      {
-        "label": "People targeted by Red Cross early…",
-        "value": "more than 22,000 people",
-        "sourceName": "ifrc.org",
-        "sourceUrl": "https://www.ifrc.org/press-release/red-cross-activates-early-action-protocols-first-signs-drought-el-salvador-guatemala"
+        "label": "People who could lack enough food in…",
+        "value": "16 million people",
+        "sourceName": "newsroompanama.com",
+        "sourceUrl": "https://newsroompanama.com/2026/09/16/el-nino-drought-could-leave-16-million-without-enough-food-throughout-latin-america/"
       }
     ],
     "donation": [],
-    "sources": [],
-    "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV#0d2a1d89",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "sources": [
+      {
+        "name": "latinpost.com",
+        "url": "https://www.latinpost.com/articles/167650/20261019/central-american-arabica-premiums-reach-3-year-high-what-dry-corridor-crisis-means-global.htm",
+        "title": "Central American Arabica Premiums Reach a 3-Year High: What the Dry Corridor Crisis Means for Global Coffee Prices"
+      },
+      {
+        "name": "newsinamerica.com",
+        "url": "https://newsinamerica.com/pdcc/boletin/2026/copeco-alerta-que-5-6-millones-de-hondurenos-continuan-en-riesgo-por-sequia/",
+        "title": "Copeco alerta que 5.6 millones de hondureños continúan en riesgo por sequía • PDCC"
+      }
+    ],
+    "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -430,65 +477,98 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,DJ,ER,ET,KE,NE,NG,SD,SO,SS,TD#d3aabe2f",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "gdacs-drought-dr-1027465": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-20T08:54:22.411Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "A drought affecting Uganda, Kenya and Tanzania began on 21 May 2026, according to the GDACS feed. As of 19 October 2026, the IFRC reported drought effects still visible in Karamoja, Uganda, with water sources dried up or very low. Forecast above-normal October–December rains could bring flooding and landslides.",
+    "searches": 3,
+    "summary": "Prolonged dry conditions have caused crop failure and food insecurity in Uganda's Karamoja sub-region, where some families report going days without food. Reuters links the drought to lower Ugandan coffee harvests, and August coffee exports fell 13.7% year on year. Northern Burundi also reported crop losses. A forecast of wetter October to December conditions may ease pasture and water shortages. Reports as of mid-October 2026 describe the drought as ongoing.",
     "ongoing": true,
     "places": [
       {
-        "name": "Karamoja",
+        "name": "Nabilatuk",
+        "admin": "Karamoja",
         "country": "UG",
-        "kind": "region",
-        "impact": "drought-affected, water and pasture shortages"
+        "kind": "district",
+        "impact": "Crops failed, livestock lacked pasture and water"
       },
       {
-        "name": "Northern Uganda",
+        "name": "Nakapiripirit",
+        "admin": "Karamoja",
         "country": "UG",
-        "kind": "region",
-        "impact": "among driest conditions on record"
+        "kind": "district",
+        "impact": "Crops failed, livestock lacked pasture and water"
       },
       {
-        "name": "Eastern Uganda",
+        "name": "Amudat",
+        "admin": "Karamoja",
         "country": "UG",
-        "kind": "region",
-        "impact": "among driest conditions on record"
+        "kind": "district",
+        "impact": "Crops failed, livestock lacked pasture and water"
       },
       {
-        "name": "Western Kenya",
-        "country": "KE",
+        "name": "Kotido",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "Crops failed, livestock lacked pasture and water"
+      },
+      {
+        "name": "Karenga",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "Crops failed, livestock lacked pasture and water"
+      },
+      {
+        "name": "Kaabong",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "Crops failed, livestock lacked pasture and water"
+      },
+      {
+        "name": "Napak",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "Crops failed, livestock lacked pasture and water"
+      },
+      {
+        "name": "Abim",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "Crops failed, livestock lacked pasture and water"
+      },
+      {
+        "name": "Northern Lowlands",
+        "country": "BI",
         "kind": "region",
-        "impact": "forecast maize yields up to 36% below average"
+        "impact": "Bean losses estimated at 40–50%"
       }
     ],
     "figures": [
       {
-        "label": "People affected by drought receiving…",
-        "value": "more than 5,000 people",
+        "label": "Food insecure (Crisis or worse)",
+        "value": "3.6 million people",
         "sourceName": "allafrica.com",
-        "sourceUrl": "https://allafrica.com/stories/202610190219.html"
+        "sourceUrl": "https://allafrica.com/stories/202610090203.html"
       },
       {
-        "label": "People targeted for emergency food…",
-        "value": "more than 2,000 people",
-        "sourceName": "livingchurch.org",
-        "sourceUrl": "https://livingchurch.org/news/news-anglican-communion/church-steps-in-as-hunger-devastates-northeastern-uganda/"
+        "label": "Coffee exports, August 2026",
+        "value": "737,766 bags (down 13.7% year on year)",
+        "sourceName": "cnbcafrica.com",
+        "sourceUrl": "https://www.cnbcafrica.com/2026/uganda-august-coffee-shipments-down-14-on-drought"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "allafrica.com",
-        "url": "https://allafrica.com/stories/202610190219.html",
-        "title": "Uganda: Resilience Starts At Home - Preparing Communities for El Niño Before Disaster Strikes - allAfrica.com"
-      },
-      {
-        "name": "peopledaily.digital",
-        "url": "https://peopledaily.digital/news/east-africa-drought-hit-crops-now-face-el-nino-flood-threat-report",
-        "title": "East Africa drought-hit crops now face El Niño flood threat"
+        "name": "monitor.co.ug",
+        "url": "https://www.monitor.co.ug/uganda/news/national/dry-spell-leaves-karamoja-region-families-starving-5631472",
+        "title": "Dry spell leaves Karamoja region families starving"
       },
       {
         "name": "birrmetrics.com",
@@ -496,8 +576,36 @@
         "title": "East Africa Dry Season Food Price Shock"
       }
     ],
-    "membersHash": "gdacs|CD,KE,TZ,UG#0966275b",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "membersHash": "gdacs|BI,CD,KE,RW,TZ,UG#0966275b",
+    "seen": "2026-10-20T08:54:22.411Z"
+  },
+  "gdacs-earthquake-eq-1570077": {
+    "at": "2026-10-20T08:54:22.411Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "A magnitude 6.3 earthquake struck 102 km northeast of Norsup, Vanuatu, on 8 October 2026, according to USGS. USGS issued a Green alert, indicating a low likelihood of casualties and damage. The research notes found no reports of deaths, injuries, damage or evacuations. The latest source, dated 9 October 2026, reports no ongoing effects.",
+    "ongoing": false,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "watchers.news",
+        "url": "https://watchers.news/2026/10/08/strong-and-shallow-m6-3-earthquake-hits-vanuatu-3/",
+        "title": "Strong and shallow M6.3 earthquake hits Vanuatu - The Watchers"
+      },
+      {
+        "name": "earthquakeinsights.substack.com",
+        "url": "https://earthquakeinsights.substack.com/p/magnitude-63-earthquake-strikes-vanuatu",
+        "title": "Magnitude 6.3 earthquake strikes Vanuatu"
+      },
+      {
+        "name": "stuff.co.nz",
+        "url": "https://www.stuff.co.nz/nz-news/361048768/63-earthquake-strikes-northwest-vanuatu",
+        "title": "6.3 earthquake strikes northwest of Vanuatu"
+      }
+    ],
+    "membersHash": "gdacs,usgs|VU#c13bf69f"
   },
   "gdacs-earthquake-eq-1570339": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -632,7 +740,180 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#988157ed",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
+  },
+  "gdacs-flood-fl-1104121": {
+    "at": "2026-10-20T08:54:22.411Z",
+    "model": "claude-haiku-5-5",
+    "searches": 1,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|IN#057be8c4",
+    "seen": "2026-10-20T08:54:22.411Z"
+  },
+  "gdacs-volcano-vo-1000151": {
+    "at": "2026-10-20T08:54:22.411Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Taal Volcano in Batangas, Philippines, erupted on 8 October 2026 at 6:06 p.m. Ashfall in Agoncillo led to evacuations, including 29 families. On 20 October, PHIVOLCS recorded a minor phreatic eruption and kept Alert Level 1. Plumes reached 600 meters above the crater. Entry to Taal Volcano Island remains prohibited because it is a permanent danger zone.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Taal Volcano Island",
+        "admin": "Batangas",
+        "country": "PH",
+        "kind": "site",
+        "impact": "Main Crater eruptions; entry prohibited"
+      },
+      {
+        "name": "Agoncillo",
+        "admin": "Batangas",
+        "country": "PH",
+        "kind": "town",
+        "impact": "Ashfall; residents evacuated"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Families evacuated",
+        "value": "29 families",
+        "sourceName": "newsinfo.inquirer.net",
+        "sourceUrl": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption"
+      },
+      {
+        "label": "Individuals evacuated",
+        "value": "107 individuals",
+        "sourceName": "newsinfo.inquirer.net",
+        "sourceUrl": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption"
+      },
+      {
+        "label": "Sulfur dioxide",
+        "value": "407 tonnes per day",
+        "sourceName": "tribune.net.ph",
+        "sourceUrl": "https://tribune.net.ph/2026/10/20/taal-records-fresh-eruption-remains-at-alert-level-1"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "tribune.net.ph",
+        "url": "https://tribune.net.ph/2026/10/20/taal-records-fresh-eruption-remains-at-alert-level-1",
+        "title": "Taal Volcano Erupts Again: Alert Level 1 Maintained Amid Volcanic Unrest"
+      },
+      {
+        "name": "mb.com.ph",
+        "url": "https://mb.com.ph/2026/10/19/phivolcs-logs-2-minor-phreatic-eruptions-at-taal-volcano-in-past-24-hours",
+        "title": "Manila Bulletin - Phivolcs logs 2 minor phreatic eruptions at Taal Volcano in past 24 hours"
+      },
+      {
+        "name": "astig.ph",
+        "url": "https://astig.ph/taal-volcano-eruption-agoncillo-batangas-ashfall-2026/",
+        "title": "Taal Volcano erupted for five minutes, sending ash over Batangas and forcing Agoncillo families to evacuate"
+      },
+      {
+        "name": "mb.com.ph",
+        "url": "https://mb.com.ph/2026/10/08/phivolcs-records-minor-phreatomagmatic-eruption-at-taal-volcano",
+        "title": "Manila Bulletin - Phivolcs records minor phreatomagmatic eruption at Taal Volcano"
+      }
+    ],
+    "membersHash": "gdacs|PH#ffdc6edb",
+    "seen": "2026-10-20T08:54:22.411Z"
+  },
+  "gdacs-volcano-vo-1000152": {
+    "at": "2026-10-20T08:54:22.411Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "On 10 October 2026, Kanlaon Volcano on Negros Island, Philippines, had a moderately explosive eruption, followed by two ash emission events on 11 October. As of 12 October, PHIVOLCS kept Alert Level 2 and said another explosive eruption was possible. Ashfall and sulfur odor were reported in parts of Negros Occidental. About 94,000 people were affected, according to the Office of Civil Defense.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Kanlaon Volcano",
+        "country": "PH",
+        "kind": "site",
+        "impact": "Moderately explosive eruption, ash plume"
+      },
+      {
+        "name": "Don Salvador Benedicto",
+        "admin": "Negros Occidental",
+        "country": "PH",
+        "kind": "district",
+        "impact": "Ashfall and sulfur odor in several barangays"
+      },
+      {
+        "name": "Bago",
+        "admin": "Negros Occidental",
+        "country": "PH",
+        "kind": "city",
+        "impact": "Light ashfall and sulfur odor in several barangays"
+      },
+      {
+        "name": "La Carlota",
+        "admin": "Negros Occidental",
+        "country": "PH",
+        "kind": "city",
+        "impact": "Ashfall and sulfuric odor in Barangay Ara-al"
+      },
+      {
+        "name": "San Carlos",
+        "admin": "Negros Occidental",
+        "country": "PH",
+        "kind": "city",
+        "impact": "Sulfuric odor in upper Barangay Codcod, no ashfall"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People affected",
+        "value": "about 94,000 individuals",
+        "sourceName": "thestar.com.my",
+        "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/13/some-24000-families-affected-by-central-philippine-volcano-eruption"
+      },
+      {
+        "label": "Families affected",
+        "value": "about 24,000 families",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html",
+        "title": "Some 24,000 families affected by C. Philippine volcano eruption-Xinhua"
+      },
+      {
+        "name": "negrosnowdaily.com",
+        "url": "https://negrosnowdaily.com/sulfur-fumes-ashfall-affect-parts-of-negros/",
+        "title": "Sulfur fumes, ashfall affect parts of Negros"
+      },
+      {
+        "name": "pia.gov.ph",
+        "url": "https://pia.gov.ph/news/visayas/wv/govt-sustains-aid-monitoring-amid-kanlaon-unrest",
+        "title": "Gov’t sustains aid, monitoring amid Kanlaon unrest"
+      },
+      {
+        "name": "newsinfo.inquirer.net",
+        "url": "https://newsinfo.inquirer.net/2321133/ashfall-sulfur-odor-observed-after-kanlaon-volcanos-explosive-eruption",
+        "title": "OCD: Ashfall, sulfuric odor after Kanlaon's 'explosive' eruption"
+      },
+      {
+        "name": "thestar.com.my",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/13/some-24000-families-affected-by-central-philippine-volcano-eruption",
+        "title": "Some 24,000 families affected by central Philippine volcano eruption"
+      },
+      {
+        "name": "gmanetwork.com",
+        "url": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/",
+        "title": "24,000 families affected by Kanlaon eruption — OCD"
+      }
+    ],
+    "membersHash": "gdacs|PH#00dc706e",
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "ifrc-earthquake-7990": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -729,7 +1010,178 @@
       }
     ],
     "membersHash": "ifrc|VE#4aa9fe04",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
+  },
+  "ifrc-earthquake-8055": {
+    "at": "2026-10-20T08:54:22.411Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A magnitude 7.4 earthquake struck near San José del Palmar, Chocó, Colombia, on 10 August 2026, causing deaths, injuries and building collapses in several departments. The latest official balance, cited in early September, reports 331 dead and 4,519 injured. Aftershocks were recorded in mid-August, and response and recovery were ongoing in early September.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "San José del Palmar",
+        "admin": "Chocó",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Epicentre; among most affected municipalities"
+      },
+      {
+        "name": "Sipí",
+        "admin": "Chocó",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Among most affected municipalities"
+      },
+      {
+        "name": "Quibdó",
+        "admin": "Chocó",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Deaths and collapsed structures reported"
+      },
+      {
+        "name": "Pereira",
+        "admin": "Risaralda",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Among hardest-hit cities; collapsed buildings"
+      },
+      {
+        "name": "Cali",
+        "admin": "Valle del Cauca",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Collapsed buildings; hospital maternity sections damaged"
+      },
+      {
+        "name": "Manizales",
+        "admin": "Caldas",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Building collapses and damage"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "331",
+        "sourceName": "esquirecolombia.com",
+        "sourceUrl": "https://esquirecolombia.com/terremoto-colombia-2026-efectos/"
+      },
+      {
+        "label": "Injured",
+        "value": "4,519",
+        "sourceName": "esquirecolombia.com",
+        "sourceUrl": "https://esquirecolombia.com/terremoto-colombia-2026-efectos/"
+      },
+      {
+        "label": "Missing",
+        "value": "257",
+        "sourceName": "elcolombiano.com",
+        "sourceUrl": "https://www.elcolombiano.com/colombia/nuevo-balance-terremoto-cifra-fallecidos-desaparecidos-colombia-CA40156307"
+      },
+      {
+        "label": "People affected",
+        "value": "more than 466,000",
+        "sourceName": "esquirecolombia.com",
+        "sourceUrl": "https://esquirecolombia.com/terremoto-colombia-2026-efectos/"
+      },
+      {
+        "label": "Homes destroyed",
+        "value": "31,445",
+        "sourceName": "elcolombiano.com",
+        "sourceUrl": "https://www.elcolombiano.com/colombia/nuevo-balance-terremoto-cifra-fallecidos-desaparecidos-colombia-CA40156307"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC emergency appeal supporting the Colombian Red Cross response"
+      },
+      {
+        "url": "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU",
+        "org": "Cruz Roja Colombiana",
+        "kind": "society",
+        "note": "Colombian Red Cross donation page for the earthquake emergency"
+      }
+    ],
+    "sources": [],
+    "membersHash": "ifrc|CO#46a7ee3f",
+    "seen": "2026-10-20T08:54:22.411Z"
+  },
+  "ifrc-earthquake-appeal-mdrid029": {
+    "at": "2026-10-20T08:54:22.411Z",
+    "model": "claude-haiku-5-5",
+    "searches": 1,
+    "summary": "A strong earthquake struck off Flores, Indonesia, on 15 August 2026 local time, with its epicentre about 68 km north-northwest of Ende. Latest reports dated 18 August say nearly 70 people died and over 1,100 were injured. Search efforts continued, about 1,000 aftershocks were recorded, and displaced people were sheltering outdoors. No reports dated after 18 August were found.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Ruteng",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Worst impact; two emergency field hospitals set up"
+      },
+      {
+        "name": "Sikka",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Most deaths recovered here"
+      },
+      {
+        "name": "Maumere",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Rescuers worked among rubble of damaged buildings"
+      },
+      {
+        "name": "Nagekeo Regency",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Roads cracked; rescue teams had not reached by 15 Aug"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "nearly 70",
+        "sourceName": "americares.org",
+        "sourceUrl": "https://www.americares.org/crisis-alerts/indonesia-earthquake-august-2026/"
+      },
+      {
+        "label": "Injured",
+        "value": "over 1,100",
+        "sourceName": "americares.org",
+        "sourceUrl": "https://www.americares.org/crisis-alerts/indonesia-earthquake-august-2026/"
+      },
+      {
+        "label": "Displaced",
+        "value": "thousands",
+        "sourceName": "cbsnews.com",
+        "sourceUrl": "https://www.cbsnews.com/news/indonesia-earthquake-tsunami-warning/"
+      },
+      {
+        "label": "Houses destroyed or damaged",
+        "value": "more than 300",
+        "sourceName": "abcnews.com",
+        "sourceUrl": "https://abcnews.com/International/2-dead-after-powerful-77-earthquake-strikes-off/story?id=135664681"
+      },
+      {
+        "label": "People in strong shaking (MMI VI–VIII)",
+        "value": "about 1.7 million",
+        "sourceName": "earthquake.usgs.gov",
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "ifrc|ID#98e9c7e0",
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -840,7 +1292,89 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
+  },
+  "ifrc-flood-8025": {
+    "at": "2026-10-20T08:54:22.411Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Flash floods hit Nuristan Province, Afghanistan, on 20 July 2026, causing deaths, injuries and damage to homes, shops and services, particularly in Parun city. The latest source found is a UNICEF update dated 12 August 2026, which reports ongoing health and water support and additional people still missing. Whether the flood's direct effects are over is not reported as of 20 October 2026.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Parun",
+        "admin": "Nuristan",
+        "country": "AF",
+        "kind": "city",
+        "impact": "Flash flood; deaths, injuries, shops and hotels damaged"
+      },
+      {
+        "name": "Nuristan Province",
+        "country": "AF",
+        "kind": "region",
+        "impact": "Most severely affected province; flooding reported"
+      },
+      {
+        "name": "Torkham",
+        "admin": "Nangarhar",
+        "country": "AF",
+        "kind": "site",
+        "impact": "Three refugees died at transit camp; nine injured"
+      },
+      {
+        "name": "Alingar",
+        "admin": "Laghman",
+        "country": "AF",
+        "kind": "district",
+        "impact": "Flooding reported"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "23 in Parun",
+        "sourceName": "atlaspress.news",
+        "sourceUrl": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/"
+      },
+      {
+        "label": "Injured",
+        "value": "125",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/afghanistan/documents/unicef-afghanistan-flash-update-1-eastern-region-flash-floods"
+      },
+      {
+        "label": "Missing",
+        "value": "more than 100",
+        "sourceName": "atlaspress.news",
+        "sourceUrl": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/"
+      },
+      {
+        "label": "Houses destroyed or damaged",
+        "value": "120",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/afghanistan/documents/unicef-afghanistan-flash-update-3-central-eastern-and-northern-regions-flash-floods"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "global-flood.emergency.copernicus.eu",
+        "url": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026/",
+        "title": "Floods in Nuristan Province, Afghanistan, July 2026"
+      },
+      {
+        "name": "unicef.org",
+        "url": "https://www.unicef.org/afghanistan/documents/unicef-afghanistan-flash-update-1-eastern-region-flash-floods",
+        "title": "UNICEF Afghanistan Flash Update #1: Eastern Region Flash Floods"
+      },
+      {
+        "name": "atlaspress.news",
+        "url": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/",
+        "title": "Floods in Nuristan Leave 23 Dead and Over 100 Missing"
+      }
+    ],
+    "membersHash": "ifrc|AF#46b93760",
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "ifrc-flood-8050": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -914,7 +1448,182 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
+  },
+  "ifrc-flood-8073": {
+    "at": "2026-10-20T08:54:22.411Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A flash flood struck central Nepal on 26 August 2026, affecting Rasuwa and surrounding districts in Bagmati and Gandaki provinces. The Government of Nepal declared 15 municipalities in affected districts as crisis-affected areas for three months. IFRC reported response work still under way as of 11 October 2026, with holding centres in Bidur and Rasuwa in use. No reports found after 11 October 2026.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Syabrubesi",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "town",
+        "impact": "hydropower projects and markets damaged"
+      },
+      {
+        "name": "Rasuwa",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "affected"
+      },
+      {
+        "name": "Nuwakot",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "affected"
+      },
+      {
+        "name": "Bidur",
+        "admin": "Nuwakot",
+        "country": "NP",
+        "kind": "town",
+        "impact": "holding centres and water supply work"
+      },
+      {
+        "name": "Dhading",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "named as affected"
+      },
+      {
+        "name": "Chitwan",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "named as affected"
+      },
+      {
+        "name": "Gorkha",
+        "admin": "Gandaki Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "named as affected"
+      },
+      {
+        "name": "Tanahun",
+        "admin": "Gandaki Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "named as affected"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People served by Bidur Water Supply…",
+        "value": "around 25,000 people",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/emergencies/8073/reports"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "ifrc|NP#4cac74df",
+    "seen": "2026-10-20T08:54:22.411Z"
+  },
+  "ifrc-landslide-8111": {
+    "at": "2026-10-20T08:54:22.411Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Heavy rain from 27-29 September 2026 triggered flash floods and landslides in Dawei and Launglon townships, Tanintharyi Region, Myanmar. Floodwaters had receded by early October, but rescue and relief work continues and further landslides remain possible. Reports give 41 deaths and 20 missing in Launglon. Sources date the event to late September, not the 8 October feed date.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Launglon",
+        "admin": "Tanintharyi Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "25 places hit by landslides; two villages entirely destroyed"
+      },
+      {
+        "name": "Dawei",
+        "admin": "Tanintharyi Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Homes damaged by flooding and landslides"
+      },
+      {
+        "name": "Thayetchaung",
+        "admin": "Tanintharyi Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Waist-deep silt deposits in parts"
+      },
+      {
+        "name": "Yebyu",
+        "admin": "Tanintharyi Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Severe flooding; communities cut off from aid"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "41",
+        "sourceName": "ucanews.com",
+        "sourceUrl": "https://www.ucanews.com/amp/floods-kill-41-in-myanmars-tanintharyi-region/115595"
+      },
+      {
+        "label": "Missing",
+        "value": "20",
+        "sourceName": "irrawaddy.com",
+        "sourceUrl": "https://www.irrawaddy.com/news/burma/myanmar-regime-bombs-flood-hit-dawei-as-disaster-death-toll-tops-40.html"
+      },
+      {
+        "label": "Displaced",
+        "value": "over 1,000 people",
+        "sourceName": "mekongeye.com",
+        "sourceUrl": "https://www.mekongeye.com/2026/10/05/dawei-flood"
+      },
+      {
+        "label": "Houses destroyed",
+        "value": "more than 400",
+        "sourceName": "mekongeye.com",
+        "sourceUrl": "https://www.mekongeye.com/2026/10/05/dawei-flood"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "sentinel-asia.org",
+        "url": "https://sentinel-asia.org/EO/2026/article20261001MM.html",
+        "title": "Flood and Landslide in Dawei District, Myanmar on 01 October, 2026"
+      },
+      {
+        "name": "mekongeye.com",
+        "url": "https://www.mekongeye.com/2026/10/05/dawei-flood",
+        "title": "Record rainfall triggers floods, landslides in southern Myanmar amid El Niño warning"
+      },
+      {
+        "name": "x.com",
+        "url": "https://x.com/MyanmarRedCross/status/2109911369458082282",
+        "title": "Myanmar Red Cross on X: \"🌊 Following flooding in #Launglon Township, #Dawei District, Tanintharyi Region, the Myanmar Red Cross Society is conducting rapid…"
+      },
+      {
+        "name": "myanmar-now.org",
+        "url": "https://myanmar-now.org/en/news/death-toll-rises-to-34-as-floods-landslides-devastate-villages-in-southern-myanmar/",
+        "title": "Death toll rises to 34 as floods, landslides devastate villages in southern Myanmar"
+      },
+      {
+        "name": "irrawaddy.com",
+        "url": "https://www.irrawaddy.com/news/burma/myanmar-regime-bombs-flood-hit-dawei-as-disaster-death-toll-tops-40.html",
+        "title": "Myanmar Regime Bombs Flood-Hit Dawei as Disaster Death Toll Tops 40"
+      },
+      {
+        "name": "bayofbengalpost.com",
+        "url": "https://www.bayofbengalpost.com/news/floods-and-landslides-kill-32-in-myanmars-dawei-region-dozens-still-missing",
+        "title": "Floods and landslides kill 32 in Myanmar’s Dawei region, dozens still missing"
+      }
+    ],
+    "membersHash": "ifrc|MM#64e1c3d8",
+    "seen": "2026-10-20T08:54:22.411Z"
   },
   "usgs-earthquake-us7000q1": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -982,6 +1691,6 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-20T02:25:48.047Z"
+    "seen": "2026-10-20T08:54:22.411Z"
   }
 }
