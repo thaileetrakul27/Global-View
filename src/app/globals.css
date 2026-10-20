@@ -78,11 +78,8 @@ body {
   background: var(--card);
   border: 1.5px solid var(--dz-color);
   box-shadow: 0 1px 2px rgba(28, 28, 26, 0.12);
-  /* Moved aside when it would cover a more important marker (see setMarkerNudge). */
-  translate: var(--dz-nudge, 0 0);
   transition:
     transform 0.15s ease,
-    translate 0.2s ease,
     background-color 0.15s ease;
 }
 .gv-dz-chip svg {
@@ -96,6 +93,44 @@ body {
   box-shadow:
     0 0 0 2px var(--paper),
     0 0 0 4px var(--accent);
+}
+
+/* Calm by default: only severe disasters show their moving effect; the rest
+   are plain chips until pointed at or focused. */
+.gv-dz:not([data-sev="3"]):not(:hover):not(:focus-visible) .gv-dz-fx {
+  display: none;
+}
+
+/* Overlapping markers merge into the most important one, which shows how
+   many more it stands for; pressing it zooms in (see setMarkerCluster). */
+.gv-dz-count {
+  position: absolute;
+  top: -7px;
+  right: -9px;
+  display: none;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border: 1.5px solid var(--card);
+  border-radius: 9999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 15px;
+  text-align: center;
+  pointer-events: none;
+}
+.gv-dz[data-count] .gv-dz-count {
+  display: block;
+}
+.gv-merged {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    visibility 0s linear 0.2s;
 }
 
 /* The effect layer: bigger and stronger with severity, never clickable. */
@@ -378,8 +413,6 @@ body {
   border-radius: 9999px;
   border: 1.5px dashed var(--dz-color);
   pointer-events: none;
-  translate: var(--dz-nudge, 0 0);
-  transition: translate 0.2s ease;
 }
 
 /* Selected: the chip lifts into a pin and the effect makes way, so the area

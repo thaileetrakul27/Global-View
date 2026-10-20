@@ -13,6 +13,8 @@ import type { GlobeMethods, GlobeProps as GlobeGLProps } from "react-globe.gl";
 import type { Object3D } from "three";
 import type { Disaster } from "@/lib/data";
 import {
+  CLUSTER_MIN_ALTITUDE,
+  CLUSTER_ZOOM,
   MARKER_ALTITUDE,
   PATH_ALTITUDE,
   PLACE_ALTITUDE,
@@ -23,7 +25,7 @@ import {
   buildPathItems,
   buildPlaceItems,
   buildRingItems,
-  declutter,
+  clusterMarkers,
   highlightTarget,
   placeLabelFit,
   rgba,
@@ -40,7 +42,8 @@ import {
   createPlaceElement,
   placeLabelWidth,
   setElementVisible,
-  setMarkerNudge,
+  setMarkerCluster,
+  setMarkerMerged,
   setMarkerState,
   setPlaceSide,
 } from "./markers";
@@ -53,9 +56,13 @@ interface Options {
   disasters: Disaster[];
   selectedId: string | null;
   show: boolean;
+  /** Disasters left off the map (minor ones), kept built so they can come back at once. */
+  hidden: ReadonlySet<string>;
   /** Width covered by a side panel on the right, px, so place labels flip before it. */
   rightInset: number;
   onSelect: (id: string) => void;
+  /** Called before the layer moves the camera itself (a cluster zoom), so the globe stops turning. */
+  onCameraMove?: () => void;
 }
 
 const REDUCED_QUERY = "(prefers-reduced-motion: reduce)";
@@ -122,9 +129,10 @@ function ringFade(color: string, k: number): string[] {
 }
 
 /**
- * Screen-space tidying, a few times a second: moves markers that sit on a
- * more important one aside, and flips place labels that would run past the
- * visible edge. Positions come from the camera, so nothing is measured.
+ * Screen-space tidying, a few times a second: merges markers that overlap
+ * into the most important one, which then shows how many it stands for,
+ * and flips place labels that would run past the visible edge. Positions
+ * come from the camera, so nothing is measured.
  */
 function layoutHtml(
   g: GlobeMethods,
@@ -137,6 +145,12 @@ function layoutHtml(
   const markers: ScreenMarker[] = [];
   const visibleMarkers: [MarkerItem, HTMLElement][] = [];
   for (const [item, el] of els) {
+    if (item.kind === "marker" && el.classList.contains("gv-hidden")) {
+      // Past the horizon: neither a head nor merged.
+      setMarkerCluster(el, 0);
+      setMarkerMerged(el, false);
+      continue;
+    }
     if (el.classList.contains("gv-hidden")) continue;
     const alt = item.kind === "marker" ? MARKER_ALTITUDE : PLACE_ALTITUDE;
     const { x, y } = g.getScreenCoords(item.lat, item.lng, alt);
@@ -152,14 +166,24 @@ function layoutHtml(
       visibleMarkers.push([item, el]);
     }
   }
-  const nudges = declutter(markers);
+  const { heads, merged } = clusterMarkers(markers);
+  const byId = new Map(visibleMarkers.map(([item]) => [item.disasterId, item]));
   for (const [item, el] of visibleMarkers) {
-    const [dx, dy] = nudges.get(item.disasterId) ?? [0, 0];
-    setMarkerNudge(el, dx, dy);
+    setMarkerMerged(el, merged.has(item.disasterId));
+    const members = heads.get(item.disasterId);
+    // The selected marker is never a cluster: it opens its own panel.
+    if (!members || item.disasterId === selectedId) {
+      setMarkerCluster(el, 0);
+      continue;
+    }
+    const all = [item, ...members.map((id) => byId.get(id)!)];
+    const lat = all.reduce((s, m) => s + m.lat, 0) / all.length;
+    const lng = all.reduce((s, m) => s + m.lng, 0) / all.length;
+    setMarkerCluster(el, members.length, Math.round(lat * 1e4) / 1e4, Math.round(lng * 1e4) / 1e4);
   }
 }
 
-export function useDisasterLayers({ globe, ready, disasters, selectedId, show, rightInset, onSelect }: Options) {
+export function useDisasterLayers({ globe, ready, disasters, selectedId, show, hidden, rightInset, onSelect, onCameraMove }: Options) {
   const reduced = useReducedMotion();
   const [effects] = useState(() => new AreaEffects());
   useEffect(() => () => effects.dispose(), [effects]);
@@ -174,16 +198,20 @@ export function useDisasterLayers({ globe, ready, disasters, selectedId, show, r
   const hoveredId = show ? (pointerId ?? markerFocus) : null;
 
   // Long-lived objects (meshes, DOM markers, the frame loop) read the latest values from here.
-  const live = useRef({ selectedId, hoveredId, onSelect, rightInset });
+  const live = useRef({ selectedId, hoveredId, onSelect, rightInset, onCameraMove });
   useEffect(() => {
-    live.current = { selectedId, hoveredId, onSelect, rightInset };
+    live.current = { selectedId, hoveredId, onSelect, rightInset, onCameraMove };
   });
 
   const areas = useMemo(() => buildAreaItems(disasters), [disasters]);
   const allRings = useMemo(() => buildRingItems(disasters), [disasters]);
   const rings = useMemo(() => activeRings(allRings, [selectedId, hoveredId]), [allRings, selectedId, hoveredId]);
-  const paths = useMemo(() => buildPathItems(disasters), [disasters]);
-  const markers = useMemo(() => buildMarkerItems(disasters), [disasters]);
+  // Hidden disasters are filtered out of the cheap layers; the built items
+  // keep their identity, so the globe keeps the rest of the elements.
+  const allPaths = useMemo(() => buildPathItems(disasters), [disasters]);
+  const paths = useMemo(() => allPaths.filter((p) => !hidden.has(p.disasterId)), [allPaths, hidden]);
+  const allMarkers = useMemo(() => buildMarkerItems(disasters), [disasters]);
+  const markers = useMemo(() => allMarkers.filter((m) => !hidden.has(m.disasterId)), [allMarkers, hidden]);
   const selected = useMemo(() => disasters.find((d) => d.id === selectedId) ?? null, [disasters, selectedId]);
   const places = useMemo(() => buildPlaceItems(selected), [selected]);
   const html = useMemo<(MarkerItem | PlaceItem)[]>(() => (show ? [...markers, ...places] : []), [show, markers, places]);
@@ -218,12 +246,13 @@ export function useDisasterLayers({ globe, ready, disasters, selectedId, show, r
   const areaData = useMemo(() => (feed.list === areas ? areas.slice(0, feed.count) : []), [feed, areas]);
   useEffect(() => effects.prune(areaData), [effects, areaData]);
   useEffect(() => effects.setShown(show), [effects, show]);
+  useEffect(() => effects.setHidden(hidden), [effects, hidden]);
 
   // A marker removed under the pointer never sends pointerleave, and hidden
   // layers cannot stay hovered: forget hovers when either changes.
-  const [hoverScope, setHoverScope] = useState({ show, disasters });
-  if (hoverScope.show !== show || hoverScope.disasters !== disasters) {
-    setHoverScope({ show, disasters });
+  const [hoverScope, setHoverScope] = useState({ show, disasters, hidden });
+  if (hoverScope.show !== show || hoverScope.disasters !== disasters || hoverScope.hidden !== hidden) {
+    setHoverScope({ show, disasters, hidden });
     setAreaHover(null);
     setMarkerHover(null);
     setMarkerFocus(null);
@@ -282,6 +311,19 @@ export function useDisasterLayers({ globe, ready, disasters, selectedId, show, r
           ? createPlaceElement(item)
           : createMarkerElement(item, {
               select: (id) => live.current.onSelect(id),
+              // Closer to a cluster until its markers come apart; when already
+              // as close as the camera goes, open the head.
+              zoom: (id, lat, lng) => {
+                const g = globe.current;
+                if (!g) return;
+                const { altitude } = g.pointOfView();
+                if (altitude <= CLUSTER_MIN_ALTITUDE * 1.05) {
+                  live.current.onSelect(id);
+                  return;
+                }
+                live.current.onCameraMove?.();
+                g.pointOfView({ lat, lng, altitude: Math.max(CLUSTER_MIN_ALTITUDE, altitude * CLUSTER_ZOOM) }, 900);
+              },
               hover: setMarkerHover,
               focus: setMarkerFocus,
               // Re-sent to the canvas, where the globe's controls listen.

@@ -9,6 +9,8 @@ import {
   disastersIn,
   findDisaster,
   groupDonations,
+  hiddenOnMap,
+  isMinor,
   isSafeUrl,
   locationLine,
   placeDetail,
@@ -17,6 +19,7 @@ import {
   safeHref,
   shortDate,
   shortTitle,
+  significantOnly,
   sinceLine,
   typeCountLabel,
 } from "../disasters";
@@ -352,5 +355,21 @@ describe("appealFunding", () => {
   it("has no percentage when nothing was requested", () => {
     expect(appealFunding({ requested: 0, funded: 0 })).toEqual({ percent: null, text: "Funding not reported" });
     expect(appealFunding({ requested: 0, funded: 1500000 })).toEqual({ percent: null, text: "CHF 1.5M funded" });
+  });
+});
+
+describe("minor disasters", () => {
+  const list = [make({ id: "minor", severity: 1 }), make({ id: "big", severity: 2 }), make({ id: "worst", severity: 3 })];
+
+  it("keeps the significant and severe ones", () => {
+    expect(isMinor({ severity: 1 })).toBe(true);
+    expect(isMinor({ severity: 2 })).toBe(false);
+    expect(significantOnly(list).map((x) => x.id)).toEqual(["big", "worst"]);
+  });
+
+  it("hides minor ones on the map unless shown, never the open one", () => {
+    expect([...hiddenOnMap(list, { showMinor: false, openId: null })]).toEqual(["minor"]);
+    expect(hiddenOnMap(list, { showMinor: true, openId: null }).size).toBe(0);
+    expect(hiddenOnMap(list, { showMinor: false, openId: "minor" }).size).toBe(0);
   });
 });

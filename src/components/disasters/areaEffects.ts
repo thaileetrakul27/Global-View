@@ -164,8 +164,10 @@ export class AreaEffects {
   private readonly highlights = new Map<string, IUniform<number>>();
   /** Every area built and not yet pruned, for culling and hiding. */
   private readonly entries = new Map<AreaItem, Entry>();
-  /** False hides every area while keeping its meshes (the "Show on map" switch). */
+  /** False hides every area while keeping its meshes (the news map). */
   private shown = true;
+  /** Disasters whose areas are hidden (minor ones), meshes kept. */
+  private hidden: ReadonlySet<string> = new Set();
   /** Scratch vector for the camera direction. */
   private readonly view = new Vector3();
   /** One compiled program per effect; meshes use clones that share it. */
@@ -294,7 +296,7 @@ export class AreaEffects {
       group.add(line);
     }
 
-    group.visible = this.shown;
+    group.visible = this.visibleFor(item);
     this.entries.set(item, {
       group,
       center: unit(item.center.lat, item.center.lng),
@@ -303,10 +305,21 @@ export class AreaEffects {
     return group;
   }
 
+  /** Whether an area may be drawn at all (culling may still hide it). */
+  private visibleFor(item: AreaItem): boolean {
+    return this.shown && !this.hidden.has(item.disasterId);
+  }
+
   /** Shows or hides every area without rebuilding meshes or recompiling shaders. */
   setShown(on: boolean): void {
     this.shown = on;
-    for (const e of this.entries.values()) e.group.visible = on;
+    for (const [item, e] of this.entries) e.group.visible = this.visibleFor(item);
+  }
+
+  /** Hides the areas of these disasters, and shows the rest again, without rebuilding meshes. */
+  setHidden(ids: ReadonlySet<string>): void {
+    this.hidden = ids;
+    for (const [item, e] of this.entries) e.group.visible = this.visibleFor(item);
   }
 
   /** Forgets areas and highlights that are no longer drawn. */
@@ -337,8 +350,8 @@ export class AreaEffects {
     if (dist <= GLOBE_RADIUS) return;
     const horizon = Math.acos(GLOBE_RADIUS / dist);
     this.view.copy(camera).divideScalar(dist);
-    for (const e of this.entries.values()) {
-      const visible = e.center.angleTo(this.view) < e.reach + horizon;
+    for (const [item, e] of this.entries) {
+      const visible = !this.hidden.has(item.disasterId) && e.center.angleTo(this.view) < e.reach + horizon;
       if (e.group.visible !== visible) e.group.visible = visible;
     }
   }

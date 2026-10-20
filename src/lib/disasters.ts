@@ -97,6 +97,25 @@ export function disastersIn(list: readonly Disaster[], code: string): Disaster[]
   return rankDisasters(list.filter((d) => d.countries.includes(code)));
 }
 
+/** Minor disasters are left off the map and the lists until someone asks for them or zooms in. */
+export function isMinor(d: Pick<Disaster, "severity">): boolean {
+  return d.severity < 2;
+}
+
+/** The significant and severe disasters, in the order given. */
+export function significantOnly(list: readonly Disaster[]): Disaster[] {
+  return list.filter((d) => !isMinor(d));
+}
+
+/**
+ * Ids of disasters the globe leaves out: the minor ones unless they are
+ * shown, never the one whose panel is open.
+ */
+export function hiddenOnMap(list: readonly Disaster[], opts: { showMinor: boolean; openId: string | null }): Set<string> {
+  if (opts.showMinor) return new Set();
+  return new Set(list.filter((d) => isMinor(d) && d.id !== opts.openId).map((d) => d.id));
+}
+
 /** One disaster by id, or null. */
 export function findDisaster(list: readonly Disaster[] | null | undefined, id: string | null | undefined): Disaster | null {
   if (!list || !id) return null;

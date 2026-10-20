@@ -18,7 +18,7 @@ export default function WorldSummary({ topStory, mostWatched, nameOf, onStory, o
   if (!topStory && !mostWatched) return null;
   const link = "rounded-sm font-medium text-ink underline decoration-line underline-offset-2 hover:text-accent hover:decoration-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent";
   return (
-    <p className="pointer-events-auto mt-3 max-w-md text-sm leading-snug text-muted">
+    <p className="pointer-events-auto mt-1.5 max-w-md text-sm leading-snug text-muted">
       {topStory && (
         <>
           {past ? `On ${past}, ${topStory.countries.length} countries were reading about` : `Right now ${topStory.countries.length} countries are reading about`}{" "}

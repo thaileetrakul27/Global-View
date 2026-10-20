@@ -3,9 +3,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
 import GlobeGL, { type GlobeMethods } from "react-globe.gl";
 import { AmbientLight, DirectionalLight, MeshLambertMaterial } from "three";
-import { arcScaleFor, countryFocus, type CountryFeature } from "@/lib/geo";
+import { countryFocus, greatCircle, type CountryFeature } from "@/lib/geo";
 import type { Disaster } from "@/lib/data";
-import { disasterFocus } from "@/lib/disasterLayers";
+import { MINOR_REVEAL_ALTITUDE, disasterFocus } from "@/lib/disasterLayers";
+import { hiddenOnMap } from "@/lib/disasters";
 import { tooltipDetail } from "./disasters/markers";
 import { disasterPointerFilter, useDisasterLayers, useReducedMotion } from "./disasters/useDisasterLayers";
 import { useDetailedCountries } from "./useDetailedCountries";
@@ -37,8 +38,30 @@ export interface GlobeProps {
   selectedDisasterId: string | null;
   /** False hides every disaster layer. */
   showDisasters: boolean;
+  /** True draws minor disasters too; otherwise they appear only once the camera is close. */
+  showMinor: boolean;
   /** Called when a disaster's marker, area or track is clicked. */
   onSelectDisaster: (id: string) => void;
+  /** Called the first time the user turns or zooms the globe. */
+  onMoved?: () => void;
+}
+
+/** A reading line as the path layer draws it: points along the great circle between two countries. */
+interface ReadingPath {
+  kind: "reading";
+  points: { lat: number; lng: number }[];
+  strength: number;
+}
+const isReading = (d: object | null | undefined): d is ReadingPath => (d as ReadingPath | undefined)?.kind === "reading";
+
+/** Calls a layer accessor that may be a function or a constant. */
+function call<T>(accessor: unknown, d: object, fallback: T): T {
+  return typeof accessor === "function" ? (accessor as (d: object) => T)(d) : ((accessor as T | undefined) ?? fallback);
+}
+
+/** Reading lines let the pointer through to the countries; disasters decide for themselves. */
+function pointerFilter(obj: Parameters<typeof disasterPointerFilter>[0], data?: object): boolean {
+  return !isReading(data) && disasterPointerFilter(obj, data);
 }
 
 /** How long the camera takes to travel to a clicked country. */
@@ -101,7 +124,9 @@ export default function Globe({
   disasters,
   selectedDisasterId,
   showDisasters,
+  showMinor,
   onSelectDisaster,
+  onMoved,
 }: GlobeProps) {
   const globeRef = useRef<GlobeMethods | undefined>(undefined);
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -121,6 +146,18 @@ export default function Globe({
   // Sharper country shapes near a low camera.
   const detailed = useDetailedCountries(countries);
 
+  // Minor disasters join the map once the camera is close (see handleZoom).
+  const [close, setClose] = useState(false);
+  const hidden = useMemo(
+    () => hiddenOnMap(disasters, { showMinor: showMinor || close, openId: selectedDisasterId }),
+    [disasters, showMinor, close, selectedDisasterId],
+  );
+  // The layer moving the camera itself (a cluster zoom) counts as the user's doing.
+  const engageCamera = useCallback(() => {
+    touchedRef.current = true;
+    if (globeRef.current) stopSpin(globeRef.current);
+  }, []);
+
   // Disaster areas, rings, tracks and markers, and the one under the pointer.
   const layers = useDisasterLayers({
     globe: globeRef,
@@ -128,8 +165,14 @@ export default function Globe({
     disasters,
     selectedId: selectedDisasterId,
     show: showDisasters,
+    hidden,
     rightInset: inset.right,
     onSelect: onSelectDisaster,
+    onCameraMove: engageCamera,
+  });
+  const movedRef = useRef(onMoved);
+  useEffect(() => {
+    movedRef.current = onMoved;
   });
   const hoveredDisaster = layers.hovered;
   // A disaster under the pointer takes the tooltip and the hover from the country beneath it.
@@ -205,6 +248,7 @@ export default function Globe({
     controls.addEventListener("start", () => {
       touchedRef.current = true;
       controls.autoRotate = false;
+      movedRef.current?.();
     });
     setRotation();
 
@@ -266,22 +310,38 @@ export default function Globe({
     [hoveredCode, selectedCode, coverage, tints, colors],
   );
 
-  const arcColor = useCallback(
-    (d: object) => hexToRgba(colors.accent, 0.25 + 0.45 * (d as GlobeArc).strength),
-    [colors.accent],
+  // Reading lines lie on the globe and stay put: great-circle paths in the
+  // same layer as the storm tracks, just above the countries, with no
+  // dashes running along them and no growing in. Their width is in screen
+  // pixels, so it stays the same at any zoom.
+  const readingPaths = useMemo<ReadingPath[]>(
+    () =>
+      arcs.map((a) => ({
+        kind: "reading",
+        points: greatCircle({ lat: a.startLat, lng: a.startLng }, { lat: a.endLat, lng: a.endLng }),
+        strength: a.strength,
+      })),
+    [arcs],
   );
-  // Arc width is in globe units, so it would swell into thick bars as the
-  // camera zooms in. It shrinks with altitude, in steps so the arcs are not
-  // rebuilt on every frame of a zoom.
-  const [arcScale, setArcScale] = useState(1);
-  const arcStroke = useCallback((d: object) => (0.18 + 0.3 * (d as GlobeArc).strength) * arcScale, [arcScale]);
+  const disasterPaths = layers.props;
+  const pathProps = useMemo(
+    () => ({
+      pathsData: [...((disasterPaths.pathsData as object[] | undefined) ?? []), ...readingPaths],
+      pathColor: (d: object) => (isReading(d) ? hexToRgba(colors.accent, 0.3 + 0.45 * d.strength) : call(disasterPaths.pathColor, d, colors.accent)),
+      pathStroke: (d: object) => (isReading(d) ? 1 + d.strength : call<number | null>(disasterPaths.pathStroke, d, null)),
+      pathDashLength: (d: object) => (isReading(d) ? 1 : call(disasterPaths.pathDashLength, d, 1)),
+      pathDashGap: (d: object) => (isReading(d) ? 0 : call(disasterPaths.pathDashGap, d, 0)),
+      pathDashAnimateTime: (d: object) => (isReading(d) ? 0 : call(disasterPaths.pathDashAnimateTime, d, 0)),
+    }),
+    [disasterPaths, readingPaths, colors.accent],
+  );
   const onView = detailed.onView;
   const handleZoom = useCallback(
     (view: { lat: number; lng: number; altitude: number }) => {
       onView(view);
-      setArcScale(arcScaleFor(view.altitude));
+      setClose(view.altitude / altitudeScale() < MINOR_REVEAL_ALTITUDE);
     },
-    [onView],
+    [onView, altitudeScale],
   );
   const strokeColor = useCallback(
     (d: object) => (codeOf(d) === selectedCode ? colors.accent : colors.border),
@@ -360,20 +420,9 @@ export default function Globe({
           polygonsTransitionDuration={0}
           onPolygonHover={handleHover}
           onPolygonClick={handleClick}
-          arcsData={arcs}
-          arcStartLat="startLat"
-          arcStartLng="startLng"
-          arcEndLat="endLat"
-          arcEndLng="endLng"
-          arcColor={arcColor}
-          arcStroke={arcStroke}
-          arcAltitudeAutoScale={0.35}
-          arcDashLength={0.5}
-          arcDashGap={0.3}
-          arcDashAnimateTime={reduced ? 0 : 6000}
-          arcsTransitionDuration={reduced ? 0 : 600}
           {...layers.props}
-          pointerEventsFilter={disasterPointerFilter}
+          {...pathProps}
+          pointerEventsFilter={pointerFilter}
           onZoom={handleZoom}
           onGlobeReady={handleReady}
         />

@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import type { Disaster } from "@/lib/data";
 import { DISASTER_META, SEVERITY_LABEL } from "@/lib/disasterMeta";
-import { locationLine, rankDisasters, shortTitle } from "@/lib/disasters";
+import { isMinor, locationLine, rankDisasters, shortTitle } from "@/lib/disasters";
 import DisasterIcon from "./DisasterIcon";
 
 interface Props {
@@ -11,14 +11,19 @@ interface Props {
   nameOf: (code: string) => string;
   /** Open a disaster's panel by id. */
   onSelect: (id: string) => void;
+  /** Whether minor disasters are listed and drawn too. */
+  showMinor: boolean;
+  onShowMinor: (v: boolean) => void;
 }
 
-// Phone landing: a sideways-scrolling row of chips, one per disaster (all of
-// them: this is the phone's only list), most severe and recent first.
-// Tapping one opens its panel with where to donate.
-export default function DisasterStrip({ disasters, nameOf, onSelect }: Props) {
-  const top = useMemo(() => rankDisasters(disasters), [disasters]);
-  if (!top.length) return null;
+// Phones, on the disaster map: a sideways-scrolling row of chips, one per
+// significant or severe disaster (this is the phone's only list), most
+// severe and recent first, and a last chip that adds the minor ones.
+// Tapping a disaster opens its panel with where to donate.
+export default function DisasterStrip({ disasters, nameOf, onSelect, showMinor, onShowMinor }: Props) {
+  const minor = useMemo(() => disasters.filter(isMinor).length, [disasters]);
+  const top = useMemo(() => rankDisasters(showMinor ? disasters : disasters.filter((d) => !isMinor(d))), [disasters, showMinor]);
+  if (!disasters.length) return null;
   return (
     <nav aria-label="Disasters now" className="pointer-events-auto flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none]">
       {top.map((d) => {
@@ -43,6 +48,16 @@ export default function DisasterStrip({ disasters, nameOf, onSelect }: Props) {
           </button>
         );
       })}
+      {minor > 0 && (
+        <button
+          type="button"
+          aria-pressed={showMinor}
+          onClick={() => onShowMinor(!showMinor)}
+          className="flex min-h-11 shrink-0 items-center rounded-full border border-dashed border-line bg-card/90 px-3 py-2.5 text-xs text-muted backdrop-blur-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        >
+          {showMinor ? "Hide minor" : `+${minor} minor`}
+        </button>
+      )}
     </nav>
   );
 }

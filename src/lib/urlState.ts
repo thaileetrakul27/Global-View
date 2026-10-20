@@ -12,7 +12,12 @@ export interface UrlState {
   disaster?: string;
   /** A past day being viewed, YYYY-MM-DD. */
   date?: string;
+  /** Which map is shown; news when left out. An open disaster implies disasters. */
+  mode?: MapMode;
 }
+
+/** The globe shows either the news (who reads about whom) or the disasters happening now. */
+export type MapMode = "news" | "disasters";
 
 const CODE = /^[A-Z]{2,3}$/;
 const STORY = /^[a-z0-9-]{1,80}$/;
@@ -23,7 +28,8 @@ const DATE = /^\d{4}-\d{2}-\d{2}$/;
 /**
  * Parses a query string. Unknown or malformed values are ignored. Only one
  * panel can be open: a country wins over a story, and a story over a
- * disaster. A disaster drops the date, since past days have no disasters.
+ * disaster. The disaster map (map=disasters, or an open disaster) drops the
+ * date, since past days have no disasters.
  */
 export function readUrlState(search: string): UrlState {
   const p = new URLSearchParams(search);
@@ -36,8 +42,10 @@ export function readUrlState(search: string): UrlState {
   if (state.country && about && CODE.test(about)) state.about = about;
   if (!state.country && story && STORY.test(story)) state.story = story;
   if (!state.country && !state.story && disaster && DISASTER.test(disaster)) state.disaster = disaster;
+  if (state.disaster || p.get("map") === "disasters") state.mode = "disasters";
+  // Past days have news only.
   const date = p.get("date");
-  if (!state.disaster && date && DATE.test(date)) state.date = date;
+  if (state.mode !== "disasters" && date && DATE.test(date)) state.date = date;
   return state;
 }
 
@@ -52,7 +60,9 @@ export function writeUrlState(state: UrlState): string {
   } else if (state.disaster) {
     p.set("disaster", state.disaster);
   }
-  if (state.date && !p.has("disaster")) p.set("date", state.date);
+  const disasters = state.mode === "disasters" || p.has("disaster");
+  if (disasters && !p.has("disaster")) p.set("map", "disasters");
+  if (state.date && !disasters) p.set("date", state.date);
   const s = p.toString();
   return s ? `?${s}` : "";
 }

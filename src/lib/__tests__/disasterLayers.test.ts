@@ -8,7 +8,7 @@ import {
   UNMAPPED_FOCUS_ALTITUDE,
   activeRings,
   circleRing,
-  declutter,
+  clusterMarkers,
   haloRadiusKm,
   insidePolygon,
   placeLabelFit,
@@ -467,35 +467,43 @@ describe("layer heights", () => {
 });
 
 describe("screen layout", () => {
-  it("leaves markers with clear space between them where they are", () => {
-    const out = declutter([
+  it("leaves markers with clear space between them alone", () => {
+    const out = clusterMarkers([
       { id: "a", x: 0, y: 0, size: 26, rank: 2 },
       { id: "b", x: 40, y: 0, size: 26, rank: 1 },
     ]);
-    expect(out.size).toBe(0);
-    // Touching chips are moved apart.
-    expect(declutter([{ id: "a", x: 0, y: 0, size: 26, rank: 2 }, { id: "b", x: 26, y: 0, size: 26, rank: 1 }]).has("b")).toBe(true);
+    expect(out.heads.size).toBe(0);
+    expect(out.merged.size).toBe(0);
   });
 
-  it("moves the less important of two overlapping markers clear, directly away first", () => {
-    const out = declutter([
+  it("merges overlapping markers into the most important one, with a count", () => {
+    const out = clusterMarkers([
       { id: "minor", x: 10, y: 0, size: 22, rank: 1 },
       { id: "severe", x: 0, y: 0, size: 32, rank: 3 },
+      { id: "touching", x: 0, y: 28, size: 22, rank: 2 },
+      { id: "apart", x: 200, y: 0, size: 22, rank: 1 },
     ]);
-    expect(out.has("severe")).toBe(false);
-    const [dx, dy] = out.get("minor")!;
-    expect(Math.hypot(10 + dx, dy)).toBeGreaterThanOrEqual(16 + 11);
-    expect(dx).toBeGreaterThan(0);
-    expect(Math.abs(dy)).toBeLessThan(1e-9);
+    expect(out.heads.get("severe")?.sort()).toEqual(["minor", "touching"]);
+    expect([...out.merged].sort()).toEqual(["minor", "touching"]);
+    expect(out.heads.has("apart")).toBe(false);
   });
 
-  it("keeps the selected marker still, whatever its severity", () => {
-    const out = declutter([
+  it("keeps the selected marker as the head, whatever its severity", () => {
+    const out = clusterMarkers([
       { id: "selected", x: 0, y: 0, size: 22, rank: 10 },
       { id: "severe", x: 5, y: 5, size: 32, rank: 3 },
     ]);
-    expect(out.has("selected")).toBe(false);
-    expect(out.has("severe")).toBe(true);
+    expect(out.heads.get("selected")).toEqual(["severe"]);
+    expect(out.merged.has("selected")).toBe(false);
+  });
+
+  it("never lets two heads overlap", () => {
+    // A row of touching markers: every other one becomes a head.
+    const row = Array.from({ length: 6 }, (_, i) => ({ id: `m${i}`, x: i * 20, y: 0, size: 22, rank: 1 }));
+    const { heads, merged } = clusterMarkers(row);
+    const shown = row.filter((m) => !merged.has(m.id));
+    for (const a of shown) for (const b of shown) if (a !== b) expect(Math.hypot(a.x - b.x, a.y - b.y)).toBeGreaterThanOrEqual(22 + 3);
+    expect([...heads.values()].flat().length).toBe(merged.size);
   });
 
   it("puts a place label on the side where it fits, else where there is more room", () => {

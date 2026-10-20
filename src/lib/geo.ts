@@ -169,8 +169,29 @@ export function countriesNear(boxes: Map<string, Box[]>, lat: number, lng: numbe
   return out;
 }
 
-/** Arc width factor for a camera altitude: full width from altitude 1.8 out, a sixth up close, in steps of 0.05. */
-export function arcScaleFor(altitude: number): number {
-  const scale = Math.min(1, Math.max(1 / 6, altitude / 1.8));
-  return Math.round(scale * 20) / 20;
+/**
+ * Points along the shortest way between two places on the globe (the great
+ * circle), about every stepDeg degrees, both ends included. Reading lines
+ * follow these so they lie on the globe instead of arching off it.
+ */
+export function greatCircle(a: { lat: number; lng: number }, b: { lat: number; lng: number }, stepDeg = 3): { lat: number; lng: number }[] {
+  const rad = Math.PI / 180;
+  const vec = (p: { lat: number; lng: number }) => [Math.cos(p.lat * rad) * Math.cos(p.lng * rad), Math.cos(p.lat * rad) * Math.sin(p.lng * rad), Math.sin(p.lat * rad)];
+  const [p, q] = [vec(a), vec(b)];
+  const angle = Math.acos(Math.min(1, Math.max(-1, p[0] * q[0] + p[1] * q[1] + p[2] * q[2])));
+  // The same place, or exactly opposite (no single shortest way): just the ends.
+  if (angle < 1e-9 || Math.PI - angle < 1e-9) return [{ ...a }, { ...b }];
+  const steps = Math.max(1, Math.ceil(angle / rad / stepDeg));
+  const out: { lat: number; lng: number }[] = [];
+  for (let i = 0; i <= steps; i++) {
+    const t = i / steps;
+    const k1 = Math.sin((1 - t) * angle) / Math.sin(angle);
+    const k2 = Math.sin(t * angle) / Math.sin(angle);
+    const [x, y, z] = [0, 1, 2].map((j) => k1 * p[j] + k2 * q[j]);
+    out.push({ lat: Math.atan2(z, Math.hypot(x, y)) / rad, lng: Math.atan2(y, x) / rad });
+  }
+  // Exact ends, so the line starts and stops on the countries' points.
+  out[0] = { ...a };
+  out[out.length - 1] = { ...b };
+  return out;
 }

@@ -8,7 +8,8 @@ interface Props {
   onChange: (date: string | null) => void;
 }
 
-function label(date: string): string {
+/** "17 Oct 2026". */
+export function dayLabel(date: string): string {
   return new Date(`${date}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 }
 
@@ -24,7 +25,7 @@ export default function TimeControl({ dates, date, onChange }: Props) {
       <button type="button" className={btn} aria-label="Earlier day" disabled={!prev} onClick={() => prev && onChange(prev)}>
         ‹
       </button>
-      <span className="min-w-[8.5rem] text-center text-ink">{date ? label(date) : "Now"}</span>
+      <span className="min-w-[8.5rem] text-center text-ink">{date ? dayLabel(date) : "Now"}</span>
       <button
         type="button"
         className={btn}

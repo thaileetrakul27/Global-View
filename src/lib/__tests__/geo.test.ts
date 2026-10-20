@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { arcScaleFor, countriesNear, degreesToBox, detailReach, featureBoxes, type CountryFeature } from "../geo";
+import { countriesNear, degreesToBox, detailReach, featureBoxes, greatCircle, type CountryFeature } from "../geo";
 
 function feature(code: string, polygons: number[][][][]): CountryFeature {
   return {
@@ -49,12 +49,29 @@ describe("detailed shapes near the camera", () => {
   });
 });
 
-describe("arcScaleFor", () => {
-  it("keeps full arc width when far out and shrinks it in steps when zoomed in", () => {
-    expect(arcScaleFor(2.2)).toBe(1);
-    expect(arcScaleFor(1.8)).toBe(1);
-    expect(arcScaleFor(0.9)).toBe(0.5);
-    expect(arcScaleFor(0.1)).toBe(0.15);
-    expect(arcScaleFor(0.92)).toBe(arcScaleFor(0.9));
+describe("greatCircle", () => {
+  it("runs from one place to the other in short steps", () => {
+    const line = greatCircle({ lat: 0, lng: 0 }, { lat: 0, lng: 90 }, 3);
+    expect(line[0]).toEqual({ lat: 0, lng: 0 });
+    expect(line.at(-1)).toEqual({ lat: 0, lng: 90 });
+    expect(line).toHaveLength(31);
+    expect(line[15].lat).toBeCloseTo(0, 9);
+    expect(line[15].lng).toBeCloseTo(45, 9);
+  });
+
+  it("bends towards the pole the way a great circle does, not along the parallel", () => {
+    // Paris to Vancouver peaks near 68°N, far north of both (49°N).
+    const line = greatCircle({ lat: 48.9, lng: 2.4 }, { lat: 49.3, lng: -123.1 });
+    expect(Math.max(...line.map((p) => p.lat))).toBeCloseTo(68.3, 0);
+  });
+
+  it("crosses the date line the short way", () => {
+    const line = greatCircle({ lat: -17, lng: 178 }, { lat: -14, lng: -171 });
+    expect(line.every((p) => Math.abs(p.lng) > 170)).toBe(true);
+  });
+
+  it("gives just the ends for the same place or exact opposites", () => {
+    expect(greatCircle({ lat: 10, lng: 10 }, { lat: 10, lng: 10 })).toHaveLength(2);
+    expect(greatCircle({ lat: 0, lng: 0 }, { lat: 0, lng: 180 })).toHaveLength(2);
   });
 });

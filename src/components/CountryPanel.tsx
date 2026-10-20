@@ -9,7 +9,7 @@ import DisasterIcon, { SeverityChip } from "./DisasterIcon";
 import type { CountryFeature } from "@/lib/geo";
 import { relativeTime } from "@/lib/time";
 import ArticleList, { type SharedRef } from "./ArticleList";
-import AttentionChips, { type AttentionMode } from "./AttentionChips";
+import AttentionChips from "./AttentionChips";
 import CopyLink from "./CopyLink";
 import PlaceholderStoryCard from "./PlaceholderStoryCard";
 
@@ -26,9 +26,13 @@ interface Props {
   onClose: () => void;
   /** Null when the pipeline has not produced attention data yet. */
   attention: {
-    mode: AttentionMode;
-    onMode: (m: AttentionMode) => void;
-    mentions: Mention[];
+    /** Other countries in this country's top stories. */
+    outbound: Mention[];
+    /** How many countries have this country in their top stories. */
+    readers: number;
+    /** Whether "Who reads about" is open. */
+    readersOpen: boolean;
+    onReaders: (open: boolean) => void;
     inboundOnly?: boolean;
   } | null;
   nameOf: (code: string) => string;
@@ -51,8 +55,9 @@ interface Props {
   onSelectDisaster?: (id: string) => void;
 }
 
-// Contents of the country panel: the name, when the list was refreshed, who
-// this country is reading about, and the ranked articles.
+// Contents of the country panel: the name, when the list was refreshed, a
+// line for any disaster there now, then the ranked articles. Who this
+// country reads about, and who reads about it, are folded away below.
 export default function CountryPanel({
   country,
   state,
@@ -71,6 +76,7 @@ export default function CountryPanel({
   onSelectDisaster,
 }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   // Move focus to the heading when a new country opens, for keyboard users.
   useEffect(() => {
@@ -89,9 +95,11 @@ export default function CountryPanel({
       : data.articles
     : [];
 
-  // "X reads about…": a chip narrows this list to X's stories about that country.
-  const onChip = (chip: string) => onFilter(filterAbout === chip ? null : chip);
-  const inbound = attention?.mode === "inbound";
+  // A chip below the list narrows it; scroll up so the narrowed list shows.
+  const onChip = (chip: string) => {
+    onFilter(filterAbout === chip ? null : chip);
+    scrollRef.current?.scrollTo({ top: 0 });
+  };
 
   return (
     <div className="flex h-full min-h-0 flex-col">
@@ -136,9 +144,16 @@ export default function CountryPanel({
         </div>
       </div>
 
-      <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-6 sm:px-6">
+      <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto px-5 pb-6 sm:px-6">
         {!history && onSelectDisaster && disasters.length > 0 && (
-          <CountryDisasters name={name} disasters={disasters} onSelect={onSelectDisaster} />
+          <DisasterLine name={name} disasters={disasters} onSelect={onSelectDisaster} />
+        )}
+
+        {!history && world && (
+          <p className="mt-2 text-xs leading-snug text-muted">
+            {name} has no Google News edition, so this is a news search: its own outlets in their language first, then
+            international coverage in English.
+          </p>
         )}
 
         {history && archived && <ArticleList articles={archived} />}
@@ -171,37 +186,6 @@ export default function CountryPanel({
           </p>
         )}
 
-        {!history && world && (
-          <p className="mt-3 rounded-md bg-card px-3 py-2 text-xs leading-snug text-muted">
-            {name} has no Google News edition, so this is a news search instead: what
-            {name}&apos;s own outlets are publishing, in their language, followed by
-            international coverage in English.
-          </p>
-        )}
-
-        {!history && data && attention && (
-          <AttentionChips
-            countryName={name}
-            mode={attention.mode}
-            onMode={attention.onMode}
-            mentions={attention.mentions}
-            nameOf={nameOf}
-            onSelect={onChip}
-            activeCode={attention.mode === "outbound" ? filterAbout : null}
-            inboundOnly={attention.inboundOnly}
-          />
-        )}
-
-        {!history && data && attention && inbound && about && (
-          <AboutList
-            countryName={name}
-            articles={about.articles}
-            editions={about.editions}
-            nameOf={nameOf}
-            onSelect={(c) => onSelect(c)}
-          />
-        )}
-
         {!history && data && filterAbout && (
           <div className="mt-3 flex items-center justify-between gap-3 rounded-md bg-card px-3 py-2 text-xs text-ink">
             <span>
@@ -225,18 +209,24 @@ export default function CountryPanel({
           </p>
         )}
 
-        {!history && data && data.articles.length > 0 && !inbound && (
-          <div className={attention ? "mt-3 border-t border-line" : ""}>
-            <ArticleList articles={articles} shared={shared} onStory={onStory} />
-          </div>
-        )}
-        {!history && data && data.articles.length > 0 && inbound && (
-          <div className="mt-5 border-t border-line pt-3">
-            <p className="text-xs font-medium uppercase tracking-wide text-muted">
-              {world ? `World coverage about ${name}` : `${name}'s own top stories`}
-            </p>
-            <ArticleList articles={articles} shared={shared} onStory={onStory} />
-          </div>
+        {!history && data && data.articles.length > 0 && <ArticleList articles={articles} shared={shared} onStory={onStory} />}
+
+        {!history && data && attention && (
+          <AttentionChips
+            countryName={name}
+            outbound={attention.outbound}
+            readers={attention.readers}
+            nameOf={nameOf}
+            onFilter={onChip}
+            activeCode={filterAbout}
+            readersOpen={attention.readersOpen}
+            onReaders={attention.onReaders}
+            inboundOnly={attention.inboundOnly}
+          >
+            {about && (
+              <AboutList countryName={name} articles={about.articles} editions={about.editions} nameOf={nameOf} onSelect={(c) => onSelect(c)} />
+            )}
+          </AttentionChips>
         )}
       </div>
 
@@ -253,45 +243,46 @@ export default function CountryPanel({
   );
 }
 
-/** Rows shown before "Show all". */
-const DISASTER_LIMIT = 3;
-
-// "Disasters in Pakistan now": one button per disaster naming this country,
-// each opening that disaster's panel with its donation pages.
-function CountryDisasters({ name, disasters, onSelect }: { name: string; disasters: Disaster[]; onSelect: (id: string) => void }) {
+// One line for the disasters happening in this country now: the most
+// severe, which opens its panel with where to donate, and the rest folded
+// behind "+N more".
+function DisasterLine({ name, disasters, onSelect }: { name: string; disasters: Disaster[]; onSelect: (id: string) => void }) {
   const [expanded, setExpanded] = useState(false);
-  const headingId = useId();
-  const shown = expanded ? disasters : disasters.slice(0, DISASTER_LIMIT);
+  const listId = useId();
+  const [first, ...rest] = disasters;
+  const row = "flex min-w-0 items-center gap-2 text-left text-sm text-ink hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent";
   return (
-    <section aria-labelledby={headingId} className="mt-2 rounded-lg border border-line bg-card px-3 py-2.5">
-      <h3 id={headingId} className="text-xs font-medium uppercase tracking-wide text-muted">
-        Disasters in {name} now
-      </h3>
-      <ul className="mt-1 divide-y divide-line">
-        {shown.map((d) => (
-          <li key={d.id}>
-            <button
-              type="button"
-              data-disaster-id={d.id}
-              onClick={() => onSelect(d.id)}
-              className="flex w-full items-center gap-2.5 py-2 text-left text-sm text-ink hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-            >
-              <DisasterIcon type={d.type} size={16} className="shrink-0" title={DISASTER_META[d.type].label} />
-              <span className="min-w-0 flex-1 leading-snug">{d.title}</span>
-              {d.severity >= 2 && <SeverityChip severity={d.severity} />}
-            </button>
-          </li>
-        ))}
-      </ul>
-      {disasters.length > DISASTER_LIMIT && (
-        <button
-          type="button"
-          aria-expanded={expanded}
-          onClick={() => setExpanded((v) => !v)}
-          className="mt-1 text-xs font-medium text-accent hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-        >
-          {expanded ? "Show fewer" : `Show all ${disasters.length}`}
+    <section aria-label={`Disasters in ${name} now`} className="mt-2 rounded-lg border border-line bg-card px-3 py-2">
+      <div className="flex items-center gap-3">
+        <button type="button" data-disaster-id={first.id} onClick={() => onSelect(first.id)} className={`${row} flex-1`}>
+          <DisasterIcon type={first.type} size={16} className="shrink-0" title={DISASTER_META[first.type].label} />
+          <span className="min-w-0 truncate">{first.title}</span>
+          {first.severity >= 2 && <SeverityChip severity={first.severity} />}
         </button>
+        {rest.length > 0 && (
+          <button
+            type="button"
+            aria-expanded={expanded}
+            aria-controls={listId}
+            onClick={() => setExpanded((v) => !v)}
+            className="shrink-0 text-xs font-medium text-accent hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
+            {expanded ? "Fewer" : `+${rest.length} more`}
+          </button>
+        )}
+      </div>
+      {rest.length > 0 && (
+        <ul id={listId} hidden={!expanded} className="mt-1 divide-y divide-line">
+          {rest.map((d) => (
+            <li key={d.id}>
+              <button type="button" data-disaster-id={d.id} onClick={() => onSelect(d.id)} className={`${row} w-full py-2`}>
+                <DisasterIcon type={d.type} size={16} className="shrink-0" title={DISASTER_META[d.type].label} />
+                <span className="min-w-0 flex-1 truncate">{d.title}</span>
+                {d.severity >= 2 && <SeverityChip severity={d.severity} />}
+              </button>
+            </li>
+          ))}
+        </ul>
       )}
     </section>
   );

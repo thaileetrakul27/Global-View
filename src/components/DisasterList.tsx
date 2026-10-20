@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Disaster } from "@/lib/data";
 import { DISASTER_META } from "@/lib/disasterMeta";
-import { countByType, locationLine, rankDisasters, typeCountLabel } from "@/lib/disasters";
+import { countByType, isMinor, locationLine, rankDisasters, typeCountLabel } from "@/lib/disasters";
 import DisasterIcon, { SeverityChip } from "./DisasterIcon";
 
 interface Props {
@@ -11,9 +11,9 @@ interface Props {
   nameOf: (code: string) => string;
   /** Open a disaster's panel by id. */
   onSelect: (id: string) => void;
-  /** Whether the globe draws the disaster layer. */
-  showOnMap: boolean;
-  onToggleMap: (v: boolean) => void;
+  /** Whether minor disasters are listed and drawn too. */
+  showMinor: boolean;
+  onShowMinor: (v: boolean) => void;
   /** Whether every row shows. Held by the parent so it survives a panel opening and closing. */
   expanded: boolean;
   onExpand: (v: boolean) => void;
@@ -23,19 +23,21 @@ interface Props {
 const LIMIT = 8;
 const ring = "focus:outline-none focus-visible:ring-2 focus-visible:ring-accent";
 
-// Desktop landing card: how many disasters are ongoing, by type, and the
-// most severe and recent ones. Clicking a row opens its panel; the switch
-// shows or hides the disaster layer on the globe. The card never runs past
-// the bottom of the screen: the rows scroll, the heading and the footer
-// with the switch stay put.
-export default function DisasterList({ disasters, nameOf, onSelect, showOnMap, onToggleMap, expanded, onExpand }: Props) {
+// Desktop card on the disaster map: the significant and severe disasters
+// ongoing now, by type, most severe and recent first. Clicking a row opens
+// its panel; the switch adds the minor ones to the list and the globe. The
+// card never runs past the bottom of the screen: the rows scroll, the
+// heading and the footer with the switch stay put.
+export default function DisasterList({ disasters, nameOf, onSelect, showMinor, onShowMinor, expanded, onExpand }: Props) {
   const headingId = useId();
   const listId = useId();
-  const ranked = useMemo(() => rankDisasters(disasters), [disasters]);
-  const counts = useMemo(() => countByType(disasters), [disasters]);
+  const minor = useMemo(() => disasters.filter(isMinor).length, [disasters]);
+  const listed = useMemo(() => (showMinor ? disasters : disasters.filter((d) => !isMinor(d))), [disasters, showMinor]);
+  const ranked = useMemo(() => rankDisasters(listed), [listed]);
+  const counts = useMemo(() => countByType(listed), [listed]);
   const shown = expanded ? ranked : ranked.slice(0, LIMIT);
   const { ref: listRef, more, onScroll } = useMoreBelow(shown.length);
-  if (!ranked.length) return null;
+  if (!disasters.length) return null;
 
   return (
     <section
@@ -46,7 +48,7 @@ export default function DisasterList({ disasters, nameOf, onSelect, showOnMap, o
         <h2 id={headingId} className="text-xs font-medium uppercase tracking-wide text-muted">
           Disasters now
         </h2>
-        <span className="text-xs text-muted">{ranked.length} ongoing</span>
+        <span className="text-xs text-muted">{showMinor ? `${ranked.length} ongoing` : `${ranked.length} significant`}</span>
       </div>
 
       <ul aria-label="By type" className="mt-2 flex shrink-0 flex-wrap gap-x-3 gap-y-1">
@@ -88,7 +90,7 @@ export default function DisasterList({ disasters, nameOf, onSelect, showOnMap, o
         ) : (
           <span />
         )}
-        <MapSwitch checked={showOnMap} onChange={onToggleMap} />
+        {minor > 0 && <MinorSwitch checked={showMinor} count={minor} onChange={onShowMinor} />}
       </div>
     </section>
   );
@@ -137,11 +139,11 @@ function Row({ disaster: d, nameOf, onSelect }: { disaster: Disaster; nameOf: (c
   );
 }
 
-/** "Show on map" on/off switch for the globe's disaster layer. */
-function MapSwitch({ checked, onChange }: { checked: boolean; onChange: (v: boolean) => void }) {
+/** On/off switch that adds the minor disasters to the list and the globe. */
+function MinorSwitch({ checked, count, onChange }: { checked: boolean; count: number; onChange: (v: boolean) => void }) {
   return (
     <button type="button" role="switch" aria-checked={checked} onClick={() => onChange(!checked)} className={`-mr-1 flex items-center gap-2 rounded-full py-0.5 pr-1 pl-2 text-xs text-ink ${ring}`}>
-      Show on map
+      Include {count} minor
       <span aria-hidden="true" className={`relative h-4 w-7 shrink-0 rounded-full transition-colors ${checked ? "bg-accent" : "bg-muted/40"}`}>
         <span className={`absolute top-0.5 left-0.5 h-3 w-3 rounded-full bg-white transition-transform ${checked ? "translate-x-3" : ""}`} />
       </span>

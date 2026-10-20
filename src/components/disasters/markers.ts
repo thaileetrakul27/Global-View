@@ -7,6 +7,8 @@ import type { MarkerItem, PlaceItem } from "@/lib/disasterLayers";
 
 export interface MarkerHandlers {
   select: (id: string) => void;
+  /** A cluster head was pressed: zoom towards the cluster's centre (or open the head when already close). */
+  zoom: (id: string, lat: number, lng: number) => void;
   /** Called with the id on pointer enter, null on leave. */
   hover: (id: string | null) => void;
   /** Called with the id on keyboard focus, null on blur. */
@@ -18,9 +20,11 @@ export interface MarkerHandlers {
 /**
  * A white chip with the type's icon over a halo that shows the hazard (see
  * the "Disaster markers" block in globals.css): ripples for a flood, a
- * flickering glow for a fire, a spinning spiral for a storm. Severe
- * disasters get a bigger chip and a stronger halo; disasters only located to
- * a country get a dashed ring.
+ * flickering glow for a fire, a spinning spiral for a storm. Only severe
+ * disasters, and the one selected or pointed at, show the halo; the rest
+ * are plain chips. Disasters only located to a country get a dashed ring.
+ * When markers overlap, the head of the cluster shows a count and pressing
+ * it zooms in (see setMarkerCluster).
  */
 export function createMarkerElement(m: MarkerItem, h: MarkerHandlers): HTMLElement {
   const meta = DISASTER_META[m.type];
@@ -35,6 +39,8 @@ export function createMarkerElement(m: MarkerItem, h: MarkerHandlers): HTMLEleme
   el.setAttribute("role", "button");
   el.tabIndex = 0;
   el.setAttribute("aria-label", m.label);
+  el.dataset.label = m.label;
+  el.dataset.title = m.title;
   el.style.setProperty("--dz-color", meta.color);
   el.style.setProperty("--dz-light", meta.light);
   el.style.setProperty("--dz-size", `${m.size}px`);
@@ -43,19 +49,28 @@ export function createMarkerElement(m: MarkerItem, h: MarkerHandlers): HTMLEleme
     '<span class="gv-dz-fx"><span class="gv-dz-halo"></span><span class="gv-dz-halo gv-dz-halo-late"></span></span>' +
     (m.precision === "country" ? '<span class="gv-dz-ring"></span>' : "") +
     '<span class="gv-dz-stem"></span>' +
-    `<span class="gv-dz-chip">${iconSvg(m.type, Math.round(m.size * 0.58))}</span>`;
+    `<span class="gv-dz-chip">${iconSvg(m.type, Math.round(m.size * 0.58))}</span>` +
+    '<span class="gv-dz-count" aria-hidden="true"></span>';
+
+  // A cluster head zooms in; a lone marker opens its disaster.
+  const press = () => {
+    const lat = Number(el.dataset.clat);
+    const lng = Number(el.dataset.clng);
+    if (el.dataset.count && Number.isFinite(lat) && Number.isFinite(lng)) h.zoom(m.disasterId, lat, lng);
+    else h.select(m.disasterId);
+  };
 
   // The globe treats a press that reaches its container as a click on
   // whatever lies under the pointer; stop it so only the marker reacts.
   el.addEventListener("pointerdown", (e) => e.stopPropagation());
   el.addEventListener("click", (e) => {
     e.stopPropagation();
-    h.select(m.disasterId);
+    press();
   });
   el.addEventListener("keydown", (e) => {
     if (e.key !== "Enter" && e.key !== " ") return;
     e.preventDefault();
-    h.select(m.disasterId);
+    press();
   });
   el.addEventListener("pointerenter", (e) => {
     if (e.pointerType !== "touch") h.hover(m.disasterId);
@@ -78,12 +93,46 @@ export function createMarkerElement(m: MarkerItem, h: MarkerHandlers): HTMLEleme
   return el;
 }
 
-/** Moves a marker's chip aside by (dx, dy) px, so it does not cover a more important neighbour. */
-export function setMarkerNudge(el: HTMLElement, dx: number, dy: number): void {
-  const v = `${Math.round(dx)}px ${Math.round(dy)}px`;
-  if (el.dataset.nudge === v) return;
-  el.dataset.nudge = v;
-  el.style.setProperty("--dz-nudge", v);
+/**
+ * Makes a marker the head of a cluster of `count` others centred at
+ * (lat, lng), or a lone marker again when count is 0. A head shows the
+ * count and, when pressed, zooms in rather than opening its disaster.
+ */
+export function setMarkerCluster(el: HTMLElement, count: number, lat = 0, lng = 0): void {
+  const value = count > 0 ? String(count) : "";
+  if ((el.dataset.count ?? "") === value && (!value || (el.dataset.clat === String(lat) && el.dataset.clng === String(lng)))) return;
+  if (value) {
+    el.dataset.count = value;
+    el.dataset.clat = String(lat);
+    el.dataset.clng = String(lng);
+    el.querySelector(".gv-dz-count")!.textContent = `+${count}`;
+    el.setAttribute("aria-label", `${el.dataset.title ?? ""} and ${count} more ${count === 1 ? "disaster" : "disasters"} nearby. Zoom in`);
+  } else {
+    delete el.dataset.count;
+    delete el.dataset.clat;
+    delete el.dataset.clng;
+    el.querySelector(".gv-dz-count")!.textContent = "";
+    el.setAttribute("aria-label", el.dataset.label ?? "");
+  }
+}
+
+/** Hides a marker merged into a cluster head (out of sight, out of the tab order), or shows it again. */
+export function setMarkerMerged(el: HTMLElement, merged: boolean): void {
+  if (el.classList.contains("gv-merged") === merged) return;
+  el.classList.toggle("gv-merged", merged);
+  if (merged && document.activeElement === el) el.blur();
+  syncFocusable(el);
+}
+
+/** A marker can take focus only while it is on the near side and not merged into a cluster. */
+function syncFocusable(el: HTMLElement): void {
+  const reachable = !el.classList.contains("gv-hidden") && !el.classList.contains("gv-merged");
+  const tab = reachable ? 0 : -1;
+  if (el.tabIndex !== tab) el.tabIndex = tab;
+  if (el.hasAttribute("aria-hidden") === reachable) {
+    if (reachable) el.removeAttribute("aria-hidden");
+    else el.setAttribute("aria-hidden", "true");
+  }
 }
 
 /** Marks the selected marker and dims the rest while something is selected. */
@@ -150,12 +199,7 @@ export function setElementVisible(el: HTMLElement, visible: boolean): void {
   if (el.classList.contains("gv-hidden") === visible) el.classList.toggle("gv-hidden", !visible);
   if (!el.classList.contains("gv-dz")) return;
   if (!visible && document.activeElement === el) el.blur();
-  const tab = visible ? 0 : -1;
-  if (el.tabIndex !== tab) el.tabIndex = tab;
-  if (el.hasAttribute("aria-hidden") === visible) {
-    if (visible) el.removeAttribute("aria-hidden");
-    else el.setAttribute("aria-hidden", "true");
-  }
+  syncFocusable(el);
 }
 
 /** Tooltip text under a disaster's title: "Flood · Minor". */

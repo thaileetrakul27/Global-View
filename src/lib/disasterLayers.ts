@@ -623,54 +623,51 @@ export interface ScreenMarker {
   y: number;
   /** Diameter, px. */
   size: number;
-  /** Higher keeps its place: the selected marker, then the more severe. */
+  /** Higher stays a cluster's head: the selected marker, then the more severe. */
   rank: number;
 }
 
-/** Candidate spots per ring of the search spiral. */
-const SPIRAL_STEPS = 8;
-/** Rings of the spiral, each a third of a marker further out. */
-const SPIRAL_RINGS = 4;
 /** Clear space kept between neighbouring markers, px. */
 const MARKER_GAP = 3;
 
+/** Overlapping markers merged into one: the head shown, the rest hidden behind its count. */
+export interface MarkerClusters {
+  /** Head id -> the ids merged into it (never empty). */
+  heads: Map<string, string[]>;
+  /** Every id merged into a head. */
+  merged: Set<string>;
+}
+
 /**
- * Offsets that spread overlapping markers apart on screen. Markers are
- * placed in rank order; one that comes closer than MARKER_GAP to a marker
- * already placed moves along a short spiral, starting directly away from
- * it, to the first clear spot. One with no clear spot within reach stays
- * put. Returns only the markers that move, as [dx, dy] px.
+ * Merges markers whose chips would overlap on screen. Markers are taken in
+ * rank order (the selected one, then the most severe); each one that comes
+ * within MARKER_GAP of a head already placed joins that head's cluster,
+ * otherwise it becomes a head itself. Heads never overlap each other.
  */
-export function declutter(markers: ScreenMarker[]): Map<string, [number, number]> {
+export function clusterMarkers(markers: ScreenMarker[]): MarkerClusters {
   const order = [...markers].sort((a, b) => b.rank - a.rank || a.id.localeCompare(b.id));
-  const placed: { x: number; y: number; r: number }[] = [];
-  const out = new Map<string, [number, number]>();
+  const placed: { id: string; x: number; y: number; r: number }[] = [];
+  const heads = new Map<string, string[]>();
+  const merged = new Set<string>();
   for (const m of order) {
     const r = m.size / 2;
-    const clash = (x: number, y: number) => placed.find((p) => Math.hypot(p.x - x, p.y - y) < p.r + r + MARKER_GAP);
-    const first = clash(m.x, m.y);
-    let spot = { x: m.x, y: m.y };
-    if (first) {
-      const away = first.x === m.x && first.y === m.y ? -Math.PI / 2 : Math.atan2(m.y - first.y, m.x - first.x);
-      search: for (let ring = 1; ring <= SPIRAL_RINGS; ring++) {
-        const dist = first.r + r + MARKER_GAP + 0.5 + ((ring - 1) * m.size) / 3;
-        for (let k = 0; k < SPIRAL_STEPS; k++) {
-          // Directly away first, then alternating either side of it.
-          const turn = Math.ceil(k / 2) * (k % 2 ? 1 : -1) * ((2 * Math.PI) / SPIRAL_STEPS);
-          const x = first.x + Math.cos(away + turn) * dist;
-          const y = first.y + Math.sin(away + turn) * dist;
-          if (!clash(x, y)) {
-            spot = { x, y };
-            break search;
-          }
-        }
-      }
-      if (spot.x !== m.x || spot.y !== m.y) out.set(m.id, [spot.x - m.x, spot.y - m.y]);
+    const head = placed.find((p) => Math.hypot(p.x - m.x, p.y - m.y) < p.r + r + MARKER_GAP);
+    if (head) {
+      merged.add(m.id);
+      heads.set(head.id, [...(heads.get(head.id) ?? []), m.id]);
+    } else {
+      placed.push({ id: m.id, x: m.x, y: m.y, r });
     }
-    placed.push({ ...spot, r });
   }
-  return out;
+  return { heads, merged };
 }
+
+/** How far below the default view the camera must be before minor disasters appear on their own. */
+export const MINOR_REVEAL_ALTITUDE = 1;
+/** A cluster tapped at or below this altitude opens its head instead of zooming further. */
+export const CLUSTER_MIN_ALTITUDE = FOCUS_MIN_ALTITUDE;
+/** Each tap on a cluster brings the camera this much closer. */
+export const CLUSTER_ZOOM = 0.45;
 
 /**
  * Where a place's label goes: the preferred side of its dot, unless the
