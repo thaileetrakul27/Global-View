@@ -1,1 +1,987 @@
-{}
+{
+  "eonet-cyclone-eonet_25290": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Hurricane Trudy, which started on 13 October 2026, brought heavy rain, flooding and strong winds to Mexico's Pacific coast. In Colima, 71 homes and 35 businesses were reported damaged, and one death was reported in Guerrero. By 18 October the storm was moving away and weakening, and hurricane watches and warnings had expired by Sunday night. Authorities warned that rain could still cause landslides and flooding.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Colima",
+        "admin": "Colima",
+        "country": "MX",
+        "kind": "city",
+        "impact": "floods, fallen trees, stranded vehicles"
+      },
+      {
+        "name": "Villa de Álvarez",
+        "admin": "Colima",
+        "country": "MX",
+        "kind": "town",
+        "impact": "floods, fallen trees, stranded vehicles"
+      },
+      {
+        "name": "Manzanillo",
+        "admin": "Colima",
+        "country": "MX",
+        "kind": "city",
+        "impact": "floods, fallen trees, stranded vehicles"
+      },
+      {
+        "name": "Guerrero",
+        "country": "MX",
+        "kind": "region",
+        "impact": "one death reported"
+      },
+      {
+        "name": "Jalisco",
+        "country": "MX",
+        "kind": "region",
+        "impact": "port and small-boat restrictions"
+      },
+      {
+        "name": "Michoacán",
+        "country": "MX",
+        "kind": "region",
+        "impact": "port and small-boat restrictions"
+      },
+      {
+        "name": "Nayarit",
+        "country": "MX",
+        "kind": "region",
+        "impact": "port and small-boat restrictions"
+      },
+      {
+        "name": "Las Islas Marías",
+        "country": "MX",
+        "kind": "site",
+        "impact": "tropical storm warning in effect"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "elfinanciero.com.mx",
+        "sourceUrl": "https://www.elfinanciero.com.mx/nacional/2026/10/17/huracan-trudy-en-vivo-se-fortalece-a-categoria-2-y-amenaza-costas-de-jalisco-y-colima-sigue-su-trayectoria/"
+      },
+      {
+        "label": "Homes damaged",
+        "value": "71",
+        "sourceName": "elfinanciero.com.mx",
+        "sourceUrl": "https://www.elfinanciero.com.mx/nacional/2026/10/17/huracan-trudy-en-vivo-se-fortalece-a-categoria-2-y-amenaza-costas-de-jalisco-y-colima-sigue-su-trayectoria/"
+      },
+      {
+        "label": "Businesses damaged",
+        "value": "35",
+        "sourceName": "elfinanciero.com.mx",
+        "sourceUrl": "https://www.elfinanciero.com.mx/nacional/2026/10/17/huracan-trudy-en-vivo-se-fortalece-a-categoria-2-y-amenaza-costas-de-jalisco-y-colima-sigue-su-trayectoria/"
+      },
+      {
+        "label": "Sheltered",
+        "value": "177 people in temporary shelters",
+        "sourceName": "elfinanciero.com.mx",
+        "sourceUrl": "https://www.elfinanciero.com.mx/nacional/2026/10/17/huracan-trudy-en-vivo-se-fortalece-a-categoria-2-y-amenaza-costas-de-jalisco-y-colima-sigue-su-trayectoria/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "cbsnews.com",
+        "url": "https://www.cbsnews.com/news/hurricane-trudy-mexico-pacific-coast-life-threatening-flooding-mudslides/",
+        "title": "Hurricane Trudy weakens to Category 1 storm after bringing heavy rain to Mexico's Pacific coast - CBS News"
+      },
+      {
+        "name": "massinformacion.com.mx",
+        "url": "https://massinformacion.com.mx/trudy-obliga-a-cerrar-cinco-puertos/",
+        "title": "Trudy obliga a cerrar cinco puertos - Más Información"
+      },
+      {
+        "name": "es-us.noticias.yahoo.com",
+        "url": "https://es-us.noticias.yahoo.com/hurac%C3%A1n-trudy-tregua-jalisco-disminuye-041037787.html",
+        "title": "Huracán Trudy da tregua a Jalisco, disminuye a categoría 1 y se aleja de las costas mexicanas - Yahoo Noticias"
+      }
+    ],
+    "membersHash": "eonet,gdacs|MX#72534fe3",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "gdacs-cyclone-tc-1001335": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Tropical Cyclone Simon, also called Hurricane Simon, affected Mexico's Pacific coast from 7 October 2026. Flooding, landslides and wind damage were reported in Baja California, Guerrero, Jalisco and Colima. Deaths and missing people were reported, but Simon's share of the combined toll with Tropical Storm Rachel is not separately known. The US National Hurricane Center issued its final advisory on 16 October as the storm dissipated. The latest effects reports date to 14…",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Ensenada",
+        "admin": "Baja California",
+        "country": "MX",
+        "kind": "city",
+        "impact": "Vehicles swept away, homes damaged, six missing"
+      },
+      {
+        "name": "San Felipe",
+        "admin": "Baja California",
+        "country": "MX",
+        "kind": "town",
+        "impact": "Two people missing"
+      },
+      {
+        "name": "Chilpancingo",
+        "admin": "Guerrero",
+        "country": "MX",
+        "kind": "city",
+        "impact": "Retaining wall collapse killed one man"
+      },
+      {
+        "name": "Cihuatlán",
+        "admin": "Jalisco",
+        "country": "MX",
+        "kind": "town",
+        "impact": "Streets flooded, evacuation preparations urged"
+      },
+      {
+        "name": "Manzanillo",
+        "admin": "Colima",
+        "country": "MX",
+        "kind": "city",
+        "impact": "Homes and streets flooded"
+      },
+      {
+        "name": "Puerto Vallarta",
+        "admin": "Jalisco",
+        "country": "MX",
+        "kind": "city",
+        "impact": "Airport operations suspended"
+      },
+      {
+        "name": "Yelapa",
+        "admin": "Jalisco",
+        "country": "MX",
+        "kind": "town",
+        "impact": "About 100 families evacuated by ferry"
+      },
+      {
+        "name": "Quimixto",
+        "admin": "Jalisco",
+        "country": "MX",
+        "kind": "town",
+        "impact": "About 100 families evacuated by ferry"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Missing",
+        "value": "at least 6",
+        "sourceName": "paho.org",
+        "sourceUrl": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-14-october-2026"
+      },
+      {
+        "label": "Rescued",
+        "value": "32 people",
+        "sourceName": "cbsnews.com",
+        "sourceUrl": "https://www.cbsnews.com/news/hurricane-simon-still-hitting-western-mexico-tropical-systems/"
+      },
+      {
+        "label": "Evacuated",
+        "value": "about 5,000 people",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hurricane_Simon"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "star.nesdis.noaa.gov",
+        "url": "https://www.star.nesdis.noaa.gov/goes/floater.php?stormid=EP202026",
+        "title": "Post-tropical Cyclone Simon at 21.5°N - 110.3°W - NOAA / NESDIS / STAR"
+      },
+      {
+        "name": "cbsnews.com",
+        "url": "https://www.cbsnews.com/news/hurricane-simon-still-hitting-western-mexico-tropical-systems/",
+        "title": "Hurricane Simon hitting western Mexico after tropical systems kill 6 - CBS News"
+      },
+      {
+        "name": "usnews.com",
+        "url": "https://www.usnews.com/news/world/articles/2026-10-12/hurricane-simon-crawls-along-mexicos-pacific-coast-bringing-floods-and-evacuations",
+        "title": "Hurricane Simon Crawls Along Mexico's Pacific Coast, Bringing Floods and Evacuations"
+      }
+    ],
+    "membersHash": "gdacs|MX#4a2ce888",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "gdacs-cyclone-tc-1001338": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Super Typhoon Champi (Typhoon No. 30) started on 14 October 2026. On 17-18 October it missed Guam narrowly but still affected southern Guam and other islands, tearing off roofs and knocking down trees. Several Northern Mariana Islands communities lost electricity and water, and Red Cross shelters were opened. As of 20 October the storm was forecast to reach violent strength and turn north, possibly near Japan's Ishigaki Island. No effects in Japan have been reported.",
+    "ongoing": true,
+    "places": [],
+    "figures": [
+      {
+        "label": "People in shelters",
+        "value": "over 1,000 residents",
+        "sourceName": "archyde.com",
+        "sourceUrl": "https://www.archyde.com/american-red-cross-responds-to-super-typhoon-champi-and-hurricane-isaias/"
+      },
+      {
+        "label": "Homes destroyed or severely damaged",
+        "value": "up to 100 homes",
+        "sourceName": "archyde.com",
+        "sourceUrl": "https://www.archyde.com/american-red-cross-responds-to-super-typhoon-champi-and-hurricane-isaias/"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://www.redcross.org/",
+        "org": "American Red Cross",
+        "kind": "society",
+        "note": "US Red Cross general page with donate prompt for Typhoon Champi; not a dedicated appeal."
+      }
+    ],
+    "sources": [
+      {
+        "name": "wxtech.weathernews.com",
+        "url": "https://wxtech.weathernews.com/en/news/sky20261019-01/",
+        "title": "Typhoon CHAMPI: Forecast to Intensify to Violent Strength and Approach Taiwan - Weathernews"
+      },
+      {
+        "name": "taipeitimes.com",
+        "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/20/2003866289",
+        "title": "Typhoon Champi to turn away from Taiwan, will still bring heavy rain - Taipei Times"
+      },
+      {
+        "name": "theepochtimes.com",
+        "url": "https://www.theepochtimes.com/us/typhoon-champi-triggers-emergency-declarations-for-guam-northern-mariana-islands-6105773",
+        "title": "Typhoon Champi Triggers Emergency Declarations for Guam, Northern Mariana Islands"
+      },
+      {
+        "name": "yahoo.com",
+        "url": "https://yahoo.com/news/weather-news/articles/super-typhoon-champi-damages-guam-162204938.html",
+        "title": "Super Typhoon Champi damages Guam, bound for Taiwan"
+      },
+      {
+        "name": "archyde.com",
+        "url": "https://www.archyde.com/american-red-cross-responds-to-super-typhoon-champi-and-hurricane-isaias/",
+        "title": "American Red Cross Responds to Super Typhoon Champi and Hurricane Isaias"
+      }
+    ],
+    "membersHash": "eonet,gdacs|JP#afb26aec",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "gdacs-drought-dr-1018332": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Drought in Europe, started 21 December 2025, is ongoing according to the latest sources found. The JRC European Drought Observatory said in mid-September 2026 that conditions stayed stable yet critical across most of Europe. The GDACS alert, last updated 19 October 2026, covers 1,759,971 km² of agricultural drought across 27 countries. Research was cut short, so coverage is partial.",
+    "ongoing": true,
+    "places": [],
+    "figures": [
+      {
+        "label": "Affected area",
+        "value": "1,759,971 km² of agricultural drought",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://gdacs.org/report.aspx?eventtype=DR&eventid=1018332"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,NO,PL,RO,RS,RU,SE,SI,SK,UA#22223994",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "gdacs-drought-dr-1027449": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A drought affecting Central America began on 21 April 2026 and is ongoing as of 20 October 2026. Honduras has red alerts in 103 municipalities across eight departments. El Salvador has had a national red alert since 25 August. Guatemala requested a red drought alert for 15 municipalities in the Trifinio Region. Red Cross early action targets more than 22,000 people in El Salvador, Guatemala and Colombia.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Piraera",
+        "country": "HN",
+        "kind": "town",
+        "impact": "Maize and bean harvests failed"
+      },
+      {
+        "name": "Trifinio Region",
+        "country": "GT",
+        "kind": "region",
+        "impact": "Red drought alert requested for 15 municipalities"
+      },
+      {
+        "name": "Lake Güija",
+        "country": "GT",
+        "kind": "site",
+        "impact": "Water level has dropped"
+      },
+      {
+        "name": "Morazán",
+        "country": "SV",
+        "kind": "region",
+        "impact": "Red Cross drought aid operating"
+      },
+      {
+        "name": "La Unión",
+        "country": "SV",
+        "kind": "region",
+        "impact": "Red Cross drought aid operating"
+      },
+      {
+        "name": "Guatajiagua",
+        "country": "SV",
+        "kind": "town",
+        "impact": "Red Cross aid reaches families"
+      },
+      {
+        "name": "Chilanga",
+        "country": "SV",
+        "kind": "town",
+        "impact": "Red Cross aid reaches families"
+      },
+      {
+        "name": "Lolotiquillo",
+        "country": "SV",
+        "kind": "town",
+        "impact": "Red Cross aid reaches families"
+      },
+      {
+        "name": "Cacaopera",
+        "country": "SV",
+        "kind": "town",
+        "impact": "Red Cross aid reaches families"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People in need",
+        "value": "708,000 people",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
+      },
+      {
+        "label": "People targeted by appeal",
+        "value": "538,000 people",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
+      },
+      {
+        "label": "Families receiving priority Red Cross…",
+        "value": "more than 600 families",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/el-salvador/2026/08/27/la-cruz-roja-activa-ayudas-anticipadas-por-la-sequia-en-zonas-del-corredor-seco-de-el-salvador/"
+      },
+      {
+        "label": "People targeted by Red Cross early…",
+        "value": "more than 22,000 people",
+        "sourceName": "ifrc.org",
+        "sourceUrl": "https://www.ifrc.org/press-release/red-cross-activates-early-action-protocols-first-signs-drought-el-salvador-guatemala"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV#0d2a1d89",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "gdacs-drought-dr-1027450": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Drought began on 21 June 2026 across parts of East Africa and the Central Sahel. The June to September dry season was exceptionally dry in much of northern and western East Africa, with some areas recording their driest season on record. Rainfall deficits have affected parts of Ethiopia and South Sudan. As of 19 October 2026 the event is ongoing, but forecasts for October to December point to above-average rainfall and flood risk in the Horn of Africa.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Northern Sudan",
+        "country": "SD",
+        "kind": "region",
+        "impact": "rainfall 45 percent of normal or less"
+      },
+      {
+        "name": "Western Kenya",
+        "country": "KE",
+        "kind": "region",
+        "impact": "driest conditions on record"
+      },
+      {
+        "name": "Middle Belt",
+        "country": "NG",
+        "kind": "region",
+        "impact": "crop and rangeland conditions severely degraded"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Rainfall deficit",
+        "value": "100 to more than 300 mm",
+        "sourceName": "peopledaily.digital",
+        "sourceUrl": "https://peopledaily.digital/news/east-africa-drought-hit-crops-now-face-el-nino-flood-threat-report"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "peopledaily.digital",
+        "url": "https://peopledaily.digital/news/east-africa-drought-hit-crops-now-face-el-nino-flood-threat-report",
+        "title": "East Africa drought-hit crops now face El Niño flood threat"
+      },
+      {
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/el-nino-weather-extremes-worsen-food-security-east-africa-and-central-america-and-threaten-next-2026-10-07_en",
+        "title": "El Niño weather extremes worsen food security in East Africa and Central America and threaten next season crops in Southern Africa and South America - Joint…"
+      }
+    ],
+    "membersHash": "gdacs,ifrc|CD,CF,CM,DJ,ER,ET,KE,NE,NG,SD,SO,SS,TD#d3aabe2f",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "gdacs-drought-dr-1027465": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "A drought affecting Uganda, Kenya and Tanzania began on 21 May 2026, according to the GDACS feed. As of 19 October 2026, the IFRC reported drought effects still visible in Karamoja, Uganda, with water sources dried up or very low. Forecast above-normal October–December rains could bring flooding and landslides.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Karamoja",
+        "country": "UG",
+        "kind": "region",
+        "impact": "drought-affected, water and pasture shortages"
+      },
+      {
+        "name": "Northern Uganda",
+        "country": "UG",
+        "kind": "region",
+        "impact": "among driest conditions on record"
+      },
+      {
+        "name": "Eastern Uganda",
+        "country": "UG",
+        "kind": "region",
+        "impact": "among driest conditions on record"
+      },
+      {
+        "name": "Western Kenya",
+        "country": "KE",
+        "kind": "region",
+        "impact": "forecast maize yields up to 36% below average"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People affected by drought receiving…",
+        "value": "more than 5,000 people",
+        "sourceName": "allafrica.com",
+        "sourceUrl": "https://allafrica.com/stories/202610190219.html"
+      },
+      {
+        "label": "People targeted for emergency food…",
+        "value": "more than 2,000 people",
+        "sourceName": "livingchurch.org",
+        "sourceUrl": "https://livingchurch.org/news/news-anglican-communion/church-steps-in-as-hunger-devastates-northeastern-uganda/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "allafrica.com",
+        "url": "https://allafrica.com/stories/202610190219.html",
+        "title": "Uganda: Resilience Starts At Home - Preparing Communities for El Niño Before Disaster Strikes - allAfrica.com"
+      },
+      {
+        "name": "peopledaily.digital",
+        "url": "https://peopledaily.digital/news/east-africa-drought-hit-crops-now-face-el-nino-flood-threat-report",
+        "title": "East Africa drought-hit crops now face El Niño flood threat"
+      },
+      {
+        "name": "birrmetrics.com",
+        "url": "https://birrmetrics.com/east-africa-dry-season-food-price-shock/",
+        "title": "East Africa Dry Season Food Price Shock"
+      }
+    ],
+    "membersHash": "gdacs|CD,KE,TZ,UG#0966275b",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "gdacs-earthquake-eq-1570339": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A magnitude 7.5 earthquake, with estimates of 7.6 from other sources, struck near Pitaloza Arriba, Panama, on 9 October 2026. It damaged homes, schools and buildings in Los Santos, Herrera, Coclé, Veraguas and Colón. Sinaproc reports one death and 27 injured. Damage assessments and humanitarian assistance continue, and aftershocks continue.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Tonosí",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "1,613 homes affected; 12 shelters"
+      },
+      {
+        "name": "Penonomé",
+        "admin": "Coclé",
+        "country": "PA",
+        "kind": "city",
+        "impact": "governorship building partly collapsed"
+      },
+      {
+        "name": "Mariato",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "town",
+        "impact": "16 shelters; power, water, internet outages"
+      },
+      {
+        "name": "Cañazas",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "landslides damaged a house"
+      },
+      {
+        "name": "Los Santos",
+        "country": "PA",
+        "kind": "region",
+        "impact": "epicentre area; one death"
+      },
+      {
+        "name": "Herrera",
+        "country": "PA",
+        "kind": "region",
+        "impact": "498 homes affected; 32 landslides"
+      },
+      {
+        "name": "Coclé",
+        "country": "PA",
+        "kind": "region",
+        "impact": "1,052 homes affected; 17 injured"
+      },
+      {
+        "name": "Veraguas",
+        "country": "PA",
+        "kind": "region",
+        "impact": "614 homes affected; utilities outages"
+      },
+      {
+        "name": "Colón",
+        "country": "PA",
+        "kind": "region",
+        "impact": "29 settlements affected; three hospitals damaged"
+      },
+      {
+        "name": "Bocas del Toro",
+        "country": "PA",
+        "kind": "region",
+        "impact": "119 people affected; 25 schools damaged"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "noticiassin.com",
+        "sourceUrl": "https://noticiassin.com/mundo/america/2026/10/19/terremoto-de-7-5-en-panama-deja-un-fallecido-y-27-heridos-2147831"
+      },
+      {
+        "label": "Injured",
+        "value": "27",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-15/"
+      },
+      {
+        "label": "Homes damaged",
+        "value": "2,081 total loss; 5,137 moderate or partial; 1,185 minor",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-15/"
+      },
+      {
+        "label": "Homes evaluated",
+        "value": "8,920 homes; 29,243 people registered",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/sinaproc-mantiene-las-evaluaciones-de-danos-y-la-asistencia-humanitaria-tras-el-sismo/"
+      },
+      {
+        "label": "People assisted",
+        "value": "22,400 people",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/panama/2026/10/17/el-239-de-las-viviendas-afectadas-por-el-terremoto-en-panama-presenta-danos-totales/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "sinaproc.gob.pa",
+        "url": "https://www.sinaproc.gob.pa/sinaproc-mantiene-las-evaluaciones-de-danos-y-la-asistencia-humanitaria-tras-el-sismo/",
+        "title": "Sinaproc mantiene las evaluaciones de daños y la asistencia humanitaria tras el sismo - Sinaproc"
+      },
+      {
+        "name": "infobae.com",
+        "url": "https://www.infobae.com/panama/2026/10/17/el-239-de-las-viviendas-afectadas-por-el-terremoto-en-panama-presenta-danos-totales/",
+        "title": "El 23.9% de las viviendas afectadas por el terremoto en Panamá presenta daños totales - Infobae"
+      },
+      {
+        "name": "unocha.org",
+        "url": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315",
+        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 02 (as of 11 October 2026, 13:15)"
+      },
+      {
+        "name": "sinaproc.gob.pa",
+        "url": "https://www.sinaproc.gob.pa/comunicado-oficial-11/",
+        "title": "COMUNICADO OFICIAL # 11 - Sinaproc"
+      },
+      {
+        "name": "noticiassin.com",
+        "url": "https://noticiassin.com/mundo/america/2026/10/19/terremoto-de-7-5-en-panama-deja-un-fallecido-y-27-heridos-2147831",
+        "title": "Terremoto de 7.5 en Panamá deja un fallecido, 27 heridos y daños en cientos de edificios"
+      }
+    ],
+    "membersHash": "gdacs,ifrc,usgs|CR,PA#988157ed",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "ifrc-earthquake-7990": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "Two strong earthquakes, magnitudes 7.2 and 7.5, struck Venezuela's coast on 24 June 2026, with epicentres near Morón in Carabobo State. Thousands of people died, according to World Vision. More than 1,400 aftershocks were reported in July. The Venezuelan Red Cross and IFRC are responding. The most recent source is dated 21 August 2026.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Morón",
+        "admin": "Carabobo",
+        "country": "VE",
+        "kind": "town",
+        "impact": "epicentre area"
+      },
+      {
+        "name": "Yaracuy",
+        "country": "VE",
+        "kind": "region",
+        "impact": "epicentres in the region"
+      },
+      {
+        "name": "La Guaira",
+        "country": "VE",
+        "kind": "town",
+        "impact": "hardest hit"
+      },
+      {
+        "name": "Los Palos Grandes and Altamira",
+        "admin": "Distrito Capital",
+        "country": "VE",
+        "kind": "district",
+        "impact": "among the worst-affected parts of Caracas"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "thousands",
+        "sourceName": "worldvision.org",
+        "sourceUrl": "https://www.worldvision.org/disaster-relief-news-stories/venezuela-earthquake-facts"
+      },
+      {
+        "label": "People targeted for assistance",
+        "value": "300,000 people",
+        "sourceName": "ifrc.org",
+        "sourceUrl": "https://www.ifrc.org/press-release/venezuela-earthquakes-ifrc-launches-emergency-appeal-assist-300000-people-and"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://www.ifrc.org/emergency/venezuela-earthquake-2026",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC emergency appeal page for the Venezuela earthquakes, CHF 50 million"
+      },
+      {
+        "url": "https://www.ifrc.org/document/emergency-appeal-venezuela-earthquake",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "Emergency appeal document for the Venezuela earthquake"
+      }
+    ],
+    "sources": [
+      {
+        "name": "redcross.org",
+        "url": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-movement-responds-to-venezuela-earthquakes.html",
+        "title": "Venezuela: Red Cross Movement Responds in the Aftermath of Back-to-Back Earthquakes"
+      },
+      {
+        "name": "worldvision.org",
+        "url": "https://www.worldvision.org/disaster-relief-news-stories/venezuela-earthquake-facts",
+        "title": "2026 Venezuela earthquakes: Fast facts, FAQs, and how to help"
+      },
+      {
+        "name": "mappr.co",
+        "url": "https://www.mappr.co/venezuela-earthquake-map/",
+        "title": "Mapped: Venezuela's Strongest Earthquake in Over a Century as M7.2 and M7.5 Hit the Caribbean Coast"
+      },
+      {
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/press-release/venezuela-red-cross-responds-needs-emerge-aftermath-powerful-back-back-earthquakes",
+        "title": "Venezuela: Red Cross responds as needs emerge in the aftermath of powerful back-to-back earthquakes"
+      },
+      {
+        "name": "miyamotointernational.com",
+        "url": "https://miyamotointernational.com/venezuelas-strongest-earthquake-in-125-years-what-happened-on-june-24-2026/",
+        "title": "Venezuela’s Strongest Earthquake in 125 Years: What Happened, Where Damage Was Worst, and What Comes Next"
+      },
+      {
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/6/25/venezuela-rocked-by-7-5-7-2-earthquakes-what-happened-and-what-we-know",
+        "title": "Venezuela rocked by 7.5, 7.2 earthquakes: What happened and what we know"
+      }
+    ],
+    "membersHash": "ifrc|VE#4aa9fe04",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "ifrc-flood-8013": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Prolonged heavy monsoon rain from 5 July 2026 caused flooding, flash floods, waterlogging and landslides across Cox's Bazar District, Bangladesh, and other districts in the southeast and northeast. Floodwater was receding across Cox's Bazar by 17 July. As of 12 July, 51 deaths were reported. About 1.11 million people were affected across 10 districts. No current flooding was reported as of 20 October 2026.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "At least 150 villages flooded across all ten upazilas"
+      },
+      {
+        "name": "Teknaf",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Around 40 villages flooded; nearly 50,000 marooned"
+      },
+      {
+        "name": "Pekua",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "450 houses affected, highest in the district"
+      },
+      {
+        "name": "Satkania",
+        "admin": "Chattogram",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Health complex, courts and police station under water"
+      },
+      {
+        "name": "Chakaria",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Floodwater reached neck level inside homes"
+      },
+      {
+        "name": "Habiganj",
+        "admin": "Sylhet",
+        "country": "BD",
+        "kind": "district",
+        "impact": "About 30,000 marooned after embankment breach"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "51",
+        "sourceName": "nrc.no",
+        "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
+      },
+      {
+        "label": "People affected",
+        "value": "About 1.11 million people",
+        "sourceName": "nrc.no",
+        "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
+      },
+      {
+        "label": "In evacuation shelters",
+        "value": "38,422 people",
+        "sourceName": "nrc.no",
+        "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
+      },
+      {
+        "label": "Houses damaged in Bandarban and…",
+        "value": "29,741 houses",
+        "sourceName": "nrc.no",
+        "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/emergencies/8013/overview",
+        "title": "IFRC GO - Emergency - Bangladesh: Monsoon Depression in Cox's Bazar"
+      },
+      {
+        "name": "adrc.asia",
+        "url": "https://www.adrc.asia/view_disaster_en.php?NationCode=50&Lang=en&Key=2834",
+        "title": "Bangladesh: Flood: 2026/07/05"
+      },
+      {
+        "name": "dhakatribune.com",
+        "url": "https://www.dhakatribune.com/bangladesh/nation/415385/floodwater-recedes-in-cox%E2%80%99s-bazar-exposing-trail",
+        "title": "Floodwater recedes in Cox’s Bazar, exposing trail of destruction"
+      },
+      {
+        "name": "wsws.org",
+        "url": "https://www.wsws.org/en/articles/2026/07/17/xtoo-j17.html",
+        "title": "Catastrophic Bangladesh floods kill over 50 people - World Socialist Web Site"
+      },
+      {
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/field-reports/18466",
+        "title": "BGD: Flood - 07-2026 - Bangladesh Floods 2026"
+      },
+      {
+        "name": "thedailystar.net",
+        "url": "https://www.thedailystar.net/news/bangladesh/news/torrential-rain-triggers-flash-floods-coxs-bazar-inundating-over-80-villages",
+        "title": "Torrential rain triggers flash floods in Cox’s Bazar, inundating over 80 villages"
+      }
+    ],
+    "membersHash": "ifrc|BD#dcb1d4bd",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "ifrc-flood-8050": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Heavy monsoon rains caused rivers to overflow and flooding across several regions of Myanmar from early July 2026. Flooding in Ayeyarwady, Kayin and Sagaing regions displaced households and submerged villages. UNICEF's end-August brief reports about 600,000 people affected. No source after 2 September confirms ongoing flood effects.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Laymyethna",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "flooded after Ngawun River embankment breach"
+      },
+      {
+        "name": "Hinthada",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "flooded after Ngawun River embankment breach"
+      },
+      {
+        "name": "Yekyi",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "flooded after Ngawun River embankment breach"
+      },
+      {
+        "name": "Kyangin",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "flooded after Ngawun River embankment breach"
+      },
+      {
+        "name": "Kayin State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "displaced households after Thanlwin River overflow"
+      },
+      {
+        "name": "Wetlet",
+        "admin": "Sagaing Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "villages and paddy fields submerged, residents evacuated"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People affected",
+        "value": "about 600,000 people",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
+      },
+      {
+        "label": "Displaced households",
+        "value": "15,000 displaced households",
+        "sourceName": "ahacentre.org",
+        "sourceUrl": "https://ahacentre.org/flash-update/flash-update-no-1-flooding-in-ayeyarwady-and-kayin-myanmar-19-august-2026/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/press-release/monsoon-batters-myanmar-causing-mass-flooding-%E2%80%93-ifrc-releases-disaster-funds",
+        "title": "Monsoon batters Myanmar, causing mass flooding"
+      }
+    ],
+    "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-10-20T02:25:48.047Z"
+  },
+  "usgs-earthquake-us7000q1": {
+    "at": "2026-10-20T02:25:48.047Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A magnitude 5.7 to 5.9 earthquake struck near Khuzdar in Balochistan, Pakistan, on 17 October 2026 at 05:06 UTC. Residents left their homes and gathered in open spaces. Authorities reported no casualties or damage. Seismological centres continue tracking possible aftershocks.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Khuzdar",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Epicentre area; residents left homes, no damage"
+      },
+      {
+        "name": "Kalat",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Shaking felt; residents rushed out, no damage"
+      },
+      {
+        "name": "Surab",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Shaking felt; residents rushed out, no damage"
+      },
+      {
+        "name": "Kharan",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Shaking felt, no damage reported"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "dailytimes.com.pk",
+        "url": "https://dailytimes.com.pk/1568641/moderate-5-9-magnitude-earthquake-jolts-balochistans-khuzdar-district/",
+        "title": "Moderate 5.9-magnitude earthquake jolts balochistan's khuzdar district - Daily Times"
+      },
+      {
+        "name": "pakistan.shafaqna.com",
+        "url": "https://pakistan.shafaqna.com/EN/339248",
+        "title": "5.9-Magnitude Earthquake Shakes Khuzdar, Surrounding Areas in Balochistan"
+      },
+      {
+        "name": "zeenews.india.com",
+        "url": "https://zeenews.india.com/world/balochistan-khuzdar-earthquake-magnitude-5-7-depth-10km-3076241.html",
+        "title": "5.7 Magnitude earthquake shakes Khuzdar in Pakistan's Balochistan: Shallow 10 km depth causes severe shaking"
+      },
+      {
+        "name": "minutemirror.com.pk",
+        "url": "https://minutemirror.com.pk/5-9-magnitude-earthquake-jolts-balochistans-khuzdar-646218/",
+        "title": "5.9-magnitude earthquake jolts Balochistan’s Khuzdar - Minute Mirror"
+      },
+      {
+        "name": "outlookindia.com",
+        "url": "https://www.outlookindia.com/international/pakistan-earthquake-magnitude-5-8-tremor-15-km-depth",
+        "title": "Magnitude 5.8 Earthquake Strikes Pakistan, Tremor Recorded At 15 Km Depth"
+      }
+    ],
+    "membersHash": "gdacs,usgs|PK#a6ef69eb",
+    "seen": "2026-10-20T02:25:48.047Z"
+  }
+}
