@@ -8,20 +8,22 @@
 // list. In offline mode (pipeline/derive.ts) nothing is fetched and no
 // model is called: the file is rebuilt from the caches alone.
 import fs from "node:fs";
+import path from "node:path";
 import type { AiClient } from "../ai";
 import type { FetchDeps } from "../googlenews";
 import { writeCompactJson, writeJson } from "../io";
 import type { CountryResolver } from "../resolve";
-import { averageResearchCost, canSpend, researchAllowance, type Budget, type Ledger } from "../spend";
-import { buildDonations, prepareDonations, readRegistry, refreshRegistry, writeRegistry, type DonationRegistry } from "./donate";
+import { averageResearchCost, canSpend, noteResearch, researchAllowance, type Budget, type Ledger } from "../spend";
+import { REGISTRY_PATH, buildDonations, prepareDonations, readRegistry, refreshRegistry, writeRegistry, type DonationRegistry } from "./donate";
 import { fetchEonet } from "./eonet";
 import { fetchGdacs } from "./gdacs";
-import { createGeocoder, placeArea, placeFromHit, readGeocodeCache, writeGeocodeCache, type Geocoder } from "./geocode";
+import { GEOCODE_CACHE_PATH, createGeocoder, placeArea, placeFromHit, readGeocodeCache, writeGeocodeCache, type Geocoder } from "./geocode";
 import { fitGeometry, haversineKm, type CountryShape } from "./geo";
 import { fetchIfrc } from "./ifrc";
 import { isOngoing, mergeEvents } from "./merge";
 import { extractNewsEvents, mentionsDisaster, type NewsArticle } from "./news";
 import {
+  RESEARCH_CACHE_PATH,
   pruneResearchCache,
   readResearchCache,
   researchDisaster,
@@ -37,6 +39,21 @@ import { fetchUsgs } from "./usgs";
 export const DISASTERS_FILE = "disasters.json";
 export const SNAPSHOT_PATH = "cache/disaster-sources.json";
 export const ATTEMPTS_PATH = "cache/research-attempts.json";
+
+/** Where one run keeps its caches. */
+export interface CachePaths {
+  snapshot: string;
+  attempts: string;
+  registry: string;
+  geocode: string;
+  research: string;
+}
+
+/** The cache files under dir; the defaults when dir is "cache". */
+export function cachePaths(dir = "cache"): CachePaths {
+  const at = (defaultPath: string) => `${dir}/${path.basename(defaultPath)}`;
+  return { snapshot: at(SNAPSHOT_PATH), attempts: at(ATTEMPTS_PATH), registry: at(REGISTRY_PATH), geocode: at(GEOCODE_CACHE_PATH), research: at(RESEARCH_CACHE_PATH) };
+}
 
 /** Feeds fetched each run, in this order. News comes from the site's own headlines. */
 export const FEEDS: readonly SourceName[] = ["gdacs", "usgs", "eonet", "ifrc"];
@@ -217,10 +234,12 @@ export function withResearch(d: Disaster, entry: ResearchEntry): Disaster {
   const lead = entry.sources[0];
   return {
     ...d,
-    ...(entry.summary ? { summary: entry.summary, summarySource: lead ? { name: lead.title || hostOf(lead.url), url: lead.url } : d.summarySource } : {}),
+    // Research writes its own summary, so the feed's credit never goes with
+    // it: it is credited to the first page it cites, or to nobody.
+    ...(entry.summary ? { summary: entry.summary, summarySource: lead ? { name: lead.title || hostOf(lead.url), url: lead.url } : undefined } : {}),
     figures: figures.slice(0, 6),
     sources: sources.slice(0, 12),
-    research: { at: entry.at, model: entry.model, searches: entry.searches },
+    research: { at: entry.at, model: entry.model, searches: entry.searches, ...(entry.summary ? { summary: true } : {}) },
   };
 }
 
@@ -235,20 +254,30 @@ export function researchSaysOver(d: Disaster, entry: ResearchEntry | undefined, 
   return !d.appeals.some((a) => Date.parse(a.end) >= Date.parse(now));
 }
 
-/** Moves news events to their geocoded places; events with no place that geocodes are dropped. */
-export async function locateNewsEvents(events: SourceEvent[], geocoder: Geocoder): Promise<SourceEvent[]> {
+/**
+ * Moves news events to their geocoded places. An event with no place that
+ * geocodes is dropped, unless the geocoder had to leave a lookup for later
+ * (its cap or an outage) and the previous run placed the same event: then
+ * it keeps that run's places.
+ */
+export async function locateNewsEvents(events: SourceEvent[], geocoder: Geocoder, previous: SourceEvent[] = []): Promise<SourceEvent[]> {
   const out: SourceEvent[] = [];
   for (const e of events) {
     if (e.lat !== 0 || e.lng !== 0 || e.precision !== "country") {
       out.push(e);
       continue;
     }
+    const deferredBefore = geocoder.deferred;
     const places: Place[] = [];
     for (const p of e.places ?? []) {
       const hit = await geocoder.geocode(p.name, p.country, p.admin, p.kind);
       if (hit) places.push(placeFromHit(hit, p.impact, "news"));
     }
-    if (places.length === 0) continue;
+    if (places.length === 0) {
+      const before = geocoder.deferred > deferredBefore ? previous.find((x) => x.source === e.source && x.sourceId === e.sourceId && x.precision !== "country") : undefined;
+      if (before) out.push({ ...e, places: before.places, lat: before.lat, lng: before.lng, precision: before.precision });
+      continue;
+    }
     const lat = places.reduce((s, p) => s + p.lat, 0) / places.length;
     const lng = places.reduce((s, p) => s + p.lng, 0) / places.length;
     out.push({ ...e, places, lat, lng, precision: "area" });
@@ -273,6 +302,10 @@ export interface DisasterRun {
   countryNames: Record<string, string>;
   /** No fetching, geocoding, model calls or live checks: rebuild from the caches. */
   offline?: boolean;
+  /** Epoch ms after which no new research or live donation check starts. */
+  deadline?: number;
+  /** Folder of the run's caches; "cache" by default. */
+  cacheDir?: string;
   log: (msg: string) => void;
 }
 
@@ -312,7 +345,7 @@ async function fetchFeeds(run: DisasterRun, snapshots: Snapshots): Promise<{ eve
  * Runs web research on the disasters that need it most, within the day's
  * allowance, this run's cap and a time limit. Updates cache and attempts.
  */
-async function runResearch(run: DisasterRun, disasters: Disaster[], cache: ResearchCache, attempts: Record<string, string>): Promise<number> {
+async function runResearch(run: DisasterRun, disasters: Disaster[], cache: ResearchCache, attempts: Record<string, string>, paths: CachePaths): Promise<number> {
   const { ai, ledger, budget, now, log } = run;
   if (!ai || run.offline) return 0;
   if (!canSpend(ledger, budget, now)) {
@@ -323,10 +356,10 @@ async function runResearch(run: DisasterRun, disasters: Disaster[], cache: Resea
   const candidates = disasters.filter((d) => !attempts[d.id]);
   const picked = selectForResearch(candidates, cache, now, { maxCalls: budget.maxResearchPerRun, allowanceUsd: researchAllowance(ledger, budget, now), costEstimateUsd: estimate });
   log(`Research: ${picked.length} of ${disasters.length} disasters picked (allowance $${researchAllowance(ledger, budget, now).toFixed(2)}, about $${estimate.toFixed(3)} each)`);
-  const started = Date.now();
+  const stopAt = Math.min(Date.now() + RESEARCH_TIME_MS, run.deadline ?? Infinity);
   let done = 0;
   for (const d of picked) {
-    if (Date.now() - started > RESEARCH_TIME_MS) {
+    if (Date.now() > stopAt) {
       log("Research: time limit reached; the rest wait for the next run");
       break;
     }
@@ -336,7 +369,10 @@ async function runResearch(run: DisasterRun, disasters: Disaster[], cache: Resea
       break;
     }
     const headlines = relatedHeadlines(d, run.articles);
+    const callsBefore = totalCalls(ledger);
     const entry = await researchDisaster(ai, d, { countryNames: run.countryNames, headlines, resolve: run.resolve, now, log });
+    // One researched disaster for the cost average, however many responses it took.
+    if (totalCalls(ledger) > callsBefore) noteResearch(ledger, new Date().toISOString());
     if (entry) {
       cache[d.id] = entry;
       done++;
@@ -345,20 +381,29 @@ async function runResearch(run: DisasterRun, disasters: Disaster[], cache: Resea
       attempts[d.id] = now;
       log(`  research failed for ${d.id}; retried after ${RETRY_FAILED_HOURS} h`);
     }
+    // Saved after every research, so a run cut off later keeps what it paid for.
+    writeResearchCache(cache, paths.research);
+    writeJson(paths.attempts, attempts);
   }
   return done;
+}
+
+/** API responses recorded in every month of the ledger. */
+function totalCalls(ledger: Ledger): number {
+  return Object.values(ledger.months).reduce((n, m) => n + m.calls, 0);
 }
 
 /** Builds and writes public/data/disasters.json and the caches. Returns the file. */
 export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> {
   const { outDir, now, deps, log } = run;
+  const paths = cachePaths(run.cacheDir);
   const outPath = `${outDir}/${DISASTERS_FILE}`;
   const previous = readDisastersFile(outPath);
-  const snapshots = readSnapshots();
+  const snapshots = readSnapshots(paths.snapshot);
   const { events: feedEvents, fetched, next } = await fetchFeeds(run, snapshots);
 
   // The run's one geocoder: Nominatim at one request a second, cached forever.
-  const geocodeCache = readGeocodeCache();
+  const geocodeCache = readGeocodeCache(paths.geocode);
   const geocoder = createGeocoder(deps, geocodeCache, now, run.offline ? { maxLookups: 0 } : {});
 
   // Disasters in the site's own headlines, placed by geocoding their places.
@@ -366,7 +411,7 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   if (run.ai && !run.offline && canSpend(run.ledger, run.budget, now)) {
     const extracted = await extractNewsEvents(run.ai, run.articles, run.resolve, now, { codes: run.globeCodes, previous: newsEvents, log });
     if (extracted) {
-      newsEvents = await locateNewsEvents(extracted, geocoder);
+      newsEvents = await locateNewsEvents(extracted, geocoder, newsEvents);
       next.news = { fetched: now, events: newsEvents };
       log(`Disasters: news gave ${extracted.length} events, ${newsEvents.length} placed`);
     } else {
@@ -377,11 +422,17 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
 
   let disasters = mergeEvents([...feedEvents, ...newsEvents], previous?.disasters ?? null, now);
   log(`Disasters: ${disasters.length} ongoing after merging ${feedEvents.length + newsEvents.length} reports`);
+  // Never replace a map with an empty one: with every source failing and no
+  // snapshot to fall back on, the previous file stays.
+  if (disasters.length === 0 && previous && previous.disasters.length > 0) {
+    log("Disasters: no reports this run; previous map kept");
+    return previous;
+  }
 
   // Web research within the budget, then its results on every disaster that has them.
-  const cache = readResearchCache();
-  const attempts = pruneAttempts(readAttempts(), now);
-  await runResearch(run, disasters, cache, attempts);
+  const cache = readResearchCache(paths.research);
+  const attempts = pruneAttempts(readAttempts(paths.attempts), now);
+  await runResearch(run, disasters, cache, attempts, paths);
   const enriched: Disaster[] = [];
   for (const d of disasters) {
     const entry = cache[d.id];
@@ -396,13 +447,13 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   disasters = enriched.filter((d) => isOngoing(d, now) || d.appeals.length > 0);
 
   // Donation pages: registries by fixed rule plus researched pages that pass the allowlist and a live check.
-  let registry: DonationRegistry = readRegistry();
+  let registry: DonationRegistry = readRegistry(paths.registry);
   if (!run.offline) registry = await refreshRegistry(registry, deps, now, run.resolve, { probeCodes: [...run.globeCodes] });
   let checks = 0;
   const unreachable = new Set<string>();
   for (const d of disasters) {
     const input = { countries: d.countries, appeals: d.appeals, researched: cache[d.id]?.donation ?? [] };
-    if (run.offline || checks >= MAX_DONATION_CHECKS) {
+    if (run.offline || checks >= MAX_DONATION_CHECKS || Date.now() > (run.deadline ?? Infinity)) {
       d.donate = buildDonations(input, registry, now);
       continue;
     }
@@ -414,12 +465,12 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   const file: DisastersFile = { updated: now, fetched, disasters };
   writeCompactJson(outPath, file);
   if (!run.offline) {
-    writeCompactJson(SNAPSHOT_PATH, next);
-    writeRegistry(registry);
-    writeJson(ATTEMPTS_PATH, attempts);
+    writeCompactJson(paths.snapshot, next);
+    writeRegistry(registry, paths.registry);
+    writeJson(paths.attempts, attempts);
   }
-  writeGeocodeCache(geocodeCache);
-  writeResearchCache(pruneResearchCache(cache, disasters.map((d) => d.id), now));
+  writeGeocodeCache(geocodeCache, paths.geocode);
+  writeResearchCache(pruneResearchCache(cache, disasters.map((d) => d.id), now), paths.research);
   const bytes = fs.statSync(outPath).size;
   log(
     `Disasters: wrote ${disasters.length} (${disasters.filter((d) => d.research).length} researched, ${disasters.reduce((n, d) => n + d.donate.length, 0)} donation links, ${geocoder.lookups} new geocoder lookups) in ${Math.round(bytes / 1024)} KB`,

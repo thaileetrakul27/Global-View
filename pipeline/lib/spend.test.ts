@@ -17,6 +17,7 @@ import {
   loadBudget,
   monthKey,
   monthSpent,
+  noteResearch,
   normaliseModel,
   priceFor,
   pruneLedger,
@@ -40,6 +41,7 @@ function month(over: Partial<MonthSpend> = {}): MonthSpend {
     calls: 0,
     searches: 0,
     researchCalls: 0,
+    researches: 0,
     byPurpose: { translate: 0, group: 0, research: 0, news: 0 },
     byDay: {},
     ...over,
@@ -174,6 +176,8 @@ describe("record", () => {
     expect(m.calls).toBe(3);
     expect(m.searches).toBe(6);
     expect(m.researchCalls).toBe(2);
+    // Researched disasters are counted by noteResearch, not by record.
+    expect(m.researches).toBe(0);
     expect(m.byPurpose).toEqual({ translate: 0.002, group: 0, research: 0.068, news: 0 });
     expect(m.byDay["2026-10-19"]).toEqual({ usd: 0.046, research: 0.044 });
     expect(m.byDay["2026-10-20"]).toEqual({ usd: 0.024, research: 0.024 });
@@ -330,7 +334,8 @@ describe("researchAllowance", () => {
     const now = "2026-10-16T12:00:00Z";
     const daysLeft = 16;
     const avgOther = 12 / 15.5;
-    const expected = (CAP - 20 - avgOther * daysLeft) / daysLeft - 0.3;
+    // The 0.50 spent today is added back: it is covered by today's projection.
+    const expected = (CAP - 20 + 0.5 - avgOther * daysLeft) / daysLeft - 0.3;
     expect(researchAllowance(ledger, BUDGET, now)).toBeCloseTo(expected, 6);
     expect(expected).toBeGreaterThan(0.5);
   });
@@ -355,9 +360,30 @@ describe("researchAllowance", () => {
   it("starts fresh when the month rolls over", () => {
     const byPurpose: Record<Purpose, number> = { translate: 10, group: 5, research: 30, news: 1 };
     const ledger: Ledger = { months: { "2026-10": month({ usd: 46, byPurpose, byDay: { "2026-10-31": { usd: 2, research: 1.8 } } }) } };
-    expect(researchAllowance(ledger, BUDGET, "2026-10-31T22:00:00Z")).toBe(0);
+    // 3 were left when the 31st began; 0.60 is projected for other work, and
+    // 1.80 of research is already spent today.
+    expect(researchAllowance(ledger, BUDGET, "2026-10-31T22:00:00Z")).toBeCloseTo(3 - 0.6 - 1.8, 6);
     // November has 30 days.
     expect(researchAllowance(ledger, BUDGET, "2026-11-01T00:10:00Z")).toBeCloseTo((CAP - 0.6 * 30) / 30, 6);
+  });
+
+  it("takes each dollar of research today off today's allowance once", () => {
+    // 40 spent by the end of the 30th, then the check on the 31st.
+    const byPurpose: Record<Purpose, number> = { translate: 10, group: 0, research: 30, news: 0 };
+    const before: Ledger = { months: { "2026-10": month({ usd: 40, byPurpose, byDay: { "2026-10-01": { usd: 1, research: 0.5 } } }) } };
+    const now = "2026-10-31T09:00:00Z";
+    const start = researchAllowance(before, BUDGET, now);
+    expect(start).toBeCloseTo(CAP - 40 - 10 / 30.375, 6);
+    record(before, "research", usage({ webSearches: 100 }), now);
+    expect(researchAllowance(before, BUDGET, now)).toBeCloseTo(start - 1, 6);
+  });
+
+  it("never allows more than what is left of the month", () => {
+    // Heavy other spend earlier today pushes today's share above what is left.
+    const byPurpose: Record<Purpose, number> = { translate: 5, group: 0, research: 0, news: 0 };
+    const ledger: Ledger = { months: { "2026-10": month({ usd: 45, byPurpose: { ...byPurpose, translate: 45 }, byDay: { "2026-10-01": { usd: 1, research: 0 }, "2026-10-31": { usd: 5, research: 0 } } }) } };
+    const allowance = researchAllowance(ledger, BUDGET, "2026-10-31T09:00:00Z");
+    expect(allowance).toBeLessThanOrEqual(CAP - 45);
   });
 
   it("stays within the month's remaining budget on the last day", () => {
@@ -374,12 +400,43 @@ describe("averageResearchCost", () => {
     expect(averageResearchCost(emptyLedger(), "2026-10-19T00:00:00Z", 0.1)).toBe(0.1);
   });
 
-  it("averages this month's research responses only", () => {
+  it("averages this month's research per researched disaster, not per response", () => {
     const ledger = emptyLedger();
+    // September does not count.
     record(ledger, "research", usage({ webSearches: 4 }), "2026-09-30T23:00:00Z");
-    record(ledger, "research", usage({ webSearches: 3 }), "2026-10-02T00:00:00Z");
-    record(ledger, "research", usage({ webSearches: 5 }), "2026-10-03T00:00:00Z");
+    noteResearch(ledger, "2026-09-30T23:00:00Z");
+    // One disaster: a search turn and its parse.
+    record(ledger, "research", usage({ webSearches: 4 }), "2026-10-02T00:00:00Z");
+    record(ledger, "research", usage({ outputTokens: 2_000 }), "2026-10-02T00:00:00Z");
+    noteResearch(ledger, "2026-10-02T00:00:00Z");
+    // Another: a search turn that paused and resumed, then its parse.
+    record(ledger, "research", usage({ webSearches: 3 }), "2026-10-03T00:00:00Z");
+    record(ledger, "research", usage({ webSearches: 2 }), "2026-10-03T00:00:00Z");
+    record(ledger, "research", usage({ outputTokens: 2_000 }), "2026-10-03T00:00:00Z");
+    noteResearch(ledger, "2026-10-03T00:00:00Z");
     record(ledger, "translate", usage({ outputTokens: 1_000_000 }), "2026-10-03T00:00:00Z");
-    expect(averageResearchCost(ledger, "2026-10-19T00:00:00Z")).toBeCloseTo(0.04, 9);
+    expect(ledger.months["2026-10"].researchCalls).toBe(5);
+    expect(averageResearchCost(ledger, "2026-10-19T00:00:00Z")).toBeCloseTo((0.04 + 0.001 + 0.03 + 0.02 + 0.001) / 2, 9);
+  });
+
+  it("falls back while responses are recorded but no research has finished", () => {
+    const ledger = emptyLedger();
+    record(ledger, "research", usage({ webSearches: 4 }), "2026-10-02T00:00:00Z");
+    expect(averageResearchCost(ledger, "2026-10-19T00:00:00Z")).toBe(0.06);
+  });
+});
+
+describe("noteResearch", () => {
+  it("counts one researched disaster under now's month and survives a save", () => {
+    const ledger = emptyLedger();
+    noteResearch(ledger, "2026-10-31T23:59:00Z");
+    noteResearch(ledger, "2026-11-01T00:01:00Z");
+    noteResearch(ledger, "2026-11-01T00:02:00Z");
+    expect(ledger.months["2026-10"].researches).toBe(1);
+    expect(ledger.months["2026-11"].researches).toBe(2);
+    expect(ledger.months["2026-11"].usd).toBe(0);
+    const file = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "gv-spend-")), "spend.json");
+    writeLedger(ledger, file);
+    expect(readLedger(file).months["2026-11"].researches).toBe(2);
   });
 });

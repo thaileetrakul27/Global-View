@@ -723,7 +723,8 @@ describe("validDonations", () => {
     ]);
     expect(out.map((d) => d.url)).toEqual(["https://www.jrc.or.jp/contribute/champi/", "https://www.unicef.org/emergencies"]);
     expect(out[0].org).toBe("Japanese Red Cross");
-    expect(out[1].kind).toBe("agency");
+    // An off-list kind is left blank for the page's host to decide.
+    expect(out[1].kind).toBe("");
     expect(out[1].note.length).toBeLessThanOrEqual(200);
   });
   it("keeps at most five", () => {
@@ -974,6 +975,18 @@ describe("research cache", () => {
     expect(Object.keys(cache)).toEqual(["good"]);
     expect(cache.good.places).toEqual([{ name: "Naha", country: "JP", kind: "city" }]);
     expect(cache.good).not.toHaveProperty("seen");
+  });
+
+  it("keeps a donation whose kind was left blank and drops one with an unknown kind", () => {
+    const e = normaliseEntry({
+      at: NOW,
+      membersHash: "h",
+      donation: [
+        { url: "https://a.example/x", org: "A", kind: "", note: "" },
+        { url: "https://b.example/y", org: "B", kind: "charity", note: "" },
+      ],
+    });
+    expect(e?.donation.map((d) => d.url)).toEqual(["https://a.example/x"]);
   });
 
   it("drops a place's admin or impact that is not a string", () => {

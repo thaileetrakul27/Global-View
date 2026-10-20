@@ -43,6 +43,14 @@ const MAX_WORLD_ARTICLES = 20;
 /** Countries translated at the same time. Keeps the first run well under the job timeout. */
 const TRANSLATE_CONCURRENCY = 4;
 const CACHE_PATH = "cache/headlines.json";
+/** When this run began. */
+const RUN_STARTED = Date.now();
+/**
+ * The disaster step starts no new research or live donation check after
+ * this long from the run's start, so the run ends inside the workflow
+ * step's 50-minute limit.
+ */
+const RUN_DEADLINE_MS = 40 * 60_000;
 
 interface Fetched {
   country: CountryConfig;
@@ -108,7 +116,15 @@ async function main() {
   const budget = loadBudget();
   const startSpend = monthSpent(ledger, now);
   const withinBudget = canSpend(ledger, budget, now);
-  const ai = args.noAi || !withinBudget ? null : createAiClient(log, (purpose, usage) => record(ledger, purpose, usage, new Date().toISOString(), log));
+  // The ledger is saved after every call, so a run that is cut off later
+  // (the job's time limit, a crash) still leaves its spend on record.
+  const ai =
+    args.noAi || !withinBudget
+      ? null
+      : createAiClient(log, (purpose, usage) => {
+          record(ledger, purpose, usage, new Date().toISOString(), log);
+          writeLedger(ledger);
+        });
   if (!ai) {
     log(args.noAi ? "AI disabled by --no-ai" : !withinBudget ? `This month's model budget is used ($${startSpend.toFixed(2)} of $${budget.monthlyUsd}); publishing without the model` : "No ANTHROPIC_API_KEY; publishing without new translations");
   }
@@ -225,20 +241,27 @@ async function main() {
     }
   }
   const features = loadGlobeFeatures();
-  await updateDisasters({
-    outDir: args.outDir,
-    now,
-    deps,
-    ai,
-    ledger,
-    budget,
-    articles,
-    resolve: buildResolver(features, local),
-    shapes: loadCountryShapes(),
-    globeCodes,
-    countryNames: Object.fromEntries(features.map((f) => [f.code, f.admin])),
-    log,
-  });
+  // The news is already written, so a failure here only leaves the
+  // previous disaster map in place.
+  try {
+    await updateDisasters({
+      outDir: args.outDir,
+      now,
+      deps,
+      ai,
+      ledger,
+      budget,
+      articles,
+      resolve: buildResolver(features, local),
+      shapes: loadCountryShapes(),
+      globeCodes,
+      countryNames: Object.fromEntries(features.map((f) => [f.code, f.admin])),
+      deadline: RUN_STARTED + RUN_DEADLINE_MS,
+      log,
+    });
+  } catch (err) {
+    log(`Disasters: failed (${err instanceof Error ? err.message : String(err)}); previous map kept`);
+  }
 
   writeLedger(pruneLedger(ledger, now));
   const month = ledger.months[now.slice(0, 7)];

@@ -100,7 +100,8 @@ export type DonationCandidateKind = (typeof DONATION_KINDS)[number];
 export interface ResearchDonation {
   url: string;
   org: string;
-  kind: DonationCandidateKind;
+  /** "" when the model gave a kind off the list; donate.ts then goes by the page's host. */
+  kind: DonationCandidateKind | "";
   note: string;
 }
 
@@ -691,7 +692,9 @@ export function validDonations(donation: unknown): ResearchDonation[] {
     if (u.protocol !== "https:" || !key || keys.has(key)) continue;
     keys.add(key);
     const given = cleanLine(d.kind).toLowerCase();
-    const kind = DONATION_KINDS.find((k) => k === given) ?? "agency";
+    // An off-list kind ("Red Cross", "charity") is left blank, so the
+    // page's host decides its group, not a guess.
+    const kind = DONATION_KINDS.find((k) => k === given) ?? "";
     out.push({ url: u.href, org: cutText(cleanLine(d.org), 100), kind, note: cutText(cleanLine(d.note), 200) });
   }
   return out;
@@ -808,7 +811,7 @@ export function normaliseEntry(raw: unknown): ResearchEntry | null {
     }));
   const figures = list(raw.figures).filter((f): f is Figure => strings(f, ["label", "value", "sourceName", "sourceUrl"]));
   const donation = list(raw.donation).filter(
-    (d): d is ResearchDonation => strings(d, ["url", "org", "note"]) && DONATION_KINDS.some((k) => k === d.kind),
+    (d): d is ResearchDonation => strings(d, ["url", "org", "note"]) && (d.kind === "" || DONATION_KINDS.some((k) => k === d.kind)),
   );
   const sources = list(raw.sources).filter((s): s is ResearchSource => strings(s, ["name", "url", "title"]));
   return {

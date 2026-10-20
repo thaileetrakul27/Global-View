@@ -3,8 +3,9 @@ import type { Disaster } from "@/lib/data";
 import { appealFunding, shortDate } from "@/lib/disasters";
 import { External, heading, textLink } from "./External";
 
-// The summary in its source's words, the reported figures, and any Red
-// Cross appeal with how much of it is funded.
+// The summary (a feed's own words, or written by web research and credited
+// to the first page it cites), the reported figures, and any Red Cross
+// appeal with how much of it is funded.
 export default function DisasterHappening({ disaster: d }: { disaster: Disaster }) {
   const id = useId();
   if (!d.summary && !d.severityText && !d.figures.length && !d.appeals.length) return null;

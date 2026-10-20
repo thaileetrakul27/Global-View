@@ -640,8 +640,10 @@ export default function App() {
         disasters={liveDisasters}
         selectedDisasterId={openDisaster?.id ?? null}
         // An open disaster is drawn even with the switch off, so the camera
-        // never flies to an empty patch of globe.
-        showDisasters={showDisasters || disasterOpen}
+        // never flies to an empty patch of globe. The switch lives in the
+        // desktop list, so the phone layout always shows disasters: a choice
+        // saved on a wider screen could not be undone there.
+        showDisasters={showDisasters || !vp.isDesktop || disasterOpen}
         onSelectDisaster={openDisasterPanel}
       />
 

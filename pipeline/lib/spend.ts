@@ -74,8 +74,10 @@ export interface MonthSpend {
   /** API responses recorded (a research call that pauses and resumes counts each response). */
   calls: number;
   searches: number;
-  /** Responses recorded with purpose "research", for averageResearchCost. */
+  /** Responses recorded with purpose "research" (search turns, continuations and parses). */
   researchCalls: number;
+  /** Disasters researched (one search turn plus its parse), for averageResearchCost. */
+  researches: number;
   byPurpose: Record<Purpose, number>;
   /** Keyed by UTC day, YYYY-MM-DD. */
   byDay: Record<string, DaySpend>;
@@ -173,7 +175,7 @@ export function emptyLedger(): Ledger {
 
 function emptyMonth(): MonthSpend {
   const byPurpose = Object.fromEntries(PURPOSES.map((p) => [p, 0])) as Record<Purpose, number>;
-  return { usd: 0, calls: 0, searches: 0, researchCalls: 0, byPurpose, byDay: {} };
+  return { usd: 0, calls: 0, searches: 0, researchCalls: 0, researches: 0, byPurpose, byDay: {} };
 }
 
 function isObject(v: unknown): v is Record<string, unknown> {
@@ -188,6 +190,7 @@ function sanitizeMonth(raw: unknown): MonthSpend | null {
   month.calls = count(raw.calls);
   month.searches = count(raw.searches);
   month.researchCalls = count(raw.researchCalls);
+  month.researches = count(raw.researches);
   const byPurpose = isObject(raw.byPurpose) ? raw.byPurpose : {};
   for (const p of PURPOSES) month.byPurpose[p] = count(byPurpose[p]);
   const byDay = isObject(raw.byDay) ? raw.byDay : {};
@@ -235,6 +238,12 @@ export function record(ledger: Ledger, purpose: Purpose, usage: Usage, now: stri
     day.research = roundUsd(day.research + cost);
   }
   return cost;
+}
+
+/** Counts one researched disaster under now's month, whatever number of responses it took. */
+export function noteResearch(ledger: Ledger, now: string): void {
+  const month = (ledger.months[monthKey(now)] ??= emptyMonth());
+  month.researches += 1;
 }
 
 /** Keeps the current UTC month and the keepMonths - 1 before it (and any later ones); returns the ledger. */
@@ -295,23 +304,26 @@ export function dailyOtherSpend(ledger: Ledger, budget: Budget, now: string): nu
 }
 
 /**
- * USD that web research may still spend today (UTC). What is left of the
- * month's budget, less the projected spend on everything else for the rest
- * of the month, is shared evenly over the days left including today; today's
- * research spend so far comes off today's share.
+ * USD that web research may still spend today (UTC). What was left of the
+ * month's budget when today began, less the projected spend on everything
+ * else for the rest of the month (today included), is shared evenly over
+ * the days left including today; today's research spend so far comes off
+ * today's share. Never more than what is left of the month's budget now.
  */
 export function researchAllowance(ledger: Ledger, budget: Budget, now: string): number {
   const remaining = budget.monthlyUsd - budget.safetyUsd - monthSpent(ledger, now);
   if (remaining <= 0) return 0;
+  const today = ledger.months[monthKey(now)]?.byDay[dayKey(now)] ?? { usd: 0, research: 0 };
   const daysLeft = daysLeftInMonth(now);
-  const pool = remaining - dailyOtherSpend(ledger, budget, now) * daysLeft;
-  const spentToday = ledger.months[monthKey(now)]?.byDay[dayKey(now)]?.research ?? 0;
-  return roundUsd(Math.max(0, pool / daysLeft - spentToday));
+  // Today's spend so far is added back, so it is counted once: in the
+  // projection for other spend, and as today's research below.
+  const pool = remaining + today.usd - dailyOtherSpend(ledger, budget, now) * daysLeft;
+  return roundUsd(Math.max(0, Math.min(remaining, pool / daysLeft - today.research)));
 }
 
-/** Mean USD per research response this month, or fallback before the first one. */
+/** Mean USD of researching one disaster this month (search turns plus parses), or fallback before the first one. */
 export function averageResearchCost(ledger: Ledger, now: string, fallback = 0.06): number {
   const month = ledger.months[monthKey(now)];
-  if (!month || month.researchCalls === 0) return fallback;
-  return roundUsd((month.byPurpose.research ?? 0) / month.researchCalls);
+  if (!month || month.researches === 0) return fallback;
+  return roundUsd((month.byPurpose.research ?? 0) / month.researches);
 }

@@ -122,7 +122,11 @@ export function DisasterSources({ disaster: d }: { disaster: Disaster }) {
         </ul>
       )}
       {reported.length > 0 && <p className="mt-2 text-xs text-muted">Reported by {reported.join(", ")}.</p>}
-      {d.research && <p className="mt-1 text-xs text-muted">Some places and pages were found by web research on {shortDate(d.research.at)}.</p>}
+      {d.research && (
+        <p className="mt-1 text-xs text-muted">
+          {d.research.summary ? "The summary and some places and pages were" : "Some places and pages were"} found by web research on {shortDate(d.research.at)}.
+        </p>
+      )}
     </section>
   );
 }

@@ -231,7 +231,8 @@ export interface Disaster {
   donate: DonationLink[];
   reportedBy: DisasterSource[];
   members: string[];
-  research?: { at: string; model: string; searches: number };
+  /** summary is true when the summary was written by web research, not taken from a feed. */
+  research?: { at: string; model: string; searches: number; summary?: boolean };
 }
 
 export interface DisastersFile {

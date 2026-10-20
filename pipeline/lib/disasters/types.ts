@@ -201,7 +201,8 @@ export interface Disaster {
   reportedBy: SourceName[];
   /** Member keys "source:sourceId", e.g. "gdacs:TC-1001338". */
   members: string[];
-  research?: { at: string; model: string; searches: number };
+  /** When web research last added to this disaster; summary is true when the summary is research's own. */
+  research?: { at: string; model: string; searches: number; summary?: boolean };
 }
 
 export interface DisastersFile {

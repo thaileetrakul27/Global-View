@@ -97,7 +97,11 @@ export interface RegistrySociety {
   url: string | null;
   /** Its page in IFRC's national society directory. */
   directory: string | null;
-  /** Hosts of its own sites with "www." removed: the allowlist's society entries. */
+  /**
+   * The allowlist's society entries, one per site of its own: the host with
+   * "www." removed, or host and folder for a site that is one folder of a
+   * bigger host ("sld.cu/sitios/cruzroja"; see siteScope).
+   */
   hosts: string[];
   /** Its page on the Red Cross Red Crescent donation platform, when it is on it. */
   donate: string | null;
@@ -264,6 +268,39 @@ export function siteHost(url: string): string | null {
   }
 }
 
+/** Path segments that only choose a language or a home page, not a site of its own: "en", "pt-br", "home", "index.php". */
+const HOME_SEGMENT = /^(?:[a-z]{2}(?:[-_][a-z]{2})?|home|inicio|accueil|start|main|(?:index|default|home)\.[a-z]{2,5})$/i;
+
+/**
+ * A society site's allowlist entry. Normally its host ("redcross.org.uk",
+ * also for "https://www.mdais.org/en/"). When IFRC lists a folder on a
+ * bigger host ("http://www.sld.cu/sitios/cruzroja/", on Cuba's health
+ * network), the folder too, so the rest of that host is not taken for the
+ * society's site. Null when siteHost refuses the host.
+ */
+export function siteScope(url: string): string | null {
+  const host = siteHost(url);
+  if (!host) return null;
+  const segments = new URL(url).pathname.split("/").filter(Boolean);
+  while (segments.length > 0 && HOME_SEGMENT.test(segments[segments.length - 1]) && !/^[a-z]{2}(?:[-_][a-z]{2})?$/i.test(segments[segments.length - 1])) segments.pop();
+  if (segments.every((seg) => HOME_SEGMENT.test(seg))) return host;
+  return `${host}/${segments.join("/").toLowerCase()}`;
+}
+
+/**
+ * True when url lies inside a society entry from siteScope: on the host or
+ * a subdomain of it, or, for a folder entry, on that very host (www. aside)
+ * and inside the folder.
+ */
+export function inSiteScope(url: URL, scope: string): boolean {
+  const slash = scope.indexOf("/");
+  if (slash < 0) return hostMatches(url.hostname, scope);
+  if (url.hostname.replace(/^www\./, "") !== scope.slice(0, slash)) return false;
+  const folder = scope.slice(slash).toLowerCase();
+  const path = url.pathname.toLowerCase();
+  return path === folder || path.startsWith(`${folder}/`);
+}
+
 /** One website as IFRC lists it, cleaned: scheme added when missing ("www.cra.dz"), junk ("projet en suspend") dropped. */
 export function normaliseSiteUrl(raw: string): string | null {
   const t = raw.trim().replace(/[.,;]+$/, "");
@@ -331,7 +368,7 @@ export function toSocieties(rows: GoCountryRow[], previous: Record<string, Regis
     if (!name) continue;
     const code = r.iso.toUpperCase();
     const sites = [...splitSites(r.society_url), ...splitSites(r.website)].map(normaliseSiteUrl).filter((u): u is string => u !== null);
-    const hosts = [...new Set(sites.map(siteHost).filter((h): h is string => h !== null))];
+    const hosts = [...new Set(sites.map(siteScope).filter((h): h is string => h !== null))];
     out[code] = {
       name,
       country: cleanText(r.name, 120) || code,
@@ -731,7 +768,7 @@ export async function refreshRegistry(
 export interface DonationContext {
   /** The disaster's globe country codes. */
   countries: string[];
-  /** Registry society hosts for those countries. */
+  /** Registry society entries for those countries: hosts, or host and folder (see siteScope). */
   societyHosts: string[];
   /**
    * Codes whose paths on the donation platform are allowed: those of the
@@ -783,7 +820,7 @@ export function hostClass(url: URL, ctx: DonationContext): HostClass | null {
     const cc = url.pathname.split("/")[1]?.toUpperCase() ?? "";
     return (ctx.platformCodes ?? []).some((c) => c.toUpperCase() === cc) ? "platform" : null;
   }
-  if (ctx.societyHosts.some((h) => hostMatches(host, h))) return "society";
+  if (ctx.societyHosts.some((h) => inSiteScope(url, h))) return "society";
   if (UN_DOMAINS.some((d) => hostMatches(host, d))) return "un";
   if (UN_AGENCY_DOMAINS.some((d) => hostMatches(host, d)) || MOVEMENT_DOMAINS.some((d) => hostMatches(host, d))) return "agency";
   const gov = ctx.governmentDomains ?? loadGovernmentDomains();
@@ -1295,7 +1332,7 @@ export function knownOrg(url: URL, cls: HostClass, countries: string[], registry
       const s = societyOf(code, registry);
       if (!s) continue;
       const parent = registry.societies[code.toUpperCase()]?.parent;
-      if (cls === "platform" ? cc === code.toUpperCase() || cc === parent : s.hosts.some((h) => hostMatches(url.hostname, h))) return s.name;
+      if (cls === "platform" ? cc === code.toUpperCase() || cc === parent : s.hosts.some((h) => inSiteScope(url, h))) return s.name;
     }
     return null;
   }

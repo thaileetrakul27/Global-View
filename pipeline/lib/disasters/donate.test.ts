@@ -30,6 +30,7 @@ import {
   hasDonationWord,
   hostClass,
   hostMatches,
+  inSiteScope,
   isAllowedDonationUrl,
   isBloodDonationPath,
   isPlainHostname,
@@ -55,6 +56,7 @@ import {
   researchKind,
   researchedLinks,
   siteHost,
+  siteScope,
   societyLabel,
   societyOf,
   societySiteUrl,
@@ -186,6 +188,54 @@ function appeal(over: Partial<AppealRef> = {}): AppealRef {
 // Hosts
 // ---------------------------------------------------------------------------
 
+describe("siteScope and inSiteScope", () => {
+  it("keeps a society's own host, even when IFRC lists a language or home page", () => {
+    expect(siteScope("http://www.redcross.org.ph/")).toBe("redcross.org.ph");
+    expect(siteScope("https://www.mdais.org/en/")).toBe("mdais.org");
+    expect(siteScope("https://ckrm.org.mk/en/home/")).toBe("ckrm.org.mk");
+    expect(siteScope("https://sarc.sy/home/")).toBe("sarc.sy");
+    expect(siteScope("http://www.redcross.lv/lv/")).toBe("redcross.lv");
+    expect(siteScope("http://jnrcs.org/en")).toBe("jnrcs.org");
+    expect(siteScope("https://www.croix-rouge.fr/index.php")).toBe("croix-rouge.fr");
+  });
+
+  it("adds the folder for a society site that is one folder of a bigger host", () => {
+    // Cuba's Red Cross is a folder on Infomed, the health ministry's network.
+    expect(siteScope("http://www.sld.cu/sitios/cruzroja/")).toBe("sld.cu/sitios/cruzroja");
+    expect(siteScope("http://www.sld.cu/sitios/CruzRoja/index.html")).toBe("sld.cu/sitios/cruzroja");
+    expect(siteScope("http://www.friend.com.kp/dprkrcs")).toBe("friend.com.kp/dprkrcs");
+    expect(siteScope("https://www.facebook.com/redcross")).toBeNull();
+  });
+
+  it("matches a host entry on the host and its subdomains", () => {
+    expect(inSiteScope(new URL("https://www.redcross.org.ph/donate"), "redcross.org.ph")).toBe(true);
+    expect(inSiteScope(new URL("https://give.redcross.org.ph/"), "redcross.org.ph")).toBe(true);
+    expect(inSiteScope(new URL("https://redcross.org.ph.evil.com/"), "redcross.org.ph")).toBe(false);
+  });
+
+  it("matches a folder entry only inside that folder on that very host", () => {
+    const cu = "sld.cu/sitios/cruzroja";
+    expect(inSiteScope(new URL("https://www.sld.cu/sitios/cruzroja/donaciones/"), cu)).toBe(true);
+    expect(inSiteScope(new URL("https://sld.cu/sitios/cruzroja"), cu)).toBe(true);
+    expect(inSiteScope(new URL("https://www.sld.cu/sitios/CruzRoja/x"), cu)).toBe(true);
+    expect(inSiteScope(new URL("https://www.sld.cu/sitios/cruzrojanueva/"), cu)).toBe(false);
+    expect(inSiteScope(new URL("https://www.sld.cu/noticia/llegan-donaciones-santiago"), cu)).toBe(false);
+    expect(inSiteScope(new URL("https://instituciones.sld.cu/sitios/cruzroja/"), cu)).toBe(false);
+  });
+
+  it("keeps the rest of a shared host off the society allowlist", () => {
+    const reg = registry({
+      societies: { CU: society({ name: "Cuban Red Cross", country: "Cuba", url: "http://www.sld.cu/sitios/cruzroja/", hosts: ["sld.cu/sitios/cruzroja"], checked: daysBefore(1) }) },
+    });
+    const ctx = donationContext(["CU"], reg, GOV);
+    const own = new URL("https://www.sld.cu/sitios/cruzroja/donaciones/");
+    expect(hostClass(own, ctx)).toBe("society");
+    expect(knownOrg(own, "society", ["CU"], reg)).toBe("Cuban Red Cross");
+    expect(hostClass(new URL("https://instituciones.sld.cu/hospitalcalixtogarcia/donaciones/"), ctx)).toBeNull();
+    expect(hostClass(new URL("https://www.sld.cu/noticia/2026/10/20/llegan-donaciones-santiago"), ctx)).toBeNull();
+  });
+});
+
 describe("hostMatches", () => {
   it("matches the domain itself and its subdomains, at a dot boundary", () => {
     expect(hostMatches("gov.uk", "gov.uk")).toBe(true);
@@ -260,6 +310,11 @@ describe("toSocieties (real IFRC GO rows)", () => {
     expect(societies.DK.hosts).toEqual(["drk.dk", "rodekors.dk"]);
     expect(societies.DZ.hosts).toEqual(["cra-algerie.org", "cra.dz"]);
     expect(societies.PT.hosts).toEqual(["cruzvermelha.org.pt"]);
+  });
+
+  it("keeps a society site on a shared host to its folder", () => {
+    expect(societies.CU.url).toBe("http://www.sld.cu/sitios/cruzroja/");
+    expect(societies.CU.hosts).toEqual(["sld.cu/sitios/cruzroja"]);
   });
 
   it("prefers a site IFRC lists over https", () => {
@@ -1237,6 +1292,18 @@ describe("buildDonations", () => {
     const researched = [ok, failed, stale, unchecked, evil].map((url) => ({ url, org: "PRC", kind: "society", note: "" }));
     const links = buildDonations(input({ countries: ["PH"], researched }), reg, NOW, GOV);
     expect(links.filter((l) => l.via === "research").map((l) => l.url)).toEqual([ok]);
+  });
+
+  it("groups a researched page with no kind of its own by its host", () => {
+    const society = "https://www.redcross.org.ph/donate";
+    const gov = "https://www.dswd.gov.ph/donate";
+    const reg = registry({ verdicts: { [urlKey(society)]: verdict([society]), [urlKey(gov)]: verdict([gov]) } });
+    const researched = [society, gov].map((url) => ({ url, org: "x", kind: "" as const, note: "" }));
+    const links = researchedLinks(input({ countries: ["PH"], researched }), ctxFor(["PH"], reg), reg, NOW);
+    expect(links.map(({ link }) => [link.url, link.kind])).toEqual([
+      [society, "society"],
+      [gov, "government"],
+    ]);
   });
 
   it("drops a researched page whose cached redirect chain leaves this disaster's allowlist", () => {

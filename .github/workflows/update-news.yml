@@ -31,11 +31,32 @@ jobs:
       - run: npm test
 
       # Exits non-zero if every feed fails, so nothing below runs and the
-      # previous data stays live. Without the API key the feeds still
-      # publish; only translation and shared-story grouping are skipped.
+      # previous data stays live. Without the API key the feeds and the
+      # disaster map still publish; translation, shared-story grouping,
+      # spotting disasters in headlines and web research are skipped.
+      # Model spend is capped at $50 a month (pipeline/config/budget.json).
       - run: npm run pipeline:update
+        # Inside the job's limit, so the step below can still save the spend.
+        timeout-minutes: 50
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      # When the update fails, the site's data stays as it was, but the
+      # caches are saved: the model spend in cache/spend.json (so the
+      # monthly cap sees it), and the translations and research it paid for.
+      - name: Save caches after a failed update
+        if: failure()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cache
+          if git diff --cached --quiet; then
+            echo "No cache changes to save"
+            exit 0
+          fi
+          git commit -m "Save caches after a failed update"
+          git pull --rebase origin main
+          git push
 
       - name: Commit updated data
         run: |
