@@ -1391,6 +1391,19 @@ describe("prepareDonations", () => {
     expect(d.fetch.mock.calls.map((c) => String(c[0]))).toEqual(["https://www.redcross.or.th/", urls[0], urls[1]]);
   });
 
+  it("tries an unreachable society site once per run when the caller shares the unreachable set", async () => {
+    const reg = registry();
+    const d = deps(() => Promise.reject(new Error("fetch failed")) as never);
+    const unreachable = new Set<string>();
+    const input = { countries: ["TH"], appeals: [], researched: [] };
+    await prepareDonations(input, reg, d, NOW, { pauseMs: 0, governmentDomains: GOV, unreachable });
+    const first = d.fetch.mock.calls.length;
+    await prepareDonations(input, reg, d, NOW, { pauseMs: 0, governmentDomains: GOV, unreachable });
+    expect(first).toBeGreaterThan(0);
+    expect(d.fetch.mock.calls.length).toBe(first);
+    expect(unreachable.has(urlKey("https://www.redcross.or.th/"))).toBe(true);
+  });
+
   it("checks the society's own site over https once, then shows it", async () => {
     const site = "https://www.redcross.or.th/";
     const reg = registry();

@@ -114,6 +114,8 @@ export default function App() {
   // Country to return to when the disaster panel closes.
   const [disasterFrom, setDisasterFrom] = useState<string | null>(null);
   const [showDisasters, setShowDisasters] = useState(readShowDisasters);
+  // Whether the landing list shows every disaster; kept here so closing a panel keeps the row to refocus.
+  const [listExpanded, setListExpanded] = useState(false);
   // Country files already fetched, keyed by code. Null marks "no file".
   const [files, setFiles] = useState<Record<string, CountryFile | null | "error">>({});
   const [selectedCode, setSelectedCode] = useState<string | null>(null);
@@ -602,6 +604,8 @@ export default function App() {
             onSelect={openDisasterPanel}
             showOnMap={showDisasters}
             onToggleMap={toggleDisasters}
+            expanded={listExpanded}
+            onExpand={setListExpanded}
           />
         </div>
       )}

@@ -168,3 +168,9 @@ export function countriesNear(boxes: Map<string, Box[]>, lat: number, lng: numbe
   for (const [code, list] of boxes) if (list.some((b) => degreesToBox(lat, lng, b) <= reach)) out.push(code);
   return out;
 }
+
+/** Arc width factor for a camera altitude: full width from altitude 1.8 out, a sixth up close, in steps of 0.05. */
+export function arcScaleFor(altitude: number): number {
+  const scale = Math.min(1, Math.max(1 / 6, altitude / 1.8));
+  return Math.round(scale * 20) / 20;
+}

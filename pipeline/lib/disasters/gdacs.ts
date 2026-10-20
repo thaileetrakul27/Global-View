@@ -87,7 +87,7 @@ export const EQ_MIN_MAGNITUDE = 6.0;
 /** ...or from this magnitude when GDACS places them in a country. */
 export const EQ_MIN_MAGNITUDE_ON_LAND = 5.5;
 /** Green wildfires are kept from this burned area, in hectares. */
-export const WF_MIN_HECTARES = 10_000;
+export const WF_MIN_HECTARES = 20_000;
 
 /** One list query: which types and alert levels, how many days back, and optionally the lowest severity. */
 export interface ListQuery {

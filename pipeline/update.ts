@@ -24,7 +24,7 @@ import {
   worldCountries,
   type CountryConfig,
 } from "./lib/countries";
-import { buildSearchUrl, fetchFeed, fetchFeedUrl, type Article } from "./lib/googlenews";
+import { buildSearchUrl, fetchFeed, fetchFeedUrl, type Article, type FetchDeps } from "./lib/googlenews";
 import { sleep, writeJson } from "./lib/io";
 import { mergeIndex, readIndex, type CountryFile, type IndexEntry } from "./lib/publish";
 import { collectCandidates, findSharedStories, reconcileStories, type SharedFile } from "./lib/shared";
@@ -55,7 +55,7 @@ interface Fetched {
  * in the press language, followed by Google News search results in
  * English. Either source may fail; both failing keeps the previous data.
  */
-async function fetchWorld(country: CountryConfig, delayMs: number, deps: typeof fetchDeps): Promise<{ url: string; articles: Article[] } | null> {
+async function fetchWorld(country: CountryConfig, delayMs: number, deps: FetchDeps): Promise<{ url: string; articles: Article[] } | null> {
   const local = country.local ?? { lang: "en", name: country.name };
   const bing = await fetchBingFeed(local.name, country.code.slice(0, 2), local.lang, delayMs, deps);
   await deps.sleep(delayMs);
@@ -63,7 +63,6 @@ async function fetchWorld(country: CountryConfig, delayMs: number, deps: typeof 
   if (!bing && !google) return null;
   return { url: bing?.url ?? google!.url, articles: [...(bing?.articles ?? []), ...(google?.articles ?? [])] };
 }
-const fetchDeps = { fetch, sleep, log: console.log };
 
 async function main() {
   const args = parseUpdateArgs(process.argv.slice(2));

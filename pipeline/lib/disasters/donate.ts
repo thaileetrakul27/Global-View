@@ -1367,6 +1367,12 @@ export interface PrepareOptions {
   maxChecks?: number;
   pauseMs?: number;
   governmentDomains?: Record<string, string[]>;
+  /**
+   * URL keys that could not be reached this run. Share one set across a
+   * run's disasters so an unreachable site is tried once, not once per
+   * disaster in its country. Not saved: the next run tries again.
+   */
+  unreachable?: Set<string>;
 }
 
 /**
@@ -1380,13 +1386,19 @@ export interface PrepareOptions {
 export async function prepareDonations(input: DonationInput, registry: DonationRegistry, deps: FetchDeps, now: string, opts: PrepareOptions = {}): Promise<DonationLink[]> {
   const gov = opts.governmentDomains ?? loadGovernmentDomains();
   const ctx = donationContext(input.countries, registry, gov);
+  const unreachable = opts.unreachable ?? new Set<string>();
+  // One live check; a URL that gives no verdict (network failure, 5xx) is not tried again this run.
+  const check = async (url: string) => {
+    const key = urlKey(url);
+    if (unreachable.has(key)) return;
+    await verifyDonationPage(url, deps, ctx, registry, now);
+    if (!registry.verdicts[key]) unreachable.add(key);
+    await deps.sleep(opts.pauseMs ?? 500);
+  };
   const society = input.countries[0] ? societyOf(input.countries[0], registry) : null;
   const site = society && !society.donate ? societySiteUrl(society) : null;
   const siteVerdict = site ? registry.verdicts[urlKey(site)] : undefined;
-  if (site && !(siteVerdict && verdictFresh(siteVerdict, now))) {
-    await verifyDonationPage(site, deps, ctx, registry, now);
-    await deps.sleep(opts.pauseMs ?? 500);
-  }
+  if (site && !(siteVerdict && verdictFresh(siteVerdict, now))) await check(site);
   let checks = 0;
   for (const r of input.researched) {
     if (!r || typeof r.url !== "string") continue;
@@ -1396,11 +1408,10 @@ export async function prepareDonations(input: DonationInput, registry: DonationR
       continue;
     }
     const cached = registry.verdicts[urlKey(r.url)];
-    if (cached && verdictFresh(cached, now)) continue;
+    if ((cached && verdictFresh(cached, now)) || unreachable.has(urlKey(r.url))) continue;
     if (checks >= (opts.maxChecks ?? 4)) break;
     checks++;
-    await verifyDonationPage(r.url, deps, ctx, registry, now);
-    await deps.sleep(opts.pauseMs ?? 500);
+    await check(r.url);
   }
   return buildDonations(input, registry, now, gov);
 }

@@ -61,7 +61,7 @@ function entry(p: Partial<ResearchEntry> = {}): ResearchEntry {
       { label: "people affected", value: "12,000", sourceName: "x", sourceUrl: "https://x.example" },
     ],
     donation: [],
-    sources: [{ url: "https://www.thedailystar.net/a", title: "Floods in Sylhet" }],
+    sources: [{ name: "Floods in Sylhet", url: "https://www.thedailystar.net/a", title: "Floods in Sylhet" }],
     membersHash: "h",
     ...p,
   };

@@ -98,7 +98,7 @@ const EXPECTED_IDS = [
   "FL-1104121", // Orange, 13 days since last update
   "WF-1032653", // 87,349 ha
   "WF-1032785", // 27,117 ha
-  "WF-1032552", // 13,755 ha, 9 days ago
+  // WF-1032552 (13,755 ha) is under the 20,000 ha minimum for Green fires.
   "DR-1018332", // Orange, current
   "DR-1027450", // Orange, updated 3 days ago though not flagged current
   "VO-1000152", // Orange, 10 days ago
@@ -363,14 +363,14 @@ describe("includeEvent", () => {
     expect(includeEvent(fl(true, 15), NOW)).toBe(true);
   });
 
-  it("wildfires: Orange/Red, or 10,000 ha burned, within 14 days", () => {
+  it("wildfires: Orange/Red, or 20,000 ha burned, within 14 days", () => {
     const wf = (over: Partial<GdacsListEvent>) => eventWith("WF-1032891", { to: daysAgo(1), ...over });
-    expect(includeEvent(wf({ severity: 9_999 }), NOW)).toBe(false);
-    expect(includeEvent(wf({ severity: 10_000 }), NOW)).toBe(true);
+    expect(includeEvent(wf({ severity: 19_999 }), NOW)).toBe(false);
+    expect(includeEvent(wf({ severity: 20_000 }), NOW)).toBe(true);
     expect(includeEvent(wf({ alert: "Orange", severity: 50 }), NOW)).toBe(true);
     expect(includeEvent(wf({ alert: "Orange", to: daysAgo(15) }), NOW)).toBe(false);
     // Burned area read from the text when the unit is missing.
-    expect(includeEvent(wf({ severityUnit: "", severity: null, severityText: "Green impact for forestfire in 12000 ha" }), NOW)).toBe(true);
+    expect(includeEvent(wf({ severityUnit: "", severity: null, severityText: "Green impact for forestfire in 22000 ha" }), NOW)).toBe(true);
   });
 
   it("volcanoes: within 30 days at any level", () => {
@@ -857,7 +857,7 @@ describe("queryWindow and listUrl", () => {
     );
     expect(listUrl(eqGreen, queryWindow(eqGreen, NOW), 1)).toContain("eventlist=EQ&alertlevel=Green&fromdate=2026-10-08&todate=2026-10-20&severity=5.5&");
     expect(listUrl(eqMajor, queryWindow(eqMajor, NOW), 1)).toContain("eventlist=EQ&alertlevel=Orange;Red&fromdate=2026-09-18&todate=2026-10-20&pagenumber=1");
-    expect(listUrl(wfGreen, queryWindow(wfGreen, NOW), 1)).toContain("eventlist=WF&alertlevel=Green&fromdate=2026-10-04&todate=2026-10-20&severity=10000&");
+    expect(listUrl(wfGreen, queryWindow(wfGreen, NOW), 1)).toContain("eventlist=WF&alertlevel=Green&fromdate=2026-10-04&todate=2026-10-20&severity=20000&");
     expect(listUrl(wfMajor, queryWindow(wfMajor, NOW), 1)).toContain("eventlist=WF&alertlevel=Orange;Red&");
     expect(listUrl(vodr, queryWindow(vodr, NOW), 1)).toContain("eventlist=VO;DR&alertlevel=Green;Orange;Red&fromdate=2026-09-18");
   });

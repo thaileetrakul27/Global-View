@@ -14,6 +14,9 @@ interface Props {
   /** Whether the globe draws the disaster layer. */
   showOnMap: boolean;
   onToggleMap: (v: boolean) => void;
+  /** Whether every row shows. Held by the parent so it survives a panel opening and closing. */
+  expanded: boolean;
+  onExpand: (v: boolean) => void;
 }
 
 /** Rows shown before "Show all". */
@@ -25,8 +28,7 @@ const ring = "focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
 // shows or hides the disaster layer on the globe. The card never runs past
 // the bottom of the screen: the rows scroll, the heading and the footer
 // with the switch stay put.
-export default function DisasterList({ disasters, nameOf, onSelect, showOnMap, onToggleMap }: Props) {
-  const [expanded, setExpanded] = useState(false);
+export default function DisasterList({ disasters, nameOf, onSelect, showOnMap, onToggleMap, expanded, onExpand }: Props) {
   const headingId = useId();
   const listId = useId();
   const ranked = useMemo(() => rankDisasters(disasters), [disasters]);
@@ -78,7 +80,7 @@ export default function DisasterList({ disasters, nameOf, onSelect, showOnMap, o
             type="button"
             aria-expanded={expanded}
             aria-controls={listId}
-            onClick={() => setExpanded((v) => !v)}
+            onClick={() => onExpand(!expanded)}
             className={`text-xs font-medium text-accent hover:underline ${ring}`}
           >
             {expanded ? "Show fewer" : `Show all ${ranked.length}`}

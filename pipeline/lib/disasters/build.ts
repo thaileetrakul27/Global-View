@@ -10,7 +10,7 @@
 import fs from "node:fs";
 import type { AiClient } from "../ai";
 import type { FetchDeps } from "../googlenews";
-import { writeJson } from "../io";
+import { writeCompactJson, writeJson } from "../io";
 import type { CountryResolver } from "../resolve";
 import { averageResearchCost, canSpend, researchAllowance, type Budget, type Ledger } from "../spend";
 import { buildDonations, prepareDonations, readRegistry, refreshRegistry, writeRegistry, type DonationRegistry } from "./donate";
@@ -399,6 +399,7 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   let registry: DonationRegistry = readRegistry();
   if (!run.offline) registry = await refreshRegistry(registry, deps, now, run.resolve, { probeCodes: [...run.globeCodes] });
   let checks = 0;
+  const unreachable = new Set<string>();
   for (const d of disasters) {
     const input = { countries: d.countries, appeals: d.appeals, researched: cache[d.id]?.donation ?? [] };
     if (run.offline || checks >= MAX_DONATION_CHECKS) {
@@ -406,14 +407,14 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
       continue;
     }
     const before = Object.keys(registry.verdicts).length;
-    d.donate = await prepareDonations(input, registry, deps, now, { maxChecks: 3 });
+    d.donate = await prepareDonations(input, registry, deps, now, { maxChecks: 3, unreachable });
     checks += Math.max(0, Object.keys(registry.verdicts).length - before);
   }
 
   const file: DisastersFile = { updated: now, fetched, disasters };
-  writeJson(outPath, file);
+  writeCompactJson(outPath, file);
   if (!run.offline) {
-    writeJson(SNAPSHOT_PATH, next);
+    writeCompactJson(SNAPSHOT_PATH, next);
     writeRegistry(registry);
     writeJson(ATTEMPTS_PATH, attempts);
   }

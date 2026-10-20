@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { countriesNear, degreesToBox, detailReach, featureBoxes, type CountryFeature } from "../geo";
+import { arcScaleFor, countriesNear, degreesToBox, detailReach, featureBoxes, type CountryFeature } from "../geo";
 
 function feature(code: string, polygons: number[][][][]): CountryFeature {
   return {
@@ -46,5 +46,15 @@ describe("detailed shapes near the camera", () => {
     expect(countriesNear(boxes, 32.4, 15.1, 1)).toEqual(["LY"]);
     expect(detailReach(0.1)).toBeLessThan(detailReach(0.7));
     expect(detailReach(5)).toBe(60);
+  });
+});
+
+describe("arcScaleFor", () => {
+  it("keeps full arc width when far out and shrinks it in steps when zoomed in", () => {
+    expect(arcScaleFor(2.2)).toBe(1);
+    expect(arcScaleFor(1.8)).toBe(1);
+    expect(arcScaleFor(0.9)).toBe(0.5);
+    expect(arcScaleFor(0.1)).toBe(0.15);
+    expect(arcScaleFor(0.92)).toBe(arcScaleFor(0.9));
   });
 });

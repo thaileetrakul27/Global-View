@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
 import GlobeGL, { type GlobeMethods } from "react-globe.gl";
 import { AmbientLight, DirectionalLight, MeshLambertMaterial } from "three";
-import { countryFocus, type CountryFeature } from "@/lib/geo";
+import { arcScaleFor, countryFocus, type CountryFeature } from "@/lib/geo";
 import type { Disaster } from "@/lib/data";
 import { disasterFocus } from "@/lib/disasterLayers";
 import { tooltipDetail } from "./disasters/markers";
@@ -270,7 +270,19 @@ export default function Globe({
     (d: object) => hexToRgba(colors.accent, 0.25 + 0.45 * (d as GlobeArc).strength),
     [colors.accent],
   );
-  const arcStroke = useCallback((d: object) => 0.18 + 0.3 * (d as GlobeArc).strength, []);
+  // Arc width is in globe units, so it would swell into thick bars as the
+  // camera zooms in. It shrinks with altitude, in steps so the arcs are not
+  // rebuilt on every frame of a zoom.
+  const [arcScale, setArcScale] = useState(1);
+  const arcStroke = useCallback((d: object) => (0.18 + 0.3 * (d as GlobeArc).strength) * arcScale, [arcScale]);
+  const onView = detailed.onView;
+  const handleZoom = useCallback(
+    (view: { lat: number; lng: number; altitude: number }) => {
+      onView(view);
+      setArcScale(arcScaleFor(view.altitude));
+    },
+    [onView],
+  );
   const strokeColor = useCallback(
     (d: object) => (codeOf(d) === selectedCode ? colors.accent : colors.border),
     [selectedCode, colors],
@@ -359,7 +371,7 @@ export default function Globe({
           arcsTransitionDuration={reduced ? 0 : 600}
           {...layers.props}
           pointerEventsFilter={disasterPointerFilter}
-          onZoom={detailed.onView}
+          onZoom={handleZoom}
           onGlobeReady={handleReady}
         />
       )}
