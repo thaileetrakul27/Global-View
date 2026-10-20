@@ -40,3 +40,485 @@ body {
   font-family: var(--font-sans);
   overscroll-behavior: none;
 }
+
+/* ==== Disaster markers on the globe ====================================
+   Built in src/components/disasters/markers.ts and positioned by the
+   globe's HTML layer, which owns each element's transform; anything that
+   scales or moves therefore goes on the inner spans. Each marker is a white
+   chip over an effect (.gv-dz-fx) that shows the hazard even from afar:
+   ripples for water, a flickering glow for fire, a turning spiral for a
+   storm, a shaking double ring for a quake. Every effect has a still frame
+   (its base style) that reduced motion shows instead of the animation. */
+.gv-dz {
+  position: relative;
+  width: var(--dz-size, 24px);
+  height: var(--dz-size, 24px);
+  pointer-events: auto;
+  cursor: pointer;
+  border-radius: 9999px;
+  outline: none;
+  transition: opacity 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+/* A touch target of at least 44 px around the chip, whatever its size. */
+@media (pointer: coarse) {
+  .gv-dz::before {
+    content: "";
+    position: absolute;
+    inset: min(0px, calc((var(--dz-size, 24px) - 44px) / 2));
+    border-radius: 9999px;
+  }
+}
+.gv-dz-chip {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 9999px;
+  background: var(--card);
+  border: 1.5px solid var(--dz-color);
+  box-shadow: 0 1px 2px rgba(28, 28, 26, 0.12);
+  /* Moved aside when it would cover a more important marker (see setMarkerNudge). */
+  translate: var(--dz-nudge, 0 0);
+  transition:
+    transform 0.15s ease,
+    translate 0.2s ease,
+    background-color 0.15s ease;
+}
+.gv-dz-chip svg {
+  transition: stroke 0.15s ease;
+}
+.gv-dz:hover .gv-dz-chip,
+.gv-dz:focus-visible .gv-dz-chip {
+  transform: scale(1.14);
+}
+.gv-dz:focus-visible .gv-dz-chip {
+  box-shadow:
+    0 0 0 2px var(--paper),
+    0 0 0 4px var(--accent);
+}
+
+/* The effect layer: bigger and stronger with severity, never clickable. */
+.gv-dz-fx {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: opacity 0.2s ease;
+}
+.gv-dz[data-sev="2"] .gv-dz-fx {
+  opacity: 0.92;
+  transform: scale(1);
+}
+.gv-dz[data-sev="3"] .gv-dz-fx {
+  opacity: 1;
+  transform: scale(1.15);
+}
+.gv-dz-halo,
+.gv-dz-fx::before {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  pointer-events: none;
+}
+/* Any type without its own effect: a soft pulse in its colour. */
+.gv-dz-halo {
+  background: var(--dz-color);
+  opacity: 0.2;
+  transform: scale(1.7);
+  animation: gv-dz-pulse 2.4s ease-out infinite;
+}
+.gv-dz-halo-late {
+  animation-delay: -1.2s;
+}
+@keyframes gv-dz-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* Flood and tsunami: three rings of water spreading out. */
+@keyframes gv-dz-ripple {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+.gv-dz:is([data-type="flood"], [data-type="tsunami"]) .gv-dz-halo,
+.gv-dz:is([data-type="flood"], [data-type="tsunami"]) .gv-dz-fx::before {
+  background: color-mix(in srgb, var(--dz-light) 30%, transparent);
+  border: 2px solid var(--dz-color);
+  opacity: 0.45;
+  transform: scale(1.9);
+  animation: gv-dz-ripple 2.7s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
+.gv-dz:is([data-type="flood"], [data-type="tsunami"]) .gv-dz-fx::before {
+  content: "";
+  animation-delay: -0.9s;
+}
+.gv-dz:is([data-type="flood"], [data-type="tsunami"]) .gv-dz-halo-late {
+  animation-delay: -1.8s;
+}
+.gv-dz[data-type="tsunami"] .gv-dz-halo,
+.gv-dz[data-type="tsunami"] .gv-dz-fx::before {
+  border-width: 2.5px;
+  animation-duration: 1.8s;
+}
+.gv-dz[data-type="tsunami"] .gv-dz-fx::before {
+  animation-delay: -0.6s;
+}
+.gv-dz[data-type="tsunami"] .gv-dz-halo-late {
+  animation-delay: -1.2s;
+}
+
+/* Wildfire: a hot glow flickering in irregular steps. */
+@keyframes gv-dz-flicker {
+  0% {
+    opacity: 0.85;
+    transform: scale(2.1);
+  }
+  20% {
+    opacity: 0.55;
+    transform: scale(1.9);
+  }
+  40% {
+    opacity: 0.95;
+    transform: scale(2.3);
+  }
+  60% {
+    opacity: 0.6;
+    transform: scale(2);
+  }
+  80% {
+    opacity: 0.9;
+    transform: scale(2.25);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(2.05);
+  }
+}
+.gv-dz[data-type="wildfire"] .gv-dz-halo {
+  background: radial-gradient(circle, rgba(253, 224, 71, 0.95) 0%, rgba(249, 115, 22, 0.8) 30%, rgba(220, 38, 38, 0.4) 52%, rgba(220, 38, 38, 0) 70%);
+  opacity: 0.8;
+  transform: scale(2.1);
+  animation: gv-dz-flicker 1.1s steps(5, jump-none) infinite;
+}
+.gv-dz[data-type="wildfire"] .gv-dz-halo-late {
+  background: radial-gradient(circle, rgba(251, 146, 60, 0.7) 0%, rgba(251, 146, 60, 0) 62%);
+  animation-duration: 0.77s;
+  animation-delay: -0.35s;
+}
+
+/* Volcano and heatwave: a glow swelling and fading. */
+@keyframes gv-dz-glow {
+  from {
+    opacity: 0.45;
+    transform: scale(1.8);
+  }
+  to {
+    opacity: 0.9;
+    transform: scale(2.35);
+  }
+}
+.gv-dz[data-type="volcano"] .gv-dz-halo {
+  background: radial-gradient(circle, rgba(254, 202, 87, 0.95) 0%, rgba(239, 68, 68, 0.75) 34%, rgba(185, 28, 28, 0) 70%);
+  opacity: 0.7;
+  transform: scale(2);
+  animation: gv-dz-glow 1.5s ease-in-out infinite alternate;
+}
+.gv-dz[data-type="heatwave"] .gv-dz-halo {
+  background: radial-gradient(circle, rgba(251, 113, 133, 0.75) 0%, rgba(249, 115, 22, 0.4) 42%, rgba(249, 115, 22, 0) 70%);
+  opacity: 0.7;
+  transform: scale(2.1);
+  animation: gv-dz-glow 2.6s ease-in-out infinite alternate;
+}
+.gv-dz:is([data-type="volcano"], [data-type="heatwave"], [data-type="drought"]) .gv-dz-halo-late {
+  display: none;
+}
+
+/* Cyclones and storms: two cloud arms turning, anticlockwise in the north
+   and (mirrored) clockwise in the south. Dust storms: a slower, hazier turn. */
+@keyframes gv-dz-turn {
+  to {
+    rotate: -360deg;
+  }
+}
+.gv-dz:is([data-type="cyclone"], [data-type="storm"], [data-type="dust"]) .gv-dz-halo:not(.gv-dz-halo-late) {
+  background: conic-gradient(var(--dz-color) 0deg, transparent 140deg, transparent 180deg, var(--dz-color) 180deg, transparent 320deg);
+  -webkit-mask: radial-gradient(circle, transparent 30%, #000 36%, #000 60%, transparent 71%);
+  mask: radial-gradient(circle, transparent 30%, #000 36%, #000 60%, transparent 71%);
+  opacity: 0.6;
+  transform: scale(2.6);
+  animation: gv-dz-turn 2.6s linear infinite;
+}
+.gv-dz[data-south]:is([data-type="cyclone"], [data-type="storm"]) .gv-dz-halo:not(.gv-dz-halo-late) {
+  transform: scale(-2.6, 2.6);
+  animation-direction: reverse;
+}
+.gv-dz[data-type="dust"] .gv-dz-halo:not(.gv-dz-halo-late) {
+  background: conic-gradient(var(--dz-light) 0deg, transparent 120deg, var(--dz-light) 180deg, transparent 300deg);
+  filter: blur(1px);
+  animation-duration: 7s;
+}
+/* The calm eye (storms) or a faint haze (dust) around the chip. */
+.gv-dz:is([data-type="cyclone"], [data-type="storm"], [data-type="dust"]) .gv-dz-halo-late {
+  background: transparent;
+  border: 1.5px solid var(--dz-color);
+  opacity: 0.45;
+  transform: scale(1.3);
+  animation: none;
+}
+
+/* Earthquake: a sharp double ring that shakes as it leaves the epicentre. */
+@keyframes gv-dz-quake {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.95;
+  }
+  6% {
+    transform: translate(-1.5px, 1px) scale(1.18);
+  }
+  12% {
+    transform: translate(1.5px, -1px) scale(1.36);
+  }
+  18% {
+    transform: translate(-1px, -1px) scale(1.52);
+  }
+  24% {
+    transform: translate(1px, 1px) scale(1.66);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0, 0) scale(2.7);
+    opacity: 0;
+  }
+}
+.gv-dz[data-type="earthquake"] .gv-dz-halo {
+  background: transparent;
+  border: 2px solid var(--dz-color);
+  opacity: 0.5;
+  transform: scale(1.7);
+  animation: gv-dz-quake 1.7s cubic-bezier(0.1, 0.7, 0.3, 1) infinite;
+}
+.gv-dz[data-type="earthquake"] .gv-dz-halo-late {
+  border-width: 1.5px;
+  transform: scale(2.1);
+  opacity: 0.35;
+  animation-delay: 0.22s;
+}
+
+/* Drought: cracked, parched ground; still, it is a slow disaster. */
+.gv-dz[data-type="drought"] .gv-dz-halo {
+  background: radial-gradient(circle, color-mix(in srgb, var(--dz-light) 75%, transparent) 0 52%, transparent 70%);
+  border: 2px dashed var(--dz-color);
+  opacity: 0.8;
+  transform: scale(1.9);
+  animation: none;
+}
+
+/* Cold wave: an icy disc that twinkles, inside a slowly turning frost ring. */
+@keyframes gv-dz-twinkle {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+.gv-dz[data-type="coldwave"] .gv-dz-halo {
+  background: radial-gradient(circle, color-mix(in srgb, var(--dz-light) 70%, transparent) 0 50%, transparent 70%);
+  border: 1.5px solid var(--dz-color);
+  opacity: 0.65;
+  transform: scale(2);
+  animation: gv-dz-twinkle 2.4s ease-in-out infinite;
+}
+.gv-dz[data-type="coldwave"] .gv-dz-halo-late {
+  background: transparent;
+  border: 1.5px dashed var(--dz-color);
+  opacity: 0.5;
+  transform: scale(2.5);
+  animation: gv-dz-turn 14s linear infinite;
+}
+
+/* Landslide: earth sliding downhill. */
+@keyframes gv-dz-slide {
+  0% {
+    transform: translateY(-3px) scale(1.4);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(9px) scale(2.2);
+    opacity: 0;
+  }
+}
+.gv-dz[data-type="landslide"] .gv-dz-halo {
+  background: radial-gradient(ellipse at 50% 35%, var(--dz-light) 0 38%, transparent 68%);
+  border-bottom: 2.5px solid var(--dz-color);
+  opacity: 0.5;
+  transform: scale(1.8);
+  animation: gv-dz-slide 2.2s ease-in infinite;
+}
+
+/* Only the country is known: a dashed ring says the spot is approximate. */
+.gv-dz-ring {
+  position: absolute;
+  inset: -5px;
+  border-radius: 9999px;
+  border: 1.5px dashed var(--dz-color);
+  pointer-events: none;
+  translate: var(--dz-nudge, 0 0);
+  transition: translate 0.2s ease;
+}
+
+/* Selected: the chip lifts into a pin and the effect makes way, so the area
+   drawn on the map stays visible; a dot at the foot of the pin marks the spot. */
+.gv-dz-stem {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 2px;
+  height: 0;
+  margin-left: -1px;
+  background: var(--dz-color);
+  pointer-events: none;
+  transition: height 0.2s ease;
+}
+.gv-dz-stem::after {
+  content: "";
+  position: absolute;
+  left: -2.5px;
+  bottom: -3.5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: var(--dz-color);
+  border: 1.5px solid var(--card);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.gv-dz.is-selected .gv-dz-stem {
+  height: calc(var(--dz-size, 24px) * 1.25);
+}
+.gv-dz.is-selected .gv-dz-stem::after {
+  opacity: 1;
+}
+.gv-dz.is-selected .gv-dz-fx {
+  opacity: 0;
+}
+.gv-dz.is-selected .gv-dz-chip {
+  background: var(--dz-color);
+  transform: translateY(calc(var(--dz-size, 24px) * -1.4)) scale(1.1);
+}
+.gv-dz.is-selected .gv-dz-chip svg {
+  stroke: #ffffff;
+}
+.gv-dz.is-dim {
+  opacity: 0.55;
+}
+.gv-dz.is-dim:hover,
+.gv-dz.is-dim:focus-visible {
+  opacity: 1;
+}
+
+/* Places of the selected disaster: a dot and a small label beside it. */
+.gv-place {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.gv-place-dot {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--dz-color);
+  border: 1.5px solid var(--card);
+  box-shadow: 0 0 0 1px rgba(28, 28, 26, 0.18);
+}
+.gv-place-label {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 4px;
+  align-items: baseline;
+  /* --label-max narrows it to the room beside the dot when it would not fit
+     (set in markers.ts; a min() here would be simplified away by the build). */
+  max-width: var(--label-max, min(13rem, 55vw));
+  padding: 1px 6px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--ink);
+  font-size: 11px;
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gv-place-label strong {
+  font-weight: 600;
+}
+.gv-place-label span {
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Label on the left: away from the marker, or clear of the screen's edge. */
+.gv-place.is-left .gv-place-label {
+  left: auto;
+  right: 13px;
+}
+/* Under the marker: hide the dot and move the label clear of the chip. */
+.gv-place.is-near .gv-place-dot {
+  opacity: 0;
+}
+.gv-place.is-near .gv-place-label {
+  left: 22px;
+}
+.gv-place.is-near.is-left .gv-place-label {
+  left: auto;
+  right: 22px;
+}
+
+/* On the far side of the globe. */
+.gv-hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    visibility 0s linear 0.2s;
+}
+
+/* Reduced motion: every effect shows its still frame. The selectors match
+   the strongest ones above, so no type keeps animating. */
+@media (prefers-reduced-motion: reduce) {
+  .gv-dz .gv-dz-halo,
+  .gv-dz .gv-dz-fx::before,
+  .gv-dz[data-type] .gv-dz-halo:not(.gv-dz-halo-late),
+  .gv-dz[data-type] .gv-dz-halo,
+  .gv-dz[data-type] .gv-dz-fx::before {
+    animation: none !important;
+  }
+  .gv-dz-chip,
+  .gv-dz-ring,
+  .gv-dz-stem {
+    transition: none;
+  }
+}
+/* ==== End of disaster markers ========================================== */

@@ -1,0 +1,72 @@
+{
+  "_note": "Assembled 2026-10-20 for the live IFRC disaster ifrc-flood-8013 (fields copied from the live merged feed) and a live web search for \"Cox's Bazar monsoon depression flooding October 2026 deaths affected upazilas\". The URLs and titles in research.results are the real results as the search returned them, junk titles included (\"Reliable Brokers\" on a Dhaka Tribune story, \"go-api.ifrc.org\" on IFRC files). The notes text and cited text were written from what those results said: the search found only the July 2026 event. The parsed block is a hand-made model answer with faults seen in real model output: kinds the map does not use (upazila, camp, union), a \"not reported\" admin and figure, a figure source copied as a whole numbered line, and a summary.",
+  "disaster": {
+    "id": "ifrc-flood-8013",
+    "type": "flood",
+    "title": "Bangladesh: Monsoon Depression in Cox's Bazar",
+    "severity": 2,
+    "severityText": "IFRC Orange alert, DREF",
+    "countries": ["BD"],
+    "lat": 23.823788018248163,
+    "lng": 90.27214671748288,
+    "precision": "country",
+    "started": "2026-07-14T00:00:00.000Z",
+    "updated": "2026-08-20T11:26:07.181Z",
+    "sources": [{ "name": "IFRC GO country page", "url": "https://go.ifrc.org/countries/27" }],
+    "members": ["ifrc:8013"],
+    "reportedBy": ["ifrc"]
+  },
+  "research": {
+    "text": "Status: monsoon flooding and landslides in July 2026; no report after about 18 July says whether waters are still high.\nPlaces: Ukhiya upazila (Cox's Bazar): 14 deaths, 13 of them Rohingya refugees killed in landslides in the camps. Chakaria upazila (Cox's Bazar): 6 deaths, 1 missing. Teknaf upazila (Cox's Bazar): hardest hit. Ramu, Pekua and Matamuhuri upazilas (Cox's Bazar): flooded. Bandarban and Chattogram districts: landslides and flooding.\nFigures: 32 deaths in Cox's Bazar (19 residents, 13 Rohingya) according to the Ministry of Disaster Management; 46 deaths from floods, flash floods and landslides according to the Dhaka Tribune on 12 July; 374 unions and 4 municipalities in 56 upazilas affected according to IFRC on 18 July. Displaced: not reported.\nDonation pages: none found.",
+    "citations": [
+      {
+        "url": "https://bdrcs.org/wp-content/uploads/2026/07/Sitrep-1Monsoon-triggered-landslides-and-flooding-in-coxs-bazar-bandarban-and-chattogram-7-July-2026.pdf",
+        "title": "Sitrep 1Monsoon triggered landslides and flooding in coxs bazar bandarban and chattogram 7 July 2026",
+        "citedText": "Among the six upazilas of the district, Teknaf has been hit the hardest."
+      },
+      {
+        "url": "https://www.dhakatribune.com/bangladesh/414919/two-children-swept-away-in-cox-s-bazar-floods",
+        "title": "Reliable Brokers",
+        "citedText": "The toll from floods, flash floods and landslides has risen to 46."
+      },
+      {
+        "url": "https://go-api.ifrc.org/api/DownloadFile/95412/MDRBD040du1",
+        "title": "go-api.ifrc.org",
+        "citedText": "374 unions and four municipalities across 56 upazilas have been affected."
+      }
+    ],
+    "results": [
+      { "url": "https://bdrcs.org/wp-content/uploads/2026/07/Sitrep-1Monsoon-triggered-landslides-and-flooding-in-coxs-bazar-bandarban-and-chattogram-7-July-2026.pdf", "title": "Sitrep 1Monsoon triggered landslides and flooding in coxs bazar bandarban and chattogram 7 July 2026" },
+      { "url": "https://go-api.ifrc.org/api/DownloadFile/95362/MDRBD040do", "title": "go-api.ifrc.org" },
+      { "url": "https://www.thedailystar.net/environment/climate-crisis/natural-disaster/news/monsoon-depression-over-bay-thousands-suffer", "title": "Monsoon, depression over Bay: Thousands suffer in coastal districts" },
+      { "url": "https://www.dhakatribune.com/bangladesh/414919/two-children-swept-away-in-cox-s-bazar-floods", "title": "Reliable Brokers" },
+      { "url": "https://unb.com.bd/news/tag/155823", "title": "death toll of floods and landslides in 2026" },
+      { "url": "https://observerbd.com/news/582769", "title": "Bangla |  Epaper" },
+      { "url": "https://go-api.ifrc.org/api/DownloadFile/95412/MDRBD040du1", "title": "go-api.ifrc.org" },
+      { "url": "https://coastbd.net/?p=27881", "title": "coastbd.net" },
+      { "url": "https://coastbd.net/coast-stands-with-flood-affected-communities/", "title": "coast stands with flood affected communities" },
+      { "url": "https://coastbd.net/wp-content/uploads/2026/07/COAST-support-to-flood-affected-people_July-2026_web.pdf", "title": "COAST support to flood affected people July 2026 web" }
+    ],
+    "searches": 1
+  },
+  "parsed": {
+    "summary": "Monsoon rain in July 2026 caused floods and landslides in Cox's Bazar, Bandarban and Chattogram. At least 32 people died in Cox's Bazar, 13 of them Rohingya refugees in landslides in Ukhiya. Teknaf was hit hardest. IFRC reported 374 unions in 56 upazilas affected.",
+    "ongoing": true,
+    "places": [
+      { "name": "Ukhiya", "admin": "Cox's Bazar", "country": "BD", "kind": "upazila", "impact": "14 dead, landslides in Rohingya camps" },
+      { "name": "Teknaf", "admin": "Cox's Bazar", "country": "BD", "kind": "Upazila", "impact": "hardest hit" },
+      { "name": "Chakaria", "admin": "Cox's Bazar", "country": "BD", "kind": "sub-district", "impact": "6 dead, 1 missing" },
+      { "name": "Ramu", "admin": "not reported", "country": "BD", "kind": "upazila", "impact": "flooded" },
+      { "name": "Kutupalong", "admin": "Cox's Bazar", "country": "BD", "kind": "camp", "impact": "Not reported." },
+      { "name": "Bandarban", "admin": "Chattogram Division", "country": "Bangladesh", "kind": "district", "impact": "landslides" },
+      { "name": "Palong Khali", "admin": "Ukhiya", "country": "BD", "kind": "union", "impact": "flooded" }
+    ],
+    "figures": [
+      { "label": "Deaths", "value": "32 in Cox's Bazar", "sourceUrl": "[1] https://bdrcs.org/wp-content/uploads/2026/07/Sitrep-1Monsoon-triggered-landslides-and-flooding-in-coxs-bazar-bandarban-and-chattogram-7-July-2026.pdf (Sitrep 1Monsoon triggered landslides and flooding in coxs bazar bandarban and chattogram 7 July 2026)" },
+      { "label": "Deaths (all districts)", "value": "46", "sourceUrl": "https://www.dhakatribune.com/bangladesh/414919/two-children-swept-away-in-cox-s-bazar-floods (Reliable Brokers)" },
+      { "label": "Areas affected", "value": "374 unions in 56 upazilas", "sourceUrl": "https://go-api.ifrc.org/api/DownloadFile/95412/MDRBD040du1" },
+      { "label": "Displaced", "value": "not reported", "sourceUrl": "https://go-api.ifrc.org/api/DownloadFile/95412/MDRBD040du1" }
+    ],
+    "donation": []
+  }
+}

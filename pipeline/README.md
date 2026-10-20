@@ -12,14 +12,20 @@ Google publishes editions for about 68 countries. Every other country on the glo
 
 ## What the model does
 
-Two small jobs, both on Claude Haiku, both optional:
+Four jobs, all optional, all on Claude Haiku 5.5 by default:
 
 1. **Translate.** New headlines go to the model in batches of 40 per country, with the edition named so unnamed places resolve correctly. It returns an English headline and the ISO codes of the countries each headline is about. Results are cached by article link in `cache/headlines.json`, pruned after 48 hours out of every feed, so a headline is never translated twice.
 2. **Group shared stories.** One call per run receives every translated headline with its country code and returns groups that describe the same event in at least two countries, each with a short neutral title. Groups are validated: bad indices and single-country groups are dropped.
+3. **Spot disasters in the news.** One call per run reads the headlines that name a hazard and returns natural disasters happening now, with the places named. An event needs two outlets and a place that geocodes.
+4. **Research disasters.** For the disasters that need it most, a call with web search (at most four searches) finds the affected cities and districts, a short summary, key figures with their sources and candidate donation pages; a second call turns the notes into checked fields. Results are cached per disaster in `cache/research.json` and refreshed every 24 hours for severe disasters, 48 for significant and 96 for minor ones.
 
-The "who reads about whom" counts come from the translation step's country codes and need no extra call. A run makes at most 250 model calls; the first run for 52 countries makes about 53, later runs far fewer. If the model call fails, untranslated headlines are retried next run and the previous `shared.json` is kept.
+The "who reads about whom" counts come from the translation step's country codes and need no extra call. If a model call fails, the previous data is kept and the step is retried next run.
 
-Set `ANTHROPIC_API_KEY` to enable the model. `GLOBAL_VIEW_MODEL` overrides the model id.
+Set `ANTHROPIC_API_KEY` to enable the model. `GLOBAL_VIEW_MODEL` overrides the model for jobs 1 to 3 and `GLOBAL_VIEW_RESEARCH_MODEL` for job 4.
+
+## Budget
+
+All model use is capped at $50 a month (`pipeline/config/budget.json`). `pipeline/lib/spend.ts` prices every call from its real token and search counts and records it in `cache/spend.json`, by purpose and by day. Web research gets a daily allowance: what is left of the month after a $3 safety margin and the projected cost of the other jobs, spread over the days left; each run also researches at most 12 disasters. Once the month's spend reaches $47, the run makes no model calls at all and the feeds still publish. The ledger is saved after every call, and the workflow commits the caches even when an update fails, so a run that is cut off still counts what it spent. Research starts nothing new after 15 minutes, or 40 minutes into the run. The run log ends with this run's spend and the month's total. Raise the spending limit in the Anthropic Console to match.
 
 ## Run it
 
@@ -53,10 +59,13 @@ Each feed gets one retry. A country that fails twice keeps its previous file and
 | `public/data/attention.json` | Per country, how many of its top stories are about each other country |
 | `public/data/about/TH.json` | The foreign top stories about Thailand, with the country each was read in |
 | `public/data/history/` | One small snapshot per day plus an index, for the time machine |
-| `public/data/crises.json` | Current GDACS disaster alerts, the countries the world has turned to, and emergencies nobody is watching |
-| `public/data/help.json` | Each country's Red Cross or Red Crescent society and donation pages, active IFRC appeals and the emergencies behind them, UN response plans with funding |
-| `public/data/needs.json` | Per country, its long-term needs from UN figures via the World Bank: water, sanitation, electricity, hunger, poverty, schooling, literacy, child mortality |
+| `public/data/disasters.json` | Natural disasters ongoing now: type, severity, the areas and places affected, a summary, figures, sources, IFRC appeals and donation pages |
 | `cache/headlines.json` | Translation cache, committed so runs on GitHub Actions share it |
+| `cache/disaster-sources.json` | Each disaster feed's last good reports, kept when a feed fails |
+| `cache/research.json`, `cache/research-attempts.json` | Web research per disaster, and recent failed attempts |
+| `cache/geocode.json` | Place names already located with OpenStreetMap Nominatim |
+| `cache/donation-registry.json` | Red Cross and Red Crescent societies, donation platform answers, UN Crisis Relief pages and live-check verdicts |
+| `cache/spend.json` | The model spend ledger |
 
 ## Countries without an edition
 
@@ -70,37 +79,19 @@ Grouping is redone every run, so each new story is matched against the previous 
 
 ## Daily archive
 
-Every run writes `public/data/history/<YYYY-MM-DD>.json`: the top five articles of each local-edition country and the ten most-shared stories, as last seen that UTC day. `history/index.json` lists the days. The site's day control steps through them. `npx tsx pipeline/derive.ts` recomputes the attention counts, the "about" files and today's snapshot from the data already on disk without fetching.
+Every run writes `public/data/history/<YYYY-MM-DD>.json`: the top five articles of each local-edition country and the ten most-shared stories, as last seen that UTC day. `history/index.json` lists the days. The site's day control steps through them. `npx tsx pipeline/derive.ts` recomputes the attention counts, the "about" files, today's snapshot and the disaster map from the data and caches already on disk, without the model; add `--fetch` to refresh the disaster feeds live as well.
 
-## Humanitarian signals
+## The disaster map
 
-`public/data/crises.json` holds four lists. Two come from GDACS, the Global Disaster Alert and Coordination System run by the UN and the European Commission, whose RSS feed is public domain:
+`pipeline/lib/disasters/` builds `public/data/disasters.json` each run:
 
-- **alerts**: its current Orange (likely humanitarian impact) and Red (severe) alerts, each attached to the countries it names and kept for 10 days (Orange) or 21 days (Red) after GDACS last saw it active. Green alerts are routine and are dropped, as are alerts naming no country the globe can show. A failed fetch keeps the previous run's alerts.
-- **quiet**: alerts whose main country two or fewer editions have in their top stories, skipping regional alerts that name more than six countries.
+1. **Feeds.** GDACS (UN and European Commission) gives earthquakes, tropical cyclones, floods, volcanoes, droughts and wildfires with their real footprints: wind zones of 60, 90 and 120 km/h and the storm track, earthquake shaking intensity, flood extents and burned or dry areas. USGS gives earthquakes of magnitude 5.5 and more (or significant, or with a PAGER alert) with ShakeMap contours for the large ones. NASA EONET gives storm tracks, US wildfires (prescribed burns and fires under 5,000 acres left out) and volcanoes. IFRC GO gives the Red Cross and Red Crescent operations for natural disasters, with their districts, summaries and appeals. Each feed's reports are kept in `cache/disaster-sources.json`; when a feed fails, its previous reports are used.
+2. **News.** Disasters spotted in the site's own headlines (model job 3), placed by geocoding the places they name. When the geocoder has to stop (an outage or its limit), an event keeps the places it had last run.
+3. **Merge.** Reports of the same disaster are joined by GLIDE number, storm or volcano name, or distance, country and time rules per kind of hazard; earthquake aftershocks fold into their main shock. Ids stay stable across runs. A disaster leaves the map when no feed has seen it active for a while (3 days for a cyclone, 21 for a flood, 90 for a drought; longer for strong quakes), unless an IFRC appeal for it is still open.
+4. **Research** (model job 4), within the budget. Researched places are geocoded with OpenStreetMap Nominatim (one request a second, at most 80 new names a run, cached forever in `cache/geocode.json`), kept only in the disaster's countries and near it, and drawn as areas when the disaster has no footprint of its own.
+5. **Donation pages.** By fixed rules only: the country's Red Cross or Red Crescent society on IFRC's donation platform when it is really there (the landing page must name the society), UN Crisis Relief's page for that country's crisis, the society's own website when it passes a live check, the IFRC appeal, and UN Crisis Relief's and IFRC's general funds so every disaster has at least two. Pages suggested by research are shown only when they are on an allowlisted official domain (the country's own society, the UN family, IFRC and ICRC, or the country's government domains in `pipeline/config/donation-domains.json`; a society site that is one folder of a bigger host, like the Cuban Red Cross on Cuba's health network, allows only that folder) and pass a live check: every redirect stays on the allowlist, the page answers 200 with HTML and it contains a donation word in its language. A society homepage that blocks scripts with 401 or 403 without leaving its own domain is still linked, since a hijacked domain would redirect away or fail the word check.
 
-Two more are estimated from English headlines against the word list in `pipeline/config/crisis-terms.json`:
-
-- **watching**: countries that are suddenly in many editions' top stories (at least 8, and double their median over the previous days; 15 with under three days of history) where at least 40% of those foreign stories, and at least three, describe an emergency.
-- **unwatched**: local-edition countries where at least four of their own top stories, and at least 30%, describe an emergency, while two or fewer other editions have them in their top stories.
-
-Daily snapshots record each country's inbound edition count so the baseline builds up over the first week. The site shows a "How to help" block on these countries with the alert's GDACS report and fixed UN and Red Cross links; it never selects organisations. `npx tsx pipeline/derive.ts --fetch` refreshes the alerts and the help sources without running the whole pipeline.
-
-## Where to give
-
-`public/data/help.json` is built from official registries so the site never picks an organisation:
-
-- **societies**: every country's own Red Cross or Red Crescent society, with its website and IFRC directory page, from the IFRC GO country list.
-- **appeals**: IFRC's active DREF and Emergency Appeal operations that have not ended, with the amount asked for and funded (Swiss francs) and the people they aim to reach, each linked to its IFRC GO page.
-- **plans**: UN-coordinated humanitarian response plans for this year and last that are still running, with requirements and funding reported to OCHA's Financial Tracking Service (US dollars), linked to FTS. One funding call per plan.
-- **events**: the IFRC GO emergency behind each appeal: IFRC's own summary (first sentences, as plain text), its Red/Orange/Yellow severity and its key figures with sources. One call per emergency.
-- **donation pages**: each society's `donate` is its page on the Red Cross Red Crescent donation platform IFRC hosts (`donate.redcrossredcrescent.org/<cc>/default/`), found by probing that fixed URL: it redirects into the country's own path when the society is on the platform and to the front page when it is not. The platform rate-limits after about fifty requests, so each run asks about forty societies (never-checked first, then the longest ago), stops at the first 429 and keeps earlier answers; `checked` records when each was last asked. `uncr` maps countries to UN Crisis Relief's per-crisis donation pages, read from its sitemap (`donate-<country>-crisis` slugs).
-
-The site picks each country's "biggest crisis right now" from these by a fixed score (graded severity first, then the size of the response) and shows the donation pages beside it. Each source that fails keeps the previous run's data for that source; `sources` records when each was last fetched.
-
-## Long-term needs
-
-`public/data/needs.json` comes from the World Bank's open data API, which republishes UN agencies' figures: WHO/UNICEF on basic drinking water and sanitation, FAO on undernourishment, UNESCO on children out of primary school and adult literacy, the UN inter-agency group on under-five mortality, and the Bank's own extreme poverty and electricity access series. One request per indicator, latest non-empty value per country. Coverage figures are turned into gaps (people without), figures older than 15 years are dropped, and each need gets a severity of its value over a fixed "severe" level (for example 25% without water, 20% undernourished, 60 deaths per 1,000). A country keeps its four most severe needs at severity 0.3 or more. A failed indicator keeps the previous run's figures. The site shows the needs under the biggest crisis and adds a fixed list of UN agency donation pages by kind of need (UNICEF, World Food Programme, Education Cannot Wait, WHO Foundation).
+A run never replaces the map with an empty one. The file is about 700 KB for 200 disasters; each disaster's areas are simplified to stay under about 120 KB.
 
 ## Tests
 

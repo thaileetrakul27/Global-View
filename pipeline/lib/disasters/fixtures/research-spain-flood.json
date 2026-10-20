@@ -1,0 +1,80 @@
+{
+  "_note": "Assembled 2026-10-19 from a live web search for 'Spain floods October 2026 towns affected deaths'. The URLs and titles in research.citations and research.results are the real results (titles as the search returned them, junk ones included); the notes text and cited text were written from what those results reported. The search also surfaced 2024 Valencia pages with 2026 page dates. The parsed block is a hand-made model answer with deliberate faults for the validation tests: an uncited figure URL, a figure given by number, a trailing-slash URL, a place in France, the country itself as a place, a repeated place, and a plain-http donation page.",
+  "disaster": {
+    "id": "gdacs:FL-1104235",
+    "type": "flood",
+    "title": "Flood in Spain",
+    "severity": 1,
+    "severityText": "Green alert",
+    "countries": ["ES"],
+    "lat": 41.62,
+    "lng": 2.38,
+    "precision": "country",
+    "started": "2026-10-17T01:00:00.000Z",
+    "updated": "2026-10-19T01:00:00.000Z",
+    "summary": "Flood in Spain reported by GDACS.",
+    "sources": [{ "name": "GDACS", "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104235" }],
+    "members": ["gdacs:FL-1104235"],
+    "reportedBy": ["gdacs"]
+  },
+  "research": {
+    "text": "Status: flash flooding in early October 2026; reports run to about 5 October and do not say whether waters are still high.\nPlaces: Madrigueras (Albacete, Castilla-La Mancha): flooded, a 102-year-old woman died and firefighters rescued about 90 people. Tordera (Barcelona, Catalonia): one person killed when a wall collapsed. Montornès del Vallès (Barcelona, Catalonia): one person died. Pineda de Mar (Barcelona, Catalonia): one person missing.\nFigures: 3 deaths (2 in Catalonia, 1 in Madrigueras); 1 missing; about 90 people rescued in Madrigueras. Reports of about 95 or 158 deaths in Valencia describe the October 2024 floods, not this event.\nDonation pages: none found.",
+    "citations": [
+      {
+        "url": "https://www.omanobserver.om/article/1197239/world/americas/2-dead-in-flooding-in-catalonia-region",
+        "title": "Sunday, October 04, 2026 | Rabi' ath-thani 22, 1448 H",
+        "citedText": "One death was in Tordera, where a wall collapsed, and another was in Montornès del Vallès, while a person was missing in Pineda de Mar."
+      },
+      {
+        "url": "https://bdnews24.com/world/w14ui8muuw",
+        "title": "October 03, 2026",
+        "citedText": "Firefighters rescued 90 people after flooding in the town of Madrigueras in southeastern Spain, regional authorities said."
+      },
+      {
+        "url": "https://atlas-mag.net/en/articles/flash-floods-hit-spain",
+        "title": "Flash floods hit Spain",
+        "citedText": "The toll stands at two dead, with one person still missing."
+      },
+      {
+        "url": "https://www.theolivepress.es/spain-news/2026/10/03/flash-floods-spain-weather-warning/",
+        "title": "3 Oct, 2026 @ 12:37",
+        "citedText": "Officials reported 142 litres of rainfall per square metre in the town of 4,760 people."
+      }
+    ],
+    "results": [
+      { "url": "https://www.business-standard.com/world-news/devastating-flash-floods-cause-around-95-deaths-destruction-in-spain-124103100004_1.html", "title": "Monday, October 12, 2026 | 03:59 PM ISTहिंदी में पढें" },
+      { "url": "https://www.omanobserver.om/ampArticle/1197239", "title": "2 dead in flooding in Catalonia region" },
+      { "url": "https://bdnews24.com/world/w14ui8muuw", "title": "October 03, 2026" },
+      { "url": "https://www.omanobserver.om/article/1197239/world/americas/2-dead-in-flooding-in-catalonia-region", "title": "Sunday, October 04, 2026 | Rabi' ath-thani 22, 1448 H" },
+      { "url": "https://atlas-mag.net/en/articles/flash-floods-hit-spain", "title": "Flash floods hit Spain" },
+      { "url": "https://www.theolivepress.es/spain-news/2026/10/03/flash-floods-spain-weather-warning/", "title": "3 Oct, 2026 @ 12:37" },
+      { "url": "https://www.foxweather.com/watch/play-778585766000e62", "title": "Crews search for flood victims in devastated Spanish town" },
+      { "url": "https://csmonitor.com/News-Briefs/Spain-s-unprecedented-flooding", "title": "News brief" },
+      { "url": "https://arc-dev.theglobeandmail.com/world/video-dozens-killed-in-spain-after-torrential-rain-batters-valencia", "title": "Dozens killed in Spain after torrential rain batters Valencia" }
+    ],
+    "searches": 2
+  },
+  "parsed": {
+    "summary": "Flash floods in early October 2026 killed three people in Spain. In Madrigueras, Castilla-La Mancha, a 102-year-old woman died and firefighters rescued about 90 people. In Catalonia, one person died in Tordera when a wall collapsed, another in Montornès del Vallès, and one person is missing in Pineda de Mar.",
+    "ongoing": true,
+    "places": [
+      { "name": "Madrigueras", "admin": "Castilla-La Mancha", "country": "ES", "kind": "town", "impact": "1 dead, about 90 rescued" },
+      { "name": "Tordera", "admin": "Catalonia", "country": "ES", "kind": "town", "impact": "1 dead in a wall collapse" },
+      { "name": "Montornès del Vallès", "admin": "Catalonia", "country": "es", "kind": "town", "impact": "1 dead" },
+      { "name": "Pineda de Mar", "admin": "Catalonia", "country": "Spain", "kind": "town", "impact": "1 missing" },
+      { "name": "Perpignan", "admin": "Occitanie", "country": "FR", "kind": "city", "impact": "heavy rain" },
+      { "name": "Spain", "admin": "", "country": "ES", "kind": "region", "impact": "flash floods" },
+      { "name": "Tordera", "admin": "Catalonia", "country": "ES", "kind": "town", "impact": "wall collapse" }
+    ],
+    "figures": [
+      { "label": "Deaths", "value": "3", "sourceUrl": "https://www.omanobserver.om/article/1197239/world/americas/2-dead-in-flooding-in-catalonia-region" },
+      { "label": "Rescued", "value": "about 90 people", "sourceUrl": "https://bdnews24.com/world/w14ui8muuw/" },
+      { "label": "Missing", "value": "1", "sourceUrl": "[3]" },
+      { "label": "Homes damaged", "value": "hundreds", "sourceUrl": "https://elpais.com/espana/2026-10-04/inundaciones-cataluna.html" }
+    ],
+    "donation": [
+      { "url": "https://www2.cruzroja.es/", "org": "Cruz Roja Española", "kind": "society", "note": "Spanish Red Cross home page" },
+      { "url": "http://floods-relief-spain.example.org/donate", "org": "Flood Relief Spain", "kind": "agency", "note": "Not https" }
+    ]
+  }
+}

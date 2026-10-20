@@ -40,3 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+
+# Half-written files from a run killed mid-write (pipeline/lib/io.ts)
+*.tmp

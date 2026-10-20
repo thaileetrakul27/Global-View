@@ -26,10 +26,11 @@ export default function CopyLink({ label }: { label: string }) {
       onClick={copy}
       aria-label={label}
       title={label}
-      className="-mt-1 shrink-0 rounded-md p-2 text-muted hover:bg-card hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      // 40 px square, a comfortable tap target.
+      className="grid h-10 min-w-10 shrink-0 place-items-center rounded-md px-1 text-muted hover:bg-card hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
     >
       {copied ? (
-        <span className="px-0.5 text-xs text-accent">Copied</span>
+        <span className="text-xs text-accent">Copied</span>
       ) : (
         <svg aria-hidden width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11 4.93" />

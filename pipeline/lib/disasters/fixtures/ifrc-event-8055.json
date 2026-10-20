@@ -1,0 +1,164 @@
+{
+ "dtype": 2,
+ "countries": [
+  {
+   "iso": "CO",
+   "iso3": "COL",
+   "id": 48,
+   "record_type": 1,
+   "record_type_display": "Country",
+   "region": 1,
+   "independent": true,
+   "is_deprecated": false,
+   "fdrs": "DCO001",
+   "average_household_size": null,
+   "name": "Colombia",
+   "society_name": "Colombian Red Cross Society",
+   "translation_module_original_language": "en"
+  }
+ ],
+ "districts": [
+  {
+   "name": "Caldas",
+   "code": "CO009",
+   "id": 639,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Choco",
+   "code": "CO014",
+   "id": 644,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Risaralda",
+   "code": "CO027",
+   "id": 657,
+   "is_enclave": false,
+   "is_deprecated": false
+  },
+  {
+   "name": "Valle del Cauca",
+   "code": "CO031",
+   "id": 662,
+   "is_enclave": false,
+   "is_deprecated": false
+  }
+ ],
+ "num_affected": 466644,
+ "tab_two_title": null,
+ "tab_three_title": null,
+ "disaster_start_date": "2026-08-10T00:00:00Z",
+ "created_at": "2026-08-10T15:19:06.915888Z",
+ "auto_generated": true,
+ "appeals": [
+  {
+   "aid": "43649049226385846",
+   "num_beneficiaries": 24000,
+   "amount_requested": 10000000.0,
+   "code": "MDRCO036",
+   "amount_funded": 6925224.03,
+   "status": 0,
+   "status_display": "Active",
+   "start_date": "2026-08-11T00:00:00Z",
+   "end_date": "2028-08-31T00:00:00Z",
+   "sector": "South America country cluster",
+   "atype": 1,
+   "atype_display": "Emergency Appeal",
+   "id": 4480,
+   "translation_module_original_language": "en"
+  }
+ ],
+ "contacts": [],
+ "key_figures": [
+  {
+   "number": "11,890,000",
+   "source": "USGS",
+   "id": 677,
+   "deck": "Exposed Population",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "4505",
+   "source": "UNGRD",
+   "id": 678,
+   "deck": "Injured",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "331",
+   "source": "UNGRD",
+   "id": 679,
+   "deck": "Deaths",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "111",
+   "source": "UNGRD",
+   "id": 680,
+   "deck": "Missing",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "201989",
+   "source": "UNGRD",
+   "id": 681,
+   "deck": "Damaged Houses",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "36326",
+   "source": "UNGRD",
+   "id": 682,
+   "deck": "Destroyed Houses",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "400",
+   "source": "UNGDR",
+   "id": 683,
+   "deck": "Affected Health Facilities",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "4288",
+   "source": "UNGRD",
+   "id": 684,
+   "deck": "Affected Schools",
+   "translation_module_original_language": "en"
+  },
+  {
+   "number": "6035",
+   "source": "UNGRD",
+   "id": 689,
+   "deck": "Community Centers Affected",
+   "translation_module_original_language": "en"
+  }
+ ],
+ "is_featured": true,
+ "is_featured_region": true,
+ "field_reports": [],
+ "hide_attached_field_reports": true,
+ "hide_field_report_map": true,
+ "updated_at": "2026-10-04T22:43:09.423651Z",
+ "id": 8055,
+ "slug": null,
+ "tab_one_title": "Additional Information",
+ "ifrc_severity_level": 1,
+ "ifrc_severity_level_display": "Orange",
+ "ifrc_severity_level_update_date": "2026-08-10T16:15:05Z",
+ "parent_event": null,
+ "glide": "EQ-2026-000146-COL",
+ "featured_documents": [],
+ "links": [],
+ "emergency_response_contact_email": null,
+ "countries_for_preview": [],
+ "response_activity_count": 0,
+ "visibility": 3,
+ "active_deployments": 4,
+ "summary": "<p>According to information from the Colombian Geological Service (SGC), an earthquake with a preliminary magnitude of 7.4 was recorded on Monday, August 10, 2026, in the morning, with its epicenter in the town of San José del Palmar, in the department of Chocó, located on the Colombian Pacific coast, at a depth of 96 kilometers.</p>\r\n<p>Although the epicenter was in the department of Chocó, direct impacts were also felt in the departments of Caldas, Risaralda, and Valle del Cauca. Media reports are already noting injuries, deaths, and missing persons, as well as the collapse of infrastructure.</p>\r\n<p> </p>\r\n<p><img src=\"https://prddsgofilestorage.blob.core.windows.net/api/emergencies/8055/2026_COL_EARTHQUAKE_v3_LOGOS.png\" alt=\"\" width=\"779\" height=\"1102\"></p>",
+ "name": "Colombia - Earthquake 2026",
+ "translation_module_original_language": "en"
+}

@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import type { Mention } from "@/lib/attention";
-import type { AboutArticle, Article, CountryFile, CountryNeed, SnapshotArticle } from "@/lib/data";
-import type { Lead } from "@/lib/crisis";
-import type { Need } from "@/lib/help";
-import HelpBlock from "./HelpBlock";
+import type { AboutArticle, Article, CountryFile, Disaster, SnapshotArticle } from "@/lib/data";
+import { DISASTER_META } from "@/lib/disasterMeta";
 import AboutList from "./AboutList";
+import DisasterIcon, { SeverityChip } from "./DisasterIcon";
 import type { CountryFeature } from "@/lib/geo";
 import { relativeTime } from "@/lib/time";
 import ArticleList, { type SharedRef } from "./ArticleList";
@@ -46,12 +45,10 @@ interface Props {
   history?: { label: string; articles: SnapshotArticle[] | null } | null;
   /** Foreign top stories about this country (null while loading) and how many editions exist. */
   about?: { articles: AboutArticle[] | null; editions: number };
-  /** What is needed here and where to give; undefined while loading. */
-  need?: Need;
-  /** The biggest crisis right now, or null when nothing names the country. */
-  lead?: Lead | null;
-  /** Long-term needs from the latest UN figures. */
-  needs?: CountryNeed[];
+  /** Disasters happening in this country now, most severe first. */
+  disasters?: Disaster[];
+  /** Open a disaster's panel by id. */
+  onSelectDisaster?: (id: string) => void;
 }
 
 // Contents of the country panel: the name, when the list was refreshed, who
@@ -70,9 +67,8 @@ export default function CountryPanel({
   name,
   history = null,
   about,
-  need,
-  lead = null,
-  needs = [],
+  disasters = [],
+  onSelectDisaster,
 }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
 
@@ -116,13 +112,13 @@ export default function CountryPanel({
                 : "Top stories"}
           </p>
         </div>
-        <div className="-mr-1 flex shrink-0 items-start">
+        <div className="-mr-1.5 -mt-1.5 flex shrink-0 items-start">
           <CopyLink label={`Copy link to ${name}`} />
           <button
             type="button"
             onClick={onClose}
             aria-label="Close panel"
-            className="-mt-1 shrink-0 rounded-md p-2 text-muted hover:bg-card hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-md text-muted hover:bg-card hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <svg
               aria-hidden
@@ -141,6 +137,10 @@ export default function CountryPanel({
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-6 sm:px-6">
+        {!history && onSelectDisaster && disasters.length > 0 && (
+          <CountryDisasters name={name} disasters={disasters} onSelect={onSelectDisaster} />
+        )}
+
         {history && archived && <ArticleList articles={archived} />}
         {history && !archived && (
           <p className="pt-3 text-sm text-muted">
@@ -170,8 +170,6 @@ export default function CountryPanel({
             Could not load stories just now. Try again in a moment.
           </p>
         )}
-
-        {!history && data && need && (lead || needs.length > 0) && <HelpBlock name={name} iso3={country.properties.iso3} need={need} lead={lead} needs={needs} />}
 
         {!history && world && (
           <p className="mt-3 rounded-md bg-card px-3 py-2 text-xs leading-snug text-muted">
@@ -240,7 +238,6 @@ export default function CountryPanel({
             <ArticleList articles={articles} shared={shared} onStory={onStory} />
           </div>
         )}
-        {!history && data && need && !lead && needs.length === 0 && <HelpBlock name={name} iso3={country.properties.iso3} need={need} lead={null} needs={[]} />}
       </div>
 
       <footer className="border-t border-line px-5 py-3 text-xs text-muted sm:px-6">
@@ -253,5 +250,49 @@ export default function CountryPanel({
             : "Links open the publisher."}
       </footer>
     </div>
+  );
+}
+
+/** Rows shown before "Show all". */
+const DISASTER_LIMIT = 3;
+
+// "Disasters in Pakistan now": one button per disaster naming this country,
+// each opening that disaster's panel with its donation pages.
+function CountryDisasters({ name, disasters, onSelect }: { name: string; disasters: Disaster[]; onSelect: (id: string) => void }) {
+  const [expanded, setExpanded] = useState(false);
+  const headingId = useId();
+  const shown = expanded ? disasters : disasters.slice(0, DISASTER_LIMIT);
+  return (
+    <section aria-labelledby={headingId} className="mt-2 rounded-lg border border-line bg-card px-3 py-2.5">
+      <h3 id={headingId} className="text-xs font-medium uppercase tracking-wide text-muted">
+        Disasters in {name} now
+      </h3>
+      <ul className="mt-1 divide-y divide-line">
+        {shown.map((d) => (
+          <li key={d.id}>
+            <button
+              type="button"
+              data-disaster-id={d.id}
+              onClick={() => onSelect(d.id)}
+              className="flex w-full items-center gap-2.5 py-2 text-left text-sm text-ink hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              <DisasterIcon type={d.type} size={16} className="shrink-0" title={DISASTER_META[d.type].label} />
+              <span className="min-w-0 flex-1 leading-snug">{d.title}</span>
+              {d.severity >= 2 && <SeverityChip severity={d.severity} />}
+            </button>
+          </li>
+        ))}
+      </ul>
+      {disasters.length > DISASTER_LIMIT && (
+        <button
+          type="button"
+          aria-expanded={expanded}
+          onClick={() => setExpanded((v) => !v)}
+          className="mt-1 text-xs font-medium text-accent hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        >
+          {expanded ? "Show fewer" : `Show all ${disasters.length}`}
+        </button>
+      )}
+    </section>
   );
 }

@@ -91,7 +91,11 @@ export async function fetchBingFeed(query: string, cc: string, lang: string, del
       if (page === 0) return null;
       break;
     }
-    for (const a of got) if (!seen.has(a.url)) seen.add(a.url) && articles.push(a);
+    for (const a of got) {
+      if (seen.has(a.url)) continue;
+      seen.add(a.url);
+      articles.push(a);
+    }
     if (got.length < BING_PAGE) break;
     await deps.sleep(delayMs);
   }

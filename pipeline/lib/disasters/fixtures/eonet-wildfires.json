@@ -1,0 +1,414 @@
+{
+ "title": "EONET Events",
+ "description": "Natural events from EONET.",
+ "link": "https://eonet.gsfc.nasa.gov/api/v3/events",
+ "events": [
+  {
+   "id": "EONET_21827",
+   "title": "Wildfire BIG GRASS, Malheur, Oregon",
+   "description": "25 Miles SW from JORDAN VALLEY, OR",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_21827",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/2026-ORVAD-260201"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 280000.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-07-23T16:43:00Z",
+     "type": "Point",
+     "coordinates": [
+      -117.30335,
+      42.6498
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_18654",
+   "title": "Morrill Wildfire, Garden, Nebraska",
+   "description": "15 Miles NE from Bridgeport, NE",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_18654",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/3de0062d-b07c-4545-9e47-709846d3caf9"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 572804.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-03-13T10:30:00Z",
+     "type": "Point",
+     "coordinates": [
+      -102.15696,
+      41.47436
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_23452",
+   "title": "Wildfire Ross, Palo Pinto, Texas",
+   "description": "1 Miles W from Palo Pinto, TX",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_23452",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/2026-TXTXS-267549"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 80000.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-08-24T14:12:00Z",
+     "type": "Point",
+     "coordinates": [
+      -98.34256986,
+      32.75981855
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_24487",
+   "title": "Wildfire Davis Coulee, Big Horn, Montana",
+   "description": "9 Miles SW from Crow Agency, MT",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24487",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/2026-MTCRA-261393"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 15470.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-09-14T11:43:00Z",
+     "type": "Point",
+     "coordinates": [
+      -107.6275,
+      45.5398
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_24095",
+   "title": "Incident Complex Rattlesnake Complex, Prairie, Montana",
+   "description": "30 Miles E from Miles City, MT",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24095",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/2026-MTEAS-000786"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 15582.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-09-04T12:59:00Z",
+     "type": "Point",
+     "coordinates": [
+      -104.927967,
+      46.586036
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_23218",
+   "title": "Wildfire Hawk, Washoe, Nevada",
+   "description": "5 Miles N from Reno, NV",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_23218",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/2026-NVRNOX-030739"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 15051.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-08-22T14:45:00Z",
+     "type": "Point",
+     "coordinates": [
+      -119.952333,
+      39.5425
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_23460",
+   "title": "Wildfire Hawk, Washoe, Nevada",
+   "description": "5 Miles N from Reno, NV",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_23460",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/2026-NVTMFX-030739"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 15085.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-08-22T14:45:00Z",
+     "type": "Point",
+     "coordinates": [
+      -119.952333,
+      39.5425
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_15299",
+   "title": "Rattlesnake Wildfire, Ferry, Washington",
+   "description": "2 Miles W from Seven Bays, WA",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_15299",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/6b62bd16-6651-441c-b8cc-a647588aadb4"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 6030.0,
+     "magnitudeUnit": "acres",
+     "date": "2025-09-01T12:58:00Z",
+     "type": "Point",
+     "coordinates": [
+      -118.374666,
+      47.873166
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_17856",
+   "title": "Rattlesnake Fire Wildfire, Pittsburg, Oklahoma",
+   "description": "18 Miles NE from McAlester, OK",
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_17856",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/84c91bca-67a2-4db6-aba0-b862ce2a88c7"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 879.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-02-10T11:11:00Z",
+     "type": "Point",
+     "coordinates": [
+      -95.4386111,
+      35.1380556
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_19000",
+   "title": "Rattlesnake RX Prescribed Fire, Luna, New Mexico",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_19000",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/f7cab987-641b-41fd-97d8-12f9540cdb42"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 3200.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-03-20T16:09:00Z",
+     "type": "Point",
+     "coordinates": [
+      -107.62402,
+      32.45655
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_12346",
+   "title": "Wildfire in United States 1023255 (Palisades Wildfire, Los Angeles, California)",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_12346",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "GDACS",
+     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1023255"
+    },
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2025-01-06T19:00:00Z",
+     "type": "Point",
+     "coordinates": [
+      -118.52992278167513,
+      34.07474954660046
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_13370",
+   "title": "Wildfire in Australia 1023712",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_13370",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "GDACS",
+     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1023712"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": null,
+     "magnitudeUnit": null,
+     "date": "2025-04-27T19:00:00Z",
+     "type": "Point",
+     "coordinates": [
+      127.84730549567904,
+      -17.14074812671574
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EONET_20570",
+   "title": "APQ Area 5A RX 0615 Prescribed Fire, Polk, Florida",
+   "description": null,
+   "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_20570",
+   "closed": null,
+   "categories": [
+    {
+     "id": "wildfires",
+     "title": "Wildfires"
+    }
+   ],
+   "sources": [
+    {
+     "id": "IRWIN",
+     "url": "https://irwin.doi.gov/observer/incidents/2a3db5ce-77d5-4236-9b66-4e227dd2a974"
+    }
+   ],
+   "geometry": [
+    {
+     "magnitudeValue": 556.0,
+     "magnitudeUnit": "acres",
+     "date": "2026-06-15T18:30:00Z",
+     "type": "Point",
+     "coordinates": [
+      -81.330714,
+      27.720842
+     ]
+    }
+   ]
+  }
+ ]
+}

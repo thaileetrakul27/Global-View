@@ -1,14 +1,14 @@
 import { describe, expect, it } from "vitest";
-import { count, money, percent } from "../money";
+import { money, percent } from "../money";
 
 describe("money", () => {
-  it("formats compact dollar and franc amounts", () => {
-    expect(money(2866228593, "USD")).toBe("$2.9B");
-    expect(money(318976221, "USD")).toBe("$319M");
+  it("formats compact franc amounts", () => {
+    expect(money(2866228593, "CHF")).toBe("CHF 2.9B");
+    expect(money(318976221, "CHF")).toBe("CHF 319M");
     expect(money(1500000, "CHF")).toBe("CHF 1.5M");
     expect(money(90800, "CHF")).toBe("CHF 91k");
-    expect(money(1200, "USD")).toBe("$1.2k");
-    expect(money(850, "USD")).toBe("$850");
+    expect(money(1200, "CHF")).toBe("CHF 1.2k");
+    expect(money(850, "CHF")).toBe("CHF 850");
   });
 });
 
@@ -17,11 +17,5 @@ describe("percent", () => {
     expect(percent(1245443086, 2866228593)).toBe(43);
     expect(percent(5, 0)).toBe(0);
     expect(percent(120, 100)).toBe(100);
-  });
-});
-
-describe("count", () => {
-  it("adds thousands separators", () => {
-    expect(count(50000)).toBe("50,000");
   });
 });

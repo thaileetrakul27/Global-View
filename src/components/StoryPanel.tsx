@@ -42,13 +42,13 @@ export default function StoryPanel({ story, nameOf, onClose, onSelectCountry }: 
             Read in {story.countries.length} countries · {story.articles.length} articles
           </p>
         </div>
-        <div className="-mr-1 flex shrink-0 items-start">
+        <div className="-mr-1.5 -mt-1.5 flex shrink-0 items-start">
           <CopyLink label="Copy link to this story" />
           <button
             type="button"
             onClick={onClose}
             aria-label="Close story"
-            className="-mt-1 shrink-0 rounded-md p-2 text-muted hover:bg-card hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-md text-muted hover:bg-card hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <svg aria-hidden width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
               <path d="M6 6l12 12M18 6 6 18" />

@@ -1,0 +1,7 @@
+{
+  "note": "Claude API budget in USD per UTC calendar month, for translation, grouping, news extraction and web research together. Read by pipeline/lib/spend.ts. All model calls stop for the month once spend reaches monthlyUsd - safetyUsd.",
+  "monthlyUsd": 50,
+  "safetyUsd": 3,
+  "defaultDailyOtherUsd": 0.6,
+  "maxResearchPerRun": 12
+}
