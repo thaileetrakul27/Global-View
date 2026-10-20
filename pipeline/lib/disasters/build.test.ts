@@ -351,12 +351,39 @@ describe("updateDisasters", () => {
     expect(file.fetched.gdacs).toBeNull();
   });
 
-  it("keeps the previous map rather than write an empty one", async () => {
-    const previous: DisastersFile = { updated: "2026-10-20T09:00:00.000Z", fetched: { gdacs: null, usgs: null, eonet: null, ifrc: null, news: null }, disasters: [dis({ id: ID })] };
+  it("keeps the previous map's ongoing disasters rather than write an empty one, and still saves the geocoder's answers", async () => {
+    // A flood seen two days ago is still ongoing; one last seen in August is over.
+    const over = dis({ id: "ifrc-flood-1", started: "2026-08-01T00:00:00.000Z", updated: "2026-08-10T00:00:00.000Z" });
+    const previous: DisastersFile = { updated: "2026-10-20T09:00:00.000Z", fetched: { gdacs: null, usgs: null, eonet: null, ifrc: null, news: null }, disasters: [dis({ id: ID }), over] };
     const dirs = folders({ previous });
-    const file = await updateDisasters(runWith(dirs));
-    expect(file).toEqual(previous);
-    expect(read(dirs.outDir)).toEqual(previous);
+    // A news disaster whose place Nominatim does not know: the answer is cached.
+    const articles = ["Daily Star", "Prothom Alo", "bdnews24"].map((outlet, i) => ({ country: "BD", title: `Floods hit Sunamganj ${i}`, en: `Floods hit Sunamganj ${i}`, outlet, url: `https://x.example/${i}`, published: NOW }));
+    const ai = {
+      calls: 0,
+      webResearch: vi.fn(async () => null),
+      parse: vi.fn(async () => ({
+        events: [{ type: "flood", title: "Floods in Sunamganj", country: "BD", countryName: "Bangladesh", places: [{ name: "Sunamganj", admin: "Sylhet", kind: "district", impact: "flooded" }], headlineIds: [0, 1, 2], ongoing: true }],
+      })),
+    } as unknown as AiClient;
+    const fetchMock = vi.fn(async (url: string | URL | Request) => {
+      if (String(url).includes("nominatim")) return new Response("[]", { status: 200, headers: { "content-type": "application/json" } });
+      throw new Error("network down");
+    });
+    const run = runWith(dirs, { ai, articles, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log: () => {} } });
+    const file = await updateDisasters(run);
+    expect(file.disasters.map((d) => d.id)).toEqual([ID]);
+    expect(read(dirs.outDir).disasters.map((d) => d.id)).toEqual([ID]);
+    expect(ai.parse).toHaveBeenCalledTimes(1);
+    expect(fetchMock.mock.calls.some(([u]) => String(u).includes("nominatim"))).toBe(true);
+    const geocodes = JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "geocode.json"), "utf8")) as Record<string, unknown>;
+    expect(Object.keys(geocodes).length).toBeGreaterThan(0);
+  });
+
+  it("writes an empty map when the feeds answered and nothing is ongoing", async () => {
+    const previous: DisastersFile = { updated: "2026-10-20T09:00:00.000Z", fetched: { gdacs: null, usgs: null, eonet: null, ifrc: null, news: null }, disasters: [dis({ id: ID, updated: "2026-08-01T00:00:00.000Z", started: "2026-07-01T00:00:00.000Z" })] };
+    const dirs = folders({ previous });
+    const file = await updateDisasters(runWith(dirs, { offline: true }));
+    expect(file.disasters).toEqual([]);
   });
 
   /** A model client that records its usage in the ledger the way pipeline/update.ts does. */

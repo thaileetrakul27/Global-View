@@ -221,6 +221,12 @@ describe("siteScope and inSiteScope", () => {
     expect(inSiteScope(new URL("https://www.sld.cu/sitios/cruzrojanueva/"), cu)).toBe(false);
     expect(inSiteScope(new URL("https://www.sld.cu/noticia/llegan-donaciones-santiago"), cu)).toBe(false);
     expect(inSiteScope(new URL("https://instituciones.sld.cu/sitios/cruzroja/"), cu)).toBe(false);
+    // Dot segments are resolved by the URL parser; encoded ones are refused.
+    expect(inSiteScope(new URL("https://www.sld.cu/sitios/cruzroja/../../noticia"), cu)).toBe(false);
+    expect(inSiteScope(new URL("https://www.sld.cu/sitios/cruzroja/..%2F..%2Fnoticia"), cu)).toBe(false);
+    expect(inSiteScope(new URL("https://www.sld.cu/sitios/cruzroja/..%5C..%5Cnoticia"), cu)).toBe(false);
+    expect(inSiteScope(new URL("https://www.sld.cu/sitios/cruzroja/%2e%2e/%2E%2E/noticia"), cu)).toBe(false);
+    expect(inSiteScope(new URL("https://www.sld.cu/sitios/cruzroja/..;/..;/noticia"), cu)).toBe(false);
   });
 
   it("keeps the rest of a shared host off the society allowlist", () => {

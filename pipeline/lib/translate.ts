@@ -35,9 +35,16 @@ export const translationSchema = z.object({
 /** Headlines per model call. Keeps each call small enough to be reliable. */
 export const BATCH_SIZE = 40;
 
+/** The headline cache; empty when the file is missing or unreadable (the headlines are then translated again). */
 export function readCache(path: string): HeadlineCache {
   if (!fs.existsSync(path)) return {};
-  return JSON.parse(fs.readFileSync(path, "utf8")) as HeadlineCache;
+  try {
+    const raw = JSON.parse(fs.readFileSync(path, "utf8")) as unknown;
+    return raw && typeof raw === "object" && !Array.isArray(raw) ? (raw as HeadlineCache) : {};
+  } catch (err) {
+    console.warn(`${path} is unreadable (${err instanceof Error ? err.message : String(err)}); starting an empty headline cache`);
+    return {};
+  }
 }
 
 export function buildTranslationPrompt(country: { code: string; name: string }, headlines: string[]) {

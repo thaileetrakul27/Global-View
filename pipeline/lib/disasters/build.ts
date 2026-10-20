@@ -422,11 +422,21 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
 
   let disasters = mergeEvents([...feedEvents, ...newsEvents], previous?.disasters ?? null, now);
   log(`Disasters: ${disasters.length} ongoing after merging ${feedEvents.length + newsEvents.length} reports`);
-  // Never replace a map with an empty one: with every source failing and no
-  // snapshot to fall back on, the previous file stays.
-  if (disasters.length === 0 && previous && previous.disasters.length > 0) {
-    log("Disasters: no reports this run; previous map kept");
-    return previous;
+  // Never replace a map with an empty one because every source failed: with
+  // no fresh feed and no snapshot to fall back on, the previous file's
+  // disasters that are still ongoing stay. The caches this run filled are
+  // saved all the same.
+  const freshFeed = FEEDS.some((s) => fetched[s] === now);
+  if (disasters.length === 0 && !freshFeed && previous && previous.disasters.length > 0) {
+    const still = previous.disasters.filter((d) => isOngoing(d, now) || d.appeals.length > 0);
+    if (still.length > 0) {
+      log(`Disasters: no reports this run; ${still.length} still ongoing kept from the previous map`);
+      const kept: DisastersFile = { ...previous, disasters: still };
+      writeCompactJson(outPath, kept);
+      if (!run.offline) writeCompactJson(paths.snapshot, next);
+      writeGeocodeCache(geocodeCache, paths.geocode);
+      return kept;
+    }
   }
 
   // Web research within the budget, then its results on every disaster that has them.

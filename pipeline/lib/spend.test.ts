@@ -14,6 +14,7 @@ import {
   dayKey,
   daysLeftInMonth,
   emptyLedger,
+  ledgerReadable,
   loadBudget,
   monthKey,
   monthSpent,
@@ -195,6 +196,26 @@ describe("record", () => {
     const log = vi.fn();
     record(emptyLedger(), "group", usage({ model: "gpt-x" }), "2026-10-19T00:00:00Z", log);
     expect(log).toHaveBeenCalledOnce();
+  });
+});
+
+describe("ledgerReadable", () => {
+  const file = (text: string | null) => {
+    const f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "gv-ledger-")), "spend.json");
+    if (text !== null) fs.writeFileSync(f, text);
+    return f;
+  };
+
+  it("accepts a missing file or a saved ledger", () => {
+    expect(ledgerReadable(file(null))).toBe(true);
+    expect(ledgerReadable(file(JSON.stringify(emptyLedger())))).toBe(true);
+  });
+
+  it("refuses a torn, empty or foreign file, so the run does not start again from $0", () => {
+    expect(ledgerReadable(file('{"months":{"2026-10":{"usd":46.9'))).toBe(false);
+    expect(ledgerReadable(file(""))).toBe(false);
+    expect(ledgerReadable(file("[]"))).toBe(false);
+    expect(ledgerReadable(file('{"other":1}'))).toBe(false);
   });
 });
 

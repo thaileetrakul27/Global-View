@@ -296,6 +296,10 @@ export function inSiteScope(url: URL, scope: string): boolean {
   const slash = scope.indexOf("/");
   if (slash < 0) return hostMatches(url.hostname, scope);
   if (url.hostname.replace(/^www\./, "") !== scope.slice(0, slash)) return false;
+  // Encoded slashes, backslashes or dots, and "..;" segments, are left in
+  // the path by the URL parser but undone by some servers, which could then
+  // serve a page outside the folder; such a path is never in it.
+  if (/%2f|%5c|%2e|;/i.test(url.pathname)) return false;
   const folder = scope.slice(slash).toLowerCase();
   const path = url.pathname.toLowerCase();
   return path === folder || path.startsWith(`${folder}/`);

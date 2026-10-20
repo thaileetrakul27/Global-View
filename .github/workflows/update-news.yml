@@ -43,7 +43,9 @@ jobs:
 
       # When the update fails, the site's data stays as it was, but the
       # caches are saved: the model spend in cache/spend.json (so the
-      # monthly cap sees it), and the translations and research it paid for.
+      # monthly cap sees it), and the translations and research already
+      # saved. The failed run's site files are dropped first, so the pull
+      # can rebase.
       - name: Save caches after a failed update
         if: failure()
         run: |
@@ -55,6 +57,8 @@ jobs:
             exit 0
           fi
           git commit -m "Save caches after a failed update"
+          git reset --hard HEAD
+          git clean -fdq public/data
           git pull --rebase origin main
           git push
 

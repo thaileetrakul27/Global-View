@@ -218,6 +218,21 @@ export function readLedger(path: string = LEDGER_PATH): Ledger {
   return ledger;
 }
 
+/**
+ * False when the ledger file exists but cannot be read. The run then makes
+ * no model calls and leaves the file alone: starting again from $0 could
+ * spend past the month's cap.
+ */
+export function ledgerReadable(path: string = LEDGER_PATH): boolean {
+  if (!fs.existsSync(path)) return true;
+  try {
+    const parsed: unknown = JSON.parse(fs.readFileSync(path, "utf8"));
+    return isObject(parsed) && isObject(parsed.months);
+  } catch {
+    return false;
+  }
+}
+
 export function writeLedger(ledger: Ledger, path: string = LEDGER_PATH): void {
   writeJson(path, ledger);
 }

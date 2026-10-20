@@ -30,7 +30,7 @@ import { mergeIndex, readIndex, type CountryFile, type IndexEntry } from "./lib/
 import { collectCandidates, findSharedStories, reconcileStories, type SharedFile } from "./lib/shared";
 import { addDay, buildSnapshot, dayOf, type HistoryIndex } from "./lib/history";
 import { buildResolver } from "./lib/resolve";
-import { canSpend, loadBudget, monthSpent, pruneLedger, readLedger, record, writeLedger } from "./lib/spend";
+import { canSpend, ledgerReadable, loadBudget, monthSpent, pruneLedger, readLedger, record, writeLedger } from "./lib/spend";
 import { updateDisasters } from "./lib/disasters/build";
 import { loadCountryShapes } from "./lib/disasters/geo";
 import type { NewsArticle } from "./lib/disasters/news";
@@ -112,10 +112,11 @@ async function main() {
   const now = new Date().toISOString();
   // Every model call's real cost goes into the month's ledger; once the
   // month nears its budget, the run continues without the model.
+  const ledgerOk = ledgerReadable();
   const ledger = readLedger();
   const budget = loadBudget();
   const startSpend = monthSpent(ledger, now);
-  const withinBudget = canSpend(ledger, budget, now);
+  const withinBudget = ledgerOk && canSpend(ledger, budget, now);
   // The ledger is saved after every call, so a run that is cut off later
   // (the job's time limit, a crash) still leaves its spend on record.
   const ai =
@@ -126,7 +127,15 @@ async function main() {
           writeLedger(ledger);
         });
   if (!ai) {
-    log(args.noAi ? "AI disabled by --no-ai" : !withinBudget ? `This month's model budget is used ($${startSpend.toFixed(2)} of $${budget.monthlyUsd}); publishing without the model` : "No ANTHROPIC_API_KEY; publishing without new translations");
+    log(
+      args.noAi
+        ? "AI disabled by --no-ai"
+        : !ledgerOk
+          ? "cache/spend.json is unreadable; publishing without the model until it is fixed"
+          : !withinBudget
+            ? `This month's model budget is used ($${startSpend.toFixed(2)} of $${budget.monthlyUsd}); publishing without the model`
+            : "No ANTHROPIC_API_KEY; publishing without new translations",
+    );
   }
   const cache = readCache(CACHE_PATH);
   const globeCodes = loadGlobeCodes();
@@ -263,7 +272,7 @@ async function main() {
     log(`Disasters: failed (${err instanceof Error ? err.message : String(err)}); previous map kept`);
   }
 
-  writeLedger(pruneLedger(ledger, now));
+  if (ledgerOk) writeLedger(pruneLedger(ledger, now));
   const month = ledger.months[now.slice(0, 7)];
   log(`Model spend: $${(monthSpent(ledger, now) - startSpend).toFixed(3)} this run, $${monthSpent(ledger, now).toFixed(2)} of $${budget.monthlyUsd} this month${month ? ` (${Object.entries(month.byPurpose).map(([k, v]) => `${k} $${v.toFixed(2)}`).join(", ")})` : ""}`);
 }
