@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { loadCountryConfig, loadGlobeCodes, loadGlobeFeatures, loadLanguages, loadWorldQueries, selectCountries, type CountryConfig, worldCountries } from "./countries";
+import { loadCountryConfig, loadGlobeCodes, loadGlobeFeatures, loadLanguages, loadWorldQueries, selectCountries, type CountryConfig, withLocalSearch, worldCountries } from "./countries";
 
 const ed = { hl: "en", gl: "XX", ceid: "XX:en" };
 const TH: CountryConfig = { code: "TH", name: "Thailand", enabled: true, kind: "local", edition: ed };
@@ -79,5 +79,26 @@ describe("loadLanguages", () => {
       expect(v.name.trim().length).toBeGreaterThan(1);
     }
     expect(languages.TD).toEqual({ lang: "fr", name: "Tchad" });
+  });
+  it("lists every local edition but China, in the edition's own language", () => {
+    const { languages } = loadLanguages();
+    const missing = loadCountryConfig()
+      .filter((c) => !languages[c.code])
+      .map((c) => c.code);
+    expect(missing).toEqual(["CN"]);
+    expect(languages.TH).toEqual({ lang: "th", name: "ประเทศไทย" });
+    expect(languages.GB).toEqual({ lang: "en", name: "UK" });
+    for (const c of loadCountryConfig().filter((c) => languages[c.code])) {
+      // Bing's code for the edition's language: "en-GB" is "en", Taiwan's Chinese is "zh-hant", Norwegian "nb".
+      expect(languages[c.code].lang.slice(0, 2), c.code).toBe(c.code === "NO" ? "nb" : c.edition!.hl.slice(0, 2));
+    }
+  });
+});
+
+describe("withLocalSearch", () => {
+  it("adds the Bing search to editions the table lists, and leaves the rest", () => {
+    const out = withLocalSearch([TH, GB], { languages: { TH: { lang: "th", name: "ประเทศไทย" } } });
+    expect(out[0]).toEqual({ ...TH, local: { lang: "th", name: "ประเทศไทย" } });
+    expect(out[1]).toBe(GB);
   });
 });

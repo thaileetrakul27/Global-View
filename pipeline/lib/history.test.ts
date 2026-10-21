@@ -15,6 +15,12 @@ describe("history", () => {
     expect(snap.stories).toHaveLength(10);
     expect(snap.stories[0]).toEqual({ id: "s0", title: "S0", subject: null, countries: ["TH", "GB"] });
   });
+  it("keeps each article's outlet count and trending mark, when it has them", () => {
+    const snap = buildSnapshot(now, [{ code: "TH", articles: [{ ...art(0), outlets: 4, trending: true }, { ...art(1), outlets: 1, trending: false }, art(2)] }], []);
+    expect(snap.countries.TH[0]).toEqual({ title: "t0", url: "u0", outlet: "O", outlets: 4, trending: true });
+    expect(snap.countries.TH[1]).toMatchObject({ outlets: 1, trending: false });
+    expect(snap.countries.TH[2]).toEqual({ title: "t2", url: "u2", outlet: "O" });
+  });
   it("indexes days sorted and unique", () => {
     expect(addDay(null, "2026-10-18")).toEqual({ dates: ["2026-10-18"] });
     expect(addDay({ dates: ["2026-10-18", "2026-10-16"] }, "2026-10-17")).toEqual({ dates: ["2026-10-16", "2026-10-17", "2026-10-18"] });

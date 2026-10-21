@@ -33,6 +33,8 @@ import BottomSheet from "./BottomSheet";
 import ModeSwitch from "./ModeSwitch";
 import TimeMenu from "./TimeMenu";
 import WorldStories from "./WorldStories";
+import TrendingButton from "./TrendingButton";
+import TrendingPanel from "./TrendingPanel";
 import StoryPanel from "./StoryPanel";
 import WorldSummary from "./WorldSummary";
 import TimeControl from "./TimeControl";
@@ -107,6 +109,9 @@ export default function App() {
   // A shared story opened from the landing card or an article badge. It
   // takes over the panel and only its arcs are drawn.
   const [focusStoryId, setFocusStoryId] = useState<string | null>(null);
+  // Phones: whether the "Trending today" sheet is open. It shows while no
+  // other panel is, so closing a story opened from it comes back to it.
+  const [trendingOpen, setTrendingOpen] = useState(false);
   // Country and map to return to when the story panel closes.
   const [storyFrom, setStoryFrom] = useState<string | null>(null);
   const [storyFromMode, setStoryFromMode] = useState<MapMode | null>(null);
@@ -410,6 +415,7 @@ export default function App() {
   // disaster. Opening one closes the others.
   const select = useCallback((code: string | null, about?: string) => {
     userActed.current = true;
+    setTrendingOpen(false);
     setSelectedCode(code);
     setFilterAbout(about ?? null);
     setReadersOpen(false);
@@ -462,6 +468,7 @@ export default function App() {
       if (id === selectedDisasterId) return;
       const sel = openerSelector(document.activeElement, id);
       disasterOpener.current = [sel, `[data-disaster-id="${CSS.escape(id)}"]`, `.gv-dz[data-id="${CSS.escape(id)}"]:not(.gv-hidden)`];
+      setTrendingOpen(false);
       setDisasterFrom(selectedCode ?? disasterFrom);
       setDisasterFromMode(selectedDisasterId ? disasterFromMode : mode);
       setSelectedCode(null);
@@ -493,6 +500,7 @@ export default function App() {
       userActed.current = true;
       if (next === mode) return;
       setMode(next);
+      setTrendingOpen(false);
       if (next === "news" && selectedDisasterId) {
         setSelectedDisasterId(null);
         setSelectedCode(disasterFrom);
@@ -528,11 +536,23 @@ export default function App() {
     if (storyFromMode) setMode(storyFromMode);
     setStoryFromMode(null);
   }, [storyFrom, storyFromMode]);
+  // Phones: open and close the "Trending today" sheet. Closing puts focus
+  // back on the button that opened it.
+  const openTrending = useCallback(() => {
+    userActed.current = true;
+    setTrendingOpen(true);
+  }, []);
+  const closeTrending = useCallback(() => {
+    userActed.current = true;
+    setTrendingOpen(false);
+    refocus(["[data-trending-button]"]);
+  }, []);
   // Changing day keeps the country but drops anything that needs live data,
   // including an open disaster.
   const changeDate = useCallback((date: string | null) => {
     userActed.current = true;
     setHistoryDate(date);
+    setTrendingOpen(false);
     setFocusStoryId(null);
     setStoryFrom(null);
     setStoryFromMode(null);
@@ -542,25 +562,29 @@ export default function App() {
     setDisasterFromMode(null);
   }, []);
 
-  // Escape closes the story, the disaster or the country, unless a control
-  // such as the search list handles it first.
+  // Escape closes the story, the disaster, the country or the phone's
+  // trending list, unless a control such as the search list handles it first.
   const disasterOpen = !!openDisaster;
+  // The phone "Trending today" list: today's shared stories on the news map.
+  const canTrend = !vp.isDesktop && mode === "news" && !historyDate && dayStories.length > 0;
+  const trendingShown = canTrend && trendingOpen && !selected && !focusedStory && !disasterOpen;
   useEffect(() => {
-    if (!selectedCode && !focusStoryId && !disasterOpen) return;
+    if (!selectedCode && !focusStoryId && !disasterOpen && !trendingShown) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== "Escape" || e.defaultPrevented) return;
       if (focusStoryId) closeStory();
       else if (disasterOpen) closeDisaster();
-      else close();
+      else if (selectedCode) close();
+      else closeTrending();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [selectedCode, focusStoryId, disasterOpen, close, closeStory, closeDisaster]);
+  }, [selectedCode, focusStoryId, disasterOpen, trendingShown, close, closeStory, closeDisaster, closeTrending]);
 
   // How much of the viewport the open panel covers, so the globe can shift
   // its centre into the remaining space.
   const panelWidth = Math.min(PANEL_WIDTH, vp.width * 0.38);
-  const panelOpen = !!selected || !!focusedStory || disasterOpen;
+  const panelOpen = !!selected || !!focusedStory || disasterOpen || trendingShown;
   const inset = panelOpen
     ? vp.isDesktop
       ? { right: panelWidth, bottom: 0 }
@@ -580,6 +604,7 @@ export default function App() {
       actions={<CopyLink label="Copy link to this disaster" />}
     />
   );
+  const trendingPanel = trendingShown && <TrendingPanel stories={dayStories} nameOf={nameOf} onStory={openStory} onClose={closeTrending} />;
   const countryPanel = selected && (
     <CountryPanel
       country={selected}
@@ -670,6 +695,8 @@ export default function App() {
           {!vp.isDesktop && showTime && !panelOpen && <TimeMenu dates={historyDates} date={historyDate} onChange={changeDate} />}
           {vp.isDesktop && <ModeSwitch mode={mode} onChange={changeMap} />}
         </div>
+        {/* Phones: today's shared stories, one tap away, in the sheet. */}
+        {canTrend && !panelOpen && <TrendingButton onOpen={openTrending} />}
       </header>
 
       {!panelOpen && !moved && countries.length > 0 && (
@@ -709,7 +736,7 @@ export default function App() {
             focusId={focusStoryId}
             onFocus={openStory}
             nameOf={nameOf}
-            heading={historyLabel ? `Stories the world shared on ${historyLabel}` : "Stories the world shares"}
+            heading={historyLabel ? `Stories the world shared on ${historyLabel}` : "Trending today"}
             interactive={!historyDate}
           />
         </div>
@@ -748,13 +775,14 @@ export default function App() {
       ) : (
         <BottomSheet
           open={panelOpen}
-          onClose={focusedStory ? closeStory : disasterOpen ? closeDisaster : close}
+          onClose={focusedStory ? closeStory : disasterOpen ? closeDisaster : trendingShown ? closeTrending : close}
           peek={SHEET_PEEK}
-          label={focusedStory ? "Story" : disasterOpen ? "Disaster" : "Country"}
+          label={focusedStory ? "Story" : disasterOpen ? "Disaster" : trendingShown ? "Trending" : "Country"}
         >
           {storyPanel}
           {disasterPanel}
           {countryPanel}
+          {trendingPanel}
         </BottomSheet>
       )}
     </main>

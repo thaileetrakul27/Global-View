@@ -16,11 +16,16 @@ export interface Article {
   en?: string;
   /** Country codes the headline is about, when known. */
   about?: string[];
+  /** How many outlets in the feeds read carry this story; absent in older files. */
+  outlets?: number;
+  /** Recent and carried by several outlets; absent in older files. */
+  trending?: boolean;
 }
 
 /**
- * local: the country's own Google News top stories, what its public reads.
- * world: the country has no edition, so this is coverage about it from elsewhere.
+ * local: the country's own news, from its Google News edition and a Bing
+ * News search in its language, ranked by story.
+ * world: the country has no edition, so this is a news search about it.
  */
 export type CoverageKind = "local" | "world";
 
@@ -85,6 +90,8 @@ export interface SnapshotArticle {
   en?: string;
   url: string;
   outlet: string;
+  outlets?: number;
+  trending?: boolean;
 }
 
 export interface SnapshotStory {
@@ -115,6 +122,8 @@ export interface AboutArticle {
   en?: string;
   outlet: string;
   published: string;
+  outlets?: number;
+  trending?: boolean;
 }
 
 export interface AboutFile {

@@ -8,7 +8,7 @@ export type CoverageKind = "local" | "world";
 export interface CountryFile {
   code: string;
   name: string;
-  /** local: the country's own top stories. world: coverage about it from elsewhere. */
+  /** local: the country's own news, ranked by story. world: a news search about it. */
   kind: CoverageKind;
   /** When this country's list was last refreshed. */
   updated: string;

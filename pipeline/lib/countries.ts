@@ -26,7 +26,11 @@ export interface CountryConfig {
   edition?: Edition;
   /** Present for world coverage: the Google News search query. */
   query?: string;
-  /** Present for world coverage: the press language and the country's name in it, for Bing News. */
+  /**
+   * The press language and the country's name in it, for the Bing News
+   * search. Always present for world coverage; present for a local edition
+   * when pipeline/config/languages.json lists it.
+   */
   local?: { lang: string; name: string };
 }
 
@@ -77,10 +81,21 @@ export interface Languages {
   languages: Record<string, { lang: string; name: string }>;
 }
 
-/** The press language and local name for countries without an edition. */
+/** The press language and local name of each country, for its Bing News search. */
 export function loadLanguages(path = "pipeline/config/languages.json"): Languages {
   const parsed = JSON.parse(fs.readFileSync(path, "utf8")) as Languages;
   return { languages: Object.fromEntries(Object.entries(parsed.languages).map(([code, v]) => [code.toUpperCase(), v])) };
+}
+
+/**
+ * Gives each local edition its Bing News search, from the languages
+ * table. An edition the table leaves out is read from Google News alone.
+ */
+export function withLocalSearch(local: CountryConfig[], langs: Languages): CountryConfig[] {
+  return local.map((c) => {
+    const search = langs.languages[c.code];
+    return search ? { ...c, local: search } : c;
+  });
 }
 
 /** Full names that read oddly in a search query. */

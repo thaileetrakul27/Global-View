@@ -1,4 +1,5 @@
 import type { Article } from "@/lib/data";
+import { outletsLabel } from "@/lib/ranking";
 import { shortRelativeTime } from "@/lib/time";
 
 export interface SharedRef {
@@ -20,9 +21,29 @@ function sameText(a: string, b: string): boolean {
   return norm(a) === norm(b);
 }
 
-// The ranked list of a country's most popular articles. The original
-// headline leads; its English translation sits under it when it differs.
-// Articles in a shared story carry a badge that opens that story.
+// The story ranking's marks in the meta line: a quiet "Trending" tag for
+// recent stories many outlets carry, and how many outlets carry it.
+function RankMarks({ trending, outlets }: { trending?: boolean; outlets?: number }) {
+  const count = outletsLabel(outlets);
+  return (
+    <>
+      {count && (
+        <>
+          <span aria-hidden>·</span>
+          <span className="shrink-0" title={`${count} in the feeds read carry this story`}>
+            {count}
+          </span>
+        </>
+      )}
+      {trending && <span className="shrink-0 rounded-full bg-accent/10 px-1.5 py-px text-[11px] font-medium text-accent">Trending</span>}
+    </>
+  );
+}
+
+// The ranked list of a country's stories. The original headline leads; its
+// English translation sits under it when it differs. The meta line names
+// the outlet and time, how many outlets carry the story, and whether it is
+// trending. Articles in a shared story carry a badge that opens that story.
 export default function ArticleList({ articles, shared, onStory }: Props) {
   return (
     <ol className="divide-y divide-line">
@@ -52,6 +73,7 @@ export default function ArticleList({ articles, shared, onStory }: Props) {
                     </time>
                   </>
                 )}
+                <RankMarks trending={a.trending} outlets={a.outlets} />
                 {ref && ref.count > 1 && onStory && (
                   <button
                     type="button"

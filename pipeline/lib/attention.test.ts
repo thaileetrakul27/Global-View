@@ -16,6 +16,11 @@ describe("buildAboutFiles", () => {
     expect(out.US.articles.map((a) => a.from + a.url)).toEqual(["GB4", "TH3", "TH2"]);
     expect(out.CN.articles[0]).toMatchObject({ from: "TH", url: "3", title: "t3", outlet: "O" });
     expect(out.CN.articles[0]).not.toHaveProperty("en");
+    expect(out.CN.articles[0]).not.toHaveProperty("outlets");
+  });
+  it("keeps the outlet count and trending mark from where the article was read", () => {
+    const out = buildAboutFiles([{ code: "TH", articles: [{ ...art("1", ["US"]), outlets: 5, trending: true }] }], "now");
+    expect(out.US.articles[0]).toMatchObject({ from: "TH", url: "1", outlets: 5, trending: true });
   });
 });
 

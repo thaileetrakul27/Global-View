@@ -2,6 +2,7 @@
 // earlier day. One file per UTC day, overwritten by each run that day, so a
 // day's file ends up holding its last state.
 import type { SharedStory } from "./shared";
+import { rankMarks } from "./trending";
 import type { EnrichedArticle } from "./translate";
 
 /** Articles kept per country per day. Small on purpose: the archive lives in git. */
@@ -14,6 +15,10 @@ export interface SnapshotArticle {
   en?: string;
   url: string;
   outlet: string;
+  /** How many outlets carried the story that day; absent in older snapshots. */
+  outlets?: number;
+  /** Whether it was trending that day; absent in older snapshots. */
+  trending?: boolean;
 }
 
 export interface SnapshotStory {
@@ -54,6 +59,7 @@ export function buildSnapshot(
       ...(a.en ? { en: a.en } : {}),
       url: a.url,
       outlet: a.outlet,
+      ...rankMarks(a),
     }));
   }
   return {
