@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { CountryConfig } from "./countries";
 import type { Article, FetchDeps } from "./googlenews";
-import { buildList, combine, fetchLocalSources, fetchWorldSources, sourceName, type Sources } from "./sources";
+import { MAX_AGE_DAYS, buildList, combine, fetchLocalSources, fetchWorldSources, isRecent, sourceName, type Sources } from "./sources";
 
 const NOW = "2026-10-21T12:00:00.000Z";
 const ago = (h: number) => new Date(Date.parse(NOW) - h * 3_600_000);
@@ -124,6 +124,12 @@ describe("fetchLocalSources", () => {
     expect(await fetchLocalSources(TH, 0, none.deps)).toBeNull();
     expect(await fetchLocalSources({ ...TH, edition: undefined }, 0, none.deps)).toBeNull();
   });
+  it("keeps the previous list when only Bing answered", async () => {
+    const logs: string[] = [];
+    const { deps } = network({ "bing.com/news/search": ok(BING) });
+    expect(await fetchLocalSources(TH, 0, { ...deps, log: (m) => logs.push(m) })).toBeNull();
+    expect(logs.at(-1)).toBe("  TH: no Google News feed answered");
+  });
 });
 
 describe("fetchWorldSources", () => {
@@ -214,6 +220,23 @@ describe("buildList", () => {
       ],
     };
     expect(buildList(sources, 10, NOW).map((a) => a.url)).toEqual(["https://pub/new"]);
+  });
+  it("leaves out articles older than a week", () => {
+    const sources: Sources = {
+      url: "u",
+      top: [],
+      services: ["Bing News"],
+      articles: [art("https://pub/now", "Rail strike called off", "Daily News", 2), art("https://pub/2024", "UK", "BBC", 24 * 800)],
+    };
+    expect(buildList(sources, 10, NOW).map((a) => a.url)).toEqual(["https://pub/now"]);
+  });
+});
+
+describe("isRecent", () => {
+  it("is true up to MAX_AGE_DAYS old", () => {
+    expect(isRecent({ published: ago(MAX_AGE_DAYS * 24).toISOString() }, NOW)).toBe(true);
+    expect(isRecent({ published: ago(MAX_AGE_DAYS * 24 + 1).toISOString() }, NOW)).toBe(false);
+    expect(isRecent({ published: ago(-1).toISOString() }, NOW)).toBe(true);
   });
 });
 
