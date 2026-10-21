@@ -32,6 +32,9 @@ export async function loadCountries(): Promise<CountryFeature[]> {
   return data.features;
 }
 
+/** Camera altitude of the world view the globe opens on, in globe radii (before the narrow-screen scale). */
+export const WORLD_ALTITUDE = 2.1;
+
 export interface Focus {
   lat: number;
   lng: number;

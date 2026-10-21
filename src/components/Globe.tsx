@@ -3,10 +3,11 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
 import GlobeGL, { type GlobeMethods } from "react-globe.gl";
 import { AmbientLight, DirectionalLight, MeshLambertMaterial } from "three";
-import { countryFocus, greatCircle, type CountryFeature } from "@/lib/geo";
+import { WORLD_ALTITUDE, countryFocus, greatCircle, type CountryFeature } from "@/lib/geo";
 import type { Disaster } from "@/lib/data";
 import { MINOR_REVEAL_ALTITUDE, disasterFocus } from "@/lib/disasterLayers";
 import { hiddenOnMap } from "@/lib/disasters";
+import { readingFade, readingLook } from "@/lib/lineFade";
 import { tooltipDetail } from "./disasters/markers";
 import { disasterPointerFilter, useDisasterLayers, useReducedMotion } from "./disasters/useDisasterLayers";
 import { useDetailedCountries } from "./useDetailedCountries";
@@ -146,8 +147,10 @@ export default function Globe({
   // Sharper country shapes near a low camera.
   const detailed = useDetailedCountries(countries);
 
-  // Minor disasters join the map once the camera is close (see handleZoom).
+  // Minor disasters join the map once the camera is close, and the reading
+  // lines fade as it comes down (see handleZoom).
   const [close, setClose] = useState(false);
+  const [fade, setFade] = useState(1);
   const hidden = useMemo(
     () => hiddenOnMap(disasters, { showMinor: showMinor || close, openId: selectedDisasterId }),
     [disasters, showMinor, close, selectedDisasterId],
@@ -252,7 +255,7 @@ export default function Globe({
     });
     setRotation();
 
-    globe.pointOfView({ lat: 18, lng: 30, altitude: 2.1 * altitudeScale() }, 0);
+    globe.pointOfView({ lat: 18, lng: 30, altitude: WORLD_ALTITUDE * altitudeScale() }, 0);
     // The fly-to effects below wait for this, so a shared link that arrived
     // before the globe was ready still moves the camera.
     setReady(true);
@@ -313,7 +316,8 @@ export default function Globe({
   // Reading lines lie on the globe and stay put: great-circle paths in the
   // same layer as the storm tracks, just above the countries, with no
   // dashes running along them and no growing in. Their width is in screen
-  // pixels, so it stays the same at any zoom.
+  // pixels; close in they fade and thin (readingFade), so a selected
+  // country's lines do not spray across the whole view.
   const readingPaths = useMemo<ReadingPath[]>(
     () =>
       arcs.map((a) => ({
@@ -325,24 +329,30 @@ export default function Globe({
   );
   // Rebuilt only when a path or its look changes: a new accessor makes the
   // globe redraw every path, which restarts the storm tracks' moving dashes.
+  // The fade only counts while reading lines are drawn, so zooming on the
+  // disaster map never redraws its tracks.
+  const lineFade = readingPaths.length ? fade : 1;
   const { pathsData: trackData, pathColor: trackColor, pathStroke: trackStroke, pathDashLength: trackDash, pathDashGap: trackGap, pathDashAnimateTime: trackAnimate } =
     layers.props;
   const pathProps = useMemo(
     () => ({
       pathsData: readingPaths.length ? [...((trackData as object[] | undefined) ?? []), ...readingPaths] : trackData,
-      pathColor: (d: object) => (isReading(d) ? hexToRgba(colors.accent, 0.3 + 0.45 * d.strength) : call(trackColor, d, colors.accent)),
-      pathStroke: (d: object) => (isReading(d) ? 1 + d.strength : call<number | null>(trackStroke, d, null)),
+      pathColor: (d: object) => (isReading(d) ? hexToRgba(colors.accent, readingLook(d.strength, lineFade).alpha) : call(trackColor, d, colors.accent)),
+      pathStroke: (d: object) => (isReading(d) ? readingLook(d.strength, lineFade).width : call<number | null>(trackStroke, d, null)),
       pathDashLength: (d: object) => (isReading(d) ? 1 : call(trackDash, d, 1)),
       pathDashGap: (d: object) => (isReading(d) ? 0 : call(trackGap, d, 0)),
       pathDashAnimateTime: (d: object) => (isReading(d) ? 0 : call(trackAnimate, d, 0)),
     }),
-    [trackData, trackColor, trackStroke, trackDash, trackGap, trackAnimate, readingPaths, colors.accent],
+    [trackData, trackColor, trackStroke, trackDash, trackGap, trackAnimate, readingPaths, colors.accent, lineFade],
   );
   const onView = detailed.onView;
   const handleZoom = useCallback(
     (view: { lat: number; lng: number; altitude: number }) => {
       onView(view);
-      setClose(view.altitude / altitudeScale() < MINOR_REVEAL_ALTITUDE);
+      const altitude = view.altitude / altitudeScale();
+      setClose(altitude < MINOR_REVEAL_ALTITUDE);
+      // Stepped, so the paths are redrawn a few times per zoom, not every frame.
+      setFade(readingFade(altitude));
     },
     [onView, altitudeScale],
   );

@@ -18,6 +18,8 @@ export default function ModeSwitch({ mode, onChange }: Props) {
         <button
           key={m}
           type="button"
+          // Lets the page put focus back here after the panel changes.
+          data-map-switch={m}
           aria-pressed={mode === m}
           onClick={() => onChange(m)}
           className={`min-h-8 rounded-full px-3.5 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
