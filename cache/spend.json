@@ -1,21 +1,25 @@
 {
   "months": {
     "2026-10": {
-      "usd": 2.21996,
-      "calls": 780,
-      "searches": 151,
-      "researchCalls": 97,
-      "researches": 48,
+      "usd": 2.782789,
+      "calls": 974,
+      "searches": 190,
+      "researchCalls": 121,
+      "researches": 60,
       "byPurpose": {
-        "translate": 0.278335,
-        "group": 0.037853,
-        "research": 1.889699,
-        "news": 0.014073
+        "translate": 0.343535,
+        "group": 0.049284,
+        "research": 2.372061,
+        "news": 0.017909
       },
       "byDay": {
         "2026-10-20": {
           "usd": 2.21996,
           "research": 1.889699
+        },
+        "2026-10-21": {
+          "usd": 0.562829,
+          "research": 0.482362
         }
       }
     }

@@ -103,7 +103,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-cyclone-tc-1001335": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -267,7 +267,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#afb26aec",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -287,7 +287,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,NO,PL,RO,RS,RU,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -427,7 +427,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -477,7 +477,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,DJ,ER,ET,KE,NE,NG,SD,SO,SS,TD#d3aabe2f",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -497,7 +497,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -660,7 +660,108 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#988157ed",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-earthquake-eq-1572503": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A magnitude 6.3 earthquake struck offshore about 200 km northwest of Port Olry, Vanuatu, on 20 October 2026, at a depth of about 10 km. Sources report no immediate casualties or damage, and no tsunami alert was issued. Later updates were not found.",
+    "ongoing": false,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "newsofbahrain.com",
+        "url": "https://www.newsofbahrain.com/en/article/63magnitude-earthquake-strikes-off-vanuatu-no-tsunami-threat",
+        "title": "6.3-magnitude earthquake strikes off Vanuatu, no tsunami threat"
+      },
+      {
+        "name": "nzherald.co.nz",
+        "url": "https://www.nzherald.co.nz/world/magnitude-63-earthquake-strikes-off-vanuatu-usgs/GGOWX37DIZDFPDXLLOEYVL62XQ/",
+        "title": "6.3 magnitude earthquake strikes off Vanuatu; no tsunami threat"
+      },
+      {
+        "name": "rnz.co.nz",
+        "url": "https://www.rnz.co.nz/news/pacific/2041045/magnitude-6-point-3-earthquake-strikes-northwest-of-vanuatu",
+        "title": "Magnitude 6.3 earthquake strikes northwest of Vanuatu"
+      },
+      {
+        "name": "watchers.news",
+        "url": "https://watchers.news/2026/10/20/strong-and-shallow-m6-3-earthquake-hits-vanuatu-4/",
+        "title": "Strong and shallow M6.3 earthquake hits Vanuatu - The Watchers"
+      }
+    ],
+    "membersHash": "gdacs,usgs|VU#e4ddadc8"
+  },
+  "gdacs-flood-fl-1104099": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Heavy rain caused flooding in Chihuahua state, Mexico, mainly in Chihuahua city, from the night of 15 October to 16 October 2026. Flooded streets, overflowing arroyos, a collapsed wall and one reported death were recorded. The state civil protection agency counted 101 incidents from 15 to 16 October. Further showers of up to 25 mm were forecast on 19 October. The sources do not confirm the 17 August 2026 start date.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Chihuahua",
+        "admin": "Chihuahua",
+        "country": "MX",
+        "kind": "city",
+        "impact": "Flooded streets and overflowing arroyos in northern colonias"
+      },
+      {
+        "name": "CDP",
+        "admin": "Chihuahua",
+        "country": "MX",
+        "kind": "district",
+        "impact": "Three families lost belongings; severe material losses"
+      },
+      {
+        "name": "San Carlos",
+        "admin": "Chihuahua",
+        "country": "MX",
+        "kind": "district",
+        "impact": "Two-metre wall collapsed under water pressure"
+      },
+      {
+        "name": "Camargo",
+        "admin": "Chihuahua",
+        "country": "MX",
+        "kind": "town",
+        "impact": "14 flood reports; highway to Jiménez closed"
+      },
+      {
+        "name": "Ciudad Juárez",
+        "admin": "Chihuahua",
+        "country": "MX",
+        "kind": "city",
+        "impact": "14 incident calls, mostly fallen trees"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1 reported",
+        "sourceName": "chihuahua.quadratin.com.mx",
+        "sourceUrl": "https://chihuahua.quadratin.com.mx/sucesos/lluvias-dejan-68-incidentes-en-chihuahua-reportan-una-persona-fallecida-inundaciones-y-socavones/"
+      },
+      {
+        "label": "Incidents",
+        "value": "101 incidents from 15 to 16 October",
+        "sourceName": "chihuahuahoy.mx",
+        "sourceUrl": "https://chihuahuahoy.mx/noticias/saldo-de-18-horas-de-lluvia-en-chihuahua-101-incidentes-un-muerto-y-familias-que-perdieron-todo-en-la-colonia-cdp"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "tierrafuerte.mx",
+        "url": "https://www.tierrafuerte.mx/archivos/85139",
+        "title": "Fuertes lluvias provocan inundaciones en Chihuahua - Tierra Fuerte"
+      }
+    ],
+    "membersHash": "gdacs|MX#08cdf5f0",
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -673,7 +774,134 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|IN#057be8c4",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-flood-fl-1104167": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Floods and river overflows have affected several provinces of Ecuador, most heavily Esmeraldas, Guayas and Los Ríos. The national risk agency SNGR reported seven overflowing rivers in its 20 October 2026 report. Three deaths and 23,167 people affected have been reported. Inamhi expects rain until 22 October, with very high river levels forecast for Guayaquil, Los Ríos and Bolívar.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Quinindé",
+        "admin": "Esmeraldas",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Rivers El Calvario, Viche, Cube and Herrera overflowed"
+      },
+      {
+        "name": "Muisne",
+        "admin": "Esmeraldas",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Canuto and Sucio rivers overflowed"
+      },
+      {
+        "name": "Isla Luis Vargas Torres",
+        "admin": "Esmeraldas",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Esmeraldas river flooded island district"
+      },
+      {
+        "name": "Tenguel",
+        "admin": "Guayas",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Homes, streets and banana plantations flooded"
+      },
+      {
+        "name": "Salitre",
+        "admin": "Guayas",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Vinces river affected several sectors"
+      },
+      {
+        "name": "Urdesa",
+        "admin": "Guayas",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Urban flooding in Guayaquil sector"
+      },
+      {
+        "name": "Babahoyo",
+        "admin": "Los Ríos",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Catarama river overflow caused serious damage"
+      },
+      {
+        "name": "Caracol",
+        "admin": "Los Ríos",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Catarama river overflow caused serious damage"
+      },
+      {
+        "name": "El Guabo",
+        "admin": "El Oro",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Pagua river overflowed"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "three",
+        "sourceName": "laprensademonagas.com",
+        "sourceUrl": "https://laprensademonagas.com/ecuador-enfrenta-graves-inundaciones-tres-fallecidos-y-mas-de-23-mil-afectados/"
+      },
+      {
+        "label": "People affected",
+        "value": "23,167 people",
+        "sourceName": "elcomercio.com",
+        "sourceUrl": "https://www.elcomercio.com/actualidad/ecuador/lluvias-ecuador-afectan-personas-provincias/"
+      },
+      {
+        "label": "Homes damaged",
+        "value": "more than 5,500",
+        "sourceName": "expreso.ec",
+        "sourceUrl": "https://www.expreso.ec/ecuador/lluvias-ecuador-tres-fallecidos-21-500-afectados-alerta-roja-299872.html"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "elcomercio.com",
+        "url": "https://www.elcomercio.com/actualidad/ecuador/lluvias-ecuador-afectan-personas-provincias/",
+        "title": "Lluvias en Ecuador dejan 23 167 afectados en 22 provincias - El Comercio"
+      },
+      {
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/ecuador-floods-landslide-23000-2026/",
+        "title": "Ecuador Floods Hit 23,000 and a Landslide Kills 2 in Azuay"
+      },
+      {
+        "name": "elcomercio.com",
+        "url": "https://www.elcomercio.com/actualidad/ecuador/cifra-afectados-lluvias-ecuador-finales-agosto/",
+        "title": "Esta es la cifra de afectados por las lluvias en Ecuador desde finales de agosto - El Comercio"
+      },
+      {
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/ecuador-el-nino-floods-esmeraldas-2026/",
+        "title": "Ecuador El Niño Floods: Seven Rivers Burst Their Banks in Esmeraldas Province"
+      },
+      {
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/ecuador-rains-17056-affected-red-alert-2026/",
+        "title": "Ecuador Rains Hit 17,056 People, Red Alert"
+      },
+      {
+        "name": "laprensademonagas.com",
+        "url": "https://laprensademonagas.com/ecuador-enfrenta-graves-inundaciones-tres-fallecidos-y-mas-de-23-mil-afectados/",
+        "title": "Ecuador enfrenta graves inundaciones: tres fallecidos y más de 23 mil afectados"
+      }
+    ],
+    "membersHash": "gdacs|EC#73720892",
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -838,7 +1066,7 @@
       }
     ],
     "membersHash": "gdacs|TH#75720bb8",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-flood-fl-1104209": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -929,7 +1157,7 @@
       }
     ],
     "membersHash": "gdacs|HN#37b0b7ff",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1018,7 +1246,357 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-flood-fl-1104220": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Flooding and storms have affected Elba island in Livorno province, Tuscany, since 7 October 2026, with reports of flooding at Cavo and Rio Marina. On 20 October heavy rain closed roads on Elba, and new storms were forecast for 20 to 21 October. No source confirms conditions on 21 October.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Cavo",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "seafront flooded; asphalt subsided; landslide on Parata road"
+      },
+      {
+        "name": "Rio Marina",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "water entered ground floors; sports fields flooded"
+      },
+      {
+        "name": "Marciana",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "Costarella road closed to traffic"
+      },
+      {
+        "name": "Marciana Marina",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "Costarella road closed to traffic"
+      },
+      {
+        "name": "Bagnaia",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "flooding and disruption"
+      },
+      {
+        "name": "Nisporto",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "flooding and disruption"
+      },
+      {
+        "name": "Porto Azzurro",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "problems reported"
+      },
+      {
+        "name": "Capoliveri",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "problems reported"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Rainfall at Patresi",
+        "value": "180 mm",
+        "sourceName": "lanazione.it",
+        "sourceUrl": "https://www.lanazione.it/cronaca/maltempo-elba-pioggia-fango-vento-aw486hcu"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "lanazione.it",
+        "url": "https://www.lanazione.it/cronaca/maltempo-elba-pioggia-fango-vento-aw486hcu",
+        "title": "Incubo pioggia, l’Elba sotto il diluvio: accumuli da record e strade interrotte, macchina dei soccorsi in azione"
+      },
+      {
+        "name": "lanazione.it",
+        "url": "https://www.lanazione.it/cronaca/allerta-meteo-toscana-pioggia-vento-temporali-hr6ahe2i",
+        "title": "Pioggia e vento molto forti: nuova allerta in Toscana per l’intera regione. Avviso arancione per l’Elba"
+      },
+      {
+        "name": "ansa.it",
+        "url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/18/nubifragio-allelba-allagamenti-nella-zona-di-cavo_a45d53d6-0995-44be-a32c-4e3336c507bb.html",
+        "title": "Nubifragio all'Elba, allagamenti nella zona di Cavo - Notizie - Ansa.it"
+      },
+      {
+        "name": "lanazione.it",
+        "url": "https://www.lanazione.it/cronaca/elba-maltempo-allagamenti-e-danni-cavo-rio-j3rcin80",
+        "title": "L’Elba fa nuovamente i conti col maltempo. Ancora allagamenti e danni a Cavo e Rio Marina"
+      },
+      {
+        "name": "meteo.it",
+        "url": "https://www.meteo.it/notizie/maltempo-allisola-delba-bomba-dacqua-la-situazione-3621e72d",
+        "title": "Maltempo all’Isola d’Elba, nubifragio, allagamenti e danni: la situazione"
+      }
+    ],
+    "membersHash": "gdacs|IT#aab5ea36",
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-flood-fl-1104227": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Heavy rain caused flooding, flash floods and landslides in Costa Rica from 15 to 19 October 2026, with reports in Heredia, Escazú, San Carlos and Golfito. On 19 October the National Emergency Commission declared a nationwide green preventive alert for all seven provinces, with heavy rain expected through 21 October. The event is ongoing.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "San Pablo",
+        "admin": "Heredia",
+        "country": "CR",
+        "kind": "town",
+        "impact": "flooded homes and streets"
+      },
+      {
+        "name": "San Rafael",
+        "admin": "Heredia",
+        "country": "CR",
+        "kind": "town",
+        "impact": "flooded homes and streets"
+      },
+      {
+        "name": "Escazú",
+        "admin": "San José",
+        "country": "CR",
+        "kind": "district",
+        "impact": "flooded streets trapped people"
+      },
+      {
+        "name": "Aguas Zarcas",
+        "country": "CR",
+        "kind": "town",
+        "impact": "floodwater entered homes and shops; four evacuated"
+      },
+      {
+        "name": "Golfito",
+        "admin": "Puntarenas",
+        "country": "CR",
+        "kind": "town",
+        "impact": "affected by heavy rain"
+      },
+      {
+        "name": "Santo Domingo",
+        "admin": "Heredia",
+        "country": "CR",
+        "kind": "district",
+        "impact": "flood cases reported"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Flood incidents",
+        "value": "more than 100",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/costa-rica/2026/10/20/costa-rica-declara-alerta-verde-en-todo-el-territorio-nacional-por-fuertes-lluvias-mas-de-100-inundaciones-y-50-viviendas-afectadas/"
+      },
+      {
+        "label": "Homes affected",
+        "value": "at least 50",
+        "sourceName": "observador.cr",
+        "sourceUrl": "https://observador.cr/fuertes-lluvias-del-fin-de-semana-dejan-mas-de-100-incidentes-por-inundacion-y-al-menos-50-viviendas-anegadas/"
+      },
+      {
+        "label": "People moved to temporary shelter",
+        "value": "16",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/costa-rica/2026/10/20/costa-rica-declara-alerta-verde-en-todo-el-territorio-nacional-por-fuertes-lluvias-mas-de-100-inundaciones-y-50-viviendas-afectadas/"
+      },
+      {
+        "label": "People attended by Red Cross",
+        "value": "40 people",
+        "sourceName": "nacion.com",
+        "sourceUrl": "https://www.nacion.com/sucesos/cruz-roja-costarricense-atendio-a-40-personas-por/V26LCQZVVZDMVOXVHZZDEEQRNQ/story/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "ticotimes.net",
+        "url": "https://ticotimes.net/2026/10/19/costa-rica-rain-alert-saturated-soils",
+        "title": "Saturated Soils Put All of Costa Rica on Rain Alert Through Wednesday"
+      },
+      {
+        "name": "monumental.co.cr",
+        "url": "https://www.monumental.co.cr/2026/10/19/cne-registro-mas-de-100-incidentes-por-fuertes-lluvias-durante-el-fin-de-semana/",
+        "title": "CNE registró más de 100 incidentes por fuertes lluvias durante el fin de semana - Monumental : Monumental"
+      },
+      {
+        "name": "teletica.com",
+        "url": "https://www.teletica.com/sucesos/video-casas-inundadas-y-puentes-colapsados-tras-fuertes-lluvias_419456",
+        "title": "Video: Casas inundadas y puentes colapsados tras fuertes lluvias"
+      }
+    ],
+    "membersHash": "gdacs|CR#adb5eeef",
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-flood-fl-1104235": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|ES#abb82a60",
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-flood-fl-1104238": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Rivers swollen by El Niño-linked rains were flooding parts of Argentina, Paraguay and Uruguay, according to an AP report dated 2026-10-16. GDACS lists the event as starting 2026-10-13 and rates it minor. The research notes found no Uruguay-specific reports and no status after 2026-10-16.",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|UY#b8b83ed7",
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-flood-fl-1104239": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "Flooding affected parts of Penang, Perak, Pahang, Kedah and Selangor from about 14-15 Oct 2026, according to the sources found. Flood waters receded by 18 Oct and most relief centres closed that day, with two still open in Perak. The sources found report no deaths or injuries. The latest sources are dated 18 Oct, so later developments are not reported.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Bukit Mertajam",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "town",
+        "impact": "Eight houses flooded in Kampung Kubang Semang"
+      },
+      {
+        "name": "Matang Gelugor",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "district",
+        "impact": "79 victims housed at SK Matang Gelugor"
+      },
+      {
+        "name": "Larut",
+        "admin": "Perak",
+        "country": "MY",
+        "kind": "district",
+        "impact": "Flooding affected Kampung Changkat Ibol and Kampung Batu 9"
+      },
+      {
+        "name": "Matang",
+        "admin": "Perak",
+        "country": "MY",
+        "kind": "district",
+        "impact": "Flooding and storm damage; evacuees housed"
+      },
+      {
+        "name": "Selama",
+        "admin": "Perak",
+        "country": "MY",
+        "kind": "district",
+        "impact": "Evacuees housed in relief centres"
+      },
+      {
+        "name": "Pahang",
+        "country": "MY",
+        "kind": "region",
+        "impact": "Relief centres closed 18 Oct"
+      },
+      {
+        "name": "Kedah",
+        "country": "MY",
+        "kind": "region",
+        "impact": "Relief centres closed 18 Oct"
+      },
+      {
+        "name": "Klang Valley",
+        "admin": "Selangor",
+        "country": "MY",
+        "kind": "region",
+        "impact": "Flash floods disrupted roads 17 Oct"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Evacuees, Perak (18 Oct, 8am)",
+        "value": "407 victims from 147 families",
+        "sourceName": "bernama.com",
+        "sourceUrl": "https://www.bernama.com/en/general/news.php?id=2621963"
+      },
+      {
+        "label": "Evacuees, Penang (18 Oct, 8am)",
+        "value": "36 victims from 10 families",
+        "sourceName": "malaymail.com",
+        "sourceUrl": "https://www.malaymail.com/news/malaysia/2026/10/18/floods-worsen-in-perak-penang-as-evacuee-numbers-increase/239546"
+      },
+      {
+        "label": "Evacuated, Penang (17 Oct night)",
+        "value": "24 people from eight families",
+        "sourceName": "thestar.com.my",
+        "sourceUrl": "https://www.thestar.com.my/news/nation/2026/10/18/24-flood-victims-evacuated-to-sk-seri-penanti-relief-centre"
+      },
+      {
+        "label": "Houses flooded, Kubang Semang",
+        "value": "8 houses",
+        "sourceName": "thestar.com.my",
+        "sourceUrl": "https://www.thestar.com.my/news/nation/2026/10/18/24-flood-victims-evacuated-to-sk-seri-penanti-relief-centre"
+      },
+      {
+        "label": "Evacuees, Perak (18 Oct, evening)",
+        "value": "200 victims in the Matang area",
+        "sourceName": "freemalaysiatoday.com",
+        "sourceUrl": "https://www.freemalaysiatoday.com/category/nation/2026/10/18/flood-victims-in-four-states-go-home"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "freemalaysiatoday.com",
+        "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/18/flood-victims-in-four-states-go-home",
+        "title": "Flood victims in four states go home"
+      },
+      {
+        "name": "thestar.com.my",
+        "url": "https://www.thestar.com.my/news/nation/2026/10/18/24-flood-victims-evacuated-to-sk-seri-penanti-relief-centre",
+        "title": "24 flood victims evacuated to SK Seri Penanti relief centre"
+      },
+      {
+        "name": "nst.com.my",
+        "url": "https://www.nst.com.my/amp/news/nation/2026/10/1558061/floods-worsen-perak-penang-evacuee-numbers-rise",
+        "title": "Floods worsen in Perak, Penang as evacuee numbers rise"
+      },
+      {
+        "name": "bernama.com",
+        "url": "https://www.bernama.com/en/general/news.php?id=2621963",
+        "title": "BERNAMA - Floods Worsen In Perak, Penang As Evacuee Numbers Increase"
+      },
+      {
+        "name": "malaymail.com",
+        "url": "https://www.malaymail.com/news/malaysia/2026/10/17/from-usj-to-shah-alam-flash-floods-disrupt-klang-valley-roads-after-afternoon-downpour/239494",
+        "title": "From USJ to Shah Alam, flash floods disrupt Klang Valley roads after afternoon downpour"
+      }
+    ],
+    "membersHash": "gdacs|MY#b7b83d44",
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1267,7 +1845,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1335,7 +1913,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-volcano-vo-1000152": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1427,7 +2005,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032639": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1451,7 +2029,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1464,7 +2042,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1520,7 +2098,8 @@
         "title": "Fire in Mongolia approaches China's border, 2,000 firefighters mobilized"
       }
     ],
-    "membersHash": "gdacs|CN,MN#fbe9d9be"
+    "membersHash": "gdacs|CN,MN#fbe9d9be",
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1544,7 +2123,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1575,7 +2154,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1697,7 +2276,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1721,7 +2300,7 @@
       }
     ],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032727": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1812,7 +2391,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#83527d05",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1841,7 +2420,7 @@
       }
     ],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1854,7 +2433,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1867,7 +2446,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1886,7 +2465,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1909,7 +2488,8 @@
         "title": "Bushfire"
       }
     ],
-    "membersHash": "gdacs|AU#d564aadf"
+    "membersHash": "gdacs|AU#d564aadf",
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1922,7 +2502,20 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-wildfire-wf-1032857": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#da627427",
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -1941,7 +2534,20 @@
       }
     ],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-wildfire-wf-1032920": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#72c8f39a",
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-earthquake-7990": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -2038,7 +2644,7 @@
       }
     ],
     "membersHash": "ifrc|VE#4aa9fe04",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-earthquake-8055": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2138,7 +2744,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2209,7 +2815,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -2320,7 +2926,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-flood-8025": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2402,7 +3008,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-flood-8050": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -2476,7 +3082,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2550,7 +3156,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2627,7 +3233,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2724,7 +3330,7 @@
       }
     ],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "ifrc-landslide-8111": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2822,7 +3428,235 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "news-earthquake-earthquake-pa-32b0fa90e3": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "On 9 October 2026, a magnitude 7.7 earthquake (USGS; Panama's geoscience institute gave 7.5) struck southern Panama, followed by a 6.6 aftershock. SINAPROC reported one death, 27 injured and more than 20,000 people affected as of 16 October. Inspections of homes and schools continue in Azuero and other provinces.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Los Santos",
+        "country": "PA",
+        "kind": "region",
+        "impact": "3,268 homes evaluated; collapsed houses reported"
+      },
+      {
+        "name": "Herrera",
+        "country": "PA",
+        "kind": "region",
+        "impact": "1,556 homes partly damaged; 411 totally damaged"
+      },
+      {
+        "name": "Penonomé",
+        "admin": "Coclé",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Regional government building and cathedral damaged"
+      },
+      {
+        "name": "Veraguas",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Power and telecommunication outages continue"
+      },
+      {
+        "name": "Bocas del Toro",
+        "country": "PA",
+        "kind": "region",
+        "impact": "27 homes assessed; 25 schools affected"
+      },
+      {
+        "name": "Pitaloza Arriba",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Epicentre area, about 7 miles southwest"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
+      },
+      {
+        "label": "Injured",
+        "value": "27",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
+      },
+      {
+        "label": "Homes evaluated",
+        "value": "7,406",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
+      },
+      {
+        "label": "People affected",
+        "value": "more than 20,000",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
+      },
+      {
+        "label": "Homes with total damage",
+        "value": "407",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "tvn-2.com",
+        "url": "https://www.tvn-2.com/nacionales/provincias/temblor-panama-sinaproc-evalua-viviendas-afectadas-bocas-del-toro_1_2267001.html",
+        "title": "Temblor en Panamá: Sinaproc evalúa viviendas afectadas por el sismo en zonas comarcales e insulares"
+      },
+      {
+        "name": "critica.com.pa",
+        "url": "https://www.critica.com.pa/nacional/cruz-roja-destina-745-mil-para-familias-afectadas-por-el-sismo-en-azuero-518289",
+        "title": "Cruz Roja destina $745 mil para familias afectadas por el sismo en Azuero"
+      },
+      {
+        "name": "telemetro.com",
+        "url": "https://www.telemetro.com/nacionales/sismo-panama-sinaproc-cumple-10-dias-operaciones-ininterrumpidas-n6095643",
+        "title": "Sismo en Panamá"
+      },
+      {
+        "name": "sinaproc.gob.pa",
+        "url": "https://www.sinaproc.gob.pa/comunicado-oficial-13/",
+        "title": "Comunicado Oficial #13 - Sinaproc"
+      },
+      {
+        "name": "abcnews.com",
+        "url": "https://abcnews.com/International/tsunami-threat-after-76-magnitude-earthquake-reported-panama/story?id=137140557",
+        "title": "7.7 magnitude earthquake shakes Panama - ABC News"
+      },
+      {
+        "name": "pa.usembassy.gov",
+        "url": "https://pa.usembassy.gov/natural-disaster-alert-panama-earthquake-update-1-october-10-2026/",
+        "title": "Natural Disaster Alert: Panama Earthquake Update 1"
+      }
+    ],
+    "membersHash": "news|PA#887f142d",
+    "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "news-storm-storm-es-b2f07fd3a3": {
+    "at": "2026-10-21T00:11:24.613Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Storm Adam (DANA Adam) hit eastern Spain from 19 October 2026, causing flooding, evacuations and rescues, mainly in Valencia and Alicante provinces. Sources report at least four deaths, though counts differ between outlets. Rain has eased, and confinement orders for 145 municipalities were lifted on 19–20 October. Clean-up has started. AEMET warnings remained in Catalonia and the Balearics on 20 October.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Oliva",
+        "admin": "Valencia",
+        "country": "ES",
+        "kind": "town",
+        "impact": "Two deaths, homes flooded, main shelter"
+      },
+      {
+        "name": "Pego",
+        "admin": "Valencia",
+        "country": "ES",
+        "kind": "town",
+        "impact": "Flooded, floodwater entered streets and buildings"
+      },
+      {
+        "name": "Forna",
+        "admin": "Valencia",
+        "country": "ES",
+        "kind": "town",
+        "impact": "Floodwater entered streets and buildings"
+      },
+      {
+        "name": "Denia",
+        "admin": "Valencia",
+        "country": "ES",
+        "kind": "city",
+        "impact": "Floodwater entered streets and buildings"
+      },
+      {
+        "name": "Gandia",
+        "admin": "Valencia",
+        "country": "ES",
+        "kind": "city",
+        "impact": "Floodwater entered streets and buildings"
+      },
+      {
+        "name": "Sagunto",
+        "admin": "Valencia",
+        "country": "ES",
+        "kind": "town",
+        "impact": "One woman died after entering the sea"
+      },
+      {
+        "name": "Javea",
+        "admin": "Alicante",
+        "country": "ES",
+        "kind": "town",
+        "impact": "About 100 people evacuated"
+      },
+      {
+        "name": "Xàbia",
+        "admin": "Alicante",
+        "country": "ES",
+        "kind": "town",
+        "impact": "Shelter used by 23 people"
+      },
+      {
+        "name": "Cabrera de Mar",
+        "admin": "Barcelona",
+        "country": "ES",
+        "kind": "town",
+        "impact": "One death"
+      },
+      {
+        "name": "Benaoján",
+        "admin": "Málaga",
+        "country": "ES",
+        "kind": "town",
+        "impact": "Death from falling rock, not linked to storm"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "at least four",
+        "sourceName": "plataformamedia.com",
+        "sourceUrl": "https://www.plataformamedia.com/en/2026/10/20/dana-adam-floods-leaves-four-dead-and-thousands-evacuated-valencia-spain-rain/"
+      },
+      {
+        "label": "Evacuated",
+        "value": "more than 2,000 people",
+        "sourceName": "plataformamedia.com",
+        "sourceUrl": "https://www.plataformamedia.com/en/2026/10/20/dana-adam-floods-leaves-four-dead-and-thousands-evacuated-valencia-spain-rain/"
+      },
+      {
+        "label": "Rescues",
+        "value": "more than 1,000",
+        "sourceName": "watchers.news",
+        "sourceUrl": "https://watchers.news/2026/10/20/four-deaths-reported-as-dana-adam-flooding-prompts-more-than-1-000-rescues-in-eastern-spain/"
+      },
+      {
+        "label": "Incidents",
+        "value": "1,876 across the Valencian Community",
+        "sourceName": "notiulti.com",
+        "sourceUrl": "https://www.notiulti.com/la-dana-adam-deja-cinco-muertos-y-1-876-incidentes-en-c-valenciana/"
+      },
+      {
+        "label": "Injured",
+        "value": "three people",
+        "sourceName": "elespanol.com",
+        "sourceUrl": "https://www.elespanol.com/espana/20261019/ultima-hora-temporal-espana-directo-llegada-dana-adam-mantiene-avisos-rojos-sur-valencia-norte-alicante-lluvias-inundaciones/1003744425552_10.html"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "news|ES#b678eaa5",
+    "seen": "2026-10-21T00:11:24.613Z"
   },
   "usgs-earthquake-us7000q1": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -2890,6 +3724,6 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-20T19:35:05.530Z"
+    "seen": "2026-10-21T00:11:24.613Z"
   }
 }
