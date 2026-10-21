@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-21T14:45:27.681Z",
+  "updated": "2026-10-21T17:37:06.438Z",
   "fetched": {
-    "societies": "2026-10-21T14:45:27.681Z",
-    "uncr": "2026-10-21T14:45:27.681Z"
+    "societies": "2026-10-21T17:37:06.438Z",
+    "uncr": "2026-10-21T17:37:06.438Z"
   },
   "societies": {
     "AF": {
@@ -2836,85 +2836,137 @@
     "cruzrojavenezolana.org": {
       "ok": false,
       "reason": "HTTP 202",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://www.cruzrojavenezolana.org/"
-      ],
-      "checked": "2026-10-21T14:45:27.681Z"
+      ]
     },
     "ifrc.org/emergency/venezuela-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://www.ifrc.org/emergency/venezuela-earthquake-2026"
       ],
-      "blocked": true,
-      "checked": "2026-10-21T14:45:27.681Z"
+      "blocked": true
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
-      ],
-      "checked": "2026-10-21T14:45:27.681Z"
+      ]
     },
     "honduras.un.org/es": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://honduras.un.org/es"
-      ],
-      "checked": "2026-10-21T14:45:27.681Z"
+      ]
     },
     "ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text=": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text=",
         "https://www.ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text="
-      ],
-      "checked": "2026-10-21T14:45:27.681Z"
+      ]
     },
     "ifrc.org/appeals?ac=MDRSY003": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://www.ifrc.org/appeals?ac=MDRSY003"
-      ],
-      "checked": "2026-10-21T14:45:27.681Z"
+      ]
     },
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-10-21T14:45:27.681Z"
+      ]
     },
     "redcross.ie": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://www.redcross.ie/"
       ],
-      "blocked": true,
-      "checked": "2026-10-21T14:45:27.681Z"
+      "blocked": true
     },
     "cruzroja.gt": {
       "ok": true,
       "reason": "donation word \"donar\"",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://www.cruzroja.gt/"
-      ],
-      "checked": "2026-10-21T14:45:27.681Z"
+      ]
     },
     "redcross.org.ua": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-21T14:45:27.681Z",
       "chain": [
         "https://redcross.org.ua/"
+      ]
+    },
+    "donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~mi-donativo": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~mi-donativo?_cv=1"
       ],
-      "checked": "2026-10-21T14:45:27.681Z"
+      "checked": "2026-10-21T17:37:06.438Z"
+    },
+    "donate.redcrossredcrescent.org/ifrc/nepal-flash-floods": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/",
+        "https://donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/~my-donation?_cv=1"
+      ],
+      "checked": "2026-10-21T17:37:06.438Z"
+    },
+    "nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal": {
+      "ok": true,
+      "reason": "donation word \"emergency appeal\"",
+      "chain": [
+        "https://nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal"
+      ],
+      "checked": "2026-10-21T17:37:06.438Z"
+    },
+    "redcross.org.mm/en_US/donate": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.redcross.org.mm/en_US/donate/",
+        "https://www.redcross.org.mm/donate/"
+      ],
+      "checked": "2026-10-21T17:37:06.438Z"
+    },
+    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
+        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
+      ],
+      "checked": "2026-10-21T17:37:06.438Z"
+    },
+    "ifrc.org/national-societies-directory/zimbabwe-red-cross-society": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/national-societies-directory/zimbabwe-red-cross-society"
+      ],
+      "blocked": true,
+      "checked": "2026-10-21T17:37:06.438Z"
     }
   }
 }
