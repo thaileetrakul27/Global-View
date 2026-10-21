@@ -32,7 +32,7 @@ import { addDay, buildSnapshot, dayOf, type HistoryIndex } from "./lib/history";
 import { buildResolver } from "./lib/resolve";
 import { canSpend, ledgerReadable, loadBudget, monthSpent, pruneLedger, readLedger, record, writeLedger } from "./lib/spend";
 import { updateDisasters } from "./lib/disasters/build";
-import { loadCountryShapes } from "./lib/disasters/geo";
+import { LAND_SHAPES_PATH, loadCountryShapes } from "./lib/disasters/geo";
 import type { NewsArticle } from "./lib/disasters/news";
 import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle } from "./lib/translate";
 
@@ -263,6 +263,7 @@ async function main() {
       articles,
       resolve: buildResolver(features, local),
       shapes: loadCountryShapes(),
+      landShapes: loadCountryShapes(LAND_SHAPES_PATH),
       globeCodes,
       countryNames: Object.fromEntries(features.map((f) => [f.code, f.admin])),
       deadline: RUN_STARTED + RUN_DEADLINE_MS,

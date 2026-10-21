@@ -247,22 +247,26 @@ export function withResearch(d: Disaster, entry: ResearchEntry): Disaster {
 export const LAND_HAZARDS: ReadonlySet<Disaster["type"]> = new Set(["flood", "drought", "wildfire", "landslide", "heatwave", "coldwave"]);
 
 /**
- * A land hazard's affected areas and place areas without their parts that
- * are almost all sea (see dropSeaParts): a province boundary can take in
- * offshore islands and their waters, which would otherwise be drawn as a
- * flood in the open sea. Areas left with no part are dropped, but never all
+ * A land hazard's affected areas (the sources' footprints) without their
+ * parts that are almost all sea (see dropSeaParts): a province boundary can
+ * take in offshore islands and their waters, which would otherwise be drawn
+ * as a flood in the open sea. A part that holds the disaster's position or
+ * one of its places always stays. Place areas, drawn around a named place,
+ * are left as they are. Areas left with no part are dropped, but never all
  * of them: when nothing would be left, the disaster keeps its areas.
+ * `lands` are the shape sets that tell land from sea, cheapest first.
  */
-export function trimSeaAreas(d: Disaster, shapes: CountryShape[]): Disaster {
-  if (!LAND_HAZARDS.has(d.type) || shapes.length === 0 || d.areas.length === 0) return d;
+export function trimSeaAreas(d: Disaster, lands: CountryShape[][]): Disaster {
+  if (!LAND_HAZARDS.has(d.type) || lands.every((s) => s.length === 0) || d.areas.length === 0) return d;
+  const keep = [d, ...d.places];
   let changed = false;
   const areas: Area[] = [];
   for (const a of d.areas) {
-    if (a.kind !== "affected" && a.kind !== "place") {
+    if (a.kind !== "affected") {
       areas.push(a);
       continue;
     }
-    const geometry = dropSeaParts(a.geometry, shapes, d);
+    const geometry = dropSeaParts(a.geometry, lands, keep);
     if (geometry !== a.geometry) changed = true;
     if (geometry) areas.push(geometry === a.geometry ? a : { ...a, geometry });
   }
@@ -324,6 +328,11 @@ export interface DisasterRun {
   articles: NewsArticle[];
   resolve: CountryResolver;
   shapes: CountryShape[];
+  /**
+   * Finer country shapes (Natural Earth 50m), tried after `shapes` when
+   * telling land from sea in land hazards' areas. `shapes` alone when absent.
+   */
+  landShapes?: CountryShape[];
   globeCodes: Set<string>;
   /** Globe code -> English name. */
   countryNames: Record<string, string>;
@@ -481,7 +490,7 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
     if (entry?.places.length) out = withPlaces(out, await locatePlaces(geocoder, out, entry.places, "research"));
     enriched.push(out);
   }
-  disasters = enriched.filter((d) => isOngoing(d, now) || d.appeals.length > 0).map((d) => trimSeaAreas(d, run.shapes));
+  disasters = enriched.filter((d) => isOngoing(d, now) || d.appeals.length > 0).map((d) => trimSeaAreas(d, run.landShapes ? [run.shapes, run.landShapes] : [run.shapes]));
 
   // Donation pages: registries by fixed rule plus researched pages that pass the allowlist and a live check.
   let registry: DonationRegistry = readRegistry(paths.registry);

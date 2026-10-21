@@ -11,7 +11,7 @@ import fs from "node:fs";
 import { buildAboutFiles, buildAttention } from "./lib/attention";
 import { loadCountryConfig, loadGlobeCodes, loadGlobeFeatures } from "./lib/countries";
 import { updateDisasters } from "./lib/disasters/build";
-import { loadCountryShapes } from "./lib/disasters/geo";
+import { LAND_SHAPES_PATH, loadCountryShapes } from "./lib/disasters/geo";
 import type { NewsArticle } from "./lib/disasters/news";
 import { addDay, buildSnapshot, dayOf, type HistoryIndex } from "./lib/history";
 import { sleep, writeJson } from "./lib/io";
@@ -62,6 +62,7 @@ async function main() {
     articles,
     resolve: buildResolver(features, loadCountryConfig()),
     shapes: loadCountryShapes(),
+    landShapes: loadCountryShapes(LAND_SHAPES_PATH),
     globeCodes: loadGlobeCodes(),
     countryNames: Object.fromEntries(features.map((f) => [f.code, f.admin])),
     offline: !live,

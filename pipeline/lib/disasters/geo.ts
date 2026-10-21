@@ -530,6 +530,9 @@ export interface CountryShape {
   bbox: [number, number, number, number];
 }
 
+/** The finer country shapes (Natural Earth 50m), used to tell land from sea along coasts. */
+export const LAND_SHAPES_PATH = "public/geo/countries-50m.geojson";
+
 /** Parsed shapes per file path, so the file is read once per run. */
 const shapeCache = new Map<string, CountryShape[]>();
 
@@ -686,15 +689,41 @@ export function countryCentroid(code: string, shapes: CountryShape[]): { lat: nu
 // Land and sea
 // ---------------------------------------------------------------------------
 
+/** One polygon of a country shape with the bounding box of its outer ring. */
+interface LandPolygon {
+  bbox: [number, number, number, number];
+  poly: Position[][];
+}
+
+/** Each shape list's polygons, built once per list (lists are shared and never changed). */
+const landPolygonCache = new WeakMap<CountryShape[], LandPolygon[]>();
+
+/**
+ * Every polygon of the shapes with its own bounding box, so a point is only
+ * tested against the islands and coasts near it, not every polygon of a
+ * country (the 50m shapes have about 1,500 of them).
+ */
+function landPolygons(shapes: CountryShape[]): LandPolygon[] {
+  let out = landPolygonCache.get(shapes);
+  if (!out) {
+    out = shapes.flatMap((s) => polygonsOf(s.geometry).map((poly) => ({ bbox: ringBbox(poly[0]), poly })));
+    landPolygonCache.set(shapes, out);
+  }
+  return out;
+}
+
+/** True when the point (any longitude) is inside one of the polygons, also tried 360 degrees east and west. */
+function inLandPolygons(lat: number, lng: number, polys: LandPolygon[]): boolean {
+  const base = normaliseLng(lng);
+  return polys.some(({ bbox: [minX, minY, maxX, maxY], poly }) => {
+    if (lat < minY || lat > maxY) return false;
+    return [base, base + 360, base - 360].some((x) => x >= minX && x <= maxX && inPolygon(x, lat, poly));
+  });
+}
+
 /** True when the point lies inside any country shape (no tolerance). */
 export function onLand(lat: number, lng: number, shapes: CountryShape[]): boolean {
-  const x = normaliseLng(lng);
-  return shapes.some((s) => {
-    const [minX, minY, maxX, maxY] = s.bbox;
-    if (lat < minY || lat > maxY) return false;
-    const inBox = (x >= minX && x <= maxX) || (x + 360 >= minX && x + 360 <= maxX) || (x - 360 >= minX && x - 360 <= maxX);
-    return inBox && pointInGeometry(x, lat, s.geometry);
-  });
+  return inLandPolygons(lat, lng, landPolygons(shapes));
 }
 
 /** Grid steps across a polygon's bounding box when sampling it for land. */
@@ -715,7 +744,12 @@ export function landShare(poly: Position[][], shapes: CountryShape[]): number {
   }
   const sample = points.length >= 8 ? points : poly[0];
   if (sample.length === 0) return 0;
-  return sample.filter(([x, y]) => onLand(y, x, shapes)).length / sample.length;
+  // Only land polygons whose box meets the polygon's box (at any of its
+  // longitudes) can hold its points.
+  const near = landPolygons(shapes).filter(
+    ({ bbox: [x0, y0, x1, y1] }) => y0 <= maxY && y1 >= minY && [0, 360, -360].some((dx) => x0 <= maxX + dx && x1 >= minX + dx),
+  );
+  return sample.filter(([x, y]) => inLandPolygons(y, x, near)).length / sample.length;
 }
 
 /** A part of an area kept as land when at least this share of it is on land. */
@@ -725,14 +759,20 @@ export const MIN_LAND_SHARE = 0.15;
  * The area without the parts that are almost all sea: for floods, fires and
  * other hazards on land, a source's footprint is often an administrative
  * boundary that takes in offshore island districts and their waters (Hainan
- * province reaches the Paracel and Spratly Islands). A part is kept when at
- * least MIN_LAND_SHARE of it is on land, or when it holds `keep` (the
- * disaster's own position), since the country shapes leave out small
- * islands. Null when no part would be left.
+ * province reaches the Paracel and Spratly Islands). A part is kept when it
+ * holds one of the `keep` points (the disaster's own position and its
+ * places, at any longitude), or when at least MIN_LAND_SHARE of it is on
+ * land by any of the shape sets in `lands`. Each set misses land the other
+ * has: the coarse 110m shapes leave out islands such as Elba and Ibiza, and
+ * the finer 50m ones leave out islets and estuary islands that the coarse
+ * coastline happens to cover. Put the cheaper set first, since a part found
+ * on land is not tested again. Null when no part would be left.
  */
-export function dropSeaParts(geom: AreaGeometry, shapes: CountryShape[], keep: { lat: number; lng: number } | null): AreaGeometry | null {
+export function dropSeaParts(geom: AreaGeometry, lands: CountryShape[][], keep: { lat: number; lng: number }[]): AreaGeometry | null {
   const parts = polygonsOf(geom).filter(
-    (poly) => (keep !== null && inPolygon(normaliseLng(keep.lng), keep.lat, poly)) || landShare(poly, shapes) >= MIN_LAND_SHARE,
+    (poly) =>
+      keep.some((k) => pointInGeometry(k.lng, k.lat, { type: "Polygon", coordinates: poly })) ||
+      lands.some((shapes) => landShare(poly, shapes) >= MIN_LAND_SHARE),
   );
   if (parts.length === 0) return null;
   if (parts.length === polygonsOf(geom).length) return geom;

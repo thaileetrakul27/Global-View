@@ -26,7 +26,7 @@ import {
   type DisasterRun,
   type Snapshots,
 } from "./build";
-import { circlePolygon, loadCountryShapes } from "./geo";
+import { LAND_SHAPES_PATH, circlePolygon, dropSeaParts, loadCountryShapes, pointInGeometry } from "./geo";
 import type { GeoHit, Geocoder } from "./geocode";
 import type { ResearchEntry, ResearchParse } from "./research";
 import type { Disaster, DisastersFile, SourceEvent } from "./types";
@@ -342,6 +342,17 @@ describe("updateDisasters", () => {
     expect(JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "disaster-sources.json"), "utf8")).ifrc.fetched).toBe("2026-10-20T09:00:00.000Z");
   });
 
+  it("tells land from sea with the run's finer shapes, when it has them", async () => {
+    // Spain's flood over Ibiza and Formentera: the coarse shapes have neither island.
+    const spain = (JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "sea-parts.json"), "utf8")) as { spain: { lat: number; lng: number; areas: Disaster["areas"] } }).spain;
+    const event = ifrcEvent({ title: "Spain: Floods", countries: ["ES"], lat: spain.lat, lng: spain.lng, precision: "area", areas: spain.areas });
+    const snapshot: Snapshots = { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [event] } };
+    const parts = (file: DisastersFile) => file.disasters[0].areas.map((a) => (a.geometry.type === "Polygon" ? 1 : a.geometry.coordinates.length));
+    const shapes = loadCountryShapes();
+    expect(parts(await updateDisasters(runWith(folders({ snapshot }), { offline: true, shapes })))).toEqual([1]);
+    expect(parts(await updateDisasters(runWith(folders({ snapshot }), { offline: true, shapes, landShapes: loadCountryShapes(LAND_SHAPES_PATH) })))).toEqual([2]);
+  });
+
   it("keeps a failed feed's previous reports", async () => {
     const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } } });
     const run = runWith(dirs);
@@ -439,28 +450,60 @@ describe("updateDisasters", () => {
 
 describe("trimSeaAreas", () => {
   const shapes = loadCountryShapes();
-  const fx = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "sea-parts.json"), "utf8")) as {
-    china: { lat: number; lng: number; areas: Disaster["areas"] };
-  };
-  const china = (p: Partial<Disaster> = {}) => dis({ id: "gdacs-flood-1", countries: ["CN"], lat: fx.china.lat, lng: fx.china.lng, areas: fx.china.areas, ...p });
+  const detailed = loadCountryShapes(LAND_SHAPES_PATH);
+  type Case = { lat: number; lng: number; places?: Disaster["places"]; areas: Disaster["areas"] };
+  const fx = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "sea-parts.json"), "utf8")) as Record<"china" | "italy" | "spain" | "coxsBazar", Case>;
+  /** A flood from one of the fixture's cases. */
+  const flood = (c: Case, p: Partial<Disaster> = {}) => dis({ id: "gdacs-flood-1", lat: c.lat, lng: c.lng, places: c.places ?? [], areas: c.areas, ...p });
+  const china = (p: Partial<Disaster> = {}) => flood(fx.china, { countries: ["CN"], ...p });
   const parts = (d: Disaster) => d.areas.reduce((n, a) => n + (a.geometry.type === "Polygon" ? 1 : a.geometry.coordinates.length), 0);
 
   it("drops a flood's parts out at sea", () => {
     const before = china();
-    const after = trimSeaAreas(before, shapes);
-    expect(parts(before)).toBeGreaterThan(5);
-    expect(parts(after)).toBe(1);
+    expect(parts(before)).toBe(13);
+    expect(parts(trimSeaAreas(before, [shapes]))).toBe(1);
+    expect(parts(trimSeaAreas(before, [shapes, detailed]))).toBe(1);
   });
 
   it("leaves hazards that reach the sea, and runs without shapes, untouched", () => {
     const storm = china({ type: "cyclone" });
-    expect(trimSeaAreas(storm, shapes)).toBe(storm);
-    const flood = china();
-    expect(trimSeaAreas(flood, [])).toBe(flood);
+    expect(trimSeaAreas(storm, [shapes, detailed])).toBe(storm);
+    const before = china();
+    expect(trimSeaAreas(before, [])).toBe(before);
+    expect(trimSeaAreas(before, [[]])).toBe(before);
   });
 
   it("never leaves a disaster with no area", () => {
     const sea = china({ lat: 0, lng: -150, areas: [{ kind: "affected", geometry: { type: "Polygon", coordinates: [[[111, 15.5], [113, 15.5], [113, 17.3], [111, 17.3], [111, 15.5]]] } }] });
-    expect(trimSeaAreas(sea, shapes)).toBe(sea);
+    expect(trimSeaAreas(sea, [shapes, detailed])).toBe(sea);
+  });
+
+  it("keeps the part that holds the disaster's places", () => {
+    // Italy's flood is on Elba, which the coarse shapes leave out; its position is on the mainland.
+    const before = flood(fx.italy, { countries: ["IT"] });
+    const after = trimSeaAreas(before, [shapes]);
+    expect(parts(before)).toBe(4);
+    expect(parts(after)).toBe(2); // Pianosa and Montecristo go
+    expect(after.places.every((p) => after.areas.some((a) => pointInGeometry(p.lng, p.lat, a.geometry)))).toBe(true);
+  });
+
+  it("keeps islands the finer shapes have", () => {
+    // Spain's flood covers Ibiza and Formentera; its position is on Formentera.
+    const before = flood(fx.spain, { countries: ["ES"] });
+    expect(parts(before)).toBe(2);
+    expect(trimSeaAreas(before, [shapes, detailed])).toBe(before);
+    expect(parts(trimSeaAreas(before, [shapes]))).toBe(1);
+  });
+
+  it("leaves place areas as they are", () => {
+    // Cox's Bazar District's outline is mostly sea by the coarse shapes and
+    // does not hold the disaster's position, but it is drawn around a named
+    // place, not taken from a source's footprint.
+    const district = fx.coxsBazar.areas[0];
+    expect(district.kind).toBe("place");
+    expect(dropSeaParts(district.geometry, [shapes], [fx.coxsBazar])).toBeNull();
+    const land: Disaster["areas"][number] = { kind: "affected", geometry: { type: "Polygon", coordinates: [[[90.3, 23.7], [90.5, 23.7], [90.5, 23.9], [90.3, 23.9], [90.3, 23.7]]] } };
+    const before = flood(fx.coxsBazar, { places: [], areas: [land, district] });
+    expect(trimSeaAreas(before, [shapes])).toBe(before);
   });
 });
