@@ -61,8 +61,9 @@ interface Props {
 
 // Contents of the country panel: the name, when the list was refreshed, a
 // line for any disaster there now, then the articles, one per story,
-// ranked by how recent each story is and how many outlets carry it. Who
-// this country reads about, and who reads about it, are folded away below.
+// ranked by how recent each story is, how many outlets carry it and
+// Google's top-stories order. Who this country reads about, and who reads
+// about it, are folded away below.
 export default function CountryPanel({
   country,
   state,

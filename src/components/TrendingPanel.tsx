@@ -45,7 +45,7 @@ export default function TrendingPanel({ stories, nameOf, onStory, onClose }: Pro
         </button>
       </div>
       <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-6 sm:px-6">
-        <StoryList stories={stories} focusId={null} onFocus={(id) => id && onStory(id)} nameOf={nameOf} limit={LIMIT} />
+        <StoryList stories={stories} focusId={null} onFocus={(id) => id && onStory(id)} nameOf={nameOf} limit={LIMIT} toggle={false} />
       </div>
     </div>
   );
