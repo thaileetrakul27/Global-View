@@ -1,5 +1,6 @@
 // Groups a country's headlines by story and ranks the stories, so recent
-// news that many outlets carry rises to the top and old news sinks.
+// news that many outlets carry rises to the top, and old news and soft
+// news (technology, entertainment) sink.
 // Purely lexical: no model is called. It runs on the original headlines
 // before translation, so only the headlines that are kept get translated.
 import type { Article } from "./googlenews";
@@ -143,7 +144,8 @@ export function groupStories(articles: Article[]): Article[][] {
 }
 
 // --- Ranking ----------------------------------------------------------
-// A story's score is recency + coverage + top-stories bonus - staleness.
+// A story's score is recency + coverage + top-stories bonus - staleness
+// - soft news.
 
 /** Recency: worth this much when brand new, halving every HALF_LIFE_HOURS. */
 export const RECENCY_WEIGHT = 3;
@@ -162,16 +164,49 @@ export const STALE_HOURS = 36;
 export const STALE_PENALTY = 3;
 /** A publish time further ahead than this is wrong, so the story counts as stale. */
 export const FUTURE_TOLERANCE_HOURS = 1;
+/**
+ * Soft news (see Labels) loses this much: enough to put a phone review
+ * from minutes ago below Google's headlines up to about a day old, which
+ * outlet counts cannot do, since Google lists at most five outlets under
+ * any item. It also puts soft news below most of an edition's other
+ * current stories, so in practice it leaves the list: in 20 editions
+ * measured in October 2026 (120-166 stories each) no soft story ranked
+ * in the top 50, so none was among the 30 kept, nor in the shared
+ * stories built from them. It shows only where an edition has few current
+ * stories, as it still ranks above stale ones. At 1.5 a few soft stories
+ * would stay at the foot of some lists, but a fresh one would then
+ * outrank the lower headlines once they are about eight hours old.
+ */
+export const SOFT_PENALTY = 2.5;
 
 /**
- * Trending: carried by at least TRENDING_OUTLETS outlets, with the newest
- * headline published within TRENDING_HOURS. Google lists related coverage
- * under most big stories, so many stories pass; only the best-ranked
- * TRENDING_MAX of them in each list are marked, so the label stays news.
+ * Trending: not soft news, carried by at least TRENDING_OUTLETS outlets,
+ * with the newest headline published within TRENDING_HOURS, and among the
+ * HEADLINE_POSITIONS headlines that open Google's top-stories feed. Google
+ * lists related coverage under most items, so outlets alone pass nearly
+ * every story; only the best-ranked TRENDING_MAX that qualify in each list
+ * are marked, so the tag still singles stories out. World coverage has no
+ * top-stories feed, so its lists carry no trending marks.
  */
-export const TRENDING_OUTLETS = 3;
-export const TRENDING_HOURS = 12;
-export const TRENDING_MAX = 5;
+export const TRENDING_OUTLETS = 4;
+export const TRENDING_HOURS = 6;
+export const TRENDING_MAX = 3;
+/**
+ * Google's top-stories feed opens with this many headlines; four items
+ * for each section follow (see softLinks in sources.ts).
+ */
+export const HEADLINE_POSITIONS = 10;
+
+/**
+ * Links an edition's own sections label (see softLinks in sources.ts):
+ * hard news from its NATION and WORLD sections, soft news from its
+ * TECHNOLOGY and ENTERTAINMENT sections and their blocks in the top
+ * stories. World coverage has none, so none of its stories is soft.
+ */
+export interface Labels {
+  hard: string[];
+  soft: string[];
+}
 
 /** What the ranking needs to know about one story. */
 export interface StoryStats {
@@ -181,14 +216,24 @@ export interface StoryStats {
   newest: string;
   /** Best (lowest, from 0) position in Google's top-stories feed, or null when not in it. */
   topPosition: number | null;
+  /** Soft news: one of its links is labelled soft and none hard. */
+  soft: boolean;
 }
 
 /**
- * Outlets, newest time and best top-stories position of one story. Its
- * outlets are those of its articles and those Google lists under them as
- * covering the same story.
+ * Outlets, newest time, best top-stories position and softness of one
+ * story. Its outlets are those of its articles and those Google lists
+ * under them as covering the same story.
+ *
+ * @param hard links labelled hard news (Labels), as a set
+ * @param soft links labelled soft news (Labels), as a set
  */
-export function storyStats(story: Article[], topPositions: Map<string, number>): StoryStats {
+export function storyStats(
+  story: Article[],
+  topPositions: Map<string, number>,
+  hard: ReadonlySet<string> = new Set(),
+  soft: ReadonlySet<string> = new Set(),
+): StoryStats {
   const outlets = new Set(story.flatMap((a) => [a.outlet, ...(a.related ?? [])]).map(outletKey).filter(Boolean));
   let newest = story[0].published;
   let topPosition: number | null = null;
@@ -197,7 +242,8 @@ export function storyStats(story: Article[], topPositions: Map<string, number>):
     const pos = topPositions.get(a.url);
     if (pos !== undefined && (topPosition === null || pos < topPosition)) topPosition = pos;
   }
-  return { outlets: Math.max(1, outlets.size), newest, topPosition };
+  const isSoft = story.some((a) => soft.has(a.url)) && !story.some((a) => hard.has(a.url));
+  return { outlets: Math.max(1, outlets.size), newest, topPosition, soft: isSoft };
 }
 
 /** Hours since `iso`; Infinity for a time that cannot be read or lies too far ahead. */
@@ -213,12 +259,22 @@ export function storyScore(s: StoryStats, now: number): number {
   const recency = RECENCY_WEIGHT * 0.5 ** (age / HALF_LIFE_HOURS);
   const coverage = COVERAGE_WEIGHT * Math.log(s.outlets);
   const top = s.topPosition === null ? 0 : TOP_WEIGHT / (1 + s.topPosition / TOP_POSITION_SCALE);
-  return recency + coverage + top - (age > STALE_HOURS ? STALE_PENALTY : 0);
+  return recency + coverage + top - (age > STALE_HOURS ? STALE_PENALTY : 0) - (s.soft ? SOFT_PENALTY : 0);
 }
 
-/** Widely carried and recent enough to be trending (before the TRENDING_MAX cap). */
+/**
+ * Trending, before the TRENDING_MAX cap: not soft, widely carried, recent
+ * and among Google's headlines. A story outside the top-stories feed, as
+ * every world-coverage story is, never qualifies.
+ */
 export function isTrending(s: StoryStats, now: number): boolean {
-  return s.outlets >= TRENDING_OUTLETS && ageHours(s.newest, now) <= TRENDING_HOURS;
+  return (
+    !s.soft &&
+    s.outlets >= TRENDING_OUTLETS &&
+    ageHours(s.newest, now) <= TRENDING_HOURS &&
+    s.topPosition !== null &&
+    s.topPosition < HEADLINE_POSITIONS
+  );
 }
 
 /**
@@ -256,14 +312,18 @@ export function rankMarks(a: Pick<Article, "outlets" | "trending">): Pick<Articl
  *
  * @param top links in Google's top-stories feed, in its order; empty when
  *   the list has none, as for world coverage.
+ * @param labels the edition's hard and soft links; without them no story
+ *   is soft, as for world coverage.
  */
-export function rankStories(articles: Article[], top: string[], now: string): Article[] {
+export function rankStories(articles: Article[], top: string[], now: string, labels?: Labels): Article[] {
   const at = Date.parse(now);
   const topPositions = new Map<string, number>();
   for (const [i, url] of top.entries()) if (!topPositions.has(url)) topPositions.set(url, i);
+  const hard = new Set(labels?.hard);
+  const soft = new Set(labels?.soft);
   const ranked = groupStories(articles)
     .map((story, order) => {
-      const stats = storyStats(story, topPositions);
+      const stats = storyStats(story, topPositions, hard, soft);
       return { story, stats, score: storyScore(stats, at), order };
     })
     .sort((a, b) => b.score - a.score || a.order - b.order);
