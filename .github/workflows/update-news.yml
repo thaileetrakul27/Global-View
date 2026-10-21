@@ -2,8 +2,8 @@ name: Update news
 
 on:
   schedule:
-    # Every 3 hours, a few minutes past the hour to avoid the busiest minute.
-    - cron: "17 */3 * * *"
+    # Every 2 hours, a few minutes past the hour to avoid the busiest minute.
+    - cron: "17 */2 * * *"
   workflow_dispatch:
 
 permissions:

@@ -43,3 +43,6 @@ next-env.d.ts
 
 # Half-written files from a run killed mid-write (pipeline/lib/io.ts)
 *.tmp
+
+# Agent worktrees made by Claude Code
+/.claude/worktrees/

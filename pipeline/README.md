@@ -1,6 +1,6 @@
 # Pipeline
 
-Fetches each country's most popular articles and writes the JSON the website reads into `public/data`. It runs in GitHub Actions every three hours (`.github/workflows/update-news.yml`). The website never calls an API.
+Fetches each country's most popular articles and writes the JSON the website reads into `public/data`. It runs in GitHub Actions every two hours (`.github/workflows/update-news.yml`). The website never calls an API.
 
 ## What "most popular" means
 

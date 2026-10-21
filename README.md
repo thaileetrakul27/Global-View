@@ -10,7 +10,7 @@ A light, clean website with an interactive globe and two maps, switched with a N
 
 Every view has a shareable address. There is no account, no ads and no tracking.
 
-The site is a static Next.js export. A GitHub Actions job refreshes the data every three hours and commits it to `public/data`; Netlify redeploys on every commit. The website never calls an API. The job uses the Claude API (Haiku) to translate headlines, group the same story across countries, spot disasters in headlines and research each disaster with web search, capped at $50 a month (see `pipeline/README.md`). No article text is stored: only headline, outlet, time and link.
+The site is a static Next.js export. A GitHub Actions job refreshes the data every two hours and commits it to `public/data`; Netlify redeploys on every commit. The website never calls an API. The job uses the Claude API (Haiku) to translate headlines, group the same story across countries, spot disasters in headlines and research each disaster with web search, capped at $50 a month (see `pipeline/README.md`). No article text is stored: only headline, outlet, time and link.
 
 ## Develop
 
@@ -38,5 +38,5 @@ npm run build        # writes the static site to /out
 | `public/data/` | Generated article lists, shared stories, attention counts and the disaster map the site reads; written by the pipeline |
 | `cache/headlines.json` | Translations already made, keyed by article link, so nothing is translated twice |
 | `public/geo/countries.geojson` | Natural Earth 110m country shapes (public domain), slimmed down |
-| `.github/workflows/update-news.yml` | The three-hourly update job |
+| `.github/workflows/update-news.yml` | The two-hourly update job |
 | `public/og.png` | The link preview image (1200 x 630); `src/lib/site.ts` holds the page title and description |
