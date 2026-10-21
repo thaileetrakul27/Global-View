@@ -841,7 +841,7 @@ export function donationContext(
   countries: string[],
   registry: DonationRegistry,
   governmentDomains = loadGovernmentDomains(),
-  about: Pick<DonationInput, "title" | "countryNames"> = {},
+  about: Partial<Pick<DonationInput, "title" | "countryNames" | "appeals">> = {},
 ): DonationContext {
   const societyHosts = new Set<string>();
   const platformCodes = new Set<string>();
@@ -852,8 +852,12 @@ export function donationContext(
     society?.hosts.forEach((h) => societyHosts.add(h));
     if (society?.donate) platformCodes.add(own?.parent && registry.societies[own.parent] ? own.parent : code.toUpperCase());
     appealCountries.add(code.toUpperCase());
+    const iso = APPEAL_COUNTRY_OF_GLOBE[code.toUpperCase()];
+    if (iso) appealCountries.add(iso);
     if (own?.parent) appealCountries.add(own.parent.toUpperCase());
   }
+  // The disaster's own appeals, whatever letters IFRC gave them (MDRPS014 for Syria).
+  for (const a of about.appeals ?? []) appealCountriesIn(new URL(`${IFRC_APPEAL_PAGE}${encodeURIComponent(a.code)}`)).forEach((c) => appealCountries.add(c));
   const names = about.countryNames ? countryNameIndex(about.countryNames, registry) : null;
   return {
     countries,
@@ -880,6 +884,10 @@ const NOT_EVENT_WORDS = new Set(
     "insecurity wildfire wildfires fire fires forest bushfire bushfires volcano volcanoes volcanic eruption eruptions lava landslide landslides mudslide",
     "mudslides mudflow mudflows debris tsunami tsunamis heatwave heatwaves heat coldwave coldwaves cold wave waves winter dust rain rains rainfall heavy",
     "monsoon monsoons snow hail wind winds weather extreme severe",
+    // The same in the languages of IFRC's campaigns.
+    "terremoto terremotos sismo sismos seisme seismes tremblement huracan huracanes ouragan ouragans ciclon tifon tormenta tempete inundacion inundaciones",
+    "inondation inondations enchente enchentes chuvas lluvias pluies sequia secheresse seca incendio incendios incendie incendies volcan erupcion",
+    "deslizamiento deslizamientos glissement glissements",
     // Appeals and giving.
     "emergency emergencies appeal appeals crisis crises response relief recovery disaster disasters donate donation donations donativo donar fund funds",
     "global international humanitarian help support campaign victims affected people peoples solidarity general default operation operations update",
@@ -892,6 +900,7 @@ const NOT_EVENT_WORDS = new Set(
     "islamic arab saint",
     // Filler in titles.
     "near from with after over into caused enhanced brings hits orange green amber magnitude",
+    "the and for del los las des les der die das von van",
     "january february march april june july august september october november december",
   ]
     .join(" ")
@@ -912,7 +921,8 @@ function asciiWords(text: string): string[] {
  * (countryNameIndex).
  */
 export const COUNTRY_ALIASES: Readonly<Record<string, readonly string[]>> = {
-  US: ["usa", "united states"],
+  // New Mexico is a state, not Mexico.
+  US: ["usa", "united states", "new mexico"],
   GB: ["uk", "great britain", "britain"],
   AE: ["uae"],
   TR: ["turkiye"],
@@ -930,7 +940,20 @@ export const COUNTRY_ALIASES: Readonly<Record<string, readonly string[]>> = {
   PG: ["png"],
   KR: ["korea", "republic of korea"],
   KP: ["dprk", "dpr korea", "korea dpr"],
-  CD: ["drc", "rdc", "dr congo", "democratic republic of congo", "congo kinshasa"],
+  CD: [
+    "drc",
+    "rdc",
+    "dr congo",
+    "rd congo",
+    "dr of congo",
+    "democratic republic of congo",
+    "democratic republic congo",
+    "dem rep congo",
+    "dem rep of congo",
+    "dem rep of the congo",
+    "rep dem congo",
+    "congo kinshasa",
+  ],
   CG: ["congo", "republic of congo", "congo brazzaville"],
 };
 
@@ -981,7 +1004,7 @@ export function countriesNamedIn(words: string[], index: Record<string, string[]
 }
 
 /**
- * Words of a disaster's title that name a place but no country: 4+
+ * Words of a disaster's title that name a place but no country: 3+
  * letters, ASCII-folded, not a hazard or generic word (NOT_EVENT_WORDS)
  * and not a word of any country's name (countryWords, see
  * countryNameIndex), since "guinea" or "sudan" alone could be another
@@ -989,7 +1012,7 @@ export function countriesNamedIn(words: string[], index: Record<string, string[]
  */
 export function eventWords(title: string | undefined, countryWords: ReadonlySet<string> = new Set()): string[] {
   const words = new Set<string>();
-  for (const w of asciiWords(typeof title === "string" ? title : "")) if (w.length >= 4 && !NOT_EVENT_WORDS.has(w) && !countryWords.has(w)) words.add(w);
+  for (const w of asciiWords(typeof title === "string" ? title : "")) if (w.length >= 3 && !NOT_EVENT_WORDS.has(w) && !countryWords.has(w)) words.add(w);
   return [...words];
 }
 
@@ -997,7 +1020,10 @@ export function eventWords(title: string | undefined, countryWords: ReadonlySet<
  * True when a page on the donation platform is one of IFRC's own campaigns
  * for this disaster: /ifrc/<slug>/..., the slug not "default", naming no
  * country but the disaster's own (countriesNamedIn, by whole names), and
- * naming one of them or a place word of its title (eventWords).
+ * naming one of them; or, naming no country, made only of place words of
+ * its title (eventWords) besides hazard and generic words, so
+ * /ifrc/hurricane-melissa/ is Hurricane Melissa's but a title's "Port"
+ * does not let in /ifrc/port-au-prince-earthquake/.
  * /ifrc/venezuela-earthquake/ is the Venezuela earthquake's; for it,
  * /ifrc/colombia-earthquake/ is not, nor for Guinea-Bissau is
  * /ifrc/guinea-floods/ or /ifrc/papua-new-guinea-earthquake/. Other /ifrc/
@@ -1014,7 +1040,10 @@ export function isIfrcEventCampaign(url: URL, ctx: Pick<DonationContext, "countr
   const own = new Set(ctx.countries.map((c) => c.toUpperCase()));
   const named = countriesNamedIn(words, ctx.countryNameIndex);
   if (named.some((codes) => !codes.some((c) => own.has(c)))) return false;
-  return named.length > 0 || words.some((w) => (ctx.eventWords ?? []).includes(w));
+  if (named.length > 0) return true;
+  const place = words.filter((w) => /^[a-z]{3,}$/.test(w) && !NOT_EVENT_WORDS.has(w));
+  const title = new Set(ctx.eventWords ?? []);
+  return place.length > 0 && place.every((w) => title.has(w));
 }
 
 /** Query keys whose value is an IFRC appeal code. */
@@ -1026,6 +1055,10 @@ const APPEAL_KEYS = new Set(["ac", "appeal_code"]);
 const LISTING_KEYS = new Set(["page", "q", "query", "search", "s", "text", "keyword", "keywords"]);
 /** IFRC's code for an appeal in one country: MDR, the country's ISO code, three digits (MDRET042 Ethiopia, MDRSY003 Syria). */
 const COUNTRY_APPEAL_CODE = /^MDR([A-Z]{2})\d{3}$/;
+/** Older letters in IFRC appeal codes, as codes today: Timor-Leste (MDRTP005), Kosovo (MDRKV006), DR Congo (MDRZR002), Serbia. */
+const OLD_APPEAL_LETTERS: Readonly<Record<string, string>> = { TP: "TL", KV: "XK", ZR: "CD", YU: "RS" };
+/** Globe codes that are not ISO codes, as the country IFRC's appeals for them name: Somaliland, Northern Cyprus. */
+const APPEAL_COUNTRY_OF_GLOBE: Readonly<Record<string, string>> = { SOL: "SO", CYN: "CY" };
 
 /**
  * The countries named by IFRC appeal codes in a URL: in its ac or
@@ -1046,7 +1079,10 @@ export function appealCountriesIn(url: URL): string[] {
     }
     words.push(...text.split(/[^A-Za-z0-9]+/));
   }
-  const codes = words.map((w) => COUNTRY_APPEAL_CODE.exec(w.toUpperCase())?.[1]).filter((c): c is string => c !== undefined);
+  const codes = words
+    .map((w) => COUNTRY_APPEAL_CODE.exec(w.toUpperCase())?.[1])
+    .filter((c): c is string => c !== undefined)
+    .map((c) => OLD_APPEAL_LETTERS[c] ?? c);
   return [...new Set(codes)];
 }
 
@@ -1054,24 +1090,30 @@ export function appealCountriesIn(url: URL): string[] {
 const IFRC_LIST_PATH = /^\/(?:[a-z]{2}\/)?(?:appeals|emergencies)(?:\/all)?\/?$/i;
 
 /**
- * True for a page that lists or searches rather than collects: any URL
- * with a search or paging key in its query (LISTING_KEYS) or an empty
- * appeal code ("/appeals?appeal_code=&page=4"), and IFRC's lists of
- * appeals and emergencies in any form ("ifrc.org/appeals",
- * "/appeals?date_from=&p=300", "go.ifrc.org/appeals/all") unless an
- * appeal code picks one appeal ("/appeals?ac=MDRET042").
+ * True for a page that lists or searches rather than collects, unless an
+ * appeal code picks one appeal ("/appeals?ac=MDRET042&text=", IFRC's own
+ * form): any URL with an empty appeal code ("/appeals?appeal_code=&page=4"),
+ * a filled-in search key (LISTING_KEYS) or a page number, and IFRC's lists
+ * of appeals and emergencies in any form ("ifrc.org/appeals",
+ * "/appeals?date_from=&p=300", "go.ifrc.org/appeals/all"). Empty search
+ * keys, ?page=donate and Drupal's ?q=node/123 route a site to a page and
+ * are no search.
  */
 export function isListingPage(url: URL): boolean {
   let oneAppeal = false;
-  for (const [key, value] of url.searchParams) {
+  let listing = false;
+  for (const [key, raw] of url.searchParams) {
     const k = key.toLowerCase();
-    if (LISTING_KEYS.has(k)) return true;
+    const value = raw.trim();
     if (APPEAL_KEYS.has(k)) {
-      if (!value.trim()) return true;
-      oneAppeal = true;
+      if (value) oneAppeal = true;
+      else listing = true;
+    } else if (value && LISTING_KEYS.has(k) && !(k === "page" && !/^\d+$/.test(value)) && !(k === "q" && value.includes("/"))) {
+      listing = true;
     }
   }
-  return !oneAppeal && hostMatches(url.hostname, "ifrc.org") && IFRC_LIST_PATH.test(url.pathname);
+  if (oneAppeal) return false;
+  return listing || (hostMatches(url.hostname, "ifrc.org") && IFRC_LIST_PATH.test(url.pathname));
 }
 
 /** What kind of official site a host belongs to, for this disaster; null when it is on no list. */

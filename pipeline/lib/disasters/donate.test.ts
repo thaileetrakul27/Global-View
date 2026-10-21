@@ -919,6 +919,12 @@ describe("appealCountriesIn", () => {
     expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?ac=MDRSY003,MDRET042"))).toEqual(["SY", "ET"]);
   });
 
+  it("reads IFRC's older letters as today's codes", () => {
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?appeal_code=MDRTP005"))).toEqual(["TL"]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?appeal_code=MDRKV006"))).toEqual(["XK"]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?appeal_code=MDRZR002"))).toEqual(["CD"]);
+  });
+
   it("leaves regional and multi-country codes, other keys and other words alone", () => {
     expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?appeal_code=MDR60005"))).toEqual([]);
     expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?appeal_code=MDRSY0031"))).toEqual([]);
@@ -939,7 +945,8 @@ describe("isListingPage", () => {
       "https://www.unicef.org/search?q=flood",
       "https://www.unicef.org/search?query=flood",
       "https://www.unicef.org/search?search=flood",
-      "https://www.unicef.org/appeals?text=",
+      "https://www.unicef.org/appeals?text=flood",
+      "https://redcross.org.ph/news?page=1",
       "https://www.unicef.org/appeals?keyword=flood",
       "https://www.unicef.org/appeals?Keywords=flood",
     ]) {
@@ -973,6 +980,19 @@ describe("isListingPage", () => {
 
   it("keeps a WordPress post (?p=), an appeal by its code and plain campaign parameters", () => {
     for (const url of ["https://redcross.org.ph/?p=123", SY_APPEAL, "https://www.redcross.org.ph/donate?campaign=typhoon", "https://www.ifrc.org/donate"]) {
+      expect(isListingPage(new URL(url)), url).toBe(false);
+    }
+  });
+
+  it("keeps an appeal picked by its code in IFRC's own form, and keys that route a site rather than search it", () => {
+    for (const url of [
+      "https://www.ifrc.org/appeals?appeal_code=MDRET042&date_from=&date_to=&text=",
+      "https://www.ifrc.org/appeals?appeal_code=MDRET042&date_from=&date_to=&p=300&text=",
+      "https://www.ifrc.org/appeals?appeal_code=MDRET042&page=1",
+      "https://www.redcross.org.ph/index.php?page=donate",
+      "https://www.redcross.org.ph/?q=node/123",
+      "https://www.unicef.org/appeals?text=",
+    ]) {
       expect(isListingPage(new URL(url)), url).toBe(false);
     }
   });
@@ -1075,6 +1095,20 @@ describe("eventWords and isIfrcEventCampaign", () => {
     expect(isIfrcEventCampaign(new URL(VE_CAMPAIGN), ctxFor(["VE"]))).toBe(false);
   });
 
+  it("ties a campaign that names no country to the title only when every place word of it is the title's", () => {
+    // Live gdacs-earthquake-eq-1572693: the title's "Port" does not let in another port's campaign.
+    const vu = about(["VU"], "M6.3 earthquake 197 km NW of Port-Olry, Vanuatu");
+    expect(isIfrcEventCampaign(new URL(campaign("port-au-prince-earthquake")), vu)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("port-moresby-floods")), vu)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("port-olry-earthquake")), vu)).toBe(true);
+    const cl = about(["CL"], "M6.1 - 40 km SE of San Pedro de Atacama, Chile");
+    expect(isIfrcEventCampaign(new URL(campaign("san-pedro-sula-floods")), cl)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("santa-ana-volcano")), about(["BO"], "M5.9 - Santa Cruz, Bolivia"))).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("hurricane-melissa")), about(["JM", "CU"], "Hurricane Melissa"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("sahel-food-crisis")), about(["NE", "ML"], "Drought in East Africa, Central Sahel"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("terremoto-pitaloza")), about(["PA"], "M7.7 earthquake near Pitaloza Arriba, Panama"))).toBe(true);
+  });
+
   it("tells countries that share a word apart (live disasters ifrc-storm-8101 and gdacs-earthquake-eq-1571367)", () => {
     const gw = about(["GW"], "Guinea-Bissau - Windstorm");
     expect(isIfrcEventCampaign(new URL(campaign("papua-new-guinea-earthquake")), gw)).toBe(false);
@@ -1108,6 +1142,14 @@ describe("eventWords and isIfrcEventCampaign", () => {
     expect(isIfrcEventCampaign(new URL(campaign("congo-kinshasa-floods")), about(["CD"], "DR Congo - Floods"))).toBe(true);
     const ne = about(["NE"], "Flood in Niger");
     expect(isIfrcEventCampaign(new URL(campaign("nigeria-floods")), ne)).toBe(false);
+    // Short forms of DR Congo are not Congo, nor New Mexico Mexico.
+    const congo = about(["CG"], "Congo - Floods");
+    for (const slug of ["dem-rep-congo-floods", "democratic-republic-congo-floods", "rd-congo-inondations", "dem-rep-of-the-congo-floods"]) {
+      expect(isIfrcEventCampaign(new URL(campaign(slug)), congo), slug).toBe(false);
+      expect(isIfrcEventCampaign(new URL(campaign(slug)), about(["CD"], "DR Congo - Floods")), slug).toBe(true);
+    }
+    expect(isIfrcEventCampaign(new URL(campaign("new-mexico-wildfires")), about(["MX"], "Wildfire in Mexico"))).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("mexico-floods")), about(["MX"], "Flood in Mexico"))).toBe(true);
     expect(isIfrcEventCampaign(new URL(campaign("niger-floods")), ne)).toBe(true);
   });
 
@@ -1163,6 +1205,16 @@ describe("donationUrlProblem holds pages to the disaster's countries", () => {
     expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRHN029", ve)).toBe("appeal for another country");
     // A disaster at sea has no country of its own.
     expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRVE015", ctxFor([]))).toBe("appeal for another country");
+  });
+
+  it("keeps a disaster's appeals under old letters, globe-only codes and its own appeals' letters", () => {
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRTP006", ctxFor(["TL"]))).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRKV007", ctxFor(["XK"]))).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRSO017", ctxFor(["SOL"]))).toBeNull();
+    // IFRC filed a Syria appeal as MDRPS014; the disaster's own appeal vouches for its letters.
+    const sy = donationContext(["SY"], registry(), GOV, { appeals: [appeal({ code: "MDRPS014", name: "Syria - Earthquake", kind: "Emergency Appeal" })] });
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRPS014", sy)).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRPS014", ctxFor(["SY"]))).toBe("appeal for another country");
   });
 
   it("lets a territory's disaster use its parent society's country's appeals", () => {
@@ -1927,7 +1979,7 @@ describe("buildDonations", () => {
     expect(links.filter((l) => l.forEvent).map((l) => l.url)).toEqual([own, `${IFRC_APPEAL_PAGE}MDRET042`]);
   });
 
-  it("drops a cached listing page of IFRC's appeals (live run), whose check followed a redirect", () => {
+  it("drops a cached listing page of IFRC's appeals (live run)", () => {
     const reg = registry({ verdicts: passed([APPEAL_LIST, APPEAL_LIST.replace("https://ifrc.org/", "https://www.ifrc.org/")]) });
     const countries = ["HN", "GT", "NI", "SV"];
     const researched = [{ url: APPEAL_LIST, org: "IFRC", kind: "agency", note: "IFRC appeals database listing MDRHN029 Honduras drought EAP" }];
