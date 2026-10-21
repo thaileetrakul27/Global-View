@@ -103,7 +103,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-cyclone-tc-1001335": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -211,62 +211,93 @@
     "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001338": {
-    "at": "2026-10-21T05:12:20.084Z",
+    "at": "2026-10-21T14:45:27.681Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Super Typhoon Champi (Typhoon No. 30) began on 14 October 2026. As of 21 October it was still over the open Pacific, with no landfall reported. The JMA expects it to pass near the Sakishima Islands, Japan, between 23 and 24 October. In Guam and the Northern Mariana Islands it damaged homes, knocked down trees and caused power and water losses. More than 1,000 people took refuge in 15 shelters.",
+    "searches": 4,
+    "summary": "Super Typhoon Champi (PAGASA name: Rosal) began on 14 October 2026. As of 21 October, PAGASA's 5 p.m. bulletin put its winds at 205 km/h, down from a 215 km/h peak, with the system offshore east of Northern Luzon. Signal No. 2 remained over Batanes, and Signal No. 1 and heavy rainfall warnings covered parts of Luzon. No deaths or damage were reported yet. Japan's JMA expects it to reach Okinawa's Sakishima Islands on 23-24 October.",
     "ongoing": true,
-    "places": [],
-    "figures": [
+    "places": [
       {
-        "label": "Homes",
-        "value": "as many as 100 homes",
-        "sourceName": "redcross.org",
-        "sourceUrl": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html"
+        "name": "Batanes",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 2 in effect"
       },
       {
-        "label": "Sheltered",
-        "value": "more than 1,000 people",
-        "sourceName": "redcross.org",
-        "sourceUrl": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html"
+        "name": "Cagayan",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 and heavy rainfall warnings"
       },
       {
-        "label": "Wells not operating",
-        "value": "as many as 170 wells",
-        "sourceName": "redcross.org",
-        "sourceUrl": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html"
+        "name": "Babuyan Islands",
+        "admin": "Cagayan",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 and heavy rainfall warnings"
+      },
+      {
+        "name": "Isabela",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 in effect"
+      },
+      {
+        "name": "Apayao",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 in effect"
+      },
+      {
+        "name": "Ilocos Norte",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 in effect"
+      },
+      {
+        "name": "Catanduanes",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 in effect"
       }
     ],
+    "figures": [],
     "donation": [],
     "sources": [
       {
-        "name": "wxtech.weathernews.com",
-        "url": "https://wxtech.weathernews.com/en/news/sky20261019-01/",
-        "title": "Typhoon CHAMPI: Forecast to Intensify to Violent Strength and Approach Taiwan - Weathernews"
+        "name": "rappler.com",
+        "url": "https://www.rappler.com/philippines/weather/super-typhoon-rosal-update-pagasa-forecast-october-21-2026-5pm/",
+        "title": "Super Typhoon Rosal begins to weaken but warnings still in effect"
       },
       {
-        "name": "pasquines.us",
-        "url": "https://pasquines.us/2026/10/20/super-typhoon-champi-becomes-the-third-typhoon-to-affect-guam-and-the-northern-mariana-islands-in-six-months",
-        "title": "Super Typhoon Champi becomes the third typhoon to affect Guam and the Northern Mariana Islands in six months - Pasquines"
+        "name": "watchers.news",
+        "url": "https://watchers.news/2026/10/21/super-typhoon-champi-becomes-the-strongest-tropical-cyclone-of-2026-signal-no-2-remains-over-batanes-philippines/",
+        "title": "Super Typhoon Champi becomes the strongest tropical cyclone of 2026, Signal No. 2 remains over Batanes, Philippines - The Watchers"
       },
       {
-        "name": "archyde.com",
-        "url": "https://www.archyde.com/american-red-cross-responds-to-super-typhoon-champi-and-hurricane-isaias/",
-        "title": "American Red Cross Responds to Super Typhoon Champi and Hurricane Isaias"
+        "name": "japantimes.co.jp",
+        "url": "https://www.japantimes.co.jp/news/2026/10/21/japan/typhoon-champi-okinawa/",
+        "title": "Japan braces for 30th named storm this year as Typhoon Champi heads for Okinawa - The Japan Times"
       },
       {
-        "name": "redcross.org",
-        "url": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html",
-        "title": "Red Cross Responding to Two Major Storms Affecting Communities More Than 8,200 Miles Apart"
+        "name": "philstar.com",
+        "url": "https://www.philstar.com/headlines/weather/2026/10/21/2564816/signal-no-2-still-batanes-super-typhoon-rosal-slightly-weakens",
+        "title": "Signal No. 2 still up in Batanes as Super Typhoon Rosal slightly weakens"
       },
       {
-        "name": "yahoo.com",
-        "url": "https://www.yahoo.com/news/weather-news/articles/super-typhoon-champi-damages-guam-162204938.html",
-        "title": "Super Typhoon Champi damages Guam, bound for Taiwan"
+        "name": "newsinfo.inquirer.net",
+        "url": "https://newsinfo.inquirer.net/2327538/pagasa-raises-signal-no-2-in-batanes-as-super-typhoon-rosal-moves-away",
+        "title": "Pagasa raises Signal No. 2 in Batanes as Super Typhoon Rosal moves away"
+      },
+      {
+        "name": "bworldonline.com",
+        "url": "https://bworldonline.com/the-nation/2026/10/21/788323/storm-signal-no-1-heavy-rainfall-warnings-up-in-parts-of-luzon-due-to-super-typhoon-champi-pagasa/",
+        "title": "Storm Signal No. 1, heavy rainfall warnings up in parts of Luzon due to Super Typhoon Champi — PAGASA - BusinessWorld Online"
       }
     ],
-    "membersHash": "eonet,gdacs|JP#afb26aec",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "membersHash": "eonet,gdacs|JP,PH#afb26aec",
+    "donationSearched": "2026-10-21T14:45:27.681Z",
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -286,7 +317,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,NO,PL,RO,RS,RU,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -412,7 +443,29 @@
         "sourceUrl": "https://newsroompanama.com/2026/09/16/el-nino-drought-could-leave-16-million-without-enough-food-throughout-latin-america/"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://go.ifrc.org/countries/81",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO operations page for Honduras drought DREF MDRHN028; not a payment form.",
+        "specific": true
+      },
+      {
+        "url": "https://honduras.un.org/es",
+        "org": "UN in Honduras",
+        "kind": "un",
+        "note": "UN country page in Honduras carrying drought appeal news; not a payment form.",
+        "specific": false
+      },
+      {
+        "url": "https://ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text=",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC appeals database listing MDRHN029 Honduras drought EAP; relation unconfirmed.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
         "name": "latinpost.com",
@@ -426,7 +479,8 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z",
+    "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -462,7 +516,22 @@
         "sourceUrl": "https://peopledaily.digital/news/east-africa-drought-hit-crops-now-face-el-nino-flood-threat-report"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC appeals listing showing Ethiopia Drought Response MDRET042; no donate option.",
+        "specific": true
+      },
+      {
+        "url": "https://member.redcrosseth.org/donate",
+        "org": "Ethiopian Red Cross Society",
+        "kind": "society",
+        "note": "General Ethiopian Red Cross donation page supporting drought-affected WASH projects.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
         "name": "peopledaily.digital",
@@ -476,7 +545,8 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,DJ,ER,ET,KE,NE,NG,SD,SO,SS,TD#d3aabe2f",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z",
+    "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -496,7 +566,8 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z",
+    "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -622,9 +693,10 @@
     "donation": [
       {
         "url": "https://donate.unhcr.org/int/en/panama-earthquake",
-        "org": "UNHCR",
+        "org": "UNHCR (UN Refugee Agency)",
         "kind": "un",
-        "note": "UNHCR appeal page for the Panama earthquake"
+        "note": "UNHCR appeal page asking donors to help families affected by the Panama earthquake.",
+        "specific": true
       }
     ],
     "sources": [
@@ -645,7 +717,71 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#24cf2828",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z",
+    "donationSearched": "2026-10-21T14:45:27.681Z"
+  },
+  "gdacs-earthquake-eq-1571732": {
+    "at": "2026-10-21T14:45:27.681Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A magnitude 5.6 earthquake struck on 15 October 2026 at 11:07 UTC about 43 km north-northwest of Lake Minchumina, Alaska. USGS lists it as a potential mainshock of an earthquake sequence. Shaking was felt near Fairbanks, College and Badger. No damage, injuries or evacuations are reported. USGS forecasts a 51% chance of M 3+ aftershocks in the following week.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Fairbanks",
+        "admin": "Alaska",
+        "country": "US",
+        "kind": "city",
+        "impact": "shaking felt"
+      },
+      {
+        "name": "College",
+        "admin": "Alaska",
+        "country": "US",
+        "kind": "town",
+        "impact": "shaking felt"
+      },
+      {
+        "name": "Badger",
+        "admin": "Alaska",
+        "country": "US",
+        "kind": "town",
+        "impact": "shaking felt"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People who felt the quake",
+        "value": "106 people",
+        "sourceName": "seismowatch.com",
+        "sourceUrl": "https://seismowatch.com/earthquakes/region/alaska/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "earthquake.usgs.gov",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026ukynnb",
+        "title": "M 5.6 - 43 km NNW of Lake Minchumina, Alaska"
+      },
+      {
+        "name": "newsroomamerica.com",
+        "url": "https://newsroomamerica.com/a/MT6w4dS1VR9u3hxN6LXBSDzxmZs/the_quake_struck_at_11_07_02_utc_about_43_km_north_northwest_of_lake_minchumina_with_shaking_felt_near_fairbanks_college_and_badger.html",
+        "title": "Preliminary Reports Give Magnitude 5.6 and 5.3 for Central Alaska Earthquake — newsroomamerica.com"
+      },
+      {
+        "name": "yahoo.com",
+        "url": "https://www.yahoo.com/news/science/articles/magnitude-5-6-earthquake-rattles-121832918.html",
+        "title": "Magnitude 5.6 earthquake rattles remote region of Interior Alaska"
+      },
+      {
+        "name": "seismowatch.com",
+        "url": "https://seismowatch.com/earthquakes/region/alaska/",
+        "title": "Earthquakes in Alaska today: latest news & last 30 days"
+      }
+    ],
+    "membersHash": "gdacs,usgs|US#dc9009ba",
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-earthquake-eq-1571917": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -779,7 +915,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1103888": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -839,7 +975,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|US#2b36b9e5",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -907,7 +1043,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1047,7 +1183,7 @@
       }
     ],
     "membersHash": "gdacs|EC#73720892",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1212,7 +1348,7 @@
       }
     ],
     "membersHash": "gdacs|TH#75720bb8",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104209": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1303,7 +1439,7 @@
       }
     ],
     "membersHash": "gdacs|HN#37b0b7ff",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104216": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1342,7 +1478,7 @@
       }
     ],
     "membersHash": "gdacs|BR#3eb3019b",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104217": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1475,7 +1611,7 @@
       }
     ],
     "membersHash": "gdacs,news|CL#74420222",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1564,7 +1700,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104220": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1667,7 +1803,7 @@
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104227": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1763,7 +1899,7 @@
       }
     ],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104235": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1776,7 +1912,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104236": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1825,7 +1961,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SV#aeb82f19",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104237": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1858,7 +1994,7 @@
       }
     ],
     "membersHash": "gdacs|NI#adb82d86",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104238": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1871,7 +2007,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1996,7 +2132,7 @@
       }
     ],
     "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2245,7 +2381,263 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
+  },
+  "gdacs-flood-fl-1104242": {
+    "at": "2026-10-21T14:45:27.681Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Flooding in the Greater Yalta area of Russian-controlled Crimea, which Ukraine regards as occupied, started on 19 October 2026 after heavy rain. Torrents and high river levels flooded settlements. Residents of Koreiz were evacuated and a municipal emergency was declared; a state of emergency was declared in Yalta. As of 21 October, reports said rain had eased and a dry spell was forecast for 21-23 October. No Ukrainian government report was found.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Yalta",
+        "admin": "Republic of Crimea",
+        "country": "UA",
+        "kind": "city",
+        "impact": "Flooded; torrents; state of emergency declared"
+      },
+      {
+        "name": "Koreiz",
+        "country": "UA",
+        "kind": "town",
+        "impact": "Residents evacuated; municipal emergency declared"
+      },
+      {
+        "name": "Sudak",
+        "country": "UA",
+        "kind": "town",
+        "impact": "Private homes and plots flooded"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Evacuated",
+        "value": "10 people",
+        "sourceName": "mezha.net",
+        "sourceUrl": "https://mezha.net/eng/news/mezha-d4293439cf96da593f13c08b_heavy_rains_flood"
+      },
+      {
+        "label": "Rainfall",
+        "value": "509 mm on Ai-Petri plateau, 17-20 October",
+        "sourceName": "krym.aif.ru",
+        "sourceUrl": "https://krym.aif.ru/incidents/rekord-s-1916-goda-kak-krym-perezhivaet-posledstviya-shtorma-veka"
+      },
+      {
+        "label": "Response personnel deployed",
+        "value": "193 people and 36 vehicles",
+        "sourceName": "krym.aif.ru",
+        "sourceUrl": "https://krym.aif.ru/society/novosti-kryma-20-oktyabrya-bpla-shtorm-rekordnye-osadki-chs-svet-benzin"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|UA#a8a6dc86",
+    "seen": "2026-10-21T14:45:27.681Z"
+  },
+  "gdacs-flood-fl-1104243": {
+    "at": "2026-10-21T14:45:27.681Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Heavy rain caused flooding in southern France from 19 October 2026, mainly in Gard, Hérault and Bouches-du-Rhône. One person was found dead near Marseille and one was reported missing in Haute-Corse. Floodwater closed sections of the A9 motorway between Nîmes and Montpellier. As of 21 October the rain was easing, but authorities warned that swollen rivers could cause further flooding, and vigilance for river rises remains in place.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Lunel",
+        "admin": "Hérault",
+        "country": "FR",
+        "kind": "town",
+        "impact": "Certain streets under more than a metre of water"
+      },
+      {
+        "name": "Saint-Laurent-d'Aigouze",
+        "admin": "Gard",
+        "country": "FR",
+        "kind": "town",
+        "impact": "Flooded; barriers placed in floodwater"
+      },
+      {
+        "name": "Saint-Mitre-les-Remparts",
+        "admin": "Bouches-du-Rhône",
+        "country": "FR",
+        "kind": "town",
+        "impact": "One person found dead"
+      },
+      {
+        "name": "Sausset-les-Pins",
+        "admin": "Bouches-du-Rhône",
+        "country": "FR",
+        "kind": "town",
+        "impact": "Flooded"
+      },
+      {
+        "name": "Carry-le-Rouet",
+        "admin": "Bouches-du-Rhône",
+        "country": "FR",
+        "kind": "town",
+        "impact": "Flooded"
+      },
+      {
+        "name": "Ghisonaccia",
+        "admin": "Haute-Corse",
+        "country": "FR",
+        "kind": "town",
+        "impact": "Flooded; one person missing"
+      },
+      {
+        "name": "A9 motorway, Nîmes–Montpellier",
+        "admin": "Gard/Hérault",
+        "country": "FR",
+        "kind": "site",
+        "impact": "Closed both directions after floodwater submerged sections"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "euronews.com",
+        "sourceUrl": "https://www.euronews.com/2026/10/21/severe-weather-in-southern-france-one-dead-near-marseille-one-missing-in-corsica"
+      },
+      {
+        "label": "Missing",
+        "value": "1",
+        "sourceName": "euronews.com",
+        "sourceUrl": "https://www.euronews.com/2026/10/21/severe-weather-in-southern-france-one-dead-near-marseille-one-missing-in-corsica"
+      },
+      {
+        "label": "Evacuated",
+        "value": "dozens of people",
+        "sourceName": "connexionfrance.com",
+        "sourceUrl": "https://www.connexionfrance.com/news/pictures-residents-warned-to-stay-home-as-severe-flooding-hits-south-of-france/822336"
+      },
+      {
+        "label": "Rainfall",
+        "value": "235 mm at Saint-Chamas",
+        "sourceName": "connexionfrance.com",
+        "sourceUrl": "https://www.connexionfrance.com/news/pictures-residents-warned-to-stay-home-as-severe-flooding-hits-south-of-france/822336"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "euronews.com",
+        "url": "https://www.euronews.com/2026/10/21/severe-weather-in-southern-france-one-dead-near-marseille-one-missing-in-corsica",
+        "title": "Severe weather in southern France: one dead near Marseille, one missing in Corsica"
+      },
+      {
+        "name": "connexionfrance.com",
+        "url": "https://www.connexionfrance.com/news/pictures-residents-warned-to-stay-home-as-severe-flooding-hits-south-of-france/822336",
+        "title": "South of France flooding: travel warnings as Storm Adam causes evacuations"
+      },
+      {
+        "name": "cnews.fr",
+        "url": "https://www.cnews.fr/france/2026-10-20/gard-herault-et-bouches-du-rhone-les-images-impressionnantes-des-inondations-dans",
+        "title": "Gard, Hérault et Bouches-du-Rhône... Les images impressionnantes des inondations dans le sud du pays (vidéos)"
+      },
+      {
+        "name": "news.google.com",
+        "url": "https://news.google.com/read/CBMiowJBVV95cUxPeWF5b0k4STViRkVUVS13cWNqbjZWNFhNMEVCcFpkOUhhMnVYOTZsUVpoakg4Q1NPeGhoUWRoOERDenozbmIwUWIycGRFYlJVZDRfZnd6MDcxcnkzZmVFRFlVanVXbFlLLTJTVG9RaUlPbHV0bFFVYzE4VDdzcms1T2FtMjBEbGpXQ0dlRTJXTHV0SEg5dzNuZlBsUElOaEJ3M3FiSUVjeHV3cjkzbkpKYmxZZWpScXpMRDZiNjV6NU1SUVV4ZXc5cXJLOV83c3pGTHBmZWtLcjd6c2ZyRUE3VFRmTHdSdEVBOVFISWxfd0hMM1FhbEVQZU90SjB6VkZOZkhUQWNCb3liYkJhbDFRalBYMVJZZkdzYWVqYWliUS1aWlE?hl=fr&gl=CH&ceid=CH%3Afr",
+        "title": "DIAPORAMA Épisode méditerranéen : les images impressionnantes des inondations dans le Gard et l’Hérault après une nuit d’orages et de pluies diluviennes…"
+      }
+    ],
+    "membersHash": "gdacs|FR#a9a6de19",
+    "seen": "2026-10-21T14:45:27.681Z"
+  },
+  "gdacs-flood-fl-1104244": {
+    "at": "2026-10-21T14:45:27.681Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Heavy rains have caused floods and landslides in Guatemala since early October 2026. The alert feed dates this event from 18 October, but the national disaster agency records the rainy-season emergency from early October, so this covers the wider emergency. As of 11 October, CONRED reported 21 deaths, 1 missing and more than 212,000 people affected. CONRED recorded 2,195 emergencies up to 15 October, and more rain was forecast for 20 October.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Santa María Cahabón",
+        "admin": "Alta Verapaz",
+        "country": "GT",
+        "kind": "district",
+        "impact": "Floods and landslides in several sectors since early October"
+      },
+      {
+        "name": "San Pablo",
+        "admin": "Alta Verapaz",
+        "country": "GT",
+        "kind": "town",
+        "impact": "Landslide on 2 October affected 114 people"
+      },
+      {
+        "name": "San Pedro Jocopilas",
+        "admin": "Quiché",
+        "country": "GT",
+        "kind": "town",
+        "impact": "Landslide and road undermined at km 171.5"
+      },
+      {
+        "name": "Villa Hermosa",
+        "country": "GT",
+        "kind": "town",
+        "impact": "116 homes severely damaged, 499 at risk"
+      },
+      {
+        "name": "Morales",
+        "admin": "Izabal",
+        "country": "GT",
+        "kind": "district",
+        "impact": "Soil saturation at or above 90%, flood risk"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "21",
+        "sourceName": "republica.com",
+        "sourceUrl": "https://republica.com/actualidad/lluvias-en-guatemala-suman-21-fallecidos-y-mas-de-212-mil-personas-afectadas-2026101113290"
+      },
+      {
+        "label": "Missing",
+        "value": "1",
+        "sourceName": "republica.com",
+        "sourceUrl": "https://republica.com/actualidad/lluvias-en-guatemala-suman-21-fallecidos-y-mas-de-212-mil-personas-afectadas-2026101113290"
+      },
+      {
+        "label": "People affected",
+        "value": "more than 212,000 people",
+        "sourceName": "republica.com",
+        "sourceUrl": "https://republica.com/actualidad/lluvias-en-guatemala-suman-21-fallecidos-y-mas-de-212-mil-personas-afectadas-2026101113290"
+      },
+      {
+        "label": "Homes damaged",
+        "value": "about 12,000 homes",
+        "sourceName": "prensa-latina.cu",
+        "sourceUrl": "https://www.prensa-latina.cu/2026/10/06/guatemala-atendieron-casi-dos-mil-emergencias-en-epoca-de-lluvias/"
+      },
+      {
+        "label": "Emergencies",
+        "value": "2,195",
+        "sourceName": "dca.gob.gt",
+        "sourceUrl": "https://dca.gob.gt/noticias-guatemala-diario-centro-america/conred-ha-atendido-2195-emergencias-durante-la-epoca-de-lluvias-2026/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "conred.gob.gt",
+        "url": "https://conred.gob.gt/inundaciones-y-deslizamientos-entre-las-principales-emergencias-atendidas/",
+        "title": "Inundaciones y deslizamientos entre las principales emergencias atendidas - CONRED"
+      },
+      {
+        "name": "prensalibre.com",
+        "url": "https://www.prensalibre.com/guatemala/comunitario/lluvia-intensa-sobre-suelos-saturados-donde-han-golpeado-los-aguaceros-de-octubre-de-2026/",
+        "title": "Lluvia intensa sobre suelos saturados: dónde han golpeado los aguaceros de octubre de 2026"
+      },
+      {
+        "name": "republica.com",
+        "url": "https://republica.com/actualidad/lluvias-en-guatemala-suman-21-fallecidos-y-mas-de-212-mil-personas-afectadas-2026101113290",
+        "title": "Lluvias en Guatemala suman 21 fallecidos y más de 212 mil personas afectadas"
+      }
+    ],
+    "membersHash": "gdacs|GT#aaa6dfac",
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2313,7 +2705,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-volcano-vo-1000152": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2405,7 +2797,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032556": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2441,7 +2833,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2454,7 +2846,131 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
+  },
+  "gdacs-wildfire-wf-1032657": {
+    "at": "2026-10-21T14:45:27.681Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Wildfires in Amazonas state and northern Brazil, started 1 October 2026, were still rising as of 21 October. Smoke blanketed Manaus, where classes and in-person work were suspended on 19 October. Civil defence sent a severe alert urging residents to stay at home. The federal government deployed more than 300 firefighters and 11 aircraft. Agência Brasil reported on 16 October that hotspots had fallen after a task force acted, but not to zero.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Manaus",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "city",
+        "impact": "Smoke blanketed city; classes and in-person work suspended"
+      },
+      {
+        "name": "Autazes",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "district",
+        "impact": "313 hotspots in last month; eleven arrested over fire setting"
+      },
+      {
+        "name": "Itacoatiara",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "district",
+        "impact": "200 hotspots; fire reached part of Indigenous Land"
+      },
+      {
+        "name": "Lábrea",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "district",
+        "impact": "379 hotspots"
+      },
+      {
+        "name": "Novo Aripuanã",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "district",
+        "impact": "311 hotspots"
+      },
+      {
+        "name": "Boca do Acre",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "district",
+        "impact": "298 hotspots"
+      },
+      {
+        "name": "Careiro da Várzea",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "district",
+        "impact": "134 hotspots"
+      },
+      {
+        "name": "Manacapuru",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "district",
+        "impact": "133 hotspots"
+      },
+      {
+        "name": "Manaquiri",
+        "admin": "Amazonas",
+        "country": "BR",
+        "kind": "district",
+        "impact": "Fire-related problems reported"
+      },
+      {
+        "name": "Pará",
+        "country": "BR",
+        "kind": "region",
+        "impact": "922 hotspots, highest number in Brazil"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Amazonas hotspots, 1 Jan–12 Oct 2026",
+        "value": "7,815, up 116% on 2025",
+        "sourceName": "poder360.com.br",
+        "sourceUrl": "https://www.poder360.com.br/poder-sustentavel/focos-de-incendio-no-amazonas-crescem-116-em-2026/"
+      },
+      {
+        "label": "Brazil hotspots, 1 Jan–12 Oct 2026",
+        "value": "82,999, of which 37,035 in the Amazon",
+        "sourceName": "poder360.com.br",
+        "sourceUrl": "https://www.poder360.com.br/poder-sustentavel/focos-de-incendio-no-amazonas-crescem-116-em-2026/"
+      },
+      {
+        "label": "Rural properties notified by IBAMA…",
+        "value": "725",
+        "sourceName": "climainfo.org.br",
+        "sourceUrl": "https://climainfo.org.br/2026/10/14/incendios-florestais-no-am-dobram-mas-indice-esta-abaixo-da-media-historica/"
+      },
+      {
+        "label": "Manaus fine particulate (PM2.5) at 6…",
+        "value": "196.4 µg/m³",
+        "sourceName": "poder360.com.br",
+        "sourceUrl": "https://www.poder360.com.br/poder-sustentavel/focos-de-incendio-no-amazonas-crescem-116-em-2026/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "en.mercopress.com",
+        "url": "https://en.mercopress.com/2026/10/21/amazon-fires-rise-62-in-october-as-deforestation-falls-to-a-record-low",
+        "title": "Amazon fires rise 62% in October as deforestation falls to a record low — MercoPress"
+      },
+      {
+        "name": "climainfo.org.br",
+        "url": "https://climainfo.org.br/2026/10/14/incendios-florestais-no-am-dobram-mas-indice-esta-abaixo-da-media-historica/",
+        "title": "Incêndios florestais no AM dobram, mas índice está abaixo da média histórica - ClimaInfo"
+      },
+      {
+        "name": "upi.com",
+        "url": "https://www.upi.com/Top_News/World-News/2026/10/19/latam-brazil-amazon-fires/8421792431441/",
+        "title": "Amazon fires blanket northern Brazil in smoke, disrupt daily life - UPI.com"
+      }
+    ],
+    "membersHash": "gdacs|BR#efe30b15",
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2511,7 +3027,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#fbe9d9be",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2535,7 +3051,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2566,7 +3082,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2688,7 +3204,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2712,7 +3228,7 @@
       }
     ],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032727": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2803,7 +3319,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#83527d05",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2832,7 +3348,7 @@
       }
     ],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2845,7 +3361,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2858,7 +3374,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2877,7 +3393,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2901,7 +3417,7 @@
       }
     ],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2914,7 +3430,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032857": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2927,7 +3443,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2946,7 +3462,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-wildfire-wf-1032920": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2959,7 +3475,58 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
+  },
+  "gdacs-wildfire-wf-1032940": {
+    "at": "2026-10-21T14:45:27.681Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "abc.net.au",
+        "url": "https://www.abc.net.au/news/2026-09-16/bushfires-nt-blackmore-berry-springs-fire-warning-katherine/107160736",
+        "title": "Emergency warning for Blackmore fire downgraded to advice, Katherine blaze also under control - ABC News"
+      }
+    ],
+    "membersHash": "gdacs|AU#5ecd514c",
+    "seen": "2026-10-21T14:45:27.681Z"
+  },
+  "ifrc-cyclone-8034": {
+    "at": "2026-10-21T14:45:27.681Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "An IFRC DREF operation (MDRDJ010) for a storm surge in Djibouti started on 31 July 2026. The research notes found no reports describing the event's impact, affected places, or current status, and the only other record is a secondary funding table.",
+    "ongoing": true,
+    "places": [],
+    "figures": [
+      {
+        "label": "DREF funding requested and funded",
+        "value": "CHF 326,543",
+        "sourceName": "tmrk.github.io",
+        "sourceUrl": "https://tmrk.github.io/humfin-history/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "tmrk.github.io",
+        "url": "https://tmrk.github.io/humfin-history/",
+        "title": "Humanitarian Finance History"
+      },
+      {
+        "name": "news.google.com",
+        "url": "https://news.google.com/rss/search?tbm=nws&q=Djibouti&oq=Djibouti&scoring=n&hl=en-US&gl=US&ceid=US%3Aen",
+        "title": "\"Djibouti\" - Google News"
+      }
+    ],
+    "membersHash": "ifrc|DJ#49b6fd82",
+    "donationSearched": "2026-10-21T14:45:27.681Z",
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-earthquake-7990": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3028,10 +3595,26 @@
         "sourceUrl": "https://www.eltiempo.com/mundo/venezuela/venezuela-hoy-26-de-junio-tras-fuertes-terremotos-que-dejan-al-menos-235-muertos-reportan-replica-de-4-4-en-el-municipio-de-moron-estado-de-carabobo-3567205"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://www.ifrc.org/emergency/venezuela-earthquake-2026",
+        "org": "International Federation of Red Cross and Red Crescent Societies (IFRC)",
+        "kind": "society",
+        "note": "IFRC emergency page for the Venezuela earthquake appeal MDRVE015, supporting Venezuelan Red Cross.",
+        "specific": true
+      },
+      {
+        "url": "https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~mi-donativo?_cv=1",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "Donation page for the Venezuela earthquake 2026 appeal.",
+        "specific": true
+      }
+    ],
     "sources": [],
     "membersHash": "ifrc|VE#4aa9fe04",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z",
+    "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-earthquake-8055": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -3131,7 +3714,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -3202,7 +3785,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -3313,7 +3896,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-flood-8025": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -3395,7 +3978,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-flood-8050": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -3469,7 +4052,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3543,7 +4126,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -3620,7 +4203,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3661,7 +4244,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CG#68e1ca24",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3758,7 +4341,7 @@
       }
     ],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-landslide-8111": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -3856,7 +4439,7 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z"
   },
   "news-earthquake-earthquake-pa-32b0fa90e3": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4086,6 +4669,53 @@
     "membersHash": "news|ES#b678eaa5",
     "seen": "2026-10-21T05:12:20.084Z"
   },
+  "news-storm-storm-fr-e02bf940cf": {
+    "at": "2026-10-21T14:45:27.681Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Storm Austen was forecast to cross Brittany, France, during the night of 22–23 October 2026, with its peak early on 23 October. Gusts of up to about 150 km/h were forecast on exposed coasts. As of 21 October, no damage, injuries, displacement or power cuts had been reported, so this remains a forecast event rather than a confirmed impact.",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "france3-regions.franceinfo.fr",
+        "url": "https://france3-regions.franceinfo.fr/bretagne/finistere/brest/austen-la-premiere-tempete-de-l-annee-arrive-ce-vendredi-et-ca-va-souffler-fort-3436803.html",
+        "title": "Austen, la première tempête de l’année arrive ce vendredi… Et ça va souffler fort"
+      },
+      {
+        "name": "breizh-info.com",
+        "url": "https://www.breizh-info.com/2026/10/21/264818/tempete-austen-des-rafales-jusqua-150-km-h-possibles-en-bretagne/",
+        "title": "Tempête Austen : des rafales jusqu’à 150 km/h possibles en Bretagne"
+      },
+      {
+        "name": "sevenradio.fr",
+        "url": "https://sevenradio.fr/2026/10/21/alerte-meteo-en-bretagne-la-tempete-austen-debarque-avec-des-rafales-a-150-km-h/",
+        "title": "Alerte météo en Bretagne : la tempête Austen débarque avec des rafales à 150 km/h"
+      },
+      {
+        "name": "meteoconsult.fr",
+        "url": "https://www.meteoconsult.fr/actualites-meteo/2026-10-21/93416-tempete-austen-tout-ce-qu-il-faut-savoir-sur-la-chronologie-l-intensite-l-etendue-du-phenomene",
+        "title": "Actualité Météo : Tempête Austen : tout ce qu'il faut savoir sur la chronologie, l'intensité, l'étendue du phénomène - METEO CONSULT - Prévisions METEO…"
+      }
+    ],
+    "membersHash": "news|FR#bed61fbe",
+    "seen": "2026-10-21T14:45:27.681Z"
+  },
+  "news-storm-storm-ie-853815a83a": {
+    "at": "2026-10-21T14:45:27.681Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "news|IE#30454b26",
+    "seen": "2026-10-21T14:45:27.681Z"
+  },
   "usgs-earthquake-us7000q1": {
     "at": "2026-10-20T02:25:48.047Z",
     "model": "claude-haiku-5-5",
@@ -4152,6 +4782,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-21T05:12:20.084Z"
+    "seen": "2026-10-21T14:45:27.681Z",
+    "donationSearched": "2026-10-21T14:45:27.681Z"
   }
 }

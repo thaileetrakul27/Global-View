@@ -2,7 +2,7 @@
   "code": "ES",
   "name": "Spain",
   "kind": "local",
-  "updated": "2026-10-21T05:12:20.084Z",
+  "updated": "2026-10-21T14:45:27.681Z",
   "source": {
     "name": "Google News",
     "edition": "ES:es",
@@ -10,325 +10,386 @@
   },
   "articles": [
     {
-      "title": "El Supremo complica aún más el veto del TC a la suspensión del voto por la \"ley de nietos\"",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSVhENFF2bVFxRk1DRE42U1VXeVN5YnZySFRPR19qNlBQQ0N6U2VhazA0Z2V5TUNJWkVHVW1kVXJaTHNNd0p2UEZRaHBOSHZ1MGc3NEdmOWdxQWVuS0QzaWFkbmJsOVRCckZ0bmtnaThEM0ktbjNiQ3NxdC1MRkZ3dXNZc0J6NkhWZDFGaHptUWVJTVliWkdxbUZESzNQMGdyRUYtbUxWVEFHMkVOR1hWNFZFcmlPWF8yQzBES1NOMVNXQdIB1gFBVV95cUxOSGppSzBCZVZUdGlsd0h5OGJ1X0VHcHV2SHd1TzNXRXZ1LUIwWGdPa1RfN0htdUhSbzAtcmxPeVZNY0R2aUtRbzd0OVdsUGJIWnNVZ0dnVXFxTWpaVzJnbWpWLVNjYkV1R0ZyLXpUQ2xmZm9VQjVKbFNuOFlHaXMxaGhLTGxITy0tVG1zYXFISk1tamNPZ2pHMHZtbUFFMmdDVDV0Ylp2aUdnZVJOWndUa2lNYUc0MGlwMHFjZEFXV2tCT0k3dWFXQlhDT0xSRXg1N0N0bmx3?oc=5",
-      "outlet": "La Razón",
-      "outletUrl": "https://www.larazon.es",
-      "published": "2026-10-21T00:00:13.000Z",
-      "en": "The Supreme Court further complicates the Constitutional Court's veto of the suspension of the vote over the \"grandchildren law\"",
-      "about": [
-        "ES"
-      ]
-    },
-    {
-      "title": "Frente Amplio no se sorprende de una alianza PP-Vox para el Senado",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTUpIZWRxTngxWFZXUm1Dc1hDV3pEVGVoaTFxLXdadzAzQy03OEtKa09YVUNSRzRwVWlZYVNzN0M4QVR3aGpkNzBTNTc4bVRxWGJkQnZVNGpuYjdoNjRDU1ZTTHNob0lxanVSc2xRdDBDUldkay1Gd0x0bm5zQms1a0RMeklmV2ZDbEZDZGxuTmlBMVlhMnctRmR4aGNfR3lsZE4xag?oc=5",
-      "outlet": "El Correo",
-      "outletUrl": "https://www.elcorreo.com",
-      "published": "2026-10-20T12:05:20.000Z",
-      "en": "Frente Amplio is not surprised by a PP-Vox alliance for the Senate",
-      "about": [
-        "ES"
-      ]
-    },
-    {
-      "title": "Sánchez visita Valencia a la sombra de la séptima muerte por el temporal Adam",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQOWZwRll0azhQLXhOeGttaS1YclBEdW5KTVlhX21oWlZXZDRlWVBYYjFNWnR5dmthVUFyczF3V0QxOFJfd25MVVlwSWxXRmxDZzFCSzcwa0ZyVGxaTW9PUHVrZWF1ZTl0VXB4LWJfS2h2MVdrSC1yUDkwaW5pWlhUTGkzbEhBWTkzbXVyRVl0SUxESURpSlBielpsZGt6VFdYd01DbkhwY01Eb295Tml5LWVOM0V6RnFzRVh2SWp4UHAwUWNtWDNRakhxbzlPZzJ3bXFZcGl0UdIB8wFBVV95cUxNZThxQWN6cmRIVUNiUW1mRUdYeGRnQXZhbEp1RDJVSGtzSXFneGZGSWt1WC04VlNETVdBU0x4Tm9zV1ZYd1NJNzhQeGhxZXRqbVp5NW1OSFFiUU5rUkd3THl0NGZiZjljYWZzUEl2cGpQWVprV0pZUDNSUEhtTER5VHpiNGJmZGp3RFEyODJVUkVERFNxd0Rod1RzZVNheXF0WGlyMmxVVVBSX2tyeDRqSDA1VFFDUWJudWczYXRmMlZiNzQwOHN0RXhJaFVhcVRJVWRqT3NQQ3hhMlIzbDRKMUNmR3VTNUFEYzhGYnd1ZFBfT1k?oc=5",
+      "title": "El Constitucional rechaza el recurso del Defensor del Pueblo contra la suspensión de voto a la ley de nietos",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPd3ljeEFudE45dExKNV9idHdLZ1dCRDFBVkR5X2FFdjN1M29hWmM3YjM4dkZreUkzSDJteE4zNkt2Um5KVkd6QWprVVVrWk9xek9DT1BRb3IxTXZJQmhRM3pTVFBocXpscXpncE9CTVFEWjdheWswUGQ3QnVyNW1BTU9XbTdveUdsY1ZVdmE1OV9pSmxBOUlzSkFHLUNPWVlMX2NkYmhkTWxtc3BtbGtiZ1ZwMWRFajkyZk1OVkQtZFM0Si1zQ250N3JwUkM2Z2owVjVLdzhzNzI1WVY4TEhMVzVXMklYdG5WYUtWQjNWeWtMWXNWQThB0gGTAkFVX3lxTE52cVNPaktBWE56bVZMX0pvNFpmYzlJMVpfcUE0T0xnaHdMQWhpNGc1UUhUZUpEU1BGdHh4N1hra2pEMkpPeGRSZDBtR0t0Xzk3ZG5hYkpDTk5MQW5mSmhDenNRdl9tcUI2SDd2WkJRSlFYb2w1NVFnYndQcFJHMlpqckx2Q0ZURnRTc29YakNqVW1qb21RazNrc29RanJTZlpPQXRWZXN6VnRKeDFCbnlmdnNja3R0MWtDTUFHQ1paamwyX0tuTXVJSmM2Zi1SN0NoZlJJOUM5cWRWanVJbmZqX090dGZDWVJyU2I1QzM4TTJwNUljRXZTNFI5T205d1dIbG1jdXc5TlE1U2lSUk14bExR?oc=5",
       "outlet": "La Voz de Galicia",
       "outletUrl": "https://www.lavozdegalicia.es",
-      "published": "2026-10-20T19:37:36.000Z",
-      "en": "Sánchez visits Valencia in the shadow of the seventh death caused by the storm Adam",
+      "published": "2026-10-21T11:15:03.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "The Constitutional Court rejects the Ombudsman's appeal against the suspension of the vote on the grandchildren law",
       "about": [
         "ES"
       ]
     },
     {
-      "title": "El Gobierno confirma a los sindicatos una subida salarial del 4,5% para los empleados públicos en 2027, pero sin fecha de aplicación",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPVk5wbmo2U3NNVDg1M2dMOUVoV1QzSzRJYVRnRnhkM25uREZCNDQyWUpmMDJTeEtKUkdiOVVkX1lDSHNVTVVrNndMUXZHU0tsQnE5U1ByNHRxUmRPN0hZMUdodzBvRUpmQzc4R0kwTUxzalF5RkwteE1Xd1BvMWlyZkhRbmtpbWtIeGpCcnJfanJ4UWwwaFRhODFlS2pBcDdGNElRdVZkVHB5UEFYR2ZSU2xSSkZLT0tVQUoxaTBENWNVN2FNWUJjMEt0RHBzWGd0Z2ZxNHp3ZzZrR1NRQ1Bud3FEOFI5QnlCUjkzMlB6QXpwUWRja0NvazJubDNTUU9zSnfSAZwCQVVfeXFMT3AtM29CczhFS3pQdlRXOEg3ZlhHbTVaQ3dyNTA5VGdFSk9rYWw4ODdaVldGZC0yVFNsTHRDX3EzZjJSdnNQQ0tNVEQ3SEZSdjZsa1F5d0FyaXNPR1d5MjkwdmlSa3hBY2Q0cENBb0hHTE9jc21aaUZzTWN5cnEtWUlVV211SThHdXdwVS1Tel84cGJTN2s0Q3RxWU9uQkJZaXNpTmpuTTNyc0VJbjQwWFJqekI5Nk5rbmgtZmtrVnNqc19PV0ZER3l3Y1cwek9fLWVyWDE1WlB5aGV1YlVRdEJDMnlmVG5sbnN5d1l0YkRiZTcwSVNOVlhSdE5aalNMX2taNFNLaFJGQ0lIUDFoSnBIMWxTS3c0cVBzdkY?oc=5",
-      "outlet": "Infobae",
-      "outletUrl": "https://www.infobae.com",
-      "published": "2026-10-20T18:45:00.000Z",
-      "en": "The Government confirms to unions a 4.5% pay rise for public employees in 2027, but without an application date",
+      "title": "Macron acusa a Trump de manipular las revueltas francesas: \"Hay mucha gente que hace campaña a costa de Francia\"",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWHVXMHI3Q2lTMnV1U0NCU2R6eGpmNG51eWZyQThaTEpZUnBBSW00RDd4bmV1akNvaHNBblp2SFB5SmR1VHBjUnpPWWZ0bWNPSllMTFRxNWpQak1IR1FQd052Mk5CbjFHT1pseGZXbk1oRG1ZVEJUS3hOb3Rwbmh0d3ZGMGxtcnpSVy0zcjlOSnliUENWZWtzcEc3a3FOdElQLWdGMjF0TzJDd1V1ZVlz?oc=5",
+      "outlet": "El Confidencial",
+      "outletUrl": "https://www.elconfidencial.com",
+      "published": "2026-10-21T11:05:00.000Z",
+      "outlets": 10,
+      "trending": true,
+      "en": "Macron accuses Trump of manipulating the French revolts: \"There are many people campaigning at France's expense\"",
+      "about": [
+        "FR",
+        "US"
+      ]
+    },
+    {
+      "title": "La justicia admite a trámite la querella contra la hermana del ministro Puente por la ley de nietos",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQY01fcnFXVFpOWjJxY2hEWXRBeXVjbU9LaEhDcVhRTS1YOExXSXlTOGVIdGJPRE4zRmZaUS00Sk9yNFQtZnFFUWNoVl9YcG5JdFk1N0pvVF84VHAxZnkwUU1aS1pHN1BSdDRvaW90TDFHYV82RmtGaFZEbXRuS2dmOUJzeGxwa2lYWEt0eGh0ZExTMVU5bW1Fbm93bXdGbTdKUHltdjlSdmFBanktWkloS2NzUVpqLWczajlZNjY0S0NkOF8xMUxnbEZNWkZBdzhxTVdRUTgzR1phem1JemkxcGl1eWtnVjl1eF9naUxmaw?oc=5",
+      "outlet": "La Voz de Galicia",
+      "outletUrl": "https://www.lavozdegalicia.es",
+      "published": "2026-10-21T10:38:20.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "The courts admit for processing the complaint against the sister of Minister Puente over the grandchildren law",
       "about": [
         "ES"
       ]
     },
     {
-      "title": "Detienen a un profesor de matemáticas de un colegio de Madrid por agredir sexualmente al menos 9 menores",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPSUZjM1lqemxyRl93ZHlHOHNwaVZsWEFkRWRkSEswNzhacHdTcEVPSGxCb1BDOGNIMHlxajhxRHZXYV9VcU9hdHJRVl90WlgxZnJwcWExb3A2UjhhRkR1dE5zVmp0WGJkdmhwbGJtX3B1SHAzczV4Z2Zmbk5wMkxLak8yY2FTQlRyNVhUX1l5am9Fd1p3NHBtaXhKWDdVRnFyZU9PSnRKNE41MGVURHl1Ykg5aG0yNUFlUV9lRzFtOERmWjhON2hKMjJwbjdTWnRrdW9vUkFiQVdOYkNnR2xCanZDZnh2a2JvNDBiR29xOHRVUdIBjAJBVV95cUxQTTZuUVJFZEVpbzZIM0wwdjRGNUIzZUJ5eWFpYmxOWnc2dUpjX09pWHZqOHE5WDV1ZW9FZXUtR0VLQ3VmcVg4dlpmeksyLVNrZDRZNi01OWVZZ0VsaVBsOHVWU0tBWFFLeWpNZDhlS09lMGdQSXk3R2tFNnBNMk54dXdsMXpWYUJkU2xMbF9HcVVsWVZXT2lHNFZoNkNIWXJRZ0NpdEQ0UFE2UVJXNWFrWGNZUDR5a0drUE5hMHoyOE9wSjRYSkVYWDVLSXNuU3ZHTVN4U1hENnVWaTlOcGlNNkZlb2dYQi1Id29xUEtWQ0NDaURnYVlOb3VmNXJHRzV2aXlsWEE5UXlOcEll?oc=5",
-      "outlet": "Infobae",
-      "outletUrl": "https://www.infobae.com",
-      "published": "2026-10-20T16:32:28.000Z",
-      "en": "Police arrest a maths teacher at a Madrid school for sexually assaulting at least 9 minors",
+      "title": "Cambio de hora en España | Cuándo hay que atrasar la a cambiar al horario de invierno 2026",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNR2syU2xlOUx6cUxNaFZxU0JudUQ5TlptSXBVRGlrV1hlU1BPd3dURmJNaFo2Z011UThVTmpLejFnSG5jcDFSWXp4RTJHWVdHQXNrbGZJLVN0MmF1R1dtSW05cFFyR1hFZGlRY2h1T2dZWnNpRV9ub3N1Nl9LczdiTU9EaDZ3aVFlb19ETWo5bHhkV1dYVFdkcVNETEVUS3Rrc3BVdmJMRlE1MzdQVG1vb0w3TUZXQjJMYnUtSXRtaVBpa09ZMkZRWUV0dTJleTB1V0lEUnc2bS1DR2FOajh6V2J4WV9pYTFmOWRGeg?oc=5",
+      "outlet": "El Economista",
+      "outletUrl": "https://www.eleconomista.es",
+      "published": "2026-10-21T10:33:12.000Z",
+      "outlets": 6,
+      "trending": true,
+      "en": "Change of time in Spain | When to set clocks back to winter time 2026",
       "about": [
         "ES"
       ]
     },
     {
-      "title": "Detenido un sospechoso por el Incendio en el Ayuntamiento de Limoges",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMUZCNEYyWUxUSDdsVTJteldfaXY3ZEJ3Y05yQThmZ05VWjJ0MEhxTHgxQmpSSTZzMDlrbXBOanpjYWFndXIyd28zdmtqQkhiNFFoZEFZanhPZnROQTNucjlCeGl5MjRyQjV4MnRNRWRPRnQ0d1lNNnRfX0I4TWtPWVRSQk9Gdlh6d1pTc2Z3QWdDNkZ5SHJtVFRESnZOS3dyRFI0bE5yOEk4X0xi?oc=5",
-      "outlet": "Euronews.com",
-      "outletUrl": "https://es.euronews.com",
-      "published": "2026-10-20T11:30:18.000Z",
-      "en": "Suspect detained over the fire at the Limoges town hall",
+      "title": "Ya están disponibles los descuentos Planeta de Ofertas en PlayStation Store",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOczRtY0lkcUFYUmstc2RTWnd3RmM2anhyX2lTQVRXcnhwc0ZGVVk0UmJQbUJuN0M0Z3p1ZVJFRXo0X1VXa3hyZ0FqaDIxT2p6bW5sLWstLXZ3aEpNUzZMSWF1UWFLeVJIeEV0S2FfdUdVWFd3TTJQMzlPTTZhWDdSNXhuVVVjcms0OWZvV2Y5RDk1TF9ObkZZTGtiS3NLUTBBNmc?oc=5",
+      "outlet": "Eurogamer.es",
+      "outletUrl": "https://www.eurogamer.es",
+      "published": "2026-10-21T13:46:53.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Planeta de Ofertas PlayStation Store discounts are now available",
+      "about": []
+    },
+    {
+      "title": "La ONU alerta de un Niño que podría situarse \"literalmente fuera de las escalas de seguimiento\"",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSGo2TG9lTWRvNldWT2RZcXUzVFJYN0ZOZEhxc2c2TGFDNnFxam5SdkJSNkdQUm9KMkwyNEhiNzlfLW4yaWVlMXhTclJrRnZWWERLQVVpZk9tMkJKOEtIa3NNQmpfbDZDSjlGYjdXZkVzaVFQemdPUmtQRDUzNmtVRDZmYW9BVnJydkJnRDIzWjV5Qm5aLThUN05RM2ZLamF5Nlh3QWE5Q0FfVXp2RDFSLU5KSkcyY1ItSGtYcC1FVXBHcVdUVFl3?oc=5",
+      "outlet": "RTVE.es",
+      "outletUrl": "https://www.rtve.es",
+      "published": "2026-10-21T12:15:27.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The UN warns of an El Niño that could be \"literally off the monitoring scales\"",
+      "about": []
+    },
+    {
+      "title": "Real Madrid vs Leipzig en vivo en español: horarios en USA, canales y transmisión de la Champions League 2026/27 en Estados Unidos",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQlVOQlc2VXRGQnhzYjRvQWdPWXFaVzZIbGxyTnVkUHpDVE41SVNEVWcyMW81UDJrUTZ2dFdSa01zenR3andFc3JVd2Q0ckNPMG1CcjdQMGJyUG5SRkNudUVaeEVCQlpFX1pnOHdubFJWalhjNGF2b2xOeDhPZlFpQW5GQTZkZjdyTnNMSk4tS2UzMFlpQ1dHVmRnWHN1dnpPZ3RXQXdPbnc0aHNBNnpnTlA4WGItbkRMWkdhb0hQVFZ0TWluOUFoLVJLWDhYdzJLZUprT1ZBMk01UQ?oc=5",
+      "outlet": "DAZN",
+      "outletUrl": "https://www.dazn.com",
+      "published": "2026-10-21T13:25:29.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Real Madrid vs Leipzig live in Spanish: times in USA, channels and broadcast of the 2026/27 Champions League in the United States",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "La rentabilidad del bono francés alcanza su cota más alta desde 2002 y dispara las alarmas en Europa",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcXNnSzBaY2JINEpyZHJmOEFlYm5KNVpyd01IdFdYeDkxRnkyc1VYdzl6cDJzNm11MnRDYnEwYVlHYVl1Y2NCTzVEM3FBOFp2Q19RUTFvNlBLUVg3QXBUamhxSzk5eUpwcFk4Z2pYNlhodVVXcDZZdU5zbzIwcTFjNWJBeGFjbGFDN2w3UEZ6TEpMUkZLY25ZdUJfQl9YOHV4bEJrNE5GR2xkQW9ib0hndWFHTk55YjBSaW1TWU1FWUJnQS1ZT2Q2dTVrWnJJeHlYWWJJNG0tWVE?oc=5",
+      "outlet": "RTVE.es",
+      "outletUrl": "https://www.rtve.es",
+      "published": "2026-10-21T12:20:12.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The yield on French bonds reaches its highest level since 2002 and sets off alarms in Europe",
       "about": [
         "FR"
       ]
     },
     {
-      "title": "La calle juega en campaña: Ayuso se lanza contra las protestas mientras el Gobierno abraza incluso la huelga general",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQTFpmQjJxanhCM3lTYlNrX0M3YW1aUkNISGlKX19xZWw4MUItT1hJV3hBTjlhNDE3RHk4SDMzTVh0R3M2Sk5hdjVvWUE0UF90SjI1bml6QnBfcjZjRTVTdGZsTy1MRHNNdWgyUGpNV0c3bUhtVWcwSk56RHBhSExDOUxROVlyaEJ6RElreWFBanNWQWtBTXY2ZHZDQXJjdTBtcjFtQzdzb0g1a2U5RTR4TFNpUy1lMXdZazZlY0xISkgtUVJwTlhPR05kcVpoQ0dQQjl6R3F6Sk9oWmY2d1A3My0tOFVjR3QySzRweWpB0gGCAkFVX3lxTE1kYmI2bGlEeElTeU4xVzZ5QmoxWHA1M0U4bEduV2Zoc25PeFZDSE01ZnFWdWQ5aVZoWE1PMVA0d3U1cUVwc1o1ckhoSTBoMVk1aUtmZ3VXZnpKRFZibUZJb3pJX2tIUDJ5N2k5SWU3c3pfSlZ4anlVRWVJT3BkREtOcjRodld0ZUQ2Q3NrMzVqVE92aUFDb2VDZk9qWlFUel85R3BRVmdOX2dFdm1yTkN6Q1pqdV9wNDhaNFB1N3lpMmFVTW5rSl9iMXUycUlOZVNCd2dMOWp3SnZvck9rclNLa20zeW51dHI2TG9LekIwZnBfWmVEN2dGMHNGNTF5SDk5QQ?oc=5",
-      "outlet": "EL PAÍS",
-      "outletUrl": "https://elpais.com",
-      "published": "2026-10-21T03:30:01.000Z",
-      "en": "The street plays in the campaign: Ayuso attacks the protests while the Government embraces even the general strike",
+      "title": "Abascal abre la puerta a una reforma de la Constitución si suma mayoría suficiente con el PP en el Senado",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUm1lZmlqenRHNmM1aGowQTNmQ2NLRXgwZVJwU0hjRnRuc2hnYlU4RjVvUHQyUS1UMVpEWVlzeDI0bHVyTzlaLXRhSUtCX1BfTGxJXzU3REpsYXBWSWxBUjB2bGlyMVBoeEg0RUdJSHRnb0FGZFFzbVo0ZlVJcHJYLV9XT3p2SnBYNjJJZS1DYTl1RWF4SmM4aG9MemMyWmdvRkZqZFhMUGE4aHhGdU5FcGdVOVVLam12MFhrUlppYm91clnSAcgBQVVfeXFMTWVpN21RYUxaN29UclNYSVY5RUV3dWRVdW1TSkU1X0ZPZ1lJQXY4ZlN0SFJuTEszdTJ0bS1JS2xLSzhZZk4xTldvY0N3a004VkZzX0tyTl9jUTBMNk9JSFFfUjBIVWxjUGZiTHdPUDl1ajVfZWo5NUl5S3AwRE1SemhWUVFiZExOWmpUYnBfMFNaZXNYQjhua0U1MjFWOEtOcE5sSFJsNU9wRE5aYWhFbTVtS1VkYWJhMkF1ZzdsWFNnV1BMZFZCMTk?oc=5",
+      "outlet": "elDiario.es",
+      "outletUrl": "https://www.eldiario.es",
+      "published": "2026-10-21T10:53:18.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Abascal opens the door to a reform of the Constitution if he gets a sufficient majority with the PP in the Senate",
       "about": [
         "ES"
       ]
     },
     {
-      "title": "El Gobierno de Ayuso se niega a negociar con los profesores en huelga: “Es intolerable, nos están despreciando”",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOYzFNVEs2bGx1UVd5VERvSEVCX192UGVaMnFLY3VDdnFMU3R2ejJuOUtxNm5vLW9Xd0J5UlZZRFExTjUybzJYYTJaaUpkZDVDanc5NEY1X0VEQ0RseUhuMnZsbXRuUjV5b294ZWYwWE9pNU9Mb0k0X29NcnVqT1NTVFhISmdFYkFCc1hQY1hxbmF3WXpuY3BIbnlDOVNEWGl5Z3FiNC1ucV8zTk1Na0FEWVh1YlJkY1I0a1RWd0hfMWFhclhsR19xTUdsbFg5VVI1Ty1GSmtwVm9IeTR0NFpJNXhnQVVKa2M3V19kWdIBgAJBVV95cUxNdmJ2OEdndDMtWWFCb2Ffa3VnSkliSGRsSVd4cDl3WThpUFM0d041YmFwQXVhM0kyX3ZuaHZFM2VRYnRTVlBUajI5RmpzU25JcTFRd04zWk9QNDJzbWtQM0k2ekhuU1p2WTJ6VWhuQ2RSYkFSSXFTTDBBUjB2NGZneE1zZU1jSlhUZ0dsRWlIM3FVeTF6TUg4ZnhEb0RVS19PeHBBRFN5ZGxRUzNUXzN0cy1ydExUd3B3OVJPV1d5UWtoa05tSkhUOTk2YThDOTVqd0x0b3UyaEgyY0dNWEZCV0M4NVFDeGVqZkEwdkoyMVFCdGo4TjNsSnJZRTlNdWo0?oc=5",
-      "outlet": "EL PAÍS",
-      "outletUrl": "https://elpais.com",
-      "published": "2026-10-21T03:30:01.000Z",
-      "en": "Ayuso's government refuses to negotiate with striking teachers: \"It is intolerable, they are scorning us\"",
+      "title": "Una simple fotografía del rostro permite a una IA predecir la supervivencia de pacientes con cáncer",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOa2JfaFpPbG5tYXdxVko2cnk3ZWU0TTUzejJNN3BCQ3hzT0ZJQklpLWwyUjNpeS14RndDX281dmc0Q3UtSmFUWGRtTUhmRWpZY1lsTUpoZ1QxdHdiaFp4V2tKSWM5N0cyS3hUQTZTcV9vdlhMTU51b0ZYSEFQak04SVU1cXBBclN2QUxhQTh0dWxUSmdaSGlLTEFyd1JzRHloWEdTY0FwMmFyMElNTU9ZRGUyVHVLeDdwTjJ1OXZscjhuV1h0bFB1MkRqcUlVQVRWUkc3WV9LN1o4QlBNYUNaeGpwa096ZGRVaml6OEFHUllsU0E?oc=5",
+      "outlet": "ConSalud",
+      "outletUrl": "https://www.consalud.es",
+      "published": "2026-10-21T13:00:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "A simple photograph of a face allows AI to predict the survival of cancer patients",
+      "about": []
+    },
+    {
+      "title": "Los sindicatos de Aragón presentan la convocatoria de huelga general: \"La ciudadanía está harta\"",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTlJiRnJxTmFyM0FfeldKOHFCYTNWLW11NHd0WGhIX2JuZUZ0c3gyQ0FOZzg3WVFWZVZZZHBEaUczWm5RS0ZrYWtnbWxpNDZSekFCbzgxWkp5ckVLRlF6VDJ3TVhKaHBZZ1JfT2dVVHAyRkFUVURjU3VUb2N2aC1nTjNNMlRSX2ZENzNKajk1dy1FMUk1bGsyLXVHQUViSEJfUnp6d1BfY2s2WFZDZmhn?oc=5",
+      "outlet": "heraldo.es",
+      "outletUrl": "https://www.heraldo.es",
+      "published": "2026-10-21T09:25:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Aragon's unions present the general strike call: \"Citizens are fed up\"",
       "about": [
         "ES"
       ]
     },
     {
-      "title": "El juez envía a prisión provisional por terrorismo a dos miembros de escisión abertzale con listas de agentes y zulos",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdG8xZGg3ZzN6c1F5N1ZldHg4cWhLT2NpUXppY2ZZa083SUFuLTQ3NXIyc05iRTY4MXdjTG1OdHhHdUJOWkxOUXBFX1dNZ2dPVloycW1DUFZYbFpURlJZVVhPYVoxVkhsSjNUNnNaVFJjUFdvR2xaUjlOblI0aC02SmxoZXN0LXllci1hR3I0c0prcHJzWVRpYWl4bFBSVEVBSEhVXy1aejFfQQ?oc=5",
+      "title": "El Gobierno de Canarias actualiza la situación y declara alerta por lluvias en El Hierro, La Gomera y La Palma",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRzB5SUhvQm1IcG40RV9DV1lOX0hqM3k1enczSzdYRk1oT1hlWHZWai1qT3BrZWVHU3RtanJSZkZaQTR6elJwLXNGNHFNQXltVUZUZFpWSVhxOFB5eEVTalhfMVFVV3hSQ1VxYUFudDJhUWZQTzcwbEozT0p0clNuZHprYXgzYlFrQUhyZ3NubTV0Sk1vRGtueklHNzR1Wm10RUVGRGJzSU5RQS04Z0Z6YlF6ZDBxVlh5aU5JT1c5elp6aUtPbGVwRmNRNklTeFpxQVFlUmpzSDd0dw?oc=5",
+      "outlet": "112Canarias",
+      "outletUrl": "https://www.112canarias.com",
+      "published": "2026-10-21T13:27:01.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The Government of the Canary Islands updates the situation and declares a rain alert in El Hierro, La Gomera and La Palma",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "El Gobierno aprueba un decreto ley con mejoras en cuidados, pensiones, indemnizaciones y bajas laborales",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOc21ONll5VUtoWVN0NmpiSnZEaksyNi1oWkQzNmdpRXpabWhUb3E5bEkzb1VzZ0haREliakdJNkJmZG9KblA0cHkxdmZOeDRCQ29COUdMdGxvYS0xRG54SkY3aTRpUERXaS03X1A2XzNCX3NXeVI0dm45dHA4eWJaWmpqcW8wZTRndWFYS2xERVJhUnNDWmo3T1JxenVpNE4yMFN0Y2dsWWlCRUd1UUJoYWc5aU9KamJfNTJwWld3TmpUWHlndnh5UUY4dVJzSXhxdHpwM3A2c3psYTBKTWV6cGhzLThGMGpwX3lZSmN6cw?oc=5",
+      "outlet": "Civio",
+      "outletUrl": "https://civio.es",
+      "published": "2026-10-21T06:45:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The Government approves a decree-law with improvements in care, pensions, compensation and sick leave",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Ganaderos de toda España piden a las administraciones disminuir la burocracia",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMmdkVExILVdxNzkxLWtrQ1R2RDRyM1NIZldfUHdHVDQ5OFRfRlR6akxCeTUyQVBRY3JfX0h4LXhwd3dRaEZ4OGlsSDZjMDAtd25MbTRjZkFTcVlQMlJWQUU1eGRvamU5bm1wNUZGM1k4UGFuZ1d3eUd6YXI0UlpCb256TlVHVzFENTl4WG5EWnlhUmxmXzVLUkRuRy0zWU45ZnR5OUp5RF96c2tmUHFOSHg0NkktVGZLOHpHdw?oc=5",
       "outlet": "RTVE.es",
       "outletUrl": "https://www.rtve.es",
-      "published": "2026-10-21T00:10:50.000Z",
-      "en": "Judge sends two members of an Abertzale splinter group to provisional prison for terrorism, with lists of police officers and arms caches",
+      "published": "2026-10-21T13:16:12.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Livestock farmers across Spain ask administrations to reduce bureaucracy",
       "about": [
         "ES"
       ]
     },
     {
-      "title": "El Supremo 'despide' a Conde-Pumpido con una inédita denuncia de la quiebra del Constitucional",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOV2ZuTXpxM3FFZk00Vnh2MGZUQnllSXhtUTVwbko4cVF1YnRsSWpkTXhuclc2d2taVGVxMlU5Mm1kLTc3cVgwTUNaSm8yNldTQTdyaU1TOHJORlYtV0xTb0kwR1ZrTDRCSE1FQ1FRaml6Vmp2SDN3dmVESkoyay1KRERPUTRaOFZqWnJDYnlvdHpWdld4WHdtR3hmVW5yZUxCdEJ1Qy00cGJ0dkV1WDNMdXdIX2drZzdlS1Jsbw?oc=5",
-      "outlet": "El Confidencial",
-      "outletUrl": "https://www.elconfidencial.com",
-      "published": "2026-10-21T03:00:00.000Z",
-      "en": "The Supreme Court 'dismisses' Conde-Pumpido with an unprecedented denunciation of the Constitutional Court's breakdown",
+      "title": "Elecciones generales 29N en directo | Última hora de candidaturas, partidos, precampaña y huelga general",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaDFvV3NjREZTTWNOUGdsc3pEYmZHWU0zQlRMX1NEOTBZV2t2dDUyaHFVZUJnSXpRc2ZvbEZKbkZURXhpWHFNLVZ1OWxtQnFDZ0NDN2c5bGtRc244a2t2U0RYNVpMV2dmaVk4eHBSY0F0MzdCVTNURW9UQThxSzg4ZDdGUTdmaGNMN3VkSzVNTGJSMmF6NHlzYVFNbXd0QdIBngFBVV95cUxQSWJmajBKbVFCRVZDUHBZWFNWSXNQaFhzMGE5Z2RFNmNmdlFBQnNMa0R0eDZIQ1FDeUlMTDFJVU1qclRUTlVVZVBaZ3U2MFRhMjF5Z3A2QVN2WWI2Mi15Q3huYmNHVVhYZk9WdHdfMmxWVHI5bXMzY1pFMlloekIyUTBlTXFYSV9BakFmOW1EcTc4ZGQ5dWlXOUJkZ180UQ?oc=5",
+      "outlet": "LaSexta",
+      "outletUrl": "https://www.lasexta.com",
+      "published": "2026-10-21T12:54:32.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "General elections 29N live | Latest on candidacies, parties, pre-campaign and general strike",
       "about": [
         "ES"
       ]
     },
     {
-      "title": "Volodimir Zelenski plantea a Steve Witkoff ideas sobre la paz para transmitir a Putin en San Petersburgo",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPallFbkp6RFQ0a0M0d2dwT0lfYUwzLXFvMnVkNnJqN1MzRXp3eDhfeVFBeFd5V3hrMVRsOTZGRjlodFhzbk90OEhkNDZIYzJjNVF5b0RYdjlvUGdpVlcydlRIYXdidlV5cGh1dXFEYTJ3Q2FjUnpnTDBKOTBBUFJGczQyMF9mNHBCWFNhMlJWQU1INU5LQ2VnOEZWNFFvNDRucXR0bnpZeUZzSVE2aF9Bam1XYjRYNmR5S29LZ295ejhXQ3ltX1ZfeDlJckJjWmhmYlNUWlRuQzFKODAxMVpF0gHfAUFVX3lxTE1wcjFLMm9UOVVuMXR6X0l6bU9jakRGYWRWYXZfcXFnV2poZjloNUNKVU1xbjFjRnJSZ0pFRWpxcEVxV0hXXzk3VVpCSlNwM0NEcnlJUUt2WERTWE5MckFSb0lYU0lad3FYSG5ZYW8wMzJvMy1TQklfTFhQVENDZGl2UnJOZnJDcGxtNzVsZ2dkZGwtZDF6dDhNemdsZ2pMTzJVWlFVU3hpUjRwdTRLY0F3WWp4eDZnUnRNWmd3TW12SWNNUDFIS3daVi1SRUR0bC1DZ296clpoQVFzazdRS2c?oc=5",
-      "outlet": "DW.com",
-      "outletUrl": "https://www.dw.com",
-      "published": "2026-10-20T22:41:05.000Z",
-      "en": "Volodymyr Zelensky raises ideas on peace with Steve Witkoff to convey to Putin in St. Petersburg",
-      "about": [
-        "UA",
-        "RU"
-      ]
-    },
-    {
-      "title": "Las grandes preguntas sobre quién es responsable de las interrupciones de Starshield en Ucrania",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZC1pWUJXQU8xT1VGWFlscTYxOFVZVThDRFNub0NOd0xCZjV1SFFzcnJJdVJyc3plWTB3Si1ZUXNFSXlJdnozSFlHZTBFSEZKY1d0Q3ItaE1KQzRLaC1lUFNqd0ZZNU5HMUJzUHRyc1E5ZG5HdWdqT0JrdG9DaUp5NTkwbFlVVDdvSXlyeTNHWW45N2d3RnQzR2NMdEJSM3FuT1c0YU1n?oc=5",
-      "outlet": "CNN en Español",
-      "outletUrl": "https://cnnespanol.cnn.com",
-      "published": "2026-10-20T19:44:00.000Z",
-      "en": "The big questions about who is responsible for the Starshield interruptions in Ukraine",
-      "about": [
-        "UA",
-        "US"
-      ]
-    },
-    {
-      "title": "Trump insiste en cambiar el nombre del Estado de Nuevo México por Nueva América pese a que no tiene potestad para hacerlo",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaHZEb3J2V3pDS2ViWXFvUndQaXFENUNJLUtXUm5YZTk0RHRkTTFmQVQxamN6bzNnRGJKVnpieEY5X2Q2ZVAxd3VEbjc2WHhnWE5CdHAwQUlFYlJYdlh0aHVtTFVSOFFySmlTVDZtUkNNRkduRGxNWWlpTFdtSmJLbld3dVVPZEhZczRMSXFVVmtzUm1mMldySjRNam9oTkNXZVM2RWxLb3NrYm9rYTZBWEVGSkVGTFBLYU0wRGxJZGVJMVJWdlNnSHBFd1FmSjdYeUstSURqNGN2emU5LXVOVkdOYWMtUG4xWHdQek9ORHA?oc=5",
-      "outlet": "EL PAÍS",
-      "outletUrl": "https://elpais.com",
-      "published": "2026-10-19T20:51:49.000Z",
-      "en": "Trump insists on renaming the State of New Mexico to New America despite having no power to do so",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Francia acuerda con Emiratos y Baréin un suministro adicional de diésel para mitigar la escalada de precios",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTl93YVdlMi12VFZzR0ZMckdod0xHYlNyVmhnc1dNaG14aHFrN1VqcmNxMTZXQkliLXAzMGV0UndMRkNQdzQ2M3VCTVpIWXFwd2dFVHptczNHQVNOZEltR2dtUkVBUzVGUTNDUmthNjlyWmlJM3RBX1lUVFJoTWo3bEF4VG9Hb0tvR1gybmlXSFBzVUFCZXJtQWdOX0xTQ2hqdnk4ajFkeUtvbWhp?oc=5",
+      "title": "El profesor detenido por abusos en Madrid estaba pendiente de juicio por un caso similar en 2024",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaTI4VDdFNHBVMDhjUFQwd0NoYk40akFSSGVnWk1TZzhETEt1SmdVazAzdHJXNDZ5WXRWNzBsYXA4X3FudXRLZHlnYTRRWlFnV08zZF9jRmh5QmdhT1VBSUpjZ0FmaVZEdjNSajZyeEo3RWRWM0tMUHFpU1pBeEJiR3dBb2Ixd1RZdnMyOVNJbkU0MmRNNHBwQUxZZlFoQWI4R1NkRg?oc=5",
       "outlet": "RTVE.es",
       "outletUrl": "https://www.rtve.es",
-      "published": "2026-10-21T04:06:26.000Z",
-      "en": "France agrees with the Emirates and Bahrain on additional diesel supply to mitigate the price escalation",
-      "about": [
-        "FR",
-        "AE"
-      ]
-    },
-    {
-      "title": "Taku Morikawa (Uniqlo): “Estamos en plena fase de aprender del cliente español”",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPa2ZjX1hVdnZBVmp2MnJ3cks0amdhTnNQTGVUdl81aUQwRmF6MW9uOERaOHF2UnNkdzVZb29IWlFBelZtWHU4d3R5Q0F4clJpX2wtU3F4UnZma25wN1czYzRfaE8xY000RGZlR0RHdWsxYklNYVVLNmg5T3ZpX2YxU3pNY3JsZXN4SFJZZFY0UHZ3Y1Q1ZnpqeU80Rld4ZzdRSDlTZzUweHlHelAtV0hvX2ZuNVJOSkVZZjAxSVBNR0ZBRVlQTGlGM01WV1FsUjNTaUNGdlhBUVE0Z9IB7gFBVV95cUxNSzByOGF1b2dLNkpjZXRIN1Vmb181eklaUEJZSUJTck4wbUx0YkhDRENoTmh2cjNOMGl6dmFwVktWaU5jc1pUOEhiWldIODQxUVRrdXE2SWJBclRnVW1HTmd0MkdXMG8xdXUzT2FHZ0lKWHhOZTZzc2RONzFJckVGS1ZrNFI0enFMbk9yUU9TaWJsUGVHQnBzbGlKdHpaZDFMc2F0blJyY2hNSktRdEt0MEg1anhabXczUkF3Q2VURG1maExkcWtOTUtYUml4XzA5S3MyQjE4dmtSaEZQVVhBV1dtX2JILXV6S3hEazVR?oc=5",
-      "outlet": "EL PAÍS",
-      "outletUrl": "https://elpais.com",
-      "published": "2026-10-21T03:15:00.000Z",
-      "en": "Taku Morikawa (Uniqlo): \"We are in the middle of the phase of learning from the Spanish customer\"",
+      "published": "2026-10-21T12:48:20.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The teacher arrested for abuse in Madrid was awaiting trial for a similar case in 2024",
       "about": [
         "ES"
       ]
     },
     {
-      "title": "ONCE: Comprobar Cupón Diario y Super Once, resultado de hoy martes 20 de octubre de 2026 en directo",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxORjBaOWNWcEEtRUpna3hIcjNFbFFsZnNJUHI4ZmdSdjlVb1Rtb0xVMWVkZTE4X05fbTlKODFWdWxpanQzQTNXYUxuOGdyY1NfQVhucjdPdXRHRGFqY2NUTjI4LWlkLWVfSlAyR2VLYURCZXJNamRLS256VHNSdXBkRmgtLU1JbDFNQmkzMUxXblpMeVBJZkJ3TG5mTDFGdlJiU1RaTmNqSndTazJZQVF0ejVuOFgzUnpRZ19UY09KVzg5VlMxdGlCajdsdjhkZzBpME9XS0E1ZXVwSjJDX2JFd1pGNF9xMWZGbnVDdDlMME43QXVPOEHSAfYBQVVfeXFMUDhaU05GU1I3b1RaZTZkdU1vM2pCM2dMLWo1RkUwN2dSeXpZX3lIUU5KQ1BoTEMydF9sdm9ZVTBzeERpeGtrSUhJaW1ZMHl6VjJuU2JfWHFFTy1vRjJzMjVIdzZsY3RGQ3VtRGg3SDBwbFVldEN2UUtWZDV1NHdQVHJZR1MyMjZ0Uk1LejdMSXQ3NTUtbG9hN3hsZjEybERtZ1l6czFjbF9XUkR0czRzaEFWYklJcmduSEpCRFZvaHZTUl9CU3ZqVldnbDZQNWhQR2NtQXN1NHM4a2pGNDFoUE9TOGpkWUIyejJWMDlMMmVRa2tHRy1R?oc=5",
-      "outlet": "Antena 3 Noticias",
-      "outletUrl": "https://www.antena3.com",
-      "published": "2026-10-20T17:30:15.000Z",
-      "en": "ONCE: Check Cupón Diario and Super Once, results for today, Tuesday 20 October 2026, live",
+      "title": "Última hora política en España, en directo hoy | Vídeo",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWF8ydDN4OWNSWnJDYVAxM0h5NElnM2lSZERsXzRLb012VlB1WjJONlg1M1U5S2JQdnBQQmNOaG0wQS1QS29oMF9tdFpmcnpYdHBIdWVyWjlvdlpZVkdLX3NON1ZPOEJubkh4MUVvRWl1TklMT2VCbWtDaF9CQktrbjY3NlJMWk1MOWJ3UHJ0LW1JaVgtVld3V3FhanVmMWlUT1hmVEZHY0Y3ZkR6ZHc?oc=5",
+      "outlet": "RTVE.es",
+      "outletUrl": "https://www.rtve.es",
+      "published": "2026-10-21T12:40:01.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Latest political news in Spain, live today | Video",
       "about": [
         "ES"
       ]
     },
     {
-      "title": "Euromillones hoy: comprobar resultados del sorteo del martes 20 de octubre, en directo",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVEhYYTh6MC15YW4xcUZzZngzYjNxWFpjOTFtV1lPTGZkZlc2SkpYQkMwQ1BmUncwMUx1bGloUGt4dXVaOExqMUljUjBGQkJzbXpkOGpuWU9KMGtaZEllU2lhS3Q1V2ZTQVhYOUtEckpLZWpVWkp5VDNmc0hmQmM5TU51OU5MazRGYldzVWJ4X0czaEgyeDBHRy1qQ2JnaTYxZFZ4RmxhVEU3QWpob0lIZzRNdFF2MHkxTGx2NmlXRQ?oc=5",
-      "outlet": "El Confidencial",
-      "outletUrl": "https://www.elconfidencial.com",
-      "published": "2026-10-20T20:43:00.000Z",
-      "en": "Euromillions today: check results of Tuesday 20 October draw, live",
-      "about": []
-    },
-    {
-      "title": "Bonoloto hoy: comprobar resultado del martes 20 de octubre de 2026",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5BZWMwVHJ1RW9OM2ZkMDFzUWE0U24wU1ZoLVNMR090RDdFTXRTVUNJejg1WXA3cU1OcjBPa2tQejhhNUxUckVQQ01lTnlnZ0F6OUdhT1N3OUJVbzFXSDdHN0hJTXowWTZVNC15VWlOZkZXNGV1dmxVY2FmLTHSAXxBVV95cUxNUDkwVU53Nk10UnFURXpDUUd3blh6ZkFDSF9XcXBPNTd3RzZIR244WTFPMmhlSGZvWGZyNEh0WENTWDJHN3VCR1F0aUxCYkFfUGRtWnFXbjh2RkRkWmVVZW9icEZsMmhIenFhOTdMZU0yU1VOQXZnaHVNY0l2?oc=5",
-      "outlet": "El Mundo",
-      "outletUrl": "https://www.elmundo.es",
-      "published": "2026-10-20T19:40:13.000Z",
-      "en": "Bonoloto today: check result of Tuesday 20 October 2026",
-      "about": [
-        "ES"
-      ]
-    },
-    {
-      "title": "¡Ganen Pokémonedas al avanzar en el Pase de GO: noviembre!",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYaUdaMUJ1MEwxY05ncUdpcUFJUTBycVRpQkh0QXVINkIzcE5LMVdaNXJKNWV6VkVvU2taQk1CZDZTWmU3UzhJcDdKU1E1U3VPczRjMlZleU90Njdpak5Fc29ZZE4?oc=5",
-      "outlet": "Pokémon GO",
-      "outletUrl": "https://pokemongo.com",
-      "published": "2026-10-20T22:55:27.000Z",
-      "en": "Earn Pokémon coins by advancing in the GO Pass: November!",
-      "about": []
-    },
-    {
-      "title": "Japón ya ha lanzado su misión de exploración de las lunas de Marte",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcWx1V3ptRl9SX0FFYkhKeWxTelU5b05zaThKQlI3WWlHdFg5NE1nWTlpZnJNanVWQmF4SWIweVY0djVwQ0VGdGJNOEFMczh5U2ZEUWtQTC1wZmNzRy1iXzdtLTZQM25ScDlHTjZxYklPTjE2WVkwSnYwTk00ZkZLdTJCbEswREp1ZWNOcF9tWUZ0eU5PVUVRYVR6MjlJakpMbEx0MmFfY9IBrAFBVV95cUxNcm5hNHlzZjZCVGZvUnFoYkVBZHU4QVVrcW9hR2dudmtZcTY4OHlBbno3bl9DeExrOGpCaTFwcGthc0FWYy1WLTFtd0N5NlliTGpyUG5pLW5ZemNtMHFabzQ4U2YyZ3Rkb3FCU2ZXdHJJZEhxUS13Y041OGxaeEowNFFlYmU4Q3dQSlhiQjdlSEJrRVhBMlZydDA5YmpEYjdxSnFsYm1VZnlfQ1dQ?oc=5",
-      "outlet": "La Vanguardia",
-      "outletUrl": "https://www.lavanguardia.com",
-      "published": "2026-10-21T04:00:00.000Z",
-      "en": "Japan has already launched its mission to explore the moons of Mars",
-      "about": [
-        "JP"
-      ]
-    },
-    {
-      "title": "Final Fantasy Resonance recibe estas notas en los análisis de la prensa",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRU94M2NIcE1zUzktNS12aGd2b1ExVjNfbHNLamhSbTktU05GSTJjYnU2N2k1TERwdFB0TnpZN01CWVhhVEY2bk1rWHdnaUxkNld5NFY4SVVNQ2tyVGdJTWUydFVkN0VSQ0FZaC02OXB6TVhBZkpNZEJSVUFCYkdpc01RQVZtWG14V0FNMFVaano3SzU1VUI4Z19yaWd3ZWZhM3pyTGV2Z1k0RWFzYlRIZzU1TE9Ca1k2UkE?oc=5",
-      "outlet": "Nintenderos",
-      "outletUrl": "https://www.nintenderos.com",
-      "published": "2026-10-20T13:21:58.000Z",
-      "en": "Final Fantasy Resonance receives these scores in the press reviews",
-      "about": []
-    },
-    {
-      "title": "Los científicos que investigan cómo envejecer mejor se reúnen en Madrid: nuevas figuras internacionales confirmadas en Longevity World Forum 2027",
-      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPcE9ReGhNT0czLVVHcG8yOXlYeUZZeHFhMTcxcU9MSHZnRG5haE9GTGFwbzFMaG5pYUxLWjhfUnRXM1M4am0tdGdjdUhpel82d1hjM2FicnJ2cExlOHp0SG9SR2lCUWRlQVZ2X3M1cW9XT09XaXQwanNJbE9EVjZ5bi1MMUp4bUZOR2VmbHhud1VXVXpxRERrQnhaeFFDNVMtcENwVUV3RV9VRU9tS0V1YVlPQWp6MWdVYkRLTDk0WGRXclRXeWtpUkMxakkxNEFfNzNLTVF3Y3N5QXNxQkNXbUp1WmVBZzB0bW55Y1NiRWlocWpUOXJfMmFtX0xsZ051YmwxOGROZXZSSHZQNmVENW1IUUVBZw?oc=5",
-      "outlet": "PMFarma",
-      "outletUrl": "https://www.pmfarma.com",
-      "published": "2026-10-20T22:05:12.000Z",
-      "en": "Scientists researching how to age better meet in Madrid: new international figures confirmed for Longevity World Forum 2027",
-      "about": [
-        "ES"
-      ]
-    },
-    {
-      "title": "Parlamentarias de ultraderecha legislando desde una nave espacial: la política del futuro en clave de comedia",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZ292SnU0UUFSc2M0RW5IZzZJSVlwN1lqNzhudzI4V2t3Xy1ubWdvVE1mLU04dkZDYUR4ZHViVV9tb1VCd1JZNGZpeEI5aVRqTllxZmxTYkNkYnNvQk84Qi1KZlpLYk5lLWU2RW1HbDNvWWxJdXNiUUxkdnBRTkItSGl2b3pndHZ5czJCX3JCd0haekZzd21fdXNUbUp5Z3pHMUIzdVdDTHlGYkVsLWFoYk9wcTRGcWp3YTZTaV96d2xVQ0dEZjZmRl9qbjl5bWVqdjlaTkNhbVFabXl0Q1dEYXJfSDN0QdIB-gFBVV95cUxPZTI1NExLV2pCQkxraFAtMVNGbnBST2JoNlF2WFBBT1VoNnZGZmxGZDhrWkMtUHc5R0ZvcTFxekJuSVJOZ3pnSFVuaEdHX3ltWGFpYk1GTGFzNjBub3JrVnZPbDlaOWE5UHJtbEp0azVTLTJmZTB0ZWhrcDdlbGh4NlUxbk5mYVhiUkRXR3dMUUJwelpaQU9oLW1zV3FKeWo1Q19Bak1HTUhNMmpVZjZ1WE5Bd2VrcHZvejhicXNseTd4RDdhRmFwOGFRQ0wxS1VyN1hzeWctRnNwdnUtT1RMdzVmUmlmSVNMVVZLUW9wTDhEdFo1bDR0Nk53?oc=5",
-      "outlet": "EL PAÍS",
-      "outletUrl": "https://elpais.com",
-      "published": "2026-10-21T03:30:01.000Z",
-      "en": "Far-right female lawmakers legislating from a spaceship: the politics of the future in comedy form",
-      "about": []
-    },
-    {
-      "title": "Patti Smith critica el \"liderazgo deplorable\" de Trump desde Oviedo y pide a la gente que vote en las elecciones: \"Necesitamos creer en algo\"",
-      "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxPclRKZV9JR2VaYlRNc0NLcUtNR0tuWlQwTlloSmExcnpUWWEtTF9JZDNnZkFtdjVLZE9TaUdzT1hzRW1MZm1Rd0JLTTcwcXRPTTFNU1N0aWdZVWdGUjF3Wng2M1Y2V09BWlRFcm5zczRURC0xRVFIbDlQYllFUmd0QXlNSDBWRUlNNXhEdGR0bVNzdmFBUXpVLVN5UHk0MGQwZVN2cS05dzNMMVExdXZWU1BJOVRIaFhXQWNBNVRpeVFRLUd5SWlPZHAxaWFQZGhJYldlVHZuOC1QbWpjRGVCVUxBMlhNTUNtWHJhN0hSNnoya2ZPMW9uYkxONWJZVUo3UTVoeGx5V3lDUEhPQU9NYV9JeDFqa3RlUDl3X1BTbk9ndFdCdXlud092Y3BPMHhPUnl3VnM0RdIBogJBVV95cUxPX0NFa0dibUpIbzBoRzJGNjJtb181MnhyVXd0U0tKSGJDOWwzcFE1Rm0zWk9lOFJqWW9velQ5N0pGY2duZXZHaTBVcGUzUWFlTXVJWi1haEZ2Sl9oX1lUYWRXVl92LWE2NHVVYWFJWmpNdVhNSU1jWWdGTDg1Nll6aHVoWFB6Z3RyWUVWNmFzNUNXM2F2QThmeU4xSG42Wm5teHk5M3Mza2lWZEMxeTh4dmQtd0EyZHduOGNDTl9tZ1J2VUxHbUZHSUo4ZkR2ZFJGWk1yblNRSzRUREZtdXhRMEp1QkZJUGRybWR3SkhTb2tiTHhyS2NTN3JwUW9ZMzNmbjZFUVJqbXBlR0ZqZG9XNVJkdElreHdKVTA1OFlUbnVJUQ?oc=5",
-      "outlet": "El Economista",
-      "outletUrl": "https://www.eleconomista.es",
-      "published": "2026-10-20T18:47:33.000Z",
-      "en": "Patti Smith criticizes Trump's \"deplorable leadership\" from Oviedo and urges people to vote in the elections: \"We need to believe in something\"",
-      "about": [
-        "US",
-        "ES"
-      ]
-    },
-    {
-      "title": "Custo presenta sobre la pasarela 080 Barcelona una fusión de materiales y colores",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQmlwY1BpZjFQR21JbWJKYy1aYXpESi05dFJvd3I5cDNBQWZ3M3FLaV9rYlNHc05UX3pRajFKWlVobkRDaGpLQXlBVFl4MkhKZDk3NU1WWm8zSmYwbUhwZFJTU1RFRmF0R1VNUlV4dGI5OWxKeUJ3cHhlNmtxN2kxVWNXZUIyWFFFQTg3Vk9xZ2tsTkw0aEV6ZFg0YVZISkphU1hXRnd0Yw?oc=5",
-      "outlet": "ABC",
-      "outletUrl": "https://www.abc.es",
-      "published": "2026-10-20T20:06:37.000Z",
-      "en": "Custo presents on the 080 Barcelona catwalk a fusion of materials and colors",
-      "about": [
-        "ES"
-      ]
-    },
-    {
-      "title": "Beatriz Pérez-Aranda pone el broche de oro al 'Telediario' especial por los 70 años de TVE con su icónica frase “como un pepino”",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZVh4YTdwUC1EVnVlSTNvQ3BuY3VXbG9pRjhSd0RCVlI1cTAzTWU4X3hKUG9Vd2RQbjdLNHJPbjQzU0ZKSDJ0QUNHMXh5enFKUlQ3VjFrN1pCdlpZR2VscXhOSVd1Z1ZObnZKa21uOFBBbFM4eXdWOWR1NDJWOU54QU1hS1BraHBMeER5VEZRT190VEJ2MXNkaXFyaWdNemRnVUtXRFVNVGo1RF8wbnp1VEVNUTZ4RGdkbnV6NGE4aXgtUEVMc01VQzZDcnJxMU1fYTRVWXlQRzZDRzZvb0xHZkNpN25rZUnSAewBQVVfeXFMUDNONTZZcnYxakdEdVItYnByYTAtTjFWTGhYZldwZldLdkJsN1c2c1FzajVUTHlBU1o5Qm5NVldMS2ttUGZwVjNrSG53WWJfaTBHTzdXNDZjdHRDUERkeWpBY1I2MkExdXVxTEM2eVlHZERncUY2MGpjTG5NME9OMHRBN19WSmpBV2pXbndmbWlLUUJRdHNzd1Q1NWVXRHU4ZmNPcGh3US01TGN0ZU1GVE1iOVBlQmpsZ29fV0hoVWRIVXhwTkoxRXNqUzhRZERsckhDb0d1cENOVVBvWFlhc3dwc2VyWERhelZrYTE?oc=5",
-      "outlet": "La Vanguardia",
-      "outletUrl": "https://www.lavanguardia.com",
-      "published": "2026-10-20T10:47:46.000Z",
-      "en": "Beatriz Pérez-Aranda puts the golden touch on the special 'Telediario' for TVE's 70th anniversary with her iconic phrase \"like a cucumber\"",
-      "about": [
-        "ES"
-      ]
-    },
-    {
-      "title": "Hansi Flick: \"El PSG demostró que es mejor que nosotros\"",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdnJQMFhYVi1Wa2dkNHQ4eVMwbjNXbE1SZjhpN3liUjVqYU1aUDRSVmplZVdkWHNYSENGSHJHcWhjZlowckk0UnQ4ZU1BV3FzekZDbW01YWZpS2F3cWlFT2FpVEt0OXVsV2o0TE1GcnJrNWpSUWRlNkU1c3BBUFF4STlBZm56cG9SWEY5OE9IWXNZVHNKWk1jSUpR?oc=5",
-      "outlet": "MARCA",
-      "outletUrl": "https://www.marca.com",
-      "published": "2026-10-20T21:13:22.000Z",
-      "en": "Hansi Flick: \"PSG showed that they are better than us\"",
-      "about": []
-    },
-    {
-      "title": "VfB Stuttgart 1-1 Atlético de Madrid: resumen, resultado y goles del partido de la fase liga de la Champions League",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOaDBucDdEeDJnLUVuaTl0WmpoZ3hJbWtpN2M5c19aQ3BUbVZFMUlKVVF6VmtYZk9VQzVORVRucm1scFRTZFBaYnFzMHFrNG13clFmYWpSbHMwVmF4aktqdE5GTDNSTXhhak1Qd2NkOG9pZm5ISVRXVXdaV2FTVnFWaWxBY3Bld29mUjBIVW4zM0hoNkJvNHd5WldLUEkxaVhReE5wVFdza1l6cnFsb3BWRDNKaVV5ZWRWemFqOTBMS1dGYi1mRGNRN1pTaHdSUUptQ2Izc3NITVpRaGpCLUlyU2Fick9OWXpEZzVEZF9Sb2hPcThSR25aNl96d9IBjwJBVV95cUxQR2pGSUpfMHpFc0NmSWMxU19UVU1jWlNjT3N4Rk1NR2g4ZmEwVHdEODBlWjV0LVItY2FJTEhpWGVIdEloNHpZa0VabkJRbGNuUzFYcjdBWlVqMEVweDBtLV9tR05ydlVuelVxYXRubEtCWkN2LVVFaENoY010enc3NmVWMjZiUWJndWNsai1OaFpTNmdra1VkcjItV2Jtay1yRnNsc3RWTXdvT0pZVHg2X25ud29DNWJLTE5KNm10Ui1laEpzUnFEVnF6TUM3NUpVSklCelNsazJSaHFITjluYUx6T2RjY0ZIR0Nic3VsdXZMSzNJLUVUdE9iRWZHNTJvZkt6dWp6YWVxTzRxZWln?oc=5",
-      "outlet": "Cadena SER",
-      "outletUrl": "https://cadenaser.com",
-      "published": "2026-10-20T20:51:20.000Z",
-      "en": "VfB Stuttgart 1-1 Atlético de Madrid: summary, result and goals of the Champions League league phase match",
-      "about": [
-        "DE",
-        "ES"
-      ]
-    },
-    {
-      "title": "El adolescente despiadado Ngumoha inspira la remontada del Liverpool en la Champions",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYWlpQWluYk1vUXVUTjF1MEo1QUJ5NlNlUU5pZGlvSEdXUDRZRndjWURndE51bUdNZnpWMF9tTnVnZWRLOGFRNkNvakNWSWxHSzdwNW9YTVhuZTA0MDlCYWRYb0o5VlNLZGVMak10cFMtQkdIX2JwSFpQWC03OS1JY05xXzQtb2Z5U0hyOElhWThfX0V2eHdrczJ5Vk8?oc=5",
-      "outlet": "Yahoo",
-      "outletUrl": "https://es-us.noticias.yahoo.com",
-      "published": "2026-10-20T23:17:00.000Z",
-      "en": "The ruthless teenager Ngumoha inspires Liverpool's comeback in the Champions League",
-      "about": []
-    },
-    {
-      "title": "Phil Foden rompe su sequía goleadora de 10 meses con un triplete para el Manchester City",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxONnhWMU9CeVVxUmtlUXZhMWsxdzhhMHU1OE5PSi1zd2J0T3c3ckRneXEwa3Q3YkxZVFIxNW9ocGpHanlkb3RQWWhpN185dEpmVTZxUm91TWQxT1hVMWRDY01uRnFkRmxXU1h0ZkRIT1FDUTRrR09qVHVpaW0yZFVJUkhRdlJ5WVdLaDlGVll4dlJOaklsMkNLenIta1NVVVBkUURieFZRTXhTQU9JeGJjSE9qNDNyalhUd0ptLTByUzFuTWJlOWZudFY2LW95dnVfLXdNV2E4ZzA?oc=5",
+      "title": "Del Piero, sobre el gol de Yamal al PSG: «Saca un punterazo. Es un espectáculo»",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQay14QTJtbENwVDNTeWV1M1cyTUFrTXMtdlBXOEFaRzNmWlJZZks0QlVscnQ1NjdzdjZma2J4YnBYX0dWaE5vNC1FajBKUjl5THdxamVYSU8yYm5FeGpmSlItQ0M1SnBSUXRocV9ENUxmckNYODZrLW03SGxOZDBaRUtqVEhLRUFVT1ZpT2JKcmlaOGdtSURvQkZMMXNkRFpEcUNvb3VPRGQ0WFo4X2swUXpyYmtxTHo1cVR3VnV0SXVvVTViYlE?oc=5",
       "outlet": "Goal.com",
       "outletUrl": "https://www.goal.com",
-      "published": "2026-10-20T21:16:33.000Z",
-      "en": "Phil Foden breaks his 10-month goal drought with a hat-trick for Manchester City",
+      "published": "2026-10-21T10:23:07.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Del Piero, on Yamal's goal against PSG: \"He strikes a rocket. It's a spectacle\"",
       "about": []
+    },
+    {
+      "title": "Moeve mantiene hasta diciembre el doble de descuento en carburantes para los usuarios de Moeve gow",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTHJrcWQzQV9mRks2bkFwcFZzdkdELUVYd0g0Z1RVM0dXaHJNVmU3d2g5T2Nhb1NPVS1DVVNWbzNCbDhrdHRGUEdvcmxfV1NSRS1BcFBVQU90WlRwVXNROG43SWxFNy1waE4xRjE1Vm5VVi11cUp1ajZxaVptN0ozQy1KTWt0WS1YdVRIRjJmdm1jN21tWUU2TkpHQWRVR2FDN1FyNUJSUHJUX3Y1XzF6Z3dod1V1cWJDNTVrV3E0QlZRc3hWOUxBaVNrMnNWZVVoZUNSUTIwb21jeldl?oc=5",
+      "outlet": "Interempresas Media",
+      "outletUrl": "https://www.interempresas.net",
+      "published": "2026-10-21T08:37:30.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Moeve keeps double fuel discount until December for Moeve gow users",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Prepárate para Eurovisión Junior con el mejor contenido infantil en RTVE Play",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTVybTYzV2RrRFhzb2xxN09zTlZfUVR2cXRxa2czdnFHMlBvRmxQRTRNZmF4R1RVVzlDaUdLRzhncGNjUEVlbzR2TWswYkJsVFpjTkwtTmJKVTctdUFNWnNjWTViTjNsSEViT3VuYVFoSjVkSDYxODV2UGd4cVB4X0tyV0FMSWtwd2VpejUzTzlnNjd5OEU0bm1SYkUybzhLajI0c1pfUTRJeU5CNW9ZdzdTek9NNDlDbUxPQw?oc=5",
+      "outlet": "RTVE.es",
+      "outletUrl": "https://www.rtve.es",
+      "published": "2026-10-21T09:53:59.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Get ready for Eurovision Junior with the best children's content on RTVE Play",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "La jueza que investiga la entrada masiva en Ceuta pide a Defensa un informe sobre el tránsito de buques de Marruecos en aguas territoriales",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNbFloQUZucm80LThVWm1LdEtMUU0xVnVjOWRWQnRWdnBNX1laLThJMDRuM3dla2NldmZEOFdDX3JkRmlaZ1N2WnFDa1hielJVZWdEYjdFLVhBSlpkQUNWSlB4VGtYWGZOOFZXUUk1bHhEa1JKaUgxaTlFRFVNakJCNF9lU3pPOXpkUW1NZGZPSnJOejZodVlIcVJfQ2JwcVRxSVhHSmp1UmpuWV9DNWhPQ0dpdkdPeFJzTFVBU2NEMm9UeEpfTm0xZUNWdElZUGp6SVROQ0UtalRaZU5vbElvRWlPZW1ybWVlNmQ0R2hNMUp2SjNMbE5TLXNpQXBCTVpOTVlDSjhhYVhieGRzY0HSAaICQVVfeXFMT2QxMmdnWDBZQ2Zpd05PTV9QZHlWRTRoOFdYWGwwRGRMZHZYX3Vuei0wZ1ZMMHBzOUcwYi04QU5LUUFZNUNmOVVXRlp3dVB2ZThPZUF5S0d1cFhVNmhJSURnZnZzelZMOWdzbTRVX014STlDOUFkY3NBUFpicTE1bm5HdVZmYXl4MjAxc0djNGZadW81Q29qSENNTnBjSVpXdGdxZ1djNHJrX2xBSlJaNHdWU1RiRkZTc29ud0VRcmpEN2p2OElBRl9VTXBZNjJ2RktIeDBIY242ZE5ZRzNtTlpZTWcxSUp3dDZKLVVuOXpHa2J0RG9oN3JGR3N0RUJtNjU4bEVvMWRYRXF3dmNMWTE5dGZwWXkxTXJyeUFnMzFWbVE?oc=5",
+      "outlet": "EL PAÍS",
+      "outletUrl": "https://elpais.com",
+      "published": "2026-10-21T12:13:32.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The judge investigating the mass entry into Ceuta asks the Defence Ministry for a report on the transit of Moroccan ships through territorial waters",
+      "about": [
+        "ES",
+        "MA"
+      ]
+    },
+    {
+      "title": "Primer vídeo del iPhone Duo: así es el plegable de Apple al sacarlo de la caja",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcFQ3Ulh3LXlXWGVITTRJOWJJU3RMMUlNOGJyakFweFFfQUQxcXZ1WDcxN0xHeDFqdk81SmRVcmRPUmVHdnpqUk5EbDJMR0puNUhBOGZfRXQzRUVXeFBmWEN2X1p1Tl95SGp2R0NFU1A0MUlUdWZWaktIZm1IUUE5TXMwcEJBZkFCNXZTcGNGbjZpbEVhQndvUWJGN0xXV19uRVlKcDFJVHDSAbwBQVVfeXFMTXlUTGV2RVFXNmNVdUFOeFVYd01SVlV2WUJuTkthZy1qaVhaYUlhYW9HXzlJcVBkNHNYZUFvSUZpdjVpVWRWcHpITkR1NG0zdThCcjlYOF8yRkxYZkxXZDh6UWtWSEVVZkhLRmhiSGY4RnRuYkRSNmFiNDRCNTRDNm5lSjdhelM0MTdsanRzeW5tWXVjTFZDU0pRSFBYSGhXenJudVBxV2VoQ0w5Y29NM0NYaVVmZk9TczZSQ3Q?oc=5",
+      "outlet": "Cinco Días",
+      "outletUrl": "https://cincodias.elpais.com",
+      "published": "2026-10-21T09:00:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "First video of the iPhone Duo: this is Apple's foldable as it comes out of the box",
+      "about": []
+    },
+    {
+      "title": "El PSG pierde a Kvaratskhelia para varios meses por rotura del ligamento cruzado anterior",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUUt2V2NXblZSaHlYNEhoNHpyZ0x6WnpMaklEa0NQYzlHWFpjek5ZWTdoT1FnRUVuMW1vSmxxT2pBXzBkUGtmeEdIZmNqRmdmQVB3S1F6T3BsVTJVRk82ajZ6NENubW9aaEhXRFRsQXFfNnBwZzBVY3VfTUNFLUtKZ2lZdFlCbWFMclBuRXlmNWVqVFBrYUhWVWlBYXI4b3g1UGFTd25UUQ?oc=5",
+      "outlet": "RTVE.es",
+      "outletUrl": "https://www.rtve.es",
+      "published": "2026-10-21T10:01:02.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "PSG lose Kvaratskhelia for several months due to a rupture of the anterior cruciate ligament",
+      "about": []
+    },
+    {
+      "title": "Hemodonación y Hemoterapia inicia hoy una campaña de donación de sangre en Arona",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUGpfNlhqX2QzbGxabjREejI5UGxSRWxqY2prLTRweXFSYVRuYXQxdGZ3dUZ6LTZCZGxPTExXaXFqcnZQeHRRaENiSDc1Z1ZVTnZDWEI2dFp1a0xBSFJGNVB3T2l5RmVQQmkwVnB6T2pwWmwwX1U2YzlJaFJDRFp4c0xPOHlpZTd4SG0wWUZweE16aXo0ZkxiUUJvOFFWbnd1SDd4UjZnLVluWVhyN1dtZjVaWmUzTDZQZjdZaFc4eW1VYk9m?oc=5",
+      "outlet": "Gobierno de Canarias",
+      "outletUrl": "https://www3.gobiernodecanarias.org",
+      "published": "2026-10-21T11:58:21.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Hemodonación y Hemoterapia starts a blood donation campaign today in Arona",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Seis detenidos, dos de ellos menores, por el robo en el que murió una anciana maniatada en Burgos",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMjRocVh3ZE45Z29iVFlxWFFnc0t0N2RxSlNuemR6b3h2enYwZXFRMlFhQi1CdTIzUzNwcnVIcmFCUkcxdm5YYklOcEhBSzVuNnM3NWR4YUZFTkdqeTdrWmJiSDlnSV9YMzZsNDgwc2FUR3ptOERmYVBkZHloX212enZFZVU5cHJIR1N6bVBkOXlESXJqMjNKUVhSUTBETXNmb1k4OGNZWnBqcXF3X2pTel8tZnozRmZ5U3dxVUJXN3UtbmhpU3A3VtIB3AFBVV95cUxPaFF5dnA3ZE1xeFA3LW1EeDNocUFVU3h3el8yMjg1b2lITlpPdkdwT29ZYm5rdXdqWGNxMml1dEJJM0hjRFZjX01kQVM0dEJ3elFvb2gzZzYweFBxY2l0SW02ajVtVEVWcWppRDJiM3BLX1VPdGo5MnFYa0cwd280V0ttUGNjTklwbVI4YUs1RHJzak5JX1piZWZsbkoxRVRRcVNCMWtvdkMzZ2NyYjZVTHM2bHZGUzhkUDFUSTRHWTZRY29HdjZBMnZsNXdadWEzZUF2YllsY3RySDdY?oc=5",
+      "outlet": "EL PAÍS",
+      "outletUrl": "https://elpais.com",
+      "published": "2026-10-21T11:52:27.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Six arrested, two of them minors, for the robbery in which an elderly woman died bound in Burgos",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Trump sopesa convertir sala de prensa de la Casa Blanca en piscina",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNb2pQOTU3Tk16ejZqXzNZcUhfYTdXMDJUandWUjltdTRjbWx4WEUzRE1IZ0FPQTFIUENibW5aWUkybFFkMEFQamF4el9pd2xiZnlaTWtVdHJGNXVNMGJBNTFRYVpKeVVxSmhBMU9QdE5PaTk0N05WV2V1bTUtc0ZCUlpmNGVfb3hxOFA0b2V3V0RGR2h1NnFPblhLOXBHdXJT0gGgAUFVX3lxTFBjWEV2R2VHWU5DZDBzOWpqUms2bVdTZmVsSDVyT0M3eElkQWJucjZZNVpuSE96aGh5blk0bkRGSUF6SUxtM3NOYVV3Q1RlUWVpOUNfWkJMZUNuN3FLU1F5TWhtODh6WE5HZ252ZDJ3Unl6aEt6SFZJSWpfYnBnQVI0RXVveXlDdXhSOGs3bGFZa1lrSHRCSlllX0p4aDNqRkQ?oc=5",
+      "outlet": "DW.com",
+      "outletUrl": "https://www.dw.com",
+      "published": "2026-10-21T11:38:28.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Trump considers turning the White House press room into a swimming pool",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Actualización: Aumento del beneficio neto ajustado y de los ingresos de Iberdrola en el tercer trimestre.",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTFpGc2tBM2M3VkpGOTktclFnNnkteEI1X3ZYNWZyejd4LUlBUUhhei1Pa0diTzJhVmNFejNqSXBDTFFPQi1nM00zeXNZa2o4S0JhT3IwT3ZqR05oZWdNTlBaNmxxN3hzb0tEbUVMVzVkeUo1SjBYeDdQRnFDSWhBY045Wmp3U05SQTRhYlpKZ3VhRkJOZU9hdGFCakJXbG5TcXlwR3FB?oc=5",
+      "outlet": "Yahoo",
+      "outletUrl": "https://es.finance.yahoo.com",
+      "published": "2026-10-21T07:36:38.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Update: Increase in adjusted net profit and revenue of Iberdrola in the third quarter.",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Acuerdo para la adquisición del derecho de superficie de las 510 viviendas de protección pública de Benta Berri, en San Sebastián - Gobierno Vasco",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQblFRRE83ZE4wUmF6Y1ZVUFM3TFQwNnY4eEt1Vjc3cGlXOUE0Z0l3cENXYnJJYUhROWxFbDRBQTAxeXBfcjV1TUg4RnFGeGRiVWJRVS1mRlFZN3lhNTZmazVRZWtiSHpicmdRVUJiVTZMRC1majA3Y2htZUh6NHN5cjV1OXZQbWlEa0t2ejNxckNYaWo1eUU0NUprVTdFRVRlVmN4bjNEbmV5cWcxX0ljeGE4bndud3hBUGt2WVM0c2RtODR5ckF0RnJ5VjVyQnp5SEhMMEU0M3QxOU9fajdkSm9aRzROV2t5TWF1Xw?oc=5",
+      "outlet": "Euskadi.eus",
+      "outletUrl": "https://www.euskadi.eus",
+      "published": "2026-10-21T11:33:39.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Agreement for the acquisition of the surface right of the 510 public housing units of Benta Berri, in San Sebastián - Basque Government",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "La Junta Directiva de CEOE aprueba la composición de sus órganos de gobierno para los próximos cuatro años",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV2ZqakpKRlVRamlFZnNscFRpY0JNck05Z1gya3ZRdGo5RDdsbVRtaUxzREJJamJJNjJnZURia0t6UThYUkh5bDNLVm1IQmV3WVBMaHBvSmpxZUpmT1VXMXZPd0luMHZCUTA4ekVEcndDZlFTTXJfZFFwbjV4QVd2QW5fcWp6NVdYTTNTUWxyS1hBRF9BVjQtcUpLbFJRLUV3d0EtSXlkbTRTckNhaTNaek5jaUQzeXlLS0tJWFdydw?oc=5",
+      "outlet": "CEOE",
+      "outletUrl": "https://www.ceoe.es",
+      "published": "2026-10-21T11:30:59.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The CEOE Board of Directors approves the composition of its governing bodies for the next four years",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Witkoff pide a Putin reanudar las negociaciones tripartitas con Ucrania y EE.UU.",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMldaVG1pMVdCQlhXZlluRnQydjF4aFhsd2tkeS10cy1ZTGJ5YlliM1RqX2lwTHFmWENQMEdxUkp3NkZqM1lyVEZxVkY3bHA3bTFBOXMxYW9sNmdrTHhfdnRWRzQ3YVl2TVkyNUhSWnhYRTdKQ0gzTkRjenlLdUpYenpIWTlXODJhbU04MVJmVTRSSDNCSjNtRkJLQUE0MERiQ1I4UURRRmJUX3h5anVKc3JGU1BGcFFC?oc=5",
+      "outlet": "ABC",
+      "outletUrl": "https://www.abc.es",
+      "published": "2026-10-21T12:07:20.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Witkoff asks Putin to resume the trilateral negotiations with Ukraine and the US",
+      "about": [
+        "RU",
+        "UA",
+        "US"
+      ]
     }
   ]
 }

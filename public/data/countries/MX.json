@@ -2,45 +2,100 @@
   "code": "MX",
   "name": "Mexico",
   "kind": "local",
-  "updated": "2026-10-21T05:12:20.084Z",
+  "updated": "2026-10-21T14:45:27.681Z",
   "source": {
-    "name": "Google News",
+    "name": "Google News and Bing News",
     "edition": "MX:es-419",
     "url": "https://news.google.com/rss?hl=es-419&gl=MX&ceid=MX%3Aes-419"
   },
   "articles": [
     {
-      "title": "Senado aprueba ley de pagos digitales; Hacienda podrá definir dónde serán obligatorios",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQWNQemhicG51ak1oLTM2ZjBGUS1Jekw1MDRWWDg0YlRZYW9uOENvek9uU1pTckxrM1g5bkhaZGh4R1JXM1lOUkdmZWJqdUc5ZkUwRVc4UG10TU9OanBOSWdzaVJHVUJnbHg0UlJ2bEduYU1BanBpdXpHWUEyY3B6M0dweEhFWTA5UUpsekRKVXo1aFhfX0xoSjI1Zi1zR1E3RjNiNVNUekNiejJKV21Id0hIOHlKUnRUQ2loWm1tOVp1cDFkZ3pMb0czWlc2UjB2WFB2ZXh3VkdQNERBZ2pYQ1NB?oc=5",
-      "outlet": "La Jornada",
-      "outletUrl": "https://www.jornada.com.mx",
-      "published": "2026-10-20T22:56:00.000Z",
-      "en": "Senate approves digital payments law; Finance Ministry will be able to define where they will be mandatory",
+      "title": "Meloni responde a los saqueos en Milán: soldados, padres multados y menores imputables desde los 14 años",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWXBad2c0azZRbjFlWkhXdmlyQ3RyaVVCejIyWVVkNURFQmp4QnRfTGN0ZExNX05DdkQxWWJRNS1kR1Q3UWxUcGtGaW5hRG54aThmbUN6bEwyV0xnVHJvcnBLVEptX1pEX2JyZlZoRFJtWWxoNzdMU2x4TDZmLUlXQjlvNjVfV1BtNV9PamQ3X0pQd3N4MDJqT3VOb0JHMm1ZNUVjMlhpRVJTTUtNTnZJLVhQU0h6TjNYank3OHdlR2gxUU5H?oc=5",
+      "outlet": "DW.com",
+      "outletUrl": "https://www.dw.com",
+      "published": "2026-10-21T12:56:15.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Meloni responds to looting in Milan: soldiers, parents fined and minors chargeable from age 14",
+      "about": [
+        "IT"
+      ]
+    },
+    {
+      "title": "La geografía de la indignación; mira el mapa de las protestas por todo el mundo",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQaHViZGs2TG8wX0JoUnBpYTJvdlE2NUNtUXRLUVFqUlZhR29aUE1vSGg2enJuVks2Wllaa2tUa2lSYWo0QU5TYmVlWEJFTlJQdWJwQXloRThIQVotaXVoQnJqcXlWd2dBakh3VC1DLW9DWFZfeWFUTU5rUFRoMV9fa083N1VESWFHcHRNdTVQT3JESkFXTktHQW43bFNPWGdOLVVqOGZDZmFLMU94eTViRkkwTHlOTmhxSWNSbjJCSDFHcUxLRjZOQ2JGRjJnRVMtSDZJazBjZUJFVDM0VzNuTA?oc=5",
+      "outlet": "El Universal",
+      "outletUrl": "https://www.eluniversal.com.mx",
+      "published": "2026-10-21T11:20:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "The geography of outrage; see the map of protests around the world",
+      "about": []
+    },
+    {
+      "title": "Economía de México apunta a crecimiento de 3.7% en septiembre gracias a manufacturas e inversión",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOc28yREZMdXFhRVFMWTZ3ZGZyMVhFb3A1NWY1WklPc2tSRWowc1UwOHJkZjVoSWRHT3dtazNpUGE4OEtmblhlSmVKWUlQRzVvUV95UkRVbG0xOUZwX2FiQVd6NFpBMlI1S2wyeWs4SWcwMTlidHkwRTQ1S0JZcHVacXdQcWNCeWcyT1VsSTctT2o4WWxRdEM4MkhyR2dDbEpTWlFmbW5JUHVRWFl2WWRFX3hZOHVvbkFmNDhuQ3Z1bkZmMEdI?oc=5",
+      "outlet": "El Financiero",
+      "outletUrl": "https://www.elfinanciero.com.mx",
+      "published": "2026-10-21T09:24:13.000Z",
+      "outlets": 4,
+      "trending": true,
+      "en": "Mexico's economy points to 3.7% growth in September thanks to manufacturing and investment",
       "about": [
         "MX"
       ]
     },
     {
-      "title": "Sheinbaum y Trump aseguran que México y EE.UU. están \"muy cerca\" de un acuerdo comercial",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeU5hTldJZFJUSFB1ZFByV2MxVk4xQUp5RGhmbXVBamZnWkV0WkFaaGJwRWRNZnpoNlJuN1d5SlhiVWtBWkJmdzRDZWhramg5MTd0ck1yS0xTWWYyMGU5VFk0TW1tWmdGN2xYYlphYW41cjBJRlFndnB5VjNsdXZSMV9QcnJMRjdGcnY0QzRZQ1l3MFF0bDEyUg?oc=5",
-      "outlet": "CNN en Español",
-      "outletUrl": "https://cnnespanol.cnn.com",
-      "published": "2026-10-20T20:04:00.000Z",
-      "en": "Sheinbaum and Trump assure that Mexico and the U.S. are \"very close\" to a trade agreement",
+      "title": "Sindicato e IMSS negocian nueva propuesta salarial; trabajadores exigen participar",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZndjSWowWGdOYjBxU1ZMYjhmcE9Wc19JQk1RckVqOVlfaUZCcFlQcUNTR0NxRWdYUWM0LUpvbVdSM29XN05WcjU5eGM5aDJrQ2VFcWloV3NwVWNpTlQza2pQQjEtTUFLbGVGQVNOX3MycjI3Sk94QkJRcDc2NE1ST2dnZXM3VlB3SU1Ea0lKZmVydXlwVVNiTXh2UXNLaGp1MVFqaU1Ldm53YnFyZWhEUkJjTWxOejNaaDUtNndvc0VYYzYtOElfU0ROODhtT3lwbnc?oc=5",
+      "outlet": "La Jornada",
+      "outletUrl": "https://www.jornada.com.mx",
+      "published": "2026-10-21T00:10:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Union and IMSS negotiate new salary proposal; workers demand to participate",
       "about": [
-        "MX",
-        "US"
+        "MX"
       ]
     },
     {
-      "title": "Francia impone toques de queda en París y otras grandes ciudades \"hasta que sea necesario\"",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNTVRJVFZxOVAyajYwT0V5YVV2YTlWM3RYNDNJTEZHTFdFRDRtNE9OekxqSElBWjBFYTVtLW9LdUU4UjBNd1FtS0ZkTE9hTW5XRmxFNnZlalJBYndhWFF5aXZDamtHd2tKckdRWGhfVzF2VUZ6b2dKMkxnMGZLQTFnU29sZkhxdzhDU3FzQ083X2RYUDM4Nkd2djlMM2dlWjUtQzNOaHhDMmJYdlIxWUY0OGU4bGdoZHZnLUFzOXc5dTc3am5FX0l3b1cxaEJucjZvc2VmeWN0WldPdXVoTEVESEhR?oc=5",
-      "outlet": "France 24",
-      "outletUrl": "https://www.france24.com",
-      "published": "2026-10-20T06:17:46.000Z",
-      "en": "France imposes nighttime curfews in Paris and other major cities \"for as long as necessary\"",
+      "title": "Sheinbaum niega un acuerdo con Maru Campos para inculpar Jáuregui: “No hacemos pactos políticos con la justicia”",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVVNMYzRLLVNmY3RJbmFDTGl0eDVUc2dGTzRNTkZXaElxYWMtcS1Ic19aOGlUSHZSR3BKVXhpaWo2Z2lsVmoyblFDVGItTGlyOGcxQU9wbUxDMlRaZWJzb1JPTktnQkZEMU4zVlRybnlhT0txczhyVDRmYkJSdkFDS0xjRUJqMUQ3SDVwd19jM1RyUEdWYnN4ZHJyOTctR0gwVnZ3endlcUNUU0RGdEkxUGF0Y2t6ZTFwODRmRE5VdmNpb0dTZmhkUERDSUYzN0tHQkVncG83c3Q5UmFzOEc5VHNta2Z5VXMweFQtbg?oc=5",
+      "outlet": "EL PAÍS",
+      "outletUrl": "https://elpais.com",
+      "published": "2026-10-20T14:52:43.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Sheinbaum denies agreement with Maru Campos to charge Jáuregui: \"We do not make political pacts with justice\"",
       "about": [
-        "FR"
+        "MX"
+      ]
+    },
+    {
+      "title": "Chihuahua, un pantano de simulaciones",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ2hjQUdjMnhhUlNGYUd2dlRfUDl3dUNQbGU0bTIwb0d0TkdGRkpTbUhSVmxsU2cyTW92WFVJdlltMENKemdJX3pxVVBaODJYQ29YM2YxN09LemwyVlJaMWJLZ3lObk0zQWUwSzN6bXh6ckk2cGt2ZTZ5aFRBNU1JTWI5T1ZTY1J5UlhKX3BvQWxOZ3dpaGFVNFhrVFVQQ1NRX1dRSDRfU3djLUFWVkHSAbMBQVVfeXFMTXNXQ2xFQ3FtZldiYXRJbElld1ZocmJnR1lFQmpIeENTN01VUHZFNllwOGxFRXJyWVZack9ZX2lpLXNwN3JZcUFTT3M2T1g0QXhtTUtpTGRZdHBoTFd3VlhsSUZ2M1UyMU5IcVhSeTQ3c3R5bDNaLVdzV0FVN3dOaXJDT0poUzhfRFN2dThzUXpNUzNIdlM0RElyaTZheHMzQ0Zyd2kwcktMWV8zVXltRENFY2s?oc=5",
+      "outlet": "El Informador",
+      "outletUrl": "https://www.informador.mx",
+      "published": "2026-10-21T11:15:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Chihuahua, a swamp of simulations",
+      "about": [
+        "MX"
+      ]
+    },
+    {
+      "title": "Liberan un sentido en la México-Toluca tras bloqueo de madres buscadoras",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOU1U5RkdvdDR0OGZDZmN4a1I1Z09lRldpMWFJOS1ibXpxOE00Vkd1MG5XZk5SM01RTlVwR1o2SHI1MjJrSzlZOGpPNU1wXzBodU1rYXRKWThlWEJ5MW92Z1hlRUppdUw0OHFLSEZOcnpWOFRaUnh2cXZwdDFnMXYxM2ppV0w4NkZJNHFNZ3RJUnRSbDctdTJmdVFsVW5JaXItZ0dxZEpQWndpUjZmNWVxN0NwSjBNY1h5WEtUeUZLZGtqZw?oc=5",
+      "outlet": "El Sol de México",
+      "outletUrl": "https://oem.com.mx",
+      "published": "2026-10-21T03:35:48.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "One lane of the Mexico-Toluca highway reopened after a blockade by searching mothers",
+      "about": [
+        "MX"
       ]
     },
     {
@@ -49,155 +104,210 @@
       "outlet": "EL PAÍS",
       "outletUrl": "https://elpais.com",
       "published": "2026-10-21T00:15:29.000Z",
+      "outlets": 5,
+      "trending": false,
       "en": "Mexico acknowledges before the UN the participation of municipal authorities in disappearances",
       "about": [
         "MX"
       ]
     },
     {
-      "title": "\"Política de porros\", responde Álvarez Máynez al PRI, tras agresión de Gutiérrez Mancilla",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWkEyVFhIamdfT0hONUdfVEJ0N29UWlNRc0tzMnJ5U3IyNFc5bXhNMl9VRUdMaF9rcEJuNUYtOUp1eVo3Y2N0eFVRUTVDdU01ekhLdHpmQWpxYy1US1I4LThFZkV3VFpxTTllNHJqXzd5M3ctVk1IVllqUWZnTnp5d003NV9mUHZXZlRBMjRoUlNIWkozZks3MHpDNDNxeGFLZEFPb3hSRlNYLWM2dFJaaGxFZTl0dWpCZlp0VkYtNGh2cUhOdHpocXZMaklSNXBMbnY3YjliQQ?oc=5",
-      "outlet": "La Jornada",
-      "outletUrl": "https://www.jornada.com.mx",
-      "published": "2026-10-21T01:35:00.000Z",
-      "en": "\"Political thugs policy\", Álvarez Máynez responds to PRI after attack by Gutiérrez Mancilla",
+      "title": "Le aparece un departamento a Carolina Viggiano",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWTRyeDRmX0gtc1pjSmFQNWZTSWY4T0dqS3pyUlVMWHl4Rmk2TkNnOWZ2Wk9fUS1QUURLcnZMWENlOEVTbHVpcVgxMGZYX0tFYmNEQl9mcnhqT1BSdl9jbkNtZTdQT3dqR0FYYmxuYlpuS0ZfODg3Z2xEUzZvQzVROWFxSW9MN1lMYktPNUJhY0tNZVl5MWhGRWM2RW1HVzNxOUFoUHFvU05mNzgwalQ0VHZiTdIBxwFBVV95cUxPM2pFX0JLMXU4bmY4UEJya2ZaNnhWNXFUMkpQVzhDeXZIcG9hXy1UMTI0bThDX0lMY3kzMEUwUHF6Vmx2R3dEWWt6WGY3d3BnUHhNRnN6WEhjQmZVSk9pYy15NkZZMmxhYW1xbWlQeW9PcGVSTGdLUlNtOGdhc2ZldFQxa1Q3SUZUZUFoeV9ZTm5YY3FSN1dGMkZrWDlPTEtNalB5WjhkUk90dk4zRVlhQlA2VVYyMkZ1cGtvUTR6MkRRUHJ2UEV3?oc=5",
+      "outlet": "El Universal",
+      "outletUrl": "https://www.eluniversal.com.mx",
+      "published": "2026-10-21T10:00:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "An apartment appears for Carolina Viggiano",
+      "about": []
+    },
+    {
+      "title": "Alfonso Cuarón recibe la Medalla Filmoteca UNAM entre aplausos y un Goya",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOYTk5R0p0cllrREdiVUtQLUpPWlU1QThabUpTZzdCMjF1aFV0RDNzbEducWRVTjdoY0s1WFJ5VVlyVDRjNEc0UllLTXNjSFlzeDJ0LXRjNXZPQ0lLWW9wM0lZeXlTbWh3U2h5R3hNT0pVUW5jVzlha2dRRWtlbmN2eVowYngyekhZYm5fWGV1TU9memJKYWRramZrdFRYQ2FyTnM5WWIxcDBUX01fUFJmQXRaTW5ZdFJDcTZyTlRRSU1HdG1wRFV1dm5kNkR5RGVkUUgzdURlWEQ0VXh6aURFczdXQ3Q2cllEV2JGdWRjNVdpNlJsakhBYW1vejQ?oc=5",
+      "outlet": "El Universal",
+      "outletUrl": "https://www.eluniversal.com.mx",
+      "published": "2026-10-21T07:14:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Alfonso Cuarón receives the UNAM Filmoteca Medal amid applause and a Goya",
       "about": [
         "MX"
       ]
     },
     {
-      "title": "Trabajadores del IMSS protestan afuera de Palacio Nacional; acusan despliegue de policías y vallas",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxObGV2Zml0Ym5jZzY4VnNrRjhrd1FxNFE0enlkOUVpbWx4NUY4Um5jOGo2WnFvMl8xNUNJZnYzN0tZaS1kQ3N2Ql9SMXRGc2diVlNYQ0t3c0FDdFZkLXRFNFVGOTItLVpIUmMyaFMzRzdCVW8wcW1NSy1lZGdDTFhLYUNWc19WY1FreFV0YUJ0X3BuMld5TFczbFNCRFBaaVdGMXA3N2hQUzduSzJ3bGtsMFdWRG1XWEFIa25XZi1sUXl5XzhGa0xMMVZ1YmdxUmlkaFFWYmVUUDZlV3RCbVpz?oc=5",
-      "outlet": "El Financiero",
-      "outletUrl": "https://www.elfinanciero.com.mx",
-      "published": "2026-10-20T14:50:00.000Z",
-      "en": "IMSS workers protest outside National Palace; they accuse police deployment and fences",
-      "about": [
-        "MX"
-      ]
-    },
-    {
-      "title": "El exfiscal Jáuregui niega ante el juez de Chihuahua haber autorizado a los agentes de la CIA: “Este asunto tiene un tufo desagradable a política”",
-      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQbWFvWVg3MllOX3FKWmFNMENZRE9SVXM0RnRjbVVGVWNMTnlGazZ3S0w5NXB4cGVRelRvYnE1SjhWTnFHVml5bklmUGNLbEtkb0RaVjlKU0t3ejRET2xBQmhFcVVJUGgxRjBwZll6bjk2enc0UFU0WUdxSjRvd0dFRUZ2c3B6Rmo4QUNJUXR0RWZ4OVhRV0VmSnlmWEFMd3lhcW95UHlFLUMxMmhncmxUbjJSYW11c1VSZ0tmSzI1VHRZWF9rVVU4QmxEVTExcU45c2diLTY4Q3lzS0QzbzR6NXZuWUpvMVlVcHNTZjIwM1NFZGxYN3NrQmxTMWhhUDFQQlkwazIzR3JLNzFsT1paU0lIUdIBpwJBVV95cUxOVUxWeU9peURtQ1o0WGgyTzh1d1FibXQwNEQ1YWZkcTJOSGJyOThUR19TT0U0SnlKU04wMEhXb0thZXlTNXNZVEtIN1dtanVOZHdGZDBralBkOUt1QTgzWFZGTWRMVjRvMHhjUDVlQ0cxUDdsSm1oRlBmWFF4WHpaRV9HODdOU0h5eUxuOHFaeFkxVl9Idm5SV2JRWlRPMUJoOXhWd3VoM2c4N200dU0wRS1CZHdGek5nTG5IR0pFbnNCZDFZYWdFQllvUjNybFcyVHhFSUM1bjNwa1FiQVZ3eVN6ZXh6QVJmZlNVQTRHNGdROUlLR0RFNW5LTWtfRF8zbGpLVGNnNktTeHJPX0swOGVIczNvdnBHOFpDZjFESXJuUGFBVWxJ?oc=5",
-      "outlet": "EL PAÍS",
-      "outletUrl": "https://elpais.com",
-      "published": "2026-10-20T17:10:02.000Z",
-      "en": "Former prosecutor Jáuregui denies before the Chihuahua judge having authorized CIA agents: \"This matter has an unpleasant whiff of politics\"",
-      "about": [
-        "MX",
-        "US"
-      ]
-    },
-    {
-      "title": "Tras fuerte movilización de autoridades federales, detienen a 'El Nenuco' en Zapopan",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxONURveFM0MUR5cnlsMXllMEZXeFNyVUxfUDF3Z0ZmaktqQ09nNzE2MnFsb21VLUsxdGFHOTMzNnItdGwwWGZaNzRXRkZFSWtONUt1VU9ISmt5VUczUFBnTmt2YWw3TGZ0U1FSaWFDaUdrSTRLeGpfVzBKZlhjeWRWZ2JJWmRVZ2ZYZ3NjZk1NUWtWbUdVMEVrcUNpSzFJTjBxdVpKaHNETDRpMzNFMG5GWVhkTlkzc0gzTkZaUUpMZ05vZ1lJQVBpbUFDbmpqd3fSAdQBQVVfeXFMUHBxQk0wV1ZIVU1MUXRZTkVsb1RmQVN3NlU3Y2VDdkEyVXVCRURvWkdfUk9iMjVTT093elF2TjV1SkJ2Vnd6c0pQMGVQbHRxSkJfbHRidzNxalJvTHpvVW9aRk44NTcwUVMtcEZxbEwydHR5czdEQjdCQnE3b1k4bGlVN3Atb291R0gtMHFEMHh2em1kT1BfRTUwaUtqT2ZVZVlKZzEwS2tpa3RVeHlnaWZ2WUhNa0p1R1ZQeW9FMGpvVTVrV1UyaUEwa2dkSmxVZFBZR0U?oc=5",
-      "outlet": "El Informador",
-      "outletUrl": "https://www.informador.mx",
-      "published": "2026-10-20T23:39:24.000Z",
-      "en": "After a strong mobilization of federal authorities, 'El Nenuco' is arrested in Zapopan",
-      "about": [
-        "MX"
-      ]
-    },
-    {
-      "title": "¡Ya viene la Catrina!; anuncian actividades del Festival de Día de Muertos en CDMX",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSmlDdEt0b3h6X2dUb3lEVm5TVmJnekt1RGpDQW5WRW1zN0RQMEtrRjgwVHh3ZnhLU1lqMmJmUm9wVTcxVTA4R3NqM0MtWEVMd3luQURqbTRzM2hKU3RhbXNjZGxBOUt1QjRLX3IxSmlnSzZZd2p4QzYwd21KelJiX0N1Mnlfb0FRcW9PakZNX05MUVhlQkxKaG9pTHhuUHhQTmhzWThwYzNsQjJYZ2NFbFY4M1lmQ1g1VzE4OWJnMU9xZ2xhVTN0Zw?oc=5",
-      "outlet": "La Jornada",
-      "outletUrl": "https://www.jornada.com.mx",
-      "published": "2026-10-20T22:23:00.000Z",
-      "en": "The Catrina is coming!; Day of the Dead Festival activities announced in CDMX",
-      "about": [
-        "MX"
-      ]
-    },
-    {
-      "title": "Confirman detención del juez corrupto Enrique Romero Razo; lo trasladan al penal de Tepexi",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOdXNrVzRUMFBlQk9sMGV1VTFSWF9Xb0tRQUd4MF9za053dzZTd3RqbUZucFdqbS1HMkwwR3dfekFxTWlDcHNnX2xuQWNFWlRzbFFlb0k1OEdNT1dLRUYwOGstRWl0bzl5MHQ5c29iQURFQVc2TTZ3bjhmOE12X3Nfb0xQSms0Y1J0QWFYVXREVlhMb1U3dXhENnkycTNLNEJSRmxrVlRpaHE5U3J1czNEMVRVNnVoRkU5X1lZUjlaRXBkZ3hXSXFF?oc=5",
-      "outlet": "Diario Cambio",
-      "outletUrl": "https://www.diariocambio.com.mx",
-      "published": "2026-10-20T22:49:25.000Z",
-      "en": "Arrest of corrupt judge Enrique Romero Razo confirmed; he is transferred to the Tepexi prison",
-      "about": [
-        "MX"
-      ]
-    },
-    {
-      "title": "Campaña de Lula pedirá anular candidatura de Flávio Bolsonaro por intromisión de Meta en elecciones de Brasil",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVWFLV3VZejhlX2xpRWM0eEFod2kxLXhENlFFWGdUeDlYSUJ1T0c3UGVVaU5jcl9oc0lXOEk2WEVPaFltWjNaNFlVZ285WTgwOWxSc2ljcWQxS0o1ZnhST1JBc3U3bU1neFBNZXBiZnFqb2FjX2JFaFR4ME9vUUtQdjlzSUU4S1p0eW1fZDlOTDBvRmhPZXJBcWs0U0dmRVN0OUdWZVNpMVdEU3cwbnBhX1oyT1NnU19kWXNMdHhFQ0tVdDRKWm0wYXVoT29hVHlBUFNaY1MzOFRfTTEzUmNYb3ZLYVhCVkpMazBxZDE2NjlKdlU?oc=5",
-      "outlet": "La Jornada",
-      "outletUrl": "https://www.jornada.com.mx",
-      "published": "2026-10-20T17:36:00.000Z",
-      "en": "Lula's campaign will ask to annul Flávio Bolsonaro's candidacy over Meta's interference in Brazil's elections",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Las grandes preguntas sobre quién es responsable de las interrupciones de Starshield en Ucrania",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZC1pWUJXQU8xT1VGWFlscTYxOFVZVThDRFNub0NOd0xCZjV1SFFzcnJJdVJyc3plWTB3Si1ZUXNFSXlJdnozSFlHZTBFSEZKY1d0Q3ItaE1KQzRLaC1lUFNqd0ZZNU5HMUJzUHRyc1E5ZG5HdWdqT0JrdG9DaUp5NTkwbFlVVDdvSXlyeTNHWW45N2d3RnQzR2NMdEJSM3FuT1c0YU1n?oc=5",
-      "outlet": "CNN en Español",
-      "outletUrl": "https://cnnespanol.cnn.com",
-      "published": "2026-10-20T19:44:00.000Z",
-      "en": "The big questions about who is responsible for the Starshield interruptions in Ukraine",
-      "about": [
-        "UA",
-        "US"
-      ]
-    },
-    {
-      "title": "Acampados en Portugal piden \"huelga general ibérica\" por vivienda",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVkd6anBZdlRKWldUaGRaUkJFNW83LTRadFBQYU10T09YVV9kXzQyQWNORXhhQUVUOFRITk81bnJzWWRraDc5THRVQXhKNWFicTB5cDhOUG5HbzREU0w0MEdMellUMXJFcG83azN4MEtFTkhnRm5IaXJVdk5Sc0EyWXpsbkN5NXBGUVdWUDJfM1dBSHMzWDRTR3h5cmFtdnVjLTNtbm5ZWVpqMHNzZVlMUmlIVmFDYU9WdWdHV0Z0OFZFd25iOVFIS3ZLc19yLXhMTWt3SzhxakpKRWVncEJ3?oc=5",
+      "title": "El Museo Nacional, nuevo capítulo en la \"batalla cultural\" de Abelardo De la Espriella",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPX2FFVGtiSUp2Q0xTUWRKTThnZHRycTJJSHpJQk5kRmRldkRfVGZZZ3RtUTFNOWF6M3dRUm5QQ1hRbjNGb0I0c2tOQl9WdFlwSU5Jb1R5U2NaWG52TFpyWk5od0J0Ml9TZ0pHX25BSG9NZVo5ZlEzNXZ6MF90UFdzWDVTZWlQSW1reXFmZnJkUHBoMmxYVV9aclc3cjhvS3V3b2hTSzRLaFhEN3JvWEJyNWtaNEtFZzZ1V21UTGJB0gG-AUFVX3lxTE9rejFwWkQ1YW5vbjdSYTItMmZ3eVhKXzVsU19YMUJYUDlNemphUFlfSnJuQ1FkSGJ0YmFDLTMxN0tHdDRwbDdSdllLQ0ZON2lXeUhodlJjQ21OVXZEZ2t6TmE0Q1VXRW5lYkMxbWRIV0VXeEpkUF9aeTNiVE9mRm03NVhHSzQxQk9YY0M0T1NQSjZ0QUhqb3J6TUxrNFVYQWs4cGlROXJIZGhZbmFNc3pTbFhmOVN1V05HX2ZCQWc?oc=5",
       "outlet": "DW.com",
       "outletUrl": "https://www.dw.com",
-      "published": "2026-10-20T13:56:10.000Z",
-      "en": "Campers in Portugal call for an \"Iberian general strike\" over housing",
+      "published": "2026-10-21T09:36:30.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The National Museum, new chapter in Abelardo De la Espriella's \"cultural battle\"",
       "about": [
-        "PT",
-        "ES"
+        "CO"
       ]
     },
     {
-      "title": "Italia se contagia de las protestas estudiantiles en Francia",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWEZna0RFVmR0bF9vSkFhUTd2LVBHd2dIV2t1R21yRmt2bjNIei1nVThCYl9HNWJpZmtkMFZJdmlMNVdJcmlBYXBkQnoybmhCLU9INXpkVDJ2S3R1UjNNZ1VSYmx6YTBDNEg4eGY0ZE5XQXZYT0lUdklBQmdlU0FaNnJ6cnJIa3JDdV9TWVpVVkJMSEVlS3NtZ01IRGk2LWFGN3hfRlJPbG5xRGx4X2fSAcIBQVVfeXFMUGI2SFB1cEEzOFkxeFNYWktnSl9UeXB0ZG94WjAwZlU3Y044cVJSaHFHdkZvRjRFQjMwWkRMa2dkRlJvcmpsQXlDOUhWUVhBdEZFUFZQOFpnN1V0TmZaS0NjVV9NSVk4QzRjZzlIMWJ3bDJ5UDlpWUJxLWNqMHlmdkduSFVSc3lNQUI3NUlkRDVZSkpWTGZyb1hIUC0zMzNHMjczakIyS1BuX1pKSWV6M1ZvTVo3bnEwSlNkRUkxRzlOUHc?oc=5",
-      "outlet": "EL PAÍS",
-      "outletUrl": "https://elpais.com",
-      "published": "2026-10-18T19:34:29.000Z",
-      "en": "Italy catches the contagion of student protests in France",
+      "title": "Alejandra Gutiérrez busca diálogo con Libia García por el puente del bulevar Aeropuerto - El Sol de León",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTTFoaG5MTnEyT21fdlBWRVRKNkppcmcxeXU3YUZRbEJNNHhkRGtkek5PbzRoS2l5SlFFcVRWNlZyTUh4OGc2VEJBXzVwQnlZVmUwdGljN1dHYTBrRklKenNuOW54VW5vWWtteXp5cmkxN2tQai1kaTRpaTlVMmpoVEZhMlNCU0RWVmE3NkQ4dEo0b1VYdDBGUG5ENzJxSk1vdkhWajVXZmc2ZVlpcTQybzZtNTBwNkxRQ1R1Zk9iU0VkUlp2dUd3R0pReGpFUQ?oc=5",
+      "outlet": "El Sol de México",
+      "outletUrl": "https://oem.com.mx",
+      "published": "2026-10-21T09:33:45.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Alejandra Gutiérrez seeks dialogue with Libia García over the Bulevar Aeropuerto bridge - El Sol de León",
       "about": [
-        "IT",
+        "MX"
+      ]
+    },
+    {
+      "title": "La Mañanera de la presidenta Claudia Sheinbaum hoy 20 de octubre: farmaceúticas tienen motivos para retrasar entrega de medicina, conflicto en el IMSS, caso Maru Campos",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSXM2bXJ5MlctLUxwVm1zc1YtTW02Y0JKX3BwOHFzYkhTUWpZX1hGZUVsV2NYd29uZVpYUU45bFRZcXUwb1ZBX1dxUncxc252eEs0U2pZaFBEQUoxS2pGTnNVTDYwd2I5YndtekN3ZFBjRC1obXVvTm1uaGFQZFRlZTBsMUxCUjNJYjd6QnIwcGQxSnh3T1VLUlJZV0tTQzlUY1lLcUFIV0hrQ1nSAcYBQVVfeXFMTmVNUjB6cjJreW4xTUg3dnhBeWhCdmNZV0U2UU9ZXzByamhSS2tKMFlfN2x1MWhLZTRoeGM2eTVwWlhWYUtvaDZaTVU3RnFGRjRrZWhMbG1MRjNvUWpOUVdwOVlMR2pKRmJfZTBQV3ltNkZtNmJxOWxEWXBNVE82SERtTjNHQTA4ZHptSlhaWm12T2RVV2cwZWVrSHc5YWd5WFJXa3R6MFZkTWx2eTdOcnZZbDVRNEJQYTlqLXBVZWprR3hkcExR?oc=5",
+      "outlet": "Infobae",
+      "outletUrl": "https://www.infobae.com",
+      "published": "2026-10-20T16:58:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Mañanera of President Claudia Sheinbaum today, October 20: pharmaceutical companies have reasons to delay medicine delivery, conflict at the IMSS, Maru Campos case",
+      "about": [
+        "MX"
+      ]
+    },
+    {
+      "title": "Francia impone toques de queda en París y otras grandes ciudades \"hasta que sea necesario\"",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNTVRJVFZxOVAyajYwT0V5YVV2YTlWM3RYNDNJTEZHTFdFRDRtNE9OekxqSElBWjBFYTVtLW9LdUU4UjBNd1FtS0ZkTE9hTW5XRmxFNnZlalJBYndhWFF5aXZDamtHd2tKckdRWGhfVzF2VUZ6b2dKMkxnMGZLQTFnU29sZkhxdzhDU3FzQ083X2RYUDM4Nkd2djlMM2dlWjUtQzNOaHhDMmJYdlIxWUY0OGU4bGdoZHZnLUFzOXc5dTc3am5FX0l3b1cxaEJucjZvc2VmeWN0WldPdXVoTEVESEhR?oc=5",
+      "outlet": "France 24",
+      "outletUrl": "https://www.france24.com",
+      "published": "2026-10-20T06:17:46.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "France imposes nighttime curfews in Paris and other major cities \"for as long as necessary\"",
+      "about": [
         "FR"
       ]
     },
     {
-      "title": "‘Pesadilla’ para el tipo de cambio al cierre de 2026: ¿En cuánto cerrará el peso frente al dólar?",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPV1UtZW1kXzFTd2ZVRnlGTHZSR3pWb0U2MDE3aVh6cUFCWnpaX2QzZjhJejdmYk1QZDNlZ3AxSDNIUmdhX2RhR0NoQXZUQlBMUlVyMTUtU3RnRUh4eE5iTkpiLW12SnpyQ0NJalEtc21RV3NmTi1LVkdLTWlQa1U4M1JRb2lEUklpRFBUY0wzcXNXMUxBVEtmVzNIREl0WDhHWEowWWl4dTZQeVJQcmV2MzcyUHoycEdXaXU4LUwzYnZjLTJKRHVLOGZfbXVKTEFrRDRXRXpjT2VydG94bVE?oc=5",
-      "outlet": "El Financiero",
-      "outletUrl": "https://www.elfinanciero.com.mx",
-      "published": "2026-10-21T00:50:00.000Z",
-      "en": "'Nightmare' for the exchange rate at the close of 2026: At what level will the peso close against the dollar?",
+      "title": "Regresarán campesinos a las carreteras; anuncian movilización en 10 estados del país para exigir respeto a acuerdos",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPN2dQN0xXNVRMQUxCLVBKNEZmRENtX2hrRXNFOVVaaGRtQ0c4ZmxtUjA0dkUtYUt2Wi1vMFNiWnFLOE1neXd6Y3hhSFJTdEtLSzZjSnhpVGRmTFFwT3NIVUR0bVJZRHNoQ3ExR3RqUWphMUh2RllaU0lVYXZ5LXVqdndOTm5oaTBQcUJnbWpGbWprNWJYUmxrSXljZVNnN1BpRDBQS19vX2lfSzlTaUNQUUdMUG9pcXo0c0NCZUtGX2RIdjg4QWZzNzlMZGpSTVFpOW9zTE9FellaYV9ndk1ScVVaN0VUNHlHVGNvbXBGVHUwR3l3U3pV?oc=5",
+      "outlet": "El Sol de México",
+      "outletUrl": "https://oem.com.mx",
+      "published": "2026-10-21T07:51:25.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Farmers will return to the highways; they announce mobilization in 10 states of the country to demand respect for agreements",
+      "about": [
+        "MX"
+      ]
+    },
+    {
+      "title": "Resumen del Atlético de San Luis vs. Querétaro: Resultado del partido de la Jornada 13 de la Liga MX 2026",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUUFweWFNVjZBZUVHOFFyTEEtR2xTUmxOWC1LZmVRRV80U2wzZW1idlo3WVdaYVlzVl9HZzg4ekVrb2JMcnJXQUkzdWxUaUFuT0ZIb05yN1Rnb2NIOHkzYkVMdF95a016UTJMV2tEQVloOUhZel9aRTQxY01LeXJtRHNHOVJQTV9XRERMZXl2dVRoX3Y0RlUyS3VCaUgzalXSAZ8BQVVfeXFMTWhkUlgya21iUzdOcllhdVg1THJvRGgtbGx5MHo2TzFTQXR3X01QRDAybXdLOVU5dC0xVklYUGJIeU81WE96RWg4LWZscXZIOVV3WEJpT3d6a0kzM2laaG12OGxKMENJWTQyckVUaVdDbURMTUdBNUxRSGpRdHhWOXpoeDNySzF1R2Jfa3FnLTZQWVc3c3VMMVdkZkVaQ3NZ?oc=5",
+      "outlet": "Milenio",
+      "outletUrl": "https://www.milenio.com",
+      "published": "2026-10-21T03:02:45.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Atlético de San Luis vs Querétaro LIVE: Where to WATCH the Matchday 13 broadcast of the 2026 Liga MX | Time",
+      "about": [
+        "MX"
+      ]
+    },
+    {
+      "title": "Cuba es el país más envejecido de A. Latina y el Caribe, según censo oficial",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNGdGbjdLRUctb1gzdlh6N08zM1JkaFBJLU9EZnlZaFpiSHYxNDF6aUtNX2xsSlhRNlJoRVpwUmlXSmh4S2R6dGdGZjlXZXlzd25lNmV2M1Zrb3VQVWVyU1pWNFZ1WS1FSHVTNEVfTmZkaFhJR0JBOUpPQ1gzX0xndnJnVGZHU0tGM3JZM1Q2RUtUSWs5alNQaWVDRHhEVjVzaDg0dDlPV0pPMmJSSWdJRnFvNmVwam92aWNwU3hCWdIBvwFBVV95cUxNRnNYQ05vdF9fSFFQWGJfM0ZoVFpVYlJMVUxLVmxJTDZ4OUlWVFBnQXJtVVlCTHRMYXJ5eXh4b1NIc2pRRW5uZjkybm9BZ2FPMHRlY19qb2xoVkp2MmxUMGVpdHNfa1hENEVHbDUzNlNfNnNxUFJaZ1hRc05OdEY5WVlxZDc4clZ1aHFlbkVXMEdQZzM0aHZJQzF0VVp3Q0h3NWdWRUtROEhqZjl0aTZKU3g2bGVOOFhPNFlNMXpRUQ?oc=5",
+      "outlet": "DW.com",
+      "outletUrl": "https://www.dw.com",
+      "published": "2026-10-21T09:33:54.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Cuba is the most aged country in Latin America and the Caribbean, according to official census",
+      "about": [
+        "CU"
+      ]
+    },
+    {
+      "title": "Netflix crece al menor ritmo en años y aviva las preocupaciones sobre el estancamiento de su audiencia",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPNXEwSlp5bUVvbS05MmE4VEhCd2tXakVYM1JGMmIzNS1CX2JYcmtrWXdMX2xPZFdFQ3pERDlnR2pDVkVqdmFWaTBHWnJRc2d0UG9HUTE1TG5tQTJkZDFJOF9UUzFvM01PY1lxY0s3dUJ5WHZrT2FBa05ldzVrME9PeDc2QnBRUjA0WWxiRnlnYk82djNuNDVoSXExbGdMa3B2cmNONEh5X00yYWdXQjBkZHRodWVmbEFaSjdDN1pVZUQwSmNhcUNmeVF1QjF2V3B0Y0xXaHFtcXBrV3kwUUh30gHzAUFVX3lxTE9BdTdnZThxWjAzR3FVemRaRnYzWjh6RzI3MGtEajZwbWNJenlUUVY0VnIyTm1XWFdrRDVDdjY2X25hTmRSOWF5bkJIWDczTzZXZEhyRVBvNFllaGo5QnFDQzY1NjBYUVFYVTN5WUlTRWNScXVmZVo3cDkxQ01JaEozRGN1bjl4TXRWNHpROFJxRk94WTJpSUNqdmVVZk05TVZZUWxsSlVDcXZLVUlqYlRlMkR1bDdkTk5qdWlWcGFHOGliZFU0V3doRi1HcFNRdXE3aFhVdTJWMWFqTjBPQk9PcWlxQzNtYjRpSjZrMWZISUFkWQ?oc=5",
+      "outlet": "EL PAÍS",
+      "outletUrl": "https://elpais.com",
+      "published": "2026-10-20T23:07:20.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Netflix grows at its slowest pace in years and fuels concerns about stagnation of its audience",
+      "about": []
+    },
+    {
+      "title": "De servir en Afganistán a operar en Chihuahua con armas: la última misión de dos agentes de la CIA formados en el Ejército y la Marina de EE UU",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQRDdpQ2xkdkczUFBPQTJLbWY1VXN2UUZHS09PcE04NXdhSWFsc2JWcUNoTHpmTzRFT01EUDhNX2FTLVFFTXBxSll4Sk1sTFBUaUhNeU1SR1lFRVNQdE1pQ3JtY3Etd21rZWNpUVBiSG95aUJVSUY2Q3JoVWtoVWZjR1Fpd3FHNkUxb1Qxc0x6eXVwYXRBM1FfY3YxTmFlem1HTmtfUmxWSzJWRC1jbE1CVEhjVmxsbXVjR01MekdtVS1waHBUcFdQbWx6bmxvVEtJVDMtREUzT0ZBMDRVcWdtdUxXT2JuY0RGaWRKT0JrYUo5OHg3ZUJySkw4ejZDWnVkQmc1NkVUcy1EQTFkZmZpYllR?oc=5",
+      "outlet": "EL PAÍS",
+      "outletUrl": "https://elpais.com",
+      "published": "2026-10-20T09:30:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "From serving in Afghanistan to operating with weapons in Chihuahua: the latest mission of two CIA agents trained in the US Army and Navy",
       "about": [
         "MX",
         "US"
       ]
     },
     {
-      "title": "Precio del dólar HOY martes 20 de octubre de 2026: Peso mexicano se debilita por menor apetito global al riesg",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON3ZJaHdCb09QR2l3UEZnQmktOXpuZ3pmZUM0V3hUdlF1ZEhra3ZPQXVIRzFTUGVPTkRtNWdIT3QxVEhmOEdJbXp6SW1EUmpBdloyOEFMOF9ULWk3aG5KZFFlcTFxT2tCRmJpdHpjQmE0UktPcGlITjV2YlhESmMtV0hUa0lTRkJ5ejZJeGFuTUh4c3c4dVpmRlBwZFo2Z9IBngFBVV95cUxOTjJtSXZITXc3Y0ZuQXY3OTljVl9RbjI3RDVHR0RJMnV6MHBzd001Z0dTU2dYODYtdkZNWTJtYUk4S29lWEZTM0UtLTQwcVgzSHV5WUlIOEM4RzVVRWdNd1hfXy1qOUVpNFFUcmJNR3RRMVN0VW5YSktVMnp6RTBZY1ZaSGRyUXdrY1B3WEF0ejZWMFExZnpuMURxOU9qUQ?oc=5",
-      "outlet": "Milenio",
-      "outletUrl": "https://www.milenio.com",
-      "published": "2026-10-20T21:33:42.000Z",
-      "en": "Dollar price TODAY Tuesday, October 20, 2026: Mexican peso weakens on lower global appetite for risk",
+      "title": "Tipo de cambio se ‘arrastró’ por movimientos: ¿Cuánto ganó el peso al dólar HOY?",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTlZLM05IY1g5YzR5OEc5ZFlENkJTTzh5b0UtYW1zZ2U2VVB6Q1hMMnVNUkF0MjlBbzNDT19JOEctRWdGQk5ZTGNMQXdoMmthb1UzeUV5Q19GU0dISXlmX3k3VGRhSEZadXNxcTBackg3M2hFaWN5dHA3NVVVdkJWLWR2dFQyOS1xeG13Y3U3b3ZpS3hJMjRyQ0JiT2VKTlpmTWFGNHJraGtqcndfeEZWRQ?oc=5",
+      "outlet": "El Financiero",
+      "outletUrl": "https://www.elfinanciero.com.mx",
+      "published": "2026-10-20T20:38:12.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Exchange rate was \"dragged\" by movements: how much did the peso gain against the dollar TODAY?",
       "about": [
         "MX"
       ]
     },
     {
-      "title": "Resultados de la Lotería Nacional en vivo hoy, martes 20 de octubre 2026: qué números cayeron en Sorteo Mayor 4032 y otros sorteos electrónicos",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNUDRHOEhoZWN4MmpaQ3JxanM2YXI5V2VESXhxa19iUEZsOEszYlJBeEhqUUM3LVlPNlF5WkdfX2loR28zV1g5bTVaRkJWUmpNT3MzaFZBdUxJZVIzUlItMWc3dklFR2NBVERobHNKN3RELUQxTFBEM2RyWUdWNmNKN1l0LVZMOUNEREdTNUJtejVSSWJyc2lpU09ncjhlZlV3OG8tVWo1SWpJeC1yTjBoVUdFY3NoU0xWVldpbEI2dUZFeTlONHFVcENraklUYVJTN0pOMmMtZVJGdnhVeDU3dEpGOEtRc09ZV2ltT0l0dEFueWNPaWp0T1ZycHZHbFJxR0lIU3YxMlRESmI5MmNuY0lTaTd6VGc?oc=5",
-      "outlet": "Ambito",
-      "outletUrl": "https://www.ambito.com",
-      "published": "2026-10-21T04:53:52.000Z",
-      "en": "Mexico National Lottery results live today, Tuesday October 20, 2026: which numbers came up in Sorteo Mayor 4032 and other electronic draws",
+      "title": "Final Fantasy Resonance – Review",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5za1hITnFLbW5mYXRyNm5XYVNUSnZlZXUyNHUwR3g3N2NJa1drNjNzblJpTnZNZG80MHVvMDhlVmhCTzk0TFk2VzZOZ3ZEUmUzMEt1TDFGbkpEVHNwVThSWXU5SlNFVF85SmZxZHM1VWVHZkE2ZjJQZA?oc=5",
+      "outlet": "PC Master Race Latinoamérica",
+      "outletUrl": "https://www.pcmrace.com",
+      "published": "2026-10-20T22:37:58.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Final Fantasy Resonance – Review",
+      "about": []
+    },
+    {
+      "title": "Checo ve su retiro cada vez más cerca",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80U2N1MG9JYVJSUU1MTHdrejdVYjNROFdrYXFnRXNvbFF3YTd1MVY0M3pvSDlIeE00TWRQU3lVZFgtaWxRNzRRUnhBX0s1V2ZLcXN0TjU2Vi1rbTNRcXM1VEpFV29VNkhuNnh4SzE2V1VVdi1jdHBIRE5hNA?oc=5",
+      "outlet": "Reforma",
+      "outletUrl": "https://www.reforma.com",
+      "published": "2026-10-20T23:39:34.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Checo sees his retirement getting closer",
+      "about": []
+    },
+    {
+      "title": "Ganó medalla de oro en Indonesia y ahora regresa a Altamira: Ángela Karime viajará más de 48 horas",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNTZKbEZqUklJQjlYRm1keUtGc0NkWXdrZ19PYVFidzIza2pEZUpndVJ6bzI0V1J0SXQwbzk0WUp1eFo4TTUyRXVuTEEtZVU4aGlqbFhsYVQyLVZpN0QyaFd5akJ0QzVWMW51cWJvSnRQY2JiTFBTcUJ6LXdwYk5FdWJ1NHhMUGdFeUtLcUNjZkZ4bFhobWo2VFNmOTJtekc4WVdaekVnVWxuai01bTFnY2xtOFhWWGVzZkpTbno4SndhXzdtX0pubThNZ28xWmpNczAxSXF3Mkt2U2N1bzdj?oc=5",
+      "outlet": "El Sol de México",
+      "outletUrl": "https://oem.com.mx",
+      "published": "2026-10-21T06:24:21.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Won gold medal in Indonesia and now returns to Altamira: Ángela Karime will travel more than 48 hours",
+      "about": [
+        "MX"
+      ]
+    },
+    {
+      "title": "Incendio suspende servicio en la Línea 9 del Metro: ¿Qué estaciones están cerradas HOY?",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxORUpLeEVpNHNDVE82dExkbWl3ZkZVZmdLNjBPM2R1R2FXXzZpQU8wSkd5S054WG83aDBCTkF6SFkxTUJhSGdZLVBRZDUxY3BZR3lhcm4wazc5T0F1WW9RQlBMbFhvZ1E2b1N1cEZ4cEhVdFVLaHFjUUkyQzJnSHVEY3BadVZyTVVGaDVKSDJIbFRpOXJzU1BSODBmZGwtaTlJQWNnTlZVWkJ5Yk8xZ0RxS1N1Vkd1MHR0UHFtbUJBYm1LS2ZzVWtvQktlTVFOS3hBOHpGQmdQbjY?oc=5",
+      "outlet": "El Financiero",
+      "outletUrl": "https://www.elfinanciero.com.mx",
+      "published": "2026-10-21T04:46:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Fire suspends service on Metro Line 9: which stations are closed TODAY?",
       "about": [
         "MX"
       ]
@@ -208,72 +318,22 @@
       "outlet": "Milenio",
       "outletUrl": "https://www.milenio.com",
       "published": "2026-10-20T14:51:00.000Z",
+      "outlets": 5,
+      "trending": false,
       "en": "Official. Walmart Freshness Tuesday: tomatoes at 27 pesos per kilo | OFFERS on meats, fruits and vegetables",
       "about": [
         "MX"
       ]
     },
     {
-      "title": "Masahiro Sakurai alerta de que la IA inundará la industria de los videojuegos con copias de títulos ya existentes",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOanc3MTdSeGJqZVIzcFQ5NVJJUnctLVZzRGFvZW9Lc1hZcWFQRHQzLXpaWXZEQkoyTmdKbTU3ZjZyWnVvanE1ZjVlLVA2RFFvRGJucXk5X053LTZmWTJLdVZNTzZvUkhFTC1RcjRLOUJVQnRjUjhzaUhqWmdCYXBzRVhmcFRaaUNCZUlma2p2a1hLRUlxb3dSNlhVc3dUM3p1MDQxVW00ZThORnc4bzNjUTBqdHR0VEtwNWdiZHo4Sk9jbU1vMWtJZ1pkNUJYUFRaY2dyOGVGdjNxQ0xWZjVuWjUzVnc?oc=5",
-      "outlet": "Nintenderos",
-      "outletUrl": "https://www.nintenderos.com",
-      "published": "2026-10-20T15:26:47.000Z",
-      "en": "Masahiro Sakurai warns that AI will flood the video game industry with copies of existing titles",
-      "about": []
-    },
-    {
-      "title": "Viaje a la Luna... de Marte",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5dFpJVnV6bVBtYlloVThMQ3JuZVhaWW81eWxmMjhKekJLVWFYTnQzOENFdE9hLUhidklXRVhzU3FqMy1qYlo1bE81dFcwV05sSW5ZM2dLMzJ2WFVucFR2RjhiZzVZQQ?oc=5",
-      "outlet": "La Jornada",
-      "outletUrl": "https://www.jornada.com.mx",
-      "published": "2026-10-20T10:00:00.000Z",
-      "en": "Trip to the Moon... of Mars",
-      "about": []
-    },
-    {
-      "title": "Final Fantasy Resonance – Review",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5za1hITnFLbW5mYXRyNm5XYVNUSnZlZXUyNHUwR3g3N2NJa1drNjNzblJpTnZNZG80MHVvMDhlVmhCTzk0TFk2VzZOZ3ZEUmUzMEt1TDFGbkpEVHNwVThSWXU5SlNFVF85SmZxZHM1VWVHZkE2ZjJQZA?oc=5",
-      "outlet": "PC Master Race Latinoamérica",
-      "outletUrl": "https://www.pcmrace.com",
-      "published": "2026-10-20T22:37:58.000Z",
-      "en": "Final Fantasy Resonance – Review",
-      "about": []
-    },
-    {
-      "title": "Super Paper Mario ya tiene port nativo para PC (Windows y Linux) con 4K, 120 FPS y Mejoras Gráficas - Guía y Video",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNalFFTFJ6Qm1ySFB4RkFKTlpDcVBFbERJRnN1T3JGelFFSDl2eTJfak9qY0VxeEg0NkszQk9POUUxWm9DWjBzUEFZNjlTSTFtcEdYS243dUZTU1Y5U2IwUUVFdGozclJ5VWpZY2d0SzhtUzFEaGtIUU9CR1NpUV9xYw?oc=5",
-      "outlet": "PC Master Race Latinoamérica",
-      "outletUrl": "https://www.pcmrace.com",
-      "published": "2026-10-20T23:50:29.000Z",
-      "en": "Super Paper Mario already has a native PC port (Windows and Linux) with 4K, 120 FPS and Graphical Improvements - Guide and Video",
-      "about": []
-    },
-    {
-      "title": "Maribel Guardia \"declina\" convivir con su nieto: acusa que Ime Tuñón planea \"trampa mortal\"",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMXdlSktXX3MtaFd0ZkxHXzdTaW5OTzZUWEtoYU03N29NNGFMSXBJeUtCdkN4SXdOZFFxT1FmNGM1MG1IbXVKNV9YMm12dzhOcm14a0puMmt3WkZiTUpEWjFGM0F0WGtFTHM0TGhnbWx1UEZnak82enpiR1Z3Qmg4TDhXRW5tcHh1SGxXa1JhZVpFOUVZeFFQQUk4QVFhTzlfZUVwRFZNSU1Sa2h6eW5td2ZMbkVqZTdfZmRJN2VBY0J2Sjky?oc=5",
-      "outlet": "Univision",
-      "outletUrl": "https://www.univision.com",
-      "published": "2026-10-20T13:07:00.000Z",
-      "en": "Maribel Guardia \"declines\" to spend time with her grandson: accuses Ime Tuñón of planning a \"deadly trap\"",
-      "about": []
-    },
-    {
-      "title": "La actriz Christina Applegate revela que estuvo 5 años diagnosticada erróneamente con esclerosis múltiple",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pVUVXWksxaXhrYl91MUc2UDZiTlBOQkpqcFFRYzJNVUFMRk9FQV85ZmVQanpoWG5tYkZ5cVo2THhSRzU1MUVZR19NUVlfNTVRUlc0a1JxSFJqU21U0gFiQVVfeXFMT1prZ2ItX1dYYlpSUUoyQmpZbEpqTFVkenhyN1ZfQ0owbUx0alBaOUpTbjlyekxZMkpzSmJTUW9wa3dGU3hTNnlRTUlkaFlpX2ZxMFJZNGxCRFNOZk5Fdlc3NkE?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-10-20T21:50:14.000Z",
-      "en": "Actress Christina Applegate reveals she was misdiagnosed with multiple sclerosis for 5 years",
-      "about": []
-    },
-    {
-      "title": "Hijo de César Bono asegura que el actor no perdió su ojo: ‘Gustavo Adolfo no verificó’",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM3pWSnhlR2JTNmFJR2ZHVVYzZWZtTnhvTGFGamtvQlF0RDZlYXAzOFBmV1o0MHV5OTV4aWsxVUhTZ2lLZXNMTF9jWFItY1kwQmt4cjYwbmE3cDRXd1B3UERkc3VrbXgzSzluaE91M2xLLW93dTRHcld5eFllY0t3RXI1ajhMWTFCUnljOHYyblF3ei1WOTlvSENBZldUMXY0R1Bjd1RZVnZfbXhNWkt6Wmhob2RTYjQ?oc=5",
-      "outlet": "El Financiero",
-      "outletUrl": "https://www.elfinanciero.com.mx",
-      "published": "2026-10-20T02:08:00.000Z",
-      "en": "Son of César Bono says the actor did not lose his eye: 'Gustavo Adolfo did not verify'",
+      "title": "Carlos Loret de Mola: En la 4T, la justicia llega a los “números dos”",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOTB6Tl80OGE0cUpWeThuRjFlTzF3aG9MNzlxRnEtbE15OVhybHNiNDlXSXBnU3N6VEhUU0lkSFFiNElUNFM2bFFTbE4wWVRPVVNaWHNMUElCd2ZORFlPQlllTlBkVmt2SDJSTXdER1AxR04xQVJEeVFJOEVmdEpCNDgtWGZNSDB6OTNSMm5vTjJXUHRuaTRSUHBoWWR2SlB3bC1wN1c0RHlWSGZqOVBfUDk3eWc1UG8?oc=5",
+      "outlet": "El Informador",
+      "outletUrl": "https://www.informador.mx",
+      "published": "2026-10-21T11:30:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Carlos Loret de Mola: In the 4T, justice reaches the \"number twos\"",
       "about": [
         "MX"
       ]
@@ -284,51 +344,48 @@
       "outlet": "López-Dóriga Digital",
       "outletUrl": "https://lopezdoriga.com",
       "published": "2026-10-20T18:42:12.000Z",
+      "outlets": 5,
+      "trending": false,
       "en": "Actor Carlos Miguel Suárez, famous telenovela villain at Televisa, has died",
       "about": [
         "MX"
       ]
     },
     {
-      "title": "¡Se acordó cómo ganar! Chivas volvió al triunfo al vencer al Necaxa con un autogol",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcndudkVVYVU3MHdLRnpnTkdVWmpPcV9jc3p0cWFjazBNbE5CaGZIYWVFSGpBX2Q3SkdyeFhJWFVaNkVLZkJTam93OXBxSG8zNlBPVVNMX2MzS2Ewb3lXUGtsdkFsSzlzZGlnaFdGM2RId2wwT19FNkR6Q0xjRzhOZl93S2xPeFo5U2w0Y3N0dFNYODjSAZMBQVVfeXFMT2xwX2M4QnhESy1IcUJ1VUd4QWtubmVZbGs3MWZsNWx2dWE3cGpFRDVRaDNTSmVMLXJmOENFYlp3OVdSRnctNFRFdnJhR2V2UGc5YzJ1YzkzVm1RN0tNeFBmaF96MExrZjZPYmplR2pXbFBMMTZ3cmQwaXlvU3lGM0ZVRFhySmFlQTdWWmk0NHpXQms4?oc=5",
-      "outlet": "Mediotiempo",
-      "outletUrl": "https://www.mediotiempo.com",
-      "published": "2026-10-21T02:06:00.000Z",
-      "en": "Chivas get back to winning ways by beating Necaxa with an own goal",
+      "title": "Con o sin CMRO la construcción del segundo acueducto no se puede retrasar - El Occidental",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMzVnNlZVU09pTmN4NmlXaWo1NFVIS25ZWkVNRzlaRlBMZGRfaGVoaUk5ZDEwUjVzRHFlZzEzVHVOakRfWGR4VVBsdHRkbGVHcUFTdVh3YjBsMXd3U1FvUmxYVjc4YjlXX1pmMnhvMUZ4Y0tYTDdFOXA0VXg4RWl4TnVkcWVfVFFlc3hPLWVqUmpCalVwTTR4T3FwZFZYYTFWNEJ0WVJVNXhtd2VDZEgxazFaOUxiR3J4NTU5NWNB?oc=5",
+      "outlet": "El Sol de México",
+      "outletUrl": "https://oem.com.mx",
+      "published": "2026-10-21T03:39:35.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "With or without CMRO, the construction of the second aqueduct cannot be delayed - El Occidental",
       "about": [
         "MX"
       ]
     },
     {
-      "title": "Tigres vs León: Dónde ver EN VIVO y GRATIS el partido de la Jornada 13 del Apertura 2026 de la Liga BBVA MX |",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM3AtcFhlV0hsSWZTX3Z3MzRpeFN5dXR4Y2dZQ1J2bGROc1gtNmNDMEgyWmlUVGJteTd2aEFDSWJ0NjR5dVQ4RUx2ZF93Z29zcWtYWTc2cjdZd0lIZ1hNQ2I3anNCVVRDaTdPWjU5VnJORHczd0tuUEk1TlBqVkxUV0dXU2U1blJ1d293QTd3U0tfUmY1c1czOE1zN1JvYkdUOUVnRWxpQUhqeUZKZjREc9IBvgFBVV95cUxNdF9Ib2pDSEpXRzlsV3dWdE5PSEFZQ0dGQ19CeHU3ZXBVTVFCcnZHR09EeXB6WUg3S0MxSXRpbE83WVJWZHB4X0dRR01MREM0bjdRVDZPcnhlakZTQUhUdmpiX1NKbmdHaHZzc01WN1k5Q2tLOU5vei1tUDMwOHpqYWszdDNZeTlYS0plcmlXMWJ5QS1GRGNadUw0OXd1QnNLenNJdS1OUlJEczE2NlNaSm94VkNaakNyTXVFbHlR?oc=5",
-      "outlet": "TV Azteca",
-      "outletUrl": "https://www.tvazteca.com",
-      "published": "2026-10-21T00:06:42.000Z",
-      "en": "Tigres vs León: Where to watch LIVE and FREE the Matchday 13 game of the 2026 Apertura of the Liga BBVA MX |",
+      "title": "Temblor hoy en México: sismo de magnitud 4.2 en Chiapas",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUmI4bnpubF84ZHdsTGhqeVFaZzJxcHpJejlVZDQxSHQ4Smt6V3oxNUp4c3NIMUVKRTloUDF3SmFTZVl2MXdrQzhNZTAzaW5kTTR6YnVpWGxVWDRiMDc0M0dnaWVSRzZwLXJJVjJjMjFEM1dnamZGOFR1R2dHWlFhUU5jQURaekp3OVdNbDBNODRHMzlsQzN0aThGSnVaVnZWNm5KNldaWU4xaDg1cTREWDI0a9IBzgFBVV95cUxPdXptektDelI4ZDFrOFNGSnAxcEFueEotV1gwbmM4OW14czEtN1AtVjBkbDZIclNhY202amI0LWlDYTlJZ1JnTmxPQkNoSWZ4TlN5ZGstZTJtWUNFeVcyNmpDdWlnV0lWZ185TzN5WHVlMjBYNlhCZU1CWVRfTXNnd21MTnp6LXNoTmxqTlZpNERYX2V0ZFBaYzJndXpIRTh2RHluM2tieDRBNHZJUWJhYnhlMDc1Tm5YVDVCazl2VDA4MlJEQV9xMW1kUW91QQ?oc=5",
+      "outlet": "Infobae",
+      "outletUrl": "https://www.infobae.com",
+      "published": "2026-10-21T03:22:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Earthquake today in Mexico: magnitude 4.2 tremor in Chiapas",
       "about": [
         "MX"
       ]
     },
     {
-      "title": "Atlético de San Luis vs Querétaro EN VIVO: Dónde VER transmisión de la Jornada 13 de la Liga MX 2026 | Hora",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUUFweWFNVjZBZUVHOFFyTEEtR2xTUmxOWC1LZmVRRV80U2wzZW1idlo3WVdaYVlzVl9HZzg4ekVrb2JMcnJXQUkzdWxUaUFuT0ZIb05yN1Rnb2NIOHkzYkVMdF95a016UTJMV2tEQVloOUhZel9aRTQxY01LeXJtRHNHOVJQTV9XRERMZXl2dVRoX3Y0RlUyS3VCaUgzalXSAZ8BQVVfeXFMTWhkUlgya21iUzdOcllhdVg1THJvRGgtbGx5MHo2TzFTQXR3X01QRDAybXdLOVU5dC0xVklYUGJIeU81WE96RWg4LWZscXZIOVV3WEJpT3d6a0kzM2laaG12OGxKMENJWTQyckVUaVdDbURMTUdBNUxRSGpRdHhWOXpoeDNySzF1R2Jfa3FnLTZQWVc3c3VMMVdkZkVaQ3NZ?oc=5",
-      "outlet": "Milenio",
-      "outletUrl": "https://www.milenio.com",
-      "published": "2026-10-21T03:02:45.000Z",
-      "en": "Atlético de San Luis vs Querétaro LIVE: Where to WATCH the Matchday 13 broadcast of the 2026 Liga MX | Time",
-      "about": [
-        "MX"
-      ]
-    },
-    {
-      "title": "Gilberto Mora tramita su primera credencial para votar",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPN2E2LUo3dDFkZ0hnQldOaHVreW9yYjUteDk2cGl6eHNoMC1UeXgxS1VzMHJrZ1JPa1g4UUNGcmJmd0lPN2MyZ0JYN19GUFBEQmNrU0kzMnB1cWpJcVB1aU03T09BYlczRUNQUG1wMm81b3NIY1dDbWVmNFoxNmFrZFdCMWNvTHRVVnF6UW1ZYnY0OUs3NW1KZU1OOE5fbzFFM1FINERlRU0?oc=5",
-      "outlet": "ESPN México",
-      "outletUrl": "https://www.espn.com.mx",
-      "published": "2026-10-21T01:20:56.000Z",
-      "en": "Gilberto Mora applies for his first voter ID card",
+      "title": "Avión ejecutivo aterriza de emergencia y se sale de la pista en el Aeropuerto de Toluca",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWnZpbFV1X0RDXzRWZW9JUng3Rk5CTGZxSWFsUXNCUHZXUEZZcHlsdWdEV2FWVlBraGRCMlRuLUp0aHNMZFZqNTFwUERNMThlRkdDOUpRUEZxbzNpSFdycjRBR2czMk8td1c2YkMtTHhYSjYtem4xdnIwaUM4OGJXZWV1MzVxa2NwVDRZZGtRckR1LUVIc1NoU2dxOU4tcWthR3dURjJlcjZJekllNWplckhEbGQ?oc=5",
+      "outlet": "El Sol de México",
+      "outletUrl": "https://oem.com.mx",
+      "published": "2026-10-21T03:16:22.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Executive plane makes emergency landing and leaves the runway at Toluca Airport",
       "about": [
         "MX"
       ]
