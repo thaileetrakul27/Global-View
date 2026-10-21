@@ -103,7 +103,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "gdacs-cyclone-tc-1001335": {
@@ -212,33 +212,41 @@
     "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001338": {
-    "at": "2026-10-21T14:45:27.681Z",
+    "at": "2026-10-21T22:09:59.986Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Super Typhoon Champi (PAGASA name: Rosal) began on 14 October 2026. As of 21 October, PAGASA's 5 p.m. bulletin put its winds at 205 km/h, down from a 215 km/h peak, with the system offshore east of Northern Luzon. Signal No. 2 remained over Batanes, and Signal No. 1 and heavy rainfall warnings covered parts of Luzon. No deaths or damage were reported yet. Japan's JMA expects it to reach Okinawa's Sakishima Islands on 23-24 October.",
+    "searches": 3,
+    "summary": "Super Typhoon Champi, known locally as Rosal, entered the Philippine Area of Responsibility on 20 October 2026. As of 21 October, it had weakened slightly to maximum sustained winds of 205 km/h while moving west northwest offshore. PAGASA says landfall is not expected, though parts of the country are still affected. Warnings and sea travel suspensions remain in effect in northern and eastern Luzon.",
     "ongoing": true,
     "places": [
       {
         "name": "Batanes",
+        "admin": "Batanes",
         "country": "PH",
         "kind": "region",
-        "impact": "Signal No. 2 in effect"
+        "impact": "Signal No. 2 in effect; heavy rain forecast"
       },
       {
         "name": "Cagayan",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Signal No. 1 and heavy rainfall warnings"
-      },
-      {
-        "name": "Babuyan Islands",
         "admin": "Cagayan",
         "country": "PH",
         "kind": "region",
-        "impact": "Signal No. 1 and heavy rainfall warnings"
+        "impact": "Signal No. 1; 50-200 mm rain forecast"
+      },
+      {
+        "name": "Catanduanes",
+        "admin": "Bicol",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Sea voyages suspended under Signal No. 1"
       },
       {
         "name": "Isabela",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 in eastern portions"
+      },
+      {
+        "name": "Ilocos Norte",
         "country": "PH",
         "kind": "region",
         "impact": "Signal No. 1 in effect"
@@ -250,19 +258,32 @@
         "impact": "Signal No. 1 in effect"
       },
       {
-        "name": "Ilocos Norte",
+        "name": "Bicol",
         "country": "PH",
         "kind": "region",
-        "impact": "Signal No. 1 in effect"
-      },
-      {
-        "name": "Catanduanes",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Signal No. 1 in effect"
+        "impact": "Blue alert placed; rain forecast"
       }
     ],
-    "figures": [],
+    "figures": [
+      {
+        "label": "Peak winds",
+        "value": "278 km/h (173 mph) one-minute sustained, JTWC analysis",
+        "sourceName": "watchers.news",
+        "sourceUrl": "https://watchers.news/2026/10/21/super-typhoon-champi-becomes-the-strongest-tropical-cyclone-of-2026-signal-no-2-remains-over-batanes-philippines/"
+      },
+      {
+        "label": "Maximum sustained winds",
+        "value": "205 km/h, gusts to 250 km/h",
+        "sourceName": "rappler.com",
+        "sourceUrl": "https://www.rappler.com/philippines/weather/super-typhoon-rosal-update-pagasa-forecast-october-21-2026-5pm/"
+      },
+      {
+        "label": "Wave height",
+        "value": "10 m (33 feet) along northern coasts forecast",
+        "sourceName": "watchers.news",
+        "sourceUrl": "https://watchers.news/2026/10/21/super-typhoon-champi-becomes-the-strongest-tropical-cyclone-of-2026-signal-no-2-remains-over-batanes-philippines/"
+      }
+    ],
     "donation": [],
     "sources": [
       {
@@ -276,29 +297,32 @@
         "title": "Super Typhoon Champi becomes the strongest tropical cyclone of 2026, Signal No. 2 remains over Batanes, Philippines - The Watchers"
       },
       {
-        "name": "japantimes.co.jp",
-        "url": "https://www.japantimes.co.jp/news/2026/10/21/japan/typhoon-champi-okinawa/",
-        "title": "Japan braces for 30th named storm this year as Typhoon Champi heads for Okinawa - The Japan Times"
+        "name": "pia.gov.ph",
+        "url": "https://pia.gov.ph/news/luzon/br/catanduanes-on-alert-for-super-typhoon-rosal/",
+        "title": "Catanduanes on alert for Super Typhoon Rosal"
       },
       {
-        "name": "philstar.com",
-        "url": "https://www.philstar.com/headlines/weather/2026/10/21/2564816/signal-no-2-still-batanes-super-typhoon-rosal-slightly-weakens",
-        "title": "Signal No. 2 still up in Batanes as Super Typhoon Rosal slightly weakens"
-      },
-      {
-        "name": "newsinfo.inquirer.net",
-        "url": "https://newsinfo.inquirer.net/2327538/pagasa-raises-signal-no-2-in-batanes-as-super-typhoon-rosal-moves-away",
-        "title": "Pagasa raises Signal No. 2 in Batanes as Super Typhoon Rosal moves away"
-      },
-      {
-        "name": "bworldonline.com",
-        "url": "https://bworldonline.com/the-nation/2026/10/21/788323/storm-signal-no-1-heavy-rainfall-warnings-up-in-parts-of-luzon-due-to-super-typhoon-champi-pagasa/",
-        "title": "Storm Signal No. 1, heavy rainfall warnings up in parts of Luzon due to Super Typhoon Champi — PAGASA - BusinessWorld Online"
+        "name": "pna.gov.ph",
+        "url": "https://www.pna.gov.ph/article/bicol-on-blue-alert-as-super-typhoon-rosal-enters-par",
+        "title": "Bicol on blue alert as Super Typhoon Rosal enters PAR"
       }
     ],
-    "membersHash": "eonet,gdacs|JP,PH#afb26aec",
-    "seen": "2026-10-21T17:37:06.438Z",
-    "donationSearched": "2026-10-21T14:45:27.681Z"
+    "membersHash": "eonet,gdacs|JP,PH,TW#afb26aec",
+    "donationSearched": "2026-10-21T22:09:59.986Z",
+    "seen": "2026-10-21T22:09:59.986Z"
+  },
+  "gdacs-cyclone-tc-1001342": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "Subtropical Storm Josephine formed on 21 October 2026 in the Atlantic Ocean off the U.S. East Coast, the season's 10th named storm. The National Hurricane Center says it is moving away from the U.S. with no direct mainland impacts. Indirect wind, marine and tide effects are forecast for New England, and the storm is expected to dissipate that weekend.",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|CA,US#471b9aae",
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -318,7 +342,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,NO,PL,RO,RS,RU,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "gdacs-drought-dr-1027449": {
@@ -481,7 +505,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-drought-dr-1027450": {
@@ -547,7 +571,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,DJ,ER,ET,KE,NE,NG,SD,SO,SS,TD#d3aabe2f",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-drought-dr-1027465": {
@@ -568,7 +592,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-earthquake-eq-1570077": {
@@ -719,7 +743,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#24cf2828",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-earthquake-eq-1571367": {
@@ -744,7 +768,7 @@
       }
     ],
     "membersHash": "gdacs|PG#20427fcc",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-earthquake-eq-1571524": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -830,7 +854,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|US#dc9009ba",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-earthquake-eq-1571917": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -964,7 +988,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1103888": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1024,7 +1048,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|US#2b36b9e5",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1092,7 +1116,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1106,6 +1130,19 @@
     "sources": [],
     "membersHash": "gdacs|IN#057be8c4",
     "seen": "2026-10-21T00:11:24.613Z"
+  },
+  "gdacs-flood-fl-1104141": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|VN#016cd7ee",
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104167": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1232,7 +1269,7 @@
       }
     ],
     "membersHash": "gdacs|EC#73720892",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1397,7 +1434,7 @@
       }
     ],
     "membersHash": "gdacs|TH#75720bb8",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104200": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1506,7 +1543,7 @@
       }
     ],
     "membersHash": "gdacs|HN#37b0b7ff",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104216": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1545,7 +1582,7 @@
       }
     ],
     "membersHash": "gdacs|BR#3eb3019b",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104217": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1678,7 +1715,7 @@
       }
     ],
     "membersHash": "gdacs,news|CL#74420222",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1767,7 +1804,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104220": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1870,7 +1907,7 @@
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104224": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1930,7 +1967,105 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
+  },
+  "gdacs-flood-fl-1104225": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A flash flood on the Budhi Gandaki River in Gorkha district, northern central Nepal, began on 11 October 2026 after a blocked river broke, reportedly from a landslide near Chumchet. It damaged houses, bridges and roads in Chumnubri and Dharche rural municipalities and in the Manaslu region. The latest source is dated 14 October 2026; it reports no direct effects beyond the flood damage and does not say whether evacuation advice remains in place.",
+    "ongoing": false,
+    "places": [
+      {
+        "name": "Chumnubri",
+        "admin": "Gandaki Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "settlements, bridges and infrastructure hit by flash flood"
+      },
+      {
+        "name": "Dharche",
+        "admin": "Gandaki Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "settlements, bridges and infrastructure hit by flash flood"
+      },
+      {
+        "name": "Chumchet",
+        "admin": "Gorkha District",
+        "country": "NP",
+        "kind": "site",
+        "impact": "landslide dam believed to have failed"
+      },
+      {
+        "name": "Manaslu region",
+        "country": "NP",
+        "kind": "region",
+        "impact": "bridges and homes affected, trekking routes disrupted"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Houses destroyed",
+        "value": "200",
+        "sourceName": "phys.org",
+        "sourceUrl": "https://phys.org/news/2026-10-nepal-triggered-ice-avalanche.html"
+      },
+      {
+        "label": "Missing",
+        "value": "5",
+        "sourceName": "phys.org",
+        "sourceUrl": "https://phys.org/news/2026-10-nepal-triggered-ice-avalanche.html"
+      },
+      {
+        "label": "Stranded",
+        "value": "more than 100 foreign trekkers",
+        "sourceName": "eos.org",
+        "sourceUrl": "https://eos.org/thelandslideblog/the-11-october-2026-landslide-and-debris-flow-flood-on-the-budhi-gandaki-river-in-gorkha-district-nepal"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "cnn.com",
+        "url": "https://www.cnn.com/2026/10/11/world/video/nepal-flood-buildings-vrtc",
+        "title": "Buildings swept away by flood in Nepal"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Budhi_Gandaki_flood",
+        "title": "2026 Budhi Gandaki flood"
+      },
+      {
+        "name": "eos.org",
+        "url": "https://eos.org/thelandslideblog/the-11-october-2026-landslide-and-debris-flow-flood-on-the-budhi-gandaki-river-in-gorkha-district-nepal",
+        "title": "The 11 October 2026 landslded and debris flow/flood on the Budhi Gandaki River in Gorkha district, Nepal"
+      },
+      {
+        "name": "icimod.org",
+        "url": "https://www.icimod.org/press-releases/landslide-dam-breach-may-have-triggered-budhi-gandaki-flash-flood/",
+        "title": "Landslide-dam breach may have triggered Budhi Gandaki flash flood - ICIMOD"
+      },
+      {
+        "name": "eu-space.europa.eu",
+        "url": "https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/landslide-triggered-flash-flood-sweeps-through-nepals-himalayan-valleys",
+        "title": "Landslide-triggered flash flood sweeps through Nepal's Himalayan valleys"
+      }
+    ],
+    "membersHash": "gdacs|NP#afb5f215"
+  },
+  "gdacs-flood-fl-1104226": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|MA#acb5ed5c",
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104227": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2026,7 +2161,86 @@
       }
     ],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
+  },
+  "gdacs-flood-fl-1104228": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 1,
+    "summary": "No flood was reported as occurring in Panama as of 20 October 2026. Sinaproc issued a green alert for heavy rain from 19 October in Mariato, Soná and Tonosí, districts hit by the 9 October 2026 earthquakes, with more rain forecast. The earthquakes damaged buildings, including part of a cathedral in Penonomé. Official tallies to 19 October report 29,952 people affected, and thousands remain in shelters. Official flood reports were not checked.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Penonomé",
+        "admin": "Coclé",
+        "country": "PA",
+        "kind": "city",
+        "impact": "Buildings and a hotel collapsed; part of cathedral collapsed"
+      },
+      {
+        "name": "Herrera",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Epicentre area; cracked and damaged homes"
+      },
+      {
+        "name": "Mariato",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Under green heavy-rain alert from 19 October"
+      },
+      {
+        "name": "Soná",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Under green heavy-rain alert from 19 October"
+      },
+      {
+        "name": "Tonosí",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Under green heavy-rain alert from 19 October"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Injured",
+        "value": "27",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_in_Panama"
+      },
+      {
+        "label": "People affected",
+        "value": "29,952 people",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/panama-rain-alert-quake-districts-2026/"
+      },
+      {
+        "label": "People in shelters",
+        "value": "3,827 people in 55 shelters",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/panama-rain-alert-quake-districts-2026/"
+      },
+      {
+        "label": "Homes with total damage",
+        "value": "2,318",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/panama-rain-alert-quake-districts-2026/"
+      },
+      {
+        "label": "Homes assessed",
+        "value": "9,124",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/panama-rain-alert-quake-districts-2026/"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|PA#b2b5f6ce",
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104230": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2128,7 +2342,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|TR#b0b8323f",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104232": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2155,7 +2369,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|JO#b2b83565",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104233": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2168,7 +2382,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SY#b1b833d2",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104235": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2181,7 +2395,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104236": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2230,7 +2444,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SV#aeb82f19",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104237": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2263,7 +2477,7 @@
       }
     ],
     "membersHash": "gdacs|NI#adb82d86",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104238": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2276,7 +2490,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2401,7 +2615,7 @@
       }
     ],
     "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2650,7 +2864,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104242": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -2702,7 +2916,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UA#a8a6dc86",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104243": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -2811,7 +3025,7 @@
       }
     ],
     "membersHash": "gdacs|FR#a9a6de19",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-flood-fl-1104244": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -2906,7 +3120,7 @@
       }
     ],
     "membersHash": "gdacs|GT#aaa6dfac",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2974,7 +3188,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "gdacs-volcano-vo-1000152": {
@@ -3067,7 +3281,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "gdacs-wildfire-wf-1032497": {
@@ -3092,7 +3306,109 @@
       }
     ],
     "membersHash": "gdacs|AU#16f99bef",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
+  },
+  "gdacs-wildfire-wf-1032498": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#1bf9a3ce",
+    "seen": "2026-10-21T22:09:59.986Z"
+  },
+  "gdacs-wildfire-wf-1032507": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "scitechdaily.com",
+        "url": "https://scitechdaily.com/the-amazon-is-burning-again-and-nasa-warns-the-worst-is-yet-to-come/",
+        "title": "The Amazon Is Burning Again, and NASA Warns the Worst Is Yet To Come"
+      },
+      {
+        "name": "ecoportal.net",
+        "url": "https://www.ecoportal.net/en/amazon-fires-el-nino-impact/43039/",
+        "title": "Amazon fires are spreading like a \"slow-moving wave\" and scientists have been watching it build for months"
+      },
+      {
+        "name": "upi.com",
+        "url": "https://www.upi.com/Top_News/World-News/2026/10/19/latam-brazil-amazon-fires/8421792431441/",
+        "title": "Amazon fires blanket northern Brazil in smoke, disrupt daily life - UPI.com"
+      },
+      {
+        "name": "actionnewsjax.com",
+        "url": "https://www.actionnewsjax.com/news/world/brazil-investigates/3TSKP4G7BA5QBICJIRUPUISWGI/",
+        "title": "Brazil investigates Amazon wildfires that disrupt daily life and have fueled political attacks"
+      },
+      {
+        "name": "abcnews.com",
+        "url": "https://abcnews.com/International/wireStory/wildfires-brazils-amazonas-state-worsen-air-quality-manaus-137144994",
+        "title": "Wildfires in Brazil’s Amazonas state worsen air quality in Manaus - ABC News"
+      }
+    ],
+    "membersHash": "gdacs|BR#a93ae3e9",
+    "seen": "2026-10-21T22:09:59.986Z"
+  },
+  "gdacs-wildfire-wf-1032508": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [
+      {
+        "label": "Burned area",
+        "value": "35,329 ha",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1032586&episodeid=2&eventtype=WF"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "wildfiretoday.com",
+        "url": "https://wildfiretoday.com/2026/09/",
+        "title": "September 2026"
+      },
+      {
+        "name": "gdacs.org",
+        "url": "https://www.gdacs.org/report.aspx?eventid=1032586&episodeid=2&eventtype=WF",
+        "title": "Overall Green Forest fire in Australia from 02 Oct 2026 00:00 UTC to 06 Oct 2026 00:00 UTC"
+      }
+    ],
+    "membersHash": "gdacs|AU#b23af214",
+    "seen": "2026-10-21T22:09:59.986Z"
+  },
+  "gdacs-wildfire-wf-1032518": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A wildfire listed as \"Forest fires in Australia\" in GDACS alert 1032518, started 27 September 2026 and last updated 12 October 2026. The feed's coordinates lie in the Northern Territory. No source found confirms its current status or names an affected place.",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "wildfiretoday.com",
+        "url": "https://wildfiretoday.com/large-fires-across-top-of-australia/",
+        "title": "Large fires across top of Australia"
+      }
+    ],
+    "membersHash": "gdacs|AU#b83d3a1d",
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032546": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3111,7 +3427,7 @@
       }
     ],
     "membersHash": "gdacs|AU#383137aa",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032556": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3147,7 +3463,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3160,7 +3476,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032657": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3284,7 +3600,7 @@
       }
     ],
     "membersHash": "gdacs|BR#efe30b15",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3341,7 +3657,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#fbe9d9be",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3365,7 +3681,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3396,7 +3712,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3518,7 +3834,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3542,7 +3858,112 @@
       }
     ],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
+  },
+  "gdacs-wildfire-wf-1032726": {
+    "at": "2026-10-21T22:09:59.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "Wildfires in eastern Mongolia began around 8 to 10 October 2026. The main fire in Numrug Strictly Protected Area in Dornod province was fully extinguished on 16 October, according to a Ministry statement reported on 21 October. Officials reported one death and two injured, and about 528,766 hectares burned in Numrug. Across Mongolia, 172 fires have burned 1,016,908 hectares this year. A border fire in Dong Ujimqin Banner, Inner Mongolia, had not entered China as of 11…",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Numrug Strictly Protected Area",
+        "admin": "Dornod",
+        "country": "MN",
+        "kind": "site",
+        "impact": "Largest burn, 528,765.5 ha; fully extinguished 16 Oct"
+      },
+      {
+        "name": "Khalkh Gol",
+        "admin": "Dornod",
+        "country": "MN",
+        "kind": "district",
+        "impact": "Steppe fire, extinguished 12 Oct"
+      },
+      {
+        "name": "Dong Ujimqin Banner",
+        "admin": "Xilingol League, Inner Mongolia",
+        "country": "CN",
+        "kind": "district",
+        "impact": "Border fire from Mongolia; not in China by 11 Oct"
+      },
+      {
+        "name": "Dornod",
+        "country": "MN",
+        "kind": "region",
+        "impact": "Among eastern provinces with most of year's fires"
+      },
+      {
+        "name": "Sukhbaatar",
+        "country": "MN",
+        "kind": "region",
+        "impact": "Among eastern provinces with most of year's fires"
+      },
+      {
+        "name": "Khentii",
+        "country": "MN",
+        "kind": "region",
+        "impact": "Among eastern provinces with most of year's fires"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "asianews.network",
+        "sourceUrl": "https://asianews.network/one-dead-two-injured-in-172-forest-and-steppe-fires-this-year-in-mongolia/"
+      },
+      {
+        "label": "Injured",
+        "value": "2 (burn injuries)",
+        "sourceName": "asianews.network",
+        "sourceUrl": "https://asianews.network/one-dead-two-injured-in-172-forest-and-steppe-fires-this-year-in-mongolia/"
+      },
+      {
+        "label": "Area burned in Numrug",
+        "value": "528,765.5 ha",
+        "sourceName": "china.org.cn",
+        "sourceUrl": "http://www.china.org.cn/2026-10/21/content_118742547.shtml"
+      },
+      {
+        "label": "Area burned in Mongolia in 2026",
+        "value": "1,016,908 ha across 172 fires",
+        "sourceName": "news.cn",
+        "sourceUrl": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html"
+      },
+      {
+        "label": "Damage",
+        "value": "about MNT 7.9 billion (about US$2.2 million), year to date",
+        "sourceName": "news.cn",
+        "sourceUrl": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "china.org.cn",
+        "url": "http://www.china.org.cn/2026-10/21/content_118742547.shtml",
+        "title": "Massive Japanese-related reserve wildfire in E. Mongolia burns over half mln hectares of land - China.org.cn"
+      },
+      {
+        "name": "news.cn",
+        "url": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html",
+        "title": "Wildfires burn over 1 mln hectares of land in Mongolia so far this year-Xinhua"
+      },
+      {
+        "name": "news.cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-10-13/Mongolia-grassland-fire-nears-Chinese-border-1RcKZ6rN29y/p.html",
+        "title": "Mongolia grassland fire nears Chinese border - CGTN"
+      },
+      {
+        "name": "ecns.cn",
+        "url": "https://www.ecns.cn/cns-wire/2026-10-12/detail-ihfkxmcz6617673.shtml",
+        "title": "Fire in Mongolia approaches China's border, 2,000 firefighters mobilized"
+      }
+    ],
+    "membersHash": "gdacs|CN,MN#82527b72",
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032727": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3633,7 +4054,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#83527d05",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3662,7 +4083,7 @@
       }
     ],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3675,7 +4096,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3688,7 +4109,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3707,7 +4128,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3731,7 +4152,7 @@
       }
     ],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3744,7 +4165,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032857": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3757,7 +4178,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3776,7 +4197,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032920": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3789,7 +4210,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-wildfire-wf-1032940": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3808,7 +4229,7 @@
       }
     ],
     "membersHash": "gdacs|AU#5ecd514c",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-cyclone-8034": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3839,7 +4260,7 @@
       }
     ],
     "membersHash": "ifrc|DJ#49b6fd82",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-earthquake-7990": {
@@ -3927,7 +4348,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|VE#4aa9fe04",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-earthquake-8055": {
@@ -4017,7 +4438,22 @@
         "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC emergency appeal supporting the Colombian Red Cross response"
+        "note": "Red Cross Red Crescent donation page for the Colombia Earthquake 2026 appeal.",
+        "specific": true
+      },
+      {
+        "url": "https://www.ifrc.org/emergency/colombia-earthquake-2026",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "Emergency page for appeal MDRCO036, CHF 25 million, with documents and donation route.",
+        "specific": true
+      },
+      {
+        "url": "https://ayuda.cruzrojacolombiana.org/",
+        "org": "Cruz Roja Colombiana",
+        "kind": "society",
+        "note": "Colombian Red Cross national appeal page for the 10 August 2026 quake.",
+        "specific": true
       },
       {
         "url": "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU",
@@ -4028,7 +4464,8 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z",
+    "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -4096,10 +4533,26 @@
         "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://ayodonor.pmi.or.id/",
+        "org": "Palang Merah Indonesia",
+        "kind": "society",
+        "note": "PMI Ayodonor campaign platform with dated 18 August 2026 East Nusa Tenggara quake appeal.",
+        "specific": true
+      },
+      {
+        "url": "https://donasi.pmi.or.id/",
+        "org": "Palang Merah Indonesia",
+        "kind": "society",
+        "note": "PMI main donation site; banner promotes the East Nusa Tenggara earthquake alongside general giving.",
+        "specific": false
+      }
+    ],
     "sources": [],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z",
+    "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -4176,7 +4629,29 @@
         "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://go.ifrc.org/emergencies/8013/overview",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO event-specific DREF operation page with funding figure and dates.",
+        "specific": true
+      },
+      {
+        "url": "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/",
+        "org": "Bangladesh Red Crescent Society",
+        "kind": "society",
+        "note": "Appeal document for the 2026 monsoon emergency; not a payment page.",
+        "specific": true
+      },
+      {
+        "url": "https://donate.bdrcs.org/",
+        "org": "Bangladesh Red Crescent Society",
+        "kind": "society",
+        "note": "General BDRCS donation fund, not specific to this event.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
         "name": "go.ifrc.org",
@@ -4210,7 +4685,8 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z",
+    "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-8025": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -4273,7 +4749,22 @@
         "sourceUrl": "https://www.unicef.org/afghanistan/documents/unicef-afghanistan-flash-update-3-central-eastern-and-northern-regions-flash-floods"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://go.ifrc.org/appeals/all?region=2",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO appeals listing showing MDRAF022 Afghanistan Flood DREF; not a donation form.",
+        "specific": false
+      },
+      {
+        "url": "https://www.unicef.org/appeals/afghanistan",
+        "org": "UNICEF",
+        "kind": "un",
+        "note": "UNICEF 2026 Afghanistan appeal for life-saving aid; general fund, not this flood.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
         "name": "global-flood.emergency.copernicus.eu",
@@ -4292,7 +4783,8 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z",
+    "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-8050": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -4374,7 +4866,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-flood-8052": {
@@ -4449,7 +4941,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -4548,7 +5040,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-flood-8115": {
@@ -4590,7 +5082,8 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CG#68e1ca24",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z",
+    "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4687,7 +5180,7 @@
       }
     ],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-landslide-8111": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -4751,7 +5244,22 @@
         "sourceUrl": "https://www.mekongeye.com/2026/10/05/dawei-flood"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC appeals listing for the Myanmar flood-landslide DREF operation MDRMM025.",
+        "specific": true
+      },
+      {
+        "url": "https://www.redcross.org.mm/news-and-multimedia/myanmar-red-cross-society-supports-flood-affected-communities-in-tanintharyi/",
+        "org": "Myanmar Red Cross Society",
+        "kind": "society",
+        "note": "News item on Tanintharyi flood response with a general Donate Now button.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
         "name": "sentinel-asia.org",
@@ -4785,7 +5293,8 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z",
+    "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-storm-8108": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -4927,8 +5436,8 @@
       }
     ],
     "membersHash": "ifrc|ZW#67df89fa",
-    "donationSearched": "2026-10-21T17:37:06.438Z",
-    "seen": "2026-10-21T17:37:06.438Z"
+    "seen": "2026-10-21T22:09:59.986Z",
+    "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "news-earthquake-earthquake-pa-32b0fa90e3": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -5343,7 +5852,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-21T17:37:06.438Z",
+    "seen": "2026-10-21T22:09:59.986Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   }
 }
