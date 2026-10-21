@@ -4,6 +4,7 @@ import { useEffect, useId, useRef } from "react";
 import type { Mention } from "@/lib/attention";
 import type { AboutArticle, Article, CountryFile, Disaster, SnapshotArticle } from "@/lib/data";
 import { DISASTER_META } from "@/lib/disasterMeta";
+import { listFooter } from "@/lib/ranking";
 import AboutList from "./AboutList";
 import DisasterIcon, { SeverityChip } from "./DisasterIcon";
 import type { CountryFeature } from "@/lib/geo";
@@ -59,8 +60,9 @@ interface Props {
 }
 
 // Contents of the country panel: the name, when the list was refreshed, a
-// line for any disaster there now, then the ranked articles. Who this
-// country reads about, and who reads about it, are folded away below.
+// line for any disaster there now, then the articles, one per story,
+// ranked by how recent each story is and how many outlets carry it. Who
+// this country reads about, and who reads about it, are folded away below.
 export default function CountryPanel({
   country,
   state,
@@ -156,7 +158,7 @@ export default function CountryPanel({
 
         {!history && world && (
           <p className="mt-2 text-xs leading-snug text-muted">
-            {name} has no Google News edition, so this is a news search: its own outlets in their language first, then
+            {name} has no Google News edition, so this is a news search: its own outlets in their language, and
             international coverage in English.
           </p>
         )}
@@ -210,7 +212,7 @@ export default function CountryPanel({
         {!history && data && data.articles.length === 0 && (
           <p className="pt-3 text-sm text-muted">
             Nothing usable found about {name} in the last few days. The list
-            refreshes every three hours.
+            refreshes every two hours.
           </p>
         )}
 
@@ -239,9 +241,7 @@ export default function CountryPanel({
         {history
           ? `From the daily archive: the top five as last seen on ${history.label}. Links open the publisher.`
           : data
-            ? world
-              ? `Recent ${data.source.name} search results about ${name}. Translations are automatic. Links open the publisher.`
-              : `Ranked by ${data.source.name} top stories, ${name} edition. Translations are automatic. Links open the publisher.`
+            ? listFooter(data, name)
             : "Links open the publisher."}
       </footer>
     </div>

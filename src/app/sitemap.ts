@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 
 // sitemap.xml: the site is one page (every view is a query on it), refreshed
-// every three hours by the data job. Written once at build time.
+// every two hours by the data job. Written once at build time.
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {

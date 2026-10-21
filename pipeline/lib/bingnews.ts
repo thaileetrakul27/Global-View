@@ -97,7 +97,7 @@ export async function fetchBingFeed(query: string, cc: string, lang: string, del
       articles.push(a);
     }
     if (got.length < BING_PAGE) break;
-    await deps.sleep(delayMs);
+    if (page + 1 < pages) await deps.sleep(delayMs); // no wait after the last page
   }
   return { url: firstUrl, articles };
 }

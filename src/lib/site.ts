@@ -12,8 +12,8 @@ export const SITE_NAME = "Global View";
 
 /**
  * What the site is, in a sentence: for search results and link previews.
- * "Top news stories", not "what people read": the lists are each edition's
- * top stories feed, not reader counts.
+ * "Top news stories", not "what people read": the lists are ranked from
+ * each country's news feeds by recency and coverage, not reader counts.
  */
 export const SITE_DESCRIPTION =
   "A 3D globe of the top news stories in each country right now, and of the natural disasters happening now, with official places to give.";

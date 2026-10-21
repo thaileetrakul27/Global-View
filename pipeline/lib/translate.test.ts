@@ -72,6 +72,12 @@ describe("cache", () => {
     expect(out[1].en).toBeUndefined();
     expect(cache.u1.seen).toBe(now);
   });
+  it("keeps each article's outlet count and trending mark", () => {
+    const cache: HeadlineCache = { u1: { en: "A", about: [], seen: now } };
+    const out = applyCache([{ ...art("u1", "ก"), outlets: 4, trending: true }, { ...art("u2", "ข"), outlets: 1, trending: false }], cache, now);
+    expect(out[0]).toMatchObject({ en: "A", outlets: 4, trending: true });
+    expect(out[1]).toMatchObject({ outlets: 1, trending: false });
+  });
   it("prunes entries older than the grace period", () => {
     const cache: HeadlineCache = {
       fresh: { en: "", about: [], seen: "2026-10-18T00:00:00.000Z" },

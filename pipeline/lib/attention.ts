@@ -1,5 +1,6 @@
 // Who is reading about whom: counts, per country, how many of its top
 // stories are about each other country.
+import { rankMarks } from "./trending";
 import type { EnrichedArticle } from "./translate";
 
 export interface AttentionFile {
@@ -17,6 +18,10 @@ export interface AboutArticle {
   en?: string;
   outlet: string;
   published: string;
+  /** How many outlets carried the story where it was read; absent in older files. */
+  outlets?: number;
+  /** Whether it was trending where it was read; absent in older files. */
+  trending?: boolean;
 }
 
 export interface AboutFile {
@@ -36,7 +41,7 @@ export function buildAboutFiles(countries: { code: string; articles: EnrichedArt
       for (const code of a.about ?? []) {
         if (code === c.code) continue;
         const file = (out[code] ??= { code, updated, articles: [] });
-        file.articles.push({ from: c.code, url: a.url, title: a.title, ...(a.en ? { en: a.en } : {}), outlet: a.outlet, published: a.published });
+        file.articles.push({ from: c.code, url: a.url, title: a.title, ...(a.en ? { en: a.en } : {}), outlet: a.outlet, published: a.published, ...rankMarks(a) });
       }
     }
   }

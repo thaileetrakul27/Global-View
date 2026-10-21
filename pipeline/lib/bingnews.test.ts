@@ -60,4 +60,16 @@ describe("fetchBingFeed", () => {
     expect((await fetchBingFeed("Tchad", "TD", "fr", 0, deps(flaky)))?.articles).toHaveLength(3);
     expect(await fetchBingFeed("Tchad", "TD", "fr", 0, deps(async () => new Response("", { status: 429 })))).toBeNull();
   });
+  it("reads one page when asked to, without waiting after it", async () => {
+    const calls: string[] = [];
+    const waits: number[] = [];
+    const f = async (url: string) => {
+      calls.push(url);
+      return new Response(page(1, 12), { status: 200 });
+    };
+    const out = await fetchBingFeed("ประเทศไทย", "TH", "th", 2000, { fetch: f as unknown as typeof fetch, sleep: async (ms) => void waits.push(ms), log: () => {} }, 1);
+    expect(out?.articles).toHaveLength(12);
+    expect(calls).toHaveLength(1);
+    expect(waits).toEqual([]);
+  });
 });

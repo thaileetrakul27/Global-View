@@ -1,9 +1,13 @@
-// Fetches each enabled country's top stories, translates new headlines,
-// finds stories shared across countries, and writes the JSON the website
-// reads. A country whose feed fails keeps its previous file; the run only
-// fails outright if every feed fails, so stale data is never replaced
-// with nothing. Without API credentials, or with --no-ai, the feeds are
-// still published and the translation steps are skipped.
+// Fetches each enabled country's news (Google News top stories and its
+// NATION and WORLD sections, plus a Bing News search in the country's
+// language; world coverage reads Bing News and a Google News search),
+// groups the headlines by story and ranks them (lib/trending.ts),
+// translates the new ones, finds stories shared across countries, and
+// writes the JSON the website reads. A country whose feeds all fail keeps
+// its previous file; the run only fails outright if every country fails,
+// so stale data is never replaced with nothing. Without API credentials,
+// or with --no-ai, the feeds are still published and the translation
+// steps are skipped.
 //
 //   npm run pipeline:update
 //   npm run pipeline:update -- --countries TH,GB --max 20
@@ -12,8 +16,6 @@ import fs from "node:fs";
 import { createAiClient } from "./lib/ai";
 import { parseUpdateArgs } from "./lib/args";
 import { buildAboutFiles, buildAttention } from "./lib/attention";
-import { dedupeArticles } from "./lib/clean";
-import { fetchBingFeed } from "./lib/bingnews";
 import {
   loadCountryConfig,
   loadGlobeCodes,
@@ -21,15 +23,17 @@ import {
   loadLanguages,
   loadWorldQueries,
   selectCountries,
+  withLocalSearch,
   worldCountries,
   type CountryConfig,
 } from "./lib/countries";
-import { buildSearchUrl, fetchFeed, fetchFeedUrl, type Article, type FetchDeps } from "./lib/googlenews";
+import type { Article } from "./lib/googlenews";
 import { sleep, writeJson } from "./lib/io";
 import { mergeIndex, readIndex, type CountryFile, type IndexEntry } from "./lib/publish";
 import { collectCandidates, findSharedStories, reconcileStories, type SharedFile } from "./lib/shared";
 import { addDay, buildSnapshot, dayOf, type HistoryIndex } from "./lib/history";
 import { buildResolver } from "./lib/resolve";
+import { buildList, fetchLocalSources, fetchWorldSources, sourceName, type Service } from "./lib/sources";
 import { canSpend, ledgerReadable, loadBudget, monthSpent, pruneLedger, readLedger, record, writeLedger } from "./lib/spend";
 import { updateDisasters } from "./lib/disasters/build";
 import { loadCountryShapes } from "./lib/disasters/geo";
@@ -38,7 +42,7 @@ import { applyCache, pruneCache, readCache, translateNew, type EnrichedArticle }
 
 /** Most model calls one run may make; a guard against runaway cost. */
 const MAX_AI_CALLS = 250;
-/** World coverage lists are capped lower: they are a fallback, not a ranking. */
+/** World coverage lists are capped lower: they are a news search, a fallback for countries without an edition. */
 const MAX_WORLD_ARTICLES = 20;
 /** Countries translated at the same time. Keeps the first run well under the job timeout. */
 const TRANSLATE_CONCURRENCY = 4;
@@ -55,27 +59,16 @@ const RUN_DEADLINE_MS = 40 * 60_000;
 interface Fetched {
   country: CountryConfig;
   feedUrl: string;
+  /** The services that answered, for the country file's source name. */
+  services: Service[];
   articles: Article[];
-}
-
-/**
- * World coverage: what the country's own outlets publish, from Bing News
- * in the press language, followed by Google News search results in
- * English. Either source may fail; both failing keeps the previous data.
- */
-async function fetchWorld(country: CountryConfig, delayMs: number, deps: FetchDeps): Promise<{ url: string; articles: Article[] } | null> {
-  const local = country.local ?? { lang: "en", name: country.name };
-  const bing = await fetchBingFeed(local.name, country.code.slice(0, 2), local.lang, delayMs, deps);
-  await deps.sleep(delayMs);
-  const google = await fetchFeedUrl(buildSearchUrl(country.query ?? `"${country.name}"`), country.code, delayMs, deps);
-  if (!bing && !google) return null;
-  return { url: bing?.url ?? google!.url, articles: [...(bing?.articles ?? []), ...(google?.articles ?? [])] };
 }
 
 async function main() {
   const args = parseUpdateArgs(process.argv.slice(2));
-  const local = loadCountryConfig();
-  const world = worldCountries(local, loadGlobeFeatures(), loadWorldQueries(), loadLanguages());
+  const languages = loadLanguages();
+  const local = withLocalSearch(loadCountryConfig(), languages);
+  const world = worldCountries(local, loadGlobeFeatures(), loadWorldQueries(), languages);
   const countries = selectCountries([...local, ...world], args.countries);
   const indexPath = `${args.outDir}/index.json`;
   const previous = readIndex(indexPath);
@@ -89,22 +82,27 @@ async function main() {
   const failed: string[] = [];
   for (const [i, country] of countries.entries()) {
     if (i > 0) await sleep(args.delayMs);
-    const result = country.kind === "local" && country.edition ? await fetchFeed(country.edition, args.delayMs, deps) : await fetchWorld(country, args.delayMs, deps);
+    const result =
+      country.kind === "local" && country.edition ? await fetchLocalSources(country, args.delayMs, deps) : await fetchWorldSources(country, args.delayMs, deps);
     if (!result) {
       failed.push(country.code);
       log(`  ${country.code}: kept previous data`);
       continue;
     }
     const max = country.kind === "local" ? args.maxArticles : Math.min(args.maxArticles, MAX_WORLD_ARTICLES);
-    const articles = dedupeArticles(result.articles).slice(0, max);
+    // Grouped and ranked before translation, so only the kept headlines are sent to the model.
+    const articles = buildList(result, max, new Date().toISOString());
     // A feed that is all junk today should not wipe yesterday's real list.
     if (articles.length === 0 && (previous?.countries[country.code]?.articles ?? 0) > 0) {
       failed.push(country.code);
       log(`  ${country.code}: nothing usable in feed, kept previous data`);
       continue;
     }
-    fetched.push({ country, feedUrl: result.url, articles });
-    log(`  ${country.code}${country.kind === "world" ? " (world)" : ""}: ${result.articles.length} in feed, ${articles.length} kept`);
+    fetched.push({ country, feedUrl: result.url, services: result.services, articles });
+    const trending = articles.filter((a) => a.trending).length;
+    log(
+      `  ${country.code}${country.kind === "world" ? " (world)" : ""}: ${result.articles.length} from ${sourceName(result.services)}, ${articles.length} kept${trending ? `, ${trending} trending` : ""}`,
+    );
   }
   if (failed.length === countries.length) throw new Error("Every country failed; nothing was written");
 
@@ -172,7 +170,7 @@ async function main() {
       kind: f.country.kind,
       updated: now,
       source: {
-        name: f.country.kind === "local" ? "Google News" : "Bing News and Google News",
+        name: sourceName(f.services),
         edition: f.country.kind === "local" ? (f.country.edition?.ceid ?? "") : "search",
         url: f.feedUrl,
       },
