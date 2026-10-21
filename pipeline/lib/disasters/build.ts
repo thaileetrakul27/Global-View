@@ -25,6 +25,7 @@ import { extractNewsEvents, mentionsDisaster, type NewsArticle } from "./news";
 import {
   MAX_DONATION_BACKFILL,
   RESEARCH_CACHE_PATH,
+  entryDonations,
   pruneResearchCache,
   readResearchCache,
   researchDisaster,
@@ -449,7 +450,7 @@ async function runResearch(
     const callsBefore = totalCalls(ledger);
     const entry = await researchDisaster(ai, d, { countryNames: run.countryNames, headlines, resolve: run.resolve, now, log });
     if (entry) {
-      // The last donation search's pages stay until a new one works.
+      // The last donation search's pages are carried (earlierSearch) until a new one works.
       cache[d.id] = withEarlierSearch(entry, cache[d.id]);
       done++;
       log(`  researched ${d.id}: ${entry.places.length} places, ${entry.figures.length} figures, ${entry.donation.length} donation pages, ${entry.searches} searches`);
@@ -557,7 +558,7 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   let checks = 0;
   const unreachable = new Set<string>();
   for (const d of disasters) {
-    const input = { countries: d.countries, appeals: d.appeals, researched: cache[d.id]?.donation ?? [] };
+    const input = { countries: d.countries, appeals: d.appeals, researched: entryDonations(cache[d.id]) };
     if (run.offline || checks >= MAX_DONATION_CHECKS || Date.now() > (run.deadline ?? Infinity)) {
       d.donate = buildDonations(input, registry, now);
       continue;

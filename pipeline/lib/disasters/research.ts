@@ -164,9 +164,17 @@ export interface ResearchEntry {
    * ISO time of the donation search (searchDonationPages) whose pages were
    * merged into donation; missing until one has run for this entry. A
    * refreshed entry starts without it, so the search runs again; until that
-   * search works, the entry keeps the last one's pages (withEarlierSearch).
+   * search works, the entry keeps the last one's pages in earlierSearch.
    */
   donationSearched?: string;
+  /**
+   * The pages the donation search of the entry this one replaced found,
+   * carried over by withEarlierSearch until a new search works, which drops
+   * them. Kept apart from donation, which stays the research's own list
+   * until then, so a search cannot take away a page this research found.
+   * Missing when there are none; entryDonations gives both lists together.
+   */
+  earlierSearch?: ResearchDonation[];
 }
 
 /** Keyed by disaster id. */
@@ -1053,14 +1061,9 @@ function fromDonationSearch(p: ResearchDonation): boolean {
   return typeof p.specific === "boolean";
 }
 
-/**
- * A search's pages about the event first, then its other pages, then the
- * research's own from the entry, each URL once, at most MAX_ENTRY_DONATIONS.
- * Pages an earlier search left on the entry give way to these.
- */
-function mergeDonations(pages: ResearchDonation[], entry: ResearchEntry): ResearchDonation[] {
-  const own = entry.donation.filter((p) => !fromDonationSearch(p));
-  const ordered = [...pages.filter((p) => p.specific === true), ...pages.filter((p) => p.specific !== true), ...own];
+/** Pages about the event first, then the others, then the rest, each URL once, at most MAX_ENTRY_DONATIONS. */
+function eventPagesFirst(pages: ResearchDonation[], rest: ResearchDonation[] = []): ResearchDonation[] {
+  const ordered = [...pages.filter((p) => p.specific === true), ...pages.filter((p) => p.specific !== true), ...rest];
   const keys = new Set<string>();
   const donation: ResearchDonation[] = [];
   for (const d of ordered) {
@@ -1073,22 +1076,41 @@ function mergeDonations(pages: ResearchDonation[], entry: ResearchEntry): Resear
 }
 
 /**
- * The entry with a donation search's pages merged in (see mergeDonations:
- * they replace any an earlier search found) and the time of the search.
+ * The entry with a donation search's pages merged in: the search's pages
+ * about the event first, then its other pages, then the research's own,
+ * each URL once, at most MAX_ENTRY_DONATIONS; and the time of the search.
+ * The pages an earlier search found (earlierSearch) give way to these; the
+ * research's own are all kept.
  */
 export function withDonationSearch(entry: ResearchEntry, pages: ResearchDonation[], now: string): ResearchEntry {
-  return { ...entry, donation: mergeDonations(pages, entry), donationSearched: now };
+  const out: ResearchEntry = { ...entry, donation: eventPagesFirst(pages, entry.donation), donationSearched: now };
+  delete out.earlierSearch;
+  return out;
 }
 
 /**
  * A new research entry with the pages the donation search of the entry it
- * replaces found carried over, so a re-research loses none of them before a
- * new search has worked. No donationSearched is added, so the search is
- * still made, or tried again; when it works, its pages replace these.
+ * replaces found carried over in earlierSearch, so a re-research loses none
+ * of them before a new search has worked. The new entry's donation (the
+ * research's own list) is left as it is, and no donationSearched is added,
+ * so the search is still made, or tried again; when it works, its pages
+ * replace the carried ones (withDonationSearch).
  */
 export function withEarlierSearch(entry: ResearchEntry, previous: ResearchEntry | undefined): ResearchEntry {
-  const found = (previous?.donation ?? []).filter(fromDonationSearch);
-  return found.length > 0 ? { ...entry, donation: mergeDonations(found, entry) } : entry;
+  if (!previous) return entry;
+  // Pages still carried from before (a search that kept failing), or found by the replaced entry's own search.
+  const found = eventPagesFirst([...(previous.earlierSearch ?? []), ...previous.donation.filter(fromDonationSearch)]);
+  return found.length > 0 ? { ...entry, earlierSearch: found } : entry;
+}
+
+/**
+ * The donation pages an entry offers donate.ts: those carried from an
+ * earlier search (event pages first), then the entry's own list, each URL
+ * once, at most MAX_ENTRY_DONATIONS. An empty list without an entry.
+ */
+export function entryDonations(entry: ResearchEntry | undefined): ResearchDonation[] {
+  if (!entry) return [];
+  return entry.earlierSearch?.length ? eventPagesFirst(entry.earlierSearch, entry.donation) : entry.donation;
 }
 
 // ---------------------------------------------------------------------------
@@ -1119,9 +1141,12 @@ export function normaliseEntry(raw: unknown): ResearchEntry | null {
     }));
   const figures = list(raw.figures).filter((f): f is Figure => strings(f, ["label", "value", "sourceName", "sourceUrl"]));
   // Rebuilt too, keeping specific only as a boolean (older entries have none).
-  const donation = list(raw.donation)
-    .filter((d): d is ResearchDonation => strings(d, ["url", "org", "note"]) && (d.kind === "" || DONATION_KINDS.some((k) => k === d.kind)))
-    .map((d) => ({ url: d.url, org: d.org, kind: d.kind, note: d.note, ...(typeof d.specific === "boolean" ? { specific: d.specific } : {}) }));
+  const donations = (v: unknown) =>
+    list(v)
+      .filter((d): d is ResearchDonation => strings(d, ["url", "org", "note"]) && (d.kind === "" || DONATION_KINDS.some((k) => k === d.kind)))
+      .map((d) => ({ url: d.url, org: d.org, kind: d.kind, note: d.note, ...(typeof d.specific === "boolean" ? { specific: d.specific } : {}) }));
+  const donation = donations(raw.donation);
+  const earlierSearch = donations(raw.earlierSearch);
   const sources = list(raw.sources).filter((s): s is ResearchSource => strings(s, ["name", "url", "title"]));
   return {
     at: raw.at,
@@ -1136,6 +1161,7 @@ export function normaliseEntry(raw: unknown): ResearchEntry | null {
     membersHash: raw.membersHash,
     ...(isTime(raw.seen) ? { seen: raw.seen } : {}),
     ...(isTime(raw.donationSearched) ? { donationSearched: raw.donationSearched } : {}),
+    ...(earlierSearch.length > 0 ? { earlierSearch } : {}),
   };
 }
 

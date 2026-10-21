@@ -34,6 +34,7 @@ import {
   donationFacts,
   donationSearchSchema,
   donationSearchSystemPrompt,
+  entryDonations,
   hostName,
   isPlaceholder,
   listSources,
@@ -1238,19 +1239,23 @@ describe("withDonationSearch", () => {
     expect(before.donationSearched).toBeUndefined();
   });
 
-  it("replaces the pages an earlier search left on the entry, keeping the research's own", () => {
+  it("replaces the pages carried from an earlier search, keeping all of the research's own", () => {
     const d = disaster();
     const before = entry(d, {
-      donation: [
+      donation: [{ url: "https://www.unicef.org/emergencies", org: "UNICEF", kind: "agency", note: "" }],
+      earlierSearch: [
         { url: "https://www.jrc.or.jp/contribute/2026/old-appeal/", org: "JRCS", kind: "society", note: "Earlier appeal", specific: true },
         { url: "https://www.jrc.or.jp/contribute/general/", org: "JRCS", kind: "society", note: "", specific: false },
-        { url: "https://www.unicef.org/emergencies", org: "UNICEF", kind: "agency", note: "" },
       ],
     });
     const after = withDonationSearch(before, [{ url: CHAMPI_PAGE, org: "JRCS", kind: "society", note: "", specific: true }], NOW);
     expect(after.donation.map((p) => p.url)).toEqual([CHAMPI_PAGE, "https://www.unicef.org/emergencies"]);
+    expect(after).not.toHaveProperty("earlierSearch");
+    expect(before.earlierSearch).toHaveLength(2);
     // A search that worked and found nothing replaces them too.
-    expect(withDonationSearch(before, [], NOW).donation.map((p) => p.url)).toEqual(["https://www.unicef.org/emergencies"]);
+    const none = withDonationSearch(before, [], NOW);
+    expect(none.donation.map((p) => p.url)).toEqual(["https://www.unicef.org/emergencies"]);
+    expect(none).not.toHaveProperty("earlierSearch");
   });
 
   it("records a search that found nothing and keeps at most ten pages", () => {
@@ -1272,32 +1277,90 @@ describe("withEarlierSearch", () => {
     ],
     hoursAgo(50),
   );
-  const fresh = entry(d, { donation: [{ url: "https://www.jrc.or.jp/contribute/champi/", org: "Japanese Red Cross Society", kind: "society", note: "From the new research" }] });
+  const OWN = "https://www.jrc.or.jp/contribute/champi/";
+  const fresh = entry(d, { donation: [{ url: OWN, org: "Japanese Red Cross Society", kind: "society", note: "From the new research" }] });
 
-  it("carries over the pages the replaced entry's donation search found, event pages first, without marking a search", () => {
+  it("carries over the pages the replaced entry's donation search found, apart from the research's own, without marking a search", () => {
     const out = withEarlierSearch(fresh, searched);
-    expect(out.donation.map((p) => [p.url, p.specific])).toEqual([
+    expect(out.earlierSearch?.map((p) => [p.url, p.specific])).toEqual([
       [CHAMPI_PAGE, true],
       ["https://www.jrc.or.jp/contribute/", false],
-      ["https://www.jrc.or.jp/contribute/champi/", undefined],
     ]);
+    // The research's own list is left as it is.
+    expect(out.donation).toEqual(fresh.donation);
     // The old research's own page is not carried; the new research has its own.
-    expect(out.donation.map((p) => p.url)).not.toContain("https://www.unicef.org/emergencies");
+    expect(entryDonations(out).map((p) => [p.url, p.specific])).toEqual([
+      [CHAMPI_PAGE, true],
+      ["https://www.jrc.or.jp/contribute/", false],
+      [OWN, undefined],
+    ]);
     expect(out.donationSearched).toBeUndefined();
     expect(out.summary).toBe(fresh.summary);
-    expect(fresh.donation).toHaveLength(1);
+    expect(fresh).not.toHaveProperty("earlierSearch");
   });
 
   it("keeps carrying them while searches fail, and gives them up once a new search works", () => {
     const again = withEarlierSearch(entry(d), withEarlierSearch(fresh, searched));
-    expect(again.donation.map((p) => p.url)).toEqual([CHAMPI_PAGE, "https://www.jrc.or.jp/contribute/"]);
+    expect(again.earlierSearch?.map((p) => p.url)).toEqual([CHAMPI_PAGE, "https://www.jrc.or.jp/contribute/"]);
+    expect(again.donation).toEqual([]);
     const after = withDonationSearch(again, [{ url: "https://www.jrc.or.jp/contribute/2026/champi-2/", org: "JRCS", kind: "society", note: "", specific: true }], NOW);
     expect(after.donation.map((p) => p.url)).toEqual(["https://www.jrc.or.jp/contribute/2026/champi-2/"]);
+    expect(entryDonations(after)).toEqual(after.donation);
+  });
+
+  it("keeps a page the new research lists that the earlier search had found too, once a new search works", () => {
+    // The new research lists the general page and the event page, unmarked; the earlier search had marked both.
+    const both = entry(d, {
+      donation: [
+        { url: "https://www.jrc.or.jp/contribute/", org: "JRCS", kind: "society", note: "From the new research" },
+        { url: CHAMPI_PAGE, org: "JRCS", kind: "society", note: "From the new research" },
+      ],
+    });
+    const carried = withEarlierSearch(both, searched);
+    // Shown once each while carried, as the earlier search marked them.
+    expect(entryDonations(carried).map((p) => [p.url, p.specific])).toEqual([
+      [CHAMPI_PAGE, true],
+      ["https://www.jrc.or.jp/contribute/", false],
+    ]);
+    // A new search that works and finds nothing, or only other pages: the research's own stay, unmarked.
+    for (const pages of [[], [{ url: "https://www.jrc.or.jp/contribute/2026/champi-2/", org: "JRCS", kind: "society" as const, note: "", specific: true }]]) {
+      const after = withDonationSearch(carried, pages, NOW);
+      expect(after.donation.slice(pages.length).map((p) => [p.url, p.specific, p.note])).toEqual([
+        ["https://www.jrc.or.jp/contribute/", undefined, "From the new research"],
+        [CHAMPI_PAGE, undefined, "From the new research"],
+      ]);
+      expect(entryDonations(after)).toEqual(after.donation);
+    }
   });
 
   it("leaves the new entry as it is when nothing was searched before", () => {
     expect(withEarlierSearch(fresh, undefined)).toBe(fresh);
     expect(withEarlierSearch(fresh, entry(d, { donation: [{ url: "https://www.unicef.org/emergencies", org: "UNICEF", kind: "agency", note: "" }] }))).toBe(fresh);
+  });
+});
+
+describe("entryDonations", () => {
+  const d = disaster();
+  const page = (url: string, specific?: boolean) => ({ url, org: "JRCS", kind: "society" as const, note: "", ...(specific === undefined ? {} : { specific }) });
+
+  it("gives the entry's own pages when nothing is carried, and none without an entry", () => {
+    const own = entry(d, { donation: [page("https://a.example/1")] });
+    expect(entryDonations(own)).toBe(own.donation);
+    expect(entryDonations(undefined)).toEqual([]);
+  });
+
+  it("puts carried event pages first, then the other carried pages, then the entry's own, each URL once, at most ten", () => {
+    const e = entry(d, {
+      donation: [page("https://a.example/own"), page("https://a.example/general")],
+      earlierSearch: [page("https://a.example/general", false), page("https://a.example/event", true)],
+    });
+    expect(entryDonations(e).map((p) => [p.url, p.specific])).toEqual([
+      ["https://a.example/event", true],
+      ["https://a.example/general", false],
+      ["https://a.example/own", undefined],
+    ]);
+    const many = entry(d, { donation: Array.from({ length: 5 }, (_, i) => page(`https://own.example/${i}`)), earlierSearch: Array.from({ length: 8 }, (_, i) => page(`https://s.example/${i}`, false)) });
+    expect(entryDonations(many)).toHaveLength(MAX_ENTRY_DONATIONS);
   });
 });
 
@@ -1382,10 +1445,27 @@ describe("research cache", () => {
     expect(normaliseEntry({ at: NOW, membersHash: "h", donationSearched: "never" })).not.toHaveProperty("donationSearched");
   });
 
-  it("round-trips a searched entry through the cache file", () => {
+  it("keeps the pages carried from an earlier search, checked like the entry's own, and leaves the field out when there are none", () => {
+    const e = normaliseEntry({
+      at: NOW,
+      membersHash: "h",
+      earlierSearch: [
+        { url: "https://a.example/x", org: "A", kind: "society", note: "", specific: true },
+        { url: "https://b.example/y", org: "B", kind: "charity", note: "", specific: false },
+        "junk",
+      ],
+    });
+    expect(e?.earlierSearch).toEqual([{ url: "https://a.example/x", org: "A", kind: "society", note: "", specific: true }]);
+    expect(normaliseEntry({ at: NOW, membersHash: "h", earlierSearch: [] })).not.toHaveProperty("earlierSearch");
+    expect(normaliseEntry({ at: NOW, membersHash: "h", earlierSearch: "x" })).not.toHaveProperty("earlierSearch");
+  });
+
+  it("round-trips a searched entry, and one carrying an earlier search's pages, through the cache file", () => {
     const file = tmp();
     const d = disaster();
-    const cache: ResearchCache = { [d.id]: withDonationSearch(entry(d), [{ url: CHAMPI_PAGE, org: "JRCS", kind: "society", note: "", specific: true }], NOW) };
+    const searched = withDonationSearch(entry(d), [{ url: CHAMPI_PAGE, org: "JRCS", kind: "society", note: "", specific: true }], NOW);
+    const cache: ResearchCache = { [d.id]: searched, other: withEarlierSearch(entry(d), searched) };
+    expect(cache.other.earlierSearch).toHaveLength(1);
     writeResearchCache(cache, file);
     expect(readResearchCache(file)).toEqual(cache);
   });

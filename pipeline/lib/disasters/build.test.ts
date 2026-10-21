@@ -569,7 +569,9 @@ describe("updateDisasters", () => {
     expect(failing.webResearch).toHaveBeenCalledTimes(2);
     const cached = readCache(dirs.cacheDir)[ID];
     expect(cached.at).toBe(NOW);
-    expect(cached.donation[0]).toEqual(oldPage);
+    // Carried apart from the new research's own pages.
+    expect(cached.earlierSearch).toEqual([oldPage]);
+    expect(cached.donation.map((p) => p.url)).not.toContain(OLD_PAGE);
     // Unmarked, so the search is tried again.
     expect(cached.donationSearched).toBeUndefined();
     expect(file.disasters[0].donate[0]).toMatchObject({ url: OLD_PAGE, forEvent: true });
@@ -581,7 +583,39 @@ describe("updateDisasters", () => {
     expect(after.donationSearched).toBe("2026-10-21T12:30:00.000Z");
     expect(after.donation[0].url).toBe(EVENT_PAGE);
     expect(after.donation.map((p) => p.url)).not.toContain(OLD_PAGE);
+    expect(after.earlierSearch).toBeUndefined();
     expect(next.disasters[0].donate[0]).toMatchObject({ url: EVENT_PAGE, forEvent: true });
+  });
+
+  it("keeps a page the new research lists when the earlier search had found it too and a new search works without it", async () => {
+    // The earlier search found the society's general page (and, in the second case, marked it as the event's own);
+    // the re-research lists it as well; the new search works and finds nothing.
+    const GENERAL = "https://bdrcs.org/donate/";
+    const researched = { ...COXS.parsed, donation: [{ url: GENERAL, org: "Bangladesh Red Crescent Society", kind: "society" as const, note: "Donate" }] };
+    const none = { research: { text: "Donation pages: none found", citations: [], results: [], searches: 1, okSearches: 1 }, parsed: { pages: [] } };
+    for (const specific of [false, true]) {
+      const earlier = entry({
+        at: "2026-10-17T00:00:00.000Z",
+        donationSearched: "2026-10-17T00:00:00.000Z",
+        donation: [{ url: GENERAL, org: "Bangladesh Red Crescent Society", kind: "society", note: "From the search", specific }],
+      });
+      const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } }, research: { [ID]: earlier }, registry: REGISTRY });
+      const fetchMock = vi.fn(async (url: string | URL | Request) => {
+        if (String(url) === GENERAL) return new Response("<h1>Donate</h1><a>Donate now</a>", { status: 200, headers: { "content-type": "text/html" } });
+        throw new Error("network down");
+      });
+      const ledger = emptyLedger();
+      const { ai, webResearch } = recordingAi(ledger, none, researched);
+      const file = await updateDisasters(runWith(dirs, { ai, ledger, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log: () => {} } }));
+      expect(webResearch).toHaveBeenCalledTimes(2);
+      const cached = readCache(dirs.cacheDir)[ID];
+      expect(cached.donationSearched).toBe(NOW);
+      expect(cached.earlierSearch).toBeUndefined();
+      // The research's own copy, unmarked.
+      expect(cached.donation).toEqual([{ url: GENERAL, org: "Bangladesh Red Crescent Society", kind: "society", note: "Donate" }]);
+      expect(file.disasters[0].donate.find((l) => l.url === GENERAL)).toMatchObject({ via: "research" });
+      expect(file.disasters[0].donate.find((l) => l.url === GENERAL)?.forEvent).toBeUndefined();
+    }
   });
 
   it("counts a donation search in which no search worked as failed, and one that searched and found nothing as done", async () => {
