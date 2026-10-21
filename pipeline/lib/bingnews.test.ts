@@ -33,8 +33,18 @@ describe("parseBingFeed", () => {
     expect(parseBingFeed(feed([bad, item("Ok", "https://a.example/1", "S", "garbage")]))).toEqual([]);
     expect(parseBingFeed(feed([]))).toEqual([]);
   });
-  it("rejects a body that is not a feed", () => {
+  it("keeps numeric text as text, so a headline 007 or an outlet named 444 is not turned into a number", () => {
+    const out = parseBingFeed(feed([item("007", "https://444.hu/a", "444"), item("1e3", "https://444.hu/b", "0012.50")]));
+    expect(out.map((a) => [a.title, a.outlet])).toEqual([
+      ["007", "444"],
+      ["1e3", "0012.50"],
+    ]);
+  });
+  it("rejects a body that is not a feed, quoting its start on one line", () => {
     expect(() => parseBingFeed("<html><body>Blocked</body></html>")).toThrow(/Not a Bing News feed/);
+    expect(() => parseBingFeed('<script type="text/javascript">\n  var _G = {};\r\n_G.BCT=ne\n</script>')).toThrow(
+      /^Not a Bing News feed: <script type="text\/javascript"> var _G = \{\}; _G\.BCT=ne <\/script>$/,
+    );
   });
 });
 

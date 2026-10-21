@@ -73,6 +73,17 @@ export function tokenWeights(docs: string[][]): (token: string) => number {
   return (t) => Math.log((n + 1) / (df.get(t) ?? 1));
 }
 
+/**
+ * Whether two token lists hold the same figures (tokens with a digit).
+ * An outlet's machine-made headlines ("Light mag. 3.3 earthquake - …, at
+ * 06:35 pm") differ only in times or figures when they report different
+ * events, so from one outlet they must match.
+ */
+export function sameFigures(a: string[], b: string[]): boolean {
+  const figures = (tokens: string[]) => tokens.filter((t) => /\p{N}/u.test(t)).sort().join(" ");
+  return figures(a) === figures(b);
+}
+
 /** Weighted Dice similarity of two token lists: 0 when nothing is shared, 1 for the same tokens. */
 export function similarity(a: string[], b: string[], weight: (token: string) => number = () => 1): number {
   const inB = new Set(b);
@@ -100,6 +111,7 @@ export function outletKey(outlet: string): string {
 /**
  * Splits articles into stories: each article joins the story holding the
  * headline most like its own, if one is like enough, or starts a new one.
+ * Two headlines from one outlet must also share their figures (sameFigures).
  * Stories keep the input order of their first article.
  */
 export function groupStories(articles: Article[]): Article[][] {
@@ -114,8 +126,10 @@ export function groupStories(articles: Article[]): Article[][] {
     for (const [g, members] of groups.entries()) {
       for (const j of members) {
         if (Math.abs(times[i] - times[j]) > STORY_WINDOW_HOURS * HOUR) continue;
+        const sameOutlet = keys[i] !== "" && keys[i] === keys[j];
+        if (sameOutlet && !sameFigures(tokens[i], tokens[j])) continue;
         const sim = similarity(tokens[i], tokens[j], weight);
-        const bar = keys[i] && keys[i] === keys[j] ? SAME_OUTLET_THRESHOLD : STORY_THRESHOLD;
+        const bar = sameOutlet ? SAME_OUTLET_THRESHOLD : STORY_THRESHOLD;
         if (sim >= bar && sim > bestSim) {
           best = g;
           bestSim = sim;
@@ -207,11 +221,24 @@ export function isTrending(s: StoryStats, now: number): boolean {
   return s.outlets >= TRENDING_OUTLETS && ageHours(s.newest, now) <= TRENDING_HOURS;
 }
 
-/** The article shown for a story: its best-placed top-stories article if it has one, else its newest. */
+/**
+ * A top-stories article is shown for its story only when it is at most
+ * this much older than the story's newest headline. Google's top feed
+ * keeps leads for days, and a story is ranked and marked trending by its
+ * newest headline, so the time shown must stay close to that one.
+ */
+export const LEAD_LAG_HOURS = 3;
+
+/**
+ * The article shown for a story: its best-placed top-stories article
+ * from within LEAD_LAG_HOURS of its newest, if it has one, else its newest.
+ */
 export function representative(story: Article[], topPositions: Map<string, number>): Article {
-  const inTop = story.filter((a) => topPositions.has(a.url));
+  const newest = story.reduce((a, b) => (Date.parse(b.published) > Date.parse(a.published) ? b : a));
+  const cutoff = Date.parse(newest.published) - LEAD_LAG_HOURS * HOUR;
+  const inTop = story.filter((a) => topPositions.has(a.url) && Date.parse(a.published) >= cutoff);
   if (inTop.length) return inTop.reduce((a, b) => (topPositions.get(b.url)! < topPositions.get(a.url)! ? b : a));
-  return story.reduce((a, b) => (Date.parse(b.published) > Date.parse(a.published) ? b : a));
+  return newest;
 }
 
 /**

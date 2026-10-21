@@ -72,6 +72,14 @@ interface FeedItem {
   source?: { "#text"?: string; "@_url"?: string } | string;
 }
 
+/**
+ * The start of a response body, on one line, for an error message: an
+ * HTML page's line breaks would otherwise split the run log.
+ */
+export function snippet(body: string): string {
+  return body.slice(0, 120).replace(/\s+/g, " ").trim();
+}
+
 /** A numeric character reference's character, or the reference itself when it names none. */
 function codePoint(n: number, raw: string): string {
   return n <= 0x10ffff ? String.fromCodePoint(n) : raw;
@@ -108,23 +116,24 @@ export function relatedOutlets(description: string, own: string): string[] {
 /**
  * Parses a feed body. Anything that is not an RSS document with a channel is
  * treated as a failure, since Google answers unsupported editions with a
- * redirect page rather than an error status.
+ * redirect page rather than an error status. Text is kept as text, so an
+ * outlet named "444" or a headline "2026" is never read as a number.
  */
 export function parseFeed(xml: string): Article[] {
-  const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: "@_" });
+  const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: "@_", parseTagValue: false });
   let doc: { rss?: { channel?: { item?: FeedItem | FeedItem[] } } };
   try {
     doc = parser.parse(xml);
   } catch {
-    throw new Error(`Feed is not XML: ${xml.slice(0, 120).trim()}`);
+    throw new Error(`Feed is not XML: ${snippet(xml)}`);
   }
   const channel = doc.rss?.channel;
-  if (!channel) throw new Error(`Feed has no RSS channel: ${xml.slice(0, 120).trim()}`);
+  if (!channel) throw new Error(`Feed has no RSS channel: ${snippet(xml)}`);
   const items = channel.item === undefined ? [] : Array.isArray(channel.item) ? channel.item : [channel.item];
 
   const articles: Article[] = [];
   for (const it of items) {
-    const outlet = typeof it.source === "string" ? it.source : (it.source?.["#text"] ?? "");
+    const outlet = String(typeof it.source === "object" ? (it.source?.["#text"] ?? "") : (it.source ?? ""));
     const outletUrl = typeof it.source === "object" ? (it.source?.["@_url"] ?? null) : null;
     const published = it.pubDate ? new Date(it.pubDate) : null;
     if (!it.title || !it.link || !published || Number.isNaN(published.getTime())) continue;
@@ -200,7 +209,7 @@ export async function fetchFeedUrl(
         }
       }
       const text = await res.text();
-      if (res.status !== 200) throw new Error(`HTTP ${res.status}: ${text.slice(0, 120).trim()}`);
+      if (res.status !== 200) throw new Error(`HTTP ${res.status}: ${snippet(text)}`);
       return { url, articles: parseFeed(text) };
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);

@@ -30,9 +30,12 @@ const JUNK =
 /**
  * Characters real headlines rarely use: brackets, @, *, $, |, √ and so on.
  * Letters, digits and combining marks (Thai and Bengali vowels and tones,
- * Arabic diacritics) are all fine.
+ * Arabic diacritics) are all fine, and so is the punctuation of other
+ * languages: the quotes, brackets, commas and middle dots of Chinese,
+ * Japanese and Korean (「」【】《》、。・·), and the quotes of French,
+ * Russian, Arabic and German («» „).
  */
-const SYMBOLS = /[^\p{L}\p{M}\p{N}\s.,:;'"‘’“”\-–—!?()&/%+]/gu;
+const SYMBOLS = /[^\p{L}\p{M}\p{N}\s.,:;'"‘’“”„«»\-–—―!?()&/%+「」『』【】〈〉《》〔〕〖〗〝〟、。・·]/gu;
 const SPORT = /\b(rugby|league|football|soccer|cricket|match|game|tv|hd)\b/i;
 
 export function isJunkHeadline(title: string): boolean {
@@ -42,6 +45,19 @@ export function isJunkHeadline(title: string): boolean {
   if (/\bwatch\b.*\b(vs|v)\b/i.test(t)) return true;
   // All-caps LIVE next to a sports word is a stream page, not a live blog.
   return /\bLIVE\b/.test(t) && SPORT.test(t);
+}
+
+/**
+ * Keeps the first article for each URL, in order, minus junk and blank
+ * headlines. Other outlets' copies of a headline stay, for ranking to count.
+ */
+export function usableArticles(articles: Article[]): Article[] {
+  const seenUrls = new Set<string>();
+  return articles.filter((a) => {
+    if (!titleKey(a.title) || !a.url || seenUrls.has(a.url) || isJunkHeadline(a.title)) return false;
+    seenUrls.add(a.url);
+    return true;
+  });
 }
 
 /** Keeps the first article for each URL and each normalised headline, in order, minus junk. */

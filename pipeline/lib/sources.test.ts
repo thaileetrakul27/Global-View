@@ -37,6 +37,8 @@ const NATION = google([
 ]);
 const WORLD = google([["https://g/d", "Talks resume in Oslo", "Thai PBS", 4]]);
 const BING = bing([["https://pub/e", "Gold price steady today", "Khaosod", 1]]);
+/** A full page of Bing results, after which Bing has a second page. */
+const FULL_BING = bing(Array.from({ length: 12 }, (_, i): [string, string, string, number] => [`https://pub/f${i}`, `Story number ${i}`, "Khaosod", 1]));
 
 /** A fake network: answers by URL, records every request and wait in order. */
 function network(routes: Record<string, () => Response>) {
@@ -66,13 +68,18 @@ const LOCAL_ROUTES = {
 };
 
 describe("fetchLocalSources", () => {
-  it("reads top stories, NATION, WORLD and one page of Bing, top stories first", async () => {
-    const { deps, events } = network(LOCAL_ROUTES);
+  it("reads top stories, NATION, WORLD and Bing, top stories first", async () => {
+    const { deps } = network(LOCAL_ROUTES);
     const s = await fetchLocalSources(TH, 2000, deps);
     expect(s?.articles.map((a) => a.url)).toEqual(["https://g/a", "https://g/b", "https://g/b", "https://g/c", "https://g/d", "https://pub/e"]);
     expect(s?.top).toEqual(["https://g/a", "https://g/b"]);
     expect(s?.services).toEqual(["Google News", "Bing News"]);
     expect(s?.url).toBe("https://news.google.com/rss?hl=th&gl=TH&ceid=TH%3Ath");
+  });
+  it("reads only one page of Bing, even when it is full", async () => {
+    const { deps, events } = network({ ...LOCAL_ROUTES, "bing.com/news/search": ok(FULL_BING) });
+    const s = await fetchLocalSources(TH, 2000, deps);
+    expect(s?.articles.filter((a) => a.url.startsWith("https://pub/"))).toHaveLength(12);
     expect(events.filter((e) => e.includes("bing"))).toEqual(["fetch bing.com/news/search"]);
   });
   it("paces the Google requests, with Bing alongside", async () => {
@@ -180,6 +187,33 @@ describe("buildList", () => {
     expect(list.map((a) => a.url)).toEqual(["https://g/storm", "https://pub/lone"]);
     expect(list[0]).toMatchObject({ outlets: 4, trending: true });
     expect(buildList(sources, 10, NOW).map((a) => a.url)).toEqual(["https://g/storm", "https://pub/lone", "https://g/old"]);
+  });
+  it("counts every outlet that runs the same headline", () => {
+    const title = "Alice Schwarzer stellt Magazin „Emma“ ein";
+    const sources: Sources = {
+      url: "u",
+      top: ["https://g/faz"],
+      services: ["Google News"],
+      articles: [
+        art("https://g/faz", title, "FAZ", 6, ["tagesschau.de", "Baden Online", "Spiegel", "n-tv.de"]),
+        art("https://g/ts", "Alice Schwarzer stellt Magazin \"Emma\" ein", "tagesschau.de", 3.75, ["Baden Online", "Spiegel", "n-tv.de", "Mindener Tageblatt"]),
+      ],
+    };
+    const list = buildList(sources, 10, NOW);
+    expect(list).toHaveLength(1);
+    expect(list[0]).toMatchObject({ outlets: 6, url: "https://g/faz" });
+  });
+  it("shows a headline repeated days apart only once", () => {
+    const sources: Sources = {
+      url: "u",
+      top: [],
+      services: ["Bing News"],
+      articles: [
+        art("https://pub/new", "Government announces new rail plan", "Daily News", 1),
+        art("https://pub/old", "Government announces new rail plan!", "Daily News", 60),
+      ],
+    };
+    expect(buildList(sources, 10, NOW).map((a) => a.url)).toEqual(["https://pub/new"]);
   });
 });
 
