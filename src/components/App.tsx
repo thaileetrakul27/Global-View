@@ -29,11 +29,12 @@ import GlobeView from "./GlobeView";
 import type { GlobeArc } from "./Globe";
 import CountrySearch from "./CountrySearch";
 import CountryPanel, { type CountryState } from "./CountryPanel";
+import CountryDisasters from "./CountryDisasters";
 import BottomSheet from "./BottomSheet";
 import ModeSwitch from "./ModeSwitch";
 import TimeMenu from "./TimeMenu";
 import WorldStories from "./WorldStories";
-import TrendingButton from "./TrendingButton";
+import TrendingStrip from "./TrendingStrip";
 import TrendingPanel from "./TrendingPanel";
 import StoryPanel from "./StoryPanel";
 import WorldSummary from "./WorldSummary";
@@ -48,6 +49,8 @@ import type { SharedRef } from "./ArticleList";
 export const PANEL_WIDTH = 440;
 /** Fraction of the screen height the mobile sheet covers when peeking. */
 export const SHEET_PEEK = 0.42;
+/** Phones shorter than this list two trending stories under the globe instead of three. */
+const SHORT_PHONE = 780;
 /** localStorage key set once the user has turned the globe, so the hint stops showing. */
 const MOVED_KEY = "gv:moved";
 /** Coverage, tints and lines the disaster map uses: plain land, so the disasters stand out. */
@@ -124,6 +127,9 @@ export default function App() {
   // Disasters happening now, the one whose donation pages are open, and
   // whether the minor ones are shown too.
   const [disasters, setDisasters] = useState<Disaster[]>([]);
+  // Whether the disaster file has been read (or failed), so a country on the
+  // disaster map can tell "none now" from "not loaded yet".
+  const [disastersReady, setDisastersReady] = useState(false);
   const [selectedDisasterId, setSelectedDisasterId] = useState<string | null>(null);
   // Country and map to return to when the disaster panel closes.
   const [disasterFrom, setDisasterFrom] = useState<string | null>(null);
@@ -164,6 +170,10 @@ export default function App() {
           setSelectedCode(wanted.country);
           setFilterAbout(wanted.about && codes.has(wanted.about) ? wanted.about : null);
         }
+        // A link to the disaster map opens on it, unless the user has moved
+        // on. Set with the country, so a country linked on the disaster map
+        // never shows its news first.
+        if (!userActed.current && wanted.mode === "disasters") setMode("disasters");
         urlApplied.current = true;
       })
       .catch(console.error);
@@ -179,12 +189,11 @@ export default function App() {
       .then((file) => {
         const list = file?.disasters ?? [];
         setDisasters(list);
-        // A link to the disaster map opens on it, unless the user has moved on.
-        if (!userActed.current && wanted.mode === "disasters") setMode("disasters");
         // A link to a disaster that has since ended opens nothing.
         if (!userActed.current && wanted.disaster && list.some((d) => d.id === wanted.disaster)) setSelectedDisasterId(wanted.disaster);
       })
-      .catch(console.error);
+      .catch(console.error)
+      .finally(() => setDisastersReady(true));
     loadHistoryIndex()
       .then((h) => {
         const dates = h?.dates ?? [];
@@ -494,7 +503,9 @@ export default function App() {
     disasterOpener.current = null;
   }, [disasterFrom, disasterFromMode]);
   // Switching maps closes what belongs to the other one: the news map has no
-  // open disaster, and the disaster map no shared story or past day.
+  // open disaster, and the disaster map no shared story or past day. An open
+  // country stays, showing its news or its disasters, unless it has no
+  // disaster now: then the disaster map closes it.
   const changeMap = useCallback(
     (next: MapMode) => {
       userActed.current = true;
@@ -508,16 +519,35 @@ export default function App() {
         setDisasterFromMode(null);
       }
       if (next === "disasters") {
+        // The open country, or the one a shared story was opened from.
+        const code = focusStoryId ? storyFrom : selectedCode;
+        const keep = code && (!disastersReady || disastersIn(disasters, code).length > 0) ? code : null;
         if (focusStoryId) {
           setFocusStoryId(null);
-          setSelectedCode(storyFrom);
           setStoryFrom(null);
           setStoryFromMode(null);
+        }
+        if (keep !== selectedCode) {
+          setSelectedCode(keep);
+          setFilterAbout(null);
+          setReadersOpen(false);
+          setCountryDisastersOpen(false);
         }
         setHistoryDate(null);
       }
     },
-    [mode, selectedDisasterId, disasterFrom, focusStoryId, storyFrom],
+    [mode, selectedDisasterId, disasterFrom, focusStoryId, storyFrom, selectedCode, disastersReady, disasters],
+  );
+  // The map switch itself. An open country's panel is swapped for the other
+  // map's view of it, which focuses its heading on opening; focus goes back
+  // to the switch, so pressing it never moves the keyboard user away.
+  const switchMap = useCallback(
+    (next: MapMode) => {
+      const swapping = !!selectedCode && next !== mode;
+      changeMap(next);
+      if (swapping) refocus([`[data-map-switch="${next}"]`]);
+    },
+    [changeMap, selectedCode, mode],
   );
   // The first turn of the globe retires the hint, in this browser for good.
   const onMoved = useCallback(() => {
@@ -537,7 +567,7 @@ export default function App() {
     setStoryFromMode(null);
   }, [storyFrom, storyFromMode]);
   // Phones: open and close the "Trending today" sheet. Closing puts focus
-  // back on the button that opened it.
+  // back on the trending card's "See all", which opened it.
   const openTrending = useCallback(() => {
     userActed.current = true;
     setTrendingOpen(true);
@@ -605,7 +635,20 @@ export default function App() {
     />
   );
   const trendingPanel = trendingShown && <TrendingPanel stories={dayStories} nameOf={nameOf} onStory={openStory} onClose={closeTrending} />;
-  const countryPanel = selected && (
+  const newsMap = mode === "news";
+  // A country shows its news on the news map and its disasters now on the
+  // disaster map (with a way back to its news).
+  const countryDisasterPanel = selected && !newsMap && (
+    <CountryDisasters
+      name={nameOf(selected.properties.code)}
+      disasters={disastersReady ? countryDisasters : null}
+      nameOf={nameOf}
+      onSelect={openDisasterPanel}
+      onNews={() => changeMap("news")}
+      onClose={close}
+    />
+  );
+  const countryPanel = selected && newsMap && (
     <CountryPanel
       country={selected}
       state={countryState}
@@ -648,7 +691,6 @@ export default function App() {
     />
   );
 
-  const newsMap = mode === "news";
   // The day pager belongs to the news map: past days have no disasters.
   const showTime = newsMap && (historyDates.length > 1 || !!historyDate);
   const hint = `Drag to turn the globe, or ${vp.isDesktop ? "click" : "tap"} ${newsMap ? "a country" : "a disaster"}`;
@@ -661,12 +703,15 @@ export default function App() {
     <main className="relative h-full w-full overflow-hidden">
       <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex flex-col gap-3 p-5 sm:p-7 md:flex-row md:items-start md:justify-between">
         {/* From tablet width the search box and map switch sit in the middle,
-            so the text here wraps before it reaches them. */}
-        <div className="pointer-events-auto md:max-w-[min(28rem,calc(50vw-13rem))]">
+            so the text here wraps before it reaches them. A pale backing
+            keeps the reading lines and the globe from running through the
+            text; its padding is taken back by negative margins (and added
+            to the width cap), so nothing moves. */}
+        <div className="pointer-events-auto -mx-2.5 -my-1.5 rounded-lg bg-paper/85 px-2.5 py-1.5 backdrop-blur-sm md:max-w-[calc(min(28rem,calc(50vw-13rem))+1.25rem)]">
           {/* On phones the map switch shares the title's row. */}
           <div className="flex items-center justify-between gap-3">
             <h1 className="font-serif text-2xl leading-none tracking-tight text-ink sm:text-3xl">Global View</h1>
-            {!vp.isDesktop && <ModeSwitch mode={mode} onChange={changeMap} />}
+            {!vp.isDesktop && <ModeSwitch mode={mode} onChange={switchMap} />}
           </div>
           {/* One line under the title: what the map shows right now. */}
           {!panelOpen &&
@@ -693,10 +738,8 @@ export default function App() {
           </div>
           {/* Not while a panel is open: the sheet would cover its menu. */}
           {!vp.isDesktop && showTime && !panelOpen && <TimeMenu dates={historyDates} date={historyDate} onChange={changeDate} />}
-          {vp.isDesktop && <ModeSwitch mode={mode} onChange={changeMap} />}
+          {vp.isDesktop && <ModeSwitch mode={mode} onChange={switchMap} />}
         </div>
-        {/* Phones: today's shared stories, one tap away, in the sheet. */}
-        {canTrend && !panelOpen && <TrendingButton onOpen={openTrending} />}
       </header>
 
       {!panelOpen && !moved && countries.length > 0 && (
@@ -726,6 +769,14 @@ export default function App() {
       {!panelOpen && !newsMap && liveDisasters.length > 0 && !vp.isDesktop && (
         <div className={`pointer-events-none absolute inset-x-0 z-20 ${moved ? "bottom-5" : "bottom-11"}`}>
           <DisasterStrip disasters={liveDisasters} nameOf={nameOf} onSelect={openDisasterPanel} showMinor={showMinor} onShowMinor={setShowMinor} />
+        </div>
+      )}
+
+      {/* Phones, news map: today's top shared stories in the band under the
+          globe, above the hint (or in its place once the globe has turned). */}
+      {canTrend && !panelOpen && (
+        <div className={`pointer-events-none absolute inset-x-0 z-20 ${moved ? "bottom-5" : "bottom-11"}`}>
+          <TrendingStrip stories={dayStories} rows={vp.height < SHORT_PHONE ? 2 : 3} onStory={openStory} onOpen={openTrending} />
         </div>
       )}
 
@@ -771,6 +822,7 @@ export default function App() {
           {storyPanel}
           {disasterPanel}
           {countryPanel}
+          {countryDisasterPanel}
         </aside>
       ) : (
         <BottomSheet
@@ -782,6 +834,7 @@ export default function App() {
           {storyPanel}
           {disasterPanel}
           {countryPanel}
+          {countryDisasterPanel}
           {trendingPanel}
         </BottomSheet>
       )}

@@ -71,7 +71,7 @@ export default function DisasterList({ disasters, nameOf, onSelect, showMinor, o
       >
         {shown.map((d) => (
           <li key={d.id}>
-            <Row disaster={d} nameOf={nameOf} onSelect={onSelect} />
+            <DisasterRow disaster={d} nameOf={nameOf} onSelect={onSelect} />
           </li>
         ))}
       </ol>
@@ -117,8 +117,11 @@ function useMoreBelow(length: number) {
   return { ref, more, onScroll };
 }
 
-/** One disaster: icon, title, where, and a severity chip when it is significant or severe. */
-function Row({ disaster: d, nameOf, onSelect }: { disaster: Disaster; nameOf: (code: string) => string; onSelect: (id: string) => void }) {
+/**
+ * One disaster: icon, title, where, and a severity chip when it is
+ * significant or severe. Also the rows of a country's disasters.
+ */
+export function DisasterRow({ disaster: d, nameOf, onSelect }: { disaster: Disaster; nameOf: (code: string) => string; onSelect: (id: string) => void }) {
   const where = locationLine(d, nameOf, { places: 1, countries: 2 });
   return (
     <button

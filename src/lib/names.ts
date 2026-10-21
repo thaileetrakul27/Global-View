@@ -21,3 +21,8 @@ const SHORT: Record<string, string> = {
 export function displayName(code: string, mapName: string | undefined): string {
   return SHORT[code] ?? mapName ?? code;
 }
+
+/** "Thailand's", but "Philippines'" for a name that ends in s. */
+export function possessive(name: string): string {
+  return /s$/i.test(name) ? `${name}'` : `${name}'s`;
+}
