@@ -22,11 +22,14 @@ import {
   UN_AGENCY_DOMAINS,
   UN_DOMAINS,
   UNCR_SITEMAP,
+  COUNTRY_ALIASES,
   appealCountriesIn,
   buildDonations,
   checkDonationPage,
   cleanText,
   compileTerm,
+  countriesNamedIn,
+  countryNameIndex,
   decodeEntities,
   donationContext,
   donationUrlProblem,
@@ -872,6 +875,12 @@ const SY_APPEAL = "https://www.ifrc.org/appeals?ac=MDRSY003";
 const APPEAL_LIST = "https://ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text=";
 /** An East African drought's countries. */
 const EAST_AFRICA = ["ET", "KE", "SO", "SD", "UG"];
+/** Every globe country's English name by code, as a run passes them (Natural Earth: "Turkey", "Ivory Coast"). */
+const NAMES: Record<string, string> = Object.fromEntries(loadGlobeFeatures().map((f) => [f.code, f.admin]));
+/** The context for a disaster with this title in these countries, with the globe's names. */
+const about = (countries: string[], title: string, reg = registry()) => donationContext(countries, reg, GOV, { title, countryNames: NAMES });
+/** An IFRC campaign on the donation platform. */
+const campaign = (slug: string) => `https://donate.redcrossredcrescent.org/ifrc/${slug}/`;
 
 describe("hostClass", () => {
   const ph = ctxFor(["PH"]);
@@ -888,7 +897,7 @@ describe("hostClass", () => {
   });
 
   it("classes an IFRC campaign on the donation platform named for the disaster as IFRC's", () => {
-    const ve = donationContext(["VE"], registry(), GOV, { title: "Venezuela Earthquake", countryNames: ["Venezuela"] });
+    const ve = about(["VE"], "Venezuela Earthquake");
     expect(hostClass(new URL(VE_CAMPAIGN), ve)).toBe("agency");
     expect(hostClass(new URL(CO_CAMPAIGN), ve)).toBeNull();
     expect(hostClass(new URL("https://donate.redcrossredcrescent.org/ifrc/default/"), ve)).toBeNull();
@@ -938,6 +947,30 @@ describe("isListingPage", () => {
     }
   });
 
+  it("knows IFRC's lists of appeals and emergencies in any form, unless an appeal code picks one", () => {
+    for (const url of [
+      "https://www.ifrc.org/appeals",
+      "https://www.ifrc.org/appeals/",
+      // The live listing URL without its appeal_code, page and text keys.
+      "https://ifrc.org/appeals?date_from=&date_to=&p=300",
+      "https://www.ifrc.org/appeals?p=2",
+      "https://www.ifrc.org/fr/appeals",
+      "https://www.ifrc.org/emergencies",
+      "https://go.ifrc.org/appeals/all",
+      "https://go.ifrc.org/emergencies/all?region=2",
+    ]) {
+      expect(isListingPage(new URL(url)), url).toBe(true);
+    }
+    for (const url of [
+      "https://www.ifrc.org/appeals?ac=MDRET042&date_from=",
+      "https://www.ifrc.org/appeals/MDRVE015",
+      "https://www.ifrc.org/emergency/venezuela-earthquake",
+      "https://go.ifrc.org/emergencies/8101",
+    ]) {
+      expect(isListingPage(new URL(url)), url).toBe(false);
+    }
+  });
+
   it("keeps a WordPress post (?p=), an appeal by its code and plain campaign parameters", () => {
     for (const url of ["https://redcross.org.ph/?p=123", SY_APPEAL, "https://www.redcross.org.ph/donate?campaign=typhoon", "https://www.ifrc.org/donate"]) {
       expect(isListingPage(new URL(url)), url).toBe(false);
@@ -945,41 +978,175 @@ describe("isListingPage", () => {
   });
 });
 
+describe("countryNameIndex and countriesNamedIn", () => {
+  const { index, words } = countryNameIndex(NAMES, registry());
+
+  it("joins every country's names, from the globe, the registry and IFRC's spellings", () => {
+    expect(index.papuanewguinea).toEqual(["PG"]);
+    expect(index.guineabissau).toEqual(["GW"]);
+    expect(index.guinea).toEqual(["GN"]);
+    expect(index.southsudan).toEqual(["SS"]);
+    expect(index.sudan).toEqual(["SD"]);
+    expect(index.southafrica).toEqual(["ZA"]);
+    expect(index.unitedstatesofamerica).toEqual(["US"]);
+    // The globe says Turkey, Ivory Coast and East Timor; IFRC's slugs say turkiye, cote-d-ivoire and timor-leste.
+    expect([index.turkey, index.turkiye]).toEqual([["TR"], ["TR"]]);
+    expect([index.ivorycoast, index.cotedivoire]).toEqual([["CI"], ["CI"]]);
+    expect([index.easttimor, index.timorleste]).toEqual([["TL"], ["TL"]]);
+    // Joined, IFRC's "Viet Nam" is the globe's Vietnam.
+    expect(index.vietnam).toEqual(["VN"]);
+    expect([index.usa, index.unitedstates]).toEqual([["US"], ["US"]]);
+    expect([index.congo, index.congokinshasa, index.drc]).toEqual([["CG"], ["CD"], ["CD"]]);
+    expect(index.korea).toEqual(["KR"]);
+    expect(index.dprk).toEqual(["KP"]);
+    for (const w of ["guinea", "bissau", "papua", "sudan", "korea", "congo"]) expect(words.has(w), w).toBe(true);
+    expect(words.has("sahel")).toBe(false);
+  });
+
+  it("reads IFRC's names from the registry, comma forms and asides left out", () => {
+    const reg = registry({
+      societies: {
+        MV: society({ name: "Maldivian Red Crescent", country: "Maldives" }),
+        FM: society({ name: "Micronesia Red Cross", country: "Micronesia, Federated States of" }),
+        FK: society({ name: "British Red Cross", country: "Falkland Islands (Malvinas)", parent: "GB" }),
+      },
+    });
+    const own = countryNameIndex({}, reg).index;
+    expect([own.maldives, own.micronesia, own.falklandislands]).toEqual([["MV"], ["FM"], ["FK"]]);
+    expect(own.malvinas).toBeUndefined();
+    // Without the globe's names or the registry, the aliases are still known.
+    expect(countryNameIndex({}).index.turkiye).toEqual(["TR"]);
+    expect(Object.keys(COUNTRY_ALIASES)).toEqual(expect.arrayContaining(["TR", "CI", "TL", "US"]));
+  });
+
+  it("names countries by whole names, the longest one that holds the others", () => {
+    expect(countriesNamedIn(["papua", "new", "guinea", "earthquake"], index)).toEqual([["PG"]]);
+    expect(countriesNamedIn(["guinea", "bissau", "windstorm"], index)).toEqual([["GW"]]);
+    expect(countriesNamedIn(["guineabissau"], index)).toEqual([["GW"]]);
+    expect(countriesNamedIn(["guinea", "floods"], index)).toEqual([["GN"]]);
+    expect(countriesNamedIn(["equatorial", "guinea"], index)).toEqual([["GQ"]]);
+    expect(countriesNamedIn(["south", "sudan", "floods"], index)).toEqual([["SS"]]);
+    expect(countriesNamedIn(["sudan", "crisis"], index)).toEqual([["SD"]]);
+    expect(countriesNamedIn(["congo", "kinshasa", "floods"], index)).toEqual([["CD"]]);
+    expect(countriesNamedIn(["turkiye", "syria", "earthquake"], index)).toEqual([["TR"], ["SY"]]);
+    // A name inside a word is no name: Nigeria is not Niger, the Indian Ocean not India.
+    expect(countriesNamedIn(["nigeria", "floods"], index)).toEqual([["NG"]]);
+    expect(countriesNamedIn(["indian", "ocean", "tsunami"], index)).toEqual([]);
+    expect(countriesNamedIn(["hurricane", "melissa"], index)).toEqual([]);
+    expect(countriesNamedIn([], index)).toEqual([]);
+    // A long slug is read in full, a name's length at a time.
+    expect(countriesNamedIn([...Array<string>(500).fill("x"), "south", "sudan"], index)).toEqual([["SS"]]);
+  });
+});
+
 describe("eventWords and isIfrcEventCampaign", () => {
-  it("takes the place words of the title and the country names, never hazard or generic words", () => {
-    expect(eventWords("Venezuela Earthquake", ["Venezuela"])).toEqual(["venezuela"]);
-    expect(eventWords("Drought in East Africa, Central Sahel", [])).toEqual(["sahel"]);
-    expect(eventWords("M7.7 earthquake near Pitaloza Arriba, Panama", ["Panama", "Costa Rica"])).toEqual(["pitaloza", "arriba", "panama", "costa", "rica"]);
-    expect(eventWords("Flood in Türkiye", ["Turkey"])).toEqual(["turkiye", "turkey"]);
-    expect(eventWords("Côte d'Ivoire: Abidjan Floods", ["Ivory Coast"])).toEqual(["cote", "ivoire", "abidjan", "ivory"]);
-    expect(eventWords("Flood in United States", ["United States of America"])).toEqual([]);
-    expect(eventWords("Tropical Cyclone 02S", [])).toEqual([]);
+  const { words: countryWords } = countryNameIndex(NAMES, registry());
+
+  it("takes the place words of the title that are no word of a country name, never hazard or generic words", () => {
+    expect(eventWords("Drought in East Africa, Central Sahel", countryWords)).toEqual(["sahel"]);
+    expect(eventWords("M7.7 earthquake near Pitaloza Arriba, Panama", countryWords)).toEqual(["pitaloza", "arriba"]);
+    expect(eventWords("Côte d'Ivoire: Abidjan Floods", countryWords)).toEqual(["abidjan"]);
+    expect(eventWords("Congo: Floods in the department of likouala, districts of Epéna and Impfondo", countryWords)).toEqual(["likouala", "epena", "impfondo"]);
+    // Countries are matched by whole names (countriesNamedIn), never by one of their words.
+    expect(eventWords("Venezuela Earthquake", countryWords)).toEqual([]);
+    expect(eventWords("Guinea-Bissau - Windstorm", countryWords)).toEqual([]);
+    expect(eventWords("Venezuela Earthquake")).toEqual(["venezuela"]);
+    expect(eventWords("Tropical Cyclone 02S", countryWords)).toEqual([]);
     expect(eventWords(undefined)).toEqual([]);
   });
 
-  it("allows /ifrc/<slug>/ only when a word of the slug names the disaster", () => {
-    const words = eventWords("Venezuela Earthquake", ["Venezuela"]);
-    expect(isIfrcEventCampaign(new URL(VE_CAMPAIGN), words)).toBe(true);
-    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/IFRC/Venezuela_Earthquake/"), words)).toBe(true);
-    expect(isIfrcEventCampaign(new URL(CO_CAMPAIGN), words)).toBe(false);
-    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/default/"), words)).toBe(false);
-    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/default/~my-donation?_cv=1"), words)).toBe(false);
-    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/"), words)).toBe(false);
+  it("allows /ifrc/<slug>/ only when the slug names the disaster", () => {
+    const ve = about(["VE"], "Venezuela Earthquake");
+    expect(isIfrcEventCampaign(new URL(VE_CAMPAIGN), ve)).toBe(true);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/IFRC/Venezuela_Earthquake/"), ve)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(CO_CAMPAIGN), ve)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("default")), ve)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/default/~my-donation?_cv=1"), ve)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/"), ve)).toBe(false);
     // A shared hazard word is not enough, nor a word that only contains the name.
-    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/earthquake-appeal/"), eventWords("Earthquake in Tonga", ["Tonga"]))).toBe(false);
-    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/venezuelan-floods/"), words)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("earthquake-appeal")), about(["TO"], "Earthquake in Tonga"))).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("venezuelan-floods")), ve)).toBe(false);
     // Only IFRC's own path, on the platform itself, with no encoded way out of the folder.
-    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ve/venezuela-earthquake/"), words)).toBe(false);
-    expect(isIfrcEventCampaign(new URL("https://donate.example.org/ifrc/venezuela-earthquake/"), words)).toBe(false);
-    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/..%2F..%2Fua/default/"), words)).toBe(false);
-    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/venezuela%2Dearthquake/"), words)).toBe(false);
-    expect(isIfrcEventCampaign(new URL(VE_CAMPAIGN), [])).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ve/venezuela-earthquake/"), ve)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.example.org/ifrc/venezuela-earthquake/"), ve)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/..%2F..%2Fua/default/"), ve)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/venezuela%2Dearthquake/"), ve)).toBe(false);
+    // Without the globe's names, none.
+    expect(isIfrcEventCampaign(new URL(VE_CAMPAIGN), ctxFor(["VE"]))).toBe(false);
+  });
+
+  it("tells countries that share a word apart (live disasters ifrc-storm-8101 and gdacs-earthquake-eq-1571367)", () => {
+    const gw = about(["GW"], "Guinea-Bissau - Windstorm");
+    expect(isIfrcEventCampaign(new URL(campaign("papua-new-guinea-earthquake")), gw)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("guinea-floods")), gw)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("guinea-bissau-windstorm")), gw)).toBe(true);
+    const pg = about(["PG"], "Earthquake in Papua New Guinea");
+    expect(isIfrcEventCampaign(new URL(campaign("guinea-bissau-windstorm")), pg)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("guinea-floods")), pg)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("papua-new-guinea-earthquake")), pg)).toBe(true);
+    // Papua alone is Indonesia's province as much as a word of Papua New Guinea.
+    expect(isIfrcEventCampaign(new URL(campaign("papua-floods")), pg)).toBe(false);
+    const gn = about(["GN"], "Guinea - Floods");
+    expect(isIfrcEventCampaign(new URL(campaign("guinea-floods")), gn)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("guinea-bissau-windstorm")), gn)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("equatorial-guinea-floods")), gn)).toBe(false);
+    const sd = about(["SD"], "Flood in Sudan");
+    expect(isIfrcEventCampaign(new URL(campaign("south-sudan-floods")), sd)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("sudan-floods")), sd)).toBe(true);
+    const ss = about(["SS"], "Flood in South Sudan");
+    expect(isIfrcEventCampaign(new URL(campaign("sudan-crisis")), ss)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("south-sudan-floods")), ss)).toBe(true);
+    const kr = about(["KR"], "Flood in South Korea");
+    expect(isIfrcEventCampaign(new URL(campaign("north-korea-floods")), kr)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("dprk-floods")), kr)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("korea-floods")), kr)).toBe(true);
+    const cg = about(["CG"], "Congo: Floods in the department of likouala, districts of Epéna and Impfondo");
+    expect(isIfrcEventCampaign(new URL(campaign("congo-kinshasa-floods")), cg)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("drc-floods")), cg)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("congo-floods")), cg)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("likouala-floods")), cg)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("congo-kinshasa-floods")), about(["CD"], "DR Congo - Floods"))).toBe(true);
+    const ne = about(["NE"], "Flood in Niger");
+    expect(isIfrcEventCampaign(new URL(campaign("nigeria-floods")), ne)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("niger-floods")), ne)).toBe(true);
+  });
+
+  it("knows countries named only by generic words, and IFRC's spellings of the globe's names", () => {
+    expect(isIfrcEventCampaign(new URL(campaign("south-africa-floods")), about(["ZA"], "Flood in South Africa"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("central-african-republic-floods")), about(["CF"], "Flood in Central African Republic"))).toBe(true);
+    const us = about(["US"], "Flood in United States");
+    expect(isIfrcEventCampaign(new URL(campaign("usa-floods")), us)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("united-states-of-america-floods")), us)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("south-africa-floods")), us)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(campaign("uk-storm")), about(["GB"], "Storm in United Kingdom"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("turkiye-floods")), about(["TR"], "Flood in Turkey"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("turkiye-floods")), about(["TR"], "Flood in Türkiye"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("cote-d-ivoire-floods")), about(["CI"], "Flood in Ivory Coast"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("cote-divoire-floods")), about(["CI"], "Côte d'Ivoire: Abidjan Floods"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("viet-nam-floods")), about(["VN"], "Flood in Vietnam"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("timor-leste-floods")), about(["TL"], "Flood in East Timor"))).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("dominican-republic-floods")), about(["DO"], "Flood in Dominican Republic"))).toBe(true);
+  });
+
+  it("allows a place from the title, unless the slug also names another country", () => {
+    const melissa = about(["JM", "HT", "CU"], "Hurricane Melissa");
+    expect(isIfrcEventCampaign(new URL(campaign("hurricane-melissa")), melissa)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("hurricane-melissa-jamaica-haiti")), melissa)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("hurricane-melissa-jamaica-haiti")), about(["JM"], "Hurricane Melissa"))).toBe(false);
+    const sahel = about(EAST_AFRICA, "Drought in East Africa, Central Sahel");
+    expect(isIfrcEventCampaign(new URL(campaign("sahel-drought")), sahel)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("somalia-drought")), sahel)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("mali-drought")), sahel)).toBe(false);
+    // A disaster at sea has no country: only its title's places.
+    const sea = about([], "Tropical Cyclone Fina");
+    expect(isIfrcEventCampaign(new URL(campaign("cyclone-fina")), sea)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(campaign("cyclone-fina-australia")), sea)).toBe(false);
   });
 });
 
 describe("donationUrlProblem holds pages to the disaster's countries", () => {
-  const eastAfrica = donationContext(EAST_AFRICA, registry(), GOV, { title: "Drought in East Africa", countryNames: ["Ethiopia", "Kenya", "Somalia", "Sudan", "Uganda"] });
-  const ve = donationContext(["VE"], registry(), GOV, { title: "Venezuela Earthquake", countryNames: ["Venezuela"] });
+  const eastAfrica = about(EAST_AFRICA, "Drought in East Africa");
+  const ve = about(["VE"], "Venezuela Earthquake");
 
   it("rejects an appeal for another country and keeps the disaster's own and regional ones", () => {
     expect(donationUrlProblem(SY_APPEAL, eastAfrica)).toBe("appeal for another country");
@@ -1014,20 +1181,30 @@ describe("donationUrlProblem holds pages to the disaster's countries", () => {
     expect(donationUrlProblem("https://www.ifrc.org/appeals?ac=", eastAfrica)).toBe("listing or search page");
     expect(donationUrlProblem("https://redcross.org.ph/?s=typhoon", ctxFor(["PH"]))).toBe("listing or search page");
     expect(donationUrlProblem("https://redcross.org.ph/?p=123", ctxFor(["PH"]))).toBeNull();
+    // IFRC's appeal list in the other forms the model could return.
+    for (const url of ["https://www.ifrc.org/appeals", "https://ifrc.org/appeals?date_from=&date_to=&p=300", "https://go.ifrc.org/appeals/all", "https://www.ifrc.org/emergencies"]) {
+      expect(donationUrlProblem(url, ctxFor(["HN", "GT"])), url).toBe("listing or search page");
+    }
   });
 
   it("allows IFRC's campaign named for the disaster on the donation platform, and no other IFRC path", () => {
     expect(donationUrlProblem(VE_CAMPAIGN, ve)).toBeNull();
     expect(donationUrlProblem(CO_CAMPAIGN, ve)).toBe("host not on the allowlist");
-    expect(donationUrlProblem(CO_CAMPAIGN, donationContext(["CO"], registry(), GOV, { title: "Colombia - Earthquake", countryNames: ["Colombia"] }))).toBeNull();
+    expect(donationUrlProblem(CO_CAMPAIGN, about(["CO"], "Colombia - Earthquake"))).toBeNull();
     expect(donationUrlProblem("https://donate.redcrossredcrescent.org/ifrc/default/", ve)).toBe("host not on the allowlist");
-    // Without the disaster's title and names, no IFRC campaign is allowed.
+    // Another country's campaign that shares a word with the disaster's country.
+    expect(donationUrlProblem(campaign("guinea-floods"), about(["GW"], "Guinea-Bissau - Windstorm"))).toBe("host not on the allowlist");
+    expect(donationUrlProblem(campaign("south-sudan-floods"), about(["SD"], "Flood in Sudan"))).toBe("host not on the allowlist");
+    // Without the globe's names, no IFRC campaign is allowed.
     expect(donationUrlProblem(VE_CAMPAIGN, ctxFor(["VE"]))).toBe("host not on the allowlist");
   });
 
-  it("donationContext reads the words from the disaster's title and country names", () => {
-    expect(ve.eventWords).toEqual(["venezuela"]);
+  it("donationContext indexes the country names and keeps the title's place words", () => {
+    expect(ve.countryNameIndex?.venezuela).toEqual(["VE"]);
+    expect(ve.eventWords).toEqual([]);
+    expect(about(["CG"], "Congo: Floods in Likouala").eventWords).toEqual(["likouala"]);
     expect(ve.appealCountries).toEqual(["VE"]);
+    expect(ctxFor(["VE"]).countryNameIndex).toBeUndefined();
     expect(ctxFor(["VE"]).eventWords).toEqual([]);
   });
 });
@@ -1772,7 +1949,7 @@ describe("buildDonations", () => {
       { url: VE_CAMPAIGN, org: "IFRC", kind: "society", note: "Donation page for the Venezuela earthquake 2026 appeal.", specific: true },
       { url: CO_CAMPAIGN, org: "IFRC", kind: "society", note: "Colombia earthquake", specific: true },
     ];
-    const ve = input({ countries: ["VE"], appeals: [appeal({ code: "MDRVE015", name: "Venezuela-Earthquake", kind: "Emergency Appeal" })], researched, title: "Venezuela Earthquake", countryNames: ["Venezuela"] });
+    const ve = input({ countries: ["VE"], appeals: [appeal({ code: "MDRVE015", name: "Venezuela-Earthquake", kind: "Emergency Appeal" })], researched, title: "Venezuela Earthquake", countryNames: NAMES });
     const links = buildDonations(ve, reg, NOW, GOV);
     expect(links[0]).toEqual({ label: "Donate to IFRC", url: VE_CAMPAIGN, org: "IFRC", kind: "agency", note: "Donation page for the Venezuela earthquake 2026 appeal.", via: "research", forEvent: true });
     expect(links[1]).toMatchObject({ url: `${IFRC_APPEAL_PAGE}MDRVE015`, forEvent: true });
@@ -1788,8 +1965,28 @@ describe("buildDonations", () => {
   it("never shows IFRC's default platform page, which is no campaign of this disaster's", () => {
     const page = "https://donate.redcrossredcrescent.org/ifrc/default/";
     const reg = registry({ verdicts: passed([page]) });
-    const links = researchedLinks(input({ countries: ["VE"], researched: [{ url: page, org: "IFRC", kind: "agency", note: "", specific: true }] }), donationContext(["VE"], reg, GOV, { title: "Venezuela Earthquake", countryNames: ["Venezuela"] }), reg, NOW);
+    const links = researchedLinks(input({ countries: ["VE"], researched: [{ url: page, org: "IFRC", kind: "agency", note: "", specific: true }] }), about(["VE"], "Venezuela Earthquake", reg), reg, NOW);
     expect(links).toEqual([]);
+  });
+
+  it("never lists a cached campaign for a country that shares a word with the disaster's", () => {
+    const own = campaign("guinea-bissau-windstorm");
+    const others = [campaign("papua-new-guinea-earthquake"), campaign("guinea-floods")];
+    const reg = registry({ verdicts: passed([own], ...others.map((u) => [u])) });
+    const researched = [...others, own].map((url) => ({ url, org: "IFRC", kind: "agency", note: "", specific: true }));
+    const gw = buildDonations(input({ countries: ["GW"], researched, title: "Guinea-Bissau - Windstorm", countryNames: NAMES }), reg, NOW, GOV);
+    expect(gw.filter((l) => l.via === "research").map((l) => l.url)).toEqual([own]);
+    expect(gw[0]).toMatchObject({ url: own, org: "IFRC", forEvent: true });
+    const pg = buildDonations(input({ countries: ["PG"], researched, title: "Earthquake in Papua New Guinea", countryNames: NAMES }), reg, NOW, GOV);
+    expect(pg.filter((l) => l.via === "research").map((l) => l.url)).toEqual([others[0]]);
+  });
+
+  it("never lists IFRC's appeal list in another form, even marked specific with a cached pass", () => {
+    const lists = ["https://www.ifrc.org/appeals", "https://ifrc.org/appeals?date_from=&date_to=&p=300", "https://www.ifrc.org/appeals?p=2", "https://www.ifrc.org/emergencies", "https://go.ifrc.org/appeals/all"];
+    const reg = registry({ verdicts: passed(...lists.map((u) => [u])) });
+    const researched = lists.map((url) => ({ url, org: "IFRC", kind: "agency", note: "IFRC appeals database listing MDRHN029", specific: true }));
+    const links = buildDonations(input({ countries: ["HN", "GT"], researched, title: "Drought in Central America", countryNames: NAMES }), reg, NOW, GOV);
+    expect(links.some((l) => l.via === "research")).toBe(false);
   });
 
   it("gives every link a label, a note and an https or registry URL", () => {
@@ -1851,7 +2048,7 @@ describe("prepareDonations", () => {
     const researched = [SY_APPEAL, APPEAL_LIST, CO_CAMPAIGN, VE_CAMPAIGN].map((url) => ({ url, org: "IFRC", kind: "society", note: "", specific: true }));
     const reg = registry();
     const links = await prepareDonations(
-      { countries: ["VE"], appeals: [], researched, title: "Venezuela Earthquake", countryNames: ["Venezuela"] },
+      { countries: ["VE"], appeals: [], researched, title: "Venezuela Earthquake", countryNames: NAMES },
       reg,
       d,
       NOW,

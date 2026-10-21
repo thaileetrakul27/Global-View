@@ -106,18 +106,19 @@ describe("caches", () => {
 });
 
 describe("donationInput", () => {
-  it("gives donate.ts the disaster's countries, appeals, researched pages, title and English country names", () => {
+  it("gives donate.ts the disaster's countries, appeals, researched pages, title and every globe country's name", () => {
     const page = { url: "https://bdrcs.org/donate/sylhet-floods", org: "BDRCS", kind: "society" as const, note: "Sylhet floods", specific: true };
-    const d = dis({ title: "Drought in Uganda, Kenya", countries: ["UG", "KE", "XX"] });
-    expect(donationInput(d, entry({ donation: [page] }), { UG: "Uganda", KE: "Kenya", BD: "Bangladesh" })).toEqual({
-      countries: ["UG", "KE", "XX"],
+    const d = dis({ title: "Drought in Uganda, Kenya", countries: ["UG", "KE"] });
+    // Every country's name, not only the disaster's: a campaign naming another country is told apart by it.
+    const names = { UG: "Uganda", KE: "Kenya", SD: "Sudan", SS: "South Sudan" };
+    expect(donationInput(d, entry({ donation: [page] }), names)).toEqual({
+      countries: ["UG", "KE"],
       appeals: [],
       researched: [page],
       title: "Drought in Uganda, Kenya",
-      // A code the globe has no name for is left out.
-      countryNames: ["Uganda", "Kenya"],
+      countryNames: names,
     });
-    expect(donationInput(dis(), undefined, {})).toMatchObject({ researched: [], title: "Flood in Bangladesh", countryNames: [] });
+    expect(donationInput(dis(), undefined, {})).toMatchObject({ researched: [], title: "Flood in Bangladesh", countryNames: {} });
   });
 });
 
@@ -394,7 +395,7 @@ describe("updateDisasters", () => {
     const passed = (url: string) => ({ ok: true, reason: "donation word", checked: NOW, chain: [url] });
     const registry: DonationRegistry = { ...emptyRegistry(), verdicts: Object.fromEntries([campaign, colombia, syria].map((u) => [urlKey(u), passed(u)])) };
     const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [quake] } }, research: { "ifrc-earthquake-7990": entry({ donation: pages }) }, registry });
-    const file = await updateDisasters(runWith(dirs, { offline: true, globeCodes: new Set(["VE"]), countryNames: { VE: "Venezuela" } }));
+    const file = await updateDisasters(runWith(dirs, { offline: true, globeCodes: new Set(["VE", "CO"]), countryNames: { VE: "Venezuela", CO: "Colombia" } }));
     const urls = file.disasters[0].donate.map((l) => l.url);
     expect(file.disasters[0].donate[0]).toMatchObject({ url: campaign, org: "IFRC", kind: "agency", via: "research", forEvent: true });
     expect(urls).not.toContain(colombia);

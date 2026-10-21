@@ -20,8 +20,10 @@
 //             the page. The allowlist also holds a page to the disaster's
 //             countries: never an IFRC appeal for another country, never a
 //             listing or search page, and an IFRC campaign on the donation
-//             platform only when it is named for this disaster. These are
-//             rules on the URL, so they apply to cached verdicts too.
+//             platform only when it is named for this disaster (one of its
+//             countries, by whole name, or a place in its title) and for no
+//             other country. These are rules on the URL, so they apply to
+//             cached verdicts too.
 //
 // Pages about the disaster itself come first (forEvent): the IFRC appeal
 // for it, and researched pages the research marked as the event's own
@@ -802,10 +804,14 @@ export interface DonationContext {
    */
   appealCountries?: string[];
   /**
-   * Words that name this disaster (see eventWords). An IFRC campaign on the
-   * donation platform (/ifrc/<slug>/) is allowed only when its slug has one
-   * of them; none is allowed when left out.
+   * Every country's names, folded and joined, with the codes each names
+   * ("papuanewguinea" -> ["PG"], see countryNameIndex). An IFRC campaign
+   * on the donation platform (/ifrc/<slug>/) must name one of the
+   * disaster's countries and no other, or a place from its title
+   * (isIfrcEventCampaign); none is allowed when left out.
    */
+  countryNameIndex?: Record<string, string[]>;
+  /** Words of the disaster's title that name a place but no country (see eventWords). */
   eventWords?: string[];
 }
 
@@ -827,8 +833,9 @@ export function loadGovernmentDomains(path = DOMAINS_PATH): Record<string, strin
 
 /**
  * The allowlist context for a disaster in these countries. `about` (the
- * disaster's title and its countries' English names) gives the words an
- * IFRC campaign on the donation platform must use (eventWords).
+ * disaster's title and every globe country's English name) tells which
+ * IFRC campaigns on the donation platform are about it (countryNameIndex,
+ * eventWords); without the names, none is.
  */
 export function donationContext(
   countries: string[],
@@ -847,13 +854,15 @@ export function donationContext(
     appealCountries.add(code.toUpperCase());
     if (own?.parent) appealCountries.add(own.parent.toUpperCase());
   }
+  const names = about.countryNames ? countryNameIndex(about.countryNames, registry) : null;
   return {
     countries,
     societyHosts: [...societyHosts],
     platformCodes: [...platformCodes],
     governmentDomains,
     appealCountries: [...appealCountries],
-    eventWords: eventWords(about.title, about.countryNames),
+    ...(names ? { countryNameIndex: names.index } : {}),
+    eventWords: names ? eventWords(about.title, names.words) : [],
   };
 }
 
@@ -895,37 +904,117 @@ function asciiWords(text: string): string[] {
 }
 
 /**
- * The words that name a disaster: those of its title and its countries'
- * English names with 4+ letters, ASCII-folded, other than hazard and
- * generic words (NOT_EVENT_WORDS). "Venezuela Earthquake" in Venezuela ->
- * ["venezuela"]; "Drought in East Africa, Central Sahel" -> ["sahel"].
+ * Other names of countries, folded, for the names IFRC's campaign slugs
+ * use: IFRC's own spelling where the globe (Natural Earth) spells it
+ * otherwise ("turkiye" for Turkey, "cote d ivoire" for Ivory Coast; "viet
+ * nam" needs none, since names are joined), and short forms. The
+ * registry's society names add IFRC's spelling for the rest
+ * (countryNameIndex).
  */
-export function eventWords(title: string | undefined, countryNames: string[] = []): string[] {
+export const COUNTRY_ALIASES: Readonly<Record<string, readonly string[]>> = {
+  US: ["usa", "united states"],
+  GB: ["uk", "great britain", "britain"],
+  AE: ["uae"],
+  TR: ["turkiye"],
+  CI: ["cote d ivoire"],
+  TL: ["timor leste"],
+  TZ: ["tanzania"],
+  RS: ["serbia"],
+  BS: ["bahamas"],
+  CZ: ["czech republic"],
+  RU: ["russian federation"],
+  SY: ["syrian arab republic"],
+  LA: ["lao", "lao pdr"],
+  SZ: ["swaziland"],
+  MM: ["burma"],
+  PG: ["png"],
+  KR: ["korea", "republic of korea"],
+  KP: ["dprk", "dpr korea", "korea dpr"],
+  CD: ["drc", "rdc", "dr congo", "democratic republic of congo", "congo kinshasa"],
+  CG: ["congo", "republic of congo", "congo brazzaville"],
+};
+
+/**
+ * Every country's names, folded and joined without separators, with the
+ * codes each names ("Papua New Guinea" -> "papuanewguinea" -> ["PG"],
+ * "Guinea-Bissau" -> "guineabissau"), and every word of them. From the
+ * globe's English names (code -> name), the registry's societies (IFRC's
+ * spelling: "Iran, Islamic Republic of" read as "Iran") and
+ * COUNTRY_ALIASES.
+ */
+export function countryNameIndex(countryNames: Record<string, string>, registry?: DonationRegistry): { index: Record<string, string[]>; words: Set<string> } {
+  const index: Record<string, string[]> = {};
   const words = new Set<string>();
-  for (const text of [title ?? "", ...countryNames]) {
-    for (const w of asciiWords(typeof text === "string" ? text : "")) if (w.length >= 4 && !NOT_EVENT_WORDS.has(w)) words.add(w);
+  const add = (code: string, name: unknown) => {
+    if (typeof name !== "string") return;
+    const parts = asciiWords(name.replace(/\([^)]*\)/g, " ").split(",")[0]);
+    const joined = parts.join("");
+    if (!joined) return;
+    parts.forEach((w) => words.add(w));
+    const codes = Object.hasOwn(index, joined) ? index[joined] : (index[joined] = []);
+    if (!codes.includes(code.toUpperCase())) codes.push(code.toUpperCase());
+  };
+  for (const [code, name] of Object.entries(countryNames)) add(code, name);
+  for (const [code, society] of Object.entries(registry?.societies ?? {})) add(code, society?.country);
+  for (const [code, names] of Object.entries(COUNTRY_ALIASES)) names.forEach((n) => add(code, n));
+  return { index, words };
+}
+
+/**
+ * The countries a run of words names, as whole names: each run of
+ * consecutive words that joined is a name in the index, unless a longer
+ * one holds it ("papua new guinea" names Papua New Guinea, not Guinea;
+ * "south sudan" names South Sudan, not Sudan). One code list per name.
+ */
+export function countriesNamedIn(words: string[], index: Record<string, string[]>): string[][] {
+  const spans: { start: number; end: number; codes: string[] }[] = [];
+  for (let start = 0; start < words.length; start++) {
+    let joined = "";
+    // No country's name is longer than 64 letters, so a long slug costs little.
+    for (let end = start + 1; end <= words.length && joined.length <= 64; end++) {
+      joined += words[end - 1];
+      if (Object.hasOwn(index, joined)) spans.push({ start, end, codes: index[joined] });
+    }
   }
+  const inside = (a: (typeof spans)[number], b: (typeof spans)[number]) => a !== b && b.start <= a.start && a.end <= b.end;
+  return spans.filter((s) => !spans.some((o) => inside(s, o))).map((s) => s.codes);
+}
+
+/**
+ * Words of a disaster's title that name a place but no country: 4+
+ * letters, ASCII-folded, not a hazard or generic word (NOT_EVENT_WORDS)
+ * and not a word of any country's name (countryWords, see
+ * countryNameIndex), since "guinea" or "sudan" alone could be another
+ * country's. "Drought in East Africa, Central Sahel" -> ["sahel"].
+ */
+export function eventWords(title: string | undefined, countryWords: ReadonlySet<string> = new Set()): string[] {
+  const words = new Set<string>();
+  for (const w of asciiWords(typeof title === "string" ? title : "")) if (w.length >= 4 && !NOT_EVENT_WORDS.has(w) && !countryWords.has(w)) words.add(w);
   return [...words];
 }
 
 /**
  * True when a page on the donation platform is one of IFRC's own campaigns
- * for this disaster: /ifrc/<slug>/..., the slug not "default", and one of
- * the slug's words (split on - and _) one of the disaster's eventWords.
+ * for this disaster: /ifrc/<slug>/..., the slug not "default", naming no
+ * country but the disaster's own (countriesNamedIn, by whole names), and
+ * naming one of them or a place word of its title (eventWords).
  * /ifrc/venezuela-earthquake/ is the Venezuela earthquake's; for it,
- * /ifrc/colombia-earthquake/ is not. Other /ifrc/ paths can land on
- * IFRC's movement-wide campaign, which is about no disaster.
+ * /ifrc/colombia-earthquake/ is not, nor for Guinea-Bissau is
+ * /ifrc/guinea-floods/ or /ifrc/papua-new-guinea-earthquake/. Other /ifrc/
+ * paths can land on IFRC's movement-wide campaign, which is about no
+ * disaster. False without the context's countryNameIndex.
  */
-export function isIfrcEventCampaign(url: URL, words: string[]): boolean {
-  if (url.hostname !== PLATFORM_HOST) return false;
+export function isIfrcEventCampaign(url: URL, ctx: Pick<DonationContext, "countries" | "countryNameIndex" | "eventWords">): boolean {
+  if (url.hostname !== PLATFORM_HOST || !ctx.countryNameIndex) return false;
   // Encoded slashes, dots or backslashes could step out of the campaign's folder on the server.
   if (/%2f|%5c|%2e|;/i.test(url.pathname)) return false;
   const [, owner, slug] = url.pathname.split("/");
   if (owner?.toLowerCase() !== "ifrc" || !slug || !/^[a-z0-9_-]+$/i.test(slug) || slug.toLowerCase() === "default") return false;
-  return slug
-    .toLowerCase()
-    .split(/[-_]+/)
-    .some((w) => words.includes(w));
+  const words = slug.toLowerCase().split(/[-_]+/).filter(Boolean);
+  const own = new Set(ctx.countries.map((c) => c.toUpperCase()));
+  const named = countriesNamedIn(words, ctx.countryNameIndex);
+  if (named.some((codes) => !codes.some((c) => own.has(c)))) return false;
+  return named.length > 0 || words.some((w) => (ctx.eventWords ?? []).includes(w));
 }
 
 /** Query keys whose value is an IFRC appeal code. */
@@ -961,17 +1050,28 @@ export function appealCountriesIn(url: URL): string[] {
   return [...new Set(codes)];
 }
 
+/** IFRC's lists of appeals and emergencies: ifrc.org/appeals and /emergencies, go.ifrc.org's /appeals/all and /emergencies/all. */
+const IFRC_LIST_PATH = /^\/(?:[a-z]{2}\/)?(?:appeals|emergencies)(?:\/all)?\/?$/i;
+
 /**
- * True for a page that lists or searches rather than collects: IFRC's
- * appeal list with an empty appeal code ("/appeals?appeal_code=&page=4"),
- * or any URL with a search or paging key in its query (LISTING_KEYS).
+ * True for a page that lists or searches rather than collects: any URL
+ * with a search or paging key in its query (LISTING_KEYS) or an empty
+ * appeal code ("/appeals?appeal_code=&page=4"), and IFRC's lists of
+ * appeals and emergencies in any form ("ifrc.org/appeals",
+ * "/appeals?date_from=&p=300", "go.ifrc.org/appeals/all") unless an
+ * appeal code picks one appeal ("/appeals?ac=MDRET042").
  */
 export function isListingPage(url: URL): boolean {
+  let oneAppeal = false;
   for (const [key, value] of url.searchParams) {
     const k = key.toLowerCase();
-    if (LISTING_KEYS.has(k) || (APPEAL_KEYS.has(k) && !value.trim())) return true;
+    if (LISTING_KEYS.has(k)) return true;
+    if (APPEAL_KEYS.has(k)) {
+      if (!value.trim()) return true;
+      oneAppeal = true;
+    }
   }
-  return false;
+  return !oneAppeal && hostMatches(url.hostname, "ifrc.org") && IFRC_LIST_PATH.test(url.pathname);
 }
 
 /** What kind of official site a host belongs to, for this disaster; null when it is on no list. */
@@ -988,7 +1088,7 @@ export function hostClass(url: URL, ctx: DonationContext): HostClass | null {
   if (host === PLATFORM_HOST) {
     const cc = url.pathname.split("/")[1]?.toUpperCase() ?? "";
     if ((ctx.platformCodes ?? []).some((c) => c.toUpperCase() === cc)) return "platform";
-    return isIfrcEventCampaign(url, ctx.eventWords ?? []) ? "agency" : null;
+    return isIfrcEventCampaign(url, ctx) ? "agency" : null;
   }
   if (ctx.societyHosts.some((h) => inSiteScope(url, h))) return "society";
   if (UN_DOMAINS.some((d) => hostMatches(host, d))) return "un";
@@ -1417,10 +1517,15 @@ export interface DonationInput {
   countries: string[];
   appeals: AppealRef[];
   researched: ResearchedPage[];
-  /** The disaster's title ("Venezuela Earthquake"); with countryNames, the words an IFRC campaign must use (eventWords). */
+  /** The disaster's title ("Venezuela Earthquake"), whose place words can tie an IFRC campaign to it (eventWords). */
   title?: string;
-  /** English names of the disaster's countries, e.g. ["Venezuela"]. */
-  countryNames?: string[];
+  /**
+   * Every globe country's English name by code (the run's countryNames,
+   * { VE: "Venezuela", CO: "Colombia", ... }), so an IFRC campaign's slug
+   * is read by whole country names (countryNameIndex). Without it, no
+   * IFRC campaign is shown.
+   */
+  countryNames?: Record<string, string>;
 }
 
 /** One line of model or registry text, safe to show: control and direction-override characters out, whitespace collapsed, cut to max. */

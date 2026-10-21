@@ -299,17 +299,13 @@ export function researchSaysOver(d: Disaster, entry: ResearchEntry | undefined, 
 
 /**
  * What donate.ts needs to list a disaster's donation pages: its countries
- * and appeals, the pages its research found, and its title and countries'
- * English names, which tie IFRC campaigns on the donation platform to it.
+ * and appeals, the pages its research found, its title and every globe
+ * country's English name. The last two tie an IFRC campaign on the
+ * donation platform to it by whole country names, so a campaign for
+ * Guinea is not taken for Guinea-Bissau's.
  */
 export function donationInput(d: Pick<Disaster, "countries" | "appeals" | "title">, entry: ResearchEntry | undefined, countryNames: Record<string, string>): DonationInput {
-  return {
-    countries: d.countries,
-    appeals: d.appeals,
-    researched: entryDonations(entry),
-    title: d.title,
-    countryNames: d.countries.map((c) => countryNames[c]).filter((n): n is string => typeof n === "string" && n !== ""),
-  };
+  return { countries: d.countries, appeals: d.appeals, researched: entryDonations(entry), title: d.title, countryNames };
 }
 
 /**
