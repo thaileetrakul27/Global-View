@@ -20,17 +20,26 @@ const OLD_TAIL = "Translations are automatic. Links open the publisher.";
 /**
  * The line under a country's list: where it came from and how it was
  * ordered. Both kinds are grouped by story and ranked by recency and
- * outlets; a local list also by Google's top-stories order when Google News
+ * outlets; a local list also by Google's top-stories order when that feed
  * answered, and world coverage is called a search. Only older files with
  * articles but no ranking marks keep the old wording, so an empty list never
  * gets the old edition sentence.
  */
+/**
+ * Whether a local list was ranked with Google's top stories. The file
+ * records the first feed that answered, top stories first, so a section
+ * or Bing address there means the top-stories feed failed.
+ */
+function usedTopStories(source: Pick<CountryFile["source"], "name" | "url">): boolean {
+  return source.name.includes("Google News") && !source.url.includes("/headlines/section/") && !source.url.includes("bing.com");
+}
+
 export function listFooter(file: Pick<CountryFile, "kind" | "source" | "articles">, name: string): string {
   const world = file.kind === "world";
   if (file.articles.length > 0 && !isRanked(file.articles)) {
     return world ? `Recent ${file.source.name} search results about ${name}. ${OLD_TAIL}` : `Ranked by ${file.source.name} top stories, ${name} edition. ${OLD_TAIL}`;
   }
   if (world) return `${file.source.name} search results, ranked by recency and outlets. ${TAIL}`;
-  const top = file.source.name.includes("Google News") ? ", outlets and Google's top stories" : " and outlets";
+  const top = usedTopStories(file.source) ? ", outlets and Google's top stories" : " and outlets";
   return `${file.source.name}, ranked by recency${top}. ${TAIL}`;
 }

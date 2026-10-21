@@ -42,6 +42,12 @@ describe("isJunkHeadline", () => {
     expect(isJunkHeadline("Умер актер Владислав Толдыков — звезда фильмов «Жить», «Майор» и «Метод»")).toBe(false);
     expect(isJunkHeadline("«لن نسمح بالعبث بالمهنة».. تحرك عاجل من «التمريض» بعد تصريحات وزير التربية والتعليم")).toBe(false);
   });
+  it("keeps headlines with invisible format characters", () => {
+    // Soft hyphens (Die Rheinpfalz), zero-width spaces (Thai PBS) and Persian's zero-width non-joiner.
+    expect(isJunkHeadline("Schwe\u00adrer Un\u00adfall auf B10 bei Land\u00adau: Mo\u00adtor\u00adrad\u00adfah\u00adrer in Kli\u00adnik ge\u00adflo\u00adgen")).toBe(false);
+    expect(isJunkHeadline('"ทรงศักดิ์"\u200b จ่อนัดประชุม\u200b 5 จังหวัดอีสานตอนบน\u200b ชงโครงการเข้า ครม.สัญจรอุดรฯ\u200b')).toBe(false);
+    expect(isJunkHeadline("ایران می\u200cگوید مذاکرات هسته\u200cای ادامه می\u200cیابد")).toBe(false);
+  });
   it("catches stream spam and leaves real headlines alone", () => {
     expect(isJunkHeadline("+[#!LIVESTREAMs!]™ Fiji vs Cook Islands Live Free Oct 18")).toBe(true);
     expect(isJunkHeadline("Watch Luxembourg vs Bulgaria live stream")).toBe(true);

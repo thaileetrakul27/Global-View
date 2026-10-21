@@ -31,6 +31,12 @@ describe("listFooter", () => {
       "Google News, ranked by recency, outlets and Google's top stories. Translations are automatic.",
     );
   });
+  it("leaves Google's top stories out when that feed failed and a section answered first", () => {
+    const nation = { name: "Google News and Bing News", edition: "TH:th", url: "https://news.google.com/rss/headlines/section/topic/NATION?hl=th&gl=TH&ceid=TH:th" };
+    expect(listFooter({ kind: "local", source: nation, articles: ranked }, "Thailand")).toBe(
+      "Google News and Bing News, ranked by recency and outlets. Translations are automatic.",
+    );
+  });
   it("leaves Google's top stories out of a list only Bing News answered for", () => {
     expect(listFooter({ kind: "local", source: source("Bing News"), articles: ranked }, "Thailand")).toBe(
       "Bing News, ranked by recency and outlets. Translations are automatic.",

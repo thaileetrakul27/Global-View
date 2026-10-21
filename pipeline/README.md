@@ -4,15 +4,15 @@ Fetches each country's news and writes the JSON the website reads into `public/d
 
 ## What "most popular" means
 
-A country with a Google News edition is read from four feeds: the edition's top stories, its NATION and WORLD sections (whose links redirect once, only ever within `news.google.com/rss/`), and one page of a Bing News search for the country's name in its press language (`pipeline/config/languages.json`). Requests to Google are two seconds apart; Bing is fetched alongside. Junk headlines, repeated links and anything older than a week are dropped.
+A country with a Google News edition is read from the edition's top stories, its NATION and WORLD sections (whose links redirect once, only ever within `news.google.com/rss/`), and, for every edition but China (Bing sends its China market to a page with no feed), one page of a Bing News search for the country's name in its press language (`pipeline/config/languages.json`). Google's feeds are requested two seconds apart (a section's one redirect is followed at once); Bing is fetched alongside. Junk headlines, repeated links and anything older than a week are dropped.
 
 `pipeline/lib/trending.ts` then groups the headlines by story without a model, by how alike their titles are (shared words, or pairs of characters in Chinese, Japanese, Korean, Thai and similar scripts; a higher bar and matching figures for two headlines from the same outlet). Each story is scored by how recent its newest headline is (halving every 6 hours, with a penalty after 36), how many outlets carry it (counting the other outlets Google lists under an item) and its place in Google's top stories. The story is shown by its best-placed top-stories headline when that is no more than 3 hours older than its newest, otherwise by the newest. A story carried by 3 or more outlets with a headline from the last 12 hours is marked as trending, at most 5 per list. Each run keeps up to 30 stories per country. Grouping runs before translation, so only the kept headlines are translated.
 
-No article text is fetched or stored; the site shows headlines, outlet names, times and links, plus each story's outlet count and trending mark.
+No article text is fetched or stored; the site shows headlines, outlet names, times and links, and tags recent, widely carried stories as trending (the tag's tooltip gives the outlet count).
 
 ## World coverage
 
-Google publishes editions for about 68 countries. Every other country on the globe gets a Google News search for recent articles about it (`"Mongolia" when:3d` in the English edition), capped at 20 and labelled "world coverage" on the site. `pipeline/config/world-queries.json` holds hand-written queries for names that are ambiguous (Georgia, Jordan, Chad, Niger, Guinea) and a short skip list (Antarctica). World coverage is what others write about a country, not what its people read, so it is excluded from shared stories and attention counts.
+Google publishes editions for about 68 countries. Every other country on the globe gets world coverage: a Bing News search for its name in its press language, for what its own outlets publish, and a Google News search in English for international coverage (`"Mongolia" when:3d`; see "Countries without an edition" below). Both are grouped and ranked like an edition's, capped at 20 and labelled "world coverage" on the site. `pipeline/config/world-queries.json` holds hand-written Google queries for names that are ambiguous (Georgia, Jordan, Chad, Niger, Guinea) and a short skip list (Antarctica). Because it is a search and not the country's own edition, world coverage is excluded from shared stories and attention counts.
 
 ## What the model does
 

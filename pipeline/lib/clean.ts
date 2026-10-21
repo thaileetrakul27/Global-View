@@ -33,9 +33,11 @@ const JUNK =
  * Arabic diacritics) are all fine, and so is the punctuation of other
  * languages: the quotes, brackets, commas and middle dots of Chinese,
  * Japanese and Korean (「」【】《》、。・·), and the quotes of French,
- * Russian, Arabic and German («» „).
+ * Russian, Arabic and German («» „). Invisible format characters are fine
+ * too: German soft hyphens, Thai zero-width spaces and the zero-width
+ * non-joiner Persian writes inside ordinary words.
  */
-const SYMBOLS = /[^\p{L}\p{M}\p{N}\s.,:;'"‘’“”„«»\-–—―!?()&/%+「」『』【】〈〉《》〔〕〖〗〝〟、。・·]/gu;
+const SYMBOLS = /[^\p{L}\p{M}\p{N}\p{Cf}\s.,:;'"‘’“”„«»\-–—―!?()&/%+「」『』【】〈〉《》〔〕〖〗〝〟、。・·]/gu;
 const SPORT = /\b(rugby|league|football|soccer|cricket|match|game|tv|hd)\b/i;
 
 export function isJunkHeadline(title: string): boolean {
