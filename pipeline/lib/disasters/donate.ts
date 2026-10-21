@@ -17,7 +17,11 @@
 //             the allowlist (isAllowedDonationUrl) AND a live check
 //             (verifyDonationPage): fetched over https, every redirect hop
 //             on the allowlist, status 200, HTML, and a donation word on
-//             the page.
+//             the page. The allowlist also holds a page to the disaster's
+//             countries: never an IFRC appeal for another country, never a
+//             listing or search page, and an IFRC campaign on the donation
+//             platform only when it is named for this disaster. These are
+//             rules on the URL, so they apply to cached verdicts too.
 //
 // Pages about the disaster itself come first (forEvent): the IFRC appeal
 // for it, and researched pages the research marked as the event's own
@@ -791,6 +795,18 @@ export interface DonationContext {
   platformCodes?: string[];
   /** Government suffixes by country; defaults to pipeline/config/donation-domains.json. */
   governmentDomains?: Record<string, string[]>;
+  /**
+   * Countries an IFRC appeal code in a URL may name (see appealCountriesIn):
+   * the disaster's countries and, for a territory, its parent society's
+   * country. The disaster's countries when left out.
+   */
+  appealCountries?: string[];
+  /**
+   * Words that name this disaster (see eventWords). An IFRC campaign on the
+   * donation platform (/ifrc/<slug>/) is allowed only when its slug has one
+   * of them; none is allowed when left out.
+   */
+  eventWords?: string[];
 }
 
 const domainCache = new Map<string, Record<string, string[]>>();
@@ -809,28 +825,170 @@ export function loadGovernmentDomains(path = DOMAINS_PATH): Record<string, strin
   return domains;
 }
 
-/** The allowlist context for a disaster in these countries. */
-export function donationContext(countries: string[], registry: DonationRegistry, governmentDomains = loadGovernmentDomains()): DonationContext {
+/**
+ * The allowlist context for a disaster in these countries. `about` (the
+ * disaster's title and its countries' English names) gives the words an
+ * IFRC campaign on the donation platform must use (eventWords).
+ */
+export function donationContext(
+  countries: string[],
+  registry: DonationRegistry,
+  governmentDomains = loadGovernmentDomains(),
+  about: Pick<DonationInput, "title" | "countryNames"> = {},
+): DonationContext {
   const societyHosts = new Set<string>();
   const platformCodes = new Set<string>();
+  const appealCountries = new Set<string>();
   for (const code of countries) {
     const own = registry.societies[code.toUpperCase()];
     const society = societyOf(code, registry);
     society?.hosts.forEach((h) => societyHosts.add(h));
     if (society?.donate) platformCodes.add(own?.parent && registry.societies[own.parent] ? own.parent : code.toUpperCase());
+    appealCountries.add(code.toUpperCase());
+    if (own?.parent) appealCountries.add(own.parent.toUpperCase());
   }
-  return { countries, societyHosts: [...societyHosts], platformCodes: [...platformCodes], governmentDomains };
+  return {
+    countries,
+    societyHosts: [...societyHosts],
+    platformCodes: [...platformCodes],
+    governmentDomains,
+    appealCountries: [...appealCountries],
+    eventWords: eventWords(about.title, about.countryNames),
+  };
+}
+
+/**
+ * Words that name no place or event, so they never tie a campaign to a
+ * disaster: hazards, appeal words, continents and oceans, directions and
+ * the generic parts of place and country names. Folded, 4+ letters.
+ */
+const NOT_EVENT_WORDS = new Set(
+  [
+    // Hazards and weather.
+    "earthquake earthquakes quake quakes seismic aftershock aftershocks tremor tremors flood floods flooding floodings flash inundation inundations",
+    "cyclone cyclones cyclonic storm storms windstorm windstorms hailstorm hailstorms rainstorm rainstorms thunderstorm thunderstorms snowstorm snowstorms",
+    "sandstorm sandstorms duststorm duststorms surge typhoon typhoons hurricane hurricanes tropical depression super drought droughts famine hunger food",
+    "insecurity wildfire wildfires fire fires forest bushfire bushfires volcano volcanoes volcanic eruption eruptions lava landslide landslides mudslide",
+    "mudslides mudflow mudflows debris tsunami tsunamis heatwave heatwaves heat coldwave coldwaves cold wave waves winter dust rain rains rainfall heavy",
+    "monsoon monsoons snow hail wind winds weather extreme severe",
+    // Appeals and giving.
+    "emergency emergencies appeal appeals crisis crises response relief recovery disaster disasters donate donation donations donativo donar fund funds",
+    "global international humanitarian help support campaign victims affected people peoples solidarity general default operation operations update",
+    "alert warning ifrc cross crescent society national",
+    // Continents, oceans, directions and the generic parts of place names.
+    "africa african america americas american asia asian europe european oceania pacific atlantic ocean oceans arctic antarctic antarctica caribbean",
+    "north south east west northern southern eastern western northeast northwest southeast southwest central middle upper lower greater region regions",
+    "regional province provinces state states department departments district districts county municipality city town village island islands coast",
+    "coastal lake river ridge area areas country countries republic democratic united kingdom federal federated federation plurinational bolivarian",
+    "islamic arab saint",
+    // Filler in titles.
+    "near from with after over into caused enhanced brings hits orange green amber magnitude",
+    "january february march april june july august september october november december",
+  ]
+    .join(" ")
+    .split(" "),
+);
+
+/** Lower-case ASCII words of a text, accents removed: "Côte d'Ivoire" -> ["cote", "d", "ivoire"]. */
+function asciiWords(text: string): string[] {
+  return foldText(text).split(/[^a-z]+/).filter(Boolean);
+}
+
+/**
+ * The words that name a disaster: those of its title and its countries'
+ * English names with 4+ letters, ASCII-folded, other than hazard and
+ * generic words (NOT_EVENT_WORDS). "Venezuela Earthquake" in Venezuela ->
+ * ["venezuela"]; "Drought in East Africa, Central Sahel" -> ["sahel"].
+ */
+export function eventWords(title: string | undefined, countryNames: string[] = []): string[] {
+  const words = new Set<string>();
+  for (const text of [title ?? "", ...countryNames]) {
+    for (const w of asciiWords(typeof text === "string" ? text : "")) if (w.length >= 4 && !NOT_EVENT_WORDS.has(w)) words.add(w);
+  }
+  return [...words];
+}
+
+/**
+ * True when a page on the donation platform is one of IFRC's own campaigns
+ * for this disaster: /ifrc/<slug>/..., the slug not "default", and one of
+ * the slug's words (split on - and _) one of the disaster's eventWords.
+ * /ifrc/venezuela-earthquake/ is the Venezuela earthquake's; for it,
+ * /ifrc/colombia-earthquake/ is not. Other /ifrc/ paths can land on
+ * IFRC's movement-wide campaign, which is about no disaster.
+ */
+export function isIfrcEventCampaign(url: URL, words: string[]): boolean {
+  if (url.hostname !== PLATFORM_HOST) return false;
+  // Encoded slashes, dots or backslashes could step out of the campaign's folder on the server.
+  if (/%2f|%5c|%2e|;/i.test(url.pathname)) return false;
+  const [, owner, slug] = url.pathname.split("/");
+  if (owner?.toLowerCase() !== "ifrc" || !slug || !/^[a-z0-9_-]+$/i.test(slug) || slug.toLowerCase() === "default") return false;
+  return slug
+    .toLowerCase()
+    .split(/[-_]+/)
+    .some((w) => words.includes(w));
+}
+
+/** Query keys whose value is an IFRC appeal code. */
+const APPEAL_KEYS = new Set(["ac", "appeal_code"]);
+/**
+ * Query keys of a search or a paged list. "p" is left out on purpose:
+ * WordPress sites, many societies' among them, use ?p=<post id> for a page.
+ */
+const LISTING_KEYS = new Set(["page", "q", "query", "search", "s", "text", "keyword", "keywords"]);
+/** IFRC's code for an appeal in one country: MDR, the country's ISO code, three digits (MDRET042 Ethiopia, MDRSY003 Syria). */
+const COUNTRY_APPEAL_CODE = /^MDR([A-Z]{2})\d{3}$/;
+
+/**
+ * The countries named by IFRC appeal codes in a URL: in its ac or
+ * appeal_code parameter, or as a path segment or a word of one
+ * ("https://www.ifrc.org/appeals?ac=MDRSY003" -> ["SY"]). Regional and
+ * multi-country codes, which are not MDR + two letters + three digits
+ * (MDR60005), name no country and are left out.
+ */
+export function appealCountriesIn(url: URL): string[] {
+  const words: string[] = [];
+  for (const [key, value] of url.searchParams) if (APPEAL_KEYS.has(key.toLowerCase())) words.push(...value.split(/[^A-Za-z0-9]+/));
+  for (const segment of url.pathname.split("/")) {
+    let text = segment;
+    try {
+      text = decodeURIComponent(segment);
+    } catch {
+      // keep the raw segment
+    }
+    words.push(...text.split(/[^A-Za-z0-9]+/));
+  }
+  const codes = words.map((w) => COUNTRY_APPEAL_CODE.exec(w.toUpperCase())?.[1]).filter((c): c is string => c !== undefined);
+  return [...new Set(codes)];
+}
+
+/**
+ * True for a page that lists or searches rather than collects: IFRC's
+ * appeal list with an empty appeal code ("/appeals?appeal_code=&page=4"),
+ * or any URL with a search or paging key in its query (LISTING_KEYS).
+ */
+export function isListingPage(url: URL): boolean {
+  for (const [key, value] of url.searchParams) {
+    const k = key.toLowerCase();
+    if (LISTING_KEYS.has(k) || (APPEAL_KEYS.has(k) && !value.trim())) return true;
+  }
+  return false;
 }
 
 /** What kind of official site a host belongs to, for this disaster; null when it is on no list. */
 export type HostClass = "society" | "platform" | "un" | "agency" | "government";
 
-/** Classifies an already parsed https URL against the allowlist. */
+/**
+ * Classifies an already parsed https URL against the allowlist. On the
+ * donation platform: the path of one of the disaster's societies
+ * ("platform"), or an IFRC campaign named for the disaster ("agency", see
+ * isIfrcEventCampaign); any other platform path is on no list.
+ */
 export function hostClass(url: URL, ctx: DonationContext): HostClass | null {
   const host = url.hostname;
   if (host === PLATFORM_HOST) {
     const cc = url.pathname.split("/")[1]?.toUpperCase() ?? "";
-    return (ctx.platformCodes ?? []).some((c) => c.toUpperCase() === cc) ? "platform" : null;
+    if ((ctx.platformCodes ?? []).some((c) => c.toUpperCase() === cc)) return "platform";
+    return isIfrcEventCampaign(url, ctx.eventWords ?? []) ? "agency" : null;
   }
   if (ctx.societyHosts.some((h) => inSiteScope(url, h))) return "society";
   if (UN_DOMAINS.some((d) => hostMatches(host, d))) return "un";
@@ -856,8 +1014,12 @@ export function isBloodDonationPath(url: URL): boolean {
  * https only; no credentials, port, IP address, punycode or shortener;
  * the host must be a registry society host of one of the disaster's
  * countries, that society's path on the donation platform (only when the
- * probe found it there), the IFRC / ICRC / UN family, or a government
- * domain of one of the countries.
+ * probe found it there), an IFRC campaign on the platform named for the
+ * disaster, the IFRC / ICRC / UN family, or a government domain of one of
+ * the countries. Never a blood donation page, a listing or search page
+ * (isListingPage), or a page naming an IFRC appeal for a country that is
+ * not the disaster's (appealCountriesIn: MDRSY003, a Syria appeal, is not
+ * an East African drought's page).
  */
 export function donationUrlProblem(raw: string, ctx: DonationContext): string | null {
   if (typeof raw !== "string" || !raw || raw.length > 2048) return "not a URL";
@@ -878,6 +1040,9 @@ export function donationUrlProblem(raw: string, ctx: DonationContext): string | 
   if (SHORTENERS.some((s) => hostMatches(host, s))) return "URL shortener";
   if (!hostClass(url, ctx)) return "host not on the allowlist";
   if (isBloodDonationPath(url)) return "blood donation page";
+  if (isListingPage(url)) return "listing or search page";
+  const allowed = (ctx.appealCountries ?? ctx.countries).map((c) => c.toUpperCase());
+  if (appealCountriesIn(url).some((cc) => !allowed.includes(cc))) return "appeal for another country";
   return null;
 }
 
@@ -1252,6 +1417,10 @@ export interface DonationInput {
   countries: string[];
   appeals: AppealRef[];
   researched: ResearchedPage[];
+  /** The disaster's title ("Venezuela Earthquake"); with countryNames, the words an IFRC campaign must use (eventWords). */
+  title?: string;
+  /** English names of the disaster's countries, e.g. ["Venezuela"]. */
+  countryNames?: string[];
 }
 
 /** One line of model or registry text, safe to show: control and direction-override characters out, whitespace collapsed, cut to max. */
@@ -1391,9 +1560,9 @@ export const KNOWN_ORGS: Readonly<Record<string, string>> = {
 
 /**
  * The organisation behind an allowlisted host, from the registry rather
- * than the model: the society whose site or platform path it is, or the
- * UN or Red Cross body. Null for government sites, whose agency only the
- * page itself names.
+ * than the model: the society whose site or platform path it is, IFRC for
+ * its own campaign on the platform, or the UN or Red Cross body. Null for
+ * government sites, whose agency only the page itself names.
  */
 export function knownOrg(url: URL, cls: HostClass, countries: string[], registry: DonationRegistry): string | null {
   if (cls === "society" || cls === "platform") {
@@ -1406,6 +1575,8 @@ export function knownOrg(url: URL, cls: HostClass, countries: string[], registry
     }
     return null;
   }
+  // Only IFRC's own campaigns on the donation platform are classed as an agency's (isIfrcEventCampaign).
+  if (url.hostname === PLATFORM_HOST) return "IFRC";
   // Most specific domain first, so crisisrelief.un.org is not named "United Nations".
   const domain = Object.keys(KNOWN_ORGS)
     .sort((a, b) => b.length - a.length)
@@ -1422,10 +1593,10 @@ function generalPageKeys(registry: DonationRegistry): Set<string> {
 
 /**
  * True when a page cannot be about one event whatever the research says: a
- * home page, a society's default page on the donation platform, or one of
- * the registry's general pages (a society's own site, UN Crisis Relief's
- * country or general fund, IFRC's donation page). Such a page is still
- * shown, in its usual place, just never as the event's own.
+ * home page, a society's or IFRC's default page on the donation platform,
+ * or one of the registry's general pages (a society's own site, UN Crisis
+ * Relief's country or general fund, IFRC's donation page). Such a page is
+ * still shown, in its usual place, just never as the event's own.
  */
 export function isGeneralPage(raw: string, generalKeys: Set<string>): boolean {
   let url: URL;
@@ -1436,7 +1607,7 @@ export function isGeneralPage(raw: string, generalKeys: Set<string>): boolean {
   }
   // "/", "/en/", "/es/inicio", "/index.php": a site's home page.
   if (url.pathname.split("/").every((seg) => !seg || HOME_SEGMENT.test(seg))) return true;
-  if (url.hostname === PLATFORM_HOST && /^\/[a-z]{2}\/default(?:\/|$)/i.test(url.pathname)) return true;
+  if (url.hostname === PLATFORM_HOST && /^\/(?:[a-z]{2}|ifrc)\/default(?:\/|$)/i.test(url.pathname)) return true;
   return generalKeys.has(urlKey(raw));
 }
 
@@ -1491,7 +1662,7 @@ export function researchedLinks(input: DonationInput, ctx: DonationContext, regi
  * always two.
  */
 export function buildDonations(input: DonationInput, registry: DonationRegistry, now: string, governmentDomains = loadGovernmentDomains()): DonationLink[] {
-  const ctx = donationContext(input.countries, registry, governmentDomains);
+  const ctx = donationContext(input.countries, registry, governmentDomains, input);
   const out: DonationLink[] = [];
   const seen = new Set<string>();
   const add = (link: DonationLink, urls: string[] = [link.url]) => {
@@ -1540,7 +1711,7 @@ export interface PrepareOptions {
  */
 export async function prepareDonations(input: DonationInput, registry: DonationRegistry, deps: FetchDeps, now: string, opts: PrepareOptions = {}): Promise<DonationLink[]> {
   const gov = opts.governmentDomains ?? loadGovernmentDomains();
-  const ctx = donationContext(input.countries, registry, gov);
+  const ctx = donationContext(input.countries, registry, gov, input);
   const unreachable = opts.unreachable ?? new Set<string>();
   // One live check; a URL that gives no verdict (network failure, 5xx) is not tried again this run.
   const check = async (url: string) => {

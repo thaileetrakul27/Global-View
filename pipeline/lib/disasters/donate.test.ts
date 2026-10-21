@@ -22,6 +22,7 @@ import {
   UN_AGENCY_DOMAINS,
   UN_DOMAINS,
   UNCR_SITEMAP,
+  appealCountriesIn,
   buildDonations,
   checkDonationPage,
   cleanText,
@@ -31,6 +32,7 @@ import {
   donationUrlProblem,
   donationWordsIn,
   emptyRegistry,
+  eventWords,
   fetchGoCountries,
   fetchUncrLocs,
   foldText,
@@ -41,6 +43,8 @@ import {
   isAllowedDonationUrl,
   isBloodDonationPath,
   isGeneralPage,
+  isIfrcEventCampaign,
+  isListingPage,
   isPlainHostname,
   isRegistrySuffix,
   isSearchDomain,
@@ -857,6 +861,18 @@ describe("isAllowedDonationUrl", () => {
   });
 });
 
+// Real researched pages from the live run (GitHub Actions run 39617028266, data commit 59a5d42).
+/** IFRC's own campaign for the Venezuela earthquake, as the donation search found it. */
+const VE_CAMPAIGN = "https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~mi-donativo?_cv=1";
+/** IFRC's campaign for an earlier earthquake in Colombia. */
+const CO_CAMPAIGN = "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/";
+/** A Syria appeal, which research offered as an East African drought's own page. */
+const SY_APPEAL = "https://www.ifrc.org/appeals?ac=MDRSY003";
+/** IFRC's appeal list, page 4, which research offered for the Central America drought. */
+const APPEAL_LIST = "https://ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text=";
+/** An East African drought's countries. */
+const EAST_AFRICA = ["ET", "KE", "SO", "SD", "UG"];
+
 describe("hostClass", () => {
   const ph = ctxFor(["PH"]);
   it("names the kind of official site", () => {
@@ -869,6 +885,150 @@ describe("hostClass", () => {
     expect(hostClass(new URL("https://www.ifrc.org/"), ph)).toBe("agency");
     expect(hostClass(new URL("https://www.dswd.gov.ph/"), ph)).toBe("government");
     expect(hostClass(new URL("https://example.org/"), ph)).toBeNull();
+  });
+
+  it("classes an IFRC campaign on the donation platform named for the disaster as IFRC's", () => {
+    const ve = donationContext(["VE"], registry(), GOV, { title: "Venezuela Earthquake", countryNames: ["Venezuela"] });
+    expect(hostClass(new URL(VE_CAMPAIGN), ve)).toBe("agency");
+    expect(hostClass(new URL(CO_CAMPAIGN), ve)).toBeNull();
+    expect(hostClass(new URL("https://donate.redcrossredcrescent.org/ifrc/default/"), ve)).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Pages about the disaster's own countries (live run 39617028266)
+// ---------------------------------------------------------------------------
+
+describe("appealCountriesIn", () => {
+  it("reads the country of IFRC single-country appeal codes in ac, appeal_code or the path", () => {
+    expect(appealCountriesIn(new URL(SY_APPEAL))).toEqual(["SY"]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?appeal_code=MDRET042"))).toEqual(["ET"]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?AC=mdrpa023"))).toEqual(["PA"]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals/MDRVE015"))).toEqual(["VE"]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/emergency/honduras-drought-mdrhn029/"))).toEqual(["HN"]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals/%4DDRSY003"))).toEqual(["SY"]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?ac=MDRSY003,MDRET042"))).toEqual(["SY", "ET"]);
+  });
+
+  it("leaves regional and multi-country codes, other keys and other words alone", () => {
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?appeal_code=MDR60005"))).toEqual([]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/appeals?appeal_code=MDRSY0031"))).toEqual([]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/news?ref=MDRSY003"))).toEqual([]);
+    expect(appealCountriesIn(new URL("https://www.ifrc.org/donate"))).toEqual([]);
+    expect(appealCountriesIn(new URL(APPEAL_LIST))).toEqual([]);
+  });
+});
+
+describe("isListingPage", () => {
+  it("knows IFRC's unfiltered appeal list and search or paging keys", () => {
+    for (const url of [
+      APPEAL_LIST,
+      "https://www.ifrc.org/appeals?appeal_code=",
+      "https://www.ifrc.org/appeals?ac=",
+      "https://redcross.org.ph/news?page=2",
+      "https://redcross.org.ph/?s=typhoon",
+      "https://www.unicef.org/search?q=flood",
+      "https://www.unicef.org/search?query=flood",
+      "https://www.unicef.org/search?search=flood",
+      "https://www.unicef.org/appeals?text=",
+      "https://www.unicef.org/appeals?keyword=flood",
+      "https://www.unicef.org/appeals?Keywords=flood",
+    ]) {
+      expect(isListingPage(new URL(url)), url).toBe(true);
+    }
+  });
+
+  it("keeps a WordPress post (?p=), an appeal by its code and plain campaign parameters", () => {
+    for (const url of ["https://redcross.org.ph/?p=123", SY_APPEAL, "https://www.redcross.org.ph/donate?campaign=typhoon", "https://www.ifrc.org/donate"]) {
+      expect(isListingPage(new URL(url)), url).toBe(false);
+    }
+  });
+});
+
+describe("eventWords and isIfrcEventCampaign", () => {
+  it("takes the place words of the title and the country names, never hazard or generic words", () => {
+    expect(eventWords("Venezuela Earthquake", ["Venezuela"])).toEqual(["venezuela"]);
+    expect(eventWords("Drought in East Africa, Central Sahel", [])).toEqual(["sahel"]);
+    expect(eventWords("M7.7 earthquake near Pitaloza Arriba, Panama", ["Panama", "Costa Rica"])).toEqual(["pitaloza", "arriba", "panama", "costa", "rica"]);
+    expect(eventWords("Flood in Türkiye", ["Turkey"])).toEqual(["turkiye", "turkey"]);
+    expect(eventWords("Côte d'Ivoire: Abidjan Floods", ["Ivory Coast"])).toEqual(["cote", "ivoire", "abidjan", "ivory"]);
+    expect(eventWords("Flood in United States", ["United States of America"])).toEqual([]);
+    expect(eventWords("Tropical Cyclone 02S", [])).toEqual([]);
+    expect(eventWords(undefined)).toEqual([]);
+  });
+
+  it("allows /ifrc/<slug>/ only when a word of the slug names the disaster", () => {
+    const words = eventWords("Venezuela Earthquake", ["Venezuela"]);
+    expect(isIfrcEventCampaign(new URL(VE_CAMPAIGN), words)).toBe(true);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/IFRC/Venezuela_Earthquake/"), words)).toBe(true);
+    expect(isIfrcEventCampaign(new URL(CO_CAMPAIGN), words)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/default/"), words)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/default/~my-donation?_cv=1"), words)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/"), words)).toBe(false);
+    // A shared hazard word is not enough, nor a word that only contains the name.
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/earthquake-appeal/"), eventWords("Earthquake in Tonga", ["Tonga"]))).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/venezuelan-floods/"), words)).toBe(false);
+    // Only IFRC's own path, on the platform itself, with no encoded way out of the folder.
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ve/venezuela-earthquake/"), words)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.example.org/ifrc/venezuela-earthquake/"), words)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/..%2F..%2Fua/default/"), words)).toBe(false);
+    expect(isIfrcEventCampaign(new URL("https://donate.redcrossredcrescent.org/ifrc/venezuela%2Dearthquake/"), words)).toBe(false);
+    expect(isIfrcEventCampaign(new URL(VE_CAMPAIGN), [])).toBe(false);
+  });
+});
+
+describe("donationUrlProblem holds pages to the disaster's countries", () => {
+  const eastAfrica = donationContext(EAST_AFRICA, registry(), GOV, { title: "Drought in East Africa", countryNames: ["Ethiopia", "Kenya", "Somalia", "Sudan", "Uganda"] });
+  const ve = donationContext(["VE"], registry(), GOV, { title: "Venezuela Earthquake", countryNames: ["Venezuela"] });
+
+  it("rejects an appeal for another country and keeps the disaster's own and regional ones", () => {
+    expect(donationUrlProblem(SY_APPEAL, eastAfrica)).toBe("appeal for another country");
+    expect(donationUrlProblem("https://www.ifrc.org/appeals/MDRSY003", eastAfrica)).toBe("appeal for another country");
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?ac=MDRET042", eastAfrica)).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRET042", eastAfrica)).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRKE061", eastAfrica)).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDR60005", eastAfrica)).toBeNull();
+    // One foreign code is enough.
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?ac=MDRET042,MDRSY003", eastAfrica)).toBe("appeal for another country");
+    // The live cases: Panama, Venezuela and Honduras appeals belong to their own countries only.
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRPA023", ctxFor(["PA", "CR"]))).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRVE015", ve)).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRHN029", ve)).toBe("appeal for another country");
+    // A disaster at sea has no country of its own.
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRVE015", ctxFor([]))).toBe("appeal for another country");
+  });
+
+  it("lets a territory's disaster use its parent society's country's appeals", () => {
+    const pr = ctxFor(["PR"]);
+    expect(pr.appealCountries).toEqual(["PR", "US"]);
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRUS010", pr)).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRPR001", pr)).toBeNull();
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?appeal_code=MDRPR001", ctxFor(["US"]))).toBe("appeal for another country");
+    // A context built by hand holds codes to its countries.
+    expect(donationUrlProblem(SY_APPEAL, { countries: ["SY"], societyHosts: [] })).toBeNull();
+    expect(donationUrlProblem(SY_APPEAL, { countries: ["ET"], societyHosts: [] })).toBe("appeal for another country");
+  });
+
+  it("rejects listing and search pages but keeps a WordPress society page", () => {
+    expect(donationUrlProblem(APPEAL_LIST, ctxFor(["HN", "GT", "NI"]))).toBe("listing or search page");
+    expect(donationUrlProblem("https://www.ifrc.org/appeals?ac=", eastAfrica)).toBe("listing or search page");
+    expect(donationUrlProblem("https://redcross.org.ph/?s=typhoon", ctxFor(["PH"]))).toBe("listing or search page");
+    expect(donationUrlProblem("https://redcross.org.ph/?p=123", ctxFor(["PH"]))).toBeNull();
+  });
+
+  it("allows IFRC's campaign named for the disaster on the donation platform, and no other IFRC path", () => {
+    expect(donationUrlProblem(VE_CAMPAIGN, ve)).toBeNull();
+    expect(donationUrlProblem(CO_CAMPAIGN, ve)).toBe("host not on the allowlist");
+    expect(donationUrlProblem(CO_CAMPAIGN, donationContext(["CO"], registry(), GOV, { title: "Colombia - Earthquake", countryNames: ["Colombia"] }))).toBeNull();
+    expect(donationUrlProblem("https://donate.redcrossredcrescent.org/ifrc/default/", ve)).toBe("host not on the allowlist");
+    // Without the disaster's title and names, no IFRC campaign is allowed.
+    expect(donationUrlProblem(VE_CAMPAIGN, ctxFor(["VE"]))).toBe("host not on the allowlist");
+  });
+
+  it("donationContext reads the words from the disaster's title and country names", () => {
+    expect(ve.eventWords).toEqual(["venezuela"]);
+    expect(ve.appealCountries).toEqual(["VE"]);
+    expect(ctxFor(["VE"]).eventWords).toEqual([]);
   });
 });
 
@@ -1487,6 +1647,9 @@ describe("buildDonations", () => {
     expect(isGeneralPage("https://www.jrc.or.jp/", keys)).toBe(true);
     expect(isGeneralPage("https://www.jrc.or.jp/en/index.html", keys)).toBe(true);
     expect(isGeneralPage("https://donate.redcrossredcrescent.org/jp/default/", keys)).toBe(true);
+    expect(isGeneralPage("https://donate.redcrossredcrescent.org/ifrc/default/", keys)).toBe(true);
+    expect(isGeneralPage("https://donate.redcrossredcrescent.org/IFRC/default/~my-donation?_cv=1", keys)).toBe(true);
+    expect(isGeneralPage(VE_CAMPAIGN, keys)).toBe(false);
     expect(isGeneralPage("https://crisisrelief.un.org/en/donate-sudan-crisis/", keys)).toBe(true);
     expect(isGeneralPage("https://ifrc.org/donate", keys)).toBe(true);
     expect(isGeneralPage("not a url", keys)).toBe(true);
@@ -1559,6 +1722,74 @@ describe("buildDonations", () => {
     expect(knownOrg(new URL("https://donate.redcrossredcrescent.org/us/default/"), "platform", ["PR"], reg)).toBe("American Red Cross");
     expect(knownOrg(new URL("https://www.dswd.gov.ph/"), "government", ["PH"], reg)).toBeNull();
     expect(knownOrg(new URL("https://news.un.org/"), "un", ["PH"], reg)).toBe("United Nations");
+    // IFRC's own campaign on the platform, whatever the model called it.
+    expect(knownOrg(new URL(VE_CAMPAIGN), "agency", ["VE"], reg)).toBe("IFRC");
+  });
+
+  /** A passing verdict from an earlier run's live check, for each URL with its chain. */
+  const passed = (...chains: string[][]) => Object.fromEntries(chains.map((chain) => [urlKey(chain[0]), verdict(chain)]));
+
+  it("drops a cached Syria appeal from an East African drought's list, keeping its own appeal (live run)", () => {
+    const own = "https://www.ifrc.org/appeals?ac=MDRET042";
+    // Both passed a live check in an earlier run; the rule on the URL still applies to the cache.
+    const reg = registry({ verdicts: passed([SY_APPEAL], [own]) });
+    const ctx = donationContext(EAST_AFRICA, reg, GOV);
+    expect(passingVerdict(SY_APPEAL, ctx, reg, NOW)).toBeNull();
+    expect(passingVerdict(own, ctx, reg, NOW)).not.toBeNull();
+    const researched = [
+      { url: SY_APPEAL, org: "IFRC", kind: "society", note: "IFRC appeals listing showing Ethiopia Drought Response MDRET042", specific: true },
+      { url: own, org: "IFRC", kind: "agency", note: "Ethiopia drought appeal", specific: true },
+    ];
+    const links = buildDonations(
+      input({ countries: EAST_AFRICA, appeals: [appeal({ code: "MDRET042", name: "Ethiopia - Drought", kind: "Emergency Appeal" })], researched, title: "Drought in East Africa, Central Sahel" }),
+      reg,
+      NOW,
+      GOV,
+    );
+    expect(links.map((l) => l.url)).not.toContain(SY_APPEAL);
+    expect(links.filter((l) => l.forEvent).map((l) => l.url)).toEqual([own, `${IFRC_APPEAL_PAGE}MDRET042`]);
+  });
+
+  it("drops a cached listing page of IFRC's appeals (live run), whose check followed a redirect", () => {
+    const reg = registry({ verdicts: passed([APPEAL_LIST, APPEAL_LIST.replace("https://ifrc.org/", "https://www.ifrc.org/")]) });
+    const countries = ["HN", "GT", "NI", "SV"];
+    const researched = [{ url: APPEAL_LIST, org: "IFRC", kind: "agency", note: "IFRC appeals database listing MDRHN029 Honduras drought EAP" }];
+    expect(passingVerdict(APPEAL_LIST, donationContext(countries, reg, GOV), reg, NOW)).toBeNull();
+    const links = buildDonations(input({ countries, researched, title: "Drought in Central America" }), reg, NOW, GOV);
+    expect(links.some((l) => l.via === "research")).toBe(false);
+  });
+
+  it("drops a cached page whose redirect chain reaches another country's appeal", () => {
+    const start = "https://www.ifrc.org/emergency/drought";
+    const reg = registry({ verdicts: passed([start, SY_APPEAL]) });
+    const links = buildDonations(input({ countries: EAST_AFRICA, researched: [{ url: start, org: "IFRC", kind: "agency", note: "", specific: true }] }), reg, NOW, GOV);
+    expect(links.some((l) => l.via === "research")).toBe(false);
+  });
+
+  it("lists IFRC's checked campaign for the Venezuela earthquake first, as IFRC's page for this disaster", () => {
+    const reg = registry({ verdicts: passed([VE_CAMPAIGN], [CO_CAMPAIGN, "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"]) });
+    const researched = [
+      { url: VE_CAMPAIGN, org: "IFRC", kind: "society", note: "Donation page for the Venezuela earthquake 2026 appeal.", specific: true },
+      { url: CO_CAMPAIGN, org: "IFRC", kind: "society", note: "Colombia earthquake", specific: true },
+    ];
+    const ve = input({ countries: ["VE"], appeals: [appeal({ code: "MDRVE015", name: "Venezuela-Earthquake", kind: "Emergency Appeal" })], researched, title: "Venezuela Earthquake", countryNames: ["Venezuela"] });
+    const links = buildDonations(ve, reg, NOW, GOV);
+    expect(links[0]).toEqual({ label: "Donate to IFRC", url: VE_CAMPAIGN, org: "IFRC", kind: "agency", note: "Donation page for the Venezuela earthquake 2026 appeal.", via: "research", forEvent: true });
+    expect(links[1]).toMatchObject({ url: `${IFRC_APPEAL_PAGE}MDRVE015`, forEvent: true });
+    // The Colombia campaign is another earthquake's.
+    expect(links.map((l) => l.url)).not.toContain(CO_CAMPAIGN);
+    // Unmarked by the research, the same page is listed with the general ones.
+    const general = buildDonations({ ...ve, researched: [{ ...researched[0], specific: false }] }, reg, NOW, GOV);
+    expect(general.find((l) => l.url === VE_CAMPAIGN)?.forEvent).toBeUndefined();
+    // Without the disaster's title and names, no IFRC campaign is shown.
+    expect(buildDonations({ ...ve, title: undefined, countryNames: undefined }, reg, NOW, GOV).map((l) => l.url)).not.toContain(VE_CAMPAIGN);
+  });
+
+  it("never shows IFRC's default platform page, which is no campaign of this disaster's", () => {
+    const page = "https://donate.redcrossredcrescent.org/ifrc/default/";
+    const reg = registry({ verdicts: passed([page]) });
+    const links = researchedLinks(input({ countries: ["VE"], researched: [{ url: page, org: "IFRC", kind: "agency", note: "", specific: true }] }), donationContext(["VE"], reg, GOV, { title: "Venezuela Earthquake", countryNames: ["Venezuela"] }), reg, NOW);
+    expect(links).toEqual([]);
   });
 
   it("gives every link a label, a note and an https or registry URL", () => {
@@ -1613,6 +1844,26 @@ describe("prepareDonations", () => {
     expect(d.fetch.mock.calls.map((c) => String(c[0]))).toEqual([event]);
     expect(links[0]).toMatchObject({ url: event, forEvent: true, via: "research" });
     expect(links.map((l) => l.url)).not.toContain(general);
+  });
+
+  it("live-checks IFRC's Venezuela campaign but never another country's appeal, a listing page or another quake's campaign", async () => {
+    const d = deps({ [VE_CAMPAIGN]: () => html("<h1>Terremoto en Venezuela</h1><button>Donate now</button>") });
+    const researched = [SY_APPEAL, APPEAL_LIST, CO_CAMPAIGN, VE_CAMPAIGN].map((url) => ({ url, org: "IFRC", kind: "society", note: "", specific: true }));
+    const reg = registry();
+    const links = await prepareDonations(
+      { countries: ["VE"], appeals: [], researched, title: "Venezuela Earthquake", countryNames: ["Venezuela"] },
+      reg,
+      d,
+      NOW,
+      { pauseMs: 0, governmentDomains: GOV },
+    );
+    expect(d.fetch.mock.calls.map((c) => String(c[0]))).toEqual([VE_CAMPAIGN]);
+    expect(links[0]).toMatchObject({ url: VE_CAMPAIGN, org: "IFRC", forEvent: true, via: "research" });
+    expect(d.log).toHaveBeenCalledWith(expect.stringContaining(`${SY_APPEAL}: rejected (appeal for another country)`));
+    expect(d.log).toHaveBeenCalledWith(expect.stringContaining(`${APPEAL_LIST}: rejected (listing or search page)`));
+    expect(d.log).toHaveBeenCalledWith(expect.stringContaining(`${CO_CAMPAIGN}: rejected (host not on the allowlist)`));
+    // Rejections by the URL rules are not cached: another disaster's countries may allow the page.
+    expect(Object.keys(reg.verdicts)).toEqual([urlKey(VE_CAMPAIGN)]);
   });
 
   it("stops after maxChecks live checks of researched pages; the society site's check is extra", async () => {
