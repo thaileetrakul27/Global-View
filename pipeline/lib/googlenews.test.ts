@@ -23,13 +23,15 @@ describe("buildFeedUrl", () => {
 });
 
 describe("buildSectionUrl", () => {
-  it("asks for an edition's NATION or WORLD section", () => {
+  it("asks for an edition's NATION, WORLD, TECHNOLOGY or ENTERTAINMENT section", () => {
     const u = new URL(buildSectionUrl(edition, "NATION"));
     expect(u.origin + u.pathname).toBe("https://news.google.com/rss/headlines/section/topic/NATION");
     expect(u.searchParams.get("hl")).toBe("th");
     expect(u.searchParams.get("gl")).toBe("TH");
     expect(u.searchParams.get("ceid")).toBe("TH:th");
     expect(new URL(buildSectionUrl(edition, "WORLD")).pathname).toBe("/rss/headlines/section/topic/WORLD");
+    expect(new URL(buildSectionUrl(edition, "TECHNOLOGY")).pathname).toBe("/rss/headlines/section/topic/TECHNOLOGY");
+    expect(new URL(buildSectionUrl(edition, "ENTERTAINMENT")).pathname).toBe("/rss/headlines/section/topic/ENTERTAINMENT");
   });
 });
 

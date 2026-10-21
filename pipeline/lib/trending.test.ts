@@ -3,6 +3,7 @@ import type { Article } from "./googlenews";
 import {
   ageHours,
   groupStories,
+  HEADLINE_POSITIONS,
   isTrending,
   LEAD_LAG_HOURS,
   outletKey,
@@ -12,12 +13,15 @@ import {
   SAME_OUTLET_THRESHOLD,
   sameFigures,
   similarity,
+  SOFT_PENALTY,
   STORY_THRESHOLD,
   storyScore,
   storyStats,
   storyTokens,
   tokenWeights,
+  TRENDING_HOURS,
   TRENDING_MAX,
+  TRENDING_OUTLETS,
 } from "./trending";
 
 const NOW = "2026-10-21T12:00:00.000Z";
@@ -343,8 +347,14 @@ describe("storyStats and representative", () => {
     art("Amber warning for Storm Austen", "The Guardian on MSN", 2, { url: "https://top/b" }),
   ];
   it("counts distinct outlets, including Google's related coverage, the newest time and the best position", () => {
-    expect(storyStats(story, top)).toEqual({ outlets: 4, newest: ago(1), topPosition: 1 });
-    expect(storyStats([art("Alone", "", 2)], new Map())).toEqual({ outlets: 1, newest: ago(2), topPosition: null });
+    expect(storyStats(story, top)).toEqual({ outlets: 4, newest: ago(1), topPosition: 1, soft: false });
+    expect(storyStats([art("Alone", "", 2)], new Map())).toEqual({ outlets: 1, newest: ago(2), topPosition: null, soft: false });
+  });
+  it("calls a story soft when one of its links is labelled soft and none hard", () => {
+    const soft = new Set(["https://top/a"]);
+    expect(storyStats(story, top, new Set(), soft).soft).toBe(true);
+    expect(storyStats(story, top, new Set(["https://top/b"]), soft).soft).toBe(false);
+    expect(storyStats(story, top, new Set(["https://top/a"]), soft).soft).toBe(false);
   });
   it("shows the best-placed top-stories article, else the newest", () => {
     expect(representative(story, top).outlet).toBe("The Guardian on MSN");
@@ -369,7 +379,8 @@ describe("ageHours", () => {
 });
 
 describe("storyScore", () => {
-  const score = (outlets: number, hoursAgo: number, topPosition: number | null = null) => storyScore({ outlets, newest: ago(hoursAgo), topPosition }, at);
+  const score = (outlets: number, hoursAgo: number, topPosition: number | null = null, soft = false) =>
+    storyScore({ outlets, newest: ago(hoursAgo), topPosition, soft }, at);
   it("puts a fresh story carried by many outlets above an old top-stories item", () => {
     expect(score(8, 1)).toBeGreaterThan(score(1, 20, 0));
     expect(score(8, 1)).toBeGreaterThan(score(5, 20, 0));
@@ -390,13 +401,27 @@ describe("storyScore", () => {
     expect(score(5, 3)).toBeGreaterThan(score(2, 3));
     expect(score(2, 3)).toBeGreaterThan(score(1, 3));
   });
+  it("takes SOFT_PENALTY off soft news, sinking a new phone story below a half-day-old headline but not below stale news", () => {
+    expect(score(5, 1, 0, true)).toBeCloseTo(score(5, 1, 0) - SOFT_PENALTY);
+    // Thai edition, 21 October 2026: the OPPO leak at top-stories place 19, 40 minutes old, and a 12-hour-old headline.
+    expect(score(4, 0.7, 19, true)).toBeLessThan(score(5, 12, 5));
+    expect(score(4, 0.7, 19)).toBeGreaterThan(score(5, 12, 5));
+    expect(score(4, 0.7, 19, true)).toBeGreaterThan(score(8, 40, 0));
+  });
 });
 
 describe("isTrending", () => {
-  it("needs three outlets and a headline from the last twelve hours", () => {
-    expect(isTrending({ outlets: 3, newest: ago(11), topPosition: null }, at)).toBe(true);
-    expect(isTrending({ outlets: 2, newest: ago(1), topPosition: 0 }, at)).toBe(false);
-    expect(isTrending({ outlets: 9, newest: ago(13), topPosition: 0 }, at)).toBe(false);
+  const stats = { outlets: TRENDING_OUTLETS, newest: ago(TRENDING_HOURS - 0.5), topPosition: HEADLINE_POSITIONS - 1, soft: false };
+  it("needs four outlets, a headline from the last six hours and a place among Google's ten headlines", () => {
+    expect([TRENDING_OUTLETS, TRENDING_HOURS, HEADLINE_POSITIONS]).toEqual([4, 6, 10]);
+    expect(isTrending(stats, at)).toBe(true);
+    expect(isTrending({ ...stats, outlets: TRENDING_OUTLETS - 1 }, at)).toBe(false);
+    expect(isTrending({ ...stats, newest: ago(TRENDING_HOURS + 0.5) }, at)).toBe(false);
+    expect(isTrending({ ...stats, topPosition: HEADLINE_POSITIONS }, at)).toBe(false);
+  });
+  it("never marks soft news, or a story outside the top stories, as all world coverage is", () => {
+    expect(isTrending({ ...stats, soft: true }, at)).toBe(false);
+    expect(isTrending({ ...stats, outlets: 9, newest: ago(1), topPosition: null }, at)).toBe(false);
   });
 });
 
@@ -413,7 +438,7 @@ describe("rankStories", () => {
     const fresh = art("Storm Austen brings amber wind warning to the north", "Sky News", 1, { related: ["BBC", "The Guardian", "ITV News"] });
     const same = art("Amber wind warning as Storm Austen hits the north", "The Telegraph", 2);
     const lone = art("Hedgehog without prickles becomes charity ambassador", "BBC", 2);
-    const out = rankStories([old, fresh, same, lone], ["https://top/0"], NOW);
+    const out = rankStories([old, fresh, same, lone], ["https://top/0", fresh.url], NOW);
     expect(out.map((a) => a.title)).toEqual([fresh.title, lone.title, old.title]);
     expect(out[0]).toMatchObject({ outlets: 5, trending: true });
     expect(out[1]).toMatchObject({ outlets: 1, trending: false });
@@ -429,13 +454,31 @@ describe("rankStories", () => {
     expect(out).toHaveLength(1);
     expect(out[0]).toMatchObject({ url: update.url, published: ago(1), outlets: 5, trending: true });
   });
+  const many = Array.from({ length: TRENDING_MAX + 3 }, (_, i) =>
+    art(`Distinct event number ${i} ${"abcdefghij"[i]}x`, `Outlet ${i}`, 1 + i / 10, { related: ["A", "B", "C"] }),
+  );
   it("marks at most TRENDING_MAX stories as trending, the best-ranked ones", () => {
-    const many = Array.from({ length: TRENDING_MAX + 3 }, (_, i) =>
-      art(`Distinct event number ${i} ${"abcdefghij"[i]}x`, `Outlet ${i}`, 1 + i / 10, { related: ["A", "B", "C"] }),
-    );
-    const out = rankStories(many, [], NOW);
+    const out = rankStories(many, many.map((a) => a.url), NOW);
+    expect(TRENDING_MAX).toBe(3);
     expect(out.filter((a) => a.trending)).toHaveLength(TRENDING_MAX);
     expect(out.slice(0, TRENDING_MAX).every((a) => a.trending)).toBe(true);
+  });
+  it("marks nothing trending without top stories, as for world coverage", () => {
+    expect(rankStories(many, [], NOW).some((a) => a.trending)).toBe(false);
+  });
+  it("sinks soft stories and never marks them trending, unless one of their links is hard", () => {
+    const phone = art("New phone gets a bigger camera and battery", "Gadget Blog", 0.5, { related: ["Phone News", "Specs Daily", "Tech Hub"] });
+    const news = art("Cabinet approves the flood relief budget", "Matichon", 4, { related: ["Thai PBS", "Thairath", "Khaosod"] });
+    const top = [phone.url, news.url];
+    expect(rankStories([phone, news], top, NOW).map((a) => [a.url, a.trending])).toEqual([
+      [phone.url, true],
+      [news.url, true],
+    ]);
+    expect(rankStories([phone, news], top, NOW, { hard: [], soft: [phone.url] }).map((a) => [a.url, a.trending])).toEqual([
+      [news.url, true],
+      [phone.url, false],
+    ]);
+    expect(rankStories([phone, news], top, NOW, { hard: [phone.url], soft: [phone.url] })[0].url).toBe(phone.url);
   });
   it("keeps the input order for equal scores, and handles an empty list", () => {
     const a = art("First story about rain", "A", 2);

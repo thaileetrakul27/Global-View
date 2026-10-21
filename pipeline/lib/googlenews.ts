@@ -1,5 +1,6 @@
-// Reads Google News RSS feeds: each country edition's top stories and its
-// NATION and WORLD sections, and English search results for world coverage.
+// Reads Google News RSS feeds: each country edition's top stories, its
+// NATION and WORLD sections (and TECHNOLOGY and ENTERTAINMENT, read only to
+// label soft news), and English search results for world coverage.
 import { XMLParser } from "fast-xml-parser";
 import type { Edition } from "./countries";
 
@@ -37,8 +38,12 @@ export function buildFeedUrl(e: Edition): string {
   return `${FEED_ENDPOINT}?${params}`;
 }
 
-/** Topic sections read besides the top stories: the country's own news, and the world as it sees it. */
-export type Section = "NATION" | "WORLD";
+/**
+ * Topic sections read besides the top stories: the country's own news and
+ * the world as it sees it, whose articles join the list, and technology
+ * and entertainment, whose links only label soft news (sources.ts).
+ */
+export type Section = "NATION" | "WORLD" | "TECHNOLOGY" | "ENTERTAINMENT";
 
 /**
  * An edition's topic section. Google answers with a redirect to the
