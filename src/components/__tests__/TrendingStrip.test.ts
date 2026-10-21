@@ -2,7 +2,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import type { SnapshotStory } from "@/lib/data";
-import TrendingStrip from "@/components/TrendingStrip";
+import TrendingStrip, { trendingRows } from "@/components/TrendingStrip";
 
 const story = (id: string): SnapshotStory => ({ id, title: `Story ${id}`, subject: null, countries: ["JP", "GB", "FR"] });
 const stories = ["a", "b", "c", "d"].map(story);
@@ -22,5 +22,27 @@ describe("TrendingStrip", () => {
   });
   it("renders nothing without stories", () => {
     expect(render([], 3)).toBe("");
+    expect(render([], 0)).toBe("");
+  });
+  it("is only a Trending today button, still marked for focus return, without rows", () => {
+    const html = render(stories, 0);
+    expect(html).not.toContain("<li>");
+    expect(html).not.toContain("See all");
+    expect(html).toMatch(/^<button[^>]*data-trending-button[^>]*>.*Trending today<\/button>$/);
+  });
+});
+
+describe("trendingRows", () => {
+  it("lists three stories on a tall phone and two on a shorter one", () => {
+    expect(trendingRows(375, 812)).toBe(3);
+    expect(trendingRows(430, 932)).toBe(3);
+    expect(trendingRows(375, 667)).toBe(2);
+    expect(trendingRows(320, 568)).toBe(2);
+  });
+  it("lists none in landscape or on a very short screen, where the card would cover the globe", () => {
+    expect(trendingRows(667, 375)).toBe(0);
+    expect(trendingRows(932, 430)).toBe(0);
+    expect(trendingRows(740, 600)).toBe(0);
+    expect(trendingRows(375, 500)).toBe(0);
   });
 });

@@ -2,11 +2,19 @@
 // view they show where attention points; close in on one country, the same
 // few dozen lines run off every edge of the screen as straight strokes and
 // through the header, so they fade and thin as the camera comes down.
+//
+// The fade is set against the world view, not against small countries: a
+// selected country's close-up sits at 0.45 + span/40 (geo.ts countryFocus),
+// so the largest ones (China 1.68, Canada 1.62, the US 1.60) are only a
+// little below the world view, and they must be faint too. Russia and
+// Antarctica are framed from above the world view and keep full lines.
 
-/** Camera altitude (in globe radii, the narrow-screen scale taken out) at and above which the lines are at full strength. */
-export const FADE_FAR = 1.8;
-/** Altitude at and below which they are faintest: about where a selected country's close-up sits. */
-export const FADE_NEAR = 1;
+import { WORLD_ALTITUDE } from "./geo";
+
+/** Camera altitude (in globe radii, the narrow-screen scale taken out) at and above which the lines are at full strength: just under the world view. */
+export const FADE_FAR = WORLD_ALTITUDE - 0.05;
+/** Altitude at and below which they are faintest: above every close-up framed below the world view (China's, the highest, is 1.68). */
+export const FADE_NEAR = 1.7;
 /** Share of their normal opacity the lines keep up close. */
 export const FADE_MIN = 0.2;
 /** Steps from faintest to full, so the globe redraws the lines a few times per zoom, not every frame. */

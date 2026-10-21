@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
 import GlobeGL, { type GlobeMethods } from "react-globe.gl";
 import { AmbientLight, DirectionalLight, MeshLambertMaterial } from "three";
-import { countryFocus, greatCircle, type CountryFeature } from "@/lib/geo";
+import { WORLD_ALTITUDE, countryFocus, greatCircle, type CountryFeature } from "@/lib/geo";
 import type { Disaster } from "@/lib/data";
 import { MINOR_REVEAL_ALTITUDE, disasterFocus } from "@/lib/disasterLayers";
 import { hiddenOnMap } from "@/lib/disasters";
@@ -255,7 +255,7 @@ export default function Globe({
     });
     setRotation();
 
-    globe.pointOfView({ lat: 18, lng: 30, altitude: 2.1 * altitudeScale() }, 0);
+    globe.pointOfView({ lat: 18, lng: 30, altitude: WORLD_ALTITUDE * altitudeScale() }, 0);
     // The fly-to effects below wait for this, so a shared link that arrived
     // before the globe was ready still moves the camera.
     setReady(true);

@@ -34,7 +34,7 @@ import BottomSheet from "./BottomSheet";
 import ModeSwitch from "./ModeSwitch";
 import TimeMenu from "./TimeMenu";
 import WorldStories from "./WorldStories";
-import TrendingStrip from "./TrendingStrip";
+import TrendingStrip, { trendingRows } from "./TrendingStrip";
 import TrendingPanel from "./TrendingPanel";
 import StoryPanel from "./StoryPanel";
 import WorldSummary from "./WorldSummary";
@@ -49,8 +49,6 @@ import type { SharedRef } from "./ArticleList";
 export const PANEL_WIDTH = 440;
 /** Fraction of the screen height the mobile sheet covers when peeking. */
 export const SHEET_PEEK = 0.42;
-/** Phones shorter than this list two trending stories under the globe instead of three. */
-const SHORT_PHONE = 780;
 /** localStorage key set once the user has turned the globe, so the hint stops showing. */
 const MOVED_KEY = "gv:moved";
 /** Coverage, tints and lines the disaster map uses: plain land, so the disasters stand out. */
@@ -436,6 +434,16 @@ export default function App() {
     setDisasterFrom(null);
     setDisasterFromMode(null);
   }, []);
+  // A country chip in a disaster's panel opens that country's top stories,
+  // as its label says, so it also switches to the news map: on the disaster
+  // map the country would show the disasters the user just came from.
+  const openCountryNews = useCallback(
+    (code: string) => {
+      select(code);
+      setMode("news");
+    },
+    [select],
+  );
   const close = useCallback(() => {
     userActed.current = true;
     setSelectedCode(null);
@@ -630,7 +638,7 @@ export default function App() {
       disaster={openDisaster}
       nameOf={nameOf}
       onClose={closeDisaster}
-      onSelectCountry={select}
+      onSelectCountry={openCountryNews}
       actions={<CopyLink label="Copy link to this disaster" />}
     />
   );
@@ -773,10 +781,11 @@ export default function App() {
       )}
 
       {/* Phones, news map: today's top shared stories in the band under the
-          globe, above the hint (or in its place once the globe has turned). */}
+          globe, above the hint (or in its place once the globe has turned).
+          In landscape there is no such band: just a button in the corner. */}
       {canTrend && !panelOpen && (
         <div className={`pointer-events-none absolute inset-x-0 z-20 ${moved ? "bottom-5" : "bottom-11"}`}>
-          <TrendingStrip stories={dayStories} rows={vp.height < SHORT_PHONE ? 2 : 3} onStory={openStory} onOpen={openTrending} />
+          <TrendingStrip stories={dayStories} rows={trendingRows(vp.width, vp.height)} onStory={openStory} onOpen={openTrending} />
         </div>
       )}
 
