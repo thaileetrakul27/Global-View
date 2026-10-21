@@ -7,6 +7,7 @@ import {
   landShare,
   onLand,
   EARTH_RADIUS_KM,
+  LAND_SHAPES_PATH,
   bboxOf,
   centroidOf,
   circlePolygon,
@@ -650,11 +651,16 @@ describe("countryCentroid", () => {
 
 describe("land and sea", () => {
   const shapes = loadCountryShapes();
+  const detailed = loadCountryShapes(LAND_SHAPES_PATH);
+  type Case = { lat: number; lng: number; places?: { lat: number; lng: number }[]; areas: { geometry: AreaGeometry }[] };
   const fx = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "sea-parts.json"), "utf8")) as Record<
-    "china" | "vietnam",
-    { lat: number; lng: number; areas: { geometry: AreaGeometry }[] }
+    "china" | "vietnam" | "italy" | "spain",
+    Case
   >;
   const parts = (g: AreaGeometry) => (g.type === "Polygon" ? [g.coordinates] : g.coordinates);
+  /** The part whose outer ring has a vertex inside the box. */
+  const partIn = (g: AreaGeometry, minX: number, minY: number, maxX: number, maxY: number) =>
+    parts(g).find((p) => p[0].some(([x, y]) => x > minX && x < maxX && y > minY && y < maxY));
 
   it("tells land from sea", () => {
     expect(onLand(13.75, 100.5, shapes)).toBe(true); // Bangkok
@@ -663,31 +669,87 @@ describe("land and sea", () => {
     expect(onLand(0, -150, shapes)).toBe(false); // the Pacific
   });
 
+  it("finds land across the antimeridian and at any longitude", () => {
+    expect(onLand(66, -172, shapes)).toBe(true); // Chukotka
+    expect(onLand(66, 188, shapes)).toBe(true); // the same point, 360 degrees on
+    expect(onLand(-16.83, -179.94, detailed)).toBe(true); // Taveuni, Fiji
+  });
+
+  it("finds islands in the finer shapes that the coarse ones leave out", () => {
+    expect(onLand(38.98, 1.41, shapes)).toBe(false); // Ibiza
+    expect(onLand(38.98, 1.41, detailed)).toBe(true);
+    expect(onLand(42.78, 10.25, shapes)).toBe(false); // Elba
+    expect(onLand(42.78, 10.25, detailed)).toBe(true);
+    expect(onLand(16.5, 112.0, detailed)).toBe(false); // Paracel waters
+  });
+
   it("measures how much of a polygon is land", () => {
-    const hainan = parts(fx.china.areas[0].geometry).find((p) => p[0].some(([x, y]) => x > 109 && x < 110 && y > 18 && y < 19.5))!;
+    const hainan = partIn(fx.china.areas[0].geometry, 109, 18, 110, 19.5)!;
     expect(landShare(hainan, shapes)).toBeGreaterThan(0.5);
     const box: Position[][] = [[[111, 15.5], [113, 15.5], [113, 17.3], [111, 17.3], [111, 15.5]]];
     expect(landShare(box, shapes)).toBe(0);
+    expect(landShare(box, detailed)).toBe(0);
+    const ibiza = partIn(fx.spain.areas[0].geometry, 1.2, 38.83, 1.65, 39.15)!;
+    expect(landShare(ibiza, shapes)).toBe(0);
+    expect(landShare(ibiza, detailed)).toBeGreaterThan(0.8);
   });
 
   it("drops the island waters from Hainan's flood area and keeps the island", () => {
     const geom = fx.china.areas[0].geometry;
-    const out = dropSeaParts(geom, shapes, fx.china)!;
-    expect(parts(geom).length).toBeGreaterThan(5);
-    expect(parts(out)).toHaveLength(1);
-    expect(pointInGeometry(109.6, 19.2, out)).toBe(true);
-    // Nothing south of 15 degrees north (the Spratly Islands) is left.
-    expect(parts(out).every((p) => p[0].every(([, y]) => y > 15))).toBe(true);
+    expect(parts(geom)).toHaveLength(13);
+    for (const lands of [[shapes], [detailed], [shapes, detailed]]) {
+      const out = dropSeaParts(geom, lands, [fx.china])!;
+      expect(parts(out)).toHaveLength(1);
+      expect(pointInGeometry(109.6, 19.2, out)).toBe(true);
+      // Nothing south of 17.5 degrees north (the Paracel and Spratly Islands) is left.
+      expect(parts(out).every((p) => p[0].every(([, y]) => y > 17.5))).toBe(true);
+    }
   });
 
   it("leaves a coastal flood on the mainland as it is", () => {
     const geom = fx.vietnam.areas[0].geometry;
-    expect(dropSeaParts(geom, shapes, fx.vietnam)).toBe(geom);
+    expect(dropSeaParts(geom, [shapes, detailed], [fx.vietnam])).toBe(geom);
   });
 
   it("keeps a part that holds the disaster's own point, even off the country shapes", () => {
     const islet: AreaGeometry = { type: "Polygon", coordinates: [[[-175.3, -21.2], [-175.1, -21.2], [-175.1, -21.0], [-175.3, -21.0], [-175.3, -21.2]]] };
-    expect(dropSeaParts(islet, shapes, { lat: -21.1, lng: -175.2 })).toBe(islet);
-    expect(dropSeaParts(islet, shapes, null)).toBeNull();
+    expect(dropSeaParts(islet, [shapes], [{ lat: -21.1, lng: -175.2 }])).toBe(islet);
+    expect(dropSeaParts(islet, [shapes], [])).toBeNull();
+  });
+
+  it("keeps a part that holds one of the disaster's places, not only its position", () => {
+    // Italy's flood: its position is on the mainland, its researched places on Elba.
+    const geom = fx.italy.areas[0].geometry;
+    const elba = partIn(geom, 10.1, 42.7, 10.45, 42.9)!;
+    expect(landShare(elba, shapes)).toBe(0);
+    expect(fx.italy.places!.every((p) => pointInGeometry(p.lng, p.lat, { type: "Polygon", coordinates: elba }))).toBe(true);
+    const out = dropSeaParts(geom, [shapes], [fx.italy, ...fx.italy.places!])!;
+    expect(parts(out)).toHaveLength(2); // the mainland piece and Elba; Pianosa and Montecristo go
+    expect(parts(out)).toContain(elba);
+    // Without its places, the coarse shapes alone lose Elba.
+    expect(parts(dropSeaParts(geom, [shapes], [fx.italy])!)).not.toContain(elba);
+  });
+
+  it("keeps islands the coarse shapes leave out when the finer shapes have them", () => {
+    // Spain's flood: Ibiza and Formentera, with its position on Formentera.
+    const geom = fx.spain.areas[0].geometry;
+    expect(parts(geom)).toHaveLength(2);
+    expect(dropSeaParts(geom, [shapes, detailed], [fx.spain])).toBe(geom);
+    expect(dropSeaParts(geom, [shapes, detailed], [])).toBe(geom);
+    expect(parts(dropSeaParts(geom, [shapes], [fx.spain])!)).toHaveLength(1);
+  });
+
+  it("keeps a part that holds a keep point across the antimeridian", () => {
+    // Open sea south of Fiji, so only the keep point can save these.
+    const west = circlePolygon(-25, 179.98, 10); // runs past +180
+    expect(bboxOf(west)[2]).toBeGreaterThan(180);
+    expect(dropSeaParts(west, [shapes, detailed], [{ lat: -25, lng: -179.95 }])).toBe(west);
+    const east = circlePolygon(-25, -179.98, 10); // runs past -180
+    expect(bboxOf(east)[0]).toBeLessThan(-180);
+    expect(dropSeaParts(east, [shapes, detailed], [{ lat: -25, lng: 179.95 }])).toBe(east);
+    const ring = toAreaGeometry({ type: "Polygon", coordinates: [[[179.85, -25.2], [-179.8, -25.2], [-179.8, -24.8], [179.85, -24.8], [179.85, -25.2]]] })!;
+    expect(bboxOf(ring)[2]).toBeGreaterThan(180);
+    expect(dropSeaParts(ring, [shapes, detailed], [{ lat: -25, lng: -179.94 }])).toBe(ring);
+    expect(dropSeaParts(ring, [shapes, detailed], [])).toBeNull();
   });
 });
