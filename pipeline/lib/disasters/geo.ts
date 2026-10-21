@@ -681,3 +681,60 @@ export function countryCentroid(code: string, shapes: CountryShape[]): { lat: nu
   const nudge = 1e-7; // keeps the scan line off exact vertices
   return interiorPointOnLine(largest, c.lat + nudge) ?? interiorPointOnLine(largest, (minLat + maxLat) / 2 + nudge) ?? c;
 }
+
+// ---------------------------------------------------------------------------
+// Land and sea
+// ---------------------------------------------------------------------------
+
+/** True when the point lies inside any country shape (no tolerance). */
+export function onLand(lat: number, lng: number, shapes: CountryShape[]): boolean {
+  const x = normaliseLng(lng);
+  return shapes.some((s) => {
+    const [minX, minY, maxX, maxY] = s.bbox;
+    if (lat < minY || lat > maxY) return false;
+    const inBox = (x >= minX && x <= maxX) || (x + 360 >= minX && x + 360 <= maxX) || (x - 360 >= minX && x - 360 <= maxX);
+    return inBox && pointInGeometry(x, lat, s.geometry);
+  });
+}
+
+/** Grid steps across a polygon's bounding box when sampling it for land. */
+const LAND_GRID = 12;
+
+/**
+ * Share of a polygon that lies on land, from a grid of sample points inside
+ * it (its corners when the polygon is too thin for the grid to land in).
+ */
+export function landShare(poly: Position[][], shapes: CountryShape[]): number {
+  const [minX, minY, maxX, maxY] = ringBbox(poly[0]);
+  const points: Position[] = [];
+  for (let i = 0; i < LAND_GRID; i++) {
+    for (let j = 0; j < LAND_GRID; j++) {
+      const p: Position = [minX + ((i + 0.5) / LAND_GRID) * (maxX - minX), minY + ((j + 0.5) / LAND_GRID) * (maxY - minY)];
+      if (inPolygon(p[0], p[1], poly)) points.push(p);
+    }
+  }
+  const sample = points.length >= 8 ? points : poly[0];
+  if (sample.length === 0) return 0;
+  return sample.filter(([x, y]) => onLand(y, x, shapes)).length / sample.length;
+}
+
+/** A part of an area kept as land when at least this share of it is on land. */
+export const MIN_LAND_SHARE = 0.15;
+
+/**
+ * The area without the parts that are almost all sea: for floods, fires and
+ * other hazards on land, a source's footprint is often an administrative
+ * boundary that takes in offshore island districts and their waters (Hainan
+ * province reaches the Paracel and Spratly Islands). A part is kept when at
+ * least MIN_LAND_SHARE of it is on land, or when it holds `keep` (the
+ * disaster's own position), since the country shapes leave out small
+ * islands. Null when no part would be left.
+ */
+export function dropSeaParts(geom: AreaGeometry, shapes: CountryShape[], keep: { lat: number; lng: number } | null): AreaGeometry | null {
+  const parts = polygonsOf(geom).filter(
+    (poly) => (keep !== null && inPolygon(normaliseLng(keep.lng), keep.lat, poly)) || landShare(poly, shapes) >= MIN_LAND_SHARE,
+  );
+  if (parts.length === 0) return null;
+  if (parts.length === polygonsOf(geom).length) return geom;
+  return parts.length === 1 ? { type: "Polygon", coordinates: parts[0] } : { type: "MultiPolygon", coordinates: parts };
+}

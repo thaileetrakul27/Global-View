@@ -3,6 +3,9 @@ import os from "node:os";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
+  dropSeaParts,
+  landShare,
+  onLand,
   EARTH_RADIUS_KM,
   bboxOf,
   centroidOf,
@@ -642,5 +645,49 @@ describe("countryCentroid", () => {
   });
   it("returns null for an unknown code", () => {
     expect(countryCentroid("ZZ", shapes)).toBeNull();
+  });
+});
+
+describe("land and sea", () => {
+  const shapes = loadCountryShapes();
+  const fx = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "sea-parts.json"), "utf8")) as Record<
+    "china" | "vietnam",
+    { lat: number; lng: number; areas: { geometry: AreaGeometry }[] }
+  >;
+  const parts = (g: AreaGeometry) => (g.type === "Polygon" ? [g.coordinates] : g.coordinates);
+
+  it("tells land from sea", () => {
+    expect(onLand(13.75, 100.5, shapes)).toBe(true); // Bangkok
+    expect(onLand(19.2, 109.6, shapes)).toBe(true); // Hainan
+    expect(onLand(16.5, 112.0, shapes)).toBe(false); // Paracel waters
+    expect(onLand(0, -150, shapes)).toBe(false); // the Pacific
+  });
+
+  it("measures how much of a polygon is land", () => {
+    const hainan = parts(fx.china.areas[0].geometry).find((p) => p[0].some(([x, y]) => x > 109 && x < 110 && y > 18 && y < 19.5))!;
+    expect(landShare(hainan, shapes)).toBeGreaterThan(0.5);
+    const box: Position[][] = [[[111, 15.5], [113, 15.5], [113, 17.3], [111, 17.3], [111, 15.5]]];
+    expect(landShare(box, shapes)).toBe(0);
+  });
+
+  it("drops the island waters from Hainan's flood area and keeps the island", () => {
+    const geom = fx.china.areas[0].geometry;
+    const out = dropSeaParts(geom, shapes, fx.china)!;
+    expect(parts(geom).length).toBeGreaterThan(5);
+    expect(parts(out)).toHaveLength(1);
+    expect(pointInGeometry(109.6, 19.2, out)).toBe(true);
+    // Nothing south of 15 degrees north (the Spratly Islands) is left.
+    expect(parts(out).every((p) => p[0].every(([, y]) => y > 15))).toBe(true);
+  });
+
+  it("leaves a coastal flood on the mainland as it is", () => {
+    const geom = fx.vietnam.areas[0].geometry;
+    expect(dropSeaParts(geom, shapes, fx.vietnam)).toBe(geom);
+  });
+
+  it("keeps a part that holds the disaster's own point, even off the country shapes", () => {
+    const islet: AreaGeometry = { type: "Polygon", coordinates: [[[-175.3, -21.2], [-175.1, -21.2], [-175.1, -21.0], [-175.3, -21.0], [-175.3, -21.2]]] };
+    expect(dropSeaParts(islet, shapes, { lat: -21.1, lng: -175.2 })).toBe(islet);
+    expect(dropSeaParts(islet, shapes, null)).toBeNull();
   });
 });

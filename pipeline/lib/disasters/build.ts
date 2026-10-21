@@ -18,7 +18,7 @@ import { REGISTRY_PATH, buildDonations, prepareDonations, readRegistry, refreshR
 import { fetchEonet } from "./eonet";
 import { fetchGdacs } from "./gdacs";
 import { GEOCODE_CACHE_PATH, createGeocoder, placeArea, placeFromHit, readGeocodeCache, writeGeocodeCache, type Geocoder } from "./geocode";
-import { fitGeometry, haversineKm, type CountryShape } from "./geo";
+import { dropSeaParts, fitGeometry, haversineKm, type CountryShape } from "./geo";
 import { fetchIfrc } from "./ifrc";
 import { isOngoing, mergeEvents } from "./merge";
 import { extractNewsEvents, mentionsDisaster, type NewsArticle } from "./news";
@@ -243,6 +243,33 @@ export function withResearch(d: Disaster, entry: ResearchEntry): Disaster {
   };
 }
 
+/** Hazards that happen on land: their areas lose the parts that are almost all sea. */
+export const LAND_HAZARDS: ReadonlySet<Disaster["type"]> = new Set(["flood", "drought", "wildfire", "landslide", "heatwave", "coldwave"]);
+
+/**
+ * A land hazard's affected areas and place areas without their parts that
+ * are almost all sea (see dropSeaParts): a province boundary can take in
+ * offshore islands and their waters, which would otherwise be drawn as a
+ * flood in the open sea. Areas left with no part are dropped, but never all
+ * of them: when nothing would be left, the disaster keeps its areas.
+ */
+export function trimSeaAreas(d: Disaster, shapes: CountryShape[]): Disaster {
+  if (!LAND_HAZARDS.has(d.type) || shapes.length === 0 || d.areas.length === 0) return d;
+  let changed = false;
+  const areas: Area[] = [];
+  for (const a of d.areas) {
+    if (a.kind !== "affected" && a.kind !== "place") {
+      areas.push(a);
+      continue;
+    }
+    const geometry = dropSeaParts(a.geometry, shapes, d);
+    if (geometry !== a.geometry) changed = true;
+    if (geometry) areas.push(geometry === a.geometry ? a : { ...a, geometry });
+  }
+  if (!changed || areas.length === 0) return d;
+  return { ...d, areas };
+}
+
 /**
  * True when research newer than the feeds' last activity says a minor or
  * significant disaster is over and no IFRC appeal is still open. Severe
@@ -454,7 +481,7 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
     if (entry?.places.length) out = withPlaces(out, await locatePlaces(geocoder, out, entry.places, "research"));
     enriched.push(out);
   }
-  disasters = enriched.filter((d) => isOngoing(d, now) || d.appeals.length > 0);
+  disasters = enriched.filter((d) => isOngoing(d, now) || d.appeals.length > 0).map((d) => trimSeaAreas(d, run.shapes));
 
   // Donation pages: registries by fixed rule plus researched pages that pass the allowlist and a live check.
   let registry: DonationRegistry = readRegistry(paths.registry);

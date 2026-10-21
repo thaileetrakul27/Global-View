@@ -19,13 +19,14 @@ import {
   readSnapshots,
   relatedHeadlines,
   researchSaysOver,
+  trimSeaAreas,
   updateDisasters,
   withPlaces,
   withResearch,
   type DisasterRun,
   type Snapshots,
 } from "./build";
-import { circlePolygon } from "./geo";
+import { circlePolygon, loadCountryShapes } from "./geo";
 import type { GeoHit, Geocoder } from "./geocode";
 import type { ResearchEntry, ResearchParse } from "./research";
 import type { Disaster, DisastersFile, SourceEvent } from "./types";
@@ -433,5 +434,33 @@ describe("updateDisasters", () => {
     const { ai, webResearch } = recordingAi(ledger);
     await updateDisasters(runWith(dirs, { ai, ledger }));
     expect(webResearch).not.toHaveBeenCalled();
+  });
+});
+
+describe("trimSeaAreas", () => {
+  const shapes = loadCountryShapes();
+  const fx = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "sea-parts.json"), "utf8")) as {
+    china: { lat: number; lng: number; areas: Disaster["areas"] };
+  };
+  const china = (p: Partial<Disaster> = {}) => dis({ id: "gdacs-flood-1", countries: ["CN"], lat: fx.china.lat, lng: fx.china.lng, areas: fx.china.areas, ...p });
+  const parts = (d: Disaster) => d.areas.reduce((n, a) => n + (a.geometry.type === "Polygon" ? 1 : a.geometry.coordinates.length), 0);
+
+  it("drops a flood's parts out at sea", () => {
+    const before = china();
+    const after = trimSeaAreas(before, shapes);
+    expect(parts(before)).toBeGreaterThan(5);
+    expect(parts(after)).toBe(1);
+  });
+
+  it("leaves hazards that reach the sea, and runs without shapes, untouched", () => {
+    const storm = china({ type: "cyclone" });
+    expect(trimSeaAreas(storm, shapes)).toBe(storm);
+    const flood = china();
+    expect(trimSeaAreas(flood, [])).toBe(flood);
+  });
+
+  it("never leaves a disaster with no area", () => {
+    const sea = china({ lat: 0, lng: -150, areas: [{ kind: "affected", geometry: { type: "Polygon", coordinates: [[[111, 15.5], [113, 15.5], [113, 17.3], [111, 17.3], [111, 15.5]]] } }] });
+    expect(trimSeaAreas(sea, shapes)).toBe(sea);
   });
 });
