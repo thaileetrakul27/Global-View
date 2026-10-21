@@ -2,7 +2,7 @@
   "code": "KZ",
   "name": "Kazakhstan",
   "kind": "world",
-  "updated": "2026-10-21T00:11:24.613Z",
+  "updated": "2026-10-21T05:12:20.084Z",
   "source": {
     "name": "Bing News and Google News",
     "edition": "search",
@@ -10,12 +10,23 @@
   },
   "articles": [
     {
-      "title": "Казахстан с 2027 года сократит долю плавающего акциза на нефтепродукты в два раза",
-      "url": "https://www.pravda.ru/news/kazakhstan/2429504-kazakhstan-akkits-nefteprodukty-2027/",
-      "outlet": "Правда.Ру",
+      "title": "\"Почувствуют приближение зимы\": морозы до -10°C нагрянут в Казахстан",
+      "url": "https://www.zakon.kz/obshestvo/6535758-pochuvstvuyut-priblizhenie-zimy-morozy-do-10C-nagryanut-v-kazakhstan.html",
+      "outlet": "zakon.kz",
       "outletUrl": null,
-      "published": "2026-10-20T16:27:00.000Z",
-      "en": "Kazakhstan will halve the share of the floating excise on petroleum products starting from 2027",
+      "published": "2026-10-20T12:35:00.000Z",
+      "en": "\"They will feel the approach of winter\": frosts down to -10°C to hit Kazakhstan",
+      "about": [
+        "KZ"
+      ]
+    },
+    {
+      "title": "Антициклон несет похолодание в Казахстан",
+      "url": "https://informburo.kz/novosti/anticiklon-neset-poxolodanie-v-kazaxstan",
+      "outlet": "Informburo.kz",
+      "outletUrl": null,
+      "published": "2026-10-20T12:37:00.000Z",
+      "en": "Anticyclone brings cooling to Kazakhstan",
       "about": [
         "KZ"
       ]
@@ -32,17 +43,6 @@
       ]
     },
     {
-      "title": "Казахстан полностью обеспечил себя битумом и готовит экспорт за рубеж",
-      "url": "https://azh.kz/ru/news/view/133537",
-      "outlet": "Ак Жайык",
-      "outletUrl": null,
-      "published": "2026-10-20T05:21:00.000Z",
-      "en": "Kazakhstan has fully provided itself with bitumen and is preparing exports abroad",
-      "about": [
-        "KZ"
-      ]
-    },
-    {
       "title": "Названы страны с самыми устойчивыми пенсионными системами – и как оценивают Казахстан",
       "url": "https://www.zakon.kz/stati/6535663-nazvany-strany-s-samymi-ustoychivymi-pensionnymi-sistemami--i-kak-otsenivayut-kazakhstan.html",
       "outlet": "zakon.kz",
@@ -54,12 +54,12 @@
       ]
     },
     {
-      "title": "Казахстан выиграл три золота Азиатских параигр за один день",
-      "url": "https://ulysmedia.kz/news/83238-kazakhstan-vyigral-tri-zolota-aziatskikh-paraigr-za-odin-den/",
-      "outlet": "Ulysmedia.kz",
+      "title": "Казахстан с 2027 года сократит долю плавающего акциза на нефтепродукты в два раза",
+      "url": "https://www.pravda.ru/news/kazakhstan/2429504-kazakhstan-akkits-nefteprodukty-2027/",
+      "outlet": "Правда.Ру",
       "outletUrl": null,
-      "published": "2026-10-20T02:58:00.000Z",
-      "en": "Kazakhstan won three gold medals at the Asian Para Games in one day",
+      "published": "2026-10-20T16:27:00.000Z",
+      "en": "Kazakhstan will halve the share of the floating excise on petroleum products starting from 2027",
       "about": [
         "KZ"
       ]
@@ -89,12 +89,101 @@
       ]
     },
     {
+      "title": "Казахстан выиграл три золота Азиатских параигр за один день",
+      "url": "https://ulysmedia.kz/news/83238-kazakhstan-vyigral-tri-zolota-aziatskikh-paraigr-za-odin-den/",
+      "outlet": "Ulysmedia.kz",
+      "outletUrl": null,
+      "published": "2026-10-20T02:58:00.000Z",
+      "en": "Kazakhstan won three gold medals at the Asian Para Games in one day",
+      "about": [
+        "KZ"
+      ]
+    },
+    {
+      "title": "Казахстан передал председательство в ТюркПА Кыргызстану",
+      "url": "https://www.inform.kz/ru/kazahstan-peredal-predsedatelstvo-vtyurkpa-kirgizstanu-45e4761e",
+      "outlet": "Казинформ",
+      "outletUrl": null,
+      "published": "2026-10-20T10:33:00.000Z",
+      "en": "Kazakhstan handed the chairmanship of the TurkPA to Kyrgyzstan",
+      "about": [
+        "KZ",
+        "KG"
+      ]
+    },
+    {
+      "title": "Казахстан оказался самой «женской» страной Центральной Азии",
+      "url": "https://azh.kz/ru/news/view/133543",
+      "outlet": "Ак Жайык",
+      "outletUrl": null,
+      "published": "2026-10-20T05:46:00.000Z",
+      "en": "Kazakhstan turned out to be the most \"feminine\" country in Central Asia",
+      "about": [
+        "KZ"
+      ]
+    },
+    {
+      "title": "Рэперу Navai не запрещали въезд в Казахстан",
+      "url": "https://iz.ru/2187437/2026-10-20/reperu-navai-ne-zapreshchali-vezd-v-kazakhstan",
+      "outlet": "Известия",
+      "outletUrl": null,
+      "published": "2026-10-20T10:14:00.000Z",
+      "en": "Rapper Navai was not banned from entering Kazakhstan",
+      "about": [
+        "KZ"
+      ]
+    },
+    {
+      "title": "СМИ: Navai захотел вернуться в Казахстан после громкого задержания",
+      "url": "https://lady.mail.ru/article/600815-navai-zahotel-vernutsya-v-kazahstan-posle-gromkogo-zaderzhaniya/",
+      "outlet": "Леди Mail.ru",
+      "outletUrl": null,
+      "published": "2026-10-20T06:52:00.000Z",
+      "en": "Media: Navai wants to return to Kazakhstan after high-profile detention",
+      "about": [
+        "KZ"
+      ]
+    },
+    {
+      "title": "Генпрокуратура вернула в Казахстан активы на 1,3 трлн тенге",
+      "url": "https://ulysmedia.kz/news/83257-genprokuratura-vernula-v-kazakhstan-aktivy-na-1-3-trln-tenge/",
+      "outlet": "Ulysmedia.kz",
+      "outletUrl": null,
+      "published": "2026-10-20T06:58:00.000Z",
+      "en": "Prosecutor General's Office returned assets worth 1.3 trillion tenge to Kazakhstan",
+      "about": [
+        "KZ"
+      ]
+    },
+    {
       "title": "Казахстан привлек две трети всех иностранных инвестиций Центральной Азии",
       "url": "https://www.inform.kz/ru/kazahstan-privlek-dve-treti-vseh-inostrannih-investitsiy-tsentralnoy-azii-e1715424",
       "outlet": "Казинформ",
       "outletUrl": null,
       "published": "2026-10-20T12:22:00.000Z",
       "en": "Kazakhstan attracted two-thirds of all foreign investment in Central Asia",
+      "about": [
+        "KZ"
+      ]
+    },
+    {
+      "title": "Рэперу Navai запретили въезд в Казахстан на пять лет",
+      "url": "https://tv.mail.ru/news/141821-reperu-navai-zapretili-vezd-v-kazahstan-na-pyat-let/",
+      "outlet": "tv.mail",
+      "outletUrl": null,
+      "published": "2026-10-20T03:38:00.000Z",
+      "en": "Rapper Navai was banned from entering Kazakhstan for five years",
+      "about": [
+        "KZ"
+      ]
+    },
+    {
+      "title": "Будет ли у Navai судимость и когда он сможет вернуться в Казахстан, рассказал адвокат",
+      "url": "https://tengrinews.kz/kazakhstan_news/li-navai-sudimost-kogda-smojet-vernutsya-kazahstan-rasskazal-611262/",
+      "outlet": "Tengrinews.kz",
+      "outletUrl": null,
+      "published": "2026-10-20T09:13:00.000Z",
+      "en": "Will Navai have a criminal record and when can he return to Kazakhstan, a lawyer explained",
       "about": [
         "KZ"
       ]
@@ -112,129 +201,39 @@
       ]
     },
     {
-      "title": "Чемпион Almaty Open 2025 приехал в Казахстан за вторым чапаном",
-      "url": "https://www.zakon.kz/sport/6535681-chempion-Almaty-Open-2025-priekhal-v-kazakhstan-za-vtorym-chapanom.html",
-      "outlet": "zakon.kz",
+      "title": "Геосводка: как Казахстан выдавливает релокантов обратно в Россию, Макрон захватывает суда КНР",
+      "url": "https://vfokuse.mail.ru/articles/69648531-geosvodka-kak-kazahstan-vydavlivaet-relokantov-obratno-v-rossiyu-makron-zahvatyvaet-suda-knr/",
+      "outlet": "vfokuse.mail",
       "outletUrl": null,
-      "published": "2026-10-20T09:57:00.000Z",
-      "en": "Champion of Almaty Open 2025 came to Kazakhstan for a second chapan",
-      "about": [
-        "KZ"
-      ]
-    },
-    {
-      "title": "U.S. Mission in Kazakhstan Announces 2026–2027 Programming for American Corners Network",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQk1uR004OGZIN0VFb2RGTXR2Sy1wMW9jY0JDU3RNRlZuOEROMW5PbFhtOFNGLTRfeXlHZ2ZxMERldjBCQUNtYXc5WlFPTnh4bm9vSW1kc1NibjduR3RiRlA4NEgtZ01DWHJ2czN5ak9pSVZVbUoxLXl6Tnp4bXEyaUFVclB6cWc3S0NZVnVaUGhQejZkVzBiOU9vSVhHaFN1NGdPdjNwbEFDS2pDLXc5NEN3?oc=5",
-      "outlet": "US Embassy and Consulate in Kazakhstan",
-      "outletUrl": "https://kz.usembassy.gov",
-      "published": "2026-10-20T15:33:07.000Z",
-      "en": "U.S. Mission in Kazakhstan Announces 2026–2027 Programming for American Corners Network",
+      "published": "2026-10-20T13:25:00.000Z",
+      "en": "Geo-digest: how Kazakhstan is pushing relocants back to Russia, Macron seizes Chinese vessels",
       "about": [
         "KZ",
-        "US"
+        "RU",
+        "FR",
+        "CN"
       ]
     },
     {
-      "title": "Kazakhstan court bars Coinbase, five others from unlicensed crypto services in Astana International Financial Centre",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbzluUXF0TGNaRUs5WnZ2c2lqNUd0a0ZZTmFhZV9BSVd6ZGxpQUtFdk9FN3BmWktUM2t3QVF5cEs3eGpPaE9oQnBtZ25YTWNBdEthVHBlRzNGbm5SSXlhVTZ4YVdwMVVvaWdqLW1OM20xRWdGNU9pWG5tTVV5YXhEc1pTaldial9ZLXNjVy1zbGJUY25MRjVXR21scXZDdjFEWGNUMVNVZGtWNmpuTFpJWnpUejJoRzNob1U2VndYVUFDNm9XSU4tb0lxMEgwZHRTLU0tb1hZeFRPc042UVRGbmhGT19iTnJveFcyTTVOSW8zZw?oc=5",
-      "outlet": "CoinDesk",
-      "outletUrl": "https://www.coindesk.com",
-      "published": "2026-10-20T13:35:08.000Z",
-      "en": "Kazakhstan court bars Coinbase, five others from unlicensed crypto services in Astana International Financial Centre",
-      "about": [
-        "KZ",
-        "US"
-      ]
-    },
-    {
-      "title": "1856 Sketches Lead to Rediscovery of Petroglyphs in Kazakhstan",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOd0lwZXZDN2J0d2ZnTnYyVnNkTThCdnQxMXV2MnVqVWZ3dmxoSmhCMDdHQm83NHhMUG9BSS1ndjNoX1JpVTg1X0d0R2pVUWdlS3lOREhYR1FtWHZDZXZCM19pdk9xcTFlUE9xQUoxRmdjbTRzYXlwQURXODEzZGM0U1c5WDFmbVBSVW9N?oc=5",
-      "outlet": "The Times Of Central Asia",
-      "outletUrl": "https://timesca.com",
-      "published": "2026-10-20T22:34:42.000Z",
-      "en": "1856 Sketches Lead to Rediscovery of Petroglyphs in Kazakhstan",
+      "title": "Предсказуемые тарифы и новые заводы: зачем Казахстан меняет правила переработки меди",
+      "url": "https://informburo.kz/novosti/predskazuemye-tarify-i-novye-zavody-zacem-kazaxstan-meniaet-pravila-pererabotki-medi",
+      "outlet": "Informburo.kz",
+      "outletUrl": null,
+      "published": "2026-10-20T08:45:00.000Z",
+      "en": "Predictable tariffs and new plants: why Kazakhstan is changing copper processing rules",
       "about": [
         "KZ"
       ]
     },
     {
-      "title": "Kazakhstan’s Rybakina Extends Lead at Top of WTA Rankings",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOa0NQazV4QjQ2WWwxa1JPTmdiZV9DTUFJXzV6QnpNMmVhazV3T3dGOTM5dzNwci1aN0dGMjY3bHczLXJyV1VQMmJHVjFyT0VWb1pXTko2QVVlWGE0MC1ycnprRnRTV1BOcjh0WmlOUHFvRkNvWXFBSDJ6Y2Z5Vm9SeFFVWFNwOU1pWThLLTRvdUtnbHM?oc=5",
-      "outlet": "The Astana Times",
-      "outletUrl": "https://astanatimes.com",
-      "published": "2026-10-20T11:31:07.000Z",
-      "en": "Kazakhstan's Rybakina Extends Lead at Top of WTA Rankings",
+      "title": "Масштабная атака на VMmanager может затронуть Казахстан",
+      "url": "https://azh.kz/ru/news/view/133553",
+      "outlet": "Ак Жайык",
+      "outletUrl": null,
+      "published": "2026-10-20T08:02:00.000Z",
+      "en": "A large-scale attack on VMmanager may affect Kazakhstan",
       "about": [
         "KZ"
-      ]
-    },
-    {
-      "title": "Kazakhstan Drops Drug Charges Against Russian Rapper Navai",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONjh4ZXNQQkF3Y3o4bVNzVHhkV3MtWndVb2RWOFdRT2RJMldONXVNS2I2ZS1VM09VSVM4NTJTSkE4RDEwUlU4S1lyNWk2MjJTS0g2dDh5ejgybUw1N0xXMGpobGotdngxU1hVUmFybllxcExFQ1FFQkp0X3Bfbk1qS0RZOVFIT1NZTXViWkNTSHhTRXZfLXBjTU50b0l2TTZ5RThFUTZFeUJta1E?oc=5",
-      "outlet": "The Moscow Times",
-      "outletUrl": "https://www.themoscowtimes.com",
-      "published": "2026-10-20T10:21:51.000Z",
-      "en": "Kazakhstan Drops Drug Charges Against Russian Rapper Navai",
-      "about": [
-        "KZ",
-        "RU"
-      ]
-    },
-    {
-      "title": "Kazakhstan Hasn't Seen A Wild Horse Foal Born In 200 Years, Until Botai And Tumar Arrived",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaElYanNsdlNzOEhXWk9MNC10d3dMZEE5U3gyci1LVmo2ZmFhaTVqZnYzN2hydmtzSGNRdVdWQUR6c2NJMW9yd2dpZWhzZ1doNV9rWHV6V3d5WlpBUGVnZ2dOV05uZXl5SHlYQXZPNTZfcktyYllGSkxtSjlSTkRZcTktT1J6NGZzUXQyWHhKZkhSenMxTlZxTzRLR2k1MVA5eUZmQjRxaFRkVnFFaXZxTEVTcFNpWlVZdnFVdWlTcFExNUsx?oc=5",
-      "outlet": "A-Z Animals",
-      "outletUrl": "https://a-z-animals.com",
-      "published": "2026-10-20T05:59:53.000Z",
-      "en": "Kazakhstan Hasn't Seen A Wild Horse Foal Born In 200 Years, Until Botai And Tumar Arrived",
-      "about": [
-        "KZ"
-      ]
-    },
-    {
-      "title": "Kazakhstan seeds $20M fund-of-funds under World Bank AI programme",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcUNIRC1LYlUwUW9wYldXTDJEcmpjMnF3ZDNTQTFQVW5PbG1rVWcwbmlfQ2RrTUw4cFQxRFhVVkxpQXlBZk91eTZGUHlwMVlLZ3RQdG1mTjR6VjZkUHFNNTBJWWEzVk1LSFd4TkY4dDJTVzVZMGhFWGpmdW5tSFE4NWV6d1Q5bnpFQm9SYm1ISHQ2c0pOMWJrakxBZ2pBNnc?oc=5",
-      "outlet": "Dealroom",
-      "outletUrl": "https://app.dealroom.co",
-      "published": "2026-10-20T21:27:21.000Z",
-      "en": "Kazakhstan seeds $20M fund-of-funds under World Bank AI programme",
-      "about": [
-        "KZ"
-      ]
-    },
-    {
-      "title": "Kazakhstan, Serbia Move to Strengthen Defense Ties Under New Agreement",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeThZQl81am5IallRbVBVaG9EeXpQQkhIRTlEOTM2bE5UNUtnaHM4MWcwZ3NLQkltWXNLeWZpM3Rodk9ENV96YzN6NDc5X0tyUVRWcVYzckU3UDY4RHBXRmc2X1FjdGZsM0NJdV8ySk5mNmU3NnpwMzU3QWtPYmhhb3JWQmZkY01DYkx0VFJCRkVDVm5fdEJtTC1nd1dOQmhyTkVYUE1FWGxVNk5hZDFoWFZVSUpCM0JwYWFpNQ?oc=5",
-      "outlet": "caspiannews.com",
-      "outletUrl": "https://caspiannews.com",
-      "published": "2026-10-20T21:32:52.000Z",
-      "en": "Kazakhstan, Serbia Move to Strengthen Defense Ties Under New Agreement",
-      "about": [
-        "KZ",
-        "RS"
-      ]
-    },
-    {
-      "title": "Kazakhstan Faces Shortages of Doctors, Engineers and Skilled Workers",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbEM5SmZkSjYxNm1xQndZaTBPSDljWWc3WloycnlLM1V6RXhIMFBNYW5wLXpjMURyYlJHZWc1VUdLTGNTaVJSSVBFSnJFR2xTR2NfZGQtQlVucmJFak0wNWdaNm5QSWJ2WjB2RTUzNG12dUJxQWJvS29fY0tSNktSMDZxellfVHZsVkZFczM2THpXOWVMQ1lLdmFHUmZyNGZyYUdVeA?oc=5",
-      "outlet": "Caspian Post",
-      "outletUrl": "https://caspianpost.com",
-      "published": "2026-10-20T16:53:59.000Z",
-      "en": "Kazakhstan Faces Shortages of Doctors, Engineers and Skilled Workers",
-      "about": [
-        "KZ"
-      ]
-    },
-    {
-      "title": "Iran Pushes Central Asia Trade Routes in Kazakhstan Talks",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5CbzF3U25EM2dNSG1rcXBiQXk5N1c2bDFScklhYTNrc1hPS3A4TTJlU0pGWWg4SGJjZHJBOFRVV2NCcFhjTW12c3hKd2FkNDktRmc?oc=5",
-      "outlet": "Financial Tribune",
-      "outletUrl": "https://financialtribune.com",
-      "published": "2026-10-20T13:28:19.000Z",
-      "en": "Iran Pushes Central Asia Trade Routes in Kazakhstan Talks",
-      "about": [
-        "KZ",
-        "IR"
       ]
     }
   ]

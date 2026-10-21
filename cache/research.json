@@ -103,7 +103,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-cyclone-tc-1001335": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -211,34 +211,33 @@
     "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001338": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-21T05:12:20.084Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Super Typhoon Champi (Typhoon No. 30) started on 14 October 2026. On 17-18 October it missed Guam narrowly but still affected southern Guam and other islands, tearing off roofs and knocking down trees. Several Northern Mariana Islands communities lost electricity and water, and Red Cross shelters were opened. As of 20 October the storm was forecast to reach violent strength and turn north, possibly near Japan's Ishigaki Island. No effects in Japan have been reported.",
+    "summary": "Super Typhoon Champi (Typhoon No. 30) began on 14 October 2026. As of 21 October it was still over the open Pacific, with no landfall reported. The JMA expects it to pass near the Sakishima Islands, Japan, between 23 and 24 October. In Guam and the Northern Mariana Islands it damaged homes, knocked down trees and caused power and water losses. More than 1,000 people took refuge in 15 shelters.",
     "ongoing": true,
     "places": [],
     "figures": [
       {
-        "label": "People in shelters",
-        "value": "over 1,000 residents",
-        "sourceName": "archyde.com",
-        "sourceUrl": "https://www.archyde.com/american-red-cross-responds-to-super-typhoon-champi-and-hurricane-isaias/"
+        "label": "Homes",
+        "value": "as many as 100 homes",
+        "sourceName": "redcross.org",
+        "sourceUrl": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html"
       },
       {
-        "label": "Homes destroyed or severely damaged",
-        "value": "up to 100 homes",
-        "sourceName": "archyde.com",
-        "sourceUrl": "https://www.archyde.com/american-red-cross-responds-to-super-typhoon-champi-and-hurricane-isaias/"
-      }
-    ],
-    "donation": [
+        "label": "Sheltered",
+        "value": "more than 1,000 people",
+        "sourceName": "redcross.org",
+        "sourceUrl": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html"
+      },
       {
-        "url": "https://www.redcross.org/",
-        "org": "American Red Cross",
-        "kind": "society",
-        "note": "US Red Cross general page with donate prompt for Typhoon Champi; not a dedicated appeal."
+        "label": "Wells not operating",
+        "value": "as many as 170 wells",
+        "sourceName": "redcross.org",
+        "sourceUrl": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html"
       }
     ],
+    "donation": [],
     "sources": [
       {
         "name": "wxtech.weathernews.com",
@@ -246,28 +245,28 @@
         "title": "Typhoon CHAMPI: Forecast to Intensify to Violent Strength and Approach Taiwan - Weathernews"
       },
       {
-        "name": "taipeitimes.com",
-        "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/20/2003866289",
-        "title": "Typhoon Champi to turn away from Taiwan, will still bring heavy rain - Taipei Times"
-      },
-      {
-        "name": "theepochtimes.com",
-        "url": "https://www.theepochtimes.com/us/typhoon-champi-triggers-emergency-declarations-for-guam-northern-mariana-islands-6105773",
-        "title": "Typhoon Champi Triggers Emergency Declarations for Guam, Northern Mariana Islands"
-      },
-      {
-        "name": "yahoo.com",
-        "url": "https://yahoo.com/news/weather-news/articles/super-typhoon-champi-damages-guam-162204938.html",
-        "title": "Super Typhoon Champi damages Guam, bound for Taiwan"
+        "name": "pasquines.us",
+        "url": "https://pasquines.us/2026/10/20/super-typhoon-champi-becomes-the-third-typhoon-to-affect-guam-and-the-northern-mariana-islands-in-six-months",
+        "title": "Super Typhoon Champi becomes the third typhoon to affect Guam and the Northern Mariana Islands in six months - Pasquines"
       },
       {
         "name": "archyde.com",
         "url": "https://www.archyde.com/american-red-cross-responds-to-super-typhoon-champi-and-hurricane-isaias/",
         "title": "American Red Cross Responds to Super Typhoon Champi and Hurricane Isaias"
+      },
+      {
+        "name": "redcross.org",
+        "url": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html",
+        "title": "Red Cross Responding to Two Major Storms Affecting Communities More Than 8,200 Miles Apart"
+      },
+      {
+        "name": "yahoo.com",
+        "url": "https://www.yahoo.com/news/weather-news/articles/super-typhoon-champi-damages-guam-162204938.html",
+        "title": "Super Typhoon Champi damages Guam, bound for Taiwan"
       }
     ],
     "membersHash": "eonet,gdacs|JP#afb26aec",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -287,7 +286,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,NO,PL,RO,RS,RU,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -427,7 +426,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -477,7 +476,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,DJ,ER,ET,KE,NE,NG,SD,SO,SS,TD#d3aabe2f",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -497,7 +496,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -528,10 +527,10 @@
     "membersHash": "gdacs,usgs|VU#c13bf69f"
   },
   "gdacs-earthquake-eq-1570339": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-21T05:12:20.084Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 7.5 earthquake, with estimates of 7.6 from other sources, struck near Pitaloza Arriba, Panama, on 9 October 2026. It damaged homes, schools and buildings in Los Santos, Herrera, Coclé, Veraguas and Colón. Sinaproc reports one death and 27 injured. Damage assessments and humanitarian assistance continue, and aftershocks continue.",
+    "summary": "A magnitude 7.7 earthquake (USGS; Sinaproc gave 7.5) struck Panama on 9 October 2026, with its epicentre near Pitaloza Arriba in Herrera province. Damage was concentrated in Veraguas, Los Santos and Coclé. Sinaproc reports 27 minor injuries and 188 damaged schools. A magnitude 4.6 aftershock was recorded on 20 October, and a green rain alert covers three affected districts. Emergency operations centres remain active.",
     "ongoing": true,
     "places": [
       {
@@ -539,128 +538,191 @@
         "admin": "Los Santos",
         "country": "PA",
         "kind": "town",
-        "impact": "1,613 homes affected; 12 shelters"
+        "impact": "Epicentre area; Sinaproc command post; milk stranded on farms"
       },
       {
         "name": "Penonomé",
         "admin": "Coclé",
         "country": "PA",
         "kind": "city",
-        "impact": "governorship building partly collapsed"
-      },
-      {
-        "name": "Mariato",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "town",
-        "impact": "16 shelters; power, water, internet outages"
-      },
-      {
-        "name": "Cañazas",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "district",
-        "impact": "landslides damaged a house"
-      },
-      {
-        "name": "Los Santos",
-        "country": "PA",
-        "kind": "region",
-        "impact": "epicentre area; one death"
-      },
-      {
-        "name": "Herrera",
-        "country": "PA",
-        "kind": "region",
-        "impact": "498 homes affected; 32 landslides"
-      },
-      {
-        "name": "Coclé",
-        "country": "PA",
-        "kind": "region",
-        "impact": "1,052 homes affected; 17 injured"
+        "impact": "Historic cathedral and regional government building damaged"
       },
       {
         "name": "Veraguas",
         "country": "PA",
         "kind": "region",
-        "impact": "614 homes affected; utilities outages"
+        "impact": "Damage concentrated; power and telecom outages"
       },
       {
-        "name": "Colón",
+        "name": "Mariato",
+        "admin": "Veraguas",
         "country": "PA",
-        "kind": "region",
-        "impact": "29 settlements affected; three hospitals damaged"
+        "kind": "district",
+        "impact": "Damage concentrated; green rain alert"
       },
       {
-        "name": "Bocas del Toro",
+        "name": "Soná",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Damage concentrated; green rain alert"
+      },
+      {
+        "name": "Herrera",
         "country": "PA",
         "kind": "region",
-        "impact": "119 people affected; 25 schools damaged"
+        "impact": "Epicentre area"
+      },
+      {
+        "name": "Isla Cañas",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Temporary shelter for evacuated people"
+      },
+      {
+        "name": "Panama City",
+        "country": "PA",
+        "kind": "city",
+        "impact": "Tremors; people evacuated into streets; no damage reported"
       }
     ],
     "figures": [
       {
-        "label": "Deaths",
-        "value": "1",
-        "sourceName": "noticiassin.com",
-        "sourceUrl": "https://noticiassin.com/mundo/america/2026/10/19/terremoto-de-7-5-en-panama-deja-un-fallecido-y-27-heridos-2147831"
-      },
-      {
         "label": "Injured",
-        "value": "27",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-15/"
+        "value": "27 minor injuries",
+        "sourceName": "ellitoral.com",
+        "sourceUrl": "https://www.ellitoral.com/internacionales/sismo-panama-sinaproc-tonosi-terremoto-cocle-lossantos_0_q82uQVQQS8.html"
       },
       {
-        "label": "Homes damaged",
-        "value": "2,081 total loss; 5,137 moderate or partial; 1,185 minor",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-15/"
-      },
-      {
-        "label": "Homes evaluated",
-        "value": "8,920 homes; 29,243 people registered",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/sinaproc-mantiene-las-evaluaciones-de-danos-y-la-asistencia-humanitaria-tras-el-sismo/"
-      },
-      {
-        "label": "People assisted",
-        "value": "22,400 people",
+        "label": "People in shelters",
+        "value": "3,827 people",
         "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/panama/2026/10/17/el-239-de-las-viviendas-afectadas-por-el-terremoto-en-panama-presenta-danos-totales/"
+        "sourceUrl": "https://infobae.com/panama/2026/10/20/fuertes-lluvias-golpean-zonas-afectadas-por-el-terremoto-en-panama-y-obligan-a-declarar-alerta-verde"
+      },
+      {
+        "label": "Homes with total loss",
+        "value": "506 families",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-9/"
+      },
+      {
+        "label": "Homes assessed",
+        "value": "more than 9,500 homes",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://infobae.com/panama/2026/10/20/fuertes-lluvias-golpean-zonas-afectadas-por-el-terremoto-en-panama-y-obligan-a-declarar-alerta-verde"
+      },
+      {
+        "label": "Schools damaged",
+        "value": "188 schools",
+        "sourceName": "ellitoral.com",
+        "sourceUrl": "https://www.ellitoral.com/internacionales/sismo-panama-sinaproc-tonosi-terremoto-cocle-lossantos_0_q82uQVQQS8.html"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://donate.unhcr.org/int/en/panama-earthquake",
+        "org": "UNHCR",
+        "kind": "un",
+        "note": "UNHCR appeal page for the Panama earthquake"
+      }
+    ],
+    "sources": [
+      {
+        "name": "igopanama.com",
+        "url": "https://www.igopanama.com/blog/about-panama-important-news/panama-earthquake-help-guide-emergency-contacts-housing-aid-and-how-to-help",
+        "title": "Panama earthquake help guide: emergency contacts, housing aid and how to help"
+      },
+      {
+        "name": "infobae.com",
+        "url": "https://infobae.com/panama/2026/10/20/fuertes-lluvias-golpean-zonas-afectadas-por-el-terremoto-en-panama-y-obligan-a-declarar-alerta-verde",
+        "title": "Fuertes lluvias golpean zonas afectadas por el terremoto en Panamá y obligan a declarar alerta verde - Infobae"
+      },
+      {
+        "name": "cbsnews.com",
+        "url": "https://www.cbsnews.com/news/panama-earthquake-tsunami-threat/",
+        "title": "Panama struck by 2 powerful earthquakes, U.S. Geological Survey says - CBS News"
+      }
+    ],
+    "membersHash": "gdacs,ifrc,usgs|CR,PA#24cf2828",
+    "seen": "2026-10-21T05:12:20.084Z"
+  },
+  "gdacs-earthquake-eq-1571917": {
+    "at": "2026-10-21T05:12:20.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A magnitude 6.9 earthquake struck about 76 km northeast of Ozernovskiy on the Kamchatka Peninsula, Russia, on 16 October 2026, at a depth of about 143 km per USGS. Russia's Ministry of Emergency Situations reported tremors felt in several Kamchatka Krai locations, with no injuries, infrastructure damage or tsunami warning. The latest source found is dated 17 October 2026, and no reports of continuing effects from 18 to 21 October were found.",
+    "ongoing": false,
+    "places": [
+      {
+        "name": "Petropavlovsk-Kamchatsky",
+        "admin": "Kamchatka Krai",
+        "country": "RU",
+        "kind": "city",
+        "impact": "tremors felt"
+      },
+      {
+        "name": "Ust-Kamchatsky",
+        "admin": "Kamchatka Krai",
+        "country": "RU",
+        "kind": "town",
+        "impact": "tremors felt"
+      },
+      {
+        "name": "Aleutsky",
+        "admin": "Kamchatka Krai",
+        "country": "RU",
+        "kind": "district",
+        "impact": "tremors felt"
+      },
+      {
+        "name": "Vilyuchinsk",
+        "admin": "Kamchatka Krai",
+        "country": "RU",
+        "kind": "town",
+        "impact": "tremors felt"
+      },
+      {
+        "name": "Yelizovsky",
+        "admin": "Kamchatka Krai",
+        "country": "RU",
+        "kind": "district",
+        "impact": "tremors felt"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Shaking estimate, moderate",
+        "value": "14,000 people",
+        "sourceName": "watchers.news",
+        "sourceUrl": "https://watchers.news/2026/10/16/strong-m6-9-earthquake-hits-kamchatka-peninsula-russia/"
+      },
+      {
+        "label": "Shaking estimate, light",
+        "value": "214,000 people",
+        "sourceName": "watchers.news",
+        "sourceUrl": "https://watchers.news/2026/10/16/strong-m6-9-earthquake-hits-kamchatka-peninsula-russia/"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "sinaproc.gob.pa",
-        "url": "https://www.sinaproc.gob.pa/sinaproc-mantiene-las-evaluaciones-de-danos-y-la-asistencia-humanitaria-tras-el-sismo/",
-        "title": "Sinaproc mantiene las evaluaciones de daños y la asistencia humanitaria tras el sismo - Sinaproc"
+        "name": "bernama.com",
+        "url": "https://www.bernama.com/en/world/news.php?id=2621296",
+        "title": "BERNAMA - Magnitude 6.9 Earthquake Strikes Russia's Kamchatka Peninsula"
       },
       {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/panama/2026/10/17/el-239-de-las-viviendas-afectadas-por-el-terremoto-en-panama-presenta-danos-totales/",
-        "title": "El 23.9% de las viviendas afectadas por el terremoto en Panamá presenta daños totales - Infobae"
+        "name": "news.az",
+        "url": "https://news.az/news/69-magnitude-quake-strikes-russia-s-kamchatka",
+        "title": "6.9-magnitude quake strikes Russia's Kamchatka"
       },
       {
-        "name": "unocha.org",
-        "url": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315",
-        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 02 (as of 11 October 2026, 13:15)"
-      },
-      {
-        "name": "sinaproc.gob.pa",
-        "url": "https://www.sinaproc.gob.pa/comunicado-oficial-11/",
-        "title": "COMUNICADO OFICIAL # 11 - Sinaproc"
-      },
-      {
-        "name": "noticiassin.com",
-        "url": "https://noticiassin.com/mundo/america/2026/10/19/terremoto-de-7-5-en-panama-deja-un-fallecido-y-27-heridos-2147831",
-        "title": "Terremoto de 7.5 en Panamá deja un fallecido, 27 heridos y daños en cientos de edificios"
+        "name": "watchers.news",
+        "url": "https://watchers.news/2026/10/16/strong-m6-9-earthquake-hits-kamchatka-peninsula-russia/",
+        "title": "Strong M6.9 earthquake hits Kamchatka Peninsula, Russia - The Watchers"
       }
     ],
-    "membersHash": "gdacs,ifrc,usgs|CR,PA#988157ed",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "membersHash": "gdacs,usgs|RU#d9831494"
   },
   "gdacs-earthquake-eq-1572503": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -694,6 +756,90 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8"
+  },
+  "gdacs-earthquake-eq-1572693": {
+    "at": "2026-10-21T05:12:20.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A magnitude 6.3 earthquake struck about 200 km west-northwest of Port-Olry, northern Vanuatu, on 20 October 2026 at 04:20 UTC. USGS placed the depth at 10 km. The Pacific Tsunami Warning Centre reported no tsunami threat. Initial coverage gave no casualties or damage, and no further impact details had been published as of 21 October 2026.",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "newsofbahrain.com",
+        "url": "https://www.newsofbahrain.com/en/article/63magnitude-earthquake-strikes-off-vanuatu-no-tsunami-threat",
+        "title": "6.3-magnitude earthquake strikes off Vanuatu, no tsunami threat"
+      },
+      {
+        "name": "news.az",
+        "url": "https://news.az/news/magnitude-63-earthquake-strikes-off-vanuatu",
+        "title": "Magnitude 6.3 earthquake strikes off Vanuatu"
+      }
+    ],
+    "membersHash": "gdacs,usgs|VU#e4ddadc8",
+    "seen": "2026-10-21T05:12:20.084Z"
+  },
+  "gdacs-flood-fl-1103888": {
+    "at": "2026-10-21T05:12:20.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "GDACS records a flood in the United States that began 19 May 2026. Its event page covers 25–27 Sep 2026, and its impact assessment, dated 28 Sep 2026, rates the humanitarian impact as low. GDACS names New Jersey places including Jersey Shore and Atlantic City and reports 0 deaths. The feed's coordinates point to Long Island Sound, so the location is unresolved, and no news report matched the event. The notes do not say whether the flood has ended.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Jersey Shore",
+        "admin": "New Jersey",
+        "country": "US",
+        "kind": "region",
+        "impact": "30 displaced, 30 rescued"
+      },
+      {
+        "name": "Atlantic City",
+        "admin": "New Jersey",
+        "country": "US",
+        "kind": "city",
+        "impact": "Named in GDACS impact assessment"
+      },
+      {
+        "name": "West Atlantic City",
+        "admin": "New Jersey",
+        "country": "US",
+        "kind": "district",
+        "impact": "9 rescued"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "0",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://www.gdacs.org/Floods/report.aspx?eventid=1103888&episodeid=103&eventtype=FL&detail=true"
+      },
+      {
+        "label": "Displaced (Jersey Shore)",
+        "value": "30 people",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://www.gdacs.org/Floods/report.aspx?eventid=1103888&episodeid=103&eventtype=FL&detail=true"
+      },
+      {
+        "label": "Rescued (Jersey Shore)",
+        "value": "30 people",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://www.gdacs.org/Floods/report.aspx?eventid=1103888&episodeid=103&eventtype=FL&detail=true"
+      },
+      {
+        "label": "Rescued (West Atlantic City)",
+        "value": "9 people",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://www.gdacs.org/Floods/report.aspx?eventid=1103888&episodeid=103&eventtype=FL&detail=true"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|US#2b36b9e5",
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -761,7 +907,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -901,7 +1047,7 @@
       }
     ],
     "membersHash": "gdacs|EC#73720892",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1066,7 +1212,7 @@
       }
     ],
     "membersHash": "gdacs|TH#75720bb8",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104209": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1157,7 +1303,179 @@
       }
     ],
     "membersHash": "gdacs|HN#37b0b7ff",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
+  },
+  "gdacs-flood-fl-1104216": {
+    "at": "2026-10-21T05:12:20.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Heavy rain caused flooding and landslides in Rio de Janeiro State, Brazil, in early October 2026, according to a GDACS report covering 5 to 7 October 2026. GDACS rates the event as green alert, meaning low humanitarian impact. The notes do not report whether the flood and its direct effects are still ongoing.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Rio de Janeiro State",
+        "country": "BR",
+        "kind": "region",
+        "impact": "flooding and landslides"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "0",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104216"
+      },
+      {
+        "label": "Displaced",
+        "value": "56",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104216"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "gdacs.org",
+        "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104216",
+        "title": "Overall Green Flood in Brazil from 05 Oct 2026 01:00 UTC to 07 Oct 2026 01:00 UTC"
+      }
+    ],
+    "membersHash": "gdacs|BR#3eb3019b",
+    "seen": "2026-10-21T05:12:20.084Z"
+  },
+  "gdacs-flood-fl-1104217": {
+    "at": "2026-10-21T05:12:20.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Heavy rain caused flash flooding, mudslides, river overflows and preventive evacuations in the Santiago Metropolitan Region of Chile, with the main flooding reported on 8 October 2026. As of 20 October the region remained under red alert, and more rain was forecast for 21 October. Some homes were damaged and people were sheltered in other regions. The sources reviewed for 20 October recorded no deaths in the Santiago flooding.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Las Condes",
+        "admin": "Santiago Metropolitan Region",
+        "country": "CL",
+        "kind": "district",
+        "impact": "Mudslides, flooded homes, evacuations"
+      },
+      {
+        "name": "Talagante",
+        "admin": "Santiago Metropolitan Region",
+        "country": "CL",
+        "kind": "town",
+        "impact": "Preventive evacuation after Mapocho overflow"
+      },
+      {
+        "name": "Puente Alto",
+        "admin": "Santiago Metropolitan Region",
+        "country": "CL",
+        "kind": "district",
+        "impact": "Valle Hermoso and El Sueño de Todos evacuating"
+      },
+      {
+        "name": "Rancagua",
+        "admin": "O'Higgins Region",
+        "country": "CL",
+        "kind": "city",
+        "impact": "60 homes under damage assessment"
+      },
+      {
+        "name": "Recoleta",
+        "admin": "Santiago Metropolitan Region",
+        "country": "CL",
+        "kind": "district",
+        "impact": "Three people affected"
+      },
+      {
+        "name": "Santiago Metropolitan Park",
+        "admin": "Santiago Metropolitan Region",
+        "country": "CL",
+        "kind": "site",
+        "impact": "Landslide reported"
+      },
+      {
+        "name": "El Monte",
+        "admin": "Santiago Metropolitan Region",
+        "country": "CL",
+        "kind": "town",
+        "impact": "Camp under preventive evacuation watch"
+      },
+      {
+        "name": "Maipú",
+        "admin": "Santiago Metropolitan Region",
+        "country": "CL",
+        "kind": "district",
+        "impact": "Waterlogging, minor impact"
+      },
+      {
+        "name": "Padre Hurtado",
+        "admin": "Santiago Metropolitan Region",
+        "country": "CL",
+        "kind": "town",
+        "impact": "Waterlogging, minor impact"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Injured",
+        "value": "at least six",
+        "sourceName": "euronews.com",
+        "sourceUrl": "https://www.euronews.com/2026/10/09/six-injured-as-heavy-rains-batter-chiles-capital-sweeping-away-cars-and-flooding-homes"
+      },
+      {
+        "label": "Rescued or evacuated",
+        "value": "more than 1,000 people",
+        "sourceName": "wltreport.com",
+        "sourceUrl": "https://wltreport.com/2026/10/10/cars-violently-swept-away-flash-floods-chile-capital/"
+      },
+      {
+        "label": "Sheltered (Metropolitan Region)",
+        "value": "103 people",
+        "sourceName": "eldinamo.cl",
+        "sourceUrl": "https://www.eldinamo.cl/pais/2026/10/20/senapred-entrega-balance-por-sistema-frontal-alerta-roja-en-la-rm-y-nuevas-lluvias-en-camino/"
+      },
+      {
+        "label": "Homes damaged (nationwide)",
+        "value": "26 homes",
+        "sourceName": "paho.org",
+        "sourceUrl": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-14-october-2026"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "biobiochile.cl",
+        "url": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/20/balance-senapred-por-frente-en-desarrollo-clases-confirmadas-rm-en-alerta-roja-y-fichas-fibe.shtml",
+        "title": "Balance Senapred por frente \"en desarrollo\": Clases confirmadas, RM en Alerta Roja y fichas FIBE"
+      },
+      {
+        "name": "eldinamo.cl",
+        "url": "https://www.eldinamo.cl/pais/2026/10/20/senapred-entrega-balance-por-sistema-frontal-alerta-roja-en-la-rm-y-nuevas-lluvias-en-camino/",
+        "title": "Senapred entrega balance por sistema frontal: alerta roja en la RM y nuevas lluvias en camino"
+      },
+      {
+        "name": "paho.org",
+        "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-14-october-2026",
+        "title": "Natural Hazards Monitoring - 14 October 2026 - PAHO/WHO"
+      },
+      {
+        "name": "euronews.com",
+        "url": "https://www.euronews.com/2026/10/09/six-injured-as-heavy-rains-batter-chiles-capital-sweeping-away-cars-and-flooding-homes",
+        "title": "Six injured as heavy rains batter Chile's capital, sweeping away cars and flooding homes"
+      },
+      {
+        "name": "estapasando.cl",
+        "url": "https://estapasando.cl/nacional/gobierno-confirma-clases-pese-a-alerta-roja-en-la-rm/",
+        "title": "Gobierno confirma clases pese a alerta roja en la RM"
+      },
+      {
+        "name": "biobiochile.cl",
+        "url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/20/declaran-alerta-roja-en-toda-la-region-metropolitana-por-llegada-de-intensas-lluvias-con-granizos.shtml",
+        "title": "Declaran Alerta Roja en toda la región Metropolitana por llegada de intensas lluvias con granizos"
+      }
+    ],
+    "membersHash": "gdacs,news|CL#74420222",
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1246,7 +1564,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104220": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1349,7 +1667,7 @@
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104227": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1445,7 +1763,7 @@
       }
     ],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104235": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1458,7 +1776,89 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
+  },
+  "gdacs-flood-fl-1104236": {
+    "at": "2026-10-21T05:12:20.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Since 15 October 2026, rain and storms have caused flooding and fallen trees in El Salvador, with local damage reported in several places including San Rafael Cedros, Lourdes and San Francisco Gotera. Reports on 17 and 18 October described flooding and material losses, and the environment ministry forecast more storms on 19 October. No large-scale emergency has been reported, and no report declares the event over.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "San Rafael Cedros",
+        "admin": "Cuscatlán",
+        "country": "SV",
+        "kind": "district",
+        "impact": "stream overflowed; water partly covered two vehicles"
+      },
+      {
+        "name": "Lourdes",
+        "admin": "La Libertad",
+        "country": "SV",
+        "kind": "town",
+        "impact": "flooding caused material losses"
+      },
+      {
+        "name": "La Ilusión",
+        "admin": "San Vicente",
+        "country": "SV",
+        "kind": "site",
+        "impact": "river overflowed"
+      },
+      {
+        "name": "San Francisco Gotera",
+        "admin": "Morazán",
+        "country": "SV",
+        "kind": "town",
+        "impact": "market flooded"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Evacuated",
+        "value": "one family",
+        "sourceName": "elsalvador.com",
+        "sourceUrl": "https://www.elsalvador.com/noticias/nacional/inundaciones-evacuaciones-tormentas-lluvias/1299227/2026/"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|SV#aeb82f19",
+    "seen": "2026-10-21T05:12:20.084Z"
+  },
+  "gdacs-flood-fl-1104237": {
+    "at": "2026-10-21T05:12:20.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Flooding and rain damage in Nicaragua from 16 October 2026, reported in Puerto Cabezas (Bilwi) on the North Caribbean Coast and in Managua. Reports describe flooded neighbourhoods, fallen trees, a collapsed vehicle bridge, a vehicle swept away, and a suspended baseball final. The latest report found is dated 18 October. Whether flooding continued afterwards is not confirmed. The sources found give no casualty or displacement figures.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Puerto Cabezas",
+        "admin": "North Caribbean Coast Autonomous Region",
+        "country": "NI",
+        "kind": "city",
+        "impact": "Thelma Morales neighbourhood flooded, trees fell"
+      },
+      {
+        "name": "Managua",
+        "country": "NI",
+        "kind": "city",
+        "impact": "Drainage failed, homes entered, vehicle swept away"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "100noticias.tv",
+        "url": "https://100noticias.tv/nacionales/150114-lluvias-inundaciones-bilwi-managua/",
+        "title": "Lluvias inundan barrios de Managua y del Caribe Norte"
+      }
+    ],
+    "membersHash": "gdacs|NI#adb82d86",
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104238": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1471,7 +1871,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1596,7 +1996,7 @@
       }
     ],
     "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1845,7 +2245,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1913,7 +2313,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-volcano-vo-1000152": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2005,7 +2405,19 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
+  },
+  "gdacs-wildfire-wf-1032556": {
+    "at": "2026-10-21T05:12:20.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": false,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#3a337967"
   },
   "gdacs-wildfire-wf-1032639": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2029,7 +2441,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2042,7 +2454,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2099,7 +2511,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#fbe9d9be",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2123,7 +2535,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2154,7 +2566,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2276,7 +2688,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2300,7 +2712,7 @@
       }
     ],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032727": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2391,7 +2803,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#83527d05",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2420,7 +2832,7 @@
       }
     ],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2433,7 +2845,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2446,7 +2858,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2465,7 +2877,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2489,7 +2901,7 @@
       }
     ],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2502,7 +2914,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032857": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2515,7 +2927,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -2534,7 +2946,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "gdacs-wildfire-wf-1032920": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2547,104 +2959,79 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-earthquake-7990": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-21T05:12:20.084Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Two strong earthquakes, magnitudes 7.2 and 7.5, struck Venezuela's coast on 24 June 2026, with epicentres near Morón in Carabobo State. Thousands of people died, according to World Vision. More than 1,400 aftershocks were reported in July. The Venezuelan Red Cross and IFRC are responding. The most recent source is dated 21 August 2026.",
+    "searches": 4,
+    "summary": "Two earthquakes struck northern Venezuela on 24 June 2026. Reported epicentres are near Morón (Carabobo) and Yaracuy, with the main quake reported offshore from La Guaira. The official tally reached 6,301 dead by 10 August 2026, when rubble removal and building assessments were under way. The latest report found is dated August 2026, and sources differ on epicentres and figures.",
     "ongoing": true,
     "places": [
+      {
+        "name": "La Guaira",
+        "country": "VE",
+        "kind": "region",
+        "impact": "Worst hit; about 80% of buildings collapsed"
+      },
+      {
+        "name": "Caraballeda",
+        "admin": "La Guaira",
+        "country": "VE",
+        "kind": "town",
+        "impact": "Over half of buildings at least 75% damage probability"
+      },
+      {
+        "name": "Caracas",
+        "admin": "Distrito Capital",
+        "country": "VE",
+        "kind": "city",
+        "impact": "Buildings flattened, roads collapsed, airport closed"
+      },
       {
         "name": "Morón",
         "admin": "Carabobo",
         "country": "VE",
         "kind": "town",
-        "impact": "epicentre area"
+        "impact": "Near epicentre"
+      },
+      {
+        "name": "Carabobo",
+        "country": "VE",
+        "kind": "region",
+        "impact": "Epicentre near Morón"
       },
       {
         "name": "Yaracuy",
         "country": "VE",
         "kind": "region",
-        "impact": "epicentres in the region"
-      },
-      {
-        "name": "La Guaira",
-        "country": "VE",
-        "kind": "town",
-        "impact": "hardest hit"
-      },
-      {
-        "name": "Los Palos Grandes and Altamira",
-        "admin": "Distrito Capital",
-        "country": "VE",
-        "kind": "district",
-        "impact": "among the worst-affected parts of Caracas"
+        "impact": "First quake epicentre near Veroes"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "thousands",
-        "sourceName": "worldvision.org",
-        "sourceUrl": "https://www.worldvision.org/disaster-relief-news-stories/venezuela-earthquake-facts"
+        "value": "6,301",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/venezuela/2026/08/10/venezuela-elevo-a-6301-la-cifra-de-muertos-por-el-doble-terremoto-mientras-avanza-la-remocion-de-escombros/"
       },
       {
-        "label": "People targeted for assistance",
-        "value": "300,000 people",
-        "sourceName": "ifrc.org",
-        "sourceUrl": "https://www.ifrc.org/press-release/venezuela-earthquakes-ifrc-launches-emergency-appeal-assist-300000-people-and"
+        "label": "People treated in hospitals",
+        "value": "73,356 people",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/venezuela/2026/08/10/venezuela-elevo-a-6301-la-cifra-de-muertos-por-el-doble-terremoto-mientras-avanza-la-remocion-de-escombros/"
+      },
+      {
+        "label": "Displaced",
+        "value": "about 3,007",
+        "sourceName": "eltiempo.com",
+        "sourceUrl": "https://www.eltiempo.com/mundo/venezuela/venezuela-hoy-26-de-junio-tras-fuertes-terremotos-que-dejan-al-menos-235-muertos-reportan-replica-de-4-4-en-el-municipio-de-moron-estado-de-carabobo-3567205"
       }
     ],
-    "donation": [
-      {
-        "url": "https://www.ifrc.org/emergency/venezuela-earthquake-2026",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC emergency appeal page for the Venezuela earthquakes, CHF 50 million"
-      },
-      {
-        "url": "https://www.ifrc.org/document/emergency-appeal-venezuela-earthquake",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "Emergency appeal document for the Venezuela earthquake"
-      }
-    ],
-    "sources": [
-      {
-        "name": "redcross.org",
-        "url": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-movement-responds-to-venezuela-earthquakes.html",
-        "title": "Venezuela: Red Cross Movement Responds in the Aftermath of Back-to-Back Earthquakes"
-      },
-      {
-        "name": "worldvision.org",
-        "url": "https://www.worldvision.org/disaster-relief-news-stories/venezuela-earthquake-facts",
-        "title": "2026 Venezuela earthquakes: Fast facts, FAQs, and how to help"
-      },
-      {
-        "name": "mappr.co",
-        "url": "https://www.mappr.co/venezuela-earthquake-map/",
-        "title": "Mapped: Venezuela's Strongest Earthquake in Over a Century as M7.2 and M7.5 Hit the Caribbean Coast"
-      },
-      {
-        "name": "ifrc.org",
-        "url": "https://www.ifrc.org/press-release/venezuela-red-cross-responds-needs-emerge-aftermath-powerful-back-back-earthquakes",
-        "title": "Venezuela: Red Cross responds as needs emerge in the aftermath of powerful back-to-back earthquakes"
-      },
-      {
-        "name": "miyamotointernational.com",
-        "url": "https://miyamotointernational.com/venezuelas-strongest-earthquake-in-125-years-what-happened-on-june-24-2026/",
-        "title": "Venezuela’s Strongest Earthquake in 125 Years: What Happened, Where Damage Was Worst, and What Comes Next"
-      },
-      {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/6/25/venezuela-rocked-by-7-5-7-2-earthquakes-what-happened-and-what-we-know",
-        "title": "Venezuela rocked by 7.5, 7.2 earthquakes: What happened and what we know"
-      }
-    ],
+    "donation": [],
+    "sources": [],
     "membersHash": "ifrc|VE#4aa9fe04",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-earthquake-8055": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2744,7 +3131,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -2815,7 +3202,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -2926,7 +3313,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-flood-8025": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -3008,7 +3395,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-flood-8050": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -3082,7 +3469,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3156,7 +3543,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -3233,7 +3620,48 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
+  },
+  "ifrc-flood-8115": {
+    "at": "2026-10-21T05:12:20.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Floods in Likouala department, Republic of the Congo, started on 18 October 2026, mainly in Epena sub-prefecture. Per a 20 October interministerial meeting, Epena town is completely submerged and floods have reached 15 surrounding villages. More than 42,000 people are declared affected in Epena district, and the government is preparing a response. The event is ongoing.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Epena",
+        "admin": "Likouala",
+        "country": "CG",
+        "kind": "town",
+        "impact": "completely submerged by water"
+      },
+      {
+        "name": "Impfondo",
+        "admin": "Likouala",
+        "country": "CG",
+        "kind": "town",
+        "impact": "some neighbourhoods beginning to be affected"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People declared affected (Epena…",
+        "value": "42,847 people",
+        "sourceName": "fr.allafrica.com",
+        "sourceUrl": "https://fr.allafrica.com/stories/202610200705.html"
+      },
+      {
+        "label": "Households severely flooded (Epena…",
+        "value": "about 4,000 households",
+        "sourceName": "fr.allafrica.com",
+        "sourceUrl": "https://fr.allafrica.com/stories/202610200705.html"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "ifrc|CG#68e1ca24",
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3330,7 +3758,7 @@
       }
     ],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "ifrc-landslide-8111": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -3428,7 +3856,7 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "news-earthquake-earthquake-pa-32b0fa90e3": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3541,7 +3969,7 @@
       }
     ],
     "membersHash": "news|PA#887f142d",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "news-storm-storm-es-b2f07fd3a3": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3656,7 +4084,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "news|ES#b678eaa5",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   },
   "usgs-earthquake-us7000q1": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -3724,6 +4152,6 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-21T00:11:24.613Z"
+    "seen": "2026-10-21T05:12:20.084Z"
   }
 }
