@@ -166,9 +166,16 @@ export const STALE_PENALTY = 3;
 export const FUTURE_TOLERANCE_HOURS = 1;
 /**
  * Soft news (see Labels) loses this much: enough to put a phone review
- * from minutes ago below the day's news, which outlet counts cannot do,
- * since Google lists at most five outlets under any item. It still sits
- * above stale stories, so it shows, lower down.
+ * from minutes ago below Google's headlines up to about a day old, which
+ * outlet counts cannot do, since Google lists at most five outlets under
+ * any item. It also puts soft news below most of an edition's other
+ * current stories, so in practice it leaves the list: in 20 editions
+ * measured in October 2026 (120-166 stories each) no soft story ranked
+ * in the top 50, so none was among the 30 kept, nor in the shared
+ * stories built from them. It shows only where an edition has few current
+ * stories, as it still ranks above stale ones. At 1.5 a few soft stories
+ * would stay at the foot of some lists, but a fresh one would then
+ * outrank the lower headlines once they are about eight hours old.
  */
 export const SOFT_PENALTY = 2.5;
 

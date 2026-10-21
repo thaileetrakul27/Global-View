@@ -41,15 +41,31 @@ type Feed = { url: string; articles: Article[] } | null;
 
 /** After its headlines, Google's top-stories feed gives each section a block of this many items. */
 export const SECTION_BLOCK = 4;
+/**
+ * Where the Technology and Entertainment blocks can start: after the
+ * headlines and the World and Business blocks, which lead in every
+ * edition measured (20 in October 2026).
+ */
+export const SOFT_BLOCKS_START = HEADLINE_POSITIONS + 2 * SECTION_BLOCK;
+/** Past the Technology and Entertainment blocks come Sports, Science and Health, never labelled whole. */
+export const SOFT_BLOCKS_END = SOFT_BLOCKS_START + 2 * SECTION_BLOCK;
 
 /**
  * An edition's soft links: those in its TECHNOLOGY and ENTERTAINMENT
- * sections, and every link of a block of the top-stories feed that holds
- * one of them and no hard link. After the HEADLINE_POSITIONS headlines the
- * feed gives SECTION_BLOCK items to each section in turn (World, Business,
- * Technology, Entertainment, Sports, Science, Health; some editions skip
- * a few), and not every item of a block is in its section's own feed, so
- * the block is labelled whole.
+ * sections, and every link of a Technology or Entertainment block of the
+ * top-stories feed that holds one of them and no hard link.
+ *
+ * After the HEADLINE_POSITIONS headlines the feed gives SECTION_BLOCK
+ * items to each section in turn (World, Business, Technology,
+ * Entertainment, Sports, Science, Health; some editions skip a few). Not
+ * every item of a block is in its section's own feed, so a block is
+ * labelled whole, but only the two blocks from SOFT_BLOCKS_START: a
+ * Business or Health story that Google also files under TECHNOLOGY must
+ * not take its block with it. A section with fewer items shifts every
+ * later block, so no block is labelled unless the items after the
+ * headlines fill whole blocks. Google's headlines and its World and
+ * Business blocks are news wherever else Google files them, so those
+ * links are never soft.
  *
  * @param top links in the top-stories feed, in its order
  * @param hard links in the NATION and WORLD sections
@@ -59,7 +75,9 @@ export function softLinks(top: string[], hard: string[], softSections: string[])
   const isHard = new Set(hard);
   const inSection = new Set(softSections);
   const soft = new Set(softSections);
-  for (let start = HEADLINE_POSITIONS; start < top.length; start += SECTION_BLOCK) {
+  for (const u of top.slice(0, SOFT_BLOCKS_START)) soft.delete(u);
+  const wholeBlocks = (top.length - HEADLINE_POSITIONS) % SECTION_BLOCK === 0;
+  for (let start = SOFT_BLOCKS_START; wholeBlocks && start < Math.min(top.length, SOFT_BLOCKS_END); start += SECTION_BLOCK) {
     const block = top.slice(start, start + SECTION_BLOCK);
     if (block.some((u) => inSection.has(u)) && !block.some((u) => isHard.has(u))) for (const u of block) soft.add(u);
   }

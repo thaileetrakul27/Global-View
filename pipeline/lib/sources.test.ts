@@ -3,7 +3,19 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import type { CountryConfig } from "./countries";
 import type { Article, FetchDeps } from "./googlenews";
-import { MAX_AGE_DAYS, buildList, combine, fetchLocalSources, fetchWorldSources, isRecent, softLinks, sourceName, type Sources } from "./sources";
+import {
+  MAX_AGE_DAYS,
+  SOFT_BLOCKS_END,
+  SOFT_BLOCKS_START,
+  buildList,
+  combine,
+  fetchLocalSources,
+  fetchWorldSources,
+  isRecent,
+  softLinks,
+  sourceName,
+  type Sources,
+} from "./sources";
 import { TRENDING_MAX } from "./trending";
 
 const NOW = "2026-10-21T12:00:00.000Z";
@@ -167,16 +179,37 @@ describe("fetchLocalSources", () => {
 });
 
 describe("softLinks", () => {
-  // Google's top stories: ten headlines (t0-t9), then blocks of four (t10-t13, t14-t17, t18-t21).
-  const top = Array.from({ length: 22 }, (_, i) => `t${i}`);
-  it("labels the section links, and the whole block after the headlines that holds one", () => {
+  // Google's top stories: ten headlines (t0-t9), then blocks of four:
+  // World t10-t13, Business t14-t17, Technology t18-t21, Entertainment
+  // t22-t25, Sports t26-t29, Health t30-t33.
+  const top = Array.from({ length: 34 }, (_, i) => `t${i}`);
+  it("starts the blocks it labels whole after the World and Business blocks, for two blocks", () => {
+    expect([SOFT_BLOCKS_START, SOFT_BLOCKS_END]).toEqual([18, 26]);
+  });
+  it("labels the section links, and the whole Technology or Entertainment block that holds one", () => {
     expect(softLinks(top, ["t11"], ["t19", "x"])).toEqual(["t19", "x", "t18", "t20", "t21"]);
+    expect(softLinks(top, [], ["t23"])).toEqual(["t23", "t22", "t24", "t25"]);
   });
-  it("leaves a block that holds a hard link, and the headlines, to the section links alone", () => {
-    expect(softLinks(top, ["t12"], ["t3", "t13"])).toEqual(["t3", "t13"]);
+  it("leaves a block that holds a hard link to its section links", () => {
+    expect(softLinks(top, ["t20"], ["t19"])).toEqual(["t19"]);
   });
-  it("labels a short last block, and nothing without section links", () => {
-    expect(softLinks(top.slice(0, 20), [], ["t18"])).toEqual(["t18", "t19"]);
+  it("never labels the headlines or the World and Business blocks, whatever else lists them", () => {
+    // Korea, Ukraine and Israel, 21 October 2026: a business story at
+    // Business place 16 or 17 that Google also filed under TECHNOLOGY.
+    expect(softLinks(top, [], ["t3", "t13", "t16"])).toEqual([]);
+  });
+  it("labels a Sports or Health block by its section links alone", () => {
+    // Israel, 21 October 2026: one Health item also filed under TECHNOLOGY.
+    expect(softLinks(top, [], ["t30"])).toEqual(["t30"]);
+    expect(softLinks(top, [], ["t27"])).toEqual(["t27"]);
+  });
+  it("labels only the section links when the items after the headlines do not fill whole blocks", () => {
+    // Egypt, 21 October 2026: 32 items, as its Technology block held
+    // three, so places 22-25 held three entertainment items and a sports one.
+    expect(softLinks(top.slice(0, 32), [], ["t18", "t22"])).toEqual(["t18", "t22"]);
+    expect(softLinks(top.slice(0, 20), [], ["t18"])).toEqual(["t18"]);
+  });
+  it("labels nothing without section links", () => {
     expect(softLinks(top, ["t1"], [])).toEqual([]);
     expect(softLinks([], [], ["x"])).toEqual(["x"]);
   });
