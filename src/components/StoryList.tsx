@@ -12,12 +12,17 @@ interface Props {
   limit: number;
   /** Archive days have no article detail, so rows are not clickable. */
   interactive?: boolean;
+  /**
+   * Whether choosing the open story again closes it, so rows are toggle
+   * buttons with a pressed state. The phone sheet's rows only open a story.
+   */
+  toggle?: boolean;
 }
 
 // The stories read in the most countries at once, most first. Choosing one
-// opens its panel; choosing the open one again closes it. Shared by the
-// desktop "Trending today" card and the phone "Trending" sheet.
-export default function StoryList({ stories, focusId, onFocus, nameOf, limit, interactive = true }: Props) {
+// opens its panel; where rows toggle, choosing the open one again closes it.
+// Shared by the desktop "Trending today" card and the phone "Trending" sheet.
+export default function StoryList({ stories, focusId, onFocus, nameOf, limit, interactive = true, toggle = true }: Props) {
   return (
     <ol className="divide-y divide-line">
       {stories.slice(0, limit).map((s) => {
@@ -26,7 +31,7 @@ export default function StoryList({ stories, focusId, onFocus, nameOf, limit, in
           <li key={s.id}>
             <button
               type="button"
-              aria-pressed={active}
+              aria-pressed={toggle ? active : undefined}
               disabled={!interactive}
               onClick={() => onFocus(active ? null : s.id)}
               title={s.countries.map(nameOf).join(", ")}
