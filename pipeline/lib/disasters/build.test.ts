@@ -321,6 +321,7 @@ describe("updateDisasters", () => {
     citations: [{ url: EVENT_PAGE, title: "Cox's Bazar flood appeal", citedText: "donate to the Cox's Bazar flood response" }],
     results: [{ url: EVENT_PAGE, title: "Cox's Bazar flood appeal" }],
     searches: 2,
+    okSearches: 2,
   };
   const DONATION_PARSED: DonationSearchParse = {
     pages: [{ url: EVENT_PAGE, org: "Bangladesh Red Crescent Society", kind: "society", note: "Cox's Bazar flood appeal", specific: true }],
@@ -424,9 +425,14 @@ describe("updateDisasters", () => {
   /**
    * A model client that records its usage in the ledger the way
    * pipeline/update.ts does. A search limited to allowed domains is the
-   * donation search; its answer can be replaced (null for a failed call).
+   * donation search; its answer can be replaced (null for a failed call),
+   * and so can the research's parsed notes.
    */
-  function recordingAi(ledger: Ledger, donation: { research: ResearchResult | null; parsed: DonationSearchParse | null } = { research: DONATION_RESEARCH, parsed: DONATION_PARSED }) {
+  function recordingAi(
+    ledger: Ledger,
+    donation: { research: ResearchResult | null; parsed: DonationSearchParse | null } = { research: DONATION_RESEARCH, parsed: DONATION_PARSED },
+    researched: ResearchParse = COXS.parsed,
+  ) {
     const spend = (u: Partial<Usage>) => record(ledger, "research", { model: "claude-haiku-5-5", inputTokens: 0, outputTokens: 0, cacheReadTokens: 0, cacheWriteTokens: 0, webSearches: 0, ...u }, NOW);
     const webResearch = vi.fn(async (opts: WebResearchOptions) => {
       if (opts.allowedDomains) {
@@ -438,7 +444,7 @@ describe("updateDisasters", () => {
     });
     const parse = vi.fn(async (opts: { schema: unknown }) => {
       spend({ inputTokens: 4_000, outputTokens: 1_000 });
-      return opts.schema === donationSearchSchema ? donation.parsed : COXS.parsed;
+      return opts.schema === donationSearchSchema ? donation.parsed : researched;
     });
     return { ai: { webResearch, parse, calls: 0 } as unknown as AiClient, webResearch, parse };
   }
@@ -555,6 +561,120 @@ describe("updateDisasters", () => {
     const later = recordingAi(ledger);
     await updateDisasters(runWith(dirs, { ai: later.ai, ledger, now: "2026-10-21T12:30:00.000Z" }));
     expect(later.webResearch.mock.calls.some(([opts]) => opts.allowedDomains)).toBe(true);
+  });
+
+  it("keeps the pages an earlier donation search found when a re-research's search fails, until a new search works", async () => {
+    // Older than the 48 hours a significant disaster's research lasts; its donation search found an event page.
+    const OLD_PAGE = "https://bdrcs.org/donate/monsoon-appeal-2026";
+    const oldPage = { url: OLD_PAGE, org: "Bangladesh Red Crescent Society", kind: "society" as const, note: "Monsoon appeal", specific: true };
+    const earlier = entry({ at: "2026-10-18T00:00:00.000Z", donationSearched: "2026-10-18T00:00:00.000Z", donation: [oldPage] });
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } }, research: { [ID]: earlier }, registry: REGISTRY });
+    const fetchMock = vi.fn(async (url: string | URL | Request) => {
+      if (String(url) === OLD_PAGE || String(url) === EVENT_PAGE) return new Response("<h1>Floods appeal</h1><a>Donate now</a>", { status: 200, headers: { "content-type": "text/html" } });
+      throw new Error("network down");
+    });
+    const deps = { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log: () => {} };
+    const ledger = emptyLedger();
+    const failing = recordingAi(ledger, { research: null, parsed: null });
+    const file = await updateDisasters(runWith(dirs, { ai: failing.ai, ledger, deps }));
+    expect(failing.webResearch).toHaveBeenCalledTimes(2);
+    const cached = readCache(dirs.cacheDir)[ID];
+    expect(cached.at).toBe(NOW);
+    // Carried apart from the new research's own pages.
+    expect(cached.earlierSearch).toEqual([oldPage]);
+    expect(cached.donation.map((p) => p.url)).not.toContain(OLD_PAGE);
+    // Unmarked, so the search is tried again.
+    expect(cached.donationSearched).toBeUndefined();
+    expect(file.disasters[0].donate[0]).toMatchObject({ url: OLD_PAGE, forEvent: true });
+    // A day later the search is tried again; it works, and its pages replace the old ones.
+    const later = recordingAi(ledger);
+    const next = await updateDisasters(runWith(dirs, { ai: later.ai, ledger, deps, now: "2026-10-21T12:30:00.000Z" }));
+    expect(later.webResearch).toHaveBeenCalledTimes(1);
+    const after = readCache(dirs.cacheDir)[ID];
+    expect(after.donationSearched).toBe("2026-10-21T12:30:00.000Z");
+    expect(after.donation[0].url).toBe(EVENT_PAGE);
+    expect(after.donation.map((p) => p.url)).not.toContain(OLD_PAGE);
+    expect(after.earlierSearch).toBeUndefined();
+    expect(next.disasters[0].donate[0]).toMatchObject({ url: EVENT_PAGE, forEvent: true });
+  });
+
+  it("keeps a page the new research lists when the earlier search had found it too and a new search works without it", async () => {
+    // The earlier search found the society's general page (and, in the second case, marked it as the event's own);
+    // the re-research lists it as well; the new search works and finds nothing.
+    const GENERAL = "https://bdrcs.org/donate/";
+    const researched = { ...COXS.parsed, donation: [{ url: GENERAL, org: "Bangladesh Red Crescent Society", kind: "society" as const, note: "Donate" }] };
+    const none = { research: { text: "Donation pages: none found", citations: [], results: [], searches: 1, okSearches: 1 }, parsed: { pages: [] } };
+    for (const specific of [false, true]) {
+      const earlier = entry({
+        at: "2026-10-17T00:00:00.000Z",
+        donationSearched: "2026-10-17T00:00:00.000Z",
+        donation: [{ url: GENERAL, org: "Bangladesh Red Crescent Society", kind: "society", note: "From the search", specific }],
+      });
+      const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } }, research: { [ID]: earlier }, registry: REGISTRY });
+      const fetchMock = vi.fn(async (url: string | URL | Request) => {
+        if (String(url) === GENERAL) return new Response("<h1>Donate</h1><a>Donate now</a>", { status: 200, headers: { "content-type": "text/html" } });
+        throw new Error("network down");
+      });
+      const ledger = emptyLedger();
+      const { ai, webResearch } = recordingAi(ledger, none, researched);
+      const file = await updateDisasters(runWith(dirs, { ai, ledger, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log: () => {} } }));
+      expect(webResearch).toHaveBeenCalledTimes(2);
+      const cached = readCache(dirs.cacheDir)[ID];
+      expect(cached.donationSearched).toBe(NOW);
+      expect(cached.earlierSearch).toBeUndefined();
+      // The research's own copy, unmarked.
+      expect(cached.donation).toEqual([{ url: GENERAL, org: "Bangladesh Red Crescent Society", kind: "society", note: "Donate" }]);
+      expect(file.disasters[0].donate.find((l) => l.url === GENERAL)).toMatchObject({ via: "research" });
+      expect(file.disasters[0].donate.find((l) => l.url === GENERAL)?.forEvent).toBeUndefined();
+    }
+  });
+
+  it("counts a donation search in which no search worked as failed, and one that searched and found nothing as done", async () => {
+    const none = { text: "Donation pages: none found", citations: [], results: [] };
+    // Every search came back as an error (a rate limit): tried again after a day, its spend still recorded.
+    const limited = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } } });
+    const ledger = emptyLedger();
+    const failing = recordingAi(ledger, { research: { ...none, searches: 2, okSearches: 0 }, parsed: DONATION_PARSED });
+    await updateDisasters(runWith(limited, { ai: failing.ai, ledger }));
+    expect(failing.webResearch).toHaveBeenCalledTimes(2);
+    expect(readCache(limited.cacheDir)[ID].donationSearched).toBeUndefined();
+    expect(JSON.parse(fs.readFileSync(path.join(limited.cacheDir, "research-attempts.json"), "utf8"))).toEqual({ [donationAttemptKey(ID)]: NOW });
+    expect(ledger.months["2026-10"].researchCalls).toBe(3);
+    // A search that worked and found nothing is a finding.
+    const empty = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } } });
+    const emptyRun = emptyLedger();
+    const searched = recordingAi(emptyRun, { research: { ...none, searches: 1, okSearches: 1 }, parsed: DONATION_PARSED });
+    await updateDisasters(runWith(empty, { ai: searched.ai, ledger: emptyRun }));
+    expect(readCache(empty.cacheDir)[ID].donationSearched).toBe(NOW);
+  });
+
+  it("runs no donation search for a disaster the research says is over, after its research or as a backfill", async () => {
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } }, registry: REGISTRY });
+    const ledger = emptyLedger();
+    const over = recordingAi(ledger, undefined, { ...COXS.parsed, ongoing: false });
+    const file = await updateDisasters(runWith(dirs, { ai: over.ai, ledger }));
+    expect(over.webResearch).toHaveBeenCalledTimes(1);
+    expect(over.webResearch.mock.calls[0][0].allowedDomains).toBeUndefined();
+    expect(file.disasters).toEqual([]);
+    // Researched earlier, before any donation search, and over by then.
+    const { events, research } = researchedEarlier();
+    const ended = Object.fromEntries(Object.entries(research).map(([id, e]) => [id, { ...e, ongoing: false }]));
+    const dirs2 = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events } }, research: ended, registry: REGISTRY });
+    const ledger2 = emptyLedger();
+    const backfill = recordingAi(ledger2);
+    expect((await updateDisasters(runWith(dirs2, { ai: backfill.ai, ledger: ledger2 }))).disasters).toEqual([]);
+    expect(backfill.webResearch).not.toHaveBeenCalled();
+  });
+
+  it("backfills no more disasters than the run's research cap, and none when the cap is 0", async () => {
+    for (const cap of [2, 0]) {
+      const { events, research } = researchedEarlier();
+      const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events } }, research, registry: REGISTRY });
+      const ledger = emptyLedger();
+      const { ai, webResearch } = recordingAi(ledger);
+      await updateDisasters(runWith(dirs, { ai, ledger, budget: { ...DEFAULT_BUDGET, maxResearchPerRun: cap } }));
+      expect(webResearch).toHaveBeenCalledTimes(cap);
+    }
   });
 
   it("starts no research once the run's deadline has passed", async () => {

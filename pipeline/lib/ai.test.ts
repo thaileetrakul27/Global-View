@@ -46,6 +46,20 @@ describe("collectResearch", () => {
       { url: "https://a.example/1", title: "A", pageAge: "1 day ago" },
       { url: "https://b.example/2", title: "B", pageAge: undefined },
     ]);
+    // The search that came back as an error is not counted.
+    expect(out.okSearches).toBe(1);
+  });
+
+  it("counts a search that found nothing as one that worked, and none for errors or an answer without a search", () => {
+    const empty = [{ type: "web_search_tool_result", tool_use_id: "s1", content: [] }] as unknown as Anthropic.ContentBlock[];
+    expect(collectResearch(empty).okSearches).toBe(1);
+    const errors = [
+      { type: "web_search_tool_result", tool_use_id: "s1", content: { type: "web_search_tool_result_error", error_code: "too_many_requests" } },
+      { type: "web_search_tool_result", tool_use_id: "s2", content: { type: "web_search_tool_result_error", error_code: "unavailable" } },
+      { type: "text", text: "Donation pages: none found", citations: null },
+    ] as unknown as Anthropic.ContentBlock[];
+    expect(collectResearch(errors)).toEqual({ text: "Donation pages: none found", citations: [], results: [], okSearches: 0 });
+    expect(collectResearch([{ type: "text", text: "From memory.", citations: null }] as unknown as Anthropic.ContentBlock[]).okSearches).toBe(0);
   });
 });
 
@@ -124,6 +138,20 @@ describe("webResearch with a fake client", () => {
     expect(res).toMatchObject({ text: "Notes.", searches: 2 });
     expect(tools()).toEqual([{ type: "web_search_20260209", name: "web_search", max_uses: 3, allowed_domains: DOMAINS }]);
     expect(usage).toHaveBeenCalledWith("research", expect.objectContaining({ webSearches: 2, inputTokens: 100 }));
+  });
+
+  it("reports the searches billed and the searches that worked apart, so a rate-limited search is not taken for an empty one", async () => {
+    const limited = {
+      ...answer("Donation pages: none found"),
+      content: [
+        { type: "server_tool_use", id: "s1", name: "web_search", input: { query: "q" } },
+        { type: "web_search_tool_result", tool_use_id: "s1", content: { type: "web_search_tool_result_error", error_code: "too_many_requests" } },
+        { type: "text", text: "Donation pages: none found", citations: null },
+      ],
+    };
+    const { client } = fakeClient([limited]);
+    const ai = createAiClient(() => {}, () => {}, client);
+    expect(await ai?.webResearch({ ...OPTS, allowedDomains: DOMAINS })).toEqual({ text: "Donation pages: none found", citations: [], results: [], searches: 2, okSearches: 0 });
   });
 
   it("retries once with the movement and UN domains when the API refuses the list, keeping the tool", async () => {

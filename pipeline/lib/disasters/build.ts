@@ -23,7 +23,9 @@ import { fetchIfrc } from "./ifrc";
 import { isOngoing, mergeEvents } from "./merge";
 import { extractNewsEvents, mentionsDisaster, type NewsArticle } from "./news";
 import {
+  MAX_DONATION_BACKFILL,
   RESEARCH_CACHE_PATH,
+  entryDonations,
   pruneResearchCache,
   readResearchCache,
   researchDisaster,
@@ -32,6 +34,7 @@ import {
   selectForResearch,
   wantsDonationSearch,
   withDonationSearch,
+  withEarlierSearch,
   writeResearchCache,
   type ResearchCache,
   type ResearchEntry,
@@ -388,12 +391,15 @@ async function fetchFeeds(run: DisasterRun, snapshots: Snapshots): Promise<{ eve
 
 /**
  * Runs web research on the disasters that need it most, within the day's
- * allowance, this run's cap and a time limit. A significant disaster (or
- * one with an IFRC appeal) also gets a donation search for pages about the
- * event, right after its research. Then disasters researched before the
- * donation search existed, or before they became significant, get one
- * (at most MAX_DONATION_BACKFILL), within the same limits. The registry
- * gives each search its official sites. Updates cache and attempts.
+ * allowance, a time limit and this run's cap (budget.maxResearchPerRun,
+ * which counts disasters researched). A significant disaster (or one with
+ * an IFRC appeal) also gets a donation search for pages about the event,
+ * right after its research, unless the research says it is over. Then
+ * disasters not over whose entry has had no donation search (researched
+ * before the search existed or before they became significant, or whose
+ * last search failed) get one: at most MAX_DONATION_BACKFILL, and never
+ * more than the run's cap, within the same allowance and time limit. The
+ * registry gives each search its official sites. Updates cache and attempts.
  */
 async function runResearch(
   run: DisasterRun,
@@ -453,11 +459,13 @@ async function runResearch(
     const callsBefore = totalCalls(ledger);
     const entry = await researchDisaster(ai, d, { countryNames: run.countryNames, headlines, resolve: run.resolve, now, log });
     if (entry) {
-      cache[d.id] = entry;
+      // The last donation search's pages are carried (earlierSearch) until a new one works.
+      cache[d.id] = withEarlierSearch(entry, cache[d.id]);
       done++;
       log(`  researched ${d.id}: ${entry.places.length} places, ${entry.figures.length} figures, ${entry.donation.length} donation pages, ${entry.searches} searches`);
-      // Part of the same research, so only the deadline and the month's cap can stop it here.
-      if (wantsDonationSearch(d) && Date.now() <= (run.deadline ?? Infinity) && canSpend(ledger, budget, now)) await searchDonations(d);
+      // Part of the same research, so only the deadline and the month's cap
+      // can stop it here. None for a disaster left off the map as over.
+      if (wantsDonationSearch(d) && !researchSaysOver(d, entry, now) && Date.now() <= (run.deadline ?? Infinity) && canSpend(ledger, budget, now)) await searchDonations(d);
     } else {
       attempts[d.id] = now;
       log(`  research failed for ${d.id}; retried after ${RETRY_FAILED_HOURS} h`);
@@ -467,9 +475,13 @@ async function runResearch(
     save();
   }
 
-  // Entries without a donation search. These are not counted as researches,
-  // so their spend raises the cost average a little: the safe side.
-  const backfill = stopped ? [] : selectDonationBackfill(disasters, cache, (id) => handled.has(id) || Boolean(attempts[donationAttemptKey(id)]));
+  // Entries without a donation search, on disasters still headed for the
+  // map, and never more than the run's research cap. These are not counted
+  // as researches, so their spend raises the cost average a little: the
+  // safe side.
+  const onMap = disasters.filter((d) => !researchSaysOver(d, cache[d.id], now));
+  const skip = (id: string) => handled.has(id) || Boolean(attempts[donationAttemptKey(id)]);
+  const backfill = stopped ? [] : selectDonationBackfill(onMap, cache, skip, Math.min(MAX_DONATION_BACKFILL, budget.maxResearchPerRun));
   if (backfill.length > 0) log(`Research: donation search for ${backfill.length} disasters researched earlier`);
   for (const d of backfill) {
     if (!mayStart()) break;
@@ -555,7 +567,7 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   let checks = 0;
   const unreachable = new Set<string>();
   for (const d of disasters) {
-    const input = { countries: d.countries, appeals: d.appeals, researched: cache[d.id]?.donation ?? [] };
+    const input = { countries: d.countries, appeals: d.appeals, researched: entryDonations(cache[d.id]) };
     if (run.offline || checks >= MAX_DONATION_CHECKS || Date.now() > (run.deadline ?? Infinity)) {
       d.donate = buildDonations(input, registry, now);
       continue;

@@ -42,6 +42,12 @@ export interface ResearchResult {
   /** Every search result the model saw, deduplicated by URL. */
   results: { url: string; title: string; pageAge?: string }[];
   searches: number;
+  /**
+   * Searches that worked, whether or not they found anything. A search that
+   * failed (rate limit, outage, too many uses) comes back as an error in its
+   * result block and is not counted; neither is an answer with no search.
+   */
+  okSearches: number;
 }
 
 export interface WebResearchOptions {
@@ -83,11 +89,12 @@ export function readUsage(model: string, usage: Anthropic.Usage | undefined): Us
   };
 }
 
-/** Pulls the answer text, citations and search results out of a finished research turn. */
+/** Pulls the answer text, citations, search results and the count of searches that worked out of a finished research turn. */
 export function collectResearch(content: Anthropic.ContentBlock[]): Omit<ResearchResult, "searches"> {
   const texts: string[] = [];
   const citations = new Map<string, ResearchCitation>();
   const results = new Map<string, { url: string; title: string; pageAge?: string }>();
+  let okSearches = 0;
   for (const block of content) {
     if (block.type === "text") {
       texts.push(block.text);
@@ -97,6 +104,8 @@ export function collectResearch(content: Anthropic.ContentBlock[]): Omit<Researc
         }
       }
     } else if (block.type === "web_search_tool_result" && Array.isArray(block.content)) {
+      // A list, even an empty one, is a search that worked; an error is an object.
+      okSearches++;
       for (const r of block.content) {
         if (r.type === "web_search_result" && !results.has(r.url)) {
           results.set(r.url, { url: r.url, title: r.title, pageAge: r.page_age ?? undefined });
@@ -104,7 +113,7 @@ export function collectResearch(content: Anthropic.ContentBlock[]): Omit<Researc
       }
     }
   }
-  return { text: texts.join("").trim(), citations: [...citations.values()], results: [...results.values()] };
+  return { text: texts.join("").trim(), citations: [...citations.values()], results: [...results.values()], okSearches };
 }
 
 /** Web search with dynamic filtering first; the basic version for models that reject it. */
