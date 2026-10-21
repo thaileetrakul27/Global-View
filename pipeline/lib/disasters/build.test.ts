@@ -10,6 +10,7 @@ import {
   MAX_PLACE_AREAS,
   cachePaths,
   donationAttemptKey,
+  donationInput,
   hasFootprint,
   locateNewsEvents,
   locatePlaces,
@@ -27,7 +28,7 @@ import {
   type DisasterRun,
   type Snapshots,
 } from "./build";
-import { emptyRegistry, searchDomains, type DonationRegistry } from "./donate";
+import { emptyRegistry, searchDomains, urlKey, type DonationRegistry } from "./donate";
 import { LAND_SHAPES_PATH, circlePolygon, dropSeaParts, loadCountryShapes, pointInGeometry } from "./geo";
 import type { GeoHit, Geocoder } from "./geocode";
 import { MAX_DONATION_BACKFILL, donationSearchSchema, membersHash, type DonationSearchParse, type ResearchEntry, type ResearchParse } from "./research";
@@ -101,6 +102,23 @@ describe("caches", () => {
 
   it("forgets failed research attempts after a day", () => {
     expect(pruneAttempts({ old: "2026-10-19T11:00:00.000Z", fresh: "2026-10-20T01:00:00.000Z" }, NOW)).toEqual({ fresh: "2026-10-20T01:00:00.000Z" });
+  });
+});
+
+describe("donationInput", () => {
+  it("gives donate.ts the disaster's countries, appeals, researched pages, title and every globe country's name", () => {
+    const page = { url: "https://bdrcs.org/donate/sylhet-floods", org: "BDRCS", kind: "society" as const, note: "Sylhet floods", specific: true };
+    const d = dis({ title: "Drought in Uganda, Kenya", countries: ["UG", "KE"] });
+    // Every country's name, not only the disaster's: a campaign naming another country is told apart by it.
+    const names = { UG: "Uganda", KE: "Kenya", SD: "Sudan", SS: "South Sudan" };
+    expect(donationInput(d, entry({ donation: [page] }), names)).toEqual({
+      countries: ["UG", "KE"],
+      appeals: [],
+      researched: [page],
+      title: "Drought in Uganda, Kenya",
+      countryNames: names,
+    });
+    expect(donationInput(dis(), undefined, {})).toMatchObject({ researched: [], title: "Flood in Bangladesh", countryNames: {} });
   });
 });
 
@@ -364,6 +382,24 @@ describe("updateDisasters", () => {
     expect(d.donate.map((l) => l.org)).toEqual(expect.arrayContaining(["UN Crisis Relief", "IFRC"]));
     // Offline runs leave the feed snapshot alone.
     expect(JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "disaster-sources.json"), "utf8")).ifrc.fetched).toBe("2026-10-20T09:00:00.000Z");
+  });
+
+  it("rebuilds donation lists from cached verdicts with the rules on the disaster's countries (live run 39617028266)", async () => {
+    // The Venezuela earthquake's donation search found IFRC's campaign for it, another
+    // quake's campaign and a Syria appeal; each passed a live check in an earlier run.
+    const campaign = "https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~mi-donativo?_cv=1";
+    const colombia = "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/";
+    const syria = "https://www.ifrc.org/appeals?ac=MDRSY003";
+    const pages = [campaign, colombia, syria].map((url) => ({ url, org: "IFRC", kind: "society" as const, note: "Earthquake appeal", specific: true }));
+    const quake = ifrcEvent({ sourceId: "7990", type: "earthquake", title: "Venezuela Earthquake", countries: ["VE"], lat: 10.5, lng: -66.9 });
+    const passed = (url: string) => ({ ok: true, reason: "donation word", checked: NOW, chain: [url] });
+    const registry: DonationRegistry = { ...emptyRegistry(), verdicts: Object.fromEntries([campaign, colombia, syria].map((u) => [urlKey(u), passed(u)])) };
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [quake] } }, research: { "ifrc-earthquake-7990": entry({ donation: pages }) }, registry });
+    const file = await updateDisasters(runWith(dirs, { offline: true, globeCodes: new Set(["VE", "CO"]), countryNames: { VE: "Venezuela", CO: "Colombia" } }));
+    const urls = file.disasters[0].donate.map((l) => l.url);
+    expect(file.disasters[0].donate[0]).toMatchObject({ url: campaign, org: "IFRC", kind: "agency", via: "research", forEvent: true });
+    expect(urls).not.toContain(colombia);
+    expect(urls).not.toContain(syria);
   });
 
   it("tells land from sea with the run's finer shapes, when it has them", async () => {

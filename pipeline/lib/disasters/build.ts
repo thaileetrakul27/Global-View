@@ -14,7 +14,7 @@ import type { FetchDeps } from "../googlenews";
 import { writeCompactJson, writeJson } from "../io";
 import type { CountryResolver } from "../resolve";
 import { averageResearchCost, canSpend, noteResearch, researchAllowance, type Budget, type Ledger } from "../spend";
-import { REGISTRY_PATH, buildDonations, prepareDonations, readRegistry, refreshRegistry, searchDomains, writeRegistry, type DonationRegistry } from "./donate";
+import { REGISTRY_PATH, buildDonations, prepareDonations, readRegistry, refreshRegistry, searchDomains, writeRegistry, type DonationInput, type DonationRegistry } from "./donate";
 import { fetchEonet } from "./eonet";
 import { fetchGdacs } from "./gdacs";
 import { GEOCODE_CACHE_PATH, createGeocoder, placeArea, placeFromHit, readGeocodeCache, writeGeocodeCache, type Geocoder } from "./geocode";
@@ -298,6 +298,17 @@ export function researchSaysOver(d: Disaster, entry: ResearchEntry | undefined, 
 }
 
 /**
+ * What donate.ts needs to list a disaster's donation pages: its countries
+ * and appeals, the pages its research found, its title and every globe
+ * country's English name. The last two tie an IFRC campaign on the
+ * donation platform to it by whole country names, so a campaign for
+ * Guinea is not taken for Guinea-Bissau's.
+ */
+export function donationInput(d: Pick<Disaster, "countries" | "appeals" | "title">, entry: ResearchEntry | undefined, countryNames: Record<string, string>): DonationInput {
+  return { countries: d.countries, appeals: d.appeals, researched: entryDonations(entry), title: d.title, countryNames };
+}
+
+/**
  * Moves news events to their geocoded places. An event with no place that
  * geocodes is dropped, unless the geocoder had to leave a lookup for later
  * (its cap or an outage) and the previous run placed the same event: then
@@ -567,7 +578,7 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   let checks = 0;
   const unreachable = new Set<string>();
   for (const d of disasters) {
-    const input = { countries: d.countries, appeals: d.appeals, researched: entryDonations(cache[d.id]) };
+    const input = donationInput(d, cache[d.id], run.countryNames);
     if (run.offline || checks >= MAX_DONATION_CHECKS || Date.now() > (run.deadline ?? Infinity)) {
       d.donate = buildDonations(input, registry, now);
       continue;
