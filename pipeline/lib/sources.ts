@@ -9,7 +9,7 @@
 // one feed answering is enough; when none does, the country keeps its
 // previous file.
 import { fetchBingFeed } from "./bingnews";
-import { dedupeArticles } from "./clean";
+import { dedupeArticles, usableArticles } from "./clean";
 import type { CountryConfig } from "./countries";
 import { buildSearchUrl, buildSectionUrl, fetchFeed, fetchFeedUrl, type Article, type FetchDeps } from "./googlenews";
 import { rankStories } from "./trending";
@@ -103,12 +103,14 @@ export async function fetchWorldSources(country: CountryConfig, delayMs: number,
 }
 
 /**
- * The list the site shows: junk and repeats dropped, one article per
- * story, ranked by trending.ts, at most `max`. Lexical only, so nothing
- * is translated that is then thrown away.
+ * The list the site shows: junk and repeated links dropped, one article
+ * per story, ranked by trending.ts, at most `max`. A headline that
+ * several outlets run counts each of them; any repeat of it left after
+ * ranking (copies days apart are never one story) is dropped. Lexical
+ * only, so nothing is translated that is then thrown away.
  */
 export function buildList(sources: Sources, max: number, now: string): Article[] {
-  return rankStories(dedupeArticles(sources.articles), sources.top, now).slice(0, max);
+  return dedupeArticles(rankStories(usableArticles(sources.articles), sources.top, now)).slice(0, max);
 }
 
 /** Where a list came from, for the country file: "Google News and Bing News". */

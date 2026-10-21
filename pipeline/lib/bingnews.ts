@@ -5,7 +5,7 @@
 // redirect link that embeds the publisher's URL.
 import { XMLParser } from "fast-xml-parser";
 import type { Article, FetchDeps } from "./googlenews";
-import { USER_AGENT } from "./googlenews";
+import { snippet, USER_AGENT } from "./googlenews";
 
 export const BING_ENDPOINT = process.env.BING_NEWS_ENDPOINT ?? "https://www.bing.com/news/search";
 /** Items per page Bing returns; the second page starts at 13. */
@@ -36,15 +36,20 @@ interface Item {
   "News:Source"?: string | number;
 }
 
+/**
+ * Parses a Bing News RSS body; anything else, such as the HTML page Bing
+ * serves when it blocks a request, is a failure. Text is kept as text, so
+ * a headline "007" or an outlet "444" is never read as a number.
+ */
 export function parseBingFeed(xml: string): Article[] {
-  const parser = new XMLParser({ ignoreAttributes: true, htmlEntities: true });
+  const parser = new XMLParser({ ignoreAttributes: true, htmlEntities: true, parseTagValue: false });
   let doc: { rss?: { channel?: { item?: Item | Item[] } | "" } };
   try {
     doc = parser.parse(xml);
   } catch {
-    throw new Error(`Bing feed is not XML: ${xml.slice(0, 120).trim()}`);
+    throw new Error(`Bing feed is not XML: ${snippet(xml)}`);
   }
-  if (!doc.rss || doc.rss.channel === undefined) throw new Error(`Not a Bing News feed: ${xml.slice(0, 120).trim()}`);
+  if (!doc.rss || doc.rss.channel === undefined) throw new Error(`Not a Bing News feed: ${snippet(xml)}`);
   const raw = doc.rss.channel === "" ? undefined : doc.rss.channel.item;
   const items = raw === undefined ? [] : Array.isArray(raw) ? raw : [raw];
   const out: Article[] = [];

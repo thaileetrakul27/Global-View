@@ -4,10 +4,13 @@ import {
   ageHours,
   groupStories,
   isTrending,
+  LEAD_LAG_HOURS,
   outletKey,
   rankMarks,
   rankStories,
   representative,
+  SAME_OUTLET_THRESHOLD,
+  sameFigures,
   similarity,
   STORY_THRESHOLD,
   storyScore,
@@ -58,6 +61,15 @@ describe("similarity and tokenWeights", () => {
     expect(w("storm")).toBeGreaterThan(w("the"));
     // Sharing only "the" counts for less than sharing a rare word.
     expect(similarity(["the", "storm"], ["the", "budget"], w)).toBeLessThan(similarity(["the", "storm"], ["storm", "budget"], w));
+  });
+});
+
+describe("sameFigures", () => {
+  const quake = (time: string) => storyTokens(`Light mag. 3.3 earthquake - Departamento de Potosi, Bolivia, on Tuesday, Oct 20, 2026, at ${time} (GMT -4)`);
+  it("compares the tokens that hold digits, in any order", () => {
+    expect(sameFigures(quake("06:35 pm"), quake("05:54 am"))).toBe(false);
+    expect(sameFigures(storyTokens("Peru vs. Bolivia (Nov 13, 2026) Live Score"), storyTokens("Peru vs. Bolivia (13 Nov, 2026) Live Score"))).toBe(true);
+    expect(sameFigures(storyTokens("Alice Schwarzer stellt Magazin „Emma“ ein"), storyTokens("„Es reicht!“: Alice Schwarzer stellt Magazin „Emma“ überraschend ein"))).toBe(true);
   });
 });
 
@@ -289,6 +301,31 @@ describe("groupStories", () => {
   it("never groups headlines more than two days apart", () => {
     expect(groupStories([art(t1, o1, 1), art(t2, o2, 60)])).toHaveLength(2);
   });
+  it("keeps one outlet's templated headlines apart when their figures differ", () => {
+    // Bolivia's world coverage on 21 October 2026: Volcano Discovery reports
+    // every quake with one template, so two quakes score above the
+    // same-outlet bar, while ESPN's two pages for one match share their figures.
+    const quake = (time: string) => `Light mag. 3.3 earthquake - Departamento de Potosi, Bolivia, on Tuesday, Oct 20, 2026, at ${time} (GMT -4)`;
+    const batch = [
+      art("Bolivia Lawmakers Demand Orobe Into Alleged Plot to Abduct Evo Morales", "teleSUR English"),
+      art("Bolivia sets 15% ethanol blend by Nov. 1 to slash its ballooning gasoline import bill", "Latin Times"),
+      art("Bolivia prioritizes two rail projects with Chile after presidential talks", "BNamericas"),
+      art("Gold fever closes in on the habitat of the tilcayo, Bolivia’s newly discovered wild cat", "EL PAÍS English"),
+      art("Global Unrest: Bolivia Teachers Clash With Authorities as Tear Gas and Pepper Spray Fill Streets", "ABP Live English"),
+      art("Bolivia's Fuel Import Volume Drops 28% While Costs Remain Flat", "PravdaReport"),
+      art("Croatian community in Bolivia holds cultural week in La Paz", "HINA"),
+      art("Light mag. 3.5 earthquake - Provincia de El Loa, Chile, on Wednesday, Oct 21, 2026, at 03:44 am (GMT -4)", "Volcano Discovery", 4),
+      art("Peru vs. Bolivia (Nov 13, 2026) Live Score", "ESPN", 54),
+      art("Peru vs. Bolivia (13 Nov, 2026) Live Score", "ESPN", 52),
+      art(quake("06:35 pm"), "Volcano Discovery", 17),
+      art(quake("05:54 am"), "Volcano Discovery", 25),
+    ];
+    const tokens = batch.map((a) => storyTokens(a.title));
+    expect(similarity(tokens[10], tokens[11], tokenWeights(tokens))).toBeGreaterThan(SAME_OUTLET_THRESHOLD);
+    const groups = groupStories(batch).map((g) => g.map((a) => a.title));
+    expect(groups).toHaveLength(batch.length - 1);
+    expect(groups).toContainEqual([batch[8].title, batch[9].title]);
+  });
   it("uses a threshold between the scores of different and same stories", () => {
     expect(STORY_THRESHOLD).toBeGreaterThan(0.3);
     expect(STORY_THRESHOLD).toBeLessThan(0.5);
@@ -312,6 +349,13 @@ describe("storyStats and representative", () => {
   it("shows the best-placed top-stories article, else the newest", () => {
     expect(representative(story, top).outlet).toBe("The Guardian on MSN");
     expect(representative(story, new Map()).outlet).toBe("Sky News");
+  });
+  it("passes over a top-stories article much older than the story's newest", () => {
+    const lead = art("Storm Austen: Amber warning issued by Met Office for wind", "BBC", 40, { url: "https://top/old" });
+    const update = art("Storm Austen: Amber wind warning issued by Met Office extended", "The Telegraph", 1);
+    expect(representative([lead, update], new Map([["https://top/old", 0]]))).toBe(update);
+    const recent = { ...lead, published: ago(1 + LEAD_LAG_HOURS) };
+    expect(representative([recent, update], new Map([["https://top/old", 0]]))).toBe(recent);
   });
 });
 
@@ -374,6 +418,16 @@ describe("rankStories", () => {
     expect(out[0]).toMatchObject({ outlets: 5, trending: true });
     expect(out[1]).toMatchObject({ outlets: 1, trending: false });
     expect(out.every((a) => !("related" in a))).toBe(true);
+  });
+  it("shows a fresh story with its fresh headline, not an old top-stories lead", () => {
+    const lead = art("Storm Austen: Amber warning issued by Met Office for wind", "BBC", 40, {
+      url: "https://top/old",
+      related: ["Sky News", "ITV News", "The Guardian"],
+    });
+    const update = art("Storm Austen: Amber wind warning issued by Met Office extended", "The Telegraph", 1);
+    const out = rankStories([lead, update], ["https://top/old"], NOW);
+    expect(out).toHaveLength(1);
+    expect(out[0]).toMatchObject({ url: update.url, published: ago(1), outlets: 5, trending: true });
   });
   it("marks at most TRENDING_MAX stories as trending, the best-ranked ones", () => {
     const many = Array.from({ length: TRENDING_MAX + 3 }, (_, i) =>

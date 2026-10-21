@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { allowedRedirect, buildFeedUrl, buildSearchUrl, buildSectionUrl, fetchFeed, fetchFeedUrl, parseFeed, relatedOutlets, stripOutletSuffix } from "./googlenews";
+import { allowedRedirect, buildFeedUrl, buildSearchUrl, buildSectionUrl, fetchFeed, fetchFeedUrl, parseFeed, relatedOutlets, snippet, stripOutletSuffix } from "./googlenews";
 
 const edition = { hl: "th", gl: "TH", ceid: "TH:th" };
 
@@ -92,9 +92,34 @@ describe("parseFeed", () => {
     expect(one).toHaveLength(1);
     expect(parseFeed(`<rss><channel><title>x</title></channel></rss>`)).toEqual([]);
   });
-  it("rejects non-feed bodies", () => {
+  it("keeps numeric text as text, so an outlet named 444 or a headline 2026 parses", () => {
+    const escaped = cluster(["444", "Telex", "HVG"]).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const date = "<pubDate>Wed, 21 Oct 2026 09:04:26 GMT</pubDate>";
+    const xml = `<rss><channel>
+<item><title>Orbán beszédet mond - 444</title><link>u1</link>${date}<description>${escaped}</description><source url="https://444.hu">444</source></item>
+<item><title>2026</title><link>u2</link>${date}<source url="https://444.hu">444</source></item>
+<item><title>007 - 1e3</title><link>u3</link>${date}<source>1e3</source></item>
+</channel></rss>`;
+    const a = parseFeed(xml);
+    expect(a.map((x) => [x.title, x.outlet, x.outletUrl])).toEqual([
+      ["Orbán beszédet mond", "444", "https://444.hu"],
+      ["2026", "444", "https://444.hu"],
+      ["007", "1e3", null],
+    ]);
+    expect(a[0].related).toEqual(["Telex", "HVG"]);
+  });
+  it("rejects non-feed bodies, quoting their start on one line", () => {
     expect(() => parseFeed("<html><body>Redirecting</body></html>")).toThrow(/no RSS channel/);
     expect(() => parseFeed("<<<")).toThrow(/not XML|no RSS channel/);
+    expect(() => parseFeed("<html>\n  <head>\r\n<script>_G.BCT=ne</script>")).toThrow(/: <html> <head> <script>_G\.BCT=ne<\/script>$/);
+  });
+});
+
+describe("snippet", () => {
+  it("gives the first 120 characters of a body on one line", () => {
+    expect(snippet("  <html>\n\t<head>\r\n  _G.BCT=ne\n")).toBe("<html> <head> _G.BCT=ne");
+    expect(snippet("x".repeat(200))).toHaveLength(120);
+    expect(snippet("")).toBe("");
   });
 });
 
@@ -170,6 +195,12 @@ describe("fetchFeedUrl", () => {
     expect(await fetchFeedUrl(url, "TH:th WORLD", 1, { fetch, sleep: async () => {}, log })).toBeNull();
     expect(fetch).toHaveBeenCalledTimes(2); // one request per attempt, the redirect not followed
     expect(log.mock.calls[0][0]).toMatch(/TH:th WORLD: attempt 1 failed: HTTP 302/);
+  });
+  it("logs an error page's start on one line", async () => {
+    const log = vi.fn();
+    const fetch = vi.fn<typeof globalThis.fetch>(async () => response(503, "<html>\n<body>\nUnavailable\n</body>"));
+    expect(await fetchFeedUrl(url, "TH:th WORLD", 1, { fetch, sleep: async () => {}, log })).toBeNull();
+    expect(log.mock.calls[0][0]).toBe("  TH:th WORLD: attempt 1 failed: HTTP 503: <html> <body> Unavailable </body>");
   });
   it("follows at most one redirect", async () => {
     const fetch = vi.fn<typeof globalThis.fetch>(async () => response(302, "", { location: topic }));
