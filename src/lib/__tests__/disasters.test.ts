@@ -105,6 +105,11 @@ describe("cleanDisasters", () => {
     expect(cleanDisasters(undefined)).toEqual([]);
     expect(cleanDisasters({ disasters: [] })).toEqual([]);
   });
+
+  it("keeps a link's forEvent mark and reads older links without one", () => {
+    const [out] = cleanDisasters([make({ id: "d", donate: [link({ url: "https://www.ifrc.org/appeals?appeal_code=MDRJP020", kind: "appeal", forEvent: true }), link({ url: "https://crisisrelief.un.org/" })] })]);
+    expect(out.donate.map((l) => l.forEvent)).toEqual([true, undefined]);
+  });
 });
 
 describe("rankDisasters", () => {
@@ -340,6 +345,30 @@ describe("groupDonations", () => {
   it("returns no groups when nothing is safe", () => {
     expect(groupDonations([link({ url: "http://x.org/" })])).toEqual([]);
     expect(groupDonations([])).toEqual([]);
+  });
+
+  it("puts pages for this disaster first under their own heading, the rest by who runs them", () => {
+    const links = [
+      link({ url: "https://www.jrc.or.jp/contribute/2026/champi/", kind: "society", via: "research", forEvent: true }),
+      link({ url: "https://www.ifrc.org/appeals?appeal_code=MDRJP020", kind: "appeal", forEvent: true }),
+      link({ url: "https://donate.redcrossredcrescent.org/jp/default/", kind: "society" }),
+      link({ url: "https://crisisrelief.un.org/", kind: "un" }),
+      link({ url: "http://unsafe.example.org/champi", kind: "society", forEvent: true }),
+    ];
+    const groups = groupDonations(links);
+    expect(groups.map((g) => g.key)).toEqual(["event", "redcross", "un"]);
+    expect(groups[0].label).toBe("For this disaster");
+    expect(groups[0].links.map((l) => l.kind)).toEqual(["society", "appeal"]);
+    expect(groups[1].links.map((l) => l.url)).toEqual(["https://donate.redcrossredcrescent.org/jp/default/"]);
+  });
+
+  it("groups an older file's links, which have no forEvent, by who runs them as before", () => {
+    const old = [link({ url: "https://www.ifrc.org/appeals?appeal_code=MDRJP020", kind: "appeal" }), link({ url: "https://crisisrelief.un.org/", kind: "un" })];
+    expect(old[0]).not.toHaveProperty("forEvent");
+    expect(groupDonations(old).map((g) => g.key)).toEqual(["redcross", "un"]);
+    // Only a real true counts.
+    const junk = [{ ...link({ url: "https://www.ifrc.org/donate", kind: "agency" }), forEvent: "yes" as unknown as boolean }];
+    expect(groupDonations(junk).map((g) => g.key)).toEqual(["agency"]);
   });
 });
 

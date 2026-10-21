@@ -6,8 +6,10 @@ import { External, ExternalIcon, ring, textLink } from "./External";
 const UN_CRISIS_RELIEF = "https://crisisrelief.un.org/";
 
 // The official donation pages, first in the panel and large enough to tap.
-// Only https pages reach the page; with none left, UN Crisis Relief's
-// general fund.
+// Pages for this disaster itself (its IFRC appeal, checked pages researched
+// for it) come first under "For this disaster"; the general pages follow,
+// grouped by who runs them. Only https pages reach the page; with none
+// left, UN Crisis Relief's general fund.
 export default function DisasterDonate({ disaster: d }: { disaster: Disaster }) {
   const id = useId();
   const groups = groupDonations(d.donate);
@@ -27,7 +29,10 @@ export default function DisasterDonate({ disaster: d }: { disaster: Disaster }) 
       ) : (
         groups.map((g) => (
           <div key={g.key} className="mt-2.5">
-            {groups.length > 1 && <p className="text-[11px] font-medium uppercase tracking-wide text-muted">{g.label}</p>}
+            {/* The event's own pages are always named; other groups only when there are several. */}
+            {(g.key === "event" || groups.length > 1) && (
+              <p className={`text-[11px] font-medium uppercase tracking-wide ${g.key === "event" ? "text-accent" : "text-muted"}`}>{g.label}</p>
+            )}
             <ul className="mt-1.5 flex flex-col gap-2">
               {g.links.map((l) => (
                 <li key={l.url}>
@@ -61,7 +66,7 @@ function DonationRow({ link }: { link: DonationLink }) {
         <span className="block text-sm font-semibold text-ink">{link.org}</span>
         {showLabel && <span className="block text-sm text-accent group-hover:underline">{label}</span>}
         {link.note && <span className="mt-0.5 block text-xs leading-snug text-muted">{link.note}</span>}
-        {link.via === "research" && <span className="mt-1 block text-[11px] text-muted">Official page found by research</span>}
+        {link.via === "research" && <span className="mt-1 block text-[11px] text-muted">Found by research and checked as an official page</span>}
       </span>
       <ExternalIcon className="mt-0.5 shrink-0 text-muted group-hover:text-accent" />
       <span className="sr-only">(opens in a new tab)</span>

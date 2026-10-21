@@ -132,6 +132,12 @@ export interface DonationLink {
   note: string;
   /** registry: from IFRC or UN lists by fixed rule. research: found by web research and accepted by the allowlist and a live check. */
   via: "registry" | "research";
+  /**
+   * True for a page about this very disaster rather than a general fund: the
+   * IFRC appeal for it, or a researched page the research marked as this
+   * event's and that passed the allowlist and the live check. Listed first.
+   */
+  forEvent?: boolean;
 }
 
 /**

@@ -7,6 +7,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import type { z } from "zod";
+import { MOVEMENT_DOMAINS, UN_DOMAINS } from "./disasters/donate";
 
 /** Headlines are short and the tasks are routine, so the small model is used. */
 export const MODEL = process.env.GLOBAL_VIEW_MODEL ?? "claude-haiku-5-5";
@@ -43,11 +44,27 @@ export interface ResearchResult {
   searches: number;
 }
 
+export interface WebResearchOptions {
+  system: string;
+  user: string;
+  maxSearches: number;
+  maxTokens: number;
+  effort: Effort;
+  purpose: Purpose;
+  /**
+   * Limits the search to these sites (the web search tool's allowed_domains):
+   * plain hostnames, each covering its subdomains, or a host with a folder.
+   * Left out, the whole web is searched. Never pass a registry suffix such
+   * as gov.ph or co.uk: the API refuses it.
+   */
+  allowedDomains?: readonly string[];
+}
+
 export interface AiClient {
   /** Resolves to the parsed object, or null when the call or parse failed. */
   parse<T>(opts: { schema: z.ZodType<T>; system: string; user: string; maxTokens: number; effort: Effort; purpose: Purpose }): Promise<T | null>;
   /** Lets the model search the web; null when the call failed or was declined. */
-  webResearch(opts: { system: string; user: string; maxSearches: number; maxTokens: number; effort: Effort; purpose: Purpose }): Promise<ResearchResult | null>;
+  webResearch(opts: WebResearchOptions): Promise<ResearchResult | null>;
   /** Calls made so far, for the per-run cap and the log. */
   readonly calls: number;
 }
@@ -91,14 +108,72 @@ export function collectResearch(content: Anthropic.ContentBlock[]): Omit<Researc
 }
 
 /** Web search with dynamic filtering first; the basic version for models that reject it. */
-const SEARCH_TOOLS = ["web_search_20260209", "web_search_20250305"] as const;
+export const SEARCH_TOOLS = ["web_search_20260209", "web_search_20250305"] as const;
+export type SearchToolType = (typeof SEARCH_TOOLS)[number];
 /** The server pauses long search turns; this many continuations are allowed. */
 const MAX_CONTINUATIONS = 3;
+/** The web search tool takes at most this many allowed domains. */
+export const MAX_ALLOWED_DOMAINS = 64;
+/**
+ * What a restricted search falls back to when the API refuses its domain
+ * list: the Red Cross and Red Crescent movement's international bodies and
+ * the UN's own sites, plain domains the API accepts.
+ */
+export const FALLBACK_SEARCH_DOMAINS: readonly string[] = [...MOVEMENT_DOMAINS, ...UN_DOMAINS];
 
-/** Returns null when no credentials are configured, so the run continues without AI. */
-export function createAiClient(log: (msg: string) => void, onUsage: UsageHook = () => {}): AiClient | null {
-  if (!process.env.ANTHROPIC_API_KEY && !process.env.ANTHROPIC_AUTH_TOKEN) return null;
-  const client = new Anthropic();
+/** Allowed domains as the API takes them: trimmed, lower case, each once, at most 64; empty when none is usable. */
+export function cleanAllowedDomains(domains: readonly string[] | undefined): string[] {
+  const out: string[] = [];
+  for (const raw of domains ?? []) {
+    const d = typeof raw === "string" ? raw.trim().toLowerCase() : "";
+    if (d && !out.includes(d) && out.length < MAX_ALLOWED_DOMAINS) out.push(d);
+  }
+  return out;
+}
+
+/**
+ * The narrower list to retry with when the API refuses a domain list: the
+ * fallback domains the caller allowed, so a retry never searches a site the
+ * caller left out. Empty when there is nothing narrower to try.
+ */
+export function fallbackDomains(domains: readonly string[]): string[] {
+  const narrower = FALLBACK_SEARCH_DOMAINS.filter((d) => domains.includes(d));
+  return narrower.length > 0 && narrower.length < domains.length ? narrower : [];
+}
+
+/** The web search tool definition, restricted to allowedDomains when any are given. */
+export function searchToolDefinition(
+  type: SearchToolType,
+  maxUses: number,
+  allowedDomains?: readonly string[],
+): Anthropic.WebSearchTool20250305 | Anthropic.WebSearchTool20260209 {
+  const domains = cleanAllowedDomains(allowedDomains);
+  return { type, name: "web_search", max_uses: maxUses, ...(domains.length ? { allowed_domains: domains } : {}) };
+}
+
+/**
+ * What to send after the API refused a search's first request (a 400), or
+ * null to give up: a narrower domain list on the same tool first, once, so
+ * a refused site never downgrades the tool for the rest of the run; then
+ * the basic search tool with the call's full list again.
+ */
+export function retryAfterRejection(
+  attempt: { tool: number; domains: string[] },
+  fullDomains: string[],
+): { tool: number; domains: string[]; reason: "domains" | "tool" } | null {
+  const narrower = fallbackDomains(attempt.domains);
+  if (narrower.length > 0) return { tool: attempt.tool, domains: narrower, reason: "domains" };
+  if (attempt.tool < SEARCH_TOOLS.length - 1) return { tool: attempt.tool + 1, domains: fullDomains, reason: "tool" };
+  return null;
+}
+
+/**
+ * Returns null when no credentials are configured, so the run continues
+ * without AI. Tests pass their own client; the run makes a real one.
+ */
+export function createAiClient(log: (msg: string) => void, onUsage: UsageHook = () => {}, injected?: Anthropic): AiClient | null {
+  if (!injected && !process.env.ANTHROPIC_API_KEY && !process.env.ANTHROPIC_AUTH_TOKEN) return null;
+  const client = injected ?? new Anthropic();
   let calls = 0;
   let searchTool = 0;
   return {
@@ -135,10 +210,13 @@ export function createAiClient(log: (msg: string) => void, onUsage: UsageHook = 
       }
     },
 
-    async webResearch({ system, user, maxSearches, maxTokens, effort, purpose }) {
+    async webResearch({ system, user, maxSearches, maxTokens, effort, purpose, allowedDomains }) {
       calls++;
       const messages: Anthropic.MessageParam[] = [{ role: "user", content: user }];
       const content: Anthropic.ContentBlock[] = [];
+      const fullDomains = cleanAllowedDomains(allowedDomains);
+      // The domains this call searches; narrowed if the API refuses the list.
+      let domains = fullDomains;
       let searches = 0;
       try {
         for (let turn = 0; turn <= MAX_CONTINUATIONS; turn++) {
@@ -149,18 +227,21 @@ export function createAiClient(log: (msg: string) => void, onUsage: UsageHook = 
               max_tokens: maxTokens,
               system,
               messages,
-              tools: [{ type: SEARCH_TOOLS[searchTool], name: "web_search", max_uses: maxSearches }],
+              tools: [searchToolDefinition(SEARCH_TOOLS[searchTool], maxSearches, domains)],
               output_config: { effort },
             } as Anthropic.MessageCreateParamsNonStreaming);
           } catch (err) {
-            // A model without dynamic filtering rejects the newer tool; fall back once.
-            if (err instanceof Anthropic.BadRequestError && searchTool < SEARCH_TOOLS.length - 1 && turn === 0) {
-              log(`  ${SEARCH_TOOLS[searchTool]} rejected (${err.message.slice(0, 120)}); using ${SEARCH_TOOLS[searchTool + 1]}`);
-              searchTool++;
-              turn--;
-              continue;
-            }
-            throw err;
+            // A refused first request is tried again: with a narrower domain
+            // list, or, for a model without dynamic filtering, the basic tool.
+            const next = err instanceof Anthropic.BadRequestError && turn === 0 ? retryAfterRejection({ tool: searchTool, domains }, fullDomains) : null;
+            if (!next) throw err;
+            const why = (err as Error).message.slice(0, 120);
+            if (next.reason === "domains") log(`  search with ${domains.length} allowed domains rejected (${why}); retrying with ${next.domains.join(", ")}`);
+            else log(`  ${SEARCH_TOOLS[searchTool]} rejected (${why}); using ${SEARCH_TOOLS[next.tool]}`);
+            searchTool = next.tool;
+            domains = next.domains;
+            turn--;
+            continue;
           }
           const usage = readUsage(RESEARCH_MODEL, res.usage);
           searches += usage.webSearches;
