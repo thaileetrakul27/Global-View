@@ -19,6 +19,12 @@
 //             on the allowlist, status 200, HTML, and a donation word on
 //             the page.
 //
+// Pages about the disaster itself come first (forEvent): the IFRC appeal
+// for it, and researched pages the research marked as the event's own
+// that pass the same allowlist and live check and are not a general page
+// (isGeneralPage). research.ts finds those with a web search limited to
+// the official sites in searchDomains; the model only suggests them.
+//
 // The registry and the live-check verdicts are cached in
 // cache/donation-registry.json. The integrator refreshes the registry once
 // per run (refreshRegistry), checks researched pages (prepareDonations or
@@ -71,10 +77,12 @@ export const VERDICT_DAYS = 7;
  * Red Crescent), and a week would hide a good page for too long.
  */
 export const FAILED_VERDICT_DAYS = 1;
-/** Most links per disaster. */
-export const MAX_LINKS = 6;
-/** Most researched links per disaster. */
+/** Most links per disaster: room for pages about the event itself before the society and UN pages. */
+export const MAX_LINKS = 8;
+/** Most researched links per disaster that are not about the event itself. */
 export const MAX_RESEARCHED = 3;
+/** Most researched pages about the event itself per disaster. */
+export const MAX_EVENT_PAGES = 3;
 /** Most redirects a live check follows. */
 export const MAX_REDIRECTS = 3;
 /** Pages longer than this are cut before the keyword check. */
@@ -879,6 +887,60 @@ export function isAllowedDonationUrl(url: string, ctx: DonationContext): boolean
 }
 
 // ---------------------------------------------------------------------------
+// Where a donation search may look
+// ---------------------------------------------------------------------------
+
+/** The Red Cross Red Crescent donation platform's own domain (its pages are on donate.redcrossredcrescent.org). */
+export const PLATFORM_DOMAIN = "redcrossredcrescent.org";
+/** Most domains a web search may be limited to (the API's limit). */
+export const MAX_SEARCH_DOMAINS = 64;
+
+/** Second-level labels that registries hand out under a country code: "gov" in gov.ph, "co" in co.uk. */
+const REGISTRY_LABELS = new Set(["ac", "co", "com", "edu", "go", "gob", "gouv", "gov", "govt", "gv", "gub", "lg", "mil", "ne", "net", "nic", "or", "org"]);
+
+/**
+ * True for a public registry suffix rather than one owner's domain: a bare
+ * TLD ("gov"), or a registry label under a country code ("gov.ph",
+ * "co.uk", "go.jp"). The web search tool refuses these as allowed domains.
+ * A folder after the host ("sld.cu/sitios/cruzroja") is ignored.
+ */
+export function isRegistrySuffix(domain: string): boolean {
+  const labels = domain.split("/")[0].toLowerCase().split(".");
+  if (labels.length < 2) return true;
+  return labels.length === 2 && /^[a-z]{2}$/.test(labels[1]) && REGISTRY_LABELS.has(labels[0]);
+}
+
+/** True for an entry the web search tool takes: a plain host that is not a registry suffix, with an optional folder. */
+export function isSearchDomain(entry: string): boolean {
+  const [host, ...folder] = entry.split("/");
+  if (!isPlainHostname(host) || isRegistrySuffix(host)) return false;
+  return folder.every((seg) => /^[a-z0-9._~-]+$/i.test(seg));
+}
+
+/**
+ * The sites a donation search for a disaster in these countries may look
+ * at (the web search tool's allowed_domains), by fixed rule from the
+ * registry: each country's society sites (a folder entry such as
+ * "sld.cu/sitios/cruzroja" as it is, since the search takes a folder), the
+ * donation platform, the movement's international bodies, the UN and its
+ * agencies. Each once, at most 64, and never a registry suffix, which the
+ * API refuses. Government sites are left out: their entries are mostly
+ * registry suffixes. A page found there is still only a candidate for the
+ * allowlist and the live check.
+ */
+export function searchDomains(countries: string[], registry: DonationRegistry): string[] {
+  const fixed = [PLATFORM_DOMAIN, ...MOVEMENT_DOMAINS, ...UN_DOMAINS, ...UN_AGENCY_DOMAINS];
+  const societies: string[] = [];
+  for (const code of countries) {
+    for (const h of societyOf(code, registry)?.hosts ?? []) {
+      const entry = h.trim().toLowerCase();
+      if (isSearchDomain(entry) && !societies.includes(entry) && !fixed.includes(entry)) societies.push(entry);
+    }
+  }
+  return [...societies.slice(0, MAX_SEARCH_DOMAINS - fixed.length), ...fixed];
+}
+
+// ---------------------------------------------------------------------------
 // The donation-word check
 // ---------------------------------------------------------------------------
 
@@ -1181,6 +1243,8 @@ export interface ResearchedPage {
   org: string;
   kind: string;
   note: string;
+  /** The research says the page is about this disaster, not a general fund (see eventPageCandidate). */
+  specific?: boolean;
 }
 
 export interface DonationInput {
@@ -1286,6 +1350,7 @@ function societySiteLink(s: RegistrySociety, url: string): DonationLink {
   return { label: `Give to ${societyLabel(s.name)}`, url, org: s.name, kind: "society", note: "Its own website, as listed by IFRC", via: "registry" };
 }
 
+/** IFRC's page for the appeal it opened for this emergency, so it is for the event by definition. */
 function appealLink(a: AppealRef): DonationLink {
   const code = a.code.trim().toUpperCase();
   const name = cleanText(a.name, 80) || code;
@@ -1296,6 +1361,7 @@ function appealLink(a: AppealRef): DonationLink {
     kind: "appeal",
     note: `The plan and updates for appeal ${code} on ifrc.org; IFRC's donation page lets you give to it`,
     via: "registry",
+    forEvent: true,
   };
 }
 
@@ -1347,9 +1413,43 @@ export function knownOrg(url: URL, cls: HostClass, countries: string[], registry
   return domain ? KNOWN_ORGS[domain] : null;
 }
 
-/** Researched pages with a fresh passing live check, as links (with every URL of their redirect chain, for dedupe). */
+/** URL keys of the registry's general pages: every society's platform page and website, UN Crisis Relief's pages and IFRC's donation page. */
+function generalPageKeys(registry: DonationRegistry): Set<string> {
+  const urls = [UNCR_HOME, IFRC_DONATE, registry.uncrGeneral, ...Object.values(registry.uncr).map((p) => p.url)];
+  for (const s of Object.values(registry.societies)) urls.push(s.donate, s.url, societySiteUrl(s));
+  return new Set(urls.filter((u): u is string => typeof u === "string" && u !== "").map(urlKey));
+}
+
+/**
+ * True when a page cannot be about one event whatever the research says: a
+ * home page, a society's default page on the donation platform, or one of
+ * the registry's general pages (a society's own site, UN Crisis Relief's
+ * country or general fund, IFRC's donation page). Such a page is still
+ * shown, in its usual place, just never as the event's own.
+ */
+export function isGeneralPage(raw: string, generalKeys: Set<string>): boolean {
+  let url: URL;
+  try {
+    url = new URL(raw);
+  } catch {
+    return true;
+  }
+  // "/", "/en/", "/es/inicio", "/index.php": a site's home page.
+  if (url.pathname.split("/").every((seg) => !seg || HOME_SEGMENT.test(seg))) return true;
+  if (url.hostname === PLATFORM_HOST && /^\/[a-z]{2}\/default(?:\/|$)/i.test(url.pathname)) return true;
+  return generalKeys.has(urlKey(raw));
+}
+
+/**
+ * Researched pages with a fresh passing live check, as links (with every
+ * URL of their redirect chain, for dedupe). A page is for the event
+ * (forEvent) when the research marked it so and neither it nor any hop of
+ * its redirect chain is a general page (isGeneralPage).
+ */
 export function researchedLinks(input: DonationInput, ctx: DonationContext, registry: DonationRegistry, now: string): { link: DonationLink; urls: string[] }[] {
   const out: { link: DonationLink; urls: string[] }[] = [];
+  let general: Set<string> | undefined;
+  const generalKeys = () => (general ??= generalPageKeys(registry));
   for (const r of input.researched) {
     if (!r || typeof r.url !== "string") continue;
     const verdict = passingVerdict(r.url, ctx, registry, now);
@@ -1359,8 +1459,17 @@ export function researchedLinks(input: DonationInput, ctx: DonationContext, regi
     const known = knownOrg(url, cls, input.countries, registry);
     const org = known ?? (cleanText(r.org, 80) || url.hostname.replace(/^www\./, ""));
     const label = known && (cls === "society" || cls === "platform") ? `Donate to ${societyLabel(known)}` : `Donate to ${org}`;
+    const forEvent = r.specific === true && ![r.url, ...verdict.chain].some((u) => isGeneralPage(u, generalKeys()));
     out.push({
-      link: { label, url: r.url, org, kind: researchKind(String(r.kind ?? ""), cls), note: cleanText(r.note, 200) || "Found by web research and checked against official sites", via: "research" },
+      link: {
+        label,
+        url: r.url,
+        org,
+        kind: researchKind(String(r.kind ?? ""), cls),
+        note: cleanText(r.note, 200) || "Found by web research and checked against official sites",
+        via: "research",
+        ...(forEvent ? { forEvent: true } : {}),
+      },
       urls: verdict.chain,
     });
   }
@@ -1369,14 +1478,17 @@ export function researchedLinks(input: DonationInput, ctx: DonationContext, regi
 
 /**
  * The ordered donation links for one disaster, deduplicated by URL, at
- * most six: the first country's society on the donation platform; UN
- * Crisis Relief's page for the first country that has one; researched
- * pages that passed the live check; the society's own website when it is
- * not on the platform and passed the live check over https (so call
- * prepareDonations, which runs that check, rather than this alone); the
- * IFRC appeal page; then the global fallbacks (UN Crisis Relief's
- * general fund unless a UN Crisis Relief page is already listed, and
- * IFRC's donation page), so there are always two.
+ * most eight. First the pages for this disaster itself (forEvent):
+ * researched pages about the event that passed the live check (at most
+ * three), then the IFRC appeal page. Then the general pages: the first
+ * country's society on the donation platform; UN Crisis Relief's page for
+ * the first country that has one; other researched pages that passed the
+ * live check (at most three); the society's own website when it is not on
+ * the platform and passed the live check over https (so call
+ * prepareDonations, which runs that check, rather than this alone); then
+ * the global fallbacks (UN Crisis Relief's general fund unless a UN Crisis
+ * Relief page is already listed, and IFRC's donation page), so there are
+ * always two.
  */
 export function buildDonations(input: DonationInput, registry: DonationRegistry, now: string, governmentDomains = loadGovernmentDomains()): DonationLink[] {
   const ctx = donationContext(input.countries, registry, governmentDomains);
@@ -1389,15 +1501,17 @@ export function buildDonations(input: DonationInput, registry: DonationRegistry,
     out.push(link);
   };
 
+  const researched = researchedLinks(input, ctx, registry, now);
+  for (const r of researched.filter((r) => r.link.forEvent).slice(0, MAX_EVENT_PAGES)) add(r.link, r.urls);
+  const appeal = pickAppeal(input.appeals);
+  if (appeal) add(appealLink(appeal));
   const society = input.countries[0] ? societyOf(input.countries[0], registry) : null;
   if (society?.donate) add(platformLink(society, society.donate));
   const uncr = input.countries.map((c) => registry.uncr[c.toUpperCase()]).find(Boolean);
   if (uncr) add(uncrLink(uncr));
-  for (const r of researchedLinks(input, ctx, registry, now).slice(0, MAX_RESEARCHED)) add(r.link, r.urls);
+  for (const r of researched.filter((r) => !r.link.forEvent).slice(0, MAX_RESEARCHED)) add(r.link, r.urls);
   const site = checkedSocietySite(society, ctx, registry, now);
   if (society && site) add(societySiteLink(society, site.url), [site.url, ...site.chain]);
-  const appeal = pickAppeal(input.appeals);
-  if (appeal) add(appealLink(appeal));
   if (!out.some((l) => urlKey(l.url).startsWith("crisisrelief.un.org"))) add(uncrGeneralLink(registry));
   add(ifrcLink());
   return out;
@@ -1420,9 +1534,9 @@ export interface PrepareOptions {
  * Live-checks what a disaster's links need and has no fresh verdict for:
  * the first country's society website over https when the society is not
  * on the platform (one check, shared by every disaster in that country),
- * then its researched pages (at most maxChecks, pausing between them).
- * Then builds its links. Records verdicts in registry.verdicts; the
- * caller writes the registry.
+ * then its researched pages, those the research marked as the event's own
+ * first (at most maxChecks, pausing between them). Then builds its links.
+ * Records verdicts in registry.verdicts; the caller writes the registry.
  */
 export async function prepareDonations(input: DonationInput, registry: DonationRegistry, deps: FetchDeps, now: string, opts: PrepareOptions = {}): Promise<DonationLink[]> {
   const gov = opts.governmentDomains ?? loadGovernmentDomains();
@@ -1441,7 +1555,8 @@ export async function prepareDonations(input: DonationInput, registry: DonationR
   const siteVerdict = site ? registry.verdicts[urlKey(site)] : undefined;
   if (site && !(siteVerdict && verdictFresh(siteVerdict, now))) await check(site);
   let checks = 0;
-  for (const r of input.researched) {
+  const eventFirst = [...input.researched.filter((r) => r?.specific === true), ...input.researched.filter((r) => r?.specific !== true)];
+  for (const r of eventFirst) {
     if (!r || typeof r.url !== "string") continue;
     const problem = donationUrlProblem(r.url, ctx);
     if (problem) {

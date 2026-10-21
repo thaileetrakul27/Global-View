@@ -12,8 +12,15 @@ import {
   GO_COUNTRIES_URL,
   IFRC_APPEAL_PAGE,
   IFRC_DONATE,
+  MAX_EVENT_PAGES,
   MAX_LINKS,
+  MAX_RESEARCHED,
+  MAX_SEARCH_DOMAINS,
+  MOVEMENT_DOMAINS,
+  PLATFORM_DOMAIN,
   UNCR_HOME,
+  UN_AGENCY_DOMAINS,
+  UN_DOMAINS,
   UNCR_SITEMAP,
   buildDonations,
   checkDonationPage,
@@ -33,7 +40,10 @@ import {
   inSiteScope,
   isAllowedDonationUrl,
   isBloodDonationPath,
+  isGeneralPage,
   isPlainHostname,
+  isRegistrySuffix,
+  isSearchDomain,
   isSocietyCampaign,
   knownOrg,
   landingAnswer,
@@ -55,6 +65,7 @@ import {
   refreshRegistry,
   researchKind,
   researchedLinks,
+  searchDomains,
   siteHost,
   siteScope,
   societyLabel,
@@ -861,6 +872,53 @@ describe("hostClass", () => {
   });
 });
 
+describe("isRegistrySuffix and isSearchDomain", () => {
+  it("knows registry suffixes, which the web search tool refuses", () => {
+    for (const d of ["gov.ph", "co.uk", "go.jp", "or.th", "gob.mx", "org.uk", "com.cu", "gov", "org"]) expect(isRegistrySuffix(d)).toBe(true);
+    for (const d of ["redcross.org.ph", "jrc.or.jp", "redcross.ca", "ifrc.org", "un.org", "who.int", "sld.cu", "sld.cu/sitios/cruzroja"]) expect(isRegistrySuffix(d)).toBe(false);
+  });
+
+  it("takes a plain host or a host with a folder, never a suffix, an IP, punycode or odd characters", () => {
+    expect(isSearchDomain("redcross.org.ph")).toBe(true);
+    expect(isSearchDomain("sld.cu/sitios/cruzroja")).toBe(true);
+    for (const d of ["gov.ph", "1.2.3.4", "xn--80ak6aa92e.com", "red cross.org", "redcross.org/a b", "localhost", ""]) expect(isSearchDomain(d)).toBe(false);
+  });
+});
+
+describe("searchDomains", () => {
+  const fixed = [PLATFORM_DOMAIN, ...MOVEMENT_DOMAINS, ...UN_DOMAINS, ...UN_AGENCY_DOMAINS];
+
+  it("lists the countries' society sites, the platform, the movement, the UN and its agencies", () => {
+    expect(searchDomains(["JP"], registry())).toEqual(["jrc.or.jp", ...fixed]);
+    expect(PLATFORM_DOMAIN).toBe("redcrossredcrescent.org");
+    expect(fixed).toEqual(expect.arrayContaining(["ifrc.org", "icrc.org", "un.org", "unocha.org", "unicef.org", "wfp.org"]));
+  });
+
+  it("uses a territory's parent society and lists each site once", () => {
+    expect(searchDomains(["PR", "US"], registry())).toEqual(["redcross.org", ...fixed]);
+  });
+
+  it("passes a society's folder as it is and leaves out a registry suffix", () => {
+    const reg = registry();
+    reg.societies.CU = society({ name: "Cuban Red Cross", country: "Cuba", hosts: ["sld.cu/sitios/cruzroja"] });
+    reg.societies.XX = society({ name: "Odd Red Cross", country: "X", hosts: ["gov.ph", "Odd.Example.org ", "un.org"] });
+    expect(searchDomains(["CU", "XX"], reg)).toEqual(["sld.cu/sitios/cruzroja", "odd.example.org", ...fixed]);
+  });
+
+  it("gives the fixed official sites with no society, and never more than 64 domains", () => {
+    expect(searchDomains([], emptyRegistry())).toEqual(fixed);
+    expect(searchDomains(["AQ"], registry())).toEqual(fixed);
+    const reg = registry();
+    const codes = Array.from({ length: 80 }, (_, i) => `C${i}`);
+    for (const code of codes) reg.societies[code] = society({ name: `Society ${code}`, hosts: [`rc-${code.toLowerCase()}.org`] });
+    const list = searchDomains(codes, reg);
+    expect(list).toHaveLength(MAX_SEARCH_DOMAINS);
+    expect(list.slice(-fixed.length)).toEqual(fixed);
+    expect(new Set(list).size).toBe(list.length);
+    expect(list.every((d) => !isRegistrySuffix(d))).toBe(true);
+  });
+});
+
 describe("isBloodDonationPath", () => {
   it("spots blood-donation pages in several languages", () => {
     for (const p of ["/give-blood", "/donar-sangre", "/don-du-sang/", "/blutspende", "/%E7%8C%AE%E8%A1%80/", "/kan-bagisi", "/giving-blood"]) {
@@ -1224,7 +1282,7 @@ describe("small helpers", () => {
 describe("buildDonations", () => {
   const input = (over: Partial<DonationInput>): DonationInput => ({ countries: [], appeals: [], researched: [], ...over });
 
-  it("orders a Sudan flood: platform, UN Crisis Relief, research, appeal, IFRC", () => {
+  it("orders a Sudan flood: the appeal for it, then platform, UN Crisis Relief, research, IFRC", () => {
     const research = "https://srcs.sd/donate";
     const reg = registry({ verdicts: { [urlKey(research)]: verdict([research]) } });
     const links = buildDonations(
@@ -1238,29 +1296,39 @@ describe("buildDonations", () => {
       GOV,
     );
     expect(links).toEqual([
+      {
+        label: "IFRC appeal: Sudan - Floods",
+        url: `${IFRC_APPEAL_PAGE}MDRSD040`,
+        org: "IFRC",
+        kind: "appeal",
+        note: "The plan and updates for appeal MDRSD040 on ifrc.org; IFRC's donation page lets you give to it",
+        via: "registry",
+        forEvent: true,
+      },
       { label: "Donate to the Sudanese Red Crescent", url: "https://donate.redcrossredcrescent.org/sd/default/", org: "Sudanese Red Crescent", kind: "society", note: "On the Red Cross Red Crescent donation platform run by IFRC", via: "registry" },
       { label: "Donate to UN Crisis Relief for Sudan", url: "https://crisisrelief.un.org/donate-sudan-crisis", org: "UN Crisis Relief", kind: "un", note: "The UN's own donation page for Sudan", via: "registry" },
+      // Not marked as this event's page by the research, so it is not shown as one.
       { label: "Donate to the Sudanese Red Crescent", url: research, org: "Sudanese Red Crescent", kind: "society", note: "Flood appeal page", via: "research" },
-      { label: "IFRC appeal: Sudan - Floods", url: `${IFRC_APPEAL_PAGE}MDRSD040`, org: "IFRC", kind: "appeal", note: "The plan and updates for appeal MDRSD040 on ifrc.org; IFRC's donation page lets you give to it", via: "registry" },
       { label: "Donate to the IFRC", url: IFRC_DONATE, org: "IFRC", kind: "agency", note: "Give to IFRC's global work or choose a specific emergency", via: "registry" },
     ]);
   });
 
-  it("orders a Philippine typhoon: research, the society's own site, appeal, then both fallbacks", () => {
+  it("orders a Philippine typhoon: the appeal, research, the society's own site, then both fallbacks", () => {
     const gov = "https://www.dswd.gov.ph/donate";
     const site = "https://www.redcross.org.ph/";
     const reg = registry({ verdicts: { [urlKey(gov)]: verdict([gov]), [urlKey(site)]: verdict([site, "https://redcross.org.ph/"]) } });
     const links = buildDonations(input({ countries: ["PH"], appeals: [appeal()], researched: [{ url: gov, org: "DSWD", kind: "government", note: "" }] }), reg, NOW, GOV);
     expect(links.map((l) => [l.kind, l.via, l.url])).toEqual([
+      ["appeal", "registry", `${IFRC_APPEAL_PAGE}MDRPH060`],
       ["government", "research", gov],
       // IFRC lists http://www.redcross.org.ph/; the link and its check use https.
       ["society", "registry", site],
-      ["appeal", "registry", `${IFRC_APPEAL_PAGE}MDRPH060`],
       ["un", "registry", "https://crisisrelief.un.org/donate-global-emergency-fund"],
       ["agency", "registry", IFRC_DONATE],
     ]);
-    expect(links[0].note).toBe("Found by web research and checked against official sites");
-    expect(links[1].label).toBe("Give to the Philippine Red Cross");
+    expect(links.map((l) => l.forEvent === true)).toEqual([true, false, false, false, false]);
+    expect(links[1].note).toBe("Found by web research and checked against official sites");
+    expect(links[2].label).toBe("Give to the Philippine Red Cross");
   });
 
   it("shows the society's own site only after a fresh passing live check", () => {
@@ -1344,12 +1412,87 @@ describe("buildDonations", () => {
     expect(new Set(links.map((l) => urlKey(l.url))).size).toBe(links.length);
   });
 
-  it("caps the list at six links and three researched pages", () => {
+  it("caps the list at eight links, three researched pages about the event and three others", () => {
     const urls = [1, 2, 3, 4, 5].map((n) => `https://srcs.sd/p${n}`);
     const reg = registry({ verdicts: Object.fromEntries(urls.map((u) => [urlKey(u), verdict([u])])) });
-    const links = buildDonations(input({ countries: ["SD"], appeals: [appeal()], researched: urls.map((url) => ({ url, org: "SRCS", kind: "society", note: "" })) }), reg, NOW, GOV);
+    const general = buildDonations(input({ countries: ["SD"], appeals: [appeal()], researched: urls.map((url) => ({ url, org: "SRCS", kind: "society", note: "" })) }), reg, NOW, GOV);
+    expect(MAX_LINKS).toBe(8);
+    expect(general.filter((l) => l.via === "research")).toHaveLength(MAX_RESEARCHED);
+    // The appeal, platform, UN Crisis Relief, three researched pages and IFRC.
+    expect(general).toHaveLength(7);
+
+    const event = [1, 2, 3, 4].map((n) => `https://srcs.sd/flood-2026/e${n}`);
+    const both = registry({ verdicts: Object.fromEntries([...urls, ...event].map((u) => [urlKey(u), verdict([u])])) });
+    const researched = [...urls.map((url) => ({ url, org: "SRCS", kind: "society", note: "" })), ...event.map((url) => ({ url, org: "SRCS", kind: "society", note: "", specific: true }))];
+    const links = buildDonations(input({ countries: ["SD"], appeals: [appeal()], researched }), both, NOW, GOV);
     expect(links).toHaveLength(MAX_LINKS);
-    expect(links.filter((l) => l.via === "research")).toHaveLength(3);
+    expect(links.filter((l) => l.forEvent && l.via === "research").map((l) => l.url)).toEqual(event.slice(0, MAX_EVENT_PAGES));
+    // Event pages do not push out the society's platform page or UN Crisis Relief's page for the country.
+    expect(links.map((l) => l.url)).toEqual([...event.slice(0, 3), `${IFRC_APPEAL_PAGE}MDRPH060`, platformUrl("SD"), "https://crisisrelief.un.org/donate-sudan-crisis", urls[0], urls[1]]);
+  });
+
+  it("puts a checked page about a named typhoon first, then its appeal, then the general pages (Japan)", () => {
+    const champi = "https://www.jrc.or.jp/contribute/2026/champi/";
+    const reg = registry({ verdicts: { [urlKey(champi)]: verdict([champi]) } });
+    const links = buildDonations(
+      input({
+        countries: ["JP"],
+        appeals: [appeal({ code: "MDRJP020", name: "Japan - Typhoon Champi", kind: "DREF" })],
+        researched: [{ url: champi, org: "Japanese Red Cross Society", kind: "society", note: "Typhoon Champi relief donations", specific: true }],
+      }),
+      reg,
+      NOW,
+      GOV,
+    );
+    expect(links.map((l) => [l.url, l.forEvent === true])).toEqual([
+      [champi, true],
+      [`${IFRC_APPEAL_PAGE}MDRJP020`, true],
+      [platformUrl("JP"), false],
+      ["https://crisisrelief.un.org/donate-global-emergency-fund", false],
+      [IFRC_DONATE, false],
+    ]);
+    // Named from the registry, not the model, and still a researched page.
+    expect(links[0]).toMatchObject({ label: "Donate to the Japanese Red Cross Society", org: "Japanese Red Cross Society", kind: "society", via: "research", note: "Typhoon Champi relief donations" });
+  });
+
+  it("never shows an event page that failed or skipped the checks", () => {
+    const unchecked = "https://www.jrc.or.jp/contribute/2026/champi/";
+    const failed = "https://www.jrc.or.jp/contribute/2026/champi-2/";
+    const offList = "https://www.champi-relief.example.org/donate";
+    const reg = registry({ verdicts: { [urlKey(failed)]: verdict([failed], false), [urlKey(offList)]: verdict([offList]) } });
+    const researched = [unchecked, failed, offList].map((url) => ({ url, org: "JRCS", kind: "society", note: "", specific: true }));
+    const links = buildDonations(input({ countries: ["JP"], researched }), reg, NOW, GOV);
+    expect(links.some((l) => l.via === "research")).toBe(false);
+    expect(links.some((l) => l.forEvent)).toBe(false);
+  });
+
+  it("never marks a home page, a platform default page or a registry page as the event's own", () => {
+    const pages = [
+      "https://www.jrc.or.jp/",
+      "https://www.jrc.or.jp/en/",
+      "https://donate.redcrossredcrescent.org/jp/default/~my-donation",
+      "https://crisisrelief.un.org/en/donate-sudan-crisis",
+      "https://www.ifrc.org/donate",
+    ];
+    const redirected = "https://www.jrc.or.jp/contribute/champi";
+    const reg = registry({ verdicts: { ...Object.fromEntries(pages.map((u) => [urlKey(u), verdict([u])])), [urlKey(redirected)]: verdict([redirected, platformUrl("JP")]) } });
+    const researched = [...pages, redirected].map((url) => ({ url, org: "x", kind: "", note: "", specific: true }));
+    const links = researchedLinks(input({ countries: ["JP", "SD"], researched }), ctxFor(["JP", "SD"], reg), reg, NOW);
+    expect(links.length).toBeGreaterThan(0);
+    expect(links.filter(({ link }) => link.forEvent).map(({ link }) => link.url)).toEqual([]);
+  });
+
+  it("isGeneralPage knows home pages, platform default pages and the registry's pages", () => {
+    const keys = new Set([urlKey("https://crisisrelief.un.org/donate-sudan-crisis"), urlKey(IFRC_DONATE)]);
+    expect(isGeneralPage("https://www.jrc.or.jp/", keys)).toBe(true);
+    expect(isGeneralPage("https://www.jrc.or.jp/en/index.html", keys)).toBe(true);
+    expect(isGeneralPage("https://donate.redcrossredcrescent.org/jp/default/", keys)).toBe(true);
+    expect(isGeneralPage("https://crisisrelief.un.org/en/donate-sudan-crisis/", keys)).toBe(true);
+    expect(isGeneralPage("https://ifrc.org/donate", keys)).toBe(true);
+    expect(isGeneralPage("not a url", keys)).toBe(true);
+    expect(isGeneralPage("https://www.jrc.or.jp/contribute/2026/champi/", keys)).toBe(false);
+    expect(isGeneralPage("https://donate.redcrossredcrescent.org/jp/typhoon-champi/", keys)).toBe(false);
+    expect(isGeneralPage("https://crisisrelief.un.org/hurricane-melissa", keys)).toBe(false);
   });
 
   it("always gives at least two links, even at sea or for a country with no society", () => {
@@ -1454,6 +1597,22 @@ describe("prepareDonations", () => {
     expect(d.fetch.mock.calls.map((c) => String(c[0]))).toEqual([good]);
     expect(links.filter((l) => l.via === "research").map((l) => l.url)).toEqual([cached, good]);
     expect(d.log).toHaveBeenCalledWith(expect.stringContaining("rejected (host not on the allowlist)"));
+  });
+
+  it("checks pages the research marked as the event's own first, and lists them first", async () => {
+    const general = "https://redcross.or.th/donate";
+    const event = "https://redcross.or.th/donate/flood-2026";
+    const site = "https://www.redcross.or.th/";
+    const reg = registry({ verdicts: { [urlKey(site)]: verdict([site]) } });
+    const d = deps(() => page("trcs-th"));
+    const researched = [
+      { url: general, org: "TRCS", kind: "society", note: "" },
+      { url: event, org: "TRCS", kind: "society", note: "Flood appeal", specific: true },
+    ];
+    const links = await prepareDonations({ countries: ["TH"], appeals: [], researched }, reg, d, NOW, { maxChecks: 1, pauseMs: 0, governmentDomains: GOV });
+    expect(d.fetch.mock.calls.map((c) => String(c[0]))).toEqual([event]);
+    expect(links[0]).toMatchObject({ url: event, forEvent: true, via: "research" });
+    expect(links.map((l) => l.url)).not.toContain(general);
   });
 
   it("stops after maxChecks live checks of researched pages; the society site's check is extra", async () => {

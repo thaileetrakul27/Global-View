@@ -14,7 +14,7 @@ import type { FetchDeps } from "../googlenews";
 import { writeCompactJson, writeJson } from "../io";
 import type { CountryResolver } from "../resolve";
 import { averageResearchCost, canSpend, noteResearch, researchAllowance, type Budget, type Ledger } from "../spend";
-import { REGISTRY_PATH, buildDonations, prepareDonations, readRegistry, refreshRegistry, writeRegistry, type DonationRegistry } from "./donate";
+import { REGISTRY_PATH, buildDonations, prepareDonations, readRegistry, refreshRegistry, searchDomains, writeRegistry, type DonationRegistry } from "./donate";
 import { fetchEonet } from "./eonet";
 import { fetchGdacs } from "./gdacs";
 import { GEOCODE_CACHE_PATH, createGeocoder, placeArea, placeFromHit, readGeocodeCache, writeGeocodeCache, type Geocoder } from "./geocode";
@@ -27,7 +27,11 @@ import {
   pruneResearchCache,
   readResearchCache,
   researchDisaster,
+  searchDonationPages,
+  selectDonationBackfill,
   selectForResearch,
+  wantsDonationSearch,
+  withDonationSearch,
   writeResearchCache,
   type ResearchCache,
   type ResearchEntry,
@@ -117,6 +121,11 @@ export function readAttempts(path = ATTEMPTS_PATH): Record<string, string> {
   } catch {
     return {};
   }
+}
+
+/** The attempts key for a disaster's failed donation search, apart from its research's own key. */
+export function donationAttemptKey(id: string): string {
+  return `donation:${id}`;
 }
 
 /** Drops failed attempts older than the retry window. */
@@ -370,9 +379,21 @@ async function fetchFeeds(run: DisasterRun, snapshots: Snapshots): Promise<{ eve
 
 /**
  * Runs web research on the disasters that need it most, within the day's
- * allowance, this run's cap and a time limit. Updates cache and attempts.
+ * allowance, this run's cap and a time limit. A significant disaster (or
+ * one with an IFRC appeal) also gets a donation search for pages about the
+ * event, right after its research. Then disasters researched before the
+ * donation search existed, or before they became significant, get one
+ * (at most MAX_DONATION_BACKFILL), within the same limits. The registry
+ * gives each search its official sites. Updates cache and attempts.
  */
-async function runResearch(run: DisasterRun, disasters: Disaster[], cache: ResearchCache, attempts: Record<string, string>, paths: CachePaths): Promise<number> {
+async function runResearch(
+  run: DisasterRun,
+  disasters: Disaster[],
+  cache: ResearchCache,
+  attempts: Record<string, string>,
+  paths: CachePaths,
+  registry: DonationRegistry,
+): Promise<number> {
   const { ai, ledger, budget, now, log } = run;
   if (!ai || run.offline) return 0;
   if (!canSpend(ledger, budget, now)) {
@@ -384,33 +405,67 @@ async function runResearch(run: DisasterRun, disasters: Disaster[], cache: Resea
   const picked = selectForResearch(candidates, cache, now, { maxCalls: budget.maxResearchPerRun, allowanceUsd: researchAllowance(ledger, budget, now), costEstimateUsd: estimate });
   log(`Research: ${picked.length} of ${disasters.length} disasters picked (allowance $${researchAllowance(ledger, budget, now).toFixed(2)}, about $${estimate.toFixed(3)} each)`);
   const stopAt = Math.min(Date.now() + RESEARCH_TIME_MS, run.deadline ?? Infinity);
+  // Checked before each new research or donation search; the allowance is
+  // read again each time, from the real spend. Once false, false for the run.
+  let stopped = false;
+  const mayStart = (): boolean => {
+    if (stopped) return false;
+    if (Date.now() > stopAt) log("Research: time limit reached; the rest wait for the next run");
+    else if (researchAllowance(ledger, budget, now) < estimate || !canSpend(ledger, budget, now)) log("Research: today's allowance is used up");
+    else return true;
+    stopped = true;
+    return false;
+  };
+  // Saved after every call, so a run cut off later keeps what it paid for.
+  const save = () => {
+    writeResearchCache(cache, paths.research);
+    writeJson(paths.attempts, attempts);
+  };
+  // One donation search for a disaster with a cached entry; its pages are merged into the entry.
+  const searchDonations = async (d: Disaster): Promise<void> => {
+    const entry = cache[d.id];
+    if (!entry) return;
+    const pages = await searchDonationPages(ai, d, { countryNames: run.countryNames, allowedDomains: searchDomains(d.countries, registry), now, entry, log });
+    if (pages === null) {
+      attempts[donationAttemptKey(d.id)] = now;
+      log(`  donation search failed for ${d.id}; retried after ${RETRY_FAILED_HOURS} h`);
+      return;
+    }
+    cache[d.id] = withDonationSearch(entry, pages, now);
+    log(`  donation search for ${d.id}: ${pages.length} pages, ${pages.filter((p) => p.specific).length} about the event`);
+  };
+
   let done = 0;
+  const handled = new Set<string>();
   for (const d of picked) {
-    if (Date.now() > stopAt) {
-      log("Research: time limit reached; the rest wait for the next run");
-      break;
-    }
-    // The allowance is read again after each call, from the real spend.
-    if (researchAllowance(ledger, budget, now) < estimate || !canSpend(ledger, budget, now)) {
-      log("Research: today's allowance is used up");
-      break;
-    }
+    if (!mayStart()) break;
+    handled.add(d.id);
     const headlines = relatedHeadlines(d, run.articles);
     const callsBefore = totalCalls(ledger);
     const entry = await researchDisaster(ai, d, { countryNames: run.countryNames, headlines, resolve: run.resolve, now, log });
-    // One researched disaster for the cost average, however many responses it took.
-    if (totalCalls(ledger) > callsBefore) noteResearch(ledger, new Date().toISOString());
     if (entry) {
       cache[d.id] = entry;
       done++;
       log(`  researched ${d.id}: ${entry.places.length} places, ${entry.figures.length} figures, ${entry.donation.length} donation pages, ${entry.searches} searches`);
+      // Part of the same research, so only the deadline and the month's cap can stop it here.
+      if (wantsDonationSearch(d) && Date.now() <= (run.deadline ?? Infinity) && canSpend(ledger, budget, now)) await searchDonations(d);
     } else {
       attempts[d.id] = now;
       log(`  research failed for ${d.id}; retried after ${RETRY_FAILED_HOURS} h`);
     }
-    // Saved after every research, so a run cut off later keeps what it paid for.
-    writeResearchCache(cache, paths.research);
-    writeJson(paths.attempts, attempts);
+    // One researched disaster for the cost average, however many responses it and its donation search took.
+    if (totalCalls(ledger) > callsBefore) noteResearch(ledger, new Date().toISOString());
+    save();
+  }
+
+  // Entries without a donation search. These are not counted as researches,
+  // so their spend raises the cost average a little: the safe side.
+  const backfill = stopped ? [] : selectDonationBackfill(disasters, cache, (id) => handled.has(id) || Boolean(attempts[donationAttemptKey(id)]));
+  if (backfill.length > 0) log(`Research: donation search for ${backfill.length} disasters researched earlier`);
+  for (const d of backfill) {
+    if (!mayStart()) break;
+    await searchDonations(d);
+    save();
   }
   return done;
 }
@@ -466,10 +521,13 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
     }
   }
 
-  // Web research within the budget, then its results on every disaster that has them.
+  // Web research within the budget, then its results on every disaster that
+  // has them. The donation search takes its official sites from the cached
+  // registry, which is refreshed further down.
   const cache = readResearchCache(paths.research);
   const attempts = pruneAttempts(readAttempts(paths.attempts), now);
-  await runResearch(run, disasters, cache, attempts, paths);
+  let registry: DonationRegistry = readRegistry(paths.registry);
+  await runResearch(run, disasters, cache, attempts, paths, registry);
   const enriched: Disaster[] = [];
   for (const d of disasters) {
     const entry = cache[d.id];
@@ -484,7 +542,6 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   disasters = enriched.filter((d) => isOngoing(d, now) || d.appeals.length > 0).map((d) => trimSeaAreas(d, run.shapes));
 
   // Donation pages: registries by fixed rule plus researched pages that pass the allowlist and a live check.
-  let registry: DonationRegistry = readRegistry(paths.registry);
   if (!run.offline) registry = await refreshRegistry(registry, deps, now, run.resolve, { probeCodes: [...run.globeCodes] });
   let checks = 0;
   const unreachable = new Set<string>();

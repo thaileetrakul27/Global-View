@@ -205,6 +205,8 @@ export interface DonationLink {
   kind: "appeal" | "society" | "un" | "government" | "agency";
   note: string;
   via: "registry" | "research";
+  /** A page for this disaster itself (its appeal, or a checked page researched for it). Missing in older files. */
+  forEvent?: boolean;
 }
 
 export interface Disaster {

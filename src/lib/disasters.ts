@@ -260,7 +260,7 @@ function urlKey(url: string): string {
   return `${u.hostname.toLowerCase()}${u.pathname.replace(/\/+$/, "")}${u.search}`;
 }
 
-export type DonationGroupKey = "redcross" | "un" | "agency" | "government";
+export type DonationGroupKey = "event" | "redcross" | "un" | "agency" | "government";
 
 export interface DonationGroup {
   key: DonationGroupKey;
@@ -277,6 +277,7 @@ const GROUP_OF: Record<DonationLink["kind"], DonationGroupKey> = {
 };
 
 const GROUPS: { key: DonationGroupKey; label: string }[] = [
+  { key: "event", label: "For this disaster" },
   { key: "redcross", label: "Red Cross and Red Crescent" },
   { key: "un", label: "United Nations" },
   { key: "agency", label: "Agencies" },
@@ -297,14 +298,21 @@ export function safeDonations(links: readonly DonationLink[]): DonationLink[] {
   return out;
 }
 
+/** The group a link goes in: pages for this disaster itself first, the rest by who runs them. */
+function groupOf(link: DonationLink): DonationGroupKey | undefined {
+  // Only a real true counts: older files have no forEvent at all.
+  return link.forEvent === true ? "event" : GROUP_OF[link.kind];
+}
+
 /**
- * Safe donation links grouped by who runs them: Red Cross and Red Crescent,
- * United Nations, agencies, government funds. Empty groups are left out;
- * within a group the pipeline's order is kept.
+ * Safe donation links grouped: pages for this disaster itself (its appeal,
+ * checked pages researched for it) first, then the rest by who runs them:
+ * Red Cross and Red Crescent, United Nations, agencies, government funds.
+ * Empty groups are left out; within a group the pipeline's order is kept.
  */
 export function groupDonations(links: readonly DonationLink[]): DonationGroup[] {
   const safe = safeDonations(links);
-  return GROUPS.map((g) => ({ ...g, links: safe.filter((l) => GROUP_OF[l.kind] === g.key) })).filter((g) => g.links.length > 0);
+  return GROUPS.map((g) => ({ ...g, links: safe.filter((l) => groupOf(l) === g.key) })).filter((g) => g.links.length > 0);
 }
 
 // Appeals
