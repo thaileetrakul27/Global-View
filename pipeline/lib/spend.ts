@@ -95,7 +95,13 @@ export interface Budget {
   safetyUsd: number;
   /** Assumed daily spend on translation, grouping and news before a full day has been seen. */
   defaultDailyOtherUsd: number;
-  /** Most web research calls one pipeline run may make. */
+  /**
+   * Most disasters one pipeline run may research; 0 turns web research off.
+   * Each researched disaster may add one donation search, and at most this
+   * many more (never above MAX_DONATION_BACKFILL in disasters/research.ts)
+   * go to disasters researched earlier. The day's allowance and the monthly
+   * cap bound the spend of all of them.
+   */
   maxResearchPerRun: number;
 }
 

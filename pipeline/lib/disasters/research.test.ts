@@ -62,6 +62,7 @@ import {
   validPlaces,
   wantsDonationSearch,
   withDonationSearch,
+  withEarlierSearch,
   writeResearchCache,
   type DonationSearchContext,
   type DonationSearchParse,
@@ -159,6 +160,7 @@ const research = (over: Partial<ResearchResult> = {}): ResearchResult => ({
     { url: "https://reliefweb.int/report/japan/champi", title: "Japan: Typhoon Champi - Flash Update", pageAge: "1 day ago" },
   ],
   searches: 3,
+  okSearches: 3,
   ...over,
 });
 
@@ -1021,6 +1023,7 @@ const donationResearch = (over: Partial<ResearchResult> = {}): ResearchResult =>
     { url: "https://www.jrc.or.jp/contribute/", title: "Donate" },
   ],
   searches: 2,
+  okSearches: 2,
   ...over,
 });
 
@@ -1167,6 +1170,18 @@ describe("searchDonationPages", () => {
     expect(log.mock.calls[0][0]).toContain("no official pages found");
   });
 
+  it("fails (null), without a parse, when no search worked: every one came back as an error, or none was made", async () => {
+    // Rate-limited: the model still writes notes, but nothing was searched.
+    const { ai, parse } = fakeDonationAi(donationResearch({ text: "Donation pages: none found", citations: [], results: [], okSearches: 0 }), [donationParse()]);
+    const log = vi.fn();
+    expect(await searchDonationPages(ai, disaster(), donationCtx({ log }))).toBeNull();
+    expect(parse).not.toHaveBeenCalled();
+    expect(log.mock.calls[0][0]).toContain("no search worked");
+    // An answer from memory, with no search at all.
+    const memory = fakeDonationAi(donationResearch({ citations: [], results: [], searches: 0, okSearches: 0 }), [donationParse()]);
+    expect(await searchDonationPages(memory.ai, disaster(), donationCtx())).toBeNull();
+  });
+
   it("fails (null) when the search call fails or gives no notes, so it can be tried again", async () => {
     const failed = fakeDonationAi(null, [donationParse()]);
     expect(await searchDonationPages(failed.ai, disaster(), donationCtx())).toBeNull();
@@ -1223,11 +1238,66 @@ describe("withDonationSearch", () => {
     expect(before.donationSearched).toBeUndefined();
   });
 
+  it("replaces the pages an earlier search left on the entry, keeping the research's own", () => {
+    const d = disaster();
+    const before = entry(d, {
+      donation: [
+        { url: "https://www.jrc.or.jp/contribute/2026/old-appeal/", org: "JRCS", kind: "society", note: "Earlier appeal", specific: true },
+        { url: "https://www.jrc.or.jp/contribute/general/", org: "JRCS", kind: "society", note: "", specific: false },
+        { url: "https://www.unicef.org/emergencies", org: "UNICEF", kind: "agency", note: "" },
+      ],
+    });
+    const after = withDonationSearch(before, [{ url: CHAMPI_PAGE, org: "JRCS", kind: "society", note: "", specific: true }], NOW);
+    expect(after.donation.map((p) => p.url)).toEqual([CHAMPI_PAGE, "https://www.unicef.org/emergencies"]);
+    // A search that worked and found nothing replaces them too.
+    expect(withDonationSearch(before, [], NOW).donation.map((p) => p.url)).toEqual(["https://www.unicef.org/emergencies"]);
+  });
+
   it("records a search that found nothing and keeps at most ten pages", () => {
     const d = disaster();
     expect(withDonationSearch(entry(d), [], NOW)).toMatchObject({ donation: [], donationSearched: NOW });
     const many = Array.from({ length: 12 }, (_, i) => ({ url: `https://a.example/${i}`, org: "A", kind: "" as const, note: "" }));
     expect(withDonationSearch(entry(d, { donation: many.slice(0, 5) }), many, NOW).donation).toHaveLength(MAX_ENTRY_DONATIONS);
+  });
+});
+
+describe("withEarlierSearch", () => {
+  const d = disaster();
+  /** An entry from two days ago whose donation search found an event page and a general one. */
+  const searched = withDonationSearch(
+    entry(d, { at: hoursAgo(50), donation: [{ url: "https://www.unicef.org/emergencies", org: "UNICEF", kind: "agency", note: "Old research" }] }),
+    [
+      { url: "https://www.jrc.or.jp/contribute/", org: "JRCS", kind: "society", note: "General", specific: false },
+      { url: CHAMPI_PAGE, org: "JRCS", kind: "society", note: "Typhoon Champi relief", specific: true },
+    ],
+    hoursAgo(50),
+  );
+  const fresh = entry(d, { donation: [{ url: "https://www.jrc.or.jp/contribute/champi/", org: "Japanese Red Cross Society", kind: "society", note: "From the new research" }] });
+
+  it("carries over the pages the replaced entry's donation search found, event pages first, without marking a search", () => {
+    const out = withEarlierSearch(fresh, searched);
+    expect(out.donation.map((p) => [p.url, p.specific])).toEqual([
+      [CHAMPI_PAGE, true],
+      ["https://www.jrc.or.jp/contribute/", false],
+      ["https://www.jrc.or.jp/contribute/champi/", undefined],
+    ]);
+    // The old research's own page is not carried; the new research has its own.
+    expect(out.donation.map((p) => p.url)).not.toContain("https://www.unicef.org/emergencies");
+    expect(out.donationSearched).toBeUndefined();
+    expect(out.summary).toBe(fresh.summary);
+    expect(fresh.donation).toHaveLength(1);
+  });
+
+  it("keeps carrying them while searches fail, and gives them up once a new search works", () => {
+    const again = withEarlierSearch(entry(d), withEarlierSearch(fresh, searched));
+    expect(again.donation.map((p) => p.url)).toEqual([CHAMPI_PAGE, "https://www.jrc.or.jp/contribute/"]);
+    const after = withDonationSearch(again, [{ url: "https://www.jrc.or.jp/contribute/2026/champi-2/", org: "JRCS", kind: "society", note: "", specific: true }], NOW);
+    expect(after.donation.map((p) => p.url)).toEqual(["https://www.jrc.or.jp/contribute/2026/champi-2/"]);
+  });
+
+  it("leaves the new entry as it is when nothing was searched before", () => {
+    expect(withEarlierSearch(fresh, undefined)).toBe(fresh);
+    expect(withEarlierSearch(fresh, entry(d, { donation: [{ url: "https://www.unicef.org/emergencies", org: "UNICEF", kind: "agency", note: "" }] }))).toBe(fresh);
   });
 });
 

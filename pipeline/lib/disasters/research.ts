@@ -163,7 +163,8 @@ export interface ResearchEntry {
   /**
    * ISO time of the donation search (searchDonationPages) whose pages were
    * merged into donation; missing until one has run for this entry. A
-   * refreshed entry starts without it, so the search runs again.
+   * refreshed entry starts without it, so the search runs again; until that
+   * search works, the entry keeps the last one's pages (withEarlierSearch).
    */
   donationSearched?: string;
 }
@@ -1002,9 +1003,10 @@ export function buildDonationParsePrompt(
 /**
  * Searches official sites for donation pages about this disaster: one web
  * search limited to ctx.allowedDomains, then a parse (tried twice, as in
- * researchDisaster), then validEventPages. An empty list when the search
- * found no page; null when a call failed, so the caller can try again
- * later. Never throws.
+ * researchDisaster), then validEventPages. An empty list when a search
+ * worked and found no page; null when a call failed or no search worked
+ * (every one came back as an error, or none was made), so the caller can
+ * try again later. Never throws.
  */
 export async function searchDonationPages(ai: AiClient, disaster: Disaster, ctx: DonationSearchContext): Promise<ResearchDonation[] | null> {
   const log = ctx.log ?? (() => {});
@@ -1017,9 +1019,14 @@ export async function searchDonationPages(ai: AiClient, disaster: Disaster, ctx:
     }
     const parsePrompt = buildDonationParsePrompt(disaster, ctx.countryNames, research, ctx.now);
     // No page came back, so there is nothing a page could be taken from.
+    // That is a finding only when a search worked; otherwise nothing was searched.
     if (parsePrompt.listed.length === 0) {
-      log(`  donation search: no official pages found for ${disaster.id}`);
-      return [];
+      if (research.okSearches > 0) {
+        log(`  donation search: no official pages found for ${disaster.id}`);
+        return [];
+      }
+      log(`  donation search: no search worked for ${disaster.id}`);
+      return null;
     }
     if (!research.text?.trim()) {
       log(`  donation search: no notes for ${disaster.id}`);
@@ -1041,13 +1048,19 @@ export async function searchDonationPages(ai: AiClient, disaster: Disaster, ctx:
   }
 }
 
+/** True for a page a donation search found: only the search marks a page as about the event or not. */
+function fromDonationSearch(p: ResearchDonation): boolean {
+  return typeof p.specific === "boolean";
+}
+
 /**
- * The entry with a donation search's pages merged in: the search's pages
- * about the event first, then its other pages, then the research's own,
- * each URL once, at most MAX_ENTRY_DONATIONS; and the time of the search.
+ * A search's pages about the event first, then its other pages, then the
+ * research's own from the entry, each URL once, at most MAX_ENTRY_DONATIONS.
+ * Pages an earlier search left on the entry give way to these.
  */
-export function withDonationSearch(entry: ResearchEntry, pages: ResearchDonation[], now: string): ResearchEntry {
-  const ordered = [...pages.filter((p) => p.specific === true), ...pages.filter((p) => p.specific !== true), ...entry.donation];
+function mergeDonations(pages: ResearchDonation[], entry: ResearchEntry): ResearchDonation[] {
+  const own = entry.donation.filter((p) => !fromDonationSearch(p));
+  const ordered = [...pages.filter((p) => p.specific === true), ...pages.filter((p) => p.specific !== true), ...own];
   const keys = new Set<string>();
   const donation: ResearchDonation[] = [];
   for (const d of ordered) {
@@ -1056,7 +1069,26 @@ export function withDonationSearch(entry: ResearchEntry, pages: ResearchDonation
     keys.add(key);
     donation.push(d);
   }
-  return { ...entry, donation, donationSearched: now };
+  return donation;
+}
+
+/**
+ * The entry with a donation search's pages merged in (see mergeDonations:
+ * they replace any an earlier search found) and the time of the search.
+ */
+export function withDonationSearch(entry: ResearchEntry, pages: ResearchDonation[], now: string): ResearchEntry {
+  return { ...entry, donation: mergeDonations(pages, entry), donationSearched: now };
+}
+
+/**
+ * A new research entry with the pages the donation search of the entry it
+ * replaces found carried over, so a re-research loses none of them before a
+ * new search has worked. No donationSearched is added, so the search is
+ * still made, or tried again; when it works, its pages replace these.
+ */
+export function withEarlierSearch(entry: ResearchEntry, previous: ResearchEntry | undefined): ResearchEntry {
+  const found = (previous?.donation ?? []).filter(fromDonationSearch);
+  return found.length > 0 ? { ...entry, donation: mergeDonations(found, entry) } : entry;
 }
 
 // ---------------------------------------------------------------------------
