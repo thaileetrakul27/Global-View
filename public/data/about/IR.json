@@ -1,105 +1,35 @@
 {
   "code": "IR",
-  "updated": "2026-10-22T08:03:09.184Z",
+  "updated": "2026-10-22T14:17:21.809Z",
   "articles": [
     {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTVY1M3YwX1lWc1FBeU9ZSV9xWVNlY1NHOF92VFV2SWRpQlJwWXFPZkZjQnlybUZTQkZMODA3dDI5WUJnTkxKSDYxX3BOT0VMVnl2Qm1reGtSclI0em15X1AtYWE4X1R4R0ZjQjZPRTlRWUhpOV81ekdLUGgxRnFpbXI1WEI5dHZreC10WE43TW5zMFFWQ3FsQzI3eTVsNTYwblNwclN2bEpQVGZHdzZXTjN6dmRzMms?oc=5",
-      "title": "LIVE | ’VS en Israël willen na midterms genadeklap uitdelen aan Iran’",
-      "en": "LIVE | 'US and Israel want to deliver a death blow to Iran after the midterms'",
-      "outlet": "De Telegraaf",
-      "published": "2026-10-22T07:42:28.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TH",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5LVWtBNjQ5R3hOelJBclhLWll6LTNVQ1VVWmlXTlFtdGxhR1RmdE90LVRwZTVRSXJSMnFZcFEtUzZIcFAzNlJiNFY4OS1vZThRUVV3cncyZHZPclZ0WmxzVDR0MlE?oc=5",
-      "title": "อิหร่านเล็งรีดเงินยักษ์เทคสหรัฐ ‘เก็บค่าสายเคเบิลเน็ต’ ใต้ฮอร์มุซ",
-      "en": "Iran plans to squeeze US tech giants by charging for internet cable access under Hormuz",
-      "outlet": "bangkokbiznews",
-      "published": "2026-10-22T07:30:29.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNlpNLVNfVk1VT0hfbTdnLVdiaFpRNUN3dHhFeGUta25ZVngyQnpYeXh0WGc1SnJjOU5DdUQtNVFKQWlQaGU0OUY3UERfdFpKMXNwcGwtcHVNakM4RWY4N3lCMmhXeXlKdmZZNWpaTzM3aWpnZzlmTU1jUzFOMnVWZWxUQUVKaTdYZnpoMU1oMVNwaXNUcC1OdmVKVkdVWUFid0ZCZEhkZ2dYSHRrZ1hsR3FlY2tVUjV2c3NDeWdQVmI?oc=5",
-      "title": "Atac pregătit în detaliu împotriva Iranului. SUA și Israelul pun la cale o nouă ofensivă militară",
-      "en": "Attack planned in detail against Iran. The US and Israel are preparing a new military offensive",
-      "outlet": "HotNews.ro",
-      "published": "2026-10-22T07:12:03.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TH",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SczRIVGl2dXNQX2ZrUnNPSm42d3JsbFdTeUV4TWVzVUdKVk96b1BmOXVISjBJa0tHVWNaYXNQNTlXYnRBRzROaDh2b1NWU0RuY29QREZFcll1WnZXZ2c?oc=5",
-      "title": "สื่อมะกันเผยสหรัฐฯ เริ่ม 'ถอนทหาร' ออกจากฐานทัพในตอ.กลาง สัญญาณเตรียมซัด 'อิหร่าน' รอบใหม่",
-      "en": "US media reports US begins 'withdrawing troops' from bases in central Middle East, signaling preparations for a new round of strikes on Iran",
-      "outlet": "MGR Online",
-      "published": "2026-10-22T07:03:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TH",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9VN0xVeUIwV01wWUFVV09sRjQwdTFrenVjblVaamdqOTgtcW81NjZQUjcydC1PTzdETUQzQUE1UEhYcVhCYUdkQ2pZa05tS055WGZn?oc=5",
-      "title": "“เนทันยาฮู” ชี้ ต้องโค่นล้มรัฐบาลอิหร่าน เป็นทางเดียวที่จะจบสงคราม",
-      "en": "\"Netanyahu\" says overthrowing the Iranian government is the only way to end the war",
-      "outlet": "TNN Thailand",
-      "published": "2026-10-22T06:37:37.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BD",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBrTlRBWlBLTXJsYURFcW1NOHAza2RLaHJVRWdZOWV6NDNFbFBJV2tKbmhiRTRjNERoSTVkbDBTWnl3Y3VRS0V3SW5OWURvZC0wOG15R29fenBGNFJtR3B2QlRXMFdlQdIBc0FVX3lxTFAyV1NUWlRGaTNOcnRwX2gyczVXRTc1VVVGOHVrclRvd2hocm5hcktqc0V1ZGNONlNIb2JXWGlnNFNkS3lieUpuLTlSZ19KdERlTVlsVi1mc3Q5N2ZxZlpVb1d6ZEJxSTFDdFhjLUNQTzQzMk0?oc=5",
-      "title": "ইরানের বাইরে কোথাও যাবে না সম্মৃদ্ধ ইউরেনিয়াম, নতুন মার্কিন হামলার আশঙ্কার মধ্যেও অনড় তেহরান",
-      "en": "Enriched uranium will not go anywhere outside Iran; Tehran remains firm even amid fears of new US attack",
-      "outlet": "প্রথম আলো",
-      "published": "2026-10-22T06:09:12.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TR",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaUVZU0lwRXhrY1dWRDU2aHVRbjFRWW9CUEE0Tm96cklzU25kQUpNVlBvc0ZOMWJxUWtkdDdIbFY5S2ZxQ2hJWjFsczV5Tm1hOWZwQVoxR1Z1WmFCYWR3MVNvWUYzbmc4RFZneG83SkNTMWJuVjB4c2hYU1lLYk56X0tiMFdzQkNUd09FQmg0cDdGN0h6cXlRdzZldHlyb1hvR2w5Uy1n?oc=5",
-      "title": "İran ordusu: Basra Körfezi'nde petrol transferi yapan 4 gemi vuruldu",
-      "en": "Iranian army: 4 ships transporting oil in the Persian Gulf were struck",
-      "outlet": "Bloomberght",
-      "published": "2026-10-22T06:09:03.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQjRQRFp0Q3FEMUFOcTluc3BoTjRZTWd4a25fbTZBeDNwclJERmdxSkVCQW9SVFdlV09jTUdVeE0zZnRqM2xybkF0RjNRSFA4R2dkWnZ4aExVY2xIQ1kyREUxRHdjdUo1VTNYSWVKaF9CZWs0NVNWaWlwSURyM0JyS2NyX29CclQ2VXZYcUNUUzlrZ3V4enN3eUR6RmJJbTctbGhKZA?oc=5",
-      "title": "وزير خارجية إيران يفصّل خطة الـ7 أيام لفتح مضيق هرمز بمقال",
-      "en": "Iranian foreign minister details 7-day plan to open the Strait of Hormuz in an article",
-      "outlet": "CNN Arabic",
-      "published": "2026-10-22T06:05:07.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNWDJ0S2ZlbWhUVi1wREJBeEJ5QWtJNFdkSFN4bWtQOVN0ZFhiZzdhcGc3dWlQdzZxUzF1bElTYVowdE1kSDZlOWNsaGEtZmpKV1hLTnVfRXFoWnE4dk9lSnpFV29tQVAwMnJja1huSWZYTmNIRVZaZUp0M2V4Z2xERnFEMW4ta25sWjlCajJ4WlpjZi1IRG0xak10bG1iWGI3Tjg3M3VkWXdWVXd4c01jdnJtVWt3aTZ5SDk1S0cycDRNWWI1cGswMWhEdzZKVTd4bXEwMEIxQ2FDSVFGWU1OSUd1WHAxcnpNYWdaSDk0R2RYeGt1SEFBRFQyZG8xX1VYeDRoa0h3VUNSbHpGOWREV09BRWFPYkxGLTkxTXk3WXVFNlJzQXZUMlJlelM4emo1?oc=5",
+      "title": "مرصد هرمز | العبور يرتفع والنفط يقفز.. والمضيق على طاولة لقاء رباعي في إسطنبول",
+      "en": "Hormuz monitor: transit rises and oil jumps... and the strait is on the table of a quadrilateral meeting in Istanbul",
+      "outlet": "الشرق بلومبرغ",
+      "published": "2026-10-22T13:44:31.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNWDJ0S2ZlbWhUVi1wREJBeEJ5QWtJNFdkSFN4bWtQOVN0ZFhiZzdhcGc3dWlQdzZxUzF1bElTYVowdE1kSDZlOWNsaGEtZmpKV1hLTnVfRXFoWnE4dk9lSnpFV29tQVAwMnJja1huSWZYTmNIRVZaZUp0M2V4Z2xERnFEMW4ta25sWjlCajJ4WlpjZi1IRG0xak10bG1iWGI3Tjg3M3VkWXdWVXd4c01jdnJtVWt3aTZ5SDk1S0cycDRNWWI1cGswMWhEdzZKVTd4bXEwMEIxQ2FDSVFGWU1OSUd1WHAxcnpNYWdaSDk0R2RYeGt1SEFBRFQyZG8xX1VYeDRoa0h3VUNSbHpGOWREV09BRWFPYkxGLTkxTXk3WXVFNlJzQXZUMlJlelM4emo1?oc=5",
+      "title": "مرصد هرمز | العبور يرتفع والنفط يقفز.. والمضيق على طاولة لقاء رباعي في إسطنبول",
+      "en": "Hormuz monitor: transit rises and oil jumps... and the strait is on the table of a quadrilateral meeting in Istanbul",
+      "outlet": "الشرق بلومبرغ",
+      "published": "2026-10-22T13:44:31.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oS2gwQklGY2dDWnBfM0czSmZOWV9PeDhlbWd1VGJpOGdTUUZkdUNDQjdwSWhodWxTcFN5czVybzlHSEpSRzE0ck5abm54TGsyQzVqXzAtYl82cWU4emV5ZE1GTk1iYjlZcWlpVUJn?oc=5",
-      "title": "L’Iran ha quasi esaurito il petrolio della “flotta fantasma”",
-      "en": "Iran has almost exhausted the oil of the \"ghost fleet\"",
-      "outlet": "Il Post",
-      "published": "2026-10-22T06:03:36.000Z",
-      "outlets": 2,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Ba3NWSkZod2FDdWhYNnh1Sk5fWGFfOU9wcE9HQ2JFYjRldnhHTGFKQlFLZkF4S2F2ZDBkcnJpV3dMdTltYnNISlJoU005b0FpdzUtZHRkRGwzdVk?oc=5",
-      "title": "이란군 \"페르시아만 선박 7척 불에 타\"…'원유 환적' 경고",
-      "en": "Iranian military: 7 ships burned in the Persian Gulf… warning on crude oil transshipment",
-      "outlet": "연합뉴스",
-      "published": "2026-10-22T05:58:48.000Z",
-      "outlets": 5,
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYWpfU29CUVhzTmlJbU85NW5NeDRmd0FtY1BiME54OG5sYjF1enZMTGlqNDJmcXdGMjFSejd4ZFkycGd1NEo2Q3pERnlmYV9KdFJDV1FTdll3bWhEZldYS25Pdnd0Sk02aWZxZWlsY1lMTUZtRlRPUXZJeUd4QW5fUXh2RkV2a2dzTzNwdzIzWTJCRzBuUGpHRG4zNHE?oc=5",
+      "title": "Guerra in Iran, le news. New York Times: “Usa e Israele elaborano piani d’attacco dopo le midterm”",
+      "en": "War in Iran, the news. New York Times: \"US and Israel prepare attack plans after the midterms\"",
+      "outlet": "la Repubblica",
+      "published": "2026-10-22T13:36:19.000Z",
+      "outlets": 4,
       "trending": false
     },
     {
@@ -108,7 +38,507 @@
       "title": "Orta Doğu'da tansiyon yükseldi: Trump'tan İran'a saldırı sinyali! Devrim Muhafızları Hürmüz'de harekete geçti",
       "en": "Tension rises in the Middle East: Trump signals attack on Iran! Revolutionary Guards move in Hormuz",
       "outlet": "Hürriyet",
-      "published": "2026-10-22T05:56:47.000Z",
+      "published": "2026-10-22T12:59:52.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "TH",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAzWDl4UHhiZGZFVU90MThjdFNSVEtpNGJOLVNuTFM1V3lUMDNVUGtoNVAxUXdNTGxIdV9Jd0FSU19RbGR3aTZGSW5fX3lKOHhBMVRaWg?oc=5",
+      "title": "ผู้สมัครชิงเก้าอี้ \"ปธน.ฝรั่งเศส\" ลั่นไม่เห็นด้วยสหรัฐฯ โจมตีอิหร่าน | เข้มข่าวค่ำ | 22 ต.ค. 69",
+      "en": "Candidate for French presidency says he disagrees with US attack on Iran | Evening news | 22 Oct 69",
+      "outlet": "pptvhd36.com",
+      "published": "2026-10-22T12:20:08.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IN",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYWoydmRWR3hfaGxNdFNTVU5hcGhtckhXVFI1d3RyLU1BS3JPaDRma29uWktuQURIQ2xqMlRFMmFCeEJranpybUZhWHlkSjktc3p2TUtvckF3ZUNMVzZlRDhIYk14YzBFc0ZxUmVmd1E5bmVHTDhOLXNPTkhzZ1VoXzNtWk9pdDhWcUNKMGhaV3BDSFZVUlNLME9WSG1ZTFVwSnV4SkZpU1LSAa4BQVVfeXFMTVZwTlRtcW1DZ3BLaDNPRUhXV0RFTFJiUktZRVRxcG1BZTg5c2dFYW1jWU96WlB0U2RzVkxhblhDcU9yNGpwNlc2OFRjYnJSblYwWS01dlZfbU5aWk92M0dzOVd1bWV2UUE3U0x1dWxxOGthbkZJRDJ2MUJTRHk0SldTQ01UbldwWVZrRG40Q2M2S3RsME9SZTVaZ1JuOHJZeXZjd0h0NHJUN3MyeU9R?oc=5",
+      "title": "Iran reveals ‘offensive’ doctrine, US issues alert: Is war imminent?",
+      "en": "Iran reveals 'offensive' doctrine, US issues alert: Is war imminent?",
+      "outlet": "Al Jazeera",
+      "published": "2026-10-22T12:15:42.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYWoydmRWR3hfaGxNdFNTVU5hcGhtckhXVFI1d3RyLU1BS3JPaDRma29uWktuQURIQ2xqMlRFMmFCeEJranpybUZhWHlkSjktc3p2TUtvckF3ZUNMVzZlRDhIYk14YzBFc0ZxUmVmd1E5bmVHTDhOLXNPTkhzZ1VoXzNtWk9pdDhWcUNKMGhaV3BDSFZVUlNLME9WSG1ZTFVwSnV4SkZpU1LSAa4BQVVfeXFMTVZwTlRtcW1DZ3BLaDNPRUhXV0RFTFJiUktZRVRxcG1BZTg5c2dFYW1jWU96WlB0U2RzVkxhblhDcU9yNGpwNlc2OFRjYnJSblYwWS01dlZfbU5aWk92M0dzOVd1bWV2UUE3U0x1dWxxOGthbkZJRDJ2MUJTRHk0SldTQ01UbldwWVZrRG40Q2M2S3RsME9SZTVaZ1JuOHJZeXZjd0h0NHJUN3MyeU9R?oc=5",
+      "title": "Iran reveals ‘offensive’ doctrine, US issues alert: Is war imminent?",
+      "en": "Iran reveals 'offensive' doctrine, US issues alert: Is war imminent?",
+      "outlet": "Al Jazeera",
+      "published": "2026-10-22T12:15:42.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSk5BbGJ3dHgtUUtwMFM1c256ZmQ3dHB6VmpOM0JpOGVsYndNbHRKdnR6VzhUM0lHc2hKeVg2VG5NUTV2ekdHSWU0a2hQT1A2anVUeGtKU21lb1dJVXpfcTFnS2kxRXJYY1oya2ZzZTdXdWdUUGpaN2QzX21WMU1CRzdvSHE0WEZPblN1ZmhoaUlzQ2lBR3dwSVIxMHNMNmRzSEFhUzgxeUw1Mk9mdHFjaQ?oc=5",
+      "title": "ترامب: حرب إيران \"من أعظم الإنجازات التي حققناها\" لهذا السبب",
+      "en": "Trump: Iran war \"is one of the greatest achievements we have accomplished\" for this reason",
+      "outlet": "CNN Arabic",
+      "published": "2026-10-22T12:14:20.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SE",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPc19oSG5pZDJlYktnaGFMTzc3NGxZdnVhemVCSHc5OC1CSUQ2WkI4dUx1dHRXRjQzYm0tRFYydC1nMzJDNnZCV2JkanA5TXhNT2ZucEgtel9RU1RkMklaZDF0M3RKVk9oSk90SmYzanE4YVZ1Q0FieUJGbWNsOWFqMHEyVGJFSUE?oc=5",
+      "title": "Palantirgrundaren: Trump borde inte ha attackerat Iran",
+      "en": "Palantir founder: Trump should not have attacked Iran",
+      "outlet": "Dagens Nyheter",
+      "published": "2026-10-22T12:11:46.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaER2WlZSUDk0bF9fazBxYm5SRjZ4TGF4bDZ1c0pldFBFeVR0Wlc2RzFaTUoyZGdmaGs2Rkh5ZGRuYkxwSFZ2NUJfZE9nYm04QVNUay03QTYzZEo0MXhEZlRVWXJ0d0hRYWNBcXp5cXk4bFVsT3pCTGFBVnMxeGpmSnhsWEQ2TnVwNjJDS3Y5VFdzZ1ZUVUg0Rk9DRDg0cEJkeFVQWG5B?oc=5",
+      "title": "Laikraksts: ASV un Izraēla plāno jaunus uzbrukumus Irānai",
+      "en": "Newspaper: US and Israel plan new attacks on Iran",
+      "outlet": "Diena",
+      "published": "2026-10-22T12:11:19.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMkdZc0ZfU0dZZ1BYVU1HVXpwS1Y5UXRaSktWdjdRSW92UWpBX3lkSndaSzJ1SDdTV1dRNHFvVDBLdEhCMVdxUUlVV2pwSGhGU3VPbGJBc1JLdkV6QWVNTlZnVWxld2ItOThVR1dmVmpMcjJYREloMkFoeGhEckx6aXU3THdQOGJzV2M2all3Y3k?oc=5",
+      "title": "Иран остался без нефти для экспорта",
+      "en": "Iran left without oil for export",
+      "outlet": "ProFinance",
+      "published": "2026-10-22T11:56:44.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOamFsdk9kRm1vM1lRNm11Z2I1bnZvMlc0TDZyTDNDTWFWbU55QkdYYThhNE4xZWpJTDNucl90ZzJ2a0Z2RVRLR25SdExacnREeDNYT2RfZnZxT2xtRURyVEZkb1V6SGItTTI0bGhyUWdnYlhoUUdzWkxxMVlONmNNbjIxMnRyN3JaY0pTcXpxY2gxVlFTNFNfMFRjQmxzRF9ERXlOUEdYUnpyMXBHczZ2ZlRYYm9jWlgyZHVlclFCSUVIZlBoeHZR?oc=5",
+      "title": "Ordin nemaivăzut de la începutul războiului din Iran, dat de cea mai mare companie petrolieră din lume",
+      "en": "Unprecedented order since the start of the Iran war, issued by the world's largest oil company",
+      "outlet": "HotNews.ro",
+      "published": "2026-10-22T11:48:29.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE55dWNRdm1RQlBIaXZqSnNKTldGQTYxTzcwSEZHanZKLVdvVWhIYVg2TkNWaFNYWU5NME5zbFNZcGhGaHM3dGo4QXRKUEpqY25sUWpSYTdkNkowVlRYVWJnekN5S1g2d1pyaFBfRTZwaVhCZmR4T1k3Ukliajc?oc=5",
+      "title": "בעיתונות האיראנית מאיימים: \"ניתוק הכבלים הפך לוודאי\"",
+      "en": "Iranian press threatens: \"Cutting the cables has become a certainty\"",
+      "outlet": "mako",
+      "published": "2026-10-22T11:42:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "TR",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUVVjMm9xQlN5aDlTU2Joc0xNUUxZNkdacXNvRFZGUU0zV184N20zcVRJQUt2MjFxMV9hY3dmcGJiMzF3UndRdFZ5MkJDeG9jQ19VVE9Oa3F1dEFMZ3BlSk5kcGZIN2ZBcmN0TjVpM29VV3ZjODI2X2t5VDRwOXRNUWR1Vzd3OE5qMFJyeGJ3Vm5wQ2RtRmlkTC10M0FjdG1yM1E?oc=5",
+      "title": "ABD ve İsrail'den seçimlerin gölgesinde İran'a saldırı hazırlığı iddiaları yoğunlaştı",
+      "en": "Claims of preparations to attack Iran by the US and Israel intensify in the shadow of elections",
+      "outlet": "Habertürk",
+      "published": "2026-10-22T11:38:43.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBUZWRYcUJ6eGl5S2EydHlGaXBNYmtXWXZoeWF6bWhUSEQ0cFBHQTMwRElmb0ZUYlJEUTJLNk5ObVJrVjc4WERvOU1Fa3FnUUFGOVQxd3lQdWltNW5qNEVuYXlPWnVCdjRwRzlpT1VySVhLS0YwZ2paQWFCeE5BQQ?oc=5",
+      "title": "美媒：美以军方已制定美中期选举后打击伊朗的计划",
+      "en": "US media: US and Israeli militaries have drawn up plans to strike Iran after US midterm elections",
+      "outlet": "新华网",
+      "published": "2026-10-22T11:35:21.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PT",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQREtCdUlCWFh5eDVhUGxON3NEazNaellwXy1ZZ2ktRHZ1Q1NsSlBZR19vWHNTN05ES3FVamlJMUwwUWRBUk95Uy1naEVSRkVpel9GU1N3RjNLb1JLamZLdkZycWNkYUlkb2Y5bkNDT1lxcEpKbUdJUHhlWTVkUTVPR2ZMMVVsemhJY3pJeWpTRjNkUzlXcVRyTlBIa3JVdDhmQ1VFU1FuU3RXbW5rVWZ6dGJUTFU?oc=5",
+      "title": "Trump atrás das grades? Aconteceu no Irão (e há vídeo): \"É crime não ver\"",
+      "en": "Trump behind bars? It happened in Iran (and there is video): \"It is a crime not to watch\"",
+      "outlet": "Notícias ao Minuto",
+      "published": "2026-10-22T11:32:13.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbVg4eFpISXJVczB2ejJQOU93UUh0UjlsNFM5VTd3WjFTR0pQcWhJVUNWeXo4SjE0bXA5aGwzZldEQ0Fab3h2OTJYTDJ5ekRSMjlHdFBrM3ZIWnJCNi0yMndxelo1TlZoeElKamdDSmRyYk02M0tialNYRWlIY3NDOW5oRVFSTzNwX2pCd0dEUzZsQ1d6Wm91MjVzXy1qeUtFMWpnVVFMd0xhbUVpWDlYbndwNmRaRURB?oc=5",
+      "title": "\"נערכים לירי מאיראן\": פייסבוק, טיקטוק ואינסטגרם דוחפות לנו חדשות מבהילות מהעבר",
+      "en": "\"Preparing for fire from Iran\": Facebook, TikTok and Instagram push alarming old news to us",
+      "outlet": "הארץ",
+      "published": "2026-10-22T11:27:00.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NVU9VSktvZlpTUkVxdlY1MDI4VFdwNXRfSmRrRkRfdnhMSDlQNUh5Z0VJTlozN1Fod0NyQi1vTTJRZGcxU2lSNXFOUFM5cEszbFBF?oc=5",
+      "title": "伊朗称7艘“违规”船只在霍尔木兹海峡周边海域起火",
+      "en": "Iran says 7 'violating' ships caught fire in waters around the Strait of Hormuz",
+      "outlet": "第一财经",
+      "published": "2026-10-22T11:17:42.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMjNDQnl0ZzJqZ0FrNDNNWjFLUU1CaWNKQjJNN1AtUVdXOUNTZGpISW8xRkFKczI5OWZQQmw2SHdoS3VJbHBxa1UzWS1lVnlKWThTcWV2LThRUzlmNHB4RXhkTC1lZGYybTVXY0NhdzJ2OGUybWhoTVVlTjZCQXRFaEQ0MGRBUWlaUjBoV2xQMDN0REJlVmlhR2RFaVpnZw?oc=5",
+      "title": "Забраната на забрадките изправи Азербайджан срещу Турция и Иран",
+      "en": "Ban on headscarves sets Azerbaijan against Turkey and Iran",
+      "outlet": "Dir.bg",
+      "published": "2026-10-22T11:08:42.000Z",
+      "outlets": 3,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOT3cwa3FmTWlINE1COFlyWFhQRDNMNXdPODZlQjNSTVlZOVZuN2RkWTJzX191TEdmYlF2R1pKWm5Nd3BGSGVmNnhUNzIyVHdXRFBONnI1dnhSRFRwNlBoZVJfNkgyYU5ldDV3MVJ3WmNoRGdiekpkRmtLNDhVeERPa2otQTJlWEI3TWxzY01NaUFVNGZmLU1ZQmdmQkwtdDM0YmlqR25Uc0Fkc1NKMWZqdVdwQzJ0WWhSUmpvYVBFb1l2b256U3FsRFBoV3FQRHU0aFJaZEZTVXh4VGxOb0R1ejlfaG1uT2VGaHQ1bG84cTdqSEFhYWNTRlRXRF8zb084aG5FS19ST1h3SlphcFk3WEllMUoteXBxRWNJdVI5ZDA2S1oxNS1BMTBudUtxWHlJajdkS2taT1p1WjM2cE5pdXdQYmZHcmg5NlVrT3B4WEVobEY3ZXfSAdsCQVVfeXFMUGd5amNmY1A4Yjlwemt3aUtWdE83b052ckJnN1hjblp1UXlmVDZST2ktajhTaFhrTjZiSTRLc19IU2hQRXRzR2QxUlQ2RWtseTV5cFNnbWxvLW9aMjZ3ZTNsT3dISEotcWUtY0NsNGpnbmVXNC05SUJreTFTR0JMVVVDeW1ILWh3UGEzLXF4eDlMZm1EVUNfaVI1cXEwMWJKZzJmNllzTkxDOG1ucHkxODVuN3BGUDd5R0R3dE5BdTdERXdscVBiTURlaTQxeTFwNkpSekFzSzVkUHZsVnVlbWs1b005ak9fZG9qRUt2SWJjaUpyY016LU0tcjdYWU0tbXd6SHFNcngtaEdDbTVKTFhacy1YX3J0Zmk1UFJab3Z3UkxMWmQ0aXprYnpGUEZsaTVKU25Ga25XZE1GMFdtUHVPYmo4NnJQR0xERXByUmlvMGRoMjh6VTVrYzA?oc=5",
+      "title": "الحرس الثوري يعلن استهداف أربع ناقلات نفط واصطدام ثلاث سفن بألغام",
+      "en": "The Revolutionary Guard announces targeting four oil tankers and three ships hitting mines",
+      "outlet": "الجزيرة نت",
+      "published": "2026-10-22T11:05:08.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNd3IxTGlPd3NJbnd5TGFqbzhaVXdsZW4xdUlpam1LcmdlVXJham9GOU9hQm9kVzJjQm9XWFlGZGEwbzcwanF4MHpaUERtOTlXTWpTSEM0V3hLcVBlWV96TV9EMmR0TkRKYll4YThDdGVIbjdOb0RJdTNPTzJuYklkUmo4YzlkRHZQU0hDVkFvSkEzeDNrZE84MWNiaVFtVmt5QVVwaXVjV3pGbS11NXVsOEtHdTk1bWY4TUJMcWdFWTc4dFNjMkhsemxybFgzbFNPNmNZX0xUWHF4TWZ5X1NlY09NYTNOVU5TVTRDb1F4cDdwdHFISVgySVBISHNiWFdBUEkwejhaLS1QR2p0c05wQ3lWNEFXeFBlZ285dk1yZ3k3RU9qV2N3OXNmMHgwQkdscEZwUmZSTERNd0ItQTFKdzlIc3c2LXdxdUxrb3VORF9aTEw1ckHSAdsCQVVfeXFMTnN3R09RaXEtUy1fT0FFRV9UX1Zvc1lPSUxCUVJaT1ZzS3RmMTRyYk5NM0N2UEtja2tWMWdBS2F4RV9nVHN5Z2lLX2JMSGFETWNIdXdRYmxMMnRkbldoY3JEdXdhZkNHYXFybVlpQkRDTDNYQXB1bjdVN0pZYllBWDh3cXROdUdneWhFckhDZlVIUlMxM05lUHdJcWh3bUlWOEE0X3RHaWc4bUZPYkx2ZG9Ea3daeXVSam9kdE93THY5dWtvczUtRmZEbVRYLTZBUmNacXdZbVI1UkZvY0FJTkZKa2hVTTlwWjZob1E0dWlXczgzZTByTWctTFVHVi1hQzYtbEhvWFZoZHlldDBGUkFPczNnY25iRnNFZGNndUtCajd0d1dPYlJkdWVqdmVCV0FHU2l5N2EycGFNTlFlTFlOQ0RYYkczV2RjTXI3T3gwOVZoNmNuZXgyLTg?oc=5",
+      "title": "عاجل | أمين مجلس الأمن القومي الإيراني: لن نعود إلى المفاوضات ولن يعاد فتح مضيق هرمز ما لم تنفذ شروطنا السبعة",
+      "en": "Breaking | Iran's National Security Council secretary: We will not return to negotiations and the Strait of Hormuz will not reopen unless our seven conditions are met",
+      "outlet": "الجزيرة نت",
+      "published": "2026-10-22T11:04:59.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMilgRBVV95cUxPSXpnUWpDRUxwOHI2Xy1GMGRyTEwwMVFMRmZuTkdWQUR2aE55VC0zTEZ3SmNOQVlsdU9FNUJYOHRtc2w5d1l6X2FHV25SLXRVTXBYcW9OVkRPd01aWG5XUTJyUEw1VnZ0UW1saXZOODc2M3NGa0N2Ni1oRVZjbWJ0SmdDLWRYanJVN0tJWlJOQXRtLTF0a1U1cjJ4Rk5UdjVsWkxJcF95ZDNfb01YcE1vZWRVaEJ5WElQSVRIazd1aG1tUFl1Wm5CcUE3V0xzbmg2U3ZkamtucVdTbkxxeDM2d2ZFZXM4aFhieHlOV2xpM3VSRVg5MXJpZl81cWlrbzdIbFlFeTBvTnJYamlnMTh2NnJxN1pIbUQ4b1VjX09TM3BQTmY3TE5WalFtNjhyZjF4SURJS2N6TWk1M3lrZTQtTkFpdXdLUU1iRFphaE9PdVZFUGNPLWc3dXVKVGUwUF8xRGhCZVJ6X3JMbTd5d094MkkwZzhzMmdxYy1BUF9GSmtfdFU1dE51c1dEbnBnMm14WUN1WTNmbXhSLTR2UEN4S2pUN3NNdUJNUk1fTkZMTzBWZG52UGdnZ1V3U1ViZlluQmNvVmYzSUFZRVBrSV9CLW9NSGs1Rm0tUkpoX2VDT01xQzBPaHdtR2YxQ3Fpd0xoOU9oWlZlUURYNHM0WFU5M0VVV0wxV2ZwTHFGOURSd3BjbWVuTVHSAZsEQVVfeXFMTXRHMU9QdHQ2VVpudG85SXRPUmR1eTRta1JfTlFxc3VhT2tKUnMwWC1rb0gzMTBtbkJzZzZla0d4Vmo0VEdlSUNkeHhwTFFyU2c0MEV6RFlsM2tfVm9uRGk1NV9YNUd1Q05iUTl6aEtTR3dDNUxyc3ItcjhlNkpSOE45bGpBUzF1SktydEN1VlZhWlljUFhYT1N2cUFiTUFTdEhnM1Q0TlVENXhmLXVadXo3NVhzWW9USl9LeDlUUEFzb1NxcXpoNnk3SWVTRlNKWVBjNUpiaXRyUEpnWjFyTGMyNXVxdUxiMXpxNDlGX1pyZm8yYTlRbmpRRmVEdDNad0QtQkpLVlcwZ2dnUTUxQzg4TkZnanpGX0lOdVNDbUhEVERvSkhoR2RPeXFDc2FleGU5czlPcDAxMmJxenU2QlVGSERXeG82ZElPemxhZkg4S01UN1RlWVJ4TFF5LTNVOU9IQjFwQl9rYVk0TkRxVWlRYWFRVGQybTg4NHBFb295Skx4WktSbDM0TzJaSm1yUHN5aFVrckRXODFndFRSdDNoZ2k3UTg0X0M5Y0JldEZSa0pCWTFFVEhGUmRNT29rQjJWSG9kX2JGRE1ncThkc3gxQlVraVo2b1ZNNG9ldXc2V05wOHA2UlBnRzlJTXFBYlBPeS1GcGJDeUVSNXNYakg3MjV0Z3V6S29rTlFRaEJFYjhxeXZ2dUJwbWM?oc=5",
+      "title": "الحرس الثوري الإيراني يهدد باستهداف القواعد الأميركية في المنطقة",
+      "en": "Iran's Revolutionary Guard threatens to target US bases in the region",
+      "outlet": "العربي الجديد",
+      "published": "2026-10-22T11:04:37.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZDJacGlyUkJSMmZfSXF5dlBwLU5PRXdsQnZiMFRyRmJTeVU3dHZnQlF6WDVRQ0pjYlFFamxjV3dXU0E4SmZ0SkRUMW1uLVh6cE05SDBLTEhlTnI3T3dwQXNWbFQ3TzFaZ1lZY0RNeVlNSW8zaDN6aDh1NWg2ZTNvTV9OM0xYQQ?oc=5",
+      "title": "Iran War Updates: U.S. reduces troop footprint in Mideast as indirect talks with Iran continue",
+      "en": "Live Updates: Iran says indirect talks with U.S. on ceasefire proposal continue",
+      "outlet": "CBS News",
+      "published": "2026-10-22T11:00:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxNWWZKRDFYb0JIaTdKc3JEaGVwck5PeDZZWmh1V1hheFV2RnV4bVNyWEpRNmFObmNPRWd1WHhMLVBfVGEtbDZVSEdvWmg5b0hTSnM4U3BzS25wUUF6X0dSSzVPME1hVXItb0EwV0xQaTZjX2pwQld3WV9wTnJNeEdZOXhkTVNmSXE5TEFUZlNYZjEwdUI4cVEwNEhNeUxMdWVRclhXV0dFdEJmNnJReTNVRUo5NVExeElpeVN3MkVMWTU0UzR4RndMMTZtVXZaTml1dm56cVNjZTVNM1oySTNUdDlCSHZmbFloX3MyVmhPSUxMQW9wek1ZS05odmREUEhWdmMzanJxclQ4N2habGFRaWtFaXllVVFBRU00TzVlazllSmtqMjdrMnNEV3FEU1RldXpxWXFaYlpXZ9IBvwJBVV95cUxOM3FrQW42WjNMb25sa3cwbnlVNWRiNjN3aXZQRWtsc09pMEVUMS0wVk5wbW1WTGh0bk16SjE5Qkd1VkhLOTFscXUxbE9Nb3JMWm1KZ0NPX29tbVJDdnFwaXdxd2JYUnozRUtKWTNmcmsyZ2lwa2R2U2RONHQ3cDhodERiR1pPOEM0UzNmRmp2Skp1Wm5EZzVKaWF6RTJoYU1QQmdZcWxoU2F4SmlhRXdPdmdKeWlXVGxXN3B4YUxhWFpLWmpaNWtXRmhEOU9JSWE3RGJsYzByM2FkREJCOHVlWmRvY3FTeHJaLU1PQXExdWFtbDVmQWlXMEk5YmxzaDFnc1NJcFFrVlRobHRMZV9wZ2ptRUxaeE5jUTdoQjBPOUtZNlJUSXl1Zm1COXV1MXVhblRpNVVDZVdlNFVxSFNv?oc=5",
+      "title": "نتنياهو: ضرب المنشآت النووية الإيرانية لا يكفي ما دام النظام قائما",
+      "en": "Netanyahu: Striking Iran's nuclear facilities is not enough as long as the regime remains in place",
+      "outlet": "الجزيرة نت",
+      "published": "2026-10-22T10:48:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxPRGVfTldXcVZiYzZDSWFkRFhZNEtZYUMzeG1LeHRPeGxXMlljU3laQjFKeVE1R0ZYb2lEVHQ5M3JMSjhhV3BIY3gyZFdBOFJQdjljMWRvMEZlOF9ZakJIZTBlRTVkVmJDUldVQkV0Q3hSWEpzMDlCTi1VZkNpb0V5OVp5aVFRdjlOWjJ0ckpBeW5XTEZkdUxDODFpcnptXy1iVWhuTmc3ZlhLVzZKNEx5dGRlbEJINDJLSms0eGVmTHFhdDM4ZGFGY0Y4RlBnRTVuSkNoRlh6em1lZjlDbkFiS291YXFXUThid183QUZReWxoYUZaa3lXR21ZdjdqTmdRZk9JazNhUVF1dUVtR25JUks4Q2hpQU52QUFSNVdacnVTQXpIN0pZdHFLZGctMUlMSFJLUUhzNloxbF9ubWxlWmY1VC1sS2VMbWlMSm15SUgxRll1ZXQ1RUJKbHZVRGJBZmZMRG1mdXhUSzF4QzdKdU1taWFFejRWcVllcGo3czlhT3FCZmhqZV82M3dObFdGM01yUUV3bWtzdnhGUEZsbnNqU09Qd29udldXbXBaN2dIemF2X2F2WGtlQU9UZXM?oc=5",
+      "title": "الحرس الثوري: احتراق 7 سفن في الخليج ومضيق هرمز",
+      "en": "Revolutionary Guards: 7 ships burned in the Gulf and Strait of Hormuz",
+      "outlet": "قناة الغد",
+      "published": "2026-10-22T10:43:18.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9GYmxqTzhTTTlPdzB3Sl9zVng1dExDNWEyVmhkTVpZVktXak0xV1RPbW5yS0NGUkJYMjBNUFVZVUY2QUxVblBpZVZodUs4cUVyMzNmdnZvaTlzd19uQkRLRXZTZnYwbDNpTG9ENDJUSEpPcVpkTlE?oc=5",
+      "title": "„Ni SAD, ni Iran ne pokazuju interesovanje za diplomatski proces, dva su moguća scenarija“: Tramp tvrdi da će se situacija rešiti veoma brzo, u Ormuzu sedam plovila u plamenu",
+      "en": "\"Neither the USA nor Iran shows interest in the diplomatic process, there are two possible scenarios\": Trump claims the situation will be resolved very quickly, seven vessels on fire in Hormuz",
+      "outlet": "Danas",
+      "published": "2026-10-22T10:32:49.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMiygNBVV95cUxNeVZ5U2JFS2xCQ244MWZNVVg2UEtTcGVlalBrcFhtc3VKRGlmVll2QXZvem5WY251RXMxX3BvWXVCNV92bllsZmV2aHVfQWtTRjU5aXcyS1c3YUpidzZRdzVZYnJQd2xDb0laMTNmWm43amNsWUpDT01uWHUzbFNYams2emN0cFJUXzJuLXJLOEYtdjJ5UnF5UXFSUERKemphZXJkWDZ4QmZTTmhFaG9nVVNkOW50bEVDQ3lEVi1uN3RJS2stcWNaMTVEZlY3TG91SnlmSFN0MUFyenVrM3RzOWYyblY4b3JrVkRGcU5qWk9KcUdvaWN6Yl8xWFdyd2Mtd0lWVEVXTDhsZlZ3ZTRVT29RNDdFcnlUVkYzTlZBclJjRTFvUTA2ZWM3dzgxOGEzYU1ENFpDZDl6VUVURnVaQWIyRVRFYkV3a21IcmRsVm9iMGMtZE1lLVNuOXV5dmFRaGY2Z1ZyZy1Ea2V1aXExUjVCZEp3amt0S0d3T01JcTcwLWxjRHRTaGlrLV9YRDBWT21ISVdHZkcwRTVGWC1rNVFuUC1mVEY0YUpKZUdTeDFfTm9oX3NrSjZfbnNTUkZhd21Da2ZiZ0NaUdIBzwNBVV95cUxNVnFUbGZTcWpUa0dKWUhEaUZqTkdHejA0NExwV2lOYzJzMGh3N3FLVnhZSHFCUHpIUDZIVjEzNXhWcVp0dVJLNDl2aGo5NDRpNmdWWFU2dlI2N0tkaTlDcHhPeFZsZmtsMGRTNDByVVg1eHFkOUcwVnRCTThEUzdpT05tRDM5Tm5TSlBNNnhsam9Ud0xLMzZORDlUZ1ZBWTJkU00yWW5CTGNwbmVmdVVBX1hocUF5Y21jelc4UkdYZndDa0I3SExLVjI5ZTFDb01PSngyaXZkVEszSEZHb3BGRkZjVm85Wld0Y2J1aW5rOFVtdFAtc2RhazNiN1diS1VpRzdONHFnVkUtamVkWjM2VUlxYTRjc2toV09ocUxzRmVyY1lELUYyZ0hDOHVZMS1MZXo2ZER6MEc5X25pbXZ3aWNOYU1NcEUwb1Z0ZVhfTEh1djNiM1BsNy14VUtJdHlvRUlDZTVLb0Y5Slo3OUdDZENoZGx4ck5QVlN6TzZ2T0ZxeERwREVNYTRtV1FkXzVmbFAxVlh1VVJzSXQzX0xXQWc3eXIzc0Qza3REcUZ5QVk0SnhtU3JUdEZsblFrYzZKVXZMZHlHZl8zSHJtQlM0?oc=5",
+      "title": "نتنياهو يُصعد: لن أطلب \"الضوء الأخضر\" من ترامب لضرب إيران",
+      "en": "Netanyahu escalates: I will not ask Trump for a \"green light\" to strike Iran",
+      "outlet": "العربية",
+      "published": "2026-10-22T10:25:58.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMiygNBVV95cUxNeVZ5U2JFS2xCQ244MWZNVVg2UEtTcGVlalBrcFhtc3VKRGlmVll2QXZvem5WY251RXMxX3BvWXVCNV92bllsZmV2aHVfQWtTRjU5aXcyS1c3YUpidzZRdzVZYnJQd2xDb0laMTNmWm43amNsWUpDT01uWHUzbFNYams2emN0cFJUXzJuLXJLOEYtdjJ5UnF5UXFSUERKemphZXJkWDZ4QmZTTmhFaG9nVVNkOW50bEVDQ3lEVi1uN3RJS2stcWNaMTVEZlY3TG91SnlmSFN0MUFyenVrM3RzOWYyblY4b3JrVkRGcU5qWk9KcUdvaWN6Yl8xWFdyd2Mtd0lWVEVXTDhsZlZ3ZTRVT29RNDdFcnlUVkYzTlZBclJjRTFvUTA2ZWM3dzgxOGEzYU1ENFpDZDl6VUVURnVaQWIyRVRFYkV3a21IcmRsVm9iMGMtZE1lLVNuOXV5dmFRaGY2Z1ZyZy1Ea2V1aXExUjVCZEp3amt0S0d3T01JcTcwLWxjRHRTaGlrLV9YRDBWT21ISVdHZkcwRTVGWC1rNVFuUC1mVEY0YUpKZUdTeDFfTm9oX3NrSjZfbnNTUkZhd21Da2ZiZ0NaUdIBzwNBVV95cUxNVnFUbGZTcWpUa0dKWUhEaUZqTkdHejA0NExwV2lOYzJzMGh3N3FLVnhZSHFCUHpIUDZIVjEzNXhWcVp0dVJLNDl2aGo5NDRpNmdWWFU2dlI2N0tkaTlDcHhPeFZsZmtsMGRTNDByVVg1eHFkOUcwVnRCTThEUzdpT05tRDM5Tm5TSlBNNnhsam9Ud0xLMzZORDlUZ1ZBWTJkU00yWW5CTGNwbmVmdVVBX1hocUF5Y21jelc4UkdYZndDa0I3SExLVjI5ZTFDb01PSngyaXZkVEszSEZHb3BGRkZjVm85Wld0Y2J1aW5rOFVtdFAtc2RhazNiN1diS1VpRzdONHFnVkUtamVkWjM2VUlxYTRjc2toV09ocUxzRmVyY1lELUYyZ0hDOHVZMS1MZXo2ZER6MEc5X25pbXZ3aWNOYU1NcEUwb1Z0ZVhfTEh1djNiM1BsNy14VUtJdHlvRUlDZTVLb0Y5Slo3OUdDZENoZGx4ck5QVlN6TzZ2T0ZxeERwREVNYTRtV1FkXzVmbFAxVlh1VVJzSXQzX0xXQWc3eXIzc0Qza3REcUZ5QVk0SnhtU3JUdEZsblFrYzZKVXZMZHlHZl8zSHJtQlM0?oc=5",
+      "title": "نتنياهو يُصعد: لن أطلب \"الضوء الأخضر\" من ترامب لضرب إيران",
+      "en": "Netanyahu escalates: I will not ask Trump for a \"green light\" to strike Iran",
+      "outlet": "العربية",
+      "published": "2026-10-22T10:25:58.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBNQ1BJWWkyTnRvNXI0YzFkRGI2aE1HdER2Y3ZiaEJ1cGVuY0p1eng5RFcyMjhoUGxGNG5WNUxScEE4U1VISlFOdW9rRVNmNjVnaGZJ?oc=5",
+      "title": "美以密谋新一轮打击？伊朗最高领袖罕见露面，军方警告祭出“炸弹之父”，海底电缆也可能是反击目标",
+      "en": "US and Israel plotting a new round of strikes? Iran's supreme leader makes rare appearance, military warns of 'father of bombs', undersea cables may also be retaliation targets",
+      "outlet": "华尔街见闻",
+      "published": "2026-10-22T10:21:30.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSUVidTd0bVItUVhMS3ZBSWRiVjBJM2hFYzhiMlpfVGJPODZBR3VkRm1WTnhmOGszQ0JOblhNVzRUdEszNzlLYUZWRjlZai1xSE5UX3FsOFBhVG5WUld5Tk96MFQxd21PX1dmQkFreVQ0b2NxSmE0QVc4Z3gwT0dEOTRQX0RNVzNDN2VjTm9xYVV3a3R0MzNxWV9uaUdDNnEyNjZ0UFJMTTA1S3hrejB0SdIBaEFVX3lxTE1BNi00Zjd6aG0zYkYwc2NtSV9GODM2dmN4Sjg4REZWUnZ3dThvM05jbDloTU9ZNUQ1UHkzZmQ5Rm50dUlUWlM0eTZhajlndzdmSU9jdHJSbWxab0dnN2ZWb1Etd1ZsUGtW?oc=5",
+      "title": "Iran, Trump: \"Non stiamo negoziando, presto accadrà qualcosa\" | Pasdaran: \"Quattro navi colpite e andate a fuoco nel Golfo Persico\"",
+      "en": "Iran, Trump: \"We are not negotiating, something will happen soon\" | Revolutionary Guards: \"Four ships hit and set on fire in the Persian Gulf\"",
+      "outlet": "Tgcom24",
+      "published": "2026-10-22T10:18:43.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5fNXk2ZzZ2MVJ5U0tGX3ZVSzF2OGNQa2Vma3VaU3BVNGlXdzlfdS1hRXVZeGtxZDRDdWxxa1htRUg2QzlCVHV3b1RuTVd0MlJmdlFpVmd2LTdQVjZ3ZnVIdFM3d08wb05nd0FMRFA0dw?oc=5",
+      "title": "Irano karas. Iranas pagrasino smogti JAV bazėms",
+      "en": "Iran war. Iran threatened to strike US bases",
+      "outlet": "Delfi",
+      "published": "2026-10-22T10:18:02.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPMmVYUTBGbEVNamlnUXF4Tzg3STRsd2J3QkhOaUFHNm1CU1ZWZjBvYktWaENYLXNteFBCRGlzN0dmR3ppdUtoai1wQldpOTlXbF9aajVfVWg1aVZaY3ViSFBteVp5T29ScFNWOU1BaDRnXzBwdkN4R1BtdlFPSlliWlVRVW5wQ0gtcDVWVHpTR1p3U3pQVUxKR2FnbUJhUmRGeUE2SWlqaXprbVpONFNyd1ZMcnptMDg1VnpfbDZKd1pkdDZiM2JQZFZtVUgyUVpBODZwVEY3Q0dZbzNjX2VHeHhpV3R5bDdoRHJDSEY0ZnNWcURJMlVkS1JjY19KSVk?oc=5",
+      "title": "Irane dingusios lietuvės sesuo prakalbo apie užtrukusias paieškas: turi žinių apie paslaptingą namą",
+      "en": "Sister of the Lithuanian woman missing in Iran spoke about the long search: has information about a mysterious house",
+      "outlet": "Lrytas",
+      "published": "2026-10-22T10:15:00.000Z",
+      "outlets": 4,
+      "trending": true
+    },
+    {
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9wUmF6bGVlbnpJRzlYOXJvazl6djlUS3FLMng5Mk52TTNiMkNNWV94ZFV2NmtzZ1NVanYyOFJXcHlmQWxjbllyYjBoR282dERZYWZ1WmthOU5tSTFrZV9MZHV5V01mSXRmRkdjbkxabGFGUQ?oc=5",
+      "title": "Танкери горят в Ормузкия проток",
+      "en": "Tankers burning in the Strait of Hormuz",
+      "outlet": "News.bg",
+      "published": "2026-10-22T09:54:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMi_ANBVV95cUxPbldsclpOdW5SQTRoY0MydzVQem52cHg3aUdjS2dibVBTYWVxTVl5TDFPMy1JWVYzT0pSOXJocFpHdkhjQlFPQS1Lc1UyVlpXcy1jcy1QM1NaaWVlcHlVNzcybERUWk01MzFyVDYtcjJ2TTF2N2RZSEZ0NUJpSDhMS29Ia0IzcUxOZTFDQUVSYzhCZTdsaHlVRTBES3gycXBYdlVwSDI5TFhQLVF6UFJ6SVBKdzI5NDY0VnR0ZFJyek9wQlN1aE5WalNieUI4T0Q3TlFndFZTdzlSaDBNNVgzdzZuY3QwLVdDdk5Cam9iTnUwd0tvNF9aNDYxbldiRGpVc2tHV1ZQM1JmTzJkYzBseUVXS1g5UGd0MG9LTDRZWGxiVGkxTWc5MWNCc2xTdGtxUU4yV1pPOUhaTm1nZVdDNFV6SmpweWtmOGZQNXJydmZuNWdzb0tNOTBNR3VvMUlwMU81RWVpNnR1ZDlUTTFLYlY0WV9JT0Q4MjFfalRSM2h2WHpfd09Ua0txTGlLWVZzOTdtWW91T1VZbUlOSGNVNjNZWGpseEZCZ2gtLXhlSXhLY1BuZ0RWdnZXa2k3dW91dDRKeHFUYWpyYTJsM2QyV3dzTzdnRmNnc0VxOWtPZ183cS1aQk9OemxxYllKX0hLUlE2UHotUHp4MVRo0gGCBEFVX3lxTE5qeEROVmxVSVAzWkVtYnNyMUlKbWdRSnJndVJwRjZFdXdFTmlPYk5QR0FqWklWZ0Q1M0pkc2JjYUpoQ1Q1WV85MGQ5YXZ1dlpfc0VOb2dNQ3VZeW11RTlZMTctNUxfVGV4a1NWR1JjdWFmbGx4aUpaWHFSR3dYT0tiU3FOSjlPbUlOVGE5NkRHWTcyaTFzOFpsNTNOa1VFRi1lMFhMbHpWUnFGWnp5SWlZNWIydmlHQ3VCS2ZMZHdWSjl3NG1xSnRZeWZhNElENTVSb1N4Z2NwQXVOdUljX2lLOGpRS3Y0X2U4X2tWWHBIYTZpREROZE9kTTBxU2ZVZlZPQV9NdnpKNXc1TXlaYVFXNnVPRXFTR0FURTlKTkM1UV8zUkpyMlVxbWZtRWZuNDF1T1FqYVBVSHFWaG9fckUtbks4cDJSVmNtc2QzU1AxMXYtZjdmd0s1V3dCc0JKbzg1NlJJeFdEaHViWHZWbUd4UTJkM3Vnb0MtNnBxS25Ua0JuMm42Q2xKX0VqdWxqSnpreUxwRU9uUWJ3dkVDczNkMzhsanVRbU51Z0JSa1AxNVhYbHowRmdTUjlaUXlnQ2hsc0QwNHB6UnNVbktRQXYyQV9BeFEzbjFqWTgtUjY3YTRCQ0V1TWM2bzNIM3FrQUtSN3VzZHY2dE5raGpoWUNTUUE?oc=5",
+      "title": "تركيا تستضيف وزراء خارجية إقليميين لبحث هرمز واليمن وإيران",
+      "en": "Turkey hosts regional foreign ministers to discuss Hormuz, Yemen and Iran",
+      "outlet": "العربية",
+      "published": "2026-10-22T09:53:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMi_ANBVV95cUxPbldsclpOdW5SQTRoY0MydzVQem52cHg3aUdjS2dibVBTYWVxTVl5TDFPMy1JWVYzT0pSOXJocFpHdkhjQlFPQS1Lc1UyVlpXcy1jcy1QM1NaaWVlcHlVNzcybERUWk01MzFyVDYtcjJ2TTF2N2RZSEZ0NUJpSDhMS29Ia0IzcUxOZTFDQUVSYzhCZTdsaHlVRTBES3gycXBYdlVwSDI5TFhQLVF6UFJ6SVBKdzI5NDY0VnR0ZFJyek9wQlN1aE5WalNieUI4T0Q3TlFndFZTdzlSaDBNNVgzdzZuY3QwLVdDdk5Cam9iTnUwd0tvNF9aNDYxbldiRGpVc2tHV1ZQM1JmTzJkYzBseUVXS1g5UGd0MG9LTDRZWGxiVGkxTWc5MWNCc2xTdGtxUU4yV1pPOUhaTm1nZVdDNFV6SmpweWtmOGZQNXJydmZuNWdzb0tNOTBNR3VvMUlwMU81RWVpNnR1ZDlUTTFLYlY0WV9JT0Q4MjFfalRSM2h2WHpfd09Ua0txTGlLWVZzOTdtWW91T1VZbUlOSGNVNjNZWGpseEZCZ2gtLXhlSXhLY1BuZ0RWdnZXa2k3dW91dDRKeHFUYWpyYTJsM2QyV3dzTzdnRmNnc0VxOWtPZ183cS1aQk9OemxxYllKX0hLUlE2UHotUHp4MVRo0gGCBEFVX3lxTE5qeEROVmxVSVAzWkVtYnNyMUlKbWdRSnJndVJwRjZFdXdFTmlPYk5QR0FqWklWZ0Q1M0pkc2JjYUpoQ1Q1WV85MGQ5YXZ1dlpfc0VOb2dNQ3VZeW11RTlZMTctNUxfVGV4a1NWR1JjdWFmbGx4aUpaWHFSR3dYT0tiU3FOSjlPbUlOVGE5NkRHWTcyaTFzOFpsNTNOa1VFRi1lMFhMbHpWUnFGWnp5SWlZNWIydmlHQ3VCS2ZMZHdWSjl3NG1xSnRZeWZhNElENTVSb1N4Z2NwQXVOdUljX2lLOGpRS3Y0X2U4X2tWWHBIYTZpREROZE9kTTBxU2ZVZlZPQV9NdnpKNXc1TXlaYVFXNnVPRXFTR0FURTlKTkM1UV8zUkpyMlVxbWZtRWZuNDF1T1FqYVBVSHFWaG9fckUtbks4cDJSVmNtc2QzU1AxMXYtZjdmd0s1V3dCc0JKbzg1NlJJeFdEaHViWHZWbUd4UTJkM3Vnb0MtNnBxS25Ua0JuMm42Q2xKX0VqdWxqSnpreUxwRU9uUWJ3dkVDczNkMzhsanVRbU51Z0JSa1AxNVhYbHowRmdTUjlaUXlnQ2hsc0QwNHB6UnNVbktRQXYyQV9BeFEzbjFqWTgtUjY3YTRCQ0V1TWM2bzNIM3FrQUtSN3VzZHY2dE5raGpoWUNTUUE?oc=5",
+      "title": "تركيا تستضيف وزراء خارجية إقليميين لبحث هرمز واليمن وإيران",
+      "en": "Turkey hosts regional foreign ministers to discuss Hormuz, Yemen and Iran",
+      "outlet": "العربية",
+      "published": "2026-10-22T09:53:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi_ANBVV95cUxPbldsclpOdW5SQTRoY0MydzVQem52cHg3aUdjS2dibVBTYWVxTVl5TDFPMy1JWVYzT0pSOXJocFpHdkhjQlFPQS1Lc1UyVlpXcy1jcy1QM1NaaWVlcHlVNzcybERUWk01MzFyVDYtcjJ2TTF2N2RZSEZ0NUJpSDhMS29Ia0IzcUxOZTFDQUVSYzhCZTdsaHlVRTBES3gycXBYdlVwSDI5TFhQLVF6UFJ6SVBKdzI5NDY0VnR0ZFJyek9wQlN1aE5WalNieUI4T0Q3TlFndFZTdzlSaDBNNVgzdzZuY3QwLVdDdk5Cam9iTnUwd0tvNF9aNDYxbldiRGpVc2tHV1ZQM1JmTzJkYzBseUVXS1g5UGd0MG9LTDRZWGxiVGkxTWc5MWNCc2xTdGtxUU4yV1pPOUhaTm1nZVdDNFV6SmpweWtmOGZQNXJydmZuNWdzb0tNOTBNR3VvMUlwMU81RWVpNnR1ZDlUTTFLYlY0WV9JT0Q4MjFfalRSM2h2WHpfd09Ua0txTGlLWVZzOTdtWW91T1VZbUlOSGNVNjNZWGpseEZCZ2gtLXhlSXhLY1BuZ0RWdnZXa2k3dW91dDRKeHFUYWpyYTJsM2QyV3dzTzdnRmNnc0VxOWtPZ183cS1aQk9OemxxYllKX0hLUlE2UHotUHp4MVRo0gGCBEFVX3lxTE5qeEROVmxVSVAzWkVtYnNyMUlKbWdRSnJndVJwRjZFdXdFTmlPYk5QR0FqWklWZ0Q1M0pkc2JjYUpoQ1Q1WV85MGQ5YXZ1dlpfc0VOb2dNQ3VZeW11RTlZMTctNUxfVGV4a1NWR1JjdWFmbGx4aUpaWHFSR3dYT0tiU3FOSjlPbUlOVGE5NkRHWTcyaTFzOFpsNTNOa1VFRi1lMFhMbHpWUnFGWnp5SWlZNWIydmlHQ3VCS2ZMZHdWSjl3NG1xSnRZeWZhNElENTVSb1N4Z2NwQXVOdUljX2lLOGpRS3Y0X2U4X2tWWHBIYTZpREROZE9kTTBxU2ZVZlZPQV9NdnpKNXc1TXlaYVFXNnVPRXFTR0FURTlKTkM1UV8zUkpyMlVxbWZtRWZuNDF1T1FqYVBVSHFWaG9fckUtbks4cDJSVmNtc2QzU1AxMXYtZjdmd0s1V3dCc0JKbzg1NlJJeFdEaHViWHZWbUd4UTJkM3Vnb0MtNnBxS25Ua0JuMm42Q2xKX0VqdWxqSnpreUxwRU9uUWJ3dkVDczNkMzhsanVRbU51Z0JSa1AxNVhYbHowRmdTUjlaUXlnQ2hsc0QwNHB6UnNVbktRQXYyQV9BeFEzbjFqWTgtUjY3YTRCQ0V1TWM2bzNIM3FrQUtSN3VzZHY2dE5raGpoWUNTUUE?oc=5",
+      "title": "تركيا تستضيف وزراء خارجية إقليميين لبحث هرمز واليمن وإيران",
+      "en": "Turkey hosts regional foreign ministers to discuss Hormuz, Yemen and Iran",
+      "outlet": "العربية",
+      "published": "2026-10-22T09:53:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNd05kRV9udEljSVJvalpheE5TOENfUTM3QjkxaE5MbTRwbTdPZHp2ZXB4WjE4ZVhHcnE5Qm45d0VQUWNvOWVMRnk1em56Vl9nZnN4d1E5c3I1Vm9YdVpEeXFiV3FTUFVCNGFKdW8wSlVzX1NwNWp0R3hzNFpCcWpnbkxEaFZJbG91d1o1OWYzU1VZeF83RXE3OWFJb1M0NmdiclgtVGFPa0Jla01lbm9EVTZFckxLVWM2RHZwSnZ0RDlkNVRCVFczX3g5QlNUQTRGOFdQU0FHWFREOWM?oc=5",
+      "title": "IMF forecasts 4.8% Gulf economic contraction in 2026 as Iran war hits energy exports",
+      "en": "IMF forecasts 4.8% Gulf economic contraction in 2026 as Iran war hits energy exports",
+      "outlet": "The National",
+      "published": "2026-10-22T09:46:01.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IN",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPbUFBX1luaTlDM0ZjV01HTzdYQmV5dEY1aDBZZmE5Tmg5Tjdma0RGMXl3bGh1OFd4QXBIdXFIeElHd1VRalI4bnJuQnVWcFBYX2k0UThubG5aQ1ZvUEZVUTFnTXB4bThEM251RnJMMW1JN01NSkxja2hMdGM5eTVKTGhIOGJSRGNRc1FObkltZUMtWnNMNEpJa3M2NkcyVFZBelJsNF9CZ3Y2M0tHeEZ0SkVaLUVrNzJMbDBab3BFdkFkNlEtMUVmbFNYSXNydGd3alhXQlpWa2wxdHZPRmZGSHJFa1Vrbm9zVnBBNm1fV2HSAfYBQVVfeXFMTkJrVHkxXzNreXAzNG9HQUVKMk1RUlVsM0tjeDF0M1ctM29CNEpkdENfRmYwWnV5Tkp3Y0gwT3hYMUJuNTNheFo2UVlBZnhzbHMzaW5pWXJkMzNieUI1Q01odDItSjVieE0wLWRWNVdWOVh6aUg4bzBKc21qZWVjdFZPMTNRbktFU0poT2VwcGtxcTR4NVlhQV9GUzNkYm1ueFZSMU0xcm0wSmhXNmo2N2hwb2xHTV8yQVkzUTViQmV1RF83QWJLOWwwSXJFLTRRenFNX005WS1PWm9HeFhUZUFoVXdudUVuS09PSXg3TE4wU29nUThB?oc=5",
+      "title": "Iran sets sights on 'valuable targets' as US, Israel mull fresh strikes: 'Haven't used all capabilities...",
+      "en": "Iran sets sights on 'valuable targets' as US, Israel mull fresh strikes: 'Haven't used all capabilities...",
+      "outlet": "Moneycontrol.com",
+      "published": "2026-10-22T09:36:40.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE02ZE94UkktbVo0c09EYXIyV1BaSXNXY1ZCNzVzWkxuU0ZjTUNMSVhqaU9SamhBRmZPUzNOZU55eDdybS1IWFhuWTgwdw?oc=5",
+      "title": "דיווח: מאגרי הנפט הצפים של איראן אזלו; המתווכים מנסים למנוע הסלמה ותקיפות",
+      "en": "Report: Iran's floating oil reserves have run out; mediators are trying to prevent escalation and strikes",
+      "outlet": "JDN",
+      "published": "2026-10-22T09:22:18.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NL",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa2RrTVlSVXhna3c1c3V6ckFsX0o2ZGlvZ2lYYzE3VEFoODVQX1RscWtodmlCQXVPclIyQm9YSlM2WDItQnRIM3lZWEpnWUJBZHprajVKVnlpWm5ybjUwQlFOSnh1cEdNdWRvdTFHZGQyRlRDZnFhWXhHejNzNjNjVi1rU0dmbVhYbEE?oc=5",
+      "title": "'VS en Israël bereiden nieuwe aanvallen op Iran voor'",
+      "en": "'US and Israel are preparing new attacks on Iran'",
+      "outlet": "NOS",
+      "published": "2026-10-22T09:19:57.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVExpbHdsOVFWZ0hldlZ6bllwU08xckhUZTNCSWUtQXppcTlCNzEtOTVPbm90YTNwVjdLYVhOUHBSaHhrRkJRYjFqdjVRdW5waUJobmpjTFNOb1N1S3F0M2t4S3lBbXA5R0xSQlJVS0d2NDJhcWRkRmV5UG5wOXJ1VThkMkplTHMxUktNTWxvYzIzMGwtamtLQXJVSUVyVlpmR25DeUxpMHo?oc=5",
+      "title": "Iran phát cảnh báo 'nghiêm túc' tới Mỹ liên quan eo biển Hormuz",
+      "en": "Iran issues 'serious' warning to the US over the Strait of Hormuz",
+      "outlet": "Thanh Niên",
+      "published": "2026-10-22T09:08:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMiygNBVV95cUxNeVZ5U2JFS2xCQ244MWZNVVg2UEtTcGVlalBrcFhtc3VKRGlmVll2QXZvem5WY251RXMxX3BvWXVCNV92bllsZmV2aHVfQWtTRjU5aXcyS1c3YUpidzZRdzVZYnJQd2xDb0laMTNmWm43amNsWUpDT01uWHUzbFNYams2emN0cFJUXzJuLXJLOEYtdjJ5UnF5UXFSUERKemphZXJkWDZ4QmZTTmhFaG9nVVNkOW50bEVDQ3lEVi1uN3RJS2stcWNaMTVEZlY3TG91SnlmSFN0MUFyenVrM3RzOWYyblY4b3JrVkRGcU5qWk9KcUdvaWN6Yl8xWFdyd2Mtd0lWVEVXTDhsZlZ3ZTRVT29RNDdFcnlUVkYzTlZBclJjRTFvUTA2ZWM3dzgxOGEzYU1ENFpDZDl6VUVURnVaQWIyRVRFYkV3a21IcmRsVm9iMGMtZE1lLVNuOXV5dmFRaGY2Z1ZyZy1Ea2V1aXExUjVCZEp3amt0S0d3T01JcTcwLWxjRHRTaGlrLV9YRDBWT21ISVdHZkcwRTVGWC1rNVFuUC1mVEY0YUpKZUdTeDFfTm9oX3NrSjZfbnNTUkZhd21Da2ZiZ0NaUdIBzwNBVV95cUxNVnFUbGZTcWpUa0dKWUhEaUZqTkdHejA0NExwV2lOYzJzMGh3N3FLVnhZSHFCUHpIUDZIVjEzNXhWcVp0dVJLNDl2aGo5NDRpNmdWWFU2dlI2N0tkaTlDcHhPeFZsZmtsMGRTNDByVVg1eHFkOUcwVnRCTThEUzdpT05tRDM5Tm5TSlBNNnhsam9Ud0xLMzZORDlUZ1ZBWTJkU00yWW5CTGNwbmVmdVVBX1hocUF5Y21jelc4UkdYZndDa0I3SExLVjI5ZTFDb01PSngyaXZkVEszSEZHb3BGRkZjVm85Wld0Y2J1aW5rOFVtdFAtc2RhazNiN1diS1VpRzdONHFnVkUtamVkWjM2VUlxYTRjc2toV09ocUxzRmVyY1lELUYyZ0hDOHVZMS1MZXo2ZER6MEc5X25pbXZ3aWNOYU1NcEUwb1Z0ZVhfTEh1djNiM1BsNy14VUtJdHlvRUlDZTVLb0Y5Slo3OUdDZENoZGx4ck5QVlN6TzZ2T0ZxeERwREVNYTRtV1FkXzVmbFAxVlh1VVJzSXQzX0xXQWc3eXIzc0Qza3REcUZ5QVk0SnhtU3JUdEZsblFrYzZKVXZMZHlHZl8zSHJtQlM0?oc=5",
+      "title": "نتنياهو يُصعد: لن أطلب الضوء الأخضر من ترامب لضرب إيران",
+      "en": "Netanyahu escalates: I will not ask Trump for a \"green light\" to strike Iran",
+      "outlet": "العربية",
+      "published": "2026-10-22T09:08:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQc05Xd3k0SGhlRmNsblFYMkcyMU9uUU9LdlpNQ3UwWDNQTWJsd1Bwd2tEd01LOFhQOHhrZkI1eFVuV2Q0aFF6dlIwX1k1UXhkdmFPYUF1UHp5b2ctLVFsOFhkQUd5TGl0QnVvQWQxWnhxQXhOZ3k5QjB0eXVOdk1IOGJpQzh2endnNzNGZDg1M2VvZ3hLdVF6QnJhX2NuakhjUXliRkRiam8xaGZYRl9ydkM4V212cy12Y3c?oc=5",
+      "title": "Hormuzský prieliv v plameňoch. Sedem ropných tankerov zachvátil požiar - Svet - Správy",
+      "en": "Strait of Hormuz in flames. Seven oil tankers engulfed by fire - World - News",
+      "outlet": "Pravda",
+      "published": "2026-10-22T09:00:16.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfUFZtRXd6TnpuQzBORzRVVl9IMG1uUnExaHFFUjNwVXdLM3ZvTTVxX09zMlBZNUJuclVhNHlsUjZCVzM4WHJOM0wyNF9kelR0T2pFLVFTSFplN1A1UkdsV2dHMEZLbW1UMWhCdVZiZnI?oc=5",
+      "title": "U.S. and Israel are planning for a possible post-midterms attack on Iran",
+      "en": "U.S. and Israel are planning for a possible post-midterms attack on Iran",
+      "outlet": "NPR",
+      "published": "2026-10-22T08:56:58.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTHpWcG5OSm9nMWxlMlVjRjY2em1QOVBGU2tMY2dDUWJwOFh2cWtIMjVpLVp3b3VPOGdpVXRoWk1ZbVBvRE9LN2s0b1ZvN3NubGxJdGFvOEhjVG02Um90eHZ4eU9yMkU2X3RWem52ZFdQeE1MNmtJcDZiY2h5YlhqTG1zSFpYU0xXdXU3V1hseEU2eGVOVUxxOTNEZWw1M2Y2cFRXZUFCeEdoRTJYazZxSWRLVUdQUkhiVXVSU2lEcEExSWRISHlIaVlPS2tGQQ?oc=5",
+      "title": "تحليل.. درس لإيران إن كانت تنتظر الانتخابات النصفية بأمريكا وترامب أمامه 3 خيارات",
+      "en": "Analysis: a lesson for Iran if it is waiting for the US midterm elections, with Trump facing 3 options",
+      "outlet": "CNN Arabic",
+      "published": "2026-10-22T08:55:07.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxQbXEzWFFLUW13SmQ0ckllblFnMWdmSGRlaHYxcmh6cjNkRHFwZHBsb2xMaXpzVjdRUXA5Y1FRWXRmMVNpVXB5eE9MeEtabHRyZWVCZWIzM0R2NjZQX05EdFI1R3loc3NmMEhwc1g2YjlRbHN4NVNWSERETmRlTDQzNlR0Z2wzTW5wb3RjSXgzYjU0WFlNS3d3d3p1S1dqQXEwczFtcktuLVpNcV9GaXJfV0NXanRrcTRSUDZSZXpKdk85N2VSN2pPSWlzeFlfY3U2Rko4dW04VEZXYlRoVGtIRnhtNU13cnY1c0NlYWNNWDdhbkRLZXFDZ1cwakNoc0pZNFNXeFlvOVVqRFdZUGEwM0dmeVFvWEZ6S0ZncFV3SXEyLWVTaEhTZmU5Y1JCbDdGam1LOWI2eFdydmtkOGtRYVdwRU9ldjdsTHJrVDJmbFpUWjhVSFpVOXVrWS12dFBnYUUyZjFlUXRWbmk2aEVXSk9WanBzMkI0R0ExSXlxWXcySUhOTmFvWFhtc2xLM0nSAYoDQVVfeXFMTTJaTkNaaEpoTWNwMlVodGR3Mlh4MG9fVHBVcmJmRUVEUFZrZzk3XzRxckxYb3dTM01CX1pwQjJRU1M5TkZMcGpYQ1hVb1o2TXB3ZHRTYjRVbjE4NGdQM254eklBRDdMRkZXYzNoZ01WT0hUOUNkc2tMeTNDdl9jeU9ZU0tDZlBscFJwX1ZmcGNNb1BFbWZKVWhMTW0yVHNGNWhfNU56VzZtZDU1T0VIR1FTZlVWTmRqVGFHQlJQQlp3WU9RNjRGSEJTN0NuUnVDQl82akd5OHhJZDZ4TE5BbTA5X3lJZFdRWW1XYlNYbDZlUzNLc3pQbkFCWFpBVlJHaHdPQTRXQ0FCTlpwZnpxXzBNQ202RFo4blpuSTliRUVPSUdjcUZzeFF5eDN6QkpZWlJYYXpna1BjWEFuUll2LWdXU053dWl6NUp6Q3NLNzVxbWdDVUZRZ3l6WVR2UE9tRGQyZzBhNDhKY0NLelNHRVRJSUdMWDhDRTBHQVc4ZVlOVzhIWGpEWEs3UQ?oc=5",
+      "title": "ترامب: لا نتفاوض حاليا مع إيران.. و\"شيئا ما\" سيحدث قريبا",
+      "en": "Trump: We are not currently negotiating with Iran.. \"something\" will happen soon",
+      "outlet": "اليوم السابع",
+      "published": "2026-10-22T08:30:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNERtcmV0ZXZKYnNIZll0dU16VkIwdnhTQ1NSNnBZaWZkR3Z4NElRNzZqdFVRY3V1Y3BIUHZud3owbFpKRU1Dd3NHb3ZkXzZLeVpjaVctWUFxVWxkUVRRdVg2R0ZpX3E1MGFhd3c3N01Rb1ZDUS14bUhvdlloM1BkNmpZMjVEZ3FfbHZNVURpMVZCNGdQeDZnOUJaMHlKalJweDlsZmU5bV9HRGFiR1E?oc=5",
+      "title": "Mỹ hiện không đàm phán với Tehran, nhiều tiếng nổ xuất hiện ở miền nam Iran",
+      "en": "US currently not negotiating with Tehran, multiple explosions occur in southern Iran",
+      "outlet": "Báo VietNamNet",
+      "published": "2026-10-22T07:57:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AU",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfT19Udl9ob0dRelZIVy12Q3JQWHB1WkFFY1hsQ2YwV19lZ3kyRDlVcGlyZXUzbFZxc1FoXy1NRzRlNGthTFFiYlhuaG1vdml4ZkJaZ3hWdUV1WG9pMjlTZ3ZkT3I3ckFSeFE?oc=5",
+      "title": "IRGC prepares to reveal 'Father of All Bombs,' spokesperson claims",
+      "en": "Iran preparing to reveal 'Father of All Bombs,' IRGC spox. warns in wake of Trump's MOAB threat",
+      "outlet": "The Jerusalem Post",
+      "published": "2026-10-22T07:37:19.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KbEVrTktHV0xWVjBXaXdUNndiYnNjV01SRjNSRjkxbTlta01uV1d6WGVoYUd5bUlKY1pqS2owdVFOY3hkSTBkUVFlcGZHaTdWUXQyZUlvV2dLVmRJUjdN0gFrQVVfeXFMTk1kbUloWHoxVWMtZTg2VGdpSVlIa0pxSHdkWWFtUjRyR2pocFdXV2g4c3MxMUx3cWVWUWVoVkZoMndJSnJnZ3Y5bEtOV1FXX0hvakZQZm5nREpaOThFUmcwMWh1UkRUUkZfQ1U?oc=5",
+      "title": "NYT: США та Ізраїль розглядають відновлення ударів по Ірану після проміжних виборів",
+      "en": "NYT: US and Israel considering resuming strikes on Iran after midterm elections",
+      "outlet": "Українська правда",
+      "published": "2026-10-22T07:07:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFByc3BURDJXX1NnVHFaLWQwbmNqWGswenJxLUdheFByNzBCcGUtMGhISEt0d29IRnZGQ1RlMG9NUEd5WUpuQng5dUxqZ3dmM0w4YlE?oc=5",
+      "title": "טראמפ על המלחמה באיראן: \"אחד הדברים הגדולים ביותר שעשינו\"",
+      "en": "Trump on the war in Iran: \"One of the greatest things we have done\"",
+      "outlet": "כיכר השבת",
+      "published": "2026-10-22T06:57:34.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxNa0tWQThIUUt1RGwzbEVoeVpNY0gwYnlwaEZubnowbUtLbVd5RWlvMEkwTDAtTVpPdmlKNWdHYVFUWVlBZWdCMS1EZjVTZU81UU9LYURsSUthdmtIZlpPTE1MWEhVOElUNHQ0Xy1nLUlnN3JWOGs5RlNEOGlyZHdianlvYWRLOGhRbThFOXV2S2ozbThaUUpDS1d6TWpOSm9ZWExhTWpURHlWbEdGbUlRY2NmYmFMQkFGNWVpWEp6UVdtdTRaXzMwbF9PU21uRGxiODlYQUFDbFFHeGlCZ1VXX1ZDLWNTakdfTmYxTTdROUd6YzlxTkNCemlaakRaNTdub3cwTjluOF9TUGJwRXc1Rk1KNXkydTVQb0p5dHJnVUU1S3VSekVmNHRDUklNTlJOaHhoWHBHNEhEQzdFYkVXTnRtTHlGN0JCTWtpUGJjQ1lTNUZfaEFPYTdWclZaUEV2OWfSAecCQVVfeXFMTVNieW9VNENUNFZfdjRiOUwydU81MjJwWlo3eUlsN0RHeVRPUDg0bjE2R1RIMVdqRTRhay1xUjNRckFTenBvQ29KM0ZsOEN1VW15QWxPZ1p5Z0hHanZtdUdtbWhNams4eFVCQUhpWFJhMFA3SVk2WE9KWFZzdUhyeXBpaXdOSW9CYVBrZExNNE1GRFJmTkdCQUF1aTU1R2U2TVh5MTBPVDFJV0ExTGIzZl9sWGRUd25OTVRVOUp4aGZGZkxTS2hvWC1adjd6UHFDaHFtWTVRd05KR1A4djJCdk1oSmNYV1lYb3RrX2ZqR1dPYWFYUjFxZ1RadkhiMGpQSU9UaW03TGNrMlIwQ1VjVkFhS3JOenNZM29UbFp0Z3ctTDdIM1REdTZ3TGRqX1pqaUUwYWptWDJQdE5XZUVPSWJEbERUeldZS3JGalhXQjZlS25BSWxFcnp4My1pcDJBUnJYVnhzMEU?oc=5",
+      "title": "سائقو سيارة أجرة.. تدني الأجور بإيران يدفع الأطباء لإغلاق عياداتهم",
+      "en": "Taxi drivers.. low wages in Iran push doctors to close their clinics",
+      "outlet": "الجزيرة نت",
+      "published": "2026-10-22T06:47:22.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi_gJBVV95cUxPTWFhZUxhSTE1QVZXMjE1MERPbUo4WjdOU2VLNGdCTGNDbnZLdGVMQTNVOEJoa3hXT1cyY1RDdzEySVM4SU0tbldJeDBlSm5qSEt0bm5XNGo2UTlMM3BvN3pGb2YtXzFUTjRLcG53djdpVWlMMVdya3ZPTF9UN3VwY0pVSk4wTVFaenJNeVFDRFpvWG5ULWZrSnM3VWcxT0dEblJtOGxodDRVVEE5TVBsMk8yWHBjbFBBcVZ3azBpODlZRmNKd09YeEd0RTdIMXJZU2pvSFlQQkdHQXZIVnJDZ29PNVN6V1ZBdkdrbHRsX01TOExHNUdPVkk4bzgxem0tYlpWb1hjYW1yRG8wTkdTc21KMnY3OEJQVlg3NWtOYkRHdHd4ckh5OWU1dTBxRzV5Rjd0UU5CNjVWaElUT3QzaEdHX3MtMlFRNGd5RkZrRVRBVmdrREstYlV4Rmo2T3ZSODhKSTA2Q3lnN3BkS1ZEa3dyVDJVVUNsVVg1WERn0gGDA0FVX3lxTFA3NnVJOHBJdFd4dzBKSU1VaWQwYUZWenVPN2hDZGR0aEV5eVh6OWtLaHhqVWd3cktuLTZFRzItNDBrak1xRnp6YlQ3RHNibmZ2d2ltSjRva3R0N0s2ck5zeHFLOWhEZ0ItSjNuS0JpZ3kweFZBTFFsMDdhVjVBak1nYTVMUjFrSGhRSW5qRmVFN0cyNmxJZ0xzZDJPTi1sSElic1ZkSjZqQlFvNHFjT1NIbVdoX1RMTTZCMzNyMWVuMzJoVUtSNkhYWHRwNm9NcTFkV0NHYWRBRDlRTl9lYWFqVFBUc1JyRWt5Q0h2ZUlybTN4T3B5aWxLZnlfWVRXejBqVUYtQXNza1Q1OW9IX0F2V2lUdmFXNVpxRGhSWTlVdlE0YzVkbW9ObGFHTlAyemFjc2JRZlJPTnVDTkNlb2gtTmhDczNBUlNYVDVLVGxkTnJHNjJIZ1pEX0t0VDdjenhUT2JlczZvbU9tY1pBWDVUeURxMDBTQ29wNHplWmZkdUZlMA?oc=5",
+      "title": "ترامب: لا نتفاوض مع إيران حالياً وشيء ما سيحدث",
+      "en": "Trump: We are not negotiating with Iran at present and something will happen",
+      "outlet": "العربي الجديد",
+      "published": "2026-10-22T06:45:25.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BE",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQYmlVWlVEdFFHTDhRQ2p4NDY2a000eEl2dnZSUjlnM091T181RkxPWnI4ajRYSVdJNlFGcHg2REItWWNpMjRFWS15cG1neC1VYnFpSDM1eVk1eE9yOW12SlUwVXBERks5aXRGOUhQZFlQeWc0TXA5cDgzVzh0RmNLZWo2U3UwdlNTM1c0SUZndDljWEVlczFzekNXWDBTN3d0NE9kelZpSmdjbWE0YWZoX0VCWUFveWo1WEZnUHJkc1I0TVVyaXpuWVJBTjB1Z3QtbkFHTW5FVk1rNGdYQ1hiVnU1dVprQlNxYnhwYkVfOS10LXFxLUs3TjhqcTZmbWxqa0d0UnZ2bEltX1hVY3c?oc=5",
+      "title": "Guerre au Moyen-Orient: la Garde révolutionnaire iranienne signale des pétroliers en feu dans le détroit d'Ormuz",
+      "en": "Middle East war: the Iranian Revolutionary Guard reports burning oil tankers in the Strait of Hormuz",
+      "outlet": "DHnet",
+      "published": "2026-10-22T06:37:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxQUGF4eHB1T0hFYXoyVm9aRi00X2lrV25xU2dFdU01OHB3WGU0Tzc3dVJlN2pTZnZIUnotSlJFYWNkWmdHMlZ2bE1jN0QwQzRZd1ZxYUtWTmg5NGtPbDZDcm5rU3otQ2lNRWVzaktZUlZwLXJNaVpXcU1XaDdqOVZka09NRTNHZnNPS181SlI1Y3FLLXFaaFdIY0U0cU5Ib2VBUVpBTC1vbXNLMXNhNUtDVG1ycHRsUUZsc0ZEYzU4bWlEQ1BGRUJ4bTF1enN5T3lwSG82ZlZaQ3hUOE1uTHFfdDdNanZsVXNEMzJJT3JPVjFXS1RFdlZCcmNxRkI1M1lkNEtUMDBtV3JlbUN0RWhOQ1FMS20tbnBlSEhOMGhub25CRTdqSGxSQk5qbDJTMFA3YTBwLUpsOG5MaXhJQVd2TWRBMHhfX1dWaHEwZVhvMVJZWkM1RnliMnpoejFkWjhjVE1LM2VqZDF0ZHZEYXh0RjNObWU3NlRWWWtfVk1TR1YtVGdrMUtmTmhpdmN6b1kydFE0OEZSYnZZeC05T3lGWVhWbkN3UmVJQnYzVTZDTFZFR3BMRUdjV21mSHlhWlp2Y0phSmZpb0cwZ0ZOeHpNS05B0gHXA0FVX3lxTFBfbG0yOVpWZjZSUkFvd2E4R2dBdjVZM1U0ZmVaY2tQR0Rfa3BuTzY3dWpWMVllS1FZa243ZXhYVnVPOGZNRjdlNXBVMElRVEJpZEVjRUdJMEkwclpFTVA2SlpvVzFtQUxZS05PRmcwQ1lkeEFfUGNNcVJieU5lOFJwVE93eGF2QTRjTGJLQjRrMUFWV2Q1cHVsZkNQOEk5X3BfNEdtU0FQbjNrOFJHeG9UZ3dITGRSMU9pRGNkd1hBdkFobWpOTTVLX1U5TEVXMURuV3dRRWZLazFLdk43LWZBU2dLWm5qQlNYOEV0VGJTTlZqY3hiSk9Bc1JDeHRKRWE4X0c3WWlGbGNycFRFOGlYZzFQVmRpd1hCTXpHaDhzYmNxY09Ha1phMDBRTFl4WHBJOEYzem5IWmdCbGlEYlJ3Q2xtbHB1UDdObUhtUUFlSUpwd1d0am5fTmVZUkhGZEtCWVhWbmZXeUxJNUpPY1E0LWtDYUJfVEhscWlHQUlLQkJJOFJud2dub1dDNmxwM0VBcWdUTGsyUS0wcGJWRnlSS1BkRmFQSnVySEIyLTROY1BCcnNGQjRFTjZ2bkRTRWJPRE5iNE95Rkp6cUxtbXgzRkQxYVpmUQ?oc=5",
+      "title": "مستشار الزيدي يتهم طهران بانتهاكات خطيرة بحق العراق",
+      "en": "Al-Zaidi's advisor accuses Tehran of serious violations against Iraq",
+      "outlet": "العربية",
+      "published": "2026-10-22T06:19:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -119,71 +549,21 @@
       "en": "Washington rules out striking Iran before the elections while Israel pushes toward returning to war",
       "outlet": "الجزيرة نت",
       "published": "2026-10-22T05:56:02.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNLWV6dTQzQU1KYTJyOTFwVFZHaG04WDkxcElWM2MxbGJTdjVBcU5pWUZndU1rb0RIVUlhTDFxc0RfdFlQZjhQR0ZmOW1Zck8wX1Y5a0JybjVKelFtSmRxcnhLWmRobnlTbVY0U1dKS2JETEdSSjFCbTNnNm5jYk12a3RrMm9LRGdwYklBWGVvOGhiWDF0anRqVVZRRV9Ecmpsbjlna0tsQ2I1OHNsMGp5NlBCdTlGY3dORHp6RnU1SGg2dWRkQk9lalZpX2VtNUE3dU8wMjl3LUpaY0J3V0djY3BMZnpZQmFEazQ1SjREd3lpSVVzSHh4UV9BRUZkR3NCSURULXRFcFNZc1dITFpfRzVpaTVqbGNDYkFuWkVQMXVwaVFoLTdzS1cyeW9Eb28ybHQtZjg1cFkwcU9tSzJONXQzLUFJejloRmZMYVFFTHVUeWR3TnfSAdsCQVVfeXFMTm9RYTI3QzBkMGhHVXZsMTBhUEJCa20tTUx1MXo4c3Y5aU85WFYyZG1OUVZPU0k5QkdqQmZCYm93UXljNnYtMU9GNS1oSVRiUzFfYXFKdHBkY3JUb3FTbi1RaHFzTHl1c3ZuSk44TTZYbmkxOWNXRzBRMXczVzgyaW9wWGlLWkZyREludnE5cVU1Q1FnRDc1aWpKaldEbDZVZUZzdENQQ2doRUVlbGx1RUpxWmk0YnBGZ0Z3WnpxZFNhQ2gtZUpCblFOWHp3Y0dyZzZSN3hUTDh3SmVkbkFBczZybXRGZERTNm9ObGhTcjhKNjBZbXMzbjk5RTFoNF9HZEZsbkkyUFBnWHQ0VFVaa1JYR3p6MXNEN3c2ZW9URmZRdm5vYk9vaHlTLTFGWTdpVVY2WDBtYlpzaUNFTDVmd011QVpfbWpXNTJzUlAyamtoTkFQQWJ4Vmg0aHM?oc=5",
-      "title": "إسرائيل تضغط وواشنطن تتريّث.. هل اقتربت الحرب على إيران؟",
-      "en": "Washington rules out striking Iran before the elections while Israel pushes toward returning to war",
-      "outlet": "الجزيرة نت",
-      "published": "2026-10-22T05:56:02.000Z",
-      "outlets": 4,
-      "trending": true
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5XSk5VbjNIbHBwbGtXMU1MOGtpbWQwa3A4OGN3X0lKXzJBMFg1NHdiQ0VmWG15TDBxZnBEbFlpam05VmN3WWJ4X3plNFdBazBLVEdGc3FBNTFmeUxUN25BeVRUVlA1WGxqZFA4NzdrSQ?oc=5",
-      "title": "وول ستريت جورنال: الحصار الأمريكي يستنزف مخزونات النفط الإيراني في المياه الآسيوية بواسطة المتداول العربي",
-      "en": "Wall Street Journal: US blockade drains Iranian oil stocks in Asian waters, by Arab trader",
-      "outlet": "Investing.com",
-      "published": "2026-10-22T05:54:00.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZzdCTHpZU05iWkMtLTVBVXZjUDVXMTRMQ29KN2dnZS1KRnpfSEZHQThFdXFoU180VWl3cm9HTlpIdjRtOHYxRnhIQ0lvbnFBekFzWGZXaXdpU2ZUTUhnRjhEemJ3RVoxMHprVm9FSXBKeUd6MjBNRllWV0xVMF9hTjBpSlBWdWFXZVYzMGltREVZMXUxWGZZU2RRcHNWZzhRV1NrbUJQb182STE3YndEb1p3?oc=5",
-      "title": "Fausta Marija Leščiauskaitė – apie Irane dingusias lietuves: nustokite",
-      "en": "Fausta Marija Leščiauskaitė on the Lithuanian women missing in Iran: stop",
-      "outlet": "Delfi",
-      "published": "2026-10-22T05:52:09.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "HU",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU3dFQ1VpdVphanpYLUVaVFlQdjBjSC00N3lSMlJ5RUIxNm5oQkJXODBHQTUwdEhXTDRCRWVKYUxJbmZIZVZVNXBTU1Y3Wk1XQ1A5U2ZwNkRtSkZLb3BUa20yUmlCdVNvZDVvRGpGaHRYRW1qYmRIeWY3eGMzUm9SVHZ5cHJWVnQxRTFqNUJhU3V4dGxYTWFlTg?oc=5",
-      "title": "Diplomatákat menekítenek Szaúd-Arábiából, újabb Irán elleni csapásra készülhet az Egyesült Államok",
-      "en": "Diplomats being evacuated from Saudi Arabia, United States may be preparing another strike against Iran",
-      "outlet": "Index.hu",
-      "published": "2026-10-22T05:42:00.000Z",
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMilwNBVV95cUxOWlpmNmRxelBRNnM5aXBwb3dubXZjbjNhSS1oMGNzbEZLWjBwR3pmM2JtN3Y2YnJQV2Y5alN2UmdUM05IVVdxNWlsVzhHS0ROX3N3dy1vclpEZHdFQXcycktEV19TWnNMdVJCOUV2b25uYWtVemM5V2YwMVVQNEdiWDNRcXA0TEg4ZUVDb3BUWkdGQWh3ZHpnVTJNLWhEYjQ2Y0d0bU4tb2sxZkNZMVVaWGtuVVpUS2dsejdYZFhlREl2RWdWU2UySmdMQTlfMzJTajR4eWJ6eS1lZnYtSUtNWkNWT3czaHB4bXpTeXRpZ1N4T2dtVU5oVXI3YTFZTk02bGZPbEdFTTU4MVVCOEdpZW55eTBieUVxU3JfaEx4LXVUZDFOZ1ZZcVNwLUlXak8wd0JCMW04c2syWkZHYklBclRGRnBkX29ZaDR1cWNGR2JCdXAxaHN1bnI0Q1FQRUxZdVhYSWc2M0puLW9VUkk0MnJoZnZUOE5EVVVmZU1sa1lpZmdaeHhQNDAzWkxhOW5WVHkzUUNNONIBnANBVV95cUxOU044SEZqNmV2TTQ0aXFWbTM2MmNtU0RVNVdhWlM3ekp0bmtTM2hsbTB4UEh2d213NVcyemo2YUp4a0ZPbWhjVGwyTjVpRzlSb1k0TkJha3dUT2hZZUUtZnZTUzlQUzRFVUYwREtVQnFNTUd6UG5KaGVzYmlvZXN0cndva2RwdTU2dVY3ejdNWXRpbEw5bk4zOWpZUzlDZU5lbDl6NUtFTTRyOHpUcnBvNzlMRFhqQ25vMGNBU2h3cGU0bEVaMERsYzBjcUd6TUNxQmZNMkd6eDFpQnhMMGJlbkVtMFR5U1BIWlEtMU9xckF5SjRIRkpiTVRqYTF6ZGdWT3NxdjU5NHZJVDFGVkM1VDRLQURWXzNLSzJiMWhQRHFydHNpRVFpbG9vVUxzNzAta1BScmtpTnkyRXhocW5uSk54MHZEZ3lYZTh3OXMwdXZDT3NXVENzTzY1Z3BmNTR2NTc4SUtubGlGSjJZekpWbXB6YVA1eXlaQ2pVY2dWSzM0R2NseDN4eU9fd1NLVGZZM3BFVml3Nm5uSklk?oc=5",
+      "title": "إيران في مرمى إسرائيل أيا كان الفائز.. نتنياهو أم آيزنكوت؟",
+      "en": "Iran in Israel's crosshairs whoever wins... Netanyahu or Eisenkot?",
+      "outlet": "سكاي نيوز عربية",
+      "published": "2026-10-22T05:49:43.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "CN",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xRjNDR2N0RG1jM3kzOFJqTHZnOGVtcmM2SE55LU9FeV9iT0psQjdvd3c3cTdHSEE4X3BMVm9uNHJwUGR2djJrTWZFaGxJYUwwZFY3RndFaUNtZ00?oc=5",
-      "title": "伊朗革命卫队：3艘船只试图非法通过霍尔木兹海峡时触雷起火，另有4艘船只非法运输石油时被击中并起火",
-      "en": "Iran's Revolutionary Guards: three vessels hit mines and caught fire while illegally attempting to pass the Strait of Hormuz; four other vessels were hit and caught fire while illegally transporting oil",
-      "outlet": "极目新闻",
-      "published": "2026-10-22T05:41:02.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "ID",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNX05nVmtaZER5Y3lwUkc1MjFCVVNwbmlXNk9qa2VISU83aW9UdXQ0dEppcjQ5aDMxTnRod0w2aVlvRlVBNmtOeVJMT2VsUndRem5GcDF2MmI5VktTTzAwazd6d0ZjdnBDWUNqalRvUGJCdVNvWDJJZjRfVTR4c0hGU0VsazlKWmM2T3lTUnJfWFh1cVUtaDAwVHI0Qk80QVY1c1RMa3J0bDBQdFBjY2hOU3pCWdIBuAFBVV95cUxPN2VFbkxfLU5sWmtoMkpzdVRaSXFaa2ZJMDJCYmNMQmpNTmNKOXItRVpOajdUZHhYdFhLX0RCM2tpUWVydS1XbVRkVnNNOThUTFZHamgxMjJ6TERzOEN4YmthdEJldWNTRkhtUnlLT1FLTVFFMWlqZGUyNmk4T3ZzajhDNTBCWXZRbC13WWJ1b09oV1UwSXVYek41Q2NjcV91Y3k1VEZITVFMWjgxN3daaXBRb2tNOFJ5?oc=5",
-      "title": "Olok-olok Terbaru, Iran Bikin 'Trump' Dipenjara di Atas Papan Reklame",
-      "en": "Latest Mockery, Iran Puts 'Trump' in Jail on a Billboard",
-      "outlet": "detikNews",
-      "published": "2026-10-22T05:31:31.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
+      "from": "EG",
       "url": "https://news.google.com/rss/articles/CBMioANBVV95cUxNYzNnRzVnWnVOUXFlOUwwRGdFc2xMb18ycWhuNTlRNFYxUkhDYnVLU1ZKcDB1Q3h4RjBTdC1QLVNYNFRBLXRoRFVoRFFJSEdNQXFtZ1hWSTZfV2wxMDdlVTdwNmdLRW9vZWVfOWhyaW1vZVZrLXhYS2lZZEhUaDZMeGVES2gySEJ1Z0RvanJ0dGtQdGRNTHh4cm1xQm5TVzEtWksxdVptdzItNEFzS1BoWTM2TGdyM2NybkFmcEQ4YVVybHZFUGswa0VKLUh3NmNKbFZvendZZFVHVmR0RldfMnRVZ2ZmTVBfS2JpX2FmWG5pcmhsVVFRV0N6V2dydUdmRUtjeG5NRGNVMEdPWXgxLWxkbHJ3ZHlYblpsRVJ5S1hzZC1DeGtNbmZpa2NEUjdZMlkyMjFuREx3RjA2OHlDR25ySDNfWnpFbnRpOWJOMWt5T0M3MmZqRU50NmFXaFdKVHZJZ3JFck1DQXFnek0yVXZ0N0FkZkdSeHJ3ZlQ1WEtkTWd2S1dUYlYtamtJOWNZSm5yZko0LVYwWVh1QVRDaNIBpgNBVV95cUxQWjZNZnYxdmJLSU40TTRjWElzMWNMbl9ZWnI3djVGdmhRcVhtbjdmLXBkYWdnN19VcENXdkZsWGkwVkYwNzYxV1pQVnNQUFpyZl9kTWdncXRNS2Y0TEg2M1A4cVdpRW5sek9NcFo2TmZtaGtjb3FacENibU5uTEJFMmdLZlE4Q0MtRlFKT0daREZNRVp2MUs4Z2RYM1BuZ25LbXE5RmFYRU4yenlNQnA4Y0MtU3poMy04dnZaNkFkVWZvc1R5RldON29aSGxDYWJ0NldpTnZvQmdWMVFyLWtiR1NEY0dTUEtkLTN4OGx0MGl0QlJ4WWRYcFgwSDVsM2l1U05RUFBOQTg4SnJUQTJyNVo2emF2LThpY3EtYVJkUjYtSTJqQ1cwTXhhcUVtN1JUZGpIMDNqWlZJbkVFckJGVUxYekJvaEh3VWs1a3VWb0RWSXFCZ19DcDNNX1dMOThvbjNUM1hxcHM0T0tzYkVKajVhN3JOZ3NQVWJGWXpreDZLUFhWWTJQN2lfOGt0Z0s3dDBHM3hRQ1l3bVNUN3ptZVNLcGJoZw?oc=5",
       "title": "الحرس الثوري الإيراني يعلن مهاجمة 4 سفن في الخليج",
       "en": "Iran's Revolutionary Guard announces attacking 4 ships in the Gulf",
@@ -193,24 +573,14 @@
       "trending": false
     },
     {
-      "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSUVidTd0bVItUVhMS3ZBSWRiVjBJM2hFYzhiMlpfVGJPODZBR3VkRm1WTnhmOGszQ0JOblhNVzRUdEszNzlLYUZWRjlZai1xSE5UX3FsOFBhVG5WUld5Tk96MFQxd21PX1dmQkFreVQ0b2NxSmE0QVc4Z3gwT0dEOTRQX0RNVzNDN2VjTm9xYVV3a3R0MzNxWV9uaUdDNnEyNjZ0UFJMTTA1S3hrejB0SdIBaEFVX3lxTE1BNi00Zjd6aG0zYkYwc2NtSV9GODM2dmN4Sjg4REZWUnZ3dThvM05jbDloTU9ZNUQ1UHkzZmQ5Rm50dUlUWlM0eTZhajlndzdmSU9jdHJSbWxab0dnN2ZWb1Etd1ZsUGtW?oc=5",
-      "title": "Iran, Trump: \"Non stiamo negoziando, presto accadrà qualcosa\" | Pasdaran: \"Quattro navi colpite e andate a fuoco nel Golfo Persico\"",
-      "en": "Iran, Trump: \"We are not negotiating, something will happen soon\" | Revolutionary Guards: \"Four ships hit and set on fire in the Persian Gulf\"",
-      "outlet": "Tgcom24",
-      "published": "2026-10-22T05:24:34.000Z",
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMioANBVV95cUxNYzNnRzVnWnVOUXFlOUwwRGdFc2xMb18ycWhuNTlRNFYxUkhDYnVLU1ZKcDB1Q3h4RjBTdC1QLVNYNFRBLXRoRFVoRFFJSEdNQXFtZ1hWSTZfV2wxMDdlVTdwNmdLRW9vZWVfOWhyaW1vZVZrLXhYS2lZZEhUaDZMeGVES2gySEJ1Z0RvanJ0dGtQdGRNTHh4cm1xQm5TVzEtWksxdVptdzItNEFzS1BoWTM2TGdyM2NybkFmcEQ4YVVybHZFUGswa0VKLUh3NmNKbFZvendZZFVHVmR0RldfMnRVZ2ZmTVBfS2JpX2FmWG5pcmhsVVFRV0N6V2dydUdmRUtjeG5NRGNVMEdPWXgxLWxkbHJ3ZHlYblpsRVJ5S1hzZC1DeGtNbmZpa2NEUjdZMlkyMjFuREx3RjA2OHlDR25ySDNfWnpFbnRpOWJOMWt5T0M3MmZqRU50NmFXaFdKVHZJZ3JFck1DQXFnek0yVXZ0N0FkZkdSeHJ3ZlQ1WEtkTWd2S1dUYlYtamtJOWNZSm5yZko0LVYwWVh1QVRDaNIBpgNBVV95cUxQWjZNZnYxdmJLSU40TTRjWElzMWNMbl9ZWnI3djVGdmhRcVhtbjdmLXBkYWdnN19VcENXdkZsWGkwVkYwNzYxV1pQVnNQUFpyZl9kTWdncXRNS2Y0TEg2M1A4cVdpRW5sek9NcFo2TmZtaGtjb3FacENibU5uTEJFMmdLZlE4Q0MtRlFKT0daREZNRVp2MUs4Z2RYM1BuZ25LbXE5RmFYRU4yenlNQnA4Y0MtU3poMy04dnZaNkFkVWZvc1R5RldON29aSGxDYWJ0NldpTnZvQmdWMVFyLWtiR1NEY0dTUEtkLTN4OGx0MGl0QlJ4WWRYcFgwSDVsM2l1U05RUFBOQTg4SnJUQTJyNVo2emF2LThpY3EtYVJkUjYtSTJqQ1cwTXhhcUVtN1JUZGpIMDNqWlZJbkVFckJGVUxYekJvaEh3VWs1a3VWb0RWSXFCZ19DcDNNX1dMOThvbjNUM1hxcHM0T0tzYkVKajVhN3JOZ3NQVWJGWXpreDZLUFhWWTJQN2lfOGt0Z0s3dDBHM3hRQ1l3bVNUN3ptZVNLcGJoZw?oc=5",
+      "title": "الحرس الثوري الإيراني يعلن مهاجمة 4 سفن في الخليج",
+      "en": "Iran's Revolutionary Guard announces attacking 4 ships in the Gulf",
+      "outlet": "العربية",
+      "published": "2026-10-22T05:29:00.000Z",
       "outlets": 5,
       "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMilwNBVV95cUxOWlpmNmRxelBRNnM5aXBwb3dubXZjbjNhSS1oMGNzbEZLWjBwR3pmM2JtN3Y2YnJQV2Y5alN2UmdUM05IVVdxNWlsVzhHS0ROX3N3dy1vclpEZHdFQXcycktEV19TWnNMdVJCOUV2b25uYWtVemM5V2YwMVVQNEdiWDNRcXA0TEg4ZUVDb3BUWkdGQWh3ZHpnVTJNLWhEYjQ2Y0d0bU4tb2sxZkNZMVVaWGtuVVpUS2dsejdYZFhlREl2RWdWU2UySmdMQTlfMzJTajR4eWJ6eS1lZnYtSUtNWkNWT3czaHB4bXpTeXRpZ1N4T2dtVU5oVXI3YTFZTk02bGZPbEdFTTU4MVVCOEdpZW55eTBieUVxU3JfaEx4LXVUZDFOZ1ZZcVNwLUlXak8wd0JCMW04c2syWkZHYklBclRGRnBkX29ZaDR1cWNGR2JCdXAxaHN1bnI0Q1FQRUxZdVhYSWc2M0puLW9VUkk0MnJoZnZUOE5EVVVmZU1sa1lpZmdaeHhQNDAzWkxhOW5WVHkzUUNNONIBnANBVV95cUxOU044SEZqNmV2TTQ0aXFWbTM2MmNtU0RVNVdhWlM3ekp0bmtTM2hsbTB4UEh2d213NVcyemo2YUp4a0ZPbWhjVGwyTjVpRzlSb1k0TkJha3dUT2hZZUUtZnZTUzlQUzRFVUYwREtVQnFNTUd6UG5KaGVzYmlvZXN0cndva2RwdTU2dVY3ejdNWXRpbEw5bk4zOWpZUzlDZU5lbDl6NUtFTTRyOHpUcnBvNzlMRFhqQ25vMGNBU2h3cGU0bEVaMERsYzBjcUd6TUNxQmZNMkd6eDFpQnhMMGJlbkVtMFR5U1BIWlEtMU9xckF5SjRIRkpiTVRqYTF6ZGdWT3NxdjU5NHZJVDFGVkM1VDRLQURWXzNLSzJiMWhQRHFydHNpRVFpbG9vVUxzNzAta1BScmtpTnkyRXhocW5uSk54MHZEZ3lYZTh3OXMwdXZDT3NXVENzTzY1Z3BmNTR2NTc4SUtubGlGSjJZekpWbXB6YVA1eXlaQ2pVY2dWSzM0R2NseDN4eU9fd1NLVGZZM3BFVml3Nm5uSklk?oc=5",
-      "title": "إيران في مرمى إسرائيل أيا كان الفائز.. نتنياهو أم آيزنكوت؟",
-      "en": "Iran in Israel's crosshairs whoever wins... Netanyahu or Eisenkot?",
-      "outlet": "سكاي نيوز عربية",
-      "published": "2026-10-22T05:20:16.000Z",
-      "outlets": 4,
-      "trending": true
     },
     {
       "from": "PK",
@@ -219,106 +589,6 @@
       "en": "Trump says US ‘not negotiating’ with Iran, something will happen ‘fairly soon’",
       "outlet": "The Nation (Pakistan )",
       "published": "2026-10-22T05:18:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "MY",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMy1ZMnBBRkROUkI0YTJ1N0c1UlFHMGgtb0pVbHNMN1I1QVJxdFFkamk0aTh6OXVwUkJtVVF3UXBZLWpXYnY0SDFSR1Zmd3RPQ0l4TGRHcUcwUE5lQ201SDc3OXVJbGEzWFFPMnB4SjR5UHBJbHZEVTBIRldoSjBSanpad2hDQUhDdy1EMGJvX0k0Z2Iyb0hDeldoMVJJT01Td0lNZldVOHkxVWRyVS02UmlIZ19ObVhaOUlDSDQ3RG3SAcYBQVVfeXFMTmNfUWtfQUtwOEQ1QnEwWXUxLUtxbk8tdUdZWFBUdjhZeXRrTmp0NFZqek0yTHFuMTRsQmRyOFZvTGpCazRqNTJnUTRUWVdGNC1ySXRSa244MERRV3hheXZsNF9NVlEyZmc4QXFTMjJzM0JJY1VVTW9iUGVlakF3eG1HbXpyVXBJYWFOcjJHYTV1ckZsc3U0TUk2SXBtcmpMSFRmTnd4bFNlMVlXem9jaHRMNjNRd3VnUHJGTk9xWFFnVDd5Y0lR?oc=5",
-      "title": "'AS boleh tinggalkan Iran sekarang tapi mahu hasil bertahan lama' - Trump",
-      "en": "'US can leave Iran now but wants lasting results' - Trump",
-      "outlet": "Harian Metro",
-      "published": "2026-10-22T05:12:26.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA0YjFEakdnSjlvTlhmandGQzdFaW5ab3cxWFcwN1lManlCVmVvaFVHVTY0dHJ4Q210S3JadENndF9qd0M3MHFoZUw5VQ?oc=5",
-      "title": "טראמפ על איראן: תהיה התקדמות לכאן או לכאן, וזה יקרה די בקרוב",
-      "en": "Trump on Iran: There will be progress one way or another, and it will happen fairly soon",
-      "outlet": "זמן ישראל",
-      "published": "2026-10-22T05:09:15.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "BD",
-      "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxOWTJUeWg0ek9haXRDWHFObEd6bkJfRUdDRDY3OWpKRTdHXzhNT3JnZXgzUmtGUDVwYVF4VGdBMUhuUE9qUUY0enVWTi0wU252RTdISXFwM2xYNHp2TkotcTI1c3J2eWxPY1V1NXB5RGFYNVdkdEJBVzU3MzVlMVlPSDVJSHdFUXByRWRXd0J2V0tYbGY2N29ndjBCUXBvWmFadVdYTG9qSG10aXVyLTZiQy1MOVRfcEMxMElmSmJUMXhpY0Z3dUVwS3JXLXJDVFl2dmNZNWdXSXY4ZndMMVhSelFWM3VmTUlISE5Rb0NOQVZfMm4xUUZkanBRTk12MjJiV3gzUEZHeVNrb21wSHROUzEwNWIwb3pZT0R4d2NwaGIxbVFSOTNIVGhLaEktdGZYS2twRzlvNWFaOFlOQUVZT1NVYzliMnpSWkNDbHJQcS1kRG9RbzZudU1NeHpuOW1xRTkwOWNyX1pUM052R182ZnRfeXBwWFN1MjhDWVQ2SlB1UUxCNVh0TTRYUVBWdldaLVQyYlpJWFB4UkJHQkVueXZNd3B2X2gwQWVFS01OWG4xdnNfUUJXbUJmZ1JfLU9FdmpxWi1oZEJySk01Q3llTXhuVVVPUUxpVEdIX1cwbjJNSjFnTVFOaHBCaUYyODFpZm1waXlNZkZmaW5MNEw5OG1XOWkyX2VqMDhJaDJodHFnRjN1YmxqSk1zTGR1WE50aW5lWkVneUlnVXZyazVnSklrdnlMWGlGMTIxcTdtUUpHNUpPZG44V9IBzgRBVV95cUxQenc3WkxDd3FpRFFDaU9NUHVVbWNHbWZILVI4SUhUMUxCRF96bTdsbzEtbW1WaHJ0R19oNDVBUXJ1eVhwYWxrck93WnBWQXZIbnNzQU9KR2o3bVVNNTNiR0dJNUYtLVFJelNudjdUT3VHUTQ3TldyaHA4a2RDTWRqTDlvbFVFYUNaS0NsbUxsblJuX3VldWFMcGhaQlJibm9NV2ZlWHJyS3BMRkk3U0M4bEI0Y2xKeE1RT1dyekZYM1V6QW52YXdXN2xya3VhVEJSLXNjZFdKVDlobzhlb3VxUV9HUFZMdG5DeUk1VHQta3NLRzN4aUtwUldFX2lmRzNRZFRpckF4a01kbHVfX3FIOFdLaGVFVHZ0NUc4M1pjenRGZnhfaWhRYkhZWW45cmhObFcwY1hnQ3d5aTcxbENaaE5JLVFra25pRFF4bUZJWmVwYU1hWGRRazFwV1g1aXVwZ3dwcjlxWHJjQVRhSFBFRTdXdEp5bHlYX1dXblJLa1Z5NlV2M0FYbG44eDVSa2Y1SkZwX2hLQVBkdlUxTDhIdFktZDFwcHBwUVBLN3BTRzBTNjdYQW93MnhpaklWNEI5NW5PX1JneF9sSVF5RVhrdnJqQU9YRjhZNTk3Wkc5LXpwWERiMVliVWMtdGZ1VGlmM0J3N0E2Qlh2cDkySDc2ZkZUMHNEalJwTVlibkdHa2pBTVNZVUR4SmVrM2RfckU1eEJOdm45YWFubDh4ZHBOQ3NBWmNnRUtYT1VqZkJXdzNnZ1l6a2MzbUczX2pzZw?oc=5",
-      "title": "‘মাদার অব অল বম্বস’-এর পাল্টায় এবার ‘ফাদার অব অল বম্বস’ আনছে ইরান",
-      "en": "In response to the 'Mother of All Bombs', Iran now brings 'Father of All Bombs'",
-      "outlet": "Bangla Tribune",
-      "published": "2026-10-22T04:58:11.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NO",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQnJxcHY5VllvR3ZVVFFfcXdPUkNvZzBMbXR6S28ybVZVd1JVVGp1S1JzR0hPemZhRU5fakZPak1DcnFNX3pqclRDcVJEcG1MX2RoOHRCT0ZldFNtcndiSmlmY1B6MUdBQUVOUGFTcHBPbkIzRmdoZXhRVVhkV19HN3c3RVk1VE1lNUVMVmtCMUlaNkRWdEZsWUFsbW1uWjZ4ZU9yNGJCN2tNa1E?oc=5",
-      "title": "Sju skip truffet av angrep og miner, ifølge Irans revolusjonsgarde",
-      "en": "Seven ships hit by attacks and mines, according to Iran's Revolutionary Guard",
-      "outlet": "ABC Nyheter",
-      "published": "2026-10-22T04:53:04.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB0aG12RzJVOW5Mb19xWE9mSWtGZVhIeldFTHFCUjFJQUF2RTY2QlBETjdZYl9VZG1kQ0s5ZUdXVll0dmhIeDNOVmxoZzRMNlVCcmRiZzhpNDNvTGx2azc3VXJLSE5QdkE?oc=5",
-      "title": "\"미·이스라엘, 중간선거 후 이란 재공습 계획\"…이라크서 전투기 훈련",
-      "en": "\"US and Israel plan to re-strike Iran after midterm elections\"… fighter training in Iraq",
-      "outlet": "연합뉴스TV",
-      "published": "2026-10-22T04:53:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE83c194T2h2MHBtaXNicjZCTE55X0Nac2Q1ajBDQmstN1BuakYxSzJKcXZfUERKa2FFTmhlUEJzUUk5WHhBUzFVZnVjODhrYmZuN2pnR1lVeDhCUQ?oc=5",
-      "title": "טראמפ: לא מנהלים עם איראן מו\"מ, משהו יקרה בקרוב",
-      "en": "Trump: We are not negotiating with Iran, something will happen soon",
-      "outlet": "YNET",
-      "published": "2026-10-22T04:49:43.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxONmZrN01HbGw0QXRXM2RIQ1F0ZEpUWTNXUGpfNDE1UnlZam9CZ0ZRWUZkMGxXcEx2MGd4UzF4eW4xNlF1R3dQU3EtZDRjd0d6UUxoaUg0TWVuTjc3dkk4d3NEX3lDVU42dk9qUWVwVWJNMWdLZUZGR2ZHVE9uaTB3VExDSlRFb05nTlE?oc=5",
-      "title": "Питър Тийл: Не трябваше да започваме война с Иран",
-      "en": "Peter Thiel: We should not have started a war with Iran",
-      "outlet": "News.bg",
-      "published": "2026-10-22T04:47:11.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ha3pkOFdGbUh5ZXM1a1JESTBQaTljQVpqaUh1YWFVWFNtT1ZEY1NfSG1qUDliRU5DTEJRX2xhdTRSc2hzNlFGZEptbGNMQ3hPOEtySzc1WFlRM1JyQWV2eA?oc=5",
-      "title": "מכונת המיליארדים הפרסית פגת תוקף: משמרות המהפכה באיראן בצרה",
-      "en": "The Persian billion-dollar machine has expired: the Revolutionary Guards in Iran are in trouble",
-      "outlet": "מעריב",
-      "published": "2026-10-22T04:46:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQaDdLV21sWnN6VEcxRV85OUhTWlJyRDJId3RwWnFMMFBMOW93LTJxazlqUXY1U1F0N2Y5bUpGcGd2RjBNb2daR0dLaXJLS3dnSzNxZElwM1NmZVpwSUdXelVDLXN1YlV2ZFM1UjJuMzQzVVhXczNlLThiR2RncFRYclNsQ1M1ODdxalkwNnYxZ1BneU5BT0NnWkhEU3I4VFpzVkRYQ2R4cUsxVFNjUEpvTENKb0JxdGg3UUN4NmU0a28zbjliZm5PYnN1NFJWZy1DUzNaY0U0V1JTdFJMOTlkZzhhU2VnQkZWVTBrTU9VdWdGX2VUVnIxM2ZsMENJZnItdVN3LVZMN1c?oc=5",
-      "title": "ΗΠΑ και Ισραήλ ετοιμάζουν τρεις μέρες εντατικών επιχειρήσεων στο Ιράν - Η επιχείρηση «επίδειξης ισχύος» των μαχητικών του Νετανιάχου",
-      "en": "US and Israel preparing three days of intensive operations in Iran - Netanyahu's fighter jets' \"show of force\" operation",
-      "outlet": "η ναυτεμπορικη",
-      "published": "2026-10-22T04:44:50.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcDJPc21TUHY2c3hmNFFWUGRrdEQtWDZMa1BRN2RsX2dkTmZQLUFFWjhQaVRvMGt2NnE0T1l3VlcxLTJvMTRXeDhuWjlsRV8zTmpyd3ljeDB4b19sY3NzZVlJSktYNDJ3eHpCdjFKTS1KT1Z6dW10LWk4VWZndFhUb2pzbnhWSVlEOHlHUEo3Xy0yaGhIamtMRThQNnFkTGk5dmZRRWFyYV84bVI0N2pmQtIBtgFBVV95cUxQR2JrTnNhQ0ZBc2RJaTdYTlZuTTgwd0FwNG01c2d5c1dlZUlOQXhMelFiR0lrVHdZQmNmNGMxc1VQSTBuRk1BRmNrY21hWTZtZWhuR1N5b1RyX0ZSVEhFY2RFcVhSd19jZ0VqQkxfUnVDWUxGYkdJaUJYS1RHSGJaTGJGMkpZUG1GLVM1aFQ1ajBXVzlYVGxVeGtLQ0NHVDVpNWM4eDZCdEg5ZEJfR3dET0t2VFJaQQ?oc=5",
-      "title": "Иранские военные сообщили об ударах по четырем судам в Персидском заливе",
-      "en": "Iranian military reported strikes on four ships in the Persian Gulf",
-      "outlet": "Lenta News",
-      "published": "2026-10-22T04:43:29.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -333,36 +603,6 @@
       "trending": false
     },
     {
-      "from": "JP",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9rNWRKSUJGeEFCaS1HNHdpd3lzeDJ0UlYxYUJXcUpQYVpwTE5Kc2htSmxhdlN6djVOWE5Nc0VQdXhYVlgyMk16YkxPU3VSZzA5aEM3N1VVcGNsOExNb0RXTkJwSWp2Y0RaWm9YR2JpRFhnYk1XTFNMOHJVRWx5YVE?oc=5",
-      "title": "ペルシャ湾で船舶7隻被害、イラン革命防衛隊が米に警告（ロイター）",
-      "en": "Seven vessels damaged in Persian Gulf; Iran's Islamic Revolutionary Guard Corps warns US (Reuters)",
-      "outlet": "Yahoo!ニュース",
-      "published": "2026-10-22T04:40:37.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GB",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcjlJZ1lSN1BZWFJWdDlKUWh3LWRselVrNHpobGthcDVzdnZ6bjJfM1dZcTJONUtTdURHc0ZaQkk0cUhzTlp0NVZocWlTNEhIWTB4TkN6VVZPMHdfN2ZsYXVmY2NISEN6dnRERW01T2dXbXNsb2dMNHl1UFdiTW1LVzJsZU1KYThwVDZ5OHdvYzZQMEZ6djduOERMNEI4YVVVTDFqVHBNZlpOcmJiNnppOVNJVjVzbUU?oc=5",
-      "title": "Iran's IRGC Navy says seven vessels hit, warns US of wider response",
-      "en": "Iran's IRGC Navy says seven vessels hit, warns US of wider response",
-      "outlet": "Reuters",
-      "published": "2026-10-22T04:40:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcjlJZ1lSN1BZWFJWdDlKUWh3LWRselVrNHpobGthcDVzdnZ6bjJfM1dZcTJONUtTdURHc0ZaQkk0cUhzTlp0NVZocWlTNEhIWTB4TkN6VVZPMHdfN2ZsYXVmY2NISEN6dnRERW01T2dXbXNsb2dMNHl1UFdiTW1LVzJsZU1KYThwVDZ5OHdvYzZQMEZ6djduOERMNEI4YVVVTDFqVHBNZlpOcmJiNnppOVNJVjVzbUU?oc=5",
-      "title": "Iran's IRGC Navy says seven vessels hit, warns US of wider response",
-      "en": "Iran's IRGC Navy says seven vessels hit, warns US of wider response",
-      "outlet": "Reuters",
-      "published": "2026-10-22T04:40:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "PK",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcjlJZ1lSN1BZWFJWdDlKUWh3LWRselVrNHpobGthcDVzdnZ6bjJfM1dZcTJONUtTdURHc0ZaQkk0cUhzTlp0NVZocWlTNEhIWTB4TkN6VVZPMHdfN2ZsYXVmY2NISEN6dnRERW01T2dXbXNsb2dMNHl1UFdiTW1LVzJsZU1KYThwVDZ5OHdvYzZQMEZ6djduOERMNEI4YVVVTDFqVHBNZlpOcmJiNnppOVNJVjVzbUU?oc=5",
       "title": "Iran's IRGC Navy says seven vessels hit, warns US of wider response",
@@ -373,192 +613,12 @@
       "trending": false
     },
     {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA0a0dDNHVBZ3htWXJxMWhXS19sRkdkMUNBcXF0MzZWejJBMEpLU2p2WEx3Xy1XaHNuamhaUVBmbHU3OG12Y1ZBaVdHRjJ5ck9jV0U2ZGtyRE5KVEdIUTlOa0NjZlJqeU1YRXfSAW9BVV95cUxQbERlN19LekgzYkNqdXFjd3FJb0lYM2JOaGdhWU1oSFdaSVFFTExkeGM5Y19peUFfR1RxZkczR2VwY2tGTGF4ek11SGcyUVZJeURTLVNyVmw0ZEtUdU5WeGVHT0Y0NV9fSkhDd0hRQzg?oc=5",
-      "title": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
-      "en": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
-      "outlet": "CNBC",
-      "published": "2026-10-22T04:26:42.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "EG",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE15eFppaWVPV3Jfc3dlTWptVU9FNGl1YXlvVUw2ejJOcTNBcUl6S2ctNlFid01KUmdhV0pLeFNOdkZTV1c4UVp5MnFpQUgydFEtR01HSmpTQktkcjAwTkHSAWNBVV95cUxOaXhCVDNjZGZFSUdLREVGUEVNTk5uNGlOV0hzcGJiZUpad2tjaFlxRGtxYzhQUjNyakRrcGtqOFRnTDZXaEtRdlA1cXd6M2FERXdGZUg4enZIMHFLemhjYUNnNWM?oc=5",
-      "title": "ترامب يقول إنه تم تدمير قدرة إيران على التخصيب النووي، ونتنياهو يتمسك بـ \"إسقاط النظام\"",
-      "en": "Trump says Iran's capacity for nuclear enrichment has been destroyed, while Netanyahu insists on \"regime change\"",
-      "outlet": "BBC",
-      "published": "2026-10-22T04:15:20.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE15eFppaWVPV3Jfc3dlTWptVU9FNGl1YXlvVUw2ejJOcTNBcUl6S2ctNlFid01KUmdhV0pLeFNOdkZTV1c4UVp5MnFpQUgydFEtR01HSmpTQktkcjAwTkHSAWNBVV95cUxOaXhCVDNjZGZFSUdLREVGUEVNTk5uNGlOV0hzcGJiZUpad2tjaFlxRGtxYzhQUjNyakRrcGtqOFRnTDZXaEtRdlA1cXd6M2FERXdGZUg4enZIMHFLemhjYUNnNWM?oc=5",
-      "title": "ترامب يقول إنه تم تدمير قدرة إيران على التخصيب النووي، ونتنياهو يتمسك بـ \"إسقاط النظام\"",
-      "en": "Trump says Iran's capacity for nuclear enrichment has been destroyed, while Netanyahu insists on \"regime change\"",
-      "outlet": "BBC",
-      "published": "2026-10-22T04:15:20.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE15eFppaWVPV3Jfc3dlTWptVU9FNGl1YXlvVUw2ejJOcTNBcUl6S2ctNlFid01KUmdhV0pLeFNOdkZTV1c4UVp5MnFpQUgydFEtR01HSmpTQktkcjAwTkHSAWNBVV95cUxOaXhCVDNjZGZFSUdLREVGUEVNTk5uNGlOV0hzcGJiZUpad2tjaFlxRGtxYzhQUjNyakRrcGtqOFRnTDZXaEtRdlA1cXd6M2FERXdGZUg4enZIMHFLemhjYUNnNWM?oc=5",
-      "title": "ترامب يقول إنه تم تدمير قدرة إيران على التخصيب النووي، ونتنياهو يتمسك بـ \"إسقاط النظام\"",
-      "en": "Trump says Iran's capacity for nuclear enrichment has been destroyed, while Netanyahu insists on \"regime change\"",
-      "outlet": "BBC",
-      "published": "2026-10-22T04:15:20.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "EG",
-      "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxQekhyNzItTmxkcnFCaXVPTkk2ekVvejBFQmN2LTJ6akxUUGxmWi1CRkc0djBFdGNYY21fOThvc0pTd21FWlloMFlBYlJ2YTBwV3JEcFI5S2NrZjlFSndGTExPdjZtZnlWTks4c1dheDN6enZrX3ZUOEhpeG5PZ3FleE9VSFVnVk1Ub1JrMm50aDhxdTU4dC13LXk1Q0xvVHFrSHIwQnFmNFJMRWN1OUd2TTFTTm5XU1NVSWFKdEJqbEIzRS1kYVN3V0Zsd3BKSkdoeHZCeWRDY280UUpSTHI0MkJMdlNfWGpQenJzNGZ2aEt6R0ExNVlpUnpiZ1hycHZUNzBDUEhfVmxqOUJJVFI4dHN0azVsSjlVUWk1SG9yUDBPa0FqVUpOeHVmcmF0Tk44V2x0YkdZSTNtSmRXa3c2NTJtUHNYY0NUYm92LW5RYW9JaWV4Z2NqWTlaR3hMd0ZBRmZ1Qm9tUDBaa1JMR2hKU3VURnlOYWcwV0hneTFBSjJGVFhIUFl0TU0tejZNYVQ0M1czcTlmbTllUHdIa19abmZQWHlvOWw1b09Sb18xZGJHZ1hWMEFFVTFYbVhrNUlZeXI5NVZQcmlMdlo4WXo4NzVXZDFEMmk4aWloQVJTNF8tcE9vb3lGODNnb1M3Snh5al9GdUp4UzItLWpaZ25fNkgySWk4VUVIMS1rYtIBkgRBVV95cUxOMWNyWWFkaTRTb1RoNzA1akhwREt1RktRR2F3RWE2a19aRzJhZUl6VUlwSE5WT052cXFEQl84UXRETDA2Qm96ZG9rVlRkdDRqM0RUdzZKY29vd3oxSHBDUU51Qnp4Y0V6elZDV0dKR0t1SkVvSEt6VmI5LXM3dVRwYm5LdkFUbHBjMHowNFptMFMzUHluQmxob1dVeFRJYUJnX1BCUENVWS1LMEs5WExNMEFtUWkzTWhiWXMxY041SW13d0FRNFRSZnVlNTZ5eHZTS2FudkFkQzEta25sSDdrbUJVNTYtRjFuMjlCUk9pdm1obmowT0s4bVNOSjIwbDZ3bnVPaWV1Wml4Mjg5ODZ3VV9PaTh4aDNORzFkYUFxWVdZQ2xlcUpqSzc0eFh3dWhncEdTc1ZKalpfMTM4YldwREFYN25KWlBwUVR4Mm41d1lQanVreXEzejZPbmVoSF9DVEFjRkdSNVZOZ0hfcmZjR0hvdVU4bVoycE85SERWZXRJRHBmYjZsXzRnS19hUnM5eF9HdXZyT0JlNVMzQlJzaTZqQTJGTlVnblNMelljaXVaZmUzS3pYcnNRZ0VnbE9SVUhFX2lsWVAzMmZiS3F3Z1d3eXBhUExEbE9jc1o3LWFLNnRGNzloQ1R6YzI5VDIwTHdPSE02ZVVXX3VQX1VvRzZXVzJHbDdpX3BlYjlDOWN6Zw?oc=5",
-      "title": "ترامب عن ضرب إيران: الأغلبية تعتقد أننا سنفعل شيئاً بعد الانتخابات",
-      "en": "Trump on striking Iran: the majority believes we will do something after the elections",
-      "outlet": "العربية",
-      "published": "2026-10-22T04:15:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxQekhyNzItTmxkcnFCaXVPTkk2ekVvejBFQmN2LTJ6akxUUGxmWi1CRkc0djBFdGNYY21fOThvc0pTd21FWlloMFlBYlJ2YTBwV3JEcFI5S2NrZjlFSndGTExPdjZtZnlWTks4c1dheDN6enZrX3ZUOEhpeG5PZ3FleE9VSFVnVk1Ub1JrMm50aDhxdTU4dC13LXk1Q0xvVHFrSHIwQnFmNFJMRWN1OUd2TTFTTm5XU1NVSWFKdEJqbEIzRS1kYVN3V0Zsd3BKSkdoeHZCeWRDY280UUpSTHI0MkJMdlNfWGpQenJzNGZ2aEt6R0ExNVlpUnpiZ1hycHZUNzBDUEhfVmxqOUJJVFI4dHN0azVsSjlVUWk1SG9yUDBPa0FqVUpOeHVmcmF0Tk44V2x0YkdZSTNtSmRXa3c2NTJtUHNYY0NUYm92LW5RYW9JaWV4Z2NqWTlaR3hMd0ZBRmZ1Qm9tUDBaa1JMR2hKU3VURnlOYWcwV0hneTFBSjJGVFhIUFl0TU0tejZNYVQ0M1czcTlmbTllUHdIa19abmZQWHlvOWw1b09Sb18xZGJHZ1hWMEFFVTFYbVhrNUlZeXI5NVZQcmlMdlo4WXo4NzVXZDFEMmk4aWloQVJTNF8tcE9vb3lGODNnb1M3Snh5al9GdUp4UzItLWpaZ25fNkgySWk4VUVIMS1rYtIBkgRBVV95cUxOMWNyWWFkaTRTb1RoNzA1akhwREt1RktRR2F3RWE2a19aRzJhZUl6VUlwSE5WT052cXFEQl84UXRETDA2Qm96ZG9rVlRkdDRqM0RUdzZKY29vd3oxSHBDUU51Qnp4Y0V6elZDV0dKR0t1SkVvSEt6VmI5LXM3dVRwYm5LdkFUbHBjMHowNFptMFMzUHluQmxob1dVeFRJYUJnX1BCUENVWS1LMEs5WExNMEFtUWkzTWhiWXMxY041SW13d0FRNFRSZnVlNTZ5eHZTS2FudkFkQzEta25sSDdrbUJVNTYtRjFuMjlCUk9pdm1obmowT0s4bVNOSjIwbDZ3bnVPaWV1Wml4Mjg5ODZ3VV9PaTh4aDNORzFkYUFxWVdZQ2xlcUpqSzc0eFh3dWhncEdTc1ZKalpfMTM4YldwREFYN25KWlBwUVR4Mm41d1lQanVreXEzejZPbmVoSF9DVEFjRkdSNVZOZ0hfcmZjR0hvdVU4bVoycE85SERWZXRJRHBmYjZsXzRnS19hUnM5eF9HdXZyT0JlNVMzQlJzaTZqQTJGTlVnblNMelljaXVaZmUzS3pYcnNRZ0VnbE9SVUhFX2lsWVAzMmZiS3F3Z1d3eXBhUExEbE9jc1o3LWFLNnRGNzloQ1R6YzI5VDIwTHdPSE02ZVVXX3VQX1VvRzZXVzJHbDdpX3BlYjlDOWN6Zw?oc=5",
-      "title": "ترامب عن ضرب إيران: الأغلبية تعتقد أننا سنفعل شيئاً بعد الانتخابات",
-      "en": "Trump on striking Iran: the majority believes we will do something after the elections",
-      "outlet": "العربية",
-      "published": "2026-10-22T04:15:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BD",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5YXBydEZmS1gzMVhDM211alBYelMwcDZvUmI4UjFseFA4TzVoRDNyN0trVG9JSGdkOHk5OW15SEZNaUM4R0NtYlhKWDQ2MFJJTmpwbEI1cXZaQQ?oc=5",
-      "title": "ইরানে হামলার দিনক্ষণ ঠিক করল যুক্তরাষ্ট্র-ইসরাইল",
-      "en": "US-Israel fix date and time for attack on Iran",
-      "outlet": "Jugantor",
-      "published": "2026-10-22T04:14:41.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "EG",
-      "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPN3Y2My03YnlJZGdwRUhWQWktamNPSjB5Z1BXZVJmNHpKOWFsS1RKQndLSVU1TnRpTWYwdTF3alpTc19uWC1XOVRFMUhlbURoYzVraVFiQkpqbC1WNGhxYWJDUVJXdnVBXzhoLTRZcFFlTzF6VFg1Ym5QQUlJNVoyakY5RkVXM1F2STdYRGw1QVZKa2piUFNfUWRaQUhGbzJMQjY3MzBCeVdWRDE2SlVaNU5kbDdiaUJsWkNRMnJVVEQyV2FOV3U2eENZSmJoRlpRY1UyMTROVVZadGc1OG1OcTliajlzazNmN0dVRUNESGVMbzVOUTBQVG1XSkJlMXl1MXVzaXN1MXRGSTVBM3hyTlo5MUJzbGMtMXhSdkh0alYtNDVNZGdFbDZtUGtFRmRDYmNobjN6WTI5ZHY5U3pQb2luUl81VE5YRjZ4YkFvbTAxQkRCSWlUZjhvZzV0Qi1jaWl6NUt3QURYZWVlVzQ0ZmE5Vlljbnh3WExaaFRfWmdjSWJQQ2lpMjduYTBOeDRIUk9pYjVGa0EwdjMwcmxOX3I3eVlGUVU4MWszUDlqcmFtOUlf0gG6A0FVX3lxTE1TbzBHUzZodTJNNTZyQnBQbEZPVUxHYzRSWTBIU3I4cU1Yam9EZzVnc2g4V3N6VjZmVWxWM0Q4NmdrUUtES0UtaDE5Zk5VNl94ZEdpSmp5SFJ4amJmdXh1UUg5VHR2c05zREVpUkFwQ0xsSDk3LUQzTXhxRERaT2ExNWpWcTZRQnctWElCMU5Td05oOXAxemtvUEp4cm1rejBKYmVjOUpjUkdwNExYS0E2YVNRaUV5el9iNThURTVpVkxqYXg5cVZhQUQtRVpYYzIzaWl0QWtPeXdiOWlaOS10QmRiNHVlWGxoWUdWOTdLM01GcmItbnkzbUEyU3FISlNHODRZQnhFWEktZWJQck81bVlyZG9FaVR2QklMRm5BUktfNlF4bVF1Q09vZjRuUFJuMDg0cUJJaVVrQ3B0STBlSFlKVURwRUM3dzh3R3V4V05adGVCcHB6WnYwdG1PLWgwaHRKVS1Ydkg3ckZzWXBvVlRUNWV1c21VUFdFMHJZbHRvdEZ2RS1kc2RScEtjTnlrN0E2UUxPVGloc1NyaHZHQ1o0c295N1VCdV8ydWZGeGFpT2F3YWo4OGc?oc=5",
-      "title": "نتنياهو: هدف إسرائيل هو الإطاحة بالقيادة الإيرانية",
-      "en": "Netanyahu: Israel's goal is to overthrow the Iranian leadership",
-      "outlet": "العربية",
-      "published": "2026-10-22T04:08:00.000Z",
-      "outlets": 4,
-      "trending": true
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPN3Y2My03YnlJZGdwRUhWQWktamNPSjB5Z1BXZVJmNHpKOWFsS1RKQndLSVU1TnRpTWYwdTF3alpTc19uWC1XOVRFMUhlbURoYzVraVFiQkpqbC1WNGhxYWJDUVJXdnVBXzhoLTRZcFFlTzF6VFg1Ym5QQUlJNVoyakY5RkVXM1F2STdYRGw1QVZKa2piUFNfUWRaQUhGbzJMQjY3MzBCeVdWRDE2SlVaNU5kbDdiaUJsWkNRMnJVVEQyV2FOV3U2eENZSmJoRlpRY1UyMTROVVZadGc1OG1OcTliajlzazNmN0dVRUNESGVMbzVOUTBQVG1XSkJlMXl1MXVzaXN1MXRGSTVBM3hyTlo5MUJzbGMtMXhSdkh0alYtNDVNZGdFbDZtUGtFRmRDYmNobjN6WTI5ZHY5U3pQb2luUl81VE5YRjZ4YkFvbTAxQkRCSWlUZjhvZzV0Qi1jaWl6NUt3QURYZWVlVzQ0ZmE5Vlljbnh3WExaaFRfWmdjSWJQQ2lpMjduYTBOeDRIUk9pYjVGa0EwdjMwcmxOX3I3eVlGUVU4MWszUDlqcmFtOUlf0gG6A0FVX3lxTE1TbzBHUzZodTJNNTZyQnBQbEZPVUxHYzRSWTBIU3I4cU1Yam9EZzVnc2g4V3N6VjZmVWxWM0Q4NmdrUUtES0UtaDE5Zk5VNl94ZEdpSmp5SFJ4amJmdXh1UUg5VHR2c05zREVpUkFwQ0xsSDk3LUQzTXhxRERaT2ExNWpWcTZRQnctWElCMU5Td05oOXAxemtvUEp4cm1rejBKYmVjOUpjUkdwNExYS0E2YVNRaUV5el9iNThURTVpVkxqYXg5cVZhQUQtRVpYYzIzaWl0QWtPeXdiOWlaOS10QmRiNHVlWGxoWUdWOTdLM01GcmItbnkzbUEyU3FISlNHODRZQnhFWEktZWJQck81bVlyZG9FaVR2QklMRm5BUktfNlF4bVF1Q09vZjRuUFJuMDg0cUJJaVVrQ3B0STBlSFlKVURwRUM3dzh3R3V4V05adGVCcHB6WnYwdG1PLWgwaHRKVS1Ydkg3ckZzWXBvVlRUNWV1c21VUFdFMHJZbHRvdEZ2RS1kc2RScEtjTnlrN0E2UUxPVGloc1NyaHZHQ1o0c295N1VCdV8ydWZGeGFpT2F3YWo4OGc?oc=5",
-      "title": "نتنياهو: هدف إسرائيل هو الإطاحة بالقيادة الإيرانية",
-      "en": "Netanyahu: Israel's goal is to overthrow the Iranian leadership",
-      "outlet": "العربية",
-      "published": "2026-10-22T04:08:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPN3Y2My03YnlJZGdwRUhWQWktamNPSjB5Z1BXZVJmNHpKOWFsS1RKQndLSVU1TnRpTWYwdTF3alpTc19uWC1XOVRFMUhlbURoYzVraVFiQkpqbC1WNGhxYWJDUVJXdnVBXzhoLTRZcFFlTzF6VFg1Ym5QQUlJNVoyakY5RkVXM1F2STdYRGw1QVZKa2piUFNfUWRaQUhGbzJMQjY3MzBCeVdWRDE2SlVaNU5kbDdiaUJsWkNRMnJVVEQyV2FOV3U2eENZSmJoRlpRY1UyMTROVVZadGc1OG1OcTliajlzazNmN0dVRUNESGVMbzVOUTBQVG1XSkJlMXl1MXVzaXN1MXRGSTVBM3hyTlo5MUJzbGMtMXhSdkh0alYtNDVNZGdFbDZtUGtFRmRDYmNobjN6WTI5ZHY5U3pQb2luUl81VE5YRjZ4YkFvbTAxQkRCSWlUZjhvZzV0Qi1jaWl6NUt3QURYZWVlVzQ0ZmE5Vlljbnh3WExaaFRfWmdjSWJQQ2lpMjduYTBOeDRIUk9pYjVGa0EwdjMwcmxOX3I3eVlGUVU4MWszUDlqcmFtOUlf0gG6A0FVX3lxTE1TbzBHUzZodTJNNTZyQnBQbEZPVUxHYzRSWTBIU3I4cU1Yam9EZzVnc2g4V3N6VjZmVWxWM0Q4NmdrUUtES0UtaDE5Zk5VNl94ZEdpSmp5SFJ4amJmdXh1UUg5VHR2c05zREVpUkFwQ0xsSDk3LUQzTXhxRERaT2ExNWpWcTZRQnctWElCMU5Td05oOXAxemtvUEp4cm1rejBKYmVjOUpjUkdwNExYS0E2YVNRaUV5el9iNThURTVpVkxqYXg5cVZhQUQtRVpYYzIzaWl0QWtPeXdiOWlaOS10QmRiNHVlWGxoWUdWOTdLM01GcmItbnkzbUEyU3FISlNHODRZQnhFWEktZWJQck81bVlyZG9FaVR2QklMRm5BUktfNlF4bVF1Q09vZjRuUFJuMDg0cUJJaVVrQ3B0STBlSFlKVURwRUM3dzh3R3V4V05adGVCcHB6WnYwdG1PLWgwaHRKVS1Ydkg3ckZzWXBvVlRUNWV1c21VUFdFMHJZbHRvdEZ2RS1kc2RScEtjTnlrN0E2UUxPVGloc1NyaHZHQ1o0c295N1VCdV8ydWZGeGFpT2F3YWo4OGc?oc=5",
-      "title": "نتنياهو: هدف إسرائيل هو الإطاحة بالقيادة الإيرانية",
-      "en": "Netanyahu: Israel's goal is to overthrow the Iranian leadership",
-      "outlet": "العربية",
-      "published": "2026-10-22T04:08:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZnNWQUN5X2QzR0RJZzB6eW52alg5OTZORFR2bXlkTGtTT2R0eGhmSmppTFdnR01MR0lWNEc4aHRiNTZjZTlLNnpxWWFyVnRmWWc4OXJLTWppZnhyeEJFUV9UV1pubUx4NEFaTFFtN1d3R21KRDM4QVN2ZUQ0NkEzVXpQSU53N3hYM25rTEVMMFRqNEFlOW1INWRkUUNPMFlWRHB4TFBrTQ?oc=5",
-      "title": "Tiêm kích Israel bị nghi 'áp sát Iran, khiêu khích phòng không khai hỏa'",
-      "en": "Israeli fighter jet suspected of approaching Iran, provoking air defense to open fire",
-      "outlet": "VnExpress",
-      "published": "2026-10-22T04:04:52.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMiowRBVV95cUxPT2oxbkJFTDhOVThvSFdnSTVEYWRSLUJiUTJiMWQtYTdfdmxoZkQ5WjlYY2NkYlUtYnFFNkxEUm5hSGdjWUNJTXJ6LWVqQW5QLWR0NmZiWUFQVVBVdXp6ai1WSzA0VXNoLWMtem5tNllEWXhMcFpyNDlEV2tydC1FWjl1QXl1TlpQSV9zZnYyM3psUWVoNUllUEw4clY5aVQ2bm9nOTgySXhiSmI0aEVNRml0ZFRLbnowNFdkYmdmN2Z1b0dodUJ3Snc0Y0d0cklHejd1SmVpdGRVa1ZXVzk3MEl5Zk5fVnZpRXdNcmVnSFNDWWlMeDhlVlc4UGY2cHJfbUtpa3JBd09rNXhKbmwyQUZRTjNHS1R0aGRaU1dHQkp6eEFCNWZBbnlheXRjcXhsMjRUZ0tkYlM2R19WeXg2alA0M3Z5MTJNZEVTNXNqLW5rcTlhMF91djVrNEltc1pDbkFocmxUVThLOUhockRJV0JEaDR0ZmMxZFJpTzFBOE1KOUhrY0JjRzlsOFpocl9OVmllakx4U1VrVzZxb3pZYjVCb2NEbzAzR25ZanJHZUFqVkg2QVNCd3lCV3lwSXEteUVNOUhxRkM1dTJERXpsVF9rSmZCOGtlUS1peFp0ZlpXc3ZldEhaR1AzM3UtbDhlRnItdTI2MV9JNERhdDJrdlUwc3daVEF0MXpDdTUzM2EyUGFNZFRPZ19waGlONGVXcjNz0gGnBEFVX3lxTFBmZnBpenlQSEYyc3BZRkhsbXFIemVWTERITHBjS1ljbzBGdGd2N183cXJHVmtpQ292Y0pHeEpDcW5tUkRKeVFZUHNmRU5IajFSS0dLdVVhajZ0ZWRhSGVhQlVWOGY3ZEZqenZjY2FHYzFNcjQxakpvTFpnYlpITk5fa0h4ZkI1MXJIcGl4SVhVcVppbEdxRDBvNlVNVThaZklmM25LZ08wZWQ5UWxKTUo1a0tVUG5Ud2FMQjY5MC1VM1VYRGRNMEtfQTNDY0RDNldNclREU0ZJTlc5QVdaMnJXajAzbnF4Zko3b3BKUkF1Y095QVFQaXF5emRYSVBZY2Z1MWs0WHhyWGRPX1BKZ0N1TTZObVNUMWJZeFRWTWllZzQxX1pqYWdLRWhpWFdRRXFxQU90X2duY3JFcHNsbFdXZGI5ZmI2UnpPN0ExV2RER0ZpdERkMXZ2alV0Q2g5aDNjdV9ITFVtUUYyN1h0M3MzZzN6Ul9kM2lCd1p2bnNQem8tbjA0VEFKckdCOFJnMlRYM0NHdWRGYlJURVFHcFZHNmxROExOMHpJb2RjT2tvcDZDcm5LX1lxXzhpWVg0UGJRVHg5dlVLSHhMcWh1TFBnVnl6aktQS0xsdzRHcVRvZkI5SFdCUDhtX1g1MC1fY3JZcVRNWnBnd1RmU0xqZDhNWkNhYnRDT0tQZ0dFZnBrUE5kWlY0YjQ2VU1RN214djR5eHdaRmxv?oc=5",
-      "title": "الحرس الثوري الإيراني يعلن إصابة 7 سفن بالخليج.. ويحذر أمريكا من رد واسع",
-      "en": "Iran's Revolutionary Guard announces 7 ships hit in the Gulf... and warns America of a broad response",
-      "outlet": "عربي21",
-      "published": "2026-10-22T03:44:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNWEh6ZXE1X2pzZXpZODNOQXMxV2ZWemdZRnZLb1lISDZKb3JNY0VpRzMzZzRoVk04Wk1jSUJ6dHlmSHREaVA3dGlHRm9YREpEZGVCcUs4c3hQZVptemFoZDFyaFE4bTBCMDRfLXBraFcwd3lSOS1HRFlxV18tLU96V1NCMXRUaXRBZ0h0cWM0cHhIbHkzMEtWTVk3MkpJOUxicUVfUnhNLU42STdVZkJieWljNGQ1NjRYUFFlMW4yRVlZSVdVM3pXR1BZSVFXWEt6UHVkNnVYR0Z0emIxUG1XWkw1LTZkRHF5QndzUU5DdmVTeVJ4bDZxMXZOZ0tTN2VBQ0lnVnRXeUxwLTRjQk1QQUlLTnN4dUlvVWpKb2lrd0FEcTB2UzJsYlRYVDYtdkdFbF9GNzE0S2FjT1ZJRzJVOHFTQdIByAJBVV95cUxNczgxUkdJSGUxNnZFbkdkYlNIeWVOZU5FOHZPcVB6ZkRmaVU2SThqbFpkc3BFX2hNeUJJSEJnMzBSQmdacER4bVlnb1JwaGFFdU1yNnNsZ2QtV2RwMDVxVVRPMXdzR1lILW0zV21OYUdQTGo2bWtyUkJuV01GTlhsTkV2eUxPUTFTclI4MEZ5eWZWRm9WODNvblZRbHNGX1NmUEVONHVwZk00OTBkVUNYcTJxejRQNWR1RlNGejRDUjV1NzJiTHRRYXo4NldzdlozUWhBdTBObXN2MGlkZzZHTHpwNVhzRnQwdm1EaV85ZkdkaTM0UVFvZWtXN1RhNzg4V2habHNUWDY3UXdnV05PNjBJdFJEVTNtMDBxSzV1TFBtV1Byck41NHZBTE1mLUNpTmNpM01RLTdlaDNEbF9sYm5hZFJuaFhH?oc=5",
-      "title": "إغلاق معبر مع العراق وفتح آخر مع باكستان.. ماذا يجري على حدود إيران؟",
-      "en": "Closure of a crossing with Iraq and opening of another with Pakistan.. what is happening on Iran's borders?",
-      "outlet": "الجزيرة نت",
-      "published": "2026-10-22T03:12:27.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNWEh6ZXE1X2pzZXpZODNOQXMxV2ZWemdZRnZLb1lISDZKb3JNY0VpRzMzZzRoVk04Wk1jSUJ6dHlmSHREaVA3dGlHRm9YREpEZGVCcUs4c3hQZVptemFoZDFyaFE4bTBCMDRfLXBraFcwd3lSOS1HRFlxV18tLU96V1NCMXRUaXRBZ0h0cWM0cHhIbHkzMEtWTVk3MkpJOUxicUVfUnhNLU42STdVZkJieWljNGQ1NjRYUFFlMW4yRVlZSVdVM3pXR1BZSVFXWEt6UHVkNnVYR0Z0emIxUG1XWkw1LTZkRHF5QndzUU5DdmVTeVJ4bDZxMXZOZ0tTN2VBQ0lnVnRXeUxwLTRjQk1QQUlLTnN4dUlvVWpKb2lrd0FEcTB2UzJsYlRYVDYtdkdFbF9GNzE0S2FjT1ZJRzJVOHFTQdIByAJBVV95cUxNczgxUkdJSGUxNnZFbkdkYlNIeWVOZU5FOHZPcVB6ZkRmaVU2SThqbFpkc3BFX2hNeUJJSEJnMzBSQmdacER4bVlnb1JwaGFFdU1yNnNsZ2QtV2RwMDVxVVRPMXdzR1lILW0zV21OYUdQTGo2bWtyUkJuV01GTlhsTkV2eUxPUTFTclI4MEZ5eWZWRm9WODNvblZRbHNGX1NmUEVONHVwZk00OTBkVUNYcTJxejRQNWR1RlNGejRDUjV1NzJiTHRRYXo4NldzdlozUWhBdTBObXN2MGlkZzZHTHpwNVhzRnQwdm1EaV85ZkdkaTM0UVFvZWtXN1RhNzg4V2habHNUWDY3UXdnV05PNjBJdFJEVTNtMDBxSzV1TFBtV1Byck41NHZBTE1mLUNpTmNpM01RLTdlaDNEbF9sYm5hZFJuaFhH?oc=5",
-      "title": "إغلاق معبر مع العراق وفتح آخر مع باكستان.. ماذا يجري على حدود إيران؟",
-      "en": "Closure of a crossing with Iraq and opening of another with Pakistan.. what is happening on Iran's borders?",
-      "outlet": "الجزيرة نت",
-      "published": "2026-10-22T03:12:27.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQZDFPWDdiU0NCRXZZbzFta0IyY0paSUd6dFVjREFiZ0hubko5Z1NrSWg3Y0RIRmZDVHJ1RnJ3cDhnTTBtbHdzX2RNTk1kdTRpUXZadC1sTFBzUUpFbFBNMHh0NHVVRUI4NkNxSlJLeXN4VTJrRkJjcDBnbFRmQmVTUV96UWZkQmVlejZoT0piSW5YcHNsZ29oUlVSMUxjS0VkeThxbUh6QUNsRW1CamNDdzVUVHYtUWJ2VlBMU1dCNHR2NHBlbm5JN2l4NE1rUjd0cW5qLUxDTWlSR2NGNWZyUEVYV2pxWGkyLUw0d0ZQRHHSAfYBQVVfeXFMT3p3WTREbnZYYlo2SVBCWkh6ajlnaHExOEFrc0FCVmJGaGFxNU41Z1QtMmliNG01a2RYMjNOVkV0dE9NYVhWdWdqd01nLVhERThUOXFMeUVuOEFqbVVIZmtmbTlpdDRYTkJ1b043S2pxd3psUGJWMUFLeXFiM01aRElEQ1pOOE9LblgyQ2tTRVNlR2dxSU5pODREc0IyT3lCX2FuWXpVUFNGVEhUR2N3LTVWUXgwSkR1cXJueTlOTHJHNVlselVHSXpxbHpzV0M5bkF4a1B3bVQ1VWJ6LXF0ZkNtLVV2eWRSQmxtVlVnclVFT1VoWkx3?oc=5",
-      "title": "US weighs fresh strikes on Iran; Tehran warns of 'father of all bombs': Reports",
-      "en": "US weighs fresh strikes on Iran; Tehran warns of 'father of all bombs': Reports",
-      "outlet": "The Economic Times",
-      "published": "2026-10-22T02:45:24.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CH",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVzg1czgtX21NdUxlSlg4LVNrM2hwVG1tWEVfMjFDeVFFZDdfQTUybEg4TkdWVU1QVndIWmt0MGlyVkZSZ0xKQnE5MFozWnViZjRnZnZlemlIT2pkYkR4empoMlR1NHhSaXZ3d2FsTGkyazRDaXBLbUdNb1NNdTh0LVlxUm9HYllOUlpvTkNGbDF6R1J0aW9tZnVoTEdPZkUxSW96NFJQSEpQbEZMM0xoRmVZWUN2OFFBQUFnMU9wMGIzS2U2UGJicVBvUQ?oc=5",
-      "title": "Trump hält sich beim Iran plötzlich zurück – und rüstet doch parallel auf",
-      "en": "Trump suddenly holds back on Iran – yet arms in parallel",
-      "outlet": "blue News",
-      "published": "2026-10-22T02:34:43.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zTzQwNmFXaDByaHV6NWpoTGFVMm1jNHdfcDIwRkxPNUdKdkNJUXFBT1MyOW9iOU5SNURydUJyQ1hKUm1oWDRDcXRIOEIyd9IBS0FVX3lxTE10WnhPeUJBT2kyOW4xUzM4cFJManJOdVVXWDA1ZTgtTEVHc1ZsZTZtbWtPN3V4c1ZjVVhoMFdlanpDWEtfTUZQbF9KOA?oc=5",
-      "title": "NYT сообщила, что Израиль и США разработали план новых ударов по Ирану",
-      "en": "NYT reported that Israel and the US developed a plan for new strikes on Iran",
-      "outlet": "Интерфакс",
-      "published": "2026-10-22T02:29:00.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "CH",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPckhtUjdTUlFUS2hKTzdheFJsVWVROGRLcUpPamhWd29mVU5rRVRTSGowdWZYX3JjQ2R6R2lNaV96dnVVOVlaVjF3VkVMM2EzckRjODRRYUJlZHNNUDh0UzN0U0FnbkZIbjlFNlRJTUg1QmFCdHRUNjJDY3IxLVpvTzRFSGh6cGJtaGtPNVE5a0VUWXhSWTFEcXBpcjBLVHYzNWdjcFBjMVIxUk1ZWmlWbmhDcHJ4Zw?oc=5",
-      "title": "USA rüsten sich für neue Eskalation mit Iran nach den Midterms",
-      "en": "USA prepares for new escalation with Iran after the midterms",
-      "outlet": "Watson",
-      "published": "2026-10-22T01:43:04.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CN",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KeVo2MVA3OWZEQVlOWkZmWlF4Tmp3SmZfUk1lQ1RzM1MwVEVzcXpxdjM4WXJ5ekRoUHdNbHlMMS03TndITzh6dWQ4bzliNXNEVFZsTE1FQXJZOHhKOGNsTExuS3h2WFZOWUZhWFRzd2M2VUtveGhnRWwtcXdXZHM?oc=5",
-      "title": "伊朗最高领袖会见议长 讨论战争影响",
-      "en": "Iran's Supreme Leader meets parliament speaker, discussing the impact of the war",
-      "outlet": "新华网",
-      "published": "2026-10-22T01:23:21.000Z",
+      "from": "PE",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNllYT0pQY3V6cHFzRXVwV3hXT3U2QnlQWkFwQW15SjJhX3otZjQtYk9ZSk5YdzFNOVhaZFBnem9FUnFCYzQ2Y3dVc1pqSTlsS1dJdVY0OEpLdjdwc1lOODZKMHhUZmp2MHBnWXFzTTItVEJQdWxiZllaejhPVnhzenZNRkdPQ3JtdXJpbXp5WElZc0JKejFETkdKal9TNENjRkIzd3BmdlFTVDlQd1NTeDZtWWFlNXphdjkxZUVhQ0JGRjlmaWR5N2JB?oc=5",
+      "title": "Donald Trump frenó un nuevo ataque contra Irán, que prepara con Israel, según el NYT",
+      "en": "Donald Trump halted a new attack against Iran, which he is preparing with Israel, according to the NYT",
+      "outlet": "RPP Noticias",
+      "published": "2026-10-22T03:14:54.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -569,116 +629,6 @@
       "en": "Threatened by Iran and Houthis, US Troops Begin Withdrawing from the Middle East",
       "outlet": "republika.co.id",
       "published": "2026-10-22T00:42:04.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMi6gRBVV95cUxPWlFHY0xSNVQ4SzRiYVd3THR1U0VaY3cySUwwWHBsc2N3czlYYXptSXlZcUtjaFQ2ZGotZ0hXeGpaU3BzN3R2Wnl3UGlGUzU2ZnNGSXBldktuUllsQTQ1NVprUGNSS3p0ZVV4ZlYxTnhPQ2hHWWxxdXgxOGQ3ckJUZlpWeEZwbmI2ck02TDlieGhucFV6WVFfM2c2R1dCVmo5SnNReERPbDNhSXpUYzl1OGxNa1h1UGRaNVMyTjNFbERnbWRCUl92elU4TXNLeDdyYmJWbThTdlRycEJCdTBCRFVuZV9jY2QyS1ZtV3RTWVpPOUJYRHlUcXg1Qk5xRFV5OHRlcC16MmY1S1dHeU50M1NSNW55T1M3Rl9iUVdIOHc0Q0N5MFp5eVpmYzFQN0JMbkN4Q3pDeXBkQmlTZkJaZFk5a2pWSkYxZmtOZjVPMUczeTNNbVlPcy1KUGVEcFk4NGN5VXptOU9xT2o5bkJWZlltOTFxa3hMSmpQb0RCNVJWVTBfNzc3MWRJRDdpRXhfZWRQT1NsWFlRMlMwaVhmVy0ySW1KYjdJNGphUzdGeUJmUFN5VFJKdkNOeEZaMmZHRzNKTjVfM3dPRzh2U0RBbUtyQ1VRa0dNbld6eVZ6WS1pa0VKeDNFbTJua0pMb2YtTmlQa2dHenZGb2Vhc2lCR3NZa1JIZVV3TkhaTHhCQVNxRmRvbExzZjlxc3JJNGZabzYxaW5tMzdkaVRTNDJHQlBJWE4yZEtUX21kMkFXbDZPc204ajRyNlJJdHByUUw3QmJ6MlBmanhHQ1J1Ni1WdnlmZ2huQ3g1Qmc?oc=5",
-      "title": "ترامب: دمّرنا قدرات إيران على التخصيب النووي ونريد ضمان استمرار نتائج الحرب",
-      "en": "Trump: we destroyed Iran's nuclear enrichment capabilities and want to ensure the results of the war continue",
-      "outlet": "annahar.com",
-      "published": "2026-10-22T00:29:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE43YkpfYUM5bkVqazRvd3BqMzNPT0ktZFBTUXh3czNEb3RkYVEtUnNhQndxenp3U1QyQzF4MWx3?oc=5",
-      "title": "روسيا وإيران: رسائل ودّ أم حسابات مصالح؟",
-      "en": "Russia and Iran: signals of friendship or calculations of interests?",
-      "outlet": "الحرة",
-      "published": "2026-10-22T00:24:51.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQLTI1LWtNR1dQVk5uRzFmOG1XNGtidjRPekN3LXg3czRYRWxsa2pVWXQ4ZXRCODZUTnpiOXJIdDB6QldUMG9SM092cUlwNUluc0hhUk11MzlBdHV1V2dwYjZrTG43cVBQU0RxUGNGQWdINElOeUtPWFZOTkpMa0dNbHR2MkZRS3QtLUIxQm9hUTlrSXJLTS13VnZYVnNtSXJZNlhVclFsd2ZaczVld0E3NWx4cEcwSklz?oc=5",
-      "title": "Rộ tin Mỹ, Israel lên kế hoạch nối lại tấn công Iran sau bầu cử giữa kỳ ở Mỹ",
-      "en": "Reports that the US and Israel plan to resume attacks on Iran after the US midterm elections",
-      "outlet": "Tuổi Trẻ",
-      "published": "2026-10-22T00:24:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IUnR5NW5jR1p1NGpZSG0xa0owSk9YU3N2TGVBNmRTb1cwRWJLeUNpOS1nUzNFcEJpSU9BQkctTUV0OVpLMXcyNlpkR2xKYUJMMHdiSHVkT3NJQQ?oc=5",
-      "title": "דיווח: \"גובשו תוכניות לחידוש התקיפות באיראן אחרי בחירות האמצע\"",
-      "en": "Report: \"Plans drawn up to resume strikes on Iran after the midterm elections\"",
-      "outlet": "YNET",
-      "published": "2026-10-21T23:26:32.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxNczhhQ05yemFqRUdDM0hOcDJVUk5fTWZrY0ttbjhQcmluZE5QNXRKYUhRTzVUdHhBbGVlNTE1U3VKOFV1c2YwMU5rYzZ0Unhub3dUQ3l5eTdsaGZaSHZ0NzlmTkJiODloVTNQZGpsOVlJZzYtV0VrX0plbEkxdnh5ei1ma0RwaHk5bnVmemVlRlpiRFFLNEJPcmhLQU5RUnNZMzZMdzZtaGFnVzdocUpFWkIxcGx4TWFOVE45SkdVSnhyczQxU0R4Vy1EeXNiU1M0LTZGNEVVSzczQmFlRkw3YjE1WUJqYl9aOXo5Q0ZoYzVlZlR3QW1UX0pOQWhSOEF1Z2xkODhMNU1JYU9ZbWJ5NEMxYjBDUnhBNFVNOThwYWQzWkQ0X2FFdF9UN0EtX3BhQmp0eXk3aEgtemfSAcACQVVfeXFMTVp6UzVkaFZpRFVqdTJlQU42YmFybldZRlNMOEJBa1pHREZCNHlQOXdub0VHOFpFNnR2RlM0TTFKVmpzaTJvSnlhNktseEdwZlRXOW0ySkx1TWdhZXpfbEhaWXY4SDMwWmxCdUpQNVlSd21XQWlGNmpQQVNBM053eTVIdDNoR3BXdVRWeFpQcmZiSXJCN3pPenVWV2J5NjV6WHgxWDI3WGdMWGhNbkY4RWZsS0VKYm5WX09PWF9FQkZzTUZHNWpQbDZPU3NKWUlPRlJTcTMxOE02V1pOcVlUYTJoNVlmZUEtRkpmckZKWnpCaFh2UVh3NnI4aFRyNlJCalliblMtSngtVnl6OVY3VTNBbjZzZFdRWlVFNk1JdTZQbXRNd2phWFhyM2Q2aXRjR3NGRm9ScGE0OFY0Q3ZRMXU?oc=5",
-      "title": "في بيان مشترك.. قطر وفرنسا تدينان هجمات إيران على المنطقة وتدعمان خطة ترمب بغزة",
-      "en": "Breaking | Qatari-French joint statement: We condemn Iranian military attacks on countries of the region, which constitute a serious violation of international law",
-      "outlet": "الجزيرة نت",
-      "published": "2026-10-21T23:12:10.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE90ZXNuOTBfaF9FaU5fcXF2TjRyc2Z6UE9RYVZUTUdNM2pncUpwcDdGOTFEOVoxejl4dFVLSzBrYzkxY19xUEJfNURjeGxVUF8xWHMtaHFUQ2FxRXhPa1V3SllzX0RVNU4zQV9JMHRBUHdKN1NabWE1dtIBfkFVX3lxTE9TMnFmOWNxSjk3bm1DM2JiR3dTYTFuQnJfZnQ4V2JQVkp2dzAzUEtVa05ZMHpUWjV1S3JuZUdnM2M2MmhUZWhPenN5dE1MYkxMMVdqQjJlM0ZYYTBUMGlabkM5VkdWSGk5NGJ5SHJsUW1yTERDcUVlMUpaV1ZTQQ?oc=5",
-      "title": "Εκρήξεις στην επαρχία Χορμοζγκάν στο Ιράν - Δείτε βίντεο",
-      "en": "Explosions in Hormozgan province in Iran - Watch video",
-      "outlet": "Skai.gr",
-      "published": "2026-10-21T21:04:19.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TR",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9OVjhvQ2VnT0NNT1Bvb29Ea24zaC04ZFVFVVZRcXZzRU9ob1BJV1VtSWdYVjhSbmxCWjE2alZ2OFJfTW9FMHJJSVNYelhoUkRKVlVCaG1HOXpaRE9pcktVeVpzb29XWmYxQUt0akFJelo0bXR4dVE?oc=5",
-      "title": "Trump, İran'da sembolik olarak hapse atıldı",
-      "en": "Trump symbolically jailed in Iran",
-      "outlet": "Diken",
-      "published": "2026-10-21T20:55:47.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMi7ANBVV95cUxQWWVacU1iMG5INHpWV3h5cDRKZ3RLaW9oMVlzMTdDdjBaVmczelJhNGxNWHFZMF9XLWlRdFpEVVdlWXU1dkFFMVRSWUxVSDhGOWJOUEtCcmJMU2EySHFCYmEwWmtpQ1lEcVpST09raDM3Sm11aDc4OTFKRnJqUGRjYTVROHVyRUd6eTB0cGlEVnNlZHNXLWV1elZDRE9Wa000UXJ3cWllT0hWVGNVeGZTMFNkNFViM2VnMHh6MmdHRFVaT0ZYOURFY3pDRVhxSVJhZXZHT0ZqZDNMb2x0WGU5Rng0azFEeUlIMmdyOC1xenBwWVlTenBXOFJUSlN3T0QtS2JLbnQxY2N4TWUtY1NONllaaGZ3bW9jZ0ZBcTdBdnR0cDkzS2lCelJaTk4zZkhzNlN3MnVybEtWQ2ZnVFdPdmFkUHl6ZjVUMEJPZ0Q3SzY3T21zUXNMN0liUVYyTFh0azJ4UmVndU1LenBVdmRZUEk1VERmR0o1VlY2WUVXSjNKb3FNQlAwcG8zbHZNV0FMSDQ1R0U5T1dvNzM2Y0tzMGVuT3ZKRlFvUGMzd01vVHUyajg5VnpQVlM1LWZYSHRtV3BhQUNzRVp2MmVHSXNfVnpEbUZtZEdTTWtsb1p4VF9PU1ZXNGo2ZHBHS2s?oc=5",
-      "title": "عراقجي: إيران مستعدة لمنح الدبلوماسية فرصة أخرى مع أميركا",
-      "en": "Araghchi: Iran is ready to give diplomacy another chance with America",
-      "outlet": "الشرق بلومبرغ",
-      "published": "2026-10-21T20:19:59.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zOElFdlZrNVdRZXpDV3hFdk9GcVVtSDc3amVsUXRhUG1GSG54WG9fZUtpczhLVjlFNWpUejR1bmNUUGV3UllyX0doMExwMXBEUXRMcmF4MVFYQQ?oc=5",
-      "title": "דיווח: צה\"ל ביצע פעולת ראווה, ועשרות מטוסי חיל האוויר המריאו לגבול עם איראן",
-      "en": "Report: IDF staged a show of force, dozens of Air Force planes took off toward the border with Iran",
-      "outlet": "YNET",
-      "published": "2026-10-21T19:32:02.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUzJiUFRvN0gtdXI2OEQ2U0NTcjljVzNnZE53aDNKU3ppUHZLV29aVmtKTThxdWtiRFR5SWVrU2ZuTzByeFpCVHhjeEx6bmt0OU9ZU2RoWldoNzFwYXlWY2Y3SmZHVUdMRVlsRm5WeVFkOGRZX1A1dkVvR2x6RzNkaUhQV3MteGV5TVNlOEdLN0h6Y2ltVUx5cWE5TzNnQ3c5a2x3?oc=5",
-      "title": "Izraelski avioni stigli do granice Irana; Sprema se novi rat?",
-      "en": "Israeli planes reached the Iranian border; is a new war being prepared?",
-      "outlet": "B92",
-      "published": "2026-10-21T19:28:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BE",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOMXdtTUJrbF9jbGhzdGZJamM2TGpKT3lVUFprb1F6YWFhM2dKdkJWR2VmbFBsZnQwZU9kZ2FMN0dVdjVtX1NiOGwzc2VfSl9WUWZHaEJpWTlRX1NqVThNbjRkRFFobzFKR01XY1B5bUlXRjlNRWtnZkZsSHIzR0pTOEtTbzcxNXhmU2xabmpBU2h4NzZwaGhrdjdldXNOZnY2aG1VVWludG1Ya3ZfdkljdDlSbFlia2thaFpuSjAyaHpYSlVSdGp6bDRxQVJfQ2Z6S2U4QW5UNW5VdHJhT1l1djJJVTg0RzdjY1pRbjFB?oc=5",
-      "title": "La Chambre n'invitera pas Reza Pahlavi,fils du dernier Shah d'Iran",
-      "en": "The Chamber will not invite Reza Pahlavi, son of the last Shah of Iran",
-      "outlet": "La Libre.be",
-      "published": "2026-10-21T16:24:00.000Z",
       "outlets": 4,
       "trending": false
     }

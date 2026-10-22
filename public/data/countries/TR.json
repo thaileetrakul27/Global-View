@@ -2,190 +2,111 @@
   "code": "TR",
   "name": "Turkey",
   "kind": "local",
-  "updated": "2026-10-22T08:03:09.184Z",
+  "updated": "2026-10-22T14:17:21.809Z",
   "source": {
-    "name": "Google News and Bing News",
+    "name": "Google News",
     "edition": "TR:tr",
     "url": "https://news.google.com/rss?hl=tr&gl=TR&ceid=TR%3Atr"
   },
   "articles": [
     {
-      "title": "Libya Anlaşması’nı eleştiren AB’ye ortak tepki: Hem taraflı hem kibirli",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM2pBTEVlZDI0TGVFaGotOWlZWm4xLWYyX2ZyY2lEWmpybTEzYURBb3ZZbUJhTnJCRll1a1lqeVFMZDJnZDJyckRSUHpvemZhLWNXa2o1X0hBdmxta2pVUm0waDNjaWR6aHVBRHhnWkdVRHI2MnJnX1NvRGJCYjVHXy0tRGNrV0MzRTlxa0hxMklpdF9tSGwxWEtvWFR2alpmMFFKUEZnWGEzQzhLOXpWRjhR?oc=5",
+      "title": "Dünya genelinde siber güvenlik açığı: PHP programlama dilinde sorunlar tespit edildi! Küresel çapta devlet siteleri geçici olarak kapatıldı",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOLXVwdWdQbHZMOE1HQVRsNzExN3pUc3VRME1KMC11NWVzZkwyV2xZdDByZXRmRjFTME9oSkVuU09icWRRbEFsNmgyOXlwRnF6N2NMV0xDc3g0d29wSlhfenNmN2swb1g0enF3MFR3Z080TTV0VWRTbV9pTXpQQ1FnUHg0NEVUTEh2TWE0WlJTS1BTYVNyX0ZLWHFJdWVaZmVETElTR2V0NGxoWnNidjJaWkhrUmtWdzV3Nk1meGFGYmF3ZTE2d19VbENKOGx1VC1vLTlTNk1qRmJSVmxCY0RjWVRlVUZPS3dpeGJkVXp6XzdYZzQzNkxSYzMwM3RaRGNWOFE5UXd4em1vUHBS?oc=5",
       "outlet": "Hürriyet",
       "outletUrl": "https://www.hurriyet.com.tr",
-      "published": "2026-10-22T04:00:00.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "Joint EU reaction to criticism of the Libya agreement: both partisan and arrogant",
-      "about": [
-        "TR",
-        "LY"
-      ]
-    },
-    {
-      "title": "Sudan sebeplerle gazeteci tutuklama salgını",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcEFnNGh6dEwyUzBtdHo3WTZtSm5KTnFSeW1FRG1fNWttTUU4bE04Sjk4VGxhUW0yc0pheWlNQ1JGWXF5UFQxUDdtZzhkWklfSG1yVy12Wm84RkdMWWtkUDRNcFVBdG1wSFo2RFZHS1hfd21CVTRNMFpMWmNuMUxUYmpR?oc=5",
-      "outlet": "Sözcü Gazetesi",
-      "outletUrl": "https://www.sozcu.com.tr",
-      "published": "2026-10-22T04:48:48.000Z",
+      "published": "2026-10-22T08:48:43.000Z",
       "outlets": 5,
       "trending": true,
-      "en": "Sudan's wave of journalist arrests over various reasons",
-      "about": [
-        "SD"
-      ]
+      "en": "Worldwide cybersecurity vulnerability: problems detected in the PHP programming language! Government websites across the globe temporarily shut down",
+      "about": []
     },
     {
-      "title": "TOKİ satışa çıkardı, taksitli ve indirimli. 400 bin liradan başlıyor",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWmlFWnk3VEJJTTBoTnN1QTI4MVF4d2xhZW1DOHZCNENWTDdrNFFPV1ZiTWJ1b0pKdlE0bVl2ZC1vNzNfd01ma2dISW1leTh6b2pJMkRBYTJYUjNlSDFxXzNEdGo3bk4xbVY0U3RndHh3WlFXS1Mzc1JBb1p3UzJKMDg5UXpoY2FjMU9RQWtTSzczRkI1ZlZKOU1yaDFfM3dkcW9OSEN1bWJCLU1QN0JNVXlR?oc=5",
-      "outlet": "NTV Haber",
-      "outletUrl": "https://www.ntv.com.tr",
-      "published": "2026-10-22T04:39:14.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "TOKİ put homes up for sale with installments and discounts, starting at 400 thousand liras",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "Benzin fiyatlarına bir haftada ikinci indirim",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNa1ZNbW5oeUxVR1BDd3J2b0JYMDR5RGVGUEFWMndEd21wdFB1blJjQUtfeDVHVXJSbkloOGw5OGRTbDhneGFfOXhZYzhUUnJpZzEtSmdHZGVyU2YzQ3ljMzU4MElGaHFJaS00b1h5VXZTeHNnZnhXMnJEbXUxYUNSQnFPMGc2d0VCUk5pRWxTOGpReWtXQzRmYWoxUEZJZnpUbGdSSXFIdWw5UUlSaGVOX2o0bVp2UQ?oc=5",
+      "title": "Merkez Bankası rezervleri açıklandı",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWTJNWkRoMTZLYzl3Tlp2ZUFJSTVfWFducWFNWWlKTHFHX2lndHJPR19qYkZNWDZzQWpCLTN0TzBsMkUwbmhuSWZEZlJjYkdTeUY4ZmhDNnJJVWh3Mm5qQUdjQjh1NTlCeThWeng4ZzVhbmQxV2lZZTZCbWRIRGQzZjVQVWYwWWRiRENOT0dndFdkbXdsdkRoTEx1LWlGYVhFYVRVdGUwZGREVEE?oc=5",
       "outlet": "Bigpara",
       "outletUrl": "https://bigpara.hurriyet.com.tr",
-      "published": "2026-10-22T05:47:13.000Z",
-      "outlets": 5,
+      "published": "2026-10-22T12:03:28.000Z",
+      "outlets": 8,
       "trending": false,
-      "en": "Second fuel price cut within a week",
+      "en": "Central Bank reserves announced",
       "about": [
         "TR"
       ]
     },
     {
-      "title": "Komşuda kızıl bayraklar yükseldi! Binlerce kişi soluğu sokaklarda aldı",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbkdaOFY5VWZnNTRjRDd0T1VqWEhmdEYxYm1CaTc3aGVwUWhjVDZNck1qaER6SEFvQmg3TGUwZ19pem1jQkRvSjFLeTVQeUtQNzN2R1F2ZzlIMlMzZ0J0XzJBdklCa3A2U2pvNXFYbTBBYVRqc214NjlVTGtLZGRXckFSM0hNZGRadHcyeGtXS0phV0VBbkltYkln0gGXAUFVX3lxTE1BUFdjZTA1SlhLaXdqU2UwNmRqbHJfdGxLVGtGMzBsSFhoOTRhTkxlUWotNnRYSV83bjNyVi1vOVR1T2k3aGJ2TGtCMVVLZGppaUN4T25vQUQ4VWxVVDh0dnJjRHpYNTVrZVZ5Qll2bUQ0dlNiblk3eklFTm02QTVzWHhzX1VnSVNNdndsbERLMXBkaElPYVk?oc=5",
-      "outlet": "Son Dakika",
-      "outletUrl": "https://www.sondakika.com",
-      "published": "2026-10-22T05:09:07.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Red flags rise in the neighborhood! Thousands take to the streets",
-      "about": []
-    },
-    {
-      "title": "Dünyanın en ölümcül virüslerinden biri olan \"kızamık\" kâbusu geri döndü!",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPY1BOSTFXNUpRV1Nwbi05TDFjZ0dRV2xqSXZ0M1JwVm5hOURud1NJRlRLWVVFeHhzYWd5VGsyYUhSQWw5WDl1NDU4V0ljanJDejJBVjZMT3BOWUxCR1pLSllKMVNjX0pYVkc0SmdOV1JpNUNWNTZuYVNERmE0VVlVN3Zsd2VvUTlKWGJ3cU4zSEdQT2hYOUJSSUtxNVU4VE9VREJoUEh6VWFNOVl5Q2R1QQ?oc=5",
-      "outlet": "Haber 7",
-      "outletUrl": "https://m.haber7.com",
-      "published": "2026-10-22T06:18:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The nightmare of measles, one of the world's deadliest viruses, has returned!",
-      "about": []
-    },
-    {
-      "title": "Kolejde skandal",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBEekRHS3AwbE40T1B5VktEa25ZUXlVQ2FzMUhMZXdlUDJFOUtkOGczRy1sT1dUQzVTdEUzblhuY0FDeGZ2aE9uZmIyNk9qMjlMS0VLX0ppRkVkbWlYdEdvaTFiZlVKOV8zVkFn?oc=5",
-      "outlet": "Hürriyet",
-      "outletUrl": "https://www.hurriyet.com.tr",
-      "published": "2026-10-22T04:00:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Scandal at a college",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "Son dakika...Merkez Bankası faiz kararını açıklayacak! İşte piyasanın tahmini",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOX0JvYWpIMFAzV0hVSVpRX2Q4S1RHSWdiZExVb3ZLd3pueE43VEhMQmFkSmpNUlByandMUlAtakxtLVNvMkVSVEJLcWNqUE1hMGdodG5ONmVGMldTbDV3aGtCRzc0My14Wm53R2xWWGVfeUp5dWEwVlB4cGlGcl94SDVvZ2tEMC13OXVfeHlGTUpwUktFRWdoZEQ2MGhIVmVVSEx4Y3liR1pJaEEtNGowWkJwS0JTb0thNnBNUTllbDA4VjJq?oc=5",
-      "outlet": "Uzmanpara",
-      "outletUrl": "https://uzmanpara.milliyet.com.tr",
-      "published": "2026-10-22T04:45:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Breaking... Central Bank will announce its interest rate decision! Here is the market's forecast",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "Nihat Kahveci'den Galatasaray yönetimine yıldız futbolcu için ilginç çağrı: 'Papatya çayı içsin!'",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOQ1h4b1NydE0wTEVsV3BfYWhoZmhxNk9SVEhoS0ZwYWo4TGNqbGpSRGJoQUZacXk2RUk2VkYyelpWVms5RkFlRnFwM1JaeDBObGhHNmVEZ0FJR04zcm1mRVEwQXNWemU4b1F6UUJ6dDBnN1pDUUd6LTA1TVNHQWNkR2dGQVVONFA0ZzZMcW4wbDY3bGtmbFU4eHBYell2clZOLVJuTmljNXZGNU5LS0dOZld5ZU5jb2FicExwdm00THZMaHl2SGhNUGRIWGk0VFNZTXVXeHFIT1FUbEFIWnc?oc=5",
-      "outlet": "Hürriyet",
-      "outletUrl": "https://www.hurriyet.com.tr",
-      "published": "2026-10-22T05:38:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Nihat Kahveci's unusual call to Galatasaray management about a star player: 'Let him drink chamomile tea!'",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "Siber Güvenlik Başkanlığından ulusal ölçekte uyarı",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVHZ0bzdyMHBSMjdfcUhUUjdsd0lLQjFuMXRzb3dNeUtHRDZucGFuQU5OT3Q5SDB1VlpELTZvUm1ybVVkOVN3Z2FUS1V3ZE1hOUR5RXZQZ21vS1BZTFJCVFdIQ1dzUDNONTc4ZUFIaWpMWHEtbjdKZWdHYTlSamtqQmIxSy1zTm5hLVUzWlo1UUNFZmRNZUZqaUhmeVJMTkdUT2ZMcmQ0Q3RQVVlseEE?oc=5",
-      "outlet": "TRT Haber",
-      "outletUrl": "https://www.trthaber.com",
-      "published": "2026-10-21T20:15:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Warning from the Cyber Security Presidency on a national scale",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "CANLI| Trabzonspor - Hearts maçı ne zaman, saat kaçta, hangi kanalda? (Muhtemel 11'ler)",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTnNrX21xVlNwd1ZDbDd5VVZVYk9CYlIySXdVYzFCcWk5aVY0QTRva3RBMnVRWi1rVzVvZk1tUzBtQ011NTctdFJRbTZkcmF3a09oYTcwUGZFdWItYkJaSEpuSExpVXZMRTdxME82OF9qU093YmNTYUd0LUIxWE1KMFVEVE9xNkNyUERwb21yeEVkVEg4SmFFRUdYV2xwaTgtY2FxUjNLU1pHUmVHZ3AwTlJBUi02WXZvN2R0OU44RlhvUQ?oc=5",
+      "title": "CANLI | Beşiktaş - Crystal Palace maçı ne zaman saat kaçta hangi kanalda? (Muhtemel 11'ler)",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQc3MzaUE1Ym9IRkxwZkhSbHV2ckJvZlNuUmxIWENjYlg0UHRaSGdwZUMzcXkxQUQ2TzhDNXNwSmdneVJNRm5fR3ZqVUxFQ3RNSzBVSUlUOVpUT3Q5OG1qWUtMLVV3NTR6YVFpQUhTQ3JqdXFlU09rb1NFcm9sZGFqd3YxNEZtTnhwRFRONDZtVjBidktHN3dzbWN0TzlhclBKRC1aYnJNREhKY2RpZnhQa0U3MFQ0Y3g5WW1wSEhlUXRIV1Rv?oc=5",
       "outlet": "Fanatik",
       "outletUrl": "https://www.fanatik.com.tr",
-      "published": "2026-10-22T05:00:00.000Z",
+      "published": "2026-10-22T12:59:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "LIVE| When is the Trabzonspor - Hearts match, what time, and on which channel? (Probable line-ups)",
+      "en": "LIVE | Beşiktaş - Crystal Palace match: when and at what time, on which channel? (Probable line-ups)",
+      "about": []
+    },
+    {
+      "title": "Reel sektörün net döviz pozisyonu açığında yeni rekor",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNY2Y0cEtNUExndjBkN1hMUEI1dTdoOGZPel83UVFkVzFhRXM2WmpmT1VHWTd4WldoeTlDRUU1N2NBUmZ1LTdnSlV6bVpjZTJFNFRXV1NUWjhkYy1iaElNNTlySlpRZjJ4WWdzUzE2UU5qb3VTMG1zSjQ2T3lsaHk3TWNjTDR0NmhhaDNKZTdRRlBkSEk?oc=5",
+      "outlet": "Bloomberght",
+      "outletUrl": "https://www.bloomberght.com",
+      "published": "2026-10-22T11:56:10.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "New record in the real sector's net foreign currency position deficit",
       "about": [
         "TR"
       ]
     },
     {
-      "title": "Petrol, Suudi Arabistan’daki saldırılarla yükseldi",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQnJxUko4eU1felRQdC1hcTl6NXRZSmRnN0ZQQlBfSUpMMlM0ZER4N1FmY3dBY29KYnNGS3hla1RVOE9aakxlNHNzclpVMHBMd3QxVEstWjZUWVRXLW1QTXR6dFQxNTJMNVBLNkVzWmJBTzFickdtVmRMSGIzVktjUGYtQmVqR3pEaTFMUA?oc=5",
-      "outlet": "Bloomberght",
-      "outletUrl": "https://www.bloomberght.com",
-      "published": "2026-10-22T03:31:35.000Z",
+      "title": "Fon soruşturması: Eski başbakan danışmanı dahil beş gözaltı",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaGlrZHlCRGU4b1RiNVhHektrRHNMSDdSQ2cxYWJYak9wNEFybGRDR3hiTWl4ZWh2SGpxaGVsbl92SmRDcG9kb3FYbXd3aVJJcTlDLTFDOGZHdDc5VE11YlVqb1FzUG5ISlotTWZVUVd0dENZN3FKdnVEN2RQY20wM0lKSnJaM2ltYy1JUw?oc=5",
+      "outlet": "Diken",
+      "outletUrl": "https://www.diken.com.tr",
+      "published": "2026-10-22T07:11:57.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Oil rose on attacks in Saudi Arabia",
+      "en": "Fund investigation: five detained, including a former prime minister's adviser",
       "about": [
-        "SA"
+        "TR"
       ]
     },
     {
-      "title": "Fon soruşturmasında 5 gözaltı daha: Gözaltı kararı verilen 31 kişi yakalandı",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ1I3MWJUYXlSLUFkcEo3V2FTX09lYU83bzk3RjI0NEVQekk3X0lxd2JxMXJMTExsLTEybU5aR0dJOTBrVEZhWG1PeDh5Z20zeDRYeDlPLUE5OTBGRjV2cHFiNkE0Ql94d0xEZ0J5LU1UUHcyWDNEd01hSEJiQ1RpbWJVTml0M2F4V1JCM2x6SUZFZDViZFo5V3I1VDF5dmNTajczOE4wSTlwX0d0UWJwOHVkMGV1NEk?oc=5",
+      "title": "Tutuklu gazeteci Murat Ağırel iddialara yanıt verdi, yaşananları anlattı",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWWMyeDNZeHdXT1ZsdjFTSDVpUVNXcFFlSTBOd0R3SlhQXzQwSm4xZmVFRjdXOHNhT1JuQVR0cFgwTE4wXzViVGgwX2tySjdZX256OXNMSzhvNDBYWTBNUU9qZHRjSl9PbXRwY2ozQkY4S0NPM2t2aHJPdDM2YVpyQ3EtM3M1V0ZfaGZYN3Y0SERienJFRHFlRDh4T3hSalRkYWE0ZmpJSEV1bkk?oc=5",
+      "outlet": "birgun.net",
+      "outletUrl": "https://www.birgun.net",
+      "published": "2026-10-22T07:40:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Jailed journalist Murat Ağırel responds to claims and describes what happened",
+      "about": [
+        "TR"
+      ]
+    },
+    {
+      "title": "İstanbul’da yağış alarmı: AKOM gün gün açıkladı",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQUZqU2phNmdLZnd5ZElJSWNadW9BRWZLcmZwWUNmSDhkazFGblEwcmN5WmNRbHFOWDRibVREbC1INnpNb0xsY1phenJXWDRhNDU4bkFHUEdQMnFuR04zellSei15X3Y0bTFMMU5YaHhYS0NTUnpnbERvRzZqR2kxeURRdzJYQQ?oc=5",
+      "outlet": "Sözcü Gazetesi",
+      "outletUrl": "https://www.sozcu.com.tr",
+      "published": "2026-10-22T08:57:32.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Rain alarm in Istanbul: AKOM announces day-by-day forecast",
+      "about": [
+        "TR"
+      ]
+    },
+    {
+      "title": "A Milli Takım'da Sergen Yalçın dönemi resmen başladı! 'Çok başarılı olacağız! Halkımız yine milli takımın peşinde koşacak'",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNFQ1aXFuMGhrZFpwVGE3Umt0OE1pUzJ1ZE5YSXA1TVB2aUVNZ2ViYnpEQUxtX3hYZ1VGSlAtcm1wcHljM2dfb0Z2dG5nSHl2OVQ5ZmJoWC1vc0tnbFMxeDBzTHZJdWJnMDVMSGpqWFN3bGJjNlVMcGo4S3k1TlRidFR2MnZ5elF4cUc4cXZFSmoxWXc2NUF2Y2NVSWNhTGc?oc=5",
       "outlet": "Hürriyet",
       "outletUrl": "https://www.hurriyet.com.tr",
-      "published": "2026-10-22T06:25:00.000Z",
+      "published": "2026-10-22T11:07:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "5 more detained in fund investigation: 31 people with detention orders caught",
+      "en": "The Sergen Yalçın era officially begins with the A National Team! 'We will be very successful! Our people will once again chase the national team'",
       "about": [
         "TR"
-      ]
-    },
-    {
-      "title": "İran ordusu: Basra Körfezi'nde petrol transferi yapan 4 gemi vuruldu",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaUVZU0lwRXhrY1dWRDU2aHVRbjFRWW9CUEE0Tm96cklzU25kQUpNVlBvc0ZOMWJxUWtkdDdIbFY5S2ZxQ2hJWjFsczV5Tm1hOWZwQVoxR1Z1WmFCYWR3MVNvWUYzbmc4RFZneG83SkNTMWJuVjB4c2hYU1lLYk56X0tiMFdzQkNUd09FQmg0cDdGN0h6cXlRdzZldHlyb1hvR2w5Uy1n?oc=5",
-      "outlet": "Bloomberght",
-      "outletUrl": "https://www.bloomberght.com",
-      "published": "2026-10-22T06:09:03.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Iranian army: 4 ships transporting oil in the Persian Gulf were struck",
-      "about": [
-        "IR"
       ]
     },
     {
@@ -193,7 +114,7 @@
       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOHU1SXJFTGFmZTdIem82UHZSeDZaclRyM3hfMlFjSy1ZRkdTelBRWEZQd0g3RFRYaEhtWnBac3JfWGVYS19YMHloSG1pZGExdjFKelFvVUtaZ21GdHpSc3pDLWR5ZzlQWHNfdHdabTY5VVZ5cncwRndDRVNmSFBfZ2VWZkx0Nmt5QS1YSGF0NVlBYXhnZUJKblFOUnVwSjNiRGloWWtGTldncFZ5OW9pSDlCQUk3aHFjYkozc2ViZ2Q0TEZwTUpDMTVkdjFJQ0FRUkhndTJDWWFQVVdNdmQ0?oc=5",
       "outlet": "Hürriyet",
       "outletUrl": "https://www.hurriyet.com.tr",
-      "published": "2026-10-22T05:56:47.000Z",
+      "published": "2026-10-22T12:59:52.000Z",
       "outlets": 5,
       "trending": false,
       "en": "Tension rises in the Middle East: Trump signals attack on Iran! Revolutionary Guards move in Hormuz",
@@ -203,201 +124,272 @@
       ]
     },
     {
-      "title": "İsrail'de seçimlere geri sayım: Netanyahu İran tehdidini yineledi, seçim anketlerinde destek kaybetti",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUGZqSkxfTGl4eVAzWXV3WlMzTnlEdHNGTHpwd1BBcTUwUkducUdsRzBjVUpoRmV2SkdUQ2wwZEFRV0JGV0wzM3ZzQU1TNTBwaFRmY21QSVYycjhydnVfSURHRk92U25JcHRZVy1BWFFnRVdBN2p1UkxjTXYzV1NwbWdqd2piMFlrXzhXdFdwal9VeXpOdmpuYm93?oc=5",
-      "outlet": "Habertürk",
-      "outletUrl": "https://www.haberturk.com",
-      "published": "2026-10-22T05:53:12.000Z",
+      "title": "Ankara’daki fuhuş ve uyuşturucu operasyonunda öğretmen detayı",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPd0cwcEEtSUNhTHdPU3pDVTlXMVJCLTEzcGJHNnJWQzBlMzBsZG84RTJZYlFtVF85Q2VPZjVkRUlLRGswN3pUZTdLblZnamdieVZ6TGhZdFBxNE9GczdsdGt0ZUJkOXI5cWlNUFBBRTVKSVdPUEtFZHFLWTBMb0RkSWxrcVgxazdWcng0VEp0bU9LQTA3TkxJeHpYZ3pDSkxIYkE?oc=5",
+      "outlet": "CNN Türk",
+      "outletUrl": "https://www.cnnturk.com",
+      "published": "2026-10-22T07:39:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Countdown to elections in Israel: Netanyahu repeats Iran threat, loses support in election polls",
-      "about": [
-        "IL"
-      ]
-    },
-    {
-      "title": "Zonguldak'ta boşanma günü dehşeti: İyiliğin bedeli çok ağır oldu! - Gündem Haberleri",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ2pfQ0RoLWItLU9PT1VJSi1rWXF5MzdCRHJVZnhNVmNkNUowLWJqRGQyQjltM2FZcEpIbUM0TXRNWlZzMUMwMURZSVg0Z3NaVEh6NUZSZkR2WUN6NDk0TEw2UUE1cHdlRTFMaUNCX1dDSDlhcXU0eFhyYWJpcXdlOHRmLVFCdTlpZW9XbHY0MmNGSi1sMS1JTjJ2NEJEYTdkak9idQ?oc=5",
-      "outlet": "Posta",
-      "outletUrl": "https://www.posta.com.tr",
-      "published": "2026-10-22T04:00:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Horror on divorce day in Zonguldak: the price of kindness was very heavy! - News",
+      "en": "Teacher detail in the prostitution and drug operation in Ankara",
       "about": [
         "TR"
       ]
     },
     {
-      "title": "Zonguldak'ta 3 katlı bina çöktü: Enkazdan acı haber geldi",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qQklhNUZqZE9rdV9QRERmNnZQRG11RmFvWGx5cDJFQzYtU28yWUFZaEVET1FsT3hMZHN3bEhMbmtSR00wcEU5Zm9fbUIyTjdNSGFzZVljb2FKZG5Ld1hUeG9GNA?oc=5",
-      "outlet": "Sözcü Gazetesi",
-      "outletUrl": "https://www.sozcu.com.tr",
-      "published": "2026-10-21T16:04:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "3-storey building collapsed in Zonguldak: bad news from the rubble",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "Mekke'den sonra Bedir Mutabakat Zaptı Anlaşması… Savunma Sanayii Başkanı Prof. Dr. Görgün: Stratejik bir adım",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQOTh3V2E5NGhhU0RmMG84SE1vUTJ3cGRBcnM5MDRfeDZEcjdxYk5Hb0t0TjZuWDBWT29XZmpfMTV2dHJzNTh3SktNaGZidHQ4ZXp4M0dwYUhwdnFIZmtaZU5KWnA4ejRwb2NSeFhyVk5mRW5welJQOFVDTWgxSjQtendMV2YtMnllWFJTVkFlT1llUjkySXZhaVlHNlhkZldZdmhTRHh6dVNMZnVpRm9FdFVITzRMMUIwZURzeFpXT0ZPX2s2aTg1WXRUY0tERU5zalBkb2xGSHQxa2lWVjlZc1BB?oc=5",
+      "title": "Fon soruşturmasında 5 gözaltı daha: Gözaltı kararı verilen 31 kişi yakalandı",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ1I3MWJUYXlSLUFkcEo3V2FTX09lYU83bzk3RjI0NEVQekk3X0lxd2JxMXJMTExsLTEybU5aR0dJOTBrVEZhWG1PeDh5Z20zeDRYeDlPLUE5OTBGRjV2cHFiNkE0Ql94d0xEZ0J5LU1UUHcyWDNEd01hSEJiQ1RpbWJVTml0M2F4V1JCM2x6SUZFZDViZFo5V3I1VDF5dmNTajczOE4wSTlwX0d0UWJwOHVkMGV1NEk?oc=5",
       "outlet": "Hürriyet",
       "outletUrl": "https://www.hurriyet.com.tr",
-      "published": "2026-10-21T13:30:02.000Z",
+      "published": "2026-10-22T12:37:38.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "After Mecca, Bedir Memorandum of Understanding Agreement… Defense Industry President Prof. Dr. Görgün: A strategic step",
+      "en": "5 more detained in fund investigation: 31 people with detention orders caught",
       "about": [
-        "SA",
         "TR"
       ]
     },
     {
-      "title": "Trump, İran'da sembolik olarak hapse atıldı",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9OVjhvQ2VnT0NNT1Bvb29Ea24zaC04ZFVFVVZRcXZzRU9ob1BJV1VtSWdYVjhSbmxCWjE2alZ2OFJfTW9FMHJJSVNYelhoUkRKVlVCaG1HOXpaRE9pcktVeVpzb29XWmYxQUt0akFJelo0bXR4dVE?oc=5",
-      "outlet": "Diken",
-      "outletUrl": "https://www.diken.com.tr",
-      "published": "2026-10-21T20:55:47.000Z",
+      "title": "Başörtülü hakimler için 'reddi hakim' talebinde bulunan avukat hakkında karar",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNS0l0OFBCR0NHVDdQVUpiVVduQlhpZGx2UkdpVU5FdkNQSDF0MlNjZUw0Ulg4RVpiSXVzLVNJVWxTQUlCcHFacnhxbWxvMWlPMWwyblRpN2hLX1lXU3JiXzA2endoZnl0ZmFKQTJVY1F6eC1qRHI4ajVnM0M0TEFRRS1Zc2xkOVY3UGh6TGgtOXU0bFN6ajhHakQ4MV9SQzVEQnBHMUdadHV0dGhFLXMxekJOci1OTDlfbmE5azRR?oc=5",
+      "outlet": "Cumhuriyet",
+      "outletUrl": "https://www.cumhuriyet.com.tr",
+      "published": "2026-10-22T08:03:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Decision on the lawyer who requested 'recusal of judges' for headscarved judges",
+      "about": [
+        "TR"
+      ]
+    },
+    {
+      "title": "İstanbul'da vakalar patlama yaptı, bir ayda hastaneler dolup taştı",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVGNBWk5IaE5mOC1odHpjdUV5SEZ0TWlNN1R1MExvZlRfcVpkd1gtdFZjVXB1YzE2STVYQ0h0QjY2VUMzbk1QUW9ZQWM4QlJQQVBXSGJnUEt6bnBHTGIyQ0k5eDgyeVZSZDVqS1Ewd240LXU3elI5dGY3RVlvQS02OWRrTU9fSWtyaDc1dTRjWV83Z1pjVDg3MF9hVHdHaXc?oc=5",
+      "outlet": "Sözcü Gazetesi",
+      "outletUrl": "https://www.sozcu.com.tr",
+      "published": "2026-10-22T10:15:31.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Trump symbolically jailed in Iran",
+      "en": "Cases in Istanbul exploded: hospitals filled up within a month",
+      "about": [
+        "TR"
+      ]
+    },
+    {
+      "title": "ABD ve İsrail'den seçimlerin gölgesinde İran'a saldırı hazırlığı iddiaları yoğunlaştı",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUVVjMm9xQlN5aDlTU2Joc0xNUUxZNkdacXNvRFZGUU0zV184N20zcVRJQUt2MjFxMV9hY3dmcGJiMzF3UndRdFZ5MkJDeG9jQ19VVE9Oa3F1dEFMZ3BlSk5kcGZIN2ZBcmN0TjVpM29VV3ZjODI2X2t5VDRwOXRNUWR1Vzd3OE5qMFJyeGJ3Vm5wQ2RtRmlkTC10M0FjdG1yM1E?oc=5",
+      "outlet": "Habertürk",
+      "outletUrl": "https://www.haberturk.com",
+      "published": "2026-10-22T11:38:43.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Claims of preparations to attack Iran by the US and Israel intensify in the shadow of elections",
       "about": [
         "US",
+        "IL",
         "IR"
       ]
     },
     {
-      "title": "Diğerlerinden farksız bir patron ailesi: Mal varlığına el konulan Altınbaş Holding’in rant ve vurgun karnesi",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVk1pNkg0a1Q4cDhWelZGRG1uNE9UdzlJazdJd0NCczl2TUFELW44SkNFUVJiTHBFcHdtN0xQVzlBQXhBSncwWFlNZC10NVlrNFdxaDBBQXNrc28xNzh5bGtMYWNkNEw1VUtpTjQ5b3VwTHFBOGNROWJEcDNnVng2M1pvNkRhckJoWERKaGhsQVFIMXJjYXZPSGwzdk9mMEp0YU11UTJ1RnVxY0xOU0lGcWxKSW54N3VuOVUxcHZHWQ?oc=5",
-      "outlet": "soL Haber",
-      "outletUrl": "https://haber.sol.org.tr",
-      "published": "2026-10-21T07:02:10.000Z",
+      "title": "Libya Anlaşması’nı eleştiren AB’ye ortak tepki: Hem taraflı hem kibirli",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM2pBTEVlZDI0TGVFaGotOWlZWm4xLWYyX2ZyY2lEWmpybTEzYURBb3ZZbUJhTnJCRll1a1lqeVFMZDJnZDJyckRSUHpvemZhLWNXa2o1X0hBdmxta2pVUm0waDNjaWR6aHVBRHhnWkdVRHI2MnJnX1NvRGJCYjVHXy0tRGNrV0MzRTlxa0hxMklpdF9tSGwxWEtvWFR2alpmMFFKUEZnWGEzQzhLOXpWRjhR?oc=5",
+      "outlet": "Hürriyet",
+      "outletUrl": "https://www.hurriyet.com.tr",
+      "published": "2026-10-22T04:00:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "No different from others: The rent-seeking and plunder record of the Altınbaş Holding, whose assets were seized, a family of bosses",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "66 yıllık intihar iddiasına yeni rapor! Namık Gedik’in ölümünde cinayet değerlendirmesi",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONHA0NThBZU0zNGxoZmdCNWFkY1F5QUFIT1pUVVlfbDVZQXZBNmpnMGtSM1JjT2daYVA4RC1HWklkOU5Jb0hOYkVRQ0pkeXJ0RTAwbFllck9CaXcyRXpxdENDWGFCT0FXaTY2bUUwLXdGYmRmWVA3QXNpYUZkSE1fQ2hhQmZtbHNlR1BtazdLQ2swQ2hoa3hEVFJ4WUxCVGtuZEd2NXVTTHFBQ0NnVHp3?oc=5",
-      "outlet": "Takvim",
-      "outletUrl": "https://www.takvim.com.tr",
-      "published": "2026-10-22T03:57:49.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "New report on 66-year-old suicide claim! Murder assessment in the death of Namık Gedik",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "Azerbaycan'a giriş yasağı getirilmişti: Fatih Erbakan'dan Aliyev'e tepki",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZEdwLVN2cFJUU1pCeC1zSE9MRVMydUJBNEFQTlY0TWJQd3JUQUF5THp3RWplS2lJRmFOeEx3ZHd2S0UwOVVMcGFoY21tRkxEck1ySlIwVU5TSDFOdld4SElLQlppcXN0MHp6MTV6a0ZfdVlmQ0lheHFUcGttTEVoZWNiY2VZeXNzbmlTM3VmZlBfNldIdUNyV181NTg2cmF0MUdHNThCNzZfYzlhVGtHVnE5MmZOU1hw?oc=5",
-      "outlet": "Cumhuriyet",
-      "outletUrl": "https://www.cumhuriyet.com.tr",
-      "published": "2026-10-21T13:06:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Entry ban imposed on Azerbaijan: Fatih Erbakan's reaction to Aliyev",
+      "en": "Joint EU reaction to criticism of the Libya agreement: both partisan and arrogant",
       "about": [
         "TR",
-        "AZ"
+        "LY"
       ]
     },
     {
-      "title": "Ünlü fenomen canlı yayında alev alev yandı",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYmhTUmpoQ0IzZUJ6MUxMcTAyVUFoS0p2SEJweUEzZVFKN1pqUktKZTZhYTQ1eTkwZFhtWVFaRjZhU3EtRnZBRUR4Vy0tU0hiYVNTNnBXZWRTNEpZNzl4WGxFT2NoanE1cXl6MkZDdTZ2R0ZIRUlJQXFXZVZ5ZHY1dA?oc=5",
+      "title": "Tasfiyedeki fonların sayısı 47'ye düştü",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQjdBQUxMWmFWSldIN1Y5b19FMkpsaHF1WFE1NkE3LU44UUpmTVhUbDhoLVNNc0syZVRMOTdGWVIzc2JXdkQ3Z1ExYVhURVdkcHZEdnl3ZHdOU3B6Zm1sQjdxNHlTZWRJTDBPWjN2Mm9KWUhPaVJLQ0dUVHc4ZDdNUw?oc=5",
+      "outlet": "Bloomberght",
+      "outletUrl": "https://www.bloomberght.com",
+      "published": "2026-10-22T11:33:15.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Number of funds being liquidated falls to 47",
+      "about": [
+        "TR"
+      ]
+    },
+    {
+      "title": "Emine Erdoğan ve Esra Albayrak’tan Özbekistan’da önemli temaslar… ‘Savaş bölgesindeki çocukların sesiyiz'",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNc05MNEVTakx5a2dUbmdlUXlHcFZXLVl2OHhRNFZOdG93b1F4YTJTbUcwb2tHMHF2UjFaUlFIV3Q0eDVsWkpSV2ZFa05ndFFhT3BsbmdxbnRINWpyeDhqbXdJVVoxYjE2ZVhCZmptYmwxcThBX0ZUUFFnV3NiMkdjZ2d4d1FtWTdaelh6MUx6ZEh6OS1YN3g4X3hMWFFGMGN1eGZpRTI3bHNKTFB1Nk5QTlB0SzhJcDlKdlE3aTZHZWZhZ0RTd0ZQQTkzUWpkeURKYmxXNzl0RmM?oc=5",
+      "outlet": "Hürriyet",
+      "outletUrl": "https://www.hurriyet.com.tr",
+      "published": "2026-10-22T12:05:33.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Emine Erdoğan and Esra Albayrak hold important meetings in Uzbekistan… 'We are the voice of children in war zones'",
+      "about": [
+        "TR",
+        "UZ"
+      ]
+    },
+    {
+      "title": "Fransa'da Hayvanlarda Görülen Shamonda Virüsü İlk Kez Bir İnsanda Tespit Edildi",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMVAyMlNTLU5SME9QZ1AtajMtcTE3S0lLSnFhT2xKOGdrcHh6UnFLQ0VQVmZYYU11NEM0OV9kdjhVSVBiMXB4QnpPMWN5bXFBei16b2tTeEVOS0lYalNmQWY0ZXRWeEFrQ3A0TkZpR3h3NEV3dm9CSHI5dHN5Z2RQVEhXVlpublRYMUNmTVBjVE9xQ3QzVDFtdC1XcW1Ebm5Ob2Z1dl9mMkUzakVxb1NpaUNSSVNTeFE5VndEa1V2NkVvNXVIOXdOT0ZwUXpyU1NCRFE?oc=5",
+      "outlet": "Onedio",
+      "outletUrl": "https://onedio.com",
+      "published": "2026-10-22T09:17:35.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Shamonda virus found in animals in France detected in a human for the first time",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Mezhep kavgasında Türkiye rezaleti! - Emin Çölaşan",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0yR0xsVl9BOHFkZGtlVDExMUlxMVkzQ0p2SXRLaE0xcE9ReXpzOWNwaDZWSGRjX3FSMTZhZTlESFItMEJkbkI2NGMtTE1zdmIydGxEd094WEFoSWE4c2JVREw4VEJkNTY5bXpjeUtSVl9OeEhSYnc?oc=5",
       "outlet": "Sözcü Gazetesi",
       "outletUrl": "https://www.sozcu.com.tr",
-      "published": "2026-10-22T07:06:00.000Z",
-      "outlets": 1,
+      "published": "2026-10-22T02:00:00.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Famous influencer bursts into flames during live broadcast",
+      "en": "Turkey's disgrace in the sectarian conflict - Emin Çölaşan",
+      "about": [
+        "TR"
+      ]
+    },
+    {
+      "title": "Arda Güler'in imzalı formasını alan Real Madrid efsanesi Guti: 'Çok duygulandım, eve asmak için sabırsızlanıyorum!'",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPMUQ5VVpaYWx4SWVfMUwxcUR3MS1VZ2tGMzhzSjVJMnRMUTRNUWY5RkNDbE5pekczUVVhUGNxTzVWM2VneFRBUnViNzZtVkZ0MlgxTkRfZERhMXVfRTZaVUFiWHVTX0NBX1dGRVcyZmRTR1RXRWEyZ2kzalZWZjdEV0UxUVktUWlBb3pILThqZG1zbTU0UjFjUTJIYlg1Z1FNdk5wMnJUR3lqVEg2LVRjTHdXT0ZNMGpERGxGcWdTNE92QkEtZUJxYlpVdkFHWE5jQXVlZXhRd1JsZU9Ia3lSMEJkb2FpRUtHY242WA?oc=5",
+      "outlet": "Hürriyet",
+      "outletUrl": "https://www.hurriyet.com.tr",
+      "published": "2026-10-22T08:45:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Real Madrid legend Guti, who received Arda Güler's signed jersey: 'I was very moved, I can't wait to hang it at home!'",
       "about": []
     },
     {
-      "title": "ABD'den Suudi Arabistan için tahliye kararı",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWVhsMlJNd1ZveGRmRVY4azZ3SHo3eXhrdTZwdzFDeERJUmRWQmFqakZ2Vm16VkMwU2RtSUpzUGE0U3o2REg5VjFMNHRIWUs5QmhqY21BalJudFh6Zy1GX1BuNDhkN09TeFlISjdJUUZhR1N2MGxjV1ljNVo4WE5hTGdYcG1ySWxISXNqejF5d0poUTVCU3c?oc=5",
+      "title": "Tüketicinin ekonomiye güveni sert düştü: TÜİK ekim verilerini açıkladı",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdzRIalJpVkI1MnhNOFhySWhfanJERVdEZzlqWmlJb1FPZDZteU94NmNicHVyaG1zaklaZTZkYWpFTVNmMTR4X3c3NkpTNW9kRFRxTlpiYkhhNksydEVMQlVGS0RSSjBPOUlOWEp4ZzJkb2VtSC1YNUVteTJZcng3bWNrWXE4Z3diemhMcWREdmthMGpwX1U5eURtYzk5aGM4ZDlYckEtYVNKdERZX0dnUmVublVKZw?oc=5",
+      "outlet": "Cumhuriyet",
+      "outletUrl": "https://www.cumhuriyet.com.tr",
+      "published": "2026-10-22T07:15:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Consumer confidence in the economy falls sharply: TurkStat announces October data",
+      "about": [
+        "TR"
+      ]
+    },
+    {
+      "title": "Çay kalbe iyi geliyor ama bir şartla",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcWprUEZRNWRuc2duNzRkWklQRjhOT3A3dmdpWXBjOW1OT2FGOU8yVURxb2sxVmpkdTB2b2NYdTZYUjhHcEozUmRxRndOMDctR19ra0sweDZGOU1DUklmdEZzTTk3Z24wQVdEMHdkemhmOFgzc1ZfZUZ4ZXV6b2RXVUlSUjlNTGNZZ2IwTjVB?oc=5",
       "outlet": "TRT Haber",
       "outletUrl": "https://www.trthaber.com",
-      "published": "2026-10-22T02:01:00.000Z",
+      "published": "2026-10-22T08:34:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "US evacuation decision for Saudi Arabia",
-      "about": [
-        "US",
-        "SA"
-      ]
+      "en": "Tea is good for the heart, but with one condition",
+      "about": []
     },
     {
-      "title": "Halk TV olayı ve yakın tehdit!",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5HRWNHblAxV2xrNnoxVkdDZFF3eEZXclVhbFU4VjlKWUxtN2xlMTZaNkZYUzhTeHVmZ1FRUi01QWRVS2g3WVFTWkxHR3hRNEhOS1pHSm9Qb0EzRFZzbl9HQ2t4VkdEVVBmUnZTdVE2cDlId2pP?oc=5",
-      "outlet": "birgun.net",
-      "outletUrl": "https://www.birgun.net",
-      "published": "2026-10-22T02:00:00.000Z",
+      "title": "Kilise Camii’nin gizemli suyu: 1641 yıldır durmaksızın akıyor!",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOGRWaVFCTi1HYVlNNHl0ZWRlUjhUMjBCeHh6NjJkZ2RsZ0VHMld1dlRXdjhCVXNLYnVIdldvNWQ3Vm02UnhGTDc4VWNWM2tCMDVnRUVYRkhZbFQta01xVUtrcU9jQXEzZHFUZXc5czRrWmxhZFBqbnR4V3Q3T0lVYy1lUV9EUkVYdjRLaEpscktJb2Mwd1E3RDhmWQ?oc=5",
+      "outlet": "Gezelim",
+      "outletUrl": "https://www.gezelim.com",
+      "published": "2026-10-22T10:44:36.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "The Halk TV incident and an imminent threat!",
+      "en": "The mysterious water of Kilise Mosque: it has been flowing nonstop for 1641 years!",
       "about": [
         "TR"
       ]
     },
     {
-      "title": "Raporları okudum, bana aktarılanları dinledim... “Yüzyılın Finans Soygun” düzeneği beş aşamada kuruldu | Aytunç Erkin",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTjdkN3hTOUpXQzk2dF9xdWZLOUZOdEhQclVtcE4yY1ZxWnRWMG9lV3V4ZkJkdzkwaWMyejE3X2U3RHZjYThSUFpQb2xGMGJCN1lxX0tjN1Fhem42UmhZMFJuMmdvTElKbGR4R2pzdXpPN1Y2UVZxWWtMTkdjMENiU0dWY3NXdWtERWlBeWVqRXJUdlRVMmN4SmFBeWRPMFA5Z0xJRHBSdGtleVhCRmU5a3dWNjRSNmhsNzZ0dEhxalRZeXJQUG5IcktNay1ZaDl5cGxleTZ1UlBDVElGUVZsS2RWc3o?oc=5",
-      "outlet": "Nefes Gazetesi",
-      "outletUrl": "https://www.nefes.com.tr",
-      "published": "2026-10-22T02:00:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "I read the reports and listened to what was relayed to me... The 'Finance Heist of the Century' scheme was set up in five stages | Aytunç Erkin",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "Dünyanın konuştuğu infazda flaş gelişme! Christa Pike'ın avukatı son durumunu açıkladı",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUkJYaDZiby1wS2kyVHRpMkljNjFWWklpaFBIeTczZEJkQUh3dzUweUM1dEN5OVdlLXNEbjJwM0NGYkZlRThwRk0tYVg2VFlmLXAyM1prVjlGelpJTjUydXVpd01Gckt6U2Y5UExXS0RhZlJ4NTFCZUhvZEdPOXpHUXpyMUF3MlhjTkhhdkpJc2NYU3RDYlUybEVQc0g3TjBTbENKdEZHd1JvUmNRUGotWGpMRktSb29jc0NzX09La25RR0xpVGVWM3JjQXRiTkZ1R2x3?oc=5",
+      "title": "Dünya devi Amazon'da 'cinsel saldırı' skandalı! 'Otel odasına geldi'",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTGtWWTZCa3dBVnhNM05VSVVwR0ZrcWJpamtqRVVERTVpSjJXQ1dhTUEta0RmSzRkSXdqTGNGNFlMb2lfYkVlb09qcG5NU0xNZjdkVElQd2h5VktKNWVjN0JlYS1aZEVIby1ZRlBMQmY5aVlsaEtTS1VCYndDSzRESEJlQ05JcGhTc3BjUFFBbUlMV3I1eHg4Q0RldEdVNjNPMXRJT0UzbXVRZ3hCWG1menYwdzI4dw?oc=5",
       "outlet": "Milliyet",
       "outletUrl": "https://www.milliyet.com.tr",
-      "published": "2026-10-22T06:43:00.000Z",
-      "outlets": 1,
+      "published": "2026-10-22T11:22:00.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "Breaking development in the execution that the world is talking about! Christa Pike's lawyer announces the latest situation",
-      "about": [
-        "US"
-      ]
+      "en": "Global giant Amazon in 'sexual assault' scandal! 'Came to the hotel room'",
+      "about": []
     },
     {
-      "title": "Akdeniz'in güvenliğini tehdit eden adım! GKRY ve İsrail anlaştı",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONVJrYXZYU2tRMUFxRjdOT3VodzBUV0paeks5ZmtDTXhsU3psU2ZQd2RoRWtPWVpETF93UUNrazF4T3JVR2RWS25xalE5bW1hODFHVkZsb0hGUVotRjJ5UU5yTlpnVk5BaEhEdktOWDIwZ1ZER2VIeXhfbGxaV0RkMlJxNHYxWVFxTGppMkVtenJkd1lqb3k0cUZab0hpYXJibEJQMtIBrwFBVV95cUxPOGhFUWR2Q244aUtRWEFlUWRyZTRObmF1d0NjTmtJMDNTTVF4ZHVJYlc1ZjNaNVptR05ZYWlmT2FydzFZd0oyRVlxOFhEWlRVcENPWEFZaE0tQW94a0c4eVJzdkdyaTZQOXpvZGNJU0JNWEVxWWRaMXV3SFpjUWpOME9nVjFGUkJyV0t3RUgyeFRVTkhqTXhrSVZ6cWF5NVVHbXFKM3RWWXQzaDNBSks4?oc=5",
-      "outlet": "Haber 7",
-      "outletUrl": "https://m.haber7.com",
-      "published": "2026-10-22T01:11:00.000Z",
+      "title": "İki ülke arasında tarihi takas: 300 asker ülkesine böyle döndü",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSnJTYm53b1cyeFRpT0lsZ3ZyYzlKWUltMEFKdGJ0bXhNdEtLbTVDSUNPSUJYc2NIS0k1azVLQVRpZXVWa2JZNjc3cmF3VWJQZjJ6aXJZLUZ4R0pGRFE4Ym5KbUNaZk5WR3JFUUFHZTFnMHphMU9yY2swanFVTE5vRjhKV004dTRLTnV3c2RIUktfR2M?oc=5",
+      "outlet": "Sözcü Gazetesi",
+      "outletUrl": "https://www.sozcu.com.tr",
+      "published": "2026-10-22T10:35:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "A step threatening Mediterranean security! GKRY and Israel reach agreement",
+      "en": "Historic exchange between two countries: 300 soldiers returned to their country",
+      "about": []
+    },
+    {
+      "title": "Fransa'da Netanyahu krizi! Açıkça ismini verdi: Asıl risk o",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOS2R2Q0VBallnQ00wNVVQakNxQW13ZzU4aEZzeGFhR3NxQThjWm5ReWRKdkVnNkprZWVGY1ZzcE13RkxmeFVzc2FTbjhoeGs0WU5hcTVUOVN5ZFhWckRjU1pXd2I0NGdDTzNZa05FRXlCdWl2VnN2OVRqaUhzY3pDZ0V6TlJHaXM5QUVWZ0dFQTVCVWFMbE8zN0V6azFIYm4x0gGmAUFVX3lxTE5GZ1ZuM1NPQThjLV80TXNtTlhjVGE0U1ZNbko0b1AzYTlyTVEwQ2JQaXNkaTB0TW1reEdHeGllZUtNTjhISl91X3NfT0NYeHEtZzB3czBGa0NYYmh4aXU3V3B2UmhLY1ZMWnZ2U05ydkwtVjdPV0c3RE5XemJjWEpIN2tyMzZ4WTdqUDR2NnZGR2o4R3JhYVBReUxJT1NtR3Q1S0JyeWc?oc=5",
+      "outlet": "Star Gazetesi",
+      "outletUrl": "https://m.star.com.tr",
+      "published": "2026-10-22T04:41:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Netanyahu crisis in France! Named him explicitly: the real risk is him",
       "about": [
-        "CY",
+        "FR",
         "IL"
       ]
     },
     {
-      "title": "Türkiye hiç uyumaz! “Değerli sessizlik” ve üç büyük adım. Hepsi aynı gün oldu. Hepsi birilerini sarstı. Akdeniz’den Malakka’ya, Basra’dan Kızıldeniz’e… Bir harita açıp bakın: Denizlerin “Orta Koridor”ları kuruluyor.",
-      "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxPNWw0VWlfNW5hTVhPYmNEc2ltMFJNYXpldXJFQ29nLVZ1YjZOOHZvNVNCNkJsWThHT1BqYlhOVFVvSXV0c3RNcUZVbFhZMFlWRFlwaWZqSTVCejBYMmRidGYyUmJpV1BqejBTcWRZeWpCaFlvLUZBRk04eFRDSXIwNEIwdFFsNTFoSERFdmtBX3FXOVFhU091Y3R0RzZha2YzOThmSmYyeTNlQkozaF8zYmU1d3FNRmRVU1I2cTFGQ3d3VDFBbGYwQi1uYU9raTkzWTRFR3huS0JJdXVjXzh3WWt6a0RnZVJlSXptd2x6Y3lNOEdsTzN5NjQ0V00td1BaQVdNdFB6WGVERlEtanB4MmpramZOV1FvOG9jdXdFWV9UaWhyMkhjVTZRNUJtcElrMFEyYkJFdXFBTlZxTVk5cmpvejV2VG9QMDdvSkR1d05POE9KZHp2T0RWUFNNb3JCZElfNTV2TXZMcndJOVloNA?oc=5",
-      "outlet": "Yeni Şafak",
-      "outletUrl": "https://www.yenisafak.com",
-      "published": "2026-10-22T01:00:00.000Z",
+      "title": "Trabzonspor'un kadrosu rakibinden 7 kat daha değerli - Hearts maçının öne çıkanları",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaHFmOEVrS3ZpLXJITWNKQzdIN2VCWGF1d0FnMzF6c3JpMFVOVFlhWEFxdHhDem9Md0liVGRJanBRbFBQeFNFaEtuNlQ0bUxuZDR6c2tvVjEzOXB0dUZOY01RRmpqRnVremRfM1A3dnFvTG9aajE2UklIZ0F1ZENfaGVEbkw4N0w5MVF1dnlScjhDMVJMNThZY2xEaDJuZTQ2b0NoVWhTTDMtaXdWUzFwY1NxTXdOdUZsN1hZbXl0Q3ViUk1KOXhCLXlB?oc=5",
+      "outlet": "Transfermarkt",
+      "outletUrl": "https://www.transfermarkt.com.tr",
+      "published": "2026-10-22T07:42:57.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Turkey never sleeps! 'Valuable silence' and three big steps. All on the same day. All shook someone. From the Mediterranean to Malacca, from Basra to the Red Sea... Open a map and look: the 'Middle Corridors' of the seas are being formed.",
+      "en": "Trabzonspor's squad is worth 7 times more than its opponent - highlights of the Hearts match",
+      "about": []
+    },
+    {
+      "title": "Rusya'dan Ukrayna'ya füze saldırısı. 2 ölü, 34 yaralı",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSWFwT3JVYWtIYlpNTHZoMW1DU0wwU1duSGlUdTZsODd3MU1GMW5hUjNzbVlGWVNRMVdaTkZGTkRSbmtIdk9aMDFHYnNNbnlXX25PZ3phUWhNMW00RGI5VjJHcnVGcVBQUjVMWVphZlFtYXVGaDMwMTlrc0ttdHk5U2NrRklheDBB?oc=5",
+      "outlet": "Nefes Gazetesi",
+      "outletUrl": "https://www.nefes.com.tr",
+      "published": "2026-10-22T10:14:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Russia's missile attack on Ukraine: 2 dead, 34 injured",
+      "about": [
+        "RU",
+        "UA"
+      ]
+    },
+    {
+      "title": "Tasfiye edilecek fonlarda bekleyen talimatlara ilişkin önerge kabul edildi",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeFJNMFlaMWdlSEhyUWU1c01YaHctTlVqTm9UZ0JtQ0JQUC01aTJtWm02X2xxQ09JQTVLenhPVUUyM1o3aHQ0a2JDa1czMy1Qb2xBdFZHQ0tVSThLUXRfUG5qZENhcnNHSUxmbW41SlltMlBvek1uVDk5NEJNV20wZFFmMEM5eHExeEdlT21va1JSajBSRm5OSTFMa2hrM0dSNzc0QWJYN0pzN0p6WUJR?oc=5",
+      "outlet": "Bloomberght",
+      "outletUrl": "https://www.bloomberght.com",
+      "published": "2026-10-21T20:07:43.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Motion on pending instructions for funds to be liquidated was accepted",
       "about": [
         "TR"
+      ]
+    },
+    {
+      "title": "Fransa yangın yerine döndü: Sevsinler sizin demokrasinizi",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOam43dTBJbXVvTnltZ2tvZHhfZVZxMGdnZlhWTXpzODhlOXFnangtYlBFQXVJcXl0dlpGODNWY0R4eExIcm00Zm9IcmQyYXpxX0tzcEIxNC1UOFp4WTVTTlUybTcyUlZhUmN1V3dhd3VLNEVocUZ2U2ZmRWVDYldmNnIxZllsNTMyX2haYlFJRkxJODc3NlptelJjSF9hVy14SklxTNIBpwFBVV95cUxPYUpwSUpXczhkOHUydk11bXVNdktMR2I0dnk5TjhsN2xMdUpNM3pTV1AwUHNqU005S0dycEpUUGlTcVVGUE9jQWpISEs4Wlk4QlIwOExselAxRHZ1TEs4Zm1NaWlkbUFaSm5WZnhCOFZPUE1QdmhOZWttRkxhMnB6ZHlGUFoyYXljUTJkNnJNS1owRHVaYUs5aTd1UWVuZndYTVVQOWNHRQ?oc=5",
+      "outlet": "Sabah",
+      "outletUrl": "https://www.sabah.com.tr",
+      "published": "2026-10-22T03:23:51.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "France turns into a burnt site: Let them love your democracy",
+      "about": [
+        "FR"
       ]
     }
   ]

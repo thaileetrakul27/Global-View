@@ -2,7 +2,7 @@
   "code": "DE",
   "name": "Germany",
   "kind": "local",
-  "updated": "2026-10-22T08:03:09.184Z",
+  "updated": "2026-10-22T14:17:21.809Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "DE:de",
@@ -10,210 +10,161 @@
   },
   "articles": [
     {
-      "title": "Programmiersprache PHP: Sicherheitslücke gefährdet Webseiten weltweit",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSG1meDllaVZHMENrTzNCWWM4RmQ0YTE0NHNVTk9VZXlHZlduMWwwZnRrVFI0bmREaFQ0aTRuOTZIV1J1NjB5TktqcmRKSFAwaDRxTTFQVGRMdUtYbXVNQkFSaTlqTFMtemFZczhabnhCR1NjOHNPTVJSM29fcXVld3ZCbWhJang0dXVZNU02UjRUZ2djSnYtbjY1QWw5MFdCU29PaW5uaFAxUUVyWlAyUVNWSFFoM0lsSVVLYWg5eHNCZlJQc01scHNnSUxKU3M?oc=5",
-      "outlet": "Handelsblatt",
-      "outletUrl": "https://www.handelsblatt.com",
-      "published": "2026-10-22T06:42:00.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Programming language PHP: security flaw endangers websites worldwide",
-      "about": []
-    },
-    {
-      "title": "„Ich werde den Saal nicht verlassen“ – CDU-Mann stellt sich gegen Schulzes Plan bei Siegmund-Wahl",
-      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxORlpMT3RIbmVxMnNTNm9JWTZxQzdJWTRGVnpOWU1acFR5M1pib0VPbHlmQWRRelkwTzVLWmtQTmQ1Uzlfc1Jvak5ubnVwMklwc2hwdVl1M0RlTW1pdnY3aWE4a1ZiOGlaR2U5VWxQamRKQ3VNb2s3aXVCV1FwTkJzeXplMVNEemtmeHRqUE5IMW12bVFDeGx2STI1TDJ1b1VSUjktODFEbTZlTWtFbHpuQmpUQTVJeXZSblRsZFBJdFk2X29nY2ZnNWE3NFQ3SmFXZlBpLVpLbUlZV1VKSjU0ZTAyRFJ5ZjFENzhYVldyXzdGTUtZN1poU1M2T3hoalgwSkNGM1JuVm50TExzZGN1UWNEWQ?oc=5",
-      "outlet": "WELT",
-      "outletUrl": "https://www.welt.de",
-      "published": "2026-10-22T05:32:06.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "\"I will not leave the hall\" – CDU man opposes Schulze's plan for the Siegmund election",
-      "about": [
-        "DE"
-      ]
-    },
-    {
-      "title": "AfD-Hacker stehlen private Mails von Alice Weidel",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbU4tdXNHbEY3Y1FqRUREM2s1aHR5dllRWWFFT1JfR1daZkoyZkY3YWY1N0J1U0NxLWFFUFNxbUZkV0tBaDhCa3N4Q19MY1hnZmJydDBXajU1cGJHWEswQkt3ZW94YVluN3g5dmlkVW5BbFQ0UGFYX0tBLTRVNzNRQ2gybkhFb3kxT1dDdlpoeGhSUlhzV3BQUTkzOVN3dkpNNDlOcVNRX19GOU5BOU43TWpnY3gxclpscFk5dVpUNFg?oc=5",
-      "outlet": "BILD",
-      "outletUrl": "https://www.bild.de",
-      "published": "2026-10-22T05:49:03.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "BILD exclusive: AfD hackers steal private emails of Alice Weidel",
-      "about": [
-        "DE"
-      ]
-    },
-    {
-      "title": "US-Zwischenwahlen: Wie verlässlich sind die Umfragen vor den Midterms?",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Tdml0UlpUdWxOaFlHZE5TWHdLVUVxaHRUWFp2eHB2SWI5bVpIVkZsZzV0S3pmLVhUMkVZbmQxcFk4MFJLbXNzN1Q4QWRGN1VDUWRkNS1YZjdMLWtaUjZxMkNLTFJBY1AxY3dKNHpmR3hsak42OWVlSW5PZjg?oc=5",
-      "outlet": "tagesschau.de",
-      "outletUrl": "https://www.tagesschau.de",
-      "published": "2026-10-22T05:03:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "US midterm elections: how reliable are the polls before the midterms?",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Bürgergeld-Reform: Die neue Grundsicherung spart doch keine Milliarden ein - Politik - SZ.de",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUHRhWU1Cd2VxZnNDSlZZODdYMnBlMXI2SmRkeVN4ZmR1RkNkNll2bThaYmtvUVFFWU1uZEVhTWdHcWRRZ1VqdHNOODBkM3VPMWMtMWc0ZF9RaERTTjFPMGZ3MkZhdTh0YllsT0FFNC1LdHNYZVhCLWZVVDRWX01UVjdaWG0zc2k2eWNNS1pTWElIa01vWlhQaFZnX1BLd2JZNncxT1dR?oc=5",
-      "outlet": "SZ.de",
-      "outletUrl": "https://www.sueddeutsche.de",
-      "published": "2026-10-22T05:31:41.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Citizen's income reform: the new basic security does not save billions after all - Politics - SZ.de",
-      "about": [
-        "DE"
-      ]
-    },
-    {
-      "title": "Teslas Gewinn bricht um 43 Prozent ein – Musk plant Strategiewechsel",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZEw2N19uWndiLVNtOE1IZTlIdm85Unl3SjYxQS1hR1MwbmJsRXduWXVRa0ZIQnlZc09IRFAtTTRySXFWbVFOWDJJMzlad0pfZksyRE11ZmtjT29URERpWkpKOHJtN0NHT0tqNkJib3hyVGkwVkJJa0ZMaVNkUVN6Nl9qWFMxNWh6a2haeXlpeEdVOHhyNjBFbjZMZ0wtS0NDVlFaZEVVWE1qM1NhalFZMlVjRXVWUGFqRlBfUFlQSGFDVnRaaEl2eGJaZ1lNVW8?oc=5",
-      "outlet": "WELT",
-      "outletUrl": "https://www.welt.de",
-      "published": "2026-10-22T06:16:55.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Tesla's profit collapses by 43 percent – Musk plans change of strategy",
-      "about": []
-    },
-    {
-      "title": "Jetzt wackelt der Trainer: Krise von Man United immer schlimmer!",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU2V4NkRjQ3JuZGExaFdmOHg4WF9vdFVGTHMtaW84QkdUTDRZM0xDdFpTSHZyRmFKam9OaG1iQTEzdXZMU0pWUWZMSUlsWnhlWWdLVE1oSXNmXzdYLTN5aHc5NEJqX1gwOGNfdWhFS3Bpc0dfdFBTR0E1RTZvRFVRclR4bkc4SXRvb1VzZWdRRWdleVBvTFhTYnVhRllOc1kyR3lPX2Z5cjd0M3lQOVh1OE9jSVRaRmpJaVhRb3dISQ?oc=5",
-      "outlet": "BILD",
-      "outletUrl": "https://www.bild.de",
-      "published": "2026-10-22T07:08:59.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Now the coach is wobbling: Man United's crisis getting worse and worse!",
-      "about": []
-    },
-    {
-      "title": "„Wow. Der hat voll einen abbekommen“ – Trump lobt Prügel für Wahlkampf-Störer",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQRjNCcjhncDlUOUJBNFFnN2dOeFpFZzZmUi1EbmJ2RXExTlBiNjM2N0VFX1duSnByWXlSRGx2a3ZOQWNlTWl3dk5HOHh1TXUxZV8tQUczLWl6akpNN3NteERUTjdGTnRqaVFUdmx2ZlJtYVBFbDBqeGx6ZXBkTGd6U3FOOFFPSW9wc29BbVhNd3BkX00tRzNFdjkxTG92eldCT1ZvaDI1cVBrUjM4QlpnWjJwRWpxUGxnVDQ1VFV6dnEzMlBqWXk5dTl2MGhtNWJjNEpKazd3a29VWldLYnV1UWU2aFVoSDVRUVk5RWtHZUJSdmVqa2dxUFI4WWIxZw?oc=5",
-      "outlet": "WELT",
-      "outletUrl": "https://www.welt.de",
-      "published": "2026-10-22T04:59:08.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"Wow. He really got one\" – Trump praises beating of campaign disruptor",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "EA schließt Studio BioWare - Aus für das nächste \"Mass Effect\"",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSFRULVBRaDR2WHNlbEJoTFljenJENGlteVlhMmZzeTlscjdDUWt1di0wMjI5eUFhQkJMYnU0bjlHMXlkTEJSb0Yxcy1KMi1oWU9oS3NwRDB3ZEY4VXdTWk82VnFvMVg1QXZqYXJUVDVXZlA2dHdFRmZXVWlaamJ5cmhBa0s1LThGdFBGaHVJRW5rVDBlQXhHUDNUVDBGUFlBRGgzbzNZTFJlc2JydGtvTWhaZ3ZYTmxqYmNn?oc=5",
-      "outlet": "freenet Mail",
-      "outletUrl": "https://mail.freenet.de",
-      "published": "2026-10-22T06:25:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "EA closes studio BioWare - end for the next \"Mass Effect\"",
-      "about": []
-    },
-    {
-      "title": "Meta: Meta-Chef Zuckerberg setzt neue Aktienstruktur im Unternehmen durch",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORTVIOG5kczYzMnFYTWdMQkw1M1FnVzNieFhRRWluUUpJS0ZCS181LVlKREJ6MDhEUzkyV01CenlwOEtCalBuSXVpQkNVeWViZlhNRW5UNW0xbFVkaEZaWld0eDdJMkhGY2tDTkRHaW5yRDZnLWRUdUJWTFAzOGZkV1FxcHN5RnJJc0VQZ2JkZ0JKcVYwMHZ6TGFRR0NFY3kzWHp1alNHSFlSV29tY3ZDV19wM1RiRUMtRDZwdg?oc=5",
-      "outlet": "DIE ZEIT",
-      "outletUrl": "https://www.zeit.de",
-      "published": "2026-10-22T05:20:41.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Meta: Meta CEO Zuckerberg pushes through new share structure in the company",
-      "about": []
-    },
-    {
-      "title": "Marktbericht: Tech-Bilanzen schieben den DAX nicht weiter an",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPT0h0LW9PTFoxQktMXzdadnItbUdqSkVkUklLSXNOX19fRDNwUENmZXF1OVNoN2tiMG5TNTNXZmw1bEM3U3FLMUZpX25VZnNXU1o2ZTlidE53UThOdlQxTnJydHdaSmhOWDBlYkpHQVRyelM4VkJtMjZIQ2phVVRfeWtKY0NIQzA3VjZQNC1oSERBQUlqQXlFV1lMem5EZHF4YTN1aUFacw?oc=5",
-      "outlet": "tagesschau.de",
-      "outletUrl": "https://www.tagesschau.de",
-      "published": "2026-10-22T05:24:55.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Market report: tech earnings fail to push the DAX further up",
-      "about": [
-        "DE"
-      ]
-    },
-    {
-      "title": "Wenn AfD und Linke regieren: Söder will Berlin und Sachsen-Anhalt den Geldhahn abdrehen",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQT0RpcW56blNzVFpqbE5zY2RDSjdBbVlyczF0ZlJQd1ZsU0YyV3k3ejZRMHVDRUp2aF9femlfd0NjYXltZjEzSGFGeVo3cFpNWDZDTWxwVHlON052TVRpaG5rbzBsbExKd1Q3VklQZ2RyVkE2bXhlUXRpcnRUWllRdWZFTEFwSG5yZHhGNDBVN014SEVuVzBUYWpzWmNDZmM5dlkxUjNR?oc=5",
+      "title": "Plus von vier Milliarden Euro: Bund kann 2027 mit mehr Steuereinnahmen rechnen - hat aber kaum Spielraum",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZlltT0h1RWQ3dXR5b01OeldrMEpfbm1RUWpVNUdrcnBmdkVNcm5nWUZvb2xnSEZiN2dlNHhEMS1DT3djNnllczd0RnR5cDdTaml3Z051TnpqQzJydjVUdWNpbW9pRjJIdmI0YUU4b045RGEyaEk1V1lWaFJ2STJXYmxWNmxrZEROVEtlcUQ3bUEySzhHLWtoMkZrMjFDNWw5NURXY1owWF9yVjh0a2J2X0NfTk1Ldw?oc=5",
       "outlet": "n-tv.de",
       "outletUrl": "https://www.n-tv.de",
-      "published": "2026-10-22T03:13:21.000Z",
+      "published": "2026-10-22T13:04:41.000Z",
       "outlets": 5,
-      "trending": false,
-      "en": "If AfD and Left govern: Söder wants to cut off funding to Berlin and Saxony-Anhalt",
+      "trending": true,
+      "en": "Gain of four billion euros: Federal government can expect more tax revenue in 2027 - but has hardly any leeway",
       "about": [
         "DE"
       ]
     },
     {
-      "title": "Kompany zu Klopp: \"Nächste Frage, bitte\"",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZnpQTnB1QnMwYXJIRlhHMGxGazFuUmduOWpQQWViaVgzUF9HeDVSX05FUkdfQzRXR210ekZ1ay1CRUhUM0JGZHVyU2UzVFdvOTIxTFZNLU9oblFpdWZrUFU0Y0E5X3ZyS3NEVTB0RGtjX2pJVVJkRGhUTjZkZ0dYbEpNc08wNEpHUmlBeUNaZ0d1NDhqMG9uVEhTTUhSUkU?oc=5",
-      "outlet": "SPORT1",
-      "outletUrl": "https://www.sport1.de",
-      "published": "2026-10-22T06:07:00.000Z",
+      "title": "Spionage: Mutmaßlicher Russlandspion in Brandenburg gefasst",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbk9iSWZ0NFllUGh5ZTFDWjl6MWdVMTRQa3lQMURmanpVajhMMG1qUk0wUmFlT21FRmFfYW9OTXFRQWM0aFBTWUc5VzR6R21DOHlpMlB4YmtVdkt2LTYyUER5V3VOc21kY0RRVElMZDhHV2hKRTVHU2ZqNld3SUtYbGU0ZlBSSE5FSnhmY1RlYk0?oc=5",
+      "outlet": "DIE ZEIT",
+      "outletUrl": "https://www.zeit.de",
+      "published": "2026-10-22T12:17:01.000Z",
       "outlets": 5,
-      "trending": false,
-      "en": "Kompany on Klopp: \"Next question, please\"",
-      "about": []
-    },
-    {
-      "title": "Strack-Zimmermann nennt Musk \"krank und verroht\"",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTTZnR09QUVEwU2dQSnJZM0dNdmpVTHpZeGZtYVNTMWt5WXY1UEMzWHhTbGpRa0lmaUtJZk9FVE42MGItdlRENHB1dUxGSzdtZmJMZkk0STdUWndTTzJHTVpEXzl6RlRSUUpER3V4d1VvOHA5ZHJoNi00ZGdkNVRpZFk5NkxHY3M4VUt2b3RjZHMyX3Y0?oc=5",
-      "outlet": "WEB.DE",
-      "outletUrl": "https://web.de",
-      "published": "2026-10-22T03:33:42.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Strack-Zimmermann calls Musk \"sick and brutalised\"",
-      "about": []
-    },
-    {
-      "title": "Viele Internetseiten nach IT-Sicherheitsvorfall wieder online – BSI hält Gefahr noch nicht für gebannt",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTmo0N19yeFU0WXdzdjA0ME1GdnJadnhUTzF0eGxNYnRPLWdwOXhGX2huRFFGZm5JcVVYQjJxbTZHengxT1lOdDk3OXd6cHVZWDJmYW9qV0tXSHpQSi1iYXhKMHlJd0tsNkU2aVBCME8wN0FZR1RBeXdrRklkeXZoMjR0eUtSN0swSlhwYlBtOUVMTUkxMHlDTUJSanNEbGNpZlpCYW5uREpfTWE5SHNBb1FmZFJxR2NYWllXR2VORFRmcE1peE9OelVLdkdXd05lWGFpYmVrRQ?oc=5",
-      "outlet": "Deutschlandfunk",
-      "outletUrl": "https://www.deutschlandfunk.de",
-      "published": "2026-10-22T06:41:24.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Many websites back online after IT security incident – BSI says danger not yet averted",
+      "trending": true,
+      "en": "Espionage: Alleged Russian spy caught in Brandenburg",
       "about": [
-        "DE"
-      ]
-    },
-    {
-      "title": "Nach Treffen mit Witkoff - Russland greift Kiew erneut mit Raketen an",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ZN0VFWjhCdVVkVEtrZHdVUlJjUG5mc250N1BBSEUxTHduVjY2LURyWDhzVVJOb1JKQldzQTBmWnBTTVBEbHJuOC13cjJLQ21WXzVtUkNhQXNoWFZOdjlqTGRWcXZuTVVZOWYwcllRYWZmdFVlTDlCcWdJUQ?oc=5",
-      "outlet": "tagesschau.de",
-      "outletUrl": "https://www.tagesschau.de",
-      "published": "2026-10-22T06:39:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "After meeting with Witkoff – Russia attacks Kyiv again with missiles",
-      "about": [
-        "UA",
+        "DE",
         "RU"
       ]
     },
     {
-      "title": "Weltraumteleskop Euclid entdeckt bislang unbekannten Kometen",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd2VlODNqNXU2eHFKT19IdWwzSmVpS0o2ZzlaVV9XZFRrMmlqWWs1WnIyWld4bXpUMk5oSlZxUFFkT2s4TGM3YXJDclVwbnNfckJqZE9aUFkwYmo1cGs2c3N5NEVKWHNVbVpkdWJQNE9kcWx2LWdWUFZEb3Zzd1pYWXo3bW04R213VTZCMHJXd0NxQ2diR2lsTzFScU95NldGWktJdXZfWjc?oc=5",
-      "outlet": "Notebookcheck",
-      "outletUrl": "https://www.notebookcheck.com",
-      "published": "2026-10-22T04:00:00.000Z",
+      "title": "Gegen Beschluss der Fraktion: CDU-Abgeordneter will bei Siegmund-Wahl im Saal bleiben",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcWtrZnFfVkdHNHV6ZW5HNjhyWU92ZHRkLTVVVW9HS1pqTjFCU2xLQlpRaDU3UmVobi11dnY0Ymg0dF9aS2k5S2NMdXpNWkdCQmY1TzJTZG1FblFseGxUVWVSa28xS1ZIalQ3YVZDWndVazZQdy1JRGNFcS0wc1E0cTczZEhGaXhnV05GaUZxN0FxM3k5bzlOZUVKMHF1b29jeGJJMjQwTVBCRndyeThfS01xM3NmUW5lOEtuRg?oc=5",
+      "outlet": "MDR.de",
+      "outletUrl": "https://www.mdr.de",
+      "published": "2026-10-22T12:51:14.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Against faction decision: CDU member wants to stay in the hall during Siegmund election",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "Was beim neuen Altersvorsorgedepot zu beachten ist",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVzZaTjh1NWhmNmUwNzI5OG5pRFhtVU1HYWJlZ2RzLUxLVGVDUzJSbXVPUW05bkVaWERvbWN1dFQtVDZOR2RVM1ZzMDlOM29kTHd0OHVLM3ROQ29rY1NwZkx1MUc1NFhCdzBnd01GRElOOWNiU2lhaG5pdnkxa1E1N1ZBbw?oc=5",
+      "outlet": "tagesschau.de",
+      "outletUrl": "https://www.tagesschau.de",
+      "published": "2026-10-22T11:10:16.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Space telescope Euclid discovers previously unknown comet",
+      "en": "What to note about the new old-age provision depot",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "„Wir erleben einen Wendepunkt“ KI-Angriffe, Webseiten offline – was Sie zur PHP-Sicherheitslücke wissen müssen",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPWDVrRW4yY2g5enlua01wV1J4a28yVXppZGR5WU9wX2k4b25uYlZabi1NSmNGVEIxNHp1Nkx5TWRPby1GUmlWMVlkazV3Z3ctRTd3cGo5b3FCMkIzaHJ6bk5KLWlZNzNNQWhTazVUQ2otVDF0U1lidkxOZHNKMGhyUWFwWEZDZEFBV1hTNlozV0VBOWxqU21Nb3AwOThFZ0I0U3dlVDhJSTdfWmMzeEpEZnNkMXlET3ZQMnRBVXRVTE5fSEhCdFVvWFBDblgtd0trNFZJVFZrV1BSbmpQZkItQXJ2eS1jWGN6Z2s3c0VzLVRWM2NvNWxyMllLZExVUVM5VkE?oc=5",
+      "outlet": "Tagesspiegel",
+      "outletUrl": "https://www.tagesspiegel.de",
+      "published": "2026-10-22T09:11:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"We are experiencing a turning point\" AI attacks, websites offline – what you need to know about the PHP security vulnerability",
       "about": []
+    },
+    {
+      "title": "FRITZ!OS 8.50 für FRITZ!Box 7530 AX erschienen",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTW1yUDQxV2U5bW5YcUl6cnJZclVIa1M4bnFLUHo4by0zeGVHeGNaS0ltdUw5ejJRZnlLOEZwc1RBa2dLMl9sZWRhMlZ2V2dTOUc0WDVjNDh2dDFNSmI3ZUZVRnhGR01QUl90akU0Q0JyUlFLNGxsM0lOVk80cGtydlN2Z0xHWmpqN1FKSjd3?oc=5",
+      "outlet": "MacGadget",
+      "outletUrl": "https://www.macgadget.de",
+      "published": "2026-10-22T13:00:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "FRITZ!OS 8.50 for FRITZ!Box 7530 AX released",
+      "about": []
+    },
+    {
+      "title": "Sturmtief \"Austen\" erreicht Deutschland – diese Regionen trifft es hart",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZVM5bVhaRVd5MHJ3OGIzSi1ublduUlFNWDZuR2tKRkNtUW5VcGJpdTdzYU9KczVoTDViQ0lMQXQxeDZ2VlRXOEJqcVA2aFRoZzlWT1MyZVF1OHBKdFVYdmcxZ3kyZTlCRUZfamtDM0JOSTZOQnNqMnNvRk5oVkFQTXlXNjFybFZPQ2kxQ19HUDU5WVJQVmJaNEMtMlRVN3N2ek1DVHJfRHU1VHc?oc=5",
+      "outlet": "WEB.DE",
+      "outletUrl": "https://web.de",
+      "published": "2026-10-22T11:05:17.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Storm low \"Austen\" reaches Germany – these regions are hit hard",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "„Russische Menschenfreunde“ – Selenskyj kontert nach Witkoffs Lob für Putin",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOQXVwck1mSnFvMEJhdHVESHEtaGwwbDVoazk0Ujc0alZsak5vSVVxRm13TDlPOHRpVF9adnpzb2R4RUtfMGlEaHZXQzJsOGprenpVSjVKa1JKMGtDeW9Lc3poOG1BNFdwYVZQSlJrNnU4ZlFVcHYzNmZubE5hQUptXzlVSnZmSVNtM2g0d1EyVHlBNjJMT1N4N0R5VFVHQThxNTFycWlZZHpuX0hVdDhtMlRYNjBjUkdfM1dRTkF5YjlXNWNQZHVmRVNhVTRwTlIzeDJEa25QRU41N0RvQ2ZFaTlHX1h2dU9FdmxXNnNaQzc?oc=5",
+      "outlet": "WELT",
+      "outletUrl": "https://www.welt.de",
+      "published": "2026-10-22T10:45:22.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"Russian good guys\" – Zelensky hits back after Witkoff praises Putin",
+      "about": [
+        "UA",
+        "RU",
+        "US"
+      ]
+    },
+    {
+      "title": "Beschwerde erfolgreich: Landgericht Hamburg untersagt vorerst Zugriff auf „Zeit“-Aufnahmen",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcE9vVGh2aW8yWUQ4aEplM2ExTEtEUGtmX2FOYXlFT2ZaRThKMUFubDN0MG9nRGZJNmwtT0hJODZacEFnM19CVURMeWs4UE1RaThCREhCOTlzUXpyQWlveng0X09VcGJoTlRtVGh3UG82ekdrV1QzWkI5ZHcwb3BqLVk0TThEQ2FCcFU5Q243VTlXZFRac1ZKaUtjTFRqN1BkbDNTR0tlaWtYVmhiYjNMVUh1ekZCR1p3azIwYUlvZTNKUQ?oc=5",
+      "outlet": "SZ.de",
+      "outletUrl": "https://www.sueddeutsche.de",
+      "published": "2026-10-22T10:12:48.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Complaint successful: Hamburg Regional Court initially prohibits access to \"Zeit\" recordings",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "Chemieindustrie: Evonik prüft milliardenschweren Zukauf in den USA",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPR1JkT1JUaENuV2FOTVNGRmNEcHJMcEkzd3J4cWJMVjU1NnM2eXgwTWFSSmlBcXRTcnNGTUxvWmpVMkdDaWVLQ0ZVbnA2NEtaaUxMLWZ2RG4yLWZYOGlidXl5U0JJUjVVdUJrbDNpTmRoN0xyNDdPN2Z1LWc0OVRPMklnTmZnRlRYWTI2Q0FqZ3NqbHJoUkE1MDJVMV9kR01lV0I4WC1xbEhFd1pkTVJ6LVV0aGU0U1VOaTEwLTl1M3oxXzFPSXhKa0tsM2Y?oc=5",
+      "outlet": "Handelsblatt",
+      "outletUrl": "https://www.handelsblatt.com",
+      "published": "2026-10-22T10:46:09.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Chemical industry: Evonik considers billion-euro acquisition in the USA",
+      "about": [
+        "DE",
+        "US"
+      ]
+    },
+    {
+      "title": "Wie am 7. Oktober: Hamas droht Israel offenbar mit neuem Massaker",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOM1hMbmdwMFpxUVBXT2puYldCT21rMDJ1RldfRTNWR3E3RE1FalBwY05RNWpRZl9JcHR3WGVQVlY5NXZvWEl5NDQzTmQ3QTlFNlBNUnZmaUVkWjFacTRvYnRvUTRCYTEtbnVFR1ZQWGhadjRJWG9XaFNaZTNzZWJJMnlacjNOODM0ZXBQdTZHc1NHTm9yTFNVWDJDWDlzQnVUNVpqVnZxRm9kVnFETkRHS1hwRTZINGUwLWdyM1o2RTgtQQ?oc=5",
+      "outlet": "Tagesspiegel",
+      "outletUrl": "https://www.tagesspiegel.de",
+      "published": "2026-10-22T09:12:39.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Like on October 7: Hamas reportedly threatens Israel with new massacre",
+      "about": [
+        "IL",
+        "PS"
+      ]
+    },
+    {
+      "title": "Marine Le Pen: Frankreichs Rechte gewinnt nach den Krawallen deutlich",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTUVxczV4RVpyQ3RQQ29ndEJORzBCLWwwY2dPRUdNOC1OekNDVHpwQjg5ZE1pdUhFRzRsLTBhQXAwRER0dWpQTWJBR2J6R1BPR09GNUdkb1F5R3gwZ3NnaXVpYUQ5VnhORDczV21KdXpGbFBOWnlFcmphNjhsYXpnLWlhQUd5VklMVU5KZ3k2ek5VTFo2cmtGZHpWa3AxUE5IMHhNbnNDS1d1ZlhfdmF4UmN0aElkaGY4UkhxTjk0SGtvOUxLMnBXSnhRMTZuaGRwM2REZ1Z4LThjUk81MXpwLXhkYw?oc=5",
+      "outlet": "BILD",
+      "outletUrl": "https://www.bild.de",
+      "published": "2026-10-22T12:41:41.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Marine Le Pen: France's right wins clearly after the riots",
+      "about": [
+        "FR"
+      ]
     },
     {
       "title": "Hackerangriff auf AfD: SPD-Politikerin fordert Auswertung von AfD-Mails für Verbotsverfahren",
@@ -229,155 +180,218 @@
       ]
     },
     {
-      "title": "Macron kritisiert Trump nach Äußerungen zu Unruhen in Frankreich",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE84c2I5Y1BfcmliVFh2aTdjNUdtbWJibUpfaTlEb3dJNkpsbU1SdVB4eVJVWnZaOVcxb1pVa1RtNHk5X1dXblJnWGxSelUtUzFCSFF5aF8tV0pXaHl1clhaVnpydTFFbU9MWTNMRkJn?oc=5",
-      "outlet": "tagesschau.de",
-      "outletUrl": "https://www.tagesschau.de",
-      "published": "2026-10-21T17:48:00.000Z",
-      "outlets": 6,
+      "title": "AfD: Weidel will Brüssel entmachten und legt radikalen Plan für neue EU vor",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNaWNFZ1k3elZkV0FDS3o4TlUwcVppSXp6dWhSMGpmSEpmWVB0bWh1Unl4VmF4Q283dVNfUk9fcVpzcG9mMXpWRk1LUFFUUFB3X3lQWkliMGdhMVViSzd1YzFNQmV2YkhnMGtPUWJwUVQ3ZklZUTBGdjN6clZpTW9fUU96M1UtaHJKcm5oRkNKOFZVdEkyaVZnNmtybFFvRklkVU1ZVTEta3RVdE5UT1F3cUx5MUFMQTJQS1pkaHI4ekRmbVhnQWJBQnZ2dFgyS3N2UWdzRkM1QVA?oc=5",
+      "outlet": "WELT",
+      "outletUrl": "https://www.welt.de",
+      "published": "2026-10-22T12:30:28.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Macron criticises Trump after comments on unrest in France",
+      "en": "AfD: Weidel wants to dismantle Brussels and presents radical plan for a new EU",
       "about": [
-        "FR",
+        "DE"
+      ]
+    },
+    {
+      "title": "Tesla: Gewinn bricht um 43 Prozent ein, Musk schwärmt von Optimus",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOE93VmZKWEVrSUdZX1ZXNXZzUkswXzJoXzVzQ0t1aDg3Z1FNWVdhdmp3X3hHbHdtaC1VaWZsOHJtbnJBQzlWZzlpX1NVaFVQQVcyUWFURkptSGtzZV9rNEFfQTd5bjRjYmhTTGI5cWVSQ1ptOGZYS2lsUzRPLWRDeDR3ODVkOTFwdVV1bWxqYk1YRXIzbmxBbndzYTVfVS1zU1dJ?oc=5",
+      "outlet": "heise online",
+      "outletUrl": "https://www.heise.de",
+      "published": "2026-10-22T09:03:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Tesla: Profit collapses by 43 percent, Musk raves about Optimus",
+      "about": [
         "US"
       ]
     },
     {
-      "title": "Deutschland kauft in Russland fast nichts mehr und exportiert wenig",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNXzhRWGVKYjdJOTdtZHk5Tl8wc0FBUnNfRk4xU1ZNZ2txcURwZWFjaF9YNXp3VTJJdmU5WE42Y0RlYUtRaFpORXRNRjNpZEZJcXFkeFoxWXU0bXE2dXgzOUFZMUZBUWVETGgyZ1gwYU5FWW92cXBlRmY5YWdKeEZ3cWZRcGJ3QmZvMG1tT0VJZVFLSW1pN2w0RHVrVHlPU3YtRHBOZGZ2T25Db29YNVIxSzBtaGFUaW5CWW1rNGVyNA?oc=5",
-      "outlet": "n-tv.de",
-      "outletUrl": "https://www.n-tv.de",
-      "published": "2026-10-22T06:16:35.000Z",
+      "title": "Dejana P. tot aufgefunden: Ermittler vermuten Tötungsdelikt",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcHo4cXE1OVY5ajFqSzlRd2VxWS04U3ZpYTYzeW9DaENQM1hsc1ZJd0pNZDJVb01sOXltYXlpS1Z4NlJMekJZNDZqM29vV1BKSlZBdmZkLUZ5a3ZJU2tqMGlNc2F3QU9ja2tSVmtWS09PUGlLNTNzbkg2RXRNbTV0d0Z3MHgwSEhVdkluaXN4WnVNN0hTNEtyNC1HM3NKdFVKZjdBZHI1bzVlTk96cHNBdG9peEI1UnU4VFYw?oc=5",
+      "outlet": "BILD",
+      "outletUrl": "https://www.bild.de",
+      "published": "2026-10-22T12:28:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Germany buys almost nothing more in Russia and exports little",
+      "en": "Dejana P. found dead: Investigators suspect homicide",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "15:08 Bericht: Bürgergeld-Reform spart bisher kein Geld",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOVA5bVBrVGNzWTNGT2tJV09iRmxOdk54VG1qdlduS2V1XzRsQUVoYUtQbjNHQ25iOHlKbG9iUmlPVkpmUks4ZTVSMlg0d2V5ZjhhMEpuVFIxdmZQd0RPcWNQcGFEX2V0MlRQTXVtOHFnT0xEOHZ4MVZTOUgtOThvd2k2dExUU2JJd0EzaFhkcUZqSnNrd19jNXM2RDE?oc=5",
+      "outlet": "n-tv.de",
+      "outletUrl": "https://www.n-tv.de",
+      "published": "2026-10-22T13:01:07.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "15:08 Report: Citizen's income reform has saved no money so far",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "„Wie krank und verroht muss man sein?“ – Strack-Zimmermann empört über Musk",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQSndxSnhWdUE3VDJ2NDAtLUdsTGNCUG1CU09weThPcUVxSlBJQ3Jxbmo1cUVnOFI5bG9pWVZmNGJzcmJ3RDJFT0wweEF2Q0NBSm1mUTZ0cDJHZVl5WWYwNW82b0hKVW1lb1RPbXNtU3dPeWYwV1FpeTVoQ1NSOG5ZUmtRV0prMTRlV29uVzdYcjBLSFhtdGRyTG00ODNNNjFFdUlxYzExYy1pSWtucFhwUmN3ZkFlS0VLV0hwMGVSUVZEWG92M2p4aDVCV29WRnh0RUtFNHlzQ2xoY0pfanBNN3JRTTFVQUxTc2xHQVNpYw?oc=5",
+      "outlet": "WELT",
+      "outletUrl": "https://www.welt.de",
+      "published": "2026-10-22T12:25:26.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"How sick and brutalised must one be?\" – Strack-Zimmermann outraged about Musk",
+      "about": [
+        "DE",
+        "US"
+      ]
+    },
+    {
+      "title": "Fußball-Rekordmeister: FC Bayern verkauft letztes Anteilspaket",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQZjRNMFFJcnkxZ2lhXzJWOGJTTnVaR0lRU0dlMnZvT2hndGdqUWRNYU1kcXFIZG1BSnJoMmRfU0U3YllON0RGR3oxbWdtLV8zajh6eWVJM0FnczZ0Sl9waG5tS24zT0p3ckx3ZHhmcXZlQmJNRm56RjdhSk5vSU02OUZzb2RJWGM5REo5VXNvNkJqenNYalA1amwtcXJWY3ZESzlMY0U4Rnh4TzdKM3NCeGJ6Z2U3U19mdjZTM05JWEx5emwxUEdYaUdITXMzNU1jZmFUNGtPYU5rdFZDcm5CbWtZY0hlZ3prRnVtczF1ZEU?oc=5",
+      "outlet": "Spiegel",
+      "outletUrl": "https://www.spiegel.de",
+      "published": "2026-10-22T10:15:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Football record champion: FC Bayern sells its last share package",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "Rot-Grün-Rot: Ex-Verfassungsrichter Di Fabio hält Ausländerwahlrecht in Berlin für verfassungswidrig",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOd3F6bVh3V01iUzVwaVZXZmhXcm1vaktOdlBGdU5OVFItRjdKZ3YxOHd2ZTNTY1JaU0FUSXl5ZzBZdU1aMWNxWnk3SUtpQk9LUERvLW52SEdCZFlRcThfaFVvbW1wZl9XUm8wMXY4N1lLY0x1cjRqMDhRNEMtTHoyb3ZQMEtBdFVXNXEySEtVV1hNX0FsQnlrVVFUbHByQjFFTmwzRUJfSWlnbXZzV3RTa1JYWFRabWVmQnRWay00QjNDRmpSTmpST3kwR1JpalFRRW8yTVZCUGtSZGlXbFpVUC1BUkVobUtqQ3Z4SEhEZWNqckdxSjRqcnkzNGstYzM1bjFwOHdfcWdhcEpG?oc=5",
+      "outlet": "WELT",
+      "outletUrl": "https://www.welt.de",
+      "published": "2026-10-22T12:17:21.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Red-Green-Left: Former constitutional judge Di Fabio considers foreigners' voting rights in Berlin unconstitutional",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "iPhone Duo: Anfangs noch Probleme mit älteren Apps",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNTJqd25CdW1CQmhxTy1zdUs5Q3VadTdZcDB5cklSY0VjZ3J6dERyaGxGSUVTSk9MZHRUR0cwaDFiX09xZFNIMTl5Sk1fZldBaUdJRVBCLVAySkJsd3FnM3dzV2xxSHdxZDE3dHMwcXBxRElCQnMyOE5iZkI3MnhKM3JRZUZMYmFlMHF0WTZuZ3NPVUFF?oc=5",
+      "outlet": "heise online",
+      "outletUrl": "https://www.heise.de",
+      "published": "2026-10-22T09:14:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "iPhone Duo: Initially some problems with older apps",
+      "about": []
+    },
+    {
+      "title": "Das Wetter in Baden-Württemberg: Der Herbst bleibt ungemütlich und bringt Frost, Sturm, Regen und Schnee",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQZk5TYUZ5UUE2Z0ZQZ2h4MXNTVklpZS1KVU9FcHBxcGxfQW9FM3AtelNmTjBtRjRKTDhNOHFPSTZlcEFxc3dXVGJpV2JJSkpGQ2hJc3FXMUJWOWpnNElHWnByd0ZhMlBMRVYxeTBlQnZEa1BUbk5rT3lNRWhjdGRlX2YtalM0djMzOUE3eDVXdXh5VWZEbnBkazFTSVhvTkFVLVVoTTB2NVc4VG51Yl9vOGloZWNLaW1EajV4YndJdTY3bkdXZFBJOWU0MnZodHdsNS1NYWctSWZ0dnlKdVVKZmt3YkdsdXk4eG9IWWhpN3o2bWZzQUE?oc=5",
+      "outlet": "Rhein-Neckar-Zeitung",
+      "outletUrl": "https://www.rnz.de",
+      "published": "2026-10-22T12:04:36.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The weather in Baden-Württemberg: Autumn remains unpleasant and brings frost, storms, rain and snow",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "Strecke: Tour de France Femmes - Krönung auf dem Puy de Dôme",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNU3k0dlNLMm9tZXFoSHF5WkRZOTFKZnktUEctd1NxUnZCY3BZQ3FjMndwUnBESHhPdXZvVXRCUTJrNjYzd0JDMlBpVVV2U3hBdDR2N0dBRGdMbXFqZy1GREJKSFRLb2hIYnBubzRZa1NzUVcwY2dLYWRhVWtIVXQ0RUN3clA0NEtFblBZTmJuRnZuMzFSR3FDOXNjMm02azBTYjI5TDBFeVA3ZjZDcy00VXc0UVYybndQWlJTdldocw?oc=5",
+      "outlet": "sportschau.de",
+      "outletUrl": "https://www.sportschau.de",
+      "published": "2026-10-22T10:34:39.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Route: Tour de France Femmes - Crowning on the Puy de Dôme",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "„Putin glaubt an Sieg“ im Ukraine-Krieg – Experte: Wegen Trump „unglücklicherweise im Bereich des Möglichen“",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaktHUnVKb2JORHRRZ3lQZzdQc0NiN1JIaldPQ1RQeUQyRUdLTVVYN05uelp0MjMxeVdNUmdfUkVxZzJ0bVFmazltQ1FNdURnbnhYYzBYMHZjRHpZckZOV0E1X3I4UFJtMHpGYXZRYUM0WDZtWHowbWRiMVprYy0tMVc0UzY2c1h2aU9QaGZCYmxXaXg3N3ZiRTNPZUJyVmxaZnNFYmJR?oc=5",
+      "outlet": "Frankfurter Rundschau",
+      "outletUrl": "https://www.fr.de",
+      "published": "2026-10-22T11:57:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"Putin believes in victory\": Expert gives gloomy forecast after Witkoff visit – and explains Trump's calculation",
+      "about": [
+        "RU",
+        "US",
+        "UA"
+      ]
+    },
+    {
+      "title": "Chrome: Google macht Schluss mit unsicheren HTTP-Verbindungen",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNU5WZERDMWlCUWJhTVhNWFdOVmtRcHZZN2owMFloeFhYdnVHUGlZbUlNaGxQQmVqUGtOWXVpWVUydWxTYkJfN3lTSnpzbXpvdFNmTm1sMEZDVTBzaUlJSFFjVDl1X3JCRDAyMUFKRDVMSHdmOEV0SFl3U2huVTVYMHFVZ0pqWWdNNUtMSEEtQmZHUGlzSFBRVWV4bnhVS1RrRnc?oc=5",
+      "outlet": "heise online",
+      "outletUrl": "https://www.heise.de",
+      "published": "2026-10-22T13:33:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Chrome: Google ends insecure HTTP connections",
+      "about": []
+    },
+    {
+      "title": "25 Jahre „GTA 3“: Willkommen in Liberty City",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdzBTWHVyMjRFa056b1ZqeGhBN0R5YmRfenVCaUFydFAtMzc5SVpHSUdBbVlZcFFNQVQyZlhhQ1NmdXBpZE5ERF8taTFtZm1VcTVFazY4SWRIN0wxY3NUZWktakkxOGV3UGdlejI5Q1ZLUVo1c1FYMGJabkZBUjBxeEJ4cXdvLWpONl9TaTc4VVZVdw?oc=5",
+      "outlet": "heise online",
+      "outletUrl": "https://www.heise.de",
+      "published": "2026-10-22T13:21:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "25 years of \"GTA 3\": Welcome to Liberty City",
+      "about": []
+    },
+    {
+      "title": "Kurz und knapp: Kompany reagiert schmallippig auf Klopp-Kritik",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPX3YzZkVPTGJYNEl2ZFAwUmhXVXZyVGRoTV84WWNWdFJ5UEttLVpnaGh6UC1oaFRDRjl6dGlqRkJYVjNOdndqbUgtSW85MlRRVGNwbG5ONVduZXZxR3RidDk4aVZ0eGZZT00zRklqcGcwX2pmRlJEdkhMazVsalFmTGNneHJkS2hGbTJ0NEVqTWhHdw?oc=5",
+      "outlet": "fussballdaten.de",
+      "outletUrl": "https://www.fussballdaten.de",
+      "published": "2026-10-22T09:10:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Briefly and concisely: Kompany reacts tight-lipped to Klopp criticism",
+      "about": []
+    },
+    {
+      "title": "(S+) Zugriff in Brandenburg: BKA verhaftet mutmaßlichen russischen Agenten",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPdEZNNHNRdzVoWUJXQjI5eVI5UjhfQ2dJdGZrbmgxMWl3UVJ3WU5vdTBLYXVWSFdlWHZSM2ZXR3ZTQ1gxX1VXVzJ0YTdpQkNwbC1tMFloS21SOWxWc0J2bnhZSGdmdnZJRGlFYVR0eDhwRzhpRHJuRHdmTV8zMmxhcTd5YlRfOEVEM040dkVCWHJOMkJTZ090Rlh0ajFsaUFGOFJDaUhPd1VqRWpobGdsMmMySEE1Z3pLTjJfVU9HWTNOT01DcGNyN3pocDZMZ0NuUmc?oc=5",
+      "outlet": "Spiegel",
+      "outletUrl": "https://www.spiegel.de",
+      "published": "2026-10-22T11:01:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "(S+) Arrest in Brandenburg: BKA arrests alleged Russian agent",
       "about": [
         "DE",
         "RU"
       ]
     },
     {
-      "title": "Süßstoffe im Darm: Drei Viertel verändern das Wachstum von Bakterien",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNVRVSGdsY3lZaUpBNWtnZE5MMVdxeGFNXzJTZzk4VU1RQkxERTg3U1IxQmJHazhLNG55OVRFekN5Rkg2V2NSVDcwanFXX0VpQjJ2UG1kWnpiZTdxa2pjVnE5TTFjalpPVllNYUlaNXFsSkVDdG1CNTdmLWV1eDNUbnNhaHFicjJRQTVVVnp3ZFV3ZTBpalZFekVFbmo3Y05HVzhpM0tPMmQyT0dOLXZGSzAxcUh4aFFlYlBz?oc=5",
-      "outlet": "AD HOC NEWS",
-      "outletUrl": "https://www.ad-hoc-news.de",
-      "published": "2026-10-22T04:14:29.000Z",
+      "title": "Mit Kind an Bord: Lastenradfahrer wird mit 44 km/h in Tempo-30-Zone geblitzt",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOW9KcnhsemlSZWNyX0lxSXhDNWhjUm56YUt6UGkzci15b1B3WVRaMjBOWW1ZdW42VEpGeVJEaXg0eURQQXY3Rm4yOW93bkdUR3k4cEp6dkg0ek8xRE80Q2xVMXNBUTZWVlRuZ2lLSjc0TDY4Y1JpUDR0cElCLXQ2aml0eEtmNHlydlQ0dlVjY2w4Sk9wTnNEU1NlZWQyUl9RaVlqVlQxdU5IS0hFWWt1V0pDT0xRcXVueVdyT2FiX1VIRFE?oc=5",
+      "outlet": "Tagesspiegel",
+      "outletUrl": "https://www.tagesspiegel.de",
+      "published": "2026-10-22T10:57:03.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Sweeteners in the gut: three quarters change the growth of bacteria",
-      "about": []
-    },
-    {
-      "title": "Wolodymyr Selenskyj möchte »so bald wie möglich« Gespräche mit USA und Russland",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQLXBaTmIyb0dGNmtTUnl3ekVxR2lmSEd4ZkhQWE0wYzMyVFdtZlFpYVA5SXpTbU1wWnNNekk3b0ZKTktqeU5hU3VVV19FTF9jUlo1SDZ5bG5tbVUweDlpX3lnSWFrTWJobDkxQW1ReUpMaXZEWTBBNE0zUUN5U2s5Y3l2d1g4UGhaQXBrc1lhWkRvNXlSOW5MZXFwR0xtYlJLMDNwVTlRVlpLX1VEVGM5Sno0MWZVdGh1bF9HZ0RVV1VKT2dFYW81RlFENHV0VVlXcm40WTNhTWo2S0cwcXo1Mk5CazM?oc=5",
-      "outlet": "Spiegel",
-      "outletUrl": "https://www.spiegel.de",
-      "published": "2026-10-21T23:06:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Volodymyr Zelensky wants talks with the USA and Russia \"as soon as possible\"",
-      "about": [
-        "UA",
-        "US",
-        "RU"
-      ]
-    },
-    {
-      "title": "„Nachbessern, wo dies notwendig ist“ – Was der SPD bei der Pflege auf einmal wichtig ist",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQd1N5VVBhTnVxUWl5S093TGgxY3VkSTdEdDNuYzNlS0RMclRlakE2NGd1WlY2b20ySlhQQTNLRlkxcW9tYUFNNndhaE5mLUQ2Um5pTEFsOEp4VGdfTjMtTzg3WFpibllSbWRSbzhwLURKM0ZPRnpEN0psdFlvRE16Ymp1V0JibHNkRVBXZkRqWS1xTHpianpQdkFiZnF0NFdGd3l1NXRvMzhONzYwTkJ0YnU5VUR5QlgyT0MxaS1OWkhESmhOeUo1T0xVQ3RvNi1jS2NaVTFnVFhGck9adVpoSG45ZDRRazVzWDFnS0NQc3ZSWmRidlhOYmkyNTBybGozWFliMA?oc=5",
-      "outlet": "WELT",
-      "outletUrl": "https://www.welt.de",
-      "published": "2026-10-22T01:16:43.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"Improve where this is necessary\" – What is suddenly important to the SPD in care",
+      "en": "With child on board: Cargo bike rider clocked at 44 km/h in 30 zone",
       "about": [
         "DE"
       ]
     },
     {
-      "title": "Typ-2-Diabetes: SGLT2- und GLP-1-Therapien sollen früher beginnen",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZzJkVkxNV0x3NkdtcUhOX0lEMzNpOHNYVjR0WElYc0djMG1pWE5hRUFLYlRCOTREVU1Kd0VBajhUOFhwUG90Z0hncThQNHNPUndGS3U3LXg5TlhhWWNMUFVwVXBGa0diamFUQ0c4bjdVcDIxN0x0ekNnd19RUjN0MzJzZWFMR24ybWo4eDdVYXlMbGtPa05FZlBzN05GaXktRnJxeF9pdlJMQjh0TkxaM1RUNA?oc=5",
-      "outlet": "AD HOC NEWS",
-      "outletUrl": "https://www.ad-hoc-news.de",
-      "published": "2026-10-22T06:09:34.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "Type 2 diabetes: SGLT2 and GLP-1 therapies should start earlier",
-      "about": []
-    },
-    {
-      "title": "Le Pen legt in Umfrage zur Präsidentschaftswahl leicht zu",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVVNTcFQtTzd3MHVfSHpMWjBlM0ZXRmZCNk5wZHZWWVByalJlc2ljV3N5NXJRaks1eTNEVVAwc0czc3JsRm51X01yRXBnOGItUjYxamVpOF9xXzdEelgwcUxLRmFjRjJ0bmF2V0ZseGd1NG9VS2pLd2ItUUduNWtkMlpUeTAtM2tmLVVtVWwtaWhhdlZIcV9IU0ZrS19GMDl2a1dZNlp0dDJqNGx0SXh3bnd2N0oxNWQwcl8yMDd5b2VNa2daTGcw?oc=5",
-      "outlet": "Spiegel",
-      "outletUrl": "https://www.spiegel.de",
-      "published": "2026-10-22T00:38:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Le Pen gains slightly in poll for presidential election",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Erneute Eskalation in Nahost – damit droht der nächste Preisschock",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWlJITGhkU01FcERTYXF6R1pLM09weXpQYXhfMWVnNlZZSDBvVkFTdU5NWjRkNUdoR2F5Q3kzdEZSVkZkTTRhMnpoOE9wYy1qN0w0aktwYnJTd2cxU3Bna2RXck1DUXEzTkpJVUcwbDR2UEQ1emhTTVdnd0FoVFRaVA?oc=5",
-      "outlet": "Tichys Einblick",
-      "outletUrl": "https://www.tichyseinblick.de",
-      "published": "2026-10-22T05:06:11.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Renewed escalation in the Middle East – this threatens the next price shock",
-      "about": []
-    },
-    {
-      "title": "Senatswahl in Texas: Bruder von Ex-Präsident Bush wendet sich von Trump-Kandidat ab",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPU3U0UVZETFpGODc4aEtKcllBODcwUzdxZTNwVk5WUDhYZ1lMNVZpN09OUXk3amp0RTFSa280T08tQkRZZ3pMdlhKTGpoM1NENFN5LVFtQUFpbWNZYXFkQTJHTnh1djhkTFY1V2VlX25Zd1AyNHRzYXJEemVlQk8waWVUTWZMSVhna01DOGRaT3dpcXRvWjNpMnJ3?oc=5",
-      "outlet": "DIE ZEIT",
-      "outletUrl": "https://www.zeit.de",
-      "published": "2026-10-22T05:04:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Senate election in Texas: brother of former president Bush turns away from Trump candidate",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Unwetter-Alarm am Mittelmeer: Erdrutsche und Überflutungen in Italien – Drei Tote in Nachbarland",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPN1JkRDJscldpdW95UGxBYmZpR3ZIYS15c0JVUHlaTWg3S1diRUc5d0FxdG5GbTNUNzJVcFNER3BIbEd1RGdhdVdJNzhNazBPUVZQQXlmT0dKR1JUNldPWDRPb1RuQ1poZU5vbGc4aFhIU0NPUEFaRzhNS09DZTRDNEJoR0xZTDd3bVpXUE85ZVlLMEN3QVNfbjBFRkdMMHJpQ2R2Q3FQWG9nVVJ0a1lzbUhaZXMtVUlOVGw0eGJVZ1BJcU5WM0kyRTlR?oc=5",
-      "outlet": "Merkur",
-      "outletUrl": "https://www.merkur.de",
-      "published": "2026-10-22T05:04:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Storm alert on the Mediterranean: landslides and flooding in Italy – three dead in neighbouring country",
-      "about": [
-        "IT"
-      ]
-    },
-    {
-      "title": "„Wir sollten uns wirklich Sorgen machen“ Russlands „feindseliges Manöver“ im Weltraum alarmiert Experten",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOd1RhUjVFdTZRalhzT0Q4cmItaXptQlpYMlNqTXRoX2wxVTNBQjdCZXNsNVh0NnNJM0FiWFdNYTFUb1B5WTNrZVo1WDNoanFTenFVc3oyM1VRaTQwTk9Hbl9LU0lfSVdJXzlWdGlPYmJPUHgwcm9qRkNHdURreFpBQTZVZ2ZSVFRUeWNwdXM2X0xhYnJ2c1VVNENJd2VzM28xU1JtN1dUZVJ2d0hSZnptWmZQWmF3Qkh6RWt3dDhlQ3ExcW9BVzlobUdZN1dqWTlQdjA5ZHVPelVWLVBfUTIyVTFIMm9JdWVPWlBXMnV0UQ?oc=5",
+      "title": "Messerangriff in Berlin-Neukölln: 20-Jähriger wird auf Schulgelände schwer verletzt",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTGs4dURPV2dWZXJVdnVWSTIzM1BhbFJ0ZEFNQzJvOXZHN1RFbkcwMWxFOFdhN0h0eUwyVVhGV0o0eUg0RnBVeENmT0wxZFo1Sml5Rm82RXpVN1RjYkhjT2tTaVhNOEw2ODFVQ3lybVlkak82MnotTXpQbUxsdzN0VTVKb1BBYVVRZzFPVzg2QWRueUZIOTM4aldnSGgxX0FnbnVyVQ?oc=5",
       "outlet": "Tagesspiegel",
       "outletUrl": "https://www.tagesspiegel.de",
-      "published": "2026-10-22T04:59:00.000Z",
+      "published": "2026-10-22T10:54:29.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "\"We should really be worried\" Russia's \"hostile manoeuvre\" in space alarms experts",
-      "about": [
-        "RU"
-      ]
-    },
-    {
-      "title": "Ost-West-Debatte bei Lanz: Publizist mahnt vor \"Diskriminieren des Ostens\"",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWmEtQzBVMVQwX3c1UktrR2VJRkpSc3ZqWkJFNGFDcXdWcnEyTnBwUWp6TFBpWV9SSlhMU3JCbzU2ZUxWZGVKeU1zSEhTUGkwRnNHd1lPRzcwbFBqUGEtbTBlemdfaUt6YzZjVE1IYkI2QjNPT2tjR3J1amZITldzbkhNTDF0aVhzbHQ0eXEzWnkxNmx1cmFRY2RUdkRZWTJz?oc=5",
-      "outlet": "WEB.DE",
-      "outletUrl": "https://web.de",
-      "published": "2026-10-22T04:54:17.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "East-West debate on Lanz: publicist warns against \"discriminating against the East\"",
+      "en": "Knife attack in Berlin-Neukölln: 20-year-old seriously injured on school grounds",
       "about": [
         "DE"
       ]
