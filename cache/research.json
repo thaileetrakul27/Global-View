@@ -1,110 +1,112 @@
 {
   "eonet-cyclone-eonet_25290": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-22T08:03:09.184Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Hurricane Trudy, which started on 13 October 2026, brought heavy rain, flooding and strong winds to Mexico's Pacific coast. In Colima, 71 homes and 35 businesses were reported damaged, and one death was reported in Guerrero. By 18 October the storm was moving away and weakening, and hurricane watches and warnings had expired by Sunday night. Authorities warned that rain could still cause landslides and flooding.",
+    "searches": 4,
+    "summary": "Hurricane Trudy (EP2126) formed off Mexico's Pacific coast on 13 October 2026 and weakened to a tropical storm by 19 October. Reports describe flooding, landslides, fallen trees and temporary shelters in Colima and Jalisco, with one death reported in Guerrero. The situation after 19 October is not confirmed.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Colima",
-        "admin": "Colima",
-        "country": "MX",
-        "kind": "city",
-        "impact": "floods, fallen trees, stranded vehicles"
-      },
-      {
-        "name": "Villa de Álvarez",
-        "admin": "Colima",
-        "country": "MX",
-        "kind": "town",
-        "impact": "floods, fallen trees, stranded vehicles"
-      },
       {
         "name": "Manzanillo",
         "admin": "Colima",
         "country": "MX",
         "kind": "city",
-        "impact": "floods, fallen trees, stranded vehicles"
+        "impact": "flooded; residents moved to shelters"
       },
       {
-        "name": "Guerrero",
+        "name": "Villa de Álvarez",
+        "admin": "Colima",
+        "country": "MX",
+        "kind": "city",
+        "impact": "flooded; fallen trees, stranded vehicles"
+      },
+      {
+        "name": "Armería",
+        "admin": "Colima",
+        "country": "MX",
+        "kind": "district",
+        "impact": "shelters opened"
+      },
+      {
+        "name": "Tecomán",
+        "admin": "Colima",
+        "country": "MX",
+        "kind": "district",
+        "impact": "shelters opened"
+      },
+      {
+        "name": "Ixtlahuacán",
+        "admin": "Colima",
+        "country": "MX",
+        "kind": "district",
+        "impact": "shelters opened"
+      },
+      {
+        "name": "Comala",
+        "admin": "Colima",
+        "country": "MX",
+        "kind": "district",
+        "impact": "shelters opened"
+      },
+      {
+        "name": "Cabo Corrientes",
+        "admin": "Jalisco",
+        "country": "MX",
+        "kind": "district",
+        "impact": "landslides and fallen trees; shelters opened"
+      },
+      {
+        "name": "Tomatlán",
+        "admin": "Jalisco",
+        "country": "MX",
+        "kind": "district",
+        "impact": "landslides and fallen trees; shelters opened"
+      },
+      {
+        "name": "La Huerta",
+        "admin": "Jalisco",
+        "country": "MX",
+        "kind": "district",
+        "impact": "landslides and fallen trees; shelters opened"
+      },
+      {
+        "name": "Sierra Norte",
+        "admin": "Puebla",
         "country": "MX",
         "kind": "region",
-        "impact": "one death reported"
-      },
-      {
-        "name": "Jalisco",
-        "country": "MX",
-        "kind": "region",
-        "impact": "port and small-boat restrictions"
-      },
-      {
-        "name": "Michoacán",
-        "country": "MX",
-        "kind": "region",
-        "impact": "port and small-boat restrictions"
-      },
-      {
-        "name": "Nayarit",
-        "country": "MX",
-        "kind": "region",
-        "impact": "port and small-boat restrictions"
-      },
-      {
-        "name": "Las Islas Marías",
-        "country": "MX",
-        "kind": "site",
-        "impact": "tropical storm warning in effect"
+        "impact": "at least 10 municipalities hit by landslides"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "1",
-        "sourceName": "elfinanciero.com.mx",
-        "sourceUrl": "https://www.elfinanciero.com.mx/nacional/2026/10/17/huracan-trudy-en-vivo-se-fortalece-a-categoria-2-y-amenaza-costas-de-jalisco-y-colima-sigue-su-trayectoria/"
+        "sourceName": "meteored.mx",
+        "sourceUrl": "https://www.meteored.mx/noticias/actualidad/trudy-no-toco-tierra-pero-causo-severos-estragos-sobre-los-estados-del-suroeste-y-occidente-de-mexico.html"
       },
       {
-        "label": "Homes damaged",
-        "value": "71",
-        "sourceName": "elfinanciero.com.mx",
-        "sourceUrl": "https://www.elfinanciero.com.mx/nacional/2026/10/17/huracan-trudy-en-vivo-se-fortalece-a-categoria-2-y-amenaza-costas-de-jalisco-y-colima-sigue-su-trayectoria/"
-      },
-      {
-        "label": "Businesses damaged",
-        "value": "35",
-        "sourceName": "elfinanciero.com.mx",
-        "sourceUrl": "https://www.elfinanciero.com.mx/nacional/2026/10/17/huracan-trudy-en-vivo-se-fortalece-a-categoria-2-y-amenaza-costas-de-jalisco-y-colima-sigue-su-trayectoria/"
-      },
-      {
-        "label": "Sheltered",
-        "value": "177 people in temporary shelters",
-        "sourceName": "elfinanciero.com.mx",
-        "sourceUrl": "https://www.elfinanciero.com.mx/nacional/2026/10/17/huracan-trudy-en-vivo-se-fortalece-a-categoria-2-y-amenaza-costas-de-jalisco-y-colima-sigue-su-trayectoria/"
+        "label": "Displaced",
+        "value": "48 people",
+        "sourceName": "punto.mx",
+        "sourceUrl": "https://punto.mx/2026/10/18/huracan-trudy-pasa-por-colima-con-lluvias-pero-sin-danos-sigue-en-categoria-2"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "cbsnews.com",
-        "url": "https://www.cbsnews.com/news/hurricane-trudy-mexico-pacific-coast-life-threatening-flooding-mudslides/",
-        "title": "Hurricane Trudy weakens to Category 1 storm after bringing heavy rain to Mexico's Pacific coast - CBS News"
+        "name": "diariodemexico.com",
+        "url": "https://www.diariodemexico.com/mi-nacion/trudy-se-debilita-tormenta-tropical-se-aleja-mexico-pero-siguen-alertas-estos-estados",
+        "title": "Trudy se debilita a tormenta tropical y se aleja de México, pero siguen alertas para estos estados"
       },
       {
-        "name": "massinformacion.com.mx",
-        "url": "https://massinformacion.com.mx/trudy-obliga-a-cerrar-cinco-puertos/",
-        "title": "Trudy obliga a cerrar cinco puertos - Más Información"
-      },
-      {
-        "name": "es-us.noticias.yahoo.com",
-        "url": "https://es-us.noticias.yahoo.com/hurac%C3%A1n-trudy-tregua-jalisco-disminuye-041037787.html",
-        "title": "Huracán Trudy da tregua a Jalisco, disminuye a categoría 1 y se aleja de las costas mexicanas - Yahoo Noticias"
+        "name": "ruptura360.mx",
+        "url": "https://ruptura360.mx/el-pais/tormenta-tropical-trudy-trayectoria-costas-jalisco/",
+        "title": "Tormenta tropical Trudy se debilita a 95 km/h frente a México"
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-22T01:04:05.836Z",
-    "donationSearched": "2026-10-21T17:37:06.438Z"
+    "donationSearched": "2026-10-22T08:03:09.184Z",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-cyclone-tc-1001335": {
     "at": "2026-10-20T02:25:48.047Z",
@@ -308,7 +310,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP,PH,TW#afb26aec",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -322,28 +324,97 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CA,US#471b9aae",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-22T08:03:09.184Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Drought in Europe, started 21 December 2025, is ongoing according to the latest sources found. The JRC European Drought Observatory said in mid-September 2026 that conditions stayed stable yet critical across most of Europe. The GDACS alert, last updated 19 October 2026, covers 1,759,971 km² of agricultural drought across 27 countries. Research was cut short, so coverage is partial.",
+    "summary": "A drought affecting much of Europe started on 21 December 2025 and is still reported as ongoing. A Joint Research Centre analysis from late September 2026 said drought conditions remained critical in most of Europe. On 20 October 2026, Povodí Moravy reported that the unfavourable hydrological situation in the Czech South Moravian Region persists. The Vranov reservoir there is about 28% full and at the third regulation level.",
     "ongoing": true,
-    "places": [],
+    "places": [
+      {
+        "name": "Vranov",
+        "admin": "South Moravian Region",
+        "country": "CZ",
+        "kind": "site",
+        "impact": "About 28% full, third regulation level"
+      },
+      {
+        "name": "Vír",
+        "admin": "South Moravian Region",
+        "country": "CZ",
+        "kind": "site",
+        "impact": "Third regulation level"
+      },
+      {
+        "name": "Vírská",
+        "admin": "South Moravian Region",
+        "country": "CZ",
+        "kind": "site",
+        "impact": "Level falling"
+      },
+      {
+        "name": "Brněnská",
+        "admin": "South Moravian Region",
+        "country": "CZ",
+        "kind": "site",
+        "impact": "Level falling"
+      },
+      {
+        "name": "Hubenov",
+        "admin": "Vysočina",
+        "country": "CZ",
+        "kind": "site",
+        "impact": "Second regulation level"
+      }
+    ],
     "figures": [
       {
-        "label": "Affected area",
-        "value": "1,759,971 km² of agricultural drought",
-        "sourceName": "gdacs.org",
-        "sourceUrl": "https://gdacs.org/report.aspx?eventtype=DR&eventid=1018332"
+        "label": "Rainfall, South Moravia",
+        "value": "about 300 mm through September",
+        "sourceName": "techtimes.com",
+        "sourceUrl": "https://www.techtimes.com/articles/328591/20261005/czech-republic-logs-third-driest-year-since-1961-exposing-ai-infrastructure-water-risk.htm"
+      },
+      {
+        "label": "Vranov reservoir storage",
+        "value": "about 28%",
+        "sourceName": "nasregion.cz",
+        "sourceUrl": "https://nasregion.cz/sucho-suzuje-povodi-moravy-460994/"
+      },
+      {
+        "label": "Soya bean yield reduction",
+        "value": "15%",
+        "sourceName": "farminglife.com",
+        "sourceUrl": "https://www.farminglife.com/news/brussels-confirms-the-full-impact-of-the-drought-on-2026-crop-output-levels-9278682"
       }
     ],
     "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,NO,PL,RO,RS,RU,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-22T01:04:05.836Z",
-    "donationSearched": "2026-10-21T17:37:06.438Z"
+    "sources": [
+      {
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/european-and-global-drought-observatories/current-drought-situation-europe_en",
+        "title": "EDO European Drought Observatory - Joint Research Centre"
+      },
+      {
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en",
+        "title": "Worsening drought and record heat grip Europe, fuelling extraordinary wildfires and extremely low river flows - Joint Research Centre"
+      },
+      {
+        "name": "gdacs.org",
+        "url": "https://gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
+        "title": "Overall Orange Drought for Europe-2026 in Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France…"
+      },
+      {
+        "name": "farminglife.com",
+        "url": "https://www.farminglife.com/news/brussels-confirms-the-full-impact-of-the-drought-on-2026-crop-output-levels-9278682",
+        "title": "Brussels confirms the full impact of the drought on 2026 crop output levels"
+      }
+    ],
+    "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "donationSearched": "2026-10-22T08:03:09.184Z",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -505,74 +576,71 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-22T08:03:09.184Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Drought began on 21 June 2026 across parts of East Africa and the Central Sahel. The June to September dry season was exceptionally dry in much of northern and western East Africa, with some areas recording their driest season on record. Rainfall deficits have affected parts of Ethiopia and South Sudan. As of 19 October 2026 the event is ongoing, but forecasts for October to December point to above-average rainfall and flood risk in the Horn of Africa.",
+    "summary": "Drought linked to El Niño is affecting East Africa and the Central Sahel. Sources dated 7 to 21 October 2026 describe it as current, and no source gives an end date. The feed's start date of 21 June 2026 is not confirmed by any source. Between June and September 2026, drought and high temperatures degraded crop and pasture yields across East Africa. In Sudan, drought and conflict are pushing Darfur and Kordofan towards famine. A strong El Niño is projected to cause rainfall…",
     "ongoing": true,
     "places": [
       {
-        "name": "Northern Sudan",
+        "name": "Greater Darfur",
         "country": "SD",
         "kind": "region",
-        "impact": "rainfall 45 percent of normal or less"
+        "impact": "Drought and conflict pushing towards famine"
       },
       {
-        "name": "Western Kenya",
-        "country": "KE",
+        "name": "Greater Kordofan",
+        "country": "SD",
         "kind": "region",
-        "impact": "driest conditions on record"
+        "impact": "Drought and conflict pushing towards famine"
       },
       {
-        "name": "Middle Belt",
-        "country": "NG",
+        "name": "South Darfur",
+        "country": "SD",
         "kind": "region",
-        "impact": "crop and rangeland conditions severely degraded"
-      }
-    ],
-    "figures": [
+        "impact": "Child malnutrition above famine threshold in two camps"
+      },
       {
-        "label": "Rainfall deficit",
-        "value": "100 to more than 300 mm",
-        "sourceName": "peopledaily.digital",
-        "sourceUrl": "https://peopledaily.digital/news/east-africa-drought-hit-crops-now-face-el-nino-flood-threat-report"
+        "name": "North Darfur",
+        "country": "SD",
+        "kind": "region",
+        "impact": "Delayed rains devastated crop cultivation"
       }
     ],
+    "figures": [],
     "donation": [
       {
-        "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
+        "url": "https://go.ifrc.org/",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC appeals listing showing Ethiopia Drought Response MDRET042; no donate option.",
-        "specific": true
-      },
-      {
-        "url": "https://member.redcrosseth.org/donate",
-        "org": "Ethiopian Red Cross Society",
-        "kind": "society",
-        "note": "General Ethiopian Red Cross donation page supporting drought-affected WASH projects.",
+        "note": "IFRC GO homepage listing Ethiopia Drought Response DREF MDRET042; no donation button confirmed.",
         "specific": false
       }
     ],
     "sources": [
       {
-        "name": "peopledaily.digital",
-        "url": "https://peopledaily.digital/news/east-africa-drought-hit-crops-now-face-el-nino-flood-threat-report",
-        "title": "East Africa drought-hit crops now face El Niño flood threat"
-      },
-      {
         "name": "joint-research-centre.ec.europa.eu",
         "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/el-nino-weather-extremes-worsen-food-security-east-africa-and-central-america-and-threaten-next-2026-10-07_en",
         "title": "El Niño weather extremes worsen food security in East Africa and Central America and threaten next season crops in Southern Africa and South America - Joint…"
+      },
+      {
+        "name": "news.un.org",
+        "url": "https://news.un.org/en/story/2026/10/1168577",
+        "title": "Sudan: Drought and war push Darfur and Kordofan towards famine"
+      },
+      {
+        "name": "rescue.org",
+        "url": "https://www.rescue.org/press-release/war-and-el-nino-driven-drought-deplete-food-stocks-pushing-sudan-further-towards",
+        "title": "War and El Niño-driven drought deplete food stocks, pushing Sudan further towards famine, new data finds"
       }
     ],
-    "membersHash": "gdacs,ifrc|CD,CF,CM,DJ,ER,ET,KE,NE,NG,SD,SO,SS,TD#d3aabe2f",
-    "seen": "2026-10-22T01:04:05.836Z",
-    "donationSearched": "2026-10-21T14:45:27.681Z"
+    "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
+    "donationSearched": "2026-10-22T08:03:09.184Z",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -592,7 +660,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "gdacs-earthquake-eq-1570077": {
@@ -624,10 +692,10 @@
     "membersHash": "gdacs,usgs|VU#c13bf69f"
   },
   "gdacs-earthquake-eq-1570339": {
-    "at": "2026-10-21T05:12:20.084Z",
+    "at": "2026-10-22T08:03:09.184Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 7.7 earthquake (USGS; Sinaproc gave 7.5) struck Panama on 9 October 2026, with its epicentre near Pitaloza Arriba in Herrera province. Damage was concentrated in Veraguas, Los Santos and Coclé. Sinaproc reports 27 minor injuries and 188 damaged schools. A magnitude 4.6 aftershock was recorded on 20 October, and a green rain alert covers three affected districts. Emergency operations centres remain active.",
+    "summary": "A M7.7 earthquake (USGS magnitude) struck near Pitaloza Arriba, Panama, on 9 October 2026, damaging homes, schools and health facilities in Azuero and Veraguas. As of 21 October, the national emergency centre was still running damage assessments and coordination. By 20 October, one death and 27 injuries were reported, and 2,318 homes were recorded with total damage.",
     "ongoing": true,
     "places": [
       {
@@ -635,116 +703,107 @@
         "admin": "Los Santos",
         "country": "PA",
         "kind": "town",
-        "impact": "Epicentre area; Sinaproc command post; milk stranded on farms"
+        "impact": "Hotel and several homes collapsed; no water or electricity"
+      },
+      {
+        "name": "Macaracas",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Wall collapse; woman seriously injured and later died"
       },
       {
         "name": "Penonomé",
         "admin": "Coclé",
         "country": "PA",
-        "kind": "city",
-        "impact": "Historic cathedral and regional government building damaged"
-      },
-      {
-        "name": "Veraguas",
-        "country": "PA",
-        "kind": "region",
-        "impact": "Damage concentrated; power and telecom outages"
+        "kind": "town",
+        "impact": "Cathedral collapsed; shelters open"
       },
       {
         "name": "Mariato",
         "admin": "Veraguas",
         "country": "PA",
         "kind": "district",
-        "impact": "Damage concentrated; green rain alert"
+        "impact": "Shelters open"
+      },
+      {
+        "name": "Boca de Quema",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Shelters open"
+      },
+      {
+        "name": "Isla de Cañas",
+        "country": "PA",
+        "kind": "town",
+        "impact": "About 300 people evacuated"
       },
       {
         "name": "Soná",
         "admin": "Veraguas",
         "country": "PA",
         "kind": "district",
-        "impact": "Damage concentrated; green rain alert"
-      },
-      {
-        "name": "Herrera",
-        "country": "PA",
-        "kind": "region",
-        "impact": "Epicentre area"
-      },
-      {
-        "name": "Isla Cañas",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Temporary shelter for evacuated people"
-      },
-      {
-        "name": "Panama City",
-        "country": "PA",
-        "kind": "city",
-        "impact": "Tremors; people evacuated into streets; no damage reported"
+        "impact": "Damage reported at Hicaco"
       }
     ],
     "figures": [
       {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Panama_earthquake"
+      },
+      {
         "label": "Injured",
-        "value": "27 minor injuries",
-        "sourceName": "ellitoral.com",
-        "sourceUrl": "https://www.ellitoral.com/internacionales/sismo-panama-sinaproc-tonosi-terremoto-cocle-lossantos_0_q82uQVQQS8.html"
+        "value": "27",
+        "sourceName": "latintimes.com",
+        "sourceUrl": "https://www.latintimes.com/panama-hit-77-quake-147-aftershocks-27-injured-cathedral-collapsed-600040"
+      },
+      {
+        "label": "Homes with total damage",
+        "value": "2,318",
+        "sourceName": "igopanama.com",
+        "sourceUrl": "https://www.igopanama.com/blog/about-panama-important-news/panama-earthquake-help-guide-emergency-contacts-housing-aid-and-how-to-help"
       },
       {
         "label": "People in shelters",
-        "value": "3,827 people",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://infobae.com/panama/2026/10/20/fuertes-lluvias-golpean-zonas-afectadas-por-el-terremoto-en-panama-y-obligan-a-declarar-alerta-verde"
-      },
-      {
-        "label": "Homes with total loss",
-        "value": "506 families",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-9/"
-      },
-      {
-        "label": "Homes assessed",
-        "value": "more than 9,500 homes",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://infobae.com/panama/2026/10/20/fuertes-lluvias-golpean-zonas-afectadas-por-el-terremoto-en-panama-y-obligan-a-declarar-alerta-verde"
-      },
-      {
-        "label": "Schools damaged",
-        "value": "188 schools",
-        "sourceName": "ellitoral.com",
-        "sourceUrl": "https://www.ellitoral.com/internacionales/sismo-panama-sinaproc-tonosi-terremoto-cocle-lossantos_0_q82uQVQQS8.html"
+        "value": "255",
+        "sourceName": "unocha.org",
+        "sourceUrl": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315"
       }
     ],
     "donation": [
       {
         "url": "https://donate.unhcr.org/int/en/panama-earthquake",
-        "org": "UNHCR (UN Refugee Agency)",
+        "org": "UNHCR, the UN Refugee Agency",
         "kind": "un",
-        "note": "UNHCR appeal page asking donors to help families affected by the Panama earthquake.",
+        "note": "Appeal for families affected by the 9 October Panama earthquake, with shelter and protection support.",
         "specific": true
+      },
+      {
+        "url": "https://cruzroja.org.pa/donar/",
+        "org": "Cruz Roja Panameña (Red Cross Society of Panama)",
+        "kind": "society",
+        "note": "General donation fund supporting the society's wider work, including emergency response.",
+        "specific": false
       }
     ],
     "sources": [
       {
-        "name": "igopanama.com",
-        "url": "https://www.igopanama.com/blog/about-panama-important-news/panama-earthquake-help-guide-emergency-contacts-housing-aid-and-how-to-help",
-        "title": "Panama earthquake help guide: emergency contacts, housing aid and how to help"
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Panama_earthquake",
+        "title": "2026 Panama earthquake"
       },
       {
-        "name": "infobae.com",
-        "url": "https://infobae.com/panama/2026/10/20/fuertes-lluvias-golpean-zonas-afectadas-por-el-terremoto-en-panama-y-obligan-a-declarar-alerta-verde",
-        "title": "Fuertes lluvias golpean zonas afectadas por el terremoto en Panamá y obligan a declarar alerta verde - Infobae"
-      },
-      {
-        "name": "cbsnews.com",
-        "url": "https://www.cbsnews.com/news/panama-earthquake-tsunami-threat/",
-        "title": "Panama struck by 2 powerful earthquakes, U.S. Geological Survey says - CBS News"
+        "name": "unocha.org",
+        "url": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315",
+        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 02 (as of 11 October 2026, 13:15)"
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#24cf2828",
-    "seen": "2026-10-22T01:04:05.836Z",
-    "donationSearched": "2026-10-21T14:45:27.681Z"
+    "donationSearched": "2026-10-22T08:03:09.184Z",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -768,7 +827,7 @@
       }
     ],
     "membersHash": "gdacs|PG#20427fcc",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-earthquake-eq-1571524": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -854,7 +913,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|US#dc9009ba",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-earthquake-eq-1571917": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -988,7 +1047,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1103888": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1048,7 +1107,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|US#2b36b9e5",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1116,7 +1175,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1142,7 +1201,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|VN#016cd7ee",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104167": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1269,7 +1328,7 @@
       }
     ],
     "membersHash": "gdacs|EC#73720892",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1543,7 +1602,7 @@
       }
     ],
     "membersHash": "gdacs|HN#37b0b7ff",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104216": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1582,7 +1641,7 @@
       }
     ],
     "membersHash": "gdacs|BR#3eb3019b",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104217": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1715,7 +1774,7 @@
       }
     ],
     "membersHash": "gdacs,news|CL#74420222",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1804,7 +1863,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104219": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -1884,7 +1943,7 @@
       }
     ],
     "membersHash": "gdacs|VE#3bb2fce2",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104220": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1987,7 +2046,7 @@
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104221": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2059,7 +2118,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SI#abb5ebc9",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104222": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2189,7 +2248,7 @@
       }
     ],
     "membersHash": "gdacs|PY#a8b5e710",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104223": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2202,7 +2261,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CN#a9b5e8a3",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104224": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2262,7 +2321,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104225": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2347,7 +2406,8 @@
         "title": "Landslide-triggered flash flood sweeps through Nepal's Himalayan valleys"
       }
     ],
-    "membersHash": "gdacs|NP#afb5f215"
+    "membersHash": "gdacs|NP#afb5f215",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104226": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2360,7 +2420,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MA#acb5ed5c",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104227": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2456,7 +2516,7 @@
       }
     ],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104228": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2535,7 +2595,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PA#b2b5f6ce",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104230": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2637,7 +2697,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|TR#b0b8323f",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104232": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2664,7 +2724,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|JO#b2b83565",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104233": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2677,7 +2737,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SY#b1b833d2",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104235": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2690,7 +2750,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104236": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2739,7 +2799,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SV#aeb82f19",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104237": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2772,7 +2832,7 @@
       }
     ],
     "membersHash": "gdacs|NI#adb82d86",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104238": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2785,7 +2845,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2910,7 +2970,7 @@
       }
     ],
     "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3159,7 +3219,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104242": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3211,7 +3271,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UA#a8a6dc86",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104243": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3320,7 +3380,7 @@
       }
     ],
     "membersHash": "gdacs|FR#a9a6de19",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104244": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3415,7 +3475,7 @@
       }
     ],
     "membersHash": "gdacs|GT#aaa6dfac",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -3459,7 +3519,7 @@
       }
     ],
     "membersHash": "gdacs|IT#fedc6d48",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -3527,7 +3587,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "gdacs-volcano-vo-1000152": {
@@ -3620,7 +3680,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "gdacs-wildfire-wf-1032497": {
@@ -3645,7 +3705,7 @@
       }
     ],
     "membersHash": "gdacs|AU#16f99bef",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032498": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3658,7 +3718,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#1bf9a3ce",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032507": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3697,7 +3757,7 @@
       }
     ],
     "membersHash": "gdacs|BR#a93ae3e9",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032508": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3728,7 +3788,7 @@
       }
     ],
     "membersHash": "gdacs|AU#b23af214",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032518": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3747,7 +3807,7 @@
       }
     ],
     "membersHash": "gdacs|AU#b83d3a1d",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032546": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3766,7 +3826,7 @@
       }
     ],
     "membersHash": "gdacs|AU#383137aa",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032556": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3802,7 +3862,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3815,7 +3875,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032657": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3939,7 +3999,7 @@
       }
     ],
     "membersHash": "gdacs|BR#efe30b15",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -3996,7 +4056,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#fbe9d9be",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4020,7 +4080,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4051,7 +4111,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4173,7 +4233,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4197,7 +4257,7 @@
       }
     ],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032726": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -4393,7 +4453,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#83527d05",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4422,7 +4482,7 @@
       }
     ],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4435,7 +4495,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4448,7 +4508,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4467,7 +4527,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4491,7 +4551,7 @@
       }
     ],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4504,7 +4564,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032857": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4517,7 +4577,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032874": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4536,7 +4596,7 @@
       }
     ],
     "membersHash": "gdacs|AU#c75dd910",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4555,7 +4615,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032920": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4568,7 +4628,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032930": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4581,7 +4641,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#58cb0943",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1032940": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4600,7 +4660,7 @@
       }
     ],
     "membersHash": "gdacs|AU#5ecd514c",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-wildfire-wf-1033018": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4618,7 +4678,8 @@
         "title": "Australia bushfire map — live fires & warnings"
       }
     ],
-    "membersHash": "gdacs|AU#e5a84e2b"
+    "membersHash": "gdacs|AU#e5a84e2b",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-cyclone-8034": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4649,7 +4710,7 @@
       }
     ],
     "membersHash": "ifrc|DJ#49b6fd82",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-drought-7977": {
@@ -4663,8 +4724,8 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#49b906fb",
-    "donationSearched": "2026-10-22T01:04:05.836Z",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z",
+    "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-earthquake-7990": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -4867,7 +4928,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
@@ -4954,80 +5015,70 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-8013": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-22T08:03:09.184Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Prolonged heavy monsoon rain from 5 July 2026 caused flooding, flash floods, waterlogging and landslides across Cox's Bazar District, Bangladesh, and other districts in the southeast and northeast. Floodwater was receding across Cox's Bazar by 17 July. As of 12 July, 51 deaths were reported. About 1.11 million people were affected across 10 districts. No current flooding was reported as of 20 October 2026.",
+    "searches": 3,
+    "summary": "Monsoon floods and landslides hit Cox's Bazar, Chattogram and Bandarban districts in Bangladesh from July 2026. UN Situation Report #2 (23 July 2026) reported 59 deaths and 1.28 million people affected across seven districts. The latest source found is dated August 2026; no later status was found.",
     "ongoing": true,
     "places": [
       {
         "name": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "At least 150 villages flooded across all ten upazilas"
+        "impact": "Flooding, landslides and damage in Rohingya camps and host communities"
       },
       {
-        "name": "Teknaf",
-        "admin": "Cox's Bazar",
+        "name": "Chattogram",
         "country": "BD",
         "kind": "district",
-        "impact": "Around 40 villages flooded; nearly 50,000 marooned"
+        "impact": "Banshkhali, Satkania, Lohagara and Chandanaish severely affected"
       },
       {
-        "name": "Pekua",
-        "admin": "Cox's Bazar",
+        "name": "Bandarban",
         "country": "BD",
         "kind": "district",
-        "impact": "450 houses affected, highest in the district"
+        "impact": "Sangu River above danger level; houses damaged"
       },
       {
-        "name": "Satkania",
-        "admin": "Chattogram",
+        "name": "Hashimpur",
+        "admin": "Chandanaish",
         "country": "BD",
-        "kind": "district",
-        "impact": "Health complex, courts and police station under water"
-      },
-      {
-        "name": "Chakaria",
-        "admin": "Cox's Bazar",
-        "country": "BD",
-        "kind": "district",
-        "impact": "Floodwater reached neck level inside homes"
-      },
-      {
-        "name": "Habiganj",
-        "admin": "Sylhet",
-        "country": "BD",
-        "kind": "district",
-        "impact": "About 30,000 marooned after embankment breach"
+        "kind": "site",
+        "impact": "Chattogram–Cox's Bazar highway submerged"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "51",
-        "sourceName": "nrc.no",
-        "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
+        "value": "59",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
       },
       {
         "label": "People affected",
-        "value": "About 1.11 million people",
+        "value": "1.28 million people in seven districts",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+      },
+      {
+        "label": "People needing assistance",
+        "value": "about 436,000 people",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+      },
+      {
+        "label": "Evacuated",
+        "value": "38,422 people in 1,047 evacuation shelters",
         "sourceName": "nrc.no",
         "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
       },
       {
-        "label": "In evacuation shelters",
-        "value": "38,422 people",
-        "sourceName": "nrc.no",
-        "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
-      },
-      {
-        "label": "Houses damaged in Bandarban and…",
-        "value": "29,741 houses",
+        "label": "Houses damaged (preliminary)",
+        "value": "29,741 houses in Bandarban and Chattogram",
         "sourceName": "nrc.no",
         "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
       }
@@ -5037,59 +5088,21 @@
         "url": "https://go.ifrc.org/emergencies/8013/overview",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC GO event-specific DREF operation page with funding figure and dates.",
+        "note": "IFRC GO page for DREF MDRBD040 covering the Cox's Bazar monsoon emergency, run with BDRCS.",
         "specific": true
       },
       {
         "url": "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/",
         "org": "Bangladesh Red Crescent Society",
         "kind": "society",
-        "note": "Appeal document for the 2026 monsoon emergency; not a payment page.",
+        "note": "National appeal for the 2026 monsoon emergency covering flash floods, inundation and landslides.",
         "specific": true
-      },
-      {
-        "url": "https://donate.bdrcs.org/",
-        "org": "Bangladesh Red Crescent Society",
-        "kind": "society",
-        "note": "General BDRCS donation fund, not specific to this event.",
-        "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/emergencies/8013/overview",
-        "title": "IFRC GO - Emergency - Bangladesh: Monsoon Depression in Cox's Bazar"
-      },
-      {
-        "name": "adrc.asia",
-        "url": "https://www.adrc.asia/view_disaster_en.php?NationCode=50&Lang=en&Key=2834",
-        "title": "Bangladesh: Flood: 2026/07/05"
-      },
-      {
-        "name": "dhakatribune.com",
-        "url": "https://www.dhakatribune.com/bangladesh/nation/415385/floodwater-recedes-in-cox%E2%80%99s-bazar-exposing-trail",
-        "title": "Floodwater recedes in Cox’s Bazar, exposing trail of destruction"
-      },
-      {
-        "name": "wsws.org",
-        "url": "https://www.wsws.org/en/articles/2026/07/17/xtoo-j17.html",
-        "title": "Catastrophic Bangladesh floods kill over 50 people - World Socialist Web Site"
-      },
-      {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/field-reports/18466",
-        "title": "BGD: Flood - 07-2026 - Bangladesh Floods 2026"
-      },
-      {
-        "name": "thedailystar.net",
-        "url": "https://www.thedailystar.net/news/bangladesh/news/torrential-rain-triggers-flash-floods-coxs-bazar-inundating-over-80-villages",
-        "title": "Torrential rain triggers flash floods in Cox’s Bazar, inundating over 80 villages"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-22T01:04:05.836Z",
-    "donationSearched": "2026-10-21T22:09:59.986Z"
+    "donationSearched": "2026-10-22T08:03:09.184Z",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8025": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -5186,14 +5199,14 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-8050": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-22T08:03:09.184Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Heavy monsoon rains caused rivers to overflow and flooding across several regions of Myanmar from early July 2026. Flooding in Ayeyarwady, Kayin and Sagaing regions displaced households and submerged villages. UNICEF's end-August brief reports about 600,000 people affected. No source after 2 September confirms ongoing flood effects.",
+    "summary": "Monsoon floods in Myanmar began on 12 August 2026, affecting Ayeyarwady, Kayin, Sagaing and other regions. Reports cite flooded villages, an embankment breach in Laymyethna, and displaced households. The latest source is dated 2 September 2026, and its figures are provisional. No later update was found as of 22 October 2026.",
     "ongoing": true,
     "places": [
       {
@@ -5201,76 +5214,93 @@
         "admin": "Ayeyarwady Region",
         "country": "MM",
         "kind": "district",
-        "impact": "flooded after Ngawun River embankment breach"
+        "impact": "Embankment breach; wards, roads, 150 villages flooded"
       },
       {
         "name": "Hinthada",
         "admin": "Ayeyarwady Region",
         "country": "MM",
         "kind": "district",
-        "impact": "flooded after Ngawun River embankment breach"
+        "impact": "Affected by flooding"
       },
       {
         "name": "Yekyi",
         "admin": "Ayeyarwady Region",
         "country": "MM",
         "kind": "district",
-        "impact": "flooded after Ngawun River embankment breach"
+        "impact": "Affected by flooding"
       },
       {
         "name": "Kyangin",
         "admin": "Ayeyarwady Region",
         "country": "MM",
         "kind": "district",
-        "impact": "flooded after Ngawun River embankment breach"
+        "impact": "Affected by flooding"
       },
       {
-        "name": "Kayin State",
+        "name": "Thanlwin River",
+        "admin": "Kayin State",
         "country": "MM",
-        "kind": "region",
-        "impact": "displaced households after Thanlwin River overflow"
+        "kind": "site",
+        "impact": "Overflowed; households displaced"
       },
       {
         "name": "Wetlet",
         "admin": "Sagaing Region",
         "country": "MM",
         "kind": "district",
-        "impact": "villages and paddy fields submerged, residents evacuated"
+        "impact": "Villages and paddy fields submerged"
+      },
+      {
+        "name": "Rakhine State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Named by UN as affected"
+      },
+      {
+        "name": "Kachin State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Named by UN as affected"
+      },
+      {
+        "name": "Irrawaddy",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Named by UN as affected"
+      },
+      {
+        "name": "Northern Shan State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Localised flooding; additional deaths"
       }
     ],
     "figures": [
       {
-        "label": "People affected",
-        "value": "about 600,000 people",
-        "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
+        "label": "Deaths",
+        "value": "11",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104011&episodeid=13&eventtype=FL"
       },
       {
-        "label": "Displaced households",
-        "value": "15,000 displaced households",
-        "sourceName": "ahacentre.org",
-        "sourceUrl": "https://ahacentre.org/flash-update/flash-update-no-1-flooding-in-ayeyarwady-and-kayin-myanmar-19-august-2026/"
-      }
-    ],
-    "donation": [
+        "label": "Displaced",
+        "value": "10,233",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104011&episodeid=13&eventtype=FL"
+      },
       {
-        "url": "https://www.redcross.org.mm/en_US/donate/",
-        "org": "Myanmar Red Cross Society",
-        "kind": "society",
-        "note": "Myanmar Red Cross general donation fund, not tied to this flood.",
-        "specific": false
+        "label": "People affected",
+        "value": "about 600,000",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
       }
     ],
-    "sources": [
-      {
-        "name": "ifrc.org",
-        "url": "https://www.ifrc.org/press-release/monsoon-batters-myanmar-causing-mass-flooding-%E2%80%93-ifrc-releases-disaster-funds",
-        "title": "Monsoon batters Myanmar, causing mass flooding"
-      }
-    ],
+    "donation": [],
+    "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-22T01:04:05.836Z",
-    "donationSearched": "2026-10-21T17:37:06.438Z"
+    "donationSearched": "2026-10-22T08:03:09.184Z",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -5359,7 +5389,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8057": {
@@ -5447,8 +5477,85 @@
       }
     ],
     "membersHash": "ifrc|PH#48a7f165",
-    "donationSearched": "2026-10-22T01:04:05.836Z",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z",
+    "donationSearched": "2026-10-22T01:04:05.836Z"
+  },
+  "ifrc-flood-8062": {
+    "at": "2026-10-22T08:03:09.184Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Heavy rains caused damage to homes in Bocas del Toro province, Panama, from 16 August 2026. SINAPROC placed four districts under a yellow alert on 17 August, and a state of emergency was declared on 25 August. As of 28 August 2026, the latest report found, authorities were still prioritising the rain effects. No end to the event has been reported.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Bocas del Toro",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Homes affected; preventive alert from 16 August"
+      },
+      {
+        "name": "Changuinola",
+        "admin": "Bocas del Toro",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Yellow alert from 17 August"
+      },
+      {
+        "name": "Almirante",
+        "admin": "Bocas del Toro",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Yellow alert from 17 August"
+      },
+      {
+        "name": "Chiriquí Grande",
+        "admin": "Bocas del Toro",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Yellow alert from 17 August"
+      },
+      {
+        "name": "Bocas del Toro",
+        "admin": "Bocas del Toro",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Yellow alert from 17 August"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People affected by floods, January to…",
+        "value": "at least 15,643",
+        "sourceName": "newsroompanama.com",
+        "sourceUrl": "https://newsroompanama.com/2026/08/26/panamanian-government-declares-a-national-state-of-emergency-due-to-the-el-nino-phenomenon/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "sinaproc.gob.pa",
+        "url": "https://www.sinaproc.gob.pa/instituciones-presentan-presupuestos-para-atender-estado-de-emergencia-priorizan-afectaciones-en-bocas-del-toro/",
+        "title": "Instituciones presentan presupuestos para atender Estado de Emergencia, priorizan afectaciones en Bocas del Toro - Sinaproc"
+      },
+      {
+        "name": "newsroompanama.com",
+        "url": "https://newsroompanama.com/2026/08/26/panamanian-government-declares-a-national-state-of-emergency-due-to-the-el-nino-phenomenon/",
+        "title": "Panamanian Government Declares a National State of Emergency Due to the El Niño Phenomenon. - Newsroom Panama"
+      },
+      {
+        "name": "retenchiriqui.com",
+        "url": "https://www.retenchiriqui.com/post/fuertes-lluvias-afectan-viviendas-en-bocas-del-toro-r%C3%ADo-sixaola-alcanza-niveles-cr%C3%ADticos",
+        "title": "Fuertes lluvias afectan viviendas en Bocas del Toro; río Sixaola alcanza niveles críticos"
+      },
+      {
+        "name": "telemetro.com",
+        "url": "https://www.telemetro.com/nacionales/sinaproc-declara-alerta-amarilla-bocas-del-toro-y-zonas-comarcales-lluvias-n6088815",
+        "title": "SINAPROC declara Alerta Amarilla en Bocas del Toro y zonas comarcales por lluvias"
+      }
+    ],
+    "membersHash": "ifrc|PA#d5af8b21",
+    "donationSearched": "2026-10-22T08:03:09.184Z",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8068": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -5528,8 +5635,8 @@
       }
     ],
     "membersHash": "ifrc|LR#cbaf7b63",
-    "donationSearched": "2026-10-22T01:04:05.836Z",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z",
+    "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -5628,7 +5735,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-flood-8115": {
@@ -5670,7 +5777,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CG#68e1ca24",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
@@ -5768,7 +5875,7 @@
       }
     ],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-landslide-8111": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -5881,7 +5988,7 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-storm-8108": {
@@ -6024,7 +6131,7 @@
       }
     ],
     "membersHash": "ifrc|ZW#67df89fa",
-    "seen": "2026-10-22T01:04:05.836Z",
+    "seen": "2026-10-22T08:03:09.184Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-wildfire-8027": {
@@ -6057,8 +6164,44 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|DZ#48b93a86",
-    "donationSearched": "2026-10-22T01:04:05.836Z",
-    "seen": "2026-10-22T01:04:05.836Z"
+    "seen": "2026-10-22T08:03:09.184Z",
+    "donationSearched": "2026-10-22T01:04:05.836Z"
+  },
+  "news-cyclone-cyclone-ru-b85a88b1eb": {
+    "at": "2026-10-22T08:03:09.184Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Typhoon Champi, the thirtieth typhoon of the 2026 season, began on 21 October 2026. No direct effects in Russia are reported. Primorye's weather service forecasts temperature swings linked to the storm: warm weather on 24 October, up to 4 degrees above normal, then cooling with possible snow on 28 to 29 October. As of 22 October, the typhoon was near Taiwan.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Primorye",
+        "country": "RU",
+        "kind": "region",
+        "impact": "forecast up to 4 C above normal"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "fedpress.ru",
+        "url": "https://fedpress.ru/news/25/society/3456904",
+        "title": "Аномальная погода идет на Приморье: синоптики предупредили об аномальной жаре и морозе"
+      },
+      {
+        "name": "taipeitimes.com",
+        "url": "https://www.taipeitimes.com/News/front/archives/2026/10/22/2003866405",
+        "title": "CWA warns storm effect at top in next two days - Taipei Times"
+      },
+      {
+        "name": "primamedia.ru",
+        "url": "https://primamedia.ru/news/2658597/",
+        "title": "Температурные качели наберут обороты: Борис Кубай рассказал о влиянии тайфунов на погоду в Приморье - PrimaMedia.ru"
+      }
+    ],
+    "membersHash": "news|RU#a45b8e72",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "news-earthquake-earthquake-pa-32b0fa90e3": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -6172,6 +6315,146 @@
     ],
     "membersHash": "news|PA#887f142d",
     "seen": "2026-10-21T05:12:20.084Z"
+  },
+  "news-earthquake-earthquake-pa-4994c1646f": {
+    "at": "2026-10-22T08:03:09.184Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A magnitude 7.5 to 7.7 earthquake struck Azuero and Veraguas, Panama, on 9 October 2026 at 17:56 UTC, with its epicentre near Pitaloza Arriba in Herrera Province. A national emergency was declared on 10 October. As of 16 October, about 3,696 people remained in 46 makeshift shelters, mostly in Mariato district. Aftershocks continued, and effects were ongoing as of 19 to 20 October.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Pitaloza Arriba",
+        "admin": "Herrera",
+        "country": "PA",
+        "kind": "town",
+        "impact": "epicentre"
+      },
+      {
+        "name": "Tonosí",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "hotel and several homes collapsed"
+      },
+      {
+        "name": "Mariato",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "most of 3,696 sheltered people"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Injured",
+        "value": "27 people",
+        "sourceName": "latintimes.com",
+        "sourceUrl": "https://www.latintimes.com/panama-hit-77-quake-147-aftershocks-27-injured-cathedral-collapsed-600040"
+      },
+      {
+        "label": "Sheltered",
+        "value": "3,696 people",
+        "sourceName": "news.ssbcrack.com",
+        "sourceUrl": "https://news.ssbcrack.com/panama-earthquake-in-azuero-veraguas-situation-report-no-05-as-of-16-october-2026/"
+      },
+      {
+        "label": "People assisted by Red Cross",
+        "value": "4,000 people",
+        "sourceName": "ifrc.org",
+        "sourceUrl": "https://www.ifrc.org/es/press-release/cruz-roja-panamena-intensifica-su-respuesta-para-asistir-cuatro-mil-personas"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "news.ssbcrack.com",
+        "url": "https://news.ssbcrack.com/panama-earthquake-in-azuero-veraguas-situation-report-no-05-as-of-16-october-2026/",
+        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 05 (as of 16 October 2026) - SSBCrack News"
+      },
+      {
+        "name": "jw.org",
+        "url": "https://www.jw.org/en/news/region/panama/Powerful-Earthquake-Shakes-Southern-Panama/",
+        "title": "Powerful Earthquake Shakes Southern Panama"
+      },
+      {
+        "name": "latintimes.com",
+        "url": "https://www.latintimes.com/panama-hit-77-quake-147-aftershocks-27-injured-cathedral-collapsed-600040",
+        "title": "Panama Hit by 7.7 Quake: 147 Aftershocks, 27 Injured, a Cathedral Collapsed"
+      },
+      {
+        "name": "newsroompanama.com",
+        "url": "https://newsroompanama.com/2026/10/17/2351-landslides-at-least-were-caused-by-the-earthquake-in-panama/",
+        "title": "2351+ Landslides at Least were Caused by the Earthquake in Panama. - Newsroom Panama"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Panama_earthquake",
+        "title": "2026 Panama earthquake"
+      }
+    ],
+    "membersHash": "news|PA#147758de",
+    "seen": "2026-10-22T08:03:09.184Z"
+  },
+  "news-flood-flood-hr-878923ace2": {
+    "at": "2026-10-22T08:03:09.184Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "Flash floods hit Dalmatia, Croatia, on 21 October 2026, after a storm brought heavy rain in the Split area. Flooded streets, a flooded garage and displaced manhole covers were reported in Split, and flooded roads in Solin. Croatia Week described the flooding as ongoing on the evening of 21 October. No later update was found, so the status as of 22 October is not reported.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Split",
+        "admin": "Split-Dalmatia County",
+        "country": "HR",
+        "kind": "city",
+        "impact": "garage flooded, streets submerged, manhole covers displaced"
+      },
+      {
+        "name": "Solin",
+        "admin": "Split-Dalmatia County",
+        "country": "HR",
+        "kind": "town",
+        "impact": "flooded road sections, slow traffic"
+      },
+      {
+        "name": "Trogir",
+        "admin": "Split-Dalmatia County",
+        "country": "HR",
+        "kind": "town",
+        "impact": "storm arrived, no damage described"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Rainfall (Kosi, by 6:30 pm)",
+        "value": "95 L/m²",
+        "sourceName": "croatiaweek.com",
+        "sourceUrl": "https://www.croatiaweek.com/split-flash-floods-heavy-rain-dalmatia/"
+      },
+      {
+        "label": "Rainfall (Nisko, by 6:30 pm)",
+        "value": "76 L/m²",
+        "sourceName": "croatiaweek.com",
+        "sourceUrl": "https://www.croatiaweek.com/split-flash-floods-heavy-rain-dalmatia/"
+      },
+      {
+        "label": "Rainfall (Grohote, by 6:30 pm)",
+        "value": "63 L/m²",
+        "sourceName": "croatiaweek.com",
+        "sourceUrl": "https://www.croatiaweek.com/split-flash-floods-heavy-rain-dalmatia/"
+      },
+      {
+        "label": "Rainfall (Staševica, by 6:30 pm)",
+        "value": "62 L/m²",
+        "sourceName": "croatiaweek.com",
+        "sourceUrl": "https://www.croatiaweek.com/split-flash-floods-heavy-rain-dalmatia/"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "news|HR#6698af7a",
+    "seen": "2026-10-22T08:03:09.184Z"
   },
   "news-flood-flood-ie-72491384cd": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -6394,6 +6677,100 @@
     "membersHash": "news|FR#bed61fbe",
     "seen": "2026-10-21T14:45:27.681Z"
   },
+  "news-storm-storm-gb-f77d5e544d": {
+    "at": "2026-10-22T08:03:09.184Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Storm Austen was named by the Met Office on 20 October 2026 and is forecast to reach the UK from the Atlantic late on Thursday 22 October, bringing disruptive wind and rain through Friday 23 October. As of 22 October, no storm damage, injuries or deaths have been reported. Amber and yellow wind warnings and a yellow rain warning are in place for parts of southern England, Wales, Scotland and the Isles of Scilly.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Cornwall",
+        "country": "GB",
+        "kind": "region",
+        "impact": "amber wind warning, gusts 60-70mph forecast"
+      },
+      {
+        "name": "Plymouth",
+        "admin": "Devon",
+        "country": "GB",
+        "kind": "city",
+        "impact": "amber wind warning, gusts 60-70mph forecast"
+      },
+      {
+        "name": "Devon",
+        "country": "GB",
+        "kind": "region",
+        "impact": "amber wind warning, gusts 60-70mph forecast"
+      },
+      {
+        "name": "Isles of Scilly",
+        "country": "GB",
+        "kind": "region",
+        "impact": "amber wind warning, gusts 60-70mph forecast"
+      },
+      {
+        "name": "Herefordshire",
+        "country": "GB",
+        "kind": "region",
+        "impact": "yellow wind warning from Thursday midnight"
+      },
+      {
+        "name": "South Wales",
+        "country": "GB",
+        "kind": "region",
+        "impact": "yellow wind warning from Thursday midnight"
+      },
+      {
+        "name": "Southern Scotland",
+        "country": "GB",
+        "kind": "region",
+        "impact": "yellow rain warning, possible flooding"
+      },
+      {
+        "name": "Eastern Scotland",
+        "country": "GB",
+        "kind": "region",
+        "impact": "yellow rain warning, possible flooding"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "farmersguide.co.uk",
+        "url": "https://www.farmersguide.co.uk/rural/environmental/storm-austen-to-bring-70mph-winds-and-heavy-rain-to-parts-of-uk/",
+        "title": "Storm Austen to bring 70mph winds and heavy rain to parts of UK - Farmers Guide"
+      },
+      {
+        "name": "metoffice.gov.uk",
+        "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/amber-warning-issued-as-storm-austen-approaches",
+        "title": "Amber warning issued as Storm Austen approaches - Met Office"
+      },
+      {
+        "name": "ladbible.com",
+        "url": "https://www.ladbible.com/news/uk-news/storm-austen-hit-uk-within-hours-met-office-issues-amber-warning-014891-20261022",
+        "title": "Storm Austen to hit UK within hours as Met Office issues amber warning over 'danger to life'"
+      },
+      {
+        "name": "aol.co.uk",
+        "url": "https://www.aol.co.uk/articles/met-office-issues-21-hour-091800000.html",
+        "title": "Met Office issues new 21-hour warning as Storm Austen to batter UK - full list of 26 areas - AOL"
+      },
+      {
+        "name": "britbrief.co.uk",
+        "url": "https://britbrief.co.uk/weather/storms/storm-austen-to-hit-london-with-48mph-winds-and-heavy-rain.html",
+        "title": "Storm Austen to hit London with 48mph winds and heavy rain - Brit Brief"
+      },
+      {
+        "name": "metoffice.gov.uk",
+        "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/storm-austen-named",
+        "title": "Storm Austen named - Met Office"
+      }
+    ],
+    "membersHash": "news|GB#5b5a097b",
+    "seen": "2026-10-22T08:03:09.184Z"
+  },
   "news-storm-storm-ie-853815a83a": {
     "at": "2026-10-21T14:45:27.681Z",
     "model": "claude-haiku-5-5",
@@ -6408,53 +6785,41 @@
     "seen": "2026-10-21T14:45:27.681Z"
   },
   "usgs-earthquake-us7000q1": {
-    "at": "2026-10-20T02:25:48.047Z",
+    "at": "2026-10-22T08:03:09.184Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 5.7 to 5.9 earthquake struck near Khuzdar in Balochistan, Pakistan, on 17 October 2026 at 05:06 UTC. Residents left their homes and gathered in open spaces. Authorities reported no casualties or damage. Seismological centres continue tracking possible aftershocks.",
-    "ongoing": true,
+    "summary": "A magnitude 5.7 earthquake struck near Khuzdar, Balochistan, Pakistan, on 17 October 2026 at 05:06 UTC. Magnitude estimates differ across agencies (5.6 to 5.9). The epicentre was about 48 km west-northwest of Khuzdar town, per USGS as cited by Times Now. As of the latest reports, no casualties or property damage had been reported, and no later reports of evacuations or relief operations were found.",
+    "ongoing": false,
     "places": [
       {
         "name": "Khuzdar",
         "admin": "Balochistan",
         "country": "PK",
         "kind": "district",
-        "impact": "Epicentre area; residents left homes, no damage"
-      },
-      {
-        "name": "Kalat",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "district",
-        "impact": "Shaking felt; residents rushed out, no damage"
-      },
-      {
-        "name": "Surab",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "district",
-        "impact": "Shaking felt; residents rushed out, no damage"
+        "impact": "Epicentre area; no damage reported"
       },
       {
         "name": "Kharan",
         "admin": "Balochistan",
         "country": "PK",
         "kind": "district",
-        "impact": "Shaking felt, no damage reported"
+        "impact": "Widespread shaking reported; no damage reported"
+      },
+      {
+        "name": "Kalat",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Widespread shaking reported; no damage reported"
       }
     ],
     "figures": [],
     "donation": [],
     "sources": [
       {
-        "name": "dailytimes.com.pk",
-        "url": "https://dailytimes.com.pk/1568641/moderate-5-9-magnitude-earthquake-jolts-balochistans-khuzdar-district/",
-        "title": "Moderate 5.9-magnitude earthquake jolts balochistan's khuzdar district - Daily Times"
-      },
-      {
-        "name": "pakistan.shafaqna.com",
-        "url": "https://pakistan.shafaqna.com/EN/339248",
-        "title": "5.9-Magnitude Earthquake Shakes Khuzdar, Surrounding Areas in Balochistan"
+        "name": "nextupnews.pk",
+        "url": "https://www.nextupnews.pk/2026/10/58-magnitude-earthquake-hits.html",
+        "title": "5.8-Magnitude Earthquake Hits Balochistan Near Khuzdar; No Casualties Reported - NextUp News"
       },
       {
         "name": "zeenews.india.com",
@@ -6462,18 +6827,16 @@
         "title": "5.7 Magnitude earthquake shakes Khuzdar in Pakistan's Balochistan: Shallow 10 km depth causes severe shaking"
       },
       {
+        "name": "dawn.com",
+        "url": "https://www.dawn.com/news/2037802/59-magnitude-earthquake-jolts-balochistans-khuzdar",
+        "title": "5.9-magnitude earthquake jolts Balochistan's Khuzdar - Pakistan - DAWN.COM"
+      },
+      {
         "name": "minutemirror.com.pk",
         "url": "https://minutemirror.com.pk/5-9-magnitude-earthquake-jolts-balochistans-khuzdar-646218/",
         "title": "5.9-magnitude earthquake jolts Balochistan’s Khuzdar - Minute Mirror"
-      },
-      {
-        "name": "outlookindia.com",
-        "url": "https://www.outlookindia.com/international/pakistan-earthquake-magnitude-5-8-tremor-15-km-depth",
-        "title": "Magnitude 5.8 Earthquake Strikes Pakistan, Tremor Recorded At 15 Km Depth"
       }
     ],
-    "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-22T01:04:05.836Z",
-    "donationSearched": "2026-10-21T14:45:27.681Z"
+    "membersHash": "gdacs,usgs|PK#a6ef69eb"
   }
 }

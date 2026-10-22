@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-22T01:04:05.836Z",
+  "updated": "2026-10-22T08:03:09.184Z",
   "fetched": {
-    "societies": "2026-10-22T01:04:05.836Z",
-    "uncr": "2026-10-22T01:04:05.836Z"
+    "societies": "2026-10-22T08:03:09.184Z",
+    "uncr": "2026-10-22T08:03:09.184Z"
   },
   "societies": {
     "AF": {
@@ -2700,139 +2700,6 @@
         "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU"
       ]
     },
-    "cruzroja.org.pa": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.cruzroja.org.pa/"
-      ],
-      "blocked": true
-    },
-    "donate.unhcr.org/int/en/panama-earthquake": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://donate.unhcr.org/int/en/panama-earthquake"
-      ],
-      "blocked": true
-    },
-    "croixrouge-rdc.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.croixrouge-rdc.org/"
-      ]
-    },
-    "redcross.org.mz": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.redcross.org.mz/"
-      ]
-    },
-    "botswanaredcross.org.bw": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.botswanaredcross.org.bw/"
-      ]
-    },
-    "cruzroja.org.ec": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.cruzroja.org.ec/"
-      ],
-      "blocked": true
-    },
-    "cruzroja.or.cr": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.cruzroja.or.cr/"
-      ]
-    },
-    "redcross.org": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.redcross.org/"
-      ],
-      "blocked": true
-    },
-    "sarc.sy/home": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://sarc.sy/home/"
-      ]
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "redcrosszim.org.zw": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.redcrosszim.org.zw/"
-      ]
-    },
-    "mrcs.org.ma": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://mrcs.org.ma/"
-      ]
-    },
-    "redcross.org.vn": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.redcross.org.vn/"
-      ]
-    },
-    "sierraleoneredcross.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://sierraleoneredcross.org/"
-      ]
-    },
-    "croissant-rouge.tn": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://www.croissant-rouge.tn/"
-      ]
-    },
-    "redcrossghana.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T05:12:20.084Z",
-      "chain": [
-        "https://redcrossghana.org/"
-      ]
-    },
     "cruzrojavenezolana.org": {
       "ok": false,
       "reason": "HTTP 202",
@@ -3066,26 +2933,184 @@
     "go.ifrc.org/emergencies/8057/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-22T01:04:05.836Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8057/overview"
-      ],
-      "checked": "2026-10-22T01:04:05.836Z"
+      ]
     },
     "ifrc.org/appeals?ac=neygffgqbfhzkb": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-22T01:04:05.836Z",
       "chain": [
         "https://www.ifrc.org/appeals?ac=neygffgqbfhzkb"
-      ],
-      "checked": "2026-10-22T01:04:05.836Z"
+      ]
     },
     "go.ifrc.org/countries/41": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-22T01:04:05.836Z",
       "chain": [
         "https://go.ifrc.org/countries/41"
+      ]
+    },
+    "cruzroja.org.pa": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.cruzroja.org.pa/"
       ],
-      "checked": "2026-10-22T01:04:05.836Z"
+      "blocked": true,
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "donate.unhcr.org/int/en/panama-earthquake": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://donate.unhcr.org/int/en/panama-earthquake"
+      ],
+      "blocked": true,
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "cruzroja.org.pa/donar": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://cruzroja.org.pa/donar/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "croixrouge-rdc.org": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.croixrouge-rdc.org/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "go.ifrc.org": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "redcross.org.mz": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.redcross.org.mz/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "botswanaredcross.org.bw": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.botswanaredcross.org.bw/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "redcross.org.uk": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.redcross.org.uk/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "cruzroja.org.ec": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.cruzroja.org.ec/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "cruzroja.or.cr": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.cruzroja.or.cr/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "redcross.org": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.redcross.org/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "sarc.sy/home": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://sarc.sy/home/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "redcrosszim.org.zw": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.redcrosszim.org.zw/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "mrcs.org.ma": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://mrcs.org.ma/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "redcross.org.vn": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.redcross.org.vn/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "sierraleoneredcross.org": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://sierraleoneredcross.org/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "croissant-rouge.tn": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.croissant-rouge.tn/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
+    },
+    "redcrossghana.org": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://redcrossghana.org/"
+      ],
+      "checked": "2026-10-22T08:03:09.184Z"
     }
   }
 }
