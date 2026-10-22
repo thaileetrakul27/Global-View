@@ -2,24 +2,51 @@
   "code": "TL",
   "name": "East Timor",
   "kind": "world",
-  "updated": "2026-10-22T14:17:21.809Z",
+  "updated": "2026-10-22T18:59:49.151Z",
   "source": {
-    "name": "Google News",
+    "name": "Bing News and Google News",
     "edition": "search",
-    "url": "https://news.google.com/rss/search?q=%22Timor-Leste%22+OR+%22East+Timor%22+when%3A3d&hl=en-US&gl=US&ceid=US%3Aen"
+    "url": "https://www.bing.com/news/search?q=Timor-Leste&format=rss&cc=TL&setlang=pt"
   },
   "articles": [
     {
-      "title": "'Solution from the heavens': Indonesians pray for rain as fires burn",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaXl0cWQ2bkxLTzR4bWludlNfa0hZQVZlNWRIdFZWNVgxNkd2UXhVRU5sOFB4WmZrc3hwUVBlcUwxVGNaWlpOZGFCUW9MVE95WTZDMXBDYURRTklaSzVjQUJPZi0wcTZDSUtycVVla2t2UzAtU1h2VlE3cm1LZ2xROWp0SXdnLW03Z3RzeXdidi1ZUWtxbTV1XzZLVFFaYVZzYll3aWVhRHRuSHpxcEh1a2ZR?oc=5",
-      "outlet": "France 24",
-      "outletUrl": "https://www.france24.com",
-      "published": "2026-10-22T10:55:23.000Z",
-      "outlets": 1,
+      "title": "Australia and East Timor sign deal to boost security",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA4TWJ2MTR6NnlDZllQSWZ3VUpNX2ZzS09MWmw5STg4SE9heHR4N0J4Wk1xTFdlUmxOWm1GdmhIUFJBaEFoemV1VnRmQ0ZfNk55MU5iWE8yaTVORmxOTUJ5eHJfcGxIem1GZ0tocHF1WHFCaGNQTEhhNQ?oc=5",
+      "outlet": "Taipei Times",
+      "outletUrl": "https://www.taipeitimes.com",
+      "published": "2026-10-22T16:00:00.000Z",
+      "outlets": 3,
       "trending": false,
-      "en": "'Solution from the heavens': Indonesians pray for rain as fires burn",
+      "en": "Australia and East Timor sign deal to boost security",
+      "about": [
+        "AU",
+        "TL"
+      ]
+    },
+    {
+      "title": "Fires rage, haze spreads as Indonesians pray for rain",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMlpLOGRCcWFKNmJXbzA3Yk9FLURUUmpjRXJNY19XSTRUZ2o2T3laRWlvM0NDa2lGaUh6aXFiVjBVTVcycU1ESF9NVWZLYlB6N01Jd1B2Sk5rcnJTR1BiTEdYbjVNZWRHdVNxWV84a2RFYWNqcmQtdlM1ZV9ZbmpZeDhLelJ1Z3VRU0ZQbXhuamhUTENOSHhjaUhILWNNeGNtZVpz0gGjAUFVX3lxTE8yWks4ZEJxYUo2YldvMDdiT0UtRFRSamNFck1jX1dJNFRnajZPeVpFaW8zQ0NraUZpSHppcWJWMFVNVzJxTURIX01VZktiUHo3TUl3UHZKTmtyclNHUGJMR1huNU1lZEd1U3FZXzhrZEVhY2pyZC12UzVlX1luall4OEt6UnVndVFTRlBteG5qaFRMQ05IeGNpSEgtY014Y21lWnM?oc=5",
+      "outlet": "NST Online",
+      "outletUrl": "https://www.nst.com.my",
+      "published": "2026-10-22T11:38:27.000Z",
+      "outlets": 2,
+      "trending": false,
+      "en": "Fires rage, haze spreads as Indonesians pray for rain",
       "about": [
         "ID"
+      ]
+    },
+    {
+      "title": "Philippines ASEAN",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMi01MWRoeEVNX1VfLWZsT0gxNU9aOVFmNzRtYUJLMmtYM2ZFcXR6S29tTi00OTlfRDVkUFZVVGdkT0Zacy1qMGVCM3dzT3dYclVMN1JOaWdXOVVKZVR2MTVpSTIwX1RrR2xYaE5sY25hS2taTmtKemRZNXJIcFo4clM0Ym1kODF0U0p3Nm9vZkppbk5GUjJXcUdmQ0hYSk5XZ0dNdGw2Z0szajNVS2psMA?oc=5",
+      "outlet": "Goshen News",
+      "outletUrl": "https://www.goshennews.com",
+      "published": "2026-10-21T09:13:40.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Philippines ASEAN",
+      "about": [
+        "PH"
       ]
     },
     {
@@ -37,21 +64,6 @@
       ]
     },
     {
-      "title": "Australia Signs East Timor Defense Deal to Counter China’s Influence",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVjQwRFo1TFNEQnVzeWtKZGE5TWNKbmE5aU0yd3lNaGVma0JYTEJVdmZXWWxqcGI1NmUzRnJyMFVmWWdOQlBqV0tjWHkyTUhaVzBJVm5kQkNKZTdadVBBMVpUMGM2ZHRhdnBjQ3VkbDZuckY2V1RhUmM5RWtRM2VtSnF1d2lOU1E?oc=5",
-      "outlet": "The China-Global South Project",
-      "outletUrl": "https://chinaglobalsouth.com",
-      "published": "2026-10-22T08:31:54.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Australia Signs East Timor Defense Deal to Counter China's Influence",
-      "about": [
-        "AU",
-        "TL",
-        "CN"
-      ]
-    },
-    {
       "title": "Dili Presidente Nicolau Lobato International (DIL) (WPDL) arrivals, departures, routes and reviews",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9QdkQ1ZFlET1dTX3JZemhQMFdTQTB4dzZDWlNEYXd4TFY1cmlBT1JFc2UzUEJXeGpiMlFULTFMNms1NC1GNGdLc1BnZy1zblNEd1dqeFlrYmpkYUU?oc=5",
       "outlet": "Flightradar24",
@@ -62,33 +74,6 @@
       "en": "Dili Presidente Nicolau Lobato International (DIL) (WPDL) arrivals, departures, routes and reviews",
       "about": [
         "TL"
-      ]
-    },
-    {
-      "title": "Australia commits US$44 million to boost East Timor’s cyber, maritime security",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMzRoR1Z2U0JkTjVOQ3VDUG5ub3dKU1QzZWRuUGNkNktWMHZTTi16Yy01blFPMHVsdi1WREd3WHFSc2syN29seEtiSDVWREptdnBBUGdzY3RIMzlmYzNNcTFLYWlRNS14MGpsZHAzZnJKWUFjS1Y1bk5JeXZEaUhoN3dreFNNektjSEs5RDZSeHF3cV9iR25vX1VBR285eDBycThqejJycDhCUGUzOTNJejFYVXNkMnJQSFBEWGUzaUE1X2RacXBtS1pxTdIBywFBVV95cUxQM3NKcWZ2QklXeUc5SndiMU11N0tycFU2MzNRWDlTX256NERCSjRSVTJTbG1qQlM4dVZBQ1JBajhQd25Fc1loZVBMUnl6SlN3N3VxOGdsdlZkZUZCcmwwUnFDMDRxS3d6amNwZ0JDdlFLeC01cjJ6LTNrcjlVZ0hnS0o4WUJsM0ZkOWc5dFA2WGJDRlFXdDY3YXA4VE8walVOQmQ2UlNKbnhUWmo2dkF5OS1wZHBaMzJuTTB6ekN3MURtTFdYQXpUYmM2SQ?oc=5",
-      "outlet": "South China Morning Post",
-      "outletUrl": "https://www.scmp.com",
-      "published": "2026-10-22T06:16:08.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Australia commits US$44 million to boost East Timor's cyber, maritime security",
-      "about": [
-        "AU",
-        "TL"
-      ]
-    },
-    {
-      "title": "Philippines ASEAN",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMi01MWRoeEVNX1VfLWZsT0gxNU9aOVFmNzRtYUJLMmtYM2ZFcXR6S29tTi00OTlfRDVkUFZVVGdkT0Zacy1qMGVCM3dzT3dYclVMN1JOaWdXOVVKZVR2MTVpSTIwX1RrR2xYaE5sY25hS2taTmtKemRZNXJIcFo4clM0Ym1kODF0U0p3Nm9vZkppbk5GUjJXcUdmQ0hYSk5XZ0dNdGw2Z0szajNVS2psMA?oc=5",
-      "outlet": "Goshen News",
-      "outletUrl": "https://www.goshennews.com",
-      "published": "2026-10-21T09:13:40.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Philippines ASEAN",
-      "about": [
-        "PH"
       ]
     },
     {
@@ -134,6 +119,19 @@
       ]
     },
     {
+      "title": "Polícia timorense inaugura Centro Operacional Nacional para gestão de crises",
+      "url": "https://www.msn.com/pt-pt/noticias/other/pol%C3%ADcia-timorense-inaugura-centro-operacional-nacional-para-gest%C3%A3o-de-crises/ar-AA2fNpEW",
+      "outlet": "Lusa on MSN",
+      "outletUrl": null,
+      "published": "2026-10-22T02:59:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "East Timorese police inaugurate National Operations Centre for crisis management",
+      "about": [
+        "TL"
+      ]
+    },
+    {
       "title": "Australia to provide maritime patrol vessels, strengthen cyber security under new Timor-Leste agreement",
       "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdzM1WWluOFNJMTV2WmN4TVhJc0dQOXFkaGNpYk9hVEtMUTdQRUNuaU9DZU9Ed0xQcUVwQXk2WldMemxYWjh4clh0STJTZDZpYmVSbE10ZUxxdEpPUy05eFdwSjVyTU05ZU9HQjJlMnNwR3VlbHJTdWNnNy1uQzN5Mk8yUktqN1BnczQ4UWJiMmkzV2FuUjhFbVNlWjdWYWhjb3F0Q3ZmcDVPOElyS1Fzbi1GQkZlc1VwRDZYeHpCVVhpTUFwb24zZ05wMjQ5UnFFMVBpelQ2VW0zN3NQYktyeDU5ZUlEWFF6SGJkNlczVUhLci1BQ1E?oc=5",
       "outlet": "www.defenceconnect.com.au",
@@ -175,7 +173,7 @@
       ]
     },
     {
-      "title": "Full List: Australia Slashes Visa Cost for Citizens Of 23 Countries",
+      "title": "Full List: Australia Slashes Visa Cost for Citizens of 23 Countries",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcFZiSVM1bjRKNlhYSHFDYkotT2VsNlF5UnJZTmRFZk9WQXk0RXNrMFdzdU1tUjhyRUZTN2plN1IxdFpDaDlfb3hWVDNidjRocVRuQW96US1xaUNEYU92UU41aVVJZV93M0xrcWtOdHJ1cHFxUFBiZW5TMDVxZkhqTno5U3FSUVZVYWMxZDBLN3ZVa2FZOGtsdVQxbEE?oc=5",
       "outlet": "Legit News",
       "outletUrl": "https://www.legit.ng",
@@ -185,6 +183,19 @@
       "en": "Full List: Australia Slashes Visa Cost for Citizens Of 23 Countries",
       "about": [
         "AU"
+      ]
+    },
+    {
+      "title": "Prabowo hits back at countries 'insulting' Indonesia over wildfire haze",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPa1hrQm1HcmR5Zkg3WF9hdXpfUDJkSllrUjZhWHlXZHNRU0JPN1JZU3FJZEZqNnJOWlBWU0xOZ2RFQnJnb00yRzQ4ZW9FZk1QcW9oa1pQdFU3LTdXaFhfY2FqX2cwbGRrbENkMXRjcjA0dTVWNEpWUlVqNmtJbXlRSVNNcldTT1Z1V2dHYjJuU3I2NnNDeWhYUUZCdWRqNDVwaTJCei1RcEdKeFhEZThYTkhBcV8zQmxpcjhSSUl4b9IBvwFBVV95cUxPa1hrQm1HcmR5Zkg3WF9hdXpfUDJkSllrUjZhWHlXZHNRU0JPN1JZU3FJZEZqNnJOWlBWU0xOZ2RFQnJnb00yRzQ4ZW9FZk1QcW9oa1pQdFU3LTdXaFhfY2FqX2cwbGRrbENkMXRjcjA0dTVWNEpWUlVqNmtJbXlRSVNNcldTT1Z1V2dHYjJuU3I2NnNDeWhYUUZCdWRqNDVwaTJCei1RcEdKeFhEZThYTkhBcV8zQmxpcjhSSUl4bw?oc=5",
+      "outlet": "NST Online",
+      "outletUrl": "https://www.nst.com.my",
+      "published": "2026-10-21T13:52:08.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Prabowo hits back at countries 'insulting' Indonesia over wildfire haze",
+      "about": [
+        "ID"
       ]
     },
     {
@@ -228,53 +239,41 @@
       ]
     },
     {
-      "title": "Certified, confident, ready: Timor-Leste’s TVET trainers step forward",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaFozenNwUDB2YXJRcnlkUENEaFU5bTVBYTVGM0NOdnNBMzY0b0tDekZLS2tjdzkwcVB1c29TYnFuMGx0T3dzX0EydlBiSEFfYWk1cGk2enBXcHNzZE9QUzF3U293dmJKcV9EcW13ZHVUVmJERGRsN214QmZ1Y1FNZDJvSVlTWUlTM0VmNE9NS1B0M2g5bGRNXzRqejVFWF82VWFETEhDQ0lMYUFfN1RRcA?oc=5",
-      "outlet": "International Labour Organization",
-      "outletUrl": "https://www.ilo.org",
-      "published": "2026-10-21T06:15:05.000Z",
-      "outlets": 1,
+      "title": "Pobreza diminuiu em Timor-Leste, mas desigualdade aumentou",
+      "url": "https://www.noticiasaominuto.com/mundo/3070272/pobreza-diminuiu-em-timor-leste-mas-desigualdade-aumentou",
+      "outlet": "Notícias ao Minuto",
+      "outletUrl": null,
+      "published": "2026-10-21T01:16:00.000Z",
+      "outlets": 2,
       "trending": false,
-      "en": "Certified, confident, ready: Timor-Leste's TVET trainers step forward",
+      "en": "Poverty decreased in Timor-Leste, but inequality increased",
       "about": [
         "TL"
       ]
     },
     {
-      "title": "Generation Trust comes to Dili: a story of young climate leaders, and a call to act",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU3E0VmxZNXV5WGlJTHFCdXE0N1dyZG5FU0t1NWJzWlpWcjY4bzU4d1lid2psZ3ZwZlFQVHRjZkNJcEpRaG9IVTNlcjBkaEFIeW1uSVVoZVJxTnV0NXMzSjdzblZVR1lZNk5pREdSQUlVSWxuaHNLbVV6Wk9ERmlVdUJ5X1FvVHNiWXctSllIR295N1JBWnVhdmRvS2pqUDVQSTJtVU9NeTlzZmx1VDZrc0lPMEkwNWs?oc=5",
-      "outlet": "United Nations Development Programme",
-      "outletUrl": "https://www.undp.org",
-      "published": "2026-10-21T05:42:34.000Z",
-      "outlets": 1,
+      "title": "Concretização do Greater Sunrise é um imperativo económico",
+      "url": "https://www.msn.com/pt-pt/noticias/ultimas/concretiza%C3%A7%C3%A3o-do-greater-sunrise-%C3%A9-um-imperativo-econ%C3%B3mico/ar-AA2fHLZ3",
+      "outlet": "RTP on MSN",
+      "outletUrl": null,
+      "published": "2026-10-20T23:29:12.000Z",
+      "outlets": 2,
       "trending": false,
-      "en": "Generation Trust comes to Dili: a story of young climate leaders, and a call to act",
+      "en": "Realising Greater Sunrise is an economic imperative",
       "about": [
-        "TL"
+        "TL",
+        "AU"
       ]
     },
     {
-      "title": "What Does Finder Energy’s (ASX:FDR) Hakuryu-5 Rig Contract Mean for the KTJ Development in Timor-Leste?",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQXU5T3ZlbzYzRkhITUF5Q3VnTnFkdGh2ZE15c1VQVTRuZURhMXk3Q2R0dFN0Q05xUWhISWI1eEV5Zlp6Ulh0Zk8zVS13RXFKNVE5UEhKZC1yVnhrQy1qUU1Wa0l2VThYc203Y3FRUm1OZjkxUUczLUYwNXY1d1VWemMyNVE0SldBdVlSWmpFSktKSHBZQzJyd1U2OW9nV1IzQUp5VU9RNjBSdF9tYi1RZWFwWER2TUQzUEhoOGRZTTFZVF8yU0VkMUpMeTRpWGxDbW5kRmdBSHVQY1k?oc=5",
-      "outlet": "Kalkine",
-      "outletUrl": "https://kalkine.com.au",
-      "published": "2026-10-21T04:52:00.000Z",
-      "outlets": 1,
+      "title": "Timor-Leste pede aceleração de obras no aeroporto de Díli",
+      "url": "https://www.noticiasaominuto.com/mundo/3068938/timor-leste-pede-aceleracao-de-obras-no-aeroporto-de-dili",
+      "outlet": "Notícias ao Minuto",
+      "outletUrl": null,
+      "published": "2026-10-18T21:23:00.000Z",
+      "outlets": 2,
       "trending": false,
-      "en": "What Does Finder Energy's (ASX:FDR) Hakuryu-5 Rig Contract Mean for the KTJ Development in Timor-Leste?",
-      "about": [
-        "TL"
-      ]
-    },
-    {
-      "title": "Singapore Embassy Presents Short Films at Dili International Film Festival 2026",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQd3h2RTJhVHBadHU1NUhaMy15LW8wa2RHV0tmR1NLeHRtU2E2U0czZTNpZVBfSkVmT3RoREpLOEpZRkFReDU0TVFFaEt4Z19fYU0tOW43UDM1Z3JDUWZXcHM2a0xGTmhJQXU2T0dMQ0FyZmdhbmhCbjlubEdvNEI4UDZvMk5hNVpuYTh4NHRPRnB0TWlpLVVpNzJxS0xJdE1TRnYtWnFQM1V3V0tXNERROTNWY1BxTzZmRDNUZS1Pa1JESkhHRjNCVGlTRk5OVVV6cEZudUFTcDNmbzQ?oc=5",
-      "outlet": "INDiplomacy",
-      "outletUrl": "https://indiplomacy.com",
-      "published": "2026-10-21T03:05:13.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Singapore Embassy Presents Short Films at Dili International Film Festival 2026",
+      "en": "Timor-Leste calls for speeding up works at Dili airport",
       "about": [
         "TL"
       ]

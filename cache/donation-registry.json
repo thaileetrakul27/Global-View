@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-22T14:17:21.809Z",
+  "updated": "2026-10-22T18:59:49.151Z",
   "fetched": {
-    "societies": "2026-10-22T14:17:21.809Z",
-    "uncr": "2026-10-22T14:17:21.809Z"
+    "societies": "2026-10-22T18:59:49.151Z",
+    "uncr": "2026-10-22T18:59:49.151Z"
   },
   "societies": {
     "AF": {
@@ -2700,39 +2700,6 @@
         "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU"
       ]
     },
-    "cruzrojavenezolana.org": {
-      "ok": false,
-      "reason": "HTTP 202",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://www.cruzrojavenezolana.org/"
-      ]
-    },
-    "ifrc.org/emergency/venezuela-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/venezuela-earthquake-2026"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
-    "honduras.un.org/es": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://honduras.un.org/es"
-      ]
-    },
     "ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text=": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2749,23 +2716,6 @@
       "chain": [
         "https://www.ifrc.org/appeals?ac=MDRSY003"
       ]
-    },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
-    "redcross.ie": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://www.redcross.ie/"
-      ],
-      "blocked": true
     },
     "cruzroja.gt": {
       "ok": true,
@@ -2825,15 +2775,6 @@
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
       ]
-    },
-    "ifrc.org/national-societies-directory/zimbabwe-red-cross-society": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T17:37:06.438Z",
-      "chain": [
-        "https://www.ifrc.org/national-societies-directory/zimbabwe-red-cross-society"
-      ],
-      "blocked": true
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
@@ -3115,27 +3056,76 @@
     "ifrc.org/donate": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-22T14:17:21.809Z",
       "chain": [
         "https://www.ifrc.org/donate"
       ],
-      "blocked": true,
-      "checked": "2026-10-22T14:17:21.809Z"
+      "blocked": true
     },
     "donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/~my-donation": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-22T14:17:21.809Z",
       "chain": [
         "https://donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/~my-donation?_cv=1"
-      ],
-      "checked": "2026-10-22T14:17:21.809Z"
+      ]
     },
     "crisisrelief.un.org/donate-colombia-crisis": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-22T14:17:21.809Z",
       "chain": [
         "https://crisisrelief.un.org/en/donate-colombia-crisis"
+      ]
+    },
+    "honduras.un.org/es": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://honduras.un.org/es"
       ],
-      "checked": "2026-10-22T14:17:21.809Z"
+      "checked": "2026-10-22T18:59:49.151Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-10-22T18:59:49.151Z"
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
+      ],
+      "checked": "2026-10-22T18:59:49.151Z"
+    },
+    "ifrc.org/national-societies-directory/zimbabwe-red-cross-society": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/national-societies-directory/zimbabwe-red-cross-society"
+      ],
+      "blocked": true,
+      "checked": "2026-10-22T18:59:49.151Z"
+    },
+    "go.ifrc.org/emergencies/8038/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8038/overview"
+      ],
+      "checked": "2026-10-22T18:59:49.151Z"
+    },
+    "unicef.org/india/assam-floods": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.unicef.org/india/assam-floods"
+      ],
+      "checked": "2026-10-22T18:59:49.151Z"
     }
   }
 }
