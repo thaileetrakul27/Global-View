@@ -105,7 +105,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-cyclone-tc-1001335": {
@@ -304,7 +304,7 @@
       }
     ],
     "membersHash": "eonet,gdacs,news|JP,PH,TW#3901514e",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-cyclone-tc-1001341": {
@@ -349,7 +349,7 @@
       }
     ],
     "membersHash": "gdacs|MX#461b991b",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-cyclone-tc-1001342": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -362,7 +362,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CA,US#471b9aae",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-22T08:03:09.184Z",
@@ -451,7 +451,7 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-drought-dr-1027449": {
@@ -536,7 +536,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-drought-dr-1027450": {
@@ -599,29 +599,117 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-drought-dr-1027465": {
-    "at": "2026-10-20T19:35:05.530Z",
+    "at": "2026-10-23T05:22:44.752Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A drought affecting Uganda, Kenya, Tanzania, Rwanda, Burundi and parts of DR Congo began on 2026-05-21. The GDACS-derived alert feed, last updated 2026-10-20, rates it significant, covering about 172,173 km². No specific affected places or casualty figures were confirmed by the notes, and no official donation page was found.",
+    "summary": "A drought that began in late May 2026 has damaged crops and dried up water sources in Uganda and Kenya. In Uganda, Karamoja sub-region is the worst-hit area, and Kotido District reports at least 19 starvation deaths. In Kenya, Baringo County reports maize losses. The notes found no 2026 drought reports for Tanzania, Rwanda, Burundi or DR Congo. As of 21 October 2026 the drought was ongoing.",
     "ongoing": true,
-    "places": [],
-    "figures": [
+    "places": [
       {
-        "label": "Area affected",
-        "value": "172,173 km²",
-        "sourceName": "gdacs.org",
-        "sourceUrl": "https://gdacs.org/"
+        "name": "Karamoja sub-region",
+        "country": "UG",
+        "kind": "region",
+        "impact": "About 98% of crops reportedly destroyed"
+      },
+      {
+        "name": "Kotido",
+        "country": "UG",
+        "kind": "district",
+        "impact": "At least 19 starvation deaths"
+      },
+      {
+        "name": "Moroto",
+        "country": "UG",
+        "kind": "district",
+        "impact": "Kobebe Dam dried up"
+      },
+      {
+        "name": "Napak",
+        "country": "UG",
+        "kind": "district",
+        "impact": "No rain June to 12 October"
+      },
+      {
+        "name": "Rubanda",
+        "country": "UG",
+        "kind": "district",
+        "impact": "Farmers face dry conditions since May"
+      },
+      {
+        "name": "Baringo",
+        "country": "KE",
+        "kind": "region",
+        "impact": "Est. 75% of expected maize harvest destroyed"
       }
     ],
-    "donation": [],
-    "sources": [],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "at least 19 starvation deaths in Kotido District",
+        "sourceName": "monitor.co.ug",
+        "sourceUrl": "https://www.monitor.co.ug/uganda/news/national/karamoja-crisis-deepens-failed-rains-leave-thousands-starving-force-mass-migration-5639724"
+      },
+      {
+        "label": "Crop damage in Kotido District",
+        "value": "Shs56 billion",
+        "sourceName": "monitor.co.ug",
+        "sourceUrl": "https://www.monitor.co.ug/uganda/news/national/karamoja-crisis-deepens-failed-rains-leave-thousands-starving-force-mass-migration-5639724"
+      },
+      {
+        "label": "Coffee exports (Uganda, August, year…",
+        "value": "13.7% fall",
+        "sourceName": "cnbcafrica.com",
+        "sourceUrl": "https://www.cnbcafrica.com/2026/uganda-august-coffee-shipments-down-14-on-drought"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://redcross.or.ke/drought-emergency-2026/",
+        "org": "Kenya Red Cross Society",
+        "kind": "society",
+        "note": "2026 drought appeal for Kenya's arid and semi-arid counties, covering food, water and nutrition.",
+        "specific": false
+      }
+    ],
+    "sources": [
+      {
+        "name": "monitor.co.ug",
+        "url": "https://www.monitor.co.ug/uganda/news/national/karamoja-crisis-deepens-failed-rains-leave-thousands-starving-force-mass-migration-5639724",
+        "title": "Karamoja crisis deepens: Failed rains leave thousands starving, force mass migration"
+      },
+      {
+        "name": "allafrica.com",
+        "url": "https://allafrica.com/stories/202610190219.html",
+        "title": "Uganda: Resilience Starts At Home - Preparing Communities for El Niño Before Disaster Strikes - allAfrica.com"
+      },
+      {
+        "name": "monitor.co.ug",
+        "url": "https://www.monitor.co.ug/uganda/news/national/drought-pushes-karamoja-farmers-towards-agricultural-insurance-5637634",
+        "title": "Drought pushes Karamoja farmers towards agricultural insurance"
+      },
+      {
+        "name": "allafrica.com",
+        "url": "https://allafrica.com/stories/202610210366.html",
+        "title": "Uganda: Rubanda Farmers Receive Solar-Powered Pumps to Combat Drought, Food Shortages - allAfrica.com"
+      },
+      {
+        "name": "theeastafrican.co.ke",
+        "url": "https://www.theeastafrican.co.ke/tea/sustainability/climate/east-africa-braces-for-prolonged-food-crisis-5558506",
+        "title": "East Africa braces for prolonged food crisis as another El Niño season looms - The EastAfrican"
+      },
+      {
+        "name": "cropmonitor.org",
+        "url": "https://www.cropmonitor.org/crop-monitor-for-early-warning-202610",
+        "title": "Crop Monitor for Early Warning (202610) — GEOGLAM Crop Monitor"
+      }
+    ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-22T23:48:02.104Z",
-    "donationSearched": "2026-10-21T14:45:27.681Z"
+    "donationSearched": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -746,7 +834,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#24cf2828",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-earthquake-eq-1571367": {
@@ -771,7 +859,7 @@
       }
     ],
     "membersHash": "gdacs|PG#20427fcc",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-earthquake-eq-1571524": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -857,7 +945,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|US#dc9009ba",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-earthquake-eq-1571917": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1045,7 +1133,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -1073,7 +1161,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,news,usgs|CN#09fb162e",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "gdacs-flood-fl-1103888": {
@@ -1134,7 +1222,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|US#2b36b9e5",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1202,7 +1290,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1231,131 +1319,138 @@
     "seen": "2026-10-22T23:48:02.104Z"
   },
   "gdacs-flood-fl-1104167": {
-    "at": "2026-10-21T00:11:24.613Z",
+    "at": "2026-10-23T05:22:44.752Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Floods and river overflows have affected several provinces of Ecuador, most heavily Esmeraldas, Guayas and Los Ríos. The national risk agency SNGR reported seven overflowing rivers in its 20 October 2026 report. Three deaths and 23,167 people affected have been reported. Inamhi expects rain until 22 October, with very high river levels forecast for Guayaquil, Los Ríos and Bolívar.",
+    "searches": 3,
+    "summary": "Heavy rain and hail struck Quito, Ecuador, on 22 October 2026, flooding central-northern streets and avenues. Water entered homes and businesses in several districts, and part of the Metro service was partially suspended. Flooding was also reported on 21 October. Rain-related emergencies were still being handled on 22 October, and response teams remained deployed across the city.",
     "ongoing": true,
     "places": [
       {
-        "name": "Quinindé",
-        "admin": "Esmeraldas",
+        "name": "Quito",
+        "admin": "Pichincha",
         "country": "EC",
-        "kind": "district",
-        "impact": "Rivers El Calvario, Viche, Cube and Herrera overflowed"
+        "kind": "city",
+        "impact": "Flooding and hail; emergencies handled across the city"
       },
       {
-        "name": "Muisne",
-        "admin": "Esmeraldas",
+        "name": "La Comuna",
+        "admin": "Pichincha",
         "country": "EC",
         "kind": "district",
-        "impact": "Canuto and Sucio rivers overflowed"
+        "impact": "Water entered homes and businesses"
       },
       {
-        "name": "Isla Luis Vargas Torres",
-        "admin": "Esmeraldas",
+        "name": "La Gasca",
+        "admin": "Pichincha",
         "country": "EC",
         "kind": "district",
-        "impact": "Esmeraldas river flooded island district"
+        "impact": "Water entered homes and businesses"
       },
       {
-        "name": "Tenguel",
-        "admin": "Guayas",
+        "name": "La Mariscal",
+        "admin": "Pichincha",
         "country": "EC",
         "kind": "district",
-        "impact": "Homes, streets and banana plantations flooded"
+        "impact": "Water entered homes and businesses"
       },
       {
-        "name": "Salitre",
-        "admin": "Guayas",
+        "name": "Metro",
+        "admin": "Pichincha",
         "country": "EC",
-        "kind": "district",
-        "impact": "Vinces river affected several sectors"
+        "kind": "site",
+        "impact": "Service partially suspended"
       },
       {
-        "name": "Urdesa",
-        "admin": "Guayas",
+        "name": "Carapungo",
+        "admin": "Pichincha",
         "country": "EC",
         "kind": "district",
-        "impact": "Urban flooding in Guayaquil sector"
+        "impact": "Six houses flooded"
       },
       {
-        "name": "Babahoyo",
-        "admin": "Los Ríos",
+        "name": "Carcelén",
+        "admin": "Pichincha",
         "country": "EC",
         "kind": "district",
-        "impact": "Catarama river overflow caused serious damage"
+        "impact": "Wall collapsed"
       },
       {
-        "name": "Caracol",
-        "admin": "Los Ríos",
+        "name": "Calderón",
+        "admin": "Pichincha",
         "country": "EC",
         "kind": "district",
-        "impact": "Catarama river overflow caused serious damage"
+        "impact": "Flooding reported"
       },
       {
-        "name": "El Guabo",
-        "admin": "El Oro",
+        "name": "Llano Grande",
+        "admin": "Pichincha",
         "country": "EC",
         "kind": "district",
-        "impact": "Pagua river overflowed"
+        "impact": "Flooding reported"
+      },
+      {
+        "name": "Quitumbe",
+        "admin": "Pichincha",
+        "country": "EC",
+        "kind": "district",
+        "impact": "Flooding reported"
       }
     ],
     "figures": [
       {
-        "label": "Deaths",
-        "value": "three",
-        "sourceName": "laprensademonagas.com",
-        "sourceUrl": "https://laprensademonagas.com/ecuador-enfrenta-graves-inundaciones-tres-fallecidos-y-mas-de-23-mil-afectados/"
+        "label": "Emergencies",
+        "value": "at least 12 emergencies",
+        "sourceName": "eldiario.ec",
+        "sourceUrl": "https://www.eldiario.ec/quito/no-es-un-rio-es-una-calle-de-quito-lo-ultimo-sobre-la-granizada-que-provoca-inundaciones-y-arrastra-vehiculos-22102026/"
       },
       {
-        "label": "People affected",
-        "value": "23,167 people",
-        "sourceName": "elcomercio.com",
-        "sourceUrl": "https://www.elcomercio.com/actualidad/ecuador/lluvias-ecuador-afectan-personas-provincias/"
+        "label": "Emergencies on 21 Oct",
+        "value": "20 emergencies",
+        "sourceName": "extra.ec",
+        "sourceUrl": "https://www.extra.ec/noticia/quito/lluvias-quito-dejan-20-emergencias-inundaciones-arboles-caidos-deslizamientos-165498.html"
       },
       {
-        "label": "Homes damaged",
-        "value": "more than 5,500",
-        "sourceName": "expreso.ec",
-        "sourceUrl": "https://www.expreso.ec/ecuador/lluvias-ecuador-tres-fallecidos-21-500-afectados-alerta-roja-299872.html"
+        "label": "Homes flooded in Carapungo",
+        "value": "6 homes",
+        "sourceName": "primicias.ec",
+        "sourceUrl": "https://www.primicias.ec/quito/lluvia-tormenta-electrica-bomberos-21octubre-fenomeno-elnino-135445/"
       }
     ],
     "donation": [],
     "sources": [
       {
+        "name": "prensa-latina.cu",
+        "url": "https://www.prensa-latina.cu/2026/10/22/lluvias-con-granizo-inundan-calles-y-afectan-al-metro-de-quito/",
+        "title": "Lluvias con granizo inundan calles y afectan al Metro de Quito - Noticias Prensa Latina"
+      },
+      {
+        "name": "extra.ec",
+        "url": "https://www.extra.ec/noticia/quito/lluvias-quito-dejan-20-emergencias-inundaciones-arboles-caidos-deslizamientos-165498.html",
+        "title": "Lluvias en Quito dejan 20 emergencias: inundaciones, árboles caídos y deslizamientos"
+      },
+      {
         "name": "elcomercio.com",
-        "url": "https://www.elcomercio.com/actualidad/ecuador/lluvias-ecuador-afectan-personas-provincias/",
-        "title": "Lluvias en Ecuador dejan 23 167 afectados en 22 provincias - El Comercio"
+        "url": "https://www.elcomercio.com/actualidad/quito/colon-colapsa-intensa-lluvia-quito-octubre-2026/",
+        "title": "La Colón colapsa tras intensa lluvia en Quito este 22 de octubre de 2026 - El Comercio"
       },
       {
-        "name": "riotimesonline.com",
-        "url": "https://www.riotimesonline.com/ecuador-floods-landslide-23000-2026/",
-        "title": "Ecuador Floods Hit 23,000 and a Landslide Kills 2 in Azuay"
+        "name": "semana.com",
+        "url": "https://www.semana.com/mundo/articulo/inundaciones-en-ecuador-por-fuertes-lluvias-y-granizo-imagenes-evidencian-como-quedo-quito/202616/",
+        "title": "Inundaciones en Ecuador por fuertes lluvias y granizo: imágenes evidencian cómo quedó Quito - Semana"
       },
       {
-        "name": "elcomercio.com",
-        "url": "https://www.elcomercio.com/actualidad/ecuador/cifra-afectados-lluvias-ecuador-finales-agosto/",
-        "title": "Esta es la cifra de afectados por las lluvias en Ecuador desde finales de agosto - El Comercio"
+        "name": "eldiario.ec",
+        "url": "https://www.eldiario.ec/quito/no-es-un-rio-es-una-calle-de-quito-lo-ultimo-sobre-la-granizada-que-provoca-inundaciones-y-arrastra-vehiculos-22102026/",
+        "title": "¡No es un río, es una calle de Quito! Lo último sobre la granizada que provoca inundaciones y arrastra vehículos"
       },
       {
-        "name": "riotimesonline.com",
-        "url": "https://www.riotimesonline.com/ecuador-el-nino-floods-esmeraldas-2026/",
-        "title": "Ecuador El Niño Floods: Seven Rivers Burst Their Banks in Esmeraldas Province"
-      },
-      {
-        "name": "riotimesonline.com",
-        "url": "https://www.riotimesonline.com/ecuador-rains-17056-affected-red-alert-2026/",
-        "title": "Ecuador Rains Hit 17,056 People, Red Alert"
-      },
-      {
-        "name": "laprensademonagas.com",
-        "url": "https://laprensademonagas.com/ecuador-enfrenta-graves-inundaciones-tres-fallecidos-y-mas-de-23-mil-afectados/",
-        "title": "Ecuador enfrenta graves inundaciones: tres fallecidos y más de 23 mil afectados"
+        "name": "vistazo.com",
+        "url": "https://www.vistazo.com/servicios/clima/2026-10-22-fuerte-lluvia-granizo-quito-provoca-inundaciones-afectaciones-avenidas-MK11287092",
+        "title": "Fuerte lluvia con granizo en Quito provoca inundaciones y afectaciones en varias avenidas"
       }
     ],
-    "membersHash": "gdacs|EC#73720892",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "membersHash": "gdacs,news|EC#5dc7dd96",
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1629,7 +1724,7 @@
       }
     ],
     "membersHash": "gdacs|HN#37b0b7ff",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104216": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1668,7 +1763,7 @@
       }
     ],
     "membersHash": "gdacs|BR#3eb3019b",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104217": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1801,7 +1896,7 @@
       }
     ],
     "membersHash": "gdacs,news|CL#74420222",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1890,7 +1985,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104219": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2073,7 +2168,7 @@
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104221": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2145,7 +2240,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SI#abb5ebc9",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104222": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2275,7 +2370,7 @@
       }
     ],
     "membersHash": "gdacs|PY#a8b5e710",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104223": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2288,7 +2383,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CN#a9b5e8a3",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104224": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2348,7 +2443,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104225": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2543,7 +2638,7 @@
       }
     ],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104228": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2622,7 +2717,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PA#b2b5f6ce",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104230": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2724,7 +2819,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|TR#b0b8323f",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104231": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -2751,7 +2846,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|LY#afb830ac",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104232": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2778,7 +2873,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|JO#b2b83565",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104233": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2791,7 +2886,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SY#b1b833d2",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104235": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2804,7 +2899,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104236": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2853,7 +2948,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SV#aeb82f19",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104237": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2886,7 +2981,7 @@
       }
     ],
     "membersHash": "gdacs|NI#adb82d86",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104238": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2899,7 +2994,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3024,7 +3119,7 @@
       }
     ],
     "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3273,7 +3368,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104242": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3325,7 +3420,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UA#a8a6dc86",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104243": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3434,7 +3529,7 @@
       }
     ],
     "membersHash": "gdacs|FR#a9a6de19",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-flood-fl-1104244": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3529,7 +3624,7 @@
       }
     ],
     "membersHash": "gdacs|GT#aaa6dfac",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -3573,7 +3668,7 @@
       }
     ],
     "membersHash": "gdacs|IT#fedc6d48",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -3678,7 +3773,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-volcano-vo-1000152": {
@@ -3747,7 +3842,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-wildfire-wf-1032497": {
@@ -3772,7 +3867,7 @@
       }
     ],
     "membersHash": "gdacs|AU#16f99bef",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032498": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3785,7 +3880,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#1bf9a3ce",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032507": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3824,7 +3919,7 @@
       }
     ],
     "membersHash": "gdacs|BR#a93ae3e9",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032508": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3855,7 +3950,7 @@
       }
     ],
     "membersHash": "gdacs|AU#b23af214",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032518": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3893,7 +3988,7 @@
       }
     ],
     "membersHash": "gdacs|AU#383137aa",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032556": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3929,7 +4024,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3942,7 +4037,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032657": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4066,7 +4161,7 @@
       }
     ],
     "membersHash": "gdacs|BR#efe30b15",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4123,7 +4218,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#fbe9d9be",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4147,7 +4242,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4178,7 +4273,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4300,7 +4395,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4324,7 +4419,7 @@
       }
     ],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032726": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -4520,7 +4615,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#83527d05",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4549,7 +4644,7 @@
       }
     ],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4562,7 +4657,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4575,7 +4670,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4594,7 +4689,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4618,7 +4713,7 @@
       }
     ],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4631,7 +4726,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032857": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4644,7 +4739,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032874": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4663,7 +4758,7 @@
       }
     ],
     "membersHash": "gdacs|AU#c75dd910",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4682,7 +4777,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032920": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4695,7 +4790,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032930": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4708,7 +4803,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#58cb0943",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032939": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -4721,7 +4816,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5fcb1448",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032940": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4740,7 +4835,20 @@
       }
     ],
     "membersHash": "gdacs|AU#5ecd514c",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
+  },
+  "gdacs-wildfire-wf-1032947": {
+    "at": "2026-10-23T05:22:44.752Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|SD,SS#5dcd4fb9",
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032962": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -4759,7 +4867,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e8d2a7b8",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1032994": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -4772,7 +4880,111 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#e0b24775",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
+  },
+  "gdacs-wildfire-wf-1033003": {
+    "at": "2026-10-23T05:22:44.752Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "No news, government, Red Cross, IFRC, UN or ReliefWeb report of this wildfire was found in the research notes. The GDACS alert gives coordinates in the Western Australia interior and reports 20,792 ha burned, but no source confirms this figure or the current status.",
+    "ongoing": false,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#f6a62a57"
+  },
+  "gdacs-wildfire-wf-1033007": {
+    "at": "2026-10-23T05:22:44.752Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Veld fires have burned across Namibia since the start of the fire season, according to an environment ministry statement carried by The Namibian on 20 October 2026. The ministry gave a total burned area of 920,944 ha across nine regions and reported one death. A fire outside the south-western boundary of Etosha National Park was being fought, with back burning used to keep it out of the park. Sources do not clearly confirm whether all fires are still burning.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Kavango East",
+        "country": "NA",
+        "kind": "region",
+        "impact": "475,000+ ha burned"
+      },
+      {
+        "name": "Otjozondjupa",
+        "country": "NA",
+        "kind": "region",
+        "impact": "228,000+ ha burned"
+      },
+      {
+        "name": "Zambezi",
+        "country": "NA",
+        "kind": "region",
+        "impact": "148,892 ha burned"
+      },
+      {
+        "name": "Hardap",
+        "country": "NA",
+        "kind": "region",
+        "impact": "19,937 ha burned"
+      },
+      {
+        "name": "Kavango West",
+        "country": "NA",
+        "kind": "region",
+        "impact": "10,968 ha burned"
+      },
+      {
+        "name": "Kunene",
+        "country": "NA",
+        "kind": "region",
+        "impact": "7,756 ha burned"
+      },
+      {
+        "name": "Khomas",
+        "country": "NA",
+        "kind": "region",
+        "impact": "7,106 ha burned"
+      },
+      {
+        "name": "Oshikoto",
+        "country": "NA",
+        "kind": "region",
+        "impact": "6,581 ha burned"
+      },
+      {
+        "name": "Etosha National Park",
+        "country": "NA",
+        "kind": "site",
+        "impact": "fire outside boundary being fought"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Burned area",
+        "value": "920,944 ha",
+        "sourceName": "namibian.com.na",
+        "sourceUrl": "https://www.namibian.com.na/920-944-hectares-destroyed-by-veld-fires/"
+      },
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "namibian.com.na",
+        "sourceUrl": "https://www.namibian.com.na/920-944-hectares-destroyed-by-veld-fires/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "namibian.com.na",
+        "url": "https://www.namibian.com.na/920-944-hectares-destroyed-by-veld-fires/",
+        "title": "920 944 hectares destroyed by veld fires - The Namibian"
+      },
+      {
+        "name": "nampa.org",
+        "url": "https://www.nampa.org/index.php?function=display&id=112369&model=feature",
+        "title": "Oukwanyama authority lash out at Namibia Traditional ..."
+      }
+    ],
+    "membersHash": "gdacs|NA#f2a6240b",
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-wildfire-wf-1033018": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4791,7 +5003,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e5a84e2b",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-cyclone-8034": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4822,7 +5034,7 @@
       }
     ],
     "membersHash": "ifrc|DJ#49b6fd82",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-drought-7977": {
@@ -4836,7 +5048,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#49b906fb",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-earthquake-7990": {
@@ -5069,7 +5281,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
@@ -5156,8 +5368,109 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
+  },
+  "ifrc-flood-7993": {
+    "at": "2026-10-23T05:22:44.752Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Heavy rain and floods hit Senaki municipality in the Samegrelo-Zemo Svaneti region of Georgia on 27 June 2026. Several streets, residential houses, yards and farmland were flooded, and parts of bridges and internal dirt roads were damaged. Local authorities were responding in emergency mode as of 27 June. No later reports were found.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Senaki",
+        "admin": "Samegrelo-Zemo Svaneti",
+        "country": "GE",
+        "kind": "district",
+        "impact": "Streets, houses, yards and farmland flooded"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "dfwatch.net",
+        "url": "https://dfwatch.net/heavy-rain-floods-homes-and-streets-in-senaki-66919/",
+        "title": "Heavy rain floods homes and streets in Senaki - DFWatch"
+      },
+      {
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/national-societies-directory/red-cross-society-georgia",
+        "title": "Red Cross Society of Georgia"
+      }
+    ],
+    "membersHash": "ifrc|GE#4daa02bd",
+    "donationSearched": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T05:22:44.752Z"
+  },
+  "ifrc-flood-7996": {
+    "at": "2026-10-23T05:22:44.752Z",
+    "model": "claude-haiku-5-5",
+    "searches": 1,
+    "summary": "Heavy rain on 29 June 2026 caused floods and landslides in Abidjan, Ivory Coast, affecting several municipalities. IFRC GO reports about 608 households affected, with its operation running to 31 October 2026. Latest source found is dated 1 July 2026; no status reports cover later dates.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Attécoubé",
+        "admin": "Abidjan Autonomous District",
+        "country": "CI",
+        "kind": "district",
+        "impact": "Landslide hit informal settlement, houses damaged"
+      },
+      {
+        "name": "Cocody",
+        "admin": "Abidjan Autonomous District",
+        "country": "CI",
+        "kind": "district",
+        "impact": "Loss of life and damage to homes"
+      },
+      {
+        "name": "Yopougon",
+        "admin": "Abidjan Autonomous District",
+        "country": "CI",
+        "kind": "district",
+        "impact": "Loss of life and damage to homes"
+      },
+      {
+        "name": "Songon",
+        "admin": "Abidjan Autonomous District",
+        "country": "CI",
+        "kind": "district",
+        "impact": "Loss of life and damage to homes"
+      },
+      {
+        "name": "Abidjan",
+        "country": "CI",
+        "kind": "region",
+        "impact": "Floods and landslides, road access disrupted"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Households affected",
+        "value": "about 608 households",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/emergencies/7996/overview"
+      },
+      {
+        "label": "People affected",
+        "value": "3,648 people",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/emergencies/7996/overview"
+      },
+      {
+        "label": "Deaths",
+        "value": "at least 59",
+        "sourceName": "washingtontimes.com",
+        "sourceUrl": "https://www.washingtontimes.com/news/2026/jul/1/floods-killed-least-59-people-far-year-ivory-coast-ivory/"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "ifrc|CI#48a9fade",
+    "donationSearched": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7998": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -5262,8 +5575,45 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|LA#42a9f16c",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
+  },
+  "ifrc-flood-8011": {
+    "at": "2026-10-23T05:22:44.752Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A flash flood and mudflow struck Darg village in Ayni District, Sughd Province, Tajikistan, on 11 July 2026. Mud and debris from the mountains damaged roads, bridges and other infrastructure, according to a 14 July 2026 report. Casualties and damage extent were not reported by authorities as of 13 July 2026. No later status was found.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Darg",
+        "admin": "Sughd",
+        "country": "TJ",
+        "kind": "town",
+        "impact": "Flash flood; mud and debris damaged roads and bridges"
+      }
+    ],
+    "figures": [],
+    "donation": [
+      {
+        "url": "https://go.ifrc.org/countries/167",
+        "org": "IFRC GO",
+        "kind": "society",
+        "note": "IFRC status listing for DREF MDRTJ038 flood operation; not a donation page.",
+        "specific": false
+      },
+      {
+        "url": "https://redcrescent.tj/",
+        "org": "Red Crescent Society of Tajikistan",
+        "kind": "society",
+        "note": "National society homepage with general donate link; not specific to this flood.",
+        "specific": false
+      }
+    ],
+    "sources": [],
+    "membersHash": "ifrc|TJ#dab1d197",
+    "donationSearched": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-10-22T08:03:09.184Z",
@@ -5348,7 +5698,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8014": {
@@ -5412,7 +5762,7 @@
       }
     ],
     "membersHash": "ifrc|KG#d5b1c9b8",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
@@ -5479,7 +5829,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-flood-8037": {
@@ -5508,7 +5858,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|IN#48b6fbef",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8045": {
@@ -5602,7 +5952,7 @@
       }
     ],
     "membersHash": "ifrc|SL#4aaa3322",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
@@ -5702,7 +6052,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8052": {
@@ -5792,7 +6142,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8057": {
@@ -5880,7 +6230,7 @@
       }
     ],
     "membersHash": "ifrc|PH#48a7f165",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8062": {
@@ -5957,7 +6307,7 @@
       }
     ],
     "membersHash": "ifrc|PA#d5af8b21",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8068": {
@@ -6038,7 +6388,7 @@
       }
     ],
     "membersHash": "ifrc|LR#cbaf7b63",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8073": {
@@ -6096,7 +6446,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-flood-8115": {
@@ -6138,7 +6488,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CG#68e1ca24",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
@@ -6236,7 +6586,8 @@
       }
     ],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-22T23:48:02.104Z"
+    "seen": "2026-10-23T05:22:44.752Z",
+    "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-landslide-8111": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -6349,7 +6700,7 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-storm-8101": {
@@ -6378,7 +6729,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|GW#60df7ef5",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-storm-8108": {
@@ -6521,7 +6872,7 @@
       }
     ],
     "membersHash": "ifrc|ZW#67df89fa",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-wildfire-8027": {
@@ -6554,7 +6905,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|DZ#48b93a86",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-wildfire-8038": {
@@ -6737,7 +7088,7 @@
       }
     ],
     "membersHash": "ifrc|TN#4db703ce",
-    "seen": "2026-10-22T23:48:02.104Z",
+    "seen": "2026-10-23T05:22:44.752Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "news-cyclone-cyclone-ru-b85a88b1eb": {
@@ -6881,6 +7232,73 @@
     ],
     "membersHash": "news|TW#3872c8a7",
     "seen": "2026-10-22T14:17:21.809Z"
+  },
+  "news-cyclone-cyclone-tw-c5a0658070": {
+    "at": "2026-10-23T05:22:44.752Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A typhoon called Sarika in the alert feed is expected to be closest to Taiwan from Friday to Saturday morning, 23 to 24 October 2026. Every 2026 report found calls it Champi, the CWA name, and the link between the two names is unverified. Taitung County suspended work and classes on 23 October. Over 150 flights were canceled for Thursday. Warnings could be lifted as early as Saturday afternoon.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Taitung County",
+        "country": "TW",
+        "kind": "district",
+        "impact": "Work and classes suspended 23 October"
+      },
+      {
+        "name": "Lanyu",
+        "country": "TW",
+        "kind": "town",
+        "impact": "Work and classes suspended before 23 October"
+      },
+      {
+        "name": "Green Island",
+        "country": "TW",
+        "kind": "town",
+        "impact": "Work and classes suspended before 23 October"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Flights canceled",
+        "value": "over 150 domestic and international flights",
+        "sourceName": "manilatimes.net",
+        "sourceUrl": "https://www.manilatimes.net/2026/10/23/world/asia-oceania/typhoon-spurs-warnings-cancels-flights-in-taiwan/2451831"
+      },
+      {
+        "label": "Forecast rainfall",
+        "value": "up to 900 millimeters (35 inches)",
+        "sourceName": "manilatimes.net",
+        "sourceUrl": "https://www.manilatimes.net/2026/10/23/world/asia-oceania/typhoon-spurs-warnings-cancels-flights-in-taiwan/2451831"
+      },
+      {
+        "label": "Military personnel on standby",
+        "value": "more than 23,000",
+        "sourceName": "manilatimes.net",
+        "sourceUrl": "https://www.manilatimes.net/2026/10/23/world/asia-oceania/typhoon-spurs-warnings-cancels-flights-in-taiwan/2451831"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "taipeitimes.com",
+        "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/21/2003866354",
+        "title": "Sea warning expected for typhoon - Taipei Times"
+      },
+      {
+        "name": "taipeitimes.com",
+        "url": "https://www.taipeitimes.com/News/front/archives/2026/10/22/2003866405",
+        "title": "CWA warns storm effect at top in next two days - Taipei Times"
+      },
+      {
+        "name": "manilatimes.net",
+        "url": "https://www.manilatimes.net/2026/10/23/world/asia-oceania/typhoon-spurs-warnings-cancels-flights-in-taiwan/2451831",
+        "title": "Typhoon spurs warnings, cancels flights in Taiwan"
+      }
+    ],
+    "membersHash": "news|TW#b225f1ab",
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "news-earthquake-earthquake-pa-32b0fa90e3": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -7206,6 +7624,138 @@
     ],
     "membersHash": "news|IE#c44f0721",
     "seen": "2026-10-21T17:37:06.438Z"
+  },
+  "news-flood-flood-th-3e351c39ff": {
+    "at": "2026-10-23T05:22:44.752Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Flooding has affected Bangkok and central and eastern Thailand since mid-September 2026, according to NASA citing the IFRC. The Thai Disaster Prevention and Mitigation Department (DDPM) reported 1,367,191 people still affected in 19 provinces and Bangkok on 20 October. Water levels are stabilising or receding in many places. Heavy rain is forecast through 25 October, and high tides are expected 27 to 31 October. DDPM reports 82 deaths since 16 September.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Bangkok",
+        "country": "TH",
+        "kind": "city",
+        "impact": "flooded; 210,648 households affected"
+      },
+      {
+        "name": "Lat Krabang",
+        "admin": "Bangkok",
+        "country": "TH",
+        "kind": "district",
+        "impact": "flooded"
+      },
+      {
+        "name": "Nong Chok",
+        "admin": "Bangkok",
+        "country": "TH",
+        "kind": "district",
+        "impact": "flooded"
+      },
+      {
+        "name": "Min Buri",
+        "admin": "Bangkok",
+        "country": "TH",
+        "kind": "district",
+        "impact": "flooded"
+      },
+      {
+        "name": "Pathum Thani",
+        "country": "TH",
+        "kind": "region",
+        "impact": "216,276 households affected"
+      },
+      {
+        "name": "Prachin Buri",
+        "country": "TH",
+        "kind": "region",
+        "impact": "26 deaths"
+      },
+      {
+        "name": "Chachoengsao",
+        "country": "TH",
+        "kind": "region",
+        "impact": "flooded; deaths reported"
+      },
+      {
+        "name": "Nakhon Nayok",
+        "country": "TH",
+        "kind": "region",
+        "impact": "flooded; deaths reported"
+      },
+      {
+        "name": "Samut Prakan",
+        "country": "TH",
+        "kind": "region",
+        "impact": "flooded; deaths reported"
+      },
+      {
+        "name": "Sa Kaeo",
+        "country": "TH",
+        "kind": "region",
+        "impact": "flooded; deaths reported"
+      },
+      {
+        "name": "Chon Buri",
+        "country": "TH",
+        "kind": "region",
+        "impact": "flooded; deaths reported"
+      },
+      {
+        "name": "Ayutthaya",
+        "country": "TH",
+        "kind": "region",
+        "impact": "flooding reported"
+      },
+      {
+        "name": "Suphan Buri",
+        "country": "TH",
+        "kind": "region",
+        "impact": "flooding reported"
+      },
+      {
+        "name": "Nakhon Pathom",
+        "country": "TH",
+        "kind": "region",
+        "impact": "flooding reported"
+      },
+      {
+        "name": "Kanchanaburi",
+        "country": "TH",
+        "kind": "region",
+        "impact": "flooding reported"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People affected",
+        "value": "1,367,191 people",
+        "sourceName": "nationthailand.com",
+        "sourceUrl": "https://www.nationthailand.com/news/general/40072531"
+      },
+      {
+        "label": "Households affected",
+        "value": "450,944 households",
+        "sourceName": "nationthailand.com",
+        "sourceUrl": "https://www.nationthailand.com/news/general/40072531"
+      },
+      {
+        "label": "Bangkok households affected",
+        "value": "210,648 households",
+        "sourceName": "nationthailand.com",
+        "sourceUrl": "https://www.nationthailand.com/news/general/40072531"
+      },
+      {
+        "label": "Deaths",
+        "value": "82",
+        "sourceName": "ua.news",
+        "sourceUrl": "https://ua.news/en/dovkolo-svitu/poveni-v-tayilandi-trivaiut-u-bangkoku-ta-19-provintsiiakh-zaginuli-82-liudini-bangkok-post"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "news|TH#5776bb7e",
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "news-flood-flood-us-bcd41524ce": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -7591,6 +8141,75 @@
     "sources": [],
     "membersHash": "news|IE#30454b26",
     "seen": "2026-10-21T14:45:27.681Z"
+  },
+  "news-wildfire-wildfire-pg-ba2f042e78": {
+    "at": "2026-10-23T05:22:44.752Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Wildfires on Lou Island, Manus Province, Papua New Guinea, have burned about one-third of the island, according to reports up to 22 October 2026. The fire reportedly started at Baon village about two weeks earlier and spread to Lako and Rei villages. Residents say the spread is out of their control. The fire is ongoing.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Lako",
+        "admin": "Manus Province",
+        "country": "PG",
+        "kind": "town",
+        "impact": "fire reportedly close to village and health centre"
+      },
+      {
+        "name": "Rei",
+        "admin": "Manus Province",
+        "country": "PG",
+        "kind": "town",
+        "impact": "fire broke through ridgelines towards village"
+      },
+      {
+        "name": "Baon",
+        "admin": "Manus Province",
+        "country": "PG",
+        "kind": "town",
+        "impact": "where the fire started"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Area burned",
+        "value": "about one-third of the island",
+        "sourceName": "islandsbusiness.com",
+        "sourceUrl": "https://islandsbusiness.com/news-break/wildfires-devastate-png-island/"
+      },
+      {
+        "label": "People at risk",
+        "value": "about 700 people",
+        "sourceName": "abc.net.au",
+        "sourceUrl": "https://www.abc.net.au/pacific/programs/pacificbeat/manus-fire/107286512"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "islandsbusiness.com",
+        "url": "https://islandsbusiness.com/news-break/wildfires-devastate-png-island/",
+        "title": "Wildfires devastate PNG island"
+      },
+      {
+        "name": "thenational.com.pg",
+        "url": "https://www.thenational.com.pg/wild-fire-hits-island-in-manus/",
+        "title": "Wild fire hits island in Manus"
+      },
+      {
+        "name": "nbc.com.pg",
+        "url": "https://www.nbc.com.pg/post/41376/bush-fire-threatens-lou-island-villages-in-manus",
+        "title": "Bush fire threatens Lou Island villages in Manus - NBC PNG"
+      },
+      {
+        "name": "rnz.co.nz",
+        "url": "https://www.rnz.co.nz/news/pacific/2038624/i-don-t-know-what-we-can-do-anymore-lou-island-pleads-for-help-to-fight-wildfires",
+        "title": "'I don't know what we can do anymore': Lou Island pleads for help to fight wildfires"
+      }
+    ],
+    "membersHash": "news|PG#3d7e2b86",
+    "seen": "2026-10-23T05:22:44.752Z"
   },
   "usgs-earthquake-us7000q1": {
     "at": "2026-10-22T08:03:09.184Z",

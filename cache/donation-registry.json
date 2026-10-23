@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-22T23:48:02.104Z",
+  "updated": "2026-10-23T05:22:44.752Z",
   "fetched": {
-    "societies": "2026-10-22T23:48:02.104Z",
-    "uncr": "2026-10-22T23:48:02.104Z"
+    "societies": "2026-10-23T05:22:44.752Z",
+    "uncr": "2026-10-23T05:22:44.752Z"
   },
   "societies": {
     "AF": {
@@ -2809,28 +2809,12 @@
         "https://www.redcross.org.mm/news-and-multimedia/myanmar-red-cross-society-supports-flood-affected-communities-in-tanintharyi/"
       ]
     },
-    "go.ifrc.org/emergencies/8057/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-22T01:04:05.836Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8057/overview"
-      ]
-    },
     "ifrc.org/appeals?ac=neygffgqbfhzkb": {
       "ok": true,
       "reason": "donation word \"donat*\"",
       "checked": "2026-10-22T01:04:05.836Z",
       "chain": [
         "https://www.ifrc.org/appeals?ac=neygffgqbfhzkb"
-      ]
-    },
-    "go.ifrc.org/countries/41": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-22T01:04:05.836Z",
-      "chain": [
-        "https://go.ifrc.org/countries/41"
       ]
     },
     "cruzroja.org.pa": {
@@ -3064,6 +3048,99 @@
       "chain": [
         "https://www.unicef.org/india/assam-floods"
       ]
+    },
+    "redcross.or.ke/drought-emergency-2026": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://redcross.or.ke/drought-emergency-2026/"
+      ],
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "go.ifrc.org/emergencies/8013/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8013/overview"
+      ],
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "ssdredcross.org": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.ssdredcross.org/"
+      ],
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "redcross.ca": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.redcross.ca/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "go.ifrc.org/emergencies/8057/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8057/overview"
+      ],
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "ayodonor.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "donasi.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://donasi.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "go.ifrc.org/countries/41": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/41"
+      ],
+      "checked": "2026-10-23T05:22:44.752Z"
+    },
+    "go.ifrc.org/countries/167": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/167"
+      ],
+      "checked": "2026-10-23T05:22:44.752Z"
     }
   }
 }
