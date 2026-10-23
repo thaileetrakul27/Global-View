@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-22T18:59:49.151Z",
+  "updated": "2026-10-22T23:48:02.104Z",
   "fetched": {
-    "societies": "2026-10-22T18:59:49.151Z",
-    "uncr": "2026-10-22T18:59:49.151Z"
+    "societies": "2026-10-22T23:48:02.104Z",
+    "uncr": "2026-10-22T23:48:02.104Z"
   },
   "societies": {
     "AF": {
@@ -2776,15 +2776,6 @@
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
       ]
     },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
-    },
     "ayuda.cruzrojacolombiana.org": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2802,41 +2793,6 @@
         "https://www.unicef.org/appeals/afghanistan"
       ]
     },
-    "go.ifrc.org/emergencies/8013/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8013/overview"
-      ]
-    },
-    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
-      ],
-      "blocked": true
-    },
-    "donate.bdrcs.org": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://donate.bdrcs.org/"
-      ],
-      "blocked": true
-    },
-    "redcross.ca": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://www.redcross.ca/"
-      ],
-      "blocked": true
-    },
     "hck.hr": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2852,24 +2808,6 @@
       "chain": [
         "https://www.redcross.org.mm/news-and-multimedia/myanmar-red-cross-society-supports-flood-affected-communities-in-tanintharyi/"
       ]
-    },
-    "ayodonor.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "donasi.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://donasi.pmi.or.id/"
-      ],
-      "blocked": true
     },
     "go.ifrc.org/emergencies/8057/overview": {
       "ok": false,
@@ -3081,51 +3019,51 @@
     "honduras.un.org/es": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-22T18:59:49.151Z",
       "chain": [
         "https://honduras.un.org/es"
-      ],
-      "checked": "2026-10-22T18:59:49.151Z"
+      ]
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-22T18:59:49.151Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
-      ],
-      "checked": "2026-10-22T18:59:49.151Z"
+      ]
     },
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-22T18:59:49.151Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-10-22T18:59:49.151Z"
+      ]
     },
     "ifrc.org/national-societies-directory/zimbabwe-red-cross-society": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-22T18:59:49.151Z",
       "chain": [
         "https://www.ifrc.org/national-societies-directory/zimbabwe-red-cross-society"
       ],
-      "blocked": true,
-      "checked": "2026-10-22T18:59:49.151Z"
+      "blocked": true
     },
     "go.ifrc.org/emergencies/8038/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-22T18:59:49.151Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8038/overview"
-      ],
-      "checked": "2026-10-22T18:59:49.151Z"
+      ]
     },
     "unicef.org/india/assam-floods": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-22T18:59:49.151Z",
       "chain": [
         "https://www.unicef.org/india/assam-floods"
-      ],
-      "checked": "2026-10-22T18:59:49.151Z"
+      ]
     }
   }
 }
