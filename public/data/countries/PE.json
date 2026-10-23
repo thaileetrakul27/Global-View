@@ -2,22 +2,74 @@
   "code": "PE",
   "name": "Peru",
   "kind": "local",
-  "updated": "2026-10-23T05:22:44.752Z",
+  "updated": "2026-10-23T12:11:09.903Z",
   "source": {
-    "name": "Google News and Bing News",
+    "name": "Google News",
     "edition": "PE:es-419",
     "url": "https://news.google.com/rss?hl=es-419&gl=PE&ceid=PE%3Aes-419"
   },
   "articles": [
     {
-      "title": "Grupo El Comercio: compra del mayor holding de medios de comunicación de Perú se concretó",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMklZd18tRTNyQ2tmX3JGVDFNYWFReXFpMnNFaGFJdTVfUlZvejkyU0ZQTFdpVGZyTml0eGg4WDAyMk9FNjlNN0V2S3lDU1Z5bEVRY3BsV0luM2NuUHFRT2dMVjMtalNBSWlMSTZtalMxRkppV2tQRUdPZnVUZnFGU0NJc2l0Y2ZfSXpjNnluMFNMMWoyQjJiRTBvT2poMHhRR1lsWjVtQ242M28?oc=5",
-      "outlet": "Gestión",
-      "outletUrl": "https://gestion.pe",
-      "published": "2026-10-22T23:10:46.000Z",
+      "title": "SENAMHI advierte lluvias de mayor intensidad en la costa norte entre el 24 y el 26 de octubre",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNmZxWF8xTWhIOWQxS3NGV2VZR3l3TjZsV3ZJQkxLV2ZYUFltRlhsWHQwZVYyWWY4TVVjSk95cnNXd2dRak1LNkloYXhmdm13bktrRDZXR3NEcmduankzZm9vcUtLVEdDbXlvZ0h5dzl4ekp6a1I4ZE5NMi00LWdfckdVTi1fdWR6QmdSVXdTWk1ndjBONFk2clAzMi1kbGVDdXh6aWFfTG9KVWUtVlJqaFdHSlR4ZjFGNERwMkdjNFpDMnVnWVZYMDk5aU0tS085eTFza3VNaw?oc=5",
+      "outlet": "RPP Noticias",
+      "outletUrl": "https://rpp.pe",
+      "published": "2026-10-23T01:33:59.000Z",
       "outlets": 5,
-      "trending": true,
-      "en": "El Comercio Group: purchase of Peru's largest media holding company is completed",
+      "trending": false,
+      "en": "SENAMHI warns of more intense rains on the north coast between October 24 and 26",
+      "about": [
+        "PE"
+      ]
+    },
+    {
+      "title": "Gobierno declaró días no laborables compensables por visita del papa León XIV al Perú",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPXzdrWlYxcy0tdkdXVWN6LTE2amNsWG1TdGMtdHFURWNRbksyRkhoNUxvdnhvdFpVNG9OdDVRN2tCdEtNOVQwOTYtU01waEc0MWdVd2Z5blB6ZWFjMFV4MWxZTnRwUV9maVh0cWlSLXpmbVFkSFh2NVZ6eldyUnRJSy0wSDg0RVVYQUZoY0xFU2pRdHJiNUlraVBPZUdkTlZOb2ZtYXdWWjVSNEVHRWpFOWkxY1RTZnBZVV83cXprUzNWNURFZzBieFpZQXN5M3M?oc=5",
+      "outlet": "RPP Noticias",
+      "outletUrl": "https://rpp.pe",
+      "published": "2026-10-23T10:15:47.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Government declared non-working days compensable for the visit of Pope Leo XIV to Peru",
+      "about": [
+        "PE"
+      ]
+    },
+    {
+      "title": "Viajeros y transportistas serán orientados para frenar contagios de sarampión",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTXQ4M3c2YnR6YWctMTZXQmZiU3hIWDhvZGc5bXJsUy02ZFQyQ3c5Y1VxQzltUUM1Y2tmYXJKeFpDQTlhVnJjSVBsQXN4X3VhaF9pS0NXUlNkb1hFeDVHS3Q0eFBfRUdFTGdLR2hpaGhTRHV0N2NNOEk1X0lBM0NNQTNKYWFmRHdoVTBfTlJzN3c5MVBvcnZ2cFM2NDRSRGtKWWxhRnRYMkhpYjNkREJZTA?oc=5",
+      "outlet": "Revelación.pe",
+      "outletUrl": "https://revelacion.pe",
+      "published": "2026-10-23T07:47:15.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Travelers and transport workers will be advised to curb measles infections",
+      "about": [
+        "PE"
+      ]
+    },
+    {
+      "title": "Vuelven los bonos: Gobierno entregará pago mensual a familias vulnerables y a jubilados ONP por el Fenómeno El Niño en Perú",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSFdibGQwQUhGMjBfVXl4eG16VHlpMDA5MnVOWkxhV0U5bmk3VkxvVGh4cFhUMHh1N2xKYl84eWh4RGdVbFFET0V6SlVFRGdKdHJDd1ZxLXlkbk93Qk1ZQWxxbk5QWlRsM1BlN0tOYk02aE5FVnY4WHVsMmtLSHVQQUlmbjlkRmZ5U00yNDdKY0Njel9rS1l4NDlHWk91U3gyVnBVQlVCVjZ6Y256Z3R0R05xMkJSenB6dG1aUl9EVlFKX2E2OHfSAeABQVVfeXFMT3VGX1JaTFh0VFY5NnpnOVF2d2Zid19sTkN5aTBPeVBYeHY1Q2p4aUJDWmViTXBBcUFla1FlZnQ1eXQwdGUwWERuUFF1aENQYS1hMElqaFVMYk5tUERUSUVXT2UwN2UwV0M3ZGp3eExNcTVJNUtVZzBvRTQzSW5tMjh6UUFwZ3BVS2FPd3ppMGNybHFKaDZxZVJuLUJCVW4wMk9WTkdXdDhkV1Rjcnc5X0dteFJnMW51X3Q4amlRWDVjZW5NYkd1VDdXY3libGtWSXNJVTRPZVRnQUxZaWtuelU?oc=5",
+      "outlet": "Infobae",
+      "outletUrl": "https://www.infobae.com",
+      "published": "2026-10-22T17:09:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Bonuses return: Government will pay monthly benefit to vulnerable families and ONP pensioners due to the El Niño phenomenon in Peru",
+      "about": [
+        "PE"
+      ]
+    },
+    {
+      "title": "Sueldo mínimo: Gobierno pone en duda segundo tramo del aumento en 2027 por El Niño, “se podría revisar”, dice ministro Sheput",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRXJRRUwteXVfRUh6RVA4MlBTNzhwYWluc0hiSEotRnFncjZyMjhVSjhsbHB4RW1WTm5HSy1UeDZzQXBPV1QwMURjTVByMnltUGQwMjdtN0N4R3ZsMjlmeEFTdEJKNXROVGt2a1FVMGZNX095VmFaVTJPSDN4T1FwRGZCVGhycHFCVEhwMHVOSWFmd2FrM3lRNjBLV2dVUHFIQlhxRjg4QTI5cHl0MnZndGNaZmZwLUw4cHZnUkMtdWlfSGU2NWhRcndXVGl4cEtGWE5mRnlhLV9kVzM1UGNXbkhxVzdNdjVzelFvTW9mNkVkTkNCcXUtbWZHTGdLQQ?oc=5",
+      "outlet": "RPP Noticias",
+      "outletUrl": "https://rpp.pe",
+      "published": "2026-10-22T22:00:33.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Minimum wage: Government casts doubt on second stage of 2027 increase due to El Niño, \"it could be reviewed\", says Minister Sheput",
       "about": [
         "PE"
       ]
@@ -47,68 +99,79 @@
       "about": []
     },
     {
-      "title": "Alerta por lluvias en Lima este fin de semana: dónde lloverá más y qué zonas deben estar bajo vigilancia",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbzhsNlpHTEZhaGl0LVBMM09WSWlSb0dXVktQMmZQOHFSN0N0OVVNemhUMk5hcnpmV1pWV3AzUVNGQXkwWktUMGNrZXdKWTFGc09xbDFYOF83Z29TREt1dHBsVHlTQUJRV2VYZUNfNEI0aHhrNzg2Zm9fVm5uNmVYSzFXNUZPam1UVWM1aVJQbjgyX25DcDVQMGh4cWVwR1NKNENYZ2dRN3BxNzlGbC1QN2hLM3pQV1Zfei13MFJYZUt4OGtNUVc1SkZZbWFxenAwWUFfOHVkTF9JRWloWWNFOWpFc3daQXpSOURRUXpR0gGCAkFVX3lxTE1tUWJRZGwtUWt5cjdKV1lJTU95aXZFMzBOeGp4Vk5lbFpRbzJBYzNRUDRLQWhwLTgyV2ZNSGxMZlhDMWpTMmt0Qjl6SW8zN2FjYW9IalNPZHRZU0lfUzhpM0pfLXRvZmV4bGhmRFdxNkZjZ2owaE92ZDRRWWQtLU5HRE52WDFSMVJ3STluRDJQTU96SjZIVExIR25DOEdPSDlZT1NnYm9SamNoSm1PQ1VUTVpMS0EyVFRBQjFJSGdKQ1Y4d2xfcE5jWTBQNks1Ml8yMVNOazU5bVViTV82b21qWi05V2RhcHQ5Vnk2UXA2SjZnN0tOaDZleDVQUzB3TWdFZw?oc=5",
-      "outlet": "El Comercio Perú",
-      "outletUrl": "https://elcomercio.pe",
-      "published": "2026-10-22T23:34:27.000Z",
+      "title": "Senado de Perú aprueba poderes a Fujimori contra el crimen organizado",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPT2dZVkxkeUk2RWwwMVNtbXdRczVTWlRWblZRZUdVQ2ZYQnI2WWZyZUl2Rm9tRkJiZzhRclBoeVNESEtfalNKRWtMaVJTeUJvTjBOaE9ubk8wNmtqdFpmdWlUVEtzMXItbktLYzZESE1pbVRCMDQ1ZXJfekhQZGdnTVJkU1hoTlRRdnhramhaZW9SdUp4UXlfRnJPYUdMclczT3prSFJ3NUQ5VG_SAasBQVVfeXFMUHFiZHNTMnFhWnJlSkc4Tno4bV9tVk5VTXZSMERTaFR3ZVY1bkZCcVpMX2lOU0hlOHJaTkRiYkQ4cEF6V19UYzgtZklkQnpkTmtJYmFiSmVCU25QX0V4RG1FVG5LVWtXM2Nhb2syVlhrSkxkTlMxd2JvNzZyWjgycV9iSlFEbTNrX25hSGdXbUZCSmhXaTlpa05aRTc4TS1acG1seXNLN2VuVk1j?oc=5",
+      "outlet": "DW.com",
+      "outletUrl": "https://www.dw.com",
+      "published": "2026-10-22T03:56:44.000Z",
       "outlets": 5,
-      "trending": true,
-      "en": "Rain alert in Lima this weekend: where it will rain most and which areas should be under watch",
+      "trending": false,
+      "en": "Senate of Peru approves powers for Fujimori against organized crime",
       "about": [
         "PE"
       ]
     },
     {
-      "title": "Sueldo mínimo: Gobierno pone en duda segundo tramo del aumento en 2027 por El Niño, “se podría revisar”, dice ministro Sheput",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRXJRRUwteXVfRUh6RVA4MlBTNzhwYWluc0hiSEotRnFncjZyMjhVSjhsbHB4RW1WTm5HSy1UeDZzQXBPV1QwMURjTVByMnltUGQwMjdtN0N4R3ZsMjlmeEFTdEJKNXROVGt2a1FVMGZNX095VmFaVTJPSDN4T1FwRGZCVGhycHFCVEhwMHVOSWFmd2FrM3lRNjBLV2dVUHFIQlhxRjg4QTI5cHl0MnZndGNaZmZwLUw4cHZnUkMtdWlfSGU2NWhRcndXVGl4cEtGWE5mRnlhLV9kVzM1UGNXbkhxVzdNdjVzelFvTW9mNkVkTkNCcXUtbWZHTGdLQQ?oc=5",
+      "title": "Pleno de Diputados aprueba dictamen para derogar ley que crea el Colegio Profesional de Artistas del Perú",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWm95MnBoWkFhZzE0dFpTQUQtN0pka1k0S21ISWY5MHNJUzUtVHdQUkozRjJ2RVhCNlNGR1dXUkNhTVQ5bHVRWmJiOEp2SDcyS1lodHk5QUQ3eFRuOUJISGpTMHhpNHRQTlp0RXBxUFF5bUN5YUhmdUQwNk5mX2JLdmQxNUw0WHhVVlByNlozU3ptN3J5MnVQT19pZUNWMFM2ZXRyWTJ1UG9RWkszaDI3dnZXOWlvQm0tWFFkQTN5a2VtUzlFUXVSYmpxTWFhbW9VZjkzMVNYTERZcEVnWGNtay1OZWJ5OHpzVmc?oc=5",
       "outlet": "RPP Noticias",
       "outletUrl": "https://rpp.pe",
-      "published": "2026-10-22T22:00:33.000Z",
-      "outlets": 4,
+      "published": "2026-10-22T18:42:38.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Minimum wage: Government casts doubt on second stage of 2027 increase due to El Niño, \"it could be reviewed\", says Minister Sheput",
+      "en": "Chamber of Deputies plenary approves report to repeal law creating the Professional College of Artists of Peru",
       "about": [
         "PE"
       ]
     },
     {
-      "title": "Lluvias torrenciales e intensas granizadas inundan calles y arrastran vehículos en Quito",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRUM1Sy1GUHY5TTRXcEJLY05GVnhrcVQwT180eWotaUYyMmwzSUprOWF4aUM4cUdzSzQxM2wxeDZtdndNRWFUTzNabENhMXpVY1JiRWQtUnFFM04tcXRlTjRIdG5CWmlRSGpPSlpEeWZ0TnRhMGtBSFZHVFVpTUpXYzV1bEhZX2dhOHRtSEEta1VrR2xTcVlCNVMtR1YwUHFQTUwyZWxXY3FjRm1CS1RVT0oyNkVEUVZNM1ZmakZQSTl5elRaR19lUA?oc=5",
-      "outlet": "RPP Noticias",
-      "outletUrl": "https://rpp.pe",
-      "published": "2026-10-22T22:54:38.000Z",
-      "outlets": 5,
+      "title": "Atari pone fecha al final de su consola retro VCS, pero quiere darle una segunda vida",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOT0VqYmRPMDNxUlJCN1F0cE1MZHB6bDZQQU1zWXh5ek52cEh1X2IzcENUUzBORGZWZzYzaUlhOUJBOWVaaWNFTmV2VnNHc0g3My01aTdheVVRLXBlTnEwWkh1dXpONzVTVjJtOV9qSzJMeTRsNGpNeUdYcFM5MjBxblJtdFdjNi13?oc=5",
+      "outlet": "HardZone",
+      "outletUrl": "https://hardzone.es",
+      "published": "2026-10-23T08:57:46.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "Torrential rains and intense hailstorms flood streets and sweep away vehicles in Quito",
-      "about": [
-        "EC"
-      ]
+      "en": "Atari sets an end date for its retro VCS console, but wants to give it a second life",
+      "about": []
     },
     {
-      "title": "Vuelven los bonos: Gobierno entregará pago mensual a familias vulnerables y a jubilados ONP por el Fenómeno El Niño en Perú",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSFdibGQwQUhGMjBfVXl4eG16VHlpMDA5MnVOWkxhV0U5bmk3VkxvVGh4cFhUMHh1N2xKYl84eWh4RGdVbFFET0V6SlVFRGdKdHJDd1ZxLXlkbk93Qk1ZQWxxbk5QWlRsM1BlN0tOYk02aE5FVnY4WHVsMmtLSHVQQUlmbjlkRmZ5U00yNDdKY0Njel9rS1l4NDlHWk91U3gyVnBVQlVCVjZ6Y256Z3R0R05xMkJSenB6dG1aUl9EVlFKX2E2OHfSAeABQVVfeXFMT3VGX1JaTFh0VFY5NnpnOVF2d2Zid19sTkN5aTBPeVBYeHY1Q2p4aUJDWmViTXBBcUFla1FlZnQ1eXQwdGUwWERuUFF1aENQYS1hMElqaFVMYk5tUERUSUVXT2UwN2UwV0M3ZGp3eExNcTVJNUtVZzBvRTQzSW5tMjh6UUFwZ3BVS2FPd3ppMGNybHFKaDZxZVJuLUJCVW4wMk9WTkdXdDhkV1Rjcnc5X0dteFJnMW51X3Q4amlRWDVjZW5NYkd1VDdXY3libGtWSXNJVTRPZVRnQUxZaWtuelU?oc=5",
-      "outlet": "Infobae",
-      "outletUrl": "https://www.infobae.com",
-      "published": "2026-10-22T17:09:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Bonuses return: Government will pay monthly benefit to vulnerable families and ONP pensioners due to the El Niño phenomenon in Peru",
-      "about": [
-        "PE"
-      ]
-    },
-    {
-      "title": "Temblor en Colombia hoy, jueves 22 de octubre: epicentro y magnitud según reporte SGC",
-      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPbVhzeHp3dG16dXNwdHI1N3dFY0VwSEF1d2x1OTBRbzBzaDVSb3ViRFB6WmlfOHRiUHQyOERIUzJ3RU1mV2Q1U3B6WjBtNUdYQV81QXF3NmNFM3lQYkI2enBuNGxWaDNWTUs5a1pTMjJkaWxKYWlMNjVxRGVqaGtXXzlqbHJPYUhzQno3QWNPQVFvY2RuY3o1VzBtN1UtYV9sU09EdkVJNTVIN3MtMmx0anktS3Z2RmUwbVZOZWtJZVk0RkpRbmZwWG9abkZGYTVsRUZHRTJ4a2ZyRmswYlhuNy1sd1A4SHhrQ0doQXladl9WN0x2TUhGOWFlaGFyejZHaWVPUDRVZnFtQkdMa28wY1F4Qm50VW9tYUtLVEFqU1V2Q0tZdXpVSWt4MHJRQUZ5Vm9odXl2REc5MFBCLWszOHo5YUFOWWvSAdsCQVVfeXFMTUtSVXppYXlmQk5FSVpxVFNyMWdkOHdMX01TUXVjSnNHRWtVUEgtVFZwdkVST2RDZHA4ckhtMWVqNXV1VHUtY2RTY1QzTXhxRjMyQTlGYmloVFVCMVIzZWRQVGtfRmpyTFJla29YMllYclN3VzZTcDRUWTVfaHhLc1JWU1pYQ3RtNmhLLXJubnR6c05CZ3FmdFg1V3J4VmRYcmdYQUVCT2ZpdE5OT1QtcFI4dHZ5aF9VVTU1TFQta2EwaTd1aWxwTlctcUxmUHF0VUR4MGlLVjB4SnA2d09jNHFGUkIwOXRRTmRmZTlzUElSYk5lVVZBUmpRZWpZWnFnUVZxTkhTR2d0SDF3b3ZmUkdJNHVOS3ZhNi0zNjJXWnJVaU9pOEp0YjJyTmR5Qm1iQWFINXo0SS10OWpVVXNXbng3TVAtYWd0SDZhanJmN0hibzBxWFM5endLQU0?oc=5",
+      "title": "Lluvias intensas y alerta por El Niño: conoce la situación actual en Piura y otras regiones",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPakd1THhJMzZFM184c3dGRS1HQzJCQ0JMY2FYd3V5el90T3Q1Tm5mSDhhY1A0ajZIaFloWEtOblhJaGdxR1BDRHo1eDFxaVBBWVdKNGM0VUFzMllhQXJIdnNEcHZvbHp1Y3pxaXNSb1VES19iS1hVbFZCbGdXYkJvSjJqZTBtUjV4Qkw0aUNFUlZOTzQyWWJ4d0pKYnJnSUU3MU15NndjMnVaZXZCMTV1RF9nSVdHcjhWNC02R216RHNOQkxyVG1lV0I3ZG5XVVVLeFpPT1YyLU1mdWFRUVNNT0o1Z3NVUWtfTWc2ajV5c0ZiaVhXRHVhdTBEVG9aQUZrTjJR0gGXAkFVX3lxTE13bmZOaEdPMWNacVlETjhsTkdYYnR2aUxOZ2JzejkxS0JzWUhGckJXeTRLWjhLZHZ4ZURQZDcybXk4VmZiYWJHUTdwWjc3Ulc2NWV2LWI5blhtWHlYWGJvZU5BRVNackoyeGxRLXd1YTBrYUdLRWhCX21oY0g1Sk55dXppXzBEeGxpalM2RU5rQkNabGdWM3k3UURXSTFRblhEUVNCblN5VlpmaDg5WUZkN0tLeTNUTjB3NDMwQmppNW1vdHRLd3ZIb3dEWHNKa0t5ellUd0JLdFZ0eVFTekdOdjVBWEhjZGRfU2tqX0Z1NmpiZy1MQWxmd1UtRG1xNzN0dmd1ckNaNGk3SEcyVEd1aXI0WGdLbw?oc=5",
       "outlet": "El Comercio Perú",
       "outletUrl": "https://elcomercio.pe",
-      "published": "2026-10-23T00:00:24.000Z",
-      "outlets": 11,
+      "published": "2026-10-22T19:13:59.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Earthquake in Colombia TODAY, October 22: where and at what time the latest tremors occurred",
+      "en": "Intense rains and El Niño alert: see the current situation in Piura and other regions",
       "about": [
-        "CO"
+        "PE"
+      ]
+    },
+    {
+      "title": "Condenan a sujeto que arrojó colilla de cigarro encendida en hierva seca y provocó incendio forestal: fuego afectó seis hectáreas",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVk9KZGFkMF9YQ1JnMVowc19aQTFINU02Wk8wSVpnX0Nvbmo4Yi1SYzZfUEZBVnF4czJGSHNLN0U1a0hoWGhWZVIxNHZRMW9BaVUzUWR1RUIxOVE2ZTQxbG90WnZoN09sbmlNZlZ4OVJtbnlfem5tSVFMRENldEZHRUhaYlZxZXNqQVo1TXZ2TkpvQ3NvTndzVFYzaGU0T2lJMndKbF9oSktKcHJTY2ZzZmtfZHpNb29TYnFXN3NNZWN6d1pwekJ0aGJGTQ?oc=5",
+      "outlet": "LP | Pasión por el Derecho",
+      "outletUrl": "https://lpderecho.pe",
+      "published": "2026-10-22T16:39:17.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Man who threw a lit cigarette butt into dry grass and caused a forest fire is sentenced: fire affected six hectares",
+      "about": [
+        "PE"
+      ]
+    },
+    {
+      "title": "Sacerdote en Las Nazarenas enciende polémica: “Nadie puede apropiarse de esta devoción”",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNTm9yUWhoMEdDMzNnd1R6RWs3N3pBRWYya0VwM2hJUzczVk1IZ0pGb0FoTThQSWN1T2c4aUcxWEw0MGJmblZnSk81WTZCSDgtSnkwVXJNckxadkgzRDRHWnFTSDFId29aeE96dU5pX2xxNFplR0pwRWVnejhpdlVpWHJpQnRuV0JVV2hvUEJ5TzlYQmhaZ0dDTVViMDlkTURwODZqeUJjb3B5SVRfemo5dUFsNGpCS01PZWQ1U3dSY1kyeUNHLXliRU9tb1EtVThVN1dObXlzTnBXSnNZYXI3bTRObW1jX2gxUEJwR082blTSAYQCQVVfeXFMTWRWYzd3amZHY3J2cFNYMXZFQlNsZEI4Q0VSbVVtdmIySTU3ZTRTdXZsT0RVa0tab0FiUC0wRDN4VlcwaXJzZS13dzVyMEotMlo0RUNqLXEyQnBHc1FFaGZtenpLVlY0MG1jakZrcDBxX3NBLWxzSklsQXBkQVRKX19ZbGJ6OHJzRUxjT1Jwcl9VNmJ5UkR5QzFvaDNhZTNGU1Nzd29KSi1uZERsT0I0c1JoaTBWQ1IwUHNZMW1vZVZWd2NldzltNjBqV0hJNkNJME1WVjVHQXd6MWdkU2NZd3VQaFlqQXh3bE5XdFYxeEFfaUFQb2R1WDkwbFZHNVhqTXBjcEU?oc=5",
+      "outlet": "Trome.com",
+      "outletUrl": "https://trome.com",
+      "published": "2026-10-23T01:01:51.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Priest at Las Nazarenas sparks controversy: \"No one can appropriate this devotion\"",
+      "about": [
+        "PE"
       ]
     },
     {
@@ -125,103 +188,86 @@
       ]
     },
     {
-      "title": "Uno de cada cinco casos de sarampión registrados en el Perú corresponde a Arequipa",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd2I5a2JkRzBFUmZTRldWaXYxS01nazFtQU9nMVNNZTdzZXBnclRZckx1aUgzUlBELVBScll5dDdxOUtPZU1udjcyVlFOdUtGSkZURjZ5WEMtZ2Y4eXRhb0J6elhJcmQ4NXg3cDNHZ09rRmliS3RrWTRaZlNla0hHTDFiS2c5eWdEblJnRWJtSjZKVmI5REZla0Jqa2ZySEhSZ24ydEFpRmNpVjBuMHNPUzFKMXFHZw?oc=5",
-      "outlet": "Gestión",
-      "outletUrl": "https://gestion.pe",
-      "published": "2026-10-23T00:15:00.000Z",
-      "outlets": 5,
+      "title": "PHP: el fallo crítico que afectó a internet en todo el mundo",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5WVWdrazg5UDlKZ0tjejVKS2s1NHhhMjhiY1RtRXFsakItVHVSV2ZwWF9hUTBycFllQnVLSnpsQ1ZVOENmMW51UWdlb0VyZ1B0ekxKY0VLcGtxRnJC0gFiQVVfeXFMUGJURnhLcVdtQXQ5eVh5dTNGQmwwc0dmUmdCWF9kY3R6YlVTMTZrTFV5MGIyVFpuVndiTEs1a3hVOXlVRi1fRTlHM3BNU1E4T0VmeDdNejE3NXFEQnJveUR0Q1E?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-10-22T19:35:14.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "One in five measles cases recorded in Peru corresponds to Arequipa",
-      "about": [
-        "PE"
-      ]
-    },
-    {
-      "title": "Senado de Perú aprueba poderes a Fujimori contra el crimen organizado",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPT2dZVkxkeUk2RWwwMVNtbXdRczVTWlRWblZRZUdVQ2ZYQnI2WWZyZUl2Rm9tRkJiZzhRclBoeVNESEtfalNKRWtMaVJTeUJvTjBOaE9ubk8wNmtqdFpmdWlUVEtzMXItbktLYzZESE1pbVRCMDQ1ZXJfekhQZGdnTVJkU1hoTlRRdnhramhaZW9SdUp4UXlfRnJPYUdMclczT3prSFJ3NUQ5VG_SAasBQVVfeXFMUHFiZHNTMnFhWnJlSkc4Tno4bV9tVk5VTXZSMERTaFR3ZVY1bkZCcVpMX2lOU0hlOHJaTkRiYkQ4cEF6V19UYzgtZklkQnpkTmtJYmFiSmVCU25QX0V4RG1FVG5LVWtXM2Nhb2syVlhrSkxkTlMxd2JvNzZyWjgycV9iSlFEbTNrX25hSGdXbUZCSmhXaTlpa05aRTc4TS1acG1seXNLN2VuVk1j?oc=5",
-      "outlet": "DW.com",
-      "outletUrl": "https://www.dw.com",
-      "published": "2026-10-22T03:56:44.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Senate of Peru approves powers for Fujimori against organized crime",
-      "about": [
-        "PE"
-      ]
-    },
-    {
-      "title": "Lluvias intensas y alerta por El Niño: conoce la situación actual en Piura y otras regiones",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPakd1THhJMzZFM184c3dGRS1HQzJCQ0JMY2FYd3V5el90T3Q1Tm5mSDhhY1A0ajZIaFloWEtOblhJaGdxR1BDRHo1eDFxaVBBWVdKNGM0VUFzMllhQXJIdnNEcHZvbHp1Y3pxaXNSb1VES19iS1hVbFZCbGdXYkJvSjJqZTBtUjV4Qkw0aUNFUlZOTzQyWWJ4d0pKYnJnSUU3MU15NndjMnVaZXZCMTV1RF9nSVdHcjhWNC02R216RHNOQkxyVG1lV0I3ZG5XVVVLeFpPT1YyLU1mdWFRUVNNT0o1Z3NVUWtfTWc2ajV5c0ZiaVhXRHVhdTBEVG9aQUZrTjJR0gGXAkFVX3lxTE13bmZOaEdPMWNacVlETjhsTkdYYnR2aUxOZ2JzejkxS0JzWUhGckJXeTRLWjhLZHZ4ZURQZDcybXk4VmZiYWJHUTdwWjc3Ulc2NWV2LWI5blhtWHlYWGJvZU5BRVNackoyeGxRLXd1YTBrYUdLRWhCX21oY0g1Sk55dXppXzBEeGxpalM2RU5rQkNabGdWM3k3UURXSTFRblhEUVNCblN5VlpmaDg5WUZkN0tLeTNUTjB3NDMwQmppNW1vdHRLd3ZIb3dEWHNKa0t5ellUd0JLdFZ0eVFTekdOdjVBWEhjZGRfU2tqX0Z1NmpiZy1MQWxmd1UtRG1xNzN0dmd1ckNaNGk3SEcyVEd1aXI0WGdLbw?oc=5",
-      "outlet": "El Comercio Perú",
-      "outletUrl": "https://elcomercio.pe",
-      "published": "2026-10-22T19:13:59.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Intense rains and El Niño alert: see the current situation in Piura and other regions",
-      "about": [
-        "PE"
-      ]
-    },
-    {
-      "title": "Omar Neyra sobre el Fenómeno de El Niño: \"El agua será como el oxígeno en pandemia\"",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTGJoSjBPUnZwbEhGQVQ4bHdwZktsOVRlT0lmM3NJa2paTWVwV1YwY2JzNjNOdWg0VzhBN0p0ZWx3ME84WTJ3NEtWMGIxY2pYTVNfTkZGVUN5djZBVWhpZGh0ZkxwSDdZcERySEZ3QjZTOHA1YXo4SXRIUG1wUV8waHJYak9vZUhMZURtVzFnU0dSSVZJLUlN?oc=5",
-      "outlet": "Perú 21",
-      "outletUrl": "https://peru21.pe",
-      "published": "2026-10-22T17:23:21.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Omar Neyra on the El Niño phenomenon: \"Water will be like oxygen in the pandemic\"",
-      "about": [
-        "PE"
-      ]
-    },
-    {
-      "title": "Atari pondrá fin al soporte oficial de su consola VCS y lanzará una aplicación para contenido casero",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNM2F3SWdCV25zdGdYQThFR29vOGlLSlhyN2h2WVRxYVd5S09NelJCdTQ1NFdUMHI0eUtZUEpTMm1iNVE3S2ktWDBiUEQ2c0NQa3Y4Ul9TUDZRWjBBMnotWWxBQ1J1S0Y1RGctajZ4UWhWRUFhR2Y5STE5MmR2WXlQYUJFcmFKei11aFRqXzk1c2JoLXpYTXNWa1RfcGNjQWdTRUJIRS0tQ2l0SlJUUXRvcDB1bldtRjhWTHEtSC16R1UzalJoVXc?oc=5",
-      "outlet": "MasGamers",
-      "outletUrl": "https://www.masgamers.com",
-      "published": "2026-10-23T03:36:48.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Atari will end official support for its VCS console and launch an app for homebrew content",
+      "en": "PHP: the critical flaw that affected the internet worldwide",
       "about": []
     },
     {
-      "title": "Pleno de Diputados aprueba dictamen para derogar ley que crea el Colegio Profesional de Artistas del Perú",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWm95MnBoWkFhZzE0dFpTQUQtN0pka1k0S21ISWY5MHNJUzUtVHdQUkozRjJ2RVhCNlNGR1dXUkNhTVQ5bHVRWmJiOEp2SDcyS1lodHk5QUQ3eFRuOUJISGpTMHhpNHRQTlp0RXBxUFF5bUN5YUhmdUQwNk5mX2JLdmQxNUw0WHhVVlByNlozU3ptN3J5MnVQT19pZUNWMFM2ZXRyWTJ1UG9RWkszaDI3dnZXOWlvQm0tWFFkQTN5a2VtUzlFUXVSYmpxTWFhbW9VZjkzMVNYTERZcEVnWGNtay1OZWJ5OHpzVmc?oc=5",
-      "outlet": "RPP Noticias",
-      "outletUrl": "https://rpp.pe",
-      "published": "2026-10-22T18:42:38.000Z",
+      "title": "Minsa despliega en Piura al “Batallón contra el Dengue” con brigadas para intervenir casa por casa",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYmNTY2d0UDRnZjVDZzhTYzNhVzAtb2xKeXl1VzlKUV9aT3o1cHhUclJOVE5PM3Z6YnpiT1VoNlBqaTRlZWNSN1RHYm1icWZDYnJjQm5YWUx0QUo0UnBsbEtKYm5FQXNQYlg1QkFxSTRzanI4OUJudjd2X1RuQ0FPVVNCbHpjaHFzaGo5eHpKS3drVmFzQWQyT2lTYTFJUllRbHIyUExXTU9OdHoyYkhkZDRKOUxlbTVCU3kzQ2lXR1BMeHVXWUVSZGl3c1RrVjc5QkctenNMUDNjck5CS3BpTE5fMGc?oc=5",
+      "outlet": "Plataforma del Estado Peruano",
+      "outletUrl": "https://www.gob.pe",
+      "published": "2026-10-22T21:46:03.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Chamber of Deputies plenary approves report to repeal law creating the Professional College of Artists of Peru",
+      "en": "Minsa deploys the \"Battalion against Dengue\" in Piura with brigades to intervene house by house",
       "about": [
         "PE"
       ]
     },
     {
-      "title": "SENAMHI advierte lluvias de mayor intensidad en la costa norte entre el 24 y el 26 de octubre",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNmZxWF8xTWhIOWQxS3NGV2VZR3l3TjZsV3ZJQkxLV2ZYUFltRlhsWHQwZVYyWWY4TVVjSk95cnNXd2dRak1LNkloYXhmdm13bktrRDZXR3NEcmduankzZm9vcUtLVEdDbXlvZ0h5dzl4ekp6a1I4ZE5NMi00LWdfckdVTi1fdWR6QmdSVXdTWk1ndjBONFk2clAzMi1kbGVDdXh6aWFfTG9KVWUtVlJqaFdHSlR4ZjFGNERwMkdjNFpDMnVnWVZYMDk5aU0tS085eTFza3VNaw?oc=5",
-      "outlet": "RPP Noticias",
-      "outletUrl": "https://rpp.pe",
-      "published": "2026-10-23T01:33:59.000Z",
+      "title": "Honda CBR500R FOUR y CBR600RR 2027: novedades y potencia",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5qZHcya2JaRmMzWUlpWll2NXBSRTYtTHpMYTNYWDdDZUo2V04ya1k3TE4tRmVrNG5GdnNJaFl2VVBuZWRBRk5HbUtnQnhEQlA0TlJCdXZXOWR1WEpsTlA0WlNRc1BnenhkdlJB?oc=5",
+      "outlet": "Motorpoint",
+      "outletUrl": "https://www.motorpoint.com",
+      "published": "2026-10-22T15:34:16.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "SENAMHI warns of more intense rains on the north coast between October 24 and 26",
+      "en": "Honda CBR500R FOUR and CBR600RR 2027: new features and power",
+      "about": []
+    },
+    {
+      "title": "5 maneras en las que el \"Súper Niño\" ya está afectando el clima en América Latina y otras partes del mundo",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5yZExsTHhaSlpGQkwyemFNYy0yOE1GYjVoaTN0N1dRU3RmN0FSVHY0T3hqekhxY1UyUWxhYkxnaTIxb3NnOVJTRlE5a1UyZktBTXg5cXdiSW1tbjhD?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-10-22T11:08:33.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "5 ways in which the \"Super El Niño\" is already affecting the climate in Latin America and other parts of the world",
+      "about": []
+    },
+    {
+      "title": "¡Piccolo Clemente es Campeón Mundial! El peruano se coronó en el ISA World Longboard Championship 2026",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNM3lGTDZ2OFRuaFFpdG9kc0ZEc2xEUWwwU1g5LWlsLVQ1WkJKaERVeGtTZm8yZWY2VTR1UHAwZ00tNEoybGxlZkVITGg0OVFnM0VwU05wRE1QWWhHN0dmVGd6S1Q4YlEzV05xM2J0TkFPT1VzSVhDNV9LNVdQNGxNMzl2cTRsRXNUSG9wWDZIX2xyNFJ0b3hYZ09WZW1qaWJPb2FTSU9yaWlWYms0RDZHNmJsQmEwLWp3NzBOR29kNWFCZVVOY3owX2g1OFByTlJ4S21WbDBrLUxybVNfN0VhMUk1cTVDWndqY1ItQnJyMA?oc=5",
+      "outlet": "RPP Noticias",
+      "outletUrl": "https://rpp.pe",
+      "published": "2026-10-22T16:47:29.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Piccolo Clemente is World Champion! The Peruvian was crowned at the ISA World Longboard Championship 2026",
       "about": [
         "PE"
       ]
     },
     {
-      "title": "Rebajarían el IGV a 8% de forma permanente a tres actividades económicas, ¿cuáles?",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLWtaYzdzc0MzWlVSVGdtSk14SzB1MlVTUEFrY3BnRmNPMGttYktQZkRQRWMwOG4yT2RRVzgwWl9HdHBPMF9sZ1RDZjV4N0M3RUFVRHN2aGxjbmJVY29SNUNrV3ptaG94U21hbV9XaWlaNEE5Q1VId0JtbVlYT2xWeDhOS2VGSlRZOVBhVkhMaDRNczRYX3FPWEhJTVhwV3AzQ2VYdEM0UlFueTZrNEdJX0l1a3N6Zw?oc=5",
-      "outlet": "Gestión",
-      "outletUrl": "https://gestion.pe",
-      "published": "2026-10-23T00:17:00.000Z",
-      "outlets": 1,
+      "title": "Atención con los árbitros: CONAR confirmó la programación para la fecha 13 del Torneo Clausura 2026",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNaE04d0dmSnN3ZWtlSkRlM1BUaXo2UDRzNk1ndGYzV0Q4cU5FaENpQnhDOTdZak51N0FGS2VYMEJrU0huV0xuMWdNTk9YUnU0RzhYUmNxaFg5YkVUeTBrSVhqQ1VNLWQ5NjZlbFY3MzRQcEJWb3U1NmZQSDhHUnZ5NENHUlJDWUpLRHJMSWZnYWFfVzZfNlVFcnd2aGJ0ZEV3cU80U0kyUEFTcjZRQmZ6OG5MSS1RQ0FUUHNsaXAwYjEzX3FESk5JeXRkc1RHd0VfVTdPazRVcndSWUxPdzlFd0p1eHpXSlJUaXk4UkR5OW4wZ2cxamhxSWMxd1pYcXdKQk5lZWp4dm9yajhMNlU0Mk5qNNIBpwJBVV95cUxQQjFYeGhULUhWOXhOTlNUSE40S2lRQko2TUhaYWg2RzVPWUt0ZklmOEcyRFMxM1VIa0tubnRTVFhYZUFzTGhvSWVIX0VRUWJJUHRGcE1DVnNoWU9jNWNQNDdBeEdCcTFvLW05aDNpQXRPUVRMR1RjSkFkNzhEc1Q3NHBTQlJpb2hYTlpKaHQwbzZSUW9udkc2WDd5ZXBMeUhnUHFnOHA3Sm5GamVHZ0ptSEh0ZWo2X2xtMFlKdUtiMWtlNkxFUGd0VjBRZlNQNEpqY0h4YnA0aEV2M3BHd19FamU4RmdRVjBGQmNQaDVJV0FpQ0NYS3pnV0sxdXhLaF85bkRhb1BIV3MtQkNSLWJKYmV0aVZJdWgyb0NIZEN4V0RiWmt3MUNn?oc=5",
+      "outlet": "Depor",
+      "outletUrl": "https://depor.com",
+      "published": "2026-10-22T16:01:27.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "They would lower the IGV to 8% permanently for three economic activities, which ones?",
+      "en": "Attention to referees: CONAR confirmed the schedule for matchday 13 of the 2026 Clausura Tournament",
+      "about": [
+        "PE"
+      ]
+    },
+    {
+      "title": "Surco: una trabajadora de limpieza resulta herida tras la detonación de un explosivo que habría sido dejada por barristas",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRnZ2QUwyeTBKcXJyclBUaVZqc3ZwRXRTODNfZjBoa1dQdXgtanU1cERwNlRxd0M1WHhLalZ1YUhHV1FGQ1EtSjVuRE8waWtJUWlJc3VZMEJ3czRJQkJjTndaSTM5M05RR2xQdnJVSWRjN1RhTnVWUEo0bDBKY2FyOHdNUl85T25DZTV3clpmcDZsOFRFMzdCWmhCRGl0b2JUaXZJalpYeXV0OU1laUIzNm9YVUxuY0RsTWV0ZTV5bHZmekFQZmtoNEtSZnhYdC0wRm1KVmJoUnAwR3l2djJGX3pRS3FCajdQR1NVLWRpb3ZhTVRjYTAydHZ2TQ?oc=5",
+      "outlet": "RPP Noticias",
+      "outletUrl": "https://rpp.pe",
+      "published": "2026-10-23T00:15:30.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Surco: a cleaning worker is injured after the detonation of an explosive reportedly left by barra fans",
       "about": [
         "PE"
       ]
@@ -253,66 +299,29 @@
       ]
     },
     {
-      "title": "¡Cámaras y ADN lo hundieron! Dentista recibe 20 años de cárcel por violar a esposa de su amigo en Puno",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPSzRWZW5wOUs1dl9rbUxiclNBWm5HOVlGNFhOYXZxbzFTZkJuWXBsemdEbjRENDdMVkpveGZKakVWN3o3ZlJLODZuTXRQdlJfV1dJOEtvdzA1RG83a0czZkk1SUh2dEkwZ3hoMXdMU2Faa3FpZjNycUJxN053Q2pnem5wWm5KcW9ETjBJTDltc3NwcW1SeVhBOWpoYWZlUm5QZG9lRlB0cEM0ckVwOUZUZUpFTmUtSWJqczFzb001NEw3VjZfY1haeTAweFVYM2hhSlc0ckFuONIB6wFBVV95cUxOR1dHUWRyVU5EX25uYTV1UUttQ0FSaVlnT3dXVzdVQkF0Z1ZrdmZSSDlKekV0UVRoQzc3TGxRYTR2Z1lnUWw0bmdTMG0yX24tN0N0X3hqVDBES1dKZC1GOVE1M3ZWczFBdmZYS21waENkYW83THFnN3Z4VGpyLVpwM0FUekh1RXBuUHZTeTRvNm56S1ZvZ2E1b1NPdThxYlZmbFRYYnJDaVZrelZpVGV1TFduOWk5azByZlZ6WEk5b0Q3TzduX1ZpcXNvNFFFVUZiTnVyTWlfclVLUmpwSElZOGlkZXRvby01UzFZ?oc=5",
-      "outlet": "Trome.com",
-      "outletUrl": "https://trome.com",
-      "published": "2026-10-23T00:34:43.000Z",
+      "title": "Cenares y deslucida ejecución presupuestal",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5pWjBzS1k3cExpWXNPcjlVQVF6TmJRc3VNRjNndFVWVUU3d1N6MDNrRkk5YjJVZUduV2lTbFZ2UGFkNlNuQlhmb1lGUlJfd0FlTEFFR0syb05oM2paa0RKeTBjemlZQXp4b3g4LVBnbEt2OEplUWdBSE9laXoyUmM?oc=5",
+      "outlet": "El Montonero",
+      "outletUrl": "https://elmontonero.pe",
+      "published": "2026-10-23T05:19:04.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Cameras and DNA sank him! Dentist sentenced to 20 years in prison for raping his friend's wife in Puno",
+      "en": "Cenares and lackluster budget execution",
       "about": [
         "PE"
       ]
     },
     {
-      "title": "Ola gigantesca tumba a reportero durante transmisión en vivo de noticiero | VIDEO",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTzJGenJnM0xHTTFEY01mRnA4aHdDZHZHWERoQ3hRSFBGRzhoVTFTbWNHc0ZNQnAtWlZqM0tFSnR3RkY3SWFEeUVwUWFIR19XekwtajBJUkRJUEM1TXpTVXRYTVoyZXNPNlJYa3c2eWVCLWVZbWZURnBQekh2UmtMemlab2JNNUVJOGtCaXR1Q3JXWDhHNnUtNnFtQjVEY1NNRlJjeDUteTNWU3hWdnpUb3RZQQ?oc=5",
-      "outlet": "Latina Noticias",
-      "outletUrl": "https://latinanoticias.pe",
-      "published": "2026-10-22T22:55:20.000Z",
+      "title": "Fiscal de la Nación respalda derogar la ley que le otorga a la Policía la exclusividad de la investigación preliminar",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOYU9fYkQtb2RZRVloUVltNE9xR01vZkloQUdOVndjQ2RzdWJvelZpbE10QWpEUnNNMVpvM1Z6VzNadDI1azBsaVJhMTVwRm5oa0J3dnRaRkdqYkU5b1pkQlZETkwwQ2xndXl0cXJkSXJLUjhEaWdDTjByWldaZEQweW9JSXl1dmE2WWpLWVdvMGtOUXNaVWlzS2hJNzJOYU00MERDeXpCN01xSE9hRk9JSEFkR1l2X0FUeFBqUjVKajNPR2I1NHhoZWk3dzVOUk9tZXhsZ1JEdHhIVHhrUV9XMV9ycGN4NFZvRHlpSEpjOVpaM0VHZ3RYS0p5RlREd9IBgwJBVV95cUxNXy10OVhwM1U0aTdOeGVudklGX1V3MHFfLWxTSzRYSHE2MVFSZ2RfZVZtU0xOYlRiSUF5ZFJpNExnZ2EyVlE2QzFVdGw0YzgtQ0pNdzhYRGdBV0xRVmRkOWNIaXpSMGRkMTFMTVpHWUFKeTJxdi1mZmlIcU9BVmxmdG5YMmdOcFRrX3VnX2ZjUU1Sa3IxRVhxUW9lUmZEMlBtQml1UGEzM2lCZmt6SG9LUU5haFlWWGdTU0g4YUpKbkdUS3dObVhfNzNuaFlVa1JLSkdvS3ZJUGhxYzhnV3ZYYU1NZnJNbUQ5RXE1Vk5hNGswVFZFRTRzWWVjbEM3Y202MXM0?oc=5",
+      "outlet": "La República",
+      "outletUrl": "https://larepublica.pe",
+      "published": "2026-10-22T22:23:02.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Giant wave knocks down reporter during live news broadcast | VIDEO",
-      "about": []
-    },
-    {
-      "title": "Vacuna contra el dengue en Perú: ¿quiénes deben vacunarse, cuánto cuesta y dónde conseguirla?",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTkNrM2VrQTRORU8xRTZUUk9UZExLdXVXTDNwbHFkbDVFRnlpN3ktQ2ltUW9EbV9IbEZoQ2pER01JQWNpcnBxNkZra3RpbFNxR1d5emp2bmh5WTBiQUZlTkhnUXBlMkJQejNoMXBPbE9UMGZ1aXdCWWkyRFFuSjRXc05KNVVxSkJETnUxR1JpX0lsbTB6UWVJcFY3N2FVY1B4em9zWUR6bFZ4eUk?oc=5",
-      "outlet": "Perú 21",
-      "outletUrl": "https://peru21.pe",
-      "published": "2026-10-22T20:14:48.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Dengue vaccine in Peru: who should get vaccinated, how much does it cost and where to get it?",
+      "en": "Attorney General supports repealing the law that gives the Police exclusive power over preliminary investigations",
       "about": [
         "PE"
-      ]
-    },
-    {
-      "title": "Honda CBR500R FOUR y CBR600RR 2027: novedades y potencia",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5qZHcya2JaRmMzWUlpWll2NXBSRTYtTHpMYTNYWDdDZUo2V04ya1k3TE4tRmVrNG5GdnNJaFl2VVBuZWRBRk5HbUtnQnhEQlA0TlJCdXZXOWR1WEpsTlA0WlNRc1BnenhkdlJB?oc=5",
-      "outlet": "Motorpoint",
-      "outletUrl": "https://www.motorpoint.com",
-      "published": "2026-10-22T15:34:16.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Honda CBR500R FOUR and CBR600RR 2027: new features and power",
-      "about": []
-    },
-    {
-      "title": "Estados Unidos retira visas a decenas de altos cargos de Colombia y Bolivia",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQTg1X3JhN2pUZFNfRHMtVVotRktjb2JSYktsMklSZjd6XzBIb280LU82SzdaeEpFVTlFa21qdlRRS3VzNW1QSUZtbjEyOHRwdlRLbUlsSGVpZjRBUWlDaXNWeUtDWDU4M0V6eEhEN2xGb19qSDVzVlllaDBqbV9VSlZvajhqR1pfMHFTUl9KRGhWSmxZSlFzeWNkV2x1TURwZXZGNk9EcE1WZ1Mz0gGsAUFVX3lxTE5uQ2xGUTFqUWhDbWdFT3d5dVhlUUgwd1F3YjlMMkFyX0ZMdjZyajRMamdHMkRDeVBBZlB3d1JrYkF0YXpWQkNFV2t2ZHpLb21lcmRqQU1kZEFmRm5ERTJOazVBRE9rbXdyWlZyU3BGVXpBUjJjX0ZCWmt5SmFDRGhneUNGS1RlTkg1RDFFd1ZDV09yWk85VkNzUnFqX3VCTGNvS1lDNEpQQm91aFk?oc=5",
-      "outlet": "DW.com",
-      "outletUrl": "https://www.dw.com",
-      "published": "2026-10-22T22:19:19.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "United States withdraws visas from dozens of senior officials of Colombia and Bolivia",
-      "about": [
-        "US",
-        "CO",
-        "BO"
       ]
     },
     {
@@ -329,19 +338,6 @@
       ]
     },
     {
-      "title": "¡Piccolo Clemente es Campeón Mundial! El peruano se coronó en el ISA World Longboard Championship 2026",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNM3lGTDZ2OFRuaFFpdG9kc0ZEc2xEUWwwU1g5LWlsLVQ1WkJKaERVeGtTZm8yZWY2VTR1UHAwZ00tNEoybGxlZkVITGg0OVFnM0VwU05wRE1QWWhHN0dmVGd6S1Q4YlEzV05xM2J0TkFPT1VzSVhDNV9LNVdQNGxNMzl2cTRsRXNUSG9wWDZIX2xyNFJ0b3hYZ09WZW1qaWJPb2FTSU9yaWlWYms0RDZHNmJsQmEwLWp3NzBOR29kNWFCZVVOY3owX2g1OFByTlJ4S21WbDBrLUxybVNfN0VhMUk1cTVDWndqY1ItQnJyMA?oc=5",
-      "outlet": "RPP Noticias",
-      "outletUrl": "https://rpp.pe",
-      "published": "2026-10-22T16:47:29.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Piccolo Clemente is World Champion! The Peruvian was crowned at the ISA World Longboard Championship 2026",
-      "about": [
-        "PE"
-      ]
-    },
-    {
       "title": "Tuneladora Micaela llegó a Carmen de la Legua y culminó excavaciones de la Línea 2 y el ramal de la Línea 4 del Metro de Lima y Callao",
       "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPZHFXNHJSVENpY3EwclNTeFpuamVPY2NYaWQ2eGxpeWVYRHFLbWNDSzBRbWdWWGZrS0VQbXlmRjVkYnpVaU5IWk5GTmJmV2t2QmVFZVZsN3AwbWN1TXVVaDdsYkFiSjhGNjlRXzFhTkpvWnRrYThuY0E5eGgtQ1hINGE0Qk1HOXk4MVlDSGpJd0JvNDlzLXZvMWhSdTJRNFRwR0I4VXhjc3REOUNkU2pwcVJ3VVNWZzM2TVhVZUMzcVBnQzNRWVZCMjRuLWFpaGhoYml2SFlNb3lKZ2d2MUtreEUyRGJab0lZa19Qd2prRktndFRiSXZ5X0tvV2k5RFZ3SURzdnpnb2YtaXZFVUE?oc=5",
       "outlet": "RPP Noticias",
@@ -353,17 +349,6 @@
       "about": [
         "PE"
       ]
-    },
-    {
-      "title": "Expertos advierten aceleración de riesgos con la IA, tras alertas por vulnerabilidades en lenguaje PHP",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOb3dReXRQdENGVmNzYnZQQzFTSXlLTkY1RXlUOTNYN0szb2tSZ1BkZTJYbGwtN1ZLMnllQTB0MHVQMHJVaDdIOG5YTjFXTVRWbUs1b0lhRTVxXy1YSTNYM3FHY3NXQkxwZXJGWGt0S3lHVHZfX0pMbXhlMnFKM3Fsci1hQUZ6dmpWYUxUUkZfRG5fY2RfY2Y1WkhwdXRId1VDclFvV3plSWVzWV9zUGpsWW5Xa1p5Uk51YjlMZWxjYjcwUWxpZ1VyaWpidFExLXd0X29jdUhPS1ZobUF0NWJpX3Zsekdoa1J3S3Q4ME5MdUg3ajY1ZHZhTg?oc=5",
-      "outlet": "RPP Noticias",
-      "outletUrl": "https://rpp.pe",
-      "published": "2026-10-22T11:25:07.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Experts warn of accelerating AI risks after alerts about vulnerabilities in the PHP language",
-      "about": []
     },
     {
       "title": "Precio del dólar hoy en Perú, jueves 22 de octubre: consulta el tipo de cambio para compra y venta",
@@ -387,6 +372,19 @@
       "outlets": 5,
       "trending": false,
       "en": "Moquegua: soft drink found in refrigerator meant to store laboratory samples of EsSalud hospital",
+      "about": [
+        "PE"
+      ]
+    },
+    {
+      "title": "Temblor hoy en Perú, 22 de octubre: ¿dónde fue el epicentro y de cuánto fue?",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUHVTQzg4SHVuSkh5MHFaS2xVbXUxbjNkOW1pV3BYb1FBOXRSQnkxaE1xaC1haUhZdnlTcTkzdGxTakU1Q2ZENWV2NzBHYWljaG5OYmkxZjdBeTI3cXhST2o1bkw0XzlwcG1HVzNXcHRoVk5KQUxmdS1Tbm8xOUw4VDNTTlFSck5VOHhUQlc2aUpSLXlWaU52QzcwNFFsLWVqVER0WFgyRWw2eU3SAb8BQVVfeXFMTVR1WGhuYXVhbjc5RHVZU2RodXV5ZXRzT2dGUkVLQTBPZEYxVl9lanZZSHpJQnpBbUViajRRNk9hVWxIYWlmRVhPcDdtMzdZX3VrYXRObzBUSTZiaXFRTHl0TFdycTI3MEdjdV9INDYtUTk4ZTFqX1c2cGl2MVpKM0hqWDdZNDRxMHpLYmh5dmRVaTRka3N1NFdEcjFIZDVESUloeEdQaUIyakxIb2FpckxudlhndjJRU0Q4Ym5sYjg?oc=5",
+      "outlet": "El Comercio Perú",
+      "outletUrl": "https://elcomercio.pe",
+      "published": "2026-10-22T21:04:34.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Latest earthquake in Peru today, Thursday October 22: IGP report, location and magnitude",
       "about": [
         "PE"
       ]

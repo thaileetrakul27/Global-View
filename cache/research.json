@@ -105,7 +105,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-cyclone-tc-1001335": {
@@ -304,7 +304,7 @@
       }
     ],
     "membersHash": "eonet,gdacs,news|JP,PH,TW#3901514e",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-cyclone-tc-1001341": {
@@ -349,7 +349,7 @@
       }
     ],
     "membersHash": "gdacs|MX#461b991b",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-cyclone-tc-1001342": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -362,7 +362,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CA,US#471b9aae",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-22T08:03:09.184Z",
@@ -451,7 +451,7 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-drought-dr-1027449": {
@@ -536,7 +536,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-drought-dr-1027450": {
@@ -599,7 +599,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-drought-dr-1027465": {
@@ -708,8 +708,8 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "donationSearched": "2026-10-23T05:22:44.752Z",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z",
+    "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -724,10 +724,10 @@
     "membersHash": "gdacs|VU#1dba2781"
   },
   "gdacs-earthquake-eq-1570339": {
-    "at": "2026-10-22T08:03:09.184Z",
+    "at": "2026-10-23T12:11:09.903Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A M7.7 earthquake (USGS magnitude) struck near Pitaloza Arriba, Panama, on 9 October 2026, damaging homes, schools and health facilities in Azuero and Veraguas. As of 21 October, the national emergency centre was still running damage assessments and coordination. By 20 October, one death and 27 injuries were reported, and 2,318 homes were recorded with total damage.",
+    "searches": 4,
+    "summary": "A magnitude 7.7 earthquake (USGS; SINAPROC gives 7.5) struck near Pitaloza Arriba, Panama, on 9 October 2026. Damage in Los Santos, Herrera, Coclé and other provinces is still being assessed, and aftershocks continued as of 21 October. SINAPROC reports 1 death, 27 injured, 38,477 people affected and 11,696 homes assessed.",
     "ongoing": true,
     "places": [
       {
@@ -735,107 +735,120 @@
         "admin": "Los Santos",
         "country": "PA",
         "kind": "town",
-        "impact": "Hotel and several homes collapsed; no water or electricity"
-      },
-      {
-        "name": "Macaracas",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Wall collapse; woman seriously injured and later died"
+        "impact": "Hotel and several homes collapsed; no water or power"
       },
       {
         "name": "Penonomé",
         "admin": "Coclé",
         "country": "PA",
         "kind": "town",
-        "impact": "Cathedral collapsed; shelters open"
+        "impact": "Red Cross gave first aid and shelter"
       },
       {
-        "name": "Mariato",
-        "admin": "Veraguas",
+        "name": "Chitré",
+        "admin": "Herrera",
         "country": "PA",
-        "kind": "district",
-        "impact": "Shelters open"
+        "kind": "city",
+        "impact": "Assessed by Red Cross teams"
       },
       {
-        "name": "Boca de Quema",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Shelters open"
-      },
-      {
-        "name": "Isla de Cañas",
+        "name": "La Villa",
+        "admin": "Herrera",
         "country": "PA",
         "kind": "town",
-        "impact": "About 300 people evacuated"
+        "impact": "Assessed by Red Cross teams"
       },
       {
-        "name": "Soná",
-        "admin": "Veraguas",
+        "name": "Pedasí",
+        "admin": "Herrera",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Assessed by Red Cross teams"
+      },
+      {
+        "name": "Playa Venao",
+        "country": "PA",
+        "kind": "site",
+        "impact": "Hotel damaged"
+      },
+      {
+        "name": "Changuinola",
+        "admin": "Bocas del Toro",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Red Cross teams gave assistance"
+      },
+      {
+        "name": "Barú",
+        "admin": "Chiriquí",
         "country": "PA",
         "kind": "district",
-        "impact": "Damage reported at Hicaco"
+        "impact": "Red Cross teams gave assistance"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "1",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Panama_earthquake"
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
       },
       {
         "label": "Injured",
         "value": "27",
-        "sourceName": "latintimes.com",
-        "sourceUrl": "https://www.latintimes.com/panama-hit-77-quake-147-aftershocks-27-injured-cathedral-collapsed-600040"
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
       },
       {
-        "label": "Homes with total damage",
-        "value": "2,318",
-        "sourceName": "igopanama.com",
-        "sourceUrl": "https://www.igopanama.com/blog/about-panama-important-news/panama-earthquake-help-guide-emergency-contacts-housing-aid-and-how-to-help"
+        "label": "People affected",
+        "value": "38,477 people",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
+      },
+      {
+        "label": "Homes assessed",
+        "value": "11,696 homes",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
       },
       {
         "label": "People in shelters",
-        "value": "255",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315"
+        "value": "5,628 people in 126 shelters",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
       }
     ],
     "donation": [
       {
         "url": "https://donate.unhcr.org/int/en/panama-earthquake",
-        "org": "UNHCR, the UN Refugee Agency",
+        "org": "UNHCR",
         "kind": "un",
-        "note": "Appeal for families affected by the 9 October Panama earthquake, with shelter and protection support.",
+        "note": "UNHCR donation appeal for shelter, relief and protection after the Panama earthquake.",
         "specific": true
       },
       {
         "url": "https://cruzroja.org.pa/donar/",
-        "org": "Cruz Roja Panameña (Red Cross Society of Panama)",
+        "org": "Cruz Roja Panameña",
         "kind": "society",
-        "note": "General donation fund supporting the society's wider work, including emergency response.",
+        "note": "General donation page for the society's programmes, including disaster assistance; not specific to this earthquake.",
         "specific": false
       }
     ],
     "sources": [
       {
+        "name": "sinaproc.gob.pa",
+        "url": "https://www.sinaproc.gob.pa/sinaproc-continua-con-las-evaluaciones-tras-el-sismo/",
+        "title": "Sinaproc continúa con las evaluaciones tras el sismo - Sinaproc"
+      },
+      {
         "name": "en.wikipedia.org",
         "url": "https://en.wikipedia.org/wiki/2026_Panama_earthquake",
         "title": "2026 Panama earthquake"
-      },
-      {
-        "name": "unocha.org",
-        "url": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315",
-        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 02 (as of 11 October 2026, 13:15)"
       }
     ],
-    "membersHash": "gdacs,ifrc,usgs|CR,PA#24cf2828",
-    "seen": "2026-10-23T05:22:44.752Z",
-    "donationSearched": "2026-10-22T08:03:09.184Z"
+    "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
+    "donationSearched": "2026-10-23T12:11:09.903Z",
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -859,7 +872,7 @@
       }
     ],
     "membersHash": "gdacs|PG#20427fcc",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-earthquake-eq-1571524": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -945,7 +958,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|US#dc9009ba",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-earthquake-eq-1571917": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1133,7 +1146,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -1161,8 +1174,93 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,news,usgs|CN#09fb162e",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
+  },
+  "gdacs-earthquake-eq-1573344": {
+    "at": "2026-10-23T12:11:09.903Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A magnitude 5.5 to 5.7 earthquake, depending on agency, struck offshore in the southern Tyrrhenian Sea, off the Aeolian Islands, about 63 km from Leni, on 23 October 2026. Strong shaking was felt across Sicily, including Palermo and Trapani, and several schools and buildings were evacuated. No injuries or building damage were reported. A seismic swarm was still under way on 23 October; later status is not reported.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Palermo",
+        "admin": "Palermo",
+        "country": "IT",
+        "kind": "city",
+        "impact": "Strong shaking felt, people ran outdoors, schools evacuated"
+      },
+      {
+        "name": "Trapani",
+        "admin": "Trapani",
+        "country": "IT",
+        "kind": "city",
+        "impact": "Court building evacuated as a precaution"
+      },
+      {
+        "name": "Partanna Mondello",
+        "admin": "Palermo",
+        "country": "IT",
+        "kind": "district",
+        "impact": "One institute evacuated"
+      },
+      {
+        "name": "Filicudi",
+        "country": "IT",
+        "kind": "town",
+        "impact": "Rockfall on a cliff; residents in streets"
+      },
+      {
+        "name": "Alicudi",
+        "country": "IT",
+        "kind": "town",
+        "impact": "Residents came into the streets"
+      },
+      {
+        "name": "Messina",
+        "country": "IT",
+        "kind": "city",
+        "impact": "Shock felt, no damage reported"
+      },
+      {
+        "name": "Catania",
+        "country": "IT",
+        "kind": "city",
+        "impact": "Shock felt, no damage reported"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "ilgiornalepopolare.it",
+        "url": "https://ilgiornalepopolare.it/terremoto-di-magnitudo-5-al-largo-delle-eolie-paura-in-tutta-la-sicilia-scuole-evacuate/",
+        "title": "Terremoto di magnitudo 5 al largo delle Eolie, paura in tutta la Sicilia: scuole evacuate - POP - Il Giornale Popolare"
+      },
+      {
+        "name": "ilmessaggero.it",
+        "url": "https://www.ilmessaggero.it/italia/terremoto_palermo_sicilia_eolie_tirreno_meridionale_magnitudo_danni-9843866.html",
+        "title": "Terremoto Palermo, otto scosse al largo delle Eolie: la più forte di magnitudo 5. Scuole evacuate e gente in strada nel capoluogo"
+      },
+      {
+        "name": "metropolitano.it",
+        "url": "https://www.metropolitano.it/terremoto-in-sicilia-evacuati-alcuni-edifici/",
+        "title": "Terremoto in Sicilia, evacuati alcuni edifici - Metropolitano.it"
+      },
+      {
+        "name": "fanpage.it",
+        "url": "https://www.fanpage.it/attualita/forte-terremoto-in-sicilia-diverse-scosse-al-largo-delle-eolie-la-piu-forte-di-magnitudo-fino-a-5-2/",
+        "title": "Terremoto in Sicilia, allerta maremoto arancione dopo la scossa di magnitudo 5: scuole evacuate a Palermo"
+      },
+      {
+        "name": "pasqualepillitteri.it",
+        "url": "https://pasqualepillitteri.it/news/26524/terremoto-eolie-magnitudo-5-5-allarme-maremoto-sicilia",
+        "title": "Terremoto alle Eolie di magnitudo 5.5, allarme maremoto in Sicilia"
+      }
+    ],
+    "membersHash": "gdacs,usgs|IT#a48a73f7",
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1103888": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1222,7 +1320,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|US#2b36b9e5",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1290,7 +1388,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1450,7 +1548,7 @@
       }
     ],
     "membersHash": "gdacs,news|EC#5dc7dd96",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1724,7 +1822,7 @@
       }
     ],
     "membersHash": "gdacs|HN#37b0b7ff",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104216": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1763,7 +1861,7 @@
       }
     ],
     "membersHash": "gdacs|BR#3eb3019b",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104217": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1896,7 +1994,7 @@
       }
     ],
     "membersHash": "gdacs,news|CL#74420222",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1985,7 +2083,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104219": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2168,7 +2266,7 @@
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104221": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2240,7 +2338,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SI#abb5ebc9",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104222": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2370,7 +2468,7 @@
       }
     ],
     "membersHash": "gdacs|PY#a8b5e710",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104223": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2383,7 +2481,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CN#a9b5e8a3",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104224": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2443,7 +2541,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104225": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2638,7 +2736,7 @@
       }
     ],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104228": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2717,7 +2815,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PA#b2b5f6ce",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104230": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2819,7 +2917,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|TR#b0b8323f",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104231": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -2846,7 +2944,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|LY#afb830ac",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104232": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2873,7 +2971,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|JO#b2b83565",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104233": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2886,7 +2984,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SY#b1b833d2",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104235": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2899,7 +2997,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104236": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2948,7 +3046,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SV#aeb82f19",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104237": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2981,7 +3079,7 @@
       }
     ],
     "membersHash": "gdacs|NI#adb82d86",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104238": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2994,7 +3092,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3119,7 +3217,7 @@
       }
     ],
     "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3368,7 +3466,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104242": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3420,7 +3518,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UA#a8a6dc86",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104243": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3529,7 +3627,7 @@
       }
     ],
     "membersHash": "gdacs|FR#a9a6de19",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-flood-fl-1104244": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3624,7 +3722,7 @@
       }
     ],
     "membersHash": "gdacs|GT#aaa6dfac",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -3668,7 +3766,7 @@
       }
     ],
     "membersHash": "gdacs|IT#fedc6d48",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -3773,7 +3871,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-volcano-vo-1000152": {
@@ -3842,7 +3940,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-wildfire-wf-1032497": {
@@ -3867,7 +3965,7 @@
       }
     ],
     "membersHash": "gdacs|AU#16f99bef",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032498": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3880,7 +3978,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#1bf9a3ce",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032507": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3919,7 +4017,7 @@
       }
     ],
     "membersHash": "gdacs|BR#a93ae3e9",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032508": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3950,7 +4048,7 @@
       }
     ],
     "membersHash": "gdacs|AU#b23af214",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032518": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3988,7 +4086,7 @@
       }
     ],
     "membersHash": "gdacs|AU#383137aa",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032556": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -4024,7 +4122,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4037,7 +4135,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032657": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4161,7 +4259,7 @@
       }
     ],
     "membersHash": "gdacs|BR#efe30b15",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4218,7 +4316,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#fbe9d9be",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4242,7 +4340,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4273,7 +4371,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4395,7 +4493,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4419,7 +4517,7 @@
       }
     ],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032726": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -4615,7 +4713,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#83527d05",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4644,7 +4742,7 @@
       }
     ],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4657,7 +4755,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4670,7 +4768,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4689,7 +4787,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4713,7 +4811,7 @@
       }
     ],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4726,7 +4824,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032857": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4739,7 +4837,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032874": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4758,7 +4856,7 @@
       }
     ],
     "membersHash": "gdacs|AU#c75dd910",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4777,7 +4875,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032920": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4790,7 +4888,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032930": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4803,7 +4901,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#58cb0943",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032939": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -4816,7 +4914,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5fcb1448",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032940": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4835,7 +4933,7 @@
       }
     ],
     "membersHash": "gdacs|AU#5ecd514c",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032947": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -4848,7 +4946,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SD,SS#5dcd4fb9",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032962": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -4867,7 +4965,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e8d2a7b8",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1032994": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -4880,7 +4978,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#e0b24775",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1033003": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -4892,7 +4990,8 @@
     "figures": [],
     "donation": [],
     "sources": [],
-    "membersHash": "gdacs|AU#f6a62a57"
+    "membersHash": "gdacs|AU#f6a62a57",
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1033007": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -4984,7 +5083,20 @@
       }
     ],
     "membersHash": "gdacs|NA#f2a6240b",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
+  },
+  "gdacs-wildfire-wf-1033013": {
+    "at": "2026-10-23T12:11:09.903Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#dea84326",
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "gdacs-wildfire-wf-1033018": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -5003,7 +5115,26 @@
       }
     ],
     "membersHash": "gdacs|AU#e5a84e2b",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
+  },
+  "gdacs-wildfire-wf-1033021": {
+    "at": "2026-10-23T12:11:09.903Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "gdacs.org",
+        "url": "https://www.gdacs.org/Wildfires/report.aspx?eventtype=WF&eventid=1032943&episodeid=2",
+        "title": "Overall Green Forest fire in Botswana, South Africa from 15 Oct 2026 00:00 UTC to 20 Oct 2026 00:00 UTC"
+      }
+    ],
+    "membersHash": "gdacs|BW#6ca0d3eb",
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "ifrc-cyclone-8034": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -5034,7 +5165,7 @@
       }
     ],
     "membersHash": "ifrc|DJ#49b6fd82",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-drought-7977": {
@@ -5048,7 +5179,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#49b906fb",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-earthquake-7990": {
@@ -5281,7 +5412,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
@@ -5368,7 +5499,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-7993": {
@@ -5401,8 +5532,8 @@
       }
     ],
     "membersHash": "ifrc|GE#4daa02bd",
-    "donationSearched": "2026-10-23T05:22:44.752Z",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z",
+    "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7996": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5469,8 +5600,8 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CI#48a9fade",
-    "donationSearched": "2026-10-23T05:22:44.752Z",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z",
+    "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7998": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -5575,7 +5706,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|LA#42a9f16c",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8011": {
@@ -5612,8 +5743,8 @@
     ],
     "sources": [],
     "membersHash": "ifrc|TJ#dab1d197",
-    "donationSearched": "2026-10-23T05:22:44.752Z",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z",
+    "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-10-22T08:03:09.184Z",
@@ -5698,7 +5829,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8014": {
@@ -5762,7 +5893,7 @@
       }
     ],
     "membersHash": "ifrc|KG#d5b1c9b8",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
@@ -5829,7 +5960,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-flood-8037": {
@@ -5858,7 +5989,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|IN#48b6fbef",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8045": {
@@ -5952,7 +6083,7 @@
       }
     ],
     "membersHash": "ifrc|SL#4aaa3322",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
@@ -6052,7 +6183,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8052": {
@@ -6142,7 +6273,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8057": {
@@ -6230,7 +6361,7 @@
       }
     ],
     "membersHash": "ifrc|PH#48a7f165",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8062": {
@@ -6307,7 +6438,7 @@
       }
     ],
     "membersHash": "ifrc|PA#d5af8b21",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8068": {
@@ -6388,7 +6519,7 @@
       }
     ],
     "membersHash": "ifrc|LR#cbaf7b63",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8073": {
@@ -6446,7 +6577,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-flood-8115": {
@@ -6488,7 +6619,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CG#68e1ca24",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
@@ -6586,7 +6717,7 @@
       }
     ],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-landslide-8111": {
@@ -6700,7 +6831,7 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-storm-8101": {
@@ -6729,7 +6860,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|GW#60df7ef5",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-storm-8108": {
@@ -6872,7 +7003,7 @@
       }
     ],
     "membersHash": "ifrc|ZW#67df89fa",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-wildfire-8027": {
@@ -6905,7 +7036,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|DZ#48b93a86",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-wildfire-8038": {
@@ -7088,7 +7219,7 @@
       }
     ],
     "membersHash": "ifrc|TN#4db703ce",
-    "seen": "2026-10-23T05:22:44.752Z",
+    "seen": "2026-10-23T12:11:09.903Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "news-cyclone-cyclone-ru-b85a88b1eb": {
@@ -7299,6 +7430,62 @@
     ],
     "membersHash": "news|TW#b225f1ab",
     "seen": "2026-10-23T05:22:44.752Z"
+  },
+  "news-earthquake-earthquake-cn-045bab26d7": {
+    "at": "2026-10-23T12:11:09.903Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu City, Xizang (Tibet), China, at 22:33 local time on 22 October 2026. Reports as of 23 October give 16 deaths and 76 injured. Search and rescue continues, and more than 12,000 residents have been evacuated. Damage assessment is still underway.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Baqen County",
+        "admin": "Nagqu City, Xizang",
+        "country": "CN",
+        "kind": "district",
+        "impact": "Epicentre area; homes collapsed, people injured"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "16",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261023/c36b4c23dfcd496f9117e9a8c8a69511/c.html"
+      },
+      {
+        "label": "Injured",
+        "value": "76",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261023/c36b4c23dfcd496f9117e9a8c8a69511/c.html"
+      },
+      {
+        "label": "Displaced",
+        "value": "more than 12,000 people evacuated",
+        "sourceName": "news.rthk.hk",
+        "sourceUrl": "https://news.rthk.hk/rthk/en/component/k2/1875026-20261023.htm"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261023/c36b4c23dfcd496f9117e9a8c8a69511/c.html",
+        "title": "16 dead, 76 injured after 7.0-magnitude quake hits China's Xizang-Xinhua"
+      },
+      {
+        "name": "news.rthk.hk",
+        "url": "https://news.rthk.hk/rthk/en/component/k2/1875026-20261023.htm",
+        "title": "Xi orders all-out rescue after Xizang quake - RTHK"
+      },
+      {
+        "name": "cnn.com",
+        "url": "https://www.cnn.com/2026/10/22/asia/earthquake-chinas-tibet-latam-intl",
+        "title": "China earthquake: 7-magnitude quake hits Tibet, killing 16 and injuring dozens, state media reports"
+      }
+    ],
+    "membersHash": "news|CN#76761631",
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "news-earthquake-earthquake-pa-32b0fa90e3": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -7755,7 +7942,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "news|TH#5776bb7e",
-    "seen": "2026-10-23T05:22:44.752Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "news-flood-flood-us-bcd41524ce": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -8033,7 +8220,7 @@
       }
     ],
     "membersHash": "news|FR#bed61fbe",
-    "seen": "2026-10-21T14:45:27.681Z"
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "news-storm-storm-gb-f77d5e544d": {
     "at": "2026-10-22T08:03:09.184Z",
@@ -8141,6 +8328,92 @@
     "sources": [],
     "membersHash": "news|IE#30454b26",
     "seen": "2026-10-21T14:45:27.681Z"
+  },
+  "news-wildfire-wildfire-id-cb9e0b88d2": {
+    "at": "2026-10-23T12:11:09.903Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Forest and land fires (karhutla) are burning in Indonesia. As of 22 October 2026, BNPB reported 11,202 hectares burned across three Kalimantan provinces. A fire in Bromo Tengger Semeru National Park killed four people in mid-October. BNPB says burned land is shrinking, and cloud seeding continues in West Kalimantan.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Bromo Tengger Semeru National Park",
+        "admin": "East Java",
+        "country": "ID",
+        "kind": "site",
+        "impact": "Fire killed four people, two seriously burned"
+      },
+      {
+        "name": "West Kalimantan",
+        "country": "ID",
+        "kind": "region",
+        "impact": "1,290 hectares burned; cloud seeding"
+      },
+      {
+        "name": "Central Kalimantan",
+        "country": "ID",
+        "kind": "region",
+        "impact": "7,938 hectares burned"
+      },
+      {
+        "name": "South Kalimantan",
+        "country": "ID",
+        "kind": "region",
+        "impact": "1,974 hectares burned; cloud seeding"
+      },
+      {
+        "name": "Boyolali",
+        "admin": "Central Java",
+        "country": "ID",
+        "kind": "district",
+        "impact": "2.55 hectares burned; fire reached villages"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "four",
+        "sourceName": "jatim.antaranews.com",
+        "sourceUrl": "https://jatim.antaranews.com/berita/1107417/bromo-wildfire-death-toll-rises-to-four-local-authorities-say"
+      },
+      {
+        "label": "Injured",
+        "value": "two with serious burns",
+        "sourceName": "en.antaranews.com",
+        "sourceUrl": "https://en.antaranews.com/news/436069/bromo-park-tracks-two-severely-burned-responders-as-fire-kills-four"
+      },
+      {
+        "label": "Burned area, Kalimantan",
+        "value": "11,202 hectares",
+        "sourceName": "en.tempo.co",
+        "sourceUrl": "https://en.tempo.co/read/2122138/forest-fires-burn-11202-hectares-across-three-kalimantan-provinces"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "en.tempo.co",
+        "url": "https://en.tempo.co/read/2122138/forest-fires-burn-11202-hectares-across-three-kalimantan-provinces",
+        "title": "Forest Fires Burn 11,202 Hectares Across Three Kalimantan Provinces - Environment En.tempo.co"
+      },
+      {
+        "name": "wral.com",
+        "url": "https://www.wral.com/news/ap/fa237-wildfire-traps-firefighters-and-volunteers-in-indonesia-s-mount-bromo-national-park-killing-4/",
+        "title": "Wildfire traps firefighters and volunteers in Indonesia’s Mount Bromo national park, killing 4 :: WRAL.com"
+      },
+      {
+        "name": "en.antaranews.com",
+        "url": "https://en.antaranews.com/news/437431/prabowo-approves-rp240-billion-in-wildfire-aid-for-west-kalimantan",
+        "title": "Prabowo approves Rp240 billion in wildfire aid for West Kalimantan - ANTARA News"
+      },
+      {
+        "name": "jatim.antaranews.com",
+        "url": "https://jatim.antaranews.com/berita/1107417/bromo-wildfire-death-toll-rises-to-four-local-authorities-say",
+        "title": "Bromo wildfire death toll rises to four, local authorities say - ANTARA News Jawa Timur"
+      }
+    ],
+    "membersHash": "news|ID#2d7007c2",
+    "seen": "2026-10-23T12:11:09.903Z"
   },
   "news-wildfire-wildfire-pg-ba2f042e78": {
     "at": "2026-10-23T05:22:44.752Z",

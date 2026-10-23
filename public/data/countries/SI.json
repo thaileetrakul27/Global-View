@@ -2,111 +2,334 @@
   "code": "SI",
   "name": "Slovenia",
   "kind": "local",
-  "updated": "2026-10-23T05:22:44.752Z",
+  "updated": "2026-10-23T12:11:09.903Z",
   "source": {
-    "name": "Google News and Bing News",
+    "name": "Google News",
     "edition": "SI:sl",
     "url": "https://news.google.com/rss?hl=sl&gl=SI&ceid=SI%3Asl"
   },
   "articles": [
     {
-      "title": "Koncept Omoda X za občasen skok na brezpotja",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORjZ6TFhFM2oxRnozNkRpVFJ4Rm5mQ2xOMzNRbFVUZGdUb0JnbGZ5RWl3cGhzQ0ZUWF9tRVJkTmp4bTdrY0hjVV9ybm9ZbDU5SFFST09yQ1B4N3F4VUNBdm5icmtmMzdHZ1JBNVpUeGhtUTZHa09hUmFvOExwelFDM1RtQktyeHIyRjBXd2Vic0NjMzRET0FtdGVJVVpEVEs0LXM1NGFoY3h0SG1wUEI2THd2WHV3ZUxSaTRZVVBXZnFjMVhm?oc=5",
-      "outlet": "Najdi.si novice",
-      "outletUrl": "https://novice.najdi.si",
-      "published": "2026-10-23T04:00:31.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Omoda X concept for occasional jumps onto off-road trails",
-      "about": []
+      "title": "Hojs: SDS preiskave Black Cube ne bo ovirala; na mizah rubikove kocke",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE85VTF1T3A2ODBzb3JFYUpoTlJlQ2Nva01TU25fVFFncTEyVC0tMndILVlZdEN2UWd4cXdkaVdXOU42c3NXSC1VM3F3WHpCLXJfSEpSVVpVZ3RXR0ZkRll4S2ZnTEkwUjdrVklNaDdoVV9JWFhG?oc=5",
+      "outlet": "Svet24.si",
+      "outletUrl": "https://svet24.si",
+      "published": "2026-10-23T11:55:18.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Hojs: SDS investigations into Black Cube will not hinder; rubik's cubes on the desks",
+      "about": [
+        "SI"
+      ]
     },
     {
-      "title": "Po več kot 150 letih konec voženj s kočijami v Centralnem parku",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbWN4MmJfdkl2R2VRUTFFN2hvWkxnYWNVRHFQUjUyN05TblotNjBYalppWUU5cS1OcWpxV3MxaXJfbUdWT0VmeEdSNXN0cnpXZ3QzaGJZUVNXWUwwME4xN2d6SFJUcng3ZFFOY2JpSU5RRXpXc0YxRDExRW9YOFNZUHYtSjRZUDdqMUpTOXB1aXVaeEhCVzVZZ3RFTnZXU2FRSExWR0pn?oc=5",
+      "title": "Marjana Matjašič ne bo prevzela poslanskega mandata stranke Resni.ca",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZDhTbFlpU2NrQ0JPRFh4ZGFHU2o2MzVzQVdDSFB6eV9QNUpRM3MyRWItaGM2U3QydDE2Y2ZBVkI4dlJVMm41b2xZZE9jRHBYM1RnNUctTnYtVWVzSkdSLThWYTFvYV8xNm1IN3pJZWVYcmVVNU92MHVjYWZMTnNBX254aTlZUGhFQ1MydS1Fb2lxck5Tb0VVczlZMTVTTFRxYVVacFBwVGZGVjQ?oc=5",
+      "outlet": "rtvslo.si",
+      "outletUrl": "https://www.rtvslo.si",
+      "published": "2026-10-23T11:00:22.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Marjana Matjašič will not take up the parliamentary mandate of the Resni.ca party",
+      "about": [
+        "SI"
+      ]
+    },
+    {
+      "title": "[Video] Rončević “pojedel” šolski establišment",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE15ZzdCVkZ1Sk5aNzg4aThMQ1Z0bDI4d1dxNlB3Z0hlTldQQVNVQUI0RFFEenU5ZVhvYWNxd29sX0dCc1dVQktFaXEzb1JWNXR6RFpXbWp4OHg0czN3NXZRZktITDVGUEJwLTRfSEwtMEY?oc=5",
+      "outlet": "Nova24TV",
+      "outletUrl": "https://nova24tv.si",
+      "published": "2026-10-23T09:30:40.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "[Video] Rončević \"devoured\" the school establishment",
+      "about": [
+        "SI"
+      ]
+    },
+    {
+      "title": "47-letnik umoril svojo mamo, nato pobegnil: prijeli so ga v Italiji",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQM0hGbFJXb1k3NUNVSnlVUlJ5YW1zaHFETkE4MlZFYTJuYkR4ZTlvMGV4RGtudkV5NGVCVWZ6ejFIY1NLU2VpQWV6VkRaV2ItUEhUUWc0OXVkSndRckJTaGtzSFNaTmU3aWhzWkJudy1TZ09mVS1GSEh1a3p6eFlpUVltQUx1Nkk5dnlBSHlhUXQ0LWtSdzU1VHJB?oc=5",
       "outlet": "24ur.com",
       "outletUrl": "https://www.24ur.com",
-      "published": "2026-10-23T04:28:47.000Z",
-      "outlets": 2,
+      "published": "2026-10-23T10:46:00.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "After more than 150 years, horse-drawn carriage rides in Central Park come to an end",
+      "en": "47-year-old kills his mother, then flees: he was arrested in Italy",
       "about": [
-        "US"
+        "SI",
+        "IT"
       ]
     },
     {
-      "title": "Rončević: Jaz bom odločil, kdo mi bo svetoval. Štrukelj: Iz ministra bruha oblastniška aroganca.",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOb3pIcTZXT1EzUUJjeUtlWWM0ZW9seGQ3bGQ0bTJuYlVYU0tKT1B3bHNMNERPN2JUMVQ5VXhBYjZwcUlUeWVCMVFRV1FxNEZ2OWh1ZlJhMWdtdDltUk5ZMUl0U2lPYV9mRjEycHBMSTAxclVnakpOc2ZKT1JvNm5ueHRhQmFRMHRaRVNxRWF4RDFwNkFPekRyRU9aaC1fMnhIOTVpT3ZkZG9Pcld4QWU1Y2FyRFNyWjZSd2g2WG9BS3VPRHFvbU8zb1hn?oc=5",
-      "outlet": "rtvslo.si",
-      "outletUrl": "https://www.rtvslo.si",
-      "published": "2026-10-22T19:30:12.000Z",
+      "title": "Slovenska Bistrica: osumljenca naj bi ženske za prostitucijo izkoriščala kar 12 let",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT1VNWlZtOGNjUDZ5S3ZrWDh2YXBDWHU4VkxtWHp3VzkyTl8xZ2J3b2p1RmlHYThnM3ctVkd5WnU1Xy12dTRac2JSdWNQejd5eEtPa25EdU9rSkFZYnNCYXZhNUtFZzZFejhCbHBxY0YxUGN0cHBkWl9RR0kyamJBRUlDM3FOZmZHcnRQNlc0aTR5c0k2SVdaYnlKb2lUQVNLd3hZeVh1ZTJudXpjWERPTkJyQkxvQQ?oc=5",
+      "outlet": "Dnevnik",
+      "outletUrl": "https://www.dnevnik.si",
+      "published": "2026-10-23T10:33:35.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Rončević: I will decide who advises me. Štrukelj: Arrogance of power is spilling out of the minister.",
+      "en": "Slovenska Bistrica: suspects allegedly exploited women for prostitution for as long as 12 years",
       "about": [
         "SI"
       ]
     },
     {
-      "title": "Fridl Jarc: Stavba Drame je vendarle primernejša kot najeti prostori, zato jo bomo obnovili",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQURKbFFob1BWanFfdnNCVUJPUmJEbGV6Nm52X2FvWUdNa0VCMU5hMG9scFNNWE1YNFpUU0RGZEk5SE9GYUZVZ0pHeTZ5M0d3Q0ZQSFFhcE9BbVJNVUVuTnZMdXNQQmV6bTJMbzRwbkxrV3E0VXdRclJaSHp1ZVd0VUp6T0VRYWZCSVF5dS1DTENEMzVBY2p1WU5kN1RMdFFpTVZSWnFiUmIzWk43ZnVYcU93VHZyY0JTclQ5UG83QzBrSThidENBMkxqUQ?oc=5",
-      "outlet": "rtvslo.si",
-      "outletUrl": "https://www.rtvslo.si",
-      "published": "2026-10-22T20:44:56.000Z",
+      "title": "Manica Janežič Ambrožič: Zakaj pošiljate policiste nad novinarje Tarče? #video",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdk5iS1hUTWFKVjROWlItWUNoM1lMVVk3Q0ZIUmJkcmowczhCcnRNdFVaQkFSbEdXRDRFNVdGM0pOeHBEcFdCMG9YOGtwNGstdlBfMW9PaU1qYnRXSnZWYW9vRFJObGJza09tb1l5czNlSkFYX04zV0lZNFNhUThCY2JNa0dwTkRPT3FmWHVROVBLZGJuR3hyeUFmNl83ODRsbmFIMUlQcG1xbVRWWm1jY000bTg1UDlqNWtpVHY3RlRpOUdJNVo3QzlEd1RabWdYZHc?oc=5",
+      "outlet": "Siol.net",
+      "outletUrl": "https://siol.net",
+      "published": "2026-10-23T07:25:16.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Fridl Jarc: The Drama building is after all more suitable than rented premises, so we will renovate it",
+      "en": "Manica Janežič Ambrožič: Why are you sending police against Tarča journalists? #video",
       "about": [
         "SI"
       ]
     },
     {
-      "title": "\"Slovenski Watergate\": V DZ vre zaradi Black Cuba",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBZWDdGOGlvMVNZOFN6djBIb1l4MWhzMTdJVHFDS1EzWk1nTWNvVVFUUDhKR2dNQlZPV29CUDVDSExXeUJScWVhUHR1dEpvdVM0R0pvLWs3OWRqMkh5Rjdkd1RYSGRpSzlLWEtoLVB6SmZqZ0h1VmVvSnFkMTN4V0U?oc=5",
-      "outlet": "Žurnal24",
-      "outletUrl": "https://www.zurnal24.si",
-      "published": "2026-10-22T17:35:00.000Z",
+      "title": "Kdo je Andrej Cerk, ki prihaja v upravo Gen-I",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZTgzMktyVzQ0aVg1aUp3TVdmNS1LTVgzdmMtakV6X3phRjV0STI1c0h0S3hlbVFVS2cwTkRtNUkwTTk5R2tiV2RMalpTVGNmUk9DT1ZoN2gzWVVBZlo4WDc0QkFHNXRrU1ZLU3RneThGdXFTUmhXQVRHaGRoUVZpVWhR?oc=5",
+      "outlet": "Forbes Slovenija",
+      "outletUrl": "https://forbes.n1info.si",
+      "published": "2026-10-23T08:50:05.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "\"Slovenian Watergate\": Uproar in the National Assembly over Black Cuba",
+      "en": "Who is Andrej Cerk, who is joining the management of Gen-I",
       "about": [
         "SI"
       ]
     },
     {
-      "title": "Dve inteligenci, skupna prihodnost?",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTHg5QXg5QjQ0bEJRUHNpS3ZWcF90VzRfdWt3Y2N6NjJRNGJmNldaYWxsYmM3Rmp0R0xRUEpKeUV3Z1dZTFFjc1ZZUlN3M0Z6Z3JlcjU2b0QzbXhBY0poZVpJeEE3SkdtQVNiNDRyYkJ6emlCNTF4dTM2ODY5NkpMUDEyTjEwLTBreGVncVdB?oc=5",
+      "title": "Nova predvolilna anketa v Srbiji: naročil jo je Vučić, poglejte, kakšni so rezultati",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRjZfOEUtRm5aSEczY0ZIWUxhOTZlU3gtVDMyLUw4djZnWFYzeW9hSFZwSk9CSGVjN2pOVVYtQTU0al9sUm96Z2tSd3hvai1MWE9kS1JlYXJ2RHVQVWc1T1FYLTRabDk2ck5FbzRiZm9SYW9GaTB6WTIycEpvUTE4aldTUEEySEdhRHZfOExrVTRwSnRzeDIxbnB2UHRVU1Q0blJaSEZsQzhLa2VyQks0RV9ieUw4WW9JR2JoeXc1MUFMczA?oc=5",
+      "outlet": "Dnevnik",
+      "outletUrl": "https://www.dnevnik.si",
+      "published": "2026-10-23T08:00:43.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "New pre-election poll in Serbia: commissioned by Vučić, see what the results are",
+      "about": [
+        "RS"
+      ]
+    },
+    {
+      "title": "Jutri nova vremenska motnja: hladno bo, meja sneženja se bo spustila",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTWwzbEE5QU1SN2lHUGlMT0RsQmp5RmUxcXczaE9XbElYaEtId2hRdnNCVXVuYl9VTDYxeUR4aVJ0dGwxZG1EU3Z5NnI5c3ZFV19KQ015T3VmQTVLc3pVaDVfUXBRZDNBYnhBbjBkUzVNU3FMRTJlc2l2M3BOdFRrcThVNEh5N1EwVW1qVFdXZGZXU3lMclNKQlh5OF9Lbk8tc2pzMXlvNVg1Z2s?oc=5",
+      "outlet": "Siol.net",
+      "outletUrl": "https://siol.net",
+      "published": "2026-10-23T07:07:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Tomorrow a new weather disturbance: it will be cold, the snow line will drop",
+      "about": [
+        "SI"
+      ]
+    },
+    {
+      "title": "Trump potrdil ponovno delovanje Starshielda v Ukrajini, odgovornost za omejitve ostaja nejasna",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRkdobmdOaVdqdkwwaWVNSnVOWnFZSDFIbWtDV0ExTWQ5QUg5eHBhZlZfRVB3TDg3SWV6M0NXZExNWGRvZ29SZGNENzBkd0c4TmNOWjRZZEpRU1JrS0ZLNVpyYW1KbXpYYjh3NjVqQ2VHWU1DVi1qbFN2WEoxX1RsVS11aDZWRVZ0UU1CeFVPVFRtSFVVODh6Z3JYUlgxT3IwTFpzS1Q4VHVDRXd3NjFUZmQtVm0tN2Zjb0tzYnN0cjk4d2s0czI3dHpLZXdzcTRTaHJ5VTNiVzhaWVBZ?oc=5",
       "outlet": "rtvslo.si",
       "outletUrl": "https://www.rtvslo.si",
-      "published": "2026-10-23T04:26:56.000Z",
-      "outlets": 3,
+      "published": "2026-10-23T07:43:00.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Two intelligences, a shared future?",
+      "en": "Trump confirms the renewed operation of Starshield in Ukraine, responsibility for the restrictions remains unclear",
+      "about": [
+        "US",
+        "UA"
+      ]
+    },
+    {
+      "title": "Slavna Rusinja ne skriva navdušenja nad Dončićem",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeU1QUUhvLXBFQmZtR1U5Sm1BejRpR283Qm9aaVlNczNMR2RYU0FfMjBXejA2SUM0ZFNnYXN6MjVFaXBMTVFiRW5EYk5KS2pwS3RCTmVBWVc5ZUZvdzU3T29icWsxMjdrZGxxTzkxTjBSbTV4QlZ0dEJrSHJfblJMVjZpSl92R3N0Q3hYUzNxN3hia0U5dklvMUZmVVRwSHNocjFWeVRB?oc=5",
+      "outlet": "Siol.net",
+      "outletUrl": "https://siol.net",
+      "published": "2026-10-23T09:41:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Famous Russian woman does not hide her enthusiasm for Dončić",
       "about": []
     },
     {
-      "title": "Evropska drama v Celju: Grofi v 90. minuti do remija proti Salzburgu (VIDEO)",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON29qazJEQVBBMk9XRE5oN25kTFBmUW9hc3RaWGkwWm9teGdNTFBLT1podDhrOEZYcUQ3eEcxdTB1VndYZ1BWeDRLZFNWZGtwbFZqOTNsM2hIOWZ4SkRaeUI0YUFkYlRpTE9SdWEzbnJJeUh2MHFieExhZVZPX0dvQWt2dVhydkZQNjU5M0dmRDR5Ym1FYUFGUHl3SEFpdw?oc=5",
-      "outlet": "Šport TV",
-      "outletUrl": "https://www.sport-tv.si",
-      "published": "2026-10-23T00:06:54.000Z",
+      "title": "EU v zimo vstopa z najnižjimi zalogami plina doslej",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObnVRYVZTVkRPUlJJN1J6UG95MXBaYzRlR1JVWlMtUHZ2ZDctZDd6anBEa3lzamJ2aXJvbjZ2Y2U3ZUt6MHhLSzI0Vm44aHFwUTFncjl3V1BCQU1rWThwWTF5VXpBbXlBZXAzb211V2NKRnFBZDVlR0RPWVRxRkg4UllxRU1wU2pTOGYzOWtFdnQxRlhxVURMYUVRa2kzUQ?oc=5",
+      "outlet": "24ur.com",
+      "outletUrl": "https://www.24ur.com",
+      "published": "2026-10-23T09:08:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "EU enters winter with the lowest gas reserves so far",
+      "about": []
+    },
+    {
+      "title": "Samotni slovenski jezdec med smučarsko elito: Motivacija je velika, cilji ostajajo visoki",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYlYyRUI0RUFmS2FrX0tvWDRRbDU1ZVh1TWU4UXE2TzRha29WX0NEUXFpLUNUWF9IT09YLVZraUw1RkVhODl6WkQ0WHJZdmFsbkViT2xHdDBvSElFSndzYmJuT1l6S0NhbVdCN1dpM29jVnNUam5GNWJPcnpMTGtGbXhoT1pjT2tHS21fOU5IWHVqZw?oc=5",
+      "outlet": "24ur.com",
+      "outletUrl": "https://www.24ur.com",
+      "published": "2026-10-23T09:30:01.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "European drama in Celje: Grofi in the 90th minute to a draw against Salzburg (VIDEO)",
+      "en": "Lone Slovenian rider among the ski elite: Motivation is high, goals remain high",
+      "about": [
+        "SI"
+      ]
+    },
+    {
+      "title": "Kramer: Salzburg je lahko vesel, da je s točko odšel iz Celja",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdnREUFZ4Rmg4UEw4UGR0N2tvZTZWSU9vOXQzRzVROVQ3WkhnTU0taUlYdXRXaWFSSzFCR0JDRXNuUEkzcWxyR2xMWHRyUzh0WnBqcTUtLXNHbWt5MGFKTTdMc3Q3MGpTTDhuVXhPMER1X1BGYUw2TUI2T2JyZ0pFbWJtNzB5eDZURjVUMUlrc1FJbEhWeTBYZkNTUWxLbFRQSXE0XzZZc3ZpUjg1a2tkblFjUGt1c1E?oc=5",
+      "outlet": "rtvslo.si",
+      "outletUrl": "https://www.rtvslo.si",
+      "published": "2026-10-23T09:19:35.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Kramer: Salzburg can be glad it left Celje with a point",
       "about": [
         "SI",
         "AT"
       ]
     },
     {
-      "title": "'Vse gre na vaš račun. Toda potem mi morate izročiti Ukrajino'",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYk9xZG13MTdPaGROSG8wYmx5ajE2cDd3NVJzaHVSMmxlN2tieVRzeS1SVmdwXy1OOVJfRDVicGNEZUxZazdGek1nR1d5dnBMdnJZdVdKVmgyQ29FRU5EanVJNXIwOEZJWEdXNjFtVmJqTzRONEoxekJfdDdJOFNENDhzQlJHcTFQX191cG1lck5XZWZENUVXbEJvUnR6SW9F?oc=5",
+      "title": "Najnovejše o datumu začetka delovanja sekcijskega merjenja hitrosti",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNaDBKRHBhNnJwb0l3RWIzb0lRRlpralBOLVUzSFlFbXhXWVFyWU8yT3d6YlBsUkZaellwYzVGRzlXUTl1S1B4c045MjVKc1FSZGFsV0hUclJINU83RWFON00wSWJfd3FtXzNpcnhRQXloSVVKMWFyU2tkNlVXcHdtVU8teGM0MkF0c2hPUFlBNm52S0VuSTZ3MzJITnUxZzZabEV4Z2VWbmhURWNRbEREdl9YZUFsSXp0cU9QWDQ3WVhZcmM0dDRjcDdVdHhZM3JXY2R4Z0pZVElDSmFlcFhsVnN1dUlwUE0?oc=5",
+      "outlet": "Žurnal24",
+      "outletUrl": "https://www.zurnal24.si",
+      "published": "2026-10-23T11:16:33.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Latest on the start date of section speed measurement",
+      "about": [
+        "SI"
+      ]
+    },
+    {
+      "title": "Janša udaril pred državno proslavo: »Simbol agresorja jim pomeni več kot Slovenija!« Čaka se odziv Pirc Musarjeve",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVFpEeWhSNHdpdjBUZXpsb3htX2p4YzJuQUFfb2xQOFU1RXk1TVB3T0FzMG4wWDFWNHJXNzdqUkVTVTBISHZGQmRiX1FVbkNkN0wwRC1VODVFNkpFXzNqbTZtcUVkNGVfY0VfcFBPekdMZGZaU09TeHRXTlY5MUttMHAwcEpnMU1jT0hfTXZncmVnT1B4SkxjVXlWaEZXNzBTZGROQUFWT040T2hfcHBTNnNrcm5LcllRUnpqSnB0MFRWM3hhTTdYX1VzeENQeVNzaUE?oc=5",
+      "outlet": "Slovenske novice",
+      "outletUrl": "https://slovenskenovice.delo.si",
+      "published": "2026-10-23T10:54:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Janša strikes before the national celebration: \"A symbol of the aggressor means more to them than Slovenia!\" Awaiting a response from Pirc Musar",
+      "about": [
+        "SI"
+      ]
+    },
+    {
+      "title": "Požar na Ptuju zajel skladišče, stopnišče in restavracijo, stanovalce evakuirali, ena oseba življenjsko ogrožena",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTkwtSWJVVlRKTExNQjZQN0pRMktLUThUdXJTZUhLM3JNMzRzdXJVdEhNUmpaQlFkeGJ2VFRUV194dnc3dUI4aU1PUENmTmh0TWVxOTFaNVhabTBOQlI4VGNLNG93S0ptbFhxUHFFQ0h0NXlJdXN2dlFWVlZ3UnM4OGZfdllFTWp1dkJSQ29RLVVmRVZuemZSN055NWdZRG1UREo2MU5uRUhZSGtEcnRUS1RXbE02NEdpOGlzT3l3cHdqeldXWEkyR1g3SHBaeVZpclVqS05uZFAzb2JRcTRYLVlWaw?oc=5",
+      "outlet": "Ptujinfo.com",
+      "outletUrl": "https://ptujinfo.com",
+      "published": "2026-10-23T05:55:48.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Fire in Ptuj engulfs warehouse, staircase and restaurant, residents evacuated, one person life-threatened",
+      "about": [
+        "SI"
+      ]
+    },
+    {
+      "title": "Direktor Elesa opozarja: Leto 2027 bo za podjetja, ki so odlašala z nakupom elektrike, zahtevno",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTmwzWFpoNmxzN3MxeEx3NnRkYy1PeDUtMUVZcDFFM0I2a2s1T01VTC15T0xSVzh6QmJMYzZqRV9ZTE84MzFMWmYtTUJrZEZnTldYd3hnWUpUVmxSTHpsaVhDVHlaN0g2R2l4SW84ZEFwS0Q1dW11Nm8ySWZKb2Yxb0REMHI0dGNlRXBBTE5od182em5Oek5fRUlBLXBHMXZ5N3htMGZYWFJhV2h5Rkk3aFkyLXFOOU1pWVR3dmN6NXpldzgwZ2RlR1o3RFdQQVE?oc=5",
+      "outlet": "rtvslo.si",
+      "outletUrl": "https://www.rtvslo.si",
+      "published": "2026-10-23T09:51:22.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Eles director warns: 2027 will be challenging for companies that delayed buying electricity",
+      "about": [
+        "SI"
+      ]
+    },
+    {
+      "title": "Predčasno v polfinale! Šeško za svoj zadnji mladinski turnir pripravlja 'veliko stvar'",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWFRGWm9PY3c0dDc1SzZELVpSaXkzUUQ0bmFCaldqMl9pNUVvWS1wTmFKczFsbUJKVVFoTmNCM1hFZ0JTUWF2eDY0eWFJdGxHYl93X2Q1dnBVVDNEQTlEa1k0ZDk4cGNnT0VMaWV4SzBHOUlMTF9ReGNGdmRNbmt2bmpVY0YyS1kxMlpGX3c2YW5lVXpsSUJNQlZkSW9ZOTluX3F0M2lCNll6cHZkcGoySTcyMTl3WDRvV3BPWFpJRQ?oc=5",
       "outlet": "24ur.com",
       "outletUrl": "https://www.24ur.com",
-      "published": "2026-10-23T04:00:00.000Z",
-      "outlets": 3,
+      "published": "2026-10-23T07:32:04.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "'Everything is on your account. But then you have to hand over Ukraine to us'",
+      "en": "Early into the semifinals! Šeško preparing a 'big thing' for his last youth tournament",
       "about": []
+    },
+    {
+      "title": "Papežu so odsvetovali let s helikopterjem",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYTV1aEdZQU1wTUxwdmhfZWVhUUJlMGt4cUVkTEx3Qjl0T3RwT2pxTi1NYmN6RTZ6N3pieERudWJUOExfOHFCUjF1SVIxdk80WGJhZlpSVWhIUlZ3U283cVh1dXRjRmRCUDlnZVVRWFRTbE91UGVlRkx1ZkNhN3UzUlNseVIzTjl6OFhxZW1YaFVndw?oc=5",
+      "outlet": "Siol.net",
+      "outletUrl": "https://siol.net",
+      "published": "2026-10-23T09:41:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Pope advised against travelling by helicopter",
+      "about": []
+    },
+    {
+      "title": "Francoska, italijanska in belgijska mesta požgana in razdejana, novinarji na RTV pa o “protestiranju za skupno dobro”",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRWJYeDVTSFdOOWxaQ3FzT2RfQXdQcmJrS2xEQUJheUpKRk4zUGx2N2RNYzF4amNIVTUyR2F4RzZRWENxYlNwTzZXc2o2YUZsbFBiLWxTUWFGMzgxTExaeUY3SWtQMlBRTVhGR3dQR2Q0VHpvS0Z6VWpPdnViemc4X3FJSUNCNTlGSmJGMWZEcTVjVUhXUnFsZzUwNzl1ay1Cam8tUHNVNmtGLW54X2FEag?oc=5",
+      "outlet": "Zanima.me",
+      "outletUrl": "https://www.zanima.me",
+      "published": "2026-10-23T04:33:44.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "French, Italian and Belgian cities set on fire and devastated, and journalists at RTV on \"protesting for the common good\"",
+      "about": [
+        "FR",
+        "IT",
+        "BE",
+        "SI"
+      ]
+    },
+    {
+      "title": "Rusi ponoči nad Kijev z 21 balističnimi raketami, nekatere so imele kasetno strelivo #vŽivo",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOT0F5NE0zQ2N3dTFOZnIyT2s5bVZ6VUZWLUpYcG8wTTRERWFXYXA4X3JBSnRKLU9aem0yeHFnV015R2M3WnVjSnVTOTAzWGtmbVo0TTBjUjh4dTR5bmE2YUdWZ2JlVS1XaUFKSHZFZUpucVFLMmpnYjh2aFVQTllsVDRqSG94cmFOR2VmQUdUaVhvM1F3b054Tk5YRVdzOEhtM3BWQnp2dkt3eUlYWS1sS2NVaTV0Skx6bGtRRWdZeXhlS28?oc=5",
+      "outlet": "Siol.net",
+      "outletUrl": "https://siol.net",
+      "published": "2026-10-23T04:37:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Russians overnight at Kyiv with 21 ballistic missiles, some carried cluster munitions #live",
+      "about": [
+        "RU",
+        "UA"
+      ]
+    },
+    {
+      "title": "Droge, fontane, stanovanja in omejevanje mandatov: kako v ljubljanski županski tekmi kandidati prepričujejo volivce",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNFFZSEpHRzhjRTdLUTZCeXlzZmc3YnJSLUJ6QXVZNmZ6Tk91cjY5cE9JYXNnQm44Vk5xOXdqU190cDgtMWVfdjZ3dzViLWl0RUNlZlpCN3FSV1pqd1pqVk8wMjhROXlkQXZZRmpQdDQ4eVBpT2R1d2s3bGUtMGpXMm0xM0pIelJZaFRkN1BTVXpBMi1pald2UEdYRXJUY1VtcDdEYlVpdExnejR6?oc=5",
+      "outlet": "Siol.net",
+      "outletUrl": "https://siol.net",
+      "published": "2026-10-23T09:00:31.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Drugs, fountains, apartments and limiting mandates: how candidates in the Ljubljana mayoral race are persuading voters",
+      "about": [
+        "SI"
+      ]
+    },
+    {
+      "title": "Nafta prek 114 dolarjev; strah pred UI trese borze",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaW9WVDA1dWdWUEhWV2ljQ0hGYXJrOUdNRF9UbUxEbkdXbEhJakdPNXdBZW16eUYta25UVkpPX1U0enJtZzlETHotZENRb2YwQXJHeFpIMUFDd1c5Mmo1eVhXRlU1amNZQTY1YW5OcmpOSnJQZVRnN0Y5YTZSbEliS1hDV0Y3SzJnTTlBYW1B?oc=5",
+      "outlet": "Finance.si",
+      "outletUrl": "https://www.finance.si",
+      "published": "2026-10-23T04:24:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Oil above 114 dollars; fear of AI shakes stock exchanges",
+      "about": []
+    },
+    {
+      "title": "Svoboda predlaga razrešitev šefa Ukoma Jeretiča",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOEZHU0wzUmcydlViQ3RnZi02SWgwaDEtSUg1bnAtLUJuNldXZnRWU05qVnJQOEt0OVBzc2ZWRWhRZ1l1SDVqWnVTR0tnMXZCTjNISGdLbWRfUHNlQmhZYk1CdGhSV3Q0c3gxeng1am0wNzVhcDgyNm9sYnpGT0JoNS1R?oc=5",
+      "outlet": "Info360",
+      "outletUrl": "https://info360.si",
+      "published": "2026-10-23T08:27:30.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Svoboda proposes dismissal of Ukom head Jeretič",
+      "about": [
+        "SI"
+      ]
     },
     {
       "title": "Praporščaki NOB ostali brez vabila na državno proslavo. Kako to pojasnjuje Kacin",
@@ -122,274 +345,54 @@
       ]
     },
     {
-      "title": "Na velikem študentskem shodu ob koncu kampanje ogromna udeležba: \"Zmaga kliče, Vučić odhaja\"",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNDVsVDQzYi0zZy1Cdkk5WTZaTTRMM0pTRldPaGVXaXR2YmlQYktIazNyNVJzRFBYaTJtY3UxN0ZRY0YxWjlkU2txTUR0WGVfcy10QkJpUV9PZFhRQng5c3VSNkFLZXRDYnVSQnVLNDk4aVQ0SDRTRk5NUUVsYjlIWTBQd1VxbmtqMXl2N1VBcUV2WGVUVFZXdGppYnBaRkNwSEItbFNDMnVOOEpWb0E?oc=5",
-      "outlet": "N1 Slovenija",
-      "outletUrl": "https://n1info.si",
-      "published": "2026-10-22T17:54:14.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "At a large student rally at the end of the campaign, huge turnout: \"Victory is calling, Vučić is leaving\"",
-      "about": [
-        "RS"
-      ]
-    },
-    {
-      "title": "Sukičeva vložila kazensko ovadbo, Logar: Sezona lova na Demokrate je odprta",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbURqVXJhLUhLMEJlbDNNSEhyNUV0QkpNczkyNGMtZkxmZEQ3c2tUamtzRFRhZkQxOHZzTkN1Q1FyWTEwa3FuNllLUHNEdWFrZXRheGU0akRCYlY3TUg3aC01SkJuTDJvM19JcWMtX3dMNUNiUU1ydVJ3eDVTcVNsS1gwUmt2RzFxUkpTWW1xSWEyakhzZVgxeDkyN0VBSmhhT2pUOTNqM0dpVUZTUkFCeWlzemw?oc=5",
-      "outlet": "24ur.com",
-      "outletUrl": "https://www.24ur.com",
-      "published": "2026-10-22T12:05:57.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Sukič files criminal complaint, Logar: Hunting season on Democrats is open",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "Letošnja nagrada Saharova Mednarodnemu kazenskemu sodišču",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTnplT3R2WGx4eFZZdUNqbHVGb3ZKdUFCWFJBcXlrXzdoRmNvZ2w0d0tjbFpDMjVXTkUtR1kyZU5sLW8tZ2hOeVRFcGcwSmYzUUxmZk1idWh3T2xpbTFMNFNBYmdtWW9qaUZ2bjhkU21fMmhtTDdtZDMzRk82a243c0FsWFh1RUM4TkJrSWYzYUpab1lNYVJfaW9aMmVtV0JNUm1F?oc=5",
+      "title": "Po New Yorku od leta 2028 kočije s konjsko vprego ne bodo več vozile",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTWdKbEV4YmhxOEZjRG5nRldyT3BFemtjN0xfZU14VWExQ0RzcGkyTWNUVDZHREc3bG1HRWVvX1RIc1NNV1ZvajMzZHRuYUxwS0VqOThiNVNFR3daMC1RYVpZQ2RfTzlITk80cFdROTlJdWJsellDZnR5UktVa1h2ZDFJVVBaRmIyZk1QcEdDRTRMWHU0QW5BU1BrdXhLb3VPSjlBRnZBS2ZGYUpTbVFxSGdFcDhvU0VSMzlVeGduWERwVW0z?oc=5",
       "outlet": "rtvslo.si",
       "outletUrl": "https://www.rtvslo.si",
-      "published": "2026-10-22T19:58:20.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "This year's Sakharov Prize goes to the International Criminal Court",
-      "about": []
-    },
-    {
-      "title": "Velika policijska racija v Sloveniji: Zasegli darila in podkupnine, pridržali šest oseb",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNmlKaVNaazZVMW9rX1lsVGZBN3lJNDdPS3UxZWN2Y0kzWU16RjJkX09sZmdvNjBHcmxOWDRGRWwzWkJsQWFmXzJvR3JXMld3YXlHcFlYUUVPdi1ZX3NwbjRiaG01Y3laVlo0R3pHSU5wUVZyZ1VrUFVMSU96OGF5ODNyUjc1VDdIQ19lMlVzNUQ2SEpQYm5LNFU2MmNKMkVfTGhJeEdLVTU3aUNQQ1VLd3JrWjJDbk1DZEJQLUVNY2p2ckxNUmZYNkFMS2ZObDQ?oc=5",
-      "outlet": "Slovenske novice",
-      "outletUrl": "https://slovenskenovice.delo.si",
-      "published": "2026-10-22T12:26:00.000Z",
+      "published": "2026-10-23T07:35:44.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Major police raid in Slovenia: gifts and bribes seized, six people detained",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "Timi Max Elšnik zabil z 20 metrov, Zvezdi vseeno samo točka",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcVRxa3FoMG9SU01yWHFHQm5Kb1BTRW5SVXJ3Q3pQY0JiQ2FfZmpIUl93SmZhOWktOTdibS1scUJ2WWxramt5SjY3SDBLZlh4SWE3THpEUzVZUWU3azI1bWdGYXVZZ1B5aXdDZVNLbUwyc2ZRTUFPc0cwQk1sV0pBY25nbnFkcGdMbWJZWWU4Ul9pRHhXUDVZSzVFbVVpalE?oc=5",
-      "outlet": "Siol.net",
-      "outletUrl": "https://siol.net",
-      "published": "2026-10-22T21:09:28.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Timi Max Elšnik scores from 20 metres, but Zvezda still only gets a point",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "500 kilometrov do Benetk in nazaj: električni, zamuda in kje naj polnim?",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOW5yZTk4RFp2R0phYUIzTGEwalZLdVBMeUtnajRMSHNzNGNPbVRvZWZHWmdKemdCN1dWNXFjXy1RVW1tTG54aFgtaEtXMW1Tb25xbXN3Z2o3SFg1cmlEeUJHdFlIb1VNR3ZsUkZMZWNRNGlKYVVlS2lBT2Y3TWFJMHE0UHJYTm5NaVU0ZkwxNlJoSUM5am9HeHNVUjU0OUJwNF85a0JYREp6QTVrMF9CR3JyMTY3R3dBTlE?oc=5",
-      "outlet": "Siol.net",
-      "outletUrl": "https://siol.net",
-      "published": "2026-10-23T02:00:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "500 kilometres to Venice and back: electric, a delay, and where should I charge?",
-      "about": [
-        "IT"
-      ]
-    },
-    {
-      "title": "Po »kazni za življenje na podeželju« nova težava Slovenskih železnic v Murski Soboti, tokrat precej hujša",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMTR0ckNJNlRvY3BVUEJXamNFZjJ1QzJJRndBS2lnMk9CeFNfMVNNY1l6UW01ZFdhOW5uRzNoYzlVY3ZPX05VYlhKaDRUTXVDN3A4clBLVmZxSENaNVRiZUVTU0g1VUhDZjlkVndWQ0R5NXVHVWhTZ0pTQzRWbUVEemF6MW9FZ09BMl9kbVdNaWZONE5mUjdsZnMwZloxbGt6OGRmcXhVNlhuV29SZE5JeUN5T3dvWXBCbDJjdnpXVHZwXzBGdG4td2RadkZOXzBWLVpvbUxaUUhkQ0t3aHBjNw?oc=5",
-      "outlet": "Sobotainfo.com",
-      "outletUrl": "https://sobotainfo.com",
-      "published": "2026-10-23T02:00:50.000Z",
-      "outlets": 3,
-      "trending": false,
-      "en": "After the 'punishment for living in the countryside', a new problem for Slovenian Railways in Murska Sobota, this time much worse",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "Največ kronometra po letu 2012, a odločilni dnevi v Pogačarjevih Pirenejih",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOGpOUkFjQ3VLanhXWFQwQWU3eEY4MmtueU5qSTdIWmFHdmNDdmx6dDE4dFd2TGFPM1U0eWR6VlFWd3lGZ0NpU2FTeFYwcmNybXlxV0RzV3FJMlNEX1U3TTR4ZmZDNG1qeW9IUHFXdXQ5d3BONHNJXzFOOG9wZHlvczdheFhwMUNGTG12ck9kQnBWcF9sQkVMT1ZiTTBTend4WHVuWnFDY2k2Y1NIVUVWYXRRMEtFX1NBQi1hSWNZX1lDQ1U4M1pKYlAxU0hSSU9aYldLNw?oc=5",
-      "outlet": "rtvslo.si",
-      "outletUrl": "https://www.rtvslo.si",
-      "published": "2026-10-22T19:27:20.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Most time trial kilometres since 2012, but decisive days in Pogačar's Pyrenees",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "EDEN NA BEGU, DRUGI NA PROSTOSTI: Matoz ostro po tožilstvu, policijski sindikat podpira ministra",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOck95RXJqWHlHeWllQ1FHd1lLRmw3UmVBNzBMaXZjV1FuU0tfUE9xZW9HYWJUeEtFNjcwX0s4VHBuLU5RRUdKMXVjT3JJcVFaMzZiNkRGdHpuRnBoLW9ncmkyMnEtRGt0aHhoRXJwZHBPWlhMVTVlaWROaHRsTHZ6QjFZUi0yVkRoSGhibGpIWWtvSERRVzRIOUZYN3htaHA2X2RCcTBTUDdQRTdkXzNfVTNvOXJnUWl6OGxSODdXbWJlRk9nYW1NUQ?oc=5",
-      "outlet": "regionalobala.si",
-      "outletUrl": "https://www.regionalobala.si",
-      "published": "2026-10-22T06:24:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "ONE ON THE RUN, OTHERS AT LARGE: Matoz harshly against the prosecution, police union supports the minister",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "Z novim občinskim prostorskim načrtom bo Celje dobilo več kot 80 hektarjev stanovanjskih površin",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaURnWkZCTTZ5Q1ZRQnBraU1KMDY5MEtQZXlYMEZSVV9SU0JRNDEyN1YxaTNYNG85RmhveDFsSlFSc3M1Y1NJQnczSERuXzJxU0ZlTklieFZrZWF2OEZfUGVtTWlvWFJ0ZG5CNnhSNFNaclpsR1hsSmZnQTd4dUR3SHgtV053dzhCNTVuMVJKN3pvU0dXaXBWc0NlS0FkSmZsN2JaRlpyaDIxeVRlTzZJU2FVRkYxdk91RDZEN1FnR19IN1NRRjJpMzVnZ2cxZGNaMm53cnhtYkloRUJEMDY5TTUzVG0?oc=5",
-      "outlet": "rtvslo.si",
-      "outletUrl": "https://www.rtvslo.si",
-      "published": "2026-10-22T10:00:28.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "With the new municipal spatial plan, Celje will get more than 80 hectares of residential areas",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "Macron je sporočil, da bodo v soboto dovoljeni le shodi v organizaciji sindikatov",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPN0h0YllRWFB1Sjhyby1WemZ1cTVOQ2Y5MUsyeG5MQmtpYnk5dTJtS3YtVUNsbjI1anFwMkJWOWpsX2lybjY5c0FZQkxXekgwcFVOaVdleThtU0FwbnJDSG1EQS1BamlVSGdiRjljaHZNYnRkTVR3LU45cmxYY2tUZThHOXR3VG5qZnBGYndpSUxMc3Zna3FHYlo3Wmw2OVBVNWdQTDB0a3ltZnJ5MThhbU15R2hJa1VVTlJCX05n?oc=5",
-      "outlet": "rtvslo.si",
-      "outletUrl": "https://www.rtvslo.si",
-      "published": "2026-10-22T12:44:55.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Macron said that only demonstrations organised by trade unions will be allowed on Saturday",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Visoka kibernetska ogroženost v Sloveniji: URSIV zahteva dodatne varnostne ukrepe",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQ1ZNQjdZWWl4TV95a21XVUpIb0tRUDB2TFdsMkRIOXVTejRSLXItXzZ3Mm5JUDFRYTdMbWJ6ZG9ZRTE5OVZTQW44eFU1TTRRRnFsbVFLQVA2R25pWFNqZUl2cXdZMjd4RmF5dnkyVy1fNUZISjdvdGRCSWFTT19XaFIzU0xYTF9PZ0hyZ2VwbENzQjFwQzBLQ2FoWUFrM1Jhdjhz?oc=5",
-      "outlet": "Nova24TV",
-      "outletUrl": "https://nova24tv.si",
-      "published": "2026-10-22T06:00:57.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "High cyber threat in Slovenia: URSIV calls for additional security measures",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "Pri Lakers uvedli nenavaden sistem kazni, Dončić daleč največji zaslužkar",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLWFQeGpiOG9CYlFjUDBfaGNZazFGTS1kTk5zN2xnQnZFdlNuTF95R2xYZGdKYmNUakhqdUNDY3plQmxZQ2RHRllUM3RmQ3Y1WUc1SGVUS010aEMtaXU0RTl3d3VzdGZJVVJJUUdaVXdHREJ4VzJRazdfOTExVFdLTjQtcHJyV0tZMktqRDNPT0h5RGRNUi1SYlVvemlEdXI0UDVHR3dzOGp5QQ?oc=5",
-      "outlet": "Delo.si",
-      "outletUrl": "https://www.delo.si",
-      "published": "2026-10-22T15:12:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Lakers introduce an unusual fine system, Dončić by far the biggest earner",
+      "en": "In New York, horse-drawn carriages will no longer operate from 2028",
       "about": [
         "US"
       ]
     },
     {
-      "title": "Pozimi z Brnika na 22 destinacij; nova bo povezava s Tenerifom",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdE15WG9XY2ItSDZGb0xyU3pCeXA3blpFTElTR2N3UGhpNjdVeC1zTkFIRUJmWmhfbFAxcDFJR05LOHpvUVlUczRMUG5YckYtWE1qMTYzVUJmZS1zYzhZLVkzc3d3eWE5NGxjR2R0WWpEYkNtS2F4Y2tJdlE5NUxyNTNRSTlmdmR5cVdsaXJkQ3Z2bkJmSlhRTkh0OXl0T3FLV0tFVmU1dzhyeU83d3RJRTVvMmw3OW1raXFr?oc=5",
-      "outlet": "rtvslo.si",
-      "outletUrl": "https://www.rtvslo.si",
-      "published": "2026-10-22T06:33:13.000Z",
+      "title": "Usodni ovinek na Dolenjskem: trčil v drevo in umrl na kraju nesreče",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMUppR0NvT1pEVXdJaHZodHBUSjZlZmFfbjlKZWVzR1lsbVBSbDlyUzdfTW1kY1hjTGd0MlYtbWpsRTYzVWt6cWNyZ2YxbUY3LXRBV19OZk1MZXZscUFHcGxKNFE4MzYwZi1oLXAxcmprN2wtbFJuekhjXy1LSkpsREtxSk5mT2VLTFkzODQ1a2ltQUlvcU5SWFVRR1lCLXVKYV9wQ0JaUmVhdms?oc=5",
+      "outlet": "Siol.net",
+      "outletUrl": "https://siol.net",
+      "published": "2026-10-23T06:21:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "In winter, flights from Brnik to 22 destinations; the new one will be a connection to Tenerife",
-      "about": [
-        "SI",
-        "ES"
-      ]
-    },
-    {
-      "title": "Hojs: Golob ni edina tarča preiskave, Tacer Perlin: To ni ključno vprašanje",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB6S3hzZnJLbmNyR3hmMF80eTBVRXg1aTJtcFp5UWg0R29BbWtId1hFd0dRMjFuRFVxM1RJd0s3a1F5OTQyeTBndWc1Y3k5Z2hrR0lNSnVhMHUtUzNtenh6VnhrUzBYYjQtZ3FYUVpDcUdwSTB0eWdfdERxVmlZcFk?oc=5",
-      "outlet": "24ur.com",
-      "outletUrl": "https://www.24ur.com",
-      "published": "2026-10-22T19:44:08.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Hojs: Golob is not the only target of the investigation, Tacer Perlin: This is not the key question",
+      "en": "Fatal bend in Dolenjska: crashed into a tree and died at the scene",
       "about": [
         "SI"
       ]
     },
     {
-      "title": "Srhljiva napoved iz Rusije: Evropa sploh ne ve, kaj jo čaka",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObmlVQUxOMWc3ZTNRZVFGeWN1c2c0YkdGWjlrTnR6U3NRb1k3b096bHU1RFcteFc1MnphNlAxNjF0bTdpaFZHN3BUc0hST2VxTHZiOE41U2ZfU3hoMzJvYV9vSXRyUEZ2MUcyRnY4Z0NZWjlzUGtqaXNmMHQ1SVkwMXhmcFJNekJNbHo5TGdURldHQWRPSklUMA?oc=5",
-      "outlet": "Siol.net",
-      "outletUrl": "https://siol.net",
-      "published": "2026-10-23T02:00:00.000Z",
-      "outlets": 1,
+      "title": "Črni scenariji za Slovenijo: Blejskemu jezeru grozi »gnitje«, Koper in Izola bi lahko znova postala otoka",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQbVZ3S2pkbmJGQ0d3NHUzU0UxYUxaZGFkOEFWMm56ZldoY052S09fdHlPTmI4WWUwbzhIdThTa2cwR2x3VTNRNzNfOExHbklMLVRyaXRkc2h5VmQ3ejZXVUU3bHNfSjlZejRzUWYxVDhhWDJIa0xmUlBIN3lPMEQyWjNHb2p1OFZOVTA2T2ZrcTVEbXVZdG5fNUtkeUtTcUtwOTJiVW1mQTZyN2I2ZVk3Ty1QYkgxQnd2LU5mdXlOQy1hMDBBd3lnMEFOSkg4YksyamtLTlEyaEV1YXU0WjdNU2s2a04?oc=5",
+      "outlet": "Dnevnik",
+      "outletUrl": "https://www.dnevnik.si",
+      "published": "2026-10-23T06:12:13.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Chilling forecast from Russia: Europe has no idea what awaits it",
+      "en": "Black scenarios for Slovenia: Lake Bled threatened by \"rotting\", Koper and Izola could become islands again",
       "about": [
-        "RU"
+        "SI"
       ]
     },
     {
-      "title": "Se vrača varčevanje z energijo? EU razmišlja o novih ukrepih.",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeHJUdnJLZ1QwSENkdnY2YmR0Z3cxbXdrVERFUFdxaDZ3MC1meW9GMEx1eDc5ZEdKXzhaZzQ1dGZZNWdYVXpiSUZVWG4ybDVJSzVLUGctUVlsSWlrTXdMT1A4RnJNWVQ4Tm1NdmpRNi1yWElhMFVraDBfODhZT0RGakdNb0x4THYtWnAtSXpzdG9Nbno4V1kxNXNNWGs2YURPVlhpVWZ0MWxsX2VUNXJhQlJQUV9hTXFXaUE?oc=5",
-      "outlet": "Siol.net",
-      "outletUrl": "https://siol.net",
-      "published": "2026-10-21T17:58:00.000Z",
+      "title": "Policist našel mrtvega moškega, mu ukradel identiteto in se vselil v njegovo hišo",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd21maW05RUZ6UjhiYUlyNHV0clVhYjJxNzdTOWhzTFRXRjg2OXJXTFg2S2pBN05jQkpjc0h2LXpLSDU4U0g5SEZJU3d1RU45MzBZRVZUNE5Wa2JvTzFqYk45b3JCS2g1VmVvZjVWOENrUFM4V09ENnQwcFNncVN0Q3ZfUTdWLXh3a3FxeUljN2xrWklUcmpRbEdXMzZ5X09HLTdLX3NXdGx4bVJYVkxlN19vMkM3cHU3a2pYWVJJUjI3ZzdlV1E?oc=5",
+      "outlet": "Dnevnik",
+      "outletUrl": "https://www.dnevnik.si",
+      "published": "2026-10-23T05:50:12.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Is energy saving returning? EU considers new measures.",
+      "en": "Policeman finds dead man, steals his identity and moves into his house",
       "about": []
-    },
-    {
-      "title": "Na Štajerskem našli 14 žrtev trgovine z ljudmi",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQM3QzVTh4NjdWU09jYWpMSm9IakdVRzFCcGctdHdlQmY2d0hUSmxBX2VGamFSRkRmNGNQSjJQSFluNWNaSDRXWkp4MmJxTHRZaGI2MTBnelRFT1J6U0JSN19XQWZXSXJ0UkotWDdOSEhGQy1jQmNwV0c0TlVhdEZ4M1RVLVpOTncyaTZjdjk5UFRuWVcxc3YyNkxjQ0lrei1E?oc=5",
-      "outlet": "Žurnal24",
-      "outletUrl": "https://www.zurnal24.si",
-      "published": "2026-10-22T18:15:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "14 victims of human trafficking found in Styria",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "V Vuzenici požar uničil proizvodno halo podjetja",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTGRCLXdWcDJYcUd5R3RaWmt1RVNYRHZyRXUtSFI1Xy1NRkRwV1ZfLXRmcVpKcml0MXU2RTlOS2MxQnZCSkpvWTlrS0tnSy05TEg4MWJQWVFhcDZhaGpJcWd6VFRvRUZURm9USkJJUU1yYmgxbjJzSXRzMWZsR0s0Q29IaGxKVVdkOXQ5ZWN0ZTU?oc=5",
-      "outlet": "N1 Slovenija",
-      "outletUrl": "https://n1info.si",
-      "published": "2026-10-22T17:34:14.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Fire destroys production hall of a company in Vuzenica",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "Vlada v menjavo šefa državnega protokola",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQlczejd3ejVwQzF6bHZwekJVY1g5UzZpcWdPUWhQUmN4S1V4SThNVVFaRERvZ29CVlIyUTlUN0U4Qkl2dTZiNXc0RUl6OERHallaMDdUcF9IUkxNZncwVTVwbk1HVm5vZ1BvQkhDSi1hQ1NuZ3pkb3Z5cmxpeWRiSmRBbUZSN3cxbXFR?oc=5",
-      "outlet": "24ur.com",
-      "outletUrl": "https://www.24ur.com",
-      "published": "2026-10-22T15:47:00.000Z",
-      "outlets": 6,
-      "trending": false,
-      "en": "Government changes head of state protocol",
-      "about": [
-        "SI"
-      ]
-    },
-    {
-      "title": "V Italiji vre od Lombardije do Sicilije",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1aYlNLbVlPeDIyczBLMHNsb3puU3hSeG5tcjFTRUxnYkVXMmVZaUM3QzdSV044TXY5aF9QMHNBdmUxTmpDU3ZqalUxVkkzVWoyT1kyQ0VvWElLOWs0c0hRT0xPcmgyV0lTbDJ4b1ZXSWQtdWRGbkJSU25oZw?oc=5",
-      "outlet": "Delo.si",
-      "outletUrl": "https://www.delo.si",
-      "published": "2026-10-22T16:45:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "In Italy, unrest from Lombardy to Sicily",
-      "about": [
-        "IT"
-      ]
     }
   ]
 }
