@@ -2,78 +2,130 @@
   "code": "CZ",
   "name": "Czechia",
   "kind": "local",
-  "updated": "2026-10-23T17:38:11.860Z",
+  "updated": "2026-10-23T21:53:40.347Z",
   "source": {
-    "name": "Google News",
+    "name": "Google News and Bing News",
     "edition": "CZ:cs",
     "url": "https://news.google.com/rss?hl=cs&gl=CZ&ceid=CZ%3Acs"
   },
   "articles": [
     {
-      "title": "Daniel Stach ke stávce ČT a ČRo",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMWNPMkZ6OVl1c1Z5eWg5NUc3eFI3UVBHejNZcUd0b0c2T1QtMmJWclJjUFBQZGs5UGxRcXpxNEpiQUhpblZqeU4xSVo5UFZtRG8zRllDeF9FaklQLXYzUmpuU2pEWFZmTHpOUGFQVy1DdE9Cbi1zcFp3cXEzcTJrS3RuWXdZQkhsNGJMSFhMS0ZBQQ?oc=5",
-      "outlet": "Novinky",
-      "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-23T14:24:40.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "Daniel Stach on the strike at ČT and ČRo",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Na 70 tisíc policistů, armáda a zákazy vycházení. Francie se připravuje na sobotní nepokoje",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPb2poRURtSmNvUlhhTDN1WXY3dm5kTVB1QzlZM2N4UHU4cVhnR2lCaDhkb1hkYXAwSENrajcxa0xsdEl0em9MN2loeFBSZWN3UG9wOVF5bFpYdVhHb01JTE43ZWw4TDBaSkJDTlJINUo0U2hNMzV2NmhWZHhYa2xMTHc1Y2NXaXRwaHNNRkJMb1JtYXdPa3BKYUlhSzRpeGc2Smd6OXRQdC01enlyRWhzQW9OQ1JfM29xYVNiQUVtb0d4My1ZaWhnUVhaZmRZQ3dGM0ZsSnpFQ05IVTgxVGZZ?oc=5",
-      "outlet": "Novinky",
-      "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-23T14:23:27.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "70,000 police officers, the army and curfews. France prepares for Saturday's unrest",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Bílý dům oznámil dohodu o příměří mezi Ruskem a Ukrajinou u města Olešky",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeHFuX1ZNQ1lfV09GTHc1U3RoV01oYkVpbFQ0OVNSb3NGTG1PNWY0QjJIVC05OUljZ3ZxYVdrNWJzQ0ZtdHN6dmpUdHZtRjhIN3o3a0JhZEdjaGxXT3RYdGpZdWtVanhldlJrbVZGQkVVaUFfbWlXSUpXSUV4QnBUMVp1WkpWNnh2a3FBOTJFMEgxOFMzMG5HRURIbFY0cVZRaDZ0NGhwelNkSnNnQ1VJZDBPbFcyTTFFOWZULTdZYkhQY2s?oc=5",
-      "outlet": "Seznam Zprávy",
-      "outletUrl": "https://www.seznamzpravy.cz",
-      "published": "2026-10-23T15:54:54.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "White House announces a ceasefire agreement between Russia and Ukraine near the town of Oleshky",
-      "about": [
-        "US",
-        "RU",
-        "UA"
-      ]
-    },
-    {
-      "title": "Pětistovka pro Oldu. Lidé vybrali na oslavy revoluce přes šest milionů, připomínají Klempíře u StB",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZFpsZ2h3b1paRktOVS1ldV9FS0Vncm8zR2hsdmZFSlE4SUZYUkJYSkRaWGVseEh4ZXE2QUU0ME1TdXNUYjhZUFZQMFNMLUowT3dXc1JDNmxPQUNtMTMzOWtTRnlvLVRPUzgtRG51YnBWM2toS2JMUFFIRHFJRGRrNzdEMTBoaExvVXZ2YzM1XzlqMWhCUDNOU3pRcUdqb0s1R002UDFxUDlTUUNWOUxzaEpWSmlFRU5WYVZLaElqaTNRNjU1aXJIaUlGbWQ0cTJvZXJpUVlDeFBYUQ?oc=5",
+      "title": "Milion chvilek svolal demonstrace za ČT a ČRo. Napřed v Brně, pak v Praze",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPRHZSUTdyTjV3NzhTXzlZQ3lYcUFZX2ZwQ1lXRmlqdEJfT0gtYmV2UTliRnBPREdOT2paT282Z2dmVTJ6YmI5ZnZxNk1PdW5BN0t5Z01MVFVMdng5NDZfYVk2d0p2NzRMcUlhaU8yek5PY1ZOTzlPRVVzaVB0XzBaMXc0clF0T3VqbVo1a0dwWEJ1Um1NTmd2NDZWOU4yTmJ5a2lpeUpPNDVBclZ6VkhtU0Zhd2xQZFZPajlycHByVFg5UWZSbWZZc1pHbFdQYkJfMWZXYTRLR21XdlVlSGlVdVV4REhkWXJmMTUzclltS3FFZlBz?oc=5",
       "outlet": "iDNES.cz",
       "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-23T12:54:00.000Z",
-      "outlets": 5,
+      "published": "2026-10-23T16:56:00.000Z",
+      "outlets": 4,
       "trending": true,
-      "en": "Five hundred for Olda. People have raised over six million for revolution celebrations, recalling Klempíř at StB",
+      "en": "A million candles at a demonstration for ČT and ČRo. First in Brno, then in Prague",
       "about": [
         "CZ"
       ]
     },
     {
-      "title": "Virus Shamonda pronikl do Česka. První případ se objevil na Táborsku",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcTlpM3NLU0F5YTVJcHRreFVtVnJnY2phNWxlT3FHVG5xZFlPNHRhZHZ3SDJZRG1QVDNZaVpOYUVKWkt2UUM1cGtnd0FrZDQ1TDAtZ1lrVTlTd1JmUHlvTEQ5QTEtdGFqeHhKeWNrX0JZZHhmVDYyZHNRQjBwOVlfbWJpaFRPdUxIbjJpSU50TVIxbU0wNFJTRElFWkppNWhGUkNOZGt4dFVkcGhFdzNRMzlZek8taVE?oc=5",
-      "outlet": "TN.cz",
-      "outletUrl": "https://tn.nova.cz",
-      "published": "2026-10-23T14:37:00.000Z",
-      "outlets": 4,
+      "title": "Zelenskyj: Dohodla se listopadová jednání s Ruskem a USA. Vše ale závisí na Moskvě a tlaku Washingtonu",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM3Zoelh6RVZqRjFVaEo0UU9uN0dQSjJFa1FsTkQ3VVVnQVBJZzBKUkdtQnpNQmVkOHFJb2YzRkZHX2N2OEtnZlFHZG9zdjU0UUZ2UWNKZ3VqdW9xaGxhNmxMR0pvYkFZZUtkc1p5MVF6NVpfTnhVcHJSTHZyV0dDNHY1cnZ5cmJ6Z1VWdUtrZ241VVRzVWF2UDhEUXV4Z1o3WVp1TkUtZ0ZncU95WnRDME8wV3hLZw?oc=5",
+      "outlet": "Echo24",
+      "outletUrl": "https://www.echo24.cz",
+      "published": "2026-10-23T16:14:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Zelensky: November talks with Russia and the USA have been agreed. But everything depends on Moscow and pressure from Washington",
+      "about": [
+        "UA",
+        "RU",
+        "US"
+      ]
+    },
+    {
+      "title": "Mareček: Obvinění Kushnera stojí na anonymních zdrojích. Zapadá to ale do chování americké vlády",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQ2xOYmY3Umw2TkM1UmZYZnpVSXJ6VUdBcEl5UDBydUFlZE0zd2VWem9nampYRTd6SWszckhRRXN0ZHJyTThfamNDM0Q1Rm9CWnJoMlNud1czNzhFLUl0YlZiQjNNeUFSaml4OENkYndqcVpkWkhXbHc5S0JZUFJJTldmNnJjTlpvMUVFd09ESVpKY1FEX2lsT3BnN0dRR0k4QmVJaW1MZi12UUhNN3lBNkd3R2lnYlFRVEM0eWxBX21iTmNHd1E?oc=5",
+      "outlet": "iROZHLAS",
+      "outletUrl": "https://www.irozhlas.cz",
+      "published": "2026-10-23T15:53:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Mareček: The charges against Kushner rest on anonymous sources. But it fits the behaviour of the American government",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Neakceptovatelné, potřebujeme vyndat koule na stůl, soptil trenér Sparty a chystá změny",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNmdxZC1CRXJVRzViQVdoaFF3eXVxdHlvRS1MR1lJRDJEVHRsRzllQndPSDRKSk1zVG5CQWRaTEFRQ21yYU5iWDhySjBKQmpuYndnbDBKWWU2dEQzQm5tLS1TREY3YjF6cFg4NkV4eTJqOFVsSkYyeVlnQlR2eHVlYkdyQ0tRcTZFNTJKU094UGd0ZzlWdThDMzVSVTJDb3VfOV81dTk4ZW5ZT3VOeVk5Q1hfa24xWDhmaDFCQTM1X082SkN5Uzd1aEM2UDRhZkdmTDZn?oc=5",
+      "outlet": "Sport.cz",
+      "outletUrl": "https://www.sport.cz",
+      "published": "2026-10-23T20:48:17.000Z",
+      "outlets": 3,
       "trending": false,
-      "en": "Shamonda virus has reached Czechia. The first case appeared in the Tábor region",
+      "en": "Unacceptable, we need to put the cards on the table, fumed the Sparta coach, who is preparing changes",
+      "about": []
+    },
+    {
+      "title": "Snížení dotací je protizákonné, zní z fondu audiovize k plánovaným Klempířovým škrtům",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbm1BNE5SdDc4WnhxM0Z6M2R3SUM1MVFWRTF6d1R5eEQ0Y3hhbnJpd3JaOWMyc3djR3lLUXVxSlMzaWhTcWxYODZyTUtsT0RMcWhfMVhQVVJDSXg4SmlHVUpnN2l4TGcta1JmX090bWRVTmdLU055SnhkWTZsQzB5Qmx1SmhrS0dpZ09BYjFOUFdFMWVScmhON1NldW91bTJoczc3SVBvUWs4dGg3ZF9NeWs0UE5JUzRTN2NSdDRTaXBaTE52cVVyVTVOU0tsLWRvZ3liMHVWYWJCX2Z5aFE?oc=5",
+      "outlet": "Novinky",
+      "outletUrl": "https://www.novinky.cz",
+      "published": "2026-10-23T16:12:42.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Cutting subsidies is illegal, says the audiovisual fund regarding the planned Klempíř cuts",
       "about": [
         "CZ"
+      ]
+    },
+    {
+      "title": "Putin a humanitární cítění? Ukrajinský zajatec výrok odsoudil a popsal realitu",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaXg0MnEtMm1XUmc3N3hsMmQyd0ZiUXY2YXI1TERMOV9tX3JreVd4SmI2UXU3Z0xvWmN4dTRtREwzNGxrcldJWlFqU2xoUVVTQl9vay1TLTBZWExWYmdVWmx0LURzOHdpZmRHZDdyWkxSb3NKSlNZVmN6Wk5NcU5pcDJSXzlSSkhocWhXbQ?oc=5",
+      "outlet": "Deník.cz",
+      "outletUrl": "https://www.denik.cz",
+      "published": "2026-10-23T15:00:52.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Putin and humanitarian feeling? A Ukrainian prisoner condemned the statement and described the reality",
+      "about": [
+        "UA",
+        "RU"
+      ]
+    },
+    {
+      "title": "Žena přiblížila, jak došlo k napadení na D6. Policii přivolal sám agresor",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQM2RoTGJHelFubEhzZ2JaanIxUWQ4b3d3LWJTVzFySW9LMDJVbmdWT1hkVDBOc0F0a1NSX2R6NktpWHdsUEplUk9ZYmpjTnlhMFp3NWdZR2VmZHNucGZLNzdESFkyMDZiWjBSdHV1TVp6M3NUM2V1QUdYVk82VGV4dmFqZUJrY21fbi1DaGdnekNwUmVDSVFacVhVZmlVNkpLZS1j?oc=5",
+      "outlet": "Deník.cz",
+      "outletUrl": "https://www.denik.cz",
+      "published": "2026-10-23T10:27:27.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Woman describes how the assault on the D6 happened. The aggressor himself called the police",
+      "about": [
+        "CZ"
+      ]
+    },
+    {
+      "title": "Melania Trumpová dohodla příměří pro ukrajinské Olešky. Město je na pokraji katastrofy",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZVFWa2h4ZmRqMEs2Tm5ITHBvVTlsRmY5bExWTEZ0V2FsangtLXEzWGg3T0pERVFuYlRNanBpQ25JalE2MEFzUkEzelV1T2NjaEw0aFNUUWJhcXBIRHdhQXB2NU42U1F6RDZpZ3RmQ292Q1VlamNpWUxsSHZLLVRPSXh2c2VfZHB4R25NMEpEVUxHcUtnMEtaZzVxQ0RfMm4zSHBQLVBlTmFRRkRQYWRIcy1PaktFZlRXZERndmZ3MlMzRExmR2Nxbl91MVc?oc=5",
+      "outlet": "TN.cz",
+      "outletUrl": "https://tn.nova.cz",
+      "published": "2026-10-23T20:32:03.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Melania Trump has arranged a ceasefire for the Ukrainian town of Oleshky. The town is on the brink of catastrophe",
+      "about": [
+        "UA",
+        "US"
+      ]
+    },
+    {
+      "title": "Budapešť si připomněla krvavě potlačené povstání. Přišli i lídři EU",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUG1oaWdWS19qbDN6ZGxQelVGQlA5YWlzNjF6SU02M1JXZmREZ1NmWmdKeHV3a2hTSDBfdWV4SU9vTU5PZEdGa2JKTlp1WkpHRFRxVUItY0U1akIyY0s1NzNwVEI2Nm9yYld4eE9PUFlLX0Z4QzRTWUxrc2Z3TS10ejVWOEZRSllSUDByRUFVME8xanBlM0hYMVozTUR3NDc1bTRVUkZWRkc4Zm5mMXd0WVpnOXBzYXNwT3c?oc=5",
+      "outlet": "iDNES.cz",
+      "outletUrl": "https://www.idnes.cz",
+      "published": "2026-10-23T17:05:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Budapest commemorated the bloodily suppressed uprising. EU leaders also came",
+      "about": [
+        "HU"
       ]
     },
     {
@@ -90,81 +142,150 @@
       ]
     },
     {
-      "title": "Hrozba útoku nad Moskvou. Všechna letiště přerušila provoz, jedno evakuovali",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQODU4S01TU2NEZWJuaUxOLURjMDh2Q3g3Q09TLURoMXZIcU92UDhBQm1ncFVTc0VzU3RDSTlqdFYyVjR2T0t6cENWYmcwNS0wUTJhRUU3WDBHdXFEODJTN2pfSUJubWlDUmxFdWNhdXUtLTdVVGs4YU15UmhkUE41SGx0Z1ZVRTJHWS1tRnpzX2hfcXMxTEZiZ0o0cVJDMWRYYXU2bExQVkp3LUxndTBKcGtIWDdESWs0VE1fUlVIMDBPLTNraEQzZV9oUmI2OGpRc1dqMVRPOUNnX0EwM1hj?oc=5",
-      "outlet": "iDNES.cz",
-      "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-23T14:43:00.000Z",
+      "title": "Pětka SZ: Praha jedná o vedení. Ženy se dál perou o své místo v politice",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQURDYXdtUVRCOF9RUEFsMURENEdKbGMwQXlJSy1FMmZ0U1RSM2FnVWN2M3pfWDhRYm9yRUJDbFhrcFRiVEw3dzB0SC0yVnNQZFpyUnJVdDFWVTAtcHF3Y1NoWFZFbzRNUjB3SzJIMl8zRUlqUUxuVk5GYVIzQl9CQ1EzNGVoUnpCVVd2Q2RyN0p6c3R3MXB3VDYzYWxiOXRwcXVlbTNZcmRJUzlTbExBajZzbEdvX3IxajJR?oc=5",
+      "outlet": "Seznam Zprávy",
+      "outletUrl": "https://www.seznamzpravy.cz",
+      "published": "2026-10-23T15:00:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Threat of attack over Moscow. All airports suspended operations, one evacuated",
+      "en": "Five from SZ: Prague is negotiating leadership. Women are still fighting for their place in politics",
+      "about": [
+        "CZ"
+      ]
+    },
+    {
+      "title": "Senzační kanonáda Motoru! Dynamo klopýtlo na Kladně, Kometa i Sparta bez bodu",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQ2RBT3RmUk9JcnMxeFBuUEwwQ3hSZjF4OVdTdHhPRjk5elJOOHZYZjhnVDJ4RWh1MzR5N0k3NDdyU1cyUnp5MnlVWHRFTjNtOVVycVJlOHlkVWdvWGtwNk9ITzhHUVFITGVTcndmNnBFSjNTRDJtZk9rT212Qlo3VDFrMEFBTS00Z2lza29lTXRsSkoyVVpxZk1xTFlTVWUtc0RzeUlLcw?oc=5",
+      "outlet": "Hokej.cz",
+      "outletUrl": "https://www.hokej.cz",
+      "published": "2026-10-23T17:24:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Sensational barrage by Motor! Dynamo stumbled in Kladno, Kometa and Sparta without a point",
+      "about": [
+        "CZ"
+      ]
+    },
+    {
+      "title": "Kouč Bayernu po tréninku zkolaboval",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVG84cVN0bEthWk1lWU9Da2VjQkJfZTZHSVZ4aDdFMGNaVzhJX0twY2dfRjByZTU5UnN0TFdYQUhwWXdZbnFGM0VDWlp4ajl0LUxYMk53OE4zcWxFN1IteF9hQXkwN0ZxZ0lnb2FMT1YtRjF4WUI5WWFwX0NyWDg2Y3B5U1R1blliLVZOb1hfMzBkU2RuYmc?oc=5",
+      "outlet": "Sport.cz",
+      "outletUrl": "https://www.sport.cz",
+      "published": "2026-10-23T16:57:19.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Bayern's coach collapsed after training",
+      "about": [
+        "DE"
+      ]
+    },
+    {
+      "title": "Tučný účet na Blízkém východě? Trumpova zetě napíchla ruská GRU, tu pak Nizozemci, tvrdí novinář",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNb3BWRVJSVnk3WGhLMlF2X3N5c0drampaaWFFcUU5akRlSDJjcG5JRV9KbFJXaHptNGN2SDlsamJyZEdGVWNsWF9vUGpTLWppY1BncW9KYThoaUZsbDlBR1RRdWQyLU93SklLR3V3ckh5LVpNdGRxVGdfSkRqRFlDc0M0U0VOUTFUVkozQUZ1ejFfUDFiRkowSXBHbkJCN09HV0dxMHpZNWdtRmEwSTluZ1pwUG11UU9TbEZ4YUpuZldGOXB5VlJoZ3pnX0VESmZnei02N2NXM3R0bWRUTGZZXzNjaGNMSll6X0hUbW15S1JfcmxZSlQybzUySQ?oc=5",
+      "outlet": "Novinky",
+      "outletUrl": "https://www.novinky.cz",
+      "published": "2026-10-23T19:15:05.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "A hefty bill in the Middle East? Trump's son-in-law was pricked by Russian GRU, and then by the Dutch, a journalist claims",
+      "about": [
+        "US",
+        "RU",
+        "NL"
+      ]
+    },
+    {
+      "title": "V Moskvě uzavřeli všechna letiště, jedno evakuovali",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQb0tSSldYaWlFRkVZS0xXZEpsVzl1RTlBbmJ3dDdoWkZiY2stNzFXNG1neXFxTklBNUlBV1ZFS0diWnM2NnZ6Vi1pMDdQdHNBM1ZYbGVIMGhZeVJfRkhYM1JtdXRGRjN1OTNwZjJ1VHBRSTZaaktXeURoWjNIRmpuZFVoYzV3cVZTNW5iT3NzRlhFZ2UyWXhsTXJMalpkcGlGVVNIWUpJczc?oc=5",
+      "outlet": "Novinky",
+      "outletUrl": "https://www.novinky.cz",
+      "published": "2026-10-23T13:16:51.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "All airports in Moscow closed, one evacuated",
       "about": [
         "RU"
       ]
     },
     {
-      "title": "Při utkání konferenční ligy v Jablonci policisté našli hledaného. Řešili i krádež fanouškovské šály",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNcHNadHlJMklmbVdsQTZwWHZsY3QtOWthVWg3STM3U1VST25IN2QtR2UtNmNBNTJxbTdGc25Ddmt2bTNnXzV1RDIwTHdfVHNtRUJmLTl3QzA2aC1YclZHSGh6ZzFQRV8zVVpfR0VDZ1psN3JBSF9GYk43Q05PRzFKNlhBcC1WZGlpTmhhRE44Uk5iaXJGLWt4MDE1M3RfUTJoelg2cnRFQ20wR0JlV1RBRE5ZYVhfUHpYaEhkWTlmaTZ6RDA4cU9RQU1mMHhmZWRJNzFqdFJjS0ZiaDg?oc=5",
-      "outlet": "Novinky",
-      "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-23T15:42:53.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "During the Conference League match in Jablonec, police found a wanted man. They also dealt with the theft of a fan scarf",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Stávka ve Škodovce? Bouře ve sklenici vody. Změna ale musí nastat, říká expert",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZDlQZ3h1d0VKN09qTEh6d2xhYnQwTk9xRlZadFo0d2dNdkwtS3FsYkhJSVp1cVNybS01a25VVEJKMnBJazdWSEJ0WUZfd09XYXBCanpNODN1dlQ2SnVXUjhWVGVQVmJVV1hoVEVFUEtMQUlhNUhEdzZiWjVRTWlrb2YxeVZadThFS1VyblRyMlNIR21OSGE3a2RR?oc=5",
-      "outlet": "Forbes Česko",
-      "outletUrl": "https://forbes.cz",
-      "published": "2026-10-23T13:49:05.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Strike at Škoda? A storm in a teacup. But change must happen, says expert",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "„Totální destrukce české audiovize.“ Filmaři kritizují Klempířovy škrty",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUnprUE05YVQxUF8tdXp0M0QtbkNQYXVrcW1ZTk1rWGFPc1NlWkVuMXFwYkM4OHljeEJyU1ZhQWJTamVwRHlVbFd2bEpZMU9kdUx5NXpmWW1VY0x3VDhobktOekFhMG5CX0d4ZDc5TFJLQ24tcE9meFRsX0hWWW9xdFNLZ2d5a1JFdUpmcEQ1bUtlZVpMYk9ncjZqc19kTzhHUE5uSF9rc05rTzFKdTFzXzVlei01WnliZlRoZ19vSWQ3ZVlySjloZ1JiQU9FR3V2cmNYRnUzMnU?oc=5",
+      "title": "Motoristé chtějí zakotvit korunu do ústavy. Podporu hledají v ODS, politolog ale varuje",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQeFl1MlI4bUtrRGJNdjZtNnIwWUZzd1JUdUFLQ2x1LWlWejh0b2o4WE9xQjZ1QmZDblBZZEVWVUp3WDJlS3BKQnJBcExqc0c3MFlxTE1jdnZBMEpZU180RVZSMllCVTJRMXRqUnQwQWliRnlPRUQwUzF1SndFUDBWeEd4UEE2Z00xR0xvTUZDbWlVODBKTTRrYjZaT0hpVmZDSE5MN0xOcEt6V0FGbFZpcWxfeTJkRWtQaU4tMFlOVUpGSE92dkRxX0NmWVZHMEpOeG1iel9oR1BCU2VRcmpFMA?oc=5",
       "outlet": "iDNES.cz",
       "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-23T11:54:00.000Z",
-      "outlets": 5,
+      "published": "2026-10-23T18:00:00.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "\"Total destruction of Czech audiovisual industry.\" Filmmakers criticise Klempíř's cuts",
+      "en": "Motorists want to enshrine the crown in the constitution. They are seeking support from ODS, but a political scientist warns",
       "about": [
         "CZ"
       ]
     },
     {
-      "title": "ONLINE: Kladno čelí Pardubicím. Budějovice odskakují Třinci, vede i Kometa",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMUViV0xXOGhmeFNTd01aSVBqUFpLZ2E2RllHalJLd1NuOUR3WGhXb3drNEZpX1RORzZBUkRXMjhKRW9SSjZSQ05JbWxESmF0VS00dl9wakpXOS10Z2MyWExONzRES3pMVnppblBMN3RfVnR5NkN2Q2lsZF82VGJmeWpYX2pURmRFQllwZEhJZkRKZ0tISXFQSE5NMldTN2ExY2R6cjNfRXlWdkU?oc=5",
-      "outlet": "iDNES.cz",
-      "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-23T14:45:00.000Z",
+      "title": "Trumpův klíčový muž nečekaně přistál v Praze. A pochvaloval si Česko",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSS15QlBVcC00bDg4Y0ExNmRSdTBDRUtCRDladVdpUnpyZDFDR2UxWVN2RFotSlRCS0QzdllHRExhSVMzVWdQdk9oRXF6UW1HMjZ6ME9HQnM1NzhXVWdNSkVWSXBMdTVjdFFqUEZSdmVrOGpfZGRXS2h1Z3hOdnhjYU1PWkNqZUw1a0ZWRXFuaWp2TUtMeEJhY0szS3ZVUkFXdVhxZS1KazJhUTlqU19BeExWbEdVOF9vTF8wUUdvZVVnMXRDcWVmejJhR015Qm1MS21j?oc=5",
+      "outlet": "Aktuálně.cz",
+      "outletUrl": "https://zpravy.aktualne.cz",
+      "published": "2026-10-23T18:06:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "LIVE: Kladno faces Pardubice. Budějovice pull away from Třinec, Kometa also leads",
+      "en": "Trump's key man unexpectedly landed in Prague. And he praised the Czech Republic",
+      "about": [
+        "US",
+        "CZ"
+      ]
+    },
+    {
+      "title": "Oslavy 17. listopadu na Národní nedostaly dotaci. Lidé posílají peníze ve sbírce",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNU2tnOHZMNUtjRWZTczFhbDlzdU1GVll5dFBMcFRVRWg3b0FSVWNxRGhLODlOYW1TX3QwQ1REZ2x4WWNUaXN1SkY0Wl9DS0dFcjVld2lnMDBSakhfb3hudmFJdXJMUUFTaVdiMDJ2SVZLYkN0UGVMUWJ2UzZBTHl6SDJncWd5a2t1Vl91TDVSWV9Ccm53N2trLTNWc1dkLW1TcEV0aEFmQzg5UXEyS3BBSmc3RGxScXJZRE03ME83LUZBS1lRTkZna3dn?oc=5",
+      "outlet": "ČT24",
+      "outletUrl": "https://ct24.ceskatelevize.cz",
+      "published": "2026-10-23T10:35:03.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Celebrations of 17 November at Národní třída did not receive a grant. People are sending money through a collection",
       "about": [
         "CZ"
       ]
     },
     {
-      "title": "Královéhradecký kraj zežloutne. České dráhy byly ve velké soutěži o miliardu dražší",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa09YNWpWRVhPQnBIQ1hKdmJkMVItVU5JYUM1UjlHajVZTnpLaDBQZkViV2tFTzdDS204N3g4cDcwb3hXRS1yY1VZWDBudC1UaTEzY3BqMFV3ME9CVUN1UnhWZTZXT0JnZ3l1TXV1Qlc4elVDRjdsdVl6a3dkQUdIS1h2TTJqcGlXekg5aVJVZ2FVck4waXRaeWxoeTM2bm5CT0ZIbmcyREEtYUREUzhhVXVKUVB1ajhKUmFJWmZYRQ?oc=5",
-      "outlet": "Zdopravy.cz",
-      "outletUrl": "https://zdopravy.cz",
-      "published": "2026-10-23T16:37:46.000Z",
+      "title": "TRI - CEB 2:6 - Jihočeská demolice Ocelářů, v brance čaroval Klouček",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EcXVVRDVOaV9KQVAzWkVHXzRnNENTUU1PTFgyeUJLTmIwdTdJSDcwb2tNVDNVQXR5ZF9xMlRUak1WUERwQnNmVkZaNXdGYnM?oc=5",
+      "outlet": "Motor České Budějovice",
+      "outletUrl": "https://hcmotor.cz",
+      "published": "2026-10-23T15:00:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Hradec Králové Region turns yellow. Czech Railways were a billion more expensive in a major tender",
+      "en": "TRI - CEB 2:6 - Jihočeská demolition of Ocelář, Klouček conjured in goal",
       "about": [
         "CZ"
+      ]
+    },
+    {
+      "title": "Video: Překvapivý manévr. Ukrajinci využili během bojů o Kupjansk potrubí",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLVF5SmpJcWpmUzJVX3hoY0N4bncxQVRRWU12MGVrOEQ2Y0NfMG5RUVpsZHNJSmJyZ3FnNzMxRFNOQ3pxTXlvYWhOM3ZpQm96VUl4WnlHR09kdnlOcWhjT2wzS0lXY3UwdDNGUHNfdmNObDlBSzdrWEJGVUhSd2trU0QzbDAxYTZrMjhyYllGMTB2WnNkRnM5Zk9JZXR5YWEwekg3REN4MjBuUHIyQ3ZrMUhsUjQxR3p1ODZSVjFsSE9ZUQ?oc=5",
+      "outlet": "Seznam Zprávy",
+      "outletUrl": "https://www.seznamzpravy.cz",
+      "published": "2026-10-23T17:43:51.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Video: Surprising manoeuvre. Ukrainians used a pipeline during fighting for Kupiansk",
+      "about": [
+        "UA",
+        "RU"
+      ]
+    },
+    {
+      "title": "Francie čeká další násilnosti. Nasadíme 70 tisíc policistů, řekl ministr",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbE85UDJjVjJJUENLb3BLREk3SmNCV3FrR1pIeFk4aXg1MXBLR1BHblNwVFpHRjgyR0lNUE5aVjBXNUtKNUpFT2hSUm5pWDRITktXbWllZ25BakFTM2dzNld2NXdURE1qNWJIZkc4WjRZWUw3WDMzTnhqQnNRZ2R0Y1FzdFJ6YlliMDJNbWRqbWRmQzFWV0ZZRzRHQi1DUDR6VU5UQThNbmpuZDhRRS1EWDA5SVppbThobThCY1Jxb0M?oc=5",
+      "outlet": "Seznam Zprávy",
+      "outletUrl": "https://www.seznamzpravy.cz",
+      "published": "2026-10-23T11:53:32.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "France faces more violence. We will deploy 70,000 police officers, the minister said",
+      "about": [
+        "FR"
       ]
     },
     {
@@ -181,54 +302,56 @@
       ]
     },
     {
-      "title": "Na poslední pivo či koleno. Legendární hospoda U Jarolímků dnes zavírá",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbklvUUFDbk9JSm5SSlBlYUZ6c3NPSDIzclJtRzRVcmE1QVNqczZnMDBDMmNIMTlSZG1BM3VXS21VWFRlcGxFVXdfS0I1TlBZT2tsajNQejZ4ZV9nQi0tMm5qMWNDQ1RuaUdBMUxZd3NtQ3lianBXSW5EVTU3Yzc2T1B2Z3RVU0lxZU92ZzIwTzV6Z2t4MnpwVGI4bGwyQzdSUnBnSFp5azRNYVlKSEppMWNIOHljVW53ZWVJ?oc=5",
+      "title": "Netanjahu vyhlásil po střelbě uzávěru Západního břehu. Hrozil velký útok, tvrdí",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdjVkbUR2N3p3TUNrYXpkZS1LUXZJVklxLURkZHJsUEtNYXVVc3VhTk5pSEVuQUFyTUpXaGRUb1hsS05wZ1NabTktc2Y5OFB1blNNaGE4OEJPaEFoVGpjWkJRaXQ3Zjk0SWtxd2FrYmdLMEQzc2tyTUx2enJ6X1g0T3VTTTI2VmtuWVFNdmRFd0hzalNjZ0RJS1AtTFJMQ0ptS05GbnFhclc2UHB4Z1pRYjJqaWJLYWJXNUhnWG0zUFRYdw?oc=5",
       "outlet": "iDNES.cz",
       "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-23T16:22:00.000Z",
+      "published": "2026-10-23T17:06:54.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "For the last beer or a knee. Legendary pub U Jarolímků closes today",
+      "en": "Netanyahu declared a closure of the West Bank after a shooting, claims a major attack was threatened",
+      "about": [
+        "IL",
+        "PS"
+      ]
+    },
+    {
+      "title": "Královéhradecký kraj zežloutne. České dráhy byly ve velké soutěži o miliardu dražší",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa09YNWpWRVhPQnBIQ1hKdmJkMVItVU5JYUM1UjlHajVZTnpLaDBQZkViV2tFTzdDS204N3g4cDcwb3hXRS1yY1VZWDBudC1UaTEzY3BqMFV3ME9CVUN1UnhWZTZXT0JnZ3l1TXV1Qlc4elVDRjdsdVl6a3dkQUdIS1h2TTJqcGlXekg5aVJVZ2FVck4waXRaeWxoeTM2bm5CT0ZIbmcyREEtYUREUzhhVXVKUVB1ajhKUmFJWmZYRQ?oc=5",
+      "outlet": "Zdopravy.cz",
+      "outletUrl": "https://zdopravy.cz",
+      "published": "2026-10-23T16:37:46.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Hradec Králové Region turns yellow. Czech Railways were a billion more expensive in a major tender",
       "about": [
         "CZ"
       ]
     },
     {
-      "title": "To byla paráda! Bejlek nadchla WTA skvělým úderem, s Bouzkovou však prohrála a čelí ostré kritice",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSWRzMGUzM25weHE0aC1iV0ZwUDVieF9SbHB0ZzU3endJcDFXeWhPOW8zRk1RWWdXUTZGNDNVQnM5M1FWRmJ1QV83SmVyX0RsOUVabFpMdEVhWE5oUU9pbDVWWkJCRmZRQ1ZncGpFNWhOb1ZOMHRaTWZVWmFVWHQ3ZllZX3pkY1J1LTFYbWRPVFVFSnJsazFVUXFfY0I1dEdhYUtNVHZwTExZLXNfMG95aHhkSjhCcGs?oc=5",
-      "outlet": "Ruik",
-      "outletUrl": "https://www.ruik.cz",
-      "published": "2026-10-23T14:25:00.000Z",
+      "title": "Po setkání s prezidentem Macronem vyzvali studenti k pokračující mobilizaci",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSk10dFZlNUlJbFhpbnI2QzlYdExBVHFIQlJJN1JJdXVJUVFfaTdXbGlrMTZvYmVWUzBRaXJSVy1OLU00NjhQQ0kyYnNxR1BDNTIzZ0VtS09XNWFrWVFvSnkwS3h3eTNLWGozM1B2d3FsNjV2MmpmenVVRGdlM3p5VTJxVDNjbER1N3hFNzdYVEJRbHV1eFpWamhUSURBTFNXSEl1RmNNOGItX1pBNGstMHVuajRTUmNN?oc=5",
+      "outlet": "Echo24",
+      "outletUrl": "https://www.echo24.cz",
+      "published": "2026-10-23T16:24:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "That was great! Bejlek thrilled WTA with a superb shot, but lost to Bouzková and faces harsh criticism",
-      "about": []
-    },
-    {
-      "title": "Žena přiblížila, jak došlo k napadení na D6. Policii přivolal sám agresor",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQM2RoTGJHelFubEhzZ2JaanIxUWQ4b3d3LWJTVzFySW9LMDJVbmdWT1hkVDBOc0F0a1NSX2R6NktpWHdsUEplUk9ZYmpjTnlhMFp3NWdZR2VmZHNucGZLNzdESFkyMDZiWjBSdHV1TVp6M3NUM2V1QUdYVk82VGV4dmFqZUJrY21fbi1DaGdnekNwUmVDSVFacVhVZmlVNkpLZS1j?oc=5",
-      "outlet": "Deník.cz",
-      "outletUrl": "https://www.denik.cz",
-      "published": "2026-10-23T10:27:27.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Woman describes how the assault on the D6 happened. The aggressor himself called the police",
+      "en": "After meeting President Macron, students called for continued mobilisation",
       "about": [
-        "CZ"
+        "FR"
       ]
     },
     {
-      "title": "Macinka: Pokud by se Pavel stal vyjednavačem EU o Ukrajině, MZV ho podpoří",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBxYXlOd1ZaTzhrVWxCYUQ2bmg4NUlldlZZWGk4N2pJTWlQU3Q4Y29PdkRWLUMtNHo3LWk4RUc5YVlIdjNkdkJUaXBWV21WTGJYaGtB?oc=5",
-      "outlet": "České noviny",
-      "outletUrl": "https://www.ceskenoviny.cz",
-      "published": "2026-10-23T09:08:00.000Z",
+      "title": "Předpověď na celý víkend: Čekejte nepříjemné podmínky, počasí rozhodně nepotěší",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWFBIMFRUMUp4UUswTlZTdlNONXI4RmpJTXByMk5hVEQtMUJhT0g3YXUxNUVra2JRVms1MXh2T0lTdzk4SUx4LUVJNzBacjJvR0UtdmJYNlMzYnU5bC11WVRkcWZHMDZDVXpULTduSm83c2FUVEJVcDY5NGtYbmlxcF9iV3l0Tjl2ZF9ZVjA1c1pKb3c2eWRMUjIzczJWMk1nZU5ScHp6d3BWTVh0al9xbktLajVtd0V1ekFjQXRtMzVPVUJYS0FBdUVldkhFa2RqWXRpZ3RTOXRiQW4xMi1kVg?oc=5",
+      "outlet": "Aktuálně.cz",
+      "outletUrl": "https://zpravy.aktualne.cz",
+      "published": "2026-10-23T15:42:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Macinka: If Pavel became the EU negotiator on Ukraine, the Foreign Ministry would support him",
+      "en": "Forecast for the whole weekend: Expect unpleasant conditions, the weather will certainly not please",
       "about": [
-        "CZ",
-        "UA"
+        "CZ"
       ]
     },
     {
@@ -247,69 +370,29 @@
       ]
     },
     {
-      "title": "Reuters: Spojení Tesly a SpaceX by mohlo narazit na překážky kvůli podnikání v Číně",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQkZuWTRWVUdpQzAxTUdhUHBoTUNIZDZad3BBXzBYdEFOckpVbDc4Y211SGc1U1Vrcy1jNmJFa1VESXNFbXlBQUhhbVVPZWdKQkl3REhGOUtwMlZKQmVfOUpTRWZLSU9wVDBraGFhUzkxdXd2UkJLTDVCeVhEWUhnMkZOMldaT1pkdTdodzVYWGFWbGdxcVM5cXEyQnBsMUNET2IwdC00ak42LU9kRHZv?oc=5",
-      "outlet": "iDNES.cz",
-      "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-23T12:11:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Reuters: Tesla and SpaceX merger could hit obstacles due to business in China",
-      "about": [
-        "US",
-        "CN"
-      ]
-    },
-    {
-      "title": "Alarm na heřmanické haldě, teplota vyskočila o 19 stupňů. Diamo mluví o poruše čidla",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPajA4ZUJQUDBwbXdqVHM4WU1VbXYyU082WjczNV9xaUpta08xc1dzOE5ncWVhS3BZTXdDLW5xSHFienpmZWF1blYzU0s0SjRNeXdnNWhub2U0VEJDS1NHMTc3b0lrbW40UGdsbGFBdDVTY3pJZERLZllBWEdhU1NmM2x5bWFhNVMtN1FseWhIOXctYUNfQ0NMLWdlTklxQlVzd1pSRFk4aU1GYjA4MWlLMlRtRGxYY0R6RjN0emk3dzNWZDZyd29qcEVSMWRZM3M1UjdOdkJrR1E2N1N3UEtfeTZfbmF3cklNRXR2UQ?oc=5",
-      "outlet": "Novinky",
-      "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-23T15:17:02.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Alarm at the Heřmanice spoil heap, temperature jumped 19 degrees. Diamo speaks of a sensor fault",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "V Brně podepsali koaliční smlouvu. Hrušku doplní v radě tři muži a sedm žen",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaHN0MmlIME03YlhGWlRkaGdpM2czZGU0RzNHNEVIc0FvMnRmdk5HazNVQ0dvbFh5ZkdHdDFBRWIwelo5a3lsWkRXYnpybmwwS2F3bDM0V2xEXzhyNWpHY2ZFQVdRa20wZ01JV09rQTVUeFpEUHEzdllIaDZtZTJqcjEtLXZmeUoxRktPQTF3NjJIOHBnZUt2bE5STmNuaTNWYnlBcm1DaDhWNzgtOWFYdl94YzA1cE5BT01aM0lBN3BSaUZwOFdNdw?oc=5",
-      "outlet": "Novinky",
-      "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-23T09:07:48.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "In Brno they signed a coalition agreement. Hruška will fill the council with three men and seven women",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Od lisu do čela Brazílie. Osmdesátiletý levicový idol sází na mladé",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYmxJdFpnODltRGw2eWxYYmV2ekEwamUtNkZONFJjU0hWd0lLcktERTZhUGptZXlkcTRVRlQ3NmhXckNITFpEeUZTeE94ZW9tTUdwRE5rd2xERkY3dXlBVDdqUHdib3NIa0dWUlBUNzV2R0dFY0g2R3FmSlhEYXFnbFBXRWo0Y0ZoOTI1WnpQSTc2dWp5dHgta2RfYjRPeXpLc2lld3RsRjVtS3YzclNHSDFsSm1LcHJnZWtR?oc=5",
+      "title": "Trumpova vláda podala žalobu pro případ, že na Aljašce nevyhraje republikán",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbFp0RmJrX0lSSDhyLWhVZ3F3LTlKMHhfTFJNMlhqQll4YUFWSkdFaHpWcFJkekhZdjd6N2tlMFcxY0RmNDY2YS04SWo1d1Q5dC05TlV1aG4tZEtUbS0tUG5fUnFLWDZEMzRZUHNnWGY3YnBGbzNqZFVhcEQxd3UyYVVkdHoyT012Q21IUzk5UHBxcFlXak0tSW41ak1ZVmVRZlRjSUxjd1ZXUzhiMDhJa3VCenRldURMRUdGWTQtNzJDdnB2cGc?oc=5",
       "outlet": "Seznam Zprávy",
       "outletUrl": "https://www.seznamzpravy.cz",
-      "published": "2026-10-23T14:38:19.000Z",
-      "outlets": 5,
+      "published": "2026-10-23T20:43:06.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "From a press to the head of Brazil. The eighty-year-old left-wing idol bets on the young",
+      "en": "Trump's administration filed a lawsuit in case a Republican does not win in Alaska",
       "about": [
-        "BR"
+        "US"
       ]
     },
     {
-      "title": "Nejméně jednoho mrtvého si vyžádala střelba na předměstí Paříže. Policie pachatele zadržela",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRzA2NXdkX3BEWHRiWG9LMXptdHpPeU50eVhZa05lUjdfV3VpN1MxY2lteGJMRUVNZ3FjRThlMjRpaGVRaHpCbVlFN0FWVms5YkRGaEpTQ2ttc3VDY1JWbkNnWVpSbGZNUl9tX3NwVTNhQ2dYWmpSblNDTGRFM3p3T0R1aFh6dkl0M3g5Y0o0THJGRVBKaGFIcGhXVXVBUmFHRktINGpfMmxqSThqaUJvbGxmaXItdDJkQTR4Q1BDTQ?oc=5",
-      "outlet": "iROZHLAS",
-      "outletUrl": "https://www.irozhlas.cz",
-      "published": "2026-10-23T10:45:00.000Z",
-      "outlets": 4,
+      "title": "Změny na nejvytíženější dálniční křižovatce. Auta míří na nový most",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUmlVb016dkZLaUpoVThtUFppVW04ZUQ4SjZIUjhmWTBCTWJ3QzVBekxCZlQ0Z3pjX1ZET2VMWkRIOU9wWkRoTEFvNU1uYWVGbHFVazBWUFJrcE1oMkRpaU5qZ2I3dVJoOEljeWIySUNjd2NKMHJNQnRnTGJBT0p1MDIzdFgtYzRkVXM1eDRpS3RoTXdRdy1EdmtR?oc=5",
+      "outlet": "Zdopravy.cz",
+      "outletUrl": "https://zdopravy.cz",
+      "published": "2026-10-23T15:17:39.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "At least one person dead in shooting in a Paris suburb. Police arrested the perpetrator",
+      "en": "Changes at the busiest motorway junction. Cars are heading for a new bridge",
       "about": [
-        "FR"
+        "CZ"
       ]
     },
     {
@@ -318,88 +401,10 @@
       "outlet": "iDNES.cz",
       "outletUrl": "https://www.idnes.cz",
       "published": "2026-10-23T15:02:00.000Z",
-      "outlets": 4,
+      "outlets": 5,
       "trending": false,
       "en": "Šťastný scolded an MP over a seminar on Palestine. One-sided campaign, he says",
       "about": []
-    },
-    {
-      "title": "Největšímu pronajímateli bytů v Evropě hrozí obří ztráta",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUk5OMThvRlBOTDFkc1c3MVpwY3I4QlZESW5mTkQwRC1aQ1JneWFCek81ekVEOFYtNTFxNDdHdG1kVEdSMWRwMk11dTYwQ2JlRU1WRUVDZk5Xdi1XUmplckctTHN5SDJWa2hHcXhnUWpxUDdhZ1gzTUdsMXhDUVZJS2JEdVdUM1BsWndTMjZsMTBob0pQVzRMREVKNFZpbS00THhiWWNvVmlvQTU0NUt6RXAzbk0xUnJMX1M4VnIyMFQ?oc=5",
-      "outlet": "Seznam Zprávy",
-      "outletUrl": "https://www.seznamzpravy.cz",
-      "published": "2026-10-23T14:15:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Largest landlord of flats in Europe faces huge loss",
-      "about": []
-    },
-    {
-      "title": "Ukrajinci přimontovali dronomet na sovětský vrtulník Mil Mi-8. Dost bylo neřízených raket (video)",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQMkNwMjNjVVMwTDkzZGNCVlB3T3BFQWp0RHk1YzV2TXVqT2N2bUpBalZLS1BMb3paTU5pTWVVZ0lDSEFZVlhDTTJTNERDQTZzdmhET2lZR09VR0JjVEVycW44aG8yRW9LUjBfZlhrdEc2OTlxNEhBS2d1ZWhlNS1QVXAzM2dyR1BPTnRmRHBZMHFFYmQ0UmdDSmxoektRNGNsTFo5OS05RGlJNmVhcVFWOWJZelBEcXJvaEw2QTdDRk5hanpyZUNObDhfUEVGR3J5M3o0VkkxM2N3enJNOXNyQVEwUWo?oc=5",
-      "outlet": "VTM.cz",
-      "outletUrl": "https://vtm.zive.cz",
-      "published": "2026-10-23T14:02:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Ukrainians mounted a drone launcher on a Soviet Mil Mi-8 helicopter. Enough of unguided rockets (video)",
-      "about": [
-        "UA",
-        "RU"
-      ]
-    },
-    {
-      "title": "Netanjahu zvažuje největší operaci na Západním břehu od roku 1967",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPLUMyOGtVZUlaSGZHZkxUVHBhbUllMkkzbnRlREN6RFhMRUhaN2dTWVdKNmpyQW1lbC1fQWJxZGVtMVRGX0U0X2pjdmpzWXFXc1kxNFVzR0ptTXFERmlUclowRmZvblNvdC1ETXFQeUZaeXNzR0tXdU1EQWItR1pfVEJZM1Nob04zQnYwVjIxLWM0Wk9LbmVJeDViTExlNlE?oc=5",
-      "outlet": "ČT24",
-      "outletUrl": "https://ct24.ceskatelevize.cz",
-      "published": "2026-10-23T08:02:19.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Netanyahu considers largest operation in the West Bank since 1967",
-      "about": [
-        "IL",
-        "PS"
-      ]
-    },
-    {
-      "title": "Most Kosmonautů se otevře až na jaře. Stavbu zdržely komplikace pod hladinou Malše",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNckVDV0NKT2FvRVRjaC0wTjN1VGNvTUZmODhaMGRETzhKLW5vNThodmV1c0trZVR5Um44Y3c0b2tSaXRkTlBDVWNMRFFweExEWWM4c1pMRlc4WXpobHREclJWTUIxM1lYSGhDS09SVXFvcEdzT3JlOHhUWXd1T1ZuaXNsNjFZR1ItQ2FxdzZQdElHa3JuRXJRbTZNYXhBcGFtXzhCOHFtWjdfVU9XLUdQbUF4aGxMcE9JSWhUc1E3YTFzSXZjeHc?oc=5",
-      "outlet": "Budějcká Drbna",
-      "outletUrl": "https://budejcka.drbna.cz",
-      "published": "2026-10-23T13:03:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Kosmonautů Bridge will open only in spring. Construction delayed by complications under the Malše water surface",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Plzeň nebodovala ani ve třetím zápase Evropské ligy. Radoslav Kováč vyhlíží posily",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPc1VyWFJmNW41eGs5YjZyamd6dkw3UFhVZEhBcDZIUEItNU5pUWVGd2sybWtGTGtpaTJDUE0zbU5uaTZLRmNSa1BmdWptNlpJcXZWMFlrVGU1Ry1vU1RuXzhYYmZnOEY0bmhheFZhaVN1MUdEeVJ0RE5NY0VYX0R1b2VqSG9zU09pU2pTYmEyT1p1QlRVb0hGZVdVSEZGRHdkUkhLM2RmYnFJQno2OHFMVXY1TmZjaGEtbnNJUUNGQURWNEt2?oc=5",
-      "outlet": "Médium.cz",
-      "outletUrl": "https://medium.seznam.cz",
-      "published": "2026-10-23T09:33:35.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Plzeň still without points in third Europa League match. Radoslav Kováč looks forward to reinforcements",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Co vše na ni praskne? Obří únik dat AfD odhaluje okolí vůdkyně i fungování strany",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbEIyX1hMdUZDaWZiLTdzWmlJV0h2Sl95OVVFOXMtR0hiT3daMXQ4RGh0SXpZMjVYOWhCeThWeHZDdDBYUHR6N19sMy0zalRoSmI2MDlWWmhHcHpsbUprZUZaNDVBcUFYbzgxQ25paGg0YmpONG0xNXc3d1Q0NmJwdmxvSFZqcThyTldLaHBjUmo1UHBGYzdxNnhidUg5TUhoN0dGUXhTMm9lYk1LR1ZkWkM2a0t2a3dBQUxTQjFlbw?oc=5",
-      "outlet": "iDNES.cz",
-      "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-23T12:36:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "What will crack open? Huge AfD data leak reveals the circle around the leader and how the party works",
-      "about": [
-        "DE"
-      ]
     }
   ]
 }
