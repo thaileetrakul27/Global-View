@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-24T17:51:09.606Z",
+  "updated": "2026-10-24T21:17:31.742Z",
   "fetched": {
-    "societies": "2026-10-24T17:51:09.606Z",
-    "uncr": "2026-10-24T17:51:09.606Z"
+    "societies": "2026-10-24T21:17:31.742Z",
+    "uncr": "2026-10-24T21:17:31.742Z"
   },
   "societies": {
     "AF": {
@@ -3179,44 +3179,44 @@
     "jrc.or.jp/english/donate": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-24T17:51:09.606Z",
       "chain": [
         "https://www.jrc.or.jp/english/donate/"
-      ],
-      "checked": "2026-10-24T17:51:09.606Z"
+      ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-24T17:51:09.606Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-10-24T17:51:09.606Z"
+      "blocked": true
     },
     "drk.de": {
       "ok": true,
       "reason": "donation word \"spenden*\"",
+      "checked": "2026-10-24T17:51:09.606Z",
       "chain": [
         "https://www.drk.de/"
-      ],
-      "checked": "2026-10-24T17:51:09.606Z"
+      ]
     },
     "redcrosszim.org.zw": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-24T17:51:09.606Z",
       "chain": [
         "https://www.redcrosszim.org.zw/"
-      ],
-      "checked": "2026-10-24T17:51:09.606Z"
+      ]
     },
     "ifrc.org/donate": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-24T17:51:09.606Z",
       "chain": [
         "https://www.ifrc.org/donate"
       ],
-      "blocked": true,
-      "checked": "2026-10-24T17:51:09.606Z"
+      "blocked": true
     }
   }
 }
