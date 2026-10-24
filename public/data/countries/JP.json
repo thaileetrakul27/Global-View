@@ -2,7 +2,7 @@
   "code": "JP",
   "name": "Japan",
   "kind": "local",
-  "updated": "2026-10-24T13:06:33.545Z",
+  "updated": "2026-10-24T17:51:09.606Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "JP:ja",
@@ -10,13 +10,40 @@
   },
   "articles": [
     {
-      "title": "スターリンク速度制限、トランプ氏「解決済み」…ゼレンスキー氏「復旧していない」",
+      "title": "【台風30号】京都府、25日昼前～警報級大雨の可能性 大雨のピークは2回ある見通し",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0zcjZyWU1IRjR4Q3FOcEtMUW9McHUwNjZJeDVwV093WThCNVRMSEZfdWxib3JPVkRYODlBSTZ3LW9QcG9VZVpPbWVHQTBkRUE3VTlrRkJMQWo?oc=5",
+      "outlet": "京都新聞デジタル",
+      "outletUrl": "https://www.kyoto-np.co.jp",
+      "published": "2026-10-24T14:57:57.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Typhoon No. 30: Kyoto Prefecture, from late morning on the 25th, possibility of heavy rain at warning level; heavy rain expected to peak twice",
+      "about": [
+        "JP"
+      ]
+    },
+    {
+      "title": "北朝鮮の金正恩氏、１年ぶり訪中 新大橋を利用、中国序列４位と会談",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA2WWdOa2pHdlJ2WW9hTW5hNmw3SlQtbUtOVW91SU84VGhSRWZwdGt4TzUzZUhkTm5mRjZEeVZRZERpa1ZVUTIwWnEzZVNLelF6VEowN0tXZHRPczNMZnYyc3RHaw?oc=5",
+      "outlet": "時事ドットコム",
+      "outletUrl": "https://www.jiji.com",
+      "published": "2026-10-24T13:33:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "North Korea's Kim Jong Un visits China for the first time in a year, uses the New Yalu River Bridge, holds talks with China's No. 4 ranked official",
+      "about": [
+        "KP",
+        "CN"
+      ]
+    },
+    {
+      "title": "ゼレンスキー氏、スターリンク通信速度「回復した」…トランプ大統領ら米側に謝意",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5LMERXTElzYlZ3c1RRTmFJeVIxSldOS2JubTEwQy1pbmFNSkt4R1dqdFJZTm91MXlOa0c2ZVgzMHh0UUVRcU5DVllwLUtzcFItNTg3LXl3anhEcHBvdUZyNUpB?oc=5",
       "outlet": "読売新聞",
       "outletUrl": "https://www.yomiuri.co.jp",
       "published": "2026-10-24T08:58:00.000Z",
       "outlets": 5,
-      "trending": true,
+      "trending": false,
       "en": "Starlink speed limits: Trump says \"resolved\"... Zelensky says \"not restored\"",
       "about": [
         "UA",
@@ -24,71 +51,81 @@
       ]
     },
     {
-      "title": "北朝鮮の金正恩氏が中国訪問 韓国メディアが報道 中朝新鴨緑江大橋通り丹東に到着",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WcTBNYThuYlpTVU13WU42cUZZZnFPMWJVeC0weS1PRHJudjlOMXh5eW0tWEN3dGtlUEV0V3h2UUtsZVJ5cWlUOGRqVG8xRzJvaGJsdFFVVlliVXYtNFBpNzZpRmFMTDhMbm1JT2M2QWNGX1RZR3c?oc=5",
-      "outlet": "産経ニュース",
-      "outletUrl": "https://www.sankei.com",
-      "published": "2026-10-24T06:33:50.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "North Korea's Kim Jong Un visits China, Korean media report; arrives in Dandong via the new China-North Korea Yalu River Bridge",
-      "about": [
-        "KP",
-        "CN"
-      ]
-    },
-    {
-      "title": "対イラン戦闘収束すれば「キューバを片付ける」とトランプ氏…ルビオ氏派遣の意向",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52blZLcUF3R0RzYWt3Qm5rVE9pUjBReXA4enlyQTF5TlRDZjYtVk9zSWVxelppSVB6TmN6aTJVY0ZLbk12VzZ6Wi1hdjJDaUY5MWRIa29wYkRCZFZYaTJsWmRn?oc=5",
-      "outlet": "読売新聞",
-      "outletUrl": "https://www.yomiuri.co.jp",
-      "published": "2026-10-24T10:49:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Trump says he will \"deal with Cuba\" once fighting with Iran ends... intends to send Rubio",
-      "about": [
-        "US",
-        "CU",
-        "IR"
-      ]
-    },
-    {
-      "title": "GMO、政府へ能動的サイバー防御「要請」 不正アクセスで情報流出",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qeFA3NXd6WnhLNVBqQ3FXejJRTkZhd1VzYlpYTDY5QUZhOThKMU9pVndIMHpfbl96SFFOdE11QTNHWjNyaHdSSmtNTjJSaDZZd0FGMFU1ajhfOG03dG5SekRVZ0ZnN3c?oc=5",
-      "outlet": "朝日新聞",
-      "outletUrl": "https://www.asahi.com",
-      "published": "2026-10-24T11:03:20.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "GMO \"requests\" government take active cyber defense measures; information leaked via unauthorized access",
-      "about": [
-        "JP"
-      ]
-    },
-    {
-      "title": "台風30号(チャンパー)は北上 前線活動活発になり西〜東日本は大雨警戒",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9OWFRXdjhPTklVSDRKS3ZVRmF2S2g1bXZsbE5uX3pQMmNROC1fX0FoNkxaOGhPMEtuMDZBVGVEbDE2RmZ0ejEzMUJyLWpjVlNzOUF6Rg?oc=5",
-      "outlet": "ウェザーニュース",
-      "outletUrl": "https://weathernews.jp",
-      "published": "2026-10-24T06:57:00.000Z",
+      "title": "神奈川 秦野の弘法山公園近くでクマ再出没 放獣個体と判明",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE01YU5sVjhPQkJXLXpDNXVuY0R3SU0yWHExZWVyR1VWd0FFdGNzdjdtN2txRWRUaEhPSXVUeG1PY0FHdjhJMmpSNnlqZnYzSDFaaE0wa19JcTR1aEIzSTNR?oc=5",
+      "outlet": "NHKニュース",
+      "outletUrl": "https://news.web.nhk",
+      "published": "2026-10-24T12:53:19.000Z",
       "outlets": 5,
       "trending": true,
-      "en": "Typhoon No. 30 (Chanthu) moves north; active fronts bring heavy rain warnings for western to eastern Japan",
+      "en": "Bear reappears near Kobo-san Park in Hadano, Kanagawa; identified as the individual released earlier",
       "about": [
         "JP"
       ]
     },
     {
-      "title": "巨人の松井秀喜新監督、ジャイアンツ球場など訪問…選手と会話「頑張っていきましょうという感じで」",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9oTjdUMVZmSmJ4VVFQZFVoV3RrVVNaN2RDWWNSQ2VjZE1zd3ZsSVlyVFRwd09GRDh3MUYweVMtdndVU0ZsNU9BZzZSaFZfMDNiUHhRcGZZc3BqSU5HWDg5ZFBHSU81bVdI?oc=5",
-      "outlet": "読売新聞",
-      "outletUrl": "https://www.yomiuri.co.jp",
-      "published": "2026-10-24T11:20:27.000Z",
+      "title": "モンゴル副首相、消火に税負担「謝罪だけでは済まない」 草原火災で賠償請求検討へ",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9TUmgwc1Bnb241NzNuN3F4QTBsVm1Ednhxdk41VVhjWldhbkNRS3FLOXNQcG56c0dNbUkzSzdXeW94LUdqNHNmcGVBcmNCZUNJWldmWW1YdkJHakQ3NUFtc0tMU0ZIYW1zWnFnLTdVdEs0OWVZb0E?oc=5",
+      "outlet": "産経ニュース",
+      "outletUrl": "https://www.sankei.com",
+      "published": "2026-10-24T12:06:44.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Giants' new manager Hideki Matsui visits Giants ballpark and others, talks with players: \"Let's keep working hard, that kind of feeling\"",
+      "en": "Mongolian Deputy Prime Minister on firefighting costs and taxpayers: \"An apology alone won't be enough\"; considering seeking compensation over grassland fire",
+      "about": [
+        "MN"
+      ]
+    },
+    {
+      "title": "ガソリン補助縮小「必要」 自民幹部、電気ガス前向き（共同通信）",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1IYm5FYlFNVHNnYnd0dl9hcEVGeWpkVjRUNUFxVjdERjFjVnVoMU91OVlaR2pFSlppRUU1LUViNnlreHU0U1A3QjZkTUV3QWxPbFhYTkZXWVJpMFFMY1dJeFBiZnpxR0QwaVk3WDktMkZIUWJSUXdVWGZ0T1lqOHM?oc=5",
+      "outlet": "Yahoo!ニュース",
+      "outletUrl": "https://news.yahoo.co.jp",
+      "published": "2026-10-24T14:57:29.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Need to scale back gasoline subsidies; LDP executive favorable toward electricity and gas",
       "about": [
         "JP"
+      ]
+    },
+    {
+      "title": "鈴木彩艶がマンチェスター・C相手にビッグセーブ連発!! プレミア全勝中だった首位撃破に貢献",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBEWWcwSXVCWE9uQ2tKTXRFeF9yRDM1WHk4enZ2ZURvRjFWRVFlcFNZNVdTYW5GU3ZfYzVCUlJnV19NcW16N25OREZORFFBNVBTeFJSSXNVSDdzZnozcHNDRjNDV1B5Q3VGWlcw?oc=5",
+      "outlet": "ゲキサカ",
+      "outletUrl": "https://web.gekisaka.jp",
+      "published": "2026-10-24T13:22:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Suzuki Ayase makes consecutive great saves against Manchester City; contributes to defeating the league leaders, who had won every Premier League match",
+      "about": [
+        "GB"
+      ]
+    },
+    {
+      "title": "「麻生氏も女性天皇容認だったのに」 男系男子に固執の裏側",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE15XzlFbnhwLU56dXBMUndpOWtFZkdXa1lLOFpoc0dvd21PU2VQWVNCV1V2UU84RzZkR1VzYno0cUtRdFhVRFdiVjdYRXFsQzdpbzNxTVI4b0pJcnpMcDNWTGpKOFFQQWRu?oc=5",
+      "outlet": "毎日新聞",
+      "outletUrl": "https://mainichi.jp",
+      "published": "2026-10-24T06:00:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"Even Aso supported a female emperor\" – the behind-the-scenes of insistence on male-line succession",
+      "about": [
+        "JP"
+      ]
+    },
+    {
+      "title": "抗議デモの高校生らとマクロン氏、初の会談…「大統領は話を聞いてくれたが対策示されず」と継続表明",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE13R1RFU01vYUVaN19hUXVrSzZUSHdoMzZRcDlOb3ZBbktsTnRaZXFLN2ZsV0NDcHIwLWZ3T21zR19fM3JOUmY2eW00LXZRb2ZtbEJqSTM0anFwY0F5a2UtMDVB?oc=5",
+      "outlet": "読売新聞",
+      "outletUrl": "https://www.yomiuri.co.jp",
+      "published": "2026-10-24T01:36:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Macron holds first talks with high school students protesting; 'The president listened but offered no measures,' they say, vowing to continue",
+      "about": [
+        "FR"
       ]
     },
     {
@@ -105,27 +142,39 @@
       ]
     },
     {
-      "title": "フランス国債、格下げ回避も解けぬ警戒 市場は財政再建なお不信",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xdEFUdDFlQkpJR0llLVRlSU44RWxGbDBhMUJ1SWczTXNOaEk5UnMwRy04aXZjZEJOSWVXaUFuVUFHakF5SGdhQmxYNDd4a0FvMXlnVXVhS3RqVHBqa3hwejVXNENJeTZHLUd2cA?oc=5",
-      "outlet": "日本経済新聞",
-      "outletUrl": "https://www.nikkei.com",
-      "published": "2026-10-24T09:30:00.000Z",
+      "title": "元オランダ代表MFがクラシコを展望「レアル・マドリードはバルセロナを罰するだろう」（フットボールチャンネル）",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5pY0ZhZHB5Qzd2TVZPV2Z0dkk2azE0dFR2TGlQZlVnaF81cmh6dXd6eTJRYUt6VDZlaWIyVVQxVEJNNGNUeFVsMDhXbUFMQ3dGcWZaS1B6UG9DWmV3QnVzYnVyTVNzVFg1enhGam1YcFlWNWpBVC1BWTctRTZSTUU?oc=5",
+      "outlet": "Yahoo!ニュース",
+      "outletUrl": "https://news.yahoo.co.jp",
+      "published": "2026-10-24T12:39:55.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Former Dutch national team midfielder previews El Clasico: \"Real Madrid will punish Barcelona\"",
+      "about": []
+    },
+    {
+      "title": "イラン戦争が飛び火!! マンデブ海峡が「第3次世界大戦」の火種になる!? フーシ派が要衝を占拠し、欧州軍まで出動!!",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8ydWJWcl8xSndsWFRhbXNjU1o4eUZmNEc0N2JFU3BhTzQ3UlRJWVpwUTZyUURTcEhsTlI1dG9Ndnlsb0dZY1J3eE9OV0M0RGZiTUVSTmFxMEx1R2hxN1M4?oc=5",
+      "outlet": "ライブドアニュース",
+      "outletUrl": "https://news.livedoor.com",
+      "published": "2026-10-24T14:04:12.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "French government bonds avoid downgrade but wariness persists; market still distrusts fiscal reconstruction",
+      "en": "Iran war spills over: Bab el-Mandeb Strait could become the spark for \"World War III\"? Houthis seize key point, and even European forces deploy",
       "about": [
-        "FR"
+        "IR",
+        "YE"
       ]
     },
     {
-      "title": "「麻生氏も女性天皇容認だったのに」 男系男子に固執の裏側",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE15XzlFbnhwLU56dXBMUndpOWtFZkdXa1lLOFpoc0dvd21PU2VQWVNCV1V2UU84RzZkR1VzYno0cUtRdFhVRFdiVjdYRXFsQzdpbzNxTVI4b0pJcnpMcDNWTGpKOFFQQWRu?oc=5",
-      "outlet": "毎日新聞",
-      "outletUrl": "https://mainichi.jp",
-      "published": "2026-10-24T06:00:00.000Z",
+      "title": "GMO、「能動的サイバー防御」発動を政府に要請 「お名前.com」FX用VPSへの攻撃で",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE80NjZDbXBqQm5VcXpIemtpN2U1SlB1bGdRSkVNQU5zUUtKOFloMmwxYng2R0xxLTJuODdFVTBWaTE0MktHd2xyRFhTSlBkR3U3X2NxX0VaNi1qdGVXVE1PWi1YY0NXcDNyZ1E?oc=5",
+      "outlet": "ITmedia",
+      "outletUrl": "https://www.itmedia.co.jp",
+      "published": "2026-10-24T09:10:34.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "\"Even Aso supported a female emperor\" – the behind-the-scenes of insistence on male-line succession",
+      "en": "GMO asks government to activate \"active cyber defense\" over attack on FX VPS of \"Onamae.com\"",
       "about": [
         "JP"
       ]
@@ -145,42 +194,29 @@
       ]
     },
     {
-      "title": "【ラグビー】日本代表１００周年のメモリアルマッチもミス目立ち敗戦 ＳＨ斎藤直人「しっかり見つめ直します」（スポーツ報知）",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VWm9MQTl1WWY3SlVpT2wtWW5XazdieUV4QkdmVkkwdFFxYUw5RmJrd0NsWXFSRk11dUktZlBmYV8xQ2VJdERtZDdTOXk0RDJKSGd3cVNyeWVwbWpOTWRFQXc1dHRoeWpfeHpRSER6RGY1Unc5WlNXMG5xRXBYdkE?oc=5",
-      "outlet": "Yahoo!ニュース",
-      "outletUrl": "https://news.yahoo.co.jp",
-      "published": "2026-10-24T10:28:54.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "[Rugby] Japan national team's 100th anniversary memorial match also ends in defeat with many errors; SH Naoto Saito: \"We will carefully reflect\" (Sports Hochi)",
-      "about": [
-        "JP"
-      ]
-    },
-    {
-      "title": "【速報】行方不明だった14歳の男子中学生を無事に発見 14日朝に自宅を出たあと所在分からず けがなく事件などに巻き込まれた形跡なし 公園にいるところを警察官が発見（関西テレビ）",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaVjMwVVRjUGNTOEd3dXNRT0J1TDBZQTltdVBOeEVtM0ZHMTRfX2xMeElKaVgyODc0TE00T2FYdTd5S25xU1dVZUJMVHpUeDZiWnNTZjNmemU1cWNRSjB2T3U3czk1ZzZhUGxtbWw0bHFteWJaQVVoNlY2ZVRXa1U?oc=5",
-      "outlet": "Yahoo!ニュース",
-      "outletUrl": "https://news.yahoo.co.jp",
-      "published": "2026-10-24T06:01:02.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "[Breaking] 14-year-old missing junior high school boy safely found; left home the morning of the 14th and whereabouts unknown; no injuries and no sign of involvement in crime; found by police officer in a park (Kansai TV)",
-      "about": [
-        "JP"
-      ]
-    },
-    {
-      "title": "ヒトラーの迎賓館「ケールシュタインハウス」で火災 ドイツ南部の山荘、不審者を拘束",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB3ZE01LWJCdVRsYXJaYVBrUlhuUGNRQ0RDRGJTQWJZZGp0TEhWbTU4UmhEVXBtektTM3RNcXNGZVVJbVJsNkFSZFJSenRXVVZtSmpnRF9tbDlNemp2SXlDb0xoN0xhQ3NWQjJXWm9sMmN0TDhzeHc?oc=5",
-      "outlet": "産経ニュース",
-      "outletUrl": "https://www.sankei.com",
-      "published": "2026-10-24T10:51:40.000Z",
+      "title": "秦野にツキノワグマ再出没 放獣した個体と同一 ３登山道閉鎖、捕殺も検討",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBtMDJFVmxwYXF3Rk5TVHRZTmRCU1dUX2hJZnJvM3dUQmdhYjRQUzhnTlBxSzdaMUNzdHZfUHlsY0wzNzEtTUNMVndCNG1rYWw4a29TczRnbnI2U0ZNNEpVT3NHQWxyT1k?oc=5",
+      "outlet": "カナロコ",
+      "outletUrl": "https://www.kanaloco.jp",
+      "published": "2026-10-24T13:20:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Fire at Hitler's guesthouse \"Kehlsteinhaus\" in southern Germany; suspicious person detained",
+      "en": "Black bear reappears in Hadano; same as the released individual; three mountain trails closed, capture and killing also under consideration",
       "about": [
-        "DE"
+        "JP"
+      ]
+    },
+    {
+      "title": "イギリス政府、国民に「3日分の備え」呼びかけ　特定の脅威情報への対策ではなく",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGdmJSdGZNQVJNUlE5WnpoWEgtejZFUVVCcDNvdGpabnY3bU1xZVlPLW5VYjZ2aTBuYnNtd1hTRl9TWmhoN2VkMjc0OEVHTXFYNmY1SGdtT1o4VnBVSllFZNIBZkFVX3lxTE1jUHBoUW1WUUJZRFhZS2h0bjNncFIwV2c1Z29UWHlqeHRrNmd3OC1GU3QyM1kzdXEwVUhkU2llVERxc2hTSUEybVZTMm56QlpOU3VrcFhJMFlkUFl3N29fWldDcnZFdw?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-10-24T05:44:07.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "UK government urges public to prepare \"three days' worth\" of supplies; not a countermeasure against specific threat information",
+      "about": [
+        "GB"
       ]
     },
     {
@@ -198,29 +234,84 @@
       ]
     },
     {
-      "title": "日本シリーズ2026 今日の始球式は誰？",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONXVzb2UwWkJpanUtZmlmczZlSlF5Y1hJOXMtakRjRXNpUnNhR2EzWlR3Z0RnVTNtY2hlUl9Wd0xTZWdSa0h0YThwUEluSG1OQ2RmZVZkZVFvT0dFOHhobk1ERzN3Y1RUMnBuU0x4ZE1UOEU2RV84NzNEbWUzZWZJT1NxM016MXBQZW1Hck44QXRiRTlrVHVIQkJfbXN3RDdzb2dXamUzQXF4M3RwcFl6dmszWGtnUGlCOG5OSkw4UmNoVGlMb09j?oc=5",
-      "outlet": "Goal.com",
-      "outletUrl": "https://www.goal.com",
-      "published": "2026-10-24T08:10:06.000Z",
+      "title": "イランが米政府職員殺害を計画か 米情報機関が警告",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE84dmlLM3M5NjJYTDVTcE1fNUlZZm16QkdwVGNLd2pkRllDZktGRm43b3BDb3F5Rm9kM0plNmRjTEY5NWMwZ3JKMl9aU2JqUkktaU9Jd3ktVGFGWDhCdF9Z?oc=5",
+      "outlet": "NHKニュース",
+      "outletUrl": "https://news.web.nhk",
+      "published": "2026-10-24T06:23:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Nippon Series 2026: who is throwing the ceremonial first pitch today?",
+      "en": "Iran may be planning to kill U.S. government officials, U.S. intelligence warns",
+      "about": [
+        "IR",
+        "US"
+      ]
+    },
+    {
+      "title": "巨人の松井秀喜新監督、ジャイアンツ球場など訪問…選手と会話「頑張っていきましょうという感じで」",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9oTjdUMVZmSmJ4VVFQZFVoV3RrVVNaN2RDWWNSQ2VjZE1zd3ZsSVlyVFRwd09GRDh3MUYweVMtdndVU0ZsNU9BZzZSaFZfMDNiUHhRcGZZc3BqSU5HWDg5ZFBHSU81bVdI?oc=5",
+      "outlet": "読売新聞",
+      "outletUrl": "https://www.yomiuri.co.jp",
+      "published": "2026-10-24T07:24:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Giants' new manager Hideki Matsui visits Giants ballpark and others, talks with players: \"Let's keep working hard, that kind of feeling\"",
       "about": [
         "JP"
       ]
     },
     {
-      "title": "【台風情報】ダブル台風の進路予想 台風30号は26日(月)に西日本に接近する見込み 前線が活発化 西日本や東日本では26日(月)が雨のピーク",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAtVEtGMmVzdDV1VlA4NS11blRqNDdNcExCaURuUTFKTjBTNjBKcEViLVh0OEhldk5ZX21Ga1ZwVnVad2tGdWhFeEJLcTBkQQ?oc=5",
-      "outlet": "FNNプライムオンライン",
-      "outletUrl": "https://www.fnn.jp",
-      "published": "2026-10-24T10:35:00.000Z",
-      "outlets": 4,
+      "title": "【日本シリーズ】ソフトバンク・小久保裕紀監督「めちゃくちゃ悩んだけど」７回の好機で上沢直之に代打送らず「勝つなら１―０」",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBJNzJGNjZQTHdzWFByLUFLWmo2Z0lON2VVVDFxYmw5THM2cmF0NHJ5QTlIVTRZQU82bFBXZ2oxeENNdU5VNUtqWW80TmVyZ3ozWjF1d0NyNFZ2N2FNOWtWdTNHQ2JRRC1QdWNxRlFhcVN5d0dvMW14d1RDRzUtcGc?oc=5",
+      "outlet": "Yahoo!ニュース",
+      "outletUrl": "https://news.yahoo.co.jp",
+      "published": "2026-10-24T14:33:10.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "[Typhoon information] Forecast path of double typhoons: Typhoon No. 30 expected to approach western Japan on Monday the 26th; fronts intensify; Monday the 26th will be the peak of rain in western and eastern Japan",
+      "en": "[Japan Series] Softbank manager Hirofumi Kobayashi: \"I agonized greatly\" but did not send a pinch hitter for Naoyuki Uwasawa in the 7th inning scoring chance; \"If we win, it's 1-0\"",
       "about": [
         "JP"
+      ]
+    },
+    {
+      "title": "対イラン戦闘収束すれば「キューバを片付ける」とトランプ氏…ルビオ氏派遣の意向",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52blZLcUF3R0RzYWt3Qm5rVE9pUjBReXA4enlyQTF5TlRDZjYtVk9zSWVxelppSVB6TmN6aTJVY0ZLbk12VzZ6Wi1hdjJDaUY5MWRIa29wYkRCZFZYaTJsWmRn?oc=5",
+      "outlet": "読売新聞",
+      "outletUrl": "https://www.yomiuri.co.jp",
+      "published": "2026-10-24T10:49:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Trump says he will \"deal with Cuba\" once fighting with Iran ends... intends to send Rubio",
+      "about": [
+        "US",
+        "CU",
+        "IR"
+      ]
+    },
+    {
+      "title": "「５００万円渡した」と名指しされた県議会のドン、事実無根と否定「名誉毀損の民事訴訟で決着つける」",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tZjZDakhnTnZTejJOTEpQM0tudzluLUZWRUNaY2pIU2NEVTNBdTZmdzJFX2NlQWRiSjFWdzIycnRGUVZ5UGlDUm1ZNjlNSk0tS0piVmpRU1VVNkRfRTNMWFR6SF85UQ?oc=5",
+      "outlet": "読売新聞",
+      "outletUrl": "https://www.yomiuri.co.jp",
+      "published": "2026-10-24T00:00:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Prefectural assembly 'kingmaker' named as having received 5 million yen denies it as baseless, vows to settle in a civil defamation suit",
+      "about": [
+        "JP"
+      ]
+    },
+    {
+      "title": "ヒトラーの迎賓館「ケールシュタインハウス」で火災 ドイツ南部の山荘、不審者を拘束",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB3ZE01LWJCdVRsYXJaYVBrUlhuUGNRQ0RDRGJTQWJZZGp0TEhWbTU4UmhEVXBtektTM3RNcXNGZVVJbVJsNkFSZFJSenRXVVZtSmpnRF9tbDlNemp2SXlDb0xoN0xhQ3NWQjJXWm9sMmN0TDhzeHc?oc=5",
+      "outlet": "産経ニュース",
+      "outletUrl": "https://www.sankei.com",
+      "published": "2026-10-24T10:51:40.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Fire at Hitler's guesthouse \"Kehlsteinhaus\" in southern Germany; suspicious person detained",
+      "about": [
+        "DE"
       ]
     },
     {
@@ -237,53 +328,16 @@
       ]
     },
     {
-      "title": "「５００万円渡した」と名指しされた県議会のドン、事実無根と否定「名誉毀損の民事訴訟で決着つける」",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tZjZDakhnTnZTejJOTEpQM0tudzluLUZWRUNaY2pIU2NEVTNBdTZmdzJFX2NlQWRiSjFWdzIycnRGUVZ5UGlDUm1ZNjlNSk0tS0piVmpRU1VVNkRfRTNMWFR6SF85UQ?oc=5",
-      "outlet": "読売新聞",
-      "outletUrl": "https://www.yomiuri.co.jp",
-      "published": "2026-10-24T00:00:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Prefectural assembly 'kingmaker' named as having received 5 million yen denies it as baseless, vows to settle in a civil defamation suit",
-      "about": [
-        "JP"
-      ]
-    },
-    {
-      "title": "ハロウィン向けインディーホラー8選！ 『CloverPit』『Phasmophobia』『The Midnight Walk』をPS Blogが紹介",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iMjBPWi1rTlFMUlRvUklUTGl6dUFWbGRBTzJVbGt2VWtmenpOWnhtdDdqWkRqV3BFYjB1ckptb0ppZkRhY3R2SjVsYmNqU1BlVl96MHRsOGhkaE1iRk1Neg?oc=5",
-      "outlet": "AppBank",
-      "outletUrl": "https://www.appbank.net",
-      "published": "2026-10-24T10:55:14.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Indie horror picks for Halloween: 8 titles; PS Blog introduces 'CloverPit', 'Phasmophobia', and 'The Midnight Walk'",
-      "about": []
-    },
-    {
-      "title": "三条市大野畑で建物火災 – kenoh.com",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9CUnBjZ081aTc0Q1pJU0p1cDkxdlNLTnNJTlUzOFF3cEVPM29IbGxXWjhTbTJ6aXh5RTdGeU5uYTJXbDBMc29BQlVn?oc=5",
-      "outlet": "kenoh.com",
-      "outletUrl": "https://www.kenoh.com",
-      "published": "2026-10-24T09:17:34.000Z",
+      "title": "PHP並みの脆弱性「まだ出てくる」 米クラウドフレアCEOが予告",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aLWUyQzZyNTRHYUYzOG5HeHFjMnktdTBzX19qTmhsclhOZFRUZWdRM0MtVnRHSVhXbjlza3BPenBiREFmUUVpWkFtVGdCc1dnbkdrb0NEYkliY204Z3AyV1VtY2R3UWpsU2Z4dg?oc=5",
+      "outlet": "日本経済新聞",
+      "outletUrl": "https://www.nikkei.com",
+      "published": "2026-10-24T01:15:09.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "Building fire in Ōno-Hatake, Sanjo City – kenoh.com",
+      "en": "Vulnerability comparable to PHP's \"still more to come\", says Cloudflare US CEO",
       "about": [
-        "JP"
-      ]
-    },
-    {
-      "title": "茅ケ崎市長選、元市部長の富田雄也氏が出馬取りやめ 「一身上の都合」",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5qSEF5QllHSlM2eVVDS0ZHS2tKbkdoY1NiRXA3NFBUdXhOT3JYQzNCNzFBLURiazRKQkg2WTBfZDBXbWZXNzRrZzdjeTFMMVp5eUtqdFhmRFM4ZUZsQVl6bEd5Y0s3SHA4MW5laEhrUll6MTVwZXNKek1PMkhkZw?oc=5",
-      "outlet": "カナロコ",
-      "outletUrl": "https://www.kanaloco.jp",
-      "published": "2026-10-24T03:40:00.000Z",
-      "outlets": 3,
-      "trending": false,
-      "en": "Chigasaki mayoral election: former city department head Yuya Tomita withdraws candidacy, citing \"personal reasons\"",
-      "about": [
-        "JP"
+        "US"
       ]
     },
     {
@@ -300,43 +354,27 @@
       ]
     },
     {
-      "title": "明日10月25日(日)の天気予報 西日本、東日本は大雨に警戒 北海道は晴れ間多い",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9DSW9Sd1dNUnpDdWthQUo5SldRa0k2ZVhBODJWWHpnNEhzMmdhSWhnUm1teE9pS3ZYSnlHaE1ndVpCZ2s4VndxakNfN2JGNEU0cjF4Rg?oc=5",
+      "title": "的川博士の銀河教室 912 世界初のフォボス・サンプルリターンへ／上",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xTHpsQlZwZnRWQXdpSFh1Zk9TT0h3N05VUlJaUFVQMkV2eDg0RDhWYUpOa3BwaVlqZUY1d1BFSnpJbS1CLVNzeWpaVkJLV0tlbzBvcHh0OVoybFJIWmQwUExOd2I2VnZPUTZBcExiZ1podw?oc=5",
+      "outlet": "毎日新聞",
+      "outletUrl": "https://mainichi.jp",
+      "published": "2026-10-23T21:01:15.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Dr. Matsukawa's Galaxy Class 912: Toward the world's first Phobos sample return, Part 1",
+      "about": []
+    },
+    {
+      "title": "来週は寒気南下で雪エリア拡大 東京では木枯らし1号の可能性",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBMQ1c4YTFHd0NIZEJ1OExWTWRMZ1BubWZCNlRnMlB3Y0FxQ3VGX1ViZ1lPLXhka1EtOThFYTNVUEdPY2IyMTdLbVFDYklZQ01DTWwtdQ?oc=5",
       "outlet": "ウェザーニュース",
       "outletUrl": "https://weathernews.jp",
-      "published": "2026-10-24T07:35:00.000Z",
+      "published": "2026-10-24T08:33:00.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Weather forecast for tomorrow, October 25 (Sun): heavy rain warnings for western and eastern Japan; Hokkaido has many sunny spells",
+      "en": "Next week cold air moves south, expanding snow areas; Tokyo may see the first northwesterly cold wind of autumn (kogarashi 1)",
       "about": [
         "JP"
-      ]
-    },
-    {
-      "title": "行方不明だった大阪市の男子中学生を保護、東大阪市内の公園で発見 けがなし",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4xS1dfM200OGFfUHp4cl9iUUtxbThNN1F6VFpUSEJobi1hemFJaW4xTWNjZXlvNEllWmlXeW43LVlJdDJUbUxtenYyUjV1eElhdmVrQkRFMXJkRkVJbE83TlByRXBBZGhLeURvWEc4cUZlZnVfdnc?oc=5",
-      "outlet": "産経ニュース",
-      "outletUrl": "https://www.sankei.com",
-      "published": "2026-10-24T07:10:52.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Missing Osaka junior high school boy found and protected, discovered in a park in Higashiosaka City; no injuries",
-      "about": [
-        "JP"
-      ]
-    },
-    {
-      "title": "イランが米政府職員殺害を計画か 米情報機関が警告",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE84dmlLM3M5NjJYTDVTcE1fNUlZZm16QkdwVGNLd2pkRllDZktGRm43b3BDb3F5Rm9kM0plNmRjTEY5NWMwZ3JKMl9aU2JqUkktaU9Jd3ktVGFGWDhCdF9Z?oc=5",
-      "outlet": "NHKニュース",
-      "outletUrl": "https://news.web.nhk",
-      "published": "2026-10-24T06:23:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Iran may be planning to kill U.S. government officials, U.S. intelligence warns",
-      "about": [
-        "IR",
-        "US"
       ]
     },
     {
@@ -345,7 +383,7 @@
       "outlet": "産経ニュース",
       "outletUrl": "https://www.sankei.com",
       "published": "2026-10-24T07:19:38.000Z",
-      "outlets": 4,
+      "outlets": 5,
       "trending": false,
       "en": "Western Russia attacked with Storm Shadow cruise missiles; military parts manufacturing plant reportedly damaged",
       "about": [
@@ -353,54 +391,14 @@
       ]
     },
     {
-      "title": "米国防総省 「孔子学院」を“安全保障上の脅威”と認定",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ERVhFeGo4TlM3QS1yWktuUGRsamRoaE9VZXo1bXBRSDF4dkg1U3hvdzJNM0hVYlI5Rnk0Wi1sN2lXclVfb0dFazBNRHBXWTQ4VnBHYjlnT3QzTF9RS0F3?oc=5",
-      "outlet": "NHKニュース",
-      "outletUrl": "https://news.web.nhk",
-      "published": "2026-10-24T06:21:00.000Z",
-      "outlets": 5,
+      "title": "ハロウィン向けインディーホラー8選！ 『CloverPit』『Phasmophobia』『The Midnight Walk』をPS Blogが紹介",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iMjBPWi1rTlFMUlRvUklUTGl6dUFWbGRBTzJVbGt2VWtmenpOWnhtdDdqWkRqV3BFYjB1ckptb0ppZkRhY3R2SjVsYmNqU1BlVl96MHRsOGhkaE1iRk1Neg?oc=5",
+      "outlet": "AppBank",
+      "outletUrl": "https://www.appbank.net",
+      "published": "2026-10-24T10:55:14.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "U.S. Department of Defense designates Confucius Institutes as a \"security threat\"",
-      "about": [
-        "US",
-        "CN"
-      ]
-    },
-    {
-      "title": "米中間選挙、共和党は下院での大敗回避に躍起 下院議長がトランプ氏に追加資金要請",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9Ob3lGQ1J5Q2JqVUxrNUtoMlBoeVpDbm5vQWxrWHc1R2Nsa2tIRVhNZmxhU0VrN3RMZklYUkE0NGhKQXIycU5yVE44NUxrTGdQ?oc=5",
-      "outlet": "CNN.co.jp",
-      "outletUrl": "https://www.cnn.co.jp",
-      "published": "2026-10-24T06:21:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "U.S. midterm elections: Republicans scramble to avoid heavy defeat in House; House Speaker requests additional funds from Trump",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "全長１ｍの刀のようなもので上司の首を切りつけ、タクシー運転手の男を殺人未遂容疑で逮捕",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9tWFIyWXlqdVM0TjVSLWJnQUFJd2lLdEljRlF6dGtSampuTEcxRUM2MDk1MFpkdnRTcU4tZVRnZFR6S2R1cWJ5S0xqZVlIVGtYUFdfTGNRTWI1MFNla0kyQ0hkUk5GUQ?oc=5",
-      "outlet": "読売新聞",
-      "outletUrl": "https://www.yomiuri.co.jp",
-      "published": "2026-10-24T06:19:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Man arrested on suspicion of attempted murder for slashing his boss's neck with a 1-meter sword-like object; taxi driver",
-      "about": [
-        "JP"
-      ]
-    },
-    {
-      "title": "折りたたみ「iPhone Duo」、発売当日に画面破損の報告--入手から約6時間で",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9VeXRHZHhCNzdtXzVPNE9NSjl0Mng2MUN3S1J1YUR6UUVDLW1DQVNPQXNsOGs4TUF1dUw4c3dXQWduY2lQT3ZRSndhY1RDN2lKR0E?oc=5",
-      "outlet": "CNET Japan",
-      "outletUrl": "https://japan.cnet.com",
-      "published": "2026-10-23T23:50:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Foldable \"iPhone Duo\" reported with screen damage on release day, about six hours after acquisition",
+      "en": "Indie horror picks for Halloween: 8 titles; PS Blog introduces 'CloverPit', 'Phasmophobia', and 'The Midnight Walk'",
       "about": []
     }
   ]

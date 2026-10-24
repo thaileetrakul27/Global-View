@@ -214,98 +214,98 @@
     "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001338": {
-    "at": "2026-10-22T14:17:21.809Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Super Typhoon Champi (Rosal in the Philippines) formed in mid-October 2026. As of 22 October 2026 it was moving northwest south of Japan's Sakishima Islands, with closest approach forecast for 23–24 October. Batanes was under Signal No. 2. Flights were cancelled at Miyako, Ishigaki and Naha. No damage or casualty reports had been published as of 22 October. The storm is expected to weaken into an extratropical cyclone by Monday.",
+    "summary": "Super Typhoon Champi (Rosal) started on 14 October 2026 and was still active on 24 October, though weakening. Taiwan lifted its land warning but urges caution because residual rain and hazardous conditions remain. Taiwan reported one death and 616 injured. About 56,000 households were still without power on 24 October. Guam and the Northern Mariana Islands are recovering as the storm has moved away.",
     "ongoing": true,
     "places": [
       {
-        "name": "Sakishima Islands",
-        "admin": "Okinawa Prefecture",
-        "country": "JP",
-        "kind": "region",
-        "impact": "Closest approach forecast 23–24 Oct; strong winds expected"
+        "name": "Taizhou",
+        "admin": "Zhejiang",
+        "country": "CN",
+        "kind": "city",
+        "impact": "Over 3,800 fishing boats recalled to harbour"
       },
       {
         "name": "Batanes",
         "country": "PH",
         "kind": "region",
-        "impact": "Signal No. 2 raised; classes and work suspended"
+        "impact": "Signal No. 2 maintained; no damage reported"
       },
       {
-        "name": "Ishigaki",
-        "admin": "Okinawa Prefecture",
-        "country": "JP",
-        "kind": "town",
-        "impact": "Flights cancelled; ferries suspended"
-      },
-      {
-        "name": "Miyako",
-        "admin": "Okinawa Prefecture",
-        "country": "JP",
-        "kind": "town",
-        "impact": "Flights cancelled"
-      },
-      {
-        "name": "Naha",
-        "admin": "Okinawa Prefecture",
-        "country": "JP",
-        "kind": "city",
-        "impact": "Flights cancelled"
-      },
-      {
-        "name": "Cagayan",
+        "name": "Catanduanes",
         "country": "PH",
         "kind": "region",
-        "impact": "Named as affected by NDRRMC bulletins"
-      },
-      {
-        "name": "Isabela",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Named as affected by NDRRMC bulletins"
-      },
-      {
-        "name": "Ilocos Norte",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Named as affected by NDRRMC bulletins"
-      },
-      {
-        "name": "Apayao",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Named as affected by NDRRMC bulletins"
+        "impact": "Signal No. 1 maintained; no damage reported"
       }
     ],
-    "figures": [],
-    "donation": [],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "nationpathindia.com",
+        "sourceUrl": "https://www.nationpathindia.com/international/typhoon-champi-taiwan-one-dead-616-injured-october-2026"
+      },
+      {
+        "label": "Injured",
+        "value": "616",
+        "sourceName": "nationpathindia.com",
+        "sourceUrl": "https://www.nationpathindia.com/international/typhoon-champi-taiwan-one-dead-616-injured-october-2026"
+      },
+      {
+        "label": "Evacuated",
+        "value": "more than 5,000 people",
+        "sourceName": "phys.org",
+        "sourceUrl": "https://phys.org/news/2026-10-typhoon-champi-power-thousands-taiwan.html"
+      },
+      {
+        "label": "Households without power",
+        "value": "about 56,000",
+        "sourceName": "phys.org",
+        "sourceUrl": "https://phys.org/news/2026-10-typhoon-champi-power-thousands-taiwan.html"
+      },
+      {
+        "label": "Sheltering in Guam",
+        "value": "more than 1,000 people",
+        "sourceName": "redcross.org",
+        "sourceUrl": "https://www.redcross.org/about-us/news-and-events/news/2026/tropical-cyclone-heads-to-the-islands.html"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://www.jrc.or.jp/english/donate/",
+        "org": "Japanese Red Cross Society",
+        "kind": "society",
+        "note": "General donation page for Japanese Red Cross work, not an appeal for Champi.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
-        "name": "nippon.com",
-        "url": "https://www.nippon.com/en/news/yjj2026102200228/",
-        "title": "Typhoon Champi Seen Approaching Okinawa Islands Fri."
+        "name": "nationpathindia.com",
+        "url": "https://www.nationpathindia.com/international/typhoon-champi-taiwan-one-dead-616-injured-october-2026",
+        "title": "Typhoon Champi Leaves One Dead and 616 Injured in Taiwan as Storm Weakens and Moves Away"
       },
       {
-        "name": "tenki.jp",
-        "url": "https://tenki.jp/forecaster/t_fujikawa/2026/10/22/41054.html",
-        "title": "非常に強い台風30号 23日～24日に先島諸島接近 本州付近も警報級大雨のおそれ(気象予報士 藤川 徹 2026年10月22日) - 日本気象協会 tenki.jp"
+        "name": "phys.org",
+        "url": "https://phys.org/news/2026-10-typhoon-champi-power-thousands-taiwan.html",
+        "title": "Typhoon Champi knocks out power to thousands in Taiwan"
       },
       {
-        "name": "rappler.com",
-        "url": "https://www.rappler.com/philippines/weather/super-typhoon-rosal-update-pagasa-forecast-october-21-2026-11am/",
-        "title": "Signal No. 2 up in Batanes due to Super Typhoon Rosal"
+        "name": "kelo.com",
+        "url": "https://kelo.com/2026/10/23/typhoon-champi-sweeps-past-taiwan-one-dead-and-500-injured/",
+        "title": "Typhoon Champi sweeps past Taiwan, leaving 1 dead, 500 injured"
       },
       {
-        "name": "stripes.com",
-        "url": "https://www.stripes.com/theaters/asia_pacific/2026-10-21/super-typhoon-champi-keen-sword-23216053.html",
-        "title": "Super Typhoon Champi disrupts Keen Sword drills across southern Japan"
+        "name": "redcross.org",
+        "url": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html",
+        "title": "Red Cross Responding to Two Major Storms Affecting Communities More Than 8,200 Miles Apart"
       }
     ],
-    "membersHash": "eonet,gdacs,news|JP,PH,TW#3901514e",
-    "seen": "2026-10-24T13:06:33.545Z",
-    "donationSearched": "2026-10-22T14:17:21.809Z"
+    "membersHash": "eonet,gdacs|CN,JP,PH#afb26aec",
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-cyclone-tc-1001341": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -354,7 +354,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-23T21:53:40.347Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -368,7 +368,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CA,US#471b9aae",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -470,93 +470,22 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "donationSearched": "2026-10-24T13:06:33.545Z",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z",
+    "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-10-22T14:17:21.809Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A drought affecting parts of Central America began in late April 2026 and is linked to the El Niño pattern. Honduras has 103 municipalities under red alert. The UN and the Honduran government launched a US$60 million Flash Appeal in September. El Salvador recorded its driest August since 1971, and Guatemala reported first-harvest losses in the Dry Corridor. As of 21 October 2026, a Washington Post report said the drought was continuing.",
+    "searches": 1,
+    "summary": "",
     "ongoing": true,
     "places": [],
-    "figures": [
-      {
-        "label": "People targeted",
-        "value": "538,000 people",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/honduras/latin-america-caribbean-weekly-situation-update-25-september-2026"
-      },
-      {
-        "label": "People in need",
-        "value": "708,000 people",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/honduras/latin-america-caribbean-weekly-situation-update-25-september-2026"
-      },
-      {
-        "label": "People facing crisis-level hunger or…",
-        "value": "3 million people",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/mexico/latin-america-caribbean-weekly-situation-update-2-october-2026"
-      },
-      {
-        "label": "Affected area",
-        "value": "677,277 km²",
-        "sourceName": "gdacs.org",
-        "sourceUrl": "https://www.gdacs.org/report.aspx?eventtype=DR&amp=&eventid=1027449"
-      }
-    ],
-    "donation": [
-      {
-        "url": "https://honduras.un.org/es",
-        "org": "UN in Honduras (Naciones Unidas en Honduras)",
-        "kind": "un",
-        "note": "Announces US$60 million Flash Appeal for the drought; no direct giving form found.",
-        "specific": true
-      },
-      {
-        "url": "https://go.ifrc.org/countries/81",
-        "org": "IFRC GO platform",
-        "kind": "society",
-        "note": "IFRC country page listing Honduras drought DREF operation MDRHN028, already funded.",
-        "specific": false
-      }
-    ],
-    "sources": [
-      {
-        "name": "washingtonpost.com",
-        "url": "https://www.washingtonpost.com/world/2026/10/21/cloud-seeding-climate-drought-nino-honduras/806631ae-cd64-11f1-ac04-9f58578a68b4_story.html",
-        "title": "In Honduras, hard hit by drought, authorities hope to make it rain using contentious tactic - The Washington Post"
-      },
-      {
-        "name": "gdacs.org",
-        "url": "https://www.gdacs.org/report.aspx?eventtype=DR&amp=&eventid=1027449",
-        "title": "Overall Orange Drought for Central America-2026 in The Bahamas, Belize, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador…"
-      },
-      {
-        "name": "revistaeyn.com",
-        "url": "https://www.revistaeyn.com/centroamericaymundo/honduras-recibira-donativo-de-us-20-millones-para-enfrentar-sequia-NC31774854",
-        "title": "Honduras recibirá donativo de US$20 millones para enfrentar sequía"
-      },
-      {
-        "name": "mexiconewsdaily.com",
-        "url": "https://mexiconewsdaily.com/news/mexico-almost-completely-recovered-from-drought/",
-        "title": "Mexico has almost totally recovered from several years of drought"
-      },
-      {
-        "name": "unocha.org",
-        "url": "https://www.unocha.org/publications/report/mexico/latin-america-caribbean-weekly-situation-update-2-october-2026",
-        "title": "Latin America & The Caribbean Weekly Situation Update as of 2 October 2026"
-      },
-      {
-        "name": "safeabroad.com",
-        "url": "https://safeabroad.com/reports/el-nino-will-increase-drought-and-extreme-rainfall-risks-in-central-america/",
-        "title": "El Niño Will Increase Drought and Extreme Rainfall Risks In Central America - SafeAbroad"
-      }
-    ],
+    "figures": [],
+    "donation": [],
+    "sources": [],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-24T13:06:33.545Z",
-    "donationSearched": "2026-10-22T14:17:21.809Z"
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -671,6 +600,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
+    "seen": "2026-10-24T17:51:09.606Z",
     "earlierSearch": [
       {
         "url": "https://go.ifrc.org/",
@@ -679,8 +609,7 @@
         "note": "IFRC GO homepage listing Ethiopia Drought Response DREF MDRET042; no donation button confirmed.",
         "specific": false
       }
-    ],
-    "seen": "2026-10-24T13:06:33.545Z"
+    ]
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -788,20 +717,51 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-earthquake-eq-1570077": {
-    "at": "2026-10-22T14:17:21.809Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 6.3 earthquake struck off Vanuatu on 8 October 2026, according to USGS. The Watchers reports it was shallow, at 10 km depth, about 102 km northeast of Norsup. Channels Television reported no early damage and no tsunami warning was issued. The latest sources are dated 8 October 2026 and report no damage, injuries or evacuations.",
-    "ongoing": false,
-    "places": [],
+    "summary": "A magnitude 6.3 earthquake struck Vanuatu on 8 October 2026, shallow beneath Penama Island, according to USGS reports. On 24 October 2026, an M6.9 earthquake struck offshore northern Vanuatu about 197 km WNW of Port-Olry, followed by an M6.3 event. The Pacific Tsunami Warning Center said the tsunami threat had passed. No damage or casualties were reported.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Penama Island",
+        "country": "VU",
+        "kind": "region",
+        "impact": "Oct 8 M6.3 epicentre beneath; no damage named"
+      },
+      {
+        "name": "Port-Olry",
+        "country": "VU",
+        "kind": "town",
+        "impact": "Oct 24 M6.9 epicentre offshore, 197 km WNW"
+      }
+    ],
     "figures": [],
     "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|VU#1dba2781"
+    "sources": [
+      {
+        "name": "channelstv.com",
+        "url": "https://www.channelstv.com/2026/10/08/just-in-6-3-magnitude-earthquake-hits-vanuatu-says-us-agency/",
+        "title": "6.3-Magnitude Earthquake Hits Vanuatu, Says US Agency • Channels Television"
+      },
+      {
+        "name": "watchers.news",
+        "url": "https://watchers.news/2026/10/24/strong-earthquake-sequence-strikes-off-northern-vanuatu-after-initial-m6-9-event/",
+        "title": "Strong earthquake sequence strikes off northern Vanuatu after initial M6.9 event - The Watchers"
+      },
+      {
+        "name": "earthquakeinsights.substack.com",
+        "url": "https://earthquakeinsights.substack.com/p/magnitude-63-earthquake-strikes-vanuatu",
+        "title": "Magnitude 6.3 earthquake strikes Vanuatu"
+      }
+    ],
+    "membersHash": "gdacs|VU#1dba2781",
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-earthquake-eq-1570339": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -950,8 +910,8 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "donationSearched": "2026-10-24T13:06:33.545Z",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z",
+    "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1061,7 +1021,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|US#dc9009ba",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-earthquake-eq-1571917": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1141,10 +1101,10 @@
     "membersHash": "gdacs,usgs|RU#d9831494"
   },
   "gdacs-earthquake-eq-1572122": {
-    "at": "2026-10-22T14:17:21.809Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 5.7 earthquake struck near Khuzdar, Balochistan, Pakistan, on 17 October 2026 at about 05:06 UTC. The epicentre was about 48 km west-northwest of Khuzdar city. Tremors were felt in Khuzdar, Kalat, Mastung, Kharan and Nushki. Authorities reported no casualties or property damage in initial assessments. Magnitude and depth reports vary between sources.",
+    "searches": 4,
+    "summary": "A magnitude 5.7 to 5.9 earthquake struck near Khuzdar, Balochistan, Pakistan, on 17 October 2026 at about 10:07 local time. The epicentre was about 48 km northwest of Khuzdar city. Shaking was felt in Khuzdar district and nearby areas. Reports as of 18 October noted no ongoing direct effects, and local teams surveyed for damage. No reports were found after 21 October.",
     "ongoing": false,
     "places": [
       {
@@ -1152,35 +1112,19 @@
         "admin": "Balochistan",
         "country": "PK",
         "kind": "district",
-        "impact": "epicentre area; tremors felt, no damage reported"
+        "impact": "Epicentre area; shaking felt"
       },
       {
         "name": "Kalat",
-        "admin": "Balochistan",
         "country": "PK",
-        "kind": "district",
-        "impact": "tremors felt, no damage reported"
+        "kind": "town",
+        "impact": "Shaking felt"
       },
       {
-        "name": "Mastung",
-        "admin": "Balochistan",
+        "name": "Surab",
         "country": "PK",
-        "kind": "district",
-        "impact": "tremors felt, no damage reported"
-      },
-      {
-        "name": "Kharan",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "district",
-        "impact": "tremors felt, no damage reported"
-      },
-      {
-        "name": "Nushki",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "district",
-        "impact": "tremors felt, no damage reported"
+        "kind": "town",
+        "impact": "Shaking felt"
       }
     ],
     "figures": [],
@@ -1190,6 +1134,26 @@
         "name": "quettavoice.com",
         "url": "https://quettavoice.com/2026/10/17/magnitude-5-9-earthquake-hits-balochistans-khuzdar-distric/",
         "title": "Magnitude 5.9 Earthquake Hits Balochistan’s Khuzdar Distric"
+      },
+      {
+        "name": "dailytimes.com.pk",
+        "url": "https://dailytimes.com.pk/1568641/moderate-5-9-magnitude-earthquake-jolts-balochistans-khuzdar-district/",
+        "title": "Moderate 5.9-magnitude earthquake jolts balochistan's khuzdar district - Daily Times"
+      },
+      {
+        "name": "outlookindia.com",
+        "url": "https://www.outlookindia.com/international/pakistan-earthquake-magnitude-5-8-tremor-15-km-depth",
+        "title": "Magnitude 5.8 Earthquake Strikes Pakistan, Tremor Recorded At 15 Km Depth"
+      },
+      {
+        "name": "pakistan.shafaqna.com",
+        "url": "https://pakistan.shafaqna.com/EN/339248",
+        "title": "5.9-Magnitude Earthquake Shakes Khuzdar, Surrounding Areas in Balochistan"
+      },
+      {
+        "name": "ianslive.in",
+        "url": "https://ianslive.in/pakistan-one-person-killed-after-earthquake-jolts-balochistans-khuzdar--20261018132040",
+        "title": "Pakistan: One killed after earthquake jolts Balochistan's Khuzdar district"
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb"
@@ -1249,7 +1213,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -1277,7 +1241,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,news,usgs|CN#09fb162e",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "gdacs-earthquake-eq-1573344": {
@@ -1332,7 +1296,7 @@
       }
     ],
     "membersHash": "gdacs,news,usgs|IT#cb390233",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1103888": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1392,7 +1356,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|US#2b36b9e5",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1460,7 +1424,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1620,7 +1584,7 @@
       }
     ],
     "membersHash": "gdacs,news|EC#5dc7dd96",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1933,7 +1897,7 @@
       }
     ],
     "membersHash": "gdacs|BR#3eb3019b",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104217": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2066,7 +2030,7 @@
       }
     ],
     "membersHash": "gdacs,news|CL#74420222",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2155,7 +2119,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104219": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2338,7 +2302,7 @@
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104221": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2540,7 +2504,7 @@
       }
     ],
     "membersHash": "gdacs|PY#a8b5e710",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104223": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2613,7 +2577,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104225": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2808,7 +2772,7 @@
       }
     ],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104228": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2887,7 +2851,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PA#b2b5f6ce",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104230": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2989,7 +2953,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|TR#b0b8323f",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104231": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -3016,7 +2980,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|LY#afb830ac",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104232": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3043,7 +3007,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|JO#b2b83565",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104233": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3056,7 +3020,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SY#b1b833d2",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104235": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3069,7 +3033,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104236": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3118,7 +3082,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SV#aeb82f19",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104237": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3151,7 +3115,7 @@
       }
     ],
     "membersHash": "gdacs|NI#adb82d86",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104238": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3164,7 +3128,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3289,7 +3253,7 @@
       }
     ],
     "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3538,7 +3502,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104242": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3590,7 +3554,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UA#a8a6dc86",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104243": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3699,7 +3663,7 @@
       }
     ],
     "membersHash": "gdacs|FR#a9a6de19",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-flood-fl-1104244": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3794,7 +3758,7 @@
       }
     ],
     "membersHash": "gdacs|GT#aaa6dfac",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -3838,13 +3802,13 @@
       }
     ],
     "membersHash": "gdacs|IT#fedc6d48",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-volcano-vo-1000151": {
-    "at": "2026-10-22T14:17:21.809Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Taal Volcano in Batangas province, Philippines, began erupting on 8 October 2026. Minor phreatomagmatic eruptions have recurred on 18, 20, 21 and 22 October; the latest, early on 22 October, sent a 1,200-meter plume. PHIVOLCS keeps the volcano at Alert Level 1. Residents of Agoncillo were moved out after ashfall and a sulfur-like odor. Entry to Taal Volcano Island remains prohibited.",
+    "searches": 4,
+    "summary": "Taal Volcano in the Philippines erupted in minor phreatic and phreatomagmatic events from 8 October 2026, with ashfall in Agoncillo, Batangas, and evacuations. Headlines report a fresh eruption around 19 October, another minor eruption reported 22 October, and Alert Level 1 maintained. These headlines were not verified against official bulletins, and the current status is not confirmed.",
     "ongoing": true,
     "places": [
       {
@@ -3852,133 +3816,79 @@
         "admin": "Batangas",
         "country": "PH",
         "kind": "town",
-        "impact": "Residents evacuated after ashfall and sulfur odor"
+        "impact": "Ashfall; residents evacuated"
       },
       {
-        "name": "Taal Volcano Island",
-        "admin": "Batangas",
+        "name": "Taal Volcano",
         "country": "PH",
         "kind": "site",
-        "impact": "Entry prohibited, permanent danger zone"
-      },
-      {
-        "name": "Lemery",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "town",
-        "impact": "Thin ashfall expected"
-      },
-      {
-        "name": "San Nicolas",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "town",
-        "impact": "Thin ashfall expected"
-      },
-      {
-        "name": "Taal",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "town",
-        "impact": "Thin ashfall expected"
-      },
-      {
-        "name": "Batangas City",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "city",
-        "impact": "Thin ashfall expected"
+        "impact": "Minor phreatic eruptions at main crater"
       }
     ],
     "figures": [
       {
-        "label": "Evacuated",
-        "value": "29 families, 107 individuals",
+        "label": "Residents evacuated",
+        "value": "107 residents",
+        "sourceName": "brigadanews.ph",
+        "sourceUrl": "https://www.brigadanews.ph/107-residents-evacuate-after-taal-volcano-eruption-triggers-ashfall-in-batangas/"
+      },
+      {
+        "label": "Families evacuated",
+        "value": "29 families",
         "sourceName": "newsinfo.inquirer.net",
         "sourceUrl": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption"
-      },
-      {
-        "label": "Sheltered in evacuation centre",
-        "value": "at least 120 individuals from 32 families",
-        "sourceName": "philstar.com",
-        "sourceUrl": "https://www.philstar.com/nation/2026/10/09/2562036/batangas-town-residents-evacuate-after-minor-taal-volcano-eruption"
-      },
-      {
-        "label": "Served hot meals at Pansipit centre",
-        "value": "143 individuals",
-        "sourceName": "brabonewsph.com",
-        "sourceUrl": "https://brabonewsph.com/2026/10/09/more-stories/public-service-and-community/philippine-red-cross-serves-hot-meals-to-taal-evacuees-in-agoncillo-batangas/"
-      },
-      {
-        "label": "Sulfur dioxide",
-        "value": "575 tonnes per day",
-        "sourceName": "tribune.net.ph",
-        "sourceUrl": "https://tribune.net.ph/2026/10/22/taal-generates-minor-phreatomagmatic-eruption-thursday-morning"
       }
     ],
-    "donation": [
-      {
-        "url": "https://www.ifrc.org/donate",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "General IFRC donation page, not specific to the Taal eruption.",
-        "specific": false
-      }
-    ],
-    "sources": [
-      {
-        "name": "tribune.net.ph",
-        "url": "https://tribune.net.ph/2026/10/22/taal-generates-minor-phreatomagmatic-eruption-thursday-morning",
-        "title": "Taal generates minor phreatomagmatic eruption Thursday morning"
-      },
-      {
-        "name": "astig.ph",
-        "url": "https://astig.ph/taal-volcano-eruption-agoncillo-batangas-ashfall-2026/",
-        "title": "Taal Volcano erupted for five minutes, sending ash over Batangas and forcing Agoncillo families to evacuate"
-      },
-      {
-        "name": "mb.com.ph",
-        "url": "https://mb.com.ph/2026/10/19/phivolcs-logs-2-minor-phreatic-eruptions-at-taal-volcano-in-past-24-hours",
-        "title": "Manila Bulletin - Phivolcs logs 2 minor phreatic eruptions at Taal Volcano in past 24 hours"
-      }
-    ],
+    "donation": [],
+    "sources": [],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-24T13:06:33.545Z",
-    "donationSearched": "2026-10-22T14:17:21.809Z"
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-volcano-vo-1000152": {
-    "at": "2026-10-22T14:17:21.809Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Kanlaon Volcano in the Philippines erupted on 10 October 2026, with a moderately explosive event around midday local time. PHIVOLCS kept Alert Level 2 and said another explosive eruption is possible. A new eruption was reported on 17 October, with ash moving southwest. Ashfall and sulfur fumes were reported in Negros Occidental towns. The Office of Civil Defense reported about 24,000 families affected.",
+    "summary": "Kanlaon Volcano on Negros Island, Philippines, erupted on 10 October 2026 in a moderately explosive eruption, followed by repeated ash emissions. Phivolcs kept Alert Level 2. The Office of Civil Defense reported about 24,000 families affected by ash emissions as of 12 October. A further eruption on 17 October sent ash southwest. The activity was ongoing as of 18 October 2026.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Kanlaon Volcano",
+        "country": "PH",
+        "kind": "site",
+        "impact": "moderately explosive eruption, ash plume"
+      },
       {
         "name": "Don Salvador Benedicto",
         "admin": "Negros Occidental",
         "country": "PH",
         "kind": "town",
-        "impact": "ashfall and sulfur fumes reported"
+        "impact": "ashfall and sulfur odor"
       },
       {
-        "name": "La Carlota City",
+        "name": "Bago City",
         "admin": "Negros Occidental",
         "country": "PH",
         "kind": "city",
-        "impact": "light ashfall"
-      },
-      {
-        "name": "La Castellana",
-        "admin": "Negros Occidental",
-        "country": "PH",
-        "kind": "town",
-        "impact": "light ashfall"
+        "impact": "light ashfall and sulfur odor"
       }
     ],
     "figures": [
       {
-        "label": "Affected",
-        "value": "about 94,000 individuals",
+        "label": "Families affected",
+        "value": "about 24,000 families",
+        "sourceName": "gmanetwork.com",
+        "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
+      },
+      {
+        "label": "People affected",
+        "value": "about 94,000 people",
+        "sourceName": "gmanetwork.com",
+        "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
+      },
+      {
+        "label": "Evacuees",
+        "value": "nearly 8,000 people",
         "sourceName": "gmanetwork.com",
         "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
       }
@@ -3991,29 +3901,19 @@
         "title": "Volcanic activity worldwide 18 Oct 2026: Santiaguito volcano, Fuego, Krakatau, Semeru, Ibu, Dukono, ..."
       },
       {
-        "name": "philstar.com",
-        "url": "https://www.philstar.com/nation/2026/10/11/2562296/moderately-explosive-eruption-occurs-kanlaon-volcano",
-        "title": "Moderately explosive eruption occurs at Kanlaon Volcano"
+        "name": "gmanetwork.com",
+        "url": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/",
+        "title": "24,000 families affected by Kanlaon eruption — OCD"
       },
       {
         "name": "thestar.com.my",
-        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/10/mt-kanlaon-in-philippines-erupts-sending-ash-plume-above-summit",
-        "title": "Mt Kanlaon in Philippines erupts, sending ash plume above summit"
-      },
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html",
-        "title": "Some 24,000 families affected by C. Philippine volcano eruption-Xinhua"
-      },
-      {
-        "name": "thestar.com.my",
-        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/13/some-24000-families-affected-by-central-philippine-volcano-eruption",
-        "title": "Some 24,000 families affected by central Philippine volcano eruption"
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/10/kanlaon-volcano-in-the-central-philippines-erupts-on-saturday-oct-10",
+        "title": "Kanlaon volcano in the central Philippines erupts on Saturday (Oct 10)"
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-24T13:06:33.545Z",
-    "donationSearched": "2026-10-22T14:17:21.809Z"
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032497": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -4158,7 +4058,7 @@
       }
     ],
     "membersHash": "gdacs|AU#383137aa",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032556": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -4194,7 +4094,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4207,7 +4107,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032657": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4331,7 +4231,7 @@
       }
     ],
     "membersHash": "gdacs|BR#efe30b15",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4388,7 +4288,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#fbe9d9be",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4412,7 +4312,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4443,7 +4343,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4565,7 +4465,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4589,7 +4489,7 @@
       }
     ],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032726": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -4785,7 +4685,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#83527d05",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4814,7 +4714,7 @@
       }
     ],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4827,7 +4727,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4840,7 +4740,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4859,7 +4759,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4883,7 +4783,7 @@
       }
     ],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4896,7 +4796,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032857": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4909,7 +4809,20 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
+  },
+  "gdacs-wildfire-wf-1032862": {
+    "at": "2026-10-24T17:51:09.606Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#cf60243f",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032874": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4928,7 +4841,7 @@
       }
     ],
     "membersHash": "gdacs|AU#c75dd910",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4947,7 +4860,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032920": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4960,7 +4873,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032930": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4973,7 +4886,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#58cb0943",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032939": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -4986,7 +4899,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5fcb1448",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032940": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -5005,7 +4918,7 @@
       }
     ],
     "membersHash": "gdacs|AU#5ecd514c",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032947": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5018,7 +4931,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SD,SS#5dcd4fb9",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032962": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -5037,7 +4950,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e8d2a7b8",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032970": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5050,7 +4963,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#f0d4f2e7",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032994": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -5063,7 +4976,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#e0b24775",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1033003": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5076,7 +4989,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#f6a62a57",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1033007": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5168,7 +5081,7 @@
       }
     ],
     "membersHash": "gdacs|NA#f2a6240b",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1033013": {
     "at": "2026-10-23T12:11:09.903Z",
@@ -5181,7 +5094,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#dea84326",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1033018": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -5200,7 +5113,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e5a84e2b",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1033021": {
     "at": "2026-10-23T12:11:09.903Z",
@@ -5219,7 +5132,7 @@
       }
     ],
     "membersHash": "gdacs|BW#6ca0d3eb",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1033047": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5232,7 +5145,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72afe7e7",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1033092": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5245,7 +5158,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ef94d631",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1033134": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5258,7 +5171,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#603fae0a",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-cyclone-8034": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -5289,7 +5202,7 @@
       }
     ],
     "membersHash": "ifrc|DJ#49b6fd82",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-drought-7977": {
@@ -5303,7 +5216,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#49b906fb",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-earthquake-7990": {
@@ -5536,7 +5449,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
@@ -5655,8 +5568,8 @@
       }
     ],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "donationSearched": "2026-10-24T13:06:33.545Z",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z",
+    "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-7993": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5688,7 +5601,7 @@
       }
     ],
     "membersHash": "ifrc|GE#4daa02bd",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7996": {
@@ -5756,7 +5669,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CI#48a9fade",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7998": {
@@ -5862,7 +5775,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|LA#42a9f16c",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8011": {
@@ -5899,7 +5812,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|TJ#dab1d197",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
@@ -6047,8 +5960,8 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "donationSearched": "2026-10-24T13:06:33.545Z",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z",
+    "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8014": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6111,14 +6024,14 @@
       }
     ],
     "membersHash": "ifrc|KG#d5b1c9b8",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
-    "at": "2026-10-22T14:17:21.809Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Flash floods hit Nuristan Province, Afghanistan, from 19 July 2026, with Parun and Mandol District among the worst affected. Reports cite 23 deaths and 125 injured. Five people were still missing by 26 July. OCHA reported flooding across several other provinces by 28 July, the latest report found. Whether direct effects continue as of 22 October 2026 is not reported.",
+    "searches": 3,
+    "summary": "Flash floods struck Nuristan province, Afghanistan, on 19 and 20 July 2026, after heavy rainfall. Local officials reported 23 deaths in Nuristan, and Parun, the provincial capital, was among the worst hit. Search, assessment and relief work continued into late July, when WHO reported five people still missing. No source reports flooding in Nuristan as of 24 October 2026.",
     "ongoing": true,
     "places": [
       {
@@ -6126,43 +6039,49 @@
         "admin": "Nuristan",
         "country": "AF",
         "kind": "town",
-        "impact": "Municipality destroyed; hotels and dozens of shops destroyed"
+        "impact": "Flash flood; 23 killed; 125 injured; homes destroyed"
       },
       {
-        "name": "Mandol",
+        "name": "Mandol District",
         "admin": "Nuristan",
         "country": "AF",
         "kind": "district",
-        "impact": "Six houses damaged; at least 30 injured in second flood"
+        "impact": "Flash flood; six houses damaged, farmland hit"
+      },
+      {
+        "name": "Torkham",
+        "country": "AF",
+        "kind": "site",
+        "impact": "Three refugees died at transit camp; nine injured"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "23",
-        "sourceName": "atlaspress.news",
-        "sourceUrl": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/"
+        "sourceName": "amu.tv",
+        "sourceUrl": "https://amu.tv/247896/"
       },
       {
         "label": "Injured",
-        "value": "125",
-        "sourceName": "global-flood.emergency.copernicus.eu",
-        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
-      },
-      {
-        "label": "Missing",
-        "value": "5",
-        "sourceName": "global-flood.emergency.copernicus.eu",
-        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
+        "value": "80",
+        "sourceName": "amu.tv",
+        "sourceUrl": "https://amu.tv/247896/"
       }
     ],
     "donation": [
       {
         "url": "https://go.ifrc.org/appeals/all?region=2",
-        "org": "IFRC",
+        "org": "IFRC (IFRC GO)",
         "kind": "society",
-        "note": "IFRC GO list of all appeals; includes an Afghanistan flood DREF.",
+        "note": "Appeals listing showing DREF appeal MDRAF022 for the Afghanistan flood; not a donation form.",
         "specific": false
+      },
+      {
+        "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
+        "org": "Penny Appeal USA",
+        "kind": "agency",
+        "note": "Emergency appeal campaign for victims of the Nuristan flash floods."
       }
     ],
     "sources": [
@@ -6172,14 +6091,24 @@
         "title": "Floods in Nuristan Province, Afghanistan, July 2026 - News"
       },
       {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan",
-        "title": "Monsoon-driven flash flooding kills at least 20 in Afghanistan"
+        "name": "amu.tv",
+        "url": "https://amu.tv/247896/",
+        "title": "Death toll on rise in Nuristan flash floods as 15 bodies recovered"
+      },
+      {
+        "name": "news.un.org",
+        "url": "https://news.un.org/en/story/2026/07/1167996",
+        "title": "Deadly Afghanistan floods kill at least 26 as aid agencies race to reach survivors"
+      },
+      {
+        "name": "dawn.com",
+        "url": "https://www.dawn.com/news/2017247",
+        "title": "Afghans search for dozens missing, some with bare hands, after devastating flood in Nuristan province - World - DAWN.COM"
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-24T13:06:33.545Z",
-    "donationSearched": "2026-10-22T14:17:21.809Z"
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6207,7 +6136,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|IN#48b6fbef",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8045": {
@@ -6301,7 +6230,7 @@
       }
     ],
     "membersHash": "ifrc|SL#4aaa3322",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
@@ -6418,33 +6347,33 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "donationSearched": "2026-10-24T13:06:33.545Z",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z",
+    "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8052": {
-    "at": "2026-10-20T14:35:40.688Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Flooding and landslides hit Limbe in Fako Division, South West Region, Cameroon, from 5 August 2026. At least three people were killed and six houses collapsed. Roads and bridges were damaged. The latest Fako-specific report found is dated 27 August 2026, and the notes do not say the effects have ended.",
+    "searches": 4,
+    "summary": "Floods and landslides struck Limbe, Fako Division, South-West Region, Cameroon, on 5 August 2026 after prolonged torrential rain. Three people died and six houses collapsed, according to reports from 7 to 11 August. One family member was injured and taken to hospital. An IFRC DREF operation (MDRCM045) started on 13 August 2026. The latest report found is dated 27 August 2026.",
     "ongoing": true,
     "places": [
       {
         "name": "Limbe",
-        "admin": "South West Region",
+        "admin": "South-West Region",
         "country": "CM",
         "kind": "city",
-        "impact": "Landslide and flooding; several roads impassable"
+        "impact": "Floods and landslides; three family members died"
       },
       {
-        "name": "Mbende",
-        "admin": "Fako Division",
+        "name": "Mbende Quarter (Mokeba Farms)",
+        "admin": "South-West Region",
         "country": "CM",
         "kind": "district",
-        "impact": "Landslide hit hillside neighbourhood; three killed"
+        "impact": "Building collapsed or house hit by landslide"
       },
       {
         "name": "Busumbu",
-        "admin": "Fako Division",
+        "admin": "South-West Region",
         "country": "CM",
         "kind": "district",
         "impact": "Five houses collapsed"
@@ -6453,63 +6382,54 @@
     "figures": [
       {
         "label": "Deaths",
-        "value": "at least three",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/africa/20260806/382d7f1535d14787bc7c0ffc307abc8e/c.html"
+        "value": "3",
+        "sourceName": "panafricanvisions.com",
+        "sourceUrl": "https://panafricanvisions.com/2026/08/cameroon-three-killed-as-torrential-rains-trigger-floods-landslides-in-limbe/"
+      },
+      {
+        "label": "Injured",
+        "value": "1",
+        "sourceName": "cameroon-tribune.cm",
+        "sourceUrl": "http://www.cameroon-tribune.cm/article.html/79608/fr.html/limbe-human-casualties-huge-material-damages-recorded"
       },
       {
         "label": "Houses collapsed",
-        "value": "six",
+        "value": "6",
         "sourceName": "cameroon-tribune.cm",
         "sourceUrl": "http://www.cameroon-tribune.cm/article.html/79608/fr.html/limbe-human-casualties-huge-material-damages-recorded"
       }
     ],
     "donation": [
       {
-        "url": "https://www.ifrc.org/appeals?p=1",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC appeals listing including a DREF for a Cameroon flood, MDRCM045.",
-        "specific": false
-      },
-      {
         "url": "https://go.ifrc.org/countries/41",
         "org": "IFRC GO",
         "kind": "society",
-        "note": "Cameroon country operations overview listing MDRCM045 flood operation and funding coverage.",
+        "note": "IFRC GO Cameroon page listing flood appeal MDRCM045; reported fully funded.",
+        "specific": true
+      },
+      {
+        "url": "https://www.ifrc.org/appeals?p=1",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC appeals listing that includes the Cameroon flood DREF operation MDRCM045.",
         "specific": false
       }
     ],
     "sources": [
       {
-        "name": "greenpeace.org",
-        "url": "https://www.greenpeace.org/africa/en/blog/61512/three-lives-lost-in-limbe-cameroon-cannot-keep-meeting-the-rains-with-bare-hands/",
-        "title": "Three lives lost in Limbe: Cameroon cannot keep meeting the rains with bare hands - Greenpeace Africa"
-      },
-      {
-        "name": "learning.foundation",
-        "url": "https://www.learning.foundation/fr/2026/08/25/analyse-rapide-du-genre-inondations-et-glissement-de-terrain-division-du-fako-sud-ouest-du-cameroun-aout-2026/",
-        "title": "Analyse rapide du genre : Inondations et glissement de terrain, Division du Fako, Sud-Ouest du Cameroun, août 2026"
-      },
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/africa/20260806/382d7f1535d14787bc7c0ffc307abc8e/c.html",
-        "title": "Landslide kills 3 in Cameroon-Xinhua"
+        "name": "panafricanvisions.com",
+        "url": "https://panafricanvisions.com/2026/08/cameroon-three-killed-as-torrential-rains-trigger-floods-landslides-in-limbe/",
+        "title": "Cameroon: Three Killed as Torrential Rains Trigger Floods, Landslides in Limbe - PAN AFRICAN VISIONS"
       },
       {
         "name": "cameroon-tribune.cm",
         "url": "http://www.cameroon-tribune.cm/article.html/79608/fr.html/limbe-human-casualties-huge-material-damages-recorded",
         "title": "Limbe: Human Casualties, Huge Material Damages Recorded"
-      },
-      {
-        "name": "panafricanvisions.com",
-        "url": "https://panafricanvisions.com/2026/08/cameroon-three-killed-as-torrential-rains-trigger-floods-landslides-in-limbe/",
-        "title": "Cameroon: Three Killed as Torrential Rains Trigger Floods, Landslides in Limbe - PAN AFRICAN VISIONS"
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-24T13:06:33.545Z",
-    "donationSearched": "2026-10-22T01:04:05.836Z"
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8057": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -6596,7 +6516,7 @@
       }
     ],
     "membersHash": "ifrc|PH#48a7f165",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8062": {
@@ -6673,7 +6593,7 @@
       }
     ],
     "membersHash": "ifrc|PA#d5af8b21",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8068": {
@@ -6754,14 +6674,14 @@
       }
     ],
     "membersHash": "ifrc|LR#cbaf7b63",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8073": {
-    "at": "2026-10-22T14:17:21.809Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A flash flood struck Rasuwa district in Nepal's Bagmati Province on 26 August 2026. The flood originated in Tibet and swept through the Bhote Koshi river, with Timure and Syabrubesi named as affected points. Reports describe major destruction to settlements and infrastructure. The IFRC announced a CHF 25 million Emergency Appeal. The sources found date from late August 2026, and no later status was found.",
+    "searches": 2,
+    "summary": "A flash flood on the Bhote Koshi river in Rasuwa District, Nepal, began on 26 August 2026 and swept through Rasuwa and nearby districts. Reports from 29 August gave 675 deaths in Nepal and about 2,400 missing, with 84,270 people affected across six districts. The IFRC launched a CHF 25 million appeal on 27 August. The response is still active, with water restoration work reported in late September and early October.",
     "ongoing": true,
     "places": [
       {
@@ -6769,51 +6689,149 @@
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "Severe flash flooding along Bhote Koshi and Trishuli corridors"
-      },
-      {
-        "name": "Timure",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "Flash flood swept through settlements"
+        "impact": "Hit by wall of water and debris"
       },
       {
         "name": "Syabrubesi",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "town",
-        "impact": "Flash flood swept through; major destruction"
-      }
-    ],
-    "figures": [],
-    "donation": [
-      {
-        "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "Donation page for the Nepal Flash Floods 2026 emergency appeal, funding Nepal Red Cross response.",
-        "specific": true
+        "impact": "Significant structural damage"
       },
       {
-        "url": "https://donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/~my-donation?_cv=1",
+        "name": "Timure",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "town",
+        "impact": "Hit by wall of water and debris"
+      },
+      {
+        "name": "Rasuwagadhi",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "site",
+        "impact": "Border post and bridges swept away"
+      },
+      {
+        "name": "Nuwakot",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Affected by flood surge"
+      },
+      {
+        "name": "Dhading",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Affected by flood surge"
+      },
+      {
+        "name": "Chitwan",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Surge reached its edges"
+      },
+      {
+        "name": "Gorkha",
+        "admin": "Gandaki Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Affected"
+      },
+      {
+        "name": "Tanahun",
+        "admin": "Gandaki Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Affected"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "675",
+        "sourceName": "english.nepalnews.com",
+        "sourceUrl": "https://english.nepalnews.com/s/long-reads/timeline-nepals-major-floods-from-the-koshi-agreement-to-the-bhote-koshi-catastrophe/"
+      },
+      {
+        "label": "Missing",
+        "value": "about 2,400",
+        "sourceName": "english.nepalnews.com",
+        "sourceUrl": "https://english.nepalnews.com/s/long-reads/timeline-nepals-major-floods-from-the-koshi-agreement-to-the-bhote-koshi-catastrophe/"
+      },
+      {
+        "label": "Affected people",
+        "value": "84,270 people",
+        "sourceName": "undp.org",
+        "sourceUrl": "https://www.undp.org/asia-pacific/nepal-floods-2026"
+      },
+      {
+        "label": "Schools destroyed",
+        "value": "18 schools",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026",
         "org": "IFRC",
         "kind": "society",
-        "note": "Second donation entry point for the Nepal Flash Floods 2026 emergency appeal.",
+        "note": "IFRC emergency page for the 26 August Nepal floods, linked to appeal MDRNP022.",
         "specific": true
       },
       {
         "url": "https://donate.redcrossredcrescent.org/~share?cid=1180&lang=en_EN",
         "org": "Nepal Red Cross Society",
         "kind": "society",
-        "note": "Nepal Flood Emergency appeal for families hit by the Rasuwa flash flood.",
+        "note": "NRCS flood appeal on the Red Cross donation platform, naming the Rasuwa flash flood.",
+        "specific": true
+      },
+      {
+        "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "Donation form for the Nepal: Flash Floods 2026 emergency appeal, supporting NRCS.",
         "specific": true
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/emergencies/8073/reports",
+        "title": "IFRC GO - Emergency - Nepal: Rasuwa Flash Flood, 2026"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods",
+        "title": "2026 Nepal–Tibet floods"
+      },
+      {
+        "name": "hopnepal.com",
+        "url": "https://www.hopnepal.com/blog/rasuwa-bhote-koshi-flood-2026-travel-update",
+        "title": "Rasuwa Bhote Koshi Flood 2026: Tourism & Travel Update"
+      },
+      {
+        "name": "redcrossmablog.wordpress.com",
+        "url": "https://redcrossmablog.wordpress.com/2026/09/17/red-cross-mission-work-across-the-globe-4/",
+        "title": "Red Cross Mission Work Across the Globe"
+      },
+      {
+        "name": "greenvalleynepaltreks.com",
+        "url": "https://www.greenvalleynepaltreks.com/travel-guides/bhotekoshi-flood-in-rasuwa",
+        "title": "Bhotekoshi Flood in Rasuwa, Nepal: Causes, Damage & Updates 2026"
+      },
+      {
+        "name": "english.nepalnews.com",
+        "url": "https://english.nepalnews.com/s/explainers/95-dead-hundreds-missing-what-we-know-so-far-about-bhote-koshi-flood/",
+        "title": "95 dead, hundreds missing: What we know so far about Bhote Koshi flood"
+      }
+    ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-24T13:06:33.545Z",
-    "donationSearched": "2026-10-22T14:17:21.809Z"
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -6854,106 +6872,22 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CG#68e1ca24",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
-    "at": "2026-10-20T14:35:40.688Z",
+    "at": "2026-10-24T17:51:09.606Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Heavy rains and flooding hit parts of Ghana in late June and early July 2026, including the capital Accra. The IFRC reported 34 deaths and about 89,000 people affected in an update dated 7 August 2026. The Red Cross launched a six-month response to support 30,000 people, and that operation is ongoing.",
+    "searches": 4,
+    "summary": "",
     "ongoing": true,
-    "places": [
-      {
-        "name": "Accra",
-        "admin": "Greater Accra",
-        "country": "GH",
-        "kind": "city",
-        "impact": "Flooded; neighbourhoods under water"
-      },
-      {
-        "name": "Tema West",
-        "admin": "Greater Accra",
-        "country": "GH",
-        "kind": "district",
-        "impact": "Three deaths; 3,450 displaced"
-      },
-      {
-        "name": "Central and Western",
-        "country": "GH",
-        "kind": "region",
-        "impact": "More than 7,000 people homeless"
-      },
-      {
-        "name": "Volta",
-        "country": "GH",
-        "kind": "region",
-        "impact": "Named as hardest hit"
-      },
-      {
-        "name": "Western North",
-        "country": "GH",
-        "kind": "region",
-        "impact": "Named as hardest hit"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "34",
-        "sourceName": "graphic.com.gh",
-        "sourceUrl": "https://www.graphic.com.gh/news/general-news/ghana-news-red-cross-launches-ghc8-3m-flood-relief-operation.html"
-      },
-      {
-        "label": "Missing",
-        "value": "7",
-        "sourceName": "graphic.com.gh",
-        "sourceUrl": "https://www.graphic.com.gh/news/general-news/ghana-news-red-cross-launches-ghc8-3m-flood-relief-operation.html"
-      },
-      {
-        "label": "People affected",
-        "value": "about 89,000",
-        "sourceName": "graphic.com.gh",
-        "sourceUrl": "https://www.graphic.com.gh/news/general-news/ghana-news-red-cross-launches-ghc8-3m-flood-relief-operation.html"
-      },
-      {
-        "label": "Displaced",
-        "value": "more than 91,000",
-        "sourceName": "reliefweb.int",
-        "sourceUrl": "https://reliefweb.int/report/ghana/ghana-floods-dref-operational-update-mdrgh018"
-      }
-    ],
+    "places": [],
+    "figures": [],
     "donation": [],
-    "sources": [
-      {
-        "name": "graphic.com.gh",
-        "url": "https://www.graphic.com.gh/news/general-news/ghana-news-red-cross-launches-ghc8-3m-flood-relief-operation.html",
-        "title": "Red Cross launches GH¢8.3m flood relief operation - Graphic Online"
-      },
-      {
-        "name": "myjoyonline.com",
-        "url": "https://www.myjoyonline.com/ghana-red-cross-launches-gh%C2%A28-3m-emergency-flood-response-to-assist-30000-victims/",
-        "title": "Ghana Red Cross launches GH¢8.3m emergency flood response to assist 30,000 victims - MyJoyOnline"
-      },
-      {
-        "name": "usnews.com",
-        "url": "https://www.usnews.com/news/world/articles/2026-06-30/heavy-rains-hit-ghana-killing-at-least-12-in-floods",
-        "title": "Heavy Rains Hit Ghana, Killing at Least 12 in Floods"
-      },
-      {
-        "name": "ghanabusinessnews.com",
-        "url": "https://www.ghanabusinessnews.com/2026/07/30/ghana-after-the-floods-comes-super-el-nino-and-potential-droughts/",
-        "title": "Ghana: After the floods comes Super El Niño and potential droughts - Ghana Business News"
-      },
-      {
-        "name": "global-flood.emergency.copernicus.eu",
-        "url": "https://global-flood.emergency.copernicus.eu/news/250-floods-and-landslides-in-ghana-june-2026/",
-        "title": "Floods and Landslides in Ghana, June 2026"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-24T13:06:33.545Z",
-    "donationSearched": "2026-10-23T05:22:44.752Z"
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-landslide-8111": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -7049,8 +6983,8 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "donationSearched": "2026-10-24T13:06:33.545Z",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z",
+    "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-storm-8101": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -7078,7 +7012,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|GW#60df7ef5",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-storm-8108": {
@@ -7221,7 +7155,7 @@
       }
     ],
     "membersHash": "ifrc|ZW#67df89fa",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-wildfire-8027": {
@@ -7254,7 +7188,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|DZ#48b93a86",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-wildfire-8038": {
@@ -7437,7 +7371,7 @@
       }
     ],
     "membersHash": "ifrc|TN#4db703ce",
-    "seen": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T17:51:09.606Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "news-cyclone-cyclone-jp-916fe53458": {
@@ -9008,7 +8942,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "news|IE#dc5f6dab",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "news-storm-storm-ie-853815a83a": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -9226,7 +9160,7 @@
       }
     ],
     "membersHash": "usgs|VU#daa78333",
-    "seen": "2026-10-24T13:06:33.545Z"
+    "seen": "2026-10-24T17:51:09.606Z"
   },
   "usgs-earthquake-us6000u4kq": {
     "at": "2026-10-24T07:44:33.939Z",
