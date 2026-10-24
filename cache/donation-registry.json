@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-23T21:53:40.347Z",
+  "updated": "2026-10-24T01:08:28.829Z",
   "fetched": {
-    "societies": "2026-10-23T21:53:40.347Z",
-    "uncr": "2026-10-23T21:53:40.347Z"
+    "societies": "2026-10-24T01:08:28.829Z",
+    "uncr": "2026-10-24T01:08:28.829Z"
   },
   "societies": {
     "AF": {
@@ -3088,51 +3088,59 @@
     "cruzrojamexicana.org.mx/donar": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-23T21:53:40.347Z",
       "chain": [
         "https://www.cruzrojamexicana.org.mx/donar"
-      ],
-      "checked": "2026-10-23T21:53:40.347Z"
+      ]
     },
     "honduras.un.org/es": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-23T21:53:40.347Z",
       "chain": [
         "https://honduras.un.org/es"
-      ],
-      "checked": "2026-10-23T21:53:40.347Z"
+      ]
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-23T21:53:40.347Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
-      ],
-      "checked": "2026-10-23T21:53:40.347Z"
+      ]
     },
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-23T21:53:40.347Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-10-23T21:53:40.347Z"
+      ]
     },
     "ifrc.org/national-societies-directory/zimbabwe-red-cross-society": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-23T21:53:40.347Z",
       "chain": [
         "https://www.ifrc.org/national-societies-directory/zimbabwe-red-cross-society"
       ],
-      "blocked": true,
-      "checked": "2026-10-23T21:53:40.347Z"
+      "blocked": true
     },
     "go.ifrc.org/emergencies/8038/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-23T21:53:40.347Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8038/overview"
+      ]
+    },
+    "cruzrojavenezolana.org": {
+      "ok": false,
+      "reason": "HTTP 202",
+      "chain": [
+        "https://www.cruzrojavenezolana.org/"
       ],
-      "checked": "2026-10-23T21:53:40.347Z"
+      "checked": "2026-10-24T01:08:28.829Z"
     }
   }
 }
