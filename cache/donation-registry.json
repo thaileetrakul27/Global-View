@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-24T01:08:28.829Z",
+  "updated": "2026-10-24T07:44:33.939Z",
   "fetched": {
-    "societies": "2026-10-24T01:08:28.829Z",
-    "uncr": "2026-10-24T01:08:28.829Z"
+    "societies": "2026-10-24T07:44:33.939Z",
+    "uncr": "2026-10-24T07:44:33.939Z"
   },
   "societies": {
     "AF": {
@@ -2857,89 +2857,12 @@
         "https://redcross.or.ke/drought-emergency-2026/"
       ]
     },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-23T05:22:44.752Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/emergencies/8013/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-23T05:22:44.752Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8013/overview"
-      ]
-    },
-    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-23T05:22:44.752Z",
-      "chain": [
-        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
-      ],
-      "blocked": true
-    },
     "ssdredcross.org": {
       "ok": true,
       "reason": "donation word \"donat*\"",
       "checked": "2026-10-23T05:22:44.752Z",
       "chain": [
         "https://www.ssdredcross.org/"
-      ]
-    },
-    "redcross.ca": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-23T05:22:44.752Z",
-      "chain": [
-        "https://www.redcross.ca/"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/emergencies/8057/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-23T05:22:44.752Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8057/overview"
-      ]
-    },
-    "ayodonor.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-23T05:22:44.752Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "donasi.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-23T05:22:44.752Z",
-      "chain": [
-        "https://donasi.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/countries/41": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-23T05:22:44.752Z",
-      "chain": [
-        "https://go.ifrc.org/countries/41"
-      ]
-    },
-    "go.ifrc.org/countries/167": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-23T05:22:44.752Z",
-      "chain": [
-        "https://go.ifrc.org/countries/167"
       ]
     },
     "cruzroja.org.pa": {
@@ -3137,10 +3060,96 @@
     "cruzrojavenezolana.org": {
       "ok": false,
       "reason": "HTTP 202",
+      "checked": "2026-10-24T01:08:28.829Z",
       "chain": [
         "https://www.cruzrojavenezolana.org/"
+      ]
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
-      "checked": "2026-10-24T01:08:28.829Z"
+      "blocked": true,
+      "checked": "2026-10-24T07:44:33.939Z"
+    },
+    "go.ifrc.org/emergencies/8013/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8013/overview"
+      ],
+      "checked": "2026-10-24T07:44:33.939Z"
+    },
+    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-24T07:44:33.939Z"
+    },
+    "redcross.or.kr": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.redcross.or.kr/",
+        "https://www.redcross.or.kr/main/main.do"
+      ],
+      "checked": "2026-10-24T07:44:33.939Z"
+    },
+    "redcross.ca": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.redcross.ca/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-24T07:44:33.939Z"
+    },
+    "go.ifrc.org/emergencies/8057/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8057/overview"
+      ],
+      "checked": "2026-10-24T07:44:33.939Z"
+    },
+    "ayodonor.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-24T07:44:33.939Z"
+    },
+    "donasi.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://donasi.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-24T07:44:33.939Z"
+    },
+    "go.ifrc.org/countries/41": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/41"
+      ],
+      "checked": "2026-10-24T07:44:33.939Z"
+    },
+    "go.ifrc.org/countries/167": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/167"
+      ],
+      "checked": "2026-10-24T07:44:33.939Z"
     }
   }
 }
