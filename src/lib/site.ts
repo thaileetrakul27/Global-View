@@ -2,11 +2,13 @@
 // metadata, the link preview, the sitemap and robots.txt.
 
 /**
- * The site's own address. Netlify sets URL at build time to the site's main
- * address (its custom domain once there is one); local builds use the dev
- * server. Link previews and the sitemap need it to be absolute.
+ * The site's own address. On Cloudflare it is the SITE_URL build variable,
+ * set to the site's main address (its custom domain once there is one),
+ * since Cloudflare's builds are not told it. Netlify sets URL itself. Local
+ * builds use the dev server. Link previews and the sitemap need it to be
+ * absolute.
  */
-export const SITE_URL = (process.env.URL || process.env.DEPLOY_PRIME_URL || "http://localhost:3000").replace(/\/+$/, "");
+export const SITE_URL = ([process.env.SITE_URL, process.env.URL, process.env.DEPLOY_PRIME_URL].map((v) => v?.trim()).find(Boolean) ?? "http://localhost:3000").replace(/\/+$/, "");
 
 export const SITE_NAME = "Global View";
 
@@ -20,8 +22,9 @@ export const SITE_DESCRIPTION =
 
 /**
  * Codes that prove to Google Search Console and Bing Webmaster Tools that
- * this is the owner's site. Set as Netlify environment variables, so adding
- * one needs no code change; left out of the page when unset.
+ * this is the owner's site. Set as build variables on the host (Cloudflare or
+ * Netlify), so adding one needs no code change; left out of the page when
+ * unset.
  */
 export function siteVerification(env: Record<string, string | undefined> = process.env): { google?: string; other?: Record<string, string> } | undefined {
   const google = env.GOOGLE_SITE_VERIFICATION?.trim();

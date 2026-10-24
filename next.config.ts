@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 // The site is a pure static export: `next build` writes plain HTML, JS and
-// JSON into /out, which Netlify serves. Nothing here runs on a server.
+// JSON into /out, which Cloudflare serves as static assets (wrangler.jsonc).
+// Nothing here runs on a server.
 const nextConfig: NextConfig = {
   output: "export",
   images: { unoptimized: true },

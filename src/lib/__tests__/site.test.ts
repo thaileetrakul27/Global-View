@@ -10,6 +10,12 @@ async function load(env: Record<string, string | undefined>) {
 afterEach(() => vi.unstubAllEnvs());
 
 describe("SITE_URL", () => {
+  it("is the SITE_URL build variable when set, as on Cloudflare, without a trailing slash", async () => {
+    expect((await load({ SITE_URL: " https://global-view.example.workers.dev/ ", URL: "https://example.netlify.app" })).SITE_URL).toBe(
+      "https://global-view.example.workers.dev",
+    );
+  });
+
   it("is the address Netlify gives the build, without a trailing slash", async () => {
     expect((await load({ URL: "https://example.netlify.app/", DEPLOY_PRIME_URL: "https://deploy--example.netlify.app" })).SITE_URL).toBe(
       "https://example.netlify.app",
@@ -18,7 +24,9 @@ describe("SITE_URL", () => {
 
   it("falls back to the deploy's own address, then to the dev server", async () => {
     expect((await load({ URL: "", DEPLOY_PRIME_URL: "https://deploy--example.netlify.app" })).SITE_URL).toBe("https://deploy--example.netlify.app");
-    expect((await load({ URL: "", DEPLOY_PRIME_URL: "" })).SITE_URL).toBe("http://localhost:3000");
+    expect((await load({ SITE_URL: "", URL: "", DEPLOY_PRIME_URL: "" })).SITE_URL).toBe("http://localhost:3000");
+    // A blank variable counts as unset, never as an empty address.
+    expect((await load({ SITE_URL: "  ", URL: "https://example.netlify.app" })).SITE_URL).toBe("https://example.netlify.app");
   });
 });
 

@@ -1,0 +1,15 @@
+// Cloudflare serves the site as a Worker with static assets only: the
+// files `npm run build` writes to out/, with no Worker code. Connected to
+// the GitHub repository (Workers Builds), Cloudflare runs `npm run build`
+// and then `npx wrangler deploy` on every push to main, including the data
+// job's commits every two hours. Set the SITE_URL build variable to the
+// site's address (see src/lib/site.ts).
+{
+  "name": "global-view",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./out",
+    // An unknown path gets the site's own 404 page.
+    "not_found_handling": "404-page"
+  }
+}

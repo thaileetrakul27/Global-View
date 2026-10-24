@@ -10,7 +10,7 @@ A light, clean website with an interactive globe and two maps, switched with a N
 
 Every view has a shareable address. There is no account, no ads and no tracking.
 
-The site is a static Next.js export. A GitHub Actions job refreshes the data every two hours and commits it to `public/data`; Netlify redeploys on every commit. The website never calls an API. The job uses the Claude API (Haiku) to translate headlines, group the same story across countries, spot disasters in headlines and research each disaster with web search, capped at $50 a month (see `pipeline/README.md`). No article text is stored: only headline, outlet, time and link.
+The site is a static Next.js export. A GitHub Actions job refreshes the data every two hours and commits it to `public/data`; Cloudflare redeploys on every commit. The website never calls an API. The job uses the Claude API (Haiku) to translate headlines, group the same story across countries, spot disasters in headlines and research each disaster with web search, capped at $50 a month (see `pipeline/README.md`). No article text is stored: only headline, outlet, time and link.
 
 ## Develop
 
@@ -28,6 +28,16 @@ npm run pipeline:update -- --no-ai          # feeds only, no model calls
 npm run build        # writes the static site to /out
 ```
 
+## Deploy on Cloudflare
+
+The site is a Cloudflare Worker with static assets only (`wrangler.jsonc`): Cloudflare serves the files in `out/` and runs no code. To connect it, once:
+
+1. In the Cloudflare dashboard, go to **Workers & Pages**, **Create**, **Import a repository**, and pick this GitHub repository.
+2. Set the build command to `npm run build` and leave the deploy command as `npx wrangler deploy`. The Node version comes from `.node-version` (22).
+3. Under **Build variables**, add `SITE_URL` with the site's address, for example `https://global-view.<your-subdomain>.workers.dev`, or your own domain once it is attached. Link previews and the sitemap use it. `GOOGLE_SITE_VERIFICATION` and `BING_SITE_VERIFICATION` go there too.
+
+Cloudflare then builds and deploys every push to `main`, including the data job's commits every two hours (about 360 builds a month, well inside the free plan's 3,000 build minutes). Because `wrangler.jsonc` is already in the repository, Cloudflare does not need to open a pull request with its own configuration. `netlify.toml` stays only until the old Netlify site is switched off.
+
 ## Layout
 
 | Path | What it is |
@@ -39,4 +49,5 @@ npm run build        # writes the static site to /out
 | `cache/headlines.json` | Translations already made, keyed by article link, so nothing is translated twice |
 | `public/geo/countries.geojson` | Natural Earth 110m country shapes (public domain), slimmed down |
 | `.github/workflows/update-news.yml` | The two-hourly update job |
+| `wrangler.jsonc`, `.node-version` | How Cloudflare serves the site and which Node version builds it |
 | `public/og.png` | The link preview image (1200 x 630); `src/lib/site.ts` holds the page title and description |
