@@ -304,7 +304,7 @@
       }
     ],
     "membersHash": "eonet,gdacs,news|JP,PH,TW#3901514e",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-cyclone-tc-1001341": {
@@ -354,7 +354,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-23T21:53:40.347Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -368,67 +368,80 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CA,US#471b9aae",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-10-22T08:03:09.184Z",
+    "at": "2026-10-24T13:06:33.545Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A drought affecting much of Europe started on 21 December 2025 and is still reported as ongoing. A Joint Research Centre analysis from late September 2026 said drought conditions remained critical in most of Europe. On 20 October 2026, Povodí Moravy reported that the unfavourable hydrological situation in the Czech South Moravian Region persists. The Vranov reservoir there is about 28% full and at the third regulation level.",
+    "searches": 2,
+    "summary": "A drought affecting much of Europe began on 21 December 2025. Drought conditions remained critical across most of the continent in late September 2026, according to a JRC analysis run on 19 October 2026. The GDACS feed still lists the event as updated on 24 October 2026, and no source reports an official end. Record-low river levels and crop losses have been reported.",
     "ongoing": true,
     "places": [
       {
-        "name": "Vranov",
-        "admin": "South Moravian Region",
-        "country": "CZ",
+        "name": "Danube",
+        "country": "HU",
         "kind": "site",
-        "impact": "About 28% full, third regulation level"
+        "impact": "falling water levels, declines along several sections"
       },
       {
-        "name": "Vír",
-        "admin": "South Moravian Region",
-        "country": "CZ",
+        "name": "Danube",
+        "country": "RO",
         "kind": "site",
-        "impact": "Third regulation level"
+        "impact": "falling water levels, declines along several sections"
       },
       {
-        "name": "Vírská",
-        "admin": "South Moravian Region",
-        "country": "CZ",
-        "kind": "site",
-        "impact": "Level falling"
+        "name": "Vienna",
+        "country": "AT",
+        "kind": "city",
+        "impact": "environmental impact on green spaces"
       },
       {
-        "name": "Brněnská",
-        "admin": "South Moravian Region",
-        "country": "CZ",
+        "name": "Loire",
+        "country": "FR",
         "kind": "site",
-        "impact": "Level falling"
+        "impact": "record-low water levels"
       },
       {
-        "name": "Hubenov",
-        "admin": "Vysočina",
-        "country": "CZ",
+        "name": "Po",
+        "country": "IT",
         "kind": "site",
-        "impact": "Second regulation level"
+        "impact": "record-low water levels"
+      },
+      {
+        "name": "Rhine",
+        "country": "DE",
+        "kind": "site",
+        "impact": "record-low water levels"
       }
     ],
     "figures": [
       {
-        "label": "Rainfall, South Moravia",
-        "value": "about 300 mm through September",
-        "sourceName": "techtimes.com",
-        "sourceUrl": "https://www.techtimes.com/articles/328591/20261005/czech-republic-logs-third-driest-year-since-1961-exposing-ai-infrastructure-water-risk.htm"
+        "label": "Affected area",
+        "value": "1,412,468 km²",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://gdacs.org/report.aspx?eventtype=DR&eventid=1018332"
       },
       {
-        "label": "Vranov reservoir storage",
-        "value": "about 28%",
-        "sourceName": "nasregion.cz",
-        "sourceUrl": "https://nasregion.cz/sucho-suzuje-povodi-moravy-460994/"
+        "label": "Soybean yield change",
+        "value": "down 15%",
+        "sourceName": "thenationalnews.com",
+        "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
       },
       {
-        "label": "Soya bean yield reduction",
-        "value": "15%",
+        "label": "Economic cost to European agriculture",
+        "value": "$3.6bn",
+        "sourceName": "thenationalnews.com",
+        "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
+      },
+      {
+        "label": "Grain maize yield change",
+        "value": "down 8%",
+        "sourceName": "farminglife.com",
+        "sourceUrl": "https://www.farminglife.com/news/brussels-confirms-the-full-impact-of-the-drought-on-2026-crop-output-levels-9278682"
+      },
+      {
+        "label": "Fresh forage maize yield change",
+        "value": "down 14%",
         "sourceName": "farminglife.com",
         "sourceUrl": "https://www.farminglife.com/news/brussels-confirms-the-full-impact-of-the-drought-on-2026-crop-output-levels-9278682"
       }
@@ -441,24 +454,24 @@
         "title": "EDO European Drought Observatory - Joint Research Centre"
       },
       {
-        "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en",
-        "title": "Worsening drought and record heat grip Europe, fuelling extraordinary wildfires and extremely low river flows - Joint Research Centre"
-      },
-      {
         "name": "gdacs.org",
         "url": "https://gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
         "title": "Overall Orange Drought for Europe-2026 in Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France…"
       },
       {
-        "name": "farminglife.com",
-        "url": "https://www.farminglife.com/news/brussels-confirms-the-full-impact-of-the-drought-on-2026-crop-output-levels-9278682",
-        "title": "Brussels confirms the full impact of the drought on 2026 crop output levels"
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/8/16/new-satellite-images-show-europes-disappearing-rivers-due-to-drought",
+        "title": "New satellite images show Europe’s disappearing rivers due to drought"
+      },
+      {
+        "name": "climatestrategies.org",
+        "url": "https://climatestrategies.org/what-europes-2026-drought-means-for-food-security/",
+        "title": "Preparing European Agriculture for the Next Decade"
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-24T07:44:33.939Z",
-    "donationSearched": "2026-10-22T08:03:09.184Z"
+    "donationSearched": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -542,43 +555,123 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-10-22T08:03:09.184Z",
+    "at": "2026-10-24T13:06:33.545Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Drought linked to El Niño is affecting East Africa and the Central Sahel. Sources dated 7 to 21 October 2026 describe it as current, and no source gives an end date. The feed's start date of 21 June 2026 is not confirmed by any source. Between June and September 2026, drought and high temperatures degraded crop and pasture yields across East Africa. In Sudan, drought and conflict are pushing Darfur and Kordofan towards famine. A strong El Niño is projected to cause rainfall…",
+    "searches": 3,
+    "summary": "A drought in Sudan, which sources link to El Niño, is raising the risk of famine, according to reports from October 2026. Reuters reported on 23 October that farmers already affected by war have struggled to harvest, and hunger figures are expected to rise. The event began on 21 June 2026 and is ongoing. The research found no reports covering the other countries in the feed.",
     "ongoing": true,
     "places": [
       {
-        "name": "Greater Darfur",
+        "name": "Darfur",
         "country": "SD",
         "kind": "region",
-        "impact": "Drought and conflict pushing towards famine"
+        "impact": "worst-hit area, famine risk"
       },
       {
-        "name": "Greater Kordofan",
+        "name": "Kordofan",
         "country": "SD",
         "kind": "region",
-        "impact": "Drought and conflict pushing towards famine"
+        "impact": "worst-hit area, famine risk"
       },
       {
-        "name": "South Darfur",
+        "name": "Eastern Jebel Marra",
+        "admin": "South Darfur",
         "country": "SD",
         "kind": "region",
-        "impact": "Child malnutrition above famine threshold in two camps"
+        "impact": "child malnutrition above famine threshold"
+      },
+      {
+        "name": "Tawila",
+        "admin": "Darfur",
+        "country": "SD",
+        "kind": "site",
+        "impact": "rations halved"
       },
       {
         "name": "North Darfur",
         "country": "SD",
         "kind": "region",
-        "impact": "Delayed rains devastated crop cultivation"
+        "impact": "crops devastated by delayed rains"
+      },
+      {
+        "name": "Um Ruwaba",
+        "admin": "North Kordofan",
+        "country": "SD",
+        "kind": "town",
+        "impact": "farmers report crop losses"
+      },
+      {
+        "name": "Gedaref",
+        "country": "SD",
+        "kind": "city",
+        "impact": "temperatures 7 to 9 degrees above historic average"
       }
     ],
-    "figures": [],
-    "donation": [
+    "figures": [
+      {
+        "label": "Severe hunger (June, IPC)",
+        "value": "5.1 million people",
+        "sourceName": "1027wbow.com",
+        "sourceUrl": "https://1027wbow.com/2026/10/23/new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought/"
+      },
+      {
+        "label": "Projected additional severe hunger by…",
+        "value": "350,000 people",
+        "sourceName": "1027wbow.com",
+        "sourceUrl": "https://1027wbow.com/2026/10/23/new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought/"
+      },
+      {
+        "label": "Displaced since October in Greater…",
+        "value": "over 300,000 people",
+        "sourceName": "rescue.org",
+        "sourceUrl": "https://www.rescue.org/press-release/war-and-el-nino-driven-drought-deplete-food-stocks-pushing-sudan-further-towards"
+      },
+      {
+        "label": "Area affected by drought",
+        "value": "roughly half of the country",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "1027wbow.com",
+        "url": "https://1027wbow.com/2026/10/23/new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought/",
+        "title": "New famine risk haunts war-torn Sudan with El Niño-driven drought"
+      },
+      {
+        "name": "arabnews.com",
+        "url": "https://www.arabnews.com/middle-east/new-famine-risk-haunts-war-torn-sudan-with-el-ni%C3%B1o-driven-drought-3007873",
+        "title": "Arab News"
+      },
+      {
+        "name": "rescue.org",
+        "url": "https://www.rescue.org/press-release/war-and-el-nino-driven-drought-deplete-food-stocks-pushing-sudan-further-towards",
+        "title": "War and El Niño-driven drought deplete food stocks, pushing Sudan further towards famine, new data finds"
+      },
+      {
+        "name": "usnews.com",
+        "url": "https://www.usnews.com/news/world/articles/2026-10-23/new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought",
+        "title": "New Famine Risk Haunts War-Torn Sudan With El Niño-Driven Drought"
+      },
+      {
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor",
+        "title": "Conflict, drought increasing risk of famine in Sudan: Monitor"
+      },
+      {
+        "name": "timeslive.co.za",
+        "url": "https://www.timeslive.co.za/news/africa/2026-10-23-new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought/",
+        "title": "New famine risk haunts war-torn Sudan with El Niño-driven drought"
+      }
+    ],
+    "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
+    "earlierSearch": [
       {
         "url": "https://go.ifrc.org/",
         "org": "IFRC",
@@ -587,26 +680,7 @@
         "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/el-nino-weather-extremes-worsen-food-security-east-africa-and-central-america-and-threaten-next-2026-10-07_en",
-        "title": "El Niño weather extremes worsen food security in East Africa and Central America and threaten next season crops in Southern Africa and South America - Joint…"
-      },
-      {
-        "name": "news.un.org",
-        "url": "https://news.un.org/en/story/2026/10/1168577",
-        "title": "Sudan: Drought and war push Darfur and Kordofan towards famine"
-      },
-      {
-        "name": "rescue.org",
-        "url": "https://www.rescue.org/press-release/war-and-el-nino-driven-drought-deplete-food-stocks-pushing-sudan-further-towards",
-        "title": "War and El Niño-driven drought deplete food stocks, pushing Sudan further towards famine, new data finds"
-      }
-    ],
-    "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-24T07:44:33.939Z",
-    "donationSearched": "2026-10-22T08:03:09.184Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -714,7 +788,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-earthquake-eq-1570077": {
@@ -730,98 +804,139 @@
     "membersHash": "gdacs|VU#1dba2781"
   },
   "gdacs-earthquake-eq-1570339": {
-    "at": "2026-10-23T12:11:09.903Z",
+    "at": "2026-10-24T13:06:33.545Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 earthquake (USGS; SINAPROC gives 7.5) struck near Pitaloza Arriba, Panama, on 9 October 2026. Damage in Los Santos, Herrera, Coclé and other provinces is still being assessed, and aftershocks continued as of 21 October. SINAPROC reports 1 death, 27 injured, 38,477 people affected and 11,696 homes assessed.",
+    "summary": "A magnitude 7.7 earthquake struck southern Panama on 9 October 2026. Sources give magnitudes from 7.2 to 7.7. The epicentre is reported in southern Herrera Province, near Tonosí. Buildings collapsed in Los Santos, Coclé and Veraguas, and two deaths are reported. Aftershocks continue, and SINAPROC's alert remains active as of 23 October.",
     "ongoing": true,
     "places": [
       {
         "name": "Tonosí",
         "admin": "Los Santos",
         "country": "PA",
-        "kind": "town",
-        "impact": "Hotel and several homes collapsed; no water or power"
+        "kind": "district",
+        "impact": "Hotel and homes collapsed; road and bridge closed"
+      },
+      {
+        "name": "Macaracas",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Woman died after wall collapsed"
+      },
+      {
+        "name": "Los Santos",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Residences collapsed; homes tagged for safety"
+      },
+      {
+        "name": "Soná",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Firefighter building destroyed"
+      },
+      {
+        "name": "Coclé",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Hotel Dos Continentes collapsed"
       },
       {
         "name": "Penonomé",
         "admin": "Coclé",
         "country": "PA",
         "kind": "town",
-        "impact": "Red Cross gave first aid and shelter"
+        "impact": "Red Cross first aid and shelter"
+      },
+      {
+        "name": "Aguadulce",
+        "admin": "Coclé",
+        "country": "PA",
+        "kind": "town",
+        "impact": "One person rescued at municipal market"
+      },
+      {
+        "name": "Herrera",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Epicentre area; assessments and evacuation support"
       },
       {
         "name": "Chitré",
         "admin": "Herrera",
         "country": "PA",
         "kind": "city",
-        "impact": "Assessed by Red Cross teams"
+        "impact": "Assessments and evacuation support"
       },
       {
         "name": "La Villa",
-        "admin": "Herrera",
         "country": "PA",
         "kind": "town",
-        "impact": "Assessed by Red Cross teams"
+        "impact": "Assessments and evacuation support"
+      },
+      {
+        "name": "Las Tablas",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Assessments and evacuation support"
       },
       {
         "name": "Pedasí",
-        "admin": "Herrera",
         "country": "PA",
         "kind": "town",
-        "impact": "Assessed by Red Cross teams"
-      },
-      {
-        "name": "Playa Venao",
-        "country": "PA",
-        "kind": "site",
-        "impact": "Hotel damaged"
+        "impact": "Assessments and evacuation support"
       },
       {
         "name": "Changuinola",
-        "admin": "Bocas del Toro",
         "country": "PA",
         "kind": "town",
-        "impact": "Red Cross teams gave assistance"
+        "impact": "Red Cross assistance and medical transport"
       },
       {
-        "name": "Barú",
-        "admin": "Chiriquí",
+        "name": "Almirante",
         "country": "PA",
-        "kind": "district",
-        "impact": "Red Cross teams gave assistance"
+        "kind": "town",
+        "impact": "Red Cross assistance and medical transport"
+      },
+      {
+        "name": "Veraguas",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Homes assessed"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "1",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
+        "value": "2",
+        "sourceName": "laestrella.com.pa",
+        "sourceUrl": "https://www.laestrella.com.pa/panama/nacional/habilitan-mapa-en-tiempo-real-para-ver-danos-en-mas-de-12000-viviendas-tras-terremoto-NA26737208"
       },
       {
         "label": "Injured",
         "value": "27",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
-      },
-      {
-        "label": "People affected",
-        "value": "38,477 people",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Panama_earthquake"
       },
       {
         "label": "Homes assessed",
-        "value": "11,696 homes",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
+        "value": "more than 12,000 homes",
+        "sourceName": "telemetro.com",
+        "sourceUrl": "https://www.telemetro.com/nacionales/sismo-panama-gobierno-clasifica-viviendas-etiquetas-verdes-amarillas-y-rojas-terremoto-n6096313"
       },
       {
-        "label": "People in shelters",
-        "value": "5,628 people in 126 shelters",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
+        "label": "Schools affected",
+        "value": "419",
+        "sourceName": "mapadelterremoto.com",
+        "sourceUrl": "https://www.mapadelterremoto.com/panama"
+      },
+      {
+        "label": "Families targeted by Red Cross",
+        "value": "4,075 families",
+        "sourceName": "ifrc.org",
+        "sourceUrl": "https://www.ifrc.org/press-release/panama-earthquake-red-cross-society-panama-and-ifrc-mobilise-deliver-humanitarian"
       }
     ],
     "donation": [
@@ -829,32 +944,14 @@
         "url": "https://donate.unhcr.org/int/en/panama-earthquake",
         "org": "UNHCR",
         "kind": "un",
-        "note": "UNHCR donation appeal for shelter, relief and protection after the Panama earthquake.",
+        "note": "UNHCR donation page raising money for shelter and relief after the 9 October Panama quake.",
         "specific": true
-      },
-      {
-        "url": "https://cruzroja.org.pa/donar/",
-        "org": "Cruz Roja Panameña",
-        "kind": "society",
-        "note": "General donation page for the society's programmes, including disaster assistance; not specific to this earthquake.",
-        "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "sinaproc.gob.pa",
-        "url": "https://www.sinaproc.gob.pa/sinaproc-continua-con-las-evaluaciones-tras-el-sismo/",
-        "title": "Sinaproc continúa con las evaluaciones tras el sismo - Sinaproc"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Panama_earthquake",
-        "title": "2026 Panama earthquake"
-      }
-    ],
+    "sources": [],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-24T07:44:33.939Z",
-    "donationSearched": "2026-10-23T12:11:09.903Z"
+    "donationSearched": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -964,7 +1061,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|US#dc9009ba",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-earthquake-eq-1571917": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1152,7 +1249,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -1180,7 +1277,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,news,usgs|CN#09fb162e",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "gdacs-earthquake-eq-1573344": {
@@ -1235,7 +1332,7 @@
       }
     ],
     "membersHash": "gdacs,news,usgs|IT#cb390233",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1103888": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1295,7 +1392,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|US#2b36b9e5",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1363,7 +1460,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1523,7 +1620,7 @@
       }
     ],
     "membersHash": "gdacs,news|EC#5dc7dd96",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1836,7 +1933,7 @@
       }
     ],
     "membersHash": "gdacs|BR#3eb3019b",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104217": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1969,7 +2066,7 @@
       }
     ],
     "membersHash": "gdacs,news|CL#74420222",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2058,7 +2155,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104219": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2241,7 +2338,7 @@
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104221": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2443,7 +2540,7 @@
       }
     ],
     "membersHash": "gdacs|PY#a8b5e710",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104223": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2516,7 +2613,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104225": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2711,7 +2808,7 @@
       }
     ],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104228": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2790,7 +2887,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PA#b2b5f6ce",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104230": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2892,7 +2989,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|TR#b0b8323f",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104231": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -2919,7 +3016,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|LY#afb830ac",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104232": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2946,7 +3043,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|JO#b2b83565",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104233": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2959,7 +3056,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SY#b1b833d2",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104235": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -2972,7 +3069,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104236": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3021,7 +3118,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SV#aeb82f19",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104237": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3054,7 +3151,7 @@
       }
     ],
     "membersHash": "gdacs|NI#adb82d86",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104238": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3067,7 +3164,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3192,7 +3289,7 @@
       }
     ],
     "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3441,7 +3538,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104242": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3493,7 +3590,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UA#a8a6dc86",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104243": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3602,7 +3699,7 @@
       }
     ],
     "membersHash": "gdacs|FR#a9a6de19",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-flood-fl-1104244": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3697,7 +3794,7 @@
       }
     ],
     "membersHash": "gdacs|GT#aaa6dfac",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -3741,7 +3838,7 @@
       }
     ],
     "membersHash": "gdacs|IT#fedc6d48",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -3846,7 +3943,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-volcano-vo-1000152": {
@@ -3915,7 +4012,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "gdacs-wildfire-wf-1032497": {
@@ -4061,7 +4158,7 @@
       }
     ],
     "membersHash": "gdacs|AU#383137aa",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032556": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -4097,7 +4194,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4110,7 +4207,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032657": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4234,7 +4331,7 @@
       }
     ],
     "membersHash": "gdacs|BR#efe30b15",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4291,7 +4388,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#fbe9d9be",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4315,7 +4412,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4346,7 +4443,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4468,7 +4565,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4492,7 +4589,7 @@
       }
     ],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032726": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -4688,7 +4785,7 @@
       }
     ],
     "membersHash": "gdacs|CN,MN#83527d05",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4717,7 +4814,7 @@
       }
     ],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4730,7 +4827,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4743,7 +4840,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4762,7 +4859,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4786,7 +4883,7 @@
       }
     ],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4799,7 +4896,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032857": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4812,7 +4909,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032874": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4831,7 +4928,7 @@
       }
     ],
     "membersHash": "gdacs|AU#c75dd910",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4850,7 +4947,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032920": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -4863,7 +4960,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032930": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4876,7 +4973,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#58cb0943",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032939": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -4889,7 +4986,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5fcb1448",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032940": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4908,7 +5005,7 @@
       }
     ],
     "membersHash": "gdacs|AU#5ecd514c",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032947": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -4921,7 +5018,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SD,SS#5dcd4fb9",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032962": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -4940,7 +5037,20 @@
       }
     ],
     "membersHash": "gdacs|AU#e8d2a7b8",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
+  },
+  "gdacs-wildfire-wf-1032970": {
+    "at": "2026-10-24T13:06:33.545Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#f0d4f2e7",
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1032994": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -4953,7 +5063,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#e0b24775",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1033003": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -4966,7 +5076,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#f6a62a57",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1033007": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5058,7 +5168,7 @@
       }
     ],
     "membersHash": "gdacs|NA#f2a6240b",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1033013": {
     "at": "2026-10-23T12:11:09.903Z",
@@ -5071,7 +5181,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#dea84326",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1033018": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -5090,7 +5200,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e5a84e2b",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-wildfire-wf-1033021": {
     "at": "2026-10-23T12:11:09.903Z",
@@ -5109,7 +5219,46 @@
       }
     ],
     "membersHash": "gdacs|BW#6ca0d3eb",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
+  },
+  "gdacs-wildfire-wf-1033047": {
+    "at": "2026-10-24T13:06:33.545Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#72afe7e7",
+    "seen": "2026-10-24T13:06:33.545Z"
+  },
+  "gdacs-wildfire-wf-1033092": {
+    "at": "2026-10-24T13:06:33.545Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#ef94d631",
+    "seen": "2026-10-24T13:06:33.545Z"
+  },
+  "gdacs-wildfire-wf-1033134": {
+    "at": "2026-10-24T13:06:33.545Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|AU#603fae0a",
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-cyclone-8034": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -5140,7 +5289,7 @@
       }
     ],
     "membersHash": "ifrc|DJ#49b6fd82",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-drought-7977": {
@@ -5154,7 +5303,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#49b906fb",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-earthquake-7990": {
@@ -5387,70 +5536,93 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
-    "at": "2026-10-20T08:54:22.411Z",
+    "at": "2026-10-24T13:06:33.545Z",
     "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "A strong earthquake struck off Flores, Indonesia, on 15 August 2026 local time, with its epicentre about 68 km north-northwest of Ende. Latest reports dated 18 August say nearly 70 people died and over 1,100 were injured. Search efforts continued, about 1,000 aftershocks were recorded, and displaced people were sheltering outdoors. No reports dated after 18 August were found.",
+    "searches": 4,
+    "summary": "A magnitude 7.7 earthquake struck off the northern coast of East Nusa Tenggara, Indonesia, on 14 August 2026 (15 August local time). At least 68 deaths were reported by 17 August, with more than 130 injured and thousands evacuated. Damage was reported in Sikka, Manggarai, Nagekeo and Ngada. Aftershocks continued, and BMKG warned activity could last 3–4 weeks. The provincial emergency response period was set for 15–28 August.",
     "ongoing": true,
     "places": [
       {
-        "name": "Ruteng",
+        "name": "Sikka",
         "admin": "East Nusa Tenggara",
         "country": "ID",
-        "kind": "town",
-        "impact": "Worst impact; two emergency field hospitals set up"
+        "kind": "district",
+        "impact": "Deaths recovered; evacuees"
       },
       {
-        "name": "Sikka",
+        "name": "Manggarai",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Most deaths recovered here"
+        "impact": "Deaths recovered; homes damaged"
+      },
+      {
+        "name": "East Manggarai",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Deaths recovered; homes damaged"
+      },
+      {
+        "name": "Nagekeo",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Road cracked; landslides blocked roads"
+      },
+      {
+        "name": "Ngada",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Aid distributed"
       },
       {
         "name": "Maumere",
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "town",
-        "impact": "Rescuers worked among rubble of damaged buildings"
+        "impact": "Damaged buildings; rescue work"
       },
       {
-        "name": "Nagekeo Regency",
+        "name": "Ruteng",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
-        "kind": "district",
-        "impact": "Roads cracked; rescue teams had not reached by 15 Aug"
+        "kind": "town",
+        "impact": "Field hospitals set up"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "nearly 70",
-        "sourceName": "americares.org",
-        "sourceUrl": "https://www.americares.org/crisis-alerts/indonesia-earthquake-august-2026/"
+        "value": "at least 68",
+        "sourceName": "time.com",
+        "sourceUrl": "https://time.com/article/2026/08/17/indonesia-earthquake-damage-death-toll/"
       },
       {
         "label": "Injured",
-        "value": "over 1,100",
-        "sourceName": "americares.org",
-        "sourceUrl": "https://www.americares.org/crisis-alerts/indonesia-earthquake-august-2026/"
-      },
-      {
-        "label": "Displaced",
-        "value": "thousands",
+        "value": "more than 130",
         "sourceName": "cbsnews.com",
         "sourceUrl": "https://www.cbsnews.com/news/indonesia-earthquake-tsunami-warning/"
       },
       {
-        "label": "Houses destroyed or damaged",
-        "value": "more than 300",
-        "sourceName": "abcnews.com",
-        "sourceUrl": "https://abcnews.com/International/2-dead-after-powerful-77-earthquake-strikes-off/story?id=135664681"
+        "label": "Evacuated or displaced",
+        "value": "more than 5,900 in evacuation sites",
+        "sourceName": "planindonesia.org",
+        "sourceUrl": "https://planindonesia.org/en/plan-indonesia-delivers-hundreds-of-emergency-aid-packages-to-earthquake-survivors-in-flores/"
       },
       {
-        "label": "People in strong shaking (MMI VI–VIII)",
+        "label": "Houses severely damaged",
+        "value": "at least 914",
+        "sourceName": "planindonesia.org",
+        "sourceUrl": "https://planindonesia.org/en/plan-indonesia-delivers-hundreds-of-emergency-aid-packages-to-earthquake-survivors-in-flores/"
+      },
+      {
+        "label": "People exposed to strong shaking",
         "value": "about 1.7 million",
         "sourceName": "earthquake.usgs.gov",
         "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2"
@@ -5458,24 +5630,33 @@
     ],
     "donation": [
       {
-        "url": "https://ayodonor.pmi.or.id/",
-        "org": "Palang Merah Indonesia",
+        "url": "https://ayodonor.pmi.or.id/?page=index",
+        "org": "Palang Merah Indonesia (PMI) Kota Bekasi",
         "kind": "society",
-        "note": "PMI Ayodonor campaign platform with dated 18 August 2026 East Nusa Tenggara quake appeal.",
+        "note": "Branch donation drive for East Nusa Tenggara earthquake victims, via Ayodonor platform.",
         "specific": true
-      },
-      {
-        "url": "https://donasi.pmi.or.id/",
-        "org": "Palang Merah Indonesia",
-        "kind": "society",
-        "note": "PMI main donation site; banner promotes the East Nusa Tenggara earthquake alongside general giving.",
-        "specific": false
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "earthquake.usgs.gov",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2",
+        "title": "M 7.8 - 66 km NNW of Ende, Indonesia"
+      },
+      {
+        "name": "en.tempo.co",
+        "url": "https://en.tempo.co/read/2118253/west-papua-community-raises-rp167-6-million-for-flores-earthquake-victims",
+        "title": "West Papua Community Raises Rp167.6 Million for Flores Earthquake Victims - News En.tempo.co"
+      },
+      {
+        "name": "jakartaglobe.id",
+        "url": "https://jakartaglobe.id/news/indonesia-wont-accept-foreign-aid-for-flores-earthquake",
+        "title": "Indonesia Won’t Accept Foreign Aid for Flores Earthquake"
+      }
+    ],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-24T07:44:33.939Z",
-    "donationSearched": "2026-10-21T22:09:59.986Z"
+    "donationSearched": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-7993": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5507,7 +5688,7 @@
       }
     ],
     "membersHash": "ifrc|GE#4daa02bd",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7996": {
@@ -5575,7 +5756,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CI#48a9fade",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7998": {
@@ -5681,7 +5862,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|LA#42a9f16c",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8011": {
@@ -5718,70 +5899,112 @@
     ],
     "sources": [],
     "membersHash": "ifrc|TJ#dab1d197",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
-    "at": "2026-10-22T08:03:09.184Z",
+    "at": "2026-10-24T13:06:33.545Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Monsoon floods and landslides hit Cox's Bazar, Chattogram and Bandarban districts in Bangladesh from July 2026. UN Situation Report #2 (23 July 2026) reported 59 deaths and 1.28 million people affected across seven districts. The latest source found is dated August 2026; no later status was found.",
+    "summary": "Monsoon rains from 5 July 2026 caused floods and landslides in Bangladesh, most severely in Cox's Bazar district, where 69 of 71 unions were inundated. Nationally, at least 51 deaths were reported by 12 July. By 25 July, government reports said conditions were improving. The IFRC DREF operation runs to January 2027. No source found reports active flooding as of 24 October 2026.",
     "ongoing": true,
     "places": [
       {
         "name": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "Flooding, landslides and damage in Rohingya camps and host communities"
+        "impact": "69 of 71 unions inundated, about 49% of district"
       },
       {
-        "name": "Chattogram",
+        "name": "Pekua",
         "country": "BD",
         "kind": "district",
-        "impact": "Banshkhali, Satkania, Lohagara and Chandanaish severely affected"
+        "impact": "95% flooded"
+      },
+      {
+        "name": "Matamuhuri",
+        "country": "BD",
+        "kind": "district",
+        "impact": "85% flooded"
+      },
+      {
+        "name": "Chakaria",
+        "country": "BD",
+        "kind": "district",
+        "impact": "80% flooded"
+      },
+      {
+        "name": "Kutubdia",
+        "country": "BD",
+        "kind": "district",
+        "impact": "65% flooded"
+      },
+      {
+        "name": "Maheshkhali",
+        "country": "BD",
+        "kind": "district",
+        "impact": "50% flooded"
+      },
+      {
+        "name": "Rohingya refugee camps",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "site",
+        "impact": "among the worst hit"
+      },
+      {
+        "name": "Banshkhali",
+        "country": "BD",
+        "kind": "district",
+        "impact": "two children drowned"
       },
       {
         "name": "Bandarban",
         "country": "BD",
         "kind": "district",
-        "impact": "Sangu River above danger level; houses damaged"
+        "impact": "houses damaged in preliminary reports"
       },
       {
-        "name": "Hashimpur",
-        "admin": "Chandanaish",
+        "name": "Chattogram",
         "country": "BD",
-        "kind": "site",
-        "impact": "Chattogram–Cox's Bazar highway submerged"
+        "kind": "district",
+        "impact": "houses damaged in preliminary reports"
+      },
+      {
+        "name": "Habiganj",
+        "country": "BD",
+        "kind": "district",
+        "impact": "floodwaters receded by late July"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "59",
-        "sourceName": "bangladesh.un.org",
-        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+        "value": "at least 51",
+        "sourceName": "adrc.asia",
+        "sourceUrl": "https://www.adrc.asia/view_disaster_en.php?NationCode=50&Lang=en&Key=2834"
+      },
+      {
+        "label": "Deaths in Cox's Bazar",
+        "value": "at least 32",
+        "sourceName": "jagonews24.com",
+        "sourceUrl": "https://www.jagonews24.com/en/national/news/94272"
       },
       {
         "label": "People affected",
-        "value": "1.28 million people in seven districts",
+        "value": "1.28 million people",
         "sourceName": "bangladesh.un.org",
         "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
       },
       {
-        "label": "People needing assistance",
-        "value": "about 436,000 people",
+        "label": "Houses damaged or destroyed",
+        "value": "74,479 houses",
         "sourceName": "bangladesh.un.org",
         "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
       },
       {
         "label": "Evacuated",
-        "value": "38,422 people in 1,047 evacuation shelters",
-        "sourceName": "nrc.no",
-        "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
-      },
-      {
-        "label": "Houses damaged (preliminary)",
-        "value": "29,741 houses in Bandarban and Chattogram",
+        "value": "38,422 people",
         "sourceName": "nrc.no",
         "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
       }
@@ -5789,23 +6012,43 @@
     "donation": [
       {
         "url": "https://go.ifrc.org/emergencies/8013/overview",
-        "org": "IFRC",
+        "org": "IFRC GO (Bangladesh Red Crescent operation)",
         "kind": "society",
-        "note": "IFRC GO page for DREF MDRBD040 covering the Cox's Bazar monsoon emergency, run with BDRCS.",
+        "note": "IFRC emergency overview for the DREF; funding figure shown, check for donate link.",
         "specific": true
       },
       {
         "url": "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/",
         "org": "Bangladesh Red Crescent Society",
         "kind": "society",
-        "note": "National appeal for the 2026 monsoon emergency covering flash floods, inundation and landslides.",
+        "note": "Emergency appeal report covering the monsoon emergency; not a payment page.",
         "specific": true
+      },
+      {
+        "url": "https://donate.bdrcs.org/",
+        "org": "Bangladesh Red Crescent Society",
+        "kind": "society",
+        "note": "General BDRCS donation platform for all its work.",
+        "specific": false
+      },
+      {
+        "url": "https://crisisrelief.un.org/en/donate-bangladesh-crisis",
+        "org": "United Nations",
+        "kind": "un",
+        "note": "General Bangladesh fund pooled through Asia-Pacific Regional Humanitarian Fund.",
+        "specific": false
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "jagonews24.com",
+        "url": "https://www.jagonews24.com/en/national/news/94272",
+        "title": "49% of Cox's Bazar inundated in 8-day deluge, 32 dead"
+      }
+    ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-24T07:44:33.939Z",
-    "donationSearched": "2026-10-22T08:03:09.184Z"
+    "donationSearched": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8014": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -5868,7 +6111,7 @@
       }
     ],
     "membersHash": "ifrc|KG#d5b1c9b8",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
@@ -5935,7 +6178,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-flood-8037": {
@@ -5964,7 +6207,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|IN#48b6fbef",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8045": {
@@ -6058,81 +6301,76 @@
       }
     ],
     "membersHash": "ifrc|SL#4aaa3322",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
-    "at": "2026-10-22T08:03:09.184Z",
+    "at": "2026-10-24T13:06:33.545Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Monsoon floods in Myanmar began on 12 August 2026, affecting Ayeyarwady, Kayin, Sagaing and other regions. Reports cite flooded villages, an embankment breach in Laymyethna, and displaced households. The latest source is dated 2 September 2026, and its figures are provisional. No later update was found as of 22 October 2026.",
+    "searches": 1,
+    "summary": "Monsoon floods have affected several regions of Myanmar since July 2026, including Sagaing, Mandalay, Magway and Ayeyarwady. UN and local sources reported flooding, damaged homes and displacement. UNICEF reported ongoing flooding at the end of August 2026. No confirmed status after that date was found.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Laymyethna",
-        "admin": "Ayeyarwady Region",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Embankment breach; wards, roads, 150 villages flooded"
-      },
-      {
-        "name": "Hinthada",
-        "admin": "Ayeyarwady Region",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Affected by flooding"
-      },
-      {
-        "name": "Yekyi",
-        "admin": "Ayeyarwady Region",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Affected by flooding"
-      },
-      {
-        "name": "Kyangin",
-        "admin": "Ayeyarwady Region",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Affected by flooding"
-      },
-      {
-        "name": "Thanlwin River",
-        "admin": "Kayin State",
-        "country": "MM",
-        "kind": "site",
-        "impact": "Overflowed; households displaced"
-      },
       {
         "name": "Wetlet",
         "admin": "Sagaing Region",
         "country": "MM",
-        "kind": "district",
-        "impact": "Villages and paddy fields submerged"
+        "kind": "town",
+        "impact": "villages and paddy fields submerged"
       },
       {
-        "name": "Rakhine State",
+        "name": "Sagaing",
         "country": "MM",
         "kind": "region",
-        "impact": "Named by UN as affected"
+        "impact": "severe flooding, 230,000 affected"
       },
       {
-        "name": "Kachin State",
+        "name": "Mandalay",
         "country": "MM",
         "kind": "region",
-        "impact": "Named by UN as affected"
+        "impact": "flooding linked to dam releases"
       },
       {
-        "name": "Irrawaddy",
+        "name": "Magway",
         "country": "MM",
         "kind": "region",
-        "impact": "Named by UN as affected"
+        "impact": "flooding linked to dam releases"
       },
       {
-        "name": "Northern Shan State",
+        "name": "Ayeyarwady",
         "country": "MM",
         "kind": "region",
-        "impact": "Localised flooding; additional deaths"
+        "impact": "damaged homes, schools, health facilities, roads"
+      },
+      {
+        "name": "Rakhine",
+        "country": "MM",
+        "kind": "region",
+        "impact": "damaged homes, schools, health facilities, roads"
+      },
+      {
+        "name": "Bago",
+        "country": "MM",
+        "kind": "region",
+        "impact": "flooded, among 41 townships affected"
+      },
+      {
+        "name": "Kayin",
+        "country": "MM",
+        "kind": "region",
+        "impact": "flooded after Salween River broke banks"
+      },
+      {
+        "name": "Kachin",
+        "country": "MM",
+        "kind": "region",
+        "impact": "localised flooding linked to dam releases"
+      },
+      {
+        "name": "Shan (northern)",
+        "country": "MM",
+        "kind": "region",
+        "impact": "localised flooding, additional deaths reported"
       }
     ],
     "figures": [
@@ -6150,16 +6388,38 @@
       },
       {
         "label": "People affected",
-        "value": "about 600,000",
+        "value": "600,000",
         "sourceName": "unicef.org",
         "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://go.ifrc.org/appeals/all?region=2",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO appeal list entry for DREF Myanmar Floods MDRMM024, 869,742 CHF request.",
+        "specific": true
+      },
+      {
+        "url": "https://go.ifrc.org/countries/121",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO Myanmar page showing active DREF flood operation MDRMM024, 199,342 CHF.",
+        "specific": true
+      },
+      {
+        "url": "https://www.redcross.org.mm/en_US/donate/",
+        "org": "Myanmar Red Cross Society",
+        "kind": "society",
+        "note": "Myanmar Red Cross donation page for unrestricted general funds, not this flood.",
+        "specific": false
+      }
+    ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-24T07:44:33.939Z",
-    "donationSearched": "2026-10-22T08:03:09.184Z"
+    "donationSearched": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -6248,7 +6508,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8057": {
@@ -6336,7 +6596,7 @@
       }
     ],
     "membersHash": "ifrc|PH#48a7f165",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8062": {
@@ -6413,7 +6673,7 @@
       }
     ],
     "membersHash": "ifrc|PA#d5af8b21",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8068": {
@@ -6494,7 +6754,7 @@
       }
     ],
     "membersHash": "ifrc|LR#cbaf7b63",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8073": {
@@ -6552,7 +6812,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-flood-8115": {
@@ -6594,7 +6854,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CG#68e1ca24",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
@@ -6692,14 +6952,14 @@
       }
     ],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-landslide-8111": {
-    "at": "2026-10-20T08:54:22.411Z",
+    "at": "2026-10-24T13:06:33.545Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Heavy rain from 27-29 September 2026 triggered flash floods and landslides in Dawei and Launglon townships, Tanintharyi Region, Myanmar. Floodwaters had receded by early October, but rescue and relief work continues and further landslides remain possible. Reports give 41 deaths and 20 missing in Launglon. Sources date the event to late September, not the 8 October feed date.",
+    "searches": 2,
+    "summary": "Heavy rain from 27 to 29 September 2026 caused floods and landslides in Dawei District, Tanintharyi Region, Myanmar. At least 42 deaths were reported by 4 October, and 20 people were reported missing in Launglon Township. Floodwaters subsided by 1 October, but further landslides were considered possible. The latest report found is dated 12 October 2026, when the Myanmar Red Cross was running search, evacuation and relief work.",
     "ongoing": true,
     "places": [
       {
@@ -6707,54 +6967,59 @@
         "admin": "Tanintharyi Region",
         "country": "MM",
         "kind": "district",
-        "impact": "25 places hit by landslides; two villages entirely destroyed"
+        "impact": "Worst-affected; 25 places hit by landslides"
       },
       {
-        "name": "Dawei",
-        "admin": "Tanintharyi Region",
+        "name": "Ka Det Nge Htein",
         "country": "MM",
-        "kind": "district",
-        "impact": "Homes damaged by flooding and landslides"
+        "kind": "town",
+        "impact": "Landslide buried residents as they slept"
       },
       {
         "name": "Thayetchaung",
         "admin": "Tanintharyi Region",
         "country": "MM",
         "kind": "district",
-        "impact": "Waist-deep silt deposits in parts"
+        "impact": "Flooded; silt waist-deep in parts"
       },
       {
-        "name": "Yebyu",
+        "name": "Dawei",
         "admin": "Tanintharyi Region",
         "country": "MM",
         "kind": "district",
-        "impact": "Severe flooding; communities cut off from aid"
+        "impact": "Flooded; residents moved by boat"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "41",
-        "sourceName": "ucanews.com",
-        "sourceUrl": "https://www.ucanews.com/amp/floods-kill-41-in-myanmars-tanintharyi-region/115595"
+        "value": "42",
+        "sourceName": "mekongeye.com",
+        "sourceUrl": "https://www.mekongeye.com/2026/10/05/dawei-flood"
       },
       {
         "label": "Missing",
-        "value": "20",
+        "value": "20 in Launglon",
         "sourceName": "irrawaddy.com",
         "sourceUrl": "https://www.irrawaddy.com/news/burma/myanmar-regime-bombs-flood-hit-dawei-as-disaster-death-toll-tops-40.html"
       },
       {
         "label": "Displaced",
-        "value": "over 1,000 people",
+        "value": "over 1,000",
         "sourceName": "mekongeye.com",
         "sourceUrl": "https://www.mekongeye.com/2026/10/05/dawei-flood"
       },
       {
-        "label": "Houses destroyed",
-        "value": "more than 400",
+        "label": "Homes destroyed",
+        "value": "more than 400 completely destroyed",
         "sourceName": "mekongeye.com",
         "sourceUrl": "https://www.mekongeye.com/2026/10/05/dawei-flood"
+      },
+      {
+        "label": "Bridges damaged or destroyed",
+        "value": "15",
+        "sourceName": "irrawaddy.com",
+        "sourceUrl": "https://www.irrawaddy.com/news/burma/myanmar-regime-bombs-flood-hit-dawei-as-disaster-death-toll-tops-40.html"
       }
     ],
     "donation": [
@@ -6762,52 +7027,30 @@
         "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC appeals listing for the Myanmar flood-landslide DREF operation MDRMM025.",
+        "note": "IFRC DREF appeal listing for Myanmar flood-landslides; appeal code mismatch noted.",
         "specific": true
-      },
-      {
-        "url": "https://www.redcross.org.mm/news-and-multimedia/myanmar-red-cross-society-supports-flood-affected-communities-in-tanintharyi/",
-        "org": "Myanmar Red Cross Society",
-        "kind": "society",
-        "note": "News item on Tanintharyi flood response with a general Donate Now button.",
-        "specific": false
       }
     ],
     "sources": [
-      {
-        "name": "sentinel-asia.org",
-        "url": "https://sentinel-asia.org/EO/2026/article20261001MM.html",
-        "title": "Flood and Landslide in Dawei District, Myanmar on 01 October, 2026"
-      },
-      {
-        "name": "mekongeye.com",
-        "url": "https://www.mekongeye.com/2026/10/05/dawei-flood",
-        "title": "Record rainfall triggers floods, landslides in southern Myanmar amid El Niño warning"
-      },
-      {
-        "name": "x.com",
-        "url": "https://x.com/MyanmarRedCross/status/2109911369458082282",
-        "title": "Myanmar Red Cross on X: \"🌊 Following flooding in #Launglon Township, #Dawei District, Tanintharyi Region, the Myanmar Red Cross Society is conducting rapid…"
-      },
       {
         "name": "myanmar-now.org",
         "url": "https://myanmar-now.org/en/news/death-toll-rises-to-34-as-floods-landslides-devastate-villages-in-southern-myanmar/",
         "title": "Death toll rises to 34 as floods, landslides devastate villages in southern Myanmar"
       },
       {
+        "name": "sentinel-asia.org",
+        "url": "https://sentinel-asia.org/EO/2026/article20261001MM.html",
+        "title": "Flood and Landslide in Dawei District, Myanmar on 01 October, 2026"
+      },
+      {
         "name": "irrawaddy.com",
         "url": "https://www.irrawaddy.com/news/burma/myanmar-regime-bombs-flood-hit-dawei-as-disaster-death-toll-tops-40.html",
         "title": "Myanmar Regime Bombs Flood-Hit Dawei as Disaster Death Toll Tops 40"
-      },
-      {
-        "name": "bayofbengalpost.com",
-        "url": "https://www.bayofbengalpost.com/news/floods-and-landslides-kill-32-in-myanmars-dawei-region-dozens-still-missing",
-        "title": "Floods and landslides kill 32 in Myanmar’s Dawei region, dozens still missing"
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-24T07:44:33.939Z",
-    "donationSearched": "2026-10-21T22:09:59.986Z"
+    "donationSearched": "2026-10-24T13:06:33.545Z",
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-storm-8101": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6835,7 +7078,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|GW#60df7ef5",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-storm-8108": {
@@ -6978,7 +7221,7 @@
       }
     ],
     "membersHash": "ifrc|ZW#67df89fa",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-wildfire-8027": {
@@ -7011,7 +7254,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|DZ#48b93a86",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-wildfire-8038": {
@@ -7194,7 +7437,7 @@
       }
     ],
     "membersHash": "ifrc|TN#4db703ce",
-    "seen": "2026-10-24T07:44:33.939Z",
+    "seen": "2026-10-24T13:06:33.545Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "news-cyclone-cyclone-jp-916fe53458": {
@@ -7933,7 +8176,7 @@
       }
     ],
     "membersHash": "news|VE#9426d22d",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "news-flood-flood-hr-878923ace2": {
     "at": "2026-10-22T08:03:09.184Z",
@@ -8732,6 +8975,41 @@
     "membersHash": "news|GB#5b5a097b",
     "seen": "2026-10-22T08:03:09.184Z"
   },
+  "news-storm-storm-ie-053b302524": {
+    "at": "2026-10-24T13:06:33.545Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Storm Boelo was reported to have started in Ireland on 24 October 2026, according to an alert feed with minor severity. Status Orange warnings were reported for Galway and Kerry. Research could not be completed, and no verified reports of damage, casualties or displacement were found. Whether the storm is still ongoing is not confirmed.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Galway",
+        "admin": "Connacht",
+        "country": "IE",
+        "kind": "city",
+        "impact": "Status Orange warning reported"
+      },
+      {
+        "name": "Kerry",
+        "admin": "Munster",
+        "country": "IE",
+        "kind": "district",
+        "impact": "Status Orange warning reported"
+      },
+      {
+        "name": "Cork",
+        "admin": "Munster",
+        "country": "IE",
+        "kind": "city",
+        "impact": "Storm reported to hit; impact not reported"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "news|IE#dc5f6dab",
+    "seen": "2026-10-24T13:06:33.545Z"
+  },
   "news-storm-storm-ie-853815a83a": {
     "at": "2026-10-21T14:45:27.681Z",
     "model": "claude-haiku-5-5",
@@ -8948,7 +9226,7 @@
       }
     ],
     "membersHash": "usgs|VU#daa78333",
-    "seen": "2026-10-24T07:44:33.939Z"
+    "seen": "2026-10-24T13:06:33.545Z"
   },
   "usgs-earthquake-us6000u4kq": {
     "at": "2026-10-24T07:44:33.939Z",
