@@ -304,7 +304,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|CN,JP,PH#afb26aec",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-cyclone-tc-1001341": {
@@ -354,7 +354,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-23T21:53:40.347Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -368,7 +368,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CA,US#471b9aae",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -470,7 +470,7 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-drought-dr-1027449": {
@@ -484,7 +484,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-drought-dr-1027450": {
@@ -566,7 +566,22 @@
         "sourceUrl": "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://www.wfp.org/emergencies/sudan",
+        "org": "World Food Programme",
+        "kind": "un",
+        "note": "General fund for WFP's Sudan hunger response, not specific to this drought.",
+        "specific": false
+      },
+      {
+        "url": "https://www.icrc.org/en/where-we-work/sudan",
+        "org": "ICRC",
+        "kind": "agency",
+        "note": "General fund for ICRC's mainly conflict-focused Sudan work, with no drought appeal.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
         "name": "1027wbow.com",
@@ -600,16 +615,8 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-25T07:59:52.974Z",
-    "earlierSearch": [
-      {
-        "url": "https://go.ifrc.org/",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC GO homepage listing Ethiopia Drought Response DREF MDRET042; no donation button confirmed.",
-        "specific": false
-      }
-    ]
+    "seen": "2026-10-25T13:34:13.512Z",
+    "donationSearched": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -700,8 +707,8 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "donationSearched": "2026-10-25T07:59:52.974Z",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z",
+    "donationSearched": "2026-10-25T07:59:52.974Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -743,14 +750,14 @@
       }
     ],
     "membersHash": "gdacs|VU#1dba2781",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-earthquake-eq-1570339": {
-    "at": "2026-10-24T13:06:33.545Z",
+    "at": "2026-10-25T13:34:13.512Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck southern Panama on 9 October 2026. Sources give magnitudes from 7.2 to 7.7. The epicentre is reported in southern Herrera Province, near Tonosí. Buildings collapsed in Los Santos, Coclé and Veraguas, and two deaths are reported. Aftershocks continue, and SINAPROC's alert remains active as of 23 October.",
+    "searches": 3,
+    "summary": "A magnitude 7.7 earthquake (USGS; SINAPROC gives 7.5) struck near Pitaloza Arriba, Panama, on 9 October 2026. Damage was recorded in Los Santos, Herrera, Coclé, Veraguas and Colón, and tremors were felt in Panama City. As of 21 October, SINAPROC said damage assessments and coordination were continuing. Aftershocks were still being recorded, and 327 schools were to reopen on 26 October.",
     "ongoing": true,
     "places": [
       {
@@ -758,143 +765,128 @@
         "admin": "Los Santos",
         "country": "PA",
         "kind": "district",
-        "impact": "Hotel and homes collapsed; road and bridge closed"
+        "impact": "Over 60% of population affected; houses damaged"
       },
       {
-        "name": "Macaracas",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "district",
-        "impact": "Woman died after wall collapsed"
-      },
-      {
-        "name": "Los Santos",
+        "name": "Herrera",
         "country": "PA",
         "kind": "region",
-        "impact": "Residences collapsed; homes tagged for safety"
-      },
-      {
-        "name": "Soná",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "district",
-        "impact": "Firefighter building destroyed"
+        "impact": "498 homes damaged; 32 landslides; communities cut off"
       },
       {
         "name": "Coclé",
         "country": "PA",
         "kind": "region",
-        "impact": "Hotel Dos Continentes collapsed"
+        "impact": "1,052 homes damaged; 17 injured"
       },
       {
         "name": "Penonomé",
         "admin": "Coclé",
         "country": "PA",
         "kind": "town",
-        "impact": "Red Cross first aid and shelter"
-      },
-      {
-        "name": "Aguadulce",
-        "admin": "Coclé",
-        "country": "PA",
-        "kind": "town",
-        "impact": "One person rescued at municipal market"
-      },
-      {
-        "name": "Herrera",
-        "country": "PA",
-        "kind": "region",
-        "impact": "Epicentre area; assessments and evacuation support"
-      },
-      {
-        "name": "Chitré",
-        "admin": "Herrera",
-        "country": "PA",
-        "kind": "city",
-        "impact": "Assessments and evacuation support"
-      },
-      {
-        "name": "La Villa",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Assessments and evacuation support"
-      },
-      {
-        "name": "Las Tablas",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Assessments and evacuation support"
-      },
-      {
-        "name": "Pedasí",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Assessments and evacuation support"
-      },
-      {
-        "name": "Changuinola",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Red Cross assistance and medical transport"
-      },
-      {
-        "name": "Almirante",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Red Cross assistance and medical transport"
+        "impact": "Cathedral and regional government building damaged"
       },
       {
         "name": "Veraguas",
         "country": "PA",
         "kind": "region",
-        "impact": "Homes assessed"
+        "impact": "614 homes damaged"
+      },
+      {
+        "name": "Mariato",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "16 shelters housed over 2,044 displaced people"
+      },
+      {
+        "name": "Colón",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Damage in 29 settlements; 14 homes"
+      },
+      {
+        "name": "Panama City",
+        "country": "PA",
+        "kind": "city",
+        "impact": "Tremors felt; people evacuated"
       }
     ],
     "figures": [
       {
-        "label": "Deaths",
-        "value": "2",
-        "sourceName": "laestrella.com.pa",
-        "sourceUrl": "https://www.laestrella.com.pa/panama/nacional/habilitan-mapa-en-tiempo-real-para-ver-danos-en-mas-de-12000-viviendas-tras-terremoto-NA26737208"
+        "label": "Homes evaluated",
+        "value": "12,509 homes",
+        "sourceName": "ecotvpanama.com",
+        "sourceUrl": "https://www.ecotvpanama.com/nacionales/sinaproc-reporta-mas-12-mil-viviendas-evaluadas-el-terremoto-n6096417"
       },
       {
-        "label": "Injured",
-        "value": "27",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Panama_earthquake"
-      },
-      {
-        "label": "Homes assessed",
-        "value": "more than 12,000 homes",
+        "label": "People affected",
+        "value": "37,210 people",
         "sourceName": "telemetro.com",
-        "sourceUrl": "https://www.telemetro.com/nacionales/sismo-panama-gobierno-clasifica-viviendas-etiquetas-verdes-amarillas-y-rojas-terremoto-n6096313"
+        "sourceUrl": "https://www.telemetro.com/nacionales/terremoto-75-panama-sinaproc-presenta-balance-oficial-11321-viviendas-evaluadas-n6096139"
       },
       {
-        "label": "Schools affected",
-        "value": "419",
-        "sourceName": "mapadelterremoto.com",
-        "sourceUrl": "https://www.mapadelterremoto.com/panama"
+        "label": "People in shelters",
+        "value": "5,628 people in 126 active shelters",
+        "sourceName": "telemetro.com",
+        "sourceUrl": "https://www.telemetro.com/nacionales/terremoto-75-panama-sinaproc-presenta-balance-oficial-11321-viviendas-evaluadas-n6096139"
+      },
+      {
+        "label": "Homes damaged",
+        "value": "2,890 total loss; 6,874 moderate or partial; 1,557 light",
+        "sourceName": "telemetro.com",
+        "sourceUrl": "https://www.telemetro.com/nacionales/terremoto-75-panama-sinaproc-presenta-balance-oficial-11321-viviendas-evaluadas-n6096139"
       },
       {
         "label": "Families targeted by Red Cross",
         "value": "4,075 families",
         "sourceName": "ifrc.org",
-        "sourceUrl": "https://www.ifrc.org/press-release/panama-earthquake-red-cross-society-panama-and-ifrc-mobilise-deliver-humanitarian"
+        "sourceUrl": "https://www.ifrc.org/es/press-release/cruz-roja-panamena-intensifica-su-respuesta-para-asistir-cuatro-mil-personas"
       }
     ],
     "donation": [
       {
         "url": "https://donate.unhcr.org/int/en/panama-earthquake",
-        "org": "UNHCR",
+        "org": "UNHCR (UN Refugee Agency)",
         "kind": "un",
-        "note": "UNHCR donation page raising money for shelter and relief after the 9 October Panama quake.",
+        "note": "Event-specific donation page asking help for families affected by the Panama earthquake.",
         "specific": true
+      },
+      {
+        "url": "https://www.unicef.org/panama/emergencia_terremoto_panama",
+        "org": "UNICEF Panamá",
+        "kind": "un",
+        "note": "Emergency page for this earthquake with a donate-now button.",
+        "specific": true
+      },
+      {
+        "url": "https://cruzroja.org.pa/donar/",
+        "org": "Cruz Roja Panameña (Panamanian Red Cross)",
+        "kind": "society",
+        "note": "General Red Cross donation fund covering programmes and disaster work, not this event.",
+        "specific": false
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "prensa-latina.cu",
+        "url": "https://prensa-latina.cu/2026/10/24/retorno-a-clases-y-recuperacion-tras-sismo-marcan-semana-en-panama",
+        "title": "Retorno a clases y recuperación tras sismo marcan semana en Panamá - Noticias Prensa Latina"
+      },
+      {
+        "name": "telemetro.com",
+        "url": "https://www.telemetro.com/nacionales/terremoto-75-panama-sinaproc-presenta-balance-oficial-11321-viviendas-evaluadas-n6096139",
+        "title": "Terremoto de 7.5 en Panamá: SINAPROC presenta balance oficial con 11,321 viviendas evaluadas"
+      },
+      {
+        "name": "elcapitalfinanciero.com",
+        "url": "https://elcapitalfinanciero.com/sinaproc-balance-sismo-tonosi-afectados-viviendas-danadas/",
+        "title": "Sinaproc eleva a 11,500 afectados y 3,390 las viviendas dañadas por el sismo - ElCapitalFinanciero.com - Noticias Financieras de Panamá"
+      }
+    ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-25T07:59:52.974Z",
-    "donationSearched": "2026-10-24T13:06:33.545Z"
+    "donationSearched": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1201,7 +1193,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -1299,7 +1291,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-earthquake-eq-1573344": {
@@ -1354,7 +1346,7 @@
       }
     ],
     "membersHash": "gdacs,news,usgs|IT#cb390233",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573554": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -1378,7 +1370,7 @@
       }
     ],
     "membersHash": "gdacs,news,usgs|VU#95030409",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573709": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -1493,7 +1485,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|US#2b36b9e5",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1561,7 +1553,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1721,7 +1713,7 @@
       }
     ],
     "membersHash": "gdacs,news|EC#5dc7dd96",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -2034,7 +2026,7 @@
       }
     ],
     "membersHash": "gdacs|BR#3eb3019b",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104217": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2167,7 +2159,7 @@
       }
     ],
     "membersHash": "gdacs,news|CL#74420222",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104218": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -2302,7 +2294,7 @@
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104219": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2491,7 +2483,7 @@
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104221": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2766,7 +2758,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104225": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2868,100 +2860,17 @@
     "seen": "2026-10-22T23:48:02.104Z"
   },
   "gdacs-flood-fl-1104227": {
-    "at": "2026-10-21T00:11:24.613Z",
+    "at": "2026-10-25T13:34:13.512Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Heavy rain caused flooding, flash floods and landslides in Costa Rica from 15 to 19 October 2026, with reports in Heredia, Escazú, San Carlos and Golfito. On 19 October the National Emergency Commission declared a nationwide green preventive alert for all seven provinces, with heavy rain expected through 21 October. The event is ongoing.",
+    "searches": 1,
+    "summary": "",
     "ongoing": true,
-    "places": [
-      {
-        "name": "San Pablo",
-        "admin": "Heredia",
-        "country": "CR",
-        "kind": "town",
-        "impact": "flooded homes and streets"
-      },
-      {
-        "name": "San Rafael",
-        "admin": "Heredia",
-        "country": "CR",
-        "kind": "town",
-        "impact": "flooded homes and streets"
-      },
-      {
-        "name": "Escazú",
-        "admin": "San José",
-        "country": "CR",
-        "kind": "district",
-        "impact": "flooded streets trapped people"
-      },
-      {
-        "name": "Aguas Zarcas",
-        "country": "CR",
-        "kind": "town",
-        "impact": "floodwater entered homes and shops; four evacuated"
-      },
-      {
-        "name": "Golfito",
-        "admin": "Puntarenas",
-        "country": "CR",
-        "kind": "town",
-        "impact": "affected by heavy rain"
-      },
-      {
-        "name": "Santo Domingo",
-        "admin": "Heredia",
-        "country": "CR",
-        "kind": "district",
-        "impact": "flood cases reported"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Flood incidents",
-        "value": "more than 100",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/costa-rica/2026/10/20/costa-rica-declara-alerta-verde-en-todo-el-territorio-nacional-por-fuertes-lluvias-mas-de-100-inundaciones-y-50-viviendas-afectadas/"
-      },
-      {
-        "label": "Homes affected",
-        "value": "at least 50",
-        "sourceName": "observador.cr",
-        "sourceUrl": "https://observador.cr/fuertes-lluvias-del-fin-de-semana-dejan-mas-de-100-incidentes-por-inundacion-y-al-menos-50-viviendas-anegadas/"
-      },
-      {
-        "label": "People moved to temporary shelter",
-        "value": "16",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/costa-rica/2026/10/20/costa-rica-declara-alerta-verde-en-todo-el-territorio-nacional-por-fuertes-lluvias-mas-de-100-inundaciones-y-50-viviendas-afectadas/"
-      },
-      {
-        "label": "People attended by Red Cross",
-        "value": "40 people",
-        "sourceName": "nacion.com",
-        "sourceUrl": "https://www.nacion.com/sucesos/cruz-roja-costarricense-atendio-a-40-personas-por/V26LCQZVVZDMVOXVHZZDEEQRNQ/story/"
-      }
-    ],
+    "places": [],
+    "figures": [],
     "donation": [],
-    "sources": [
-      {
-        "name": "ticotimes.net",
-        "url": "https://ticotimes.net/2026/10/19/costa-rica-rain-alert-saturated-soils",
-        "title": "Saturated Soils Put All of Costa Rica on Rain Alert Through Wednesday"
-      },
-      {
-        "name": "monumental.co.cr",
-        "url": "https://www.monumental.co.cr/2026/10/19/cne-registro-mas-de-100-incidentes-por-fuertes-lluvias-durante-el-fin-de-semana/",
-        "title": "CNE registró más de 100 incidentes por fuertes lluvias durante el fin de semana - Monumental : Monumental"
-      },
-      {
-        "name": "teletica.com",
-        "url": "https://www.teletica.com/sucesos/video-casas-inundadas-y-puentes-colapsados-tras-fuertes-lluvias_419456",
-        "title": "Video: Casas inundadas y puentes colapsados tras fuertes lluvias"
-      }
-    ],
+    "sources": [],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104228": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -3142,7 +3051,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|TR#b0b8323f",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104231": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -3169,7 +3078,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|LY#afb830ac",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104232": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3196,7 +3105,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|JO#b2b83565",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104233": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3209,20 +3118,81 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SY#b1b833d2",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104235": {
-    "at": "2026-10-21T00:11:24.613Z",
+    "at": "2026-10-25T13:34:13.512Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "",
+    "searches": 1,
+    "summary": "Heavy rain caused flooding in eastern Spain from 17 October 2026, mainly in Valencia and Alicante provinces, with Catalonia and the Balearic Islands also affected. At least 4 deaths have been reported in news reports, not official counts. Rain eased by 20 October and restrictions were mostly lifted. A 21 October report said cleanup had begun. No reports after 21 October were found.",
     "ongoing": true,
-    "places": [],
-    "figures": [],
+    "places": [
+      {
+        "name": "Oliva",
+        "admin": "Valencia province",
+        "country": "ES",
+        "kind": "town",
+        "impact": "two deaths, including 79-year-old woman found at home"
+      },
+      {
+        "name": "Gandia",
+        "admin": "Valencia province",
+        "country": "ES",
+        "kind": "town",
+        "impact": "coastal neighborhoods flooded"
+      },
+      {
+        "name": "Els Poblets",
+        "admin": "Alicante province",
+        "country": "ES",
+        "kind": "town",
+        "impact": "cars and vans piled on top of one another"
+      },
+      {
+        "name": "Pego",
+        "admin": "Alicante province",
+        "country": "ES",
+        "kind": "town",
+        "impact": "632 mm of rain in 36 hours"
+      },
+      {
+        "name": "Cabrera de Mar",
+        "admin": "Barcelona province",
+        "country": "ES",
+        "kind": "town",
+        "impact": "resident swept away and died"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "at least 4",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/10/20/four-dead-as-torrential-rain-batters-eastern-spain"
+      },
+      {
+        "label": "Rescues",
+        "value": "more than 400 in the Valencia region",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/10/20/four-dead-as-torrential-rain-batters-eastern-spain"
+      },
+      {
+        "label": "Sheltering in place (latest)",
+        "value": "87,000 people in eight municipalities",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/10/20/four-dead-as-torrential-rain-batters-eastern-spain"
+      },
+      {
+        "label": "Evacuated",
+        "value": "2,141 people",
+        "sourceName": "internationalinvestment.biz",
+        "sourceUrl": "https://internationalinvestment.biz/en/tourism/8969-major-flooding-in-spain-thousands-evacuated-as-cities-are-flooded.html"
+      }
+    ],
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104236": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3271,7 +3241,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SV#aeb82f19",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104237": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3304,145 +3274,171 @@
       }
     ],
     "membersHash": "gdacs|NI#adb82d86",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104238": {
-    "at": "2026-10-21T00:11:24.613Z",
+    "at": "2026-10-25T13:34:13.512Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Rivers swollen by El Niño-linked rains were flooding parts of Argentina, Paraguay and Uruguay, according to an AP report dated 2026-10-16. GDACS lists the event as starting 2026-10-13 and rates it minor. The research notes found no Uruguay-specific reports and no status after 2026-10-16.",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-25T07:59:52.974Z"
-  },
-  "gdacs-flood-fl-1104239": {
-    "at": "2026-10-21T00:11:24.613Z",
-    "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Flooding affected parts of Penang, Perak, Pahang, Kedah and Selangor from about 14-15 Oct 2026, according to the sources found. Flood waters receded by 18 Oct and most relief centres closed that day, with two still open in Perak. The sources found report no deaths or injuries. The latest sources are dated 18 Oct, so later developments are not reported.",
+    "searches": 3,
+    "summary": "A flood on the Uruguay River in Uruguay's Litoral region began on 13 October 2026. The river reached 12.70 m at Salto port around 12 October, and 95 people were displaced in Paysandú as of 14 October. A 15 October report said the river was falling in Paysandú and displaced families had not yet begun returning. The notes do not confirm that the flood is over.",
     "ongoing": true,
     "places": [
       {
-        "name": "Bukit Mertajam",
-        "admin": "Penang",
-        "country": "MY",
-        "kind": "town",
-        "impact": "Eight houses flooded in Kampung Kubang Semang"
+        "name": "Salto",
+        "admin": "Salto department",
+        "country": "UY",
+        "kind": "city",
+        "impact": "Families evacuated; main streets closed"
       },
       {
-        "name": "Matang Gelugor",
-        "admin": "Penang",
-        "country": "MY",
-        "kind": "district",
-        "impact": "79 victims housed at SK Matang Gelugor"
-      },
-      {
-        "name": "Larut",
-        "admin": "Perak",
-        "country": "MY",
-        "kind": "district",
-        "impact": "Flooding affected Kampung Changkat Ibol and Kampung Batu 9"
-      },
-      {
-        "name": "Matang",
-        "admin": "Perak",
-        "country": "MY",
-        "kind": "district",
-        "impact": "Flooding and storm damage; evacuees housed"
-      },
-      {
-        "name": "Selama",
-        "admin": "Perak",
-        "country": "MY",
-        "kind": "district",
-        "impact": "Evacuees housed in relief centres"
-      },
-      {
-        "name": "Pahang",
-        "country": "MY",
-        "kind": "region",
-        "impact": "Relief centres closed 18 Oct"
-      },
-      {
-        "name": "Kedah",
-        "country": "MY",
-        "kind": "region",
-        "impact": "Relief centres closed 18 Oct"
-      },
-      {
-        "name": "Klang Valley",
-        "admin": "Selangor",
-        "country": "MY",
-        "kind": "region",
-        "impact": "Flash floods disrupted roads 17 Oct"
+        "name": "Paysandú",
+        "admin": "Paysandú department",
+        "country": "UY",
+        "kind": "city",
+        "impact": "Water above 6.30 m; residents displaced"
       }
     ],
     "figures": [
       {
-        "label": "Evacuees, Perak (18 Oct, 8am)",
-        "value": "407 victims from 147 families",
-        "sourceName": "bernama.com",
-        "sourceUrl": "https://www.bernama.com/en/general/news.php?id=2621963"
+        "label": "Displaced in Paysandú",
+        "value": "95 people",
+        "sourceName": "mediospublicos.uy",
+        "sourceUrl": "https://mediospublicos.uy/el-rio-uruguay-continua-descendiendo-en-paysandu/"
       },
       {
-        "label": "Evacuees, Penang (18 Oct, 8am)",
-        "value": "36 victims from 10 families",
-        "sourceName": "malaymail.com",
-        "sourceUrl": "https://www.malaymail.com/news/malaysia/2026/10/18/floods-worsen-in-perak-penang-as-evacuee-numbers-increase/239546"
-      },
-      {
-        "label": "Evacuated, Penang (17 Oct night)",
-        "value": "24 people from eight families",
-        "sourceName": "thestar.com.my",
-        "sourceUrl": "https://www.thestar.com.my/news/nation/2026/10/18/24-flood-victims-evacuated-to-sk-seri-penanti-relief-centre"
-      },
-      {
-        "label": "Houses flooded, Kubang Semang",
-        "value": "8 houses",
-        "sourceName": "thestar.com.my",
-        "sourceUrl": "https://www.thestar.com.my/news/nation/2026/10/18/24-flood-victims-evacuated-to-sk-seri-penanti-relief-centre"
-      },
-      {
-        "label": "Evacuees, Perak (18 Oct, evening)",
-        "value": "200 victims in the Matang area",
-        "sourceName": "freemalaysiatoday.com",
-        "sourceUrl": "https://www.freemalaysiatoday.com/category/nation/2026/10/18/flood-victims-in-four-states-go-home"
+        "label": "Families evacuated in Salto",
+        "value": "3 families",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/uruguay-river-flood-salto-evacuations-2026/"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "freemalaysiatoday.com",
-        "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/18/flood-victims-in-four-states-go-home",
-        "title": "Flood victims in four states go home"
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/uruguay-river-flood-salto-evacuations-2026/",
+        "title": "Uruguay River Flood Forces First Evacuations in Salto"
       },
       {
-        "name": "thestar.com.my",
-        "url": "https://www.thestar.com.my/news/nation/2026/10/18/24-flood-victims-evacuated-to-sk-seri-penanti-relief-centre",
-        "title": "24 flood victims evacuated to SK Seri Penanti relief centre"
+        "name": "prensa-latina.cu",
+        "url": "https://www.prensa-latina.cu/2026/10/12/autoridades-siguen-alertas-por-inundaciones-y-crecida-de-rio-uruguay/",
+        "title": "Autoridades siguen alertas por inundaciones y crecida de río Uruguay - Noticias Prensa Latina"
       },
       {
-        "name": "nst.com.my",
-        "url": "https://www.nst.com.my/amp/news/nation/2026/10/1558061/floods-worsen-perak-penang-evacuee-numbers-rise",
-        "title": "Floods worsen in Perak, Penang as evacuee numbers rise"
+        "name": "abcnews.com",
+        "url": "https://abcnews.com/International/wireStory/el-nio-rains-flood-south-america-sending-residents-137330862",
+        "title": "El Niño rains flood South America, sending residents fleeing and cattle swimming - ABC News"
       },
       {
-        "name": "bernama.com",
-        "url": "https://www.bernama.com/en/general/news.php?id=2621963",
-        "title": "BERNAMA - Floods Worsen In Perak, Penang As Evacuee Numbers Increase"
-      },
-      {
-        "name": "malaymail.com",
-        "url": "https://www.malaymail.com/news/malaysia/2026/10/17/from-usj-to-shah-alam-flash-floods-disrupt-klang-valley-roads-after-afternoon-downpour/239494",
-        "title": "From USJ to Shah Alam, flash floods disrupt Klang Valley roads after afternoon downpour"
+        "name": "ladiaria.com.uy",
+        "url": "https://ladiaria.com.uy/paysandu/articulo/2026/10/el-rio-uruguay-continuara-en-ascenso-y-la-proxima-semana-podria-superar-los-7-metros/",
+        "title": "El río Uruguay continuará en ascenso y la próxima semana podría superar los 7 metros"
       }
     ],
-    "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "membersHash": "gdacs|UY#b8b83ed7",
+    "seen": "2026-10-25T13:34:13.512Z"
+  },
+  "gdacs-flood-fl-1104239": {
+    "at": "2026-10-25T13:34:13.512Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Flash floods and landslides hit Penang, Malaysia, after overnight downpours on 25 October 2026. A landslide at Paya Terubong killed one person, a 73-year-old doctor. Authorities halted nearby construction and recommended that residents of unsafe homes relocate temporarily. The investigation remains open and no end date has been given.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Taman Seri Rambai",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "district",
+        "impact": "Landslide hit house; one person killed"
+      },
+      {
+        "name": "Taman Cantek",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "district",
+        "impact": "Flash floods; 20 homes affected"
+      },
+      {
+        "name": "Paya Terubong Paired Road",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "site",
+        "impact": "Knee-deep flooding; two vehicles stranded"
+      },
+      {
+        "name": "Jalan Jelawat",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "site",
+        "impact": "Flooded about 0.3 m"
+      },
+      {
+        "name": "Farlim",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "district",
+        "impact": "Minor landslide; sand and debris on road"
+      },
+      {
+        "name": "Bayan Lepas",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "town",
+        "impact": "Flash floods; no evacuations reported"
+      },
+      {
+        "name": "Bayan Baru",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "town",
+        "impact": "Flash floods; no evacuations reported"
+      },
+      {
+        "name": "Ampang Jajar",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "town",
+        "impact": "Flash floods; no evacuations reported"
+      },
+      {
+        "name": "Bukit Mertajam",
+        "admin": "Penang",
+        "country": "MY",
+        "kind": "town",
+        "impact": "Flash floods; no evacuations reported"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "malaymail.com",
+        "sourceUrl": "https://www.malaymail.com/news/malaysia/2026/10/25/one-dead-as-landslide-hits-paya-terubong-house-two-escape-says-penang-fire-dept/240517"
+      },
+      {
+        "label": "Escaped or safe",
+        "value": "two people",
+        "sourceName": "malaymail.com",
+        "sourceUrl": "https://www.malaymail.com/news/malaysia/2026/10/25/one-dead-as-landslide-hits-paya-terubong-house-two-escape-says-penang-fire-dept/240517"
+      },
+      {
+        "label": "Houses recommended to evacuate",
+        "value": "six nearby houses",
+        "sourceName": "malaymail.com",
+        "sourceUrl": "https://www.malaymail.com/news/malaysia/2026/10/25/mbpp-halts-condo-and-road-projects-near-fatal-paya-terubong-landslide-site-orders-fresh-environmental-study/240528"
+      },
+      {
+        "label": "Houses affected by flash floods",
+        "value": "20 homes",
+        "sourceName": "bernama.com",
+        "sourceUrl": "https://www.bernama.com/en/general/news.php?id=2625264"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs,news|MY#2abbfd71",
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -3517,7 +3513,7 @@
       }
     ],
     "membersHash": "gdacs|KR#a6a6d960",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104241": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -3648,7 +3644,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104242": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3700,7 +3696,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UA#a8a6dc86",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104243": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3809,7 +3805,7 @@
       }
     ],
     "membersHash": "gdacs|FR#a9a6de19",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104244": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3904,7 +3900,7 @@
       }
     ],
     "membersHash": "gdacs|GT#aaa6dfac",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -3948,7 +3944,7 @@
       }
     ],
     "membersHash": "gdacs|IT#fedc6d48",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -3988,7 +3984,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-volcano-vo-1000152": {
@@ -4058,7 +4054,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032497": {
@@ -4245,7 +4241,7 @@
       }
     ],
     "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032653": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -4258,7 +4254,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032657": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4382,7 +4378,7 @@
       }
     ],
     "membersHash": "gdacs|BR#efe30b15",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032663": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -4478,7 +4474,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4600,7 +4596,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -4613,7 +4609,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032726": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -4801,7 +4797,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -4814,7 +4810,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032810": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -4827,7 +4823,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -4840,7 +4836,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -4853,7 +4849,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032855": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -4866,7 +4862,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032857": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -4879,7 +4875,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032862": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -4892,7 +4888,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#cf60243f",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032873": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -4905,7 +4901,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZW#ce5de415",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032874": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4924,7 +4920,7 @@
       }
     ],
     "membersHash": "gdacs|AU#c75dd910",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032919": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -4937,7 +4933,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032920": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -4950,7 +4946,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032930": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4963,7 +4959,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#58cb0943",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032939": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -4976,7 +4972,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5fcb1448",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032940": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4995,7 +4991,7 @@
       }
     ],
     "membersHash": "gdacs|AU#5ecd514c",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032947": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5008,7 +5004,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SD,SS#5dcd4fb9",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032962": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -5027,7 +5023,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e8d2a7b8",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032970": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5040,7 +5036,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#f0d4f2e7",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1032994": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -5053,7 +5049,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#e0b24775",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033003": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5066,7 +5062,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#f6a62a57",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033007": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5158,7 +5154,7 @@
       }
     ],
     "membersHash": "gdacs|NA#f2a6240b",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033013": {
     "at": "2026-10-23T12:11:09.903Z",
@@ -5171,7 +5167,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#dea84326",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033018": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -5190,7 +5186,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e5a84e2b",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033021": {
     "at": "2026-10-23T12:11:09.903Z",
@@ -5209,7 +5205,7 @@
       }
     ],
     "membersHash": "gdacs|BW#6ca0d3eb",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033029": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -5222,7 +5218,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#64a0c753",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033047": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5235,7 +5231,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72afe7e7",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033060": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -5248,7 +5244,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#63ab531c",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033092": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5261,7 +5257,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ef94d631",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033134": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5274,7 +5270,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#603fae0a",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-wildfire-wf-1033140": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -5287,7 +5283,31 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#de33a871",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
+  },
+  "gdacs-wildfire-wf-1033161": {
+    "at": "2026-10-25T13:34:13.512Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "gdacs.org",
+        "url": "https://gdacs.org/Wildfires/report.aspx?eventtype=WF&eventid=1031528&episodeid=5",
+        "title": "Overall Green Forest fire in Mozambique from 25 Aug 2026 00:00 UTC to 04 Sep 2026 00:00 UTC"
+      },
+      {
+        "name": "rsoe-edis.org",
+        "url": "https://rsoe-edis.org/eventList/details/1150766/0",
+        "title": "Outdoor fire - Emergency and Disaster Information Service"
+      }
+    ],
+    "membersHash": "gdacs|MZ#4938ce10",
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "ifrc-cyclone-8034": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -5318,7 +5338,7 @@
       }
     ],
     "membersHash": "ifrc|DJ#49b6fd82",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-drought-7977": {
@@ -5332,7 +5352,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#49b906fb",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-earthquake-7990": {
@@ -5565,7 +5585,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
@@ -5684,7 +5704,7 @@
       }
     ],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-7993": {
@@ -5785,7 +5805,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CI#48a9fade",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7998": {
@@ -5891,7 +5911,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|LA#42a9f16c",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8011": {
@@ -5928,7 +5948,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|TJ#dab1d197",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
@@ -6076,7 +6096,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8014": {
@@ -6140,7 +6160,7 @@
       }
     ],
     "membersHash": "ifrc|KG#d5b1c9b8",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
@@ -6223,7 +6243,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8037": {
@@ -6252,7 +6272,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|IN#48b6fbef",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8045": {
@@ -6346,7 +6366,7 @@
       }
     ],
     "membersHash": "ifrc|SL#4aaa3322",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
@@ -6463,7 +6483,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8052": {
@@ -6544,7 +6564,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8057": {
@@ -6632,7 +6652,7 @@
       }
     ],
     "membersHash": "ifrc|PH#48a7f165",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8062": {
@@ -6709,7 +6729,7 @@
       }
     ],
     "membersHash": "ifrc|PA#d5af8b21",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8068": {
@@ -6790,7 +6810,7 @@
       }
     ],
     "membersHash": "ifrc|LR#cbaf7b63",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8073": {
@@ -6946,7 +6966,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8115": {
@@ -6988,7 +7008,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CG#68e1ca24",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
@@ -7002,7 +7022,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-landslide-8111": {
@@ -7099,7 +7119,7 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-storm-8101": {
@@ -7128,7 +7148,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|GW#60df7ef5",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-storm-8108": {
@@ -7271,7 +7291,7 @@
       }
     ],
     "membersHash": "ifrc|ZW#67df89fa",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-wildfire-8027": {
@@ -7304,7 +7324,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|DZ#48b93a86",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-wildfire-8038": {
@@ -7487,8 +7507,85 @@
       }
     ],
     "membersHash": "ifrc|TN#4db703ce",
-    "seen": "2026-10-25T07:59:52.974Z",
+    "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
+  },
+  "news-cyclone-cyclone-jp-0392fa86aa": {
+    "at": "2026-10-25T13:34:13.512Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Typhoon No. 30 (Champi) is ongoing in Japan as of 25 October 2026. The Japan Meteorological Agency expects it to become an extratropical low by the morning of 26 October, with heavy rain from fronts over western and eastern Japan through 26–27 October. Osaka City issued a level 3 heavy rain warning on 25 October, lifted by noon. Injuries were reported in Okinawa on 22 and 23 October.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Osaka City",
+        "admin": "Osaka Prefecture",
+        "country": "JP",
+        "kind": "city",
+        "impact": "Level 3 heavy rain warning issued, lifted by noon"
+      },
+      {
+        "name": "Miyako",
+        "admin": "Okinawa Prefecture",
+        "country": "JP",
+        "kind": "city",
+        "impact": "Woman in her 70s broke bone in parking lot fall"
+      },
+      {
+        "name": "Yonaguni",
+        "admin": "Okinawa Prefecture",
+        "country": "JP",
+        "kind": "town",
+        "impact": "Girl hurt by window broken by wind"
+      },
+      {
+        "name": "Sakishima Islands",
+        "admin": "Okinawa Prefecture",
+        "country": "JP",
+        "kind": "region",
+        "impact": "Extremely rough seas, waves over 10 meters"
+      },
+      {
+        "name": "Osaka Prefecture",
+        "country": "JP",
+        "kind": "region",
+        "impact": "Warning-level rain forecast for 26 October"
+      },
+      {
+        "name": "Tsushima",
+        "admin": "Nagasaki Prefecture",
+        "country": "JP",
+        "kind": "region",
+        "impact": "Forecast 200 to 300 millimeters of rain"
+      },
+      {
+        "name": "Kyushu",
+        "country": "JP",
+        "kind": "region",
+        "impact": "Typhoon expected to approach or land around 26 October"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "newsonjapan.com",
+        "url": "https://newsonjapan.com/article/151122.php",
+        "title": "Rare Typhoon No. 31 Strengthens as Japan Records 31st Storm in 13 Years"
+      },
+      {
+        "name": "news.yahoo.co.jp",
+        "url": "https://news.yahoo.co.jp/articles/aac2fdc6f9b1804bdfe4f1e95834d457b4310de6",
+        "title": "【台風30号】大阪市に一時レベル3大雨警報、浸水害に警戒を（京都新聞） - Yahoo!ニュース"
+      },
+      {
+        "name": "newsonjapan.com",
+        "url": "https://newsonjapan.com/article/151059.php",
+        "title": "Typhoon No. 30 Unleashes 10-Meter Waves as Heavy Rain Spreads Across Japan"
+      }
+    ],
+    "membersHash": "news|JP#3946c72e",
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "news-cyclone-cyclone-jp-916fe53458": {
     "at": "2026-10-24T01:08:28.829Z",
@@ -8029,6 +8126,49 @@
     "membersHash": "news|CN#76761631",
     "seen": "2026-10-24T01:08:28.829Z"
   },
+  "news-earthquake-earthquake-cn-c9b854bd15": {
+    "at": "2026-10-25T13:34:13.512Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "",
+    "ongoing": false,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "news.cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-10-24/Rescue-efforts-continue-after-M7-0-quake-in-China-s-Xizang-1RvsqW44L3G/p.html",
+        "title": "Rescue efforts continue after M7.0 quake in China's Xizang - CGTN"
+      },
+      {
+        "name": "china.org.cn",
+        "url": "http://www.china.org.cn/2026-10/25/content_118748300.shtml",
+        "title": "Rescue efforts continue after 7.0-magnitude quake in China's Xizang - China.org.cn"
+      },
+      {
+        "name": "news.sbs.co.kr",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008811829",
+        "title": "16 Dead, 413 Aftershocks Recorded After Magnitude 7.0 Earthquake Hits Tibet"
+      },
+      {
+        "name": "watchers.news",
+        "url": "https://watchers.news/2026/10/23/m7-0-earthquake-kills-at-least-16-injures-76-in-xizang-china/",
+        "title": "M7.0 earthquake kills at least 16, injures 76 in Xizang, China - The Watchers"
+      },
+      {
+        "name": "chinadaily.com.cn",
+        "url": "https://www.chinadaily.com.cn/a/202610/24/WS6adc9a54e4b06d4aa05649ce.html",
+        "title": "Rescue and relief efforts underway after quake kills 16, injures 76 in Xizang - Chinadaily.com.cn"
+      },
+      {
+        "name": "chinadaily.com.cn",
+        "url": "https://www.chinadaily.com.cn/a/202610/25/WS6add3aa5e4b06d4aa0564a13.html",
+        "title": "Rescue efforts continue after 7.0-magnitude quake in Xizang - Chinadaily.com.cn"
+      }
+    ],
+    "membersHash": "news|CN#0bc7aa7f"
+  },
   "news-earthquake-earthquake-jp-1838d1f63b": {
     "at": "2026-10-25T07:59:52.974Z",
     "model": "claude-haiku-5-5",
@@ -8420,6 +8560,99 @@
     ],
     "membersHash": "news|AU#66a4c892",
     "seen": "2026-10-25T07:59:52.974Z"
+  },
+  "news-flood-flood-co-a7b3e7fad4": {
+    "at": "2026-10-25T13:34:13.512Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Heavy rain and floods hit the Colombian Caribbean coast on 24-25 October 2026, affecting Santa Marta, Cartagena, Barranquilla, Montería and Tolú. Santa Marta's government declared a red alert, streets flooded and vehicles were swept away. A storm cut water to about 15% of Cartagena users. No deaths have been confirmed and no full damage count has been published. Rain eased in some areas, but new rainfall is forecast.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Santa Marta",
+        "admin": "Magdalena",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Red alert declared; streets flooded, vehicles swept away"
+      },
+      {
+        "name": "Cartagena",
+        "admin": "Bolívar",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Roads flooded; water entered homes; water service cut"
+      },
+      {
+        "name": "Barranquilla",
+        "admin": "Atlántico",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Water entered homes; five vehicles rescued from streams"
+      },
+      {
+        "name": "Montería",
+        "admin": "Córdoba",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Affected by heavy rain; road restrictions"
+      },
+      {
+        "name": "Tolú",
+        "admin": "Sucre",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Affected by heavy rain"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Cartagena water service cut",
+        "value": "about 15% of users",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/colombia-caribbean-floods-santa-marta-alert-2026/"
+      },
+      {
+        "label": "Vehicles rescued in Barranquilla",
+        "value": "five",
+        "sourceName": "semana.com",
+        "sourceUrl": "https://www.semana.com/nacion/articulo/lluvias-provocan-inundaciones-en-cartagena-barranquilla-y-santa-marta-reportan-rescates-y-vehiculos-arrastrados-por-corrientes-de-agua/202637/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "eltiempo.com",
+        "url": "https://www.eltiempo.com/colombia/otras-ciudades/alcaldia-de-santa-marta-declara-alerta-roja-por-inundaciones-y-riesgo-de-crecientes-subitas-en-dos-rios-estas-son-las-recomendaciones-del-ideam-3596073",
+        "title": "Emergencias por lluvias en el Caribe: primeros balances de inundaciones y desbordamientos en varias ciudades; se esperan más precipitaciones - El Tiempo"
+      },
+      {
+        "name": "eluniversal.com.co",
+        "url": "https://www.eluniversal.com.co/regional/2026/10/24/el-balance-de-afectaciones-en-el-caribe-colombiano-por-las-fuertes-lluvias/",
+        "title": "El balance de afectaciones en el Caribe colombiano por las fuertes lluvias"
+      },
+      {
+        "name": "infobae.com",
+        "url": "https://www.infobae.com/colombia/2026/10/24/fuertes-lluvias-en-colombia-encienden-las-alarmas-santa-marta-esta-en-alerta-roja-y-se-registran-inundaciones-en-barranquilla-y-cartagena/",
+        "title": "Fuertes lluvias en Colombia encienden las alarmas: Santa Marta está en alerta roja y se registran inundaciones en Barranquilla y Cartagena - Infobae"
+      },
+      {
+        "name": "semana.com",
+        "url": "https://www.semana.com/nacion/articulo/lluvias-provocan-inundaciones-en-cartagena-barranquilla-y-santa-marta-reportan-rescates-y-vehiculos-arrastrados-por-corrientes-de-agua/202637/",
+        "title": "Lluvias provocan inundaciones en Cartagena, Barranquilla y Santa Marta: reportan rescates y vehículos arrastrados por corrientes de agua - Semana"
+      },
+      {
+        "name": "eldiario.net",
+        "url": "https://www.eldiario.net/portal/2026/10/25/lluvias-causan-inundaciones-en-cartagena-y-barranquilla/",
+        "title": "Lluvias causan inundaciones en Cartagena y Barranquilla - El Diario - Bolivia"
+      },
+      {
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/colombia-caribbean-floods-santa-marta-alert-2026/",
+        "title": "Santa Marta Red Alert as Colombia Caribbean Floods Hit"
+      }
+    ],
+    "membersHash": "news|CO#78604202",
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "news-flood-flood-hr-878923ace2": {
     "at": "2026-10-22T08:03:09.184Z",
@@ -9129,6 +9362,26 @@
     "membersHash": "news|FR#bed61fbe",
     "seen": "2026-10-23T12:11:09.903Z"
   },
+  "news-storm-storm-gb-0274bd1c75": {
+    "at": "2026-10-25T13:34:13.512Z",
+    "model": "claude-haiku-5-5",
+    "searches": 1,
+    "summary": "Storm Boelo hit the United Kingdom from 25 October 2026. At 08:00 GMT that day, more than 80,000 customers in England, Wales and Scotland were without power, per a BBC report. Amber wind warnings remain in place across parts of Scotland and northern England. Ongoing as of 25 October 2026; later status could not be confirmed.",
+    "ongoing": true,
+    "places": [],
+    "figures": [
+      {
+        "label": "Power cuts",
+        "value": "more than 80,000 customers",
+        "sourceName": "yahoo.com",
+        "sourceUrl": "https://www.yahoo.com/news/weather-news/articles/storm-boelo-brings-floods-travel-105108160.html"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "news|GB#e3ccba2f",
+    "seen": "2026-10-25T13:34:13.512Z"
+  },
   "news-storm-storm-gb-e76095cf6e": {
     "at": "2026-10-23T17:38:11.860Z",
     "model": "claude-haiku-5-5",
@@ -9357,6 +9610,122 @@
     "membersHash": "news|IE#30454b26",
     "seen": "2026-10-21T14:45:27.681Z"
   },
+  "news-storm-storm-nl-927e01479d": {
+    "at": "2026-10-25T13:34:13.512Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Storm Boelo, the first autumn storm of 2026, crossed the Netherlands on 25 October 2026 with strong gusts. Reported impacts include trees falling onto cars, roads and railway lines, and at least 90 flights cancelled at Schiphol. KNMI yellow warnings applied to part of the country. As of 13:53 UTC on 25 October, the storm was still ongoing, and no end-of-event report had been found.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Amsterdam",
+        "admin": "North Holland",
+        "country": "NL",
+        "kind": "city",
+        "impact": "Tree fell onto moving car in Amsterdam-Noord"
+      },
+      {
+        "name": "Schiphol airport",
+        "admin": "North Holland",
+        "country": "NL",
+        "kind": "site",
+        "impact": "At least 90 flights cancelled"
+      },
+      {
+        "name": "Nijmegen",
+        "admin": "Gelderland",
+        "country": "NL",
+        "kind": "city",
+        "impact": "Toppled trees crushed parked cars"
+      },
+      {
+        "name": "Culemborg",
+        "admin": "Gelderland",
+        "country": "NL",
+        "kind": "town",
+        "impact": "Toppled trees crushed parked cars"
+      },
+      {
+        "name": "Lochem",
+        "admin": "Gelderland",
+        "country": "NL",
+        "kind": "town",
+        "impact": "Tree fell onto railway; trains stopped"
+      },
+      {
+        "name": "Goor",
+        "admin": "Overijssel",
+        "country": "NL",
+        "kind": "town",
+        "impact": "Tree fell onto railway; trains stopped"
+      },
+      {
+        "name": "IJmuiden",
+        "admin": "North Holland",
+        "country": "NL",
+        "kind": "town",
+        "impact": "Gusts of 115 km/h measured"
+      },
+      {
+        "name": "Alphen aan den Rijn",
+        "admin": "South Holland",
+        "country": "NL",
+        "kind": "town",
+        "impact": "Fallen tree on N207; fire brigade attended"
+      },
+      {
+        "name": "Oosteind",
+        "admin": "North Brabant",
+        "country": "NL",
+        "kind": "town",
+        "impact": "Fire brigade called to storm damage on Provincialeweg"
+      },
+      {
+        "name": "Vlieland",
+        "country": "NL",
+        "kind": "town",
+        "impact": "Hourly mean wind force 9 reached"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Flights cancelled",
+        "value": "at least 90 flights",
+        "sourceName": "albeu.com",
+        "sourceUrl": "https://albeu.com/english/storm-boelo-disrupts-traffic-at-schiphol-around-90-flights-canceled/1072833/"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "stadindex.nl",
+        "url": "https://www.stadindex.nl/nederland/3619267-boelo-is-de-eerste-officiele-storm-van-dit-jaar-in-nederland",
+        "title": "Weeronline: Boelo is officieel eerste herfststorm van 2026"
+      },
+      {
+        "name": "bnr.nl",
+        "url": "https://bnr.nl/nieuws/nieuws-politiek/10614238/overlast-door-storm-boelo-knmi-verwacht-vandaag-opnieuw-hinder",
+        "title": "Bnr"
+      },
+      {
+        "name": "nhnieuws.nl",
+        "url": "https://www.nhnieuws.nl/nieuws/364717/storm-boelo-komt-eraan-vanavond-kans-op-zuiderstorm-op-texel",
+        "title": "Storm Boelo komt eraan: vanavond kans op zuiderstorm op Texel"
+      },
+      {
+        "name": "weeronline.nl",
+        "url": "https://www.weeronline.nl/nieuws/25-10-2026-boelo-is-eerste-storm-van-2026",
+        "title": "Boelo is eerste herfststorm - eerste storm 2026"
+      },
+      {
+        "name": "archynewsy.com",
+        "url": "https://www.archynewsy.com/storm-boelo-causes-damage-and-disruptions-across-the-netherlands/",
+        "title": "Storm Boelo Causes Damage and Disruptions Across the Netherlands - Archynewsy"
+      }
+    ],
+    "membersHash": "news|NL#1751978d",
+    "seen": "2026-10-25T13:34:13.512Z"
+  },
   "news-storm-storm-nl-928fdf3a3c": {
     "at": "2026-10-23T17:38:11.860Z",
     "model": "claude-haiku-5-5",
@@ -9559,7 +9928,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#d176ea77",
-    "seen": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T13:34:13.512Z"
   },
   "usgs-earthquake-us6000u4kq": {
     "at": "2026-10-24T07:44:33.939Z",
