@@ -119,6 +119,13 @@ export const DIRECT_SEARCH_SETTINGS: { maxSearches: number; maxTokens: number; e
 };
 /** Pages kept from one direct search. */
 export const MAX_DIRECT_PAGES = 8;
+/**
+ * The direct search's version, raised when its prompt changes enough that
+ * entries searched before should be searched again (see directSearchDue).
+ * 2: five searches, event-specific queries in the countries' languages,
+ * and charities' appeal pages.
+ */
+export const DIRECT_SEARCH_VERSION = 2;
 
 const PLACE_KINDS = ["city", "town", "district", "region", "site"] as const satisfies readonly PlaceKind[];
 const DONATION_KINDS = ["society", "government", "un", "agency"] as const;
@@ -222,6 +229,8 @@ export interface ResearchEntry {
    * pages in direct until a new search works.
    */
   directSearched?: string;
+  /** DIRECT_SEARCH_VERSION of that search; missing for searches before version 2. */
+  directSearchVersion?: number;
   /** The direct search's pages: GlobalGiving projects and local groups' pages. Missing when there are none. */
   direct?: DirectPage[];
   /** GoFundMe crisis pages (https://www.gofundme.com/c/act/<slug>) any of this entry's searches returned. Missing when there are none. */
@@ -1428,12 +1437,20 @@ export async function searchDirectPages(ai: AiClient, disaster: Disaster, ctx: D
 }
 
 /**
+ * Whether an entry still needs a direct search: none has run for it, or
+ * the last one ran under an older DIRECT_SEARCH_VERSION.
+ */
+export function directSearchDue(entry: Pick<ResearchEntry, "directSearched" | "directSearchVersion">): boolean {
+  return !entry.directSearched || (entry.directSearchVersion ?? 1) < DIRECT_SEARCH_VERSION;
+}
+
+/**
  * The entry with a direct search's result: its pages replace the ones
  * before (none are kept when it found none), its crisis pages join the
  * entry's, and the time of the search is recorded.
  */
 export function withDirectSearch(entry: ResearchEntry, found: DirectSearchResult, now: string): ResearchEntry {
-  const out: ResearchEntry = { ...entry, directSearched: now };
+  const out: ResearchEntry = { ...entry, directSearched: now, directSearchVersion: DIRECT_SEARCH_VERSION };
   if (found.pages.length > 0) out.direct = found.pages;
   else delete out.direct;
   const hubs = mergeHubs(entry.hubs, found.hubs);
@@ -1496,6 +1513,7 @@ export function normaliseEntry(raw: unknown): ResearchEntry | null {
     ...(isTime(raw.donationSearched) ? { donationSearched: raw.donationSearched } : {}),
     ...(earlierSearch.length > 0 ? { earlierSearch } : {}),
     ...(isTime(raw.directSearched) ? { directSearched: raw.directSearched } : {}),
+    ...(Number.isInteger(raw.directSearchVersion) && (raw.directSearchVersion as number) > 0 ? { directSearchVersion: raw.directSearchVersion as number } : {}),
     ...(direct.length > 0 ? { direct } : {}),
     ...(hubs.length > 0 ? { hubs } : {}),
   };

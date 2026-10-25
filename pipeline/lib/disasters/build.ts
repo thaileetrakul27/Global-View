@@ -53,6 +53,7 @@ import { extractNewsEvents, mentionsDisaster, type NewsArticle } from "./news";
 import {
   MAX_DONATION_BACKFILL,
   RESEARCH_CACHE_PATH,
+  directSearchDue,
   entryDonations,
   pruneResearchCache,
   readResearchCache,
@@ -592,7 +593,7 @@ async function runResearch(
   // the safe side.
   const onMap = disasters.filter((d) => !researchSaysOver(d, cache[d.id], now));
   const needsDonation = (id: string, e: ResearchEntry) => !handled.has(id) && !e.donationSearched && !attempts[donationAttemptKey(id)];
-  const needsDirect = (id: string, e: ResearchEntry) => !handled.has(id) && !e.directSearched && !attempts[directAttemptKey(id)];
+  const needsDirect = (id: string, e: ResearchEntry) => !handled.has(id) && directSearchDue(e) && !attempts[directAttemptKey(id)];
   const backfill = stopped ? [] : selectBackfill(onMap, cache, (id, e) => needsDonation(id, e) || needsDirect(id, e), Math.min(MAX_DONATION_BACKFILL, budget.maxResearchPerRun));
   if (backfill.length > 0) log(`Research: donation or direct search for ${backfill.length} disasters researched earlier`);
   for (const d of backfill) {

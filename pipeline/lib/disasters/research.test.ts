@@ -23,6 +23,8 @@ import {
   validDirectPages,
   pageAgeDate,
   withDirectSearch,
+  directSearchDue,
+  DIRECT_SEARCH_VERSION,
   type DirectPage,
   type DirectSearchParse,
   KEEP_DAYS,
@@ -1814,6 +1816,7 @@ describe("withDirectSearch", () => {
     expect(out.direct).toEqual([page]);
     expect(out.hubs).toEqual(["https://www.gofundme.com/c/act/older", HUB]);
     expect(out.directSearched).toBe(NOW);
+    expect(out.directSearchVersion).toBe(DIRECT_SEARCH_VERSION);
     expect(before.directSearched).toBeUndefined();
   });
 
@@ -1822,6 +1825,25 @@ describe("withDirectSearch", () => {
     expect(out).not.toHaveProperty("direct");
     expect(out).not.toHaveProperty("hubs");
     expect(out.directSearched).toBe(NOW);
+  });
+});
+
+describe("directSearchDue", () => {
+  it("is due until a search under the current version has run", () => {
+    expect(directSearchDue({})).toBe(true);
+    // Searched under version 1, before the version was recorded.
+    expect(directSearchDue({ directSearched: NOW })).toBe(true);
+    expect(directSearchDue({ directSearched: NOW, directSearchVersion: DIRECT_SEARCH_VERSION - 1 })).toBe(true);
+    expect(directSearchDue({ directSearched: NOW, directSearchVersion: DIRECT_SEARCH_VERSION })).toBe(false);
+  });
+
+  it("reads the version back from the cache, and nothing else as one", () => {
+    const d = disaster();
+    const kept = normaliseEntry(JSON.parse(JSON.stringify(withDirectSearch(entry(d), { pages: [], hubs: [] }, NOW))));
+    expect(kept?.directSearchVersion).toBe(DIRECT_SEARCH_VERSION);
+    for (const bad of [0, -1, 1.5, "2", null]) {
+      expect(normaliseEntry({ ...JSON.parse(JSON.stringify(entry(d))), directSearched: NOW, directSearchVersion: bad })).not.toHaveProperty("directSearchVersion");
+    }
   });
 });
 
