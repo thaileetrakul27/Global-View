@@ -29,6 +29,7 @@ import {
   isApart,
   isOngoing,
   matchScore,
+  memberSeverity,
   mergeAppeals,
   mergeEvents,
   mergeFigures,
@@ -242,6 +243,36 @@ const assamIfrcFlood = ev({
   started: "2026-09-25T00:00:00Z",
   updated: "2026-10-15T00:00:00Z",
   places: [{ name: "Dhemaji", country: "IN", lat: 27.48, lng: 94.58, kind: "district", source: "ifrc" }],
+});
+// The deep M6.5 quake under the Bonin Islands of 25 October 2026, which GDACS rates green, and
+// the news report six outlets carried ("officials say no tsunami"), placed at Ogasawara village
+// and rated 2 for its outlets alone by an earlier rule; its headlines report no deaths.
+const ogasawaraGdacs = ev({
+  source: "gdacs",
+  sourceId: "EQ-1573709",
+  type: "earthquake",
+  title: "Earthquake in Bonin Islands, Japan Region",
+  severity: 1,
+  severityText: "Magnitude 6.5, depth 492 km",
+  countries: ["JP"],
+  lat: 27.7953,
+  lng: 139.6184,
+  started: "2026-10-25T02:09:23Z",
+  updated: "2026-10-25T02:31:43Z",
+  links: [{ name: "GDACS report", url: "https://www.gdacs.org/report.aspx?eventid=1573709&episodeid=1742505&eventtype=EQ" }],
+});
+const ogasawaraNews = ev({
+  source: "news",
+  sourceId: "earthquake-JP-1838d1f63b",
+  type: "earthquake",
+  title: "Magnitude 7.0 earthquake near Ogasawara Islands, Japan",
+  severity: 2,
+  countries: ["JP"],
+  lat: 27.0943,
+  lng: 142.1918,
+  precision: "area",
+  started: "2026-10-25T02:35:00Z",
+  updated: "2026-10-25T05:59:51Z",
 });
 
 /** Clusters as sorted member-key lists, for comparing groupings. */
@@ -561,6 +592,20 @@ describe("clusterEvents", () => {
 // Building a disaster
 // ---------------------------------------------------------------------------
 
+describe("memberSeverity", () => {
+  it("counts a feed's report at its own rating and a news report only by the deaths its headlines report", () => {
+    expect(memberSeverity(ogasawaraGdacs)).toBe(1);
+    expect(memberSeverity(panamaUsgs)).toBe(3);
+    // Rated 2 by an earlier rule for its outlets; no toll, so minor.
+    expect(memberSeverity(ogasawaraNews)).toBe(1);
+    expect(memberSeverity({ ...ogasawaraNews, deaths: 5 })).toBe(2);
+    expect(memberSeverity({ ...ogasawaraNews, severity: 1, deaths: 100 })).toBe(3);
+    // A toll from a hand-edited or broken snapshot counts as none.
+    expect(memberSeverity({ ...ogasawaraNews, deaths: -40 })).toBe(1);
+    expect(memberSeverity({ ...ogasawaraNews, deaths: "40" as unknown as number })).toBe(1);
+  });
+});
+
 describe("buildDisaster", () => {
   it("combines USGS and GDACS reports of one quake", () => {
     const d = buildDisaster([panamaUsgs, panamaGdacs]);
@@ -625,6 +670,19 @@ describe("buildDisaster", () => {
     expect(d.severityText).toBe(panamaUsgs.severityText);
     const none = buildDisaster([{ ...panamaGdacs, severity: 3, severityText: undefined }, { ...panamaUsgs, severity: 1 }]);
     expect(none).not.toHaveProperty("severityText");
+  });
+
+  it("lets a news report raise a feed's rating only by the deaths its headlines report", () => {
+    // Six outlets carried the Ogasawara quake GDACS rates green; the news report was rated 2 for that alone.
+    expect(buildDisaster([ogasawaraGdacs, ogasawaraNews]).severity).toBe(1);
+    expect(buildDisaster([ogasawaraGdacs, ogasawaraNews]).severityText).toBe(ogasawaraGdacs.severityText);
+    expect(buildDisaster([ogasawaraGdacs, { ...ogasawaraNews, deaths: 4 }]).severity).toBe(1);
+    expect(buildDisaster([ogasawaraGdacs, { ...ogasawaraNews, deaths: 12 }]).severity).toBe(2);
+    expect(buildDisaster([ogasawaraGdacs, { ...ogasawaraNews, deaths: 150 }]).severity).toBe(3);
+    // A news report never lowers a feed's rating, and alone it is rated by its toll too.
+    expect(buildDisaster([{ ...ogasawaraGdacs, severity: 3 }, { ...ogasawaraNews, deaths: 0 }]).severity).toBe(3);
+    expect(buildDisaster([ogasawaraNews]).severity).toBe(1);
+    expect(buildDisaster([{ ...ogasawaraNews, deaths: 12 }]).severity).toBe(2);
   });
 
   it("dedupes places by name and country, figures by label (IFRC first) and links by URL", () => {
@@ -964,10 +1022,18 @@ describe("mergeEvents", () => {
     expect(mergeEvents([], null, NOW)).toEqual([]);
   });
 
+  it("keeps a widely carried quake GDACS rates minor at GDACS's rating (Ogasawara, 25 October 2026)", () => {
+    const at = "2026-10-25T08:00:00Z";
+    const [d] = mergeEvents([ogasawaraGdacs, ogasawaraNews], null, at);
+    expect(d.members).toEqual(["gdacs:EQ-1573709", "news:earthquake-JP-1838d1f63b"]);
+    expect(d.severity).toBe(1);
+    expect(mergeEvents([ogasawaraGdacs, { ...ogasawaraNews, deaths: 12 }], null, at)[0].severity).toBe(2);
+  });
+
   it("keeps a heatwave on the map inside a months-long drought that covers its country (regression)", () => {
     // GDACS DR-1018332 "Drought in Europe": 2025-12-21 to now, over twenty countries.
     const europe = ev({ source: "gdacs", sourceId: "DR-1018332", type: "drought", title: "Drought in Europe", severity: 2, countries: ["AT", "BA", "BE", "ES", "FR", "IT"], lat: 48.76, lng: 13.7, precision: "area", started: "2025-12-21T00:00:00Z", updated: daysAgo(0.5), glide: "DR-2025-000239-ALB" });
-    const heat = ev({ source: "news", sourceId: "heatwave-es-1", type: "heatwave", title: "Heatwave in Spain", severity: 2, countries: ["ES"], lat: 40.4, lng: -3.7, precision: "area", started: daysAgo(3), updated: daysAgo(0.2) });
+    const heat = ev({ source: "news", sourceId: "heatwave-es-1", type: "heatwave", title: "Heatwave in Spain", severity: 2, deaths: 12, countries: ["ES"], lat: 40.4, lng: -3.7, precision: "area", started: daysAgo(3), updated: daysAgo(0.2) });
     expect(FAMILY_OF.heatwave).not.toBe(FAMILY_OF.drought);
     const out = mergeEvents([europe, heat], null, NOW);
     expect(out.map((d) => [d.type, d.title])).toEqual([

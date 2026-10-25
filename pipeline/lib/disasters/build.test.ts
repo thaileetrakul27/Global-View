@@ -37,7 +37,7 @@ import {
 import { GOFUNDME_FEED, GOFUNDME_INDEX, hubSlugOf, localVerdictKey, parseFeed, parseHub, type GoFundMeCache } from "./direct";
 import { emptyRegistry, searchDomains, urlKey, type DonationRegistry } from "./donate";
 import { LAND_SHAPES_PATH, circlePolygon, dropSeaParts, loadCountryShapes, pointInGeometry } from "./geo";
-import type { GeoHit, Geocoder } from "./geocode";
+import { geocodeKey, type GeoHit, type Geocoder } from "./geocode";
 import {
   MAX_DONATION_BACKFILL,
   directSearchSchema,
@@ -541,8 +541,58 @@ describe("updateDisasters", () => {
     expect(snapshot.ifrc?.events.map((e) => e.sourceId)).toEqual(["8013", "8014"]);
   });
 
+  it("keeps a widely carried quake with no reported deaths at GDACS's minor rating, off the map (Ogasawara, 25 October 2026)", async () => {
+    const at = "2026-10-25T08:00:00.000Z";
+    // GDACS rates the M6.5 quake 492 km under the Bonin Islands green.
+    const gdacs: SourceEvent = {
+      source: "gdacs",
+      sourceId: "EQ-1573709",
+      type: "earthquake",
+      title: "Earthquake in Bonin Islands, Japan Region",
+      severity: 1,
+      severityText: "Magnitude 6.5, depth 492 km",
+      countries: ["JP"],
+      lat: 27.7953,
+      lng: 139.6184,
+      precision: "exact",
+      started: "2026-10-25T02:09:23.000Z",
+      updated: "2026-10-25T02:31:43.000Z",
+      areas: [],
+      links: [{ name: "GDACS report", url: "https://www.gdacs.org/report.aspx?eventid=1573709&eventtype=EQ" }],
+    };
+    // Six outlets carry it; none reports a death.
+    const articles = ["Kyodo", "NHK World", "Milliyet", "Qatar News Agency", "Yonhap", "Reuters"].map((outlet, i) => ({
+      country: "JP",
+      title: `Magnitude 7.0 earthquake near Ogasawara Islands; officials say no tsunami (${i})`,
+      outlet,
+      url: `https://x.example/ogasawara/${i}`,
+      published: "2026-10-25T03:00:00.000Z",
+    }));
+    const ogasawara: GeoHit = { name: "Ogasawara", displayName: "Ogasawara, Tokyo, Japan", admin: "Tokyo", lat: 27.0943, lng: 142.1918, kind: "town", country: "JP", bbox: [142.1, 27.0, 142.3, 27.2] };
+    /** A run whose model reads this toll from the headlines. */
+    const runFor = (deaths: number | null) => {
+      const dirs = folders({ snapshot: { gdacs: { fetched: at, events: [gdacs] } } });
+      fs.writeFileSync(path.join(dirs.cacheDir, "geocode.json"), JSON.stringify({ [geocodeKey("JP", "Ogasawara", "Tokyo", "town")]: { hit: ogasawara, at } }));
+      const event = { type: "earthquake", title: "Earthquake near the Ogasawara Islands", country: "JP", countryName: "Japan", places: [{ name: "Ogasawara", admin: "Tokyo", kind: "town", impact: "" }], headlineIds: [0, 1, 2, 3, 4, 5], ongoing: true, deaths };
+      const ai = { calls: 0, webResearch: vi.fn(async () => null), parse: vi.fn(async () => ({ events: [event] })) };
+      const run = runWith(dirs, { now: at, ai: ai as unknown as AiClient, articles, globeCodes: new Set(["JP"]), countryNames: { JP: "Japan" } });
+      return { run, ai, dirs };
+    };
+
+    const quiet = runFor(null);
+    expect((await updateDisasters(quiet.run)).disasters).toEqual([]);
+    // Minor, so neither published nor researched; its report waits in the snapshot in case a toll comes.
+    expect(quiet.ai.webResearch).not.toHaveBeenCalled();
+    const snapshot = JSON.parse(fs.readFileSync(path.join(quiet.dirs.cacheDir, "disaster-sources.json"), "utf8")) as Snapshots;
+    expect(snapshot.news?.events.map((e) => [e.severity, e.deaths, e.precision])).toEqual([[1, undefined, "area"]]);
+
+    const deadly = runFor(12);
+    const [d] = (await updateDisasters(deadly.run)).disasters;
+    expect([d.severity, d.members]).toEqual([2, ["gdacs:EQ-1573709", `news:${snapshot.news?.events[0].sourceId}`]]);
+  });
+
   /** A direct search that worked and found nothing. */
-  const NO_DIRECT = { research: { text: "Direct pages: none found", citations: [], results: [], searches: 1, okSearches: 1 }, parsed: { pages: [] } };
+  const NO_DIRECT ={ research: { text: "Direct pages: none found", citations: [], results: [], searches: 1, okSearches: 1 }, parsed: { pages: [] } };
 
   /** True for the direct search's call: its own system prompt, on the whole web. */
   const isDirect = (opts: WebResearchOptions) => opts.system.startsWith(directSearchSystemPrompt(NOW).split("\n")[0]);

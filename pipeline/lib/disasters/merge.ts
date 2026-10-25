@@ -8,7 +8,10 @@
 //    two located reports that are clearly far apart.
 // 2. buildDisaster turns one group into a Disaster: the most exact report
 //    (then the feed priority) leads; severity, countries, areas, places,
-//    figures, links and appeals are combined.
+//    figures, links and appeals are combined. The severity is the highest
+//    report's, and a news report counts only by the deaths its headlines
+//    report (memberSeverity), so a widely carried story never raises a
+//    feed's rating on its own.
 // 3. assignIds keeps ids stable: a group that shares a member with a disaster
 //    from the previous run keeps that disaster's id.
 // 4. isOngoing drops disasters not updated within their type's window
@@ -20,8 +23,9 @@
 // and research is unset. Every function here is pure; times come in as `now`.
 import { normaliseName } from "../resolve";
 import { bboxOf, haversineKm, pointInGeometry } from "./geo";
+import { newsSeverity } from "./news";
 import { SOURCE_PRIORITY, memberKey } from "./types";
-import type { AppealRef, Area, Disaster, DisasterType, Figure, Place, Precision, SourceEvent, SourceName, SourceRef, Track } from "./types";
+import type { AppealRef, Area, Disaster, DisasterType, Figure, Place, Precision, Severity, SourceEvent, SourceName, SourceRef, Track } from "./types";
 
 // ---------------------------------------------------------------------------
 // Rules
@@ -184,6 +188,18 @@ function ms(iso: string | undefined): number {
   return iso ? Date.parse(iso) : NaN;
 }
 
+/**
+ * A report's say in its disaster's severity. A feed's report counts at its
+ * own rating. A news report counts only by the deaths its headlines report
+ * (news.ts newsSeverity), whatever rating it carries: how many outlets carry
+ * a story says nothing of the harm done, so a widely carried quake that
+ * GDACS rates minor stays minor, and a news report saved under an older
+ * rule is rated again.
+ */
+export function memberSeverity(m: Pick<SourceEvent, "source" | "severity" | "deaths">): Severity {
+  return m.source === "news" ? newsSeverity(m.deaths) : m.severity;
+}
+
 /** The feed of a member key "source:sourceId". */
 export function sourceOfKey(key: string): string {
   const i = key.indexOf(":");
@@ -284,9 +300,9 @@ function quakesMatch(a: SourceEvent, b: SourceEvent): boolean {
  * same days, so by distance the appeal could go to an aftershock.
  */
 function looseQuakeScore(a: SourceEvent, b: SourceEvent): number {
-  const quake = a.precision === "exact" ? a : b.precision === "exact" ? b : a.severity >= b.severity ? a : b;
+  const quake = a.precision === "exact" ? a : b.precision === "exact" ? b : memberSeverity(a) >= memberSeverity(b) ? a : b;
   const hours = Math.abs(ms(a.started) - ms(b.started)) / HOUR_MS;
-  return 2.5 + (3 - quake.severity) * 0.1 + (Math.min(hours, QUAKE_LOOSE_HOURS) / QUAKE_LOOSE_HOURS) * 0.09;
+  return 2.5 + (3 - memberSeverity(quake)) * 0.1 + (Math.min(hours, QUAKE_LOOSE_HOURS) / QUAKE_LOOSE_HOURS) * 0.09;
 }
 
 /** Storms: latest positions close (or the same country for a country-level report) while both are active. */
@@ -507,7 +523,7 @@ export function withAftershocks(d: Disaster, members: SourceEvent[], absorbed: M
     ...d,
     members: keys,
     updated,
-    severity: Math.max(d.severity, ...folded.map((e) => e.severity)) as Disaster["severity"],
+    severity: Math.max(d.severity, ...folded.map(memberSeverity)) as Severity,
     figures: figure.sourceUrl ? [...d.figures.filter((f) => f.label !== label), figure] : d.figures,
   };
 }
@@ -530,7 +546,7 @@ export function pickTitle(primary: SourceEvent, members: SourceEvent[]): string 
 
 /** The highest severity's text: the lead report's when it has the highest severity, else the next in order. */
 function pickSeverityText(ordered: SourceEvent[], max: number): string | undefined {
-  return ordered.find((m) => m.severity === max && m.severityText)?.severityText;
+  return ordered.find((m) => memberSeverity(m) === max && m.severityText)?.severityText;
 }
 
 /** Distinct values in order of first appearance. */
@@ -628,14 +644,16 @@ export function mergeAppeals(ordered: SourceEvent[]): AppealRef[] {
 /**
  * One Disaster from a group of matching events. The lead report is the most
  * exact (then by feed priority); it gives the type, the position and the
- * fresh id. Donation pages and research are left for the integrator.
+ * fresh id. The severity is the highest memberSeverity: a news report raises
+ * a feed's rating only by the deaths its headlines report. Donation pages
+ * and research are left for the integrator.
  */
 export function buildDisaster(members: SourceEvent[]): Disaster {
   if (members.length === 0) throw new Error("buildDisaster needs at least one event");
   const primary = [...members].sort(byPrecision)[0];
   const byPrio = [...members].sort(byPriority);
   const ordered = [primary, ...byPrio.filter((m) => m !== primary)];
-  const severity = Math.max(...members.map((m) => m.severity)) as Disaster["severity"];
+  const severity = Math.max(...members.map(memberSeverity)) as Severity;
   const severityText = pickSeverityText(ordered, severity);
   const track = pickTrack(byPrio);
   const out: Disaster = {
