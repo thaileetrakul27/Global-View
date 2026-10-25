@@ -695,6 +695,28 @@ describe("updateDisasters", () => {
     expect(registry.verdicts[localVerdictKey(ID, LOCAL)]).toMatchObject({ ok: true, place: "Cox's Bazar" });
   });
 
+  it("matches a local group's page written only in Bengali by the place's own name from the geocoder's cache", async () => {
+    const LOCAL = "https://www.coxsbazar-youth.org.bd/bonna";
+    const found: ResearchResult = { text: `Cox's Bazar Youth Forum: ${LOCAL}.`, citations: [], results: [{ url: LOCAL, title: "" }], searches: 1, okSearches: 1 };
+    const parsed: DirectSearchParse = { pages: [{ url: LOCAL, org: "Cox's Bazar Youth Forum", kind: "local", note: "" }] };
+    // IFRC names Cox's Bazar; the geocoder's cache holds its own name, as Nominatim's namedetails give it.
+    const coxs = { name: "Cox's Bazar", country: "BD", lat: 21.45, lng: 91.97, kind: "district" as const, source: "ifrc" as const };
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent({ places: [coxs] })] } } });
+    const cached = { name: "Cox's Bazar", displayName: "Cox's Bazar, Chattogram Division, Bangladesh", lat: 21.45, lng: 91.97, kind: "district", country: "BD", bbox: [91.9, 21.4, 92.0, 21.5], local: ["কক্সবাজার জেলা"] };
+    fs.writeFileSync(path.join(dirs.cacheDir, "geocode.json"), JSON.stringify({ "BD|cox s bazar||district": { hit: cached, at: NOW } }));
+    const ledger = emptyLedger();
+    const { ai } = recordingAi(ledger, undefined, undefined, { research: found, parsed });
+    const page = `<title>বন্যার্তদের জন্য দান করুন | কক্সবাজার যুব ফোরাম</title><meta property="og:site_name" content="কক্সবাজার যুব ফোরাম"><h1>কক্সবাজারে বন্যা</h1><p>কক্সবাজার জেলার বন্যার্ত পরিবারের জন্য দান করুন</p>`;
+    const fetchMock = vi.fn(async (url: string | URL | Request) => {
+      if (String(url) === LOCAL) return new Response(page, { status: 200, headers: { "content-type": "text/html" } });
+      throw new Error("network down");
+    });
+    const file = await updateDisasters(runWith(dirs, { ai, ledger, countryNames: { BD: "Bangladesh" }, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log: () => {} } }));
+    expect(file.disasters[0].donate.find((l) => l.kind === "local")).toMatchObject({ url: LOCAL, org: "কক্সবাজার যুব ফোরাম", label: "বন্যার্তদের জন্য দান করুন" });
+    const registry = JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "donation-registry.json"), "utf8")) as DonationRegistry;
+    expect(registry.verdicts[localVerdictKey(ID, LOCAL)]).toMatchObject({ ok: true, place: "কক্সবাজার" });
+  });
+
   it("tries a failed direct search again only after a day, keeping the research and the donation search", async () => {
     const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } } });
     const ledger = emptyLedger();

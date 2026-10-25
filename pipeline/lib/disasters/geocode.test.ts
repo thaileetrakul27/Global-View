@@ -24,6 +24,8 @@ import {
   inGlobeCountry,
   kindDistance,
   isCacheEntry,
+  localNamesOf,
+  localPlaceNames,
   isFresh,
   mentionsAdmin,
   nominatimCountry,
@@ -258,7 +260,7 @@ describe("searchQuery", () => {
 });
 
 describe("buildNominatimUrl", () => {
-  it("restricts to the country and asks for English names, addresses and outlines", () => {
+  it("restricts to the country and asks for English names, the place's own names, addresses and outlines", () => {
     const url = new URL(buildNominatimUrl("Sunamganj, Sylhet", "bd"));
     expect(`${url.origin}${url.pathname}`).toBe(NOMINATIM_URL);
     const p = Object.fromEntries(url.searchParams);
@@ -267,6 +269,7 @@ describe("buildNominatimUrl", () => {
       countrycodes: "bd",
       format: "jsonv2",
       addressdetails: "1",
+      namedetails: "1",
       limit: "3",
       polygon_geojson: "1",
       polygon_threshold: "0.01",
@@ -492,6 +495,21 @@ describe("hitArea", () => {
     expect(hitArea(fixture("semeru")[0].geojson)).toBeUndefined();
     expect(hitArea(undefined)).toBeUndefined();
     expect(hitArea({ type: "Polygon", coordinates: [[[0, 0], [1, "x"]]] })).toBeUndefined();
+  });
+});
+
+describe("localNamesOf", () => {
+  it("keeps a place's own names that are not its English one, each once (Chiang Rai, live 2026-10-25)", () => {
+    const [province, city] = fixture("chiangrai-names");
+    expect(localNamesOf(province.namedetails, "Chiang Rai Province")).toEqual(["จังหวัดเชียงราย"]);
+    expect(localNamesOf(city.namedetails, "Chiang Rai City Municipality")).toEqual(["เทศบาลนครเชียงราย", "เชียงราย"]);
+  });
+
+  it("gives none for a place known only by its English name, and nothing to tell without namedetails", () => {
+    expect(localNamesOf({ name: "Kingston", "name:en": "Kingston" }, "Kingston")).toEqual([]);
+    expect(localNamesOf({ name: "  ", official_name: 3 }, "Kingston")).toEqual([]);
+    expect(localNamesOf(undefined, "Kingston")).toBeUndefined();
+    expect(localNamesOf(["x"], "Kingston")).toBeUndefined();
   });
 });
 
@@ -1014,6 +1032,63 @@ describe("createGeocoder", () => {
 // ---------------------------------------------------------------------------
 // Places and areas
 // ---------------------------------------------------------------------------
+
+describe("createGeocoder: the places' own names", () => {
+  it("keeps the own names Nominatim gives with a hit", async () => {
+    const fetch = routedFetch({ "Chiang Rai": fixture("chiangrai-names") });
+    const cache: GeocodeCache = {};
+    const geo = createGeocoder(makeDeps(fetch), cache, NOW);
+    expect(await geo.geocode("Chiang Rai", "TH", undefined, "region")).toMatchObject({ name: "Chiang Rai Province", local: ["จังหวัดเชียงราย"] });
+  });
+
+  it("asks again for a cached hit's own names, at most backfillLocal a run, keeping the hit", async () => {
+    const fetch = routedFetch({ "Chiang Rai": fixture("chiangrai-names") });
+    const old = hit({ name: "Chiang Rai Province", displayName: "Chiang Rai Province, Thailand", lat: 19.7589517, lng: 99.6734592, kind: "region" });
+    const cache: GeocodeCache = {
+      "TH|chiang rai||region": { hit: old, at: "2026-01-01T00:00:00.000Z" },
+      "TH|bangkok|": { hit: hit(), at: "2026-01-01T00:00:00.000Z" },
+    };
+    const geo = createGeocoder(makeDeps(fetch), cache, NOW, { backfillLocal: 1 });
+    expect(await geo.geocode("Chiang Rai", "TH", undefined, "region")).toEqual({ ...old, local: ["จังหวัดเชียงราย"] });
+    expect(cache["TH|chiang rai||region"]).toEqual({ hit: { ...old, local: ["จังหวัดเชียงราย"] }, at: "2026-01-01T00:00:00.000Z" });
+    // The run's one backfill is spent: Bangkok is served as cached, and asked about on a later run.
+    expect(await geo.geocode("Bangkok", "TH")).toEqual(hit());
+    expect(fetch).toHaveBeenCalledTimes(1);
+    expect(geo.lookups).toBe(1);
+    // Once it has its names, a hit is never asked about again.
+    const later = createGeocoder(makeDeps(fetch), cache, NOW, { backfillLocal: 5 });
+    await later.geocode("Chiang Rai", "TH", undefined, "region");
+    expect(fetch).toHaveBeenCalledTimes(1);
+  });
+
+  it("gives a cached hit no own names when the answer is another place, and asks nothing without backfillLocal", async () => {
+    const fetch = routedFetch({ Bangkok: fixture("chiangrai-names") });
+    const cache: GeocodeCache = { "TH|bangkok|": { hit: hit(), at: "2026-01-01T00:00:00.000Z" } };
+    expect(await createGeocoder(makeDeps(fetch), cache, NOW).geocode("Bangkok", "TH")).toEqual(hit());
+    expect(fetch).not.toHaveBeenCalled();
+    expect(await createGeocoder(makeDeps(fetch), cache, NOW, { backfillLocal: 3 }).geocode("Bangkok", "TH")).toEqual({ ...hit(), local: [] });
+    expect(fetch).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe("localPlaceNames", () => {
+  it("finds each geocoded place's own names by its country and point", () => {
+    const cache: GeocodeCache = {
+      "TH|chiang rai||region": { hit: hit({ name: "Chiang Rai Province", lat: 19.76, lng: 99.67, kind: "region", local: ["จังหวัดเชียงราย"] }), at: NOW },
+      "TH|bangkok|": { hit: hit(), at: NOW },
+      "TH|nowhere|": { hit: null, at: NOW },
+    };
+    const place = (name: string, lat: number, lng: number): Place => ({ name, country: "TH", lat, lng, kind: "region", source: "research" });
+    expect(localPlaceNames(cache, [place("Chiang Rai Province", 19.76, 99.67), place("Bangkok", 13.75, 100.49), place("Mae Sai", 20.43, 99.88)])).toEqual({ "Chiang Rai Province": ["จังหวัดเชียงราย"] });
+    expect(localPlaceNames(cache, [])).toEqual({});
+    // A damaged file's names are left out.
+    const damaged: GeocodeCache = {
+      "TH|x|": { hit: { ...hit(), local: "เชียงราย" as unknown as string[] }, at: NOW },
+      "TH|y|": { hit: hit({ lat: 1, lng: 2, local: [3, ""] as unknown as string[] }), at: NOW },
+    };
+    expect(localPlaceNames(damaged, [place("Bangkok", 13.75, 100.49), place("Y", 1, 2)])).toEqual({});
+  });
+});
 
 describe("placeFromHit", () => {
   it("copies the hit's position, kind and admin", () => {

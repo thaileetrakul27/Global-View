@@ -10,6 +10,10 @@
 //     asked again after 30 days;
 //   - no bulk use: at most MAX_LOOKUPS_PER_RUN new searches per run, the rest
 //     wait for the next run.
+// Each hit also keeps the place's own names (Nominatim's namedetails:
+// "เชียงราย" for Chiang Rai), so a local group's page written only in its
+// own script can be matched to the place (direct.ts). Hits cached before
+// that are asked again for them, a few a run, within the same cap.
 // Place data is (c) OpenStreetMap contributors under the ODbL; the site shows
 // ATTRIBUTION wherever geocoded places appear.
 //
@@ -70,6 +74,12 @@ export interface GeoHit {
   bbox: [number, number, number, number];
   /** Simplified outline, kept only for districts and regions. */
   area?: AreaGeometry;
+  /**
+   * The place's own names that are not its English one (namedetails:
+   * "จังหวัดเชียงราย", "เชียงราย"); [] when it has none. Missing on hits
+   * cached before names were asked for.
+   */
+  local?: string[];
 }
 
 export interface GeocodeCacheEntry {
@@ -84,6 +94,8 @@ export type GeocodeCache = Record<string, GeocodeCacheEntry>;
 
 export interface GeocoderOptions {
   maxLookups?: number;
+  /** Most cached hits without local names asked again for them this run (within maxLookups); none by default. */
+  backfillLocal?: number;
   paceMs?: number;
   retryMs?: number;
   missRetryDays?: number;
@@ -118,6 +130,8 @@ export interface NominatimResult {
   boundingbox?: string[];
   geojson?: unknown;
   address?: Record<string, string>;
+  /** The place's names by key ("name", "name:en", "official_name", ...), with namedetails=1. */
+  namedetails?: Record<string, unknown>;
 }
 
 // ---------------------------------------------------------------------------
@@ -209,6 +223,7 @@ export function buildNominatimUrl(query: string, countryCode: string, endpoint =
     countrycodes: countryCode,
     format: "jsonv2",
     addressdetails: "1",
+    namedetails: "1",
     limit: "3",
     polygon_geojson: "1",
     polygon_threshold: "0.01",
@@ -373,6 +388,33 @@ export function hitArea(geojson: unknown): AreaGeometry | undefined {
   return fitGeometry(g, AREA_MAX_BYTES) ?? undefined;
 }
 
+/** namedetails keys of a place's own names: its name in its own language, the place it stands for, its official and short names. */
+const LOCAL_NAME_KEYS = ["name", "_place_name", "official_name", "short_name"] as const;
+/** Most local names kept for one place. */
+const MAX_LOCAL_NAMES = 4;
+
+/**
+ * A place's own names from Nominatim's namedetails, each once, those that
+ * are not the English name shown ("จังหวัดเชียงราย" and "เชียงราย" for
+ * Chiang Rai Province); [] when it has no other, undefined without
+ * namedetails.
+ */
+export function localNamesOf(namedetails: unknown, englishName: string): string[] | undefined {
+  if (typeof namedetails !== "object" || namedetails === null || Array.isArray(namedetails)) return undefined;
+  const details = namedetails as Record<string, unknown>;
+  const seen = new Set([normaliseKeyPart(englishName)]);
+  const out: string[] = [];
+  for (const key of LOCAL_NAME_KEYS) {
+    const v = details[key];
+    const name = typeof v === "string" ? v.trim().slice(0, 80) : "";
+    const k = normaliseKeyPart(name);
+    if (!k || seen.has(k) || out.length >= MAX_LOCAL_NAMES) continue;
+    seen.add(k);
+    out.push(name);
+  }
+  return out;
+}
+
 /** One result as a GeoHit for the globe country searched, or null when it is unusable. */
 export function toGeoHit(r: NominatimResult, country: string, queryName: string, queryAdmin?: string): GeoHit | null {
   const lat = Number(r.lat);
@@ -383,6 +425,7 @@ export function toGeoHit(r: NominatimResult, country: string, queryName: string,
   const name = pickName(r.name, queryName);
   const admin = pickAdmin(r.address, name, queryAdmin);
   const area = kind === "district" || kind === "region" ? hitArea(r.geojson) : undefined;
+  const local = localNamesOf(r.namedetails, name);
   return {
     name,
     displayName: (r.display_name ?? "").trim() || name,
@@ -393,6 +436,7 @@ export function toGeoHit(r: NominatimResult, country: string, queryName: string,
     country: country.toUpperCase(),
     bbox: unwrapBbox(parseBbox(r.boundingbox) ?? [lng, lat, lng, lat], r.geojson, lat, lng),
     ...(area ? { area } : {}),
+    ...(local ? { local } : {}),
   };
 }
 
@@ -547,6 +591,10 @@ export async function searchNominatim(url: string, deps: FetchDeps, retryMs = RE
  * written into `cache` (the caller saves it with writeGeocodeCache). After the
  * per-run cap, or once a search fails twice (Nominatim down or refusing us),
  * uncached names return null without being cached, so a later run tries them.
+ * A cached hit without local names (cached before they were asked for) is
+ * asked for again, at most backfillLocal a run within the same cap: its
+ * names are added when the answer is the same place, else it gets none,
+ * and the hit itself is kept either way.
  */
 export function createGeocoder(deps: FetchDeps, cache: GeocodeCache, now: string, opts: GeocoderOptions = {}): Geocoder {
   const maxLookups = opts.maxLookups ?? MAX_LOOKUPS_PER_RUN;
@@ -554,8 +602,10 @@ export function createGeocoder(deps: FetchDeps, cache: GeocodeCache, now: string
   const retryMs = Math.max(opts.retryMs ?? RETRY_MS, paceMs); // a retry is a request too
   const missRetryDays = opts.missRetryDays ?? MISS_RETRY_DAYS;
   const endpoint = opts.endpoint ?? NOMINATIM_URL;
+  const backfillLocal = opts.backfillLocal ?? 0;
 
   let lookups = 0;
+  let backfills = 0;
   let deferred = 0;
   let offline = false;
   let capLogged = false;
@@ -601,6 +651,37 @@ export function createGeocoder(deps: FetchDeps, cache: GeocodeCache, now: string
     return null;
   }
 
+  /**
+   * Asks again for the local names of a cached hit that has none (see
+   * localNamesOf): the same first query, kept only when it finds the same
+   * place (its name, within a few kilometres); else the hit gets none, so
+   * it is not asked for again. The hit stays as it was otherwise. Left for
+   * a later run when no search may be sent.
+   */
+  async function backfill(key: string, name: string, country: string, cc: string, admin: string | undefined, want?: PlaceKind): Promise<GeoHit | null> {
+    const entry = cache[key];
+    const old = entry?.hit ?? null;
+    if (!old || old.local !== undefined || backfills >= backfillLocal) return old;
+    const results = await search(searchQuery(name, admin), cc);
+    if (!results) return old;
+    backfills++;
+    const fresh = pickBest(results, country, name, admin, undefined, want);
+    const same = fresh !== null && fresh.name === old.name && Math.abs(fresh.lat - old.lat) < 0.05 && Math.abs(fresh.lng - old.lng) < 0.05;
+    const hit = { ...old, local: same ? (fresh.local ?? []) : [] };
+    cache[key] = { ...entry, hit };
+    return hit;
+  }
+
+  /** Runs one task for a key once the previous one has finished, so pacing holds; a second call for the same key waits for the first. */
+  function serialised(key: string, task: () => Promise<GeoHit | null>): Promise<GeoHit | null> {
+    const pending = inflight.get(key);
+    if (pending) return pending;
+    const run = queue.then(task);
+    queue = run.catch(() => undefined);
+    inflight.set(key, run);
+    return run.finally(() => inflight.delete(key));
+  }
+
   async function geocode(name: string, country: string, admin?: string, kind?: PlaceKind): Promise<GeoHit | null> {
     const code = country.trim().toUpperCase();
     const cc = nominatimCountry(code);
@@ -608,29 +689,30 @@ export function createGeocoder(deps: FetchDeps, cache: GeocodeCache, now: string
     const cleanAdmin = admin?.trim() || undefined;
     if (!cc || !normaliseKeyPart(cleanName)) return null;
     const key = geocodeKey(code, cleanName, cleanAdmin, kind);
+    // A territory's country code covers the whole US or France, so its name narrows the search.
+    const queryAdmin = cleanAdmin ?? territoryName(code);
     const cached = cache[key];
-    if (cached && isFresh(cached, now, missRetryDays)) return cached.hit;
-    const pending = inflight.get(key);
-    if (pending) return pending;
-    // Serialise: each lookup starts only when the previous one has finished, so pacing holds.
-    const run = queue.then(async () => {
+    if (cached && isFresh(cached, now, missRetryDays)) {
+      if (!cached.hit || cached.hit.local !== undefined || backfills >= backfillLocal) return cached.hit;
+      return serialised(key, async () => {
+        try {
+          return await backfill(key, cleanName, code, cc, queryAdmin, kind);
+        } catch (err) {
+          deps.log(`Nominatim: local names of "${cleanName}" (${code}) failed: ${err instanceof Error ? err.message : String(err)}`);
+          return cache[key]?.hit ?? null;
+        }
+      });
+    }
+    return serialised(key, async () => {
       const again = cache[key];
       if (again && isFresh(again, now, missRetryDays)) return again.hit;
       try {
-        // A territory's country code covers the whole US or France, so its name narrows the search.
-        return await lookup(key, cleanName, code, cc, cleanAdmin ?? territoryName(code), kind);
+        return await lookup(key, cleanName, code, cc, queryAdmin, kind);
       } catch (err) {
         deps.log(`Nominatim: lookup of "${cleanName}" (${code}) failed: ${err instanceof Error ? err.message : String(err)}`);
         return null;
       }
     });
-    queue = run.catch(() => undefined);
-    inflight.set(key, run);
-    try {
-      return await run;
-    } finally {
-      inflight.delete(key);
-    }
   }
 
   return {
@@ -660,6 +742,28 @@ export function placeFromHit(hit: GeoHit, impact: string | undefined, source: Pl
     ...(impact?.trim() ? { impact: impact.trim() } : {}),
     source,
   };
+}
+
+/**
+ * The local names the cache holds for each of these places, by the place's
+ * name: a geocoded place carries its hit's country and point, so the hit is
+ * found by those ("Chiang Rai" -> ["จังหวัดเชียงราย", "เชียงราย"]). Places
+ * no hit gave, or whose hit has no local names, are left out.
+ */
+export function localPlaceNames(cache: GeocodeCache, places: readonly Pick<Place, "name" | "country" | "lat" | "lng">[]): Record<string, string[]> {
+  const byPoint = new Map<string, string[]>();
+  for (const entry of Object.values(cache)) {
+    const hit = entry?.hit;
+    // The file is read as written; names that are not strings are left out.
+    const names = Array.isArray(hit?.local) ? hit.local.filter((n): n is string => typeof n === "string" && n.trim() !== "") : [];
+    if (hit && names.length > 0) byPoint.set(`${hit.country}|${hit.lat}|${hit.lng}`, names);
+  }
+  const out: Record<string, string[]> = {};
+  for (const p of places) {
+    const names = byPoint.get(`${p.country}|${p.lat}|${p.lng}`);
+    if (names) out[p.name] = [...new Set([...(out[p.name] ?? []), ...names])];
+  }
+  return out;
 }
 
 /** The area drawn for a place: its outline when the geocoder kept one, else a circle sized by kind. */

@@ -831,6 +831,8 @@ export interface DonationContext {
   countryNameIndex?: Record<string, string[]>;
   /** Words of the disaster's title that name a place but no country (see eventWords). */
   eventWords?: string[];
+  /** The disaster's title as given ("Hurricane Melissa", "Floods in Derna, Libya"), so direct.ts can tell whether it names a storm. */
+  title?: string;
 }
 
 const domainCache = new Map<string, Record<string, string[]>>();
@@ -885,6 +887,7 @@ export function donationContext(
     appealCountries: [...appealCountries],
     ...(names ? { countryNameIndex: names.index } : {}),
     eventWords: names ? eventWords(about.title, names.words) : [],
+    ...(typeof about.title === "string" ? { title: about.title } : {}),
   };
 }
 
@@ -900,6 +903,7 @@ export const NOT_EVENT_WORDS: ReadonlySet<string> = new Set(
     // Hazards and weather.
     "earthquake earthquakes quake quakes seismic aftershock aftershocks tremor tremors flood floods flooding floodings flash inundation inundations",
     "cyclone cyclones cyclonic storm storms windstorm windstorms hailstorm hailstorms rainstorm rainstorms thunderstorm thunderstorms snowstorm snowstorms",
+    "tornado tornadoes tornados blizzard blizzards avalanche avalanches",
     "sandstorm sandstorms duststorm duststorms surge typhoon typhoons hurricane hurricanes tropical depression super drought droughts famine hunger food",
     "insecurity wildfire wildfires fire fires forest bushfire bushfires volcano volcanoes volcanic eruption eruptions lava landslide landslides mudslide",
     "mudslides mudflow mudflows debris tsunami tsunamis heatwave heatwaves heat coldwave coldwaves cold wave waves winter dust rain rains rainfall heavy",

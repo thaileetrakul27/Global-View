@@ -1094,6 +1094,14 @@ describe("eventWords and isIfrcEventCampaign", () => {
     expect(eventWords(undefined)).toEqual([]);
     // USGS's compass points name no place.
     expect(eventWords("M7.0 earthquake 191 km ENE of Nagqu, China", countryWords)).toEqual(["nagqu"]);
+    // Tornadoes, blizzards and avalanches are hazards, not places (a crisis page "tornadoes-relief" names no place).
+    expect(eventWords("Tornadoes in Mississippi, United States", countryWords)).toEqual(["mississippi"]);
+    expect(eventWords("Blizzard and avalanches in Kashmir", countryWords)).toEqual(["kashmir"]);
+  });
+
+  it("keeps the disaster's title in its context, for the rules that read its storms", () => {
+    expect(about(["JM"], "Hurricane Melissa").title).toBe("Hurricane Melissa");
+    expect(donationContext(["JM"], registry(), GOV)).not.toHaveProperty("title");
   });
 
   it("allows /ifrc/<slug>/ only when the slug names the disaster", () => {
