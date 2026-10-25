@@ -19,6 +19,7 @@ import {
   searchDirectPages,
   selectBackfill,
   validDirectPages,
+  pageAgeDate,
   withDirectSearch,
   type DirectPage,
   type DirectSearchParse,
@@ -1644,12 +1645,43 @@ describe("validDirectPages", () => {
     ]);
   });
 
+  it("keeps the search's own date for a page, from its result's page age", () => {
+    const research = directResearch({
+      results: [
+        { url: GG_PAGE, title: "Typhoon Champi Relief Fund - GlobalGiving", pageAge: "October 14, 2026" },
+        { url: LOCAL_PAGE, title: "Donate | Ishigaki Volunteer Network", pageAge: "3 days ago" },
+      ],
+    });
+    const pages = validDirectPages(directParse().pages, research, [GG_PAGE, LOCAL_PAGE], NOW);
+    expect(pages.map((p) => p.published)).toEqual([new Date(2026, 9, 14).toISOString(), "2026-10-16T12:00:00.000Z"]);
+    // No page age, no date.
+    expect(validDirectPages(directParse().pages, directResearch(), [GG_PAGE, LOCAL_PAGE], NOW)[0]).not.toHaveProperty("published");
+  });
+
   it("drops plain-http pages and keeps at most eight", () => {
     const http = "http://www.ishigaki-volunteers.jp/donate";
     expect(validDirectPages([{ url: http, org: "", kind: "local", note: "" }], directResearch({ results: [{ url: http, title: "" }] }), [http])).toEqual([]);
     const many = Array.from({ length: 12 }, (_, i) => `https://group${i}.example.jp/donate`);
     const research = directResearch({ results: many.map((url) => ({ url, title: "" })) });
     expect(validDirectPages(many.map((url) => ({ url, org: "", kind: "local", note: "" })), research, many)).toHaveLength(MAX_DIRECT_PAGES);
+  });
+});
+
+describe("pageAgeDate", () => {
+  it("reads a search result's page age as a date, absolute or counted back from the search", () => {
+    expect(pageAgeDate("2025-10-29", NOW)).toBe("2025-10-29T00:00:00.000Z");
+    expect(pageAgeDate("October 29, 2025", NOW)).toBe(new Date(2025, 9, 29).toISOString());
+    expect(pageAgeDate("3 days ago", NOW)).toBe("2026-10-16T12:00:00.000Z");
+    expect(pageAgeDate("1 week ago", NOW)).toBe("2026-10-12T12:00:00.000Z");
+    expect(pageAgeDate("2 years ago", NOW)).toBe("2024-10-19T12:00:00.000Z");
+  });
+
+  it("gives nothing for a missing, unreadable, very old or future age", () => {
+    expect(pageAgeDate(undefined, NOW)).toBeUndefined();
+    expect(pageAgeDate("recently", NOW)).toBeUndefined();
+    expect(pageAgeDate("1985-01-01", NOW)).toBeUndefined();
+    expect(pageAgeDate("2027-01-01", NOW)).toBeUndefined();
+    expect(pageAgeDate("2025-10-29", "not a time")).toBeUndefined();
   });
 });
 
@@ -1741,13 +1773,14 @@ describe("toResearchEntry and the cache with direct giving", () => {
 
   it("reads the direct search's pages, time and crisis pages back, dropping bad ones", () => {
     const page: DirectPage = { url: LOCAL_PAGE, org: "Ishigaki Volunteer Network", kind: "local", note: "", title: "" };
+    const dated: DirectPage = { ...page, url: GG_PAGE, kind: "globalgiving", published: "2026-10-14T00:00:00.000Z" };
     const e = normaliseEntry({
       ...entry(disaster()),
       directSearched: NOW,
-      direct: [page, { ...page, kind: "charity" }, { url: GG_PAGE, org: "GlobalGiving", kind: "globalgiving", note: "" }, 5],
+      direct: [page, { ...page, kind: "charity" }, { url: GG_PAGE, org: "GlobalGiving", kind: "globalgiving", note: "" }, 5, dated, { ...page, url: "https://b.example/x", published: "soon" }],
       hubs: [HUB, "https://www.gofundme.com/f/x", 3],
     });
-    expect(e?.direct).toEqual([page]);
+    expect(e?.direct).toEqual([page, dated, { ...page, url: "https://b.example/x" }]);
     expect(e?.directSearched).toBe(NOW);
     expect(e?.hubs).toEqual([HUB]);
     const old = normaliseEntry(entry(disaster()));

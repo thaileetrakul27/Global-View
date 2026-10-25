@@ -154,6 +154,10 @@ export interface DonationVerdict {
   blocked?: boolean;
   /** For a local group's page (direct.ts): the disaster's place the page names. */
   place?: string;
+  /** For a local group's page (direct.ts): its site's own name (og:site_name), the name shown for it. */
+  name?: string;
+  /** For a local group's page (direct.ts): its own title (og:title or <title>), its label. */
+  title?: string;
 }
 
 export interface DonationRegistry {
@@ -217,6 +221,8 @@ export function normaliseRegistry(raw: unknown): DonationRegistry {
         chain: v.chain.filter((u): u is string => typeof u === "string"),
         ...(v.blocked === true ? { blocked: true } : {}),
         ...(str(v.place) ? { place: String(v.place) } : {}),
+        ...(str(v.name) ? { name: String(v.name) } : {}),
+        ...(str(v.title) ? { title: String(v.title) } : {}),
       };
     }
   }

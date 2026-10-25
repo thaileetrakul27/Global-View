@@ -173,6 +173,8 @@ export interface DirectPage {
   note: string;
   /** The search result's own title for the URL; "" when it gave none. */
   title: string;
+  /** The search's own date for the page (its result's page age, see pageAgeDate), as an ISO time; missing when it gave none. */
+  published?: string;
 }
 
 export interface ResearchEntry {
@@ -1255,9 +1257,11 @@ export function buildDirectParsePrompt(d: Disaster, countryNames: Record<string,
  * globalgiving.org is GlobalGiving's, any other is a local group's
  * candidate.
  */
-export function validDirectPages(pages: unknown, research: ResearchResult, listed: string[]): DirectPage[] {
+export function validDirectPages(pages: unknown, research: ResearchResult, listed: string[], now = new Date().toISOString()): DirectPage[] {
   const allowed = searchedUrls(research);
   const titles = new Map(listSources(research).map((s) => [urlKey(s.url), s.title]));
+  // The search engine's date for each result it returned.
+  const ages = new Map((research.results ?? []).filter((r) => typeof r?.url === "string").map((r) => [urlKey(r.url), pageAgeDate(r.pageAge, now)]));
   const out: DirectPage[] = [];
   const keys = new Set<string>();
   for (const p of Array.isArray(pages) ? pages : []) {
@@ -1267,15 +1271,34 @@ export function validDirectPages(pages: unknown, research: ResearchResult, liste
     if (!url || !key || keys.has(key) || !url.startsWith("https://")) continue;
     keys.add(key);
     const host = hostName(url);
+    const published = ages.get(key);
     out.push({
       url,
       org: cutText(cleanLine(p.org), 100),
       kind: host === "globalgiving.org" || host.endsWith(".globalgiving.org") ? "globalgiving" : "local",
       note: cutText(cleanLine(p.note), 200),
       title: titles.get(key) ?? "",
+      ...(published ? { published } : {}),
     });
   }
   return out;
+}
+
+/**
+ * A search result's page age as an ISO time: an absolute date ("October
+ * 29, 2025", "2025-10-29") or a relative one ("3 days ago", counted back
+ * from the search's time `at`). Undefined when it is missing, unreadable,
+ * before 1990 or after the search.
+ */
+export function pageAgeDate(raw: string | undefined, at: string): string | undefined {
+  const text = cleanLine(raw).toLowerCase();
+  const searched = Date.parse(at);
+  if (!text || !Number.isFinite(searched)) return undefined;
+  const rel = /^(\d{1,4})\s+(minute|hour|day|week|month|year)s?\s+ago$/.exec(text);
+  const unit: Record<string, number> = { minute: 60_000, hour: HOUR_MS, day: 24 * HOUR_MS, week: 7 * 24 * HOUR_MS, month: 30 * 24 * HOUR_MS, year: 365 * 24 * HOUR_MS };
+  const t = rel ? searched - Number(rel[1]) * unit[rel[2]] : Date.parse(text);
+  if (!Number.isFinite(t) || t < Date.UTC(1990, 0, 1) || t > searched + 24 * HOUR_MS) return undefined;
+  return new Date(t).toISOString();
 }
 
 /** What one direct search found: its pages, and the GoFundMe crisis pages among its results. */
@@ -1322,7 +1345,7 @@ export async function searchDirectPages(ai: AiClient, disaster: Disaster, ctx: O
       log(`  direct search: notes for ${disaster.id} could not be parsed`);
       return null;
     }
-    return { pages: validDirectPages(parsed.pages, research, parsePrompt.listed), hubs: hubUrlsIn(research) };
+    return { pages: validDirectPages(parsed.pages, research, parsePrompt.listed, ctx.now), hubs: hubUrlsIn(research) };
   } catch (err) {
     log(`  direct search: ${disaster.id} failed: ${err instanceof Error ? err.message : String(err)}`);
     return null;
@@ -1380,7 +1403,7 @@ export function normaliseEntry(raw: unknown): ResearchEntry | null {
   const sources = list(raw.sources).filter((s): s is ResearchSource => strings(s, ["name", "url", "title"]));
   const direct = list(raw.direct)
     .filter((p): p is DirectPage => strings(p, ["url", "org", "note", "title"]) && (p.kind === "globalgiving" || p.kind === "local"))
-    .map((p) => ({ url: p.url, org: p.org, kind: p.kind, note: p.note, title: p.title }))
+    .map((p) => ({ url: p.url, org: p.org, kind: p.kind, note: p.note, title: p.title, ...(isTime(p.published) ? { published: p.published } : {}) }))
     .slice(0, MAX_DIRECT_PAGES);
   const hubs = mergeHubs(list(raw.hubs).filter((h): h is string => typeof h === "string"), []);
   return {

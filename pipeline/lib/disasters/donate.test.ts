@@ -707,16 +707,25 @@ describe("readRegistry, writeRegistry and normaliseRegistry", () => {
       verdicts: {
         good: { ok: true, checked: NOW, chain: ["https://a.org/"] },
         bad: { ok: "yes", checked: NOW, chain: [] },
-        "local:d1:school.example.org/donate": { ok: true, checked: NOW, chain: ["https://school.example.org/donate"], place: "Jamaica", reason: "ok" },
+        "local:d1:school.example.org/donate": { ok: true, checked: NOW, chain: ["https://school.example.org/donate"], place: "Jamaica", reason: "ok", name: "Eber College", title: "Rebuild Eber Prep", extra: 1 },
       },
     });
     expect(Object.keys(reg.societies)).toEqual(["PH"]);
     expect(reg.societies.PH).toMatchObject({ country: "PH", hosts: ["redcross.org.ph"], donate: null });
     expect(Object.keys(reg.uncr)).toEqual(["SD"]);
     expect(Object.keys(reg.verdicts)).toEqual(["good", "local:d1:school.example.org/donate"]);
-    // A local group's page keeps the place it named (direct.ts).
-    expect(reg.verdicts["local:d1:school.example.org/donate"].place).toBe("Jamaica");
+    // A local group's page keeps the place it named and its own name and title (direct.ts).
+    expect(reg.verdicts["local:d1:school.example.org/donate"]).toEqual({
+      ok: true,
+      reason: "ok",
+      checked: NOW,
+      chain: ["https://school.example.org/donate"],
+      place: "Jamaica",
+      name: "Eber College",
+      title: "Rebuild Eber Prep",
+    });
     expect(reg.verdicts.good).not.toHaveProperty("place");
+    expect(reg.verdicts.good).not.toHaveProperty("name");
     expect(normaliseRegistry("nonsense")).toEqual(emptyRegistry());
   });
 });

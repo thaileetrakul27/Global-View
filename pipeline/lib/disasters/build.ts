@@ -16,7 +16,7 @@ import type { FetchDeps } from "../googlenews";
 import { writeCompactJson, writeJson } from "../io";
 import type { CountryResolver } from "../resolve";
 import { averageResearchCost, canSpend, noteResearch, researchAllowance, type Budget, type Ledger } from "../spend";
-import { GOFUNDME_CACHE_PATH, buildDirectLinks, hubMatches, prepareDirectLinks, readGoFundMeCache, refreshGoFundMe, writeGoFundMeCache, type DirectInput, type GoFundMeCache } from "./direct";
+import { GOFUNDME_CACHE_PATH, buildDirectLinks, hubWanted, prepareDirectLinks, readGoFundMeCache, refreshGoFundMe, writeGoFundMeCache, type DirectInput, type GoFundMeCache } from "./direct";
 import {
   REGISTRY_PATH,
   buildDonations,
@@ -696,15 +696,16 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   // Donation pages: registries by fixed rule plus researched pages that pass the allowlist and a live check.
   if (!run.offline) registry = await refreshRegistry(registry, deps, now, run.resolve, { probeCodes: [...run.globeCodes] });
   // Direct giving: GoFundMe's crisis pages by fixed rule (no model, so also
-  // without a key), then GlobalGiving's and local groups' pages from the
-  // direct search, held to direct.ts's rules.
+  // without a key; a page a disaster wants by its name and date is read
+  // first), then GlobalGiving's and local groups' pages from the direct
+  // search, held to direct.ts's rules.
   const gov = loadGovernmentDomains();
   const contexts = new Map<string, DonationContext>(disasters.map((d) => [d.id, donationContext(d.countries, registry, gov, { title: d.title, countryNames: run.countryNames, appeals: d.appeals })]));
   const contextOf = (d: Disaster) => contexts.get(d.id) as DonationContext;
   let gofundme: GoFundMeCache = readGoFundMeCache(paths.gofundme);
   if (!run.offline && Date.now() <= (run.deadline ?? Infinity)) {
     const found = disasters.flatMap((d) => cache[d.id]?.hubs ?? []);
-    gofundme = await refreshGoFundMe(gofundme, deps, now, { found, wanted: (hub) => disasters.some((d) => hubMatches(hub, d, contextOf(d))) });
+    gofundme = await refreshGoFundMe(gofundme, deps, now, { found, wanted: (hub) => disasters.some((d) => hubWanted(hub, d, contextOf(d))) });
   }
   const pressNames = run.pressNames ?? readPressNames();
   const newsHosts = articleHosts(run.articles);

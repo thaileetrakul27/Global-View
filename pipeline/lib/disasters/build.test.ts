@@ -663,7 +663,10 @@ describe("updateDisasters", () => {
     const ledger = emptyLedger();
     const { ai } = recordingAi(ledger, undefined, undefined, { research: found, parsed });
     const fetchMock = vi.fn(async (url: string | URL | Request) => {
-      if (String(url) === LOCAL) return new Response("<h1>Cox's Bazar flood relief</h1><a>Donate now</a>", { status: 200, headers: { "content-type": "text/html" } });
+      if (String(url) === LOCAL) {
+        const page = `<title>Flood relief | Cox's Bazar Youth Forum</title><meta property="og:site_name" content="Cox's Bazar Youth Forum"><h1>Cox's Bazar flood relief</h1><a>Donate now</a>`;
+        return new Response(page, { status: 200, headers: { "content-type": "text/html" } });
+      }
       throw new Error("network down");
     });
     // The site's own articles make the Daily Star a news site.
@@ -675,7 +678,8 @@ describe("updateDisasters", () => {
     expect(donate.slice(0, 2)).toEqual([
       { label: "Bangladesh Flood Relief 2026", url: GG, org: "GlobalGiving", kind: "project", note: "GlobalGiving vets its local partners", via: "research", forEvent: true },
       {
-        label: "Donate to Cox's Bazar Youth Forum",
+        // The page's own name and title, never the model's.
+        label: "Flood relief",
         url: LOCAL,
         org: "Cox's Bazar Youth Forum",
         kind: "local",
@@ -720,10 +724,13 @@ describe("updateDisasters", () => {
         "venezuela-earthquake-relief": {
           slug: "venezuela-earthquake-relief",
           ...parseHub(pages.hubs["venezuela-earthquake-relief"]),
+          // As if GoFundMe had opened the page the day after this quake began.
+          published: "2026-10-11T00:00:00.000Z",
           fundraisers: parseFeed(pages.feed.funds),
           fetched: NOW,
           feedFetched: NOW,
           seen: NOW,
+          failure: null,
         },
       },
     };
@@ -745,7 +752,8 @@ describe("updateDisasters", () => {
 
   it("reads GoFundMe's pages on a run without a key, and saves them", async () => {
     const pages = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "gofundme-pages.json"), "utf8")) as { index: string; hubs: Record<string, string>; feed: { funds: unknown } };
-    const quake = ifrcEvent({ sourceId: "7990", type: "earthquake", title: "Venezuela Earthquake", countries: ["VE"], lat: 10.5, lng: -66.9 });
+    // Two days before GoFundMe published its page for the Venezuela earthquakes.
+    const quake = ifrcEvent({ sourceId: "7990", type: "earthquake", title: "Venezuela Earthquake", countries: ["VE"], lat: 10.5, lng: -66.9, started: "2026-06-24T00:00:00.000Z" });
     const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [quake] } } });
     const fetchMock = vi.fn(async (u: string | URL | Request) => {
       const url = String(u);
