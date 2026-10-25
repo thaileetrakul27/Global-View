@@ -216,7 +216,7 @@ export interface DonationLink {
    * directly to the people affected (newer files only): fundraiser, a
    * GoFundMe fundraiser from its verified list for this disaster; project,
    * a GlobalGiving project or a vetted partner on GoFundMe's list; local, a
-   * local group's own page found by research.
+   * charity's or local group's own page for the disaster found by research.
    */
   kind: "appeal" | "society" | "un" | "government" | "agency" | "fundraiser" | "project" | "local";
   /** One short line; for a direct page, who checked it. */

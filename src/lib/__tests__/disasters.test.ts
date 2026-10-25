@@ -418,10 +418,11 @@ describe("donationNote", () => {
     expect(donationNote({ kind: "society", note: "Kenya Red Cross" })).toBe("Kenya Red Cross");
   });
 
-  it("says who checked a direct page that came without a note, and that no one vouches for a local group", () => {
+  it("says who checked a direct page that came without a note, and that no one vouches for a charity or local group", () => {
     expect(donationNote({ kind: "fundraiser", note: "" })).toBe("On GoFundMe's verified list for this disaster");
     expect(donationNote({ kind: "project", note: "  " })).toBe("Listed by a giving platform that vets its partners");
-    expect(donationNote({ kind: "local", note: "" })).toContain("cannot vouch for the group");
+    // As the pipeline's own note (direct.ts localNote), without the place.
+    expect(donationNote({ kind: "local", note: "" })).toBe("A charity's or local group's own page for this disaster. Global View checked it is live, but cannot vouch for the group.");
   });
 
   it("adds nothing to an official page without a note", () => {
@@ -440,7 +441,7 @@ describe("donationSources", () => {
 
   it("names where direct pages come from, and the official ones after them", () => {
     expect(donationSources([{ key: "direct" }])).toBe(
-      "These pages come from GoFundMe's verified lists, GlobalGiving and local groups' own pages, all checked automatically.",
+      "These pages come from GoFundMe's verified lists, GlobalGiving, and charities' and local groups' own pages, all checked automatically.",
     );
     const both = donationSources([{ key: "direct" }, { key: "event" }, { key: "un" }]);
     expect(both).toMatch(/^Direct pages come from GoFundMe's verified lists/);

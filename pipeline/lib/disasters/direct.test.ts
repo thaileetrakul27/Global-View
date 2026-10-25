@@ -18,13 +18,19 @@ import {
   LOCAL_RULES_VERSION,
   MAX_FOUND_HUBS,
   MAX_LOCAL_CHECKS,
+  MAX_PAGE_LOG_LINES,
   MAX_SLUGS,
   VERIFIED_NOTE,
+  allowlistMisses,
   asciiDigits,
   blankHub,
   buildDirectLinks,
+  cappedLog,
   checkLocalPage,
   countryNamesIn,
+  directCandidates,
+  directKindOf,
+  directOutcome,
   disasterStorms,
   earlierEventProblem,
   emptyGoFundMeCache,
@@ -65,6 +71,7 @@ import {
   localRules,
   localUrlProblem,
   localVerdictKey,
+  logDirectOutcome,
   matchHub,
   mixedScriptWord,
   modifiedOf,
@@ -110,7 +117,7 @@ import {
   type LocalContext,
   type LocalPageRules,
 } from "./direct";
-import { donationContext, emptyRegistry, loadGovernmentDomains, type DonationRegistry } from "./donate";
+import { NOT_ALLOWLISTED, donationContext, donationUrlProblem, emptyRegistry, loadGovernmentDomains, type DonationRegistry } from "./donate";
 import type { DirectPage, ResearchEntry } from "./research";
 import type { Disaster } from "./types";
 
@@ -2252,6 +2259,13 @@ describe("verifyLocalPage", () => {
     expect(await verifyLocalPage(URL0, "d1", deps(async () => Promise.reject(new Error("down"))), local, rules, registry, NOW)).toBe(false);
     expect(registry.verdicts).toEqual({});
   });
+
+  it("leaves logging the verdict to its caller, which logs each refusal once (prepareDirectLinks)", async () => {
+    const log = vi.fn();
+    const d = { ...deps(async () => html("<p>Donate</p>")), log };
+    expect(await verifyLocalPage(URL0, "d1", d, local, rules, emptyRegistry(), NOW)).toBe(false);
+    expect(log).not.toHaveBeenCalled();
+  });
 });
 
 describe("localOrg and localLabel", () => {
@@ -2300,7 +2314,9 @@ describe("localRules", () => {
 
 describe("localNote", () => {
   it("says who checked the page, and that the group is not vouched for", () => {
-    expect(localNote("St. Elizabeth")).toBe("A local group's own page. Global View checked it is live and names St. Elizabeth, but cannot vouch for the group.");
+    expect(localNote("St. Elizabeth")).toBe(
+      "A charity's or local group's own page for this disaster. Global View checked it is live and names St. Elizabeth, but cannot vouch for the group.",
+    );
     expect(localNote(undefined)).toContain("names the disaster's place");
   });
 });
@@ -2418,5 +2434,237 @@ describe("buildDirectLinks and prepareDirectLinks", () => {
     ]);
     const nextYear = { ...MELISSA, started: "2026-10-20T00:00:00.000Z" };
     expect(buildDirectLinks(input({ disaster: nextYear, entry: undefined }), emptyRegistry(), NOW)).toEqual([]);
+  });
+});
+
+describe("directKindOf", () => {
+  it("tells a page's kind by its host alone", () => {
+    expect(directKindOf("https://www.globalgiving.org/projects/typhoon-champi-relief-fund/")).toBe("globalgiving");
+    expect(directKindOf("https://globalgiving.org/fundraisers/x/")).toBe("globalgiving");
+    expect(directKindOf("https://www.pennyappealusa.org/campaigns/x/")).toBe("local");
+    // A look-alike is no GlobalGiving page.
+    expect(directKindOf("https://globalgiving.org.example.com/projects/x/")).toBe("local");
+    expect(directKindOf("not a url")).toBe("local");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// The other searches' pages off the official allowlist
+// ---------------------------------------------------------------------------
+
+describe("pages the research or the donation search found off the official allowlist", () => {
+  /** The Nuristan floods in Afghanistan (IFRC GO 8025), as the first live run had them. */
+  const NURISTAN = disaster({
+    id: "ifrc-flood-8025",
+    countries: ["AF"],
+    type: "flood",
+    title: "Afghanistan: Nuristan Flood",
+    started: "2026-07-20T00:00:00.000Z",
+    places: [{ name: "Nuristan", country: "AF", lat: 35.42, lng: 70.79, kind: "district", source: "ifrc" }],
+  });
+  /** Penny Appeal USA's appeal for the floods, which the research found and donate.ts turned away as off its allowlist. */
+  const PENNY = "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/";
+  /** The page's own name, title, heading and dates as it gave them (2026-10-25), with a donation word; not its text. */
+  const PENNY_PAGE = [
+    "<title>Emergency Alert: Flash Floods Hit Nuristan, Afghanistan</title>",
+    '<meta property="og:site_name" content="Penny Appeal USA">',
+    '<script type="application/ld+json">{"@graph":[{"@type":"WebPage","datePublished":"2026-07-24T12:19:21+00:00","dateModified":"2026-07-24T14:55:58+00:00"}]}</script>',
+    "<h1>Emergency Alert: Flash Floods Hit Nuristan, Afghanistan</h1><a>Donate now</a>",
+  ].join("");
+  const IFRC_LIST = "https://go.ifrc.org/appeals/all?region=2";
+  const research = (donation: ResearchEntry["donation"], over: Partial<ResearchEntry> = {}) => ({ donation, ...over }) as ResearchEntry;
+  /** The research entry the first live run cached: an IFRC listing page (refused by the official rules) and Penny Appeal's page. */
+  const ENTRY = research([
+    { url: IFRC_LIST, org: "IFRC (IFRC GO)", kind: "society", note: "Appeals listing", specific: false },
+    { url: PENNY, org: "Penny Appeal USA", kind: "agency", note: "Emergency appeal campaign for victims of the Nuristan flash floods." },
+  ]);
+  const input = (over: Partial<DirectInput> = {}): DirectInput => ({
+    disaster: NURISTAN,
+    entry: ENTRY,
+    gofundme: emptyGoFundMeCache(),
+    ctx: ctxFor(NURISTAN),
+    countryNames: NAMES,
+    pressNames: {},
+    ...over,
+  });
+
+  it("offers only the pages donate.ts turns away for their host alone, by host kind, each once, with the model's org and note but no title or date", () => {
+    const ctx = ctxFor(NURISTAN);
+    expect(donationUrlProblem(PENNY, ctx)).toBe(NOT_ALLOWLISTED);
+    // The listing is on the allowlist, and refused for another reason: never offered.
+    expect(donationUrlProblem(IFRC_LIST, ctx)).toBe("listing or search page");
+    const GG = "https://www.globalgiving.org/projects/afghanistan-flood-relief-2026/";
+    const misses = allowlistMisses(
+      research(
+        [
+          ...ENTRY.donation,
+          { url: GG, org: "GlobalGiving", kind: "", note: "" },
+          // Plain http and a shortener are refused before the allowlist is asked.
+          { url: "http://www.pennyappealusa.org/campaigns/x/", org: "", kind: "", note: "" },
+          { url: "https://bit.ly/nuristan", org: "", kind: "", note: "" },
+          { url: "https://www.ifrc.org/emergency/afghanistan-floods", org: "IFRC", kind: "agency", note: "" },
+        ],
+        { earlierSearch: [{ url: PENNY.replace("https://www.", "https://"), org: "Penny Appeal", kind: "agency", note: "From an earlier search", specific: true }] },
+      ),
+      ctx,
+    );
+    expect(misses).toEqual<DirectPage[]>([
+      // The earlier search's copy comes first; the research's copy of the same page is left out.
+      { url: PENNY.replace("https://www.", "https://"), org: "Penny Appeal", kind: "local", note: "From an earlier search", title: "" },
+      { url: GG, org: "GlobalGiving", kind: "globalgiving", note: "", title: "" },
+    ]);
+    expect(allowlistMisses(undefined, ctx)).toEqual([]);
+    expect(allowlistMisses({} as ResearchEntry, ctx)).toEqual([]);
+  });
+
+  it("puts the direct search's pages first, then the other searches' that it did not find", () => {
+    const own: DirectPage = { url: PENNY, org: "Penny Appeal USA", kind: "local", note: "", title: "Emergency Alert", published: "2026-07-24T00:00:00.000Z" };
+    const other = "https://www.islamicrelief.org/afghanistan-floods-appeal/";
+    const entry = research([...ENTRY.donation, { url: other, org: "Islamic Relief", kind: "agency", note: "" }], { direct: [own] });
+    expect(directCandidates(input({ entry })).map((p) => [p.url, p.title])).toEqual([
+      [PENNY, "Emergency Alert"],
+      [other, ""],
+    ]);
+    expect(directCandidates(input({ entry: undefined }))).toEqual([]);
+  });
+
+  it("live-checks Penny Appeal's Nuristan page and lists it as a charity's own page, by its own name and title", async () => {
+    const registry = emptyRegistry();
+    const log = vi.fn();
+    const pageLog = vi.fn();
+    const d = { ...deps(async (u) => (u === PENNY ? html(PENNY_PAGE) : new Response("", { status: 404 }))), log };
+    const links = await prepareDirectLinks(input(), registry, d, NOW, { pageLog, pauseMs: 0 });
+    expect(d.fetch.mock.calls.map(([u]) => String(u))).toEqual([PENNY]);
+    expect(links).toEqual([
+      {
+        label: "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan",
+        url: PENNY,
+        org: "Penny Appeal USA",
+        kind: "local",
+        note: "A charity's or local group's own page for this disaster. Global View checked it is live and names Afghanistan, but cannot vouch for the group.",
+        via: "research",
+        forEvent: true,
+      },
+    ]);
+    expect(log.mock.calls.map(([m]) => m)).toEqual([
+      `Direct page ${PENNY}: accepted (donation word "donat*", names "Afghanistan")`,
+      "  direct pages for ifrc-flood-8025: 1 candidate (0 from the direct search, 1 from the other searches): 1 passed, 0 refused, 0 wait for a live check",
+    ]);
+    expect(pageLog).not.toHaveBeenCalled();
+    // From the caches alone, the same link.
+    expect(buildDirectLinks(input(), registry, NOW)).toEqual(links);
+  });
+
+  it("holds the other searches' pages to every direct rule: platforms, news, look-alikes, official names, earlier events and the live check", async () => {
+    const pages: ResearchEntry["donation"] = [
+      { url: "https://www.gofundme.com/f/help-nuristan-flood-victims", org: "GoFundMe", kind: "", note: "" },
+      { url: "https://www.dawn.com/news/2017247", org: "Dawn", kind: "", note: "" },
+      { url: "https://afghanredcrescent-relief.org/nuristan", org: "Relief", kind: "", note: "" },
+      { url: "https://www.kabulrelief.org/nuristan-flood", org: "Afghan Red Crescent Society", kind: "society", note: "" },
+      { url: "https://www.hopeforafghans.org/2024-afghanistan-flood-appeal/", org: "Hope for Afghans", kind: "", note: "" },
+      { url: "https://www.mountainschools.org/nuristan-flood/donate", org: "Mountain Schools", kind: "", note: "" },
+    ];
+    const registry = emptyRegistry();
+    const log = vi.fn();
+    const pageLog = vi.fn();
+    // The one page that passes the address rules asks for crypto.
+    const d = { ...deps(async () => html("<title>Nuristan flood relief</title><h1>Nuristan flood relief</h1><p>Donate BTC to help families in Afghanistan.</p>")), log };
+    expect(await prepareDirectLinks(input({ entry: research(pages) }), registry, d, NOW, { pageLog, pauseMs: 0 })).toEqual([]);
+    expect(d.fetch.mock.calls.map(([u]) => String(u))).toEqual(["https://www.mountainschools.org/nuristan-flood/donate"]);
+    const from = "(from the research or the donation search)";
+    expect(pageLog.mock.calls.map(([m]) => m)).toEqual([
+      `Direct page ${pages[0].url} ${from}: rejected (crowdfunding or giving platform)`,
+      `Direct page ${pages[1].url} ${from}: rejected (a news article or blog post)`,
+      `Direct page ${pages[2].url} ${from}: rejected (its host carries an official body's or a platform's name (redcrescent))`,
+      `Direct page ${pages[3].url} ${from}: rejected (the search names it for an official body or a platform (red crescent))`,
+      `Direct page ${pages[4].url} ${from}: rejected (an earlier disaster's page (2024))`,
+      `Direct page ${pages[5].url} ${from}: rejected (live check: asks for crypto, as scams do)`,
+    ]);
+    expect(log.mock.calls.map(([m]) => m)).toEqual([
+      "  direct pages for ifrc-flood-8025: 6 candidates (0 from the direct search, 6 from the other searches): 0 passed, 6 refused, 0 wait for a live check",
+    ]);
+  });
+
+  it("refuses the look-alikes of official sites that donate.ts turns away for their host, as it refuses the direct search's", async () => {
+    // donate.ts's attack cases, each "host not on the allowlist" there.
+    const lookalikes = ["redcross.org.ph.evil.com", "evilredcross.org.ph", "gov.ph.evil.com", "evilgov.ph", "un.org.evil.com", "unicef.org.donate-now.com", "fakeun.org"].map(
+      (host) => `https://${host}/nuristan-flood`,
+    );
+    expect(lookalikes.every((u) => donationUrlProblem(u, ctxFor(NURISTAN)) === NOT_ALLOWLISTED)).toBe(true);
+    const pageLog = vi.fn();
+    const d = deps(async () => html("<title>UN Nuristan Flood Relief</title><h1>UN Nuristan Flood Relief</h1><p>Donate to families in Afghanistan.</p>"));
+    const entry = research(lookalikes.map((url) => ({ url, org: "", kind: "", note: "" })));
+    expect(await prepareDirectLinks(input({ entry }), emptyRegistry(), d, NOW, { pageLog, pauseMs: 0, maxChecks: 10 })).toEqual([]);
+    // Only the one whose host claims no official name is fetched, and its own title's "UN" refuses it.
+    expect(d.fetch.mock.calls.map(([u]) => String(u))).toEqual(["https://fakeun.org/nuristan-flood"]);
+    expect(pageLog).toHaveBeenCalledTimes(lookalikes.length);
+    expect(pageLog.mock.calls.at(-1)?.[0]).toBe(
+      "Direct page https://fakeun.org/nuristan-flood (from the research or the donation search): rejected (live check: its own name, title or heading claims an official body or a platform (UN))",
+    );
+  });
+});
+
+describe("directOutcome and logDirectOutcome", () => {
+  const JM = { ...MELISSA, countries: ["JM"] };
+  const SCHOOL = "https://www.ebercollege.edu.jm/rebuild-after-melissa/donate";
+  const pages: DirectPage[] = [
+    { url: "https://www.globalgiving.org/projects/hurricane-beryl-jamaica-2024/", org: "GlobalGiving", kind: "globalgiving", note: "", title: "" },
+    { url: SCHOOL, org: "Eber Preparatory School", kind: "local", note: "", title: "" },
+    { url: "https://www.stelizabeth-relief.org/melissa/donate", org: "St Elizabeth Relief", kind: "local", note: "", title: "" },
+    { url: "https://www.kingston-schools.org/melissa/donate", org: "Kingston Schools", kind: "local", note: "", title: "" },
+  ];
+  const input = (): DirectInput => ({ disaster: JM, entry: { direct: pages } as ResearchEntry, gofundme: emptyGoFundMeCache(), ctx: ctxFor(JM), countryNames: NAMES, pressNames: {} });
+
+  it("says what became of each candidate: passed, refused with its reason, or waiting for a live check", () => {
+    const registry = emptyRegistry();
+    const school = localVerdictKey(MELISSA.id, SCHOOL);
+    registry.verdicts[school] = { ok: true, reason: "", checked: NOW, chain: [SCHOOL], place: "Jamaica", name: "Eber College" };
+    registry.verdicts[localVerdictKey(MELISSA.id, pages[2].url)] = { ok: false, reason: "HTTP 403", checked: NOW, chain: [pages[2].url] };
+    const o = directOutcome(input(), registry, NOW);
+    expect(o.links.map((l) => l.url)).toEqual([SCHOOL]);
+    expect([o.fromSearch, o.fromOther, o.passed]).toEqual([4, 0, 1]);
+    expect(o.refused).toEqual([
+      { url: pages[0].url, reason: "names another storm (beryl)", other: false },
+      { url: pages[2].url, reason: "live check: HTTP 403", other: false },
+    ]);
+    expect(o.waiting).toEqual([pages[3].url]);
+    // A cached pass that today's rules refuse says why.
+    registry.verdicts[school] = { ok: true, reason: "", checked: NOW, chain: [SCHOOL, "https://www.paypal.com/donate"], place: "Jamaica" };
+    expect(directOutcome(input(), registry, NOW).refused[1]).toEqual({ url: SCHOOL, reason: "a redirect it followed may no longer be shown", other: false });
+    registry.verdicts[school] = { ok: true, reason: "", checked: NOW, chain: [SCHOOL], place: "Jamaica", name: "Jamaica Red Cross Relief" };
+    expect(directOutcome(input(), registry, NOW).refused[1].reason).toBe("its own name or title claims an official body or a platform (red cross)");
+    // "Rеlief" with a Cyrillic е.
+    registry.verdicts[school] = { ok: true, reason: "", checked: NOW, chain: [SCHOOL], place: "Jamaica", name: "Kingston Rеlief Fund" };
+    expect(directOutcome(input(), registry, NOW).refused[1].reason).toBe("its own name or title mixes Latin with Cyrillic or Greek letters in one word (Rеlief)");
+    registry.verdicts[school] = { ok: true, reason: "", checked: NOW, chain: [SCHOOL], place: "Jamaica", title: "URGENT: Send Bitcoin to help Hurricane Melissa victims" };
+    expect(directOutcome(input(), registry, NOW).refused[1].reason).toBe("asks for crypto, as scams do");
+    registry.verdicts[school] = { ok: true, reason: "", checked: NOW, chain: [SCHOOL], place: "Jamaica", title: "Rebuild after Hurricane Beryl" };
+    expect(directOutcome(input(), registry, NOW).refused[1].reason).toBe("names another storm (beryl)");
+  });
+
+  it("logs one line for a disaster with candidates and one per refused page, and nothing for a disaster without", () => {
+    const registry = emptyRegistry();
+    const log = vi.fn();
+    const page = vi.fn();
+    expect(buildDirectLinks(input(), registry, NOW, { log, page })).toEqual([]);
+    expect(log.mock.calls.map(([m]) => m)).toEqual([`  direct pages for ${MELISSA.id}: 4 candidates (4 from the direct search, 0 from the other searches): 0 passed, 1 refused, 3 wait for a live check`]);
+    expect(page.mock.calls.map(([m]) => m)).toEqual([`Direct page ${pages[0].url}: rejected (names another storm (beryl))`]);
+    const quiet = vi.fn();
+    logDirectOutcome("d1", { links: [], fromSearch: 0, fromOther: 0, passed: 0, refused: [], waiting: [] }, { log: quiet, page: quiet });
+    expect(quiet).not.toHaveBeenCalled();
+  });
+});
+
+describe("cappedLog", () => {
+  it("passes on at most its cap of lines a run and counts the rest", () => {
+    const log = vi.fn();
+    const capped = cappedLog(log, 2);
+    ["a", "b", "c", "d"].forEach((m) => capped.line(m));
+    expect(log.mock.calls.map(([m]) => m)).toEqual(["a", "b"]);
+    expect(capped.omitted()).toBe(2);
+    expect(MAX_PAGE_LOG_LINES).toBe(40);
+    const run = cappedLog(log);
+    Array.from({ length: 45 }, (_, i) => String(i)).forEach((m) => run.line(m));
+    expect(run.omitted()).toBe(5);
   });
 });

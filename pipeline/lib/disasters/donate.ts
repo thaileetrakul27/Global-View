@@ -1275,6 +1275,13 @@ export function isBloodDonationPath(url: URL): boolean {
 }
 
 /**
+ * donationUrlProblem's reason for a well-formed https URL on no official
+ * list. Such a page may still be a charity's or local group's own page for
+ * the disaster, which direct.ts checks by its own rules (allowlistMisses).
+ */
+export const NOT_ALLOWLISTED = "host not on the allowlist";
+
+/**
  * Why a URL may not be shown as a donation link, or null when it may.
  * https only; no credentials, port, IP address, punycode or shortener;
  * the host must be a registry society host of one of the disaster's
@@ -1303,7 +1310,7 @@ export function donationUrlProblem(raw: string, ctx: DonationContext): string | 
   if (host.split(".").some((l) => l.startsWith("xn--"))) return "punycode host";
   if (!isPlainHostname(host)) return "unusual host";
   if (SHORTENERS.some((s) => hostMatches(host, s))) return "URL shortener";
-  if (!hostClass(url, ctx)) return "host not on the allowlist";
+  if (!hostClass(url, ctx)) return NOT_ALLOWLISTED;
   if (isBloodDonationPath(url)) return "blood donation page";
   if (isListingPage(url)) return "listing or search page";
   const allowed = (ctx.appealCountries ?? ctx.countries).map((c) => c.toUpperCase());
@@ -2005,7 +2012,9 @@ export interface PrepareOptions {
  * on the platform (one check, shared by every disaster in that country),
  * then its researched pages, those the research marked as the event's own
  * first (at most maxChecks, pausing between them). Then builds its links.
- * Records verdicts in registry.verdicts; the caller writes the registry.
+ * Each page the rules refuse is logged with why; one off the allowlist is
+ * noted as left to direct.ts's checks. Records verdicts in
+ * registry.verdicts; the caller writes the registry.
  */
 export async function prepareDonations(input: DonationInput, registry: DonationRegistry, deps: FetchDeps, now: string, opts: PrepareOptions = {}): Promise<DonationLink[]> {
   const gov = opts.governmentDomains ?? loadGovernmentDomains();
@@ -2029,7 +2038,8 @@ export async function prepareDonations(input: DonationInput, registry: DonationR
     if (!r || typeof r.url !== "string") continue;
     const problem = donationUrlProblem(r.url, ctx);
     if (problem) {
-      deps.log(`Donation page ${r.url}: rejected (${problem})`);
+      // A page off the allowlist may still be a charity's own (direct.ts allowlistMisses).
+      deps.log(`Donation page ${r.url}: rejected (${problem})${problem === NOT_ALLOWLISTED ? "; left to the direct checks" : ""}`);
       continue;
     }
     const cached = registry.verdicts[urlKey(r.url)];

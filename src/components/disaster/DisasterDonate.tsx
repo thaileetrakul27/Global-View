@@ -11,11 +11,11 @@ const OWN_GROUPS: ReadonlySet<DonationGroupKey> = new Set(["direct", "event"]);
 // Where to donate, first in the panel and large enough to tap. Pages that
 // give directly to the people affected come first under "Directly to
 // people affected" (GoFundMe's verified fundraisers, GlobalGiving and
-// vetted partner projects, local groups' own pages), each saying who
-// checked it. Then official pages for this disaster itself (its IFRC
-// appeal, checked pages researched for it) under "For this disaster", and
-// the general pages grouped by who runs them. Only https pages reach the
-// page; with none left, UN Crisis Relief's general fund.
+// vetted partner projects, charities' and local groups' own pages), each
+// saying who checked it. Then official pages for this disaster itself (its
+// IFRC appeal, checked pages researched for it) under "For this disaster",
+// and the general pages grouped by who runs them. Only https pages reach
+// the page; with none left, UN Crisis Relief's general fund.
 export default function DisasterDonate({ disaster: d }: { disaster: Disaster }) {
   const id = useId();
   const groups = groupDonations(d.donate);
@@ -60,9 +60,9 @@ export default function DisasterDonate({ disaster: d }: { disaster: Disaster }) 
 
 /**
  * One donation page as a whole-row link: who runs it, what it is for, and
- * a note. A direct page's note says who checked it (for a local group, that
- * Global View could not vouch for it); an official page found by research
- * says so.
+ * a note. A direct page's note says who checked it (for a charity or local
+ * group, that Global View could not vouch for it); an official page found
+ * by research says so.
  */
 function DonationRow({ link }: { link: DonationLink }) {
   const label = link.label.trim();

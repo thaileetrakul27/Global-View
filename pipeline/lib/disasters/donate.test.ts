@@ -2194,7 +2194,8 @@ describe("prepareDonations", () => {
     );
     expect(d.fetch.mock.calls.map((c) => String(c[0]))).toEqual([good]);
     expect(links.filter((l) => l.via === "research").map((l) => l.url)).toEqual([cached, good]);
-    expect(d.log).toHaveBeenCalledWith(expect.stringContaining("rejected (host not on the allowlist)"));
+    // A page off the allowlist is no official page, but may be a charity's own: direct.ts checks it.
+    expect(d.log).toHaveBeenCalledWith("Donation page https://redcross.or.th.evil.com/donate: rejected (host not on the allowlist); left to the direct checks");
   });
 
   it("checks pages the research marked as the event's own first, and lists them first", async () => {
