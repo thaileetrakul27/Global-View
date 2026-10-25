@@ -42,6 +42,7 @@ import {
   type NewsParse,
   type NewsParseEvent,
 } from "./news";
+import { mergeEvents } from "./merge";
 import type { SourceEvent } from "./types";
 
 const NOW = "2026-10-19T22:00:00.000Z";
@@ -726,6 +727,93 @@ describe("carryIds", () => {
     expect(() => carryIds([e], broken)).not.toThrow();
     expect(carryIds([e], broken)[0].sourceId).toBe("flood-ES-old");
     expect(overlapScore(e, { ...e, countries: undefined } as unknown as SourceEvent)).toBe(0);
+  });
+
+  it("keeps the higher of the two tolls when an event takes a previous id, and rates it again", () => {
+    const carried = (before: unknown, now: number | undefined, over: Partial<SourceEvent> = {}) => {
+      const prev = base({ sourceId: "flood-ES-old", links: [{ name: "x", url: "u1" }], deaths: before as number });
+      const e = base({ links: [{ name: "x", url: "u1" }], severity: newsSeverity(now), ...(now === undefined ? {} : { deaths: now }), ...over });
+      const [out] = carryIds([e], [prev]);
+      return [out.sourceId, out.severity, out.deaths];
+    };
+    // The toll's headlines have left the feeds: the event keeps last run's toll.
+    expect(carried(12, undefined)).toEqual(["flood-ES-old", 2, 12]);
+    expect(carried(150, 12)).toEqual(["flood-ES-old", 3, 150]);
+    // A toll only rises.
+    expect(carried(12, 30)).toEqual(["flood-ES-old", 2, 30]);
+    expect(carried(4, 0)).toEqual(["flood-ES-old", 1, 4]);
+    // Neither states one: no toll, the event's own rating.
+    expect(carried(undefined, undefined)).toEqual(["flood-ES-old", 1, undefined]);
+    // A broken toll in the previous file counts as none.
+    for (const bad of [-1, 4.5, "12", 5e9, null]) expect(carried(bad, undefined)).toEqual(["flood-ES-old", 1, undefined]);
+    // Paired by exact id as well as by overlap.
+    expect(carried(12, undefined, { sourceId: "flood-ES-old", links: [] })).toEqual(["flood-ES-old", 2, 12]);
+  });
+
+  it("gives no toll to an event that matches no previous one", () => {
+    const prev = base({ sourceId: "flood-ES-old", deaths: 40, links: [{ name: "x", url: "u1" }] });
+    const [out] = carryIds([base({ links: [{ name: "y", url: "u2" }] })], [prev]);
+    expect([out.sourceId, out.severity, out.deaths]).toEqual(["flood-ES-new", 1, undefined]);
+  });
+});
+
+// Regression (review of 4435e22): the toll was forgotten from one run to the
+// next, so a news disaster dropped off the map when its toll's headlines left
+// the feeds, and a GDACS green flood it lifted to 2 fell back to 1.
+describe("a reported toll across runs", () => {
+  const T1 = "2026-10-25T08:00:00.000Z";
+  const T2 = "2026-10-25T10:00:00.000Z";
+  const at = (now: string, text: string, outlet: string): NewsHeadline => ({
+    text,
+    country: "ES",
+    about: ["ES"],
+    outlet,
+    url: `https://n.example/${outlet}/${encodeURIComponent(text)}`,
+    published: new Date(Date.parse(now) - 3600_000).toISOString(),
+  });
+  const RUN1 = [at(T1, "Floods kill 12 in Valencia", "AFP"), at(T1, "Valencia floods: 12 dead", "Reuters")];
+  const RUN2 = [at(T2, "Valencia flood clean-up continues as rain returns", "El País"), at(T2, "Valencia: residents dig out after floods", "RTVE")];
+  const valencia = (deaths: number | null) => ev({ places: [{ name: "Valencia", admin: "", kind: "city", impact: "flooded" }], headlineIds: [0, 1], deaths });
+  /** Geocoded as the integrator would. */
+  const placed = (events: SourceEvent[]) => events.map((e) => ({ ...e, lat: 39.47, lng: -0.38, precision: "area" as const }));
+  const published = (list: { id: string; severity: number }[]) => list.filter((d) => d.severity >= 2).map((d) => [d.id, d.severity]);
+
+  it("keeps a news disaster at its toll when a later run's headlines state none", () => {
+    const run1 = placed(toNewsEvents({ events: [valencia(12)] }, RUN1, resolve, T1));
+    expect(run1.map((e) => [e.severity, e.deaths])).toEqual([[2, 12]]);
+    const m1 = mergeEvents(run1, null, T1);
+    expect(published(m1)).toHaveLength(1);
+
+    const run2 = placed(toNewsEvents({ events: [valencia(null)] }, RUN2, resolve, T2, { previous: run1 }));
+    expect(run2.map((e) => [e.sourceId, e.severity, e.deaths])).toEqual([[run1[0].sourceId, 2, 12]]);
+    expect(published(mergeEvents(run2, m1, T2))).toEqual(published(m1));
+    // Without the previous list nothing carries, and the event is minor.
+    expect(toNewsEvents({ events: [valencia(null)] }, RUN2, resolve, T2)[0].severity).toBe(1);
+  });
+
+  it("keeps a GDACS green flood the news report lifted to 2 at 2", () => {
+    const gdacs: SourceEvent = {
+      source: "gdacs",
+      sourceId: "FL-1103210",
+      type: "flood",
+      title: "Flood in Spain",
+      severity: 1,
+      countries: ["ES"],
+      lat: 39.4,
+      lng: -0.4,
+      precision: "exact",
+      started: "2026-10-24T18:00:00.000Z",
+      updated: T2,
+      areas: [],
+      places: [],
+      links: [],
+    };
+    const run1 = placed(toNewsEvents({ events: [valencia(12)] }, RUN1, resolve, T1));
+    const m1 = mergeEvents([gdacs, ...run1], null, T1);
+    expect(m1.map((d) => [d.members.length, d.severity])).toEqual([[2, 2]]);
+    const run2 = placed(toNewsEvents({ events: [valencia(null)] }, RUN2, resolve, T2, { previous: run1 }));
+    const m2 = mergeEvents([gdacs, ...run2], m1, T2);
+    expect(m2.map((d) => [d.id, d.members.length, d.severity])).toEqual([[m1[0].id, 2, 2]]);
   });
 });
 

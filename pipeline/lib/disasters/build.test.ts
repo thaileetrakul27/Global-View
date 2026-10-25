@@ -592,7 +592,7 @@ describe("updateDisasters", () => {
   });
 
   /** A direct search that worked and found nothing. */
-  const NO_DIRECT ={ research: { text: "Direct pages: none found", citations: [], results: [], searches: 1, okSearches: 1 }, parsed: { pages: [] } };
+  const NO_DIRECT = { research: { text: "Direct pages: none found", citations: [], results: [], searches: 1, okSearches: 1 }, parsed: { pages: [] } };
 
   /** True for the direct search's call: its own system prompt, on the whole web. */
   const isDirect = (opts: WebResearchOptions) => opts.system.startsWith(directSearchSystemPrompt(NOW).split("\n")[0]);

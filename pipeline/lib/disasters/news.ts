@@ -13,7 +13,8 @@
 //    globe; places must be named in its headlines; its death toll counts
 //    only as a whole number below MAX_DEATHS (deathsOf). Ids are hashes of
 //    type, country and places, and are carried over from the previous run
-//    when an event shares links or places with one from before.
+//    when an event shares links or places with one from before; a carried
+//    event keeps the higher of the two tolls, since a toll only rises.
 //
 // 4. newsSeverity rates each event by fixed rule from that toll alone, since
 //    only significant and severe disasters reach the map: severe at 100
@@ -618,7 +619,7 @@ function mergeCandidates(list: Candidate[]): Candidate[] {
     }
     for (const h of c.headlines) if (!prev.headlines.some((x) => x.url === h.url)) prev.headlines.push(h);
     prev.headlines.sort((a, b) => b.published.localeCompare(a.published));
-    if (c.deaths !== null) prev.deaths = Math.max(prev.deaths ?? 0, c.deaths);
+    prev.deaths = higherToll(prev.deaths, c.deaths);
   }
   return [...byId.values()];
 }
@@ -656,6 +657,11 @@ export function overlapScore(a: SourceEvent, b: SourceEvent): number {
   return links * 2 + places;
 }
 
+/** The higher of two checked tolls; null only when neither states one. */
+function higherToll(a: number | null, b: number | null): number | null {
+  return a === null ? b : b === null ? a : Math.max(a, b);
+}
+
 /** A previous news event this module can carry an id from: right source, a string id, a country list. */
 function isCarriable(p: unknown): p is SourceEvent {
   if (!p || typeof p !== "object") return false;
@@ -667,7 +673,11 @@ function isCarriable(p: unknown): p is SourceEvent {
  * Gives events the id of the previous run's matching news event, so an event
  * keeps its id (and the disaster its cached research) when the model names
  * one more town. Exact ids pair first, then the best overlaps; each previous
- * id goes to one event. A carried event keeps the earlier start time.
+ * id goes to one event. A carried event keeps the earlier start time and the
+ * higher of the two tolls (a toll only rises), rated again by newsSeverity:
+ * the headlines that state a toll leave the feeds before the event ends, and
+ * without this it would drop off the map while still ongoing. The toll lasts
+ * only while the model still returns the event as ongoing.
  */
 export function carryIds(events: SourceEvent[], previous: SourceEvent[]): SourceEvent[] {
   const prev = (Array.isArray(previous) ? previous : []).filter(isCarriable);
@@ -698,7 +708,9 @@ export function carryIds(events: SourceEvent[], previous: SourceEvent[]): Source
     const p = assigned.get(i);
     if (!p) return e;
     const started = Date.parse(p.started) < Date.parse(e.started) ? new Date(Date.parse(p.started)).toISOString() : e.started;
-    return { ...e, sourceId: p.sourceId, started };
+    const deaths = higherToll(deathsOf(p.deaths), deathsOf(e.deaths));
+    const toll = deaths === null ? {} : { deaths, severity: newsSeverity(deaths) };
+    return { ...e, sourceId: p.sourceId, started, ...toll };
   });
 }
 
