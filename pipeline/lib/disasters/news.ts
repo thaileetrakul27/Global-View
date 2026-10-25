@@ -4,19 +4,22 @@
 // 1. prefilterHeadlines keeps recent headlines whose English text uses a
 //    disaster word (whole words only), newest first, at most MAX_HEADLINES.
 // 2. One Claude call (purpose "news", effort "low") groups them into events
-//    and names the country and the places each one hits. Headlines are data:
-//    the prompt tells the model to ignore metaphors, sports, anniversaries,
-//    forecasts with no impact and man-made accidents.
+//    and names the country and the places each one hits, and the deaths its
+//    headlines report. Headlines are data: the prompt tells the model to
+//    ignore metaphors, sports, anniversaries, forecasts with no impact and
+//    man-made accidents.
 // 3. toNewsEvents checks the answer: an event needs headlines from at least
 //    two outlets, must be ongoing, of a known type and in a country on the
-//    globe; places must be named in its headlines. Ids are hashes of type,
-//    country and places, and are carried over from the previous run when an
-//    event shares links or places with one from before.
+//    globe; places must be named in its headlines; its death toll counts
+//    only as a whole number below MAX_DEATHS (deathsOf). Ids are hashes of
+//    type, country and places, and are carried over from the previous run
+//    when an event shares links or places with one from before; a carried
+//    event keeps the higher of the two tolls, since a toll only rises.
 //
-// 4. newsSeverity rates each event by fixed rule from its headlines alone,
-//    since only significant and severe disasters reach the map: severe
-//    when they report 100 deaths or more, significant when they report 5
-//    or more or when four outlets or more carry the story, minor otherwise.
+// 4. newsSeverity rates each event by fixed rule from that toll alone, since
+//    only significant and severe disasters reach the map: severe at 100
+//    deaths or more, significant at 5 or more, minor otherwise. How many
+//    outlets carry a story says nothing of the harm done, so it never counts.
 //
 // The events come out with lat/lng 0,0 and precision "country", and their
 // places have lat/lng 0,0: the integrator geocodes the places and moves the
@@ -44,12 +47,12 @@ export const MAX_HEADLINES = 200;
 export const RECENT_DAYS = 7;
 /** Distinct outlets an event needs before it is believed. */
 export const MIN_OUTLETS = 2;
-/** Distinct outlets at which an event counts as widely carried, and so significant (see newsSeverity). */
-export const SIGNIFICANT_OUTLETS = 4;
 /** Deaths its headlines report at which an event counts as significant ... */
 export const SIGNIFICANT_DEATHS = 5;
 /** ... and as severe. */
 export const SEVERE_DEATHS = 100;
+/** A reported toll at or above this is a misreading (no disaster this century came near it). */
+export const MAX_DEATHS = 1_000_000;
 export const MAX_PLACES = 8;
 export const MAX_LINKS = 6;
 export const MAX_TITLE = 80;
@@ -355,6 +358,10 @@ export const NEWS_SCHEMA = z.object({
         .describe(`At most ${MAX_PLACES}, only places the headlines name.`),
       headlineIds: z.array(z.number().int()).describe("Numbers of every headline about this event."),
       ongoing: z.boolean(),
+      deaths: z
+        .number()
+        .nullable()
+        .describe(`Whole number of people its headlines report killed by this event, below ${MAX_DEATHS}; null when none states a toll.`),
     }),
   ),
 });
@@ -380,6 +387,7 @@ export function newsSystemPrompt(now: string): string {
     `places: up to ${MAX_PLACES} specific cities, towns, districts, provinces or sites in that country that the headlines name as hit, most affected first. name: as the headline spells it, without the country. admin: the province, state or region it is in when the headline says or it is certain, else "". kind: city, town, district (a district, county or municipality), region (a province, state or wider region) or site (a volcano, mountain, dam or other single site). impact: at most 6 words from the headlines on what happened there, e.g. "flooded" or "evacuated", else "". Never add a place the headlines do not name; leave out the country itself and places mentioned only in passing (where aid comes from, where a survivor lives). An empty list when no place is named.`,
     "headlineIds: the numbers of every headline about this event.",
     `ongoing: true when the disaster or its direct effects (flooding, fires, rescue, evacuation) are happening now or it struck within the last ${RECENT_DAYS} days; false when the headlines say it is over or it is older.`,
+    "deaths: how many people this disaster has killed as its headlines state it, a whole number: the highest toll any of them gives (\"kills at least 16\" is 16, \"four dead\" is 4, \"a woman killed\" is 1, \"dozens dead\" is 24, \"hundreds dead\" is 200). null when no headline states a toll. Never count projections or estimates (\"could kill 31,400\"), the injured or missing, animals, homes or buildings, ages or family sizes (\"72-year-old\", \"mother-of-five\"), dates, times or durations (\"as of 12 October\", \"24-hour downpour\"), or the toll of another event (a road crash, an earlier disaster), even when its headline is in this event's list. For one country's part of a disaster that hits several, that country's toll when the headlines give it.",
   ].join("\n");
 }
 
@@ -552,64 +560,25 @@ export function timeSpan(headlines: NewsHeadline[], now: string): { started: str
   return { started: times[0] ?? nowIso, updated: times[times.length - 1] ?? nowIso };
 }
 
-/** Numbers headlines write in words, with the least each can mean ("dozens" at least 24). */
-const NUMBER_WORDS: Record<string, number> = {
-  one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12, thirteen: 13,
-  fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20, thirty: 30, forty: 40, fifty: 50,
-  "a dozen": 12, dozens: 24, scores: 40, hundreds: 200, thousands: 2000,
-};
-
-/** A number as headlines write it ("16", "1,200", "four", "dozens of"), or NaN for a year such as 2025, which counts no one. */
-function countOf(raw: string): number {
-  const word = raw.toLowerCase().replace(/\s+of$/, "").replace(/\s+/g, " ");
-  if (Object.hasOwn(NUMBER_WORDS, word)) return NUMBER_WORDS[word];
-  if (/^(?:19|20)\d\d$/.test(raw)) return NaN;
-  return Number(raw.replace(/,/g, ""));
-}
-
-const NUMBER = String.raw`(\d{1,3}(?:,\d{3})+|\d{1,6}|(?:${Object.keys(NUMBER_WORDS)
-  .sort((a, b) => b.length - a.length)
-  .map((w) => w.replace(" ", String.raw`\s+`))
-  .join("|")})(?:\s+of)?)`;
-const ABOUT = String.raw`(?:at\s+least\s+|more\s+than\s+|over\s+|nearly\s+|almost\s+|about\s+|around\s+|some\s+|up\s+to\s+)?`;
-/** Ways headlines report deaths: "16 killed", "12 people dead", "kills at least 16", "claims 5 lives", "death toll rises to 6". */
-const DEATH_PATTERNS: readonly RegExp[] = [
-  new RegExp(String.raw`\b${NUMBER}\s+(?:people\s+|persons\s+|residents\s+|villagers\s+|children\s+|tourists\s+|workers\s+)?(?:(?:are|were|now|have\s+been|confirmed|feared|reported)\s+)?(?:dead|killed|died|dies|die|deaths|lives\s+lost|bodies)\b`, "gi"),
-  new RegExp(String.raw`\b(?:kills?|killed|killing|claims?|claimed|claiming)\s+${ABOUT}${NUMBER}\b`, "gi"),
-  new RegExp(String.raw`\bdeath\s+toll\b(?:[^\d.!?]{0,60}?)\b(?:to|at|of|hits|reaches|nears|tops|passes|exceeds)?\s*${ABOUT}${NUMBER}\b`, "gi"),
-];
-
 /**
- * The most deaths any headline reports, by fixed patterns on its English
- * text: "Magnitude 7 earthquake kills at least 16", "Death Toll from Mount
- * Bromo Forest Fire Rises to 6", "16 killed after quake", "floods leave
- * four dead", "dozens dead". Years are no counts. 0 when none reports any.
+ * The model's death toll for an event, checked: a whole number from 0 to
+ * below MAX_DEATHS. Anything else (null, a fraction, a negative number, a
+ * string, a toll no disaster reaches) is null, as when no headline states one.
  */
-export function reportedDeaths(texts: readonly string[]): number {
-  let most = 0;
-  for (const text of texts) {
-    for (const re of DEATH_PATTERNS) {
-      for (const m of text.matchAll(re)) {
-        const n = countOf(m[1]);
-        if (Number.isFinite(n) && n > most) most = n;
-      }
-    }
-  }
-  return most;
+export function deathsOf(raw: unknown): number | null {
+  return typeof raw === "number" && Number.isInteger(raw) && raw >= 0 && raw < MAX_DEATHS ? raw : null;
 }
 
 /**
- * An event's severity from its own headlines, since a news event has no
- * alert level of its own: severe (3) when they report SEVERE_DEATHS deaths
- * or more; significant (2) when they report SIGNIFICANT_DEATHS or more, or
- * when SIGNIFICANT_OUTLETS distinct outlets or more carry it; minor (1)
- * otherwise, and minor disasters are left off the map.
+ * A news event's severity, since it has no alert level of its own: severe
+ * (3) when its headlines report SEVERE_DEATHS deaths or more, significant (2)
+ * at SIGNIFICANT_DEATHS or more, minor (1) otherwise, and minor disasters are
+ * left off the map. The toll is checked again (deathsOf), since merge.ts
+ * also rates news reports read back from the snapshot file.
  */
-export function newsSeverity(headlines: readonly Pick<NewsHeadline, "text" | "outlet">[]): Severity {
-  const deaths = reportedDeaths(headlines.map((h) => h.text));
-  if (deaths >= SEVERE_DEATHS) return 3;
-  const outlets = new Set(headlines.map((h) => h.outlet.trim().toLowerCase()).filter(Boolean)).size;
-  return deaths >= SIGNIFICANT_DEATHS || outlets >= SIGNIFICANT_OUTLETS ? 2 : 1;
+export function newsSeverity(deaths: unknown): Severity {
+  const n = deathsOf(deaths) ?? 0;
+  return n >= SEVERE_DEATHS ? 3 : n >= SIGNIFICANT_DEATHS ? 2 : 1;
 }
 
 /** One model event that passed the checks, before it becomes a SourceEvent. */
@@ -620,9 +589,11 @@ interface Candidate {
   title: string;
   places: Place[];
   headlines: NewsHeadline[];
+  /** Checked toll (deathsOf); null when no headline states one. */
+  deaths: number | null;
 }
 
-/** Checks one model event: known type, ongoing, a country on the globe. Null when it fails. */
+/** Checks one model event: known type, ongoing, a country on the globe. Null when it fails; a toll that fails deathsOf counts as none. */
 function toCandidate(e: unknown, headlines: NewsHeadline[], known: Set<string>, resolve: CountryResolver): Candidate | null {
   if (!e || typeof e !== "object") return null;
   const r = e as Record<string, unknown>;
@@ -634,10 +605,10 @@ function toCandidate(e: unknown, headlines: NewsHeadline[], known: Set<string>, 
   if (!country) return null;
   const places = newsPlaces(r.places, country, own, resolve);
   const title = cutText(cleanText(r.title), MAX_TITLE) || cutText(own[0].text, MAX_TITLE);
-  return { id: newsSourceId(type, country, places.map((p) => p.name)), type, country, title, places, headlines: own };
+  return { id: newsSourceId(type, country, places.map((p) => p.name)), type, country, title, places, headlines: own, deaths: deathsOf(r.deaths) };
 }
 
-/** Joins candidates with the same id (same type, country and places): headlines are pooled. */
+/** Joins candidates with the same id (same type, country and places): headlines are pooled, and the higher toll kept. */
 function mergeCandidates(list: Candidate[]): Candidate[] {
   const byId = new Map<string, Candidate>();
   for (const c of list) {
@@ -648,18 +619,20 @@ function mergeCandidates(list: Candidate[]): Candidate[] {
     }
     for (const h of c.headlines) if (!prev.headlines.some((x) => x.url === h.url)) prev.headlines.push(h);
     prev.headlines.sort((a, b) => b.published.localeCompare(a.published));
+    prev.deaths = higherToll(prev.deaths, c.deaths);
   }
   return [...byId.values()];
 }
 
-/** The SourceEvent for a checked candidate, rated by its headlines (newsSeverity), placed at 0,0 until the integrator geocodes it. */
+/** The SourceEvent for a checked candidate, rated by its toll (newsSeverity), placed at 0,0 until the integrator geocodes it. */
 function toSourceEvent(c: Candidate, now: string): SourceEvent {
   return {
     source: "news",
     sourceId: c.id,
     type: c.type,
     title: c.title,
-    severity: newsSeverity(c.headlines),
+    severity: newsSeverity(c.deaths),
+    ...(c.deaths !== null ? { deaths: c.deaths } : {}),
     countries: [c.country],
     lat: 0,
     lng: 0,
@@ -684,6 +657,11 @@ export function overlapScore(a: SourceEvent, b: SourceEvent): number {
   return links * 2 + places;
 }
 
+/** The higher of two checked tolls; null only when neither states one. */
+function higherToll(a: number | null, b: number | null): number | null {
+  return a === null ? b : b === null ? a : Math.max(a, b);
+}
+
 /** A previous news event this module can carry an id from: right source, a string id, a country list. */
 function isCarriable(p: unknown): p is SourceEvent {
   if (!p || typeof p !== "object") return false;
@@ -695,7 +673,11 @@ function isCarriable(p: unknown): p is SourceEvent {
  * Gives events the id of the previous run's matching news event, so an event
  * keeps its id (and the disaster its cached research) when the model names
  * one more town. Exact ids pair first, then the best overlaps; each previous
- * id goes to one event. A carried event keeps the earlier start time.
+ * id goes to one event. A carried event keeps the earlier start time and the
+ * higher of the two tolls (a toll only rises), rated again by newsSeverity:
+ * the headlines that state a toll leave the feeds before the event ends, and
+ * without this it would drop off the map while still ongoing. The toll lasts
+ * only while the model still returns the event as ongoing.
  */
 export function carryIds(events: SourceEvent[], previous: SourceEvent[]): SourceEvent[] {
   const prev = (Array.isArray(previous) ? previous : []).filter(isCarriable);
@@ -726,16 +708,19 @@ export function carryIds(events: SourceEvent[], previous: SourceEvent[]): Source
     const p = assigned.get(i);
     if (!p) return e;
     const started = Date.parse(p.started) < Date.parse(e.started) ? new Date(Date.parse(p.started)).toISOString() : e.started;
-    return { ...e, sourceId: p.sourceId, started };
+    const deaths = higherToll(deathsOf(p.deaths), deathsOf(e.deaths));
+    const toll = deaths === null ? {} : { deaths, severity: newsSeverity(deaths) };
+    return { ...e, sourceId: p.sourceId, started, ...toll };
   });
 }
 
 /**
  * Turns the model's answer into SourceEvents. Kept: ongoing events of a known
  * type, in a country on the globe, with headlines from at least MIN_OUTLETS
- * outlets. Places must be named in the event's own headlines. Every event is
- * at 0,0 with precision "country"; its places are at 0,0 too, for the
- * integrator to geocode.
+ * outlets. Places must be named in the event's own headlines. Each is rated
+ * by the toll the model read from them (deathsOf, newsSeverity); no number
+ * is read from the headlines here. Every event is at 0,0 with precision
+ * "country"; its places are at 0,0 too, for the integrator to geocode.
  */
 export function toNewsEvents(
   parsed: NewsParse | null | undefined,

@@ -179,6 +179,12 @@ export interface SourceEvent {
   severity: Severity;
   /** e.g. "Magnitude 6.6, depth 10 km" or "Winds up to 260 km/h". */
   severityText?: string;
+  /**
+   * News reports only: how many people the event's headlines say it killed,
+   * as the model read them (news.ts); absent when none states a toll. A news
+   * report's severity comes from this alone (merge.ts memberSeverity).
+   */
+  deaths?: number;
   /** Globe country codes, primary first. May be empty for events at sea. */
   countries: string[];
   lat: number;
