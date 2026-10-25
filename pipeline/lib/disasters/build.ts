@@ -422,6 +422,8 @@ export interface DisasterRun {
    * pipeline/config/languages.json when left out.
    */
   pressNames?: Record<string, string>;
+  /** Globe code -> the country's press language ("ar"), for its places' own names and its pages; read from pipeline/config/languages.json when left out. */
+  pressLanguages?: Record<string, string>;
   /** No fetching, geocoding, model calls or live checks: rebuild from the caches. */
   offline?: boolean;
   /** Epoch ms after which no new research or live donation check starts. */
@@ -607,6 +609,15 @@ export function readPressNames(path?: string): Record<string, string> {
   }
 }
 
+/** Each country's press language ("MA" -> "ar"), from pipeline/config/languages.json; none when it cannot be read. */
+export function readPressLanguages(path?: string): Record<string, string> {
+  try {
+    return Object.fromEntries(Object.entries(loadLanguages(path).languages).map(([code, v]) => [code, v.lang]));
+  } catch {
+    return {};
+  }
+}
+
 /**
  * The hosts, without "www.", of the site's own articles that link their
  * publisher (Google News links are Google's own), so a local group's page
@@ -636,7 +647,8 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
 
   // The run's one geocoder: Nominatim at one request a second, cached forever.
   const geocodeCache = readGeocodeCache(paths.geocode);
-  const geocoder = createGeocoder(deps, geocodeCache, now, run.offline ? { maxLookups: 0 } : { backfillLocal: LOCAL_NAME_BACKFILL });
+  const pressLanguages = run.pressLanguages ?? readPressLanguages();
+  const geocoder = createGeocoder(deps, geocodeCache, now, run.offline ? { maxLookups: 0 } : { backfillLocal: LOCAL_NAME_BACKFILL, pressLanguages });
 
   // Disasters in the site's own headlines, placed by geocoding their places.
   let newsEvents = next.news?.events ?? [];
@@ -715,7 +727,7 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   const unreachable = new Set<string>();
   for (const d of disasters) {
     const localNames = localPlaceNames(geocodeCache, d.places);
-    const direct: DirectInput = { disaster: d, entry: cache[d.id], gofundme, ctx: contextOf(d), countryNames: run.countryNames, pressNames, newsHosts, localNames };
+    const direct: DirectInput = { disaster: d, entry: cache[d.id], gofundme, ctx: contextOf(d), countryNames: run.countryNames, pressNames, pressLanguages, newsHosts, localNames };
     if (run.offline || checks >= MAX_DONATION_CHECKS || Date.now() > (run.deadline ?? Infinity)) {
       d.donate = buildDonations({ ...donationInput(d, cache[d.id], run.countryNames), direct: buildDirectLinks(direct, registry, now) }, registry, now, gov);
       continue;

@@ -100,6 +100,8 @@ export interface GeocoderOptions {
   retryMs?: number;
   missRetryDays?: number;
   endpoint?: string;
+  /** Each country's press language (pipeline/config/languages.json), whose names (name:<lang>) a place's own names are read in too. */
+  pressLanguages?: Readonly<Record<string, string>>;
 }
 
 export interface Geocoder {
@@ -391,32 +393,106 @@ export function hitArea(geojson: unknown): AreaGeometry | undefined {
 /** namedetails keys of a place's own names: its name in its own language, the place it stands for, its official and short names. */
 const LOCAL_NAME_KEYS = ["name", "_place_name", "official_name", "short_name"] as const;
 /** Most local names kept for one place. */
-const MAX_LOCAL_NAMES = 4;
+const MAX_LOCAL_NAMES = 6;
+
+/** Scripts a name's words are grouped by; Chinese characters and Japanese kana count as one. */
+const SCRIPTS: readonly [string, RegExp][] = [
+  ["Latin", /\p{Script=Latin}/u],
+  ["Arabic", /\p{Script=Arabic}/u],
+  ["Tifinagh", /\p{Script=Tifinagh}/u],
+  ["Cyrillic", /\p{Script=Cyrillic}/u],
+  ["Greek", /\p{Script=Greek}/u],
+  ["CJK", /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u],
+  ["Hangul", /\p{Script=Hangul}/u],
+  ["Thai", /\p{Script=Thai}/u],
+  ["Lao", /\p{Script=Lao}/u],
+  ["Khmer", /\p{Script=Khmer}/u],
+  ["Myanmar", /\p{Script=Myanmar}/u],
+  ["Devanagari", /\p{Script=Devanagari}/u],
+  ["Bengali", /\p{Script=Bengali}/u],
+  ["Hebrew", /\p{Script=Hebrew}/u],
+  ["Ethiopic", /\p{Script=Ethiopic}/u],
+  ["Georgian", /\p{Script=Georgian}/u],
+  ["Armenian", /\p{Script=Armenian}/u],
+  ["Sinhala", /\p{Script=Sinhala}/u],
+  ["Tamil", /\p{Script=Tamil}/u],
+];
+
+/** The script of a word's first letter, or null for a word without letters. */
+function scriptOf(word: string): string | null {
+  const letter = /\p{L}/u.exec(word)?.[0];
+  if (!letter) return null;
+  return SCRIPTS.find(([, re]) => re.test(letter))?.[0] ?? "Other";
+}
+
+/**
+ * A name split into one name per script, its words kept together within
+ * each: OpenStreetMap gives Moroccan places one name in three scripts,
+ * "Marrakech ⵎⵕⵕⴰⴽⵯⵛ مراكش" -> ["Marrakech", "ⵎⵕⵕⴰⴽⵯⵛ", "مراكش"]. A name in one
+ * script is returned as it is; words without letters stay with the word
+ * before them.
+ */
+export function splitScripts(name: string): string[] {
+  const words = name.trim().split(/\s+/).filter(Boolean);
+  const groups: { script: string | null; words: string[] }[] = [];
+  for (const w of words) {
+    const script = scriptOf(w);
+    const last = groups[groups.length - 1];
+    if (last && (script === null || last.script === script || last.script === null)) {
+      last.words.push(w);
+      if (last.script === null) last.script = script;
+    } else groups.push({ script, words: [w] });
+  }
+  return groups.map((g) => g.words.join(" ")).filter((g) => /\p{L}/u.test(g));
+}
+
+/**
+ * The languages a country's places' own names are read in from
+ * namedetails (name:<lang>): its press language and the language most
+ * spoken there (CLDR: "MA" -> "ar"), each once.
+ */
+export function nameLanguagesOf(country: string, pressLanguage?: string): string[] {
+  const out = new Set<string>();
+  if (pressLanguage) out.add(pressLanguage.toLowerCase().split("-")[0]);
+  try {
+    out.add(new Intl.Locale(`und-${country.toUpperCase()}`).maximize().language);
+  } catch {
+    // no such region
+  }
+  out.delete("en");
+  out.delete("und");
+  return [...out];
+}
 
 /**
  * A place's own names from Nominatim's namedetails, each once, those that
- * are not the English name shown ("จังหวัดเชียงราย" and "เชียงราย" for
- * Chiang Rai Province); [] when it has no other, undefined without
- * namedetails.
+ * are not the English name shown: first its names in the country's
+ * languages (name:<lang>, see nameLanguagesOf: "إقليم الحوز" for Al
+ * Haouz), then its name, the place it stands for, its official and short
+ * names, each split by script (splitScripts: "Province d'Al Haouz ⵜⴰⵙⴳⴰ ⵏ
+ * ⵍⵃⵓⵣ إقليم الحوز" gives three); at most MAX_LOCAL_NAMES ("จังหวัดเชียงราย"
+ * and "เชียงราย" for Chiang Rai Province). [] when it has no other,
+ * undefined without namedetails.
  */
-export function localNamesOf(namedetails: unknown, englishName: string): string[] | undefined {
+export function localNamesOf(namedetails: unknown, englishName: string, languages: readonly string[] = []): string[] | undefined {
   if (typeof namedetails !== "object" || namedetails === null || Array.isArray(namedetails)) return undefined;
   const details = namedetails as Record<string, unknown>;
   const seen = new Set([normaliseKeyPart(englishName)]);
   const out: string[] = [];
-  for (const key of LOCAL_NAME_KEYS) {
+  for (const key of [...languages.map((l) => `name:${l}`), ...LOCAL_NAME_KEYS]) {
     const v = details[key];
-    const name = typeof v === "string" ? v.trim().slice(0, 80) : "";
-    const k = normaliseKeyPart(name);
-    if (!k || seen.has(k) || out.length >= MAX_LOCAL_NAMES) continue;
-    seen.add(k);
-    out.push(name);
+    for (const name of splitScripts(typeof v === "string" ? v.trim().slice(0, 120) : "")) {
+      const k = normaliseKeyPart(name);
+      if (!k || seen.has(k) || out.length >= MAX_LOCAL_NAMES) continue;
+      seen.add(k);
+      out.push(name.slice(0, 80));
+    }
   }
   return out;
 }
 
 /** One result as a GeoHit for the globe country searched, or null when it is unusable. */
-export function toGeoHit(r: NominatimResult, country: string, queryName: string, queryAdmin?: string): GeoHit | null {
+export function toGeoHit(r: NominatimResult, country: string, queryName: string, queryAdmin?: string, languages: readonly string[] = nameLanguagesOf(country)): GeoHit | null {
   const lat = Number(r.lat);
   const lng = Number(r.lon);
   if (!Number.isFinite(lat) || !Number.isFinite(lng) || Math.abs(lat) > 90 || Math.abs(lng) > 180) return null;
@@ -425,7 +501,7 @@ export function toGeoHit(r: NominatimResult, country: string, queryName: string,
   const name = pickName(r.name, queryName);
   const admin = pickAdmin(r.address, name, queryAdmin);
   const area = kind === "district" || kind === "region" ? hitArea(r.geojson) : undefined;
-  const local = localNamesOf(r.namedetails, name);
+  const local = localNamesOf(r.namedetails, name, languages);
   return {
     name,
     displayName: (r.display_name ?? "").trim() || name,
@@ -465,6 +541,7 @@ export function pickBest(
   queryAdmin?: string,
   preferAdmin?: string,
   want?: PlaceKind,
+  languages: readonly string[] = nameLanguagesOf(country),
 ): GeoHit | null {
   if (!Array.isArray(results)) return null;
   const ranked: { r: NominatimResult; index: number; tier: number; inAdmin: boolean; off: number }[] = [];
@@ -478,7 +555,7 @@ export function pickBest(
   });
   ranked.sort((a, b) => a.tier - b.tier || Number(b.inAdmin) - Number(a.inAdmin) || a.off - b.off || a.index - b.index);
   for (const { r } of ranked) {
-    const hit = toGeoHit(r, country, queryName, queryAdmin);
+    const hit = toGeoHit(r, country, queryName, queryAdmin, languages);
     if (hit) return hit;
   }
   return null;
@@ -603,6 +680,8 @@ export function createGeocoder(deps: FetchDeps, cache: GeocodeCache, now: string
   const missRetryDays = opts.missRetryDays ?? MISS_RETRY_DAYS;
   const endpoint = opts.endpoint ?? NOMINATIM_URL;
   const backfillLocal = opts.backfillLocal ?? 0;
+  const press = opts.pressLanguages ?? {};
+  const languagesOf = (country: string) => nameLanguagesOf(country, Object.hasOwn(press, country) ? press[country] : undefined);
 
   let lookups = 0;
   let backfills = 0;
@@ -641,7 +720,8 @@ export function createGeocoder(deps: FetchDeps, cache: GeocodeCache, now: string
         return null;
       }
       // The first search matched the admin, so it may stand in for a missing one; the fallback only prefers it.
-      const hit = i === 0 ? pickBest(results, country, name, admin, undefined, want) : pickBest(results, country, name, undefined, admin, want);
+      const langs = languagesOf(country);
+      const hit = i === 0 ? pickBest(results, country, name, admin, undefined, want, langs) : pickBest(results, country, name, undefined, admin, want, langs);
       if (hit) {
         cache[key] = { hit, at: now };
         return hit;
@@ -665,7 +745,7 @@ export function createGeocoder(deps: FetchDeps, cache: GeocodeCache, now: string
     const results = await search(searchQuery(name, admin), cc);
     if (!results) return old;
     backfills++;
-    const fresh = pickBest(results, country, name, admin, undefined, want);
+    const fresh = pickBest(results, country, name, admin, undefined, want, languagesOf(country));
     const same = fresh !== null && fresh.name === old.name && Math.abs(fresh.lat - old.lat) < 0.05 && Math.abs(fresh.lng - old.lng) < 0.05;
     const hit = { ...old, local: same ? (fresh.local ?? []) : [] };
     cache[key] = { ...entry, hit };

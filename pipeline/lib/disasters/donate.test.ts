@@ -25,6 +25,7 @@ import {
   UN_DOMAINS,
   UNCR_SITEMAP,
   COUNTRY_ALIASES,
+  STORM_WORDS,
   appealCountriesIn,
   buildDonations,
   checkDonationPage,
@@ -33,6 +34,7 @@ import {
   compileTerm,
   countriesNamedIn,
   countryNameIndex,
+  countrySpans,
   decodeEntities,
   donationContext,
   donationUrlProblem,
@@ -58,6 +60,7 @@ import {
   knownOrg,
   landingAnswer,
   loadGovernmentDomains,
+  loadStormAliases,
   nextToCheck,
   normaliseRegistry,
   normaliseSiteUrl,
@@ -75,6 +78,7 @@ import {
   refreshRegistry,
   researchKind,
   researchedLinks,
+  stormNamesOf,
   searchDomains,
   siteHost,
   siteScope,
@@ -1075,6 +1079,51 @@ describe("countryNameIndex and countriesNamedIn", () => {
     expect(countriesNamedIn([], index)).toEqual([]);
     // A long slug is read in full, a name's length at a time.
     expect(countriesNamedIn([...Array<string>(500).fill("x"), "south", "sudan"], index)).toEqual([["SS"]]);
+  });
+});
+
+describe("countrySpans and the state and city aliases", () => {
+  const { index } = countryNameIndex(NAMES);
+  it("gives each country name's place, key and codes, the longest name only", () => {
+    expect(countrySpans(["papua", "new", "guinea", "floods"], index)).toEqual([{ start: 0, end: 3, key: "papuanewguinea", codes: ["PG"] }]);
+    expect(countrySpans(["help", "south", "sudan"], index).map((s) => s.key)).toEqual(["southsudan"]);
+  });
+
+  it("reads New Jersey, the Jersey Shore and Jersey City as the United States, and Panama City as either", () => {
+    expect(countriesNamedIn(["new", "jersey"], index)).toEqual([["US"]]);
+    expect(countriesNamedIn(["jersey", "shore", "flood"], index)).toEqual([["US"]]);
+    expect(countriesNamedIn(["jersey", "city"], index)).toEqual([["US"]]);
+    expect(countriesNamedIn(["panama", "city"], index)[0].sort()).toEqual(["PA", "US"]);
+  });
+});
+
+describe("storms' other names", () => {
+  it("reads the storm-name list each way round, and none from a missing file", () => {
+    const aliases = loadStormAliases();
+    expect(aliases.kalmaegi).toEqual(["tino"]);
+    expect(aliases.tino).toEqual(["kalmaegi"]);
+    expect(aliases.kongrey).toEqual(["leon"]);
+    expect(loadStormAliases("/nonexistent/storm-names.json")).toEqual({});
+    expect(STORM_WORDS.has("bagyong")).toBe(true);
+  });
+
+  it("names the title's storms and their other names, from the list and from IFRC appeals' names", () => {
+    const appeal = (name: string) => ({ name });
+    expect(stormNamesOf("Typhoon Kalmaegi", ["kalmaegi"], [], { kalmaegi: ["tino"] })).toEqual(["kalmaegi", "tino"]);
+    expect(stormNamesOf("Typhoon Kong-rey", ["kong", "rey"], [], { kongrey: ["leon"] })).toEqual(["kong", "leon"]);
+    expect(stormNamesOf("Typhoon Halong", ["halong"], [appeal("Philippines: Typhoon Halong (Basyang)")])).toEqual(["halong", "basyang"]);
+    // A bracket that is a code, a country or a hazard is no storm's name.
+    expect(stormNamesOf("Typhoon Halong", ["halong"], [appeal("Typhoon Halong (DREF)"), appeal("Typhoon Halong (Philippines)"), appeal("Typhoon Halong (Flood)")], {}, new Set(["philippines"]))).toEqual([
+      "halong",
+    ]);
+    expect(stormNamesOf("Floods in Chiang Rai, Thailand", ["chiang", "rai"], [], { rai: ["odette"] })).toEqual([]);
+  });
+
+  it("lets the donation context take a storm's other names as its names", () => {
+    const ctx = donationContext(["PH"], emptyRegistry(), {}, { title: "Typhoon Kalmaegi", countryNames: { PH: "Philippines" } });
+    expect(ctx.stormNames).toEqual(["kalmaegi", "tino"]);
+    expect(ctx.eventWords).toEqual(["kalmaegi", "tino"]);
+    expect(donationContext(["MA"], emptyRegistry(), {}, { title: "Morocco Earthquake", countryNames: { MA: "Morocco" } }).stormNames).toBeUndefined();
   });
 });
 

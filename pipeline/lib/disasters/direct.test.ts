@@ -20,9 +20,11 @@ import {
   MAX_LOCAL_CHECKS,
   MAX_SLUGS,
   VERIFIED_NOTE,
+  asciiDigits,
   blankHub,
   buildDirectLinks,
   checkLocalPage,
+  countryNamesIn,
   disasterStorms,
   earlierEventProblem,
   emptyGoFundMeCache,
@@ -32,9 +34,11 @@ import {
   feedSlugs,
   feedUrl,
   focusOf,
+  foreignCountryIn,
   fundraiserSlugOf,
   fundraiserUrl,
   givenSince,
+  gregorianYears,
   globalGivingLink,
   globalGivingPage,
   globalGivingProblem,
@@ -52,6 +56,7 @@ import {
   hubWanted,
   isHubPage,
   isNamedStorm,
+  leadYearProblem,
   localAddressProblem,
   localLabel,
   localNote,
@@ -61,9 +66,14 @@ import {
   localUrlProblem,
   localVerdictKey,
   matchHub,
+  mixedScriptWord,
+  modifiedOf,
+  nameLanguages,
   nameForms,
+  nameText,
   normaliseGoFundMeCache,
   otherStorm,
+  ownTitle,
   ownCountryNames,
   pageDateProblem,
   parseFeed,
@@ -71,6 +81,7 @@ import {
   parseHubIndex,
   partnerLinks,
   partnerUrl,
+  platformProblem,
   pathProblem,
   paymentProblem,
   placeNamedIn,
@@ -85,8 +96,10 @@ import {
   refreshGoFundMe,
   sameSite,
   slugWords,
+  societyAcronyms,
   stormAftermath,
   titlePlaces,
+  timeOf,
   titleWithoutSite,
   topicProblem,
   verifyLocalPage,
@@ -186,6 +199,9 @@ describe("hazardWordsIn", () => {
     expect(hazardWordsIn("บริจาคช่วยน้ำท่วมเชียงราย")).toEqual(["flood"]);
     expect(hazardWordsIn("能登半島地震 義援金")).toEqual(["earthquake"]);
     expect(hazardWordsIn("تبرع لضحايا زلزال الحوز")).toEqual(["earthquake"]);
+    // Nepali spells a flood बाढी, a landslide पहिरो and a forest fire डढेलो.
+    expect(hazardWordsIn("बाढी पीडितलाई सहयोग")).toEqual(["flood"]);
+    expect(hazardWordsIn("पहिरो र डढेलो")).toEqual(["landslide", "wildfire"]);
     expect(hazardWordsIn("Aide après le tremblement de terre")).toEqual(["earthquake"]);
     expect(hazardWordsIn("Ủng hộ đồng bào lũ lụt miền Trung")).toEqual(["flood"]);
     // A word that only contains a hazard's letters names none.
@@ -958,7 +974,7 @@ describe("globalGivingProblem", () => {
   /** Days after the disaster's start, as the search would date a page. */
   const after = (d: Pick<Disaster, "started">, days: number) => new Date(Date.parse(d.started) + days * 24 * HOUR).toISOString();
 
-  it("accepts a fund named for the storm, for the country and its hazard with a recent year, or for a place of the title the search dates", () => {
+  it("accepts a fund named for the storm, or for the country or a place of the title and its hazard with a recent year", () => {
     expect(problem(gg("hurricane-melissa-relief-fund", "Hurricane Melissa Relief Fund - GlobalGiving"))).toBeNull();
     // The title can name the storm when the slug does not.
     expect(problem(gg("rebuild-schools-after-the-storm", "Rebuild Jamaica's schools after Hurricane Melissa"))).toBeNull();
@@ -966,19 +982,25 @@ describe("globalGivingProblem", () => {
     // A season that runs into the disaster's year is recent.
     expect(problem(gg("venezuela-earthquake-relief-2025-26"), VENEZUELA)).toBeNull();
     const sucre = disaster({ countries: ["VE"], type: "earthquake", title: "Earthquake in Sucre, Venezuela", started: "2026-10-20T00:00:00.000Z" });
-    expect(problem(gg("sucre-earthquake-relief", "", after(sucre, 2)), sucre)).toBeNull();
+    expect(problem(gg("sucre-earthquake-relief-2026", "", after(sucre, 2)), sucre)).toBeNull();
   });
 
-  it("does not take the search's date alone for a fund named only for a country and a hazard (a 2015 fund for a new quake)", () => {
+  it("does not take the search's date as proof: a fund named only for a country or a place and a hazard may be years old (a 2015 fund for a new quake)", () => {
     // GlobalGiving's Nepal fund dates from the 2015 earthquake; the search's date is the day the page last changed.
     const nepal = disaster({ countries: ["NP"], type: "earthquake", title: "Earthquake in Nepal", started: "2026-10-20T00:00:00.000Z" });
     expect(problem(gg("nepal-earthquake-relief-fund", "Nepal Earthquake Relief Fund - GlobalGiving", after(nepal, 3)), nepal)).toBe(
-      "nothing dates it to this disaster (no storm name or recent year, nor a search date with a place of its title)",
+      "nothing dates it to this disaster (no storm name or recent year)",
     );
     expect(problem(gg("venezuela-earthquake-relief-fund", "", after(VENEZUELA, 2)), VENEZUELA)).toMatch(/^nothing dates it/);
-    // A place of the title with the search's date, or a recent year, does date it.
+    // A place of the title with the search's date is no proof either (the 2026-10-25 review's Kerala fund, a 2018-style fund, and a 2024 Chiang Rai fund).
+    const kerala = disaster({ countries: ["IN"], type: "flood", title: "Floods in Kerala, India", started: "2026-10-10T00:00:00.000Z" });
+    expect(problem(gg("kerala-flood-relief-fund", "Kerala Flood Relief Fund - GlobalGiving", "2026-10-14T00:00:00Z"), kerala)).toBe("nothing dates it to this disaster (no storm name or recent year)");
+    const chiangRai = disaster({ countries: ["TH"], type: "flood", title: "Floods in Chiang Rai, Thailand", started: "2026-10-10T00:00:00.000Z" });
+    expect(problem(gg("chiang-rai-flood-relief", "Chiang Rai Flood Relief - GlobalGiving", "2026-10-14T00:00:00Z"), chiangRai)).toMatch(/^nothing dates it/);
     const jajarkot = disaster({ countries: ["NP"], type: "earthquake", title: "Earthquake in Jajarkot, Nepal", started: "2026-10-20T00:00:00.000Z" });
-    expect(problem(gg("jajarkot-earthquake-relief", "", after(jajarkot, 3)), jajarkot)).toBeNull();
+    expect(problem(gg("jajarkot-earthquake-relief", "", after(jajarkot, 3)), jajarkot)).toMatch(/^nothing dates it/);
+    // A recent year does date it.
+    expect(problem(gg("jajarkot-earthquake-relief-2026", "", after(jajarkot, 3)), jajarkot)).toBeNull();
     expect(problem(gg("nepal-earthquake-relief-2026"), nepal)).toBeNull();
   });
 
@@ -1007,13 +1029,12 @@ describe("globalGivingProblem", () => {
     const haiti = disaster({ countries: ["HT"], type: "earthquake", title: "Earthquake in Haiti", started: "2026-10-20T00:00:00.000Z" });
     expect(problem(gg("feed-children-in-haiti", "Feed children in Haiti 2026"), haiti)).toBe("names neither the hazard nor a place in the title");
     const turkey = disaster({ countries: ["TR"], type: "earthquake", title: "M 6.1 - 20 km of Sindirgi, Turkey", started: "2026-10-20T00:00:00.000Z" });
-    expect(problem(gg("turkey-earthquake-relief-fund", "Turkey Earthquake Relief Fund - GlobalGiving"), turkey)).toBe(
-      "nothing dates it to this disaster (no storm name or recent year, nor a search date with a place of its title)",
-    );
+    expect(problem(gg("turkey-earthquake-relief-fund", "Turkey Earthquake Relief Fund - GlobalGiving"), turkey)).toBe("nothing dates it to this disaster (no storm name or recent year)");
     // The search dated it to the 2023 earthquake.
     expect(problem(gg("turkey-earthquake-relief-fund", "", "2023-02-07T00:00:00.000Z"), turkey)).toBe("dated 2023-02-07, before the disaster");
     expect(problem(gg("turkey-earthquake-relief-fund", "", after(turkey, 1)), turkey)).toMatch(/^nothing dates it/);
-    expect(problem(gg("sindirgi-earthquake-relief-fund", "", after(turkey, 1)), turkey)).toBeNull();
+    expect(problem(gg("sindirgi-earthquake-relief-fund", "", after(turkey, 1)), turkey)).toMatch(/^nothing dates it/);
+    expect(problem(gg("sindirgi-earthquake-relief-2026", "", after(turkey, 1)), turkey)).toBeNull();
     const pakistan = disaster({ countries: ["PK"], type: "flood", title: "Pakistan: Floods", started: "2026-08-01T00:00:00.000Z" });
     expect(problem(gg("pakistan-flood-relief", "Pakistan Flood Relief Fund - GlobalGiving"), pakistan)).toMatch(/^nothing dates it/);
     expect(problem(gg("pakistan-flood-relief", "Pakistan Flood Relief Fund 2022 - GlobalGiving"), pakistan)).toBe("an earlier disaster's project (2022)");
@@ -1670,6 +1691,543 @@ describe("checkLocalPage: the review's pages (2026-10-25)", () => {
   });
 });
 
+// ---------------------------------------------------------------------------
+// The second review's rules, one function at a time (2026-10-25)
+// ---------------------------------------------------------------------------
+
+describe("asciiDigits, gregorianYears and eventYearsIn: other calendars and founding years", () => {
+  it("writes other scripts' digits as ASCII", () => {
+    expect(asciiDigits("भूकम्प २०७२")).toBe("भूकम्प 2072");
+    expect(asciiDigits("น้ำท่วม ๒๕๖๗ / ٢٠١٦ / ۱۴۰۲ / ２０２４")).toBe("น้ำท่วม 2567 / 2016 / 1402 / 2024");
+  });
+
+  it("reads Thai Buddhist years, Japanese eras and Nepal's Bikram Sambat as their latest Gregorian year", () => {
+    expect(gregorianYears("บริจาคช่วยน้ำท่วมเชียงราย 2567")).toBe("บริจาคช่วยน้ำท่วมเชียงราย 2024");
+    expect(gregorianYears("令和6年能登半島地震")).toBe("2024年能登半島地震");
+    expect(gregorianYears("令和元年 平成二十三年 昭和50年")).toBe("2019年 2011年 1975年");
+    expect(gregorianYears("भूकम्प २०७२")).toBe("भूकम्प 2016");
+    // Gregorian years stay: a Thai page's 2026, a Hindi page's २०२६, a 2567 on a page in another script.
+    expect(gregorianYears("น้ำท่วม 2026")).toBe("น้ำท่วม 2026");
+    expect(gregorianYears("बाढ़ २०२६")).toBe("बाढ़ 2026");
+    expect(gregorianYears("Paybill 2567")).toBe("Paybill 2567");
+  });
+
+  it("finds the review's old pages' years", () => {
+    expect(eventYearsIn("บริจาคช่วยน้ำท่วมเชียงราย 2567 | อาสาเชียงราย")).toEqual([2024]);
+    expect(eventYearsIn("令和6年能登半島地震 緊急支援募金")).toEqual([2024]);
+    expect(eventYearsIn("भूकम्प २०७२ पीडितलाई दान")).toEqual([2016]);
+  });
+
+  it("reads no founding or registration year as an event's, in the review's languages", () => {
+    for (const text of [
+      "Yayasan Al-Ikhlas, melayani Cianjur sejak 1990",
+      "Tunahudumia jamii tangu 1990",
+      "جمعية الأطلس في خدمة الحوز منذ 1990",
+      "1990年設立の某NPO 能登半島地震 緊急支援",
+      "تأسست عام 1990",
+      "itinatag noong 1990",
+      "mula noong 1990",
+      "ตั้งแต่ปี 2533",
+      "ก่อตั้งเมื่อปี 2533",
+      "स्थापना २०४७",
+      "1990 yılından beri",
+      "1990'dan beri",
+      "kuruluş 1990",
+      "основан в 1990 году",
+      "Kerala Flood Appeal (Reg. 1995)",
+      "Registered charity no. 1990-123",
+    ])
+      expect([text, eventYearsIn(text)]).toEqual([text, []]);
+  });
+
+  it("counts a span of up to five years as its last", () => {
+    expect(eventYearsIn("Bushfire Recovery 2025–2027")).toEqual([2027]);
+    expect(eventYearsIn("Black Summer 2025 - 2026 Bushfire Appeal")).toEqual([2026]);
+    expect(eventYearsIn("2010-2026 programme")).toEqual([2010, 2026]);
+  });
+});
+
+describe("titlePlaces: phrases with their connectors", () => {
+  it("keeps the words that join a place's name, and never joins across punctuation", () => {
+    expect(titlePlaces("Floods in Rio Grande do Sul, Brazil", ["rio", "grande", "sul"])).toEqual(["Rio Grande do Sul"]);
+    expect(titlePlaces("Earthquake in Port-au-Prince", ["port", "prince"])).toEqual(["Port-au-Prince"]);
+    expect(titlePlaces("Floods in Kerala, Tamil Nadu", ["kerala", "tamil", "nadu"])).toEqual(["Kerala", "Tamil Nadu"]);
+    expect(titlePlaces("Floods in Kerala and Tamil Nadu", ["kerala", "tamil", "nadu"])).toEqual(["Kerala", "Tamil Nadu"]);
+    expect(titlePlaces("Earthquake in Al Haouz, Morocco", ["haouz"])).toEqual(["Haouz"]);
+  });
+});
+
+describe("topicProblem: title places as whole phrases only", () => {
+  it("refuses a page that only shares a word with a place of the title (the review's Chiang Mai and Rio de Janeiro pages)", () => {
+    const br = disaster({ countries: ["BR"], type: "flood", title: "Floods in Rio Grande do Sul, Brazil" });
+    expect(topicProblem(["Doe | Casa do Menor Rio de Janeiro", "Faça sua doação", "/doe/"], "", { type: "flood" }, ctxFor(br))).toMatch(/^its title, heading and address name neither/);
+    expect(topicProblem(["Doe", "Enchentes: doe agora", "/doe/"], "", { type: "flood" }, ctxFor(br))).toBeNull();
+    expect(topicProblem(["SOS Rio Grande do Sul", "", "/doe/"], "", { type: "flood" }, ctxFor(br))).toBeNull();
+    expect(topicProblem(["Doe", "", "/sos-rio-grande-do-sul/"], "", { type: "flood" }, ctxFor(br))).toBeNull();
+    const th = disaster({ countries: ["TH"], type: "flood", title: "Floods in Chiang Rai, Thailand" });
+    expect(topicProblem(["Chiang Mai Children's Home", "Support our children", "/donate/"], "", { type: "flood" }, ctxFor(th))).toMatch(/^its title, heading and address name neither/);
+  });
+
+  it("takes a storm's other name as its name", () => {
+    const ph = disaster({ countries: ["PH"], type: "cyclone", title: "Typhoon Kalmaegi" });
+    expect(topicProblem(["Tulong para sa Tino", "", "/relief"], "", { type: "cyclone" }, ctxFor(ph))).toBeNull();
+    expect(topicProblem(["Bagyong relief drive", "", "/relief"], "Help Cebu after Bagyong Tino.", { type: "cyclone" }, ctxFor(ph))).toBeNull();
+  });
+});
+
+describe("ownTitle", () => {
+  it("takes the site's name off a title by its og:site_name, its start or end, or its host", () => {
+    expect(ownTitle({ name: "Chiang Mai Children's Home", title: "Donate | Chiang Mai Children's Home" }, "https://www.chiangmaichildrenshome.org/donate/")).toBe("Donate");
+    expect(ownTitle({ name: "Casa do Menor", title: "Doe | Casa do Menor Rio de Janeiro" }, "https://www.casadomenor-rj.org.br/doe/")).toBe("Doe");
+    expect(ownTitle({ name: "", title: "Donate | Kerala Children's Trust" }, "https://www.keralachildrenstrust.org/donate/")).toBe("Donate");
+    // A part that names the page stays, and so does a span of years.
+    expect(ownTitle({ name: "", title: "Hurricane Melissa Relief | Hope for Jamaica" }, "https://www.melissa-relief.org/give")).toBe("Hurricane Melissa Relief | Hope for Jamaica");
+    expect(ownTitle({ name: "Bega Valley Community Fund", title: "Black Summer 2025 - 2026 Bushfire Appeal | Bega Valley Community Fund" }, "https://www.begavalleyfund.org.au/appeal")).toBe(
+      "Black Summer 2025 - 2026 Bushfire Appeal",
+    );
+  });
+});
+
+describe("pageDateProblem, modifiedOf, timeOf and leadYearProblem", () => {
+  const br = disaster({ countries: ["BR"], type: "flood", title: "Floods in Rio Grande do Sul, Brazil", started: "2026-10-10T00:00:00.000Z" });
+  const rules = { minYear: 2026, started: br.started, type: "flood" as const, titleNames: ["Rio Grande do Sul"] };
+  it("passes an old page changed since the disaster whose title or heading names its hazard and a place of its title", () => {
+    const own = ["Doe", "Enchentes no Rio Grande do Sul: doe agora", "/doe/"];
+    expect(pageDateProblem("2021-03-02T13:00:00.000Z", own, rules, ctxFor(br), "2026-10-12T12:00:00.000Z")).toBeNull();
+    expect(pageDateProblem("2021-03-02T13:00:00.000Z", own, rules, ctxFor(br), "2024-05-12T12:00:00.000Z")).toBe("published 2021-03-02, before the disaster");
+    expect(pageDateProblem("2021-03-02T13:00:00.000Z", ["Doe", "Doe agora", "/doe/"], rules, ctxFor(br), "2026-10-12T12:00:00.000Z")).toBe("published 2021-03-02, before the disaster");
+  });
+
+  it("reads a page's dateModified and its first <time>", () => {
+    expect(modifiedOf(`<script type="application/ld+json">{"@graph":[{"@type":"WebPage","datePublished":"2021-03-02","dateModified":"2026-10-12T09:00:00-03:00"}]}</script>`)).toBe("2026-10-12T12:00:00.000Z");
+    expect(modifiedOf(`<meta property="article:modified_time" content="2026-10-12T12:00:00Z">`)).toBe("2026-10-12T12:00:00.000Z");
+    expect(modifiedOf("<p>no date</p>")).toBeNull();
+    expect(timeOf(`<p>Posted <time datetime="2016-04-20T10:00:00Z">20 April</time></p>`)).toBe("2016-04-20T10:00:00.000Z");
+    expect(timeOf("<p>no date</p>")).toBeNull();
+  });
+
+  it("refuses a page whose first paragraphs give an older year next to the disaster's hazard, and passes a recent one or another hazard's", () => {
+    const ec = disaster({ countries: ["EC"], type: "earthquake", title: "Ecuador Earthquake", started: "2026-10-20T00:00:00.000Z" });
+    const r = { type: "earthquake" as const, minYear: 2026 };
+    const page = (p: string) => `<nav>Inicio 2016</nav><h1>Ayuda tras el terremoto</h1><p>${p}</p>`;
+    expect(leadYearProblem(page("El 16 de abril de 2016 un terremoto de 7,8 golpeó Ecuador. Donar aquí."), [], r, ctxFor(ec))).toBe("an earlier disaster's page (2016)");
+    expect(leadYearProblem(page("In 2016 a 7.8 earthquake struck Ecuador. Donate here."), [], r, ctxFor(ec))).toBe("an earlier disaster's page (2016)");
+    expect(leadYearProblem(page("El terremoto de 2016 nos enseñó mucho. El terremoto de 2026 nos necesita."), [], r, ctxFor(ec))).toBeNull();
+    expect(leadYearProblem(page("Since the 2016 floods we have rebuilt schools. Donate for the earthquake."), [], r, ctxFor(ec))).toBeNull();
+    expect(leadYearProblem(page("El 16 de abril de 2016 un terremoto golpeó Ecuador."), ["Terremoto 2026"], r, ctxFor(ec))).toBeNull();
+  });
+});
+
+describe("country names in other languages", () => {
+  it("folds text as country names are matched in it", () => {
+    expect(nameText("Côte d’Ivoire")).toBe("cote d ivoire");
+    expect(nameText("سورية / سوريا")).toBe("سوريا سوريا");
+    expect(nameText("サン・マルタン")).toBe("サンマルタン");
+  });
+
+  it("reads a disaster's pages in its countries' languages and a fixed set, each once", () => {
+    expect(nameLanguages(["MA"], { MA: "fr" })).toEqual(["fr", "ar", "es", "pt", "id", "tr", "ru", "zh", "ja", "th", "de", "it"]);
+    expect(nameLanguages(["NP"], { NP: "ne" })[0]).toBe("ne");
+    expect(nameLanguages(["TW"])[0]).toBe("zh-Hant");
+  });
+
+  it("names every country in those languages, leaving out what the English names read, saints and common words", () => {
+    const names = countryNamesIn(["fr", "ar", "ja", "es"], ctxFor(MELISSA).countryNameIndex ?? {});
+    const codes = (n: string) => names.find((x) => x.name === n)?.codes;
+    expect(codes("algerie")).toEqual(["DZ"]);
+    expect(codes(nameText("الجزائر"))).toEqual(["DZ"]);
+    expect(codes("トルコ")).toEqual(["TR"]);
+    // Both Congos, by the name before " - ".
+    expect(codes("الكونغو")?.sort()).toEqual(["CD", "CG"]);
+    for (const n of ["georgia", "jersey", "panama", "maurice", "dominique", "granada", "saint martin", "مالي", "chili"]) expect([n, codes(n)]).toEqual([n, undefined]);
+    expect(countryNamesIn(["de"], ctxFor(MELISSA).countryNameIndex ?? {}).find((x) => x.name === "island")).toBeUndefined();
+  });
+
+  it("finds another country's name in the review's pages, and none in the disaster's own", () => {
+    const ma = ctxFor(disaster({ countries: ["MA"], type: "earthquake", title: "Morocco Earthquake" }));
+    const langs = nameLanguages(["MA"], { MA: "fr" });
+    expect(foreignCountryIn(["Faites un don pour le séisme en Algérie"], ma, langs)).toBe("algerie");
+    expect(foreignCountryIn(["تبرع لضحايا زلزال تركيا وسوريا"], ma, langs)).toBe("تركيا");
+    expect(foreignCountryIn(["/don-seisme-algerie"], ma, langs)).toBe("algerie");
+    expect(foreignCountryIn(["Séisme au Maroc : faites un don", "تبرع للمغرب", "بالمغرب"], ma, langs)).toBeNull();
+    const ve = ctxFor(disaster({ countries: ["VE"], type: "earthquake", title: "Venezuela Earthquake" }));
+    expect(foreignCountryIn(["Terremoto en Turquía y Siria: dona ahora"], ve, nameLanguages(["VE"]))).toBe("turquia");
+    expect(foreignCountryIn(["Erdbeben in der Türkei: jetzt spenden"], ma, langs)).toBe("turkei");
+    // English pages' words: island families, a church's chili supper.
+    const us = ctxFor(disaster({ countries: ["US"], type: "cyclone", title: "Hurricane Helene" }));
+    expect(foreignCountryIn(["Chili supper for island families after Hurricane Helene"], us, nameLanguages(["US"]))).toBeNull();
+    // Words that only look like a country's name: Japanese タイトル (a title), Chūgoku in western Japan, financial support in Arabic.
+    const jp = ctxFor(disaster({ countries: ["JP"], type: "flood", title: "Floods in Japan" }));
+    expect(foreignCountryIn(["中国地方 豪雨 緊急支援 タイトル"], jp, nameLanguages(["JP"]))).toBeNull();
+    expect(foreignCountryIn(["タイの洪水"], jp, nameLanguages(["JP"]))).toBe("タイ");
+    expect(foreignCountryIn(["دعم مالي للأسر"], ma, langs)).toBeNull();
+    // The longest name wins: Soudan du Sud is South Sudan.
+    const ss = ctxFor(disaster({ countries: ["SS"], type: "flood", title: "Floods in South Sudan" }));
+    expect(foreignCountryIn(["Inondations au Soudan du Sud"], ss, nameLanguages(["SS"]))).toBeNull();
+    // A name inside one of the disaster's own places names no other country.
+    const jo = ctxFor(disaster({ countries: ["JO"], type: "flood", title: "Floods in Jordan" }));
+    expect(foreignCountryIn(["فيضانات عمان"], jo, nameLanguages(["JO"]), ["عمان"])).toBeNull();
+  });
+});
+
+describe("readWords through earlierEventProblem: a disaster's own places and states", () => {
+  it("reads no other country in a US disaster's state names or its places' names", () => {
+    const helene = disaster({ countries: ["US"], type: "cyclone", title: "Hurricane Helene" });
+    expect(earlierEventProblem(["Hurricane Helene Relief for South Georgia Families"], { type: "cyclone", minYear: 2026 }, ctxFor(helene))).toBeNull();
+    expect(earlierEventProblem(["Hurricane Milton relief for Panama City families"], { type: "cyclone", minYear: 2026 }, ctxFor(disaster({ countries: ["US"], title: "Hurricane Milton" })))).toBeNull();
+    const nj = disaster({ countries: ["US"], type: "flood", title: "Flood in United States" });
+    expect(earlierEventProblem(["Jersey Shore Flood Relief"], { type: "flood", minYear: 2026 }, ctxFor(nj))).toBeNull();
+    // Elsewhere the Jersey Shore is in another country, unless one of the disaster's own places holds the name.
+    expect(earlierEventProblem(["Jersey Shore Flood Relief"], { type: "flood", minYear: 2026 }, ctxFor(disaster({ countries: ["CA"], type: "flood", title: "Flood in Canada" })))).toBe("names another country");
+    const co = ctxFor(disaster({ countries: ["CO"], type: "flood", title: "Inundaciones en Colombia" }));
+    expect(earlierEventProblem(["Ayuda al barrio Venezuela tras la inundación"], { type: "flood", minYear: 2026 }, co)).toBe("names another country");
+    expect(earlierEventProblem(["Ayuda al barrio Venezuela tras la inundación"], { type: "flood", minYear: 2026, ownPlaces: ["Barrio Venezuela"] }, co)).toBeNull();
+    expect(globalGivingProblem({ url: "https://www.globalgiving.org/projects/hurricane-helene-south-georgia-relief/", title: "" }, helene, ctxFor(helene))).toBeNull();
+  });
+});
+
+describe("protected names: the UN, more of the movement's names, regional governments and relief funds", () => {
+  it("finds the review's names", () => {
+    expect(protectedNameIn("UN Crisis Relief")).toBe("un crisis relief");
+    expect(protectedNameIn("Un Crisis Relief Fund")).toBe("un crisis relief");
+    expect(protectedNameIn("U.N. Relief for Haiti")).toBe("UN");
+    expect(protectedNameIn("UN Hurricane Relief Fund")).toBe("UN");
+    expect(protectedNameIn("UN-Habitat Jamaica")).toBe("UN");
+    expect(protectedNameIn("UN Women Jamaica")).toBe("un women");
+    expect(protectedNameIn("UNRWA")).toBe("unrwa");
+    expect(protectedNameIn("IOM UN Migration")).toBe("iom");
+    expect(protectedNameIn("UN HURRICANE RELIEF")).toBe("UN");
+    expect(protectedNameIn("د افغانستان د سره میاشتې ټولنه")).toBe("سره میاشت");
+    expect(protectedNameIn("Ҳилоли Аҳмари Тоҷикистон")).toBe("ҳилоли аҳмар");
+    expect(protectedNameIn("Кыргызстандын Кызыл Жарым Ай коому")).toBe("кызыл жарым ай");
+    expect(protectedNameIn("Ўзбекистон Қизил Ярим Ой жамияти")).toBe("қизил ярим ой");
+    expect(protectedNameIn("日本ユニセフ協会")).toBe("ユニセフ");
+    expect(protectedNameIn("유니세프 한국위원회")).toBe("유니세프");
+    expect(protectedNameIn("اليونيسف")).toBe("يونيسف");
+    expect(protectedNameIn("ЮНИСЕФ")).toBe("юнисеф");
+    expect(protectedNameIn("CMDRF Kerala")).toBe("cmdrf");
+    expect(protectedNameIn("Chief Minister's Distress Relief Fund - Kerala Floods")).toBe("relief fund");
+    expect(protectedNameIn("Prime Minister's National Relief Fund")).toBe("relief fund");
+    expect(protectedNameIn("Generalitat Valenciana")).toBe("generalitat");
+    expect(protectedNameIn("Royaume du Maroc")).toBe("royaume");
+    expect(protectedNameIn("المملكة المغربية")).toBe("المملكة المغربية");
+    expect(protectedNameIn("Gobernación de Antioquia")).toBe("gobernación");
+    expect(protectedNameIn("Câmara Municipal de Lisboa")).toBe("câmara municipal");
+    expect(protectedNameIn("Municipalidad de Lima")).toBe("municipalidad");
+    expect(protectedNameIn("PMI Peduli", [], ["PMI"])).toBe("PMI");
+  });
+
+  it("passes French and Spanish 'un', all-capitals articles and students' governments", () => {
+    for (const name of [
+      "Faites un don pour Haïti",
+      "Un Techo para mi País",
+      "UN DON POUR HAÏTI",
+      "Supreme Student Government Relief Drive for Typhoon Kalmaegi",
+      "SSLG Relief Drive",
+      "Gobierno Escolar Colegio San José",
+      "Pmi workers' relief",
+      "Un habitat digne pour tous",
+      "Junta de Vecinos Villa Alegre",
+    ])
+      expect([name, protectedNameIn(name, [], ["PMI"])]).toEqual([name, null]);
+  });
+
+  it("finds a word that mixes Latin with Cyrillic or Greek letters", () => {
+    expect(mixedScriptWord("Jamaica Rеd Cross")).toBe("Rеd");
+    expect(mixedScriptWord("Cruz Rοja")).toBe("Rοja");
+    expect(mixedScriptWord("Jamaica Red Cross")).toBeNull();
+    expect(mixedScriptWord("Ҳилоли Аҳмари Тоҷикистон")).toBeNull();
+    expect(mixedScriptWord(undefined)).toBeNull();
+  });
+
+  it("reads the societies' short names from their hosts", () => {
+    expect(societyAcronyms(["pmi.or.id", "arcs.org.af", "www.nrcs.org", "redcross.org.ph", "en.example.org", "cruzroja.es/folder"])).toEqual(["PMI", "ARCS", "NRCS"]);
+  });
+
+  it("finds the UN in look-alike hosts, and passes 'un' in other words", () => {
+    expect(protectedNameInHost("uncrisisrelief.org")).toBe("uncrisisrelief");
+    expect(protectedNameInHost("un-hurricane-relief.org")).toBe("un");
+    expect(protectedNameInHost("www.uncrisisrelief-jamaica.org")).toBe("uncrisisrelief");
+    expect(protectedNameInHost("unhumanitarian-fund.org")).toBe("un");
+    expect(protectedNameInHost("iom-haiti.org")).toBe("iom");
+    expect(protectedNameInHost("unrwa-donate.org")).toBe("unrwa");
+    for (const host of ["unidos-por-haiti.org", "union-relief.org", "university-relief.org", "un-techo-para-mi-pais.org", "radiom.org", "unityschool.edu.jm"])
+      expect([host, protectedNameInHost(host)]).toEqual([host, null]);
+  });
+});
+
+describe("localUrlProblem: the review's platform and payment hosts, and good news", () => {
+  const local: LocalContext = { donation: ctxFor(MELISSA) };
+  it("refuses the platforms and payment links the lists missed", () => {
+    for (const url of [
+      "https://www.cotizi.com/campaign/seisme-al-haouz-douar-tikht",
+      "https://fonzip.com/ahbap/deprem",
+      "https://www.juntos.com.vc/pt/enchentes-rs",
+      "https://www.isupportjamaica.com/projects/hurricane-melissa-relief",
+      "https://www.bitgiving.com/kerala-flood-relief",
+      "https://sharinghappiness.org/gempa-cianjur",
+      "https://www.amalsholeh.com/gempa-cianjur",
+      "https://wecare.id/gempa-cianjur",
+      "https://cafdonate.cafonline.org/12345",
+      "https://hipgive.org/project/terremoto-venezuela",
+      "https://donate.app.neoncrm.com/forms/hurricane-melissa",
+      "https://secure.everyaction.com/abc123",
+    ])
+      expect([url, localUrlProblem(url, local)]).toEqual([url, "crowdfunding or giving platform"]);
+    for (const url of [
+      "https://www.asaas.com/c/enchentes-rs",
+      "https://link.infinitepay.io/enchentes",
+      "https://payments.cashfree.com/forms/kerala-flood",
+      "https://wipayfinancial.com/pay/melissa-relief",
+      "https://pay.khalti.com/donate/earthquake",
+      "https://esewa.com.np/donate/earthquake",
+      "https://pagar.me/enchentes",
+      "https://www.paymaya.com/donate/typhoon",
+      "https://www.instamojo.in/kerala-flood",
+    ])
+      expect([url, localUrlProblem(url, local)]).toEqual([url, "payment, checkout or money-transfer service"]);
+  });
+
+  it("passes a church whose host says good news, and still refuses a news host", () => {
+    expect(localUrlProblem("https://www.good-news-church.org.jm/hurricane-melissa-relief", local)).toBeNull();
+    expect(localUrlProblem("https://www.goodnews-ministries.org/hurricane-melissa-relief", local)).toBeNull();
+    expect(localUrlProblem("https://www.jamaica-news.org/hurricane-melissa-relief", local)).toBe("news site");
+  });
+});
+
+describe("platformProblem", () => {
+  it("knows a person's campaign on a platform by what it says", () => {
+    expect(platformProblem("Campagne créée par Youssef B. Faire un don. Lancer ma cagnotte. Maroc")).toMatch(/^a person's campaign on a crowdfunding platform/);
+    expect(platformProblem("Hurricane Melissa Relief for Black River. Project by Andre W. Donate. Start a project. Jamaica")).toMatch(/^a person's campaign/);
+    for (const text of ["Crie sua vaquinha", "Crea tu campaña", "Buat galang dana", "Kampanya oluştur", "Start a fundraiser", "Campaign created by Maria", "Spendenaktion starten", "クラウドファンディングを始める"])
+      expect([text, platformProblem(text)]).toEqual([text, expect.stringMatching(/^a person's campaign/)]);
+  });
+
+  it("passes a group's own appeal", () => {
+    for (const text of ["Relief drive organised by the PTA of Black River High School", "Penggalangan dana untuk korban gempa Cianjur", "A project by the Rotary Club of Kingston", "Donate to our campaign for Hurricane Melissa"])
+      expect([text, platformProblem(text)]).toEqual([text, null]);
+  });
+});
+
+describe("paymentProblem: the review's asks", () => {
+  it("refuses crypto by ticker or address, and transfers into a person's account", () => {
+    expect(paymentProblem("Donate BTC to bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh. Jamaica.")).toBe("asks for crypto, as scams do");
+    expect(paymentProblem("Send to bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh")).toBe("asks for crypto, as scams do");
+    expect(paymentProblem("Send to 0x52908400098527886E0F7030069857D2E4169EE7")).toBe("asks for crypto, as scams do");
+    expect(paymentProblem("Send to TJCnKsPa7y5okkXvQAidZBzqx3QyQ6sxMW")).toBe("asks for crypto, as scams do");
+    expect(paymentProblem("Terremoto: dona en criptomonedas. Donar USDC o BTC. Venezuela.")).toBe("asks for crypto, as scams do");
+    expect(paymentProblem("Doe em criptomoedas")).toBe("asks for crypto, as scams do");
+    expect(paymentProblem("Donar: deposita en mi cuenta Banesco 0134-xxxx a nombre de Juan Pérez. Venezuela.")).toBe("asks for a transfer to a person's own account, as scams do");
+    expect(paymentProblem("Transferencia: cuenta corriente 0102-123 a nombre de Juan Pérez")).toBe("asks for a transfer to a person's own account, as scams do");
+    expect(paymentProblem("Donate: transfer to my account at NCB, 123456789, John Brown. Jamaica.")).toBe("asks for a transfer to a person's own account, as scams do");
+    expect(paymentProblem("Deposite na minha conta do Nubank")).toBe("asks for a transfer to a person's own account, as scams do");
+    expect(paymentProblem("Scratch the card and send us the gift card codes")).toBe("asks for gift cards, as scams do");
+    expect(paymentProblem("Send Amazon gift cards to help")).toBe("asks for gift cards, as scams do");
+  });
+
+  it("passes supermarket gift cards for families and a group's own account", () => {
+    expect(paymentProblem("Donate cash or Woolworths and Coles gift cards for families in New South Wales.")).toBeNull();
+    expect(paymentProblem("Cuenta corriente Banco de Venezuela 0102-123 a nombre de Fundación Andes")).toBeNull();
+    expect(paymentProblem("Depósito: conta 1234-5 em nome da Associação Amigos do Bairro")).toBeNull();
+    expect(paymentProblem("Agradecemos a nombre de todos los niños")).toBeNull();
+    expect(paymentProblem("The ripple effect of your gift")).toBeNull();
+    expect(paymentProblem("Fundación Sol para Venezuela")).toBeNull();
+  });
+});
+
+describe("storms' other names", () => {
+  it("does not take PAGASA's name for another storm", () => {
+    const ph = disaster({ countries: ["PH"], type: "cyclone", title: "Typhoon Kalmaegi" });
+    expect(disasterStorms(ctxFor(ph))).toEqual(["kalmaegi", "tino"]);
+    expect(otherStorm(["typhoon", "tino", "relief"], ctxFor(ph), "cyclone")).toBeNull();
+    expect(otherStorm(["bagyong", "tino"], ctxFor(ph), "cyclone")).toBeNull();
+    expect(otherStorm(["bagyong", "odette"], ctxFor(ph), "cyclone")).toBe("odette");
+    // From an IFRC appeal's name, for a storm the list lacks.
+    const appeal = disaster({ countries: ["PH"], type: "cyclone", title: "Typhoon Halong", appeals: [{ code: "MDRPH060", name: "Philippines: Typhoon Halong (Basyang)", kind: "DREF", requested: 0, funded: 0, url: "", end: "" }] });
+    expect(disasterStorms(ctxFor(appeal))).toEqual(["halong", "basyang"]);
+  });
+});
+
+describe("checkLocalPage: the second review's pages (2026-10-25)", () => {
+  type Extra = Partial<Omit<LocalContext, "donation">>;
+  /** The live check of one page for one disaster, as the integrator builds its rules. */
+  async function check(url: string, page: string, d: ReturnType<typeof disaster>, localNames: Record<string, string[]> = {}, extra: Extra = {}) {
+    const ctx = ctxFor(d);
+    const rules = localRules({ disaster: d, ctx, countryNames: NAMES, pressNames: {}, localNames });
+    return checkLocalPage(url, deps(async () => html(page)), { donation: ctx, ...extra }, rules, 0);
+  }
+  const places = (country: string, ...names: string[]) => names.map((name) => ({ name, country, lat: 0, lng: 0, kind: "city" as const, source: "research" as const }));
+  const at = (started: string) => ({ started: `${started}T00:00:00.000Z` });
+  const MA = disaster({ countries: ["MA"], type: "earthquake", title: "Morocco Earthquake", ...at("2026-10-20") });
+  const HAOUZ = disaster({ countries: ["MA"], type: "earthquake", title: "Earthquake in Al Haouz, Morocco", ...at("2026-10-20"), places: places("MA", "Al Haouz", "Marrakesh") });
+  const VE = disaster({ countries: ["VE"], type: "earthquake", title: "Venezuela Earthquake", ...at("2026-10-20") });
+  const DZ = disaster({ countries: ["DZ"], type: "earthquake", title: "Algeria Earthquake", ...at("2026-10-20") });
+  const TH = disaster({ countries: ["TH"], type: "flood", title: "Floods in Chiang Rai, Thailand", ...at("2026-10-10"), places: places("TH", "Chiang Rai") });
+  const TH_NAMES = { "Chiang Rai": ["จังหวัดเชียงราย", "เทศบาลนครเชียงราย", "เชียงราย"] };
+  const BR = disaster({ countries: ["BR"], type: "flood", title: "Floods in Rio Grande do Sul, Brazil", ...at("2026-10-10") });
+  const KERALA = disaster({ countries: ["IN"], type: "flood", title: "Floods in Kerala, India", ...at("2026-10-10") });
+  const NOTO = disaster({ countries: ["JP"], type: "earthquake", title: "Earthquake in Noto, Japan", ...at("2026-10-20"), places: places("JP", "Noto") });
+  const NOTO_NAMES = { Noto: ["能登町", "能登"] };
+  const NP = disaster({ countries: ["NP"], type: "earthquake", title: "Earthquake in Nepal", ...at("2026-10-20") });
+  const PH = disaster({ countries: ["PH"], type: "cyclone", title: "Typhoon Kalmaegi", ...at("2026-10-20"), places: places("PH", "Cebu") });
+  const KE = disaster({ countries: ["KE"], type: "flood", title: "Floods in Kenya", ...at("2026-10-10"), places: places("KE", "Budalangi") });
+  const AF = disaster({ countries: ["AF"], type: "earthquake", title: "Earthquake in Kunar, Afghanistan", ...at("2026-10-20"), places: places("AF", "Kunar") });
+  const ES = disaster({ countries: ["ES"], type: "flood", title: "Floods in Valencia, Spain", ...at("2026-10-20"), places: places("ES", "Valencia") });
+  const TJ = disaster({ countries: ["TJ"], type: "flood", title: "Floods in Tajikistan", ...at("2026-10-20") });
+  const ID = disaster({ countries: ["ID"], type: "earthquake", title: "Earthquake in Cianjur, Indonesia", ...at("2026-10-20"), places: places("ID", "Cianjur") });
+  const EC = disaster({ countries: ["EC"], type: "earthquake", title: "Ecuador Earthquake", ...at("2026-10-20") });
+  const NSW = disaster({ countries: ["AU"], type: "wildfire", title: "Bushfires in New South Wales, Australia", ...at("2026-02-10") });
+  const JM = disaster({ countries: ["JM"] });
+  const refused = (reason: string | RegExp) => ({ ok: false, reason: typeof reason === "string" ? reason : expect.stringMatching(reason) });
+
+  it("refuses look-alikes of the UN and of official bodies the first fix missed, in their own languages and scripts (A2)", async () => {
+    const uncr = `<title>Hurricane Melissa Humanitarian Fund | UN Crisis Relief</title><meta property="og:site_name" content="UN Crisis Relief"><h1>Hurricane Melissa Humanitarian Fund</h1><p>Donate to people affected in Jamaica, Haiti and Cuba.</p>`;
+    expect(await check("https://uncrisisrelief.org/hurricane-melissa", uncr, MELISSA)).toMatchObject(refused("its host carries an official body's or a platform's name (uncrisisrelief)"));
+    expect(await check("https://www.melissa-crisis-relief.org/donate", uncr, MELISSA)).toMatchObject(refused("its own name, title or heading claims an official body or a platform (un crisis relief)"));
+    // "UN" itself, in capitals.
+    const habitat = `<title>Hurricane Melissa shelter fund | UN-Habitat Jamaica</title><meta property="og:site_name" content="UN-Habitat Jamaica"><h1>Hurricane Melissa shelter fund</h1><p>Donate. Jamaica</p>`;
+    expect(await check("https://www.melissa-shelter.org/donate", habitat, MELISSA)).toMatchObject(refused("its own name, title or heading claims an official body or a platform (UN)"));
+    const pashto = `<title>د افغانستان د سره میاشتې ټولنه - زلزله کنړ</title><meta property="og:site_name" content="د افغانستان د سره میاشتې ټولنه"><h1>زلزله کنړ - Donate</h1><p>Donate now. افغانستان</p>`;
+    expect(await check("https://www.kunar-zalzala-help.org/donate", pashto, AF)).toMatchObject(refused("its own name, title or heading claims an official body or a platform (سره میاشت)"));
+    const tajik = `<title>Ҳилоли Аҳмари Тоҷикистон - Селоб</title><meta property="og:site_name" content="Ҳилоли Аҳмари Тоҷикистон"><h1>Флood relief Donate</h1><p>Donate. Tajikistan flood</p>`;
+    expect(await check("https://www.selob-yordam.tj/donate", tajik, TJ)).toMatchObject(refused(/claims an official body or a platform \(ҳилоли аҳмар\)$/));
+    const unicef = `<title>日本ユニセフ協会 能登半島地震 緊急募金</title><meta property="og:site_name" content="日本ユニセフ協会"><h1>能登半島地震 緊急募金</h1><p>募金 日本</p>`;
+    expect(await check("https://www.noto-kinkyu.jp/bokin", unicef, NOTO, NOTO_NAMES)).toMatchObject(refused(/\(ユニセフ\)$/));
+    const cmdrf = `<title>Chief Minister's Distress Relief Fund - Kerala Floods</title><meta property="og:site_name" content="CMDRF Kerala"><h1>Donate to Kerala Flood Relief</h1><p>Donate. Kerala</p>`;
+    expect(await check("https://www.cmdrf-kerala.org/donate", cmdrf, KERALA)).toMatchObject(refused(/\(cmdrf\)$/));
+    const generalitat = `<title>Generalitat Valenciana - Donaciones inundaciones</title><meta property="og:site_name" content="Generalitat Valenciana"><h1>Inundaciones en Valencia: donar</h1><p>Donar. España</p>`;
+    expect(await check("https://www.ajuda-dana.org/donar", generalitat, ES)).toMatchObject(refused(/\(generalitat\)$/));
+    const royaume = `<title>Royaume du Maroc - Fonds spécial séisme</title><meta property="og:site_name" content="Royaume du Maroc"><h1>Séisme : faites un don au fonds spécial</h1><p>faire un don. Maroc</p>`;
+    expect(await check("https://www.fonds-seisme-maroc.org/don", royaume, MA)).toMatchObject(refused(/\(royaume\)$/));
+    // "Jamaica Rеd Cross" with a Cyrillic е.
+    const homoglyph = `<title>Jamaica Rеd Cross - Hurricane Melissa</title><meta property="og:site_name" content="Jamaica Rеd Cross"><h1>Hurricane Melissa Appeal</h1><p>Donate. Jamaica</p>`;
+    expect(await check("https://www.jamaica-hurricane-help.org/donate", homoglyph, MELISSA)).toMatchObject(refused(/mixes Latin with Cyrillic or Greek letters in one word \(Rеd\)/));
+    // A society's short name from its site's host, in capitals.
+    const pmi = `<title>PMI Peduli Gempa Cianjur</title><meta property="og:site_name" content="PMI Peduli"><h1>Donasi Gempa Cianjur</h1><p>donasi sekarang. Indonesia</p>`;
+    expect(await check("https://www.peduli-gempa-cianjur.org/donasi", pmi, ID, {}, { societyAcronyms: societyAcronyms(["pmi.or.id"]) })).toMatchObject(refused(/\(PMI\)$/));
+  });
+
+  it("refuses another country's disaster page named in the page's own language, though its footer names the disaster's country (A3)", async () => {
+    const algerie = `<title>Faites un don pour le séisme en Algérie | Fondation Atlas</title><meta property="og:site_name" content="Fondation Atlas"><h1>Séisme en Algérie : donnez maintenant</h1><p>faire un don</p><footer>Bureaux au Maroc et en Algérie</footer>`;
+    expect(await check("https://www.fondation-atlas.org/don-seisme-algerie", algerie, MA)).toMatchObject(refused("names another country"));
+    const turquia = `<title>Dona para el terremoto en Turquía | Fundación Andes</title><meta property="og:site_name" content="Fundación Andes"><h1>Terremoto en Turquía y Siria: dona ahora</h1><p>Donar</p><footer>Oficinas en Venezuela</footer>`;
+    expect(await check("https://www.fundacion-andes.org/donar-terremoto-turquia", turquia, VE)).toMatchObject(refused("names another country"));
+    const turkiya = `<title>تبرع لضحايا زلزال تركيا وسوريا</title><meta property="og:site_name" content="جمعية الأمل"><h1>زلزال تركيا وسوريا: تبرع الآن</h1><p>جمعية الأمل - المغرب</p>`;
+    expect(await check("https://www.jamiat-amal.ma/tabarru-turkiya", turkiya, MA)).toMatchObject(refused("names another country"));
+    const maroc = `<title>Séisme au Maroc : faites un don | Secours Maghreb</title><meta property="og:site_name" content="Secours Maghreb"><h1>Séisme au Maroc</h1><p>faire un don</p><footer>Alger, Algérie</footer>`;
+    expect(await check("https://www.secours-maghreb.org/seisme-maroc", maroc, DZ)).toMatchObject(refused("names another country"));
+  });
+
+  it("accepts US groups whose places hold a country's name: South Georgia, the Jersey Shore, Panama City (A3's regression)", async () => {
+    const helene = disaster({ countries: ["US"], type: "cyclone", title: "Hurricane Helene", ...at("2026-09-26"), places: places("US", "Valdosta", "Augusta") });
+    const georgia = `<title>Hurricane Helene Relief for South Georgia Families | Valdosta Community Fund</title><meta property="og:site_name" content="Valdosta Community Fund"><h1>Hurricane Helene Relief for South Georgia</h1><p>Donate to families in Valdosta, United States.</p>`;
+    expect(await check("https://www.valdostacommunityfund.org/hurricane-helene-relief", georgia, helene)).toMatchObject({ ok: true });
+    const nj = disaster({ countries: ["US"], type: "flood", title: "Flood in United States", ...at("2026-10-10"), places: places("US", "Jersey Shore Region", "Atlantic City") });
+    const jersey = `<title>Jersey Shore Flood Relief | Ocean County Food Bank</title><meta property="og:site_name" content="Ocean County Food Bank"><h1>Jersey Shore Flood Relief</h1><p>Donate to families in Atlantic City.</p>`;
+    expect(await check("https://www.oceancountyfoodbank.org/flood-relief", jersey, nj)).toMatchObject({ ok: true });
+    const milton = disaster({ countries: ["US"], type: "cyclone", title: "Hurricane Milton", ...at("2026-10-08"), places: places("US", "Panama City") });
+    const panama = `<title>Hurricane Milton Relief | Bay County Fund</title><meta property="og:site_name" content="Bay County Fund"><h1>Hurricane Milton relief for Panama City families</h1><p>Donate. Panama City, Florida, United States.</p>`;
+    expect(await check("https://www.baycountyunitedway.org/hurricane-milton-relief", panama, milton)).toMatchObject({ ok: true });
+    // Georgia the country is still another country for a disaster elsewhere.
+    expect(await check("https://www.valdostacommunityfund.org/hurricane-helene-relief", georgia, disaster({ countries: ["AM"], type: "cyclone", title: "Hurricane Helene", ...at("2026-09-26") }))).toMatchObject(
+      refused("names another country"),
+    );
+  });
+
+  it("refuses general donate pages whose group's own name holds a word of the disaster's title (A1)", async () => {
+    const chiangMai = `<title>Donate | Chiang Mai Children's Home</title><meta property="og:site_name" content="Chiang Mai Children's Home"><h1>Support our children</h1><p>Your donation feeds and educates children in northern Thailand.</p>`;
+    expect(await check("https://www.chiangmaichildrenshome.org/donate/", chiangMai, TH, TH_NAMES)).toMatchObject(refused(/^its title, heading and address name neither/));
+    const rio = `<title>Doe | Casa do Menor Rio de Janeiro</title><meta property="og:site_name" content="Casa do Menor"><h1>Faça sua doação</h1><p>Ajude crianças em situação de rua no Brasil. Doe agora.</p>`;
+    expect(await check("https://www.casadomenor-rj.org.br/doe/", rio, BR)).toMatchObject(refused(/^its title, heading and address name neither/));
+    const kerala = `<title>Donate | Kerala Children's Trust</title><meta property="og:site_name" content="Kerala Children's Trust"><h1>Support a child's education</h1><p>Your donation supports children across Kerala, India.</p>`;
+    expect(await check("https://www.keralachildrenstrust.org/donate/", kerala, KERALA)).toMatchObject(refused(/^its title, heading and address name neither/));
+    // Without its og:site_name, the group's name is known by its host.
+    expect(await check("https://www.keralachildrenstrust.org/donate/", kerala.replace(/<meta[^>]*>/, ""), KERALA)).toMatchObject(refused(/^its title, heading and address name neither/));
+  });
+
+  it("refuses old pages dated by a Buddhist, Japanese or Nepali year, or by the year next to the hazard in their text (A4)", async () => {
+    const thai = `<title>บริจาคช่วยน้ำท่วมเชียงราย 2567 | อาสาเชียงราย</title><meta property="og:site_name" content="อาสาเชียงราย"><h1>น้ำท่วมเชียงราย ปี 2567</h1><p>บริจาค</p>`;
+    expect(await check("https://www.chiangrai-volunteers.or.th/flood-2567", thai, TH, TH_NAMES)).toMatchObject(refused("an earlier disaster's page (2024)"));
+    const reiwa = `<title>令和6年能登半島地震 緊急支援募金 | 某NPO</title><meta property="og:site_name" content="某NPO"><h1>令和6年能登半島地震 緊急支援募金</h1><p>能登の被災地への寄付をお願いします。</p>`;
+    expect(await check("https://www.some-npo.or.jp/noto-bokin/", reiwa, NOTO, NOTO_NAMES)).toMatchObject(refused("an earlier disaster's page (2024)"));
+    const gorkha = `<title>भूकम्प २०७२ पीडितलाई दान | सहयोग नेपाल</title><meta property="og:site_name" content="सहयोग नेपाल"><h1>भूकम्प २०७२: दान गर्नुहोस्</h1><p>नेपाल</p>`;
+    expect(await check("https://www.sahayog-nepal.org.np/bhukampa", gorkha, NP)).toMatchObject(refused("an earlier disaster's page (2016)"));
+    // The first review's 2016 page without its JSON-LD, as a Wix or Squarespace site would serve it.
+    const wix = `<title>Donaciones Terremoto | Escuela San José</title><meta property="og:site_name" content="Escuela San José"><h1>Ayuda tras el terremoto</h1><p>El 16 de abril de 2016 un terremoto de 7,8 golpeó Ecuador. Donar aquí.</p>`;
+    expect(await check("https://www.escuela-sanjose.edu.ec/donaciones-terremoto", wix, EC)).toMatchObject(refused("an earlier disaster's page (2016)"));
+    // A <time> dates a page that has no JSON-LD.
+    const time = `<title>Donaciones | Escuela San José</title><meta property="og:site_name" content="Escuela San José"><h1>Ayuda tras el terremoto</h1><time datetime="2016-04-20">20 de abril</time><p>Donar aquí. Ecuador</p>`;
+    expect(await check("https://www.escuela-sanjose.edu.ec/donaciones-terremoto", time, EC)).toMatchObject(refused("published 2016-04-20, before the disaster"));
+  });
+
+  it("refuses pages that ask for crypto by ticker or address, or for transfers into a person's account, and passes supermarket gift cards", async () => {
+    const btc = `<title>Hurricane Melissa Relief</title><h1>Hurricane Melissa relief</h1><p>Donate BTC to bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh. Jamaica.</p>`;
+    expect(await check("https://www.jamaica-hope-relief.org/donate-hurricane", btc, MELISSA)).toMatchObject(refused("asks for crypto, as scams do"));
+    const cripto = `<title>Terremoto Venezuela: donar</title><h1>Terremoto: dona en criptomonedas</h1><p>Donar USDC o BTC. Venezuela.</p>`;
+    expect(await check("https://www.ayuda-venezuela.org/donar-terremoto", cripto, VE)).toMatchObject(refused("asks for crypto, as scams do"));
+    const banesco = `<title>Terremoto Venezuela: donar</title><h1>Terremoto: ayuda a mi familia</h1><p>Donar: deposita en mi cuenta Banesco 0134-xxxx a nombre de Juan Pérez. Venezuela.</p>`;
+    expect(await check("https://www.ayuda-venezuela.org/donar-terremoto", banesco, VE)).toMatchObject(refused("asks for a transfer to a person's own account, as scams do"));
+    const ncb = `<title>Hurricane Melissa Relief</title><h1>Hurricane Melissa relief</h1><p>Donate: transfer to my account at NCB, 123456789, John Brown. Jamaica.</p>`;
+    expect(await check("https://www.jamaica-hope-relief.org/donate-hurricane", ncb, MELISSA)).toMatchObject(refused("asks for a transfer to a person's own account, as scams do"));
+    const cobargo = `<title>Bushfire Appeal | Cobargo Community Association</title><meta property="og:site_name" content="Cobargo Community Association"><h1>Bushfire Appeal</h1><p>Donate cash or Woolworths and Coles gift cards for families in New South Wales.</p>`;
+    expect(await check("https://www.cobargo-community.org.au/bushfire-appeal", cobargo, NSW)).toMatchObject({ ok: true });
+  });
+
+  it("refuses a person's campaign on a crowdfunding platform the lists miss, by what the page says (Cotizi, iSupportJamaica)", async () => {
+    const cotizi = `<title>Séisme Al Haouz : aidons Douar Tikht | Cotizi</title><meta property="og:site_name" content="Cotizi"><h1>Séisme Al Haouz : aidons Douar Tikht</h1><p>Campagne créée par Youssef B. Faire un don. Lancer ma cagnotte. Maroc</p>`;
+    expect(await check("https://www.cotizi.com/campaign/seisme-al-haouz-douar-tikht", cotizi, HAOUZ)).toMatchObject(refused("crowdfunding or giving platform"));
+    const isj = `<title>Hurricane Melissa Relief for Black River | iSupportJamaica</title><meta property="og:site_name" content="iSupportJamaica"><h1>Hurricane Melissa Relief for Black River</h1><p>Project by Andre W. Donate. Start a project. Jamaica</p>`;
+    expect(await check("https://www.isupportjamaica.com/projects/hurricane-melissa-relief", isj, JM)).toMatchObject(refused("crowdfunding or giving platform"));
+    // On a host no list knows, what the page says gives it away.
+    expect(await check("https://www.new-platform.ma/campaign/seisme-al-haouz-douar-tikht", cotizi, HAOUZ)).toMatchObject(refused(/^a person's campaign on a crowdfunding platform/));
+    expect(await check("https://www.new-platform.jm/projects/hurricane-melissa-relief", isj, JM)).toMatchObject(refused(/^a person's campaign on a crowdfunding platform/));
+  });
+
+  it("accepts a group's standing donate page it rewrote for the disaster, by its JSON-LD dateModified", async () => {
+    const yoast = (pub: string, mod: string) => `<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","datePublished":"${pub}","dateModified":"${mod}"}]}</script>`;
+    const instituto = `<title>Doe | Instituto Solidário</title><meta property="og:site_name" content="Instituto Solidário">${yoast("2021-03-02T10:00:00-03:00", "2026-10-12T09:00:00-03:00")}<h1>Enchentes no Rio Grande do Sul: doe agora</h1><p>Doe agora para as famílias atingidas no Rio Grande do Sul, Brasil.</p>`;
+    expect(await check("https://www.institutosolidario.org.br/doe/", instituto, BR)).toMatchObject({ ok: true });
+    const tifawin = `<title>Faire un don | Association Tifawin</title><meta property="og:site_name" content="Association Tifawin">${yoast("2019-05-01T10:00:00+01:00", "2026-10-21T09:00:00+01:00")}<h1>Séisme d'Al Haouz : aidez les familles</h1><p>faire un don. Maroc</p>`;
+    expect(await check("https://www.association-tifawin.ma/faire-un-don/", tifawin, HAOUZ)).toMatchObject({ ok: true });
+    // Changed before the disaster, or naming the hazard without a place of the title: still refused.
+    expect(await check("https://www.institutosolidario.org.br/doe/", instituto.replace("2026-10-12T09", "2024-05-12T09"), BR)).toMatchObject(refused("published 2021-03-02, before the disaster"));
+    expect(await check("https://www.institutosolidario.org.br/doe/", instituto.replace("no Rio Grande do Sul: doe", ": doe"), BR)).toMatchObject(refused("published 2021-03-02, before the disaster"));
+  });
+
+  it("accepts an Arabic page for Al Haouz by the place's Arabic name from the geocoder (live Nominatim names, 2026-10-25)", async () => {
+    const local = { "Al Haouz": ["Province d'Al Haouz ⵜⴰⵙⴳⴰ ⵏ ⵍⵃⵓⵣ إقليم الحوز"], Marrakesh: ["Marrakech ⵎⵕⵕⴰⴽⵯⵛ مراكش"] };
+    const atlas = `<title>تبرع لأسر الحوز | جمعية الأطلس</title><meta property="og:site_name" content="جمعية الأطلس"><h1>ساعدوا أسر الحوز</h1><p>تبرع الآن لإعادة بناء المنازل في دواوير الحوز</p>`;
+    expect(await check("https://www.jamiat-atlas.ma/tabarru-alhaouz", atlas, HAOUZ, local)).toMatchObject({ ok: true, place: "الحوز" });
+  });
+
+  it("accepts Philippine groups' pages that name the typhoon by PAGASA's name, and a Supreme Student Government's drive", async () => {
+    const bagyong = `<title>Bagyong Tino Relief Drive | St. Paul College Cebu</title><meta property="og:site_name" content="St. Paul College Cebu"><h1>Tulong para sa mga nasalanta ng Bagyong Tino</h1><p>Donate now. Cebu, Philippines</p>`;
+    expect(await check("https://www.stpaulcebu.edu.ph/bagyong-tino-relief", bagyong, PH)).toMatchObject({ ok: true });
+    const tino = `<title>Typhoon Tino Relief Drive | St. Paul College Cebu</title><meta property="og:site_name" content="St. Paul College Cebu"><h1>Typhoon Tino relief for Cebu families</h1><p>Donate now. Cebu, Philippines</p>`;
+    expect(await check("https://www.stpaulcebu.edu.ph/typhoon-tino-relief", tino, PH)).toMatchObject({ ok: true });
+    const ssg = `<title>Typhoon Kalmaegi Relief Drive | Mantalongon NHS</title><meta property="og:site_name" content="Mantalongon National High School"><h1>Supreme Student Government Relief Drive for Typhoon Kalmaegi</h1><p>Donate. Cebu, Philippines</p>`;
+    expect(await check("https://www.mantalongon-nhs.edu.ph/typhoon-kalmaegi-relief", ssg, PH)).toMatchObject({ ok: true });
+    // Another storm's name is still another storm.
+    expect(await check("https://www.stpaulcebu.edu.ph/typhoon-relief", tino.replace(/Tino/g, "Odette"), PH)).toMatchObject(refused("names another storm (odette)"));
+  });
+
+  it("accepts pages that give a group's founding year in other languages", async () => {
+    const sejak = `<title>Donasi Gempa Cianjur | Yayasan Al-Ikhlas</title><meta property="og:site_name" content="Yayasan Al-Ikhlas"><h1>Yayasan Al-Ikhlas, melayani Cianjur sejak 1990</h1><p>donasi sekarang. Indonesia</p>`;
+    expect(await check("https://www.yayasan-alikhlas.or.id/donasi-gempa-cianjur", sejak, ID)).toMatchObject({ ok: true });
+    const tangu = `<title>Budalangi Floods Appeal | St. Mary's Mumias</title><meta property="og:site_name" content="St. Mary's Mumias"><h1>Tunahudumia jamii tangu 1990</h1><p>Changia waathiriwa wa mafuriko Budalangi. M-Pesa Paybill 123456. Kenya</p>`;
+    expect(await check("https://www.stmarysmumias.ac.ke/budalangi-floods", tangu, KE)).toMatchObject({ ok: true });
+    const mundhu = `<title>تبرع لضحايا زلزال الحوز</title><meta property="og:site_name" content="جمعية الأطلس"><h1>جمعية الأطلس في خدمة الحوز منذ 1990</h1><p>تبرع لدعم الأسر في المغرب</p>`;
+    expect(await check("https://www.jamiat-atlas.ma/tabarru", mundhu, HAOUZ)).toMatchObject({ ok: true });
+    const setsuritsu = `<title>能登半島地震 緊急支援 | 某NPO</title><meta property="og:site_name" content="某NPO"><h1>1990年設立の某NPO 能登半島地震 緊急支援</h1><p>寄付をお願いします。日本</p>`;
+    expect(await check("https://www.some-npo.or.jp/noto/", setsuritsu, disaster({ countries: ["JP"], type: "earthquake", title: "Earthquake in Noto, Japan", ...at("2026-10-20") }))).toMatchObject({ ok: true });
+  });
+
+  it("accepts a church whose host says good news", async () => {
+    const page = `<title>Hurricane Melissa Relief | Good News Church</title><meta property="og:site_name" content="Good News Church"><h1>Hurricane Melissa Relief</h1><p>Donate to families in Jamaica.</p>`;
+    expect(await check("https://www.good-news-church.org.jm/hurricane-melissa-relief", page, JM)).toMatchObject({ ok: true });
+  });
+});
+
 describe("verifyLocalPage", () => {
   const local: LocalContext = { donation: ctxFor(MELISSA) };
   const URL0 = "https://stelizabethrelief.org/hurricane-melissa/donate";
@@ -1718,6 +2276,8 @@ describe("localRules", () => {
       type: "cyclone",
       minYear: 2025,
       started: "2025-10-21T12:00:00.000Z",
+      ownPlaces: ["Black River", "Melissa"],
+      languages: ["en", "es", "fr", "pt", "ar", "id", "tr", "ru", "zh", "ja", "th", "de", "it"],
     });
   });
 

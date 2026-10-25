@@ -829,8 +829,14 @@ export interface DonationContext {
    * (isIfrcEventCampaign); none is allowed when left out.
    */
   countryNameIndex?: Record<string, string[]>;
-  /** Words of the disaster's title that name a place but no country (see eventWords). */
+  /**
+   * Words of the disaster's title that name a place but no country (see
+   * eventWords), and the other names of the storms it names (stormNames:
+   * "tino" for Typhoon Kalmaegi), which pages use as the storm's name.
+   */
   eventWords?: string[];
+  /** The storms the title names, with their other names (stormNamesOf): ["kalmaegi", "tino"]. */
+  stormNames?: string[];
   /** The disaster's title as given ("Hurricane Melissa", "Floods in Derna, Libya"), so direct.ts can tell whether it names a storm. */
   title?: string;
 }
@@ -861,7 +867,7 @@ export function donationContext(
   countries: string[],
   registry: DonationRegistry,
   governmentDomains = loadGovernmentDomains(),
-  about: Partial<Pick<DonationInput, "title" | "countryNames" | "appeals">> = {},
+  about: Partial<Pick<DonationInput, "title" | "countryNames" | "appeals">> & { stormAliases?: Record<string, string[]> } = {},
 ): DonationContext {
   const societyHosts = new Set<string>();
   const platformCodes = new Set<string>();
@@ -879,6 +885,9 @@ export function donationContext(
   // The disaster's own appeals, whatever letters IFRC gave them (MDRPS014 for Syria).
   for (const a of about.appeals ?? []) appealCountriesIn(new URL(`${IFRC_APPEAL_PAGE}${encodeURIComponent(a.code)}`)).forEach((c) => appealCountries.add(c));
   const names = about.countryNames ? countryNameIndex(about.countryNames, registry) : null;
+  const words = names ? eventWords(about.title, names.words) : [];
+  // A storm's other names are its names too: "/ifrc/typhoon-tino/" and "Bagyong Tino" are Typhoon Kalmaegi's.
+  const storms = names ? stormNamesOf(about.title, words, about.appeals, about.stormAliases ?? loadStormAliases(), names.words) : [];
   return {
     countries,
     societyHosts: [...societyHosts],
@@ -886,7 +895,8 @@ export function donationContext(
     governmentDomains,
     appealCountries: [...appealCountries],
     ...(names ? { countryNameIndex: names.index } : {}),
-    eventWords: names ? eventWords(about.title, names.words) : [],
+    eventWords: [...new Set([...words, ...storms])],
+    ...(storms.length > 0 ? { stormNames: storms } : {}),
     ...(typeof about.title === "string" ? { title: about.title } : {}),
   };
 }
@@ -908,6 +918,8 @@ export const NOT_EVENT_WORDS: ReadonlySet<string> = new Set(
     "insecurity wildfire wildfires fire fires forest bushfire bushfires volcano volcanoes volcanic eruption eruptions lava landslide landslides mudslide",
     "mudslides mudflow mudflows debris tsunami tsunamis heatwave heatwaves heat coldwave coldwaves cold wave waves winter dust rain rains rainfall heavy",
     "monsoon monsoons snow hail wind winds weather extreme severe",
+    // Tagalog: "bagyo" (a typhoon), "Bagyong Tino" (Typhoon Tino).
+    "bagyo bagyong",
     // The same in the languages of IFRC's campaigns.
     "terremoto terremotos sismo sismos seisme seismes tremblement huracan huracanes ouragan ouragans ciclon tifon tormenta tempete inundacion inundaciones",
     "inondation inondations enchente enchentes chuvas lluvias pluies sequia secheresse seca incendio incendios incendie incendies volcan erupcion",
@@ -947,8 +959,10 @@ export function asciiWords(text: string): string[] {
  * (countryNameIndex).
  */
 export const COUNTRY_ALIASES: Readonly<Record<string, readonly string[]>> = {
-  // New Mexico is a state, not Mexico.
-  US: ["usa", "united states", "new mexico"],
+  // New Mexico and New Jersey are states, not Mexico or Jersey; the Jersey Shore and Jersey City are in New Jersey, and
+  // Panama City is Florida's as well as Panama's.
+  US: ["usa", "united states", "new mexico", "new jersey", "jersey shore", "jersey city", "panama city"],
+  PA: ["panama city"],
   GB: ["uk", "great britain", "britain"],
   AE: ["uae"],
   TR: ["turkiye"],
@@ -1016,17 +1030,100 @@ export function countryNameIndex(countryNames: Record<string, string>, registry?
  * "south sudan" names South Sudan, not Sudan). One code list per name.
  */
 export function countriesNamedIn(words: string[], index: Record<string, string[]>): string[][] {
-  const spans: { start: number; end: number; codes: string[] }[] = [];
+  return countrySpans(words, index).map((s) => s.codes);
+}
+
+/** One country's name in a run of words: where it is, its joined key ("papuanewguinea") and the codes it names. */
+export interface CountrySpan {
+  start: number;
+  end: number;
+  key: string;
+  codes: string[];
+}
+
+/** The country names in a run of words, as countriesNamedIn finds them (whole names, the longest), with their places and keys. */
+export function countrySpans(words: readonly string[], index: Record<string, string[]>): CountrySpan[] {
+  const spans: CountrySpan[] = [];
   for (let start = 0; start < words.length; start++) {
     let joined = "";
     // No country's name is longer than 64 letters, so a long slug costs little.
     for (let end = start + 1; end <= words.length && joined.length <= 64; end++) {
       joined += words[end - 1];
-      if (Object.hasOwn(index, joined)) spans.push({ start, end, codes: index[joined] });
+      if (Object.hasOwn(index, joined)) spans.push({ start, end, key: joined, codes: index[joined] });
     }
   }
-  const inside = (a: (typeof spans)[number], b: (typeof spans)[number]) => a !== b && b.start <= a.start && a.end <= b.end;
-  return spans.filter((s) => !spans.some((o) => inside(s, o))).map((s) => s.codes);
+  const inside = (a: CountrySpan, b: CountrySpan) => a !== b && b.start <= a.start && a.end <= b.end;
+  return spans.filter((s) => !spans.some((o) => inside(s, o)));
+}
+
+/** Words that come before a storm's name: "Hurricane Melissa", "Storm Boelo", "huracán Beryl", "Bagyong Tino". Folded. */
+export const STORM_WORDS: ReadonlySet<string> = new Set(
+  "hurricane hurricanes typhoon typhoons cyclone cyclones huracan huracanes tifon ouragan ciclon storm storms tormenta tempete bagyo bagyong".split(" "),
+);
+
+export const STORM_NAMES_PATH = "pipeline/config/storm-names.json";
+const stormNameCache = new Map<string, Record<string, string[]>>();
+
+/**
+ * Other names of storms, folded, from pipeline/config/storm-names.json
+ * (cached): the names PAGASA gives storms in the Philippines, which its
+ * people's pages use ("kalmaegi" -> ["tino"]), each way round. Empty when
+ * the file cannot be read.
+ */
+export function loadStormAliases(path = STORM_NAMES_PATH): Record<string, string[]> {
+  let aliases = stormNameCache.get(path);
+  if (!aliases) {
+    aliases = {};
+    try {
+      const raw = JSON.parse(fs.readFileSync(path, "utf8")) as { aliases?: Record<string, unknown> };
+      for (const [name, others] of Object.entries(raw.aliases ?? {})) {
+        for (const other of Array.isArray(others) ? others : []) {
+          if (typeof other !== "string") continue;
+          const [a, b] = [asciiWords(name).join(""), asciiWords(other).join("")];
+          if (!a || !b || a === b) continue;
+          aliases[a] = [...new Set([...(aliases[a] ?? []), b])];
+          aliases[b] = [...new Set([...(aliases[b] ?? []), a])];
+        }
+      }
+    } catch {
+      // no aliases
+    }
+    stormNameCache.set(path, aliases);
+  }
+  return aliases;
+}
+
+/**
+ * The storms a disaster's title names (each place word of the title that
+ * follows a storm word: "Typhoon Kalmaegi" -> "kalmaegi") and their other
+ * names: from the storm-name aliases, and from its IFRC appeals' names,
+ * which give PAGASA's name in brackets ("Philippines: Typhoon Kalmaegi
+ * (Tino)" -> "tino"). Folded, each once, the title's first.
+ */
+export function stormNamesOf(
+  title: string | undefined,
+  places: readonly string[],
+  appeals: readonly Pick<AppealRef, "name">[] = [],
+  aliases: Record<string, string[]> = {},
+  countryWords: ReadonlySet<string> = new Set(),
+): string[] {
+  const place = new Set(places);
+  const words = asciiWords(title ?? "");
+  const at = words.flatMap((w, i) => (i > 0 && STORM_WORDS.has(words[i - 1]) && place.has(w) ? [i] : []));
+  const storms = at.map((i) => words[i]);
+  const out = new Set(storms);
+  // A hyphenated name is looked up whole too: "Typhoon Kong-rey" -> "kongrey".
+  for (const i of at) for (const key of [words[i], words[i] + (words[i + 1] ?? "")]) for (const a of Object.hasOwn(aliases, key) ? aliases[key] : []) out.add(a);
+  // A name in brackets is a storm's other name only when it is written as a name ("Tino"), not a code or a country.
+  const isName = (raw: string, folded: string) => /^\p{Lu}\p{Ll}+$/u.test(raw) && folded.length >= 3 && !NOT_EVENT_WORDS.has(folded) && !countryWords.has(folded) && !STORM_WORDS.has(folded);
+  for (const a of appeals) {
+    for (const m of (typeof a?.name === "string" ? a.name : "").matchAll(/([\p{L}][\p{L}-]+)\s*\(\s*([\p{L}][\p{L}-]+)\s*\)/gu)) {
+      const [x, y] = [asciiWords(m[1]).join(""), asciiWords(m[2]).join("")];
+      if (storms.includes(x) && isName(m[2], y)) out.add(y);
+      if (storms.includes(y) && isName(m[1], x)) out.add(x);
+    }
+  }
+  return [...out];
 }
 
 /**

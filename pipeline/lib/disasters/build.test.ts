@@ -23,6 +23,7 @@ import {
   pruneAttempts,
   readAttempts,
   readDisastersFile,
+  readPressLanguages,
   readPressNames,
   readSnapshots,
   relatedHeadlines,
@@ -342,6 +343,14 @@ describe("direct giving helpers", () => {
     expect(names.AF).toBe("افغانستان");
     expect(Object.keys(names).length).toBeGreaterThan(50);
     expect(readPressNames("/nonexistent/languages.json")).toEqual({});
+  });
+
+  it("reads each country's press language, and none from a missing file", () => {
+    const langs = readPressLanguages();
+    expect(langs.MA).toBe("fr");
+    expect(langs.AE).toBe("ar");
+    expect(langs.BR).toBe("pt");
+    expect(readPressLanguages("/nonexistent/languages.json")).toEqual({});
   });
 });
 

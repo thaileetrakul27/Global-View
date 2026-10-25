@@ -26,6 +26,7 @@ import {
   isCacheEntry,
   localNamesOf,
   localPlaceNames,
+  nameLanguagesOf,
   isFresh,
   mentionsAdmin,
   nominatimCountry,
@@ -42,6 +43,7 @@ import {
   searchNominatim,
   searchQuery,
   serialiseCache,
+  splitScripts,
   territoryName,
   toGeoHit,
   unwrapBbox,
@@ -513,6 +515,35 @@ describe("localNamesOf", () => {
   });
 });
 
+describe("splitScripts, nameLanguagesOf and localNamesOf: names in several scripts (Morocco, live 2026-10-25)", () => {
+  // namedetails as Nominatim gave them on 2026-10-25 for "Al Haouz" and "Marrakesh" (countrycodes=ma).
+  const HAOUZ = { name: "Province d'Al Haouz ⵜⴰⵙⴳⴰ ⵏ ⵍⵃⵓⵣ إقليم الحوز", "name:ar": "إقليم الحوز", "name:fr": "Province d'Al Haouz", "name:en": "Al Haouz Province" };
+  const MARRAKECH = { name: "Marrakech ⵎⵕⵕⴰⴽⵯⵛ مراكش", "name:ar": "مراكش", "name:fr": "Marrakech", "name:en": "Marrakesh" };
+
+  it("splits a name that mixes scripts into one name per script", () => {
+    expect(splitScripts("Province d'Al Haouz ⵜⴰⵙⴳⴰ ⵏ ⵍⵃⵓⵣ إقليم الحوز")).toEqual(["Province d'Al Haouz", "ⵜⴰⵙⴳⴰ ⵏ ⵍⵃⵓⵣ", "إقليم الحوز"]);
+    expect(splitScripts("Marrakech ⵎⵕⵕⴰⴽⵯⵛ مراكش")).toEqual(["Marrakech", "ⵎⵕⵕⴰⴽⵯⵛ", "مراكش"]);
+    expect(splitScripts("能登町")).toEqual(["能登町"]);
+    expect(splitScripts("จังหวัดเชียงราย")).toEqual(["จังหวัดเชียงราย"]);
+    expect(splitScripts("  ")).toEqual([]);
+  });
+
+  it("reads a country's places in its press language and its main language", () => {
+    expect(nameLanguagesOf("MA", "fr")).toEqual(["fr", "ar"]);
+    expect(nameLanguagesOf("NP")).toEqual(["ne"]);
+    expect(nameLanguagesOf("JM")).toEqual([]);
+    expect(nameLanguagesOf("BE", "fr")).toEqual(["fr", "nl"]);
+  });
+
+  it("keeps the Arabic names of Al Haouz and Marrakech, the language's first, then each script of the name", () => {
+    expect(localNamesOf(HAOUZ, "Al Haouz", ["ar"])).toEqual(["إقليم الحوز", "Province d'Al Haouz", "ⵜⴰⵙⴳⴰ ⵏ ⵍⵃⵓⵣ"]);
+    expect(localNamesOf(MARRAKECH, "Marrakesh", ["ar"])).toEqual(["مراكش", "Marrakech", "ⵎⵕⵕⴰⴽⵯⵛ"]);
+    // A hit for a Moroccan place reads them by the country's language.
+    const hit = toGeoHit({ lat: "31.4", lon: "-7.9", name: "Al Haouz", category: "boundary", type: "administrative", place_rank: 12, namedetails: HAOUZ } as NominatimResult, "MA", "Al Haouz");
+    expect(hit?.local).toEqual(["إقليم الحوز", "Province d'Al Haouz", "ⵜⴰⵙⴳⴰ ⵏ ⵍⵃⵓⵣ"]);
+  });
+});
+
 describe("toGeoHit", () => {
   it("reads a city without keeping its outline", () => {
     const h = toGeoHit(fixture("bangkok")[0], "th", "Bangkok");
@@ -791,6 +822,13 @@ describe("searchNominatim", () => {
 });
 
 describe("createGeocoder", () => {
+  it("reads a place's own names in its country's press language", async () => {
+    const result = { lat: "31.63", lon: "-8.0", name: "Marrakech", category: "boundary", type: "administrative", place_rank: 16, address: { country_code: "ma" }, namedetails: { name: "Marrakech", "name:ar": "مراكش", "name:fr": "Marrakech" } };
+    // Morocco's press writes in French, and its main language is Arabic.
+    const geo = createGeocoder(makeDeps(routedFetch({ Marrakesh: [result] })), {}, NOW, { pressLanguages: { MA: "fr" } });
+    expect(await geo.geocode("Marrakesh", "MA")).toMatchObject({ name: "Marrakech", local: ["مراكش"] });
+  });
+
   it("geocodes from Nominatim, writes the cache, then serves from it", async () => {
     const fetch = routedFetch({ Bangkok: fixture("bangkok") });
     const deps = makeDeps(fetch);
