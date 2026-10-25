@@ -122,8 +122,8 @@ export default function App() {
   const [snapshots, setSnapshots] = useState<Record<string, Snapshot | null>>({});
   // Foreign articles about each country, fetched when its inbound view opens.
   const [abouts, setAbouts] = useState<Record<string, AboutFile | null>>({});
-  // Disasters happening now, the one whose donation pages are open, and
-  // whether the minor ones are shown too.
+  // Disasters happening now (significant and severe ones only; see
+  // loadDisasters) and the one whose donation pages are open.
   const [disasters, setDisasters] = useState<Disaster[]>([]);
   // Whether the disaster file has been read (or failed), so a country on the
   // disaster map can tell "none now" from "not loaded yet".
@@ -132,7 +132,6 @@ export default function App() {
   // Country and map to return to when the disaster panel closes.
   const [disasterFrom, setDisasterFrom] = useState<string | null>(null);
   const [disasterFromMode, setDisasterFromMode] = useState<MapMode | null>(null);
-  const [showMinor, setShowMinor] = useState(false);
   // Whether the country panel's "+N more" disasters are unfolded; kept here so
   // closing a disaster opened from that list finds its row again.
   const [countryDisastersOpen, setCountryDisastersOpen] = useState(false);
@@ -737,7 +736,7 @@ export default function App() {
                 <p className="mt-1.5 max-w-xs text-sm leading-snug text-muted">The stories each country is reading right now.</p>
               )
             ) : (
-              <p className="mt-1.5 max-w-xs text-sm leading-snug text-muted">Natural disasters happening now, and official places to give.</p>
+              <p className="mt-1.5 max-w-xs text-sm leading-snug text-muted">Natural disasters happening now, and where to give.</p>
             ))}
         </div>
         <div className="pointer-events-auto flex w-full items-start gap-2 md:absolute md:left-1/2 md:w-80 md:-translate-x-1/2 md:flex-col md:items-center md:gap-2.5">
@@ -766,8 +765,6 @@ export default function App() {
             disasters={liveDisasters}
             nameOf={nameOf}
             onSelect={openDisasterPanel}
-            showMinor={showMinor}
-            onShowMinor={setShowMinor}
             expanded={listExpanded}
             onExpand={setListExpanded}
           />
@@ -776,7 +773,7 @@ export default function App() {
 
       {!panelOpen && !newsMap && liveDisasters.length > 0 && !vp.isDesktop && (
         <div className={`pointer-events-none absolute inset-x-0 z-20 ${moved ? "bottom-5" : "bottom-11"}`}>
-          <DisasterStrip disasters={liveDisasters} nameOf={nameOf} onSelect={openDisasterPanel} showMinor={showMinor} onShowMinor={setShowMinor} />
+          <DisasterStrip disasters={liveDisasters} nameOf={nameOf} onSelect={openDisasterPanel} />
         </div>
       )}
 
@@ -815,7 +812,6 @@ export default function App() {
         disasters={liveDisasters}
         selectedDisasterId={openDisaster?.id ?? null}
         showDisasters={!newsMap}
-        showMinor={showMinor}
         onSelectDisaster={openDisasterPanel}
         onMoved={moved ? undefined : onMoved}
       />

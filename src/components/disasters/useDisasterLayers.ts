@@ -59,8 +59,6 @@ interface Options {
   disasters: Disaster[];
   selectedId: string | null;
   show: boolean;
-  /** Disasters left off the map (minor ones), kept built so they can come back at once. */
-  hidden: ReadonlySet<string>;
   /** Width covered by a side panel on the right, px, so place labels flip before it. */
   rightInset: number;
   onSelect: (id: string) => void;
@@ -196,7 +194,7 @@ function layoutHtml(
   }
 }
 
-export function useDisasterLayers({ globe, ready, disasters, selectedId, show, hidden, rightInset, onSelect, onCameraMove }: Options) {
+export function useDisasterLayers({ globe, ready, disasters, selectedId, show, rightInset, onSelect, onCameraMove }: Options) {
   const reduced = useReducedMotion();
   const [effects] = useState(() => new AreaEffects());
   useEffect(() => () => effects.dispose(), [effects]);
@@ -219,12 +217,8 @@ export function useDisasterLayers({ globe, ready, disasters, selectedId, show, h
   const areas = useMemo(() => buildAreaItems(disasters), [disasters]);
   const allRings = useMemo(() => buildRingItems(disasters), [disasters]);
   const rings = useMemo(() => activeRings(allRings, [selectedId, hoveredId]), [allRings, selectedId, hoveredId]);
-  // Hidden disasters are filtered out of the cheap layers; the built items
-  // keep their identity, so the globe keeps the rest of the elements.
-  const allPaths = useMemo(() => buildPathItems(disasters), [disasters]);
-  const paths = useMemo(() => allPaths.filter((p) => !hidden.has(p.disasterId)), [allPaths, hidden]);
-  const allMarkers = useMemo(() => buildMarkerItems(disasters), [disasters]);
-  const markers = useMemo(() => allMarkers.filter((m) => !hidden.has(m.disasterId)), [allMarkers, hidden]);
+  const paths = useMemo(() => buildPathItems(disasters), [disasters]);
+  const markers = useMemo(() => buildMarkerItems(disasters), [disasters]);
   const selected = useMemo(() => disasters.find((d) => d.id === selectedId) ?? null, [disasters, selectedId]);
   const places = useMemo(() => buildPlaceItems(selected), [selected]);
   const html = useMemo<(MarkerItem | PlaceItem)[]>(() => (show ? [...markers, ...places] : []), [show, markers, places]);
@@ -259,13 +253,12 @@ export function useDisasterLayers({ globe, ready, disasters, selectedId, show, h
   const areaData = useMemo(() => (feed.list === areas ? areas.slice(0, feed.count) : []), [feed, areas]);
   useEffect(() => effects.prune(areaData), [effects, areaData]);
   useEffect(() => effects.setShown(show), [effects, show]);
-  useEffect(() => effects.setHidden(hidden), [effects, hidden]);
 
   // A marker removed under the pointer never sends pointerleave, and hidden
   // layers cannot stay hovered: forget hovers when either changes.
-  const [hoverScope, setHoverScope] = useState({ show, disasters, hidden });
-  if (hoverScope.show !== show || hoverScope.disasters !== disasters || hoverScope.hidden !== hidden) {
-    setHoverScope({ show, disasters, hidden });
+  const [hoverScope, setHoverScope] = useState({ show, disasters });
+  if (hoverScope.show !== show || hoverScope.disasters !== disasters) {
+    setHoverScope({ show, disasters });
     setAreaHover(null);
     setMarkerHover(null);
     setMarkerFocus(null);

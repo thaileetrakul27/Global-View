@@ -97,23 +97,13 @@ export function disastersIn(list: readonly Disaster[], code: string): Disaster[]
   return rankDisasters(list.filter((d) => d.countries.includes(code)));
 }
 
-/** Minor disasters are left off the map and the lists until someone asks for them or zooms in. */
-export function isMinor(d: Pick<Disaster, "severity">): boolean {
-  return d.severity < 2;
-}
-
-/** The significant and severe disasters, in the order given. */
-export function significantOnly(list: readonly Disaster[]): Disaster[] {
-  return list.filter((d) => !isMinor(d));
-}
-
 /**
- * Ids of disasters the globe leaves out: the minor ones unless they are
- * shown, never the one whose panel is open.
+ * The significant and severe disasters, in the order given. The site shows
+ * no minor ones: the pipeline no longer publishes them, and this drops them
+ * from older files that still do.
  */
-export function hiddenOnMap(list: readonly Disaster[], opts: { showMinor: boolean; openId: string | null }): Set<string> {
-  if (opts.showMinor) return new Set();
-  return new Set(list.filter((d) => isMinor(d) && d.id !== opts.openId).map((d) => d.id));
+export function significantOnly(list: readonly Disaster[]): Disaster[] {
+  return list.filter((d) => d.severity >= 2);
 }
 
 /** One disaster by id, or null. */
@@ -260,7 +250,7 @@ function urlKey(url: string): string {
   return `${u.hostname.toLowerCase()}${u.pathname.replace(/\/+$/, "")}${u.search}`;
 }
 
-export type DonationGroupKey = "event" | "redcross" | "un" | "agency" | "government";
+export type DonationGroupKey = "direct" | "event" | "redcross" | "un" | "agency" | "government";
 
 export interface DonationGroup {
   key: DonationGroupKey;
@@ -269,6 +259,9 @@ export interface DonationGroup {
 }
 
 const GROUP_OF: Record<DonationLink["kind"], DonationGroupKey> = {
+  fundraiser: "direct",
+  project: "direct",
+  local: "direct",
   society: "redcross",
   appeal: "redcross",
   un: "un",
@@ -276,7 +269,11 @@ const GROUP_OF: Record<DonationLink["kind"], DonationGroupKey> = {
   government: "government",
 };
 
+/** Pages that give straight to the people affected, in the order they are listed. */
+const DIRECT_ORDER: DonationLink["kind"][] = ["fundraiser", "project", "local"];
+
 const GROUPS: { key: DonationGroupKey; label: string }[] = [
+  { key: "direct", label: "Directly to people affected" },
   { key: "event", label: "For this disaster" },
   { key: "redcross", label: "Red Cross and Red Crescent" },
   { key: "un", label: "United Nations" },
@@ -298,21 +295,68 @@ export function safeDonations(links: readonly DonationLink[]): DonationLink[] {
   return out;
 }
 
-/** The group a link goes in: pages for this disaster itself first, the rest by who runs them. */
+/** True for a fundraiser, a relief project or a local group's own page: giving that goes straight to the people affected. */
+export function isDirect(link: Pick<DonationLink, "kind">): boolean {
+  return GROUP_OF[link.kind] === "direct";
+}
+
+/**
+ * The group a link goes in: direct giving first, then official pages for
+ * this disaster itself, then the rest by who runs them.
+ */
 function groupOf(link: DonationLink): DonationGroupKey | undefined {
+  if (isDirect(link)) return "direct";
   // Only a real true counts: older files have no forEvent at all.
   return link.forEvent === true ? "event" : GROUP_OF[link.kind];
 }
 
 /**
- * Safe donation links grouped: pages for this disaster itself (its appeal,
- * checked pages researched for it) first, then the rest by who runs them:
- * Red Cross and Red Crescent, United Nations, agencies, government funds.
- * Empty groups are left out; within a group the pipeline's order is kept.
+ * Safe donation links grouped: pages that give directly to the people
+ * affected (fundraisers, then relief projects, then local groups' own
+ * pages) first, then official pages for this disaster itself (its appeal,
+ * checked pages researched for it), then the rest by who runs them: Red
+ * Cross and Red Crescent, United Nations, agencies, government funds.
+ * Empty groups are left out; otherwise the pipeline's order is kept.
  */
 export function groupDonations(links: readonly DonationLink[]): DonationGroup[] {
   const safe = safeDonations(links);
-  return GROUPS.map((g) => ({ ...g, links: safe.filter((l) => groupOf(l) === g.key) })).filter((g) => g.links.length > 0);
+  return GROUPS.map((g) => {
+    const inGroup = safe.filter((l) => groupOf(l) === g.key);
+    // A stable sort, so each kind keeps the pipeline's order.
+    if (g.key === "direct") inGroup.sort((a, b) => DIRECT_ORDER.indexOf(a.kind) - DIRECT_ORDER.indexOf(b.kind));
+    return { ...g, links: inGroup };
+  }).filter((g) => g.links.length > 0);
+}
+
+/** Who checked a direct page whose file gives no note: what is true of every page of its kind. */
+const DIRECT_NOTE: Partial<Record<DonationLink["kind"], string>> = {
+  fundraiser: "On GoFundMe's verified list for this disaster",
+  project: "Listed by a giving platform that vets its partners",
+  local: "A local group's own page. Global View checked it is live, but cannot vouch for the group.",
+};
+
+/**
+ * The line under a donation page saying who checked it: the file's own
+ * note, or for a direct page without one, what its kind guarantees.
+ */
+export function donationNote(link: Pick<DonationLink, "kind" | "note">): string {
+  const note = typeof link.note === "string" ? link.note.trim() : "";
+  return note || (isDirect(link) ? (DIRECT_NOTE[link.kind] ?? "") : "");
+}
+
+const DIRECT_SOURCES = "come from GoFundMe's verified lists, GlobalGiving and local groups' own pages, all checked automatically.";
+const OFFICIAL_SOURCES = "come from the Red Cross and UN registries, or are official pages checked against an allowlist.";
+
+/**
+ * Where the listed pages come from, for the foot of the donate box; empty
+ * when nothing is listed. Without direct pages it reads as it always has.
+ */
+export function donationSources(groups: readonly Pick<DonationGroup, "key">[]): string {
+  const direct = groups.some((g) => g.key === "direct");
+  const official = groups.some((g) => g.key !== "direct");
+  if (direct && official) return `Direct pages ${DIRECT_SOURCES} The others ${OFFICIAL_SOURCES}`;
+  if (direct) return `These pages ${DIRECT_SOURCES}`;
+  return official ? `These pages ${OFFICIAL_SOURCES}` : "";
 }
 
 // Appeals

@@ -7,10 +7,11 @@ import {
   coordText,
   countByType,
   disastersIn,
+  donationNote,
+  donationSources,
   findDisaster,
   groupDonations,
-  hiddenOnMap,
-  isMinor,
+  isDirect,
   isSafeUrl,
   locationLine,
   placeDetail,
@@ -370,6 +371,85 @@ describe("groupDonations", () => {
     const junk = [{ ...link({ url: "https://www.ifrc.org/donate", kind: "agency" }), forEvent: "yes" as unknown as boolean }];
     expect(groupDonations(junk).map((g) => g.key)).toEqual(["agency"]);
   });
+
+  it("puts direct giving first, fundraisers then projects then local groups, before this disaster's official pages", () => {
+    const links = [
+      link({ url: "https://www.ifrc.org/appeals?appeal_code=MDRJP020", kind: "appeal", forEvent: true }),
+      link({ url: "https://school.example.jp/donate", kind: "local", via: "research", forEvent: true }),
+      link({ url: "https://www.globalgiving.org/projects/champi-relief/", kind: "project", via: "platform", forEvent: true }),
+      link({ url: "https://www.gofundme.com/f/champi-family", kind: "fundraiser", via: "platform", forEvent: true }),
+      link({ url: "https://crisisrelief.un.org/", kind: "un" }),
+      link({ url: "https://www.gofundme.com/f/champi-school", kind: "fundraiser", via: "platform", forEvent: true }),
+      link({ url: "http://unsafe.example.jp/donate", kind: "local", via: "research", forEvent: true }),
+    ];
+    const groups = groupDonations(links);
+    expect(groups.map((g) => g.key)).toEqual(["direct", "event", "un"]);
+    expect(groups[0].label).toBe("Directly to people affected");
+    expect(groups[0].links.map((l) => l.url)).toEqual([
+      "https://www.gofundme.com/f/champi-family",
+      "https://www.gofundme.com/f/champi-school",
+      "https://www.globalgiving.org/projects/champi-relief/",
+      "https://school.example.jp/donate",
+    ]);
+    expect(groups[1].links.map((l) => l.kind)).toEqual(["appeal"]);
+  });
+
+  it("files a direct page under direct giving even without a forEvent mark", () => {
+    const groups = groupDonations([link({ url: "https://www.gofundme.com/f/x", kind: "fundraiser", via: "platform" })]);
+    expect(groups.map((g) => g.key)).toEqual(["direct"]);
+  });
+
+  it("drops a link of a kind it does not know", () => {
+    const odd = { ...link({ url: "https://example.org/give" }), kind: "raffle" as DonationLink["kind"] };
+    expect(groupDonations([odd])).toEqual([]);
+  });
+});
+
+describe("isDirect", () => {
+  it("is true for fundraisers, projects and local groups only", () => {
+    expect(["fundraiser", "project", "local"].map((kind) => isDirect({ kind: kind as DonationLink["kind"] }))).toEqual([true, true, true]);
+    expect(["appeal", "society", "un", "government", "agency"].map((kind) => isDirect({ kind: kind as DonationLink["kind"] }))).toEqual([false, false, false, false, false]);
+  });
+});
+
+describe("donationNote", () => {
+  it("gives the file's own note, trimmed", () => {
+    expect(donationNote({ kind: "fundraiser", note: " Verified by GoFundMe's Trust & Safety team " })).toBe("Verified by GoFundMe's Trust & Safety team");
+    expect(donationNote({ kind: "society", note: "Kenya Red Cross" })).toBe("Kenya Red Cross");
+  });
+
+  it("says who checked a direct page that came without a note, and that no one vouches for a local group", () => {
+    expect(donationNote({ kind: "fundraiser", note: "" })).toBe("On GoFundMe's verified list for this disaster");
+    expect(donationNote({ kind: "project", note: "  " })).toBe("Listed by a giving platform that vets its partners");
+    expect(donationNote({ kind: "local", note: "" })).toContain("cannot vouch for the group");
+  });
+
+  it("adds nothing to an official page without a note", () => {
+    expect(donationNote({ kind: "un", note: "" })).toBe("");
+    expect(donationNote({ kind: "appeal", note: undefined as unknown as string })).toBe("");
+  });
+});
+
+describe("donationSources", () => {
+  const OFFICIAL = "These pages come from the Red Cross and UN registries, or are official pages checked against an allowlist.";
+
+  it("reads as before when there are only official pages", () => {
+    expect(donationSources([{ key: "redcross" }, { key: "un" }])).toBe(OFFICIAL);
+    expect(donationSources([{ key: "event" }])).toBe(OFFICIAL);
+  });
+
+  it("names where direct pages come from, and the official ones after them", () => {
+    expect(donationSources([{ key: "direct" }])).toBe(
+      "These pages come from GoFundMe's verified lists, GlobalGiving and local groups' own pages, all checked automatically.",
+    );
+    const both = donationSources([{ key: "direct" }, { key: "event" }, { key: "un" }]);
+    expect(both).toMatch(/^Direct pages come from GoFundMe's verified lists/);
+    expect(both).toContain("The others come from the Red Cross and UN registries");
+  });
+
+  it("is empty when nothing is listed", () => {
+    expect(donationSources([])).toBe("");
+  });
 });
 
 describe("appealFunding", () => {
@@ -387,18 +467,16 @@ describe("appealFunding", () => {
   });
 });
 
-describe("minor disasters", () => {
-  const list = [make({ id: "minor", severity: 1 }), make({ id: "big", severity: 2 }), make({ id: "worst", severity: 3 })];
-
-  it("keeps the significant and severe ones", () => {
-    expect(isMinor({ severity: 1 })).toBe(true);
-    expect(isMinor({ severity: 2 })).toBe(false);
-    expect(significantOnly(list).map((x) => x.id)).toEqual(["big", "worst"]);
+describe("significantOnly", () => {
+  it("drops minor disasters an older file still carries, keeping the order given", () => {
+    const list = [make({ id: "worst", severity: 3 }), make({ id: "minor", severity: 1 }), make({ id: "big", severity: 2 })];
+    expect(significantOnly(list).map((x) => x.id)).toEqual(["worst", "big"]);
+    expect(significantOnly([make({ id: "minor", severity: 1 })])).toEqual([]);
   });
 
-  it("hides minor ones on the map unless shown, never the open one", () => {
-    expect([...hiddenOnMap(list, { showMinor: false, openId: null })]).toEqual(["minor"]);
-    expect(hiddenOnMap(list, { showMinor: true, openId: null }).size).toBe(0);
-    expect(hiddenOnMap(list, { showMinor: false, openId: "minor" }).size).toBe(0);
+  it("leaves nothing for a shared link to a minor disaster to open", () => {
+    const list = significantOnly(cleanDisasters([make({ id: "minor", severity: 1 }), make({ id: "big", severity: 2 })]));
+    expect(findDisaster(list, "minor")).toBeNull();
+    expect(findDisaster(list, "big")?.id).toBe("big");
   });
 });
