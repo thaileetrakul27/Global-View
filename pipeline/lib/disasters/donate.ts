@@ -36,6 +36,11 @@
 // per run (refreshRegistry), checks researched pages (prepareDonations or
 // verifyDonationPage), and builds each disaster's list (buildDonations).
 //
+// Direct giving (GoFundMe's verified fundraisers, GlobalGiving projects and
+// local groups' own pages) comes from direct.ts by its own rules; the
+// integrator passes those links in, and buildDonations lists them before
+// all of these, in the order and within the caps of directFirst.
+//
 // Live findings (2026-10-19) behind these rules:
 //   - donate.redcrossredcrescent.org/<cc>/default/ answers 303 with a
 //     relative location: "/jp/default/~my-donation?_cv=1" when the society
@@ -83,8 +88,12 @@ export const VERDICT_DAYS = 7;
  * Red Crescent), and a week would hide a good page for too long.
  */
 export const FAILED_VERDICT_DAYS = 1;
-/** Most links per disaster: room for pages about the event itself before the society and UN pages. */
+/** Most official links per disaster: room for pages about the event itself before the society and UN pages. Direct links come on top. */
 export const MAX_LINKS = 8;
+/** Most direct links per disaster (see directFirst), listed before the official ones. */
+export const MAX_DIRECT_LINKS = 6;
+/** Most direct links of each kind: GoFundMe's, projects (GlobalGiving's and GoFundMe's partners'), local groups'. */
+export const MAX_DIRECT_BY_KIND: Readonly<Record<"fundraiser" | "project" | "local", number>> = { fundraiser: 3, project: 2, local: 3 };
 /** Most researched links per disaster that are not about the event itself. */
 export const MAX_RESEARCHED = 3;
 /** Most researched pages about the event itself per disaster. */
@@ -143,6 +152,8 @@ export interface DonationVerdict {
   chain: string[];
   /** The site answered 401 or 403 on an allowlisted URL: a bot wall, not a verdict on the page. */
   blocked?: boolean;
+  /** For a local group's page (direct.ts): the disaster's place the page names. */
+  place?: string;
 }
 
 export interface DonationRegistry {
@@ -205,6 +216,7 @@ export function normaliseRegistry(raw: unknown): DonationRegistry {
         checked: String(v.checked),
         chain: v.chain.filter((u): u is string => typeof u === "string"),
         ...(v.blocked === true ? { blocked: true } : {}),
+        ...(str(v.place) ? { place: String(v.place) } : {}),
       };
     }
   }
@@ -874,8 +886,10 @@ export function donationContext(
  * Words that name no place or event, so they never tie a campaign to a
  * disaster: hazards, appeal words, continents and oceans, directions and
  * the generic parts of place and country names. Folded, 4+ letters.
+ * direct.ts reads GoFundMe's crisis pages and GlobalGiving's projects by
+ * the same words.
  */
-const NOT_EVENT_WORDS = new Set(
+export const NOT_EVENT_WORDS: ReadonlySet<string> = new Set(
   [
     // Hazards and weather.
     "earthquake earthquakes quake quakes seismic aftershock aftershocks tremor tremors flood floods flooding floodings flash inundation inundations",
@@ -895,6 +909,8 @@ const NOT_EVENT_WORDS = new Set(
     // Continents, oceans, directions and the generic parts of place names.
     "africa african america americas american asia asian europe european oceania pacific atlantic ocean oceans arctic antarctic antarctica caribbean",
     "north south east west northern southern eastern western northeast northwest southeast southwest central middle upper lower greater region regions",
+    // USGS's compass points: "191 km ENE of Nagqu".
+    "nne ene ese sse ssw wsw wnw nnw",
     "regional province provinces state states department departments district districts county municipality city town village island islands coast",
     "coastal lake river ridge area areas country countries republic democratic united kingdom federal federated federation plurinational bolivarian",
     "islamic arab saint",
@@ -908,7 +924,7 @@ const NOT_EVENT_WORDS = new Set(
 );
 
 /** Lower-case ASCII words of a text, accents removed: "Côte d'Ivoire" -> ["cote", "d", "ivoire"]. */
-function asciiWords(text: string): string[] {
+export function asciiWords(text: string): string[] {
   return foldText(text).split(/[^a-z]+/).filter(Boolean);
 }
 
@@ -1568,6 +1584,8 @@ export interface DonationInput {
    * IFRC campaign is shown.
    */
   countryNames?: Record<string, string>;
+  /** Direct giving for the disaster, already held to direct.ts's rules; buildDonations orders and caps it (directFirst). */
+  direct?: DonationLink[];
 }
 
 /** One line of model or registry text, safe to show: control and direction-override characters out, whitespace collapsed, cut to max. */
@@ -1795,8 +1813,33 @@ export function researchedLinks(input: DonationInput, ctx: DonationContext, regi
 }
 
 /**
- * The ordered donation links for one disaster, deduplicated by URL, at
- * most eight. First the pages for this disaster itself (forEvent):
+ * Direct links in the order they are listed: GoFundMe's (fundraiser), then
+ * projects (GlobalGiving's and GoFundMe's partners'), then local groups'
+ * pages, each kind in the order given and within its cap
+ * (MAX_DIRECT_BY_KIND), each URL once, at most MAX_DIRECT_LINKS in all.
+ * Links of any other kind are left out; every one kept is for the event.
+ */
+export function directFirst(links: readonly DonationLink[]): DonationLink[] {
+  const out: DonationLink[] = [];
+  const seen = new Set<string>();
+  for (const kind of ["fundraiser", "project", "local"] as const) {
+    let taken = 0;
+    for (const l of links) {
+      if (l?.kind !== kind || typeof l.url !== "string" || taken >= MAX_DIRECT_BY_KIND[kind] || out.length >= MAX_DIRECT_LINKS) continue;
+      const key = urlKey(l.url);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push({ ...l, forEvent: true });
+      taken++;
+    }
+  }
+  return out;
+}
+
+/**
+ * The ordered donation links for one disaster, deduplicated by URL. First
+ * the direct links (input.direct, see directFirst), at most six. Then at
+ * most eight official ones: the pages for this disaster itself (forEvent):
  * researched pages about the event that passed the live check (at most
  * three), then the IFRC appeal page. Then the general pages: the first
  * country's society on the donation platform; UN Crisis Relief's page for
@@ -1810,8 +1853,9 @@ export function researchedLinks(input: DonationInput, ctx: DonationContext, regi
  */
 export function buildDonations(input: DonationInput, registry: DonationRegistry, now: string, governmentDomains = loadGovernmentDomains()): DonationLink[] {
   const ctx = donationContext(input.countries, registry, governmentDomains, input);
+  const direct = directFirst(input.direct ?? []);
   const out: DonationLink[] = [];
-  const seen = new Set<string>();
+  const seen = new Set<string>(direct.map((l) => urlKey(l.url)));
   const add = (link: DonationLink, urls: string[] = [link.url]) => {
     const keys = urls.map(urlKey);
     if (out.length >= MAX_LINKS || keys.some((k) => seen.has(k))) return;
@@ -1832,7 +1876,7 @@ export function buildDonations(input: DonationInput, registry: DonationRegistry,
   if (society && site) add(societySiteLink(society, site.url), [site.url, ...site.chain]);
   if (!out.some((l) => urlKey(l.url).startsWith("crisisrelief.un.org"))) add(uncrGeneralLink(registry));
   add(ifrcLink());
-  return out;
+  return [...direct, ...out];
 }
 
 export interface PrepareOptions {

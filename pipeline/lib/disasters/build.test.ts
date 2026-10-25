@@ -8,16 +8,22 @@ import { buildResolver } from "../resolve";
 import { DEFAULT_BUDGET, emptyLedger, record, type Ledger } from "../spend";
 import {
   MAX_PLACE_AREAS,
+  MIN_SEVERITY,
+  articleHosts,
   cachePaths,
+  directAttemptKey,
   donationAttemptKey,
   donationInput,
   hasFootprint,
+  isSignificant,
+  keepsPreviousMap,
   locateNewsEvents,
   locatePlaces,
   nearEnough,
   pruneAttempts,
   readAttempts,
   readDisastersFile,
+  readPressNames,
   readSnapshots,
   relatedHeadlines,
   researchSaysOver,
@@ -28,10 +34,21 @@ import {
   type DisasterRun,
   type Snapshots,
 } from "./build";
+import { GOFUNDME_FEED, GOFUNDME_INDEX, hubSlugOf, localVerdictKey, parseFeed, parseHub, type GoFundMeCache } from "./direct";
 import { emptyRegistry, searchDomains, urlKey, type DonationRegistry } from "./donate";
 import { LAND_SHAPES_PATH, circlePolygon, dropSeaParts, loadCountryShapes, pointInGeometry } from "./geo";
 import type { GeoHit, Geocoder } from "./geocode";
-import { MAX_DONATION_BACKFILL, donationSearchSchema, membersHash, type DonationSearchParse, type ResearchEntry, type ResearchParse } from "./research";
+import {
+  MAX_DONATION_BACKFILL,
+  directSearchSchema,
+  directSearchSystemPrompt,
+  donationSearchSchema,
+  membersHash,
+  type DirectSearchParse,
+  type DonationSearchParse,
+  type ResearchEntry,
+  type ResearchParse,
+} from "./research";
 import type { Disaster, DisastersFile, SourceEvent } from "./types";
 
 const NOW = "2026-10-20T12:00:00.000Z";
@@ -281,8 +298,50 @@ describe("cachePaths", () => {
       registry: "cache/donation-registry.json",
       geocode: "cache/geocode.json",
       research: "cache/research.json",
+      gofundme: "cache/gofundme.json",
     });
     expect(cachePaths("/tmp/x").research).toBe("/tmp/x/research.json");
+  });
+});
+
+describe("significant disasters only", () => {
+  it("keeps significant and severe disasters, never minor ones", () => {
+    expect(MIN_SEVERITY).toBe(2);
+    expect([1, 2, 3].map((severity) => isSignificant({ severity: severity as 1 | 2 | 3 }))).toEqual([false, true, true]);
+  });
+
+  it("keeps the previous map only when the run has no report at all and no feed answered", () => {
+    // Every feed failed and no snapshot holds a report: an outage.
+    expect(keepsPreviousMap(0, false, 5)).toBe(true);
+    // Reports, if only minor ones, say what is happening: nothing significant.
+    expect(keepsPreviousMap(12, false, 5)).toBe(false);
+    // A feed answered with nothing ongoing.
+    expect(keepsPreviousMap(0, true, 5)).toBe(false);
+    // Nothing to keep.
+    expect(keepsPreviousMap(0, false, 0)).toBe(false);
+  });
+});
+
+describe("direct giving helpers", () => {
+  it("keys a failed direct search apart from the research and the donation search", () => {
+    expect(directAttemptKey("d1")).toBe("direct:d1");
+    expect(new Set([directAttemptKey("d1"), donationAttemptKey("d1"), "d1"]).size).toBe(3);
+  });
+
+  it("takes the news hosts from the site's articles, not Google's or Bing's own links", () => {
+    const a = (url: string) => ({ url });
+    expect([...articleHosts([a("https://www.jamaica-gleaner.com/article/1"), a("https://news.google.com/rss/articles/x"), a("https://www.bing.com/news/apiclick"), a("nope"), a("https://radiojamaicanewsonline.com/x")])]).toEqual([
+      "jamaica-gleaner.com",
+      "radiojamaicanewsonline.com",
+    ]);
+  });
+
+  it("reads each country's name in its press language, and none from a missing file", () => {
+    const names = readPressNames();
+    expect(names.AT).toBe("Österreich");
+    expect(names.AF).toBe("افغانستان");
+    expect(Object.keys(names).length).toBeGreaterThan(50);
+    expect(readPressNames("/nonexistent/languages.json")).toEqual({});
   });
 });
 
@@ -311,7 +370,9 @@ describe("updateDisasters", () => {
   });
 
   /** Fresh output and cache folders, optionally seeded. */
-  function folders(seed: { snapshot?: Snapshots; previous?: DisastersFile; research?: Record<string, ResearchEntry>; registry?: DonationRegistry; attempts?: Record<string, string> } = {}) {
+  function folders(
+    seed: { snapshot?: Snapshots; previous?: DisastersFile; research?: Record<string, ResearchEntry>; registry?: DonationRegistry; attempts?: Record<string, string>; gofundme?: GoFundMeCache } = {},
+  ) {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), "gv-update-"));
     const outDir = path.join(root, "data");
     const cacheDir = path.join(root, "cache");
@@ -322,6 +383,7 @@ describe("updateDisasters", () => {
     if (seed.research) fs.writeFileSync(path.join(cacheDir, "research.json"), JSON.stringify(seed.research));
     if (seed.registry) fs.writeFileSync(path.join(cacheDir, "donation-registry.json"), JSON.stringify(seed.registry));
     if (seed.attempts) fs.writeFileSync(path.join(cacheDir, "research-attempts.json"), JSON.stringify(seed.attempts));
+    if (seed.gofundme) fs.writeFileSync(path.join(cacheDir, "gofundme.json"), JSON.stringify(seed.gofundme));
     return { outDir, cacheDir };
   }
 
@@ -424,9 +486,10 @@ describe("updateDisasters", () => {
   });
 
   it("keeps the previous map's ongoing disasters rather than write an empty one, and still saves the geocoder's answers", async () => {
-    // A flood seen two days ago is still ongoing; one last seen in August is over.
-    const over = dis({ id: "ifrc-flood-1", started: "2026-08-01T00:00:00.000Z", updated: "2026-08-10T00:00:00.000Z" });
-    const previous: DisastersFile = { updated: "2026-10-20T09:00:00.000Z", fetched: { gdacs: null, usgs: null, eonet: null, ifrc: null, news: null }, disasters: [dis({ id: ID }), over] };
+    // A flood seen two days ago is still ongoing; one last seen in August is over; a minor one an older file listed goes.
+    const over = dis({ id: "ifrc-flood-1", severity: 2, started: "2026-08-01T00:00:00.000Z", updated: "2026-08-10T00:00:00.000Z" });
+    const minor = dis({ id: "ifrc-flood-2", severity: 1 });
+    const previous: DisastersFile = { updated: "2026-10-20T09:00:00.000Z", fetched: { gdacs: null, usgs: null, eonet: null, ifrc: null, news: null }, disasters: [dis({ id: ID, severity: 2 }), over, minor] };
     const dirs = folders({ previous });
     // A news disaster whose place Nominatim does not know: the answer is cached.
     const articles = ["Daily Star", "Prothom Alo", "bdnews24"].map((outlet, i) => ({ country: "BD", title: `Floods hit Sunamganj ${i}`, en: `Floods hit Sunamganj ${i}`, outlet, url: `https://x.example/${i}`, published: NOW }));
@@ -458,16 +521,44 @@ describe("updateDisasters", () => {
     expect(file.disasters).toEqual([]);
   });
 
+  it("writes an empty map, not the previous one, when the reports hold only minor disasters", async () => {
+    // A significant flood on the last map; this run every feed failed, and the snapshot's last reports are all minor.
+    const previous: DisastersFile = { updated: "2026-10-20T09:00:00.000Z", fetched: { gdacs: null, usgs: null, eonet: null, ifrc: null, news: null }, disasters: [dis({ id: ID, severity: 2 })] };
+    const dirs = folders({ previous, snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent({ severity: 1 })] } } });
+    expect((await updateDisasters(runWith(dirs))).disasters).toEqual([]);
+    expect(read(dirs.outDir).disasters).toEqual([]);
+  });
+
+  it("leaves minor disasters off the map and unresearched, but keeps their reports for when they grow", async () => {
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent({ severity: 1 }), ifrcEvent({ sourceId: "8014", title: "Bangladesh: Floods", severity: 2 })] } } });
+    const ledger = emptyLedger();
+    const { ai, webResearch } = recordingAi(ledger);
+    const file = await updateDisasters(runWith(dirs, { ai, ledger }));
+    expect(file.disasters.map((d) => d.id)).toEqual(["ifrc-flood-8014"]);
+    expect(webResearch.mock.calls.every(([opts]) => opts.user.includes("Bangladesh: Floods"))).toBe(true);
+    expect(Object.keys(readCache(dirs.cacheDir))).toEqual(["ifrc-flood-8014"]);
+    const snapshot = JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "disaster-sources.json"), "utf8")) as Snapshots;
+    expect(snapshot.ifrc?.events.map((e) => e.sourceId)).toEqual(["8013", "8014"]);
+  });
+
+  /** A direct search that worked and found nothing. */
+  const NO_DIRECT = { research: { text: "Direct pages: none found", citations: [], results: [], searches: 1, okSearches: 1 }, parsed: { pages: [] } };
+
+  /** True for the direct search's call: its own system prompt, on the whole web. */
+  const isDirect = (opts: WebResearchOptions) => opts.system.startsWith(directSearchSystemPrompt(NOW).split("\n")[0]);
+
   /**
    * A model client that records its usage in the ledger the way
    * pipeline/update.ts does. A search limited to allowed domains is the
-   * donation search; its answer can be replaced (null for a failed call),
-   * and so can the research's parsed notes.
+   * donation search, one with the direct search's prompt the direct
+   * search; their answers can be replaced (null for a failed call), and so
+   * can the research's parsed notes.
    */
   function recordingAi(
     ledger: Ledger,
     donation: { research: ResearchResult | null; parsed: DonationSearchParse | null } = { research: DONATION_RESEARCH, parsed: DONATION_PARSED },
     researched: ResearchParse = COXS.parsed,
+    direct: { research: ResearchResult | null; parsed: DirectSearchParse | null } = NO_DIRECT,
   ) {
     const spend = (u: Partial<Usage>) => record(ledger, "research", { model: "claude-haiku-5-5", inputTokens: 0, outputTokens: 0, cacheReadTokens: 0, cacheWriteTokens: 0, webSearches: 0, ...u }, NOW);
     const webResearch = vi.fn(async (opts: WebResearchOptions) => {
@@ -475,36 +566,52 @@ describe("updateDisasters", () => {
         spend({ inputTokens: 8_000, outputTokens: 600, webSearches: 2 });
         return donation.research;
       }
+      if (isDirect(opts)) {
+        spend({ inputTokens: 8_000, outputTokens: 600, webSearches: 2 });
+        return direct.research;
+      }
       spend({ inputTokens: 30_000, outputTokens: 1_500, webSearches: 4 });
       return COXS.research;
     });
     const parse = vi.fn(async (opts: { schema: unknown }) => {
       spend({ inputTokens: 4_000, outputTokens: 1_000 });
-      return opts.schema === donationSearchSchema ? donation.parsed : researched;
+      return opts.schema === donationSearchSchema ? donation.parsed : opts.schema === directSearchSchema ? direct.parsed : researched;
     });
     return { ai: { webResearch, parse, calls: 0 } as unknown as AiClient, webResearch, parse };
   }
 
+  /** The calls of each kind a recording client got. */
+  const callsOf = (webResearch: ReturnType<typeof recordingAi>["webResearch"]) => {
+    const all = webResearch.mock.calls.map(([opts]) => opts);
+    return { donation: all.filter((o) => o.allowedDomains), direct: all.filter(isDirect), research: all.filter((o) => !o.allowedDomains && !isDirect(o)) };
+  };
+
   const readCache = (dir: string) => JSON.parse(fs.readFileSync(path.join(dir, "research.json"), "utf8")) as Record<string, ResearchEntry>;
 
-  it("researches within the budget, then searches official sites for the event's donation pages, counting one research", async () => {
+  it("researches within the budget, then searches official sites for the event's donation pages and the web for direct ones, counting one research", async () => {
     const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } } });
     const ledger = emptyLedger();
     const { ai, webResearch, parse } = recordingAi(ledger);
     const file = await updateDisasters(runWith(dirs, { ai, ledger }));
-    expect(webResearch).toHaveBeenCalledTimes(2);
+    expect(webResearch).toHaveBeenCalledTimes(3);
     expect(webResearch.mock.calls[0][0].allowedDomains).toBeUndefined();
     // No registry yet: the official sites that need none.
     expect(webResearch.mock.calls[1][0].allowedDomains).toEqual(searchDomains(["BD"], emptyRegistry()));
     expect(webResearch.mock.calls[1][0]).toMatchObject({ maxSearches: 3, purpose: "research" });
+    // The direct search, on the whole web.
+    expect(isDirect(webResearch.mock.calls[2][0])).toBe(true);
+    expect(webResearch.mock.calls[2][0]).toMatchObject({ maxSearches: 3, purpose: "research" });
+    expect(webResearch.mock.calls[2][0].allowedDomains).toBeUndefined();
+    // It found nothing, so it needed no parse.
     expect(parse).toHaveBeenCalledTimes(2);
     const month = ledger.months["2026-10"];
-    expect(month.researchCalls).toBe(4);
-    // The donation search is part of the same research for the cost average.
+    expect(month.researchCalls).toBe(5);
+    // The donation and direct searches are part of the same research for the cost average.
     expect(month.researches).toBe(1);
     const cached = readCache(dirs.cacheDir);
     expect(Object.keys(cached)).toEqual([ID]);
     expect(cached[ID].donationSearched).toBe(NOW);
+    expect(cached[ID].directSearched).toBe(NOW);
     expect(cached[ID].donation[0]).toEqual({ url: EVENT_PAGE, org: "Bangladesh Red Crescent Society", kind: "society", note: "Cox's Bazar flood appeal", specific: true });
     const d = file.disasters[0];
     expect(d.research?.searches).toBe(COXS.research.searches);
@@ -530,13 +637,130 @@ describe("updateDisasters", () => {
     expect(file.disasters[0].donate.map((l) => l.org)).toEqual(expect.arrayContaining(["UN Crisis Relief", "IFRC"]));
   });
 
-  it("runs no donation search for a minor disaster without an appeal", async () => {
-    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent({ severity: 1 })] } } });
+  it("lists the direct search's GlobalGiving project and live-checked local page before the official links", async () => {
+    const GG = "https://www.globalgiving.org/projects/bangladesh-flood-relief-2026/";
+    const LOCAL = "https://www.coxsbazar-youth.org.bd/flood-relief/donate";
+    const NEWS = "https://www.thedailystar.net/news/how-to-help-flood-victims";
+    const found: ResearchResult = {
+      text: `GlobalGiving: ${GG}. Cox's Bazar Youth Forum: ${LOCAL}. The Daily Star: ${NEWS}.`,
+      citations: [],
+      results: [
+        { url: GG, title: "Bangladesh Flood Relief 2026 - GlobalGiving" },
+        { url: LOCAL, title: "Donate | Cox's Bazar Youth Forum" },
+        { url: NEWS, title: "How to help" },
+      ],
+      searches: 2,
+      okSearches: 2,
+    };
+    const parsed: DirectSearchParse = {
+      pages: [
+        { url: GG, org: "GlobalGiving", kind: "globalgiving", note: "Flood relief" },
+        { url: LOCAL, org: "Cox's Bazar Youth Forum", kind: "local", note: "Food and shelter for flooded families" },
+        { url: NEWS, org: "The Daily Star", kind: "local", note: "" },
+      ],
+    };
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } } });
     const ledger = emptyLedger();
-    const { ai, webResearch } = recordingAi(ledger);
-    await updateDisasters(runWith(dirs, { ai, ledger }));
-    expect(webResearch).toHaveBeenCalledTimes(1);
-    expect(readCache(dirs.cacheDir)[ID].donationSearched).toBeUndefined();
+    const { ai } = recordingAi(ledger, undefined, undefined, { research: found, parsed });
+    const fetchMock = vi.fn(async (url: string | URL | Request) => {
+      if (String(url) === LOCAL) return new Response("<h1>Cox's Bazar flood relief</h1><a>Donate now</a>", { status: 200, headers: { "content-type": "text/html" } });
+      throw new Error("network down");
+    });
+    // The site's own articles make the Daily Star a news site.
+    const articles = [{ country: "BD", title: "Floods", outlet: "The Daily Star", url: "https://www.thedailystar.net/news/floods", published: NOW }];
+    const file = await updateDisasters(
+      runWith(dirs, { ai, ledger, articles, countryNames: { BD: "Bangladesh" }, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log: () => {} } }),
+    );
+    const donate = file.disasters[0].donate;
+    expect(donate.slice(0, 2)).toEqual([
+      { label: "Bangladesh Flood Relief 2026", url: GG, org: "GlobalGiving", kind: "project", note: "GlobalGiving vets its local partners", via: "research", forEvent: true },
+      {
+        label: "Donate to Cox's Bazar Youth Forum",
+        url: LOCAL,
+        org: "Cox's Bazar Youth Forum",
+        kind: "local",
+        note: "A local group's own page. Global View checked it is live and names Cox's Bazar, but cannot vouch for the group.",
+        via: "research",
+        forEvent: true,
+      },
+    ]);
+    expect(donate.map((l) => l.url)).not.toContain(NEWS);
+    expect(fetchMock.mock.calls.some(([u]) => String(u) === NEWS || String(u) === GG)).toBe(false);
+    // The verdict is cached with the registry's, for this disaster.
+    const registry = JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "donation-registry.json"), "utf8")) as DonationRegistry;
+    expect(registry.verdicts[localVerdictKey(ID, LOCAL)]).toMatchObject({ ok: true, place: "Cox's Bazar" });
+  });
+
+  it("tries a failed direct search again only after a day, keeping the research and the donation search", async () => {
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } } });
+    const ledger = emptyLedger();
+    const failing = recordingAi(ledger, undefined, undefined, { research: null, parsed: null });
+    await updateDisasters(runWith(dirs, { ai: failing.ai, ledger }));
+    expect(callsOf(failing.webResearch).direct).toHaveLength(1);
+    const cached = readCache(dirs.cacheDir)[ID];
+    expect(cached.donationSearched).toBe(NOW);
+    expect(cached.directSearched).toBeUndefined();
+    expect(JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "research-attempts.json"), "utf8"))).toEqual({ [directAttemptKey(ID)]: NOW });
+    const again = recordingAi(ledger);
+    await updateDisasters(runWith(dirs, { ai: again.ai, ledger }));
+    expect(again.webResearch).not.toHaveBeenCalled();
+    const later = recordingAi(ledger);
+    await updateDisasters(runWith(dirs, { ai: later.ai, ledger, now: "2026-10-21T12:30:00.000Z" }));
+    const calls = callsOf(later.webResearch);
+    expect([calls.research.length, calls.donation.length, calls.direct.length]).toEqual([0, 0, 1]);
+    expect(readCache(dirs.cacheDir)[ID].directSearched).toBe("2026-10-21T12:30:00.000Z");
+  });
+
+  it("lists GoFundMe's verified page for a matching disaster from its cache when offline, without a key", async () => {
+    const pages = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "gofundme-pages.json"), "utf8")) as { hubs: Record<string, string>; feed: { funds: unknown } };
+    const quake = ifrcEvent({ sourceId: "7990", type: "earthquake", title: "Venezuela Earthquake", countries: ["VE"], lat: 10.5, lng: -66.9 });
+    const gofundme: GoFundMeCache = {
+      index: { fetched: NOW, slugs: ["venezuela-earthquake-relief"] },
+      hubs: {
+        "venezuela-earthquake-relief": {
+          slug: "venezuela-earthquake-relief",
+          ...parseHub(pages.hubs["venezuela-earthquake-relief"]),
+          fundraisers: parseFeed(pages.feed.funds),
+          fetched: NOW,
+          feedFetched: NOW,
+          seen: NOW,
+        },
+      },
+    };
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [quake] } }, gofundme });
+    const run = runWith(dirs, { offline: true, globeCodes: new Set(["VE", "CO"]), countryNames: { VE: "Venezuela", CO: "Colombia" } });
+    const file = await updateDisasters(run);
+    expect(run.deps.fetch).not.toHaveBeenCalled();
+    const donate = file.disasters[0].donate;
+    expect(donate.slice(0, 4).map((l) => [l.kind, l.via, l.url])).toEqual([
+      ["fundraiser", "platform", "https://www.gofundme.com/c/act/venezuela-earthquake-relief"],
+      ["fundraiser", "platform", "https://www.gofundme.com/f/emergency-relief-for-venezuela-earthquake-victims"],
+      ["project", "platform", "https://give.allhandsandhearts.org/campaign/815562/donate?c_src=Venezuela_earthquake"],
+      ["project", "platform", "https://give.mercychefs.com/campaign/815706/donate?c_src=Venezuela_earthquake"],
+    ]);
+    expect(donate[0]).toMatchObject({ label: "Verified fundraisers for Venezuela earthquakes", note: "Verified by GoFundMe's Trust & Safety team", forEvent: true });
+    // The official links follow, as before.
+    expect(donate.slice(4).map((l) => l.org)).toEqual(expect.arrayContaining(["UN Crisis Relief", "IFRC"]));
+  });
+
+  it("reads GoFundMe's pages on a run without a key, and saves them", async () => {
+    const pages = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "gofundme-pages.json"), "utf8")) as { index: string; hubs: Record<string, string>; feed: { funds: unknown } };
+    const quake = ifrcEvent({ sourceId: "7990", type: "earthquake", title: "Venezuela Earthquake", countries: ["VE"], lat: 10.5, lng: -66.9 });
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [quake] } } });
+    const fetchMock = vi.fn(async (u: string | URL | Request) => {
+      const url = String(u);
+      const html = (body: string) => new Response(body, { status: 200, headers: { "content-type": "text/html" } });
+      if (url === GOFUNDME_INDEX) return html(pages.index);
+      const slug = hubSlugOf(url);
+      if (slug && pages.hubs[slug]) return html(pages.hubs[slug]);
+      if (url.startsWith(GOFUNDME_FEED)) return new Response(JSON.stringify(pages.feed.funds), { status: 200, headers: { "content-type": "application/json" } });
+      throw new Error("network down");
+    });
+    const file = await updateDisasters(runWith(dirs, { ai: null, globeCodes: new Set(["VE"]), countryNames: { VE: "Venezuela", CO: "Colombia" }, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log: () => {} } }));
+    expect(file.disasters[0].donate[0]).toMatchObject({ kind: "fundraiser", url: "https://www.gofundme.com/c/act/venezuela-earthquake-relief" });
+    const saved = JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "gofundme.json"), "utf8")) as GoFundMeCache;
+    expect(saved.index.fetched).toBe(NOW);
+    expect(saved.hubs["venezuela-earthquake-relief"].feedFetched).toBe(NOW);
   });
 
   /** Seven IFRC operations in Bangladesh, each with a fresh research entry from before the donation search. */
@@ -548,26 +772,39 @@ describe("updateDisasters", () => {
     return { events, research };
   }
 
-  it("backfills a donation search for at most six disasters researched earlier, newest first, without counting a research", async () => {
+  it("backfills the donation and direct searches for at most six disasters researched earlier, newest first, without counting a research", async () => {
     const { events, research } = researchedEarlier();
     const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events } }, research, registry: REGISTRY });
     const ledger = emptyLedger();
     const { ai, webResearch, parse } = recordingAi(ledger);
     await updateDisasters(runWith(dirs, { ai, ledger }));
-    expect(webResearch).toHaveBeenCalledTimes(MAX_DONATION_BACKFILL);
-    expect(webResearch.mock.calls.every(([opts]) => opts.allowedDomains?.includes("bdrcs.org"))).toBe(true);
+    const calls = callsOf(webResearch);
+    expect([calls.research.length, calls.donation.length, calls.direct.length]).toEqual([0, MAX_DONATION_BACKFILL, MAX_DONATION_BACKFILL]);
+    expect(calls.donation.every((opts) => opts.allowedDomains?.includes("bdrcs.org"))).toBe(true);
+    // The direct searches found nothing and needed no parse.
     expect(parse).toHaveBeenCalledTimes(MAX_DONATION_BACKFILL);
     const cached = readCache(dirs.cacheDir);
-    const searched = Object.keys(cached).filter((id) => cached[id].donationSearched === NOW);
-    expect(searched).toHaveLength(MAX_DONATION_BACKFILL);
+    expect(Object.keys(cached).filter((id) => cached[id].donationSearched === NOW)).toHaveLength(MAX_DONATION_BACKFILL);
+    expect(Object.keys(cached).filter((id) => cached[id].directSearched === NOW)).toHaveLength(MAX_DONATION_BACKFILL);
     // The oldest is left for the next run.
     expect(cached["ifrc-flood-9000"].donationSearched).toBeUndefined();
+    expect(cached["ifrc-flood-9000"].directSearched).toBeUndefined();
     // The research itself is kept, with the event's page added first.
     expect(cached["ifrc-flood-9006"].summary).toBe(research["ifrc-flood-9006"].summary);
     expect(cached["ifrc-flood-9006"].donation[0].url).toBe(EVENT_PAGE);
     const month = ledger.months["2026-10"];
-    expect(month.researchCalls).toBe(2 * MAX_DONATION_BACKFILL);
+    expect(month.researchCalls).toBe(3 * MAX_DONATION_BACKFILL);
     expect(month.researches).toBe(0);
+  });
+
+  it("backfills only the search an entry lacks", async () => {
+    const { events, research } = researchedEarlier();
+    const searched = Object.fromEntries(Object.entries(research).map(([id, e]) => [id, { ...e, donationSearched: "2026-10-20T10:00:00.000Z" }]));
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events } }, research: searched, registry: REGISTRY });
+    const { ai, webResearch } = recordingAi(emptyLedger());
+    await updateDisasters(runWith(dirs, { ai }));
+    const calls = callsOf(webResearch);
+    expect([calls.donation.length, calls.direct.length]).toEqual([0, MAX_DONATION_BACKFILL]);
   });
 
   it("starts no backfill once the run's deadline has passed", async () => {
@@ -584,9 +821,11 @@ describe("updateDisasters", () => {
     const ledger = emptyLedger();
     const failing = recordingAi(ledger, { research: null, parsed: null });
     await updateDisasters(runWith(dirs, { ai: failing.ai, ledger }));
-    expect(failing.webResearch).toHaveBeenCalledTimes(2);
+    // The research, its donation search and its direct search, which worked.
+    expect(failing.webResearch).toHaveBeenCalledTimes(3);
     expect(readCache(dirs.cacheDir)[ID].at).toBe(NOW);
     expect(readCache(dirs.cacheDir)[ID].donationSearched).toBeUndefined();
+    expect(readCache(dirs.cacheDir)[ID].directSearched).toBe(NOW);
     const attempts = JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "research-attempts.json"), "utf8")) as Record<string, string>;
     expect(attempts).toEqual({ [donationAttemptKey(ID)]: NOW });
     // The next run in the same hour: the entry is fresh and the failed search waits.
@@ -613,7 +852,7 @@ describe("updateDisasters", () => {
     const ledger = emptyLedger();
     const failing = recordingAi(ledger, { research: null, parsed: null });
     const file = await updateDisasters(runWith(dirs, { ai: failing.ai, ledger, deps }));
-    expect(failing.webResearch).toHaveBeenCalledTimes(2);
+    expect(callsOf(failing.webResearch).donation).toHaveLength(1);
     const cached = readCache(dirs.cacheDir)[ID];
     expect(cached.at).toBe(NOW);
     // Carried apart from the new research's own pages.
@@ -654,7 +893,7 @@ describe("updateDisasters", () => {
       const ledger = emptyLedger();
       const { ai, webResearch } = recordingAi(ledger, none, researched);
       const file = await updateDisasters(runWith(dirs, { ai, ledger, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log: () => {} } }));
-      expect(webResearch).toHaveBeenCalledTimes(2);
+      expect(callsOf(webResearch).donation).toHaveLength(1);
       const cached = readCache(dirs.cacheDir)[ID];
       expect(cached.donationSearched).toBe(NOW);
       expect(cached.earlierSearch).toBeUndefined();
@@ -672,10 +911,11 @@ describe("updateDisasters", () => {
     const ledger = emptyLedger();
     const failing = recordingAi(ledger, { research: { ...none, searches: 2, okSearches: 0 }, parsed: DONATION_PARSED });
     await updateDisasters(runWith(limited, { ai: failing.ai, ledger }));
-    expect(failing.webResearch).toHaveBeenCalledTimes(2);
+    expect(callsOf(failing.webResearch).donation).toHaveLength(1);
     expect(readCache(limited.cacheDir)[ID].donationSearched).toBeUndefined();
     expect(JSON.parse(fs.readFileSync(path.join(limited.cacheDir, "research-attempts.json"), "utf8"))).toEqual({ [donationAttemptKey(ID)]: NOW });
-    expect(ledger.months["2026-10"].researchCalls).toBe(3);
+    // The research and its parse, the donation search, and the direct search that found nothing.
+    expect(ledger.months["2026-10"].researchCalls).toBe(4);
     // A search that worked and found nothing is a finding.
     const empty = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } } });
     const emptyRun = emptyLedger();
@@ -709,7 +949,9 @@ describe("updateDisasters", () => {
       const ledger = emptyLedger();
       const { ai, webResearch } = recordingAi(ledger);
       await updateDisasters(runWith(dirs, { ai, ledger, budget: { ...DEFAULT_BUDGET, maxResearchPerRun: cap } }));
-      expect(webResearch).toHaveBeenCalledTimes(cap);
+      // Each backfilled disaster gets both its searches.
+      expect(callsOf(webResearch).donation).toHaveLength(cap);
+      expect(callsOf(webResearch).direct).toHaveLength(cap);
     }
   });
 

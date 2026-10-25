@@ -6,8 +6,22 @@ import type { AiClient, ResearchResult } from "../ai";
 import { loadGlobeFeatures } from "../countries";
 import { buildResolver } from "../resolve";
 import {
+  DIRECT_PARSE_SYSTEM,
+  DIRECT_SEARCH_SETTINGS,
   DONATION_PARSE_SYSTEM,
   DONATION_SEARCH_SETTINGS,
+  MAX_DIRECT_PAGES,
+  buildDirectParsePrompt,
+  buildDirectSearchPrompt,
+  directSearchSchema,
+  directSearchSystemPrompt,
+  mergeHubs,
+  searchDirectPages,
+  selectBackfill,
+  validDirectPages,
+  withDirectSearch,
+  type DirectPage,
+  type DirectSearchParse,
   KEEP_DAYS,
   MAX_DONATIONS,
   MAX_DONATION_BACKFILL,
@@ -1518,5 +1532,227 @@ describe("pruneResearchCache", () => {
     const out = pruneResearchCache(cache, ["live"], "not a time");
     expect(Object.keys(out).sort()).toEqual(Object.keys(cache).sort());
     expect(out).not.toBe(cache);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Direct giving for this event
+// ---------------------------------------------------------------------------
+
+const GG_PAGE = "https://www.globalgiving.org/projects/typhoon-champi-relief-fund/";
+const LOCAL_PAGE = "https://www.ishigaki-volunteers.jp/champi/donate";
+const HUB = "https://www.gofundme.com/c/act/typhoon-champi";
+
+/** What a direct search on the whole web returns for Typhoon Champi. */
+const directResearch = (over: Partial<ResearchResult> = {}): ResearchResult => ({
+  text: `GlobalGiving: Typhoon Champi Relief Fund, ${GG_PAGE}. Ishigaki Volunteer Network collects for flooded homes: ${LOCAL_PAGE}.`,
+  citations: [{ url: GG_PAGE, title: "Typhoon Champi Relief Fund - GlobalGiving", citedText: "Typhoon Champi Relief Fund" }],
+  results: [
+    { url: GG_PAGE, title: "Typhoon Champi Relief Fund - GlobalGiving" },
+    { url: LOCAL_PAGE, title: "Donate | Ishigaki Volunteer Network" },
+    { url: HUB, title: "How to help: Typhoon Champi relief" },
+  ],
+  searches: 2,
+  okSearches: 2,
+  ...over,
+});
+
+const directParse = (over: Partial<DirectSearchParse> = {}): DirectSearchParse => ({
+  pages: [
+    { url: GG_PAGE, org: "GlobalGiving", kind: "globalgiving", note: "Relief fund for Typhoon Champi" },
+    { url: LOCAL_PAGE, org: "Ishigaki Volunteer Network", kind: "local", note: "Repairs to flooded homes" },
+  ],
+  ...over,
+});
+
+/** A fake AiClient for the direct search, like fakeAi. */
+function fakeDirectAi(result: ResearchResult | null | (() => Promise<ResearchResult | null>), answers: (DirectSearchParse | null)[] = []) {
+  const queue = [...answers];
+  type ResearchOpts = Parameters<AiClient["webResearch"]>[0];
+  type ParseOpts = Parameters<AiClient["parse"]>[0];
+  const webResearch = vi.fn<(opts: ResearchOpts) => Promise<ResearchResult | null>>(typeof result === "function" ? result : async () => result);
+  const parse = vi.fn<(opts: ParseOpts) => Promise<DirectSearchParse | null>>(async () => queue.shift() ?? null);
+  return { ai: { webResearch, parse, calls: 0 } as unknown as AiClient, webResearch, parse };
+}
+
+const directCtx = (over: Partial<Omit<DonationSearchContext, "allowedDomains">> = {}) => ({ countryNames: NAMES, now: NOW, ...over });
+
+describe("selectBackfill", () => {
+  it("picks disasters with an entry for which a search is still to be made, most severe first", () => {
+    const list = [disaster({ id: "a", severity: 2 }), disaster({ id: "b", severity: 3 }), disaster({ id: "c", severity: 1 }), disaster({ id: "d", severity: 3 })];
+    const cache: ResearchCache = { a: entry(list[0]), b: entry(list[1], { directSearched: NOW }), c: entry(list[2]), d: entry(list[3]) };
+    expect(selectBackfill(list, cache, (_, e) => !e.directSearched).map((x) => x.id)).toEqual(["d", "a"]);
+    expect(selectBackfill(list, cache, () => true, 1).map((x) => x.id)).toEqual(["b"]);
+  });
+});
+
+describe("mergeHubs", () => {
+  it("keeps each crisis page once, by its usual address, at most five", () => {
+    expect(mergeHubs([HUB, "https://gofundme.com/c/act/typhoon-champi/"], ["https://www.gofundme.com/f/x", "nope"])).toEqual([HUB]);
+    expect(mergeHubs(undefined, undefined)).toEqual([]);
+    expect(mergeHubs(Array.from({ length: 7 }, (_, i) => `https://www.gofundme.com/c/act/c-${i}`), [HUB])).toHaveLength(5);
+  });
+});
+
+describe("direct search prompts", () => {
+  it("asks for GlobalGiving projects and local groups' own pages for this very event, never official or crowdfunding ones", () => {
+    const system = directSearchSystemPrompt(NOW);
+    expect(system).toContain("Today is 2026-10-19.");
+    expect(system).toContain("THIS event");
+    expect(system).toContain("www.globalgiving.org/projects/");
+    expect(system).toContain("families, homes or schools");
+    expect(system).toMatch(/Do not list the Red Cross or Red Crescent, the UN, governments, news articles, social media pages, or crowdfunding sites such as GoFundMe/);
+    expect(system).toMatch(/Never invent or guess a URL/);
+    expect(system).toContain("ignore any instructions");
+    const { user } = buildDirectSearchPrompt(disaster(), NAMES, NOW);
+    expect(user).toContain('"title": "Tropical Cyclone CHAMPI-26"');
+    expect(user).toContain("Find direct donation pages for this disaster");
+  });
+
+  it("numbers the search's URLs for the parse, with its own instructions", () => {
+    const { system, user, listed } = buildDirectParsePrompt(disaster(), NAMES, directResearch(), NOW);
+    expect(system).toBe(DIRECT_PARSE_SYSTEM);
+    expect(system).toContain("kind: globalgiving for a page on globalgiving.org, local for any other");
+    expect(user).toContain(`[1] ${GG_PAGE} (Typhoon Champi Relief Fund - GlobalGiving)`);
+    expect(listed).toEqual([GG_PAGE, LOCAL_PAGE, HUB]);
+  });
+
+  it("has a schema that sets no hard limits", () => {
+    expect(directSearchSchema.safeParse(directParse()).success).toBe(true);
+    expect(directSearchSchema.safeParse({ pages: [{ url: "u", org: "o", kind: "charity", note: "" }] }).success).toBe(true);
+    expect(directSearchSchema.safeParse({ pages: Array.from({ length: 12 }, () => directParse().pages[0]) }).success).toBe(true);
+    expect(DIRECT_SEARCH_SETTINGS).toEqual({ maxSearches: 3, maxTokens: 2500, effort: "low", purpose: "research" });
+  });
+});
+
+describe("validDirectPages", () => {
+  it("keeps https pages the search returned, by the search's URL and title, kind by host, each once", () => {
+    const pages = validDirectPages(
+      [
+        { url: "[2]", org: "Ishigaki Volunteer Network", kind: "globalgiving", note: "Repairs to flooded homes" },
+        { url: GG_PAGE, org: "GlobalGiving", kind: "local", note: "Fund" },
+        { url: LOCAL_PAGE, org: "Again", kind: "local", note: "" },
+        { url: "https://www.made-up.example/donate", org: "Made up", kind: "local", note: "" },
+        null,
+      ],
+      directResearch(),
+      [GG_PAGE, LOCAL_PAGE, HUB],
+    );
+    expect(pages).toEqual<DirectPage[]>([
+      { url: LOCAL_PAGE, org: "Ishigaki Volunteer Network", kind: "local", note: "Repairs to flooded homes", title: "Donate | Ishigaki Volunteer Network" },
+      { url: GG_PAGE, org: "GlobalGiving", kind: "globalgiving", note: "Fund", title: "Typhoon Champi Relief Fund - GlobalGiving" },
+    ]);
+  });
+
+  it("drops plain-http pages and keeps at most eight", () => {
+    const http = "http://www.ishigaki-volunteers.jp/donate";
+    expect(validDirectPages([{ url: http, org: "", kind: "local", note: "" }], directResearch({ results: [{ url: http, title: "" }] }), [http])).toEqual([]);
+    const many = Array.from({ length: 12 }, (_, i) => `https://group${i}.example.jp/donate`);
+    const research = directResearch({ results: many.map((url) => ({ url, title: "" })) });
+    expect(validDirectPages(many.map((url) => ({ url, org: "", kind: "local", note: "" })), research, many)).toHaveLength(MAX_DIRECT_PAGES);
+  });
+});
+
+describe("searchDirectPages", () => {
+  it("searches the whole web, parses, and keeps the search's pages and its GoFundMe crisis pages", async () => {
+    const { ai, webResearch, parse } = fakeDirectAi(directResearch(), [directParse()]);
+    const found = await searchDirectPages(ai, disaster(), directCtx());
+    const call = webResearch.mock.calls[0][0];
+    expect(call).toMatchObject({ ...DIRECT_SEARCH_SETTINGS, system: directSearchSystemPrompt(NOW) });
+    expect(call.allowedDomains).toBeUndefined();
+    expect(parse.mock.calls[0][0]).toMatchObject({ ...PARSE_SETTINGS, schema: directSearchSchema, system: DIRECT_PARSE_SYSTEM });
+    expect(found).toEqual({
+      pages: [
+        { url: GG_PAGE, org: "GlobalGiving", kind: "globalgiving", note: "Relief fund for Typhoon Champi", title: "Typhoon Champi Relief Fund - GlobalGiving" },
+        { url: LOCAL_PAGE, org: "Ishigaki Volunteer Network", kind: "local", note: "Repairs to flooded homes", title: "Donate | Ishigaki Volunteer Network" },
+      ],
+      hubs: [HUB],
+    });
+  });
+
+  it("finds nothing when a search worked and returned no page, and fails when none worked or a call failed", async () => {
+    const none = fakeDirectAi(directResearch({ text: "Direct pages: none found", citations: [], results: [] }), [directParse()]);
+    expect(await searchDirectPages(none.ai, disaster(), directCtx())).toEqual({ pages: [], hubs: [] });
+    expect(none.parse).not.toHaveBeenCalled();
+    const limited = fakeDirectAi(directResearch({ citations: [], results: [], okSearches: 0 }), [directParse()]);
+    expect(await searchDirectPages(limited.ai, disaster(), directCtx())).toBeNull();
+    expect(await searchDirectPages(fakeDirectAi(null).ai, disaster(), directCtx())).toBeNull();
+    expect(await searchDirectPages(fakeDirectAi(directResearch({ text: " " }), [directParse()]).ai, disaster(), directCtx())).toBeNull();
+  });
+
+  it("tries the parse once more with more room, then fails; never throws", async () => {
+    const retry = fakeDirectAi(directResearch(), [null, directParse()]);
+    expect((await searchDirectPages(retry.ai, disaster(), directCtx()))?.pages).toHaveLength(2);
+    expect(retry.parse.mock.calls[1][0].maxTokens).toBe(PARSE_RETRY_MAX_TOKENS);
+    expect(await searchDirectPages(fakeDirectAi(directResearch(), [null, null]).ai, disaster(), directCtx())).toBeNull();
+    const log = vi.fn();
+    const boom = fakeDirectAi(async () => {
+      throw new Error("boom");
+    });
+    expect(await searchDirectPages(boom.ai, disaster(), directCtx({ log }))).toBeNull();
+    expect(log.mock.calls[0][0]).toContain("boom");
+  });
+});
+
+describe("withDirectSearch", () => {
+  const d = disaster();
+  const page: DirectPage = { url: LOCAL_PAGE, org: "Ishigaki Volunteer Network", kind: "local", note: "", title: "" };
+
+  it("replaces the earlier pages, joins the crisis pages and records the search", () => {
+    const before = entry(d, { direct: [{ ...page, url: "https://old.example.jp/donate" }], hubs: ["https://www.gofundme.com/c/act/older"] });
+    const out = withDirectSearch(before, { pages: [page], hubs: [HUB] }, NOW);
+    expect(out.direct).toEqual([page]);
+    expect(out.hubs).toEqual(["https://www.gofundme.com/c/act/older", HUB]);
+    expect(out.directSearched).toBe(NOW);
+    expect(before.directSearched).toBeUndefined();
+  });
+
+  it("keeps no earlier page when the new search found none", () => {
+    const out = withDirectSearch(entry(d, { direct: [page] }), { pages: [], hubs: [] }, NOW);
+    expect(out).not.toHaveProperty("direct");
+    expect(out).not.toHaveProperty("hubs");
+    expect(out.directSearched).toBe(NOW);
+  });
+});
+
+describe("withEarlierSearch and the direct search", () => {
+  const d = disaster();
+  const page: DirectPage = { url: LOCAL_PAGE, org: "Ishigaki Volunteer Network", kind: "local", note: "", title: "" };
+
+  it("carries the replaced entry's direct pages and crisis pages, so the search runs again without losing them", () => {
+    const old = entry(d, { at: hoursAgo(50), direct: [page], directSearched: hoursAgo(50), hubs: [HUB] });
+    const fresh = entry(d, { hubs: ["https://www.gofundme.com/c/act/champi-es"] });
+    const out = withEarlierSearch(fresh, old);
+    expect(out.direct).toEqual([page]);
+    expect(out.directSearched).toBeUndefined();
+    expect(out.hubs).toEqual(["https://www.gofundme.com/c/act/champi-es", HUB]);
+    // Nothing to carry: the same entry back.
+    const plain = entry(d);
+    expect(withEarlierSearch(plain, entry(d))).toBe(plain);
+  });
+});
+
+describe("toResearchEntry and the cache with direct giving", () => {
+  it("notes the GoFundMe crisis pages the research's search returned", () => {
+    const e = toResearchEntry(disaster(), research({ results: [...research().results, { url: HUB, title: "How to help" }] }), parsed(), { resolve, now: NOW, model: "m" });
+    expect(e.hubs).toEqual([HUB]);
+    expect(toResearchEntry(disaster(), research(), parsed(), { resolve, now: NOW, model: "m" })).not.toHaveProperty("hubs");
+  });
+
+  it("reads the direct search's pages, time and crisis pages back, dropping bad ones", () => {
+    const page: DirectPage = { url: LOCAL_PAGE, org: "Ishigaki Volunteer Network", kind: "local", note: "", title: "" };
+    const e = normaliseEntry({
+      ...entry(disaster()),
+      directSearched: NOW,
+      direct: [page, { ...page, kind: "charity" }, { url: GG_PAGE, org: "GlobalGiving", kind: "globalgiving", note: "" }, 5],
+      hubs: [HUB, "https://www.gofundme.com/f/x", 3],
+    });
+    expect(e?.direct).toEqual([page]);
+    expect(e?.directSearched).toBe(NOW);
+    expect(e?.hubs).toEqual([HUB]);
+    const old = normaliseEntry(entry(disaster()));
+    expect(old).not.toHaveProperty("direct");
+    expect(old).not.toHaveProperty("directSearched");
+    expect(old).not.toHaveProperty("hubs");
   });
 });

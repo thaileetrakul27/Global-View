@@ -4,7 +4,9 @@
 // SourceEvents. merge.ts clusters SourceEvents that describe the same
 // disaster into one Disaster. Enrichment then adds affected places
 // (geocode.ts), a researched summary and figures (research.ts) and
-// donation pages (donate.ts). The site reads DisastersFile from
+// donation pages (donate.ts, with direct giving from direct.ts). Only
+// significant and severe disasters are published (build.ts). The site
+// reads DisastersFile from
 // public/data/disasters.json. Coordinates are always GeoJSON order:
 // [longitude, latitude].
 
@@ -121,21 +123,41 @@ export interface AppealRef {
   end: string;
 }
 
-export type DonationKind = "appeal" | "society" | "un" | "government" | "agency";
+/**
+ * Official links: appeal, society, un, government, agency. Direct giving
+ * (direct.ts), always for the event itself and listed before the official
+ * links: fundraiser (a fundraiser or relief fund on GoFundMe, from GoFundMe's
+ * own verified page for the disaster), project (a GlobalGiving project or
+ * fund for it, or a nonprofit's page for it that GoFundMe's page lists as a
+ * vetted partner) and local (a local organisation's, school's or community
+ * group's own donation page for it, found by research and live-checked).
+ */
+export type DonationKind = "appeal" | "society" | "un" | "government" | "agency" | "fundraiser" | "project" | "local";
 
-/** A page where a reader can give. Never chosen by hand; see donate.ts for the rules. */
+/** The kinds of direct giving, in the order they are listed. */
+export const DIRECT_KINDS: readonly DonationKind[] = ["fundraiser", "project", "local"];
+
+/** A page where a reader can give. Never chosen by hand; see donate.ts and direct.ts for the rules. */
 export interface DonationLink {
   label: string;
   url: string;
   org: string;
   kind: DonationKind;
+  /** One short line; for direct giving, who checked the page. */
   note: string;
-  /** registry: from IFRC or UN lists by fixed rule. research: found by web research and accepted by the allowlist and a live check. */
-  via: "registry" | "research";
+  /**
+   * registry: from IFRC or UN lists by fixed rule. research: found by web
+   * research and kept by fixed rules (the allowlist and a live check for
+   * official pages; direct.ts's rules for GlobalGiving and local groups).
+   * platform: by fixed rule from a giving platform's own vetted list
+   * (GoFundMe's crisis pages).
+   */
+  via: "registry" | "research" | "platform";
   /**
    * True for a page about this very disaster rather than a general fund: the
-   * IFRC appeal for it, or a researched page the research marked as this
-   * event's and that passed the allowlist and the live check. Listed first.
+   * IFRC appeal for it, a researched page the research marked as this
+   * event's and that passed the allowlist and the live check, and every
+   * direct link. Listed first.
    */
   forEvent?: boolean;
 }

@@ -1,7 +1,8 @@
 // Builds public/data/disasters.json: fetches every disaster source, merges
-// their reports into disasters, researches the most important ones on the
-// web within the month's budget, places their affected cities on the map
-// and attaches donation pages.
+// their reports into disasters, keeps the significant and severe ones,
+// researches the most important of those on the web within the month's
+// budget, places their affected cities on the map and attaches donation
+// pages: direct giving first (direct.ts), then the official pages.
 //
 // Every source keeps its previous run's reports when it fails (a snapshot
 // in cache/disaster-sources.json), so nothing is replaced with an empty
@@ -10,11 +11,26 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { AiClient } from "../ai";
+import { loadLanguages } from "../countries";
 import type { FetchDeps } from "../googlenews";
 import { writeCompactJson, writeJson } from "../io";
 import type { CountryResolver } from "../resolve";
 import { averageResearchCost, canSpend, noteResearch, researchAllowance, type Budget, type Ledger } from "../spend";
-import { REGISTRY_PATH, buildDonations, prepareDonations, readRegistry, refreshRegistry, searchDomains, writeRegistry, type DonationInput, type DonationRegistry } from "./donate";
+import { GOFUNDME_CACHE_PATH, buildDirectLinks, hubMatches, prepareDirectLinks, readGoFundMeCache, refreshGoFundMe, writeGoFundMeCache, type DirectInput, type GoFundMeCache } from "./direct";
+import {
+  REGISTRY_PATH,
+  buildDonations,
+  donationContext,
+  loadGovernmentDomains,
+  prepareDonations,
+  readRegistry,
+  refreshRegistry,
+  searchDomains,
+  writeRegistry,
+  type DonationContext,
+  type DonationInput,
+  type DonationRegistry,
+} from "./donate";
 import { fetchEonet } from "./eonet";
 import { fetchGdacs } from "./gdacs";
 import { GEOCODE_CACHE_PATH, createGeocoder, placeArea, placeFromHit, readGeocodeCache, writeGeocodeCache, type Geocoder } from "./geocode";
@@ -29,10 +45,12 @@ import {
   pruneResearchCache,
   readResearchCache,
   researchDisaster,
+  searchDirectPages,
   searchDonationPages,
-  selectDonationBackfill,
+  selectBackfill,
   selectForResearch,
   wantsDonationSearch,
+  withDirectSearch,
   withDonationSearch,
   withEarlierSearch,
   writeResearchCache,
@@ -40,7 +58,7 @@ import {
   type ResearchEntry,
   type ResearchPlace,
 } from "./research";
-import type { Area, Disaster, DisastersFile, Place, SourceEvent, SourceName } from "./types";
+import { DIRECT_KINDS, type Area, type Disaster, type DisastersFile, type Place, type SourceEvent, type SourceName } from "./types";
 import { fetchUsgs } from "./usgs";
 
 export const DISASTERS_FILE = "disasters.json";
@@ -54,12 +72,44 @@ export interface CachePaths {
   registry: string;
   geocode: string;
   research: string;
+  gofundme: string;
 }
 
 /** The cache files under dir; the defaults when dir is "cache". */
 export function cachePaths(dir = "cache"): CachePaths {
   const at = (defaultPath: string) => `${dir}/${path.basename(defaultPath)}`;
-  return { snapshot: at(SNAPSHOT_PATH), attempts: at(ATTEMPTS_PATH), registry: at(REGISTRY_PATH), geocode: at(GEOCODE_CACHE_PATH), research: at(RESEARCH_CACHE_PATH) };
+  return {
+    snapshot: at(SNAPSHOT_PATH),
+    attempts: at(ATTEMPTS_PATH),
+    registry: at(REGISTRY_PATH),
+    geocode: at(GEOCODE_CACHE_PATH),
+    research: at(RESEARCH_CACHE_PATH),
+    gofundme: at(GOFUNDME_CACHE_PATH),
+  };
+}
+
+/**
+ * The least severity a disaster needs to be published and researched:
+ * significant (2) or severe (3). Minor ones stay in the merge and the
+ * source snapshots, since their severity can rise in a later run.
+ */
+export const MIN_SEVERITY = 2;
+
+/** True for a significant or severe disaster, the only kind on the map. */
+export function isSignificant(d: Pick<Disaster, "severity">): boolean {
+  return d.severity >= MIN_SEVERITY;
+}
+
+/**
+ * True when a run should keep the previous map rather than write the one
+ * it built. Only an outage does that: this run has no report at all (no
+ * feed answered and no snapshot holds one) and the previous map had
+ * disasters. A run whose reports hold no significant disaster writes its
+ * empty map: nothing significant is happening, and keeping the old map
+ * would leave it up for as long as that lasts.
+ */
+export function keepsPreviousMap(reports: number, freshFeed: boolean, previous: number): boolean {
+  return reports === 0 && !freshFeed && previous > 0;
 }
 
 /** Feeds fetched each run, in this order. News comes from the site's own headlines. */
@@ -129,6 +179,11 @@ export function readAttempts(path = ATTEMPTS_PATH): Record<string, string> {
 /** The attempts key for a disaster's failed donation search, apart from its research's own key. */
 export function donationAttemptKey(id: string): string {
   return `donation:${id}`;
+}
+
+/** The attempts key for a disaster's failed direct search. */
+export function directAttemptKey(id: string): string {
+  return `direct:${id}`;
 }
 
 /** Drops failed attempts older than the retry window. */
@@ -359,6 +414,12 @@ export interface DisasterRun {
   globeCodes: Set<string>;
   /** Globe code -> English name. */
   countryNames: Record<string, string>;
+  /**
+   * Globe code -> the country's name in its press language, which a local
+   * group's page may use for its place (direct.ts). Read from
+   * pipeline/config/languages.json when left out.
+   */
+  pressNames?: Record<string, string>;
   /** No fetching, geocoding, model calls or live checks: rebuild from the caches. */
   offline?: boolean;
   /** Epoch ms after which no new research or live donation check starts. */
@@ -404,13 +465,15 @@ async function fetchFeeds(run: DisasterRun, snapshots: Snapshots): Promise<{ eve
  * Runs web research on the disasters that need it most, within the day's
  * allowance, a time limit and this run's cap (budget.maxResearchPerRun,
  * which counts disasters researched). A significant disaster (or one with
- * an IFRC appeal) also gets a donation search for pages about the event,
+ * an IFRC appeal) also gets a donation search for official pages about the
+ * event and a direct search for GlobalGiving's and local groups' pages,
  * right after its research, unless the research says it is over. Then
- * disasters not over whose entry has had no donation search (researched
- * before the search existed or before they became significant, or whose
- * last search failed) get one: at most MAX_DONATION_BACKFILL, and never
- * more than the run's cap, within the same allowance and time limit. The
- * registry gives each search its official sites. Updates cache and attempts.
+ * disasters not over whose entry lacks either search (researched before
+ * the search existed or before they became significant, or whose last
+ * search failed a day or more ago) get the missing ones: at most
+ * MAX_DONATION_BACKFILL disasters, and never more than the run's cap,
+ * within the same allowance and time limit. The registry gives each
+ * donation search its official sites. Updates cache and attempts.
  */
 async function runResearch(
   run: DisasterRun,
@@ -460,6 +523,21 @@ async function runResearch(
     cache[d.id] = withDonationSearch(entry, pages, now);
     log(`  donation search for ${d.id}: ${pages.length} pages, ${pages.filter((p) => p.specific).length} about the event`);
   };
+  // One direct search for a disaster with a cached entry; its pages replace the entry's earlier ones.
+  const searchDirect = async (d: Disaster): Promise<void> => {
+    const entry = cache[d.id];
+    if (!entry) return;
+    const found = await searchDirectPages(ai, d, { countryNames: run.countryNames, now, entry, log });
+    if (found === null) {
+      attempts[directAttemptKey(d.id)] = now;
+      log(`  direct search failed for ${d.id}; retried after ${RETRY_FAILED_HOURS} h`);
+      return;
+    }
+    cache[d.id] = withDirectSearch(entry, found, now);
+    log(`  direct search for ${d.id}: ${found.pages.filter((p) => p.kind === "globalgiving").length} GlobalGiving and ${found.pages.filter((p) => p.kind === "local").length} local pages, ${found.hubs.length} GoFundMe pages`);
+  };
+  // The month's cap and the run's deadline alone stop a search that is part of a research.
+  const mayFollow = () => Date.now() <= (run.deadline ?? Infinity) && canSpend(ledger, budget, now);
 
   let done = 0;
   const handled = new Set<string>();
@@ -475,29 +553,40 @@ async function runResearch(
       done++;
       log(`  researched ${d.id}: ${entry.places.length} places, ${entry.figures.length} figures, ${entry.donation.length} donation pages, ${entry.searches} searches`);
       // Part of the same research, so only the deadline and the month's cap
-      // can stop it here. None for a disaster left off the map as over.
-      if (wantsDonationSearch(d) && !researchSaysOver(d, entry, now) && Date.now() <= (run.deadline ?? Infinity) && canSpend(ledger, budget, now)) await searchDonations(d);
+      // can stop them here. None for a disaster left off the map as over.
+      if (wantsDonationSearch(d) && !researchSaysOver(d, entry, now)) {
+        if (mayFollow()) await searchDonations(d);
+        if (mayFollow()) await searchDirect(d);
+      }
     } else {
       attempts[d.id] = now;
       log(`  research failed for ${d.id}; retried after ${RETRY_FAILED_HOURS} h`);
     }
-    // One researched disaster for the cost average, however many responses it and its donation search took.
+    // One researched disaster for the cost average, however many responses it and its searches took.
     if (totalCalls(ledger) > callsBefore) noteResearch(ledger, new Date().toISOString());
     save();
   }
 
-  // Entries without a donation search, on disasters still headed for the
-  // map, and never more than the run's research cap. These are not counted
-  // as researches, so their spend raises the cost average a little: the
-  // safe side.
+  // Entries without a donation or direct search, on disasters still headed
+  // for the map, and never more than the run's research cap. These are not
+  // counted as researches, so their spend raises the cost average a little:
+  // the safe side.
   const onMap = disasters.filter((d) => !researchSaysOver(d, cache[d.id], now));
-  const skip = (id: string) => handled.has(id) || Boolean(attempts[donationAttemptKey(id)]);
-  const backfill = stopped ? [] : selectDonationBackfill(onMap, cache, skip, Math.min(MAX_DONATION_BACKFILL, budget.maxResearchPerRun));
-  if (backfill.length > 0) log(`Research: donation search for ${backfill.length} disasters researched earlier`);
+  const needsDonation = (id: string, e: ResearchEntry) => !handled.has(id) && !e.donationSearched && !attempts[donationAttemptKey(id)];
+  const needsDirect = (id: string, e: ResearchEntry) => !handled.has(id) && !e.directSearched && !attempts[directAttemptKey(id)];
+  const backfill = stopped ? [] : selectBackfill(onMap, cache, (id, e) => needsDonation(id, e) || needsDirect(id, e), Math.min(MAX_DONATION_BACKFILL, budget.maxResearchPerRun));
+  if (backfill.length > 0) log(`Research: donation or direct search for ${backfill.length} disasters researched earlier`);
   for (const d of backfill) {
-    if (!mayStart()) break;
-    await searchDonations(d);
-    save();
+    if (needsDonation(d.id, cache[d.id])) {
+      if (!mayStart()) break;
+      await searchDonations(d);
+      save();
+    }
+    if (needsDirect(d.id, cache[d.id])) {
+      if (!mayStart()) break;
+      await searchDirect(d);
+      save();
+    }
   }
   return done;
 }
@@ -505,6 +594,33 @@ async function runResearch(
 /** API responses recorded in every month of the ledger. */
 function totalCalls(ledger: Ledger): number {
   return Object.values(ledger.months).reduce((n, m) => n + m.calls, 0);
+}
+
+/** Each country's name in its press language, from pipeline/config/languages.json; none when it cannot be read. */
+export function readPressNames(path?: string): Record<string, string> {
+  try {
+    return Object.fromEntries(Object.entries(loadLanguages(path).languages).map(([code, v]) => [code, v.name]));
+  } catch {
+    return {};
+  }
+}
+
+/**
+ * The hosts, without "www.", of the site's own articles that link their
+ * publisher (Google News links are Google's own), so a local group's page
+ * is never one of those news sites (direct.ts localUrlProblem).
+ */
+export function articleHosts(articles: readonly Pick<NewsArticle, "url">[]): Set<string> {
+  const hosts = new Set<string>();
+  for (const a of articles) {
+    try {
+      const host = new URL(a.url).hostname.toLowerCase().replace(/^www\./, "");
+      if (host.includes(".") && !/(?:^|\.)google\.[a-z.]+$/.test(host) && !host.endsWith("bing.com")) hosts.add(host);
+    } catch {
+      // not a URL
+    }
+  }
+  return hosts;
 }
 
 /** Builds and writes public/data/disasters.json and the caches. Returns the file. */
@@ -534,15 +650,19 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   }
   fetched.news = next.news?.fetched ?? null;
 
-  let disasters = mergeEvents([...feedEvents, ...newsEvents], previous?.disasters ?? null, now);
-  log(`Disasters: ${disasters.length} ongoing after merging ${feedEvents.length + newsEvents.length} reports`);
+  // Every report is merged, minor ones too, so a disaster keeps its id and
+  // members when its severity rises; only significant and severe ones go on.
+  const merged = mergeEvents([...feedEvents, ...newsEvents], previous?.disasters ?? null, now);
+  let disasters = merged.filter(isSignificant);
+  log(`Disasters: ${merged.length} ongoing after merging ${feedEvents.length + newsEvents.length} reports, ${disasters.length} significant or severe`);
   // Never replace a map with an empty one because every source failed: with
   // no fresh feed and no snapshot to fall back on, the previous file's
-  // disasters that are still ongoing stay. The caches this run filled are
-  // saved all the same.
+  // significant disasters that are still ongoing stay. The caches this run
+  // filled are saved all the same. Reports with nothing significant in them
+  // are no outage, and give an empty map (keepsPreviousMap).
   const freshFeed = FEEDS.some((s) => fetched[s] === now);
-  if (disasters.length === 0 && !freshFeed && previous && previous.disasters.length > 0) {
-    const still = previous.disasters.filter((d) => isOngoing(d, now) || d.appeals.length > 0);
+  if (previous && keepsPreviousMap(merged.length, freshFeed, previous.disasters.length)) {
+    const still = previous.disasters.filter((d) => isSignificant(d) && (isOngoing(d, now) || d.appeals.length > 0));
     if (still.length > 0) {
       log(`Disasters: no reports this run; ${still.length} still ongoing kept from the previous map`);
       const kept: DisastersFile = { ...previous, disasters: still };
@@ -575,16 +695,30 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
 
   // Donation pages: registries by fixed rule plus researched pages that pass the allowlist and a live check.
   if (!run.offline) registry = await refreshRegistry(registry, deps, now, run.resolve, { probeCodes: [...run.globeCodes] });
+  // Direct giving: GoFundMe's crisis pages by fixed rule (no model, so also
+  // without a key), then GlobalGiving's and local groups' pages from the
+  // direct search, held to direct.ts's rules.
+  const gov = loadGovernmentDomains();
+  const contexts = new Map<string, DonationContext>(disasters.map((d) => [d.id, donationContext(d.countries, registry, gov, { title: d.title, countryNames: run.countryNames, appeals: d.appeals })]));
+  const contextOf = (d: Disaster) => contexts.get(d.id) as DonationContext;
+  let gofundme: GoFundMeCache = readGoFundMeCache(paths.gofundme);
+  if (!run.offline && Date.now() <= (run.deadline ?? Infinity)) {
+    const found = disasters.flatMap((d) => cache[d.id]?.hubs ?? []);
+    gofundme = await refreshGoFundMe(gofundme, deps, now, { found, wanted: (hub) => disasters.some((d) => hubMatches(hub, d, contextOf(d))) });
+  }
+  const pressNames = run.pressNames ?? readPressNames();
+  const newsHosts = articleHosts(run.articles);
   let checks = 0;
   const unreachable = new Set<string>();
   for (const d of disasters) {
-    const input = donationInput(d, cache[d.id], run.countryNames);
+    const direct: DirectInput = { disaster: d, entry: cache[d.id], gofundme, ctx: contextOf(d), countryNames: run.countryNames, pressNames, newsHosts };
     if (run.offline || checks >= MAX_DONATION_CHECKS || Date.now() > (run.deadline ?? Infinity)) {
-      d.donate = buildDonations(input, registry, now);
+      d.donate = buildDonations({ ...donationInput(d, cache[d.id], run.countryNames), direct: buildDirectLinks(direct, registry, now) }, registry, now, gov);
       continue;
     }
     const before = Object.keys(registry.verdicts).length;
-    d.donate = await prepareDonations(input, registry, deps, now, { maxChecks: 3, unreachable });
+    const links = await prepareDirectLinks(direct, registry, deps, now, { unreachable });
+    d.donate = await prepareDonations({ ...donationInput(d, cache[d.id], run.countryNames), direct: links }, registry, deps, now, { maxChecks: 3, unreachable, governmentDomains: gov });
     checks += Math.max(0, Object.keys(registry.verdicts).length - before);
   }
 
@@ -594,12 +728,13 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
     writeCompactJson(paths.snapshot, next);
     writeRegistry(registry, paths.registry);
     writeJson(paths.attempts, attempts);
+    writeGoFundMeCache(gofundme, paths.gofundme);
   }
   writeGeocodeCache(geocodeCache, paths.geocode);
   writeResearchCache(pruneResearchCache(cache, disasters.map((d) => d.id), now), paths.research);
   const bytes = fs.statSync(outPath).size;
   log(
-    `Disasters: wrote ${disasters.length} (${disasters.filter((d) => d.research).length} researched, ${disasters.reduce((n, d) => n + d.donate.length, 0)} donation links, ${geocoder.lookups} new geocoder lookups) in ${Math.round(bytes / 1024)} KB`,
+    `Disasters: wrote ${disasters.length} (${disasters.filter((d) => d.research).length} researched, ${disasters.reduce((n, d) => n + d.donate.length, 0)} donation links, ${disasters.reduce((n, d) => n + d.donate.filter((l) => DIRECT_KINDS.includes(l.kind)).length, 0)} of them direct, ${geocoder.lookups} new geocoder lookups) in ${Math.round(bytes / 1024)} KB`,
   );
   return file;
 }
