@@ -117,7 +117,7 @@ import {
   type LocalContext,
   type LocalPageRules,
 } from "./direct";
-import { NOT_ALLOWLISTED, donationContext, donationUrlProblem, emptyRegistry, loadGovernmentDomains, type DonationRegistry } from "./donate";
+import { NOT_ALLOWLISTED, buildDonations, donationContext, donationUrlProblem, emptyRegistry, loadGovernmentDomains, type DonationRegistry } from "./donate";
 import type { DirectPage, ResearchEntry } from "./research";
 import type { Disaster } from "./types";
 
@@ -2488,7 +2488,7 @@ describe("pages the research or the donation search found off the official allow
     ...over,
   });
 
-  it("offers only the pages donate.ts turns away for their host alone, by host kind, each once, with the model's org and note but no title or date", () => {
+  it("offers only the local pages donate.ts turns away for their host alone, each once, with the model's org and note but no title or date", () => {
     const ctx = ctxFor(NURISTAN);
     expect(donationUrlProblem(PENNY, ctx)).toBe(NOT_ALLOWLISTED);
     // The listing is on the allowlist, and refused for another reason: never offered.
@@ -2508,10 +2508,11 @@ describe("pages the research or the donation search found off the official allow
       ),
       ctx,
     );
+    // GlobalGiving's host is off the allowlist too, but its page is no local one: never offered.
+    expect(donationUrlProblem(GG, ctx)).toBe(NOT_ALLOWLISTED);
     expect(misses).toEqual<DirectPage[]>([
       // The earlier search's copy comes first; the research's copy of the same page is left out.
       { url: PENNY.replace("https://www.", "https://"), org: "Penny Appeal", kind: "local", note: "From an earlier search", title: "" },
-      { url: GG, org: "GlobalGiving", kind: "globalgiving", note: "", title: "" },
     ]);
     expect(allowlistMisses(undefined, ctx)).toEqual([]);
     expect(allowlistMisses({} as ResearchEntry, ctx)).toEqual([]);
@@ -2526,6 +2527,36 @@ describe("pages the research or the donation search found off the official allow
       [other, ""],
     ]);
     expect(directCandidates(input({ entry: undefined }))).toEqual([]);
+  });
+
+  it("never shows a GlobalGiving page the research or the donation search named, since only the direct search's are checked against its results", async () => {
+    // The model alone wrote these URLs (validDonations keeps them unchecked against the search results), and
+    // GlobalGiving pages get no live check: the slug alone would pass globalGivingProblem.
+    const GG = "https://www.globalgiving.org/projects/afghanistan-flood-relief-2026/";
+    const GG_FUND = "https://globalgiving.org/fundraisers/nuristan-flood-relief-2026/";
+    expect(globalGivingProblem({ url: GG, title: "" }, NURISTAN, ctxFor(NURISTAN))).toBeNull();
+    const entry = research([{ url: GG, org: "GlobalGiving", kind: "agency", note: "Vetted relief fund" }], {
+      earlierSearch: [{ url: GG_FUND, org: "GlobalGiving", kind: "agency", note: "", specific: true }],
+    });
+    const registry = emptyRegistry();
+    const outcome = directOutcome(input({ entry }), registry, NOW);
+    expect(outcome).toEqual({ links: [], fromSearch: 0, fromOther: 0, passed: 0, refused: [], waiting: [] });
+    const d = { ...deps(async () => html("<title>Afghanistan flood relief</title><a>Donate</a>")), log: vi.fn() };
+    const links = await prepareDirectLinks(input({ entry }), registry, d, NOW, { pageLog: vi.fn(), pauseMs: 0 });
+    expect(links).toEqual([]);
+    expect(d.fetch).not.toHaveBeenCalled();
+    // Nor do the official rules take them: nothing on globalgiving.org reaches the site.
+    const shown = buildDonations(
+      { countries: NURISTAN.countries, appeals: NURISTAN.appeals, researched: [...entry.earlierSearch!, ...entry.donation], title: NURISTAN.title, countryNames: NAMES, direct: links },
+      registry,
+      NOW,
+      GOV,
+    );
+    expect(shown.length).toBeGreaterThan(0);
+    expect(shown.filter((l) => l.url.includes("globalgiving"))).toEqual([]);
+    // The direct search's own page, with the title its search returned, is still judged as GlobalGiving's.
+    const own: DirectPage = { url: GG, org: "GlobalGiving", kind: "globalgiving", note: "", title: "Afghanistan Flood Relief 2026" };
+    expect(directOutcome(input({ entry: research([], { direct: [own] }) }), registry, NOW).links).toEqual([globalGivingLink(own)]);
   });
 
   it("live-checks Penny Appeal's Nuristan page and lists it as a charity's own page, by its own name and title", async () => {

@@ -1362,11 +1362,23 @@ export interface DirectSearchContext extends Omit<DonationSearchContext, "allowe
 }
 
 /**
+ * A direct search's counts for its log lines: the searches the model made,
+ * how many of them worked, and how many URLs they returned or cited
+ * ("5 searches (0 worked), 0 URLs returned or cited"), so a search that
+ * stopped early tells a model that made no search from searches that failed.
+ */
+export function directSearchCounts(research: Pick<ResearchResult, "searches" | "okSearches">, listed: number): string {
+  return `${research.searches} searches (${research.okSearches} worked), ${listed} URLs returned or cited`;
+}
+
+/**
  * Searches the whole web for direct donation pages about this disaster: one
  * web search, then a parse (tried twice, as in researchDisaster), then
- * readDirectPages. Logs how many searches it made, how many URLs they
- * returned or cited, how many pages the parse named and how many were
- * kept, and a line for each page named but not kept (to pageLog). Nothing
+ * readDirectPages. Logs how many searches it made, how many worked and
+ * how many URLs they returned or cited (directSearchCounts), on every line
+ * after the search, including the ones where it stops early; then how many
+ * pages the parse named and how many were kept, and a line for each page
+ * named but not kept (to pageLog). Nothing
  * found when a search worked and returned no page; null when a call failed
  * or no search worked, so the caller can try again later (the donation
  * search's rules). Never throws.
@@ -1382,16 +1394,17 @@ export async function searchDirectPages(ai: AiClient, disaster: Disaster, ctx: D
       return null;
     }
     const parsePrompt = buildDirectParsePrompt(disaster, ctx.countryNames, research, ctx.now);
+    const counts = directSearchCounts(research, parsePrompt.listed.length);
     if (parsePrompt.listed.length === 0) {
       if (research.okSearches > 0) {
-        log(`  direct search: no pages found for ${disaster.id}`);
+        log(`  direct search: no pages found for ${disaster.id}: ${counts}`);
         return { pages: [], hubs: [] };
       }
-      log(`  direct search: no search worked for ${disaster.id}`);
+      log(`  direct search: no search worked for ${disaster.id}: ${counts}`);
       return null;
     }
     if (!research.text?.trim()) {
-      log(`  direct search: no notes for ${disaster.id}`);
+      log(`  direct search: no notes for ${disaster.id}: ${counts}`);
       return null;
     }
     let parsed: DirectSearchParse | null = null;
@@ -1400,14 +1413,12 @@ export async function searchDirectPages(ai: AiClient, disaster: Disaster, ctx: D
       parsed = await ai.parse({ schema: directSearchSchema, system: parsePrompt.system, user: parsePrompt.user, ...PARSE_SETTINGS, maxTokens });
     }
     if (!parsed) {
-      log(`  direct search: notes for ${disaster.id} could not be parsed`);
+      log(`  direct search: notes for ${disaster.id} could not be parsed: ${counts}`);
       return null;
     }
     const named = Array.isArray(parsed.pages) ? parsed.pages.length : 0;
     const { pages, dropped } = readDirectPages(parsed.pages, research, parsePrompt.listed, ctx.now);
-    log(
-      `  direct search for ${disaster.id}: ${research.searches} searches (${research.okSearches} worked), ${parsePrompt.listed.length} URLs returned or cited, ${named} pages named, ${pages.length} kept`,
-    );
+    log(`  direct search for ${disaster.id}: ${counts}, ${named} pages named, ${pages.length} kept`);
     for (const p of dropped) pageLog(`  direct search for ${disaster.id}: not kept ${p.url || "(no URL)"} (${p.reason})`);
     return { pages, hubs: hubUrlsIn(research) };
   } catch (err) {

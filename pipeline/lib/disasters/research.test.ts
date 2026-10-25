@@ -13,6 +13,7 @@ import {
   MAX_DIRECT_PAGES,
   buildDirectParsePrompt,
   buildDirectSearchPrompt,
+  directSearchCounts,
   directSearchSchema,
   directSearchSystemPrompt,
   mergeHubs,
@@ -1770,6 +1771,23 @@ describe("searchDirectPages", () => {
     const plain = vi.fn();
     await searchDirectPages(fakeDirectAi(directResearch(), [parsed]).ai, disaster(), directCtx({ log: plain }));
     expect(plain).toHaveBeenCalledTimes(2);
+  });
+
+  it("gives the searches made, those that worked and the URLs returned or cited on the lines where it stops early too", async () => {
+    const id = disaster().id;
+    const lines = async (result: ResearchResult, answers: (DirectSearchParse | null)[] = []) => {
+      const log = vi.fn();
+      await searchDirectPages(fakeDirectAi(result, answers).ai, disaster(), directCtx({ log }));
+      return log.mock.calls.map(([m]) => m);
+    };
+    const empty = { citations: [], results: [] };
+    // Five searches that all failed, told from a model that made none.
+    expect(await lines(directResearch({ ...empty, searches: 5, okSearches: 0 }))).toEqual([`  direct search: no search worked for ${id}: 5 searches (0 worked), 0 URLs returned or cited`]);
+    expect(await lines(directResearch({ ...empty, searches: 0, okSearches: 0 }))).toEqual([`  direct search: no search worked for ${id}: 0 searches (0 worked), 0 URLs returned or cited`]);
+    expect(await lines(directResearch({ ...empty, searches: 3, okSearches: 3 }))).toEqual([`  direct search: no pages found for ${id}: 3 searches (3 worked), 0 URLs returned or cited`]);
+    expect(await lines(directResearch({ text: " ", searches: 4, okSearches: 3 }))).toEqual([`  direct search: no notes for ${id}: 4 searches (3 worked), 3 URLs returned or cited`]);
+    expect(await lines(directResearch(), [null, null])).toEqual([`  direct search: notes for ${id} could not be parsed: 2 searches (2 worked), 3 URLs returned or cited`]);
+    expect(directSearchCounts({ searches: 5, okSearches: 1 }, 7)).toBe("5 searches (1 worked), 7 URLs returned or cited");
   });
 
   it("tries the parse once more with more room, then fails; never throws", async () => {

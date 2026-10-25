@@ -28,7 +28,9 @@
 //                 to this disaster; the search's own date is no proof
 //                 (globalGivingProblem). GlobalGiving vets its local
 //                 partners. It refuses many scripted clients, so there is no
-//                 live check.
+//                 live check, and a GlobalGiving page the other searches
+//                 named (their URLs are the model's, unchecked against the
+//                 search results) is never offered (allowlistMisses).
 //   local         a charity's or a local organisation's, school's, parish's
 //                 or community group's own donation page for this disaster
 //                 that the direct search returned, or that the research or
@@ -3002,21 +3004,28 @@ export function directKindOf(url: string): DirectPageKind {
  * (donationUrlProblem gives NOT_ALLOWLISTED, so the URL is well formed and
  * over https): a charity's own appeal for the disaster, such as Penny
  * Appeal USA's for the Nuristan floods, is no official page but may be a
- * direct one. They are offered to the direct checks as the direct search's
- * pages are, and held to every rule there: their kind goes by their host
- * (directKindOf), the model's org and note come along (the org can only
- * take a page away, see localPageProblem), and they have no title or date,
+ * direct one. They are offered to the direct checks as the direct
+ * search's local pages are, and held to every rule there, the live check
+ * among them: the model's org and note come along (the org can only take
+ * a page away, see localPageProblem), and they have no title or date,
  * which those searches do not keep. No model is asked again.
+ *
+ * Only pages whose host makes them local (directKindOf) are offered. A
+ * GlobalGiving page gets no live check (globalGivingProblem judges its slug
+ * and the search's title), so it is shown only when the direct search
+ * returned it with its title (readDirectPages); these searches keep URLs
+ * the model wrote, never checked against what a search returned, so their
+ * GlobalGiving pages are left out.
  */
 export function allowlistMisses(entry: Partial<Pick<ResearchEntry, "donation" | "earlierSearch">> | undefined, ctx: DonationContext): DirectPage[] {
   const out: DirectPage[] = [];
   const keys = new Set<string>();
   for (const r of [...(entry?.earlierSearch ?? []), ...(entry?.donation ?? [])]) {
-    if (typeof r?.url !== "string" || donationUrlProblem(r.url, ctx) !== NOT_ALLOWLISTED) continue;
+    if (typeof r?.url !== "string" || donationUrlProblem(r.url, ctx) !== NOT_ALLOWLISTED || directKindOf(r.url) !== "local") continue;
     const key = urlKey(r.url);
     if (keys.has(key)) continue;
     keys.add(key);
-    out.push({ url: r.url, org: cleanText(r.org, 100), kind: directKindOf(r.url), note: cleanText(r.note, 200), title: "" });
+    out.push({ url: r.url, org: cleanText(r.org, 100), kind: "local", note: cleanText(r.note, 200), title: "" });
   }
   return out;
 }

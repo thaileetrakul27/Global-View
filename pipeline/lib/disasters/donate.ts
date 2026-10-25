@@ -2038,8 +2038,10 @@ export async function prepareDonations(input: DonationInput, registry: DonationR
     if (!r || typeof r.url !== "string") continue;
     const problem = donationUrlProblem(r.url, ctx);
     if (problem) {
-      // A page off the allowlist may still be a charity's own (direct.ts allowlistMisses).
-      deps.log(`Donation page ${r.url}: rejected (${problem})${problem === NOT_ALLOWLISTED ? "; left to the direct checks" : ""}`);
+      // A page off the allowlist may still be a charity's own (direct.ts allowlistMisses), but
+      // never a GlobalGiving page, which would get no live check there.
+      const leftToDirect = problem === NOT_ALLOWLISTED && !hostMatches(new URL(r.url).hostname.toLowerCase(), "globalgiving.org");
+      deps.log(`Donation page ${r.url}: rejected (${problem})${leftToDirect ? "; left to the direct checks" : ""}`);
       continue;
     }
     const cached = registry.verdicts[urlKey(r.url)];

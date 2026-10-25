@@ -803,6 +803,25 @@ describe("updateDisasters", () => {
     expect(lines).toContain(`  direct pages for ${ID}: 1 candidate (0 from the direct search, 1 from the other searches): 1 passed, 0 refused, 0 wait for a live check`);
   });
 
+  it("never shows a GlobalGiving page the research named, and does not leave it to the direct checks", async () => {
+    // The research's URLs are the model's alone, and a GlobalGiving page gets no live check.
+    const GG = "https://www.globalgiving.org/projects/bangladesh-flood-relief-2026/";
+    const cached = entry({ donation: [{ url: GG, org: "GlobalGiving", kind: "agency", note: "Vetted relief fund" }], donationSearched: NOW, directSearched: NOW });
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } }, research: { [ID]: cached } });
+    const fetchMock = vi.fn(async (url: string | URL | Request): Promise<Response> => {
+      throw new Error(`network down for ${String(url)}`);
+    });
+    const lines: string[] = [];
+    const log = (m: string) => lines.push(m);
+    const file = await updateDisasters(runWith(dirs, { countryNames: { BD: "Bangladesh" }, log, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log } }));
+    expect(file.disasters[0].donate.length).toBeGreaterThan(0);
+    expect(file.disasters[0].donate.filter((l) => l.url.includes("globalgiving"))).toEqual([]);
+    expect(fetchMock.mock.calls.map(([u]) => String(u))).not.toContain(GG);
+    expect(lines).toContain(`Donation page ${GG}: rejected (host not on the allowlist)`);
+    expect(lines.filter((l) => l.includes(GG))).toHaveLength(1);
+    expect(lines.some((l) => l.startsWith(`  direct pages for ${ID}:`))).toBe(false);
+  });
+
   it("logs at most 40 lines about single direct pages a run, and how many more it left out", async () => {
     const news = Array.from({ length: 45 }, (_, i) => ({ url: `https://www.bdflood-updates.org/news/story-${i}`, org: "Updates", kind: "" as const, note: "" }));
     const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } }, research: { [ID]: entry({ donation: news }) } });
