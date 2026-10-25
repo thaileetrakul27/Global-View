@@ -214,98 +214,45 @@
     "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001338": {
-    "at": "2026-10-24T17:51:09.606Z",
+    "at": "2026-10-25T14:24:49.037Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Super Typhoon Champi (Rosal) started on 14 October 2026 and was still active on 24 October, though weakening. Taiwan lifted its land warning but urges caution because residual rain and hazardous conditions remain. Taiwan reported one death and 616 injured. About 56,000 households were still without power on 24 October. Guam and the Northern Mariana Islands are recovering as the storm has moved away.",
+    "searches": 1,
+    "summary": "Super Typhoon Champi, also called Rosal, began on 14 October 2026. Some reports describe Category 5-equivalent strength around 19 to 21 October, though one feed labels it a tropical storm. By 23 to 24 October it was bringing heavy rain and damaging winds to Taiwan, with the Ryukyu Islands affected and eastern China forecast to be hit. Reports give one death and 171 injured in Taiwan. Landfall and its position as of 25 October are not confirmed.",
     "ongoing": true,
     "places": [
       {
-        "name": "Taizhou",
-        "admin": "Zhejiang",
+        "name": "Ryukyu Islands",
+        "country": "JP",
+        "kind": "region",
+        "impact": "affected"
+      },
+      {
+        "name": "Eastern China",
         "country": "CN",
-        "kind": "city",
-        "impact": "Over 3,800 fishing boats recalled to harbour"
-      },
-      {
-        "name": "Batanes",
-        "country": "PH",
         "kind": "region",
-        "impact": "Signal No. 2 maintained; no damage reported"
-      },
-      {
-        "name": "Catanduanes",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Signal No. 1 maintained; no damage reported"
+        "impact": "forecast heavy rain and wind"
       }
     ],
     "figures": [
       {
-        "label": "Deaths",
+        "label": "Deaths (Taiwan)",
         "value": "1",
-        "sourceName": "nationpathindia.com",
-        "sourceUrl": "https://www.nationpathindia.com/international/typhoon-champi-taiwan-one-dead-616-injured-october-2026"
+        "sourceName": "yahoo.com",
+        "sourceUrl": "https://www.yahoo.com/news/weather-news/article/super-typhoon-champi-becomes-one-of-2026s-strongest-storms-as-it-heads-toward-taiwan-and-eastern-china-212554537.html"
       },
       {
-        "label": "Injured",
-        "value": "616",
-        "sourceName": "nationpathindia.com",
-        "sourceUrl": "https://www.nationpathindia.com/international/typhoon-champi-taiwan-one-dead-616-injured-october-2026"
-      },
-      {
-        "label": "Evacuated",
-        "value": "more than 5,000 people",
-        "sourceName": "phys.org",
-        "sourceUrl": "https://phys.org/news/2026-10-typhoon-champi-power-thousands-taiwan.html"
-      },
-      {
-        "label": "Households without power",
-        "value": "about 56,000",
-        "sourceName": "phys.org",
-        "sourceUrl": "https://phys.org/news/2026-10-typhoon-champi-power-thousands-taiwan.html"
-      },
-      {
-        "label": "Sheltering in Guam",
-        "value": "more than 1,000 people",
-        "sourceName": "redcross.org",
-        "sourceUrl": "https://www.redcross.org/about-us/news-and-events/news/2026/tropical-cyclone-heads-to-the-islands.html"
+        "label": "Injured (Taiwan)",
+        "value": "171",
+        "sourceName": "yahoo.com",
+        "sourceUrl": "https://www.yahoo.com/news/weather-news/article/super-typhoon-champi-becomes-one-of-2026s-strongest-storms-as-it-heads-toward-taiwan-and-eastern-china-212554537.html"
       }
     ],
-    "donation": [
-      {
-        "url": "https://www.jrc.or.jp/english/donate/",
-        "org": "Japanese Red Cross Society",
-        "kind": "society",
-        "note": "General donation page for Japanese Red Cross work, not an appeal for Champi.",
-        "specific": false
-      }
-    ],
-    "sources": [
-      {
-        "name": "nationpathindia.com",
-        "url": "https://www.nationpathindia.com/international/typhoon-champi-taiwan-one-dead-616-injured-october-2026",
-        "title": "Typhoon Champi Leaves One Dead and 616 Injured in Taiwan as Storm Weakens and Moves Away"
-      },
-      {
-        "name": "phys.org",
-        "url": "https://phys.org/news/2026-10-typhoon-champi-power-thousands-taiwan.html",
-        "title": "Typhoon Champi knocks out power to thousands in Taiwan"
-      },
-      {
-        "name": "kelo.com",
-        "url": "https://kelo.com/2026/10/23/typhoon-champi-sweeps-past-taiwan-one-dead-and-500-injured/",
-        "title": "Typhoon Champi sweeps past Taiwan, leaving 1 dead, 500 injured"
-      },
-      {
-        "name": "redcross.org",
-        "url": "https://www.redcross.org/about-us/news-and-events/news/2026/red-cross-responds-to-champi--isaias.html",
-        "title": "Red Cross Responding to Two Major Storms Affecting Communities More Than 8,200 Miles Apart"
-      }
-    ],
-    "membersHash": "eonet,gdacs|CN,JP,PH#afb26aec",
-    "seen": "2026-10-25T13:34:13.512Z",
-    "donationSearched": "2026-10-24T17:51:09.606Z"
+    "donation": [],
+    "sources": [],
+    "membersHash": "eonet,gdacs|CN,JP,KR,PH#afb26aec",
+    "donationSearched": "2026-10-25T14:24:49.037Z",
+    "directSearched": "2026-10-25T14:24:49.037Z",
+    "seen": "2026-10-25T14:24:49.037Z"
   },
   "gdacs-cyclone-tc-1001341": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -354,8 +301,9 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-25T13:34:13.512Z",
-    "donationSearched": "2026-10-23T21:53:40.347Z"
+    "seen": "2026-10-25T14:24:49.037Z",
+    "donationSearched": "2026-10-23T21:53:40.347Z",
+    "directSearched": "2026-10-25T14:24:49.037Z"
   },
   "gdacs-cyclone-tc-1001342": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -470,7 +418,7 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T14:24:49.037Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-drought-dr-1027449": {
@@ -484,8 +432,9 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-25T13:34:13.512Z",
-    "donationSearched": "2026-10-24T17:51:09.606Z"
+    "seen": "2026-10-25T14:24:49.037Z",
+    "donationSearched": "2026-10-24T17:51:09.606Z",
+    "directSearched": "2026-10-25T14:24:49.037Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -615,8 +564,9 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-25T13:34:13.512Z",
-    "donationSearched": "2026-10-25T13:34:13.512Z"
+    "seen": "2026-10-25T14:24:49.037Z",
+    "donationSearched": "2026-10-25T13:34:13.512Z",
+    "directSearched": "2026-10-25T14:24:49.037Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -707,8 +657,9 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-25T13:34:13.512Z",
-    "donationSearched": "2026-10-25T07:59:52.974Z"
+    "seen": "2026-10-25T14:24:49.037Z",
+    "donationSearched": "2026-10-25T07:59:52.974Z",
+    "directSearched": "2026-10-25T14:24:49.037Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -750,7 +701,7 @@
       }
     ],
     "membersHash": "gdacs|VU#1dba2781",
-    "seen": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T14:24:49.037Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-earthquake-eq-1570339": {
@@ -885,8 +836,8 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "donationSearched": "2026-10-25T13:34:13.512Z",
-    "seen": "2026-10-25T13:34:13.512Z"
+    "seen": "2026-10-25T14:24:49.037Z",
+    "donationSearched": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1291,8 +1242,9 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-10-25T13:34:13.512Z",
-    "donationSearched": "2026-10-25T00:43:26.084Z"
+    "seen": "2026-10-25T14:24:49.037Z",
+    "donationSearched": "2026-10-25T00:43:26.084Z",
+    "directSearched": "2026-10-25T14:24:49.037Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -3984,7 +3936,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T14:24:49.037Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-volcano-vo-1000152": {
@@ -4054,7 +4006,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T14:24:49.037Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032497": {
@@ -5585,7 +5537,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T14:24:49.037Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
@@ -6096,7 +6048,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T14:24:49.037Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8014": {
@@ -6243,7 +6195,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T14:24:49.037Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8037": {
@@ -6483,7 +6435,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T14:24:49.037Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8052": {
@@ -6966,7 +6918,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-25T13:34:13.512Z",
+    "seen": "2026-10-25T14:24:49.037Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8115": {
