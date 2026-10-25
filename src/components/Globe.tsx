@@ -5,8 +5,7 @@ import GlobeGL, { type GlobeMethods } from "react-globe.gl";
 import { AmbientLight, DirectionalLight, MeshLambertMaterial } from "three";
 import { WORLD_ALTITUDE, countryFocus, greatCircle, type CountryFeature } from "@/lib/geo";
 import type { Disaster } from "@/lib/data";
-import { MINOR_REVEAL_ALTITUDE, disasterFocus } from "@/lib/disasterLayers";
-import { hiddenOnMap } from "@/lib/disasters";
+import { disasterFocus } from "@/lib/disasterLayers";
 import { readingFade, readingLook } from "@/lib/lineFade";
 import { tooltipDetail } from "./disasters/markers";
 import { disasterPointerFilter, useDisasterLayers, useReducedMotion } from "./disasters/useDisasterLayers";
@@ -39,8 +38,6 @@ export interface GlobeProps {
   selectedDisasterId: string | null;
   /** False hides every disaster layer. */
   showDisasters: boolean;
-  /** True draws minor disasters too; otherwise they appear only once the camera is close. */
-  showMinor: boolean;
   /** Called when a disaster's marker, area or track is clicked. */
   onSelectDisaster: (id: string) => void;
   /** Called the first time the user turns or zooms the globe. */
@@ -125,7 +122,6 @@ export default function Globe({
   disasters,
   selectedDisasterId,
   showDisasters,
-  showMinor,
   onSelectDisaster,
   onMoved,
 }: GlobeProps) {
@@ -147,14 +143,8 @@ export default function Globe({
   // Sharper country shapes near a low camera.
   const detailed = useDetailedCountries(countries);
 
-  // Minor disasters join the map once the camera is close, and the reading
-  // lines fade as it comes down (see handleZoom).
-  const [close, setClose] = useState(false);
+  // The reading lines fade as the camera comes down (see handleZoom).
   const [fade, setFade] = useState(1);
-  const hidden = useMemo(
-    () => hiddenOnMap(disasters, { showMinor: showMinor || close, openId: selectedDisasterId }),
-    [disasters, showMinor, close, selectedDisasterId],
-  );
   // The layer moving the camera itself (a cluster zoom) counts as the user's doing.
   const engageCamera = useCallback(() => {
     touchedRef.current = true;
@@ -168,7 +158,6 @@ export default function Globe({
     disasters,
     selectedId: selectedDisasterId,
     show: showDisasters,
-    hidden,
     rightInset: inset.right,
     onSelect: onSelectDisaster,
     onCameraMove: engageCamera,
@@ -350,7 +339,6 @@ export default function Globe({
     (view: { lat: number; lng: number; altitude: number }) => {
       onView(view);
       const altitude = view.altitude / altitudeScale();
-      setClose(altitude < MINOR_REVEAL_ALTITUDE);
       // Stepped, so the paths are redrawn a few times per zoom, not every frame.
       setFade(readingFade(altitude));
     },

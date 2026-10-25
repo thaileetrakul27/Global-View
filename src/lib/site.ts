@@ -18,7 +18,7 @@ export const SITE_NAME = "Global View";
  * each country's news feeds by recency and coverage, not reader counts.
  */
 export const SITE_DESCRIPTION =
-  "A 3D globe of the top news stories in each country right now, and of the natural disasters happening now, with official places to give.";
+  "A 3D globe of the top news stories in each country right now, and of the natural disasters happening now, with places to give.";
 
 /**
  * Codes that prove to Google Search Console and Bing Webmaster Tools that

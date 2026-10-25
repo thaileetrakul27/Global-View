@@ -700,8 +700,6 @@ export function fanOffsets(clusters: MarkerClusters, markers: readonly ScreenMar
   return out;
 }
 
-/** How far below the default view the camera must be before minor disasters appear on their own. */
-export const MINOR_REVEAL_ALTITUDE = 1;
 /** A cluster tapped at or below this altitude opens its head instead of zooming further. */
 export const CLUSTER_MIN_ALTITUDE = FOCUS_MIN_ALTITUDE;
 /** Each tap on a cluster brings the camera this much closer. */
