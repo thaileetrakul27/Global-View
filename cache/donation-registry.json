@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-25T15:46:17.310Z",
+  "updated": "2026-10-25T18:01:40.579Z",
   "fetched": {
-    "societies": "2026-10-25T15:46:17.310Z",
-    "uncr": "2026-10-25T15:46:17.310Z"
+    "societies": "2026-10-25T18:01:40.579Z",
+    "uncr": "2026-10-25T18:01:40.579Z"
   },
   "societies": {
     "AF": {
@@ -2906,15 +2906,6 @@
         "https://www.jrc.or.jp/english/donate/"
       ]
     },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-24T17:51:09.606Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
     "drk.de": {
       "ok": true,
       "reason": "donation word \"spenden*\"",
@@ -2922,23 +2913,6 @@
       "chain": [
         "https://www.drk.de/"
       ]
-    },
-    "redcrosszim.org.zw": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-24T17:51:09.606Z",
-      "chain": [
-        "https://www.redcrosszim.org.zw/"
-      ]
-    },
-    "ifrc.org/donate": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-24T17:51:09.606Z",
-      "chain": [
-        "https://www.ifrc.org/donate"
-      ],
-      "blocked": true
     },
     "croixrouge.bi": {
       "ok": false,
@@ -3195,12 +3169,78 @@
     "local3:gdacs-cyclone-tc-1001338:wck.org/relief/typhoon-champi": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-10-25T15:46:17.310Z",
       "chain": [
         "https://wck.org/relief/typhoon-champi/"
-      ],
-      "checked": "2026-10-25T15:46:17.310Z"
+      ]
     },
     "local3:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Afghanistan\"",
+      "checked": "2026-10-25T15:46:17.310Z",
+      "chain": [
+        "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/"
+      ],
+      "place": "Afghanistan",
+      "name": "Penny Appeal USA",
+      "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan"
+    },
+    "local4:ifrc-flood-8073:childrenofadam.org/all-appeals/nepal-emergency": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Nepal\"",
+      "chain": [
+        "https://childrenofadam.org/all-appeals/nepal-emergency/"
+      ],
+      "place": "Nepal",
+      "name": "Children of Adam",
+      "title": "Nepal Flood Appeal 2026 | Donate Now | Children of Adam",
+      "checked": "2026-10-25T18:01:40.579Z"
+    },
+    "ifrc.org/emergency/nepal-flash-floods-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-10-25T18:01:40.579Z"
+    },
+    "local4:ifrc-earthquake-8055:convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "HTTP 403",
+      "chain": [
+        "https://convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-10-25T18:01:40.579Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-10-25T18:01:40.579Z"
+    },
+    "local4:ifrc-earthquake-8055:rescue.org/help-survivors-of-Colombia-earthquake": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Colombia\"",
+      "chain": [
+        "https://www.rescue.org/help-survivors-of-Colombia-earthquake"
+      ],
+      "place": "Colombia",
+      "name": "International Rescue Committee",
+      "title": "Colombia earthquake: Donate to help survivors | International Rescue Committee",
+      "checked": "2026-10-25T18:01:40.579Z"
+    },
+    "colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria": {
+      "ok": true,
+      "reason": "donation word \"dona ahora\"",
+      "chain": [
+        "https://colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria"
+      ],
+      "checked": "2026-10-25T18:01:40.579Z"
+    },
+    "local4:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Afghanistan\"",
       "chain": [
@@ -3209,7 +3249,7 @@
       "place": "Afghanistan",
       "name": "Penny Appeal USA",
       "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan",
-      "checked": "2026-10-25T15:46:17.310Z"
+      "checked": "2026-10-25T18:01:40.579Z"
     }
   }
 }
