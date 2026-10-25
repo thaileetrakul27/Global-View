@@ -33,7 +33,7 @@ import {
 } from "./donate";
 import { fetchEonet } from "./eonet";
 import { fetchGdacs } from "./gdacs";
-import { GEOCODE_CACHE_PATH, createGeocoder, placeArea, placeFromHit, readGeocodeCache, writeGeocodeCache, type Geocoder } from "./geocode";
+import { GEOCODE_CACHE_PATH, createGeocoder, localPlaceNames, placeArea, placeFromHit, readGeocodeCache, writeGeocodeCache, type Geocoder } from "./geocode";
 import { dropSeaParts, fitGeometry, haversineKm, type CountryShape } from "./geo";
 import { fetchIfrc } from "./ifrc";
 import { isOngoing, mergeEvents } from "./merge";
@@ -123,6 +123,8 @@ export const RESEARCH_TIME_MS = 15 * 60_000;
 export const RESEARCH_COST_MARGIN = 1.5;
 /** Live checks of donation pages per run; the rest use cached verdicts. */
 export const MAX_DONATION_CHECKS = 150;
+/** Places cached before the geocoder kept their own names that are asked again for them, per run (within its cap of searches). */
+export const LOCAL_NAME_BACKFILL = 10;
 /** Place outlines and circles added to one disaster at most. */
 export const MAX_PLACE_AREAS = 10;
 /** Bytes allowed for one place's outline. */
@@ -420,6 +422,8 @@ export interface DisasterRun {
    * pipeline/config/languages.json when left out.
    */
   pressNames?: Record<string, string>;
+  /** Globe code -> the country's press language ("ar"), for its places' own names and its pages; read from pipeline/config/languages.json when left out. */
+  pressLanguages?: Record<string, string>;
   /** No fetching, geocoding, model calls or live checks: rebuild from the caches. */
   offline?: boolean;
   /** Epoch ms after which no new research or live donation check starts. */
@@ -605,6 +609,15 @@ export function readPressNames(path?: string): Record<string, string> {
   }
 }
 
+/** Each country's press language ("MA" -> "ar"), from pipeline/config/languages.json; none when it cannot be read. */
+export function readPressLanguages(path?: string): Record<string, string> {
+  try {
+    return Object.fromEntries(Object.entries(loadLanguages(path).languages).map(([code, v]) => [code, v.lang]));
+  } catch {
+    return {};
+  }
+}
+
 /**
  * The hosts, without "www.", of the site's own articles that link their
  * publisher (Google News links are Google's own), so a local group's page
@@ -634,7 +647,8 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
 
   // The run's one geocoder: Nominatim at one request a second, cached forever.
   const geocodeCache = readGeocodeCache(paths.geocode);
-  const geocoder = createGeocoder(deps, geocodeCache, now, run.offline ? { maxLookups: 0 } : {});
+  const pressLanguages = run.pressLanguages ?? readPressLanguages();
+  const geocoder = createGeocoder(deps, geocodeCache, now, run.offline ? { maxLookups: 0 } : { backfillLocal: LOCAL_NAME_BACKFILL, pressLanguages });
 
   // Disasters in the site's own headlines, placed by geocoding their places.
   let newsEvents = next.news?.events ?? [];
@@ -712,7 +726,8 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   let checks = 0;
   const unreachable = new Set<string>();
   for (const d of disasters) {
-    const direct: DirectInput = { disaster: d, entry: cache[d.id], gofundme, ctx: contextOf(d), countryNames: run.countryNames, pressNames, newsHosts };
+    const localNames = localPlaceNames(geocodeCache, d.places);
+    const direct: DirectInput = { disaster: d, entry: cache[d.id], gofundme, ctx: contextOf(d), countryNames: run.countryNames, pressNames, pressLanguages, newsHosts, localNames };
     if (run.offline || checks >= MAX_DONATION_CHECKS || Date.now() > (run.deadline ?? Infinity)) {
       d.donate = buildDonations({ ...donationInput(d, cache[d.id], run.countryNames), direct: buildDirectLinks(direct, registry, now) }, registry, now, gov);
       continue;

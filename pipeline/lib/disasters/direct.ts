@@ -17,32 +17,41 @@
 //                 "project"). Pages come from GoFundMe's index of current
 //                 crises and from any crisis page a disaster's research
 //                 found. Cached in cache/gofundme.json, read again at most
-//                 every 12 hours, a handful of requests a run; a page that
-//                 failed, moved or is gone is not asked for again for 12
-//                 hours or 7 days.
+//                 every 12 hours, a handful of requests a run; a page, the
+//                 index or a feed that failed is not asked for again for 12
+//                 hours, a page that moved or is gone for 7 days.
 //   GlobalGiving  a project or fund on www.globalgiving.org that the direct
 //                 search (research.ts) returned, kept only when its slug or
 //                 title names the disaster's place and its hazard (a named
 //                 storm by its name), no other country, kind of hazard or
-//                 older year, and something dates it to this disaster: a
-//                 recent year, the storm's name or the search's own date for
-//                 the page (globalGivingProblem). GlobalGiving vets its local
+//                 older year, and its storm's name or a recent year dates it
+//                 to this disaster; the search's own date is no proof
+//                 (globalGivingProblem). GlobalGiving vets its local
 //                 partners. It refuses many scripted clients, so there is no
 //                 live check.
 //   local         a local organisation's, school's or community group's own
 //                 donation page the direct search returned, kept only when
 //                 its URL is on no shared, social, blog, site-builder,
-//                 marketplace, news, crowdfunding or official site, has no
-//                 official body's name in its host and no platform's or
-//                 article's shape in its path (localUrlProblem), and a live
-//                 check passes: 200 HTML on the same site, no news article or
-//                 blog post, no official body's name in its own name or
-//                 title, nothing that dates or names it for an earlier
-//                 disaster, a donation word and a name of the disaster's
-//                 place (verifyLocalPage). It is shown by the site's own name
-//                 (og:site_name, else its host) and title, never by the
-//                 model's words. Verdicts are cached with donate.ts's, per
-//                 disaster.
+//                 marketplace, news, crowdfunding, payment or official site,
+//                 has no official body's name in its host and no person's
+//                 page's or article's shape in its path (localUrlProblem),
+//                 and a live check passes: 200 HTML on the same site, no
+//                 news article, no official body's name in its own name,
+//                 title or heading (in its own language and script too, the
+//                 UN's and regional governments' among them) and no word
+//                 mixing Latin with Cyrillic or Greek letters, no request
+//                 for crypto, gift card codes or transfers to a person, no
+//                 platform's invitation to start a fundraiser, nothing that
+//                 dates or names it for an earlier or another disaster (its
+//                 own date, other calendars and other countries' names in
+//                 its own language included), a donation word, a title
+//                 without the site's name, heading or address about this
+//                 disaster (its hazard, or a place of its title as a whole
+//                 phrase, not just the country) and a name of the
+//                 disaster's place, in any script (verifyLocalPage).
+//                 It is shown by the site's own name (og:site_name, else its
+//                 host) and title, never by the model's words. Verdicts are
+//                 cached with donate.ts's, per disaster and rules version.
 //
 // The integrator refreshes the GoFundMe cache once per run
 // (refreshGoFundMe), checks local pages (prepareDirectLinks) and passes the
@@ -77,8 +86,21 @@
 //   - a retired crisis page answers 301 to its new slug (/c/act/
 //     hurricane-beryl -> /c/act/hurricane-beryl-help) or 404;
 //   - WordPress (Yoast) marks every page og:type "article", GoFundMe's
-//     crisis pages too, so only a news or blog post's JSON-LD type or its
-//     article:published_time marks an article.
+//     crisis pages too, and gives a group's own posts an Article node and
+//     article:published_time, so only a NewsArticle (or a news publisher's
+//     node) marks news; its WebPage node's datePublished dates the page.
+// A review of these rules (2026-10-25) found general charity pages, other
+// countries' and old disasters' pages, look-alikes in other languages and
+// scripts, and pages asking for crypto or Zelle accepted, and schools'
+// and groups' own pages refused for "news", "gov" or "un" inside a word,
+// WordPress paths and posts, founding years and their own scripts. A second
+// review found UN look-alikes, other countries named in a page's own
+// language, general pages let in by a group's own name, Buddhist, Japanese
+// and Nepali years, crypto tickers and addresses, platforms the lists
+// missed and search-dated GlobalGiving funds accepted, and US states,
+// rewritten donate pages, PAGASA's storm names, founding years in other
+// languages and Morocco's names in three scripts refused; the tests hold
+// each of those pages.
 import fs from "node:fs";
 import type { ResearchResult } from "../ai";
 import type { FetchDeps } from "../googlenews";
@@ -89,10 +111,12 @@ import {
   NOT_EVENT_WORDS,
   SHARED_HOSTS,
   SHORTENERS,
+  STORM_WORDS,
   asciiWords,
   cleanText,
   compileTerm,
   countriesNamedIn,
+  countrySpans,
   decodeEntities,
   donationWordsIn,
   foldText,
@@ -112,7 +136,8 @@ import {
   type PageCheck,
 } from "./donate";
 import type { DirectPage, ResearchEntry } from "./research";
-import type { Disaster, DisasterType, DonationLink } from "./types";
+import { splitScripts } from "./geocode";
+import type { Disaster, DisasterType, DonationLink, Place } from "./types";
 
 export const GOFUNDME_HOST = "www.gofundme.com";
 export const GOFUNDME_INDEX = "https://www.gofundme.com/c/act";
@@ -130,7 +155,7 @@ export const GOFUNDME_MAX_REQUESTS = 8;
 export const GOFUNDME_PAUSE_MS = 1_500;
 /** Fundraisers asked about in one feed request, as the crisis page's own script asks. */
 export const FEED_BATCH = 12;
-/** A crisis page that failed to load (an error, a bot wall, a server fault) is not asked for again for this many hours. */
+/** A crisis page, the index or a feed that failed to load (an error, a bot wall, a server fault) is not asked for again for this many hours. */
 export const FAILED_RETRY_HOURS = 12;
 /** A crisis page that is gone (404, 410) or moved to another slug is not asked for again for this many days. */
 export const GONE_RETRY_DAYS = 7;
@@ -196,16 +221,18 @@ const FOCUS_RANK: Record<Focus, number> = { schools: 0, homes: 1, other: 2 };
  * by the storm's name, the floods it brings: see stormAftermath).
  */
 const HAZARD_WORDS: readonly (readonly [string, readonly DisasterType[]])[] = [
-  ["earthquake earthquakes quake quakes seismic terremoto terremotos sismo sismos seisme deprem gempa", ["earthquake", "tsunami"]],
+  ["earthquake earthquakes quake quakes seismic terremoto terremotos sismo sismos seisme deprem gempa erdbeben lindol tetemeko cutremur", ["earthquake", "tsunami"]],
   ["tsunami tsunamis", ["tsunami", "earthquake"]],
-  ["hurricane hurricanes typhoon typhoons cyclone cyclones huracan huracanes tifon ouragan ciclon", ["cyclone", "storm"]],
-  ["storm storms tornado tornadoes tornados windstorm hailstorm tormenta tempete", ["storm", "cyclone"]],
-  ["flood floods flooding floodwaters inundacion inundaciones inondation inondations monsoon", ["flood"]],
-  ["landslide landslides mudslide mudslides", ["landslide"]],
-  ["wildfire wildfires fire fires bushfire bushfires incendio incendios", ["wildfire"]],
-  ["volcano volcanoes volcanic eruption eruptions", ["volcano"]],
-  ["drought droughts famine", ["drought"]],
-  ["heatwave heatwaves heat", ["heatwave"]],
+  ["hurricane hurricanes typhoon typhoons cyclone cyclones huracan huracanes tifon ouragan ciclon furacao uragano kimbunga bagyo bagyong topan siklon", ["cyclone", "storm"]],
+  ["storm storms tornado tornadoes tornados windstorm hailstorm tormenta tempete tempestade tempesta sturm orkan badai", ["storm", "cyclone"]],
+  ["flood floods flooding floodwaters inundacion inundaciones inondation inondations monsoon banjir enchente enchentes cheias inundacao inundacoes", ["flood"]],
+  ["alluvione alluvioni hochwasser uberschwemmung flut mafuriko powodz povodne inundatii riada riadas", ["flood"]],
+  ["landslide landslides mudslide mudslides deslizamiento deslizamientos deslizamento deslizamentos glissement longsor frana frane", ["landslide"]],
+  ["erdrutsch deslave derrumbe derrumbes huayco heyelan", ["landslide"]],
+  ["wildfire wildfires fire fires bushfire bushfires incendio incendios incendie incendies waldbrand kebakaran yangin queimadas", ["wildfire"]],
+  ["volcano volcanoes volcanic eruption eruptions volcan volcanes vulcao vulcano vulkan erupcion erupsi letusan", ["volcano"]],
+  ["drought droughts famine sequia secheresse kekeringan kemarau ukame durre kuraklik", ["drought"]],
+  ["heatwave heatwaves heat canicule hitzewelle", ["heatwave"]],
   ["coldwave cold winter", ["coldwave"]],
   ["blizzard blizzards snowstorm snowstorms", ["coldwave", "storm"]],
   ["sandstorm duststorm dust", ["dust"]],
@@ -215,8 +242,51 @@ const HAZARD_TYPES: ReadonlyMap<string, ReadonlySet<DisasterType>> = (() => {
   for (const [words, types] of HAZARD_WORDS) for (const w of words.split(" ")) map.set(w, new Set([...(map.get(w) ?? []), ...types]));
   return map;
 })();
-/** Words that come before a storm's name: "Hurricane Melissa", "Storm Boelo", "huracán Beryl". */
-const STORM_WORDS: ReadonlySet<string> = new Set("hurricane hurricanes typhoon typhoons cyclone cyclones huracan huracanes tifon ouragan ciclon storm storms tormenta tempete".split(" "));
+/**
+ * Hazards named in scripts written without the Latin alphabet, or in more
+ * than one word, by the English hazard word they stand for: 地震 and
+ * زلزال for an earthquake, น้ำท่วม for a flood, "tremblement de terre".
+ * Matched in folded text as donation words are (compileTerm: anywhere in
+ * scripts without spaces, else as whole words; "*" ends a stem).
+ */
+const LOCAL_HAZARD_TERMS: Readonly<Record<string, readonly string[]>> = {
+  earthquake: [
+    "地震", "지진", "แผ่นดินไหว", "ແຜ່ນດິນໄຫວ", "រញ្ជួយដី", "ငလျင်", "زلزال", "زلازل", "زلزله", "भूकंप", "भूकम्प", "ভূমিকম্প", "землетрясени*", "землетрус*", "σεισμ*",
+    "רעידת אדמה", "tremblement de terre", "trzęsienie ziemi", "động đất", "gempa bumi",
+  ],
+  tsunami: ["津波", "海啸", "海嘯", "쓰나미", "해일", "สึนามิ", "تسونامي", "सुनामी", "цунами"],
+  cyclone: ["台風", "台风", "颱風", "태풍", "ไต้ฝุ่น", "إعصار", "चक्रवात", "ঘূর্ণিঝড়", "ураган*", "тайфун*", "циклон*", "κυκλων*", "cơn bão", "siêu bão"],
+  storm: ["暴風", "风暴", "風暴", "폭풍", "พายุ", "عاصفة", "तूफान", "तूफ़ान", "буря", "шторм*", "καταιγ*"],
+  flood: [
+    "洪水", "水害", "豪雨", "浸水", "冠水", "大雨", "水灾", "洪灾", "内涝", "水災", "홍수", "수해", "침수", "폭우", "น้ำท่วม", "อุทกภัย", "ນ້ຳຖ້ວມ", "ទឹកជំនន់",
+    "ရေကြီး", "فيضان", "فيضانات", "سيول", "سیلاب", "बाढ़", "बाढ", "बाढी", "বন্যা", "наводнени*", "паводк*", "паводок", "повін*", "повен*", "πλημμυρ*", "שיטפון", "lũ lụt",
+    "ngập lụt",
+  ],
+  landslide: [
+    "土砂崩れ", "土砂災害", "山崩れ", "がけ崩れ", "滑坡", "泥石流", "산사태", "ดินถล่ม", "انهيار أرضي", "انهيارات أرضية", "भूस्खलन", "पहिरो", "ভূমিধস", "оползн*", "оползень", "κατολισθ*",
+    "sạt lở", "tanah longsor", "glissement de terrain",
+  ],
+  wildfire: [
+    "山火事", "林野火災", "森林火灾", "森林火災", "山火", "산불", "ไฟป่า", "حرائق", "حريق", "डढेलो", "দাবানল", "пожар*", "πυρκαγι*", "שריפ*", "kebakaran hutan", "incendio forestal",
+    "incendios forestales", "orman yangını",
+  ],
+  volcano: ["噴火", "火山", "화산", "ภูเขาไฟ", "بركان", "ज्वालामुखी", "вулкан*", "ηφαιστει*", "gunung api"],
+  drought: ["干ばつ", "干旱", "旱灾", "旱災", "가뭄", "ภัยแล้ง", "جفاف", "सूखा", "খরা", "засух*", "ξηρασι*"],
+  heatwave: ["熱波", "猛暑", "热浪", "熱浪", "폭염", "คลื่นความร้อน", "موجة حر", "लू", "жара", "καυσων*", "ola de calor", "onda de calor", "vague de chaleur"],
+  coldwave: ["寒波", "寒潮", "한파", "ภัยหนาว", "موجة برد", "शीत लहर", "ola de frío", "vague de froid", "onda de frio"],
+  dust: ["沙尘暴", "砂嵐", "黄砂", "황사", "عاصفة ترابية", "عاصفة رملية"],
+};
+const COMPILED_HAZARD_TERMS: readonly { word: string; term: ReturnType<typeof compileTerm> }[] = Object.entries(LOCAL_HAZARD_TERMS).flatMap(([word, terms]) =>
+  terms.map((t) => ({ word, term: compileTerm(t) })),
+);
+
+/** The English hazard words for the hazards a text names in other scripts or in several words ("ช่วยน้ำท่วมเชียงราย" -> ["flood"]), each once. */
+export function hazardWordsIn(text: string): string[] {
+  const t = foldText(text);
+  const out = new Set<string>();
+  for (const { word, term } of COMPILED_HAZARD_TERMS) if (t.includes(term.needle) && term.re.test(t)) out.add(word);
+  return [...out];
+}
 
 /** Whether words name a hazard, and whether it can be this type: "none", "fits" or "other". */
 export function hazardFit(words: readonly string[], type: DisasterType): "none" | "fits" | "other" {
@@ -255,14 +325,31 @@ const STORM_FOLLOWERS: ReadonlySet<string> = new Set(
 );
 
 /**
+ * The storms a disaster's title names: each place word of the title
+ * (eventWords) that follows a storm word, and their other names
+ * (stormNames: PAGASA's "tino" for Typhoon Kalmaegi). "Hurricane Melissa"
+ * -> ["melissa"]; "Philippines: Southwest Monsoon enhanced by Tropical
+ * Cyclones Maymay and Dolphin" -> ["maymay"]; "Flood in Poland" -> [].
+ */
+export function disasterStorms(ctx: Pick<DonationContext, "eventWords" | "title" | "stormNames">): string[] {
+  const place = new Set(ctx.eventWords ?? []);
+  const words = asciiWords(ctx.title ?? "");
+  return [...new Set([...words.filter((w, i) => i > 0 && STORM_WORDS.has(words[i - 1]) && place.has(w)), ...(ctx.stormNames ?? [])])];
+}
+
+/**
  * The name of a storm the words name that is not the disaster's: a storm
  * word ("hurricane", "storm", "huracan") followed by a word of three or
  * more letters that is no place word of the disaster's title, no country's
  * name, no hazard or generic word and no word that follows storms
  * ("relief", "season"). ["hurricane", "beryl"] for Hurricane Melissa ->
- * "beryl"; null when there is none.
+ * "beryl"; null when there is none. Only a storm (type cyclone or storm),
+ * or a disaster whose title names a storm (disasterStorms), has another
+ * storm: for "Flood in Poland", "Storm Boris flood relief" names the storm
+ * that brought the flood.
  */
-export function otherStorm(words: readonly string[], ctx: Pick<DonationContext, "countryNameIndex" | "eventWords">): string | null {
+export function otherStorm(words: readonly string[], ctx: MatchContext, type?: DisasterType): string | null {
+  if (type !== "cyclone" && type !== "storm" && disasterStorms(ctx).length === 0) return null;
   const title = new Set(ctx.eventWords ?? []);
   for (let i = 0; i + 1 < words.length; i++) {
     if (!STORM_WORDS.has(words[i])) continue;
@@ -279,6 +366,128 @@ export function slugWords(text: string): string[] {
   return foldText(text).split(/[^a-z0-9]+/).filter(Boolean);
 }
 
+/** What the matching rules read of a disaster's allowlist context: every country's names, its title, the title's place words and its storms' other names. */
+export type MatchContext = Pick<DonationContext, "countryNameIndex" | "eventWords" | "title" | "stormNames">;
+
+/**
+ * Words before a year that say when a group began or was registered, not
+ * when a disaster struck, in folded text: "since 1952", "est. 1998",
+ * "fundada en 1985", "Reg. 1995", Indonesian "sejak 1990", Swahili "tangu
+ * 1990", Tagalog "itinatag noong 1990", Turkish "kuruluş 1990", Russian
+ * "основан в 1990", Arabic "منذ 1990" and "تأسست عام 1990", Hindi and
+ * Nepali "स्थापना 1990".
+ */
+const FOUNDED_BEFORE: readonly string[] = [
+  "since", "serving\\s+since", "est", "estd", "established", "founded", "desde", "depuis", "seit", "fondee?", "fundad[ao]", "cread[ao]", "gegrundet",
+  "reg", "regd", "registered(?:\\s+(?:charity|society|trust|ngo|nonprofit|non-profit))?(?:\\s+(?:no|number|nr))?", "registration(?:\\s+(?:no|number))?",
+  "sejak(?:\\s+tahun)?", "berdiri(?:\\s+sejak)?(?:\\s+tahun)?", "didirikan(?:\\s+pada)?(?:\\s+tahun)?", "ditubuhkan(?:\\s+pada)?(?:\\s+tahun)?",
+  "tangu(?:\\s+mwaka)?", "ilianzishwa(?:\\s+mwaka)?", "itinatag(?:\\s+noong)?", "mula\\s+noong", "kurulus(?:\\s+yili)?", "thanh\\s+lap(?:\\s+nam)?",
+  "tu\\s+nam", "основан[аоы]?(?:\\s+в)?", "с", "منذ(?:\\s+(?:عام|سنة))?", "تاسست?(?:\\s+(?:عام|سنة|في))?", "स्थापना(?:\\s+वर्ष)?", "स्थापित",
+];
+/** The same in scripts written without spaces, with or without one before the year: Japanese 設立 and 創立, Thai ตั้งแต่ปี and ก่อตั้ง. */
+const FOUNDED_BEFORE_CLOSE: readonly string[] = ["設立", "創立", "創業", "ตั้งแต่(?:ปี)?", "ก่อตั้ง(?:ขึ้น)?(?:เมื่อ)?(?:ปี)?"];
+/** Words after a year that say the same: Japanese "1990年設立", Turkish "1990 yılından beri" and "1990'dan beri", Nepali "2047 सालमा स्थापित". */
+const FOUNDED_AFTER: readonly string[] = [
+  "\\s*年\\s*(?:に)?(?:設立|創立|創業|開設)", "\\s*(?:yilindan\\s+beri|yilinda\\s+kuruldu)", "\\s*['’]?(?:dan|den|tan|ten)\\s+beri", "\\s*(?:मा|में)\\s*(?:स्थापित|स्थापना)",
+  "\\s*(?:सालमा|साल\\s+मा)\\s*स्थापित", "\\s*(?:года|г\\.)?\\s*основан",
+];
+const YEAR_RE = "(?:19|20)\\d\\d";
+const FOUNDED_YEAR = new RegExp(
+  [
+    `(?<![\\p{L}\\p{M}\\p{N}])(?:${FOUNDED_BEFORE.join("|")})\\.?\\s*(?::\\s*)?(?:(?:in|en|em|el|le|im|pada|tahun|noong|nam|в|عام|سنة)\\s+)?${YEAR_RE}(?!\\p{N})`,
+    `(?:${FOUNDED_BEFORE_CLOSE.join("|")})\\s*(?:พ\\.?\\s*ศ\\.?\\s*)?${YEAR_RE}(?!\\p{N})`,
+    `(?<!\\p{N})${YEAR_RE}(?:${FOUNDED_AFTER.join("|")})`,
+  ].join("|"),
+  "gu",
+);
+/** A season, financial year or programme that runs across years: "2025-26", "2025/2026", "2025–2027". */
+const YEAR_SPAN = /(?<![a-z0-9])((?:19|20)\d\d)\s*[-/–—]\s*((?:19|20)?\d\d)(?![a-z0-9])/g;
+
+/** The zero of each script whose digits pages write years in: Arabic-Indic, Persian, Devanagari, Bengali, Thai, Lao, Khmer, Myanmar and full-width. */
+const DIGIT_ZEROS: readonly number[] = [0x0660, 0x06f0, 0x0966, 0x09e6, 0x0e50, 0x0ed0, 0x17e0, 0x1040, 0xff10];
+const OTHER_DIGITS = /[\u0660-\u0669\u06f0-\u06f9\u0966-\u096f\u09e6-\u09ef\u0e50-\u0e59\u0ed0-\u0ed9\u17e0-\u17e9\u1040-\u1049\uff10-\uff19]/g;
+
+/** A text with its digits in other scripts written as ASCII digits: "भूकम्प २०७२" -> "भूकम्प 2072". */
+export function asciiDigits(text: string): string {
+  return text.replace(OTHER_DIGITS, (ch) => {
+    const cp = ch.codePointAt(0) as number;
+    return String(cp - (DIGIT_ZEROS.find((z) => cp >= z && cp <= z + 9) ?? cp));
+  });
+}
+
+/** Japan's eras by the year before their first: 令和元年 is 2019, 平成元年 1989, 昭和元年 1926. */
+const ERAS: Readonly<Record<string, number>> = { 令和: 2018, 平成: 1988, 昭和: 1925 };
+const KANJI_DIGITS = "一二三四五六七八九";
+
+/** An era's year as written: "元" (its first), "6", "六", "十二", "二十"; null when it reads as none. */
+function eraNumber(s: string): number | null {
+  if (s === "元") return 1;
+  if (/^\d{1,2}$/.test(s)) return Number(s);
+  const digit = (c?: string) => (c ? KANJI_DIGITS.indexOf(c) + 1 : 0);
+  const m = /^([一二三四五六七八九])?(十)?([一二三四五六七八九])?$/.exec(s);
+  if (!m || !s) return null;
+  if (!m[2]) return m[1] && !m[3] ? digit(m[1]) : null;
+  return (m[1] ? digit(m[1]) : 1) * 10 + digit(m[3]);
+}
+
+/**
+ * A text with years of other calendars written as the latest Gregorian
+ * year they can be (so a year that fits the disaster is never read as an
+ * older one): digits in other scripts as ASCII; Japanese era years
+ * (令和6年 -> 2024年, 平成7年 -> 1995年); on pages in Thai, Lao or Khmer
+ * script, Buddhist Era years (2567 -> 2024); and on pages in Devanagari,
+ * Nepal's Bikram Sambat years, which run 56 to 57 years ahead (२०७२, the
+ * Gorkha earthquake's year, -> 2016; no Gregorian year a page gives for an
+ * event is that far ahead).
+ */
+export function gregorianYears(text: string): string {
+  let t = asciiDigits(text).replace(/(令和|平成|昭和)\s*(元|\d{1,2}|[一二三四五六七八九十]{1,3})\s*年/g, (m, era: string, n: string) => {
+    const year = eraNumber(n);
+    return year === null ? m : `${ERAS[era] + year}年`;
+  });
+  if (/[\u0e00-\u0eff\u1780-\u17ff]/.test(t)) t = t.replace(/(?<!\d)(25\d\d)(?!\d)/g, (m, y: string) => String(Number(y) - 543));
+  if (/[\u0900-\u097f]/.test(t)) t = t.replace(/(?<!\d)(20[4-9]\d)(?!\d)/g, (m, y: string) => String(Number(y) - 56));
+  return t;
+}
+
+/**
+ * The years a text gives for an event, as four-digit Gregorian numbers
+ * (other calendars and scripts read by gregorianYears): a founding or
+ * registration year ("since 1952", "est. 1998", "sejak 1990", "1990年設立")
+ * is no event's, and a span of up to five years ("2025-26 Bushfire Appeal",
+ * "Recovery 2025–2027") counts as its last. "Hurricane Relief 2024" ->
+ * [2024]; "บริจาคช่วยน้ำท่วม 2567" -> [2024]; "令和6年能登半島地震" -> [2024].
+ */
+export function eventYearsIn(text: string): number[] {
+  const t = foldText(gregorianYears(text))
+    .replace(FOUNDED_YEAR, " ")
+    .replace(YEAR_SPAN, (m, a: string, b: string) => {
+      const start = Number(a);
+      const end = b.length === 2 ? Math.floor(start / 100) * 100 + Number(b) : Number(b);
+      return end > start && end - start <= 5 ? ` ${end} ` : m;
+    });
+  return [...t.matchAll(/(?<![a-z0-9])(?:19|20)\d\d(?![a-z0-9])/g)].map((m) => Number(m[0]));
+}
+
+/** A URL path as words can be read from it: escapes undone, and segments that are only a number ("/node/2019", a record's number, not a year) left out. */
+export function readablePath(url: string): string {
+  let path: string;
+  try {
+    path = decodeURIComponentSafe(new URL(url).pathname);
+  } catch {
+    return "";
+  }
+  return path
+    .split("/")
+    .filter((seg) => !/^\d+$/.test(seg))
+    .join("/");
+}
+
+/** What texts name: their folded words and numbers, and the hazards they name in other scripts or in several words (hazardWordsIn). */
+function readTexts(texts: readonly string[]): { words: string[]; hazards: string[] } {
+  return { words: texts.flatMap((t) => slugWords(t)), hazards: [...new Set(texts.flatMap(hazardWordsIn))] };
+}
+
 /** What a run of words says about a disaster (see hubMatches and globalGivingProblem). */
 interface Reading {
   /** It names a country that is not one of the disaster's. */
@@ -291,9 +500,44 @@ interface Reading {
   titlePlace: boolean;
 }
 
-function readWords(words: readonly string[], countries: readonly string[], ctx: Pick<DonationContext, "countryNameIndex" | "eventWords">): Reading {
+/**
+ * Countries whose names are a disaster country's place names too: for a
+ * disaster in the United States, Georgia and Jersey ("South Georgia",
+ * "the Jersey Shore") are its states' names, so a page that names them
+ * names no other country.
+ */
+const STATE_NAMES: Readonly<Record<string, readonly string[]>> = { US: ["GE", "JE"] };
+
+/** The countries a disaster's pages may name as their own, and the countries whose names are the disaster's states' (STATE_NAMES). */
+function ownCodes(countries: readonly string[]): { own: Set<string>; states: Set<string> } {
   const own = new Set(countries.map((c) => c.toUpperCase()));
-  const named = ctx.countryNameIndex ? countriesNamedIn([...words], ctx.countryNameIndex) : [];
+  return { own, states: new Set([...own].flatMap((c) => STATE_NAMES[c] ?? [])) };
+}
+
+/**
+ * The keys of the country names inside a disaster's own place names (its
+ * places, their provinces, their own names and its title's places), which
+ * name no other country: "Panama City" holds "panama", "Jersey Shore
+ * Region" holds "jersey".
+ */
+function placeKeys(places: readonly string[], index: Record<string, string[]> | undefined): Set<string> {
+  if (!index) return new Set();
+  return new Set(places.flatMap((p) => countrySpans(asciiWords(p), index).map((s) => s.key)));
+}
+
+/**
+ * What a run of words says of a disaster's countries and its title's
+ * places. A country's name inside one of the disaster's own place names
+ * (ownPlaces: "Panama City" for a Florida hurricane) and, for a disaster
+ * in the United States, Georgia and Jersey (STATE_NAMES) are not read as
+ * countries.
+ */
+function readWords(words: readonly string[], countries: readonly string[], ctx: MatchContext, ownPlaces: readonly string[] = []): Reading {
+  const { own, states } = ownCodes(countries);
+  const skip = placeKeys(ownPlaces, ctx.countryNameIndex);
+  const named = (ctx.countryNameIndex ? countrySpans(words, ctx.countryNameIndex) : [])
+    .filter((s) => !skip.has(s.key) && !(s.codes.some((c) => states.has(c)) && !s.codes.some((c) => own.has(c))))
+    .map((s) => s.codes);
   const foreign = named.some((codes) => !codes.some((c) => own.has(c)));
   const title = new Set(ctx.eventWords ?? []);
   const places = words.filter((w) => /^[a-z]{3,}$/.test(w) && !NOT_EVENT_WORDS.has(w) && !HUB_FILLER.has(w));
@@ -305,6 +549,228 @@ function readWords(words: readonly string[], countries: readonly string[], ctx: 
   };
 }
 
+/** A disaster's own place names, as readWords and foreignCountryIn leave them be: its places' names and provinces. */
+function disasterPlaceNames(d: Partial<Pick<Disaster, "places">>): string[] {
+  return (d.places ?? []).flatMap((p) => [p.name, p.admin ?? ""]).filter(Boolean);
+}
+
+// ---------------------------------------------------------------------------
+// Country names in other languages
+// ---------------------------------------------------------------------------
+
+/** Languages every local page is read in for other countries' names, besides its disaster's countries' own. */
+export const FOREIGN_NAME_LANGUAGES: readonly string[] = ["es", "fr", "pt", "ar", "id", "tr", "ru", "zh", "ja", "th", "de", "it"];
+
+/** A country's main language as CLDR has it ("MA" -> "ar", "TW" -> "zh-Hant"); null when it has none. */
+function mainLanguage(code: string): string | null {
+  try {
+    const locale = new Intl.Locale(`und-${code}`).maximize();
+    return locale.script && locale.language === "zh" ? `${locale.language}-${locale.script}` : locale.language;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * The languages a disaster's local pages are read in for other countries'
+ * names: each of its countries' press language (pipeline/config/
+ * languages.json) and main language, then FOREIGN_NAME_LANGUAGES; only
+ * those the runtime names countries in, each once.
+ */
+export function nameLanguages(countries: readonly string[], pressLanguages: Readonly<Record<string, string>> = {}): string[] {
+  const out: string[] = [];
+  const add = (lang: string | null | undefined) => {
+    const l = (lang ?? "").trim();
+    if (!l || out.includes(l)) return;
+    try {
+      if (Intl.DisplayNames.supportedLocalesOf([l]).length > 0) out.push(l);
+    } catch {
+      // not a language tag
+    }
+  };
+  for (const c of countries) {
+    add(Object.hasOwn(pressLanguages, c) ? pressLanguages[c] : null);
+    add(mainLanguage(c));
+  }
+  FOREIGN_NAME_LANGUAGES.forEach(add);
+  return out;
+}
+
+/**
+ * Text as country names are matched in it: folded (foldText), Arabic and
+ * Persian letters in one spelling (ٱ as ا, ى and ی as ي, ک as ك, a last ة as
+ * ا: سورية and سوريا), Japanese ・ dropped, and apostrophes, hyphens, dots and
+ * other punctuation as spaces.
+ */
+export function nameText(text: string): string {
+  return foldText(text)
+    .replace(/ٱ/g, "ا")
+    .replace(/[ىی]/g, "ي")
+    .replace(/ک/g, "ك")
+    .replace(/ة(?![\p{L}\p{M}])/gu, "ا")
+    .replace(/[ـ・]/g, "")
+    .replace(/[’'`´‐‑–—\-_/\\.,:;!?()（）［］[\]{}|"«»“”„]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * Countries' names that are also common words, people's or places' names
+ * in other countries, as nameText writes them, which are never read as
+ * countries: Maurice and Dominique (first names, and French for Mauritius
+ * and Dominica), Granada and Franca (cities in Spain and Brazil), German
+ * Island (Iceland) and French Chili (Chile), which English pages use as
+ * words ("island families", a church's chili supper), equateur
+ * and equador (the equator), Portuguese ira (anger) and fãs (fans), gana
+ * (Spanish "wins"), Turkish cad (street) and cin, Somali (a people and
+ * Ethiopia's Somali Region), Arabic and Persian مالي (financial), Russian
+ * того ("of that"), Thai มาลี and ชาด, Hindi माली (gardener), and Korean
+ * words such as 수단 (means), 이란 and 인도 (인도적, humanitarian).
+ */
+const NOT_COUNTRY_NAMES: ReadonlySet<string> = new Set([
+  "maurice", "mauricio", "mauricia", "dominique", "granada", "grenade", "equateur", "equador", "franca", "ira", "fas", "gana", "cad", "cin", "somali",
+  "island", "chili",
+  "مالي", "того", "มาลี", "ชาด", "माली", "가나", "말리", "수단", "이란", "오만", "피지", "인도",
+]);
+/** Saints' names, which countless churches, schools and towns bear: "Saint-Martin", "Santa Lucía", "São Tomé", "セントルシア". */
+const SAINT_NAME = /^(?:saint|sainte|san|santa|santo|sao|st|sankt|sint|sv|سان|سانت|セント|サン|세인트|생|圣|聖|เซนต์|सेंट|सेन्ट|сен|сент|санкт|о в)(?:\s|$|(?=[\p{Script=Katakana}\p{Script=Han}\p{Script=Hangul}\p{Script=Thai}]))/u;
+/** Lookarounds for names that are part of other words: 中国地方 (western Japan), インド洋 (the Indian Ocean), ลาวา (lava). */
+const NAME_EXCEPTIONS: Readonly<Record<string, { before?: string; after?: string }>> = {
+  中国: { after: "地方|四国|山地|地域|自動車道|電力|新聞" },
+  インド: { after: "洋" },
+  印度: { after: "洋" },
+  ลาว: { after: "า" },
+  อินเดีย: { before: "มหาสมุทร" },
+};
+
+/** One country's name in another language, compiled. */
+interface CountryName {
+  /** As nameText writes it. */
+  name: string;
+  codes: string[];
+  needle: string;
+  re: RegExp;
+}
+
+const NO_SPACE_SCRIPTS = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Hangul}\p{Script=Thai}\p{Script=Lao}\p{Script=Khmer}\p{Script=Myanmar}]/u;
+
+function escapeName(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\/]/g, "\\$&");
+}
+
+/**
+ * The regex for one name, by its script: anywhere in Chinese, Japanese,
+ * Korean, Thai and the like (Katakana between other letters than
+ * Katakana: タイ is Thailand, タイトル a title); in Arabic script as a
+ * whole word with its prefixes (و ف ب ك ل: بالمغرب, للمغرب); in Cyrillic
+ * with a case ending (Турции); else as a whole word.
+ */
+function compileName(name: string): { needle: string; re: RegExp } {
+  const ex = NAME_EXCEPTIONS[name] ?? {};
+  const before = ex.before ? `(?<!${ex.before})` : "";
+  const after = ex.after ? `(?!${ex.after})` : "";
+  const body = escapeName(name);
+  if (/^[\p{Script=Katakana}ー\s]+$/u.test(name)) return { needle: name, re: new RegExp(`(?<![\\p{Script=Katakana}ー])${before}${body}${after}(?![\\p{Script=Katakana}ー])`, "gu") };
+  if (NO_SPACE_SCRIPTS.test(name)) return { needle: name, re: new RegExp(`${before}${body}${after}`, "gu") };
+  if (/\p{Script=Arabic}/u.test(name)) {
+    const core = name.startsWith("ال") ? `(?:${body}|ل${escapeName(name.slice(1))})` : body;
+    return { needle: name.replace(/^ال/, ""), re: new RegExp(`(?<![\\p{L}\\p{M}])(?:[وف])?(?:[بكل])?${core}(?![\\p{L}\\p{M}])`, "gu") };
+  }
+  if (/\p{Script=Cyrillic}/u.test(name) && [...name].length >= 5) {
+    const stem = /[ая]$/.test(name) ? name.slice(0, -1) : name;
+    return { needle: stem, re: new RegExp(`(?<![\\p{L}\\p{M}\\p{N}])${escapeName(stem)}[а-яё]{0,2}(?![\\p{L}\\p{M}\\p{N}])`, "gu") };
+  }
+  return { needle: name, re: new RegExp(`(?<![\\p{L}\\p{M}\\p{N}])${before}${body}${after}(?![\\p{L}\\p{M}\\p{N}])`, "gu") };
+}
+
+const countryNameCache = new Map<string, CountryName[]>();
+
+/**
+ * Every country's name in these languages, from the runtime's CLDR data
+ * (Intl.DisplayNames), compiled once per set of languages: "Algérie" and
+ * "الجزائر" for Algeria, "Turquía" and "トルコ" for Turkey. A name is read
+ * up to its first bracket, comma or " - " ("Congo - Kinshasa" -> "Congo",
+ * so both Congos share it), and its bracketed name too when no country
+ * has that one ("Myanmar (Birmanie)" -> "Birmanie"). Left out: names the
+ * English index already reads (countryNameIndex: "Georgia", "Panamá",
+ * "Jersey", whose rules for a disaster's own states and places apply),
+ * Latin names shorter than four letters, saints' names (SAINT_NAME) and
+ * names that are common words or names elsewhere (NOT_COUNTRY_NAMES). A
+ * name two countries share names both.
+ */
+export function countryNamesIn(languages: readonly string[], index: Record<string, string[]>): CountryName[] {
+  const codes = [...new Set(Object.values(index).flat())].filter((c) => /^[A-Z]{2}$/.test(c)).sort();
+  const key = `${languages.join(",")}|${codes.join(",")}`;
+  const cached = countryNameCache.get(key);
+  if (cached) return cached;
+  const mains = new Map<string, Set<string>>();
+  const brackets: [string, string][] = [];
+  for (const lang of languages) {
+    let names: Intl.DisplayNames;
+    try {
+      names = new Intl.DisplayNames([lang], { type: "region", fallback: "none" });
+    } catch {
+      continue;
+    }
+    for (const code of codes) {
+      const raw = names.of(code) ?? "";
+      const main = raw.split(/\s*[(（,，]/)[0].split(/\s+[-–—]\s+/)[0].trim();
+      if (main) mains.set(main, new Set([...(mains.get(main) ?? []), code]));
+      const inner = /[(（]([^)）]+)[)）]/.exec(raw)?.[1]?.trim();
+      if (inner) brackets.push([inner, code]);
+    }
+  }
+  const byName = new Map<string, Set<string>>();
+  const add = (raw: string, list: Iterable<string>) => {
+    const name = nameText(raw);
+    if (!name || NOT_COUNTRY_NAMES.has(name) || SAINT_NAME.test(name)) return;
+    if (/^[a-z ]+$/.test(name)) {
+      const joined = name.replace(/ /g, "");
+      if (joined.length < 4 || Object.hasOwn(index, joined)) return;
+    }
+    byName.set(name, new Set([...(byName.get(name) ?? []), ...list]));
+  };
+  for (const [name, list] of mains) add(name, list);
+  const mainNames = new Set([...mains.keys()].map(nameText));
+  for (const [inner, code] of brackets) if ([...nameText(inner)].length >= 4 && !mainNames.has(nameText(inner))) add(inner, [code]);
+  const out = [...byName].map(([name, list]) => ({ name, codes: [...list], ...compileName(name) }));
+  countryNameCache.set(key, out);
+  return out;
+}
+
+/** What foreignCountryIn reads of a disaster: its countries, every country's names and its storms. */
+export type ForeignContext = Pick<DonationContext, "countries" | "countryNameIndex">;
+
+/**
+ * The first name of another country than the disaster's that texts give
+ * in another language (countryNamesIn: "Faites un don pour le séisme en
+ * Algérie" for an earthquake in Morocco, "تبرع لضحايا زلزال تركيا وسوريا"),
+ * or null. The longest name wins ("Soudan du Sud" names South Sudan, not
+ * Sudan); a name inside one of the disaster's own place names (ownPlaces)
+ * names none, nor, for a disaster in the United States, Georgia's or
+ * Jersey's (STATE_NAMES).
+ */
+export function foreignCountryIn(texts: readonly string[], ctx: ForeignContext, languages: readonly string[], ownPlaces: readonly string[] = []): string | null {
+  if (!ctx.countryNameIndex) return null;
+  const text = nameText(texts.join(" | "));
+  if (!text) return null;
+  const { own, states } = ownCodes(ctx.countries);
+  const places = ownPlaces.map(nameText).filter(Boolean);
+  const found: { start: number; end: number; name: CountryName }[] = [];
+  for (const name of countryNamesIn(languages, ctx.countryNameIndex)) {
+    if (!text.includes(name.needle)) continue;
+    for (const m of text.matchAll(name.re)) found.push({ start: m.index, end: m.index + m[0].length, name });
+  }
+  const inside = (a: (typeof found)[number], b: (typeof found)[number]) => a !== b && b.start <= a.start && a.end <= b.end && b.end - b.start > a.end - a.start;
+  for (const f of found.sort((a, b) => a.start - b.start)) {
+    if (found.some((o) => inside(f, o))) continue;
+    const { name, codes } = f.name;
+    if (codes.some((c) => own.has(c)) || codes.every((c) => states.has(c)) || places.some((p) => p.includes(name))) continue;
+    return name;
+  }
+  return null;
+}
+
 // ---------------------------------------------------------------------------
 // GoFundMe: URLs
 // ---------------------------------------------------------------------------
@@ -312,6 +778,24 @@ function readWords(words: readonly string[], countries: readonly string[], ctx: 
 /** True for www.gofundme.com or gofundme.com over https, without credentials or port. */
 function onGoFundMe(url: URL): boolean {
   return url.protocol === "https:" && (url.hostname === GOFUNDME_HOST || url.hostname === "gofundme.com") && !url.username && !url.password && !url.port;
+}
+
+/**
+ * Where a crisis page's redirect leads when it stays on GoFundMe's crisis
+ * pages: the slug, and the URL to ask for. A page in another language
+ * ("/en-gb/c/act/<slug>") or with a trailing slash counts; null for
+ * anything else.
+ */
+export function hubRedirect(location: string, from: string): { slug: string; url: string } | null {
+  let url: URL;
+  try {
+    url = new URL(location.trim(), from);
+  } catch {
+    return null;
+  }
+  if (!onGoFundMe(url)) return null;
+  const m = /^(?:\/[a-z]{2}(?:-[a-z]{2})?)?\/c\/act\/([a-z0-9-]{1,120})\/?$/.exec(url.pathname);
+  return m && HUB_SLUG.test(m[1]) ? { slug: m[1], url: url.toString() } : null;
 }
 
 /** The slug of a crisis page URL ("https://www.gofundme.com/c/act/hurricane-melissa" -> "hurricane-melissa"); null for anything else, a page in another language among them. */
@@ -603,6 +1087,8 @@ export interface GoFundMeHub extends HubPage {
   fetched: string | null;
   /** When the feed was last read for it; null until it has been. */
   feedFetched: string | null;
+  /** When the feed last failed for it (an error, a refusal, an answer that is not JSON), since it was last read; missing or null when it has not. */
+  feedFailed?: string | null;
   /** When it was last on the index or found by research. */
   seen: string;
   /** The last request that did not read it, since it was last read; null when there is none. */
@@ -610,13 +1096,13 @@ export interface GoFundMeHub extends HubPage {
 }
 
 export interface GoFundMeCache {
-  /** GoFundMe's index of current crises: when last read, and the pages it listed. */
-  index: { fetched: string | null; slugs: string[] };
+  /** GoFundMe's index of current crises: when last read, the pages it listed, and when it last failed since (missing or null when it has not). */
+  index: { fetched: string | null; slugs: string[]; failed?: string | null };
   hubs: Record<string, GoFundMeHub>;
 }
 
 export function emptyGoFundMeCache(): GoFundMeCache {
-  return { index: { fetched: null, slugs: [] }, hubs: {} };
+  return { index: { fetched: null, slugs: [], failed: null }, hubs: {} };
 }
 
 function time(v: unknown): string | null {
@@ -644,7 +1130,7 @@ function cachedFailure(v: unknown): HubFailure | null {
 export function normaliseGoFundMeCache(raw: unknown): GoFundMeCache {
   const cache = emptyGoFundMeCache();
   if (!isObject(raw)) return cache;
-  if (isObject(raw.index)) cache.index = { fetched: time(raw.index.fetched), slugs: stringList(raw.index.slugs, (s) => HUB_SLUG.test(s)) };
+  if (isObject(raw.index)) cache.index = { fetched: time(raw.index.fetched), slugs: stringList(raw.index.slugs, (s) => HUB_SLUG.test(s)), failed: time(raw.index.failed) };
   if (!isObject(raw.hubs)) return cache;
   for (const [slug, h] of Object.entries(raw.hubs)) {
     if (!HUB_SLUG.test(slug) || !isObject(h) || !time(h.seen)) continue;
@@ -663,6 +1149,7 @@ export function normaliseGoFundMeCache(raw: unknown): GoFundMeCache {
       fundraisers: cachedFundraisers(h.fundraisers),
       fetched: time(h.fetched),
       feedFetched: time(h.feedFetched),
+      feedFailed: time(h.feedFailed),
       seen: String(h.seen),
       failure: cachedFailure(h.failure),
     };
@@ -707,26 +1194,41 @@ export interface RefreshGoFundMeOptions {
 
 /** A crisis page known only by its slug. */
 export function blankHub(slug: string, seen: string): GoFundMeHub {
-  return { slug, title: "", verified: false, slugs: [], listed: 0, fund: null, partners: [], published: null, fundraisers: [], fetched: null, feedFetched: null, seen, failure: null };
+  return { slug, title: "", verified: false, slugs: [], listed: 0, fund: null, partners: [], published: null, fundraisers: [], fetched: null, feedFetched: null, feedFailed: null, seen, failure: null };
+}
+
+/**
+ * True for a 200 answer that reads as the crisis page: it dates itself in
+ * its JSON-LD, and it still lists verified fundraisers when it listed some
+ * before. A bot wall or a maintenance page answering 200 does neither, and
+ * is taken as a failure, so the page keeps its data.
+ */
+export function isHubPage(page: Pick<HubPage, "published" | "listed">, before: Pick<HubPage, "listed">): boolean {
+  return page.published !== null && (page.listed > 0 || before.listed === 0);
 }
 
 /**
  * Refreshes the GoFundMe cache with at most maxRequests requests, a pause
  * of at least a second between them, with the pipeline's user agent:
- *   1. the index, when it was read 12 hours ago or more;
+ *   1. the index, when it was read 12 hours ago or more and has not
+ *      failed in the last 12 hours;
  *   2. each crisis page a disaster wants (wanted), the index's first: the
  *      page when it was never read or read 12 hours ago or more, then
  *      right away the feed for its fundraisers, when the page says they
  *      are verified, it still belongs to the disaster and the feed was
- *      read 12 hours ago or more;
+ *      read 12 hours ago or more and has not failed in the last 12;
  *   3. then the other pages: those never read, then those read 7 days ago
  *      or more.
- * A page that failed is not asked for again for 12 hours, one that is
- * gone (404, 410) or moved for 7 days (failureHolds); a failure keeps the
+ * A page that failed (an error, a refusal, or a 200 that is no crisis
+ * page: isHubPage) is not asked for again for 12 hours, one that is gone
+ * (404, 410) or moved for 7 days (failureHolds); a failure keeps the
  * page's previous data, a page that is gone or moved loses it. A redirect
- * to another crisis page (www.gofundme.com/c/act/<slug>) is followed: the
- * new page is read next. Pages neither on the index nor found by research
- * for 30 days, and wanted by no disaster, are forgotten. Never throws.
+ * to another crisis page (www.gofundme.com/c/act/<slug>, in any of its
+ * languages) is followed: the new page is read next; a redirect to the
+ * same page at another address (a trailing slash, a language) is
+ * followed at once, at most three times. Pages neither on the index nor
+ * found by research for 30 days, and wanted by no disaster, are
+ * forgotten. Never throws.
  */
 export async function refreshGoFundMe(prev: GoFundMeCache, deps: FetchDeps, now: string, opts: RefreshGoFundMeOptions = {}): Promise<GoFundMeCache> {
   const cache: GoFundMeCache = { index: { ...prev.index }, hubs: { ...prev.hubs } };
@@ -760,59 +1262,72 @@ export async function refreshGoFundMe(prev: GoFundMeCache, deps: FetchDeps, now:
   // Reads one crisis page; returns the slug of the crisis page it moved to, if any.
   const readPage = async (slug: string): Promise<string | null> => {
     const h = cache.hubs[slug];
-    const res = await get(hubUrl(slug), "text/html");
-    if (!res) return null;
-    if (res.status === 200) {
-      const page = parseHub(res.text);
-      // Names already read stay while the page still lists them.
-      const kept = new Set([...page.slugs, ...(page.fund ? [fundraiserSlugOf(page.fund)] : [])]);
-      cache.hubs[slug] = { ...h, ...page, fundraisers: h.fundraisers.filter((f) => kept.has(f.slug)), fetched: now, failure: null };
-      deps.log(`GoFundMe: read ${slug} ("${page.title}", published ${page.published ?? "on no date"}, ${page.listed} verified fundraisers, ${page.partners.length} partners)`);
-      return null;
-    }
-    let target: string | null = null;
-    if (res.status >= 300 && res.status < 400 && res.location) {
-      try {
-        target = hubSlugOf(new URL(res.location, hubUrl(slug)).toString());
-      } catch {
-        target = null;
+    let url = hubUrl(slug);
+    for (let hop = 0; ; hop++) {
+      const res = await get(url, "text/html");
+      if (!res) return null;
+      if (res.status === 200) {
+        const page = parseHub(res.text);
+        if (!isHubPage(page, h)) {
+          cache.hubs[slug] = { ...h, failure: { at: now, kind: "failed" } };
+          deps.log(`GoFundMe: ${slug} answered 200 with no crisis page (a bot wall or a broken page); its previous data kept, asked for again after ${FAILED_RETRY_HOURS} h`);
+          return null;
+        }
+        // Names already read stay while the page still lists them.
+        const kept = new Set([...page.slugs, ...(page.fund ? [fundraiserSlugOf(page.fund)] : [])]);
+        cache.hubs[slug] = { ...h, ...page, fundraisers: h.fundraisers.filter((f) => kept.has(f.slug)), fetched: now, failure: null };
+        deps.log(`GoFundMe: read ${slug} ("${page.title}", published ${page.published ?? "on no date"}, ${page.listed} verified fundraisers, ${page.partners.length} partners)`);
+        return null;
       }
-    }
-    if (target && target !== slug) {
-      cache.hubs[slug] = { ...blankHub(slug, h.seen), failure: { at: now, kind: "moved", to: target } };
-      see(target);
-      deps.log(`GoFundMe: ${slug} moved to ${target}`);
-      return target;
-    }
-    if (res.status === 404 || res.status === 410 || res.status === 301 || res.status === 308) {
-      cache.hubs[slug] = { ...blankHub(slug, h.seen), failure: { at: now, kind: "gone" } };
-      deps.log(`GoFundMe: ${slug} is gone; not asked for again for ${GONE_RETRY_DAYS} days`);
+      const target = res.status >= 300 && res.status < 400 && res.location ? hubRedirect(res.location, url) : null;
+      if (target && target.slug !== slug) {
+        cache.hubs[slug] = { ...blankHub(slug, h.seen), failure: { at: now, kind: "moved", to: target.slug } };
+        see(target.slug);
+        deps.log(`GoFundMe: ${slug} moved to ${target.slug}`);
+        return target.slug;
+      }
+      // The same page at another address: a trailing slash, another language.
+      if (target && hop < MAX_REDIRECTS && target.url !== url) {
+        url = target.url;
+        continue;
+      }
+      if (!target && (res.status === 404 || res.status === 410 || res.status === 301 || res.status === 308)) {
+        cache.hubs[slug] = { ...blankHub(slug, h.seen), failure: { at: now, kind: "gone" } };
+        deps.log(`GoFundMe: ${slug} is gone; not asked for again for ${GONE_RETRY_DAYS} days`);
+        return null;
+      }
+      cache.hubs[slug] = { ...h, failure: { at: now, kind: "failed" } };
+      deps.log(`GoFundMe: ${slug} could not be read; its previous data kept, asked for again after ${FAILED_RETRY_HOURS} h`);
       return null;
     }
-    cache.hubs[slug] = { ...h, failure: { at: now, kind: "failed" } };
-    deps.log(`GoFundMe: ${slug} could not be read; its previous data kept, asked for again after ${FAILED_RETRY_HOURS} h`);
-    return null;
   };
 
-  // Reads the feed for a page's fundraisers.
+  // Reads the feed for a page's fundraisers; a failure is noted, so the feed is not asked for again for 12 hours.
   const readFeed = async (slug: string): Promise<void> => {
     const h = cache.hubs[slug];
     const slugs = feedSlugs(h);
     const res = await get(feedUrl(slugs), "application/json");
-    if (res?.status !== 200) return;
-    let fundraisers: GoFundMeFundraiser[];
+    if (!res) return;
+    let fundraisers: GoFundMeFundraiser[] | null = null;
     try {
-      fundraisers = parseFeed(JSON.parse(res.text));
+      if (res.status === 200) fundraisers = parseFeed(JSON.parse(res.text));
     } catch {
-      deps.log(`GoFundMe: the feed for ${slug} was not JSON; previous names kept`);
+      // not JSON: a failure
+    }
+    if (!fundraisers) {
+      cache.hubs[slug] = { ...cache.hubs[slug], feedFailed: now };
+      deps.log(`GoFundMe: the feed for ${slug} could not be read; previous names kept, asked for again after ${FAILED_RETRY_HOURS} h`);
       return;
     }
-    cache.hubs[slug] = { ...cache.hubs[slug], fundraisers, feedFetched: now };
+    cache.hubs[slug] = { ...cache.hubs[slug], fundraisers, feedFetched: now, feedFailed: null };
     deps.log(`GoFundMe: named ${fundraisers.length} of ${slugs.length} fundraisers for ${slug}`);
   };
 
   const pageDue = (h: GoFundMeHub) => !failureHolds(h.failure, now) && (h.fetched === null || stale(h.fetched, now, wanted(h) ? GOFUNDME_REFRESH_HOURS * HOUR_MS : UNMATCHED_RECHECK_DAYS * DAY_MS));
-  const feedDue = (h: GoFundMeHub | undefined) => Boolean(h?.fetched && h.verified && wanted(h) && stale(h.feedFetched, now, GOFUNDME_REFRESH_HOURS * HOUR_MS) && feedSlugs(h).length > 0);
+  const feedDue = (h: GoFundMeHub | undefined) =>
+    Boolean(h?.fetched && h.verified && wanted(h) && feedSlugs(h).length > 0) &&
+    stale(h?.feedFetched ?? null, now, GOFUNDME_REFRESH_HOURS * HOUR_MS) &&
+    stale(h?.feedFailed ?? null, now, FAILED_RETRY_HOURS * HOUR_MS);
   const rank = (h: GoFundMeHub) => {
     const i = cache.index.slugs.indexOf(h.slug);
     return i < 0 ? Infinity : i;
@@ -820,13 +1335,16 @@ export async function refreshGoFundMe(prev: GoFundMeCache, deps: FetchDeps, now:
   const byOrder = (a: GoFundMeHub, b: GoFundMeHub) => rank(a) - rank(b) || a.slug.localeCompare(b.slug);
 
   try {
-    if (stale(cache.index.fetched, now, GOFUNDME_REFRESH_HOURS * HOUR_MS)) {
+    if (stale(cache.index.fetched, now, GOFUNDME_REFRESH_HOURS * HOUR_MS) && stale(cache.index.failed ?? null, now, FAILED_RETRY_HOURS * HOUR_MS)) {
       const res = await get(GOFUNDME_INDEX, "text/html");
       const slugs = res?.status === 200 ? parseHubIndex(res.text) : [];
       if (slugs.length > 0) {
-        cache.index = { fetched: now, slugs };
+        cache.index = { fetched: now, slugs, failed: null };
         deps.log(`GoFundMe: the index lists ${slugs.length} crisis pages (${slugs.join(", ")})`);
-      } else deps.log("GoFundMe: the index could not be read; its previous list kept");
+      } else if (res) {
+        cache.index = { ...cache.index, failed: now };
+        deps.log(`GoFundMe: the index could not be read; its previous list kept, asked for again after ${FAILED_RETRY_HOURS} h`);
+      }
     }
     const found = (opts.found ?? []).map(hubSlugOf).filter((s): s is string => s !== null);
     for (const slug of [...cache.index.slugs, ...found]) {
@@ -893,12 +1411,13 @@ export async function refreshGoFundMe(prev: GoFundMeCache, deps: FetchDeps, now:
  * page is of the disaster's time is hubDatesFit's to say. False without
  * the context's countryNameIndex.
  */
-export function hubMatches(hub: Pick<GoFundMeHub, "slug" | "title">, d: Pick<Disaster, "countries" | "type">, ctx: Pick<DonationContext, "countryNameIndex" | "eventWords">): boolean {
+export function hubMatches(hub: Pick<GoFundMeHub, "slug" | "title">, d: Pick<Disaster, "countries" | "type"> & Partial<Pick<Disaster, "places">>, ctx: MatchContext): boolean {
   if (!ctx.countryNameIndex || d.countries.length === 0) return false;
   const slug = hub.slug.split("-").filter(Boolean);
   const title = asciiWords(hub.title).filter((w) => !HUB_FILLER.has(w));
-  const readings = [readWords(slug, d.countries, ctx), readWords(title, d.countries, ctx)];
-  if (readings.some((r) => r.foreign) || otherStorm(slug, ctx) || otherStorm(title, ctx)) return false;
+  const own = disasterPlaceNames(d);
+  const readings = [readWords(slug, d.countries, ctx, own), readWords(title, d.countries, ctx, own)];
+  if (readings.some((r) => r.foreign) || otherStorm(slug, ctx, d.type) || otherStorm(title, ctx, d.type)) return false;
   const words = [...slug, ...title];
   const hazard = hazardFit(words, d.type);
   const byTitle = readings.some((r) => r.onlyTitlePlaces);
@@ -929,7 +1448,7 @@ export function hubDatesFit(hub: Pick<HubPage, "published">, d: Pick<Disaster, "
  * its name (hubMatches), and, once it has been read, by its date
  * (hubDatesFit). The refresh reads such pages first.
  */
-export function hubWanted(hub: Pick<GoFundMeHub, "slug" | "title" | "published" | "fetched">, d: Pick<Disaster, "countries" | "type" | "started">, ctx: Pick<DonationContext, "countryNameIndex" | "eventWords">): boolean {
+export function hubWanted(hub: Pick<GoFundMeHub, "slug" | "title" | "published" | "fetched">, d: Pick<Disaster, "countries" | "type" | "started">, ctx: MatchContext): boolean {
   return hubMatches(hub, d, ctx) && (hub.fetched === null || hubDatesFit(hub, d));
 }
 
@@ -939,7 +1458,7 @@ export function hubWanted(hub: Pick<GoFundMeHub, "slug" | "title" | "published" 
  * the disaster by name (hubMatches) and was published close to its start
  * (hubDatesFit); null when none does.
  */
-export function matchHub(cache: GoFundMeCache, d: Pick<Disaster, "countries" | "type" | "started">, ctx: Pick<DonationContext, "countryNameIndex" | "eventWords">): GoFundMeHub | null {
+export function matchHub(cache: GoFundMeCache, d: Pick<Disaster, "countries" | "type" | "started">, ctx: MatchContext): GoFundMeHub | null {
   const rank = (h: GoFundMeHub) => {
     const i = cache.index.slugs.indexOf(h.slug);
     return i < 0 ? Infinity : i;
@@ -1037,11 +1556,6 @@ function projectTitle(title: string): string {
   return cleanText(title, 160).replace(/\s*[-|–—]\s*GlobalGiving\s*$/i, "");
 }
 
-/** Four-digit years among words. */
-function yearsIn(words: readonly string[]): number[] {
-  return words.filter((w) => /^(?:19|20)\d\d$/.test(w)).map(Number);
-}
-
 /**
  * The earliest year a page for this disaster may name: the year it
  * started, or the year before when it started in its first month (so a
@@ -1080,30 +1594,33 @@ function datedBefore(published: string | undefined, d: Pick<Disaster, "started">
  *     only by the storm's name, see stormAftermath) or a place word of its
  *     title, and a named storm by its name: "help-jamaica-recover-from-
  *     hurricane-beryl" is no page for Hurricane Melissa;
- *   - be dated to this disaster: by the storm's name, by a year no older
- *     than the disaster's, or by the search's own date for the page
- *     (published) no earlier than two weeks before it started. A fund
- *     named only for a country and a hazard, such as "turkey-earthquake-
- *     relief-fund", is otherwise an earlier disaster's as likely as this
- *     one's.
+ *   - be dated to this disaster: by the storm's name or by a year no older
+ *     than the disaster's. The search's own date for the page is no proof:
+ *     it can be the day the page last changed, and GlobalGiving keeps funds
+ *     open for years, so a fund named only for a country or a place and a
+ *     hazard ("turkey-earthquake-relief-fund", "nepal-earthquake-relief-
+ *     fund" from 2015, "kerala-flood-relief-fund" from 2018,
+ *     "chiang-rai-flood-relief" from 2024) is an earlier disaster's as
+ *     likely as this one's, and is not shown.
  */
 export function globalGivingProblem(
   page: Pick<DirectPage, "url" | "title" | "published">,
-  d: Pick<Disaster, "countries" | "type" | "started">,
-  ctx: Pick<DonationContext, "countryNameIndex" | "eventWords">,
+  d: Pick<Disaster, "countries" | "type" | "started"> & Partial<Pick<Disaster, "places">>,
+  ctx: MatchContext,
 ): string | null {
   const gg = globalGivingPage(page.url);
   if (!gg) return "not a GlobalGiving project page";
   const slug = slugWords(gg.slug);
   const title = slugWords(projectTitle(page.title ?? ""));
-  const readings = [readWords(slug, d.countries, ctx), readWords(title, d.countries, ctx)];
+  const own = disasterPlaceNames(d);
+  const readings = [readWords(slug, d.countries, ctx, own), readWords(title, d.countries, ctx, own)];
   if (readings.some((r) => r.foreign)) return "names another country";
-  const storm = otherStorm(slug, ctx) ?? otherStorm(title, ctx);
+  const storm = otherStorm(slug, ctx, d.type) ?? otherStorm(title, ctx, d.type);
   if (storm) return `names another storm (${storm})`;
   const titlePlace = readings.some((r) => r.titlePlace);
   if (!titlePlace && !readings.some((r) => r.country)) return "names none of the disaster's places";
   const minYear = eventYear(d);
-  const years = [...yearsIn(slug), ...yearsIn(title)];
+  const years = [...eventYearsIn(gg.slug), ...eventYearsIn(projectTitle(page.title ?? ""))];
   const old = minYear === null ? [] : years.filter((y) => y < minYear);
   if (old.length > 0) return `an earlier disaster's project (${old[0]})`;
   if (datedBefore(page.published, d)) return `dated ${page.published?.slice(0, 10)}, before the disaster`;
@@ -1115,9 +1632,8 @@ export function globalGivingProblem(
   if (hazard !== "fits" && !titlePlace) return "names neither the hazard nor a place in the title";
   // A storm's name dates a page: names are not given again for years.
   const byStormName = titlePlace && (namedStorm || stormAftermath(words, d.type));
-  const searchDated = Boolean(page.published && Number.isFinite(Date.parse(page.published)) && !datedBefore(page.published, d));
-  const dated = byStormName || (minYear !== null && years.some((y) => y >= minYear)) || searchDated;
-  if (!dated) return "nothing dates it to this disaster (no storm name, recent year or search date)";
+  const dated = byStormName || (minYear !== null && years.some((y) => y >= minYear));
+  if (!dated) return "nothing dates it to this disaster (no storm name or recent year)";
   return null;
 }
 
@@ -1164,7 +1680,7 @@ export const PUBLISHING_HOSTS: readonly string[] = [
   "archive.org", "archive.ph", "archive.today", "archive.is", "archive.li", "padlet.com", "canva.com", "gamma.app", "linkin.bio", "bio.link",
   "beacons.ai", "lnk.bio", "taplink.cc", "about.me", "eventbrite.com", "eventbrite.co.uk", "eventbrite.ca", "eventbrite.com.au", "github.com",
   "gitlab.io", "glitch.me", "replit.app", "onrender.com", "fly.dev", "surge.sh", "neocities.org", "tripod.com", "angelfire.com",
-  "sharepoint.com", "dropbox.com", "1drv.ms", "box.com", "scribd.com", "issuu.com", "yumpu.com", "slideshare.net", "blogger.com",
+  "sharepoint.com", "dropbox.com", "1drv.ms", "box.com", "scribd.com", "issuu.com", "yumpu.com", "slideshare.net", "blogger.com", "forms.gle",
 ];
 
 /**
@@ -1198,9 +1714,43 @@ export const CROWDFUNDING_HOSTS: readonly string[] = [
   "siepomaga.pl", "patronite.pl", "donio.cz", "darujme.cz", "startovac.cz", "hithit.com", "planeta.ru", "boomstarter.ru", "fongogo.com",
   "zoomaal.com", "yomken.com", "benihbaik.com", "sharethemeal.org", "donatekart.com", "giveindia.org", "give.do", "fueladream.com", "idea.me",
   "fondeadora.mx", "vaki.co", "recaudia.com",
+  // Found by regional searches: LaunchGood, betterplace.me, SimplyGiving, TotalGiving, GivingWay, Apoia.se, PPL, Taejai, Yahoo! JAPAN's
+  // donations, Give.asia, for Good, Kitabisa's .org; then their peers (gooddo, furusato nozei sites, Giving.sg, Evoé, FundraiseUp, ...).
+  "launchgood.com", "betterplace.me", "simplygiving.com", "totalgiving.co.uk", "givingway.com", "apoia.se", "ppl.pt", "taejai.com",
+  "donation.yahoo.co.jp", "give.asia", "for-good.net", "kitabisa.org", "gooddo.jp", "polca.jp", "furusato-tax.jp", "satofull.jp", "furunavi.jp",
+  "giving.sg", "rayofhope.sg", "danamojo.org", "saweria.co", "trakteer.id", "sociabuzz.com", "evoe.cc", "abacashi.com", "doare.org",
+  "fundraiseup.com", "givecloud.co", "kindest.com", "givelify.com", "tithe.ly", "pushpay.com", "anedot.com", "actblue.com", "winred.com",
+  "altruja.de", "fundraisingbox.com", "endaoment.org", "gitcoin.co", "gumroad.com", "ehsan.sa",
+  // Found by the 2026-10-25 review: Cotizi (Morocco), iSupportJamaica, Fonzip (Turkey), Juntos (Brazil), BitGiving (India), Sharing
+  // Happiness, Amal Sholeh and WeCare (Indonesia), CAF Donate (the UK), HipGive (Latin America); then the donation-form hosts of nonprofit
+  // CRMs (Neon, EveryAction, MobileCause, Salsa, Charidy, CauseMatch, JGive), whose pages are a form, not a group's own site.
+  "cotizi.com", "isupportjamaica.com", "fonzip.com", "juntos.com.vc", "bitgiving.com", "sharinghappiness.org", "amalsholeh.com", "wecare.id",
+  "cafdonate.cafonline.org", "hipgive.org", "neoncrm.com", "everyaction.com", "mobilecause.com", "salsalabs.org", "salsalabs.com", "charidy.com",
+  "causematch.com", "jgive.com", "yourcause.com", "benevity.com", "donorsee.com",
 ];
 
-/** News sites and aggregators; any host with "news" in a label, and the site's own news hosts, are news sites too. */
+/**
+ * Payment, checkout, money-transfer, crypto and shop services: a page
+ * there takes money for whoever made it, and is never a group's own page.
+ */
+export const PAYMENT_HOSTS: readonly string[] = [
+  "stripe.com", "sumup.com", "square.link", "paystack.com", "paystack.shop", "flutterwave.com", "razorpay.com", "rzp.io", "instamojo.com",
+  "payu.in", "paytm.com", "phonepe.com", "payfast.co.za", "yoco.com", "snapscan.co.za", "pesapal.com", "paymongo.com", "gcash.com", "maya.ph",
+  "xendit.co", "midtrans.com", "omise.co", "momo.vn", "zalopay.vn", "picpay.com", "picpay.me", "pagseguro.uol.com.br", "wise.com", "revolut.me",
+  "revolut.com", "monzo.me", "skrill.com", "payoneer.com", "westernunion.com", "moneygram.com", "remitly.com", "worldremit.com",
+  "riamoneytransfer.com", "xoom.com", "zellepay.com", "zelle.com", "coinbase.com", "binance.com", "crypto.com", "blockchain.com",
+  "nowpayments.io", "bitpay.com", "opennode.com", "btcpayserver.org", "shopify.com", "myshopify.com", "bigcartel.com", "paypay.ne.jp",
+  "toss.me", "kakaopay.com", "alipay.com",
+  // Found by the 2026-10-25 review: payment links in Brazil (Asaas, InfinitePay, Pagar.me), India (Cashfree, Instamojo), Jamaica (WiPay),
+  // Nepal (Khalti, eSewa, Fonepay), the Philippines (PayMaya) and the Netherlands (Tikkie); then their peers in Pakistan and Bangladesh.
+  "asaas.com", "infinitepay.io", "pagar.me", "cashfree.com", "instamojo.in", "wipayfinancial.com", "khalti.com", "esewa.com.np", "fonepay.com",
+  "paymaya.com", "tikkie.me", "payumoney.com", "jazzcash.com.pk", "easypaisa.com.pk", "bkash.com", "nagad.com.bd", "ccavenue.com", "paytabs.com",
+  "hyperpay.com", "cmi.co.ma",
+];
+/** Payment brands whatever their country domain: mercadopago.com.ar, pagseguro.com.br, paypal.de. */
+const PAYMENT_BRAND = /(?:^|\.)(?:mercadopago|mercadopay|pagseguro|paypal|stripe|sumup|venmo|cashapp)\.[a-z.]+$/;
+
+/** News sites and aggregators; any host with "news" as a part of a label ("jamaica-news.org", not "newstorycharity.org"), and the site's own news hosts, are news sites too. */
 export const NEWS_HOSTS: readonly string[] = [
   "bbc.co.uk", "bbc.com", "cnn.com", "reuters.com", "apnews.com", "aljazeera.com", "aljazeera.net", "theguardian.com", "nytimes.com",
   "washingtonpost.com", "bloomberg.com", "france24.com", "dw.com", "euronews.com", "abc.net.au", "cbc.ca", "nbcnews.com", "cbsnews.com",
@@ -1220,54 +1770,251 @@ const GOVERNMENT_HOST = /(?:^|\.)(?:gov|gob|gouv|govt|gub|mil)(?:\.[a-z]{2})?$|\
 
 /**
  * Official bodies' and giving platforms' names that a local group's host
- * may not contain: a look-alike such as jamaicaredcrossrelief.org.
- * Matched in the host with its dots and hyphens taken out.
+ * may not contain, matched with its dots and hyphens taken out: a
+ * look-alike such as jamaicaredcrossrelief.org or hilalahmar-maroc.org. The
+ * movement's names as its societies write them in Latin letters (Croissant-
+ * Rouge, Media Luna Roja, Palang Merah, Kızılhaç; Sekijūji and Nisseki for
+ * the Japanese Red Cross, Hongshizi and Jeoksipja for the Chinese and
+ * Korean), the UN's agencies, giving platforms, civil protection and
+ * government words.
  */
 const PROTECTED_IN_HOST: readonly string[] = [
-  "redcross", "redcrescent", "cruzroja", "croixrouge", "rotkreuz", "roteskreuz", "crocerossa", "cruzvermelha", "rodekruis", "kizilay",
-  "unicef", "unhcr", "unocha", "gofundme", "globalgiving",
+  "redcross", "redcrescent", "redcrystal", "cruzroja", "medialunaroja", "croixrouge", "croissantrouge", "rotkreuz", "roteskreuz", "rotenkreuz",
+  "roterhalbmond", "crocerossa", "mezzalunarossa", "cruzvermelha", "crescentevermelho", "rodekruis", "rodehalvemaan", "rodekors", "rodakorset",
+  "punainenristi", "czerwonykrzyz", "cervenykriz", "voroskereszt", "crucearosie", "crvenikriz", "crvenikrst", "kizilay", "kizilhac", "hilalahmar",
+  "helalahmar", "palangmerah", "bulansabitmerah", "krusnapula", "chuthapdo", "magendavidadom", "sekijuji", "nisseki", "hongshizi", "jeoksipja",
+  "unicef", "unhcr", "unocha", "acnur", "unrwa", "undrr", "unops", "unesco", "unwomen", "unhabitat", "uncrisisrelief", "gofundme", "globalgiving",
+  "justgiving", "proteccioncivil", "defensacivil", "defesacivil",
+  "protezionecivile", "protectioncivile", "civilprotection", "civildefence", "civildefense", "prefeitura", "ayuntamiento", "pemerintah",
+  "kementerian", "gobierno", "gouvernement",
 ];
-/** Short names that count only as a whole part of a host label, or its start or end ("wfpusa", "ifrc-jamaica", "jamaicagov"). */
-const PROTECTED_PART_EDGE: readonly string[] = ["ifrc", "icrc", "wfp", "undp", "unfpa", "gov", "govt", "gouv"];
-/** Names that count only as a whole part of a host label ("un-jamaica", "ocha-relief"; never "mocha"). */
-const PROTECTED_PART_WHOLE: readonly string[] = ["un", "ocha", "gob"];
+/** Short names that count only as a whole part of a host label, or its start or end ("wfpusa", "ifrc-jamaica"). */
+const PROTECTED_PART_EDGE: readonly string[] = ["ifrc", "icrc", "wfp", "undp", "unfpa"];
+/** Government words that count as a whole part of a host label or its end ("jamaica-gov-relief", "jamaicagov"), never its start ("govindfoundation", "govardhan-trust"). */
+const GOVERNMENT_PARTS: readonly string[] = ["gov", "govt", "gouv", "gob"];
+/** Names that count only as a whole part of a host label ("ocha-relief", "iom-haiti"; never "mocha" or "radiom"). */
+const PROTECTED_PART_WHOLE: readonly string[] = ["ocha", "iom"];
+/** Words after "un-" that make it the UN's ("un-relief.org", "un-hurricane-relief.org"); so does a country's name ("un-jamaica.org"). "un-techo-para-mi-pais" is Spanish for "a roof". */
+const UN_FOLLOWERS: ReadonlySet<string> = new Set(
+  [
+    "relief aid appeal appeals donate donation donations emergency emergencies crisis help fund funds agency mission women habitat refugees refugee food",
+    "humanitarian migration disaster disasters hurricane typhoon cyclone earthquake flood floods tsunami",
+  ]
+    .join(" ")
+    .split(" "),
+);
+/** Words that make a label starting "un" the UN's when joined to it: "uncrisisrelief", "unhumanitarian", "unwomen". */
+const UN_JOINED = /^un(?:crisis|relief|humanitarian|appeal|emergenc|refugee|women|habitat|migration|disaster|donat|hurricane|typhoon|cyclone|earthquake|flood|tsunami)/;
 
-/** The official body or platform a host claims to be, or null: "jamaicaredcrossrelief.org" -> "redcross". */
-export function protectedNameInHost(host: string): string | null {
+/**
+ * The official body or platform a host claims to be, or null:
+ * "jamaicaredcrossrelief.org" -> "redcross". "un" counts as a whole label,
+ * as a part before an aid or hazard word or (with every country's names)
+ * a country's name, or joined to an aid word at a part's start
+ * ("uncrisisrelief-jamaica.org").
+ */
+export function protectedNameInHost(host: string, countryNameIndex?: Record<string, string[]>): string | null {
   const labels = host.toLowerCase().replace(/^www\./, "").split(".");
   // The last label is the top-level domain (.gov is caught by GOVERNMENT_HOST).
   const own = labels.slice(0, -1);
   const joined = own.join("").replace(/-/g, "");
   const long = PROTECTED_IN_HOST.find((n) => joined.includes(n));
   if (long) return long;
-  for (const part of own.flatMap((l) => l.split("-"))) {
-    const edge = PROTECTED_PART_EDGE.find((n) => part === n || part.startsWith(n) || part.endsWith(n));
-    if (edge) return edge;
-    const whole = PROTECTED_PART_WHOLE.find((n) => part === n);
-    if (whole) return whole;
+  for (const label of own) {
+    const parts = label.split("-");
+    for (const [i, part] of parts.entries()) {
+      const edge = PROTECTED_PART_EDGE.find((n) => part === n || part.startsWith(n) || part.endsWith(n));
+      if (edge) return edge;
+      const gov = GOVERNMENT_PARTS.find((n) => part === n || part.endsWith(n));
+      if (gov) return gov;
+      if (PROTECTED_PART_WHOLE.includes(part)) return part;
+      if (UN_JOINED.test(part)) return "un";
+      if (part !== "un") continue;
+      const rest = parts.slice(i + 1);
+      if (label === "un" || UN_FOLLOWERS.has(rest[0] ?? "") || (countryNameIndex && rest.length > 0 && countriesNamedIn(rest, countryNameIndex).length > 0)) return "un";
+    }
   }
   return null;
 }
 
-/** Official bodies' and giving platforms' names in a page's or a search's name for a group, folded. */
-const PROTECTED_NAME =
-  /\b(red\s*cross|red\s*crescent|cruz\s*roja|croix[\s-]*rouge|rot(?:es|en)?\s*kreuz|croce\s*rossa|cruz\s*vermelha|rode\s*kruis|kizilay|ifrc|icrc|unicef|unhcr|unocha|ocha|wfp|world\s*food\s*programme|undp|unfpa|united\s*nations|gofundme|globalgiving|government|gobierno|gouvernement|governo|ministry\s+of|ministerio|ministere)\b/;
+/**
+ * The Red Cross and Red Crescent movement's names as its societies write
+ * them, in Latin letters and in their own scripts. IFRC GO lists every
+ * society in English, French, Spanish and Arabic, and these cover all of
+ * those names; the rest are the movement's name in the languages of its
+ * other societies (日本赤十字社, 대한적십자사, สภากาชาดไทย, Palang Merah
+ * Indonesia, Türk Kızılay, Российский Красный Крест).
+ */
+const MOVEMENT_NAMES: readonly string[] = [
+  "red cross", "redcross", "red crescent", "redcrescent", "red crystal", "cruz roja", "media luna roja", "croix rouge", "croissant rouge", "cristal rouge",
+  "rotes kreuz", "roten kreuz", "rotkreuz", "roter halbmond", "croce rossa", "mezzaluna rossa", "cruz vermelha", "crescente vermelho", "rode kruis",
+  "rode halve maan", "røde kors", "roda korset", "punainen risti", "czerwony krzyż", "czerwonego krzyża", "červený kříž", "červený kríž", "vöröskereszt",
+  "crucea roșie", "crveni križ", "crveni krst", "rdeči križ", "kryqi i kuq", "raudonasis kryžius", "sarkanais krusts", "punane rist", "kızılhaç",
+  "kızılay", "hilal ahmar", "helal ahmar", "hilal e ahmar", "palang merah", "bulan sabit merah", "krus na pula", "chữ thập đỏ", "msalaba mwekundu",
+  "kwa wouj", "bisha cas", "magen david adom", "sociedad de la media luna", "ifrc", "icrc", "cicr", "ficr", "赤十字", "红十字", "紅十字", "적십자", "กาชาด",
+  // Arabic words take their article and prepositions in front ("للصليب الأحمر"), so the names are matched without them.
+  "هلال الأحمر", "هلال احمر", "ہلال احمر", "صليب الأحمر", "صليب احمر", "ماجن دافيد أدوم", "نجمة داود الحمراء", "צלב אדום", "מגן דוד אדום",
+  "красный крест", "красного креста", "красный полумесяц", "красного полумесяца",
+  "червоний хрест", "червоного хреста", "червен кръст", "црвени крст", "ερυθρος σταυρος", "ερυθρου σταυρου", "წითელი ჯვარი", "կարմիր խաչ",
+  "улаан загалмай", "қызыл жарты ай", "qizil yarim oy", "qızıl aypara", "रेड क्रॉस", "रेडक्रस", "रेड क्रस", "রেড ক্রস", "রেড ক্রিসেন্ট", "ကြက်ခြေနီ",
+  // Pashto, Tajik, Kyrgyz, Uzbek (Cyrillic) and Turkmen: "د افغانستان د سره میاشتې ټولنه", "Ҳилоли Аҳмари Тоҷикистон".
+  "سره میاشت", "ҳилоли аҳмар*", "хилоли ахмар*", "кызыл жарым ай", "қизил ярим ой", "gyzyl yarymay",
+  "កាកបាទក្រហម", "ກາແດງ", "රතු කුරුස", "செஞ்சிலுவை", "ቀይ መስቀል",
+];
+/** The UN, its agencies and the giving platforms, in the languages of the disasters' countries ("UN" itself is read apart, in capitals: UN_WORD). */
+const UN_NAMES: readonly string[] = [
+  "united nations", "un crisis relief", "uncrisisrelief", "naciones unidas", "nations unies", "nações unidas", "nazioni unite", "vereinte nationen", "birleşmiş milletler", "perserikatan bangsa bangsa",
+  "liên hợp quốc", "umoja wa mataifa", "الأمم المتحدة", "سازمان ملل", "اقوام متحدہ", "संयुक्त राष्ट्र", "জাতিসংঘ", "联合国", "聯合國", "国連", "国際連合", "유엔",
+  "국제연합", "สหประชาชาติ", "оон", "unicef", "ユニセフ", "유니세프", "يونيسف", "юнисеф", "ยูนิเซฟ", "यूनिसेफ", "unhcr", "acnur", "unrwa", "undrr", "unops",
+  "unesco", "unocha", "ocha", "iom", "un women", "unwomen", "unhabitat", "wfp", "world food programme", "world food program",
+  "programa mundial de alimentos", "programme alimentaire mondial", "برنامج الأغذية العالمي", "undp", "pnud", "unfpa", "world health organization",
+  "gofundme", "globalgiving", "justgiving",
+];
+/**
+ * Governments, their offices and civil protection, in the languages of
+ * the disasters' countries ("government" itself is read apart: a
+ * "Government Girls High School" is a school). Word endings are kept
+ * apart: सरकार is a government, सरकारी विद्यालय a government school.
+ */
+const GOVERNMENT_NAMES: readonly string[] = [
+  "gobierno", "gouvernement", "governo", "pemerintah", "kementerian", "prefeitura", "ayuntamiento", "alcaldía", "mairie", "comune di",
+  "protección civil", "defensa civil", "defesa civil", "protezione civile", "protection civile", "civil protection", "civil defence", "civil defense",
+  "national disaster management", "disaster management agency", "disaster management authority", "emergency management agency", "bnpb", "bpbd",
+  "ndrrmc", "ndma", "odpem", "fema", "afad", "conred", "copeco", "sinaproc", "senapred", "indeci", "bakanlığı", "valiliği", "belediyesi", "chính phủ",
+  "ủy ban nhân dân", "pamahalaan", "kagawaran", "bundesregierung", "landesregierung", "bundesministerium", "ministerium", "stadtverwaltung",
+  "政府", "県庁", "市役所", "区役所", "町役場", "村役場", "정부", "시청", "도청", "รัฐบาล", "กระทรวง", "ศาลากลาง", "حكومة", "وزارة", "правительств*",
+  "министерств*", "мчс", "मंत्रालय", "सरकार", "সরকার",
+  // Regional, local and royal governments: Spain's, Colombia's, Portugal's and Latin America's, kingdoms by name.
+  "generalitat", "xunta de galicia", "junta de andalucía", "junta de castilla", "junta de extremadura", "junta de galicia", "junta de comunidades",
+  "gobernación", "diputación provincial", "diputación de", "cabildo insular", "câmara municipal", "municipalidad", "intendencia de",
+  "ajuntament", "concello", "gouvernorat", "conseil régional", "conseil départemental", "royaume", "reino de españa", "reino de marruecos", "koninkrijk",
+  "kingdom of morocco", "kingdom of thailand", "kingdom of cambodia", "kingdom of jordan", "kingdom of saudi arabia", "kingdom of bahrain",
+  "kingdom of spain", "kingdom of the netherlands", "kingdom of bhutan", "kingdom of tonga", "kingdom of eswatini", "kingdom of lesotho",
+  "ราชอาณาจักร", "المملكة المغربية", "المملكة العربية", "المملكة الأردنية", "مملكة البحرين",
+  // Heads of government's relief funds: Kerala's Chief Minister's Distress Relief Fund (CMDRF), India's PMNRF and PM CARES.
+  "cmdrf", "pmnrf", "pm cares", "cmrf", "मुख्यमंत्री", "प्रधानमंत्री", "മുഖ്യമന്ത്രി", "முதலமைச்சர்", "মুখ্যমন্ত্রী", "প্রধানমন্ত্রী",
+];
+const PROTECTED_TERMS = [...MOVEMENT_NAMES, ...UN_NAMES, ...GOVERNMENT_NAMES].map(compileTerm);
+/** A head of government's or state's relief fund: "Chief Minister's Distress Relief Fund", "Prime Minister's National Relief Fund", "President's Relief Fund". */
+const LEADER_FUND = /\b(?:chief minister|prime minister|president|governor|premier|cm|pm)['’]?s?\s+(?:[a-z]+\s+){0,3}?(?:relief|disaster|calamity|emergency|distress|national)\s+(?:[a-z]+\s+){0,2}?fund\b/;
+/** A school's, students' or young people's government, which every Philippine high school has: "Supreme Student Government", "SSLG", "gobierno escolar". */
+const STUDENT_GOVERNMENT =
+  /\b(?:supreme\s+)?(?:secondary\s+)?(?:student|students|pupil|pupils|learner|learners|youth|school|campus)['’]?\s+government\b|\b(?:gobierno|governo)\s+(?:escolar|estudiantil|estudantil|juvenil|do gremio)\b/g;
+/** "Government" with up to three words and then a school's, college's or hospital's: a government school, not the government. */
+const GOVERNMENT_SCHOOL =
+  /\b(?:government|govt\.?)\s+(?:[a-z.'’]+\s+){0,3}?(?:schools?|colleges?|hospitals?|polytechnic|universit(?:y|ies)|institute|academy|vidyalaya|madras+a|clinic|dispensary|primary|secondary|high)\b/g;
+/** Portfolios a ministry or department is named for: "Ministry of Health", "Ministerio de Salud"; a church's "Ministry of Hope" or "Ministerio de Alabanza" names none. */
+const PORTFOLIOS = [
+  "health education finance interior home foreign social labour labor agriculture defence defense local national security economy economic environment",
+  "housing transport works public women gender family welfare disaster disasters humanitarian planning justice tourism culture information water energy",
+  "industry trade science salud sante saude salute educacion educacao istruzione hacienda fazenda economia interieur defensa defesa desarrollo",
+  "desenvolvimento vivienda trabajo travail trabalho agricultura ambiente environnement obras seguridad securite seguranca mujer mulher familia famille",
+  "bienestar cultura turismo justicia justica energia transporte transports gobernacion relaciones relations exteriores asuntos affaires proteccion",
+  "protecao solidaridad solidarite solidariedade inclusion cidadania ciudadania integracion integracao",
+]
+  .join(" ")
+  .split(" ");
+const MINISTRY = new RegExp(
+  `\\b(?:ministry|ministries|department|ministerio|ministere|ministero|secretaria)\\s+(?:of|de|da|do|des|du|del|della|dell)\\s+(?:(?:the|la|el|l|a|o|le|lo)\\s+)?(?:${PORTFOLIOS.join("|")})\\b`,
+);
 
-/** The official body or platform a name claims, or null: "Jamaica Red Cross" -> "red cross". A local group's page may not use one. */
-export function protectedNameIn(name: string | undefined): string | null {
-  const m = PROTECTED_NAME.exec(foldText(name ?? ""));
-  return m ? m[1].replace(/\s+/g, " ") : null;
+/**
+ * "UN" or "ONU" as a word in capitals, in a name that is not all
+ * capitals ("UN Crisis Relief", "UN-Habitat Jamaica", "IOM UN Migration";
+ * never French or Spanish "un"); in an all-capitals name only before an
+ * aid word ("UN HURRICANE RELIEF").
+ */
+const UN_WORD = /(?<![\p{L}\p{N}])(?:UN|U\.N\.|ONU)(?![\p{L}\p{N}])/u;
+const UN_CAPS = /(?<![\p{L}\p{N}])(?:UN|U\.N\.|ONU)[\s-]+(?:CRISIS|RELIEF|WOMEN|HABITAT|MIGRATION|REFUGEES?|AGENCY|HUMANITARIAN|EMERGENCY|APPEAL|FUND|AID|FOOD|DISASTER|HURRICANE|TYPHOON|CYCLONE|EARTHQUAKE|FLOOD)\b/u;
+
+/**
+ * A word that mixes Latin letters with Cyrillic or Greek ones, as
+ * look-alikes write official names ("Jamaica Rеd Cross" with a Cyrillic
+ * е), or null.
+ */
+export function mixedScriptWord(text: string | undefined): string | null {
+  for (const w of (text ?? "").split(/[^\p{L}\p{M}]+/u)) if (/\p{Script=Latin}/u.test(w) && /[\p{Script=Cyrillic}\p{Script=Greek}]/u.test(w)) return w;
+  return null;
 }
 
-/** First path segments of a platform's pages: a project, campaign, fundraiser or user profile ("/projects/123", "/f/help-us", "/@name"). */
-const PLATFORM_SEGMENT = /^(?:projects?|campaigns?|fundraisers?|fundraising|crowdfund(?:ing)?|pledges?|f|u|users?|profiles?|members?|people|team|teams|@.+)$/;
+/**
+ * The short names of Red Cross and Red Crescent societies, from their
+ * sites' hosts in the registry (RegistrySociety.hosts): the first label of
+ * three to five letters ("pmi.or.id" -> "PMI", "arcs.org.af" -> "ARCS",
+ * "nrcs.org" -> "NRCS"), in capitals, each once.
+ */
+export function societyAcronyms(hosts: readonly string[]): string[] {
+  const out = new Set<string>();
+  for (const h of hosts) {
+    const label = h.split("/")[0].toLowerCase().replace(/^www\./, "").split(".")[0];
+    if (/^[a-z]{3,5}$/.test(label)) out.add(label.toUpperCase());
+  }
+  return [...out];
+}
+
+/**
+ * The official body or platform a name claims, or null: "Jamaica Red
+ * Cross" -> "red cross", "日本赤十字社 支援窓口" -> "赤十字", "Ministry of
+ * Health" -> "ministry", "UN Crisis Relief" -> "UN". The movement's names
+ * (MOVEMENT_NAMES, Pashto, Tajik, Kyrgyz and Uzbek among them), the UN's
+ * and its agencies' in the disasters' languages (ユニセフ, يونيسف) and
+ * "UN" in capitals (UN_WORD), the giving platforms', governments' and
+ * their offices', regional and royal governments' (Generalitat, Royaume du
+ * Maroc) and heads of government's relief funds (CMDRF, "Prime Minister's
+ * Relief Fund"), with a "Government Girls High School" and a school's
+ * "Supreme Student Government" aside; ministries by their portfolio; the
+ * registry's society names (societyNames) and their short names in
+ * capitals (acronyms: PMI, ARCS) all count. A local group's page may not
+ * use one.
+ */
+export function protectedNameIn(name: string | undefined, societyNames: readonly string[] = [], acronyms: readonly string[] = []): string | null {
+  const raw = cleanText(name, 300);
+  const text = foldText(raw)
+    .replace(/[-_‐‑–—/|:·•]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(STUDENT_GOVERNMENT, " ");
+  if (!text.trim()) return null;
+  const term = [...PROTECTED_TERMS, ...societyNames.map(societyTerm)].find((t) => text.includes(t.needle) && t.re.test(text));
+  if (term) return term.term.replace(/\*$/, "");
+  if (/\p{Ll}/u.test(raw) ? UN_WORD.test(raw) : UN_CAPS.test(raw)) return "UN";
+  if (/\p{Ll}/u.test(raw)) {
+    const acronym = acronyms.find((a) => new RegExp(`(?<![\\p{L}\\p{N}])${a}(?![\\p{L}\\p{N}])`, "u").test(raw));
+    if (acronym) return acronym;
+  }
+  if (LEADER_FUND.test(text)) return "relief fund";
+  if (/\bgovernment\b/.test(text.replace(GOVERNMENT_SCHOOL, " "))) return "government";
+  if (MINISTRY.test(text)) return "ministry";
+  return null;
+}
+
+/** A society's registry name as a term, compiled once. */
+const societyTerms = new Map<string, ReturnType<typeof compileTerm>>();
+function societyTerm(name: string): ReturnType<typeof compileTerm> {
+  let t = societyTerms.get(name);
+  if (!t) societyTerms.set(name, (t = compileTerm(foldText(name).replace(/[-_]+/g, " "))));
+  return t;
+}
+
+/** Path segments that only choose a language or an app's version: "en", "pt-br", "v4". */
+const LOCALE_SEGMENT = /^(?:[a-z]{2}(?:[-_][a-z]{2,4})?|v\d+)$/;
+/** First path segments, after a language or version, of a person's own page: a user, profile or member page ("/u/name", "/@name"). */
+const PERSON_SEGMENT = /^(?:u|users?|profiles?|members?|people|@.+|~.+)$/;
 /** Path segments of news articles and blog posts. */
 const ARTICLE_SEGMENT = /^(?:news|newsroom|article|articles|story|stories|blogs?|posts?|press|press-releases?|noticias?|nouvelles|actualites|actualidad|nachrichten|notizie|berita|tin-tuc|amp)$/;
 
-/** Why a URL's path is no group's own donation page, or null: a platform's page, or a news article or blog post. */
+/**
+ * Why a URL's path is no group's own donation page, or null: a person's
+ * page (/u/<name>, /@name, after a language or version segment), or a news
+ * article or blog post (/news/, /blog/, /2025/10/). A platform's pages
+ * (/campaign/<slug>, /projects/<id>) are known by the platform's host
+ * (CROWDFUNDING_HOSTS): on a group's own site, WordPress and its donation
+ * plugins put appeals at /campaigns/<slug> and /projects/<slug> too.
+ */
 export function pathProblem(url: URL): string | null {
   const segments = url.pathname.split("/").filter(Boolean).map((s) => s.toLowerCase());
-  if (segments.length >= 2 && PLATFORM_SEGMENT.test(segments[0])) return `a platform's page (/${segments[0]}/...), not a group's own`;
+  const first = segments.length > 1 && LOCALE_SEGMENT.test(segments[0]) ? 1 : 0;
+  if (segments.length > first + 1 && PERSON_SEGMENT.test(segments[first])) return `a person's page (/${segments[first]}/...), not a group's own`;
   if (segments.some((s) => ARTICLE_SEGMENT.test(s))) return "a news article or blog post";
   // Dated paths: /2025/10/..., /2025-10-29/...
   if (/\/(?:19|20)\d\d[/-](?:0?[1-9]|1[0-2])(?:[/-]|$)/.test(url.pathname)) return "a news article or blog post";
@@ -1282,6 +2029,16 @@ export interface LocalContext {
   societyHosts?: readonly string[];
   /** Hosts of the site's own news articles, which are news sites. */
   newsHosts?: ReadonlySet<string>;
+  /** Every society's name in the registry (RegistrySociety.name), which a local group may not use (protectedNameIn). */
+  societyNames?: readonly string[];
+  /** The societies' short names from their hosts (societyAcronyms: PMI, ARCS), which a local group may not use either. */
+  societyAcronyms?: readonly string[];
+}
+
+/** True for a host label with "news" as one of its parts ("jamaica-news"), but not good news ("good-news-church"). */
+function isNewsLabel(label: string): boolean {
+  const parts = label.split("-");
+  return parts.some((p, i) => p === "news" && parts[i - 1] !== "good");
 }
 
 /** True for host or a subdomain of one in the list. */
@@ -1295,14 +2052,14 @@ function onAny(host: string, list: Iterable<string>): boolean {
  * when it may: https only; no credentials, port, IP address, punycode or
  * shortener (donationUrlProblem's hygiene); not a social network, portal,
  * blog, newsletter, site or form builder, file host or archive (sites
- * anyone can publish on), a crowdfunding or giving platform, a marketplace
- * or a news site (any host with "news" in a label among them); not an
- * official site (the disaster's allowlist, any Red Cross or Red Crescent
- * society, a government or an international body), which belongs with the
- * official links, nor a host that carries an official body's or a
- * platform's name (a look-alike such as jamaicaredcrossrelief.org); never
- * a platform's page by its path (/projects/<id>, /f/<slug>), a news
- * article or blog post by its path (/news/, /2025/10/), or a blood
+ * anyone can publish on), a crowdfunding or giving platform, a payment,
+ * checkout, money-transfer or crypto service, a marketplace or a news site
+ * (any host with "news" as a part of a label among them); not an official
+ * site (the disaster's allowlist, any Red Cross or Red Crescent society, a
+ * government or an international body), which belongs with the official
+ * links, nor a host that carries an official body's or a platform's name
+ * (a look-alike such as jamaicaredcrossrelief.org); never a person's page
+ * or a news article or blog post by its path (pathProblem), or a blood
  * donation, listing, search or home page.
  */
 export function localUrlProblem(raw: string, ctx: LocalContext): string | null {
@@ -1324,10 +2081,11 @@ export function localUrlProblem(raw: string, ctx: LocalContext): string | null {
   if (SHORTENERS.some((s) => hostMatches(host, s))) return "URL shortener";
   if (onAny(host, SHARED_HOSTS) || onAny(host, SOCIAL_HOSTS) || onAny(host, PUBLISHING_HOSTS)) return "social network or a site anyone can publish on";
   if (onAny(host, CROWDFUNDING_HOSTS)) return "crowdfunding or giving platform";
+  if (onAny(host, PAYMENT_HOSTS) || PAYMENT_BRAND.test(host)) return "payment, checkout or money-transfer service";
   if (MARKETPLACE.test(host)) return "marketplace";
-  if (onAny(host, NEWS_HOSTS) || onAny(host, ctx.newsHosts ?? []) || host.split(".").slice(0, -1).some((l) => l.includes("news"))) return "news site";
+  if (onAny(host, NEWS_HOSTS) || onAny(host, ctx.newsHosts ?? []) || host.split(".").slice(0, -1).some(isNewsLabel)) return "news site";
   if (hostClass(url, ctx.donation) || onAny(host, ctx.societyHosts ?? []) || GOVERNMENT_HOST.test(host)) return "official site, listed with the official links";
-  const claimed = protectedNameInHost(host);
+  const claimed = protectedNameInHost(host, ctx.donation.countryNameIndex);
   if (claimed) return `its host carries an official body's or a platform's name (${claimed})`;
   const path = pathProblem(url);
   if (path) return path;
@@ -1347,58 +2105,158 @@ export function sameSite(a: string, b: string): boolean {
 }
 
 /**
+ * Words that only say what kind of place a local name is, before it or
+ * after it, in the scripts the geocoder's local names come in: Thai
+ * จังหวัด (province), อำเภอ (district) and ประเทศ (country), Lao, Khmer and
+ * Arabic and Persian province and city words, Japanese 県 and 市,
+ * Chinese 省, Korean 도 and 시, Hindi जिला, Bengali জেলা, Burmese and
+ * Russian region words. A page names Chiang Rai "เชียงราย", not
+ * "จังหวัดเชียงราย".
+ */
+const NAME_PREFIXES: readonly string[] = [
+  "จังหวัด", "อำเภอ", "ตำบล", "เทศบาลนคร", "เทศบาลเมือง", "เทศบาลตำบล", "เมือง", "เขต", "แขวง", "ประเทศ", "ແຂວງ", "ເມືອງ", "ປະເທດ", "ខេត្ត", "ស្រុក", "ក្រុង",
+  "ប្រទេស", "محافظة ", "ولاية ", "إقليم ", "اقليم ", "معتمدية ", "مدينة ", "منطقة ", "قضاء ", "عمالة ", "جهة ", "بلدية ", "مديرية ", "ناحية ", "استان ",
+  "شهرستان ", "شهر ",
+];
+const NAME_SUFFIXES: readonly string[] = [
+  "特别行政区", "自治区", "自治州", "特別市", "특별자치도", "특별자치시", "광역시", "특별시", "省", "市", "县", "縣", "区", "區", "镇", "鎮", "乡", "鄉", "県", "府", "都",
+  "町", "村", "郡", "도", "시", "군", "구", "읍", "면", " जिला", " ज़िला", " जिल्ला", " জেলা", " বিভাগ", " উপজেলা", "တိုင်းဒေသကြီး", "ပြည်နယ်", "မြို့နယ်",
+  "မြို့", " область", " край", " район", " oblast",
+];
+const CLOSE_SCRIPTS = /[\p{Script=Han}\p{Script=Hangul}\p{Script=Hiragana}\p{Script=Katakana}]/u;
+
+/** True for a name long enough to stand alone: two characters in Chinese, Japanese or Korean, three letters otherwise. */
+function nameLongEnough(name: string): boolean {
+  return [...name].length >= (CLOSE_SCRIPTS.test(name) ? 2 : 3);
+}
+
+/**
+ * A local name and the shorter forms a page may use for it: without the
+ * words that say what kind of place it is (NAME_PREFIXES, NAME_SUFFIXES:
+ * "จังหวัดเชียงราย" -> "เชียงราย", "石川県" -> "石川", "محافظة حلب" ->
+ * "حلب"), and in Arabic script without a last ا, ة, ه or ى, which
+ * spellings vary in ("سوريا", "سورية" -> "سوري"). Each form is long enough
+ * to stand alone (two characters in Chinese, Japanese or Korean, three
+ * letters otherwise).
+ */
+export function nameForms(name: string | undefined): string[] {
+  const n = cleanText(name, 80);
+  if (!n) return [];
+  const out = [n];
+  let core = n;
+  for (let changed = true; changed; ) {
+    changed = false;
+    for (const prefix of NAME_PREFIXES) {
+      const rest = core.startsWith(prefix) ? core.slice(prefix.length).trim() : "";
+      if (rest && nameLongEnough(rest)) [core, changed] = [rest, true];
+    }
+    for (const suffix of NAME_SUFFIXES) {
+      const rest = core.endsWith(suffix) ? core.slice(0, -suffix.length).trim() : "";
+      if (rest && nameLongEnough(rest)) [core, changed] = [rest, true];
+    }
+  }
+  if (core !== n) out.push(core);
+  if (/^[\p{Script=Arabic}\s]+$/u.test(core) && /[اةهى]$/.test(core) && [...core].length >= 4) out.push(core.slice(0, -1));
+  return [...new Set(out)];
+}
+
+/**
+ * A place's own names from the geocoder, each split by script first (one
+ * name holding "Marrakech ⵎⵕⵕⴰⴽⵯⵛ مراكش" gives three, see splitScripts),
+ * with their shorter forms (nameForms).
+ */
+function localFormsOf(localNames: Readonly<Record<string, readonly string[]>>, place: string): string[] {
+  return (Object.hasOwn(localNames, place) ? localNames[place] : []).flatMap(splitScripts).flatMap(nameForms);
+}
+
+/**
+ * A country's name in the language most spoken there, from the runtime's
+ * CLDR data: "TH" -> ["ไทย"], "MA" -> ["المغرب"], "JP" -> ["日本"]; none
+ * when the runtime has no name for it.
+ */
+export function ownCountryNames(code: string): string[] {
+  try {
+    const locale = new Intl.Locale(`und-${code}`).maximize();
+    const tag = locale.script ? `${locale.language}-${locale.script}` : locale.language;
+    const name = new Intl.DisplayNames([tag], { type: "region", fallback: "none" }).of(code.toUpperCase());
+    return name ? [name] : [];
+  } catch {
+    return [];
+  }
+}
+
+/**
  * The names a local group's page must use to be about the disaster's
- * place: each country's English name and its name in its press language
- * (pipeline/config/languages.json), the disaster's places and the place
- * words of its title; each once, at least three letters (or in a script
- * written without spaces).
+ * place: each country's English name, its name in its press language
+ * (pipeline/config/languages.json) and in the language most spoken there
+ * (ownCountryNames), the disaster's places with their own names from the
+ * geocoder (localNames, by place), and the place words of its title; local
+ * names also in their shorter forms (nameForms: "ประเทศไทย" -> "ไทย",
+ * "จังหวัดเชียงราย" -> "เชียงราย"). Each once, at least three letters (or
+ * two characters in Chinese, Japanese or Korean).
  */
 export function placeNames(
   d: Pick<Disaster, "countries" | "places">,
   countryNames: Record<string, string>,
   pressNames: Record<string, string> = {},
   titleWords: readonly string[] = [],
+  localNames: Readonly<Record<string, readonly string[]>> = {},
 ): string[] {
   const out: string[] = [];
   const seen = new Set<string>();
   const add = (name: unknown) => {
     const n = cleanText(name, 80).replace(/\*/g, "");
     const key = foldText(n);
-    if (!n || seen.has(key) || ([...n].length < 3 && !/[\p{Script=Han}\p{Script=Hangul}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(n))) return;
+    if (!n || seen.has(key) || !nameLongEnough(n)) return;
     seen.add(key);
     out.push(n);
   };
   for (const c of d.countries) {
     add(Object.hasOwn(countryNames, c) ? countryNames[c] : "");
-    add(Object.hasOwn(pressNames, c) ? pressNames[c] : "");
+    nameForms(Object.hasOwn(pressNames, c) ? pressNames[c] : "").forEach(add);
+    ownCountryNames(c).flatMap(nameForms).forEach(add);
   }
-  for (const p of d.places ?? []) add(p.name);
+  for (const p of d.places ?? []) {
+    add(p.name);
+    localFormsOf(localNames, p.name).forEach(add);
+  }
   titleWords.forEach(add);
   return out;
 }
 
+/** Words that join the parts of a place's name: "Rio Grande do Sul", "Port-au-Prince", "Isle of Wight". Folded. */
+const PLACE_CONNECTORS: ReadonlySet<string> = new Set("do da dos das de del della delle dei di du des d la le el al au aux of the von van der den zu".split(" "));
+
 /**
- * The place words of a title as written there, runs of them joined:
- * "Bangladesh: Monsoon Depression in Cox's Bazar" with ["cox", "bazar"]
- * -> ["Cox's Bazar"], so a note can name the place as the title does.
+ * The place words of a title as written there, runs of them joined, with
+ * the words that join a place's name inside a run ("do" in "Rio Grande do
+ * Sul") and never across a comma or other punctuation: "Bangladesh:
+ * Monsoon Depression in Cox's Bazar" with ["cox", "bazar"] -> ["Cox's
+ * Bazar"]; "Floods in Rio Grande do Sul, Brazil" -> ["Rio Grande do Sul"].
+ * A page about the disaster names one of these whole (topicProblem).
  */
 export function titlePlaces(title: string, words: readonly string[]): string[] {
   const place = new Set(words);
   const out: string[] = [];
   let start = -1;
   let end = -1;
+  let last = 0;
+  const close = () => {
+    if (start >= 0) out.push(title.slice(start, end));
+    start = -1;
+  };
   for (const m of title.matchAll(/[\p{L}\p{M}][\p{L}\p{M}'’.-]*/gu)) {
+    if (start >= 0 && /[^\s]/u.test(title.slice(last, m.index))) close();
+    last = m.index + m[0].length;
     const parts = asciiWords(m[0]).filter((w) => w !== "s");
-    if (parts.length > 0 && parts.every((w) => place.has(w))) {
+    const named = parts.filter((w) => !PLACE_CONNECTORS.has(w));
+    if (named.length > 0 && named.every((w) => place.has(w))) {
       if (start < 0) start = m.index;
       end = m.index + m[0].length;
-    } else if (start >= 0) {
-      out.push(title.slice(start, end));
-      start = -1;
-    }
+    } else if (!(start >= 0 && parts.length > 0 && parts.every((w) => PLACE_CONNECTORS.has(w)))) close();
   }
-  if (start >= 0) out.push(title.slice(start, end));
-  return out;
+  close();
+  return [...new Set(out)];
 }
 
 /** The first of the names that a page uses, as a whole word (or anywhere, in scripts without spaces); null when it uses none. */
@@ -1420,24 +2278,46 @@ export function hopAllowed(start: string, hop: string, ctx: LocalContext): boole
 export interface LocalPageRules {
   /** Names of the disaster's place, one of which the page must use (placeNames). */
   names: readonly string[];
+  /**
+   * Names of the places in the disaster's title, as the title writes them
+   * and in their own scripts ("Chiang Rai", "เชียงราย"): a title, heading or
+   * address that uses one is about the disaster (topicProblem).
+   */
+  titleNames?: readonly string[];
   /** The disaster's type: a page that names only hazards of other kinds is another disaster's. */
   type?: DisasterType;
   /** The earliest year the page may name (eventYear); null or missing for no limit. */
   minYear?: number | null;
+  /** When the disaster started: a page that dates itself well before is an earlier one's (pageDateProblem). */
+  started?: string;
+  /**
+   * The disaster's own place names (its places, their provinces and own
+   * names, its title's places): a country's name inside one of them
+   * ("Panama City", "Jersey Shore Region") names no other country.
+   */
+  ownPlaces?: readonly string[];
+  /** The languages its pages are read in for other countries' names (nameLanguages); FOREIGN_NAME_LANGUAGES and its countries' main languages when missing. */
+  languages?: readonly string[];
 }
 
-/** What a page says of itself: its site's name, its title and its main heading, each one line; and whether it marks itself a news article or post. */
+/** What a page says of itself: its site's name, its title and its main heading, each one line; and whether it marks itself a news article. */
 export interface PageSelf {
   name: string;
   title: string;
   heading: string;
-  article: boolean;
+  news: boolean;
 }
 
-/** JSON-LD types of news articles and posts. A WebPage is none: WordPress gives every page og:type "article", so that alone marks nothing. */
-const ARTICLE_TYPES: ReadonlySet<string> = new Set([
-  "Article", "NewsArticle", "ReportageNewsArticle", "AnalysisNewsArticle", "BackgroundNewsArticle", "OpinionNewsArticle", "ReviewNewsArticle",
-  "LiveBlogPosting", "BlogPosting", "SocialMediaPosting", "DiscussionForumPosting",
+/**
+ * JSON-LD types that mark a news article, or a post on a forum or social
+ * site, and the type of a news publisher. WordPress's SEO plugins give a
+ * group's own posts "Article" or "BlogPosting" nodes and
+ * article:published_time, and every page og:type "article", so none of
+ * those marks anything: news sites are known by their hosts and paths.
+ */
+const NEWS_TYPES: ReadonlySet<string> = new Set([
+  "NewsArticle", "ReportageNewsArticle", "AnalysisNewsArticle", "BackgroundNewsArticle", "OpinionNewsArticle", "ReviewNewsArticle", "LiveBlogPosting",
+  "SocialMediaPosting", "DiscussionForumPosting", "NewsMediaOrganization",
 ]);
 
 /** The content of a <meta> tag by its property or name, in either attribute order; "" when there is none. */
@@ -1451,41 +2331,351 @@ function metaContent(html: string, key: string): string {
 /**
  * What a page says of itself: its site's name (og:site_name, else
  * application-name), its title (og:title, else <title>), its first <h1>,
- * and whether it is a news article or post (an article's JSON-LD type, or
- * the article:published_time that news sites and blogs give their posts).
+ * and whether it is a news article or a forum or social post (NEWS_TYPES
+ * in its JSON-LD).
  */
 export function readPageSelf(raw: string): PageSelf {
   const html = raw.slice(0, MAX_PAGE_CHARS);
   const name = textOf(metaContent(html, "og:site_name") || metaContent(html, "application-name"), 80);
   const title = textOf(metaContent(html, "og:title") || (/<title\b[^>]*>([\s\S]*?)<\/title>/i.exec(html)?.[1] ?? ""), 160);
   const heading = textOf(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i.exec(html)?.[1] ?? "", 160);
-  const article = ldOf(html).some((n) => ldTypeIs(n, ARTICLE_TYPES)) || metaContent(html, "article:published_time") !== "";
-  return { name, title, heading, article };
+  const news = ldOf(html).some((n) => ldTypeIs(n, NEWS_TYPES));
+  return { name, title, heading, news };
 }
 
+/** The text a reader sees on a page: pageText without its scripts' data. */
+function visibleText(html: string): string {
+  return pageText(html.slice(0, MAX_PAGE_CHARS).replace(/<script\b[\s\S]*?<\/script\s*>/gi, " "));
+}
+
+/** What earlierEventProblem reads of the disaster's context: its countries too, for another country's name. */
+export type LocalMatchContext = MatchContext & Pick<DonationContext, "countries">;
+
 /**
- * Why texts about a page (its URL path, title or heading) say it is for
- * an earlier or another disaster, or null: a year older than the
- * disaster's (rules.minYear), another storm's name (otherStorm: "donate-
- * 2024-hurricane-beryl" for Hurricane Melissa), or hazards that are all of
- * another kind than the disaster's (strictly, as hubMatches reads them).
+ * Why texts about a page (its URL path, title without its site's name, or
+ * heading) say it is for an earlier or another disaster, or null: a year
+ * older than the disaster's (rules.minYear; a founding year or a span's
+ * first year aside, other calendars read too, see eventYearsIn), another
+ * country's name, in English by whole names ("Dona para el terremoto de
+ * Ecuador" for a Venezuelan earthquake) or in another language
+ * (foreignCountryIn: "Séisme en Algérie" for a Moroccan one; a name inside
+ * one of the disaster's own places, rules.ownPlaces, is none), another
+ * storm's name (otherStorm: "donate-2024-hurricane-beryl" for Hurricane
+ * Melissa), or hazards that are all of another kind than the disaster's
+ * (strictly, as hubMatches reads them, in any script).
  */
-export function earlierEventProblem(texts: readonly string[], rules: Pick<LocalPageRules, "type" | "minYear">, ctx: Pick<DonationContext, "countryNameIndex" | "eventWords">): string | null {
-  const words = texts.flatMap((t) => slugWords(t));
+export function earlierEventProblem(texts: readonly string[], rules: Pick<LocalPageRules, "type" | "minYear" | "ownPlaces" | "languages">, ctx: LocalMatchContext): string | null {
+  const { words, hazards } = readTexts(texts);
   const minYear = rules.minYear;
-  const old = typeof minYear === "number" ? yearsIn(words).filter((y) => y < minYear) : [];
+  const old = typeof minYear === "number" ? texts.flatMap(eventYearsIn).filter((y) => y < minYear) : [];
   if (old.length > 0) return `an earlier disaster's page (${old[0]})`;
-  const storm = otherStorm(words, ctx);
+  if (readWords(words, ctx.countries, ctx, rules.ownPlaces).foreign) return "names another country";
+  if (foreignCountryIn(texts, ctx, rules.languages ?? nameLanguages(ctx.countries), rules.ownPlaces)) return "names another country";
+  const storm = otherStorm(words, ctx, rules.type);
   if (storm) return `names another storm (${storm})`;
-  if (rules.type && hazardFit(words, rules.type) === "other" && !stormAftermath(words, rules.type)) return "names another kind of disaster";
+  const all = [...words, ...hazards];
+  if (rules.type && hazardFit(all, rules.type) === "other" && !stormAftermath(all, rules.type)) return "names another kind of disaster";
   return null;
 }
 
-/** Why a URL may not be shown as this disaster's local group page by its address alone, or null: localUrlProblem, then its path (earlierEventProblem). */
-export function localAddressProblem(raw: string, ctx: LocalContext, rules: Pick<LocalPageRules, "type" | "minYear">): string | null {
+/** Texts folded as a phrase is looked for in them: a path's slashes, hyphens and underscores as spaces. */
+function phraseText(texts: readonly string[]): string {
+  return foldText(texts.join("\n")).replace(/[-_/+]+/g, " ");
+}
+
+/** The places of the disaster's title as phrases (rules.titleNames, else the title's own: titlePlaces), compiled. */
+function titlePhrases(rules: Pick<LocalPageRules, "titleNames">, ctx: MatchContext): ReturnType<typeof compileTerm>[] {
+  const names = [...(rules.titleNames ?? titlePlaces(ctx.title ?? "", ctx.eventWords ?? [])), ...(ctx.stormNames ?? [])];
+  return names.map((n) => compileTerm(foldText(n).replace(/[-_/+]+/g, " ").replace(/\*/g, "")));
+}
+
+/** True when texts name a place of the disaster's title as a whole phrase ("Rio Grande do Sul", "เชียงราย"), never by one of its words alone. */
+function namesTitlePlace(texts: readonly string[], rules: Pick<LocalPageRules, "titleNames">, ctx: MatchContext): boolean {
+  const text = phraseText(texts);
+  return titlePhrases(rules, ctx).some((t) => text.includes(t.needle) && t.re.test(text));
+}
+
+/** True when texts name a hazard of the disaster's kind (strictly, in any of the languages hazardFit and hazardWordsIn read). */
+function namesHazard(texts: readonly string[], type: DisasterType | undefined): boolean {
+  const { words, hazards } = readTexts(texts);
+  return Boolean(type) && hazardFit([...words, ...hazards], type as DisasterType) === "fits";
+}
+
+/**
+ * Why a page does not say it is about this disaster, or null. What it says
+ * of itself (own: its title without its site's name, see ownTitle, its
+ * heading and its address; never the site's own name, which may hold a
+ * word of the title, as "Chiang Mai Children's Home" does for floods in
+ * Chiang Rai) must name a place of the disaster's title as a whole phrase,
+ * in any script (titleNames: "Rio Grande do Sul", "เชียงราย"; a named
+ * storm's name or its other names), or a hazard of its kind (strictly, in
+ * any of the languages hazardFit and hazardWordsIn read); a named storm's
+ * page that names only the hazard must name the storm somewhere. A page
+ * that only names the country, such as a charity's general "Give" page
+ * saying "across Jamaica", is no page for the disaster.
+ */
+export function topicProblem(own: readonly string[], text: string, rules: Pick<LocalPageRules, "type" | "titleNames">, ctx: MatchContext): string | null {
+  if (namesTitlePlace(own, rules, ctx)) return null;
+  if (!namesHazard(own, rules.type)) return "its title, heading and address name neither the disaster's hazard nor a place of its title";
+  const title = new Set(ctx.eventWords ?? []);
+  if (isNamedStorm({ type: rules.type as DisasterType }, ctx) && !asciiWords(text).some((w) => title.has(w))) return "names the hazard but not the storm";
+  return null;
+}
+
+/**
+ * Why a page's own date says it is an earlier disaster's, or null: it was
+ * published (publishedOf: its WebPage's datePublished, as WordPress's SEO
+ * plugins give every page, else a post's; else its first <time>) more
+ * than PAGE_BEFORE_DAYS before the disaster started, and nothing shows an
+ * older page rewritten for it: its title, heading and address (own) name
+ * neither the disaster's storm nor a year no older than the disaster's,
+ * and it was not changed since (modified: its JSON-LD dateModified, no
+ * earlier than PAGE_BEFORE_DAYS before the start) with its title or
+ * heading naming both the disaster's hazard and a place of its title. A
+ * group's standing /donate/ page, created years ago and rewritten as
+ * "Enchentes no Rio Grande do Sul: doe agora", passes; a 2016 page last
+ * changed in 2016 does not.
+ */
+export function pageDateProblem(
+  published: string | null,
+  own: readonly string[],
+  rules: Pick<LocalPageRules, "minYear" | "started" | "type" | "titleNames">,
+  ctx: MatchContext,
+  modified: string | null = null,
+): string | null {
+  if (!published || !rules.started || !datedBefore(published, { started: rules.started })) return null;
+  const storms = new Set(disasterStorms(ctx));
+  if (readTexts(own).words.some((w) => storms.has(w))) return null;
+  const minYear = rules.minYear;
+  if (typeof minYear === "number" && own.flatMap(eventYearsIn).some((y) => y >= minYear)) return null;
+  const rewritten =
+    modified !== null &&
+    Number.isFinite(Date.parse(modified)) &&
+    !datedBefore(modified, { started: rules.started }) &&
+    own.slice(0, 2).some((t) => namesHazard([t], rules.type) && namesTitlePlace([t], rules, ctx));
+  if (rewritten) return null;
+  return `published ${published.slice(0, 10)}, before the disaster`;
+}
+
+/**
+ * When a page was last changed: its JSON-LD WebPage's dateModified, else
+ * any node's, else its article:modified_time; null when it gives none.
+ */
+export function modifiedOf(html: string): string | null {
+  const nodes = ldOf(html.slice(0, MAX_PAGE_CHARS));
+  const page = nodes.find((n) => ldTypeIs(n, new Set(["WebPage"])) && isoTime(n.dateModified)) ?? nodes.find((n) => isoTime(n.dateModified));
+  if (page) return isoTime(page.dateModified);
+  return isoTime(metaContent(html.slice(0, MAX_PAGE_CHARS), "article:modified_time"));
+}
+
+/** The first <time datetime> of a page, as an ISO time: Wix, Squarespace and blog themes date a page this way; null when it has none. */
+export function timeOf(html: string): string | null {
+  return isoTime(decodeEntities(/<time\b[^>]*\bdatetime\s*=\s*["']([^"']+)["']/i.exec(html.slice(0, MAX_PAGE_CHARS))?.[1] ?? ""));
+}
+
+/** How much of a page's visible text, from its heading on, is read for the years it gives its disaster. */
+const LEAD_CHARS = 1_500;
+
+/**
+ * Why the first paragraphs of a page that gives no date of its own say it
+ * is an earlier disaster's, or null: a sentence there that names a hazard
+ * of the disaster's kind gives a year older than the disaster's, and none
+ * gives a recent one ("El 16 de abril de 2016 un terremoto de 7,8 golpeó
+ * Ecuador", on a Wix page). The text is read from its heading on (else
+ * from its start), LEAD_CHARS of it. A page that names the disaster's
+ * storm, or whose title, heading or address names a recent year, passes.
+ */
+export function leadYearProblem(html: string, own: readonly string[], rules: Pick<LocalPageRules, "type" | "minYear">, ctx: MatchContext): string | null {
+  const minYear = rules.minYear;
+  if (typeof minYear !== "number" || !rules.type) return null;
+  if (own.flatMap(eventYearsIn).some((y) => y >= minYear)) return null;
+  const page = html.slice(0, MAX_PAGE_CHARS);
+  const h1 = /<h1\b/i.exec(page);
+  // Headings, paragraphs and other blocks end sentences too.
+  const blocks = (h1 ? page.slice(h1.index) : page).replace(/<\/?(?:p|h[1-6]|div|li|br|tr|td|th|section|article|header|footer|blockquote|figcaption|dd|dt)\b[^>]*>/gi, " ¶ ");
+  const lead = visibleText(blocks).slice(0, LEAD_CHARS);
+  const storms = new Set(disasterStorms(ctx));
+  if (storms.size > 0 && asciiWords(lead).some((w) => storms.has(w))) return null;
+  const years = lead
+    .split(/[.!?](?=\s|$)|[。！？\n¶]+|\s[-–—]\s/)
+    .filter((sentence) => namesHazard([sentence], rules.type))
+    .flatMap(eventYearsIn);
+  if (years.some((y) => y >= minYear)) return null;
+  const old = years.find((y) => y < minYear);
+  return old === undefined ? null : `an earlier disaster's page (${old})`;
+}
+
+/** Words that say a page asks for money into a bank account, near which "a nombre de" names whose account it is. */
+const BANK_WORDS = /\b(?:cuenta|cuentas|conta|contas|banco|bank|compte|account|pix|cbu|cvu|clabe|iban|transferencia|transferencias|deposito|depositos|virement|nequi|daviplata|yape|plin|pago movil)\b/;
+/** Words that start a group's own name, after "a nombre de" or "em nome de": the account is the group's, not a person's. */
+const GROUP_WORDS: ReadonlySet<string> = new Set(
+  [
+    "fundacion fundacao fondation asociacion associacao association asociación iglesia igreja eglise parroquia paroquia paroisse colegio escuela escola ecole",
+    "liceo instituto institut comite club cooperativa cooperative sociedad sociedade societe corporacion corporacao ong ngo mision missao mission ministerio",
+    "caritas red rede centro centre hogar lar casa comunidad comunidade communaute junta union uniao unidad congregacion congregacao diocesis diocese",
+    "arquidiocesis arquidiocese organizacion organizacao organisation movimiento movimento proyecto projeto programa universidad universidade universite",
+    "consejo conselho federacion federacao amigos amis voluntarios voluntariado grupo groupe vicaria capilla capela obra obras hermandad irmandade",
+    "patronato cofradia confraria",
+  ]
+    .join(" ")
+    .split(" "),
+);
+
+/**
+ * Ways scams ask for money and groups' own donation pages do not, in
+ * folded text: crypto by name or ticker (btc, eth, usdc, cripto*,
+ * criptomoeda*), gift card codes (iTunes, Steam, Google Play cards, or
+ * codes sent: "send the gift card codes"; a supermarket's cards for
+ * families are no such ask), Zelle, Cash App or Venmo, money-transfer
+ * services, and transfers to a person's own account ("transfer to my
+ * account", "deposita en mi cuenta").
+ */
+const PAYMENT_ASKS: readonly (readonly [RegExp, string])[] = [
+  [
+    /\b(?:bitcoins?|btc|ethereum|eth|usdt|usdc|tether|litecoin|ltc|dogecoin|doge|monero|xmr|xrp|solana|bnb|trx|tron|binance pay|crypto|cryptos|cryptocurrenc(?:y|ies)|cripto\w*|criptomoeda\w*|kripto\w*|krypto\w*|wallet address(?:es)?|crypto wallet|sol (?:wallet|address))\b/,
+    "crypto",
+  ],
+  [
+    /\b(?:itunes|steam|google play|razer gold|apple) (?:gift )?cards?\b|\bgift ?cards? (?:codes?|numbers?|pins?)\b|\b(?:send|email|text|scratch|share|upload)\b(?:\s+\S+){0,4}?\s+(?:gift ?cards?|cards?) (?:codes?|numbers?|pins?)\b|\bsend (?:us |me )?(?:\S+\s+){0,2}gift ?cards\b/,
+    "gift cards",
+  ],
+  [/\bzelle\b/, "Zelle"],
+  [/\b(?:cash ?app|venmo)\b/, "Cash App or Venmo"],
+  [/\b(?:western union|moneygram|worldremit|remitly|ria money transfer)\b/, "a money-transfer service"],
+  [/\b(?:wire|bank|money) transfers? (?:directly )?to (?:me|my|him|her|his)\b|\b(?:my|his|her) (?:personal bank|personal|bank) account\b/, "a transfer to a person's own account"],
+  [/\bsend (?:money|funds|it|your donations?) (?:directly )?to (?:me|my|him|her)\b/, "a transfer to a person's own account"],
+  [/\b(?:mi|su) cuenta (?:bancaria )?personal\b|\bmon compte personnel\b|\bminha conta pessoal\b/, "a transfer to a person's own account"],
+  [
+    /\b(?:transfer|transfers|transferring|deposit|deposits|send|wire|pay|deposita|depositar|depositen|deposite|depositem|transfiere|transferir|transfiera|transfieran|transfira|transfiram|envia|envie|enviar|virez|versez)\b(?:\s+\S+){0,5}?\s+(?:to|into|in|en|a|na|no|para|sur|au|on)\s+(?:my|mi|minha|meu|mon|ma)\s+(?:(?:own|personal|personnel|propia|pessoal|bank|bancaria|bancaire|savings|checking)\s+)?(?:account|acct|cuenta|conta|compte)\b/,
+    "a transfer to a person's own account",
+  ],
+];
+
+/** Wallet addresses, in the page's own letters: Bitcoin (bc1..., 1... or 3...), Ethereum and its tokens (0x and 40 hex digits) and Tron (T and 33). */
+const WALLET_ADDRESSES: readonly RegExp[] = [
+  /(?<![A-Za-z0-9])bc1[02-9ac-hj-np-z]{25,62}(?![A-Za-z0-9])/i,
+  /(?<![A-Za-z0-9])0x[0-9a-fA-F]{40}(?![A-Za-z0-9])/,
+  /(?<![A-Za-z0-9])T[1-9A-HJ-NP-Za-km-z]{33}(?![A-Za-z0-9])/,
+  /(?<![A-Za-z0-9])[13](?=[1-9A-HJ-NP-Za-km-z]*[A-Za-z])(?=[1-9A-HJ-NP-Za-km-z]*\d)[1-9A-HJ-NP-Za-km-z]{25,34}(?![A-Za-z0-9])/,
+];
+
+/** True when "a nombre de", "em nome de" or "au nom de" near a bank word names no group: "a nombre de Juan Pérez". */
+function personalAccount(t: string): boolean {
+  for (const m of t.matchAll(/\b(?:a nombre de|em nome de|au nom de)\s+(?:(?:la|el|los|las|a|o|os|as|le|les|l|da|do|das|dos)\s+)?([a-zÀ-ɏ]+)/g)) {
+    const near = t.slice(Math.max(0, m.index - 120), m.index + m[0].length + 40);
+    if (BANK_WORDS.test(near) && !GROUP_WORDS.has(m[1])) return true;
+  }
+  return false;
+}
+
+/**
+ * Why a page asks for money the way scams do, or null (PAYMENT_ASKS, a
+ * wallet address, or a bank account in a person's name): "URGENT: Send
+ * Bitcoin/Zelle to help Hurricane Melissa victims", "Donate BTC to
+ * bc1q...", "deposita en mi cuenta Banesco ... a nombre de Juan Pérez".
+ */
+export function paymentProblem(text: string): string | null {
+  const t = foldText(text).replace(/\s+/g, " ");
+  const ask = PAYMENT_ASKS.find(([re]) => re.test(t));
+  if (ask) return `asks for ${ask[1]}, as scams do`;
+  if (WALLET_ADDRESSES.some((re) => re.test(text))) return "asks for crypto, as scams do";
+  if (personalAccount(t)) return "asks for a transfer to a person's own account, as scams do";
+  return null;
+}
+
+/**
+ * What crowdfunding and giving platforms say on a person's campaign page,
+ * and a group's own page does not, in folded text: an invitation to start
+ * one's own fundraiser ("Start a fundraiser", "Lancer ma cagnotte", "Crie
+ * sua vaquinha", "Crea tu campaña", "Buat galang dana", "Kampanya
+ * oluştur") or a person credited as its creator ("Campaign created by",
+ * "Campagne créée par", "Vaquinha criada por").
+ */
+const PLATFORM_TEXT =
+  /\b(?:start|create|launch|set up)\s+(?:a|an|your|your own|my|own)\s+(?:fundraiser|fundraising page|campaign|crowdfunding campaign|project|appeal page)\b|\b(?:campaign|fundraiser|project|page)\s+(?:created|started|organi[sz]ed)\s+by\b|\bis organi[sz]ing this fundraiser\b|\b(?:lancer|creer|ouvrir)\s+(?:ma|une|votre|sa)\s+(?:cagnotte|collecte|campagne)\b|\b(?:campagne|cagnotte|collecte)\s+(?:creee|organisee|lancee)\s+par\b|\b(?:crie|criar|crie a|comece|comecar|abra|abrir)\s+(?:sua|uma|a sua)?\s*(?:vaquinha|campanha|vakinha)\b|\b(?:vaquinha|campanha)\s+criada\s+por\b|\b(?:crea|crear|inicia|iniciar|lanza|lanzar)\s+(?:tu|una|su)\s+(?:campana|colecta|recaudacion)\b|\b(?:campana|colecta)\s+(?:creada|organizada|iniciada)\s+por\b|\b(?:buat|mulai|bikin)\s+(?:galang dana|penggalangan dana|campaign)\b|\bkampanya(?:ni|n)?\s+(?:olustur|baslat)\b|\bspendenaktion\s+(?:starten|erstellen)\b|\beigene spendenaktion\b|\b(?:crea|avvia|apri)\s+una\s+raccolta fondi\b|\braccolta fondi\s+creata\s+da\b|プロジェクトを(?:始める|作成|立ち上げる)|クラウドファンディングを始める|起案者/;
+/** A person credited with a page as platforms do it, a first name and an initial: "Project by Andre W.", "Campagne de Youssef B.". */
+const PERSON_CREDIT = /\b(?:[Pp]roject|[Cc]ampaign|[Ff]undraiser|[Cc]ampagne|[Cc]agnotte|[Vv]aquinha|[Cc]ampanha|[Cc]ampaña)\s+(?:by|par|por|de|from)\s+\p{Lu}\p{Ll}+\s+\p{Lu}\.(?!\p{L})/u;
+
+/**
+ * Why a page reads as a person's campaign on a crowdfunding or giving
+ * platform, whatever its host, or null: its text invites visitors to start
+ * their own fundraiser, or credits a person as its creator (PLATFORM_TEXT,
+ * PERSON_CREDIT). Cotizi's "Campagne créée par Youssef B. ... Lancer ma
+ * cagnotte" and iSupportJamaica's "Project by Andre W. ... Start a
+ * project" are both.
+ */
+export function platformProblem(text: string): string | null {
+  const t = foldText(text).replace(/\s+/g, " ");
+  return PLATFORM_TEXT.test(t) || PERSON_CREDIT.test(text) ? "a person's campaign on a crowdfunding platform (it invites visitors to start their own, or credits a person)" : null;
+}
+
+/** A page's title without its site's name at either end: "Rebuild Eber Prep | Eber College" -> "Rebuild Eber Prep"; "" when it is only the site's name. */
+export function titleWithoutSite(name: string | undefined, title: string | undefined): string {
+  const n = cleanText(name, 80);
+  let t = cleanText(title, 160);
+  if (n) {
+    const sep = "\\s*[|–—:·•-]\\s*";
+    const e = n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    t = t.replace(new RegExp(`${sep}${e}$`, "i"), "").replace(new RegExp(`^${e}${sep}`, "i"), "").trim();
+    if (t.toLowerCase() === n.toLowerCase()) t = "";
+  }
+  return t;
+}
+
+/** Letters and digits of a text, folded, nothing else: "Kerala Children's Trust" -> "keralachildrenstrust". */
+function compact(text: string): string {
+  return foldText(text).replace(/[^\p{L}\p{N}]+/gu, "");
+}
+
+/** Labels of hosts that only say what kind of site it is (org, com, co, ac, edu, gov ...), which name no site. */
+const SUFFIX_LABEL = /^(?:[a-z]{1,3}|info|asso|gouv|govt|museum|coop|name)$/;
+
+/** The label of a host that names its site, letters only: "www.casadomenor-rj.org.br" -> "casadomenorrj"; "" when there is none. */
+function siteLabel(url: string): string {
+  try {
+    const labels = new URL(url).hostname.toLowerCase().replace(/^www\./, "").split(".");
+    for (let i = labels.length - 2; i >= 0; i--) if (!SUFFIX_LABEL.test(labels[i])) return compact(labels[i]);
+    return "";
+  } catch {
+    return "";
+  }
+}
+
+/**
+ * What a page's title says of the page itself: its title without its
+ * site's name (titleWithoutSite), and, when it has several parts ("Doe |
+ * Casa do Menor Rio de Janeiro"), without a part that is the site's name:
+ * one that starts or ends with its og:site_name, or that is its host's
+ * name ("Kerala Children's Trust" on keralachildrenstrust.org). A group's
+ * own name may hold a word of the disaster's title, and says nothing of
+ * the page.
+ */
+export function ownTitle(self: { name?: string; title?: string }, url: string): string {
+  const t = titleWithoutSite(self.name, self.title);
+  // " - " between two years is a span ("2025 - 2026"), not a separator.
+  const parts = t
+    .split(/\s+[|–—·•]\s+|(?<!\d)\s+-\s+(?!\d)|\s*\|\s*|\s*::\s*/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+  if (parts.length < 2) return t;
+  const name = compact(self.name ?? "");
+  const label = siteLabel(url);
+  const isSite = (part: string) => {
+    const c = compact(part);
+    return Boolean(c) && ((label !== "" && (c === label || (c.length >= 6 && label.includes(c)))) || (name.length >= 4 && (c.startsWith(name) || c.endsWith(name))));
+  };
+  return parts.some(isSite) ? parts.filter((p) => !isSite(p)).join(" | ") : t;
+}
+
+/**
+ * Why a URL may not be shown as this disaster's local group page by its
+ * address alone, or null: localUrlProblem, then its path
+ * (earlierEventProblem; numbers alone in it are no years: readablePath).
+ */
+export function localAddressProblem(raw: string, ctx: LocalContext, rules: Pick<LocalPageRules, "type" | "minYear" | "ownPlaces" | "languages">): string | null {
   const problem = localUrlProblem(raw, ctx);
   if (problem) return problem;
-  return earlierEventProblem([decodeURIComponentSafe(new URL(raw).pathname)], rules, ctx.donation);
+  return earlierEventProblem([readablePath(raw)], rules, ctx.donation);
 }
 
 /** A URL path with its escapes undone, or as it is when they are broken. */
@@ -1504,10 +2694,15 @@ function decodeURIComponentSafe(path: string): string {
  * (the model's words can only take a page away, never name one), or a date
  * the search gave it from well before the disaster started.
  */
-export function localPageProblem(p: Pick<DirectPage, "url" | "org" | "published">, d: Pick<Disaster, "started">, ctx: LocalContext, rules: Pick<LocalPageRules, "type" | "minYear">): string | null {
+export function localPageProblem(
+  p: Pick<DirectPage, "url" | "org" | "published">,
+  d: Pick<Disaster, "started">,
+  ctx: LocalContext,
+  rules: Pick<LocalPageRules, "type" | "minYear" | "ownPlaces" | "languages">,
+): string | null {
   const address = localAddressProblem(p.url, ctx, rules);
   if (address) return address;
-  const claimed = protectedNameIn(p.org);
+  const claimed = protectedNameIn(p.org, ctx.societyNames, ctx.societyAcronyms) ?? (mixedScriptWord(p.org) ? "mixed scripts" : null);
   if (claimed) return `the search names it for an official body or a platform (${claimed})`;
   if (datedBefore(p.published, d)) return `dated ${p.published?.slice(0, 10)}, before the disaster`;
   return null;
@@ -1569,13 +2764,29 @@ async function checkLocalOnce(url: string, deps: FetchDeps, ctx: LocalContext, r
       return "retry";
     }
     const self = readPageSelf(html);
-    if (self.article) return fail("a news article or blog post");
-    const claimed = protectedNameIn(self.name) ?? protectedNameIn(self.title);
-    if (claimed) return fail(`its own name or title claims an official body or a platform (${claimed})`);
-    const earlier = earlierEventProblem([self.title, self.heading], rules, ctx.donation);
+    if (self.news) return fail("a news article");
+    const claimed = [self.name, self.title, self.heading].map((t) => protectedNameIn(t, ctx.societyNames, ctx.societyAcronyms)).find((c) => c !== null);
+    if (claimed) return fail(`its own name, title or heading claims an official body or a platform (${claimed})`);
+    const mixed = [self.name, self.title, self.heading].map(mixedScriptWord).find((w) => w !== null);
+    if (mixed) return fail(`its own name, title or heading mixes Latin with Cyrillic or Greek letters in one word (${mixed}), as look-alikes do`);
+    const text = visibleText(html);
+    const scam = paymentProblem(`${self.title} ${self.heading} ${text}`);
+    if (scam) return fail(scam);
+    const platform = platformProblem(text);
+    if (platform) return fail(platform);
+    const title = ownTitle(self, current);
+    const earlier = earlierEventProblem([title, self.heading], rules, ctx.donation);
     if (earlier) return fail(earlier);
+    const own = [title, self.heading, readablePath(url), readablePath(current)];
+    const published = publishedOf(html);
+    const dated = pageDateProblem(published ?? timeOf(html), own, rules, ctx.donation, modifiedOf(html));
+    if (dated) return fail(dated);
+    const lead = published ? null : leadYearProblem(html, own, rules, ctx.donation);
+    if (lead) return fail(lead);
     const words = donationWordsIn(html);
     if (words.length === 0) return fail("no donation word on the page");
+    const topic = topicProblem(own, text, rules, ctx.donation);
+    if (topic) return fail(topic);
     const place = placeNamedIn(html, rules.names);
     if (!place) return fail("names none of the disaster's places");
     return {
@@ -1593,10 +2804,18 @@ async function checkLocalOnce(url: string, deps: FetchDeps, ctx: LocalContext, r
  * The live check of a local group's page: fetched like a reader's browser,
  * following at most three redirects by hand, each on the same site and
  * itself allowed (localAddressProblem). It passes when the final answer is
- * 200 HTML that is no news article or post, whose own name and title
- * claim no official body or platform, whose title and heading name no
- * older year, other storm or other kind of disaster (earlierEventProblem),
- * and that has a donation word and one of the disaster's place names. The
+ * 200 HTML that is no news article (by its JSON-LD), whose own name, title
+ * and heading claim no official body or platform (protectedNameIn) and mix
+ * no Latin with Cyrillic or Greek letters in a word (mixedScriptWord), that
+ * asks for no crypto, gift card codes, Zelle, money transfers or transfers
+ * to a person (paymentProblem), that reads as no person's campaign on a
+ * platform (platformProblem), whose title without its site's name
+ * (ownTitle) and heading name no older year, other country, other storm or
+ * other kind of disaster (earlierEventProblem), whose own date is not well
+ * before the disaster unless it was rewritten for it (pageDateProblem; for
+ * a page without one, leadYearProblem), and that has a donation word, is
+ * about the disaster by its own title, heading or address (topicProblem)
+ * and names one of the disaster's places. The
  * verdict keeps the page's own name and title, which the site shows. A
  * bot wall (401, 403) fails: an unknown group's page is never taken
  * unseen. Network failures, 429 and 5xx are tried once more after
@@ -1614,9 +2833,12 @@ export async function checkLocalPage(url: string, deps: FetchDeps, ctx: LocalCon
   return null;
 }
 
-/** The registry's verdict key for a local group's page, per disaster, since the place test is the disaster's. */
+/** The version of the live check's rules: verdicts made under older rules are not reused (their keys differ), and age out of the registry. */
+export const LOCAL_RULES_VERSION = 3;
+
+/** The registry's verdict key for a local group's page, per disaster (the place test is the disaster's) and per version of the rules. */
 export function localVerdictKey(disasterId: string, url: string): string {
-  return `local:${disasterId}:${urlKey(url)}`;
+  return `local${LOCAL_RULES_VERSION}:${disasterId}:${urlKey(url)}`;
 }
 
 /**
@@ -1670,15 +2892,7 @@ export function localOrg(v: Pick<DonationVerdict, "name">, url: string): string 
  * Prep"), else "Donation page on <host>".
  */
 export function localLabel(v: Pick<DonationVerdict, "name" | "title">, url: string): string {
-  const name = cleanText(v.name, 80);
-  let title = cleanText(v.title, 160);
-  if (name) {
-    const sep = "\\s*[|–—:·•-]\\s*";
-    const n = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    title = title.replace(new RegExp(`${sep}${n}$`, "i"), "").replace(new RegExp(`^${n}${sep}`, "i"), "").trim();
-    if (title.toLowerCase() === name.toLowerCase()) title = "";
-  }
-  return cleanText(title, 90) || `Donation page on ${bareHost(url)}`;
+  return cleanText(titleWithoutSite(v.name, v.title), 90) || `Donation page on ${bareHost(url)}`;
 }
 
 // ---------------------------------------------------------------------------
@@ -1697,17 +2911,53 @@ export interface DirectInput {
   pressNames?: Record<string, string>;
   /** Hosts of the site's own news articles. */
   newsHosts?: ReadonlySet<string>;
+  /** The places' own names from the geocoder's cache, by place name (geocode.ts localPlaceNames). */
+  localNames?: Readonly<Record<string, readonly string[]>>;
+  /** Each country's press language (pipeline/config/languages.json), in which its pages are read for other countries' names too. */
+  pressLanguages?: Readonly<Record<string, string>>;
 }
 
 function localContext(input: DirectInput, registry: DonationRegistry): LocalContext {
-  return { donation: input.ctx, societyHosts: Object.values(registry.societies).flatMap((s) => s.hosts), newsHosts: input.newsHosts };
+  const societies = Object.values(registry.societies);
+  const hosts = societies.flatMap((s) => s.hosts);
+  return { donation: input.ctx, societyHosts: hosts, societyNames: societies.map((s) => s.name), societyAcronyms: societyAcronyms(hosts), newsHosts: input.newsHosts };
 }
 
-/** What a disaster's local pages are held to: its place names (placeNames, with its title's places), its type and its year. */
-export function localRules(input: Pick<DirectInput, "disaster" | "ctx" | "countryNames" | "pressNames">): LocalPageRules {
+/** True when a place's name is made of place words of the disaster's title ("Chiang Rai" for "Floods in Chiang Rai, Thailand"). */
+function isTitlePlace(name: string, eventWords: ReadonlySet<string>): boolean {
+  const words = asciiWords(name).filter((w) => w.length >= 3 && !NOT_EVENT_WORDS.has(w));
+  return words.length > 0 && words.every((w) => eventWords.has(w));
+}
+
+/**
+ * What a disaster's local pages are held to: its place names (placeNames,
+ * with its title's places and the places' own names), the names of its
+ * title's places in any script and its storms' other names (titleNames),
+ * its type, its year and its start, its own place names (ownPlaces: its
+ * places, their provinces and own names, its title's places), and the
+ * languages its pages are read in for other countries' names
+ * (nameLanguages).
+ */
+export function localRules(input: Pick<DirectInput, "disaster" | "ctx" | "countryNames" | "pressNames" | "localNames" | "pressLanguages">): LocalPageRules {
+  const d = input.disaster;
   const words = input.ctx.eventWords ?? [];
-  const names = placeNames(input.disaster, input.countryNames, input.pressNames, [...titlePlaces(input.disaster.title, words), ...words]);
-  return { names, type: input.disaster.type, minYear: eventYear(input.disaster) };
+  const asWritten = titlePlaces(d.title, words);
+  const local = input.localNames ?? {};
+  const names = placeNames(d, input.countryNames, input.pressNames, [...asWritten, ...words], local);
+  const title = new Set(words);
+  const ownNames = (d.places ?? []).filter((p) => isTitlePlace(p.name, title)).flatMap((p) => localFormsOf(local, p.name));
+  const inTitle = new Set(asciiWords(d.title));
+  const aliases = (input.ctx.stormNames ?? []).filter((n) => !inTitle.has(n));
+  const ownPlaces = [...disasterPlaceNames(d), ...(d.places ?? []).flatMap((p: Place) => localFormsOf(local, p.name)), ...asWritten];
+  return {
+    names,
+    titleNames: [...new Set([...asWritten, ...ownNames, ...aliases])],
+    type: d.type,
+    minYear: eventYear(d),
+    started: d.started,
+    ownPlaces: [...new Set(ownPlaces)],
+    languages: nameLanguages(d.countries, input.pressLanguages),
+  };
 }
 
 /** Projects from two sources taken in turn, so both are seen within their shared cap. */
@@ -1721,9 +2971,9 @@ function alternate<T>(a: T[], b: T[]): T[] {
  * A disaster's direct links from the caches alone, for buildDonations to
  * order and cap: GoFundMe's from its crisis page; projects, GlobalGiving's
  * and the crisis page's partners' in turn; then local groups' pages with a
- * fresh passing verdict whose every hop is still allowed and whose own name
- * and title still pass (today's rules apply to cached verdicts too), shown
- * by the page's own name and title.
+ * fresh passing verdict under today's rules (localVerdictKey) whose every
+ * hop is still allowed and whose own name and title still pass, shown by
+ * the page's own name and title.
  */
 export function buildDirectLinks(input: DirectInput, registry: DonationRegistry, now: string): DonationLink[] {
   const d = input.disaster;
@@ -1742,7 +2992,8 @@ export function buildDirectLinks(input: DirectInput, registry: DonationRegistry,
     if (!v?.ok || !verdictFresh(v, now)) continue;
     const start = new URL(p.url).hostname;
     if (!v.chain.every((u) => hopAllowed(start, u, local) && !localAddressProblem(u, local, rules))) continue;
-    if (protectedNameIn(v.name) || protectedNameIn(v.title) || earlierEventProblem([v.title ?? ""], rules, input.ctx)) continue;
+    if ([v.name, v.title].some((t) => protectedNameIn(t, local.societyNames, local.societyAcronyms) !== null || mixedScriptWord(t) !== null) || paymentProblem(v.title ?? "")) continue;
+    if (earlierEventProblem([ownTitle(v, p.url)], rules, input.ctx)) continue;
     locals.push({ label: localLabel(v, p.url), url: p.url, org: localOrg(v, p.url), kind: "local", note: localNote(v.place), via: "research", forEvent: true });
   }
   return [...(hub ? gofundmeLinks(hub, d.started) : []), ...alternate(globalGiving, hub ? partnerLinks(hub) : []), ...locals];
