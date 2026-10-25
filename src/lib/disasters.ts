@@ -295,7 +295,7 @@ export function safeDonations(links: readonly DonationLink[]): DonationLink[] {
   return out;
 }
 
-/** True for a fundraiser, a relief project or a local group's own page: giving that goes straight to the people affected. */
+/** True for a fundraiser, a relief project or a charity's or local group's own page: giving that goes straight to the people affected. */
 export function isDirect(link: Pick<DonationLink, "kind">): boolean {
   return GROUP_OF[link.kind] === "direct";
 }
@@ -332,7 +332,7 @@ export function groupDonations(links: readonly DonationLink[]): DonationGroup[] 
 const DIRECT_NOTE: Partial<Record<DonationLink["kind"], string>> = {
   fundraiser: "On GoFundMe's verified list for this disaster",
   project: "Listed by a giving platform that vets its partners",
-  local: "A local group's own page. Global View checked it is live, but cannot vouch for the group.",
+  local: "A charity's or local group's own page for this disaster. Global View checked it is live, but cannot vouch for the group.",
 };
 
 /**
@@ -344,7 +344,7 @@ export function donationNote(link: Pick<DonationLink, "kind" | "note">): string 
   return note || (isDirect(link) ? (DIRECT_NOTE[link.kind] ?? "") : "");
 }
 
-const DIRECT_SOURCES = "come from GoFundMe's verified lists, GlobalGiving and local groups' own pages, all checked automatically.";
+const DIRECT_SOURCES = "come from GoFundMe's verified lists, GlobalGiving, and charities' and local groups' own pages, all checked automatically.";
 const OFFICIAL_SOURCES = "come from the Red Cross and UN registries, or are official pages checked against an allowlist.";
 
 /**

@@ -129,8 +129,9 @@ export interface AppealRef {
  * links: fundraiser (a fundraiser or relief fund on GoFundMe, from GoFundMe's
  * own verified page for the disaster), project (a GlobalGiving project or
  * fund for it, or a nonprofit's page for it that GoFundMe's page lists as a
- * vetted partner) and local (a local organisation's, school's or community
- * group's own donation page for it, found by research and live-checked).
+ * vetted partner) and local (a charity's or a local organisation's,
+ * school's or community group's own donation page for it, found by
+ * research and live-checked).
  */
 export type DonationKind = "appeal" | "society" | "un" | "government" | "agency" | "fundraiser" | "project" | "local";
 

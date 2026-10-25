@@ -16,7 +16,19 @@ import type { FetchDeps } from "../googlenews";
 import { writeCompactJson, writeJson } from "../io";
 import type { CountryResolver } from "../resolve";
 import { averageResearchCost, canSpend, noteResearch, researchAllowance, type Budget, type Ledger } from "../spend";
-import { GOFUNDME_CACHE_PATH, buildDirectLinks, hubWanted, prepareDirectLinks, readGoFundMeCache, refreshGoFundMe, writeGoFundMeCache, type DirectInput, type GoFundMeCache } from "./direct";
+import {
+  GOFUNDME_CACHE_PATH,
+  MAX_PAGE_LOG_LINES,
+  buildDirectLinks,
+  cappedLog,
+  hubWanted,
+  prepareDirectLinks,
+  readGoFundMeCache,
+  refreshGoFundMe,
+  writeGoFundMeCache,
+  type DirectInput,
+  type GoFundMeCache,
+} from "./direct";
 import {
   REGISTRY_PATH,
   buildDonations,
@@ -477,7 +489,9 @@ async function fetchFeeds(run: DisasterRun, snapshots: Snapshots): Promise<{ eve
  * search failed a day or more ago) get the missing ones: at most
  * MAX_DONATION_BACKFILL disasters, and never more than the run's cap,
  * within the same allowance and time limit. The registry gives each
- * donation search its official sites. Updates cache and attempts.
+ * donation search its official sites. Lines about single pages a direct
+ * search named but could not keep go to pageLog (capped per run). Updates
+ * cache and attempts.
  */
 async function runResearch(
   run: DisasterRun,
@@ -486,6 +500,7 @@ async function runResearch(
   attempts: Record<string, string>,
   paths: CachePaths,
   registry: DonationRegistry,
+  pageLog: (msg: string) => void,
 ): Promise<number> {
   const { ai, ledger, budget, now, log } = run;
   if (!ai || run.offline) return 0;
@@ -531,7 +546,7 @@ async function runResearch(
   const searchDirect = async (d: Disaster): Promise<void> => {
     const entry = cache[d.id];
     if (!entry) return;
-    const found = await searchDirectPages(ai, d, { countryNames: run.countryNames, now, entry, log });
+    const found = await searchDirectPages(ai, d, { countryNames: run.countryNames, now, entry, log, pageLog });
     if (found === null) {
       attempts[directAttemptKey(d.id)] = now;
       log(`  direct search failed for ${d.id}; retried after ${RETRY_FAILED_HOURS} h`);
@@ -693,7 +708,9 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   const cache = readResearchCache(paths.research);
   const attempts = pruneAttempts(readAttempts(paths.attempts), now);
   let registry: DonationRegistry = readRegistry(paths.registry);
-  await runResearch(run, disasters, cache, attempts, paths, registry);
+  // Lines about single direct pages (one a search could not keep, one the rules refused), at most MAX_PAGE_LOG_LINES a run.
+  const pageLog = cappedLog(log);
+  await runResearch(run, disasters, cache, attempts, paths, registry, pageLog.line);
   const enriched: Disaster[] = [];
   for (const d of disasters) {
     const entry = cache[d.id];
@@ -711,8 +728,10 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
   if (!run.offline) registry = await refreshRegistry(registry, deps, now, run.resolve, { probeCodes: [...run.globeCodes] });
   // Direct giving: GoFundMe's crisis pages by fixed rule (no model, so also
   // without a key; a page a disaster wants by its name and date is read
-  // first), then GlobalGiving's and local groups' pages from the direct
-  // search, held to direct.ts's rules.
+  // first), then GlobalGiving's, charities' and local groups' pages from the
+  // direct search and the other searches' pages off the official allowlist,
+  // held to direct.ts's rules. Each disaster's outcome is logged, and each
+  // refused page on the capped page log.
   const gov = loadGovernmentDomains();
   const contexts = new Map<string, DonationContext>(disasters.map((d) => [d.id, donationContext(d.countries, registry, gov, { title: d.title, countryNames: run.countryNames, appeals: d.appeals })]));
   const contextOf = (d: Disaster) => contexts.get(d.id) as DonationContext;
@@ -729,14 +748,16 @@ export async function updateDisasters(run: DisasterRun): Promise<DisastersFile> 
     const localNames = localPlaceNames(geocodeCache, d.places);
     const direct: DirectInput = { disaster: d, entry: cache[d.id], gofundme, ctx: contextOf(d), countryNames: run.countryNames, pressNames, pressLanguages, newsHosts, localNames };
     if (run.offline || checks >= MAX_DONATION_CHECKS || Date.now() > (run.deadline ?? Infinity)) {
-      d.donate = buildDonations({ ...donationInput(d, cache[d.id], run.countryNames), direct: buildDirectLinks(direct, registry, now) }, registry, now, gov);
+      const links = buildDirectLinks(direct, registry, now, { log, page: pageLog.line });
+      d.donate = buildDonations({ ...donationInput(d, cache[d.id], run.countryNames), direct: links }, registry, now, gov);
       continue;
     }
     const before = Object.keys(registry.verdicts).length;
-    const links = await prepareDirectLinks(direct, registry, deps, now, { unreachable });
+    const links = await prepareDirectLinks(direct, registry, deps, now, { unreachable, pageLog: pageLog.line });
     d.donate = await prepareDonations({ ...donationInput(d, cache[d.id], run.countryNames), direct: links }, registry, deps, now, { maxChecks: 3, unreachable, governmentDomains: gov });
     checks += Math.max(0, Object.keys(registry.verdicts).length - before);
   }
+  if (pageLog.omitted() > 0) log(`Direct pages: ${pageLog.omitted()} more lines about single pages left out (at most ${MAX_PAGE_LOG_LINES} a run)`);
 
   const file: DisastersFile = { updated: now, fetched, disasters };
   writeCompactJson(outPath, file);

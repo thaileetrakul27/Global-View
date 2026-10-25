@@ -659,7 +659,7 @@ describe("updateDisasters", () => {
     expect(webResearch.mock.calls[1][0]).toMatchObject({ maxSearches: 3, purpose: "research" });
     // The direct search, on the whole web.
     expect(isDirect(webResearch.mock.calls[2][0])).toBe(true);
-    expect(webResearch.mock.calls[2][0]).toMatchObject({ maxSearches: 3, purpose: "research" });
+    expect(webResearch.mock.calls[2][0]).toMatchObject({ maxSearches: 5, purpose: "research" });
     expect(webResearch.mock.calls[2][0].allowedDomains).toBeUndefined();
     // It found nothing, so it needed no parse.
     expect(parse).toHaveBeenCalledTimes(2);
@@ -742,7 +742,7 @@ describe("updateDisasters", () => {
         url: LOCAL,
         org: "Cox's Bazar Youth Forum",
         kind: "local",
-        note: "A local group's own page. Global View checked it is live and names Cox's Bazar, but cannot vouch for the group.",
+        note: "A charity's or local group's own page for this disaster. Global View checked it is live and names Cox's Bazar, but cannot vouch for the group.",
         via: "research",
         forEvent: true,
       },
@@ -774,6 +774,62 @@ describe("updateDisasters", () => {
     expect(file.disasters[0].donate.find((l) => l.kind === "local")).toMatchObject({ url: LOCAL, org: "কক্সবাজার যুব ফোরাম", label: "বন্যার্তদের জন্য দান করুন" });
     const registry = JSON.parse(fs.readFileSync(path.join(dirs.cacheDir, "donation-registry.json"), "utf8")) as DonationRegistry;
     expect(registry.verdicts[localVerdictKey(ID, LOCAL)]).toMatchObject({ ok: true, place: "কক্সবাজার" });
+  });
+
+  it("lists a charity's appeal the research found off the official allowlist as a direct page once it passes the live check (live run 40200477306)", async () => {
+    const APPEAL = "https://www.bengalrelief.org/appeals/coxs-bazar-floods/";
+    // Researched and searched in an earlier run: no model call this run.
+    const cached = entry({ donation: [{ url: APPEAL, org: "Bengal Relief", kind: "agency", note: "Appeal for the Cox's Bazar floods" }], donationSearched: NOW, directSearched: NOW });
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } }, research: { [ID]: cached } });
+    const page = `<title>Cox's Bazar Floods Appeal | Bengal Relief</title><meta property="og:site_name" content="Bengal Relief"><h1>Cox's Bazar floods appeal</h1><a>Donate now</a>`;
+    const fetchMock = vi.fn(async (url: string | URL | Request) => {
+      if (String(url) === APPEAL) return new Response(page, { status: 200, headers: { "content-type": "text/html" } });
+      throw new Error("network down");
+    });
+    const lines: string[] = [];
+    const log = (m: string) => lines.push(m);
+    const file = await updateDisasters(runWith(dirs, { countryNames: { BD: "Bangladesh" }, log, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log } }));
+    expect(file.disasters[0].donate[0]).toEqual({
+      label: "Cox's Bazar Floods Appeal",
+      url: APPEAL,
+      org: "Bengal Relief",
+      kind: "local",
+      note: "A charity's or local group's own page for this disaster. Global View checked it is live and names Cox's Bazar, but cannot vouch for the group.",
+      via: "research",
+      forEvent: true,
+    });
+    // The official rules still turn it away; the direct rules take it.
+    expect(lines).toContain(`Donation page ${APPEAL}: rejected (host not on the allowlist); left to the direct checks`);
+    expect(lines).toContain(`  direct pages for ${ID}: 1 candidate (0 from the direct search, 1 from the other searches): 1 passed, 0 refused, 0 wait for a live check`);
+  });
+
+  it("never shows a GlobalGiving page the research named, and does not leave it to the direct checks", async () => {
+    // The research's URLs are the model's alone, and a GlobalGiving page gets no live check.
+    const GG = "https://www.globalgiving.org/projects/bangladesh-flood-relief-2026/";
+    const cached = entry({ donation: [{ url: GG, org: "GlobalGiving", kind: "agency", note: "Vetted relief fund" }], donationSearched: NOW, directSearched: NOW });
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } }, research: { [ID]: cached } });
+    const fetchMock = vi.fn(async (url: string | URL | Request): Promise<Response> => {
+      throw new Error(`network down for ${String(url)}`);
+    });
+    const lines: string[] = [];
+    const log = (m: string) => lines.push(m);
+    const file = await updateDisasters(runWith(dirs, { countryNames: { BD: "Bangladesh" }, log, deps: { fetch: fetchMock as unknown as typeof fetch, sleep: vi.fn(async () => {}), log } }));
+    expect(file.disasters[0].donate.length).toBeGreaterThan(0);
+    expect(file.disasters[0].donate.filter((l) => l.url.includes("globalgiving"))).toEqual([]);
+    expect(fetchMock.mock.calls.map(([u]) => String(u))).not.toContain(GG);
+    expect(lines).toContain(`Donation page ${GG}: rejected (host not on the allowlist)`);
+    expect(lines.filter((l) => l.includes(GG))).toHaveLength(1);
+    expect(lines.some((l) => l.startsWith(`  direct pages for ${ID}:`))).toBe(false);
+  });
+
+  it("logs at most 40 lines about single direct pages a run, and how many more it left out", async () => {
+    const news = Array.from({ length: 45 }, (_, i) => ({ url: `https://www.bdflood-updates.org/news/story-${i}`, org: "Updates", kind: "" as const, note: "" }));
+    const dirs = folders({ snapshot: { ifrc: { fetched: "2026-10-20T09:00:00.000Z", events: [ifrcEvent()] } }, research: { [ID]: entry({ donation: news }) } });
+    const lines: string[] = [];
+    await updateDisasters(runWith(dirs, { offline: true, log: (m) => lines.push(m) }));
+    expect(lines.filter((l) => l.startsWith("Direct page "))).toHaveLength(40);
+    expect(lines).toContain(`Direct page ${news[0].url} (from the research or the donation search): rejected (a news article or blog post)`);
+    expect(lines).toContain("Direct pages: 5 more lines about single pages left out (at most 40 a run)");
   });
 
   it("tries a failed direct search again only after a day, keeping the research and the donation search", async () => {

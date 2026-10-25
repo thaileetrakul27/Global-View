@@ -28,9 +28,14 @@
 //                 to this disaster; the search's own date is no proof
 //                 (globalGivingProblem). GlobalGiving vets its local
 //                 partners. It refuses many scripted clients, so there is no
-//                 live check.
-//   local         a local organisation's, school's or community group's own
-//                 donation page the direct search returned, kept only when
+//                 live check, and a GlobalGiving page the other searches
+//                 named (their URLs are the model's, unchecked against the
+//                 search results) is never offered (allowlistMisses).
+//   local         a charity's or a local organisation's, school's, parish's
+//                 or community group's own donation page for this disaster
+//                 that the direct search returned, or that the research or
+//                 the official donation search found off donate.ts's
+//                 allowlist (allowlistMisses), kept only when
 //                 its URL is on no shared, social, blog, site-builder,
 //                 marketplace, news, crowdfunding, payment or official site,
 //                 has no official body's name in its host and no person's
@@ -55,7 +60,10 @@
 //
 // The integrator refreshes the GoFundMe cache once per run
 // (refreshGoFundMe), checks local pages (prepareDirectLinks) and passes the
-// links to donate.ts buildDonations, which orders and caps them.
+// links to donate.ts buildDonations, which orders and caps them. Each
+// disaster with candidates gets one line in the log (how many passed, were
+// refused or wait for a live check), and each refused page one line with
+// its reason, at most MAX_PAGE_LOG_LINES of those a run (cappedLog).
 //
 // Live findings (2026-10-25) behind these rules:
 //   - www.gofundme.com/c/act links the current crisis pages
@@ -88,7 +96,14 @@
 //   - WordPress (Yoast) marks every page og:type "article", GoFundMe's
 //     crisis pages too, and gives a group's own posts an Article node and
 //     article:published_time, so only a NewsArticle (or a news publisher's
-//     node) marks news; its WebPage node's datePublished dates the page.
+//     node) marks news; its WebPage node's datePublished dates the page;
+//   - the first live run (GitHub Actions run 40200477306) listed no direct
+//     page: seven direct searches kept none, while the research had found
+//     Penny Appeal USA's appeal for the Nuristan floods (pennyappealusa.org/
+//     campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/,
+//     published 2026-07-24) and donate.ts turned it away as off its
+//     allowlist. It passes every rule here, so such pages are now offered
+//     to these checks too (allowlistMisses).
 // A review of these rules (2026-10-25) found general charity pages, other
 // countries' and old disasters' pages, look-alikes in other languages and
 // scripts, and pages asking for crypto or Zelle accepted, and schools'
@@ -108,6 +123,7 @@ import { USER_AGENT } from "../googlenews";
 import { writeJson } from "../io";
 import {
   MAX_REDIRECTS,
+  NOT_ALLOWLISTED,
   NOT_EVENT_WORDS,
   SHARED_HOSTS,
   SHORTENERS,
@@ -118,6 +134,7 @@ import {
   countriesNamedIn,
   countrySpans,
   decodeEntities,
+  donationUrlProblem,
   donationWordsIn,
   foldText,
   hostClass,
@@ -135,7 +152,7 @@ import {
   type DonationVerdict,
   type PageCheck,
 } from "./donate";
-import type { DirectPage, ResearchEntry } from "./research";
+import type { DirectPage, DirectPageKind, ResearchEntry } from "./research";
 import { splitScripts } from "./geocode";
 import type { Disaster, DisasterType, DonationLink, Place } from "./types";
 
@@ -175,6 +192,8 @@ export const PAGE_BEFORE_DAYS = 14;
 export const MAX_FOUND_HUBS = 5;
 /** Live checks of local groups' pages per disaster per run; the rest use cached verdicts. */
 export const MAX_LOCAL_CHECKS = 3;
+/** Most log lines a run gives single direct pages (a page refused and why, a page the direct search's parse named but could not keep); the rest are counted. */
+export const MAX_PAGE_LOG_LINES = 40;
 /** The note on GoFundMe's crisis page and its verified fundraisers. */
 export const VERIFIED_NOTE = "Verified by GoFundMe's Trust & Safety team";
 /** The note on a GlobalGiving project. */
@@ -2843,8 +2862,9 @@ export function localVerdictKey(disasterId: string, url: string): string {
 
 /**
  * The live check with its cache in registry.verdicts (the caller writes
- * the registry): a pass is reused for 7 days, a failure for 1. A URL
- * localAddressProblem refuses fails at once and is not cached.
+ * the registry, and logs the verdict: prepareDirectLinks): a pass is
+ * reused for 7 days, a failure for 1. A URL localAddressProblem refuses
+ * fails at once and is not cached.
  */
 export async function verifyLocalPage(
   url: string,
@@ -2862,13 +2882,12 @@ export async function verifyLocalPage(
   const result = await checkLocalPage(url, deps, ctx, rules);
   if (!result) return false;
   registry.verdicts[key] = { ...result, checked: now };
-  deps.log(`Local page ${url}: ${result.ok ? "accepted" : "rejected"} (${result.reason})`);
   return result.ok;
 }
 
-/** The note on a local group's page. */
+/** The note on a charity's or local group's own page for the disaster. */
 export function localNote(place: string | undefined): string {
-  return `A local group's own page. Global View checked it is live and names ${place || "the disaster's place"}, but cannot vouch for the group.`;
+  return `A charity's or local group's own page for this disaster. Global View checked it is live and names ${place || "the disaster's place"}, but cannot vouch for the group.`;
 }
 
 /** The host of a URL without "www.". */
@@ -2901,7 +2920,7 @@ export function localLabel(v: Pick<DonationVerdict, "name" | "title">, url: stri
 
 export interface DirectInput {
   disaster: Pick<Disaster, "id" | "countries" | "type" | "title" | "places" | "started">;
-  /** Its research entry, with the direct search's pages (ResearchEntry.direct). */
+  /** Its research entry: the direct search's pages (ResearchEntry.direct), and the other searches' (donation, earlierSearch), whose pages off the official allowlist are candidates too (allowlistMisses). */
   entry: ResearchEntry | undefined;
   gofundme: GoFundMeCache;
   /** The disaster's allowlist context (donationContext with its title and every country's name). */
@@ -2967,36 +2986,204 @@ function alternate<T>(a: T[], b: T[]): T[] {
   return out;
 }
 
+/** A page's kind by its host alone, never a model's word: a page on globalgiving.org is GlobalGiving's, any other a charity's or local group's. */
+export function directKindOf(url: string): DirectPageKind {
+  let host: string;
+  try {
+    host = new URL(url).hostname.toLowerCase();
+  } catch {
+    return "local";
+  }
+  return host === "globalgiving.org" || host.endsWith(".globalgiving.org") ? "globalgiving" : "local";
+}
+
 /**
- * A disaster's direct links from the caches alone, for buildDonations to
- * order and cap: GoFundMe's from its crisis page; projects, GlobalGiving's
- * and the crisis page's partners' in turn; then local groups' pages with a
- * fresh passing verdict under today's rules (localVerdictKey) whose every
- * hop is still allowed and whose own name and title still pass, shown by
- * the page's own name and title.
+ * Pages the disaster's research or its official donation search found
+ * (its entry's earlierSearch, then donation, each URL once) that donate.ts
+ * turns away only because their host is on no official allowlist
+ * (donationUrlProblem gives NOT_ALLOWLISTED, so the URL is well formed and
+ * over https): a charity's own appeal for the disaster, such as Penny
+ * Appeal USA's for the Nuristan floods, is no official page but may be a
+ * direct one. They are offered to the direct checks as the direct
+ * search's local pages are, and held to every rule there, the live check
+ * among them: the model's org and note come along (the org can only take
+ * a page away, see localPageProblem), and they have no title or date,
+ * which those searches do not keep. No model is asked again.
+ *
+ * Only pages whose host makes them local (directKindOf) are offered. A
+ * GlobalGiving page gets no live check (globalGivingProblem judges its slug
+ * and the search's title), so it is shown only when the direct search
+ * returned it with its title (readDirectPages); these searches keep URLs
+ * the model wrote, never checked against what a search returned, so their
+ * GlobalGiving pages are left out.
  */
-export function buildDirectLinks(input: DirectInput, registry: DonationRegistry, now: string): DonationLink[] {
+export function allowlistMisses(entry: Partial<Pick<ResearchEntry, "donation" | "earlierSearch">> | undefined, ctx: DonationContext): DirectPage[] {
+  const out: DirectPage[] = [];
+  const keys = new Set<string>();
+  for (const r of [...(entry?.earlierSearch ?? []), ...(entry?.donation ?? [])]) {
+    if (typeof r?.url !== "string" || donationUrlProblem(r.url, ctx) !== NOT_ALLOWLISTED || directKindOf(r.url) !== "local") continue;
+    const key = urlKey(r.url);
+    if (keys.has(key)) continue;
+    keys.add(key);
+    out.push({ url: r.url, org: cleanText(r.org, 100), kind: "local", note: cleanText(r.note, 200), title: "" });
+  }
+  return out;
+}
+
+/** A disaster's direct candidates: its direct search's pages, then the other searches' pages off the official allowlist (allowlistMisses), each URL once. */
+export function directCandidates(input: Pick<DirectInput, "entry" | "ctx">): DirectPage[] {
+  const own = input.entry?.direct ?? [];
+  const keys = new Set(own.map((p) => urlKey(p.url)));
+  return [...own, ...allowlistMisses(input.entry, input.ctx).filter((p) => !keys.has(urlKey(p.url)))];
+}
+
+/** A direct candidate left out, and why. */
+export interface DirectRefusal {
+  url: string;
+  reason: string;
+  /** It came from the research or the official donation search (allowlistMisses), not the direct search. */
+  other: boolean;
+}
+
+/** What became of a disaster's direct candidates (directCandidates), and its links. */
+export interface DirectOutcome {
+  /** GoFundMe's links, the projects and the local pages that passed, for buildDonations to order and cap. */
+  links: DonationLink[];
+  /** Candidates from the direct search, and from the other searches. */
+  fromSearch: number;
+  fromOther: number;
+  /** GlobalGiving's and local pages that passed. */
+  passed: number;
+  refused: DirectRefusal[];
+  /** Local pages that passed the address rules but have no fresh verdict yet: a live check is still to come. */
+  waiting: string[];
+}
+
+/**
+ * Why a local page with a fresh verdict is not shown under today's rules,
+ * or null when it may be: the live check failed, a hop it followed is no
+ * longer allowed, its own name or title now claims an official body or a
+ * platform or mixes scripts, its title asks for payment as scams do, or
+ * its title (without its site's name) names an earlier or another event.
+ */
+function verdictProblem(v: DonationVerdict, url: string, local: LocalContext, rules: LocalPageRules, ctx: DonationContext): string | null {
+  if (!v.ok) return `live check: ${v.reason}`;
+  const start = new URL(url).hostname;
+  if (!v.chain.every((u) => hopAllowed(start, u, local) && !localAddressProblem(u, local, rules))) return "a redirect it followed may no longer be shown";
+  for (const t of [v.name, v.title]) {
+    const claimed = protectedNameIn(t, local.societyNames, local.societyAcronyms);
+    if (claimed) return `its own name or title claims an official body or a platform (${claimed})`;
+    const mixed = mixedScriptWord(t);
+    if (mixed) return `its own name or title mixes Latin with Cyrillic or Greek letters in one word (${mixed})`;
+  }
+  return paymentProblem(v.title ?? "") ?? earlierEventProblem([ownTitle(v, url)], rules, ctx);
+}
+
+/**
+ * A disaster's direct links from the caches alone, and what became of each
+ * candidate: GoFundMe's links from its crisis page; projects,
+ * GlobalGiving's that pass globalGivingProblem and the crisis page's
+ * partners' in turn; then local pages that pass localPageProblem and have
+ * a fresh passing verdict under today's rules (localVerdictKey) whose every
+ * hop is still allowed and whose own name and title still pass
+ * (verdictProblem), shown by the page's own name and title.
+ */
+export function directOutcome(input: DirectInput, registry: DonationRegistry, now: string): DirectOutcome {
   const d = input.disaster;
   const hub = matchHub(input.gofundme, d, input.ctx);
-  const pages = input.entry?.direct ?? [];
-  const globalGiving = pages
-    .filter((p) => p.kind === "globalgiving" && globalGivingProblem(p, d, input.ctx) === null)
-    .map(globalGivingLink)
-    .filter((l): l is DonationLink => l !== null);
+  const pages = directCandidates(input);
+  const fromSearch = new Set((input.entry?.direct ?? []).map((p) => urlKey(p.url)));
+  const refused: DirectRefusal[] = [];
+  const refuse = (p: DirectPage, reason: string) => refused.push({ url: p.url, reason, other: !fromSearch.has(urlKey(p.url)) });
+  const globalGiving: DonationLink[] = [];
+  const locals: DonationLink[] = [];
+  const waiting: string[] = [];
   const local = localContext(input, registry);
   const rules = localRules(input);
-  const locals: DonationLink[] = [];
   for (const p of pages) {
-    if (p.kind !== "local" || localPageProblem(p, d, local, rules)) continue;
+    if (p.kind === "globalgiving") {
+      const problem = globalGivingProblem(p, d, input.ctx);
+      const link = problem ? null : globalGivingLink(p);
+      if (link) globalGiving.push(link);
+      else refuse(p, problem ?? "not a GlobalGiving project page");
+      continue;
+    }
+    const problem = localPageProblem(p, d, local, rules);
+    if (problem) {
+      refuse(p, problem);
+      continue;
+    }
     const v = registry.verdicts[localVerdictKey(d.id, p.url)];
-    if (!v?.ok || !verdictFresh(v, now)) continue;
-    const start = new URL(p.url).hostname;
-    if (!v.chain.every((u) => hopAllowed(start, u, local) && !localAddressProblem(u, local, rules))) continue;
-    if ([v.name, v.title].some((t) => protectedNameIn(t, local.societyNames, local.societyAcronyms) !== null || mixedScriptWord(t) !== null) || paymentProblem(v.title ?? "")) continue;
-    if (earlierEventProblem([ownTitle(v, p.url)], rules, input.ctx)) continue;
-    locals.push({ label: localLabel(v, p.url), url: p.url, org: localOrg(v, p.url), kind: "local", note: localNote(v.place), via: "research", forEvent: true });
+    if (!v || !verdictFresh(v, now)) {
+      waiting.push(p.url);
+      continue;
+    }
+    const why = verdictProblem(v, p.url, local, rules, input.ctx);
+    if (why) refuse(p, why);
+    else locals.push({ label: localLabel(v, p.url), url: p.url, org: localOrg(v, p.url), kind: "local", note: localNote(v.place), via: "research", forEvent: true });
   }
-  return [...(hub ? gofundmeLinks(hub, d.started) : []), ...alternate(globalGiving, hub ? partnerLinks(hub) : []), ...locals];
+  return {
+    links: [...(hub ? gofundmeLinks(hub, d.started) : []), ...alternate(globalGiving, hub ? partnerLinks(hub) : []), ...locals],
+    fromSearch: pages.filter((p) => fromSearch.has(urlKey(p.url))).length,
+    fromOther: pages.filter((p) => !fromSearch.has(urlKey(p.url))).length,
+    passed: globalGiving.length + locals.length,
+    refused,
+    waiting,
+  };
+}
+
+/** Where buildDirectLinks writes what became of the candidates: one line per disaster, and one per refused page (capped per run: cappedLog). */
+export interface DirectLogs {
+  log: (msg: string) => void;
+  page: (msg: string) => void;
+}
+
+/**
+ * Logs a disaster's outcome: when it had candidates, one line with how
+ * many came from each search, passed, were refused and wait for a live
+ * check; and one line per refused page with its reason, as donate.ts logs
+ * the official pages it refuses.
+ */
+export function logDirectOutcome(id: string, o: DirectOutcome, logs: DirectLogs): void {
+  const total = o.fromSearch + o.fromOther;
+  if (total === 0) return;
+  logs.log(
+    `  direct pages for ${id}: ${total} candidate${total === 1 ? "" : "s"} (${o.fromSearch} from the direct search, ${o.fromOther} from the other searches): ${o.passed} passed, ${o.refused.length} refused, ${o.waiting.length} wait for a live check`,
+  );
+  for (const r of o.refused) logs.page(`Direct page ${r.url}${r.other ? " (from the research or the donation search)" : ""}: rejected (${r.reason})`);
+}
+
+/**
+ * A disaster's direct links from the caches alone, for buildDonations to
+ * order and cap (directOutcome's links), and its outcome in the log when
+ * logs are given.
+ */
+export function buildDirectLinks(input: DirectInput, registry: DonationRegistry, now: string, logs?: DirectLogs): DonationLink[] {
+  const outcome = directOutcome(input, registry, now);
+  if (logs) logDirectOutcome(input.disaster.id, outcome, logs);
+  return outcome.links;
+}
+
+/** A log that passes on at most max lines and counts the rest. */
+export interface CappedLog {
+  line: (msg: string) => void;
+  /** Lines left out so far. */
+  omitted: () => number;
+}
+
+/** A log for lines about single pages: at most max of them a run (MAX_PAGE_LOG_LINES), so the run's log stays readable. */
+export function cappedLog(log: (msg: string) => void, max = MAX_PAGE_LOG_LINES): CappedLog {
+  let written = 0;
+  let omitted = 0;
+  return {
+    line: (msg) => {
+      if (written < max) {
+        written++;
+        log(msg);
+      } else omitted++;
+    },
+    omitted: () => omitted,
+  };
 }
 
 export interface PrepareDirectOptions {
@@ -3005,33 +3192,38 @@ export interface PrepareDirectOptions {
   pauseMs?: number;
   /** URL keys no verdict could be had for this run, shared across disasters (see donate.ts PrepareOptions). */
   unreachable?: Set<string>;
+  /** Where lines about single pages go (a refusal, a live check that could not be made); the run's capped log (cappedLog), else deps.log. */
+  pageLog?: (msg: string) => void;
 }
 
 /**
- * Live-checks the local groups' pages a disaster's direct search found
- * that have no fresh verdict (at most maxChecks, pausing between them),
- * then builds its direct links. Records verdicts in registry.verdicts; the
- * caller writes the registry.
+ * Live-checks the local pages among a disaster's direct candidates
+ * (directCandidates: its direct search's, then the other searches' pages
+ * off the official allowlist) that pass the address rules and have no
+ * fresh verdict, at most maxChecks, pausing between them; logs each pass.
+ * Then builds its direct links and logs what became of every candidate
+ * (buildDirectLinks). Records verdicts in registry.verdicts; the caller
+ * writes the registry.
  */
 export async function prepareDirectLinks(input: DirectInput, registry: DonationRegistry, deps: FetchDeps, now: string, opts: PrepareDirectOptions = {}): Promise<DonationLink[]> {
   const local = localContext(input, registry);
   const rules = localRules(input);
   const unreachable = opts.unreachable ?? new Set<string>();
+  const page = opts.pageLog ?? deps.log;
   let checks = 0;
-  for (const p of input.entry?.direct ?? []) {
+  for (const p of directCandidates(input)) {
     if (p.kind !== "local" || checks >= (opts.maxChecks ?? MAX_LOCAL_CHECKS)) continue;
-    const problem = localPageProblem(p, input.disaster, local, rules);
-    if (problem) {
-      deps.log(`Local page ${p.url}: rejected (${problem})`);
-      continue;
-    }
+    // A page the rules refuse is logged with the outcome below.
+    if (localPageProblem(p, input.disaster, local, rules)) continue;
     const key = localVerdictKey(input.disaster.id, p.url);
     const cached = registry.verdicts[key];
     if ((cached && verdictFresh(cached, now)) || unreachable.has(urlKey(p.url))) continue;
     checks++;
-    await verifyLocalPage(p.url, input.disaster.id, deps, local, rules, registry, now);
-    if (!registry.verdicts[key]) unreachable.add(urlKey(p.url));
+    await verifyLocalPage(p.url, input.disaster.id, { ...deps, log: page }, local, rules, registry, now);
+    const verdict = registry.verdicts[key];
+    if (!verdict) unreachable.add(urlKey(p.url));
+    else if (verdict.ok) deps.log(`Direct page ${p.url}: accepted (${verdict.reason})`);
     await deps.sleep(opts.pauseMs ?? 500);
   }
-  return buildDirectLinks(input, registry, now);
+  return buildDirectLinks(input, registry, now, { log: deps.log, page });
 }

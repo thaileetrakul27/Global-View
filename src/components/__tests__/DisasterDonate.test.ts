@@ -41,7 +41,7 @@ const OFFICIAL = [
   link({ url: "https://crisisrelief.un.org/", org: "UN Crisis Relief", kind: "un" }),
 ];
 const DIRECT = [
-  link({ url: "https://www.example.org/school-fund", org: "Ban Mae Rim School", label: "Rebuild our classrooms", kind: "local", via: "research", forEvent: true, note: "A local group's own page. Global View checked it is live and names Mae Rim, but cannot vouch for the group." }),
+  link({ url: "https://www.example.org/school-fund", org: "Ban Mae Rim School", label: "Rebuild our classrooms", kind: "local", via: "research", forEvent: true, note: "A charity's or local group's own page for this disaster. Global View checked it is live and names Mae Rim, but cannot vouch for the group." }),
   link({ url: "https://www.globalgiving.org/projects/thailand-flood-relief/", org: "GlobalGiving", label: "Thailand Flood Relief Fund", kind: "project", via: "platform", forEvent: true, note: "GlobalGiving vets its local partners" }),
   link({ url: "https://www.gofundme.com/f/mae-rim-families", org: "GoFundMe", label: "Help Mae Rim families", kind: "fundraiser", via: "platform", forEvent: true, note: "Verified by GoFundMe's Trust & Safety team" }),
 ];
@@ -68,7 +68,7 @@ describe("DisasterDonate", () => {
     expect(t).toContain("but cannot vouch for the group.");
     // A local page found by research is not called an official page.
     expect(t).not.toContain("checked as an official page");
-    expect(t).toContain("Direct pages come from GoFundMe's verified lists, GlobalGiving and local groups' own pages, all checked automatically.");
+    expect(t).toContain("Direct pages come from GoFundMe's verified lists, GlobalGiving, and charities' and local groups' own pages, all checked automatically.");
     expect(t).toContain("The others come from the Red Cross and UN registries");
   });
 
