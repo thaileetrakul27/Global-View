@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-24T21:17:31.742Z",
+  "updated": "2026-10-25T00:43:26.084Z",
   "fetched": {
-    "societies": "2026-10-24T21:17:31.742Z",
-    "uncr": "2026-10-24T21:17:31.742Z"
+    "societies": "2026-10-25T00:43:26.084Z",
+    "uncr": "2026-10-25T00:43:26.084Z"
   },
   "societies": {
     "AF": {
@@ -2873,47 +2873,6 @@
         "https://www.cruzrojamexicana.org.mx/donar"
       ]
     },
-    "honduras.un.org/es": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-23T21:53:40.347Z",
-      "chain": [
-        "https://honduras.un.org/es"
-      ]
-    },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-23T21:53:40.347Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-23T21:53:40.347Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
-    "ifrc.org/national-societies-directory/zimbabwe-red-cross-society": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-23T21:53:40.347Z",
-      "chain": [
-        "https://www.ifrc.org/national-societies-directory/zimbabwe-red-cross-society"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/emergencies/8038/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-23T21:53:40.347Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8038/overview"
-      ]
-    },
     "cruzrojavenezolana.org": {
       "ok": false,
       "reason": "HTTP 202",
@@ -3217,6 +3176,31 @@
         "https://www.ifrc.org/donate"
       ],
       "blocked": true
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
+      ],
+      "checked": "2026-10-25T00:43:26.084Z"
+    },
+    "ifrc.org/national-societies-directory/zimbabwe-red-cross-society": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/national-societies-directory/zimbabwe-red-cross-society"
+      ],
+      "blocked": true,
+      "checked": "2026-10-25T00:43:26.084Z"
+    },
+    "go.ifrc.org/emergencies/8038/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8038/overview"
+      ],
+      "checked": "2026-10-25T00:43:26.084Z"
     }
   }
 }

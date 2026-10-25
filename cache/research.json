@@ -304,7 +304,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|CN,JP,PH#afb26aec",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-cyclone-tc-1001341": {
@@ -354,7 +354,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-23T21:53:40.347Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -368,7 +368,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|CA,US#471b9aae",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -470,7 +470,7 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-drought-dr-1027449": {
@@ -484,7 +484,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-drought-dr-1027450": {
@@ -600,7 +600,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "earlierSearch": [
       {
         "url": "https://go.ifrc.org/",
@@ -717,7 +717,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "gdacs-earthquake-eq-1570077": {
@@ -760,7 +760,7 @@
       }
     ],
     "membersHash": "gdacs|VU#1dba2781",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-earthquake-eq-1570339": {
@@ -910,7 +910,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "gdacs-earthquake-eq-1571367": {
@@ -1021,7 +1021,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|US#dc9009ba",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-earthquake-eq-1571917": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1213,13 +1213,13 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#e4ddadc8",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-10-22T18:59:49.151Z",
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu City, Xizang, China, on 22 October 2026 (14:33 UTC), with its epicentre in the county. Xinhua reported power cuts and telecom disruption in the county seat, and collapsed houses in Maru Township. Xizang activated a Level-II emergency response, which was ongoing as of 23 October 2026. Casualty reports conflict and no official count has been given.",
+    "searches": 3,
+    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu City, Xizang (Tibet), China, on 22 October 2026 at 22:33 local time. As of 24 October, Nagqu municipal government reported 16 people killed and 76 injured. Rescue, resettlement and relocation were still underway. Local officials warned that cracked or leaning homes could collapse in aftershocks.",
     "ongoing": true,
     "places": [
       {
@@ -1227,22 +1227,92 @@
         "admin": "Xizang",
         "country": "CN",
         "kind": "district",
-        "impact": "epicentre; power cut and telecom disrupted in county seat"
+        "impact": "epicentre"
       },
       {
         "name": "Maru Township",
         "admin": "Xizang",
         "country": "CN",
-        "kind": "town",
-        "impact": "government office walls cracked; houses reported collapsed"
+        "kind": "district",
+        "impact": "earthquake-hit; temporary resettlement site"
+      },
+      {
+        "name": "Gangqie Township",
+        "admin": "Xizang",
+        "country": "CN",
+        "kind": "district",
+        "impact": "fire and rescue inspections underway"
+      },
+      {
+        "name": "Nagqu",
+        "admin": "Xizang",
+        "country": "CN",
+        "kind": "city",
+        "impact": "hundreds of homes reported collapsing"
       }
     ],
-    "figures": [],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "16",
+        "sourceName": "tribune.com.pk",
+        "sourceUrl": "https://tribune.com.pk/story/2636473/70-magnitude-earthquake-kills-16-in-tibets-nagqu-city"
+      },
+      {
+        "label": "Injured",
+        "value": "76",
+        "sourceName": "tribune.com.pk",
+        "sourceUrl": "https://tribune.com.pk/story/2636473/70-magnitude-earthquake-kills-16-in-tibets-nagqu-city"
+      },
+      {
+        "label": "Evacuated or relocated",
+        "value": "more than 12,000 people",
+        "sourceName": "china.org.cn",
+        "sourceUrl": "http://www.china.org.cn/2026-10/24/content_118747461.shtml"
+      },
+      {
+        "label": "Homes damaged or destroyed",
+        "value": "339 homes",
+        "sourceName": "china.org.cn",
+        "sourceUrl": "http://www.china.org.cn/2026-10/24/content_118747461.shtml"
+      }
+    ],
     "donation": [],
-    "sources": [],
-    "membersHash": "gdacs,news,usgs|CN#09fb162e",
-    "seen": "2026-10-24T21:17:31.742Z",
-    "donationSearched": "2026-10-22T18:59:49.151Z"
+    "sources": [
+      {
+        "name": "tribune.com.pk",
+        "url": "https://tribune.com.pk/story/2636473/70-magnitude-earthquake-kills-16-in-tibets-nagqu-city",
+        "title": "Injuries in China's Tibet rise to 76 after earthquake, death toll remains at 16"
+      },
+      {
+        "name": "news.cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-10-23/news-1RsWPFMFpy8/share_amp.html",
+        "title": "16 killed after M7.0 quake hits China's Xizang, rescue efforts underway"
+      },
+      {
+        "name": "vinnews.com",
+        "url": "https://vinnews.com/2026/10/22/a-7-0-earthquake-hits-chinas-tibet-killing-16-and-injuring-32/",
+        "title": "A 7.0 Earthquake Hits China’s Tibet, Killing 16 And Injuring 32"
+      },
+      {
+        "name": "tribuneindia.com",
+        "url": "https://www.tribuneindia.com/news/world/tibet-earthquake-76-injured-16-killed-after-7-0-magnitude-quake-hits-nakchu-rescue-operations-underway",
+        "title": "Tibet Earthquake: 76 injured, 16 killed after 7.0-magnitude quake hits Nakchu; rescue operations underway - The Tribune"
+      },
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261023/c36b4c23dfcd496f9117e9a8c8a69511/c.html",
+        "title": "16 dead, 76 injured after 7.0-magnitude quake hits China's Xizang-Xinhua"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake",
+        "title": "2026 Tibet earthquake"
+      }
+    ],
+    "membersHash": "gdacs,usgs|CN#36d8a31f",
+    "donationSearched": "2026-10-25T00:43:26.084Z",
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -1296,7 +1366,7 @@
       }
     ],
     "membersHash": "gdacs,news,usgs|IT#cb390233",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-earthquake-eq-1573554": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -1320,7 +1390,7 @@
       }
     ],
     "membersHash": "gdacs,news,usgs|VU#95030409",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1103888": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -1380,7 +1450,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|US#2b36b9e5",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104099": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1448,7 +1518,7 @@
       }
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104121": {
     "at": "2026-10-20T08:54:22.411Z",
@@ -1608,7 +1678,7 @@
       }
     ],
     "membersHash": "gdacs,news|EC#5dc7dd96",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104169": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -1921,7 +1991,7 @@
       }
     ],
     "membersHash": "gdacs|BR#3eb3019b",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104217": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2054,13 +2124,13 @@
       }
     ],
     "membersHash": "gdacs,news|CL#74420222",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104218": {
-    "at": "2026-10-20T14:35:40.688Z",
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Flooding in Argentina since 6 October 2026, from rivers swollen by heavy rains linked to El Niño. The Paraná was still rising on 16 October, with levels above evacuation marks in Ituzaingó. Corrientes province reported 222 people displaced in a Civil Defence survey on 16 October, and one death was reported. The latest report found is dated 17 October; no later report was found.",
+    "summary": "Flooding from high Paraná and Uruguay rivers has affected northeast Argentina since early October 2026, with evacuations in Corrientes, Chaco and Entre Ríos. Rivers remained high as of 24 October, and authorities expect high Paraná levels to persist for several months. Additional storms were forecast across the saturated river basin.",
     "ongoing": true,
     "places": [
       {
@@ -2068,82 +2138,128 @@
         "admin": "Corrientes",
         "country": "AR",
         "kind": "city",
-        "impact": "Water advanced over streets, sidewalks and homes in Anahí; 14 families self-evacuated"
+        "impact": "Paraná above evacuation level; Barrio Anahí flooded"
       },
       {
-        "name": "Ituzaingó",
+        "name": "Barranqueras",
+        "admin": "Chaco",
+        "country": "AR",
+        "kind": "city",
+        "impact": "251 people left homes"
+      },
+      {
+        "name": "Paso de los Libres",
         "admin": "Corrientes",
         "country": "AR",
         "kind": "town",
-        "impact": "Evacuations after Paraná reached 4.7 meters"
+        "impact": "Water reached street; above evacuation line"
       },
       {
         "name": "Itatí",
         "admin": "Corrientes",
         "country": "AR",
         "kind": "town",
-        "impact": "On alert"
+        "impact": "110 people evacuated to shelters"
+      },
+      {
+        "name": "Puerto Vilelas",
+        "admin": "Chaco",
+        "country": "AR",
+        "kind": "town",
+        "impact": "About 350 families affected"
+      },
+      {
+        "name": "Paso de la Patria",
+        "admin": "Corrientes",
+        "country": "AR",
+        "kind": "town",
+        "impact": "Inhabited areas affected"
       },
       {
         "name": "Concordia",
         "admin": "Entre Ríos",
         "country": "AR",
         "kind": "city",
-        "impact": "Evacuated people due to Uruguay River"
+        "impact": "Six families relocated"
       },
       {
-        "name": "Iguazú National Park",
-        "admin": "Misiones",
+        "name": "Monte Caseros",
+        "admin": "Corrientes",
         "country": "AR",
-        "kind": "site",
-        "impact": "Access closed as precaution due to high water"
+        "kind": "town",
+        "impact": "Urban roads cut as precaution"
+      },
+      {
+        "name": "Ituzaingó",
+        "admin": "Corrientes",
+        "country": "AR",
+        "kind": "town",
+        "impact": "Evacuations prompted"
+      },
+      {
+        "name": "Goya",
+        "admin": "Corrientes",
+        "country": "AR",
+        "kind": "city",
+        "impact": "Port at alert stage; low-lying land affected"
+      },
+      {
+        "name": "Misiones",
+        "country": "AR",
+        "kind": "region",
+        "impact": "More evacuations; border crossings closed"
+      },
+      {
+        "name": "Santa Fe",
+        "country": "AR",
+        "kind": "region",
+        "impact": "Three men missing after boat fall"
       }
     ],
     "figures": [
       {
-        "label": "Displaced",
-        "value": "222 people",
-        "sourceName": "eltribuno.com",
-        "sourceUrl": "https://www.eltribuno.com/nacionales/2026-10-16-20-46-0-inundaciones-en-corrientes-el-rio-parana-avanza-sobre-viviendas-y-hay-mas-de-220-desplazados"
+        "label": "Displaced in Chaco",
+        "value": "1,194 total (913 evacuated, 281 self-evacuated)",
+        "sourceName": "misionesonline.net",
+        "sourceUrl": "https://misionesonline.net/2026/10/24/crecida-de-los-rios-e-inundaciones-por-que-chaco-y-corrientes-atraviesan-una-emergencia-hidrica/"
       },
       {
-        "label": "Affected",
-        "value": "more than 400 people",
-        "sourceName": "elliberal.com.ar",
-        "sourceUrl": "https://www.elliberal.com.ar/nota/94588/2026/10/inundaciones-en-entre-rios-y-corrientes--evacuados-por-la-crecida-de-los-rios"
-      },
-      {
-        "label": "Deaths",
-        "value": "1",
-        "sourceName": "eltribuno.com",
-        "sourceUrl": "https://www.eltribuno.com/nacionales/2026-10-17-0-0-0-crecida-del-parana-el-agua-entro-a-corrientes-y-hay-cientos-de-evacuados"
+        "label": "Missing",
+        "value": "three men",
+        "sourceName": "paho.org",
+        "sourceUrl": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-19-october-2026"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "washingtontimes.com",
-        "url": "https://www.washingtontimes.com/news/2026/oct/16/el-nino-rains-flood-south-america-sending-residents-fleeing-cattle/",
-        "title": "El Nino rains flood South America, sending residents fleeing and cattle swimming"
+        "name": "myanmaritv.com",
+        "url": "https://www.myanmaritv.com/news/rising-parana-river-floods-towns-northeast-argentina-stranding-locals",
+        "title": "Rising Parana River floods towns in northeast Argentina, stranding locals"
       },
       {
-        "name": "lapoliticambiental.com.ar",
-        "url": "https://lapoliticambiental.com.ar/contenido/8189/corrientes-misiones-y-entre-rios-el-litoral-bajo-el-agua-por-la-furia-de-los-rio",
-        "title": "Corrientes, Misiones y Entre Ríos: El Litoral bajo el agua por la furia de los ríos Paraná y Uruguay y el impacto implacable de El Niño"
+        "name": "paho.org",
+        "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-19-october-2026",
+        "title": "Natural Hazards Monitoring - 19 October 2026 - PAHO/WHO"
       },
       {
-        "name": "eltribuno.com",
-        "url": "https://www.eltribuno.com/nacionales/2026-10-16-20-46-0-inundaciones-en-corrientes-el-rio-parana-avanza-sobre-viviendas-y-hay-mas-de-220-desplazados",
-        "title": "Inundaciones en Corrientes: el río Paraná avanza sobre viviendas y hay más de 220 desplazados"
+        "name": "misionesonline.net",
+        "url": "https://misionesonline.net/2026/10/24/crecida-de-los-rios-e-inundaciones-por-que-chaco-y-corrientes-atraviesan-una-emergencia-hidrica/",
+        "title": "Crecida de los ríos e inundaciones: por qué Chaco y Corrientes atraviesan una emergencia hídrica"
       },
       {
-        "name": "elonce.com",
-        "url": "https://www.elonce.com/sociedad/inundaciones-en-corrientes-el-rio-parana-avanza-sobre-viviendas-y-ya-hay-222-personas-desplazadas.htm",
-        "title": "Inundaciones en Corrientes: el río Paraná avanza sobre viviendas y ya hay más de 220 personas desplazadas"
+        "name": "infobae.com",
+        "url": "https://www.infobae.com/sociedad/2026/10/16/el-nino-las-aguas-del-parana-ingresaron-a-la-ciudad-de-corrientes-y-la-provincia-suma-mas-de-200-evacuados/",
+        "title": "El Niño: las aguas del río Paraná ingresaron a la ciudad de Corrientes y la provincia suma más de 200 evacuados - Infobae"
+      },
+      {
+        "name": "misionesonline.net",
+        "url": "https://misionesonline.net/2026/10/17/inundaciones-en-el-litoral-la-crecida-del-parana-deja-mas-de-400-evacuados-en-corrientes-y-pone-en-alerta-roja-a-chaco/",
+        "title": "Inundaciones en el Litoral"
       }
     ],
     "membersHash": "gdacs|AR#3cb2fe75",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104219": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2226,107 +2342,113 @@
     "seen": "2026-10-22T23:48:02.104Z"
   },
   "gdacs-flood-fl-1104220": {
-    "at": "2026-10-21T00:11:24.613Z",
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Flooding and storms have affected Elba island in Livorno province, Tuscany, since 7 October 2026, with reports of flooding at Cavo and Rio Marina. On 20 October heavy rain closed roads on Elba, and new storms were forecast for 20 to 21 October. No source confirms conditions on 21 October.",
+    "summary": "Heavy rain and wind hit Elba island and the Tuscan coast between 18 and 21 October 2026, damaging roads and beaches and leading to school closures in Rio. Patresi recorded up to 189 mm of rain in 24 hours. One soldier died in Italy after a falling tree struck him. A yellow alert for wind and sea surges ran until 08:00 on 22 October. No source confirms the end of the damage. The link to the alert's inland Tuscany area is unconfirmed.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Cavo",
-        "admin": "Livorno",
-        "country": "IT",
-        "kind": "town",
-        "impact": "seafront flooded; asphalt subsided; landslide on Parata road"
-      },
-      {
-        "name": "Rio Marina",
-        "admin": "Livorno",
-        "country": "IT",
-        "kind": "town",
-        "impact": "water entered ground floors; sports fields flooded"
-      },
       {
         "name": "Marciana",
         "admin": "Livorno",
         "country": "IT",
         "kind": "town",
-        "impact": "Costarella road closed to traffic"
+        "impact": "Roads cut, damage to property, beach eroded"
       },
       {
-        "name": "Marciana Marina",
+        "name": "Pomonte",
         "admin": "Livorno",
         "country": "IT",
         "kind": "town",
-        "impact": "Costarella road closed to traffic"
+        "impact": "Hit by damage on Elba"
+      },
+      {
+        "name": "Chiessi",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "Hit by damage on Elba"
+      },
+      {
+        "name": "Sant'Andrea",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "Hit; beach largely lost to debris"
+      },
+      {
+        "name": "Patresi",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "Heavy damage in upper area"
+      },
+      {
+        "name": "Campo nell'Elba",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "Flooded after storm of about 40 mm/hour"
+      },
+      {
+        "name": "Rio",
+        "admin": "Livorno",
+        "country": "IT",
+        "kind": "town",
+        "impact": "Schools closed by mayor's order"
+      },
+      {
+        "name": "Cavo",
+        "country": "IT",
+        "kind": "district",
+        "impact": "Flooded on 18 October"
       },
       {
         "name": "Bagnaia",
-        "admin": "Livorno",
         "country": "IT",
-        "kind": "town",
-        "impact": "flooding and disruption"
-      },
-      {
-        "name": "Nisporto",
-        "admin": "Livorno",
-        "country": "IT",
-        "kind": "town",
-        "impact": "flooding and disruption"
-      },
-      {
-        "name": "Porto Azzurro",
-        "admin": "Livorno",
-        "country": "IT",
-        "kind": "town",
-        "impact": "problems reported"
-      },
-      {
-        "name": "Capoliveri",
-        "admin": "Livorno",
-        "country": "IT",
-        "kind": "town",
-        "impact": "problems reported"
+        "kind": "district",
+        "impact": "Flooded on 18 October"
       }
     ],
     "figures": [
       {
-        "label": "Rainfall at Patresi",
-        "value": "180 mm",
+        "label": "Rainfall",
+        "value": "up to 189 mm in 24 hours",
         "sourceName": "lanazione.it",
-        "sourceUrl": "https://www.lanazione.it/cronaca/maltempo-elba-pioggia-fango-vento-aw486hcu"
+        "sourceUrl": "https://www.lanazione.it/cronaca/allagamenti-isola-elba-n3i922ty"
+      },
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "newsprima.it",
+        "sourceUrl": "https://newsprima.it/attualita/maltempo-italia-flagellata-militare-muore-schiacciato-da-un-albero-sei-regioni-in-allerta-arancione/"
       }
     ],
     "donation": [],
     "sources": [
       {
         "name": "lanazione.it",
-        "url": "https://www.lanazione.it/cronaca/maltempo-elba-pioggia-fango-vento-aw486hcu",
-        "title": "Incubo pioggia, l’Elba sotto il diluvio: accumuli da record e strade interrotte, macchina dei soccorsi in azione"
+        "url": "https://www.lanazione.it/cronaca/il-maltempo-non-si-ferma-ancora-allerta-gialla-sullelba-e-sulla-costa-livornese-xa5094hj",
+        "title": "Il maltempo non si ferma. Ancora allerta gialla sull’Elba e sulla costa livornese"
       },
       {
         "name": "lanazione.it",
-        "url": "https://www.lanazione.it/cronaca/allerta-meteo-toscana-pioggia-vento-temporali-hr6ahe2i",
-        "title": "Pioggia e vento molto forti: nuova allerta in Toscana per l’intera regione. Avviso arancione per l’Elba"
+        "url": "https://www.lanazione.it/cronaca/allagamenti-isola-elba-n3i922ty",
+        "title": "Frane, allagamenti e strade interrotte, l’Isola d’Elba è in ginocchio. A Patresi c’è una ‘spiaggia’ di detriti: “Roba mai vista in 65 anni”"
       },
       {
-        "name": "ansa.it",
-        "url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/18/nubifragio-allelba-allagamenti-nella-zona-di-cavo_a45d53d6-0995-44be-a32c-4e3336c507bb.html",
-        "title": "Nubifragio all'Elba, allagamenti nella zona di Cavo - Notizie - Ansa.it"
+        "name": "newsprima.it",
+        "url": "https://newsprima.it/attualita/maltempo-italia-flagellata-militare-muore-schiacciato-da-un-albero-sei-regioni-in-allerta-arancione/",
+        "title": "Maltempo, Italia flagellata: militare muore schiacciato da un albero. Sei regioni in allerta arancione - News Prima"
       },
       {
-        "name": "lanazione.it",
-        "url": "https://www.lanazione.it/cronaca/elba-maltempo-allagamenti-e-danni-cavo-rio-j3rcin80",
-        "title": "L’Elba fa nuovamente i conti col maltempo. Ancora allagamenti e danni a Cavo e Rio Marina"
-      },
-      {
-        "name": "meteo.it",
-        "url": "https://www.meteo.it/notizie/maltempo-allisola-delba-bomba-dacqua-la-situazione-3621e72d",
-        "title": "Maltempo all’Isola d’Elba, nubifragio, allagamenti e danni: la situazione"
+        "name": "iltirreno.it",
+        "url": "https://www.iltirreno.it/piombino/2026/10/20/news/maltempo-all-elba-allerta-arancione-scuole-chiuse-a-rio-1.100932268",
+        "title": "Maltempo all’Elba: danni a Marciana Marina e sul versante occidentale, ma nessun ferito - Il Tirreno"
       }
     ],
     "membersHash": "gdacs|IT#aab5ea36",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104221": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2528,7 +2650,7 @@
       }
     ],
     "membersHash": "gdacs|PY#a8b5e710",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104223": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -2601,7 +2723,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104225": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2796,7 +2918,7 @@
       }
     ],
     "membersHash": "gdacs|CR#adb5eeef",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104228": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -2875,7 +2997,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PA#b2b5f6ce",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104230": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -2977,7 +3099,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|TR#b0b8323f",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104231": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -3004,7 +3126,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|LY#afb830ac",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104232": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3031,7 +3153,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|JO#b2b83565",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104233": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3044,7 +3166,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SY#b1b833d2",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104235": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3057,7 +3179,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ES#abb82a60",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104236": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3106,7 +3228,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SV#aeb82f19",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104237": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3139,7 +3261,7 @@
       }
     ],
     "membersHash": "gdacs|NI#adb82d86",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104238": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3152,7 +3274,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UY#b8b83ed7",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -3277,7 +3399,7 @@
       }
     ],
     "membersHash": "gdacs|MY#b7b83d44",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104240": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -3526,7 +3648,7 @@
       }
     ],
     "membersHash": "gdacs|TH#a7a6daf3",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104242": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3578,7 +3700,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|UA#a8a6dc86",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104243": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3687,7 +3809,7 @@
       }
     ],
     "membersHash": "gdacs|FR#a9a6de19",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104244": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -3782,7 +3904,7 @@
       }
     ],
     "membersHash": "gdacs|GT#aaa6dfac",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -3826,7 +3948,7 @@
       }
     ],
     "membersHash": "gdacs|IT#fedc6d48",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-volcano-vo-1000151": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -3866,7 +3988,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-volcano-vo-1000152": {
@@ -3936,7 +4058,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032497": {
@@ -4097,7 +4219,36 @@
     "membersHash": "gdacs|AU#3a337967"
   },
   "gdacs-wildfire-wf-1032639": {
-    "at": "2026-10-20T14:35:40.688Z",
+    "at": "2026-10-25T00:43:26.084Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A GDACS alert feed reports forest fires in Zambia and Malawi that had burned 21,909 hectares, as of an update dated 21 October 2026. The fires began on 6 October 2026. No independent source confirms the figure, and the notes found no reports on the affected places. Whether the fires are still burning as of 25 October 2026 is not confirmed.",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "gdacs.org",
+        "url": "https://www.gdacs.org/Wildfires/report.aspx?eventtype=WF&eventid=1030042&episodeid=1",
+        "title": "Overall Green Forest fire in Zambia from 21 Jul 2026 00:00 UTC to 02 Aug 2026 00:00 UTC"
+      },
+      {
+        "name": "gdacs.org",
+        "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1030041",
+        "title": "Overall Green Forest fire in Zambia from 27 Jul 2026 00:00 UTC to 03 Aug 2026 00:00 UTC"
+      },
+      {
+        "name": "gdacs.org",
+        "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1022797",
+        "title": "Overall Green Forest fire in Malawi from 20 Oct 2024 00:00 UTC to 28 Oct 2024 00:00 UTC"
+      }
+    ],
+    "membersHash": "gdacs|MW,ZM#75f15591",
+    "seen": "2026-10-25T00:43:26.084Z"
+  },
+  "gdacs-wildfire-wf-1032653": {
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
     "summary": "",
@@ -4105,33 +4256,9 @@
     "places": [],
     "figures": [],
     "donation": [],
-    "sources": [
-      {
-        "name": "allafrica.com",
-        "url": "https://allafrica.com/stories/202610190183.html",
-        "title": "Malawi to Roast in 42c Heatwave As Experts Warn Lives Could Be At Risk - allAfrica.com"
-      },
-      {
-        "name": "gdacs.org",
-        "url": "https://www.gdacs.org/Wildfires/report.aspx?eventtype=WF&eventid=1030042&episodeid=1",
-        "title": "Overall Green Forest fire in Zambia from 21 Jul 2026 00:00 UTC to 02 Aug 2026 00:00 UTC"
-      }
-    ],
-    "membersHash": "gdacs|MW,ZM#75f15591",
-    "seen": "2026-10-24T21:17:31.742Z"
-  },
-  "gdacs-wildfire-wf-1032653": {
-    "at": "2026-10-20T14:35:40.688Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ebe304c9",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032657": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4255,64 +4382,59 @@
       }
     ],
     "membersHash": "gdacs|BR#efe30b15",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032663": {
-    "at": "2026-10-20T19:35:05.530Z",
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A steppe fire began on 8 October 2026 in Khalkh Gol soum, Dornod province, Mongolia, and was reported extinguished on 12 October, according to Xinhua. The fire broke out along the border in Dong Ujimqin Banner, Inner Mongolia, China. As of 11 October it had not crossed into China. A separate Numrug reserve fire in Dornod was reported put out on 18 October; its link to this event has not been confirmed.",
+    "summary": "A wildfire began on October 8, 2026, in the core zone of the Numrug Strictly Protected Area in Dornod province, eastern Mongolia. Initial investigations point to a vehicle fire from a Mobicom convoy. Mongolian officials said the fire was fully extinguished on October 16. Xinhua reported on October 20 that 528,765.5 hectares had burned, and dry weather still raised the risk of reignition. Chinese forces patrolled the Inner Mongolia border area. A police investigation is…",
     "ongoing": false,
     "places": [
       {
-        "name": "Dornod",
+        "name": "Numrug Strictly Protected Area",
+        "admin": "Dornod",
         "country": "MN",
-        "kind": "region",
-        "impact": "origin of steppe fire, extinguished 12 Oct"
+        "kind": "site",
+        "impact": "fire started in core zone; about 80% burned"
       },
       {
-        "name": "Khalkh Gol",
+        "name": "Khalkhgol",
         "admin": "Dornod",
         "country": "MN",
         "kind": "district",
-        "impact": "origin of steppe fire, extinguished"
+        "impact": "environment minister inspected damage"
       },
       {
-        "name": "Dong Ujimqin Banner",
-        "admin": "Xilingol League, Inner Mongolia",
+        "name": "Inner Mongolia border area",
         "country": "CN",
-        "kind": "district",
-        "impact": "threatened by fire, not burned"
+        "kind": "region",
+        "impact": "border patrolled; firebreaks widened"
       }
     ],
     "figures": [
       {
-        "label": "Firefighters deployed (China)",
-        "value": "2,000+ firefighters",
-        "sourceName": "news.cgtn.com",
-        "sourceUrl": "https://news.cgtn.com/news/2026-10-13/Mongolia-grassland-fire-nears-Chinese-border-1RcKZ6rN29y/p.html"
+        "label": "Burned area",
+        "value": "528,765.5 ha",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261020/9c701c91faf24d18825b4a46cfab9e61/c.html"
+      },
+      {
+        "label": "Share of reserve burned",
+        "value": "79.8% of the protected area",
+        "sourceName": "china.org.cn",
+        "sourceUrl": "http://www.china.org.cn/2026-10/21/content_118742547.shtml"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "news.cn",
-        "url": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html",
-        "title": "Wildfires burn over 1 mln hectares of land in Mongolia so far this year-Xinhua"
-      },
-      {
-        "name": "news.cgtn.com",
-        "url": "https://news.cgtn.com/news/2026-10-13/Mongolia-grassland-fire-nears-Chinese-border-1RcKZ6rN29y/p.html",
-        "title": "Mongolia grassland fire nears Chinese border - CGTN"
-      },
-      {
-        "name": "ecns.cn",
-        "url": "https://www.ecns.cn/cns-wire/2026-10-12/detail-ihfkxmcz6617673.shtml",
-        "title": "Fire in Mongolia approaches China's border, 2,000 firefighters mobilized"
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261020/9c701c91faf24d18825b4a46cfab9e61/c.html",
+        "title": "Massive Japanese-related reserve wildfire in E. Mongolia burns over half mln hectares of land-Xinhua"
       }
     ],
-    "membersHash": "gdacs|CN,MN#fbe9d9be",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "membersHash": "gdacs|CN,MN#fbe9d9be"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4336,7 +4458,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#f2e78cfc",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4367,7 +4489,7 @@
       }
     ],
     "membersHash": "gdacs|MZ#efe78843",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032684": {
     "at": "2026-10-20T19:35:05.530Z",
@@ -4489,7 +4611,7 @@
       }
     ],
     "membersHash": "gdacs|BR#730299f9",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032702": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -4502,7 +4624,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#0657c86c",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032726": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -4690,7 +4812,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BW,ZW#156b67c1",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032789": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -4703,10 +4825,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#116b6175",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032810": {
-    "at": "2026-10-20T19:35:05.530Z",
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
     "summary": "",
@@ -4716,7 +4838,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5f58b82a",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032847": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -4729,7 +4851,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#da64b2be",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032848": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -4742,23 +4864,23 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#d564aadf",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032855": {
-    "at": "2026-10-20T19:35:05.530Z",
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "",
+    "searches": 4,
+    "summary": "A forest fire in Mozambique, GDACS alert WF 1032855, started on 8 October 2026 and was last updated on 23 October 2026. The alert feed gives its location as -18.89, 35.22 and a burned area of 92,249 hectares. No other reports on this event were found, and its current state is not confirmed.",
     "ongoing": true,
     "places": [],
     "figures": [],
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#dc62774d",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032857": {
-    "at": "2026-10-21T00:11:24.613Z",
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
     "summary": "",
@@ -4768,7 +4890,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#da627427",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032862": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -4781,7 +4903,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#cf60243f",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032874": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4800,10 +4922,10 @@
       }
     ],
     "membersHash": "gdacs|AU#c75dd910",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032919": {
-    "at": "2026-10-20T19:35:05.530Z",
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
     "summary": "",
@@ -4811,20 +4933,14 @@
     "places": [],
     "figures": [],
     "donation": [],
-    "sources": [
-      {
-        "name": "firemaptoday.com",
-        "url": "https://firemaptoday.com/au/fire/fire-northern-territory-2026-10-03-3f41bc",
-        "title": "Fire near Central Desert, NT — 2 Oct 2026"
-      }
-    ],
+    "sources": [],
     "membersHash": "gdacs|AU#e3c5d3e6",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032920": {
-    "at": "2026-10-21T00:11:24.613Z",
+    "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
+    "searches": 1,
     "summary": "",
     "ongoing": true,
     "places": [],
@@ -4832,7 +4948,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72c8f39a",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032930": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4845,7 +4961,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|ZM#58cb0943",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032939": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -4858,7 +4974,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#5fcb1448",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032940": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -4877,7 +4993,7 @@
       }
     ],
     "membersHash": "gdacs|AU#5ecd514c",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032947": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -4890,7 +5006,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|SD,SS#5dcd4fb9",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032962": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -4909,7 +5025,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e8d2a7b8",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032970": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -4922,7 +5038,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#f0d4f2e7",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1032994": {
     "at": "2026-10-22T14:17:21.809Z",
@@ -4935,7 +5051,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#e0b24775",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033003": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -4948,7 +5064,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#f6a62a57",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033007": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5040,7 +5156,7 @@
       }
     ],
     "membersHash": "gdacs|NA#f2a6240b",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033013": {
     "at": "2026-10-23T12:11:09.903Z",
@@ -5053,7 +5169,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#dea84326",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033018": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -5072,7 +5188,7 @@
       }
     ],
     "membersHash": "gdacs|AU#e5a84e2b",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033021": {
     "at": "2026-10-23T12:11:09.903Z",
@@ -5091,7 +5207,7 @@
       }
     ],
     "membersHash": "gdacs|BW#6ca0d3eb",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033029": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -5104,7 +5220,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#64a0c753",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033047": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5117,7 +5233,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#72afe7e7",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033060": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -5130,7 +5246,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|MZ#63ab531c",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033092": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5143,7 +5259,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#ef94d631",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033134": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5156,7 +5272,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#603fae0a",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-wildfire-wf-1033140": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -5169,7 +5285,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AU#de33a871",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "ifrc-cyclone-8034": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -5200,7 +5316,7 @@
       }
     ],
     "membersHash": "ifrc|DJ#49b6fd82",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-drought-7977": {
@@ -5214,7 +5330,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|ID#49b906fb",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-earthquake-7990": {
@@ -5447,7 +5563,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T14:17:21.809Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
@@ -5566,7 +5682,7 @@
       }
     ],
     "membersHash": "ifrc|ID#98e9c7e0",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-7993": {
@@ -5667,7 +5783,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CI#48a9fade",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7998": {
@@ -5773,7 +5889,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|LA#42a9f16c",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8011": {
@@ -5810,7 +5926,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|TJ#dab1d197",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
@@ -5958,7 +6074,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8014": {
@@ -6022,7 +6138,7 @@
       }
     ],
     "membersHash": "ifrc|KG#d5b1c9b8",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
@@ -6105,7 +6221,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8037": {
@@ -6134,7 +6250,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|IN#48b6fbef",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8045": {
@@ -6228,7 +6344,7 @@
       }
     ],
     "membersHash": "ifrc|SL#4aaa3322",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
@@ -6345,7 +6461,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-flood-8052": {
@@ -6426,7 +6542,7 @@
       }
     ],
     "membersHash": "ifrc|CM#43a7e986",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8057": {
@@ -6514,7 +6630,7 @@
       }
     ],
     "membersHash": "ifrc|PH#48a7f165",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8062": {
@@ -6591,7 +6707,7 @@
       }
     ],
     "membersHash": "ifrc|PA#d5af8b21",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T08:03:09.184Z"
   },
   "ifrc-flood-8068": {
@@ -6672,7 +6788,7 @@
       }
     ],
     "membersHash": "ifrc|LR#cbaf7b63",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8073": {
@@ -6828,7 +6944,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-flood-8115": {
@@ -6870,7 +6986,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|CG#68e1ca24",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-21T22:09:59.986Z"
   },
   "ifrc-flood-appeal-mdrgh023": {
@@ -6884,7 +7000,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|GH#68f273f0",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T17:51:09.606Z"
   },
   "ifrc-landslide-8111": {
@@ -6981,7 +7097,7 @@
       }
     ],
     "membersHash": "ifrc|MM#64e1c3d8",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
   },
   "ifrc-storm-8101": {
@@ -7010,7 +7126,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|GW#60df7ef5",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-storm-8108": {
@@ -7153,7 +7269,7 @@
       }
     ],
     "membersHash": "ifrc|ZW#67df89fa",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-21T17:37:06.438Z"
   },
   "ifrc-wildfire-8027": {
@@ -7186,7 +7302,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|DZ#48b93a86",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-wildfire-8038": {
@@ -7369,7 +7485,7 @@
       }
     ],
     "membersHash": "ifrc|TN#4db703ce",
-    "seen": "2026-10-24T21:17:31.742Z",
+    "seen": "2026-10-25T00:43:26.084Z",
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "news-cyclone-cyclone-jp-916fe53458": {
@@ -8918,7 +9034,7 @@
       }
     ],
     "membersHash": "news|GB#5b5a097b",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "news-storm-storm-ie-053b302524": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -8953,7 +9069,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "news|IE#dc5f6dab",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "news-storm-storm-ie-853815a83a": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -9170,7 +9286,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|VU#d176ea77",
-    "seen": "2026-10-24T21:17:31.742Z"
+    "seen": "2026-10-25T00:43:26.084Z"
   },
   "usgs-earthquake-us6000u4kq": {
     "at": "2026-10-24T07:44:33.939Z",
