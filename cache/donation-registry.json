@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-25T14:24:49.037Z",
+  "updated": "2026-10-25T15:46:17.310Z",
   "fetched": {
-    "societies": "2026-10-25T14:24:49.037Z",
-    "uncr": "2026-10-25T14:24:49.037Z"
+    "societies": "2026-10-25T15:46:17.310Z",
+    "uncr": "2026-10-25T15:46:17.310Z"
   },
   "societies": {
     "AF": {
@@ -3191,6 +3191,25 @@
       "chain": [
         "https://redcrossghana.org/"
       ]
+    },
+    "local3:gdacs-cyclone-tc-1001338:wck.org/relief/typhoon-champi": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://wck.org/relief/typhoon-champi/"
+      ],
+      "checked": "2026-10-25T15:46:17.310Z"
+    },
+    "local3:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Afghanistan\"",
+      "chain": [
+        "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/"
+      ],
+      "place": "Afghanistan",
+      "name": "Penny Appeal USA",
+      "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan",
+      "checked": "2026-10-25T15:46:17.310Z"
     }
   }
 }
