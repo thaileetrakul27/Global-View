@@ -2570,6 +2570,15 @@ const PAYMENT_ASKS: readonly (readonly [RegExp, string])[] = [
   ],
 ];
 
+/**
+ * The usual ways a charity takes gifts, in folded text: cards, PayPal,
+ * one-off and monthly gifts. A page that offers them may also offer crypto
+ * as one option among others, as World Central Kitchen's "Donate Crypto"
+ * does; a scam asks for crypto instead.
+ */
+const STANDARD_GIVING =
+  /\b(?:credit card|debit card|paypal|give once|one[- ]time (?:gift|donation)|give monthly|monthly (?:gift|donation)|tarjeta de (?:credito|debito)|cartao de (?:credito|debito)|carte (?:bancaire|de credit)|kreditkarte|lastschrift)\b/;
+
 /** Wallet addresses, in the page's own letters: Bitcoin (bc1..., 1... or 3...), Ethereum and its tokens (0x and 40 hex digits) and Tron (T and 33). */
 const WALLET_ADDRESSES: readonly RegExp[] = [
   /(?<![A-Za-z0-9])bc1[02-9ac-hj-np-z]{25,62}(?![A-Za-z0-9])/i,
@@ -2592,10 +2601,13 @@ function personalAccount(t: string): boolean {
  * wallet address, or a bank account in a person's name): "URGENT: Send
  * Bitcoin/Zelle to help Hurricane Melissa victims", "Donate BTC to
  * bc1q...", "deposita en mi cuenta Banesco ... a nombre de Juan Pérez".
+ * Crypto named among the usual ways to give (STANDARD_GIVING) is no such
+ * ask; a wallet address always is.
  */
 export function paymentProblem(text: string): string | null {
   const t = foldText(text).replace(/\s+/g, " ");
-  const ask = PAYMENT_ASKS.find(([re]) => re.test(t));
+  const standard = STANDARD_GIVING.test(t);
+  const ask = PAYMENT_ASKS.find(([re, what]) => re.test(t) && !(what === "crypto" && standard));
   if (ask) return `asks for ${ask[1]}, as scams do`;
   if (WALLET_ADDRESSES.some((re) => re.test(text))) return "asks for crypto, as scams do";
   if (personalAccount(t)) return "asks for a transfer to a person's own account, as scams do";
@@ -2853,7 +2865,7 @@ export async function checkLocalPage(url: string, deps: FetchDeps, ctx: LocalCon
 }
 
 /** The version of the live check's rules: verdicts made under older rules are not reused (their keys differ), and age out of the registry. */
-export const LOCAL_RULES_VERSION = 3;
+export const LOCAL_RULES_VERSION = 4;
 
 /** The registry's verdict key for a local group's page, per disaster (the place test is the disaster's) and per version of the rules. */
 export function localVerdictKey(disasterId: string, url: string): string {

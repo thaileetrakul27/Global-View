@@ -1626,6 +1626,18 @@ describe("checkLocalPage: the review's pages (2026-10-25)", () => {
   const MA = disaster({ countries: ["MA"], type: "earthquake", title: "Morocco Earthquake", started: "2026-10-20T00:00:00.000Z" });
   const EC = disaster({ countries: ["EC"], type: "earthquake", title: "Ecuador Earthquake", started: "2026-10-20T00:00:00.000Z" });
 
+  it("accepts World Central Kitchen's Typhoon Champi page, whose menu offers crypto among the usual ways to give (live run 40206842370)", async () => {
+    const champi = disaster({ countries: ["PH", "JP", "CN", "KR"], type: "cyclone", title: "Super Typhoon Champi", started: "2026-10-14T00:00:00.000Z" });
+    const wck = [
+      `<title>WCK Responds to Typhoon Champi in Guam and the Northern Mariana Islands | WCK</title><meta property="og:site_name" content="WCK">`,
+      `<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","datePublished":"2026-10-20T13:23:43+00:00","dateModified":"2026-10-21T14:19:01+00:00"}]}</script>`,
+      `<nav>Give Once Donate Crypto Give via PayPal Give Monthly Donate Stock Zakat Donate Now</nav>`,
+      `<h1>WCK Responds to Typhoon Champi in Guam and the Northern Mariana Islands</h1>`,
+      `<p>World Central Kitchen is responding to Typhoon Champi, which made landfall on Guam and the Northern Mariana Islands as a Category 4 storm. Donate Now</p>`,
+    ].join("");
+    expect(await check("https://wck.org/relief/typhoon-champi/", wck, champi)).toMatchObject({ ok: true, name: "WCK" });
+  });
+
   it("refuses an unrelated charity's general page that only names the country (A1)", async () => {
     const jspca = `<title>Give | JSPCA</title><meta property="og:site_name" content="JSPCA"><h1>Support our animals</h1><p>Donate to help stray dogs and cats across Jamaica.</p>`;
     expect(await check("https://www.jspca.org.jm/support-us/give", jspca, MELISSA)).toMatchObject({ ok: false, reason: expect.stringMatching(/^its title, heading and address name neither/) });
@@ -2024,6 +2036,11 @@ describe("paymentProblem: the review's asks", () => {
     expect(paymentProblem("Send to TJCnKsPa7y5okkXvQAidZBzqx3QyQ6sxMW")).toBe("asks for crypto, as scams do");
     expect(paymentProblem("Terremoto: dona en criptomonedas. Donar USDC o BTC. Venezuela.")).toBe("asks for crypto, as scams do");
     expect(paymentProblem("Doe em criptomoedas")).toBe("asks for crypto, as scams do");
+    // World Central Kitchen's menu on its Typhoon Champi page (live run 40206842370): crypto as one option among the usual ones.
+    expect(paymentProblem("WCK Responds to Typhoon Champi in Guam and the Northern Mariana Islands. Give Once Donate Crypto Give via PayPal Give Monthly Donate Stock Zakat")).toBeNull();
+    // A wallet address is refused even beside the usual ways to give.
+    expect(paymentProblem("Give once by credit card or PayPal, or send BTC to bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh")).toBe("asks for crypto, as scams do");
+    expect(paymentProblem("Pay by credit card, or use Zelle")).toBe("asks for Zelle, as scams do");
     expect(paymentProblem("Donar: deposita en mi cuenta Banesco 0134-xxxx a nombre de Juan Pérez. Venezuela.")).toBe("asks for a transfer to a person's own account, as scams do");
     expect(paymentProblem("Transferencia: cuenta corriente 0102-123 a nombre de Juan Pérez")).toBe("asks for a transfer to a person's own account, as scams do");
     expect(paymentProblem("Donate: transfer to my account at NCB, 123456789, John Brown. Jamaica.")).toBe("asks for a transfer to a person's own account, as scams do");
