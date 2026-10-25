@@ -11,6 +11,9 @@ import {
   MAX_PLACES,
   NEWS_SCHEMA,
   NEWS_SETTINGS,
+  SEVERE_DEATHS,
+  SIGNIFICANT_DEATHS,
+  SIGNIFICANT_OUTLETS,
   buildNewsPrompt,
   carryIds,
   cleanText,
@@ -24,10 +27,12 @@ import {
   mentionsDisaster,
   namedInHeadlines,
   newsPlaces,
+  newsSeverity,
   newsSourceId,
   outletCount,
   overlapScore,
   prefilterHeadlines,
+  reportedDeaths,
   resolveCountry,
   timeSpan,
   toNewsEvents,
@@ -482,6 +487,41 @@ describe("timeSpan", () => {
   });
 });
 
+describe("reportedDeaths", () => {
+  it("reads the deaths headlines report, in figures or words", () => {
+    expect(reportedDeaths(["Magnitude 7 earthquake kills at least 16 in Tibet"])).toBe(16);
+    expect(reportedDeaths(["Tibet Earthquake: 76 injured, 16 killed after 7.0-magnitude quake hits Nakchu"])).toBe(16);
+    expect(reportedDeaths(["Death Toll from Mount Bromo Forest Fire Rises to 6"])).toBe(6);
+    expect(reportedDeaths(["Typhoon Chanpi hits Taiwan, killing 1 and injuring 527"])).toBe(1);
+    expect(reportedDeaths(["Landslide claims 1,240 lives in Darfur"])).toBe(1240);
+    expect(reportedDeaths(["Spain: rain and floods leave four dead", "Dozens dead as floods sweep Kenya"])).toBe(24);
+    expect(reportedDeaths(["Hundreds of people killed in quake"])).toBe(200);
+  });
+
+  it("counts no injuries, homes, years or power cuts", () => {
+    expect(reportedDeaths(["Number of injured rises to 76 after deadly earthquake in Tibet"])).toBe(0);
+    expect(reportedDeaths(["Storm Austen leaves 161 thousand homes without electricity in France"])).toBe(0);
+    expect(reportedDeaths(["Over 280,000 houses left without power"])).toBe(0);
+    expect(reportedDeaths(["Death toll from 2024 floods revisited"])).toBe(0);
+    expect(reportedDeaths([])).toBe(0);
+  });
+});
+
+describe("newsSeverity", () => {
+  const heads = (n: number, text = "Floods in Valencia") => Array.from({ length: n }, (_, i) => ({ text, outlet: `Outlet ${i}` }));
+  it("rates an event by the deaths its headlines report and the outlets that carry it", () => {
+    expect(newsSeverity(heads(2))).toBe(1);
+    expect(newsSeverity(heads(3))).toBe(1);
+    expect(newsSeverity(heads(SIGNIFICANT_OUTLETS))).toBe(2);
+    // The same outlet twice counts once.
+    expect(newsSeverity([...heads(3), { text: "x", outlet: " outlet 0 " }])).toBe(1);
+    expect(newsSeverity(heads(2, "Floods kill 5 in Valencia"))).toBe(2);
+    expect(newsSeverity(heads(2, "Floods kill 4 in Valencia"))).toBe(1);
+    expect(newsSeverity(heads(2, "Earthquake death toll rises to 130"))).toBe(3);
+    expect([SIGNIFICANT_DEATHS, SEVERE_DEATHS]).toEqual([5, 100]);
+  });
+});
+
 describe("toNewsEvents", () => {
   it("builds a SourceEvent at 0,0 with country precision for the integrator to geocode", () => {
     const [e] = toNewsEvents({ events: [ev({ headlineIds: [0, 1, 2], places: [{ name: "Valencia", admin: "", kind: "city", impact: "" }, { name: "Alicante", admin: "", kind: "city", impact: "" }] })] }, SPAIN, resolve, NOW);
@@ -504,6 +544,13 @@ describe("toNewsEvents", () => {
       ["Alicante", 0, 0, "news"],
     ]);
     expect(e.links.map((l) => l.name.split(":")[0])).toEqual(["Le Soir", "Público", "ProtoThema"]);
+  });
+
+  it("rates each event by its own headlines", () => {
+    const widely = [...SPAIN, hl("Valencia floods: red alert", "BBC", 1, { country: "GB" })];
+    expect(toNewsEvents({ events: [ev({ headlineIds: [0, 1, 2, 3] })] }, widely, resolve, NOW)[0].severity).toBe(2);
+    const deadly = [hl("Floods kill 12 in Valencia", "AFP", 1), hl("Valencia floods: 12 dead", "Reuters", 2)];
+    expect(toNewsEvents({ events: [ev({ headlineIds: [0, 1] })] }, deadly, resolve, NOW)[0].severity).toBe(2);
   });
 
   it("needs headlines from two different outlets", () => {

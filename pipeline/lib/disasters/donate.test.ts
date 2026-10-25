@@ -6,12 +6,14 @@ import { loadGlobeFeatures } from "../countries";
 import type { FetchDeps } from "../googlenews";
 import { USER_AGENT } from "../googlenews";
 import { buildResolver } from "../resolve";
-import type { AppealRef } from "./types";
+import type { AppealRef, DonationLink } from "./types";
 import {
   DONATION_TERMS,
   GO_COUNTRIES_URL,
   IFRC_APPEAL_PAGE,
   IFRC_DONATE,
+  MAX_DIRECT_BY_KIND,
+  MAX_DIRECT_LINKS,
   MAX_EVENT_PAGES,
   MAX_LINKS,
   MAX_RESEARCHED,
@@ -26,6 +28,7 @@ import {
   appealCountriesIn,
   buildDonations,
   checkDonationPage,
+  directFirst,
   cleanText,
   compileTerm,
   countriesNamedIn,
@@ -701,12 +704,28 @@ describe("readRegistry, writeRegistry and normaliseRegistry", () => {
     const reg = normaliseRegistry({
       societies: { PH: { name: "Philippine Red Cross", hosts: ["redcross.org.ph", 5] }, XX: { url: "https://x.org" } },
       uncr: { SD: { url: "https://crisisrelief.un.org/donate-sudan-crisis", name: "Sudan" }, ZZ: { url: 3 } },
-      verdicts: { good: { ok: true, checked: NOW, chain: ["https://a.org/"] }, bad: { ok: "yes", checked: NOW, chain: [] } },
+      verdicts: {
+        good: { ok: true, checked: NOW, chain: ["https://a.org/"] },
+        bad: { ok: "yes", checked: NOW, chain: [] },
+        "local:d1:school.example.org/donate": { ok: true, checked: NOW, chain: ["https://school.example.org/donate"], place: "Jamaica", reason: "ok", name: "Eber College", title: "Rebuild Eber Prep", extra: 1 },
+      },
     });
     expect(Object.keys(reg.societies)).toEqual(["PH"]);
     expect(reg.societies.PH).toMatchObject({ country: "PH", hosts: ["redcross.org.ph"], donate: null });
     expect(Object.keys(reg.uncr)).toEqual(["SD"]);
-    expect(Object.keys(reg.verdicts)).toEqual(["good"]);
+    expect(Object.keys(reg.verdicts)).toEqual(["good", "local:d1:school.example.org/donate"]);
+    // A local group's page keeps the place it named and its own name and title (direct.ts).
+    expect(reg.verdicts["local:d1:school.example.org/donate"]).toEqual({
+      ok: true,
+      reason: "ok",
+      checked: NOW,
+      chain: ["https://school.example.org/donate"],
+      place: "Jamaica",
+      name: "Eber College",
+      title: "Rebuild Eber Prep",
+    });
+    expect(reg.verdicts.good).not.toHaveProperty("place");
+    expect(reg.verdicts.good).not.toHaveProperty("name");
     expect(normaliseRegistry("nonsense")).toEqual(emptyRegistry());
   });
 });
@@ -1073,6 +1092,8 @@ describe("eventWords and isIfrcEventCampaign", () => {
     expect(eventWords("Venezuela Earthquake")).toEqual(["venezuela"]);
     expect(eventWords("Tropical Cyclone 02S", countryWords)).toEqual([]);
     expect(eventWords(undefined)).toEqual([]);
+    // USGS's compass points name no place.
+    expect(eventWords("M7.0 earthquake 191 km ENE of Nagqu, China", countryWords)).toEqual(["nagqu"]);
   });
 
   it("allows /ifrc/<slug>/ only when the slug names the disaster", () => {
@@ -2049,6 +2070,46 @@ describe("buildDonations", () => {
       expect(l.url).toMatch(/^https:\/\//);
       expect(l.via).toBe("registry");
     }
+  });
+
+  it("lists direct giving first, at most six, then the official links within their own cap of eight", () => {
+    const direct = (kind: DonationLink["kind"], i: number): DonationLink => ({ label: `${kind} ${i}`, url: `https://${kind}${i}.example.org/melissa`, org: kind, kind, note: "Checked", via: "platform" });
+    const links = buildDonations(
+      input({ countries: ["SD"], appeals: [appeal({ code: "MDRSD040" })], direct: [direct("local", 1), direct("project", 1), direct("fundraiser", 1), direct("fundraiser", 2)] }),
+      registry(),
+      NOW,
+      GOV,
+    );
+    expect(links.map((l) => l.kind)).toEqual(["fundraiser", "fundraiser", "project", "local", "appeal", "society", "un", "agency"]);
+    expect(links.slice(0, 4).every((l) => l.forEvent === true)).toBe(true);
+    // A direct page is not listed again among the official ones.
+    const twice = buildDonations(input({ countries: ["SD"], direct: [{ ...direct("project", 1), url: IFRC_DONATE }] }), registry(), NOW, GOV);
+    expect(twice.filter((l) => l.url === IFRC_DONATE)).toHaveLength(1);
+  });
+});
+
+describe("directFirst", () => {
+  const link = (kind: DonationLink["kind"], i: number): DonationLink => ({ label: `${kind} ${i}`, url: `https://${kind}${i}.example.org/x`, org: kind, kind, note: "n", via: "research" });
+
+  it("orders GoFundMe's, then projects, then local groups', each within its cap, six in all", () => {
+    const links = [
+      ...[1, 2, 3, 4].map((i) => link("local", i)),
+      ...[1, 2, 3].map((i) => link("project", i)),
+      ...[1, 2, 3, 4].map((i) => link("fundraiser", i)),
+      link("society", 1),
+    ];
+    const out = directFirst(links);
+    expect(out.map((l) => l.label)).toEqual(["fundraiser 1", "fundraiser 2", "fundraiser 3", "project 1", "project 2", "local 1"]);
+    expect(out).toHaveLength(MAX_DIRECT_LINKS);
+    expect(MAX_DIRECT_BY_KIND).toEqual({ fundraiser: 3, project: 2, local: 3 });
+    // Without GoFundMe's, local groups get their three.
+    expect(directFirst([link("local", 1), link("local", 2), link("local", 3), link("local", 4), link("project", 1)]).map((l) => l.label)).toEqual(["project 1", "local 1", "local 2", "local 3"]);
+  });
+
+  it("lists each page once and marks every one as the event's", () => {
+    const out = directFirst([link("fundraiser", 1), { ...link("local", 1), url: "https://fundraiser1.example.org/x/" }]);
+    expect(out).toEqual([{ ...link("fundraiser", 1), forEvent: true }]);
+    expect(directFirst([])).toEqual([]);
   });
 });
 

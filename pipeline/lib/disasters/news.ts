@@ -13,6 +13,11 @@
 //    country and places, and are carried over from the previous run when an
 //    event shares links or places with one from before.
 //
+// 4. newsSeverity rates each event by fixed rule from its headlines alone,
+//    since only significant and severe disasters reach the map: severe
+//    when they report 100 deaths or more, significant when they report 5
+//    or more or when four outlets or more carry the story, minor otherwise.
+//
 // The events come out with lat/lng 0,0 and precision "country", and their
 // places have lat/lng 0,0: the integrator geocodes the places and moves the
 // marker before use. Only headline, outlet, time and link are used; no
@@ -23,7 +28,7 @@ import type { AiClient, Effort, Purpose } from "../ai";
 import type { CountryResolver } from "../resolve";
 import { normaliseName } from "../resolve";
 import { DISASTER_TYPES } from "./types";
-import type { DisasterType, Place, PlaceKind, SourceEvent, SourceRef } from "./types";
+import type { DisasterType, Place, PlaceKind, Severity, SourceEvent, SourceRef } from "./types";
 
 // ---------------------------------------------------------------------------
 // Limits
@@ -39,6 +44,12 @@ export const MAX_HEADLINES = 200;
 export const RECENT_DAYS = 7;
 /** Distinct outlets an event needs before it is believed. */
 export const MIN_OUTLETS = 2;
+/** Distinct outlets at which an event counts as widely carried, and so significant (see newsSeverity). */
+export const SIGNIFICANT_OUTLETS = 4;
+/** Deaths its headlines report at which an event counts as significant ... */
+export const SIGNIFICANT_DEATHS = 5;
+/** ... and as severe. */
+export const SEVERE_DEATHS = 100;
 export const MAX_PLACES = 8;
 export const MAX_LINKS = 6;
 export const MAX_TITLE = 80;
@@ -541,6 +552,66 @@ export function timeSpan(headlines: NewsHeadline[], now: string): { started: str
   return { started: times[0] ?? nowIso, updated: times[times.length - 1] ?? nowIso };
 }
 
+/** Numbers headlines write in words, with the least each can mean ("dozens" at least 24). */
+const NUMBER_WORDS: Record<string, number> = {
+  one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12, thirteen: 13,
+  fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20, thirty: 30, forty: 40, fifty: 50,
+  "a dozen": 12, dozens: 24, scores: 40, hundreds: 200, thousands: 2000,
+};
+
+/** A number as headlines write it ("16", "1,200", "four", "dozens of"), or NaN for a year such as 2025, which counts no one. */
+function countOf(raw: string): number {
+  const word = raw.toLowerCase().replace(/\s+of$/, "").replace(/\s+/g, " ");
+  if (Object.hasOwn(NUMBER_WORDS, word)) return NUMBER_WORDS[word];
+  if (/^(?:19|20)\d\d$/.test(raw)) return NaN;
+  return Number(raw.replace(/,/g, ""));
+}
+
+const NUMBER = String.raw`(\d{1,3}(?:,\d{3})+|\d{1,6}|(?:${Object.keys(NUMBER_WORDS)
+  .sort((a, b) => b.length - a.length)
+  .map((w) => w.replace(" ", String.raw`\s+`))
+  .join("|")})(?:\s+of)?)`;
+const ABOUT = String.raw`(?:at\s+least\s+|more\s+than\s+|over\s+|nearly\s+|almost\s+|about\s+|around\s+|some\s+|up\s+to\s+)?`;
+/** Ways headlines report deaths: "16 killed", "12 people dead", "kills at least 16", "claims 5 lives", "death toll rises to 6". */
+const DEATH_PATTERNS: readonly RegExp[] = [
+  new RegExp(String.raw`\b${NUMBER}\s+(?:people\s+|persons\s+|residents\s+|villagers\s+|children\s+|tourists\s+|workers\s+)?(?:(?:are|were|now|have\s+been|confirmed|feared|reported)\s+)?(?:dead|killed|died|dies|die|deaths|lives\s+lost|bodies)\b`, "gi"),
+  new RegExp(String.raw`\b(?:kills?|killed|killing|claims?|claimed|claiming)\s+${ABOUT}${NUMBER}\b`, "gi"),
+  new RegExp(String.raw`\bdeath\s+toll\b(?:[^\d.!?]{0,60}?)\b(?:to|at|of|hits|reaches|nears|tops|passes|exceeds)?\s*${ABOUT}${NUMBER}\b`, "gi"),
+];
+
+/**
+ * The most deaths any headline reports, by fixed patterns on its English
+ * text: "Magnitude 7 earthquake kills at least 16", "Death Toll from Mount
+ * Bromo Forest Fire Rises to 6", "16 killed after quake", "floods leave
+ * four dead", "dozens dead". Years are no counts. 0 when none reports any.
+ */
+export function reportedDeaths(texts: readonly string[]): number {
+  let most = 0;
+  for (const text of texts) {
+    for (const re of DEATH_PATTERNS) {
+      for (const m of text.matchAll(re)) {
+        const n = countOf(m[1]);
+        if (Number.isFinite(n) && n > most) most = n;
+      }
+    }
+  }
+  return most;
+}
+
+/**
+ * An event's severity from its own headlines, since a news event has no
+ * alert level of its own: severe (3) when they report SEVERE_DEATHS deaths
+ * or more; significant (2) when they report SIGNIFICANT_DEATHS or more, or
+ * when SIGNIFICANT_OUTLETS distinct outlets or more carry it; minor (1)
+ * otherwise, and minor disasters are left off the map.
+ */
+export function newsSeverity(headlines: readonly Pick<NewsHeadline, "text" | "outlet">[]): Severity {
+  const deaths = reportedDeaths(headlines.map((h) => h.text));
+  if (deaths >= SEVERE_DEATHS) return 3;
+  const outlets = new Set(headlines.map((h) => h.outlet.trim().toLowerCase()).filter(Boolean)).size;
+  return deaths >= SIGNIFICANT_DEATHS || outlets >= SIGNIFICANT_OUTLETS ? 2 : 1;
+}
+
 /** One model event that passed the checks, before it becomes a SourceEvent. */
 interface Candidate {
   id: string;
@@ -581,14 +652,14 @@ function mergeCandidates(list: Candidate[]): Candidate[] {
   return [...byId.values()];
 }
 
-/** The SourceEvent for a checked candidate, placed at 0,0 until the integrator geocodes it. */
+/** The SourceEvent for a checked candidate, rated by its headlines (newsSeverity), placed at 0,0 until the integrator geocodes it. */
 function toSourceEvent(c: Candidate, now: string): SourceEvent {
   return {
     source: "news",
     sourceId: c.id,
     type: c.type,
     title: c.title,
-    severity: 1,
+    severity: newsSeverity(c.headlines),
     countries: [c.country],
     lat: 0,
     lng: 0,

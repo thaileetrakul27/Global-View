@@ -1,6 +1,6 @@
 // Types for the JSON the pipeline writes into public/data, and loaders for it.
 // The website reads nothing else.
-import { cleanDisasters } from "./disasters";
+import { cleanDisasters, significantOnly } from "./disasters";
 
 export interface Article {
   title: string;
@@ -164,7 +164,7 @@ export type DisasterType =
   | "coldwave"
   | "dust";
 
-/** 1 = minor or local, 2 = significant, 3 = severe. */
+/** 1 = minor or local (older files only; the site leaves them out), 2 = significant, 3 = severe. */
 export type Severity = 1 | 2 | 3;
 export type DisasterSource = "gdacs" | "usgs" | "eonet" | "ifrc" | "news";
 export type Position = [number, number];
@@ -211,10 +211,19 @@ export interface DonationLink {
   label: string;
   url: string;
   org: string;
-  kind: "appeal" | "society" | "un" | "government" | "agency";
+  /**
+   * Official pages: appeal, society, un, government, agency. Giving
+   * directly to the people affected (newer files only): fundraiser, a
+   * GoFundMe fundraiser from its verified list for this disaster; project,
+   * a GlobalGiving project or a vetted partner on GoFundMe's list; local, a
+   * local group's own page found by research.
+   */
+  kind: "appeal" | "society" | "un" | "government" | "agency" | "fundraiser" | "project" | "local";
+  /** One short line; for a direct page, who checked it. */
   note: string;
-  via: "registry" | "research";
-  /** A page for this disaster itself (its appeal, or a checked page researched for it). Missing in older files. */
+  /** registry: official registries by fixed rule; platform: a giving platform's own vetted list; research: found by web research and checked. */
+  via: "registry" | "platform" | "research";
+  /** A page for this disaster itself (its appeal, a direct page, or a checked page researched for it). Missing in older files. */
   forEvent?: boolean;
 }
 
@@ -255,11 +264,13 @@ export interface DisastersFile {
 /**
  * The disasters file, with malformed entries dropped (see cleanDisasters):
  * the pipeline is fed by outside feeds and web research, and one bad entry
- * must not blank the page.
+ * must not blank the page. Minor disasters, which older files still carry,
+ * are dropped here too, so the map, the lists, the counts and a shared link
+ * all leave them out alike.
  */
 export async function loadDisasters(): Promise<DisastersFile | null> {
   const file = await loadOptional<DisastersFile>("/data/disasters.json");
-  return file && { ...file, disasters: cleanDisasters(file.disasters) };
+  return file && { ...file, disasters: significantOnly(cleanDisasters(file.disasters)) };
 }
 
 export async function loadIndex(): Promise<IndexFile> {

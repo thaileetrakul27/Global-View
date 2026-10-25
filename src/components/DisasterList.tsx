@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Disaster } from "@/lib/data";
 import { DISASTER_META } from "@/lib/disasterMeta";
-import { countByType, isMinor, locationLine, rankDisasters, typeCountLabel } from "@/lib/disasters";
+import { countByType, locationLine, rankDisasters, typeCountLabel } from "@/lib/disasters";
 import DisasterIcon, { SeverityChip } from "./DisasterIcon";
 
 interface Props {
@@ -11,9 +11,6 @@ interface Props {
   nameOf: (code: string) => string;
   /** Open a disaster's panel by id. */
   onSelect: (id: string) => void;
-  /** Whether minor disasters are listed and drawn too. */
-  showMinor: boolean;
-  onShowMinor: (v: boolean) => void;
   /** Whether every row shows. Held by the parent so it survives a panel opening and closing. */
   expanded: boolean;
   onExpand: (v: boolean) => void;
@@ -23,18 +20,15 @@ interface Props {
 const LIMIT = 8;
 const ring = "focus:outline-none focus-visible:ring-2 focus-visible:ring-accent";
 
-// Desktop card on the disaster map: the significant and severe disasters
-// ongoing now, by type, most severe and recent first. Clicking a row opens
-// its panel; the switch adds the minor ones to the list and the globe. The
-// card never runs past the bottom of the screen: the rows scroll, the
-// heading and the footer with the switch stay put.
-export default function DisasterList({ disasters, nameOf, onSelect, showMinor, onShowMinor, expanded, onExpand }: Props) {
+// Desktop card on the disaster map: the disasters ongoing now (all
+// significant or severe), by type, most severe and recent first. Clicking
+// a row opens its panel. The card never runs past the bottom of the
+// screen: the rows scroll, the heading and the "Show all" button stay put.
+export default function DisasterList({ disasters, nameOf, onSelect, expanded, onExpand }: Props) {
   const headingId = useId();
   const listId = useId();
-  const minor = useMemo(() => disasters.filter(isMinor).length, [disasters]);
-  const listed = useMemo(() => (showMinor ? disasters : disasters.filter((d) => !isMinor(d))), [disasters, showMinor]);
-  const ranked = useMemo(() => rankDisasters(listed), [listed]);
-  const counts = useMemo(() => countByType(listed), [listed]);
+  const ranked = useMemo(() => rankDisasters(disasters), [disasters]);
+  const counts = useMemo(() => countByType(disasters), [disasters]);
   const shown = expanded ? ranked : ranked.slice(0, LIMIT);
   const { ref: listRef, more, onScroll } = useMoreBelow(shown.length);
   if (!disasters.length) return null;
@@ -48,7 +42,7 @@ export default function DisasterList({ disasters, nameOf, onSelect, showMinor, o
         <h2 id={headingId} className="text-xs font-medium uppercase tracking-wide text-muted">
           Disasters now
         </h2>
-        <span className="text-xs text-muted">{showMinor ? `${ranked.length} ongoing` : `${ranked.length} significant`}</span>
+        <span className="text-xs text-muted">{ranked.length} ongoing</span>
       </div>
 
       <ul aria-label="By type" className="mt-2 flex shrink-0 flex-wrap gap-x-3 gap-y-1">
@@ -76,8 +70,8 @@ export default function DisasterList({ disasters, nameOf, onSelect, showMinor, o
         ))}
       </ol>
 
-      <div className="mt-1 flex shrink-0 items-center justify-between gap-3 border-t border-line pt-3">
-        {ranked.length > LIMIT ? (
+      {ranked.length > LIMIT && (
+        <div className="mt-1 shrink-0 border-t border-line pt-3">
           <button
             type="button"
             aria-expanded={expanded}
@@ -87,11 +81,8 @@ export default function DisasterList({ disasters, nameOf, onSelect, showMinor, o
           >
             {expanded ? "Show fewer" : `Show all ${ranked.length}`}
           </button>
-        ) : (
-          <span />
-        )}
-        {minor > 0 && <MinorSwitch checked={showMinor} count={minor} onChange={onShowMinor} />}
-      </div>
+        </div>
+      )}
     </section>
   );
 }
@@ -137,18 +128,6 @@ export function DisasterRow({ disaster: d, nameOf, onSelect }: { disaster: Disas
           <span className="min-w-0 truncate">{where || DISASTER_META[d.type].label}</span>
           {d.severity >= 2 && <SeverityChip severity={d.severity} />}
         </span>
-      </span>
-    </button>
-  );
-}
-
-/** On/off switch that adds the minor disasters to the list and the globe. */
-function MinorSwitch({ checked, count, onChange }: { checked: boolean; count: number; onChange: (v: boolean) => void }) {
-  return (
-    <button type="button" role="switch" aria-checked={checked} onClick={() => onChange(!checked)} className={`-mr-1 flex items-center gap-2 rounded-full py-0.5 pr-1 pl-2 text-xs text-ink ${ring}`}>
-      Include {count} minor
-      <span aria-hidden="true" className={`relative h-4 w-7 shrink-0 rounded-full transition-colors ${checked ? "bg-accent" : "bg-muted/40"}`}>
-        <span className={`absolute top-0.5 left-0.5 h-3 w-3 rounded-full bg-white transition-transform ${checked ? "translate-x-3" : ""}`} />
       </span>
     </button>
   );

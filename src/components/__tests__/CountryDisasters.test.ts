@@ -31,11 +31,12 @@ const render = (disasters: Disaster[] | null, name = "Thailand") =>
 
 describe("CountryDisasters", () => {
   it("lists one row per disaster, each carrying its id so focus can come back to it", () => {
-    const html = render([flood("a", 2), flood("b", 1)]);
+    const html = render([flood("a", 2), flood("b", 3)]);
     expect(html).toContain("Disasters in Thailand now");
     expect(html).toContain('data-disaster-id="a"');
     expect(html).toContain('data-disaster-id="b"');
     expect(html).toContain(">Significant<");
+    expect(html).toContain(">Severe<");
     expect(html).toContain("Mae Rim");
     expect(html).not.toContain("No ongoing disasters");
   });

@@ -20,7 +20,7 @@ interface Props {
   actions?: ReactNode;
 }
 
-// One disaster: the official pages to donate to come first, then what is
+// One disaster: the pages to donate to come first, then what is
 // happening, where, and the sources. The map draws its footprint; this
 // panel is what opens when the footprint or its marker is clicked.
 export default function DisasterPanel({ disaster, nameOf, onClose, onSelectCountry, actions }: Props) {
