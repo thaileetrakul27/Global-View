@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-26T08:14:05.412Z",
+  "updated": "2026-10-26T15:37:48.309Z",
   "fetched": {
-    "societies": "2026-10-26T08:14:05.412Z",
-    "uncr": "2026-10-26T08:14:05.412Z"
+    "societies": "2026-10-26T15:37:48.309Z",
+    "uncr": "2026-10-26T15:37:48.309Z"
   },
   "societies": {
     "AF": {
@@ -2914,47 +2914,12 @@
         "https://www.drk.de/"
       ]
     },
-    "cruzroja.org.pa": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.cruzroja.org.pa/"
-      ],
-      "blocked": true
-    },
-    "donate.unhcr.org/int/en/panama-earthquake": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://donate.unhcr.org/int/en/panama-earthquake"
-      ],
-      "blocked": true
-    },
     "unicef.org/panama/emergencia_terremoto_panama": {
       "ok": true,
       "reason": "donation word \"dona ahora\"",
       "checked": "2026-10-25T13:34:13.512Z",
       "chain": [
         "https://www.unicef.org/panama/emergencia_terremoto_panama"
-      ]
-    },
-    "cruzroja.org.pa/donar": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://cruzroja.org.pa/donar/"
-      ],
-      "blocked": true
-    },
-    "croixrouge-rdc.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.croixrouge-rdc.org/"
       ]
     },
     "wfp.org/emergencies/sudan": {
@@ -2971,115 +2936,6 @@
       "checked": "2026-10-25T13:34:13.512Z",
       "chain": [
         "https://www.icrc.org/en/where-we-work/sudan"
-      ]
-    },
-    "go.ifrc.org/countries/121": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://go.ifrc.org/countries/121"
-      ]
-    },
-    "donate.bdrcs.org": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://donate.bdrcs.org/"
-      ],
-      "blocked": true
-    },
-    "botswanaredcross.org.bw": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.botswanaredcross.org.bw/"
-      ]
-    },
-    "redcross.org.mz": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.redcross.org.mz/"
-      ]
-    },
-    "cruzroja.org.ec": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.cruzroja.org.ec/"
-      ],
-      "blocked": true
-    },
-    "cruzroja.or.cr": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.cruzroja.or.cr/"
-      ]
-    },
-    "redcross.org": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.redcross.org/"
-      ],
-      "blocked": true
-    },
-    "sarc.sy/home": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://sarc.sy/home/"
-      ]
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ayodonor.pmi.or.id?page=index": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/?page=index"
-      ],
-      "blocked": true
-    },
-    "sierraleoneredcross.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://sierraleoneredcross.org/"
-      ]
-    },
-    "croissant-rouge.tn": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.croissant-rouge.tn/"
-      ]
-    },
-    "redcrossghana.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://redcrossghana.org/"
       ]
     },
     "local3:gdacs-cyclone-tc-1001338:wck.org/relief/typhoon-champi": {
@@ -3197,44 +3053,117 @@
     "indianredcross.org/ircs/donatenow": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-26T08:14:05.412Z",
       "chain": [
         "https://www.indianredcross.org/ircs/donatenow/"
-      ],
-      "checked": "2026-10-26T08:14:05.412Z"
+      ]
     },
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-26T08:14:05.412Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-10-26T08:14:05.412Z"
+      ]
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-26T08:14:05.412Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
-      "blocked": true,
-      "checked": "2026-10-26T08:14:05.412Z"
+      "blocked": true
     },
     "go.ifrc.org/emergencies/8013/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-26T08:14:05.412Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8013/overview"
-      ],
-      "checked": "2026-10-26T08:14:05.412Z"
+      ]
     },
     "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-26T08:14:05.412Z",
       "chain": [
         "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
       ],
+      "blocked": true
+    },
+    "local4:gdacs-earthquake-eq-1570339:wck.org/relief/panama-earthquake": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Panama\"",
+      "chain": [
+        "https://wck.org/relief/panama-earthquake/"
+      ],
+      "place": "Panama",
+      "name": "WCK",
+      "title": "WCK Responds to Magnitude 7.7 Earthquake in Panama | WCK",
+      "checked": "2026-10-26T15:37:48.309Z"
+    },
+    "local4:gdacs-earthquake-eq-1570339:teleton.com/evento-provincias-centrales": {
+      "ok": false,
+      "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
+      "chain": [
+        "https://www.teleton.com/evento-provincias-centrales"
+      ],
+      "checked": "2026-10-26T15:37:48.309Z"
+    },
+    "cruzroja.org.pa": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.cruzroja.org.pa/"
+      ],
       "blocked": true,
-      "checked": "2026-10-26T08:14:05.412Z"
+      "checked": "2026-10-26T15:37:48.309Z"
+    },
+    "donate.unhcr.org/int/en/panama-earthquake": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://donate.unhcr.org/int/en/panama-earthquake"
+      ],
+      "blocked": true,
+      "checked": "2026-10-26T15:37:48.309Z"
+    },
+    "croixrouge-rdc.org": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.croixrouge-rdc.org/"
+      ],
+      "checked": "2026-10-26T15:37:48.309Z"
+    },
+    "go.ifrc.org/countries/121": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/121"
+      ],
+      "checked": "2026-10-26T15:37:48.309Z"
+    },
+    "local4:ifrc-flood-8013:hrf.org.uk/emergency-appeals/bangladesh-flood": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Bangladesh\"",
+      "chain": [
+        "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/"
+      ],
+      "place": "Bangladesh",
+      "name": "Human Relief Foundation",
+      "title": "Bangladesh Emergency Flood Relief",
+      "checked": "2026-10-26T15:37:48.309Z"
+    },
+    "bdrcs.org/bangladesh-flood": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://bdrcs.org/bangladesh-flood/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-26T15:37:48.309Z"
     }
   }
 }

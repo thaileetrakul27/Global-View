@@ -296,7 +296,7 @@
       }
     ],
     "membersHash": "eonet,gdacs,news|CN,JP,KR,PH#1f164bd8",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-25T18:01:40.579Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -348,7 +348,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-25T18:01:40.579Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -484,85 +484,42 @@
       }
     ],
     "membersHash": "gdacs|IN#4a1b9f67",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-26T08:14:05.412Z",
     "directSearched": "2026-10-26T08:14:05.412Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-26T08:14:05.412Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-10-24T13:06:33.545Z",
+    "at": "2026-10-26T15:37:48.309Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "A drought affecting much of Europe began on 21 December 2025. Drought conditions remained critical across most of the continent in late September 2026, according to a JRC analysis run on 19 October 2026. The GDACS feed still lists the event as updated on 24 October 2026, and no source reports an official end. Record-low river levels and crop losses have been reported.",
+    "searches": 4,
+    "summary": "A drought affecting much of Europe began on 21 December 2025. The JRC's European Drought Observatory, analysed on 19 October 2026, says drought conditions remained critical in most of Europe in late September. The notes do not confirm conditions on 26 October 2026. Reported impacts include water restrictions in France, crop losses in several countries, and emergency measures for farmers in Switzerland.",
     "ongoing": true,
-    "places": [
-      {
-        "name": "Danube",
-        "country": "HU",
-        "kind": "site",
-        "impact": "falling water levels, declines along several sections"
-      },
-      {
-        "name": "Danube",
-        "country": "RO",
-        "kind": "site",
-        "impact": "falling water levels, declines along several sections"
-      },
-      {
-        "name": "Vienna",
-        "country": "AT",
-        "kind": "city",
-        "impact": "environmental impact on green spaces"
-      },
-      {
-        "name": "Loire",
-        "country": "FR",
-        "kind": "site",
-        "impact": "record-low water levels"
-      },
-      {
-        "name": "Po",
-        "country": "IT",
-        "kind": "site",
-        "impact": "record-low water levels"
-      },
-      {
-        "name": "Rhine",
-        "country": "DE",
-        "kind": "site",
-        "impact": "record-low water levels"
-      }
-    ],
+    "places": [],
     "figures": [
       {
-        "label": "Affected area",
-        "value": "1,412,468 km²",
-        "sourceName": "gdacs.org",
-        "sourceUrl": "https://gdacs.org/report.aspx?eventtype=DR&eventid=1018332"
+        "label": "Economic cost",
+        "value": "€180 billion",
+        "sourceName": "thenationalnews.com",
+        "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
       },
       {
-        "label": "Soybean yield change",
+        "label": "Soybean yields",
         "value": "down 15%",
         "sourceName": "thenationalnews.com",
         "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
       },
       {
-        "label": "Economic cost to European agriculture",
-        "value": "$3.6bn",
+        "label": "Potato yields",
+        "value": "down 7%",
         "sourceName": "thenationalnews.com",
         "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
       },
       {
-        "label": "Grain maize yield change",
-        "value": "down 8%",
-        "sourceName": "farminglife.com",
-        "sourceUrl": "https://www.farminglife.com/news/brussels-confirms-the-full-impact-of-the-drought-on-2026-crop-output-levels-9278682"
-      },
-      {
-        "label": "Fresh forage maize yield change",
-        "value": "down 14%",
-        "sourceName": "farminglife.com",
-        "sourceUrl": "https://www.farminglife.com/news/brussels-confirms-the-full-impact-of-the-drought-on-2026-crop-output-levels-9278682"
+        "label": "Sugar beet yields",
+        "value": "down 11%",
+        "sourceName": "thenationalnews.com",
+        "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
       }
     ],
     "donation": [],
@@ -573,26 +530,16 @@
         "title": "EDO European Drought Observatory - Joint Research Centre"
       },
       {
-        "name": "gdacs.org",
-        "url": "https://gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
-        "title": "Overall Orange Drought for Europe-2026 in Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France…"
-      },
-      {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/8/16/new-satellite-images-show-europes-disappearing-rivers-due-to-drought",
-        "title": "New satellite images show Europe’s disappearing rivers due to drought"
-      },
-      {
-        "name": "climatestrategies.org",
-        "url": "https://climatestrategies.org/what-europes-2026-drought-means-for-food-security/",
-        "title": "Preparing European Agriculture for the Next Decade"
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_European_drought",
+        "title": "2026 European drought"
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-26T08:14:05.412Z",
-    "donationSearched": "2026-10-24T13:06:33.545Z",
-    "directSearched": "2026-10-25T18:01:40.579Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-26T15:37:48.309Z",
+    "directSearched": "2026-10-26T15:37:48.309Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T15:37:48.309Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -605,142 +552,95 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T15:46:17.310Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-10-24T13:06:33.545Z",
+    "at": "2026-10-26T15:37:48.309Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A drought in Sudan, which sources link to El Niño, is raising the risk of famine, according to reports from October 2026. Reuters reported on 23 October that farmers already affected by war have struggled to harvest, and hunger figures are expected to rise. The event began on 21 June 2026 and is ongoing. The research found no reports covering the other countries in the feed.",
+    "searches": 4,
+    "summary": "A drought affecting parts of East Africa and the Central Sahel is ongoing as of 25 October 2026. A Red Cross plan issued 12 October says the trigger for action was met on 1 September 2026. Reported impacts include about 250,035 hectares of cropland damaged in Ethiopia and a warning from the IPC of famine risk in Sudan's Darfur and Kordofan regions. The start date of 21 June 2026 is not confirmed by any source found.",
     "ongoing": true,
     "places": [
       {
-        "name": "Darfur",
+        "name": "West Hararghe",
+        "country": "ET",
+        "kind": "district",
+        "impact": "Cropland damaged"
+      },
+      {
+        "name": "North Gondar",
+        "country": "ET",
+        "kind": "district",
+        "impact": "Cropland damaged"
+      },
+      {
+        "name": "Tigray",
+        "country": "ET",
+        "kind": "region",
+        "impact": "Cropland damaged"
+      },
+      {
+        "name": "Greater Darfur",
         "country": "SD",
         "kind": "region",
-        "impact": "worst-hit area, famine risk"
+        "impact": "Famine risk raised by IPC warning"
       },
       {
-        "name": "Kordofan",
+        "name": "Greater Kordofan",
         "country": "SD",
         "kind": "region",
-        "impact": "worst-hit area, famine risk"
-      },
-      {
-        "name": "Eastern Jebel Marra",
-        "admin": "South Darfur",
-        "country": "SD",
-        "kind": "region",
-        "impact": "child malnutrition above famine threshold"
-      },
-      {
-        "name": "Tawila",
-        "admin": "Darfur",
-        "country": "SD",
-        "kind": "site",
-        "impact": "rations halved"
-      },
-      {
-        "name": "North Darfur",
-        "country": "SD",
-        "kind": "region",
-        "impact": "crops devastated by delayed rains"
-      },
-      {
-        "name": "Um Ruwaba",
-        "admin": "North Kordofan",
-        "country": "SD",
-        "kind": "town",
-        "impact": "farmers report crop losses"
-      },
-      {
-        "name": "Gedaref",
-        "country": "SD",
-        "kind": "city",
-        "impact": "temperatures 7 to 9 degrees above historic average"
+        "impact": "Famine risk raised by IPC warning"
       }
     ],
     "figures": [
       {
-        "label": "Severe hunger (June, IPC)",
-        "value": "5.1 million people",
-        "sourceName": "1027wbow.com",
-        "sourceUrl": "https://1027wbow.com/2026/10/23/new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought/"
+        "label": "People affected",
+        "value": "3.5 million people",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/ethiopia-drought-250000-hectares-2026/"
       },
       {
-        "label": "Projected additional severe hunger by…",
-        "value": "350,000 people",
-        "sourceName": "1027wbow.com",
-        "sourceUrl": "https://1027wbow.com/2026/10/23/new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought/"
+        "label": "Livestock deaths",
+        "value": "28,629",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/ethiopia-drought-250000-hectares-2026/"
       },
       {
-        "label": "Displaced since October in Greater…",
-        "value": "over 300,000 people",
-        "sourceName": "rescue.org",
-        "sourceUrl": "https://www.rescue.org/press-release/war-and-el-nino-driven-drought-deplete-food-stocks-pushing-sudan-further-towards"
-      },
-      {
-        "label": "Area affected by drought",
-        "value": "roughly half of the country",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor"
+        "label": "Water points dried up",
+        "value": "more than 319",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/ethiopia-drought-250000-hectares-2026/"
       }
     ],
     "donation": [
       {
-        "url": "https://www.wfp.org/emergencies/sudan",
-        "org": "World Food Programme",
-        "kind": "un",
-        "note": "General fund for WFP's Sudan hunger response, not specific to this drought.",
-        "specific": false
-      },
-      {
-        "url": "https://www.icrc.org/en/where-we-work/sudan",
-        "org": "ICRC",
-        "kind": "agency",
-        "note": "General fund for ICRC's mainly conflict-focused Sudan work, with no drought appeal.",
-        "specific": false
+        "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC appeals listing for Ethiopia Drought Response DREF; not a confirmed donation form.",
+        "specific": true
       }
     ],
     "sources": [
       {
-        "name": "1027wbow.com",
-        "url": "https://1027wbow.com/2026/10/23/new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought/",
-        "title": "New famine risk haunts war-torn Sudan with El Niño-driven drought"
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/ethiopia-drought-250000-hectares-2026/",
+        "title": "Ethiopia Drought Damages 250,000 Hectares"
       },
       {
-        "name": "arabnews.com",
-        "url": "https://www.arabnews.com/middle-east/new-famine-risk-haunts-war-torn-sudan-with-el-ni%C3%B1o-driven-drought-3007873",
-        "title": "Arab News"
-      },
-      {
-        "name": "rescue.org",
-        "url": "https://www.rescue.org/press-release/war-and-el-nino-driven-drought-deplete-food-stocks-pushing-sudan-further-towards",
-        "title": "War and El Niño-driven drought deplete food stocks, pushing Sudan further towards famine, new data finds"
-      },
-      {
-        "name": "usnews.com",
-        "url": "https://www.usnews.com/news/world/articles/2026-10-23/new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought",
-        "title": "New Famine Risk Haunts War-Torn Sudan With El Niño-Driven Drought"
-      },
-      {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor",
-        "title": "Conflict, drought increasing risk of famine in Sudan: Monitor"
-      },
-      {
-        "name": "timeslive.co.za",
-        "url": "https://www.timeslive.co.za/news/africa/2026-10-23-new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought/",
-        "title": "New famine risk haunts war-torn Sudan with El Niño-driven drought"
+        "name": "cpc.ncep.noaa.gov",
+        "url": "https://www.cpc.ncep.noaa.gov/products/international/globalweatherhazard/Current.pdf",
+        "title": "Global Weather Hazards Summary October 15, 2026"
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-26T08:14:05.412Z",
-    "donationSearched": "2026-10-25T13:34:13.512Z",
-    "directSearched": "2026-10-25T14:24:49.037Z"
+    "donationSearched": "2026-10-26T15:37:48.309Z",
+    "directSearched": "2026-10-26T15:37:48.309Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T15:37:48.309Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -831,7 +731,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-25T07:59:52.974Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -876,100 +776,94 @@
       }
     ],
     "membersHash": "gdacs|VU#1dba2781",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1570339": {
-    "at": "2026-10-25T13:34:13.512Z",
+    "at": "2026-10-26T15:37:48.309Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 7.7 earthquake (USGS; SINAPROC gives 7.5) struck near Pitaloza Arriba, Panama, on 9 October 2026. Damage was recorded in Los Santos, Herrera, Coclé, Veraguas and Colón, and tremors were felt in Panama City. As of 21 October, SINAPROC said damage assessments and coordination were continuing. Aftershocks were still being recorded, and 327 schools were to reopen on 26 October.",
+    "searches": 4,
+    "summary": "A magnitude 7.7 earthquake (USGS; other sources gave 7.2 to 7.6) struck Azuero, Panama, on 9 October 2026, with its epicentre 39 km north-west of Tonosí. SINAPROC's latest balance, dated 21 October, reports 38,477 people affected, 27 injured and one death. Aftershocks continued and the government declared a state of emergency.",
     "ongoing": true,
     "places": [
       {
-        "name": "Tonosí",
-        "admin": "Los Santos",
+        "name": "Veraguas",
         "country": "PA",
-        "kind": "district",
-        "impact": "Over 60% of population affected; houses damaged"
+        "kind": "region",
+        "impact": "Most affected per SINAPROC; 637 homes affected"
+      },
+      {
+        "name": "Los Santos",
+        "country": "PA",
+        "kind": "region",
+        "impact": "1,613 homes affected"
       },
       {
         "name": "Herrera",
         "country": "PA",
         "kind": "region",
-        "impact": "498 homes damaged; 32 landslides; communities cut off"
+        "impact": "727 homes lost; 3,479 homes evaluated"
       },
       {
         "name": "Coclé",
         "country": "PA",
         "kind": "region",
-        "impact": "1,052 homes damaged; 17 injured"
+        "impact": "1,324 homes affected; 17 injured"
+      },
+      {
+        "name": "Soná",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Nine bridges damaged"
+      },
+      {
+        "name": "Tonosí",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Lost water and electricity; road closed"
       },
       {
         "name": "Penonomé",
         "admin": "Coclé",
         "country": "PA",
         "kind": "town",
-        "impact": "Cathedral and regional government building damaged"
-      },
-      {
-        "name": "Veraguas",
-        "country": "PA",
-        "kind": "region",
-        "impact": "614 homes damaged"
-      },
-      {
-        "name": "Mariato",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "district",
-        "impact": "16 shelters housed over 2,044 displaced people"
-      },
-      {
-        "name": "Colón",
-        "country": "PA",
-        "kind": "region",
-        "impact": "Damage in 29 settlements; 14 homes"
-      },
-      {
-        "name": "Panama City",
-        "country": "PA",
-        "kind": "city",
-        "impact": "Tremors felt; people evacuated"
+        "impact": "Interamericana highway affected"
       }
     ],
     "figures": [
       {
-        "label": "Homes evaluated",
-        "value": "12,509 homes",
-        "sourceName": "ecotvpanama.com",
-        "sourceUrl": "https://www.ecotvpanama.com/nacionales/sinaproc-reporta-mas-12-mil-viviendas-evaluadas-el-terremoto-n6096417"
-      },
-      {
         "label": "People affected",
-        "value": "37,210 people",
-        "sourceName": "telemetro.com",
-        "sourceUrl": "https://www.telemetro.com/nacionales/terremoto-75-panama-sinaproc-presenta-balance-oficial-11321-viviendas-evaluadas-n6096139"
+        "value": "38,477 people",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
       },
       {
-        "label": "People in shelters",
-        "value": "5,628 people in 126 active shelters",
-        "sourceName": "telemetro.com",
-        "sourceUrl": "https://www.telemetro.com/nacionales/terremoto-75-panama-sinaproc-presenta-balance-oficial-11321-viviendas-evaluadas-n6096139"
+        "label": "Injured",
+        "value": "27",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
       },
       {
-        "label": "Homes damaged",
-        "value": "2,890 total loss; 6,874 moderate or partial; 1,557 light",
-        "sourceName": "telemetro.com",
-        "sourceUrl": "https://www.telemetro.com/nacionales/terremoto-75-panama-sinaproc-presenta-balance-oficial-11321-viviendas-evaluadas-n6096139"
+        "label": "Deaths",
+        "value": "one",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
       },
       {
-        "label": "Families targeted by Red Cross",
-        "value": "4,075 families",
-        "sourceName": "ifrc.org",
-        "sourceUrl": "https://www.ifrc.org/es/press-release/cruz-roja-panamena-intensifica-su-respuesta-para-asistir-cuatro-mil-personas"
+        "label": "People sheltered",
+        "value": "5,628 people in 126 shelters",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
+      },
+      {
+        "label": "Homes evaluated",
+        "value": "11,696 homes",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-18/"
       }
     ],
     "donation": [
@@ -977,44 +871,44 @@
         "url": "https://donate.unhcr.org/int/en/panama-earthquake",
         "org": "UNHCR (UN Refugee Agency)",
         "kind": "un",
-        "note": "Event-specific donation page asking help for families affected by the Panama earthquake.",
+        "note": "UNHCR donation page for shelter and relief after the Panama earthquake.",
         "specific": true
-      },
-      {
-        "url": "https://www.unicef.org/panama/emergencia_terremoto_panama",
-        "org": "UNICEF Panamá",
-        "kind": "un",
-        "note": "Emergency page for this earthquake with a donate-now button.",
-        "specific": true
-      },
-      {
-        "url": "https://cruzroja.org.pa/donar/",
-        "org": "Cruz Roja Panameña (Panamanian Red Cross)",
-        "kind": "society",
-        "note": "General Red Cross donation fund covering programmes and disaster work, not this event.",
-        "specific": false
       }
     ],
     "sources": [
       {
-        "name": "prensa-latina.cu",
-        "url": "https://prensa-latina.cu/2026/10/24/retorno-a-clases-y-recuperacion-tras-sismo-marcan-semana-en-panama",
-        "title": "Retorno a clases y recuperación tras sismo marcan semana en Panamá - Noticias Prensa Latina"
+        "name": "unocha.org",
+        "url": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315",
+        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 02 (as of 11 October 2026, 13:15)"
       },
       {
-        "name": "telemetro.com",
-        "url": "https://www.telemetro.com/nacionales/terremoto-75-panama-sinaproc-presenta-balance-oficial-11321-viviendas-evaluadas-n6096139",
-        "title": "Terremoto de 7.5 en Panamá: SINAPROC presenta balance oficial con 11,321 viviendas evaluadas"
-      },
-      {
-        "name": "elcapitalfinanciero.com",
-        "url": "https://elcapitalfinanciero.com/sinaproc-balance-sismo-tonosi-afectados-viviendas-danadas/",
-        "title": "Sinaproc eleva a 11,500 afectados y 3,390 las viviendas dañadas por el sismo - ElCapitalFinanciero.com - Noticias Financieras de Panamá"
+        "name": "tvn-2.com",
+        "url": "https://www.tvn-2.com/nacionales/cruz-roja-comunidades-afectadas-terremoto-panama_1_2265790.html",
+        "title": "Cruz Roja prevé acompañar durante nueve meses a comunidades afectadas por el terremoto - Nacionales"
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-26T08:14:05.412Z",
-    "donationSearched": "2026-10-25T13:34:13.512Z"
+    "donationSearched": "2026-10-26T15:37:48.309Z",
+    "directSearched": "2026-10-26T15:37:48.309Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://wck.org/relief/panama-earthquake/",
+        "org": "World Central Kitchen",
+        "kind": "local",
+        "note": "Hot meals for families near the epicentre, cooked with local partners in Los Santos.",
+        "title": "WCK Responds to Magnitude 7.7 Earthquake in Panama",
+        "published": "2026-10-20T15:37:48.309Z"
+      },
+      {
+        "url": "https://www.teleton.com/evento-provincias-centrales",
+        "org": "Club Activo 20-30 de Panamá",
+        "kind": "local",
+        "note": "Building safe homes for quake-affected families, prioritising households with a disabled member.",
+        "title": "El Corazón de Panamá · Teletón Provincias Centrales, 24 de octubre"
+      }
+    ],
+    "seen": "2026-10-26T15:37:48.309Z"
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1402,10 +1296,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-26T08:14:05.412Z",
     "directSearched": "2026-10-26T08:14:05.412Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-26T08:14:05.412Z"
+    "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -4097,7 +3991,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -4169,7 +4063,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -5705,7 +5599,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-25T18:01:40.579Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2,
@@ -6108,154 +6002,195 @@
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
-    "at": "2026-10-24T13:06:33.545Z",
+    "at": "2026-10-26T15:37:48.309Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Monsoon rains from 5 July 2026 caused floods and landslides in Bangladesh, most severely in Cox's Bazar district, where 69 of 71 unions were inundated. Nationally, at least 51 deaths were reported by 12 July. By 25 July, government reports said conditions were improving. The IFRC DREF operation runs to January 2027. No source found reports active flooding as of 24 October 2026.",
+    "summary": "Monsoon depression rains and flash floods hit Cox's Bazar and other districts in Bangladesh from early July 2026, with landslides and waterlogging. Cox's Bazar's Rohingya camps were among the hardest hit. The UN reported 59 deaths and the Joint Needs Assessment of 29 July reported 1.28 million people affected. The latest source found, IFRC GO updated 20 August 2026, lists the operation running to 31 January 2027. No source reports the flooding has ended.",
     "ongoing": true,
     "places": [
       {
         "name": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "69 of 71 unions inundated, about 49% of district"
-      },
-      {
-        "name": "Pekua",
-        "country": "BD",
-        "kind": "district",
-        "impact": "95% flooded"
-      },
-      {
-        "name": "Matamuhuri",
-        "country": "BD",
-        "kind": "district",
-        "impact": "85% flooded"
+        "impact": "Rohingya camps and host communities hit hardest"
       },
       {
         "name": "Chakaria",
-        "country": "BD",
-        "kind": "district",
-        "impact": "80% flooded"
-      },
-      {
-        "name": "Kutubdia",
-        "country": "BD",
-        "kind": "district",
-        "impact": "65% flooded"
-      },
-      {
-        "name": "Maheshkhali",
-        "country": "BD",
-        "kind": "district",
-        "impact": "50% flooded"
-      },
-      {
-        "name": "Rohingya refugee camps",
         "admin": "Cox's Bazar",
         "country": "BD",
-        "kind": "site",
-        "impact": "among the worst hit"
+        "kind": "district",
+        "impact": "Affected by flooding"
       },
       {
-        "name": "Banshkhali",
+        "name": "Pekua",
+        "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "two children drowned"
-      },
-      {
-        "name": "Bandarban",
-        "country": "BD",
-        "kind": "district",
-        "impact": "houses damaged in preliminary reports"
+        "impact": "Affected by flooding"
       },
       {
         "name": "Chattogram",
         "country": "BD",
         "kind": "district",
-        "impact": "houses damaged in preliminary reports"
+        "impact": "Flooding and landslides reported"
+      },
+      {
+        "name": "Hashimpur",
+        "admin": "Chattogram",
+        "country": "BD",
+        "kind": "site",
+        "impact": "Highway submerged, passengers and cargo stranded"
+      },
+      {
+        "name": "Bandarban",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Listed among affected districts"
+      },
+      {
+        "name": "Rangamati",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Listed among affected districts"
+      },
+      {
+        "name": "Khagrachhari",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Listed among affected districts"
+      },
+      {
+        "name": "Moulvibazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Listed among affected districts"
+      },
+      {
+        "name": "Sunamganj",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Listed among affected districts"
       },
       {
         "name": "Habiganj",
         "country": "BD",
         "kind": "district",
-        "impact": "floodwaters receded by late July"
+        "impact": "Listed among affected districts"
+      },
+      {
+        "name": "Sylhet",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Listed among affected districts"
+      },
+      {
+        "name": "Cumilla",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Listed among affected districts"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "at least 51",
-        "sourceName": "adrc.asia",
-        "sourceUrl": "https://www.adrc.asia/view_disaster_en.php?NationCode=50&Lang=en&Key=2834"
-      },
-      {
-        "label": "Deaths in Cox's Bazar",
-        "value": "at least 32",
-        "sourceName": "jagonews24.com",
-        "sourceUrl": "https://www.jagonews24.com/en/national/news/94272"
+        "value": "59",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
       },
       {
         "label": "People affected",
         "value": "1.28 million people",
-        "sourceName": "bangladesh.un.org",
-        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+        "sourceName": "mappr.co",
+        "sourceUrl": "https://www.mappr.co/bangladesh-monsoon-floods-2026/"
       },
       {
-        "label": "Houses damaged or destroyed",
-        "value": "74,479 houses",
-        "sourceName": "bangladesh.un.org",
-        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+        "label": "In need of aid",
+        "value": "about 436,000 people",
+        "sourceName": "mappr.co",
+        "sourceUrl": "https://www.mappr.co/bangladesh-monsoon-floods-2026/"
       },
       {
-        "label": "Evacuated",
-        "value": "38,422 people",
-        "sourceName": "nrc.no",
-        "sourceUrl": "https://www.nrc.no/news/2026/bangladesh-monsoon-emergency-exposes-growing-humanitarian-needs-across-coxs-bazar"
+        "label": "Injured",
+        "value": "40",
+        "sourceName": "mappr.co",
+        "sourceUrl": "https://www.mappr.co/bangladesh-monsoon-floods-2026/"
+      },
+      {
+        "label": "Temporarily displaced",
+        "value": "about 38,500 people",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/field-reports/18466"
       }
     ],
     "donation": [
       {
-        "url": "https://go.ifrc.org/emergencies/8013/overview",
-        "org": "IFRC GO (Bangladesh Red Crescent operation)",
-        "kind": "society",
-        "note": "IFRC emergency overview for the DREF; funding figure shown, check for donate link.",
-        "specific": true
-      },
-      {
         "url": "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/",
-        "org": "Bangladesh Red Crescent Society",
+        "org": "Bangladesh Red Crescent Society (BDRCS)",
         "kind": "society",
-        "note": "Emergency appeal report covering the monsoon emergency; not a payment page.",
+        "note": "BDRCS emergency appeal covering the 2026 monsoon flash floods and landslides.",
         "specific": true
       },
       {
-        "url": "https://donate.bdrcs.org/",
-        "org": "Bangladesh Red Crescent Society",
+        "url": "https://go.ifrc.org/emergencies/8013/overview",
+        "org": "IFRC GO, for Bangladesh Red Crescent operation",
         "kind": "society",
-        "note": "General BDRCS donation platform for all its work.",
-        "specific": false
+        "note": "IFRC page for DREF operation MDRBD040, July 2026 to January 2027.",
+        "specific": true
       },
       {
-        "url": "https://crisisrelief.un.org/en/donate-bangladesh-crisis",
-        "org": "United Nations",
-        "kind": "un",
-        "note": "General Bangladesh fund pooled through Asia-Pacific Regional Humanitarian Fund.",
+        "url": "https://bdrcs.org/bangladesh-flood/",
+        "org": "Bangladesh Red Crescent Society (BDRCS)",
+        "kind": "society",
+        "note": "General older flood donation page with a DONATE BDRCS link, not specific to this event.",
         "specific": false
       }
     ],
     "sources": [
       {
-        "name": "jagonews24.com",
-        "url": "https://www.jagonews24.com/en/national/news/94272",
-        "title": "49% of Cox's Bazar inundated in 8-day deluge, 32 dead"
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/emergencies/8013/overview",
+        "title": "IFRC GO - Emergency - Bangladesh: Monsoon Depression in Cox's Bazar"
+      },
+      {
+        "name": "humanitariancoalition.ca",
+        "url": "https://www.humanitariancoalition.ca/flooding-in-bangladesh",
+        "title": "Flooding in Bangladesh"
+      },
+      {
+        "name": "adrc.asia",
+        "url": "https://www.adrc.asia/view_disaster_en.php?NationCode=50&Lang=en&Key=2834",
+        "title": "Bangladesh: Flood: 2026/07/05"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Chittagong_floods",
+        "title": "2026 Chittagong floods"
+      },
+      {
+        "name": "bangladesh.un.org",
+        "url": "https://bangladesh.un.org/en/319254-bangladesh-situation-report-1-flash-flood-and-landslides-13-july-2026",
+        "title": "Bangladesh: Situation Report #1 - Flash Flood and Landslides (13 July 2026)"
+      },
+      {
+        "name": "bangladesh.un.org",
+        "url": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026",
+        "title": "Bangladesh: Situation Report #2 - Flash Flood and Landslides (23 July 2026)"
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-26T08:14:05.412Z",
-    "donationSearched": "2026-10-24T13:06:33.545Z",
-    "directSearched": "2026-10-25T21:18:23.413Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-26T15:37:48.309Z",
+    "directSearched": "2026-10-26T15:37:48.309Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/",
+        "org": "HRF (Human Relief Foundation)",
+        "kind": "local",
+        "note": "Emergency food, shelter and hygiene aid for Bangladeshi families and Rohingya refugees.",
+        "title": "Donate to Bangladesh Emergency Flood Relief 2026"
+      }
+    ],
+    "seen": "2026-10-26T15:37:48.309Z"
   },
   "ifrc-flood-8014": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6401,7 +6336,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T21:18:23.413Z",
     "directSearchVersion": 2,
@@ -6555,133 +6490,160 @@
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
-    "at": "2026-10-24T13:06:33.545Z",
+    "at": "2026-10-26T15:37:48.309Z",
     "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "Monsoon floods have affected several regions of Myanmar since July 2026, including Sagaing, Mandalay, Magway and Ayeyarwady. UN and local sources reported flooding, damaged homes and displacement. UNICEF reported ongoing flooding at the end of August 2026. No confirmed status after that date was found.",
+    "searches": 2,
+    "summary": "Monsoon flooding in Myanmar began in July 2026 and has affected Sagaing, Ayeyarwady, Kayin, Tanintharyi and other regions. An IFRC DREF operation started on 12 August 2026. UNICEF estimated about 600,000 people affected by the end of August. A report from early October describes record rainfall, floods and landslides in Dawei, Tanintharyi. No later update was found.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Laymyethna",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Embankment breach; five urban wards flooded"
+      },
+      {
+        "name": "Hinthada",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Flooded"
+      },
+      {
+        "name": "Yekyi",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Flooded"
+      },
+      {
+        "name": "Kyangin",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Flooded"
+      },
+      {
+        "name": "Dawei",
+        "admin": "Tanintharyi Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Landslides, floods; 400+ houses destroyed"
+      },
+      {
+        "name": "Launglon",
+        "admin": "Tanintharyi Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Landslides and floods"
+      },
       {
         "name": "Wetlet",
         "admin": "Sagaing Region",
         "country": "MM",
-        "kind": "town",
-        "impact": "villages and paddy fields submerged"
-      },
-      {
-        "name": "Sagaing",
-        "country": "MM",
-        "kind": "region",
-        "impact": "severe flooding, 230,000 affected"
-      },
-      {
-        "name": "Mandalay",
-        "country": "MM",
-        "kind": "region",
-        "impact": "flooding linked to dam releases"
-      },
-      {
-        "name": "Magway",
-        "country": "MM",
-        "kind": "region",
-        "impact": "flooding linked to dam releases"
-      },
-      {
-        "name": "Ayeyarwady",
-        "country": "MM",
-        "kind": "region",
-        "impact": "damaged homes, schools, health facilities, roads"
-      },
-      {
-        "name": "Rakhine",
-        "country": "MM",
-        "kind": "region",
-        "impact": "damaged homes, schools, health facilities, roads"
-      },
-      {
-        "name": "Bago",
-        "country": "MM",
-        "kind": "region",
-        "impact": "flooded, among 41 townships affected"
+        "kind": "district",
+        "impact": "Flooded; villagers fled rising water"
       },
       {
         "name": "Kayin",
         "country": "MM",
         "kind": "region",
-        "impact": "flooded after Salween River broke banks"
-      },
-      {
-        "name": "Kachin",
-        "country": "MM",
-        "kind": "region",
-        "impact": "localised flooding linked to dam releases"
-      },
-      {
-        "name": "Shan (northern)",
-        "country": "MM",
-        "kind": "region",
-        "impact": "localised flooding, additional deaths reported"
+        "impact": "Displaced households; one casualty"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "11",
-        "sourceName": "gdacs.org",
-        "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104011&episodeid=13&eventtype=FL"
+        "value": "32",
+        "sourceName": "mmlibrary.uwazi.io",
+        "sourceUrl": "https://mmlibrary.uwazi.io/en/entity/bx7a1kvu2b9"
+      },
+      {
+        "label": "Injured",
+        "value": "61",
+        "sourceName": "mmlibrary.uwazi.io",
+        "sourceUrl": "https://mmlibrary.uwazi.io/en/entity/bx7a1kvu2b9"
+      },
+      {
+        "label": "Missing",
+        "value": "2",
+        "sourceName": "mmlibrary.uwazi.io",
+        "sourceUrl": "https://mmlibrary.uwazi.io/en/entity/bx7a1kvu2b9"
+      },
+      {
+        "label": "People affected",
+        "value": "600,000 people",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
       },
       {
         "label": "Displaced",
         "value": "10,233",
         "sourceName": "gdacs.org",
         "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104011&episodeid=13&eventtype=FL"
-      },
-      {
-        "label": "People affected",
-        "value": "600,000",
-        "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
       }
     ],
     "donation": [
       {
-        "url": "https://go.ifrc.org/appeals/all?region=2",
-        "org": "IFRC",
+        "url": "https://www.redcross.org.mm/news-and-multimedia/myanmar-red-cross-society-supports-flood-affected-communities-in-tanintharyi/",
+        "org": "Myanmar Red Cross Society (MRCS)",
         "kind": "society",
-        "note": "IFRC GO appeal list entry for DREF Myanmar Floods MDRMM024, 869,742 CHF request.",
+        "note": "News update on flood relief in Tanintharyi, with a Donate Now button.",
         "specific": true
       },
       {
         "url": "https://go.ifrc.org/countries/121",
-        "org": "IFRC",
+        "org": "IFRC GO",
         "kind": "society",
-        "note": "IFRC GO Myanmar page showing active DREF flood operation MDRMM024, 199,342 CHF.",
+        "note": "Operations listing for DREF MDRMM024 Myanmar Floods, with funding requirement.",
         "specific": true
       },
       {
         "url": "https://www.redcross.org.mm/en_US/donate/",
-        "org": "Myanmar Red Cross Society",
+        "org": "Myanmar Red Cross Society (MRCS)",
         "kind": "society",
-        "note": "Myanmar Red Cross donation page for unrestricted general funds, not this flood.",
+        "note": "General MRCS donation page with bank details, not specific to the flood.",
         "specific": false
       }
     ],
-    "sources": [],
-    "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-26T08:14:05.412Z",
-    "donationSearched": "2026-10-24T13:06:33.545Z",
-    "directSearched": "2026-10-25T21:18:23.413Z",
-    "directSearchVersion": 2,
-    "direct": [
+    "sources": [
       {
-        "url": "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/",
-        "org": "Aktion Myanmar – Hilfe für Entwicklungsländer e.V.",
-        "kind": "local",
-        "note": "School supply kits for children in flood-hit Sagaing and Ayeyarwady, aiming for 20,000 children.",
-        "title": "Donate to Support Children Affected by Flooding in Myanmar - WORLDCHEFS",
-        "published": "2026-08-11T21:18:23.413Z"
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/countries/121",
+        "title": "IFRC GO - Myanmar"
+      },
+      {
+        "name": "unicef.org",
+        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
+        "title": "Myanmar 2026 Monsoon Emergency Response"
+      },
+      {
+        "name": "mekongeye.com",
+        "url": "https://www.mekongeye.com/2026/10/05/dawei-flood",
+        "title": "Record rainfall triggers floods, landslides in southern Myanmar amid El Niño warning"
+      },
+      {
+        "name": "gdacs.org",
+        "url": "https://www.gdacs.org/report.aspx?eventid=1104011&episodeid=13&eventtype=FL",
+        "title": "Overall Green Flood in Myanmar from 04 Jul 2026 01:00 UTC to 15 Aug 2026 01:00 UTC"
+      },
+      {
+        "name": "france24.com",
+        "url": "https://www.france24.com/en/live-news/20260815-monsoon-rains-submerge-villages-fields-in-myanmar",
+        "title": "Monsoon rains submerge villages, fields in Myanmar"
+      },
+      {
+        "name": "ahacentre.org",
+        "url": "https://ahacentre.org/flash-update/flash-update-no-1-flooding-in-ayeyarwady-and-kayin-myanmar-19-august-2026/",
+        "title": "FLASH UPDATE: No. 1"
       }
-    ]
+    ],
+    "membersHash": "ifrc|MM#41a7e660",
+    "donationSearched": "2026-10-26T15:37:48.309Z",
+    "directSearched": "2026-10-26T15:37:48.309Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T15:37:48.309Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -7163,7 +7125,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-26T08:14:05.412Z",
+    "seen": "2026-10-26T15:37:48.309Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2,
