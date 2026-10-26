@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-26T00:48:50.592Z",
+  "updated": "2026-10-26T08:14:05.412Z",
   "fetched": {
-    "societies": "2026-10-26T00:48:50.592Z",
-    "uncr": "2026-10-26T00:48:50.592Z"
+    "societies": "2026-10-26T08:14:05.412Z",
+    "uncr": "2026-10-26T08:14:05.412Z"
   },
   "societies": {
     "AF": {
@@ -2914,65 +2914,6 @@
         "https://www.drk.de/"
       ]
     },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T07:59:52.974Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/emergencies/8013/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T07:59:52.974Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8013/overview"
-      ]
-    },
-    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T07:59:52.974Z",
-      "chain": [
-        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
-      ],
-      "blocked": true
-    },
-    "redcross.ca": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T07:59:52.974Z",
-      "chain": [
-        "https://www.redcross.ca/"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/emergencies/8057/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T07:59:52.974Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8057/overview"
-      ]
-    },
-    "go.ifrc.org/countries/41": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T07:59:52.974Z",
-      "chain": [
-        "https://go.ifrc.org/countries/41"
-      ]
-    },
-    "go.ifrc.org/countries/167": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-25T07:59:52.974Z",
-      "chain": [
-        "https://go.ifrc.org/countries/167"
-      ]
-    },
     "cruzroja.org.pa": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
@@ -3252,6 +3193,48 @@
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
       ]
+    },
+    "indianredcross.org/ircs/donatenow": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.indianredcross.org/ircs/donatenow/"
+      ],
+      "checked": "2026-10-26T08:14:05.412Z"
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
+      ],
+      "checked": "2026-10-26T08:14:05.412Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-10-26T08:14:05.412Z"
+    },
+    "go.ifrc.org/emergencies/8013/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8013/overview"
+      ],
+      "checked": "2026-10-26T08:14:05.412Z"
+    },
+    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-26T08:14:05.412Z"
     }
   }
 }

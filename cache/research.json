@@ -296,7 +296,7 @@
       }
     ],
     "membersHash": "eonet,gdacs,news|CN,JP,KR,PH#1f164bd8",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-25T18:01:40.579Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -348,7 +348,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-25T18:01:40.579Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -363,6 +363,131 @@
     "sources": [],
     "membersHash": "gdacs|CA,US#471b9aae",
     "seen": "2026-10-25T13:34:13.512Z"
+  },
+  "gdacs-cyclone-tc-1001345": {
+    "at": "2026-10-26T08:14:05.412Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Tropical Cyclone Arnab, named by the IMD, formed as a cyclonic storm over the Bay of Bengal on 26 October 2026 and was expected to intensify into a severe cyclonic storm. Landfall between Bapatla and Visakhapatnam on the Andhra Pradesh and Yanam coasts was forecast for the forenoon of 28 October. Red alerts were issued for Andhra Pradesh and South Odisha coasts, and large-scale evacuations of coastal hutment dwellers began in Andhra Pradesh. No impacts had been reported yet.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Andhra Pradesh coast",
+        "country": "IN",
+        "kind": "region",
+        "impact": "red alert, evacuations under way"
+      },
+      {
+        "name": "Visakhapatnam",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "city",
+        "impact": "expected landfall area, red alert"
+      },
+      {
+        "name": "Bapatla",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "town",
+        "impact": "expected landfall area, red alert"
+      },
+      {
+        "name": "Yanam",
+        "country": "IN",
+        "kind": "town",
+        "impact": "expected landfall, red alert"
+      },
+      {
+        "name": "Ganjam",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "red alert for 28 October"
+      },
+      {
+        "name": "Gajapati",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "red alert for 28 October"
+      },
+      {
+        "name": "Rayagada",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "red alert for 28 October"
+      },
+      {
+        "name": "Koraput",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "red alert for 28 October"
+      },
+      {
+        "name": "Malkangiri",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "red alert for 28 October"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People identified as vulnerable…",
+        "value": "570,000 people",
+        "sourceName": "india.com",
+        "sourceUrl": "https://www.india.com/news/india/cyclone-arnab-live-deep-depression-intensifies-into-cyclonic-storm-heavy-rain-lashes-parts-of-tamil-nadu-8539304/"
+      },
+      {
+        "label": "NDRF teams deployed",
+        "value": "Ten teams",
+        "sourceName": "freepressjournal.in",
+        "sourceUrl": "https://www.freepressjournal.in/india/cyclone-arnab-intensifies-over-bay-of-bengal-imd-issues-red-alert-for-andhra-pradesh-south-odisha-coasts-ahead-of-october-28-landfall"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://www.indianredcross.org/ircs/donatenow/",
+        "org": "Indian Red Cross Society",
+        "kind": "society",
+        "note": "General donation page for the society's work, not a cyclone appeal.",
+        "specific": false
+      }
+    ],
+    "sources": [
+      {
+        "name": "india.com",
+        "url": "https://www.india.com/news/india/cyclone-arnab-live-deep-depression-intensifies-into-cyclonic-storm-heavy-rain-lashes-parts-of-tamil-nadu-8539304/",
+        "title": "Cyclone Arnab Live: Deep depression intensifies into cyclonic storm, heavy rain lashes parts of Tamil Nadu"
+      },
+      {
+        "name": "deccanherald.com",
+        "url": "https://www.deccanherald.com/india/cyclone-arnab-to-make-landfall-on-andhra-pradesh-check-which-other-states-to-get-affected-4194585",
+        "title": "Cyclone 'Arnab' to make landfall on Andhra Pradesh coast; check which other states get affected"
+      },
+      {
+        "name": "freepressjournal.in",
+        "url": "https://www.freepressjournal.in/india/cyclone-arnab-intensifies-over-bay-of-bengal-imd-issues-red-alert-for-andhra-pradesh-south-odisha-coasts-ahead-of-october-28-landfall",
+        "title": "Cyclone Arnab Intensifies Over Bay Of Bengal; IMD Issues Red Alert For Andhra Pradesh & South Odisha Coasts Ahead Of October 28 Landfall"
+      },
+      {
+        "name": "businesstoday.in",
+        "url": "https://www.businesstoday.in/india/story/cyclone-arnab-imd-issues-red-alert-as-andhra-pradesh-odisha-brace-for-landfall-check-rainfall-forecast-563587-2026-10-26",
+        "title": "Cyclone Arnab: IMD issues red alert as Andhra Pradesh, Odisha brace for landfall. Check rainfall forecast - BusinessToday"
+      },
+      {
+        "name": "thefederal.com",
+        "url": "https://thefederal.com/category/news/cyclone-arnab-red-alert-in-5-odisha-districts-leaves-cancelled-schools-to-be-closed-260713",
+        "title": "Cyclone Arnab: Red alert in 5 Odisha districts; leaves cancelled, schools to be closed"
+      }
+    ],
+    "membersHash": "gdacs|IN#4a1b9f67",
+    "donationSearched": "2026-10-26T08:14:05.412Z",
+    "directSearched": "2026-10-26T08:14:05.412Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T08:14:05.412Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -464,7 +589,7 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-24T13:06:33.545Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -480,7 +605,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T15:46:17.310Z",
     "directSearchVersion": 2
@@ -613,7 +738,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-25T13:34:13.512Z",
     "directSearched": "2026-10-25T14:24:49.037Z"
   },
@@ -706,7 +831,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-25T07:59:52.974Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -751,7 +876,7 @@
       }
     ],
     "membersHash": "gdacs|VU#1dba2781",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -888,7 +1013,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1571367": {
@@ -1199,105 +1324,88 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-10-25T00:43:26.084Z",
+    "at": "2026-10-26T08:14:05.412Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu City, Xizang (Tibet), China, on 22 October 2026 at 22:33 local time. As of 24 October, Nagqu municipal government reported 16 people killed and 76 injured. Rescue, resettlement and relocation were still underway. Local officials warned that cracked or leaning homes could collapse in aftershocks.",
+    "searches": 4,
+    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu City, Tibet Autonomous Region, China, on 22 October 2026, about 191 km ENE of Nagqu. Officials reported at least 16 deaths and 76 injured, and hundreds of homes were damaged or collapsed. Search and rescue was continuing as of 23 October. No reports dated 24 to 25 October were found, so the current status is unconfirmed.",
     "ongoing": true,
     "places": [
       {
         "name": "Baqen County",
-        "admin": "Xizang",
+        "admin": "Tibet Autonomous Region",
         "country": "CN",
         "kind": "district",
-        "impact": "epicentre"
+        "impact": "339 homes collapsed, 20 livestock sheds damaged"
+      },
+      {
+        "name": "Kamlung Gal",
+        "admin": "Tibet Autonomous Region",
+        "country": "CN",
+        "kind": "town",
+        "impact": "10 deaths"
+      },
+      {
+        "name": "Gangcheng Township",
+        "admin": "Tibet Autonomous Region",
+        "country": "CN",
+        "kind": "town",
+        "impact": "extensive destruction"
+      },
+      {
+        "name": "Zasip Township",
+        "admin": "Tibet Autonomous Region",
+        "country": "CN",
+        "kind": "town",
+        "impact": "extensive destruction"
       },
       {
         "name": "Maru Township",
-        "admin": "Xizang",
+        "admin": "Tibet Autonomous Region",
         "country": "CN",
-        "kind": "district",
-        "impact": "earthquake-hit; temporary resettlement site"
+        "kind": "town",
+        "impact": "building collapses, ground cracks, wall damage"
       },
       {
-        "name": "Gangqie Township",
-        "admin": "Xizang",
+        "name": "National Highway 317",
         "country": "CN",
-        "kind": "district",
-        "impact": "fire and rescue inspections underway"
+        "kind": "site",
+        "impact": "section blocked by rockfalls"
       },
       {
-        "name": "Nagqu",
-        "admin": "Xizang",
+        "name": "Gerutang Village",
+        "admin": "Tibet Autonomous Region",
         "country": "CN",
-        "kind": "city",
-        "impact": "hundreds of homes reported collapsing"
+        "kind": "town",
+        "impact": "residents felt strong shaking"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "16",
-        "sourceName": "tribune.com.pk",
-        "sourceUrl": "https://tribune.com.pk/story/2636473/70-magnitude-earthquake-kills-16-in-tibets-nagqu-city"
+        "value": "at least 16",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/10/22/magnitude-7-earthquake-kills-16-people-in-chinas-tibet-xinhua-reports"
       },
       {
         "label": "Injured",
-        "value": "76",
-        "sourceName": "tribune.com.pk",
-        "sourceUrl": "https://tribune.com.pk/story/2636473/70-magnitude-earthquake-kills-16-in-tibets-nagqu-city"
+        "value": "76, including 11 seriously",
+        "sourceName": "visiontimes.com",
+        "sourceUrl": "https://www.visiontimes.com/2026/10/23/tibet-earthquake-kills-16-injures-76-as-rescuers-race-to-reach-remote-villages.html"
       },
       {
-        "label": "Evacuated or relocated",
-        "value": "more than 12,000 people",
-        "sourceName": "china.org.cn",
-        "sourceUrl": "http://www.china.org.cn/2026-10/24/content_118747461.shtml"
-      },
-      {
-        "label": "Homes damaged or destroyed",
-        "value": "339 homes",
-        "sourceName": "china.org.cn",
-        "sourceUrl": "http://www.china.org.cn/2026-10/24/content_118747461.shtml"
+        "label": "Evacuated",
+        "value": "more than 12,400 people",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake"
       }
     ],
     "donation": [],
-    "sources": [
-      {
-        "name": "tribune.com.pk",
-        "url": "https://tribune.com.pk/story/2636473/70-magnitude-earthquake-kills-16-in-tibets-nagqu-city",
-        "title": "Injuries in China's Tibet rise to 76 after earthquake, death toll remains at 16"
-      },
-      {
-        "name": "news.cgtn.com",
-        "url": "https://news.cgtn.com/news/2026-10-23/news-1RsWPFMFpy8/share_amp.html",
-        "title": "16 killed after M7.0 quake hits China's Xizang, rescue efforts underway"
-      },
-      {
-        "name": "vinnews.com",
-        "url": "https://vinnews.com/2026/10/22/a-7-0-earthquake-hits-chinas-tibet-killing-16-and-injuring-32/",
-        "title": "A 7.0 Earthquake Hits China’s Tibet, Killing 16 And Injuring 32"
-      },
-      {
-        "name": "tribuneindia.com",
-        "url": "https://www.tribuneindia.com/news/world/tibet-earthquake-76-injured-16-killed-after-7-0-magnitude-quake-hits-nakchu-rescue-operations-underway",
-        "title": "Tibet Earthquake: 76 injured, 16 killed after 7.0-magnitude quake hits Nakchu; rescue operations underway - The Tribune"
-      },
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/20261023/c36b4c23dfcd496f9117e9a8c8a69511/c.html",
-        "title": "16 dead, 76 injured after 7.0-magnitude quake hits China's Xizang-Xinhua"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake",
-        "title": "2026 Tibet earthquake"
-      }
-    ],
-    "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-10-26T00:48:50.592Z",
-    "donationSearched": "2026-10-25T00:43:26.084Z",
-    "directSearched": "2026-10-25T15:46:17.310Z",
-    "directSearchVersion": 2
+    "sources": [],
+    "membersHash": "gdacs,usgs|CN#4293b0e1",
+    "donationSearched": "2026-10-26T08:14:05.412Z",
+    "directSearched": "2026-10-26T08:14:05.412Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T08:14:05.412Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -3989,7 +4097,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -4061,7 +4169,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
@@ -5597,7 +5705,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-25T18:01:40.579Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2,
@@ -6144,7 +6252,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-24T13:06:33.545Z",
     "directSearched": "2026-10-25T21:18:23.413Z",
     "directSearchVersion": 2
@@ -6293,7 +6401,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T21:18:23.413Z",
     "directSearchVersion": 2,
@@ -6560,7 +6668,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-24T13:06:33.545Z",
     "directSearched": "2026-10-25T21:18:23.413Z",
     "directSearchVersion": 2,
@@ -7055,7 +7163,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-26T00:48:50.592Z",
+    "seen": "2026-10-26T08:14:05.412Z",
     "donationSearched": "2026-10-24T17:51:09.606Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2,
