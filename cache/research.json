@@ -214,92 +214,36 @@
     "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001338": {
-    "at": "2026-10-25T18:01:40.579Z",
+    "at": "2026-10-26T21:25:14.833Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Super Typhoon Champi (Rosal) began on 14 October 2026. As of 25 October it was still ongoing. Heavy rain and strong winds hit Jeju from 23 October, with 341.5 mm recorded on Mount Halla. The storm has left the Philippine Area of Responsibility and was forecast to approach Kyushu, Japan, where it was expected to become extratropical. In Taiwan, one person died and 171 were injured as of 23 October, and about 1,300 people were evacuated.",
+    "summary": "Super Typhoon Champi, which started on 14 October 2026, weakened into an extratropical cyclone overnight into 26 October. Heavy rain is still forecast for various parts of Japan through 27 October, as the typhoon's humid air stimulates a stalled front over the Japanese archipelago.",
     "ongoing": true,
-    "places": [
-      {
-        "name": "Jeju",
-        "country": "KR",
-        "kind": "region",
-        "impact": "Heavy rain and strong winds; flights grounded, ferries halted"
-      },
-      {
-        "name": "Mount Halla",
-        "admin": "Jeju",
-        "country": "KR",
-        "kind": "site",
-        "impact": "341.5 mm rain; hiking trails closed"
-      },
-      {
-        "name": "Owase",
-        "admin": "Mie",
-        "country": "JP",
-        "kind": "city",
-        "impact": "302 mm rain in 12 hours"
-      },
-      {
-        "name": "Ishigaki Island",
-        "admin": "Okinawa",
-        "country": "JP",
-        "kind": "site",
-        "impact": "Wind gusts of 126 kph recorded"
-      },
-      {
-        "name": "Batanes",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Signal No. 2 raised"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Evacuated",
-        "value": "about 1,300",
-        "sourceName": "ca.news.yahoo.com",
-        "sourceUrl": "https://ca.news.yahoo.com/296-km-h-super-typhoon-205523352.html"
-      }
-    ],
+    "places": [],
+    "figures": [],
     "donation": [],
     "sources": [
       {
         "name": "news.sbs.co.kr",
-        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008814086",
-        "title": "Rainwater Shoots Upward: Up to 340mm of Torrential Rain Hammers Jeju as Typhoon Approaches"
-      },
-      {
-        "name": "japantimes.co.jp",
-        "url": "https://www.japantimes.co.jp/news/2026/10/24/japan/typhoon-champi-saturday/",
-        "title": "Typhoon Champi traveling north of Okinawa islands - The Japan Times"
-      },
-      {
-        "name": "gmanetwork.com",
-        "url": "https://www.gmanetwork.com/news/weather/content/1007001/typhoon-rosal-exits-par-pagasa/story/",
-        "title": "Typhoon Rosal exits PAR — PAGASA"
-      },
-      {
-        "name": "koreajoongangdaily.com",
-        "url": "https://www.koreajoongangdaily.com/korea/typhoon-champi-brings-heavy-rain-strong-winds-and-travel-disruptions-to-jeju/12936570",
-        "title": "Typhoon Champi brings heavy rain, strong winds and travel disruptions to Jeju"
-      },
-      {
-        "name": "ua.news",
-        "url": "https://ua.news/en/dovkolo-svitu/taifun-champi-mozhe-nablizitisia-do-kiusiu-v-ponedilok-the-japan-times",
-        "title": "Typhoon Champi may approach Kyushu on Monday"
-      },
-      {
-        "name": "watchers.news",
-        "url": "https://watchers.news/2026/10/21/super-typhoon-champi-becomes-the-strongest-tropical-cyclone-of-2026-signal-no-2-remains-over-batanes-philippines/",
-        "title": "Super Typhoon Champi becomes the strongest tropical cyclone of 2026, Signal No. 2 remains over Batanes, Philippines - The Watchers"
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008814278",
+        "title": "Typhoon Champi Leaves Trail of Damage in Okinawa and Taiwan, Heavy Rain Forecast Across Japan"
       }
     ],
-    "membersHash": "eonet,gdacs,news|CN,JP,KR,PH#1f164bd8",
-    "seen": "2026-10-26T15:37:48.309Z",
-    "donationSearched": "2026-10-25T18:01:40.579Z",
-    "directSearched": "2026-10-25T18:01:40.579Z",
-    "directSearchVersion": 2
+    "membersHash": "eonet,gdacs|CN,JP,KR,PH#afb26aec",
+    "donationSearched": "2026-10-26T21:25:14.833Z",
+    "directSearched": "2026-10-26T21:25:14.833Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://wck.org/relief/typhoon-champi/",
+        "org": "World Central Kitchen (WCK)",
+        "kind": "local",
+        "note": "Hot meals for shelters and relief workers responding to Typhoon Champi.",
+        "title": "WCK Responds to Typhoon Champi in Guam and the Northern Mariana Islands",
+        "published": "2026-10-21T21:25:14.833Z"
+      }
+    ],
+    "seen": "2026-10-26T21:25:14.833Z"
   },
   "gdacs-cyclone-tc-1001341": {
     "at": "2026-10-25T18:01:40.579Z",
@@ -348,7 +292,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-26T15:37:48.309Z",
+    "seen": "2026-10-26T21:25:14.833Z",
     "donationSearched": "2026-10-25T18:01:40.579Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -365,129 +309,167 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001345": {
-    "at": "2026-10-26T08:14:05.412Z",
+    "at": "2026-10-26T21:25:14.833Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Tropical Cyclone Arnab, named by the IMD, formed as a cyclonic storm over the Bay of Bengal on 26 October 2026 and was expected to intensify into a severe cyclonic storm. Landfall between Bapatla and Visakhapatnam on the Andhra Pradesh and Yanam coasts was forecast for the forenoon of 28 October. Red alerts were issued for Andhra Pradesh and South Odisha coasts, and large-scale evacuations of coastal hutment dwellers began in Andhra Pradesh. No impacts had been reported yet.",
+    "summary": "Tropical Cyclone Arnab formed in the Bay of Bengal and began on 25 October 2026. As of 26 October it was moving nearly westwards at about 15 kmph toward India's east coast and had not yet made landfall. Forecasts for the landfall date conflict and are unconfirmed. Andhra Pradesh and Odisha are preparing evacuations and school closures. No damage was reported yet.",
     "ongoing": true,
     "places": [
       {
-        "name": "Andhra Pradesh coast",
+        "name": "Andhra Pradesh",
         "country": "IN",
         "kind": "region",
-        "impact": "red alert, evacuations under way"
-      },
-      {
-        "name": "Visakhapatnam",
-        "admin": "Andhra Pradesh",
-        "country": "IN",
-        "kind": "city",
-        "impact": "expected landfall area, red alert"
+        "impact": "Expected landfall; 570,000 people identified as vulnerable"
       },
       {
         "name": "Bapatla",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "town",
-        "impact": "expected landfall area, red alert"
+        "kind": "district",
+        "impact": "Named at risk; relief funds allocated"
       },
       {
-        "name": "Yanam",
+        "name": "Krishna",
+        "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "town",
-        "impact": "expected landfall, red alert"
+        "kind": "district",
+        "impact": "Named at risk; relief funds allocated"
+      },
+      {
+        "name": "West Godavari",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Named at risk; relief funds allocated"
+      },
+      {
+        "name": "Konaseema",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Named at risk; relief funds allocated"
+      },
+      {
+        "name": "East Godavari",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Named at risk; relief funds allocated"
+      },
+      {
+        "name": "Kakinada",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Named at risk; relief funds allocated"
+      },
+      {
+        "name": "Anakapalli",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Named at risk; relief funds allocated"
+      },
+      {
+        "name": "Odisha",
+        "country": "IN",
+        "kind": "region",
+        "impact": "Red warning for very heavy rain; evacuations prepared"
       },
       {
         "name": "Ganjam",
         "admin": "Odisha",
         "country": "IN",
         "kind": "district",
-        "impact": "red alert for 28 October"
+        "impact": "Red warning for very heavy rain"
       },
       {
         "name": "Gajapati",
         "admin": "Odisha",
         "country": "IN",
         "kind": "district",
-        "impact": "red alert for 28 October"
+        "impact": "Red warning for very heavy rain"
       },
       {
         "name": "Rayagada",
         "admin": "Odisha",
         "country": "IN",
         "kind": "district",
-        "impact": "red alert for 28 October"
+        "impact": "Red warning for very heavy rain"
       },
       {
         "name": "Koraput",
         "admin": "Odisha",
         "country": "IN",
         "kind": "district",
-        "impact": "red alert for 28 October"
+        "impact": "Red warning for very heavy rain"
       },
       {
         "name": "Malkangiri",
         "admin": "Odisha",
         "country": "IN",
         "kind": "district",
-        "impact": "red alert for 28 October"
+        "impact": "Red warning for very heavy rain"
       }
     ],
     "figures": [
       {
-        "label": "People identified as vulnerable…",
+        "label": "People identified as vulnerable (at…",
         "value": "570,000 people",
-        "sourceName": "india.com",
-        "sourceUrl": "https://www.india.com/news/india/cyclone-arnab-live-deep-depression-intensifies-into-cyclonic-storm-heavy-rain-lashes-parts-of-tamil-nadu-8539304/"
+        "sourceName": "mylifegb.com",
+        "sourceUrl": "https://www.mylifegb.com/news/cyclone-arnab-india-eastern-coast-evacuation-warning"
       },
       {
-        "label": "NDRF teams deployed",
-        "value": "Ten teams",
-        "sourceName": "freepressjournal.in",
-        "sourceUrl": "https://www.freepressjournal.in/india/cyclone-arnab-intensifies-over-bay-of-bengal-imd-issues-red-alert-for-andhra-pradesh-south-odisha-coasts-ahead-of-october-28-landfall"
-      }
-    ],
-    "donation": [
+        "label": "Trains cancelled",
+        "value": "53 trains",
+        "sourceName": "telugu360.com",
+        "sourceUrl": "https://www.telugu360.com/cyclone-arnab-53-trains-cancelled-schools-shut-in-ap-%E2%82%B927-crore-sanctioned-for-relief/"
+      },
       {
-        "url": "https://www.indianredcross.org/ircs/donatenow/",
-        "org": "Indian Red Cross Society",
-        "kind": "society",
-        "note": "General donation page for the society's work, not a cyclone appeal.",
-        "specific": false
+        "label": "Relief funds sanctioned",
+        "value": "₹27 crore",
+        "sourceName": "newsbytesapp.com",
+        "sourceUrl": "https://www.newsbytesapp.com/news/india/cyclone-arnab-andhra-pradesh-allocates-rs27cr-dispatches-15-ndrf-teams/tldr"
       }
     ],
+    "donation": [],
     "sources": [
       {
-        "name": "india.com",
-        "url": "https://www.india.com/news/india/cyclone-arnab-live-deep-depression-intensifies-into-cyclonic-storm-heavy-rain-lashes-parts-of-tamil-nadu-8539304/",
-        "title": "Cyclone Arnab Live: Deep depression intensifies into cyclonic storm, heavy rain lashes parts of Tamil Nadu"
+        "name": "vajiramandravi.com",
+        "url": "https://vajiramandravi.com/current-affairs/cyclone-arnab-2026/",
+        "title": "Cyclone Arnab 2026, IMD Tracker, Landfall, Latest Updates"
       },
       {
-        "name": "deccanherald.com",
-        "url": "https://www.deccanherald.com/india/cyclone-arnab-to-make-landfall-on-andhra-pradesh-check-which-other-states-to-get-affected-4194585",
-        "title": "Cyclone 'Arnab' to make landfall on Andhra Pradesh coast; check which other states get affected"
+        "name": "theweek.in",
+        "url": "https://www.theweek.in/news/india/2026/10/26/andhra-odisha-brace-for-impact-as-cyclone-arnab-nears-coast-at-speed-of-15-kmph.html",
+        "title": "Andhra, Odisha brace for impact as Cyclone Arnab nears coast at speed of 15 kmph - The Week"
       },
       {
-        "name": "freepressjournal.in",
-        "url": "https://www.freepressjournal.in/india/cyclone-arnab-intensifies-over-bay-of-bengal-imd-issues-red-alert-for-andhra-pradesh-south-odisha-coasts-ahead-of-october-28-landfall",
-        "title": "Cyclone Arnab Intensifies Over Bay Of Bengal; IMD Issues Red Alert For Andhra Pradesh & South Odisha Coasts Ahead Of October 28 Landfall"
+        "name": "mylifegb.com",
+        "url": "https://www.mylifegb.com/news/cyclone-arnab-india-eastern-coast-evacuation-warning",
+        "title": "Cyclone Arnab Threatens India’s Eastern Coast: 570,000 People at Risk as Evacuations Prepare to Begin"
       },
       {
-        "name": "businesstoday.in",
-        "url": "https://www.businesstoday.in/india/story/cyclone-arnab-imd-issues-red-alert-as-andhra-pradesh-odisha-brace-for-landfall-check-rainfall-forecast-563587-2026-10-26",
-        "title": "Cyclone Arnab: IMD issues red alert as Andhra Pradesh, Odisha brace for landfall. Check rainfall forecast - BusinessToday"
+        "name": "newsbytesapp.com",
+        "url": "https://www.newsbytesapp.com/news/india/cyclone-arnab-andhra-pradesh-allocates-rs27cr-dispatches-15-ndrf-teams/tldr",
+        "title": "Cyclone Arnab: Andhra Pradesh allocates ₹27cr dispatches 15 NDRF teams"
       },
       {
-        "name": "thefederal.com",
-        "url": "https://thefederal.com/category/news/cyclone-arnab-red-alert-in-5-odisha-districts-leaves-cancelled-schools-to-be-closed-260713",
-        "title": "Cyclone Arnab: Red alert in 5 Odisha districts; leaves cancelled, schools to be closed"
+        "name": "telugu360.com",
+        "url": "https://www.telugu360.com/cyclone-arnab-53-trains-cancelled-schools-shut-in-ap-%E2%82%B927-crore-sanctioned-for-relief/",
+        "title": "Cyclone Arnab: 53 Trains Cancelled, Schools Shut in AP; ₹27 Crore Sanctioned for Relief - Telugu360"
+      },
+      {
+        "name": "business-standard.com",
+        "url": "https://www.business-standard.com/amp/india-news/cyclone-arnab-andhra-odisha-prepare-to-evacuate-people-ahead-of-landfall-126102600339_1.html",
+        "title": "Cyclone Arnab: Andhra, Odisha prepare to evacuate people ahead of landfall"
       }
     ],
-    "membersHash": "gdacs|IN#4a1b9f67",
-    "seen": "2026-10-26T15:37:48.309Z",
-    "donationSearched": "2026-10-26T08:14:05.412Z",
-    "directSearched": "2026-10-26T08:14:05.412Z",
-    "directSearchVersion": 2
+    "membersHash": "eonet,gdacs|IN#d1e12953",
+    "donationSearched": "2026-10-26T21:25:14.833Z",
+    "directSearched": "2026-10-26T21:25:14.833Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T21:25:14.833Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-26T15:37:48.309Z",
@@ -536,26 +518,129 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "seen": "2026-10-26T21:25:14.833Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-26T15:37:48.309Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-10-24T17:51:09.606Z",
+    "at": "2026-10-26T21:25:14.833Z",
     "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "",
+    "searches": 4,
+    "summary": "Prolonged drought is affecting parts of Central America, which began on 21 April 2026. On 24 October 2026 the IFRC said about one million people in Honduras are affected. A red alert covers 103 Honduran municipalities, and 234 more are under other alert levels. Drought is projected to worsen between October 2026 and March 2027. Western Nicaragua and southeastern Mexico also report dry conditions.",
     "ongoing": true,
-    "places": [],
-    "figures": [],
+    "places": [
+      {
+        "name": "Choluteca",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red-alert municipalities"
+      },
+      {
+        "name": "Comayagua",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red-alert municipalities"
+      },
+      {
+        "name": "El Paraíso",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red-alert municipalities"
+      },
+      {
+        "name": "Francisco Morazán",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red-alert municipalities"
+      },
+      {
+        "name": "La Paz",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red-alert municipalities"
+      },
+      {
+        "name": "Valle",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red-alert municipalities"
+      },
+      {
+        "name": "Intibucá",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red-alert municipalities"
+      },
+      {
+        "name": "Lempira",
+        "country": "HN",
+        "kind": "region",
+        "impact": "red-alert municipalities"
+      },
+      {
+        "name": "Western Nicaragua",
+        "country": "NI",
+        "kind": "region",
+        "impact": "driest rainy season in 124 years"
+      },
+      {
+        "name": "Southeast Mexico",
+        "country": "MX",
+        "kind": "region",
+        "impact": "dry spell"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People affected",
+        "value": "about 1 million",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/america/agencias/2026/10/22/la-cruz-roja-urge-a-america-latina-a-prepararse-ante-un-fenomeno-de-el-nino-historico/"
+      }
+    ],
     "donation": [],
-    "sources": [],
+    "sources": [
+      {
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/press-release/ifrc-anticipation-and-preparedness-can-save-lives-ahead-potentially-historic-el-nino",
+        "title": "IFRC: Anticipation and preparedness can save lives ahead of a potentially historic El Niño"
+      },
+      {
+        "name": "mundoagropecuario.com",
+        "url": "https://mundoagropecuario.com/honduras-sequia-cultivos-ayuda-humanitaria/",
+        "title": "Honduras pide US$60 millones ante las pérdidas agrícolas por sequía - Mundo Agropecuario"
+      },
+      {
+        "name": "washingtonpost.com",
+        "url": "https://www.washingtonpost.com/world/2026/10/21/cloud-seeding-climate-drought-nino-honduras/806631ae-cd64-11f1-ac04-9f58578a68b4_story.html",
+        "title": "In Honduras, hard hit by drought, authorities hope to make it rain using contentious tactic - The Washington Post"
+      },
+      {
+        "name": "agrolatam.com",
+        "url": "https://www.agrolatam.com/agricultura-latam/alerta-en-centroamerica-una-zona-agricola-vive-su-periodo-mas-seco-en-124-anos/",
+        "title": "¿Cómo está golpeando la sequía al agro de Centroamérica?"
+      },
+      {
+        "name": "mexiconewsdaily.com",
+        "url": "https://mexiconewsdaily.com/news/hurricanes-above-average-rainfall-werent-enough-to-prevent-more-drought-mexico/",
+        "title": "Hurricanes? Above-average rainfall? They weren't enough to prevent more drought in Mexico"
+      }
+    ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-26T15:37:48.309Z",
-    "donationSearched": "2026-10-24T17:51:09.606Z",
-    "directSearched": "2026-10-25T15:46:17.310Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-26T21:25:14.833Z",
+    "directSearched": "2026-10-26T21:25:14.833Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://actalliance.org/appeals-rapid-response-funds/rrf-21-2026-humanitarian-response-for-the-population-affected-by-drought-in-hondurass-dry-corridor/",
+        "org": "ACT Alliance (partners OCDIH and CASM)",
+        "kind": "local",
+        "note": "Cash for food and needs for 743 families; water storage and treatment supplies.",
+        "title": "RRF 21/2026 - Humanitarian Response for the Population Affected by Drought in Honduras’s Dry Corridor - ACT Alliance"
+      }
+    ],
+    "seen": "2026-10-26T21:25:14.833Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-26T15:37:48.309Z",
@@ -637,10 +722,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
+    "seen": "2026-10-26T21:25:14.833Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-26T15:37:48.309Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -731,55 +816,52 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-26T15:37:48.309Z",
+    "seen": "2026-10-26T21:25:14.833Z",
     "donationSearched": "2026-10-25T07:59:52.974Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1570077": {
-    "at": "2026-10-24T17:51:09.606Z",
+    "at": "2026-10-26T21:25:14.833Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 6.3 earthquake struck Vanuatu on 8 October 2026, shallow beneath Penama Island, according to USGS reports. On 24 October 2026, an M6.9 earthquake struck offshore northern Vanuatu about 197 km WNW of Port-Olry, followed by an M6.3 event. The Pacific Tsunami Warning Center said the tsunami threat had passed. No damage or casualties were reported.",
-    "ongoing": true,
+    "searches": 2,
+    "summary": "A magnitude 6.3 earthquake struck beneath Pentecost Island, Vanuatu, on 8 October 2026 (origin time differs between sources). Sources report possible strong shaking, with a USGS landslide risk assessment rated low. The latest coverage found is from 9 October 2026, and no damage or casualty reports were found for this event.",
+    "ongoing": false,
     "places": [
       {
-        "name": "Penama Island",
+        "name": "Pentecost Island",
         "country": "VU",
-        "kind": "region",
-        "impact": "Oct 8 M6.3 epicentre beneath; no damage named"
-      },
-      {
-        "name": "Port-Olry",
-        "country": "VU",
-        "kind": "town",
-        "impact": "Oct 24 M6.9 epicentre offshore, 197 km WNW"
+        "kind": "site",
+        "impact": "epicentre area"
       }
     ],
-    "figures": [],
+    "figures": [
+      {
+        "label": "People exposed to very strong shaking",
+        "value": "at least 8,000 people",
+        "sourceName": "earthquakeinsights.substack.com",
+        "sourceUrl": "https://earthquakeinsights.substack.com/p/magnitude-63-earthquake-strikes-vanuatu"
+      }
+    ],
     "donation": [],
     "sources": [
+      {
+        "name": "earthquakeinsights.substack.com",
+        "url": "https://earthquakeinsights.substack.com/p/magnitude-63-earthquake-strikes-vanuatu",
+        "title": "Magnitude 6.3 earthquake strikes Vanuatu"
+      },
       {
         "name": "channelstv.com",
         "url": "https://www.channelstv.com/2026/10/08/just-in-6-3-magnitude-earthquake-hits-vanuatu-says-us-agency/",
         "title": "6.3-Magnitude Earthquake Hits Vanuatu, Says US Agency • Channels Television"
       },
       {
-        "name": "watchers.news",
-        "url": "https://watchers.news/2026/10/24/strong-earthquake-sequence-strikes-off-northern-vanuatu-after-initial-m6-9-event/",
-        "title": "Strong earthquake sequence strikes off northern Vanuatu after initial M6.9 event - The Watchers"
-      },
-      {
-        "name": "earthquakeinsights.substack.com",
-        "url": "https://earthquakeinsights.substack.com/p/magnitude-63-earthquake-strikes-vanuatu",
-        "title": "Magnitude 6.3 earthquake strikes Vanuatu"
+        "name": "abcnews.com",
+        "url": "https://abcnews.com/International/wireStory/preliminary-magnitude-69-earthquake-hits-off-coast-vanuatu-137531764",
+        "title": "Preliminary magnitude 6.9 earthquake hits off the coast of Vanuatu - ABC News"
       }
     ],
-    "membersHash": "gdacs|VU#1dba2781",
-    "seen": "2026-10-26T15:37:48.309Z",
-    "donationSearched": "2026-10-24T17:51:09.606Z",
-    "directSearched": "2026-10-25T18:01:40.579Z",
-    "directSearchVersion": 2
+    "membersHash": "gdacs|VU#1dba2781"
   },
   "gdacs-earthquake-eq-1570339": {
     "at": "2026-10-26T15:37:48.309Z",
@@ -888,6 +970,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
+    "seen": "2026-10-26T21:25:14.833Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2,
@@ -907,8 +990,7 @@
         "note": "Building safe homes for quake-affected families, prioritising households with a disabled member.",
         "title": "El Corazón de Panamá · Teletón Provincias Centrales, 24 de octubre"
       }
-    ],
-    "seen": "2026-10-26T15:37:48.309Z"
+    ]
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1098,44 +1180,59 @@
     "membersHash": "gdacs,usgs|RU#d9831494"
   },
   "gdacs-earthquake-eq-1572122": {
-    "at": "2026-10-24T17:51:09.606Z",
+    "at": "2026-10-26T21:25:14.833Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A magnitude 5.7 to 5.9 earthquake struck near Khuzdar, Balochistan, Pakistan, on 17 October 2026 at about 10:07 local time. The epicentre was about 48 km northwest of Khuzdar city. Shaking was felt in Khuzdar district and nearby areas. Reports as of 18 October noted no ongoing direct effects, and local teams surveyed for damage. No reports were found after 21 October.",
-    "ongoing": false,
+    "searches": 3,
+    "summary": "A M5.7 earthquake struck near Khuzdar in Balochistan, Pakistan, on 17 October 2026 at about 05:06 UTC. One person was killed when a rock fell from a mountain in the Naal area. Several mud houses were damaged in Khuzdar district and surrounding areas. The latest report found is dated 18 October; no later reports of damage, evacuation or response were found. Emergency teams remain on high alert, according to officials.",
+    "ongoing": true,
     "places": [
       {
-        "name": "Khuzdar",
+        "name": "Khuzdar district",
         "admin": "Balochistan",
         "country": "PK",
         "kind": "district",
-        "impact": "Epicentre area; shaking felt"
+        "impact": "Several mud houses damaged; epicentre about 48 km away"
       },
       {
-        "name": "Kalat",
+        "name": "Naal",
+        "admin": "Balochistan",
         "country": "PK",
         "kind": "town",
-        "impact": "Shaking felt"
+        "impact": "One person killed by falling rock"
       },
       {
-        "name": "Surab",
+        "name": "Anari",
+        "admin": "Balochistan",
         "country": "PK",
         "kind": "town",
-        "impact": "Shaking felt"
+        "impact": "Rock fell from mountain, killing one person"
       }
     ],
-    "figures": [],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "dawn.com",
+        "sourceUrl": "https://www.dawn.com/news/2037912/one-dead-as-earthquake-jolts-khuzdar"
+      },
+      {
+        "label": "Houses damaged",
+        "value": "several mud houses",
+        "sourceName": "ianslive.in",
+        "sourceUrl": "https://ianslive.in/pakistan-one-person-killed-after-earthquake-jolts-balochistans-khuzdar--20261018132040"
+      }
+    ],
     "donation": [],
     "sources": [
-      {
-        "name": "quettavoice.com",
-        "url": "https://quettavoice.com/2026/10/17/magnitude-5-9-earthquake-hits-balochistans-khuzdar-distric/",
-        "title": "Magnitude 5.9 Earthquake Hits Balochistan’s Khuzdar Distric"
-      },
       {
         "name": "dailytimes.com.pk",
         "url": "https://dailytimes.com.pk/1568641/moderate-5-9-magnitude-earthquake-jolts-balochistans-khuzdar-district/",
         "title": "Moderate 5.9-magnitude earthquake jolts balochistan's khuzdar district - Daily Times"
+      },
+      {
+        "name": "sharjah24.ae",
+        "url": "https://sharjah24.ae/en/Articles/2026/10/17/Ma5",
+        "title": "Magnitude 5.6 earthquake strikes Pakistans Balochistan province"
       },
       {
         "name": "outlookindia.com",
@@ -1143,9 +1240,9 @@
         "title": "Magnitude 5.8 Earthquake Strikes Pakistan, Tremor Recorded At 15 Km Depth"
       },
       {
-        "name": "pakistan.shafaqna.com",
-        "url": "https://pakistan.shafaqna.com/EN/339248",
-        "title": "5.9-Magnitude Earthquake Shakes Khuzdar, Surrounding Areas in Balochistan"
+        "name": "dawn.com",
+        "url": "https://www.dawn.com/news/2037912/one-dead-as-earthquake-jolts-khuzdar",
+        "title": "One dead as earthquake jolts Khuzdar - Newspaper - DAWN.COM"
       },
       {
         "name": "ianslive.in",
@@ -1153,7 +1250,11 @@
         "title": "Pakistan: One killed after earthquake jolts Balochistan's Khuzdar district"
       }
     ],
-    "membersHash": "gdacs,usgs|PK#a6ef69eb"
+    "membersHash": "gdacs,usgs|PK#a6ef69eb",
+    "donationSearched": "2026-10-26T21:25:14.833Z",
+    "directSearched": "2026-10-26T21:25:14.833Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T21:25:14.833Z"
   },
   "gdacs-earthquake-eq-1572503": {
     "at": "2026-10-21T00:11:24.613Z",
@@ -1296,7 +1397,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-26T15:37:48.309Z",
+    "seen": "2026-10-26T21:25:14.833Z",
     "donationSearched": "2026-10-26T08:14:05.412Z",
     "directSearched": "2026-10-26T08:14:05.412Z",
     "directSearchVersion": 2
@@ -3954,10 +4055,10 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-volcano-vo-1000151": {
-    "at": "2026-10-24T17:51:09.606Z",
+    "at": "2026-10-26T21:25:14.833Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Taal Volcano in the Philippines erupted in minor phreatic and phreatomagmatic events from 8 October 2026, with ashfall in Agoncillo, Batangas, and evacuations. Headlines report a fresh eruption around 19 October, another minor eruption reported 22 October, and Alert Level 1 maintained. These headlines were not verified against official bulletins, and the current status is not confirmed.",
+    "summary": "Taal Volcano in Batangas, Philippines, had a minor phreatomagmatic eruption on 8 October 2026, causing ashfall and evacuations in Agoncillo. Further minor eruptions followed on 20 and 22 October, sending plumes of up to 1,200 metres. The 26 October bulletin kept Alert Level 1. Evacuees were advised not to return home immediately because of sulfur odours and safety concerns.",
     "ongoing": true,
     "places": [
       {
@@ -3965,81 +4066,131 @@
         "admin": "Batangas",
         "country": "PH",
         "kind": "town",
-        "impact": "Ashfall; residents evacuated"
+        "impact": "Barangays evacuated; ashfall; evacuees housed at Pansipit centre"
       },
       {
-        "name": "Taal Volcano",
+        "name": "Lemery",
+        "admin": "Batangas",
+        "country": "PH",
+        "kind": "town",
+        "impact": "Thin ashfall warned"
+      },
+      {
+        "name": "San Nicolas",
+        "admin": "Batangas",
+        "country": "PH",
+        "kind": "town",
+        "impact": "Thin ashfall warned"
+      },
+      {
+        "name": "Taal",
+        "admin": "Batangas",
+        "country": "PH",
+        "kind": "town",
+        "impact": "Thin ashfall warned"
+      },
+      {
+        "name": "Batangas",
+        "country": "PH",
+        "kind": "town",
+        "impact": "Thin ashfall warned"
+      },
+      {
+        "name": "Taal Volcano Island",
+        "admin": "Batangas",
         "country": "PH",
         "kind": "site",
-        "impact": "Minor phreatic eruptions at main crater"
+        "impact": "Entry prohibited, Permanent Danger Zone"
       }
     ],
     "figures": [
       {
-        "label": "Residents evacuated",
+        "label": "Evacuated",
         "value": "107 residents",
         "sourceName": "brigadanews.ph",
         "sourceUrl": "https://www.brigadanews.ph/107-residents-evacuate-after-taal-volcano-eruption-triggers-ashfall-in-batangas/"
       },
       {
-        "label": "Families evacuated",
-        "value": "29 families",
-        "sourceName": "newsinfo.inquirer.net",
-        "sourceUrl": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption"
+        "label": "Evacuation centre",
+        "value": "at least 120 people from 32 families",
+        "sourceName": "philstar.com",
+        "sourceUrl": "https://www.philstar.com/nation/2026/10/09/2562036/batangas-town-residents-evacuate-after-minor-taal-volcano-eruption"
+      },
+      {
+        "label": "Sulfur dioxide",
+        "value": "3,071 metric tons per day",
+        "sourceName": "thestar.com.my",
+        "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/09/over-20-families-flee-homes-after-minor-eruption-of-taal-volcano"
       }
     ],
     "donation": [],
-    "sources": [],
+    "sources": [
+      {
+        "name": "tribune.net.ph",
+        "url": "https://tribune.net.ph/2026/10/22/taal-logs-minor-eruption",
+        "title": "Taal logs minor eruption"
+      },
+      {
+        "name": "tribune.net.ph",
+        "url": "https://tribune.net.ph/2026/10/20/taal-records-fresh-eruption-remains-at-alert-level-1",
+        "title": "Taal Volcano Erupts Again: Alert Level 1 Maintained Amid Volcanic Unrest"
+      },
+      {
+        "name": "abovethenormnews.com",
+        "url": "https://www.abovethenormnews.com/2026/10/26/taal-volcano-tremor/",
+        "title": "Taal Volcano Records 31-Hour Tremor As Ground Continues To Swell Following Multiple Eruptions"
+      },
+      {
+        "name": "gmanetwork.com",
+        "url": "https://www.gmanetwork.com/news/topstories/regions/1005406/taal-eruption-leaves-ashfall-in-agoncillo-batangas-over-100-residents-evacuated/story/",
+        "title": "Ashfall from Taal blankets Agoncillo, Batangas; over 100 residents evacuated"
+      }
+    ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-26T15:37:48.309Z",
-    "donationSearched": "2026-10-24T17:51:09.606Z",
-    "directSearched": "2026-10-25T18:01:40.579Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-26T21:25:14.833Z",
+    "directSearched": "2026-10-26T21:25:14.833Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T21:25:14.833Z"
   },
   "gdacs-volcano-vo-1000152": {
-    "at": "2026-10-24T17:51:09.606Z",
+    "at": "2026-10-26T21:25:14.833Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Kanlaon Volcano on Negros Island, Philippines, erupted on 10 October 2026 in a moderately explosive eruption, followed by repeated ash emissions. Phivolcs kept Alert Level 2. The Office of Civil Defense reported about 24,000 families affected by ash emissions as of 12 October. A further eruption on 17 October sent ash southwest. The activity was ongoing as of 18 October 2026.",
+    "searches": 3,
+    "summary": "Kanlaon Volcano in the Philippines had a moderately explosive eruption on 10 October 2026 at about 12:46 p.m. PHIVOLCS recorded ash emissions on 11 October and kept Alert Level 2. Ash fell in several Negros Occidental towns. Around 24,000 families were affected, and residents within a 4 km radius of the permanent danger zone evacuated. The latest reports found are from 12 October; no later reports were found.",
     "ongoing": true,
     "places": [
       {
-        "name": "Kanlaon Volcano",
+        "name": "San Carlos City",
+        "admin": "Negros Occidental",
         "country": "PH",
-        "kind": "site",
-        "impact": "moderately explosive eruption, ash plume"
+        "kind": "city",
+        "impact": "ash fall recorded"
       },
       {
         "name": "Don Salvador Benedicto",
         "admin": "Negros Occidental",
         "country": "PH",
-        "kind": "town",
-        "impact": "ashfall and sulfur odor"
+        "kind": "district",
+        "impact": "ash fall recorded"
       },
       {
-        "name": "Bago City",
+        "name": "Don Carlota",
         "admin": "Negros Occidental",
         "country": "PH",
-        "kind": "city",
-        "impact": "light ashfall and sulfur odor"
+        "kind": "district",
+        "impact": "ash fall recorded"
       }
     ],
     "figures": [
       {
         "label": "Families affected",
-        "value": "about 24,000 families",
-        "sourceName": "gmanetwork.com",
-        "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
-      },
-      {
-        "label": "People affected",
-        "value": "about 94,000 people",
+        "value": "around 24,000 families",
         "sourceName": "gmanetwork.com",
         "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
       },
       {
         "label": "Evacuees",
-        "value": "nearly 8,000 people",
+        "value": "nearly 8,000 individuals",
         "sourceName": "gmanetwork.com",
         "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
       }
@@ -4047,9 +4198,9 @@
     "donation": [],
     "sources": [
       {
-        "name": "volcanodiscovery.com",
-        "url": "https://www.volcanodiscovery.com/volcano-activity/news/382329/Volcanic-activity-worldwide-18-Oct-2026-Santiaguito-volcano-Fuego-Krakatau-Semeru-Ibu-Dukono-.html",
-        "title": "Volcanic activity worldwide 18 Oct 2026: Santiaguito volcano, Fuego, Krakatau, Semeru, Ibu, Dukono, ..."
+        "name": "gmanetwork.com",
+        "url": "https://www.gmanetwork.com/news/topstories/regions/1005552/phivolcs-reports-ash-emission-observed-three-times-on-sunday-october-11-2026/story/",
+        "title": "PHIVOLCS reports ash emission observed three times on Kanlaon Volcano Sunday, October 11, 2026"
       },
       {
         "name": "gmanetwork.com",
@@ -4057,16 +4208,16 @@
         "title": "24,000 families affected by Kanlaon eruption — OCD"
       },
       {
-        "name": "thestar.com.my",
-        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/10/kanlaon-volcano-in-the-central-philippines-erupts-on-saturday-oct-10",
-        "title": "Kanlaon volcano in the central Philippines erupts on Saturday (Oct 10)"
+        "name": "gmanetwork.com",
+        "url": "https://www.gmanetwork.com/news/topstories/regions/1005490/kanlaon-volcano-ash-emission-observed-after-explosive-eruption/story/",
+        "title": "Kanlaon Volcano ash emission observed after explosive eruption"
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-26T15:37:48.309Z",
-    "donationSearched": "2026-10-24T17:51:09.606Z",
-    "directSearched": "2026-10-25T18:01:40.579Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-26T21:25:14.833Z",
+    "directSearched": "2026-10-26T21:25:14.833Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T21:25:14.833Z"
   },
   "gdacs-wildfire-wf-1032497": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -5599,7 +5750,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-26T15:37:48.309Z",
+    "seen": "2026-10-26T21:25:14.833Z",
     "donationSearched": "2026-10-25T18:01:40.579Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2,
@@ -6178,6 +6329,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
+    "seen": "2026-10-26T21:25:14.833Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2,
@@ -6189,8 +6341,7 @@
         "note": "Emergency food, shelter and hygiene aid for Bangladeshi families and Rohingya refugees.",
         "title": "Donate to Bangladesh Emergency Flood Relief 2026"
       }
-    ],
-    "seen": "2026-10-26T15:37:48.309Z"
+    ]
   },
   "ifrc-flood-8014": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6257,62 +6408,60 @@
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
-    "at": "2026-10-24T17:51:09.606Z",
+    "at": "2026-10-26T21:25:14.833Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Flash floods struck Nuristan province, Afghanistan, on 19 and 20 July 2026, after heavy rainfall. Local officials reported 23 deaths in Nuristan, and Parun, the provincial capital, was among the worst hit. Search, assessment and relief work continued into late July, when WHO reported five people still missing. No source reports flooding in Nuristan as of 24 October 2026.",
+    "searches": 2,
+    "summary": "A flash flood struck Nuristan Province, Afghanistan, from 19 to 20 July 2026, hitting Parun and Mandol District. Copernicus, citing OCHA on 28 July, said Nuristan remained the most severely affected province. Search work continued in late July, when WHO reported five people still missing by 26 July. No later status was found.",
     "ongoing": true,
     "places": [
       {
         "name": "Parun",
         "admin": "Nuristan",
         "country": "AF",
-        "kind": "town",
-        "impact": "Flash flood; 23 killed; 125 injured; homes destroyed"
+        "kind": "city",
+        "impact": "Flash flood buried shops, boulders hit buildings, clinic and markets affected"
       },
       {
-        "name": "Mandol District",
+        "name": "Mandol",
         "admin": "Nuristan",
         "country": "AF",
         "kind": "district",
-        "impact": "Flash flood; six houses damaged, farmland hit"
-      },
-      {
-        "name": "Torkham",
-        "country": "AF",
-        "kind": "site",
-        "impact": "Three refugees died at transit camp; nine injured"
+        "impact": "Six houses damaged, roads, farmland and watermill damaged"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "23",
-        "sourceName": "amu.tv",
-        "sourceUrl": "https://amu.tv/247896/"
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
       },
       {
         "label": "Injured",
-        "value": "80",
-        "sourceName": "amu.tv",
-        "sourceUrl": "https://amu.tv/247896/"
-      }
-    ],
-    "donation": [
-      {
-        "url": "https://go.ifrc.org/appeals/all?region=2",
-        "org": "IFRC (IFRC GO)",
-        "kind": "society",
-        "note": "Appeals listing showing DREF appeal MDRAF022 for the Afghanistan flood; not a donation form.",
-        "specific": false
+        "value": "125",
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
       },
       {
-        "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
-        "org": "Penny Appeal USA",
-        "kind": "agency",
-        "note": "Emergency appeal campaign for victims of the Nuristan flash floods."
+        "label": "Missing",
+        "value": "5",
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
+      },
+      {
+        "label": "Houses destroyed or damaged",
+        "value": "92",
+        "sourceName": "dawn.com",
+        "sourceUrl": "https://www.dawn.com/news/2017247"
+      },
+      {
+        "label": "Families affected by water-supply…",
+        "value": "approximately 1,000 families",
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
       }
     ],
+    "donation": [],
     "sources": [
       {
         "name": "global-flood.emergency.copernicus.eu",
@@ -6320,51 +6469,53 @@
         "title": "Floods in Nuristan Province, Afghanistan, July 2026 - News"
       },
       {
-        "name": "amu.tv",
-        "url": "https://amu.tv/247896/",
-        "title": "Death toll on rise in Nuristan flash floods as 15 bodies recovered"
+        "name": "dawn.com",
+        "url": "https://www.dawn.com/news/2017247",
+        "title": "Afghans search for dozens missing, some with bare hands, after devastating flood in Nuristan province - World - DAWN.COM"
       },
       {
         "name": "news.un.org",
         "url": "https://news.un.org/en/story/2026/07/1167996",
         "title": "Deadly Afghanistan floods kill at least 26 as aid agencies race to reach survivors"
-      },
-      {
-        "name": "dawn.com",
-        "url": "https://www.dawn.com/news/2017247",
-        "title": "Afghans search for dozens missing, some with bare hands, after devastating flood in Nuristan province - World - DAWN.COM"
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-26T15:37:48.309Z",
-    "donationSearched": "2026-10-24T17:51:09.606Z",
-    "directSearched": "2026-10-25T21:18:23.413Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
         "org": "Penny Appeal USA",
         "kind": "local",
-        "note": "Food packs and urgent relief for families in Parun, Nuristan.",
+        "note": "Nuristan flood emergency donations, with one-time and monthly giving options.",
         "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan - Penny Appeal USA",
-        "published": "2026-07-24T21:18:23.413Z"
+        "published": "2026-07-24T21:25:14.833Z"
       },
       {
         "url": "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/",
         "org": "Famidi",
         "kind": "local",
-        "note": "Flexible flood response funds for verified needs such as water, food and shelter.",
+        "note": "Local flood response in Nuristan via a secure donation form.",
         "title": "Nuristan Flood Emergency: Famidi activates local response",
-        "published": "2026-07-24T21:18:23.413Z"
+        "published": "2026-07-24T21:25:14.833Z"
       },
       {
         "url": "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal",
         "org": "Hayrat Aid",
         "kind": "local",
-        "note": "Emergency appeal for food, clean water and shelter; page header may be a template label.",
+        "note": "Food, clean water and shelter for Nuristan flood-affected families.",
         "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
+      },
+      {
+        "url": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods",
+        "org": "Humanitarian Coalition (Canada) with Community World Service Asia",
+        "kind": "local",
+        "note": "Nuristan flood recovery response; pooled fund also covering general disaster readiness.",
+        "title": "Afghanistan: Nuristan Floods"
       }
-    ]
+    ],
+    "donationSearched": "2026-10-26T21:25:14.833Z",
+    "directSearched": "2026-10-26T21:25:14.833Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-26T21:25:14.833Z"
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6640,10 +6791,10 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-10-26T21:25:14.833Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-26T15:37:48.309Z"
+    "directSearchVersion": 2
   },
   "ifrc-flood-8052": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -6973,10 +7124,10 @@
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8073": {
-    "at": "2026-10-24T17:51:09.606Z",
+    "at": "2026-10-26T21:25:14.833Z",
     "model": "claude-haiku-5-5",
     "searches": 2,
-    "summary": "A flash flood on the Bhote Koshi river in Rasuwa District, Nepal, began on 26 August 2026 and swept through Rasuwa and nearby districts. Reports from 29 August gave 675 deaths in Nepal and about 2,400 missing, with 84,270 people affected across six districts. The IFRC launched a CHF 25 million appeal on 27 August. The response is still active, with water restoration work reported in late September and early October.",
+    "summary": "A flash flood on the Bhote Koshi river struck Rasuwa district in Nepal's Bagmati Province on 26 August 2026, damaging homes and roads in several districts. Current estimates suggest about 93,000 people may have been affected. Water assessments and holding centres were still active in the latest IFRC report, dated 11 October 2026, and some roads remained cut off.",
     "ongoing": true,
     "places": [
       {
@@ -6984,49 +7135,28 @@
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "Hit by wall of water and debris"
-      },
-      {
-        "name": "Syabrubesi",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "Significant structural damage"
-      },
-      {
-        "name": "Timure",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "Hit by wall of water and debris"
-      },
-      {
-        "name": "Rasuwagadhi",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "site",
-        "impact": "Border post and bridges swept away"
+        "impact": "Worst hit; Timure and Syabrubesi most affected"
       },
       {
         "name": "Nuwakot",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "Affected by flood surge"
+        "impact": "Affected"
       },
       {
         "name": "Dhading",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "Affected by flood surge"
+        "impact": "Affected"
       },
       {
         "name": "Chitwan",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "Surge reached its edges"
+        "impact": "Affected"
       },
       {
         "name": "Gorkha",
@@ -7045,50 +7175,37 @@
     ],
     "figures": [
       {
+        "label": "People affected",
+        "value": "about 93,000 people",
+        "sourceName": "ifrc.org",
+        "sourceUrl": "https://www.ifrc.org/press-release/ifrc-launches-chf-25-million-emergency-appeal-response-devastating-nepal-flash-floods"
+      },
+      {
         "label": "Deaths",
-        "value": "675",
-        "sourceName": "english.nepalnews.com",
-        "sourceUrl": "https://english.nepalnews.com/s/long-reads/timeline-nepals-major-floods-from-the-koshi-agreement-to-the-bhote-koshi-catastrophe/"
+        "value": "626 bodies recovered",
+        "sourceName": "hopnepal.com",
+        "sourceUrl": "https://www.hopnepal.com/blog/rasuwa-bhote-koshi-flood-2026-travel-update"
       },
       {
         "label": "Missing",
-        "value": "about 2,400",
-        "sourceName": "english.nepalnews.com",
-        "sourceUrl": "https://english.nepalnews.com/s/long-reads/timeline-nepals-major-floods-from-the-koshi-agreement-to-the-bhote-koshi-catastrophe/"
-      },
-      {
-        "label": "Affected people",
-        "value": "84,270 people",
-        "sourceName": "undp.org",
-        "sourceUrl": "https://www.undp.org/asia-pacific/nepal-floods-2026"
-      },
-      {
-        "label": "Schools destroyed",
-        "value": "18 schools",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+        "value": "about 2,400 people unaccounted for",
+        "sourceName": "hopnepal.com",
+        "sourceUrl": "https://www.hopnepal.com/blog/rasuwa-bhote-koshi-flood-2026-travel-update"
       }
     ],
     "donation": [
       {
-        "url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC emergency page for the 26 August Nepal floods, linked to appeal MDRNP022.",
-        "specific": true
-      },
-      {
         "url": "https://donate.redcrossredcrescent.org/~share?cid=1180&lang=en_EN",
         "org": "Nepal Red Cross Society",
         "kind": "society",
-        "note": "NRCS flood appeal on the Red Cross donation platform, naming the Rasuwa flash flood.",
+        "note": "Donation page appealing for funds for the Rasuwa flood response, also covering monsoon floods.",
         "specific": true
       },
       {
         "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
         "org": "IFRC",
         "kind": "society",
-        "note": "Donation form for the Nepal: Flash Floods 2026 emergency appeal, supporting NRCS.",
+        "note": "Donation page supporting the IFRC Emergency Appeal for Nepal flash floods, funds passed to NRCS.",
         "specific": true
       }
     ],
@@ -7099,9 +7216,9 @@
         "title": "IFRC GO - Emergency - Nepal: Rasuwa Flash Flood, 2026"
       },
       {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods",
-        "title": "2026 Nepal–Tibet floods"
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding",
+        "title": "Nepal flash floods 2026: How the Red Cross is responding"
       },
       {
         "name": "hopnepal.com",
@@ -7109,26 +7226,22 @@
         "title": "Rasuwa Bhote Koshi Flood 2026: Tourism & Travel Update"
       },
       {
-        "name": "redcrossmablog.wordpress.com",
-        "url": "https://redcrossmablog.wordpress.com/2026/09/17/red-cross-mission-work-across-the-globe-4/",
-        "title": "Red Cross Mission Work Across the Globe"
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/press-release/ifrc-launches-chf-25-million-emergency-appeal-response-devastating-nepal-flash-floods",
+        "title": "IFRC launches CHF 25 million Emergency Appeal in response to devastating Nepal flash floods"
       },
       {
-        "name": "greenvalleynepaltreks.com",
-        "url": "https://www.greenvalleynepaltreks.com/travel-guides/bhotekoshi-flood-in-rasuwa",
-        "title": "Bhotekoshi Flood in Rasuwa, Nepal: Causes, Damage & Updates 2026"
+        "name": "who.int",
+        "url": "https://www.who.int/nepal/emergencies/2026-rasuwa-flash-floods",
+        "title": "2026 Rasuwa flash floods"
       },
       {
-        "name": "english.nepalnews.com",
-        "url": "https://english.nepalnews.com/s/explainers/95-dead-hundreds-missing-what-we-know-so-far-about-bhote-koshi-flood/",
-        "title": "95 dead, hundreds missing: What we know so far about Bhote Koshi flood"
+        "name": "redcross.org.hk",
+        "url": "https://www.redcross.org.hk/en/Activity/26NF_Main.html",
+        "title": "Nepal Flash Floods Emergency Appeal 2026"
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-26T15:37:48.309Z",
-    "donationSearched": "2026-10-24T17:51:09.606Z",
-    "directSearched": "2026-10-25T18:01:40.579Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/emergency-flood-relief-for-families-in-nepal/",
@@ -7167,7 +7280,9 @@
         "note": "Shelter, food, water and health relief for Bhote Koshi flood communities.",
         "title": "Rasuwa Flood Relief Fund — ANHS"
       }
-    ]
+    ],
+    "donationSearched": "2026-10-26T21:25:14.833Z",
+    "seen": "2026-10-26T21:25:14.833Z"
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",

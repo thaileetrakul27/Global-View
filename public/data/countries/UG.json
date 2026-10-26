@@ -2,7 +2,7 @@
   "code": "UG",
   "name": "Uganda",
   "kind": "local",
-  "updated": "2026-10-26T15:37:48.309Z",
+  "updated": "2026-10-26T21:25:14.833Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "UG:en",
@@ -10,217 +10,141 @@
   },
   "articles": [
     {
-      "title": "Food insecurity hits Uganda as government, UN appeal for urgent action",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdEpYd21YOFBLMVR2SmxOZVhxNmdDT3dHbUc4ZXo5NjY0cHhFZXlfMF9GRmU0eUsxNWFodTh3TFVKSk5Nd3JzT1ZGd2hYNjVGekJWOTgwRnpXWXhYRmJPYmFrbGJIU19vR2Npc3NaT3hoVHM1akE3R3R6dHNWd3BIbGZUbzV3YXdrMWZXc2pzWU5lVU9FTF9nS3dab3J3bGtiMlhHUHY5N0hQZ2xBQ0M3UENUX0tRNGQ2a2llZklNaFFlUQ?oc=5",
-      "outlet": "Daily Monitor",
-      "outletUrl": "https://www.monitor.co.ug",
-      "published": "2026-10-26T13:41:46.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Food insecurity hits Uganda as government, UN appeal for urgent action",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "European gas prices soar to four-year high over winter supply fears",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSGd2YWY3OWowZW53Ukx2QngxM2tvZGRERFFPeUpMbTdzNk4xMUtTc2hqU29RNHJqNkNJcHZyY2lYN2UxTldETDNlUVp5MTMteWlsQ182Y29vOVBBclpiTkxTVXdRV2g0N2MtTlg5ZGJHcEtfalJSQUV1U1F6a1dXdG12Z0pqUzQ2alFONE1CUlk3VERKQzVkQlZfNVQ2SnBVWUJnaEJGa0Q5M0xLa1dDZXdmcUxFZw?oc=5",
-      "outlet": "The Guardian",
-      "outletUrl": "https://www.theguardian.com",
-      "published": "2026-10-26T15:01:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "European gas prices soar to four-year high over winter supply fears",
-      "about": []
-    },
-    {
-      "title": "Anthropic IPO live updates: How the Amodei siblings, co-founders control voting shares",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZWZMZ2Q4QkpJSThNQ2c1Q18xeTRFZThMTC1VLWFrRFduLU1CblkydnRpaFUzSTRNaFl6VGRDS1J3TlBKWVo0Q1kwMnhVYmdNejg4Zk1pT3lUUVNCdmtmT0pJa3pJR1FrckFHTHRSTDVVaVFsMnlWZXVWMjFmb2l4eUlhRdIBiAFBVV95cUxNYzZaOTF1NUlmTXdqSEVYTXRNd2Yybm8wcTlKUDhMWEJmbXVhcDM0UW0zbDNqbzRyMUdBMGFFMjFIcUFpS0ZwYWpLTE5tQ1hxamg0NGdLWmdncW9yeUJyTWk1dFhjSkpfMHd3bm1DcXJ0RGdfcGItWm5RNHBGS0hjUmtRMGFwVzhN?oc=5",
-      "outlet": "CNBC",
-      "outletUrl": "https://www.cnbc.com",
-      "published": "2026-10-26T14:33:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Anthropic IPO live updates: How the Amodei siblings, co-founders control voting shares",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "IGG Takes the Sniffer Dogs to Magogo",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8xSklsaHN1VndpbDVHa2JTQno2dktBdmZiR2VLYU1XVV9OVlRyMU5MYlZxRnpDT05ZS2hqWEpFTGlQQzBFRjFnZ2tSbFcxQlZCLXdfNWExb3FoRW93WXY2LVk0ajg4d3lqWTk2eEZab0MtMU9aUFNPNUVoanV3d9IBhgFBVV95cUxNekVZY2ozUWdNdUxKb2xFZDdNLS1xVlEwVmlGMjFwMGJFUDFOMzZTcE93dzVEdzNFclAtbUdPeWdXSzF6R09VUjlpQjNVWEx4OGFIamFEOWFrTmhMcXlxV05SZUFnOHBDLVU3eHRXUGMyZUJQTmFDWnNxYS1HTTFZVTV3bVNtZw?oc=5",
+      "title": "22 Rescued as Church Building Collapses in Entebbe",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYWdac2hUa0paMENCYjVNUWppLVI3S3JsWEM0UjJBMy03a2lCX1JmdEdOcTRlVS15T3FRXy1vdEEyZ1MyVTFGYVV5YjV6RWYtX0xoclZ1dUl5ZC1yOWE5U0xSMlhPVDN3YkpIUmdPdTNfbkVWX3FxaFVMQWxuNzdkeVZRU3JXNG5DOGZOS2930gGWAUFVX3lxTE4yTERyR01BZ1JfWklTWUlQLU5TS3Vpc2NvdDdTYlpmd3hFcGVYYWZ6cndBc2ZBZ3pXOG41TnZuU2ljaFFlMmp2d215ejRsb05ORTNOMHZJbkhyTUlFb1hBeFUwcFVoX01lWXR2bUdvVDduRzdvLUFiNy1qdHNPNkl3dWNFZmpGTXFqYkxsOEw2U1VhS002QQ?oc=5",
       "outlet": "Nilepost",
       "outletUrl": "https://nilepost.co.ug",
-      "published": "2026-10-26T10:41:47.000Z",
-      "outlets": 4,
+      "published": "2026-10-26T18:05:34.000Z",
+      "outlets": 6,
       "trending": true,
-      "en": "IGG Takes the Sniffer Dogs to Magogo",
+      "en": "22 Rescued as Church Building Collapses in Entebbe",
       "about": [
         "UG"
       ]
     },
     {
-      "title": "Uganda turns to its thin foreign exchange reserves as the shilling slides, putting pressure on the country’s defences against currency turmoil",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTmduSlFYZHFwckFMSzVsU1F2R0llUDRnVnBUa000RVV2VGpnTVU2WlA5aVdCT3dFTkpYT1B0aFlTeU1VT2xRTlltVEI4aExRbVhMbThScEdNUUp0b3dsa2xUbGVqNkdCVlRGZHR4OTBpS0QyelBiRTVndS1YOWFFMzZ0R0V1bm1jZVVEVi11ZzhiVl9jNm5iSXNtQUpIUEpuZGxidmtlZjRkYzBJSzFWaW9QUDN6aERhdEJsX2hWdUJVamFaSEJCclpNaVVQNng5QkJERg?oc=5",
-      "outlet": "Business Insider Africa",
-      "outletUrl": "https://africa.businessinsider.com",
-      "published": "2026-10-26T08:51:46.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Uganda turns to its thin foreign exchange reserves as the shilling slides, putting pressure on the country’s defences against currency turmoil",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "DR Congo's Ebola cases near 10,000 as health workers face deadly attacks",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBrODVQMVVVaEFUSDBWWDg2R0hMY2t6SEZ5bVB1QTAwWjBxSmZTb2JGYWRWeUc4R3lDVk1MNWh6d1Z5Q0ppcDV3VUN2M2Y2NTloTEtrbF9MVmNSUlhRTFNpZkkyUDlTQkdZandEZENBaDcxd3FLUVJxQUk0NTI?oc=5",
-      "outlet": "Xinhua",
-      "outletUrl": "https://english.news.cn",
-      "published": "2026-10-26T13:47:30.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "DR Congo's Ebola cases near 10,000 as health workers face deadly attacks",
-      "about": [
-        "CD"
-      ]
-    },
-    {
-      "title": "PARENTS’ NIGHTMARE! Monster Mukono School Teacher Arrested for Sodomising Seven Boys",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaWREZXpocm0xRDRuelFBQzhwcVZ0TkM2enZIQy02ckdXVEdDaHFOYjJFanpneng5UE1CS3NYVzNZaTFhNS1hLXVVZ1NIMl9RdHlMU1ZzLTZfX3hjLVBMdGp4WXBPeVQ3WkxsQTltZ3JVNzA1V0pndTFmd2pJV3A0dFRZZ2Q1ejJFd1NTUTgwX3VlSkNpMmNXSWxhSFlBTHJadVg1dEd0emNuM0hvNlVvZ0NQZW8?oc=5",
+      "title": "FUFA IN THE DOCK! IGG Probes Magogo Over FUFA Billions, TV Cash, Chan Hotel Bills, Kadiba Stadium in Sweeping Football Federation Inquiry",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNZ2QtN3VQZkhySE9zSm81MHg2dnRfV3ZRQk9fOEMtRW9jeno5ZkFNZDJ6QVFKNzRrX1ZGbVk0YVlfVklaNUQ0NGJiWDJTR2Z2SXJObWJpWDVTaGpIZlJuSVRWM1hXQ0tHX0Y2clVBU1BrejltWmFqeEc5azJFblEtOUdNYjFfWFZMbWdjUXJOaU5tdkNJNzFHUzNOSmhFdEVURm9IYU1wMlFmQ0NrYk9NQ0NHU25FTHVaLTRvdHVZZDd5TDFCMExWT0FHZjRrc0ZrS3RpTzN0LWFFYUlTZmxQOWEwd0RucWVodFNsT2lxWnRCQlN2OTBqRA?oc=5",
       "outlet": "Red Pepper",
       "outletUrl": "https://redpepper.co.ug",
-      "published": "2026-10-26T12:51:13.000Z",
+      "published": "2026-10-26T14:57:09.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "FUFA IN THE DOCK! IGG Probes Magogo Over FUFA Billions, TV Cash, Chan Hotel Bills, Kadiba Stadium in Sweeping Football Federation Inquiry",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "MPs Press IGG on Value for Money, “Small Fish” and Pardoned Convicts",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNR3hUWDEwS0RhWlBOUUF6MU9iN0RDQ1J6UUlRVnlkZHJVNFU5WG5lOThjaFhmYVdwUHlWd1p4N3BZbGdWMkxjbjNlSkF0c2tpRXQ4VnZ1SXB6S3ljR3Q4YWlpbHE2TTBIanJKNTROQW54Y0M3THJEdTBrSlNWLU5SZXk0RFQtd0VYd0hZNkFKeDVvMEVxRVE?oc=5",
+      "outlet": "ChimpReports",
+      "outletUrl": "https://chimpreports.com",
+      "published": "2026-10-26T18:26:07.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "PARENTS’ NIGHTMARE! Monster Mukono School Teacher Arrested for Sodomising Seven Boys",
+      "en": "MPs Press IGG on Value for Money, “Small Fish” and Pardoned Convicts",
       "about": [
         "UG"
       ]
     },
     {
-      "title": "FRESH POLL ORDERED! High Court Nullifies Gomba East NUP MP Saazi’s Election Over Missing Votes",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR05nUEpLTGNZb3FVVzJURmFyUC1BWjhQS1RJYkJIakNMRWkzSWJZaEpNQkpIR2FIb1VDeFVFLXpEbkVpNWFjbmFhM3FYT0NDb2VnUndVcXlLV2ttcENHX3RscXBXWVVONWpHczBMM3JhQlNtQXNDTzFUaGpSalZnSHlPTlI0Sk8xaHktVlNmZmNYVVZNdGp6MEhRWFhpVzA4Sk9NQW9jRVRVakhkMFd4NE1laWRKMUtuQTQwdG5leVFsQQ?oc=5",
-      "outlet": "Red Pepper",
-      "outletUrl": "https://redpepper.co.ug",
-      "published": "2026-10-26T14:48:55.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "FRESH POLL ORDERED! High Court Nullifies Gomba East NUP MP Saazi’s Election Over Missing Votes",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "Ebola outbreak: DR Congo nurse killed in attack as Uganda tightens border",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxcXNoME5TT0NhVzNZQmZzeXZfUXhCNkVEUmNSMGZNY1pPa2drWWp1bXJ0YUwyRHFBUElRYjVPMHd5cEp5OFJ5YzBfWGhQUHY4TFR0T1E2Ty00akk?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-10-26T14:27:32.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Ebola outbreak: DR Congo nurse killed in attack as Uganda tightens border",
-      "about": [
-        "CD",
-        "UG"
-      ]
-    },
-    {
-      "title": "Man Utd crisis deepens as Carrick faces axe",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWkxiLUxrV0xZb1FodUZiQUYyQkkwTmxhYVdOTDc3am1TWHYwQk4ySFNKS18tNVQ5ei01eTdESUdURGs0aTl4REd3M2h0NTM5RUNFTEhCd2RXZWhSNWx0TWtJRGVvU2NoLVpLTVVES3dYZXl3Ulk2OF9hdlFLQTNrakxDOGJheHF0S0ZVVjNwczk2WUFx?oc=5",
-      "outlet": "France 24",
-      "outletUrl": "https://www.france24.com",
-      "published": "2026-10-26T12:22:53.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Man Utd crisis deepens as Carrick faces axe",
-      "about": []
-    },
-    {
-      "title": "LANGO DEVELOPMENT DRIVE! Pakistan Association Uganda-Lira Chapter Unveils Community Support Plan for Health, Water, Education & Jobs",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNT0paY09YVzVQSTB3SHRRVTVvNy0ybmExV1BtdzZWdnptTVBoSUdROXlmM2t6ZDdybllBbjRlakVMNHRxT0VfMW42QkpkRWxsY3ROZDVvYndTSXdVc3VZeEhueG5CQkJWckFIbUdfd0FySk9PcC1DZmZ5N1NRdXJFbjVIUlYzVXA1b0ktQXp6b1NlMmNmMHRzeFVJSTBNSEg0a0tENzFOSUtlS082WEFBWDZVbXJ1aldWbWJxdVpuN1dpd2dicUxVcEdGMXd3Y21GMHRXZTI0SXFubXFmVVVBSnQ4elJ3NUFNTTZnYlVRM0o?oc=5",
-      "outlet": "Red Pepper",
-      "outletUrl": "https://redpepper.co.ug",
-      "published": "2026-10-26T14:48:52.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "LANGO DEVELOPMENT DRIVE! Pakistan Association Uganda-Lira Chapter Unveils Community Support Plan for Health, Water, Education & Jobs",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "IGG directs Minister Mao to interdict URSB’s Kainobwisho, reinstate whistleblower",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMFlPa2x0dUR6VmlfcUVRcUxqa0NmSGVmT2pQZndlZW1hUzJ5YlBMQnBRVkE1RTZLOXcyd2tRTGhtamMzSDcxdmFScFRpekYzZUFQZkhiWDJkaERPTDNSYS1rNnd6Z29SV2dWc2tPbGRlekRrY2FmcUNHd1JpdUJDSG8xOEJnRU1ySUNKZGNvQVpMckJ6U2hpQ202QlFtUTA2dGZWY3dEWjNVTU5BY2x5M3E2eElyRjk3bW1IckxYQXpXQVpLbGMtQnVFTG5CMkpT?oc=5",
+      "title": "Judge tasks security agencies to identify person who filmed Sam Mugumya",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQblV5NFFodjN4eThHS3dWb0I1ampBTDJlUV9fdjB4TXpmZTRlLUdpZUxRNjJ0WWJtcHE5WVlIMlpPRkVZZ0NDSkZEa1R2bndianlHblk0OXM1VmxTWkNjUkJsU1YxOEpudzEyZllCXzkwX3EtdkNnbXdjVHRlb3VWU24tNW5UVHF4VGpmUlcyMzZtVUVienpPRlpiLTNFNjczWGw4aGlXRzY0NG5ReGVUenp3X3h1YjZsMm1sczEzcWoyelhi?oc=5",
       "outlet": "Daily Monitor",
       "outletUrl": "https://www.monitor.co.ug",
-      "published": "2026-10-26T09:30:00.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "IGG directs Minister Mao to interdict URSB’s Kainobwisho, reinstate whistleblower",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "Balaam Orders Kabale District Registry Closed Over Alleged Arson Plot",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZHZvS3pQSDJqeXBrU2p2NHdVTXFETHdna2xLcUJzbEJNZXROUjh3ZTczcWViQXlMRlA2ejdZY2VNWmhBbUdjTVZFcUtNSDRWTW1zVG5teThwTmlrRTdsdFV0WURaamhxNWZwdE40dWdHQkFGSHhwTGRoS0Z3bkVIX2hoNDFrdDRNQkdWQ2xMc2xQY3c4dm9oZ0RfWVFzN2U5STdSTkIzTdIBrwFBVV95cUxOYlpuMHBOVkEzOE9wMEh3Z0lCaENfRVNZZm9UQVpQM2FCSWdxUjl0QmN4V0c2YnlqUTZxVXR6bFVvUzJkUnFXRjNGdC11NzJoMXczWXo2VlhDVHpyOU0tZ0pXc2JrRVVlZm04NnJxUUJfTHh4UGt6NGh6OFhFa0ItT1F5cWsydU44ZmVsN2JCRk5sQ1U5LXYzSEJCVkdZSUJ6dy15R1A2M2U4bnpOc2hv?oc=5",
-      "outlet": "Nilepost",
-      "outletUrl": "https://nilepost.co.ug",
-      "published": "2026-10-26T14:23:47.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Balaam Orders Kabale District Registry Closed Over Alleged Arson Plot",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "Prosecutor General Kamran Aliyev meets with OIC Secretary-General",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd3pwQ21Zc1BjQml5WjFSTkNyRHFDdVNtSnVSUnc0OGt5Q1U4YkVNVFM4VkZhQWlqUC1RMEFvd0NzWGR4dWZob1J4MzVXZE5UQjFTc014TjlEOG5hV2t2Q282VTNnRmcyTHhmSVJwbnlncGVVd0dzQTZDTFlaNWZPUVl0MFpvTXJhcHQ2ZTN0aDFkaDdPdFFtSEJ4TGx6YVdwV0ZXQUV6UEk?oc=5",
-      "outlet": "Apa.az",
-      "outletUrl": "https://en.apa.az",
-      "published": "2026-10-26T13:39:00.000Z",
+      "published": "2026-10-26T15:00:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Prosecutor General Kamran Aliyev meets with OIC Secretary-General",
+      "en": "Judge tasks security agencies to identify person who filmed Sam Mugumya",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "NASA ends Swift space telescope mission after failed rescue attempt",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTzFndG5FZkpFbjR4U3hDUkNiQjJYNGtaSjQxcXVqSHNQY2g5TVdobmVPc1lHaXYwOUxNSDlXSVFUNmo5YUVXV0RabmV2MWJiNjNMcTFkSTd0ZTBlZDQwSmx1VldXVHVGRWpBRzA4YzMyVUozTWxPTXM1UndWRnF4YWNOSXZ2aEh0cE4ta2lVVWhDQzlWS1c0VW1xNVVDbnlXOGFJaHFxVHZJaW1FemxsZUFPRk56em8?oc=5",
+      "outlet": "Space",
+      "outletUrl": "https://www.space.com",
+      "published": "2026-10-26T18:43:21.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "NASA ends Swift space telescope mission after failed rescue attempt",
       "about": []
     },
     {
-      "title": "Rwandan national charged with stealing Shs77m from SACCO",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeXlrcVR2SXdOTFRUcU5JWFltZU8yTVJyU2dHX3VrV0JOQWRON21kVzBuT0kxWWhJS3kwZ2FHX1ZjQmpHd3BXbENCNlFJZnEtR1U3X1NycHN1VUEtVjlRNDZxbU9XRy1ZTGZDSldSYmVvV09pd0tRdklkb0NMeWdGeUZwdE8yaUdjMWFVdFMtQjRhalJucUhmSUhBWkJYRzVkelVYMjA5RWw1X3JjSEdlUQ?oc=5",
+      "title": "Most wanted cannibal arrested over killing 38 people in 15 years",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNU9YRE5oY0NodHJlbF9sWFdzZTZlNEVOX2l4bXA2VzBWWHhmVUZmWEZYYkRtbXN1eXFXS3dYbkg0aUxSM25IN1RIcm0tMzFrdnRRLUZwLTRJTm5sZ1NYNWNrSEpCd0tzcmpra3lHUi1Tb3dDNW04R2NZV0RRZUtDNlA5TDFsUl9XYkVxcUlPbTd1ODFJeWMzMS11SFVtdnBEOW5zMkwyZ2xjbHNTOF8yNHhwVTNOaWVsSDY0?oc=5",
       "outlet": "Daily Monitor",
       "outletUrl": "https://www.monitor.co.ug",
-      "published": "2026-10-26T10:05:19.000Z",
+      "published": "2026-10-26T19:30:41.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Rwandan national charged with stealing Shs77m from SACCO",
+      "en": "Most wanted cannibal arrested over killing 38 people in 15 years",
+      "about": []
+    },
+    {
+      "title": "Plunging Shilling Forces Uganda to Tap Meager Reserves War Chest",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTXpqbTVHTWZYWnNNQ3BUM0g5MUdWS2hIcldpOHE1eWVFa2dtNFVyTko0cUc4d2ExZkw5b3dHcm1HOVJHUjAtcW52Sy1PX19jQUg5VzJKSmItcGZ5VzRxTEFsQnJIOUpiamxrRXZULURNV18zbHJYb1IyM1BjOE44b2d0ZkZxYXQwSk90d3hma1I3R2NON1oyNVd1UU9KdlpldXoyM1h1UjBTN0wwUkxURWFWR29PczV3WXBuLXVB?oc=5",
+      "outlet": "Bloomberg.com",
+      "outletUrl": "https://www.bloomberg.com",
+      "published": "2026-10-26T16:05:50.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Plunging Shilling Forces Uganda to Tap Meager Reserves War Chest",
       "about": [
         "UG"
       ]
     },
     {
-      "title": "Top 20 Images From GDT’s 2026 European Wildlife Photographer Of The Year Contest",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZlU0VnRSeEpJTkZiMHBMYWlWUEZTcFFpRnlZZ3FqNE9lOVNOU1ZiQ2F2ZXNnUExGeFNncWxRd0NlRnlWcXFYa041Ry0yckF0UUNsVzVXMEd0LXdGanMyMjFXTFZfempfajVRYkhEMWhyN084YXhwY2xJaTNpYWRZYTF6dFlGUQ?oc=5",
-      "outlet": "Bored Panda",
-      "outletUrl": "https://www.boredpanda.com",
-      "published": "2026-10-26T13:23:25.000Z",
-      "outlets": 5,
+      "title": "Two distinct sleep stages emerge in jumping spider, including a REM-like state",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0wRWNwSVNlTGxYdjhVcWd0eS0yVldfaVNpX0JBUlEyZlFoejA5aGE2LUhfdFVpYU1tRHNGZlR1SXlkT2FYYlkzWUtwT3VKUkRjc3NwbVVJUVZQQXJ0cnBrbVFMb21DbmdtLThHM1FkakUwRk5RWkJJ?oc=5",
+      "outlet": "Phys.org",
+      "outletUrl": "https://phys.org",
+      "published": "2026-10-26T19:00:17.000Z",
+      "outlets": 3,
       "trending": false,
-      "en": "Top 20 Images From GDT’s 2026 European Wildlife Photographer Of The Year Contest",
+      "en": "Two distinct sleep stages emerge in jumping spider, including a REM-like state",
       "about": []
     },
     {
-      "title": "Lawyer Tumwebaze Explains Fate of Election Petitions After Matovu’s Death",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRkhaY25LaGVsVEdkaklGY1kyUHN6Vlh0aDltbnlvLXVLSkw3LUczaEpWMUFkSkJHdjdJZlpNWlB2VFFQMGh3cWJxdE1BSEtvcDVnZ3JrWU41MFNwOVFaMkYyNF80OGJtOTYyem5Remg3Ty02TnZmd3praTZwUTFHdG1nV2V1cS1VaHNSTjJ6VUltOElRTmlkVmpkTkRXeEZ1SERmR1dnMi1hVknSAbMBQVVfeXFMUHUyWm04V3pVSVJoX1M0UE90T0VkOFA0dzhoSl83dUJFTHFYd2NyYWtfQ2hsejJNazgtUEJ1LTNhVDBaU2VDbE50ZVZSU20yM01CTnkxdWhrTjdLRWE0TGxCZnRtbG0zYXYta3NZZ19jTDVtUkZOUUlUTjB0RmFiblhSZDlHWThOZ0x1SkVBeTgyN0VyS29iZGl4ZXpZQVVMX1hMTmhmc1ZIc1c5LXQzdG1VYUU?oc=5",
-      "outlet": "Nilepost",
-      "outletUrl": "https://nilepost.co.ug",
-      "published": "2026-10-26T12:51:11.000Z",
-      "outlets": 5,
+      "title": "Six witnesses seek to withdraw from Nabatanzi’s petition against Nambooze",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMWU1UVV2YnhRdENmOWliODRORlF2WmlZQ25xMUZaTEdpSkl3UlBOZmRZRXFHaHRRRzdLbUpDZ1NuRzZHNHZaN3RkMk1wd1htTkQxOF9yYUlFSVdKZ2ZWMlh6czI4SVRENTBNZlloWWpIdFRab0RYemJJU2VaOFJXVmhGMHpqNjlCVW9TMERtdWExVXFtSDBYN3VYNUluNzF6bGxVSjM3ckE2SXh5YkdDM1NDVmV5NHhYMmxCRGxkM1BhTDZKWko4?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-10-26T19:43:13.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "Lawyer Tumwebaze Explains Fate of Election Petitions After Matovu’s Death",
+      "en": "Six witnesses seek to withdraw from Nabatanzi’s petition against Nambooze",
       "about": [
         "UG"
+      ]
+    },
+    {
+      "title": "Court hears Namugga’s election petition against Byuma",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNM21FMlB6azBGVnZCcEdEOUJPOWlJVkJVNllEb1ZnVERqWk50T0s1VGpFbU9janF6TUEzWjM4UlNtX2pqRXVySE5ydmFRVy0zeXRrbl80MnMtMjU0LW93TmQyd25OWkJtQVN3QWNBT3FSSDBLdTAtQWNJU2dEbXNhLQ?oc=5",
+      "outlet": "NTV Uganda",
+      "outletUrl": "https://ntv.co.ug",
+      "published": "2026-10-26T20:22:04.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Court hears Namugga’s election petition against Byuma",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Uganda promotes tourism, consular services in Australia",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZ2dHRVZhbGc2aGVHaFp5VVNBMHdCeUhoT2lYX2JUVWZZTmFwWFNXQUhsaGQ4RWQyZ3owZHlCblNaM01CVHhOYzdXY2JnTF9VX0RubmxZV2JDdVhlU2t5b2RmUHJ0NU04bUR0WTZvdDM5dElwTElId2hIeVo3REhycTl4bw?oc=5",
+      "outlet": "NTV Uganda",
+      "outletUrl": "https://ntv.co.ug",
+      "published": "2026-10-26T20:19:23.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Uganda promotes tourism, consular services in Australia",
+      "about": [
+        "UG",
+        "AU"
       ]
     },
     {
@@ -239,103 +163,168 @@
       ]
     },
     {
-      "title": "Bruno Fernandes likes pointed post about “loyalty” after Michael Carrick drops him at Man United",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTkxkU2duTktsRTBQZVVveXByYS04cVlrUmY1dkpocnVjV3FwS25wNFNFR1ViU29fcmRZLVVfck5BSzgwS0tOOFY5SEMwLXhTWkJCWWh1NDJSREMzYk5haUQ4X25BYUs3T0Q3ZUlZckZTajN3T2ZFVXFDZWNOQ3lEU0RBb0RMMWZVTTRN?oc=5",
-      "outlet": "Yahoo Sports",
-      "outletUrl": "https://sports.yahoo.com",
-      "published": "2026-10-26T10:20:00.000Z",
-      "outlets": 5,
+      "title": "Uganda, Kenya Target Border Barriers as Coast Tourism Summit Pushes for Policy Reforms",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOXYyTFYyZ1dLQ19GWElmazRvcTJFcjVvVmpMNlBvUVNsWlhzaGROSy0zakY1cV9qM2w1N3RkTnpDVWtPY3U5SzRMWE0tOWU2M2lQczY3UXd6MG81T0RocGcxWERMYTdOa2tzQnJrMVp3bnNzNXdKdHFCUDAzOVV2aDF6NUxlM0lhNzdldWs3OXJGVS1fVXJHOG80WUhfYlBieDVtcGlnUEw5NFhrcjBUSQ?oc=5",
+      "outlet": "ChimpReports",
+      "outletUrl": "https://chimpreports.com",
+      "published": "2026-10-26T19:10:54.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "Bruno Fernandes likes pointed post about “loyalty” after Michael Carrick drops him at Man United",
-      "about": []
+      "en": "Uganda, Kenya Target Border Barriers as Coast Tourism Summit Pushes for Policy Reforms",
+      "about": [
+        "UG",
+        "KE"
+      ]
     },
     {
-      "title": "Protein fibers, a hallmark of Alzheimer's, spotted making genetic deliveries to sperm cells",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPMDRkZXczQm53UVRvS0M1Z3BUZm4zWGlvMFEycU1jUmluaDdMaTlNaS1KdWRNZy14QWlzenhPS2lzRWtBV2lCSzJycnpSSkhLcGJUTWo1RHh1WUQ2Z0xzMHFUUEFZcDNtYW8wcUVNMEJXcE9zdGZqZWRtVFByVkg3MTFR?oc=5",
-      "outlet": "Phys.org",
-      "outletUrl": "https://phys.org",
-      "published": "2026-10-26T15:00:04.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Protein fibers, a hallmark of Alzheimer's, spotted making genetic deliveries to sperm cells",
-      "about": []
-    },
-    {
-      "title": "Diamond defects confirm 80-year-old theory of crystal stress",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBxcE40WFFhOVY1eXVqMU1aUkFXRW5CQmtxUzRoOE5LaTVDR0U3Y251SWNVTjBlUHFhOUF3ZFduN2tHajlmNHJPczFLTnpsTEVCY0pnWXFZQ0V3dVBQX3Q1T3piN0lWRW1xWHR2SlFfR1R0OFBoemg3cXV3?oc=5",
-      "outlet": "Phys.org",
-      "outletUrl": "https://phys.org",
-      "published": "2026-10-26T14:30:01.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Diamond defects confirm 80-year-old theory of crystal stress",
-      "about": []
-    },
-    {
-      "title": "UNEB warns S4 candidates against indiscipline as UCE enters final week",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ3phRUFYTXZhRVVGUnhvN0x6ek9HdmRURklsRFE5QXJBTUk3NHdINWRBYjdIb3IzVGFMdGV2NTVTWEpUR2dldzdNbTQ1SUhQSkRVWGdPTmZGcGNnb0dRaDd2d2RucU1OMEQ4amJ2RG0tUE8zUmdqaHRqdzYzNldtQXR0YUFJT2hWWFdGUjBIYkl1b3RZTzVEVVY3bzY1QlltV25JUzZvX200cXFDTDdrUmxyMjBBY2Q0a1hOZzJ3R1h3Yk0?oc=5",
+      "title": "Govt faces backlash over leaked circular standardising higher duty allowances, amid shilling pressure",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQRzlIWExXczdPTjIycC1KRUV4WDVRdzM2Z3IwVC1QVVU0M1hULXhkNkJBdTNQYXBHQkNDa3h6ZEd3cFJXQV90SVpfSDcwbEZYOWM3T01pZ244ZVdNaUJJY2dnRW9aaGlqY1BrTGl6RHZqNzMxcEItRVlQRGo0T3NpbW9Tdk9MUG1CUk1SdmFoR2F4TlBmNTRGZUZYWWh0Rk5YOF84WVFYWTdKMVlUcjN2MWh3UGxVcGFiY0ZxY1d3S2tMbWpQVmVUTkpLWEwxSHlGZTZqTERNeW5oRUJjczdMLUlOdS1zWTNXdGFB?oc=5",
       "outlet": "Daily Monitor",
       "outletUrl": "https://www.monitor.co.ug",
-      "published": "2026-10-26T09:27:12.000Z",
+      "published": "2026-10-26T18:47:28.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "UNEB warns S4 candidates against indiscipline as UCE enters final week",
+      "en": "Govt faces backlash over leaked circular standardising higher duty allowances, amid shilling pressure",
       "about": [
         "UG"
       ]
     },
     {
-      "title": "ROKO Construction Wins Platinum Award at Regional Quality Awards",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUUFEMXA1d2V1UnRyT3BEdnRoVTI1dHZpc1dDbk9RZzAzQUpBQlZmbkJJUXRnLWp3azNNUWx4azQ5LV9xMGhRSWlJa25fVGF6UUR5LWJCdkxDbHNLN3dRYXJjeHNmdml1a1NycDgtcktzbVJUSFdpcVZhVVA5UHVBVmd2ZV96eG9td3VOYzBya1JyMDN0Yi02VG4wTm1UNkpMUDljbW4xV1nSAbABQVVfeXFMUEEtVy1jeC1hOTZQS3hLczgxZ3hxVFZCZzdQaVg4eXhnaEVoTGllVDRQVlZNOWpNLUxCMXZBWnpDMlNBZXVWWDdnZHRXelVYamZkWF9zRkhRdTRBdmJLVHBKTFAzTWdkc1pVSUI3ZEpWZnNNd2RlYlJsU0tSYTBKS3pDQzBrVEJ3RVJZMng4aU9WNHdBNDh0MmJYd0JKb2YwSHU3LU1oRXlpUWt2RW1Idmk?oc=5",
-      "outlet": "Nilepost",
-      "outletUrl": "https://nilepost.co.ug",
-      "published": "2026-10-26T12:27:36.000Z",
-      "outlets": 4,
+      "title": "Food insecurity hits Uganda as government, UN appeal for urgent action",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdEpYd21YOFBLMVR2SmxOZVhxNmdDT3dHbUc4ZXo5NjY0cHhFZXlfMF9GRmU0eUsxNWFodTh3TFVKSk5Nd3JzT1ZGd2hYNjVGekJWOTgwRnpXWXhYRmJPYmFrbGJIU19vR2Npc3NaT3hoVHM1akE3R3R6dHNWd3BIbGZUbzV3YXdrMWZXc2pzWU5lVU9FTF9nS3dab3J3bGtiMlhHUHY5N0hQZ2xBQ0M3UENUX0tRNGQ2a2llZklNaFFlUQ?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-10-26T13:41:46.000Z",
+      "outlets": 2,
       "trending": false,
-      "en": "ROKO Construction Wins Platinum Award at Regional Quality Awards",
-      "about": []
+      "en": "Food insecurity hits Uganda as government, UN appeal for urgent action",
+      "about": [
+        "UG"
+      ]
     },
     {
-      "title": "NGO Compliance Rises to 62.4% Amid Suspensions and Funding Cuts",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYjg1WjFJUmt6cWlzYzY4Qk13bWIzMlcxOWZVLVNDOXRBVFdSbjVHdkpFYnJ0X3RmMXFRdV8tdVJKd3MyWGxGczNoWHREVmxNZVpibnhINVdBUW5IVl9UYk1maFI1dzRta2h4NXJEME10QWwtOHRoOUxlM012aXVUVjg2ZEZhMkVtYzRXSmdxVUVnc3BDSGNveWM0TGdQQdIBpgFBVV95cUxNN0NNOFVDZlczSjlFbUE2czRGSVFPOXkxTmdKSmNQWXUzeFpUUXZBbGY5Qm9NQXhnQTRzTEVCaGdtWG5FcnBHTE1vM1A0bTFoeUFzempGbjVLRnNFSHZHb3gzendaS2tPNGRLcFd3NFRlNm9RS281dy1ibE1CaGlLUktocDYxRWJxcWV5b0xQVUdoTXlyZXA5VF9BZlhhakhVamZZaWtn?oc=5",
-      "outlet": "Nilepost",
-      "outletUrl": "https://nilepost.co.ug",
-      "published": "2026-10-26T12:21:17.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "NGO Compliance Rises to 62.4% Amid Suspensions and Funding Cuts",
-      "about": []
-    },
-    {
-      "title": "Uganda: UNMC Governance Crisis Deepens As Interdicted CEO Faces Fresh Allegations",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAtN3FWU1o0NzA4YzVocnE2NkxBUWxzTnpDejNLX1RBZ1QtY2pfVXlNQUdaemNRN3JOQlM2WklpbzJfbVpzZXZ1bWhsVHB5bmFCNk5TRTVUZWF6bkk?oc=5",
-      "outlet": "allAfrica.com",
-      "outletUrl": "https://allafrica.com",
-      "published": "2026-10-26T11:33:23.000Z",
+      "title": "Museveni, Iran Ambassador Discuss Agriculture, Healthcare and Education",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTXFMdHJlc0tDYzdUa01Id1VkZWxJN3RSMFEzWVE0akdhZTFUdy11QXprbUNUal95SDdRblZHbmtmazN4YTZfRWowLVUwSy16UlNldUlRV2s0bUdoS2J1RGtkUGRzZldDaEhFQUVVelR1c0x1OEpnM1Q4eFgyNFYtZTBQZktiQUZINV94c2lTNUpMN3ZBdTBNXw?oc=5",
+      "outlet": "UG Diplomat",
+      "outletUrl": "https://ugdiplomat.com",
+      "published": "2026-10-26T18:09:46.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Uganda: UNMC Governance Crisis Deepens As Interdicted CEO Faces Fresh Allegations",
+      "en": "Museveni, Iran Ambassador Discuss Agriculture, Healthcare and Education",
+      "about": [
+        "UG",
+        "IR"
+      ]
+    },
+    {
+      "title": "50 Years of Impact: Top PR Agencies and Communicators Crowned at 10th PRAU Excellence Awards",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSE13d2ZZdlZNRVBZbXVfSHpiaHlLZVdoQVBic3JmQlNJLWs2blh3UE01bzRWd1BfZEJfUmJ3M0xxNHA0X3FLUkh3SEtHaWd6TTBIM3hOR1pkeTV3THZ4ZmRleXludFdnUkR5Rk9BeHdiRHZzTmlSUkQyLUc4OXRJR1BGVGJQeFhyNXYzVzZYQmlNdnE2cnYyY0Q3WXp1N3UxWU51dV9MNXR3UFVhTVczbWRZcw?oc=5",
+      "outlet": "SoftPower News",
+      "outletUrl": "https://softpower.ug",
+      "published": "2026-10-26T17:54:49.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "50 Years of Impact: Top PR Agencies and Communicators Crowned at 10th PRAU Excellence Awards",
       "about": [
         "UG"
       ]
     },
     {
-      "title": "Ahead of their time: Restricted to pre-2018 research, AI flags hydrogen catalyst reported in later experiments",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBhTU1hVENxb0haRUJjcUw2RC1uSmxuZ2JOcDNuN29IODd2YkFRbW4xM2ExVFdWVUYwdlNVYzZIc3NTUkt0bnVmTFFiYzVHQlo0Tm1xYlFrbGZPYTlQTWpYYURZRU44U1dNR0d2ZHVqdGU4RWpxUGc?oc=5",
-      "outlet": "Phys.org",
-      "outletUrl": "https://phys.org",
-      "published": "2026-10-26T14:00:01.000Z",
+      "title": "Court nullifies NUP’s Saazi election, orders fresh Gomba East poll",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOek5CVFhLYnZ5cHY5b04yc1hMa25OVUpCTVQyNmxpeDFSaTRNYUV6ajBOejR4Q0gtOWZMLVBCUFgxeXVhT1VHcVJub29HeEUxak1TNGo5ZHFHNnlueEZ0UmtMWlZRR2NTX3dlcjAwUGZJeEFNUlItVTdDQXQ3UnQxeFRIMkJPX0F5dGtjMUZTME5kaGVaX2h4MFk5UWZVSi16TzRKODhNamdvSVRVSEFjcVpLTFZHUU9HbWhXZw?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-10-26T17:35:10.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Ahead of their time: Restricted to pre-2018 research, AI flags hydrogen catalyst reported in later experiments",
+      "en": "Court nullifies NUP’s Saazi election, orders fresh Gomba East poll",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Judiciary Takes Juvenile Hearings to Mbale Remand Home in Case Backlog Drive",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOG9PQnpFUWFaSEVyLUhaRUg4b0hCX3A5bnU5RXFlQjQxa09DU3JJSEsyekJRd3RWMFkyLUxiYm1YMjE3YkxQQTVoLVg0aXA1UkdjMFlhX2poQTdrTFBwSGN4bS05NTZadnN2WkxxQWp4dF9LeHVDamRFczRMNUNYQWM3Ykw0YUJlTkFDZXdIVGMyX20tZ3N1enpJeTdVRndKRjdUNEExa3NMMGVDLVVCNdIBuAFBVV95cUxQRm9ZSnhqc1RpY2JtY19iT01QMUIzRFh6TWpoWGNJWmdOYmx1eExkb0liUHpTUlZPWUliRkFjOFhTZ3h6cjZDLXRmZllaY0hoQ08yTktFejhzdW0wVDFSeFVIa1ZQMng4Wk1oSk5jZllBeXZWd1hCdmtCcmdTTjBWNVNEMU1GUExpSkFKY2s1Z3FQdTJaNmd1c1NJekM0YXpEUnlma0UwX2J6TjBBMVREcmlScWxxY0pa?oc=5",
+      "outlet": "Nilepost",
+      "outletUrl": "https://nilepost.co.ug",
+      "published": "2026-10-26T17:38:58.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Judiciary Takes Juvenile Hearings to Mbale Remand Home in Case Backlog Drive",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "DR Congo's Ebola cases near 10,000 as health workers face deadly attacks",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBrODVQMVVVaEFUSDBWWDg2R0hMY2t6SEZ5bVB1QTAwWjBxSmZTb2JGYWRWeUc4R3lDVk1MNWh6d1Z5Q0ppcDV3VUN2M2Y2NTloTEtrbF9MVmNSUlhRTFNpZkkyUDlTQkdZandEZENBaDcxd3FLUVJxQUk0NTI?oc=5",
+      "outlet": "Xinhua",
+      "outletUrl": "https://english.news.cn",
+      "published": "2026-10-26T13:47:30.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "DR Congo's Ebola cases near 10,000 as health workers face deadly attacks",
+      "about": [
+        "CD"
+      ]
+    },
+    {
+      "title": "AI-powered robotic laboratory paves the way for discovering next-generation heat-resistant coatings",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5uSV95ZDVreGFHRGM5eDR5a3EzbDV3S0FqR0hlYXVHTTlOQmtZVzhlLUptR0kyU2N6cGptZlVHWmdpVXVfOFVGc1JVT1dtSXZWT2czM1pTU1hpMGJQX2gzYm5WS0N1dWNlRHVEMHIzd1ZSemZIVE1IUk1n?oc=5",
+      "outlet": "Phys.org",
+      "outletUrl": "https://phys.org",
+      "published": "2026-10-26T19:09:12.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "AI-powered robotic laboratory paves the way for discovering next-generation heat-resistant coatings",
       "about": []
+    },
+    {
+      "title": "69% of women in Karamoja face spousal violence - UNFPA report",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeS1zaDJLM3hXS1VTeGw2aGlMdUNRdDQ4Zjh4TTZjNm02WUdlZ196UmZNbklrcS04LWxtSHdOYWlBbHFRa3JuaWRyc2RkZkROTF9pdUYzT0U2RF9wMnhidzFKUHlKSmYwRWRzSTVUWC1QRTRzOGZtVmdYNTdvQ3FTcGpvT2cyRDlidFpDYkE2T2x0NU5PZ1pvYlNZcFdXXzNscXB0TVpzMnQwMlM2VmwyNlhBYw?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-10-26T15:52:13.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "69% of women in Karamoja face spousal violence - UNFPA report",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Museveni, Somali President Discuss Security as Uganda Prepares Coffee Exports",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVko3NWhDbk9ELThKYnhWeGN0ZmxKV1AyYnpKTVB4N2xOTWlwd201dTlYQmREOTNfdm13R3VFT3N6aXFQU3Uwc2tUM0sxVVVld1dNbm1oNUt6eW92MDRyQnZjR3BTTEY4bTlfaEZrNjl4Z19idngwZmpLNktOQkNFSEtZMmU1cnc1RlZXV3hqbV9qYUNLLUtGMUFYWHVfcjN0Z3c?oc=5",
+      "outlet": "UG Diplomat",
+      "outletUrl": "https://ugdiplomat.com",
+      "published": "2026-10-26T15:49:10.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Museveni, Somali President Discuss Security as Uganda Prepares Coffee Exports",
+      "about": [
+        "UG",
+        "SO"
+      ]
+    },
+    {
+      "title": "Negative publicity to blame for tough economy - deputy BoU governor",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQX0I3bFJjQ3pVcjVHYlYyT2c2cng0Sm5CQWJseGlaVm5aV3FYNzlCNnB5U0ZVWHBzVEd5RFYzWjhFaGRRVkdUQjNUcDhod29GTmZFdVRWWWFXZ0ZFLS1HU1I4dzctT2pFdldqNG9fNzZVenA1QzRiWElRMl9DU3hpTnpSX0Zya09tVF9FekhsTXBrT0k0cTRqTkRtOTdpWUo0X3ROSUhDZ0Y4V1dVTmhGTG5oRlZDejdTcDNtYg?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-10-26T16:19:30.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Negative publicity to blame for tough economy - deputy BoU governor",
+      "about": [
+        "UG"
+      ]
     },
     {
       "title": "Tanzania: Four Young Tanzanians Scoop Prestigious Commonwealth Awards",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA0U3VpWTVoWDJoTzhXN1h4UFFNTWdkeDRQZjdlSGlobGFEWnlyRUh0Vy1XMzVVek95dG5yX1pwSzZBS1d2WnptMWJFTE4xUUY3eUxVbTU3MDNUWlE?oc=5",
       "outlet": "allAfrica.com",
       "outletUrl": "https://allafrica.com",
-      "published": "2026-10-26T11:15:00.000Z",
+      "published": "2026-10-26T16:19:08.000Z",
       "outlets": 4,
       "trending": false,
       "en": "Tanzania: Four Young Tanzanians Scoop Prestigious Commonwealth Awards",
@@ -344,42 +333,65 @@
       ]
     },
     {
-      "title": "Uganda imposes 21-day quarantine on citizens returning from Congo",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVUtMYU5Gb2RKRWsxM0dFWnNPNjl1SGZ3bVBZdFVfMlI1SklNN3plbWdUMC1rUmJaTS1Lcmg3ckxTQmlqWXBhX1V0VklGRWFOV2djVFNvQmhkT1FmVHI3T25xMGJnVlI1YkVaYmVrNVRWQ1JEUldzSFQwcGozbURibXJjTlN5bldLcFFua25aQVZxamh4VDRZV1JJdVg5YVJ3emlreWM5NHpBNHBGZnpDbFBZR3A1cDhQSlc5ck9obDNVZw?oc=5",
-      "outlet": "The EastAfrican",
-      "outletUrl": "https://www.theeastafrican.co.ke",
-      "published": "2026-10-26T12:00:00.000Z",
-      "outlets": 3,
+      "title": "Hoping there’ll be a declaration tomorrow: Shashi Tharoor on BRICS parliamentary forum",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR0R1LTd4VFBiTFM1bnFOX1ZneXJyZnBXT3lXOFpoRUpIekFwYmhZSExFclN1SUJ5WlIyTW5DeG03MDlHUHU4bGVJRUZIMko2cHdwb3g2STZkSzlIQl9Iakx4dThmaHc5eVA5Z3RVUmtqSnhoZlc3cUUzOUFNWEViVU5GSkpPbkdqbmZzMmsyOWVvem9oTDdPb0loczNUSElRU1kxQmVrQjFUWkg1N044X1FhbkdkZjdyQ3g0eGE3VllOeVXSAccBQVVfeXFMUFNSUDNqVmk1NmlMdk03S1hWUnRGMGhCcmxtSktlQWdKOG1maUlwNXJlNXRFYUdscC1BeTI1QnZ5NFFRb3ZFUXYxNjE5QVF1cUtILXZtUGZLREI1azNPRmRzXzNpMy1rcDJOQTJPYktmVXMzUFJlYjdJMXJLanBfOUwwOEU4T25ud3ZGdkg3WFpKX3NaN2NqSU1hWVhOazhubEtZTGY5WUQ3YldaX0pGX1JTZDVsVnJIY3BicF9TTzZ3YzhjRGZNZw?oc=5",
+      "outlet": "The Tribune",
+      "outletUrl": "https://www.tribuneindia.com",
+      "published": "2026-10-26T15:12:56.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Uganda imposes 21-day quarantine on citizens returning from Congo",
+      "en": "Hoping there’ll be a declaration tomorrow: Shashi Tharoor on BRICS parliamentary forum",
+      "about": []
+    },
+    {
+      "title": "Mayiga Hails Fr Mayanja for Promoting Ugandan Culture",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSFNYRHBVNGpWOEwxRjhCVXd2SUd2eHdTODZ4VHNRTERXWk96RFp4WG9RWTB0UDduRWtCaWVGNURobi11NUlSNGE5VnNMbjNaT1FUVzlsSnNtdmlwaUM1ZWpDZ3VHLVpGcUpYTWVSSkJLOUREVlFWSUo2SnctSDN0TEhsRzE2RU16bF9VaWo1TUU3UdIBmgFBVV95cUxPNDRrS1p4dUNQSG9GYzdDckxMaG9BLS1iMFNwRGhFU3F2M3JhV0JDa2pxcWl2TnFHTXpiOWp5NDdySDVscUk3WmM5Rjl5R0xxRXRYamxIcjVobkQzbmVqQjFwMmZkOXU4OVlJMVhHNE1PZXo1TWV1MWM4eHhkd29pNVc5Y2R3a0pSMnl2Y1FJSnpJWEdGVlFwNWlB?oc=5",
+      "outlet": "Nilepost",
+      "outletUrl": "https://nilepost.co.ug",
+      "published": "2026-10-26T20:16:21.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Mayiga Hails Fr Mayanja for Promoting Ugandan Culture",
       "about": [
-        "UG",
+        "UG"
+      ]
+    },
+    {
+      "title": "Nurse killed, health worker injured in DR Congo Ebola attack",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY0dmc1NvTzZ6R3lBNlVmU24yNXZSNkpRNmoxdjZuck56a29VVUpydTJBa2o5cnoycE95NlY3NWtkOWI3T0RwcU1PNmN1ek42a2RqOVlBaGc5djI1dEI3TzZaZVVrM0s4QmxiSW1CYzNaaUk2TjJlQ2tKaUkycHJLZ0Z1MmxBVlFIWUwyUUJERUVaUzBMWTEtd3d5c1NJSzTSAaQBQVVfeXFMTnNTLWdlcmYtcGw0b2paQWl1VGlXR3NxcUZqWkdTRnZTSWZQR3plQlNVWWlwRURyZGZHaXJpbUNiTHN6YmZRX3k4dkxPZ1dpdHk2NkxMQk5xb2hPam9LdHY3YTdMN3k2YTJrbXhva3JfT0RRZmhrMGdtU3F5TzFoRVJIRV9iRDNjUVBUeEZBM21QUXJLbUNxS084eGZpc0JwR1NuN2k?oc=5",
+      "outlet": "Africanews",
+      "outletUrl": "https://www.africanews.com",
+      "published": "2026-10-26T14:43:32.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Nurse killed, health worker injured in DR Congo Ebola attack",
+      "about": [
         "CD"
       ]
     },
     {
-      "title": "Oil Price Rally Doesn’t Mean an African Crude Boom",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbkpMdDVuaGVQcHJLNXZIR1RBUVFuQTVfd0ZCZlY4WlA2V3FWVzIzQ1VxYmNtX3pYNFlFUk1KNF9wTDYwSm93bzhYMmNKM3l5Yl81TVczcjRBNUwzSnJRb3FkRVhfNWMzeFhCNW1WUEw3WjhTLUJjUXd0eGFmcGZ5OFpQR2dlRmN5QzYyZTdySVlfa2ZkZGNGQzFteWQ1N05jcW9qdkdVRnQ3bEk?oc=5",
-      "outlet": "Bloomberg.com",
-      "outletUrl": "https://www.bloomberg.com",
-      "published": "2026-10-26T13:05:45.000Z",
-      "outlets": 2,
+      "title": "From Chalk to Hoe, Former Mityana Teacher Finds Hope in Farming",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQd1B1N1QzVEZhQnFBbGtZNTNNVDZjY2hiOV9aN0M2d3JJNTZ2Y3M2S1QyaXNkX1hxV1pBRzJPZUhuNWhwaG5PY3pkR09HQVJid2JUc045SU1MVXByMENRLVRJYk5XN1BaMVlDN3JEVS1HZjJHVzRZbllLRXVHWUtjU1A5NW95UFh2VDBYbzRsMXpSWW5SSDhNQTF0U0x6SUduQmRF0gGrAUFVX3lxTE5rVEVqLTFYTlN3MDQ1OHFwYndqaWpoLTBJTTFLc1RoU0JsSDNGMWg4TEFGcEhPNzV4eW0zNzVhVDdWVW95Q3pqUDNvM2NIczdOckJKeWtacng3ZW9FS25NdEozejExVGVqSndGcTJlNkI2T2w3Sl9SbWhtYmtCOGRfX0ZYSlBkUzBCLUxfX0RDa1lyem1DSW5zdWVPT1NzQVlibUhidzdPeG12aw?oc=5",
+      "outlet": "Nilepost",
+      "outletUrl": "https://nilepost.co.ug",
+      "published": "2026-10-26T20:03:42.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "Oil Price Rally Doesn't Mean an African Crude Boom",
-      "about": []
+      "en": "From Chalk to Hoe, Former Mityana Teacher Finds Hope in Farming",
+      "about": [
+        "UG"
+      ]
     },
     {
-      "title": "Somali President invites Opposition Groups to Nov. 14-18 Talks on Elections",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQlZmbk1TR2d5ZUJCS2UzUUJhQVBxOXBHS0drc2JMM21kTEN3S1BPUFowM2hlRTJSU2Y0elgwdUxCNlIxSnJRcTVLUDFzdmc3Z3hzYldCRHlmY05fd05sZkpLME01N2JocnNmS2tNUUp2UWs3anFIbjNEaXJCaGNUY2d0WTI4QnJuWlRJcFNxVVc0aTNoQTdVbW85eVQtVGlGc08zNkt5bw?oc=5",
-      "outlet": "Dawan Africa",
-      "outletUrl": "https://www.dawan.africa",
-      "published": "2026-10-26T09:45:49.000Z",
-      "outlets": 5,
+      "title": "Gathering offers 16 ideas for church future",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMR25VbDl5Y05NZEZVdU1ZcmJUcGgxcEY0M1FyZmdwZzhZVklDMzFMc3V6SnlBLTBTSmlPdklHZUNRTzFLTndZNU83VlBuTHB2MmpKMjFjc2V0VVl1TlVQZm9ycmVXRWhKYWUzN2ttWmZFUUxWbGl2ek9DZHhqbnM?oc=5",
+      "outlet": "UM News",
+      "outletUrl": "https://www.umnews.org",
+      "published": "2026-10-26T15:26:11.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "Somali President invites Opposition Groups to Nov. 14-18 Talks on Elections",
-      "about": [
-        "SO"
-      ]
+      "en": "Gathering offers 16 ideas for church future",
+      "about": []
     }
   ]
 }

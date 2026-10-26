@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-26T15:37:48.309Z",
+  "updated": "2026-10-26T21:25:14.833Z",
   "fetched": {
-    "societies": "2026-10-26T15:37:48.309Z",
-    "uncr": "2026-10-26T15:37:48.309Z"
+    "societies": "2026-10-26T21:25:14.833Z",
+    "uncr": "2026-10-26T21:25:14.833Z"
   },
   "societies": {
     "AF": {
@@ -2938,14 +2938,6 @@
         "https://www.icrc.org/en/where-we-work/sudan"
       ]
     },
-    "local3:gdacs-cyclone-tc-1001338:wck.org/relief/typhoon-champi": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-10-25T15:46:17.310Z",
-      "chain": [
-        "https://wck.org/relief/typhoon-champi/"
-      ]
-    },
     "local3:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Afghanistan\"",
@@ -2967,31 +2959,6 @@
       "place": "Nepal",
       "name": "Children of Adam",
       "title": "Nepal Flood Appeal 2026 | Donate Now | Children of Adam"
-    },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-25T18:01:40.579Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "HTTP 403",
-      "checked": "2026-10-25T18:01:40.579Z",
-      "chain": [
-        "https://convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026/"
-      ]
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-10-25T18:01:40.579Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
     },
     "local4:ifrc-earthquake-8055:rescue.org/help-survivors-of-Colombia-earthquake": {
       "ok": true,
@@ -3033,22 +3000,6 @@
       "place": "Myanmar",
       "name": "WORLDCHEFS",
       "title": "Donate to Support Children Affected by Flooding in Myanmar"
-    },
-    "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
-      "ok": false,
-      "reason": "asks for Cash App or Venmo, as scams do",
-      "checked": "2026-10-25T21:18:23.413Z",
-      "chain": [
-        "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
-      ]
-    },
-    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
-      "ok": false,
-      "reason": "names another kind of disaster",
-      "checked": "2026-10-25T21:18:23.413Z",
-      "chain": [
-        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ]
     },
     "indianredcross.org/ircs/donatenow": {
       "ok": true,
@@ -3095,75 +3046,134 @@
     "local4:gdacs-earthquake-eq-1570339:wck.org/relief/panama-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Panama\"",
+      "checked": "2026-10-26T15:37:48.309Z",
       "chain": [
         "https://wck.org/relief/panama-earthquake/"
       ],
       "place": "Panama",
       "name": "WCK",
-      "title": "WCK Responds to Magnitude 7.7 Earthquake in Panama | WCK",
-      "checked": "2026-10-26T15:37:48.309Z"
+      "title": "WCK Responds to Magnitude 7.7 Earthquake in Panama | WCK"
     },
     "local4:gdacs-earthquake-eq-1570339:teleton.com/evento-provincias-centrales": {
       "ok": false,
       "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
+      "checked": "2026-10-26T15:37:48.309Z",
       "chain": [
         "https://www.teleton.com/evento-provincias-centrales"
-      ],
-      "checked": "2026-10-26T15:37:48.309Z"
+      ]
     },
     "cruzroja.org.pa": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-26T15:37:48.309Z",
       "chain": [
         "https://www.cruzroja.org.pa/"
       ],
-      "blocked": true,
-      "checked": "2026-10-26T15:37:48.309Z"
+      "blocked": true
     },
     "donate.unhcr.org/int/en/panama-earthquake": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-26T15:37:48.309Z",
       "chain": [
         "https://donate.unhcr.org/int/en/panama-earthquake"
       ],
-      "blocked": true,
-      "checked": "2026-10-26T15:37:48.309Z"
+      "blocked": true
     },
     "croixrouge-rdc.org": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-26T15:37:48.309Z",
       "chain": [
         "https://www.croixrouge-rdc.org/"
-      ],
-      "checked": "2026-10-26T15:37:48.309Z"
+      ]
     },
     "go.ifrc.org/countries/121": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-26T15:37:48.309Z",
       "chain": [
         "https://go.ifrc.org/countries/121"
-      ],
-      "checked": "2026-10-26T15:37:48.309Z"
+      ]
     },
     "local4:ifrc-flood-8013:hrf.org.uk/emergency-appeals/bangladesh-flood": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Bangladesh\"",
+      "checked": "2026-10-26T15:37:48.309Z",
       "chain": [
         "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/"
       ],
       "place": "Bangladesh",
       "name": "Human Relief Foundation",
-      "title": "Bangladesh Emergency Flood Relief",
-      "checked": "2026-10-26T15:37:48.309Z"
+      "title": "Bangladesh Emergency Flood Relief"
     },
     "bdrcs.org/bangladesh-flood": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-26T15:37:48.309Z",
       "chain": [
         "https://bdrcs.org/bangladesh-flood/"
       ],
-      "blocked": true,
-      "checked": "2026-10-26T15:37:48.309Z"
+      "blocked": true
+    },
+    "local4:gdacs-cyclone-tc-1001338:wck.org/relief/typhoon-champi": {
+      "ok": false,
+      "reason": "names another country",
+      "chain": [
+        "https://wck.org/relief/typhoon-champi/"
+      ],
+      "checked": "2026-10-26T21:25:14.833Z"
+    },
+    "local4:gdacs-drought-dr-1027449:actalliance.org/appeals-rapid-response-funds/rrf-21-2026-humanitarian-response-for-the-population-affected-by-drought-in-hondurass-dry-corridor": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://actalliance.org/appeals-rapid-response-funds/rrf-21-2026-humanitarian-response-for-the-population-affected-by-drought-in-hondurass-dry-corridor/"
+      ],
+      "checked": "2026-10-26T21:25:14.833Z"
+    },
+    "local4:ifrc-earthquake-8055:convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "HTTP 403",
+      "chain": [
+        "https://convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-10-26T21:25:14.833Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-10-26T21:25:14.833Z"
+    },
+    "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
+      "ok": false,
+      "reason": "asks for Cash App or Venmo, as scams do",
+      "chain": [
+        "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
+      ],
+      "checked": "2026-10-26T21:25:14.833Z"
+    },
+    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
+      "ok": false,
+      "reason": "names another kind of disaster",
+      "chain": [
+        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ],
+      "checked": "2026-10-26T21:25:14.833Z"
+    },
+    "local4:ifrc-flood-8025:humanitariancoalition.ca/afghanistan-nuristan-floods": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Afghanistan\"",
+      "chain": [
+        "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods"
+      ],
+      "place": "Afghanistan",
+      "name": "Humanitarian Coalition",
+      "title": "Afghanistan: Nuristan Floods",
+      "checked": "2026-10-26T21:25:14.833Z"
     }
   }
 }
