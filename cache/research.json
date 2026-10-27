@@ -230,7 +230,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|CN,JP,KR,PH#afb26aec",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2,
@@ -292,7 +292,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-25T18:01:40.579Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -309,167 +309,112 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001345": {
-    "at": "2026-10-26T21:25:14.833Z",
+    "at": "2026-10-27T08:20:06.786Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Tropical Cyclone Arnab formed in the Bay of Bengal and began on 25 October 2026. As of 26 October it was moving nearly westwards at about 15 kmph toward India's east coast and had not yet made landfall. Forecasts for the landfall date conflict and are unconfirmed. Andhra Pradesh and Odisha are preparing evacuations and school closures. No damage was reported yet.",
+    "summary": "Tropical Cyclone Arnab, a very severe storm, was at sea as of 27 Oct 2026 and was expected to cross the Andhra Pradesh and Yanam coasts on 28 Oct 2026. Over 89,000 people had been evacuated in India, with evacuations in Andhra Pradesh and Odisha. No landfall report had been found yet.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Andhra Pradesh",
-        "country": "IN",
-        "kind": "region",
-        "impact": "Expected landfall; 570,000 people identified as vulnerable"
-      },
-      {
-        "name": "Bapatla",
-        "admin": "Andhra Pradesh",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Named at risk; relief funds allocated"
-      },
-      {
-        "name": "Krishna",
-        "admin": "Andhra Pradesh",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Named at risk; relief funds allocated"
-      },
-      {
-        "name": "West Godavari",
-        "admin": "Andhra Pradesh",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Named at risk; relief funds allocated"
-      },
       {
         "name": "Konaseema",
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Named at risk; relief funds allocated"
+        "impact": "residents evacuated to safe zones as sea level rose"
       },
       {
-        "name": "East Godavari",
+        "name": "Nakkapalli",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "district",
-        "impact": "Named at risk; relief funds allocated"
+        "kind": "town",
+        "impact": "400 people evacuated to cyclone shelters"
       },
       {
-        "name": "Kakinada",
-        "admin": "Andhra Pradesh",
+        "name": "Hope Island",
+        "admin": "East Godavari",
         "country": "IN",
-        "kind": "district",
-        "impact": "Named at risk; relief funds allocated"
+        "kind": "site",
+        "impact": "all 130 residents evacuated to Kakinada"
       },
       {
-        "name": "Anakapalli",
-        "admin": "Andhra Pradesh",
+        "name": "Yanam",
+        "admin": "Puducherry",
         "country": "IN",
-        "kind": "district",
-        "impact": "Named at risk; relief funds allocated"
+        "kind": "town",
+        "impact": "forecast landfall area"
       },
       {
         "name": "Odisha",
         "country": "IN",
         "kind": "region",
-        "impact": "Red warning for very heavy rain; evacuations prepared"
-      },
-      {
-        "name": "Ganjam",
-        "admin": "Odisha",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Red warning for very heavy rain"
-      },
-      {
-        "name": "Gajapati",
-        "admin": "Odisha",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Red warning for very heavy rain"
-      },
-      {
-        "name": "Rayagada",
-        "admin": "Odisha",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Red warning for very heavy rain"
-      },
-      {
-        "name": "Koraput",
-        "admin": "Odisha",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Red warning for very heavy rain"
-      },
-      {
-        "name": "Malkangiri",
-        "admin": "Odisha",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Red warning for very heavy rain"
+        "impact": "nearly 48,000 people planned for evacuation across eight districts"
       }
     ],
     "figures": [
       {
-        "label": "People identified as vulnerable (at…",
-        "value": "570,000 people",
-        "sourceName": "mylifegb.com",
-        "sourceUrl": "https://www.mylifegb.com/news/cyclone-arnab-india-eastern-coast-evacuation-warning"
+        "label": "Evacuated",
+        "value": "over 89,000",
+        "sourceName": "thenewsminute.com",
+        "sourceUrl": "https://www.thenewsminute.com/andhra-pradesh/cyclone-arnab-to-cross-andhra-coast-on-oct-28-over-89000-people-evacuated"
       },
       {
-        "label": "Trains cancelled",
-        "value": "53 trains",
-        "sourceName": "telugu360.com",
-        "sourceUrl": "https://www.telugu360.com/cyclone-arnab-53-trains-cancelled-schools-shut-in-ap-%E2%82%B927-crore-sanctioned-for-relief/"
+        "label": "Pregnant women moved to hospitals",
+        "value": "over 4,700",
+        "sourceName": "france24.com",
+        "sourceUrl": "https://www.france24.com/en/live-news/20261027-india-braces-for-cyclone-arnab-with-evacuations"
       },
       {
-        "label": "Relief funds sanctioned",
-        "value": "₹27 crore",
-        "sourceName": "newsbytesapp.com",
-        "sourceUrl": "https://www.newsbytesapp.com/news/india/cyclone-arnab-andhra-pradesh-allocates-rs27cr-dispatches-15-ndrf-teams/tldr"
+        "label": "Population on projected path",
+        "value": "more than 12 million people",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears"
+      },
+      {
+        "label": "Shelters readied",
+        "value": "1,763 cyclone shelters",
+        "sourceName": "theweek.in",
+        "sourceUrl": "https://www.theweek.in/news/india/2026/10/27/cyclone-arnab-flash-flood-alerts-coastal-andhra-as-extremely-heavy-rains-winds-upto-125-kmph.html"
+      },
+      {
+        "label": "Districts in path",
+        "value": "16 districts",
+        "sourceName": "aninews.in",
+        "sourceUrl": "https://aninews.in/news/national/general-news/cyclone-arnab-intensifies-severe-storm-headed-for-andhra-coast-16-districts-on-high-alert-ahead-of160-landfall20261027083506/"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "vajiramandravi.com",
-        "url": "https://vajiramandravi.com/current-affairs/cyclone-arnab-2026/",
-        "title": "Cyclone Arnab 2026, IMD Tracker, Landfall, Latest Updates"
-      },
-      {
         "name": "theweek.in",
-        "url": "https://www.theweek.in/news/india/2026/10/26/andhra-odisha-brace-for-impact-as-cyclone-arnab-nears-coast-at-speed-of-15-kmph.html",
-        "title": "Andhra, Odisha brace for impact as Cyclone Arnab nears coast at speed of 15 kmph - The Week"
+        "url": "https://www.theweek.in/news/india/2026/10/27/cyclone-arnab-flash-flood-alerts-coastal-andhra-as-extremely-heavy-rains-winds-upto-125-kmph.html",
+        "title": "Cyclone Arnab: Coastal Andhra to see extremely heavy rains, winds upto 125 kmph; flood alert issued - The Week"
       },
       {
-        "name": "mylifegb.com",
-        "url": "https://www.mylifegb.com/news/cyclone-arnab-india-eastern-coast-evacuation-warning",
-        "title": "Cyclone Arnab Threatens India’s Eastern Coast: 570,000 People at Risk as Evacuations Prepare to Begin"
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears",
+        "title": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears"
       },
       {
-        "name": "newsbytesapp.com",
-        "url": "https://www.newsbytesapp.com/news/india/cyclone-arnab-andhra-pradesh-allocates-rs27cr-dispatches-15-ndrf-teams/tldr",
-        "title": "Cyclone Arnab: Andhra Pradesh allocates ₹27cr dispatches 15 NDRF teams"
+        "name": "thestatesman.com",
+        "url": "https://www.thestatesman.com/india/cyclone-arnab-explained-landfall-date-wind-speed-affected-areas-and-safety-measures-1503655324.html",
+        "title": "Cyclone Arnab explained: Landfall date, wind speed, affected areas and safety measures - The Statesman"
       },
       {
-        "name": "telugu360.com",
-        "url": "https://www.telugu360.com/cyclone-arnab-53-trains-cancelled-schools-shut-in-ap-%E2%82%B927-crore-sanctioned-for-relief/",
-        "title": "Cyclone Arnab: 53 Trains Cancelled, Schools Shut in AP; ₹27 Crore Sanctioned for Relief - Telugu360"
+        "name": "thenewsminute.com",
+        "url": "https://www.thenewsminute.com/andhra-pradesh/cyclone-arnab-to-cross-andhra-coast-on-oct-28-over-89000-people-evacuated",
+        "title": "Cyclone Arnab to cross Andhra coast on Oct 28, over 89000 people evacuated"
       },
       {
-        "name": "business-standard.com",
-        "url": "https://www.business-standard.com/amp/india-news/cyclone-arnab-andhra-odisha-prepare-to-evacuate-people-ahead-of-landfall-126102600339_1.html",
-        "title": "Cyclone Arnab: Andhra, Odisha prepare to evacuate people ahead of landfall"
+        "name": "pragativadi.com",
+        "url": "https://pragativadi.com/cyclone-arnab-odisha-evacuation-src-alert-details/",
+        "title": "Cyclone Arnab Odisha Evacuation SRC Alert Updates - Pragativadi I Latest Odisha News in English I Breaking News"
       }
     ],
-    "membersHash": "eonet,gdacs|IN#d1e12953",
-    "seen": "2026-10-27T01:51:57.470Z",
-    "donationSearched": "2026-10-26T21:25:14.833Z",
-    "directSearched": "2026-10-26T21:25:14.833Z",
-    "directSearchVersion": 2
+    "membersHash": "eonet,gdacs,news|IN#21dacb98",
+    "donationSearched": "2026-10-27T08:20:06.786Z",
+    "directSearched": "2026-10-27T08:20:06.786Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-27T08:20:06.786Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-26T15:37:48.309Z",
@@ -518,7 +463,7 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2
@@ -628,7 +573,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2,
@@ -722,104 +667,164 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027465": {
-    "at": "2026-10-25T07:59:52.974Z",
+    "at": "2026-10-27T08:20:06.786Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "The drought, listed as affecting Uganda, Kenya, Tanzania, Rwanda and Burundi, started in late May 2026. In Uganda's Karamoja sub-region it began in late May and persisted through October 2026, according to the Monitor on 21 October. In Kenya, rains had started in parts of 24 counties by 5 October, a partial improvement rather than an end to the drought.",
+    "summary": "Drought in Uganda, Kenya, Tanzania, Rwanda and Burundi began in May 2026 and remains ongoing as of 27 October 2026. The semi-arid Karamoja sub-region of north-eastern Uganda is the worst hit, where an IPC analysis released 22 October projects worsening hunger through early 2027.",
     "ongoing": true,
     "places": [
       {
-        "name": "Kotido",
-        "admin": "Karamoja",
+        "name": "Karamoja",
         "country": "UG",
-        "kind": "district",
-        "impact": "Drought affected; among the most affected"
+        "kind": "region",
+        "impact": "worst-hit area; severe food insecurity"
       },
       {
-        "name": "Kaabong",
+        "name": "Nabilatuk",
         "admin": "Karamoja",
         "country": "UG",
         "kind": "district",
-        "impact": "Drought affected; among the most affected"
-      },
-      {
-        "name": "Abim",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Drought affected"
-      },
-      {
-        "name": "Karenga",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Drought affected"
-      },
-      {
-        "name": "Moroto",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Drought affected"
-      },
-      {
-        "name": "Amudat",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Drought affected"
-      },
-      {
-        "name": "Napak",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Drought affected"
+        "impact": "failed rains and dwindling water"
       },
       {
         "name": "Nakapiripirit",
         "admin": "Karamoja",
         "country": "UG",
         "kind": "district",
-        "impact": "Drought affected"
+        "impact": "failed rains and dwindling water"
+      },
+      {
+        "name": "Amudat",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "failed rains and dwindling water"
+      },
+      {
+        "name": "Kotido",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "failed rains and dwindling water"
+      },
+      {
+        "name": "Karenga",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "failed rains and dwindling water"
+      },
+      {
+        "name": "Kaabong",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "failed rains and dwindling water"
+      },
+      {
+        "name": "Napak",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "failed rains and dwindling water"
+      },
+      {
+        "name": "Abim",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "district",
+        "impact": "failed rains and dwindling water"
+      },
+      {
+        "name": "Moroto",
+        "admin": "Karamoja",
+        "country": "UG",
+        "kind": "town",
+        "impact": "WFP food distribution point"
+      },
+      {
+        "name": "Mandera",
+        "country": "KE",
+        "kind": "region",
+        "impact": "milk production fell by about a third"
       }
     ],
-    "figures": [],
-    "donation": [],
+    "figures": [
+      {
+        "label": "People facing severe food shortages",
+        "value": "about 673,000 people",
+        "sourceName": "monitor.co.ug",
+        "sourceUrl": "https://www.monitor.co.ug/uganda/news/national/food-insecurity-hits-uganda-as-government-un-appeal-for-urgent-action-5646392"
+      },
+      {
+        "label": "People targeted by UN and partners'…",
+        "value": "130,000 people",
+        "sourceName": "thecooperator.news",
+        "sourceUrl": "https://thecooperator.news/un-seeks-us-50-2mln-to-tackle-ugandas-worsening-hunger-crisis-el-nino-flood-threats/"
+      },
+      {
+        "label": "People reached with food assistance",
+        "value": "1.1 million people",
+        "sourceName": "independent.co.ug",
+        "sourceUrl": "https://www.independent.co.ug/pm-nabbanja-calls-for-broader-el-nino-response-as-uganda-un-launch-61-million-appeal/"
+      },
+      {
+        "label": "People receiving cash from Uganda Red…",
+        "value": "more than 5,000 people",
+        "sourceName": "ifrc.org",
+        "sourceUrl": "https://www.ifrc.org/taxonomy/term/43"
+      },
+      {
+        "label": "People in arid and semi-arid counties",
+        "value": "about 4.1 million people",
+        "sourceName": "undp.org",
+        "sourceUrl": "https://www.undp.org/africa/resilience-hub-africa/blog/drought-deluge-preparing-eastern-africa-el-ninos-double-hit"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://redcrossug.org/donate/",
+        "org": "Uganda Red Cross Society",
+        "kind": "society",
+        "note": "General Uganda Red Cross Humanitarian Response Fund donation page, not drought-specific.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
         "name": "monitor.co.ug",
-        "url": "https://www.monitor.co.ug/uganda/news/national/karamoja-crisis-deepens-failed-rains-leave-thousands-starving-force-mass-migration-5639724",
-        "title": "Karamoja crisis deepens: Failed rains leave thousands starving, force mass migration"
-      },
-      {
-        "name": "undp.org",
-        "url": "https://www.undp.org/africa/resilience-hub-africa/blog/drought-deluge-preparing-eastern-africa-el-ninos-double-hit",
-        "title": "From Drought to Deluge: Preparing Eastern Africa for El Niño’s Double Hit"
-      },
-      {
-        "name": "actalliance.org",
-        "url": "https://actalliance.org/wp-content/uploads/2026/07/Uganda-Karamoja-Hunger-Crisis.pdf",
-        "title": "1 Alert note Uganda, 23rd July 2026 Completed by: Josephine Ninsiima"
-      },
-      {
-        "name": "ukragroconsult.com",
-        "url": "https://ukragroconsult.com/en/news/kenyas-corn-production-to-fall-39-due-to-severe-drought/",
-        "title": "Kenya’s corn production to fall 39% due to severe drought"
+        "url": "https://www.monitor.co.ug/uganda/news/national/food-insecurity-hits-uganda-as-government-un-appeal-for-urgent-action-5646392",
+        "title": "Food insecurity hits Uganda as government, UN appeal for urgent action"
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-27T01:51:57.470Z",
-    "donationSearched": "2026-10-25T07:59:52.974Z",
-    "directSearched": "2026-10-25T18:01:40.579Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-27T08:20:06.786Z",
+    "directSearched": "2026-10-27T08:20:06.786Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/feed-families-facing-hunger-in-ugandas-karamoja/",
+        "org": "The Girl Child Foundation Uganda",
+        "kind": "globalgiving",
+        "note": "Emergency maize flour, beans and nutrition support for drought-hit families in Karamoja.",
+        "title": "Feed Families Facing Hunger in Uganda's Karamoja - GlobalGiving"
+      },
+      {
+        "url": "https://www.kara-tunga.com/social-responsibility/emergency-food-relief-support-karamoja/",
+        "org": "Kara-Tunga",
+        "kind": "local",
+        "note": "Posho, beans, cooking oil, salt and sugar for households whose crops failed.",
+        "title": "Emergency Food Relief: Support Families in Karamoja - Kara-Tunga",
+        "published": "2026-08-27T08:20:06.786Z"
+      }
+    ],
+    "seen": "2026-10-27T08:20:06.786Z"
   },
   "gdacs-earthquake-eq-1570077": {
     "at": "2026-10-26T21:25:14.833Z",
@@ -970,7 +975,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2,
@@ -1251,7 +1256,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2
@@ -1319,88 +1324,109 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-10-26T08:14:05.412Z",
+    "at": "2026-10-27T08:20:06.786Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu City, Tibet Autonomous Region, China, on 22 October 2026, about 191 km ENE of Nagqu. Officials reported at least 16 deaths and 76 injured, and hundreds of homes were damaged or collapsed. Search and rescue was continuing as of 23 October. No reports dated 24 to 25 October were found, so the current status is unconfirmed.",
+    "summary": "A M7.0 earthquake struck Baqen County, Nagqu, Xizang (Tibet), China, on 22 October 2026 at 14:33 UTC. Sixteen people were killed and 76 injured as of 24 October. Search and rescue is reported complete, with no people missing. As of 27 October, relief efforts and aftershocks were still being reported, and the affected railway section had resumed normal service.",
     "ongoing": true,
     "places": [
       {
-        "name": "Baqen County",
-        "admin": "Tibet Autonomous Region",
+        "name": "Baqen",
+        "admin": "Nagqu",
         "country": "CN",
         "kind": "district",
-        "impact": "339 homes collapsed, 20 livestock sheds damaged"
+        "impact": "Epicentre area"
       },
       {
-        "name": "Kamlung Gal",
-        "admin": "Tibet Autonomous Region",
+        "name": "Nagqu",
+        "admin": "Xizang",
+        "country": "CN",
+        "kind": "city",
+        "impact": "Epicentre city area, relief underway"
+      },
+      {
+        "name": "Maru",
         "country": "CN",
         "kind": "town",
-        "impact": "10 deaths"
+        "impact": "Principal affected area"
       },
       {
-        "name": "Gangcheng Township",
-        "admin": "Tibet Autonomous Region",
+        "name": "Gangqie",
         "country": "CN",
         "kind": "town",
-        "impact": "extensive destruction"
-      },
-      {
-        "name": "Zasip Township",
-        "admin": "Tibet Autonomous Region",
-        "country": "CN",
-        "kind": "town",
-        "impact": "extensive destruction"
-      },
-      {
-        "name": "Maru Township",
-        "admin": "Tibet Autonomous Region",
-        "country": "CN",
-        "kind": "town",
-        "impact": "building collapses, ground cracks, wall damage"
-      },
-      {
-        "name": "National Highway 317",
-        "country": "CN",
-        "kind": "site",
-        "impact": "section blocked by rockfalls"
-      },
-      {
-        "name": "Gerutang Village",
-        "admin": "Tibet Autonomous Region",
-        "country": "CN",
-        "kind": "town",
-        "impact": "residents felt strong shaking"
+        "impact": "Principal affected area"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "at least 16",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/10/22/magnitude-7-earthquake-kills-16-people-in-chinas-tibet-xinhua-reports"
+        "value": "16",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
       },
       {
         "label": "Injured",
-        "value": "76, including 11 seriously",
-        "sourceName": "visiontimes.com",
-        "sourceUrl": "https://www.visiontimes.com/2026/10/23/tibet-earthquake-kills-16-injures-76-as-rescuers-race-to-reach-remote-villages.html"
+        "value": "76",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
       },
       {
-        "label": "Evacuated",
-        "value": "more than 12,400 people",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake"
+        "label": "Displaced",
+        "value": "12,489 people",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
+      },
+      {
+        "label": "Homes damaged or destroyed",
+        "value": "339 homes",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
+      },
+      {
+        "label": "People affected",
+        "value": "13,673 people",
+        "sourceName": "globaltimes.cn",
+        "sourceUrl": "https://www.globaltimes.cn/page/202610/1372929.shtml"
       }
     ],
     "donation": [],
-    "sources": [],
+    "sources": [
+      {
+        "name": "theborneopost.com",
+        "url": "https://www.theborneopost.com/2026/10/27/rescue-efforts-continue-after-7-0-magnitude-quake-in-chinas-xizang/",
+        "title": "Rescue efforts continue after 7.0-magnitude quake in China's Xizang"
+      },
+      {
+        "name": "chinadaily.com.cn",
+        "url": "https://www.chinadaily.com.cn/a/202610/24/WS6adc9a54e4b06d4aa05649ce.html",
+        "title": "Rescue and relief efforts underway after quake kills 16, injures 76 in Xizang - Chinadaily.com.cn"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake",
+        "title": "2026 Tibet earthquake"
+      },
+      {
+        "name": "watchers.news",
+        "url": "https://watchers.news/2026/10/23/m7-0-earthquake-kills-at-least-16-injures-76-in-xizang-china/",
+        "title": "M7.0 earthquake kills at least 16, injures 76 in Xizang, China - The Watchers"
+      },
+      {
+        "name": "globaltimes.cn",
+        "url": "https://www.globaltimes.cn/page/202610/1372929.shtml",
+        "title": "Rescue efforts race against time after magnitude-7.0 earthquake in Xizang earthquake; over 12,000 residents relocated - Global Times"
+      },
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html",
+        "title": "Update: Rescue efforts intensify after Xizang quake kills 16, injures 76-Xinhua"
+      }
+    ],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-27T01:51:57.470Z",
-    "donationSearched": "2026-10-26T08:14:05.412Z",
-    "directSearched": "2026-10-26T08:14:05.412Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-27T08:20:06.786Z",
+    "directSearched": "2026-10-27T08:20:06.786Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-27T08:20:06.786Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -4147,7 +4173,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2
@@ -4214,7 +4240,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2
@@ -5750,7 +5776,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-25T18:01:40.579Z",
     "directSearched": "2026-10-25T18:01:40.579Z",
     "directSearchVersion": 2,
@@ -6329,7 +6355,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2,
@@ -6480,7 +6506,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2,
@@ -6791,7 +6817,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2
@@ -7242,7 +7268,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-27T01:51:57.470Z",
+    "seen": "2026-10-27T08:20:06.786Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "direct": [
       {
