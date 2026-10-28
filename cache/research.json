@@ -214,36 +214,123 @@
     "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001338": {
-    "at": "2026-10-26T21:25:14.833Z",
+    "at": "2026-10-28T01:49:21.011Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Super Typhoon Champi, which started on 14 October 2026, weakened into an extratropical cyclone overnight into 26 October. Heavy rain is still forecast for various parts of Japan through 27 October, as the typhoon's humid air stimulates a stalled front over the Japanese archipelago.",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
+    "summary": "Super Typhoon Champi (Rosal) formed on 11 October 2026 and passed near Guam, the Northern Mariana Islands, the Philippines, Taiwan and Okinawa, Japan. It became extratropical on 25 October and dissipated on 27 October. Reported impacts include one death and 616+ injured in Taiwan, damaged homes on Guam, power cuts in Okinawa, and at least US$7.86 million in economic damage.",
+    "ongoing": false,
+    "places": [
+      {
+        "name": "Batanes",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 2 winds raised"
+      },
+      {
+        "name": "Babuyan Islands",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 2 winds raised"
+      },
+      {
+        "name": "Cagayan",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 winds"
+      },
+      {
+        "name": "Ilocos Norte",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 winds"
+      },
+      {
+        "name": "Apayao",
+        "country": "PH",
+        "kind": "region",
+        "impact": "Signal No. 1 winds"
+      },
+      {
+        "name": "Ishigaki",
+        "admin": "Okinawa",
+        "country": "JP",
+        "kind": "city",
+        "impact": "Utility poles and trees damaged"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Injured",
+        "value": "616+",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Typhoon_Champi_(2026)"
+      },
+      {
+        "label": "Deaths",
+        "value": "1+",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Typhoon_Champi_(2026)"
+      },
+      {
+        "label": "Power outages",
+        "value": "13,000 households",
+        "sourceName": "news.sbs.co.kr",
+        "sourceUrl": "https://news.sbs.co.kr/english/article.do?news_id=N1008814278"
+      },
+      {
+        "label": "Homes destroyed or severely damaged",
+        "value": "Up to 100",
+        "sourceName": "archyde.com",
+        "sourceUrl": "https://www.archyde.com/american-red-cross-responds-to-super-typhoon-champi-and-hurricane-isaias/"
+      },
+      {
+        "label": "Economic damage",
+        "value": "At least US$7.86 million",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Typhoon_Champi_(2026)"
+      }
+    ],
     "donation": [],
     "sources": [
       {
-        "name": "news.sbs.co.kr",
-        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008814278",
-        "title": "Typhoon Champi Leaves Trail of Damage in Okinawa and Taiwan, Heavy Rain Forecast Across Japan"
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/Typhoon_Champi_(2026)",
+        "title": "Typhoon Champi (2026)"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season",
+        "title": "2026 Pacific typhoon season"
+      },
+      {
+        "name": "redcross.org",
+        "url": "https://www.redcross.org/",
+        "title": "American Red Cross"
       }
     ],
     "membersHash": "eonet,gdacs|CN,JP,KR,PH#afb26aec",
-    "seen": "2026-10-27T21:08:09.862Z",
-    "donationSearched": "2026-10-26T21:25:14.833Z",
-    "directSearched": "2026-10-26T21:25:14.833Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://wck.org/relief/typhoon-champi/",
-        "org": "World Central Kitchen (WCK)",
+        "org": "World Central Kitchen",
         "kind": "local",
-        "note": "Hot meals for shelters and relief workers responding to Typhoon Champi.",
+        "note": "Hot meals for shelters and relief workers on Guam and Northern Mariana Islands.",
         "title": "WCK Responds to Typhoon Champi in Guam and the Northern Mariana Islands",
-        "published": "2026-10-21T21:25:14.833Z"
+        "published": "2026-10-22T01:49:21.011Z"
+      },
+      {
+        "url": "https://wck.org/news/typhoon-champi-guam/",
+        "org": "World Central Kitchen",
+        "kind": "local",
+        "note": "First-alert Champi page with donate button for meals on Guam.",
+        "title": "First Alert: WCK Responding to Typhoon Champi in Guam",
+        "published": "2026-10-18T01:49:21.011Z"
       }
-    ]
+    ],
+    "donationSearched": "2026-10-28T01:49:21.011Z",
+    "directSearched": "2026-10-28T01:49:21.011Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-28T01:49:21.011Z"
   },
   "gdacs-cyclone-tc-1001341": {
     "at": "2026-10-27T21:08:09.862Z",
@@ -277,10 +364,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-27T21:08:09.862Z",
     "directSearched": "2026-10-27T21:08:09.862Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-27T21:08:09.862Z"
+    "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001342": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -398,7 +485,7 @@
       }
     ],
     "membersHash": "eonet,gdacs,news|IN#21dacb98",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-27T08:20:06.786Z",
     "directSearched": "2026-10-27T08:20:06.786Z",
     "directSearchVersion": 2
@@ -450,7 +537,7 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2
@@ -560,7 +647,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2,
@@ -654,7 +741,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2
@@ -791,7 +878,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-27T08:20:06.786Z",
     "directSearched": "2026-10-27T08:20:06.786Z",
     "directSearchVersion": 2,
@@ -973,6 +1060,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
+    "seen": "2026-10-28T01:49:21.011Z",
+    "donationSearched": "2026-10-27T21:08:09.862Z",
+    "directSearched": "2026-10-27T21:08:09.862Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://wck.org/relief/panama-earthquake/",
@@ -989,11 +1080,7 @@
         "note": "Shelter and drinking water for Azuero families, with a local partner on the ground.",
         "title": "Terremoto en Panamá"
       }
-    ],
-    "donationSearched": "2026-10-27T21:08:09.862Z",
-    "directSearched": "2026-10-27T21:08:09.862Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-27T21:08:09.862Z"
+    ]
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1254,7 +1341,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2
@@ -1421,7 +1508,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-27T08:20:06.786Z",
     "directSearched": "2026-10-27T08:20:06.786Z",
     "directSearchVersion": 2
@@ -4171,7 +4258,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2
@@ -4238,7 +4325,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2
@@ -5736,6 +5823,8 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
+    "seen": "2026-10-28T01:49:21.011Z",
+    "donationSearched": "2026-10-27T21:08:09.862Z",
     "direct": [
       {
         "url": "https://convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026/",
@@ -5769,9 +5858,7 @@
         "title": "Colombia earthquake: Donate to help survivors",
         "published": "2026-08-14T18:01:40.579Z"
       }
-    ],
-    "donationSearched": "2026-10-27T21:08:09.862Z",
-    "seen": "2026-10-27T21:08:09.862Z"
+    ]
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -6313,7 +6400,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2,
@@ -6464,7 +6551,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2,
@@ -6775,7 +6862,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2
@@ -7226,47 +7313,69 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-27T21:08:09.862Z",
+    "seen": "2026-10-28T01:49:21.011Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "direct": [
       {
-        "url": "https://www.globalgiving.org/projects/emergency-flood-relief-for-families-in-nepal/",
-        "org": "United Foundation-Nepal",
-        "kind": "globalgiving",
-        "note": "Food, clean water, clothing and temporary shelter for families in Rasuwa and Nuwakot.",
-        "title": "Nepal Flood Relief for Rasuwa and Nuwakot Families - GlobalGiving"
-      },
-      {
         "url": "https://www.globalgiving.org/projects/nepal-flash-flood-emergency-relief-2026/",
-        "org": "OBHIZATRIK Foundation and OBHIZATRIK International",
+        "org": "OBHIZATRIK Foundation and International",
         "kind": "globalgiving",
-        "note": "Relief supplies, plus funding for vetted local NGOs in Rasuwa, Nuwakot and Dhading.",
+        "note": "Relief supplies and grants to vetted NGOs in Rasuwa, Nuwakot and Dhading.",
         "title": "Nepal Flash Flood Emergency Relief 2026 - GlobalGiving"
       },
       {
-        "url": "https://www.globalgiving.org/projects/nepal-flood-relief-fund/",
-        "org": "GlobalGiving",
+        "url": "https://www.globalgiving.org/projects/urgent-flash-flood-response-in-nepal/",
+        "org": "ActionAid Nepal",
         "kind": "globalgiving",
-        "note": "Pooled fund giving local organisations flexible money for search, medical care, shelter and water.",
-        "title": "Nepal Flood Relief Fund - GlobalGiving",
-        "published": "2026-10-19T18:01:40.579Z"
+        "note": "Emergency food, water, essential items and temporary shelter via local partners.",
+        "title": "Urgent Flash Flood Response in Nepal - GlobalGiving"
       },
       {
-        "url": "https://childrenofadam.org/all-appeals/nepal-emergency/",
-        "org": "Children of Adam",
-        "kind": "local",
-        "note": "Food, clean water, medical supplies and shelter for Rasuwa families.",
-        "title": "Nepal Flood Appeal 2026",
-        "published": "2026-08-28T18:01:40.579Z"
+        "url": "https://www.globalgiving.org/microprojects/emergency-relief-for-nepal-flood-survivors/",
+        "org": "GlobalGiving microproject",
+        "kind": "globalgiving",
+        "note": "Food, clean water, hygiene items, clothing and temporary shelter for affected families.",
+        "title": "Emergency Relief for Nepal Flood Survivors - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/fuel-for-nepal-flood-relief/",
+        "org": "Fuel Relief Fund",
+        "kind": "globalgiving",
+        "note": "Free fuel for flood-hit areas, distributed with local partners.",
+        "title": "Fuel for Nepal Flood Relief - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/nepal-floods-helping-families-recover-and-rebuild/",
+        "org": "Child Rescue Nepal",
+        "kind": "globalgiving",
+        "note": "Relief supplies and care for children who lost family.",
+        "title": "Nepal Floods: Helping Families Recover and Rebuild - GlobalGiving"
       },
       {
         "url": "https://funds.anhsdc.org/",
-        "org": "ANHS",
+        "org": "America Nepal Helping Society",
         "kind": "local",
-        "note": "Shelter, food, water and health relief for Bhote Koshi flood communities.",
+        "note": "Relief fund for Rasuwa and downstream districts, passed to PM's Disaster Relief Fund.",
         "title": "Rasuwa Flood Relief Fund — ANHS"
+      },
+      {
+        "url": "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods/",
+        "org": "Oxfam GB",
+        "kind": "local",
+        "note": "Appeal for hygiene kits, shelter and water in flood-hit communities.",
+        "title": "Donate to Nepal Floods Appeal",
+        "published": "2026-09-25T01:49:21.011Z"
+      },
+      {
+        "url": "https://charity.friscobasecamp.com/",
+        "org": "Basecamp Charity, Frisco, Texas",
+        "kind": "local",
+        "note": "Shelter, food and medical aid for Rasuwa flood survivors.",
+        "title": "Basecamp Charity — Rasuwa Nepal Flood Relief"
       }
-    ]
+    ],
+    "directSearched": "2026-10-28T01:49:21.011Z",
+    "directSearchVersion": 2
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",
