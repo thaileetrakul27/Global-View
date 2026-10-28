@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-28T09:03:01.732Z",
+  "updated": "2026-10-28T17:04:46.897Z",
   "fetched": {
-    "societies": "2026-10-28T09:03:01.732Z",
-    "uncr": "2026-10-28T09:03:01.732Z"
+    "societies": "2026-10-28T17:04:46.897Z",
+    "uncr": "2026-10-28T17:04:46.897Z"
   },
   "societies": {
     "AF": {
@@ -2459,39 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text=": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text=",
-        "https://www.ifrc.org/appeals?appeal_code=&date_from=&date_to=&p=300&page=4&text="
-      ]
-    },
-    "ifrc.org/appeals?ac=MDRSY003": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://www.ifrc.org/appeals?ac=MDRSY003"
-      ]
-    },
-    "cruzroja.gt": {
-      "ok": true,
-      "reason": "donation word \"donar\"",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://www.cruzroja.gt/"
-      ]
-    },
-    "redcross.org.ua": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T14:45:27.681Z",
-      "chain": [
-        "https://redcross.org.ua/"
-      ]
-    },
     "donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~mi-donativo": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2983,35 +2950,35 @@
     "local4:gdacs-drought-dr-1027465:kara-tunga.com/social-responsibility/emergency-food-relief-support-karamoja": {
       "ok": false,
       "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
+      "checked": "2026-10-28T09:03:01.732Z",
       "chain": [
         "https://www.kara-tunga.com/social-responsibility/emergency-food-relief-support-karamoja/"
-      ],
-      "checked": "2026-10-28T09:03:01.732Z"
+      ]
     },
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-28T09:03:01.732Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-10-28T09:03:01.732Z"
+      ]
     },
     "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-28T09:03:01.732Z",
       "chain": [
         "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
       ],
-      "blocked": true,
-      "checked": "2026-10-28T09:03:01.732Z"
+      "blocked": true
     },
     "go.ifrc.org/emergencies/8013/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-28T09:03:01.732Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8013/overview"
-      ],
-      "checked": "2026-10-28T09:03:01.732Z"
+      ]
     }
   }
 }
