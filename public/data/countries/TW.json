@@ -2,7 +2,7 @@
   "code": "TW",
   "name": "Taiwan",
   "kind": "local",
-  "updated": "2026-10-28T17:04:46.897Z",
+  "updated": "2026-10-28T23:02:19.626Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "TW:zh-Hant",
@@ -10,16 +10,56 @@
   },
   "articles": [
     {
-      "title": "西班牙高鐵列車相撞已知64死 馬德里至安達魯西亞交通中斷",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA5c3g3MGNLenRPRkF1cGlWZFVXcDVFa19ITWZjZVI4emFjVWpTS25qUDh3cmN2dGtwMzZYeWJHVTdnN1Z6aWNfd2hIVzItNGs?oc=5",
-      "outlet": "公視新聞",
-      "outletUrl": "https://news.pts.org.tw",
-      "published": "2026-10-28T15:51:03.000Z",
-      "outlets": 5,
+      "title": "萬一台北不是首選？蔣萬安迎輝達 石舫亘曝內幕「直接聯繫黃仁勳」",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE13N3BEZkFwNEVCbHFHWmllUVc2Z1Z6b01kRy1mRzdfMy05WnNRY0FIcUJIQnlfLTgxQzhrWG5kYnZHY0QtcVpRNEF6UEpSUDZoakFF0gFYQVVfeXFMT3VoMWd1UFZMVnA5MW9xLXJDZVc1UGx2VDBuRkw5dWxwWnR1Y0xWMUREZkF3OFp5RFByRGJlZjNzSzNKMzlKT0tNYjJVcmhiOXg2NlpUQ2NYTA?oc=5",
+      "outlet": "UDN",
+      "outletUrl": "https://udn.com",
+      "published": "2026-10-28T19:11:58.000Z",
+      "outlets": 4,
       "trending": true,
-      "en": "Spanish high-speed train collision leaves 64 dead; traffic between Madrid and Andalusia interrupted",
+      "en": "What if Taipei is not the first choice? Chiang Wan-an welcomes NVIDIA; Shih Fang-hsuan reveals inside story: \"directly contacted Jensen Huang\"",
       "about": [
-        "ES"
+        "TW",
+        "US"
+      ]
+    },
+    {
+      "title": "蔣萬安競辦深夜報警！聲明：「萬安除三害」海報非市府製作",
+      "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPd1B1Q2ZySkgzTDAtVHg4ZFZ0SlB0VDBTX2dUbDE5a1p0MDQybkdCa0s3ZkIwVDBlNXFhTFVSaWlmd2lNM1p0d3pmaTJhY3A1SUIxTHM0MWpHdnF2VjM3UVNDX01jQjljTzhYQm44TGwxZEtxRHc4VnBtX3Q4TE9xRnV5dVhfOEx4TWREMWxIWFNjUXRabnJtU1dLNkdCUG5ORFdpcFBsSGNkUzdXTGdrMnA1bFViWXU3TFdPeWZXM1JoS09DdWpyYjJIMFRPNi1jbE94aFE4WXdhVVphc29IZUFqTDkzR0ZmU2x0WS0yY21fTi1CdEt4VUl1ci1mX1NIZlhpUV9oamhfWUlDa2hTMkhOTGI5eU5LOWdhQi1LWk5mRVRJM1dETXNnalBhdUp2QV8tRm5EVS1lX0lUcjBhbXdoS1lpT3BaM2hjdkM5Wlh2WmtMYzBWcHpBQXQ0TURDTUpJelh6cTE4cUk?oc=5",
+      "outlet": "Yahoo新聞",
+      "outletUrl": "https://tw.news.yahoo.com",
+      "published": "2026-10-28T16:09:00.000Z",
+      "outlets": 6,
+      "trending": false,
+      "en": "Chiang Wan-an's campaign reports to police late at night! Statement: the \"Wan-an Eliminates Three Harms\" poster was not made by the city government",
+      "about": [
+        "TW"
+      ]
+    },
+    {
+      "title": "快訊／日本千葉縣發生5.4強震！最大震度5弱",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE90aS1ZVmRYTEtsQ0hPZ243bmI1ejNpOERPQUZIMHJTbi1uZ2loWlBQMGdvcEZBT2pMX3B5YmpBWlAyYXppWjNJRVNUZlduaDhJVVJn?oc=5",
+      "outlet": "東森新聞",
+      "outletUrl": "https://news.ebc.net.tw",
+      "published": "2026-10-28T15:15:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Breaking news: magnitude 5.4 strong earthquake strikes Chiba Prefecture, Japan! Maximum intensity lower 5",
+      "about": [
+        "JP"
+      ]
+    },
+    {
+      "title": "Fed 10月會議聲明全文",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAzVEc1SE1iVE9SMFhVUzh3dFF0UDVsVEtaeHF4SVZ6V3ltMEFXc1poclRwOHRUOGRZdm9PZk1NU1RYUC1aWURHcnZGUkZ1N2c?oc=5",
+      "outlet": "鉅亨網",
+      "outletUrl": "https://news.cnyes.com",
+      "published": "2026-10-28T19:52:25.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Full text of the Fed's October meeting statement",
+      "about": [
+        "US"
       ]
     },
     {
@@ -27,37 +67,103 @@
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1CeVVxTFpBamZPV2UwVG1NUUYzT0VlUlZXeFNWWVhNMno4aHpyUUJfaTAzVk5ndUFmbm9mR0RaTmFTQ1VCeDhVMtIBTEFVX3lxTE04MzlJdlV4YjRMcFZaUWJTZ1hqenQ2R2VIWm5YeWpVazlRaHQ2UFhqZFZUVFRsOXBXajY3OGNvR3Jnb1JpNXg3dHNteHM?oc=5",
       "outlet": "三立新聞網SETN.com",
       "outletUrl": "https://www.setn.com",
-      "published": "2026-10-28T14:30:00.000Z",
+      "published": "2026-10-28T15:04:00.000Z",
       "outlets": 5,
-      "trending": true,
+      "trending": false,
       "en": "Chiang Wan-an canvassing, 'frozen garlic' noise won't stop! On site he shouts 'Stop the noise': Mayor, what's there to be noisy about?",
       "about": [
         "TW"
       ]
     },
     {
-      "title": "中共介選？洋流車掃網站上線遭灌7萬筆假資料 沈伯洋競辦緊急排除",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CRGYyc0gtVnR0c2xXTjQ0QXJrZkMzZnZObGkxQlVoMUUzX1FRdnVQSkN2UnFKRDh4cWNLRTFTRmU1S25SOURUYUgzVmN6bWx3NTVOdUxfaTFJX2hBd0RrX25nOEFsLWJ2cEHSAW9BVV95cUxPZTVmQm0yN0JNak1ZODR6MVdGSC1RUzJEUnN2LUhoYy0wZWFoUWdtYlBLeXo4djZDOXJZLW5GUjhJRUpia3BwQUFrZkhxSWhBNTFMT2JMTm5vc3psTG5VeFVhaV85MXhsYXV5dUFZUUU?oc=5",
-      "outlet": "自由時報",
-      "outletUrl": "https://news.ltn.com.tw",
-      "published": "2026-10-28T14:54:12.000Z",
+      "title": "曹興誠稱「洋流」背後菩薩精神作家預言：反助翻轉蔣萬安選情- 政治",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0SXJTVGNCZHpPS0dJOUVuRHhZMzZCVVJqSzJMaFFodlVpUnFzc3NRTEY2OVJsMDBGUV8yVkVwekNLT1p3X2VRUWY2a1VqcXFSVndzbl9xYjZtWlJoUjhfMFpndG9Vclc2Sk5QWGtB?oc=5",
+      "outlet": "中時新聞網",
+      "outletUrl": "https://www.chinatimes.com",
+      "published": "2026-10-28T15:59:17.000Z",
       "outlets": 5,
-      "trending": true,
-      "en": "CCP meddling in the election? Yang Liu car-sweeping website goes live and is flooded with 70,000 fake records; Shen Boyang's campaign office urgently removes them",
+      "trending": false,
+      "en": "Tsao Hsing-cheng says the Bodhisattva spirit behind the \"ocean current\": writer predicts anti-assistance will turn Chiang Wan-an's election prospects - Politics",
       "about": [
-        "TW",
-        "CN"
+        "TW"
       ]
     },
     {
-      "title": "蔣萬安曾失業！石舫亘讚優點「沉著」 王偉忠：跟沈伯洋完全不一樣",
-      "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQVHFkRk5xeW1qV3JhZGs5M2RPSWdGeU5rbUNyTWFwNFRhOTVtVkxuY2tEU1Z3WmprRlQxY3BHN0hObDRjT3c3R1FteUl3WXdxOTh3X2xDelVzMVB6Ylp6blFoZHZkRzJJXzdWT1M0ZmJKa21YOG9rUVY4aUxHT1RiM1B4TjNONldDOC1IZnFyUUtQMzNsaXNzeUlVcWwtaDQtUXVvOFNYeTBURkZ1OThyc3g5OE9Nd2FVa2dJVjRwTHpnRVpQR2RlZkJTS0dNaldWZ3lzQTN5NFhrVUM5QlZmU05ZdWI0YkNMVHo1Smw0WERtWTFWNEVSbEdFNUJlcjMyM0ZCcGtOU1llNENhTzNEeXg4Vk1BTXFGb1RUcUZ3clVUekYwMm9rTDB5MTBkMmt2VUo2cXZ1VEZsWUcwS1pET3lrazdjM2dmS2xlS0xtRnh0TEJPdy1OX042RTB3RmJEd3BRbk1CdlIwZnp1dnE5MHdwOE1nYXJN?oc=5",
+      "title": "蔣萬安互動網頁被爆抄襲沈伯洋「政策島」　葛如鈞稱：開源世界相互學習",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA5VlRXRG1OdUU5ay1LdlU3dkU0SGFhMDhPak5JVGJtMklNa1pLLWRfZ2VWNENKUFc5TExieXhtcTBLdHFoVHQ5bNIBTEFVX3lxTE15ejV1YnFIMkpraGtGME94YWRJZDcwV0dZQ18wZVNuMVh1eEhIbkxwMkltSkIyZzUzMHBmR19PRzJHQ3l6REkxWHQwTC0?oc=5",
+      "outlet": "三立新聞網SETN.com",
+      "outletUrl": "https://www.setn.com",
+      "published": "2026-10-28T14:51:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Chiang Wan-an's interactive webpage exposed for plagiarizing Shen Bo-yang's \"Policy Island\"; Ko Ju-chun says: the open-source world learns from each other",
+      "about": [
+        "TW"
+      ]
+    },
+    {
+      "title": "西班牙高鐵列車相撞已知64死 馬德里至安達魯西亞交通中斷",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA5c3g3MGNLenRPRkF1cGlWZFVXcDVFa19ITWZjZVI4emFjVWpTS25qUDh3cmN2dGtwMzZYeWJHVTdnN1Z6aWNfd2hIVzItNGs?oc=5",
+      "outlet": "公視新聞",
+      "outletUrl": "https://news.pts.org.tw",
+      "published": "2026-10-28T10:04:03.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Spanish high-speed train collision leaves 64 dead; traffic between Madrid and Andalusia interrupted",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "河口湖命案「認識2個月就閃婚」 陳沂揭1細節：玫瑰瞳鈴眼都不敢演",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1IdXZ2bEFFYUxjcnJocnhLYzdnczFGcDFiaE1QQUpnSjlRX1plOFlGdDI4NjBBbGd5Mm44NDczeVhkUXpzdkkyWGRpMlFiQkVl0gFWQVVfeXFMTi1PZy1iVTl3bWMzWnNPQWJUOTZRSW84S3BjeWFGRzJGXzZUd0x0b2ZLN3VZOF9mU28tNHE3QWdYNWlzODV4VFhjSDNRTHptM2dRVWdkR1E?oc=5",
+      "outlet": "UDN",
+      "outletUrl": "https://udn.com",
+      "published": "2026-10-28T10:04:49.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Kawaguchiko murder case: \"married after knowing each other for 2 months\"; Chen Yi reveals one detail: didn't dare act with rose pupils and bell-shaped eyes",
+      "about": [
+        "JP"
+      ]
+    },
+    {
+      "title": "Fed利率決議前夕！美股開盤小漲 台指期夜盤震盪翻黑",
+      "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNVl9WMFNPUVV4YUV5d0pCM0lRdkt3Qm9IRFVFc2RZTEdHcXNHY2lvUWVfa05PSmFpNjc3SXdvSmtJcER1blN0UWY1ZE1hTldwRldqRnRVaHk4WnpRSk9la05wdEpFQ3RpVmlCYml6eDBIeGtPYWZWVllIbkw2a0ZyaWZvSzVoOEtZa3hNWmFHajBaVVFhQ2tPMUNVSHFqTEdkQldpTkFZSEVwamE3SWZOUVJxOXFrdURSTG8xanN1aDd3dlhPemtCekI1enExa0F5amUtQ2ZsYW1YdktfRTZiXy1xSDlLVFB6UHBrOG92OU1rWHgwVkljVGJZVGM3U1VBQnhFQUV6NFpIb1d1QVdfLXdfMzgwaVFsWGNUb0g3UTduZm90dl9fTTVfQVVaLTVwUnZBQkRERDR0UFhaREluekR6TTRMeE5RTk5WV3NhaHlxT0N0a2c?oc=5",
       "outlet": "Yahoo新聞",
       "outletUrl": "https://tw.news.yahoo.com",
-      "published": "2026-10-28T14:42:01.000Z",
+      "published": "2026-10-28T14:29:12.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "Chiang Wan-an once unemployed! Shi Fang-heng praises his merit of 'composure'; Wang Wei-zhong: completely different from Shen Boyang",
+      "en": "Ahead of Fed rate decision! US stocks open slightly higher; Taiwan index futures night session oscillates and turns negative",
+      "about": [
+        "US",
+        "TW"
+      ]
+    },
+    {
+      "title": "德州選情告急！川普秀「大船入港」靠台灣拚選舉",
+      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxNMWQ1dFo1dkFMSkJSZVVsTjRNcUp5T00xX0NhLWVvQUpseEN1OE1tV1dDSXJObnJvS08zRzhjd3J3c2RuZGtRVXE3aC1xZG9NWmVEcWM4NkRJc1A2UTN1aU9senFfcFpnOUM3Wll3OE9GZmxIUHh5SEppWHBCNkN0SkJBMmQxb2F1ZEgwa1ZRcFNnQjZRam9XX1k3U1RWNkplbndnVlBjWk1WN2pNYktMNVJNazRWTGNKVTloSXlMMnBSTGhlTzFjeDFKVlZpZnI0Wkd2TTBiNFFEMml2U1kxcTZSbm1Va2oteElQRUwtbWFUa2VHVTNCcmxLUVZNTkNtQy1PLTFYRG1DVkNPUEF1dXVkNE5uSk1LVjJURDBSNWJJbmlWbE1IUG9QWTd3eXU5cml4VHJNb1ZHNnc?oc=5",
+      "outlet": "Yahoo新聞",
+      "outletUrl": "https://tw.news.yahoo.com",
+      "published": "2026-10-28T13:09:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Texas election situation in danger! Trump shows off \"big ship coming into port\", relying on Taiwan to fight the election",
+      "about": [
+        "US",
+        "TW"
+      ]
+    },
+    {
+      "title": "台幣貶破32.7元！賴士葆問「睡得好嗎」　楊金龍笑回：很安穩",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTX3A1Mi1xOGJVN3k4em9QMkhDMkFPU1hrQ2xwWlRJcERnLTlMbFJNNHkzOHJRMzNRMUNIeGdabnFiaEctREhVWmtyRUxiYV8tTFHSAVBBVV95cUxNZjhObnktRkNYRzg4N2lrQzhQeGdNdzJEbHNGbVhzOElqMGE1b1RoN0tBWDVpbDZienE5SjFUdHBxeVExWjNzR2dSNEpudjlBQg?oc=5",
+      "outlet": "ETtoday財經雲",
+      "outletUrl": "https://finance.ettoday.net",
+      "published": "2026-10-28T13:48:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "New Taiwan dollar breaks through 32.7 per US dollar; Lai Shih-pao asks \"did you sleep well?\" Yang Chin-long laughs and replies: very calm",
       "about": [
         "TW"
       ]
@@ -76,143 +182,80 @@
       ]
     },
     {
-      "title": "示警沈伯洋「其實還沒贏」 賴清德：黨公職勿攻擊嘲笑對手",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5Mc1hCM09XS0M0OVFDRl9PN0NTaUpleG9yUXkzSEhlU0hraHB5V3docXZfX2Y4SlZyeG1kVllKZWMyM1VoUkhZeVU4M3U1RmFCa2Y4WUJiTUphaGcxVk1DZ2pmc2EweERIX2fSAW9BVV95cUxQNERuS3BlWS1vU2Utdl9URklwa3Z5cjY1Z2lhMk52cGNUUG5aekFld3dDb3NwSUV1UlQ1WnlYMlNHb1lGSk9kb19zVG1JcVZVUnJuS1l1UE9yZExubFlXZUZnUG9Hb0hNTWM2ejg1MlU?oc=5",
+      "title": "前3季已賺逾1股本！「記憶體大廠」今相對僅小漲約0.5% 外資大砍近3萬張抽回31億元",
+      "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxOUUJjUUdHdnJJWjBmVFl3eWxWRFJ0YmdyOTJrWlhsNUpFTUFrek5iQUF2dHIzcWd2WjBKczBiRHZzdEF4ZlVIZ2ZabVlIb01oVkg4aURrcjRXU1B1dlBhS1J1T0dZd3A3ZzM2Nm54S0dlUFFHaEFXZ2p0S2ExZUtiemNWajlLcXd4bVZBdWRzdHhwVFVWLWk1TnZFMkFWOUtOUmJjVjNvQUh5eVVYRGpNbURwWlVxaTdSMXlCRW5VRTM2S29NdGFlTVkzZTZieW9ROHJTbUdOaS1DZEk2dkt5QlliYUFzeXIyTWZLY1JtdjZfc0N5RlJuUFpBVllrbGM1SVVwWEZza1A4QVZQdml4em5EcTlVOVFyejdEekpId1A0WnZYaEVzVUlwelFiaktKOG5ycjJmdHZiYWFrdE1oaklwcmlwMjMyVGVHaDhDRHV1MlFBcXczSEh1OWxXdFZMR0Y4SGdJeUpPUFFPVnVpQ0JWOGctajNITnpheEEtSlR0dmRGaEVyaW0xWWZzNkt2MUpKV1dKdlJWaTc3N1ZBRDg2ZlhIazFzdzJXN3psMnVZdHBCdUZfbG5rQWJKeTBibFdlM2tlLUJFZXVyeF8wYWJB?oc=5",
+      "outlet": "Yahoo股市",
+      "outletUrl": "https://tw.stock.yahoo.com",
+      "published": "2026-10-28T12:30:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Earned over 1 times paid-in capital in the first three quarters! \"Memory giant\" rises only about 0.5% today relatively; foreign investors heavily sell nearly 30,000 lots, withdrawing 3.1 billion yuan",
+      "about": [
+        "TW"
+      ]
+    },
+    {
+      "title": "被藍營控攻擊「蔣萬安女孩」 李正皓喊告：國民黨全體陷入幻想症？",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1oRjdPcmNTYTc4NDhHVUFHRUhIazZuV3F0OUFfZU1FUWdtWkJzOGQ5SUYtUDdkQjFTOFRfNkRqVTFWUExQZEp1bzFCRFJrMzQ1dnBJT1NtS1dwQmdUZGJHeTRwS2VhOUhpX0HSAW9BVV95cUxPcjdYTkZEWThoekhHZjVwUDZybmFlR2s4SUd1MllncWUzVFNFZmFJeTByaGFtenk2YW1TSnFRR29kVTJJZjJPS3huUzl3NHJKUGdNRzF3ZXBrZEZCNUI3WENnTXh3V2VtQmZaNmg0S1k?oc=5",
       "outlet": "自由時報",
       "outletUrl": "https://news.ltn.com.tw",
-      "published": "2026-10-28T10:44:25.000Z",
+      "published": "2026-10-28T05:09:13.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Warns Shen Boyang 'hasn't actually won yet'; Lai Ching-te: party officials should not attack or mock opponents",
+      "en": "Accused by the Blue camp of attacking the \"Chiang Wan-an girl\"; Li Cheng-hao shouts lawsuit: has the entire KMT fallen into delusion?",
       "about": [
         "TW"
       ]
     },
     {
-      "title": "選後開戰？美軍增派航母、轟炸機 警告波斯灣國家備戰",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82NVJrYmNxU3dSN1dtdFpZQTlVNGQySk1KaWZTZGpXNFd5dS16cE9wUlpRektzVVNSb2Z3bXRFUkxYVmRCU0VZWWlrN0R2QUdPal9R?oc=5",
-      "outlet": "東森新聞",
-      "outletUrl": "https://news.ebc.net.tw",
-      "published": "2026-10-28T08:59:00.000Z",
-      "outlets": 5,
+      "title": "又不管一中政策？傳巴基斯坦髮夾彎 重新允許台灣航空公司飛越領空",
+      "url": "https://udn.com/news/story/7314/9843284",
+      "outlet": "聯合新聞網",
+      "outletUrl": null,
+      "published": "2026-10-28T15:33:00.000Z",
+      "outlets": 6,
       "trending": false,
-      "en": "Post-election war? US deploys more aircraft carriers and bombers, warns Persian Gulf countries to prepare",
+      "en": "Not caring about the One China policy again? Reports say Pakistan makes a hairpin turn, re-allowing Taiwanese airlines to fly over its airspace",
       "about": [
-        "US",
-        "IR"
+        "PK",
+        "TW"
       ]
     },
     {
-      "title": "【美股盤前】聯準會明升息？外媒調查：先按兵不動 12月機率高",
-      "url": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxPRmpoTV9ISTdhR0pKUWdDZEtXMmFfckIyeWo2LXNJb2thME05b2lYTjNoMkpmUlpOb3ZBZkcwU01UUXR5blBpZHVGSTVoUXF4Z1RiWnZtNTRjLWNxUHFRc1I3VUszUG1mVnBldDB3Z3p5MnFsM1hyOE5RLUQyVXU3cS1Wc21wZlB0T1NYSDh2XzRpeHgyZ3JhakJVZmRka0VRRzl1aEZzdnlhU1Nmdlg1UG1fc1hGZGtmMXRwRFctRWRWTjBDZTVueGVuX3F5UWRYNHp4UUJvajRkYU55NHlHY05XQ3kyQnlwSUZ6VFgzcHpqaE5mWW80ZmEydGhjQkE0MGxGZXh1VklnVFNQaUdnZkZDMTZKNUs0SEVKNXBKRWdGb0VlSm16UVRRakdCNndWdFFHYm94eS1Tc1dpa01ZVk1GX2xkLURhaHJxV3o4UWxOSGxiLWNQSVp3NjFwZTNyNEQzQlVib2hoXzduVG1r?oc=5",
-      "outlet": "Yahoo新聞",
-      "outletUrl": "https://tw.news.yahoo.com",
-      "published": "2026-10-28T13:15:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "[US Stocks Pre-market] Will the Fed raise rates? Foreign media survey: holding steady first, high odds in December",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "日本大賽》台灣「冬盟資優生」+1 正木智也榮膺日本大賽MVP",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Nc1dFOUwtN3lkSjE1U0lPUXBELUs3aWdRb0s3MkVSNFQ5aWdScE1sVDZENC15UnIxOEMxaFQ1bEtvb3VqMVI0bUJkMVMyYnN1WFQ2aHlZNTRUZ2YxbDRSN9IBZkFVX3lxTE5XWjlZUnFkX0o1c2I1V0RJRmpiRVlWSWJRTmp5dWRPTjdIWEhwcjNtcldCdVVkUkNPZmN4TVhqV1oyeG9MTWpCWnNaVkNzaXdyLUI2Tkgwc1dVd2NDdmdhdjZFSXlIQQ?oc=5",
-      "outlet": "自由體育",
-      "outletUrl": "https://sports.ltn.com.tw",
-      "published": "2026-10-28T12:53:00.000Z",
+      "title": "聯發科台積電、台達電南亞科…杜金龍抄底它，再給「打折股名單」！國家隊連買10天，台幣轉升外資歸隊？",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeC1BeGdZczVBQWFMdDdiRXI2b3hWR0o0a2E2R29XU0NlTm1fbnJsQXZOeVY4bWd1V0VPVlpoamVwTElaYk5aY1dCZHhQZFRkUkh3S3BYOUhUdlR4WFdVZ2piV0ZRbkFKRXJwTzFXcHNaZVI4MVhUQ0IyaWtHT2l6VQ?oc=5",
+      "outlet": "今周刊",
+      "outletUrl": "https://www.businesstoday.com.tw",
+      "published": "2026-10-28T10:00:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Japan Series: Taiwan's 'winter league gifted student' +1; Masaki Tomoya named Japan Series MVP",
-      "about": [
-        "JP"
-      ]
-    },
-    {
-      "title": "PlayStation雙11優惠登場 《漫威金鋼狼》、《沙羅週期》等遊戲下殺",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE56S1puRGVYUlZOUHRoNDYyWUNldWJOT0IwSDktMXhzYjdJWHJMcFBLeWpfU3B5cUI5cG11ZHZ4TlBVOWtoWTd3UUREOA?oc=5",
-      "outlet": "樂聯網",
-      "outletUrl": "https://leho.com.tw",
-      "published": "2026-10-28T11:46:14.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "PlayStation Double 11 sale launches; Marvel's Wolverine, Ghost of Yotei and other games slashed in price",
-      "about": []
-    },
-    {
-      "title": "ABF指標股又有戲欣興目標價外資喊新高提三項論點- 證券",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51U0pwcFpvdzVZeTJsRWY3SFBxOUJyTV81SEVIQkV3WWdrYUdkM3RDV25mcnJzZWFvUjFvb3FXSko1NnNmUFdvSGdpeEpDV0RTWWYwVXB0eDZaZzMtakdF?oc=5",
-      "outlet": "工商時報",
-      "outletUrl": "https://www.ctee.com.tw",
-      "published": "2026-10-28T11:06:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "ABF stocks back in play: Unimicron target price, foreign investors raise to new high, three arguments",
+      "en": "MediaTek, TSMC, Delta Electronics, Nanya Technology... Tu Jin-long bottom-fishes them and again gives a \"discount stock list\"! State fund buys for 10 consecutive days, New Taiwan dollar turns up, foreign investors return?",
       "about": [
         "TW"
       ]
     },
     {
-      "title": "煙花轉強颱了！最新路徑曝「北轉機率高」",
-      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQTTJYWkpTSVkxYXJpNnRiaEFsVEk5NGNDc3J6bDZ6Wlp5MnJIb3NQWXpGNHZ5aWJJREJDREtpT3RFNE9hZF9OY3VBUVExYWxuMkMzTmpxZEFsN2lZTTRQVXJKNmdrTUk3NTRJNXBCeWZ1bmZYVWY2QXpZVG9RaThuaU43UFRuYldPQWdIVmVrRnFMUUVQTzltRmt0Z1c3dVJTU1h3MkJpelNraU5fZmFrRFZvS2RIVlEzVUpaazNubHZiQTRkSWtzX1NBRGJyRER5ZmNBMkdTbG9lMjhRWFd6VU5lSVZmdkpWa3QtZFJPZ2Zka1cwNWlfbWI4X3VVSDNNX2xhSnp2TXVkeDdIXzJEWW5LN0JSQQ?oc=5",
-      "outlet": "Yahoo新聞",
-      "outletUrl": "https://tw.news.yahoo.com",
-      "published": "2026-10-28T02:11:09.000Z",
+      "title": "天氣／煙花颱風各國預測！路徑大迴轉「一波三折」 專家：直逼強颱",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9GaVVGR0o2ZlVJUkRoOHhiZ3o5YnFGTFVsYVdLbnJycDZLdVhqOXhLMWxONzV6MmlteEV4U0FhRVhXVHdZZ1V6cVJKM0Vtdw?oc=5",
+      "outlet": "TVBS新聞網",
+      "outletUrl": "https://news.tvbs.com.tw",
+      "published": "2026-10-27T23:25:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Typhoon Yanhua strengthens! Latest track shows high chance of turning north",
-      "about": [
-        "TW"
-      ]
-    },
-    {
-      "title": "市政選戰兩頭燒！蔣萬安傳身體出狀況 競辦：先取消明預排行程",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBkX3NCdUhzdEczZG1KLXBWb0VZVTV4cGpwdDVtb3NlZGlXRzU4OHFsaExqd3Jvc2p3WTJFa1RPcm9hVzR4WjNYQWY1TlVnQ3FNUDY40gFYQVVfeXFMT2x2bUZONjV5bDdxRFhmal9BcXVuMTFlU2N3OW5iREFqcDVub0J3MEJ3b3oxWEM1VUJhYVJwZWQ1d3owcTlfZE1jdmMxMW1JaVl4bDRrcDZaYw?oc=5",
-      "outlet": "UDN",
-      "outletUrl": "https://udn.com",
-      "published": "2026-10-28T13:58:48.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Municipal election battle on two fronts! Chiang Wan-an reportedly has physical issues; campaign office cancels tomorrow's scheduled events first",
-      "about": [
-        "TW"
-      ]
-    },
-    {
-      "title": "楊植斗抹黑他霸凌蔣萬安女孩！李正皓開告：我知道你選情差| 政治",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1OSWJIVDluZzZ5NHFVN3JvRGRpRkkzWmxnTDd2WkpLMzNLemNsdThzbExWOGZUdW4tMVc2MUdRNEMwX1EyYVVDbA?oc=5",
-      "outlet": "三立新聞網SETN.com",
-      "outletUrl": "https://www.setn.com",
-      "published": "2026-10-28T07:35:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Yang Chih-tou smears him as bullying a girl of Chiang Wan-an's; Lee Cheng-hao sues: I know your campaign is in trouble",
-      "about": [
-        "TW"
-      ]
-    },
-    {
-      "title": "快新聞／蔣萬安拿槍指前方？「萬安除三害」文宣大瘋傳 網用典故打臉：嘆為觀止",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10cklIem5qX2ZhelM5Rk54X0ZqRWp3MURHMTB2eE5YNVJXbFhxQURKQWFINndadXZBeVNWRzRUYmx3cnNySERIdThfYnJuU19zU0pZVk5Wc1VHN1ZvNmJjbw?oc=5",
-      "outlet": "民視新聞網",
-      "outletUrl": "https://www.ftvnews.com.tw",
-      "published": "2026-10-28T05:03:17.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Quick news: Chiang Wan-an pointing a gun ahead? 'Wan-an removes three harms' propaganda goes viral; netizens slap back with an allusion: astounding",
+      "en": "Weather: Typhoon Yan-hua forecasts from various countries! Track makes big U-turn, \"winding path\"; experts: approaching strong typhoon",
       "about": [
         "TW"
       ]
     },
     {
       "title": "美軍「堡壘」末日計畫曝光！前FBI官員籲快囤3天物資 日英也示警",
-      "url": "https://news.google.com/rss/articles/CBMi_gJBVV95cUxNSV9PSjJPbmQ2RW16TFdTbUQzWmpoNVh3ZWxIcjJJUTRUU2dhQ25Lb0tuVFF1TU9ZV2J4bGlWV2hoTm03RnFTbHp3RjNPVXQzNDNpbG95UXd5R2tySWJkQlE5M2YzaVJwYk1vYzdwMzJ2bFd0cXlNZmFOTjMyVGUzNVFPbnBwLVpVWDBsdnJWRGZsOWkxazltVVRLQVRObnZaaVRwU1VwZFZCSU13RGxLbmZhdXVhZVoySkd0Zm1kWVJ4QzNRdm40ZFlIRzVJbmxWM0J3TTlrVjl5VkVDYmVpcWhRNTNFUUc0SlRjc1NOY0ZGMUZ1S2lGb3NoM0Q2X04tbXQ4NTVqdkFlQm91QVZoMlJiU3RYQnVfN0pzVnpNVmhyeGl2NFZnd0J2TDc1bC1IWGJ5bXJ2T01XT0lqaTRXM05lSGlpSU9yWHhnUFpqa0hsc1NTYXlWSFRaQUpBU3AyYTNUeU5ST2RXNlJuTFpDa0hiVkNMSGNET183MEt3?oc=5",
-      "outlet": "Yahoo新聞",
-      "outletUrl": "https://tw.news.yahoo.com",
-      "published": "2026-10-28T09:18:06.000Z",
-      "outlets": 4,
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5qUFlEYjV2X2d3Ukx5NkVFWWpFYnJRLTBNdm9LbW52LUg0SEZndGtjQmhqZTN3SERmLUNYWnlOV212QXRpZjVDMlVUSndFLWNZ0gFWQVVfeXFMT3Jsd19MTlpfRVE4M0NWWXY5a3diY1RtcUFrYURHWW1Id2NxRlZ1bWhUZlhyYjgtWGFWXzI3XzVuS3ZHMTNkRk5BbnlwZXJCdGFIUFR0ZFE?oc=5",
+      "outlet": "UDN",
+      "outletUrl": "https://udn.com",
+      "published": "2026-10-28T06:25:18.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "US 'Fortress' doomsday plan exposed! Former FBI official urges quick stockpiling of three days of supplies; Japan and UK also issue warnings",
+      "en": "US military \"Fortress\" doomsday plan exposed! Former FBI official urges stockpiling supplies for 3 days; Japan and UK also issue warnings",
       "about": [
         "US",
         "JP",
@@ -220,28 +263,28 @@
       ]
     },
     {
-      "title": "台積電聯發科雙引擎催下去！台股大漲939點收復4萬7失土電子族群揪團衝鋒｜Yahoo財經掃描",
-      "url": "https://news.google.com/rss/articles/CBMimgRBVV95cUxPZnFhSy1uWE94VjI0LVlpdkczVUtxRUVqSjRLSFBrSnY5M3RkMVdPdnZJWDBzQmFqYTdiVGxVMjdtdVNHWlR0dmhXZlRHUGJvdEQ1eWNtTE1YYzFVd1gteFpjblNYOERJS1huQnFiajlDWDJicElBZmowSTNMNlY5NXRjZHBSWk9aQkw5OUpKdEFXdDZJbXd5bjY5MXB6UTh4dTZxUnRpSERnSXdET0NWdFBlYXZiUUc1cG9WMllab2xVa21OakVxeUNONHNMalk3UmxIU3JSZU0yZEdBMG4yMDZjMXBJRDY2OWdydmtIWThHeGRoTUVLaVVLV1RLeGtPMEx0ODc4RGd4dUU5T29URmQzRWVMekN1ZkZEbVFmRzhVbVZFQ1pJd0dZMVgxSDBnbFhoOERzQTZmcjRVTzdjM1drYzNJRkNhTko0RERkenBRVjlKOTlkanlBNDNkSUR2dVZudG1kV3poSVRXZWNLZE5NMlBhMTRCVUdLdUVWcjF0a2FxOEJaNVFPWE1KVmtvdkhzV2E5Y0EwZjVPallNZGxubXdmU0IwWV8yM2xjYm9CWkwwai1fOEVLY1VTOHI0NVJuYl93elA3R1A3UUxUcmx2dnQ2Y1pjVlpTLWtKUmRuM0JhWlhtMkdfWHlKV0lseVB2NElGVHROdkNuRDlDUEVOaVhLeTdUT3R4V3Fjc2UwbHdSQUY4TThB?oc=5",
-      "outlet": "Yahoo股市",
-      "outletUrl": "https://tw.stock.yahoo.com",
-      "published": "2026-10-28T09:15:10.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "TSMC and MediaTek drive the twin engines; Taiwan stocks surge 939 points to recover 47,000; electronics stocks rally together｜Yahoo Finance Scan",
-      "about": [
-        "TW"
-      ]
-    },
-    {
-      "title": "《狐與蛙之旅》公開最新宣傳影片預定2027 年春季登陸Nintendo Switch 1|2 平台《Kitsune: The Journey of Adashino》",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4tX1FwSGY4QlJnNnhZcmhBOFd3THBtVXdaRDZmZk96VWZTWVh4SjhyYVBuYVdVWVNIb2NZWU5NYTEwV1J3T3VHOHltMVBHY1cxVnNIOUhuN3k?oc=5",
-      "outlet": "GNN 新聞網",
-      "outletUrl": "https://gnn.gamer.com.tw",
-      "published": "2026-10-28T15:22:04.000Z",
+      "title": "一鍵清理非最愛相片 原價 US $0.99《Only the Best Photos》限時免費",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdURGaktSSThKcmN4eXN1cEZqQXZ2eWdPVE9UYUdQcXFNU1lVSElqVS1Vel9pY09RMzBRbjhlVFU1TjhHVXoyMUpFLTl5WFp4RnpBbmJ0VWhjbUd4cUE3RGVaX2hRZDVQY2FaLVBYMy04TWRiZkNqYWtBcnp1NUVuekY5eHVDNFRLd290aGNUMXdCU0g1dldnbUZxV0RLX0Vo?oc=5",
+      "outlet": "流動日報",
+      "outletUrl": "https://www.newmobilelife.com",
+      "published": "2026-10-28T18:46:56.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Kitsune: The Journey of Adashino releases latest promotional video, scheduled to land on Nintendo Switch 1|2 in spring 2027",
+      "en": "One-tap cleanup of non-favorite photos, original price US $0.99, \"Only the Best Photos\" free for a limited time",
       "about": []
+    },
+    {
+      "title": "日本大賽》台灣「冬盟資優生」+1 正木智也榮膺日本大賽MVP",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Nc1dFOUwtN3lkSjE1U0lPUXBELUs3aWdRb0s3MkVSNFQ5aWdScE1sVDZENC15UnIxOEMxaFQ1bEtvb3VqMVI0bUJkMVMyYnN1WFQ2aHlZNTRUZ2YxbDRSN9IBZkFVX3lxTE5XWjlZUnFkX0o1c2I1V0RJRmpiRVlWSWJRTmp5dWRPTjdIWEhwcjNtcldCdVVkUkNPZmN4TVhqV1oyeG9MTWpCWnNaVkNzaXdyLUI2Tkgwc1dVd2NDdmdhdjZFSXlIQQ?oc=5",
+      "outlet": "自由體育",
+      "outletUrl": "https://sports.ltn.com.tw",
+      "published": "2026-10-28T12:53:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Japan Series: Taiwan's 'winter league gifted student' +1; Masaki Tomoya named Japan Series MVP",
+      "about": [
+        "JP"
+      ]
     },
     {
       "title": "Apple創作坊11月大改版 Final Cut Pro整合MotionVFX、AI編輯功能升級",
@@ -255,145 +298,103 @@
       "about": []
     },
     {
-      "title": "台灣經濟成長贏南韓、台幣卻比韓元弱 楊金龍點出關鍵原因",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBDcVNzOTlMUUl3YTBiaFNROTJIcGhicW43Um5XZlZhSjJQbE5kS1dtY25LdVNXQllkcnByQW1BQThJbGRRVGJLMDVLaC1JYVVI0gFWQVVfeXFMTmFDMlRVM19OM01BRTJldGRDQ3dTM084RU1TRW1nbGNqd1JlLUtPRVpidXB6X1FUREdKMEp0LTd6cWtNcnBraWRsYk9CaEN2c2p4M2JuUFE?oc=5",
-      "outlet": "UDN",
-      "outletUrl": "https://udn.com",
-      "published": "2026-10-28T07:33:26.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Taiwan's economic growth beats South Korea, but the New Taiwan dollar is weaker than the won; Yang Chin-long points out the key reason",
-      "about": [
-        "TW",
-        "KR"
-      ]
-    },
-    {
-      "title": "新北三峽公車事故！65歲婦遭撞捲進車底OHCA 送恩主公醫院搶救不治",
-      "url": "https://news.google.com/rss/articles/CBMinwNBVV95cUxPNzgwaFJQazlESjRmM0EycWRkczBhSnBXZndHaF9td0NvcmVmcTlNeG1nTnNNWDZVTWtyTDV1UDI5UTMxcy0xRmR5UVVEMkxZYVZ0UVhoUGprbVp5QzViOTIwaFpOUUFLdUZ4a2FWbmtNLUVQV3draDl0cGVKdFlzWXVmQmprenplZm1pWWNJeDNzTmNiSExKLVJfVlBpRHJULUgxd2lLdUt2d3d5YmhRMnBqWGdPMWlpX0oweTkzcktkOU5xbEVGVEtoRkJFck9XQVhRU1hDMVNMZmdhNHpqRmNBcVFCekN6QXA1YUJKVlpWeVpxTFYyRWdqTDFwelhxRHJSZ0hjTEw0QWJFMHFSVVBuV3ZETUU1Y19scUZ2MEhub0FCTmVUam1Eb0gtU0NhVUo0WDJPUDZhTXpGRUF5c1I5MEhsNUlTOE5JMWMzQnZSU2hPeVNqLUJGbWg4YmV0Z0o5UDBKZ0dGSjZVY1czXzlzeVc1MlBUaTlYOWtLX051dGFmS2VqRlhwczBZQW5NUzJGak1hQ180V2RQb3lZ?oc=5",
-      "outlet": "Yahoo新聞",
-      "outletUrl": "https://tw.news.yahoo.com",
-      "published": "2026-10-28T12:59:00.000Z",
+      "title": "NBA》拓荒者開季持續不敗！Morant強調防守決定勝負 直呼與Lillard、Avdija合作「非常有趣」",
+      "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxNMUlIVTQtczBIMHdhZWhzVWdvS0t4a1NLWXJJQ1dsOEtBMTNSLWU4X2hTcTF4WTZTdDFOMWlVMUpoMWJkeG8yXzV0V1Y2Mjlvb0lYMm5ySk1yVkM0dFNhZW5RLVpjRGJ2cmJHZ0tCRGg4dGZ3MVBrT21UVmQ5ZmNoWm1Mb2ViM01zb2R0TjFtV1RoemVrVmppcnBxUmFvSVhWdHNaM2xQTXpfTkpySkd1VFpMeVpSRXJZLTFSelhnUmpFaWxfZE1JQjQ4VGxnQUVSSFhNc21HLXBvTmluRDNfQ3lmc202S3g5NVIxd0NwY2piRW5VcEJFVFQ4Y3lVbnJWNkhqN0ZVTG1rNWE5T0JnT1hWNUZrUko3bFppd2E1aFkzY194WGszYkh0eHhaUURPUmMwT0dkMlRvdkdKVldGeVJxZ1pjZHJQcS1iTnFOeGFhdWhqRHExUGQ0ZmlkUDlMd1NpUTNNMUswOFgtcHZPNFRRZ3htb25uaTV0Z2dWVG1tYjZULVZr?oc=5",
+      "outlet": "Yahoo運動",
+      "outletUrl": "https://tw.sports.yahoo.com",
+      "published": "2026-10-28T12:12:09.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "New Taipei Sanxia bus accident: 65-year-old woman hit and trapped under the vehicle, OHCA; sent to Enshen Hospital, failed to be revived",
+      "en": "NBA: Trail Blazers stay undefeated to start the season; Morant stresses defense decides wins, says cooperating with Lillard and Avdija is \"very interesting\"",
       "about": [
-        "TW"
+        "US"
       ]
     },
     {
-      "title": "真相太殘忍！為何不罵沈伯洋？喜劇演員坦言：蔣萬安比較好做",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HNTJYdmdGeWFwV0prR0lyOUN2cG9wTjJSNlhuN0d2cmFHU3JmUWRqQzBNc1hhX2JKWHNoSE5zYTFOMlJiQXBrNGxzZkFKWUpJbGhBWktNbFJmeU9iV01GdnpHbERheDdxR3fSAW9BVV95cUxOcmFPNFo4c0NmcE5vT3VyLU9aTHFmRENkRDhRLThsbGlfdUx1WmdrZW5WU0l1LUR5ZUxpekNmcnBqaVkwbnp3aXNqZzNNYWJ0ZFRvdnB3NEJTMng3RDhrQjdWaWEwNnowSS1Vc214a2M?oc=5",
-      "outlet": "自由時報",
-      "outletUrl": "https://news.ltn.com.tw",
-      "published": "2026-10-28T11:59:55.000Z",
+      "title": "劉延東逝世：「紅二代」「團派」背景，政治局裡少見的女性身影",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8xeWxzVUVZZjN5Tnk4OWZsLXlZM19RNnhPaExjQjBUY0VKbGw2MWZqN3BNbWhMd1VCNkRKdkF3aG5rS3NIZ3JGclNSSlNwR0hrVFV6UmxlblZtclhoWkJsODBab3dYYm_SAWxBVV95cUxNcmcySTFfNUJqbzhPWjcwQVpyVFJic1dfdnhDR3gwVzZjU00yVy16bnRkbW9RMWg1c29fcVRhMnJhY0hiV2RoZDFYYWFZbG4tMjd1dnlHSEtQSERlZXFVOXFlUDlrN2xEQ1h5cG4?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-10-28T15:05:42.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Truth is too cruel! Why not scold Shen Boyang? Comedian admits Chiang Wan-an is easier to handle",
+      "en": "Liu Yandong dies: \"second generation of red\" and \"Youth League faction\" background, a rare female figure in the Politburo",
       "about": [
-        "TW"
+        "CN"
       ]
     },
     {
-      "title": "彭博：巴基斯坦支持一中政策對台灣航空公司關領空| 政治",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBYRGhCTlI3cEk0VUFEX2dGQ0tpbWJZMjM5dnJRdEt6MVVZUUpfS0pZVGhzWURiOVpMZ1doOEZpaXZCdnhjZkRtd0R2MUhxLVc1Mk1RM0tMRnBfcTlQcGJn?oc=5",
-      "outlet": "中央社 CNA",
-      "outletUrl": "https://www.cna.com.tw",
-      "published": "2026-10-28T09:07:00.000Z",
-      "outlets": 9,
+      "title": "PvE 卡牌遊戲《 一回殺 One Turn Kill》登陸 Nintendo Switch 1|2 平台",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB1Tk5VM3NJUFVGYWNPakpuemVHaDRpS1pCVENUZUJiTmNmTXgxaXZpOFVMS1J4TnpnQXNTYTBibkx1bGFOMUl3NE5tNXlKXzBIdVBhaU4zTkU?oc=5",
+      "outlet": "GNN 新聞網",
+      "outletUrl": "https://gnn.gamer.com.tw",
+      "published": "2026-10-28T18:18:26.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "Bloomberg: Pakistan supports the one-China policy, Taiwan airlines close airspace",
-      "about": [
-        "PK",
-        "TW"
-      ]
-    },
-    {
-      "title": "以色列大選拉鋸戰：執政聯盟與反對派皆未過半，納坦雅胡的政治生涯面臨嚴峻考驗",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GdW5MU1pSaGlnTGhtM1l1Y1lxTlFEMldqbGswZGRocjFrTm5LT3lsbVNhNDJZYnlaZ0J0eWllZGtQOWpFc1hFcDdiQjg0MlhIRzRNamtBWDd1OVZtd2x2c3JNMFRUZ9IBa0FVX3lxTE13R283ZWY5SXZsT0sxcER6amtHWG5NZnBSbWlHa21wU1VKdko5ZmlaYThzNlVERkxiRUVKa0daV2VhcndJaWttbmdFcEJoNmltbkNJTEpYY1VEbFBHZmpsQ1hxY0haeXZCOTNR?oc=5",
-      "outlet": "轉角國際udn Global",
-      "outletUrl": "https://global.udn.com",
-      "published": "2026-10-28T04:34:40.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Israeli election tug-of-war: the ruling coalition and opposition both fail to reach a majority, and Netanyahu's political career faces a severe test",
-      "about": [
-        "IL"
-      ]
-    },
-    {
-      "title": "NBA／拓荒者靠3分退湖人 里拉德談「Dame Time」慶祝：非常享受",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0yQzM5SnpXOEJLSF9sR2s3dV9QVF9JQXRGZmRyTnQwd3loLTBLRmYyQ01HSzloSFNUY0kwRFllUWlNelA0SDlmWnJGR1NTWGtj0gFWQVVfeXFMTlN5RFVsT2E3SDZhSkI3a2lKNUIwMmZUMURGT1BGdHFfZ0hwZlBzYkVTT0ZqQ3ZEY1pMWGVleWtXZXZ4VFdwM1FlMkR5Q19KUWNEbUR0RFE?oc=5",
-      "outlet": "UDN",
-      "outletUrl": "https://udn.com",
-      "published": "2026-10-28T09:08:07.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "NBA: Trail Blazers beat Lakers with three-pointers; Lillard on the 'Dame Time' celebration: I really enjoyed it",
+      "en": "PvE card game \"One Turn Kill\" lands on Nintendo Switch 1|2 platforms",
       "about": []
     },
     {
-      "title": "聯合報民調》震撼！沈伯洋支持度贏蔣萬安4個百分點中間選民、「黃珊珊票」差距曝光| 李瑋萱 | 新聞",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA4NF9DWGdiV0gxX1FKbUdiSmd2d3RabzdIOWFoc2FhVHZqUVJqdlVGMEVDTE9faWR0NExhX3QwZmVBUXJ3TVdsSERIRDdTZw?oc=5",
-      "outlet": "風傳媒",
-      "outletUrl": "https://www.storm.mg",
-      "published": "2026-10-28T01:08:00.000Z",
-      "outlets": 4,
+      "title": "入住飯店「最安全的樓層」是這些 必要時逃得快！專家給足了理由",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9EYnRMNGFYU21TODJOYndDX2M1b1dPTGNOaEk5R1N5WlZEYXlyd2xpVGRVMW43WGJad1A1ZGRiYVpBV3oyU2FEVVdhYjZLenJmX0p2bFoxVlczS1NCM0JF0gFkQVVfeXFMUGhPYUdmaW5rY2Fmd1BHeXJEU2tOa2xmRlBOcGd1SVhCT3pKdXdfYlUxeU45cTlFNG5hRVpZLXdEMzFuODB3cTZhWFAzeDFyV2FBSnNjTEhKOFAzNElRRnJaR1Vvdg?oc=5",
+      "outlet": "自由財經",
+      "outletUrl": "https://ec.ltn.com.tw",
+      "published": "2026-10-28T14:13:13.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "United Daily News poll》Shocking! Shen Boyang's support leads Chiang Wan-an by 4 percentage points among moderates; gap in 'Huang Shan-shan votes' revealed | Li Wei-hsuan | News",
+      "en": "The \"safest floor\" to stay on in a hotel is these; when necessary you can escape quickly, experts give plenty of reasons",
+      "about": []
+    },
+    {
+      "title": "西班牙高鐵追撞暴增至64死 BBC：該國10年來最慘鐵路事故| 國際",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTUldwYmNFLVVVbXNTdlcyczlnUEVvSEU0Ujk0Y3JFREN1c3pJTEhHX0U0OS10S241NXJTNi1MWC1hTUZmU1VrcGo2R3NsTGJpQy13NGtuUmhjekk5bURR?oc=5",
+      "outlet": "中央社 CNA",
+      "outletUrl": "https://www.cna.com.tw",
+      "published": "2026-10-28T14:11:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Spanish high-speed train collision death toll rises to 64; BBC: the country's worst railway accident in 10 years | International",
       "about": [
-        "TW"
+        "ES"
       ]
     },
     {
-      "title": "趙少康9月自費做北市民調 自爆當時不敢發表原因",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WUE9oVEk4aC16amo3bk1mMGYteGE3REJQbWRVd1V6RG1ZUmhIMHZOclN3VTBOTGJ5eHdfQm1HOU9VaEl2dE9laHdCOXQwZU5la3BsQjM4QmZyLVhiVkdEbjRTd1ZJbkxOZ0HSAW9BVV95cUxOaTNmZXlmT3A4UnVrXzBhMF85d3pYYWZUQ3FZelFqVEN1QnhDZnZWaW9Zb3BNYlpvcXhPS3Z6T3FLN3d1WklLZDZJTXFZdnJDMkVnNUU4S29henJodmFNcHhxaGE2VXp5eHlFOEc3SWs?oc=5",
+      "title": "輸了就落跑？涉洗錢又將失保護傘 巴西大選落敗者小波索納洛傳逃亡美國",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5idGhncFk1RUN2Zy1TQkV2aWc4X29qUGgwaXhPamlMRl9yOUhuOTJXTXBFR2NlWXRFbEQ4UnEwOGpOQm83dm4zLXdqZ3o5aTRCVTRNb21wVmVnSFNxenkyT2xHdFZid9IBa0FVX3lxTE82QUpySnh5aGkxRGVMWVgtdkZUNWJtZnFiR2lYOGZzeFdsSmpPWDlRNjVfdnZJSmdxQWg3Z0lLeHJtMDhoaTRWdUpPalM1eFdpWmk2TzR1d1Q0YWRzYkJadWp6Y05aNTBzUTNz?oc=5",
       "outlet": "自由時報",
       "outletUrl": "https://news.ltn.com.tw",
-      "published": "2026-10-28T11:12:09.000Z",
+      "published": "2026-10-27T22:24:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Ko Shao-kang self-funded a Taipei city poll in September; admits why he did not dare to publish it at the time",
+      "en": "Losing means running away? Facing money laundering charges and about to lose protection, Brazilian presidential election loser Bolsonaro reportedly flees to the US",
       "about": [
-        "TW"
+        "BR",
+        "US"
       ]
     },
     {
-      "title": "川普10月3訪德州搶救選情 宣布百萬桶委內瑞拉石油抵美",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4tS3ozSVFrQV9oV0xDaEJtcDFkeFNDbm5NWHkwTFhfbFNQVTRMRTY3a0RGVzVlT1dOaUp5d001cGtWMUZvWHVFTnhsTmxQWF9wR0NOZW1DSXk1SGU4X0VtbkVB0gFnQVVfeXFMTmZXLWhuS0ZwaVJ0ZUdIc1NRcUxPdkhFZHhZbVp0anY5WUs0TWtaR3NTZmdUMzFGZ3JiMFExZC1GanZmSW5fWnBZRll3enFOTlh5aDU0QVlXSlJ6QVFvMEF1VXlDcnZJMA?oc=5",
-      "outlet": "世界新聞網",
-      "outletUrl": "https://www.worldjournal.com",
-      "published": "2026-10-28T10:20:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Trump to visit Texas on October 3 to rescue election prospects; announces a million barrels of Venezuelan oil arriving in the US",
-      "about": [
-        "US",
-        "VE"
-      ]
-    },
-    {
-      "title": "蔣萬安細數任內政策 陳智菡嗆「全是柯文哲政績」盼還公道",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBWRXR4UGcyS1lIdXppa0VvMG9GRmhKQjVnWjJIZm5UalZ3YkFvMGVzMHJYeDRMRkJUaTI0Mzl5YzFLQ1NHVXcyVzRwWXdvbXc2TnVpRnV6X2NqY3drQlQ1Y1U3WHBiaVhiV1lfUWpn?oc=5",
+      "title": "竟比武契奇還挺俄！塞爾維亞「學生名單」勝選後明確定調兩國關係- 國際",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBUWTJnYlVaa0Y3VlozYjU0UU9BcVZKNVFtVkp5TVlvanJ4QUdSV1dQYXRTU0IwZFBDUjdNNGJoOFdoZFlMcHBIYnZud2tvbzdwY0QyLWx2dGpKRDYtVnFnZ2FuNkVUT0RFREhOUW1B?oc=5",
       "outlet": "中時新聞網",
       "outletUrl": "https://www.chinatimes.com",
-      "published": "2026-10-28T10:15:54.000Z",
+      "published": "2026-10-28T13:34:15.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Chiang Wan-an lists his policies in office; Chen Chih-han retorts 'they're all Ko Wen-je's achievements' and hopes to restore fairness",
+      "en": "Even more pro-Russia than Vucic? Serbia's \"student list\" clearly sets the tone for bilateral relations after winning the election - International",
       "about": [
-        "TW"
+        "RS",
+        "RU"
       ]
     },
     {
-      "title": "美國中期選舉是什麼？一文了解選舉制度及重要性",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5WdEwwbmRWS0NtX2V1WmJobkc3TDdRTmR4b216OE0wdUxELVk2X09VNmJOcGVhelV2WVJqcVNDV2pUS3lfYkhKUDZoOF82UXJ3NExHdDBoOTRLX25pOE80bXlYME5LbWvSAWxBVV95cUxQZDVoNTdxUy1aSVBoZ0V2X3VqNTZiTjhrS2s5cFJMZDIwWXhqa1FYV3JkM01hYmMydkRicUdEcFZUMlpSLUh5cUtETW5oM0ljVXR3STdobnNHdEExSHZQclo4ZlFfbFp6bllJWlk?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-10-28T01:14:26.000Z",
-      "outlets": 5,
+      "title": "NVIDIA 發布 RTX Remix 1.6：Minecraft Java 版獲得路徑追蹤支持",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVlg2UVBrUVlaNEpvcnNGZVlQRFc5THRza0ZtMU43M3JkcmdSMFFJb2stVU9MX2RCY05vNlowY0NfN1lYcVFHU3ctYjZsdzdCUHdWM2FxZmt4d01qb0FXVl92WVFyQ2JPMUg2eFZ6UmIwWlExZm9ndXliUTc5WUxvcG5WOGxzU2tJcm5JMVJnTQ?oc=5",
+      "outlet": "Root-Nation.com",
+      "outletUrl": "https://zh-tw.root-nation.com",
+      "published": "2026-10-28T16:37:51.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "What are US midterm elections? A article to understand the electoral system and its importance",
+      "en": "NVIDIA releases RTX Remix 1.6: Minecraft Java Edition gains path tracing support",
       "about": [
         "US"
       ]

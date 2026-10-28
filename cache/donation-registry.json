@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-28T17:04:46.897Z",
+  "updated": "2026-10-28T23:02:19.626Z",
   "fetched": {
-    "societies": "2026-10-28T17:04:46.897Z",
-    "uncr": "2026-10-28T17:04:46.897Z"
+    "societies": "2026-10-28T23:02:19.626Z",
+    "uncr": "2026-10-28T23:02:19.626Z"
   },
   "societies": {
     "AF": {
@@ -2459,82 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~mi-donativo": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T17:37:06.438Z",
-      "chain": [
-        "https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~mi-donativo?_cv=1"
-      ]
-    },
-    "donate.redcrossredcrescent.org/ifrc/nepal-flash-floods": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T17:37:06.438Z",
-      "chain": [
-        "https://donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/",
-        "https://donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/~my-donation?_cv=1"
-      ]
-    },
-    "nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal": {
-      "ok": true,
-      "reason": "donation word \"emergency appeal\"",
-      "checked": "2026-10-21T17:37:06.438Z",
-      "chain": [
-        "https://nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal"
-      ]
-    },
-    "redcross.org.mm/en_US/donate": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T17:37:06.438Z",
-      "chain": [
-        "https://www.redcross.org.mm/en_US/donate/",
-        "https://www.redcross.org.mm/donate/"
-      ]
-    },
-    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T17:37:06.438Z",
-      "chain": [
-        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
-        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
-      ]
-    },
-    "ayuda.cruzrojacolombiana.org": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://ayuda.cruzrojacolombiana.org/",
-        "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
-      ]
-    },
-    "unicef.org/appeals/afghanistan": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://www.unicef.org/appeals/afghanistan"
-      ]
-    },
-    "hck.hr": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://www.hck.hr/"
-      ]
-    },
-    "redcross.org.mm/news-and-multimedia/myanmar-red-cross-society-supports-flood-affected-communities-in-tanintharyi": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-21T22:09:59.986Z",
-      "chain": [
-        "https://www.redcross.org.mm/news-and-multimedia/myanmar-red-cross-society-supports-flood-affected-communities-in-tanintharyi/"
-      ]
-    },
     "ifrc.org/appeals?ac=neygffgqbfhzkb": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2838,31 +2762,6 @@
       "name": "Quenara Foundation",
       "title": "Terremoto en Panamá | Ayuda para las familias de Azuero"
     },
-    "cruzroja.org.pa": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-27T21:08:09.862Z",
-      "chain": [
-        "https://www.cruzroja.org.pa/"
-      ],
-      "blocked": true
-    },
-    "croixrouge-rdc.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-27T21:08:09.862Z",
-      "chain": [
-        "https://www.croixrouge-rdc.org/"
-      ]
-    },
-    "go.ifrc.org/countries/121": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-27T21:08:09.862Z",
-      "chain": [
-        "https://go.ifrc.org/countries/121"
-      ]
-    },
     "cruzrojacolombiana.org": {
       "ok": true,
       "reason": "donation word \"donar\"",
@@ -2878,15 +2777,6 @@
       "chain": [
         "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU"
       ]
-    },
-    "bdrcs.org/bangladesh-flood": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-27T21:08:09.862Z",
-      "chain": [
-        "https://bdrcs.org/bangladesh-flood/"
-      ],
-      "blocked": true
     },
     "local4:gdacs-cyclone-tc-1001338:wck.org/relief/typhoon-champi": {
       "ok": false,
@@ -2979,6 +2869,137 @@
       "chain": [
         "https://go.ifrc.org/emergencies/8013/overview"
       ]
+    },
+    "cruzroja.org.pa": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.cruzroja.org.pa/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "donate.unhcr.org/int/en/panama-earthquake": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://donate.unhcr.org/int/en/panama-earthquake"
+      ],
+      "blocked": true,
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "cruzroja.org.pa/donar": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://cruzroja.org.pa/donar/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "croixrouge-rdc.org": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.croixrouge-rdc.org/"
+      ],
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "ifrc.org/press-release/ifrc-launches-chf-25-million-emergency-appeal-response-devastating-nepal-flash-floods": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/press-release/ifrc-launches-chf-25-million-emergency-appeal-response-devastating-nepal-flash-floods"
+      ],
+      "blocked": true,
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding"
+      ],
+      "blocked": true,
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "go.ifrc.org/emergencies/8073/reports": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8073/reports"
+      ],
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "go.ifrc.org/countries/121": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/121"
+      ],
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
+        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
+      ],
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "ayuda.cruzrojacolombiana.org": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://ayuda.cruzrojacolombiana.org/",
+        "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
+      ],
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "ifrc.org/national-societies-directory/afghan-red-crescent": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/national-societies-directory/afghan-red-crescent"
+      ],
+      "blocked": true,
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "local4:ifrc-flood-8013:humanappealusa.org/donate/projects/emergencies/bangladesh-emergency-fund": {
+      "ok": false,
+      "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
+      "chain": [
+        "https://humanappealusa.org/donate/projects/emergencies/bangladesh-emergency-fund"
+      ],
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "local4:ifrc-flood-8013:salamcharity.org.uk/appeals/bangladesh-emergency": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Bangladesh\"",
+      "chain": [
+        "https://www.salamcharity.org.uk/appeals/bangladesh-emergency/"
+      ],
+      "place": "Bangladesh",
+      "title": "Bangladesh Flood",
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "local4:ifrc-flood-8013:onenationuk.org/bangladeshfloods": {
+      "ok": false,
+      "reason": "published 2024-06-26, before the disaster",
+      "chain": [
+        "https://onenationuk.org/bangladeshfloods"
+      ],
+      "checked": "2026-10-28T23:02:19.626Z"
+    },
+    "bdrcs.org/bangladesh-flood": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://bdrcs.org/bangladesh-flood/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-28T23:02:19.626Z"
     }
   }
 }

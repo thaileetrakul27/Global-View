@@ -1,35 +1,415 @@
 {
   "code": "UA",
-  "updated": "2026-10-28T17:04:46.897Z",
+  "updated": "2026-10-28T23:02:19.626Z",
   "articles": [
     {
       "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa0VvWDZIUEktNHVFYTh0WktER3ZlUnMzeXpKa2FkV2I5YkhONDMwNzBjVXpQemlDN053Y0FFUWhzMXB4ZTREMHZQUE9VTEswbG16OFhTTHFITVpVZm9JYUp1TFZvNjIwUF9IdWhRY081X2pOOVdwU29kT3czb3hXVks1QTZVeVVRUlhoN1JoR0hJSUdWN2JuOHMzR1kzZU9MOHpHRGhrS1lkd0t6dDlBRTBIUl80Zw?oc=5",
-      "title": "Guerra, ultime notizie. Ue: «Legge impedisce acquisto gas dalla Russia». Putin su Musk: «Un genio, siamo in contatto su tema dello spazio»",
-      "en": "War, latest news. EU: \"Law prevents purchase of gas from Russia\". Putin on Musk: \"A genius, we are in contact on the subject of space\"",
-      "outlet": "Il Sole 24 ORE",
-      "published": "2026-10-28T16:25:13.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONGFNNE5zaV9NbmRFYzZMWS1qaVRIa2hSUGExbkNrcFNsbmYwYW5qQ0FEZGFkeWJCa2xpc2ljY1ZJRlNUWlZhQnlPY04tVEF6RFFYbm9uYUlRT0dzXzhWa1ZMWjFLLVdRZk9nSEFxc0NfRXVzTmJBckRqSGY3dFU2WlplOTluZWtj?oc=5",
+      "title": "Guerra Ucraina, tiene la tregua a Oleshky. Evacuazioni previste da domani. LIVE",
+      "en": "Ukraine Russia war, Trump: soon meeting between Putin and Zelensky. LIVE",
+      "outlet": "Sky TG24",
+      "published": "2026-10-28T22:32:58.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Md0hZcGJUZXh6UzgtdmhYMkFMUExlUDVqVEtfeGtaUHJ6RGYyVDhoN1lQcU51VXRXSjRuSnVpdkNqck5pd0tTYXFKVUdIVW1LYklnSEk2c3Z1ZkxtbzVwX1IwbEFRQjcz?oc=5",
+      "title": "国际新闻早知道丨西班牙列车相撞事故已致68死 俄美乌三方谈判日期将公布",
+      "en": "Morning news roundup: Death toll from Spanish train collision rises to 68; date for US-Russia-Ukraine trilateral talks to be announced",
+      "outlet": "央广网",
+      "published": "2026-10-28T22:25:50.000Z",
+      "outlets": 10,
+      "trending": true
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaE41UTYwX1p2cGdGQ0RJUWlvRDRRYVFRR0FGNzNvOG5oMWlkSDBGdHY2UFAyM2s1UkJUWnRCbzRnQURKSFdlZWtTMUNoN2lxbjF5QU5uUXRuYUFxYjJWVkR4RU1YblVqZmQ1akFxSGEwYmJKU3RJZVYySzB6U3pyZGxQMTRjU0VvaEItb1lraUJvT284N1hBdmJiOERfUQ?oc=5",
+      "title": "Zelenski, atac devastator la Vitali Klitschko! A dezvăluit de ce nimeni nu vrea să preia conducerea Kievului",
+      "en": "Zelensky, devastating attack on Vitali Klitschko! He revealed why nobody wants to take over the leadership of Kyiv",
+      "outlet": "Prosport",
+      "published": "2026-10-28T22:06:12.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOUxxMk9sTzVyUTQtSTdmNW1TOWZFaHhpS2IzRTFZNFFON203QzRPZlBQRTFKX0szYVlYSnZ3S0YyRk9GdjgtYWxEYUUwRFFZdk5yZzNmMkJQb3FqeHdIYm1aQi15VW8xUW9lbU1zV0FtdHJZUDVpUnVtdnNtRkhyRjlkMkZSUERIXzV6bWw2WVg5aElkZGRYQlpoTkZLVUhfTW5fVkNDRy0?oc=5",
+      "title": "Lielbritānija sniegs Ukrainai papildu atbalstu 10 miljardu mārciņu apmērā",
+      "en": "United Kingdom will provide Ukraine with additional support worth 10 billion pounds",
+      "outlet": "tv3.lv",
+      "published": "2026-10-28T21:46:48.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "FR",
+      "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxPdG55V2d4dEZaUFFQR0VBYU82N3ZMSlR0VmFLem52MVBRV0R4TVJaSUkwMnBHZDl2X0h6M3hLa1RvZ083VTY1Q2h6NmozQVpzaXIwc2o0Wk5JVXZqMG5vd29uTlYxX3A5SnRHRFVDRDd3a05hMDVLQ3BCMXZlOTNqMnNCajdySjlzaTFFNU42TW1pTHgtN2s1V3U5RUhtSEFCV0JFa3l3UmFid3ZSanZGYlBnQjFOMTVRZzZ6RzFrRk5sQ0g4bGUwQ0JXSERja1VyczRKaUMydDBFSExRWS1PQzJLTlN5TUtGNk1rbU15ZUpMNlhmTlVKTTFPMU5fWVA4WFJOaGxQUjBsV3FpYmVBVFo1WG5aeE84NnZGZzdqVkRuVUU4WldrWVgxMnQ5TGlzbmVhOGR6dmdZLWRUcmVYZE5ZbUpYZ1gtT1d3VUxXMUlSM2NEZTdpZEduQlphQVRWRkE?oc=5",
+      "title": "EN DIRECT, guerre en Ukraine | Le cessez-le-feu à Olechky est un « immense succès », selon Volodymyr Zelensky, qui appelle à une rencontre entre Moscou, Kiev et Washington en novembre",
+      "en": "LIVE, war in Ukraine | The ceasefire at Olechky is an \"immense success\", according to Volodymyr Zelensky, who calls for a meeting between Moscow, Kyiv and Washington in November",
+      "outlet": "Le Monde.fr",
+      "published": "2026-10-28T21:26:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPa0pYSGw3dVZZWWgtRTVIdU9nWXlpR2JaYUYtcGZMTEVTYndWdXROTUh6UE5PTzJUMDVucHBCRXA0dno1RGJBbXdZM3dVbHBaZUNWR3lhNUxpdF9OY2UwdUVDYllpVUZQSWpLNG40ZDNJZHNOOHAxbE9mZlVzMWVhblVUTmx3VFkwZkFDckZjd2VFYnFZeGJJT3V4UnByb0I3X0ZEc1AyTl91SHIwYTVyNTZYc2lZek5DZVE?oc=5",
+      "title": "Przełom po interwencji Melanii Trump, ujawnia kulisy rozejmu w Oleszkach. \"Putin bardzo chciał\"",
+      "en": "Breakthrough after Melania Trump's intervention, reveals behind-the-scenes details of the Oleshky truce. \"Putin really wanted it\"",
+      "outlet": "Interia Wydarzenia",
+      "published": "2026-10-28T21:07:16.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UG",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92X1I5ZHlOMzQ3dXpWa01LYUlHOEcxN0VZMHdBRjR3TVMwRTY1T1NzeGhneDZJcnlYdi1IUEwzYjBHRnZjd2NyeS1TWHpxZno1MGFXTjhLUkxMZDEwSVFsenMySG5XUnhEOHBGbjlqVnNjNE8xdFR6bDNiNWw0cE0?oc=5",
+      "title": "11 Ugandans declared dead in the Russia-Ukraine War",
+      "en": "11 Ugandans declared dead in the Russia-Ukraine War",
+      "outlet": "NTV Uganda",
+      "published": "2026-10-28T20:55:06.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQY003VEFyTU5tajA3Y2NSSnh3MXMyWVBxY2FBd1JITExvRmM4SE5kX2dXOWZKUTY2a0I1RmxNaXM0R2QyZGMzbF9PTV95eXN6ckMyRTdFVjR6OE1xcDVUdi1hUEdiR1MtSWtBYTZUX1BUUTBzRjRvQmVKb0MwOF9nVkRoX25ualY2SzBKeUFwYUpzZDVCVGN3TjZ0QnVKQ0MtVDlMaTdlZk5LQQ?oc=5",
+      "title": "Zelenskis papasakojo, kaip reaguoja į Trumpo pasisakymus",
+      "en": "Zelensky describes how he reacts to Trump's statements",
+      "outlet": "Delfi",
+      "published": "2026-10-28T20:50:10.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOHQ2dWpRSGF3WjhkU05fWVBUbi1LUlNaZ095ZHotbEM5U20yaFBmaDZfSTNvVkdlUkg1UTROV2s1cTJ5N0Y3N2g2WlZfRFVsb1ZfcEpwZFlnT0o0cW9TMXBHQzRzWnFvVDlXcXBWaWRVS1ljMWVmRXY1QWZEcUZ2bjl3NVJpQkVBRkFnSXN6TTXSAZYBQVVfeXFMTVZ0bHloa1hqQ0E1WjN0cmFPMlNuS3AwaS1nTzlmaFZ1TlV4a3dDajByelhsMzVhalI4RUJZY2dRajVJRk5vNl9BMHhyY3pOeHZiQkluaU5jdmlBT2UweWVHalczUGF1RF91clpXZjNqR3FyX2l3OXZSQS1sZFNjZ0diSXBrMkVqYUxnRHdVT3RWSVB1QndR?oc=5",
+      "title": "На Западе назвали отчаянной ситуацию на Украине",
+      "en": "In the West, the situation in Ukraine was called desperate",
+      "outlet": "Lenta News",
+      "published": "2026-10-28T20:41:12.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWFFWampVQ3JrV1NSTldPUkNlVVIzMWFMaHpZd00xelB0bmtWTks1b0hIR3lYOTl5TTVrUTNRdnRsWHloR25zaUxFQXBaSGY5cFFyRWdqbUM1NHFxaE9Pb0ZpeEk5YXlfeHpyQ05rMUhjWmdfeHZURW5WSFpMQXZ2b0ZpN1ptWExlRVJTMzE5eGl3czhSQzFGejFzaERkWHF3a3FnSjNHY1JDSnFOU21CRVkxLTg4ZThzeFd6QTdfX2d4d0RUSHE2b3kwR0tFV2RFZ1Vwa0ZBVlVaUk9aU2xNVXl2dll5QXRCVVpB?oc=5",
+      "title": "Ucraineanul căutat de poliție pentru sabotajul de la CARFIL Braşov a fost arestat în Polonia şi se opune extrădării",
+      "en": "The Ukrainian sought by police for the sabotage at CARFIL Brașov was arrested in Poland and opposes extradition",
+      "outlet": "Libertatea",
+      "published": "2026-10-28T19:48:06.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdFVVbEVOOFdXVWUtVGw2SVgyTko4MGlZY0Rld0RScWRTV1BJSUhORjhxTHV1RG95b1IwalhSd09IV1RLbm5VSlRhTHpNTlg5UnV4SDZnTXJfcGVRa1BWdWRSZUg0aWhBTS1EYjN3emdzTUNGZ2tPdHZUbmVKWTNHZFVwLUUxQk0yXy1zWkUwN1JicXRrZ01JdVl5MG1NVVhFWkxzQWNacHdjaFZfOW9rQXN2bklSWUszR0NScmlEVQ?oc=5",
+      "title": "Kako je Melanija Tramp spojila zaraćene strane i zaustavila napade na jugu Ukrajine",
+      "en": "How Melania Trump brought the warring sides together and stopped attacks in southern Ukraine",
+      "outlet": "Blic",
+      "published": "2026-10-28T19:38:59.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "GR",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA2VVdjUVB2TTVKRGM0cTRXT0xBUVBiTXRSS0V3OTlXUzd5NTF5X3RZRWc2OWtENzVGX1F1cEVaSzd1RW1obnJydW5aN1ByNTBrM2EzcGJnRGNXbmJpZm5OZC1oN3pPcW5zUmwteF9NNm1VSUNXdnZZVGRWOU0?oc=5",
+      "title": "Τηλεφωνική επικοινωνία Ερντογάν-Τραμπ: Στο επίκεντρο η Μέκκα, η Υεμένη και ο πόλεμος στην Ουκρανία",
+      "en": "Erdogan-Trump phone call: Mecca, Yemen and the war in Ukraine at the centre",
+      "outlet": "iefimerida.gr",
+      "published": "2026-10-28T19:36:40.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObnMwcGlwSzU5WFAybDlMWHA3aDZ4Q19QXy1zN0FCaU4xbEtsR1pLSUZ5aHM1a090REd2Rm5zc0ZGTkdhb1c1TVlUMFhXS1JFTUJEUGZBN05wTE9tTTZoejhVa0xOdzUtWWkyUVgtMXlKOGFWbk5kNHpMcWZaanFrVEc4c2JoUDJ4ODdoZzgxeWFNTWQ1WUdHWUpKc1ZPUzJmbHFPbG9YWmxLWXJ4eVhaUlZJMmFBaUU?oc=5",
+      "title": "Повтаря ли се сценарият от Мариупол? Евакуацията в Олешки поражда тревога",
+      "en": "Is the Mariupol scenario being repeated? The evacuation in Oleshky raises concern",
+      "outlet": "Dnes.bg",
+      "published": "2026-10-28T19:34:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NL",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMkV3bTVDQUZUUWVnVWRzZHh1X185VzVhUmlzblBGWkpzcS01eTVhZ3FmakpQLUZ3SmoxSE03bk0xNjdub0xFeTVPQkI2bXdUUTlqUWtoMlQyVmxPeHFYakd1TGZ1X1czX2U5c3J6N3UtZUs4VUJXQTRfaVcyN2Q0ZDRiWktFdFIzaEt4YmR5ZGx5cmFuaEJIV2JaT00xQ0MyOUc2X09YVVBmdW56SmVKdVI1bXZGd1RZWHhMS2ozZ3k5SWJzZ2xaLUhEWnRqcjZK?oc=5",
+      "title": "Hoeveel heeft Nederland al aan Oekraïne gedoneerd? Zelensky’s bezoek zet de cijfers weer op scherp",
+      "en": "How much has the Netherlands already donated to Ukraine? Zelensky's visit puts the figures back in the spotlight",
+      "outlet": "AD.nl",
+      "published": "2026-10-28T19:30:00.000Z",
+      "outlets": 4,
+      "trending": true
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPR3pFZXBURFZLeWdfNjh5ZHVFLXZMbWZQelVBR3lpTVl2Z1hMc3RTU3lhSTg0Sk5UU0pubUZualVSeERra2VHWWpMTl9fY2tlV0FxeWtDVEtya3kxYlhxT3l6YkIzZGJYZ3BVNzJfRmNvdGNWRk1WTzY4MGdmaS1KZWhlZEduczM2cXlmNzV0TVNLQXVkdzVkWUcza3U2RXpnQk0w?oc=5",
+      "title": "Zawieszenie broni w Ołeszkach. \"Do Chersonia wraca życie\"",
+      "en": "Ceasefire in Oleshky. \"Life is returning to Kherson\"",
+      "outlet": "o2",
+      "published": "2026-10-28T19:24:20.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "FR",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVS1FbV80cVNIOVVSVU5zbktMUHU1X0lOeF9qRTB2ejl0dE1ncGxHSFZveDVmTFl5emRDdnBkckJ6dFJiYklxd0RxVlI2ejhZZ3pIdkFzdXp6YVp5eW1UdTF4M0ZaNlRQOWcydjFRRmYwbGpoWERRV0szRXZ3TmpOZTF0SDktRVd2ZUdPUV9IYmY2LUdLcVh4LU5rN25TUmdJM3JqRHQxRjJ2WkxJa2NyM19tVE9iMHBFbFhEUXFmcnh1YVpMWDdOWXZMUnQtQjV6cVplc3JPYlFPQXh5Wmt3Z2lOM01tdjhnMVR6VmRFLTlyNXhfQVQxZ3hzZnh6ZDRRWm9Yeg?oc=5",
+      "title": "Monaco sous le choc : un membre de la famille princière retrouvé mort au pied d'un immeuble, un résident Ukrainien en garde à vue",
+      "en": "Monaco in shock: a member of the princely family found dead at the foot of a building, a Ukrainian resident in police custody",
+      "outlet": "ladepeche.fr",
+      "published": "2026-10-28T19:03:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMnIxRXkxdEtLMUNRR0RGUkdIVmhBTEppUlZ2eWNNQXVkQTlWNG1TcXZYX2Y4TVJJNWdJbmxjdzNVaWNKSXRVRGs0azJUbnZOby02WkNEVnQ4cEZJXzh5dlNqMXZmY3lLR1V2UTVkdDdJTy00dzJ2WWN4czlOaVp0ejFhUVVyLUY4cGoxMzlJQllPQlRUZmFJU21jX2c0RVBsWTZhU0hmTS1LQ1d3SDMtVTVFOGNmbHprUUo5c9IBwgFBVV95cUxQdjV5WTdRVU05TWlzZ2R0WDRWSU55cV9sYTFKak1VTkxIck9zbGZMTDFIOE9DdUhhVzFuRFNrLWFJMkVhY0dGN3k2VVk3cjlKOUE5bVFTQnNwdnJwbjVuYVBpS0tRdlprbzJwd3VZdkZBVTJCdHlleFJPM196bjN1Tk1hM2VsbUxyZlBQcUs0cFZPd2pxWDJ4alFURWptVXFWZXctNU9WZmVsa2tIekQ0Qnk4MGluTDJ3V25sR1RZbUwyQQ?oc=5",
+      "title": "Váratlan engedmény a rakétákért: komoly ígéretet tett Zelenszkij Trumpnak",
+      "en": "Unexpected concession for missiles: Zelensky made a serious promise to Trump",
+      "outlet": "Portfolio.hu",
+      "published": "2026-10-28T18:55:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "KR",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xLVJaN0hKQ2lyb1hNaVdxX1cyaVhOVV8xdmYwb2Ruam5idjQ2N2x5Q3NTSXgyOFo3czV6LXIwV0tidnBWRkZzY25iYUhKR3U4d2wxQXBMQVdDOXZxbm5seTB4N3pxdFE?oc=5",
+      "title": "젤렌스키 \"3자 회담, 다음 달 6~10일 내 열어야\"…크렘린은 신중",
+      "en": "Zelensky: 'Trilateral talks should be held next month within 6 to 10 days'…Kremlin cautious",
+      "outlet": "연합뉴스TV",
+      "published": "2026-10-28T18:51:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSXlLT1pyS1gyY2pVYkFwUkpMdE1fcFg3RU1mbDd4d1RLTlhDbU0wS1k3QlZHTko1c2JDbnA5c2dVaEZMeWpfQ0xoNGpheUltbTRfMzdST2lDZFBoV1FPUmtnaC13YlN1TEpBVktKd2J1S1MwcE5McUEtQ2pUa0Y3VHJyelU0elNUSHl2RDh3MkUyTkFfczNGNG12dlNEQ1lUS1d3aFZRZGpES2docVdjUGFIbENzSDA4eFhmY3JuQkdXLVk?oc=5",
+      "title": "Ukraina gatavojas civiliedzīvotāju evakuācijai no Olešku pilsētas / Raksts",
+      "en": "Ukraine prepares to evacuate civilians from the city of Oleshky / Article",
+      "outlet": "LSM",
+      "published": "2026-10-28T18:44:13.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUGRmMGRfT09TZHd1YXl1YnYyX2tOT3U3d3hIS051NlVwOHlwb1k3Tm5qNjFWTlRqcVdQV2NqYXA3ZTRZVUJFS3AzeW0zQU9Sa2hkMWE5WlhuMGxybWxsNnNaWVd2QXVIcFVNb3QwZlhVak40Qy0xdGdtYXgwajNWck9BWXFRUnN3Ri1r?oc=5",
+      "title": "Ucraina, si amputa un piede e sopravvive otto mesi in una buca. L'incredibile storia del soldato salvato da un drone dopo 491 giorni al fronte",
+      "en": "Ukraine, he amputates a foot and survives eight months in a pit. The incredible story of the soldier rescued by a drone after 491 days at the front",
+      "outlet": "Open",
+      "published": "2026-10-28T18:39:33.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNc0djejM3Y1h3ZnUxMTc0WFVrSjgtQVF4c1NfZlFzRG5ZRUMxV3J5Y3VOdUZpU2J2NnpNOVU5NzFOVl9GY2lzSDJRdV9mX1pOUUotdXNiMEtZdVRjWWhyeW8yN0t4NEJPdVM1aTh2dG1BTkdRZFR1OXM4a05MT3BBVHQ0RXItR29LSmxOUDlPSU5zdmw4TzkxeWliX3VVTkJaUDdDaDFVcTl3OUtXQXJkend3RQ?oc=5",
+      "title": "Ђокић: Нема договора око Украјине без Украјинаца и ЕУ, нема новог Минхена",
+      "en": "Đoković: There is no agreement on Ukraine without Ukrainians and the EU, there is no new Munich",
+      "outlet": "Politika",
+      "published": "2026-10-28T18:34:00.000Z",
+      "outlets": 2,
+      "trending": false
+    },
+    {
+      "from": "AT",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNajJ6VjZBb2dpc0o5MTRqZWVYdXBWSWVWa0NmbVhiM3ktVENOYWxzanJsbEprYzJaR0xBcklLVnVxMFhLUUtlTlgxdEVseFRJOXp0M29YUW94SW9meE14TVFIdGJBMjh2bm90OFF1MlNJaE41YXgxS0tHd3pFeFFtWEVhaGpadWhfVWJLeFhyaVo1SXFhY09jVU5lNE4yZw?oc=5",
+      "title": "„Sehr bald“: Trump kündigt Treffen mit Putin und Selenskyj an",
+      "en": "\"Very soon\": Trump announces meeting with Putin and Zelensky",
+      "outlet": "Kurier",
+      "published": "2026-10-28T18:30:55.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPXy0zblY1TXAyUlJXUndRb295cWRiUGFiR2Y5QkRqNVpzbmhGeWtaUjZVeHJ2cEJ4TERXa2s0NzZ1b2JUdE05Tm9vTDNndDNUVVJCMk5naF9BOVZCdy1RSWdtSGZmOUNBQ0RxaU9NVUJvWFBia2dwWGc4SFhJMTlhZkc5eW9fdGFtNmxKNThUOEhWUWpRaEFyZEJVVEJLdlMtcHRIUWxHVTFTaC1acWd6d2VYZGJxdEdCSkxEdkpuZWZiWlXSAccBQVVfeXFMUFM2M19ZaUkyVEljckJLV01MbWdvQ3NPOFBCZTMzdmpWanVmV0lkYXNpakJxa3BqUm9NTURSSnVlbXdUNzN1LWpHSGVfcURQd1V4VkdmM19NMGZSUzJzLUF6dHhQVHQ4b1l3WnFrbGFaTlhRSUo5TUw3Tmpab25MNGpRUjZoN3NJWUxUU2JlT3o4alBSM0pIT05jQkRUZnY4N1VnU2NmZHhodjZCQzJoNG5nZmV3RW1lZDJIMlFlTGdlSW5kbjhVZw?oc=5",
+      "title": "Рожденный в СССР: Зеленский заявил, что понимает Путина и россиян лучше, чем Трамп",
+      "en": "Born in the USSR: Zelensky said he understands Putin and Russians better than Trump",
+      "outlet": "EADaily",
+      "published": "2026-10-28T18:30:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWFIwLWFMdGMtUGJ6bFJ0b3VqVEs2SFhKZlpzR1NZczJkUk1tTHJZWHowdXhReGxhMnFNVzZ4emFPejdVNHFpbW9tZmx1Vl83UWJGbnloNlhSLW9zaWJ3OTRVdUpnRzVxRFQwNkhubzVoS2VLOHBvUkc4cjNrYUtWbkNGN1NFTHQ1eEt5ejQyMzB0ZlZmZl9HSnFmdUdTNjdXa01Ob25UWl9vMTFZdW02bzNMNDRwZ3dhVU05d01GRDlvVnZiLUR2Uy1sZ0hVNFV2?oc=5",
+      "title": "Zelenskis paaiškino, kodėl Ukraina neatakuoja rusišką dyzeliną į JAV gabenančių laivų",
+      "en": "Zelensky explains why Ukraine is not attacking ships carrying Russian diesel to the US",
+      "outlet": "Delfi",
+      "published": "2026-10-28T18:21:18.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZ1d6VkliLWprbEhFOUxVV1BQTEZ0MnU1Q05BN1dPSGJ0eXVRZHZxc1FyZjA3cWdSWjRsQUJZQUR5S0RmV3htUjhlRVRDOUIzUjc1QW8zREJidTlGM2pjZkNOQUpkOUZFYXRZTTV0Rkcxc2JDVTRJaUZwWEE2TVZZcGVfbmh2NUpKODVNanltRDlaRnZOY3RKeUJoTWpwOE4wdl9yVnNKS2w?oc=5",
+      "title": "Przełomowe słowa Zełenskiego. Zmienia stanowisko ws. żądań Rosji",
+      "en": "Zelensky's groundbreaking words. He changes his position on Russia's demands",
+      "outlet": "WP Wiadomości",
+      "published": "2026-10-28T18:20:14.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbW1GclJmRWlBd0ZvbVB4d3hLOVNReUtmWEpVSHN2WHlqSkoyakNWdlUwSGtQbW5JbUxWR1JOck42VG5lRkc0YkVYYXFFWnlFdUxMd3hSa292NTdFYWxvY2kzeElvejBGczJOSmE5Qmpyb1c1el92YzZBT3I5YWNKaHdpejZKeE1iYkhvbjYxRjUyZ3QtM3lqVGloZjI3blJfSGctNUVQZGpsMjFWV0ZRZjBwVE9jYW9Qc2FBTENEVjMzNVM0SGlGNTR3?oc=5",
+      "title": "TV3 Hersonā: Vietējie bažījas, ka pēc pamiera beigām krievu okupantu terors atsāksies ar jaunu sparu",
+      "en": "TV3 in Kherson: locals fear that after the ceasefire ends, Russian occupiers' terror will resume with new force",
+      "outlet": "tv3.lv",
+      "published": "2026-10-28T18:10:23.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi5gNBVV95cUxNdEN2VjVsVW9wekxOUjFJREpDZzVhMzBqZS12R2NuTjBiSjJyc1NyTzIycm96Qm1nQ2dyeXZRa0dsU2VfSExVTVhtMmpHVlV3V2ZsQ091ZUtRR1l2YTRaM1gxZjd3emhTbnIzalQ2cU81TVp1UGdSc3VadHE3MnkxWXFBRDdjTzdXa19QRU12dDBtLXowVWROeVRocmZ0djNmYlRpYnE4VTNjRG10YktFQWE3U3drd1B6WVNHbThBTFdWX1dxNTZEYWp4VndGY21EZm03S2dNVlpLUTlNQzJtdXVuMDRZRDJYa2l0dWpEdXp1NDFodi1KU3Z5cFJkVHJubXNId3cyWS0zbnJsZTM3bVRkOWpHa0FVTlVKVGhrbmd0b2hCeU9pb2tKUmRndnUzSU9WZDNZOTJPVV84cEpSN3BZTWFIbzFYV3Jjb0JfSVhweEpGVzhxQmVRRGdNM2JyUDNodXRfMUJqZHJLOVlPNTE5QUFiZTJ5ZlhxVGtZR2I1czlSdklZeDhueHoweWpaRXVvbGtNa2oteTYyY0hlaTNGeVphVGtyajB4b3dFZTliMm95ZzJmakpCVERlSUFrLTMtT1c2X3hnS0VvTFYyQVZOREJUb3E2bjVMMERqNHZ1a3Y2dkE?oc=5",
+      "title": "تباين بشأن موعد المحادثات الثلاثية بين روسيا وأوكرانيا والولايات المتحدة بأبوظبي",
+      "en": "Disagreement over the date of trilateral talks between Russia, Ukraine and the United States in Abu Dhabi",
+      "outlet": "الشرق للأخبار",
+      "published": "2026-10-28T18:03:17.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNaVBLN2VwQUR5Um5idE5tYjRLakZOWjJUQlNoZjB6N1k1TUV4VVVCQ09yOFNKYWN6MnU0cU1uRFlRLWhJZXhiczJISGQxS2lVeTJxbzdIaDQ2VFBsNnpzZ1ZTb1FyZE5VVm9JMFp5UDdrWWpzdDBLaVB1YWhiS0U0TWh1RXBwMVB6ZEtJSXpqZFIycThJY2F1TTg5SUdMREI1Z0Q5Zjh2U0NHbE55MUhpLXFXci1rTzdJbHVhTWUtOGdhM0tjdTBjMHhDRnFqR1pNaktpaVdNTWFZS2pCdUFyN0hTVjZVMkFENmxWZ2JCY1BYdnNINjRWeDV2by0wNm5kSFE?oc=5",
+      "title": "Putin îl cheamă pe Zelenski la Moscova pentru negocieri și îi promite securitate. Trump anunță o întâlnire cu cei doi lideri",
+      "en": "Putin invites Zelensky to Moscow for negotiations and promises him security. Trump announces a meeting with the two leaders",
+      "outlet": "Stirile ProTV",
+      "published": "2026-10-28T17:58:34.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8xNzFwc0dKRW5wcnZGNE1kb0RfNnNxY2d6aXlYNFVuNEJkMVE4U2xFMDVNTDlsejVPaTM1V2ZBLTJEaVV5aXNiSl9VNHdZSzNoMS1J?oc=5",
+      "title": "ترامب يعلن قرب لقاء بوتين وزيلينسكي.. وكييف تحذر من «يالطا جديدة»",
+      "en": "Trump announces upcoming meeting between Putin and Zelensky, and Kyiv warns of a 'new Yalta'",
+      "outlet": "البيان",
+      "published": "2026-10-28T17:55:00.000Z",
       "outlets": 4,
       "trending": false
     },
     {
       "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOZG1CMkJhVkowYTlvSU5OUUE2cTU4bjVwUWtKV2tIaXp4VkV4LXZpUU8xeElEOXpPUlpaZWhrQUtOVHhtbG5HelBITHRvdzJacGw2Yk96cTd4cWFYS1FGUmhBNWNkZmJrdTdVTkJlejJjdU9EQVlvU3FJMXhKd005ZEpnZzktSHNQbUZoQ096UlhsZFdCdHoxQjRtVlN2cXJUWWpobldWRGNjLS16N196Y1VrLWFiRFVWWnhLekRjenEwS21qZzRNeHoxVnM4ZFo1XzY4RndLT3JBRGR3WkhYREdSeUlxbFY2TVJUVUZiSHZaUzkxcGtpUVEyZWpVMmJVNFU00gGIAkFVX3lxTE5mVVVIaXVldmxXSTR0eWF6LU9LRTR0cEJ0UmszU2IyMWxCdGJaYUphREtQQUJZR2wzNjJRLU1tanh4cnp2SFRXTkpHLVZ1VUJJVEpLR1Q5QWFqVkQxdXZLX2w1UzFfa25nb1dORWotRzlWeVpzNGxDei00cVJEQi1US1RQdDJVS2sxdjMxM1NiNTFYZXdiM1UzdWkySS1oSjhvYkxGSFoxeEdjVGZSRU9QdFZCakFkSDlHR0NDclBJeFNyM2lNakk3R0NZRmZSRU13MDFGY25KS0laU09QLUU0Q2dpM3VwVDJNblJJMGtHSFdMdmxhb0Zja1pNQXUwM1JBeHBKVEtrUQ?oc=5",
-      "title": "Il cessate il fuoco umanitario a Oleshky regge, confermano Ucraina e Russia - Kiev: due artificieri ucraini uccisinella regione di Sumy",
-      "en": "The humanitarian ceasefire in Oleshky holds, Ukraine and Russia confirm - Kyiv: two Ukrainian bomb disposal experts killed in the Sumy region",
-      "outlet": "RaiNews",
-      "published": "2026-10-28T16:20:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxONFRTYnVvdDg2V055dEVFdzE0bV8zUlhpTWFNdXFZQmdRTUR0RlJsNWhORHNobE1COFdUSFhLTTFKM3JseF9xaVVUNXo3MUR0WVkzME9ITkhBTEhLLWR5UVl1ZDJUS2RUMnpuN05ZSHpjYWRHSXJtV1pERHE0RmpVZlduUHdqWWVDZ3pnYmlhb0ZfVnZzTjExcnlkbi1ISGlxMjZqc3lCamVqTjdyZU54REZwYkltN3ZBcnh6dWZ0ZWx1LTVMU28yTGMxdWtmZG1ZcmE2UkV1Z01mVUJPX1VIdXJva2xaNFkwWGlmVVZvZXg3ZHBySE9NNUVmSnU5amliZFBSaEN4UF8?oc=5",
+      "title": "Meloni in conferenza stampa: \"Il governo non cambierà la posizione sull'Ucraina, con rispetto per la Lega\". E Salvini se ne va",
+      "en": "Meloni at press conference: \"The government will not change its position on Ukraine, with respect for the Lega\". And Salvini walks out",
+      "outlet": "Il Foglio",
+      "published": "2026-10-28T17:46:00.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "IE",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBwSVhwQzI2SnpQZm4wQ0RoVUNoUlZ6Q3hRWHJjaHBlQWVQUTJkeUxkdk9FU1BMUWdWQmE1VkRiV3RtZTFXUmdzU2llZDhNTy1pUnB0YWdQT3lVYmxVVTZYYkF6VU1lcUk5RDBrUXkwMzMzYnFP?oc=5",
-      "title": "Job hunt 'impossible' for Ukrainians with disabilities",
-      "en": "Job hunt 'impossible' for Ukrainians with disabilities",
-      "outlet": "RTE.ie",
-      "published": "2026-10-28T16:08:18.000Z",
-      "outlets": 1,
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNc0c4bUs0ZFI3bXdiRTB3cUNWZGgyYk9LbG53a0dDbDRJX0d6OUk5VmVQOHJsWVJ3eVQtRkRLYXlFMHA5Ymg5LWNnUTV1QjFxYVVfT3k4eUNCQ29JVnFqbFdBN1NNVkY2eUJXM0JyVnEyMm5naEFUd2JKWHRGNWI4R05FSXI1ZS00TkQ2blR2RE10TFR2MFI4YmkyTkYtbDNDeXdKaEtla19CNHFlN2FfakVPemlBZE94eU9ZVlBpbGN3cHVBcW52NjV3cXpFeGtI?oc=5",
+      "title": "Оцеляването на Украйна не може да зависи от най-богатия човек в света Илон Мъск",
+      "en": "Ukraine's survival cannot depend on the richest man in the world, Elon Musk",
+      "outlet": "Dnes.bg",
+      "published": "2026-10-28T17:36:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPX2oyWkpaUG9rSmhLZk9DaC1UeVNxNnpxNkxRVjB4X0VTOXVhdVlUSDBxMDFnTDNWNndyTVBlcHRyUXRPWnVhbnVSRVJsWTJDYThCelRMT2xZcG5IMjNrOGIwZ0Z0MjR3QlZnejg1UVV0SXUxYlF5Y1BYd1laaUgwTnRMd0FhNmZDOFhRd2JOTWItNE8yd3RZbnZXYi01LXNxbElNd2s3UE1WUU92SlFNTlA3bGx3UWhOUllZMXZMUnZEajJzQllXMmZtNUxiUWs?oc=5",
+      "title": "Ukrainos ir Šiaurės ministrai apie saugumą: Rusija bando mus suskaldyti trimis lygiais",
+      "en": "Ukrainian and Nordic ministers on security: Russia is trying to divide us on three levels",
+      "outlet": "LRT",
+      "published": "2026-10-28T17:35:00.000Z",
+      "outlets": 3,
+      "trending": false
+    },
+    {
+      "from": "GR",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOaVloSU9EMFpuTk83R0djeDRqcUZjZlF5RG5BR29xeXJwREl4UnJGdFNNSXpfdmt1R21mUVhnRmFWdEhlX3BPemh6dlU1OTJKV3QzeVROcjZCQVBpZzgwNXpmLXVELWZxNmxFcUtLcDlJYXpFdnZHaDdqZHM2UHlSWUxUbkQtVnptNFJRcFRSOGtVX01QanBLektBLVpZSHp3cm5aT1A4NDNuY2VrVXRkOFZFd2hGMUUtcFBMVnZSS2lPQWc1UGNCNFg4SWk2NUNZVVUta3Boc0l3dUN3bnZ2NA?oc=5",
+      "title": "Πρωτοφανή πλάνα: Η στιγμή που ουκρανικό F-16AM κυνηγάει ανελέητα ρωσικό Geran-4 με Sidewinder (vid)",
+      "en": "Unprecedented footage: The moment a Ukrainian F-16AM relentlessly chases a Russian Geran-4 with a Sidewinder (vid)",
+      "outlet": "Bankingnews",
+      "published": "2026-10-28T17:20:07.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SE",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5aTzhIZ0YwbzgyYXRJenJ1aHlrMndrT1BOTWVyVG9KZ3U5X2xOZXUtMmJKRzRXY0lKbjZZd3JzVTlUOG1yZ2l5OFBEZ3plNGhfQnA1NURwNTI5TU5JYVFVZGZpMFZvcS1nYWN1UEh1dE1pRVYwNEs3cUZ2TWM?oc=5",
+      "title": "Solidaritetskonvoj till Ukraina snart på väg",
+      "en": "Solidarity convoy to Ukraine soon on its way",
+      "outlet": "https://internationalen.se/",
+      "published": "2026-10-28T17:09:37.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQlNNNER4d1BiTXVtZnpGR0JpbmQ2WGdBYk5zTHE0Y3oyUUVHRXZoNlhVNUZkQXoyTGNyTHItVElqelNFcGhYbjBmRDJOQ0hrTGxXcDVjYjhOTW1fS3Z1MW1sTUNBZkFyYnZPMkR2bURvSUZ6dzlVSlp3S1NLSmY1OGY2SmFBaDRKN0ZuVFNSYXU3d2ZHbVNhT2Y1UUl5Z9IBogFBVV95cUxQQmcwQ1pyRDhRcGNMbElxZ2JJU2NTcE56TkhPYzZDOFRkdld4NlpQWXdOWlc3TTdDSmVaY0dEYm9ERWcxcUZ3cjgzdFd5UDdQSVU5UmhmTnpLRFhTUmxUWGFxS2hnWERZNHVrYkJJbjByV2QxV1JrMGpsTTV6SllNZW5hRElpRHN3bnItMl9OV3VyU2VQNTlRUE5sUTFLTUQweXc?oc=5",
+      "title": "Зеленский пообещал не разрушать встречу в Абу-Даби",
+      "en": "Zelensky promised not to ruin the meeting in Abu Dhabi",
+      "outlet": "EADaily",
+      "published": "2026-10-28T16:59:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ2pBZFlnWm9DTnBmUEp5SUR5cVVzZEtnQXItMXhYY0E3SXJ3a2dLeW45S3FOb0hmOE9zR1hnaERUY0phWDl5MzVOVEhOTVNLazlrRkhSeThEaV9BeDQyY18yRDBkZGx1ZGM1UW9LYWtESlZVU1ZVdU52cHhWeE1fYS1JNWlOV3VFZXdfY044TUt6bEI2XzdYM01oQU4zeUdfQ05ndDlOcGFaeGNEQTBiSFdjUlAwdmFHUkNHUnRn?oc=5",
+      "title": "Разворот от Кремля: как изменится политика США после выборов, рассказал бывший посол в Украине",
+      "en": "A turn away from the Kremlin: how US policy will change after the elections, said a former ambassador to Ukraine",
+      "outlet": "RTVI",
+      "published": "2026-10-28T16:38:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNUZfcWgyZW1aSnNhWUx6WmlITFdDRGlEblBaUGRnVDdWZVhzcHZ6N3E3dkRWempIdUlER0w1ZDZRM3hLaWY2MTlxUzdWOEJsaWxBbHRBRUd0UUxjaHNmLU01dkE3VkZUX1BGVGx1ZnJ4TlBXMTZaOGc2R0ZCaWpRUUhzUXFmdF9xVHNnbXA5UTRjM1N6N1doa0JObHdobURLMXlta1RBRV9HcDZlVWQ3OU5CMHpaZWpUNTVJSTZ6U2ZTRDB2Y3Y0MENuNE5oZE8xbFdjUWptd3JuQmQ0NndF?oc=5",
+      "title": "Dronu uzbrukumi apgrūtina Bulgārijas jūrnieku darbu. Latvijas Radio reportāža no Varnas / Raksts",
+      "en": "Drone attacks complicate the work of Bulgarian seafarers. Latvian Radio report from Varna / Article",
+      "outlet": "LSM",
+      "published": "2026-10-28T16:29:33.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOb1lBRWlXT05LMEh1VGFHNlF5TzRzRFludmxFS3lURlBvSkdFZXVvZWVBZGZyYi12TURFZ1N3U29mMkd2cHZJeUVidXZ2d1U4RS0yWEpIN1RUNzVncG1IbXBWYzRQY3dnWm9vZXRXNXVtV1NFQVVZSWI4dzA1OWhtM0stNzN2eVRadFRhVUlIcG5qZmNLM0xvc3dTOFYyTUJxbjEyOXJoZi1LRDlTTkdhTQ?oc=5",
+      "title": "Opublikowali nowe uchwały Lwowskiej Rady Obwodowej. Ale bez tej o UPA",
+      "en": "They published new resolutions of the Lviv Regional Council. But without the one on UPA",
+      "outlet": "WP Wiadomości",
+      "published": "2026-10-28T16:20:47.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNY2hDM2VTWHdjQXpaTkFVdWZyeFV1Y1JnMU0zNVFZNFU1WGZNQ1JSZkZFR1ZSUndHbnAydW9sV01TRDVrVk4wSVlkM0Y1Q1lqel9QRy1CaVQ2cnplbERvNXh2M0xONlI2SkJwRjBYb21uWDBCeUhpMGlMaUxPdUpkNGIyTldkcTVrMG5NeFEyRG1vZ3poMnkyNndaMGlSZW10XzZLNFR0ZnlPM1h0NnVwME5HWjJpQks3Y3ZMc1VEVdIBwwFBVV95cUxOaEVycF9lUVFmYmswNHRuTURlUUlwOXlDSGdjdk1xZlc3UFAwUmUtaFRuZmhSMWttYjF4VnJ3X2NscFFDemRNWXhtM0NFb05IaTZzS2VlYTQ4Nk9HZmh1OGhuUUlmeVRxZl9XVHpQcXZWeFhMWHBsYkktS1oycElnWHpSZ3NIc0Mya211b3dkdGdRLXFsU1lqRHV5M0o5VHB6bno0WFpYYkVPcktTeWpLM0NLZkJyWFk1SmNuc2VyNkgzYXM?oc=5",
+      "title": "Поставили «Точку-У»? В Польше отрепетировали удар по вокзалу с украинскими беженцами",
+      "en": "Hit the 'Tochka-U'? In Poland they rehearsed a strike on a railway station with Ukrainian refugees",
+      "outlet": "EADaily",
+      "published": "2026-10-28T16:11:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SE",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbGFPeWpPSHNuQmNBX1oxNjJ4NlVhR2cwR2lzZmY3R09QUnRwQzVoOTVTLUVnS3drMVh0bk5GdnphWm5jQ2dMdUlDcnZRdTUxaTRtWkdYYl9kc3p5YjcwMTZJUGJ6M2hUTWJuemxyaFl4OGVob1pzZVJxV2RUWWhqTS1mNUFNeFpEcTJWbDhueXN1N2dBUUR4YQ?oc=5",
+      "title": "Direkt – Kriget i Ukraina – Ryssland skickar upp satelliter: ”Musk är ett geni”",
+      "en": "Live – War in Ukraine – Russia sends up satellites: \"Musk is a genius\"",
+      "outlet": "Dagens Nyheter",
+      "published": "2026-10-28T16:08:58.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SI",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNVB2RDY0V0FmdWNDdzJOdld3OXdfU052OHh0Qy14RUV0S2NKMjFrMWpoTVg3Q1pJSUtFOVF1azlxUTc3UHN5elJVLUZOQ0RneVJkdzM5M3ZlTWl2OF9lYlRSYzhPNDBHbDhCMzdwMHVlSXRnT2oxZWJlM0NnZFRfLVFZREcwbHV3NndhRTdjZllmc3ZoQ2hoR2FQdkVLT0tDWDVjMA?oc=5",
+      "title": "Premirje v ukrajinskem mestu Oleški velja drugi dan",
+      "en": "Ceasefire in Ukrainian town of Oleshky holds for second day",
+      "outlet": "rtvslo.si",
+      "published": "2026-10-28T16:08:11.000Z",
+      "outlets": 5,
       "trending": false
     },
     {
@@ -43,23 +423,13 @@
       "trending": false
     },
     {
-      "from": "AU",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQT0luOUNlcng0YjlobTZINmRpcXFDUXBpbkY2Z1hWSkJQUHRRVlI0YWZBWldjakNfaU11dkt6amlSeXQxVDdHYWY1cjZRdGF2WGRsU1V2SlB0OWdSaGcyTjJ5U2RkZ3B0RlBGbVVfdUJKN3I0RmxzVzhZTVpVSUsyVmp4WkdFa3A4WUM3RGJQVDNlamVrNWRvVXhlOEFBZ1QtT1ZvcWg0Sl9VMHpESTNN?oc=5",
-      "title": "Chornobyl Dog Population Shows Genetic Signatures of Directional Selection",
-      "en": "Chornobyl Dog Population Shows Genetic Signatures of Directional Selection",
-      "outlet": "The National Tribune",
-      "published": "2026-10-28T16:02:09.000Z",
+      "from": "BW",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaFVFUEswVXc2S3pUSXVZS0pUS1BKMFhraFVoTG9XS0dyb1Nzek1RcFBjMFVLbzVUNE1HMWxQS3dEMktHbVZpYjRMOVVOdFBKazZ0bVB4aHlWS1Z5UW5YaGg3Mll4c0hxeTd0WTdUdWdDQi1nMlkxVlFRaTljLUotdzR3?oc=5",
+      "title": "Chornobyl Dogs Show Signs of Directional Selection",
+      "en": "Chornobyl Dogs Show Signs of Directional Selection",
+      "outlet": "Mirage News",
+      "published": "2026-10-28T16:00:00.000Z",
       "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMEQ2bV91eGhuY0dYT1E5TmpzNDNpVHNnLVhaUHJQZU5tbjQ0M24yQ1BuQ2JQeV9UY2dUaTZzSWM5UzM3SXhVaDdDOERqWmlHdGlxeDlCb3dCLVRkMURKVFBFYXRfZVU0dEJ0Z2lWWXBrSER1SUYyOVFVaDBiZjg4b2swYkJhOFZJNGEwVGIwbDlqbTJXV3MxYy1IWlk1TWVsbUhEdHBpV25YZGdZdnJyMFdzd0Mzdw?oc=5",
-      "title": "LIVE | Europa doet niet mee met nieuw Oekraïne-overleg, zegt Rusland",
-      "en": "LIVE | Europe not taking part in new Ukraine talks, says Russia",
-      "outlet": "De Telegraaf",
-      "published": "2026-10-28T16:00:15.000Z",
-      "outlets": 5,
       "trending": false
     },
     {
@@ -73,14 +443,14 @@
       "trending": false
     },
     {
-      "from": "NO",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObGYyR1JRaEcwRFhxVDZQZmExV29UejR4N2wwYVZ4QjlubDR1bnBpTlFoc0pTa0xFS2FoTTJtX2JIR1V3cFhqdXFsRU9Zb1lFVU1ZRmRrNk0tWF9tR3R0M0ZCTVBDVExaRjJ5eTBCM05tR1dtWmN6RGZvY0NIeDNfQjhYLXdBR1NkS1hkanRsU3IzU083SXZzUzRTcUdWd0xMc1FUUW5FREhGOGtZZTg5TUpDbm9TQ3dt?oc=5",
-      "title": "Støre forsvarer Putin-samtalen: –⁠ Europa må ha en stemme",
-      "en": "Støre defends the Putin call: \"Europe must have a voice\"",
-      "outlet": "VG",
-      "published": "2026-10-28T15:22:31.000Z",
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFB6TnVMVkpwNXhPU19STVZHd2lmcWZUTjR4b0gtM2FleW9xb1FGbVlFOFhPR0JIcUQ4YU85aTVIVnBrc05C0gFKQVVfeXFMT3plVUFQRDJjVUt5UzZHM1RwV1g5d09MNnpsNlJLa01xV1ZYR3Ztc2FYQVppYjl2RE1Fa2llWGtCY0F4S2UxeUJmUlE?oc=5",
+      "title": "Ушаков: европейцы не будут участвовать в переговорах России и Украины с США",
+      "en": "Ushakov: Europeans will not take part in negotiations between Russia and Ukraine with the USA",
+      "outlet": "BFM.ru",
+      "published": "2026-10-28T15:22:05.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
       "from": "BG",
@@ -103,62 +473,12 @@
       "trending": false
     },
     {
-      "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPTmJsUHJqbkZ1MGNFb3hDQlcyb3ZPTnc3SXdMMkJwX1hmNC1hWVR3c0V6czdqX0t3cEpRYXh2RnFwaEJhS1A2YmUtMWtxYXg4aFl4NU8wYWNaV1NFcEpJTWUzcU9PR2ZmUDZ2NUxHM2VYVi1tUjcyandkOU9iRnJpQjRIcDl0WHZza1R0MnRxQXFvYkxIWThOSl9VYkpacUdDVkZvTzRST25PdWZac2Z6VUNWSlFvWVJhajN0VjkyOGx6ZnN1RlFWcTVlR29xUDhHckNMT2IwR2ZFRG9IX2o1SG9Edm5KWUxhSzRXN2otN253eTdmTThzcS1hR0xHTExQa1Nz?oc=5",
-      "title": "Najnovije o ratu u Ukrajini: Lideri Norveške i Finske obavili „otvoren” razgovor sa Putinom – Kremlj i Zelenski otkrivaju detalje",
-      "en": "Latest on the war in Ukraine: Leaders of Norway and Finland hold an \"open\" conversation with Putin - Kremlin and Zelensky reveal details",
-      "outlet": "Alo!",
-      "published": "2026-10-28T14:53:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOd3JFMURzczhPSlBfeUlteTFTelp1aWhKMlI1RjNzc0FzUWpyN2d4NW0xYTgybnp4SDZQRW9MWFU1alpGblpUekRPVXc2S0dnOXVEN19qX0JFam5idTZOeWJKZFVjRXdYclhZT0pLYXFJR2NnTjJ5TWJnSWV5ckJEV0xIbmZBSDc5SUdvaG9RY2w0SFU5MjZjTExGZU5tV0JicU12eUwyYmw0cW8yb1HSAbMBQVVfeXFMUHhxU0RudVEyWng5aUJ3RTRFa29SSFoySmdOV0t3QURiYkFNekxsNjVkcTNCeXJTNDNTV093U2JCeXFtcFlySDI2VXFIN2t4NjB4Q0FqZjJSc0lPRmVuY1o4bUtSR19SR0F4T0k2cmFTNWtneTRoRTVDdFJXZ0Z5VGw1V2dfeGJTV2NfcWhsRlotWXRvRS14WVB2eW1CcFlvNGFBeDhLYjRGNWtCTURicC1tQnc?oc=5",
-      "title": "Российский боец уничтожил до отделения солдат ВСУ при «свободной охоте»",
-      "en": "Russian fighter destroyed AFU soldiers before they could separate during a 'free hunt'",
-      "outlet": "Lenta News",
-      "published": "2026-10-28T14:50:58.000Z",
-      "outlets": 2,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTUFwem5sRDY2V190WGUzYzFNMi03d1Bqekk1WGtXLWxSYjFjSjlmSUJjV1NMR3E1MXdtR2oxeFFBWkNONFJ1bkN4ek4yUWdPX2VLQ3BGTUNQOFdkOGFMZ3c1d3V2Smt0dThzcl95REtfdG9MZWpRVmtENlRCMTlfdVZWTzlEam9MQXBUekgxdkFadnRXYl9aY1FoQnpGSm1SR0thYVQwUDBvR0NBd3lFLUdmNDRvYXQ0Sm1idmFaVTBoUEZLUUt2TDRxelI2STMySkxj0gHeAUFVX3lxTE5oanlGMHgwdEZXTXBRamdqTTZCWXdnNWxxYno4U1dzZFROQVhMWVBCN2ZtT2ZDTTl6dUNrdWJZUkJaTHJuZHk0WHJzQVRnUHVBam9jby1tcUhrUmpKOVVxMWtENTNITG15dUNPYm40YVgtVkd1UGJlSzBnRUdUU0NpeTA2V2o4cVBpZXZVSlpEQzMxUzJ2anl3UjE2b3lHb1hRYkt4cTN2ZU4tWnhPYk8xbTQxejRvOW53Q1B4WHBTYmNzcjVQR1hYY2tqMS0xZU13YVMyMTEtUjhpcHd1dw?oc=5",
-      "title": "Zelenski, schimbare radicală de poziție în negocierile de pace. Anunțul liderului de la Kiev",
-      "en": "Zelensky, radical change of position in peace negotiations. Announcement from the leader in Kyiv",
-      "outlet": "Digi24",
-      "published": "2026-10-28T14:27:19.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "BE",
-      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQRWctVkNZWkNlMFpidllabEtRX2NmdGpTaGdQRFBxTlFIT2tOMlpNTjdFNW4yQnd0OHhsUlZrSWppOGlqV0hERWVCRjJseExFbXk2LWM3aDlUai1YLTdJX2ZlNDBROWMtZkxZb2lLOGtkSHZJQy1zb2xDbGpSTzNBaUF2by14X3hMYVdTSnMyVi1ERnZSamFkZ3J6WmNkWUdFcE1nd0dPaTN5UWlIYnBWeFJvdlEtX1ptU0JwYnNYLXlkMUxBZGVNTnZ4dndnNUtPZ3ZmVGlpZnEwcUdRTVdnUGJCckVnc2dFZ1RGamF4X1VFNlp6TFdGWDNCX0dfeDVTbFlSMFlzRWNSM1VyUHZuSGlRMzNFanV5ZkVEVGNRMXhnVkZwXzktRGtoQTNmWVdpYXRnZGE1MGxBNW9EYWc?oc=5",
-      "title": "\"Ils voulaient nous prendre à revers via les gazoducs\" : la stratégie souterraine de l'Ukraine pour frapper la Russie",
-      "en": "\"They wanted to take us from behind via the gas pipelines\": Ukraine's underground strategy to strike Russia",
-      "outlet": "La Libre.be",
-      "published": "2026-10-28T14:22:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "MA",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY1BtNGRiVXhRMWZ4bkp1VlRXcUNHanhlN3FBNFhyc3JnUHZ6R3hfbXdhczNaMnVSS3cwU3dPWVlLTm1xWXNrbDdFMGcySWZQNmtkUnloZ24ySElxZFd4OE1xV2NGWkhBUzd2T0FLVWtXeXJDVTRkWFJjZ2ZOWWJHTUl3bW1PbEpEejVva0RWWVlNOUxOUFg3WkJrS1V2MllyekNJZ21B?oc=5",
-      "title": "Donald Trump annonce un sommet Poutine-Zelensky \"très bientôt\" sous médiation américaine",
-      "en": "Donald Trump announces a Putin-Zelensky summit \"very soon\" under American mediation",
-      "outlet": "libération",
-      "published": "2026-10-28T14:15:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQUNGaG9mRnpnY0dPeWNHVVg0WDlHUklrVjl1WTRndVRoZlBFQXlwczZfeXRVMEVuclNYT3JLNkVpakJhMGh6cE9JWWVhNTd6eXFRVnd0Qm9MemJrTXV4MUJBZU1rbi03NE9XSkhXcWJXT3VSRDdla0U3MHhqWkFrQXJBUXlrZXI3SmgyN2prZGJSN0YwZ21fQzJVbTdjRWNVNG9na25LQnhRbWpkNnY5aEdvek1RSkdhd3l2MHktUEplVlhBdDNhQ3VNOVFSVnRYNjBiVElSaDNLdWRTWnMw?oc=5",
-      "title": "Kaviar für die US-Gesandten Putins „Clown“ wickelt Trumps Ukraine-Verhandler um den Finger",
-      "en": "Caviar for the US envoys: Putin's \"clown\" wraps Trump's Ukraine negotiators around his finger",
-      "outlet": "Tagesspiegel",
-      "published": "2026-10-28T14:14:00.000Z",
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOOTM1ZU15MUd3TnF6VFExVkd6b0tabnlfRnBzQXZ1V253dUNTQU1ZY2ktb096Y243SHRISjV3YS1QcmNPX2tXcEdKcUd6ajJCQVhpTk10TEs0dThVeVlrY2tZdERMY1MxOHhvS2I2UUF3M2FQamMtR3NnS0pNVjA0aGFQd0RtNnpWMVlQeEV1a2pUVm1SbTc2LUJyeVlnWVk4NnJlN2JoZ0FhRkdYa0drNHp6TQ?oc=5",
+      "title": "Žiniasklaida: Putinas per derybas dėl Ukrainos sieks NATO pajėgų išvedimo iš penkių Europos šalių",
+      "en": "Media: Putin will seek withdrawal of NATO forces from five European countries during Ukraine talks",
+      "outlet": "Vakarų ekspresas",
+      "published": "2026-10-28T14:52:15.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -169,87 +489,7 @@
       "en": "European leaders criticise talks with Putin. Zelensky has a different view",
       "outlet": "PolsatNews.pl",
       "published": "2026-10-28T14:05:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE11TEVKNE1OQ0R2MG9PWTNNV241VnJKUm8yWm15OF9mcWhVM3dYOXZnamt3SDI1bjk5d09ldXM5RnN2SzQ2RUFub2pGMV9id9IBS0FVX3lxTFBfME9YaURSQmpuNnVWZUs0ek9UVGNlLXJQOHN1NUxoVGxlVklVOHhseU1ZcHoxVm1QRzEtcElvV28tN1BkeFpibG9Qdw?oc=5",
-      "title": "Кремль исключил участие европейцев в трехсторонних переговорах по Украине",
-      "en": "Kremlin excluded European participation in trilateral talks on Ukraine",
-      "outlet": "Интерфакс",
-      "published": "2026-10-28T14:05:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNd3BfMzhTMG05b0l3bXQ0Um5mTU5LcjlBM2hxaEJBejVVcjJHYkRkVFl3RjNiamxlajY4VGtSdzFLdDNxVFlsTXQtNzJEbjc5Skg1UElkemQ3WDJBTUFENkgya0lpazBBdnRqb3gwT1ZVNi1zVU1kOWRhNGRTdzZoUTg1Tmp3RXJ0YWU4c1M2bFVoWF9BOE5aSE0zWmY3YkxvSXc?oc=5",
-      "title": "Viele wollen wohl bleiben: Russland könnte Einwohner von Oleschky zur Krim bringen",
-      "en": "Many likely want to stay: Russia could bring residents of Oleshky to Crimea",
-      "outlet": "n-tv.de",
-      "published": "2026-10-28T14:04:16.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWDQ0OFpoblpSWHRJYVlsT3hSNDJTR2Y2aHBJWkNkUFhJQTZXVGhxT1htdnFtWkFaWUVycmxxYmxMVzR5T19JTDVOQXJlMllJT0QyNEFkZ0xIVE1GZ0ZOT1JvQlo2dENITFU1VVJjSGw5bXFpZ2ZGUUlMYkRCeTJ4eHo0Q2ZzZFdMNE9SdmljbzNPLVFKdWlmdDlBLXBnVE5ndGJPSjMxRDhKbWvSAbABQVVfeXFMTlQ1THlCTng3YTRKakl0VzhoRmFCQ0M5NDZMQTRLWDdDVTJZOWpvRk5LYXZ3M0d1NHBMOFhSNWdvblhtd29tRWJBQ196dmxXSnVHa0tsTE1zWDNCMUphQWpKMkNLSEZPR20tRnk5eWtFT05uaDh3eHpiaGZtQUc2R3VCX3U2WFZYM2EwanhtclkzbmJqSGpLcndhN29yUHlKdXFPUkFxVzIyYUw5OTV2dWI?oc=5",
-      "title": "Guerra Ucraina-Russia, le notizie in diretta | Putin: «Musk un genio, collaboriamo a stretto contatto sul tema dello spazio». Zelensky: «I colloqui tra Kiev, Washington e Mosca potrebbero tenersi il 10 novembre»",
-      "en": "Ukraine-Russia war, news live | Putin: \"Musk a genius, we collaborate closely on the subject of space\". Zelensky: \"Talks between Kyiv, Washington and Moscow could take place on 10 November\"",
-      "outlet": "Corriere della Sera",
-      "published": "2026-10-28T13:35:38.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "HU",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMkczcUhFSTZwb3lrQl9JdTlJSHNiWnVHd1FCdmJXclR3RTMxdTU4cWxqcXVzaVdWUXRqN204X1FHOUh2bkItUkZNMHJSN2xGWmZiUGYweU1yQWQ4dDh1QzNITnU0SkhEX2c0UXV3dWVpNFg4aEd3bTVrWUVRajFUWklMV0xleW5sNy1pVVJEc2xNaUkzcjZCenY1UnJTUzlIRmlvRDJoeUlENzhGUlBVZEhRd0ItU3ZXSzlra1ZQYnJmb2fSAcgBQVVfeXFMUE55Y0t4SU5lOXZ4b0UyX3Z4OW9BVVlDdDJiOVB4SmJfZE0yaWFnYVNLRWM5ZUVSVXlnU0Jfb0g3ZjBOdndDSEdSMm5wT0Y4ekE0OXFXSHJOQkU4QVhsYktTeDJReGlCYWZVZFlDaVZidkJZbEd3enF4QnJhNXJycktxdHNnM0MyY0ZrcTRNemlkM18tQWFYcl96Q2UyUVEzQlY5RWQzckstNUFvT085ekpQZGhsbHYxaThNRnFkaWwzVTZMQU53Rks?oc=5",
-      "title": "Bejelentette Zelenszkij a következő béketárgyalást - Meg is van a konkrét dátum",
-      "en": "Zelensky announced the next peace negotiation – the specific date is also set",
-      "outlet": "Portfolio.hu",
-      "published": "2026-10-28T13:32:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRlY2bnl4bmdja1ZpRS1MNWJtMl9VN1Y4S1drbFJ1andyUzVNc2RmR3luRENwaGZITzdQTHFkSEEyOE1LNjhEajJINDVlelZ0QnJnN2FPaGRqMVkydzBXYl9NMm9TOFMyR3BZb041YlRxU0lQUTJ5YTZxMnlZdG5oSm1UaHdyYnVEYTM5MS0yYlZrOHhJWjBlelpuNG9Memw3cldtUFM3UC1kTkE?oc=5",
-      "title": "Zelenskis: radome būdą, kaip sužlugdyti Rusijos strategiją",
-      "en": "Zelensky: we have found a way to undermine Russia's strategy",
-      "outlet": "Delfi",
-      "published": "2026-10-28T13:27:23.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMS00VlU4c3NPWWdfTFhIM1A4anlKZVpvb3RSNm9lZ3dDeVdVZEtQOGdpZFkwZ0piMV9jc29UQ1pGQ3dYRWcwR3JZRFBmZTZJQXh0c253UmNGZ0F1QWpwSG1STjN1VEVvelduYVdTTzduVUl6TTUyc3loOEcwWnNCZTJYVkRZY2J0emVmeF9rcW81ZXgzRWNsM2lnci1JNmtLOF9zUWRfcURBaklLYWoyN3M3Uk1mQlQybXktXzJHWFpUSnBRNW94UGd3?oc=5",
-      "title": "Zelensky zegt dat Oekraïne dit jaar slechts twaalf Patriot-raketten per maand kreeg",
-      "en": "Zelensky says Ukraine received only twelve Patriot missiles per month this year",
-      "outlet": "de Volkskrant",
-      "published": "2026-10-28T13:24:10.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE11MGNlaHdBZjI2YlBhaEhPeXNSQmdMSV9mZ3gxa0ZTMGFVSWQ4VTlNZU9LOXFIaVN4MFV6bzV5dFU3dVdYQ2xZ?oc=5",
-      "title": "FT: США резко изменили позицию по уступкам со стороны Украины",
-      "en": "FT: US sharply changed its position on concessions from Ukraine",
-      "outlet": "URA.RU",
-      "published": "2026-10-28T13:24:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "ES",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeUNVVXM2ZVdGeVF3QjNJb052NUFNUHAxMlZ2cVRUWER2Z1ZrWWc4NW1mOGRlWnJDLWZUTDNrOVRsVVViN1U0NFpXT21WRFZJYWptUUttYmFiSXpoUktrVHF5NTRyMkQwbF9TemRkOGk2cm5lOGgtSmR6NTQ0dU9zQURtUFRfTUM5NGlhRVFlWUo3RFhqdWdScVZhZWpGVXZIVE9XSFJOa1hIcVVSdTBmZ1JUeG1iRlFJQnFhT0hweTM3UUpqTzQ5SGh3bWRDZWs?oc=5",
-      "title": "Bruselas reitera que no volverá a comprar gas ruso ni siquiera cuando haya paz en Ucrania",
-      "en": "Brussels reiterates it will not buy Russian gas again, not even when there is peace in Ukraine",
-      "outlet": "20Minutos",
-      "published": "2026-10-28T13:15:44.000Z",
-      "outlets": 5,
+      "outlets": 4,
       "trending": false
     },
     {
@@ -263,12 +503,22 @@
       "trending": false
     },
     {
-      "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVmNnRFlfcWl1N180WENWMGdLUWFzMldxbldiUG1OSnlOVElOMDd2Mnd2SlBlOVp1VlNxc2dVMGVIYjExZUVJcWhsY3VIOHByY0NIWlE3YmhaSEFCUUpDX1hsMWxGb3d3VUc0bDR5ZFpzbkJTdkUzS0YzcWZvSkltbA?oc=5",
-      "title": "Stigao novi plan za kraj rata; Sve oči uprte u jednu zemlju – hoće li ga prihvatiti?",
-      "en": "New plan for ending the war arrives; all eyes on one country – will it accept it?",
-      "outlet": "B92",
-      "published": "2026-10-28T12:57:00.000Z",
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSHAyM3lQcFBfMVV4VkM5UEN4RXFKdnV4N3lZQnY0eDJFWnpTSmhGWFpTWUlyS3pQVDNnMnNtVWdDdExFSkNKQ012YldJMEhZSTlFM3JYWWxGQXVtMjNKYjRUclhZOE5ucE9XZjBQRjFLemZZUVM0LURIQ0w5d0NROEhRMVozd2xRV0tTcm5iTnBWSktVek9ZSFVHVVgzQQ?oc=5",
+      "title": "Ukrajina Rusko Online: Zelenskyj odmieta, aby sa zo samitu USA-Rusko-Čína stala druhá Jalta - Diskusia",
+      "en": "Ukraine Russia Live: Zelensky refuses to let the USA-Russia-China summit become a second Yalta - Discussion",
+      "outlet": "SME.sk",
+      "published": "2026-10-28T12:59:24.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMlVhdEFUM0x4R2N1blNhVW1LT1NuUloxOFV5ZVVuU2JDaHRlVTBsOUsyN2dTNXdhYnJMWmFJNWtVZ1U0SThSWEF3WFVIRzB4N3BvUkZHZFJVTUoxWFA0NWlvbWdxY2J2NGFFN2ljMURhUnZfS1p1YjlfSW9BYml2dzB3TXAxNktPTFRHcC1lb201WTNNZzhoa3YtVlhtejB6TWlIQWJyQzJndjl0a2x5S0ZGY3MxOG1SSm5kVkhmSlFaTFU?oc=5",
+      "title": "USA navrhly demilitarizované zóny na Donbasu a Kinburnské kose. Zelenskyj přiznal záruky Moskvě",
+      "en": "USA proposed demilitarized zones in Donbas and the Kinburn Spit. Zelenskyy acknowledged guarantees to Moscow",
+      "outlet": "Echo24",
+      "published": "2026-10-28T12:56:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -279,16 +529,6 @@
       "en": "AFU attacked a gas station and a shop with people in a Russian city",
       "outlet": "Lenta News",
       "published": "2026-10-28T12:51:58.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPN0ExN1czY1I1SlNDd1N6QXBxalBVSGpMWWFfWTBFMkhyYVY5ZW1SRUc5UmV0bFBCWm1yOHhRaVZBQ05lQXVRNG42Uy04ejBxcmlZWmtncWxCRVNjODhpUDQ3TlU3dlFKNkxhV19tQ1NZZ2FiS0ZRSC1qVnFLTGtRczZZTWNWVWktRWRnZVNJWF9GRm1NWnV1N1FfUkVGN1Y0NUZtb1gwb2V1cmpobjkyVEVVNXBvMFdXaTBn?oc=5",
-      "title": "«Έριξα 35 Patriot, μου στέλνουν 12» - Νέα πυρά Zelensky κατά ΗΠΑ, Hegseth",
-      "en": "\"I fired 35 Patriots, they send me 12\" - New fire from Zelensky against the US, Hegseth",
-      "outlet": "Bankingnews",
-      "published": "2026-10-28T12:39:43.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -313,62 +553,12 @@
       "trending": false
     },
     {
-      "from": "SK",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYVdGcXgtTFpNbjV6TkYwd0h3UGkyNzVhbGlIbF9xeFNCV1pscjlkT2FKOW5fMHJBMHJoSllOMzJWUk5XanRCQTk5a1dRVXpGaTBmYUdsRnVQVDQ5Tks3cmw2d29VMm1fbTRmTDAxVG9USndVc0RSY0wyeXFZSkdUcU9KWmx3MUZtblQzT29wMWdsS1pITjRhbXZSSU1qdw?oc=5",
-      "title": "Ukrajina Rusko Online: Ukrajina podľa Zelenského získala späť územie prostredníctvom série ofenzív",
-      "en": "Ukraine Russia Online: Ukraine has regained territory through a series of offensives, according to Zelensky",
-      "outlet": "SME.sk",
-      "published": "2026-10-28T12:21:28.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcVpBNUY5ejdkRTliZG1reUhjOVNNUEFJeWthYTVDNzJfYWpKa3FLOXoyLUtKbzlEb3dNMHBON3BLUm9WWnVGWXVQNU9hdlVwQnBlZjJYRUVtRUwxYndlQk9Qb0V0QlNGTUEyd1Y3QmdxNW9SbDBlTmNPYkZhR2ZZb0luZ0FTNHVWR2tPMzFtZEFCMG91elB1UHgtbFFRb1E?oc=5",
-      "title": "Rosja i Ukraina uzgodniły rozejm w Ołeszkach. Co z ewakuacją mieszkańców?",
-      "en": "Russia and Ukraine agreed a ceasefire in Oleshky. What about the evacuation of residents?",
-      "outlet": "Polskie Radio 24",
-      "published": "2026-10-28T12:20:48.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1tQ0RJWUpOU0xjWkplRUdkSzFmVWNVZ3RHNzNpeXljc2dHSk91UkRHbGszNWI4Z2ZmV2M2SGRpbjFZd21Fa1ZGM0dnYW4yb3diS3FGeERkTHk1X0NCWjdVczJqY2xIU1JBb0FfbTd4YlBLRUpn0gF0QVVfeXFMT3pVRXdMQnFNWXduX2pqVGhhYl9YZVgybDhlLUcydVFXakpCWExXenpaV0lEelpIa09NT2szVzJ6NFFQaXdfOGlXR0Q1NmdubmJSMTlld1dLNnY0UFBET3N0Z1hfX3FFZGFJa2RqX0txRGRXTWE?oc=5",
-      "title": "젤렌스키 \"트럼프와 종전 수단 달라‥우리가 러시아 더 잘 알아\"",
-      "en": "Zelensky: 'Our means to end the war differ from Trump's... we know Russia better'",
-      "outlet": "MBC 뉴스",
-      "published": "2026-10-28T12:01:40.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5HQk9jZFBpWmF1dXdDU1lCTTFUZTY2QmxCVXdxai1UalY1U1RHbmZqSkdYcFdTWjd1bHdvbmxoZzc1NHlQaVJV?oc=5",
-      "title": "Зеленский впервые признал часть требований России",
-      "en": "Zelensky admitted for the first time to part of Russia's demands",
-      "outlet": "URA.RU",
-      "published": "2026-10-28T11:58:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNYVdMdnF0Z1BVbW9Xd0lTYUd4cjVwN0JEZnUwamswUTctSG9WTnJxdWloRzFiblhERFViUThudERRM1dIblBBR2hnTzRGeDFydFlaOFlRQzBuY0xEeWlLczk3TkhIZnRiUmdZVnZuWWZDQnZzcEtIQU9FNkZkRk1wRi1xcUVQclQwblhJc1gxQjNqYnVQVmhERElJV21hSDRMODFvaVJycVp2Y283QVZkMnVONDNteU9oM0FyWWs4XzhnQjhOa1dhN1JXTjVGVVBRdzdJRmxERHR6UHdWZFlNWnl3NG1JbVVaem9XQ1NPVkdEN3dOdDhNcXctdDlubzFScDBF0gH-AUFVX3lxTE94cTd0VVotLWVMdzNRbXV0Wl9ZSGQ2c0tMenUyUlYzZF9BdjdTTzY2V3pqb3VmQk1CNm5mZ3dDdVhPNzFUMmdiQzU3T2VHR3NxMTJwdU5wcm9kamVITWNKOHhCaDZvWlZfdTM0ZlJBdGVpTFlIRGRUVkpZeGdfRngzeVlzX0g1cklIMVhfNTB4TWE4OTdUd1FBdS1IWGhuekQ3V3FLLUtQOEt1VXRFMHM0eTZfeDhzNnc2bFRBdmJLLXpVVEx0OWh6V0xiWWpSZ2t5VGx2VmQwUVo2Z0pWS05DUXAzNGJDdU5SYmJzZi1UWXpaTHJzVnJlNE14a3dn?oc=5",
-      "title": "Planul lui Putin care ar putea afecta și România. Zelenski avertizează că Rusia ar putea cere încheierea unui acord separat cu NATO",
-      "en": "Putin's plan that could also affect Romania. Zelensky warns that Russia could ask for a separate agreement with NATO",
-      "outlet": "Antena 3",
-      "published": "2026-10-28T11:51:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbFdHMFNOWkdiUjJ3MUQ5UUx0cTVhY2dVUklicnkwT19xYTI4SGpEcGJRRlVsTnFqNkFIcHFITWhsQTVYTU9Xa09ybk13alY2TlRiQkRGNjRoczBOTE54ejdYTTBkYnA1dDJIeW0xckpjQlB2OUNOeHJKWGM3dW51dExBYzEzdU5pS3RYeGw1c084a2FzLVI2VXJNLTY0U0RYYVhfSDRpNUxROGZfdkhtODZxeXFLYmNzT21N?oc=5",
-      "title": "Nga dồn dập phóng tên lửa, Ukraine kêu gọi đồng minh hành động khẩn",
-      "en": "Russia launches missiles in rapid succession, Ukraine urges allies to act urgently",
-      "outlet": "Báo Dân trí",
-      "published": "2026-10-28T11:34:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNmJiNXgzaGNvS0hRTkV5YXFBZzNjak9mVmZPLTVXQnJzb1JBcE8wbWNReVpwS25TTldGbDFkSmZKMFRUb01rRkdBMDlMVVBKWXpmQzl1ekdYN2xJLW1BVWg5YzFudEJib0xaWWw0bGpzcmhHVmIyMklOS3pPM01rOHc2b1FrR2pRYzV1cnJkTFFZM0hfUFJFWDRyOVFYeHBLcVJETFk3eFEwYXRvN29ZVUVkb09CaXF0UTdzZ1laekR5eDRLeHU1VA?oc=5",
+      "title": "Không 'vũ khí thần kỳ' nào cứu được Ukraine, Mỹ có nguy cơ bị cuốn vào cuộc chiến trực tiếp với Nga",
+      "en": "No 'miracle weapon' can save Ukraine; the US risks being drawn into direct war with Russia",
+      "outlet": "Báo Dân Việt",
+      "published": "2026-10-28T12:21:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -380,7 +570,7 @@
       "outlet": "Respublika",
       "published": "2026-10-28T11:14:00.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
       "from": "ZA",
@@ -403,46 +593,6 @@
       "trending": false
     },
     {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdzREMzBVemRLNVZyMWxITWtZcmg5SG9SZjZTTVg0X0xZQjN2YW9OVW9NcTlqOVhQUWxpaEpLN0t5dWhBOXhTaGI2c2dSRGI5dmR4R1g3UWRuYzRDeGlzcENmMzRIZnd5bUN4MG1rSnNnZkZxQTl3OEkxWnJYdWJ2cGp0dHREb0NHUTVkODZvWFBtR0hIX3JVdURtODZsNXlPbVZ2VEVDR005TnJyNU1Ydg?oc=5",
-      "title": "Zelenskis apie trišalį susitikimą: nenorime dar vienos Jaltos",
-      "en": "Zelensky on the trilateral meeting: we do not want another Yalta",
-      "outlet": "Delfi",
-      "published": "2026-10-28T10:16:42.000Z",
-      "outlets": 3,
-      "trending": false
-    },
-    {
-      "from": "SE",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQ205eGo2ZFZ5cy11bk01MWEzWHJFY3VocS1acmVnMkRveFJkMG51aGszTjdDODFjR3QxQUh0ejdOcFpCbFJ3ck5HUmFKbFBQMGRZaXRUZEQ5czBrNTFsdFByZml2d2REa3lQOXZBeC1maGVfd243OG5yREcyLUFJZjh3bGRWWXVwS1RjNDd4aFM3V0Z3WnJ4RmxPMy1BdVpoa01nMWhEZl9GX0hpSmZwQ2F6MW0?oc=5",
-      "title": "Ukraina: Ryskt stålverk och kemifabrik bombade – humanitär vapenvila i Olesjkji håller",
-      "en": "Ukraine: Russian steel plant and chemical factory bombed – humanitarian ceasefire in Olesjkji holds",
-      "outlet": "Cornucopia?",
-      "published": "2026-10-28T10:15:24.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcUlZbDhaRDZwMFpOb2xUOW53LUxXc3dzb0tSQnZpZlp6TE5ReDdHRXd1S05LRnlocE9kbVY1Tk9hZjh2eDB5LXhVbF93MWZVbURNWG9VaUUxOUFjaDZHbUkxVU54bU1BdGEwR0dLQTBfVjVzZ0RNLTYzclZPTXVIR2pjTjZ6M3V2NlpxdlUyZkdlR0dBcWJLbGxEc2JnallqUGNNbDBZcGxlcmItZU9Qbk5B?oc=5",
-      "title": "Зеленски се опасява от \"нова Ялта\" при предстоящата среща между Тръмп, Путин и Си",
-      "en": "Zelensky fears a \"new Yalta\" ahead of the upcoming meeting between Trump, Putin and Xi",
-      "outlet": "Dir.bg",
-      "published": "2026-10-28T10:09:48.000Z",
-      "outlets": 8,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWkxmcWJ5Nmd5QkxPRmsxOXhGMFAzajdSMTAwalU3Z05Ib0xDVEMwOGJVeldSTHJpelZ6STlVbzNjWDFxTDQ1R08wamlGWExtc0U1ODZwTzN3d24tZURuYVJZR2pOS0F1MWJFaFNERFFvN2JSaUo2eUU4cTZ2MTVuYlp3aEwtczB2Uk9OaHFFNDVwUTlWLTBKWDhrTVpweWRZWU1IUkkzNA?oc=5",
-      "title": "Ông Trump hé lộ về cuộc gặp sắp tới giữa lãnh đạo Nga và Ukraina",
-      "en": "Mr Trump reveals details about upcoming meeting between Russian and Ukrainian leaders",
-      "outlet": "Laodong.vn",
-      "published": "2026-10-28T10:06:30.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "VN",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNel9lWlZUSmtLRDRNUTROU19SX00wVHg4YVAwMk5DV1QwajB5blB1dWtxOE9MZ0FzWTVUUmZHd05PZEpEclVrOE5WdTVURDlPdjJ4Tm92aFl3eUs0R2ZhWTlyODRnRm9qT0JpX3ZiSzIta2JTTU4tNHY3RWEwQVp0YkdXSFgxWjNFRzV6YU5ObTRHcXZKaEt6MGc0U3oyZWozcTkwUlZkSndzQS1zSlI3V1dIcHR0NEt2OXRZMmRua2NVZw?oc=5",
       "title": "Tổng thống Ukraine nêu \"nước cờ\" của Nga khiến NATO có thể phải nhượng bộ",
@@ -453,92 +603,12 @@
       "trending": false
     },
     {
-      "from": "SI",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLWRBNkkyZDQ0ODRrWHV2RkFMR0NXQzVabDhGa201a0pUWG4zdVhRZC1PN0hHTWxLZ1o0d2Y3TFd2UmNSQ3FwQzlsd3RCWk9ZZUU3QXFOenFtVmhiNk1KdkFCWkYyeExDTFZQRzA0QkdBNVg0U1dUU1RqQUlkSjJ0VA?oc=5",
-      "title": "Premirje v delu Ukrajine še velja #vŽivo",
-      "en": "Ceasefire in part of Ukraine still holds #vŽivo",
-      "outlet": "Siol.net",
-      "published": "2026-10-28T09:56:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSVFHRjd1dEZ4NGJ0UFBhWnEzc3VJZ1gzZDVTUzFIS2VxRmRYVEctMmhTckd6SXBFNmE1R0hHcHZ3UEhSVjNKSU1PMEtqcjlvemdhWWUyLTdXWmhxVFZxMUVfby12czVCN3hTSWhESHFPNk1ESG1EcmplUWZxR1NaT1VzeEd3QU9JTUZIUUdydlhVMUNndEV4b3VhWERnY0o2S2o4dFphZHdTT2hkTGxqbXVvRmF2UQ?oc=5",
-      "title": "„Zełenski wkrótce spotka się z Putinem”. Trump zaskakuje, twierdzi, że stanie się to wkrótce",
-      "en": "\"Zelensky will meet Putin soon\". Trump surprises, claims it will happen soon",
-      "outlet": "Rzeczpospolita",
-      "published": "2026-10-28T09:40:00.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWWZDa0VkcXZvQk5xbFhHTnB0eDhOMkNGMlZRdUZxczBTWHVZdHRtLU9LdE1TNFdFUkRPVU9jazVabFFkcmZObXROQ0tOaTc3NXlzamJSSVh0bTlRT1ZHdDM0MXB1RlJ0aHNsMkNYbmNLLVR6TWpTTE1yVDFSVE92UE1ZaHBEV3NQOGxSTUlaRENyVmlCTGk5bHpBM3RRV3pYdWtPVDdEcEw2NUdlTTkzVkM0TWs1bEtJ?oc=5",
-      "title": "Rosyjski atak powietrzny na Ukrainie. Kolejny alert RCB dla województwa lubelskiego",
-      "en": "Russian air attack on Ukraine. Another RCB alert for Lublin Voivodeship",
-      "outlet": "Gazeta",
-      "published": "2026-10-28T09:26:32.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMkFRMm9MSlg1RzQ0ZHJ0RUUyMTlpejFJXzRfcjJ6R2JUc29KX0FOWkNqN1N6eHExQUxvUWxCY29HMFNHeDBsX0VHemRWSi04RDV6SDVKUVF5X2hFcWtrYzdrUTdMWDMtYy1jQi1aYTNOdHU5Y0xwMkE0ZHEwVzBHSFpzcGdIaFVKa3pUUERiUktmNl93SER6bjd2RDdUVTVCWlNVc2NfM0RnSFNQY3ZBczdKbG1semlXNVM1QWpoQlMyZE9qck44SHV2MFhad2F1cHFFTjYyS3I3T2JFS3BpLUJaX2Zwdw?oc=5",
-      "title": "Zelensky deze woensdag op bezoek bij premier Jetten in Catshuis en bij de koning op Paleis Huis ten Bosch - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
-      "en": "Zelensky visits Prime Minister Jetten at the Catshuis and the king at Huis ten Bosch Palace this Wednesday - NRC - News, background and investigative journalism",
-      "outlet": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
-      "published": "2026-10-28T09:18:23.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUGp5RHZzd2tUZUdQM2NvVm44VUlNOGxZa3YwRWtfSENZT0xycjZ0RkxQQk1WQ3FwUmI5ZWFuQ3ZOUVRrQlR0eEMtbjF3ZnNfTzBzZ2lScUhxRjBncnNfa2hKRTVPR2lYTXpPd3k4Tko4U25hY2hWdTVpR0MxajlCMi1QRmtjaVVVak5rbW0xV3dtY0du0gGaAUFVX3lxTE15ZEFZbUlfV20teUVqcGJfRllWUDJLMXJXbWRlNWUtMk4yQjJJcHpaU29yMDRlUkwyYzQtRWdxM01EWjJud24xSGtCajdJWm9SbGtHTWlmNjdUdEw1Qk1rUWNBMG1ROUVHNXlqMldfZXp3azNuUkxra0IxeVZZWW5aZjdJcDhlVU9kV0N3NThZWVFJOERnUkc0N1E?oc=5",
-      "title": "ВСУ пытались ударить по России крылатыми ракетами «Нептун»",
-      "en": "AFU tried to strike Russia with Neptune cruise missiles",
-      "outlet": "Lenta News",
-      "published": "2026-10-28T09:13:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TH",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrajVfVzRKekVZc2g0V1pqTF85MzM0c3lYWXZhWDFHa2ZPNlNXUmtpb3Q5aVpZMjVON21lRmh3c1VhVi1uNkdYczM1cXNnQlNWb3U0bUM5SVBwMlhMQVpJLVI3X1hvVTQ?oc=5",
-      "title": "ผู้นำฟินแลนด์-นอร์เวย์ โทรหาปูติน หวังยุติสงคราม โชว์บทบาทยุโรปช่วยยูเครน",
-      "en": "Leaders of Finland and Norway call Putin, hoping to end war, showing European role in helping Ukraine",
-      "outlet": "bangkokbiznews",
-      "published": "2026-10-28T09:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CZ",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWGFOcHJnZ0RiMEtiOG4wclM0czN0VnFKVmU3OHNlOU1KbHR3RE1XeUxhcTJ2UE44VU9QNTNVZ2h6WHJyVVZMVUxwcTNJOThNY1RHQmVLMEtpTDQ0SkFBNkxoWkxXR1gtb0RXUmxzT0pzSnJlMmNlbDVnMXQ1bUVKdFdoNWctNEJ3MXRQMVNzbHRfLVBmaEh0a2h3VEVfY0dreklXVGFNU2Z4SGQzaF84WUtWbFRkZEFna1lFU2ZhQWZkM0k?oc=5",
-      "title": "ONLINE: Jednání mezi Ukrajinou, Ruskem a USA se uskuteční v listopadu. Trump očekává značný pokrok",
-      "en": "ONLINE: Negotiations between Ukraine, Russia and the USA will take place in November. Trump expects considerable progress",
-      "outlet": "iROZHLAS",
-      "published": "2026-10-28T07:43:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "FR",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdWZFNFVmX0F3WGQwTHdXTEhBWVQwR3lma3QwWHdYeGpMbW9QbDZ1OFM3dEhpX1VJbnJBZU81X3pLd0N3YW9mUTBzbEdoU2xwMFBFd1dLUmFIT1VpTXU5ZGFERzVMR1hPcXlHNHF5SU9XWWU5NHlsNGJPTHBHTXdIaFZCdzhYeGhhYlJGRXZUdHZGZnN1Z3p3LUxMQnZ5cm0xV3V4U19B?oc=5",
-      "title": "Spectaculaire opération souterraine des Ukrainiens près de Koupiansk",
-      "en": "Spectacular underground operation by Ukrainians near Kupiansk",
-      "outlet": "Euronews.com",
-      "published": "2026-10-28T06:50:20.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SK",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcVNXVTY5bndvTUZLdzRTS2pOYV9QajY3NWJrLTN3M0VzY3MzNHNxTmFaYkJya19rTzA0M2pqX2tTcmxpZmtMbmNMb1lXSGhVWWI2TGR3YmJ0MGRtVHBGVGo1V3FSMHZuaDhyUFU1bkdXMFpZN3A3N2pqNnJKbmpxWEdnaUZoNUM4VmZN?oc=5",
-      "title": "Trump: Čoskoro bude dohodnuté stretnutie Zelenského a Putina - Svet - Správy",
-      "en": "Trump: A meeting between Zelensky and Putin will soon be agreed - World - News",
-      "outlet": "Pravda",
-      "published": "2026-10-28T06:30:00.000Z",
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUjhYM24yVVdnTlNxSEdtdFYxQXQ0dGxzaWd6TjR4UEppUFptMDdDc2tDc2lhYVhWZUVKemduOTczUEdGRTI0NTdJb0NOWFdGcElCMDRCQm9JOGFIMnJ0SDZNeW1mTTJMQTRkT3g1bkxISWRac0QzeVdDUWU5NGF2aTk4SHJXS1RRZy1XMmlyZG4tZ3JQZTV0anZnXzljUQ?oc=5",
+      "title": "Tramps sola \"ļoti drīz\" sarīkot tikšanos starp Zelenski un Putinu",
+      "en": "Trump promises a meeting between Zelensky and Putin \"very soon\"",
+      "outlet": "1188.lv",
+      "published": "2026-10-28T07:32:36.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -553,33 +623,13 @@
       "trending": false
     },
     {
-      "from": "AT",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNajJ6VjZBb2dpc0o5MTRqZWVYdXBWSWVWa0NmbVhiM3ktVENOYWxzanJsbEprYzJaR0xBcklLVnVxMFhLUUtlTlgxdEVseFRJOXp0M29YUW94SW9meE14TVFIdGJBMjh2bm90OFF1MlNJaE41YXgxS0tHd3pFeFFtWEVhaGpadWhfVWJLeFhyaVo1SXFhY09jVU5lNE4yZw?oc=5",
-      "title": "„Sehr bald“: Trump kündigt Treffen mit Putin und Selenskyj an",
-      "en": "\"Very soon\": Trump announces meeting with Putin and Zelensky",
-      "outlet": "Kurier",
-      "published": "2026-10-28T06:23:57.000Z",
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUmFwaFBycV9WRU9pRVQ3WE9mNTI5U2ZSUlZ2VTZ1czFoWjJ1QTZCbkh1NC1YZFRPRUMxTUJvXzU1LTFmZ3hZMll1TUxia0VWRnFhc2JOaTV1aXB4RUFVbWw4R05uWVN1YjdkMjhOVmlCYjhiekJfdXg5Z2p0RFExQjNQd1dvNlFLeGprLWtGX3JlQ0FzVEZFMXZyN0xGUlplUUE?oc=5",
+      "title": "Ukraine 'bắn dè sẻn, bỏ chế độ tự động' giữa cơn đói tên lửa Patriot",
+      "en": "Ukraine 'fires sparingly, drops automatic mode' amid a Patriot missile shortage",
+      "outlet": "VnExpress",
+      "published": "2026-10-28T06:25:33.000Z",
       "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMUdxaHhqSmtpRzFmSFhWVjdQTjlmUTJWNURmV2FLQ3dVT0Q5a2JLUTdwYVhSd3BkN1M5aGl4dy1DNVM0UmJaRC1NLVp5dGg3aldvUDY0bFY2NURQQXJnTVdVNk1wQTYtX3E3NWUzRW9iSWRWZTE4NTRjdHU5N2lGbDNHUVBVellGWG9hMFVNa3VoS0ZQVlNySFp2SngxeG5OQjAwcV9wZWF6U3EyOWUyZE1fMUxBY2tFZFptcVB2STNHX2Q4bnE1Z2NR0gHPAUFVX3lxTE94alBGcWd2RktJOGFrMUhaZndkekFtZURSQmhyQUhxWVllcVJRcWxtNS12ZUQ0Y2hGM3dWZHlzckhsTjNqT2tPY2dBVy1wZDVZOXZ5c2djTE9EdVR5NmNaVG1BZlY2MDgwSDAtUTVHY1FEYkswWlpMb20xOXlnWVR0RjN4T1JhbUk3U0YxR0N2SW9IVllkOWt2b2M5QTVTWW5PQ1FQT2lGZ3BWTFp0ZFNZakg1Q0YzczExdUdOeC1NTElHVHZVWkhzdG80c19vOA?oc=5",
-      "title": "Ο Τραμπ δηλώνει ότι «πολύ σύντομα» θα οργανωθεί συνάντηση μεταξύ Πούτιν και Ζελένσκι",
-      "en": "Trump says a meeting between Putin and Zelensky will be arranged \"very soon\"",
-      "outlet": "ProtoThema",
-      "published": "2026-10-28T06:19:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMjV3WXVzQlI3aTMtWGU3bExOV1FKVEx6Y0Q4NnRhUVJTQlpqazZVUGM2aXRvejhMSG9WQnpxX2J0X1N3M001blJqRXpFaDZKNDNUeTJ1TklBOVhuR1VkdW1EdmoxXzRISks1VHNwWHh2blFNWWU4TFJ2VjVxbDgybS1tMUdsM3VpR2xNMDgteDF2QzR6Slk5T3ZKUmNqTEdYSU5DVWwtdHItd2plckhIag?oc=5",
-      "title": "Zelenski gaida Maskavā: Putina padomnieks Ušakovs pastāsta, kas tad notiks",
-      "en": "Zelensky expected in Moscow: Putin's adviser Ushakov tells what will then happen",
-      "outlet": "Jauns.lv",
-      "published": "2026-10-28T06:15:00.000Z",
-      "outlets": 4,
       "trending": false
     },
     {
@@ -593,22 +643,22 @@
       "trending": false
     },
     {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQb092UENBbUVxUnNIaV9mY3ZpUlFWNE9pMnI2eFR5a0JrVjEwcG1KNG1ILVBUd3h4TEVEaUFidG9pUWpyX3Vnb29lU29WNG1UYzRqLTNpNHJPRF9fUU04Qk1QUTRrbE5xdXEzY2dLaVlzc0djY3RvVFlyN1o2ZHczQUQ1V1pESkt2SW9ESlNKUm5tbXg1UllaNUlUNUpfaEloZWUwYWZ1MFExLUh1N0c4b0NuNUNkZGZsRkx1R3JuYTVpUGhudFR0TlRVR29qUmJxclE?oc=5",
+      "title": "Karas Ukrainoje. Keiskit kursą, kol yra laiko: ragina laivus su rusišku dyzelinu apsisukti",
+      "en": "War in Ukraine. Change course while there is still time: ships carrying Russian diesel urged to turn back",
+      "outlet": "LRT",
+      "published": "2026-10-28T04:15:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
       "from": "ID",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQN0IxRTBySVVhQjZSQURPWXdGcWU1aTRtR3kxQ0hoT1c0YTNSaGlJSDBwdE52NzVSTWNZRmxoaFZJY0dkUW9jUm5sSUppM2tyVlBjd0ZLSnhZTmNZOENHYkhBcUJoWUJEYl9xQnlOMzd0VV9fQ2EwUTBGNndWVk5leDJOenl5NlBZMGlmS2NsQXNOUy1rSnk3bE91YU5NdllRdFdnV9IBqgFBVV95cUxOT2cxSFFLdVZxLVFZX1p3WGhRNVNDbzNyeVpmNzNQU1Y1VDN1Zjg5UUdmS0N6aGNLUFowSl9sb21fSXhCQzhocF92R3dGUndZR2FiMWRRNUQwOGpsMWZjNjRla1lxUndCRzkzZHR4REc3cWNpZ3VoUTdRQkhOYjRhZkxGYUlDN0ZFeFJzY21aRXRsNzQ4UUZYc2h5c1BUazN1cDBuRjJSU2lhQQ?oc=5",
       "title": "Putin Undang Zelensky ke Moskow, Janji Jamin Keselamatan",
       "en": "Putin Invites Zelensky to Moscow, Promises Safety Guarantee",
       "outlet": "detikNews",
       "published": "2026-10-28T02:54:34.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONE1aSTduSllYQzYyMkJocUdMMEF2Q1I1WXVEaURaUWM5U0dnT1FZLWZaWmhCcXFmT0dtSklCdkk3OVVvTWVBWTVsNkYwNTQxRkNDRkUxY0pjTkpRVUlZNVlHVl9XcEhlS3owYnpETEdOLXdpb2ZoWkpuR0NVZjU4TGtzVXAwVGU1NEN5eENxQURSekJqS2ZUd2FJQ0JHYW8tLVBFLVduT3YxQWdueVJkSkVuelJTMnQyZ2dfVTRMYWI?oc=5",
-      "title": "Xung đột Ukraine: Tổng thống Nga mời người đồng cấp Zelensky đến Moscow, hứa bảo đảm an toàn",
-      "en": "Ukraine conflict: Russian President invites Zelensky to Moscow, promises safety guarantees",
-      "outlet": "Báo Thế giới và Việt Nam",
-      "published": "2026-10-27T23:55:08.000Z",
       "outlets": 5,
       "trending": false
     }
