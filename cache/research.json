@@ -309,6 +309,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|CN,JP,KR,PH#afb26aec",
+    "seen": "2026-10-28T09:03:01.732Z",
+    "donationSearched": "2026-10-28T01:49:21.011Z",
+    "directSearched": "2026-10-28T01:49:21.011Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://wck.org/relief/typhoon-champi/",
@@ -326,11 +330,7 @@
         "title": "First Alert: WCK Responding to Typhoon Champi in Guam",
         "published": "2026-10-18T01:49:21.011Z"
       }
-    ],
-    "donationSearched": "2026-10-28T01:49:21.011Z",
-    "directSearched": "2026-10-28T01:49:21.011Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-28T01:49:21.011Z"
+    ]
   },
   "gdacs-cyclone-tc-1001341": {
     "at": "2026-10-27T21:08:09.862Z",
@@ -364,7 +364,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-27T21:08:09.862Z",
     "directSearched": "2026-10-27T21:08:09.862Z",
     "directSearchVersion": 2
@@ -383,112 +383,99 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001345": {
-    "at": "2026-10-27T08:20:06.786Z",
+    "at": "2026-10-28T09:03:01.732Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Tropical Cyclone Arnab, a very severe storm, was at sea as of 27 Oct 2026 and was expected to cross the Andhra Pradesh and Yanam coasts on 28 Oct 2026. Over 89,000 people had been evacuated in India, with evacuations in Andhra Pradesh and Odisha. No landfall report had been found yet.",
+    "summary": "Tropical Cyclone Arnab made landfall on the Andhra Pradesh coast in India early on 28 October 2026, after it began on 25 October. The India Meteorological Department said heavy rain and strong winds would continue in coastal Andhra Pradesh and parts of southern Odisha. Reports on deaths conflict; the government reported none, while some outlets reported three. The status as of 28 October is ongoing for rain and wind effects.",
     "ongoing": true,
     "places": [
       {
-        "name": "Konaseema",
+        "name": "Kakinada",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "district",
-        "impact": "residents evacuated to safe zones as sea level rose"
+        "kind": "city",
+        "impact": "destruction reported"
       },
       {
-        "name": "Nakkapalli",
+        "name": "Visakhapatnam",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "town",
-        "impact": "400 people evacuated to cyclone shelters"
-      },
-      {
-        "name": "Hope Island",
-        "admin": "East Godavari",
-        "country": "IN",
-        "kind": "site",
-        "impact": "all 130 residents evacuated to Kakinada"
+        "kind": "city",
+        "impact": "fallen tree damaged a vehicle"
       },
       {
         "name": "Yanam",
-        "admin": "Puducherry",
         "country": "IN",
         "kind": "town",
-        "impact": "forecast landfall area"
+        "impact": "named as landfall coast in one report"
       },
       {
         "name": "Odisha",
         "country": "IN",
         "kind": "region",
-        "impact": "nearly 48,000 people planned for evacuation across eight districts"
+        "impact": "under cyclone rain and wind influence; evacuations"
       }
     ],
     "figures": [
       {
         "label": "Evacuated",
-        "value": "over 89,000",
-        "sourceName": "thenewsminute.com",
-        "sourceUrl": "https://www.thenewsminute.com/andhra-pradesh/cyclone-arnab-to-cross-andhra-coast-on-oct-28-over-89000-people-evacuated"
+        "value": "More than 180,000 people",
+        "sourceName": "tribune.com.pk",
+        "sourceUrl": "https://tribune.com.pk/story/2637367/india-evacuates-over-180000-as-cyclone-arnab-hits-coast"
       },
       {
-        "label": "Pregnant women moved to hospitals",
-        "value": "over 4,700",
-        "sourceName": "france24.com",
-        "sourceUrl": "https://www.france24.com/en/live-news/20261027-india-braces-for-cyclone-arnab-with-evacuations"
-      },
-      {
-        "label": "Population on projected path",
-        "value": "more than 12 million people",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears"
-      },
-      {
-        "label": "Shelters readied",
-        "value": "1,763 cyclone shelters",
-        "sourceName": "theweek.in",
-        "sourceUrl": "https://www.theweek.in/news/india/2026/10/27/cyclone-arnab-flash-flood-alerts-coastal-andhra-as-extremely-heavy-rains-winds-upto-125-kmph.html"
-      },
-      {
-        "label": "Districts in path",
-        "value": "16 districts",
-        "sourceName": "aninews.in",
-        "sourceUrl": "https://aninews.in/news/national/general-news/cyclone-arnab-intensifies-severe-storm-headed-for-andhra-coast-16-districts-on-high-alert-ahead-of160-landfall20261027083506/"
+        "label": "Deaths",
+        "value": "no deaths reported by government",
+        "sourceName": "dawn.com",
+        "sourceUrl": "https://www.dawn.com/news/2040415/cyclone-arnab-lashes-india-coast-no-deaths-reported"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://www.indianredcross.org/ircs/donatenow/",
+        "org": "Indian Red Cross Society",
+        "kind": "society",
+        "note": "General Indian Red Cross donation page, not an appeal for Arnab.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
-        "name": "theweek.in",
-        "url": "https://www.theweek.in/news/india/2026/10/27/cyclone-arnab-flash-flood-alerts-coastal-andhra-as-extremely-heavy-rains-winds-upto-125-kmph.html",
-        "title": "Cyclone Arnab: Coastal Andhra to see extremely heavy rains, winds upto 125 kmph; flood alert issued - The Week"
+        "name": "abcnews.com",
+        "url": "https://abcnews.com/International/wireStory/cyclone-arnab-hits-indias-andhra-pradesh-state-tens-137629755",
+        "title": "Cyclone Arnab hits India's Andhra Pradesh state as tens of thousands evacuate - ABC News"
       },
       {
         "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears",
-        "title": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears"
+        "url": "https://www.aljazeera.com/news/2026/10/28/cyclone-arnab-makes-landfall-in-indias-andhra-pradesh",
+        "title": "Cyclone Arnab makes landfall in India’s Andhra Pradesh"
       },
       {
-        "name": "thestatesman.com",
-        "url": "https://www.thestatesman.com/india/cyclone-arnab-explained-landfall-date-wind-speed-affected-areas-and-safety-measures-1503655324.html",
-        "title": "Cyclone Arnab explained: Landfall date, wind speed, affected areas and safety measures - The Statesman"
+        "name": "tribune.com.pk",
+        "url": "https://tribune.com.pk/story/2637367/india-evacuates-over-180000-as-cyclone-arnab-hits-coast",
+        "title": "India evacuates over 180,000 as Cyclone Arnab hits coast"
       },
       {
-        "name": "thenewsminute.com",
-        "url": "https://www.thenewsminute.com/andhra-pradesh/cyclone-arnab-to-cross-andhra-coast-on-oct-28-over-89000-people-evacuated",
-        "title": "Cyclone Arnab to cross Andhra coast on Oct 28, over 89000 people evacuated"
+        "name": "newsbytesapp.com",
+        "url": "https://www.newsbytesapp.com/news/india/cyclone-arnab-slams-andhra-pradesh-yanam-coast-3-killed-87000-evacuated/tldr",
+        "title": "Cyclone Arnab slams Andhra Pradesh-Yanam coast, 3 killed, 87,000+ evacuated"
       },
       {
-        "name": "pragativadi.com",
-        "url": "https://pragativadi.com/cyclone-arnab-odisha-evacuation-src-alert-details/",
-        "title": "Cyclone Arnab Odisha Evacuation SRC Alert Updates - Pragativadi I Latest Odisha News in English I Breaking News"
+        "name": "usnews.com",
+        "url": "https://www.usnews.com/news/world/articles/2026-10-27/india-evacuates-over-180-000-as-cyclone-arnab-hits-coast",
+        "title": "India Evacuates Over 180,000 as Cyclone Arnab Hits Coast"
+      },
+      {
+        "name": "deccanherald.com",
+        "url": "https://www.deccanherald.com/india/cyclone-arnab-kills-three-in-andhra-pradesh-over-87000-evacuated-across-states-flights-and-trains-cancelled-4198139",
+        "title": "Cyclone Arnab kills three in Andhra Pradesh; over 87,000 evacuated across states, flights and trains cancelled"
       }
     ],
-    "membersHash": "eonet,gdacs,news|IN#21dacb98",
-    "seen": "2026-10-28T01:49:21.011Z",
-    "donationSearched": "2026-10-27T08:20:06.786Z",
-    "directSearched": "2026-10-27T08:20:06.786Z",
-    "directSearchVersion": 2
+    "membersHash": "eonet,gdacs,news|IN#83db95ef",
+    "donationSearched": "2026-10-28T09:03:01.732Z",
+    "directSearched": "2026-10-28T09:03:01.732Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-28T09:03:01.732Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-26T15:37:48.309Z",
@@ -537,7 +524,7 @@
       }
     ],
     "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2
@@ -647,7 +634,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2,
@@ -741,7 +728,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2
@@ -878,7 +865,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-27T08:20:06.786Z",
     "directSearched": "2026-10-27T08:20:06.786Z",
     "directSearchVersion": 2,
@@ -1060,7 +1047,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-27T21:08:09.862Z",
     "directSearched": "2026-10-27T21:08:09.862Z",
     "directSearchVersion": 2,
@@ -1341,7 +1328,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|PK#a6ef69eb",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2
@@ -1409,37 +1396,31 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-10-27T08:20:06.786Z",
+    "at": "2026-10-28T09:03:01.732Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A M7.0 earthquake struck Baqen County, Nagqu, Xizang (Tibet), China, on 22 October 2026 at 14:33 UTC. Sixteen people were killed and 76 injured as of 24 October. Search and rescue is reported complete, with no people missing. As of 27 October, relief efforts and aftershocks were still being reported, and the affected railway section had resumed normal service.",
+    "searches": 3,
+    "summary": "A magnitude 7.0 earthquake struck about 191 km ENE of Nagqu, Tibet (Xizang), China, on 22 October 2026 at 22:33 local time. Reports give 16 deaths and 76 injured. Rescue searches were reported complete by 24 October. As of 28 October, relief supplies were still reaching residents and temporary shelters remained in use.",
     "ongoing": true,
     "places": [
       {
-        "name": "Baqen",
-        "admin": "Nagqu",
+        "name": "Baqen County",
+        "admin": "Nagqu City",
         "country": "CN",
         "kind": "district",
-        "impact": "Epicentre area"
+        "impact": "Epicentre area; building collapses and ground cracks"
       },
       {
-        "name": "Nagqu",
-        "admin": "Xizang",
-        "country": "CN",
-        "kind": "city",
-        "impact": "Epicentre city area, relief underway"
-      },
-      {
-        "name": "Maru",
+        "name": "Maru Township",
+        "admin": "Nagqu City",
         "country": "CN",
         "kind": "town",
-        "impact": "Principal affected area"
+        "impact": "Office walls cracked; residents in temporary shelters"
       },
       {
-        "name": "Gangqie",
+        "name": "National Highway 317",
         "country": "CN",
-        "kind": "town",
-        "impact": "Principal affected area"
+        "kind": "site",
+        "impact": "Rockfalls blocked a section and damaged a car"
       }
     ],
     "figures": [
@@ -1447,44 +1428,33 @@
         "label": "Deaths",
         "value": "16",
         "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
+        "sourceUrl": "https://english.news.cn/20261024/944f6fb73de44174ba2a2bfb7fa3e6cb/c.html"
       },
       {
         "label": "Injured",
         "value": "76",
         "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
+        "sourceUrl": "https://english.news.cn/20261024/944f6fb73de44174ba2a2bfb7fa3e6cb/c.html"
       },
       {
-        "label": "Displaced",
+        "label": "Evacuated/relocated",
         "value": "12,489 people",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
+        "sourceName": "ecns.cn",
+        "sourceUrl": "https://www.ecns.cn/hd/2026-10-27/detail-ihfmiwhm0745849.shtml"
       },
       {
-        "label": "Homes damaged or destroyed",
+        "label": "Houses damaged or destroyed",
         "value": "339 homes",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
-      },
-      {
-        "label": "People affected",
-        "value": "13,673 people",
-        "sourceName": "globaltimes.cn",
-        "sourceUrl": "https://www.globaltimes.cn/page/202610/1372929.shtml"
+        "sourceName": "outlookindia.com",
+        "sourceUrl": "https://www.outlookindia.com/international/tibet-earthquake-atleast-16-killed-54-injured-as-339-homes-collapse-in-nagqu"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "theborneopost.com",
-        "url": "https://www.theborneopost.com/2026/10/27/rescue-efforts-continue-after-7-0-magnitude-quake-in-chinas-xizang/",
-        "title": "Rescue efforts continue after 7.0-magnitude quake in China's Xizang"
-      },
-      {
-        "name": "chinadaily.com.cn",
-        "url": "https://www.chinadaily.com.cn/a/202610/24/WS6adc9a54e4b06d4aa05649ce.html",
-        "title": "Rescue and relief efforts underway after quake kills 16, injures 76 in Xizang - Chinadaily.com.cn"
+        "name": "abc.net.au",
+        "url": "https://www.abc.net.au/news/2026-10-24/rescuers-search-for-survivors-after-earthquake-in-tibet/107304378",
+        "title": "Rescuers search for survivors after deadly earthquake in China's Tibet - ABC News"
       },
       {
         "name": "en.wikipedia.org",
@@ -1492,26 +1462,21 @@
         "title": "2026 Tibet earthquake"
       },
       {
-        "name": "watchers.news",
-        "url": "https://watchers.news/2026/10/23/m7-0-earthquake-kills-at-least-16-injures-76-in-xizang-china/",
-        "title": "M7.0 earthquake kills at least 16, injures 76 in Xizang, China - The Watchers"
+        "name": "tribune.com.pk",
+        "url": "https://tribune.com.pk/story/2636473/70-magnitude-earthquake-kills-16-in-tibets-nagqu-city",
+        "title": "Injuries in China's Tibet rise to 76 after earthquake, death toll remains at 16"
       },
       {
-        "name": "globaltimes.cn",
-        "url": "https://www.globaltimes.cn/page/202610/1372929.shtml",
-        "title": "Rescue efforts race against time after magnitude-7.0 earthquake in Xizang earthquake; over 12,000 residents relocated - Global Times"
-      },
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html",
-        "title": "Update: Rescue efforts intensify after Xizang quake kills 16, injures 76-Xinhua"
+        "name": "tribuneindia.com",
+        "url": "https://www.tribuneindia.com/news/world/tibet-earthquake-76-injured-16-killed-after-7-0-magnitude-quake-hits-nakchu-rescue-operations-underway",
+        "title": "Tibet Earthquake: 76 injured, 16 killed after 7.0-magnitude quake hits Nakchu; rescue operations underway - The Tribune"
       }
     ],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-28T01:49:21.011Z",
-    "donationSearched": "2026-10-27T08:20:06.786Z",
-    "directSearched": "2026-10-27T08:20:06.786Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-28T09:03:01.732Z",
+    "directSearched": "2026-10-28T09:03:01.732Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-28T09:03:01.732Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -4258,7 +4223,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2
@@ -4325,7 +4290,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2
@@ -5823,7 +5788,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-27T21:08:09.862Z",
     "direct": [
       {
@@ -6400,7 +6365,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2,
@@ -6551,7 +6516,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2,
@@ -6862,7 +6827,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T15:37:48.309Z",
     "directSearched": "2026-10-26T15:37:48.309Z",
     "directSearchVersion": 2
@@ -7313,8 +7278,10 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-28T01:49:21.011Z",
+    "seen": "2026-10-28T09:03:01.732Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
+    "directSearched": "2026-10-28T01:49:21.011Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/nepal-flash-flood-emergency-relief-2026/",
@@ -7373,9 +7340,7 @@
         "note": "Shelter, food and medical aid for Rasuwa flood survivors.",
         "title": "Basecamp Charity — Rasuwa Nepal Flood Relief"
       }
-    ],
-    "directSearched": "2026-10-28T01:49:21.011Z",
-    "directSearchVersion": 2
+    ]
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",

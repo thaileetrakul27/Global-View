@@ -2,7 +2,7 @@
   "code": "CZ",
   "name": "Czechia",
   "kind": "local",
-  "updated": "2026-10-28T01:49:21.011Z",
+  "updated": "2026-10-28T09:03:01.732Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "CZ:cs",
@@ -10,13 +10,79 @@
   },
   "articles": [
     {
+      "title": "Politici si na Vítkově připomínají vznik samostatného státu",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQzg0YWd3R0tDbkZFRTlwM2ptSUR4bENjaUNPcXZ5MC1FOFAzN2pCQkFJZjFweVBKa1BSLWFxMEVyY19KU1lnT1RQNWZtWU45OG5uRjNfZWRRVnR6NzhmYjZXQkRnM1E4bnV0SXV5UjNFV0VIWnhXcGJLYUFaQUtuWDcwTkhEd0YyNndZNWNqZUZSNm8yakdUWEdwMjUwNVI2SW1FRkFnUE4?oc=5",
+      "outlet": "Novinky",
+      "outletUrl": "https://www.novinky.cz",
+      "published": "2026-10-28T08:00:02.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Politicians commemorate the founding of an independent state at Vítkov",
+      "about": [
+        "CZ"
+      ]
+    },
+    {
+      "title": "Těžký boj, cenný postup. Siniaková znovu nezaváhala, slaví šestou výhru v řadě",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVFBDeFFmY0VJRVdOaXU3dXVyOFFXU2VRUkdYdzllRE9PNm5EZFQxWEp3eE41elU2cG4xT0VwQmRidUxZc3lyU3F2Vm9fZG5BeHlFTHp2THBtN0drcjdvbWlweGkyQ0NYYTZRN1RjeWlYblpQdFE0MFpLUGg2YWVSZnNzN3NkejRzUWluV29vQUFrX3c0TThSem9aWVlkZWxiQ1FZQWJYbEpSMENpMWZrd3h4NHBHNEU?oc=5",
+      "outlet": "Tenis portál",
+      "outletUrl": "https://www.tenisportal.cz",
+      "published": "2026-10-28T07:19:21.000Z",
+      "outlets": 4,
+      "trending": true,
+      "en": "Tough fight, valuable progress. Siniaková did not hesitate again and celebrates her sixth consecutive win",
+      "about": []
+    },
+    {
+      "title": "Putin Stubba a Støreho dlouze poučoval o středověké historii Evropy",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYlJpQVJJRVZIMmcyclpZb3VlUEVHNzA3clVsYWtadGxUQnRyc1YySjJ6UFUtX2ZseUxsNUlsbXpNNTJaSEtmbUF6WldPaElnTmJSNzJjenFfdTZiTHl5WmI3N01LNmpncjhUcFZWQ0FrQUFkRGhoa0QtYkJMSWNTYkg4MGNYNUZpLWI2Q1F6c2JScE9Mbk5kRE1uOTJiNGRnNFc5UzFCQl9vVDZaWURzTGtWUXBJY2g3QW5KWEtrQUV0Zw?oc=5",
+      "outlet": "Novinky",
+      "outletUrl": "https://www.novinky.cz",
+      "published": "2026-10-28T07:17:14.000Z",
+      "outlets": 4,
+      "trending": true,
+      "en": "Putin lectured Stubb and Støre at length about the medieval history of Europe",
+      "about": [
+        "RU",
+        "FI",
+        "NO"
+      ]
+    },
+    {
+      "title": "Bolsonaro po prohře v prezidentských volbách odjel do Spojených států",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNWV2UUMzRHhGcWJzX1lMTGo4ZUNxQ2NLRGtfd1plLWlQbzZUaFNjTHRvZlRnZ0x2VU5nZWF2bG5ZM1J2aDBfUlFQSHFGdUJuVHl0cWxGaXlJVkR5X2RpdHFBTGxPZUREVUVmVTFxeFN2U25ucGZWbWNmYmEyUEVBRG1fOE1tT1Y5TlZ3VTBIV25OU0FOQ25qTXBzVDdvbDF4c2pmWlFyUlVLaEJzOHl3Q2xKSndZb0o2OTRDYTB2cw?oc=5",
+      "outlet": "Seznam Zprávy",
+      "outletUrl": "https://www.seznamzpravy.cz",
+      "published": "2026-10-28T07:19:48.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Bolsonaro travelled to the United States after losing the presidential election",
+      "about": [
+        "BR",
+        "US"
+      ]
+    },
+    {
+      "title": "Netanjahu v průběžných výsledcích parlamentních voleb vede, většinu nemá",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdF9kN1Q4M1Y0cWpleXZNWjBzQzBSQ0NuN01hOHB5dVpBZ0loRDNvN0hxQS0wTHVrQ3Fub0locjVIOWVzdzNvM1ZJQUIwTWpZWlk1SGFfVG50aG9Da1hsWnRTMTlPOE9jNVd2NDdXejdLcDhFWnhPQ3UtTkxGWllnM21OWjdiNmQtdFhlN0djR3p2b2FSdmhIVmpncUFBQWoxWmNrQ3hBaFloV3NleDZoQXdqREJlSlRwMkp5ZnQyRU5raEJzWmNj?oc=5",
+      "outlet": "iROZHLAS",
+      "outletUrl": "https://www.irozhlas.cz",
+      "published": "2026-10-28T05:24:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Netanyahu leads in preliminary results of the parliamentary election but does not have a majority",
+      "about": [
+        "IL"
+      ]
+    },
+    {
       "title": "Babiš s Ficem v předvečer 28. října odhalili sochu česko-slovenského přátelství",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUUNZRkc4WlhGbHZfa1BaMlhLYnhpNWJ1TE9ZWEFUNVpRelVrOVJGakpPSnBLRTZIMVQyUThRUlFMNVVFdXRaRmk3WWRtdlpTbThYMmw2QlNTUVZpcHg3T1M4bHktc1RocW1zVzNqNXNvLVdodFJhbEFwcmRkOFQ0bnVmN2pPRmR5Y0k5Qm1mX0dPZG43NFMxT0NNYmRUVzRyTXY1UmNyR0RUWTR3VVV1OVpfYlg4Vy1acWxHVQ?oc=5",
       "outlet": "České noviny",
       "outletUrl": "https://www.ceskenoviny.cz",
-      "published": "2026-10-28T00:23:13.000Z",
-      "outlets": 6,
-      "trending": true,
+      "published": "2026-10-28T06:23:13.000Z",
+      "outlets": 5,
+      "trending": false,
       "en": "Babiš and Fico unveiled a statue of Czech-Slovak friendship on the eve of 28 October",
       "about": [
         "CZ",
@@ -24,207 +90,146 @@
       ]
     },
     {
-      "title": "Herci Národního divadla vyhlásili stávkovou pohotovost",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNQmpSY2dpcm51cjA4ZnBscWZqRklyTVNmd2d3Qmt5U2JKMV9IQzJEN1VoXzNvWDFLUXpOb0hXcDFOZmFVX3diSGN0QW5WTnZQUlh2aUNTNDVRaTJROC1YSjMtS05zUll4TTMwaU45N1VWa2dNcEFVeThjZ2NSNFYwM0tFaWhkWk1zNVZpN0V1QjMzRU4yU2JreW1ORjRlYU4xSVVNZTk4Njd4dFd3RlZaWklfLVlxX0ZMZXQ0U1NBQlVWT2dmSzBxaU9aZE5xMnQ5cmhpcGU5MA?oc=5",
+      "title": "Trump: Putin a Zelenskyj se brzy setkají",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbzNuRW1uTmtRRWVtdmRZYjM3S2VrMFI3QjMtbnlVZDlyQmNldkM2V1F1T1o3VTdvb3BTOW5DUFdaX2JrSXowTDQyQzBZVkk1bGRmQWFOYTdsNXNld2xFSjJ6RnhkdTg1SUJIOEZmbTRBU1p0NnNZcUt6TVlqQU4zM0RwWlFZbUFBZXNSVjlsR0hLVHhidFdxUjM2Y1lHVVphVlh5S2V2Wm0?oc=5",
       "outlet": "Novinky",
       "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-27T20:37:16.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Opera singers at the National Theatre declare strike readiness",
+      "published": "2026-10-28T07:02:56.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Trump: Putin and Zelensky will meet soon",
       "about": [
-        "CZ"
+        "US",
+        "RU",
+        "UA"
       ]
     },
     {
-      "title": "Poslanec Pražák se rozhodl ukončit členství v hnutí ANO",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcW1VOXJ6NGlSajd6dzBxZ2lPbG5RdGhPX0Z6cUpMdVd0YTBlRHdIOG1NZldENHVram1RU0NIclBvX3dnaFRtMW91NXZZX2xzeThtWExteFBmLVR5QkxlN2tOMDRGR2dPZXRCU3dRQnVEMkR0ODgwbzI4RklldmgxTUJ1M21QcS1hdWZSMVJpZkp1OElEemh0U2pFc29ZTVg5eGRHUEJEQ0RBZw?oc=5",
-      "outlet": "ČT24",
-      "outletUrl": "https://ct24.ceskatelevize.cz",
-      "published": "2026-10-27T19:29:29.000Z",
+      "title": "NHL: Hronek překonal Dostála a ukončil čekání Vancouveru na výhru. Trefil se i Zacha",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQ0hvTWxaTUxMUi1McUJWdjNBZjRJT2hjRjVFMV9zWl9GMHZqaHFILWVBWVdkMVJ4dzdfNm5pbEhYMFc2TWc0Y0Jyc3g4OWFraTRiSlpWaHhialdQR0t2R0xpMDhscURZLU1MUTBocExVZDN6ZXYyMlpTcDdZc01KazZLb0wxWHpSamY3RU12N05SQQ?oc=5",
+      "outlet": "iDNES.cz",
+      "outletUrl": "https://www.idnes.cz",
+      "published": "2026-10-28T06:27:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "MP Pražák decides to end his membership in the ANO movement",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "První odhad izraelských voleb: Netanjahu prohrál, ale opozice nemá většinu",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQ1FUN3NQcHhRUm1XTk9MM2xuT2o0cEtnWUlnMXlleHZSMUVuaWlaWkxOVG1OU19JbEdUZ2hQdzdnaDBBc0tGcTIzVTJjOERYNTQ3Ql9ZRDRJRzZSeXR2WXdpSWFLeHY0ZmZlYmNKOW5laHlhdkVkeko4aUtSRkI5Tk9RU2d1U2tJcG5CRVhqYWdoQ29wN29Ta1Mtb09JM0s2UjAta0tqZ0g3aFZTQ3NmSEZrdkY4WDF0WFZ5YmNJQWRiS1E?oc=5",
-      "outlet": "Seznam Zprávy",
-      "outletUrl": "https://www.seznamzpravy.cz",
-      "published": "2026-10-27T20:03:32.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "First estimate of Israel's elections: Netanyahu lost, but the opposition does not have a majority",
-      "about": [
-        "IL"
-      ]
-    },
-    {
-      "title": "Státní vyznamenání obdrží 51 lidí, o tři víc než loni",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYjFfVlVLSjZ6M1FEUkcyWHpOelBDR0MzaXV5ZWVDa3k3SDFrc2FJLU1pZmptQ25tOW9QbEtJUmFGZWg2aFJIZlhJMTRad0tOUmxBWlFOY0lhdG5MU1A0bUdPUkk2ME0ySEtTem1SU3UwQmJLMVd4RnduTkl0dUlDUm9PR0Jyd2YtUFNOTGp1TXVISUk2RlJFbmN5TktaMHc?oc=5",
-      "outlet": "Novinky",
-      "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-27T19:24:41.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "51 people will receive state decorations, three more than last year",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Senzace. Arsenal vypadl z poháru s týmem ze čtvrté ligy",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMFpvdVJwOXNkQ2pTdzZ6Rm1aakpwMHlOVmVJUlRoQzhsYkszMy1sVmJnTW0yd0RyMWtyX3VMRWR0UmVGTmdWZmRCTFBjSVJ0Q0tmcExQMnpaQlNJQjNzNGI0REkzMG5oZHJYQ1U4N3p2dzJmV1p1cWdPTzhwV2NKeE9OVXFPVi1EYWxFczZiTGJfbzhFbGFxbmpJQ0xhc0lpb1V5Q1N4UVR3LXNsWlpJYXZn?oc=5",
-      "outlet": "Sport.cz",
-      "outletUrl": "https://www.sport.cz",
-      "published": "2026-10-27T22:26:08.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Sensation. Arsenal knocked out of the cup by a fourth-tier team",
+      "en": "NHL: Hronek beat Dostál and ended Vancouver's wait for a win. Zacha also scored",
       "about": []
     },
     {
-      "title": "Provod na tribuně, hvězda bez čísel i dvojka v laufu. Asistent Slavie promluvil",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeVhLQkxKNWs2bGRzTW1ZX3V2dmMtUTFwbjNNang0M0xqZ3FXVFpjNFd1dWNRQ0xOT2hkUTlrTm4yWjFXZm5MZUpZcVJ3Q2JmUWlMUFdzM2lhMklZSDIzTDBXeGRVeWI1X3poN2dyc25BX3dfQ25peW9vZEs2NVZWTi1sa05wOWZjOHdHMmVDcnNHN2RLbVQ0TUktVDlFZFFuVmJBUC13VVZtTmxMVUxjeGRnN0JtM05UYkdGdExfeEpjTHNs?oc=5",
-      "outlet": "Sport.cz",
-      "outletUrl": "https://www.sport.cz",
-      "published": "2026-10-27T22:48:05.000Z",
+      "title": "Hrozí vzácná událost, upozornili meteorologové. Zima může přijít dříve",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTGZpQWtTakVIWFluNG55X1kzWWlLTUNEaVU4cmI0SHZzRjBkTWpNOTdEdG5WcXk1OVpTZ2o2R05TMEx1bDFnbk9mUjdoT3VVS2VhZTRhV2xkSGJIZUNieUhNVlhPdVVvc0lzRVU2QXl4OWZ2aDlvS1F2ZGZnV1hSWmh3T2FUeDk0aDFPaGpFcHlmM2VWbG0yQjZEc1RndWdBNnZQTklvNDBlVlRnUFh5NTY2LUxCdw?oc=5",
+      "outlet": "TN.cz",
+      "outletUrl": "https://tn.nova.cz",
+      "published": "2026-10-28T08:05:34.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "A rare event is threatening, meteorologists warn. Winter may come earlier",
+      "about": []
+    },
+    {
+      "title": "Kdo bude vyjednávat s Ruskem? Brusel řeší pořádný hlavolam, ve hře je Ukrajina i Evropa sama",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQ2xMSlFzZlk5VXpJNkxGWUhyNTRKVXlJUVNwaXkyMHJIaXJtb2U0WXJDdXBvanloZ25pTHlmbS16SUJOd2l2OWtRaEhkZTNiSlBPLTBwTVhRYnlGM1U3Q0RTNlF1WERoRjRqQWRkS0o2MnRySjgtcTRQQnRaQlJYeFZBM0hKWVpuNmJRWE01TFlkVWlSUmE0b3Y5RTZoazFGX2kzNi1STGZ4SmVaMHZWLXBTV3lqdks1YWc5WUpIaG4wLTc2ZGJJUGhsSHpoWWs?oc=5",
+      "outlet": "Lidovky.cz",
+      "outletUrl": "https://www.lidovky.cz",
+      "published": "2026-10-28T08:00:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Who will negotiate with Russia? Brussels is grappling with a serious puzzle, with Ukraine and Europe itself in the running",
+      "about": [
+        "RU",
+        "UA"
+      ]
+    },
+    {
+      "title": "Pietní akt na Vítkově: Česko si připomíná výročí vzniku Československa",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZWZYRW1ZbDBLNXI1Y0J5NlVaVWI1NG9ZZTFwUWNGZnZVYVJMc2M3RkdlSzMyd000MFEyQk02M2pHNjZwR0wzZW1TVW10Rkd2NzkycnBqUEJwOUNaRFBlZ3ZoYV8teVJLSW0wb0lyTVkzczhiQS1xNkxveVQzU1I3NGdXcHdHQ1ppZ1dmaDMxTXBOWFcxWk9Jby0tYmlLMmZ2ZlRTY3Z1OEcxM2xvUU4yb0NmNy0weDAtbTBsVzQ1ZThQR1JtbXhmRFZuanQ?oc=5",
+      "outlet": "Seznam Zprávy",
+      "outletUrl": "https://www.seznamzpravy.cz",
+      "published": "2026-10-28T07:55:05.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Memorial ceremony at Vítkov: Czechia commemorates the anniversary of the founding of Czechoslovakia",
+      "about": [
+        "CZ"
+      ]
+    },
+    {
+      "title": "Cyklon Arnab udeřil. Ruší se lety, evakuovali desítky tisíc lidí",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeVlQUXcyNzJWWXNBaUxGREo0NHc0YU1hbGdpV3lSdjRvbVRMZDVCTUlrRTJSVElsc2JPemVPNEstLXRnUHFPV09zVjRXdVIzR1FOWG81NUpxQ1E4V0hOdldqRVNXWGtubjlNakgxdVI3RzVlSmczZTg2cTF5Qjk2a3RWSW9yZFh5YjJuRXJUUWdKUDhaak9KNm1KRmw3VkZaZmlBOXAwUlhUQ3lhSmZLa1hMTHhGZ1k?oc=5",
+      "outlet": "TN.cz",
+      "outletUrl": "https://tn.nova.cz",
+      "published": "2026-10-28T07:25:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Cyclone Arnab has struck. Flights are cancelled and tens of thousands of people evacuated",
+      "about": []
+    },
+    {
+      "title": "Česko je podjaté, o D3 by se mělo rozhodovat mimo Evropu, vtipkoval Mátl. Odpůrci se budou soudit, varuje",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUzV2UUE3MHRVb1hYOTJqbnoxZHdLSzJmbXJVTWhYZnJqTzNIa2tQNld5MnRNTnNHdnFIdzRUdWtnX1VmRXYyYXJId3I2cmtkQmtVVS1LNEVaY1BVZUFNWmVWUnkyYjRTQkkzaWRWbUtDejdNTWxFOTg5c0tqc1d2NHhIX21lcWlkSVhaWDZXNDVIYzFOZWFtb3c0VTFoQkplb3lmTTlFb2c5azB1Rlk4LUI1Ynp4cDRNcnpuRkd5SXFZWHVIUzVRZQ?oc=5",
+      "outlet": "Zdopravy.cz",
+      "outletUrl": "https://zdopravy.cz",
+      "published": "2026-10-28T07:13:17.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "Lap of honour in the stands, a star without numbers and a two in the lane. Slavia's assistant speaks out",
+      "en": "Czechia is biased, Mátl joked that D3 should be decided outside Europe. Opponents will sue, he warns",
       "about": [
         "CZ"
       ]
     },
     {
-      "title": "Pražská koalice stále bez dohody. Piráti dostali novou nabídku, Praha sobě ustoupila",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM19PdTNpbndDY0tNOEdPd1VVYWlOVGtQZG1qdGFjcHBxbml5c1lnZ0FGZ0psb1k1Y0hVemtraEdMV2V2LUtCWjZqSzY0dWpkYnkwTVBZMXZXQlZCWm1rWS1JYUNjT19MUV9lRVhKU0FKX1RkalcyeHRJYUI1ZWkyWg?oc=5",
-      "outlet": "Echo24",
-      "outletUrl": "https://www.echo24.cz",
-      "published": "2026-10-27T18:34:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Prague coalition still without agreement. Pirates get a new offer, Prague gives in to itself",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Náhrada (nejen) za Chorého. Trenéři Slavie vytáhli překvapivé jméno",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSGVnb2M5Y0s5enJYVlV2bjBGblRWV0dBQmlteERJS0JneEhJb3BISVQ4TEY5dk9KOWw0Q2sxTFNrSU1BamszQ1RkTVZiRnRnTTRzUEVqcUZEd0lPVFN1UThEbEtWRnJZY0RWcTYtN1c5N2ExSS1jZThkdTdSUzEwQmZDamlBNWdyVE12ME1SUXZEeU5GQ1BUSkxTRXhNLUkyZThwazV2amVfaVVHdnhlbnBhQQ?oc=5",
-      "outlet": "Sport.cz",
-      "outletUrl": "https://www.sport.cz",
-      "published": "2026-10-27T21:07:59.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Replacement (not only) for Chorý. Slavia's coaches pull out a surprising name",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Okamura přijal zástupce německé AfD",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUEdDWjd3Mi1BU0FUVy1WaEt4MmdkNUJhU1Q1cmdmQVdoZnVPRkZJc2o5MUJxS3N3WURxNGx6aDkxV1JJMm9tdVVtMUgyajJxbHhDN0tyOXhHZldCdHpjU3kxUnVqb1Y1cF9JV190ZGVVZXJUanpIQ1FaTGtYUlJtYlM1Tm1pYXF5?oc=5",
+      "title": "Němci nabízejí obranný systém proti proudovým dronům. Hlavní výhodou je cena raket",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRmhVRmthZkhnSWctMnlJZHVUZENuOWlVZWtscVZZSVEwTXprWTRwT245WW5uY001bmd5aDVMc2pNU3pvTUNyX3BiZUR0TVV6TW1nSVliSWdCMUpnUEdqUEpLanNnUjBob0dBcVgydmZocFdMODBhbjAtTmxGVncwTTBGS3laVDFudnZlN3dSUUcwckJxN09tY2ZRc1RGWnptUV9XUTZFWmlmSjdoZEFiTjdmMVdsQnptZ1p4ZFYwX2lWNXhzb0JSS2NMWQ?oc=5",
       "outlet": "Novinky",
       "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-27T15:06:11.000Z",
-      "outlets": 5,
+      "published": "2026-10-28T04:50:00.000Z",
+      "outlets": 3,
       "trending": false,
-      "en": "Okamura receives representatives of the German AfD",
+      "en": "Germans offer a defence system against jet drones. The main advantage is the cost of the missiles",
       "about": [
-        "CZ",
         "DE"
       ]
     },
     {
-      "title": "Sbohem, Stane! Lehečka v Basileji porazil Wawrinku, Švýcarovi ukončil kariéru",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNXgwel93b2RPYW1hUG1iZkgxSFFpUURTdmIzZ3FteklnblVsZzE0TFc5dnFZRllTUHp6XzE4X19ZcE5RQXVGcDFSSzZMdF9GYjVqMnhtemt5NmZlRXdxbUlVdlR1ZHV6Nld2Q2xPRzNldW1BRTJERXY5ZWtVT0tQR2NtRHNma3lzbzBKU1FKY1RYeGgxV0RGTHpHdy1ZTWF3V0ZEdnRVS3hRNWRCeFVFbGQ1d2xtUkt0LWZ0RGlocktvaXdORXAzMlRUQl8?oc=5",
-      "outlet": "iDNES.cz",
-      "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-27T20:10:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Goodbye, Stan! Lehečka beats Wawrinka in Basel, Swiss player ends career",
-      "about": []
-    },
-    {
-      "title": "Orbánovo zvolení do čela OSN by dostalo Magyara do delikátní situace",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNjFtdjFIT3pnYUpJc002blJ4d1MwRHdXVDBZQlZTcnZlZVcwX00wRFItdGtjWkFONmgyR0Z3T1JURjZ3dHhubng0VTdNQ0xuZ1hvNHRsY2M2bkxOaGNaYnd3eko3MmhqX29KeDVTUnhzSXVTN2RXMF9kaXdzMFlzaXZQRHdzRDJ3QUdxUVVwYUtQM3F1dENBVF9NOWFtaTBQY3hRRDFYbTg4a1RtMzRoQ2RuRWxXQkNxVjVwNENuRTFURWc?oc=5",
+      "title": "Češi opět berou polská zahradnictví útokem, na Dušičkách ušetří minimálně stokoruny",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOa2JGcmZiMlBNT3NfRHRNTUkxYmx5WTJmVWljY0pDeW5Nc2E2UWd2Q1FkRENIbUlPQTVBektSTVQyTDRBOFpEQ1ZUVjFnU0NZajZ2bksxQzNEbkxqMU9ha3NEM183VEJwXzNaVUh4aEpvZG45Q2FjUmRldW5LdFcxME55NkZ1M0NfYzhQa0F5bEhNbUs0RGxnb2pwalFiVkFOLVNJRERCRTdaLXhvaU1uVjZGRW5tRXdQbUdtRWEtTWdiS21reU5fdVk3RVRXMFduZ2dkcUgtcDlqNGpNVktDcnVVemJKanViNjdVUQ?oc=5",
       "outlet": "Novinky",
       "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-27T10:52:33.000Z",
+      "published": "2026-10-28T06:30:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Orbán's election to head the UN would put Magyar in a delicate situation",
-      "about": [
-        "HU"
-      ]
-    },
-    {
-      "title": "Havel by armádu na Slovensko neposlal, Mečiar šíří strach, varuje historik",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLXR3emlHVFMwb1gwT2hDQUh1TGhFOXBiSDVKZk1BQW80RUZhR1BtekZOVXR6UjJWbWY1d09CaGpkSHhWUGNJWVZtMFprZ0lHazd4MEJyRmJabmxnYVd1NEVfeWwyX0tPSjdWR202NGN6a2x3R3JmLXVvQnBnNlhKNl9rYmh5MF9SSHFLbE5oWUdVX0hrMWpNUUhIWEg4MUdRdVZaWGtUWWxQc2s?oc=5",
-      "outlet": "iDNES.cz",
-      "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-27T19:00:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Havel would not send the army to Slovakia, Mečiar spreads fear, warns historian",
+      "en": "Czechs once again attack Polish garden centres, saving at least a hundred crowns on All Souls' Day",
       "about": [
         "CZ",
-        "SK"
+        "PL"
       ]
     },
     {
-      "title": "Blanár hájí cestu do Moskvy, s Ruskem chce spolupracovat",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUWsxUFFXVG9mRVVCc180WE5WeXFROFViUVN5SXpNVW00WUhybldtcUFWQTV1bjVtOXl3VUhyejBuWHd6WVpmWWZ4U05GcDFNeV9RcUNsM0VfWDNyM0N2NzRrZjlLeUdacklEYWc0UUx1SHV1YUdOQldPT2R3ZU0yUVBDWlphMk5LYk1yX0tmeVVGc0hSaVB2WWlPUFVKbDlJeGE2T0x3VmhuZ1c1bjdKLWdR?oc=5",
-      "outlet": "Novinky",
-      "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-27T14:19:03.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Blanár defends trip to Moscow, wants cooperation with Russia",
-      "about": [
-        "SK",
-        "RU"
-      ]
-    },
-    {
-      "title": "Zakladatelé Anthropicu se díky AI zařadili mezi nejbohatší lidi planety",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdkdWWlEtZzlCSXE0UW5TN3JyZlFfTzdqZXJtbm5sM21VWFhqVG5fekg4SXJLS0JBUWRvZzN4MFp1aDkwYWZmYkp5UVlRLXhsZnNoanZSMzFMVmRTT1czVk8wWGlWTWxYcUNBTmtCdldaOWhsZ2N1RTJsM3U4cjNWT010TUtGb1lmXzRJOXo3M20wM1oxVGVIbm0zUnd5c2FYWFhxSUM1ZTF5NmRhVndvR2J5YkhVZ09P?oc=5",
+      "title": "Neúspěšný prezidentský kandidát Bolsonaro odcestoval do USA za bratrem",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVng2ZjhWN3BORzZjVFZMMWlKQVpvcGI2U3EwT2tXcjJlSllNcUxTVmQ3SlhNSzFOS2c2N3QzeUxSX0I2dGpKR0JYTnJfOVJTTlR3T1VXV2ZhSE5HZ2hPbUNWTk1iUTBvUEQwbm51dDlyUGsyMWJlRkNiNmtaX0VtUkJmZk1SUi1WbkVwcVdkZ2VKX2F0LVE0b1R0UjNaTzJVNzY3TU1ZMW1iLUFqNWVCODRBUUpmR3BsRWZGTVRLbzRrZ0N6ckFHdS0zV2p1T1BwcmVZbmxOUlQ?oc=5",
       "outlet": "iDNES.cz",
       "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-27T14:50:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Founders of Anthropic joined the richest people on the planet thanks to AI",
-      "about": []
-    },
-    {
-      "title": "‚Nejsem překvapen.‘ Ministerstvo kultury odvolá Dvořáka z představenstva fondu audiovize",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOTl5WHlXU0JfSTZQdk4wRWNxZEpOQVpBdDZQclY4cWw1VGpKOXBqN0RjWXdjSkF4NmRYd1F2TnpHclllOXYwTXdZMncweGJDV0FmcHFraXVRVkdzLXU2MUIwSXFkMWlMVlRkRTNCVGxyV21zejh5cUdiZ0dUZ1pWOHpVNWVJUFBBdXJWNDBXRTJKYlY3QW5yX1RqQWRqaVN6MFctcW5UTk9wM3FHeDNuVnZrR0VqV1JhRUNpR1BmV1FoZ1RjNzRubw?oc=5",
-      "outlet": "iROZHLAS",
-      "outletUrl": "https://www.irozhlas.cz",
-      "published": "2026-10-27T11:57:00.000Z",
+      "published": "2026-10-28T05:59:00.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "Ministry of Culture to recall former Czech Television director from the board of the State Audiovisual Fund",
+      "en": "Unsuccessful presidential candidate Bolsonaro travelled to the USA to see his brother",
+      "about": [
+        "BR",
+        "US"
+      ]
+    },
+    {
+      "title": "Protest v Olomouci. Nechceme média sloužící vládě, vzkázaly stovky studentů",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORW5CQUo3V0hJa3Z3WnpLNlJ3VDNpVjRIR2RZa3hkOHVZSGlpZDRieVNLeE5XNmNTV1VKYjRfSUNwTDZQR2Z2SHAydkVZSnZvVURWVXNUM0Y2UGItSFJIS3ZrZVFQLVRIYnBseVBoeHRBOE9STzRVNkR0YTQ0aktSbHdiVldZNFg4WXBOdnctODNTUmZuZzhSMVZwS1JBLVFjVWlqcnVaeW1jWFBMa3UzUlI5bHNpUEhQR3VqMGFuNm0yeTVTbnZCM0tkRjE?oc=5",
+      "outlet": "iDNES.cz",
+      "outletUrl": "https://www.idnes.cz",
+      "published": "2026-10-27T14:26:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Protest in Olomouc. We do not want media serving the government, hundreds of students said",
       "about": [
         "CZ"
       ]
-    },
-    {
-      "title": "5 akcií spojených s AI, u kterých může být nedávný výprodej příležitostí k nákupu",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeGdqMXkxNHNxb28xNkRhYW51TXVoNkhCRzFicnhQUE1GcnRXN282WjVRY3NoUUVTYy00RjI2TDdiekRMMmpGX2xBUXpNLWpDV3dPTjF0UE9XU0pQcjRXYXR1WWNlN3o2MVJtajEwWFFRbTFDQmdtUWQtbUxjdm9PM2VBWU80YlRoVFVsUG1JelhOSGNGWU1iWFVBQUZvUE1xWktmUE1HM21iMzhYam1KcDM5NA?oc=5",
-      "outlet": "Hospodářské noviny",
-      "outletUrl": "https://archiv.hn.cz",
-      "published": "2026-10-27T15:18:55.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "5 AI-related stocks where the recent sell-off may be an opportunity to buy",
-      "about": []
     },
     {
       "title": "ANO ztratilo poslance. David Pražák ukončil členství, bude nezařazený",
@@ -240,162 +245,154 @@
       ]
     },
     {
-      "title": "Banka Creditas má na spořícím účtu úrok 4,25 %, nyní ho půjde získat snadněji",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMzRKSVpha1dnUEE4Z09NVTBqcERwbU1iRGI4VmxZT1pxUkludGNDTzlONnZsUnFFZjVzZVNNVHBIWHNxV0trNDBQY0FkZ3FfdE9TODR4MHFVNkVEeEtkdnM5aFRrQ2F0b2ZfcmJZNGFSVVViZ1ROZlVQcXZJemZYdlFvc0VfcjZ0aFl1R2I5RjhJRDFiNXRQVTZ3STRxeElIVE1ZWTVUWWZiaFBU?oc=5",
-      "outlet": "Finance.cz",
-      "outletUrl": "https://www.finance.cz",
-      "published": "2026-10-27T13:16:50.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Creditas bank has 4.25% interest on savings account, now it will be easier to obtain",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Demonstranti vtrhli během živého vysílání do studia provládní televize v Bělehradě",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORmpqWUZLNWtFeTM0RXhrNE5WRU5ybVNUOFlCQ3o2WFZlMmcwY3JSOWNIWGduNjVUOUN0TmxMNVhBVTUzVVgwSzNZTjI0dWxBb0tiVFZtaGJEV1BUd0FNWXdkcHE3MVVyYnpDM1BUZWRidUFaNVdRZUV4V1NDSTI1dndwUDdZX05ZdjdEM0FwaDBPOWx1WHlTRXUwWmRRVHdEWl9WN2lIMlhJYnh1UEE?oc=5",
+      "title": "Radka Denemarková: Oto Klempíř se chová, jako kdyby neexistoval rok 1989",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTjM1dEtjc1oyTnppU01VVEh1NHdfaHVjWDY1Wi1RN3hLMXE3ZHoyMm9HWDhZSnVacXRJOXJnN0ZpN09rdkdraUVHbExiRzMtNFdDN0FNWEFmWFlXV3F1SXBkR3ZXNUtLeUMxWmtKOEZhRkhxZmVFSEVtRkJGNElSenhjTk55NlcxT2FWcjBOa2NBVFYwVTItbFRLTWxDWmJuWG1OMmdmMnlURWxfbXJhZ094Qk5DYmZxWjhhSnJRdXg?oc=5",
       "outlet": "Novinky",
       "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-27T11:35:44.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Demonstrators stormed the studio of a pro-government television in Belgrade during a live broadcast",
-      "about": [
-        "RS"
-      ]
-    },
-    {
-      "title": "Trať podél Berounky čekají nová omezení, rychlíky mezi Prahou a Berounem nahradí autobusy",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRkFBU0lDRmpNVy1YZlFrNmxWY0VEdTJYRDZIUHlwM3c3a0R5a1RzZzNvb3FRck9CUmlDZW15UVh5eWpTQkl1MU9uMmtrT1FhdjB4R2hqck5ObXlEaV93eTdNX212NDJCUDBYd19pWjdWNS1xWlJDa1lPTHlkZ0pPMXMwR3NlQk1BNlZhMmdGOGxPQk0yWC1UeGtSaW45SC1abTZWZTVIZlN6VjRjUExYMzhBbm1uUkU?oc=5",
-      "outlet": "Zdopravy.cz",
-      "outletUrl": "https://zdopravy.cz",
-      "published": "2026-10-27T18:33:17.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The railway line along the Berounka faces new restrictions, with buses replacing express trains between Prague and Beroun",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Ceny rýže vystřelily o 80 procent. Čeští zákazníci zatím mají jednu výhodu",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQzBabzQ4VjE3VWdsZnc3RTRLWVVOTTIxN3VIZjJnTlhacmF6MUVMaDNuX3JiT2RlR3pidWpkYjVyc0V6a2VoMnA0OHhlb19jbXdxRjgtdE1VcGNmZFcxMGVtcUF1R2c5Ynl4UzU4ZUVva29OVTJ3N1A0ZC1seVBqNnpZbDJYV1Q0d19UTTBtekh2RHNJM2h6NW5Xbml0bjhScHpWSFN5SmdjRzY1QlpVeHZLak5Dc3hoZDhHZw?oc=5",
-      "outlet": "E15.cz",
-      "outletUrl": "https://www.e15.cz",
-      "published": "2026-10-27T17:00:00.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "Rice prices shot up 80 percent. Czech customers have one advantage for now",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Vedení ODS zrušilo místní organizaci v Plzni-Slovanech-kvůli povolebním rozporům",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQYk5aaVY5bTVFWm84ZXBiMzJ4Si1GNFNEV3lGRENtSnJIMlhNYjRnQ21FcFIwck9mOGVESGpuWnBqLW9ab2o3SlViUlZvUkMyWlU2blRqSnI3MURZSEdlUGZNNjcteUZLcnlEdE9Tc3RGbkZiaXo4emY4ZUw4bnY2Wlo1dmZFbkJya1MtSHV4c1BDcWJOeW81WlJNdTQxaXhsdnJ5bl9RdFVmZUVNY2h4empwOU1TZTM0N0U4d3hlaUQwNk44NVlqZDFsYWJSUmp4Y25jQi11ODA?oc=5",
-      "outlet": "iDNES.cz",
-      "outletUrl": "https://www.idnes.cz",
-      "published": "2026-10-27T17:29:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "ODS leadership dissolved the local organisation in Plzeň-Slovany due to post-election disputes",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "První CV90 dorazí se zpožděním, obrana chystá nákup dalších systémů Spyder",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVEc1dlhvRUJ4RXB0S3RjVS1waFBJOG1SZUU4QTZFZ0hOUklBeERoS3FpN0tiMkdlMW9qb2JaaEdfaFNKdnpNaC16SjVXMkZycXhNOWoxMzd2YkhDUkYxeFZ1QmZvVVVNLVdUTU0tWlhiakwwaUQtSllLNEtFOFUxS1RKVERNdzhwbnBiQ2VfdEswSmdBOGpyN0dtbFlmMUlad2FsUjcwd3Fudkc4Wndnd3p2cE1oVjRnSXZB?oc=5",
-      "outlet": "Novinky",
-      "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-27T17:13:37.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The first CV90 will arrive late, the defence ministry is preparing to buy more Spyder systems",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Záchranář nebo střelec. Série zachycuje české vojáky na přísně střežené základně",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNalpBTmdrX29sQlJpNlpxRmRtTzBlR0dwemk2aktCenpKTmwxSmJ1d1hILUU3ZTJ0QkdxWVE5U2tGV2NhaEdSdkJNUm54ekp6SnkwUGhlZm1aVWxYRXNzNjBqV1NvUnBMSExDU0RrdFdSLTRHUW1ZRGVES1J5Q2VSN21EcHFHUEw2cUhpNDdtQ0Y0UQ?oc=5",
-      "outlet": "Seznam Zprávy",
-      "outletUrl": "https://www.seznamzpravy.cz",
-      "published": "2026-10-27T17:05:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Rescuer or shooter. Series depicts Czech soldiers at a strictly guarded base",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Trump bez důkazů tvrdí, že brazilské volby byly zmanipulované. Bolsonaro nepřímo uznal porážku",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPU0hkMkI3WmFLNml0SnVTdkQxTG9QU0xoSjNBek1NWDdjNGk4VWdybFFSU1ljTW95S2pwSmJkNmZwN2pUT0trM1hnWFJfSS1EOWFKS1AzOUhBbkFzT2FDNGF3eDVSV2VXTVd4NVAzeXVaU1g5N2lnLWR2bnNkT3dZZnpJd2stVTdLeXVjbDRZV2MwNHc4N1ZOcHZwQVM2MkJ3OU1sWjVoZ0lSMk03VHhxMzlocTdNQ2Y1TWR2VlY5ZVdpRl91RlY2Ng?oc=5",
-      "outlet": "iROZHLAS",
-      "outletUrl": "https://www.irozhlas.cz",
-      "published": "2026-10-26T21:21:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Trump claims without evidence that Brazil's elections were rigged. Bolsonaro indirectly acknowledged defeat",
-      "about": [
-        "US",
-        "BR"
-      ]
-    },
-    {
-      "title": "„Teta Alena“ navštívila Sapu. Vietnamcům vysvětlovala EET, zkoušela si i svetr",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTFFZZHZlR2hpY3B4T2ZOd3dINFhJcmlKU2FhN19SMTBQejV2MFNaZUQtem5EdVFCWUtoczNRdklwMi1sOGxjeU52LXdiYWxycWh4Q3paaVZVd1RISFhyOURrYVVyNGJJbTBCM1UyaTFYRGNtT3pLS3pIRF9kcXEtTXNZVWc3UFlCdUlZUXNUQ0pIUTgxMmRnLTdYbmM5YzIwc1VXeUdTT3R1QkhEbGxZTDlRNVNkUzNtWXJvVVpjNlY5aGVlbDhncmJieVE?oc=5",
-      "outlet": "Seznam Zprávy",
-      "outletUrl": "https://www.seznamzpravy.cz",
-      "published": "2026-10-27T17:54:59.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "\"Aunt Alena\" visited Sapa. She explained EET to Vietnamese people and tried on a sweater",
-      "about": [
-        "CZ",
-        "VN"
-      ]
-    },
-    {
-      "title": "Stát chystá vyšší poplatky za vodu. Kdo na Jihlavsku pocítí zdražení nejvíc?",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbUVuR2kyclo4MWZWLVF5c0M2UWF6N1hGREh2cWZ0bnNtWkpHb3doSm1la2dpcVdFNU50OXVJaF9hSmJPTVFTdENGdlVOUVFJTFFCQTltQTFGU2x6QzVSTlJIZTJKQnZJVF9TVW5XYVEyM211X09rUG5POUZQWUlmMmR0SENYZHFmcmRab3VsNFpCZnBlOHRNRzZ2OEI0cVVkdVRJR012Q3B3eDA2NU55ZW5EMmE3bFBZTGF1M2Y0NHlSZw?oc=5",
-      "outlet": "Jihlavská Drbna",
-      "outletUrl": "https://jihlavska.drbna.cz",
-      "published": "2026-10-27T16:35:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The state is preparing higher water fees. Who in the Jihlava region will feel the biggest price increase?",
-      "about": [
-        "CZ"
-      ]
-    },
-    {
-      "title": "Kostra Nanotyranna se v New Yorku vydražila za miliardu",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPajlSd1Jabk92WXNneUhKWUJ1SzFkaE9EczBsSG5jdDB5SE85Q095d2pfS0pscGlXVGVNZ18xMWJVWHAtNlNZYjFPVk5wbjJWV0NSTmlQUU1TaC1Wc3ZCMlNhTTN2b2lOeU1XMjNnUVVtTVVFNXBoOWN6ODhqb1hPZi1VbEJEcHZUSmVCcjZvMEhsWFpIOTFXTm1Mai16TUZQRWxSY0hGVlk?oc=5",
-      "outlet": "Novinky",
-      "outletUrl": "https://www.novinky.cz",
-      "published": "2026-10-27T18:44:44.000Z",
+      "published": "2026-10-28T05:32:00.000Z",
       "outlets": 3,
       "trending": false,
-      "en": "Nanotyrannus skeleton auctioned in New York for a billion",
+      "en": "Radka Denemarková: Oto Klempíř behaves as if the year 1989 never existed",
       "about": [
-        "US"
+        "CZ"
       ]
     },
     {
-      "title": "Trump pod tlakem, Nixon znovu v kurzu. Zasáhne Ameriku modrá tsunami?",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZHlZOERMTFY3R0tkZmxsa1ZoMFMyUW83dU00TE5xM2o1N2lYX3B0RVZPY1pIMVpXUENvNW40dE9mNnpyY0l5QTlCTUd0R2ZCQnhNbGFFbFRUZGV6cmpSOHBac3c0enVCeU9JdjBuM0twSTBNZzNUS1ZuSGhCSmJ1N1NiV2dieHhMZExqNXRvYlZ1OGNxZVZ5M3Q2OEJfY1dJZURqSTFSYi1aSEFMLWJRQk5jR2djcGstN1ZSbkEtMFotRjVsbDJVeldKd0hBRHV3dTdVdA?oc=5",
-      "outlet": "Lidovky.cz",
-      "outletUrl": "https://www.lidovky.cz",
-      "published": "2026-10-26T15:00:00.000Z",
+      "title": "Kdo ovládne Škodu Auto? Němci skloňují první jména, vítěz zdědí i hrozbu českých stávek",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxONjJtalYxTmpnclZEa01jTWRuRXFhU2hMNHRidmRCbTYzR3JTSDQ3LVI1MWxzQjhYSm52OTh1LTFtWEtPTUVXenVSSzMyNllWZE9KcXcwVXJpVUtxdUVkVHVoTTN6U0VqeDJwcjd1NDFBNkFBNjBzaFB0NUZ1SUpHTUhTZVVSNERtZGRhbFg2cFZTN3B3U2phV3hVUmdyaGoyZm5Yd3NDM0VjeWoySVZmbDlWMkhVNEV1YmZyUUs5eDk4ZHhENVJ0dmtmMl9peUdRYmNlNnlpR2xXazVJcWVwdENn?oc=5",
+      "outlet": "E15.cz",
+      "outletUrl": "https://www.e15.cz",
+      "published": "2026-10-28T05:00:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Who will take over Škoda Auto? Germans name the first candidates, and the winner inherits the threat of Czech strikes",
+      "about": [
+        "CZ",
+        "DE"
+      ]
+    },
+    {
+      "title": "V pravé poledne nastane noc. Kde sledovat nejdelší zatmění tohoto století?",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOWlQTGFIbW9BZkMyQjdYbTVmVjgxWlp6OW9ld1JZdnNpNWpXRm1lampkY3RqTkJ6VlFEcE1GenZGY3JXSU4teVNoSksxVlJPSmJDNXNkT3ZoMlB1NnVHeHoxVWFMS1psNG9sLXpoamgtT1E5OFJqSlZXcFEtdmQwbE9Hb0J3cmpxRHFXY0N1TUN2ZTJKZEhrdEphajJiRFhrZ2ZEUTJ1a3NXOWhfQkxnV215b0hPaTJ1V0xubExydmRfcUJTbC1YM1RWaUR0RFJic0dOM20xQmwxN2xmelE?oc=5",
+      "outlet": "Aktuálně.cz",
+      "outletUrl": "https://magazin.aktualne.cz",
+      "published": "2026-10-28T07:59:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "At high noon it will become night. Where to watch the longest eclipse of this century?",
+      "about": []
+    },
+    {
+      "title": "Provod na tribuně, hvězda bez čísel i dvojka v laufu. Asistent Slavie promluvil",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeVhLQkxKNWs2bGRzTW1ZX3V2dmMtUTFwbjNNang0M0xqZ3FXVFpjNFd1dWNRQ0xOT2hkUTlrTm4yWjFXZm5MZUpZcVJ3Q2JmUWlMUFdzM2lhMklZSDIzTDBXeGRVeWI1X3poN2dyc25BX3dfQ25peW9vZEs2NVZWTi1sa05wOWZjOHdHMmVDcnNHN2RLbVQ0TUktVDlFZFFuVmJBUC13VVZtTmxMVUxjeGRnN0JtM05UYkdGdExfeEpjTHNs?oc=5",
+      "outlet": "Sport.cz",
+      "outletUrl": "https://www.sport.cz",
+      "published": "2026-10-27T22:48:05.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Trump under pressure, Nixon back in demand. Will a blue tsunami hit America?",
+      "en": "Lap of honour in the stands, a star without numbers and a two in the lane. Slavia's assistant speaks out",
       "about": [
-        "US"
+        "CZ"
       ]
+    },
+    {
+      "title": "Nelítostný Lehečka ukončil kariéru grandslamovému šampionovi",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdUd2Q1hyUWV5OW5Nay1KNVJoRGdtVmNNOE9vYWFKSENYUXpnNGRWU2d4UzZpRE9KWWt0NmNPNEFnODBNclR6bzQtYkNERmIyNXIzVWhLREtHaFhCQlJzSG5ub2JuVmpxVlotYmwzelFhYW1VQzhtcXdpRXJPcE5oRXFDdDhmT0FTMi1fS251ZlVVMTNmcVVrYmpHeW1fQkgyRHJnVmhYNzF3UTFkdEQzQ2FfY0tXeHRsa3lmYXk3R2xpTzlNMDNv?oc=5",
+      "outlet": "Aktuálně.cz",
+      "outletUrl": "https://sport.aktualne.cz",
+      "published": "2026-10-27T22:47:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Relentless Lehečka ended the career of a Grand Slam champion",
+      "about": []
+    },
+    {
+      "title": "„V horku to divočí.“ Začal soud se syrskými bratranci, postrachem německé plovárny",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOaklrRTlPUkNoVXpjSlh0LWs5TWhsSHZjT0JkdTZrZi1Hc19DVUJ0WG1UQ1JRcU91b09JSHFRTTB3b1JrNXlqNzN0OHlOWXNNbWNUMWdnRlZvWGNKRFdJUEFkYVBjMWVGaHFzaXlsUk9oVnRrRUVVTS1pWWd5U29vMWQzUUEyWXk4RzVteHNGME40Wm9BVWZFZEZ6QXNHeWl1Znd6T3Y4VDRIX3FkaTZlVG43RjRCUGxBV1lla29jdXB1NU9IWFpORmRjdmxqOVFVbGNVczlFWlliVVpzTUktRDc4RDd1dw?oc=5",
+      "outlet": "Aktuálně.cz",
+      "outletUrl": "https://zpravy.aktualne.cz",
+      "published": "2026-10-28T07:42:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "\"It's wild in the heat.\" Trial of the Syrian cousins, the scourge of a German swimming pool, has begun",
+      "about": [
+        "SY",
+        "DE"
+      ]
+    },
+    {
+      "title": "Vizita: Kde se léčit? Pacienti dosud měli volbu, teď dostanou i informace",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZVhDV0lJTWRfRktDTlBubFl1S1E0amRHLUhGbGdRNHJuTUI0emh5djVOMWxOREhpUldzVlQta2tES1pGSXlWbWxRTWNIWDZDSUd0VVF4QzgyVzVoMVdnRWRVTjZQZG1LNUN5M09kV2I2M2hzdUhUWDBrRlpkZWpYRjEwWFJUbFg0cVROeFE1Q2ZlbWpSSENwY3E1WDlicllzWWN4UHA1QWc1WkZLOF93N0FyYjRLdVVEX1NLSjljbXlnb0FQT3d5bw?oc=5",
+      "outlet": "Seznam Zprávy",
+      "outletUrl": "https://www.seznamzpravy.cz",
+      "published": "2026-10-28T07:30:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Visit: Where to get treatment? Patients have had a choice so far, now they will also get information",
+      "about": []
+    },
+    {
+      "title": "Konečně brambory! Zbraně v příměří ztichly a někteří se chystají opustit frontové ukrajinské Olešky",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWmZhMlRyRUFGcklWLTBMQnF5QmxRbUhLcjZMUTktcVFYVjNGOW9FRU1ZZEhTUmRiSHB4eE52ejE0ejVzMFFFQzFrQVVtaHdGS3F0WG9XRld1QWh3Q2c5MDdfNk1QVjFqZWdDb0Itam1yMU9KVlp4Z1JjUjRhRVdEV3ppdVFMd3VyajllNWpaTEYwbWcxUjctNUhwUGNaal9RM1djdVg2VUhud0twSmR3SF9UVVUwMzJxZFRrTg?oc=5",
+      "outlet": "Deník N",
+      "outletUrl": "https://denikn.cz",
+      "published": "2026-10-27T16:04:06.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Finally potatoes! Weapons fell silent during the truce and some are preparing to leave the frontline Ukrainian village of Oleshky",
+      "about": [
+        "UA"
+      ]
+    },
+    {
+      "title": "‚Nejsem překvapen.‘ Ministerstvo kultury odvolá Dvořáka z představenstva fondu audiovize",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOTl5WHlXU0JfSTZQdk4wRWNxZEpOQVpBdDZQclY4cWw1VGpKOXBqN0RjWXdjSkF4NmRYd1F2TnpHclllOXYwTXdZMncweGJDV0FmcHFraXVRVkdzLXU2MUIwSXFkMWlMVlRkRTNCVGxyV21zejh5cUdiZ0dUZ1pWOHpVNWVJUFBBdXJWNDBXRTJKYlY3QW5yX1RqQWRqaVN6MFctcW5UTk9wM3FHeDNuVnZrR0VqV1JhRUNpR1BmV1FoZ1RjNzRubw?oc=5",
+      "outlet": "iROZHLAS",
+      "outletUrl": "https://www.irozhlas.cz",
+      "published": "2026-10-27T11:57:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Ministry of Culture to recall former Czech Television director from the board of the State Audiovisual Fund",
+      "about": [
+        "CZ"
+      ]
+    },
+    {
+      "title": "Řidička autem probourala betonový plot u letištní plochy na Ruzyni",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNUFZQVgyUV9aZUR6MEI3bno4QUViNmN1NDZtbFdsOTEzeW5Yd1VwMG4zRVFMNURhVWJuVVBQTXJPNV9RaVg2TjA5YzU4TWhaVk1EemFsUUZwQzNGRGZjaEZSWThVRm9JcVk2empFY1lYMnNheTdabkJ6N21oSEZhWXZwSlVuSjFnenBmRWVsOW00WFhod3huWWVicllmS1NnNmlqVXhWY2dfX0l3V0JCSw?oc=5",
+      "outlet": "Novinky",
+      "outletUrl": "https://www.novinky.cz",
+      "published": "2026-10-28T07:01:55.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Woman driver crashed her car through a concrete fence at the airfield at Ruzyně airport",
+      "about": [
+        "CZ"
+      ]
+    },
+    {
+      "title": "Výsledky voleb v Trutnově skončily u soudu. Ustavující zastupitelstvo se odkládá",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeFl0LUhBa2k0Tk4zRU81elptd3lyZDdXcEgzQ1QxLVRHbzFSM3MzR1lwWF9icUVaQVNnSlJQOTI2VC1IU0pKN1ZEaHRCbzQwZGQ1bUQxajlEVUdTNzFvQnpkMEhKNjNyOUc2alhWVGZOLWU2N1pEYmUzMzdmcTh2SEtoYlYzbExYRXdYTU1kMHFsbjNXblhCZkNCUVc0T2Q0T2VHd1ZDcHlpMzQ?oc=5",
+      "outlet": "Trutnovinky",
+      "outletUrl": "https://www.trutnovinky.cz",
+      "published": "2026-10-28T06:48:03.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Results of the election in Trutnov ended up in court. The constituent council meeting is postponed",
+      "about": [
+        "CZ"
+      ]
+    },
+    {
+      "title": "Zakladatelé Anthropicu se díky AI zařadili mezi nejbohatší lidi planety",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdkdWWlEtZzlCSXE0UW5TN3JyZlFfTzdqZXJtbm5sM21VWFhqVG5fekg4SXJLS0JBUWRvZzN4MFp1aDkwYWZmYkp5UVlRLXhsZnNoanZSMzFMVmRTT1czVk8wWGlWTWxYcUNBTmtCdldaOWhsZ2N1RTJsM3U4cjNWT010TUtGb1lmXzRJOXo3M20wM1oxVGVIbm0zUnd5c2FYWFhxSUM1ZTF5NmRhVndvR2J5YkhVZ09P?oc=5",
+      "outlet": "iDNES.cz",
+      "outletUrl": "https://www.idnes.cz",
+      "published": "2026-10-27T14:50:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Founders of Anthropic joined the richest people on the planet thanks to AI",
+      "about": []
     }
   ]
 }
