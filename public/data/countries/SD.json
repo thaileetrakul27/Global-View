@@ -2,7 +2,7 @@
   "code": "SD",
   "name": "Sudan",
   "kind": "world",
-  "updated": "2026-10-29T13:38:14.413Z",
+  "updated": "2026-10-29T20:03:15.927Z",
   "source": {
     "name": "Bing News and Google News",
     "edition": "search",
@@ -10,57 +10,195 @@
   },
   "articles": [
     {
-      "title": "Sudan accuses more than 20 countries of supporting the RSF logistically and militarily",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeHNCM21yN1NtYjlYdEhMTFpkTDQ2RldmVTlOY2pmRDVQa29KQkU2YjJNLTZ3eTRIYkV6TnhjNE5oWVdaRHh3VGVFMHo0cWdvMlpscVBueDhoUVJwZm5oVnVhd3JNQmY3czNMcEpEUlctZ1N5NWM0LU1pMlV4S3EtZTFHeDYzVHVTNDdYYzFGanBXM3kyRF9xWFViclo2aUhtU0xWVmY1ZXJhaHg2ZEdENDBPR2E1QUR2aDhyUTZlejljYXNZcmZmX9IBzgFBVV95cUxQeU9SbjRoRGE3YTVMYWZRbTROZG1ybk5EeE8yVnNmZ0lBZ1M3bnFIa25BLVBrMVpCeC1id3NLSW5zOUU4SnhTUXhaa01EcmxkMHlnRGV1VmZ4Q19zRnpDWWFMWnN6cmFDRU16eEllbDZUWVRZM2p5VkN3S2NSOURvWnBfWFJjZU5CNWNBdl9JQ3piTG5WQXZJUTNOM0NqQXdPWGg4ZGRpdUlmR0h5cGxtMGtFdWYwRkhqTUpZYVpSZmxmNXRPU0kyQ2xuY1pjZw?oc=5",
-      "outlet": "Demócrata",
-      "outletUrl": "https://www.democrata.es",
-      "published": "2026-10-29T13:28:54.000Z",
-      "outlets": 3,
-      "trending": false,
-      "en": "Sudan accuses more than 20 countries of supporting the RSF logistically and militarily",
-      "about": [
-        "SD"
-      ]
-    },
-    {
-      "title": "Sudan: At least 21 killed in airstrike on South Darfur market",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVnZLaktyalRSYlJVMTBZUkRmQXV2NXZMTnhzT1VjUHRTakhINHVBbi1hMkRoYVRmZnQ5R0NEay1mMWNSZy1iODFBUm9qT3U3NWZoQUtkTmljN1h1UDI4SnZXUktHelB6QXdmcDNvZVpoV3pUYW1aUjRzM01ieklsWDV6aGdRdVhmZFpMZzZUaWVldFdJbFVpOEZEUlNjdUd3ZlE?oc=5",
-      "outlet": "Agenzia Nova",
-      "outletUrl": "https://www.agenzianova.com",
-      "published": "2026-10-29T09:29:59.000Z",
-      "outlets": 6,
-      "trending": false,
-      "en": "Sudan: At least 21 killed in airstrike on South Darfur market",
-      "about": [
-        "SD"
-      ]
-    },
-    {
-      "title": "Sudan civilians trapped by drone strikes and state arrests, UN says",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBmNGIwLU1Rbkw2V18yNHlla1NlZnNKSHpIdGpyRFY2X25vcVItTGl0aW5qRXZ0VkpFWTVxNHNkelUxeWtKMjJoQWJfc3U4UTNv?oc=5",
-      "outlet": "Sudan Tribune",
-      "outletUrl": "https://sudantribune.com",
-      "published": "2026-10-29T12:33:59.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "Sudan civilians trapped by drone strikes and state arrests, UN says",
-      "about": [
-        "SD"
-      ]
-    },
-    {
-      "title": "Sudan Repeats Ethiopia Drone Strike Allegations",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUEZLdkhPVzExbEp2WkkwVWdTakNNM0dJYzFGeDFTUi1aYWdXSWVvenRsRG0xMHllb1dLUy03OGYtZE4wNzJPOUp3NlJXbEEweGVzeTVpYnFMNHNQdkpzaE4yREFWejl3bnliS3ViQU9qTkdwQ2E3V0dWcVpKOFBvYkJtRXNhZlRUU3JhTU15SE03SGJoRkhncnNIeUEzUTBLY19zanJNSWtBbE9aYzhaa3YxRWZkQndIQkNtS2xBeXdiUUw1RVRLX01pQUtEdExDUlU0WXIyN2VsbDRzc1FrVTUyQjgtUVdqS2dBeC1BQ1lPdw?oc=5",
-      "outlet": "Oz Arab Media",
-      "outletUrl": "https://ozarab.media",
-      "published": "2026-10-29T13:12:43.000Z",
+      "title": "UN Brief: Child Deaths in Sudan, Haiti Hunger, Yemen War",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeGJKSVFzeF9DVzB2TnVvTHBNeXBKUXV2WXg5clBLbkpfMXRtMFkzNFVOVElhb0JtaWoyMi1CRm5PNWtxSTZOdzQ4N1FteUJkS0ltTEdwNEZGTDJqX0tFdWhycExydE1faUJ6TWh1YUhsR2xmbHduWVU3WGQwcFJfSzVpRGNQQQ?oc=5",
+      "outlet": "Mirage News",
+      "outletUrl": "https://www.miragenews.com",
+      "published": "2026-10-29T19:52:00.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Sudan Repeats Ethiopia Drone Strike Allegations",
+      "en": "UN Brief: Child Deaths in Sudan, Haiti Hunger, Yemen War",
+      "about": [
+        "SD",
+        "HT",
+        "YE"
+      ]
+    },
+    {
+      "title": "Sudan war puts Saudi Arabia’s mediator role under scrutiny",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbzE2aGY3MHNWX0xvSWFwa0k0a0wzSkdQOUlwWjhBNEdQMFRBMURDeVFmOEpTWXB1aDA1dUoxZHVhWXBRWS1mc2wxQmZvTnd3SWI3dF9ZNnV1NFRYRXFwaXd2bU1ULWczTDhBZUJwR01LYzV1WTNFWk8tRkpMZlk3OWlEOWZ3c015alRv?oc=5",
+      "outlet": "Capital FM Africa",
+      "outletUrl": "https://capitalfm.africa",
+      "published": "2026-10-29T19:51:46.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Sudan war puts Saudi Arabia’s mediator role under scrutiny",
+      "about": [
+        "SD",
+        "SA"
+      ]
+    },
+    {
+      "title": "UAE sentences eight people to life over arms supplies to Sudan’s army",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPU2VWZFF2b1Q5eHZ6aGdvTC0xZExxVnBjSzQ4aW5yLUhnQ2wxT2I2VDl4Y0g1QU5wdlk2dEFHQU15cy1waTBaNmhobWZSSFpXWjhCb3ZpX0tsWjNiN21KUHFfOWp0X3pSdXk2eU00bUZuRG5MYTQ0WDdVTmFwTXdpMmVYdldXVmlabDE3cWdoNXNiZ2tEVThiQXNta1hoR1F5R3JUV1B4anJTYTJFdGFB0gG0AUFVX3lxTE9yMjFGeEhsaktycXM5Qnc5LWV4NWxQNTBCMUdRV2h1ekplaTJyMThRWnhyNnZLQ0kxbmVkWUNjN1g0MmhnNzZrWFBvUnQ2VWpJMW5uWGlmYVcwdmVYTHJ2ZmtJTlh6a05mOVBPUUdoazRXaWJHYVFWOTZxQzlnRVlGQ202SjZkOG9RMTVUeUcyOVJRZnBWTDVJcVNFLUhzUTBzN0ZwVnlDNS1fWFNjaUZKam9nYw?oc=5",
+      "outlet": "Al Jazeera",
+      "outletUrl": "https://www.aljazeera.com",
+      "published": "2026-10-29T17:27:56.000Z",
+      "outlets": 2,
+      "trending": false,
+      "en": "UAE sentences eight people to life over arms supplies to Sudan’s army",
+      "about": [
+        "AE",
+        "SD"
+      ]
+    },
+    {
+      "title": "Egypt Abdelatty, Trump adviser discuss Sudan, Libya in regional consultations - Foreign Affairs - Egypt",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZEs1NzFvNm5LREgtREpKemFkWDhTeUpGa284UFIxUHF1T25BX2taTVdLODRCdmVfUzNvTVlBTkdCNE15c25oeFBrOEdsV1cwRVd4bWt3QkRmQWl4dnZtTDMwMWg5bk5oRGUxZ1hrTGZrbTRodXFXV3h5V2dyY0QydlR2SlZ5ZVpCLXp5cGdENG4tNzZVd2lfbG1FNFREZ0d4T1lLanBqLWIyWndTcHNveW9R?oc=5",
+      "outlet": "Ahram Online",
+      "outletUrl": "https://english.ahram.org.eg",
+      "published": "2026-10-29T18:03:06.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Egypt Abdelatty, Trump adviser discuss Sudan, Libya in regional consultations - Foreign Affairs - Egypt",
+      "about": [
+        "EG",
+        "SD",
+        "LY",
+        "US"
+      ]
+    },
+    {
+      "title": "Sudan accuses Ethiopia of launching 162 drone attacks from its territory",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMEFIdXViUDRzTWF2RUJHQkZZRldTY0JXdmJhNjRXN284VGhzNE5iekIwNXlTRFhULVV2aXdSVWloOUZoUV9sWUpSWkNIYVBOX0xXc0NyZVFiM0F4OUtYTjhXcWQ4SG5UdWdyTnFMTFY3Q1FJa3RXMkVOSC1lVlE5clNVMXR3Wmx2ZFNDRHphVlZnN1BISXJHUzhfWFIyclBJbXhVNzB4WThEMmRpN2ZzbUxvSS1JeHBmQVJFUnh3?oc=5",
+      "outlet": "Dabanga Radio TV Online",
+      "outletUrl": "https://www.dabangasudan.org",
+      "published": "2026-10-29T15:29:28.000Z",
+      "outlets": 2,
+      "trending": false,
+      "en": "Sudan accuses Ethiopia of launching 162 drone attacks from its territory",
       "about": [
         "SD",
         "ET"
       ]
+    },
+    {
+      "title": "Central African Republic: Containing the Fallout from Sudans War",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWHdDY1BCQ25NUlBSSUMycVA2UW1zQmlWelBLRVlHR2xfRHZDYW9UV3NnazVYSHFTRVpvRzFFUG12d3VvNFIxeGpmeGhIbmctUzROcXNpR0llb3diTXhwMG84ZzAtdGh4ZF9lMW4tOEZQOXdmdFdWNFpEUmsxQVRLcjhzSGxzUFIwUWRUQXhkd3ZHSW4zbll5cmdEYU1vOTU0TGVudDlVRXlOM3RB0gGyAUFVX3lxTE1vdzlXRFlmZnh2U1BNVjEyRTdfVEpTZzNvS014eVZZbUFQWTZjc0YtdmhXU3FtT0ROcVNLR0ZybEhGYnptT1RIekFseFNoeEFhQmZKb2k0Znd3RERTblVBMVdxMUhWbDlfRVJndVBtSUNScDFTWWIyVjZQRmp3S0ZXYUI0SUNLc09CSlBsWGR2ZHRhVUd4d3FXd2tiQlJ2RjBDUDZnLTNLTWZlaUZoT2ZzdkE?oc=5",
+      "outlet": "Nigerian Voice",
+      "outletUrl": "https://www.thenigerianvoice.com",
+      "published": "2026-10-29T17:29:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Central African Republic: Containing the Fallout from Sudans War",
+      "about": [
+        "CF",
+        "SD"
+      ]
+    },
+    {
+      "title": "From Port Sudan to Mogadishu: Saudi Arabia as a Player in Red Sea Conflicts",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbFdtVTVWWndxUXc4SXRabUJXMDl3eE1Wal9COG5xdFE2OFQ4Qk9sN1VFNS00RWlKcG80TXVsRmxHaUtXVk4wa05vNUp6ejQxdjZQaWk3b0FuVlNSSzFlRjRZRk1BWGNTbW15R2JCMEU5anF6WUtsX192bHBHaTNXSXRkT3VTWmhJTW80b0R5eVMxZUxDTFFtN2p5SQ?oc=5",
+      "outlet": "EU Today",
+      "outletUrl": "https://eutoday.net",
+      "published": "2026-10-29T17:02:58.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "From Port Sudan to Mogadishu: Saudi Arabia as a Player in Red Sea Conflicts",
+      "about": [
+        "SD",
+        "SO",
+        "SA"
+      ]
+    },
+    {
+      "title": "Turkey’s drone diplomacy and Sudan’s civilian toll",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5TSFZyb0JfLWc4V2ZlZjdQZXQyTU5SbkljakNNV0lIQ1NVejJiWVpmdm1NVnZTUnJMczlxcVp6cDIzMEVXRmoyQ05VZHNSSUZlRDJzc2ZyTHNzYzBHMEVTNlhCT2ZTX0wxMmRPQWR3U0xodVBuVC15NA?oc=5",
+      "outlet": "EU Today",
+      "outletUrl": "https://eutoday.net",
+      "published": "2026-10-29T16:50:02.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Turkey’s drone diplomacy and Sudan’s civilian toll",
+      "about": [
+        "TR",
+        "SD"
+      ]
+    },
+    {
+      "title": "Over 100 dead after drone strike on market in Sudan’s Darfur",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRGpTRF9hZm5hUWRXR0w0bmRvbHg3eEp5ZGF5SE9PN2ROUEgxUE05WU80c2dYUVpfbEFobnB4ZVY0cnJaVnpoR21WSUZRTUwzMjcxbmZJbVc2X1R2UVhBTWxzOW8zM0ZZeVBwekRJZGNITGRlSHM4M0lmbmRDaHljdExkeEZpbG96M1E?oc=5",
+      "outlet": "The New Arab",
+      "outletUrl": "https://www.newarab.com",
+      "published": "2026-10-29T08:29:20.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Over 100 dead after drone strike on market in Sudan’s Darfur",
+      "about": [
+        "SD"
+      ]
+    },
+    {
+      "title": "Seeking peace and justice: South Sudan's road to its first elections",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOV3ItRHNWY0x2Snh6OGliQmY3bUNIMWVjajB6WkktcllJWnF2M1ZaRmFJN0staEhqbnBjMFA5QjRYcjBUZ3VCaFRwZ0xjUEpmdzZ1dUFsbXlVdmlDYUE0dktHNXM2ZnFoQm44QlF5MEs2NXdabmRKZkFKNjNzWXhnVnREM3UyQ3pfOExudEJmWDZIWHBfaTNUM3cwUFJRU2N2VGc0aHR2OA?oc=5",
+      "outlet": "ohchr",
+      "outletUrl": "https://www.ohchr.org",
+      "published": "2026-10-29T16:22:31.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Seeking peace and justice: South Sudan's road to its first elections",
+      "about": [
+        "SS"
+      ]
+    },
+    {
+      "title": "What US aid cuts did to South Sudan’s clinics | Fault Lines",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5wdzNuaUpmcjhDazl6ZWRSU25SZWdfVHg2cDNoSWo2M1k1aFVmdWRfTXJRYVdxQkctUTZHczhfSHJWWGM2bmd0YUlRRkZkZklQdkowX0tXY2xpTWhiSWx5VEswMUhraTDSAVxBVV95cUxQdGZfNmI0c25tdnlyXzhPOVB3N3FZeXdvUGZsS2tsTTJxdF9nMDQzc1dqbUEtSUxlT3lCQ19TNFFjX3F4eGRVam5ZZDZGVU5tTG1xU3ByMzhTUWp1Ng?oc=5",
+      "outlet": "Modern Ghana",
+      "outletUrl": "https://www.modernghana.com",
+      "published": "2026-10-29T16:20:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "What US aid cuts did to South Sudan’s clinics | Fault Lines",
+      "about": [
+        "SS",
+        "US"
+      ]
+    },
+    {
+      "title": "Nearly 120,000 displaced in Sudan’s Blue Nile state since January: UN agency",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSndDWUpLVURkR0tHTkZQa0QyTjFLWWd4NEVZOTQ3Nl9HRGdPNjVmVTBaaDlJcEJMSWU5dGVVSjQ1bWJkdk9tRWo3OC03OS1RTUhBUXZxRkZjNHJRdlplam84VFhrd1FvWktkdnBLTHg3REJJaW52M1htTDRaY0pmbzBVdUVKVV9pMFJhaWViTnZua2FnTk1pLVlCTlphX09rWjE2OVBGTzltWEljZlREdA?oc=5",
+      "outlet": "Anadolu Ajansı",
+      "outletUrl": "https://aa.com.tr",
+      "published": "2026-10-29T16:13:41.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Nearly 120,000 displaced in Sudan’s Blue Nile state since January: UN agency",
+      "about": [
+        "SD"
+      ]
+    },
+    {
+      "title": "Mohamed Izzeldin released after charges against him dismissed",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbGdCUHl2VFVURmNTNjhENFEtbGVpMVZXUERDc0pHdktqNDFtdkItd0JHdzlUcS1rcTBZSkFfcW84Xy1UV2NBWjRnUDdSY0ZHWF9PWmpNaGlLUTFra19faGV6eU80dTRObHE0UDVwYklaRW9vRW02LVpPMEwtRnUtZldOSFY2QWMyTUQxZzFSLXBEbGlVTTY4R2YwdnhQZTFNaklkd1VmMA?oc=5",
+      "outlet": "Front Line Defenders",
+      "outletUrl": "https://www.frontlinedefenders.org",
+      "published": "2026-10-29T16:13:32.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Mohamed Izzeldin released after charges against him dismissed",
+      "about": []
+    },
+    {
+      "title": "A trip to the market should never cost a child their life",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUXhadFpmc2RWMFVtOG1pQWhKc0s5UUM1OFJKTXptdmpLVDJ3bVRMOEF3OXNMRXlxeGlQb1NDM0R5Ni14ZEo2cHVDZXV3bndJSVBVdzJiQ3l0YzY3ZDBMQ0ZBUUVOMlNTb19HSDVLbmVrX1lzcnlLQURlLU0zeTV3RWM4ZFRXTHpmV2RLQUkyajB0QQ?oc=5",
+      "outlet": "Unicef",
+      "outletUrl": "https://www.unicef.org",
+      "published": "2026-10-29T15:33:45.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "A trip to the market should never cost a child their life",
+      "about": []
     },
     {
       "title": "Sudan opposes UAE candidate Lana Nusseibeh for UN secretary-general role",
@@ -77,25 +215,12 @@
       ]
     },
     {
-      "title": "Drone strikes hit gold mines, facilities in Sudan’s Blue Nile",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5UTFVrY01mUUtpd2l6WEcyVW8tck9ORGhKYXhZajJuM0JOaVVKUmR3aUZBY1c4TmhFSGk5Q01mRU5ST0IyWFljbXFzb1Zicjdw?oc=5",
-      "outlet": "Sudan Tribune",
-      "outletUrl": "https://sudantribune.com",
-      "published": "2026-10-29T12:18:16.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Drone strikes hit gold mines, facilities in Sudan's Blue Nile",
-      "about": [
-        "SD"
-      ]
-    },
-    {
       "title": "UAE diplomat running for UN chief faces questions on her country's alleged support for Sudan rebels",
       "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNNnRCSkdhUFZxTm9jaXlkN0FaOVpKR1BGOW1oQlJkVTZ4V1Nwa0JzNDN2SkZTVnUtSmJYdEMwLUJHQUxsY2ZWbmJxRjFnQW4zSWFrR3R4Z2FvMmZpdUY4Q0hTXzM5UUo2Q3B2TlBoLWIxT2RqLTY1bGhTa2g4MDk2T2thZk5Qb2IwekstQ2laVVBFa09OV245SF9jYmJzQTRWZGtoeVpxUzloOGdTeXZ5cDZfSkZEUlB6UnhxQlhndEU4QVRYaGpUMDE4WlFvWFJNTFhJOG80Z0xrRGRQWWRqQXhpb1h6ZGlBcU1nemhiVFktWFM3NmFXUHllMDIwaXBhZUZZeXlMd0VuZXRvLVN5Vg?oc=5",
       "outlet": "Union-Bulletin",
       "outletUrl": "https://www.union-bulletin.com",
       "published": "2026-10-29T12:17:43.000Z",
-      "outlets": 1,
+      "outlets": 2,
       "trending": false,
       "en": "UAE diplomat running for UN chief faces questions on her country's alleged support for Sudan rebels",
       "about": [
@@ -104,168 +229,53 @@
       ]
     },
     {
-      "title": "South Sudan Situation: Population Dashboard - 30 September 2026",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRVhPQ3dESF9kRFFyWHhnMmIxVjJGY1B2U2ZXUkVSUnFveDBla0lXN1VJVWc3RUZjZG90UDg1U0VlZ19TV0hiNXQ5aHhOM0RCZXZaS2xDNDQ0OUpYMUpkcGFiWlB0TDZYdG9zWmpIUW85NUNsZWt0VlRYZElnbkdLNWtIM240NUFUbnpZUUh3UW5QbVBMdDliMjdlbktLNzRsQklZ?oc=5",
-      "outlet": "ReliefWeb",
-      "outletUrl": "https://reliefweb.int",
-      "published": "2026-10-29T12:04:23.000Z",
+      "title": "Sudan war: Yale report reveals El Fasher’s devastation a year after RSF takeover",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNU1AtT0RqRGQzQnVxYXJQQUhqUnRXSGpJaFN4MjZHcXhIUk1RNTBhQnVJbnlFRno3Y0NmTXpyOXlXbFBTT2M2eWljbnJJbTFJRTZWT1RHN1hKV1NnSVBacU5YWDg2YUZoT1JRSFNUYWd4alQ4OV9ZbnJIYnp3bVlxLUZPTGRfWG04TDhTaXJ6d2xBb2w2QXJBV3dmVi1xcWRjTVVtcVdZUFZSMXdCY19XVUNybEVnNHlYT2FOWXFYbW5qb2xqLUE?oc=5",
+      "outlet": "Dabanga Radio TV Online",
+      "outletUrl": "https://www.dabangasudan.org",
+      "published": "2026-10-29T15:08:27.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "South Sudan Situation: Population Dashboard - 30 September 2026",
+      "en": "Sudan war: Yale report reveals El Fasher’s devastation a year after RSF takeover",
       "about": [
-        "SS"
+        "SD"
       ]
     },
     {
-      "title": "War can change a person",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE83TGtuWlQya2JuVEJNMUp0OW02OUtDLUowZl8zdVhaQlYzNjVZeEFtb3FCeGdVcmpTQjFNR0VUNE5IUkgtaExGR3JXNjg1eXFHVFBTRDNsYVRhUXFadXEzbzAxRUVkYUQ5djNz?oc=5",
+      "title": "The revolution lives on in Sudan",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1TW5Qd0I2SjE1MDhGTmtGa3JwUzhpMXFNSVY3REhRNWFvUWxadnVsbGRnT2tsU1lFdjNaS282VFB0REZWVDQ4TVBDM2gzd2lDTWhSUUZyb2VKTnJBS29TcTF6R2xKU3VPOUhkLQ?oc=5",
       "outlet": "New Internationalist Magazine",
       "outletUrl": "https://newint.org",
-      "published": "2026-10-29T11:54:57.000Z",
+      "published": "2026-10-29T14:36:48.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "War can change a person",
-      "about": []
-    },
-    {
-      "title": "Poisoning the well",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5paHRvVkZRWS0ybkxBTlhaTnN5aUZXRnFaSTVOb0ZmV2x5bGdjMU9IbHcxSGZfNWltdWpxTm5VVEQtTDNjd2M2NXBtT3h2UGlTeXF6M01ydHk1dEk?oc=5",
-      "outlet": "New Internationalist Magazine",
-      "outletUrl": "https://newint.org",
-      "published": "2026-10-29T11:54:52.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Poisoning the well",
-      "about": []
-    },
-    {
-      "title": "Sudan faces severe education rebuilding hurdle despite school resumption",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYi1JQmNxSWJCQ1dKQ2RkMFMzQ3pmT3NEQmMwdGlaQlBFaExhZzlGclFkclBWMFpWa2lpaUpNM09KQ015TW9aV2k3Uy01aXhteXYyYWhuNlZ5bm5RNXhZU3V5ZHN0Y2oyam8tMjk3RkM0TTVxQ1RXVHdUbXhSSlBLR0pLR1VqekVnUEQ1VlBSeUxlRF9qZ3RPV25BanFnMWV5SGNPSDNKWQ?oc=5",
-      "outlet": "Myanmar International TV",
-      "outletUrl": "https://www.myanmaritv.com",
-      "published": "2026-10-29T09:45:59.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "Sudan faces severe education rebuilding hurdle despite school resumption",
+      "en": "The revolution lives on in Sudan",
       "about": [
         "SD"
       ]
     },
     {
-      "title": "News: #Sudan once again accuses #Ethiopia of involvement in drone strikes targeting power stations, civilian sites Addis Abeba — Sudan has once again accused neighbouring Ethiopia of involvement in drone attacks targeting civilian infrastructure, fuel dep",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSmhUWWdlYjV1ZmNsS0RsMEs5c1dSSEFnb2U3MTE5RW0yMVBUbnA5ZFpUajFoNXpfTC01LUkzckN2NmR3bHJPYzFoR3Y0WGZjejBEZmhTaFp0S2RuMnBBZUNVMEhiSnRSTjVTenFTMHV3VVgwQjBCZzFuYlppRk5MTFNkWm9zcmZGS1Bua2xLazJlZGNSQThrR2h1dzRleGNucHRueTV2VlB1b1k3c3haQ2g1NDJ3bl8wX3ZqS0h0VXd4eV9pSHROdmNkcTNuWmtkU1NtZURtVWlqc1NqeFdR?oc=5",
-      "outlet": "Facebook",
-      "outletUrl": "https://www.facebook.com",
-      "published": "2026-10-29T06:33:56.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "News: #Sudan once again accuses #Ethiopia of involvement in drone strikes targeting power stations, civilian sites Addis Abeba — Sudan has once again accused neighbouring Ethiopia of involvement in drone attacks targeting civilian infrastructure, fuel dep",
-      "about": [
-        "SD",
-        "ET"
-      ]
-    },
-    {
-      "title": "Sudan accuses Ethiopia of allowing drone attacks from its territory",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONl9zRnRCRFNWY2owRWwyY2N3bVVBWHNkdUdUYWN5ZGx2QVlPY19jV09aZTg4U0tJUlkydmFjMGVpQWRBQU1BNGd2aEktM1BUZk5iRWJPMkZKR3BpcVQwWWhfVDBZUFhkcTFndldYa2xaTGNVSFpmOEFuclo0bWYydUR5em1wdW9mQ2o0TFVISUZsZw?oc=5",
-      "outlet": "Latest news from Azerbaijan",
-      "outletUrl": "https://news.az",
-      "published": "2026-10-29T08:59:40.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "Sudan accuses Ethiopia of allowing drone attacks from its territory",
-      "about": [
-        "SD",
-        "ET"
-      ]
-    },
-    {
-      "title": "Sudanese Christian released after more than a year in prison amidst attempt to seize church property",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZzJDSGFoRm5HZzBkcVNFaUR5OXBHT1ljUkhCN1ZwZGVFWE4xUGFjbzI1UnVkOWVpd1ZySzlRZ2VYNDFsRFZ4TFR3eDgxQi1RMkZfZUFNTVdEbXIySFVuaW54T1NyVkg3MUtkcFZTSmpzcGwtS3NhQUZqelJKSk9YeTFtZGdrMkFsaS1tQW5lc2dYb2RDTWM1UXVNSVE1anVvbXRCbEJ4RF9NMmlxVkhOMzRHYUQ5SnBrVXFHaWRyazZrLXpjeFk1X0o0c2V3Q3Q2Umc?oc=5",
-      "outlet": "www.christiandaily.com",
-      "outletUrl": "https://www.christiandaily.com",
-      "published": "2026-10-29T11:03:45.000Z",
+      "title": "Drone Warfare in Sudan Intensifies the Humanitarian Catastrophe",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWDNEVzRrSjd3QnIwTVVRUmFQQTFYU1FjOXdqY0dBRjFkbHZERW1VSjg0MncwOUpMZ0EtWlg5dWNlWlpoRW1aNXBDc05nenQwbU5hYmxMcElqMWV3am5taGdieFZWdkpfeGM5NmxKVkZrN0lhX0t5M0RyUWd5SDJCOFE5RmhTd2ItNS0wWEtYcDR1LXR5dGhqRQ?oc=5",
+      "outlet": "Modern Tokyo Times",
+      "outletUrl": "https://moderntokyotimes.com",
+      "published": "2026-10-29T13:59:10.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Sudanese Christian released after more than a year in prison amidst attempt to seize church property",
+      "en": "Drone Warfare in Sudan Intensifies the Humanitarian Catastrophe",
       "about": [
         "SD"
       ]
     },
     {
-      "title": "Drone attacks hit Sudan’s Um Dabaker power station, cutting electricity to two states",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE45bGNXOFBxNDVLZkFhOUwxY0VoQlRUOXlwTXZJaGJ6T2w5bzdhSXp5XzFhRHBMekhuOTVVa1FkSWZZTkRrVDJkTG5sZjlEcU1S?oc=5",
-      "outlet": "Sudan Tribune",
-      "outletUrl": "https://sudantribune.com",
-      "published": "2026-10-29T07:51:20.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "Drone attacks hit Sudan's Um Dabaker power station, cutting electricity to two states",
-      "about": [
-        "SD"
-      ]
-    },
-    {
-      "title": "Death toll from communal violence in South Sudan rises to 84",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOalVhclhXRjNzTlhEbnlnQjN6cUFMNEF4TmlGTDBGVUs0alZna0RJUzFENnJUNS04QlN5ek9iSnNVNlFaVnVVdV9RTXZ2X1NpQW5mUUVhcjA5a2x2Um5oRGNyNGlIZEtUY0o0ZVc3Vl8yMXBtTkVJU18tekVyNHdPNnFqWDNPM0Jj?oc=5",
-      "outlet": "Latest news from Azerbaijan",
-      "outletUrl": "https://news.az",
-      "published": "2026-10-29T10:18:58.000Z",
+      "title": "Geological Research Authority Explores Opportunities with Arab-Australian Bank to Support Sudan’s Mining Sector",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQanBTaEFKX2hVR2xMOEZSbk9WVDBpWW5ENzFnQVJhTUhUZWJQc1daRG1VUkFlZ19rS2IySjdxVEE3anBId2RsWC1uNW9RcWt1dGN6R3FCRHdwNkRZQkhwNHhBemthcmRBUGRFclc2b0NSN2dJV1JIckI5cjhZOS1Dc1A3UG9VOGhlLVMzRmFsUUxOOWdnOVdpa3dkUmp3QUZzeEZyZEJuUWZKQkh1OEQ4NlE2YjR3eG42bWRNM1JEbEVvQkJuc2xfR3lFYmhPSUhlMGc?oc=5",
+      "outlet": "Sudan Horizon",
+      "outletUrl": "https://sudanhorizon.com",
+      "published": "2026-10-29T13:48:10.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Death toll from communal violence in South Sudan rises to 84",
-      "about": [
-        "SS"
-      ]
-    },
-    {
-      "title": "Peace Raiders: A Documentary Film Screening on Local Peacemaking in South Sudan",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9tR3Z1aXl0M2tYUmlxMjlINzNGR0RSTUt2eXNaTXFaUFYzaGw0RldiVThSNzBlZFdCU2pEQUFLMzZaYzVPcTF5ZV94YkYxU1hRbGJJ?oc=5",
-      "outlet": "Peace Research Institute Oslo (PRIO)",
-      "outletUrl": "https://www.prio.org",
-      "published": "2026-10-29T10:15:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Peace Raiders: A Documentary Film Screening on Local Peacemaking in South Sudan",
-      "about": [
-        "SS"
-      ]
-    },
-    {
-      "title": "Who wins in Sudan's War?",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE42Nk81REZDXzBOeWUxNVNVSDJNcFljdzRCcGxLanQ1NWxBaHE0Q3JvaUNuY0NYTnh2TklCWG9senVxa2o1Z2VnSlRLY3pjOEY0MzBWYUYwZmpLSm9aUU1DeUNsWTh3UU0?oc=5",
-      "outlet": "New Internationalist Magazine",
-      "outletUrl": "https://newint.org",
-      "published": "2026-10-29T10:11:11.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Who wins in Sudan's War?",
-      "about": [
-        "SD"
-      ]
-    },
-    {
-      "title": "JOHNSTON: Famine looms in Sudan as drone war escalates",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNd3BTazZoY0o0eDloVmFFdkFzY0FfSjRobDJrdm9vRWZWNkdpSnpMVXZnSnY0aTd2ME1FRnNPb180dnVkOWhFNUltTlBOQUtBdFBReGdmYlNPX1kxTGJVVlREQkhodjRlRWpEcXZkT25QU00wOWJjZ0NuMG0wcUVVcC1laDNKZTltckJFR3pPUQ?oc=5",
-      "outlet": "Kingston Whig-Standard",
-      "outletUrl": "https://www.thewhig.com",
-      "published": "2026-10-29T09:47:37.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "JOHNSTON: Famine looms in Sudan as drone war escalates",
-      "about": [
-        "SD"
-      ]
-    },
-    {
-      "title": "Arab League Calls for End to Foreign Interference, Sudanese-Led Dialogue",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVDBFN3hpei1vY2VBWm9Damk0WWFUSTlqUERoS2lpRXpTSWlsUFFXOXZfQnNSSGhEM2FwM3BDQkZkcGpMaFdQbjItNnc3TWNJcmF6RU9lYzFVTlVJclRGVjN6RllBZ251eXhlNDFGZGVJOTZEamlCZEI3YzVSX0dha3FrTXVfZkNmR0c2Z2U5RHpObXhPT1dTTG5WbURSb1VKLVF2SHV5U0d4X2s?oc=5",
-      "outlet": "The Media Line",
-      "outletUrl": "https://themedialine.org",
-      "published": "2026-10-29T09:44:21.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Arab League Calls for End to Foreign Interference, Sudanese-Led Dialogue",
+      "en": "Geological Research Authority Explores Opportunities with Arab-Australian Bank to Support Sudan’s Mining Sector",
       "about": [
         "SD"
       ]

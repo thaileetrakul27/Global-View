@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-29T13:38:14.413Z",
+  "updated": "2026-10-29T20:03:15.927Z",
   "fetched": {
-    "societies": "2026-10-29T13:38:14.413Z",
-    "uncr": "2026-10-29T13:38:14.413Z"
+    "societies": "2026-10-29T20:03:15.927Z",
+    "uncr": "2026-10-29T20:03:15.927Z"
   },
   "societies": {
     "AF": {
@@ -2459,30 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/~my-donation": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-22T14:17:21.809Z",
-      "chain": [
-        "https://donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/~my-donation?_cv=1"
-      ]
-    },
-    "crisisrelief.un.org/donate-colombia-crisis": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-22T14:17:21.809Z",
-      "chain": [
-        "https://crisisrelief.un.org/en/donate-colombia-crisis"
-      ]
-    },
-    "unicef.org/india/assam-floods": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-22T18:59:49.151Z",
-      "chain": [
-        "https://www.unicef.org/india/assam-floods"
-      ]
-    },
     "redcross.or.ke/drought-emergency-2026": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2984,28 +2960,28 @@
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-29T13:38:14.413Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-10-29T13:38:14.413Z"
+      "blocked": true
     },
     "ayodonor.pmi.or.id/index.php": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-29T13:38:14.413Z",
       "chain": [
         "https://ayodonor.pmi.or.id/index.php"
       ],
-      "blocked": true,
-      "checked": "2026-10-29T13:38:14.413Z"
+      "blocked": true
     },
     "go.ifrc.org/emergencies/8013/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-29T13:38:14.413Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8013/overview"
-      ],
-      "checked": "2026-10-29T13:38:14.413Z"
+      ]
     }
   }
 }

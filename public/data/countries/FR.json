@@ -2,7 +2,7 @@
   "code": "FR",
   "name": "France",
   "kind": "local",
-  "updated": "2026-10-29T13:38:14.413Z",
+  "updated": "2026-10-29T20:03:15.927Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "FR:fr",
@@ -10,13 +10,114 @@
   },
   "articles": [
     {
+      "title": "EN DIRECT - Manifestations du 31 octobre : Laurent Nuñez va présenter le dispositif de sécurité pour ce week-end",
+      "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxQbGhGc1d2UVNEQ3hEdm1lX3owRTcxU3E2R0hnclVCZGtQeldnOHhYVmY1Mnc3ZV9tZXlPbDhBTHBHaVZETGFIc29TNVBDd3JfMnlNX3JiNV9YLW56eDlEMVIwS0xDX3NiVC1WbmtvMEFPaHNYYlVaVTJMRFUyRHNVVXN2WmdUcktwT1RaNTFOQXBQMTdONFlpSzlYclZZcHV0SjRhUFR3czVnN2QwZ3BLekl0ZEVrTHpNbDdGQVNyZFZRNUlpOHJyeTNHZ24wYVpCLWllSklEQmo5R0pTbGxYX3U5QVBaclgycTY4WGJCVmxqOXJ5cWQ1MWo2NzN0clFPXzRpdlJ6QmR4N2tnMFBnRVJLQ0NmV00tZVoyVmNFTWNWVFd3ODRBREpFcUJ1UUR4QU5WU3hVVDFkNllaY24wUXNab20tVHdCYkZtdEpTNG9TOGs?oc=5",
+      "outlet": "TF1 Info",
+      "outletUrl": "https://www.tf1info.fr",
+      "published": "2026-10-29T16:58:10.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "LIVE - Protests of October 31: Laurent Nuñez to present the security plan for this weekend",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "EN DIRECT, guerre en Ukraine : après une série de frappes, qui ont fait au moins 20 morts, l’UE exhorte ses alliés à accentuer la pression sur la Russie",
+      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxQZVQ4aEpvYmt0b2lXcnZWY0FCRGl1aUw3WEgzbWZ5S0ZZMkJZZFZtZnJVbHpoM1ktRmd1RXBBWkFOSkNpOGZvdEY4MDl4UlN3Y01kakJ4WEcyZTMxTlRwd2V4enBCbmhsVkhVSUNCemhQSnM0VzUyUGFvOEZUSGV2aEw1dGdSeHI1dzhVVG5iaEJmR3EtdWhUTFhiaktYVlFnaGJCTXU0V2NRcGxCQzNCMi1vYk1OX25NRXF5cVM4VjNQX3FJanMyTlg5UUp6WU4tRlI3STFZZjFtWTdLamM5c0hnZnRoMzlTZXJSRVgtSEtydFdmVjJHMkhmdW9OMXJ1d2VCdEoyemxwcHpUbTUyZ1RvVmRPcmRJRkExajJwREU0VUVIRmp3QzhxNEFOdWIwWHpnVDZVMFJXTng5OGhR?oc=5",
+      "outlet": "Le Monde.fr",
+      "outletUrl": "https://www.lemonde.fr",
+      "published": "2026-10-29T19:21:06.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "LIVE, war in Ukraine: after a series of strikes that killed at least 20 people, the EU urges its allies to increase pressure on Russia",
+      "about": [
+        "UA",
+        "RU"
+      ]
+    },
+    {
+      "title": "A nos lecteurs : « Le Monde » et l’attentat raciste de Trappes",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQd1h4czc0My01YjBaWWR1YjhlMjhWZFJERWFCYnVTRVFYQzljVHRkamd2U1pzNjlOdGlZaVZRLVRQNVQtYXRReFRac19BNTlIekhCempqV1A5dU03clFRajlTbHZUV2tXWjQ2QUFwU1ZFZWhURFpTdnBGcS01eE9keGpudGx2M3hLTHdUa1JaRWJmbVh4d0xULXRiRTJuZ2ExSjBnYmRXb0kzWURzVzNRM1JUekx4UnFnbHp4VHJTbFd4Rm1Xbk5sUlBvZTI1ZUU5LUE?oc=5",
+      "outlet": "Le Monde.fr",
+      "outletUrl": "https://www.lemonde.fr",
+      "published": "2026-10-29T18:11:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "To our readers: \"Le Monde\" and the racist attack in Trappes",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Attentat dans les Yvelines : «On a toutes les prémices d’une guerre civile», alerte le maire de La Verrière",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTENWQ3RhZWM0VlNWdDNnRjdTUzNibGlhT2FJLVBNOGNzYzlpUlNZcVFVeXBzUXQzNXdTMy1YNDIwYnBKeDRVRkxBbktIMDZ1dHpVY1RXSEtvM1hURUtJY3ZGTWJpWVVvUGlJdzNyNkl5RTlXXzhpYmNqMmdSN2NzVW1KbExsRm9UbFM3LWxXdkVSQzR4THp4NFI0V3pnX2VpQ1ZsRWI0RTRHNmo5QXZHSmVNT2N5eFFRbVNWVEc0SlI3QmYya3RhaTZEMlVOQnpQ?oc=5",
+      "outlet": "Le Figaro",
+      "outletUrl": "https://www.lefigaro.fr",
+      "published": "2026-10-29T15:40:36.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Attack in the Yvelines: \"We already have all the signs of a civil war\", warns the mayor of La Verrière",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "L’initiative (désespérée) d’Attal dit tout de la léthargie du centre et de la droite",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNOWxCakNMbXVGdl9ndmJiTF93QnJFTXNrR0xraEttY3JqMkVuV0Q5NndpZjZQYUdDMC0zYmFrMDJEb1A2UWZ0bXJkWHFUM3hqMUVDVlc5VjZOWDI1cnlYaGF1MnRHZkY5ZjlPcE5jcXU2d29kV3pETE9KNmN3MHZqS2ZBVjRITDdnYUJLYUJMRzF4aHBYcEgzZlNrSUtSYTIyMWpWdG9PakIybTJzVXY4bWQ4TjBULTBCSTFTNWs5UDlsYzNLSFZFWFgwSmgteDhQMldQbzZkRHNzZTdhaXA2LWFCZVoyUQ?oc=5",
+      "outlet": "Le HuffPost",
+      "outletUrl": "https://www.huffingtonpost.fr",
+      "published": "2026-10-29T14:49:08.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Attal's (desperate) initiative says it all about the lethargy of the centre and the right",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Gazole : vers une baisse des prix à la pompe en ordre dispersé",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZzNrOXNuNDl5Z1FfV2xyNVYtTGFfNEI1Q2VUV01SanIyZ2QwQlpsN1F2R3dWekRJb2MwcTFLVDk2SXlQR2Q2MkJHUlNFS2JkN20yanZ4V2F2YldMaXpxbE1rcUlUMm1MTGFZRURnM0NqNkpOb2dCbngxcXEyaVNtTVM5SWlZb2hoaXhXYlVmb2xsNnNZb3BJeElhU3BKcTc3UmR6RmJrSnpxLXlEc3lOUURkYlpsX05sUjVzQjBqdFVnN1BINGtIU1JPTVkxZw?oc=5",
+      "outlet": "Les Echos",
+      "outletUrl": "https://www.lesechos.fr",
+      "published": "2026-10-29T18:28:37.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Diesel: towards a drop in pump prices, but in disorder",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "TotalEnergies, Shell, Repsol: résultats exceptionnels portés par la flambée des hydrocarbures",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQWlRTZXlBTXdIZ3BkeTJ0U1hOTkFqMnhZRk92OVFISE1zQklST3J3cElFbkg2Sk1Vcm1NYWdhbEh0VzlQaUxNQVlXcDlORk5vVzloOHcwaGJOSWp4RS1Id1c2U29kbUZsamRMSGRlV0Q0T0lIYjAzbm9mQ0NWZDljVlZyS2lYdEd0cEE4WE5uUmM1R1hmRXZWQXpHTVpyNDBKTms3WFNEUlYwbGl4Tm45LVBIaW1CVzFWN2dfUkc4TlJSUS1jWGMxSkFmOEVTSE1xbGpkb3V3NE96aGJhRFY3dWU2azB2R2g0NWtnWjZLRjhOVTkycnB5Ym9mN2zSAYICQVVfeXFMTlN5ZVdVTlljcmozaWpCOFE5ZkRmYUJXQUNoT3ZNYWdQQ0ZITENYQUF1VzVEdFZXUENvV09nLUwwekNtVEZNOTNGU2FOZW5mdWZ5UGJlZGQ4LS1fQ2ZaU1pTQXZkZVpzRkpIZk44aHJ6Qm9zUDJKRWstRms4bno5QlFTOWtJN1JvNTNmNVdxa01heGpTVEdNT3RZNVZWblNlbXFKM1ZndzhqYTlXVVZEYXN3bW5ULXRsNmRxOGhHQXdTRm4xYVJvOEZxaVp6U0d5YWVndHpKWjg0a0FXQ2dfcHpkM0hLalVuQV9MU2JHaGhpYTA5NlZHYkRKRm0wNE54bGVB?oc=5",
+      "outlet": "Boursorama",
+      "outletUrl": "https://www.boursorama.com",
+      "published": "2026-10-29T17:41:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "TotalEnergies, Shell, Repsol: exceptional results driven by the surge in hydrocarbon prices",
+      "about": []
+    },
+    {
+      "title": "Ballon d'or: la compagne de Thomas Meunier défend la femme de Harry Kane, cible de commentaires sur son physique",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPSTRyWVBYeG1NZE54Mmcza05tbnJsUXVobkRxU2lJbXpGaUlpODJYcDlYb000UFluU0hGUk5CUkRWa253NDFHZEh1WWdZSnRJT3ZuaHZyR1dJdGNORU1LNHBiYkdwQk1XQ2FjbVVPR3RZMm5KcU01bXlheTRKRnhQdjZOaU1pM1lMYnlNSGs2dVVLX3J4bG9IRFY5U0FXTGFoWVpVZXhJM2RKMER0bTVtT044VVc5QkFaSFROTEgxRGFVT19aaE1TQ2Z0SE5qUDdkWkFLV1Y3X3RnSFJ3d3lNdXBJLXJ5NTVvRjloc0xGTWhRcHlBTG4xNTR2aFNtclM4d0dBNW51VmxRYUk?oc=5",
+      "outlet": "RMC Sport",
+      "outletUrl": "https://rmcsport.bfmtv.com",
+      "published": "2026-10-29T18:05:15.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Ballon d'Or: Thomas Meunier's partner defends Harry Kane's wife, target of comments about her appearance",
+      "about": []
+    },
+    {
       "title": "Accident ferroviaire en Espagne : la France sans nouvelles de « plusieurs » ressortissants",
       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPRnU4T0gxRnd1b29HVGFDZ3JFWHZVUi1lM05vNVNaX09rTUZzOXpMaUZpY0ctOENHeS1wS05hOE5sUkxTWklCaU96YWVKTjZRSVB6ZkpseW5sZ2xyUUZubm1yVnFhdzkwVXBOY0RVY3VPbm13U2lKeFBpWVU3Z21IQ0l2dXdXQnpRZ1lzeDhXc0szdUUyam13c2pVSTJ6a0lPTHBkbEwyT3dPM1M5cUNRZG5IY3JfRGtnYXBvNDlGenlfNTBiNUIwX1dDQXp6WmlQR2VtZFpnVllOaExRWjZIa2o4Q3R6NENPRlllZVZKUQ?oc=5",
       "outlet": "Le Monde.fr",
       "outletUrl": "https://www.lemonde.fr",
       "published": "2026-10-29T11:36:38.000Z",
       "outlets": 4,
-      "trending": true,
+      "trending": false,
       "en": "Railway accident in Spain: France without news of \"several\" nationals",
       "about": [
         "ES",
@@ -24,93 +125,259 @@
       ]
     },
     {
-      "title": "DIRECT. Colère sociale: des gilets jaunes veulent organiser vendredi une casserolade devant l'Assemblée, une déclaration déposée",
-      "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPWWhjeGRjMXEwWU5PRk5lOUxUQVVkUlBpMm5vRG5PXzBwS2x1Zm02WUl4aVlrSlBheXFWMF9IRjAzdmYtWFhCbVFOVDhTM0dKWXNsNnhHX0dWNGFYbWV4ZmxIZXl4REF0M1ZEZl8wcXV0ZUl6dEJnQ28za3FKM2VtaDZja2h3NVlsOGJnQWo3MFhhNExEd2Njbk1pUm1UN3JWNEoyNkMzd1hpWUx6OXMwZnJlMGhIWS1qLWRTYnFkWUxwVWppWm5TdGd6Z2pZdXNONllRRjYyS0RrVXhkb05HbU9ka1VWdF9pZE1lOXNhNTg4a095S3B0UDB1aFl4NXNaS3NESTlNVDVlLWxmXzRCVFFla01HNktKdWtPZ0U1RjBQRHhRN0ZOc0ZKaDkzRGVNdnFuX0hRRXhha2dVT1ZvTl9KaTBMU1Bf?oc=5",
-      "outlet": "BFM",
-      "outletUrl": "https://www.bfmtv.com",
-      "published": "2026-10-29T13:09:32.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "LIVE. Social anger: yellow vest protesters want to organise a pot-banging protest in front of the National Assembly on Friday, a declaration has been filed",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Attentat de Trappes : le parquet antiterroriste requiert la mise en examen et le placement en détention provisoire de Kévin T.",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPNGhzbnhoYVRGLWVVbjlCazc0VENxbkdKZnpKeE9URG9tNkNHUm1RV29WMm9HN21udGs5S1pKd3l2b0pfVDREZ1NoUW9uZ1NpeE51RXYtVXptWGNOT1gyeTlZbVd1bkJJNHF3MWhwd1dkbXJCWnRzZEw0bFlub1hLZ2xRQzcxTTYxY3U1Rm5tdVE3djY3SUhkMVYyOW1oR0g2NDF3SVJMV2JSREhtdTd0TlZHNU80RW9IZFdDaDVXSE1qZTFLUUZGZ053STJERDc5QlBodS0zY2dWNW83bVpHZUQ2QlpmR0trcC12T1Nwd2puYzdDSmRXZnp6cUl1UQ?oc=5",
-      "outlet": "Le Figaro",
-      "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T10:20:31.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "Trappes attack: the anti-terrorist prosecutor requests that Kévin T. be placed under formal investigation and provisionally detained",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Christine Lagarde va quitter la présidence de la Banque centrale européenne le 7 février 2027, neuf mois avant le terme de son mandat",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORUswZHl2SGtNU2pseFNzYW5RRG5pMzk0aWQ2cVlnRXFvMnJ2NWRSb0pvZDVvcmhrUEpTSUctenlKOVVmanVGc0FweExFbHJvc21Lb0JnQjFxQVU0NEJ0S2xpZkdEMUtrNl9zUjRaSHgxNjlFeEtyakpLMUZSYzlYT0NyeEJLNDhTUjh5UVY0Uzl0d0ZmcVFRYUtRdkZPWE1UVEhnNmpNYkFOLVN0WkhjNlF1NEJFUQ?oc=5",
-      "outlet": "Le Figaro",
-      "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T13:02:08.000Z",
+      "title": "Une large palette qui amène à de l'indécision : faire simple dans la raquette, le défi compliqué de Victor Wembanyama",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOM0RuNFowdFR4YkY4ZlZ6U3Y5emhJZ0Z5Y0NBbERnLVR3UUkwYkRHdVU3bmlOdkctaDR5ekVjb3J3ZnlhQ3NueXJNejhCQTV5cjR5VEVxUFp3Q3lxOW5MQWwyNlozdHktQmktY0FvUFdfaUV2LU9MY2cwNE9EQklZUHN6TDhIZ1hqNVVFSDlsSUsyX0MwNlNDR01jckVuMG5LV2M3MWdXUUdZMlRfb3Vqc0tUd0twVkRCNXlLMVdpcHRHdEpEaXBkckI1TGVRRzhwLXdGWnRnR1N5NEg5eFI0dkNnQnVYV1NDOFl5RnpSWkdBUQ?oc=5",
+      "outlet": "L'Équipe",
+      "outletUrl": "https://www.lequipe.fr",
+      "published": "2026-10-29T17:50:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Christine Lagarde will leave the presidency of the European Central Bank on 7 February 2027, nine months before the end of her term",
+      "en": "A broad range that leads to indecision: keeping it simple in the paint, the difficult challenge for Victor Wembanyama",
       "about": []
     },
     {
-      "title": "EN DIRECT, midterms 2026 : dans la course au Sénat, les démocrates n’excluent plus une victoire dans le Mississippi, en Floride et en Caroline du Sud",
-      "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxPMkdoeVBvX0REbGZWdWNLVTNpUS1lckZmODhiLWNXTHVjMGJSam9pTjBCbnVxN1ZvRW9td1M2RUtrenBIYXZZelc0RUlPVXF6dXRtY2pidE1yZWFMaS16MWhpVUROT1E2cXpmMXdjWTBTZlY5Zmg4T29aS3h4WFhoU1dzcDNBSnpqdFJPYUZoNWZTQ0VlNVBxb0ZoYjN4aWFzYTJjaDNEU0dNTW54Z3ROYkRJSExfUVpxWEdMdHF3bnRpM1otX1VTZ284QzZDNVpYNWVCcGU2X0s2VlRNb3duSFRfYVRhNXlSZk5tR1RnMERhZkd2NlM3OHlUOGc5OE5SQnFCZGZTYXhSaXA4T0pwTXgtZG1zZFN4X2Z0WUlDd0ZoNjZ5TVFUVHdJQ3Nfdi1hLTlqZkJab3BhUVRUZXRWcVY5YWZxbjJnX2pKOEtBalNEX1pqcmhlUFBYaw?oc=5",
-      "outlet": "Le Monde.fr",
-      "outletUrl": "https://www.lemonde.fr",
-      "published": "2026-10-29T12:46:08.000Z",
+      "title": "Loi \"casseurs-payeurs\": la CFDT et la CGT dénoncent une atteinte au droit de manifester",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQM01TN25uV3l0U3djb1pSMTB5ZjJFNUlaMDdpY1lPNGxfQnFTcnBDUGdLVE9yTGg4R2lLQk4wY3R2XzFPWndLa1FrUmVOSGtIM1lhQWI5Ykx2MXpaNDI1YkRCVWRnTFA5YlgwTnRjYTlmSnhaYTVIek9DbUVHdUkwenRBMm9KWGNfT0xkaDBtM3o0VzNhMXF4U0JqdExLVFBzUTh2Q2RNV1FWNi11WkRrNkIxTU1QRE5lRE42cXlGU1poZ0RBSjlpVmxsYVQtU0ZhUkxQdlhGZHlXeDd3dThfX3oyX2Y?oc=5",
+      "outlet": "BFM",
+      "outletUrl": "https://www.bfmtv.com",
+      "published": "2026-10-29T14:34:49.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "LIVE, midterms 2026: in the Senate race, Democrats no longer rule out a victory in Mississippi, Florida and South Carolina",
+      "en": "\"Casseurs-payeurs\" law: the CFDT and CGT denounce an attack on the right to protest",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "EN DIRECT, midterms 2026 : Donald Trump annule un meeting dans le Kansas ; les fausses accusations de fraude électorale prolifèrent sur les réseaux sociaux",
+      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxOSWNaV3lMYkp1Q0VpNGtkX1BkaEtta1dKb1NzMGR3dnJfa1dWUk00ZlNQNjJRdjFrVU1Kc0dpRWlCM2VOaEFYakhFMEYzaWhHMlFVTDZhb2hMMkhXa1licHU1VWhTd0hubE40dzZheU0xSmFYRFhtM3lDb3NGaWxaRkxLRkVGY25RcDB4MHFLbFVrX3ZpLVNKbUpGSjkwTmU1LTZmYk1weXU1cWlTOGx3OHFYTDZFNWpCa1cwM3k0OHUzMF85a2NtMHkxeDdacVdxZ2xPck1GT24zZzdVc1ZLWF9kUE9LcjhCWjMtTHNObVdkdnlPbGdpbGRFX3JDblJQTjd0Y25kZHJuYlNvbzM1WlZTckNGZ2JIVnZvSnJjNkZSZE0zTVp4RnBTTUtuUnBKVDhSVWJnQjhKSkVR?oc=5",
+      "outlet": "Le Monde.fr",
+      "outletUrl": "https://www.lemonde.fr",
+      "published": "2026-10-29T19:22:16.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "LIVE, 2026 midterms: Donald Trump cancels a rally in Kansas; false claims of electoral fraud spread on social networks",
       "about": [
         "US"
       ]
     },
     {
-      "title": "DIRECT. Guerre en Ukraine : au moins 13 morts et 10 blessés après une attaque de drones russes sur la gare de Dnipro",
-      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPbmM2TUJzQ3JWTC14bjd2bTJzbk1uMENPR1lrODd5WDkyOG1OdnJSanFqVUFvNEx2ME5iYllVMGhSTFY2ZGh5cDdUOHFjdF8wVzA1cTBteENLdWN1cGlObnktbmJMeEMteE9KaElObS1LN2c1Z3VKU2JyTW5LNnhKZ1RFcHNMc0VGREZRZzMxU3lfYmg2TFFKQzhXZWg5MnFUVHhwQXRfeEkzMUQtU1hUczBROXptdGR3MmVBc09wcWsxMEpKNG8yTklKLVd0NkRrZWE0cjhNbmUwaGtGOTd2UWdMQ1pCZ2Fhb3ZGN3V2MTJLWmZ5OWl3a0ItQ25PamlsOHJ3dmxwNk5OWGZEeVJYSlNoUXFRUWpvLWc?oc=5",
-      "outlet": "ladepeche.fr",
-      "outletUrl": "https://www.ladepeche.fr",
-      "published": "2026-10-29T12:36:03.000Z",
+      "title": "la Chine ne lâche plus Kylian Mbappé",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZEhabmdLd2lVbnE2d295dnBoOV9FaWw4SlVGdlhiSFJENGxCR2ZONl9mVWlCTXFoYmRnWk1KQXI4VWVORjRFcXhSa3AxRU1JWG4xVzA5V0otMzB1Q2NwNlN0MllxWG9Ma3h4cmVHNEZqcnROMlRNTGJTNWo1bmNCYjh6OGdxVElSc3ZEN0UxQjF2N1YwN3AtRmhHWjdCbkt1RXFR?oc=5",
+      "outlet": "Foot Mercato",
+      "outletUrl": "https://www.footmercato.net",
+      "published": "2026-10-29T16:14:24.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "China won't let go of Kylian Mbappé",
+      "about": []
+    },
+    {
+      "title": "PSG : Luis Enrique estime avoir contrôlé les blessures",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeGNkTmZTZzlJV0ZldG83eWpyZzMxSUtudzZzOTBFVGtsNkx5MHczaVMyYTdocy1NQ0VsenNzcmtKSm1XejUwa2ZjdzV3QW56VGVBd0huUzlvNi1YU1ZDaTdfbG9PbEVMMl9rTXdQbGs1Xy1IanF4YTQxUEI2VHNURWlmb2VNRTBiZVZNOHEyTDEzSV9qQnRBQjY2YzNmTEVITzNN?oc=5",
+      "outlet": "Foot Mercato",
+      "outletUrl": "https://www.footmercato.net",
+      "published": "2026-10-29T16:49:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "LIVE. War in Ukraine: at least 13 dead and 10 injured after a Russian drone attack on the Dnipro railway station",
+      "en": "PSG: Luis Enrique believes he has controlled injuries",
+      "about": []
+    },
+    {
+      "title": "VIDEO. Mais qu'est-il arrivé à Christine Lagarde ? Pour annoncer sa démission, la présidente de la Banque centrale européenne apparaît avec des pansements sur le visage",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNeHl6ZWVJanJBQWZ2S0NuQzBnUlpRR1MzdnpvdVJ5RUpvOThvVTk0WjFWNkZObFZKcDdjQ0tSQk1iWjQwVS1YNWdzVWFqZkJIQUpTZ2MxQjYwVFdBRFpnWmxITTV0a2JGbEYxRkNPVlpZM09hV0lFT19JVXdoVmRULTFBN1Z4YjFIVHFLRlMxTUxxaTNYcmJBUkQwSHNpNGh0cmRaTktkUGRQT3ZwU0l3OHBMVnNsNFlIV0pUbmQ5Z0RCQk81THRwU2RIYm9ySV9yVk10Z3JTVnZacFlDSXROYkR5VGxtS0VjNERCZWUxcy0xdHlZMl9aOEVaSTRDZmhDbndpSG1ZaGFwcV9EUGhRZm5JSTZqenZiNm4tUU0tVEF5aTBO?oc=5",
+      "outlet": "ladepeche.fr",
+      "outletUrl": "https://www.ladepeche.fr",
+      "published": "2026-10-29T15:25:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "VIDEO. What happened to Christine Lagarde? To announce her resignation, the president of the European Central Bank appears with bandages on her face",
+      "about": []
+    },
+    {
+      "title": "Ignorer ou bloquer : le stratège de Lula précise son plan qui a contré l’extrême droite (et qui est reproduit en France)",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOVFJDc1NDc0w0SmpZaEdleTdfRTBNcWt2cU9sOTQ1M2JPVHlHZWVMbDE3cWl5THB6SW9KYkcxSElyWm1qTzFlbDd6WEZCbWdBNEp2RlVRY28tRVhQYTNEdTJRWWxDQjhqdTJNTmxkNzQ2ZXgzN0YxM0pPWUlNYm43U3FGQzM1ekNWMExyNEZ3WGVocmVFWkFsNGFEbUhHaHo1ZlQ5OHZPb0tkUDRSdUdPWnd5dWJvSzg1akh6T3lpV2FvSG1MaFJlbU0wb21DRm9pZVc3M0RpZTV5OVFlb3VWQlE5ODZvM3B5aXpYMVl2alhFTGtfN09lNmp0S2d5Q01lTm02SzBQWFFTeGlo?oc=5",
+      "outlet": "Le HuffPost",
+      "outletUrl": "https://www.huffingtonpost.fr",
+      "published": "2026-10-29T12:24:06.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Ignore or block: Lula's strategist explains his plan that countered the far right (and which is being reproduced in France)",
       "about": [
-        "UA",
-        "RU"
+        "BR",
+        "FR"
       ]
     },
     {
-      "title": "Israël : le chef du parti arabe Raam rejette les accusations de fraude électorale du camp Netanyahou",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQOTFXamFoVzdvTlJfRm5IblpmeHYyUG1JYS15SGV1UGFNWk50MU5yWUVYTUlkdlphbWJNbEFwbUlkbWh6NTZSaTFMTHdoRW1lLWhLWHNqRmVfMjJfdnRkbUtWbmhwTm9kWVFONXdvVlVXTk9QZXdTemFpczJLZ2VGTVkyb0pkOHdRVVRkVTRhN1VEM0NjdTh1akdOVHpreklHX3FpRG9SaFBmRUhMUG13MkphdE1OVjhVTlBCTHlCOXpzb2Fnd240ZXh1elJDNGJOME5OQ3VzUExwMW43S1E?oc=5",
-      "outlet": "Le Figaro",
-      "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T12:10:46.000Z",
-      "outlets": 5,
+      "title": "Mobilisations du 31 octobre : Laurent Nuñez prévoit un dispositif de 70 000 policiers et gendarmes, et confirme l’interdiction des rassemblements dans les centres-villes",
+      "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxOTjlaSU1wazNXeFZGanZsbGlvRGI4RGwtUlZoQjBRb3hGX1BOMFp3Mks3dzZMSTQzd0l0VkkzaTI1SDFhVWhEY3dOTkZyQS1rYlBXZENEU1JZWTlRU2JwTmJ3QWlnZWd1bUJvR0FZS1JjM3dzQVNFcUhld2V0eXRiTkpCVlEyVXlwR0poenVuemlydDA0T1owcUNTaEMyZDBwM3AzbF9ST2pCODVpb2NyVmJlU1E0REluWFdWVDY0RkUtX0d0YnRUdEpvVWVESEgyX1NkQjNkanZwR0k2QmVDQ1dNblRweFMwdmRyVVpNa1BjNUp2T09lUmtHTGhval9POHhFcmZiSGRpeEpfcHByc0xFZVNlelI0Y01Zc2dnYzFFOHN4YkVUVXVMcldvMjlYNjFkbXdiXy1SMXgwWU1JRm94RVo4TG1EQ3hENE1NYVh1aXdzS0twaTFn?oc=5",
+      "outlet": "Le Monde.fr",
+      "outletUrl": "https://www.lemonde.fr",
+      "published": "2026-10-29T19:01:11.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "Israel: Raam Arab party leader rejects accusations of electoral fraud from Netanyahu's camp",
+      "en": "October 31 mobilisations: Laurent Nuñez plans a deployment of 70,000 police and gendarmes and confirms the ban on gatherings in city centres",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Un \"attentat contre la démocratie\": le camp de Benjamin Netanyahu cible les partis arabes après leur score historique aux législatives en Israël",
+      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOeElTRkNOUUVqVUozNXBiWWVMbWgwM2lzaFBrSnZzaEtLME9iWm0xWUIzNmp3bmh3Qm05TEozdkJfQ1NvSXRtdkhIbFZtNzVUX28tb1lFYUFORUtoekhabG5lXzQ0MFNiRGN5WU1hbVduNzdrTEFhekV2T0NGbDQyeUR4SU1acjVhc1pCNDJOU0lhUmJScHY4YmJTNmUxYVBkbnlMcll3aUVZUUtHVExZRWU0YTNZX2dEZE1abjZPaUdOZERHZnNGU3pKTGYyV3NtNzM5cF9XY3VuY0RsWjUzZWozU0s0cDY0bjJXVEVVZmRNZW8wMlBkOTRiV0hLZ0RreWNpamduWngwN0QzREVKUXpTUXhxZFF2ZU8wYWlueTJ6TmdqMzI0U3ZVYmlwLUxiZTNXRjNZcjFpd2FMa0dj?oc=5",
+      "outlet": "BFM",
+      "outletUrl": "https://www.bfmtv.com",
+      "published": "2026-10-29T15:32:16.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "An \"attack on democracy\": Benjamin Netanyahu's camp targets Arab parties after their historic score in Israel's legislative elections",
       "about": [
         "IL"
       ]
     },
     {
-      "title": "Manifs des Gilets jaunes samedi 31 octobre : la carte des villes, horaires et lieux de rassemblement",
-      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQSzNuLVNNSzlFaUZmblJHWlpRTHg2Q0xVcFpLcjhhQzNTRlRjSlpMc2M5Y281T2MtVTRCSnBTRUl0QmVMOUdlZTd2MHBIdktZRFpoTTFJNEx2TGVyRW5nM1FuRXBPdmVmd29iWnpCLWpZLVRTalVFNVZWX0dIWE00ZTFQTFFlRHp6c0hzT3hBVUtLWFRSYmFqV2p4a2JYS1VpRm5kNHUwdFNvQ3hjZEdSSURuelI2SkZMVDRwV21xeE90N2VKYjRRbk5PSDE0LWZxWHNzZ1VQUVowME51eDJ0ekVaQmNfREhzaDVmVExmQVNrWG1xZDVIMU9DMEtVODlLUTRCYl96SkEzZ29SeFZVc3VXc3JMcjkyN3lVRXFydG8?oc=5",
-      "outlet": "La République des Pyrénées",
-      "outletUrl": "https://www.larepubliquedespyrenees.fr",
-      "published": "2026-10-29T11:02:45.000Z",
+      "title": "Grippe : êtes-vous parmi les 4,9 millions de Français à risque ?",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSmMxelJGczJiUHVpMksxeTA3Rzd3M1V2UGNlZ1RnR2VGdDZaTnN6dFdWVllGV0VxUFhzZ1czeUlZdlVDSVJMOEtIOHBrV3JGLUk5MThCVENscno2a3poQmhya285eEhiUG9VZEJFOU9teXpTblUzM0lod2xDS0xVZy1ybkx6M1hFUFBJ?oc=5",
+      "outlet": "ma-sante.news",
+      "outletUrl": "https://ma-sante.news",
+      "published": "2026-10-29T16:19:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Yellow vest protests on Saturday 31 October: map of cities, times and gathering places",
+      "en": "Flu: are you among the 4.9 million French people at risk?",
       "about": [
         "FR"
+      ]
+    },
+    {
+      "title": "Accident de trains en Espagne : le bilan grimpe à 74 morts, le roi Felipe VI a rendu visite aux victimes",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNOU84ZzFFRXJVNXh0UmtxUzMxWjBmRWJEdWt0dkdEZGh5bGFjWFZhU3VIek5XRm8tOU5weTlFdU1kdDV5NEZvQ3J4X1dkV3ZrUTVXTHdMMzRuTWtVSVJCMXJXZC1mTmtJMUpldVZkSnpvUXQzNnk3bGY3SDhEZVBHOGowenFqVHZFa0hYZ2tsT1hpXzBCNmtHUzRhb3BPLTVNWi1lYVl2WmVydHQtWEU3OElWQUhIbzYwcHBtOG5fRGFQdWp2bVZqSV9OQ2pVZHNxejhwMUVrejBUYkxKeFdRdXd4VTZOb0VmbWIydnFTVWt3NWFuVmE4NVlDU0xiaExhSnBlcWdR?oc=5",
+      "outlet": "Le Monde.fr",
+      "outletUrl": "https://www.lemonde.fr",
+      "published": "2026-10-29T18:01:46.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Train crash in Spain: death toll rises to 74, King Felipe VI visited the victims",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Sahara Occidental : vers une résolution défavorable au Maroc - TSA - Tout Sur l'Algérie",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSFk2OVdnaklxVGFjay1rVjZWWTJGT3A1Rk9Iend4WkpoT2xlTTA1Z1lCRjZoVjA5dExzNU9pbUh2RkV4QWFjZUpLUE5VdXNQMUEyNG12eWJDdV9lbWZha3hBNnVqaTJMRHFzM19ZT05sLWktUllIcVhOTG5uUTRSRXdEZW9ZUjlvU1lCRkNqSE4?oc=5",
+      "outlet": "TSA - Tout Sur l'Algérie",
+      "outletUrl": "https://www.tsa-algerie.com",
+      "published": "2026-10-29T17:45:26.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Western Sahara: towards an unfavourable resolution for Morocco - TSA - Tout Sur l'Algérie",
+      "about": [
+        "EH",
+        "MA"
+      ]
+    },
+    {
+      "title": "Un \"chant du cygne\"? À la peine dans les sondages, Gabriel Attal tente de se relancer avec l’option d'une primaire",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOWjdlMHUtdlJtb2RVdnZsSG1nNkppakxReC1YOG5NalA2RFN0SUdZV09SV20xN3VJMmI0UVh6b3BaeXk3TTJENlFnRHo0NHVxcVVVVFg1UVlEOEgzTGlJbG9yUkVOcGtfQk5kR29tbUcydU9NQURuR1RYdnJPcks5Vk00RjBfNlBYM1NPRi12N1N4dWNXam1UWTlmZ243WHhfSnBKdVNZaEx2bVExdjBNVnJNNWpjVnF5anc2MjdBTm9ONUpQMlAxVDNYUUNCS3poOUprRHdER0VramNrd2Z5QTNubDZoVkVidHdwVl95LXdVeDFETHFZT3JLV2MtLVhKQVhfQU1oTUdYMi1JSTMyQXhFS3ZPam8?oc=5",
+      "outlet": "BFM",
+      "outletUrl": "https://www.bfmtv.com",
+      "published": "2026-10-29T17:20:33.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "A \"swan song\"? Struggling in the polls, Gabriel Attal tries to relaunch himself with the option of a primary",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Trump lâché par une partie de son camp avant les midterms à cause de la Russie",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNGhrVGVHYWRQYzd5WmxURGh3OXRTbEFmSG9sT2JydEZ6TW1FeFhsM3haM3I0UTBHaVRhZ2lkWFBRanFMcHQxUWc4VjFPbEpVZUJZRlBldVNnSnNIVUFvOWFsR3hxNlhLTmRLdzFlOXJoV3E3ejdmV0tkQmlnY2prV3I4ZmZkeFNLbnBRcGtZSE9tOFhHN3NmMGZXQXVZZEFQSXUtcDZEaV9PZ3RZ?oc=5",
+      "outlet": "20 Minutes",
+      "outletUrl": "https://www.20minutes.fr",
+      "published": "2026-10-29T17:03:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Trump abandoned by part of his camp before the midterms over Russia",
+      "about": [
+        "US",
+        "RU"
+      ]
+    },
+    {
+      "title": "Un hélicoptère de la force européenne s’est écrasé en Bosnie, plusieurs morts et blessés selon des médias locaux",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWkpFSjhnM0RjVDhXQnhqczBjLWRNbGlTUHVtUTYwdjF0U1RacjA0c2lLZlUzcmdFcU1zUndxZTlYbzBHMjZIOFJ5RkswRzEybl9OTWxhZG5iTDNDYno1VFhjYkdPNC1oRWxVSE50V0VHSG52ZElRRmMxb3FSb3hsNGIxYS1oVEQ4SDllZ0h0UzhDemlNVHFLbHRjdUpMb2NxWko2cGxyY294RHM?oc=5",
+      "outlet": "Le Figaro",
+      "outletUrl": "https://www.lefigaro.fr",
+      "published": "2026-10-29T16:59:19.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "A helicopter of the European force crashed in Bosnia, several dead and injured according to local media",
+      "about": [
+        "BA"
+      ]
+    },
+    {
+      "title": "Le médicament antiobésité Wegovy sous forme de comprimé : date, prix, remboursement… Tout savoir l'arrivée du traitement en France",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOX0puZjlnUktfMktTclh3bUtMdUxfM1AydzFVVGNYcFFWaXFsSzVlLTZNakhrQVZBSXV6TXpkUkVoa2sxQlh4NEJrcFRXZV9xYmg3bTJBS1NKU21pczgzcFZiOHN3NWpaOHZPRGRNcGs3NzdhMjlJT0k0N09pOUdmOTlrS3V4bFlvTGo1TjBrN0Y0UnVJQTR2TlM2d1k5ajgzVFVTQU9STWpad1drT2duVFJ6ZlItb2NHaElWZFNrVU5wVTNlUFpieVdaMVdFVElGS0FRbV94RENBdUlDQjBfMURfT0VLQS1fRTJ4cmZEdlowT2g1UmtfQklabVVJZTlSWWlZ?oc=5",
+      "outlet": "Midi Libre",
+      "outletUrl": "https://www.midilibre.fr",
+      "published": "2026-10-29T14:16:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The anti-obesity drug Wegovy in tablet form: date, price, reimbursement… everything to know about the treatment's arrival in France",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Bison Futé : un vendredi 30 octobre qui s'annonce chargé sur les routes, les axes à éviter le week-end de la Toussaint",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPekptdmZYVmIyWjh3N0FZUzY0YUlMRjVXZ0R0bEJCVkcxbWpvZFRPX3JjOXRfOXFJZnBpQWpKLUM0bGJsOW02ZEFmbjF2TGozQVd3VmxUMXJCNy1wOUFybFVUX0tQVHJqT1l6V0pNQ2lkNHptZ0RtR0tzc0NLU2JXLUJLZkh0WlNIam1Qb3VRYUM2WFdqU01yWmR2S1ZDd3A1N1BoQjZybUhrT0h5TFpyMDlqRUdrSlRQUG5ONkd4TlFKd1RJOHIteWE0dFFpaEhjbllnSl9Bei14WW1aYWJicnBhMEd3Nm9BVzNOZTZn?oc=5",
+      "outlet": "Roole Média",
+      "outletUrl": "https://media.roole.fr",
+      "published": "2026-10-29T16:30:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Bison Futé: a busy Friday, October 30 expected on the roads, routes to avoid over the All Saints' weekend",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Noyades : 441 morts entre le 1er mai et le 31 août, principalement lors des périodes de canicule",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbFNDU0U3Z3N2SlI3TG9wSG83UTE5MmQyU283SW5ST3cwSXhya2pHOVNmWHhfZ08tbHlEMExaWDVuektETlM0N2tyelZhQTNFNDRhVUhTMGxwU3ZNeWVWZFFnTFFTdGNyMUFDYms1RFNLS2R4T1VqTjFPWmVkM3p2LWVKaDBfbW9qWnNoNjlPVk9sWlpHam5iTjVkUGplaHh0OHNrVnhhUV83Q0dTM0N5aDlaVWMxeENtcE1iZjJYOVAxS2VKUmow?oc=5",
+      "outlet": "Le Figaro Santé",
+      "outletUrl": "https://sante.lefigaro.fr",
+      "published": "2026-10-29T09:40:56.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Drownings: 441 dead between May 1 and August 31, mainly during heatwaves",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Quand les annonces de Lecornu ne calment pas les lycéens et les incitent à manifester",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQbkdIc2VRdDNJZDZWZDFPZVMzTW9JekpoS3lEODlEVUNFenQ0UV9fRmd2bWJTZ3hfMldTRVh2ZzlieXNYWV9JQ041V3d4T3dNQlctYkpqTklsUjlpbVptRzdpRmxXeVBrbEtXRWdBMUhhUVFRZ180NDRmTXJjOTljS0dneDB5NG0zRDBVYmVmcEtiem94Zk93UmJnM0xwYmlwajZvUkxjVFRaa1RET0c1VU82UGtuTV9hYV85MzJhVG1IVFc4SHY1akZDZktJVzB1QWh3aFRZSDJ5di1k?oc=5",
+      "outlet": "20 Minutes",
+      "outletUrl": "https://www.20minutes.fr",
+      "published": "2026-10-29T05:37:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "When Lecornu's announcements fail to calm high school students and encourage them to protest",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "« Faites demi-tour tant qu’il est encore temps » : un sénateur américain demande aux transporteurs de diesel russe de rebrousser chemin",
+      "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxObExnUWIwNFlUN0ktR1JJYUN3elB5YkJjRDItZEtXWURWWXRpOS1vVVMzM2dkbUtsX0g4UkxzYXRXM2NEX29QZkFYUk5DaGk1QzZpekxIMzE0ajU0VTlHQnptMUx5amxYVG1Ic09uZDlUMkExMWxnUE03TXI1ejRULTUxZmd4NjFXSWNSWDdrOTVsbDctekw2elVZc1ltQWkxX3BjNmM0Umc0YlZ6NlBJQVpTQkV6TFBtcld0TEhkQVRZNmhaaVFqYU5RX2xDV09scXlFV2RDd2NuRm1Fazg5T1FBNzY5WjlMbFJpbVhOckZlU0ZwR2ZPVkp5M1JrTEcyX2RDbEhuRlRjYS02X1RxNmRfaTRPQjdXNnFJZldGODlpWmVxX204a3JDWlJwTVZyQ2dKS1M4NXJkWlVMQlZBQXVYbw?oc=5",
+      "outlet": "Le Parisien",
+      "outletUrl": "https://www.leparisien.fr",
+      "published": "2026-10-29T16:15:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"Turn back while there is still time\": a US senator asks Russian diesel carriers to turn around",
+      "about": [
+        "US",
+        "RU"
       ]
     },
     {
@@ -122,271 +389,6 @@
       "outlets": 5,
       "trending": false,
       "en": "\"It's spitting on a coffin\": a large gathering of reactionaries and climate skeptics organised with public money",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Geoffroy Roux de Bézieux succède à Edgar Grospiron et devient le nouveau président du Cojop des Alpes 2030",
-      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNZmxMcHdJa3F5VHZVQkV4UV9SbGYtZ3M0XzVSbWw2OVc0S3dEQkx2ZWpVQ2U2cHpVWmVTOHUxNjE3T1h0S09OSFRVbld1QVQ4aFJ2a0lob0F5NFVyaUVaQmMzUWU5VVVNYWtpWmlCbE5FZngwbFVxZGR4elRyZl92UDZHUzN5Yi0yd0xLU2hPTGdocTd2YkF2c0lFQWItQUxldzNXdHNWWkl6SlBEZTBNWjJGbVhaMUQxS3dhZHpiLVZHMGtGeDd2ZVRyb3lUclRnYWlaenFvTzVtR1FNeG5ONUsyejJjZmpSUWNQVmhXUXVReVhnblBSRzVnZVcwMjJma2k0Z1RFdlRyZ05YMlh0akRfdWJxZw?oc=5",
-      "outlet": "franceinfo",
-      "outletUrl": "https://www.franceinfo.fr",
-      "published": "2026-10-29T11:47:36.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Geoffroy Roux de Bézieux succeeds Edgar Grospiron and becomes the new president of the Alps 2030 Cojop",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Des \"violences graves\" : un homme meurt dans un commissariat après son interpellation, l’IGPN saisie",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPclphYVVEMnRUOTIxeF9rM3hsWlNZUVdZTTBLR0lfS2JZZlZxQ0JwOUpLN182dFloOUNuQ0g3anEtejBRazlaTHlYQjV2Nno3anJ6MjVxQWZRX2x6ejY4YTFha0dEMGVrY1E3MGoxaTJhYTdJNGM1UnJaLUVyQ2FVYTBZSnk1RldyRkJvckNRWEFCVld3bjlydUN5THEyekFKYlBDUUtsaDVrQk9teHlDQkg0ZEdObHdzRGpjMEFqVzVSWVA3QTZxUXEtUjdXdXB6bVNQU1FtYnJBUVk?oc=5",
-      "outlet": "Midi Libre",
-      "outletUrl": "https://www.midilibre.fr",
-      "published": "2026-10-29T09:46:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"Serious violence\": a man dies in a police station after his arrest, IGPN called in",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Boîte de nuit, nain pour servir le champagne… la fête d’Harry Kane pour célébrer son Ballon d’Or",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZnhfV0NUTVFTZlFpR3ItQjd1eE42WFdUd2d6dDY3THd1MXU0Q2hIa3NOWDhaQ1VkbmlIZlV3SC1UMTZJeWd3Zi1IbmxNM01NTFczeE92OHFXUXlFQU01dkJ6TFpRQWlvRktkeFgwSWk3Mjl6SEpSV1ZOLXd6dW5OaktMSE1FNWRkbHFNZzdlYlFmWkFSbWkzdGpjN2NETzdLdVhuWlk4NFBOT3lSTmYzVUpOTEFKNHhEcDRONDVRQi1xS3BCVHhVVjlvWlNRdW9FdnB4MG44SjRGNjg?oc=5",
-      "outlet": "Le Figaro",
-      "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T11:00:31.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Nightclub, dwarf serving champagne… Harry Kane's party to celebrate his Ballon d'Or",
-      "about": []
-    },
-    {
-      "title": "Un projet \"cafouilleux\": les entourages d'Édouard Philippe et de Bruno Retailleau accueillent très froidement l'idée d'une \"primaire démocrate\"",
-      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQMTRkZ3AtalFaLUJoZTFTU0FGdXRlY3FuY3E3aklpOXFUY3FCLWREUDljZnZqUWxMZ3NfckJONFFfd3ludXBla1prRk5pcmx3dEJkUUFob0lSWXUwbXFXdTFDc0lDUUp4QlowQUtyd0pHc3RxalJ5d210dFZqM215dVBWUU1JMVNPVXB2cHpzb053UFdwcmx0NkNDbFdjSnlXYU40ZlVXeHhsbWNLN2NweXRtaGwyc05ITFh5OVhNRjMxc2dEb1lGakZmLTNvY25TNm91UnNYZFkxQTR0alhtSGt5dWNVd2xpaG9fWTVQLXBGeEtDWWpXWEQyelVodEMyMHdyNEJzUFpYQ2pYSHdwZ2d0NEowb3RMd3hSTWluckdhRnZJdjVsQTFKamhuYVpTc3dhNE5ZSlMzczRJSlE?oc=5",
-      "outlet": "BFM",
-      "outletUrl": "https://www.bfmtv.com",
-      "published": "2026-10-29T05:55:03.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "A \"muddled\" project: the entourages of Édouard Philippe and Bruno Retailleau receive the idea of a \"Democratic primary\" very coldly",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Il avait prévenu le voisin par écrit en septembre : après Austen, l'expert a réclamé ce mot avant tout",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdlJlQ3RuQzNRd2o2TlFaQnM4R2phZk1FSmxISnB6STVBRkRnb2M2Yy1MMTdLN3JGMFlMbEdfbWFhTm5Rek9RWnVONmNITkFsZXplSWNfSG8waG9sck95NjZJblNVNXNYc2tWbWJyeHU0NWVKUmpoYmlZckZRZGVMZXpQWmR1T1B1VWl1Qkh3T0FacTJFOFlzR2pZUVdvbUFt?oc=5",
-      "outlet": "Le Tribunal du Net",
-      "outletUrl": "https://www.letribunaldunet.fr",
-      "published": "2026-10-29T12:30:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "He had warned the neighbour in writing in September: after Austen, the expert demanded this note above all",
-      "about": []
-    },
-    {
-      "title": "Quand les annonces de Lecornu ne calment pas les lycéens et les incitent à manifester",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQbkdIc2VRdDNJZDZWZDFPZVMzTW9JekpoS3lEODlEVUNFenQ0UV9fRmd2bWJTZ3hfMldTRVh2ZzlieXNYWV9JQ041V3d4T3dNQlctYkpqTklsUjlpbVptRzdpRmxXeVBrbEtXRWdBMUhhUVFRZ180NDRmTXJjOTljS0dneDB5NG0zRDBVYmVmcEtiem94Zk93UmJnM0xwYmlwajZvUkxjVFRaa1RET0c1VU82UGtuTV9hYV85MzJhVG1IVFc4SHY1akZDZktJVzB1QWh3aFRZSDJ5di1k?oc=5",
-      "outlet": "20 Minutes",
-      "outletUrl": "https://www.20minutes.fr",
-      "published": "2026-10-29T05:37:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "When Lecornu's announcements fail to calm high school students and encourage them to protest",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Le colloque et la manifestation d'ultradroite «Objectif Remigration» interdits samedi",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNWUxZlBpY3prWlVERGE1ME5aNHNsQ0Z2SW5Zd3FtSHJJdkJnbmVKYkdaTE1CeEV6R2hzS0tKNkZCTVZMem9pMy1xWkRkZDNxOUloUVBtckxCYjRjaERXTVZkVWFCTWtjLXV6Vnp0b3JVaVctY193VmVha1RRRlNBUEF6QkRERXlqSWktV2hBcmVIN1FxNUowakUwS3I3TnRuTnJad3pZR0l6LWJDM0VGc0dHX2kwMTlrSDEtUWlSaTZxa0pHZWt0c1RudDlfUQ?oc=5",
-      "outlet": "Le Figaro",
-      "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T12:01:57.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The far-right \"Objectif Remigration\" colloquium and demonstration banned for Saturday",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Des lycéens blessés aux réseaux sociaux, Macron défend sa ligne et réclame le « calme »",
-      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQdHBSM0ZHSk9MZ19NemI1eG5CdjFvanhQMzJuQWtsWk5rSUg3VmpqblF3TGVjdUg5aDFDenQ2Tmc1ejZ1dmdPdWlQRXdZaTRBeVcwWVRMWG1aYXR5ZHJJck01VFBYdzh4d3J4dzZsSnM3U3pqbTJ5OEdJUWNhQVZlZXRVQ3NWOEVtX25zVkV1N0hJOVJfdXIyU21IWnM3cW1HVUhNV2lFZXlydDU1WXJxRV9KQ2xFMHlLaFZCSG81MXlCbFQ0dDFjT3FEWXNweXRYVzhnamxPcWZ6NXBNVndHeHkyZEx6bnpPRG43TElwa0w3R3RCcnk3bzhndGVrZVRmcFNuTS1xLWpadw?oc=5",
-      "outlet": "Le HuffPost",
-      "outletUrl": "https://www.huffingtonpost.fr",
-      "published": "2026-10-29T05:30:05.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Injured high school students, social networks: Macron defends his line and calls for \"calm\"",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Arrêts maladie : \"Le moment est venu de changer les paramètres profonds de l'Assurance maladie\", déclare le ministre du Travail et des Solidarités",
-      "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxQdnBhMlFfZm91YVFvT3dYOXoyaG9iM01FUE55aUFFSlVqOEpodGliRklXZTVyQjl4Y1Z3ODdMeXRPbTF3cEtiUndNQTRtX1diYTN5b0U2aXdZMHdkTmw5YURYRzJLRU40cGd5d29qelVMQURRSjdrTzRnRjY0SjgtbnhYXzNzRjM3cVNQOXhwamFKMjN5WE1yNjU4dkxqekNFTFhXOXlzd3Z2Y20wVHJIN1lTdG1YaVR1M0hSb0pjTnpOVW9QSVNkRktGeXNic1NGSDVWMjFoQUtmckEtNHI1TGg5UFBGQ2pYY0hiSFVaaDBGUnJnUm5NQ3AxREhJWWpTUWtlSUsxUkNlZkg1emdYT3FxWlMyU19UbnVadTl4R3dkekEzc0RnLV82VDZWU3pOSjl3cE5mRTRCYXNaVko3UTJCTktNeFN1RC1RcENlbnlkaEFwY0wyZUhkMGpMZ3c?oc=5",
-      "outlet": "franceinfo",
-      "outletUrl": "https://www.franceinfo.fr",
-      "published": "2026-10-29T08:06:22.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Sick leave: \"The time has come to change the deep parameters of the health insurance system\", says the Minister of Labour and Solidarity",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Stellantis, toujours dans le rouge, peine à redresser ses ventes, en Europe comme en Amérique",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQRjZ1eGU4QUdUQVFqSGJsbExTNnhsWDhyb1lJSnlUVzM4YjV0RDFFVWJod3YyVzhrZEpSQ1F5b2NJdTRzbjREYU1mS2RqS05tcDBfZ2JzWjBDYkdLZFpuS3FWQmJEWkFsa3V1R0JwUnNkcEY1ZlhiWi16ZXVKRnpvczJkQ3VWV2x5MW5LRkFHTjI3VEpkTVUzR0NScFdCc3FvSGFxc212N0ZiRWFXRTZwV3ctU1F1d3VfTVdtcDNRNXphdWkySGZPbmlPNVFRWEFxMVhpMzFVTE1FYTV4XzRvdFVUMWhDY2NMOUdqekx2ZFM?oc=5",
-      "outlet": "Le Monde.fr",
-      "outletUrl": "https://www.lemonde.fr",
-      "published": "2026-10-29T07:37:44.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Stellantis, still in the red, struggles to revive sales, in Europe as in America",
-      "about": []
-    },
-    {
-      "title": "\"Ça ne devrait pas être rare\" : Wemby, retour aux standards",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQa0NPS3JDd3dob3hsWTdYNlU0UjNfUGFrbl8yWXh5ZGtQSDFWLXBxQmRrQ2dPRGJ0YnN1UV90TlVXZ2ZOd3FPcVl1TkJ1bFlhcTAzVEJvaGIwM3FIWmhZSXlRdU0tUEUxejNtSWtZMUVGQ2xXSzkyX2JzZ2ZNX25EUXJ6VjVwT3FibnF0M3FiWmcxLWcyTVRwYm5OU3haOHpKM1hCTVJsdmZnQkhNWlM3WFBUUWNfT21NUlJxOGFjM2tBdjFrenZnUUMxX1daS3VPRFU1UlNGTV9OTWZBbzZRM1RFYjBqRjBGeTNQbWd3aWR1c0ZkVTJjR1pXeEZiY0xLdk12eXBWbzYyY1JwR3Z2SlJGOHhUMFE?oc=5",
-      "outlet": "Eurosport",
-      "outletUrl": "https://www.eurosport.fr",
-      "published": "2026-10-29T08:56:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"It shouldn't be rare\": Wemby, back to the standards",
-      "about": []
-    },
-    {
-      "title": "Les ventes de Renault reculent, mais l'horizon reste clair pour le losange",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNVWctdEhsa0JTdGdBcDR5RTRweDZKbTl3cEZjcG1Qc2dyU0d3V0kycUZVZDhGVDJ0QmpxMzB0MjlYSWtPeDZWdzNUR2haUkg3SFZBMExadnMyamV0d1RUTllOdno1NmRmSVg3bjRyOW1BSnhIcGtYNUUxaGczZ3lWdzU5dXNfb294QjF4M2tIRC1IaUxXU0x6X3BQR0EwZ3BlSHhOaGZkYlJNVUdBQnBBRGowcjJFbUVJQTU4WjE3WGRJejRJby05MWpmQnh1UVE?oc=5",
-      "outlet": "Les Echos",
-      "outletUrl": "https://www.lesechos.fr",
-      "published": "2026-10-29T07:30:33.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Renault sales decline, but the outlook remains clear for the diamond brand",
-      "about": []
-    },
-    {
-      "title": "Flávio Bolsonaro affirme être le \"leader\" du Brésil après sa fuite aux États-Unis",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVmFhY2RDU2x2WVpFb0hyWVRsM3p6LWNNZmxLb0FsZXFWclZxY2R3ZmRUWjRTanVmTmJDUmNvdXU1bW5xZ1VBcTNxQUR4c2U3c2dqa0owLUl6TDJza28tX0JCMWRqazNlNkp5eFQ1a3Z3QTFMYjRuU1BuMEFRZ0o3ZV90QjNNSlZZLTl3MmVWYUJyMkdjQVFucmUzMFdtRWVJa0VYUENCc0hMUU5aZjdDV0pWMlI?oc=5",
-      "outlet": "Euronews.com",
-      "outletUrl": "https://fr.euronews.com",
-      "published": "2026-10-29T06:09:09.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Flávio Bolsonaro claims to be the \"leader\" of Brazil after his flight to the United States",
-      "about": [
-        "BR",
-        "US"
-      ]
-    },
-    {
-      "title": "INFOGRAPHIES. « Vivre à la rue tue » : au moins 927 décès de personnes sans domicile fixe en France en 2025",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOQ0tmRlhpV0xXUW1VazN5S0JsWmFmVTZ6LXNMOTRjcmp3ZmZsTUtRbjN3UENwUm9KcmlMV1BYeng5SDVQNW5aYlFjWWl1d2VXdnFCelcwYzIwMGxGOC1hUGpsU0pSOVhYNDZqeVFYTzBEM002RXQ0aUpnQUU5ejFsUWt1cl9UVmdRREFQcTlqRlRfMVIzN2l1ZFk0NGoxa2VBa05GWFI4OGVERkJrMFBJUU9VTlJqb252VG9OdXUyVjVEaGRiZEtrem1qSnRLQ20tcDR6S0pRSFc4Tk82d1NBZ0NEUFpOWW5xV0t1S3p1NTJLbHRVZ3ZmZnNPcnh3UXhYVnYtdXBiQWluVFdCbFZ3?oc=5",
-      "outlet": "Ouest-France",
-      "outletUrl": "https://www.ouest-france.fr",
-      "published": "2026-10-29T05:01:02.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "INFOGRAPHICS. \"Living on the street kills\": at least 927 deaths of homeless people in France in 2025",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Marine Tondelier défend Kylian Mbappé face à la Chine",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNGhWVHpVbU41SXRlTEk3YlFCcnlyY0l3ZFYyYUlsUEV5VjZSTlpGaEJrUG5pemJobzR5MEhwN1VvZUFMMUVxZzAtckhkSkFhaC1Eei0tT3JZTUR5NGtiSmhCMGltQ1J6cUhWQzJRbGh0bXJHNzN0T1owbDc2Y2pRM2tWWEktb2hfUjgwMi1BRXFYcklZSzFqXzc4b0JqcEs5U0I2OA?oc=5",
-      "outlet": "Foot Mercato",
-      "outletUrl": "https://www.footmercato.net",
-      "published": "2026-10-29T09:05:40.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Marine Tondelier defends Kylian Mbappé against China",
-      "about": [
-        "CN"
-      ]
-    },
-    {
-      "title": "Attentat raciste à Trappes : Kevin T., poursuivi pour assassinat terroriste, a déclaré que la ville était un « repaire d’islamistes » pour justifier ses actes, selon le parquet",
-      "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOZk50cGhXaTcxNUpZSmVIR3BCR2MweEYxeDgySUREU3dyNW9ObU9Qd0pPcTFpZlAyUXRoQlZwbXJrbTNmczV1VWh5a2JqTXB6ZDBQZjB1anhIdjdzT183TDZBMUFGTkFWNWtKODVNNWZ6NDRUWmdFdzRoTEh6SEN5d2dOamxsb3p0dk5KbHliaEV0SlZ4akhua25ObkQ2TE52QmoyLWh6RDFoVDFWRThpMkdrSGliMUd6MHpla0hYYTkwQzlNbG1GQ19VSDhCaXh5QVNUNDhkNVh4dFNTZjAyVTlSSXVva0Q5MVo1V1M1X0lTRlA1ZHR0a2NhUlNkaWs0bHJVaTFyT0ZSN3JBMklPRGlsTjAwdnlPa1N2cHUyTlZlTjN6NEhvQ05wR29IZkRPbnNZd2FQMDctRDFRdHFPb0VxdnVZaFNxazRZaGduM1ViT2t6?oc=5",
-      "outlet": "Le Monde.fr",
-      "outletUrl": "https://www.lemonde.fr",
-      "published": "2026-10-29T10:37:27.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Racist attack in Trappes: Kevin T., prosecuted for terrorist murder, said the town was a \"den of Islamists\" to justify his acts, according to the prosecutor",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Élections en Israël : des proches de Donald Trump espéraient une défaite de Benjamin Netanyahou",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZGdwNWtPdW01NS1Ic0lEZmpuUHN3RzcwV1c2aWpxR2wyeUNndGluVTBHbHNUenNBdFFzRlVjNTdtVnRWcEdId1dobFlpbkJGejM0eV9CQmRBZ04tM0R1ai1hS1RkOW5rdTRCSFpybjNPa1lwbVl6MWw0c3hQTDhHalEwX3U0U1ZSLTh0MFFnR0hzSkFCQUEwQW9Va0ZuTW1wWC1oMmRsbXkyNjdYU2lmUjlubEp2U21GTG9HZjRSUFZDSy1uZjExQmhhclIxajZBWWZKMzA0UmlYV3d1Wk1jbDJTTlp5dlJHUmUzSU13?oc=5",
-      "outlet": "i24NEWS",
-      "outletUrl": "https://www.i24news.tv",
-      "published": "2026-10-29T10:26:40.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Israeli elections: allies of Donald Trump hoped for a defeat of Benjamin Netanyahu",
-      "about": [
-        "IL",
-        "US"
-      ]
-    },
-    {
-      "title": "Phantom Blade Zero : les premiers tests pour le blockbuster chinois sont tombés",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOVQ5d0RtUEphM3dMcVVOdTlnZ0poaTdyWEptSjJGcnhGZkxNenJWV3NWVEtTaTA4QVlELUx1MUlUVFkzME9tWjBpV29uSl9LeU5KQjE2ZXFRaWJOZU43MWFJUUltT1VDd3ZYQ0RQdWFtekZFdlh6R2V4UTVINm1ISnZIaVJOVk5YbmlHZzEzVmhvWHd0VEJvbUJoLW5iS3pKc2c?oc=5",
-      "outlet": "Ecran Large",
-      "outletUrl": "https://www.ecranlarge.com",
-      "published": "2026-10-29T07:00:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Phantom Blade Zero: the first tests for the Chinese blockbuster are in",
-      "about": [
-        "CN"
-      ]
-    },
-    {
-      "title": "DIRECT. Présidentielle 2027 : un système \"à bout de souffle\"... David Lisnard propose de geler les pensions de retraite de plus de 2 200 euros par mois",
-      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQa3Mwbm9VekVyN3liWVg0XzRVMFI5UUxjR09fT21leV92UEZocEVNdWJjeGpPV3h5TkpjXzlNWXphODcwbWZ5N0ptdFh4OHhRU0hvcmlkOEJWakxQdzdOMWNFcWRWNXpUb2d6VXNRc2pFOGhCVlFBUEZiZHdnQ1FacXRScWp2di1XalA5ZU4xOE95cV9FeTJ4LXFxY3g4dTFCd1lkWE1CZm9uQm01ekN2RF81NzZFSEpBUzNjdHNXNHUwVWJEVWFNM2tENWVkYndqdDBnaEk1bFVEc3VDS1J2TlNtSDBIZElMdWZXSGhoc2J6Vmx4MmsydGd2TnBIaVBFRGczZWE5OGw4R2RCSEpNMzEwRkZqeFprdFJGWA?oc=5",
-      "outlet": "ladepeche.fr",
-      "outletUrl": "https://www.ladepeche.fr",
-      "published": "2026-10-29T10:05:02.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "LIVE. Presidential election 2027: a system \"at the end of its tether\"... David Lisnard proposes freezing retirement pensions above 2,200 euros per month",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Meurtre de Quentin Deranque à Lyon : le député LFI Raphaël Arnault a été auditionné par la police",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON0xnXzdaM2lHMldkQjdaY3g5bHlRZTJ3Sm1YR2hvajlUV2k2cFVSSlRuQmxpUk9idzFaQWZUa3VSOGNIZ1dZMzNvMHZtWmE1cFlDUC1fT25ZZm9fZU5NYWFmalItRkNheS1VSEpqYVZLaUFMRnR2MnRfNlJOVlZZLXhncUQ2c1BjY05aTFliRUZoeEdtUmJGR19zT1dpanlnR3B5TXM5dXE0dmlDS1VtQldOSmZQdUJoTjd0SmRoY00ydkpkTlljVUZtWFdYY0k0SXF4V01sOW4?oc=5",
-      "outlet": "Le Figaro",
-      "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T09:56:15.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Murder of Quentin Deranque in Lyon: LFI deputy Raphaël Arnault has been questioned by police",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Météo aujourd'hui : brouillards le matin, soleil l'après-midi, jusqu'à 21°C à Nice",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQlRpOThhamYzUVlVOWhDVnAxOU1OM1ZLOGZaUUFqWkxEeGVaRDNfNDJ4dkV2Si1QZFhsRnJJcWYydlhpSkF2RmRZT0QxQUFoVURKRDVnWW1BeU5FQXNydHpmVjI5MlVlelpkNHJnNExFVG1MdlR3Zm9qU0dWV1NtcW9rT3RkUWNIbk5sX3RkQWxoMTJXWVZobW1SV1FrN3NjX3MzOXdiTjVKbWczemhwaTJEZ1RYX2pDeU8tQm1ITVJ2akRXVTN5dFF0dTg5MjBnMWpCeno0QXphNi14Zi1EMA?oc=5",
-      "outlet": "La Chaîne Météo",
-      "outletUrl": "https://actualite.lachainemeteo.com",
-      "published": "2026-10-29T09:28:40.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Weather today: fog in the morning, sun in the afternoon, up to 21°C in Nice",
       "about": [
         "FR"
       ]
