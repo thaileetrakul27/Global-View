@@ -214,80 +214,83 @@
     "seen": "2026-10-20T14:35:40.688Z"
   },
   "gdacs-cyclone-tc-1001338": {
-    "at": "2026-10-28T01:49:21.011Z",
+    "at": "2026-10-29T06:19:20.602Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Super Typhoon Champi (Rosal) formed on 11 October 2026 and passed near Guam, the Northern Mariana Islands, the Philippines, Taiwan and Okinawa, Japan. It became extratropical on 25 October and dissipated on 27 October. Reported impacts include one death and 616+ injured in Taiwan, damaged homes on Guam, power cuts in Okinawa, and at least US$7.86 million in economic damage.",
-    "ongoing": false,
+    "summary": "Tropical Cyclone Champi, known as Super Typhoon Rosal in the Philippines, began on 14 October 2026 and affected Taiwan, Okinawa in Japan, Shanghai in China, and Guam and the Northern Mariana Islands. It became extratropical on 25 October and dissipated on 27 October, according to Wikipedia. Direct effects were still reported on 26 October, when heavy rain was forecast for parts of Japan. No source gives the status as of 29 October.",
+    "ongoing": true,
     "places": [
+      {
+        "name": "Ishigaki Island",
+        "admin": "Okinawa Prefecture",
+        "country": "JP",
+        "kind": "district",
+        "impact": "utility poles across road, street trees snapped"
+      },
+      {
+        "name": "Miyakojima",
+        "admin": "Okinawa Prefecture",
+        "country": "JP",
+        "kind": "district",
+        "impact": "injuries reported"
+      },
+      {
+        "name": "Yonaguni",
+        "admin": "Okinawa Prefecture",
+        "country": "JP",
+        "kind": "district",
+        "impact": "injuries reported"
+      },
+      {
+        "name": "Haterumajima",
+        "admin": "Okinawa Prefecture",
+        "country": "JP",
+        "kind": "district",
+        "impact": "power outage, water supply disrupted"
+      },
+      {
+        "name": "Shanghai",
+        "country": "CN",
+        "kind": "city",
+        "impact": "tens of thousands evacuated"
+      },
       {
         "name": "Batanes",
         "country": "PH",
         "kind": "region",
-        "impact": "Signal No. 2 winds raised"
-      },
-      {
-        "name": "Babuyan Islands",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Signal No. 2 winds raised"
-      },
-      {
-        "name": "Cagayan",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Signal No. 1 winds"
-      },
-      {
-        "name": "Ilocos Norte",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Signal No. 1 winds"
-      },
-      {
-        "name": "Apayao",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Signal No. 1 winds"
-      },
-      {
-        "name": "Ishigaki",
-        "admin": "Okinawa",
-        "country": "JP",
-        "kind": "city",
-        "impact": "Utility poles and trees damaged"
+        "impact": "Wind Signal No. 2 raised"
       }
     ],
     "figures": [
       {
-        "label": "Injured",
-        "value": "616+",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/Typhoon_Champi_(2026)"
-      },
-      {
         "label": "Deaths",
-        "value": "1+",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/Typhoon_Champi_(2026)"
+        "value": "1",
+        "sourceName": "taipeitimes.com",
+        "sourceUrl": "https://www.taipeitimes.com/News/front/archives/2026/10/25/2003866564"
       },
       {
-        "label": "Power outages",
+        "label": "Injured",
+        "value": "616",
+        "sourceName": "taipeitimes.com",
+        "sourceUrl": "https://www.taipeitimes.com/News/front/archives/2026/10/25/2003866564"
+      },
+      {
+        "label": "Households without electricity",
+        "value": "about 56,000 households",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350"
+      },
+      {
+        "label": "Flights cancelled",
+        "value": "259",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350"
+      },
+      {
+        "label": "Households without power in Okinawa",
         "value": "13,000 households",
         "sourceName": "news.sbs.co.kr",
         "sourceUrl": "https://news.sbs.co.kr/english/article.do?news_id=N1008814278"
-      },
-      {
-        "label": "Homes destroyed or severely damaged",
-        "value": "Up to 100",
-        "sourceName": "archyde.com",
-        "sourceUrl": "https://www.archyde.com/american-red-cross-responds-to-super-typhoon-champi-and-hurricane-isaias/"
-      },
-      {
-        "label": "Economic damage",
-        "value": "At least US$7.86 million",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/Typhoon_Champi_(2026)"
       }
     ],
     "donation": [],
@@ -298,39 +301,31 @@
         "title": "Typhoon Champi (2026)"
       },
       {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season",
-        "title": "2026 Pacific typhoon season"
+        "name": "news.sbs.co.kr",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008814278",
+        "title": "Typhoon Champi Leaves Trail of Damage in Okinawa and Taiwan, Heavy Rain Forecast Across Japan"
+      },
+      {
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350",
+        "title": "Typhoon Champi hits Taiwan, killing one and injuring hundreds"
+      },
+      {
+        "name": "dawn.com",
+        "url": "https://www.dawn.com/news/2039482/tropical-storm-champi-nears-china-after-battering-taiwan-japan",
+        "title": "Tropical Storm Champi nears China after battering Taiwan, Japan - World - DAWN.COM"
       },
       {
         "name": "redcross.org",
-        "url": "https://www.redcross.org/",
-        "title": "American Red Cross"
+        "url": "https://www.redcross.org/about-us/news-and-events/news/2026/tropical-cyclone-heads-to-the-islands.html",
+        "title": "Red Cross Responds as Super Typhoon Champi Moves Away from Guam, Northern Mariana Islands"
       }
     ],
-    "membersHash": "eonet,gdacs|CN,JP,KR,PH#afb26aec",
-    "seen": "2026-10-28T23:02:19.626Z",
-    "donationSearched": "2026-10-28T01:49:21.011Z",
-    "directSearched": "2026-10-28T01:49:21.011Z",
+    "membersHash": "gdacs|CN,JP,KR,PH#472ce3cf",
+    "donationSearched": "2026-10-29T06:19:20.602Z",
+    "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://wck.org/relief/typhoon-champi/",
-        "org": "World Central Kitchen",
-        "kind": "local",
-        "note": "Hot meals for shelters and relief workers on Guam and Northern Mariana Islands.",
-        "title": "WCK Responds to Typhoon Champi in Guam and the Northern Mariana Islands",
-        "published": "2026-10-22T01:49:21.011Z"
-      },
-      {
-        "url": "https://wck.org/news/typhoon-champi-guam/",
-        "org": "World Central Kitchen",
-        "kind": "local",
-        "note": "First-alert Champi page with donate button for meals on Guam.",
-        "title": "First Alert: WCK Responding to Typhoon Champi in Guam",
-        "published": "2026-10-18T01:49:21.011Z"
-      }
-    ]
+    "seen": "2026-10-29T06:19:20.602Z"
   },
   "gdacs-cyclone-tc-1001341": {
     "at": "2026-10-27T21:08:09.862Z",
@@ -364,7 +359,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-28T23:02:19.626Z",
+    "seen": "2026-10-29T06:19:20.602Z",
     "donationSearched": "2026-10-27T21:08:09.862Z",
     "directSearched": "2026-10-27T21:08:09.862Z",
     "directSearchVersion": 2
@@ -472,90 +467,69 @@
       }
     ],
     "membersHash": "eonet,gdacs,news|IN#83db95ef",
-    "seen": "2026-10-28T23:02:19.626Z",
+    "seen": "2026-10-29T06:19:20.602Z",
     "donationSearched": "2026-10-28T09:03:01.732Z",
     "directSearched": "2026-10-28T09:03:01.732Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-10-28T23:02:19.626Z",
+    "at": "2026-10-29T06:19:20.602Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Drought in Europe began on 21 December 2025 and is ongoing as of 28 October 2026. The EU's European Drought Observatory says conditions in early October slightly improved but remained critical in most of Europe. In Austria, Upper Austria had about 37% of normal precipitation missing through September. The Austrian Hagelversicherung put total agricultural damage at about €1 billion on 28 October 2026.",
+    "searches": 2,
+    "summary": "Drought has affected crops, river levels and water supply across much of Europe in 2026. A JRC bulletin dated 23 October 2026 reported persistently low soil moisture in western, central and south-eastern Europe, hampering rapeseed emergence. The sources do not confirm the 21 December 2025 start date. Reported losses include $3.6bn in agricultural losses and a French corn harvest 35% below 2025.",
     "ongoing": true,
     "places": [
       {
-        "name": "Upper Austria",
-        "country": "AT",
+        "name": "Zeeland",
+        "country": "NL",
         "kind": "region",
-        "impact": "37% of normal precipitation missing through September"
+        "impact": "crops hit, including potatoes"
       },
       {
-        "name": "Braunau",
-        "admin": "Upper Austria",
-        "country": "AT",
-        "kind": "town",
-        "impact": "52 days above 30°C"
-      },
-      {
-        "name": "Lower Austria",
-        "country": "AT",
-        "kind": "region",
-        "impact": "precipitation deficit of 30 to 50%"
-      },
-      {
-        "name": "Vienna",
-        "country": "AT",
+        "name": "Cologne",
+        "country": "DE",
         "kind": "city",
-        "impact": "precipitation deficit of 30 to 50%"
-      },
-      {
-        "name": "Northern Burgenland",
-        "country": "AT",
-        "kind": "region",
-        "impact": "precipitation deficit of 30 to 50%"
+        "impact": "dried-out Rhine riverbanks"
       }
     ],
     "figures": [
       {
-        "label": "Agricultural damage, Austria",
-        "value": "about €1 billion",
-        "sourceName": "heute.at",
-        "sourceUrl": "https://www.heute.at/s/rekordduerre-eine-milliarde-euro-schaden-in-oesterreich-120273503"
+        "label": "Agricultural losses",
+        "value": "$3.6bn",
+        "sourceName": "thenationalnews.com",
+        "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
       },
       {
-        "label": "Agricultural damage, Upper Austria",
-        "value": "about €200 million",
-        "sourceName": "at.headtopics.com",
-        "sourceUrl": "https://at.headtopics.com/news/rekorddurre-200-millionen-euro-schaden-in-oberosterreichs-88448996"
+        "label": "France corn harvest",
+        "value": "9 million metric tons, 35% below 2025",
+        "sourceName": "wodnesprawy.pl",
+        "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
+      },
+      {
+        "label": "EU and UK land in a drought category",
+        "value": "50% at end of July 2026, 9% in alert category",
+        "sourceName": "wodnesprawy.pl",
+        "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
+      },
+      {
+        "label": "Soybean yield, EU-wide",
+        "value": "down 15% (JRC estimate)",
+        "sourceName": "thenationalnews.com",
+        "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
+      },
+      {
+        "label": "Economic cost to EU GDP in 2026",
+        "value": "about 1%, around €180 billion",
+        "sourceName": "france24.com",
+        "sourceUrl": "https://www.france24.com/en/europe/20260813-european-drought-shrivels-crops-despite-farmers-best-efforts-to-adapt"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/european-and-global-drought-observatories/current-drought-situation-europe_en",
-        "title": "EDO European Drought Observatory - Joint Research Centre"
-      },
-      {
-        "name": "tauernwetter.at",
-        "url": "https://tauernwetter.at/news/trockenheit-oktober-2026-ausblick-november-winter-oesterreich.html",
-        "title": "Kaum Regen bis Ende Oktober: Die Trockenheit in Österreich hält an, der Winter könnte sehr mild und nass werden"
-      },
-      {
-        "name": "meinbezirk.at",
-        "url": "https://www.meinbezirk.at/oberoesterreich/c-politik/duerre-hinterlaesst-massive-spuren-in-oberoesterreichs-landwirtschaft_a8927844",
-        "title": "Herbsternte 2026: Dürre hinterlässt massive Spuren in Oberösterreichs Landwirtschaft - Oberösterreich"
-      },
-      {
-        "name": "stefan-kaineder.at",
-        "url": "https://www.stefan-kaineder.at/historische-duerre-haelt-oberoesterreich-weiter-fest-im-griff/",
-        "title": "Historische Dürre hält Oberösterreich weiter fest im Griff - Stefan Kaineder"
-      },
-      {
-        "name": "tauernwetter.at",
-        "url": "https://tauernwetter.at/news/trockenheit-oesterreich-kein-regen-blockadehoch-oktober-2026.html",
-        "title": "Kein Regen in Sicht: Blockadehoch verschärft die Trockenheit in Österreich bis weit in den Oktober"
+        "name": "drought.emergency.copernicus.eu",
+        "url": "https://drought.emergency.copernicus.eu/",
+        "title": "Drought Observatories"
       },
       {
         "name": "joint-research-centre.ec.europa.eu",
@@ -563,11 +537,11 @@
         "title": "Summer crop season closes with below-average yield prospects - Joint Research Centre"
       }
     ],
-    "membersHash": "gdacs|AT,BA,BE,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
+    "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "donationSearched": "2026-10-29T06:19:20.602Z",
+    "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2,
-    "seen": "2026-10-28T23:02:19.626Z"
+    "seen": "2026-10-29T06:19:20.602Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-26T21:25:14.833Z",
@@ -674,7 +648,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-28T23:02:19.626Z",
+    "seen": "2026-10-29T06:19:20.602Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2,
@@ -689,61 +663,38 @@
     ]
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-10-28T23:02:19.626Z",
+    "at": "2026-10-29T06:19:20.602Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Drought is continuing across parts of East Africa and the Central Sahel as of 28 October 2026, with the drought starting 21 June 2026. The JRC expects a strong El Niño to trigger historic rainfall deficits through December 2026. Reported impacts include about 4 million people affected in South Sudan and food insecurity in Sudan and Ethiopia. No end date has been reported.",
+    "searches": 4,
+    "summary": "Drought in East Africa and the Central Sahel began on 21 May 2026 and is ongoing as of 29 October 2026, according to the latest report found, dated 25 October. A US forecast cited in that report says the El Niño driving the drought may last into early 2027. No official end of the event has been declared. Reported impacts include cropland damage in Ethiopia and famine risk in Sudan, where drought is compounded by conflict.",
     "ongoing": true,
     "places": [
       {
-        "name": "Greater Darfur",
+        "name": "North Kordofan",
+        "admin": "Kordofan",
         "country": "SD",
         "kind": "region",
-        "impact": "severe El Niño drought; growing famine risk"
+        "impact": "Drought reported by Reuters"
       },
       {
-        "name": "Greater Kordofan",
+        "name": "Darfur",
         "country": "SD",
         "kind": "region",
-        "impact": "severe El Niño drought; growing famine risk"
-      },
-      {
-        "name": "Afar",
-        "country": "ET",
-        "kind": "region",
-        "impact": "drought and food shortages adding to needs"
-      },
-      {
-        "name": "Amhara",
-        "country": "ET",
-        "kind": "region",
-        "impact": "drought and food shortages adding to needs"
-      },
-      {
-        "name": "Tigray",
-        "country": "ET",
-        "kind": "region",
-        "impact": "moderate malnutrition found among displaced children"
+        "impact": "Famine risk, drought layered on conflict"
       }
     ],
     "figures": [
       {
         "label": "People affected",
-        "value": "nearly 4 million",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/south-sudan/south-sudan-humanitarian-update-15-october-2026"
+        "value": "3.5 million people",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/ethiopia-drought-250000-hectares-2026/"
       },
       {
-        "label": "People in high acute food insecurity",
-        "value": "about 19.5 million",
-        "sourceName": "en.imarabic.com",
-        "sourceUrl": "https://en.imarabic.com/sudan-faces-famine-drought-and-war-threaten-millions-of-civilians/"
-      },
-      {
-        "label": "Children with moderate acute…",
-        "value": "about 15% of around 11,800 screened children",
-        "sourceName": "allafrica.com",
-        "sourceUrl": "https://allafrica.com/stories/202610270284.html"
+        "label": "Cropland damaged",
+        "value": "250,035 hectares",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/ethiopia-drought-250000-hectares-2026/"
       }
     ],
     "donation": [
@@ -751,42 +702,23 @@
         "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC appeals listing for an Ethiopia drought DREF operation, MDRET042.",
+        "note": "IFRC appeals listing for Ethiopia Drought Response DREF operation, no donate button shown.",
         "specific": true
       },
       {
-        "url": "https://member.redcrosseth.org/donate",
-        "org": "Ethiopian Red Cross Society",
+        "url": "https://redcross.or.ke/drought-emergency-2026/",
+        "org": "Kenya Red Cross Society",
         "kind": "society",
-        "note": "Ethiopian Red Cross general donation page with a Donate now option; not drought-specific.",
+        "note": "General Kenya drought appeal with donate button; dates need checking.",
         "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/el-nino-weather-extremes-worsen-food-security-east-africa-and-central-america-and-threaten-next-2026-10-07_en",
-        "title": "El Niño weather extremes worsen food security in East Africa and Central America and threaten next season crops in Southern Africa and South America - Joint…"
-      },
-      {
-        "name": "allafrica.com",
-        "url": "https://allafrica.com/stories/202610270284.html",
-        "title": "Ethiopia: Drought, Food Shortages and Child Malnutrition Deepen Humanitarian Needs in Afar, Amhara and Tigray - allAfrica.com"
-      },
-      {
-        "name": "unocha.org",
-        "url": "https://www.unocha.org/publications/report/south-sudan/south-sudan-humanitarian-update-15-october-2026",
-        "title": "South Sudan Humanitarian Update (as of 15 October 2026)"
-      },
-      {
-        "name": "news.un.org",
-        "url": "https://news.un.org/en/story/2026/10/1168577",
-        "title": "Sudan: Drought and war push Darfur and Kordofan towards famine"
-      }
-    ],
-    "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,NE,NG,SD,SS,TD#d3aabe2f",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "seen": "2026-10-28T23:02:19.626Z"
+    "sources": [],
+    "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
+    "donationSearched": "2026-10-29T06:19:20.602Z",
+    "directSearched": "2026-10-29T06:19:20.602Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-29T06:19:20.602Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -1096,6 +1028,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
+    "seen": "2026-10-29T06:19:20.602Z",
+    "donationSearched": "2026-10-28T23:02:19.626Z",
+    "directSearched": "2026-10-28T23:02:19.626Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://wck.org/relief/panama-earthquake/",
@@ -1105,11 +1041,7 @@
         "title": "WCK Responds to Magnitude 7.7 Earthquake in Panama",
         "published": "2026-10-19T23:02:19.626Z"
       }
-    ],
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-28T23:02:19.626Z"
+    ]
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1499,7 +1431,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-28T23:02:19.626Z",
+    "seen": "2026-10-29T06:19:20.602Z",
     "donationSearched": "2026-10-28T09:03:01.732Z",
     "directSearched": "2026-10-28T09:03:01.732Z",
     "directSearchVersion": 2
@@ -4242,10 +4174,10 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
+    "seen": "2026-10-29T06:19:20.602Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-28T23:02:19.626Z"
+    "directSearchVersion": 2
   },
   "gdacs-volcano-vo-1000152": {
     "at": "2026-10-28T23:02:19.626Z",
@@ -4306,8 +4238,8 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "seen": "2026-10-28T23:02:19.626Z"
+    "seen": "2026-10-29T06:19:20.602Z",
+    "donationSearched": "2026-10-28T23:02:19.626Z"
   },
   "gdacs-wildfire-wf-1032497": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -5802,8 +5734,10 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-28T23:02:19.626Z",
+    "seen": "2026-10-29T06:19:20.602Z",
     "donationSearched": "2026-10-27T21:08:09.862Z",
+    "directSearched": "2026-10-28T23:02:19.626Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/colombia-earthquake-relief-fund/",
@@ -5866,9 +5800,7 @@
         "title": "Colombia earthquake: Donate to help survivors",
         "published": "2026-08-14T23:02:19.626Z"
       }
-    ],
-    "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2
+    ]
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -6373,6 +6305,10 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
+    "seen": "2026-10-29T06:19:20.602Z",
+    "donationSearched": "2026-10-28T23:02:19.626Z",
+    "directSearched": "2026-10-28T23:02:19.626Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://humanappealusa.org/donate/projects/emergencies/bangladesh-emergency-fund",
@@ -6419,11 +6355,7 @@
         "note": "Emergency food, shelter and hygiene aid for flood families and Rohingya refugees.",
         "title": "Donate to Bangladesh Emergency Flood Relief 2026"
       }
-    ],
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-28T23:02:19.626Z"
+    ]
   },
   "ifrc-flood-8014": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6574,6 +6506,8 @@
     ],
     "sources": [],
     "membersHash": "ifrc|AF#46b93760",
+    "seen": "2026-10-29T06:19:20.602Z",
+    "donationSearched": "2026-10-28T23:02:19.626Z",
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
@@ -6605,9 +6539,7 @@
         "note": "Nuristan flood recovery response; pooled fund also covering general disaster readiness.",
         "title": "Afghanistan: Nuristan Floods"
       }
-    ],
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "seen": "2026-10-28T23:02:19.626Z"
+    ]
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6758,10 +6690,10 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-10-29T06:19:20.602Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-28T23:02:19.626Z"
+    "directSearchVersion": 2
   },
   "ifrc-flood-8052": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -7260,6 +7192,10 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
+    "seen": "2026-10-29T06:19:20.602Z",
+    "donationSearched": "2026-10-28T23:02:19.626Z",
+    "directSearched": "2026-10-28T23:02:19.626Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods/",
@@ -7269,11 +7205,7 @@
         "title": "Donate to Nepal Floods Appeal",
         "published": "2026-09-25T23:02:19.626Z"
       }
-    ],
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-28T23:02:19.626Z"
+    ]
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -10203,6 +10135,89 @@
     ],
     "membersHash": "news|PG#3d7e2b86",
     "seen": "2026-10-23T05:22:44.752Z"
+  },
+  "usgs-earthquake-us6000u2y1": {
+    "at": "2026-10-29T06:19:20.602Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A magnitude 5.7 earthquake struck near Khuzdar in Balochistan, Pakistan, on 17 October 2026 at about 10:07 am local time. USGS placed the epicentre about 48 km west-northwest of Khuzdar at a depth of about 10 km; Pakistan's PMD gave magnitude 5.9 at 25 km depth. One death was reported on 18 October after a rock fell in the Naal area, and several mud houses were damaged. No reports dated after 18 October were found.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Khuzdar",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Shaking reported; epicentre about 48 km away"
+      },
+      {
+        "name": "Naal",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "town",
+        "impact": "One killed by falling rock; several homes damaged"
+      },
+      {
+        "name": "Kalat",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Tremors felt; no damage reported"
+      },
+      {
+        "name": "Surab",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Tremors felt; no damage reported"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "1",
+        "sourceName": "ianslive.in",
+        "sourceUrl": "https://ianslive.in/pakistan-one-person-killed-after-earthquake-jolts-balochistans-khuzdar--20261018132040"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "outlookindia.com",
+        "url": "https://www.outlookindia.com/international/pakistan-earthquake-magnitude-5-8-tremor-15-km-depth",
+        "title": "Magnitude 5.8 Earthquake Strikes Pakistan, Tremor Recorded At 15 Km Depth"
+      },
+      {
+        "name": "archyde.com",
+        "url": "https://www.archyde.com/5-7-magnitude-earthquake-strikes-pakistan-balochistan-province/",
+        "title": "5.7-Magnitude Earthquake Strikes Pakistan Balochistan Province"
+      },
+      {
+        "name": "earthnews.in",
+        "url": "https://earthnews.in/5-7-magnitude-earthquake-hits-pakistans-balochistan-province/",
+        "title": "5.7-Magnitude Earthquake Hits Pakistan’s Balochistan Province"
+      },
+      {
+        "name": "pakistan.shafaqna.com",
+        "url": "https://pakistan.shafaqna.com/EN/339248",
+        "title": "5.9-Magnitude Earthquake Shakes Khuzdar, Surrounding Areas in Balochistan"
+      },
+      {
+        "name": "ianslive.in",
+        "url": "https://ianslive.in/pakistan-one-person-killed-after-earthquake-jolts-balochistans-khuzdar--20261018132040",
+        "title": "Pakistan: One killed after earthquake jolts Balochistan's Khuzdar district"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/List_of_earthquakes_in_2026",
+        "title": "List of earthquakes in 2026"
+      }
+    ],
+    "membersHash": "usgs|PK#62eeb9a4",
+    "donationSearched": "2026-10-29T06:19:20.602Z",
+    "directSearched": "2026-10-29T06:19:20.602Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-29T06:19:20.602Z"
   },
   "usgs-earthquake-us6000u4j2": {
     "at": "2026-10-24T21:17:31.742Z",
