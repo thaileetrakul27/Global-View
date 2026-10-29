@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-29T06:19:20.602Z",
+  "updated": "2026-10-29T13:38:14.413Z",
   "fetched": {
-    "societies": "2026-10-29T06:19:20.602Z",
-    "uncr": "2026-10-29T06:19:20.602Z"
+    "societies": "2026-10-29T13:38:14.413Z",
+    "uncr": "2026-10-29T13:38:14.413Z"
   },
   "societies": {
     "AF": {
@@ -2459,14 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "redcross.org.uk": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-22T08:03:09.184Z",
-      "chain": [
-        "https://www.redcross.org.uk/"
-      ]
-    },
     "donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/~my-donation": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2781,39 +2773,6 @@
       "name": "Oxfam GB",
       "title": "Oxfam GB | Nepal Floods Appeal"
     },
-    "local4:gdacs-drought-dr-1027465:kara-tunga.com/social-responsibility/emergency-food-relief-support-karamoja": {
-      "ok": false,
-      "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
-      "checked": "2026-10-28T09:03:01.732Z",
-      "chain": [
-        "https://www.kara-tunga.com/social-responsibility/emergency-food-relief-support-karamoja/"
-      ]
-    },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-28T09:03:01.732Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
-    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-28T09:03:01.732Z",
-      "chain": [
-        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/emergencies/8013/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-28T09:03:01.732Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8013/overview"
-      ]
-    },
     "cruzroja.org.pa": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
@@ -2948,79 +2907,105 @@
     "local4:gdacs-drought-dr-1027449:actalliance.org/appeals-rapid-response-funds/rrf-21-2026-humanitarian-response-for-the-population-affected-by-drought-in-hondurass-dry-corridor": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-10-29T06:19:20.602Z",
       "chain": [
         "https://actalliance.org/appeals-rapid-response-funds/rrf-21-2026-humanitarian-response-for-the-population-affected-by-drought-in-hondurass-dry-corridor/"
-      ],
-      "checked": "2026-10-29T06:19:20.602Z"
+      ]
     },
     "kksh.org.al": {
       "ok": true,
       "reason": "donation word \"dhuro*\"",
+      "checked": "2026-10-29T06:19:20.602Z",
       "chain": [
         "https://www.kksh.org.al/"
-      ],
-      "checked": "2026-10-29T06:19:20.602Z"
+      ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-29T06:19:20.602Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-10-29T06:19:20.602Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-10-29T06:19:20.602Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-10-29T06:19:20.602Z"
+      ]
     },
     "local4:ifrc-earthquake-8055:convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026": {
       "ok": false,
       "reason": "HTTP 403",
+      "checked": "2026-10-29T06:19:20.602Z",
       "chain": [
         "https://convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-10-29T06:19:20.602Z"
+      ]
     },
     "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
       "ok": false,
       "reason": "asks for Cash App or Venmo, as scams do",
+      "checked": "2026-10-29T06:19:20.602Z",
       "chain": [
         "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
-      ],
-      "checked": "2026-10-29T06:19:20.602Z"
+      ]
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-10-29T06:19:20.602Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ],
-      "checked": "2026-10-29T06:19:20.602Z"
+      ]
     },
     "local4:ifrc-flood-8013:muslimhands.org.uk/giving/emergency-appeals/bangladesh": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Bangladesh\"",
+      "checked": "2026-10-29T06:19:20.602Z",
       "chain": [
         "https://muslimhands.org.uk/giving/emergency-appeals/bangladesh"
       ],
       "place": "Bangladesh",
-      "title": "Bangladesh Floods Emergency Appeal",
-      "checked": "2026-10-29T06:19:20.602Z"
+      "title": "Bangladesh Floods Emergency Appeal"
     },
     "local4:ifrc-flood-8013:alkhaircharity.org/en/project/438": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Bangladesh\"",
+      "checked": "2026-10-29T06:19:20.602Z",
       "chain": [
         "https://alkhaircharity.org/en/project/438"
       ],
       "place": "Bangladesh",
-      "title": "Donate to Support Those Affected by the Bangladesh Floods",
-      "checked": "2026-10-29T06:19:20.602Z"
+      "title": "Donate to Support Those Affected by the Bangladesh Floods"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-29T13:38:14.413Z"
+    },
+    "ayodonor.pmi.or.id/index.php": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/index.php"
+      ],
+      "blocked": true,
+      "checked": "2026-10-29T13:38:14.413Z"
+    },
+    "go.ifrc.org/emergencies/8013/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8013/overview"
+      ],
+      "checked": "2026-10-29T13:38:14.413Z"
     }
   }
 }

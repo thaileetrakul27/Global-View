@@ -322,10 +322,10 @@
       }
     ],
     "membersHash": "gdacs|CN,JP,KR,PH#472ce3cf",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-29T06:19:20.602Z"
+    "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001341": {
     "at": "2026-10-27T21:08:09.862Z",
@@ -359,7 +359,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-27T21:08:09.862Z",
     "directSearched": "2026-10-27T21:08:09.862Z",
     "directSearchVersion": 2
@@ -378,51 +378,86 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001345": {
-    "at": "2026-10-28T09:03:01.732Z",
+    "at": "2026-10-29T13:38:14.413Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Tropical Cyclone Arnab made landfall on the Andhra Pradesh coast in India early on 28 October 2026, after it began on 25 October. The India Meteorological Department said heavy rain and strong winds would continue in coastal Andhra Pradesh and parts of southern Odisha. Reports on deaths conflict; the government reported none, while some outlets reported three. The status as of 28 October is ongoing for rain and wind effects.",
+    "summary": "Cyclone Arnab made landfall on the Andhra Pradesh coast near Narsapur, West Godavari district, on 28 October 2026. It weakened into a deep depression on 29 October and may become a low-pressure area. Rain and wind warnings for Odisha, West Bengal and Telangana run to 29 October. Sources report 3 to 5 deaths; the state has not issued a consolidated toll. Relief work is under way and the central assessment is pending.",
     "ongoing": true,
     "places": [
       {
-        "name": "Kakinada",
+        "name": "Narsapur",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "city",
-        "impact": "destruction reported"
+        "kind": "town",
+        "impact": "Landfall near town, 28 October"
       },
       {
         "name": "Visakhapatnam",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "city",
-        "impact": "fallen tree damaged a vehicle"
+        "kind": "district",
+        "impact": "Deaths reported; man died touching live wire"
       },
       {
-        "name": "Yanam",
+        "name": "Yellamanchili",
+        "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "town",
-        "impact": "named as landfall coast in one report"
+        "impact": "Deaths reported"
       },
       {
-        "name": "Odisha",
+        "name": "Kakinada",
+        "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "region",
-        "impact": "under cyclone rain and wind influence; evacuations"
+        "kind": "city",
+        "impact": "Deaths reported"
+      },
+      {
+        "name": "Konaseema",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Deaths reported; fishing boats damaged"
+      },
+      {
+        "name": "West Godavari",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Landfall; deaths reported"
+      },
+      {
+        "name": "Bhubaneswar",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "city",
+        "impact": "Laxmi Puja pandal collapsed"
       }
     ],
     "figures": [
       {
-        "label": "Evacuated",
-        "value": "More than 180,000 people",
-        "sourceName": "tribune.com.pk",
-        "sourceUrl": "https://tribune.com.pk/story/2637367/india-evacuates-over-180000-as-cyclone-arnab-hits-coast"
+        "label": "Deaths",
+        "value": "5 in Andhra Pradesh",
+        "sourceName": "aa.com.tr",
+        "sourceUrl": "https://www.aa.com.tr/en/asia-pacific/5-killed-as-cyclone-arnab-makes-landfall-in-india-report/4103261"
       },
       {
-        "label": "Deaths",
-        "value": "no deaths reported by government",
-        "sourceName": "dawn.com",
-        "sourceUrl": "https://www.dawn.com/news/2040415/cyclone-arnab-lashes-india-coast-no-deaths-reported"
+        "label": "Evacuated",
+        "value": "more than 180,000 in Andhra Pradesh and Odisha",
+        "sourceName": "nbcnews.com",
+        "sourceUrl": "https://www.nbcnews.com/world/asia/india-evacuates-180000-cyclone-arnab-hits-coast-rcna606057"
+      },
+      {
+        "label": "Houses damaged",
+        "value": "31",
+        "sourceName": "dailypioneer.com",
+        "sourceUrl": "https://dailypioneer.com/india/cyclone-arnab-weakens-over-land-three-dead-in-andhra-crops-hit-on-70900-hectares"
+      },
+      {
+        "label": "Crops affected",
+        "value": "224,489 hectares across 14 districts",
+        "sourceName": "dailypioneer.com",
+        "sourceUrl": "https://dailypioneer.com/india/andhra-pradesh-seeks-advance-central-funds-as-cyclone-arnab-flattens-224-lakh-hectares"
       }
     ],
     "donation": [
@@ -430,47 +465,16 @@
         "url": "https://www.indianredcross.org/ircs/donatenow/",
         "org": "Indian Red Cross Society",
         "kind": "society",
-        "note": "General Indian Red Cross donation page, not an appeal for Arnab.",
+        "note": "General Indian Red Cross donation fund, not specific to Arnab.",
         "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "abcnews.com",
-        "url": "https://abcnews.com/International/wireStory/cyclone-arnab-hits-indias-andhra-pradesh-state-tens-137629755",
-        "title": "Cyclone Arnab hits India's Andhra Pradesh state as tens of thousands evacuate - ABC News"
-      },
-      {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/10/28/cyclone-arnab-makes-landfall-in-indias-andhra-pradesh",
-        "title": "Cyclone Arnab makes landfall in India’s Andhra Pradesh"
-      },
-      {
-        "name": "tribune.com.pk",
-        "url": "https://tribune.com.pk/story/2637367/india-evacuates-over-180000-as-cyclone-arnab-hits-coast",
-        "title": "India evacuates over 180,000 as Cyclone Arnab hits coast"
-      },
-      {
-        "name": "newsbytesapp.com",
-        "url": "https://www.newsbytesapp.com/news/india/cyclone-arnab-slams-andhra-pradesh-yanam-coast-3-killed-87000-evacuated/tldr",
-        "title": "Cyclone Arnab slams Andhra Pradesh-Yanam coast, 3 killed, 87,000+ evacuated"
-      },
-      {
-        "name": "usnews.com",
-        "url": "https://www.usnews.com/news/world/articles/2026-10-27/india-evacuates-over-180-000-as-cyclone-arnab-hits-coast",
-        "title": "India Evacuates Over 180,000 as Cyclone Arnab Hits Coast"
-      },
-      {
-        "name": "deccanherald.com",
-        "url": "https://www.deccanherald.com/india/cyclone-arnab-kills-three-in-andhra-pradesh-over-87000-evacuated-across-states-flights-and-trains-cancelled-4198139",
-        "title": "Cyclone Arnab kills three in Andhra Pradesh; over 87,000 evacuated across states, flights and trains cancelled"
-      }
-    ],
-    "membersHash": "eonet,gdacs,news|IN#83db95ef",
-    "seen": "2026-10-29T06:19:20.602Z",
-    "donationSearched": "2026-10-28T09:03:01.732Z",
-    "directSearched": "2026-10-28T09:03:01.732Z",
-    "directSearchVersion": 2
+    "sources": [],
+    "membersHash": "eonet,gdacs|IN#d1e12953",
+    "donationSearched": "2026-10-29T13:38:14.413Z",
+    "directSearched": "2026-10-29T13:38:14.413Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-29T13:38:14.413Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-29T06:19:20.602Z",
@@ -538,10 +542,10 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-29T06:19:20.602Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-26T21:25:14.833Z",
@@ -648,7 +652,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-26T21:25:14.833Z",
     "directSearched": "2026-10-26T21:25:14.833Z",
     "directSearchVersion": 2,
@@ -715,10 +719,10 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-29T06:19:20.602Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -1028,7 +1032,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2,
@@ -1354,87 +1358,67 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-10-28T09:03:01.732Z",
+    "at": "2026-10-29T13:38:14.413Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 7.0 earthquake struck about 191 km ENE of Nagqu, Tibet (Xizang), China, on 22 October 2026 at 22:33 local time. Reports give 16 deaths and 76 injured. Rescue searches were reported complete by 24 October. As of 28 October, relief supplies were still reaching residents and temporary shelters remained in use.",
+    "searches": 4,
+    "summary": "A magnitude 7.0 earthquake struck 191 km ENE of Nagqu, Xizang (Tibet), China, on 22 October 2026. Baqen County was the epicentre area. Reports cite 16 deaths and 76 injured, with more than 12,000 residents evacuated. Rescue and relief work was still continuing on 27 October, and aftershocks were still being logged.",
     "ongoing": true,
     "places": [
       {
         "name": "Baqen County",
-        "admin": "Nagqu City",
+        "admin": "Nagqu City, Xizang (Tibet) Autonomous Region",
         "country": "CN",
         "kind": "district",
-        "impact": "Epicentre area; building collapses and ground cracks"
+        "impact": "Epicentre area; homes collapsed, livestock sheds damaged"
       },
       {
         "name": "Maru Township",
-        "admin": "Nagqu City",
+        "admin": "Baqen County",
         "country": "CN",
         "kind": "town",
-        "impact": "Office walls cracked; residents in temporary shelters"
+        "impact": "Quake-hit village area; rescue and relocation work"
       },
       {
-        "name": "National Highway 317",
+        "name": "Gangqie Township",
+        "admin": "Baqen County",
         "country": "CN",
-        "kind": "site",
-        "impact": "Rockfalls blocked a section and damaged a car"
+        "kind": "town",
+        "impact": "One of the hardest-hit areas; 17 temporary shelters"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "16",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261024/944f6fb73de44174ba2a2bfb7fa3e6cb/c.html"
+        "sourceName": "nation.com.pk",
+        "sourceUrl": "https://www.nation.com.pk/23-Oct-2026/7-0-magnitude-earthquake-kills-16-tibet-s-nagqu-city"
       },
       {
         "label": "Injured",
         "value": "76",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261024/944f6fb73de44174ba2a2bfb7fa3e6cb/c.html"
+        "sourceName": "abc.net.au",
+        "sourceUrl": "https://www.abc.net.au/news/2026-10-23/magnitude-7-earthquake-hits-chinas-tibet-region/107299584"
       },
       {
-        "label": "Evacuated/relocated",
-        "value": "12,489 people",
-        "sourceName": "ecns.cn",
-        "sourceUrl": "https://www.ecns.cn/hd/2026-10-27/detail-ihfmiwhm0745849.shtml"
+        "label": "Evacuated or displaced",
+        "value": "more than 12,000 residents",
+        "sourceName": "globaltimes.cn",
+        "sourceUrl": "https://www.globaltimes.cn/page/202610/1372929.shtml"
       },
       {
-        "label": "Houses damaged or destroyed",
-        "value": "339 homes",
+        "label": "Houses",
+        "value": "339 homes collapsed or damaged, plus 20 livestock sheds",
         "sourceName": "outlookindia.com",
         "sourceUrl": "https://www.outlookindia.com/international/tibet-earthquake-atleast-16-killed-54-injured-as-339-homes-collapse-in-nagqu"
       }
     ],
     "donation": [],
-    "sources": [
-      {
-        "name": "abc.net.au",
-        "url": "https://www.abc.net.au/news/2026-10-24/rescuers-search-for-survivors-after-earthquake-in-tibet/107304378",
-        "title": "Rescuers search for survivors after deadly earthquake in China's Tibet - ABC News"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake",
-        "title": "2026 Tibet earthquake"
-      },
-      {
-        "name": "tribune.com.pk",
-        "url": "https://tribune.com.pk/story/2636473/70-magnitude-earthquake-kills-16-in-tibets-nagqu-city",
-        "title": "Injuries in China's Tibet rise to 76 after earthquake, death toll remains at 16"
-      },
-      {
-        "name": "tribuneindia.com",
-        "url": "https://www.tribuneindia.com/news/world/tibet-earthquake-76-injured-16-killed-after-7-0-magnitude-quake-hits-nakchu-rescue-operations-underway",
-        "title": "Tibet Earthquake: 76 injured, 16 killed after 7.0-magnitude quake hits Nakchu; rescue operations underway - The Tribune"
-      }
-    ],
+    "sources": [],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-29T06:19:20.602Z",
-    "donationSearched": "2026-10-28T09:03:01.732Z",
-    "directSearched": "2026-10-28T09:03:01.732Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-29T13:38:14.413Z",
+    "directSearched": "2026-10-29T13:38:14.413Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-29T13:38:14.413Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -4174,7 +4158,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2
@@ -4238,7 +4222,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-28T23:02:19.626Z"
   },
   "gdacs-wildfire-wf-1032497": {
@@ -5734,7 +5718,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-27T21:08:09.862Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2,
@@ -5801,6 +5785,38 @@
         "published": "2026-08-14T23:02:19.626Z"
       }
     ]
+  },
+  "ifrc-earthquake-8060": {
+    "at": "2026-10-29T13:38:14.413Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A magnitude 7.7 earthquake struck offshore of Nagekeo Regency, East Nusa Tenggara Province, Indonesia, on 15 August 2026 at 04:58 WIB, according to an automated alert feed. A tsunami warning was issued and lifted at 07:31 WIB, and sea-level changes were detected in several coastal areas. These details are unverified because the sources could not be checked. The latest feed update is dated 24 August 2026.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Nagekeo",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Offshore epicentre; tsunami warning issued"
+      }
+    ],
+    "figures": [],
+    "donation": [
+      {
+        "url": "https://ayodonor.pmi.or.id/index.php",
+        "org": "Palang Merah Indonesia (Indonesian Red Cross) Kota Bekasi",
+        "kind": "society",
+        "note": "PMI Bekasi city-branch fundraising campaign for people affected by the NTT earthquake.",
+        "specific": true
+      }
+    ],
+    "sources": [],
+    "membersHash": "ifrc|ID#d3af87fb",
+    "donationSearched": "2026-10-29T13:38:14.413Z",
+    "directSearched": "2026-10-29T13:38:14.413Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-29T13:38:14.413Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -6305,7 +6321,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2,
@@ -6506,7 +6522,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "direct": [
       {
@@ -6690,7 +6706,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2
@@ -7192,7 +7208,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-29T06:19:20.602Z",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2,
@@ -10214,10 +10230,10 @@
       }
     ],
     "membersHash": "usgs|PK#62eeb9a4",
+    "seen": "2026-10-29T13:38:14.413Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-29T06:19:20.602Z"
+    "directSearchVersion": 2
   },
   "usgs-earthquake-us6000u4j2": {
     "at": "2026-10-24T21:17:31.742Z",
