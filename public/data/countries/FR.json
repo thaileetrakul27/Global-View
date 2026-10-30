@@ -2,85 +2,125 @@
   "code": "FR",
   "name": "France",
   "kind": "local",
-  "updated": "2026-10-30T00:20:11.381Z",
+  "updated": "2026-10-30T06:23:09.024Z",
   "source": {
-    "name": "Google News and Bing News",
+    "name": "Google News",
     "edition": "FR:fr",
     "url": "https://news.google.com/rss?hl=fr&gl=FR&ceid=FR%3Afr"
   },
   "articles": [
     {
-      "title": "EN DIRECT - Attentat raciste de Trappes : Kévin Tessier placé en détention provisoire",
+      "title": "EN DIRECT, guerre en Ukraine : Kiev visée par une nouvelle salve de missiles balistiques russes",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOX2QtN3hZZFIwQmRBaHhkcmRJUENaUVNqWDRCcUhYdzlzZERqU2ZZTHdncmpjRU9VOVRxMlB0c000YXNtWnIzcXRwbThZbmR1NXpqdUhrWVZIVTNfZkJaZkMzRlNwQVZ6NHJJdnp4cnZGUm9NMTZMOEhzejJ0UGJBVEtKUUZQT1ppRW1HNnlCWk9jVkpBY09mWGg1T1hJZktXTEcyeXFuaE0xYnlFMVRtS2NRSVo4YlctZmktanhRMTRPUEw1cktSdzMybVlPOGo0V01TS0M3enBMVWwxVE9EcWY5NzNFdlBJZGZHLThfc1BDQ1ZjS3c?oc=5",
+      "outlet": "Le Monde.fr",
+      "outletUrl": "https://www.lemonde.fr",
+      "published": "2026-10-30T05:48:24.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "LIVE, war in Ukraine: Kyiv targeted by a new salvo of Russian ballistic missiles",
+      "about": [
+        "UA",
+        "RU"
+      ]
+    },
+    {
+      "title": "Fonds gelés, près de 6 milliards de dollars volés, cyberattaque massive : le piratage de la plateforme Binance plonge le secteur des cryptos dans la panique",
+      "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeWE1UFdGVE9YVmhRTnNuMGRETU4wUEFKUWhuaHhHREIxZFpUczFqamFZQUNYbmxiYVVVUV9OdWJITHcxcnpmR0EyWGl1U3R5cUFVMm9BbVViamZsdHdwdEw1YnpHcVFfM25aRHdKQ3lEZGVVRjF3M25rZ0RPdXpvZUNkT3NjVU1ucVREUFRKQjBQVXNQTGlYd0twLWRGdHFEa0ItU21obVZPRTZSblFMV0wzczhQajZMd2NnNTdfWHNWVHJKeW84VERFa0QxWm9KTjY4ck1DM0NDWUlrdEdkSVJ6VWVKV1YzNXNtcFpmLUoxQUlTSkxpUGlLYmp6eHpiM2tnU2hvalM2X1poTU5RcDIyalhYUlZ6NEV1bTIxZkItVHJNRWRsbjR3Zw?oc=5",
+      "outlet": "Le Figaro",
+      "outletUrl": "https://www.lefigaro.fr",
+      "published": "2026-10-30T05:53:08.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Frozen funds, nearly 6 billion dollars stolen, massive cyberattack: the hacking of the Binance platform plunges the crypto sector into panic",
+      "about": []
+    },
+    {
+      "title": "Législatives en Israël : le camp de Benyamin Nétanyahou arrive en tête mais sans majorité selon les résultats définitifs",
+      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQdDNZYmI1c3JPS1NYWGg0eGxFUFE5cVFCZFpVNnRXX1hDZHMyZG9CcWpxV0U2Nm81LWZoelkwNHJscURpTXVWOFhwQ0gxM2ZTMFMtT05KNmtadmlJcWVnaXZ2cTZZekgzMUNCcWY2bmZXcEtHQUlKcHFjQzM4ZWM5Y19fc192MTUyeklsbFY2cUlRck1NWUd4RldZdXBDWC1ULWtXY2liX2hsXzNUNExoWGdlcDlWVWswdktTcjhhdnYxNlQtNXNPQmUya3djMERSZGNiTkhObzV0cHVxRHZwMGJ0dlhjamVGRjlvVFRRTER6eGpsZndUWEl4Rm1UcEMydWRFVmpHZGtFYjRKLWh1cURsSFZZQV9YWG1iNg?oc=5",
+      "outlet": "Le Monde.fr",
+      "outletUrl": "https://www.lemonde.fr",
+      "published": "2026-10-30T01:00:44.000Z",
+      "outlets": 4,
+      "trending": true,
+      "en": "Legislative elections in Israel: Benjamin Netanyahu's camp comes first but without a majority according to the final results",
+      "about": [
+        "IL"
+      ]
+    },
+    {
+      "title": "Accusations de détournement de fonds publics : Édouard Philippe placé sous le statut de témoin assisté",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQSG5QVVI1clhsQ2V1V2dkZkNxU0NQcWVsMXdRODdRdHlVc0tpdDhtTkhVZFY4MC02VmU3ajdpN2RnZ1RwaVk5R2R1eWV5UG9CR3NSSWJXcXl3elBDcno4MmNuSGJXV2VycVBucGNkWTNIX25IZ1FlVExpeE0yT0p1RVhFSDFlZFdzeFFxVzUzRjdLM0VtQ0x3dWt4Y0s2SEhDODFqM1NqOWoxX1BOQzZDdVByTGZwREdWcGd1T3UtYW40ZHlvQWFDSVY1RzZ0N042akFYSDdZUTcyYTREY2xieHNSV19MS3gwOFAzTFFuaHlfd0N0WWp0dWg3Rkxnc19qLWpkZmFrWTA0dw?oc=5",
+      "outlet": "Le Parisien",
+      "outletUrl": "https://www.leparisien.fr",
+      "published": "2026-10-29T20:29:24.000Z",
+      "outlets": 6,
+      "trending": false,
+      "en": "Accusations of embezzlement of public funds: Édouard Philippe placed under the status of assisted witness",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Attentat raciste de Trappes : Kévin Tessier placé en détention provisoire",
       "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQaTBBVzhnVEtZbDZCSVBOdklEdnNpYTdpOWZlTmh6UWMyRHJ5N3RzUEJxcWpzSzRRUzBYdzBhQTlhT2ZlbVBjQVV6eU1LN2tZNXk1aXcyR205TkFaNGRyUG9fczBxYUlFVWVfc2E0YVgzcm9PWXBMbE9JVTRtZlkyTHRnZmE3eDNaUWJ5QzFDekEzU3RYSzBxNnJpMWIwX2Z0SV9rOEo5cFVzOUNXRHhybWU5LThSWm83VWM3aThXZjRhMjRHbVFVRmNtTC1vQ1YxQnczNk54QlJxNU50VE9hRzFVYlo3Q3hMYkJUTmV4NUM0ZFQ1Rlh0T1lEbHk2Y1VDcGVvZVJwR252TFk?oc=5",
       "outlet": "TF1 Info",
       "outletUrl": "https://www.tf1info.fr",
-      "published": "2026-10-29T20:59:58.000Z",
+      "published": "2026-10-29T23:00:36.000Z",
       "outlets": 5,
-      "trending": true,
+      "trending": false,
       "en": "LIVE - Racist attack in Trappes: Kévin Tessier placed in pre-trial detention",
       "about": [
         "FR"
       ]
     },
     {
-      "title": "Collision de trains en Espagne : un tel accident pourrait-il se produire en France ?",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMHk1T2l5cmxoSEVxOFlCdjl4bFF1Y1ZEdWtGRm1MMEN5cUtkWHVoOUpTMkJNc0Q3S0lNSjBXb3hqTWh5S2RJSE5rU2RPUm5DR3FQNGRmVkNOc0F1YlU5UUxmYldHLTFOci1zVjNLTEFOSDJhNlQwdG1laUVua2xGbmRWUzg4MTRJcWp6Y2xyVVN5NWg0OUgxZkN0WXAzM1hKbWI2ZGdvMTl1S0pXYlhJRnUwcXN1ZTNQbnpsaS1NZ1dCSE0?oc=5",
-      "outlet": "Le Figaro",
-      "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T19:10:41.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Train collision in Spain: could such an accident happen in France?",
-      "about": [
-        "ES",
-        "FR"
-      ]
-    },
-    {
-      "title": "A la BCE, Christine Lagarde annonce son départ et veut « s’engager sur des sujets qui ne sont pas des sujets de politique monétaire »",
-      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQd245eGFxMExablVBYTE0a3locUlMdjB1OFZ0Qi11LUcyNXdQWEFMMUh5QXpPc1FxS1RBQ0twT2RGYUxWUlE0R1NncTNxZ0xxZUtoRkxKd0ZXbVlzdDQ4ejc5ZDVkUXJVV2JVR1ZHVG5kNjBMb2lDSVlqaFhmZi1aM0pWQVgtdlJqcVM5VThWLUktMTJ5OXQtdi1sZ21FT1JtUWVEeTNOODVqcDVMT3hyeFc5SEtaaU4tZU14LUlYQUIxUzUweHphWVpENzM3bG8zdjAyWDRJMDJaZTZEemZVVk8wTWhIYlpVd2lScGM5NFdWSFRlOUxTMWtFaGhDanFIaGp3UXpPdk9KcHJyQ1dUVEd3VHozRUtzUTl6b3B2akFMWkU?oc=5",
+      "title": "Quatre pétroliers en feu après des explosions de mines dans le détroit d’Ormuz",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZHo5VEtnU1BUcTlCeENOTVV2bXR6eEdlUnRZOE1WZ2VkTFV4WHBUMkhadDJhZGNrR2hwWlJqNWV0MURMNGlILXRfQ1ZmOVNOV3JOZjdrdDA4MTBhR0M4MXFXamd3SmQwY0NEMmpBM0hhZjB5ZjRTVGVJY0FKT0hqb3l5b2ZJUW1OeVN6QU5wMXl0ZW1SZGt1aEpMeWd2ZHN0QXMtbks0Q3pqblR1VUl1WldhdWY4UnJtVENpRkl3YjhneEg5R016akJsQlBiM3o4OFVkazJ1Q2ZSb1RkbXM0QnZYUnFoZ1E?oc=5",
       "outlet": "Le Monde.fr",
       "outletUrl": "https://www.lemonde.fr",
-      "published": "2026-10-29T23:10:02.000Z",
+      "published": "2026-10-30T01:52:18.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "At the ECB, Christine Lagarde announces her departure and wants to \"commit to subjects that are not monetary policy subjects\"",
+      "en": "Four oil tankers on fire after mine explosions in the Strait of Hormuz",
       "about": []
     },
     {
-      "title": "REPLAY. Présidentielle 2027 : soupçonné de détournement de fonds publics au Havre, Edouard Philippe placé sous le statut de témoin assisté",
-      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQa3Mwbm9VekVyN3liWVg0XzRVMFI5UUxjR09fT21leV92UEZocEVNdWJjeGpPV3h5TkpjXzlNWXphODcwbWZ5N0ptdFh4OHhRU0hvcmlkOEJWakxQdzdOMWNFcWRWNXpUb2d6VXNRc2pFOGhCVlFBUEZiZHdnQ1FacXRScWp2di1XalA5ZU4xOE95cV9FeTJ4LXFxY3g4dTFCd1lkWE1CZm9uQm01ekN2RF81NzZFSEpBUzNjdHNXNHUwVWJEVWFNM2tENWVkYndqdDBnaEk1bFVEc3VDS1J2TlNtSDBIZElMdWZXSGhoc2J6Vmx4MmsydGd2TnBIaVBFRGczZWE5OGw4R2RCSEpNMzEwRkZqeFprdFJGWA?oc=5",
-      "outlet": "ladepeche.fr",
-      "outletUrl": "https://www.ladepeche.fr",
-      "published": "2026-10-29T20:16:37.000Z",
+      "title": "EN DIRECT, midterms 2026 : Donald Trump annule ses meetings du week-end dans le Kansas et l’Iowa",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPTEJqQTJZODRRdm15bDJQSGVYamtqc1ROZ2RxcGNHd0hqdkZ0Vi02R25nZzdJOVAzclpyM2RiVVYxSXlZZHZIWU5icVh1b3k3bEtCdERZSUxpajVpc0ZtbXBZbmVrNlhBUGRPdG96aGV6b25nSnZKSzFrbm9OUU9ZZXVEVzZ0ZlZrZ0VBMzJQTlFiUC1la3MySEZGVWVwanVjR1ZJVWN2cGZIOGFvSzE0eFlQZ2ZYSzZvWURJU1dhTVVuZlZkYXNlSXZaRUx4MlZMcjFwY3N3?oc=5",
+      "outlet": "Le Monde.fr",
+      "outletUrl": "https://www.lemonde.fr",
+      "published": "2026-10-30T05:09:25.000Z",
       "outlets": 5,
-      "trending": true,
-      "en": "LIVE. Presidential election 2027: a system \"at the end of its tether\"... David Lisnard proposes freezing retirement pensions above 2,200 euros per month",
+      "trending": false,
+      "en": "LIVE, midterms 2026: Donald Trump cancels his weekend rallies in Kansas and Iowa",
       "about": [
-        "FR"
+        "US"
       ]
     },
     {
-      "title": "L’acteur Patrick Stewart, célèbre pour ses rôles dans Star Trek et X-Men , est mort à 86 ans",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSTBGUWpXLThGUDQ4akVfdFJJUzRXaGNMUW55QmhDdHVjdUhRMkFLVlk1NGxnMlB0RG1Sc2wteVFZczU2WEVkMW53WjAtbnZNd0pRNlI3bE1CbHFZNkpxeGRxRnNnN0ZBWC02Z183NURsd2VyQ2NHVkg1dlJpX0tHY3BDbHI2U210cW0xWDFTNW10SDZQLVZ1WHlCNmZhSzFFMVdsOGxkYlZCQ1pUUHR1OU82Q0N6WVMyMmxHSnVpVm1jd3dvN1NPMQ?oc=5",
+      "title": "Manifestations du 31 octobre : un risque «très élevé» de violences urbaines, alerte Laurent Nuñez",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcURCMGh4emFzZmpLT3ZrNndrZkRxZTBOZUlrWTN6RW9JbWxCNHU2UVdyYzFOQmhkMjBZWDJMVXpjVkRrTkw0VWRwcWR0WkJ0NDNreVk0YlRrMEdEaXlNcXdpSUdaUmwxTUdVTnZWa2Z2d3Z1M1ZXTlk4eUw5OFRnSXpwWWJGTHZhSzZQaklkVU1Jalo2c0R6aHY4Qk14Y1lkbUYyWkR6Wmw0YWJ1bWtaNjhzS3IycGtueTNaRklTd1ktYlFfUUNkT1FhUGwyQ0RITFN3Z2pIMnNOZw?oc=5",
       "outlet": "Le Figaro",
       "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T22:35:34.000Z",
-      "outlets": 6,
-      "trending": false,
-      "en": "Actor Patrick Stewart, famous for his roles in Star Trek and X-Men, has died at 86",
-      "about": []
-    },
-    {
-      "title": "Mobilisations du 31 octobre : Laurent Nuñez prévoit un dispositif de 70 000 policiers et gendarmes, et confirme l’interdiction des rassemblements dans les centres-villes",
-      "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxOTjlaSU1wazNXeFZGanZsbGlvRGI4RGwtUlZoQjBRb3hGX1BOMFp3Mks3dzZMSTQzd0l0VkkzaTI1SDFhVWhEY3dOTkZyQS1rYlBXZENEU1JZWTlRU2JwTmJ3QWlnZWd1bUJvR0FZS1JjM3dzQVNFcUhld2V0eXRiTkpCVlEyVXlwR0poenVuemlydDA0T1owcUNTaEMyZDBwM3AzbF9ST2pCODVpb2NyVmJlU1E0REluWFdWVDY0RkUtX0d0YnRUdEpvVWVESEgyX1NkQjNkanZwR0k2QmVDQ1dNblRweFMwdmRyVVpNa1BjNUp2T09lUmtHTGhval9POHhFcmZiSGRpeEpfcHByc0xFZVNlelI0Y01Zc2dnYzFFOHN4YkVUVXVMcldvMjlYNjFkbXdiXy1SMXgwWU1JRm94RVo4TG1EQ3hENE1NYVh1aXdzS0twaTFn?oc=5",
-      "outlet": "Le Monde.fr",
-      "outletUrl": "https://www.lemonde.fr",
-      "published": "2026-10-29T17:37:35.000Z",
+      "published": "2026-10-29T15:47:17.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "October 31 mobilisations: Laurent Nuñez plans a deployment of 70,000 police and gendarmes and confirms the ban on gatherings in city centres",
+      "en": "Demonstrations on October 31: a \"very high\" risk of urban violence, warns Laurent Nuñez",
       "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Pour ces experts, la catastrophe ferroviaire en Espagne n’aurait pas pu avoir lieu en France",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQRXVVWDl6OG1xOThGakVlSTVJRFE0NzByTzY4NE5ZTzZLR2pyNERFeWFfRVpFRW1qTDRWM1FUVW1SejFWUXJWWEo5T19UTE9PRmYxeVMxX1V0UU1sUjVsZkNZMDdtMkw0OXhGSmVHVHN3bENoTTRoSGRqNTRoMWZTc1c3WHpQYWN2dXR4bm0tVm53Ylp0WnUyLWUyeVRFX0VQMHhVY0VINEEwZjlXWU9NLUJYRDFQaFF2ZjJobzU1N2tYMW1rNFBtcnJLVS1fTklKUURsUFpsYTlkWVFURTFUMVFFWQ?oc=5",
+      "outlet": "Le HuffPost",
+      "outletUrl": "https://www.huffingtonpost.fr",
+      "published": "2026-10-29T15:51:01.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "For these experts, the railway disaster in Spain could not have happened in France",
+      "about": [
+        "ES",
         "FR"
       ]
     },
@@ -98,94 +138,160 @@
       ]
     },
     {
-      "title": "Élections en Israël : les partis arabes tendent la main, les sionistes la rejettent",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbkRQNFBmUFRwMi1SbzRoM08tcS1QLTZtMFFIazk4amlyX05fUTdXYnVJS1lCUnhDTFk2eEdwOEVRd2dyMzFqRzA4MWY5Zzd5aDB0Zm0yb0tjLUNkSmdwdFhPTWVwU2p3UTdUaHJ1eVZmcmI0dzh3NWtxMFF4dWVUMkVNeXVXazdhcnc0Y05mcUFsRVdkakxXal95VldHakltV1V4T2JzQWRtQzRLVFJSZ2lsMWlHVnVNT2t3NzhEbjZYU1NCNXFmU1R3?oc=5",
-      "outlet": "L'Humanité",
-      "outletUrl": "https://www.humanite.fr",
-      "published": "2026-10-29T18:03:21.000Z",
+      "title": "PRONOS PARIS RMC Les paris sur Lille - Lens du 30 octobre – Ligue 1",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZUNKZWliWXJvU0htT3liakl5RXVQSXVlc2NUcG1fLXVudUptZkx5dVpzcjJFa0lLdXRXRmg3OWdnQnpBUnptYnVKOGZ5Y0dLMXFJSGJ1S25SbFJqMFhZZTJXdlNCdU1OTENZQTZtWXk3OTZ6c2JqNVdtbkJoQWJKWlpPdTFIZWlxcXVTZWxwbEtwUHd5WFRINF9zU3dKenJrczNfN3c1ajJuSmZUQUFXakZUdGh2ZXFpb3N3RnhsZERRQQ?oc=5",
+      "outlet": "RMC Sport",
+      "outletUrl": "https://rmcsport.bfmtv.com",
+      "published": "2026-10-29T23:03:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Elections in Israel: Arab parties extend a hand, Zionists reject it",
+      "en": "RMC PARIS BETS on Lille - Lens on October 30 – Ligue 1",
       "about": [
-        "IL"
+        "FR"
       ]
     },
     {
-      "title": "EN DIRECT, midterms 2026 : Donald Trump annule un meeting dans le Kansas ; les fausses accusations de fraude électorale prolifèrent sur les réseaux sociaux",
-      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxOSWNaV3lMYkp1Q0VpNGtkX1BkaEtta1dKb1NzMGR3dnJfa1dWUk00ZlNQNjJRdjFrVU1Kc0dpRWlCM2VOaEFYakhFMEYzaWhHMlFVTDZhb2hMMkhXa1licHU1VWhTd0hubE40dzZheU0xSmFYRFhtM3lDb3NGaWxaRkxLRkVGY25RcDB4MHFLbFVrX3ZpLVNKbUpGSjkwTmU1LTZmYk1weXU1cWlTOGx3OHFYTDZFNWpCa1cwM3k0OHUzMF85a2NtMHkxeDdacVdxZ2xPck1GT24zZzdVc1ZLWF9kUE9LcjhCWjMtTHNObVdkdnlPbGdpbGRFX3JDblJQTjd0Y25kZHJuYlNvbzM1WlZTckNGZ2JIVnZvSnJjNkZSZE0zTVp4RnBTTUtuUnBKVDhSVWJnQjhKSkVR?oc=5",
-      "outlet": "Le Monde.fr",
-      "outletUrl": "https://www.lemonde.fr",
-      "published": "2026-10-29T23:27:47.000Z",
+      "title": "Ligue 1 I Le Havre - PSG (9e journée) I Paris, un fauteuil venu du banc",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOV042YVFlUmdMdVNWdlBQS3FpSHNHQ2l5TThTS21iRmJuRFFjRHNXQWh0cXViMHBnWHFpRW9wRC1zeTQ2MG43aDJMck9td1NNZmI0Wjl0bU5EMlkydjJWSXdULWNodkdTdkthaFFCcm9nVnN5TnZablJ3NTVqVXhZSzB2TTNKV0U3cFFDUFNWOWlPR0hqekdiOC1aU1RLc3FZbGI5ekQzbk5SWFRQSUdWWnQ5V241QTk5ME12WGFHWV9ab2w3QUhwakhTU0RleF9JM0ZibWJkbkVtZw?oc=5",
+      "outlet": "Eurosport",
+      "outletUrl": "https://www.eurosport.fr",
+      "published": "2026-10-29T22:48:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "LIVE, 2026 midterms: Donald Trump cancels a rally in Kansas; false claims of electoral fraud spread on social networks",
+      "en": "Ligue 1 I Le Havre - PSG (9th matchday) I Paris, a seat coming from the bench",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "États-Unis : le gouverneur de l'Alaska demande une enquête sur une candidature contestée aux élections de mi-mandat",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOcHY0M0dadkdtaHlLUzB3WllSM1R0ZzI4S3dHdEJ0Z1pCekZhT2R0aTJJTVJoOHdUbTRiS25PSTZxdTdwanV1eE5tU2pUbnZPMHI3MTZnX2d6QUplMkswbWI3LXBSSklwMzBVR3l4RXZyQU9TVElRV2JzTEhCRTdmNFM2RlVrQXhFMGs0clFnbVdrY0pQQU44aFh3S2pWY3lweFA0MG1uYU1Sem1BdXdSWWJOd3RfVjNFSDBFN2YtWk9YakdqYmVYX0lDNkU1bEw0V0xERFotR3ltdlRSWmk5aDBzUUR5ZU5fRHVxVjIzb2hPdw?oc=5",
+      "outlet": "Le Figaro",
+      "outletUrl": "https://www.lefigaro.fr",
+      "published": "2026-10-29T18:20:51.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "United States: the governor of Alaska calls for an investigation into a contested candidacy in the midterm elections",
       "about": [
         "US"
       ]
     },
     {
-      "title": "La Russie fait un carnage sur un quai de gare et Poutine flatte l’ego de Musk",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPTHZsRm1GeExTWjRSdFpnNFBSbWpaYTB6eEwzb04zajF5UWpIMjlNUXRsV1ozSUNYWDJmLVU2Z1k3WktjRUtJYkFwMnZ4YmRNdklQSXdIelgtX1JfeUMzLVhiejNpTy03Z2VJNDZiUzg2UGxERm5ZQ1o4b2JndTBOU29zblFSWXlTLXFlTkRXQmhPbWJWMGVuUkNEdTFUc2p3RmcxTnJ5RkNqRXlmSkM0dHowVjdUQW44M2dOLWxGLTNvb3E4bUQ5UTNILUp2NFI5YlVEVHRn?oc=5",
+      "title": "Comment de faux éboueurs escroquent cette commune de la Manche",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUlVsQ1gzU01oZl9fYUNzOENCMjNQY2hjaDBST3NOTm9QWXRDSEVZX2h4UVI3M0pGcXUtYlladWZDZFVMMGMyaG9ET1FqWWY2UmVtM1VkLVJxVzRKdVhGQnVycDVnRXBwRFgyRkNSTmthWXVSakUwOHV1QWZtMGNuaVlNLWdzSFJBa3g5WEFULUpNaWxnLUUzdENuczlTa1ozZWs3OWJ1T244bnEtTzVlRWw4UW1QQmVrTGc?oc=5",
       "outlet": "20 Minutes",
       "outletUrl": "https://www.20minutes.fr",
-      "published": "2026-10-29T18:55:00.000Z",
+      "published": "2026-10-29T14:04:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Russia causes carnage on a train platform and Putin flatters Musk's ego",
-      "about": [
-        "RU"
-      ]
-    },
-    {
-      "title": "En Bosnie-Herzégovine, quatre morts et douze blessés dans le crash d’un hélicoptère de la Force européenne",
-      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNV2ZHTkphQVF0MmxKODRXS3ZMb0RHR1JMNF9fQ2t6MjdKTFZhUkJ0Vnp5S1ZUV0haejJLeW1VcTNiOUdYcFJ4T2FCemlqTnI4cEljN3ZHQkNTM3dodUZ5NVprc21ucEZaS3ZlRnpjSE50ODhrUUtxOTNoU1kwYlQ2NUtuVTQ3MWJ4UlVuZTVFd29HU3NDbzRWWDF4ZjNVUXhXZ2N4bGVBR0ZSV0tidGJQV0lpcVpOakpUV29TT1FLTjF4aS1YMG9tdXpraUx5N3RiUjE4TTZOOXlYWVpBXy1Gc0c4cGRST25OUFA2b0didVYzRkN3M2pHU09BRGJmOUEzOFZockhYb3R0alE?oc=5",
-      "outlet": "Le Monde.fr",
-      "outletUrl": "https://www.lemonde.fr",
-      "published": "2026-10-29T19:14:31.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "In Bosnia and Herzegovina, four dead and twelve injured in crash of a European Force helicopter",
-      "about": [
-        "BA"
-      ]
-    },
-    {
-      "title": "« L’ambiance est un peu particulière » : dans les Landes, la menace d’une marée de cocaïne rassemble les badauds sur les plages",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQdHFiTm5JbFZWbi0tU0tsZE9fMURqUUVBcGR3UzdQeDJGNWNjRHkxdXZfRV9KbHVMV25IeTFQNno0bEFXd3pJaG5lRTFrM1I4YTZfcHhoWW1SZFVUaE9fV3lpR01QYm9PSGtVQi1XX1JHeWlFaWtyY1FON3FNaElXYXJKcXhwWE9MZTQ0U0dvazRSdTlaSUJ1V1BKTHMwU21oWkxmczFTR2dsRWN6akRIdGlPQUZJX1l3MHFWeGE2Q1NQNUdoNDdQMWJsMjh6UnpKTnRRdTBWSnA3TWpqaEdJMDNlY3dRZnJwNmxHcGFBRW5ueE9KR0Fn?oc=5",
-      "outlet": "Sud Ouest",
-      "outletUrl": "https://www.sudouest.fr",
-      "published": "2026-10-29T18:55:48.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "\"The atmosphere is a bit unusual\": in the Landes, the threat of a cocaine tide draws onlookers to the beaches",
+      "en": "How fake refuse collectors are scamming this commune in the Manche",
       "about": [
         "FR"
       ]
     },
     {
-      "title": "Anticor se constitue partie civile dans l’enquête sur Edouard Philippe",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQODd0a0VfNFcwQ2hBdVdMb0h4d1JrNld5WVp4anpGdnAtc1lnekgwMDRyUUY5OTZuZ3YtR1BMR2NORnl6SXZSSHRXSmRJRHlVVm16eGRZaXZ5RlVRVjZ5QkdINE9OYTNJdWlleWJLcDYxdjlZdXJ3S3Z0WEkxakJQTlpzNDRnNUNYWC1nWUZ5a051eGJfZFQ4ekFPTVNtTEpPWXdtQThRZHQzWGpBTDEtSUNjYVlQblduV2p0NXdZRGtZTVVrZVBHSFdqSWJRM1drVlZDRA?oc=5",
-      "outlet": "Le Monde.fr",
-      "outletUrl": "https://www.lemonde.fr",
-      "published": "2026-10-29T14:59:11.000Z",
-      "outlets": 4,
+      "title": "Radio France mis en garde par l’Arcom après cette séquence sur Mélenchon",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPTHBBdGtGQ19qWV9XNjlZbVM1V1pGTHdrbkE4cUxkbF9ib1hzT2VUR2hkZlZOZ3ZVMW1tdFZKVFVxR054M1lMa3FXOVd1cmVMTE9aZWk3VWhJclphcG8wRU9aZnJZZnBINXdZOGlldUZwNDZRX2xvYWQwaGxSc1c1SHozR2hwTWZUY1N4bEw0SFR4QkdJVkN6MFRKNlUzRFZQTTBQRVJyNWppbk12ajhxNVhNNkV0MExZYkJkNjI1cW94M1pvR1RjaEFQS095Z2w5SmJBVw?oc=5",
+      "outlet": "Le HuffPost",
+      "outletUrl": "https://www.huffingtonpost.fr",
+      "published": "2026-10-29T15:13:15.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Anticor becomes a civil party in the investigation into Edouard Philippe",
+      "en": "Radio France warned by Arcom after this segment on Mélenchon",
       "about": [
         "FR"
       ]
     },
     {
-      "title": "Midterms : Barack Obama, le joker des démocrates de la dernière heure",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbnBXcFh4bjlIOTNBYnQwX2dyOU1mcno2dFZ1Q19ZamxBd3JYakZhTVBoWXlQM3hGbmNFVWpQOVlTWHlYOFdYYlBfdGVMM2Q4dWd6UzgyWHV2M3haM3Y5LXJjVV9Rc0tiSGowSnRBVmlUNDQ1RU82aENoTjJmYzVLc016VURCdklrcWVIeE5LckNtc3NHeXJKTDd0ZnZRRGxnbmlUQ182WEFrRlkyZ1otbWJrUWFwVEZPTDNRb0NGRzJpN1VyZFhR?oc=5",
-      "outlet": "France 24",
-      "outletUrl": "https://www.france24.com",
-      "published": "2026-10-29T17:27:44.000Z",
+      "title": "Chauffard filmé par une dashcam : publier son visage ou sa plaque sur TikTok fait encourir 45 000 € d'amende",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYUFaaU83b1hsV0lLOEJqbDhkbC1rS295RHFvcVd4TlZnYXVZcXdPRlpDNk0zYXV2b2pFXzJrc0VpNzkwbGFPYlh4YU0xd0lCX1JISUlqVUV5OFA4ajZkSEh1bXE1TXJPdXVHTXo0eHlxSXJnbENBRXRUeFJpM1BiZThGUWVkdlBRRUxiRnVSM1daVUJPZi00LS00d0M5bHkyaEE?oc=5",
+      "outlet": "JeChange",
+      "outletUrl": "https://www.jechange.fr",
+      "published": "2026-10-30T05:30:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Reckless driver filmed by a dashcam: posting his face or licence plate on TikTok risks a 45,000 € fine",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Pierre Lellouche : «Ursula von der Leyen veut annexer le Canada sans en parler à personne»",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSF9zU2MxTWhZaVpJcHFYYVlNa19jZHMzc0p6U3htQlNQemZOdmZfNi0xRHUzMWpRZW9xRjhibkQzMGhBTHJJRS1FYU92Rk9JMGlwYUN5VnBYQzF1TThqLTBnWWZzeWc3WXAtZVI3ck9TN3E4UUYyX1JPZE1RTmp2Y1lyNmtoMDZTNDd3LWNuNEhXQjNtYUo3ZjF0RS1sMWtWVTlkUHgwby1YUnNETDVYUF9VMNIBuAFBVV95cUxQUWY4T1RHS2lIQ0FYdmR3UTFORzlWXzdPOUwxTFdSX25VLXFuN2ZhbXdNRUVkZ2ZHM3pWN09HeVhCVjZaY2J6bUR2dG1wWV80dnRwSVhCRmhhWDAzLXl1ajNsUHhQTmhHbXB0YVBBNlBDc19vM3RTUC1UMUp4TnVFUUFJRmIwNUhCaFk3bjktbUl4WU1RbHFTaWxRUXVGeVNydmxVSUlGcVpWWnZCdlVYa1ZiX2FsUkQ0?oc=5",
+      "outlet": "CNews",
+      "outletUrl": "https://www.cnews.fr",
+      "published": "2026-10-29T17:10:47.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Midterms: Barack Obama, the Democrats' last-minute joker",
+      "en": "Pierre Lellouche: \"Ursula von der Leyen wants to annex Canada without speaking to anyone about it\"",
       "about": [
-        "US"
+        "CA"
+      ]
+    },
+    {
+      "title": "Mélenchon (LFI) et Tanguy (RN) accusent Macron d’avoir œuvré au départ de Christine Lagarde",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeV9lLVZYOVV5Yl9teFdBUnRvLTJITnlzU3IzWnZmeHlLRXhkRmhXdGxvUTQ2X1VCakRMeVY0SzZhUUJ2c1ZSNmxwb2xzSFNFdURQcXg0TkdOcDBZczA5aGpvRThzWTZZMkwtU2o5VzMwc1hkdmRuUlNHelRiSUFrTUpZLTlCZjBvR21seUNJNDNuWXB2cjFaT0VaSF9YUThzWnFoY0dQMjlHZXBWWmVVYXhUSDRWdTJvZldwT24tbUlRcEVNTE1pb1lIMVpzMEk?oc=5",
+      "outlet": "20 Minutes",
+      "outletUrl": "https://www.20minutes.fr",
+      "published": "2026-10-29T18:40:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Mélenchon (LFI) and Tanguy (RN) accuse Macron of having worked for Christine Lagarde's departure",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Les profits de Total bondissent, la droite et l’extrême droite applaudissent",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSW5LeVAwaF9SQ0dYMTlxRGJFQlpCemNSWVo1ZVlVM1MtRWM4YUhETlJlNHdnRlZlQUFIX0lWN1hYVks5WEctRjQwd1Vla3puWGR2SjZMSTRzYzEyZUROVWVQRThzcnF0WENUYTZWMG8zcUhvLWI0Mk5TbUV5NmMtNjVHUHNhQzlvQW9QOVVXZWRLNVE5aFNSUUwwTndTdFlKQ3RoSTVmbXBNSXRaUzBGYjlwWlhFMDExQzJtN0ZtXzRJVVVWUEZBMEhtcjlGS1k?oc=5",
+      "outlet": "Mediapart",
+      "outletUrl": "https://www.mediapart.fr",
+      "published": "2026-10-29T17:30:06.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Total's profits soar, the right and far right applaud",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "« Camps d’entraînement terroristes » : des élus du plateau de Millevaches exigent la démission de David Lisnard de l’AMF après ses propos",
+      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOQXVKYmlyRFFYRUY0QVJxTDNINlZ6Y3dzZG9ITmVIY0R4TWh1YjdQUzdERC1hMjRyR1VHZ29WSUNFakUta0VsZG5QWkdWOE5VR0I5UmNTbl9OT3FEcTVIcnRTZlhKNE5ETE1uNlhoZmF3WFR4S2pxeThBaWdZVnZsZ09iejFPcldxUnloQXJpZVdzVEJPamZvTF9XcUVIR3dQYzl6bnFYTjgtVEFKZ0I3VFR4b2c4RXY1bE9YOFQzMmZ2ek5IVkhvcnlWVnl1dGpLZ25iZEhYRmlQdWdGaHhnMy0zLVRybVU5ZlE1M3FYVkRwODV4djFCX2lwQTZubVlaODl6eC04LUY5ei1la0N6Z1dkdHJIVjg3QTFuQ3ZLZTh0YzFXbkF6bHV4Rkd0aWNu?oc=5",
+      "outlet": "Le Parisien",
+      "outletUrl": "https://www.leparisien.fr",
+      "published": "2026-10-29T13:03:22.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"Terrorist training camps\": elected officials of the Millevaches plateau demand David Lisnard's resignation from the AMF after his remarks",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Gazole : vers une baisse des prix à la pompe en ordre dispersé",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZzNrOXNuNDl5Z1FfV2xyNVYtTGFfNEI1Q2VUV01SanIyZ2QwQlpsN1F2R3dWekRJb2MwcTFLVDk2SXlQR2Q2MkJHUlNFS2JkN20yanZ4V2F2YldMaXpxbE1rcUlUMm1MTGFZRURnM0NqNkpOb2dCbngxcXEyaVNtTVM5SWlZb2hoaXhXYlVmb2xsNnNZb3BJeElhU3BKcTc3UmR6RmJrSnpxLXlEc3lOUURkYlpsX05sUjVzQjBqdFVnN1BINGtIU1JPTVkxZw?oc=5",
+      "outlet": "Les Echos",
+      "outletUrl": "https://www.lesechos.fr",
+      "published": "2026-10-29T18:28:37.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Diesel: towards a drop in pump prices, but in disorder",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "En fuite aux États-Unis, Flavio Bolsonaro ose une comparaison avec de Gaulle",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPS3hSSU8tX3IyM2dqZW42bkRRc1hlV1B5UHVEbFdjU3I2SkdIRDB0TDN0TjZ0dWx2N2RsX2prTUlTRXh6QnBRN053TU9nU3g0Y3V6ckxGNlVBOUJFNEJ5WmF3MWIwd0Q0eVphUHR2YzNzLWw0UHpheUF5VV9EeTZTSmVsS3otUzRIaWpoRmVKTzVRMnhkQUpaaFJ1ZzNZZHQwWnRoZ0RXdGhXbzBfckhWaGVJU3FGUHo4cFVPTm1Rb3F3WndqZEszSXJjbWpjN1YtenN6TGZUUQ?oc=5",
+      "outlet": "20 Minutes",
+      "outletUrl": "https://www.20minutes.fr",
+      "published": "2026-10-29T13:33:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "On the run in the United States, Flavio Bolsonaro dares a comparison with de Gaulle",
+      "about": [
+        "US",
+        "BR"
       ]
     },
     {
@@ -200,88 +306,14 @@
       "about": []
     },
     {
-      "title": "Manifestation du 31 octobre : syndicats de salariés et d'étudiants attaquent en justice sur le parcours à Paris",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQUMyTWVaRF9JUndSaHJBcXhrc2ZPc0hUakM2VFFtTzE1OGZpTUo3Y0hzNkVMd1hDQ25RNWRrQVNjTHJmZHA4aHhyc0xPbnFwODFHeGNBVkhYVVZYcVMybTE0dzM4Uk9Ob21GVkNfWFI0MmZwWUpGWllCU3lmTFFLRHB4QnRuYzk4SU85QzcwZkY4SENPWlFITmhlN2FaWFVUZzRtOHlQTnRSZ1FWOXo1Vm1tYUpSYU1CLXVuN3RUMEFtUlNzNm0yT1g3TFdWV1E2eGllaTQxQVdtVGhtS2hfeERjNURCbW1zSmtnQUlSQTU?oc=5",
-      "outlet": "Le Figaro",
-      "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T21:43:17.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "October 31 march: employee and student unions sue over the route in Paris",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "TotalEnergies, Shell, Repsol: résultats exceptionnels portés par la flambée des hydrocarbures",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQWlRTZXlBTXdIZ3BkeTJ0U1hOTkFqMnhZRk92OVFISE1zQklST3J3cElFbkg2Sk1Vcm1NYWdhbEh0VzlQaUxNQVlXcDlORk5vVzloOHcwaGJOSWp4RS1Id1c2U29kbUZsamRMSGRlV0Q0T0lIYjAzbm9mQ0NWZDljVlZyS2lYdEd0cEE4WE5uUmM1R1hmRXZWQXpHTVpyNDBKTms3WFNEUlYwbGl4Tm45LVBIaW1CVzFWN2dfUkc4TlJSUS1jWGMxSkFmOEVTSE1xbGpkb3V3NE96aGJhRFY3dWU2azB2R2g0NWtnWjZLRjhOVTkycnB5Ym9mN2zSAYICQVVfeXFMTlN5ZVdVTlljcmozaWpCOFE5ZkRmYUJXQUNoT3ZNYWdQQ0ZITENYQUF1VzVEdFZXUENvV09nLUwwekNtVEZNOTNGU2FOZW5mdWZ5UGJlZGQ4LS1fQ2ZaU1pTQXZkZVpzRkpIZk44aHJ6Qm9zUDJKRWstRms4bno5QlFTOWtJN1JvNTNmNVdxa01heGpTVEdNT3RZNVZWblNlbXFKM1ZndzhqYTlXVVZEYXN3bW5ULXRsNmRxOGhHQXdTRm4xYVJvOEZxaVp6U0d5YWVndHpKWjg0a0FXQ2dfcHpkM0hLalVuQV9MU2JHaGhpYTA5NlZHYkRKRm0wNE54bGVB?oc=5",
-      "outlet": "Boursorama",
-      "outletUrl": "https://www.boursorama.com",
-      "published": "2026-10-29T17:41:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "TotalEnergies, Shell, Repsol: exceptional results driven by the surge in hydrocarbon prices",
-      "about": []
-    },
-    {
-      "title": "Catastrophe ferroviaire en Espagne : l’angoisse et la détresse des proches de disparus",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQX2FLSk9SUEhVRk4wclVFdGpUM1dIdHViTlZSbTlxb3VoOGFiaC12Ri1leE41d2VCZTNOU1ItY2hvX1dwX09neEd5eUVFUWFDbU1iSF83THJMRUtBalA2azl3NEFaQkIya2F0ZnBjTU9VQzR2UVBrT3EzR0xxSVBzMFpNVW9LWUJlcjl4akVrNDg1OHd1ZzctN0pHM3c5OTBTdWZnMmhiVHVNUml4SXBSZFlBcXBfaW01LWZtX2NuUW1DeG1meWRCZmFVQUJrek5lZUFDV01sV1pNN0hjbXF3UWhfc1FIQ0tvb3NBZVVHOWFpN1RyT3lFV25SYkRUemxkU3JV?oc=5",
-      "outlet": "Le Parisien",
-      "outletUrl": "https://www.leparisien.fr",
-      "published": "2026-10-29T21:07:07.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Rail disaster in Spain: the anguish and distress of relatives of the missing",
-      "about": [
-        "ES"
-      ]
-    },
-    {
-      "title": "L’Alberta, cette province canadienne que certains voudraient voir indépendante",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQX1N6ckxwX3FFZ1F5bnNCQ3ViaHlOdmNsNzJyd0NZbC1SZTFfVHdfUnkzMFdRLVMzUHpCb1NPbE1JaGg4cUItRE9ZVlpxaTVQSkFyT2FuT1B5UU55ejJKVDBQcFdyZTF3Yl8xWEZ4a253c2FfaGotUVdxZ3ppSTk1Tzctc29Zd2FwY2NjREtuQnE1UFNWSmlmeFFGOGRlSWswdlU2dUVzZWxaSzZpQ0RmTkpvQmhYOE53?oc=5",
-      "outlet": "Ouest-France",
-      "outletUrl": "https://partir.ouest-france.fr",
-      "published": "2026-10-29T21:02:02.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Alberta, the Canadian province some would like to see become independent",
-      "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "Le gouvernement compte sur une « baisse visible » du prix des carburants dès dimanche",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWmFtb2pqdFFTZVp3ZEN0RkxpUmRJWnJYczJCci1aOU95c25DVFZUVi1yQVRGQWQzd3I0S0pQbzNoVWJyRVVVMVdDazZleDkzLVNTWHpoVXFQemZpeEp6S3RPZzhfVTlaRGJrdWhDNEZsYlRHdDQ1eGgySldVRHotSC1RWG53UlR2QmgxbG1BQjVtWkF3QmhfcS1kdndmOXZ5aVZyZ0xUVVd1cnJScjNJUUhEUElwQzg?oc=5",
+      "title": "En liquidation de stock ce jeudi matin, cet iPhone 16 passe à prix record",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPOU4xY2ZXVmtLbkUwVHVEOE1RZnBuSnNXa1JtNHlHOTEwMGhVSzhSYkJ4VGNhaDlabGozSDVLcEtEUl8yUWdlVjRvb1lVWWNtdUt3X3V0NzlvT0xydlhrcjV3VnBJQ0dPc2wxZHhyY1NadnJYV19KcG1FTWVnbGtUc1VFcmlWYUF3SzBaMjN4UWwtNVNDMjBUdmZpbDlVdGdCYUZUbDZGeWlDTEtPcTdjbGJtZ1p3ZmVxeEdKZXNUa0RJeXlrZ1FqcWxrYVVxazFfb3d4eDFVZVhxZw?oc=5",
       "outlet": "20 Minutes",
       "outletUrl": "https://www.20minutes.fr",
-      "published": "2026-10-29T17:05:00.000Z",
-      "outlets": 5,
+      "published": "2026-10-29T19:12:00.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "The government counts on a \"visible drop\" in fuel prices from Sunday",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "ATP 500 de Bâle | Arthur Fils et le Masters : \"Une très belle journée\" et des pensées \"néfastes\"",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNdExvcWNDSXM2OXZoQUp3Q3YzdTVMSGVNSzlrSUtvcVlvVnJkMVg4blB1NUN0bVR3UnVPQk5tVUhkeGc2MXJwTzk1bTN4bWh3M3ZSeDZEcHdWcjVVelR3ZkFaVlFCemo0WGc2X0VvakJZSzJELTdNYWhZMWtyQ3VxSWJ3bWpOSDBiNTVuZW51UGhuYXBMRlY3dGpDQXo2bW1NbjM3OVVwRVlZT1RhR0t1UzZNRUNLbU5SN2Jid1hjVzVDX3ZkTV9ETzNDT2R6YWZfLXBiQWRQb2tkc3hlWXdKN3lIX3hOaENvNUdlZVZGOA?oc=5",
-      "outlet": "Eurosport",
-      "outletUrl": "https://www.eurosport.fr",
-      "published": "2026-10-29T18:14:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "ATP 500 Basel | Arthur Fils and the Masters: \"A very good day\" and \"harmful\" thoughts",
-      "about": []
-    },
-    {
-      "title": "« Deux AVC à 28 ans, ça n’était pas du tout dans mon bingo de l’année 2026 » - TÉMOIGNAGE",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWmpoZ1NFMmJfVmNsR0NpVk9tU1hYdHFzUUlTQUdSeGZsTEtxU3BUUEw4NHpvRXExdXBhNHlWaENoOGMtNFlnYmdSdU5naG1UMFJXRzRpRnRiYWxLcEc4QjkzeFZNdW1VbzRNdTVhR1RibllTbFRERjJ3M21xLTNzaFNhZlFzS2lDcUttNG40M042Z2h5NkVZOU9lQmplNjZ6TzdMLVE5RkgyU2hvaTB3MTU3YXBUMEtyVF9YU015Wk5NdEFueDRnTXZ4dkMwOUZKMU9n?oc=5",
-      "outlet": "Le HuffPost",
-      "outletUrl": "https://www.huffingtonpost.fr",
-      "published": "2026-10-29T17:58:07.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"Two strokes at 28, that was not at all in my 2026 bingo\" - TESTIMONY",
+      "en": "In stock clearance this Thursday morning, this iPhone 16 drops to a record price",
       "about": []
     },
     {
@@ -298,81 +330,38 @@
       ]
     },
     {
-      "title": "SFR augmente ses tarifs : une nouvelle hausse qui va faire réagir",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdGoxU1RLVjVtcnJMSU9NR1Brbk02Z19mc3NxajRZLVZwWm5TaFBfbkxYS3Jrb00xdjFYbDU1NTFGeTM3dVBiN1Nnc1BDNHI2cVNFQThHcVl1ODZrb0xJa1hWUDdRUEF3ckNmeGkxbjVMSklJTXpveThiamFHaEprZkRTckRKMGxvVngxYmpmWll6ZzZDeVM3LVBsaUFSdzN6UldaSjlWYzRnMTNVUmZ4a2w0aHdlVGN6?oc=5",
-      "outlet": "Clubic",
-      "outletUrl": "https://www.clubic.com",
-      "published": "2026-10-29T16:14:00.000Z",
+      "title": "« Deux AVC à 28 ans, ça n’était pas du tout dans mon bingo de l’année 2026 » - TÉMOIGNAGE",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWmpoZ1NFMmJfVmNsR0NpVk9tU1hYdHFzUUlTQUdSeGZsTEtxU3BUUEw4NHpvRXExdXBhNHlWaENoOGMtNFlnYmdSdU5naG1UMFJXRzRpRnRiYWxLcEc4QjkzeFZNdW1VbzRNdTVhR1RibllTbFRERjJ3M21xLTNzaFNhZlFzS2lDcUttNG40M042Z2h5NkVZOU9lQmplNjZ6TzdMLVE5RkgyU2hvaTB3MTU3YXBUMEtyVF9YU015Wk5NdEFueDRnTXZ4dkMwOUZKMU9n?oc=5",
+      "outlet": "Le HuffPost",
+      "outletUrl": "https://www.huffingtonpost.fr",
+      "published": "2026-10-29T17:58:07.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "SFR raises its prices: a new increase that will cause a reaction",
-      "about": [
-        "FR"
-      ]
+      "en": "\"Two strokes at 28, that was not at all in my 2026 bingo\" - TESTIMONY",
+      "about": []
     },
     {
-      "title": "Halloween : bonbons ou amende ? La préfecture de police rappelle l’interdiction des masques et fausses armes",
-      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPR1hWbUpzb2g3dml4VVlFcFJvVkVHWW00WU1XOFU0WVB3X255d0hVelRQM1NPLUFlajZBdDlqcUljNXVQUHRlUTZ3dHhDMEdfOGM3SzdDcldTcGpPd0NWSGl1SUgyMEhlYUc5SkZSc0pyNTJxdkhVdmhueDhaUE5OTERfd3J1anZ4cjBuWVduTEszOWVKZDIwSlZJdXFSTnZrTF9zQ1hFRmN1S0d4N2YwSWltampZT2phT05nMkRMVHZOMUwzZkVZQ1NwODdlTWpXVFRuVWhKVGItY3d5SEsxNHBiVG9CeDVEd3VJeVlKbDZCT0t1V3RvcTNDOWNGZC0tOW5uYS13bGgzSmdl?oc=5",
-      "outlet": "Le Parisien",
-      "outletUrl": "https://www.leparisien.fr",
-      "published": "2026-10-29T10:35:09.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Halloween: sweets or fine? The police prefecture reminds of the ban on masks and fake weapons",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Centre dentaire suspendu à Orléans : des dépistages des virus du VIH et des hépatites B et C recommandés pour 500 patients",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQRms3Z1BVSEVrMjFIRGdhb2gxZ1VRRjhNZmNGY1hzMnZhdlB3Y2lGUmg1VWhqU0lVZUJ0bTVPWnVBd2Z2d1ZQaGRwZkFxd0lIWENkNFhqdW1jLWhyWktSbEszZkk2X1laMkpQNFhEbzJqRjZRbDJZYlRhOFRVWWM0V1FDOTlOZUV4QS1lVW04VVRLWUUwYzNDTkdIOGd4MnA5U0pGMnpTMnlKY2tMZlBoNGdyaGJJMzdSQVBVSHVSOHVBdlc3Q1ZnQjlpd2pJUDVFQkpraHlQd2w4dlIwaGJybXkwT2gzVjR3Z2tobnVsZllLT0cyWGhNbkRFeFZ3SVlkN0RQQWFJbw?oc=5",
-      "outlet": "La République du Centre",
-      "outletUrl": "https://www.larep.fr",
-      "published": "2026-10-29T16:54:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Dental centre suspended in Orléans: screening for HIV and hepatitis B and C recommended for 500 patients",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "La CFDT et la CGT accusent le projet de loi «casseurs-payeurs» de porter atteinte au droit de manifester",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNM0N0NFZVVG5ocF92eEpKOHhOT1JsRUNfbTFsVldMOXA1bFVQVlUyOTRiTWlTeTVtNU5kT3k3cXRySTRwSkgyZWd1TjJZN1VqcUw4RUNwV2xSRlktTWlHWlpYemp1TWZxTUdmT1pGS2xxbmpxcEZMX0pvVHU4blNFMUhqejZhaHF5QTRtXzBZbV85R3BXd3dhUHRDcXdPY2U1UkxuOGUxVkpLQ1g3SVpwa2hSV2VRajBuaFBIZFpSSkhGQUwtLTRxSnhKektDMUxwUjNKQ2NjX3hXT2d6UktNMDU3V0VUbnc?oc=5",
-      "outlet": "Le Figaro",
-      "outletUrl": "https://www.lefigaro.fr",
-      "published": "2026-10-29T12:24:32.000Z",
+      "title": "La carte de GTA 6 est immense : alors qu'il ne faut que 10 minutes pour traverser GTA 5 en voiture, il en faut 35 sur GTA 6",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOQWF6T2tjVUZoMDh3QTdfdkdnQm5YOE9kR0pnODlVTHZONk52bGJKOFBjS3A1cDFCUWwxTFp4MFpjNXlpc2hfcHM4QURKSE1ncnFvRS1xQ1F2NnVlNzNwRXNMcjhjUk9rWkxUYmRvbS1KSERtbHZFcjhwY3RsbGo2MlJjN0V4MHdVT1BzaWpSY21XakQ1dTdnQ3R5WllhanRYVG1sTG1fZVhway1kLVQ1aEJZMTJPSzVBMlFrR3ZEcHNDcTBRMExhaXMxOVlING5NYXp3VmJLNmFySnoyaU1QYnE2LUk1QVV3clIwVmxUQmpiWVNJMUE?oc=5",
+      "outlet": "JeuxVideo.com",
+      "outletUrl": "https://www.jeuxvideo.com",
+      "published": "2026-10-29T15:40:09.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "The CFDT and CGT accuse the \"rioters-pay\" bill of undermining the right to demonstrate",
-      "about": [
-        "FR"
-      ]
+      "en": "The map of GTA 6 is immense: while it takes only 10 minutes to drive across GTA 5, it takes 35 in GTA 6",
+      "about": []
     },
     {
-      "title": "L’Arcom met en garde Radio France après l’affaire des propos tronqués de Mélenchon",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTkZzeWlJQUZtWTV0bzhwejhYZEpfMHpaXzBrajdzT2hvUEJTYVR5X2h2b1JXZGZQM0k3Y21ZS2dCZlFlRFFLR2hNZV9NTkxzT1U1QlZoa0dfZjdvcTZUYW1OUm1JYVg2SklVYTRxempia3BoNTVFZnpBV185Z2hyUFl6UERlYmFUOGRPLWRCNU91Y3pqX1FSVF9SbmlmajM1bXdvWXJsNFotcWZyVUtMOTB0QlVtUXJwSHc?oc=5",
-      "outlet": "20 Minutes",
-      "outletUrl": "https://www.20minutes.fr",
-      "published": "2026-10-29T17:45:00.000Z",
-      "outlets": 7,
-      "trending": false,
-      "en": "Arcom warns Radio France after the affair of Mélenchon's distorted remarks",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Pour Sarah Knafo, une dédicace mouvementée à Tarbes : 500 participants et 50 manifestants",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQVhhRjdMdzliRWpKSDY1N25fWTE0QTZDMElydEY4X1Vwc2Y5MzRpbXBwaWZNd3BXRVZFUkhNWFROelg5SlVtUjdBWjViYnVRbmRpRnZhcVhwX0lGdndCek1LYTNxR194NWNDb1liS1JzZC1pTHg0RTJCY0R5bjk2U2dsSDRpVjhTSXF0Z3hkX0NpTTRkOGdWRkFrMFIwWEdGUkhieHVQblpOeFdjNzdhYmtidWpuZW1NaFdxU0lldlgxYzQ0NTBlQll5dWM3Tmh3?oc=5",
-      "outlet": "ladepeche.fr",
-      "outletUrl": "https://www.ladepeche.fr",
-      "published": "2026-10-29T19:06:00.000Z",
+      "title": "Le monde taurin endeuillé par la tragique collision de train en Espagne",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVkVpSHBTUWlVVy03X0NYRHI4V1lEdTE3enpnOEFmU0VNRWlZZVJ6X25wQ1JFSFFBWDhDV2FLZktEa0tYZmZNaG52VDBSUEpjblNzOVRnd2ZyY2lTaENJU09fUWV1REtHVnlVNmFEd2UwaHVScXU1N255LVZaNmYwYWNxRFF4ODBKdXAwRnBSZjdJcGlHeFptZUF2ZjdNRjkxR3hlc3pmWGdEM01kTi1JSURxRTNKVkdfZVJWNQ?oc=5",
+      "outlet": "Midi Libre",
+      "outletUrl": "https://www.midilibre.fr",
+      "published": "2026-10-29T21:25:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "For Sarah Knafo, an eventful book signing in Tarbes: 500 participants and 50 protesters",
+      "en": "The bullfighting world mourns the tragic train collision in Spain",
       "about": [
-        "FR"
+        "ES"
       ]
     },
     {
@@ -386,6 +375,19 @@
       "en": "Flu: are you among the 4.9 million French people at risk?",
       "about": [
         "FR"
+      ]
+    },
+    {
+      "title": "L’Alberta, cette province canadienne que certains voudraient voir indépendante",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQX1N6ckxwX3FFZ1F5bnNCQ3ViaHlOdmNsNzJyd0NZbC1SZTFfVHdfUnkzMFdRLVMzUHpCb1NPbE1JaGg4cUItRE9ZVlpxaTVQSkFyT2FuT1B5UU55ejJKVDBQcFdyZTF3Yl8xWEZ4a253c2FfaGotUVdxZ3ppSTk1Tzctc29Zd2FwY2NjREtuQnE1UFNWSmlmeFFGOGRlSWswdlU2dUVzZWxaSzZpQ0RmTkpvQmhYOE53?oc=5",
+      "outlet": "Ouest-France",
+      "outletUrl": "https://partir.ouest-france.fr",
+      "published": "2026-10-29T21:02:02.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Alberta, the Canadian province some would like to see become independent",
+      "about": [
+        "CA"
       ]
     }
   ]
