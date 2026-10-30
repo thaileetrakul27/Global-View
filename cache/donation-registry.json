@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-30T13:30:58.872Z",
+  "updated": "2026-10-30T19:53:42.295Z",
   "fetched": {
-    "societies": "2026-10-30T13:30:58.872Z",
-    "uncr": "2026-10-30T13:30:58.872Z"
+    "societies": "2026-10-30T19:53:42.295Z",
+    "uncr": "2026-10-30T19:53:42.295Z"
   },
   "societies": {
     "AF": {
@@ -2789,32 +2789,6 @@
       "place": "Bangladesh",
       "title": "Donate to Support Those Affected by the Bangladesh Floods"
     },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-29T13:38:14.413Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ayodonor.pmi.or.id/index.php": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-29T13:38:14.413Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/index.php"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/emergencies/8013/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-29T13:38:14.413Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8013/overview"
-      ]
-    },
     "cruzroja.org.pa": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
@@ -2994,6 +2968,51 @@
       "chain": [
         "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
       ]
+    },
+    "sarc.sy/home": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://sarc.sy/home/"
+      ],
+      "checked": "2026-10-30T19:53:42.295Z"
+    },
+    "local4:usgs-earthquake-us6000u1cf:quenarafoundation.com/en/donation/panama-earthquake-relief": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Panama\"",
+      "chain": [
+        "https://quenarafoundation.com/en/donation/panama-earthquake-relief/"
+      ],
+      "place": "Panama",
+      "name": "Quenara Foundation",
+      "title": "Panama Earthquake Relief | Donate to Azuero Families",
+      "checked": "2026-10-30T19:53:42.295Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-30T19:53:42.295Z"
+    },
+    "ayodonor.pmi.or.id/index.php": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/index.php"
+      ],
+      "blocked": true,
+      "checked": "2026-10-30T19:53:42.295Z"
+    },
+    "go.ifrc.org/emergencies/8013/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8013/overview"
+      ],
+      "checked": "2026-10-30T19:53:42.295Z"
     }
   }
 }

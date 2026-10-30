@@ -1,44 +1,114 @@
 {
   "code": "PS",
-  "updated": "2026-10-30T13:30:58.872Z",
+  "updated": "2026-10-30T19:53:42.295Z",
   "articles": [
     {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5TYndBQl9PZWNQNV91aEpnR0R5M1JVUXZDS2I1WjhCbC1hVWo1U1ZpNUFzQlBsd0ZicHBDWUpMdXRhUmV1dG9oNzNMLVJyWDZ4RlJ2cF9xSVo4NnVzckliN1dGcjZYWVUxdDVGNnlmel90SnVhNVQxcDlR?oc=5",
+      "title": "الجيش الإسرائيلي يفجر منزلي فلسطينيين في الخليل",
+      "en": "Israeli army blows up two Palestinian homes in Hebron",
+      "outlet": "新华网",
+      "published": "2026-10-30T18:11:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
       "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQY2R2NkFHSjVxblJQWS1GWUlXX0p1NDBWY2xnMGJHQUJYZzlzVWZKUEJBSFEwTmRnRmU0QzJYbWZKVk96RTdweDVnajhpSW1GSWRualAwUzhEUmpkWDI0SDRydVZERk5DT3FEVnRka0xRR1ZoWWY0ZHU2cTNHcHZPMQ?oc=5",
-      "title": "שיחת טלפון לפני החיסול: כך פועל השב\"כ נגד מחבלים בעזה | דיווח",
-      "en": "Phone call before the assassination: how the Shin Bet operates against terrorists in Gaza | report",
-      "outlet": "mako",
-      "published": "2026-10-30T12:15:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaS1SSVlwb2Q4Yk1LSmF0R0dKd002dmQ1NkU1dENrZk9KbTRTS1lsWGN6YkluOXFocUF3eWR2Xy1KY2RBdHVqNmhoTWlhS09PdWJ5Qkk1aXdwa0ZDc3k5RGtDcVJseDRsQS10bHhQZkpSMFFHS0k5Y2NPS25xMU9MS3JCM0NfUkZ5UTJrVUxrUXdyR25KSmNGbVhIMnZwcHVqYTRJNlBncjdDb0E?oc=5",
+      "title": "דיווחים בגדה: נמשכת אלימות המתנחלים, שלושה מוסקים נפצעו",
+      "en": "Reports from the West Bank: settler violence continues, three Muslims injured",
+      "outlet": "הארץ",
+      "published": "2026-10-30T16:40:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNOXd6cUkzLVNEanN1OU43YzI5WDR0a3A2RUg1LVAwb3pHNlFLV1BvZ1V4eWI1clcydW1QbVQ4VGRaSDA4Ni1XZHJmWW5rTTRVaEVaT1FTaTg4dkhFNGEtMnRZQjdfMmN3dzZGWGc5TzljbGRrM1k2bWpwQ3c0VFFfdjNQSUgzVnlUUVFJWUZoN2hJRFFKZDRpNE5XY1M3cHp0YjZld2NIZnRGSkg0WEwtbTloYzh2VG1KZlQ5ZDJRR1kyczJVdFR4a21PRzEwclJ2T1hMX0tfc0E5Tkd0ODhENVZ0NmVJMUo5aVFfdGZja19BSzBqWERsQnZGdWpUbENuZDZyVGJBUDdhckNwX1ZvTXJKV1RmbFNraVE?oc=5",
+      "title": "استشهاد طفل برصاص الاحتلال في خانيونس",
+      "en": "Child killed by occupation fire in Khan Younis",
+      "outlet": "وكالة القدس للأنباء",
+      "published": "2026-10-30T16:13:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CU",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB0RUxVbWUwYTF1eG5rcXZ4TFBaaUV1Y2I1SFJFQlRBQ3o3el9wR0J4dUJqRktFb2cxbGlaWHpyazVPODVfaFNrTjhLWlh6bF9uTURxTzFYWQ?oc=5",
+      "title": "Gaza, Colombia, VIH, refugiados… Las noticias del viernes",
+      "en": "Gaza, Colombia, HIV, refugees… The news of Friday",
+      "outlet": "UN News",
+      "published": "2026-10-30T16:07:37.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMirwVBVV95cUxOVmNaN2pPOWFhbkg4RkE4bTJKUTdNU01YM3l5R051dFc2Qjd6QW4wd1puYWdyY0Vabm5HZjU5U09GUnR6U0Q4eXFFZFlHc3ZsVEI1cVZUMUtVTVNwTUVTOU1GcXhlTjZIZEplXzBxc0lPTTkwVW00NzY2c3VyejFlVXJqRy1kQ0EyUWozWWRyZG9QeFRzRDlIdURUVkFMZHlBZ0x2NV9OQ01taWJ2cGJ5ZlRqUmg1QWx6Umdsek1Xbi1NaGlBSnRyOUlDMjZ1WFlBT2gxUHVwT28xeEVZdEdlUG1FT2ZMYjNqUF8zUnZsWU00bmhBWXVlbkZzU01obWdsS0E3WDhFaTFGZElRNGZIRm0wbjdnV3l6MFFDaFdsdGJ1ek1ybjhiTjA0TGtZWUJma2VVYzIya1Q5OUUyQnpVaHBNaFh3WXlmV0hSR1hVQk5RYjlBbG1qbi1sYVMwdGcxNnNjdzczSllSY2dlZ1Z4UnpCUEwydTVZekE5QmJ0dG54dzhBeTExNGxTZDBOREVWMXNFZmNXYjA4cnVaN3I2dG8wXzQyZmlBaURWX2w2MnV5ZThUdl9LMnpheVdLRUt2bzU2aHJkSktUb1BPeWNyU0NlMElBcVdOT0hJZFdEMWVoWnVTQTBxUllKbjJBai0yTFdrMjJLTG04N3lzRVNMaGdRa0lld3FkTUpkNmtTZDdrRkdqS182NExsZ2RlWFVQZmF2THl2b3R6LXNXd205R0thek02S2I2X0RkbmQyRVZlRFIyLWttZVBxRmFOTXJhVmJ1NGk2YU1Edm94UnFYNFhWYmQ4TkZtRVV0dWg3Mjh0UkotSjVuOEhYN243c19QaVNBcGhQeFR3a3NrOEFQU2RyM0pLOXhoSHJaYmtOM21ZU3RISlhqY19HSUlLcEE?oc=5",
+      "title": "العملية العسكرية الإسرائيلية في الخليل متواصلة لليوم الثامن",
+      "en": "Israeli military operation in Hebron continues for the eighth day",
+      "outlet": "الشرق الأوسط",
+      "published": "2026-10-30T15:54:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CA",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYnRWem9vUFNtMFFmaXlrbG1HWHVnaF9iN3lMWmFSVVFyYXJKYjdRZ1NzN1p0bTh3LWVXbkMwckpSZWVnSXhXV25oekxRSWdibUUwZE9KZHdHTFhXOUFNcW9PajZmQWJWUklVby1VODZhX1hmZzE5cTVZUnJzTHFISzhFZDRoRzYyTWRKMTN5X1I0YUczc1lOUE50S1pSQllfYy16MjlXZ1jSAa4BQVVfeXFMTXBxZU9OazFzOHlXZW10MlJ1UG81cmlSQXlwTzRqN2pvdHYyQ0t4R2sxNEo4VjFWY2NPRUdJamlwT0ZuNlNXU1owemk2SXFIUnVKWXdWWGE0ZXJFS1dUVmpqVk4wbTZ4RGU2enpyeHZUdktqRTAzeE91NUFjQmpvbEFTYmVJTmxyZno5ZU5wcmQyR1FOYVBOMkgtbjVyV1d6V3daVUcxemFBY0ZuVXNn?oc=5",
+      "title": "Israel razes homes of gunmen who carried out deadly Hebron shooting attack",
+      "en": "Israel razes homes of gunmen who carried out deadly Hebron shooting attack",
+      "outlet": "The Times of Israel",
+      "published": "2026-10-30T15:07:46.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxOOUgzWjZLUDlCSVRIdUZlcGIzQTFNX0dQTUNjemtsZ0VDcUpnR29LZXZOZ2NqSnZvZGJ3bVFsUENJNnRxVjFFNmdKZENHRmxIV29leG9iTVJwWW9DVVJFaFZmYkZiRVFDNmZVdUMxOGNLQUlnUy01cGVCM3BtNXM3YUJlcXMzXzUxTGNaVGFlSnJod3lQN1BJSk1GRS1mcUpMVjk1WlprcXRLX2tXYm1WUlRPWl9XZE5RUWtLVVFodENncHVfYU11MWRqV1FvZUEzR0pHUFBSWk5KVjdvMjNCbDltaXJZRDhVTzkwRkdIV2F6UERMVW1PeGozYjNlQkZzZFZrc1lSYmpQam83S194STA0cUxWRGUxUXZ2ZGJvdlMyTTJ3N0czQXBFb3NSN185dkRVUUxR?oc=5",
-      "title": "ماذا تحمل الانتخابات الإسرائيلية لغزة؟ خبير يجيب",
-      "en": "What do the Israeli elections hold for Gaza? An expert answers",
+      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxOYllRaGdVcnpYUnZ3WjBXQUxTc0x2U3R1VmZteDZJaVY5QUpScG5jeXJWeVdMWGVCbzRKbWxNZkpPS1ZLYjZnMHNUSzNULTNFWUlRUFFCck56TmhyWmN1N2dUMmY0RVB4N282bnhFMmdyRkRoa3liMXFja2RGZEY0RzFVVlZuc0dzUWxhdlprZVRwNU9FNmRXMko1dmJ4dHdOaVFQNWlOVG9FeUlyTndLNTVBbHhPZHNqU0NjTXVyQVNkOXJxVXFaSnRSeXdTOWNGcVJqZmJvQVppMU9hOHVlQTE1dklRX205SjNNN2JublNMY3VEajltRVI1OHVzSDNWM25tWTQ3TmlqdVN4YnY0S19VWDdXSW1adlF4bVpaZm45QjRVdC1zcGcyTzZFSW1RYjhNU0dfVWg5X1BHSUHSAcMCQVVfeXFMUHpGZS15S1Y4M2Jpa2FwczdmYUlzQVBmWkZDQXY0bHJDNnFiQlFxR2g1TGFRSWZKTmVRR3U3MFplTVVBVER6QmszeUVtanRwUi03UGpQTXE3WFZ0NklHY0J3ZzVfSXh5M2hzaFh0ajhjUHlXMzdoeXgzbGNJQ3BWWHR0NVIxbHNmdDFwaTdUUGZRbm9FM0QzZl9BTDU2NWc2RnNVQlNJYldUUUdxM0hDSkxtTzZvWmgyMnFta1VtZW1UeWdmRmZuNUw1U1BLWFpSMnZQRnA3WHhaajV3V1lhNWh4Zkk1cW05ZkFIZE9lUVM1UW1FRGhCbGN1d1AzUGpxWmp3QTgtel9HSXVnUjlSRHU1UTBqNjFGUUhXRmVBaU5HUmtDaHZ2M0lETzlFTktacU0zUmhKbVJRWTB1Q082TjBxeEk?oc=5",
+      "title": "ماذا ينتظر الأقصى في ضوء الانتخابات الإسرائيلية؟ مختص يجيب",
+      "en": "What awaits Al-Aqsa in light of the Israeli elections? Specialist answers",
       "outlet": "الجزيرة نت",
-      "published": "2026-10-30T11:48:45.000Z",
+      "published": "2026-10-30T15:07:18.000Z",
       "outlets": 4,
       "trending": true
     },
     {
-      "from": "PH",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMzBJQ3UxSzRWUnFCa0JFOFU4WHlIRXpna3ZZV25URTVuN3RxZURBS2JWSFFpbzBCU2RxRzBHMFBIT2lCaWFobjRiRWMyUFFpNlIyc1ZQRVMwM2xxWjJkem5aU0tydnJvZ0JfaER6NGdDYXdRYndzRTBIODJycU44cGNJdnVHZHJxc2M0TUtYZnRlckFIeDdTSXlTQVUwZ0gyWUcyd1ZLOE5adDJJ?oc=5",
-      "title": "For Palestinian citizens of Israel, a historic vote born of fear and frustration",
-      "en": "For Palestinian citizens of Israel, a historic vote born of fear and frustration",
-      "outlet": "Manila Bulletin",
-      "published": "2026-10-30T10:36:50.000Z",
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOajEwb0JkS01qeVR6R1NGVDg1LUNqeEh4azAycjV5WHJpZ2pVb1h6N2FGalV3V1J3U2NuVzZSQU5vV2lVR3l0WExuTnFWZDlZZkxoZGpjSXNiMzNRM0NBWUR3VEpKTlhlZTZTNmE3TDU1a2YzaVI5MWhWckRQRWY4YTFOQ2trTkg5alVHM3Jnb29iN3RJZlhuR01Qak9WRktSY0VZMFAyNDN2czUxbDlEN1NmOWVrcWF1a0RnYzRwckEtVnppalc0djRHenZ3dHl3UzVVekdOTlA2bjdKUGxrZ3pvTUJmNzBJMHZRM1VvMHhUdlZyanIwQ2MyWjBjdFBVb1FSTWVualdDVlVYLS1ZZFZSMFBLVGQteGlGRXhkci0xSkN4SU56enZGT1lOV1EwMDl2VmYzODBEZ9IBvwJBVV95cUxPQU1vbzRlN0tHeWIydXhsV1hSbmxvUUptR0E5cDZNakoteHBBRUFpZ0hIUl9pYzZvVGlrMC1QNUJRMGlMX2NaZVBFbTR3NmdwRHZoMFhManFEeHczVTZHMGhWaHZQTWg0ZzM2ZE5MbEl1c2U1RWxCMVdXUWdNQk9PZDMtSE5KQ3h6amJhdGY0emx3LUpVY1lndGFOZjZOTW9PbTNnc0ZkS3Fud1lNOHJFTWV6U2VZUTBNRmg2OHRqSWJFanpEX0o2RS1neTE1LVZQU0tKN0I4ZFNiQUR3ZC1IdWlNMWxhdFdwVkRfbGZvQXA3MlhLMHRQeUhTTmxXQzFkaGYtdWVJVE14U0hRbjItcVVUSWVCMkp6RFpkTEVNVllqZnBFODI0dmh6RW9odl9HR2Y3TTNXSkZZYnF5OTQ0?oc=5",
+      "title": "الخليل.. الاحتلال يفجر منزلي منفذي عملية فرش الهوى وينكل بعشرات الفلسطينيين",
+      "en": "Hebron.. occupation blows up homes of the perpetrators of the Farsh al-Hawa operation and harasses dozens of Palestinians",
+      "outlet": "الجزيرة نت",
+      "published": "2026-10-30T14:50:17.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
-      "from": "ID",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeWphc0o2RHZqdHY0MTVpeWFVSmp3eGY1azdyUjVUOXRMQ2Foa1NDLThvSnhTeld0ODdJcm1TTkNrMk50Q05VUS1ITEh3RFU5N3VsYWVTbzNjSG5kcXpMOFhLZ1R4Z3MweTRRRTFBbl90eDM1c2JWNjRYcjVLSkppQllvYlNNaXV1dlRnU096eFhXbUdYaGd5SU5pekROaFlGREpkb3AydHkzLXotMUFDZGVfblJpdVFleUJ3QmhsNNIBxAFBVV95cUxOejBMVWw5M1dTX2ZfT3ZJQnJUMWY2YlBwVy1wOEtSV0NuY1N4a2NUVEN6WV9KMEI1TEMwSzhnOGRsUkp3dXM3ZV92cGVLOU9ZZXpQWEJDRF9XRjhKMVNwTGNaLWowbmo0S1o4TUYtYXZ6TlhQZzZDMFl6VUNtQUQzQVhORkY3cU5pMWEzemo2U1M0aGZSODVxU0NmRUF5eHhYT25HdUNoa3c0aFprU3luakM4MHZLV1lYVFB6dGo5Zm1aT2pq?oc=5",
-      "title": "Presiden Palestina Harap Pemerintah Baru Israel Lanjutkan Perundingan Damai",
-      "en": "Palestinian President Hopes New Israeli Government Will Continue Peace Negotiations",
-      "outlet": "detikNews",
-      "published": "2026-10-30T08:03:57.000Z",
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVS1mbnZDR3A3eWdPWjAyXzByM1pvc3BWRUhNcHUzY09jWXpObFNKckhleUFGckNtbUhQdU9CYXFUOTlzc2tFQTB6U25EdDJ1bFpDTC1aaTVIN1Q1N2ZhYkZxWGhhQjJTQnFPWC1Jc2V2VllDTVF4Z1ZDVDdzTFlUaDJ3?oc=5",
+      "title": "צה\"ל: מחבל חמאס שהיה מעורב בהחזקת 12 חטופים חוסל בתקיפה ברצועה",
+      "en": "IDF: Hamas terrorist involved in holding 12 hostages killed in strike in the Strip",
+      "outlet": "כאן 11",
+      "published": "2026-10-30T14:32:35.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "TR",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPclZWSDVrVGJtaTB5enpqTmxUbjZnNzk3czFybkFSc0lad3IwU1VIcDZxa2JNbk5jM2d6TGh6aEtZenZ0MlVvQ0ktVFVCWXI5bGF2b2RuWXo4MWlCU041NERFM3BLRkV2a0MwY3ZGcTdjclhPa2xlRW8wQ0VRX0NzWlFrV0ZmMGxEWGExd0llNmt1NFRMd2Y4MWxHQ3h2QVdBbHNiem92clVhazc5bVo2QXNvaUtHWGJyS3ZsX1JDdU5FblhIbE5FbUJ1SzhTOTRtYVE?oc=5",
+      "title": "Bakü'den Ankara’ya kritik soru: Filistinli lider Güney Kıbrıs'ı neden 29 Ekim'de ziyaret etti?",
+      "en": "Critical question from Baku to Ankara: Why did the Palestinian leader visit Southern Cyprus on October 29?",
+      "outlet": "Cumhuriyet",
+      "published": "2026-10-30T14:18:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBYd2ZXb1lZYnRodW8xakJCdHBaSzVhYy1xWEpKcXJTOFlwU2lmamc4ckRCUjF3T3dURVNXV2dDUDBaOUp3RE1ub3VPU1lFaWlVcXRsOXNHeUFmeTFPcEdZ?oc=5",
+      "title": "مصرع دبلوماسية أوروبية بحادث دهس في القدس المحتلة.. و«خارجية إسرائيل»: «كانت صديقة حقيقية»",
+      "en": "European diplomat killed in a hit-and-run in occupied Jerusalem... Israeli Foreign Ministry: \"she was a true friend\"",
+      "outlet": "المصري اليوم",
+      "published": "2026-10-30T11:14:00.000Z",
       "outlets": 5,
       "trending": false
     }

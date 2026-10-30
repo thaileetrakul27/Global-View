@@ -417,7 +417,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-30T00:20:11.381Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -465,10 +465,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-30T13:30:58.872Z",
     "directSearched": "2026-10-30T13:30:58.872Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-30T13:30:58.872Z"
+    "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -564,7 +564,7 @@
     ],
     "sources": [],
     "membersHash": "eonet,gdacs|IN#d1e12953",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -635,7 +635,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2
@@ -651,7 +651,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -709,7 +709,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2
@@ -1015,7 +1015,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -1331,67 +1331,54 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-10-29T13:38:14.413Z",
+    "at": "2026-10-30T19:53:42.295Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.0 earthquake struck 191 km ENE of Nagqu, Xizang (Tibet), China, on 22 October 2026. Baqen County was the epicentre area. Reports cite 16 deaths and 76 injured, with more than 12,000 residents evacuated. Rescue and relief work was still continuing on 27 October, and aftershocks were still being logged.",
+    "summary": "A magnitude 7.0 earthquake struck Xizang (Tibet) Autonomous Region, China, on 22 October 2026 at 22:33 local time (14:33 UTC), about 191 km ENE of Nagqu. Wikipedia reports at least 16 deaths and 76 injured. Search and rescue and relocation of residents were under way on 23 October, the date of the latest source found.",
     "ongoing": true,
     "places": [
       {
         "name": "Baqen County",
-        "admin": "Nagqu City, Xizang (Tibet) Autonomous Region",
+        "admin": "Xizang Autonomous Region",
         "country": "CN",
         "kind": "district",
-        "impact": "Epicentre area; homes collapsed, livestock sheds damaged"
+        "impact": "Epicentre; firefighters searching for survivors"
       },
       {
-        "name": "Maru Township",
-        "admin": "Baqen County",
+        "name": "Nagqu",
+        "admin": "Xizang Autonomous Region",
         "country": "CN",
-        "kind": "town",
-        "impact": "Quake-hit village area; rescue and relocation work"
-      },
-      {
-        "name": "Gangqie Township",
-        "admin": "Baqen County",
-        "country": "CN",
-        "kind": "town",
-        "impact": "One of the hardest-hit areas; 17 temporary shelters"
+        "kind": "city",
+        "impact": "Named as the wider area the quake struck"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "16",
-        "sourceName": "nation.com.pk",
-        "sourceUrl": "https://www.nation.com.pk/23-Oct-2026/7-0-magnitude-earthquake-kills-16-tibet-s-nagqu-city"
+        "value": "at least 16",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake"
       },
       {
         "label": "Injured",
         "value": "76",
-        "sourceName": "abc.net.au",
-        "sourceUrl": "https://www.abc.net.au/news/2026-10-23/magnitude-7-earthquake-hits-chinas-tibet-region/107299584"
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake"
       },
       {
-        "label": "Evacuated or displaced",
-        "value": "more than 12,000 residents",
-        "sourceName": "globaltimes.cn",
-        "sourceUrl": "https://www.globaltimes.cn/page/202610/1372929.shtml"
-      },
-      {
-        "label": "Houses",
-        "value": "339 homes collapsed or damaged, plus 20 livestock sheds",
-        "sourceName": "outlookindia.com",
-        "sourceUrl": "https://www.outlookindia.com/international/tibet-earthquake-atleast-16-killed-54-injured-as-339-homes-collapse-in-nagqu"
+        "label": "Relief items allocated",
+        "value": "3,800",
+        "sourceName": "ecns.cn",
+        "sourceUrl": "http://www.ecns.cn/cns-wire/2026-10-23/detail-ihfmiwhm0741170.shtml"
       }
     ],
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-30T13:30:58.872Z",
-    "donationSearched": "2026-10-29T13:38:14.413Z",
-    "directSearched": "2026-10-29T13:38:14.413Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-30T19:53:42.295Z",
+    "directSearched": "2026-10-30T19:53:42.295Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-30T19:53:42.295Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -4001,6 +3988,123 @@
     "membersHash": "gdacs|GT#aaa6dfac",
     "seen": "2026-10-25T13:34:13.512Z"
   },
+  "gdacs-flood-fl-1104263": {
+    "at": "2026-10-30T19:53:42.295Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Flash floods hit eastern and northern Syria from 27 October 2026, mainly in Raqqa, Deir ez-Zor, Aleppo, Hasakah, Hama, Homs and Latakia provinces. Authorities reported seven deaths, including five children, and people missing. Search operations continued on 30 October, and forecasters expected more rain and storms through 31 October.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "al-Salmani Bridge",
+        "admin": "Raqqa",
+        "country": "SY",
+        "kind": "site",
+        "impact": "collapsed, shutting road to Aleppo"
+      },
+      {
+        "name": "Raqqa",
+        "country": "SY",
+        "kind": "region",
+        "impact": "deaths in rural areas, bridges unusable"
+      },
+      {
+        "name": "Deir ez-Zor",
+        "country": "SY",
+        "kind": "region",
+        "impact": "deaths, fiber-optic lines damaged, culverts collapsed"
+      },
+      {
+        "name": "Aleppo",
+        "country": "SY",
+        "kind": "region",
+        "impact": "camps flooded, people missing"
+      },
+      {
+        "name": "Hasakah",
+        "country": "SY",
+        "kind": "region",
+        "impact": "classes suspended"
+      },
+      {
+        "name": "Hama",
+        "country": "SY",
+        "kind": "region",
+        "impact": "roads, bridges, public facilities damaged"
+      },
+      {
+        "name": "Homs",
+        "country": "SY",
+        "kind": "region",
+        "impact": "roads, bridges, public facilities damaged"
+      },
+      {
+        "name": "Latakia",
+        "country": "SY",
+        "kind": "region",
+        "impact": "roads, bridges, public facilities damaged"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "7",
+        "sourceName": "yahoo.com",
+        "sourceUrl": "https://www.yahoo.com/news/articles/five-children-among-seven-dead-185132334.html"
+      },
+      {
+        "label": "Missing",
+        "value": "5",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261030/5664c6871ae4449da3eb740f65453f84/c.html"
+      },
+      {
+        "label": "Families evacuated",
+        "value": "about 375",
+        "sourceName": "arabnews.com",
+        "sourceUrl": "https://www.arabnews.com/middle-east/flash-floods-sweep-6-syrian-provinces-forcing-families-from-camps-3008862"
+      },
+      {
+        "label": "Rescued",
+        "value": "15",
+        "sourceName": "syrianobserver.com",
+        "sourceUrl": "https://syrianobserver.com/society/deadly-flash-floods-paralyze-eastern-syria-15-rescued-hundreds-evacuated-across-six-provinces.html"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "yahoo.com",
+        "url": "https://www.yahoo.com/news/articles/five-children-among-seven-dead-185132334.html",
+        "title": "Five children among seven dead in eastern Syria floods"
+      },
+      {
+        "name": "hawarnews.com",
+        "url": "https://hawarnews.com/en/floods-in-syria-kill-2-people-put-7-bridges-roads-out-of-service",
+        "title": "Floods in Syria kill 2 people, put 7 bridges, roads out of service -ANHA"
+      },
+      {
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/10/30/flash-floods-kills-five-in-syria",
+        "title": "Flash floods kill five in Syria"
+      },
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261030/5664c6871ae4449da3eb740f65453f84/c.html",
+        "title": "5 killed, 5 missing as flash floods hit several Syrian provinces-Xinhua"
+      },
+      {
+        "name": "syrianobserver.com",
+        "url": "https://syrianobserver.com/society/deadly-flash-floods-paralyze-eastern-syria-15-rescued-hundreds-evacuated-across-six-provinces.html",
+        "title": "Deadly Flash Floods Paralyze Eastern Syria: 15 Rescued, Hundreds Evacuated Across Six Provinces - The Syrian Observer"
+      }
+    ],
+    "membersHash": "gdacs,news|SY#82ae10ac",
+    "donationSearched": "2026-10-30T19:53:42.295Z",
+    "directSearched": "2026-10-30T19:53:42.295Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-30T19:53:42.295Z"
+  },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
     "model": "claude-haiku-5-5",
@@ -4131,7 +4235,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2
@@ -4195,7 +4299,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -5709,7 +5813,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
@@ -5796,7 +5900,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -6304,7 +6408,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2,
@@ -6505,7 +6609,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
@@ -6691,7 +6795,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2
@@ -7193,7 +7297,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2,
@@ -10137,6 +10241,148 @@
     "membersHash": "news|PG#3d7e2b86",
     "seen": "2026-10-23T05:22:44.752Z"
   },
+  "usgs-earthquake-us6000u1cf": {
+    "at": "2026-10-30T19:53:42.295Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A magnitude 7.7 (USGS) earthquake struck near Tonosí, Panama, on 9 October 2026 at 17:56 UTC; SINAPROC put it at 7.5. The epicentre was 39 km NW of Tonosí. Damage included collapsed homes and a hotel, landslides in Herrera, and cut-off communities. The M6.0 feed event on 10 October was an aftershock. As of 27 October, shelters and damage evaluations were still running.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Tonosí",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "hotel and several homes collapsed"
+      },
+      {
+        "name": "Herrera",
+        "country": "PA",
+        "kind": "region",
+        "impact": "32 landslides, 11 communities cut off"
+      },
+      {
+        "name": "Macaracas",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "district",
+        "impact": "deaths reported in Wikipedia notes"
+      },
+      {
+        "name": "Santiago de Veraguas",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "city",
+        "impact": "deaths reported in Wikipedia notes"
+      },
+      {
+        "name": "Soná",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "placed on yellow alert"
+      },
+      {
+        "name": "Mariato",
+        "admin": "Veraguas",
+        "country": "PA",
+        "kind": "district",
+        "impact": "placed on yellow alert"
+      },
+      {
+        "name": "Penonomé",
+        "admin": "Coclé",
+        "country": "PA",
+        "kind": "town",
+        "impact": "evacuations supported by Red Cross"
+      },
+      {
+        "name": "La Villa",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "evacuations supported by Red Cross"
+      },
+      {
+        "name": "Las Tablas",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "evacuations supported by Red Cross"
+      },
+      {
+        "name": "Pedasí",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "evacuations supported by Red Cross"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "one",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
+      },
+      {
+        "label": "People affected",
+        "value": "11,527 people",
+        "sourceName": "elcapitalfinanciero.com",
+        "sourceUrl": "https://elcapitalfinanciero.com/sinaproc-balance-sismo-tonosi-afectados-viviendas-danadas/"
+      },
+      {
+        "label": "Homes affected",
+        "value": "3,390 homes",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-11/"
+      },
+      {
+        "label": "Homes totally lost",
+        "value": "727 homes",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-11/"
+      },
+      {
+        "label": "Displaced",
+        "value": "2,841 people",
+        "sourceName": "elcapitalfinanciero.com",
+        "sourceUrl": "https://elcapitalfinanciero.com/sinaproc-balance-sismo-tonosi-afectados-viviendas-danadas/"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://donate.unhcr.org/int/en/panama-earthquake",
+        "org": "UNHCR",
+        "kind": "un",
+        "note": "UNHCR appeal asking for help for families affected by the Panama earthquake.",
+        "specific": true
+      },
+      {
+        "url": "https://cruzroja.org.pa/donar/",
+        "org": "Cruz Roja Panameña (Red Cross Society of Panama)",
+        "kind": "society",
+        "note": "General donation page for the society's work; does not mention the earthquake.",
+        "specific": false
+      }
+    ],
+    "sources": [],
+    "membersHash": "usgs|PA#9311af72",
+    "donationSearched": "2026-10-30T19:53:42.295Z",
+    "directSearched": "2026-10-30T19:53:42.295Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://quenarafoundation.com/en/donation/panama-earthquake-relief/",
+        "org": "Quenara Foundation",
+        "kind": "local",
+        "note": "Shelter, water and food for Azuero families who cannot go home.",
+        "title": "Panama Earthquake Relief",
+        "published": "2026-10-22T19:53:42.295Z"
+      }
+    ],
+    "seen": "2026-10-30T19:53:42.295Z"
+  },
   "usgs-earthquake-us6000u2y1": {
     "at": "2026-10-29T06:19:20.602Z",
     "model": "claude-haiku-5-5",
@@ -10215,7 +10461,7 @@
       }
     ],
     "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-10-30T13:30:58.872Z",
+    "seen": "2026-10-30T19:53:42.295Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2

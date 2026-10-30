@@ -2,25 +2,123 @@
   "code": "ML",
   "name": "Mali",
   "kind": "world",
-  "updated": "2026-10-30T13:30:58.872Z",
+  "updated": "2026-10-30T19:53:42.295Z",
   "source": {
-    "name": "Bing News and Google News",
+    "name": "Google News",
     "edition": "search",
-    "url": "https://www.bing.com/news/search?q=Mali&format=rss&cc=ML&setlang=fr"
+    "url": "https://news.google.com/rss/search?q=%22Mali%22+when%3A3d&hl=en-US&gl=US&ceid=US%3Aen"
   },
   "articles": [
     {
-      "title": "Martian meteorite found in Mali dates back 4.1 billion years: Study",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcGNHTGVoTmwwMVlHTzQ2ZjROSU9OT2liQlF5RTVtNEpfakNMR0JNZXhfRThRWkJOVEZVaGlMVjdMU0JELU1jMEgzRUdPYk91WTR1SEtpS2pCQU1DNUJVUDJaY3VQRjA0MmNtdXZvUGhkNGczSjFLSnRNT1JsUFdfYkpaVjlkZkJYRmhpd2hBaWhEbVo3OGhfOG5Hdy1PNTFlRXFkbXRn?oc=5",
-      "outlet": "Yeni Şafak English",
-      "outletUrl": "https://en.yenisafak.com",
-      "published": "2026-10-30T11:37:50.000Z",
-      "outlets": 5,
+      "title": "EXCLUSIVE: 12 States, One Missing Corridor: How ECOWAS's Anti-Trafficking Shield Lost Niger, Mali and Burkina Faso While the Libya Route Ran On",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPaWUzZlJHNmdsZ2VHalBhbDhOZ1pCeVhBQXA1NF80cG9Lc3N1S2cwczFOUk93b2gzUmd1dkpyenRfWjZmbGpHM2NycjY0UGFPV3JOLWNHVVVUcVdIa09BX3V0NXhwT3lGNFBaUXVFOWNrQXF2Nkt1QUNSSldiUE9xVWJMWTZpYzBuam1pR19mVmUtck9Qd1E1R2RBZVZCT3dhemgtVmFtcTJ4YkZDdk1IXzMtbTlKdXVweXNLdnUzWG5fM3NwRC1xUGhMT01pdFN3cjRNYkh3V1hFR01YWUpMUlZhWGtQVXYwZWxpMVdqdjhXMHo2R19qTUZHWjFic0dRdXlocUR3?oc=5",
+      "outlet": "Secret Reporters",
+      "outletUrl": "https://secretsreporter.com",
+      "published": "2026-10-30T19:04:28.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "Martian meteorite found in Mali dates back 4.1 billion years: Study",
+      "en": "EXCLUSIVE: 12 States, One Missing Corridor: How ECOWAS's Anti-Trafficking Shield Lost Niger, Mali and Burkina Faso While the Libya Route Ran On",
+      "about": [
+        "NE",
+        "ML",
+        "BF",
+        "LY"
+      ]
+    },
+    {
+      "title": "Martian meteorite found in Mali is 4.1 billion years old",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE14LWF6OUVsaE1kczNSQ2cydnVyR1ZFNHNwTWJLWDZTZW1lZS1INDg3UUNmRFRRbnlEZGx1Y01iYVdtbkR1TDZWRk5RNUpEQUJraWdVVlZqTm8xNnZHQWVkRDd2Um4?oc=5",
+      "outlet": "TRT Afrika",
+      "outletUrl": "https://www.trtafrika.com",
+      "published": "2026-10-30T12:20:02.000Z",
+      "outlets": 7,
+      "trending": false,
+      "en": "Martian meteorite found in Mali is 4.1 billion years old",
       "about": [
         "ML"
       ]
+    },
+    {
+      "title": "Human Rights Watch Accuses Mali’s Army and Rebels of Human Rights Violations",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMXkzU2g3bTNCbGNDLURGcUR6OEtDcU8tbUhGZzlIMnNVLUlERWEzWURLV3hoMWpiNjFOalgyQ1pWcGJJdmtNbGxHOGgtcTFCS3hIeFpmWTZ1bmV2alR5YWxvV2VtcURFWXM4bzVtNktocjFSaE1oTGM2SU9Salc2QTd6NWpCZ3JTeEFxb0JzU1VOYjlVbXc2QV96ZmlvOWdnSWFBMWVfaFpVem8?oc=5",
+      "outlet": "https://globalpost.com/",
+      "outletUrl": "https://globalpost.com",
+      "published": "2026-10-30T18:30:36.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Human Rights Watch Accuses Mali’s Army and Rebels of Human Rights Violations",
+      "about": [
+        "ML"
+      ]
+    },
+    {
+      "title": "Counterterrorism force arrests cell accused of kidnapping foreign nationals in Mali and Niger",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVTh0aXRMQ0M4dUgwODNDWUdpYzJzb0x6TUZFMEtkQmc0UjRBUldyWDVQNUZ2TEVtRXJiOFVxYUdxMlBLRlJSeUdkUkFrLURRcHdyYzEycE12Y19KaWhFUmFqV2VqRjBWMm42dEMwVm9WSXFYZzFFbUpoS2Z4U3BiQjlibU05dDR6RkpsWmpOcFJsSS12VUdPdUduYVI4Z0ZiZzdodmtXS1RrQmxSMlhHZzJpU1RMSmg4QXlzNQ?oc=5",
+      "outlet": "The Libya Observer",
+      "outletUrl": "https://libyaobserver.ly",
+      "published": "2026-10-30T18:08:41.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Counterterrorism force arrests cell accused of kidnapping foreign nationals in Mali and Niger",
+      "about": [
+        "LY",
+        "ML",
+        "NE"
+      ]
+    },
+    {
+      "title": "Conversation with Interim President of the Republic of Mali Assimi Goita",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBzQVpoLXNFa2ZuOFE4R0V2TVpYZ3o1VjdZSFhDbzRIQ3lha1JvOGd1LS1kWWEtcVEwemNzb3FmS2xpVXZqWGNvVzNrbDZfeGRDckEtSTVxNHZzMHBv?oc=5",
+      "outlet": "Президент России",
+      "outletUrl": "http://en.kremlin.ru",
+      "published": "2026-10-30T17:32:15.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Conversation with Interim President of the Republic of Mali Assimi Goita",
+      "about": [
+        "ML"
+      ]
+    },
+    {
+      "title": "How Did a Texas Uber Driver End Up in Mali After a U.S. Judge Barred His Deportation There?",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNdndMaFpCTTEybFE3WTVFUmpXS0N4SE16TXd2M2MzazdzNHlncGNNMU5nU1FHLWxTX3JjTEFZT1hkdVB6WXdFclZEUkpBZ0llS3FCb1VWRlBsOVM5a0Rnams0eDRuWlFMQXAzZlowSDAtZFF6X3BUbnAxZ2FNNDdkY080VHdPY2IzdXZFVDJLSmU1WEY4UkNmZlBlRE1Odm1YNXhCaTZCMHYzdlhUbkpjTEpwRjV2b3lEZ0l5U2VIckQ4QXdpUFZBVHF0cnFQYlk3X1FkcXNn?oc=5",
+      "outlet": "Thought Catalog",
+      "outletUrl": "https://thoughtcatalog.com",
+      "published": "2026-10-30T15:04:44.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "How Did a Texas Uber Driver End Up in Mali After a U.S. Judge Barred His Deportation There?",
+      "about": [
+        "US",
+        "ML"
+      ]
+    },
+    {
+      "title": "President El-Sisi meets with Al-Burhan, Kenyan president, and head of Mali’s transitional military council",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdTdwaEZSWGRScW1LY2tiNzQtZnREbmNOeFhPZDk4ZEFOZDVmM3VIRTNadXAtVzZCNTN2S0JndmhPb216a256NDliTzVSM0RxOUwwU3I1eW5CcGVnb2RIaG5Oa3BhLURfUFR6NVBjcGlpTk9LR0RQZ1BYZ19yT1pEeThIQ01USmxhLWVfOVFRNlZidVhlbnlFajBKSHY5bnE1Z2NkVV9n?oc=5",
+      "outlet": "Egypt Today",
+      "outletUrl": "https://www.egypttoday.com",
+      "published": "2026-10-30T08:23:00.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "President El-Sisi meets with Al-Burhan, Kenyan president, and head of Mali’s transitional military council",
+      "about": [
+        "EG",
+        "SD",
+        "KE",
+        "ML"
+      ]
+    },
+    {
+      "title": "LAWYER IVAN NINIĆ: “Siniša Mali’s Most Loyal Associate Has Resigned to Avoid Prison,” Calls for His Passport to Be Seized Immediately!",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWTFDRmZSaGx4V2ZXcF9nSGFtOU9GRFV5NVlxX1ZRelRNTGpuckRWeUJuVmxkdWx6RFNiZ2hsVmU0RkN0dG5vUmR3c2RsQ2tRMWdvV0prVmdTUmRnTmpRZWw1R3Rjd2RfbTZyc2dfdFNOeHltWFJycjRYRDQ3NGs2YUk2OTZ1cWE5clFMNlRNaml6UXV6TkNDdUtsV2t4X0t1dEhDS0txZXlOVXRkSWctRGRRbWhpNDB4X2luUDVwbzFMYXpoNndZU1VoOGoyMnVnRFVZRFJRc19kM2p6U3VQbnZsc3htbkxPYnZFRmQ4QQ?oc=5",
+      "outlet": "Serbiantimes.info",
+      "outletUrl": "https://serbiantimes.info",
+      "published": "2026-10-30T14:27:30.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "LAWYER IVAN NINIĆ: “Siniša Mali’s Most Loyal Associate Has Resigned to Avoid Prison,” Calls for His Passport to Be Seized Immediately!",
+      "about": []
     },
     {
       "title": "Mali Obomsawin – Automatic (Album Review)",
@@ -38,7 +136,7 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQi03RWFUTGkyaFBGdjJIeVVhc19OWHBUcnRKWUE1ZERfdEh0eUtTWnd3b04xMVJrVFdJUXp0NndYWk5Cd2VULWRiRThUVDBqN1Q2Z1JkNWYweTJrLUE3RXVPbVo5QTI2Nnp0VTUzdGVvTUpjdUw0V0ZQU1AtWTJmazZOT2pTYTVhMmVkdkFVSkxrR19IVTJDSDNDYUFmV0p0Mnc3Yg?oc=5",
       "outlet": "EEAS",
       "outletUrl": "https://www.eeas.europa.eu",
-      "published": "2026-10-30T11:37:30.000Z",
+      "published": "2026-10-30T11:44:55.000Z",
       "outlets": 1,
       "trending": false,
       "en": "Women, Peace and Security: EUCAP Reaffirms Its Commitment",
@@ -59,7 +157,7 @@
       ]
     },
     {
-      "title": "Sakaja Anakula Mali Safi! His Tanzanian side chick shares another photo parading her voluptuous figure - Sends a cryptic message to her critics (PHOTO)",
+      "title": "SAKAJA Anakula Mali Safi! His Tanzanian side chick shares another photo parading her voluptuous figure - Sends a cryptic message to her critics (PHOTO)",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWGx2X3N1MmtBdUE3all6N25oY0xBTFFBVW5penB1a2V3dzFDTFRpTnVBTVhCZW1Ic1FtekRFbFFJR2o4ZlB1dTU2WEREeWh1TDVSdDhMeHlTSElwcVlYVTdtTVRGTVQxQ0dVdFh4bzAwR3FVUE5UVUNaTzh4MzAxVWhOSDluUQ?oc=5",
       "outlet": "DAILY POST",
       "outletUrl": "https://www.kenyan-post.com",
@@ -70,15 +168,16 @@
       "about": []
     },
     {
-      "title": "Mali meteorite formed more than 4.1 billion years ago, study finds",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOeldjVG1fcFkzSmVCRlBMd1N3TnBveW50eWxqX3VuRDRWMm9nRGJiQWRaNjZEYy1QYU94TjRLNHU0djIyZV9wTHBYR2hDeDV1UXgyWkVDTTFLd2xCNE1rOXUtM3FNdEFHX3dpbVJ0blJsVVlDYTZOQTdwTllXY1IzU2Uybzg4cmNobHp5bVdRallMT1lNUm9MeVhvd3lwSjBaV1E?oc=5",
-      "outlet": "Operativ Məlumat Mərkəzi",
-      "outletUrl": "https://operativmm.az",
-      "published": "2026-10-30T04:24:39.000Z",
-      "outlets": 2,
+      "title": "Russian State firm to create geological map of Mali, build mining data system",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMEtCbWVpcHFsZGN2MkV4OWVOQ2NsdEg0eGFrWkpTVFlmMGR4Y1RUSUZ3SmNpNWtadlh1YTlPSEtLY2xmYWl0X1ZvbndWYTdvVFpiR09ydEFwcUdqczNWc1J5ZUxqdk9aWWlGOU1DTngxOVpka05pSkZBRnUtS1pnZkFOR25Rb0ZvbUs0dEJUM3FWOENtVHlsYUxCZUdkeVZyclNocXRoSmY2NHJhQU1MLXZYY0Fzd2Z5Mml4VW00VkM1MDZkTWVxQg?oc=5",
+      "outlet": "Engineering News",
+      "outletUrl": "https://www.engineeringnews.co.za",
+      "published": "2026-10-29T07:56:00.000Z",
+      "outlets": 3,
       "trending": false,
-      "en": "Mali meteorite formed more than 4.1 billion years ago, study finds",
+      "en": "Russian State firm to create geological map of Mali, build mining data system",
       "about": [
+        "RU",
         "ML"
       ]
     },
@@ -91,115 +190,6 @@
       "outlets": 1,
       "trending": false,
       "en": "First Lithium Nears Mali Licence Renewals Ahead of Maiden Resource",
-      "about": [
-        "ML"
-      ]
-    },
-    {
-      "title": "Mali : Un document pour contrer les discours extrémistes dans l'espace religieux",
-      "url": "https://www.koaci.com/index.php/article/2026/10/30/mali/politique/mali-un-document-pour-contrer-les-discours-extremistes-dans-lespace-religieux_202119.html",
-      "outlet": "KOACI",
-      "outletUrl": null,
-      "published": "2026-10-30T02:04:00.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "Mali: A document to counter extremist discourse in the religious space",
-      "about": [
-        "ML"
-      ]
-    },
-    {
-      "title": "Du Mali au Niger, la disparition secrète devient-elle une méthode de gouvernement dans l’AES ?",
-      "url": "https://www.afrik.com/du-mali-au-niger-la-disparition-secrete-devient-elle-une-methode-de-gouvernement-dans-l-aes",
-      "outlet": "Afrik.com",
-      "outletUrl": null,
-      "published": "2026-10-30T05:13:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "From Mali to Niger, is secret disappearance becoming a method of government in the AES?",
-      "about": [
-        "ML",
-        "NE"
-      ]
-    },
-    {
-      "title": "Mali : frappes ciblées de l’armée contre des logistiques terroristes",
-      "url": "https://www.msn.com/fr-xl/actualite/other/mali-frappes-cibl%C3%A9es-de-l-arm%C3%A9e-contre-des-logistiques-terroristes/ar-AA2gptBZ",
-      "outlet": "Agence de Presse Africaine via MSN",
-      "outletUrl": null,
-      "published": "2026-10-30T05:10:25.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Mali: targeted strikes by the army against terrorist logistics",
-      "about": [
-        "ML"
-      ]
-    },
-    {
-      "title": "MALI-Ta Minute: Balde-baldeng Duterte-Marcos disinfo, kumalat ngayong Oktubre",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQ0RPY2E0SUp2UmxvQ0hhRWNPVmYtRkp5dmNUbE1FUW8zMWowUVoyNVo5T3BnMExRam80Z0sxT3Q2cTJFblIyYXprb1owWjU0Q3hZRENoRXZBWDRmVExIN3NyQ0RSMjFfT2FVSmZGNUdZSTM5a2RRTDc4dk54MUozZjJVYi1Gai03YXd6VHg0SnViMHU4RGRuWndDVHUxb0I2Q0g1Tng2ZnhGdw?oc=5",
-      "outlet": "VERA Files",
-      "outletUrl": "https://verafiles.org",
-      "published": "2026-10-30T05:02:51.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "MALI-Ta Minute: Balde-baldeng Duterte-Marcos disinfo, spreading this October",
-      "about": [
-        "ML"
-      ]
-    },
-    {
-      "title": "Souveraineté numérique : le Mali partage son expérience au Togo",
-      "url": "https://malijet.com/tech/312592-souverainete-numerique-le-mali-partage-son-experience-au-t.html",
-      "outlet": "Malijet",
-      "outletUrl": null,
-      "published": "2026-10-30T04:53:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Digital sovereignty: Mali shares its experience with Togo",
-      "about": [
-        "ML",
-        "TG"
-      ]
-    },
-    {
-      "title": "Are ASX 200 Gold Miner Resolute's Mali Troubles Finally Easing (ASX:RSG)?",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWVhHUzNXbVNEdXFjeFNMTUxlc0dlUzRSTjI0SHh2RS1oZzFhZERFblRZQUFTV01mREE1Vk5Ga0tPT0l2bjEyV1BxM05xS3NjdWNJZDh6UWQtN1dnZFlYWkV5UU00SDl6RWkzTFkxT1BNR3daaUZtYkFza2s5YW9IdDUwZ0lIVWJXLURyZVRUdGdVNDhyVk5CRXdhTkNyaWdGVHFwNU9VaW1PUkdH?oc=5",
-      "outlet": "Kalkine Media",
-      "outletUrl": "https://kalkinemedia.com",
-      "published": "2026-10-30T04:43:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Are ASX 200 Gold Miner Resolute's Mali Troubles Finally Easing (ASX:RSG)?",
-      "about": [
-        "ML"
-      ]
-    },
-    {
-      "title": "President El-Sisi Meets Leaders of Sudan, Kenya, and Mali",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNQWs1NnZVSExrQzZadUhWR0Rxc05DUkQybVk2UzZZOXl1OU9yeGJ2aUYyRG1xSE10VEJwTWxncmdxNTdGYlRHbVVuOGs2QS1HV08tYzUtN3Y3VU1IdG9jQ3ZiZFhJbkFkYTd2aTd6VG1JUGhZd2ctempDR1hpQklYaFpFd0E5c3ZMOC1VU1dVUDg1OXZ6QzBVMUhZVDlzWGpneDQwbkRSYXFRaFpPNTZKeWt4MVlHWWxQTjN3bllkdGRVNXVnSW51NWV2SHFNNHAyMmJyM2lpYlk0cmloTjNzQnpMaG9fZVVyVTFUeVRIMV8zSDlGOFBZVmRDUjUxYV9kWW1xVw?oc=5",
-      "outlet": "الموقع الرسمي لرئاسة الجمهورية",
-      "outletUrl": "https://www.presidency.eg",
-      "published": "2026-10-29T21:59:00.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "President El-Sisi Meets Leaders of Sudan, Kenya, and Mali",
-      "about": [
-        "EG",
-        "SD",
-        "KE",
-        "ML"
-      ]
-    },
-    {
-      "title": "Critic of Mali’s Junta Forcibly Disappeared Six Months On",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaWxKVWFjS0cyVWZ2dnUwV2JPdS1DSHEtaUVfNVBoWGFpZFNYRU5fTGFOQW5QaktvZkFxdFhMeVJwejJ2MXZ5TVNwY0ZYXzlGdGh2SFlWUHM4WHRDT1p4TmNCb3BiQTRGaWpBdk8ySFY3NE9HVkp0MVNaTzc4SnFYaDI1YTR6Rkh5MzFjN0plR1NGSUhMcWFJ?oc=5",
-      "outlet": "Human Rights Watch",
-      "outletUrl": "https://www.hrw.org",
-      "published": "2026-10-30T04:00:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Critic of Mali's Junta Forcibly Disappeared Six Months On",
       "about": [
         "ML"
       ]
@@ -218,14 +208,54 @@
       ]
     },
     {
-      "title": "Mali : un mort et 35 blessés dans le renversement d’un autocar sur l’axe Kati-Samè",
-      "url": "https://www.msn.com/fr-xl/actualite/other/mali-un-mort-et-35-bless%C3%A9s-dans-le-renversement-d-un-autocar-sur-l-axe-kati-sam%C3%A8/ar-AA2goIok",
-      "outlet": "Journal du Niger via MSN",
-      "outletUrl": null,
-      "published": "2026-10-30T02:16:41.000Z",
+      "title": "DHS Warned ’60 Minutes’ Weeks Ahead of Segment That Malian Man Claimed to Be Gay to Avoid Deportation",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRmFuN0QtcnhNVXEyZjczMGxkWkwyM3dmU0J6Uk1JWEh4M21Dck5ZeXRocW1uM2MxV1F5N19hSFFIMHpCMDF4ejVTejVUTThuVHVaQVZJTDBCLXoweW9NS3RQUldFYklBb3FWMm5oUkhRd0Z1dWVZTWVQSlZLVG80X3Vrb1dYSWdDazlzNDhKVnVtcnVDTXo2eGxlTWRjSWVac3E0c2F3ODZLOHRXUGhoTlNkdkJUWGswZUFoZE1tclJmNzd4WkIxbQ?oc=5",
+      "outlet": "nationalenquirer.com",
+      "outletUrl": "https://nationalenquirer.com",
+      "published": "2026-10-29T20:35:27.000Z",
+      "outlets": 2,
+      "trending": false,
+      "en": "DHS Warned ’60 Minutes’ Weeks Ahead of Segment That Malian Man Claimed to Be Gay to Avoid Deportation",
+      "about": [
+        "US",
+        "ML"
+      ]
+    },
+    {
+      "title": "MALI-Ta Minute: Balde-baldeng Duterte-Marcos disinfo, kumalat ngayong Oktubre",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQ0RPY2E0SUp2UmxvQ0hhRWNPVmYtRkp5dmNUbE1FUW8zMWowUVoyNVo5T3BnMExRam80Z0sxT3Q2cTJFblIyYXprb1owWjU0Q3hZRENoRXZBWDRmVExIN3NyQ0RSMjFfT2FVSmZGNUdZSTM5a2RRTDc4dk54MUozZjJVYi1Gai03YXd6VHg0SnViMHU4RGRuWndDVHUxb0I2Q0g1Tng2ZnhGdw?oc=5",
+      "outlet": "VERA Files",
+      "outletUrl": "https://verafiles.org",
+      "published": "2026-10-30T05:02:51.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Mali: one dead and 35 injured in bus overturning on the Kati-Samè axis",
+      "en": "MALI-Ta Minute: Balde-baldeng Duterte-Marcos disinfo, spreading this October",
+      "about": [
+        "ML"
+      ]
+    },
+    {
+      "title": "Are ASX 200 Gold Miner Resolute's Mali Troubles Finally Easing (ASX:RSG)?",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWVhHUzNXbVNEdXFjeFNMTUxlc0dlUzRSTjI0SHh2RS1oZzFhZERFblRZQUFTV01mREE1Vk5Ga0tPT0l2bjEyV1BxM05xS3NjdWNJZDh6UWQtN1dnZFlYWkV5UU00SDl6RWkzTFkxT1BNR3daaUZtYkFza2s5YW9IdDUwZ0lIVWJXLURyZVRUdGdVNDhyVk5CRXdhTkNyaWdGVHFwNU9VaW1PUkdH?oc=5",
+      "outlet": "Kalkine Media",
+      "outletUrl": "https://kalkinemedia.com",
+      "published": "2026-10-30T04:43:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Are ASX 200 Gold Miner Resolute's Mali Troubles Finally Easing (ASX:RSG)?",
+      "about": [
+        "ML"
+      ]
+    },
+    {
+      "title": "Critic of Mali’s Junta Forcibly Disappeared Six Months On",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaWxKVWFjS0cyVWZ2dnUwV2JPdS1DSHEtaUVfNVBoWGFpZFNYRU5fTGFOQW5QaktvZkFxdFhMeVJwejJ2MXZ5TVNwY0ZYXzlGdGh2SFlWUHM4WHRDT1p4TmNCb3BiQTRGaWpBdk8ySFY3NE9HVkp0MVNaTzc4SnFYaDI1YTR6Rkh5MzFjN0plR1NGSUhMcWFJ?oc=5",
+      "outlet": "Human Rights Watch",
+      "outletUrl": "https://www.hrw.org",
+      "published": "2026-10-30T04:00:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Critic of Mali's Junta Forcibly Disappeared Six Months On",
       "about": [
         "ML"
       ]
@@ -239,30 +269,6 @@
       "outlets": 1,
       "trending": false,
       "en": "Mali: Call on the Malian authorities to immediately and unconditionally release Rokiatou Doumbia",
-      "about": [
-        "ML"
-      ]
-    },
-    {
-      "title": "What Changes My Practice, and What Doesn’t Yet – Mali Barbi's Takeaways from ESMO 2026",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9neWxqZzk4UTUydmhjM2o4U0VITktDQ1Z4UHBMR2JRRTFKWWtPWnZPYTM2aUw2dVlkdm11VWlQMW1zdXpZb0s2cVVqR0h1em45dmxYTXJWWkVvYTA?oc=5",
-      "outlet": "Oncodaily",
-      "outletUrl": "https://oncodaily.com",
-      "published": "2026-10-30T01:27:56.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "What Changes My Practice, and What Doesn't Yet – Mali Barbi's Takeaways from ESMO 2026",
-      "about": []
-    },
-    {
-      "title": "Mali : l’IA ouvre un nouveau front dans la lutte contre la cybercriminalité",
-      "url": "https://www.agenceecofin.com/actualites-numerique/3010-142920-mali-l-ia-ouvre-un-nouveau-front-dans-la-lutte-contre-la-cybercriminalite",
-      "outlet": "Agence Ecofin",
-      "outletUrl": null,
-      "published": "2026-10-30T01:12:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Mali: AI opens a new front in the fight against cybercrime",
       "about": [
         "ML"
       ]
