@@ -2,63 +2,267 @@
   "code": "CA",
   "name": "Canada",
   "kind": "local",
-  "updated": "2026-10-30T06:23:09.024Z",
+  "updated": "2026-10-30T13:30:58.872Z",
   "source": {
-    "name": "Google News",
+    "name": "Google News and Bing News",
     "edition": "CA:en",
     "url": "https://news.google.com/rss?hl=en-CA&gl=CA&ceid=CA%3Aen"
   },
   "articles": [
     {
-      "title": "Midterms live updates: Trump scraps another red-state rally as he shifts strategy ahead of midterms",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON2FWVkYyWndINEdkOV9wQjhGb0pyNWtrRXlYWWU5NmR5Yjc5MzR0Y3o2YU1KYUR1WHV3ZGIzcmc3azFQMEQ1eU5mSEZFeDZuODB3M29RbENiUURVZFpDR2p2WU9IZG1BQWJGa0piT1A5MkJqbG02ajhxMGVhbUlrOQ?oc=5",
-      "outlet": "CNN",
-      "outletUrl": "https://www.cnn.com",
-      "published": "2026-10-30T04:42:00.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Midterms live updates: Trump scraps another red-state rally as he shifts strategy ahead of midterms",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Carney, top EU official push Canada associate membership and wider alliance against Trump threats",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNX01JdWZRb19GUU9tM1JsQkhzcGM4dFBqdENqQ3VRdWhLcjRmaTFreXFZRkFuc3VZVDc3MTFCUHlTbGltZzlmbm53M2VoUkQ4YzB4VnQ5Nl9GVTF6U2hxTkRYa2tVNlZLcHpTX2pUWjBPaTdjSldHOG9WMVV0MUlTWFY0WU45NmNjR2lzNndfdVNGWTdtdHJFUUoxd1Q?oc=5",
-      "outlet": "AP News",
-      "outletUrl": "https://apnews.com",
-      "published": "2026-10-30T03:55:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Carney, top EU official push Canada associate membership, wider alliance against Trump threats",
-      "about": [
-        "CA",
-        "US"
-      ]
-    },
-    {
-      "title": "Australian court says mushroom poison murderer should never be released from prison",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDN0XzlsRUJ1MXJ5N1I1UXBYVWhXRW5RTHUtRXgzQmdhRFpEWlQyTGI2Wi1rdzh6U2ZjeTA5bzdkMlJ0VE9VcUN5d0o4MUFfNTZmV1VRSHVYUG82aWF1MTc2YVE0Nm5nMWZpMnZUZ0M4QjctNXNFNUV2ejBabVBOSTRtNWlXUTdfNEVMMA?oc=5",
+      "title": "Carney points to EU's strong belief in democracy as political winds shift for 2 largest members",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMTVWc3JEY2Vnc2h0eExyRkdvM25CWHRVbk1qYy16Z1ZCOWkyOFZzcTlYSl8zTGNtZEw2WU9FRVRJcUhublhVWm1UMF80YTZ5ZUJVU3FIeklwLXgtbXdTWEF5Ul93b2NvT19hdHgxOWh5eHdLWlplZGNNZVZULVctWXd5S1RRN09rcVVMbTZYWFE5TWNpZ3lJNmdCYw?oc=5",
       "outlet": "CBC",
       "outletUrl": "https://www.cbc.ca",
-      "published": "2026-10-30T02:39:00.000Z",
+      "published": "2026-10-30T08:00:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Carney points to EU's strong belief in democracy as political winds shift for 2 largest members",
+      "about": [
+        "CA",
+        "DE",
+        "FR"
+      ]
+    },
+    {
+      "title": "Australian court orders Erin Patterson never to be released from prison for mushroom poisonings",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPRFFPY3VyU2p2TGExeDdZRnhtNjZpUDFKajBLSkhwNlo1UHZDUURwUkdXSm9CYTdjTEtWMjdyYllPOFRJWHRWdW8xM1dUNms3c0huekNaYmdhZnkzZExVY2NxVmpOdm43LW14d2JZa0N1SEtqby1RLUpIcml1V0RieGZuaVptcDRFWmdtcjBlM2RmZTUtbjdXU1NDR1QyNFhUeklCeE5ZeGl6RTNFME85U19GaVJSVkRVTFlfMHFYd0V2QUlxNFQyWjN3dWNtQQ?oc=5",
+      "outlet": "CTV News",
+      "outletUrl": "https://www.ctvnews.ca",
+      "published": "2026-10-30T10:56:50.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Australian court says mushroom poison murderer should never be released from prison",
+      "en": "Australian court orders Erin Patterson never to be released from prison for mushroom poisonings",
       "about": [
         "AU"
       ]
     },
     {
-      "title": "Canadiens complete perfect road trip without Suzuki",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPellmNU9UT3FSRHpvS3RITXpDRk5VMzBlNWF0QkVjSTgwazJTN2s0bXJoSUhVX3pOaXBGenRycW5Oa3ZaVWtFT2FmQUI5S1VVYmRQbGNuU1FHNzE3bDlyckFwRVowU1hYX29TZVV0UU5HNlUzTEt0a3FnN0lXSllRRW9lTWlYeG8tZlp0WkRSQS1FZlk?oc=5",
-      "outlet": "Sportsnet.ca",
-      "outletUrl": "https://www.sportsnet.ca",
-      "published": "2026-10-30T04:18:00.000Z",
+      "title": "Binance hacked to tune of $6.3B US; analysts see North Korean handiwork | CBC News",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5iaWJIRHFwWDB2Mk5KMDBaNzhHdWtVOG5sUEhuaGxPdmpKZFRzb3VwVVlrbGpKaWgtSEhVMUFwUEFudll1NE5YcGJKNWxNaFRSeDRXRXVjYVUxWEdvbjhGQ0ZRTlhzVTlvZGZ1RjRRTQ?oc=5",
+      "outlet": "CBC",
+      "outletUrl": "https://www.cbc.ca",
+      "published": "2026-10-30T11:29:22.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Canadiens complete perfect road trip without Suzuki",
+      "en": "Binance hacked to tune of $6.3B US; analysts see North Korean handiwork | CBC News",
+      "about": [
+        "KP"
+      ]
+    },
+    {
+      "title": "Canadians on permanent daylight time may face health risks, experts warn",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNXJVcDB3UURVVFdhR2RUVS0yZ1Vtc2MtdnoxSmxCN0VaVDdDSE1CdEZYcjMzdEdfQVI1M0s0Ml9wV2lxYVJINU5rekNrZVVaRUVzNkpqX3c0cWxPSTl2cm12bG45bHo5eVY3bVVmdzZ5aE9YRWdUbFR4MHRGRWVESVAtbWtCeTZoQjNpbUd6dXhweDlKNkJnWU1hTEJJRlp3S3ZYeGREVU1ySUt4WjBZ?oc=5",
+      "outlet": "CTV News",
+      "outletUrl": "https://www.ctvnews.ca",
+      "published": "2026-10-30T09:00:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Canadians on permanent daylight time may face health risks, experts warn",
+      "about": [
+        "CA"
+      ]
+    },
+    {
+      "title": "US midterms: 4 days to go – What the polls say as Trump cancels two rallies",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYzZHYkc5SWNGUjZUWk9GOEN4WlpGR01QTGNzMnQ5c1BBSGxiTXZJRDRRR2RWbjhhc2VVaTNBbV9PaDZ4OWxTZThXdGN2LWFzYnN6NWFhb3FQWU5sZHhfSDFaZkZXYUttTmo0N3liM3Jwd3NvenNydjRUTmtNQzdUN19EcWYyYnhfLXY0TmFlNTQwaWREa0daOEdiWHFabEY3dlBwdTVmZE41OFRiRmVaYl9BSkbSAboBQVVfeXFMT1RTa1RLUTZsTUxra1FmcmRsajM3dnMweENFOTBDSG9HOHYzLW9QN0xzdEVxTVZmVUszRGVYQXViZ1BUaUtwYmNPY0xRYUd0T2l0NW4xd3BQRWRMVGRGQkJlT3p3UzZxUG03VmF5cml3SmVXS0U1NFZhX2RCLXV6Q3lNaFpSZHNGVGVqSkpCY0FtX01pMVI4RHlneEI5TUVTS0IwOGtPRU1TNDRiTUdncERYOFl5Q1pYQzFn?oc=5",
+      "outlet": "Al Jazeera",
+      "outletUrl": "https://www.aljazeera.com",
+      "published": "2026-10-30T06:38:39.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "US midterms: 4 days to go – What the polls say as Trump cancels two rallies",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "General fired by Hegseth referred for criminal prosecution, Pentagon says",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOemt5aHlVeUNzd3lWc2twOXlIMlpxODUtM3RKUm4wc3paZkd5bWFBMmMzMEFIMFR4enFrUVJvTFptQWs1RlE4N1A4SF9HM1BMbFowZEJ4cFZ0MU5pb1VoVjlNdkJhS1M4T2V2RmlJUkxHVjNmS2R0SXNWcEVqeldIZzdDQXZUVUF1aG9nZ1ZHb2lVRXNWenJKNmN1YVBhX1hzY1p0QkkyRWh5OWtkMkdxTXpsS1p2U2hN?oc=5",
+      "outlet": "USA Today",
+      "outletUrl": "https://www.usatoday.com",
+      "published": "2026-10-30T13:01:57.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "General fired by Hegseth referred for criminal prosecution, Pentagon says",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "'You can't just get out': How 2 boys were recruited into the drug trade at the age of 12",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWGI2TzZJYlVlWHByb3FaMUxIcDRGLXZLVEJ2Q1JxSUFIMFpUcHJiUGNDZ0VOVm54LUpXSEVoWE52Q2pLT0xJQ0JrTHhFMXhRbDFITGFkLUFjR2FsXzM2LXRkUVhpVi1qXzNzSDZVN1h0R1JIR2pkUlQ1ekhPMzZCbXVUd1llcFNxTllXeENGa05BYloyaEF4RFhtRQ?oc=5",
+      "outlet": "CBC",
+      "outletUrl": "https://www.cbc.ca",
+      "published": "2026-10-30T08:00:00.000Z",
+      "outlets": 2,
+      "trending": false,
+      "en": "'You can't just get out': How 2 boys were recruited into the drug trade at the age of 12",
       "about": []
+    },
+    {
+      "title": "Interest rates are rising – here’s how savings accounts and GICs are keeping up",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNeENWMUxJWmhKLUFwS0FpSEJoQ3dIVW9wVXhSNkRkWnJKemdaMzBscUZzSGltRS1TNDZJQU92aUhwTEFueHZfZUhzSzBNNl9KcDVVODE5MXplVl83eV9YUDQ2eU1XRTBZMXJLSVVDY2ZfUTJ2RkV6V2lHQVA2WWhVc1k5Q0JkUVJ0RzFfX3pwMEpqRGRadkVGMjRNWmxGQ1BuaEdsRS14UDAzT2pqNmFqS2ptOXBQQU1KR2pPU0RncEg1NmpqeFRpWHQ3Y2Q3ZHk5WnV5X2RVNVZmM1Nj?oc=5",
+      "outlet": "The Globe and Mail",
+      "outletUrl": "https://www.theglobeandmail.com",
+      "published": "2026-10-30T09:30:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Interest rates are rising – here's how savings accounts and GICs are keeping up",
+      "about": [
+        "CA"
+      ]
+    },
+    {
+      "title": "Aging Xi tightens grip on China’s ruling Communist Party",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYjJNUnY3N05YSU90aS11czFiU2Frc0dpWDloZmF5TDJuN3Z6UkZ6WF93Vm9xZXdDc1RfUndVeFoyTzVKcDVwRFlzcU9vSWNQNUZNN0FUY2pPVVJxWkdRTHc3cEpFNUxKV0NIeHRGREdhaGdNY2FEMjVaZkVTR0R2bHdTVFkyd1dBNE1KZHNLejBlTUhuWkF3VHN3?oc=5",
+      "outlet": "The Globe and Mail",
+      "outletUrl": "https://www.theglobeandmail.com",
+      "published": "2026-10-30T08:30:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Aging Xi tightens grip on China's ruling Communist Party",
+      "about": [
+        "CN"
+      ]
+    },
+    {
+      "title": "Russian strikes plunge Ukrainian city into blackout as Zelenskyy warns of more missile attacks",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdjdQMjVXV0ZPMXZKM3QxeVpOcWNaZEhUa04ySUd2dmd6Q3NVUnR6LVEyVWRib21LLVlOLUo3MF9ock5mRUVxNmZaQmNDd1JVcEhHckxMd0puaHlHT1luWTUyUE96czJvWF9hcDcxR0Q2NlBMbVo5MUtPN2t6VF92bnFNQTd4TWlVdWfSAY8BQVVfeXFMTzh2MVJFNHF1R2E5WFhBVDZWSGt5RjZhTjFWV1p5MENLOW0wLUx1RXNLUnQ5VUM3cHZ2aTdnYVJJdElzYlBObEtHSzVNZlVqTHBRTVBtNmFLdnRqYk0xR1FmLWxxWV9iZG02VmpBV21wRDJSSDJHNnhPOHBhUUdFelNEN0NUaGJzQUZNMlFVS2M?oc=5",
+      "outlet": "CNBC",
+      "outletUrl": "https://www.cnbc.com",
+      "published": "2026-10-30T11:29:59.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Russian strikes plunge Ukrainian city into blackout as Zelenskyy warns of more missile attacks",
+      "about": [
+        "RU",
+        "UA"
+      ]
+    },
+    {
+      "title": "Type 2 diabetes breakthrough as 54% achieve remission in just 6 months",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAtUWlYZGRHWW5LY2g5Nk1uLV9OVmN5MU9MbWJZMTE4UlJIQi1SQkYtcDlWa3g2YTFsN3JSRjZYb2c0QjJscEtXUUFOR2RfS3kwVnBUREw4bVhXbkN5RWJHZlFmNlpzeHVBaWNvZWIzTQ?oc=5",
+      "outlet": "Science Daily",
+      "outletUrl": "https://www.sciencedaily.com",
+      "published": "2026-10-30T12:14:34.000Z",
+      "outlets": 2,
+      "trending": false,
+      "en": "Type 2 diabetes breakthrough as 54% achieve remission in just 6 months",
+      "about": []
+    },
+    {
+      "title": "Toronto woman receives $40,000 bill from city after being injured by getaway driver",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd3ZaYUlCTGNES0R3RkpaZmVPajdsODRIMG9EcFZPb1dtQnBMZW9DUWcyNWU0bnZlWDAxZm1pNWZuOUZfTFBjQ0ZERkVQZ0hfT0tJQmxoSHE4amtWX1NVOHlRX0gxbFFfYkZsbHhQUldLTXVrQlBjU3luWTJYSEZvUlV5cm8tdmFYM3R2WUgybENROVA3Um05ZFpYSjhRZkdVZ2V4UGRWSFZkdWF3RTJTQ0F0WHdVLTZCS0RDVFVR?oc=5",
+      "outlet": "CTV News",
+      "outletUrl": "https://www.ctvnews.ca",
+      "published": "2026-10-30T10:03:34.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Toronto woman receives $40,000 bill from city after being injured by getaway driver",
+      "about": [
+        "CA"
+      ]
+    },
+    {
+      "title": "Aid convoy enters besieged Ukrainian town Oleshky",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNT0ZDNlRPTjdlM1JYRkNQblBzWVNPSnhkR0V0VUFyalIySzRSRGpzMnBudnk3d1V2dWhZR1VKSHR1Nks2cjB1V3NfMy1LODhBUjM3Y1lTODJhamxWVHl2ckY0U2lXLVVJTE1zM1d0WXBmN0ZlcDdocE1SN3NIVEo4OG1UN0s0Q0lYNFkyM1doZHU5eDY4ZXfSAZsBQVVfeXFMUFBudWpheVpPLWJDU25aZ3FCQmFIcS1icURldFJaeTZDaHhPZ1ZscVEzZTd1WVZsa242cUxjSW5iTGNYNEVuU1d4X0hzcFF1dTFPOUdkcGxGcFNFd3JhTTRScU5Kekd6Q0dXdTJoTkIyTlBGeUY3aS1JYTFPWW1NNUNOTnRfRDN2ajVhYUhmQnhiTnNTYmFtZm5MSlk?oc=5",
+      "outlet": "Al Jazeera",
+      "outletUrl": "https://www.aljazeera.com",
+      "published": "2026-10-30T10:52:27.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Aid convoy enters besieged Ukrainian town Oleshky",
+      "about": [
+        "UA"
+      ]
+    },
+    {
+      "title": "Woman may never walk again after West Saanich Road crash: brother",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOM1MtNWFXOWxjZHBRR3pxRUNDQkJhUTVFbnhmU05vM0NOU3NzUTRuU2VOaXNGRzdhaE0tTUZ5UVhhTXZQTmlMUmczR1dJUjk2SlVBODhacWlkekF0Um9JWFpLQzMwVXFkdkthLWM0QnZEcXRmejd0VE1zRy1EQnJ3MW5kcmdCVWVQUm1wQzRnVG1OdFJUMEJ5LTNIMVhHX0cxbnFXR0VubzItQXJKaDVyRG5YUUg?oc=5",
+      "outlet": "Times Colonist",
+      "outletUrl": "https://www.timescolonist.com",
+      "published": "2026-10-30T11:07:16.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Woman may never walk again after West Saanich Road crash: brother",
+      "about": [
+        "CA"
+      ]
+    },
+    {
+      "title": "Scientists have found an enormous new dwarf planet beyond Pluto. And there could be many more",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WQ2ZYZFRHbERod2J1MjQ2UVJLYmJHQmVkeDJzbTBJRzJEWURic2RSMDl3dy1pNDJZRE9UM2dCNVhsM196bG5TOGUwR0dnRnJKcTJ4ZUJFM0wxUnNPbU5sVE5rbGZacFlwd3B6TQ?oc=5",
+      "outlet": "BBC Sky at Night Magazine",
+      "outletUrl": "https://www.skyatnightmagazine.com",
+      "published": "2026-10-30T08:01:58.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Scientists have found an enormous new dwarf planet beyond Pluto. And there could be many more",
+      "about": []
+    },
+    {
+      "title": "'We've had enough': Condo owners rally at Queen's Park to call for change in how condo boards operate",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNV0VpTU5fMEZVa1lJTHdlaTNudEVUVmYwazZoNkxLZG5PbkVaQXFYOGFxRkUwRHdCRGtNVXNpanI5Z3BhMWhmajB4REpuTVBUYkFEVm5Db0lYSExxWS1iMjgxaXNxVXg2alhKWXBnanlpdmdzVzhqQ3htaXhiVk9FamwzcVh4NlJFMVJuYWFYdw?oc=5",
+      "outlet": "CBC",
+      "outletUrl": "https://www.cbc.ca",
+      "published": "2026-10-30T09:00:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "'We've had enough': Condo owners rally at Queen's Park to call for change in how condo boards operate",
+      "about": [
+        "CA"
+      ]
+    },
+    {
+      "title": "Kings beat Senators in OT after blowing a four-goal lead in third period",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSDR0aEtqNHlUeGVIU1ljNjhNWHg3a2pOR29VS0U4c2dzNTNHUUhmcFVUaUxqeGJCWHJFdHhRZml2UTZZS0VsMjNlRlcwODU1VzJWNGk2ZlVXQUtFcmxFZUs5MC0wM1ptV1ItZW1hYTRTcEJGODZiMlBuNjB4TmhoZTlZQ01XbWZjMUQ1U1lZUVc5TWpCa1lCVlhEdGRzTXlaODExRTdFWF9kRVdEZGlZ?oc=5",
+      "outlet": "Sportsnet.ca",
+      "outletUrl": "https://www.sportsnet.ca",
+      "published": "2026-10-30T05:47:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Kings beat Senators in OT after blowing a four-goal lead in third period",
+      "about": []
+    },
+    {
+      "title": "'It's not me.' Accused sex predator disputes DNA link to Ontario crime scenes",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVmlMTGxRTFRlYTdVYk0takJ1ZWhvcFVjX2xZdmRBazdtSWNNTjdwQ0gtNzg3YU16VkVWWmZzcmJtUEhBTFUyb1dHZ2k0V2E0S1hJZEY4NXh1VXZ1b1NNWTkyNG83RHE5QTlvVlUtWWRRaGdicnZjd0I4T1V1TlNhS19NSVhSVGN3aWFrM2xGQmlwdW1XNGpNTWlTaEI5dG9hYVZ4U3Z3?oc=5",
+      "outlet": "CBC",
+      "outletUrl": "https://www.cbc.ca",
+      "published": "2026-10-30T08:00:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "'It's not me.' Accused sex predator disputes DNA link to Ontario crime scenes",
+      "about": [
+        "CA"
+      ]
+    },
+    {
+      "title": "BC NDP name interim party leader after provincial election misadventure",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTl9RMTZaeDZ3X29MNWZIY1B2S28xbm5GLTNCU05fcXdVVmxadWRlazB3dDh3OUNNNkVsWVBXLXVtbzI5ZVR4Z0RGM0RrMkVIek1mMlc5bVIwSUpPaEN5dE1aMXppNzdrUkFkRW1lR3FxdE95OVI2SlVxNDNsNTgxTWg0MWw?oc=5",
+      "outlet": "Daily Hive",
+      "outletUrl": "https://dailyhive.com",
+      "published": "2026-10-29T22:26:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "BC NDP name interim party leader after provincial election misadventure",
+      "about": [
+        "CA"
+      ]
+    },
+    {
+      "title": "Netanyahu bloc short of majority as Arab parties secure record seats",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNLVJjNG9sVVR3dTdQVjEyZlhvZkVjbzNYc0VISXBRRmtqUkk3dU5WbVVfQmJjMXVjQkx6THVsWmlOS0UwUks5VjJGa1ZhU0w4STI4QjhJdnRCSGVjRUtCT19MTTZ0V1IxSmdiRVQyMVphY21YdDlnN3Z5bmd5VzdqU0Nxd2JVZEVoRVB6Q3RVYkE4RXF4QTNrdk5aTnJSQnlaZ0NaVG53VzN3c0hhVmFXbUZ6UQ?oc=5",
+      "outlet": "Euronews.com",
+      "outletUrl": "https://www.euronews.com",
+      "published": "2026-10-30T07:31:44.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Netanyahu bloc short of majority as Arab parties secure record seats",
+      "about": [
+        "IL"
+      ]
     },
     {
       "title": "Red Wings prepared to 'wait as long as necessary' to trade Larkin",
@@ -72,108 +276,67 @@
       "about": []
     },
     {
-      "title": "Israel election result shows no overall majority as vote count complete",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdlRKcmM0b2Q5Q3I3YS1KejlBOUVUNGtpZ3k0NG0wRG1uZHlKWktycWtnd1JQLUh2dG1LWWxaTVJMRTZFTDB3OXpXaVVVQlBXQm1YUzFPeU16b2dQdDVjcU1yRWdzOXV5V0lqNVo2X0pNVFlYXzE2eEFrU3U3bEdwT1JnRmRHMlRrTW4tMDhvcVJIdHVqZEFOMjNmVXpNMWVrajhJNlRGcWh3SHljTVVHWG1EVdIBuAFBVV95cUxNTFNTejBtc3J6M1Q2aVJrVWpLSTBrNWo5RlFLUVh1a05kbFh0YUZRTTUwXzA5Wlh6WGlYUXNBbEVFVHAzMGd4c2JSSmpzZW1sdGkySThWb29DeDVteGpGbUJsMEtjTEEzY3pvMDZWSWJZQ2dITGkzUFdQWkhFR1lOZTd2TERVOW5XN1JHa0dHdWtwcEhQc3pTOENabXZESExtZnhIVy1DNFEwTlZtSm5YSWJya3lMdUZE?oc=5",
+      "title": "Israel’s election rhetoric: What candidates said, and how they performed",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPLWhFYmZnVGlQb3N6b2VPN195WnNmay1ORlNtdUN0c25lTEtCbU1hV3M1Y2pReHRFTlJ0N285OXdhZTByY2xpbE9DckIyc3hmWEFqZ1pWVXk2R0FObEJIMXlqWW9tNG9EVzRCZ2ZLT3ZJRnR5RDItNzk2cWlEeGxsb0t1RmdYNnZnbDRycVV1bl9GZ04xOWNrN1VXRGljaHZwSVHSAacBQVVfeXFMT3pabXltWEU5SzRUSnBDTlEzWlhFckZwQnBKNnphZ1dWWktUM2U1Y0ZMQlI4dmVqb0NZTmQyaENnZjRvalYwd0h5WWpodFo2cUNtX0g1eEtFTEtuQWJodHhDUTAyMmdIMm92XzVDWkpBQ2tiVUNDZDJWNW1vVE8yYTltTnlnLU9iaElpS2NjaXFlSjlKQ2doR29KOWdKcDZzR1NudDNTVkE?oc=5",
       "outlet": "Al Jazeera",
       "outletUrl": "https://www.aljazeera.com",
-      "published": "2026-10-29T20:29:43.000Z",
-      "outlets": 5,
+      "published": "2026-10-29T11:30:37.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "Israel election result shows no overall majority as vote count complete",
+      "en": "Israel's election rhetoric: What candidates said, and how they performed",
       "about": [
         "IL"
       ]
     },
     {
-      "title": "Woman may never walk again after West Saanich Road crash: brother",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOM1MtNWFXOWxjZHBRR3pxRUNDQkJhUTVFbnhmU05vM0NOU3NzUTRuU2VOaXNGRzdhaE0tTUZ5UVhhTXZQTmlMUmczR1dJUjk2SlVBODhacWlkekF0Um9JWFpLQzMwVXFkdkthLWM0QnZEcXRmejd0VE1zRy1EQnJ3MW5kcmdCVWVQUm1wQzRnVG1OdFJUMEJ5LTNIMVhHX0cxbnFXR0VubzItQXJKaDVyRG5YUUg?oc=5",
-      "outlet": "Times Colonist",
-      "outletUrl": "https://www.timescolonist.com",
-      "published": "2026-10-30T05:04:33.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Woman may never walk again after West Saanich Road crash: brother",
-      "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "Justice Department’s Dan Sullivan criminal probe accelerates after Alaska campaign revelations",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUDAxam1KZXFFcGZnTE5IVEZYVGd4dVRxYW9DZWVkcGdfNXNfQ2dCZ3FIajdCZHMzRG41eEpIaEZHZzJkaTZOSmtaZ0ktQzByX3RudFAxM2RiT1MxMFBfSzFuelNDWkkyZjdCOXV1WVFRcnYtRGNlLTdMYXMyekxvSHNqUm5CWTJMSE5aZ0p5MUtzbnVqbXFjbHR3RlFUSkxHQko5Xw?oc=5",
-      "outlet": "CNN",
-      "outletUrl": "https://www.cnn.com",
-      "published": "2026-10-29T18:53:31.000Z",
+      "title": "U.S. Justice Department orders subpoenas in controversial Alaskan Senate campaign",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcm4wMVQ2dm9ZelhOWGozQ0tLZUs5MHBPREdTMXhncHpIeVJxMnpNdWZnSXgxR1BheWJSR2FGOWl4MS1tZkNpc0wtc01jSElybFFWRGdlM1ozVTdvM0pxZEoweEZLb3NSS1JVWGVUeXR4WS1ET21yWkJjYTJzLTNfb01NOXBJWTJ3WDZFeS1iX2pZQmhyS05KSHc4bDZJdw?oc=5",
+      "outlet": "The Globe and Mail",
+      "outletUrl": "https://www.theglobeandmail.com",
+      "published": "2026-10-29T18:35:55.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Justice Department's Dan Sullivan criminal probe accelerates after Alaska campaign revelations",
+      "en": "U.S. Justice Department orders subpoenas in controversial Alaskan Senate campaign",
       "about": [
         "US"
       ]
     },
     {
-      "title": "B.C. NDP caucus taps Jennifer Whiteside to be new interim leader",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbDN2YmpueDlZT2diaUU3bXQyY0FSN2hGcWZMMFd6RkRfaU9SbS1tOThYdWFaNUI3M1k1NGc0a2Z5ajdJcG9fd204WW51U3lzLWNPTmZ4RGpZb3VvV1BYcXJtNnVwaHJuREJiUmtWemFrWFhBSDA0Z3JBd1ZyaHZ3Y2Q3WXplZzExa3RUdmZkLUs2bWo4SkJr?oc=5",
+      "title": "Spanish rescue workers search for any survivors in high-speed rail crash, with 69 dead",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE45VHRfWEoycFloOVdQNFdvVVEwdWU0SkZDX0dlQncwaXJCVzJqVk9oM0NJam5IQlpjSThPNi1uMmQ2YUxLZTZjbkJVZXRxbWd5d3NhdDBjMXlxNWNSeWRScXdQUEpVOGVveHF1VHJuNkdQVlZzc0hJcVZXQlkzN2c?oc=5",
       "outlet": "CBC",
       "outletUrl": "https://www.cbc.ca",
-      "published": "2026-10-29T20:52:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "B.C. NDP caucus taps Jennifer Whiteside to be new interim leader",
-      "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "Canada 'Crypto King' Aiden Pleterski found guilty of fraud",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TNlJFdHEtZzA4bnppRzBGVXNTMUdvelNHMWN5VkJUdkJyYjZXWDRYVUVqVnE3M3Q5b1JULXE3bWg1VTdKb1hNeGJ6WXB1UnM4RXg2bnlYU2NiN1k?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-10-29T18:46:57.000Z",
+      "published": "2026-10-29T19:27:22.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Canada 'Crypto King' Aiden Pleterski found guilty of fraud",
+      "en": "Spanish rescue workers search for any survivors in high-speed rail crash, with 69 dead",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Canada to Take Equity Stake in AI Firm Cohere",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbEVSWHVMeWdhSEpveGFxMzh1Q0FFUTNpaGRUTWgxbGlBOHlOTkQyZTA3QjVCUXJJY3kwaFRFN3ViQTlXalowMVBKLV9Mci1nWXRoOEhjT053SHdnNklfcDBoWVp0LWgzLVFZeE5EcjlCOUZTak1DRHl0ckd3SGt4Y3dpRTZPVXhMV0VvdXRvSm1DT21CVjNNS1h3?oc=5",
+      "outlet": "WSJ",
+      "outletUrl": "https://www.wsj.com",
+      "published": "2026-10-29T20:58:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Canada to Take Equity Stake in AI Firm Cohere",
       "about": [
         "CA"
       ]
     },
     {
-      "title": "GreenShield says integrated care returns $1.43 per dollar for members with chronic disease",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQVJ4bzJJRkd0NE1kTlZWNFNjd3RMRGVlLXVMbFFRM3UzcFNrd3E3VmFVdVltYk5TQWZEUHJyME5veEtzWjVDdElyODA1N3RRSExFRWdJQTZjN1kyNWJXTVdYV0tZSU1YYXJ0MkNiSXRCRUVPTEctT0lJWnVRVnBQWjBiTnNONzhYMEZBakFwbmFaY01aaGpheE5LUXdaTV9YRThvQWllVHAzVU9hRFlXTmlOVFNTNEN0UU9SNkdZNjMxdHBPWDd3ZmdCcVQ0SndWVHlOUzExRmdub2NDVXN3X0dBaTNOTmFHUk0xZkNfOWcwQQ?oc=5",
-      "outlet": "Insurance Business",
-      "outletUrl": "https://www.insurancebusinessmag.com",
-      "published": "2026-10-30T05:11:07.000Z",
+      "title": "The unexpected legacy of childhood adversity",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbnA3OERPUDEya1NPTHV6a2Nhb1h5c1YyN3dNTXlvazNmaGdhRWQ1eGctdkNZLUdMM2V0OHRSOHB5ZUNpcFBvRXBMd25GQlF1REo5Z09TQkJMaldaZ1Z6NVJ0NzlRYWxCNVV3X2JJOVFqd190ME82YVlVNVQ2MjhpSGVaeEI2al9jSG1jNVN0eVFHSDVqQmF3?oc=5",
+      "outlet": "The Globe and Mail",
+      "outletUrl": "https://www.theglobeandmail.com",
+      "published": "2026-10-30T11:00:00.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "GreenShield says integrated care returns $1.43 per dollar for members with chronic disease",
-      "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "Maya Gebala released from hospital 262 days after Tumbler Ridge shooting",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQTU3N05uWkVqMjA4Z3JoNlZTakVINFdpREQ4ZXlxRTFSNVF6eXl0bE9yTk1HZU9ZdUM0Zm9hUGZVdkU2TGRsWE54bHRKU3JXcGJwYXdsZWRRcWJOTGtVS0pvdV9wYzhCX2FTajJTUDZXdEZNWmZscmk4cndfbWN5TEhpTEo0bzFvSk9wTkdReFRyaERQeWpVV0dhUQ?oc=5",
-      "outlet": "Global News",
-      "outletUrl": "https://globalnews.ca",
-      "published": "2026-10-29T18:41:40.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Maya Gebala released from hospital 262 days after Tumbler Ridge shooting",
-      "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "Quebec premier’s boycott of Canada-EU summit turns heads",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdC1XNTJjdEpReUhjTE5YZGdIVTNyMllua0p3Ni1iYlBIYjRCQ181UkYyMG9CSWpicXl1Y1FjLXFLaUY3MENOazFfTFpabjRzNnRvQi1NSzFGUmRXdERsXzJ0TEljZUJOVzR5OUFJS1N4b0RLOHZtWGctN2tiMlVyZU5n?oc=5",
-      "outlet": "Global News",
-      "outletUrl": "https://globalnews.ca",
-      "published": "2026-10-30T01:43:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Quebec premier's boycott of Canada-EU summit turns heads",
-      "about": [
-        "CA"
-      ]
+      "en": "The unexpected legacy of childhood adversity",
+      "about": []
     },
     {
       "title": "The CFL playoffs kick off this weekend — here's a look at both matchups",
@@ -189,215 +352,43 @@
       ]
     },
     {
-      "title": "Trump cancels Iowa, Kansas midterm events, opts for ‘tele-rallies’",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNnNRcHlsNDdfWXB3VXJ3OHRJTDZXXzRqV2EySUJURGZEQ2h4dDdNMGtXb3U0b05MVk9vM25PRDJXTXVjMUF2MjZXRFpRUDB2cWJwX3RNVmN5V1BiZnk0SDlzLVNhQmlpRFZ3S1NkQnRZbWo1ckZGWFNsUFpFNXlpSlRGLWh3N2wtMURxYUEtOTJyVVV5WmFRekw4UHZOMmpPYVpyMm1FWXRsZ9IBrwFBVV95cUxORExOTkhlejZycnEyMG42NTgwR1JlR05HSGlsbTczOVNkX2NJd0NXN2JPanp2aGhhMWd4LURXUFpuUW9Rek0wV19mYkF6UWt3Y09tQ2I4dzFILWViZXp3TTJhd0VOQ1lNbV9nWXRCbno2Mmtxc3FtUXo5OFllRk9raXBJVktpZ3NsekVBUHlfaXREMldaNHAtdnUyeXBpWFBuZ0MtVzc2UWJGM3JKd0FJ?oc=5",
-      "outlet": "Al Jazeera",
-      "outletUrl": "https://www.aljazeera.com",
-      "published": "2026-10-30T01:39:53.000Z",
+      "title": "Carney, top EU official push Canada associate membership and wider alliance against Trump threats",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNX01JdWZRb19GUU9tM1JsQkhzcGM4dFBqdENqQ3VRdWhLcjRmaTFreXFZRkFuc3VZVDc3MTFCUHlTbGltZzlmbm53M2VoUkQ4YzB4VnQ5Nl9GVTF6U2hxTkRYa2tVNlZLcHpTX2pUWjBPaTdjSldHOG9WMVV0MUlTWFY0WU45NmNjR2lzNndfdVNGWTdtdHJFUUoxd1Q?oc=5",
+      "outlet": "AP News",
+      "outletUrl": "https://apnews.com",
+      "published": "2026-10-30T03:55:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Trump cancels Iowa, Kansas midterm events, opts for ‘tele-rallies’",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Alberta’s Smith faces political test as UCP debate land acknowledgements, transgender policies",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVmtSa0ZjTTJBNEE0ZjQ1T0RXaUhDV3NxamVNcmY1b1ZWSjZ2UWFIN25pazV0c0ZxVDZEV2lRckhNOEhSNDd3N09BVWgyTkswZEZkT1dXV3NfdGZFb0xPTHpLSlRaSjE0X3JCUEZjUnd6Y3ktUF95Vi1ZZzFCTUJsZmh5UE5sOXM1UC02MFVrTFljdWlxYWZXWWpOZ3o0MHBQOGN2YWdtdVg3OW45ZThpaXNwdG1ZVlY4UHp0Si1takJiNmNHaHhkSnNiUjZxQVk?oc=5",
-      "outlet": "CTV News",
-      "outletUrl": "https://www.ctvnews.ca",
-      "published": "2026-10-30T00:23:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Alberta's Smith faces political test as UCP debate land acknowledgements, transgender policies",
-      "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "Mysterious barrel marked ‘U.S. Army’ found in Quebec could contain dangerous neurotoxin",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNb1Q1NzBNYU1tb05iUUlOSWdoX3NYem9JcnJUX3hPeW1iTUoycjdkUmRLRkZjMjI2NFRxWGVWMW5TbXVFMHloWVRNNFh2bnMzdVg4YzZfT2hCT2FydHZEYnVGMkJ5S21lTDNqVHlwQkNzVWhTOTFoZUhtLTN0Z01Fb09uMmwwaEZfU1NfT2lLRzBtazE1ZzZMS3VRSmgwNE5idnhSYmQ2clhBUndPMVd6WW4zVTVodVdTMVpqNmtHNEtYZw?oc=5",
-      "outlet": "CTV News",
-      "outletUrl": "https://www.ctvnews.ca",
-      "published": "2026-10-30T00:51:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Mysterious barrel marked 'U.S. Army' found in Quebec could contain dangerous neurotoxin",
+      "en": "Carney, top EU official push Canada associate membership, wider alliance against Trump threats",
       "about": [
         "CA",
         "US"
       ]
     },
     {
-      "title": "Canada to Take Equity Stake in AI Firm Cohere",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbEVSWHVMeWdhSEpveGFxMzh1Q0FFUTNpaGRUTWgxbGlBOHlOTkQyZTA3QjVCUXJJY3kwaFRFN3ViQTlXalowMVBKLV9Mci1nWXRoOEhjT053SHdnNklfcDBoWVp0LWgzLVFZeE5EcjlCOUZTak1DRHl0ckd3SGt4Y3dpRTZPVXhMV0VvdXRvSm1DT21CVjNNS1h3?oc=5",
-      "outlet": "WSJ",
-      "outletUrl": "https://www.wsj.com",
-      "published": "2026-10-29T19:59:19.000Z",
+      "title": "Steelworkers fire back at Stelco owner: 'Damn right we’re colluding with Ottawa'",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQMHhZdkJ3Ym0wU0hERHNkNGFZejh5TXRJS3lOWWl0SDJsbXNWbkxuNHd0cGpLRzk1OEFtM3lyOTlRTkxsZzFGU3BIcWRYcGp6WVduYjFQa2VFMzF4SENGX09jOVNTR05tRG9oQXpTaThIeUhNVGFZTGU5TXZodWhYOGlB?oc=5",
+      "outlet": "Yahoo News Canada",
+      "outletUrl": "https://ca.news.yahoo.com",
+      "published": "2026-10-29T16:35:31.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Canada to Take Equity Stake in AI Firm Cohere",
+      "en": "Steelworkers fire back at Stelco owner: 'Damn right we're colluding with Ottawa'",
       "about": [
         "CA"
       ]
     },
     {
-      "title": "Vivek Ramaswamy discontinues attack ad that prompted wave of revulsion",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUWRYTE0xYk9wdjZLdFNrYUlBNm0zaGhnLXpQSXhwR0NWeld4RVJXci1GVXlxR3MxclhwdGdOazVIc3RBaElLY0hYeF9LWFJKcGthZ05KRjdHN1B1WExNaE1Rd2NNanMxanNqMWZGdndwOVFoUlk2X24xb25sdDNWaVRWTTVWZE4xUzRrSWdkOXZydnYwUkg0Q1lmMllOc19ZZkJDSnl3?oc=5",
-      "outlet": "The Guardian",
-      "outletUrl": "https://www.theguardian.com",
-      "published": "2026-10-30T01:12:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Vivek Ramaswamy discontinues attack ad that prompted wave of revulsion",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Event for Michigan Republican draws Jewish Democratic megadonor who rejects El-Sayed",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUzNvUUFQb2dRWmJxQjYtd2NCd1VKcHhzV1NldUlVN0VhTGdCWjRIOHVQcmxfbFYzeExyY0w3VjRqdDNxOGJnMkNiZ2paVTNRQWRoUUNPRlNPQ3luNGN0bHZRRFlvQTMxdjQ0REZ6UmlnR2VkSEN3S2NVQmtSQXNJdm5IS2xKUk1reDNPTVlGVWdZeVJ1ODJBYXp6Tldrd1lZWndfTjM5bFZSVzdnRUhzMG03ZVMxUdIBuwFBVV95cUxNQmphSHlnQ3Y2dlJFV1FqUU4zM3NLdm9SNHQ0LXJ2elNCbzJ5SUxwLWlvQlZZTGNjdEc0bUJ1VFU1b3RKenM5R0U1U0V1dVJxdzhacDlsQjI1RnJrZURQV0cwdDhJbVFiRHlxOUFvS0Q5OUQycmtUTWVtTTZDSExWOFdZMVhkejJTeFZLZDNoQkd6NS1CN0ZsYWc3ZlhrN0ZTOFBNQnZHZVoyQTNOMHNsVDhwRFlFeWx2X3Nj?oc=5",
-      "outlet": "The Times of Israel",
-      "outletUrl": "https://www.timesofisrael.com",
-      "published": "2026-10-29T17:59:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Event for Michigan Republican draws Jewish Democratic megadonor who rejects El-Sayed",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Netanyahu's party claims Israeli election 'stolen' as results show him losing majority",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdDI5RFNxTUFYSGFDRGlUbV9sdmZKQlFiWkY2YVdSVHp5b0diWVNHeF9FYnhKbXlNOTJEb1hHcWdHMU9OMk1pUVoxUHJSYTZRRXVmeW9mNTVqd0lJQ1Zwd0VYX3Bqc0NXbnBxVHJIOEZ3VnVzM0c1MUlRd0ZvMFUxY3dEOFF4WVdjdFhUejdZTUk0UllIVU4wVlE0b2s0d3MyczI5V0RjNXByMUlZd1NCa2ZWbWlkV045T0HSAb8BQVVfeXFMTjltM0duUEJzTDF6VHFXWHpVeEx5c2dKZEc4RG83RWwzQ2t1VjBEeWYtMXd4QjZ0MmRBSUlKc25ZOTc3OWk1Sk55aHpqS2ZvUGZFTmdueDhQaVAtNllqUjhmN3hEeHd3NG5yMV8tc0pwVTFxTW03WHFuY3VoZ1Z2Rm11REJCQVJ2Ml9vbFk0cklDdmg3WUhvVl8ybUdNanZ6SUVTT040cjRQeG5TTmtlSm10ZU5Zc1gyQVNWMWwyNjQ?oc=5",
-      "outlet": "PBS",
-      "outletUrl": "https://www.pbs.org",
-      "published": "2026-10-30T00:44:24.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Netanyahu's party claims Israeli election 'stolen' as results show him losing majority",
-      "about": [
-        "IL"
-      ]
-    },
-    {
-      "title": "Top US commander briefs Trump on Iran military options as 10 US military transport planes land in Israel",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaXg4cWkxb0hZU0FMMnRrNjNhd1VDLVJaN3h5UlhKZ0s4UEZTVmJMXy1YUDlZc2hySkJ2VjZYX1RLR3BuaF8zU0UxRDBMc3JqS0psbUFPdjU2dFRmeUY3dDN0T0RUMUJCdWVPX3VuZTB5dEV1WWN1T3kwdE1ESldvSXZCN2hjWGZ5LXlSM05hM0wzMkxweW9BcHVDNDdYMHRUSElNZ2hFYWFQY3RTeC1YdNIBtgFBVV95cUxQVGtUTHVaSDAyNGo0cUlROTcwWk5GYXRwUlZST214WUZuMmtKWmZic1pVM1k1UE8wcUM4OTJxMGM3WVE0WVd1WVF1amRGLUxKb0dBeTY0cE5sQlBHTDFSSEJoUlBmNW54MENFZHVOUkpvdEVIazgxRC1xdFZ6dXBrMmFPSXNFOWdiMFV2VlBJMk1qRVhaMjNzSmRELVVjODdzZ190ZlhNWkdKd29aQXRnTFVxSHI2dw?oc=5",
-      "outlet": "The Times of Israel",
-      "outletUrl": "https://www.timesofisrael.com",
-      "published": "2026-10-30T00:35:59.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Top US commander briefs Trump on Iran military options as 10 US military transport planes land in Israel",
-      "about": [
-        "US",
-        "IR",
-        "IL"
-      ]
-    },
-    {
-      "title": "Spain’s second deadly train crash this year leaves 69 people dead",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNclNPQ0FxTWdwZXloRUt6dzBjdXdVVnE2ZWVnaWE3cjlGVzdBb1NodVRrdTcwbVd6UHJfZzJOZGhIMnF6UVYxR2pXYUNaMVFhbFpST01kelBfaUJLaUxSU3padGY3Z0tLMmdwZ1paQkNvZnZXUmhZaDNDNmRnb2tSMWpMN0x5ZXE1eWMxdWRrclVkb1NYQXF6Z1NmNF9kQlljc2ZGaw?oc=5",
-      "outlet": "CTV News",
-      "outletUrl": "https://www.ctvnews.ca",
-      "published": "2026-10-29T16:59:16.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Spain's second deadly train crash this year leaves 69 people dead",
-      "about": [
-        "ES"
-      ]
-    },
-    {
-      "title": "Joly says she'll meet with Stelco owner if company gives 'concrete' plan to bring workers back",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMllueWM3V19XZGhncmhWTVR1Q2RSb3dzaU9sWjJBWjJhaE80TkFrT2lTdFp0MXUwem0yM2g2S3pEemJoWnFTU195Q3Z2WDBpRzBaa3hBWEJiWmpOWXh1UDZteGpaQVBhbVRpejdwLU45VWt4dTNkN2YyXy1XMnZQM1BsV0hVT2ZTMnZUbjNqaVU?oc=5",
+      "title": "Indigenous women could make history in upcoming U.S. midterm elections",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORmtENGc4dk8tb2tFVjZQTy1LTUJvYmtOSktTa3NmNGFxNHJvRTU4ZVpRY0l4X2tsSHJyazV2T3h5WWMtR0VXRXN6YXp4Y0RLSXlncklyMF8zT2tiNjQxRXhsOXNVdDlyNk83SU1TQ0p4MXoyM2RkYTFzd1ZkN2h4TU9kLXY?oc=5",
       "outlet": "CBC",
       "outletUrl": "https://www.cbc.ca",
-      "published": "2026-10-29T18:13:20.000Z",
-      "outlets": 5,
+      "published": "2026-10-30T08:00:00.000Z",
+      "outlets": 2,
       "trending": false,
-      "en": "Joly says she'll meet with Stelco owner if company gives 'concrete' plan to bring workers back",
+      "en": "Indigenous women could make history in upcoming U.S. midterm elections",
       "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "Student-backed election winners demand sweeping resignations in Serbia",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LR2lPZVhRMnNBbzJuSy1lOE93NGdBMVowclp5b2NQQjhyVGxmWHlaSXpNdXdwT1dOaGxCNDBrc1ROX25nWUxUM2d1UGIxUkJZNlBZQkotdGVWTWM?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-10-30T00:17:28.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Student-backed election winners demand sweeping resignations in Serbia",
-      "about": [
-        "RS"
-      ]
-    },
-    {
-      "title": "France braces for ‘very high risk’ of disorder at Halloween protests",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTURyQ2gxZk5YMUplOHFQWEgxWXEtVnRxcXEyUkJobGlreWF5ZTFjdVk4TUtxZDdPVndJb0dMS3BuczNMM2dwWHA5eWd0NmZUS28yNUNLZGZkdVVpcHhZM2l6VFZUS1lzUGpGMkVINXJNMXFoM1NzbUdLckNmRG16U2tOV1FWSXBzUGhtRGlfNDc2amljNi04OUIwSzktM3M0RDNpWWVzZE1EOWFy0gGyAUFVX3lxTE1xZzJlYTROdThJUmp0a3hGM0ItN2dsYkY3WHI2VnN2U19tX3dxNTB1WjQzYjVfSF9yT0NlbHRJal8tdnhZdVpkVGxkSFotV0EyOUVhY1prd2tjQkw1ZVI0SnJWY1ZaLXRiVE1VRWZnbzEycnlaQTlCeERFZkJVckNjbEZKY05aU1hEejBISjJNemFLSXVfblpIV1lCaVI1MEJuaVNFMVZEQkhRemM5aTJRT1E?oc=5",
-      "outlet": "Al Jazeera",
-      "outletUrl": "https://www.aljazeera.com",
-      "published": "2026-10-30T00:01:13.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "France braces for ‘very high risk’ of disorder at Halloween protests",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "A mayoral race with 2 Chows caused ballot confusion in Toronto. Can that be fixed?",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNc21IZzktNFBvd0R4d05ITHVjSlR6RHJTeDJpMjIxbkxnZHVEWnNhLUJUM0s3OGZ4Z1pMNUdjYmlUSDJ0OEZJWTQ2VlBONExJY2ZMT1NmdVZhYUJPRjFXR3JzWmdkNG1kRHlHYnVRYTNWbHlDY2UzdjJZM2JFTjdaSi1BRXRSOG93NUtsRzZ3?oc=5",
-      "outlet": "CBC",
-      "outletUrl": "https://www.cbc.ca",
-      "published": "2026-10-29T23:50:16.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "A mayoral race with 2 Chows caused ballot confusion in Toronto. Can that be fixed?",
-      "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "‘Almost $2 million for 1 person?’ Calgary councillors slam ‘outrageous’ independent water review panel compensation",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWmd3UE5pUXBjcVJ1NVhUYzRJMG84VkNBOW5VV2Y4SjZZd2NwS25aRGpFY01LQTBkUDJabVJTTUNEQ1JKT1JubWROYk1zd1h5ZlpkVDJGdk0tMUlER3JaUFZPekFoTE9INUlSM0FnbjAtczNLeS02bWhuajJ2bC0xaEhDMmxQMTVERklIbUdHUm9ZOHlEVnpIa3dRRHE5VDhmLUhrQU1ILTBSdGFBWlRJRVFPZXpSWmJKM1hmdVZMSEhqLXJVZVE3dWd1UG10RTRvNjhKTGZQVFQ4aGQwa05CcU1vWQ?oc=5",
-      "outlet": "CTV News",
-      "outletUrl": "https://www.ctvnews.ca",
-      "published": "2026-10-30T00:43:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "'Almost $2 million for 1 person?' Calgary councillors slam 'outrageous' independent water review panel compensation",
-      "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "Three members of family shot, another injured in Bridle Path home invasion",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMU4zQ0NLdGppSWNrSDJHZWlaaG1SUFFXTHZZcFIyUjBFZU1aWXBxcEp1T3FORkR1b3lPdjRoM0o0aHJKbVZ2Qi1pOXk5ZjN0bTJCb2x3OWFOYm9PTmptLXc3S2RsNWhURDlBc3RxdEtjUmZDZTJnQlRLWTNyYXEtdXRCN0JKYkdkb1B3VW1venRWYm8?oc=5",
-      "outlet": "The Globe and Mail",
-      "outletUrl": "https://www.theglobeandmail.com",
-      "published": "2026-10-29T23:27:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Three members of family shot, another injured in Bridle Path home invasion",
-      "about": [
-        "CA"
-      ]
-    },
-    {
-      "title": "Houthi forces claim six attacks on Saudi airports, oil facilities",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTEhERlpWem04ZnozTFJCeEcwbmNLVkN6eUtjUFgtdDJnNU1iVFVWWExvTU9WQ09EQ3g0SmJYZ011OWh4TTlUd2pKLURkQUljS3VDNzNmcktLMEZYZTRydklucHl3RF9PeDF1VW5QTlFCbEs0U2ZfbEtqdlpVczB5VTBiUFM0VnZ3Mkl6dVdoZWRvanJCS3VmUW9Ma2hwQ18zbFA3T2lmMU5Hd9IBrwFBVV95cUxNNDBlaUpwVUU2NTFwc0ZhYXdwUmxTa2JjdklXNUVudHZDa25DV29LMUZWa2hRRTBtWml6QTA3Y2ZPNEJOMHo3c2RVSDdYbkNLTzBLbWJXczlBZEY4bWQ3dlZ4amtOOGVtUm90MFpXZWQ2cXZSdk1RNnU0R1BQNWtGRG5YUW5ibVBUa2hPSHA0eEVYVGRNS2Nta3V3bE1mTU4zNllDOEV1N2J6MWd2ODlv?oc=5",
-      "outlet": "Al Jazeera",
-      "outletUrl": "https://www.aljazeera.com",
-      "published": "2026-10-30T00:15:13.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Houthi forces claim six attacks on Saudi airports, oil facilities",
-      "about": [
-        "YE",
-        "SA"
+        "US"
       ]
     }
   ]

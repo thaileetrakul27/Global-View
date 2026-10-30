@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-30T06:23:09.024Z",
+  "updated": "2026-10-30T13:30:58.872Z",
   "fetched": {
-    "societies": "2026-10-30T06:23:09.024Z",
-    "uncr": "2026-10-30T06:23:09.024Z"
+    "societies": "2026-10-30T13:30:58.872Z",
+    "uncr": "2026-10-30T13:30:58.872Z"
   },
   "societies": {
     "AF": {
@@ -2957,43 +2957,43 @@
     "redcross.or.ke/drought-emergency-2026": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-10-30T06:23:09.024Z",
       "chain": [
         "https://redcross.or.ke/drought-emergency-2026/"
-      ],
-      "checked": "2026-10-30T06:23:09.024Z"
+      ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-30T06:23:09.024Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-10-30T06:23:09.024Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-10-30T06:23:09.024Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-10-30T06:23:09.024Z"
+      ]
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-10-30T06:23:09.024Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ],
-      "checked": "2026-10-30T06:23:09.024Z"
+      ]
     },
     "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
       "ok": false,
       "reason": "asks for Cash App or Venmo, as scams do",
+      "checked": "2026-10-30T06:23:09.024Z",
       "chain": [
         "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
-      ],
-      "checked": "2026-10-30T06:23:09.024Z"
+      ]
     }
   }
 }
