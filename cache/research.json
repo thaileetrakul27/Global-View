@@ -328,41 +328,97 @@
     "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001341": {
-    "at": "2026-10-27T21:08:09.862Z",
+    "at": "2026-10-30T00:20:11.381Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Hurricane Vance, a cyclone that started on 21 October 2026, is now a weakening tropical storm offshore from Mexico's Pacific coast, according to the National Hurricane Center bulletin issued 27 October 2026 at 08:00 MST. It has 35-knot winds and is expected to turn north toward the entrance of the Gulf of California by Thursday. No land impacts have been reported. Mexican authorities have taken preventive measures in five Pacific states.",
+    "summary": "Hurricane Vance, a cyclone that formed off Mexico's Pacific coast on 21 October 2026, weakened to a tropical storm and was off Sinaloa on 29 October. Its rain caused flooding, landslides and road and beach closures in Baja California Sur and Sinaloa. Authorities reported no deaths. Sinaloa officials said the system could dissipate within 24 hours.",
     "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
+    "places": [
+      {
+        "name": "Los Cabos",
+        "admin": "Baja California Sur",
+        "country": "MX",
+        "kind": "town",
+        "impact": "severe flooding, dozens of cars swept away, classes suspended"
+      },
+      {
+        "name": "Mazatlán",
+        "admin": "Sinaloa",
+        "country": "MX",
+        "kind": "city",
+        "impact": "landslide on Cerro de la Nevería, no building damage reported"
+      },
+      {
+        "name": "Concordia",
+        "admin": "Sinaloa",
+        "country": "MX",
+        "kind": "town",
+        "impact": "afternoon classes suspended"
+      },
+      {
+        "name": "Escuinapa",
+        "admin": "Sinaloa",
+        "country": "MX",
+        "kind": "town",
+        "impact": "afternoon classes suspended"
+      },
+      {
+        "name": "El Rosario",
+        "admin": "Sinaloa",
+        "country": "MX",
+        "kind": "town",
+        "impact": "afternoon classes suspended"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Rescues",
+        "value": "5 people in trapped vehicles rescued",
+        "sourceName": "informador.mx",
+        "sourceUrl": "https://www.informador.mx/mexico/lluvias-de-vance-golpean-a-sinaloa-y-bcs-reportan-encharcamientos-cierre-de-playas-y-deslaves-20261028-0154.html"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://www.cruzrojamexicana.org.mx/",
+        "org": "Mexican Red Cross (Cruz Roja Mexicana)",
+        "kind": "society",
+        "note": "General Mexican Red Cross home page with annual drive and disaster-response fund.",
+        "specific": false
+      },
+      {
+        "url": "https://bajacalifornia.cruzrojamexicana.org.mx/",
+        "org": "Baja California Mexican Red Cross branch",
+        "kind": "society",
+        "note": "Baja California branch general fund with disaster-response section, covers Los Cabos.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
-        "name": "nhc.noaa.gov",
-        "url": "https://www.nhc.noaa.gov/mobile/text/refresh/MIATCDEP2+html/270849.shtml",
-        "title": "Tropical Storm Vance Forecast Discussion"
+        "name": "luznoticias.mx",
+        "url": "https://www.luznoticias.mx/2026-10-29/sinaloa/vance-ya-no-representa-peligro-directo-para-sinaloa-proteccion-civil/312587",
+        "title": "\"Vance ya no representa peligro directo para Sinaloa\": Protección Civil"
       },
       {
-        "name": "elimparcial.com",
-        "url": "https://www.elimparcial.com/mexico/2026/10/25/huracan-vance-pone-en-alerta-a-cinco-estados-del-pacifico-proteccion-civil-desplegara-operativo-ante-lluvias-muy-fuertes-y-oleaje-de-hasta-5-metros/",
-        "title": "Huracán Vance pone en alerta a cinco estados del Pacífico: Protección Civil desplegará operativo ante lluvias muy fuertes y oleaje de hasta 5 metros"
+        "name": "accuweather.com",
+        "url": "https://www.accuweather.com/en/hurricane/vance-became-11th-major-eastern-pacific-hurricane-this-season-will-it-turn-toward-mexico/1949604",
+        "title": "Vance became 11th major eastern Pacific hurricane this season. Will it turn toward Mexico?"
       },
       {
-        "name": "nhc.noaa.gov",
-        "url": "https://www.nhc.noaa.gov/mobile/text/refresh/MIATCPEP2+html/232038.shtml",
-        "title": "Tropical Storm Vance Public Advisory"
+        "name": "lucesdelsiglo.com",
+        "url": "https://lucesdelsiglo.com/2026/10/29/la-tormenta-vance-azota-los-cabos-nacional/",
+        "title": "La tormenta 'Vance' azota Los Cabos"
       },
       {
-        "name": "rainviewer.com",
-        "url": "https://www.rainviewer.com/storm-tracker/hurricanes/vance-2026.html",
-        "title": "Hurricane Vance Tracker: Category 1 Location & Path"
+        "name": "es-us.noticias.yahoo.com",
+        "url": "https://es-us.noticias.yahoo.com/lluvias-vance-dejan-afectaciones-sinaloa-140505872.html",
+        "title": "Lluvias por Vance dejan afectaciones en Sinaloa y BCS - Yahoo Noticias"
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-29T20:03:15.927Z",
-    "donationSearched": "2026-10-27T21:08:09.862Z",
-    "directSearched": "2026-10-27T21:08:09.862Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-30T00:20:11.381Z",
+    "seen": "2026-10-30T00:20:11.381Z"
   },
   "gdacs-cyclone-tc-1001342": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -471,7 +527,7 @@
     ],
     "sources": [],
     "membersHash": "eonet,gdacs|IN#d1e12953",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -542,129 +598,26 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-10-26T21:25:14.833Z",
+    "at": "2026-10-30T00:20:11.381Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Prolonged drought is affecting parts of Central America, which began on 21 April 2026. On 24 October 2026 the IFRC said about one million people in Honduras are affected. A red alert covers 103 Honduran municipalities, and 234 more are under other alert levels. Drought is projected to worsen between October 2026 and March 2027. Western Nicaragua and southeastern Mexico also report dry conditions.",
+    "summary": "",
     "ongoing": true,
-    "places": [
-      {
-        "name": "Choluteca",
-        "country": "HN",
-        "kind": "region",
-        "impact": "red-alert municipalities"
-      },
-      {
-        "name": "Comayagua",
-        "country": "HN",
-        "kind": "region",
-        "impact": "red-alert municipalities"
-      },
-      {
-        "name": "El Paraíso",
-        "country": "HN",
-        "kind": "region",
-        "impact": "red-alert municipalities"
-      },
-      {
-        "name": "Francisco Morazán",
-        "country": "HN",
-        "kind": "region",
-        "impact": "red-alert municipalities"
-      },
-      {
-        "name": "La Paz",
-        "country": "HN",
-        "kind": "region",
-        "impact": "red-alert municipalities"
-      },
-      {
-        "name": "Valle",
-        "country": "HN",
-        "kind": "region",
-        "impact": "red-alert municipalities"
-      },
-      {
-        "name": "Intibucá",
-        "country": "HN",
-        "kind": "region",
-        "impact": "red-alert municipalities"
-      },
-      {
-        "name": "Lempira",
-        "country": "HN",
-        "kind": "region",
-        "impact": "red-alert municipalities"
-      },
-      {
-        "name": "Western Nicaragua",
-        "country": "NI",
-        "kind": "region",
-        "impact": "driest rainy season in 124 years"
-      },
-      {
-        "name": "Southeast Mexico",
-        "country": "MX",
-        "kind": "region",
-        "impact": "dry spell"
-      }
-    ],
-    "figures": [
-      {
-        "label": "People affected",
-        "value": "about 1 million",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/america/agencias/2026/10/22/la-cruz-roja-urge-a-america-latina-a-prepararse-ante-un-fenomeno-de-el-nino-historico/"
-      }
-    ],
+    "places": [],
+    "figures": [],
     "donation": [],
-    "sources": [
-      {
-        "name": "ifrc.org",
-        "url": "https://www.ifrc.org/press-release/ifrc-anticipation-and-preparedness-can-save-lives-ahead-potentially-historic-el-nino",
-        "title": "IFRC: Anticipation and preparedness can save lives ahead of a potentially historic El Niño"
-      },
-      {
-        "name": "mundoagropecuario.com",
-        "url": "https://mundoagropecuario.com/honduras-sequia-cultivos-ayuda-humanitaria/",
-        "title": "Honduras pide US$60 millones ante las pérdidas agrícolas por sequía - Mundo Agropecuario"
-      },
-      {
-        "name": "washingtonpost.com",
-        "url": "https://www.washingtonpost.com/world/2026/10/21/cloud-seeding-climate-drought-nino-honduras/806631ae-cd64-11f1-ac04-9f58578a68b4_story.html",
-        "title": "In Honduras, hard hit by drought, authorities hope to make it rain using contentious tactic - The Washington Post"
-      },
-      {
-        "name": "agrolatam.com",
-        "url": "https://www.agrolatam.com/agricultura-latam/alerta-en-centroamerica-una-zona-agricola-vive-su-periodo-mas-seco-en-124-anos/",
-        "title": "¿Cómo está golpeando la sequía al agro de Centroamérica?"
-      },
-      {
-        "name": "mexiconewsdaily.com",
-        "url": "https://mexiconewsdaily.com/news/hurricanes-above-average-rainfall-werent-enough-to-prevent-more-drought-mexico/",
-        "title": "Hurricanes? Above-average rainfall? They weren't enough to prevent more drought in Mexico"
-      }
-    ],
-    "membersHash": "gdacs,ifrc|BS,BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-29T20:03:15.927Z",
-    "donationSearched": "2026-10-26T21:25:14.833Z",
-    "directSearched": "2026-10-26T21:25:14.833Z",
+    "sources": [],
+    "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
+    "donationSearched": "2026-10-30T00:20:11.381Z",
+    "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://actalliance.org/appeals-rapid-response-funds/rrf-21-2026-humanitarian-response-for-the-population-affected-by-drought-in-hondurass-dry-corridor/",
-        "org": "ACT Alliance (partners OCDIH and CASM)",
-        "kind": "local",
-        "note": "Cash for food and needs for 743 families; water storage and treatment supplies.",
-        "title": "RRF 21/2026 - Humanitarian Response for the Population Affected by Drought in Honduras’s Dry Corridor - ACT Alliance"
-      }
-    ]
+    "seen": "2026-10-30T00:20:11.381Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-29T06:19:20.602Z",
@@ -719,7 +672,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2
@@ -898,10 +851,10 @@
     "membersHash": "gdacs|VU#1dba2781"
   },
   "gdacs-earthquake-eq-1570339": {
-    "at": "2026-10-28T23:02:19.626Z",
+    "at": "2026-10-30T00:20:11.381Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 7.7 earthquake struck Panama on 9 October 2026, with its epicentre reported near Pitaloza Arriba. SINAPROC reported 2 deaths and 27 injured as of 26 October. Damage assessments and shelter operations are continuing, several shelters remain occupied, and aftershocks were recorded in October.",
+    "summary": "A magnitude 7.7 earthquake struck near Pitaloza Arriba, Panama, on 9 October 2026. SINAPROC gives magnitude 7.5, with its epicentre 39 km northwest of Tonosí, Los Santos province. Damage to homes, schools, hospitals, bridges and roads was reported in Los Santos, Herrera, Coclé and Veraguas. As of 26 October, 2 deaths and 27 injuries were reported. Aftershocks continued, including a 5.7 on 27 October and a 5.1 on 29 October. Shelters were still open.",
     "ongoing": true,
     "places": [
       {
@@ -909,51 +862,38 @@
         "admin": "Los Santos",
         "country": "PA",
         "kind": "town",
-        "impact": "No water or electricity; road access limited"
+        "impact": "epicentre area; main quake epicentre 39 km away"
       },
       {
-        "name": "Coclé",
+        "name": "Los Santos",
         "country": "PA",
         "kind": "region",
-        "impact": "Most significant damage reported"
-      },
-      {
-        "name": "Penonomé",
-        "admin": "Coclé",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Hospital affected; patients treated outdoors"
-      },
-      {
-        "name": "Mariato",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "district",
-        "impact": "Shelters opened"
+        "impact": "damage to homes, schools, hospitals, roads"
       },
       {
         "name": "Herrera",
         "country": "PA",
         "kind": "region",
-        "impact": "Province where the earthquake occurred"
+        "impact": "damage to homes, schools, hospitals, roads"
       },
       {
-        "name": "Ngäbe-Buglé comarca",
+        "name": "Coclé",
         "country": "PA",
         "kind": "region",
-        "impact": "130 homes assessed; about 16 structurally collapsed"
+        "impact": "damage to homes, schools, hospitals, roads"
       },
       {
-        "name": "Panama City",
+        "name": "Veraguas",
+        "country": "PA",
+        "kind": "region",
+        "impact": "damage concentrated in region"
+      },
+      {
+        "name": "Penonomé",
+        "admin": "Coclé",
         "country": "PA",
         "kind": "city",
-        "impact": "Metro services suspended; passengers evacuated"
-      },
-      {
-        "name": "Isla de Cañas",
-        "country": "PA",
-        "kind": "town",
-        "impact": "About 300 people evacuated"
+        "impact": "San Juan Bautista Cathedral damaged"
       }
     ],
     "figures": [
@@ -971,19 +911,13 @@
       },
       {
         "label": "Homes evaluated",
-        "value": "16,302",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/panama/2026/10/28/terremoto-en-panama-mas-de-16300-viviendas-evaluadas-y-52874-personas-registradas-tras-la-emergencia/"
+        "value": "13,681",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-23/"
       },
       {
-        "label": "People registered through damage…",
-        "value": "52,874 people",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/panama/2026/10/28/terremoto-en-panama-mas-de-16300-viviendas-evaluadas-y-52874-personas-registradas-tras-la-emergencia/"
-      },
-      {
-        "label": "People in shelters",
-        "value": "5,642 people in 152 shelters",
+        "label": "People registered",
+        "value": "44,885",
         "sourceName": "sinaproc.gob.pa",
         "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-23/"
       }
@@ -991,61 +925,63 @@
     "donation": [
       {
         "url": "https://donate.unhcr.org/int/en/panama-earthquake",
-        "org": "UNHCR",
+        "org": "UNHCR (UN Refugee Agency)",
         "kind": "un",
-        "note": "UNHCR appeal to fund shelter and relief for households affected by the Panama earthquake.",
+        "note": "Donate page for the 2026 Panama earthquake, funding shelter and relief for families.",
+        "specific": true
+      },
+      {
+        "url": "https://www.unicef.org/panama/emergencia_terremoto_panama",
+        "org": "UNICEF Panama",
+        "kind": "un",
+        "note": "Earthquake emergency page with donate-now prompts, covering response needs for children.",
         "specific": true
       },
       {
         "url": "https://cruzroja.org.pa/donar/",
         "org": "Cruz Roja Panameña (Red Cross Society of Panama)",
         "kind": "society",
-        "note": "General donation page for the society's ongoing programmes, not specific to this earthquake.",
+        "note": "General donation fund for the society's national programmes, not specific to this quake.",
         "specific": false
       }
     ],
     "sources": [
       {
+        "name": "midiario.com",
+        "url": "https://www.midiario.com/nacionales/otro-sismo-de-51-sacude-a-panama-la-replica-se-sintio-fuerte-en-chiriqui-veraguas-y-provincias-centrales/",
+        "title": "¡Otro sismo de 5.1 sacude a Panamá, la réplica se sintió fuerte en Chiriquí, Veraguas y provincias centrales!"
+      },
+      {
+        "name": "sinaproc.gob.pa",
+        "url": "https://www.sinaproc.gob.pa/comunicado-oficial-23/",
+        "title": "Comunicado Oficial #23 - Sinaproc"
+      },
+      {
         "name": "infobae.com",
-        "url": "https://www.infobae.com/panama/2026/10/28/terremoto-en-panama-mas-de-16300-viviendas-evaluadas-y-52874-personas-registradas-tras-la-emergencia/",
-        "title": "Terremoto en Panamá: más de 16,300 viviendas evaluadas y 52,874 personas registradas tras la emergencia - Infobae"
+        "url": "https://www.infobae.com/panama/2026/10/27/nueva-replica-de-57-vuelve-a-sacudir-panama-y-eleva-a-mas-de-1152-los-movimientos-registrados/",
+        "title": "Nueva réplica de 5,7 vuelve a sacudir Panamá y eleva a más de 1.152 los movimientos registrados - Infobae"
       },
       {
-        "name": "unocha.org",
-        "url": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315",
-        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 02 (as of 11 October 2026, 13:15)"
+        "name": "destinopanama.com.pa",
+        "url": "https://destinopanama.com.pa/2026/10/world-of-coffee-panama-destinara-parte-de-sus-ganancias-a-la-cruz-roja-por-terremoto/",
+        "title": "World of Coffee Panamá destinará parte de sus ganancias a la Cruz Roja por terremoto - Destino Panamá"
       },
       {
-        "name": "cnnespanol.cnn.com",
-        "url": "https://cnnespanol.cnn.com/2026/10/09/latinoamerica/panama-sismo-temblor-terremoto-orix",
-        "title": "Sismo de magnitud 7,7 sacude Panamá"
+        "name": "abcnews.com",
+        "url": "https://abcnews.com/International/tsunami-threat-after-76-magnitude-earthquake-reported-panama/story?id=137140557",
+        "title": "7.7 magnitude earthquake shakes Panama - ABC News"
       },
       {
-        "name": "abc7.com",
-        "url": "https://abc7.com/story/tterremoto-de-magnitud-7-6-sacude-panama-informa-el-usgs/19925367/",
-        "title": "Terremoto de 7.7 grados de magnitud remece Panamá y obliga a la gente de la capital a salir de sus casas - ABC7 Los Angeles"
-      },
-      {
-        "name": "watchers.news",
-        "url": "https://watchers.news/2026/10/09/major-m7-7-earthquake-hits-panama-hazardous-tsunami-waves-possible/",
-        "title": "Major M7.6 earthquake damages buildings across Panama, tsunami threat ends - The Watchers"
+        "name": "ellitoral.com",
+        "url": "https://www.ellitoral.com/internacionales/sismo-panama-sinaproc-tonosi-terremoto-cocle-lossantos_0_q82uQVQQS8.html",
+        "title": "Terremoto en Panamá: qué se sabe de los daños, los heridos y el impacto a un día del sismo"
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-29T20:03:15.927Z",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
+    "donationSearched": "2026-10-30T00:20:11.381Z",
+    "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://wck.org/relief/panama-earthquake/",
-        "org": "World Central Kitchen",
-        "kind": "local",
-        "note": "Meals for quake-hit families in Los Santos, served via a local restaurant partner.",
-        "title": "WCK Responds to Magnitude 7.7 Earthquake in Panama",
-        "published": "2026-10-19T23:02:19.626Z"
-      }
-    ]
+    "seen": "2026-10-30T00:20:11.381Z"
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1415,7 +1351,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -4158,7 +4094,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2
@@ -4222,8 +4158,10 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-29T20:03:15.927Z",
-    "donationSearched": "2026-10-28T23:02:19.626Z"
+    "seen": "2026-10-30T00:20:11.381Z",
+    "donationSearched": "2026-10-28T23:02:19.626Z",
+    "directSearched": "2026-10-30T00:20:11.381Z",
+    "directSearchVersion": 2
   },
   "gdacs-wildfire-wf-1032497": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -5612,179 +5550,187 @@
     "donationSearched": "2026-10-21T14:45:27.681Z"
   },
   "ifrc-earthquake-8055": {
-    "at": "2026-10-27T21:08:09.862Z",
+    "at": "2026-10-30T00:20:11.381Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A magnitude 7.4 earthquake struck near San José del Palmar, Chocó, Colombia, on 10 August 2026, causing deaths and damage to homes and buildings, including in Cali. Aftershocks followed on 11 and 13 August. By 12 September 2026, the UNGRD had begun three months of payments to households whose homes were destroyed or uninhabitable. No later source was found on the current status.",
+    "searches": 3,
+    "summary": "A magnitude 7.4 earthquake struck on 10 August 2026, with its epicentre at San José del Palmar in Chocó, Colombia. Sources conflict on the toll. El Contraste reports 284 deaths and 379 missing. The earthquake itself is over, but its direct effects are still being handled. IFRC said search-and-rescue had concluded in most areas by 10 September, and its Emergency Appeal was 69.6% funded as of 27 October.",
     "ongoing": true,
     "places": [
       {
         "name": "San José del Palmar",
         "admin": "Chocó",
         "country": "CO",
-        "kind": "district",
-        "impact": "Epicentre; at least 400 homes seriously damaged, 40 collapsed"
+        "kind": "town",
+        "impact": "Epicentre; 441 homes sank, cracked or lost roofs"
       },
       {
-        "name": "Sipí",
+        "name": "Quibdó",
         "admin": "Chocó",
         "country": "CO",
-        "kind": "district",
-        "impact": "Among the most affected municipalities in Chocó"
+        "kind": "city",
+        "impact": "1,200 homes affected; 72 completely destroyed"
+      },
+      {
+        "name": "Chocó",
+        "country": "CO",
+        "kind": "region",
+        "impact": "Serious damage and injuries; 13 deaths reported"
+      },
+      {
+        "name": "Marín",
+        "admin": "Caldas",
+        "country": "CO",
+        "kind": "town",
+        "impact": "About 400 homes affected; 20 structures collapsed"
+      },
+      {
+        "name": "Manizales",
+        "admin": "Caldas",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Partial collapse of metropolitan cathedral"
       },
       {
         "name": "Cali",
         "admin": "Valle del Cauca",
         "country": "CO",
         "kind": "city",
-        "impact": "At least 85 deaths; buildings collapsed"
+        "impact": "Collapsed building; rescuers worked at site"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "287",
-        "sourceName": "abceconomia.co",
-        "sourceUrl": "https://abceconomia.co/2026/08/14/ungrd-reporte-terremoto-san-jose-del-palmar-fallecidos-heridos-afectados-agosto-2026/"
+        "value": "284",
+        "sourceName": "elcontraste.co",
+        "sourceUrl": "https://www.elcontraste.co/noticia/terremoto-san-jose-palmar-choco-284-muertos-agosto-2026/"
+      },
+      {
+        "label": "Missing",
+        "value": "379",
+        "sourceName": "elcontraste.co",
+        "sourceUrl": "https://www.elcontraste.co/noticia/terremoto-san-jose-palmar-choco-284-muertos-agosto-2026/"
       },
       {
         "label": "People affected",
-        "value": "24,000 people",
-        "sourceName": "forbes.co",
-        "sourceUrl": "https://forbes.co/actualidad/cruz-roja-busca-us30-millones-para-apoyar-a-24-000-afectados-por-el-terremoto"
-      },
-      {
-        "label": "Aid payments allocated",
-        "value": "more than 3,324 million pesos",
-        "sourceName": "larepublica.co",
-        "sourceUrl": "https://www.larepublica.co/especiales/catastrofe-nacional/ungrd-inicio-pago-de-mas-de-3-324-millones-para-familias-damnificadas-por-sismo-en-choco-4479500"
+        "value": "more than 102,000 people",
+        "sourceName": "elcontraste.co",
+        "sourceUrl": "https://www.elcontraste.co/noticia/terremoto-san-jose-palmar-choco-284-muertos-agosto-2026/"
       }
     ],
     "donation": [
       {
-        "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
+        "url": "https://www.ifrc.org/emergency/colombia-earthquake-2026",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC donation page for this earthquake's Emergency Appeal, passed to Colombian Red Cross.",
+        "note": "IFRC emergency page for Colombia earthquake; Emergency Appeal MDRCO036 supports Colombian Red Cross response.",
+        "specific": true
+      },
+      {
+        "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "Spanish donation form for the Colombia earthquake appeal, one-off or monthly gifts.",
         "specific": true
       },
       {
         "url": "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU",
         "org": "Colombian Red Cross",
         "kind": "society",
-        "note": "Earthquake-specific appeal page linking to the Red Cross donation form.",
-        "specific": true
-      },
-      {
-        "url": "https://ayuda.cruzrojacolombiana.org/",
-        "org": "Colombian Red Cross",
-        "kind": "society",
-        "note": "Colombian Red Cross page asking for donations to the earthquake response.",
+        "note": "Colombian Red Cross donation page for the magnitude 7.4 Chocó earthquake.",
         "specific": true
       },
       {
         "url": "https://colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria",
-        "org": "UN in Colombia",
+        "org": "UN country team in Colombia",
         "kind": "un",
-        "note": "UN page with donate banner for this earthquake's humanitarian plan addendum.",
+        "note": "Addendum to 2026 humanitarian response plan asking donors to contribute to regional pooled fund.",
         "specific": true
+      },
+      {
+        "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC donation page for the Colombia earthquake 2026 appeal"
       }
     ],
     "sources": [
       {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/colombia/2026/09/12/la-ungrd-activo-los-pagos-para-damnificados-del-sismo-en-14-municipios-de-choco-y-el-gobierno-anuncio-el-fondo-milagro-para-la-reconstruccion/",
-        "title": "La Ungrd activó los pagos para damnificados del sismo en 14 municipios de Chocó y el Gobierno anunció el Fondo Milagro para la reconstrucción - Infobae"
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/taxonomy/term/47",
+        "title": "Earthquake"
       },
       {
-        "name": "earthquaketrack.com",
-        "url": "https://earthquaketrack.com/quakes/2026-08-10-12-34-28-utc-7-4-110",
-        "title": "7.4 Magnitude Earthquake Near San José del Palmar, Chocó, Colombia - Earthquake Track"
+        "name": "semana.com",
+        "url": "https://www.semana.com/amp/nacion/articulo/semana-llego-a-san-jose-del-palmar-el-epicentro-del-terremoto-quibdo-esta-en-ruinas/202631/",
+        "title": "SEMANA llegó a San José del Palmar, el epicentro del terremoto. Quibdó está en ruinas"
       },
       {
-        "name": "elcolombiano.com",
-        "url": "https://www.elcolombiano.com/colombia/terremoto-colombia-san-jose-del-palmar-choco-epicentro-LA39939763",
-        "title": "Así se vivió el sacudón en San José del Palmar, en Chocó, epicentro del terremoto"
-      },
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/colombia/2026/08/10/en-vivo-fuerte-temblor-de-74-se-sintio-en-colombia-cali-y-manizales-reportan-derrumbes-en-edificaciones/",
-        "title": "Fuerte temblor de 7,4 se sintió en Colombia el 10 de agosto: volvió a temblar en el Chocó y la Ungrd reporta 285 fallecidos en todo el país - Infobae"
-      },
-      {
-        "name": "cnn.com",
-        "url": "https://www.cnn.com/2026/08/10/world/live-news/colombia-earthquake-san-jose-del-palmar",
-        "title": "August 10, 2026: Death toll rises to 132 following 7.4 magnitude earthquake in Colombia"
+        "name": "elcontraste.co",
+        "url": "https://www.elcontraste.co/noticia/terremoto-san-jose-palmar-choco-284-muertos-agosto-2026/",
+        "title": "Terremoto de 7,4 en San José del Palmar deja 284 muertos, 379 desaparecidos y más de 102 mil afectados — El Contraste"
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-29T20:03:15.927Z",
-    "donationSearched": "2026-10-27T21:08:09.862Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2,
     "direct": [
       {
-        "url": "https://www.globalgiving.org/projects/colombia-earthquake-relief-fund/",
-        "org": "GlobalGiving",
-        "kind": "globalgiving",
-        "note": "Pooled fund for local organisations' emergency response, medical care, shelter, food and water.",
-        "title": "Colombia Earthquake Relief Fund - GlobalGiving",
-        "published": "2026-08-20T23:02:19.626Z"
-      },
-      {
         "url": "https://www.globalgiving.org/projects/colombia-earthquake-response/",
-        "org": "Direct Relief",
+        "org": "Direct Relief (via GlobalGiving)",
         "kind": "globalgiving",
-        "note": "Air transport of medical supplies and blood into hard-to-reach Chocó areas.",
+        "note": "Emergency air transport of medical staff, supplies and blood to areas cut off near Chocó epicentre.",
         "title": "Colombia Earthquake Response 2026 - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/clean-water-for-earthquake-victims-in-colombia/",
-        "org": "Women for Conservation",
-        "kind": "globalgiving",
-        "note": "Water filters for over 200 families in Palo Seco, Buenaventura.",
-        "title": "Water Filters for Colombian Earthquake Survivors - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/colombia-earthquake-help-families-recover/",
-        "org": "TECHO Colombia",
-        "kind": "globalgiving",
-        "note": "Building emergency homes in Valle del Cauca, Chocó and the Coffee Region.",
-        "title": "Rebuild Homes for Colombia Earthquake Families - GlobalGiving"
       },
       {
         "url": "https://www.directrelief.org/emergency/colombia-earthquake-2026/",
         "org": "Direct Relief",
         "kind": "local",
-        "note": "Medical equipment and emergency grants for Colombian health providers.",
+        "note": "Colombia Earthquake Response Fund for medical resources and emergency grants to Colombian health responders.",
         "title": "Colombia Earthquake 2026",
-        "published": "2026-09-24T23:02:19.626Z"
+        "published": "2026-09-25T00:20:11.381Z"
+      },
+      {
+        "url": "https://www.globalgiving.org/fundraisers/89607/",
+        "org": "Fundación United Way Colombia",
+        "kind": "globalgiving",
+        "note": "Food, clean water and basic supplies through vetted local partners.",
+        "title": "$7.4K for Colombia"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/clean-water-for-earthquake-victims-in-colombia/",
+        "org": "Not named in source",
+        "kind": "globalgiving",
+        "note": "Water filters for over 200 families in Palo Seco, Buenaventura.",
+        "title": "Water Filters for Colombian Earthquake Survivors - GlobalGiving"
       },
       {
         "url": "https://www.savethechildren.net/donate/colombia-earthquake",
         "org": "Save the Children",
         "kind": "local",
-        "note": "Emergency fund for children and families.",
+        "note": "Appeal supporting children and families affected by the earthquake.",
         "title": "Save the Children International",
-        "published": "2020-04-15T23:02:19.626Z"
+        "published": "2020-04-16T00:20:11.381Z"
       },
       {
-        "url": "https://convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026/",
-        "org": "Convoy of Hope",
+        "url": "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/",
+        "org": "Oxfam",
         "kind": "local",
-        "note": "Crisis Relief Fund for earthquake survivors.",
-        "title": "Colombia Earthquake",
-        "published": "2026-08-11T23:02:19.626Z"
+        "note": "Colombia Earthquake Appeal helping affected people.",
+        "title": "Donate to Colombia Earthquake Appeal",
+        "published": "2026-08-13T00:20:11.381Z"
       },
       {
         "url": "https://www.rescue.org/help-survivors-of-Colombia-earthquake",
         "org": "International Rescue Committee",
         "kind": "local",
-        "note": "Health care, protection and aid for affected communities.",
+        "note": "Aid to survivors and affected communities after the earthquake.",
         "title": "Colombia earthquake: Donate to help survivors",
-        "published": "2026-08-14T23:02:19.626Z"
+        "published": "2026-08-15T00:20:11.381Z"
       }
-    ]
+    ],
+    "donationSearched": "2026-10-30T00:20:11.381Z",
+    "directSearched": "2026-10-30T00:20:11.381Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-30T00:20:11.381Z"
   },
   "ifrc-earthquake-8060": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -5813,7 +5759,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -6321,7 +6267,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2,
@@ -6522,40 +6468,42 @@
     ],
     "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
         "org": "Penny Appeal USA",
         "kind": "local",
-        "note": "Nuristan flood emergency donations, with one-time and monthly giving options.",
+        "note": "Flood relief donations for Nuristan, with one-time and monthly giving options.",
         "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan - Penny Appeal USA",
-        "published": "2026-07-24T21:25:14.833Z"
-      },
-      {
-        "url": "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/",
-        "org": "Famidi",
-        "kind": "local",
-        "note": "Local flood response in Nuristan via a secure donation form.",
-        "title": "Nuristan Flood Emergency: Famidi activates local response",
-        "published": "2026-07-24T21:25:14.833Z"
+        "published": "2026-07-25T00:20:11.381Z"
       },
       {
         "url": "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal",
         "org": "Hayrat Aid",
         "kind": "local",
-        "note": "Food, clean water and shelter for Nuristan flood-affected families.",
+        "note": "Emergency appeal funding food, clean water and shelter materials for Nuristan flood survivors.",
         "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
       },
       {
-        "url": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods",
-        "org": "Humanitarian Coalition (Canada) with Community World Service Asia",
+        "url": "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/",
+        "org": "Famidi",
         "kind": "local",
-        "note": "Nuristan flood recovery response; pooled fund also covering general disaster readiness.",
+        "note": "Flexible relief for verified urgent needs from the Nuristan flood emergency.",
+        "title": "Nuristan Flood Emergency: Famidi activates local response",
+        "published": "2026-07-25T00:20:11.381Z"
+      },
+      {
+        "url": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods",
+        "org": "Humanitarian Coalition (Canada), with Community World Service Asia",
+        "kind": "local",
+        "note": "Recovery cash assistance for over 350 households in Nuristan and Nangarhar.",
         "title": "Afghanistan: Nuristan Floods"
       }
-    ]
+    ],
+    "directSearched": "2026-10-30T00:20:11.381Z",
+    "directSearchVersion": 2
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6706,7 +6654,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2
@@ -7208,7 +7156,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-28T23:02:19.626Z",
     "directSearched": "2026-10-28T23:02:19.626Z",
     "directSearchVersion": 2,
@@ -10230,7 +10178,7 @@
       }
     ],
     "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-10-29T20:03:15.927Z",
+    "seen": "2026-10-30T00:20:11.381Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2
