@@ -417,7 +417,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-30T00:20:11.381Z"
   },
   "gdacs-cyclone-tc-1001342": {
@@ -465,7 +465,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-30T13:30:58.872Z",
     "directSearched": "2026-10-30T13:30:58.872Z",
     "directSearchVersion": 2
@@ -564,7 +564,7 @@
     ],
     "sources": [],
     "membersHash": "eonet,gdacs|IN#d1e12953",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -635,7 +635,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2
@@ -651,7 +651,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -709,7 +709,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2
@@ -1015,7 +1015,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -1375,10 +1375,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-30T19:53:42.295Z",
     "directSearched": "2026-10-30T19:53:42.295Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-30T19:53:42.295Z"
+    "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -4100,10 +4100,10 @@
       }
     ],
     "membersHash": "gdacs,news|SY#82ae10ac",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-30T19:53:42.295Z",
     "directSearched": "2026-10-30T19:53:42.295Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-30T19:53:42.295Z"
+    "directSearchVersion": 2
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4150,148 +4150,133 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-volcano-vo-1000151": {
-    "at": "2026-10-28T23:02:19.626Z",
+    "at": "2026-10-31T00:14:33.222Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Taal Volcano in Batangas, Philippines, began erupting on 8 October 2026, with phreatomagmatic eruptions and tremor continuing at low level since then. PHIVOLCS kept Alert Level 1 after a minor eruption on 22 October that sent a plume 1,200 meters above the main crater. More than 100 Agoncillo residents were evacuated after the first eruption. The notes found no later evacuation status.",
+    "searches": 4,
+    "summary": "Taal Volcano in Batangas, Philippines, began erupting on 8 October 2026. Phivolcs logged a minor phreatomagmatic eruption at the main crater on 21 October, the sixth eruption that month. Taal remains at Alert Level 1. Ashfall and evacuations were reported in Agoncillo, Batangas, on 9 October. The notes found no reports dated after 21 October.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Taal Volcano Island",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "site",
-        "impact": "Source of activity; entry prohibited"
-      },
       {
         "name": "Agoncillo",
         "admin": "Batangas",
         "country": "PH",
-        "kind": "town",
-        "impact": "Over 100 residents evacuated"
+        "kind": "district",
+        "impact": "Ashfall, evacuation; Bilibinwang, Banyaga most affected"
       },
       {
         "name": "Lemery",
         "admin": "Batangas",
         "country": "PH",
-        "kind": "town",
-        "impact": "Thin ashfall; residents advised to wear masks"
+        "kind": "district",
+        "impact": "Thin ashfall warning; no impact reported"
       },
       {
         "name": "San Nicolas",
         "admin": "Batangas",
         "country": "PH",
-        "kind": "town",
-        "impact": "Thin ashfall; residents advised to wear masks"
+        "kind": "district",
+        "impact": "Thin ashfall warning; no impact reported"
       },
       {
         "name": "Taal",
         "admin": "Batangas",
         "country": "PH",
-        "kind": "town",
-        "impact": "Thin ashfall; residents advised to wear masks"
+        "kind": "district",
+        "impact": "Thin ashfall warning; no impact reported"
+      },
+      {
+        "name": "Taal Volcano Island",
+        "admin": "Batangas",
+        "country": "PH",
+        "kind": "site",
+        "impact": "Entry prohibited under Alert Level 1"
       }
     ],
     "figures": [
       {
         "label": "Evacuated",
-        "value": "107 people",
+        "value": "107 individuals in 29 families",
         "sourceName": "newsinfo.inquirer.net",
         "sourceUrl": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption"
-      },
-      {
-        "label": "Evacuees served hot meals",
-        "value": "143 people",
-        "sourceName": "newswav.com",
-        "sourceUrl": "https://newswav.com/article/red-cross-serves-meals-to-taal-evacuees-in-batangas-A2610_Nix0Az"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "dzrh.com.ph",
-        "url": "https://www.dzrh.com.ph/post/taal-volcano-records-minor-eruption-alert-level-1-remains-phivolcs",
-        "title": "Taal Volcano records minor eruption; alert level 1 remains"
+        "name": "astig.ph",
+        "url": "https://astig.ph/taal-volcano-phreatomagmatic-eruption-october-21-2026/",
+        "title": "Taal Volcano’s smallest eruption this October came with its highest sulfur dioxide reading"
       },
       {
-        "name": "mb.com.ph",
-        "url": "https://mb.com.ph/2026/10/08/phivolcs-records-minor-phreatomagmatic-eruption-at-taal-volcano",
-        "title": "Manila Bulletin - Phivolcs records minor phreatomagmatic eruption at Taal Volcano"
-      },
-      {
-        "name": "tribune.net.ph",
-        "url": "https://tribune.net.ph/2026/10/20/taal-records-fresh-eruption-remains-at-alert-level-1",
-        "title": "Taal Volcano Erupts Again: Alert Level 1 Maintained Amid Volcanic Unrest"
-      },
-      {
-        "name": "gmanetwork.com",
-        "url": "https://www.gmanetwork.com/news/topstories/regions/1005406/taal-eruption-leaves-ashfall-in-agoncillo-batangas-over-100-residents-evacuated/story/",
-        "title": "Ashfall from Taal blankets Agoncillo, Batangas; over 100 residents evacuated"
-      },
-      {
-        "name": "philstar.com",
-        "url": "https://www.philstar.com/nation/2026/10/10/2562095/minor-eruption-logged-taal",
-        "title": "Minor eruption logged in Taal"
+        "name": "newsinfo.inquirer.net",
+        "url": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption",
+        "title": "29 families flee homes after Taal Volcano minor eruption"
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-30T19:53:42.295Z",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-31T00:14:33.222Z",
+    "directSearched": "2026-10-31T00:14:33.222Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/taal-volcano-eruption-relief-and-recovery/donate/",
+        "org": "GlobalGiving",
+        "kind": "globalgiving",
+        "note": "Relief and recovery for Taal Volcano eruption in Batangas, Philippines.",
+        "title": "Donate to Taal Volcano Eruption Relief Fund - GlobalGiving"
+      }
+    ],
+    "seen": "2026-10-31T00:14:33.222Z"
   },
   "gdacs-volcano-vo-1000152": {
-    "at": "2026-10-28T23:02:19.626Z",
+    "at": "2026-10-31T00:14:33.222Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Kanlaon Volcano in the Philippines erupted on 10 October 2026, sending an ash plume about 6 km high. Ash emissions continued on 13 October. PHIVOLCS kept Alert Level 2 as of 18 October, and the 4 km permanent danger zone must remain evacuated. No source after 18 October was found, so current activity is not reported.",
+    "summary": "Kanlaon Volcano on Negros Island, Philippines, erupted on 2026-10-10 and sent an ash plume about 6 km high. As of 2026-10-12, Phivolcs kept Alert Level 2 and said another explosive eruption is possible. The Office of Civil Defense reported about 24,000 families affected by ash emissions. The notes found no reports dated after 2026-10-14.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Negros Island",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Eruption felt across island; ashfall warnings issued"
-      },
       {
         "name": "Canlaon City",
         "admin": "Negros Oriental",
         "country": "PH",
         "kind": "city",
-        "impact": "Light ashfalls reached two barangays"
+        "impact": "light ashfall reached two barangays"
+      },
+      {
+        "name": "Negros Occidental",
+        "country": "PH",
+        "kind": "region",
+        "impact": "residents warned of possible ashfall"
+      },
+      {
+        "name": "Negros Oriental",
+        "country": "PH",
+        "kind": "region",
+        "impact": "residents warned of possible ashfall"
+      },
+      {
+        "name": "Kanlaon Volcano",
+        "country": "PH",
+        "kind": "site",
+        "impact": "4-km danger zone should stay evacuated"
       }
     ],
     "figures": [
       {
-        "label": "Families affected",
-        "value": "about 24,000",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html"
+        "label": "People affected",
+        "value": "about 94,000 individuals",
+        "sourceName": "gmanetwork.com",
+        "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
       },
       {
-        "label": "Individuals affected",
-        "value": "about 94,000",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html"
+        "label": "Families affected",
+        "value": "about 24,000 families",
+        "sourceName": "gmanetwork.com",
+        "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
       }
     ],
     "donation": [],
     "sources": [
-      {
-        "name": "philstar.com",
-        "url": "https://www.philstar.com/headlines/climate-and-environment/2026/10/18/2564066/kanlaon-records-4-volcanic-quakes-including-48-minute-tremor",
-        "title": "Kanlaon records 4 volcanic quakes, including 48-minute tremor"
-      },
-      {
-        "name": "mb.com.ph",
-        "url": "https://mb.com.ph/2026/10/13/kanlaon-continues-spewing-ash-after-oct-10-eruption",
-        "title": "Manila Bulletin - Kanlaon continues spewing ash after Oct 10 eruption"
-      },
-      {
-        "name": "tribune.net.ph",
-        "url": "https://tribune.net.ph/2026/10/10/kanlaon-erupts-sends-ash-plume-6-kms-high",
-        "title": "Kanlaon erupts, sends ash plume 6 kms high"
-      },
       {
         "name": "english.news.cn",
         "url": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html",
@@ -4299,10 +4284,10 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-30T19:53:42.295Z",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-30T00:20:11.381Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-31T00:14:33.222Z",
+    "directSearched": "2026-10-31T00:14:33.222Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-31T00:14:33.222Z"
   },
   "gdacs-wildfire-wf-1032497": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -5813,7 +5798,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
@@ -5900,7 +5885,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -6269,196 +6254,175 @@
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
-    "at": "2026-10-28T23:02:19.626Z",
+    "at": "2026-10-31T00:14:33.222Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Heavy monsoon rain and runoff from upstream hills flooded much of Cox's Bazar district in south-eastern Bangladesh from 5 July 2026. Parts of Chattogram, Bandarban and other districts were also affected. IFRC's DREF operation, started 14 July 2026, runs to 31 January 2027. By late August 2026, no monitored river station was above danger level, and the response had moved to damage assessment and recovery.",
+    "searches": 2,
+    "summary": "Flooding, landslides and heavy rain from a monsoon depression hit Bangladesh from 14 July 2026, most severely in Cox's Bazar District. UN Situation Report #2 (23 July) gave 59 deaths and 1.28 million people affected across seven districts. The latest report found is dated 20 August 2026, so the situation as of late October could not be confirmed.",
     "ongoing": true,
     "places": [
       {
         "name": "Cox's Bazar",
+        "admin": "Chattogram Division",
         "country": "BD",
         "kind": "district",
-        "impact": "70 of 71 unions, 4 municipalities inundated"
+        "impact": "Nearly half inundated; 1,613 houses damaged"
       },
       {
         "name": "Pekua",
         "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "About 95% of land flooded"
-      },
-      {
-        "name": "Matamuhuri",
-        "admin": "Cox's Bazar",
-        "country": "BD",
-        "kind": "district",
-        "impact": "Flooded"
+        "impact": "Worst hit; 450 houses damaged"
       },
       {
         "name": "Chakaria",
         "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "Flooded"
+        "impact": "Worst hit; flooding and landslides"
       },
       {
         "name": "Kutubdia",
         "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "Flooded"
+        "impact": "Worst hit; flooding and landslides"
       },
       {
         "name": "Maheshkhali",
         "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "Flooded"
+        "impact": "Worst hit; flooding and landslides"
       },
       {
-        "name": "Rohingya refugee camps",
+        "name": "Teknaf",
         "admin": "Cox's Bazar",
         "country": "BD",
-        "kind": "site",
-        "impact": "304 incidents affected 28,091 people"
+        "kind": "district",
+        "impact": "Worst hit; flooding and landslides"
       },
       {
-        "name": "Bandarban",
+        "name": "Ukhiya",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Worst hit; Rohingya camps affected"
+      },
+      {
+        "name": "Banshkhali",
         "admin": "Chattogram Division",
         "country": "BD",
         "kind": "district",
-        "impact": "Sangu River over danger level by 2m+"
-      },
-      {
-        "name": "Rangamati",
-        "admin": "Chattogram Division",
-        "country": "BD",
-        "kind": "district",
-        "impact": "Severely affected"
-      },
-      {
-        "name": "Khagrachhari",
-        "admin": "Chattogram Division",
-        "country": "BD",
-        "kind": "district",
-        "impact": "Severely affected"
+        "impact": "Named in relief allocation"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "51",
-        "sourceName": "adrc.asia",
-        "sourceUrl": "https://www.adrc.asia/view_disaster_en.php?NationCode=50&Lang=en&Key=2834"
+        "value": "59",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
       },
       {
         "label": "People affected",
-        "value": "1,074,534 people",
-        "sourceName": "go.ifrc.org",
-        "sourceUrl": "https://go.ifrc.org/field-reports/18466"
+        "value": "1.28 million people",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+      },
+      {
+        "label": "Houses damaged or destroyed",
+        "value": "74,479",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+      },
+      {
+        "label": "Evacuated",
+        "value": "more than 38,000 people",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319254-bangladesh-situation-report-1-flash-flood-and-landslides-13-july-2026"
+      },
+      {
+        "label": "Families displaced",
+        "value": "267,918 families",
+        "sourceName": "watchers.news",
+        "sourceUrl": "https://watchers.news/2026/07/13/floods-and-landslides-kill-51-affect-more-than-1-million-in-bangladesh/"
       }
     ],
     "donation": [
       {
-        "url": "https://go.ifrc.org/emergencies/8013/overview",
-        "org": "IFRC with Bangladesh Red Crescent Society",
+        "url": "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/",
+        "org": "Bangladesh Red Crescent Society",
         "kind": "society",
-        "note": "IFRC emergency page for DREF MDRBD040, Cox's Bazar monsoon floods; funding reported at 100%.",
+        "note": "Emergency appeal for the 2026 monsoon emergency, covering floods and landslides.",
         "specific": true
       },
       {
-        "url": "https://bdrcs.org/bangladesh-flood/",
+        "url": "https://go.ifrc.org/emergencies/8013/overview",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC operation page for DREF funding for this flood event.",
+        "specific": true
+      },
+      {
+        "url": "https://bdrcs.org/",
         "org": "Bangladesh Red Crescent Society",
         "kind": "society",
-        "note": "General flood fund with a donate button, covering several floods rather than this event.",
+        "note": "General Red Crescent donation page, not specific to this event.",
         "specific": false
       }
     ],
     "sources": [
       {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/emergencies/8013/overview",
-        "title": "IFRC GO - Emergency - Bangladesh: Monsoon Depression in Cox's Bazar"
-      },
-      {
-        "name": "mappr.co",
-        "url": "https://www.mappr.co/bangladesh-monsoon-floods-2026/",
-        "title": "Deadly Monsoon Floods and Landslides Hit Bangladesh: Mapping the 2026 Disaster"
-      },
-      {
-        "name": "thedailystar.net",
-        "url": "https://www.thedailystar.net/news/environment/climate-crisis/natural-disaster/news/flood-situation-worsens-again-coxs-bazar-after-heavy-rains-4221346",
-        "title": "Flood situation worsens again in Cox's Bazar after heavy rains"
-      },
-      {
-        "name": "dhakatribune.com",
-        "url": "https://www.dhakatribune.com/bangladesh/nation/415385/floodwater-recedes-in-cox%E2%80%99s-bazar-exposing-trail",
-        "title": "Floodwater recedes in Cox’s Bazar, exposing trail of destruction"
-      },
-      {
-        "name": "adrc.asia",
-        "url": "https://www.adrc.asia/view_disaster_en.php?NationCode=50&Lang=en&Key=2834",
-        "title": "Bangladesh: Flood: 2026/07/05"
-      },
-      {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/field-reports/18466",
-        "title": "BGD: Flood - 07-2026 - Bangladesh Floods 2026"
+        "name": "jagonews24.com",
+        "url": "https://www.jagonews24.com/en/national/news/94272",
+        "title": "49% of Cox's Bazar inundated in 8-day deluge, 32 dead"
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-30T19:53:42.295Z",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2,
     "direct": [
+      {
+        "url": "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/",
+        "org": "Human Relief Foundation (HRF)",
+        "kind": "local",
+        "note": "Flood appeal for Cox's Bazar, including Rohingya families: food, shelter, hygiene aid.",
+        "title": "Donate to Bangladesh Emergency Flood Relief 2026"
+      },
+      {
+        "url": "https://islamicrelief.org.au/our-work/emergencies/bangladesh-floods/",
+        "org": "Islamic Relief Australia",
+        "kind": "local",
+        "note": "Hygiene kits, food packs, health care and shelter for vulnerable families.",
+        "title": "Bangladesh Floods : Emergency Appeal - Islamic Relief Australia",
+        "published": "2026-07-23T00:14:33.222Z"
+      },
+      {
+        "url": "https://islamic-relief.ie/bangladesh-floods-appeal-2/",
+        "org": "Islamic Relief Ireland",
+        "kind": "local",
+        "note": "Hygiene kits, emergency cash grants and water for flood-hit families in Cox's Bazar.",
+        "title": "Bangladesh Floods Appeal - Donate Now",
+        "published": "2026-07-16T00:14:33.222Z"
+      },
       {
         "url": "https://humanappealusa.org/donate/projects/emergencies/bangladesh-emergency-fund",
         "org": "Human Appeal (USA)",
         "kind": "local",
-        "note": "Food packs, shelter and urgent care for flood survivors, including Rohingya camps.",
+        "note": "Food packs, shelter and urgent care, prioritising female-headed households, older people and people with disabilities.",
         "title": "Bangladesh Emergency Fund"
       },
       {
-        "url": "https://www.salamcharity.org.uk/appeals/bangladesh-emergency/",
-        "org": "Salam Charity (UK)",
+        "url": "https://muslimcharity.org.uk/appeals/bangladesh-floods-emergency",
+        "org": "Muslim Charity (UK)",
         "kind": "local",
-        "note": "Bangladesh flood appeal; relief after a landslide buried an Islamic primary school.",
-        "title": "Salam Charity UK Appeals"
-      },
-      {
-        "url": "https://onenationuk.org/bangladeshfloods",
-        "org": "One Nation (UK)",
-        "kind": "local",
-        "note": "Hot meals, food parcels and clean water in Cox's Bazar and nearby districts.",
-        "title": "Bangladesh Floods Appeal",
-        "published": "2026-07-16T23:02:19.626Z"
-      },
-      {
-        "url": "https://muslimhands.org.uk/giving/emergency-appeals/bangladesh",
-        "org": "Muslim Hands (UK)",
-        "kind": "local",
-        "note": "Food, drinking water and hygiene kits for flood-hit areas, including Cox's Bazar.",
-        "title": "Bangladesh Floods Emergency Appeal",
-        "published": "2026-08-08T23:02:19.626Z"
-      },
-      {
-        "url": "https://alkhaircharity.org/en/project/438",
-        "org": "Al-Khair Foundation",
-        "kind": "local",
-        "note": "Meals, food, water and shelter items in Cox's Bazar and other affected areas.",
-        "title": "Donate to Support Those Affected by the Bangladesh Floods",
-        "published": "2026-07-15T23:02:19.626Z"
-      },
-      {
-        "url": "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/",
-        "org": "Human Relief Foundation (UK)",
-        "kind": "local",
-        "note": "Emergency food, shelter and hygiene aid for flood families and Rohingya refugees.",
-        "title": "Donate to Bangladesh Emergency Flood Relief 2026"
+        "note": "Relief in Cox's Bazar and Chattogram for flood-affected people.",
+        "title": "Bangladesh Flood Emergency Relief and Appeal"
       }
-    ]
+    ],
+    "donationSearched": "2026-10-31T00:14:33.222Z",
+    "directSearched": "2026-10-31T00:14:33.222Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-31T00:14:33.222Z"
   },
   "ifrc-flood-8014": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6525,52 +6489,39 @@
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
-    "at": "2026-10-28T23:02:19.626Z",
+    "at": "2026-10-31T00:14:33.222Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Flash floods struck several provinces of Afghanistan from 20 July 2026, with Nuristan Province the worst hit. Parun was named as the epicentre. Reported deaths vary by source, from 23 in Nuristan to at least 26 across eastern Afghanistan. Latest located update is an OCHA report of 28 July 2026; no later source confirms whether search or relief continues.",
+    "searches": 2,
+    "summary": "Flash floods struck Nuristan Province, Afghanistan, from 19 July 2026, with the worst damage in Parun City, the provincial capital. By 28 July, OCHA reported flood impacts across several regions, with Nuristan the most severely affected. Search-and-rescue operations were under way in late July; the notes do not say whether they ended. Death tolls in sources range from 20 to 31.",
     "ongoing": true,
     "places": [
       {
-        "name": "Parun",
-        "admin": "Nuristan Province",
+        "name": "Parun City",
+        "admin": "Nuristan",
         "country": "AF",
-        "kind": "town",
-        "impact": "Flash flood; homes, shops, hotels, mosque destroyed or damaged"
+        "kind": "city",
+        "impact": "Worst devastation; residential and commercial areas hit"
       },
       {
-        "name": "Nuristan Province",
+        "name": "Mandol",
+        "admin": "Nuristan",
         "country": "AF",
-        "kind": "region",
-        "impact": "Flooding; 23 deaths reported in province"
+        "kind": "district",
+        "impact": "Flash floods damaged houses, roads and farmland; 30 injured"
       },
       {
         "name": "Torkham",
-        "admin": "Nangarhar Province",
         "country": "AF",
         "kind": "site",
-        "impact": "Border movement disrupted; deaths at returnee transit camp"
-      },
-      {
-        "name": "Alingar District",
-        "admin": "Laghman Province",
-        "country": "AF",
-        "kind": "district",
-        "impact": "Flooded"
+        "impact": "Flooding at returnee transit camp killed three"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "at least 26 across eastern Afghanistan, including 23 in…",
+        "value": "at least 26",
         "sourceName": "news.un.org",
         "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
-      },
-      {
-        "label": "Injured",
-        "value": "about 80",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan"
       },
       {
         "label": "Missing",
@@ -6579,72 +6530,79 @@
         "sourceUrl": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/"
       },
       {
+        "label": "Injured",
+        "value": "9",
+        "sourceName": "news.un.org",
+        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
+      },
+      {
         "label": "People affected",
-        "value": "more than 15,000",
+        "value": "more than 15,000 people",
         "sourceName": "humanitariancoalition.ca",
         "sourceUrl": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods"
       },
       {
         "label": "Houses destroyed",
-        "value": "378",
-        "sourceName": "reliefweb.int",
-        "sourceUrl": "https://reliefweb.int/report/afghanistan/afghanistan-nuristan-floods-final-report-dref-n-mdraf009"
+        "value": "22, with 45 more severely damaged",
+        "sourceName": "news.un.org",
+        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
       }
     ],
-    "donation": [
+    "donation": [],
+    "sources": [
       {
-        "url": "https://go.ifrc.org/appeals/all?region=2",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC appeals listing including the Afghanistan - Flood DREF MDRAF022; not a donation form.",
-        "specific": false
+        "name": "global-flood.emergency.copernicus.eu",
+        "url": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026",
+        "title": "Floods in Nuristan Province, Afghanistan, July 2026 - News"
       },
       {
-        "url": "https://www.ifrc.org/national-societies-directory/afghan-red-crescent",
-        "org": "Afghan Red Crescent via IFRC",
-        "kind": "society",
-        "note": "Afghan Red Crescent directory page listing the Afghanistan - Flood DREF operation document.",
-        "specific": false
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan",
+        "title": "Monsoon-driven flash flooding kills at least 20 in Afghanistan"
+      },
+      {
+        "name": "news.un.org",
+        "url": "https://news.un.org/en/story/2026/07/1167996",
+        "title": "Deadly Afghanistan floods kill at least 26 as aid agencies race to reach survivors"
       }
     ],
-    "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-30T19:53:42.295Z",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-30T00:20:11.381Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
         "org": "Penny Appeal USA",
         "kind": "local",
-        "note": "Flood relief donations for Nuristan, with one-time and monthly giving options.",
+        "note": "Emergency aid for Nuristan flood survivors, with one-time or monthly gifts.",
         "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan - Penny Appeal USA",
-        "published": "2026-07-25T00:20:11.381Z"
+        "published": "2026-07-25T00:14:33.222Z"
       },
       {
         "url": "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal",
         "org": "Hayrat Aid",
         "kind": "local",
-        "note": "Emergency appeal funding food, clean water and shelter materials for Nuristan flood survivors.",
+        "note": "Shelter, food, clean water and basic supplies for Nuristan flood victims.",
         "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
+      },
+      {
+        "url": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods",
+        "org": "Humanitarian Coalition",
+        "kind": "local",
+        "note": "Cash assistance of about $170 for flood-hit households in Nuristan and Nangarhar.",
+        "title": "Afghanistan: Nuristan Floods"
       },
       {
         "url": "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/",
         "org": "Famidi",
         "kind": "local",
-        "note": "Flexible relief for verified urgent needs from the Nuristan flood emergency.",
+        "note": "Safe water, food, shelter and medical support in Parun.",
         "title": "Nuristan Flood Emergency: Famidi activates local response",
-        "published": "2026-07-25T00:20:11.381Z"
-      },
-      {
-        "url": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods",
-        "org": "Humanitarian Coalition (Canada), with Community World Service Asia",
-        "kind": "local",
-        "note": "Recovery cash assistance for over 350 households in Nuristan and Nangarhar.",
-        "title": "Afghanistan: Nuristan Floods"
+        "published": "2026-07-25T00:14:33.222Z"
       }
-    ]
+    ],
+    "donationSearched": "2026-10-31T00:14:33.222Z",
+    "directSearched": "2026-10-31T00:14:33.222Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-31T00:14:33.222Z"
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6770,35 +6728,112 @@
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
-    "at": "2026-10-28T23:02:19.626Z",
+    "at": "2026-10-31T00:14:33.222Z",
     "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "An IFRC Orange alert with a DREF was issued for a monsoon flood in Myanmar, with a start and update date of 2026-08-12. The research could not confirm the event's scale, affected areas, or current status from any source as of 2026-10-28.",
+    "searches": 4,
+    "summary": "Monsoon flooding in Myanmar began around 12 August 2026, swamping villages and paddy fields in several regions, including Sagaing, Ayeyarwady and Kayin. Reports list deaths and large numbers displaced. The latest report found, dated 12 October 2026, says the Myanmar Red Cross Society is assessing needs at evacuation centres in Launglon Township, Tanintharyi Region, and volunteers continue to support affected communities. No later reports were found.",
     "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [
+    "places": [
       {
-        "url": "https://go.ifrc.org/appeals/all?region=2",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC GO appeals list including MDRMM024 Myanmar Floods DREF, not a donation form.",
-        "specific": true
+        "name": "Wetlet",
+        "admin": "Sagaing Region",
+        "country": "MM",
+        "kind": "town",
+        "impact": "villages and paddy fields swamped"
       },
       {
-        "url": "https://go.ifrc.org/countries/121",
-        "org": "IFRC",
+        "name": "Khin-U",
+        "admin": "Sagaing Region",
+        "country": "MM",
+        "kind": "town",
+        "impact": "almost 100 children sick from flooding"
+      },
+      {
+        "name": "Lemyethna",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "town",
+        "impact": "over 39,000 residents from 9,000 households affected"
+      },
+      {
+        "name": "Kayin State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "households displaced and one casualty from Thanlwin River overflow"
+      },
+      {
+        "name": "Launglon",
+        "admin": "Tanintharyi Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "temporary evacuation centres in seven villages"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "25",
+        "sourceName": "hngn.com",
+        "sourceUrl": "https://www.hngn.com/articles/272777/20260816/myanmar-junta-bombs-flood-zones-blocks-aid-monsoon-kills-25-displaces-450000.htm"
+      },
+      {
+        "label": "Displaced",
+        "value": "450,000 people",
+        "sourceName": "hngn.com",
+        "sourceUrl": "https://www.hngn.com/articles/272777/20260816/myanmar-junta-bombs-flood-zones-blocks-aid-monsoon-kills-25-displaces-450000.htm"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://www.redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA/",
+        "org": "Myanmar Red Cross Society",
         "kind": "society",
-        "note": "IFRC GO Myanmar country page showing MDRMM024 DREF; funding figure conflicts.",
+        "note": "General Myanmar Red Cross emergency fund for disasters; not specific to this flood.",
+        "specific": false
+      },
+      {
+        "url": "https://www.redcross.org.mm/en_US/donate/",
+        "org": "Myanmar Red Cross Society",
+        "kind": "society",
+        "note": "General Myanmar Red Cross donation page with bank accounts; not tied to this event.",
         "specific": false
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "redcross.org.mm",
+        "url": "https://www.redcross.org.mm/news-and-multimedia/myanmar-red-cross-society-supports-flood-affected-communities-in-tanintharyi/",
+        "title": "Myanmar Red Cross Society Supports Flood-Affected Communities in Tanintharyi"
+      },
+      {
+        "name": "thestar.com.my",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected",
+        "title": "Monsoon rains submerge villages, fields in Myanmar; thousands of people affected"
+      },
+      {
+        "name": "myanmar-now.org",
+        "url": "https://myanmar-now.org/en/news/16-dead-and-tens-of-thousands-displaced-by-flooding-across-central-myanmar-nug/",
+        "title": "16 dead and tens of thousands displaced by flooding across central Myanmar"
+      },
+      {
+        "name": "english.dvb.no",
+        "url": "https://english.dvb.no/over-440000-displaced-as-nationwide-floods-spread-in-myanmar-victims-criticize-regimes-failed-response/",
+        "title": "Over 440,000 displaced nationwide as floods spread in Myanmar; Regime criticized for lack of aid - DVB"
+      },
+      {
+        "name": "ahacentre.org",
+        "url": "https://ahacentre.org/flash-update/flash-update-no-1-flooding-in-ayeyarwady-and-kayin-myanmar-19-august-2026/",
+        "title": "FLASH UPDATE: No. 1"
+      },
+      {
+        "name": "acaps.org",
+        "url": "https://www.acaps.org/en/countries/myanmar",
+        "title": "Myanmar"
+      }
+    ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-30T19:53:42.295Z",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-31T00:14:33.222Z",
+    "seen": "2026-10-31T00:14:33.222Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -7128,94 +7163,60 @@
     "donationSearched": "2026-10-22T01:04:05.836Z"
   },
   "ifrc-flood-8073": {
-    "at": "2026-10-28T23:02:19.626Z",
+    "at": "2026-10-31T00:14:33.222Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A flash flood struck Rasuwa district in Nepal on 26 August 2026, reportedly linked to a suspected glacial lake outburst or high-altitude outburst event; the cause is not settled. Places along the Bhote Koshi and Trishuli corridor were damaged, and deaths and missing people were reported in early counts. As of 11 October 2026, relief and recovery were ongoing, with two centres across the Trishuli River still inaccessible.",
+    "summary": "A flash flood struck Rasuwa district in Nepal's Bagmati Province on 26 August 2026, around 8:30 to 9:15 AM local time, with start times differing by source. Timure, Rasuwagadhi and Syabrubesi were among the worst hit, and roads and buildings were swept away. Death, missing and affected counts vary by source. The latest source found is dated 12 October 2026, and the status is not confirmed for 31 October.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Rasuwagadhi",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "town",
+        "impact": "severe destruction reported"
+      },
       {
         "name": "Timure",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "town",
-        "impact": "severe damage to market and customs office"
+        "impact": "market, customs yard and offices swept away"
       },
       {
         "name": "Syabrubesi",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "town",
-        "impact": "severe damage; police post badly damaged"
-      },
-      {
-        "name": "Rasuwagadhi",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "severe damage"
+        "impact": "reported completely destroyed"
       },
       {
         "name": "Khalte",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "town",
-        "impact": "destroyed"
+        "impact": "reported destroyed"
       },
       {
         "name": "Rasuwa",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "severe damage; three police facilities badly damaged"
+        "impact": "declared crisis area"
       },
       {
         "name": "Nuwakot",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "named as affected district"
-      },
-      {
-        "name": "Bidur",
-        "admin": "Nuwakot",
-        "country": "NP",
-        "kind": "site",
-        "impact": "water supply project badly damaged; about 25,000 affected"
+        "impact": "declared crisis area; Betrawati-Rasuwagadhi road swept away"
       },
       {
         "name": "Dhading",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "named as affected"
-      },
-      {
-        "name": "Chitwan",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "named as affected"
-      },
-      {
-        "name": "Gorkha",
-        "admin": "Gandaki Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "named as affected"
-      },
-      {
-        "name": "Tanahun",
-        "admin": "Gandaki Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "named as affected"
-      },
-      {
-        "name": "Muglin",
-        "country": "NP",
-        "kind": "town",
-        "impact": "high alert issued downstream"
+        "impact": "declared crisis area; named as affected"
       }
     ],
     "figures": [
@@ -7226,91 +7227,90 @@
         "sourceUrl": "https://www.asia-ngo.org/en/nepal-emergency-floods-in-rasuwa/"
       },
       {
-        "label": "Injured",
-        "value": "41 receiving treatment",
-        "sourceName": "asia-ngo.org",
-        "sourceUrl": "https://www.asia-ngo.org/en/nepal-emergency-floods-in-rasuwa/"
-      },
-      {
         "label": "Missing",
         "value": "826",
+        "sourceName": "english.ratopati.com",
+        "sourceUrl": "https://english.ratopati.com/story/77534/the-river-is-raging-the-house-is-collapsing-video-report"
+      },
+      {
+        "label": "Injured",
+        "value": "466",
+        "sourceName": "care.org",
+        "sourceUrl": "https://www.care.org/news-and-stories/nepal-flash-floods-2026-care-emergency-response/"
+      },
+      {
+        "label": "Affected",
+        "value": "84,270 people",
+        "sourceName": "undp.org",
+        "sourceUrl": "https://www.undp.org/asia-pacific/nepal-floods-2026"
+      },
+      {
+        "label": "Displaced",
+        "value": "about 3,761",
         "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
-      },
-      {
-        "label": "People affected",
-        "value": "around 93,000",
-        "sourceName": "go.ifrc.org",
-        "sourceUrl": "https://go.ifrc.org/emergencies/8073/reports"
-      },
-      {
-        "label": "Households affected",
-        "value": "4,288",
-        "sourceName": "adrc.asia",
-        "sourceUrl": "https://www.adrc.asia/publications/disaster_report/pdf/2026/ADRC_FL_NPL_Rasuwa_20260826_EN.pdf"
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
       }
     ],
     "donation": [
       {
-        "url": "https://www.ifrc.org/press-release/ifrc-launches-chf-25-million-emergency-appeal-response-devastating-nepal-flash-floods",
+        "url": "https://donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/",
         "org": "IFRC",
         "kind": "society",
-        "note": "Press release launching CHF 25 million Emergency Appeal for northern Nepal flash floods.",
+        "note": "IFRC donation form for the Nepal Flash Floods 2026 Emergency Appeal, supporting Nepal Red Cross response.",
         "specific": true
       },
       {
-        "url": "https://www.ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding",
-        "org": "IFRC",
+        "url": "https://donate.redcrossredcrescent.org/~share?cid=1180&lang=en_EN",
+        "org": "Nepal Red Cross Society",
         "kind": "society",
-        "note": "Feature article on Red Cross response in Rasuwa and Nuwakot, with an appeal donate button.",
-        "specific": true
-      },
-      {
-        "url": "https://go.ifrc.org/emergencies/8073/reports",
-        "org": "IFRC GO",
-        "kind": "society",
-        "note": "Operation MDRNP022 reports and funding figures; operations page, not a donation form.",
-        "specific": true
+        "note": "Nepal Flood Emergency donation page naming the Rasuwa flash flood; also covers other monsoon floods.",
+        "specific": false
       },
       {
         "url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026",
         "org": "IFRC",
         "kind": "society",
-        "note": "Emergency appeal page for CHF 25 million, 24-month response to Nepal flash floods"
+        "note": "IFRC emergency page for the Nepal flash floods 2026"
+      },
+      {
+        "url": "https://www.redcross.org.uk/stories/disasters-and-emergencies/world/nepal-flash-floods-2026",
+        "org": "British Red Cross",
+        "kind": "society",
+        "note": "British Red Cross page on the situation in Nepal after the floods"
       }
     ],
     "sources": [
       {
-        "name": "asia-ngo.org",
-        "url": "https://www.asia-ngo.org/en/nepal-emergency-floods-in-rasuwa/",
-        "title": "Nepal Emergency: floods in Rasuwa - ASIA"
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026",
+        "title": "Nepal: Flash Floods 2026"
       },
       {
-        "name": "nrcs.org",
-        "url": "https://nrcs.org/resources/news-and-events/rasuwa-flood-situation-update-26-august-2026/",
-        "title": "Rasuwa Flood Situation Update (26 August 2026)"
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods",
+        "title": "2026 Nepal–Tibet floods"
       },
       {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/emergencies/8073/reports",
-        "title": "IFRC GO - Emergency - Nepal: Rasuwa Flash Flood, 2026"
+        "name": "euronews.com",
+        "url": "https://www.euronews.com/video/2026/08/27/nepal-flash-flood-dramatic-footage-shows-rasuwa-valley-engulfed",
+        "title": "Video. Nepal flash flood: dramatic footage shows Rasuwa valley engulfed"
+      },
+      {
+        "name": "english.ratopati.com",
+        "url": "https://english.ratopati.com/story/77534/the-river-is-raging-the-house-is-collapsing-video-report",
+        "title": "Rasuwa Flood Devastates Syabrubesi, Survivors Seek Shelter and Hope"
+      },
+      {
+        "name": "who.int",
+        "url": "https://www.who.int/nepal/emergencies/2026-rasuwa-flash-floods",
+        "title": "2026 Rasuwa flash floods"
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-30T19:53:42.295Z",
-    "donationSearched": "2026-10-28T23:02:19.626Z",
-    "directSearched": "2026-10-28T23:02:19.626Z",
+    "donationSearched": "2026-10-31T00:14:33.222Z",
+    "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods/",
-        "org": "Oxfam GB",
-        "kind": "local",
-        "note": "Relief for Rasuwa, Dhading and Nuwakot survivors: food, hygiene kits, emergency shelter.",
-        "title": "Donate to Nepal Floods Appeal",
-        "published": "2026-09-25T23:02:19.626Z"
-      }
-    ]
+    "seen": "2026-10-31T00:14:33.222Z"
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -10242,10 +10242,10 @@
     "seen": "2026-10-23T05:22:44.752Z"
   },
   "usgs-earthquake-us6000u1cf": {
-    "at": "2026-10-30T19:53:42.295Z",
+    "at": "2026-10-31T00:14:33.222Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 (USGS) earthquake struck near Tonosí, Panama, on 9 October 2026 at 17:56 UTC; SINAPROC put it at 7.5. The epicentre was 39 km NW of Tonosí. Damage included collapsed homes and a hotel, landslides in Herrera, and cut-off communities. The M6.0 feed event on 10 October was an aftershock. As of 27 October, shelters and damage evaluations were still running.",
+    "summary": "A magnitude 7.5 to 7.7 earthquake (sources vary; the feed lists 6.0) struck near Tonosí, Los Santos, Panama, on 9 October 2026. Its epicentre was 39 km north-west of Tonosí. As of 30 October, SINAPROC reports 2 deaths, 27 injured and 55,245 people in affected areas. The government declared a national state of emergency on 10 October. Response and humanitarian assistance are ongoing.",
     "ongoing": true,
     "places": [
       {
@@ -10253,101 +10253,64 @@
         "admin": "Los Santos",
         "country": "PA",
         "kind": "town",
-        "impact": "hotel and several homes collapsed"
+        "impact": "Most damaged town; no water or electricity; hotel and homes collapsed"
+      },
+      {
+        "name": "Flores",
+        "country": "PA",
+        "kind": "district",
+        "impact": "Landslide blocked a road"
+      },
+      {
+        "name": "Isla de Cañas",
+        "admin": "Los Santos",
+        "country": "PA",
+        "kind": "town",
+        "impact": "Unusual wave intrusion into some coastal homes"
       },
       {
         "name": "Herrera",
         "country": "PA",
         "kind": "region",
-        "impact": "32 landslides, 11 communities cut off"
+        "impact": "Among most affected health facilities"
       },
       {
-        "name": "Macaracas",
-        "admin": "Los Santos",
+        "name": "Los Santos",
         "country": "PA",
-        "kind": "district",
-        "impact": "deaths reported in Wikipedia notes"
-      },
-      {
-        "name": "Santiago de Veraguas",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "city",
-        "impact": "deaths reported in Wikipedia notes"
-      },
-      {
-        "name": "Soná",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "district",
-        "impact": "placed on yellow alert"
-      },
-      {
-        "name": "Mariato",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "district",
-        "impact": "placed on yellow alert"
-      },
-      {
-        "name": "Penonomé",
-        "admin": "Coclé",
-        "country": "PA",
-        "kind": "town",
-        "impact": "evacuations supported by Red Cross"
-      },
-      {
-        "name": "La Villa",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "evacuations supported by Red Cross"
-      },
-      {
-        "name": "Las Tablas",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "evacuations supported by Red Cross"
-      },
-      {
-        "name": "Pedasí",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "evacuations supported by Red Cross"
+        "kind": "region",
+        "impact": "Among most affected health facilities"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "one",
+        "value": "2",
         "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-26/"
       },
       {
-        "label": "People affected",
-        "value": "11,527 people",
-        "sourceName": "elcapitalfinanciero.com",
-        "sourceUrl": "https://elcapitalfinanciero.com/sinaproc-balance-sismo-tonosi-afectados-viviendas-danadas/"
-      },
-      {
-        "label": "Homes affected",
-        "value": "3,390 homes",
+        "label": "Injured",
+        "value": "27",
         "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-11/"
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-26/"
       },
       {
-        "label": "Homes totally lost",
-        "value": "727 homes",
+        "label": "Homes assessed in damage and needs…",
+        "value": "17,058 homes",
         "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-11/"
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-26/"
       },
       {
-        "label": "Displaced",
-        "value": "2,841 people",
-        "sourceName": "elcapitalfinanciero.com",
-        "sourceUrl": "https://elcapitalfinanciero.com/sinaproc-balance-sismo-tonosi-afectados-viviendas-danadas/"
+        "label": "People in affected areas (registered)",
+        "value": "55,245 people",
+        "sourceName": "sinaproc.gob.pa",
+        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-26/"
+      },
+      {
+        "label": "People in shelters",
+        "value": "3,827 people",
+        "sourceName": "ewtnnews.com",
+        "sourceUrl": "https://www.ewtnnews.com/es/mundo/america/100-iglesias-panama-afectadas-sismo"
       }
     ],
     "donation": [
@@ -10355,33 +10318,57 @@
         "url": "https://donate.unhcr.org/int/en/panama-earthquake",
         "org": "UNHCR",
         "kind": "un",
-        "note": "UNHCR appeal asking for help for families affected by the Panama earthquake.",
+        "note": "Appeal for shelter and relief for families affected by the 9 October 2026 Panama quake.",
         "specific": true
       },
       {
         "url": "https://cruzroja.org.pa/donar/",
-        "org": "Cruz Roja Panameña (Red Cross Society of Panama)",
+        "org": "Cruz Roja Panameña",
         "kind": "society",
-        "note": "General donation page for the society's work; does not mention the earthquake.",
+        "note": "General donation page for the society's programmes, with bank and card options; not earthquake-specific.",
         "specific": false
       }
     ],
-    "sources": [],
-    "membersHash": "usgs|PA#9311af72",
-    "donationSearched": "2026-10-30T19:53:42.295Z",
-    "directSearched": "2026-10-30T19:53:42.295Z",
-    "directSearchVersion": 2,
+    "sources": [
+      {
+        "name": "sinaproc.gob.pa",
+        "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
+        "title": "Comunicado Oficial # 26 - Sinaproc"
+      },
+      {
+        "name": "unfpa.org",
+        "url": "https://www.unfpa.org/resources/flash-update-earthquake-panama",
+        "title": "Flash Update on the Earthquake in Panama"
+      },
+      {
+        "name": "unocha.org",
+        "url": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315",
+        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 02 (as of 11 October 2026, 13:15)"
+      }
+    ],
+    "membersHash": "ifrc,usgs|PA#f69ff3e4",
     "direct": [
       {
         "url": "https://quenarafoundation.com/en/donation/panama-earthquake-relief/",
         "org": "Quenara Foundation",
         "kind": "local",
-        "note": "Shelter, water and food for Azuero families who cannot go home.",
+        "note": "Shelter, clean water and food for Azuero families unable to return home.",
         "title": "Panama Earthquake Relief",
-        "published": "2026-10-22T19:53:42.295Z"
+        "published": "2026-10-23T00:14:33.222Z"
+      },
+      {
+        "url": "https://www.panama-properties.com/post/official-earthquake-relief-fund-pedas%C3%AD-ca%C3%B1as-tonos%C3%AD",
+        "org": "Panama Properties",
+        "kind": "local",
+        "note": "Pedasí, Cañas and Tonosí earthquake relief fund coordinated by Pedasí municipality.",
+        "title": "Earthquake Relief Fund: Pedasí, Cañas and Tonosí",
+        "published": "2026-10-12T00:14:33.222Z"
       }
     ],
-    "seen": "2026-10-30T19:53:42.295Z"
+    "donationSearched": "2026-10-31T00:14:33.222Z",
+    "directSearched": "2026-10-31T00:14:33.222Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-31T00:14:33.222Z"
   },
   "usgs-earthquake-us6000u2y1": {
     "at": "2026-10-29T06:19:20.602Z",
@@ -10461,7 +10448,7 @@
       }
     ],
     "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-10-30T19:53:42.295Z",
+    "seen": "2026-10-31T00:14:33.222Z",
     "donationSearched": "2026-10-29T06:19:20.602Z",
     "directSearched": "2026-10-29T06:19:20.602Z",
     "directSearchVersion": 2

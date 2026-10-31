@@ -1,44 +1,524 @@
 {
   "code": "RU",
-  "updated": "2026-10-30T19:53:42.295Z",
+  "updated": "2026-10-31T00:14:33.222Z",
   "articles": [
+    {
+      "from": "CU",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV0pjQnlLaHBqeFhvZERJX0VqQ3JFMlpReEZEcFBITmFhYnN2TEQycDJCUlR4SlVrTWhmQnl4UTRld2k2VFkyVjZyYmJIZkZSR1FGcnp5THREWFpsa21zWE5TRTVqcE5DVEhiQVZ4UVhiN2IwUldiMm52TEd1UmtqRjVIa3dfQmxMRXlnTUpla1pGN1VMVGRMdVg0a2tuQ1M3X1VLT2Jn?oc=5",
+      "title": "De La Habana a Moscú: un viaje musical de ida y vuelta",
+      "en": "From Havana to Moscow: a musical round trip",
+      "outlet": "Juventud Rebelde",
+      "published": "2026-10-30T23:45:18.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "MY",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZkV6aEl4QUVvdkIzNUY0M0NFaFVpc3VkbWVsdXpidEY5YVZ5NF9KQnkxUVJackJfVC0tWnNrTTNUQ3pVdFVjNnMwVEFpM1hQV3BqQWdoNlBaSTZzaWF2S09GbGpVTGtHcXNUQVVLYWs2VnBuUDlZR0REaTB4TTdmUzcxaXFSWDBZV09J?oc=5",
+      "title": "Lavrov puji kesediaan AS berunding dengan Rusia",
+      "en": "Lavrov praises US readiness to negotiate with Russia",
+      "outlet": "Buletin TV3",
+      "published": "2026-10-30T23:25:17.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "NG",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUm5zVXBMZTEtQnVkYW9MY1FJYXo0S0x2V1llamdsaEgxZmFLMlBpVEE5b3BZUGM1akRURXg2dWJJdUpOeHJlc3FvYW5QUEc0czJZdTI1SUNKYm5GS2FGNGxqcHFwQzdmQ3drOFBwa19JaHFvZEFRMGwzdTQ3T3gyNzJYdmctUDQ1Y2xCZmh4NC1oQUhqVXc?oc=5",
+      "title": "Russia vetos US-drafted resolution on Western Sahara",
+      "en": "Russia vetos US-drafted resolution on Western Sahara",
+      "outlet": "Reuters",
+      "published": "2026-10-30T23:21:13.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUWZnVTc3bllmWFY2Y09WRGkzd1RuUTBDWGszR3doZDdNWTNEWWY3TTlIbm5fV3NaWmFPR1ZTZ21XLXczNUVXMjVlTE1yUGJXWWF3NTBfSnU5YjcxMTBhc0ZxaEtCWWhYMlVQblFCTEhqRk5pQUUxX1kxUFBXX0N5QU85bUZrYUlfQkdsV1RGcDlNUFMtTng0NkRfeTNvb0hsS1U2VGhtNHk4MWk4cGJwdWg5bHY4ZldiM1ZScmNCenBTWFFHaDFTTUxNYmZMd2Y5VWc?oc=5",
+      "title": "Tin tức thế giới 31-10: Ngoại trưởng Nga tiết lộ cuộc gặp Mỹ; Nhóm EU chỉ trích Ngoại trưởng Nga",
+      "en": "World news 31-10: Russian Foreign Minister reveals meeting with the US; EU group criticises Russian Foreign Minister",
+      "outlet": "Tuổi Trẻ",
+      "published": "2026-10-30T23:04:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeFNQUHl4ZUZuTWVzTU9sbXhuYmtxVGpxWWNfQlZZTl82c3cxZFNTdGxXUXlkQnZLOGJSRmVXTEdUVHF1VE5MWVJyNmlfeVlZUEJvbTV3Sm1TWExKRVRPb1hIYk4wMllmaERZdDlFR2pJdmdmcU45bFJuLWhYeVVyMmM5Qi1IZlp0X3UtV3JPRFloVndFYXB2UFFqQk1va05Pa29SeFFFd3JPYmp4dlp5cHZ4NXJyT0lLZFE?oc=5",
+      "title": "Tổng thống Zelensky sẵn sàng gặp Tổng thống Putin bàn về lãnh thổ",
+      "en": "President Zelensky is ready to meet President Putin to discuss territory",
+      "outlet": "Báo Dân trí",
+      "published": "2026-10-30T22:42:31.000Z",
+      "outlets": 4,
+      "trending": true
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9SU1RtM05qT3ZFMTEtbnVsaWFxRHdCRV9IUlU5UkMtMVZyU0pYWU40U2dZOWI2aTdGV0twVmpyRENmdGl2OWdHUEJya0t1a1J0TXNRTzJjZlY3aGgwdmllLU9XYUNnd2dNWmNVMzA0SVREQTVySHc?oc=5",
+      "title": "俄罗斯总统助理：俄美已开始磋商三方会谈的具体日期",
+      "en": "Russian Presidential Aide: Russia and the US Have Begun Consultations on Specific Dates for Trilateral Talks",
+      "outlet": "央广网",
+      "published": "2026-10-30T22:42:29.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "TZ",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTEJWNkZ4NnM2NDNaUDU1S3VwNzRtYXJqODdlSy1uWjZYVFNFTmZYQU05ZDZ4Vk9yVkUteUxNa0NiQ3hoamNBdmxweEVzbXprS2c5c1FBZmlLVnVLaEw3OTVXRHRxTEVrSW5UaWd3S0pQNjdEUUFWQ2kybk5jc1lLNC1GRnhfQlI3anE4dF81bmdDeGhWYU1LeS1RR3Y5QkZZaExtdjZhUXJ0ckR2ejJXbzZR?oc=5",
+      "title": "Russia discussing floating nuclear power stations for four African states",
+      "en": "Russia discussing floating nuclear power stations for four African states",
+      "outlet": "Arab News",
+      "published": "2026-10-30T22:37:07.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NA",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTEJWNkZ4NnM2NDNaUDU1S3VwNzRtYXJqODdlSy1uWjZYVFNFTmZYQU05ZDZ4Vk9yVkUteUxNa0NiQ3hoamNBdmxweEVzbXprS2c5c1FBZmlLVnVLaEw3OTVXRHRxTEVrSW5UaWd3S0pQNjdEUUFWQ2kybk5jc1lLNC1GRnhfQlI3anE4dF81bmdDeGhWYU1LeS1RR3Y5QkZZaExtdjZhUXJ0ckR2ejJXbzZR?oc=5",
+      "title": "Russia discussing floating nuclear power stations for four African states",
+      "en": "Russia discussing floating nuclear power stations for four African states",
+      "outlet": "Arab News",
+      "published": "2026-10-30T22:37:07.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxQVXdDTHV6TVdhb0U5bmxmZzZuZGhSVm5UZHNsX3lyTnVTT0NoRUZsTkRIQkE5aXQwT2hURk9JZlpPa0ZZQXd0cHRUOEotS1hOOTltSE1tdFc5STV0anYxX2tXWFRUcG13Wmo5aUpDd0dmeFF3V1BCeUJWZWI2OTdKVXFYUkR1YVh0dngyandtaE92OG85VEJMTWRBdE1XbjdyVjNUMWxDT1JjZmVHMzIwd0M2YXRlVFVUZ2JpQkpfQW9mSmw4Yzd3T2lXSHdoLXNrN3h2MTROUFVGdm4zU0xqXy1zZ1Bza0V6cVVURVNrZDY2cmxMaTB4VVhfdUozOTBHOTd3R3MxRGhHUE12T2FQeG42RE0yNmxsOUlMNElhVFB6VzNiS3ExSWx2TXVVSU51TFBPTHpuM3ltb09MUFBwa2RWUjJrSVdBREtKZTVyM25XdVhUTHVYM1RGRk1wWmI3azNyWUJoMG9KaU16VTFubURUaXFsd1JxWDU0YWJMWUZ1eENVcDM1QmVINHZ3YmtLRUF1YjlQMTM0Tlhzc04zZzc3dFE2bU1uSnc?oc=5",
+      "title": "عودة تدريجية للرياضة الروسية... موسكو تكسر الحظر",
+      "en": "Gradual return of Russian sport... Moscow breaks the ban",
+      "outlet": "Al Akhbar",
+      "published": "2026-10-30T22:30:00.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcThldjZ2VEotTE1DRk4tcHp1VF84RVg0eVgwZ3lOeHg0dEo2NjJhbGN2SUp2YndERDM0V1dZN1JxMjUyUGFEN2NZTUJVaVluZ0Y2X0ZESXE0SmZFekNqSW5wSHlRdUk3eUdjTjgxdkphYlRTYlNrbk5zSmpTSEszUHd1VkRfZjQ1?oc=5",
+      "title": "Media: 'Usa approvano la possibile vendita di Patriot all'Ucraina'",
+      "en": "Ukraine war, evacuation of Oleshky underway. Two dead during demining. LIVE",
+      "outlet": "Sky TG24",
+      "published": "2026-10-30T22:21:45.000Z",
+      "outlets": 9,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1qR1dKS3BTQ3UycUUyNHpGbk14UUJpTUY4aWoxVkxYaGV6eUVJNHFqblROdjBEeXRrdzd5SHJVQ1JSSGNPV251MVJmXy0yUkJzUTNNbmpyUnpwX1RTYXBPQ1dEcVlZT1RNQ1g2ZFAxSQ?oc=5",
+      "title": "روسيا تدرس تمديد حظر تصدير الديزل حتى نهاية يناير 2027 بواسطة المتداول العربي",
+      "en": "Russia considers extending the diesel export ban until the end of January 2027, via Al-Mutadawel Al-Arabi",
+      "outlet": "Investing.com",
+      "published": "2026-10-30T22:18:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQl9JemhPWTJoUUtHMmlVbXU3T04zd19jQl9mcU5kLU1uaXVTRnlBT19tSXEwUXBYR2Fhby1wcG1UNVZha2JrYjQ2YTRHWTlZN0xHZGNCV1Y4SWhCTUtpV21GcmI5V1pWeUxoY25EVWp0VlkyVUNxd2dHSGFNUGFhUnhXNjhidEtHMEtsOVAxeFNkbjl60gGaAUFVX3lxTE1aZU1HYW96WXlDNHY1RDVCQnhSOTQ0bnR6Z2ZuWXJvQk01WjBEVnE4MmZHeE9wZnJ3bW1McC16enU5c0FKSC1mTGROZjk4d0ZKR3p5ODEySGlEVHpxZll1UjJQQjBiYU5CUndZRkd0WFo2aWs1TTV1aW9mQ28wSzJnMjluZ2JST3k2XzA5UEZ0Y1NpOUxEZkdES1E?oc=5",
+      "title": "Змінив 77 номерів на 18 смартфонах: у ЗСУ викрили російського \"крота\"",
+      "en": "Changed 77 numbers on 18 smartphones: Russian \"mole\" exposed in the Armed Forces of Ukraine",
+      "outlet": "24 Канал",
+      "published": "2026-10-30T22:15:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "US",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa05KUnNfZG1OODZTY3RxWXpQTFozVkVHUkp1Sk9NVTVjWG1NVjlCM1hwY2VjSEZaSzJmaWZXNllQZVJUZWdCbkJlc2lBZFZMem5COUNVT2RidUdBTV9RUXZOVC15OFVmUWVnOVotRW5xVzZ3S1VCeWZPTUZoN2tLaVMweVl2NVRaV3l0RHg5ZFA0TXUxOVVTcw?oc=5",
+      "title": "Consensus looks elusive at G20 talks after European objections to Russia cancel group photo",
+      "en": "US scraps G20 photo after European diplomats object to being pictured with Russia's Lavrov",
+      "outlet": "AP News",
+      "published": "2026-10-30T22:08:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "US",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZmJkcXBmUG1NN0NSdWFOc00tWTV4X3BvU1g3eEdrUkNONVB5bERQRlpLWTJrbThUTXpvbHhwRHUwb3c0NmpiYWhUNEN4aFJ0TWJFc2pNWW54YUszWURvclp6MzF6WG9HUDRZQWE2RnNOQm9VR2VOclItZ3ZXWTkxRTFIR1JocEpLZ3ozRjVNVlFMdEZ3eE1GOTVKNmJXcHRLOTJVdG5qakgxTjVULU42ag?oc=5",
+      "title": "Another Russian refinery is aflame despite Trump’s warning to Kyiv",
+      "en": "Another Russian refinery is aflame despite Trump's warning to Kyiv",
+      "outlet": "The Washington Post",
+      "published": "2026-10-30T22:07:19.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "TH",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YSmowUHhHV0hUYVdnTGZBQXVOSERXVkNnaGZ1Tlh2LWlVQVpxRldNaGMzSUpJYWExVFQxVVF0SXZWWTE3ZVRfVWkxaTktQzc5QWpHSUR1Qll6NDQ?oc=5",
+      "title": "ชาวเมืองโอเลชกี ที่รัสเซียควบคุมอยู่ เริ่มเดินทางอพยพ หลังหยุดยิงเฉพาะพื้นที่ยูเครน-รัสเซียยังมีผล",
+      "en": "Residents of Olesh, the Russian-controlled town, begin evacuating after a ceasefire that applies only to the Ukraine-Russia area takes effect",
+      "outlet": "Thairath.co.th",
+      "published": "2026-10-30T21:56:29.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PT",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPaThwd2lvNUx2OUN3X1NNektjWHVueklHdmpwZExGVkRhWjVvU3J4eGhDcExDdUJ5SXgxNkNzajUyV245Q1VadjRSbFlhbm1OMThzRy1PQUx2WGJtMGx2ZmFvN1R1alBjTG9tc2RRWUdrWVRPaFlCTTRWLU0xMFFJTi0zQjc3X3NIX0V1NEVZQ0s0Wk5JZjQ1ZUIxeE5OTnplT0NHTVZKYXVPb3F5TklZQWNOaG15dWRSXzlkcTVKU3AwX3ZSN1JESlFqc0E?oc=5",
+      "title": "Cessar-fogo permite entrada de missão humanitária em cidade ucraniana ocupada pela Rússia",
+      "en": "Ceasefire allows humanitarian mission to enter Ukrainian city occupied by Russia",
+      "outlet": "RTP",
+      "published": "2026-10-30T21:48:55.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNYnd4UXhfN2JqekF1M1NWNzd4Wk9TUE5wOXFLRV95MEE1anNwTUhCZVpkMUFZLXg2VVlpNnBSeFhZVzR5WHlwY1ExVkhoU1UwN3ZqdlBBNmJUTFEtMXkxUmdwaWN3VS1DSEx1dzN3S0tZQ2xBOTNSSTJYc2daaEVMU2RjRk8za1cyOHhUUW14S2NCM0FGLTlRaXBkdjNYSFZNSUhtVFFienVXT3hrQmNlODBZWnFxMnQ0ZnhOd05PbGViVVNh0gHKAUFVX3lxTE1yTlVCWDdvLVMzZGZucHFUVjMzM09lSWxkeVJVenZjQnR2MTZaa0Y0d2xoSjBzNk5TVkswUkJzTllCZnF5WkxWWG0xcFh4Y1JXR2dkaXZYN29qV3lzN0phT1MyR2lSMFo3QVZOTXQ3bTg1TnJjbUtNVk1XQUVrdzR0cEp0WGFYc2xnWU9HZ0VEM1Jfc0hqc1FCUnkybGQ5YlY2Q2E0SGFRSTBtdkRJRHFtTFpERFd4SlBFSkhDSG9DeXhsNFZLOTh4Z0E?oc=5",
+      "title": "Megtámadták Moszkvát, Trump nyomást gyakorol Ukrajnára – Háborús híreink pénteken",
+      "en": "Moscow attacked, Trump pressures Ukraine – War news on Friday",
+      "outlet": "Portfolio.hu",
+      "published": "2026-10-30T21:48:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQT2ZoT29Qcm1PcnJla2RqNlRFX3MwOWhqY0ZiSmtLN01iMzNnODZGbjhnbW1oRG9ESUZraFFLNEtyMk0yQjgxVVRMVS1nTmU2S2V4WlFsY1NrUm9iOHZreU9Gc1ZWTTFSRTF2ZmpsbzdfUzdIVFNla0ZyZjdFd1RFbVFfMUJnRjJqT191WWYyaHNoVWlDSjZISUJvcjhlS2tDRDhKU1RZb3RsdkhHaEhJd250VVI0YXVCV0l5SQ?oc=5",
+      "title": "Втрати на фронті стали рекордними, мобілізація буксує: чим обернувся жовтень для армії РФ (ВІДЕО)",
+      "en": "Losses at the front have become record-high, mobilization is stalling: how October turned out for the Russian army (VIDEO)",
+      "outlet": "uatv.ua",
+      "published": "2026-10-30T21:44:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "DE",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOeXRSZjMza2g5OXNfSG5IV1FtU2cyLXhVcTFKVWxpSnhQaEp1TU5ncEE0NGdaRk1TTGxhYTNuSDRUdHJ6S0ZTOUx1TVZ6NndIVzk0Sno0cUdsd0NsYTRMeWVMbk9wWjB6dGhsWDB5d21zbVRScTFSTzk4NDJQS3Z0dlJ2Uk9ESVJUZXY2SFJqbTlQNWJBUzFBLXNyZEdvcHc1SmhyMlVMR1pVMFFGQXMzV20wUzQzQUVwVGJtV294YjdQRElFQTZOX3c4SlMtUjlXSGNsWWRhOG9rTHVHdTJEY0lGMEo2aWRMcVdlLW1FSUhqelBP?oc=5",
+      "title": "„Das nenne ich Familienfoto-Diplomatie“ – Lawrow unterstellt Wadephul Doppelmoral",
+      "en": "\"That I call family photo diplomacy\" – Lavrov accuses Wadephul of double standards",
+      "outlet": "WELT",
+      "published": "2026-10-30T21:43:15.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmJkOEhyVjhTc0daWEo2YmNzMVN6SlNOWWhFZThuRXdrRUtxQXJKLWVOcmRBWGhGMEtranBsdmExSVFNeUVTU2ExTHE5WDQ2RWlNWmRXVkljWWk3MVZYRnRJelZTZDdQWXYtT0c0TkNFb0xIZks2ZTJ6RkxrSzM5MmZJMHFuczlaRDFuNUZwWTczcldsQWtWaEtrZXY5Wi1BMklzU2JvV0RaVmJOYjRPVnJHQVBWZ2FYM0FWYWdmWTlTOG9Wamc?oc=5",
+      "title": "Avoti: Pentagons lūdzis Baltijas valstis pieklusināt retoriku par Krievijas draudiem",
+      "en": "Sources: Pentagon has asked Baltic states to tone down rhetoric about Russian threats",
+      "outlet": "BauskasDzive.lv",
+      "published": "2026-10-30T21:36:02.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRkhWLWkzcmZuRVlXbF8xMWl1YUlmZzBIZnNmMHpmUExHZUZIS094YWFkYVVQaFlDa3k1dkpocVgwbFVDNmxwLXZjMHhBbTZtMDZ5NVdFN0E0RGVpaHN4Z2ZsdXd2SU1PelB4Y0hoNFZxZEVBWmIzeG16enlJUU95SWNYRXlDQ0h3VERWZ3lBVzNOYkVRZG5UNDNJQkpVWnlvbzVMd1QtRndWeHBOcGdPOFRhMjFqMWNYNjRQQk5OaVVhQ295Z1BNQWkxMXo3LTNJdmttcWhFb0FwdDg?oc=5",
+      "title": "Mysleli jsme si, zda nejde o apríl, reagoval Plekanec na verdikt Sportovního arbitrážního soudu k Rusku",
+      "en": "We wondered whether it was an April Fools' joke, Plekanec responded to the Court of Arbitration for Sport's ruling on Russia",
+      "outlet": "Sport.cz",
+      "published": "2026-10-30T21:32:34.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQa3FGNDBTcy1FMTNBNXY4Zk5zTWh1alI5MFlfM3dqT1Z6YjFxNEZfNy10T1Zqb2FVd2U5UTkxdmpxX1p4MG56VWc2WWJpSXpxM3NSUFpwQlpVSS15eXFrdmViaU1LSmszaTNOSEdxdlk0Y3JYS2wyM2pFVnVaaE5ERUl1WEJqTVNrWFFFSkFYTElyWlo2SldHbjQxdnJDQ2hCQUFpVjB3?oc=5",
+      "title": "Krievijas tiesa piespriež \"Doždj\" ģenerāldirektoram piecu gadu cietumsodu",
+      "en": "Russian court sentences Dozhd general director to five years in prison",
+      "outlet": "1188.lv",
+      "published": "2026-10-30T21:27:26.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "CA",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR1hEekF2eVZSeEJRcXY0T3hpRElOQjRVTlJ5SEs2ZHlSOHVrQlBnRjFiNTBqcS1POTM0Q2trQk5hX2dVOUZsNEt2Z01EUEJ1MUtHcS1rbVp0Qm9LQ0ZzczBTZUozUnY2bVZWTWdGSmQwWGY2TDRMWjUzd0xXVkhjRG1BNUkyMHRfbnc?oc=5",
+      "title": "Will Russia be allowed at the World Juniors? Mixed messages after court ruling",
+      "en": "Will Russia be allowed at the World Juniors? Mixed messages after court ruling",
+      "outlet": "Global News",
+      "published": "2026-10-30T21:25:11.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "GR",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPZDkzQTY2NkV3NUtDMzNlWlg0T1VsTTYyV2ltQmJkMG1PaWdmcTh5VTBXU0xscmNZN1cxU3pxV3FtbW9mWE5wblktcUpYeGt0SnVzSTRZZjhwNXliTFM5V3NESUM2d1RqZmpJUmc3MG9IM3BEZUFHcHM3REFsbXlWUG4xZ1g2YkU5enVrODRRRWJLY2VqMnJvZURfUFZuZFBUZkpWTWFBRlRUTTA1V3hCT2NqX1JqbUt0c2lZbFhndmlfcjNQOHNZMGJzbkdlTWwtakZwWVJ4N185bHlrOXVSWjFSRXpreTRQNm5fRWZBcG5Xd0FoVk9KSnZtaEppLVphamdyNFhNTGlWSWNGNlE?oc=5",
+      "title": "Παρίας ο Λαβρόφ για μία φωτογραφία: Οι Ευρωπαίοι υπουργοί Εξωτερικών στη G20 αρνήθηκαν να μπουν στο ίδιο «κάδρο» με τον Ρώσο ομόλογό τους",
+      "en": "Lavrov a pariah over a photo: European foreign ministers at the G20 refused to stand in the same frame as their Russian counterpart",
+      "outlet": "Newsbeast",
+      "published": "2026-10-30T21:15:50.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "NA",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8zcnEtc0pKNjNvNHBubHRsSUlxbS1GNTFtTS1UdURVeEpzYTJTOF95ZXNEUjVRWW96VHJfNmt5ZzZnSnI1ZVVYVUNFTmxuS1pL?oc=5",
+      "title": "Sudan offers Russia mining sites, Red Sea economic zone",
+      "en": "Sudan offers Russia mining sites, Red Sea economic zone",
+      "outlet": "Sudan Tribune",
+      "published": "2026-10-30T21:10:53.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWGtuU0dpajdZbm5QdUtvZEoxZW1LbEw3SDJxaVpVd2w1cFE1NHB1UTd3Zi1NMFFpSHhFVWhmYjZaMFMyVEhHeUtKUW1HMEx5N2FRb3pGbEFVTVNkRmhtYVMzdmthT3RSNU8wUHBwZ0s0YzE5cFZuMnoyZF9qdldxUlVVS1NFMF9EOXVWTi01djd0NUF0SWN3b0tXNzhTRzVCeFZ3cw?oc=5",
+      "title": "Amerika hitno zahteva od Evrope poboljšanje odnosa prema Rusiji",
+      "en": "America urgently demands that Europe improve its relations with Russia",
+      "outlet": "Blic",
+      "published": "2026-10-30T21:08:56.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNU3ZkVHV6SlZ0YlVFTTRMVUdzano3M1VtZWk1Q3BkUXl2T2ZvZFlsZlhoTkRmanF0WlY1TndhdUpzN2Z5c2RMcEd0SEQtN1MxSlZtcnJ6S2VtZnVYaTJqeGJoMHYxaW9ZOFRWSXJvNGtZdE1KNVFteVZWZk11U2J4MzdxUXl2NXBvSGxpS3N4MW93WHlzVEpQUGhKaXMwN3NBU0g1Nm8zS2c4MjR2QlVaWlpEMGtjTTJab19WbWdoQmhXX05LcnhXYUdlekkzaHfSAcABQVVfeXFMUC1CWEJ4WlBoOExHUXZKMkp6V2RwYjJINTltYzNmR250WnFxSERnZGl1TnZlYUk0VmtGc3BXdGxuV1FmZlBudG1XWExlVHNQamJibjRFVXdyeHYtSVJPeElVa2owbHZLTl9mdUUtSm5jQzZEV2ZvMnQyellRUElBVHhwaTVpeFk4OHUyaHoxZXdWZUZmUFRQS2NHeV9kRjhwcDJ1bGRQUXQzbTBnRGU0cnVNallUd2FpdXhzeWJTQkZX?oc=5",
+      "title": "Евакуація з Олешків: Росія хоче представити себе рятівником міста, яке сама ж окупувала — репортаж Newsmax",
+      "en": "Evacuation from Oleshky: Russia wants to present itself as the rescuer of a city it itself occupied — Newsmax report",
+      "outlet": "NV",
+      "published": "2026-10-30T20:53:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "SE",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNejJoTnZOc3ZjZU9wYm52LUR5Zkxwa2xqalNnamljV1NWR196QVJSdkg2SG42TlBwYzk0ejNPanFDQXFIcV80X2RSU1BKMlZlOVE4X1VYTlVNZFBZRUI2Q3dldlJqaV84NGpyQW83YXMyalhTUFhmNFR2eEJOSlo2VHN5RENja1lydEIwWm1vTXo2RjRHbF83WFpiVEFlWFgtMmlHNkFOVkRfeF9XMTJ0ejJvdGxfLXYw?oc=5",
+      "title": "Ingen gruppbild i G20 – europeisk nobb av Lavrov",
+      "en": "No group photo at G20 – European snub of Lavrov",
+      "outlet": "Göteborgs-Posten",
+      "published": "2026-10-30T20:51:44.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "GB",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMGNaZzRWSTJvYl9ad1drWldtbzFGOGRJOFBjVEdEODBIRVlSMGRtbmlmeEVqQ24zYWptNmU3TVZSTklPaUVPRWd4QmMwYVU2WGN6aTZESjVKVzdSVnFmb3RiUHFSU045VEVpc1g3ZXNGc2VWa0NLYzFDaVZBTVpRNzJwNGRYbVRXQ2ZQNkpESlV1RmlyWDd0anh2bjRxX2VSUkZoTTZYSdIBrAFBVV95cUxOZU1xa0wwcmlKX19CamoyNE0xUU82ZERWRnhLa1RzQWFhMy1yNWZfUkp4OUZMUzVRRzI2WE1YSGVaUTlRVXNnYmpNV2dhSE9ya1RSR0NKM1hLVHk3TllrdDRUM2JSekM4OTc0OVNiMHlDYlE1UTQ3LThfVjNMT0VTenJkeVdRV21lalpwVjVyZkJwYWk5OGlFS1F1bHZfYm1xSGt0NmtDWmQ2Yi1z?oc=5",
+      "title": "G20 drops group photo as Europeans refuse to stand with Lavrov",
+      "en": "G20 drops group photo as Europeans refuse to stand with Lavrov",
+      "outlet": "Al Jazeera",
+      "published": "2026-10-30T20:44:52.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "US",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPaXZMZHdmQS1UYWZNVEdNRkppS2paM2dFbDA4dEVQR3BmVDRXT2xEVHpoZlhYdU1TMjZybWN3bGplektubVFHck9VMWxaZGQ4V2xNMHIxUDY3M0k?oc=5",
+      "title": "Prominent Russian newspaper shuts down under pressure from authorities",
+      "en": "Prominent Russian newspaper shuts down under pressure from authorities",
+      "outlet": "BBC",
+      "published": "2026-10-30T20:41:51.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BE",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUDVQV013OEd1bDMzamhreFZjVkRVSENuWm5udUFMcFZzbkYteEQxRTA3aHpuSDBucVFDMF9hSVA1T183TElKX1AzTkpTT1VXX2J6ODdUVkJmb2hiQm5OcEZkVlp4Y2lxVzZ0eFlBTHg5MG1GRmVtcjFQLXRfYjNxWnZJVlZfOWlMY2hKdDZjVzR4MlJFYWpJTnNvc1NLMUMzR3h5T2d4bzdwUFhzMlRuSVpoZ09mZi1nMk5kOUVFemkyV2N1U1E?oc=5",
+      "title": "Au G20 aux Etats-Unis, les Européens refusent une « photo de famille » avec le Russe Lavrov",
+      "en": "At the G20 in the United States, Europeans refuse a \"family photo\" with Russian Lavrov",
+      "outlet": "Le Soir",
+      "published": "2026-10-30T20:40:32.000Z",
+      "outlets": 5,
+      "trending": false
+    },
     {
       "from": "IT",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPXzBJLXpnTDduMUJJaFFSNXdaUkxEVzBqUDVRbERNeVB1QXE3RDZIVHd1ZHhuLUowTUhBdzlndTNFSV9IWUdNSmZONXNCRXNFdWF0blpGSDZkRWxKX1MzdnQ4bU5WeWVJdE9OSE1SdENXcGtQN1pmeTVQTGV5RmRiaVR1ZVdIdDI2cGNTYS1xOGpmc1AzZDhQdU5Ua0JUbHJ6WU1UN3JDRGNPN0ZUZnRQVDVTSkRESFRF?oc=5",
-      "title": "G20, tensioni su Lavrov: annullata la foto ufficiale per la presenza della Russia",
+      "title": "Ucraina, piano Ue per prestito da 90 miliardi: il Canada stanzierà 500 milioni. Operazione a Oleshky conclusa",
       "en": "G20, tensions over Lavrov: official photo cancelled because of Russia's presence",
       "outlet": "Il Sole 24 ORE",
-      "published": "2026-10-30T19:22:55.000Z",
+      "published": "2026-10-30T20:32:31.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IN",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTGVqeWNSelgtRE1YQlBIR1kwc2Q3UVJNRHMwMVpIdVdreVRXZkZfUURSdlZnY3FhTGFELWx5Z1NoQ0hRY1h6bFNqeE5BNElSbk15c2lzaG9oNWtEVDZSZE9sUGlyZVJua3dMRjUyX21TT1Q1NmJNT3RXXzhycEZfYXBaYTd1LUpVZ1JER3NVRXp5eXNtNlc0LUZ5UnRYQzI0SGpZQ1NRNNIBrAFBVV95cUxOMGY0T3ctZVVVMnVFRmtldl9wWHpxRmZnRTBBWWNZZE9iV2QzdzZuY0c5X3dEazIteGxINGRpZFVURFRoQjZ4YzhGUEJuZ1g4RUs3SkxvSGRfVi1JS29hX1V2bU5PYnRHUFFVdkxnMWtWMDBYYi1MWkZpcWtPcDVpV3lQTGhXVms2c0tPZmZoaWJmZnA5bDRGV0EydVJCRHR2d0xhMk1GNjRzaFhl?oc=5",
+      "title": "Russia ‘forces’ closure of investigative newspaper Novaya Gazeta",
+      "en": "Russia 'forces' closure of investigative newspaper Novaya Gazeta",
+      "outlet": "Al Jazeera",
+      "published": "2026-10-30T20:30:58.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PH",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTGVqeWNSelgtRE1YQlBIR1kwc2Q3UVJNRHMwMVpIdVdreVRXZkZfUURSdlZnY3FhTGFELWx5Z1NoQ0hRY1h6bFNqeE5BNElSbk15c2lzaG9oNWtEVDZSZE9sUGlyZVJua3dMRjUyX21TT1Q1NmJNT3RXXzhycEZfYXBaYTd1LUpVZ1JER3NVRXp5eXNtNlc0LUZ5UnRYQzI0SGpZQ1NRNNIBrAFBVV95cUxOMGY0T3ctZVVVMnVFRmtldl9wWHpxRmZnRTBBWWNZZE9iV2QzdzZuY0c5X3dEazIteGxINGRpZFVURFRoQjZ4YzhGUEJuZ1g4RUs3SkxvSGRfVi1JS29hX1V2bU5PYnRHUFFVdkxnMWtWMDBYYi1MWkZpcWtPcDVpV3lQTGhXVms2c0tPZmZoaWJmZnA5bDRGV0EydVJCRHR2d0xhMk1GNjRzaFhl?oc=5",
+      "title": "Russia ‘forces’ closure of investigative newspaper Novaya Gazeta",
+      "en": "Russia 'forces' closure of investigative newspaper Novaya Gazeta",
+      "outlet": "Al Jazeera",
+      "published": "2026-10-30T20:30:58.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "MA",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTlQ3eUc0QmRLSENDRVlMVWtyQjdGU3NFTzJPMjBBeVFVVWEzM0xrVkU2RHM2ZnBkQTdvbzBCZmp5U2hrNm5WcE1tYnNTaE9lYUxvUGh3T1dXSWI1ajV2TWtkMWM4S21oek93U1czRzBIMHFCNmJnZXpjS2hPM0taZElQY0c0aWpmUzJpWmNsSV82LVVHeTdMRkxnMFBBWFp0bWN4ZGJPRF9PRWVqYWc?oc=5",
+      "title": "Sahara : l’Algérie remercie Moscou et accuse Washington de valider un « fait accompli »",
+      "en": "Sahara: Algeria thanks Moscow and accuses Washington of validating a \"fait accompli\"",
+      "outlet": "Le Desk",
+      "published": "2026-10-30T20:17:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "SE",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9VNEZmaEdUVmY5WkhEc1BJejBoMFUyUThnLUtZd0Rkb2xsTlFZN3JIUnBUODdBZ0ZEb3NPb2IwdnB1QkNjSk16Q0t3NTVpS0gyblRrVHlvV0t0NS1abHV6a2dCUmlfLTdjWFd6azRWci1xSi1B?oc=5",
+      "title": "Evakuerade Olesjkybor är framme på Krim",
+      "en": "Evacuated Olesjky residents have arrived in Crimea",
+      "outlet": "Dagens Nyheter",
+      "published": "2026-10-30T20:16:50.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTktWQ1VhZlE4RlEyUG5leVp4TENBbVdZWjhmRDNaVHRRb1J6ZktUT3FlVnUyNjBnay0yU1lkeHZkSWdSeWNWa1VlaFVwaS1rODlFV05UQlVFeEtPclR5T2tUc3pTd2RjbXJ3TnZCQ0pDTVVWbGpNS3pLd3p4NDhybV8zaVJrUHNJQ1MxR1FiUjcwRHZ4bXpPRDhHWWFoSVY3SEk4bG1PaXhwUk55Y3gyYjZLeHNIS2hndlFYVVhEaVdQMHhW?oc=5",
+      "title": "Rusko čeká další utahování opasků. Ekonomika ztrácí zdroje růstu a vyhlídky jsou chmurné, varuje analytik",
+      "en": "Russia faces further belt-tightening. The economy is losing sources of growth and prospects are bleak, analyst warns",
+      "outlet": "forum 24",
+      "published": "2026-10-30T20:16:32.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "JP",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1sM1FTNUU1MHVHMndXQXUxMkJNSHE3dV9veWJpUVBEVnNkTnJSbzlCTVBXaFBtT2M0bmMwazZNYnFNa09YblpWNXFNTGZsTVRDaTIyeDg2eV9EY2dsbHE2Y1lB?oc=5",
+      "title": "露独立系新聞が活動停止、立ち退き求められ寄付停止「我々は殺された」…２１年に編集長がノーベル平和賞受賞",
+      "en": "Russian Independent Newspaper Suspends Operations After Being Forced to Vacate Premises and Donations Stop: \"We Were Killed\"; Its Editor-in-Chief Won the Nobel Peace Prize in 2021",
+      "outlet": "読売新聞",
+      "published": "2026-10-30T20:00:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "JP",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JbE5WaXRjSEM1d1l6ZUNhYmdKS040RFFLc0Jid0pFa2ktMGNtM2RlVTIwalc1ZjRLUm9jVFZoVmhUdUpPVHo0ZU9aU1g3NTZNVUN1azlpUXJKUkJqb3BaMFRR?oc=5",
+      "title": "日露外相、Ｇ２０会合開催の米で５年ぶり対面会談…拘束された道新記者の即時解放を強く要求",
+      "en": "Japan and Russia Foreign Ministers Hold First In-Person Talks in Five Years at G20 Meeting in US; Japan Strongly Demands Immediate Release of Detained Hokkaido Shimbun Reporter",
+      "outlet": "読売新聞",
+      "published": "2026-10-30T19:51:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "JP",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPREtHZE1KQXEyY3NBZVFUa3RVRW14N0Vub2ZkWXNCQlVCVlVoUU5aNi1YOWo2Z3RJRDFmai1MRnRxVHFCNXlXSHRfRllKdUlmN2lOWXplUzNVOTJSa05lbWRnaHNjdlY1Qi00RHVET190UUpjSzFWb3RBSnFjbExwTWp3MTZ4Zw?oc=5",
+      "title": "Ｇ２０外相、集合写真を見送り 欧州やカナダがロシア同席に反発",
+      "en": "G20 Foreign Ministers Skip Group Photo; Europe and Canada Object to Russian Presence",
+      "outlet": "Reuters",
+      "published": "2026-10-30T19:49:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOT0xjOG1yTlhkd2FiSWhBanhVdzMyc1FmTTZMZXJSbk9nN1R2YnQ0TGMtM2haUUlnRElja3hxUnFaWFpzVHM2bE1jS0wydmhlUXlwc2MwLUN4ZGNqSlI2eVhwcXhWdUJQQkZhcklVZkZNMk1TTUZ6eDkyM0Z5ZUNOQ3N4cjgydWN4bi1FSThCUmVxRXVSTjljcHZoUQ?oc=5",
+      "title": "Skandal na samitu G20: Zbog Lavrova otkazan deo protokola",
+      "en": "Scandal at the G20 summit: Part of the protocol cancelled because of Lavrov",
+      "outlet": "Blic",
+      "published": "2026-10-30T19:41:57.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "KR",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1sNFdSSTBEaEU2THFCV2xlbEM4OGRUTDJrVkE4Q0t5TXlkU19zbFg0MExBeGxyN3VyWjk2RHhEcjdZaFNQRHBXbjNqNlFWV2tIYnoxUWdheW9sU3Z2?oc=5",
+      "title": "우크라이나, 트럼프 압박에도 러시아 정유시설 공습 재개",
+      "en": "Ukraine resumes strikes on Russian oil refineries despite Trump's pressure",
+      "outlet": "뉴스핌",
+      "published": "2026-10-30T19:33:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AT",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0yUjhKYUNDbnhoRUpwRk9QWVRJdWZnQndzaXVPTWM1Y0NUY1NHQU5vYURkUXdPdExkbXlsZEF6b04zXzkwLWhPNmV6YzBuMlkxX3l0ejRORFVIbVU?oc=5",
+      "title": "Wehrschütz: Waffenruhe kein Friedensschritt",
+      "en": "Wehrschütz: ceasefire no step toward peace",
+      "outlet": "ORF",
+      "published": "2026-10-30T19:30:07.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWS04RFpLckM0U0RrbGVOVTZhT0VOZF9lQ3VyUEFZQ0IxYXh4YzhvM1VFZnBPV0xxbVRsdVlUQXQ2T01sYmVQdktLdHVKTkpiVmNpR25ma1NYcTUyTGNURHB1NGhsU1B6dUJ0MU04cFlTcFFyZFRpSlBiS1Q3VXBJV1VjelBXazU5NzFSNnluaG1aeW1Rd2NuQzVxMG1aSEtIUVJGTklrMUtnU1hGOVBfREUtb28?oc=5",
+      "title": "Peskovas: Rusija tęs karą prieš Ukrainą net ir vykstant deryboms",
+      "en": "Peskov: Russia will continue the war against Ukraine even as negotiations take place",
+      "outlet": "Delfi",
+      "published": "2026-10-30T19:25:34.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AR",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNc0pBOExIRFROTXpodGEzRkY1anZfVnZuZ3g0UmlGaFpCWXR3WFF0NE5xSFNoUzloVXI4RGl5NHdfNkV3TmZTSm1iZWRTQmJ5WHV3cGR3VE51OUdVZTZWa0VZVC1Cb0tvX0Z6QWhDdFBobFdtQjloYndtRWV5UnE0eFdtTVdZZjlDNFhiUjZIbl9SWmFzRkEzQTdOc3VQYW1xWDB3LTNuREpqZnk1TlJBLdIBywFBVV95cUxNTVhfMDJmTFZ2NXpKalg5MWJoZm41WEhFaVhoeUpKWTd4UnZ0T2JtTlNtdzVoaUlBX3E2RXIzV1hyQnJQXzN5a2FCYUdqaEpERnROQ0swdktBbHRpTW8wU1ZXaFN6b3dXSXFiQWh5Mnp4NmZyVGhKTHo1SDRaeFdLZUI1b3ZMRUdBajhGQ2oyd3pEbVNubjU2NmUxcy1ybUVZVGlqbFVxc09pb0V3bmUtVEtWU0p6WTZ3Mnh2dW5VYVRMaVBSVEZjU2YtQQ?oc=5",
+      "title": "Ucrania retomó los ataques con drones contra refinerías rusas",
+      "en": "Ukraine resumed drone attacks against Russian refineries",
+      "outlet": "Infobae",
+      "published": "2026-10-30T19:24:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQNnkwN0VWUndQQ2ROM2pjWDhuLTVSYUtINFR2S3c3dkRONkZoOV9JWE5GdnhkOVMtZ25GTWtwekRER3JYNjRPbUlDQUt3S0d2aDJkcWgzbjJ4OE9zeEY3R0stRzk0dHRYUnR5M2lKSE44YnhNR3dibVAwN0l2OXYydmFVUTVqZHVtR0M0NGlBRUhvWm1penEtaGJQZWFkRWdVSDloeWUzc0lCdHltLVFESVlpRElLVzFQVVZCUzktaVQzaG11VGZwUkp2Q1N2dVZuS1l5MHlZazZRRzJRWmFocDZaakUwQTNwTnh6SzVheFBLZXYt0gH_AUFVX3lxTE4tcmJGQWNkeHlkay05Vmx0ZXRLVkFNOTQ5a2lTWFZxeWRlMHM2eFZSN2lTdFM0MlVKclhTLWU5Y1gzYzl5d0N1dzFjS3RINU1TaFlMbjdJN0xoTDJ5OFVXaVlNQ1dsM2JQTUpud0NZVGFwRWFaUkd5cG1oTjRmS3YteXhTTWxiTnRVbUxnQm5FSE1EVVZ0NVZLM1A0ekMwbmljVzhXOElXbGZJN3dlTjhQMmVpY1JVZVkwUHZST0lVNEJsbmlOSnh0cHlMQ0lYMXJ3NnhrSEl6dmdpRkxpYTE1MVVUajluSUo0eERVUy1LM0JHaDV6LTBrTHpOSC1hOA?oc=5",
+      "title": "„Fotografia de grup” a G20 a fost anulată din cauza lui Serghei Lavrov: proteste ale europenilor față de...",
+      "en": "The G20 \"group photo\" was cancelled because of Sergei Lavrov: European protests over...",
+      "outlet": "Digi24",
+      "published": "2026-10-30T19:20:14.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbkhSQlVQeDAxbU9FYXV0Mi03My1oS1BzM29qOU40MUFidDFWVF9DdXZ5TGRIbGt0S2trNlZxOXc4X19xTEMxZlRkUjJzY2x2Y29RR3I1Ukx1dWNLSDJYV0ZCRERXZERWUlJoMFFtQUdFUVhiM1k0R0FocmtGTWxjZzNsSHV3WTN0OVBkd2JveHdqMWZ5QVdGMXhSQXA1eHplNTZXSVFPTQ?oc=5",
+      "title": "Wojna na Ukrainie. Putin gotowy na rozmowę z Zełenskim. Kreml stawia warunek",
+      "en": "War in Ukraine. Putin ready for talks with Zelensky. Kremlin sets a condition",
+      "outlet": "PolsatNews.pl",
+      "published": "2026-10-30T19:15:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWTNib3JmTTZXT0FfY2pyV3VjUVhWbmkydEFHdDN6MzhYRTFYRzJPbE52V1JHZlRyMW0tbzRMUVBrS2FIVHExdFlMeFVhY2JDQWpZUkNwOGtiZzRoSXlBV3F5QkozNHVFYnZOLThSdmlrUV9meVVHcjlCTEUtangwbzNqSzl1bkpGLVUtQjNsaDVxc1B1cHNkZUs3ejQtX0c2TlVhVGU5OVR0RlllZEVodkMxQ2lWWXhmTWFCeFZJQ3VYWHhxOTFhXzBCaFYwQm8tc1JwbzR1MHplVWlhM3R3?oc=5",
+      "title": "Отчаяни украинци: Мелания Тръмп освободи Олешки, но Путин ще стовари ужасите си върху нас",
+      "en": "Desperate Ukrainians: Melania Trump freed Oleshky, but Putin will unleash his horrors on us",
+      "outlet": "Dnes.bg",
+      "published": "2026-10-30T19:05:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVzBEQmIzbDVRZDBlSllKUWpNS29xYjl1QmZ5X1lOWERXQ05VaWhhcFZ5US1kUXVReWFmcTFpSVQyZkl6R0JJNzhzTV83UkI2NGgwcFJ2Y1JOWDl4UjUxWjlDMndpQ3VRbERaWDZYU3g2SDhIdTF2YzVHMC1jNVhfSVY1djBncWlVd1FSM1BMb2FXYVJJajl3?oc=5",
+      "title": "Jiskřička naděje. Olešky naznačily, že Kyjev a Moskva se mohou dohodnout",
+      "en": "A spark of hope. Olešky suggested that Kyiv and Moscow may reach an agreement",
+      "outlet": "iDNES.cz",
+      "published": "2026-10-30T19:00:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "SI",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOOW1WZGdMUUZiZHJwSWtVNlRMdnFPdVhFZUZ3QXIyM2hSU0tvNnlEamVqUWlMWmkzbEtiVExqZWwyZGd5RTMxWVBrWVlOcTlsbDZWZXZJTFc1d3R3Qjh3YlhMTDhkUFBmblItXzV2TnRra0R2LUowajBUNVZqalEzRG9xTWxQRFN1VmtjSm92M2ZKQWJwbFh4WF9ncjlIVmZrZ2RjX0cxazhjRHdrbXVBbkh0ZXNFaURXMTltblNjNGhvOURES1BEZA?oc=5",
+      "title": "Putin po pogovorih z nordijskima voditeljema: Rusija je pripravljena na vojno z Evropo",
+      "en": "Putin after talks with Nordic leaders: Russia is ready for war with Europe",
+      "outlet": "Slovenske novice",
+      "published": "2026-10-30T18:57:29.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "MA",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdHhPaGdTNUJTRXR0WTFnSVBiTW4yU3lRZUtiUi13eldFUE1fVndxY2drT0xWYVBYRy1EOWI2ZW5raE5QaXZBOXA1TVpYbjlsckdZcDc4UTBDOXFyMlJad21tY3pNUzk4SXNhOHZuZF94dlljNG5WaFRZS3BCZ2FXcVFtSlNUX2ZmWUV1ZzdySEt6SzhMTXBRallpTW5sN0UtWmdUcTdIVEtFdVFzcUpudw?oc=5",
+      "title": "Sahara : Paris dénonce le veto russe et s’alarme d’une fermeture brutale de la Minurso",
+      "en": "Sahara: Paris denounces the Russian veto and is alarmed by an abrupt closure of MINURSO",
+      "outlet": "Le Desk",
+      "published": "2026-10-30T18:57:00.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sUzhQTE1ORml3SGt5OVpybWtyazMwOHBvX1JLcDFaSE1ucWxaYURYVjgzR2pSeHpfN2daU0pGU2diZDlPWDE2cVpTTDdieVMwMkVCYy1Ec2V5TDlBckhHZnhxRFFKcmsxbGhLcjV4WnY5MS1yUGwwTUwxaDg4dw?oc=5",
-      "title": "Karas Ukrainoje. Evakuacija iš Oleškų: 17 autobusų – į Ukrainą, tik 4 – į Rusiją",
-      "en": "War in Ukraine. Pause is over: apocalyptic images above an oil refinery in Russia",
-      "outlet": "15min.lt",
-      "published": "2026-10-30T19:16:12.000Z",
-      "outlets": 6,
-      "trending": true
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObjlaUDE1UTAwbzN4YkFSUDNBa2pNbE9yM0E4UjBic0xVU2szVElqVHU0bnY4b3ZWZW5UalU1VjhQakhFaXB2bHZ6VlJHQURMc19nSlU1NDFIZ3Q3R0xFNTQtUEE2SUJBeTlFV0NENERjN3hac2hYOUJHMkk0dW01SnNKcUVaTFFIenNIcTI5dmQ1dFlrb3RVRExuR2pXUUJYM3JCM1JreTVaYVM5NHFTclg1Ylg?oc=5",
-      "title": "РФ кілька разів прицільно вдарила по залізничному вокзалу Дніпра: поранено жінку, зайнялася пожежа",
-      "en": "Russia struck the Dnipro railway station several times in a targeted manner: a woman was wounded and a fire broke out",
-      "outlet": "Суспільне | Новини",
-      "published": "2026-10-30T19:12:37.000Z",
-      "outlets": 4,
-      "trending": true
-    },
-    {
-      "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbzhhYTFIZ2tyeDNod3Y3amxIdXNLQlNnYnNvcml4UGdaLUo3dWNmengyYjI3cmhGM0VYc3I0N1NqcGxOM0w0SVVWcjBZWkY4cm0xOU9FUGRfQ1c3SUp6NWd1ZWRic093S092VU9uc0xpSHoxREh3ZF85M01ZY1gyMExucEJQa3FqYmZMczYycXh4VWRuQnc0OWpacHg0QTZ0dzFVaw?oc=5",
-      "title": "Zelenski spreman na susret sa Putinom, ali pod jednim uslovom",
-      "en": "Zelensky ready for a meeting with Putin, but under one condition",
-      "outlet": "B92",
-      "published": "2026-10-30T18:58:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPam9zWlBycGFlWTRSN3JYeUd0U3FEOXpoM01heUNmWkFDT0NPOTA3dHdUTU1GM21kSllpQ29BYkswZGpIaWlPUm5KSGxQX3dubElJRTdxTnVNVFVtRnl2dzhzaHNMY0I0MzI4S2tjWndRVWFFSUpCZVEzNTlmczhuaVVuRE9ndE4tYnQ5RDdQUFFRMHlyRzc3eGFqTHFySUxCYnJoMGdfcEY0YTRBUWt0VlZB?oc=5",
+      "title": "Zelenskis: Ukraina siekia smogti dar toliau nei Vakarų Sibiras",
+      "en": "Zelensky: Ukraine seeks to strike even farther than Western Siberia",
+      "outlet": "Delfi",
+      "published": "2026-10-30T18:53:17.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -50,7 +530,17 @@
       "outlet": "Українська правда",
       "published": "2026-10-30T18:49:00.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPcGxBRi1vNGJTUFpOSnFmT1V3bTN2cG4wSlZwUkxVU045NkhBaDYxdlJScGQ1RXE1MmduZUVaakNmYmY4VnBGOUZBM19PRWg3NVpiNDdKU1JMeWJmUTZWUThyczhTblFQVGtmOU8xUnQ5Um80bEFtNzVtVzR2QVpPOXdhY2xxU1BpVkZERzY3SFFCcnFtaWlWeFZyWDlLVks3QUNsOXczUERXNGZjVUVSWDRjVUEwQ0lJOTdENGN0cVFFblI1WFVvWWxEYS1YRE80dVpRcmRpcVU3elh4bFBPR1ZENVZwN2VvY3gtRVVMdkxqZndVWWtNcEVnenlqd9IBggJBVV95cUxQYWU3ZnEwZnF5bWJrYXdvZGlDS3dISjNRSzhDeTdnUFBaTzI0N1M3aGVyYVEyV3AzNEF6aUhRU2VWZkJPWHgxVmpQRnhGYjB2UGRLelptYUxwNVpXNTBINDJPQkszcDAyRFE3Q1YwRmFTVk51N3ppcXIzMmZCSDBHV1dYQzJ0NUFaOWRjcExHYWNwdFpRWTd0NVFsVmhESW50a3lLM1JBazQ4eGlhdk9lSHJxR2Q5YXFYTDhSaWxPcW5VeVV5NXIxdGlackRQSXJ1Tm85VlNuMXhqNHJRUjNyTEp3Mk9uVjVmNGlJZ1dCOUp5aUQ3a2t5eWxzM2RfbGVURXc?oc=5",
+      "title": "РФ вбила КАБами 5 працівників центру контролю та профілактики хвороб в Ізюмі: ще 14 осіб поранено",
+      "en": "Russia killed 5 employees of the disease control and prevention center in Izium with KABs: 14 more people wounded",
+      "outlet": "OBOZ.UA",
+      "published": "2026-10-30T18:46:49.000Z",
+      "outlets": 5,
+      "trending": false
     },
     {
       "from": "LT",
@@ -59,27 +549,67 @@
       "en": "Sikorski will convey an important message to Lavrov at the G20 meeting",
       "outlet": "Delfi",
       "published": "2026-10-30T18:40:59.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "CU",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWExfazJiN0JnRGlmZzNyRlRIRHBBN2FDVldzbGdReDB5cUJETlpuVkpmb085RVZ0YVVraTJXQkIzNGVmRGpiOU1Pclp2bVI2a2FZSW9TcjFfUTloRXJ3RGx3dkVkZXE2bkVwczRPSzVFNFRjbnZPZDB2STBSSDhwVkZjcEZXZWFwbnRsUmQ5U0NoOWJ6b3ZyY2p6WmF1eEXSAaQBQVVfeXFMT3AzdUtYVEZ6RlloYUdkakNiS2xhb2hGVmZibVZ3YXNUUXZvM3REdVU5aTFoTXBQdUlNMW1vQnJiQzdNSmpnV1pvS0Z4R1VHcFZwdlFyWEtrbTkyX05ycXQ4OW90UWlGazNYeFlVajZPV1FqRDZRdTVpTzIwUkI3Tzg1andOZUlzejNKYzZ4V05WcFN3QkNDSFZoY2JZSXpyUVE2bXE?oc=5",
+      "title": "¿Por qué África rompe con Occidente y elige a Rusia?",
+      "en": "Why is Africa breaking with the West and choosing Russia?",
+      "outlet": "Cubadebate",
+      "published": "2026-10-30T18:33:24.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZmJkcXBmUG1NN0NSdWFOc00tWTV4X3BvU1g3eEdrUkNONVB5bERQRlpLWTJrbThUTXpvbHhwRHUwb3c0NmpiYWhUNEN4aFJ0TWJFc2pNWW54YUszWURvclp6MzF6WG9HUDRZQWE2RnNOQm9VR2VOclItZ3ZXWTkxRTFIR1JocEpLZ3ozRjVNVlFMdEZ3eE1GOTVKNmJXcHRLOTJVdG5qakgxTjVULU42ag?oc=5",
-      "title": "Another Russian refinery is aflame despite Trump’s warning to Kyiv",
-      "en": "Another Russian refinery is aflame despite Trump's warning to Kyiv",
-      "outlet": "The Washington Post",
-      "published": "2026-10-30T18:33:43.000Z",
+      "from": "DE",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRFNUWnNQd1o2VVRGVkRTZ1M5UnFkdjF6YUhlOU9UdG54cWhhRHJWMmlRQ3JYQms3UjltMzJHb3lNeVdrOTNrM3ZuRGVQbVBTa0psdm1EWkdsMWlrU3NmVXIwbzNPYUVublNiTGdRQk03UmM1c2ozNHFJalBRNTZJT05DWFRlekczbjV5eVlJNWdNV21XTFNkX0NOb2QyZw?oc=5",
+      "title": "Ukrainekrieg: Evakuierung der von Russland besetzten Stadt Oleschky abgeschlossen",
+      "en": "Ukraine war: evacuation of the Russian-occupied city of Oleshky completed",
+      "outlet": "DIE ZEIT",
+      "published": "2026-10-30T18:30:44.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "DE",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNY25UaENzT0xHSVJPY1ZESm40SVhzRWkwRVhuRENDVGhYWTRjZ25qcnVtMHFNX1VYWXJocEZhSXoyblVtZzQ3X0dMZXh1bkRGR3lPVDBwbmhQOGRuWE5JTDk0cm5NMWpndnV3bTFQNC1uZ1p3WVJVb095Mk40ZjF3cC1sVG1fZEh6dHVlUzJfN2VIYVp4YmtfSlZxVFoyOEk?oc=5",
+      "title": "Treffen der G20-Außenminister: Europäer verweigern Gruppenfoto mit Lawrow in Atlanta",
+      "en": "Meeting of G20 foreign ministers: Europeans refuse group photo with Lavrov in Atlanta",
+      "outlet": "n-tv.de",
+      "published": "2026-10-30T18:27:14.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "AR",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZ1h0c0dpSmM3R3pqalJveUQ0LVJOeWhSbEFOWUpTbVJYNjgwV095ZE9wRHFNWkE3RDlrSmpQNnNNWi1jdzRoUVpkOVlkajAtTURCWGxXckxHdzhyQzBqaWYzdkhmaHNXNDFDU3F3LTNFZDhKWXBwVGM3d0hqYU9jc0pqTS1zQ2VDdXNjODBIeG1sanNtUmdmZ1oyY0Zld29PdlkydHRZTDNCU25faGF2eGh4YTNYTzZaV3dmQVBuYXhjMzNnRlE?oc=5",
+      "title": "Cierra uno de los últimos grandes bastiones del periodismo independiente ruso",
+      "en": "One of the last great bastions of independent Russian journalism closes",
+      "outlet": "La Nación",
+      "published": "2026-10-30T18:25:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeG1CV0RZR2t4WGsydGNxaU9TV2xrWHh6b1U3TG1nbHpGaDljOTMzSkE0cVU0WTB2eXBmOHNnQTdGdFNfTnV4cXV6WHlKQy1NVUFCdkxNcFFHbnp1YzVWTGtyNWNqenc2ak1jT0JYejhEYURGVjFVZk5IMWRPb2RvTGhPZkFpaW93dzE0SkE1dFBZMzB4VGYzTHNQcTVsZS1GbjJZ?oc=5",
+      "title": "Rosja gotowa na wojnę z Europą. Putin wskazał na Morze Bałtyckie",
+      "en": "Russia ready for war with Europe. Putin pointed to the Baltic Sea",
+      "outlet": "Defence24",
+      "published": "2026-10-30T18:20:00.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "CN",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ0hoa0owZ0Z3RmY5akVhQjdXd0hPblZrSm1kb0xfWDZjN0N3VGZSWEtYU3NmWTNRNHVhT0V5WTJQQ3VLNXFjZVVYOXhnd0dmWjN5V2xXT05fWWxsRnp6Y1ZvajR0eEN5ZFRXcENmd0JBaTVMRlhENlFxcXR1RnVwUnQwQ2xUTFZ4OE0yOUtnOVRLTDU5S3M3MnJB?oc=5",
-      "title": "俄方称奥列什基人道主义任务顺利完成",
-      "en": "Russia says humanitarian mission to Olenivka completed smoothly",
-      "outlet": "新华网客户端",
-      "published": "2026-10-30T18:21:30.000Z",
-      "outlets": 1,
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBPd3B1a2N2SnRrWWVCaFBoOG81NWFNeE1HX0ZIVXF3RWY2ME1lNEljTE05R05fbWtydXZmRVFfT1RnY29lYzhTZWVQdnJGbXQySWJ1YlFTSTN2ZXFNTVRxSXQzS0tzM0g1QzdQM3ZaX1BULUpvQTloakFPdU9Ybjg?oc=5",
+      "title": "俄方：筹备三方会谈不代表俄“承诺限制军事行动”",
+      "en": "Russia: Preparing Trilateral Talks Does Not Mean Russia \"Commits to Limiting Military Operations\"",
+      "outlet": "新华网",
+      "published": "2026-10-30T18:17:04.000Z",
+      "outlets": 5,
       "trending": false
     },
     {
@@ -90,7 +620,7 @@
       "outlet": "shelter.in.ua",
       "published": "2026-10-30T18:15:32.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
       "from": "IL",
@@ -103,12 +633,12 @@
       "trending": false
     },
     {
-      "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOa3lUYXBKb2kyZG5UVlBRQ2VXWUhrYllMNm8zOXFvQ1B3ZGhHNTZmd04yeXU5bzRmOEEyNTJDU1k5YmJLQU9qUjk4OFJraC1KX0tubDA3dl9QSnU2cEY1bEVnTDlMcWdRUGZ6aEh4SzJpSHBkb1Eza2RuM2M5MUlCOXFFVWMtc2M?oc=5",
-      "title": "Udarno! Rusi zagrmeli u UN o Srbima: Moskva hitno traži jednu stvar, ovo mora da se obavi što pre",
-      "en": "Breaking! Russians thunder at the UN about Serbs: Moscow urgently demands one thing, this must be done as soon as possible",
-      "outlet": "Informer",
-      "published": "2026-10-30T18:15:00.000Z",
+      "from": "AT",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPZGRocGR5T0VvVEsxVUJFQ2dUd3hNSlJOTTVwVkZ0STV6WXVQdDlWelRjUlREbVpWVy1TbzdJYlk3OXdlZ0ZOQUcta3hKRklsXzFkTXBPQVltZTYxLXdaazB6d2x5OUtPVUdGeVQzRGpINXc4QmlUcnR6TDdkWkxMczEySVpFaW81ZUpYcFVINUVPNTAwWmZ0N1FVdFVST2Q4b2w3b2hGQVlqMXdCeWpvc3Z4cjJ6NTdxazJ6OVJpRkZfNlRSaXZLUkh6WG52Ynl0YTZOTU5HV2RiR1AzeXBFN2x5SUpKOHhNeGFJ?oc=5",
+      "title": "Teilnahme von Lawrow sorgt für Ärger G20-Treffen in den USA von Streit über Russland überschattet",
+      "en": "Lavrov's participation causes trouble: G20 meeting in the USA overshadowed by dispute over Russia",
+      "outlet": "Tagesspiegel",
+      "published": "2026-10-30T18:12:25.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -123,162 +653,52 @@
       "trending": false
     },
     {
-      "from": "SE",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Dcng1dVlnekpsUzk2M2JBZTU3RUY2RnplTXpKNmJmcDh1OVM3VGNIUmFmaG9abXBiYkdUTFRVRHBramwxWDlfQ3htamxjTWVDVHBhdi1hT2ZyQTU1WHg1SVRjeXozeWlYd29tdQ?oc=5",
-      "title": "Stort flygkaos i Moskva",
-      "en": "Major airport chaos in Moscow",
-      "outlet": "Expressen",
-      "published": "2026-10-30T18:01:46.000Z",
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVVBkRHU2QWxrV2wyWUtNZjBFMHNLbV9RaWlmdmZjSUFQMDhfV1VxdEhRbVJtb2JUWDZzb1YxYUJCNEs1bUY4bmlYaC02cFBGNVViUlRuR212NVZWWndDdnh2MmdGOWR4TVJqdDBEZEZkTDlYX09nTl90bkVSbldtUmtBZUpPMjZhM19Oc08ya3J6RVpx?oc=5",
+      "title": "Moscova se plânge că Ucraina atacă din nou rafinăriile ruseşti",
+      "en": "Moscow complains that Ukraine is attacking Russian refineries again",
+      "outlet": "G4Media",
+      "published": "2026-10-30T17:56:02.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPLVg2TUM4OTNyRTA3eG1hNkNCcXZWYVlOZFNKbnVkSGRhMjZXVUJSN0syM2loTnFtc20xNzZtMDBtNTZrYlFha1prcmFhYkotb3ExYkxFZjhPTmxMUjlNYXhNQkh2ajkyNWczcjV4bFNLcE83aHhPalFPR1AySUZYNkl6QW5tbVZRc0FGSzdmWnktSURQY2JOVGloUzdieEZsdk9qLQ?oc=5",
+      "title": "Зеленски: Украйна набеляза ключови цели за удари на руска територия",
+      "en": "Zelensky: Ukraine has identified key targets for strikes on Russian territory",
+      "outlet": "News.bg",
+      "published": "2026-10-30T17:55:54.000Z",
       "outlets": 4,
       "trending": false
     },
     {
       "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUU9CNzZHbk9HbGE2RjlsdGpabGRoYTNEZTc0UGVadUdWM1FDWVc5WG82Zy1Wd0NSUW84UHpQVnE1M3ZuY2hsc2owbmlEeFFVeDF4RnVnT2ZZVko3cFpsZ0FPVGNJV1N5SWFrUVVweXlfSWcxbFNtdVFtMWNjSnRsdzVYSDM4emxQRkc0Z3RienZja2lfZ1NKY2Z5ZFVxZw?oc=5",
-      "title": "Alarm za Ruse; Sledi brutalna osveta",
-      "en": "Alarm for Russians; Brutal revenge follows",
-      "outlet": "B92",
-      "published": "2026-10-30T18:00:00.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzFWb2NjLXdkZlVBUjV6Zm9SckdSSUtRNXU3bWlvYnN3TEl0SzFQZGVQa2tQeU1DUFhGUFhLM2ttZXFKYk5UeXJXRVZsS3pyT0t1Wmd6Yy1OOUdzRHYxYmU3azNodERhZEliTkFPYk04YjMybVY0T3NaZzNjVXZiYnRnMUNaTnp1Vll4SFZiOHh6V05TUEVvb2ozMA?oc=5",
-      "title": "Oleshky, iniziata l'evacuazione: centinaia di civili in fuga",
-      "en": "Oleshky, evacuation begins: hundreds of civilians flee",
-      "outlet": "Il Fatto Quotidiano",
-      "published": "2026-10-30T17:59:07.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MdGRNVE1vRklsd0V4WmhGOUYzVFFMVzVxQnpiS3BXY09haWFqQmNpMDZyblNrNklaRVF6MndvOXRYX3YwTnZDQlR6akIwQ2dZU1ltUjdKLXY1VEU1bVgtRW0tM3c1RUd3cWhOWU81aFBCOUFrbjVPZ2pJZVRjaG8?oc=5",
+      "title": "Bomba! Putinov čovek objavio važnu vest: Abu Dabi u centru dešavanja naredne nedelje",
+      "en": "Bombshell! Putin's man announces important news: Abu Dhabi at the center of events next week",
+      "outlet": "Informer",
+      "published": "2026-10-30T17:50:00.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPa0hJZEZRWmlBODNUc3dTVnlSc2MweHFBU0dIQkttSGhDbDZjRTJKblhTSGpjVl9wTlJjcTlhcjZiVDlPYUpnS2NIWWN5R1J0STE0SWZ3SnlPUDEzS1ZObnpISm1mWEpBMXVsWXdpSzd3aG8zRTV2eWY4cjEtM3hOUDJocDUxX2V2QXRYQWJkc0d4dTNiUElXaXMzRDd2VVdMRVdkcmduVkZsOU81eWRZV1hB?oc=5",
-      "title": "Lavrovs ieradies ASV uz G20 sanāksmi. Eiropas līderu iebildumu dēļ atceļ kopbildi",
-      "en": "Lavrov arrives in the USA for G20 meeting. Group photo cancelled due to objections from European leaders",
-      "outlet": "tv3.lv",
-      "published": "2026-10-30T17:57:37.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "ES",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUk5NSkotZkwzcHBNNk5hc0FGSjRHb1VTNlRLaVFQU3ZxWXBvTTZwWHdWa0RGQ2NhUGVBMHJGa2ZnLWZnYW80ZkhObkM4dDBDdUE5S2lCNFp6XzdILWF5VXpPdU9oNmdOUnZTQzZuLW5veWF3RWNoQ0Jwc0hBLUJFelIxbXFKd2dWWVhPTU1xZWJpNF9nbHBiQU9EanRfeUttT1VWNDl6a3FzYkRaM0dmMG5hcm9hdzdPVGJzR2RaR0ZwN0tTaHFnZnVqcXhqR1pWY0RPYTExNlVZNDRMRFFNM1Fn?oc=5",
-      "title": "Rusia afea a Zelenski que no pare los ataques contra refinerías de petróleo pese a la petición de Trump",
-      "en": "Russia criticises Zelensky for not stopping attacks on oil refineries despite Trump's request",
-      "outlet": "Europa Press",
-      "published": "2026-10-30T17:45:51.000Z",
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMinwNBVV95cUxOY3FJOFgwckxBSnhpUXBUWTFvZmxpdlV1TkQxQmxZT2Rha2NGczM3N1FEYVljOFUyaTV3bGtvTnp4SFd6eVhvUk1MS3FHSENLZVdqaEtMd0Y1LWNzOGhkNUNXRHlXX1RLMjhCVEhSU0lNaEdma3ZkWEhlY05vVnN0N2ZEYkd4RzNUN3MxY01QU3ZaWTNRbEk1WEZNTURzZWJJdlN4XzV6bVBpZkU5TklQN2JtaEttOV9KYjNQMWUwcG9OV0Q0UTNibDhzZG5Fb2VMU2xSOVNlY2NBTGZ5SnZtNHhmM3JhcHU2Q2lTcUpFcW90OW1Hb1VNa0szVUxmbGVDVEpadVlYWUJ1OEJvWGNBbzNDYU1iQWhoOWVVZmdMQ0hzYUJ4Q0pRQ1lNTlJuV1lDQjhYQ2pESXloV1NEZ2RVU1ZoX21rVDdPRXlaZ2VLT1UxczZtSFdzWEtrYTM4dDBOQld1RnYxVzNubGlTa2huTlBFNDJQMHR0ZWp3cTdLUmd6MEtNRHRFMDJiem1DMGJnOUFfbDRiM0U2WWUycXJr0gGkA0FVX3lxTE5uS0VxZUJpYjQxRUxTbWtfRUJjOFBHWHpUQldnWVNtR0QtcU45SEtZOWdqM1pqeXA1NkRmOEwzSXBsLUdQY21HZkcwVWQxaTJGVlJma1JuZ2NhWEJCT0RHbVNOSnRWajdaNE4xRURoejV2bV9UYzdzbUpRbExqaWJaY2FlQTBDaEtRMVJVV1FfeVRSN3hkTUZuc0h5c1ZzeEktU2VVdW9DSmdPYlc0ejRNdmJwbnVzMzRtd1d4MDFTSFQ5Vk1VWW4wMjN6Q1pyM1pONnlsU0lDbkJHMnRJN2phTktfaHRnWGN6M1RMQ093N1JxQTE3R0cwUjFQMF9CejVtRjRJa2owVmp3dmRoTE1scEdZUkNWZDVmU2hrMURDbzhVY3BQbVpmbl9WVG81dGNtLXVZZ3pJU2RDam13QXFSZWVEZktWTW9NSGwtSVN6N3djU0NNWVJ0R3M4V250SDNheXdqS3c2TmVoSVRZcFdFcmpjd2RvVVpZenVRejNsbEs3TVAwTWNDeW94MUZ5TzQ0RUEyVzhmUmFfZTRrTHphYVR3aw?oc=5",
+      "title": "وساطة ميلانيا ترامب.. إجلاء نادر بين روسيا وأوكرانيا",
+      "en": "Melania Trump's mediation... rare evacuation between Russia and Ukraine",
+      "outlet": "سكاي نيوز عربية",
+      "published": "2026-10-30T17:44:06.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "AT",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9JYlVzcU1yejJqWGhNOUlTdEtvRUFQZmw2MXZhNmFPRnNRbU5fNlRtWDYxQTJZQ0YyWDZ3Mnlud3NjX1dfM1E?oc=5",
-      "title": "G-20-Treffen von Streit über Russland überschattet",
-      "en": "G20 meeting overshadowed by dispute over Russia",
-      "outlet": "ORF",
-      "published": "2026-10-30T17:40:44.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "NO",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNN09xXzREMTdSMUc2S3N6SDBqaHM4Y3RpR0N0QldWaTg3MFlaaWdyQ3h2WTVyNTlDMGtVLVZ6UW5rT0hWbHg1UEhMQXV3TUpPY2JSR01xdG43b0k0S0E1Vk5ReTAwdmNkcmU4QlpGTHJib2lvVWhEdVdXTE1LSThSajVrSjNENGNUSDZqTGJJWjNMU1Fua0s3TjRvamh1el9qU1F2aS01WQ?oc=5",
-      "title": "Russland-bråk i Norge og Sverige: Nå melder Finland seg på",
-      "en": "Russia row in Norway and Sweden: Now Finland joins in",
-      "outlet": "Nettavisen",
-      "published": "2026-10-30T17:40:31.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQ1hqV0pQelA0WmxpN1RfVlJvczZ4YzJsaFRCVzBwdFlrMklrU0tvT3FQQjF4LXNWWDYzbXRzc2dZbjFqTmxFcmhYYmNiM2lWaFhZTE4wVF9RdDB4LUJ1Mjh1cU1ZamtlMU82eDBVcXRYUHZhbXlxUEpvYWNLWm5COXU1amQxNmhweHZEem9mcjJJeThnS3JTMXU0elhOX1BsaUhCNkIzczZQbkN0LTNlaTdn0gHoAUFVX3lxTE50ZUpEMVQxMGg0QmY3T3JvRHhJaU92UmhNWkVvTGtSODBjbGR4N2VwckJtTV9uYllsc0xwaU5zdlQyeVA3VUc2MDVDQWxKR1k5VjFqTUVGWE85Z21Cc1hVUlJXTy0tc2N5S0g1QnBXbDRLQklESmhEYVZYem1ndGJueHpqSU83MXNZMzdUNXhrVGI2RXhScWZ6NThQN1JNa0FRX2hFRVItaTF5VmRwd2hBWlZYcW5BeEpxeVBVUkVkVXNuVF81Z2d0Z1J6QWVfZ0pyT0hoRVg0R2ZscjhNcVJ1dGVFbGVoQko?oc=5",
-      "title": "ЗСУ вполювали дроном російський гелікоптер Мі-8 (відео)",
-      "en": "Ukraine's Armed Forces used a drone to hunt down a Russian Mi-8 helicopter (video)",
-      "outlet": "УНІАН",
-      "published": "2026-10-30T17:31:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNX3RWYTNGcWJwMWVGa2h2b1J5bFFTUEt6V2lpOXlzbW1WY2Q5X0kzRWxxcG5hZ3pweHVtUXdEMHNYQk5TWXZSZmZZVmFOX3dabEtIMDhiREFVVlhEal9yN0xZbkgyQ0MydWVtdWh4dmNYNUFKODNYc05fT0N4V0d3a1F4XzNzWVhOcUVJYkVFVUp5MS1qZzNPWkFWcC1DR0pRVk1GUVJFTlA3WHBSRmNaWUl0SXg1b2haY3dRbkxSQUlpN0FmMmxUMldFMTdCMkNmVnJYV2pNTG5CYlozcXVhd0Nscmppb2lDRjNDUE03RDdSdC05ejlmUHJGRlY0YUU?oc=5",
-      "title": "تقرير: أوكرانيا توقف مؤقتاً هجماتها على مصافي النفط الروسية بعد ضغوط من ترامب",
-      "en": "Report: Ukraine temporarily halts its attacks on Russian oil refineries after pressure from Trump",
-      "outlet": "i24NEWS",
-      "published": "2026-10-30T17:29:28.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "FR",
-      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxORGsxNS10bWx3ZVNpQTM1Z0MyUzFrZXFCZ1otRjZUYUM5Y0FQbGlwcV9RUmNVamhyRm5Ja1RmbHJicFpaa2tiMHZ6cWlDTDJvNmRGQUZxd0FZWUdPU1RwQ2tCZWRtdWstMGljWEVlM25pallIaVZITkNNUnlwVUpVb0Y5dVJCYUNsWDRTSEl2c0tSeFBPYnJmTnFZZmtUV25XRVZnQUYxdS1kZUZTYmpRdDl6NE5BTW5aUTYwZUQyZUo0TVAxa19lWmlUVE12QThwaVlyZTAxWVY5SDhBVUYwRFVfdkFFNXFHaHRSOVBlRmZaOEVJUk1fRDQ5OFdwWmIzaEJwbW9xQmU5X2RhV1JKeDdBbWVGdlplbkpaUHBBQQ?oc=5",
-      "title": "DIRECT. Guerre en Ukraine : Vladimir Poutine affirme être \"prêt à partir en guerre\" avec l'Europe, tout en soutenant ne pas vouloir en arriver là",
-      "en": "LIVE. War in Ukraine: Vladimir Putin says he is 'ready to go to war' with Europe, while asserting he does not want it to come to that",
-      "outlet": "ladepeche.fr",
-      "published": "2026-10-30T17:26:59.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbzE4NEhrNUx5enhyMlBOSUFOWEJnZU93Rm51UnJOOUJiUFJoSEVxbjZjRmZUcjhQSVczNHUzWVcwQ2FndGl2bHVNcnZlYTI5a2QtY21qalBSckJ0OHZCQzBYdWtjMTRxTktraHhLS0pCd0Npdjh1bHZTb05acVB1NXljdzJnb3ZtcEdsNFdlUkdqS2NLTHZBal9kODJHUWx2aFRGak41YVdLUGp5TVNmV2RvZGE2NWtWSkZrQS1TNkk?oc=5",
-      "title": "Cum au ales miniștrii europeni de Externe să protesteze față de prezența Rusiei la reuniunea G20",
-      "en": "How European foreign ministers chose to protest against Russia's presence at the G20 meeting",
-      "outlet": "HotNews.ro",
-      "published": "2026-10-30T17:25:52.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPaGVuaDVEVkpKMXJydzVpbDh6dm5vMHgyZ1lhc29lalBaMjNGem8ycUgtOXhBa3p4RURfTnlIWUVwMHkxWEJlZWF2Zk96LXcxbDRieWRhaGxYTTJLMzV6MVl5N25yM1h4V3haRi1Nc2JqZjJVTVhiOC10YklZa3M5WnVYQXRNbVY4ZkRMRTZJeVdsZFdNTG5saEJoUVFhNmpGbTBIY09GNEh0RVpTdGdlZTFqdVEzZkdBM3ducDRnNC1lS2oxUEFZc2tjNFE1QWplMFZpV2E0QXJxS3lnRTlzT2d2dTdxZzBwZE44SmJVQi04cFN6eHYxWURBUmhUZ3lSSHI5d0dYZlHSAZMCQVVfeXFMTXYxT2Z4VVQyeEhlUjlPZXdRTjhYckVRaEJtQ09IdnoxS2diazlabjhmajNkLVd5UDFxLWpzeVRKUDBMTE5KZm9lLXdCdVRqTVFJZXJkN0RMd096UUJIR1hvTmpXRWMtQ3RzT2R4aHRTaEc2a1Azek5IRk1KdU9ub2gxeHdjMTVqckE5RWJrQk5vSFhCSGwtNGdUdnA5TlZjVzl4OFc0QkE3ZXVZYTZ2R29hLVJLTU1LbmVUOUE0QnZDYmJ2ZzNveUVuUFNGMXNITlBjRHZYNzY5WEhtdVU5b0JBTW00UkNuRm9SbXJ2MUszTy1uZU5aRGtTakFZckZOLW1UN1hCQ2VBbFJsZ1ZIbnU2VW8?oc=5",
-      "title": "Premierul estonian refuză să-și modereze criticile la adresa lui Putin: „Nu o să mă abțin. Este un...",
-      "en": "Estonian prime minister refuses to moderate his criticism of Putin: \"I will not hold back. It is a...",
-      "outlet": "Digi24",
-      "published": "2026-10-30T17:19:59.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPaE12Zzk2c24zc2Y5ckFEd0E5c1FvTl9ESzJYM3BOZkNfYUk4X1Q0bW5pM2tKcUVCVkhKQWdCLTd4WE4tVnVHSUxua2M3OTZpUlBxdlpGSV9TSHFiWEVSeDNQOXpnc25RYTIwd0QyVkxLQVNTNjZFS1FxQ2czcUlHbDFyVUpRYWxRcVFMcUhhSVZSemRXcUFfbm80RUR6by1fR1l6NQ?oc=5",
-      "title": "Putin ostrzega Europę przed wojną. \"Nie będzie zwycięzców\"",
-      "en": "Putin warns Europe about war. \"There will be no winners\"",
-      "outlet": "o2",
-      "published": "2026-10-30T17:18:59.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQ1FUMkxHNy1JTWk2NUJQWVg0blZHM2FWZ1BFLW9rNVJhbUxYMFExUzlsN0dSVjk4UWZMTG9ZOUFNbHZoSDlfQzFVSGxGTXdwb3NJeUV2WF8xNEh5YTZNSURoU05iX0hQQ3FiUjFhS3hZMVFLRFkyRlRRRDc4NlpuNnlvSkFBUkJHdUZoNjNqT05JVVNHXzJhQjJsRUo5SjVEM2hIb3hkWXpUd2lFdVRSZnhILXZrUVlDYi1jSnVyLTA?oc=5",
-      "title": "Nemački ministar odbio da se fotografiše s Lavrovom; Reakcija iz Moskve: \"Uplašio se\"",
-      "en": "German minister refused to be photographed with Lavrov; Reaction from Moscow: \"He got scared\"",
-      "outlet": "B92",
-      "published": "2026-10-30T17:11:00.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "GB",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1nNFJJVHVBcVlKWWZHMFV5c2dXUkIteUNjN0RvNnpjbWh0NmhTQXdYNFBhdFFVTDY1d3hISFd5OXNqbER5VTFFNVI1b25uT3lrTDE3YkZvaHQ0LTJvX1E?oc=5",
-      "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
-      "en": "G20 'family photo' cancelled after protests over presence of Russian minister",
-      "outlet": "BBC",
-      "published": "2026-10-30T17:08:12.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CA",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTk5FZmxldWlmV0ExYjJnT21sU3VSOE9EVldUNjB2eElURGFaQ1ZLZWdnbEdMcEdkUVJuQVlBYmlSOU1OS19TWFc3MDdIb0RoUzc5dG9uZTFvRGNDRXJQejhIWE9pYzlqR2FsNnRBQ3dXYU1jZ3lacE1OR1FsMzJWWGl5a1BwT0JDNjNEenFmODhDQzZadGdQQUktWHc2bW9ob21IM2dYbkpYZw?oc=5",
-      "title": "EU diplomats object to G20 photo with Lavrov, prompting US cancellation",
-      "en": "EU diplomats object to G20 photo with Lavrov, prompting US cancellation",
-      "outlet": "Euronews.com",
-      "published": "2026-10-30T17:03:13.000Z",
+      "from": "PT",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdm5HMS1kdm5DSGVFcjRrY1VFd09VT1FqSm1lM1dBUXZ6YUFjUE9FLXRtbk5kVXZoUVFKTHZldGxJeTBXek9Idm40d2tPQlZSSEY3TUY0Yk52dlRBU3g3UUt4dmhVbUM3NDhzM0hELUlnWUpyRE95U1B4YlJQYkVqM010LXVMLWRGY2lOY0ZhTEpsbzJvRGFJQUM2ZHd5d0lJYTlQOHRKVzhBRWI4cGxVOUc4YmYxemlOekxnT2FKZTh4XzA?oc=5",
+      "title": "Kiev pede reunião urgente do Conselho de Segurança da ONU após ataques russos",
+      "en": "Kyiv calls for urgent UN Security Council meeting after Russian attacks",
+      "outlet": "SAPO",
+      "published": "2026-10-30T17:10:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -290,26 +710,6 @@
       "outlet": "rtvslo.si",
       "published": "2026-10-30T16:59:41.000Z",
       "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQzNvZkxULTVsM09Ga3JCdlJoOWVTMGFfb1NsN2JaWFpjOWxDc0tvSXh3MTBHTmlxRFFBcmVYOE9MMW5lX1l0NXpSc2hvTWZHX094Skd0aWVIdjZLUXotTkkxT0h1NFc1X1YwNEJrQ0R5ZTgxbkJuVzE2aXFLbmcxbFdQdmNWMkNBcV9mblVfc1BFbElIaUpJRzIzUHZjS1k?oc=5",
-      "title": "Nowaja Gazieta znika z Rosji. Władze nasiliły presję",
-      "en": "Novaya Gazeta disappears from Russia. Authorities increased pressure",
-      "outlet": "o2",
-      "published": "2026-10-30T16:56:53.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLWttamtyTUNQQmllaUk4MmF3NFN1S0FUOWVVTFBoQTVFTmxQbG1rOUVDVHRMcnlyVDFrWFM3dzN0LVlLX19XQ21MMGZqbDNWdFJ0LUlwVVFUWk5abVFJLXE1SDJmSUE4a2k1SkpKeEk3RUlHU1lKWnJmOFhOMjhyc0VWZU1ycldyUUk1T3hoWERaYjY2T1V1Y1RYQnI?oc=5",
-      "title": "Fostul șef al armatei britanice: „Ucraina va câștiga războiul, iar Rusia îl va pierde”. Ce argumente invocă amiralul",
-      "en": "Former head of the British army: \"Ukraine will win the war, and Russia will lose it\". What arguments the admiral invokes",
-      "outlet": "Adevarul.ro",
-      "published": "2026-10-30T16:53:07.000Z",
-      "outlets": 4,
       "trending": false
     },
     {
@@ -323,59 +723,29 @@
       "trending": false
     },
     {
-      "from": "HU",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNYnd4UXhfN2JqekF1M1NWNzd4Wk9TUE5wOXFLRV95MEE1anNwTUhCZVpkMUFZLXg2VVlpNnBSeFhZVzR5WHlwY1ExVkhoU1UwN3ZqdlBBNmJUTFEtMXkxUmdwaWN3VS1DSEx1dzN3S0tZQ2xBOTNSSTJYc2daaEVMU2RjRk8za1cyOHhUUW14S2NCM0FGLTlRaXBkdjNYSFZNSUhtVFFienVXT3hrQmNlODBZWnFxMnQ0ZnhOd05PbGViVVNh0gHKAUFVX3lxTE1yTlVCWDdvLVMzZGZucHFUVjMzM09lSWxkeVJVenZjQnR2MTZaa0Y0d2xoSjBzNk5TVkswUkJzTllCZnF5WkxWWG0xcFh4Y1JXR2dkaXZYN29qV3lzN0phT1MyR2lSMFo3QVZOTXQ3bTg1TnJjbUtNVk1XQUVrdzR0cEp0WGFYc2xnWU9HZ0VEM1Jfc0hqc1FCUnkybGQ5YlY2Q2E0SGFRSTBtdkRJRHFtTFpERFd4SlBFSkhDSG9DeXhsNFZLOTh4Z0E?oc=5",
-      "title": "Megtámadták Moszkvát, Trump nyomást gyakorol Ukrajnára – Háborús híreink pénteken",
-      "en": "Moscow attacked, Trump pressures Ukraine – War news on Friday",
-      "outlet": "Portfolio.hu",
-      "published": "2026-10-30T16:42:00.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa05KUnNfZG1OODZTY3RxWXpQTFozVkVHUkp1Sk9NVTVjWG1NVjlCM1hwY2VjSEZaSzJmaWZXNllQZVJUZWdCbkJlc2lBZFZMem5COUNVT2RidUdBTV9RUXZOVC15OFVmUWVnOVotRW5xVzZ3S1VCeWZPTUZoN2tLaVMweVl2NVRaV3l0RHg5ZFA0TXUxOVVTcw?oc=5",
-      "title": "US scraps G20 photo after European diplomats object to being pictured with Russia's Lavrov",
-      "en": "US scraps G20 photo after European diplomats object to being pictured with Russia's Lavrov",
-      "outlet": "AP News",
-      "published": "2026-10-30T16:39:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SI",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTG54YnlacndiM0VPYU1wa3U1aEFZUHVVR1U3MWtFMG83Ung2SVl2UlJFWWU0RkJzWm9iYVJDNUI5dEtVREFsRXptX282MVhITEJnWXhONE9RQWVSUzkySWM3VHR5M1hVYjRBWVA5RTM3MEUzNVR5TjU2QjRVWTF2MDk2VUgyX0ItN0ZEOG5Yb2xZc016V3dPLVVDTVMwOUg1ampLbklpWTdvWnE5VmN3a0Z0dVd6aU5GTkE?oc=5",
-      "title": "Zaradi pritiskov oblasti prenehal izhajati ruski neodvisni časnik Nova Gazeta",
-      "en": "Due to pressure from authorities, Russian independent newspaper Novaya Gazeta has ceased publication",
-      "outlet": "rtvslo.si",
-      "published": "2026-10-30T16:27:27.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "PH",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB3UkpoZS02YnR1RFJfOG03U3NnUnZaMEF3ZFgxNENoc3JLS0ZGRkYzb1ZrZTVzTEhXOG5aaTEwQ0VvbVY2Y1J5WW4ybGZKcHBveXpBT2owSmZWc0k?oc=5",
-      "title": "Ceasefire allows evacuation from devastated Russian-occupied Oleshky",
+      "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
       "en": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
       "outlet": "BBC",
       "published": "2026-10-30T16:26:11.000Z",
-      "outlets": 4,
+      "outlets": 5,
       "trending": false
     },
     {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTGIxN0FlODRGMG5Jcjd0WGNTY3BkMWhHMmMwRDBXb3lDWVRtb1JuV1NhUWtJZV8ta2ZrWTZGdjdMaUZsRXlTZUpKRFdGYmxIWC1zZEF0bDhLN1lUUkQxRGFXSHp6SDZnWThYZVVSb05ITHJOM2VfZXotWFpQenplRzNBVTh1Zmgtay1zZmktMzdsaUxBZlRjVTBpN0U3enhEdUJvc3U0bFNyNW1r?oc=5",
-      "title": "الكونغو تبحث مع روسيا تسريع تسجيل لقاح مضاد لـإيبولا",
-      "en": "Congo discusses with Russia accelerating registration of an Ebola vaccine",
-      "outlet": "Sharjah24",
-      "published": "2026-10-30T16:25:31.000Z",
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB3UkpoZS02YnR1RFJfOG03U3NnUnZaMEF3ZFgxNENoc3JLS0ZGRkYzb1ZrZTVzTEhXOG5aaTEwQ0VvbVY2Y1J5WW4ybGZKcHBveXpBT2owSmZWc0k?oc=5",
+      "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
+      "en": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
+      "outlet": "BBC",
+      "published": "2026-10-30T16:26:11.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "AE",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTGIxN0FlODRGMG5Jcjd0WGNTY3BkMWhHMmMwRDBXb3lDWVRtb1JuV1NhUWtJZV8ta2ZrWTZGdjdMaUZsRXlTZUpKRFdGYmxIWC1zZEF0bDhLN1lUUkQxRGFXSHp6SDZnWThYZVVSb05ITHJOM2VfZXotWFpQenplRzNBVTh1Zmgtay1zZmktMzdsaUxBZlRjVTBpN0U3enhEdUJvc3U0bFNyNW1r?oc=5",
-      "title": "الكونغو تبحث مع روسيا تسريع تسجيل لقاح مضاد لـإيبولا",
+      "title": "الكونغو تبحث مع روسيا تسريع تسجيل لقاح مضاد لـ\"إيبولا\"",
       "en": "Congo discusses with Russia accelerating registration of an Ebola vaccine",
       "outlet": "Sharjah24",
       "published": "2026-10-30T16:25:31.000Z",
@@ -383,23 +753,23 @@
       "trending": false
     },
     {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOanItSWI4YUxURlB2Rk1rdXJFVlZlV1diN2VaNEoybl9fbm0wakJOdXp4R0ZFVVlSZUtRWk54cV9ZZjBQRFFOWTFGWklRY2pjSGhjbVhmbVVobEpIdEEzNjRteHFmd0htM0dvV1gzR0F4RlF2VGhTV1AwcTdUNVg0NHU3RWNQV3pUUDliVnA5QU5SS1JxMFctTUozRQ?oc=5",
-      "title": "REPORTAJ de la fabrica de armament, „țintă a sabotajului Rusiei”. „Mi s-a spus clar: aproape 100% vei fi implicat în ceva. Poate au și fost lăsați”. Măsurile luate după avertismente",
-      "en": "REPORT from the arms factory, \"target of Russian sabotage\". \"I was clearly told: almost 100% you will be involved in something. Maybe they were even let go\". Measures taken after warnings",
-      "outlet": "HotNews.ro",
-      "published": "2026-10-30T16:23:42.000Z",
+      "from": "DE",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPcHlCc2NocGxXRHFiV3NQM2w5ZU5QcHdNWmd6c2NOOTg2cWhGVzVDV2JLUm0yQnFUMlg2Q2tfekNfOHNPangzY2I0ajd6NkN4eTBZMEV0YnlmT2VxWl9MbGJLcktPN3FZYWpIM1lEcWsyREp3d191UEdTMC1iTGszVmpramcxTTBtNVNaS0VIdDM4d1JQdnN0ZVg5TDdDa29DSE9ReVozb1M5SExRMDNMbjVucm9lTXZPeFZMa05pM0RneDhNODBGc1FHMGpVcFNJT1B2dU44WGM0UHZNek5od0RtVXJ4M0JVNHhvM3UwTE8xOWIySHc?oc=5",
+      "title": "Putin erstickt Pressefreiheit endgültig – Aus für letzte freie Zeitung in Russland",
+      "en": "Putin finally suffocates press freedom – end of the last free newspaper in Russia",
+      "outlet": "BILD",
+      "published": "2026-10-30T16:19:33.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "CN",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8yT0ptZE1jRnQ1cUU0WVZSRFUybjc0NkRyckN5LXJJWXkxYV9lQUZUNlBkLXZFRzdrMUZiQjVPaWpEUm1mdlE1bV9rOEstbWlodjZyQ3lGQkZXZm9mdWc?oc=5",
-      "title": "俄罗斯总统助理：俄美已开始磋商三方会谈的具体日期",
-      "en": "Russian presidential aide: Russia and US have begun consultations on specific dates for trilateral talks",
-      "outlet": "同花顺",
-      "published": "2026-10-30T16:18:59.000Z",
-      "outlets": 1,
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNVdtdFh3Y0dVY1N6eU40ZkZXTkpIOXM0dFhya2lBemRxX25tQWg4R1BZMzYtOUprdW9TNWFmN0xGNnhEN3ZKRzJDUFBOWTB5ejJ2Tm5Td3VrQXRoTzRlbEs3OUZMMWpqVXBPeHFXM1VzMTZNUjM2aUlwTnhZTnBqNks5WFF5ZGpBUEFNOWxOZWtfODZJaUVHUDBHU3F5RmRINS1nanRkYzItbm1vVExMc2x30gG3AUFVX3lxTE1RUkRueFMwYWc5SlRja0tLS1ZhbVkyWjJMdGtWYUlHV3BicHAySnA2dU44RDJ6dnQzczhBODZMOGlEcTVGUkdUOW5tWmxxc1hXMkh0bk5tLWtTUzhFZDNwWXV6ZE05OElmUVlZckhXRjMzd1VuWjVjWGVYZnphQ3RRSmYzY0liZTZvVTRjbUpMUHg4Q1RjQ1E5eTl4Y3VDRHNCdWp4cUFTZlhRckJSa0p5bUxKNU42RQ?oc=5",
+      "title": "Росіяни вдруге за два дні атакували залізничний вокзал у Дніпрі",
+      "en": "Russians attacked the railway station in Dnipro for the second time in two days",
+      "outlet": "Слово і Діло",
+      "published": "2026-10-30T16:19:17.000Z",
+      "outlets": 5,
       "trending": false
     },
     {
@@ -409,26 +779,6 @@
       "en": "This Russian jet drone contains ten Swiss components",
       "outlet": "20 Minuten",
       "published": "2026-10-30T16:16:29.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTjEtc1kxV3JRZXNUSzNpd2YwZzY1SVZ2MzFZQzc3emtDbWU1bXBvd1J3TDZreXRGa0h0cnFsQVE1REpPZWhDdnJuNnZDMTFScW83MFZNMWt5VDBmTmtERjM2UU9RWFR5b0VtYl94RWJnLXZwVG54dnZCREIxME9udTBzR3p3cTJHcXpyRmlTVHBraHpBemJ3?oc=5",
-      "title": "Russische Besatzung: Russland und Ukraine beginnen mit der Evakuierung von Oleschky",
-      "en": "Russian occupation: Russia and Ukraine begin evacuating Oleshky",
-      "outlet": "DIE ZEIT",
-      "published": "2026-10-30T16:16:04.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQVNybG1OVFRGVDdkdk5OSThfZ1hvNkxKZzV1WUh4X0x3MDd2d0xMbHQzNlRGS3NBU08xLWVsYTd0NXdGcnR5Z3c1Y2diS09QZnh2WkliOGtPWkpGUUlIQmd3T1JKbkxKZUt2MXBrNVdmSFZzNlpFYlZLWWpkbnBkd3J4NXZyQTM0bzdXYkFVemNWZ3JRVUthWVFjSXczQQ?oc=5",
-      "title": "Propagandiștii lui Putin incită la un război împotriva Europei alături de SUA: „Trebuie doar să ne înțelegem cu americanii”",
-      "en": "Putin's propagandists incite war against Europe alongside the US: \"We just need to come to terms with the Americans\"",
-      "outlet": "Adevarul.ro",
-      "published": "2026-10-30T16:12:28.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -443,16 +793,6 @@
       "trending": false
     },
     {
-      "from": "NG",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMEUyR01uc3lJOHY4Y3BENmtpVGQ1amVvZkRjZTVyWWVySm9ocVIxZVp6RElxTTh4QS1XV3VPLW9DM3NjZEJnOTJxSFQ1b05wNXRCWVU2OElKcWprNU16T2FJX3l5dlVKZDV0OFEtR2FOejNSRHM1WDJLMG9tZlBYcmx3clJjeUFzemQyRHhlSEVMVzFhZHpBbGFscFdLeHdRZmM5YzQzaVRJd2d4ZWdUaHlxYjh3cThvZG5VeVVPOA?oc=5",
-      "title": "At the Third Russia-Africa Summit, Moscow Talked Big. But Who Was Listening?",
-      "en": "At the Third Russia-Africa Summit, Moscow Talked Big. But Who Was Listening?",
-      "outlet": "The Moscow Times",
-      "published": "2026-10-30T16:10:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "KE",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMEUyR01uc3lJOHY4Y3BENmtpVGQ1amVvZkRjZTVyWWVySm9ocVIxZVp6RElxTTh4QS1XV3VPLW9DM3NjZEJnOTJxSFQ1b05wNXRCWVU2OElKcWprNU16T2FJX3l5dlVKZDV0OFEtR2FOejNSRHM1WDJLMG9tZlBYcmx3clJjeUFzemQyRHhlSEVMVzFhZHpBbGFscFdLeHdRZmM5YzQzaVRJd2d4ZWdUaHlxYjh3cThvZG5VeVVPOA?oc=5",
       "title": "At the Third Russia-Africa Summit, Moscow Talked Big. But Who Was Listening?",
@@ -460,7 +800,7 @@
       "outlet": "The Moscow Times",
       "published": "2026-10-30T16:10:00.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
       "from": "ZW",
@@ -470,36 +810,16 @@
       "outlet": "The Moscow Times",
       "published": "2026-10-30T16:10:00.000Z",
       "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "NA",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMEUyR01uc3lJOHY4Y3BENmtpVGQ1amVvZkRjZTVyWWVySm9ocVIxZVp6RElxTTh4QS1XV3VPLW9DM3NjZEJnOTJxSFQ1b05wNXRCWVU2OElKcWprNU16T2FJX3l5dlVKZDV0OFEtR2FOejNSRHM1WDJLMG9tZlBYcmx3clJjeUFzemQyRHhlSEVMVzFhZHpBbGFscFdLeHdRZmM5YzQzaVRJd2d4ZWdUaHlxYjh3cThvZG5VeVVPOA?oc=5",
-      "title": "At the Third Russia-Africa Summit, Moscow Talked Big. But Who Was Listening?",
-      "en": "At the Third Russia-Africa Summit, Moscow Talked Big. But Who Was Listening?",
-      "outlet": "The Moscow Times",
-      "published": "2026-10-30T16:10:00.000Z",
-      "outlets": 5,
       "trending": false
     },
     {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTVA2Ty1OZzVXVmZnR19oakdsT2M2c3ZrdnYxZWU1b01oUTMxcmRzd19KTlNQVFZCWERDNjBFVDVYc0Z6cm9kWXVsUGZoM2R3MXlUNHoxV3lLa1laU3RiQXN5VXhYNFFqdnNQUHRMRm5NUVFwOElvMFNIM2FldFo5WmxUT2NpOGtlR09PampGdW5mckhrWGhRVGNPemZSVFdzV29mTzRCaHhTaDNSZ3NWa09qNHQ1ZF9pVkJmWHVHM29BTkN2V0ZfVktDNnZZUUE?oc=5",
-      "title": "Na 33 jaar houdt Novaja Gazeta op te bestaan: laatste onafhankelijke krant van Rusland valt stil",
-      "en": "After 33 years, Novaja Gazeta ceases to exist: Russia's last independent newspaper goes silent",
-      "outlet": "AD.nl",
-      "published": "2026-10-30T16:00:37.000Z",
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbnhFQlgwdTc1bExzWFVSdE90dXhfZk1HN3BlNXJFQ3J6bUEtN2p1WGNuc25CZGg2aV9lb3JycnBVaHN4Z203QkY5aExJNzNFalBkVWJOaVZvXzEya1dLdVhCNHJuZWJqSEY5LVltVVBxZXQ4S3J4X3NWQll1aVJLRTRRZ290cXVsN0lDakhXcUpJY3Z3RWI2bmNJSGFHcDl5aDg1X1o0Uk11cmfSAbABQVVfeXFMTklrSHNJbE0ydlg0VnVBSDVmaXZYX0tCczBTZmd4blVhbFc0NXBDQ2dOVmdCUTNyWnlLOEFqTy1NQkp5SFc3eEFvNF9kc2xKajJqbXhyQjNCRG9PRk0zSHQyQ1lzd0UydmxQR3ZCaE1zVFRHYy1BdUhIOWJMR3lvdWswS3NvbThlQWh3c2wtbW1xeHVOVDJSWDZzb0tTd3c5eWdCamxraVZqcl8xb1Z4ZnI?oc=5",
+      "title": "Росіяни атакували Слобідський район Харкова, на місці влучання пожежа",
+      "en": "Russians attacked the Slobidskyi district of Kharkiv, fire at the site of impact",
+      "outlet": "Суспільне | Новини",
+      "published": "2026-10-30T16:04:58.000Z",
       "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTXBnR056ZlhweS1Ed1RLR0txVGFtbE1nLXF6cDVudGZwcjhqaDhqdFpMY3ZTRlhKSGRIazFSOGJmSlp2Zmlab3NjeU1uSGdoN3E2Q2lFQTMzTm1KdVh0UEY2cVE4eFJBRThqbEtDbTAycFpXQ05zMVNGaFUzdEVkT0RqUDFCOWdmZ09TQUowemxtYl9pSk5rSk95WGNUZnZNUXZ6RWxNSXR0WUFJT0w4YXQ1b0NUR2FRRTZocHVHUkxBWUJqWXJINVpSY0htbVd6eEpSWkYtb0M?oc=5",
-      "title": "Alexander Tower in Berlin wird weitergebaut: Russischer Investor soll vollständig aussteigen",
-      "en": "Alexander Tower in Berlin to be built further: Russian investor to fully withdraw",
-      "outlet": "Berliner Zeitung",
-      "published": "2026-10-30T16:00:00.000Z",
-      "outlets": 5,
       "trending": false
     },
     {
@@ -513,12 +833,12 @@
       "trending": false
     },
     {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbEYwMlBoVFlCWGZvYkU1azdib2lLQXpkR3pFQjB4aFhUSVg5ZlBBZXJOQjNuSXNOSE03cXdNLWdmYkZKa1RGcXY2YjYtaWhuSDNhVFIwLWh3LTI1aTNrelpIc1FlcXdyMVUyN0tYM3RGb0Y3YzRRTlJJNGtWSDlielRsUTBDWnI0SEJ3SHhQWEhPbTZoeWZEWGg5VzJ6YUVDc1NoS203V2c0M1JIOXJJM1VLMk5sWWVVOGxYZkVKQnVUS1FaVVJJ0gHDAUFVX3lxTFB0SUEzYmxzWlczejdGczd3dG9fRGVuTzIwZzhld2paeGVUdG94MVdZSUpPc2FsWmxYbnRnSWZGWGRweUd6RVE2YmpfVDEwdGhpM20xRTB2cGxkUm1ublJENll4dGdMUEJRUjdFb3JSc1c4MS1iTDhudmprOEdxblRpSEU4SGVMVGVJOE41OUJMcEozTzdTeWx6UU5HRzY2dFYtQVBPNU8tWVU0T01nRFh0dGJFeFk4WXZmUTRSX3ZZbUlqQQ?oc=5",
-      "title": "Закрила собою дітей. У Кременчуці через російську атаку загинула мама близнюків",
-      "en": "She shielded her children. In Kremenchuk, a mother of twins was killed in a Russian attack",
-      "outlet": "NV",
-      "published": "2026-10-30T15:54:00.000Z",
+      "from": "GH",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUmNiQ2FuVW9lZzR5MkxzXzF1RWd1c0ExeXBJMmoxd3lGc045WXIzNDdGUUFFRHlIVEtwVGNPTTg5YW41amUtTWVTZERkRlVoMER6ODd6bVRQNTJrTmVONUo1SnN1ZU5pY0c5OEY1cXBRWDBuQkFqNGpIa1pQXzgwZzdESUVmOVpqMHd6N0FSMVB5cTNocU9NYzVSWktONTFyaFB3ZWxFZFR4VXpKbVgw?oc=5",
+      "title": "'There’s no dumsor in Ghana, everybody has adequate power' - Mahama tells Ghanaians in Russia",
+      "en": "'There’s no dumsor in Ghana, everybody has adequate power' - Mahama tells Ghanaians in Russia",
+      "outlet": "3News",
+      "published": "2026-10-30T15:54:48.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -533,32 +853,32 @@
       "trending": false
     },
     {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTjBXajJOQkg2LXNreGltR0dJdUhPeklqbmpuSVdLMDYtMGdnSkp0b05LZGx6UkdRNmlvQk1WcXNKRTRUa3NiU2VJdHBjc0NScmplRjZhQWtCdDA2R28zeWV4Mjd6N1dnNEpvRFRYcTdFQlljRXdMTG5acFJubXQxWEFMbE0xcnJaY082YThtamRUODRkRHAtYQ?oc=5",
-      "title": "Wij begrijpen niet hoe Poetin zijn oorlog rechtvaardigt",
-      "en": "We do not understand how Putin justifies his war",
-      "outlet": "Trouw",
-      "published": "2026-10-30T15:35:00.000Z",
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMi7gRBVV95cUxQQXdhYTFNdlUybG93b0c0ZGlxSGNVSnhZb0VTNTUyMHlrX3phMV9udm5tbnRNQ1ZyZDRqS09uTXdiYVZ1MF9QeUUtSnZ2WnFVa1BSQ2FUdkdSZEFvbGotb1RHeUpnQWN6aERLbnZJaHE0aEtJWWRsN0tmbFNvRTFXY203SUFSQVlldkh6QkRaVS1RaUhvdlhMbmRlMjVjMWtsZ2pVY201ODhCRDBoZGZiUFVaS0ZvSFhwVjQyaU9UaGpuc3VMX0txcUlLTnBfSVNWbDJQT2tsV2NTV1d3LWdpVG1faFYtLXpCcnlzMExjR0g0SVp4QUIxYlBlMENvaS03azhJaG9FT2lIRDIyQkZiU2gxSFBDbEN6LXlnNEk0RkU4bl9RSWFRd0dYanB4d2d1ZG9LekN5RUtMcXZvcVk0RmNRWjBmbE9JVXd5aUxNR3gxamcyT2Nnd3VUZGhiSEtobTZJSERCdVhPQkRSdGs0SmNOaG1ZZE4zd3gwaVg3Nmhrdjhrck5tSDI1M28zZTl0S0JnZ3I0d2Zib1FYSktka2NtcXdRcFAxdWFnRl9wQllicW9ZRExjWkc3bVpiMUNWWGN4SGhRck9JS3MzYk1tekphSmV3UTlNQ2ZadzRmUDEwcHN0WHpodnBiMVJGbjBlU05fNFZVNC00dEVvRWRhWE9XN0NQd3JsNzZXXy10VlRNUXZyaVFBMWRyQXZnSVdjV2hiRHZ6TGNYbFVkaWwxQm5wT3VWOHVCZm5PcXF3UUlNV2xPRXpWWElrLWhndmRSOEQ2TlZLYXJuR21zWFNWdlI2ZlpWeHh2SG5hWHZR?oc=5",
+      "title": "Заради отказ на дипломати да позират с Лавров: САЩ отмениха общата снимка на Г-20",
+      "en": "Due to diplomats refusing to pose with Lavrov: US cancels the joint G20 photo",
+      "outlet": "nova.bg",
+      "published": "2026-10-30T15:40:31.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "BR",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQZFN4V0hjNEFXMTg4QVhsUlFEWGM2TWZMU05WazF0VnVYNDN2WC0ySC1WS21EN3plbmlKQzJDNDdjZE50eFB6ZVNaRFg2NVg4bElwTHFsNmV6c3NnOGs1NUM2Y0RwWUVtWGhoQVVWaDhiTGFJT3FLSm5lUnhzUXZSbDdqSEh5TU9RQ0owVUVwUXlfdi1KMjViMFpOdGRJNVBvZ2NIX0pPWHA1bXZNOUpkM1BUdm10dUk5OGJ4RTRpMFVZS2p1MkdDOGN3eDFsbmZZeGxuaEI4Z3JLWmNvWjJDaDBwbXJGakV1eE5kS3ljRUVVcVXSAYICQVVfeXFMTi1rRFBTMjh1blg3ZDc1U0VGdHppU2JMSHlYdVBjQVRXRVlLN29pR3I4NDJFbGphdTZFSW5hMEJKRnVoLVJ1TGFMOXkzakJabTZmQlhNZnpoTVl5TlVVX0xfSUNBaktyWVZCWkFEY3Vud2Z1clBFTEpEeUp2dzl4UjFObWdwY0Vlb2J1WmVRbnExaklNV1lPWXVSeWZHcVZGSC1IRS1reXlYazJwLXByWS1sTUZ1dU94RzNZVzNFMEtzQkJZM3gwVkdlY0k1UGpDVVV3TGFnQm9FUXhfaVVESlZtczFveGQwdjZ6QkNuRGRzNWtldXNiSnpnUHMxcVgwMEd3?oc=5",
-      "title": "EUA cancelam foto oficial do G20 após diplomatas europeus se recusarem a posar ao lado de chanceler russo",
-      "en": "US cancels official G20 photo after European diplomats refuse to pose next to Russian foreign minister",
-      "outlet": "O GLOBO",
-      "published": "2026-10-30T15:30:34.000Z",
-      "outlets": 5,
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOS2VsdWpiS05nYjBJd1JBWTk1R1JmZzFZSlFFdGpTTzRXMmx6OGFLeXJxMnQzRFhkd0RlUEh2Z1ZISm9BZzJNMXA0YUpPaTQ5X2o1Q0V0c194NUZMR240aVJKUnZrZDEwSExIdzhqejFsMlpweUJZN2RlakdHNnFiNm1VMmhXeGs3SlQ1bDdUenY?oc=5",
+      "title": "Vai Putins patiešām ir gatavs mieram? Ijabs norāda uz galveno problēmu",
+      "en": "Is Putin really ready for peace? Ijabs points to the main problem",
+      "outlet": "LA.LV",
+      "published": "2026-10-30T15:37:14.000Z",
+      "outlets": 4,
       "trending": false
     },
     {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaWtBR291Ymx0NW1fNGphUGIza19Dbm1JS1RNNC1zc0xJRy00OGZ0QnZnVkZfRUJybzYzQ1dsS1cwbEtHMC1sdWxCV1ExeWtaSld2WFVSV0dyODh0a20wWWl4cFFGdmNNTzVRUHgwOGJKOXNta3FhTnFQa3dNaHpaLU5yenJYVXNHdkRaa0hjOVdGSmc3WW9qRGpkc1NjbXVsenBCbGNMS3lzU2VzS2JYbzFJYUZKNTBJMHYyRktQV1hkQk5Wc0M2WGhEONIB0AFBVV95cUxQWVdNbXRfWjF0NTUzWndLVFFMdVhfbTZ1Rmplcmt5dXlqTlozU005VWpTRGZtLU1UMkxMLVEtcENPWTlEbldsZjZoYkp6clA4ZEtvWVJscDFJZUxsTEdEcHNXUThiTHRCTmdyX01wSE54T3hQamVWdVVJd0xmSEF3TlhBRDJqekhqbnV4WVRWRjNaSDE1TWZBRTNUSGlFeURLb1hCczd4UXdrbmE4R1QwV01pVTJtR25CVl9uUUJpMjZ4UHF3RjBydmxUUUJxUjV5?oc=5",
-      "title": "Україна скликає Радбез ООН після ударів по Дніпру, Чернігову та Кременчуку",
-      "en": "Ukraine convenes UN Security Council after strikes on Dnipro, Chernihiv and Kremenchuk",
-      "outlet": "Слово і Діло",
-      "published": "2026-10-30T15:09:05.000Z",
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZ2szM3J1eWFSVnM5cGQwbmlVYVNZX0JCV0hUcG5JTVoyNk83dDVzQkljQmJBYkEtNkVjRTB3LWFJaW85dEpoQXNFVUdBb0stb2ViLVJQTkhwMFZKbFNDdFFyaVNLUWJNb2NaRDliNjN4WlVPSFRfdEZkMEdsckxHUTJSNVRVMUR1bFR5Zk03dFBWWk9YTmhUb0FjQjU2NkMtSENrbTVCZ0pYMmVMWWZnd3NFYUxvT0U?oc=5",
+      "title": "Mlčanie pre Rusov neznamená súhlas. Na čo by mali myslieť tí, ktorí budú rokovať s Putinom",
+      "en": "Silence for Russians does not mean consent. What those who will negotiate with Putin should think about",
+      "outlet": "Denník N",
+      "published": "2026-10-30T15:21:48.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -569,46 +889,6 @@
       "en": "President Ruto seeks compensation for Kenyans recruited into Russian military",
       "outlet": "Africanews",
       "published": "2026-10-30T15:07:50.000Z",
-      "outlets": 6,
-      "trending": true
-    },
-    {
-      "from": "SK",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaTZTUGRDdmpoSWQycllvQXAxX0JubnZEcVlxeVRndHptTW5PTnNlOXlPRXhVVkRLcldtWEY4STM0R1oycXNHeXgxejZIQkFYdjZvSjlkT2tJb3R6MWc4NHZCVzZ3bk5hLWV1c2RqT281R1JtQ2gtblBVaTZValZWUGRHYXd6TWk4RE52OEd4WWVzQmxMNE9WTEw5cVRvZ2ZsT2lXT1dTa1BQTjFTRDdMSjNfZw?oc=5",
-      "title": "Schôdzka G20 bez spoločnej fotografie. Európskym ministrom prekáža Lavrov",
-      "en": "G20 meeting without a joint photo. European ministers object to Lavrov",
-      "outlet": "Aktuality",
-      "published": "2026-10-30T15:05:13.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "PT",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNU0ZKT1N4UVFGYUROUjNsMHV2VW5iNG5vVUx5ZFoycHhERU1WWnVBV2Y2djBqUTdDcUZmb0NHMW9sU3o2QjZhZUl1SWF1V2FEUko1VWpSNkY3VnBvM3FxWG80c3pwM2dOSEdTVGM0UmhEMDkxQUJlN3NVMUQ0SVNfcl9HVUU5SjRvNWZqYTlwamgwR09oc1NTOGxOeklTTVliSG5Dc1h4eFRNTXZvZjExMEVwWdIBrgFBVV95cUxPUUxsLXBuM2ZkNy1JeS1TazBjWHprRVVBRS0zSXlrODYzVVRObXVTejNkMkRwQWtsYjFXLUJoV3hSc2lsdU0wa3JqQnVuREtCRGZPbnl6NTJwRGQ0RmVIZl9JSTNBdnBFbk5sMExJVkd2MUoyTXkweVdUM2lXTUJEaVZMMzhRYmdVSHJvSi1BbGhSVFpybTRZOXU4UXlIM2VDTFV1Zll1NWI0LXpBWGc?oc=5",
-      "title": "Europeus recusam-se a ser fotografados com Lavrov na cimeira do G20 nos EUA",
-      "en": "Europeans refuse to be photographed with Lavrov at the G20 summit in the US",
-      "outlet": "Correio da Manhã",
-      "published": "2026-10-30T15:05:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTTVtdGRvc05rUXZNTTIybDJYWTdiNmJlakFIdjlOMDJfVHpUUjFVUWpucDhUeXcya0VyVjk5ZlpZUEtTcV80MzhadWotOTBKNVRCY3NMS3RZMDA3QnRJQ0w5cmM4TUN4NUxobWhUclZadm9GR3dPbkc0NnM2d2dUODBMYTlqcVd0dllrWVRTdkZjTDNCVkUxblVZUG5BbU8xTzBsaktyVGh3aEdxeUFOa19DVHdDTDJGU3MwcThB0gHDAUFVX3lxTE1zRmplZVpCVDh0UVktbXdBWEUwOERMSm5TbVlqSk5uaEs1WDVWQUo0RW1vck1Jd2FLMTBHdS1Oc0FxcmdIN2VrTmxWdW1YcGJXNXRscC1EUGhjNndYdExBQTB1TXY4WFY5MFdPSm95dE5GQmRnQmpfaGJrWDNwVDZ1VlgxLTJSZklGUks1RHJBX29qS0FWOFhzVllxUTY5LXV2eWpQMVNDSlphdFh3U19YYjNJM3RCeDdtMENaTmZrM0h1VQ?oc=5",
-      "title": "G20: «Μπλόκο» Ευρωπαίων στον Λαβρόφ τίναξε στον αέρα την παραδοσιακή φωτογραφία στην Ατλάντα",
-      "en": "G20: European \"block\" against Lavrov blows up the traditional photo in Atlanta",
-      "outlet": "Skai.gr",
-      "published": "2026-10-30T14:57:42.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TZ",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSG5EemNweEFzbnpkVWp5b3pIaWNNSExXclRsandFN2xfZDhoWDliczBQWWpqaWpERWpLZnpsMzBNdUlYZHpXbEpxcjhsSHdNVUtKQkwxQVNXLXZ6YVk0cXQtcUdUMFZkUU4zY3FhNERWQWg2MHZWdngxT3ZIRHV5TVdiR0tyMVRvNGdxWGtvY2c3cHBxZXRvWnhuS3Bxd09ydnpTVkpZYnMtMHd5Y1pRT1FUNlNQczJhTVRpaUxuZjNLM1Mw?oc=5",
-      "title": "Russia in talks with four African states on large nuclear power plants, Rosatom says",
-      "en": "Russia in talks with four African states on large nuclear power plants, Rosatom says",
-      "outlet": "Reuters",
-      "published": "2026-10-30T14:55:44.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -623,36 +903,6 @@
       "trending": false
     },
     {
-      "from": "NA",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSG5EemNweEFzbnpkVWp5b3pIaWNNSExXclRsandFN2xfZDhoWDliczBQWWpqaWpERWpLZnpsMzBNdUlYZHpXbEpxcjhsSHdNVUtKQkwxQVNXLXZ6YVk0cXQtcUdUMFZkUU4zY3FhNERWQWg2MHZWdngxT3ZIRHV5TVdiR0tyMVRvNGdxWGtvY2c3cHBxZXRvWnhuS3Bxd09ydnpTVkpZYnMtMHd5Y1pRT1FUNlNQczJhTVRpaUxuZjNLM1Mw?oc=5",
-      "title": "Russia in talks with four African states on large nuclear power plants, Rosatom says",
-      "en": "Russia in talks with four African states on large nuclear power plants, Rosatom says",
-      "outlet": "Reuters",
-      "published": "2026-10-30T14:55:44.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOFhkbzdhODZZTTFoVkt3aklYdlhweFI2a2IycFhZMjdtY01hWjhFRVpQaktJYlRob3ZvT2RReWUzQVYtYW5mUDRnc3BOdTdkZjFPWGZxZDJ2ZlFMS2tfb1JGZ0xESkFZcFBKbk1MbVlseGZqRklWbVg0Y2VKbkhZcmFPWGoxV1hkcFROSFB1S1B4RDEyT2RZc1VyQUVWdjhBOWhjNDdPSHdRanVJN2tmOEF4cWJzOXJ0NGc?oc=5",
-      "title": "LIVE | Rusland: ’Oekraïne heeft olieraffinaderijen in Samara aangevallen’",
-      "en": "LIVE | Russia: 'Ukraine has attacked oil refineries in Samara'",
-      "outlet": "De Telegraaf",
-      "published": "2026-10-30T14:55:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CZ",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMHI4R3l4YkZKMWdNZFFESDFQV050bW4xMXNZRWJTSExXU0d2NU16UEJLa0g4R2RWNElJWXR2QTRoLVJvTC15aFlzVy1lYUxGRGt4UFlsWms5R3EwRDVpZVRONXNxb0NsZUtqZzgzVl92YjFyM0Z3TFAtSktHQjZ1Q3BDbXFfdVBOZnlSNHd0ZVltd01YVUhXV0pHRjl3ZDA?oc=5",
-      "title": "Ukrajina obnovila útoky na ruské rafinerie, uvedla Moskva",
-      "en": "Ukraine has resumed attacks on Russian refineries, Moscow says",
-      "outlet": "České noviny",
-      "published": "2026-10-30T14:50:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "NO",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTVc1YXBVVFZNTjJQTUtxdVI5eTVHbktVSkdudTJuZVRMemMwbU1jZjUydkVyT3FmSWhOQlAyQlBybm9kVzBpbHFxYmNoYjlJNEhUQS1kUkFNVEJSVXdPaHFKSXRNLTZzRFkybUJEckxzZTNhY2k4TGdYUjVzS1Y3N25fZzlwS1NCUGNEdHg5aVVRZTJuSUQ5U3VR?oc=5",
       "title": "Russland velkomne i hockey-VM – krever boikott fra egen nasjon",
@@ -663,62 +913,22 @@
       "trending": false
     },
     {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWHVwc2xSc3JqclZzY09xM0FRMjBOSmJ4eEpqZ21ubWh1cEdYenBTc1YtX2w0VTlfeHBfLUx0YWNFaTJSankyYXluQWpXMDVHUmRoSVcxTjZDdXBLOGpfQ2NGLWJTZlpVQk5uSE42TzdNdW5Tam43WW81MEd0TXVfa2dPRGM2SDA2N1pXNzBQMA?oc=5",
-      "title": "Мирні переговори щодо війни в Україні: що зараз відомо",
-      "en": "Peace negotiations on the war in Ukraine: what is known now",
-      "outlet": "24 Канал",
-      "published": "2026-10-30T14:39:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "ET",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zYnBzLXNJaGdkbU53WGE2bXJOMm84UDlVOVI5ZFhTM1NEMGQzeE02Y1ZDUGJmamVyVzI2ODF6NHU1bnVMQmluamF2MDRsT05iU0E?oc=5",
-      "title": "Putin Describes Russia and Africa as “Natural Allies” in Multipolar World Order",
-      "en": "Putin Describes Russia and Africa as “Natural Allies” in Multipolar World Order",
-      "outlet": "ENA English",
-      "published": "2026-10-30T14:36:02.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPS2RoTWRpSXlpdWdIbXYyMThjT2hUQ2tMUldvb01qQ3ZjWFZLbXdpV29FQ0ZrS2pnRWlESHc0Q3AybmtOeVgzVHY4X0p5Q1lyYWplNk5aTkJwbmk4U1VSS2dkc3FhVWh2TDVNTGZLZThnUGxGdVhMbXowUld6N0JQNllSWTBudTdGNVNrYTlvdTlva1N6cG40ZFEtekt6SXZJNVdBR1dIVVpDTkE?oc=5",
-      "title": "Apel USA w sprawie Rosji. Sikorski odpowiedział pytaniem",
-      "en": "US appeal regarding Russia. Sikorski answered with a question",
-      "outlet": "PolsatNews.pl",
-      "published": "2026-10-30T14:23:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMi5wNBVV95cUxOeEd2OWRCQWdyek1KTU9YX1oyOGJVT01XMlJaOWw4R1FSaW9sdnBxdTlkUkxtUzlaeXZHdkZYS0pLRDF5dWVyb1JtM2R2UXF2OWxwRm9hazUzM3hhX2hQX2dxV3BSa2JQTkRWNW9jNTNFMHJQM3p2OS1XamNnM1FDeWtrVERCTHhnakdHMkxjLVN2Z0hxeHNSWnpNNVhuc0ZhSTM3YkZvVlVzZnFCMmdMTTFMZ1RuUFBWNnlGLVBma2VuNDBJOTMzTWt3SXhvelFHRGNGSkJPcEpFVnowbllFQjZPN2RQUDZnOWxTU29XY1FFalVVcGN4VnlKNVZpRlpQMDFpZDg5Rm54X3BlVmJqSFhxQ0FQRGFmUWNxRHJKcUxfR19hRGJvU3hmTDZWMnVUZmZXZnFkaTVFMjJtSHozdDBEQkgyN21jUnhxaTdnb1NHSHQ1SGZnUU0tUFJrTGFiN0gzV1ZtTFU0TnlOdjRkVHEzUGNxYjNQRE9iMzh5LXNZR3NVN29iX3BlWHZoREN3blZqSWpJSjY4eTZrdkp0REJlekRXb2JvNUVhRjI3OHZZR0dZc3RLYnNTSnQxMGw1bXpLcnFxazcxSzhCUkRRWmlXSlBJWUN0YTgzNkIzbDZxeVEtRmFF0gHiA0FVX3lxTE0zSEp5eHRFeENyLTQzVDkzT2FDWURkUmZOQlE2UVZqejk5ZDk4blBfb3hrRzQ0WENjMzRsZndLNEJuOW5rN041SjU2VHRsdGlqLWRmNl8tbVZ1NENmM0Q1U0Y4cEI0U1ZyZ1ZiLUNucndaajFoX2ZaT2paNnN3bUZhM0xpSUg1T3pFR0o2Yzg2ZG93ZXlmQ0dYeVRGWGdzbldSeFZNVXkyWFBLdEFSek1Sc01SU0tKTjF2MU1wOWN0eDFFbTZTVEFDazZ2aUNzQ0dUQ2lCYVFaSXpIS09iOE1tREszZ3ItQW41XzhoMS11OUpaTENhMnMxcUc3OHRNeEZrSFh6QjNjZ1Q3bEp1NklSZ21TYW9rUXo1M3NuUEdIYlVzenM1eWJ5Z2RuTi1SQUhuMnpNeTNESnVXbnEya1Z5aEQyQzRCZWI2dFV4bkh1OGdmYXNWN3U0Rl9yT2hXMHIyNkxkbmVsYlF0Q2NkaHNLOVM0ZDB5YkhrTXRmNVdGdHZBUXY3SUt6di16Z1VDdHZyLVQxbHBuZGt4YUY3VFpUb0YtVmxrMTdvcmpETllQU0dyNGpCcWJhRmRsRlpEd0NhSzJxa3p2Yzk0UHNTdlRuOVpxVGMxei10RmFKbnFsMUlB?oc=5",
-      "title": "عمار قناة: أمريكا ترغب في إنهاء الصراع بين روسيا وأوكرانيا والمشكلة في أوروبا",
-      "en": "Ammar Qanah: America wants to end the conflict between Russia and Ukraine, and the problem is in Europe",
-      "outlet": "اليوم السابع",
-      "published": "2026-10-30T14:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "VN",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNalRzM0lhMk9NODdERUE2bzRTNGU3V254eWdYRzdSd1lWam1OQWl5NXlSVFRrTHRVUjdDRU5DaU15eVdlTjl4WW9XRElKTThoNHhJUU5Sclh6VklQZWN3eEtTUUpuWWVNTVlrTmtiMkNpaENDeG9JZEotVU9EOGZNQm5ObU9xei1sWERyRnl5MVp6bDd1aFM2NllLZ0tmSk0?oc=5",
       "title": "Nga và Ukraine xác nhận đoàn xe cứu trợ nhân đạo đã tới Oleshky",
       "en": "Russia and Ukraine confirm humanitarian aid convoy has reached Oleshky",
       "outlet": "Báo VietNamNet",
       "published": "2026-10-30T13:57:00.000Z",
-      "outlets": 4,
+      "outlets": 5,
       "trending": false
     },
     {
-      "from": "NO",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbGVnUVFRZ0p6a2ZJbEs4R18weGlPalluZklsQ0JGSG44cmZJQ3l1SWV3bUtqT0txX21WVWt0NW9DNFQyYmc0M0FhMl9YdUJ4Z19NUHZhaXNEUDRnVlV6Y3BxZHdrZ1lvbWxmSXU1cUhTQ0syTWYyczJVYTdvVjNuZkxuaw?oc=5",
-      "title": "Lavrov-drama: - Ingen lykkelig familie",
-      "en": "Lavrov drama: - No happy family",
-      "outlet": "Dagbladet",
-      "published": "2026-10-30T13:56:12.000Z",
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNUJEbEw4WFhOMmtsdkZBMXBJRTBfbW5OUmxWR1lWRFg0clVDcVhpVll1bkpOUk82YklHLWhVRzNfS2VYZE9aY1ppZzVHUEw5a1A2NFg4ckNya3RfSGtZNzFEMjBXWG9ZaDRuM3VQcWlERGFFYVVmcmdveE5JZ09KVXRYVVpOVWN4dWxnUVJ6NURkVzh6SkZSQV9EVEdnVm9QRjdKb254azdFU3dmbDJWY1JqTE4tTGFmNkpwWEVMYy02bzZtenZUTUJMRF9EemJyck5DWUpRSTd1c3VVd2NmN1Ixd1IyNmV0dUE?oc=5",
+      "title": "Armistițiul propus de Melania Trump este o acoperire pentru o ofensivă de amploare a Rusiei în Herson, afirmă soldați ucraineni",
+      "en": "The armistice proposed by Melania Trump is a cover for a large-scale Russian offensive in Kherson, Ukrainian soldiers say",
+      "outlet": "G4Media",
+      "published": "2026-10-30T13:51:01.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -729,56 +939,6 @@
       "en": "Northern forces of Russia remove a self-propelled artillery group and 87 soldiers from the battle zone overnight",
       "outlet": "Laodong.vn",
       "published": "2026-10-30T13:50:54.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPREpFNjF0VW9YeEhDdkkwV2J5SXpPZDVPMFdKSWVIX2NEUE5NVnJXSnRtYjVRQTZBTWduVEd5Z1hSVW5JUGRINk52Y044YTdBNkNIU2pSWkdpRFV6WUZ0OHlGekNGNFlTSldWWmk5QVJhT3lYNVBWWlkyd19uNTE2RktWdWlVVWdYeWUyVUVuZ3BEQ2dXbzAxbjQtUnd4SURaQ2tROHdxUkE3Z3pIdXB4Yi03dWs?oc=5",
-      "title": "JAV atsargos generolas perspėja Lietuvą: Putinas „jau kariauja“ su mumis",
-      "en": "US Army reserve general warns Lithuania: Putin is \"already fighting\" with us",
-      "outlet": "tv3.lt",
-      "published": "2026-10-30T13:46:00.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "SE",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQ3JnYTZERUZLMDlrRlJmbEQ2QndDeXF2b0ZCbTcwZFZEbl9meHNmX1BhcE9veTd0ZkdENFZlbVRPb2xmeDdKVXNKc3ptTkp5cXA2V2dCaXloVjRGdTFyVGVsc0dIVjU1SkIzQ3BlMlZBUUdDWnRoNmtQWnkxOEpNV3B4aWJ1NG12?oc=5",
-      "title": "Direkt – Kriget i Ukraina – Lavrov har landat i USA för toppmöte",
-      "en": "Live – War in Ukraine – Lavrov has landed in the USA for summit",
-      "outlet": "Dagens Nyheter",
-      "published": "2026-10-30T13:38:06.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOeUhBME82dU1sb3pKTzFIUEdicThSMmptS1BocjhRZWVhdEJISzNCR0FCRnQ4azZyVFhfejJjSTBETVpuclNkTEYwRE8zYTBzbHZYb05MYUc0X04zd0ZmanhYUVdEUEVCcUlkbl9aRVdYdzJGWFA4Wll3ZjJmdHluS1VUR1llZndjbm9vOFVRMHo4NEk3dnlDX2hSc3Z6TkZpSWxacA?oc=5",
-      "title": "\"Новая газета\" е изгонена от редакцията и ликвидирана, музеят \"Политковская\" е закрит",
-      "en": "\"Novaya Gazeta\" is expelled from its editorial office and liquidated, the \"Politkovskaya\" museum is closed",
-      "outlet": "Dnevnik.bg",
-      "published": "2026-10-30T13:37:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CN",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LR1B5RDhEM09oZlpESjVZUVk5Y1RsdTVHMlVJWm03bzFNQTQwS1VjVFpHem91ZVFlRFhkLVZIYnNUbEZaZkxXV1dIUjFUOC1zOFFRVm5nMTJiZTBwZ1E?oc=5",
-      "title": "乌恢复袭击俄炼油厂",
-      "en": "Ukraine resumes attacks on Russian oil refineries",
-      "outlet": "同花顺",
-      "published": "2026-10-30T13:34:52.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdmlidjl4Y3p1bGE5V05hN3J4blAxTWdlc3M2R0Y0RVVYTW1kc09DSXplNXVPVnVZTVAwb2hkSWRGN21iOFhha3VVbzA3REFiV0dZR2ZrN005Qzg0M3ZVMGVXaHNrWHVxUnNBZWxmdFlEY25FSS1aa1hWT3JQMGlWZGpPbGZQcEhBUmprV016VXRNZjg5bXJXTzdXcTZvOVN5NUxBUWZEX2hXMUNFaEM3bjRTNzlZdw?oc=5",
-      "title": "Independent Russian newspaper Novaya Gazeta shuts down under state pressure",
-      "en": "Independent Russian newspaper Novaya Gazeta shuts down under state pressure",
-      "outlet": "NBC News",
-      "published": "2026-10-30T13:28:24.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -793,16 +953,6 @@
       "trending": false
     },
     {
-      "from": "PH",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPM3NJSTl6SzBrOEluaFFwbXRyY0dlX1llT0ZkV3BJTHZoWU1TMjZ5dEY0cFJZLUcyX3prT1pPWXZ1ZkgySmtYQmRRMGhYOG9tWHRUZXdJcnM2cUFLMWViZWlDeVlpSEZfdHhHblhYV0hLTDkwRGttYjJzdmRYcEhiLU9GQnR6bzM5ZGZja1NncVBaekZwb3IyYXdQT3UzZm5Vc3podUlmMXQ0LVhVWFI4?oc=5",
-      "title": "Russian independent paper Novaya Gazeta finally forced to close its doors",
-      "en": "Russian independent paper Novaya Gazeta finally forced to close its doors",
-      "outlet": "Rappler",
-      "published": "2026-10-30T13:20:53.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "SN",
       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWng4VzFTYUxJdkhNaTNSM1ppVXJxMm9hZVBjRUdTaVJ4SmcyaUNoRUdmcmxkbGFSRDZvVmhUMktKdWxoMHUtN0RtMHNSaUxadXJiblluc3dDYkNWWllfNS1FMGk3Y1Jrb2xETlhhdl9hWklvVEdXX3NVeGhPUDB5Qi1YOWVDMXFFMkpsZlJ1ZXBxd1YtRzBBLUJfSWJVRHZPM3diQ2pQUG1SWEtIX1FueEU3QUJkVlh0dzYtUnVacHhpbkVaVWtLS2NnT0tLMzhMSDVmMEFDa1FfTWhZV2RtMjFkNl9qem1mU21qZFlNLU80UU0?oc=5",
       "title": "Russie-Afrique : Moscou et les pays africains plaident pour une réforme des institutions financières mondiales",
@@ -813,92 +963,22 @@
       "trending": false
     },
     {
-      "from": "SK",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVmhQdVZZcmgtcmxiSnMtbzFYaTdLYWlIQWtZRG1HM1BBLXF4NTcwT1VzN0xCZURrekxRdVpIRktpTFBmUlRWenp4ZlNzcDE0R3o2QUlGNHVwWTI5dWdvZjFWUUZMUE1lSmJSczdvV25jSEgtVjJIVExLYkVTbU1Td1ZLeHg0ajdPbDlyYXdVTjZOSVdVUzVRVWlZMA?oc=5",
-      "title": "Diskusia: Budeme čakať na ďalší postup. Na návrat Rusov reaguje aj Slovenský zväz ľadového hokeja",
-      "en": "Discussion: We will wait for the next step. The Slovak Ice Hockey Association also reacts to the return of Russians",
-      "outlet": "Sportnet",
-      "published": "2026-10-30T13:14:05.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "MA",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSTdEcGRtYWJkUHZ2dTEyVG5rZF9icVFpM2dkeVZBbEFWZUZFSzNfamV0T2MtMFpsTWQ2V2JYeFJtY09oaWdBNWtMX1B2SXUycWRUWGU3Ni1GMFhud2ZQS2dpM01VcnJBaTZ6dE1mcFdQUml6U3B0c0NKXzhScXBXQW5iTDZNS05UYXJ0cUhsR3JWdDZtd0pycWJtNjFCMGNzNVpKSmpiNUx6QUN6T0dFR3Rhb3R1bXNJUUxKamZvRndQWVNoY0FUVnBqV2c1SGFkZWc?oc=5",
-      "title": "Russie-Afrique : commerce, énergie et sécurité au cœur de la déclaration finale du sommet",
-      "en": "Russia-Africa: trade, energy and security at the heart of the summit's final declaration",
-      "outlet": "Telquel.ma",
-      "published": "2026-10-30T13:04:30.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "HU",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVVgzZDRmejhIekVuVktGbmdvZXEtcldDcjIxQXRwX2RrSzR0OGptTnFSbENTeklBNGptLUNpQk1xWFJRZUVUelE2VEFSUnZrOERzR0hTRFJkdURDWjFqc1ZWUVBpZm4wRDV2SnJFaXFZUDlUMzd4aDVyNXI5ZUFBVWotM1Frcmw2RjYxVWJ1SFdjSWRSLXpyRzV1Nko3WGI2dTdEYV94ZDl3TVlNSTBQSjdKWUVmQndLOEo1cVZhTUVXdTNuN0RxNFdNNnpHcmNGclHSAdcBQVVfeXFMTVlSZUxRNlZ3cjVXMlYtY0tBQXNhbHo0YTlaYVRhYnhQMWdZZEZWWTluSEoyUHpxemVLQVRuT09wYWJXVmtnN1NEeXJyV01nVTdGMDZiOWRJUEFHaGVXOWt5bnA3M3RMdDJOQXdmUkIzMGZ5R0hDbml6MzdlTGI5cGhyNUo3aFBxUTU3Ri1vOEpST0czMGYydkdlYnFMamMyQXBscWVfTlM3Z1UtanhCaWNzRUJCczNOVllMT2lOekJwbGNIdkxLZFdXWDB6TG1MSS1qeE1YRlE?oc=5",
-      "title": "Sejtelmes utalást tett Donald Trump: hamarosan vége a háborúnak - Jöhet a végleges rendezés",
-      "en": "Donald Trump made a cryptic hint: the war will end soon – the final settlement may come",
-      "outlet": "Portfolio.hu",
-      "published": "2026-10-30T12:49:00.000Z",
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUi1LVm5pdF95a1ItNDNxb2I2RU55dXFLalJZbnlWRXphazhRRGh2aTh4enBGZ09kY3JwSHRCbmpoczZtZkVza3d6RElpV2pKLTFaTXgyLVVKUGE2MGI2VEVubnN4aDl3dGlUX2tXWWRiYkdteGVmNjNuM0MwYkZDdENUdmFOdVVhT3JlY3UzRXRQYk5MbzVoZXRFUzNrR3VsdlE4WmszcHotYmVMZGc?oc=5",
+      "title": "Ukraina miała wstrzymać ataki. Rosyjska rafineria znów stanęła w ogniu",
+      "en": "Ukraine was supposed to halt attacks. Russian refinery is on fire again",
+      "outlet": "Wiadomości Onet",
+      "published": "2026-10-30T11:33:42.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "IE",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxON3JQVHJZX1JGNHVHdmNWcTZpSl8yMnpUaktHU3otYmZMeWE3MkQ5SjZ2bXhIX0RzbDRBNmxISm9LTUtQemhtRmdwVjJ5ODVrblNsanU3c19xWmd1MC1rS28zRkg4MUhydGY3NHBsQlBDbmJocjlkdXMzaE55NzlVY3k3eG4zenM?oc=5",
-      "title": "Evacuation begins from besieged Oleshky amid truce",
-      "en": "Evacuation begins from besieged Oleshky amid truce",
-      "outlet": "RTE.ie",
-      "published": "2026-10-30T12:40:12.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxOdXh3WWFjbUFPWW9Pc2xWMW1GdEt0MFZxOGFJNWtjZFpfakFCVk0zMzBDd3Q4RFFoaTh4Y0NKT2lPdXJFOHFhc2c2aXk1SDViRXlLWkd1ZjlmTmJXRWFzMjJlVm5xb3J3aWdaLWtMVkVGTU83aHdLWXVLZkliMmJyMkxaTEJZejVnQzkwRVpXYTZSbFJwekpaVjNvYmUxYWtIdS1jTU5ockIzNTByVkdRZEZFLU0zRmZLMXZ4MGExUTNUUGhiMG9OanZqdkFPckFwUUhPSl9OOTFkX2YwbHoxTDFmWEhwUVc2aHFKWGhDNFZSSXRkYmlHV2x6TEZFczlGbFNZSVpvZGV3WmJxNUFUcWhHOFE0QkhDZmNTdHZZcVZwRzJTalZYeWR3dWs5NHdIV1VGY9IBugJBVV95cUxPTnFIcmRfVG1RYzZOWFdzZGkyWV9Ddmgtc1RyV09JcWNWa0NiOHVOTW1MYVQtSXBDVk41bUdoa09STzM4SWNZa1EzeVN1d0hOSERza3VmUXhTVXZ5anItN3RSWWMyZEx1SzVpNFhVNGpma0lhMFF3WDhxTDgwX0w2emtmOXB1dE13M3dDMHRIck1fUlVCY2hFWnByazk4Z3ZNWTh1aWlMci00NjlyakdPcmZ3OUFoU0VJNDZxSUhFc1RKalhpdUpkOEtVbG1jLTVkN0FKdU5WQUtRWHFZYnhYb3A4cEVDSVlFLVhrQ0hneHBnLWt5RHVranVTc2xQbk1mOENZNndHQ3VZRnd5TFAtVG1Kd1R5SmJaZzFKSGw2MXJScmpCS21EaWJZQnc0NHRJUU54bVJJd2N4QQ?oc=5",
-      "title": "البرهان يقترح على بوتين منطقة اقتصادية بالبحر الأحمر ومواقع لتعدين الذهب",
-      "en": "Breaking | Chairman of the Sudanese Sovereignty Council: We are ready to grant Russia sites to invest in gold and copper extraction",
-      "outlet": "الجزيرة نت",
-      "published": "2026-10-30T12:31:18.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AU",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMmtJQ19vNkJvbHZyY3JYbmZVWHdwanFFNTI1S3IzTS02eWhGWlNlMElacWhQazNzNGNVb2w3TmdEVk9BeHpPdVBNaVBHVm83VEliOE5FSXNPTlhzbUtiWDQ1b2l1c1JxOHdTdkFLSHpVakltRlFvbjhjMlRyOVI4V21SdzRDaXlzbUVGeVpkRzV6YVhGMTZWa1NMQTJweG04R1E5Rll5RTY?oc=5",
-      "title": "Evacuation begins from ravaged Russian-controlled Ukrainian city",
-      "en": "Evacuation begins from ravaged Russian-controlled Ukrainian city",
-      "outlet": "ABC News & Headlines – Australian Broadcasting Corporation",
-      "published": "2026-10-30T11:56:34.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "JP",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9GX0V1TE5ZeDFTVFJpNF93MWpNX0ZTLTlHX3BqT1lubm5EMVdld1VqRnpfSjd3S3plblZaaDM5ckNwZGl0VkJ0UzMyQ3dDbm15dXJITEZhaXpUclBHVVlhVWVSX0NndGs?oc=5",
-      "title": "ロシア紙ノーバヤ・ガゼータが活動停止へ 「我々は殺された」と訴え",
-      "en": "Russian newspaper Novaya Gazeta to suspend operations; \"We have been killed\", it says",
-      "outlet": "朝日新聞",
-      "published": "2026-10-30T11:49:04.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUU1pUmJwWGExX2tlSmFHbHZETm00bDV1alZOQjNmekdXUXJtdDJCaGRNZ2ZwemxWdDc3allTbk5pOE9sN3NmUmFqb1U1SkUtRWFJRm9tamxDNzVxdnE5b051dGhDNTNaSVdhUk5YNTRjbnhqcW1pN1RwcVR2LTRjWlNSS3Z4ZEY5Y1JUMWxTdDlLNWtPdzJnN0NnTdIBoAFBVV95cUxQVWNiN0lMS0Jad2I3Q3ViMVZnNGdCaWRjZElCQmVmdFh5MjU1S0VnRS04LTFCM1RrWmZkN0FmOE84TWczakc2SVM3RV9hWnFnTS1aQmJkREJYZnF3bFFydEhGeXlPa2F1TmxIVHlrNWVBU2M5cHRlZ1p4VjhwUXZBeFQ2RkF2bWZ0UV9VQm9sMEVFYTRQRWducFNTcEI1N2I3?oc=5",
-      "title": "Скандальне рішення CAS: Міжнародну федерацію хокею зобовʼязали повернути до змагань російські збірні",
-      "en": "Controversial CAS decision: the International Ice Hockey Federation was obliged to return Russian national teams to competitions",
-      "outlet": "РБК-Україна",
-      "published": "2026-10-30T11:41:09.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTGVqeWNSelgtRE1YQlBIR1kwc2Q3UVJNRHMwMVpIdVdreVRXZkZfUURSdlZnY3FhTGFELWx5Z1NoQ0hRY1h6bFNqeE5BNElSbk15c2lzaG9oNWtEVDZSZE9sUGlyZVJua3dMRjUyX21TT1Q1NmJNT3RXXzhycEZfYXBaYTd1LUpVZ1JER3NVRXp5eXNtNlc0LUZ5UnRYQzI0SGpZQ1NRNNIBrAFBVV95cUxOMGY0T3ctZVVVMnVFRmtldl9wWHpxRmZnRTBBWWNZZE9iV2QzdzZuY0c5X3dEazIteGxINGRpZFVURFRoQjZ4YzhGUEJuZ1g4RUs3SkxvSGRfVi1JS29hX1V2bU5PYnRHUFFVdkxnMWtWMDBYYi1MWkZpcWtPcDVpV3lQTGhXVms2c0tPZmZoaWJmZnA5bDRGV0EydVJCRHR2d0xhMk1GNjRzaFhl?oc=5",
-      "title": "Russia ‘forces’ closure of investigative newspaper Novaya Gazeta",
-      "en": "Russia 'forces' closure of investigative newspaper Novaya Gazeta",
-      "outlet": "Al Jazeera",
-      "published": "2026-10-30T11:11:58.000Z",
+      "from": "UG",
+      "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxQQXlqajRTdU1lRDJLcDUzb0lHZml5cHZLQ2JQUjdyeldqM2ZjdTZycXNhdlV3R3ZWb3lSTzZLaFVCXzg0UkFoUXBPMGxzdThURld6RDl1X2xDcjkxbXNycUZOZGhPQ0ZFZjBuTWdob1Rsb2lEcWs3enMzOExoS1R0X1V2anpBUnlNNjNtWnU1dERCV1lDQ25Cd1ZPcW1tQUNfMUhTZ1VyRE5LbnZBS2lxcGRhZzZzaEZQcGN0QnRFbDEyb1JPRDNYTGFUWGprMGNRbEFZWFpENTJ5VkhCMXduMHE0TmRqZ3l1V0hiMW1mZ0xTMVpqbTA3aFBPX3p6TWQzYS1pSW8zQWk4UzhOMEtpeWtPdHNtTnNySEpza0RjZHE1VVZWRDdNZGlENW5URHFabDBiVWZYdVFBMlo4V0lwc2NDaVFUVVgxanNUTGtMcGJjM3poT09j?oc=5",
+      "title": "INSIDE THE STATE HOUSE MEETING: WHY MUSEVENI WANTS ANSWERS FROM RUSSIAN DIGITAL PLATES FIRM: President Questions The Controversial Contract’s Escalating Cost, Security Shortcomings And Revenue-Sharing Arrangement As Mwine",
+      "en": "INSIDE THE STATE HOUSE MEETING: WHY MUSEVENI WANTS ANSWERS FROM RUSSIAN DIGITAL PLATES FIRM: President Questions The Controversial Contract’s Escalating Cost, Security Shortcomings And Revenue-Sharing Arrangement As Mwine",
+      "outlet": "The Investigator News",
+      "published": "2026-10-30T11:28:06.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -909,16 +989,6 @@
       "en": "Ghana's first nuclear power plant in sight - President Mahama reveals talks begin with Russia",
       "outlet": "Graphic Online",
       "published": "2026-10-30T11:11:27.000Z",
-      "outlets": 6,
-      "trending": false
-    },
-    {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcXBZbEkwc0lTNGVJRjZZMjlIVWVhWThYOXZWSklOOVZ0ekdBaVB6UDVSVEJxb1E2Z3pQR0g3dnp3eUN1ckFRbUEwb1FUTlFkY0ZWQWxfcUdneGRKLTMxd2N6cjNzYktmT2tRZVBncHlJTlJLenBkYU1ydFVXWEJJN1daTDlFb09RRTB5dWJBUDA2eEFMSFlZYi14VFViS2lEeDF3U0VUVFB4Zw?oc=5",
-      "title": "Дрон, ударил кораба до Шабла, вероятно е вариант на руския Murena-300S",
-      "en": "Drone that hit the ship near Shabla is likely a variant of the Russian Murena-300S",
-      "outlet": "Mediapool.bg",
-      "published": "2026-10-30T11:04:09.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -933,12 +1003,12 @@
       "trending": false
     },
     {
-      "from": "TW",
-      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOWnc0WnFBLUNmdXQxSTc3dXJOZGVLMGpyUTRkSFF6WUNmUWxKQkpUcGpsSmlGcURJUzc4djU2WVVJTzJHWWJRUkotaDlJVlFPNjJiRkUtQ1RESm01Yjkxa2tSRFNlMFBJY25jQ3FsaUVYeU9sbmF3WjBjMjBJQk5oVEM2M2JZa05wRnA5a2E3MUNRV2JjcVl3enFaNUlRRFZ1aENRekd4ekhrUGZ1VHJsVmttOWp4MWMtODREZlJOOVVXM2JtTUViY1g3THhQYUpQOFF1ZE82TjI5QThvOU1XNFhkTzYwelk0Y19LN3lyWnAxcnBueHdjU1kyZE5XakI4ZVNYS3FqQmlqeGZXOVdvVGxtcjA4RnJjWmN6dU5oQWlsUXVQVkJjcUg4UDQ?oc=5",
-      "title": "五角大廈私下警告北約盟友：別再挑釁普丁",
-      "en": "Pentagon privately warns NATO allies: stop provoking Putin",
-      "outlet": "Yahoo新聞",
-      "published": "2026-10-30T10:55:26.000Z",
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPYkxWVGZXX1MzMUxBeUt2ekVpaGswNnY2MVZoM0tCR09GTks4UEFvdzcyY1F2bEVwMUU0QmdjY0xnWnAzQU9aQ1hsemdwbXE4NzdWMHFpYXR2U250TUIzWlNGb1VrVmI1YkhwVF9ySzdjTEhMeHZPejZ3ZG5NdzFMV0s3T1pYal93ZWozbjEwOVNRMDhYSEZmcGVmQzEycV9UMG1IOWdONkJuRzhGcTNlR2dkZ3g4LXN1M1dZNzk5WVU2Y2xvdGdMNkQtR2hzZGNPNzVjcjN6R0dJY3BMd0d4dEVmU0ozdkk?oc=5",
+      "title": "Iš V. Putino – įspėjimas Europai: Baltijos jūrą palygino su Hormūzo sąsiauriu",
+      "en": "From V. Putin, a warning to Europe: he compared the Baltic Sea to the Strait of Hormuz",
+      "outlet": "Lrytas",
+      "published": "2026-10-30T10:54:43.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -947,78 +1017,18 @@
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOUJwSWV2VmV4Vkl1QXhGa19IdkREcVB5czJYbmVzOUF2WDRYcWcyWGVuVG9ubmUwWE0ydk9HeDR0UlVoS2hJUkJ5VWJwS1ZJbEo2X1loOFNpSDI4R0x4S0wzUWV2MGpqV1VuSXBWLXlkVDZVV2lsVEhjTEVDZXg2M0dQc3dqU3UzMVUzY1hQTWtlRVFjcGxDREhYZGVWNHlUOHFOYzBwaFVKUVJZZjByMWw5eWM5YjhUeWtRLWMzZlB3dEFK?oc=5",
       "title": "Cameroonian families call for repatriation of relatives sent to fight for Russia in Ukraine",
       "en": "Cameroonian families call for repatriation of relatives sent to fight for Russia in Ukraine",
-      "outlet": "Euronews",
+      "outlet": "Euronews.com",
       "published": "2026-10-30T10:51:01.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "CZ",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVkVQTkVtbVpkcGtRQk50eVNWcmhaN09tUWxqcDZsX3pOY05SNWhsSHQ1ZGg2QllzMU5ZVUhkbldKMEMwX0d5Z0dreDNGMTJlQUlwdUE3OUo1b1k1MjF4eUNHOXo4dldfaVpIQU4xT1BlUjRQdk1SbDFnMVZoN3FyWGtXWTR0UjR5aFVRZGxobkhMZHRMR0g0M1hVb2x6TGdCbmJaSE5EZXFrbzc0RFZ3WUhWOWFCUWVZNDg1aGliN2VDT1hDSEZ3Nw?oc=5",
-      "title": "ONLINE: Evakuovaní obyvatelé Olešek vyrazili do ruské Anapy, odkud přeletí do Běloruska",
-      "en": "LIVE: Evacuated residents of Olešky set off for Russia's Anapa, from where they will fly to Belarus",
-      "outlet": "iROZHLAS",
-      "published": "2026-10-30T10:45:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMiqwNBVV95cUxPejdMaGdJWllzNmF3cDBaMUxUckhwNDVIWWJIT00talVKYjB3TlZhc2ZkNzFyS3ZsWDQ3a2ZzSVU4ZTNEbWw4aURFaUhZb0NtVjZObE5DMHBJQkpWcG9PTUFkaFFWVnEwZXFHbmpEQTVYalZEZGk2bE1zZTZqY0o1UDYxQVg3VWVqT3c1QW1iUE1FQnV5MUIwV1NDdnFQTkpPRjVGb2ZYaGVHNmFLZUgxa2NFWE1zcUN4RG5oN1F2ZG4zQkZPLXZPMzdiX25RdjM4NHJZQm83VHM4VkhyMkY5T3FuMGdRVDNtcm03N1Z5dnZ0YkwtUzZOLWR4NllOcE1jd1RBUlJUeXJvLVFCTUhxLTVicXdGUlgtRmNkLVhUWm05SzRKcXdKMHhYaE90bGhkRU5fU3VsZ3NJem1lLXRCT25zMFhzQjd2V0E3UTRDdGp5YmkwdjI1a0xwYUJJcS1QSkloVXpoSElpY2d3QnRsVUEyRUI4U2JINUJfOUFfZzk0ekd1M3cwc1pUMmE4Nms3VHNWSm00c0ZpNmtDancxZW1GRU1WOVpubU1N0gGmA0FVX3lxTFB3eVdRbHlEMDd6bzJTOVZueXhsTXJPZnhfUWZTQTdaTWNxX2NMbmdfQW9UTmFoSXNlYkFEZmhJREk1Q2FBZGhiTGRDX3N1M0Y1QU9XUWZLRXltc3U0a1o4aU9CZV94clYtcFBzWVFGVU42OUtlOEUwYzduVEVhWjBTMEFleWpZem5mRDQxbTZOdTRwUlB6Mmdwc2RudldCMzB1YWx6NFZiRU1ISk1ITnE1TVU0ZUQ3azZuRy1wWFh0emVmcVVHcHYtYTBYZjIxVmtwRGxKY3hScnVsV0VRaGhlRFM2U1FRYmtDbE5oWHhZNFNmU2VoQzlCU1RVU3pkWEpfMXgzSzJGZUEwWjU0Tm9JUmVHWWJRUThXeVlyZ1JOdDd5LVVGc3dmMGtPTkkwZnJmVUwyUnhxY01SNTR2RnhzNDRXUW5MYUZ3T0VkNHFCQ1NFcnRSMzcxMVVZczhLdEQ5WjVMRzFHd0lvb1A3OW5YZ3hfc1R5VU5KM201cjBmaFFBeFJkeFZEMkVKYmNIR3JKOG8tejE1Qm1yX09sYXVhMUwxcC1R?oc=5",
-      "title": "السلطات الروسية: تأخر أكثر من 100 رحلة جوية في مطارات موسكو بسبب قيود على الملاحة",
-      "en": "Russian authorities: More than 100 flights delayed at Moscow airports due to navigation restrictions",
-      "outlet": "اليوم السابع",
-      "published": "2026-10-30T10:37:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GB",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ueElVMi1KbjR6MTFaTW1vY3FKSXlKb3Q1R3g3QmE2Z0ZRbDRUQzJEQUxkSmdRQVBILUNkcElFNFdWcU1KQU5VV18tempCU3VJdTNlekZjbWhvbDVWaXc?oc=5",
-      "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
-      "en": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
-      "outlet": "BBC",
-      "published": "2026-10-30T10:32:06.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUmJSUmx1allIZFJWcUYtZnFwQW5rMmtDNFh1eDRpWVFCM0txc0VPNVVlQXd2aXpKN3p5U1FTQzl1czZVYWpSS0VWM2NpTkFoajZlXy04M1c0bE1JWUZjUkpkVUF0cUloaDVJQ0NiSnJJTTJEWnR3ampJM0RBSW56T1VmbkZ1ZWMwTlR2WEltTnBvdFhGem1xeThkdWpKRlNodngzSzVraFRiV1Uza3FOcGk4am8zd0NadDU40gHAAUFVX3lxTE9YRlJBbTFoN0I1QXV2VjNvbkUxRnVfNXQ1Wjl3UHE1cks3SnpJcFRSUUg0bFB4ZmxNSzh1LVVEVG13dEZZQ0NDQ3VZaWtLQVo2RlY5VVIzelB4SjBhRW1hZXVHOGdMcUxMa0RGaTgtcnZvVkpabU9SNDR2T21mYkVEc0FZZHQydXN1cVVQV3ZnOUp3Vk1XcXdVd3VoaFRhckJCMXV5UkdZRWlMRzFVUTZ5UkFwT0V6b0pZd0E3T2dHeg?oc=5",
-      "title": "Попереду мало бути ціле життя: удар РФ по Чернігову вбив 15-річну гімнастку",
-      "en": "A whole life was supposed to be ahead: a Russian strike on Chernihiv killed a 15-year-old gymnast",
-      "outlet": "Факти ICTV",
-      "published": "2026-10-30T10:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE81SEpIM3JwdVpNS0NLRlJ1NFBFSnJhb2ZMMDd3a3pEeFc1RXltX1J5NWlMMzZ2Snhyb1NmQ0NNQVdTUTVOYV9YS1h2TFA0TnA3WXhzVjRTNlQtSGJoMWI40gFrQVVfeXFMTXgzaE1fS3J3a2xnZUhuNGUyZ2RIVXJKcXVTQXZDcGFVdGtvaDZNempFTU14NjVFbFdhT0FUbUJaamJiMEpQN21jaU42WlRSUUtzQTA3YW92Rmt1Ny1ISFA0MVlzcUwyR3VlX1U?oc=5",
-      "title": "75% фінів схвалюють дзвінок їхнього президента Путіну",
-      "en": "75% of Finns approve of their president's phone call to Putin",
-      "outlet": "Українська правда",
-      "published": "2026-10-30T09:49:00.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "EG",
-      "url": "https://news.google.com/rss/articles/CBMimARBVV95cUxQYk5peUtCR3I4YkcwYm1sRG51TVVrYXE4a0ppOW8yWEpqZ1R5Z1lRUGR1Z1ZqdmU0WFNKVzd6RVRXVnF6NWVPd1hHelA5NHFIV1Z0RnNBa0t2dWR5N0lJWHdBSEg5RnJXR2lCTXkwUDJTMENPQzFzSEJvSkx3X1lYekxlWXBNejdXRGlnSXJSWnVZdV9fc0J3Z1VhQ3pVUDVKZ3FqYU9fWXZFN1FIRWpHWDl5MUdfamx1RkRIc1VxNF9kbWdNSjZsRm1GNlVBTWdGZG1oTmVySHRmSk9HRzFzUGNPUHZSVGx5VUZjQ21UWk1hRF9RUFNXUDJGWXJHcXhKd3RwMU5YM0RBc3U1X2QyYmkxYnVyZEpVbTNkUzhCQ1ZiT3ZyUzNEMUZEUk4zeDdyeG5fdVIySlNrTHc3dmQwUGdvbDRUdXlWcm5oeURQbWtnOUN2VnpkRlB3Y3RDaUlIQ2FIdXFzR0lzbmV4OG9ObzVnTVRIeVYzMDlaMmFMdW95YmNfSUI4dkhPbzhuZWs0dEVRUmFPbjJhc2ZQWF9wejhURWJTVUtnYjJ1azFjc0pGSTMxNHlyeFpJSnliWGExb3pfUUFPSHA1WGJCQVlfeDNmSGdOdy1DLWs0dDBtZ3A4VExROU5RclkxcDJ3ejhsbm9RLXdXNjNuclg1Q2J5RHY2eDFqa1RxQUMtc3BHSXFjSFFIMmx2bdIBngRBVV95cUxNWkxjazhPQWlqVXF6djBlcmJ3di1uMDJyc241S29iajhMdG9iUm54TmZaaW9BZmpaS2w4UG1lSEdlVzRPRHE5VFhjUW16OV9rZlFqRWZuaFA2SDktTnJrT1o1VFNQdFhCekpxV0pmemw0ZlZBRUZlN2ctNHBFRmRuQXFVSU9jcVpzMXpLMzItaTJmRU85Ukhzb2JCOEJxQTRZcm5TV19oOHBvajRjS1NwMU44ZG41M1FDdEgxM01FVU9ZYW9Ob2tsNTJ4MG0yOENzLVU4aGxzTnFVOXVwOVhyeXZ0MXlSM1dnOHc0UDdiTURNQmhWN3VzY251cVo0cEwwNjFKYWplZjRuM0NmcWxjVzdVYXpFRUlKTC1nc3N6a3pnbTBYYXB3a3lrQjdnbnFUV3pDZnVKQkZKY1haOC0yVUlQNm80dk5McG8xT1FIdnVhZ0Y5YU96OWJfQUdKV2MxWlctMk50VUZ0T3piTWQxNW1IQV9NbndHU2Z2bXhSMGV2ZDZpclRKTi1leEI0RW1mOHd0OWNlWFY1aFZINzBaazVISjhIb21zdWIzcktUYlNUdjBDOXhVanZKRUh1RUlobEJLcXBFSGRzNXJBRnhRelVsVFFGU2VvUE01R0thRzMxRDZDNzN0dUozeVZienRCeVJDRFpuamVOdi11Z2JmcjhPdnZ2WjVMc05zWHk1RVQ1VmtFdkxUSXNadzIwZw?oc=5",
-      "title": "روسيا تكشف عن مشروع \"مصنع جديد\" تعتزم إقامته في مصر.. ما تفاصيله؟",
-      "en": "Russia reveals a \"new factory\" project it intends to establish in Egypt... what are its details?",
-      "outlet": "Masrawy",
-      "published": "2026-10-30T09:45:19.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQekZDNWN0MTZaRERiQjRFV3lMalp5WUcwcEs3NmwtTDd3WXRLX0RsVXh1VXJMRmI3OU41YXhxdDFuYi1rSmJHVHZxcElPX2pDeERlQ0lWcTlkcVFLcmdRRzh5YkVHcVozc0p1dzFkQlZmamdsUl93cUpucnFhUEc1MlhrU0xVd3FMQlpZNW1wTXY0YVpmdFNKVGxMaEJ3V1RpeWQzZkxuSjRqTEZtYkpSQWszQ1FJeThVcVE2LXlITlZJYzBPWkNnZWhhSXJkbTJpQzZvQ0NOX01GSER0VC1vT3phcHRnNWp6aXcxaXB4a3RHazM4dTdIbDZ2eFExU25DdmNGM1JoVm45Q3hSTklfQ1U3MVFxeVJ5LUVuMkhWTXp5ZVB5dG1xQ0V1aHVveWc5YjdaNXozMkxfRWfSAcACQVVfeXFMTjdRNl9OeHZadUlMUG5vazdKc04yNDl1MEctMlhEcXpSZ3AzZXAzYzBSSEd4MWVzWkg3dXMydlpoVjB4c0h2LWtZenJXTUFqM3pfSEx6aXJaQThvUnVTSlB1VERTRHFsa25qOFlUdE5jRkt2REJyOEdDNmVhZUlxaXVxZ0E1Rl9wWXVZSTJRTEhvR0s0aDJoNDJ4Ti1HdWtlTDdVUmxoMXVzNVg1b1Z5Qmk0TEdRMzN3S3N5SjhaeXBGTTFELXdQTzU2eU1mQU8ya1JYZVZCc3NiNVMzMGNFaFcwZ3RTRGZxWkdfNVlRcnVwR0NUTENPZ1U4MmJqY1NIMUR0Rk5qOW9WYndZOElKQV9FQW9tUS0tbTg4c3hQYjgwUzVsbEtVWTFsLUtNUnRreWpYUW5DRURLRDVSWjJVY28?oc=5",
-      "title": "قتلى بقصف روسي على أوكرانيا وهجوم بمئات المسيّرات يستهدف موسكو",
-      "en": "Killed in Russian shelling of Ukraine, and an attack with hundreds of drones targets Moscow",
-      "outlet": "الجزيرة نت",
-      "published": "2026-10-30T09:41:48.000Z",
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPN0QtY1lZdmJNczdGSmJuY2o2cTdxVjk0SHAyMVg3bk5rR3RodWE2ajd4ZENxMTczYjd4V3kxYW5DSS0wVzd5V2JXemtBM3Zfc0ZiX1hKZ2hNaFJjVVcyeVlDWS1Jdk1wOVhtMjNHRkFTWFU3eFU1RU5WT0gtbjlidFN1dWtyNVl3UVHSAYoBQVVfeXFMT3ZIMmo5TU15RUNpeEVOTUg3UExEYjVqYjd5SXRVVGo4WkJaRXJrMlMyaFlyWEpJb2dGWEFYa1NtTDE3NWdLUzdSdDhQVlpzUzBYRXp4TmhTNUk4eHRGSGNWMGN1cmhXZU1GMnRSYi1Mckd6LXVTc3gyQl94cHg5RENXWFA5WFdHTTZR?oc=5",
+      "title": "\"Убиха ни\": \"Новая газета\" спира работа",
+      "en": "\"They killed us\": Novaya Gazeta stops work",
+      "outlet": "DW.com",
+      "published": "2026-10-30T09:21:34.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -1053,26 +1063,6 @@
       "trending": false
     },
     {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQby1ha0ZkT0YzTFZZNG9PZFgyZU5reHBBQ3hLckN6RTctQm1iekdRdjAyQnpHYW9vakg2UjU2YmpQS1NUN25wRmswaUZrQXhYNm05UXowT1hvbFdjUDJNQS01VFZpWG5jYVFLc0UzLVozZTNkQ1RXQUlKb0JyRjlFN1A5aG5nbFhRRTA1eVN0TUJqLVdWNDdidDRSbkoxazFNOTdFM25UcXBkV2VLRldUSjBiNnY5Vi01M0x5OGgzOFk?oc=5",
-      "title": "»Nowaja Gaseta« stellt den Betrieb ein – »Man hat uns getötet«",
-      "en": "\"Novaya Gazeta\" ceases operations - \"They have killed us\"",
-      "outlet": "Spiegel",
-      "published": "2026-10-30T08:33:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVjNHemZhS21hcmh2eFBjaXFQVUFuclc4Wm1lRDNEY0Rub0Zib3BrZUU0b3pibVNUV3dOT2h5VmJTX1V4U1ZjckFBNmJpLS0wUXBxV1RORlRpcVE4eTlBUnBHOE1JWmxjZ2JUaS05Nnp1YmFZdTI4S3daVlZyVWVlNFhtSFQ3bmU3clM4UU5ITGg4WWF0VDdYdS13dzZUb0NJSXdwZW9OaTl1dnlXZU5fZm1GYzdCdnd4?oc=5",
-      "title": "Pentagonul le-a cerut oficialilor europeni să nu mai „provoace” Rusia (surse)",
-      "en": "The Pentagon asked European officials to stop \"provoking\" Russia (sources)",
-      "outlet": "Digi24",
-      "published": "2026-10-30T08:20:36.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "ZA",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1xVmxjV2xwYi1NeXQyU0RXWkozLThHX2dmanVneGYwZTNZSUwwclpESHlYWUtsb1lkNHdPMVJQQXdxaS0yczJtM3k0NzhIbUtaN3k0ajBnVHB6TGgwbEQwbk5GVjhzTDNiN2p4eUJxUHU0RTIyZWJyT2NUMA?oc=5",
       "title": "President Mnangagwa departs from Russia",
@@ -1083,23 +1073,13 @@
       "trending": false
     },
     {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSWhSbjVsbU1NWjNhTm40aDBQemlrQ1ZLVzJaSkFhV0lrb2x2dkxrZnN0NUtNNXhwX3Bwb09VNGEtMEtFcGk0Q0xXZ3FmaWUtZ08wdFNnbm5TeFkxSUQ0ZGlxOF9PV0VtQmozeUxMZTNTb2hQclFwb2hsSHhId2o2bkktMGlaYi04WktuTWZqMzRCWE9sTTQxaWVnWi0tdTZra2tRRnJ2Q1pTaFUydVpVSkhNejJHOUZnUkZtVUtWMzRQdHJ4UkZzODZXb0VKUHc?oc=5",
-      "title": "„Reuters“: Pentagonas rekomendavo Baltijos šalims švelninti retoriką Rusijos atžvilgiu",
-      "en": "Reuters: Pentagon recommended that the Baltic states soften their rhetoric towards Russia",
-      "outlet": "Delfi",
-      "published": "2026-10-30T07:20:19.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQeE1vUjZXYzU0a1FqMThKLUlGWlZVdVhqdTR1UEYwS1V4czRTemlFRFdrN1Z0eHgxdEJ4SU45T0Zqc2ZWOU5aWTF3dGVJNFhmQ3NVTC1sWmZsM3lQdTlETDhlbDl5aGc4NUFjUDRjTFp6UTJhWHg1UDRrWkdKRll5alhsMnhkNFd0bWhOcUgwdktrRFY4U1JWbE5UQ0o1TGpyUTdhdVlqRElpUjlVb0dnU05ab0xSSEl4STRMVDFYSmNzWDF0cWVxb2VjdHp2OFk4WlhfWjlKbnBMRWJx?oc=5",
-      "title": "WSJ: Украйна е прекратила ударите срещу руските рафинерии след натиск от страна на Тръмп",
-      "en": "WSJ: Ukraine has stopped strikes on Russian refineries after pressure from Trump",
-      "outlet": "ФОКУС",
-      "published": "2026-10-30T07:04:14.000Z",
-      "outlets": 5,
+      "from": "BD",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9aQUtCNGd2TE1KbmNzcmJiOFpqa1l5bUpNWU1aOWVnU2loSlhncjVLRzl2Z3JKWWJvOUxmQVZoNUVrcm83ZmJhdHZsdGk4UzdyZXd3?oc=5",
+      "title": "ইউক্রেনে রাশিয়ার ড্রোন হামলায় নিহত ২০",
+      "en": "20 killed in Russian drone attack in Ukraine",
+      "outlet": "Ajkalerkhobor",
+      "published": "2026-10-30T06:15:00.000Z",
+      "outlets": 6,
       "trending": false
     },
     {
@@ -1113,12 +1093,22 @@
       "trending": false
     },
     {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTzRwZjRhSTRCWExya3Z3cXViLVE1MVRNT0hLOGlQUFBidEM4eVdBM0VkRWdKVU9pa1VDdTduV2F1X3dSMldRcVJ5RDY0UVItSFhTWWVYbzBraHZOZU12WU0xUmZCR1paTW9wRmV1bVdLTTZVX0tmUDdSbE16ZGtDNk1HWExsbEx6TG9QNkVGR0hBRDlscU1NaEVtRy1OaEI1RjRkaGxzSjhJMTVhOXpxcGl1TS1wWExHZ3c0QkFJMU1YLWhn?oc=5",
-      "title": "Ukraine pauses strikes on Russian refineries after pressure from Trump, WSJ reports",
-      "en": "Ukraine pauses strikes on Russian refineries after pressure from Trump, WSJ reports",
-      "outlet": "Reuters",
-      "published": "2026-10-30T00:28:00.000Z",
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQVpMX1Z3Z250T2wxekczSW8wR1l2dGVlWndPaUVkTmNjclBzdUJzVWgzeFNFb3J0cWhrSTRQdG83dGwySG1jRTQ3b2R0a2dRQjN6LVNHcUliaVlhdGdtZzdWWjhoUWNzbkxfb3hpTTB6ajF3RDVMR2RqWmhsaHI3Mm9IamR1U3RKSnoyZE5wQkhQVkpaMVRqYTZPLUp2SUJ0VW1NX1RXTVA3MjJXUG5XUWdmWTlEVkFRbEdaWXhpUFRpdzJ1TXp6bjY4d1g2WWdzMVE?oc=5",
+      "title": "Karas Ukrainoje. Oleškų gyventojai su Ukrainos delegacija vyksta į Rusijos Anapos miestą",
+      "en": "War in Ukraine. Oleškai residents travel with a Ukrainian delegation to the Russian city of Anapa",
+      "outlet": "LRT",
+      "published": "2026-10-30T04:18:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMi4gRBVV95cUxQRE13cWtrMEI4VWc5VkdLSm1hVWFsTUxBS2REWXBYc0dLYU1yWFF5Y2tZeEJ3SUROOVJJTVliMXg1WkhVN0psdmxhR01lZHM1akdmWjhSSHFjellWNUF6NUttVHVXeUFOaG5SOTYzSjBrQXBxOUFWNVNEM2tOdGdxSzdaZlVrcEY2ZVJrZzA2YUZIU0lwREg3RktPaGdOU2lFTEEybkI3S3FOVnpGNjdTRkY5dE9EeXduRVNSTDZzR2hKUVlKSVFkY1QxZi1tV0FYZ2lkdHY5SnRaVExyeVdvNUNfQUp5dFhuNDZvZXlGYjR6WVF4TzdyOG03S2RmbXA1NTJCbGhNZF9ZVnA1bEtUaWtyUUJxc0dSWjJPTFA3cktNOXAyOXhiZHdxNFNPdm5SYno4enJnRFNOaGI4aWh0dmJvRk0xLThGTHhGWDZFYmFyVFRyWXREOF9SQ1ZxR3B5WU4xSU92N1VxeXdPbzB5aWxFd1RvaHRFUVpIOG9uNDhJXzBTc1prMEpCNDBjOWJneHlBSXF6cWdOMmlZZV9YUlY5V0QwQkphRk1wTEhIN2Q2TG9wR2VyV1VIVkxvVjRNcmJfME83bnhacHU0bnl4WV95RG1tY2gwWW1nTWFjZXh6SERodlRZSTV1UGhkdlptaXM4cUJyNFpVa0VybXRGSG1Pbkw3djR5eE9mMDJVLUVSUlFnek5NT3RrbV91YnIzMTVYdHBVT3h0QXNtZnBkX1hla3NWLThHbGt3RFY3S1hzYzBQaXY4WF9iVEE3UndJTnd0NGpqU1E5UGRJVU9Ebjhn?oc=5",
+      "title": "مسيّرات أوكرانية تستهدف موسكو أثناء القمة الروسية الإفريقية",
+      "en": "Ukrainian drones target Moscow during the Russia-Africa summit",
+      "outlet": "صحيفة الخليج",
+      "published": "2026-10-29T21:30:15.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -1134,21 +1124,21 @@
     },
     {
       "from": "GH",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdzgtMENseWVFYUlmb2RUYXk1aVozcEROZVIwS2NBLXN0UDBaRHl2YVEzRkFSNHNGSnE3X0Y2WmRzbDRlM0FqMFJrUmJ6eXFTRnRfSXhfaEl6b01PUW5jRjU1cmJBa0JTQ2MyY2R0c01nSTVSc25JZGs5Z2NVY2RFb0NVckdHNzVLZ0xkd2VZWG1odmxUS19HaTcwVFNZSUY1eVF3a1AxLS1EMnA3UzhrOHhCYjBBUnprYzlFZmxfRQ?oc=5",
-      "title": "Russia's Rusal agrees bauxite, alumina joint ventures to tap big deposit in Ghana",
-      "en": "Russia's Rusal agrees bauxite, alumina joint ventures to tap big deposit in Ghana",
-      "outlet": "Reuters",
-      "published": "2026-10-29T14:41:43.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcS1naUVaR2l1Wk9wNTdFc25vZXByZV9LR1JXbEZEbjdiSXd0VmF3QVNEZGdoSE91emJCbG9fSDhXLTB1REZPbm02X0FkSHoycnJRSDBBRjB3QzRMNHMyM284MXowNVhnUjVqdHFZTVdGNGpvWlpSTTBPcTlZbFRBbXJwNXZhdzFWblNYdW0tUGlYOHpzVnlELUltWnk0SndNU19zeTVCNk5lZDNCQUE0V205WWpVeDNjcVpEQ2lhUk1WODV1UG43bGM1MFM1SmRL?oc=5",
+      "title": "Russia’s Rusal and Ghana partner on bauxite and alumina projects",
+      "en": "Russia’s Rusal and Ghana partner on bauxite and alumina projects",
+      "outlet": "Business Day",
+      "published": "2026-10-29T16:01:15.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "GH",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRHhveEVRcmVmUDFYRTBwamhORmx0UlNRVnJUQWxUYi1yYi1aVWp6dUtYOEljekNmSHZoMTlYam9KckIxdS00dWdPVUhFN3dxcTZEOVk0ZktGSnlvSXJBaFY5Tk0xeDkyQ0w0Rzh2LUpRM0pTYV9fekZBVjJRV0xhN1BZS2lSbElfY0ZDQm5SX2xvTVFQLVVSTXJTaWdvREhs0gGmAUFVX3lxTE1RRFBTMmVJazBPeTZ4S0lXbHMyR2s3bzY1ZTgwUXBKWHZNVlh0Nmp5X3ktcUdYYjJMa2hjSmdzOFFFMjR2U1BMSzc5c3ZuYTNWY0VpZGtZLUZ6MkV2c0c0Y1hFaTY2UW5qT2JTZThkTmd2SC1vNk5XY2ZaMmdlVU44RENCNUwza0hQVGhVX1QwMURYRjdfTktTZmFLc3V5a0FoU1N2NGc?oc=5",
-      "title": "Putin hails 'natural allies' at Russia-Africa summit in Moscow",
-      "en": "Putin hails 'natural allies' at Russia-Africa summit in Moscow",
-      "outlet": "Africanews",
-      "published": "2026-10-29T13:00:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQeEtvNVBFTk9zQ016Y2hGaE8tenlBN1JNR3FDNE4yS015NlNLcS1SZkIwd2t6QWJzbVF4ZXBUVkRreE1OR2pZMkFDWHVzck9DcDRfUTdHOEpFc2NtaFlzaEhkbWJoaXVvb1hQMk5yZjFWWlNJV0RFbmswaC15VEVmSUY4cC0yZmJfNGg0U2dFNG96SmlKTTdWLUEwR0tZU3c?oc=5",
+      "title": "Putin’s latest African charm offensive draws scepticism",
+      "en": "Putin’s latest African charm offensive draws scepticism",
+      "outlet": "African Business",
+      "published": "2026-10-29T15:24:01.000Z",
       "outlets": 5,
       "trending": false
     }
