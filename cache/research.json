@@ -417,7 +417,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-31T06:15:54.662Z",
     "directSearchVersion": 2
@@ -467,7 +467,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-30T13:30:58.872Z",
     "directSearched": "2026-10-30T13:30:58.872Z",
     "directSearchVersion": 2
@@ -566,81 +566,125 @@
     ],
     "sources": [],
     "membersHash": "eonet,gdacs|IN#d1e12953",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-10-29T06:19:20.602Z",
+    "at": "2026-10-31T13:07:11.023Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Drought has affected crops, river levels and water supply across much of Europe in 2026. A JRC bulletin dated 23 October 2026 reported persistently low soil moisture in western, central and south-eastern Europe, hampering rapeseed emergence. The sources do not confirm the 21 December 2025 start date. Reported losses include $3.6bn in agricultural losses and a French corn harvest 35% below 2025.",
+    "searches": 4,
+    "summary": "Drought affecting much of Europe. The EU's European Drought Observatory said conditions remained critical in most of Europe in mid-October 2026. Affected areas named include Austria, Belgium, Germany, Hungary and the Netherlands. The Energy and Climate Intelligence Unit reported $3.6 billion in European agricultural losses on 2 October 2026. The start date is unconfirmed: one Copernicus report says the drought began in May 2026.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Burgenland",
+        "country": "AT",
+        "kind": "region",
+        "impact": "state drought aid for livestock farms"
+      },
+      {
+        "name": "Upper Austria",
+        "country": "AT",
+        "kind": "region",
+        "impact": "drought aid package for farmers"
+      },
+      {
+        "name": "Eastern Austria",
+        "country": "AT",
+        "kind": "region",
+        "impact": "crop losses up to 80%"
+      },
       {
         "name": "Zeeland",
         "country": "NL",
         "kind": "region",
-        "impact": "crops hit, including potatoes"
+        "impact": "farmland drying out"
       },
       {
-        "name": "Cologne",
+        "name": "Wallonia",
+        "country": "BE",
+        "kind": "region",
+        "impact": "water restrictions for shortages"
+      },
+      {
+        "name": "Brussels-Capital Region",
+        "country": "BE",
+        "kind": "region",
+        "impact": "code yellow drought alert"
+      },
+      {
+        "name": "Boppard",
         "country": "DE",
-        "kind": "city",
-        "impact": "dried-out Rhine riverbanks"
+        "kind": "town",
+        "impact": "low Rhine water levels"
+      },
+      {
+        "name": "Paks",
+        "country": "HU",
+        "kind": "town",
+        "impact": "low Danube water levels"
       }
     ],
     "figures": [
       {
         "label": "Agricultural losses",
-        "value": "$3.6bn",
+        "value": "$3.6 billion",
         "sourceName": "thenationalnews.com",
         "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
       },
       {
-        "label": "France corn harvest",
-        "value": "9 million metric tons, 35% below 2025",
-        "sourceName": "wodnesprawy.pl",
-        "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
+        "label": "Territory under drought (EU and UK)",
+        "value": "50%, with 9% at alert level",
+        "sourceName": "smartwatermagazine.com",
+        "sourceUrl": "https://smartwatermagazine.com/news/newsroom/europes-rivers-hit-historic-lows-half-the-eu-and-uk-now-under-drought"
       },
       {
-        "label": "EU and UK land in a drought category",
-        "value": "50% at end of July 2026, 9% in alert category",
-        "sourceName": "wodnesprawy.pl",
-        "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
-      },
-      {
-        "label": "Soybean yield, EU-wide",
-        "value": "down 15% (JRC estimate)",
-        "sourceName": "thenationalnews.com",
-        "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
-      },
-      {
-        "label": "Economic cost to EU GDP in 2026",
-        "value": "about 1%, around €180 billion",
-        "sourceName": "france24.com",
-        "sourceUrl": "https://www.france24.com/en/europe/20260813-european-drought-shrivels-crops-despite-farmers-best-efforts-to-adapt"
+        "label": "Water deficit",
+        "value": "69 km³ across 12 major river systems",
+        "sourceName": "eu-space.europa.eu",
+        "sourceUrl": "https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/europes-major-rivers-record-low-water-levels"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "drought.emergency.copernicus.eu",
-        "url": "https://drought.emergency.copernicus.eu/",
-        "title": "Drought Observatories"
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/european-and-global-drought-observatories/current-drought-situation-europe_en",
+        "title": "EDO European Drought Observatory - Joint Research Centre"
+      },
+      {
+        "name": "farmweeknow.com",
+        "url": "https://www.farmweeknow.com/general/persistent-heat-and-drought-slash-eu-corn-production-in-2026/article_77f95ea0-5f92-46c9-a167-78718944806f.html",
+        "title": "Persistent heat and drought slash EU corn production in 2026"
+      },
+      {
+        "name": "burgenland.at",
+        "url": "https://www.burgenland.at/news-detail/duerrehilfe-2026-antraege-fuer-futterzukaufpraemie-koennen-ab-sofort-gestellt-werden",
+        "title": "Dürrehilfe 2026: Anträge für Futterzukaufprämie können ab sofort gestellt werden - Land Burgenland"
+      },
+      {
+        "name": "boerse-express.com",
+        "url": "https://www.boerse-express.com/news/articles/duerre-notfall-oesterreich-ernteausfaelle-bis-80-250-mio-euro-hilfe-944833",
+        "title": "Dürre-Notfall Österreich: Ernteausfälle bis 80%, 250 Mio. Euro Hilfe"
+      },
+      {
+        "name": "wodnesprawy.pl",
+        "url": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/",
+        "title": "The 2026 Drought in Europe. We Know the Risks, but We're Not Prepared"
       },
       {
         "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/summer-crop-season-closes-below-average-yield-prospects-2026-10-23_en",
-        "title": "Summer crop season closes with below-average yield prospects - Joint Research Centre"
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en",
+        "title": "Worsening drought and record heat grip Europe, fuelling extraordinary wildfires and extremely low river flows - Joint Research Centre"
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-31T06:15:54.662Z",
-    "donationSearched": "2026-10-29T06:19:20.602Z",
-    "directSearched": "2026-10-29T06:19:20.602Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-31T13:07:11.023Z",
+    "directSearched": "2026-10-31T13:07:11.023Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-31T13:07:11.023Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-30T00:20:11.381Z",
@@ -653,68 +697,39 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-10-29T06:19:20.602Z",
+    "at": "2026-10-31T13:07:11.023Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Drought in East Africa and the Central Sahel began on 21 May 2026 and is ongoing as of 29 October 2026, according to the latest report found, dated 25 October. A US forecast cited in that report says the El Niño driving the drought may last into early 2027. No official end of the event has been declared. Reported impacts include cropland damage in Ethiopia and famine risk in Sudan, where drought is compounded by conflict.",
+    "searches": 1,
+    "summary": "A drought affecting East Africa and the Central Sahel began on 2026-05-21. The research notes could not be completed: no news, government or humanitarian source was retrieved. An automated alert feed, updated 2026-10-31, lists agricultural drought over 1,341,883 km² with medium impact across 13 countries. No specific affected places, figures or donation pages were confirmed.",
     "ongoing": true,
-    "places": [
-      {
-        "name": "North Kordofan",
-        "admin": "Kordofan",
-        "country": "SD",
-        "kind": "region",
-        "impact": "Drought reported by Reuters"
-      },
-      {
-        "name": "Darfur",
-        "country": "SD",
-        "kind": "region",
-        "impact": "Famine risk, drought layered on conflict"
-      }
-    ],
-    "figures": [
-      {
-        "label": "People affected",
-        "value": "3.5 million people",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/ethiopia-drought-250000-hectares-2026/"
-      },
-      {
-        "label": "Cropland damaged",
-        "value": "250,035 hectares",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/ethiopia-drought-250000-hectares-2026/"
-      }
-    ],
+    "places": [],
+    "figures": [],
     "donation": [
       {
         "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
-        "org": "IFRC",
+        "org": "IFRC with Ethiopian Red Cross Society",
         "kind": "society",
-        "note": "IFRC appeals listing for Ethiopia Drought Response DREF operation, no donate button shown.",
+        "note": "Ethiopia Drought Response DREF operation appeal (MDRET042), Ethiopia only.",
         "specific": true
       },
       {
         "url": "https://redcross.or.ke/drought-emergency-2026/",
-        "org": "Kenya Red Cross Society",
+        "org": "Kenya Red Cross",
         "kind": "society",
-        "note": "General Kenya drought appeal with donate button; dates need checking.",
+        "note": "Kenya-only drought emergency page with a donate section for arid counties.",
         "specific": false
       }
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-10-31T06:15:54.662Z",
-    "donationSearched": "2026-10-29T06:19:20.602Z",
-    "directSearched": "2026-10-29T06:19:20.602Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T13:07:11.023Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -1017,7 +1032,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -1377,7 +1392,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-30T19:53:42.295Z",
     "directSearched": "2026-10-30T19:53:42.295Z",
     "directSearchVersion": 2
@@ -4102,7 +4117,7 @@
       }
     ],
     "membersHash": "gdacs,news|SY#82ae10ac",
-    "seen": "2026-10-31T00:14:33.222Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-30T19:53:42.295Z",
     "directSearched": "2026-10-30T19:53:42.295Z",
     "directSearchVersion": 2
@@ -4216,7 +4231,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -4286,7 +4301,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
@@ -5800,7 +5815,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
@@ -5887,7 +5902,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -6382,7 +6397,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6569,7 +6584,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6834,7 +6849,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-31T00:14:33.222Z"
   },
   "ifrc-flood-8052": {
@@ -7309,7 +7324,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-31T06:15:54.662Z",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
@@ -8887,6 +8902,7 @@
       }
     ],
     "membersHash": "news|VE#9426d22d",
+    "seen": "2026-10-31T13:07:11.023Z",
     "donationSearched": "2026-10-31T06:15:54.662Z",
     "directSearched": "2026-10-31T06:15:54.662Z",
     "directSearchVersion": 2,
@@ -8937,8 +8953,7 @@
         "title": "Donate to the Venezuela Earthquake Appeal - Christian Aid",
         "published": "2026-07-07T06:15:54.662Z"
       }
-    ],
-    "seen": "2026-10-31T06:15:54.662Z"
+    ]
   },
   "news-flood-flood-ar-4614a4ca47": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -10530,87 +10545,58 @@
     ]
   },
   "usgs-earthquake-us6000u2y1": {
-    "at": "2026-10-29T06:19:20.602Z",
+    "at": "2026-10-31T13:07:11.023Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 5.7 earthquake struck near Khuzdar in Balochistan, Pakistan, on 17 October 2026 at about 10:07 am local time. USGS placed the epicentre about 48 km west-northwest of Khuzdar at a depth of about 10 km; Pakistan's PMD gave magnitude 5.9 at 25 km depth. One death was reported on 18 October after a rock fell in the Naal area, and several mud houses were damaged. No reports dated after 18 October were found.",
-    "ongoing": true,
+    "summary": "A magnitude 5.7 earthquake struck near Khuzdar in Pakistan's Balochistan province on 17 October 2026. Magnitude estimates differ by source, from 5.6 to 5.9. One person was killed by a falling rock in Naal, and several mud houses were damaged in Khuzdar district. Tremors were felt in Kalat and Surab. Reports date from 17 to 18 October, and no later updates were found.",
+    "ongoing": false,
     "places": [
       {
         "name": "Khuzdar",
         "admin": "Balochistan",
         "country": "PK",
         "kind": "district",
-        "impact": "Shaking reported; epicentre about 48 km away"
+        "impact": "Epicentre area; several mud houses damaged"
       },
       {
         "name": "Naal",
         "admin": "Balochistan",
         "country": "PK",
-        "kind": "town",
-        "impact": "One killed by falling rock; several homes damaged"
+        "kind": "district",
+        "impact": "One person killed by falling rock"
       },
       {
         "name": "Kalat",
         "admin": "Balochistan",
         "country": "PK",
-        "kind": "district",
-        "impact": "Tremors felt; no damage reported"
+        "kind": "town",
+        "impact": "Tremors felt"
       },
       {
         "name": "Surab",
         "admin": "Balochistan",
         "country": "PK",
-        "kind": "district",
-        "impact": "Tremors felt; no damage reported"
+        "kind": "town",
+        "impact": "Tremors felt"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "1",
-        "sourceName": "ianslive.in",
-        "sourceUrl": "https://ianslive.in/pakistan-one-person-killed-after-earthquake-jolts-balochistans-khuzdar--20261018132040"
+        "sourceName": "dawn.com",
+        "sourceUrl": "https://www.dawn.com/news/2037912/one-dead-as-earthquake-jolts-khuzdar"
+      },
+      {
+        "label": "Houses damaged",
+        "value": "several mud houses",
+        "sourceName": "dawn.com",
+        "sourceUrl": "https://www.dawn.com/news/2037912/one-dead-as-earthquake-jolts-khuzdar"
       }
     ],
     "donation": [],
-    "sources": [
-      {
-        "name": "outlookindia.com",
-        "url": "https://www.outlookindia.com/international/pakistan-earthquake-magnitude-5-8-tremor-15-km-depth",
-        "title": "Magnitude 5.8 Earthquake Strikes Pakistan, Tremor Recorded At 15 Km Depth"
-      },
-      {
-        "name": "archyde.com",
-        "url": "https://www.archyde.com/5-7-magnitude-earthquake-strikes-pakistan-balochistan-province/",
-        "title": "5.7-Magnitude Earthquake Strikes Pakistan Balochistan Province"
-      },
-      {
-        "name": "earthnews.in",
-        "url": "https://earthnews.in/5-7-magnitude-earthquake-hits-pakistans-balochistan-province/",
-        "title": "5.7-Magnitude Earthquake Hits Pakistan’s Balochistan Province"
-      },
-      {
-        "name": "pakistan.shafaqna.com",
-        "url": "https://pakistan.shafaqna.com/EN/339248",
-        "title": "5.9-Magnitude Earthquake Shakes Khuzdar, Surrounding Areas in Balochistan"
-      },
-      {
-        "name": "ianslive.in",
-        "url": "https://ianslive.in/pakistan-one-person-killed-after-earthquake-jolts-balochistans-khuzdar--20261018132040",
-        "title": "Pakistan: One killed after earthquake jolts Balochistan's Khuzdar district"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/List_of_earthquakes_in_2026",
-        "title": "List of earthquakes in 2026"
-      }
-    ],
-    "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-10-31T06:15:54.662Z",
-    "donationSearched": "2026-10-29T06:19:20.602Z",
-    "directSearched": "2026-10-29T06:19:20.602Z",
-    "directSearchVersion": 2
+    "sources": [],
+    "membersHash": "usgs|PK#62eeb9a4"
   },
   "usgs-earthquake-us6000u4j2": {
     "at": "2026-10-24T21:17:31.742Z",
