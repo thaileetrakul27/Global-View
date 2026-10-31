@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-31T19:00:30.177Z",
+  "updated": "2026-10-31T23:50:36.261Z",
   "fetched": {
-    "societies": "2026-10-31T19:00:30.177Z",
-    "uncr": "2026-10-31T19:00:30.177Z"
+    "societies": "2026-10-31T23:50:36.261Z",
+    "uncr": "2026-10-31T23:50:36.261Z"
   },
   "societies": {
     "AF": {
@@ -2775,14 +2775,6 @@
         "https://redcross.or.ke/drought-emergency-2026/"
       ]
     },
-    "sarc.sy/home": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-30T19:53:42.295Z",
-      "chain": [
-        "https://sarc.sy/home/"
-      ]
-    },
     "local4:usgs-earthquake-us6000u1cf:quenarafoundation.com/en/donation/panama-earthquake-relief": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Panama\"",
@@ -2793,32 +2785,6 @@
       "place": "Panama",
       "name": "Quenara Foundation",
       "title": "Panama Earthquake Relief | Donate to Azuero Families"
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-30T19:53:42.295Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ayodonor.pmi.or.id/index.php": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-30T19:53:42.295Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/index.php"
-      ],
-      "blocked": true
-    },
-    "go.ifrc.org/emergencies/8013/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-10-30T19:53:42.295Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8013/overview"
-      ]
     },
     "donate.redcrossredcrescent.org/ifrc/nepal-flash-floods": {
       "ok": true,
@@ -2996,6 +2962,40 @@
       "chain": [
         "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
       ]
+    },
+    "sarc.sy/home": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://sarc.sy/home/"
+      ],
+      "checked": "2026-10-31T23:50:36.261Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-10-31T23:50:36.261Z"
+    },
+    "ayodonor.pmi.or.id/index.php": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/index.php"
+      ],
+      "blocked": true,
+      "checked": "2026-10-31T23:50:36.261Z"
+    },
+    "go.ifrc.org/emergencies/8013/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8013/overview"
+      ],
+      "checked": "2026-10-31T23:50:36.261Z"
     }
   }
 }

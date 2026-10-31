@@ -417,7 +417,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-31T06:15:54.662Z",
     "directSearchVersion": 2
@@ -465,10 +465,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-31T19:00:30.177Z",
     "directSearched": "2026-10-31T19:00:30.177Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-31T19:00:30.177Z"
+    "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -564,7 +564,7 @@
     ],
     "sources": [],
     "membersHash": "eonet,gdacs|IN#d1e12953",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -679,7 +679,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-31T13:07:11.023Z",
     "directSearched": "2026-10-31T13:07:11.023Z",
     "directSearchVersion": 2
@@ -695,7 +695,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -726,7 +726,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-31T13:07:11.023Z"
   },
   "gdacs-drought-dr-1027465": {
@@ -1030,7 +1030,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -1346,54 +1346,93 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-10-30T19:53:42.295Z",
+    "at": "2026-10-31T23:50:36.261Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.0 earthquake struck Xizang (Tibet) Autonomous Region, China, on 22 October 2026 at 22:33 local time (14:33 UTC), about 191 km ENE of Nagqu. Wikipedia reports at least 16 deaths and 76 injured. Search and rescue and relocation of residents were under way on 23 October, the date of the latest source found.",
+    "summary": "A magnitude 7.0 earthquake struck Baqen County in Nagqu City, Tibet, China, on 22 October 2026, about 191 km ENE of Nagqu according to USGS. At least 16 people were killed and dozens injured, and at least 339 homes collapsed. Over 12,000 residents were evacuated. Rescue and resettlement were under way in reports dated up to 25 October.",
     "ongoing": true,
     "places": [
       {
         "name": "Baqen County",
-        "admin": "Xizang Autonomous Region",
+        "admin": "Tibet Autonomous Region",
         "country": "CN",
         "kind": "district",
-        "impact": "Epicentre; firefighters searching for survivors"
+        "impact": "epicentre, deaths, injuries, collapsed homes"
       },
       {
-        "name": "Nagqu",
-        "admin": "Xizang Autonomous Region",
+        "name": "Mărú Township",
+        "admin": "Tibet Autonomous Region",
         "country": "CN",
-        "kind": "city",
-        "impact": "Named as the wider area the quake struck"
+        "kind": "town",
+        "impact": "building collapses, ground cracks, wall damage"
+      },
+      {
+        "name": "Kamlung Gal",
+        "admin": "Tibet Autonomous Region",
+        "country": "CN",
+        "kind": "town",
+        "impact": "10 people died"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "at least 16",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake"
+        "sourceName": "nation.com.pk",
+        "sourceUrl": "https://www.nation.com.pk/23-Oct-2026/7-0-magnitude-earthquake-kills-16-tibet-s-nagqu-city"
       },
       {
         "label": "Injured",
         "value": "76",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake"
+        "sourceName": "en.mehrnews.com",
+        "sourceUrl": "https://en.mehrnews.com/news/248895/More-relief-supplies-allocated-to-quake-hit-area-in-Xizang"
       },
       {
-        "label": "Relief items allocated",
-        "value": "3,800",
-        "sourceName": "ecns.cn",
-        "sourceUrl": "http://www.ecns.cn/cns-wire/2026-10-23/detail-ihfmiwhm0741170.shtml"
+        "label": "Evacuated",
+        "value": "12,489 residents",
+        "sourceName": "tribuneindia.com",
+        "sourceUrl": "https://www.tribuneindia.com/news/world/powerful-earthquake-in-chinas-tibet-collapses-hundreds-of-homes-kills-16/amp"
+      },
+      {
+        "label": "Homes collapsed",
+        "value": "at least 339 homes",
+        "sourceName": "outlookindia.com",
+        "sourceUrl": "https://www.outlookindia.com/international/tibet-earthquake-atleast-16-killed-54-injured-as-339-homes-collapse-in-nagqu"
       }
     ],
     "donation": [],
-    "sources": [],
+    "sources": [
+      {
+        "name": "tribuneindia.com",
+        "url": "https://www.tribuneindia.com/news/world/powerful-earthquake-in-chinas-tibet-collapses-hundreds-of-homes-kills-16/amp",
+        "title": "7.0-magnitude earthquake in Tibet kills 16, injures 65; over 12,000 evacuated - The Tribune"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake",
+        "title": "2026 Tibet earthquake"
+      },
+      {
+        "name": "nation.com.pk",
+        "url": "https://www.nation.com.pk/23-Oct-2026/7-0-magnitude-earthquake-kills-16-tibet-s-nagqu-city",
+        "title": "7.0-magnitude earthquake kills 16 in Tibet’s Nagqu City"
+      },
+      {
+        "name": "en.mehrnews.com",
+        "url": "https://en.mehrnews.com/news/248895/More-relief-supplies-allocated-to-quake-hit-area-in-Xizang",
+        "title": "More relief supplies allocated to quake-hit area in Xizang - Mehr News Agency"
+      },
+      {
+        "name": "smdailyjournal.com",
+        "url": "https://www.smdailyjournal.com/news/world/rescuers-search-for-survivors-after-deadly-earthquake-in-chinas-tibet-region/article_e057e7dc-d5ac-4393-a299-1b28690b0540.html",
+        "title": "Rescuers search for survivors after deadly earthquake in China's Tibet region"
+      }
+    ],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-31T19:00:30.177Z",
-    "donationSearched": "2026-10-30T19:53:42.295Z",
-    "directSearched": "2026-10-30T19:53:42.295Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-31T23:50:36.261Z",
+    "directSearched": "2026-10-31T23:50:36.261Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-31T23:50:36.261Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -4115,7 +4154,7 @@
       }
     ],
     "membersHash": "gdacs,news|SY#82ae10ac",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-30T19:53:42.295Z",
     "directSearched": "2026-10-30T19:53:42.295Z",
     "directSearchVersion": 2
@@ -4229,7 +4268,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -4299,7 +4338,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
@@ -5813,7 +5852,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
@@ -5900,7 +5939,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -6395,7 +6434,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6582,7 +6621,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6847,7 +6886,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-31T00:14:33.222Z"
   },
   "ifrc-flood-8052": {
@@ -7322,7 +7361,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-31T19:00:30.177Z",
+    "seen": "2026-10-31T23:50:36.261Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
