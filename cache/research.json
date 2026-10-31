@@ -417,7 +417,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-31T06:15:54.662Z",
     "directSearchVersion": 2
@@ -436,41 +436,39 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001343": {
-    "at": "2026-10-30T13:30:58.872Z",
+    "at": "2026-10-31T19:00:30.177Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Super Typhoon In-fa (Typhoon No. 31) began on 23 October 2026 and is over the open western Pacific, not on land. As of 3 a.m. on 30 October it was near Minamitorishima Island. The Japan Meteorological Agency classified it as a very strong typhoon on 30 October, with maximum sustained winds near 162 km/h. It is forecast to move west toward the Ogasawara Islands around 31 October. No land impacts have been reported.",
+    "searches": 4,
+    "summary": "Typhoon In-fa (Typhoon No. 31) was near the Ogasawara Islands in Tokyo Metropolis as of 31 October 2026, moving north at about 15 km/h with maximum winds of 45 m/s. Forecasts say it may slow near the islands around 1-2 November and possibly strike them around 4-5 November, with track uncertainty high. Japan's forecasters report high waves already affecting Ogasawara waters; no deaths, damage or evacuations were reported in the notes.",
     "ongoing": true,
-    "places": [],
+    "places": [
+      {
+        "name": "Ogasawara Islands",
+        "admin": "Tokyo Metropolis",
+        "country": "JP",
+        "kind": "region",
+        "impact": "High waves; typhoon may strike around 4-5 Nov"
+      }
+    ],
     "figures": [],
     "donation": [],
     "sources": [
       {
-        "name": "newsonjapan.com",
-        "url": "https://newsonjapan.com/article/151122.php",
-        "title": "Rare Typhoon No. 31 Strengthens as Japan Records 31st Storm in 13 Years"
+        "name": "tenki.jp",
+        "url": "https://tenki.jp/bousai/typhoon/2631/",
+        "title": "台風31号(2026年) / 最新位置・進路予想 - 日本気象協会 tenki.jp"
       },
       {
-        "name": "wxtech.weathernews.com",
-        "url": "https://wxtech.weathernews.com/en/news/sky20261028-01/",
-        "title": "Typhoon IN-FA: Forecast to Track North of Northern Mariana Islands; Limited Impact Expected at Saipan International Airport - Weathernews"
-      },
-      {
-        "name": "rustourismnews.com",
-        "url": "https://www.rustourismnews.com/2026/10/30/powerful-typhoon-in-fa-heads-toward-japans-remote-pacific-islands/",
-        "title": "Powerful Typhoon In-fa Heads Toward Japan's Remote Pacific Islands"
-      },
-      {
-        "name": "rainviewer.com",
-        "url": "https://www.rainviewer.com/storm-tracker/typhoons/in-fa-2026.html",
-        "title": "Typhoon IN-FA Tracker: Live Path & Location"
+        "name": "weathernews.jp",
+        "url": "https://weathernews.jp/news/202610/310101/",
+        "title": "非常に強い台風31号(インファ) 小笠原諸島は長引く高波やうねりに注意・警戒 - ウェザーニュース"
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-10-31T13:07:11.023Z",
-    "donationSearched": "2026-10-30T13:30:58.872Z",
-    "directSearched": "2026-10-30T13:30:58.872Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-10-31T19:00:30.177Z",
+    "directSearched": "2026-10-31T19:00:30.177Z",
+    "directSearchVersion": 2,
+    "seen": "2026-10-31T19:00:30.177Z"
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -566,7 +564,7 @@
     ],
     "sources": [],
     "membersHash": "eonet,gdacs|IN#d1e12953",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -681,10 +679,10 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-31T13:07:11.023Z",
     "directSearched": "2026-10-31T13:07:11.023Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-31T13:07:11.023Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-10-30T00:20:11.381Z",
@@ -697,7 +695,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -728,8 +726,8 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "donationSearched": "2026-10-31T13:07:11.023Z",
-    "seen": "2026-10-31T13:07:11.023Z"
+    "seen": "2026-10-31T19:00:30.177Z",
+    "donationSearched": "2026-10-31T13:07:11.023Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -1032,7 +1030,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2
@@ -1392,7 +1390,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-30T19:53:42.295Z",
     "directSearched": "2026-10-30T19:53:42.295Z",
     "directSearchVersion": 2
@@ -4231,7 +4229,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -4301,7 +4299,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
@@ -5815,7 +5813,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
@@ -5902,7 +5900,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -6397,7 +6395,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6584,7 +6582,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6849,7 +6847,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-31T00:14:33.222Z"
   },
   "ifrc-flood-8052": {
@@ -7324,7 +7322,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-31T13:07:11.023Z",
+    "seen": "2026-10-31T19:00:30.177Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2

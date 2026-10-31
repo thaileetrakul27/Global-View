@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-31T13:07:11.023Z",
+  "updated": "2026-10-31T19:00:30.177Z",
   "fetched": {
-    "societies": "2026-10-31T13:07:11.023Z",
-    "uncr": "2026-10-31T13:07:11.023Z"
+    "societies": "2026-10-31T19:00:30.177Z",
+    "uncr": "2026-10-31T19:00:30.177Z"
   },
   "societies": {
     "AF": {
@@ -2459,22 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "jrc.or.jp/english/donate": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-24T17:51:09.606Z",
-      "chain": [
-        "https://www.jrc.or.jp/english/donate/"
-      ]
-    },
-    "drk.de": {
-      "ok": true,
-      "reason": "donation word \"spenden*\"",
-      "checked": "2026-10-24T17:51:09.606Z",
-      "chain": [
-        "https://www.drk.de/"
-      ]
-    },
     "unicef.org/panama/emergencia_terremoto_panama": {
       "ok": true,
       "reason": "donation word \"dona ahora\"",
@@ -2983,35 +2967,35 @@
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-10-31T13:07:11.023Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-10-31T13:07:11.023Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-10-31T13:07:11.023Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-10-31T13:07:11.023Z"
+      ]
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-10-31T13:07:11.023Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ],
-      "checked": "2026-10-31T13:07:11.023Z"
+      ]
     },
     "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
       "ok": false,
       "reason": "asks for Cash App or Venmo, as scams do",
+      "checked": "2026-10-31T13:07:11.023Z",
       "chain": [
         "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
-      ],
-      "checked": "2026-10-31T13:07:11.023Z"
+      ]
     }
   }
 }
