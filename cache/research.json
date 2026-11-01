@@ -417,7 +417,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-31T06:15:54.662Z",
     "directSearchVersion": 2
@@ -465,7 +465,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-31T19:00:30.177Z",
     "directSearched": "2026-10-31T19:00:30.177Z",
     "directSearchVersion": 2
@@ -568,6 +568,85 @@
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
+  },
+  "gdacs-cyclone-tc-1001346": {
+    "at": "2026-11-01T15:38:18.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Cyclone Murasu formed over the Bay of Bengal and is ongoing as of 1 November 2026, with no landfall yet. The India Meteorological Department expects it to strengthen into a Severe Cyclonic Storm by the morning of 2 November and to cross the Andhra Pradesh coast between late Monday night and early Tuesday. Sources report no damage so far. Odisha has begun evacuating people from landslide-prone areas in Gajapati district and has issued a high alert in its southern region.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Nellore",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "city",
+        "impact": "forecast landfall stretch; alert only"
+      },
+      {
+        "name": "Bapatla",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "town",
+        "impact": "expected crossing point; alert only"
+      },
+      {
+        "name": "Narsapur",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "town",
+        "impact": "forecast landfall stretch; alert only"
+      },
+      {
+        "name": "Gajapati",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "evacuations from landslide-prone areas"
+      }
+    ],
+    "figures": [],
+    "donation": [
+      {
+        "url": "https://www.indianredcross.org/ircs/donatenow/",
+        "org": "Indian Red Cross Society",
+        "kind": "society",
+        "note": "General donation page for the society's work, not tied to Murasu.",
+        "specific": false
+      }
+    ],
+    "sources": [
+      {
+        "name": "businesstoday.in",
+        "url": "https://www.businesstoday.in/india/story/after-arnab-now-cyclone-murasu-heading-for-andhra-when-will-it-make-landfall-564982-2026-11-01",
+        "title": "After Arnab, now Cyclone Murasu heading for Andhra. When will it make landfall? - BusinessToday"
+      },
+      {
+        "name": "madhyamamonline.com",
+        "url": "https://madhyamamonline.com/india/cyclone-murasu-forms-bay-bengal-imd-issues-coastal-alert-1568240",
+        "title": "Cyclone 'Murasu' forms over Bay of Bengal, IMD issues coastal alert"
+      },
+      {
+        "name": "siasat.com",
+        "url": "https://www.siasat.com/cyclone-murasu-to-make-landfall-on-nov-3-states-put-on-alert-3568277/",
+        "title": "Cyclone Murasu to make landfall on Nov 3, states put on alert"
+      },
+      {
+        "name": "odishatv.in",
+        "url": "https://odishatv.in/odisha/cyclone-murasu-odisha-begins-evacuation-in-landslide-prone-areas-as-andhra-pradesh-braces-for-landfall-12773499",
+        "title": "Cyclone Murasu: Odisha begins evacuation in landslide-prone areas as Andhra Pradesh braces for landfall"
+      },
+      {
+        "name": "thedailyjagran.com",
+        "url": "https://www.thedailyjagran.com/india/news/cyclone-murasu-bay-of-bengal-depression-intensifies-into-cyclonic-storm-andhra-pradesh-odisha-on-rain-alert-weather-landfall-updates-10334750",
+        "title": "Bay Of Bengal Depression Intensifies Into Cyclone Murasu: Andhra, Odisha Brace For Stormy Weather Again"
+      }
+    ],
+    "membersHash": "gdacs|IN#4b1ba0fa",
+    "donationSearched": "2026-11-01T15:38:18.986Z",
+    "directSearched": "2026-11-01T15:38:18.986Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-01T15:38:18.986Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-31T13:07:11.023Z",
@@ -679,7 +758,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-31T13:07:11.023Z",
     "directSearched": "2026-10-31T13:07:11.023Z",
     "directSearchVersion": 2
@@ -758,10 +837,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-11-01T06:49:56.328Z",
     "directSearched": "2026-11-01T06:49:56.328Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-01T06:49:56.328Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-31T13:07:11.023Z",
@@ -789,8 +868,10 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-01T06:49:56.328Z",
-    "donationSearched": "2026-10-31T13:07:11.023Z"
+    "seen": "2026-11-01T15:38:18.986Z",
+    "donationSearched": "2026-10-31T13:07:11.023Z",
+    "directSearched": "2026-11-01T15:38:18.986Z",
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -1410,7 +1491,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-31T23:50:36.261Z",
     "directSearched": "2026-10-31T23:50:36.261Z",
     "directSearchVersion": 2
@@ -4249,7 +4330,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -4319,7 +4400,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
@@ -5833,7 +5914,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
@@ -5920,7 +6001,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -6415,7 +6496,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6602,7 +6683,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6867,7 +6948,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-11-01T06:49:56.328Z",
     "directSearchVersion": 2,
@@ -7354,7 +7435,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-01T06:49:56.328Z",
+    "seen": "2026-11-01T15:38:18.986Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
@@ -10573,6 +10654,18 @@
         "published": "2026-10-12T00:14:33.222Z"
       }
     ]
+  },
+  "usgs-earthquake-us6000u1wn": {
+    "at": "2026-11-01T15:38:18.986Z",
+    "model": "claude-haiku-5-5",
+    "searches": 2,
+    "summary": "A magnitude 6.1 earthquake struck 17 km west of Río Grande, Panama, on 12 October 2026 at 23:20 UTC, at a depth of 11 km (USGS). Washington Post and CNN Español reported no immediate casualties or property damage. Panama City was shown only light shaking. No update was found after 13 October 2026.",
+    "ongoing": false,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "usgs|PA#bb438b36"
   },
   "usgs-earthquake-us6000u2y1": {
     "at": "2026-10-31T13:07:11.023Z",

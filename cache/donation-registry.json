@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-01T06:49:56.328Z",
+  "updated": "2026-11-01T15:38:18.986Z",
   "fetched": {
-    "societies": "2026-11-01T06:49:56.328Z",
-    "uncr": "2026-11-01T06:49:56.328Z"
+    "societies": "2026-11-01T15:38:18.986Z",
+    "uncr": "2026-11-01T15:38:18.986Z"
   },
   "societies": {
     "AF": {
@@ -2459,30 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "unicef.org/panama/emergencia_terremoto_panama": {
-      "ok": true,
-      "reason": "donation word \"dona ahora\"",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.unicef.org/panama/emergencia_terremoto_panama"
-      ]
-    },
-    "wfp.org/emergencies/sudan": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.wfp.org/emergencies/sudan"
-      ]
-    },
-    "icrc.org/en/where-we-work/sudan": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-25T13:34:13.512Z",
-      "chain": [
-        "https://www.icrc.org/en/where-we-work/sudan"
-      ]
-    },
     "local3:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Afghanistan\"",
@@ -2828,39 +2804,6 @@
         "https://donate.redcrossredcrescent.org/ifrc/venezuela-earthquake/~mi-donativo?_cv=1"
       ]
     },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-10-31T13:07:11.023Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-10-31T13:07:11.023Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
-    },
-    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
-      "ok": false,
-      "reason": "names another kind of disaster",
-      "checked": "2026-10-31T13:07:11.023Z",
-      "chain": [
-        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ]
-    },
-    "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
-      "ok": false,
-      "reason": "asks for Cash App or Venmo, as scams do",
-      "checked": "2026-10-31T13:07:11.023Z",
-      "chain": [
-        "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
-      ]
-    },
     "sarc.sy/home": {
       "ok": false,
       "reason": "no donation word on the page",
@@ -2898,68 +2841,109 @@
     "croixrouge-rdc.org": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-01T06:49:56.328Z",
       "chain": [
         "https://www.croixrouge-rdc.org/"
-      ],
-      "checked": "2026-11-01T06:49:56.328Z"
+      ]
     },
     "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
       "ok": false,
       "reason": "HTTP 406",
+      "checked": "2026-11-01T06:49:56.328Z",
       "chain": [
         "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ],
-      "checked": "2026-11-01T06:49:56.328Z"
+      ]
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-01T06:49:56.328Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
-      ],
-      "checked": "2026-11-01T06:49:56.328Z"
+      ]
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-01T06:49:56.328Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-01T06:49:56.328Z"
+      "blocked": true
     },
     "local4:ifrc-flood-8013:islamicrelief.org.au/our-work/emergencies/bangladesh-floods": {
       "ok": false,
       "reason": "published 2024-08-26, before the disaster",
+      "checked": "2026-11-01T06:49:56.328Z",
       "chain": [
         "https://islamicrelief.org.au/our-work/emergencies/bangladesh-floods/"
-      ],
-      "checked": "2026-11-01T06:49:56.328Z"
+      ]
     },
     "local4:ifrc-flood-8013:islamic-relief.ie/bangladesh-floods-appeal-2": {
       "ok": false,
       "reason": "published 2022-06-20, before the disaster",
+      "checked": "2026-11-01T06:49:56.328Z",
       "chain": [
         "https://islamic-relief.ie/bangladesh-floods-appeal-2/"
-      ],
-      "checked": "2026-11-01T06:49:56.328Z"
+      ]
     },
     "local4:ifrc-flood-8013:humanappealusa.org/donate/projects/emergencies/bangladesh-emergency-fund": {
       "ok": false,
       "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
+      "checked": "2026-11-01T06:49:56.328Z",
       "chain": [
         "https://humanappealusa.org/donate/projects/emergencies/bangladesh-emergency-fund"
-      ],
-      "checked": "2026-11-01T06:49:56.328Z"
+      ]
     },
     "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-01T06:49:56.328Z",
       "chain": [
         "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
       ],
+      "blocked": true
+    },
+    "ifrc.org/emergency/nepal-flash-floods-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
+      ],
       "blocked": true,
-      "checked": "2026-11-01T06:49:56.328Z"
+      "checked": "2026-11-01T15:38:18.986Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-11-01T15:38:18.986Z"
+    },
+    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
+      "ok": false,
+      "reason": "names another kind of disaster",
+      "chain": [
+        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ],
+      "checked": "2026-11-01T15:38:18.986Z"
+    },
+    "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
+      "ok": false,
+      "reason": "asks for Cash App or Venmo, as scams do",
+      "chain": [
+        "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
+      ],
+      "checked": "2026-11-01T15:38:18.986Z"
+    },
+    "local4:ifrc-flood-8013:muslimcharity.org.uk/appeals/bangladesh-floods-emergency": {
+      "ok": false,
+      "reason": "HTTP 403",
+      "chain": [
+        "https://muslimcharity.org.uk/appeals/bangladesh-floods-emergency"
+      ],
+      "checked": "2026-11-01T15:38:18.986Z"
     }
   }
 }
