@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { AiClient, ResearchResult, Usage, WebResearchOptions } from "../ai";
 import { loadGlobeFeatures } from "../countries";
 import { buildResolver } from "../resolve";
@@ -355,6 +355,15 @@ describe("direct giving helpers", () => {
 });
 
 describe("updateDisasters", () => {
+  // A run's time is NOW, but the spend ledger counts a research in the month
+  // the clock shows, as the real calls' spend is. Pin the clock to NOW so
+  // these tests do not depend on the month they run in.
+  beforeEach(() => {
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(new Date(NOW));
+  });
+  afterEach(() => vi.useRealTimers());
+
   const RESOLVE = buildResolver(loadGlobeFeatures());
   const COXS = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "fixtures", "research-coxs-bazar.json"), "utf8")) as { research: ResearchResult; parsed: ResearchParse };
   const ID = "ifrc-flood-8013";
