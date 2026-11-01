@@ -417,7 +417,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-31T06:15:54.662Z",
     "directSearchVersion": 2
@@ -436,39 +436,53 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001343": {
-    "at": "2026-10-31T19:00:30.177Z",
+    "at": "2026-11-01T20:59:19.901Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Typhoon In-fa (Typhoon No. 31) was near the Ogasawara Islands in Tokyo Metropolis as of 31 October 2026, moving north at about 15 km/h with maximum winds of 45 m/s. Forecasts say it may slow near the islands around 1-2 November and possibly strike them around 4-5 November, with track uncertainty high. Japan's forecasters report high waves already affecting Ogasawara waters; no deaths, damage or evacuations were reported in the notes.",
+    "searches": 3,
+    "summary": "Typhoon No. 31 (In-fa), a very strong storm, was near Japan's Ogasawara Islands as of 1 November 2026, 15:00 JST, moving slowly and possibly stalling there. Forecasts put its closest approach around 5–6 November, mainly bringing high swells and waves. No damage or casualties were reported.",
     "ongoing": true,
     "places": [
       {
         "name": "Ogasawara Islands",
-        "admin": "Tokyo Metropolis",
+        "admin": "Tokyo",
         "country": "JP",
         "kind": "region",
-        "impact": "High waves; typhoon may strike around 4-5 Nov"
+        "impact": "Waves and swell affecting islands; no damage reported"
+      },
+      {
+        "name": "Chichijima",
+        "admin": "Tokyo",
+        "country": "JP",
+        "kind": "town",
+        "impact": "Forecast closest approach; not yet affected"
+      },
+      {
+        "name": "Hahajima",
+        "admin": "Tokyo",
+        "country": "JP",
+        "kind": "town",
+        "impact": "Outer clouds overhead; strong winds not yet reached"
       }
     ],
     "figures": [],
     "donation": [],
     "sources": [
       {
-        "name": "tenki.jp",
-        "url": "https://tenki.jp/bousai/typhoon/2631/",
-        "title": "台風31号(2026年) / 最新位置・進路予想 - 日本気象協会 tenki.jp"
+        "name": "weathernews.jp",
+        "url": "https://weathernews.jp/news/202611/010181/",
+        "title": "非常に強い台風31号(インファ) 小笠原諸島は影響が長引くおそれ - ウェザーニュース"
       },
       {
         "name": "weathernews.jp",
-        "url": "https://weathernews.jp/news/202610/310101/",
-        "title": "非常に強い台風31号(インファ) 小笠原諸島は長引く高波やうねりに注意・警戒 - ウェザーニュース"
+        "url": "https://weathernews.jp/news/202611/010071/",
+        "title": "非常に強い台風31号(インファ) 小笠原は週後半にかけて影響長引く - ウェザーニュース"
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-01T15:38:18.986Z",
-    "donationSearched": "2026-10-31T19:00:30.177Z",
-    "directSearched": "2026-10-31T19:00:30.177Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-01T20:59:19.901Z",
+    "directSearched": "2026-11-01T20:59:19.901Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-01T20:59:19.901Z"
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -643,10 +657,10 @@
       }
     ],
     "membersHash": "gdacs|IN#4b1ba0fa",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-11-01T15:38:18.986Z",
     "directSearched": "2026-11-01T15:38:18.986Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-01T15:38:18.986Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-10-31T13:07:11.023Z",
@@ -758,7 +772,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-31T13:07:11.023Z",
     "directSearched": "2026-10-31T13:07:11.023Z",
     "directSearchVersion": 2
@@ -837,7 +851,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-11-01T06:49:56.328Z",
     "directSearched": "2026-11-01T06:49:56.328Z",
     "directSearchVersion": 2
@@ -868,7 +882,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-31T13:07:11.023Z",
     "directSearched": "2026-11-01T15:38:18.986Z",
     "directSearchVersion": 2
@@ -1491,7 +1505,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-31T23:50:36.261Z",
     "directSearched": "2026-10-31T23:50:36.261Z",
     "directSearchVersion": 2
@@ -4330,7 +4344,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -4400,7 +4414,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
@@ -5914,7 +5928,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
@@ -5975,36 +5989,215 @@
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-10-29T13:38:14.413Z",
+    "at": "2026-11-01T20:59:19.901Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck offshore of Nagekeo Regency, East Nusa Tenggara Province, Indonesia, on 15 August 2026 at 04:58 WIB, according to an automated alert feed. A tsunami warning was issued and lifted at 07:31 WIB, and sea-level changes were detected in several coastal areas. These details are unverified because the sources could not be checked. The latest feed update is dated 24 August 2026.",
+    "summary": "A magnitude 7.7 earthquake struck Nagekeo and Flores in East Nusa Tenggara, Indonesia, on 15 August 2026. BNPB reported 75 deaths, 907 injured and 92,735 displaced as of 20 August. Aftershocks were frequent and relief deliveries continued as of 23 August. No later reports were found.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Mbay",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "VII MMI shaking; a building collapsed"
+      },
+      {
+        "name": "Aesesa",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "VII MMI shaking"
+      },
+      {
+        "name": "Wolowae",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "VI MMI shaking"
+      },
       {
         "name": "Nagekeo",
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Offshore epicentre; tsunami warning issued"
-      }
-    ],
-    "figures": [],
-    "donation": [
+        "impact": "Most displaced; 34,256 people displaced"
+      },
       {
-        "url": "https://ayodonor.pmi.or.id/index.php",
-        "org": "Palang Merah Indonesia (Indonesian Red Cross) Kota Bekasi",
-        "kind": "society",
-        "note": "PMI Bekasi city-branch fundraising campaign for people affected by the NTT earthquake.",
-        "specific": true
+        "name": "Maumere",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "city",
+        "impact": "Two residents died from falling building materials"
+      },
+      {
+        "name": "Riung",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "VII MMI shaking"
+      },
+      {
+        "name": "Bajawa",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "VI MMI shaking"
+      },
+      {
+        "name": "Maurole",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "0.94 m tsunami recorded"
+      },
+      {
+        "name": "Borong",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Buildings damaged"
+      },
+      {
+        "name": "Bima",
+        "admin": "West Nusa Tenggara",
+        "country": "ID",
+        "kind": "city",
+        "impact": "House moderately damaged; wall cracks"
+      },
+      {
+        "name": "Labuan Bajo",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Cracks and partial damage to commercial buildings and hotels"
       }
     ],
-    "sources": [],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "75",
+        "sourceName": "databoks.katadata.co.id",
+        "sourceUrl": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026"
+      },
+      {
+        "label": "Injured",
+        "value": "907",
+        "sourceName": "databoks.katadata.co.id",
+        "sourceUrl": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026"
+      },
+      {
+        "label": "Displaced",
+        "value": "92,735 people",
+        "sourceName": "databoks.katadata.co.id",
+        "sourceUrl": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026"
+      },
+      {
+        "label": "Houses severely damaged",
+        "value": "914",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/field-reports/18533"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "metrotvnews.com",
+        "url": "https://www.metrotvnews.com/read/ba4CPpZ9-gempa-m-3-6-guncang-nagekeo-ntt",
+        "title": "Gempa M 3,6 Guncang Nagekeo NTT"
+      },
+      {
+        "name": "ahacentre.org",
+        "url": "https://ahacentre.org/flash-update/flash-update-no-1-m7-7-earthquake-in-east-nusa-tenggara-indonesia-15-august-2026/",
+        "title": "FLASH UPDATE: No. 1"
+      },
+      {
+        "name": "actalliance.org",
+        "url": "https://actalliance.org/wp-content/uploads/2026/08/ACT-Alert-Indonesia-Earthquake-August-2026.pdf",
+        "title": "1 Alert note"
+      },
+      {
+        "name": "en.antaranews.com",
+        "url": "https://en.antaranews.com/news/427204/77-magnitude-quake-in-nagekeo-caused-damage-to-buildings-in-bima",
+        "title": "7.7-magnitude quake in Nagekeo caused damage to buildings in Bima - ANTARA News"
+      },
+      {
+        "name": "human-initiative.org",
+        "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
+        "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_East_Nusa_Tenggara_earthquake",
+        "title": "2026 East Nusa Tenggara earthquake"
+      }
+    ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-01T15:38:18.986Z",
-    "donationSearched": "2026-10-29T13:38:14.413Z",
-    "directSearched": "2026-10-29T13:38:14.413Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-01T20:59:19.901Z",
+    "directSearched": "2026-11-01T20:59:19.901Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/nttemergencyrelief/",
+        "org": "Human Initiative (GlobalGiving partner)",
+        "kind": "globalgiving",
+        "note": "Relief fund for shelter, food, water and hygiene supplies for families in East Nusa Tenggara.",
+        "title": "East Nusa Tenggara Earthquake Relief Fund - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
+        "org": "IDEP Selaras Alam (GlobalGiving partner)",
+        "kind": "globalgiving",
+        "note": "Project supporting families hit by the 15 August 2026 Flores quake.",
+        "title": "Donate to Help Families Affected by Flores Earthquake - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
+        "org": "GlobalGiving (NTT Earthquake and Indonesia, Project #68013)",
+        "kind": "globalgiving",
+        "note": "Broader fund covering the Flores quake and other Indonesian quakes; food, water, shelter, health.",
+        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
+      },
+      {
+        "url": "https://wahanavisi.org/id/donasi/gempaflores",
+        "org": "Wahana Visi Indonesia",
+        "kind": "local",
+        "note": "Emergency appeal for children and families in six Flores regencies: non-food items, clean water, psychosocial support.",
+        "title": "Darurat Gempa Flores M7.7 - Donasi untuk Anak Terdampak"
+      },
+      {
+        "url": "https://donate.worldvision.org/give/indonesia-earthquake-relief",
+        "org": "World Vision",
+        "kind": "local",
+        "note": "Shelter, safe water, hygiene, food and child protection for Flores families.",
+        "title": "Indonesia Earthquake Relief",
+        "published": "2026-08-19T20:59:19.901Z"
+      },
+      {
+        "url": "https://worldaidnetwork.org/appeal/indonesia-emergency",
+        "org": "World Aid Network",
+        "kind": "local",
+        "note": "Appeal naming the 15 August Flores quake; funds food, water and shelter via local partners.",
+        "title": "Indonesia Earthquake & Tsunami Appeal",
+        "published": "2026-08-15T20:59:19.901Z"
+      },
+      {
+        "url": "https://www.aidworkers.com/appeals/indonesia-flores-earthquake-emergency-20260815/",
+        "org": "AidWorkers.com (independent appeal)",
+        "kind": "local",
+        "note": "Funds for families affected by the Flores quake.",
+        "title": "Flores Earthquake Appeal 2026: Donate",
+        "published": "2026-08-15T20:59:19.901Z"
+      },
+      {
+        "url": "https://beqicharity.com/campaign/peduli-gempa-ntt",
+        "org": "Beqi Charity",
+        "kind": "local",
+        "note": "Darurat Gempa NTT campaign for Flores earthquake survivors; lower confidence, charity platform.",
+        "title": "Campaign - Darurat Gempa NTT: Bersama Bantu Pulihkan Flores"
+      }
+    ],
+    "seen": "2026-11-01T20:59:19.901Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -6496,7 +6689,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6683,7 +6876,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6948,7 +7141,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-11-01T06:49:56.328Z",
     "directSearchVersion": 2,
@@ -7435,7 +7628,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-01T15:38:18.986Z",
+    "seen": "2026-11-01T20:59:19.901Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
