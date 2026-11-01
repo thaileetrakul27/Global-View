@@ -417,7 +417,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-31T06:15:54.662Z",
     "directSearchVersion": 2
@@ -465,7 +465,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-31T19:00:30.177Z",
     "directSearched": "2026-10-31T19:00:30.177Z",
     "directSearchVersion": 2
@@ -679,26 +679,89 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-31T13:07:11.023Z",
     "directSearched": "2026-10-31T13:07:11.023Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-10-30T00:20:11.381Z",
+    "at": "2026-11-01T06:49:56.328Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "",
+    "summary": "Drought linked to El Niño is affecting Central America, with crop failures, dying cattle and hunger reported. Honduras reports 103 municipalities across eight departments affected and under red alert. El Salvador's national emergency has applied since 7 October 2026. The latest reports are dated 26 to 28 October 2026.",
     "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
+    "places": [
+      {
+        "name": "Texiguat",
+        "admin": "Francisco Morazán",
+        "country": "HN",
+        "kind": "town",
+        "impact": "corn crop failed from lack of rain"
+      },
+      {
+        "name": "Nueva Concepción",
+        "country": "HN",
+        "kind": "town",
+        "impact": "WFP food aid distribution"
+      },
+      {
+        "name": "Tecoluca",
+        "country": "SV",
+        "kind": "town",
+        "impact": "drought shown in AP photo, 14 Oct"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Municipalities affected",
+        "value": "103",
+        "sourceName": "hch.tv",
+        "sourceUrl": "https://hch.tv/sequia-honduras-103-municipios-afectados"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026",
+        "org": "UN OCHA",
+        "kind": "un",
+        "note": "Honduras drought Flash Appeal, US$60 million, launched September 2026 for Government-led response.",
+        "specific": true
+      },
+      {
+        "url": "https://go.ifrc.org/countries/81",
+        "org": "IFRC GO",
+        "kind": "society",
+        "note": "IFRC GO Honduras page listing DREF drought operation MDRHN028; shows full funding coverage.",
+        "specific": true
+      }
+    ],
+    "sources": [
+      {
+        "name": "weather.com",
+        "url": "https://weather.com/2026/10/26/news/weather/in-honduras-authorities-hope-to-make-it-rain-using-contentious-tactic",
+        "title": "Honduras uses cloud seeding to fight severe El Niño drought"
+      },
+      {
+        "name": "infobae.com",
+        "url": "https://www.infobae.com/el-salvador/2026/10/28/no-habra-desabastecimiento-gremial-preve-abasto-de-maiz-y-frijol-pese-a-sequia-en-el-salvador/",
+        "title": "“No habrá desabastecimiento”: gremial prevé abasto de maíz y frijol pese a sequía en El Salvador - Infobae"
+      },
+      {
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/",
+        "title": "Honduras UN Appeal Over Dry Corridor Drought"
+      },
+      {
+        "name": "ny1.com",
+        "url": "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/10/21/in-honduras-hard-hit-by-drought-authorities-hope-to-make-it-rain-using-contentious-tactic0",
+        "title": "In Honduras, hard hit by drought, authorities hope to make it rain using contentious tactic"
+      }
+    ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-10-31T23:50:36.261Z",
-    "donationSearched": "2026-10-30T00:20:11.381Z",
-    "directSearched": "2026-10-30T00:20:11.381Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-01T06:49:56.328Z",
+    "directSearched": "2026-11-01T06:49:56.328Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-01T06:49:56.328Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-10-31T13:07:11.023Z",
@@ -726,7 +789,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-31T13:07:11.023Z"
   },
   "gdacs-drought-dr-1027465": {
@@ -903,78 +966,33 @@
     "membersHash": "gdacs|VU#1dba2781"
   },
   "gdacs-earthquake-eq-1570339": {
-    "at": "2026-10-30T00:20:11.381Z",
+    "at": "2026-11-01T06:49:56.328Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 7.7 earthquake struck near Pitaloza Arriba, Panama, on 9 October 2026. SINAPROC gives magnitude 7.5, with its epicentre 39 km northwest of Tonosí, Los Santos province. Damage to homes, schools, hospitals, bridges and roads was reported in Los Santos, Herrera, Coclé and Veraguas. As of 26 October, 2 deaths and 27 injuries were reported. Aftershocks continued, including a 5.7 on 27 October and a 5.1 on 29 October. Shelters were still open.",
-    "ongoing": true,
-    "places": [
+    "summary": "A magnitude 6.1 earthquake struck 17 km west of Río Grande, Panama, on 12 October 2026 at 23:20 UTC, according to USGS. USGS gave a depth of 11 km and reported shaking of Level VII (Very Strong) on the Modified Mercalli scale. Qazinform, citing USGS, reported no casualties or damage so far. No sources found report continuing direct effects from this event as of 1 November 2026.",
+    "ongoing": false,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [
       {
-        "name": "Tonosí",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "epicentre area; main quake epicentre 39 km away"
+        "name": "earthquake.usgs.gov",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
+        "title": "M 6.1 - 17 km W of Río Grande, Panama"
       },
       {
-        "name": "Los Santos",
-        "country": "PA",
-        "kind": "region",
-        "impact": "damage to homes, schools, hospitals, roads"
+        "name": "qazinform.com",
+        "url": "https://qazinform.com/news/magnitude-61-quake-jolts-panama-d85b67",
+        "title": "Magnitude 6.1 quake jolts Panama"
       },
       {
-        "name": "Herrera",
-        "country": "PA",
-        "kind": "region",
-        "impact": "damage to homes, schools, hospitals, roads"
-      },
-      {
-        "name": "Coclé",
-        "country": "PA",
-        "kind": "region",
-        "impact": "damage to homes, schools, hospitals, roads"
-      },
-      {
-        "name": "Veraguas",
-        "country": "PA",
-        "kind": "region",
-        "impact": "damage concentrated in region"
-      },
-      {
-        "name": "Penonomé",
-        "admin": "Coclé",
-        "country": "PA",
-        "kind": "city",
-        "impact": "San Juan Bautista Cathedral damaged"
+        "name": "prensa-latina.cu",
+        "url": "https://www.prensa-latina.cu/2026/10/31/nuevo-sismo-de-magnitud-61-sacude-a-panama/",
+        "title": "Nuevo sismo de magnitud 6,1 sacude a Panamá - Noticias Prensa Latina"
       }
     ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "2",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-23/"
-      },
-      {
-        "label": "Injured",
-        "value": "27",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-23/"
-      },
-      {
-        "label": "Homes evaluated",
-        "value": "13,681",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-23/"
-      },
-      {
-        "label": "People registered",
-        "value": "44,885",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-23/"
-      }
-    ],
-    "donation": [
+    "membersHash": "usgs|PA#bb438b36",
+    "earlierSearch": [
       {
         "url": "https://donate.unhcr.org/int/en/panama-earthquake",
         "org": "UNHCR (UN Refugee Agency)",
@@ -996,44 +1014,7 @@
         "note": "General donation fund for the society's national programmes, not specific to this quake.",
         "specific": false
       }
-    ],
-    "sources": [
-      {
-        "name": "midiario.com",
-        "url": "https://www.midiario.com/nacionales/otro-sismo-de-51-sacude-a-panama-la-replica-se-sintio-fuerte-en-chiriqui-veraguas-y-provincias-centrales/",
-        "title": "¡Otro sismo de 5.1 sacude a Panamá, la réplica se sintió fuerte en Chiriquí, Veraguas y provincias centrales!"
-      },
-      {
-        "name": "sinaproc.gob.pa",
-        "url": "https://www.sinaproc.gob.pa/comunicado-oficial-23/",
-        "title": "Comunicado Oficial #23 - Sinaproc"
-      },
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/panama/2026/10/27/nueva-replica-de-57-vuelve-a-sacudir-panama-y-eleva-a-mas-de-1152-los-movimientos-registrados/",
-        "title": "Nueva réplica de 5,7 vuelve a sacudir Panamá y eleva a más de 1.152 los movimientos registrados - Infobae"
-      },
-      {
-        "name": "destinopanama.com.pa",
-        "url": "https://destinopanama.com.pa/2026/10/world-of-coffee-panama-destinara-parte-de-sus-ganancias-a-la-cruz-roja-por-terremoto/",
-        "title": "World of Coffee Panamá destinará parte de sus ganancias a la Cruz Roja por terremoto - Destino Panamá"
-      },
-      {
-        "name": "abcnews.com",
-        "url": "https://abcnews.com/International/tsunami-threat-after-76-magnitude-earthquake-reported-panama/story?id=137140557",
-        "title": "7.7 magnitude earthquake shakes Panama - ABC News"
-      },
-      {
-        "name": "ellitoral.com",
-        "url": "https://www.ellitoral.com/internacionales/sismo-panama-sinaproc-tonosi-terremoto-cocle-lossantos_0_q82uQVQQS8.html",
-        "title": "Terremoto en Panamá: qué se sabe de los daños, los heridos y el impacto a un día del sismo"
-      }
-    ],
-    "membersHash": "gdacs,ifrc,usgs|CR,PA#5b86763f",
-    "seen": "2026-10-31T23:50:36.261Z",
-    "donationSearched": "2026-10-30T00:20:11.381Z",
-    "directSearched": "2026-10-30T00:20:11.381Z",
-    "directSearchVersion": 2
+    ]
   },
   "gdacs-earthquake-eq-1571367": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -1429,10 +1410,10 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#4293b0e1",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-31T23:50:36.261Z",
     "directSearched": "2026-10-31T23:50:36.261Z",
-    "directSearchVersion": 2,
-    "seen": "2026-10-31T23:50:36.261Z"
+    "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -4268,7 +4249,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -4338,7 +4319,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
@@ -5852,7 +5833,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-30T00:20:11.381Z",
     "directSearched": "2026-10-30T00:20:11.381Z",
     "directSearchVersion": 2,
@@ -5939,7 +5920,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-29T13:38:14.413Z",
     "directSearched": "2026-10-29T13:38:14.413Z",
     "directSearchVersion": 2
@@ -6434,7 +6415,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6621,7 +6602,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2,
@@ -6886,8 +6867,20 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-10-31T23:50:36.261Z",
-    "donationSearched": "2026-10-31T00:14:33.222Z"
+    "seen": "2026-11-01T06:49:56.328Z",
+    "donationSearched": "2026-10-31T00:14:33.222Z",
+    "directSearched": "2026-11-01T06:49:56.328Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/",
+        "org": "World Chefs",
+        "kind": "local",
+        "note": "School supplies for children in flood-affected areas of Sagaing and Ayeyarwady.",
+        "title": "Donate to Support Children Affected by Flooding in Myanmar - WORLDCHEFS",
+        "published": "2026-08-12T06:49:56.328Z"
+      }
+    ]
   },
   "ifrc-flood-8052": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -7361,7 +7354,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-10-31T23:50:36.261Z",
+    "seen": "2026-11-01T06:49:56.328Z",
     "donationSearched": "2026-10-31T00:14:33.222Z",
     "directSearched": "2026-10-31T00:14:33.222Z",
     "directSearchVersion": 2
