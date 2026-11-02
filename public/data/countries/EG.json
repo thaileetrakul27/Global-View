@@ -2,7 +2,7 @@
   "code": "EG",
   "name": "Egypt",
   "kind": "local",
-  "updated": "2026-11-02T09:59:51.584Z",
+  "updated": "2026-11-02T20:48:28.917Z",
   "source": {
     "name": "Google News",
     "edition": "EG:ar",
@@ -10,80 +10,294 @@
   },
   "articles": [
     {
-      "title": "انتخابات التجديد النصفي الأمريكية: ما الذي يجب معرفته؟",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4xWXk0NWFFbXJ2X2FCQU1rR3VkbGdRaUFBU2laZ204T3NrWWRVREV0WjQtajdjYVpCYWVRVnFoRnJsd2R6MVlReHphMGhtVU9XdXRpOEU5N2kyYnFiblHSAWNBVV95cUxQVUIycDU3TlNycjlVUktYY1FyQlFpcXN3YnFWaUhJbHoxazhCS0h2YUhxY0EwblJOclllY19pdlQ2cnFLcmo2T2VnczlDNERwRjBHbTBIQ2FnTU1mUzRybWZnYk0?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-11-02T06:37:16.000Z",
-      "outlets": 7,
-      "trending": true,
-      "en": "US midterm elections: what do you need to know?",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "منشور غريب لكارلسون: نتنياهو يحث على ضرب جبل الفأس بالنووي",
-      "url": "https://news.google.com/rss/articles/CBMijgRBVV95cUxOdXZIRVptUGtKVm5xeFFMSEd3LVJFS1N5QTVKM09nTG5YSUdPR2RuWTA1UUhaVjZLamhYLXlHQUZwbjhLd2VZMDZfci1IVEtMNUE3R3kzcmdCZWJyS1VDd2o2enYzX2tnMjE0dm9lTFQxVWFRRnR0SVdZdXBPUGV3dFNBc0g4OUt5dVpqSkk2UFVnMHc2am9rLTF3REZibTdFcXFKamNlMFdiS3pyWlJMM0N0RDlDMlB1OU1odXlMNHdmLThmVFJ6RXVRR0VHUHZ5TGtyX2w4LTdOeEI1MUQtSmNJbHk0Tl9MVl9GZ3ZOZHlsaHEtc3A4SHBpdk02Q2dVanI2NjktU2w5LVVfOGZDX3BhMlZkUldELWY3cHdRcmtidUppbjhSdERzZjIwei1oUW1oQUtqcVhsVGc0ekRLcEtBSjBCeWwxNlJBbWxhUUVxYjZhcnRKVU1mdWFCVEtoVEVLSEYyNEh2dmxMekxhNUJYNEVhU2E2OGU2clhHUEFUSEx1dWFpaTM4cmZEb2R0Y2FaMzJDejN1bkI3RjU1dVlSODExY3dQT0RZSHNmbzRTUklFWElYYjlUWmtrVnVLSF9rRktBNXk0THdkSVBXMHpBdHIzZVpRRlZrdXY4Y2FFTEhzNzQxbmZ6WDlReGJNQWpFOFlMSU1helFjQXRSN2NKT19idm1YQmlyMDBR0gGTBEFVX3lxTFBCTlA2THVDRW5tNlI0d1ZiS3JxMHdnd2pQaGVNLWRoWlBoUm9EckZiSFN1d2loaVc3azNianlZLXIzdDlVSzVxbHo0UVlfNHdlWVlGY0VvUXdRaTZqYk1CNzc5ZGxxQWVwUlRQclFseHJGZ3VtOVBIMXNGMFFWNERCQmVzc292b3lONXN1MjNoTGFuNE1oQ3UtMFVRNnlEZDhVbDBiM3B4dlp6ZWhUdC1scVlJazQwZWduUGQ0RzlwZU1aOFVyVnhmLTFmRjVpM0lLWXJPWEU3NzVfRmJ6X2ZhQy1EY2hsTFlBRlF1T19tUEZjOG1YZktZVURKcl9aaUtGbXNJWVhZYUxCNWJTRFAxUDZoWnJJLVUxakR0YzNsVU5mM0YyTG1CQVdHWi1ucEpfc0dUWWFERUs3a09iakpzQXJfc09rZHlvOWxJQzRyaFZxMDdlOXFFTmJ0Y0ExWHIwLWI5b1RRQTJ6WGFReTlocU1wcUtQblVwV0tpaUZmZzBUX0sxanVzQ3ZJNXZ3Y25oaWljS1RGUTlidEtINW9OWU1ZLVF5TmVQQmFwenlrdDBwUW9kMXdIdWtrdG55VndldVZNNHg4c25mT3lDVHZ0QlZRRkpFVWVXYkxkUVdMQjZ1ZmZ0RDE1b2dlTXQyWURRcFhCY0tqNklkWWQwYU94VEFTUXdobk9zbWpLRHRuSjdFdw?oc=5",
+      "title": "دانون: لا نقاش في إسرائيل أو أميركا بشأن توجيه ضربة نووية لإيران",
+      "url": "https://news.google.com/rss/articles/CBMigwRBVV95cUxOLUp3c2lXWnZoSTVfeHJaeXlJYlZqakZJb3lSd1lUMWZvdEZkOUV6SDRFeEk1Y083OUY0a1Uyb2E3UnZ4ekxiUnBGUm5uU3Q1STRWbzZtOXc3UndoNXRLRHVnVHdQNV9DMFQyWkdWMVl2MDBkT3JKWnNBWkpuU3ZPZG1nZlNjQ01BY1lnQWJiR2U3VlZnZXFibDQtUDZvbDd2NUE4dnFMMjdMRjI2T3NVQkMzYjlRM19Xdlg5cnBpS2M4RjhmVklnUkJOUVpWSllreEpNTXFlVTBJQkMwLThBYzZOM3hEMUZHMzZZMnlINUNlQVBERWdRTVIxamQtU1gyNkFxVzhJWkliNWt2c1drcUVBSGJwdnRhS05MRkpVNmVHNUJCcjZ2OHpLZWxkbUlNZHhCdXhpSlJZMl9GR2F4U0dXbi1HTWFCX2xmWWJzM3N1U1FBMDhqalpSbXN4U0FNWW9QejZ5OWFQWXVBbTZNNjFCN1ZhOC1zMDFGdDFIMkVDbjNPR0tQLXBCZDBRLW5RMFNRNzNNNXM5d0hMeDV3VDQ3cHh4Y1F5V3lnMDcwUzAzdUJrRXN3Z3UtLV9ndEUxNzI0S0tCWTU0QU1xOUtET1J6d0lVWnAwSXdIdUhzcHVYUVFFbDU1UGZyUF9XWHE2LTE2ajh6cENTczM3ZkFjR2l0Yw?oc=5",
       "outlet": "العربية",
       "outletUrl": "https://www.alarabiya.net",
-      "published": "2026-11-02T07:14:00.000Z",
+      "published": "2026-11-02T18:00:00.000Z",
       "outlets": 5,
       "trending": true,
-      "en": "Strange post by Carlson: Netanyahu urges nuclear strike on Mount Al-Fas",
+      "en": "Danone: There is no debate in Israel or America about striking Iran with a nuclear weapon",
       "about": [
         "IL",
-        "US"
+        "US",
+        "IR"
       ]
     },
     {
-      "title": "مناورة إسرائيلية لإزاحة نتنياهو.. كيف يحلّ آيزنكوت الأزمة دون دعم 61 عضواً",
-      "url": "https://news.google.com/rss/articles/CBMilgRBVV95cUxQNnl6VFhjT0c5YU9tajhLenY4RkdDRGV3dFFEeS1wdVA5b1VkemFrQ3dWM09VQUJES2JMQllJUFZOTTRVblZROWM3OURWM0lIS0pEOWFESUF0eW5CMTVDcHRYMDM1VUZ3UElqVXNIQ3BvU3JKNHprWUprVGR3WGZIWXMyTS1MU2NwUF9TZm9JMVJSM01KUzVRbGJ1NFhJc19sZjRNSnpEMVJfa0pMWmZ2V1dKdjN0Tm9tLUhlV3ZZSjZoY0NuM0pHMzR6dDhPdEpiTUdadTdkU3VZYzB1cDFvUFQ0ZGF5TUF5eEt5SkhUeFNmNmRWTU5HNmhMTGRHUGIxTHBUOTlZQ2VnSnFPUUs2REhhdFBKbWljVzhIVk9CN2hRZGVLYzYtRlZ2SXNLcllQVXUtZ1ZyeE9RY3Yzb2Q2RmJNczBHQ2tYem8xMVZ1WHk1WEVrWUtoR2tKUmVpTGZUZVVseEVFU2ZGRjlFN3ZxbjMtTVZVbS0yVDRMUW9UQmhFbUxVTUdzbjBiMDVVbHNiMnF2eHlLdUkxUjVoWW1YTVVxLWFnb2R3dlBtMEZ0QldYZ3VsbkprQTFxLTZPbGlubXJwNm5Nb3dHMldCeWdtS205d0tiN3JCbU41dm0wZGVseUF1cTM4eVdwdTZDdktiaTIyZkdrZ0hhdldWNWZiUEtid3UtOFVUTnRuMlF3V0p3WG8wdkE?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-02T05:00:00.000Z",
-      "outlets": 5,
+      "title": "من يشكل حكومة إسرائيل؟ هرتسوغ يبدأ المشاورات",
+      "url": "https://news.google.com/rss/articles/CBMi_gJBVV95cUxQbmJ4cHN3SWlNVXlSYmpXVVItRm9SSGFlbkdrQ09mdG9iNWxMbGFfN3E4SW1PNm4xWXp2RTlSRmlSb1N1ZXJCLU5pNFFOeU1rUms0UmlXQjB0Zmh2Y3hJRUQ5SWtKYmJfRm5wQThwN19jcWpwUHUyOXliR0IxZE1IRmtIZzZ1WXF4Ri1wQTN4VFN5SWhTZlVONUpLY2lvUnNHZDB4ckQ3R1dPWGVBZzF2cE50Q1pFTE1WeFVhLVBScktXRWVvLU1GVlhCLVh0Q3hKNjJqOWM5WDFzM0NKRlBlTnVRSWY0eVd1bFZJNE1LbzAtYUhlSlQwdUZhb1g4Y2Q5bHl5SHg5cWEtTUpabGpnQ2tZNjBPVzZrRFM0WjJ2ZW9EMUxDbWFDXzZNRVJJX29SWXMyWThPMEJfa1ZORVhVWk1BeWdTVnBGRTlSSGoxdzZzNzNuUV9yQUQxejlTQTJLMGJGRVJfb1hVTVVkUHh6SGVPUzQ5OTlSVXhWb2pn0gGDA0FVX3lxTE5yR01aaVptM25SY2NGaE9NOXdWemI3RXNzc21zd3RRMDRkM3ltSGh2bXo4clNpNGdlOEw0eFZ2U1JZZmdVNUhTcDUzUzF5THd4RTVOT2dpRFk4QmFHS1FkWmFQTlBibzl0QzNGZU5OM2R5R0JWUHl5aG5QNDUxbjVHVGJkeTlHRXdxdC1zbF83WS1EeDFvOEhVZlZkY2s3Vkc4MEhFaTV0U05zUGRWZjZsZXluM3VEQ041TllzRnJTdlZJQzl2c3lJMmtDUV9CQjJUcl9DSG80SnhFaXFpTVA3YjhHNFVnN0d2alNNVDNKTkhxQVo1VzFSdW1xNUJKdEViX2ZlS0RwXzFKWkRhWVQ3WVdQQ250LWFpSThKcmtOQi1Xb1RRNE9iTlB4YW15MXpqT0NmWTgzOF9nVENBcjNyUWZhVEEyNDU4ZC1xLUFIQ1lsVDZjZmI0d2RSb0ZjVUhMd1JMVWlzcEdFcHJIaV8xTjhmMXR5TXhlbWJzUDN2cHNPNA?oc=5",
+      "outlet": "سكاي نيوز عربية",
+      "outletUrl": "https://www.skynewsarabia.com",
+      "published": "2026-11-02T17:07:59.000Z",
+      "outlets": 4,
       "trending": true,
-      "en": "Israeli maneuver to oust Netanyahu: how can Eisenkot resolve the crisis without the support of 61 members?",
+      "en": "Who will form Israel's government? Herzog begins consultations",
       "about": [
         "IL"
       ]
     },
     {
-      "title": "سعر الدولار يتراجع 20 قرشا أمام الجنيه خلال التعاملات الصباحية",
-      "url": "https://news.google.com/rss/articles/CBMigARBVV95cUxOalJ5MUVSSWVJZmxaaVZfVzFCdVlfS2tIbUZkb0tnY0pkUzU4blBrREp2NE93Nmk5QzZmUm9DbFpMQ0duZzZCYWVDSG1pZjU2YXdhTFdENXo1OEtWVjh3Z0dTZ2ZXelI2ZDNTeW9oWWZyYkhkQ0lDdnBjNlVuRXpBREwtb01VSWlvdVVzWjNla1pwRnFDTGFpQ0RabUl1OWx4TUVYcnRjWDBXRXJoYl9ZNTQzUGRGTWFpTzVYUzFyWjlwaGpjNjdGUWx5S3dHV1Jpbm14Z0Riemo0dXlaSXoyaXpJTG5YTWsxZWRtV0lHLXVQV1lQbi1OaXBVeGNqQzk5b0N2ZkxEM1A4TUh0ZWhrdGIwTzZPdTB2Yy11S3VlTU1xMHl0VUNNb0VfWTN2RktIaWYwU2FnN1pQbUUxOWNJTkt6S2JqRFFyLVB1bHdqaXlMYWI5ekM2bFFBZlVFTzhudThrclpIX3FmNW9TQmtjUi1GZnZod3BkSzNycWZlUEFCMkdwV2hjaUYxaVJ3WlJSNFJveF9MVndDY2RLZXpjMmVTYVlDMjk2WlhTU0hxaU9yMjY1cklqMGFPRDNYRjNUYmQwSnd6UEZ2SWJXeWloQXlZQ3hzMzZCWTFHbGZUTURYU1pDNkZrbm91WXc3dEh1VDlubU9ZQmM4Um9QSV9vZdIB-wNBVV95cUxQd3E2QVN2eDN2aU94QWc1VTJ6RG1ZZWJMZ3pJMlZpSUpvczJCdnEtVXVFWXU5UDE3NHcyRVkzVFVySEgyeEI1VXgtYzM5Y182dkkwUE1ScFAwaG9kc05DbEtvVV9XNy15NV9KMjNyY25USEY3ejJ3YlQtMTIxX08tYzJ4Qk5OVHg2QndUaV9pQS00ZU1UQjJZR3dwLXl1aW1ZV0hTT1hFeEdwMlBzVmR4YVdhTG0ySFRrY19kcElNdjI3a2ZCemtkUFgzYWNyaXF4dC16SXpZTFN5UUw1R2JjOVd3VUVETl9sMDZ1bXVpbnlpd1NiSzFPNmxFUFd6NDZfY0liNjBRYzFMOS1DNm9QaVFSMG9BTGI5U2M0SzlhVDVPRFRxRF82U1Z3NXJ3NXdGSjZKdHp3WUJVZzhLY1V2RGUtc09DbjFTS0ozUGJTSkJwYW9LbXFxNG5VTDcyZndOSHZjQ3FiaVhGakNNZm5FaGJuREF0bFJuOEdoOXZEbkhJd3pWUWdxLVdCYzJzeVBnYlBRaHlxWDcwbVVnYk5FSm40R0VtREljT2JwSXQ2bzE4WTlJMTBkckJGaUxtNnE0cHBEYk9BWm44VlZqdng4VFVsdF85VHRROENDV1ZkYURIOVVyNXQ1ODBWX0lUX19ocU1FRmJLY1RNZHc?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-02T08:28:00.000Z",
+      "title": "المسيّرات تضرب 15 محطة كهرباء في السودان خلال أيام",
+      "url": "https://news.google.com/rss/articles/CBMiywRBVV95cUxQV0xkUUhoYXBobmtWUWhSN2NVZUtsUGtuOUZGT2hhd0QwbjJtbUFKTFBvYVowVUpYRlhJU3J4Z0VTSUQwUFlCcTNzZHhzRUp6U3pHdmVBemZVN1BrQTJXVjdKOEtZcnJ4cXJsRURtN1JGSldlcnZvSFl6dXBjYjBtQ01kck9vUUR3eExuUXd3X0FQcTk2RzFOZHNaaWFiMjVEUWhIYklLN3dsTFFJNkxJZE03QnU5WGJrRllVOFBfcTFSRjlwbDRodGpNVE45b2tITmFXYjNPaGdXMWp1WjJUWVNmTUo0OVNoeWYwOWFsb0xVNUxsb3JIbTd5aGZnLUhlMEhQSXNqdlZzVC1ZQkh4WV9jVFU2XzctT1J3SjdSUDZjY0FVMlg2VXJYbGd1MmU0NDhUY25TbHpsOWpTNWdQMGpVUkFSQzdaUndZRUw4ZGJGSHZNYWRLOWhvQk5NLXFJQ1U5ZE5LMVZscDBQaEd3dC1Wc1I5TWN4THdUTzFaeXQ2VzhhZS05OTFqcmlDYkJIejNwbm5zekNPNnZMZGx0Yi1yV29HaldIX0h6Sm05bnFUdlpvSUFQOVBpWFNzdC02SUhYc2xwVUtoTUZOMmZ4WWQ4dlZvaTZLLXdDN2p4R0Q1U2p3ZWgyUV9QbnhvMDdTWnhRaFFMRHFsVmRaV0xPa19ueUtHZUV1eHZSdXlSWXVCYTFPYWtFNFVydzU3NmNvdWppbFNyakJzb3BlMDdMOUhfdGhXY2pUc0pRUTY2TW1WUnNKX3ItZG50TQ?oc=5",
+      "outlet": "الشرق الأوسط",
+      "outletUrl": "https://aawsat.com",
+      "published": "2026-11-02T18:08:03.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Dollar price falls 20 piasters against the Egyptian pound during morning trading",
+      "en": "Drones strike 15 power stations in Sudan within days",
+      "about": [
+        "SD"
+      ]
+    },
+    {
+      "title": "عراقجي: المشاورات مع قطر وباكستان مكثفة للغاية",
+      "url": "https://news.google.com/rss/articles/CBMilANBVV95cUxNMmN3bUZ4cm9qcGpPeWYyd1RjYTBfX2ExSFkzYkROcm5FLXMyU0k5dTFPSjhacklYN3IySU1sb0FWWnc2QWxZdVJ4aGMxMjVkVXdMTFl6OEl4bGtfdTJYX3RoT1ZKR29wTXZHWWlNQ0JlaklMYk1WQTl5eDBjdlRsV3VMMGIweEZWS2RoYXZONl81MEZ2dFNVNXViRnBST3dxRUZlM3l0emVzNERJRUJVa0VCQXA5WEo5X0NldjJFQ0R4WG5TN2hmWi1JQndRelFGTmhkc2FLX3B4ZGhfU3hOQWdmZ0RMZ01qVHpsaWFJZ2pBTmRERUpSMEdnUFpsMHQtdUp2SGRsZjl5YVpGaF9ZNmZLQjU3em5QWDFSaUYyNWVGczZLMHBjY2pZTkw4TDFsZjRacUNRa0cyQlhSdmhua3BVRXdWTWZnV2NQN080RHFWV0lKemFybUtUTGZZR0RrQXhmbUlOUHJFVDJMaVhyVjdFNlBCa1RWVGwwOHNSazlGTVM3eC1ZNVp0ZllWUmUzUkx3TNIBmgNBVV95cUxQNFppS3RTY3hrTVVGOXFyVDRkdE9BNkR4OEpza3dISzVOR3RWRHlGR1M3TURDeFpVRlZpazNtRkJrbTc2b0lOc09xekhFekJEeldqX01RZWItUFRzZnJVWUpLTmJsb2pnMHJYdEM0ZDJxMXdkNURKRThLSVg1LW9sRGRZZVRhcGRuN2c5WnlWcDNHOVVxSWszRGxRU3ZnUDFEeUJuRWpFVklGZXltS1IwQjRqcUFlNWFjcGtDYlo4WnV3UmN4bzVjNkN0Skp4Ry1wdEFBM0kzSS01bVpfcWQ3OU9vdkZXM2J4TEdESGRXM05yUXFmWWF2VWlHdWFoRERla0dPT3MwR3hJX2EydzQ5aDFiWmUweDZmWHpUUjRFX2pXYlJDeDdDRjM5cko5cUJwZ2ZObE5ucGdWYUNrQmlPV2h2WDRjZk5YemZhVHZvXy1feURRSGNOTTBBQlllVHI4dXhGVnJWZkpPT1FrUzZfN0pqOXVwSmYyUXRoVlU3amFHSHhtQU10eHpDVHNXYmpveEtPcjhqbGF0dw?oc=5",
+      "outlet": "العربية",
+      "outletUrl": "https://www.alarabiya.net",
+      "published": "2026-11-02T14:26:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Araghchi: Consultations with Qatar and Pakistan are extremely intensive",
+      "about": [
+        "IR",
+        "QA",
+        "PK"
+      ]
+    },
+    {
+      "title": "رئيس الوزراء: ترشيد الاستهلاك الحكومي من كل من الوقود والطاقة",
+      "url": "https://news.google.com/rss/articles/CBMi_gNBVV95cUxQa2VPTVFlUmRDeV9nNmdaTmQ3U3NYY0dTeS0wTFhTcU1SdGs5MldXNmlYVGhrczBlRjAxSHJ5ZklPRjBiQ2lNSXVjdnJjMm5DalFqQmE2MzVsaVFVTzl2NTAxWEJWbDFSWFBLYm9uVVlVaUtya3pNUEZCbmlZSF9DY0pDaDRMRTBUS2NYNjJhTjRRSzd1cWE1WGxvLVpGYzVHb2xSTHNsbU9MYjJTVlktenJtY0pkQzN3dng4TDM0ZDhzSVd0cUIycjh3Qi01UzBYaUxCelQzS0RSWVhISnUwRFE4dXpSR0dLZGdzMjlIU0Q4cXBWa1NPa29BQnl2UW9Za0Z6UmdIRTFsZ2hTclpRc1l1dnVORnlRcEZZb2VYU1pVTERFMk9XQ1I0SDdKQ1pWX19HTkU5U1QtZVk4SlJZYW11OHB0R3ZvTnpfamZGWHVCOTBsSXFrWm1jNFdtOXFyVWZmSVpkTVA0b2s1ZERfNTFZRllOWkF1eVh3VzRRVEg1aWlwemE3T0pvTVk2UjBZWU05NGJINHd2eWhjYnlkYTRUU2ZvY1BZVDVSaU8tYTFhcjhqY2VzRWw0bXFZSlhZeERfcV91Sm41RGpNMzB6X2pieGVJUUFDanlmWjJLaTVvVnVtSkplenFBUGEwMkV2UGNhYkNYVlR1RnJJTmfSAfgDQVVfeXFMTzJ3WVNnc1hBSHVDYlhnN2Fzd0FHWWExMmVHRkx3aXdnTUJEZXp3YmNVRFVldW9PMWdLOVUxQkZKelY1QkVhdXVXU1BvT2wxRDU0Y1hwUzVXalVjdFpJWXBSRFY2d0hBLU8zNVEzRTVqZUI2QlRHMFE4ZmVIdlNHSmVMVFhXbzNVcHlYVDM1MG53eVNzbzFSNkFqZ2dGWFNuV0FvTXg0SlByQ2lYQ0thaUhHTHNsWnA3ZUFCMkV5WGhYR2V0NlE5NHFqS2pnbGRZdVVuZnJydXliR1R0ajBsQTNsVXRnejBtQzByR2Z4bDRpNFR0N1Z6Qmg4TWtvUVNJRDZXVEFIZUIxS2tKeU1paUZWX1NRcjZwRW5sWGkyLXctNjlaeGtSOWdRdDdMaVluU0pMN25KbV9FV2Q2c2N3QVVlN0NERUphcVNGeXRFa3FHWVFzdzBfd3VNQ2xPcmJLTTJ0NDZwRmo3WEs3MlRTOHBtd0JwTzIwVkhnOHpoOFVEdVRFOW11bmlqdlVxR2V0dmdSY1BvYXBGdlZ3bmx1QzU1S2pVeU9OeWJfNTF5QjBzNnB2QnhYRWJUWGtwVDRRQVUzczFGclRQUXNUcy1OVm00anhjRkQ2S1htWkxFck1fc0U5X0Zub0JhU1U2OUFHdUR1T2t4Q1NR?oc=5",
+      "outlet": "اليوم السابع",
+      "outletUrl": "https://www.youm7.com",
+      "published": "2026-11-02T15:41:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Prime minister: Rationing government consumption of both fuel and energy",
       "about": [
         "EG"
       ]
     },
     {
-      "title": "السيناريو القادم للذهب؟",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBFenY2Y2hRZXQ2eDhqNnVxWWRsTFUwaWpwa3N4aWN5YThsSjBXMnZDMGoxM3FTQUFqeF9KeFRQanNtZVZvaFNmaTdudzBRQVJ2TS1JcHVQOTItVkxqUHRnYg?oc=5",
-      "outlet": "Investing.com",
-      "outletUrl": "https://sa.investing.com",
-      "published": "2026-11-02T07:41:43.000Z",
+      "title": "كيف تفاعل رواد مواقع التواصل مع قصة المصرية التي خسرت منزل أحلامها بعد 18 عاماً من الزواج؟",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yODdJVmFFZm1LVjRMdEp4ZkRCUHNDazJzck1Xd1BzcWgzS2ttX2ZENTdJaVFrN29Kc3dVU0NQQ1RtcnA1N2JEY1ZrRXAwZFpQM1hza2FNRHc4RXQzRnc?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-11-02T15:51:42.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "The next scenario for gold?",
+      "en": "How did social media users react to the story of the Egyptian woman who lost her dream home after 18 years of marriage?",
+      "about": [
+        "EG"
+      ]
+    },
+    {
+      "title": "النفط يتراجع بأكثر من 6% مع متابعة تطورات الشرق الأوسط - ارقام : اخبار ومعلومات سوق الأسهم السعودي - تاسي",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2NEFfeVJGcmF1bTFFMVlPY2ZRZjlzR1FiZkVFZXVWcVVMSk9vVkY5VFZCX0xQbkw0ZU1jLTVOQ3JSQ2YwSkprekkxdWNmUm9lSWYyZzV3SkFXT0Z4X0Z3aExrRlhVaFJPS3c?oc=5",
+      "outlet": "ارقام : اخبار ومعلومات سوق الأسهم السعودي - تاسي",
+      "outletUrl": "https://www.argaam.com",
+      "published": "2026-11-02T16:52:30.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Oil falls by more than 6% as Middle East developments are followed - Arqam: Saudi stock market news and information - TASI",
+      "about": [
+        "SA"
+      ]
+    },
+    {
+      "title": "مصر والسودان: أمننا المائي لا يتجزأ.. ورفض لتحركات إثيوبيا",
+      "url": "https://news.google.com/rss/articles/CBMi7ANBVV95cUxNUWFPV2ViVHBsd0IxV01CanF4cks4ZXA2cmI4UHdHQnZZbjBld1lhTlU4ZXlJcDNQcnNaS1FjdUlDSUM5YzZqd2ppdXZhMk5YM2Q5NnJYYldjU2xMdVNxQ210NGxnMlVaVWlEa01helFCdGx5aGJGOWlVMUhFYmJWZ2RGVDBqbThUd0hpZUo1R040cDl1VlBqa1FYSW9xVmlOOFJpLVpIQkFhUGVRWUdKZXNNWUxheWxVeWtOMnNpOFRLeGhtSF80MVo2Z1VXVWU4aUdYay1HV3NoNjdZTG9KMlVxajc5cTFLVEVLODF4LUZrV0JTTW11blRFM2tQNFZhMjZZd2lqektSNHRLVm1MNEgzV3BkYTg4by1qNWxlb0Q1czdvRlhSb1lUZFhlZm5aZk5TdHgwcHF1MWFUTlVzdTc5SmFwVk1BUWVUWGU5TmR4WWtrdDU5dU9lczI4VUgyQzdUUF9ONmpIMk82NlZjT3czN3h3UV9HcXZvSWJiMkthWElFUjZldDQwVGNlSmRvR1pVYzNuZE90UEt1aXp1OVNhQkRYakRaaURWb29GeW54M1M0bm8xb3BwcDRTZmphTU1NZkRYSUNwU3VZN2FiVW5zUDZqYWVZMW14T2tFa1JMUy05UFdQSkdWSXfSAfIDQVVfeXFMUGx0VGpfMmRQNTNpdUpkdGFQZl9UbGVaTDA3WkwyVExDQUZ3RGdNZXBiVHNVVWptZGloM2ZzRVU0V2s4eW9fOGdZMEZpWGczcWdwZVpQT05aUUR0SWxuUkFQN0FvdWVyZVA4MlIwdDd6alYxS0VkNHJoc3RRQTdTWHdDTVpHVlhEdUE3b1pnenRITkU0X25XU1JQS1ppMFNfNXFHMFpOUHJyXzY0SlNDbTFsbXd5MnRKbElzMU42el9wMEhRSFdmYndRb052UzRORDB1djJzVFZWWkkzVFFkeThnMnFJNUNramtYWDRLQ3IzWC0tTjJ3QXN1T3ZBTXVCUUNuMUFOR2lTbnRROWNIM3dWM04wUE1ic01QREZXNVNIcjJQSEtIcE9TQmFRTkhhQlZoQVk3SEJBRHBtVEhOc2FIdG9EXzZFVTF0eXRwVFhuRWZNUG9yNUd1dGU4dWhSSmpPNXVNdXhuUVh6WWZCV3ZoVnByc3NybDFxMHo3T18zQThuYjVVYkthWEZaQU80dzFaVkpHd1ZVck1FUTZPZGFhenRjLXFXTnBtWlpsdS1Fak56Ry1IbGM1VTVVQjRWSXhUZmktU2RPbmNRMkFvQ082OHNRVDlGaTRKUkx0WnZvN1d3U211LUs1cHdGc0lwSUhB?oc=5",
+      "outlet": "العربية",
+      "outletUrl": "https://www.alarabiya.net",
+      "published": "2026-11-02T14:23:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Egypt and Sudan: Our water security is indivisible... and rejection of Ethiopia's moves",
+      "about": [
+        "EG",
+        "SD",
+        "ET"
+      ]
+    },
+    {
+      "title": "الأرصاد تكشف توقعات حالة الجو ودرجات الحرارة والظواهر الجوية حتى السبت",
+      "url": "https://news.google.com/rss/articles/CBMingRBVV95cUxNM18wZ0taNWtreFRzNjhHWlpLMzZDU1hEb0Z2ME5kakJ5VHVWUmRqVzVjMXpKSjM4TkM3NnNfMnZVb21CbHRtNEw2clhqeEVOSG5iZ0liSkJSNEhmY1JEY0s0WENUWHNaSTM3S2RjMm94VmNEWkIyWWstNzJhVW8tS2JqRWJiSE9ZMEY4X1VrMHhYTlZZZXpyNHE2LWZJYUkzclNZMUpickFnVVJSUFo0WWpmSWlNdTluS2tncVlfd1JITWhwbXladU5qdjFfNlVJaWh6UGJBRlZPeE5zSDhRZmNtTjJkVzdyd3NGV0dFQTFhNmJzZmNFVWJnZjZRc0J6Z19EeHVCTkVOU0J4azV5bmRGQnFMdlE3U1JYNklmaFA4Y1lNbnhRSjNzQVB3bGVoRW8yWktTMXJUZ0pSeUUtMTZ2VGVMYTQzVnFFblFkdTB3Zld0TF9CNHBpekluUlQzaGhzd0g2N1ZUeS13c1BHUUtoTFRYZDh3Y3ZzV01EdW9Db3lZdUNMUjZGcWNVUVNJWU1RQ1c4NTBVTC1sS2prMm9XWlFDUXp2MlZSdWNEdnl5bnBYeDZPaXU4d1NVVlZ5bDVNWlM3YkZVOWRpcHdKZUpzeHI2UDQ3T1Y5bVh0ZWFvWlVndExqTk85U0k1c2VpNGo0RUh5QzRhMzBnSVF6clIzMHFkOFc0YTZiMHphMklNck1nWDdITWVIX2Uzd9IBmARBVV95cUxNVEd5MzZ6V3ljUzVmWDhnM19ZRkQ3cTJYN3lHM19VM2dlZXZHY0NMcVVrRXVKWHAzZElaNUdiWWI5dnFKMW9mazM1c1hMV3NpdGZmTkQ4SDdSWEstQmJEVmhzMFlfcWRzWHBhaFVUUlpzLVFoeS04YngzbjZfeUMwVHBOS0pVS0s0WHc2eURBSXBINlpCU3Y0YTZZUWtUUlhobE0xUEV4ZWF6MWxpWUJoRy1zOEpobnZVY3JMRmRpZnNnd0lFUUJoX3VJQUhhNGx3dHBxa3cyMDV3amJKNVIxdVpXSE5sRlVGNXFnZzNfUmZBTkZJb0hDek9uamFkWWJCVU9Fc0lVZnp2RUtCbDA4Z04xR3p2bUtaX2xCZkxUd1JzUVFJaEVpUUotSTJ2VW9NSm1BZFVVWWVzZ1RvcEE4b0E3ZmRxRjFpdHhsUHFtNHhMT2I3b1k1VmhfbHEtU2ZCOWJOcGk0SmtmSDM1TlpkdHRmQV9XdnMwOTRvUE5qbnRsU3paRkZ4a244bkcxYTJfSDVzaENvNzAwRUwwbmJkb0theUhxaDRFWUIwUV9NTmpCMFFNcHhtUURGbHlQVHl5X3Q0ZmxYeDB3TjF3YzVZdG9fczRZVTFqWWFKWnJaQ3l5cmN3ZjJDc1I1VDVGVFdqZEVCY1BPNTNwbkhWRFA3djZkZk40aTRHRXBKNzlQS01WeWxJVnVFVQ?oc=5",
+      "outlet": "اليوم السابع",
+      "outletUrl": "https://www.youm7.com",
+      "published": "2026-11-02T09:50:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Meteorology reveals weather forecast, temperatures and weather phenomena until Saturday",
+      "about": [
+        "EG"
+      ]
+    },
+    {
+      "title": "أكرم توفيق بديلا لأحمد نبيل كوكا فى تشكيل الأهلى أمام المقاولون العرب",
+      "url": "https://news.google.com/rss/articles/CBMixgNBVV95cUxNRXU1aTE0cUxOeHh1NlVSMjFGclM2Y0wxOHl2NTlwblNYTDJ2TmRYbGlyNVdvakRpUzlYbTRPcDBwdWNXOG1jVHZsWjhnbjMyTGZUbkFGTEw1eW1rTHFnYVROYlFqSTFmV2ptanhzYnZLS05yd09GRWZoM0NaRXJ1WXJSbHFMd09UZFYxdDRMTGZfZFNPTWlmckM2bHQtMTZ2aWt1T0xlRGFCRlUtSWRaY3FqTF9wdzBwZ2hfaExiSElaUGs4ZEpnckV4WXA1U01yT2paSk9lQUZEeE8tdlpiMTRXVldIbmwxenkyMlJyQWc2YXUwR3NCVkxEUURxV2FBZ2FidWlSWnlKeTdFczlaVUNtZ2FSNFhJNWxaT3dqY1hJajVIMXlRSk52SkczcWdLRkQyXzVNZVJ1SDFTdDFJYjMzMkJzX2FuT1UyVTZGaTRDM294ZmVsNFV4RGJEeFJoUW1jaTZXazQ4NUFWY2xWaHhpbnRrQUdZbngtc01SSUFUTHcyejJaaFBvSHZHV1hRbHhDemNBTFlLTUkzUjBpazJRaGtoN1dWbzJfYVBiaUhxelowNVVHUUtqNVh2T0pEUEx2Ynd30gHAA0FVX3lxTE5UbnUxMGViRlNBV0tPVjM0MVRCbVJ1WFFBMDVqeHIxMjcycl9TZjN4d094ZEZCNjFtaWlDNEh4cHlKcUM1U2x3MUFHUVBrMFhUYmdmTGNEcFpjZXVaSmZzTF81Vm01Y3NPbUROTHNCdElsLU9ZLVVkX1ZOZEc2anNKUE1vTW94RUpvalpqWnVidk4zOW1kanhYaDlHVlVVdGVEMzlmMGJYdVk4QUFUVFd0aW4yWFptVkM5aDV6UTc0TjUzUTZzdU4zaHdiM0owbDZVbWdOOEJfeWRrTFZWMkRORWtRVjlmR2IwTkwzX2ItalVDcjd6NnNOdmF5dDFsb3ZtTGtuaUVVQlhsaDJfX2RQakJDMXh2Z2xrQU5XMl9LeHRVdzNnRUhUOXBkSzMwX2NkY3hWMkFOX2pLQWZnTi1YZy1NNG5fQzBXYjAxcGdZRUdGdVdWbVFRWDk3Qlh3bEFRZzF6ZEgxaFVlOEJrSHFIdzFyRGxTWUxpanB5YkxaT2t6ZFQ4STBkbjJlS0xYeHFEWTJBQVZYMjFCS0k4enpSNjRVZUxYUjFKSHJsWXUtMUdKR29GYkZJby1hMUY3MkE?oc=5",
+      "outlet": "اليوم السابع",
+      "outletUrl": "https://www.youm7.com",
+      "published": "2026-11-02T17:58:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Akram Tawfik replaces Ahmed Nabil Koka in Al Ahly's lineup against Al Mokawloon Al Arab",
+      "about": [
+        "EG"
+      ]
+    },
+    {
+      "title": "ماذا قدم منتخب مصر تحت 17 عامًا في كأس الخليج؟.. \"5 انتصارات و22 هدفًا\"",
+      "url": "https://news.google.com/rss/articles/CBMihARBVV95cUxONHRRVkR5eWR3bmx6eURodEZLTzNQOVRsWEN3VEhfNkpDU25FYm5NODlKQTJHcXdNNHd6NE13NGhmNUk3U0pwd1V2SnpWb0w2Ql8wXzlUNDlRUjF5b1ZZTEdTWHktZE5vOXJPZ1MxRk5ia0oxSEtJTmUyVk9HV0x3UExKZnlsVGFMdUZfOVJ1UEdRVEhrMnQ3bFFOcU9nbHJ4OHBmNkNwRGQtT2ZPaDVMdVpBMWNUSWtmdDFUSTFiWk5vZTVUX1ZHVkpZckxDamFSWm5tSF91RjJ5a2g0TGdPc1NtTkR4b19fLXhSdllsbG16VWlnWFdZaFppYXV2RDg3U3JfV3lxOThyQ2NVU1BIQ2VjZGVtNmFRX2tlY1ZwTFhrMUxwdkVGeWg3QmdXbzRPMlh1SW5zTU9JTmtORzBqZ3U3eWFqaGY4TW9Wa0hJdVJiVGdHWWI5V0ZuOWNWYXZxREtRU2RJQkpJUTJ1cGtZR2ctNDNxMGdSTm9YTHBzY2FSdGppTm83U2RPRnJFQ0p1RmNYRzBYek41ZVZ4MXgtX1JNanhfUms1S3VWV2RqNGJyWXJkdnBHdGdjQ1kydHFJM0xkcVZ5cHRPeFI0Q1JGMDIxZWxqU0NPSzIxQVZXaGtaOEJsSmswQ0tOYjZkUzJPVEtKMkktQjJaV0VxVlotZVExUTnSAYoEQVVfeXFMTjMwUXlkQ191amtsYTlRSWxUMTNqY3dESTNTVDQwOXFTenJSTDR0bjRoSk42bGdOdHFSUHpza2hNdVRPMUhscUN5UDlPa1Q2RnYtdWxkcFk0Z2V3cnh0TWJGVVZ4a2FaeGMzZ0hQWkxabWhEZTcxTk1ZZDk3XzNzbVV2TTA4a19jVmR5QnlESlhOb3lXTEVTckItRG9CYmI1Z0tNUG11VGFGZ010LUNPdklxZlVzYmlsNy1PemN2S25QMWY1Uk9FeVNvRUJpMExNT1hLUnk5dFMzWENwd2xwZ3JYUlgxeXdPLUR6QWJLTHV1Ul9OYmdwcG1rU1gxY3VRd1ZMNVQ2LS1fWVc0ZXpkOU5CaC1GZ0lqNGs1TmlQM2NMM0pTZmxYOWEyUUVhUFFYUS1jMFFOOElTOTNZekppZlQxVWVwcS1ydmNZZ1ZMbkRxWkJsYXlsODlscElxallPa1NMVm9ORnFib2g4VUJrVXpWcnRvRzc2dldaX3AyZGE0Y3hQcDlGYVJhYWp0REJBYmF3b2pjcjRRMDE2UDBVekk0Mi1SckZWWEJ1S2hsZXlJOVlQS2xhQTk4emk5U09qeDFvb2JlcGdCWkNvOVJfM2Z1S0FqT2I1RWFSSGhTdk9CYURKLWxXdlp1dHR3QkNqSE83ZXBWWUlfVDRDSVhxclphTlZtdEdtc3pB?oc=5",
+      "outlet": "Masrawy",
+      "outletUrl": "https://www.masrawy.com",
+      "published": "2026-11-02T16:32:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "What did Egypt's under-17 national team achieve in the Gulf Cup? \"5 wins and 22 goals\"",
+      "about": [
+        "EG"
+      ]
+    },
+    {
+      "title": "رونالدو ممنوع من السفر.. لماذا لا يشارك كريستيانو في مباريات النصر الخارجية؟",
+      "url": "https://news.google.com/rss/articles/CBMi5ARBVV95cUxNal9qWk1pdjlsR3k3ckpycDZEY1BnQnZNQ01XSzlRemR0T1dtaHRJcE5QQTRXT1lyQlcwY3pSQzNvRm9kSUw3NGhIQlF0UjR0Y3RTRjZqb0hMZS11LU5ScDBaV1RieFkybEZERWxVU1ctRmRSLVB1ZjFrTHFNTVpaZXJXWmhTcjNDYTNPWVJZUG9hbkJuM3hmVWVZallqZ19tNFFOX1loMWhuWDI2OXFHOEJ5SWRtNWVEMVpUemJFVkFVZ2pHYVBKZm9QeC13TG85VmtPSy1XMWlEOGtRcUdvYWhCUE0tWFM1dlpsOTBzb1I1SGFVdlZmLWNBOU1oUjJEaVV4a3JraXp4bDdKdFRCSUdiNE1NekhrdVZ3VWdOUTJ1eHBHejVQNXRueEdvN28yRWhYekI2ZkUwUGZMNGR4TjN6b3ByMUVmMjYtbHoxY2lTcjB6TnhpV25FeVNsUkw1dF9HbTRvd2R3ZHE2TE01SHc0RFlaOHlpemVLZjRRZG1LaTZZM2lYd3JEcGZEMlFFbmtTdE5XSzQ4V1BQdVhTc2syazdlajBRSFFtSi1zRk8zTFVKYWZnSUFfVVUzZjI5Um9JeS1YRjI0V0dmWjF5cmp0bFNnc051OTJWOGlNTUUzNmlYNlBWMDk2WFFYZHNodmtvRUZDTkNfaU44dDhQUm40Nmxqb3J6eURYeTNsRGJ2WVFhSHYydVJzUk5QZG9PLTYtQ294VW1WNzUtcXR5UzVjZ1RvWklSZ1FsYWU5THEtbGhwcGJ5OUNaUzRmZ0M1WkdGVW1BSm1ZWThqeHh1aU5ScnDSAeoEQVVfeXFMTXNYNzJhY01lbHpneHVJUXZUSnJidi16cU1kbDhlV096X0tCWHFzUXlZT0tjSDlRak43cVNuYkJNVkZwWHBDcmx6OC1LV1RVUjJIZXMwSEFHcW1reHRvUVlVTzlkT3dURVd4WHF6R0JydS10cWR1eGs5cEFGY0tfcEFkMDNtQnZoNFJNaUdaYS03MFFNajRSRTlCbEdtbGtxcG5lQXV1Slh3cWJwQjNsWXBmUWFKRUdpX0h3OWx3bzVaWG5kYVFva3hzYXBBaUIxT09CRWRHRWpjLWJmUjl6YnEtZTZyNzdwTTd6bTJWdmlCU0hfdUp0R216dVNQUXhmUHZwNldfUzBaelhEVks5TWxuUWJEMzhUMDN3SkcxMFNvR3duTko3cmk4U2JWWXczdXpudzVHLU12ejY4Q1liUFU4a0EydGtQc3VWMXhFeXg1eGtwN0FHcWJpVXgtdFl1YWphd21ILTVibm9tRGYyVHpDNjR2Y0IyNzIwNkxYaVFQMk5IQlNfdWt6UFB3MU9teHpmMHBXdmtBX1p6RFZiaGhBRFRrQ09oOEYtOGx3T0VGVDFrV1BUaFd1S1dFVThfTFBjR0NWMURQNHhBeHhwYU95V0dSX1dsVDM2UEFnWWEwMHpYQXFyS1cxbTN3Qk1rT3Q1WDd4WFNTZC1nZ0tmckoxa1djMkhlT2dpWVJ4OU1Oa2ZMRkVBTGE4cWUtbW9fLXpwSUNGaTRfTGdORjdLUzJpS29Od09VN1loQWlmNEZwczFmYWRuTW1CYTlQS0ZZMVRDSEJrR00xek1FV0JBbHV4aVotYTluZnNB?oc=5",
+      "outlet": "يلاكورة",
+      "outletUrl": "https://www.yallakora.com",
+      "published": "2026-11-02T16:18:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Ronaldo banned from travel: why does Cristiano not play in Al Nassr's away matches?",
+      "about": [
+        "SA"
+      ]
+    },
+    {
+      "title": "ترامب يبحث عن \"كبش فداء\" حرب إيران.. والعين على هيغسيث",
+      "url": "https://news.google.com/rss/articles/CBMi1gNBVV95cUxQTDF6NU9vZFdSMFBvOWd3U2NxaWJaZ0x1M0VUNXNxUFl5Qm9OdjY1Tng5Y2YxNzRyRjIzOWxOUTFiczc2ZWxMTVNyazZXR1QxYTdoaDVnUzlpWnFzSjdiNldFUXliWUk2RURIWXFST2R5MnZ4RFl1S1Foc191UTRBZ2hvN2RSSHA0WnlYSDBxTzVPVkpKbFFQd0dsOHJHcmxCbzY1R0FPbm1UaVFjWEl0Wk1vTGYxLUVsUEtzTklrUlBwaWFoZVZiMUU1Tm01dkdwS3NkU2xUOVAzUlpTYmswZTYzdFY0TTY1bHdHNHF0VERpSDdiT1RNTW5QOGZfNHlDc1gwVllDckpsd25yUWdiWmp4UVJJeWc0SUtSWDg2NXZ0MmRxNWdFSi1IYXY2T3duMWlxaDhEV0RYazJVRnNyWWxFZ3lEODN4RlNBd3BPSnE4bGF6c0x2SGxTZDhsT3lHMkVFNXdwdGw1X0QxbC05N2hmRFpfSTluRVRwSzZWZWpCRENYRjhOR3R2MjBra0JSSGVaR1BTcnp0dkNkZGUtZm5HWGFXcGF0d3NjWHFsbUpiTWpxQUJ2WFg5UzF3MjhGaXVoa0hIYUpHYjZCczVkcGZKdEZtQdIB2wNBVV95cUxPV2ZfTEFRQTJ3WGtMWXlLWjJ1dUxDMUhfSllPNG52aEFmWFQ1QkQxS3R2QlZBN3BrVFR6MTh6UUxISzAydDNla3ZZSC1jZE1GeEpRdnE4ekxGZjYzZ2lwSjlQNFZEUDA2QUNQYnU2dDBGZmdnaXNzN09rOFgyZlgzdnZhTlpkRk95cEJXNlFMUDFabFVpSDZGUmFXc1hjODdXekg1QVRqdDg0cEFPS3BTLXFMaFRramFUWjh6NlVOVm5tNW52QUFmcmdWVHo2aHUyem53R1N5M1RESEVRSENDNDM2T3lXRzFvSGdsZl92bEVRNTgzVXBuNzB0VWxMQkxJVmQxYXo1bWhTeFM0Tm9zcGJEUk9uUlk1YVR1b0pwbVFzSTJySnhubVRnaVo4eW5OdzVyOGE2alAxMWFTN0J6UGpwUjJBNklVdjlqU3ZNeGJmYXljOXV6aW5Ra3pZeEFxd25fTERzeVRfdVBHYWNVQm54Qlo0c1NBQkx3NkpWdm53NEJwb1JhdEJtblU3VFdvQ3doY2ZDeWo0SnFFOGtzbXNqRU9ST3NpdVBoYjduUDdJNHhVQ3Q4REJZYzdaVDdPMENMQ2hqVHF6Sy1GZU9seTV6RFMtb0l3d1M0?oc=5",
+      "outlet": "العربية",
+      "outletUrl": "https://www.alarabiya.net",
+      "published": "2026-11-02T10:19:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Trump looks for a \"scapegoat\" for the Iran war... and eyes Hegseth",
+      "about": [
+        "US",
+        "IR"
+      ]
+    },
+    {
+      "title": "ترامب يشكك في نزاهة الانتخابات النصفية ويتهم الديمقراطيين بالغش والتزوير",
+      "url": "https://news.google.com/rss/articles/CBMi3gRBVV95cUxNTG5UTG4zbkxMUjVaQ3NubzdObkNhbFVaU1BjSHVIdWZpUVRfTExIZGNJOW01ZVRRQXp4d05FYXRueFRGN0JRbVpOVm93NE9qbmVZMjFQYWhVS0ZDNkZKY3hnQlFUMk5wTmpGMXo3YkEzd1RwN290WGVGVFF6bk5mNEl1bTNMX1NIRW5ZaXVTSXkxODZQU2g4Nkp4cVJNNmF2bEc4NFM2b1MzY0lGQldYbGlnQW9jTnNTLVQyTEx3Z1Z2akYteHdYODlwTVJHVE5qRjlkcXBCeHhpb2lqWEVGcjVxUUNkVVZMaFFJMFVJSEZEakJwZmY1cXFjUmdmM0hZWlFTcThEbFlVMXd1eFFtQ3E4UDJCaWdsYzRzbUs3OUg5dFVyOGYybEFxbkJPSXpwOVlwa21WRE1QRmlfTHhDU20yWC1YMHA1MEJPUmg4dXY5M1pMSlpjSUZTdzA2ZzBoeC01SW05U3Y3aGtnUGZzamxZR3hpcmx5TnVveE9kMXJ4cTk1VENibEJtVjZYZ2JHZzNBMlJ4MHFnNFNFVEp6M3NPbFJmSXphUG9FdGlhaTA2SFJ3N3pmV0thaDVJR0I0S1JLNFBVdzRVVzdEN0d4ellUd2ExUWxXTks0VklxT3AzUG9Wc1lfUTl0bmhJTTVHRTJqcjFzU1o0OXAweEZYZ0drV2x3Zkl4TVhCZU9fcDFTQU9VQll1dXNVWlA1dTRwbXdhSFZTd3hKRXdVRHhvbWhhY2xfYTNPWUlVMkpiYi00MndranFOQTY4UTVKUG5BQ1hEYmthT09uMzQyNlHSAdgEQVVfeXFMT2FrdWJSeWI0UGJDWS1QdUhRTWZNNEhHWUg3VkhMZlpXV1pZd2xFaTJDZ0lhNXVuUjJfYXdxQWgxTEtldFFJelhHUDFxSm9iM1VfYmNGY1gyaFZNbHVIYWx3dmNCY3ZfWmljVkpGTlRtZTVvbjFoTEkwZS0tVk9sOTdLMFBEUWotTWZHMkxHc1NlY0c5YU1aUW5NemUtUHc1OFpKT3Azc1VtVExuWWFUM3pWcjRxbVdnX3JTVlIzMEExa1oycFFNSm9Mc3l4MVNZdE9jaUUyd1hzdzIwOFBxS3k3UEl0dUI2UWZFSDA4aUhxZ2lKZmtHV2VCRk16dV81RnJSN0dnR0tCUUZyVG9IakdYVTlNRWNvTlJmbGRvTWlscUZ5aDJDMTV0T3VGRzRVNDUtSDl2cGk3NE1tQ1RNWks3ek1tT0g3VVdpYVoyeV85azItUXI3SnJQbTMzbXB1eDJXYWpCNTVtVDMzMl9ZQjY5UWxMV0VJSjNCemFSbFBHSUpRN0VEVDMtZGxDbkZ4LUJGUnRYZjB2cVVkbnVxZGdGQTJVVGNHUFFyelY1NXpJNjdpeG9hNHpUUFFjamNfc2tCektCZkthckZJT1FjYTJZTGNvWFVDYTNzbnEyUUgteXE5MENXRjdsc2tGY3RtYWxhUmY1VnpmdXBIZmlYTnR2VzdDRlk5YVd0VWJ4czlMY3ZZcG5LNHlqcE1lbzBMV3N3TmVteTNaSUhLblFMemF0UXB1MnlOUGhOVkprVFpRVmcyLUU1YXlkR3hCd1BYR1ZKM0lFX25Y?oc=5",
+      "outlet": "اليوم السابع",
+      "outletUrl": "https://www.youm7.com",
+      "published": "2026-11-02T18:03:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Trump questions the integrity of the midterm elections and accuses Democrats of cheating and fraud",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "الانتخابات النصفية الأميركية.. دليلك لفهم معركة الكونغرس",
+      "url": "https://news.google.com/rss/articles/CBMi3wNBVV95cUxPWlk5RDVoTGdSVTR3RnBiNlphOW14RGRRVEFhQ21JMVY0UnlZS0NLNFlVQVQ5MHhRcGVILUxGUHJiRm1MU3E1dXV5dEZHQm9fUVN2bG96cGlrV0Z1RHFvUW0yNE0tcER1aWVILTFnU3hqT3I4RjJzRURfT2NlWUpkbUJ3WlE3U1RxRG5JWEJJSEZKT1Y0aENMblIyRDlubmtyLXVYMWtXX0F4Y2ZzOXpjOGo4OTdZeHJiVTJzTG5ZeEh3Z1R3aEJNcEFVXzZZTU15Y3Y3eDNnUC1DU0dvanZBWFREYUZWUG1vMXZodkdtcmxYVUc3WThJSzBERHBWRHJUSTcyb0RqVVBhN29sN0pCRUJZUGgtWTU0WTNHTUYxYkZIQlRlSmNpQ21VY2xSUjNHeXd4dnVmZS12QXVFbE1oSVBSRm9LUWsyMjN4Tm43SlBpUGY5cTRuY2N5cjFRSWpvVVlQazZwckJyVWxaV0tNSUFTZ0N0RFN2TjV0QTZrRHp6R2JFV1BkREpCVXoyYmhGRU94dDN3YmRzLXVPUkdpYjFSYlFpS3NENTBmNHV3ZWdFRUh4N1NBRVIyMTUyeThBSzFRM0VEZjhtUmFFMEZmSGxsRTR6SzM0QnhLdmZTWdIB5ANBVV95cUxOMWtFSnB0S1BzeFNTTWJ1SUh6bTNBc0p5R3ZkZVk5ZmllM0k1RTM0NkRZYWRMV3k2a3NjR1MyVXNsYnBWVDhZS0VlOTVkOWNyS1ROS2V6RVhzb29LT3UxdGRMRl9PZXdGZmdsWG9IZFFvVW5SM25HcnJZMy1tck5pSFVaX3A5SUd5cFdwWDZmVW8wcloxdHVxU1lzYzk3REdJajBVdXNlUUZ0TkVOZFhVV1ZjSjJCQ2FOWnp5UHVCbEw3czRfREw5VVJTTm1ERDRnZUVFRnR6UmNwbmdSQTZMUHphYV9wUmpGcjBBWVgxei1FNExOVjNTeU1paGJZa0pOLUxYYVgzbmEyTEtZTVE1RGdnRHN0YnRVSnFhcnlOZVZkY2lPM05wMUI0dnNIRkpNTEpreUEzcjN5MTFzZ1BUcV8tZ1dFOWYwb2pob2ZVT2U5OUdqNzNVMHhQbG9Za2NOSW9sYU41UkUzWUxTeGRFMGJnTzBsMUozWU1NMG5JVkxUbnZXQkc3cndpOGlqOGF3SG5Ja0VlV2owSFVlTVJSck9FUS1RN3gtaTZTRDlQNVNKbDlnOFNKSHVoUU41RFhGR0JVbkptX0toQ0F0YnZ1SFNKSi01RFhUX25UQjVLNExhMVdX?oc=5",
+      "outlet": "سكاي نيوز عربية",
+      "outletUrl": "https://www.skynewsarabia.com",
+      "published": "2026-11-02T06:37:50.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "US midterm elections... your guide to understanding the battle for Congress",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "جديد طائرة فلوريدا.. مساعدة الطيار عمرها 20 واستغاثت قبل موتها",
+      "url": "https://news.google.com/rss/articles/CBMixgRBVV95cUxNZWUxa2RpWEhkR0tSaVlvQ3VvdloySWpJLW9OVTBqbkdBUFZRQndlVGUxbXN6ZDBCMXNUeXNXZE14YVlYTnM1ajJNQnJKVHI4dWM0QWNsdldVbG1XTEF2UFlaOGlhbFc5WkJOUXMwTDNJS0M2SzB2NThiZjhWeVRRbGozNEY3dDgwRmJSbjdSME5pMi1seEx0WkMzZmQwUnpoTnBDWGEyelYzeWtfZGhqYzZPVU9zUmc1a2g4WExlLU5NWVR2Z1hxTHQwTlExZFBCaGdJZHZtd0JHYkRVZU92TWcxb3VobHhBb3YySk1zb1NJNnpqWGd3WlBXeWtfcjZJNVE0OF9MVWZjX05SNFFhbkIyUWROSG13Wm4tVXpVWUdDZTBCNG5jQmlTdzZhOE5rTHROYmJsSTJtX2tYRGJtblUta0tkQ0FTMnZUR2YzR19RVUNMNXpKVGI4c0p0bjMyWkxPSDVSOE5VWkpwdEFCLVA4SGprV1lmbFh2LXZyREZlSUxJRUhFWE4xdmFTVlJIb3QtRGtKbzIxT1pWMGhORGJDNlRkSUJSRDVRNGVpOXVzS05aLWhueWI3bG1NZkRwNF9RVWl0SmJON2xSclpuVHhLV0tfVjkzdXpQU2ExLTB2RU44bFJOaFpCWjJzZGNaamE0V1o2NVFLdG9xUjVUVjlNS2czOEcwaVBIbThuS2V4U3VsUkU2b0pkWTh5MDhpZlp1Q3VjTGdpUW5FN1BqM0VQY2lvM0hsMGRJc3pYbGR0UmlmU1HSAcsEQVVfeXFMTk9mTjVGaUR2LXZ2LVVDajRlbjVtQU5IaENBOGNtRWs4ZUhfR1QxMmktcmxBR0xjYVVFNkZRRGpMWmNXSS15Slc5UGFkaWhpdHdVV19fcDV1dWdrSFRfb0x3RFZoZmZ4a202RnRjRkdQTXo3T2Zsa2V5RkxrWk04c0J1T0RvUzM0S0hhTGkzYzV3eTBWV214LUJQSEdMY0QwOThoVlUyb29tZmVQOXhaVW5HdWNWWmhBVVJKOEhWYXptLTdNOGRwQWRTZVdhZm5wa3EteUxwMW1WdzZhaW4wYlRtckhVU2YtQUkzYXF4Ui1vVGZ5Q1JveG1EUlY2YXRZUmpQc3BaQ2taUjhwa1RGZGstalZTcVBOSkxXZ2wzMTBhOXFJams2VFU0YzVYZ20wejdfOWJKdWwyWFVoM1h3Z2cyTWRjV0ZNRHhaNHZlV0pkMDVnN3I2cDB6QWFqTWFjd3lXM1RkY0k4ZFU5M1pmeVZHcEpLNTBRdFphdFlFbHNsOU1hOGs0dlJYMnBpZ0JDTDNycDV5eUliOEJJUTVFTDI1ZUI2VFluY2kyVG10Wmg5TG9FY3V3Mml2TkxzYXZocER4bW9DWFhEWjd2cnp4UlhoRmhiMEpXeWo1b0NsS000R0dGYjJDZ2puVktzS3p6RU1wRGcwMzZDaGlRZDM1R0kyMnZ0Zzlael85VWZ2blJ1Rm84Z1ZCbHlPeGRRMTBZZ29oRHZQel9TT3hfbHZsZ2FfdkxKQ0hpTjVfQkhubnkyV2dqeUFlX1RNQms?oc=5",
+      "outlet": "العربية",
+      "outletUrl": "https://www.alarabiya.net",
+      "published": "2026-11-02T17:44:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Latest on the Florida plane: the pilot's assistant was 20 and called for help before dying",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "الحوثيون يعلنون استهداف مطاري الدمام وجازان",
+      "url": "https://news.google.com/rss/articles/CBMilgNBVV95cUxNMm1CcU5ydmFLQW00Tm9ya0ZXb09VNmxJd2Z4R0VNaHBETUxwM2I0bWhYUi1Rcmw3eW1YV3pvczVyLUpuUFlodW5pbERUSHNYNWNZTldTU2QzMnlDTV92S1RZMkVwMDI4dEFYR1hTWVMxclk0ZWk5RjFOMlZYb1pyWmpZemNtczBvXzlTckR6Rmk5OXFkdEJQaExveW1jSExFU1U3R3dIbmQ3OG04eHFNSXJ2alJ5VDBXMTVvNzktbUFNd1FnWkZJYmc0Ni15TjRfOXJQWm5Ra0szeHB5VHJMSFJPWk5vcFhndzlFeWxkNVBhNF9qM3N3M1FUa2R5dHhrUjNmX2JtYU5FWjhDOWJFQXBqZnVrZ3k5V1N0Q2JCZFJ6S3VJZzJQcndvZzhGQnZiTGVNTjJWZ21ucjVBSUcta1dxVW9NNTlHOFZMUGlPaWpMS2JMSE5UOGNkTm5aZlBKUXFtUFhxNFNHdmhocGxiZHNKRjRDcXo1MTNzNW9MLUF6V0dnZXBKRGc5alN1d3RuazdLNkFB0gGbA0FVX3lxTE44NFYyRV9QSklfYV8wX2ZTLXM3dUNESG9uVGtVel9oY0h5SVgzMzAtQ1IxSnptdTlDRmw5YjRxeEU3VmZ0LTZrTUNsMktZNmRQUmNJS0tpMXd5NFFCcU1tWE5JYmxTa29VaGRueUxKWlBycWl1cVZWSUxZOFpTSnlHM09ON3h4b3hkX0JRUVFyQ1lSTGZfZnUxQmVubmRVLTJXVGV4ZW01XzJDdWpiVkFVRFBmSUdob2U0dmlmRXRxZ3Yzbmt3RnQyODVfM3plaW1FdW9IZkxTZk85emtfMXVsaDc4WUJhbGJfcFRaelI1SDBFV2lETnJsaW92aTVZMjFKX2czNzJGQjBJTlRHVjFMSG1zSDZBVEZaUHloQ3FtUnVTV2dHcERiT2dpbTZPenFEeHkxQ01uc1BIZ3BSYURmbDJvM21uTkZ1M1c4YnBodFc5bW5BUFQxSDhjY25Lc2xFWndhTVYzRnlET2wwVEdTZjRXb19PZEY4UkEzU000ZTVaZEFVZkx2OTZEWW1BRU9WYW1YMHdabTVBNA?oc=5",
+      "outlet": "سكاي نيوز عربية",
+      "outletUrl": "https://www.skynewsarabia.com",
+      "published": "2026-11-02T17:01:33.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Houthis announce targeting of Dammam and Jazan airports",
+      "about": [
+        "YE",
+        "SA"
+      ]
+    },
+    {
+      "title": "هل ينهار الذهب إلى مستويات 3500 دولار بعد كسر حاجز الـ 4000؟ (قراءة فنية هامة)",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1YURVdXFkamdLVFR5TmM3d05hajloQmZLeXlSSU5lT2FBUFdRalRfcU9iM3Z1QWRXZmJZLUFSTDB1SFQxcHdnczU4Vk1qR2hPdi1tY0I4VElMbkl1UGxrZw?oc=5",
+      "outlet": "Investing.com",
+      "outletUrl": "https://sa.investing.com",
+      "published": "2026-11-02T11:52:52.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Will gold collapse to 3500 dollar levels after breaking the 4000 barrier? (Important technical reading)",
       "about": []
     },
     {
-      "title": "طرح القرن بـ36.3 مليار جنيه.. بنك القاهرة يدخل البورصة بأضخم صفقة فى تاريخ مصر",
-      "url": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxPU3JBenhldW9wZkdzbnc1UXZWbHFvMEJiUkZWSk9CTVFGQWxZR3NTTVBwUkZDWDZjR2JPQ0o1M2d6ZFNsT25PdVQxZGl6aERkNWV1LVNJNkNUbnNzYk1SbU5RSmRiUXBMcWQ1a1lZS2hfdHZ3bnFWT2E4Z3VRWmlEOHEzRy1Va190bHBFdDM2Rkh4YTQweUlhckk4SDM0dmNUbC1YcTZRSHV4NWdyVXpwTWhGbGdkM2stb0pQSVFQZy10c05uREM3cVp2YnBrT0VXTThkRU80d1Vud1VUX1h5TUJKdTJsNXFDZURFSEVxR3RvdnBTQXN3VnZOX1gyZXNsY1FYMHpNcDFydHFVOGp5LVR5dEJrVnl5a1FhYjJGUW9BYy1vTmdRVXptNHFzX3JMaVdMb2FNNGpkeE02QnpzbmJiMmFVdmNIeFNSRzdVRFJjbGFJOHhYOXhucVZqdTV6WlRIR00yUFl4cXZNX1YxME9rMW1rZVBVVlVPWjEtWUVDQnBxLTBlTlc3X1NDbmJSLUZ1MUlaY0RBcDExQm96d3RwaHZtQjBGQkE?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-02T08:10:00.000Z",
-      "outlets": 4,
+      "title": "شاهد مجانًا.. بث مباشر مباراة الزمالك ووادي دجلة الآن في كأس عاصمة مصر",
+      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNVHdjc3Y4QjJQanc4X1A2ZjVic1gzYU9HMDktd3ZvZGgxNm1RRWU4MkRXODd0NWFSREhhMnN2d01rOHNRMm9yRWI0dTc0TVBnTGZyWmRiMUExNFMwbVZLbzE4NVdHMVhQMXNsMlZTWGx6MC1hamdDbnhydmgtU0ZUNGhYek1OTWxtU3A0dDlGQ01VNFd5UEEzclo4U3A2S3R6OU1fRGdBWHo2UGNqZmxubnlMQWxWWWc4T3BZTVZCR3JsYnlCUEVRRk8yVUtPd2lJRllVaGltM1pteVJ3U25mUWhyVUpiXzY5Wnc0UDVWWnkwU2FJQzZJbmItUHBoeVluM1E0NDQ1YXRoVWNkaGl0QmdSUE0xTl9xX1YwZmdDNVl1VzBscGFXNDhNOWFiTktGUEFuUXFmOXhJSXladlE?oc=5",
+      "outlet": "365Scores",
+      "outletUrl": "https://www.365scores.com",
+      "published": "2026-11-02T13:36:19.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Offering of 36.3 billion pounds: Banque du Caire enters the stock exchange with the biggest deal in Egypt's history",
+      "en": "Watch free: live broadcast of the Zamalek vs Wadi Degla match now in the Cairo Cup",
       "about": [
         "EG"
+      ]
+    },
+    {
+      "title": "هجوم يشتبه أنه قرصنة إلكترونية يعطّل ثلاجات متاجر في سبع دول أوروبية",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA5V0FLQnhUaHJ4ZDRBblo4a0RWbURjNVNHQVQ2WFMycGJiMzJWTzNsdzczU0tFczNCOXVoVHh5YVJhZU5ieFEtWmZEVFM5TkkwU1pUN3VWeXYtME5mdkHSAWNBVV95cUxPdnl2UUd6bTdKbW5nbUh3Y2NncGpqSG15YmdRX2VYbHZ3TnhEM3VrZHhsay0waXFJTVhaSTBHRnBlTFFVVlZzRWZUZmxMNUxHUjNJWjJZZ0tJalFBWkJxVjl3UWc?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-11-02T14:56:41.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Suspected cyberattack disrupts store freezers in seven European countries",
+      "about": []
+    },
+    {
+      "title": "سعر كيلو الفراخ البيضاء الآن بعد الانخفاض الكبير.. أسعار الدواجن اليوم الإثنين 2-11-2026 بالأسواق والبورصة",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1MZlh0NFc2aXE1YjIwVmdEcWdVa0ktblZMZ2NJS2FLc3BhM2VSTGtLNXpqa01xbm9fbmRoN0k3eHlMS2UtdDdjdmlUbDJrbG8tTDJFUXNnUjNTdXhmcndv?oc=5",
+      "outlet": "المصري اليوم",
+      "outletUrl": "https://www.almasryalyoum.com",
+      "published": "2026-11-02T15:33:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Price of a kilo of white chicken now after the big drop... poultry prices today Monday 2-11-2026 in markets and stock exchange",
+      "about": [
+        "EG"
+      ]
+    },
+    {
+      "title": "بيزشكيان: صلاحيات من المرشد للتفاوض مع واشنطن",
+      "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPVHVPYmdmTWZLMDJzRnR2U2ZGcEd5eGRiN1Z6aW1KQ2pXNGN2SnZVXzRfdEZua21oXy1vMnRRSG9WOWNPWFdlaVNrZGx1UTRjZHVNc2JzUzMtVE96SGFXTjRhZTlsV21OZWxPYWtmdzRIeFZkQ1NmQllwNHRwNEFNYk1DbVlDSm92Y3VRc213c0ptRWRNOUxpTGtldTBMUHpHWG1wNXowc2xTcXYwSVlNLTRjX01VNTU4N3ZBSEVGN29VTlRXbldYYTRvaWlxWGRUUEFlZ01wUnRHcGR2VEF4bS1hTzhBYWtXUXc2clVNMzVTSnA4Y0lFRlJ6SXdXSmQzY1g1dHBnaF9NS3NEb2NsbW14RlZHdE11bk5nMnUzdFB1dzgtMGZKY0dZVmUxOVBGSzNPNkVKQnExX2EySnBibVZPVm1RZjZRYkZRNmNtRC1xUzdmN2t4dm9aRDBvYm1Ic0taUXVzRDJMY3FyUHB0dDdTZVLSAfoCQVVfeXFMT1VxcExha1RQUG5HcHF1YVBOWmI3Mm5oemRQR2VTMDd0SUpuRUJLalFhMXduNzRsWTEwWTZSNTUzajlCX1NyQnRTcGJEQkhESE5FaHhqVkpVVFFvdzFMdFhvY1Y1dHFPMDdCS1l1NVI1Z2FBU2Y4VW5Xbl9DbTNhV2NhQTBMUWdLbFpkLS02dzlRaHlxczNTNW9jOC1qd0I0b2VpMWxibjlJSnNmTGw4UldtanZjUE9uUzgxNDNsRnQ5TFlseDRIYzV6STZ4azZxZGdwR1d6NlNvdjBOaGtLejhwaUlZd3dzamoxaTRoVldqNFNyMW1yaG1ONUhnc0FOTmhYSW9pRUdlOFNZTmk0OE9UYTQwenk5S28wZU1aaWNoWllsMkFyTHhxeU5WWFVabTlsUk51RVVfZy1GUTI4SkZ6RUFxeFBOOVpjZmNyaEptSE54U3NyQVBHYXdLbWJRSDk3cG1GenliQ0JMT0t3VzVoTHZYR0RtR21R?oc=5",
+      "outlet": "سكاي نيوز عربية",
+      "outletUrl": "https://www.skynewsarabia.com",
+      "published": "2026-11-02T14:34:34.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Pezeshkian: Powers from the leader to negotiate with Washington",
+      "about": [
+        "IR",
+        "US"
       ]
     },
     {
@@ -91,12 +305,49 @@
       "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxNTDZqSzdBMHN2dWxUV2p1bWNuOU5IYnRlVGU1Vm12SDBnclA1aUthcERVbkE3OWcwanRDOGtMMGNnVHVSVU1pcndpZ0dyLWRGaVFUZHpYdS1tMjZjdjJqb2FGTjVYSlR0TG8xdHFHQ3R6MGo2ME9GVUxwdUlINGFSWFhGR3JJbW1jbmg5OGJibnZwWjIzbzljdkpOQWpMdnVBb2JPbWlWeUtoMnZnZnY3S0V2NTE1cDVXVmZjWU1OR3plT0tXOUJSZ29SWVRfa0lrRmpZWUtSZHd4czBUdmRMZ1NzdzVYWjQwcEJMVzRSa3B5TEhITEo0c3JuSVY2aGZsUmNWdFZvbGFnNGtfdFNRbDlhc2VSQndTbFFpNVFUem5KLW83VmZ0cWNybE5uU3BVMUplSlllZ3Z2Z2Z5ZzFUQXNib09zTndpalQteUhwV3FFc0ZDdjdzcS1RaVYxbk5MWXptS1BoS2MxZTU3VnM3MzlOSHVWeE1ydFdZUHR0RktZZGpIeWVVWllWUmY3Yno2d1RMTlY3WGpES2xFZ0ROa3B3clo0LTE1LTFZaHdmazDSAbYDQVVfeXFMTzdwTXhJaVB4LUxRaThzb0ZGdGRTdmJZeGd3LWZGVFJrS3FOcmNYNXZ1YTRzYWM3aElMN2UzbTNSdE1OZDhsdWpzOUctWFdjdXU3QlRPU3hadm1fajJZN1Y2VGY5OVFfR0dFa2tRaVQ1Vk5RdFJtUVB4R0x3MnN4LXRLcWlDR3ZVd2FBWlNhRkVMMDJyOFZnaDdFSEh6YkVRS3pvTlJFYmJndDVveHgycTNpMXcyY2kyajRoSmJyTEZkZW1Gc0lVSmJpMHFSMmxtLVdvRTZESkltazN6YTNJNEJ6c3ZzOUhSWXdONklJU28yQk00NzB2VnRvOU9SNjRlZzZXV1JmcDQ2UUlZMDlaVGhOTVNpUTZoSG51RTVReFhUWV9xSlJ4VFNqRHpuNkVYaFRfa3VCb216QmluTWI3OXh1QmxYSnJicmhGQlJrdGRpVVo5YUtfbUFUY2NScHNCeGJNUWx3UzdWTjE3X1BjZ1JYcEk5dkxXdl9USkRocnIwYW1YLTNNMGQtNS04cEpjTmdwRWR2bnBwLWNISDZPV2hVZFp4aU12QXp2dlVXdDRDS3lUZFhn?oc=5",
       "outlet": "سكاي نيوز عربية",
       "outletUrl": "https://www.skynewsarabia.com",
-      "published": "2026-11-02T04:34:36.000Z",
-      "outlets": 4,
+      "published": "2026-11-02T05:02:25.000Z",
+      "outlets": 5,
       "trending": false,
       "en": "Heavy clashes and intense Israeli gunfire in Khan Younis",
       "about": [
         "PS"
+      ]
+    },
+    {
+      "title": "السياحة تلغي تسهيلات دخول رعايا 3 دول إلى مصر وتقر ضوابط جديدة",
+      "url": "https://news.google.com/rss/articles/CBMilgRBVV95cUxNZTZGenNHUWZVclJwa1FqTV8tZTczYXhwQ1lJNWVnSUlIazBUZ3ltb19mWmhLNGNLX01SQm9Mc3J0QnRVVU9BV3A4SDZNM3FEWGEzV0VUa0dVQWRxcmRreG56SjRlRUNVSzRlbzFDSzdXZ0ZPbGNZcXNVX1VDRXlmLUt1VmxZeXV4dmZIaWQ1VW4wNmZkM21raHUwbThjU3lBb2RmLUV0Z2FwTzRsYlVRNWFlOGxSZUh4VWc5MEFuWE9fdEprZmpGQjJvU1JSaGRXU0hJRDJkRGJBVi15T0ZMeWtrN2sweFRfS3o3UUNpdWt2dWNxdk16QmgtV3MwejJya00wbzUtRFNqQUlmNThaT3BXTEJVREI0ZDVVN0YzV3ZZMGE2VkFoOVhSSTVEU0E1VHpsRnJqT0JrWjc5TzJLcEx2cjBIb29HNXlabDZiX21rc2drT1pkRlVzSGVyVXZMMzhGbElwanUxejdOSEg1eENBMHZWV3FBVXNCR1Z1TEJfdW1iTG9mTy1WWDI4Z2kyRW1sZm9MTFdHcVpEV3dKdEc2Q01NQUREMGtLWjFrUnBoVDBQOGhIY0h0WnRKTHNWRFJJbnVNWEZxU3NlbVFLOVNXdy00SGs1aXlTd3F1WW4yZThGT3BwbmNtT20yTHVwbzFQNzRDTlFGUTdCVUxldlBEc1pJTFB6Z0xEeUxZeTNGcFUxTVHSAZsEQVVfeXFMT29JcFpzVkpBOUlKS3RFRjVvUEthY3kwazVmbjlzdi11N2p4OGcySWRNamRfMDVINmRDN2d3MHZUUV9oWi1WV3pOVkpndTd1U2xEVUdlY0NXWWJKWWM0aDJscThpNHhFS1p6TkFZZlV6NWVXeVJlZVNHbGZiU2tDTE5hMnNFSG91VnE3aWVQN0NwTExRWkZXVlFIOWduY2ltRzBjcEFYaFJZQzZEZmxLQm5EeWhRNDNKY2Ruem5HTG9FYzBTc3hnUzFYMHZhcDA1cFVnSm00NDBHenZ1ekxYWVlzUDV2dHZ5OW1Oc2dJdW16U2NNNXRocF80MDhSYlBINlpfNEJidHZKTC1zWUEtU3NYY3pBYXlfV2FyYnFHc0VQeURuaVRuRGVuV2JSM3BkeG9nZk9IWDhVNFprOENMWjZiWVpTZy1oV2F6Y3VnSlpsR0VGMkhTZ0dpVDN1MnhhUl9iMjZNQUkyUS1MbVVIeGF1X0tob29XVkM0azRJQ0Z1SGNJYmlKTWhyTUQ5X3doR1RIZ1JXWmxWZGtmT0l3akYyeXFuWlhYWnhBcmJJeGF4X1VEN1NQOXB1S25zSkZtTDkxS2hFa05LQmtjUFpoRDltaTBwOFEzTmJiU1VTTHo2cnRhRG1VZEhDMW9lSnNyaHcxQ1lsd2tlb2dsREtxd2IyMk5ESXdLY3hnX3pPOXBLME0wdXZXRW9iMm8?oc=5",
+      "outlet": "Masrawy",
+      "outletUrl": "https://www.masrawy.com",
+      "published": "2026-11-02T14:18:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Tourism cancels entry facilitations for citizens of 3 countries to Egypt and approves new controls",
+      "about": [
+        "EG"
+      ]
+    },
+    {
+      "title": "العلاج المعجزة.. سر خفي في دواء للسكري يحمي الملايين",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vVE1BSVFIMDQtT0gyWGszakZkSWNJdmRMSGVwUUlzdWdsTzZSUVR4Q3IyeUg3Z3JQaVc1LWh3bGVPMVlEeG1sTjZIUmlWXzBBOXppems1ZU03eEk?oc=5",
+      "outlet": "البيان",
+      "outletUrl": "https://www.albayan.ae",
+      "published": "2026-11-02T10:25:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Miracle treatment: a hidden secret in a diabetes drug that protects millions",
+      "about": []
+    },
+    {
+      "title": "مش كل المحلات بتقفل فى نفس الوقت.. قائمة الأنشطة المستثناة من الغلق الشتوى",
+      "url": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxPeVZhMDVDX3pZVWdOWUtmZWw4cmo4TlMyelBMd2ZfLXprMk9HRndWSlQ5OUhuXzZ5dHFYMXRkSEVLWlBYcTRKZHVVNmdZREdnUzhaYVl6UWwtM2dDV2NPRk1hT21nZnBRRzI0Y0xXY25ENk10Zy1Zd1pxS3c3RHpNY3A2SGZzb3N1Qmt1ejZrZnh0dDZLTUpSREZEMXJ3REdSOVBUYUZjck5CZl85bHowU2t5ZkZTYzdhT2NyMU9NQnlidlBTUjFvenV2ZEJ5bHN5SzJRYzhXWmRqd3FsMEF3OWM1UnRFTTY2SzhFenpxbmpHcFVLUlYtV0dVejUyNW5XUEl4Mk80TTRxamUzeGNOOEtNTHptbEJEN0pibVlVNlN0ajVzZDNIQy0zR2FGcHlYOTRuYXZma0hwUjdpRzk0OTJjVmZUSDNGRF9uckZWbHB5NnVqaEJLRjVqVlFiSVFCbFh2U19CS2JISk1DdXg5cm9RN3owVDFVNk55QXpYRTl4V3BSLVZfRGo1VG5VVjE0MzhFVkItMWJ0VGliVGhMNTVWdU1oXzZMYlhnYXVhWEpsU0NZVkdxTF9vekl0YXZ0MmdnR0p0cThzR19kN3ZpMTI3LWtqbTlwYjBBU1ZB0gHYA0FVX3lxTE04Ql9tVlpyOC1UQTg0TTB3Q1d5eXhrcDJob1pGak9EZGhoMXB1S0wwOFpFSjBmcnJETHZmUm9xT0hmTDlDdnF4SlN1RUpxc05jem9mMTBqdzdhdmxiaWFZOTBLdzlfeC1iUmR5UlNNZ0pRX1hCeDBuZHh3US1uTFRiT2oyTWROMmZVYTI4NXNBYXo2cFl4VTZNRGpoSjF6OWR6T3ZPYnNKTENGNzNhVWs2NUhyLWNJbjRhQkdXODlkMHFfMHJCRE5XXzh1bVlTZVlSNXZpeTBrV0hQeWhiZGZaMDl6eXV5WmFwTTlsTXkzN0hEZDhseFBxNnZGOXdQSWJhWnp6d2dScC1WWlcwMDZ4MnNUV2FFLW56ay1oejNON09NckxfU2F0cTdZcXNhTXlhZWhBWjBIb0hXWGNrTkd4S042MVJ5SnBfN0NyOUdwMEtmTmpMUTc0SjJ0NUNUT2I4Z1dXblphRjNmMkJyOEpvREEwOG1qMkFaNHFfV01MU2FSWml2b3ZYdVluU1ZoVHd5MkludHhiMmtuQnFveWMyalNrT1VxWVFxNmhna2trenZKSHhURlp3SVkxZGl5NVphRkI1d1J4RjdNMGVPNmFFZEVrU3l2TjU?oc=5",
+      "outlet": "اليوم السابع",
+      "outletUrl": "https://www.youm7.com",
+      "published": "2026-11-02T14:00:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Not all shops close at the same time... list of activities exempt from winter closing",
+      "about": [
+        "EG"
       ]
     },
     {
@@ -113,296 +364,45 @@
       ]
     },
     {
-      "title": "\"بيت الأحلام طلع مش بيتي\".. سيدة مصرية تشعل التواصل",
-      "url": "https://news.google.com/rss/articles/CBMijgRBVV95cUxNUmlCdlVYeUhzVVZJd0dYaGV5eDFES2NieU5WOGpGeEIwLTJpWVV2QmJFSklWX2xvMV9lNDh6bkRQV1l4aGxWRjJIenBHTk1DcVFBMmplMzNvYVpVdkloeFVUTmY0alJlb3Q1bFlWcTMwM0Iza3VSb096NXBUYUk3YVQ2eDc5NEJYTG9XV1R3blpVNVY1QnYxSEpqRG1aS0xRYldqbl9zOGpnRDYxNzJRN2RMOFJEQjBBRDZHLXlnemRCaTRfcy1nYmxWU05pb1ZtVTh5akRoTVhWTHFGNWQ0QmI5RU5HS0s3YzdvcjJBelkzRFg5Nlh5ZmtpVkxXREd6U3ptNm1oa0ZPaTMxUU1FVkFpTE4tUGV4VmNvcTltOG9xQ0NaMmtKSmFkbU45c1BUQnJxLS1XMllDQkFucnJ5N1BwTkdJUmlVRUY1OXhsdERTNFlIWEtnWlFJNTJWLUJnNVU5cnZFdTdmR09TTHdxOXhZWks3cWotNkpraWJtNHlLREdjemJJYk9IWkVSVFJFTExwcVc4QlZabUFGWGo4SlAyUWxMVzR4cVd1d2tzVFp0a1VKZUttTm9EVkFsSWhTRzdvcmRaUnQ2UFBUY05NalEtWVlTVkJubmpkSFRMTExKT1BXQVVzNzlzMjVEeThsb3JibGNMV2hzckh4QXN2dUdLbkluUm9JX1pQb0FB0gGTBEFVX3lxTE1QejJpeV9ib1puRWZvdEl0NHhCaHBpZjR3ZXF1Y3ROU2tfYjBONEZIa0NydlhVNmt6TmRkNXYxa0pZTXA4aGFybHQwRG5RQ0NqWE9Lc0QwNXNRZW12RENLb2ppNXYxdndpbU9OMWgzX19rckk5MUZCN0xQejVaSnJVai14NjkyUzg0TU4yN0Q0aDYzd3VCVTlrMkdCR3RfTVg5bUpRNnI2aFN0aVZOTlRqMTQ5YUVSRUg2cVNaQnNqMnlpNzVRbzc3SG1sbGxINkxNTzR3VlA4WjJRbXNEMTJ4aEh1SF9aZGpHWDF5WGtBN3VFVnUycGVHZDhOVXFQcVFMQTZHb0V1TnE2OHgxSkJvLVlsRThKVjBtOENpTXBxNHlmRVczUTFEUmxqejB4WGRxNkp6LUtMN1dFTlNTN1ZSd0xUZ050Qk1TYjRsV2ozY3NXdkpkNEFMdWplZVFfMjRucmlDcldWV0RER1gzQkRSQWJhODhMXzhxMkMxZWtwNUNobDJzbm5TZFg0dWxjTGFDS3VwLTkyZEpuUGxGbFEtVEs2LWNBS0M5b2ZFVmtZNTZGd3hxa2paa0dON0ZUcklHamlET2xrWE1ER3F1RWs1c2cxYTJOTGY4T0NsWlZUTU1ocWNESG1sYWNjWUVPWThTZ19wNW5SWXNSS0FfamVXdnRoM1hVRzNuaGZfUEl0MUM0UQ?oc=5",
-      "outlet": "العربية",
-      "outletUrl": "https://www.alarabiya.net",
-      "published": "2026-11-02T07:17:16.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"The dream house turned out not to be my house\": Egyptian woman sets social media ablaze",
-      "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "حقيبة سفر بداخلها جثة \"ضحى\".. كيف قُتلت فتاة الدار بالإسكندرية؟",
-      "url": "https://news.google.com/rss/articles/CBMigwRBVV95cUxOTmFqZU00a19NM0hRbWxYRGtnUkNDTUE3S0VSWHdjdEx2OGszTDc0bDZTcEFwaERYbVRJNmJWcWZpYUdub0FVYi1YVXpKb250N1FSVGs2SUt6Z291RE8xYXRUWFVaLXFqRExEdk1hZUNUUUpWZ0FYSnFYZmw5eGgtMC1QVU9ON0VRRVZOOXA0eGRtZHB0bUdtaXFpSWhUbklwNGhudDVCNk1YcnpmMVliTjNuNWllLURYMm16bUJvN01XNV9BSFN1S1F2d0g2bXZBNnNQSXVCU0lTMlBkTTJwbkh2Qkg0d0hCRUJhS2ZHLWpVUkZMZDduLVdJT2hfZ0FJWC1zN2oxZlNYQ1J4TkdNNkxsWDZqS29SVmp5LXZvSkRyRFdQWHVta3Y4cFA1SFZISWdnVHhwc2x5eXhVNWlGQWNSMFZQaG1KdnU2MEFDV2FvWE1wbThKenFmU2x6US02UXdtR1VzdVNySzJub1JOeTJyMFl6LVYtX1N3MG9NVlJBd3NzUWdSTmxyRWtlYk1CMHEyd3IzaE1XYlhSc21CdkQydmx4WG1OWHNjMlhLY1JfSFVaN0NGcDRaakk3SFVVc3FURkw3WTBjZTVBUGFOUTBpU1QySnR1WlZtY2RDNXF4amEwOWQybWl4Q3JweUxXVTVseEh3cF92TjYzNXB4SG9Gd9IBiARBVV95cUxORFB4WExKX1NZQ1VYSUFfQ09xTHJWTENxVXRoTkdDSlctMGFjeUMxemM4Um9hRnVUR2lUR3plZVpucmJIZTI4YndhV1NkQkxJNkV0dGpmUnRONy1sY0QwRU1QRlZkZ1NXY2JUNzhzZHJIY28yU1BEZXhlSVRRWGpRcjFIQlBSMlBPajBiZDZyczJjMng2b3QtUHFBR0o0a25ndHhsNEdhNlN1bXd1UkdIODRJeTJ1UjdKQmNZR0tVbWp1a0xWemtVX3BXMlNMUTFiY1NfT0t1TzhqMmVaU1FWUWdvU3BjWFdZM2JIb0pTcGVFbnNvVVI3Tm0yNlBGUlNqSlZWdG1vdng5N3JkY0VIZVljVnRvX25EOWdROHNFNjZwZG1tMXVIdXQwc3dMcDN6bFp4QVY1N0syTEp1NkFLSkw3UHVReDJXbGl0YnZNVUpOSGlwcWdvOEg1dDhXXzdDc0hjYVNIWnYxQlUya3VjTzZoTjBabzlacjVDM0xTUlZGcEVwb0g2MW05X3R6eUtLYllOZ0ljbVQ1WHJ5aWRMcDlDekI0UXFrRldjbktVdkVhT3M5SnZQeUNLT29XR3p2MXc5QWYweUw0bmJna2J2LS1NWmFxcGZJY1ZPbGxscE5KbDFJcExkbGNiMHV6TUJUeEpuVWQyREpXZWRpQ2tqaUhMZ0JscFlp?oc=5",
+      "title": "روسيا تحذر أمريكا وإسرائيل من استئناف ضرب إيران: فكروا في العواقب",
+      "url": "https://news.google.com/rss/articles/CBMivARBVV95cUxPRkQxaGtmeGhXQzBFYktZZTVRVy1vN1BkQ2VoME50NF96OHRTS0MyVzdTWUJFcGJXRmQzd0J3djkyWExlWHFhNnFhcXRndmdHTWIySE1BTF9aOUUyWmJMYVJ6aWFvS2EyWWZyWnEtQWpQVWQxQXV5cGJvMDlIT01NX3Zod2swUGdzSnJHTFVyQUZabDZyZVhUanN0MHZ6X1pUN2lTeHd5c2JnZGV1ajNXNkI5bTFsMkpETEFkVTRmaktONlN6RklSbjktVmpUSzFtaWtBU0xmVl9WZUNPMUl6X0E0a3JZVGlWX05QLTZQLVM0THRVOHNhbkstX0lQNnIyTWhWZzFZdkpUVTg2R1ktaVZlRDhhbzNBQTJRcUxqeGdtNEgyS000dm90WVpqNDBJVGQtYkk4cGV0dWFScU4wLXJUMklXZ0R3SGVrZkdTZW9nanduVVVlMkZ4aTdOUHNJWUNQYk1Fako0Q0lOWWFyNk5SOWtoZHhrV0Z6WUhlSTVJdU4zcEw2NGFRSkttcVcyeEp1aDN2eVEwdUFlNHpsemRrRFhXS1BRajZXY1VVcmFFRzhMbF9DblFrZXIwc2V4X2NXZ2tfTnBmOURlM0RUN1ZHd2dSd2VDdmNEUkh2OExOdFNIdEd4MlhaYlIzX0FZVHJVMVc1SzZxZThEcWRmdU9ESThvOUZmUF9VM1RCd1p3SHRCa0dMaVZ5MG4xV2FrUTB2d0ZESmlJeTVHRHVxWFdaWU1PTnJjd2NIUNIBwgRBVV95cUxOZFJGMlN1aW8tOVoxMEpiQ0pTRUhkNEM4b0dJcE9TOEttRjkta1JIdFc0ZnRmOWw1VENIb0cyWWZCYlhVa1Z0TU4tMHFnY2FsMDVwRDljRzc2ejdxaXhaVkFDMDJCQ0VuMGNMUnZQYzZUVDUzU0lYdHBpalpoQXZobEliMnJZeHpKd2pvalpLWTgxS0d2MU93TkdWOEpNaUlUY0dSOWJsUUh3Ym5IWWNGV1NVcnZNdzVWLTk3ZUFhaEZkeHE2YnFSenIzN3lUUmJkQW00WGFvbk80YTFUQV9XTHFZamdCSTduUFFxX0tzN1RFSTVFeVFybGVJVW1rR0dsMTFFTGcwLXVhVWNiVXNvME91ZzhFVVFaTFF5d0xKRTZkclRRWGFUZTRuQ3FSSklNcW9wWkk0QVU2clo3MmV2QzZIUF9GcFd6Sjh1SVJTSnh3aGlzaWlNTUFzMDZZMGVWZGVxTlpNeXVYVWZzVjgwbGhlb3dxelpFYXVLQTR1bzU5YU1fdzBUNldTLTByVm4yWG8tRjBhVnJUTFRKWXlpelh6SlhuaEJQWTV6bVJMd2xrRGFEcGp3TDZXV25TOWZoR2hJTW8wZGRyQi1EZWFHd0xOVlVObkU5VXpTVXhSeVRvTmVwSVl0b2w3NWJqa1lrRkRUaS1qX3NyajB5dG55aEI0dnB1OWZ2TEZSc1VPRW12eFZjNzRIVURjUmNMOThSbEd4MU9HT2F4U2ZZRUhPV09Tc0htVzRxMGNPZ2JBWkl2UQ?oc=5",
       "outlet": "Masrawy",
       "outletUrl": "https://www.masrawy.com",
-      "published": "2026-11-02T06:40:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Suitcase containing the body of \"Doha\": how was the maid girl killed in Alexandria?",
-      "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "«جهزوا الكمامات».. تحذير عاجل بشأن حالة الطقس غدا الاثنين",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE40NGdFRllOaktvdF9oMkxucTVHcURhX1Uwczd2eGluOERQd25IbHRmUHdNQktxaWREYjRKMld3ZDdlcExTdjdDdjNvR2JlZW9Dd1p5YUs3N1Z3T2xUM3Zr?oc=5",
-      "outlet": "المصري اليوم",
-      "outletUrl": "https://www.almasryalyoum.com",
-      "published": "2026-11-01T17:02:00.000Z",
+      "published": "2026-11-02T13:43:54.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "\"Get the masks ready\": urgent warning about weather conditions tomorrow, Monday",
+      "en": "Russia warns America and Israel against resuming strikes on Iran: think about the consequences",
       "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "مصر.. مقتل لاعب كرة قدم طعنًا أمام منزله",
-      "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxNUnZ1eEhWNm9jNmFVQk4tTUNuY0ROTHVTejVOSnYwWVJsYm1scXVVTjc5Vy1nS3hXaHcyWnRqZ2hmeVluRjhfWjFEMXI3R2lMc2xpUVFmS2gzaWNnR2ZKdGx2dURUMzVZSlpTRkc2SnNGMXJzYVhzSGxsNVhGOEtaZU1LLWl1WGgzdzZpdk1hTFctT3gtTUJrZkV2MTlYSG1QcWR2aXlfOEZKT0Y3ZzVVYmQwcDFHZFZPc0oyd0RSV2RiNkphYWs1cGNsWHkyUHlsTE54ajhpZE95OFdfUm5HZEFueVFfM29GY25SOVMwVkRMdjRMVXFKX252ZmVhRDF6eHR0SFRqX25FNThsUmpnUExWajc5dHFjNVBvaVJjazVnZ3ZZbjFCdFJwQjUwQjBBZ0lzY1FadWF6VWVWY2wyNEQ4d3drRmhuVkFGR0huVlhXZTIxNHY2Zm83VlNtM01udklndNIB6gJBVV95cUxNVzctb0tkRmZiMlhmSE5mQTR6bERReXhEQXVUS0R4VjJ2LVQ2aWpUNjNCRmRTY2FhUnlxaEctOU9zMVVSbDlaWkdscVIzWW5PVVBtd1NFQXZNeUhDODVZRUpXZm9qREozcWMxblNNbTVsZENVT1lEZjJMcDBPaUdlUjhOZnZUWktKYUViS2NBRVBFWW04ZENteVVvVllWUTh5UmphbzdjUkVNaFVJUVhsUFdzX1pTYVo5ZWh3bmNPdzZFY3ZycFhHS3JxYXhwenhXSnBWVkdMa2REUld2ZjBsNlc5TzFsTFNnNFRsZEtkXzZrSHBCajhjRlZpVzBQQllnU0lmanFlaWc4SnBjMkI4UFAyeDFSdEE5blp5YUVma0tOVXNqSm5qcm5CbVZrUExkaTNUdVpSdjFtRHZ0N0pVNk0zQnhiNVZvMHhpUUdkYmFpRTVwQzF2bmdyclVVa0N0TFBJc3oxZTlwQQ?oc=5",
-      "outlet": "العربية",
-      "outletUrl": "https://www.alarabiya.net",
-      "published": "2026-11-01T22:24:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Egypt: football player stabbed to death in front of his home",
-      "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "معارك \"فجر اليمن\" تدخل شهرها الثاني.. مواجهات في عدة جبهات",
-      "url": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxQb2k3WkZBV0RoaExWaTViSWtTcEV4T2xMWk40NjFGUlBJYzRrQ3NuN0U2ei1LM0NaNzVvZ3lFX0dnZ1lBQ25QNzVqV0JET0xmYThyZEJYSHRfS19lQW1RSUV5LWh2MGlzRzJfYi04bDBRYlREcUw4VG5pTUZMNUpGd3FHX1hwWm1pbXFkSC1BMV9jS0szUjdVRldPNEgwNktXMHZZU1hGVHBxcmFjdUxNLVpUX1g1YTVPZmVNaHZISEdGSmVsX3JFdnZyX2FWSkdkVEJLVDNTWWhwc3NqLWdMSVRtd0d0UU1FUWNXVEJaclphZTh0bkpaQndudXljckx5bnh1ZTAwckhfYmdTekM4QlJUZ0Z4bkJHSjBUbGVyQTU2MzhtdjhNczFOQ0plb1RxbEVDemtja3BZNHpfSFludEVwX1ZRZWpkTGxkYlpiazVudzJrZVBhSlFoM2VhYm5xTGVPdEhvRWhJbm5BYy10S3ZfVzBWcVFiOW9qVHNINDRnNHVXWGNJUEZUV2Y4NGtOVEV1TmZkbVpZbWRWQVpxc3NtZUF6ZjRUbC1YZVdKaE1zeHFMa3RzaEduVTNlLWt1NVduaU84a09uZkhwTnVvblc2VWRmS3FpTGo3Y0pR?oc=5",
-      "outlet": "العربية",
-      "outletUrl": "https://www.alarabiya.net",
-      "published": "2026-11-02T06:16:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Battles of \"Fajr Yemen\" enter their second month, with clashes on several fronts",
-      "about": [
-        "YE"
-      ]
-    },
-    {
-      "title": "\"التحالف\" يعلن تنفيذ عملية عسكرية \"نوعية\" ضد الحوثيين في اليمن",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSk5UTllBa1JCWjhmeVdJMzItQjN6OG5JdEhkOFBlZ0s0UldsRVFzSkQ1eTRHZTF0bEI1NGRFQS1rSWtxdTVsM0hhRGk5YTZrblRfeG5MV0hSZEUyWmZ3LUJpREpSaFlIYmVjbUMwTnBfemk5X2ZXVWJ1bm1EenFPaHN3UlZhSW5iRi1yZVZiRVJSUEdKd01jcTBxTkZGSDRXRUo5Rkg2SGRfOHRKcWs0TmE2OFk0WW41?oc=5",
-      "outlet": "CNN Arabic",
-      "outletUrl": "https://arabic.cnn.com",
-      "published": "2026-11-01T14:22:40.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Coalition announces carrying out a \"qualitative\" military operation against the Houthis in Yemen",
-      "about": [
-        "YE"
-      ]
-    },
-    {
-      "title": "تأهب في إسرائيل.. وإنذار مسبق من واشنطن قبل ضرب إيران",
-      "url": "https://news.google.com/rss/articles/CBMivgNBVV95cUxNaFczV2lKLVdHWFFVa0JSSTBSam5XZDMtUXYyZGRub2t1UFNndFJHWVNuVEhPbHJjenlvUjZFREREQTdFUkl5ZHRmOWczdzBFX0pJUU8yblpWaUgzMWw5N1hxM1N2ZmJ1aUtDbDFEOFNuRDVnLWc4MWF2X3h1ajhjVF9sMGY5aUFMbXhzQUNkQ1ZySm5mc2QyZDVsbXdnZ1NvSFoxWnlVTzRPb1ZKcEZSbW1rOFo2cG9lbGlNX2dvdUFKRW9PQ1ZidXd2YTg1WURrdHExd25tSk0wUTRKeV9wcVBqNGROV3hkblRiV25CTjFFdkZJcHNGWXRraEFXZmlidm13WC1XZklBaHBBaHRjMmpIdDA0VEZPWTZSY2VGWnVHSTFpRUxfR2lsWGwyTWN4WHpIenBqWm1sSGZtOXpiOURKa2R0SEVrXy1jbG1hYTFnblNOT3ZRNjAxekNHN2RrRWlDc2p1MmVGVGpDeDMyM1ltc3A2ZzRyeEZiSXQwYXROQm95MXA4elVZSlM5Unc1Q2hFVXlwaFVDZVVwLWRtQ2Y0cUtJeGpzOWkwMlFOeDdNRUdmTnlhSnhWZlVhUdIBwwNBVV95cUxNc29BcWE5WWdiWFh2YVAweVJVemJod2RyaktvbnlZS3BIN3JqSHJjeElLNGEzUnUwYWoyeWNYaUY4UDdOdmw2U3V2cGxadTlsWXRxTXlRSFQxZ0MxYXEyaXY3VWJZYkFaMjJTMGxEYm1sSFdkdC1HRnV3ZndjRmdsalhYU29pbTEzbkVGRzV0WnJuanlITHN3XzB0WFBWTkRRWTBQbnl2Q1BZWGl0bDlTSWFJUTFoTVVObS1VZ1RJMVgxY3RKcXB5bHkxMDdNQ1FTSkhuRkVmZE9DdVJZazlkOUxpYWtVLUZsa1paQkR2OVg3emEtZ0RfRTFBMm1QYXRWSzZOMVN1UnFncXZzeklDdzZ4d3ctaF9oS3RZT3NHVlU0NVpZY0JjRjhyd2xPbEZ0MkRKbDhDSGhtMlg2dXJMbEVnYTdGQm1PZkc1U0EyRHFjU21sbDdUbjNRSC0tc3loeUFsN1V5VGZqdlpTWEhuSlBuVFcyTVg4aFRVRGMzUUNQN0dzTnkxcWJiSVZ0TGdWNkEzU01hUTlwbVBfaldlUXV6Y2FWZkQtSk15anFzNWl3blUxV3NMS24xcWVWX1ZtTkxz?oc=5",
-      "outlet": "العربية",
-      "outletUrl": "https://www.alarabiya.net",
-      "published": "2026-11-02T04:33:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Israel on alert, and advance warning from Washington before striking Iran",
-      "about": [
-        "IL",
-        "IR",
-        "US"
-      ]
-    },
-    {
-      "title": "موعد مباراة الأهلي والمقاولون العرب اليوم فى كأس عاصمة مصر",
-      "url": "https://news.google.com/rss/articles/CBMi7gNBVV95cUxPWnlxYXhGQ25ZNjZuNDBzRjE3TmJBODFmR0JEbk1mSkJ5YVMxN2FWOU1iRWFWem9fZlpsOU5wUEc5SHk4OE9LT0pRakZHdnpVRFBLdDFHNXl2UGJLdHBGWlFVbFJZR3BER3ZkX3NWc09fazNKX21vWjZkZ01DbEZMakIxQzRUNW5nNi1tdzE4N2hqTzFfdDlFcE96TW9jVnM4QndRNHlncFAxdURYQWxOZDZCZUdQeUtQd3E2MG1fN0U1SlZsSVFtajZGSVV1Q01URlIxX1didml3YnlHN2UzaGhXaC1LOEtlajZPcndrak5wcHo0NTJsekxqakdTRnJUMWVuTDJFSlh0OWNJcVRkbE9VaW1hbXBoRGx6Sm9DTUJtTFVOZ2tHUERjc1htV2oyZWpzbkpxeUU5RTlXNE9OMUVPQVpVMy12WlZWMDAxNEhyZFpSSnJjeVg0d0ZweXlZVWsta2ZtVkZ5TGhEWDBjV1BKVzREY2stTVNsOTd2SkEwOGFwaHg5TXBZb0gtRF9MUTBYbncwZmpnWGZyQ3htNnkyWjJKRld4YW91dmpUVlVzV0xVVzlScnVOaGNhWFVsSS1sWS1CTW1pd25qMFRvZF9PMzFnczZ2aUZ6cXhGUHk1T3lhVUdyVDFJa3FqZ9IB6ANBVV95cUxOUGJPM3NNQjNuTzF6ckdET0JYYUpqV3F2bGZDQy1HLWtCVnhiaV8wdi0wamZPU1NnTUxBN1kwMHZMNzFMelpOUUM0YkUyTmJkZnlmYVZ5cV9Ib3ZvTlY5M1RncW5PQmhIV1Bnay16NDh0WG96QXpNYjVWUkZRWDdhUm5uNjdYR0JhOHBSZkJCeXEzSTR1ajdSMThxczA1U252bldPRFpoSnpsdnQ1eU45MF8yaENfdGIyS3Q2a1phUE92UXN3SmxfVFlIRloySmhRbjlBTUp0NklGd29hOHc2TG5SVm5FS3ZhaDlLV1VPZmwyNTdDeXhkeXBQaWZmN1ZjNE1VQS04RHBkZl9leWVOeEdDZDNfSXVIVEphd2VfYjlXS0FYdzdiQW5CWmEtSGZIeW1qa0F3Vm55am9JaVM2VmZLcTl2bExhb0txY2FwaGJ6b1FMZXNYb3owU1ZMWU1XQ0lqM0VmaG9ESkxCOWk2Q1Y0UDJHeWY2emdvbGdOYjRhZDVGV0tNSVFnV2dCSnU1SHdfVy1zSW5GQmo0T2EyOThfZk1nT0xPbURWdTV5S3ZkMmp5aGp3bDF2TmYxWUpyTGRfZ1MtT3lDWkVydVpKbnNIcXdYZTYtQmxYXzE2SmoycW9ZSnFiVw?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-02T01:00:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Time of the Al Ahly vs Al Mokawloon Al Arab match today in the Cairo Capital Cup",
-      "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "بعد قليل.. المتحف المصرى الكبير يشهد إطلاق تجربة «الشمس الأبدية» تزامنا مع ذكرى افتتاحه",
-      "url": "https://news.google.com/rss/articles/CBMijgRBVV95cUxQTHNDRFJrRkRzRlhQcWRtNmVrSHdhNEpRakRIYUVwMi1xX0ZtbFFfUVlyenkwQnlLTkFCc2tsYTBjSkptMjZDVEYwbHBLb1JUUWljdGJHSjAyTFYxU0ptN2xwb01YUGVnMUxQV3NfcEVLRlpZaFlFNFJaM2JNU1lnR05OTWU1N2QwRmdZSUl4SEdVTTdSamJ3TE5Jd1Zxb3BpNklFc1d4NWphM3NGZ0Y3cVdOck5mUzdGQkRoM042dEl0TkZjc3FsUmlyMzdHM19YaFU4ajZmTjV5dm9xS3RRRXEyOUhSQTFPSnpiVzRZZXVCakoyX0FYdW9YSC01VEdfZkt6bEV0T1Q2M3lSVmtjN2pfckJGcW9INW5GLUxDTVZtZlNRRVFIcnlLWE5FNmVUWEV0VjZaMW52SHVzVkZUOEdrMThiSDdIQXhxeEpPeV80azNXSnB2T18wWUZjNXotNWJReUFFUUtjZEZpMkUxd1dpSy0wc3BsWS1sdTA4ajdqZndPMmxhRFFOQ2p2cGdXdjMtMERXd3Rwc3M0SlBQU1hrMm9BNTNKeC11YUZWcFdGUDBKWWVHSEx2RXVqYU1BVGdIT2xXdzZfMHc0Vm05NENKcVpLVldJTFFGdVhNUDRPS2RvM2JJMGE1MWV1RTBhRTNIbDZpd09kRk9IVUFVLWFZWXNvRVB6R3REdy130gGIBEFVX3lxTFBpMWNidnRwQnNaVnNuczN4d3pnbE5rUUtVSG9oS1ZpSzY5MEZoeVppU21kTVB6ZmFyTjNZWVFCRHlFLXh4cldQM09JUFlQY29IVDZ5NG5mNkNpQUtZenFkM0Z1MVZlWkMxMHVTU1RwMDBXSlBFWFdQNm95NTNjZllsTW1HQUNLVmJON0pMaGR0TTMtU0hxWHZvUDRPOVA4VGJMLTNYTkVmOVF5OVk5Z1AtT0MwNEZveWkyOERiMlVjYXQxZkVTSHNwcWhDMkFMSEQtbHBUbE1kRG1maVZmNjR5SnR6QWt0ckRpRTI0c3ZhUW5FWTJOdXA0MVFiNVN6M0N2dTlrUzRlUGdaZkFpckNkUjhVQTF4WlBXbVo1cFlLV0paYkYxOXVRdlJCei1uUUh2UEtpZklVVVhVS01CZ1U4VEgtd0JNTS1pVS1KVWd1UnpJNG8tTXVsQ3p5cFJHRTF1VVZrTE9fVDhPRGprSDFHbUdHRktqU0IxMkl1RFJRa1ZxMkJNM0paakN0TlMtZFZfM2FpWGZzWkxmUy0xMUNHRWhmYWVzV05kSHBLeFFsZ1I4akZYQUFsWWlBSjIwVW80ZWxHd0FjRVNPaW1kYkdCUjg1OTRyTHo3dVVyRzByUTRsS2pLM3FQMTdJTUUzOHRsNG9WcFI0cTQtYmpiWXRQa0pKU0x4UHc?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-01T16:28:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Soon... the Grand Egyptian Museum witnesses the launch of the \"Eternal Sun\" experience, coinciding with the anniversary of its opening",
-      "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "بمليار دولار.. رئيس الوزراء يشهد مراسم توقيع اتفاق تمويل مع البنك الدولي",
-      "url": "https://news.google.com/rss/articles/CBMi5gNBVV95cUxNY045RzVEalhXRk1CNDNfT085eXV0RlZNck9ZNmlEdVhyWDVSUzN1WndVd0NTTDZuUnBhQjRIR0s3WDVlLWRDMXgwZEl4SU5ka2VUanlsalI0MGVoNEdKQ3RNSDBYYW1MUlpYaDFIM3ZEREVnOWh0dnpvWmk5a0JKbXhXOVJnS2FYOGhVZXhDU2pqZ0REa1Nhb3lGaGpIZW54ZERfaW16UDIxaFJ3UHZrSHdwRllOMjZEdkpQNmhGUDcwRVJNT09BdV9UZmlOSGIxWmVaMFNzeGpPaUI0MDg4Yks2dlJvWkhaWkhxcWd0MjhidWZjcG91NWFDUkxETHAtZEk0R0plVk1BQ29aUVFEY2l4RjBidWlFSTFQRTlkXzEteTZURzl6S2RSNDM2azNfLXJvR0Rwdk9ocVVHeEFjejV1d2hBc2lZVkhoTS1vTFBvY1YzNUpXUjV2Z29NRUF3c2dqVU5QSmZEV0p1OFNtUC1jMzBmeWpReVduc19iS3FiZHZrcXljY2FQdzVxTzZYUS1LSXBMRUNFZnhtSVVRT21raFVVLTQwNVJ4aDVPZzBLZUlUT2JTSy05TjhYdWdnaUxicUFJNk0tZS1lTGJMRVVMcHljVkhRLU90ajNjUGhRZGZDcFHSAeADQVVfeXFMT2FiQ21ReWxZZ21BTDBDcjRtYmQ5LUNaLTRHaVpncWlkSl9qWDNiUUtQY1ZrQU5wVm8xT2dwZFo3el80OTJHZzVQX1JYRW9iMnVHWkVESjJtSTQ0ZERRQ1ZJbmdjajFwZjBOenFEcmJfSTVQVl96cmVqQWVHZTlpMTJzS09nZ2RjcWxybThUWGl4eTh4aXd6YnJjWW9oTXFJSUV6TnJKMHU3cTc3cm9VSm40eHpDOW5NQU84WFpIRENzZXZhazlxSE1FZHd1RXFCWldQQkk5TWFEYkpLd3U5TzhkWmg1UkJaTFY2cjhobnRIbVlFWWJuRDMxNGVNRHlRQndRMW9tc3dwWHNnY2s2aXI2UVhJQUZiLWx1eFV2ZThvdWZWZU9VNzB2cHV4SU0tWlhfTUhFOEYyVFhrMkFQSGthYjdpU3RqZ0lPaUppU2NBUVE2Z3VaTjVCREZPOFh2bnl3OUwxQ0JwckRvWjJvSUFGOUd6SGVaeFJnVVd1YXppT293VDJGTzhkNTktNGdwSm1RMGg5bnBnWkhQbWVuX3dEOHJSZDdLajAwYVZ4U3hCZWVJQlNPQ093bXlxUVJHcWllUjF2cE10d3dONXktV0NlV2R5c0NleFhGdG4yLVNM?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-01T13:11:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "With $1 billion... the prime minister witnesses the signing ceremony of a financing agreement with the World Bank",
-      "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "ألمانيا تتعهد بمحاسبة المتورطين في أحداث فرانكفورت",
-      "url": "https://news.google.com/rss/articles/CBMirgNBVV95cUxOS0g1VElyNFpwZnM3TWZUNDgwNm5tODNiSXhiSFdwalppczkzbGJaX0dmOUpJTU5OaEtGeGtvWDJTVzNQVW9RN1dsSnpMbDhta1lrT3drWGJVcGRudURySGJBQkpJaHd0QUl6ejRLVk5yTjcwd083VURBUmx3V2Mza2NRUTlMalF4R1BLSDlrRGk5VHV5eWNMVGF1T2lxRHhXcF9pUEdsZkNlSnZ3ejl3Qk9IVDB4cVQzMTRCQ2Nnc0ZCbTBjZWNRdXZZcHdtcllJS1BPbkp5bmtLZFE3RERjNjEyNjBlTjk5eERROGlQN3RYSDV3akJhV01od2kzRGIyXzRpNDRuTGVUcThmVHd6aXdIdmpTWi0zd1NZbW01cTdKdUs5cnhSNUdScy1Xb0NZa19tRmFSQzNrMGl0Yi1EcGRYbjFIMjlfbmFwbE1JaHJYY2s5MVJxSHJSQzZ5MFBRRUZtQkNzOVZFVU9ROGMyQkZ2U2hOYUo0ZnpBU09IREwyRlpCdTBfdkJUZkg5NE5sNThGVU5zSzJnWmYwTU11dUxUcGJVN1dKTk03LVdn0gGzA0FVX3lxTE84ZmZUTUJ4Z3FKY2ZUaW8xMXZmSERjSXpqR0RpN2RHb2UtYXZPWWhha1BvekpXS09lUVpwZTBFZ0MzbUhBa0VLYUZiMS1ZenM3LV9Xb21iS1RIZUpQM1l5dzZSRllSNElmLWlYOTF6OVJFRFZrcGF4S3k0NXd3MTN1QklkQmhIb19wWjBoTXZsdEk2VUhYY0g4ZWxSMXdQMDZoZk1ibzZyeFlNWlVmTVZTbXFicUJZSGpra2Zad1RWRmoxWUg2TWVjSl9salctMFpHWDk5MVdYNzJyX3FvRk94dWJraXNkeGpOV0ZjdGZpUXZtMEFGRFV3a1o3U0Y1UkdSMnU4VmN3SjRlLW55N1ZTWjk4NDNMb29PY2FrODkwcFNXN2dIN0FUY0pRQ29hQlBDMmZ2R1FkYm5nUFpsOXlSOFllTHlEZjlsSVlVSEhDcnFBaG5oMmg1QnBPWHZSVWxLT2Y4Ym9aU3duaVNNcXU0WER2SXZkU3pGcEwyQkRoNmpuX01CYUpuNjlLUnRRMWRsY0Q5U1NnU051d0pNYWFDSExYRWlLcFhCS0xJNVM2VXNwbw?oc=5",
-      "outlet": "سكاي نيوز عربية",
-      "outletUrl": "https://www.skynewsarabia.com",
-      "published": "2026-11-01T17:19:06.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Germany pledges to hold those involved in the Frankfurt events accountable",
-      "about": [
-        "DE"
-      ]
-    },
-    {
-      "title": "واشنطن تفتح بوابة الغاز الروسي إلى أوروبا عبر أوكرانيا",
-      "url": "https://news.google.com/rss/articles/CBMi_ANBVV95cUxQMkhqbjNBZjAybGlTOW1RTFRUa2c2U0ZKLW1xeU0xOXEyQU5wbmJxampQc0JrU1VMaDJ1ZmVjWk9UWXM4LXZnZkpUY1RLX2hJSjEyeGlycmlXWmlwY0x5dWhDMFQxaEJERHB6emZGRG0ycDY2Q3NOTEpZMjBVVHFfVVhicG0wVXpTcUNLX0dIa3hLYkpVVEJ0MENDTml1dDVRcG5hMnNfTGlqZi1DcG1aem1haVIwVm9IOW9RbWpXS0FhV29wR29WMFh5cWhicFJiU0dhSnVtQVd4V0J6cWhMQjRpRF9aQkJqSnZYb0NJeEZCVEZOVU5ydlFhbFRWTVdLY0pQVWI2ZzkxVktWbWoxN3N4YUlNR1NuZkVLb3M4WTFudFVLQXg1eWd6UnhtRk5DUHVOQ2pRZU51ejZWU0dHVkFBX3ZDbGJzaG9KMnV3ODhjTXhhcWN1MU1GdnpFczVkWEdmNHdoaUdDWVhmME1JX1k0YlBlaTVtcUp1QnNVeDl3cUxxWDc4NV93UnNmdXdIaWs5bjdXdzI3enJVT3pzZ2doQ0ZFektZVGdKVGFTclJybW94TFA5ZzJQTGlzNHVhRXRkeXhRTTQyNzFGNExXVnZ1em1EajZQQnBxOG1tQ180YnhpZWdaQTdqSWNnamdMeFYyaEhkaWxSYXF20gGCBEFVX3lxTFByWFJEVy1PZHhUYTFMRUQtaU1UaC1GSXBQM3RUWWRaOGNyUHlqVTQ5VVdrVTNBQkhIY2cxQ0N4UGY1MnBBZll2TXB3ci1xU0YwWWRGUlphLWZVRk9WR2RoSE55VlV2WHhPUjgxZWxuY2xqSllVMTRPZzRrRzB0aFhwSmduSks2R1dxOW5pdERLLTM3RlJoT3FyS0JDQnliWEUtNEE5T3Nhb2Uwc1g5bGJjbmIwVzZpaGlEZmhYT0JuY0xORmdZODk1TWI2QXlJWXRJVS1XZUtkcGg0Y3hzTkJOUGNwRmlOOGdXd0FOUGpvMDdUckRYVkdlc2dDYU81cDduMGpla3h2b0ZIY05RNkh6Zno5dDZZcHNBX1FNclZ3U21iaXBoOG9laGV2R2NpT2ZsekJ1YlpYdHc5cFJ4RVJlVTFNMlE4V2prZHIxMW9zbWNSaGRMdTVtd1VwNWZ5a2VJOFU4VVk3U2U5QTJXMzVWM1pBLVhPVnd4U29rM05sR1dheFVsNjlzT01NNXBPVXc2UDYta2NPMVl2S254ekRUaGFtNkFGT0p0UHdYZnQ0WWxhcFc1M1M3cUxac1hTb2dJaVpGb2FqeHBDM3pUY2tuTHJKZUZ2NTVnWlB3a3pMdHNXOTlBZ1Rady1zak9NTjZfdVZrRHVFMlBTT0R1LWZIYkE?oc=5",
-      "outlet": "العربية",
-      "outletUrl": "https://www.alarabiya.net",
-      "published": "2026-11-02T02:43:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Washington opens the gate for Russian gas to Europe via Ukraine",
-      "about": [
-        "US",
         "RU",
-        "UA"
-      ]
-    },
-    {
-      "title": "24 ساعة أغسطس.. تحذير من حالة الطقس اليوم الإثنين",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Pd0FDc0o4LWxuRFN0RGNYRFVDSlZoLVZwZGJvNDlpMlFGSU15WFh2THYxRVlPM3hBLXJoTzFDU2hxUGRSUC1SVVVDSHNPcnFEaWMyaTZMNU9LTlk1NlJR?oc=5",
-      "outlet": "المصري اليوم",
-      "outletUrl": "https://www.almasryalyoum.com",
-      "published": "2026-11-02T03:35:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "24 Hours August: warning about today's weather, Monday",
-      "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "وزير التعليم يستقبل ميار عثمان بطلة تحدى القراءة العربى بمكتبه",
-      "url": "https://news.google.com/rss/articles/CBMijgRBVV95cUxPVEl2bjl6S0NmcG04Sl9LNWZLaU0wRnRud2huMlliNFIwRWZrcFVQQllHY2Z2aXk5dmJ1N28xS3BqeGtCNThtY2UxLS1WYU55YlZDY0YwcEJKa2h3a2lYRjZqbVVJTjhtX2V4VEhyZzUyUmZoZlBnckY0d2tRQUdvV3Y3aTdQa09qNV8zUEhOblA5REpjSTlsdlNaUE5GTVNpd0VTSGszWTdmaUZKbVo2SC10RnN3S0NDOFhSNHlhN1RIdHFzUkNtSmZ5MWxyWnhONjRxZnNieTVRczlhSXpSVHhRSkxoYUItenVnYW9YQ3ZQZGlucW1pZ3pVN2p0WlpjSWk3YXNrNXdRbHVxT3VXRmRsR092WExlT0p6bnJFSjVJcG8zNmhZeEhUY2pGcHJfaGxzQ3VqbFZfODJsNHBnSmZOSmRSRWFkVnJ5VTBKZ1RuWVRPWnFTSnEtYmxzcENXdXRFMnZxb0JaUXN0eEpoR1JsWExzd2UxdkFHMENxZWlSRkU3ak5sVFlmOUhMZjNWOTVWV1FXVFpLVHpsMEJaNUdFWTZvdkRmMVU2UTdhRVgwZEt2aTFQRkdCeEZ2cEgzaVdqSXhqYnV0MGhXT1laYUswR0YtNHQ1dXlxWF8tRV9HMnN2ckNqQ3p5ZXV1Qnd4Z193UzVTdlA0XzIyTUk5U2lfWmgyZG5qeW5Ddnln0gGIBEFVX3lxTE9ZUGxDb1ZqallHWEdMTk5LNXZtT0JvWHRZZnlnT2ZiWldzWXNXZkFyNTd5V2w1MEM5STNOeUttRHZuaHR4RHlIUkxFRmN3ZDBmS252cDhHLXk0WVBhSHlRbWNqVnRDSXA5bnI2cmRVMnRMVE10ekJuQzZQdG8tWWswLXdfU0xlUXBpcW9kWm5EeXpEZm9TTXF4WG5lZUFFaTJBOWNIcnJKbmdXRXFQOFhrbVdQWWY3Wkw4bFFwYTNHSDI3QU4yYUFWOGs1UjNfUTl6cmpNRllOX3d1MFFzbzllNUEzQ2tHbjBPUGt3UTFhWjBSTmxfZXdIYVh3OGI5Q2gya0hDNmlrNmxQNk1PNzVXUE9vRjFnNUFKaGtWeDZtaS01MHBIWjZLeThhTmhMVnNpMFBBYlp3MENLRUktbHJFd2o3ZnFqMnplbE03cXZGUTFEVXJrOVN6amt3WFVBY0tvYWxnRTB3SmRxYVc3WGVyRDQ2TzBxQVdZYVFXcjZEN1FxWjg3dm5HdFBNc0RnNDNpSFRtZmVxSElMWEVjd05EQ2pOczg3a0NDLUVSVllOaFZUbmtMWVZRdUtaRlYtMWhlZm1LcUxVblFHSDZZU2c2NmVOSUxKaXh5aUM1ZEJYTHhKTHN1ZzQ3MlhLYzVJOFBidEt1WXdpQ010Zk53bzBXaVRSaWhkNlY?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-01T13:45:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Minister of Education receives Mayar Osman, champion of the Arab Reading Challenge, in his office",
-      "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "أكثر من 20 بحارًا قتيلًا.. سنتكوم تصعّد اتهاماتها لطهران",
-      "url": "https://news.google.com/rss/articles/CBMirgNBVV95cUxPRDRJbi1tLUQxTGQ1Yl9ZU3BxY19Id3NkMHp6V0gtTlBPcjVDbld0bHl4SS1jX29zLTg3aGRBQzZNSlRXS0NHb2ZfamlMdmZFa0NjNzJXR0ZTS2VRazZIY2I0dC1udW1IcGE1WTVWclljTVozX1YyRTRtRDR2Tl8yVXRuOU85Z2U4Q1pRRjk2cVVTVExXZk11YmdUd05QbW5Ec3VvNmtPZEUwMVU0RjhESzhiM3Y0MnFSTDhkRmE2Z1p6cTFya0pKZ3hEN1VpNm5hSDZkRDF4UkJUSzh2NFNvWjYwaGRhLVF2M3hFLUxmUS02YjV5bTRDUkpXLWRhcmx4U2N1OWNxYjUwZTNMcXBKZEZ4WEc4VVFCcXRFQ0FGemxUSzNGYlEwaEF2b3h1aEZ5LWpBR1Y2WERic1RPaTFjcU5uMGtVWUxOY0xlLV9hdFZpTVBMUlkxeTNlOE51RFludml6TVhpbHFaRmJHNkIySEMya252SkJWb2hHV3JEaGVxZk9samhERGJhV0dQODU5Q1ZCNFo4RTV2ZVhkZFdjS1p3WVc5RFNINGd1S3Jn0gGzA0FVX3lxTE1qX0I4cXRTQ3dsLWlVejhzbmQyQ3BWYk5lckVTS2c3WlN3NVRjbnZWeThYWFpMcGpnYjdOb21lZzVGazZpSXp2RFRDcV9EZnFMaWVrUFk5TTZSVmNFNlljVWR1WGotcWNfY3R2cTk1anVoX05KaFRJMWFsNXR4YWdUVWpaZEJYdmdLS2tlUWRwcVJxYzJPczhNaWpQTDR1V2RiejYxSlBtcWhCYzFTeS00cXZqdUdCenNuQ2pQaHJydHJsNWMzNllRMFAtOEFseVhOUnJMZ2c2bTNobDJ3dXpqekNyMldGVzlQUUVRaWI3TV80elExdEw4ZWo5X2JwdjVjZzNaV25hdFJJa1pkWFhkZWhQZUFseXAyVTB0elVtdHVkdjU3QU9Vck5Ec1JQSkZWQUN6Zmx0OU9KbzhEY2g4a2V5VlNxNWx5NjBjVnZ4X0JxLXVkMkl0Wm1idUtOTDExYU9rRklBbko3eGRyR0c1N1owR3poSkJxbDdCRkVISmpGajlMM2RGSERyRmRpaFh0MnF5bWwyLWJ3c2RoRjdNVFJobzhLeEprMUNEd2NSRUVkdw?oc=5",
-      "outlet": "العربية",
-      "outletUrl": "https://www.alarabiya.net",
-      "published": "2026-11-02T02:17:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "More than 20 sailors killed: CENTCOM escalates its accusations against Tehran",
-      "about": [
         "US",
+        "IL",
         "IR"
       ]
     },
     {
-      "title": "فان دايك ينتقد حكم مباراة ليفربول وأرسنال بسبب ركلة جزاء إيزاك.. ماذا قال؟",
-      "url": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxQRFhkTkZydHp4M0wzcko1SnZsM0Q4MnVvVHFIRlI4ZlVDbnI4dk1EUDdSSVpUaGRCb19Ia01lNlBlZXNGLWlYZHFpV2JwSE9LRnFNUEdqenIyVzJheDduM3lfM0ZNLTJWd0ZWSzM5TkxCb19KZWNLbkV0YmpDaTVuS3ZQZks1aXRRWVRxWGhxR2JxVndzZ05XTlRnVktLcS1RbzEtX0hGay0zaGdfU0NHVjVFZGUtTzdTd1ZGajZ4d2l2eWJWbHFZaHdrUWNTR3RLSXZaVTB5c2tvNVJjV0hod2JyVS1EWnJlUkRwVVpjakFGZzlaNjNSTUNhZURtcnNWZ29hb1dPWkJQWE9aaDQteHVtakJMVVVyZWctUDhCN0gtOGtBXzlHYktBTjd1emtMTVc3ZWxDdk1vUUxrQjRlekZKSGEzak93ZWdrODdUUVFRTXZvSDN4QXZITmwxOGJHMkV5dEZqMzlmTUUxbThCU2x5NDg4T3JCdWJSNkw1bm9UdGxqUnBkMDhvaGpBS08yTlhUQm9KUS1mVHN6emFZekNENFdZNk9ZN0hJYXdVY1dYVlZjVm5lczg1c1d4Q1dZcThFdWVFeFB2T3RaemdrVWJvaG5uLUxfX3RGYzJR0gHYA0FVX3lxTFA2OUxCU3d3dllYbENFcHJDaE50algtR2l5ZDlldGlCSkNRa3l4NnBYVXlKbkZOMVlFMkRUUnRRTWFHSkpsVnBsRGlKcGtwZlgzVDRwVF9pX1FiUjR5aU9RclZNNTkwUnNoNzNYaU5sYjdTUGd0dVpQd0tWekRyOVlWZ0I2VVJaZjlydWx2OFlBeVVGTE85RkZyVWctMXp0a2tVOEtXUnVGZEZMRC1wOExibU9zTWRHanJtWWJOSUZIeDExOW0zcVA0V3k4VU1mcmJ4amQ4N2ZVcFBSd1FkeXROTUs1UE1zYjVxZlFMMnpkRGdDWXZ4bC0xUi03VmhTb0U5X3ZBWnBWLWcyaDctbkZWYllpa05KNy1nd3pjSEdtcGFlLWRhVWVDLUtKUi1LNjNRVXBzX082ckYtV09kWkhUdUQxZkxRUG9LVWxjNlg4b0Y2NnBmT2pDVjlQbW5HckpYQkw3Mk5IS2kteGRkNzFsckZuMUtGQ2J5MGlicnhFcDRFZklia2x3UnBKQ3pzUWFENUdKRUZYXzNpQ1RES21pZmNLTFQyMXZsMUw5MFFlWE1IWGJCT0htaHRsUDdzVFhkZWJGNXBJS1hIZk8xekVSODRRVFk1a1Q?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-01T19:52:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Van Dijk criticizes the referee of the Liverpool vs Arsenal match over Isak's penalty kick: what did he say?",
-      "about": [
-        "NL",
-        "GB"
-      ]
-    },
-    {
-      "title": "ناقلة تتعرض لضربة بمقذوفين قبالة السعودية",
-      "url": "https://news.google.com/rss/articles/CBMihgNBVV95cUxNZ3JESTd5aFVMWUo0SlB4UlJ6dl85TExfMW5HQlFiNEtjZlkwZjRkM2JIS3lhZXhua0pObFJ0Mkc0am1NN0hncnl1TFhQYXRIZzhjTUxGMy13MUx4WF81VzUtWldJdTJyVGpjNkhmMHFsV0NjM2RtaFhKSXkyUExrcXU4RUg2aXdNMzg0dDZDaXR6b0RaMlFnN3pUUVR4Vnd2UEZmVWRVemRjMnYwaXBJNVhIRDBoMDJlUm15TmJjVHc0N0d4MThIYlJ3RmlTOXdhZU1Da0xtYm91WDF6a0lCemNHLTZUOHdYTkV3aHRFNndiYUwtM01NbHM1OS1FWS1DSkN1ZTRmanM2dWg4ZVA2OXRhVE8yMGdYSl9NMEVNOEtJMVp2NDYtMVo5c29QYlI0Xzd0Tlgwb1RQNnVaR2dRbDItMGVuVGJJeEhrbzhuci16dzZ1YW03WUs4MllLYjVOeFlIX3NGdmx6bzlfRUFfejFwOEVlVk9jNlRWYjNMODlQb25GNWfSAYsDQVVfeXFMT1A1UEJVcUs0VE10NlBGazlfSG1wTDlJX2VXYWhHUnVFaVViZWRBVGE4Qm9ER1l4cTJTT1BDZnVpU1NEblQxTEV4ZFZOeE1tNFk1SkFxa196V3o1QnY2V3RwNHhlM183anJYWXVuOVZ6d216cEN1MmJsbTNiTjkxY2tTeXNlV1V3SjhxbmFiWFRhb0pUZ1FUd0dwdGhIWlhaY0RBWlZ6WUlOUGRyT2dkZmR0S3Fobngyd0ZrMmVHTkc0R1BuQ1d0M1VHcmdQTUJFOGRuMGhlUGc0MTFPWmVBZW9FUFhZVFc4a3VIYl9fTnBvWGxzQXFuRmZUaWpYZXpqNjBUOXZKcDBSNF9qX1dPWVp5Tm4zWERtYnZQZWJkRkxINllKT05IR1lkaXhkZGMxS1duN2QxZHRBeFR6SkU0N2NqUm5zUzhyQVpvUkVLWW9aSnl0QjAtM2xYVm5XZWl0clNQOEVmWW9sRFRZSFRiZmNNVnJzWUM2OFpaVFNxdmNQREphZVBpc1E4Ulk?oc=5",
+      "title": "ماسك في مرمى الديمقراطيين.. وترامب يتعهد بحمايته",
+      "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxOOEdWcFRhNWk1X1BVamk0NzREYXVYUDlfeFgzX1BJSW1tdElqMEVYazVtNjBTU240RE92aFBnR19VNWhLRzlJX2Z4YUxxR1F1eXRiME5oQnlHbk1rQlFVRDN2Z3F5NUlnaDhRVTlnbktiN0xtNnhUQ0VCdF80d21DdDlhZjJERnNSaGw4OS04Z3dCendzTmF5N2h0V1VRbkl6NmMzbFk2ai1vZ2x3ZkFXa2xQWXR1TU5MOGxuOWlkZ3NXU25NdzhEM2QwVWk5WXU4SU9CQ19vRDFfQS05U3o5c2VIMmxCRVJ1X19QaWl1ZFoxZXY0NzlaQk9HRTNNNTBFSmk0R1Bwa2NTZ2FuUFYxQ2RWMzBQYlRseTR5Z2RIWVNiajh4RVcyQm1nTF9Ucnk2TXlXSGVua1NvOVpkTTlwcVJFeDVFV2NuMVZhVld6LXZBYnVpT3FGcFpNNjF6Qk5ZWkQ1S05EQWgwUlhtRWM4VTV5VmZnZzhVVTdoN0M3aVpDYnRrN3pIV0xOQUdJZ9IBkwNBVV95cUxNb3pCWG5tUnNVSDV5SHlsd2VIOER1Ukt2NUdpWURNZElQa1JFVUxQVHExeUFSNjBEZGZaMVJSYlNPakZlTW9QOHpFS2tjRE84SjFSd2pnR3RnWm9VOEZqcVV3c1lsUnZ4cDdTaTlWRHBDTjN6dmZzR3RQdTNZRUhFN3lrQW4takRwRmYyRDRzQnZMdmRodDV4RFp0d1ZvV3BydU5VeFpiSG83NEdOLTVCTHVud21fSkM4SXMtdWRORHdTYklNUENSRjFfbGxVUVdlT3k4cE9UZExpRDlZdkloWVBqUXVaNlZSdWNtTlVrbm5Cbi1TTnJTbmZJWnpHQjhiN0NzT2pLVGRxWnhadkRMaUhPRVcydXkxSDJHZDhEUm1YWkp1aFBHR2x2TzlLMlFWbFlZT2FEczREOUxjWXlUa29kQlFJS1BBUlQ1bk5ydEluTHhpei1CSzVpc1VGcm9YTS0xd0J3dmV2ZXFmdjZPNzkwVHFrTzVxWVVlMHJucnhxWjJCSDFJYWI5VWpyN0hQZ0pN?oc=5",
       "outlet": "سكاي نيوز عربية",
       "outletUrl": "https://www.skynewsarabia.com",
-      "published": "2026-11-02T01:56:56.000Z",
+      "published": "2026-11-02T13:42:38.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Tanker hit by projectiles off Saudi Arabia",
-      "about": [
-        "SA"
-      ]
-    },
-    {
-      "title": "بعد \"التحذير النووي\".. روسيا تعلن عن هجوم إلكتروني كبير",
-      "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxPSXh1MmtsYUVIQ09pQXVTbkVvSXc5Mk83RVZxcTRTY3l2LXFfQmdicEktMU5mXzdERXo0RDhqblRvQ3N6T096V3VoZlBuV09mWjdLQndqYnZQalVvaTVVNWJfeXpWVVN0VE5YOUtWdDJheWhOeTYzQng5S3JmN0dyWjIxZmlQMm1QaXlUa21iUlBMemtBa05GTXpZYTBnNWQxbjNJRzVhVjh1NWdCYnBmQ0E2bFh6NWdEZHprTGFvT1VBUkZKVTdCX3duRERoV0tkYnNFVXV0WVFzTkdCQXhwVjY1MGpvMlZvYTF5eTFYVjdkUDlLcEZteWFTcDV5LUpHWldYS25lWUVzcWh2eWp3bzRWNWo0ajl0cEZTRVNWXzBkaGdIeks2ZFFsbTJGM2Z3YXc0RDBOMkRIZ3JvVThuWU16U01ySFpnRWdrWVppaVBueWZzTUFoMzdWZHZOWVp0b0NkekJIREZHdTBDNGlEMWNJb1VFWHBGcE5iU0Rra2ZKcUtpV1Uxenc4ZndGYzTSAZQDQVVfeXFMT0dzZXVESWluc0ZlbEhTeEZVR2pfMi0tWXNvXzZtYk9hOUkyRWN4SFJpME4xMDlSRXVBaE1ObE1hVVB6aUhCWGRuMFJGc2VZWG9FM3JYVlVxX1FuTmp6TUEzR25za0Y1czhnTmY3SGlIZkNuSE9HWGsxUmVFLUt3YVpPdlQ5TlZILWtmQm8yd0JtSUw5UnJ1bkpKd2UweVoxNXVhYWNFTlMzd1lDemIyXzIyOUJ6aEh6bXE3LWtvbDduVmpiMWxVaE9EVklpOU1WWTRqMGhXanJaUWFvcnRUNzRySnBoY3VDTEV0b2xfTUszRFpyMUF2dWdCbmp5S1lDTWN0OVhVOE9ybE42bXBRV25KXzNmcUZEcDJ2Umx0T2JqeDVvWUNJel94cmFQMExmaU9ORlhKNnVOZG9RSmpCWU1MVzlGSjZnZTVzOThKSWU2MmktdlNyZkxvMXJWc1VXWnNYSEhwdW9YQ1NhbUlTT3I5cE1hSmxYZjBYaTVTU3FMQ0pDM25iRm00YW16MGhEUEhoM3Q?oc=5",
-      "outlet": "سكاي نيوز عربية",
-      "outletUrl": "https://www.skynewsarabia.com",
-      "published": "2026-11-02T01:27:28.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "After the \"nuclear warning\": Russia announces a major cyberattack",
-      "about": [
-        "RU"
-      ]
-    },
-    {
-      "title": "منتخب الناشئين: الفوز على الصين خطوة للتتويج بكأس الخليج والطموحات مرتفعة قبل كأس العالم",
-      "url": "https://news.google.com/rss/articles/CBMipgRBVV95cUxQLWJOSGY1U0JYRnUzc2xLNllfTnpVemUtQVZmcDNHYmk5dVpYdTJQSThTNGtoUFZGaHNIRElReGNxY1RwTVNlUVFOMVhCMFlHZjhhMkJhenV6WDBuRWJhQzFkTEFjTHZDMm9mNUVNSUkySVdnRE1VZmVjZ3psMWdwajBvc1ZMYmpfVzREaUpIallwaGhEMXhyejM4MFlROUcybm1SVVExbHh2MTJ5RWFibVR0RHRLYVZ0azQ2N1lfV3NvUlo3WmRSSGJIdWIyaDA1LVVZSGZCWFFwRThYcHV5bFYxeGJYTkNPTHRWMG1VTWRQbUV3M0ZzbHB2YnJGRmVaMEl6VFl0eXl3TXpTVDJVOW1kNjJhRGhVd181WnBwN0tSdWtNMm5oUlVEcEJLVEFUTVQ3OUgwSF9rY2xXVDdrLTJpVHR4cngyN3VlVUR1R0VpMmNxRUFmRDFaeFBqS3hoRjdRYi02ZHZZeVJxeDRYX09uVmlBQkswLVF1MFdRaEtGX24wZE5vM2ZZaVdGQUkxQU1SVDlLVG9YLUVMZ2hwX2hlclZOanFqNmg5Sm5mTVc3dGIyTUJPdjVURi05SFJzNkRhOEdldlFNS3R4SXdoekstV3RmRURsMS1SdjVhSjRNakhnRUlacExPVlFDQ3ljc2o1ZjBnbjFLXzFqa2p5LW4tR2pfMDNKenh1OXZGMkhDUmFQNXZ4bTRZZEVGbk83dzNuNnJR0gGgBEFVX3lxTFBLTHdXN0QxM3B4bXpFdHB4RkpGa0w2VVdXbVBHVE1nRFFNMmpjeGN1QVpON2dYRXZCZURMamVncGZHM3Vvd2xaenpWNEM5Q1VILVNlWlVSb0lhMU1mcmpoUV9KR1QyVS1sb3Zvdi1WQlJIVk5wMl9jcTh0ZXZwUEs3WWYyYXE2YWF6UnBqd0RWMDBheE5QcWJPTWdyYzZMYjJ0c3ljYU5fbnRiMFZ4OVNqYVdXTnZrdUdfc2pieGEtM011TE5hcHJ4Y3NPQ2E1MUxDTV9hTnRBT2RfQzRtVGFQYVBNdXNyRU9ubjFFdk4wMHlPc3FoYVhrbHhMajJQTERYM3JiWnp0X2lWVGVmRjVnT0wwVWhTeXptUXpFTTVHVi15LVpqOC1QOWhvaE90N1JYNVlhTkd6YndVYms4RFpWbGZzLTNQZFdaaDMyS3R4X24zUEVkTGtGeUpiVWpIZXVXQU5Vc1g4Ukx1bkJHX25MbFVNNDl1aV9WN1VPVGRwYzJMZXBXcXR4SjFWeVp5d0NOd201Sm9SS1FodkU1OHkyZDJPVlcyT2MtVHBvY205TUxiMTVPNlVFMHFpaGxHNUFKUTYzYy1Dc1pCcGs3OUkyUjZvY3M4UExoeThrRzVsYllzYjlMenRnSGJYSE5oRjR4dEVGbkVBdjlDRWQ2YmpTTWc3NW93UnRrTF9HSjE2OFlXUy05dzlNUzN2em1qQzM?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-01T21:26:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Youth national team: victory over China is a step toward winning the Gulf Cup, and ambitions are high ahead of the World Cup",
-      "about": [
-        "EG"
-      ]
-    },
-    {
-      "title": "لماذا فجر سؤال مذيع مصري للرئيس الروسي كل هذا الجدل؟",
-      "url": "https://news.google.com/rss/articles/CBMi4gRBVV95cUxNQWJpRXU0VTM4OHA2anRBMFJ3VFV0TlBHOEJoVDZ1VThtRlVWaTY3YThyNVhHOW16TExfcmFmNHJaS0xuQUxydzBqWS1BSEhoaEFobW5vQVhmaWFLdVd6Y0g5dzZRdVdOQkZpRUdncXZPdGloVUppQTF0WGJhRzFkVmJ5NDVpUi02S3hjV1VNcC10dUFJWXlfODg1RHpOUWNkVU93a0hDVHh6UVdqVi15LVBwNkc2U21sTGlMaGUtQzJrTmlzQUxZVGFjVEpfTGs3Z2VkdENBb0FTRGphaXZpQ25pNHU3Tnk0dkpRRXBDU3lKZ2lxbXVfSW5wMGlNajlnb21BXzEwOWxvUkxBdW5vTEhXYWJrY2RYek8tNFloWEdiNWxKLW53RHB3UC1scl9rM3k3TEpmeGxpTGkwbVpSUndEVmpvWW5CaWRLQTc0Y0NNLVdzMTNKVjF4TjB1Q2p4RnFyYVdYRFRoMTFoaVVOdm1QS0lpTmllMU51ZC1NQkUxSVdkMUpkQWtHMTRCTkNyUElmWUZGUGtDQzdLM0ZhRlVsSklzR1Q3TXVkbW9XNWJaUWU4YmUwaWhZbDM4MUtfX2toMThBa0xrT3l6ZTB6TXk1V1N6c0I2SjMyRWQ3aGV2VUZVVHVoUEcxUGstX1R6RFRncTNOUlV6bGRSMjdPZW1YcXI0WWZ2V0tHYXBzRUdsTkJaaUkzTHZmX0FqMFByNU5aMUhVNjhUR3B5UXIxRmhpOGtGb3BmT2JzU01mbE1ZQ1NUa1lYVlRKLUpscktFX3NVV25DcFd6dkctdXA1cTlB?oc=5",
-      "outlet": "الشرق الأوسط",
-      "outletUrl": "https://aawsat.com",
-      "published": "2026-11-02T01:02:12.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Why did an Egyptian presenter's question to the Russian president spark all this controversy?",
-      "about": [
-        "EG",
-        "RU"
-      ]
-    },
-    {
-      "title": "عربي بين قتلى حادث قطاري إسبانيا",
-      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOenRVNHpPa0hVby1rMGFqMjVSRTVWMjdHSGtpWHFBWnB3SEpTTEZKTFQ5SVZJWGxjWkQ2b0lFVXE2QkNsR3haUkZ1ODFLcGs3SXQwWGx4d04wZ3piOW5mWFlQZllJN3dOc2xhb3RDT214ejFLeG93eTdDMkdWZjNZR1E2NGFHa1VNWVZmYXhYM3k0LTR4NkoyTWR3OVZOeS1JdmxTZ0lFUzZfRmR3NlFKNWRvNzlDTXZoQmdGMmRnT2FTaGwzMzktMnZLWU9yRTI5NFUtSmdBZjk4LTcxZlRyc215ei00NmFSUE1FdFlPTUJlWVFHTUd1azZuUm0zdVI5QkM0ODRyWl9tVEdPVkI4RWxtcUptczhSTEg2LdIBogJBVV95cUxNUTFTVUxxOExFbzZyc0hLYU1heVBYVFpFMGh5NkNBTWlMUmRzd0ltaXd6VUE2QkdQbjFYQVc3UGNsMW5UM3A5Wmo4R2ZTV084ZmlNbTBCdTlsZDFWM1J4NXQ4ODg5UExVei1Cd1kwQW5qbFBiXzFUcVdsRTItV2dqejd1MTlSVWFXUnk0VHU4cW5lRnk1cm40RHBuTXc0M3IxUFdPZHhYSGx6OWZERTA2a2duWm5JTlduWEZuaUROMVQzamEzYmxkODd2NzFPbXlJS09GZkNpU3BScV9fcUxRTklBYnVDQ1ItTWVfNmZxclcxSFFkVV95VDZWZWp5WE14U0hGWm1jemtkTWgtQVFkV2RBeGdVcjc4bEtGODZpWEJTQQ?oc=5",
-      "outlet": "سكاي نيوز عربية",
-      "outletUrl": "https://www.skynewsarabia.com",
-      "published": "2026-11-02T00:29:27.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Arab among the dead in Spain train crash",
-      "about": [
-        "ES"
-      ]
-    },
-    {
-      "title": "انفجار ضخم وحفرة عميقة.. لحظة تحطم طائرة على متنها 9 أشخاص جنوب فلوريدا",
-      "url": "https://news.google.com/rss/articles/CBMipwNBVV95cUxNcmJaOEdLWDZ1WVJtZ1ZReTRzYklhcGNkSWNKdHZtcW01Q2Y3YUhfT2s4NW05andPSUdoQldEREE2UDc5QnEyWlpGc0hEVndsdmk1X1lCLTRQYjI5OGtTMXhtd0p4bVY3Z19mVzZLZkl4UndMdWxfTnlmUHlZX1pmX0l4ampHVDhfV3hyaktsdWd1SjZtY0I1YXlyWkpFb253NDhndTVaWXgwV1RKMUxKdzBtT3NiX2ZZcmozcGZjZV9VSjAtUVE2WnlRd1N3TDZRdVV0NWJKaFczMFkyZTBYc2RWcFBLRHVkTldzbkd0SjFkZU5tQjN4VWZ3LUExRjBkRUZWejBpN0E2N2lmM09LV25RVGo1TW1rQW01a1QyQlJpRW1PemdkMHRnT1lET0QxMEpQZ3habHZsRVlnLUNaU0hETm9kYktJRzhfY0YyMjRiMjBORkU2aW8wV1hPRWJUZGRqQ2NqaE1aVjJGOExaM3NwX3VtVDgwVzkzWFBpTVctZnh5ZVNSakFzQjRJdzFhR21WWERXUjl4d1hULXY2SGFpb2dpcVHSAaIDQVVfeXFMTy1VVlJ6STRnS3FhcUxqU2ZtMkdJS19rSjh5T3A0TDBiUk1SNlprOUhoeVVCRExDVHZMbWk2ZF9INHl6a2lUeWczUk1KdFlsWkZYMWJYR0lMZXprb2dmRWlUdE1pUG5YMks5NzFEMHpwSEFzMmRmdmwwcDlzdEQ1c0NjeXhMNm1WUjJxZTlRTWNrYkVjSlplQTF5TEZUUm9JeGQ2eEVoLWh6OTBvLXVjMGFyTkxWNlZ3Ni00d1M1U0VuUnJVMHJyN2syQldIcFNZd3BZNU1BYVRtYm1Dck1LQUc5QWhGVFdPMXM3aWhVRmxJNnNtc0RpT0dZRnJFN1VhbTlwUVB6Rk9JbmJTZFZZRm1KQm02NVZiaFB0UzZVTnNSVEFtVnQ4QkN3ZTZSQUY0ZzBqWngwa2RERlNUdFdUMjFwbTA4bzAyZENiaXloRGJNcFRpd1NKMkd3cFdINHBFNm1uUE54cVpIUDJJUW9qT3ZyWkNubzA0ajhCYjdQSEV1QXNjcjlRRm9XeXNhdUFhZV80d29kVjJMb255SUV1c0pBUQ?oc=5",
-      "outlet": "اليوم السابع",
-      "outletUrl": "https://www.youm7.com",
-      "published": "2026-11-02T00:12:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Huge explosion and deep crater: the moment a plane carrying 9 people crashed south of Florida",
+      "en": "Musk in the crosshairs of Democrats... and Trump pledges to protect him",
       "about": [
         "US"
+      ]
+    },
+    {
+      "title": "سهم بنك القاهرة يقفز نحو 7% في الدقائق الأولى من بدء تداوله بالبورصة",
+      "url": "https://news.google.com/rss/articles/CBMikwRBVV95cUxNR0NELTNWNFMwWEdTcnZ2REdhZGVFNXZyZlNWSG5HRjJqRUwyTTZ0REw2NThzbFRmUk80SUdQYkVRV3V5OWZUZ3V4alNSemdhZURHR09SRlZEZFRKeDBwLUNILWFER3lMcjJXamdUUTZTSUlJUUMtYXRXVXpDYWMyck5IYTF6dnh0aW5uY3BpRS1idWg3ekFXMl9ZS01IWktINVl2bGU5M21hNWhZTTEwMVRlekROdm84bEpfN1dralYxRWF2UHpsT216a2VycjZqamQ1UWE2bHY1cmloRVlSUDVWblVLeDdsUFRsWFdEcy1ZNU50OVktUi1TbUpxMzF1a0VBdkJFQkJlRWhSMjRfNEsxc0d6Vlktbk5wNVZPUmVpdVJxclotc2dkVkFsZkhvSnVwQ0NtdjhsRmFiOU1uSnRqRmMxV25fM1RKOWJYdGV3R1ZlWUdMTzhON0lTMDJ2amdFem84YWtSLVRMamxnTmZENFZMampESnh6TEdZTWNYbnRnV1E5ZFdzUm00cHlZbGVYMFVfQ1lCalZtd1NnSmZJN1RITWhfcEVCV1VaMk1Ld2E4NWtsQUlUNDBraVh0R2gta1NLM3dlSWwyM1RYbE8ybFVPVEFmcjJCOXRsZ2tmMU9VLXloTVFLRk51V3VmNlU5MWdOX1Foal9sbFk0Y2s1eHNSMHFGZm94a041b0M2NFU?oc=5",
+      "outlet": "معلومات مباشر",
+      "outletUrl": "https://www.mubasher.info",
+      "published": "2026-11-02T08:28:11.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Banque du Caire shares jump nearly 7% in the first minutes of trading on the stock exchange",
+      "about": [
+        "EG"
       ]
     }
   ]
