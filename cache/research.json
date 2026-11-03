@@ -470,10 +470,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-03T03:51:42.335Z"
+    "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -668,10 +668,10 @@
       }
     ],
     "membersHash": "eonet,gdacs,news|IN#be338511",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-03T03:51:42.335Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-03T03:51:42.335Z",
@@ -765,10 +765,10 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-03T03:51:42.335Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-01T06:49:56.328Z",
@@ -844,7 +844,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-03T03:51:42.335Z",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-01T06:49:56.328Z",
     "directSearched": "2026-11-01T06:49:56.328Z",
     "directSearchVersion": 2
@@ -868,10 +868,10 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-03T03:51:42.335Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -1408,39 +1408,83 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-11-02T09:59:51.584Z",
+    "at": "2026-11-03T12:23:05.958Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.0 earthquake struck Baqen (Baqên) County, Nagqu City, Xizang (Tibet) Autonomous Region, China, on 22 October 2026, near the Qinghai border. Recovery was still under way in the latest report, dated 27 October 2026. By 2 p.m. Saturday, 949 aftershocks had been recorded in the affected areas. The USGS feed shows no tsunami flag.",
+    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu, Xizang Autonomous Region, China, on 22 October 2026 at 14:33 UTC, with the epicentre in Maru township. Reports list 16 deaths, 76 injured and 339 collapsed homes. By 2 November, 12,964 people had been relocated and 2,054 aftershocks recorded. Relocation and resettlement work was still under way.",
     "ongoing": true,
     "places": [
       {
         "name": "Baqen County",
-        "admin": "Nagqu City, Xizang (Tibet) Autonomous Region",
+        "admin": "Xizang Autonomous Region",
         "country": "CN",
         "kind": "district",
-        "impact": "Epicentre area; deaths and injuries recorded"
+        "impact": "Quake struck here; homes collapsed"
       },
       {
         "name": "Maru Township",
-        "admin": "Baqen County",
+        "admin": "Xizang Autonomous Region",
         "country": "CN",
         "kind": "town",
-        "impact": "One trapped person pulled out early Friday"
+        "impact": "Epicentre; building collapses, ground cracks"
+      },
+      {
+        "name": "Kamlung Gal",
+        "admin": "Xizang Autonomous Region",
+        "country": "CN",
+        "kind": "town",
+        "impact": "10 deaths reported, unconfirmed by officials"
+      },
+      {
+        "name": "Gangqie Township",
+        "admin": "Xizang Autonomous Region",
+        "country": "CN",
+        "kind": "town",
+        "impact": "Rescue teams checking Nagong village"
       }
     ],
-    "figures": [],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "16",
+        "sourceName": "finance.sina.com.cn",
+        "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-10-23/doc-iniweqhr5654562.shtml"
+      },
+      {
+        "label": "Injured",
+        "value": "76",
+        "sourceName": "humanrightsresearch.org",
+        "sourceUrl": "https://www.humanrightsresearch.org/post/china-s-information-crackdown-on-earthquake-in-tibet"
+      },
+      {
+        "label": "Displaced",
+        "value": "12,964 people relocated",
+        "sourceName": "humanrightsresearch.org",
+        "sourceUrl": "https://www.humanrightsresearch.org/post/china-s-information-crackdown-on-earthquake-in-tibet"
+      },
+      {
+        "label": "Homes collapsed",
+        "value": "339",
+        "sourceName": "outlookindia.com",
+        "sourceUrl": "https://www.outlookindia.com/international/tibet-earthquake-atleast-16-killed-54-injured-as-339-homes-collapse-in-nagqu"
+      }
+    ],
     "donation": [],
     "sources": [
       {
-        "name": "chinadailystar.com",
-        "url": "https://chinadailystar.com/news/baqen-xizang-earthquake-rescue",
-        "title": "Baqen County quake rescue work continues in Xizang"
+        "name": "humanrightsresearch.org",
+        "url": "https://www.humanrightsresearch.org/post/china-s-information-crackdown-on-earthquake-in-tibet",
+        "title": "China's Information Crackdown on Earthquake in Tibet"
       },
       {
-        "name": "quakescout.com",
-        "url": "https://www.quakescout.com/earthquake/us6000u43g",
-        "title": "M7.0 Earthquake in China — 191 km ENE of Nagqu (Oct 22, 2026)"
+        "name": "m.gmw.cn",
+        "url": "https://m.gmw.cn/2026-10/23/content_1304578351.htm",
+        "title": "西藏那曲7.0级地震已致16人遇难46人受伤，监控实拍画面公布，各方救援力量正全力抢险搜救"
+      },
+      {
+        "name": "theglobalspy.com",
+        "url": "https://www.theglobalspy.com/2026/10/tibet-earthquake-70-magnitude-quake.html",
+        "title": "Tibet Earthquake: 7.0 Magnitude Quake Kills 16, Injures 54 in Nagqu Region"
       },
       {
         "name": "en.wikipedia.org",
@@ -1448,25 +1492,21 @@
         "title": "2026 Tibet earthquake"
       },
       {
-        "name": "bastillepost.com",
-        "url": "https://www.bastillepost.com/global/article/6285122-rescue-relief-operations-continue-after-thursday-nights-xizang-earthquake",
-        "title": "Rescue, relief operations continue after Thursday night's Xizang earthquake"
+        "name": "sina.cn",
+        "url": "https://www.sina.cn/news/detail/5356965943578273.html",
+        "title": "西藏那曲 7.0 级地震，酒店吊灯晃动，林芝震感强烈|中国地震局|中国地震台网|西藏那曲 7.0 级地震_新浪新闻"
+      },
+      {
+        "name": "finance.sina.com.cn",
+        "url": "https://finance.sina.com.cn/tech/roll/2026-10-23/doc-iniweqhr5654562.shtml",
+        "title": "西藏那曲7.0级地震已致16死65伤 转移受灾群众12489人_新浪科技_新浪网"
       }
     ],
     "membersHash": "gdacs,usgs|CN#b8254d0f",
-    "seen": "2026-11-03T03:51:42.335Z",
-    "donationSearched": "2026-11-02T09:59:51.584Z",
-    "directSearched": "2026-11-02T09:59:51.584Z",
+    "donationSearched": "2026-11-03T12:23:05.958Z",
+    "directSearched": "2026-11-03T12:23:05.958Z",
     "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://www.cswef.org/cswef/news/detail/id/1747.html",
-        "org": "China Social Welfare Foundation",
-        "kind": "local",
-        "note": "Resettlement grants, winter supplies, medical aid, rebuilding homes and schools in Baqen.",
-        "title": "驰援西藏那曲市巴青县7.0级地震募捐倡议书-中国社会福利基金会"
-      }
-    ]
+    "seen": "2026-11-03T12:23:05.958Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -4190,10 +4230,10 @@
       }
     ],
     "membersHash": "gdacs,news|SY#82ae10ac",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-03T03:51:42.335Z"
+    "directSearchVersion": 2
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4308,7 +4348,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-03T03:51:42.335Z",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -4351,7 +4391,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-03T03:51:42.335Z",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -5861,7 +5901,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-03T03:51:42.335Z",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -6051,7 +6091,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-03T03:51:42.335Z",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-01T20:59:19.901Z",
     "directSearched": "2026-11-01T20:59:19.901Z",
     "directSearchVersion": 2,
@@ -6513,7 +6553,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-03T03:51:42.335Z",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -6682,6 +6722,10 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
+    "seen": "2026-11-03T12:23:05.958Z",
+    "donationSearched": "2026-11-03T03:51:42.335Z",
+    "directSearched": "2026-11-03T03:51:42.335Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
@@ -6713,11 +6757,7 @@
         "note": "Cash assistance for flood-hit households in Nuristan and Nangarhar, with Community World Service Asia.",
         "title": "Afghanistan: Nuristan Floods"
       }
-    ],
-    "donationSearched": "2026-11-03T03:51:42.335Z",
-    "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-03T03:51:42.335Z"
+    ]
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6961,7 +7001,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-03T03:51:42.335Z",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -7451,7 +7491,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-03T03:51:42.335Z",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -10716,10 +10756,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "usgs|PK#62eeb9a4",
+    "seen": "2026-11-03T12:23:05.958Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-03T03:51:42.335Z"
+    "directSearchVersion": 2
   },
   "usgs-earthquake-us6000u4j2": {
     "at": "2026-10-24T21:17:31.742Z",
