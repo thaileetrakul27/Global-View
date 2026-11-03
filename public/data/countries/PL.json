@@ -2,7 +2,7 @@
   "code": "PL",
   "name": "Poland",
   "kind": "local",
-  "updated": "2026-11-02T20:48:28.917Z",
+  "updated": "2026-11-03T03:51:42.335Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "PL:pl",
@@ -10,106 +10,96 @@
   },
   "articles": [
     {
-      "title": "Polskie aktywa pod presją wydarzeń w Trybunale. Czy czeka nas większy kryzys?",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPOEwwTldfaG9oLVZmVnJXX0JtaWVkdUJHVGtsR3RxNEdkdURlRmNFRzd4dHRsTDQ5dzI5WFJ2MEF4ZTBDdjRtazdpV1VKekFQeXBKbWxYVjJLcDZldThFWWZKNXhYRVM5WHU4V1BZN25SdWp0UXZ3OWh6MWpnRHdwTl9jdUl5MGRHVTdvZk1icDFLRjBZQWQySHVzeWVLQnJUSUpGRkV5Q0hpT3EyRkxPQ3FxelBPTGtnczQ3aW5SR2M2WlgwLUZlNA?oc=5",
-      "outlet": "Business Insider Polska",
-      "outletUrl": "https://businessinsider.com.pl",
-      "published": "2026-11-02T17:07:19.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Polish assets under pressure from events at the Tribunal. Are we facing a bigger crisis?",
-      "about": [
-        "PL"
-      ]
-    },
-    {
-      "title": "Trump grozi, że zostanie \"panem weto\". Republikanie boją się porażki w wyborach.",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbmRfZF83R2dOSWJmNktSal9EMm5YNzNpekR1aEkzY24ybVAwcjhtMkh5cHRidDlfV09RajRqNTRwQk5icXBEZnBPR1FyXzlpOUZfMHA1NHJCaWtVa0YwLXU5UjEzMlR6ZTNRbkJUeDNtaDlReTlEX0padnFONlRlSWtkV0tEZEpYUGhOY3ZrT2VYNzJMYVRsSEV4am51ZWZFMmk4YW1QZHdxbEpOWU9IbWNUbzJmZlVZdlR3WXZ5MVA?oc=5",
-      "outlet": "PolsatNews.pl",
-      "outletUrl": "https://www.polsatnews.pl",
-      "published": "2026-11-02T17:20:00.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Trump threatens to become a \"veto king\". Republicans fear defeat in the elections.",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Spór o Trybunał Konstytucyjny. Święczkowski już w kwietniu podpisał ważne upoważnienie",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWklrcFJabEpnc2xJR3RTR2t0OTEtTllSdlJKcXhmajkzZXBJUkJaRmx6ZWdZbXVEZElhenlUakFaUGdMVk1Oakh4SHdDUXlIb2RQVFZtTDFiaTI1TmIydnVOWTVzaXhPSkkxcm9qa2Z5djV2S1d6aWRZd29ld0RCZHdmUjFKTHZaZDFaRmxGaXFGTW9rRWh1QVZyQkd1d3ZxQW1lblZvZWRERUxQZGVsX1B6T2EwSjNkT3NMaWl5NFd0bkZfQjNz?oc=5",
-      "outlet": "Rzeczpospolita",
-      "outletUrl": "https://www.rp.pl",
-      "published": "2026-11-02T17:46:35.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Dispute over the Constitutional Tribunal. Święczkowski already signed an important authorisation in April",
-      "about": [
-        "PL"
-      ]
-    },
-    {
-      "title": "Sprawa Sebastiana M. Jest ruch obrony po wyroku za wypadek na A1",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaUhPMnFoUWRVUFlvU2xUNHdLLWxUV0tKNnFRWTlkZUlQeWpJd1NPN05VajFsS2V2WlZoZE5rTlJ5TlRaLVc4WExJaEw4ZW1yZEF2TWRSdUlmNVhSY3RKWk5oZENzSVFVd2NGTl9YWWR3UlFSV2tva0xldVIweWt2S2Y1bmtQb0QxSy11eVhJck9vaGxFM0liWHdYOA?oc=5",
-      "outlet": "WP Wiadomości",
-      "outletUrl": "https://wiadomosci.wp.pl",
-      "published": "2026-11-02T16:05:54.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Case of Sebastian M. Defence makes a move after verdict for accident on the A1",
-      "about": [
-        "PL"
-      ]
-    },
-    {
-      "title": "Ambasador Krzysztof Szczerski zwrócił się do MSZ. \"Zakończy misję jeszcze w tym miesiącu\"",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTWxENDZZcGtuREp6TmNQNXdaSW5KLUN1SWw4cXJ5ZmRjSW83MXVlOGl3cllFVFB3M0Q5ejlqeHlpODRPT0twbDJ6YXpaOHliWm1FcjlNaXdqOTE3V0ZpTm5xUi1iZWlILWI4RGpaSm5jRXNuNjFTbk1VQkhHdEhLR2tHclBCYUdmek5mdXUzbWVoQXdQMFdwYXlYdTcxTVFk?oc=5",
-      "outlet": "Wyborcza.pl",
-      "outletUrl": "https://wyborcza.pl",
-      "published": "2026-11-02T15:25:14.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Ambassador Krzysztof Szczerski has applied to the Ministry of Foreign Affairs. \"He will end his mission still this month\"",
-      "about": [
-        "PL"
-      ]
-    },
-    {
-      "title": "Katastrofa samolotu na Florydzie. Zidentyfikowano drugą pilotkę. Miała 20 lat",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUWNiQlREU05KR0xuNGl6MlFTQjZIUnotSDltdFBvcS1SWjVBcjdmWUo4UXNubFVzRS0tRFk1dVBMTHBHeXRVY2doUklEc1JQbjNja2I3aGxKaFJQMzJNemNUU0FOVmFSN3VRdmtpaGpGNlFvaFg2NlpYNUVrOWdaUDMtUFlVTHVxOF9mRmJMN1ZXT2VKd0hITm51UURsQnNneWUtaTEwa2xGZ3FmWTB5Z21sWkhOSDhWbEFRNWhkWQ?oc=5",
-      "outlet": "o2",
-      "outletUrl": "https://www.o2.pl",
-      "published": "2026-11-02T18:22:34.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Plane crash in Florida. Second pilot identified. She was 20 years old",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Rosjanie zbombardowali szkołę w Ukrainie. Nie żyje 18 osób",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONG1UVTVib3pMb01ZaUFkdFFLNXhQZkE0MEpmcnVuMVJlWTlBbWdXU1lhMVZJdzRDQXdSNHNjVXI2LTdZYWp3RW93N2l1NHJhZ0gydjJyVC0ycHV2VDV0OWI5cElLQVFaZkNWLUI4NUI5NjUyRFY5dkdvUUFpYTZLbmxRMk1CMnBDdmRQa1UzT2pQa1d2SDRBN0pad1JjR3JMdUxNU21BcFhia28?oc=5",
+      "title": "Rosja uderza w Ukrainie, Polska reaguje. \"Uruchomiono niezbędne siły i środki\"",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRy1id3oxVkNPd2ZQWUJyMFVob3dFeEFTdkhPTWo2S1gyN0EwUXRTa2hNdC0zbEdsT0Z4cHlOSlFlZzhzN0FxdVRORlR6UTFybkIyUm4wSThETUljWlZHSlNhZTVoZU53M2owM2lxQ3VBd256aW9GcVdWdmZVak9meS00VjFHYmViQVlNOE15WXRka1NnZ3ltUTJUVmljdTJZY3lqOXFmdTh2V0J5RF9TZzdUbEc?oc=5",
       "outlet": "Wiadomości Onet",
       "outletUrl": "https://wiadomosci.onet.pl",
-      "published": "2026-11-02T18:04:55.000Z",
+      "published": "2026-11-03T01:51:59.000Z",
       "outlets": 5,
-      "trending": false,
-      "en": "Russians bombed a school in Ukraine. 18 people dead",
+      "trending": true,
+      "en": "Russia strikes in Ukraine, Poland responds. \"Necessary forces and resources have been deployed\"",
       "about": [
         "RU",
-        "UA"
+        "UA",
+        "PL"
       ]
     },
     {
-      "title": "Ekstraklasa: Raków Częstochowa - Pogoń Szczecin [RELACJA NA ŻYWO]",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWHpSTkg1OHFpS3JHT2x3Zk90bXBKc3BTbjBKRURBY3NCYnRqQk5yYlgybkVuLWRsY3Y3cXo2V1JPY2tiamVxN0FKMVVXVHRmcGlwa3NaWTVtaVZreHhQU2ttMmpvQW42dGdIVVk4WmQ5UDRhendOVFRHaFhTYWdsZmRYTnh1SEg0MzRiYnJBVjRoWU1OMkZ1a0EtbHVqTEcwaVpoLUQxbS1jM3dRQ055VFM1aWhzTXh4ZWV6OFpkNkVZVkFVREJSb1N6QUFPMjFVU0U4?oc=5",
-      "outlet": "Przegląd Sportowy",
-      "outletUrl": "https://przegladsportowy.onet.pl",
-      "published": "2026-11-02T19:15:00.000Z",
+      "title": "Rozłam w Helsińskiej Fundacji Praw Człowieka. Członkowie Rady rezygnują. Poszło o stanowisko ws. TK",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMm1DMi15UXRCSFVvcjh1aF9MWGstWkVnR2xTY2pvdjlacXoxM3pIMUJYN0c2N3U0ZTN4MlVWd3JUSER2YXFHSzdrR1E0aWZrRWZMdkw2ZFRKTUJwbHZUOXBDM29rS2Q3NF9tdi1KY3RzdUwzQW82T1lZZHBTNDNUNEVpUWVwOENDZ1Z6ZURHMy1MOGNQd20wSmRQQ3plM3JvVkw2aA?oc=5",
+      "outlet": "Wyborcza.pl",
+      "outletUrl": "https://wyborcza.pl",
+      "published": "2026-11-02T22:04:34.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Split in the Helsinki Foundation for Human Rights. Council members are resigning. The dispute concerned a position on the Constitutional Tribunal",
+      "about": [
+        "PL"
+      ]
+    },
+    {
+      "title": "Rozmowy o końcu wojny. USA organizują spotkanie delegacji z Ukrainy i Rosji. Jest termin",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdmdSWTBwUW1TYW9ZWkdiR1NGcmVwdUlZMlpFWW5lbmQ1Ml9laGVBN3ZGT0VOTmE5T1NZeXNRV1RldHg2V2NibTdXYXJ6M2FreUUzSXlyYlo1OExTNjdlZEhsVXJnSHpSZFZYM2lhWFhDd1hZaXF4akQyWlNMWXpWLWk4U2xaaFV5RzJidTQ4NGR1aE4zUWJfN0tiYS0tRkgxanVDZFlhUUh4MzQ?oc=5",
+      "outlet": "Wiadomości Onet",
+      "outletUrl": "https://wiadomosci.onet.pl",
+      "published": "2026-11-02T23:45:09.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Ekstraklasa: Raków Częstochowa - Pogoń Szczecin [LIVE REPORT]",
+      "en": "Talks on ending the war. USA organises a meeting of delegations from Ukraine and Russia. There is a date",
+      "about": [
+        "US",
+        "UA",
+        "RU"
+      ]
+    },
+    {
+      "title": "GROM i policja w północno-wschodniej Polsce. Spodziewają się dywersantów",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRmJQMGJjY2laaFZqRzRxTnJEMG9xM1BYRDR0bVZVdUR4TUFGUEZXNDdjTFkxaS1hcEZCdXlFUFJES2g0MGxvWXo1cDJUTWQ0ZFo4SXlGSDZvd1JYT2RweFVRZWtPOFZvbzBxTUFVZTlSenVRRUxWSDJfZ1pSaVJJRnlIcXA1c0E5a29XWjZtWlBydF9OX1dUaFBuUUhOTFdWSDNZMGh3emRpbmJpSmFNTFdxYUw?oc=5",
+      "outlet": "WP Wiadomości",
+      "outletUrl": "https://wiadomosci.wp.pl",
+      "published": "2026-11-02T20:37:56.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "GROM and police in north-eastern Poland. They expect saboteurs",
+      "about": [
+        "PL"
+      ]
+    },
+    {
+      "title": "Mąż Holeckiej zakuty w kajdanki. Reaguje RPO",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNeUh5ek9FQkZsZWprZV92d3VqSExOLWNGTGV3Q2t3Z1Bhd2o3T2dza19IeE9wcFhfR1ZoazBRWmR3b21PbDA2VDJVTVE1TlVfMHhwR0lxUXJNQld0bzFLRjBjWEFkckVmVGtlc3JJa0JYU24yZ0RBeWJ0RFdRY1Q2QzR0d090Q3ZCM3fSAYYBQVVfeXFMT1RfWFdNVkY0MzNlYlFCVW4tQUkwY0twS1ZWNXJTSWhWVkI0WlJaTmtGWEJuZjdEVEt0ak1UamNwNzdzelNRNEtLRWdORElFeEdJVl85cXhHUFFaQVNKcGVYYVUtSVZkMXY3aFV5Zndfclk5TklBdEl6M1Y3VnpxakVBaE9RVFE?oc=5",
+      "outlet": "Do Rzeczy",
+      "outletUrl": "https://dorzeczy.pl",
+      "published": "2026-11-02T19:06:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Holecka's husband handcuffed. Ombudsman reacts",
+      "about": [
+        "PL"
+      ]
+    },
+    {
+      "title": "Co powiedziała Korwin-Piotrowska do Nawrockiego? Lewica ma inne zdanie",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcmhBMnEtXzAtWEJTWjBNYXRpbzc4TlhfSXFsdGtSUmZYU29MR2lPc3MxeUVmdk9Gdi0wUFFPUTI4cFRNMFAtZ3RRTGdnWEFzTC1sbEctRVhrY1FYd0EzTkdUTWFUelFycXR4cElrQ2MwNjdkOWxUZUdjV1dPU1N2ZDlTVnhFSFpnS1NiVllsWG56S1B3dndnWnZYUHdpQ0NNcFkzUU1Fbmh5V3MxTm9pdFZB?oc=5",
+      "outlet": "WP Wiadomości",
+      "outletUrl": "https://wiadomosci.wp.pl",
+      "published": "2026-11-02T20:38:50.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "What did Korwin-Piotrowska say to Nawrocki? The Left has a different opinion",
+      "about": [
+        "PL"
+      ]
+    },
+    {
+      "title": "Sędzia Korwin-Piotrowska chodzi na pilates. Pomógł jej podczas spotkania z prezydentem Nawrockim w TK?",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeFZ3RlRNV0x6UjNRdzBXaXNYTUNvS29jR1RuOWp3ZzltQzZoTnJ5dW5rQmpsUG9xcjZvMGJEM1lyRjhpZnNUTUlXS1pQNjhwUlpKNFhNekFHZ05tdW5aUjh1OUVHaFVXZ0w0UmdhS1NmUllsYld0al9sRm1GRHp3UHNxTjNMVjJSMTJ3emY1bjZpR25ldkRaeldQeGJTVWh2a3cxbnloN2Z3czNwMjNyTDR3Nk1oOUg1TktBMGlFeEhxeDU0Snc?oc=5",
+      "outlet": "Rzeczpospolita",
+      "outletUrl": "https://www.rp.pl",
+      "published": "2026-11-02T14:15:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Judge Korwin-Piotrowska goes to pilates. Did he help her during the meeting with President Nawrocki at the TK?",
       "about": [
         "PL"
       ]
@@ -128,14 +118,117 @@
       ]
     },
     {
-      "title": "Tak skończyła się interwencja wobec męża Holeckiej. Naniósł uwagi do protokołu",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQU21YS0NJRFNxeTZhNkJaVVhfOGFGcWRHSnVpeHUtLXlkWkVmNWJFZ202V2hzTnpRN2VWMENoTUZNRlRoR1dKTnBSUi1kWjgzZXlDeC1nQ1VvdFo3QlBzTXlXTG9sYjdqY0RvaUw1SVpuV0JiZ1AxQjBXOHdBd3cxaVRiSjdybjM5Z1cydDFwWXJrU0hnWnk5LXNybndLZTNkb2VtYlRPVWxvX1Vka2RhaTR2NFFEX09HNlB3bA?oc=5",
-      "outlet": "WP Wiadomości",
-      "outletUrl": "https://wiadomosci.wp.pl",
-      "published": "2026-11-02T13:29:12.000Z",
+      "title": "Katastrofa samolotu na Florydzie. Zidentyfikowano drugą pilotkę. Miała 20 lat",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUWNiQlREU05KR0xuNGl6MlFTQjZIUnotSDltdFBvcS1SWjVBcjdmWUo4UXNubFVzRS0tRFk1dVBMTHBHeXRVY2doUklEc1JQbjNja2I3aGxKaFJQMzJNemNUU0FOVmFSN3VRdmtpaGpGNlFvaFg2NlpYNUVrOWdaUDMtUFlVTHVxOF9mRmJMN1ZXT2VKd0hITm51UURsQnNneWUtaTEwa2xGZ3FmWTB5Z21sWkhOSDhWbEFRNWhkWQ?oc=5",
+      "outlet": "o2",
+      "outletUrl": "https://www.o2.pl",
+      "published": "2026-11-02T18:22:34.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "This is how the intervention against Holecka's husband ended. He made remarks to the protocol",
+      "en": "Plane crash in Florida. Second pilot identified. She was 20 years old",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Wybory połówkowe w USA. Politico: Kraje NATO przygotowują się na najgorszy scenariusz",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQU0xRSWliMFU4cDI5dlFKdGJNQ0o0d0R0Q3FDT1MzVUVERTJuQzdFTGNGUTVKSDhOU3dtZXdXcWQtYW9Bci1Ic3VrckJIb19veUE4UzRzZVNJcWF6TDJ1RUp1OFpYZzhWa0RJYUpBRURST05qWGVCS3NkSDBZWFB2N3V5eHh0Tk5KR1dHcmRYczZuU1VPUGVUN284dnlrSFJ2NmhGeUNvMTNYbnpPLVZKQ2lTTExQY1VmWVItbg?oc=5",
+      "outlet": "Gazeta",
+      "outletUrl": "https://wiadomosci.gazeta.pl",
+      "published": "2026-11-02T20:06:02.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "US midterm elections. Politico: NATO countries preparing for the worst-case scenario",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Raków Częstochowa odbił się od dna. Kabaret w końcówce. Pogoń zagrała w dziewięciu",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNaG4tMmtFMWxGYVYwQXdpNHFjNEtOb3hNUXdqdm5EVWFXall5a3huaTRMMGdDODZCTV9FcDMtY19EWC0xM3duQ0NranVJRkRXV0tZRHRzWThpekJJRzJ2ZkNvUHhVUTFSMV9CNlNaei1kQjRHc2VMYXdYUW5TUXVfQlhVeDNsV3JJQUN3NGJwal9EeFFzSXBhZDNQUHlCcjNRNXhxYmxrUzVJSnBoUkswTjBhanl6bDFSOEdMcklIb2ZSdFlsdi1v?oc=5",
+      "outlet": "SportoweFakty",
+      "outletUrl": "https://sportowefakty.wp.pl",
+      "published": "2026-11-02T21:34:22.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Raków Częstochowa bounced back from the bottom. Cabaret in the final stretch. Pogoń played with nine men",
+      "about": []
+    },
+    {
+      "title": "\"Potworny atak\". Rosjanie zabili kilkunastu cywili, Zełenski grzmi",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNmpJRWsxMndjS2ZWMEFpTGFhV2xsR3NIQmVGbl9ybkl2alFySV9BTzV6ZEFlQk5WTTl6VGVSVXFfcl9DbFYtc3E3bER5eG1QTW12NjhPVnN4MmxSa0x5eDBCUHo1cXpSclFfdDBlYVgwMW80T1ZJMk11aVNGemM4R3A5NnRiRmpLaTR0SnNGNlJqNzFGQ21RRE4zZ3ZNZkVvYmNtcVBwUXJ2UVdYNDJ0dldZRjQ?oc=5",
+      "outlet": "PolsatNews.pl",
+      "outletUrl": "https://www.polsatnews.pl",
+      "published": "2026-11-02T18:50:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"Monstrous attack\". Russians killed a dozen or so civilians, Zelensky thunders",
+      "about": [
+        "RU",
+        "UA"
+      ]
+    },
+    {
+      "title": "\"Jedyne, o czym myślisz, to żeby to się już skończyło\". Kulisy akcji policji pod Trybunałem",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdmRnSWdvcGhGY1RFYk1fUDZjZE9Gemp6N3pUOTllSVJOU3FVUExVVFRoWkNTUmlsRTRCaXk5bGF6bHlSRFg1LTR1ZkZfSzZTdlo4M0tBZzZ0a0NrUUtFT2RCT2hXTnk2VV9TQmktM0JFQVdWUTMwYmJzVVNTbG8wY0pfN1pXamhDMGhvekh2QThQMmJuUDBTOFoyT00yeEhjM2RxbWVjUjdvVXVlRGFDQ1FCbw?oc=5",
+      "outlet": "Interia Wydarzenia",
+      "outletUrl": "https://wydarzenia.interia.pl",
+      "published": "2026-11-02T17:06:49.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"The only thing you think about is for it to end already\". Behind the scenes of the police operation near the Tribunal",
+      "about": [
+        "PL"
+      ]
+    },
+    {
+      "title": "Ropa tanieje mimo konfliktu. Rynek reaguje na sygnały z USA",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVmlDOW9sTU5yZGhVMHJHUk01anBpZnNyeG55QjY1dHE3R0dkdUo1dllUZ2g0bEtzWmVnMjRfOXI4OVFGT2RkTEMwSmM0Ni1VR3lRMlBEbXc4QUdMejgtbVBubU1STFpaQnMyZ28wdEpHd0xaekc4bXVwbmpMb3BQWEVCNW4tazVFcmxTS1ZCZDN2OFFnTzVVT1RIcnhmbWZTZFdrT2xpaEFnTjhfSFotRzJnYw?oc=5",
+      "outlet": "Money.pl",
+      "outletUrl": "https://www.money.pl",
+      "published": "2026-11-02T20:30:40.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Oil gets cheaper despite the conflict. Market reacts to signals from the USA",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Było krótko po meczu. Śląsk Wrocław wydał komunikat ws. trenera!",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZ3BWdjVkVF9uRzVTd2k0UkV6QVI5ZEtCVG9QNWdHREE0Q1U0WERHLUYtMl9KQ3dfb1hraUJQMTkwR3NrT1VjbEJOdlM2TjJTSFRxZjNCRWdwUFNCYVo0b01aSTJ0Ukl4QmlMOUd4U19oR05kOTNtbDVnWkpQamF4NUdEcUcxOGc1SHlZUU4xWHZRTkNNSUxVbmJwVVZSOFBJdXFNemo2UWU2Vi1zQ09V?oc=5",
+      "outlet": "Sport.pl",
+      "outletUrl": "https://www.sport.pl",
+      "published": "2026-11-02T20:48:14.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "It was shortly after the match. Śląsk Wrocław issued a statement regarding the coach!",
+      "about": [
+        "PL"
+      ]
+    },
+    {
+      "title": "Jutro stanieją wszystkie paliwa w Polsce. Sprawdzam, czy diesel zejdzie poniżej 8 zł/l",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdmd1MUNGbHVGemVmNHU5THo3NEFDbmNRWGlucjJ6cEM4MFJzQmFXX2Fyel9kNTFBWFh3VXFwc1JQT3UyTFJFQk1vQXN1NWdrUjh4MUs4bTNtNm9pMHkxeFN3OEFIWFZiT1BrV0l6NVExdk40NkJuRWQyS0JjWWNiZWN6a1NTV3JKd1VEODdRZENKaWVZUnR2eFdVU0JMT20ycWo5b0FfNmYxWTI2UXdTczVZWmVySDR5ZFpBb1FRNXhUanFv?oc=5",
+      "outlet": "Auto Świat",
+      "outletUrl": "https://www.auto-swiat.pl",
+      "published": "2026-11-02T18:30:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Tomorrow all fuels will get cheaper in Poland. I check whether diesel will drop below 8 zł/l",
+      "about": [
+        "PL"
+      ]
+    },
+    {
+      "title": "Ambasador Polski przy ONZ rezygnuje. \"Skrócenie misji\"",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPX01qSDlZYXhSekZTYXlsWnA0bV92SjJ4WTFOQ0UxRUMxY25mVmdDZElMY1lmSUtJV1RnNHBRby1SbU1jMWh6UThIaVRraVd0Z2JKWDFmZ2sweWg3cDl6NFU1VVh1NTdUQTVlRTBwNkZ0V2pORzFsZEtRTDFrQTVkNTJxM3lNalB6ZjZwR3o2cEJiVk5NTGtESUJWUGFPNWRU?oc=5",
+      "outlet": "PolsatNews.pl",
+      "outletUrl": "https://www.polsatnews.pl",
+      "published": "2026-11-02T15:14:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Poland's ambassador to the UN resigns. \"Shortening of the mission\"",
       "about": [
         "PL"
       ]
@@ -152,42 +245,122 @@
       "about": []
     },
     {
-      "title": "Strajki u niemieckich gigantów. Pracownicy walczą o wyższe pensje",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWG5MS0tWT1N5UG5TcWhUbFp4NG9qRXRkQWd1REJvQV9yV1VBM2dZUnRnT2VKNjRwdGduSEswREM4cEZKYmpIanJfaHFyWmo4UFJqSU1MVDRwU1V0TlRwblpOcDNBWHJGRS1ndWRCeEd6ZWxqS1hobXI4UWFTUWoyb182ZTdKSWx3cnoyazlWOU9vRnJCZjFUTDU0WU9pT3lfTUJzQ1MzOXhJQUkwVmJV?oc=5",
-      "outlet": "Interia Biznes",
-      "outletUrl": "https://biznes.interia.pl",
-      "published": "2026-11-02T16:40:55.000Z",
+      "title": "Musk przekazał niemal 450 mln dol. Tak wspiera Trumpa",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSGdjcnVidXlsZFlFNWhTMW9VZUpVNDhUNGdkZ0dlTFJZRDhHTUN4cjdIOUd4UEF0cHJGeVpMRk1uSHVJcDFYX0IxamFWanJ0eGl3eTJKVnd1ZzVVbE9sTW1OTEFmYUJrN3FGNlM5WWIteGNrR0ZnN1VLY3Q5bHoyWTk3bWpvVE1GU2hxbUdWQjM4ZjgxcFNhNF90SUU1cU5va2FZ?oc=5",
+      "outlet": "Rzeczpospolita",
+      "outletUrl": "https://www.rp.pl",
+      "published": "2026-11-02T16:03:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Strikes at German giants. Workers fight for higher pay",
+      "en": "Musk transferred nearly $450 million. This is how he supports Trump",
       "about": [
-        "DE"
+        "US"
       ]
     },
     {
-      "title": "Adam Glapiński i NBP w centrum politycznego konfliktu. \"Moment jest wyjątkowo niefortunny\"",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMHRiMEhNM0poOGJzT05VTkNtZnpQYWx1T3c3V3ZHaWk0bmlaTVpnTnVleW9WOFItemoyWDZEclVJdjlkdTJtSmxPb1ZLWHh5WHN4Ul9LSF9ycTMxMW55MFVPUzJiUXJtY0JMVk9IREw0Q1Q5UmlWQXhVajc1TjRPWWZkZW9fbk5TWXFPUTlqenJqdFdBTXNFQ2Q1bDFYQzFkVVotNkQ5SDI5RzhGaXlHVEhrWnJmVU0?oc=5",
-      "outlet": "Business Insider Polska",
-      "outletUrl": "https://businessinsider.com.pl",
-      "published": "2026-11-02T15:25:38.000Z",
-      "outlets": 4,
+      "title": "Szef Ryanair ostrzega przed droższymi lotami. Prognozuje kryzys",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaXFKTWZzM2tyM2NQOXJCZU1Ba0pjaUQxNXJqdTFXUld1dEZiWThKejVQcVVjd3ozNG4tWVU1UVJXNUhkR2FlSEswYUVNZGNYUW1vcWFaeEtHODROWFF5bDk3REVQZDZWVVRnZzBfc251bUtORzdvUGllM29QQ0o1OE9UYk03LWd5dV9xNENXQlllaVdURkZhSkI2LU9ycDNzYnFUd2oxbmxfbFRYOWNOVHFGRmpTbDd6?oc=5",
+      "outlet": "Wiadomości Onet",
+      "outletUrl": "https://wiadomosci.onet.pl",
+      "published": "2026-11-02T17:12:01.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Adam Glapiński and the NBP at the centre of political conflict. \"The moment is exceptionally unfortunate\"",
+      "en": "Ryanair chief warns of more expensive flights. Forecasts a crisis",
+      "about": []
+    },
+    {
+      "title": "Historyczna wygrana w Bułgarii. Nowa prezydent chce dialogu z Rosją",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQN1k1YVlkMlE0X2xBa1Jnb2ZjMHhwLW5DVWJSWHFidHhxZ1RUNC1BVnZ0Z1RpSzhzWnM3SjFlYjc4QmVhSEd2cEdXOHF0NmVGbDM0U2pWUTBIc2pWVFkzMVR5ZXpWbUlfcWZ2djlOVzc1T21la21yclBQWDZaQ1Z6cFFmUDA3R2RNNFZvMl96aDFiYlhpc3VyMEI3S0VZWXU3ZXV2dlJiLVc0ZEZTa29ablhLdHdvazZQMlE?oc=5",
+      "outlet": "Interia Wydarzenia",
+      "outletUrl": "https://wydarzenia.interia.pl",
+      "published": "2026-11-02T22:21:59.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Historic win in Bulgaria. New president wants dialogue with Russia",
+      "about": [
+        "BG",
+        "RU"
+      ]
+    },
+    {
+      "title": "\"Odebrałem decyzję SBU\". Znany publicysta zatrzymany na granicy z Ukrainą",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVnY4Z2pSS01xRkhRNjhoSGNqZ1RCVFpORGVNQ0dzWF9WblJGNEd1RWtqYktDTnVuRmZQb2dvVEp5cDNVTjl5RXN3RW81dm5OaU5ZYTJQMzVKSzNUc1BGTnk4aGcwdnRNZDNJaG1oUmIwbzNNS1dDOXhQRDVoY240eVIwTlA4clVuNHVqd2IyS3Q4VWdaZVdOVm9yVjdfNEczc2VQNDJDdXNvSHpFMWVFYU0xMjVUSVlVUWc?oc=5",
+      "outlet": "PolsatNews.pl",
+      "outletUrl": "https://www.polsatnews.pl",
+      "published": "2026-11-02T21:28:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"I received the SBU's decision\". Well-known publicist detained at the border with Ukraine",
+      "about": [
+        "UA",
+        "PL"
+      ]
+    },
+    {
+      "title": "Eliminacje ME: Gdzie obejrzeć mecz Polska - Łotwa?",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdjd3QmdTc0lqbmZTdmVHclluQ0o5bnpUWmJHOUI0ZHo0cy1vUHRGWHV1dDU1VC1TbzdGX3NhNzYxa05uUVdNQTJZZ1ZPYmVnNDVqNkxVblpNdF9hWVh0VUpnZjM4WXlVUDhXelBzNHNGWUZWOERmNzZTS0hKNjZRSWNlaDFzeVlKX0IzWTFUbk1NSEMtRW1CN0kwVW1fZ2V6V3Z0RzZCN1o?oc=5",
+      "outlet": "www.polsatsport.pl",
+      "outletUrl": "https://www.polsatsport.pl",
+      "published": "2026-11-02T15:47:00.000Z",
+      "outlets": 6,
+      "trending": false,
+      "en": "European Championship qualifiers: where to watch the Poland - Latvia match?",
+      "about": [
+        "PL",
+        "LV"
+      ]
+    },
+    {
+      "title": "Kluczowa dostawa dla Ukrainy dopiero w 2030-2033. USA potwierdzają",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbUVFUkp4NV9GTkRqbk9raV90YUJUYVNUWERjUHY4NVRfZW9vOW1KR1B5Tzdac2ltZUU3T1dHU0NKRFpJSlNCTnJLc0k4NmNEWHFwdnlWN3MydDFkTVcyZTRRLUJldlpSZGFVU0tTbzFsWHVUQ1g4Y2pMalN0MnpLcldhSXdPVDFNRVY5RmlfTG93RzBwN01DY2xIZVU4RHUtLTQzMlhBY0Z5M2VuOVhyNnNweWMtX1FxREcxUWRpTnhkdw?oc=5",
+      "outlet": "Gazeta",
+      "outletUrl": "https://wiadomosci.gazeta.pl",
+      "published": "2026-11-02T21:10:15.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Key delivery for Ukraine only in 2030-2033. USA confirms",
+      "about": [
+        "US",
+        "UA"
+      ]
+    },
+    {
+      "title": "Wisła Kraków szykuje się organizacyjnie na derby. To duże wyzwanie!",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZU4tWEl5ZnJhUXVRRjVRTFdnN1NXVkVocXZXZ09UWmZmaExqVExpLVpvbnpXQ0FwMGQ3am5yOTF4XzBUZWM2bFBXQUJzN3F3TkFqMGZNY01KVjRRR1ZqLXMtQ18tcmFUc1g1cmE1eE9XcmllRFBWUW9wa3pPcnh5OGRaY0Y3UjJnTldhOWtpdTJrOTBRaEFnSWlYM1pDa25ZNVBUSFhVZUFFWDFlQnc?oc=5",
+      "outlet": "Gazeta Krakowska",
+      "outletUrl": "https://gazetakrakowska.pl",
+      "published": "2026-11-02T16:41:07.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Wisła Kraków prepares organisationally for the derby. It's a big challenge!",
       "about": [
         "PL"
       ]
     },
     {
-      "title": "Grecka wyspa zalana. Wystarczyła chwila, aby ulewne deszcze zmieniły ulice w rzeki",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZjlNcHBNY3FXdVg1ZVB3NlFJSEFEY3UzcEh2WURwZ1RQZ25oNVVta1NCUzNCem1mQk1sT2VqenFXTm1DOXN5TjJ1QVJKTlRKMW1uZXNqaXk3ckRab20yNjA1MlNEZFZMODJ4Q19GZFYtNXVTby1FbXQ3Mm52QnJ0Y2NPRWhkS285bmZQUzY2SHVCLW5yN3N6SWFRVHlxZl9yLUQ1NG9LbGYzSWtyYWU0eHo4b3hjVDA?oc=5",
-      "outlet": "Interia Wydarzenia",
-      "outletUrl": "https://wydarzenia.interia.pl",
-      "published": "2026-11-02T19:17:02.000Z",
+      "title": "Wstrząsające sceny na drodze do Morskiego Oka. Turysta szarpał jelenia za poroże",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRmZNZ0tWTVNMNmtTSlFZM0JfRlZZMG9rRE5xWVRRMjZzNjk5cmctWFVxZXBkU09ZenA5U2t2YWJ3bHhpcGJHVjR1eGNSQ19IckZub05YZ0g0cXZoRHBjVjExN3ByVkcxbjdfTmlRdi1TbFNFRVZEOW5nSlZ1dFpGZTZSeUhTYVItRlVlNUpjaGhwbC02dFhpcWl3V2VqMVVLbmloVHZGVmdQYS12dlJkNnhoNnJJX29Rdk11eg?oc=5",
+      "outlet": "WP Wiadomości",
+      "outletUrl": "https://wiadomosci.wp.pl",
+      "published": "2026-11-02T19:23:34.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Greek island flooded. It took a moment for heavy rain to turn streets into rivers",
+      "en": "Shocking scenes on the road to Morskie Oko. Tourist pulled a deer by its antlers",
       "about": [
-        "GR"
+        "PL"
+      ]
+    },
+    {
+      "title": "Przebrała się za osobę w kryzysie bezdomności. Teraz przeprasza",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUDRXVzZaUjNPVEZodEVJb2YzTkxXOGNDMGRibVJXOER6RGFIVlZDQU5GakcyWnNvcmdDZFp3RlhhWEQ4SHJUQ0tiN3VnSy1HNTUxNERUbzRSODZ2NFB6NG9WcVd4c1QyTlB1RHlfOE5ENnlDU285YUp2aUdzRUotNm00aHBmZnhGZ05yc1VORlFlS2M0NkIwdXMzek54QzRPZE5iTjdPNjBqT3hzM29yMnh2OFcxSU1Vem8yY3Y3eF9ZWGxiUGdB?oc=5",
+      "outlet": "Plotek.pl",
+      "outletUrl": "https://www.plotek.pl",
+      "published": "2026-11-02T19:12:58.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "She dressed up as a person in homelessness crisis. Now she apologises",
+      "about": [
+        "PL"
       ]
     },
     {
@@ -199,30 +372,6 @@
       "outlets": 5,
       "trending": false,
       "en": "New information after the tragedy in Katowice. \"They were not married\"",
-      "about": [
-        "PL"
-      ]
-    },
-    {
-      "title": "\"Kompletne szaleństwo\". Wędrował przez 28 lat. Podróżnik dotarł do domu",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObm1DeHF1c21zV1VIaVlWM0hSYkVkcUx2RDNmTmVqV2psNTA4Q1YySUJGd1pEbUNjRmgzVC04VkNBTUJwa051eXJmMFphWENFWUwwemQ0R29ZSF9UR1hQOHRJWXRCdi1oUVVad0dndnRSdHpsODNDT3ZlZll6NkVQQVN5ZlE4Q3MxcmxCMUpWOFF4YVJuTElMR20zTEZiTXd2XzM0NWRXTkFOV09XNzd5N0ZoNzk?oc=5",
-      "outlet": "o2",
-      "outletUrl": "https://www.o2.pl",
-      "published": "2026-11-02T19:04:21.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"Complete madness\". He wandered for 28 years. Traveller reached home",
-      "about": []
-    },
-    {
-      "title": "Kapitalny gol w PKO Ekstraklasie",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOalROWkR3MFBPblM1bE5WRTVsYzZmdUVkMGZQWEFUU2RhWVFqWlFDektSTEVwZkJDdkVmOTJFWVQyeUJyVElEUzd4dDF5bXBxQlBVVzNCRUtnUUhiVUxibldiZENWeXQ5ZDltOThRS09lbWJ5VnRTNjZiV1BqTGpvWnJvZEtzYXBMYm9FLTJTbEplTmFvak9tZWUxU2U0c3FqdFdTRzBaTkVTYXEzRkdydndn?oc=5",
-      "outlet": "SportoweFakty",
-      "outletUrl": "https://sportowefakty.wp.pl",
-      "published": "2026-11-02T17:29:35.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Brilliant goal in the PKO Ekstraklasa",
       "about": [
         "PL"
       ]
@@ -242,162 +391,14 @@
       ]
     },
     {
-      "title": "Były prezes JSW ma nową pracę. Trafił do górniczego giganta",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdXd2cHJLYlFsZjdIQW9YUFNjUnI1dzZxWU5BanNvSHdlREFQMVV3NDVWSkNyZmlya0xfelNFOW11Z1FTYkRrSGJtV0RyTFRlTFZiOENYa1JNV3dVQzVuaVh0a3ItcjNFbS0yMGtyMzJkZjRpSDN0UGxqN1dBbkN6UDgxb1Y3Sk9MMWNOb2NyME14QzlyWlVCbEhNcnVuemVNOE5hUDQ1d1c1RUd5a2FlV19yVQ?oc=5",
-      "outlet": "Interia Biznes",
-      "outletUrl": "https://biznes.interia.pl",
-      "published": "2026-11-02T14:55:24.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Former president of JSW has a new job. He joined a mining giant",
-      "about": [
-        "PL"
-      ]
-    },
-    {
-      "title": "Policjanci z Niemiec przed TK? Komenda Główna Policji odpowiada",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUjROaXRKWVRHS2ZSNTN3VmNpcHNmaEtIX054TEtNOTJadnA0M19sSVUtVi1ZOFBBeFFESk00U3diSldNNXBHYV83LVJTYnV2cTJGTmtjdjlJREhUeUNpcFZMVThmSDUyQXdSamtnTzFVMWhkUGpnTHpSMG9peU0zckRJWldxWFJ5YWRuWUZJM2xrVmw5WHBJZFJET3JUTmo4MlN0LXhyOXc3d0NZcHloSUc4YWU?oc=5",
-      "outlet": "Wiadomości Onet",
-      "outletUrl": "https://wiadomosci.onet.pl",
-      "published": "2026-11-02T13:06:51.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Policemen from Germany before the TK? National Police Headquarters responds",
-      "about": [
-        "PL",
-        "DE"
-      ]
-    },
-    {
-      "title": "Iran stawia sprawę jasno ws. cieśniny Ormuz. Padł warunek dla USA",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOT09aY1hsUU1LakxzM3BXU2V1dlJUdmhOUnpuczR3Y2ZsbHg2cF9hOXUweGotR3czUV9VSHhKOU1MTmh0WlMzbGZuS3pQSXU3bXpNYXdyU0MwQ3BYYXRfc3A5U2hCMzBDQjV3ZEdHWlRUbHpCbTg2VjhOQ3pWWVNyX1lTQU4tcEVHSnFyRWVuYllXejRDbTZzdWlEcDBkcndnYzRxeTg4c05VZw?oc=5",
-      "outlet": "WP Wiadomości",
-      "outletUrl": "https://wiadomosci.wp.pl",
-      "published": "2026-11-02T13:43:17.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Iran makes its position clear on the Strait of Hormuz. A condition for the USA",
-      "about": [
-        "IR",
-        "US"
-      ]
-    },
-    {
-      "title": "Zagłębie Lubin - Korona Kielce gdzie oglądać? Stream online i transmisja na żywo w TV (02.11.2026)",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbW16blFsOUtYdlFwZWliVnRuak9OaWpmeVBQOFpVeHNWVG43aUdBNElPYjIyZFpia3RWVFEyemxRa05Tc2RyeXBaTGplc1hFa3lYSFNYQTJGRWRtdXQ4aUNKeVlPYUZGR0VqM3Rra1FBSm1Qb3FoS0Q3YVVKRkdnV1Rtc0dtTE8waUU0SUNpaXJlSWp0U2tHVEdDVV82Ymg4NGVNVFJZcWhxa2FBQ2dqQmVicFNhWklpMHdYbzFpSmFmOWZKcmF6Z1Z5S28tRHY3OGJlQW1xRnc?oc=5",
-      "outlet": "Meczyki.pl",
-      "outletUrl": "https://www.meczyki.pl",
-      "published": "2026-11-02T15:30:02.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Zagłębie Lubin - Korona Kielce where to watch? Online stream and live TV broadcast (02.11.2026)",
-      "about": [
-        "PL"
-      ]
-    },
-    {
-      "title": "Awantura wyborcza w USA. Ekipa Trumpa chce zadać cios w Kalifornii",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNHozS0FwMXlfcVEzakNnNGxTSDhrMExZdnUyMXRwR19XbWd1NFByZVFzY2NUMzMxbDJYcHMzeEVwRUpvTHJmYndaUUJ3Y3lOQ1JpUWhRVU1aQjI4UUxEVHFZQTFPTDkzWk1rWDNfZE1PTU14aEsxeUVERWlhaW5tNUV5c3g2MEJyZ0F1TFNvM2ZoME5PR1JoV2gtMTdYSUtrbTlualFSLTRIQQ?oc=5",
-      "outlet": "Wiadomości Onet",
-      "outletUrl": "https://wiadomosci.onet.pl",
-      "published": "2026-11-02T17:51:03.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Election row in the USA. Trump's team wants to deal a blow in California",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Stan podwyższonej gotowości w TK. W grze nowy scenariusz",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVnUxVzhkc3FkdHA3VnFBQWUyeU5adEoxVmo4MFV6TjNBU3RueEZ5M0otYW1hX1ltUzdpN1VJZlQ0OHUtaXZpcjRUbjBqNnc5bGJKWE83MEUzZlpya28tdk8zYUpWLWUxZEdqdHViZkRucWc1Z25qV0pLQlhWZ3VjYW1KNDlsYUVmOU02WUw1UlJnSVdYZDR2MnZUdw?oc=5",
-      "outlet": "Wiadomości Onet",
-      "outletUrl": "https://wiadomosci.onet.pl",
-      "published": "2026-11-02T18:16:27.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Heightened readiness alert at the TK. A new scenario in play",
-      "about": [
-        "PL"
-      ]
-    },
-    {
-      "title": "Wojna w Ukrainie. Ofensywa Rosjan na Zaporożu. Atak w rejonie kluczowego miasta",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMTBBd29NREJpR3paQzJ1MXdTZElZZ0lJLWlLeURkRmI5cGdTY3dqV1FtTjNwV1hYTEN0YnJ0UlNiTGRSQ1VibFJWUFdXbFdpZGw5S3pxUm5mWjBlRVBrNkVIYWJnb082M3NFaDVBSWhBeThadHBLZksxR21CZldELU4wbm9vd0lqRC1XTnJHLWlvNE1ndEdfY2RBaFI3ZFNLSncyQURnaVZDVWIwNjVxMGZIamhBMXNNWEVmV1VxcGotZw?oc=5",
+      "title": "Kryzys wokół Trybunału Konstytucyjnego. Miller i Morawiecki starli się w \"Wieczorze Rymanowskiego\"",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMXdiYjZVREdOOUtmcnZrUlJ1YUxyRHJFRnRDVl9NamVFUXFxR3pFRUhCVTJzS2J6RWt2Y3J0Q2dEQmExQWFCZTJrRWxCcVpCVjd4UnptNENmeGpDeE5mdThmRmg5eDJuRTI3ZEhYdnhaUHJYVVQ4U1FMcExZZVBrUHZhU3p6WW56X1pXYkxUYjVFM3RwWnZhcm8tLUZHakF6NzMxMllXSWRjWjVHeFZHSVZ5NzBoQVB6ZlJKT3VxZmdPVEZUSkktVWU3VzhtUWQ5QU9yMG5EMExteG8?oc=5",
       "outlet": "PolsatNews.pl",
       "outletUrl": "https://www.polsatnews.pl",
-      "published": "2026-11-02T17:43:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "War in Ukraine. Russian offensive on Zaporizhzhia. Attack in the area of a key city",
-      "about": [
-        "UA",
-        "RU"
-      ]
-    },
-    {
-      "title": "USA odpowiedziały Zełenskiemu w sprawie dostaw broni. Kluczowe pociski za kilka lat",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWVh2TEkzZDlXNG9Iek80YTZtMmNfOUkxdWxRNnVjNHB0TjcxRmdJdUN5LTJDQUtld2dkSDZZUk5jMjd5eEhNTFhERXhxZHctOU1nRlQycURvZWdIeS1ldWtOUU40bTJ5QVJQZ3otWWFVUVY5OFV4VFBRRFFhTExzM0ZWb1Q1aXRhMklOUTlDQW1EeEVyamlvZW00ZVI2OEIydnNvcUdiMG43N0Nxa1VEemhFbzA3RVVXRkxmd3RQSG1Ud1Vmc0hkT1RB?oc=5",
-      "outlet": "PolsatNews.pl",
-      "outletUrl": "https://www.polsatnews.pl",
-      "published": "2026-11-02T16:59:00.000Z",
+      "published": "2026-11-02T18:26:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "USA responded to Zelensky regarding weapons deliveries. Key missiles in a few years",
-      "about": [
-        "US",
-        "UA"
-      ]
-    },
-    {
-      "title": "Prezydencki minister o słowach Radosława Sikorskiego. \"Publicznie kłamie\"",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQb3hmWE5hOGhvcFhNU2M3OGJEWGthWC1PMGNlZVptSzh1UE8xTVZzTnJCc1NOck5qSUtDby10UEhDNWZ3bmFkYmZEXzIyYnhMQWNSVUdEMWUzX1dvTXpjeVo3V1BiZWJRX3VQN1hLYlNnLW9qRzhtNUlqWmxIVy11bjJpeDlUcW9KcUJScko1ZUd3Y1JZWWZqT25wWmtndURIMkhvbnkwSUlkOTdCZGM1dg?oc=5",
-      "outlet": "Wiadomości Onet",
-      "outletUrl": "https://wiadomosci.onet.pl",
-      "published": "2026-11-02T16:56:19.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Presidential minister on the words of Radosław Sikorski. \"He publicly lies\"",
-      "about": [
-        "PL"
-      ]
-    },
-    {
-      "title": "Specjalna operacja przy granicy z Królewcem. Policja spodziewa się prowokacji",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YcmVMLW5aSW5HLVhUN2FibjlzMXQ0VUlvZnhzQTd4bkZXZkhONERaVC0xaGI1TUszc2poTmNnVGZreHdVNmRvMm9JUkJpVU53V092MW5tYnpXNGZNWTdUZHRiVHljX0U?oc=5",
-      "outlet": "PolsatNews.pl",
-      "outletUrl": "https://www.polsatnews.pl",
-      "published": "2026-11-02T16:55:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Special operation at the border with Kaliningrad. Police expect provocation",
-      "about": [
-        "PL",
-        "RU"
-      ]
-    },
-    {
-      "title": "Wielka Brytania może wrócić do UE. Nieoficjalnie: oto specjalne warunki",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZnZSYU5tZklhdW1JTUZ4aXlWV1Yxc1BYeGVHNVF3WUJqMUZKNmZ5czN4TmVXUkJWT21teUI2QmhULU5vMGdHTXNXOWI5REIxazNMQ2taSjhNV2xrWm5JTG9WcEhJUlE3bjFCTWhNTVZXZmRNQV80VHFxNjBjTWI5TEx6QUFqemVOUlhDVDNabE9BclhDTEdkMldvaVBFQjNXRWo5bFFOVkU4SjllZHpIamJkUGZ1dHFxWG9lTUpReHp4Zw?oc=5",
-      "outlet": "Money.pl",
-      "outletUrl": "https://www.money.pl",
-      "published": "2026-11-02T16:48:20.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "United Kingdom may return to the EU. Unofficially: here are the special conditions",
-      "about": [
-        "GB"
-      ]
-    },
-    {
-      "title": "Zmiana na stacjach od wtorku. Minister ogłosił nowe ceny paliw",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeEVXSnlBLVRIeUVzeXZmVVFNc1RKU2NiSmU3ck1WUDM2YTM5QktzV19GalE3cjdkLXVoY1RWcjlCaFBGaTdvVGVjMzd0SXkydG9RRnBlTTA2dkt4Mm01X1pQTV9DSjk0aXk2V0U0WExhTXozVGQxRXNremZQcnd0NTRTWkJJeDhfZm5FVEFJRk9lc0kzVEJMR2xBeTAzcC1qcVQxbU40dU56aUFyOTB1MzlMcnczWms?oc=5",
-      "outlet": "Money.pl",
-      "outletUrl": "https://www.money.pl",
-      "published": "2026-11-02T12:07:45.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Change at petrol stations from Tuesday. Minister announced new fuel prices",
+      "en": "Crisis around the Constitutional Tribunal. Miller and Morawiecki clashed on \"Wieczór Rymanowskiego\"",
       "about": [
         "PL"
       ]

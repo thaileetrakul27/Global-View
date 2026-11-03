@@ -436,53 +436,44 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001343": {
-    "at": "2026-11-01T20:59:19.901Z",
+    "at": "2026-11-03T03:51:42.335Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Typhoon No. 31 (In-fa), a very strong storm, was near Japan's Ogasawara Islands as of 1 November 2026, 15:00 JST, moving slowly and possibly stalling there. Forecasts put its closest approach around 5–6 November, mainly bringing high swells and waves. No damage or casualties were reported.",
+    "searches": 4,
+    "summary": "Typhoon In-fa (Typhoon No. 31) formed on 23 Oct 2026 and was a strong typhoon south of Japan as of 3 Nov 2026, moving slowly west and northward near the Ogasawara waters. Weathernews reported 980 hPa central pressure and 30 m/s maximum sustained wind at 03:00 JST on 3 Nov. High waves and swell continue at the Ogasawara Islands, which may be close to the storm by 5 Nov. No damage, injuries or evacuations were reported there. Heavy rain is possible in eastern Japan around 5…",
     "ongoing": true,
     "places": [
       {
         "name": "Ogasawara Islands",
-        "admin": "Tokyo",
+        "admin": "Tokyo Metropolis",
         "country": "JP",
         "kind": "region",
-        "impact": "Waves and swell affecting islands; no damage reported"
-      },
-      {
-        "name": "Chichijima",
-        "admin": "Tokyo",
-        "country": "JP",
-        "kind": "town",
-        "impact": "Forecast closest approach; not yet affected"
-      },
-      {
-        "name": "Hahajima",
-        "admin": "Tokyo",
-        "country": "JP",
-        "kind": "town",
-        "impact": "Outer clouds overhead; strong winds not yet reached"
+        "impact": "high waves with swell continuing, strong winds"
       }
     ],
     "figures": [],
     "donation": [],
     "sources": [
       {
-        "name": "weathernews.jp",
-        "url": "https://weathernews.jp/news/202611/010181/",
-        "title": "非常に強い台風31号(インファ) 小笠原諸島は影響が長引くおそれ - ウェザーニュース"
+        "name": "news.infoseek.co.jp",
+        "url": "https://news.infoseek.co.jp/article/weathernews_202611030091/",
+        "title": "台風31号(インファ) 小笠原諸島は高波続く 週中頃は東日本に間接的な影響｜Infoseekニュース"
+      },
+      {
+        "name": "surf-life.blue",
+        "url": "https://www.surf-life.blue/weather/typhoon/",
+        "title": "台風31号の最新進路予想｜米軍JTWC・気象庁・ヨーロッパ比較｜Surf life"
       },
       {
         "name": "weathernews.jp",
-        "url": "https://weathernews.jp/news/202611/010071/",
-        "title": "非常に強い台風31号(インファ) 小笠原は週後半にかけて影響長引く - ウェザーニュース"
+        "url": "https://weathernews.jp/onebox/typhoon/news/",
+        "title": "最新の台風NEWSならウェザーニュース"
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-02T20:48:28.917Z",
-    "donationSearched": "2026-11-01T20:59:19.901Z",
-    "directSearched": "2026-11-01T20:59:19.901Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-03T03:51:42.335Z",
+    "directSearched": "2026-11-03T03:51:42.335Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-03T03:51:42.335Z"
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -584,103 +575,160 @@
     "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001346": {
-    "at": "2026-11-02T20:48:28.917Z",
+    "at": "2026-11-03T03:51:42.335Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [
-      {
-        "url": "https://www.indianredcross.org/ircs/donatenow/",
-        "org": "Indian Red Cross Society",
-        "kind": "society",
-        "note": "Indian Red Cross general donation page, not specific to this cyclone.",
-        "specific": false
-      }
-    ],
-    "sources": [],
-    "membersHash": "eonet,gdacs|IN#2d25d059",
-    "donationSearched": "2026-11-02T20:48:28.917Z",
-    "directSearched": "2026-11-02T20:48:28.917Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-02T20:48:28.917Z"
-  },
-  "gdacs-drought-dr-1018332": {
-    "at": "2026-10-31T13:07:11.023Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Drought affecting much of Europe. The EU's European Drought Observatory said conditions remained critical in most of Europe in mid-October 2026. Affected areas named include Austria, Belgium, Germany, Hungary and the Netherlands. The Energy and Climate Intelligence Unit reported $3.6 billion in European agricultural losses on 2 October 2026. The start date is unconfirmed: one Copernicus report says the drought began in May 2026.",
+    "searches": 3,
+    "summary": "Tropical Cyclone Murasu made landfall near Ongole in Prakasam district, Andhra Pradesh, India, in the early hours of 3 November 2026, according to the state disaster authority. Heavy rain and strong winds hit the coast. The IMD warned of continued heavy rainfall, and the storm was expected to weaken by noon. Schools closed in several districts. About 2,000 people were evacuated by 2 November.",
     "ongoing": true,
     "places": [
       {
-        "name": "Burgenland",
-        "country": "AT",
-        "kind": "region",
-        "impact": "state drought aid for livestock farms"
+        "name": "Prakasam",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Landfall near Ongole; heavy rain and very strong winds"
       },
       {
-        "name": "Upper Austria",
-        "country": "AT",
-        "kind": "region",
-        "impact": "drought aid package for farmers"
+        "name": "Kothapatnam Beach",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "site",
+        "impact": "Heavy rain and very strong winds during landfall"
       },
       {
-        "name": "Eastern Austria",
-        "country": "AT",
-        "kind": "region",
-        "impact": "crop losses up to 80%"
+        "name": "Vijayawada",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "city",
+        "impact": "Domestic flights cancelled"
       },
       {
-        "name": "Zeeland",
-        "country": "NL",
-        "kind": "region",
-        "impact": "farmland drying out"
+        "name": "Tirupati",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "city",
+        "impact": "Domestic flights cancelled"
       },
+      {
+        "name": "Visakhapatnam",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "city",
+        "impact": "Domestic flights cancelled"
+      },
+      {
+        "name": "Odisha",
+        "country": "IN",
+        "kind": "region",
+        "impact": "Evacuations from vulnerable areas; no cyclone impact reported"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Evacuated",
+        "value": "about 2,000",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/11/2/thousands-evacuated-as-india-braces-for-second-cyclone-in-a-week"
+      }
+    ],
+    "donation": [
+      {
+        "url": "https://www.indianredcross.org/ircs/donatenow/",
+        "org": "Indian Red Cross Society (IRCS)",
+        "kind": "society",
+        "note": "General IRCS donation page with bank details, not for this cyclone.",
+        "specific": false
+      }
+    ],
+    "sources": [
+      {
+        "name": "oneindia.com",
+        "url": "https://www.oneindia.com/india/cyclone-murasu-makes-landfall-in-andhra-pradesh-families-evacuated-to-relief-camps-8249331.html",
+        "title": "Cyclone Murasu Makes Landfall In Andhra Pradesh, Families Evacuated To Relief Camps - Oneindia News"
+      },
+      {
+        "name": "etvbharat.com",
+        "url": "https://www.etvbharat.com/en/bharat/live-blog--cyclone-murasu-live-updates-landfall-andhra-pradesh-coast-odisha-tamil-nadu-weather-update-enn26110300486",
+        "title": "Cyclone Murasu Live Updates: Landfall Underway As Rain, Winds Batter Andhra Coast; Cyclonic Storm To Weaken By Noon"
+      },
+      {
+        "name": "theweek.in",
+        "url": "https://www.theweek.in/news/india/2026/11/03/cyclone-murasu-landfall-andhra-pradesh.html",
+        "title": "Heavy rains lash Andhra coast as Cyclone Murasu makes landfall - The Week"
+      },
+      {
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/2/thousands-evacuated-as-india-braces-for-second-cyclone-in-a-week",
+        "title": "Thousands evacuated as India braces for second cyclone in a week"
+      },
+      {
+        "name": "english.punjabkesari.com",
+        "url": "https://english.punjabkesari.com/india/andhra-releases-rs37-crore-for-rescue-relief-as-cyclone-murasu-closes-in",
+        "title": "Andhra releases Rs 37 crore for rescue, relief as Cyclone 'Murasu' closes in - english.punjabkesari.com"
+      }
+    ],
+    "membersHash": "eonet,gdacs,news|IN#be338511",
+    "donationSearched": "2026-11-03T03:51:42.335Z",
+    "directSearched": "2026-11-03T03:51:42.335Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-03T03:51:42.335Z"
+  },
+  "gdacs-drought-dr-1018332": {
+    "at": "2026-11-03T03:51:42.335Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "A drought affecting much of Europe started on 21 December 2025, according to the GDACS feed. The EU Joint Research Centre said on 28 October 2026 that conditions remained critical in most of Europe. A 2 November forecast expected dry weather across much of Europe that week. Recovery was reported only in Scandinavia and central Northern Europe.",
+    "ongoing": true,
+    "places": [
       {
         "name": "Wallonia",
         "country": "BE",
         "kind": "region",
-        "impact": "water restrictions for shortages"
+        "impact": "Drought-related water restrictions"
       },
       {
         "name": "Brussels-Capital Region",
         "country": "BE",
         "kind": "region",
-        "impact": "code yellow drought alert"
+        "impact": "Yellow drought alert extended"
       },
       {
-        "name": "Boppard",
-        "country": "DE",
-        "kind": "town",
-        "impact": "low Rhine water levels"
+        "name": "Neuchâtel",
+        "country": "CH",
+        "kind": "region",
+        "impact": "Emergency measures for farmers"
       },
       {
-        "name": "Paks",
-        "country": "HU",
-        "kind": "town",
-        "impact": "low Danube water levels"
+        "name": "Schwyz",
+        "country": "CH",
+        "kind": "region",
+        "impact": "Emergency measures for farmers"
+      },
+      {
+        "name": "Po",
+        "country": "IT",
+        "kind": "site",
+        "impact": "Reportedly dried up, seawater intrusion"
       }
     ],
     "figures": [
       {
-        "label": "Agricultural losses",
-        "value": "$3.6 billion",
-        "sourceName": "thenationalnews.com",
-        "sourceUrl": "https://www.thenationalnews.com/news/europe/2026/10/02/record-breaking-heatwave-drought-cost-european-agriculture-36bn/"
+        "label": "Land in drought",
+        "value": "about 50% of EU and UK territory",
+        "sourceName": "newsahoot.com",
+        "sourceUrl": "https://newsahoot.com/articles/europe-drought-2026"
       },
       {
-        "label": "Territory under drought (EU and UK)",
-        "value": "50%, with 9% at alert level",
-        "sourceName": "smartwatermagazine.com",
-        "sourceUrl": "https://smartwatermagazine.com/news/newsroom/europes-rivers-hit-historic-lows-half-the-eu-and-uk-now-under-drought"
+        "label": "Wildfire area burnt",
+        "value": "nearly 580,000 hectares",
+        "sourceName": "wodnesprawy.pl",
+        "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
       },
       {
-        "label": "Water deficit",
-        "value": "69 km³ across 12 major river systems",
-        "sourceName": "eu-space.europa.eu",
-        "sourceUrl": "https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/europes-major-rivers-record-low-water-levels"
+        "label": "Farm aid announced by France",
+        "value": "more than €1 billion",
+        "sourceName": "thepigsite.com",
+        "sourceUrl": "https://www.thepigsite.com/news/2026/09/france-unveils-1-billion-aid-package-for-drought-hit-farmers"
       }
     ],
     "donation": [],
@@ -691,36 +739,36 @@
         "title": "EDO European Drought Observatory - Joint Research Centre"
       },
       {
-        "name": "farmweeknow.com",
-        "url": "https://www.farmweeknow.com/general/persistent-heat-and-drought-slash-eu-corn-production-in-2026/article_77f95ea0-5f92-46c9-a167-78718944806f.html",
-        "title": "Persistent heat and drought slash EU corn production in 2026"
+        "name": "newsy-today.com",
+        "url": "https://www.newsy-today.com/central-europe-faces-major-dry-weather-drought-threat/",
+        "title": "Central Europe Faces Major Dry Weather Drought Threat - Newsy Today"
       },
       {
-        "name": "burgenland.at",
-        "url": "https://www.burgenland.at/news-detail/duerrehilfe-2026-antraege-fuer-futterzukaufpraemie-koennen-ab-sofort-gestellt-werden",
-        "title": "Dürrehilfe 2026: Anträge für Futterzukaufprämie können ab sofort gestellt werden - Land Burgenland"
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_European_drought",
+        "title": "2026 European drought"
       },
       {
-        "name": "boerse-express.com",
-        "url": "https://www.boerse-express.com/news/articles/duerre-notfall-oesterreich-ernteausfaelle-bis-80-250-mio-euro-hilfe-944833",
-        "title": "Dürre-Notfall Österreich: Ernteausfälle bis 80%, 250 Mio. Euro Hilfe"
+        "name": "worldweatherattribution.org",
+        "url": "https://www.worldweatherattribution.org/increasingly-hot-europe-faces-more-severe-droughts-and-growing-challenges-for-water-and-land-management/",
+        "title": "Increasingly hot Europe faces more severe droughts and growing challenges for water and land management"
       },
       {
-        "name": "wodnesprawy.pl",
-        "url": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/",
-        "title": "The 2026 Drought in Europe. We Know the Risks, but We're Not Prepared"
+        "name": "globalimpact.earth",
+        "url": "https://globalimpact.earth/problem/europes-deepening-water-scarcity-crisis",
+        "title": "Water Shortages in Europe: 2026 Drought Crisis"
       },
       {
-        "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en",
-        "title": "Worsening drought and record heat grip Europe, fuelling extraordinary wildfires and extremely low river flows - Joint Research Centre"
+        "name": "newsahoot.com",
+        "url": "https://newsahoot.com/articles/europe-drought-2026",
+        "title": "The European Drought Crisis of 2026"
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-02T20:48:28.917Z",
-    "donationSearched": "2026-10-31T13:07:11.023Z",
-    "directSearched": "2026-10-31T13:07:11.023Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-03T03:51:42.335Z",
+    "directSearched": "2026-11-03T03:51:42.335Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-03T03:51:42.335Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-01T06:49:56.328Z",
@@ -796,41 +844,34 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-02T20:48:28.917Z",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-01T06:49:56.328Z",
     "directSearched": "2026-11-01T06:49:56.328Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-10-31T13:07:11.023Z",
+    "at": "2026-11-03T03:51:42.335Z",
     "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "A drought affecting East Africa and the Central Sahel began on 2026-05-21. The research notes could not be completed: no news, government or humanitarian source was retrieved. An automated alert feed, updated 2026-10-31, lists agricultural drought over 1,341,883 km² with medium impact across 13 countries. No specific affected places, figures or donation pages were confirmed.",
+    "searches": 4,
+    "summary": "",
     "ongoing": true,
     "places": [],
     "figures": [],
     "donation": [
       {
-        "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
-        "org": "IFRC with Ethiopian Red Cross Society",
+        "url": "https://member.redcrosseth.org/donate",
+        "org": "Ethiopian Red Cross Society",
         "kind": "society",
-        "note": "Ethiopia Drought Response DREF operation appeal (MDRET042), Ethiopia only.",
-        "specific": true
-      },
-      {
-        "url": "https://redcross.or.ke/drought-emergency-2026/",
-        "org": "Kenya Red Cross",
-        "kind": "society",
-        "note": "Kenya-only drought emergency page with a donate section for arid counties.",
+        "note": "General donation page for Ethiopian Red Cross Society, not specific to this drought.",
         "specific": false
       }
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-02T20:48:28.917Z",
-    "donationSearched": "2026-10-31T13:07:11.023Z",
-    "directSearched": "2026-11-01T15:38:18.986Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-03T03:51:42.335Z",
+    "directSearched": "2026-11-03T03:51:42.335Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-03T03:51:42.335Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -1413,7 +1454,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#b8254d0f",
-    "seen": "2026-11-02T20:48:28.917Z",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -4036,109 +4077,111 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-flood-fl-1104263": {
-    "at": "2026-10-30T19:53:42.295Z",
+    "at": "2026-11-03T03:51:42.335Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Flash floods hit eastern and northern Syria from 27 October 2026, mainly in Raqqa, Deir ez-Zor, Aleppo, Hasakah, Hama, Homs and Latakia provinces. Authorities reported seven deaths, including five children, and people missing. Search operations continued on 30 October, and forecasters expected more rain and storms through 31 October.",
+    "searches": 4,
+    "summary": "Flash floods and storms struck eastern Syria from 27-28 October 2026, affecting Raqqa, Deir ez-Zor, Hasakah, Aleppo, Idlib and other provinces. Reported deaths reach 7 and rescue operations were still ongoing as of 1 November, with flash floods still inundating farmland and homes in al-Kubar, Deir Ezzor.",
     "ongoing": true,
     "places": [
       {
-        "name": "al-Salmani Bridge",
+        "name": "Raqqa",
         "admin": "Raqqa",
         "country": "SY",
-        "kind": "site",
-        "impact": "collapsed, shutting road to Aleppo"
-      },
-      {
-        "name": "Raqqa",
-        "country": "SY",
         "kind": "region",
-        "impact": "deaths in rural areas, bridges unusable"
+        "impact": "Bridges and culverts collapsed, roads cut, two children drowned"
       },
       {
         "name": "Deir ez-Zor",
+        "admin": "Deir ez-Zor",
         "country": "SY",
         "kind": "region",
-        "impact": "deaths, fiber-optic lines damaged, culverts collapsed"
+        "impact": "Farmland flooded, roads cut off"
       },
       {
-        "name": "Aleppo",
+        "name": "Al-Kubar",
+        "admin": "Deir ez-Zor",
         "country": "SY",
-        "kind": "region",
-        "impact": "camps flooded, people missing"
+        "kind": "town",
+        "impact": "Flash floods inundating farmland and homes"
       },
       {
-        "name": "Hasakah",
+        "name": "Bir al-Hashm",
+        "admin": "Deir ez-Zor",
         "country": "SY",
-        "kind": "region",
-        "impact": "classes suspended"
+        "kind": "town",
+        "impact": "Cotton and maize farmland lost"
       },
       {
-        "name": "Hama",
+        "name": "Tabqa",
+        "admin": "Raqqa",
         "country": "SY",
-        "kind": "region",
-        "impact": "roads, bridges, public facilities damaged"
+        "kind": "town",
+        "impact": "Al-Salmani Bridge west of town collapsed"
       },
       {
-        "name": "Homs",
+        "name": "Kasrat Suroor",
+        "admin": "Raqqa",
         "country": "SY",
-        "kind": "region",
-        "impact": "roads, bridges, public facilities damaged"
+        "kind": "site",
+        "impact": "Over 100 families stranded after culvert collapsed"
       },
       {
-        "name": "Latakia",
+        "name": "Al-Talai camp",
+        "admin": "Hasakah",
         "country": "SY",
-        "kind": "region",
-        "impact": "roads, bridges, public facilities damaged"
+        "kind": "site",
+        "impact": "Tents flooded"
+      },
+      {
+        "name": "Kobani",
+        "admin": "Aleppo",
+        "country": "SY",
+        "kind": "town",
+        "impact": "Shepherd rescued in surrounding area"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "7",
-        "sourceName": "yahoo.com",
-        "sourceUrl": "https://www.yahoo.com/news/articles/five-children-among-seven-dead-185132334.html"
+        "sourceName": "usnews.com",
+        "sourceUrl": "https://www.usnews.com/news/world/articles/2026-10-30/five-children-among-seven-dead-in-eastern-syria-floods"
+      },
+      {
+        "label": "Injured",
+        "value": "7",
+        "sourceName": "usnews.com",
+        "sourceUrl": "https://www.usnews.com/news/world/articles/2026-10-30/five-children-among-seven-dead-in-eastern-syria-floods"
       },
       {
         "label": "Missing",
         "value": "5",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261030/5664c6871ae4449da3eb740f65453f84/c.html"
+        "sourceName": "usnews.com",
+        "sourceUrl": "https://www.usnews.com/news/world/articles/2026-10-30/five-children-among-seven-dead-in-eastern-syria-floods"
       },
       {
-        "label": "Families evacuated",
-        "value": "about 375",
-        "sourceName": "arabnews.com",
-        "sourceUrl": "https://www.arabnews.com/middle-east/flash-floods-sweep-6-syrian-provinces-forcing-families-from-camps-3008862"
-      },
-      {
-        "label": "Rescued",
-        "value": "15",
-        "sourceName": "syrianobserver.com",
-        "sourceUrl": "https://syrianobserver.com/society/deadly-flash-floods-paralyze-eastern-syria-15-rescued-hundreds-evacuated-across-six-provinces.html"
+        "label": "Evacuated families",
+        "value": "375 families",
+        "sourceName": "al-monitor.com",
+        "sourceUrl": "https://www.al-monitor.com/originals/2026/10/syria-flash-floods-kill-least-5-force-hundreds-families-camps"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "yahoo.com",
-        "url": "https://www.yahoo.com/news/articles/five-children-among-seven-dead-185132334.html",
-        "title": "Five children among seven dead in eastern Syria floods"
+        "name": "sana.sy",
+        "url": "https://sana.sy/en/syria/2355249",
+        "title": "Floods inundate 2,500 dunams in Deir Ezzor"
       },
       {
-        "name": "hawarnews.com",
-        "url": "https://hawarnews.com/en/floods-in-syria-kill-2-people-put-7-bridges-roads-out-of-service",
-        "title": "Floods in Syria kill 2 people, put 7 bridges, roads out of service -ANHA"
+        "name": "usnews.com",
+        "url": "https://www.usnews.com/news/world/articles/2026-10-30/five-children-among-seven-dead-in-eastern-syria-floods",
+        "title": "Five Children Among Seven Dead in Eastern Syria Floods"
       },
       {
         "name": "aljazeera.com",
         "url": "https://www.aljazeera.com/news/2026/10/30/flash-floods-kills-five-in-syria",
         "title": "Flash floods kill five in Syria"
-      },
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/20261030/5664c6871ae4449da3eb740f65453f84/c.html",
-        "title": "5 killed, 5 missing as flash floods hit several Syrian provinces-Xinhua"
       },
       {
         "name": "syrianobserver.com",
@@ -4147,10 +4190,10 @@
       }
     ],
     "membersHash": "gdacs,news|SY#82ae10ac",
-    "seen": "2026-10-31T23:50:36.261Z",
-    "donationSearched": "2026-10-30T19:53:42.295Z",
-    "directSearched": "2026-10-30T19:53:42.295Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-03T03:51:42.335Z",
+    "directSearched": "2026-11-03T03:51:42.335Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-03T03:51:42.335Z"
   },
   "gdacs-volcano-vo-1000150": {
     "at": "2026-10-22T01:04:05.836Z",
@@ -4265,7 +4308,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-02T20:48:28.917Z",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -4308,7 +4351,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-02T20:48:28.917Z",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -5818,7 +5861,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-02T20:48:28.917Z",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -6008,7 +6051,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-02T20:48:28.917Z",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-01T20:59:19.901Z",
     "directSearched": "2026-11-01T20:59:19.901Z",
     "directSearchVersion": 2,
@@ -6470,7 +6513,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-02T20:48:28.917Z",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -6579,63 +6622,45 @@
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
-    "at": "2026-10-31T00:14:33.222Z",
+    "at": "2026-11-03T03:51:42.335Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Flash floods struck Nuristan Province, Afghanistan, from 19 July 2026, with the worst damage in Parun City, the provincial capital. By 28 July, OCHA reported flood impacts across several regions, with Nuristan the most severely affected. Search-and-rescue operations were under way in late July; the notes do not say whether they ended. Death tolls in sources range from 20 to 31.",
+    "searches": 3,
+    "summary": "Flash floods struck Nuristan province, Afghanistan, from 19 July 2026, with the heaviest damage in the provincial capital Parun on 20 July. At least 20 deaths were reported early on, and a further flash flood on 22 July reportedly injured at least 30 people. Search operations for missing people were reported in late July, and an IFRC DREF operation opened on 1 August. No source gives a status after early August.",
     "ongoing": true,
     "places": [
       {
-        "name": "Parun City",
+        "name": "Parun",
         "admin": "Nuristan",
         "country": "AF",
         "kind": "city",
-        "impact": "Worst devastation; residential and commercial areas hit"
+        "impact": "overwhelmed; municipality reportedly completely destroyed"
       },
       {
         "name": "Mandol",
         "admin": "Nuristan",
         "country": "AF",
         "kind": "district",
-        "impact": "Flash floods damaged houses, roads and farmland; 30 injured"
+        "impact": "six houses, roads, farmland damaged"
       },
       {
         "name": "Torkham",
         "country": "AF",
         "kind": "site",
-        "impact": "Flooding at returnee transit camp killed three"
+        "impact": "movement disrupted; three refugees died nearby"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "at least 26",
-        "sourceName": "news.un.org",
-        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
-      },
-      {
-        "label": "Missing",
-        "value": "more than 100",
-        "sourceName": "atlaspress.news",
-        "sourceUrl": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/"
+        "value": "at least 20",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan"
       },
       {
         "label": "Injured",
-        "value": "9",
-        "sourceName": "news.un.org",
-        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
-      },
-      {
-        "label": "People affected",
-        "value": "more than 15,000 people",
-        "sourceName": "humanitariancoalition.ca",
-        "sourceUrl": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods"
-      },
-      {
-        "label": "Houses destroyed",
-        "value": "22, with 45 more severely damaged",
-        "sourceName": "news.un.org",
-        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
+        "value": "at least 30",
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
       }
     ],
     "donation": [],
@@ -6646,53 +6671,53 @@
         "title": "Floods in Nuristan Province, Afghanistan, July 2026 - News"
       },
       {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan",
-        "title": "Monsoon-driven flash flooding kills at least 20 in Afghanistan"
-      },
-      {
         "name": "news.un.org",
         "url": "https://news.un.org/en/story/2026/07/1167996",
         "title": "Deadly Afghanistan floods kill at least 26 as aid agencies race to reach survivors"
+      },
+      {
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan",
+        "title": "Monsoon-driven flash flooding kills at least 20 in Afghanistan"
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-02T20:48:28.917Z",
-    "donationSearched": "2026-10-31T00:14:33.222Z",
-    "directSearched": "2026-10-31T00:14:33.222Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
         "org": "Penny Appeal USA",
         "kind": "local",
-        "note": "Emergency aid for Nuristan flood survivors, with one-time or monthly gifts.",
+        "note": "Nuristan flood relief for Parun and nearby villages, with quick-donate option.",
         "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan - Penny Appeal USA",
-        "published": "2026-07-25T00:14:33.222Z"
+        "published": "2026-07-25T03:51:42.335Z"
+      },
+      {
+        "url": "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/",
+        "org": "Famidi",
+        "kind": "local",
+        "note": "Safe water, food, shelter, medical support and transport based on verified needs.",
+        "title": "Nuristan Flood Emergency: Famidi activates local response",
+        "published": "2026-07-25T03:51:42.335Z"
       },
       {
         "url": "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal",
         "org": "Hayrat Aid",
         "kind": "local",
-        "note": "Shelter, food, clean water and basic supplies for Nuristan flood victims.",
+        "note": "Emergency appeal for flood relief; page title mentions earthquake, verify.",
         "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
       },
       {
         "url": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods",
         "org": "Humanitarian Coalition",
         "kind": "local",
-        "note": "Cash assistance of about $170 for flood-hit households in Nuristan and Nangarhar.",
+        "note": "Cash assistance for flood-hit households in Nuristan and Nangarhar, with Community World Service Asia.",
         "title": "Afghanistan: Nuristan Floods"
-      },
-      {
-        "url": "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/",
-        "org": "Famidi",
-        "kind": "local",
-        "note": "Safe water, food, shelter and medical support in Parun.",
-        "title": "Nuristan Flood Emergency: Famidi activates local response",
-        "published": "2026-07-25T00:14:33.222Z"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-03T03:51:42.335Z",
+    "directSearched": "2026-11-03T03:51:42.335Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-03T03:51:42.335Z"
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6936,7 +6961,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-02T20:48:28.917Z",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -7426,7 +7451,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-02T20:48:28.917Z",
+    "seen": "2026-11-03T03:51:42.335Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -10659,58 +10684,42 @@
     "membersHash": "usgs|PA#bb438b36"
   },
   "usgs-earthquake-us6000u2y1": {
-    "at": "2026-10-31T13:07:11.023Z",
+    "at": "2026-11-03T03:51:42.335Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 5.7 earthquake struck near Khuzdar in Pakistan's Balochistan province on 17 October 2026. Magnitude estimates differ by source, from 5.6 to 5.9. One person was killed by a falling rock in Naal, and several mud houses were damaged in Khuzdar district. Tremors were felt in Kalat and Surab. Reports date from 17 to 18 October, and no later updates were found.",
-    "ongoing": false,
+    "summary": "A magnitude 5.7 earthquake struck near Khuzdar, Balochistan, Pakistan, on 17 October 2026 at about 10:06 local time, according to USGS. Other agencies gave magnitudes from 5.6 to 5.9. Tremors were felt in Khuzdar district and surrounding areas. One man was reportedly killed by a falling rock in the Naal area, and several mud houses were severely damaged. The newest report found is dated 18 October 2026, and no continuing effects were reported after that.",
+    "ongoing": true,
     "places": [
       {
-        "name": "Khuzdar",
+        "name": "Khuzdar district",
         "admin": "Balochistan",
         "country": "PK",
         "kind": "district",
-        "impact": "Epicentre area; several mud houses damaged"
+        "impact": "tremors felt, residents left homes"
       },
       {
-        "name": "Naal",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "district",
-        "impact": "One person killed by falling rock"
-      },
-      {
-        "name": "Kalat",
+        "name": "Naal area",
         "admin": "Balochistan",
         "country": "PK",
         "kind": "town",
-        "impact": "Tremors felt"
-      },
-      {
-        "name": "Surab",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "town",
-        "impact": "Tremors felt"
+        "impact": "rockfall killed one man"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "1",
-        "sourceName": "dawn.com",
-        "sourceUrl": "https://www.dawn.com/news/2037912/one-dead-as-earthquake-jolts-khuzdar"
-      },
-      {
-        "label": "Houses damaged",
-        "value": "several mud houses",
-        "sourceName": "dawn.com",
-        "sourceUrl": "https://www.dawn.com/news/2037912/one-dead-as-earthquake-jolts-khuzdar"
+        "sourceName": "freepressjournal.in",
+        "sourceUrl": "https://www.freepressjournal.in/world/pakistan-earthquake-of-magnitude-59-hits-balochistans-khuzdar-1-killed-as-rockfall-damages-region"
       }
     ],
     "donation": [],
     "sources": [],
-    "membersHash": "usgs|PK#62eeb9a4"
+    "membersHash": "usgs|PK#62eeb9a4",
+    "donationSearched": "2026-11-03T03:51:42.335Z",
+    "directSearched": "2026-11-03T03:51:42.335Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-03T03:51:42.335Z"
   },
   "usgs-earthquake-us6000u4j2": {
     "at": "2026-10-24T21:17:31.742Z",
