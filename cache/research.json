@@ -331,44 +331,45 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001343": {
-    "at": "2026-11-03T03:51:42.335Z",
+    "at": "2026-11-04T09:50:31.196Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Typhoon In-fa (Typhoon No. 31) formed on 23 Oct 2026 and was a strong typhoon south of Japan as of 3 Nov 2026, moving slowly west and northward near the Ogasawara waters. Weathernews reported 980 hPa central pressure and 30 m/s maximum sustained wind at 03:00 JST on 3 Nov. High waves and swell continue at the Ogasawara Islands, which may be close to the storm by 5 Nov. No damage, injuries or evacuations were reported there. Heavy rain is possible in eastern Japan around 5…",
+    "searches": 3,
+    "summary": "Typhoon In-fa (Typhoon No. 31) started on 23 October 2026 and is ongoing as of 4 November. On 4 November it was moving slowly over waters southwest of the Ogasawara Islands, per the JMA. Its closest approach is forecast for Thursday 5 November, with high waves, strong winds and heavy rain expected. No injuries, flooding, evacuations or damage have been reported. The storm is not expected to hit Honshu directly.",
     "ongoing": true,
     "places": [
       {
         "name": "Ogasawara Islands",
         "admin": "Tokyo Metropolis",
         "country": "JP",
+        "kind": "district",
+        "impact": "Waves and wind forecast; no damage reported"
+      },
+      {
+        "name": "Kanto region",
+        "country": "JP",
         "kind": "region",
-        "impact": "high waves with swell continuing, strong winds"
+        "impact": "Rain forecast to intensify; no damage reported"
       }
     ],
     "figures": [],
     "donation": [],
     "sources": [
       {
-        "name": "news.infoseek.co.jp",
-        "url": "https://news.infoseek.co.jp/article/weathernews_202611030091/",
-        "title": "台風31号(インファ) 小笠原諸島は高波続く 週中頃は東日本に間接的な影響｜Infoseekニュース"
-      },
-      {
-        "name": "surf-life.blue",
-        "url": "https://www.surf-life.blue/weather/typhoon/",
-        "title": "台風31号の最新進路予想｜米軍JTWC・気象庁・ヨーロッパ比較｜Surf life"
+        "name": "japantimes.co.jp",
+        "url": "https://www.japantimes.co.jp/news/2026/11/04/japan/typhoon-infa/",
+        "title": "High waves around Ogasawara Islands expected as Typhoon In-fa approaches - The Japan Times"
       },
       {
         "name": "weathernews.jp",
-        "url": "https://weathernews.jp/onebox/typhoon/news/",
-        "title": "最新の台風NEWSならウェザーニュース"
+        "url": "https://weathernews.jp/news/202611/040021/",
+        "title": "台風31号(インファ) 強い勢力に発達し小笠原諸島へ 関東付近も雨が強まる可能性 - ウェザーニュース"
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-04T01:03:04.924Z",
-    "donationSearched": "2026-11-03T03:51:42.335Z",
-    "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-04T09:50:31.196Z",
+    "directSearched": "2026-11-04T09:50:31.196Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-04T09:50:31.196Z"
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -470,10 +471,10 @@
     "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001346": {
-    "at": "2026-11-03T03:51:42.335Z",
+    "at": "2026-11-04T09:50:31.196Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Tropical Cyclone Murasu made landfall near Ongole in Prakasam district, Andhra Pradesh, India, in the early hours of 3 November 2026, according to the state disaster authority. Heavy rain and strong winds hit the coast. The IMD warned of continued heavy rainfall, and the storm was expected to weaken by noon. Schools closed in several districts. About 2,000 people were evacuated by 2 November.",
+    "searches": 4,
+    "summary": "Tropical Cyclone Murasu crossed the south Andhra Pradesh coast near Ongole, India, in the early morning. As of 4 November 2026 it had weakened into a depression over east Telangana and coastal Andhra Pradesh. The state disaster authority reports at least two deaths and 12,230 people still in cyclone shelters. Power infrastructure was damaged and crops were inundated across several districts.",
     "ongoing": true,
     "places": [
       {
@@ -481,92 +482,145 @@
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Landfall near Ongole; heavy rain and very strong winds"
+        "impact": "Landfall near Ongole; power infrastructure damaged"
       },
       {
-        "name": "Kothapatnam Beach",
+        "name": "Bapatla",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "site",
-        "impact": "Heavy rain and very strong winds during landfall"
+        "kind": "district",
+        "impact": "Trees uprooted; houses and farms damaged"
       },
       {
-        "name": "Vijayawada",
+        "name": "Krishna",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "city",
-        "impact": "Domestic flights cancelled"
+        "kind": "district",
+        "impact": "Crops inundated"
       },
       {
-        "name": "Tirupati",
+        "name": "Nandyal",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "city",
-        "impact": "Domestic flights cancelled"
+        "kind": "district",
+        "impact": "Crops inundated"
       },
       {
-        "name": "Visakhapatnam",
+        "name": "Guntur",
         "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "city",
-        "impact": "Domestic flights cancelled"
+        "kind": "district",
+        "impact": "Among worst affected for shelter use"
       },
       {
-        "name": "Odisha",
+        "name": "Palnadu",
+        "admin": "Andhra Pradesh",
         "country": "IN",
-        "kind": "region",
-        "impact": "Evacuations from vulnerable areas; no cyclone impact reported"
+        "kind": "district",
+        "impact": "Among worst affected for shelter use"
+      },
+      {
+        "name": "Kothapatnam",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "town",
+        "impact": "Visuals reported after landfall near Ongole"
+      },
+      {
+        "name": "Cuddalore",
+        "admin": "Tamil Nadu",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Schools closed after heavy rainfall"
       }
     ],
     "figures": [
       {
-        "label": "Evacuated",
-        "value": "about 2,000",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/11/2/thousands-evacuated-as-india-braces-for-second-cyclone-in-a-week"
+        "label": "Deaths",
+        "value": "at least 2",
+        "sourceName": "thehitavada.com",
+        "sourceUrl": "https://www.thehitavada.com/Encyc/2026/11/4/cyclone-murasu-kills-2-in-ap-damages-crops-power-lines.html"
+      },
+      {
+        "label": "In shelters",
+        "value": "12,230 people",
+        "sourceName": "thehitavada.com",
+        "sourceUrl": "https://www.thehitavada.com/Encyc/2026/11/4/cyclone-murasu-kills-2-in-ap-damages-crops-power-lines.html"
+      },
+      {
+        "label": "Houses affected",
+        "value": "312",
+        "sourceName": "thehitavada.com",
+        "sourceUrl": "https://www.thehitavada.com/Encyc/2026/11/4/cyclone-murasu-kills-2-in-ap-damages-crops-power-lines.html"
+      },
+      {
+        "label": "Crops affected",
+        "value": "52,459 hectares",
+        "sourceName": "nationalheraldindia.com",
+        "sourceUrl": "https://www.nationalheraldindia.com/national/cyclone-murasu-kills-two-in-andhra-pradesh-damages-crops-across-52000-hectares"
+      },
+      {
+        "label": "Economic loss",
+        "value": "Rs 344 crore (preliminary)",
+        "sourceName": "english.dainikjagranmpcg.com",
+        "sourceUrl": "https://english.dainikjagranmpcg.com/national/cyclone-murasu-weakens-after-andhra-pradesh-landfall-two-dead-damage/article-42768"
       }
     ],
     "donation": [
       {
         "url": "https://www.indianredcross.org/ircs/donatenow/",
-        "org": "Indian Red Cross Society (IRCS)",
+        "org": "Indian Red Cross Society",
         "kind": "society",
-        "note": "General IRCS donation page with bank details, not for this cyclone.",
+        "note": "General Indian Red Cross donation page; not specific to this cyclone.",
+        "specific": false
+      },
+      {
+        "url": "https://www.ifrc.org/donate",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "General IFRC donation page for global work and specific emergencies.",
+        "specific": false
+      },
+      {
+        "url": "https://crisisrelief.un.org/en/",
+        "org": "UN OCHA",
+        "kind": "un",
+        "note": "General UN OCHA pooled fund page for worldwide crises.",
         "specific": false
       }
     ],
     "sources": [
       {
-        "name": "oneindia.com",
-        "url": "https://www.oneindia.com/india/cyclone-murasu-makes-landfall-in-andhra-pradesh-families-evacuated-to-relief-camps-8249331.html",
-        "title": "Cyclone Murasu Makes Landfall In Andhra Pradesh, Families Evacuated To Relief Camps - Oneindia News"
+        "name": "vajiramandravi.com",
+        "url": "https://vajiramandravi.com/current-affairs/cyclone-murasu-2026/",
+        "title": "Cyclone Murasu 2026, Tracker, Affected Areas, Warnings, Latest Updates"
+      },
+      {
+        "name": "thehitavada.com",
+        "url": "https://www.thehitavada.com/Encyc/2026/11/4/cyclone-murasu-kills-2-in-ap-damages-crops-power-lines.html",
+        "title": "Cyclone Murasu kills 2 in AP, damages crops; power lines - The Hitavada"
+      },
+      {
+        "name": "downtoearth.org.in",
+        "url": "https://www.downtoearth.org.in/climate-change/cyclone-murasu-second-severe-cyclonic-storm-in-a-week-leaves-a-trail-of-destruction-along-andhra-pradesh-coast",
+        "title": "Cyclone Murasu: Second severe cyclonic storm in a week leaves a trail of destruction along Andhra Pradesh coast"
+      },
+      {
+        "name": "nationalheraldindia.com",
+        "url": "https://www.nationalheraldindia.com/national/cyclone-murasu-kills-two-in-andhra-pradesh-damages-crops-across-52000-hectares",
+        "title": "Cyclone Murasu kills two in Andhra Pradesh, damages crops across 52,000 hectares"
       },
       {
         "name": "etvbharat.com",
         "url": "https://www.etvbharat.com/en/bharat/live-blog--cyclone-murasu-live-updates-landfall-andhra-pradesh-coast-odisha-tamil-nadu-weather-update-enn26110300486",
-        "title": "Cyclone Murasu Live Updates: Landfall Underway As Rain, Winds Batter Andhra Coast; Cyclonic Storm To Weaken By Noon"
-      },
-      {
-        "name": "theweek.in",
-        "url": "https://www.theweek.in/news/india/2026/11/03/cyclone-murasu-landfall-andhra-pradesh.html",
-        "title": "Heavy rains lash Andhra coast as Cyclone Murasu makes landfall - The Week"
-      },
-      {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/11/2/thousands-evacuated-as-india-braces-for-second-cyclone-in-a-week",
-        "title": "Thousands evacuated as India braces for second cyclone in a week"
-      },
-      {
-        "name": "english.punjabkesari.com",
-        "url": "https://english.punjabkesari.com/india/andhra-releases-rs37-crore-for-rescue-relief-as-cyclone-murasu-closes-in",
-        "title": "Andhra releases Rs 37 crore for rescue, relief as Cyclone 'Murasu' closes in - english.punjabkesari.com"
+        "title": "Cyclone Murasu LIVE"
       }
     ],
-    "membersHash": "eonet,gdacs,news|IN#be338511",
-    "seen": "2026-11-04T01:03:04.924Z",
-    "donationSearched": "2026-11-03T03:51:42.335Z",
-    "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2
+    "membersHash": "eonet,gdacs|IN#2d25d059",
+    "donationSearched": "2026-11-04T09:50:31.196Z",
+    "directSearched": "2026-11-04T09:50:31.196Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-04T09:50:31.196Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-03T03:51:42.335Z",
@@ -660,7 +714,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
     "directSearchVersion": 2
@@ -790,7 +844,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-03T19:56:18.676Z",
     "directSearched": "2026-11-03T19:56:18.676Z",
     "directSearchVersion": 2
@@ -814,7 +868,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
     "directSearchVersion": 2
@@ -1153,83 +1207,6 @@
     "membersHash": "gdacs,usgs|US#dc9009ba",
     "seen": "2026-10-25T07:59:52.974Z"
   },
-  "gdacs-earthquake-eq-1571917": {
-    "at": "2026-10-21T05:12:20.084Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A magnitude 6.9 earthquake struck about 76 km northeast of Ozernovskiy on the Kamchatka Peninsula, Russia, on 16 October 2026, at a depth of about 143 km per USGS. Russia's Ministry of Emergency Situations reported tremors felt in several Kamchatka Krai locations, with no injuries, infrastructure damage or tsunami warning. The latest source found is dated 17 October 2026, and no reports of continuing effects from 18 to 21 October were found.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Petropavlovsk-Kamchatsky",
-        "admin": "Kamchatka Krai",
-        "country": "RU",
-        "kind": "city",
-        "impact": "tremors felt"
-      },
-      {
-        "name": "Ust-Kamchatsky",
-        "admin": "Kamchatka Krai",
-        "country": "RU",
-        "kind": "town",
-        "impact": "tremors felt"
-      },
-      {
-        "name": "Aleutsky",
-        "admin": "Kamchatka Krai",
-        "country": "RU",
-        "kind": "district",
-        "impact": "tremors felt"
-      },
-      {
-        "name": "Vilyuchinsk",
-        "admin": "Kamchatka Krai",
-        "country": "RU",
-        "kind": "town",
-        "impact": "tremors felt"
-      },
-      {
-        "name": "Yelizovsky",
-        "admin": "Kamchatka Krai",
-        "country": "RU",
-        "kind": "district",
-        "impact": "tremors felt"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Shaking estimate, moderate",
-        "value": "14,000 people",
-        "sourceName": "watchers.news",
-        "sourceUrl": "https://watchers.news/2026/10/16/strong-m6-9-earthquake-hits-kamchatka-peninsula-russia/"
-      },
-      {
-        "label": "Shaking estimate, light",
-        "value": "214,000 people",
-        "sourceName": "watchers.news",
-        "sourceUrl": "https://watchers.news/2026/10/16/strong-m6-9-earthquake-hits-kamchatka-peninsula-russia/"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "bernama.com",
-        "url": "https://www.bernama.com/en/world/news.php?id=2621296",
-        "title": "BERNAMA - Magnitude 6.9 Earthquake Strikes Russia's Kamchatka Peninsula"
-      },
-      {
-        "name": "news.az",
-        "url": "https://news.az/news/69-magnitude-quake-strikes-russia-s-kamchatka",
-        "title": "6.9-magnitude quake strikes Russia's Kamchatka"
-      },
-      {
-        "name": "watchers.news",
-        "url": "https://watchers.news/2026/10/16/strong-m6-9-earthquake-hits-kamchatka-peninsula-russia/",
-        "title": "Strong M6.9 earthquake hits Kamchatka Peninsula, Russia - The Watchers"
-      }
-    ],
-    "membersHash": "gdacs,usgs|RU#d9831494"
-  },
   "gdacs-earthquake-eq-1572122": {
     "at": "2026-10-28T23:02:19.626Z",
     "model": "claude-haiku-5-5",
@@ -1416,7 +1393,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#b8254d0f",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-03T12:23:05.958Z",
     "directSearched": "2026-11-03T12:23:05.958Z",
     "directSearchVersion": 2
@@ -4248,7 +4225,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -4291,7 +4268,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -4440,18 +4417,6 @@
     ],
     "membersHash": "gdacs|AU#383137aa",
     "seen": "2026-10-24T17:51:09.606Z"
-  },
-  "gdacs-wildfire-wf-1032556": {
-    "at": "2026-10-21T05:12:20.084Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": false,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|AU#3a337967"
   },
   "gdacs-wildfire-wf-1032639": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -5801,7 +5766,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -6010,10 +5975,10 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-04T01:03:04.924Z",
     "directSearched": "2026-11-04T01:03:04.924Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-04T01:03:04.924Z"
+    "directSearchVersion": 2
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -6411,7 +6376,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -6580,7 +6545,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
     "directSearchVersion": 2,
@@ -6859,7 +6824,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -7349,7 +7314,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -8611,119 +8576,6 @@
     ],
     "membersHash": "news|JP#3b3402c1"
   },
-  "news-earthquake-earthquake-pa-32b0fa90e3": {
-    "at": "2026-10-21T00:11:24.613Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "On 9 October 2026, a magnitude 7.7 earthquake (USGS; Panama's geoscience institute gave 7.5) struck southern Panama, followed by a 6.6 aftershock. SINAPROC reported one death, 27 injured and more than 20,000 people affected as of 16 October. Inspections of homes and schools continue in Azuero and other provinces.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Los Santos",
-        "country": "PA",
-        "kind": "region",
-        "impact": "3,268 homes evaluated; collapsed houses reported"
-      },
-      {
-        "name": "Herrera",
-        "country": "PA",
-        "kind": "region",
-        "impact": "1,556 homes partly damaged; 411 totally damaged"
-      },
-      {
-        "name": "Penonomé",
-        "admin": "Coclé",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Regional government building and cathedral damaged"
-      },
-      {
-        "name": "Veraguas",
-        "country": "PA",
-        "kind": "region",
-        "impact": "Power and telecommunication outages continue"
-      },
-      {
-        "name": "Bocas del Toro",
-        "country": "PA",
-        "kind": "region",
-        "impact": "27 homes assessed; 25 schools affected"
-      },
-      {
-        "name": "Pitaloza Arriba",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Epicentre area, about 7 miles southwest"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "1",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
-      },
-      {
-        "label": "Injured",
-        "value": "27",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
-      },
-      {
-        "label": "Homes evaluated",
-        "value": "7,406",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
-      },
-      {
-        "label": "People affected",
-        "value": "more than 20,000",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
-      },
-      {
-        "label": "Homes with total damage",
-        "value": "407",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-14/"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "tvn-2.com",
-        "url": "https://www.tvn-2.com/nacionales/provincias/temblor-panama-sinaproc-evalua-viviendas-afectadas-bocas-del-toro_1_2267001.html",
-        "title": "Temblor en Panamá: Sinaproc evalúa viviendas afectadas por el sismo en zonas comarcales e insulares"
-      },
-      {
-        "name": "critica.com.pa",
-        "url": "https://www.critica.com.pa/nacional/cruz-roja-destina-745-mil-para-familias-afectadas-por-el-sismo-en-azuero-518289",
-        "title": "Cruz Roja destina $745 mil para familias afectadas por el sismo en Azuero"
-      },
-      {
-        "name": "telemetro.com",
-        "url": "https://www.telemetro.com/nacionales/sismo-panama-sinaproc-cumple-10-dias-operaciones-ininterrumpidas-n6095643",
-        "title": "Sismo en Panamá"
-      },
-      {
-        "name": "sinaproc.gob.pa",
-        "url": "https://www.sinaproc.gob.pa/comunicado-oficial-13/",
-        "title": "Comunicado Oficial #13 - Sinaproc"
-      },
-      {
-        "name": "abcnews.com",
-        "url": "https://abcnews.com/International/tsunami-threat-after-76-magnitude-earthquake-reported-panama/story?id=137140557",
-        "title": "7.7 magnitude earthquake shakes Panama - ABC News"
-      },
-      {
-        "name": "pa.usembassy.gov",
-        "url": "https://pa.usembassy.gov/natural-disaster-alert-panama-earthquake-update-1-october-10-2026/",
-        "title": "Natural Disaster Alert: Panama Earthquake Update 1"
-      }
-    ],
-    "membersHash": "news|PA#887f142d",
-    "seen": "2026-10-21T05:12:20.084Z"
-  },
   "news-earthquake-earthquake-pa-4994c1646f": {
     "at": "2026-10-22T08:03:09.184Z",
     "model": "claude-haiku-5-5",
@@ -9759,121 +9611,6 @@
     "membersHash": "news|CA#7511e31f",
     "seen": "2026-10-22T18:59:49.151Z"
   },
-  "news-storm-storm-es-b2f07fd3a3": {
-    "at": "2026-10-21T00:11:24.613Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Storm Adam (DANA Adam) hit eastern Spain from 19 October 2026, causing flooding, evacuations and rescues, mainly in Valencia and Alicante provinces. Sources report at least four deaths, though counts differ between outlets. Rain has eased, and confinement orders for 145 municipalities were lifted on 19–20 October. Clean-up has started. AEMET warnings remained in Catalonia and the Balearics on 20 October.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Oliva",
-        "admin": "Valencia",
-        "country": "ES",
-        "kind": "town",
-        "impact": "Two deaths, homes flooded, main shelter"
-      },
-      {
-        "name": "Pego",
-        "admin": "Valencia",
-        "country": "ES",
-        "kind": "town",
-        "impact": "Flooded, floodwater entered streets and buildings"
-      },
-      {
-        "name": "Forna",
-        "admin": "Valencia",
-        "country": "ES",
-        "kind": "town",
-        "impact": "Floodwater entered streets and buildings"
-      },
-      {
-        "name": "Denia",
-        "admin": "Valencia",
-        "country": "ES",
-        "kind": "city",
-        "impact": "Floodwater entered streets and buildings"
-      },
-      {
-        "name": "Gandia",
-        "admin": "Valencia",
-        "country": "ES",
-        "kind": "city",
-        "impact": "Floodwater entered streets and buildings"
-      },
-      {
-        "name": "Sagunto",
-        "admin": "Valencia",
-        "country": "ES",
-        "kind": "town",
-        "impact": "One woman died after entering the sea"
-      },
-      {
-        "name": "Javea",
-        "admin": "Alicante",
-        "country": "ES",
-        "kind": "town",
-        "impact": "About 100 people evacuated"
-      },
-      {
-        "name": "Xàbia",
-        "admin": "Alicante",
-        "country": "ES",
-        "kind": "town",
-        "impact": "Shelter used by 23 people"
-      },
-      {
-        "name": "Cabrera de Mar",
-        "admin": "Barcelona",
-        "country": "ES",
-        "kind": "town",
-        "impact": "One death"
-      },
-      {
-        "name": "Benaoján",
-        "admin": "Málaga",
-        "country": "ES",
-        "kind": "town",
-        "impact": "Death from falling rock, not linked to storm"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "at least four",
-        "sourceName": "plataformamedia.com",
-        "sourceUrl": "https://www.plataformamedia.com/en/2026/10/20/dana-adam-floods-leaves-four-dead-and-thousands-evacuated-valencia-spain-rain/"
-      },
-      {
-        "label": "Evacuated",
-        "value": "more than 2,000 people",
-        "sourceName": "plataformamedia.com",
-        "sourceUrl": "https://www.plataformamedia.com/en/2026/10/20/dana-adam-floods-leaves-four-dead-and-thousands-evacuated-valencia-spain-rain/"
-      },
-      {
-        "label": "Rescues",
-        "value": "more than 1,000",
-        "sourceName": "watchers.news",
-        "sourceUrl": "https://watchers.news/2026/10/20/four-deaths-reported-as-dana-adam-flooding-prompts-more-than-1-000-rescues-in-eastern-spain/"
-      },
-      {
-        "label": "Incidents",
-        "value": "1,876 across the Valencian Community",
-        "sourceName": "notiulti.com",
-        "sourceUrl": "https://www.notiulti.com/la-dana-adam-deja-cinco-muertos-y-1-876-incidentes-en-c-valenciana/"
-      },
-      {
-        "label": "Injured",
-        "value": "three people",
-        "sourceName": "elespanol.com",
-        "sourceUrl": "https://www.elespanol.com/espana/20261019/ultima-hora-temporal-espana-directo-llegada-dana-adam-mantiene-avisos-rojos-sur-valencia-norte-alicante-lluvias-inundaciones/1003744425552_10.html"
-      }
-    ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|ES#b678eaa5",
-    "seen": "2026-10-21T05:12:20.084Z"
-  },
   "news-storm-storm-fr-e02bf940cf": {
     "at": "2026-10-21T14:45:27.681Z",
     "model": "claude-haiku-5-5",
@@ -10614,7 +10351,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-11-04T01:03:04.924Z",
+    "seen": "2026-11-04T09:50:31.196Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
     "directSearchVersion": 2
