@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-04T09:50:31.196Z",
+  "updated": "2026-11-04T18:26:07.453Z",
   "fetched": {
-    "societies": "2026-11-04T09:50:31.196Z",
-    "uncr": "2026-11-04T09:50:31.196Z"
+    "societies": "2026-11-04T18:26:07.453Z",
+    "uncr": "2026-11-04T18:26:07.453Z"
   },
   "societies": {
     "AF": {
@@ -2758,89 +2758,6 @@
       "name": "Humanitarian Coalition",
       "title": "Afghanistan: Nuristan Floods"
     },
-    "croixrouge-rdc.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://www.croixrouge-rdc.org/"
-      ]
-    },
-    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
-      "ok": false,
-      "reason": "HTTP 406",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ]
-    },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
-    "ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://www.ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding"
-      ],
-      "blocked": true
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-flood-8013:islamicrelief.org.au/our-work/emergencies/bangladesh-floods": {
-      "ok": false,
-      "reason": "published 2024-08-26, before the disaster",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://islamicrelief.org.au/our-work/emergencies/bangladesh-floods/"
-      ]
-    },
-    "local4:ifrc-flood-8013:islamic-relief.ie/bangladesh-floods-appeal-2": {
-      "ok": false,
-      "reason": "published 2022-06-20, before the disaster",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://islamic-relief.ie/bangladesh-floods-appeal-2/"
-      ]
-    },
-    "local4:ifrc-flood-8013:grfuk.org/appeals/rohingya-refugees-in-bangladesh": {
-      "ok": false,
-      "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://grfuk.org/appeals/rohingya-refugees-in-bangladesh/"
-      ]
-    },
-    "go.ifrc.org/emergencies/8013/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8013/overview"
-      ]
-    },
-    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-03T12:23:05.958Z",
-      "chain": [
-        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
-      ],
-      "blocked": true
-    },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
@@ -2919,27 +2836,95 @@
     "ifrc.org/donate": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-04T09:50:31.196Z",
       "chain": [
         "https://www.ifrc.org/donate"
       ],
-      "blocked": true,
-      "checked": "2026-11-04T09:50:31.196Z"
+      "blocked": true
     },
     "crisisrelief.un.org": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-04T09:50:31.196Z",
       "chain": [
         "https://crisisrelief.un.org/en/"
-      ],
-      "checked": "2026-11-04T09:50:31.196Z"
+      ]
     },
     "arcs.af": {
       "ok": true,
       "reason": "donation word \"کمک نقدی\"",
+      "checked": "2026-11-04T09:50:31.196Z",
       "chain": [
         "https://arcs.af/"
+      ]
+    },
+    "croixrouge-rdc.org": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.croixrouge-rdc.org/"
       ],
-      "checked": "2026-11-04T09:50:31.196Z"
+      "checked": "2026-11-04T18:26:07.453Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-11-04T18:26:07.453Z"
+    },
+    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
+      "ok": false,
+      "reason": "HTTP 406",
+      "chain": [
+        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
+      ],
+      "checked": "2026-11-04T18:26:07.453Z"
+    },
+    "ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding"
+      ],
+      "blocked": true,
+      "checked": "2026-11-04T18:26:07.453Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-04T18:26:07.453Z"
+    },
+    "go.ifrc.org/emergencies/8013/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8013/overview"
+      ],
+      "checked": "2026-11-04T18:26:07.453Z"
+    },
+    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-04T18:26:07.453Z"
+    },
+    "donate.bdrcs.org/blog": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://donate.bdrcs.org/blog/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-04T18:26:07.453Z"
     }
   }
 }

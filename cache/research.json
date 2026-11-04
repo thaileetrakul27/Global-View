@@ -366,10 +366,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-04T09:50:31.196Z",
     "directSearched": "2026-11-04T09:50:31.196Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-04T09:50:31.196Z"
+    "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -617,10 +617,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|IN#2d25d059",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-04T09:50:31.196Z",
     "directSearched": "2026-11-04T09:50:31.196Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-04T09:50:31.196Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-03T03:51:42.335Z",
@@ -714,7 +714,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-04T09:50:31.196Z",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
     "directSearchVersion": 2
@@ -844,7 +844,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-04T09:50:31.196Z",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-03T19:56:18.676Z",
     "directSearched": "2026-11-03T19:56:18.676Z",
     "directSearchVersion": 2
@@ -868,7 +868,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-04T09:50:31.196Z",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
     "directSearchVersion": 2
@@ -1121,29 +1121,6 @@
     "membersHash": "gdacs|PG#20427fcc",
     "seen": "2026-10-23T17:38:11.860Z"
   },
-  "gdacs-earthquake-eq-1571524": {
-    "at": "2026-10-21T17:37:06.438Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 5.9 earthquake at a depth of about 585 km struck the Fiji region on 14 October 2026, according to USGS. Reports describe shaking felt from various areas, but no casualties or significant damage were reported. The latest source is dated 15 October 2026, and no continuing effects such as flooding, evacuation or aftershock damage were found.",
-    "ongoing": false,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "travelandtourworld.com",
-        "url": "https://www.travelandtourworld.com/news/article/mj67i94oxcfm/",
-        "title": "New Zealand Unites With Japan, Chile, and Papua New Guinea Following Powerful Earthquakes - Travel And Tour World"
-      },
-      {
-        "name": "quakemap24.com",
-        "url": "https://quakemap24.com/en/event/07fed9f80e677d56d61be4c7c3843ff1e079c1cf/earthquake-m5-9-fiji-region-2026-10-14",
-        "title": "M5.9 Earthquake near Fiji region"
-      }
-    ],
-    "membersHash": "gdacs|FJ#54ea56f7"
-  },
   "gdacs-earthquake-eq-1571732": {
     "at": "2026-10-21T14:45:27.681Z",
     "model": "claude-haiku-5-5",
@@ -1298,63 +1275,63 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-11-03T12:23:05.958Z",
+    "at": "2026-11-04T18:26:07.453Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu, Xizang Autonomous Region, China, on 22 October 2026 at 14:33 UTC, with the epicentre in Maru township. Reports list 16 deaths, 76 injured and 339 collapsed homes. By 2 November, 12,964 people had been relocated and 2,054 aftershocks recorded. Relocation and resettlement work was still under way.",
+    "searches": 3,
+    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu City, Tibet Autonomous Region, China, on 22 October 2026. Officials reported 16 deaths and 76 injured. About 12,964 people were relocated, and 339 homes were reported damaged or destroyed. Response work and aftershock monitoring were still reported in early November.",
     "ongoing": true,
     "places": [
       {
         "name": "Baqen County",
-        "admin": "Xizang Autonomous Region",
+        "admin": "Tibet Autonomous Region",
         "country": "CN",
         "kind": "district",
-        "impact": "Quake struck here; homes collapsed"
+        "impact": "Epicentre area"
       },
       {
         "name": "Maru Township",
-        "admin": "Xizang Autonomous Region",
+        "admin": "Tibet Autonomous Region",
         "country": "CN",
         "kind": "town",
-        "impact": "Epicentre; building collapses, ground cracks"
+        "impact": "Building collapses, ground cracks, temporary shelters"
       },
       {
         "name": "Kamlung Gal",
-        "admin": "Xizang Autonomous Region",
+        "admin": "Tibet Autonomous Region",
         "country": "CN",
         "kind": "town",
-        "impact": "10 deaths reported, unconfirmed by officials"
+        "impact": "10 deaths reported"
       },
       {
-        "name": "Gangqie Township",
-        "admin": "Xizang Autonomous Region",
+        "name": "Nagqu City",
+        "admin": "Tibet Autonomous Region",
         "country": "CN",
-        "kind": "town",
-        "impact": "Rescue teams checking Nagong village"
+        "kind": "city",
+        "impact": "Relief headquarters coordinating response"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "16",
-        "sourceName": "finance.sina.com.cn",
-        "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-10-23/doc-iniweqhr5654562.shtml"
+        "value": "at least 16",
+        "sourceName": "cbsnews.com",
+        "sourceUrl": "https://www.cbsnews.com/news/powerful-earthquake-tibet-china/"
       },
       {
         "label": "Injured",
         "value": "76",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
+      },
+      {
+        "label": "Relocated",
+        "value": "12,964 people",
         "sourceName": "humanrightsresearch.org",
         "sourceUrl": "https://www.humanrightsresearch.org/post/china-s-information-crackdown-on-earthquake-in-tibet"
       },
       {
-        "label": "Displaced",
-        "value": "12,964 people relocated",
-        "sourceName": "humanrightsresearch.org",
-        "sourceUrl": "https://www.humanrightsresearch.org/post/china-s-information-crackdown-on-earthquake-in-tibet"
-      },
-      {
-        "label": "Homes collapsed",
-        "value": "339",
+        "label": "Homes damaged or destroyed",
+        "value": "339 homes",
         "sourceName": "outlookindia.com",
         "sourceUrl": "https://www.outlookindia.com/international/tibet-earthquake-atleast-16-killed-54-injured-as-339-homes-collapse-in-nagqu"
       }
@@ -1362,41 +1339,16 @@
     "donation": [],
     "sources": [
       {
-        "name": "humanrightsresearch.org",
-        "url": "https://www.humanrightsresearch.org/post/china-s-information-crackdown-on-earthquake-in-tibet",
-        "title": "China's Information Crackdown on Earthquake in Tibet"
-      },
-      {
-        "name": "m.gmw.cn",
-        "url": "https://m.gmw.cn/2026-10/23/content_1304578351.htm",
-        "title": "西藏那曲7.0级地震已致16人遇难46人受伤，监控实拍画面公布，各方救援力量正全力抢险搜救"
-      },
-      {
-        "name": "theglobalspy.com",
-        "url": "https://www.theglobalspy.com/2026/10/tibet-earthquake-70-magnitude-quake.html",
-        "title": "Tibet Earthquake: 7.0 Magnitude Quake Kills 16, Injures 54 in Nagqu Region"
-      },
-      {
         "name": "en.wikipedia.org",
         "url": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake",
         "title": "2026 Tibet earthquake"
-      },
-      {
-        "name": "sina.cn",
-        "url": "https://www.sina.cn/news/detail/5356965943578273.html",
-        "title": "西藏那曲 7.0 级地震，酒店吊灯晃动，林芝震感强烈|中国地震局|中国地震台网|西藏那曲 7.0 级地震_新浪新闻"
-      },
-      {
-        "name": "finance.sina.com.cn",
-        "url": "https://finance.sina.com.cn/tech/roll/2026-10-23/doc-iniweqhr5654562.shtml",
-        "title": "西藏那曲7.0级地震已致16死65伤 转移受灾群众12489人_新浪科技_新浪网"
       }
     ],
-    "membersHash": "gdacs,usgs|CN#b8254d0f",
-    "seen": "2026-11-04T09:50:31.196Z",
-    "donationSearched": "2026-11-03T12:23:05.958Z",
-    "directSearched": "2026-11-03T12:23:05.958Z",
-    "directSearchVersion": 2
+    "membersHash": "gdacs,usgs|CN#36d8a31f",
+    "donationSearched": "2026-11-04T18:26:07.453Z",
+    "directSearched": "2026-11-04T18:26:07.453Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-04T18:26:07.453Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -1970,24 +1922,6 @@
     ],
     "membersHash": "gdacs|TH#75720bb8",
     "seen": "2026-10-21T22:09:59.986Z"
-  },
-  "gdacs-flood-fl-1104200": {
-    "at": "2026-10-21T17:37:06.438Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": false,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "watchers.news",
-        "url": "https://watchers.news/2026/02/11/floods-leave-44-dead-and-72-000-families-affected-across-16-departments-colombia/",
-        "title": "Floods leave 44 dead and 72 000 families affected across 16 departments, Colombia - The Watchers"
-      }
-    ],
-    "membersHash": "gdacs|CO#3eb0c304"
   },
   "gdacs-flood-fl-1104209": {
     "at": "2026-10-20T14:35:40.688Z",
@@ -4225,53 +4159,67 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-04T09:50:31.196Z",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
   },
   "gdacs-volcano-vo-1000152": {
-    "at": "2026-11-02T09:59:51.584Z",
+    "at": "2026-11-04T18:26:07.453Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Kanlaon Volcano on Negros Island, Philippines, erupted on 10 October 2026, with ash emissions continuing on 11 October. PHIVOLCS kept Alert Level 2 and said another explosive eruption was possible as of 13 October. The latest report found is dated 13 October 2026.",
+    "summary": "Mount Kanlaon on Negros Island, Philippines, erupted on 10 October 2026, sending ash plumes above the summit. PHIVOLCS reported the eruption continuing on 21 October 2026, the latest status found. The Office of Civil Defense reported about 24,000 families affected as of 12 October. Sources give conflicting alert levels.",
     "ongoing": true,
     "places": [
       {
-        "name": "Kanlaon Volcano",
-        "admin": "Negros Island",
+        "name": "Mount Kanlaon",
         "country": "PH",
         "kind": "site",
-        "impact": "Eruption; ash emissions"
+        "impact": "Eruption; permanent 4 km danger zone evacuated"
       }
     ],
     "figures": [
       {
         "label": "Families affected",
-        "value": "about 24,000",
+        "value": "about 24,000 families",
         "sourceName": "gmanetwork.com",
         "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
       },
       {
         "label": "People affected",
-        "value": "about 94,000 individuals",
-        "sourceName": "gmanetwork.com",
-        "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/"
-      },
-      {
-        "label": "Evacuees",
-        "value": "about 2,500 families (nearly 8,000 people)",
-        "sourceName": "gmanetwork.com",
-        "sourceUrl": "https://www.gmanetwork.com/news/topstories/regions/1005552/phivolcs-reports-ash-emission-observed-three-times-on-sunday-october-11-2026/story/"
+        "value": "about 94,000 people",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html"
       }
     ],
     "donation": [],
-    "sources": [],
+    "sources": [
+      {
+        "name": "volcano.si.edu",
+        "url": "https://volcano.si.edu/reports_daily.cfm?activitydate=2026-10-21&vtab=reports",
+        "title": "Global Volcanism Program"
+      },
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html",
+        "title": "Some 24,000 families affected by C. Philippine volcano eruption-Xinhua"
+      },
+      {
+        "name": "thestar.com.my",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/10/kanlaon-volcano-in-the-central-philippines-erupts-on-saturday-oct-10",
+        "title": "Kanlaon volcano in the central Philippines erupts on Saturday (Oct 10)"
+      },
+      {
+        "name": "gmanetwork.com",
+        "url": "https://www.gmanetwork.com/news/topstories/regions/1005640/24-000-families-affected-by-kanlaon-eruption-ocd/story/",
+        "title": "24,000 families affected by Kanlaon eruption — OCD"
+      }
+    ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-04T09:50:31.196Z",
-    "donationSearched": "2026-11-02T09:59:51.584Z",
-    "directSearched": "2026-11-02T09:59:51.584Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-04T18:26:07.453Z",
+    "directSearched": "2026-11-04T18:26:07.453Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-04T18:26:07.453Z"
   },
   "gdacs-wildfire-wf-1032497": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -5766,7 +5714,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-04T09:50:31.196Z",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2,
@@ -5975,7 +5923,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-04T09:50:31.196Z",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-04T01:03:04.924Z",
     "directSearched": "2026-11-04T01:03:04.924Z",
     "directSearchVersion": 2
@@ -6344,81 +6292,173 @@
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
-    "at": "2026-11-02T09:59:51.584Z",
+    "at": "2026-11-04T18:26:07.453Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Heavy monsoon rain and landslides hit Cox's Bazar District, Bangladesh, from 5 July 2026, according to the Humanitarian Coalition. Continued flooding restricted movement, and about 810 mm of rain fell in the first week. Research was partial; the current status as of 2 November 2026 is not confirmed.",
+    "searches": 2,
+    "summary": "Monsoon flooding and landslides hit Bangladesh's Cox's Bazar district and surrounding areas from early July 2026. Sources report deaths, displacement and damaged homes, and flooding of farmland and Rohingya camps. The latest source found is dated 20 August 2026; no source reports the event as over, but later status is not confirmed.",
     "ongoing": true,
     "places": [
       {
-        "name": "Cox's Bazar District",
+        "name": "Ramu",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "town",
+        "impact": "35 per cent submerged by floodwaters"
+      },
+      {
+        "name": "Cox's Bazar Sadar",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "town",
+        "impact": "25 per cent submerged; deaths reported"
+      },
+      {
+        "name": "Ukhiya",
+        "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "heavy rain and landslides; flooding restricted movement"
+        "impact": "25 per cent submerged"
+      },
+      {
+        "name": "Teknaf",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "25 per cent submerged"
+      },
+      {
+        "name": "Eidgaon",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "5 per cent submerged"
+      },
+      {
+        "name": "Chakaria",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "town",
+        "impact": "deaths reported"
+      },
+      {
+        "name": "Pekua",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "deaths reported"
+      },
+      {
+        "name": "Matamuhuri",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "deaths reported"
+      },
+      {
+        "name": "Maheshkhali",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "deaths reported"
+      },
+      {
+        "name": "Kutubdia",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "deaths reported"
+      },
+      {
+        "name": "Rohingya camps",
+        "admin": "Cox's Bazar",
+        "country": "BD",
+        "kind": "site",
+        "impact": "33 camps affected; deaths and injuries"
+      },
+      {
+        "name": "Manikganj",
+        "country": "BD",
+        "kind": "district",
+        "impact": "flash floods damaged crops on 222 hectares"
       }
     ],
-    "figures": [],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "59",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+      },
+      {
+        "label": "People affected",
+        "value": "1.28 million",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+      },
+      {
+        "label": "Houses damaged or destroyed",
+        "value": "74,479",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+      },
+      {
+        "label": "People needing assistance",
+        "value": "about 436,000",
+        "sourceName": "bangladesh.un.org",
+        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+      },
+      {
+        "label": "Displaced",
+        "value": "4,732 people",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/field-reports/18444"
+      }
+    ],
     "donation": [
       {
         "url": "https://go.ifrc.org/emergencies/8013/overview",
-        "org": "IFRC (GO platform)",
+        "org": "IFRC GO",
         "kind": "society",
-        "note": "IFRC GO page for this event, covering DREF operation MDRBD040 and expanded response.",
+        "note": "Event DREF appeal page (MDRBD040); not a donation form.",
         "specific": true
       },
       {
         "url": "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/",
         "org": "Bangladesh Red Crescent Society",
         "kind": "society",
-        "note": "BDRCS 2026 emergency appeal for the monsoon flood and landslide emergency; donation form unconfirmed.",
+        "note": "Emergency appeal for the nationwide monsoon emergency; no donate button seen.",
         "specific": true
+      },
+      {
+        "url": "https://donate.bdrcs.org/blog/",
+        "org": "Bangladesh Red Crescent Society",
+        "kind": "society",
+        "note": "General fund blog mentioning 2026 flood response operations.",
+        "specific": false
       }
     ],
-    "sources": [],
-    "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-04T09:50:31.196Z",
-    "donationSearched": "2026-11-02T09:59:51.584Z",
-    "directSearched": "2026-11-02T09:59:51.584Z",
-    "directSearchVersion": 2,
-    "direct": [
+    "sources": [
       {
-        "url": "https://islamicrelief.org.au/our-work/emergencies/bangladesh-floods/",
-        "org": "Islamic Relief Australia",
-        "kind": "local",
-        "note": "Hygiene kits, food packs, health care and shelter for vulnerable flood-affected families.",
-        "title": "Bangladesh Floods : Emergency Appeal - Islamic Relief Australia",
-        "published": "2026-07-22T09:59:51.584Z"
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/emergencies/8013/overview",
+        "title": "IFRC GO - Emergency - Bangladesh: Monsoon Depression in Cox's Bazar"
       },
       {
-        "url": "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/",
-        "org": "Human Relief Foundation",
-        "kind": "local",
-        "note": "Food, shelter and hygiene aid for Cox's Bazar families and Rohingya refugees.",
-        "title": "Donate to Bangladesh Emergency Flood Relief 2026"
+        "name": "mappr.co",
+        "url": "https://www.mappr.co/bangladesh-monsoon-floods-2026/",
+        "title": "Deadly Monsoon Floods and Landslides Hit Bangladesh: Mapping the 2026 Disaster"
       },
       {
-        "url": "https://islamic-relief.ie/bangladesh-floods-appeal-2/",
-        "org": "Islamic Relief Ireland",
-        "kind": "local",
-        "note": "Hygiene kits, cash grants and water for flood-affected families in Cox's Bazar.",
-        "title": "Bangladesh Floods Appeal - Donate Now",
-        "published": "2026-07-16T09:59:51.584Z"
-      },
-      {
-        "url": "https://grfuk.org/appeals/rohingya-refugees-in-bangladesh/",
-        "org": "Gulf Relief Foundation UK",
-        "kind": "local",
-        "note": "Emergency aid for Rohingya refugee families after the July Cox's Bazar landslides.",
-        "title": "Rohingya Refugees"
-      },
-      {
-        "url": "https://oneummah.org.uk/appeals/bangladesh-emergency-appeal",
-        "org": "One Ummah",
-        "kind": "local",
-        "note": "Emergency food, meals and relief after the July Cox's Bazar camp landslides.",
-        "title": "Bangladesh Flood Emergency Appeal"
+        "name": "jagonews24.com",
+        "url": "https://www.jagonews24.com/en/national/news/94272",
+        "title": "49% of Cox's Bazar inundated in 8-day deluge, 32 dead"
       }
-    ]
+    ],
+    "membersHash": "ifrc|BD#dcb1d4bd",
+    "donationSearched": "2026-11-04T18:26:07.453Z",
+    "directSearched": "2026-11-04T18:26:07.453Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-04T18:26:07.453Z"
   },
   "ifrc-flood-8014": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6545,7 +6585,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-04T09:50:31.196Z",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
     "directSearchVersion": 2,
@@ -6706,61 +6746,64 @@
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
-    "at": "2026-11-02T09:59:51.584Z",
+    "at": "2026-11-04T18:26:07.453Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Monsoon flooding began in Myanmar on 12 August 2026, affecting Sagaing, Ayeyarwady, Kayin, Rakhine, Irrawaddy and Kachin areas. A breached embankment in Laymyethna Township flooded urban wards and villages in Ayeyarwady Region. UNICEF estimated about 600,000 people affected by the end of August. No reports after late August were found.",
-    "ongoing": true,
+    "searches": 3,
+    "summary": "Floods in Myanmar from early July 2026 affected several states and regions, including Sagaing, Rakhine, Ayeyarwady and Kachin. UNICEF reported about 600,000 people affected by the end of August. GDACS lists the event as running from 4 July to 3 September 2026, with 11 deaths and 10,233 people displaced. No reports after early September were found.",
+    "ongoing": false,
     "places": [
-      {
-        "name": "Laymyethna",
-        "admin": "Ayeyarwady Region",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Embankment breached; five wards and 150 villages flooded"
-      },
       {
         "name": "Wetlet",
         "admin": "Sagaing Region",
         "country": "MM",
         "kind": "district",
-        "impact": "Floodwater; over 11,400 people moved to relief centres"
+        "impact": "Villages and paddy fields submerged; people forced from homes"
       },
       {
-        "name": "Hinthada",
+        "name": "Lemyethna",
         "admin": "Ayeyarwady Region",
         "country": "MM",
         "kind": "district",
-        "impact": "Affected by flooding"
+        "impact": "Severe inundation in late July"
       },
       {
-        "name": "Yekyi",
-        "admin": "Ayeyarwady Region",
+        "name": "Rakhine State",
         "country": "MM",
-        "kind": "district",
-        "impact": "Affected by flooding"
-      },
-      {
-        "name": "Kyangin",
-        "admin": "Ayeyarwady Region",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Affected by flooding"
+        "kind": "region",
+        "impact": "Named by UN as flood-affected"
       },
       {
         "name": "Kayin State",
         "country": "MM",
         "kind": "region",
-        "impact": "Households displaced; one casualty from Thanlwin overflow"
+        "impact": "Flooding after Salween River broke banks"
+      },
+      {
+        "name": "Kachin State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Named by UN as flood-affected"
+      },
+      {
+        "name": "Mandalay Region",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Flooding reported"
+      },
+      {
+        "name": "Bago Region",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Flooding reported"
+      },
+      {
+        "name": "Shan State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Flooding reported"
       }
     ],
     "figures": [
-      {
-        "label": "People affected",
-        "value": "about 600,000 people",
-        "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
-      },
       {
         "label": "Deaths",
         "value": "11",
@@ -6774,70 +6817,35 @@
         "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104011&episodeid=13&eventtype=FL"
       },
       {
-        "label": "People affected (Ayeyarwady)",
-        "value": "63K",
-        "sourceName": "ahacentre.org",
-        "sourceUrl": "https://ahacentre.org/flash-update/flash-update-no-1-flooding-in-ayeyarwady-and-kayin-myanmar-19-august-2026/"
+        "label": "People affected",
+        "value": "about 600,000",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
+      },
+      {
+        "label": "Relocated to relief centres in Sagaing",
+        "value": "more than 11,400 people",
+        "sourceName": "thestar.com.my",
+        "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected"
       }
     ],
-    "donation": [
-      {
-        "url": "https://go.ifrc.org/appeals/all?region=2",
-        "org": "IFRC (IFRC GO)",
-        "kind": "society",
-        "note": "IFRC GO appeal record for the Myanmar floods DREF operation; no donation form found.",
-        "specific": true
-      },
-      {
-        "url": "https://www.redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA/",
-        "org": "Myanmar Red Cross Society",
-        "kind": "society",
-        "note": "General Emergency Fund for floods, cyclones and other emergencies, with a linked payment platform.",
-        "specific": false
-      }
-    ],
-    "sources": [
-      {
-        "name": "unicef.org",
-        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
-        "title": "Myanmar 2026 Monsoon Emergency Response"
-      },
-      {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/countries/121",
-        "title": "IFRC GO - Myanmar"
-      },
-      {
-        "name": "thestar.com.my",
-        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected",
-        "title": "Monsoon rains submerge villages, fields in Myanmar; thousands of people affected"
-      },
-      {
-        "name": "ahacentre.org",
-        "url": "https://ahacentre.org/flash-update/flash-update-no-1-flooding-in-ayeyarwady-and-kayin-myanmar-19-august-2026/",
-        "title": "FLASH UPDATE: No. 1"
-      },
-      {
-        "name": "ispmyanmar.com",
-        "url": "https://ispmyanmar.com/2026mp025/",
-        "title": "41 Townships in Myanmar Suffered Floods Within One Month ‣ ISP-Myanmar"
-      }
-    ],
+    "donation": [],
+    "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-04T09:50:31.196Z",
-    "donationSearched": "2026-11-02T09:59:51.584Z",
-    "directSearched": "2026-11-02T09:59:51.584Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/",
-        "org": "Aktion Myanmar – Hilfe für Entwicklungsländer e.V.",
+        "org": "Worldchefs (fundraiser led by Aktion Myanmar – Hilfe für Entwicklungsländer e.V.)",
         "kind": "local",
-        "note": "School supply kits for children in flood-hit areas of Sagaing and Irrawaddy.",
+        "note": "School supply sets for children in flood-affected areas, via bank transfer.",
         "title": "Donate to Support Children Affected by Flooding in Myanmar - WORLDCHEFS",
-        "published": "2026-08-12T09:59:51.584Z"
+        "published": "2026-08-11T18:26:07.453Z"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-04T18:26:07.453Z",
+    "directSearched": "2026-11-04T18:26:07.453Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-04T18:26:07.453Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -7314,7 +7322,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-04T09:50:31.196Z",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -9112,78 +9120,6 @@
     "membersHash": "news|HR#6698af7a",
     "seen": "2026-10-22T08:03:09.184Z"
   },
-  "news-flood-flood-ie-72491384cd": {
-    "at": "2026-10-21T17:37:06.438Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "As of 21 October 2026, no flooding, damage, evacuations or casualties from Storm Austen in Ireland had been reported. Met Éireann issued orange and yellow rain and wind warnings for Thursday 22 to Friday 23 October, mainly for counties in Munster and Leinster. Flooding is possible, mainly along coastal areas.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Cork",
-        "admin": "Munster",
-        "country": "IE",
-        "kind": "district",
-        "impact": "orange rain warning issued"
-      },
-      {
-        "name": "Kerry",
-        "admin": "Munster",
-        "country": "IE",
-        "kind": "district",
-        "impact": "orange rain warning issued"
-      },
-      {
-        "name": "Waterford",
-        "admin": "Munster",
-        "country": "IE",
-        "kind": "district",
-        "impact": "orange rain warning issued"
-      },
-      {
-        "name": "Dublin",
-        "admin": "Leinster",
-        "country": "IE",
-        "kind": "district",
-        "impact": "orange rain warning issued"
-      },
-      {
-        "name": "Wexford",
-        "admin": "Leinster",
-        "country": "IE",
-        "kind": "district",
-        "impact": "orange rain warning issued"
-      },
-      {
-        "name": "Wicklow",
-        "admin": "Leinster",
-        "country": "IE",
-        "kind": "district",
-        "impact": "orange rain warning issued"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "irishexaminer.com",
-        "url": "https://www.irishexaminer.com/news/arid-41926436.html",
-        "title": "Yellow rain warning issued as Storm Austen threatens flooding and travel disruption"
-      },
-      {
-        "name": "irishexaminer.com",
-        "url": "https://www.irishexaminer.com/news/munster/arid-41926952.html",
-        "title": "Storm Austen: Cork, Kerry and Waterford under orange rain warning as flooding threatens"
-      },
-      {
-        "name": "thejournal.ie",
-        "url": "https://www.thejournal.ie/storm-austen-rain-wind-direction-warnings-7200377-Oct2026/",
-        "title": "Storm Austen: Status Orange rain warning issued Dublin and five other counties"
-      }
-    ],
-    "membersHash": "news|IE#c44f0721",
-    "seen": "2026-10-21T17:37:06.438Z"
-  },
   "news-flood-flood-th-3e351c39ff": {
     "at": "2026-10-23T05:22:44.752Z",
     "model": "claude-haiku-5-5",
@@ -9880,19 +9816,6 @@
     "membersHash": "news|IE#dc5f6dab",
     "seen": "2026-10-25T07:59:52.974Z"
   },
-  "news-storm-storm-ie-853815a83a": {
-    "at": "2026-10-21T14:45:27.681Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|IE#30454b26",
-    "seen": "2026-10-21T14:45:27.681Z"
-  },
   "news-storm-storm-nl-927e01479d": {
     "at": "2026-10-25T13:34:13.512Z",
     "model": "claude-haiku-5-5",
@@ -10351,7 +10274,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-11-04T09:50:31.196Z",
+    "seen": "2026-11-04T18:26:07.453Z",
     "donationSearched": "2026-11-03T03:51:42.335Z",
     "directSearched": "2026-11-03T03:51:42.335Z",
     "directSearchVersion": 2
