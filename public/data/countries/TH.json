@@ -2,13 +2,75 @@
   "code": "TH",
   "name": "Thailand",
   "kind": "local",
-  "updated": "2026-11-03T19:56:18.676Z",
+  "updated": "2026-11-04T01:03:04.924Z",
   "source": {
-    "name": "Google News and Bing News",
+    "name": "Google News",
     "edition": "TH:th",
     "url": "https://news.google.com/rss?hl=th&gl=TH&ceid=TH%3Ath"
   },
   "articles": [
+    {
+      "title": "สภาพอากาศวันนี้ ฝนหนักทั่วไทย ภาคตะวันออก-ใต้ ตกมากสุด 60%",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1wMXJ4NjNRUlh2MklSWW9MeXFWODZhTUN3VExPUUNxTjZhZklEUUdXODI4QndTQmwzdXpSRDZVM2dZam5tWng3YmVLblQxVExCQ0huYnRmajk?oc=5",
+      "outlet": "Thai PBS",
+      "outletUrl": "https://www.thaipbs.or.th",
+      "published": "2026-11-03T23:05:47.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Today's weather: heavy rain across Thailand, with the East and South receiving the most, up to 60%",
+      "about": [
+        "TH"
+      ]
+    },
+    {
+      "title": "ทำไมปิดหีบแล้ว แต่ยังไม่รู้ผลเลือกตั้ง? เปิดขั้นตอนนับคะแนนกลางเทอมสหรัฐฯ",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OeXlNYnJST25iQ25uVUJJSUVkNHpZWDJvSlg4aGIwODVvMHRNeGRkU1VpY1I1WXBvSE9MMEN6MnNpUHFjQ1VrOUtxemNNbURZTkxORXVnZ1I0bEE?oc=5",
+      "outlet": "Thairath.co.th",
+      "outletUrl": "https://www.thairath.co.th",
+      "published": "2026-11-04T00:00:00.000Z",
+      "outlets": 6,
+      "trending": true,
+      "en": "Why has voting closed but the election result is not yet known? Explaining the vote-counting process for the US midterms",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "โกลาหล!มือมืดขู่บึ้มหลายเที่ยวบิน-เรือสำราญ ทำอลหม่านทั่วยุโรป",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBNMjROeHllMzlFZlpGSzNCakpzdEVlTU9uNm54Y3pfRUZZWVE1b3FtZEpya3BJdFN4UDlXdHVGR2k2a0VzdVFSSkc3SEo1QjlURkQ0bU9MVnFMVElfLXc?oc=5",
+      "outlet": "ผู้จัดการออนไลน์",
+      "outletUrl": "https://mgronline.com",
+      "published": "2026-11-03T23:12:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Chaos! Unknown hand threatens bombs on several flights and cruise ships, causing confusion across Europe",
+      "about": []
+    },
+    {
+      "title": "น้ำมันโลกร่วงแตะระดับต่ำสุดในรอบ 4 เดือน รัสเซียกำหนดวันเจรจากับยูเครน",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0MkpYeHY4M1gxVFhnWWhQa0toY2FuWjlYOTZaUm95UEdTbmIwRkZnRkN5LTdZNXR5S0lNc2Y5bThJS05DbVVndkNnaHUtbUFBVnRvSDZoRzNFdw?oc=5",
+      "outlet": "จส. 100",
+      "outletUrl": "https://www.js100.com",
+      "published": "2026-11-03T23:35:51.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "World oil prices fall to their lowest level in 4 months; Russia sets date for talks with Ukraine",
+      "about": [
+        "RU",
+        "UA"
+      ]
+    },
+    {
+      "title": "Binance เผย แฮกเกอร์ใช้การสัมภาษณ์งานปลอม ขโมยเงิน 2 แสนล้านบาท",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5uN21PQThLNE5uWHpKYk1RWHBuVnczRWV1UDg4ci1mMzlHdG45U0lMcm03ak1EVXZsazNjNVo1TnpmQ1ZrRzZraUxQU2J0V2p2VlpBVERzMEwyQ2s?oc=5",
+      "outlet": "Thairath.co.th",
+      "outletUrl": "https://www.thairath.co.th",
+      "published": "2026-11-03T21:55:15.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Binance reveals hackers used fake job interviews to steal 200 billion baht",
+      "about": []
+    },
     {
       "title": "ฉก.ราชมนู ยิง กระสุนส่องสว่าง เตือนทหารเมียนมา หลังพบกระสุนจากเหตุสู้รบ ตกฝั่งไทย",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBsNmh6ZWRkdzFadmdsU0NlVE5wRG9nTV9oV0dPMktYQ2tHLVZYN2pUc1duV1llSE9FWWNscUZpcFJ2VERhOUtuUklnY3BxVVFlVndBSkltUElCbzVi?oc=5",
@@ -16,7 +78,7 @@
       "outletUrl": "https://www.matichon.co.th",
       "published": "2026-11-03T15:56:03.000Z",
       "outlets": 5,
-      "trending": true,
+      "trending": false,
       "en": "Military Region 1 Ranger fires illumination rounds to warn Myanmar soldiers after stray rounds from fighting land on the Thai side",
       "about": [
         "TH",
@@ -24,28 +86,66 @@
       ]
     },
     {
-      "title": "“ศุภจี” โปรโมตทะเลบัวแดง หนุนท่องเที่ยวเชิงอนุรักษ์ ต่อยอดรายได้สู่ชุมชน",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EUFRzTWJyWmNzYjk1YWdaSEk5blBGMzZBSE9aREcwMFRMTUEySXpkYnRNQnh6Y1JLQWlQOXU3N0NMWng5dXFmcnptc1JwTGgyZUZ3?oc=5",
-      "outlet": "เดลินิวส์",
-      "outletUrl": "https://www.dailynews.co.th",
-      "published": "2026-11-03T14:51:00.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "\"Supaji\" promotes the Red Lotus Sea, backs conservation-based tourism and extends income to communities",
+      "title": "ประกาศฉบับ 6 กรมอุตุฯ เตือน 5-9 พ.ย. ไทยตอนบนอากาศแปรปรวน ฝนฟ้าคะนอง-ลูกเห็บตก",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOM0Nid0RuSGFhY28wUnZSandlclhLWG5NMWRxUEo4WlRldnU3WUJJQVVudmlaTFN5bzN6Y1R5YVMxaHVIT3lwRDRrY0N3alY0eVFzSE1VTmhnLU9XQ2NwVnBaNmp0Q0h1dkpWUnduYkR6bjlFOERCQjhTMUcxOEtXV2NVc0RYMWU0MWc?oc=5",
+      "outlet": "pptvhd36.com",
+      "outletUrl": "https://www.pptvhd36.com",
+      "published": "2026-11-04T00:16:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Announcement No. 6: Thai Meteorological Department warns of 5-9 Nov, upper Thailand weather unstable, thunderstorms and hail",
       "about": [
         "TH"
       ]
     },
     {
-      "title": "‘ราคาทองโลก’ ร่วง! หลุด 3,940 ดอลลาร์ รับดอลล์แข็ง-บอนด์ยีลด์พุ่ง | The Bangkok Insight",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OMWI3dWhJRXNiQVlqcGpHdGlZbWFxeFFYTUw0WGlocHM1SktYZDNXbGhtdzc1WENMQXVXd0NINUx3Q05HejN0LVo5dGh0UU5TTVZkWE93?oc=5",
-      "outlet": "LINE TODAY",
-      "outletUrl": "https://today.line.me",
-      "published": "2026-11-03T17:13:18.000Z",
+      "title": "ผลบอลแมนยู แซงชนะ โรม่า 3-2 ศึกยูฟ่า แชมเปี้ยนส์ ลีก คุนญ่า กดเบิ้ล",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQbE02UEZ0dTZFTUZzMF9LSXV1cnpMX0p3b3AtVXFRTDY3b01LZldITUl5SWd3a1RScGh5SkVpS01JR1NSU0lRRmcwRElfbWJpTUpsQw?oc=5",
+      "outlet": "pptvhd36.com",
+      "outletUrl": "https://www.pptvhd36.com",
+      "published": "2026-11-03T21:32:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "'World gold prices' fall! Drop below $3,940 as strong dollar and rising bond yields weigh | The Bangkok Insight",
+      "en": "Man United results: Manchester United beat Roma 3-2 in the UEFA Champions League, Cunha scores a double",
       "about": []
+    },
+    {
+      "title": "คุณแหน : 4 พฤศจิกายน 2569",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA1Y1FYMVBoTTgzYTV3VEdYUVU5c2xKN0c1SHRYSFpEUFZBLUhSeTktcnFyZklNcmkzeEdyS1VIVG55Rk9IN1k4RzU3TXpISHc?oc=5",
+      "outlet": "แนวหน้า",
+      "outletUrl": "https://www.naewna.com",
+      "published": "2026-11-03T23:17:06.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Khun Haen: 4 November 2569",
+      "about": []
+    },
+    {
+      "title": "ดับแล้ว 38 ศพ รัสเซียทิ้งระเบิดถล่มศูนย์ช่วยเหลือ-โรงพยาบาลยูเครน",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5lZDZtODVSQlBhb0lnTVE0cWl3elNlWlh1OHBfVC1KLW5SZEU5cXdyTldHbm1SSTA3eFVlaW13QUk0V19VUy03TF9HaW95Sm0tY0l0UkEzby1Ob1U?oc=5",
+      "outlet": "Thairath.co.th",
+      "outletUrl": "https://www.thairath.co.th",
+      "published": "2026-11-03T23:07:01.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "38 dead as Russia bombs aid centre and hospital in Ukraine",
+      "about": [
+        "RU",
+        "UA"
+      ]
+    },
+    {
+      "title": "“ศิวา–เปมิกา” บินลุยยูธโอลิมปิก ตั้งเป้าอย่างน้อย 1 ทอง",
+      "url": "https://news.google.com/rss/articles/CBMiigVBVV95cUxQb1hDWXJqbjNnOVcydjFhaktzUERSTnphcG0waWJYRHFzMUlzS294c2pMbGNnOVlhaXBXM1gtVU5HUU1yY0Z1R1AzME5CcnRvZHlVQ2c3a2VNblJsWENqQWpYVW1wYzlHOUFGSnRaUzVsckNfNDMzelZpSGJqSE84WkFFVzVQUi15LUhoUnVmUlowSENEU1ZTU0VWSHlVQmlFN2NnSy13c2RDMEhEZ2hwZFBZTWV1Yy1XdzBzdVVzdXRBVkwtNjV3Y2laNFl3S0lQekNVQjktR0dLeUVOTi15cWZST1BQS0tfWnU3LVc4U0JmSExwb081R3M1V2g5eWdBeW9RUnpxU29SVTBFMFloWjNmN292QlMtUUkwUzZpUS1ZVHhJcmthcXRYdjhWTExTV25UVWRCZGZkckx4VzVNZERsS203ZHpsc1BrMGY4ZVJBYm1NUmZHUkhScFZCci1zVEo4bWcweGdTZ19ObDhPdHdVVlF1alZNdDhCeXdhSzhOdi1ETXFnaFJiZWNZSXUxSVF1T0RFbGFzanJ2cG16UnZtUGpsZ25DaktXcnNmV3FPWkZTY0FBbHFVVEl6dE9DUHNYZEt6UlF3M1JzazNwZHM0Q0JmcUp6SUo2WlpzQmNrRm5LZldZR0RwUU9LWloxMUZMVHJBMVItekJkZmctR3FxSzd0OFZCQWlrU0dkWlUwOHdkSUNKcFR0T1VzQWJ4OFNXbENhQldrMUNON1c1SUhneWlTaEhHcWl3bEp0aDFxclB3Q3M3SzhueGFSOFl0alZyektsZzVtUElyN3dNMFdRaVp6NkduTkVtSEtKRkg3UGw5THo2Qmd4VFNaNXVXcXZ2anc1bVFYQQ?oc=5",
+      "outlet": "ททบ. 5",
+      "outletUrl": "https://thaitv5hd.com",
+      "published": "2026-11-03T20:46:30.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"Siwa-Pemika\" fly to the Youth Olympics, aiming for at least 1 gold",
+      "about": [
+        "TH"
+      ]
     },
     {
       "title": "\"หนุ่ม กรรชัย\" ฝากถึง \"บุ๋ม ปนัดดา\" ขอให้พูดความจริงทั้งหมด เพราะจะปกป้องตัวเองได้",
@@ -56,6 +156,106 @@
       "outlets": 5,
       "trending": false,
       "en": "\"Nhoom Kanchai\" tells \"Bum Panadda\" to speak the whole truth, because that is how she can protect herself",
+      "about": [
+        "TH"
+      ]
+    },
+    {
+      "title": "สื่ออิหร่านแพร่คลิป แนะนำวิธีเอาชีวิตรอดจากการโจมตีด้วยนิวเคลียร์",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PYkthWElkLU1VNWFudVpzb0VmSnJhSGRxSjZkR0lNblV2UWtydlBMRW92SjFLLVlGSmx4UWF4S2F2V2NGRFlINGlvV0tMSjd4dF8wdlg3dDBHQzg?oc=5",
+      "outlet": "Thairath.co.th",
+      "outletUrl": "https://www.thairath.co.th",
+      "published": "2026-11-03T16:04:58.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Iranian media spread video giving tips on how to survive a nuclear attack",
+      "about": [
+        "IR"
+      ]
+    },
+    {
+      "title": "การโจมตีทางไซเบอร์เกิดขึ้นกับตู้แช่อาหารในซูเปอร์มาร์เก็ตทั่วยุโรป",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5PZnBwbVpBM3BvX3A3Q25YYTV4QmdmdGZsSXVKY3FaV1ozbV9tZHZmZDRQMFQzbFZDQ1NsalMwcDJvOGtpUERjWjlOY2VKNi1PS2dpMVljWWU?oc=5",
+      "outlet": "Thaipost.net",
+      "outletUrl": "https://www.thaipost.net",
+      "published": "2026-11-03T12:15:17.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Cyberattack hits refrigerated food cabinets in supermarkets across Europe",
+      "about": []
+    },
+    {
+      "title": "รัฐมนตรีคมนาคมสเปนลาออก เซ่นเหตุรถไฟชนกัน ดับ 69 ศพ",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uZkREZHEtTUUxNnVzU09NNGdrLUtqcXA3RWFRTzlJME9JQi14SlJLaGVEeENnRHo1TlVMQkpDUmZWRWlyMjFrSEIteEdvUG5RNEp6aDZFUTRZYTA?oc=5",
+      "outlet": "Thairath.co.th",
+      "outletUrl": "https://www.thairath.co.th",
+      "published": "2026-11-03T21:17:43.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Spanish transport minister resigns over train collision that killed 69",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "ปลุกเศรษฐกิจอุดรฯ 365 วัน ‘ศุภจี’ เชื่อมทะเลบัวแดง-ข้าว-ค้าปลีกท้องถิ่น",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBJZFdDazA5REdfMEt6VzNDRGhfb3hMaDJadkUwaDJhSjJsVGpTaVVhV1JrTjdRQ0tZVng1TjVLcDBPR3pWOC11OXR1MVhXSUpiZGZfZ1dxYUVlQ0Nk?oc=5",
+      "outlet": "ประชาชาติธุรกิจ",
+      "outletUrl": "https://www.prachachat.net",
+      "published": "2026-11-03T09:47:43.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Boosting Udon Thani's economy for 365 days: Supajee links Red Lotus Sea, rice and local retail",
+      "about": [
+        "TH"
+      ]
+    },
+    {
+      "title": "‘ปกรณ์‘ เผย ยังไม่มีรายงานคณะฯ กลั่นกรอง ปมคำร้อง ‘ทักษิณ’ ยัน ดูมิติกฎหมาย ไม่ใช่การเมือง",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtM3ZxanJlUEhCc1E5MjRQZ0hZWUhCbW5lOWU0MTNVV1pGamxIM0poNDhDY1VtcUJmZ3oybFY4LXVaNmRYMThYNG1EbHFpdXRLVGtfTl93?oc=5",
+      "outlet": "LINE TODAY",
+      "outletUrl": "https://today.line.me",
+      "published": "2026-11-03T12:08:18.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "'Pakorn' says no report yet from the screening committee on the petition regarding 'Thaksin', insists it looks at legal aspects, not politics",
+      "about": [
+        "TH"
+      ]
+    },
+    {
+      "title": "‘ราคาทองโลก’ ร่วง! หลุด 3,940 ดอลลาร์ รับดอลล์แข็ง-บอนด์ยีลด์พุ่ง | The Bangkok Insight",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OMWI3dWhJRXNiQVlqcGpHdGlZbWFxeFFYTUw0WGlocHM1SktYZDNXbGhtdzc1WENMQXVXd0NINUx3Q05HejN0LVo5dGh0UU5TTVZkWE93?oc=5",
+      "outlet": "LINE TODAY",
+      "outletUrl": "https://today.line.me",
+      "published": "2026-11-03T17:13:18.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "'World gold prices' fall! Drop below $3,940 as strong dollar and rising bond yields weigh | The Bangkok Insight",
+      "about": []
+    },
+    {
+      "title": "ภาวะตลาดหุ้นนิวยอร์ก: ดาวโจนส์ปิดลบ 197.26 จุด แต่ Nasdaq ฟื้นตัวจากแรงซื้อหุ้น AI : อินโฟเควสท์",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBQLVlZZmhxZkM3Y0NQUmtvTWd3RlVaLWowOHpvWDd1d0ZHYWRJMFI3b3hMX3Q3U1hIeWJRbUZWclZtc2pYV215bTZSZVU5Q3VH?oc=5",
+      "outlet": "สำนักข่าวอินโฟเควสท์",
+      "outletUrl": "https://www.infoquest.co.th",
+      "published": "2026-11-03T16:33:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "New York stock market: Dow Jones closes down 197.26 points, but Nasdaq rebounds on AI stock buying: Infoquest",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "ส่องปัญหาพืชสวนโลกอุดรธานี เร่งแก้ปัญหาบริการวันแรก ก่อนพิสูจน์ความคุ้มค่าและอนาคตหนองแด",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYnRvcXMwZ0pZQ0FoQzhPY3lsM2NFenBYc0pmZmxFU01LLUVZR2NzTkUya3dEb0Z3UjBUdmZTRFhWNHRGZFNpd25oM3RJWGxpXzNaWXU3bUpReDYycTRCZnZabmJ1OGhRNlFaVEg5TFlPeTg1SlBYZFVIS1IxNFZoaTdwdGU?oc=5",
+      "outlet": "thestandard.co",
+      "outletUrl": "https://thestandard.co",
+      "published": "2026-11-03T11:08:14.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Scanning Udon Thani World Horticultural Expo problems, urgently fixing service issues on day one, before proving the value and future of Nong Daeng",
       "about": [
         "TH"
       ]
@@ -72,70 +272,6 @@
       "about": []
     },
     {
-      "title": "ส่องปัญหาพืชสวนโลกอุดรธานี เร่งแก้ปัญหาบริการวันแรก ก่อนพิสูจน์ความคุ้มค่าและอนาคตหนองแด",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYnRvcXMwZ0pZQ0FoQzhPY3lsM2NFenBYc0pmZmxFU01LLUVZR2NzTkUya3dEb0Z3UjBUdmZTRFhWNHRGZFNpd25oM3RJWGxpXzNaWXU3bUpReDYycTRCZnZabmJ1OGhRNlFaVEg5TFlPeTg1SlBYZFVIS1IxNFZoaTdwdGU?oc=5",
-      "outlet": "thestandard.co",
-      "outletUrl": "https://thestandard.co",
-      "published": "2026-11-03T11:08:14.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Scanning Udon Thani World Horticultural Expo problems, urgently fixing service issues on day one, before proving the value and future of Nong Daeng",
-      "about": [
-        "TH"
-      ]
-    },
-    {
-      "title": "การโจมตีทางไซเบอร์เกิดขึ้นกับตู้แช่อาหารในซูเปอร์มาร์เก็ตทั่วยุโรป",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5PZnBwbVpBM3BvX3A3Q25YYTV4QmdmdGZsSXVKY3FaV1ozbV9tZHZmZDRQMFQzbFZDQ1NsalMwcDJvOGtpUERjWjlOY2VKNi1PS2dpMVljWWU?oc=5",
-      "outlet": "Thaipost.net",
-      "outletUrl": "https://www.thaipost.net",
-      "published": "2026-11-03T12:15:17.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Cyberattack hits refrigerated food cabinets in supermarkets across Europe",
-      "about": []
-    },
-    {
-      "title": "ชาวอเมริกันทยอยใช้สิทธิ์เลือกตั้งกลางเทอม กำหนดทิศทางการดำรงตำแหน่งประธานาธิบดีทรัมป์",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4yb09wVDRfWDRXOHp2SmpSM3BpR0dRc1hqeFhSdnVhOGlGdU1jZUFNSGZlaFRNcmFrN3JqZHJCMHZ1SVUzS1ZWMTZ4Ynp5OXkzMFpKc1FuMjNwUQ?oc=5",
-      "outlet": "จส. 100",
-      "outletUrl": "https://www.js100.com",
-      "published": "2026-11-03T14:06:36.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Americans gradually cast votes in the midterm elections, which will shape the direction of President Trump's remaining term",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "อิหร่าน ลั่น สหรัฐฯจะคุยหรือจะถล่ม พร้อมรับมือทุกทาง | เข้มข่าวค่ำ | 3 พ.ย. 69",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE94TDlWUTM5ajNMWEU4U1E3azlHV1g0TzFPdUpJRXZqNi1STDZVUUVQUVFWSkJjaDFZZjF4S1FxLV9KU29pV2RZUVhZTUl1OFFFd1U2Nw?oc=5",
-      "outlet": "pptvhd36.com",
-      "outletUrl": "https://www.pptvhd36.com",
-      "published": "2026-11-03T13:30:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Iran declares US will either talk or attack, ready to face every option | Evening News | 3 Nov 26",
-      "about": [
-        "IR",
-        "US"
-      ]
-    },
-    {
-      "title": "‘ปกรณ์‘ เผย ยังไม่มีรายงานคณะฯ กลั่นกรอง ปมคำร้อง ‘ทักษิณ’ ยัน ดูมิติกฎหมาย ไม่ใช่การเมือง",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtM3ZxanJlUEhCc1E5MjRQZ0hZWUhCbW5lOWU0MTNVV1pGamxIM0poNDhDY1VtcUJmZ3oybFY4LXVaNmRYMThYNG1EbHFpdXRLVGtfTl93?oc=5",
-      "outlet": "LINE TODAY",
-      "outletUrl": "https://today.line.me",
-      "published": "2026-11-03T12:08:18.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "'Pakorn' says no report yet from the screening committee on the petition regarding 'Thaksin', insists it looks at legal aspects, not politics",
-      "about": [
-        "TH"
-      ]
-    },
-    {
       "title": "“ทวี” ชำแหละวิกฤตขยะพิษ ผลพวงทุจริตเชิงโครงสร้าง-ช่องโหว่การเงิน",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6WnlIcjZHWWJuU1RyeDNlWmJMS2NuTVpzZTFvODZ1OHZlSV9wWkpkZDhDc09HUGJPUVhpbTdnUmhmMFMtamIwUHMwaGYtZWRsY1Z0LUo1WGU3T0E?oc=5",
       "outlet": "Thairath.co.th",
@@ -149,136 +285,41 @@
       ]
     },
     {
-      "title": "\"เซเลนสกี\" หวังการเจรจาที่อาบูดาบี จะนำไปสู่การประชุมสามฝ่ายรวม \"ปูติน\" : อินโฟเควสท์",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9kTTdYMnk0VDhOWkU5RnBMSFdDU0FkaVloaTg3OFEybmlZWlNyMzRxeEt0bXd3RHpESHRYRllIV3dZcmVwRUZuakw1dFRMWmJ4?oc=5",
-      "outlet": "สำนักข่าวอินโฟเควสท์",
-      "outletUrl": "https://www.infoquest.co.th",
-      "published": "2026-11-03T16:33:00.000Z",
+      "title": "ปภ. เปิด กระเป๋าฉุกเฉิน เอาตัวรอดใน 72 ชั่วโมง เมื่อเจอภัย ต้องบรรจุสิ่งของอะไรบ้าง",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBTS0QwUTZtZDNESkJNM2hpY18zbm1QRDlmMEV0VHpuOFFoOXNYc09OUURwRzRfZ2NWVC1mUEpJVFlTQ1NtVFlZVmpyMVVjWV8tYm9tenBrZHNPR2VKeFd5NEJxTmRIQQ?oc=5",
+      "outlet": "ข่าวสด",
+      "outletUrl": "https://www.khaosod.co.th",
+      "published": "2026-11-03T07:53:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "\"Zelensky\" hopes talks in Abu Dhabi will lead to a trilateral meeting including \"Putin\" : Infoquest",
+      "en": "DDPM unveils emergency bag to survive 72 hours in disasters: what items should be packed",
       "about": [
-        "UA",
-        "RU",
-        "AE"
+        "TH"
       ]
     },
     {
-      "title": "ปภ.เตือน 61 จังหวัดฝนฟ้าคะนอง ภาคใต้เสี่ยงน้ำท่วม 5-9 พ.ย.นี้",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9oU0RaNTZ0ZmdZT1M2M18yRmlfaXhURjVNVFMtZmpicHRBaDBMOWVUOFJ0Y2ZNMHdjRGVGWHlOOHZpYVpsNlVSb2tZLVdDZmMxa2V3eVNXR0c?oc=5",
-      "outlet": "Thai PBS",
-      "outletUrl": "https://www.thaipbs.or.th",
-      "published": "2026-11-03T09:07:19.000Z",
+      "title": "รมว.ศึกษาแดนน้ำหอมเตือนเสี่ยงเวลาเรียนไม่พอหลัง “นักเรียนฝรั่งเศส” กลับมาประท้วงปิดโรงเรียนรอบใหม่",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE03Z2t2dlI5Y01nbDdxX3NGSWdxa1psZmNUOEJtc0pnSHdYcFllVWlWWU5YeVBfaE9Od1hLZ1l1a0lwb3ctR0FvaThReGVuRWphUGQtSjRwal85VFZjcGc?oc=5",
+      "outlet": "ผู้จัดการออนไลน์",
+      "outletUrl": "https://mgronline.com",
+      "published": "2026-11-03T17:29:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Education minister of Nam Hom warns of risk of insufficient study time after French students return to protest with new school closures",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "ONE ลุมพินี : คมอาวุธ เอฟเอ.กรุ๊ป มองบู๊ภาคสอง ยอดภูผา เพชรเกียรติเพชร สุดสูสี ใครพลาดก่อนมีสิทธิ์ร่วง",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1ldVVUT3p6NFc0NzBkcDFoOWVCREFiaUlFVS1PZEFURXd5T3J5eXRLTS1Wc3JlZloxY2ZoRmg5MmZ2WGNZRUNQdV9fWQ?oc=5",
+      "outlet": "ช่อง 7",
+      "outletUrl": "https://www.ch7.com",
+      "published": "2026-11-03T13:04:17.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "DDPM warns 61 provinces of thunderstorms; southern region at risk of flooding 5-9 Nov",
-      "about": [
-        "TH"
-      ]
-    },
-    {
-      "title": "สีหศักดิ์ถกหวัง อี้ เตรียมการเยือนนายกฯจีน หวังซื้อข้าวตามรับปาก ปีหน้าประชุม รมว.กห. คู่ รมว.กต. 2 ชาติครั้งแรก",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRTl9oLXNrQm1DREJ0WTNMbm1lUWFfLXVadElZQm90YUJhLUttTmtnMTR3Z0UyQ2VsLXYyeUlEazRfWlpwMjFzMG1ORmU1ZEZPZXFIZUVZQnYyV1E?oc=5",
-      "outlet": "Matichon Online",
-      "outletUrl": "https://www.matichon.co.th",
-      "published": "2026-11-03T16:11:47.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Sihasak holds talks with Wang Yi, preparing for a visit to meet the Chinese premier; hopes to buy rice as promised; defence and foreign ministers of two countries to meet for the first time next year",
-      "about": [
-        "TH",
-        "CN"
-      ]
-    },
-    {
-      "title": "“คมอาวุธ” มองไฟต์รีแมตช์ “ยอดภูผา” ลุ้นชิงจังหวะหาผู้ชนะ",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBmdVhDT29mZkQtWHp1eDVMSk51akdmbDdBTjZtYTJhTEQ5b3p1VVNCNUdrZ1Y3bjYybjUzenF4Y3oyYkdRZ00xRjNDUWZWckFmRlE0?oc=5",
-      "outlet": "เดลินิวส์",
-      "outletUrl": "https://www.dailynews.co.th",
-      "published": "2026-11-03T13:08:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"Khomaruth\" views the rematch with \"Yodphupha\", hoping to seize the moment to find the winner",
-      "about": [
-        "TH"
-      ]
-    },
-    {
-      "title": "ราคาน้ำมันโลกผันผวน จับตาเลือกตั้งสหรัฐฯ ชี้ชะตาสงครามตะวันออกกลาง",
-      "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxQSnlLNXJjZ09ZVFppUEVaZWZBWnA0T2VNSThoaWIxNF9UR1ZQc185S2RobHcwWTdzcDBwNnpsUllvdnQzUDhpRTN0Y2hONG82MWR3aGFJTk5GVjQyWldWdGhTNldxM0ZBUXFtaWowLUtEMFBNQnB0R2ZvdmVja0VXV0ZVN2pfclVpRzhiVkNPZ0RtVVNtM05KeTlnZlU4S2VlbGhlSG15ZFBmeDY5MGxiSzFwVllBOXFJaWpQU2pXcXZkVktyS1IyTVpxX1V3UGRFMGI5dUFrbkdNUUd0M29tSE0xU09TS1NLMDdDeEp4OWZtaEpTLTZxSGFZMjNJZE96d2xiY1dnUnltVFNVeXdqTE9DcmZoRWJBa2l4MWNESFFoc24tVVNCUlF2dDFuZlBIWEdQMjhIdFdRU21mUUVmSjI1dXBSYTAwdFdka3pZbW9VUU0?oc=5",
-      "outlet": "Energy News Center",
-      "outletUrl": "https://www.energynewscenter.com",
-      "published": "2026-11-03T10:14:52.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Global oil prices fluctuate; watching US elections that will decide the Middle East war",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "เงินปอนด์ปรับตัวขึ้นเล็กน้อยขณะดอลลาร์อ่อนค่า จับตา BoE ขึ้นดอกเบี้ย",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5pbk0tRzdBWDlMUGI4RUFyRGdWU3RwQ01rVnZ2LVFQZVhaaUN1V3UzQXFNaHplMUM0ektaUmxuUGF4elJzRmZNbWxOdFFMREw2MFJaVU50ZzRSRWgyLTlsT3k3M19oQQ?oc=5",
-      "outlet": "Investing.com",
-      "outletUrl": "https://th.investing.com",
-      "published": "2026-11-03T10:19:11.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Pound rises slightly as the dollar weakens, watching BoE interest rate hike",
-      "about": [
-        "GB",
-        "US"
-      ]
-    },
-    {
-      "title": "อย่ารอให้เกิดซ้ำ! “ดร.สามารถ” เร่งรัฐบาลแก้ปัญหาน้ำป่าไหลหลากป่าตอง ป้องกันชีวิต-ทรัพย์สินประชาชน",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9CUUtDMm5kRzdKdDNZYWNfby1hRXhUOHl3TWVraURQbDFEcG9WRjI2eDZyakk5OU5tT0J0ZU85ZGZtYTFXLU5HRGNybzQ1b3M?oc=5",
-      "outlet": "สยามรัฐ",
-      "outletUrl": "https://siamrath.co.th",
-      "published": "2026-11-03T05:16:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Don't let it happen again! \"Dr. Samart\" urges government to speed up solving flash flood problems in Patong to protect lives and property",
-      "about": [
-        "TH"
-      ]
-    },
-    {
-      "title": "ปภ. แนะเตรียมกระเป๋าฉุกเฉิน 72 ชั่วโมง เช็กของจำเป็นรับมือภัยพิบัติ",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMGg3QnVzYnV5S0w4dDhTRTVuRG5hRGlZWGlzYTVNcjdvd3ZNRGRMVXlTMWlfeUtkanNqa21hNk9sRFZ5NUVWM3ZBTXRiWEVQRXVqbHBsME95dm9xRzE1R2ozZ3hoT3MyOVdiVkpfYi02SzJtYUZ1RndZSGNWMkR5UHpGU0xwdVpoRVE?oc=5",
-      "outlet": "pptvhd36.com",
-      "outletUrl": "https://www.pptvhd36.com",
-      "published": "2026-11-03T03:51:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "DDPM recommends preparing a 72-hour emergency bag, checking essential items for disaster response",
-      "about": [
-        "TH"
-      ]
-    },
-    {
-      "title": "Marvell เตรียมทุ่ม 1.15 แสนล้านดอลลาร์ซื้อผู้ผลิตชิ้นส่วนออปติก Lumentum",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZENZVjdNMklqOWRDYnBCYnEtUDU0eXltcWZnYURoYjM4MGotZjRubGdCaTlCTG1lWGVaalpJZU9zNzRMZklxUml4aEx1Qjl6TEloaWhoZURxRHdBOGp1YTJVbnZac1NzM3JTUWs2MnowZkZYZWN2R0lnT3lSaUVuYl85VkZqck4wanFlVUZLZ3d5RUZLN0JwZktQNmxkOXRFX2FXWQ?oc=5",
-      "outlet": "TechTalkThai",
-      "outletUrl": "https://www.techtalkthai.com",
-      "published": "2026-11-03T07:16:17.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Marvell plans to spend $115 billion to buy optical component maker Lumentum",
+      "en": "ONE Lumpini: Khom Awut FA Group eyes part two battle; Yodphoo and Phetkiat very close, whoever slips first may fall",
       "about": []
-    },
-    {
-      "title": "ตร.คอมมานโด ร้องสื่อ ถูก ‘ด.ต.ปากเกร็ด’ เมากร่างรุมทำร้ายคาคาราโอเกะ",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1RcHd1ZWhGV2g3TVFkVWFPRFltN3pFZm45OS1qOFBoYjF5TklybnRiSWlBeTYyZERrSkM4U2FFYnZudkVCZnhwZ3NyTDN4aDRyc3Br?oc=5",
-      "outlet": "เดลินิวส์",
-      "outletUrl": "https://www.dailynews.co.th",
-      "published": "2026-11-03T16:27:00.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "Commando police complain to media after Pak Kret police sergeant, drunk and rowdy, beat them at karaoke",
-      "about": [
-        "TH"
-      ]
     },
     {
       "title": "เจ็ตตกฟลอริดา ดับ 9 ศพ อึ้ง! มีนักบินผู้ช่วยวัย 20 เคยเป็นข่าวได้ใบอนุญาตตั้งแต่ 17",
@@ -294,40 +335,27 @@
       ]
     },
     {
-      "title": "ท้องถิ่นแดนใต้จี้รัฐถอนร่างแก้พ.ร.บ.สสส. หวั่นกระทบงานพัฒนาคุณภาพชีวิตชุมชน",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wUmViYjlOSW5WaTNXU3JvQV9fek0xRjB1aHV3TTZRbm4zWW1BeFhFNlE5S09lY08wdnZMX3RJRVlyZjRpWE5XREMzVVJXd0w1ZGVBLU9NY3pZOTQ?oc=5",
-      "outlet": "Thaipost.net",
-      "outletUrl": "https://www.thaipost.net",
-      "published": "2026-11-03T12:49:28.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Southern local authorities urge government to withdraw amendment to the Thai Health Promotion Foundation Act, fearing impact on community quality-of-life development",
-      "about": [
-        "TH"
-      ]
-    },
-    {
-      "title": "“ศิวา–เปมิกา” บินลุยยูธโอลิมปิก ตั้งเป้าอย่างน้อย 1 ทอง",
-      "url": "https://news.google.com/rss/articles/CBMiigVBVV95cUxQb1hDWXJqbjNnOVcydjFhaktzUERSTnphcG0waWJYRHFzMUlzS294c2pMbGNnOVlhaXBXM1gtVU5HUU1yY0Z1R1AzME5CcnRvZHlVQ2c3a2VNblJsWENqQWpYVW1wYzlHOUFGSnRaUzVsckNfNDMzelZpSGJqSE84WkFFVzVQUi15LUhoUnVmUlowSENEU1ZTU0VWSHlVQmlFN2NnSy13c2RDMEhEZ2hwZFBZTWV1Yy1XdzBzdVVzdXRBVkwtNjV3Y2laNFl3S0lQekNVQjktR0dLeUVOTi15cWZST1BQS0tfWnU3LVc4U0JmSExwb081R3M1V2g5eWdBeW9RUnpxU29SVTBFMFloWjNmN292QlMtUUkwUzZpUS1ZVHhJcmthcXRYdjhWTExTV25UVWRCZGZkckx4VzVNZERsS203ZHpsc1BrMGY4ZVJBYm1NUmZHUkhScFZCci1zVEo4bWcweGdTZ19ObDhPdHdVVlF1alZNdDhCeXdhSzhOdi1ETXFnaFJiZWNZSXUxSVF1T0RFbGFzanJ2cG16UnZtUGpsZ25DaktXcnNmV3FPWkZTY0FBbHFVVEl6dE9DUHNYZEt6UlF3M1JzazNwZHM0Q0JmcUp6SUo2WlpzQmNrRm5LZldZR0RwUU9LWloxMUZMVHJBMVItekJkZmctR3FxSzd0OFZCQWlrU0dkWlUwOHdkSUNKcFR0T1VzQWJ4OFNXbENhQldrMUNON1c1SUhneWlTaEhHcWl3bEp0aDFxclB3Q3M3SzhueGFSOFl0alZyektsZzVtUElyN3dNMFdRaVp6NkduTkVtSEtKRkg3UGw5THo2Qmd4VFNaNXVXcXZ2anc1bVFYQQ?oc=5",
-      "outlet": "ททบ. 5",
-      "outletUrl": "https://thaitv5hd.com",
-      "published": "2026-11-03T08:44:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"Siwa-Pemika\" fly to the Youth Olympics, aiming for at least 1 gold",
-      "about": [
-        "TH"
-      ]
-    },
-    {
-      "title": "ไทยป่วยฝีดาษวานรปี 69 สะสม 470 ราย เสียชีวิต 3 ราย - คร.ย้ำตรวจเลือดยืนยันโรคไม่ได้ ต้องใช้วิธี PCR",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE90bW5xV3IyNWxBaWFCRUt1U2JPQ29Ub2ZDcF9PZjUyRzV6eC0wTmtxMlNqc2tIazJoYkNfVHFqdHg1LUxWRE5jY0pRcnc0VFJfYlk1N3dZWQ?oc=5",
-      "outlet": "Hfocus.org",
-      "outletUrl": "https://www.hfocus.org",
-      "published": "2026-11-03T10:40:52.000Z",
+      "title": "สีหศักดิ์ถก MLC ผสานร่วมมือแก้มลพิษข้ามแดน ดันนวัตกรรมสีเขียว",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBIT05pakgzeXA1al9FY0hnQnF1SWZleFhUZlJfZ09IeS1Gc3JlTEpsc3hLRVBuSFZ6SUw2SXdFZTJ2NDBsUjA0OERsV3U0U3NBdzh6RENKelhPTlU?oc=5",
+      "outlet": "Matichon Online",
+      "outletUrl": "https://www.matichon.co.th",
+      "published": "2026-11-03T16:57:47.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "Thailand has 470 cumulative mpox cases in 2026, 3 deaths; DDC stresses blood tests cannot confirm the disease, PCR method required",
+      "en": "Sihasak meets MLC to join forces on cross-border pollution control, pushing green innovation",
+      "about": [
+        "TH"
+      ]
+    },
+    {
+      "title": "“ศุภจี” โปรโมตทะเลบัวแดง หนุนท่องเที่ยวเชิงอนุรักษ์ ต่อยอดรายได้สู่ชุมชน",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EUFRzTWJyWmNzYjk1YWdaSEk5blBGMzZBSE9aREcwMFRMTUEySXpkYnRNQnh6Y1JLQWlQOXU3N0NMWng5dXFmcnptc1JwTGgyZUZ3?oc=5",
+      "outlet": "เดลินิวส์",
+      "outletUrl": "https://www.dailynews.co.th",
+      "published": "2026-11-03T14:51:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"Supaji\" promotes the Red Lotus Sea, backs conservation-based tourism and extends income to communities",
       "about": [
         "TH"
       ]
@@ -346,52 +374,19 @@
       ]
     },
     {
-      "title": "“สารคามพิทยาคม-ชุมแพศึกษา“ ผงาดแชมป์โซนอีสาน 3 ศึก PMYC U15",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1fU3VidGlZTjlwTFprazhUalRYYWhXZVZRT2Znd3BNYV9ELTJ3VDlMOU5leE01cW5JZEZrSGNTbWVDR1BqbHB4dVVwZ1RMNEF4MkVUb2JmYw?oc=5",
-      "outlet": "INN News",
-      "outletUrl": "https://www.innnews.co.th",
-      "published": "2026-11-03T07:36:00.000Z",
-      "outlets": 5,
+      "title": "โลกผวา!นักข่าวดังเตือน'ทรัมป์'อาจทำตามแรงกดดัน'เนทันยาฮู' โจมตีทางนิวเคลียร์ทำลายล้างอิหร่าน",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zUVB4WVRyVXV3aVFhdk40ZXFQTlNYTktfSjhXVXplVGFOTmxwSFdZWDVPeVZKYk9fYzU5YTA5Q3VqYzZWNXRteUx0TGJ5TzMxck50SW5XRXBDdS1wSUE?oc=5",
+      "outlet": "ผู้จัดการออนไลน์",
+      "outletUrl": "https://mgronline.com",
+      "published": "2026-11-02T22:38:00.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "\"Sarakham Phitthayakhom-Chum Phae Suksa\" take the Isan zone championship in the 3 PMYC U15 tournaments",
+      "en": "World on edge! Famous journalist warns 'Trump' may follow pressure from 'Netanyahu' to launch devastating nuclear strike on Iran",
       "about": [
-        "TH"
+        "US",
+        "IL",
+        "IR"
       ]
-    },
-    {
-      "title": "ผู้ใหญ่ 1 ใน 4 มีโอกาสเผชิญ “สโตรก” ชี้ภาวะหัวใจเต้นผิดจังหวะเป็นปัจจัยเสี่ยงที่มองข้าม",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1hb0I5YnJjVTRtQ3ZOclIzUDI5N2VXTGYwaENsY1JxUVVOU05TMXVOX296XzdzY1FvdW1GcmpEZE51b3k4dElCcFIxckJtVzVkQXRqNlZB?oc=5",
-      "outlet": "TrueID",
-      "outletUrl": "https://news.trueid.net",
-      "published": "2026-11-03T08:05:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "1 in 4 adults may face a stroke; irregular heartbeat is an overlooked risk factor",
-      "about": []
-    },
-    {
-      "title": "สลด เก๋งไฟฟ้าชนสนั่นกลางสายฝน รถพังยับ เสี่ยใหญ่เจ้าของธุรกิจสินเชื่อดับคาที่",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52LUVjQ1VLUG0wTUh6UDFtTFh4NVRhc3M2YXNycEFvcmhULWt5X3FRakVpN0wwc202N1hLVTNHZ0dwZGNRNUVLU0ZjanpIVmgwVVBvS2xxVUM4UFhr?oc=5",
-      "outlet": "Matichon Online",
-      "outletUrl": "https://www.matichon.co.th",
-      "published": "2026-11-03T11:50:12.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Tragic: electric car crashes loudly in heavy rain, car badly wrecked, big boss who owns a loan business dies on the spot",
-      "about": [
-        "TH"
-      ]
-    },
-    {
-      "title": "ถ้าระบบตู้แช่แข็งของซูเปอร์มาร์เก็ตยังโดนถูกแฮกได้เทคโนโลยีอื่น ๆ กำลังสุ่มเสี่ยงมากแค่ไหน ?",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5qXy1SSUhETkp2dVhJZXpXSTBlLTNBSmJUMGwyUXE3MHQ5bzFJN0VDN2UweW1YTndVQ3pqX3d1djVMX0xvYTVrTERJTHctUURCTEZid0FhaUhMNzDSAWBBVV95cUxOLVdSamtLUDBKVkI0NkNqR2VaZEtKVU1HZTVSaU0yNG9KbkNaRmVBM0pNYW9kLU1INzJ3WUtPcW84VFZlSWpGZXk2eWtlLTFkN2FiaTJtaWhleGNoVkpVY0s?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-11-03T10:52:26.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "If supermarket freezer systems can still be hacked, how risky are other technologies?",
-      "about": []
     }
   ]
 }
