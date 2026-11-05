@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-05T07:19:24.635Z",
+  "updated": "2026-11-05T16:54:03.811Z",
   "fetched": {
-    "societies": "2026-11-05T07:19:24.635Z",
-    "uncr": "2026-11-05T07:19:24.635Z"
+    "societies": "2026-11-05T16:54:03.811Z",
+    "uncr": "2026-11-05T16:54:03.811Z"
   },
   "societies": {
     "AF": {
@@ -2718,15 +2718,6 @@
         "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU"
       ]
     },
-    "ifrc.org/donate": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-04T09:50:31.196Z",
-      "chain": [
-        "https://www.ifrc.org/donate"
-      ],
-      "blocked": true
-    },
     "crisisrelief.un.org": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2851,61 +2842,69 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-05T07:19:24.635Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-05T07:19:24.635Z"
+      ]
     },
     "kksh.org.al": {
       "ok": true,
       "reason": "donation word \"dhuro*\"",
+      "checked": "2026-11-05T07:19:24.635Z",
       "chain": [
         "https://www.kksh.org.al/"
-      ],
-      "checked": "2026-11-05T07:19:24.635Z"
+      ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-05T07:19:24.635Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-05T07:19:24.635Z"
+      "blocked": true
     },
     "ayodonor.pmi.or.id?page=index": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-05T07:19:24.635Z",
       "chain": [
         "https://ayodonor.pmi.or.id/?page=index"
       ],
-      "blocked": true,
-      "checked": "2026-11-05T07:19:24.635Z"
+      "blocked": true
     },
     "ifrc.org/national-societies-directory/indonesian-red-cross-society": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-05T07:19:24.635Z",
       "chain": [
         "https://www.ifrc.org/national-societies-directory/indonesian-red-cross-society"
       ],
-      "blocked": true,
-      "checked": "2026-11-05T07:19:24.635Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-11-05T07:19:24.635Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-11-05T07:19:24.635Z"
+      ]
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-11-05T07:19:24.635Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ]
+    },
+    "jrc.or.jp/english/donate": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.jrc.or.jp/english/donate/"
       ],
-      "checked": "2026-11-05T07:19:24.635Z"
+      "checked": "2026-11-05T16:54:03.811Z"
     }
   }
 }

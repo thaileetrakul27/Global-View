@@ -331,45 +331,63 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001343": {
-    "at": "2026-11-04T09:50:31.196Z",
+    "at": "2026-11-05T16:54:03.811Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Typhoon In-fa (Typhoon No. 31) started on 23 October 2026 and is ongoing as of 4 November. On 4 November it was moving slowly over waters southwest of the Ogasawara Islands, per the JMA. Its closest approach is forecast for Thursday 5 November, with high waves, strong winds and heavy rain expected. No injuries, flooding, evacuations or damage have been reported. The storm is not expected to hit Honshu directly.",
+    "searches": 4,
+    "summary": "Super Typhoon In-fa (Typhoon No. 31), which began on 23 October 2026, is moving northeast over the sea west of Chichijima, away from Japan. As of 09:00 JST on 5 November, the Japan Meteorological Agency reported a central pressure of 975 hPa, and the storm still carried gale-force winds. Japanese forecasts warned of strong winds and high waves in the Ogasawara Islands into the night of 5 November. No deaths or damage were reported in Japan.",
     "ongoing": true,
     "places": [
       {
         "name": "Ogasawara Islands",
-        "admin": "Tokyo Metropolis",
-        "country": "JP",
-        "kind": "district",
-        "impact": "Waves and wind forecast; no damage reported"
-      },
-      {
-        "name": "Kanto region",
         "country": "JP",
         "kind": "region",
-        "impact": "Rain forecast to intensify; no damage reported"
+        "impact": "High waves, strong winds forecast; no damage reported"
+      },
+      {
+        "name": "Kanto",
+        "country": "JP",
+        "kind": "region",
+        "impact": "Heavy rain forecast; no damage reported"
+      },
+      {
+        "name": "Shizuoka",
+        "country": "JP",
+        "kind": "region",
+        "impact": "Rain could intensify; no damage reported"
       }
     ],
     "figures": [],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://www.jrc.or.jp/english/donate/",
+        "org": "Japanese Red Cross Society",
+        "kind": "society",
+        "note": "General Japanese Red Cross fund for disaster relief in Japan and overseas, not this typhoon.",
+        "specific": false
+      }
+    ],
     "sources": [
+      {
+        "name": "tenki.jp",
+        "url": "https://tenki.jp/forecaster/y_nakagawa/2026/11/05/41208.html",
+        "title": "台風31号 スピードアップして日本の東へ 小笠原諸島は5日夜まで強風や高波に注意(気象予報士 中川 裕美子 2026年11月05日) - 日本気象協会 tenki.jp"
+      },
       {
         "name": "japantimes.co.jp",
         "url": "https://www.japantimes.co.jp/news/2026/11/04/japan/typhoon-infa/",
         "title": "High waves around Ogasawara Islands expected as Typhoon In-fa approaches - The Japan Times"
       },
       {
-        "name": "weathernews.jp",
-        "url": "https://weathernews.jp/news/202611/040021/",
-        "title": "台風31号(インファ) 強い勢力に発達し小笠原諸島へ 関東付近も雨が強まる可能性 - ウェザーニュース"
+        "name": "natureworldnews.com",
+        "url": "https://www.natureworldnews.com/articles/73724/20261104/fa-becomes-western-pacifics-seventh-super-typhoon-2026-noaa-gives-83-odds-record-el-nino.htm",
+        "title": "In-Fa Becomes the Western Pacific's Seventh Super Typhoon of 2026 as NOAA Gives 83% Odds of a Record El Niño"
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-05T07:19:24.635Z",
-    "donationSearched": "2026-11-04T09:50:31.196Z",
-    "directSearched": "2026-11-04T09:50:31.196Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-05T16:54:03.811Z",
+    "directSearched": "2026-11-05T16:54:03.811Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-05T16:54:03.811Z"
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -471,121 +489,68 @@
     "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001346": {
-    "at": "2026-11-04T09:50:31.196Z",
+    "at": "2026-11-05T16:54:03.811Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Tropical Cyclone Murasu crossed the south Andhra Pradesh coast near Ongole, India, in the early morning. As of 4 November 2026 it had weakened into a depression over east Telangana and coastal Andhra Pradesh. The state disaster authority reports at least two deaths and 12,230 people still in cyclone shelters. Power infrastructure was damaged and crops were inundated across several districts.",
+    "searches": 3,
+    "summary": "Tropical Cyclone Murasu made landfall near Ongole in Andhra Pradesh, India, on 3 November 2026. It felled trees, damaged power poles and fishing boats, and left many areas underwater. Preliminary reports say 10,805 people were evacuated to cyclone shelters. By 4 November the system had weakened into a depression over east Telangana and coastal Andhra Pradesh. Reports do not say whether flooding has receded.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Ongole",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "city",
+        "impact": "Storm came ashore nearby"
+      },
       {
         "name": "Prakasam",
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Landfall near Ongole; power infrastructure damaged"
+        "impact": "Trees felled, power poles damaged, boats wrecked"
       },
       {
         "name": "Bapatla",
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Trees uprooted; houses and farms damaged"
+        "impact": "Extensive damage, areas underwater"
       },
       {
         "name": "Krishna",
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Crops inundated"
+        "impact": "Particularly severe damage"
       },
       {
         "name": "Nandyal",
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Crops inundated"
-      },
-      {
-        "name": "Guntur",
-        "admin": "Andhra Pradesh",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Among worst affected for shelter use"
-      },
-      {
-        "name": "Palnadu",
-        "admin": "Andhra Pradesh",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Among worst affected for shelter use"
-      },
-      {
-        "name": "Kothapatnam",
-        "admin": "Andhra Pradesh",
-        "country": "IN",
-        "kind": "town",
-        "impact": "Visuals reported after landfall near Ongole"
-      },
-      {
-        "name": "Cuddalore",
-        "admin": "Tamil Nadu",
-        "country": "IN",
-        "kind": "district",
-        "impact": "Schools closed after heavy rainfall"
+        "impact": "Particularly severe damage"
       }
     ],
     "figures": [
       {
-        "label": "Deaths",
-        "value": "at least 2",
-        "sourceName": "thehitavada.com",
-        "sourceUrl": "https://www.thehitavada.com/Encyc/2026/11/4/cyclone-murasu-kills-2-in-ap-damages-crops-power-lines.html"
+        "label": "Evacuated",
+        "value": "10,805 people",
+        "sourceName": "tribuneindia.com",
+        "sourceUrl": "https://www.tribuneindia.com/news/india/cyclone-murasu-makes-landfall-in-andhra-damages-30000-hectares-of-crops"
       },
       {
-        "label": "In shelters",
-        "value": "12,230 people",
-        "sourceName": "thehitavada.com",
-        "sourceUrl": "https://www.thehitavada.com/Encyc/2026/11/4/cyclone-murasu-kills-2-in-ap-damages-crops-power-lines.html"
-      },
-      {
-        "label": "Houses affected",
-        "value": "312",
-        "sourceName": "thehitavada.com",
-        "sourceUrl": "https://www.thehitavada.com/Encyc/2026/11/4/cyclone-murasu-kills-2-in-ap-damages-crops-power-lines.html"
-      },
-      {
-        "label": "Crops affected",
-        "value": "52,459 hectares",
-        "sourceName": "nationalheraldindia.com",
-        "sourceUrl": "https://www.nationalheraldindia.com/national/cyclone-murasu-kills-two-in-andhra-pradesh-damages-crops-across-52000-hectares"
-      },
-      {
-        "label": "Economic loss",
-        "value": "Rs 344 crore (preliminary)",
-        "sourceName": "english.dainikjagranmpcg.com",
-        "sourceUrl": "https://english.dainikjagranmpcg.com/national/cyclone-murasu-weakens-after-andhra-pradesh-landfall-two-dead-damage/article-42768"
+        "label": "Crop area damaged",
+        "value": "30,661 acres",
+        "sourceName": "tribuneindia.com",
+        "sourceUrl": "https://www.tribuneindia.com/news/india/cyclone-murasu-makes-landfall-in-andhra-damages-30000-hectares-of-crops"
       }
     ],
     "donation": [
       {
         "url": "https://www.indianredcross.org/ircs/donatenow/",
-        "org": "Indian Red Cross Society",
+        "org": "Indian Red Cross Society (IRCS)",
         "kind": "society",
-        "note": "General Indian Red Cross donation page; not specific to this cyclone.",
-        "specific": false
-      },
-      {
-        "url": "https://www.ifrc.org/donate",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "General IFRC donation page for global work and specific emergencies.",
-        "specific": false
-      },
-      {
-        "url": "https://crisisrelief.un.org/en/",
-        "org": "UN OCHA",
-        "kind": "un",
-        "note": "General UN OCHA pooled fund page for worldwide crises.",
+        "note": "General IRCS donation page with online and bank options, not for Murasu.",
         "specific": false
       }
     ],
@@ -596,19 +561,14 @@
         "title": "Cyclone Murasu 2026, Tracker, Affected Areas, Warnings, Latest Updates"
       },
       {
-        "name": "thehitavada.com",
-        "url": "https://www.thehitavada.com/Encyc/2026/11/4/cyclone-murasu-kills-2-in-ap-damages-crops-power-lines.html",
-        "title": "Cyclone Murasu kills 2 in AP, damages crops; power lines - The Hitavada"
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/3/cyclone-murasu-makes-landfall-on-indias-eastern-coast",
+        "title": "Cyclone Murasu makes landfall on India’s eastern coast"
       },
       {
-        "name": "downtoearth.org.in",
-        "url": "https://www.downtoearth.org.in/climate-change/cyclone-murasu-second-severe-cyclonic-storm-in-a-week-leaves-a-trail-of-destruction-along-andhra-pradesh-coast",
-        "title": "Cyclone Murasu: Second severe cyclonic storm in a week leaves a trail of destruction along Andhra Pradesh coast"
-      },
-      {
-        "name": "nationalheraldindia.com",
-        "url": "https://www.nationalheraldindia.com/national/cyclone-murasu-kills-two-in-andhra-pradesh-damages-crops-across-52000-hectares",
-        "title": "Cyclone Murasu kills two in Andhra Pradesh, damages crops across 52,000 hectares"
+        "name": "tribuneindia.com",
+        "url": "https://www.tribuneindia.com/news/india/cyclone-murasu-makes-landfall-in-andhra-damages-30000-hectares-of-crops",
+        "title": "Cyclone Murasu makes landfall in Andhra, damages 30,000 hectares of crops - The Tribune"
       },
       {
         "name": "etvbharat.com",
@@ -617,10 +577,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|IN#2d25d059",
-    "seen": "2026-11-05T07:19:24.635Z",
-    "donationSearched": "2026-11-04T09:50:31.196Z",
-    "directSearched": "2026-11-04T09:50:31.196Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-05T16:54:03.811Z",
+    "directSearched": "2026-11-05T16:54:03.811Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-05T16:54:03.811Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-05T07:19:24.635Z",
@@ -720,10 +680,10 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-05T07:19:24.635Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-03T19:56:18.676Z",
@@ -850,7 +810,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-05T07:19:24.635Z",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-03T19:56:18.676Z",
     "directSearched": "2026-11-03T19:56:18.676Z",
     "directSearchVersion": 2
@@ -881,10 +841,10 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-05T07:19:24.635Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -1358,7 +1318,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-05T07:19:24.635Z",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -2632,92 +2592,6 @@
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-flood-fl-1104225": {
-    "at": "2026-10-21T22:09:59.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A flash flood on the Budhi Gandaki River in Gorkha district, northern central Nepal, began on 11 October 2026 after a blocked river broke, reportedly from a landslide near Chumchet. It damaged houses, bridges and roads in Chumnubri and Dharche rural municipalities and in the Manaslu region. The latest source is dated 14 October 2026; it reports no direct effects beyond the flood damage and does not say whether evacuation advice remains in place.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Chumnubri",
-        "admin": "Gandaki Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "settlements, bridges and infrastructure hit by flash flood"
-      },
-      {
-        "name": "Dharche",
-        "admin": "Gandaki Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "settlements, bridges and infrastructure hit by flash flood"
-      },
-      {
-        "name": "Chumchet",
-        "admin": "Gorkha District",
-        "country": "NP",
-        "kind": "site",
-        "impact": "landslide dam believed to have failed"
-      },
-      {
-        "name": "Manaslu region",
-        "country": "NP",
-        "kind": "region",
-        "impact": "bridges and homes affected, trekking routes disrupted"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Houses destroyed",
-        "value": "200",
-        "sourceName": "phys.org",
-        "sourceUrl": "https://phys.org/news/2026-10-nepal-triggered-ice-avalanche.html"
-      },
-      {
-        "label": "Missing",
-        "value": "5",
-        "sourceName": "phys.org",
-        "sourceUrl": "https://phys.org/news/2026-10-nepal-triggered-ice-avalanche.html"
-      },
-      {
-        "label": "Stranded",
-        "value": "more than 100 foreign trekkers",
-        "sourceName": "eos.org",
-        "sourceUrl": "https://eos.org/thelandslideblog/the-11-october-2026-landslide-and-debris-flow-flood-on-the-budhi-gandaki-river-in-gorkha-district-nepal"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "cnn.com",
-        "url": "https://www.cnn.com/2026/10/11/world/video/nepal-flood-buildings-vrtc",
-        "title": "Buildings swept away by flood in Nepal"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Budhi_Gandaki_flood",
-        "title": "2026 Budhi Gandaki flood"
-      },
-      {
-        "name": "eos.org",
-        "url": "https://eos.org/thelandslideblog/the-11-october-2026-landslide-and-debris-flow-flood-on-the-budhi-gandaki-river-in-gorkha-district-nepal",
-        "title": "The 11 October 2026 landslded and debris flow/flood on the Budhi Gandaki River in Gorkha district, Nepal"
-      },
-      {
-        "name": "icimod.org",
-        "url": "https://www.icimod.org/press-releases/landslide-dam-breach-may-have-triggered-budhi-gandaki-flash-flood/",
-        "title": "Landslide-dam breach may have triggered Budhi Gandaki flash flood - ICIMOD"
-      },
-      {
-        "name": "eu-space.europa.eu",
-        "url": "https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/landslide-triggered-flash-flood-sweeps-through-nepals-himalayan-valleys",
-        "title": "Landslide-triggered flash flood sweeps through Nepal's Himalayan valleys"
-      }
-    ],
-    "membersHash": "gdacs|NP#afb5f215",
-    "seen": "2026-10-22T08:03:09.184Z"
   },
   "gdacs-flood-fl-1104226": {
     "at": "2026-10-21T22:09:59.986Z",
@@ -4007,7 +3881,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-05T07:19:24.635Z",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -4064,7 +3938,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-05T07:19:24.635Z",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -5371,7 +5245,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-05T07:19:24.635Z",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-05T00:08:17.816Z",
     "direct": [
       {
@@ -5578,7 +5452,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-05T07:19:24.635Z",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-04T01:03:04.924Z",
     "directSearched": "2026-11-04T01:03:04.924Z",
     "directSearchVersion": 2
@@ -6110,7 +5984,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-05T07:19:24.635Z",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -6259,6 +6133,10 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
+    "seen": "2026-11-05T16:54:03.811Z",
+    "donationSearched": "2026-11-05T07:19:24.635Z",
+    "directSearched": "2026-11-05T07:19:24.635Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
@@ -6275,11 +6153,7 @@
         "note": "Emergency food, shelter and water for families hit by the Nuristan flood.",
         "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
       }
-    ],
-    "donationSearched": "2026-11-05T07:19:24.635Z",
-    "directSearched": "2026-11-05T07:19:24.635Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-05T07:19:24.635Z"
+    ]
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6491,7 +6365,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-05T07:19:24.635Z",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2,
@@ -6953,7 +6827,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-05T07:19:24.635Z",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-05T00:08:17.816Z",
     "directSearched": "2026-11-05T00:08:17.816Z",
     "directSearchVersion": 2,
@@ -7790,148 +7664,6 @@
     "membersHash": "news|KR#b8b5f841",
     "seen": "2026-10-24T07:44:33.939Z"
   },
-  "news-cyclone-cyclone-ru-b85a88b1eb": {
-    "at": "2026-10-22T08:03:09.184Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Typhoon Champi, the thirtieth typhoon of the 2026 season, began on 21 October 2026. No direct effects in Russia are reported. Primorye's weather service forecasts temperature swings linked to the storm: warm weather on 24 October, up to 4 degrees above normal, then cooling with possible snow on 28 to 29 October. As of 22 October, the typhoon was near Taiwan.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Primorye",
-        "country": "RU",
-        "kind": "region",
-        "impact": "forecast up to 4 C above normal"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "fedpress.ru",
-        "url": "https://fedpress.ru/news/25/society/3456904",
-        "title": "Аномальная погода идет на Приморье: синоптики предупредили об аномальной жаре и морозе"
-      },
-      {
-        "name": "taipeitimes.com",
-        "url": "https://www.taipeitimes.com/News/front/archives/2026/10/22/2003866405",
-        "title": "CWA warns storm effect at top in next two days - Taipei Times"
-      },
-      {
-        "name": "primamedia.ru",
-        "url": "https://primamedia.ru/news/2658597/",
-        "title": "Температурные качели наберут обороты: Борис Кубай рассказал о влиянии тайфунов на погоду в Приморье - PrimaMedia.ru"
-      }
-    ],
-    "membersHash": "news|RU#a45b8e72",
-    "seen": "2026-10-22T08:03:09.184Z"
-  },
-  "news-cyclone-cyclone-tw-61fe5a3a90": {
-    "at": "2026-10-22T14:17:21.809Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Typhoon Champi is approaching Taiwan. On 22 October 2026 the Central Weather Administration issued a land warning covering Yilan, Hualien, Taitung and Pingtung counties. Heavy rain and strong winds are forecast through Saturday, with the storm expected to move away Saturday afternoon. Heavy to torrential rain is likely to continue in northern and central Taiwan. Taipei shut offices and schools, and 125 flights were cancelled on Thursday.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Yilan",
-        "country": "TW",
-        "kind": "district",
-        "impact": "land warning issued"
-      },
-      {
-        "name": "Hualien",
-        "country": "TW",
-        "kind": "district",
-        "impact": "land warning issued"
-      },
-      {
-        "name": "Taitung",
-        "country": "TW",
-        "kind": "district",
-        "impact": "land warning issued"
-      },
-      {
-        "name": "Pingtung",
-        "country": "TW",
-        "kind": "district",
-        "impact": "land warning and strong wind advisory"
-      },
-      {
-        "name": "Taipei",
-        "country": "TW",
-        "kind": "city",
-        "impact": "offices and schools shut"
-      },
-      {
-        "name": "New Taipei",
-        "country": "TW",
-        "kind": "city",
-        "impact": "Friday closure decision pending"
-      },
-      {
-        "name": "Keelung",
-        "country": "TW",
-        "kind": "city",
-        "impact": "Friday closure decision pending"
-      },
-      {
-        "name": "Taoyuan",
-        "country": "TW",
-        "kind": "city",
-        "impact": "Friday closure decision pending"
-      },
-      {
-        "name": "Penghu",
-        "country": "TW",
-        "kind": "district",
-        "impact": "strong wind advisory"
-      },
-      {
-        "name": "Lanyu",
-        "country": "TW",
-        "kind": "site",
-        "impact": "work and classes suspended from noon"
-      },
-      {
-        "name": "Ludao",
-        "country": "TW",
-        "kind": "site",
-        "impact": "work and classes suspended from noon"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "focustaiwan.tw",
-        "url": "https://focustaiwan.tw/society/202610220006",
-        "title": "Taiwan issues land warning as Typhoon Champi approaches - Focus Taiwan"
-      },
-      {
-        "name": "taipeitimes.com",
-        "url": "https://www.taipeitimes.com/News/front/archives/2026/10/22/2003866435",
-        "title": "Taiwan issues land warning as Typhoon Champi approaches - Taipei Times"
-      },
-      {
-        "name": "taiwannews.com.tw",
-        "url": "https://www.taiwannews.com.tw/news/6463090",
-        "title": "Taiwan issues land warning for Typhoon Champi"
-      },
-      {
-        "name": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/articles/2026-10-22/typhoon-champi-shuts-taiwan-s-5-trillion-stock-market",
-        "title": "Typhoon Champi Forces Closure of Taiwan’s $5 Trillion Stock Market on Friday - Bloomberg"
-      },
-      {
-        "name": "wtvbam.com",
-        "url": "https://wtvbam.com/2026/10/22/taiwan-issues-land-warning-ahead-of-arrival-of-powerful-typhoon-champi/",
-        "title": "Taiwan issues land warning ahead of arrival of powerful Typhoon Champi"
-      }
-    ],
-    "membersHash": "news|TW#3872c8a7",
-    "seen": "2026-10-22T14:17:21.809Z"
-  },
   "news-cyclone-cyclone-tw-6575d929d1": {
     "at": "2026-10-24T07:44:33.939Z",
     "model": "claude-haiku-5-5",
@@ -8275,86 +8007,6 @@
       }
     ],
     "membersHash": "news|JP#3b3402c1"
-  },
-  "news-earthquake-earthquake-pa-4994c1646f": {
-    "at": "2026-10-22T08:03:09.184Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 7.5 to 7.7 earthquake struck Azuero and Veraguas, Panama, on 9 October 2026 at 17:56 UTC, with its epicentre near Pitaloza Arriba in Herrera Province. A national emergency was declared on 10 October. As of 16 October, about 3,696 people remained in 46 makeshift shelters, mostly in Mariato district. Aftershocks continued, and effects were ongoing as of 19 to 20 October.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Pitaloza Arriba",
-        "admin": "Herrera",
-        "country": "PA",
-        "kind": "town",
-        "impact": "epicentre"
-      },
-      {
-        "name": "Tonosí",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "hotel and several homes collapsed"
-      },
-      {
-        "name": "Mariato",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "district",
-        "impact": "most of 3,696 sheltered people"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Injured",
-        "value": "27 people",
-        "sourceName": "latintimes.com",
-        "sourceUrl": "https://www.latintimes.com/panama-hit-77-quake-147-aftershocks-27-injured-cathedral-collapsed-600040"
-      },
-      {
-        "label": "Sheltered",
-        "value": "3,696 people",
-        "sourceName": "news.ssbcrack.com",
-        "sourceUrl": "https://news.ssbcrack.com/panama-earthquake-in-azuero-veraguas-situation-report-no-05-as-of-16-october-2026/"
-      },
-      {
-        "label": "People assisted by Red Cross",
-        "value": "4,000 people",
-        "sourceName": "ifrc.org",
-        "sourceUrl": "https://www.ifrc.org/es/press-release/cruz-roja-panamena-intensifica-su-respuesta-para-asistir-cuatro-mil-personas"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "news.ssbcrack.com",
-        "url": "https://news.ssbcrack.com/panama-earthquake-in-azuero-veraguas-situation-report-no-05-as-of-16-october-2026/",
-        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 05 (as of 16 October 2026) - SSBCrack News"
-      },
-      {
-        "name": "jw.org",
-        "url": "https://www.jw.org/en/news/region/panama/Powerful-Earthquake-Shakes-Southern-Panama/",
-        "title": "Powerful Earthquake Shakes Southern Panama"
-      },
-      {
-        "name": "latintimes.com",
-        "url": "https://www.latintimes.com/panama-hit-77-quake-147-aftershocks-27-injured-cathedral-collapsed-600040",
-        "title": "Panama Hit by 7.7 Quake: 147 Aftershocks, 27 Injured, a Cathedral Collapsed"
-      },
-      {
-        "name": "newsroompanama.com",
-        "url": "https://newsroompanama.com/2026/10/17/2351-landslides-at-least-were-caused-by-the-earthquake-in-panama/",
-        "title": "2351+ Landslides at Least were Caused by the Earthquake in Panama. - Newsroom Panama"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Panama_earthquake",
-        "title": "2026 Panama earthquake"
-      }
-    ],
-    "membersHash": "news|PA#147758de",
-    "seen": "2026-10-22T14:17:21.809Z"
   },
   "news-earthquake-earthquake-ve-a276235b63": {
     "at": "2026-10-31T06:15:54.662Z",
@@ -8751,66 +8403,6 @@
     ],
     "membersHash": "news|CO#78604202",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "news-flood-flood-hr-878923ace2": {
-    "at": "2026-10-22T08:03:09.184Z",
-    "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Flash floods hit Dalmatia, Croatia, on 21 October 2026, after a storm brought heavy rain in the Split area. Flooded streets, a flooded garage and displaced manhole covers were reported in Split, and flooded roads in Solin. Croatia Week described the flooding as ongoing on the evening of 21 October. No later update was found, so the status as of 22 October is not reported.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Split",
-        "admin": "Split-Dalmatia County",
-        "country": "HR",
-        "kind": "city",
-        "impact": "garage flooded, streets submerged, manhole covers displaced"
-      },
-      {
-        "name": "Solin",
-        "admin": "Split-Dalmatia County",
-        "country": "HR",
-        "kind": "town",
-        "impact": "flooded road sections, slow traffic"
-      },
-      {
-        "name": "Trogir",
-        "admin": "Split-Dalmatia County",
-        "country": "HR",
-        "kind": "town",
-        "impact": "storm arrived, no damage described"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Rainfall (Kosi, by 6:30 pm)",
-        "value": "95 L/m²",
-        "sourceName": "croatiaweek.com",
-        "sourceUrl": "https://www.croatiaweek.com/split-flash-floods-heavy-rain-dalmatia/"
-      },
-      {
-        "label": "Rainfall (Nisko, by 6:30 pm)",
-        "value": "76 L/m²",
-        "sourceName": "croatiaweek.com",
-        "sourceUrl": "https://www.croatiaweek.com/split-flash-floods-heavy-rain-dalmatia/"
-      },
-      {
-        "label": "Rainfall (Grohote, by 6:30 pm)",
-        "value": "63 L/m²",
-        "sourceName": "croatiaweek.com",
-        "sourceUrl": "https://www.croatiaweek.com/split-flash-floods-heavy-rain-dalmatia/"
-      },
-      {
-        "label": "Rainfall (Staševica, by 6:30 pm)",
-        "value": "62 L/m²",
-        "sourceName": "croatiaweek.com",
-        "sourceUrl": "https://www.croatiaweek.com/split-flash-floods-heavy-rain-dalmatia/"
-      }
-    ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|HR#6698af7a",
-    "seen": "2026-10-22T08:03:09.184Z"
   },
   "news-flood-flood-th-3e351c39ff": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -9980,10 +9572,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "usgs|PK#62eeb9a4",
+    "seen": "2026-11-05T16:54:03.811Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-05T07:19:24.635Z"
+    "directSearchVersion": 2
   },
   "usgs-earthquake-us6000u4j2": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -10032,60 +9624,5 @@
     "donation": [],
     "sources": [],
     "membersHash": "usgs|VU#ec22df8c"
-  },
-  "usgs-earthquake-us7000q1": {
-    "at": "2026-10-22T08:03:09.184Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 5.7 earthquake struck near Khuzdar, Balochistan, Pakistan, on 17 October 2026 at 05:06 UTC. Magnitude estimates differ across agencies (5.6 to 5.9). The epicentre was about 48 km west-northwest of Khuzdar town, per USGS as cited by Times Now. As of the latest reports, no casualties or property damage had been reported, and no later reports of evacuations or relief operations were found.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Khuzdar",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "district",
-        "impact": "Epicentre area; no damage reported"
-      },
-      {
-        "name": "Kharan",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "district",
-        "impact": "Widespread shaking reported; no damage reported"
-      },
-      {
-        "name": "Kalat",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "district",
-        "impact": "Widespread shaking reported; no damage reported"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "nextupnews.pk",
-        "url": "https://www.nextupnews.pk/2026/10/58-magnitude-earthquake-hits.html",
-        "title": "5.8-Magnitude Earthquake Hits Balochistan Near Khuzdar; No Casualties Reported - NextUp News"
-      },
-      {
-        "name": "zeenews.india.com",
-        "url": "https://zeenews.india.com/world/balochistan-khuzdar-earthquake-magnitude-5-7-depth-10km-3076241.html",
-        "title": "5.7 Magnitude earthquake shakes Khuzdar in Pakistan's Balochistan: Shallow 10 km depth causes severe shaking"
-      },
-      {
-        "name": "dawn.com",
-        "url": "https://www.dawn.com/news/2037802/59-magnitude-earthquake-jolts-balochistans-khuzdar",
-        "title": "5.9-magnitude earthquake jolts Balochistan's Khuzdar - Pakistan - DAWN.COM"
-      },
-      {
-        "name": "minutemirror.com.pk",
-        "url": "https://minutemirror.com.pk/5-9-magnitude-earthquake-jolts-balochistans-khuzdar-646218/",
-        "title": "5.9-magnitude earthquake jolts Balochistan’s Khuzdar - Minute Mirror"
-      }
-    ],
-    "membersHash": "gdacs,usgs|PK#a6ef69eb"
   }
 }
