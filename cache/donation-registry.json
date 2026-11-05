@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-04T18:26:07.453Z",
+  "updated": "2026-11-05T00:08:17.816Z",
   "fetched": {
-    "societies": "2026-11-04T18:26:07.453Z",
-    "uncr": "2026-11-04T18:26:07.453Z"
+    "societies": "2026-11-05T00:08:17.816Z",
+    "uncr": "2026-11-05T00:08:17.816Z"
   },
   "societies": {
     "AF": {
@@ -2404,14 +2404,6 @@
       "url": "https://crisisrelief.un.org/donate-pakistan-crisis",
       "name": "Pakistan"
     },
-    "MZ": {
-      "url": "https://crisisrelief.un.org/donate-mozambique-crisis",
-      "name": "Mozambique"
-    },
-    "PS": {
-      "url": "https://crisisrelief.un.org/donate-opt-crisis",
-      "name": "the Occupied Palestinian Territory"
-    },
     "LK": {
       "url": "https://crisisrelief.un.org/donate-sri-lanka",
       "name": "Sri Lanka"
@@ -2436,6 +2428,14 @@
       "url": "https://crisisrelief.un.org/donate-bangladesh-crisis",
       "name": "Bangladesh"
     },
+    "PS": {
+      "url": "https://crisisrelief.un.org/donate-opt-crisis",
+      "name": "the Occupied Palestinian Territory"
+    },
+    "MZ": {
+      "url": "https://crisisrelief.un.org/donate-mozambique-crisis",
+      "name": "Mozambique"
+    },
     "CD": {
       "url": "https://crisisrelief.un.org/donate-drc-crisis",
       "name": "the Democratic Republic of the Congo"
@@ -2459,34 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-28T23:02:19.626Z",
-      "chain": [
-        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
-        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
-      ]
-    },
-    "ayuda.cruzrojacolombiana.org": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-28T23:02:19.626Z",
-      "chain": [
-        "https://ayuda.cruzrojacolombiana.org/",
-        "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
-      ]
-    },
-    "local4:ifrc-flood-8013:salamcharity.org.uk/appeals/bangladesh-emergency": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Bangladesh\"",
-      "checked": "2026-10-28T23:02:19.626Z",
-      "chain": [
-        "https://www.salamcharity.org.uk/appeals/bangladesh-emergency/"
-      ],
-      "place": "Bangladesh",
-      "title": "Bangladesh Flood"
-    },
     "kksh.org.al": {
       "ok": true,
       "reason": "donation word \"dhuro*\"",
@@ -2861,70 +2833,107 @@
     "croixrouge-rdc.org": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-04T18:26:07.453Z",
       "chain": [
         "https://www.croixrouge-rdc.org/"
-      ],
-      "checked": "2026-11-04T18:26:07.453Z"
+      ]
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-04T18:26:07.453Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
-      ],
-      "checked": "2026-11-04T18:26:07.453Z"
+      ]
     },
     "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
       "ok": false,
       "reason": "HTTP 406",
+      "checked": "2026-11-04T18:26:07.453Z",
       "chain": [
         "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ],
-      "checked": "2026-11-04T18:26:07.453Z"
+      ]
     },
     "ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-04T18:26:07.453Z",
       "chain": [
         "https://www.ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding"
       ],
-      "blocked": true,
-      "checked": "2026-11-04T18:26:07.453Z"
+      "blocked": true
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-04T18:26:07.453Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-04T18:26:07.453Z"
+      "blocked": true
     },
     "go.ifrc.org/emergencies/8013/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-04T18:26:07.453Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8013/overview"
-      ],
-      "checked": "2026-11-04T18:26:07.453Z"
+      ]
     },
     "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-04T18:26:07.453Z",
       "chain": [
         "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
       ],
-      "blocked": true,
-      "checked": "2026-11-04T18:26:07.453Z"
+      "blocked": true
     },
     "donate.bdrcs.org/blog": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-04T18:26:07.453Z",
       "chain": [
         "https://donate.bdrcs.org/blog/"
       ],
+      "blocked": true
+    },
+    "local4:ifrc-flood-8073:hidaya.org/social-welfare/disaster-relief/nepal-flash-flood": {
+      "ok": false,
+      "reason": "asks for Zelle, as scams do",
+      "chain": [
+        "https://www.hidaya.org/social-welfare/disaster-relief/nepal-flash-flood/"
+      ],
+      "checked": "2026-11-05T00:08:17.816Z"
+    },
+    "local4:ifrc-flood-8073:childrenofadam.org/all-appeals/nepal-emergency": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Nepal\"",
+      "chain": [
+        "https://childrenofadam.org/all-appeals/nepal-emergency/"
+      ],
+      "place": "Nepal",
+      "name": "Children of Adam",
+      "title": "Nepal Flood Appeal 2026 | Donate Now | Children of Adam",
+      "checked": "2026-11-05T00:08:17.816Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
       "blocked": true,
-      "checked": "2026-11-04T18:26:07.453Z"
+      "checked": "2026-11-05T00:08:17.816Z"
+    },
+    "ayuda.cruzrojacolombiana.org": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://ayuda.cruzrojacolombiana.org/",
+        "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
+      ],
+      "checked": "2026-11-05T00:08:17.816Z"
     }
   }
 }
