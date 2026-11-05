@@ -366,7 +366,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-05T00:08:17.816Z",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-04T09:50:31.196Z",
     "directSearched": "2026-11-04T09:50:31.196Z",
     "directSearchVersion": 2
@@ -617,18 +617,30 @@
       }
     ],
     "membersHash": "eonet,gdacs|IN#2d25d059",
-    "seen": "2026-11-05T00:08:17.816Z",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-04T09:50:31.196Z",
     "directSearched": "2026-11-04T09:50:31.196Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-11-03T03:51:42.335Z",
+    "at": "2026-11-05T07:19:24.635Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A drought affecting much of Europe started on 21 December 2025, according to the GDACS feed. The EU Joint Research Centre said on 28 October 2026 that conditions remained critical in most of Europe. A 2 November forecast expected dry weather across much of Europe that week. Recovery was reported only in Scandinavia and central Northern Europe.",
+    "summary": "A drought across parts of Europe in 2026, which sources describe as a summer 2026 event rather than starting 21 December 2025. A JRC analysis run on 28 October said drought conditions remained critical in most of Europe. On 3 November the EEA said the drought, heat and wildfires disrupted infrastructure, costing the EU at least 1% of GDP. No formal end date has been given.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Neuchâtel",
+        "country": "CH",
+        "kind": "region",
+        "impact": "Emergency measures enacted for farmers"
+      },
+      {
+        "name": "Schwyz",
+        "country": "CH",
+        "kind": "region",
+        "impact": "Emergency measures enacted for farmers"
+      },
       {
         "name": "Wallonia",
         "country": "BE",
@@ -639,45 +651,39 @@
         "name": "Brussels-Capital Region",
         "country": "BE",
         "kind": "region",
-        "impact": "Yellow drought alert extended"
-      },
-      {
-        "name": "Neuchâtel",
-        "country": "CH",
-        "kind": "region",
-        "impact": "Emergency measures for farmers"
-      },
-      {
-        "name": "Schwyz",
-        "country": "CH",
-        "kind": "region",
-        "impact": "Emergency measures for farmers"
-      },
-      {
-        "name": "Po",
-        "country": "IT",
-        "kind": "site",
-        "impact": "Reportedly dried up, seawater intrusion"
+        "impact": "Code yellow drought alert extended"
       }
     ],
     "figures": [
       {
-        "label": "Land in drought",
-        "value": "about 50% of EU and UK territory",
-        "sourceName": "newsahoot.com",
-        "sourceUrl": "https://newsahoot.com/articles/europe-drought-2026"
-      },
-      {
-        "label": "Wildfire area burnt",
+        "label": "Area burned by wildfires",
         "value": "nearly 580,000 hectares",
         "sourceName": "wodnesprawy.pl",
         "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
       },
       {
-        "label": "Farm aid announced by France",
-        "value": "more than €1 billion",
-        "sourceName": "thepigsite.com",
-        "sourceUrl": "https://www.thepigsite.com/news/2026/09/france-unveils-1-billion-aid-package-for-drought-hit-farmers"
+        "label": "Rainfall in Switzerland",
+        "value": "August was the driest since measurements began in 1864",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_European_drought"
+      },
+      {
+        "label": "Sunflower and olive oil yields",
+        "value": "fell 6-7%",
+        "sourceName": "foodnavigator.com",
+        "sourceUrl": "https://www.foodnavigator.com/Article/2026/08/11/drought-in-europe-how-have-crops-been-impacted/"
+      },
+      {
+        "label": "Crop yields below five-year average",
+        "value": "up to 14 %",
+        "sourceName": "joint-research-centre.ec.europa.eu",
+        "sourceUrl": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/exceptionally-dry-and-hot-weather-threatens-summer-crops-2026-08-24_en"
+      },
+      {
+        "label": "Drought-related economic losses",
+        "value": "around €2 billion per year",
+        "sourceName": "brusselstimes.com",
+        "sourceUrl": "https://www.brusselstimes.com/eu-affairs/2389933/heat-and-drought-cost-eu-1-of-gdp-in-climate-driven-2026-shocks"
       }
     ],
     "donation": [],
@@ -693,31 +699,31 @@
         "title": "Central Europe Faces Major Dry Weather Drought Threat - Newsy Today"
       },
       {
+        "name": "brusselstimes.com",
+        "url": "https://www.brusselstimes.com/eu-affairs/2389933/heat-and-drought-cost-eu-1-of-gdp-in-climate-driven-2026-shocks",
+        "title": "Heat and drought cost EU 1% of GDP in climate-driven 2026 shocks"
+      },
+      {
         "name": "en.wikipedia.org",
         "url": "https://en.wikipedia.org/wiki/2026_European_drought",
         "title": "2026 European drought"
       },
       {
-        "name": "worldweatherattribution.org",
-        "url": "https://www.worldweatherattribution.org/increasingly-hot-europe-faces-more-severe-droughts-and-growing-challenges-for-water-and-land-management/",
-        "title": "Increasingly hot Europe faces more severe droughts and growing challenges for water and land management"
+        "name": "data.consilium.europa.eu",
+        "url": "https://data.consilium.europa.eu/doc/document/ST-13542-2026-INIT/en/pdf",
+        "title": "13542/26 1 LIFE.1 EN Council of the European Union Brussels, 24 September 2026"
       },
       {
-        "name": "globalimpact.earth",
-        "url": "https://globalimpact.earth/problem/europes-deepening-water-scarcity-crisis",
-        "title": "Water Shortages in Europe: 2026 Drought Crisis"
-      },
-      {
-        "name": "newsahoot.com",
-        "url": "https://newsahoot.com/articles/europe-drought-2026",
-        "title": "The European Drought Crisis of 2026"
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/exceptionally-dry-and-hot-weather-threatens-summer-crops-2026-08-24_en",
+        "title": "Exceptionally dry and hot weather threatens summer crops - Joint Research Centre"
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-05T00:08:17.816Z",
-    "donationSearched": "2026-11-03T03:51:42.335Z",
-    "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-05T07:19:24.635Z",
+    "directSearched": "2026-11-05T07:19:24.635Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-05T07:19:24.635Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-03T19:56:18.676Z",
@@ -844,13 +850,13 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-05T00:08:17.816Z",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-03T19:56:18.676Z",
     "directSearched": "2026-11-03T19:56:18.676Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-11-03T03:51:42.335Z",
+    "at": "2026-11-05T07:19:24.635Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
     "summary": "",
@@ -859,19 +865,26 @@
     "figures": [],
     "donation": [
       {
+        "url": "https://go.ifrc.org/emergencies/8079/overview",
+        "org": "IFRC with Ethiopian Red Cross Society",
+        "kind": "society",
+        "note": "Ethiopia-only drought DREF operation MDRET042, with different dates and footprint",
+        "specific": false
+      },
+      {
         "url": "https://member.redcrosseth.org/donate",
         "org": "Ethiopian Red Cross Society",
         "kind": "society",
-        "note": "General donation page for Ethiopian Red Cross Society, not specific to this drought.",
+        "note": "General Ethiopian Red Cross donation fund, not tied to this event",
         "specific": false
       }
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-05T00:08:17.816Z",
-    "donationSearched": "2026-11-03T03:51:42.335Z",
-    "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-05T07:19:24.635Z",
+    "directSearched": "2026-11-05T07:19:24.635Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-05T07:19:24.635Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -1345,7 +1358,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-05T00:08:17.816Z",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -3994,7 +4007,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-05T00:08:17.816Z",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -4051,7 +4064,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-05T00:08:17.816Z",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -4597,111 +4610,6 @@
     "sources": [],
     "membersHash": "gdacs|AU#0657c86c",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-wildfire-wf-1032726": {
-    "at": "2026-10-21T22:09:59.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Wildfires in eastern Mongolia began around 8 to 10 October 2026. The main fire in Numrug Strictly Protected Area in Dornod province was fully extinguished on 16 October, according to a Ministry statement reported on 21 October. Officials reported one death and two injured, and about 528,766 hectares burned in Numrug. Across Mongolia, 172 fires have burned 1,016,908 hectares this year. A border fire in Dong Ujimqin Banner, Inner Mongolia, had not entered China as of 11…",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Numrug Strictly Protected Area",
-        "admin": "Dornod",
-        "country": "MN",
-        "kind": "site",
-        "impact": "Largest burn, 528,765.5 ha; fully extinguished 16 Oct"
-      },
-      {
-        "name": "Khalkh Gol",
-        "admin": "Dornod",
-        "country": "MN",
-        "kind": "district",
-        "impact": "Steppe fire, extinguished 12 Oct"
-      },
-      {
-        "name": "Dong Ujimqin Banner",
-        "admin": "Xilingol League, Inner Mongolia",
-        "country": "CN",
-        "kind": "district",
-        "impact": "Border fire from Mongolia; not in China by 11 Oct"
-      },
-      {
-        "name": "Dornod",
-        "country": "MN",
-        "kind": "region",
-        "impact": "Among eastern provinces with most of year's fires"
-      },
-      {
-        "name": "Sukhbaatar",
-        "country": "MN",
-        "kind": "region",
-        "impact": "Among eastern provinces with most of year's fires"
-      },
-      {
-        "name": "Khentii",
-        "country": "MN",
-        "kind": "region",
-        "impact": "Among eastern provinces with most of year's fires"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "1",
-        "sourceName": "asianews.network",
-        "sourceUrl": "https://asianews.network/one-dead-two-injured-in-172-forest-and-steppe-fires-this-year-in-mongolia/"
-      },
-      {
-        "label": "Injured",
-        "value": "2 (burn injuries)",
-        "sourceName": "asianews.network",
-        "sourceUrl": "https://asianews.network/one-dead-two-injured-in-172-forest-and-steppe-fires-this-year-in-mongolia/"
-      },
-      {
-        "label": "Area burned in Numrug",
-        "value": "528,765.5 ha",
-        "sourceName": "china.org.cn",
-        "sourceUrl": "http://www.china.org.cn/2026-10/21/content_118742547.shtml"
-      },
-      {
-        "label": "Area burned in Mongolia in 2026",
-        "value": "1,016,908 ha across 172 fires",
-        "sourceName": "news.cn",
-        "sourceUrl": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html"
-      },
-      {
-        "label": "Damage",
-        "value": "about MNT 7.9 billion (about US$2.2 million), year to date",
-        "sourceName": "news.cn",
-        "sourceUrl": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "china.org.cn",
-        "url": "http://www.china.org.cn/2026-10/21/content_118742547.shtml",
-        "title": "Massive Japanese-related reserve wildfire in E. Mongolia burns over half mln hectares of land - China.org.cn"
-      },
-      {
-        "name": "news.cn",
-        "url": "http://www.news.cn/english/20261012/a405371257fa4574ad2da6a540bf4c22/c.html",
-        "title": "Wildfires burn over 1 mln hectares of land in Mongolia so far this year-Xinhua"
-      },
-      {
-        "name": "news.cgtn.com",
-        "url": "https://news.cgtn.com/news/2026-10-13/Mongolia-grassland-fire-nears-Chinese-border-1RcKZ6rN29y/p.html",
-        "title": "Mongolia grassland fire nears Chinese border - CGTN"
-      },
-      {
-        "name": "ecns.cn",
-        "url": "https://www.ecns.cn/cns-wire/2026-10-12/detail-ihfkxmcz6617673.shtml",
-        "title": "Fire in Mongolia approaches China's border, 2,000 firefighters mobilized"
-      }
-    ],
-    "membersHash": "gdacs|CN,MN#82527b72",
-    "seen": "2026-10-22T01:04:05.836Z"
   },
   "gdacs-wildfire-wf-1032727": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -5463,6 +5371,8 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
+    "seen": "2026-11-05T07:19:24.635Z",
+    "donationSearched": "2026-11-05T00:08:17.816Z",
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/colombia-earthquake-response/",
@@ -5502,9 +5412,7 @@
         "title": "Colombia earthquake: Donate to help survivors",
         "published": "2026-08-15T09:59:51.584Z"
       }
-    ],
-    "donationSearched": "2026-11-05T00:08:17.816Z",
-    "seen": "2026-11-05T00:08:17.816Z"
+    ]
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-04T01:03:04.924Z",
@@ -5670,7 +5578,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-05T00:08:17.816Z",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-04T01:03:04.924Z",
     "directSearched": "2026-11-04T01:03:04.924Z",
     "directSearchVersion": 2
@@ -6202,7 +6110,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-05T00:08:17.816Z",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -6272,10 +6180,10 @@
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
-    "at": "2026-11-03T03:51:42.335Z",
+    "at": "2026-11-05T07:19:24.635Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Flash floods struck Nuristan province, Afghanistan, from 19 July 2026, with the heaviest damage in the provincial capital Parun on 20 July. At least 20 deaths were reported early on, and a further flash flood on 22 July reportedly injured at least 30 people. Search operations for missing people were reported in late July, and an IFRC DREF operation opened on 1 August. No source gives a status after early August.",
+    "searches": 2,
+    "summary": "A flash flood struck Nuristan province, Afghanistan, on 20 July 2026, with a further flash flood reported on 22 July. By 28 July, OCHA reported flood impacts across central, eastern, north-eastern and south-eastern Afghanistan, with Nuristan the most severely affected. Reported deaths, injuries and missing vary by source. No later status was found.",
     "ongoing": true,
     "places": [
       {
@@ -6283,34 +6191,58 @@
         "admin": "Nuristan",
         "country": "AF",
         "kind": "city",
-        "impact": "overwhelmed; municipality reportedly completely destroyed"
+        "impact": "flash flood overwhelmed neighbourhoods; homes, shops destroyed"
       },
       {
-        "name": "Mandol",
+        "name": "Mandol District",
         "admin": "Nuristan",
         "country": "AF",
         "kind": "district",
         "impact": "six houses, roads, farmland damaged"
       },
       {
-        "name": "Torkham",
+        "name": "Torkham border area",
         "country": "AF",
         "kind": "site",
-        "impact": "movement disrupted; three refugees died nearby"
+        "impact": "three refugees died at returnee transit camp"
+      },
+      {
+        "name": "Nuristan",
+        "country": "AF",
+        "kind": "region",
+        "impact": "most severely affected province"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "at least 20",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan"
+        "value": "at least 26",
+        "sourceName": "news.un.org",
+        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
       },
       {
         "label": "Injured",
-        "value": "at least 30",
-        "sourceName": "global-flood.emergency.copernicus.eu",
-        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
+        "value": "125",
+        "sourceName": "humanitariancoalition.ca",
+        "sourceUrl": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods"
+      },
+      {
+        "label": "Missing",
+        "value": "100+",
+        "sourceName": "amu.tv",
+        "sourceUrl": "https://amu.tv/247896/"
+      },
+      {
+        "label": "Houses destroyed",
+        "value": "at least 22",
+        "sourceName": "news.un.org",
+        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
+      },
+      {
+        "label": "Affected people",
+        "value": "more than 15,000 people",
+        "sourceName": "humanitariancoalition.ca",
+        "sourceUrl": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods"
       }
     ],
     "donation": [],
@@ -6324,50 +6256,30 @@
         "name": "news.un.org",
         "url": "https://news.un.org/en/story/2026/07/1167996",
         "title": "Deadly Afghanistan floods kill at least 26 as aid agencies race to reach survivors"
-      },
-      {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan",
-        "title": "Monsoon-driven flash flooding kills at least 20 in Afghanistan"
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-05T00:08:17.816Z",
-    "donationSearched": "2026-11-03T03:51:42.335Z",
-    "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
         "org": "Penny Appeal USA",
         "kind": "local",
-        "note": "Nuristan flood relief for Parun and nearby villages, with quick-donate option.",
+        "note": "Emergency relief for Nuristan flood survivors, with flood emergency donation amounts.",
         "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan - Penny Appeal USA",
-        "published": "2026-07-25T03:51:42.335Z"
-      },
-      {
-        "url": "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/",
-        "org": "Famidi",
-        "kind": "local",
-        "note": "Safe water, food, shelter, medical support and transport based on verified needs.",
-        "title": "Nuristan Flood Emergency: Famidi activates local response",
-        "published": "2026-07-25T03:51:42.335Z"
+        "published": "2026-07-25T07:19:24.635Z"
       },
       {
         "url": "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal",
         "org": "Hayrat Aid",
         "kind": "local",
-        "note": "Emergency appeal for flood relief; page title mentions earthquake, verify.",
+        "note": "Emergency food, shelter and water for families hit by the Nuristan flood.",
         "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
-      },
-      {
-        "url": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods",
-        "org": "Humanitarian Coalition",
-        "kind": "local",
-        "note": "Cash assistance for flood-hit households in Nuristan and Nangarhar, with Community World Service Asia.",
-        "title": "Afghanistan: Nuristan Floods"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-05T07:19:24.635Z",
+    "directSearched": "2026-11-05T07:19:24.635Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-05T07:19:24.635Z"
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -6579,7 +6491,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-05T00:08:17.816Z",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2,
@@ -7041,6 +6953,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
+    "seen": "2026-11-05T07:19:24.635Z",
     "donationSearched": "2026-11-05T00:08:17.816Z",
     "directSearched": "2026-11-05T00:08:17.816Z",
     "directSearchVersion": 2,
@@ -7104,8 +7017,7 @@
         "title": "Nepal Flood Appeal 2026",
         "published": "2026-08-28T00:08:17.816Z"
       }
-    ],
-    "seen": "2026-11-05T00:08:17.816Z"
+    ]
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -10022,42 +9934,56 @@
     "membersHash": "usgs|PA#bb438b36"
   },
   "usgs-earthquake-us6000u2y1": {
-    "at": "2026-11-03T03:51:42.335Z",
+    "at": "2026-11-05T07:19:24.635Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 5.7 earthquake struck near Khuzdar, Balochistan, Pakistan, on 17 October 2026 at about 10:06 local time, according to USGS. Other agencies gave magnitudes from 5.6 to 5.9. Tremors were felt in Khuzdar district and surrounding areas. One man was reportedly killed by a falling rock in the Naal area, and several mud houses were severely damaged. The newest report found is dated 18 October 2026, and no continuing effects were reported after that.",
+    "summary": "A magnitude 5.7 to 5.9 earthquake struck near Khuzdar in Balochistan, Pakistan, on 17 October 2026. Agencies gave different magnitudes and depths. One person was killed by a rock falling from a mountain in the Naal area, and several traditional mud houses were damaged. The latest report found is dated 18 October 2026.",
     "ongoing": true,
     "places": [
       {
-        "name": "Khuzdar district",
+        "name": "Khuzdar",
         "admin": "Balochistan",
         "country": "PK",
         "kind": "district",
-        "impact": "tremors felt, residents left homes"
+        "impact": "Shaking felt across district; residents left homes"
       },
       {
-        "name": "Naal area",
+        "name": "Naal",
         "admin": "Balochistan",
         "country": "PK",
-        "kind": "town",
-        "impact": "rockfall killed one man"
+        "kind": "district",
+        "impact": "Fatal rockfall at Besar, Anari"
+      },
+      {
+        "name": "Kharan",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Strong shaking felt; no damage reported"
+      },
+      {
+        "name": "Kalat",
+        "admin": "Balochistan",
+        "country": "PK",
+        "kind": "district",
+        "impact": "Strong shaking felt; no damage reported"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "1",
-        "sourceName": "freepressjournal.in",
-        "sourceUrl": "https://www.freepressjournal.in/world/pakistan-earthquake-of-magnitude-59-hits-balochistans-khuzdar-1-killed-as-rockfall-damages-region"
+        "sourceName": "dawn.com",
+        "sourceUrl": "https://www.dawn.com/news/2037912/one-dead-as-earthquake-jolts-khuzdar"
       }
     ],
     "donation": [],
     "sources": [],
     "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-11-05T00:08:17.816Z",
-    "donationSearched": "2026-11-03T03:51:42.335Z",
-    "directSearched": "2026-11-03T03:51:42.335Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-05T07:19:24.635Z",
+    "directSearched": "2026-11-05T07:19:24.635Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-05T07:19:24.635Z"
   },
   "usgs-earthquake-us6000u4j2": {
     "at": "2026-10-24T21:17:31.742Z",

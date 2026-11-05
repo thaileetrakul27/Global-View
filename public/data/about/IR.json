@@ -1,14 +1,534 @@
 {
   "code": "IR",
-  "updated": "2026-11-05T00:08:17.816Z",
+  "updated": "2026-11-05T07:19:24.635Z",
   "articles": [
     {
+      "from": "ES",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNakp1bnJ6X2RfQVNpOE90Z3lLTDVGalY4TlpzcGFjUlRwQXJKVGhTOGpnRlRNZ3N4WXFXSE5rUEhjZDdQQl9qczVYTUl6OVpuZmlFNE9hMnAzbW5FZlNoRXR4V1NUVGRyYkRSb09yWHB3aFhyNXNnZVdaWXl4eUdWTHREOGFEdVVsZUNNb3JCeE1DLUY4X3BRT01YbzRZMUJNa1JGOTlSWXNhT0XSAasBQVVfeXFMTW9yR1RFcWJLNVNHVXpoVjBIWlRoZTZUb2ZrRXAwdnNRSTIxRlR4WTRmelFoQWI5dnBkS2NHZ0txZGRaM1FMdVVNZjEwQWZaNGJVXzk1dlhlRzU5ckd4QWF2Sks1U2p6ZjNJcDhrUTB1NThpREh1NW5GMEY4cVJFdXZaQW15M3NncXhaNU95d0dTZFU1U2tVeWp3YUVlcGk1czlnZkZtbGdRSlFR?oc=5",
+      "title": "Irán afirma que tres navíos se incendian en el estrecho de Ormuz",
+      "en": "Iran says three ships catch fire in the Strait of Hormuz",
+      "outlet": "DW.com",
+      "published": "2026-11-05T06:40:16.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IN",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOd2dzTGNyR0pZVHVVMS00c3JMR1p1RVZBeDljUFctczYwNGNqN3k3MDV1MTlHaUhWLWFXVmlVWHZ0TnlGaEduNUdtMmhVVklhbzk5UGJ0enQtd0k0TVFBS2RyRUU1aFg3aW4wb21oeDQycFZNUHVpSElPLVZRNmR5dS1idjRkeUVvTVBwMnhHUldQMVVkSXhRd2hlUVVWeDNFU1B1QktwRFhoZnQwX0p1Ri1sTVBGQjUwbGVmWVdJOWUxS3p0blZhc0U0bkk0Vl9pZVhjVVROTEU2Yy1NSXJTWWpyOGs1QXU5YTkzZXVodkJHc2NLWlJFb2FGbHBGUnRhYUNwMHhR?oc=5",
+      "title": "U.S. midterm elections 2026 LIVE: After midterm loss, Trump left to weigh his next move in Iran war",
+      "en": "U.S. midterm elections 2026 LIVE: After midterm loss, Trump left to weigh his next move in Iran war",
+      "outlet": "The Hindu",
+      "published": "2026-11-05T06:34:59.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "MY",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPcDVERUVlaGtpWkxXSENWQkJCbG5PZGV3X0FvY2VJdk9xSnkwWjlmNnhfRHhzSGJNNW9QUFk3NkgwUXE5VHExVXd5MGJHRlNnUUdzeWtUYUNSQXdBN1hPa1R6UVFJOEE2NThRbjBjRy12cnJkTGs4LU1EMnNmLWwzR0dyWVJ6UDB6WGFhMlV2NW54dlZ5V1lEX3FqVDduUS1wZFRybnl2ZGpjX2FESTlTcktlT3NkRmFvSldZZEo3Vnd6QnlO?oc=5",
+      "title": "Trump anggap perang Iran berbaloi walaupun Republikan kalah pilihan raya",
+      "en": "Trump says Iran war is worthwhile even though Republicans lost the election",
+      "outlet": "Berita Harian",
+      "published": "2026-11-05T06:30:43.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "BD",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ibjUwUUZaNUZCd1dMeXNoOHIzekxydWI4ekdrcEdlejhrMDViVlBieDNvRkwxaWc4UmlNck96T1UzdTV5Q2E3bjFYcHkyV0F5WDRENUNZcVFrLWPSAWhBVV95cUxNelhmZjRieG91YnlaREZQXy1NY1ZrNXFMQ3RIZGhDcGdmRUwxWWJEMHJ0UEE5LWNjUVpEQzVjUHhERHpsdzBJSWNYeWMzUV85TGNNV1UwMmNvUGN3bllWSXVDOU5CZFNHaA?oc=5",
+      "title": "ইরান যুদ্ধের কারণে মধ্যবর্তী নির্বাচনে হার, অবশেষে স্বীকার করলেন ট্রাম্প",
+      "en": "Trump defeated in midterm elections due to Iran war, finally admits",
+      "outlet": "প্রথম আলো",
+      "published": "2026-11-05T06:30:39.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrVXJoNndhR1pjZlVjWVBxTEM2d0hjRzJzVm84Y1c3dzhSYkNfYkN5MmJqV2R5RGR1eGFWUUQ1ZGtSRTM3amtwZ0ZINnlnR2dtNTBWUW5TVE1vdklsbUs0SWNyMXZJMVNXQURIaVUyck8wLXFoMThEaUdrSQ?oc=5",
+      "title": "Guerra Iran USA, Bannon: “Trump promuova commissione d'inchiesta su conflitto”. LIVE",
+      "en": "Iran USA War, Bannon: \"Trump should promote an inquiry commission on the conflict\". LIVE",
+      "outlet": "Sky TG24",
+      "published": "2026-11-05T06:28:27.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQ1ZqTHk0WFRrVkRRYUFVYVl6VlFLTXJzQUR1dlQwMHlvaFMtRkNrLV9JM04yYmRYZ3U2a3pReHNnVW1hYjFaSDRLbC1XY1BPWmliZ0xHQ1JUNTJyTlduR1ZlZzRvYjRRTlNoZ0U2aHBrWG9Na1JXcS1BeEVjU3FZWHd4RjhXbkU3cU1za014TjNHSUl3Z3RwTFlqUW12d3d0VWtub3V5YTV3Tl9hLTdMN0dHRFZDejY4eDRlM19JNVM1TUFFeTI0MUFPOFFhQnhsOEY3YjRrRUozQdIB3wFBVV95cUxPN3kxS0FGd3B0OERWQWVyUHhlVHNIWUt5VzNXTEtuZU52dzBYUllpejZISXZveXE2MXNxNm9iWHBleWRuRlNZTzBaa1QwR1BETXVRVWRmMGI1OUpOWlZuQUZWa0JiNTlicXhnV29wSE5vRVBZVUxqVWMwMDFMRUxXMTg0XzhyaUZkY2NTQWstUTVrSVJRdldFNlM2Vnpab29QcVB6aVBJY2ZER2RfN0MyN2lsSXRuU2RCc1ZaYU5TLV9uR0d4cHpJTXM1Y3BlTmMzRE50Yk5ESHg0TjdaeXUw?oc=5",
+      "title": "Trump sconfitto alle elezioni di midterm trascina con sè anche il futuro di Netanyahu - Bannon chiede a Trump di istituire una commissione su guerra in Iran",
+      "en": "Trump defeated in the midterm elections drags Netanyahu's future down with him - Bannon asks Trump to set up a commission on the war in Iran",
+      "outlet": "RaiNews",
+      "published": "2026-11-05T06:20:27.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVHNJc0hMZzcwZzZGVWxzdWU0Ni1HTDBFZy11QTdLWUI1Q0s4aDRCQ1NsaHNSQXp6c01VWTdYTFBNZmttdVhZMUdZOVozbnlfMHFPaDVzbEo1c3RCcXR1UGY2M2RKSHpnSVM4SHpVbVBONFBJU3h0N2xJRGpZOC1icGIwaXRPMVRBNUYwQzhXMHgxMk5tVlR2YzByMnFGdm5kbWNtMldYa2dzdw?oc=5",
+      "title": "Iranas praneša apie gaisrus laivuose Hormuzo sąsiauryje",
+      "en": "Iran reports fires on ships in the Strait of Hormuz",
+      "outlet": "Delfi",
+      "published": "2026-11-05T06:17:09.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "CU",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQclVjMFpJOVpVSnk3SHRkVW5BdF82eW01ZFlhV3hRcXFjUjJsMk1neVlqVVdWZXNTcU10bG5rekJlQ0w1Q2ZaZV9uanFDbHVJUnVtWXNMWU8yQlRmVFZLaC1ibEpjVTB2U2VfdkIwdUN6VTNSVXN6ZU5vNHMtbW9HalUzT1l3YW91a0ZYbHBrX0dzbVlwMTRVemttVU9fZ09fS05hLTdwdHR5T2pmZXBZ0gGvAUFVX3lxTE14dVh4ZXFpdmw3elJCcXBHTU1EcktmaGd1UWx0aHJLMmN1djY2cUczcml4enRYNlY2RXR1YXNNNDYwbHJ6cmJFd3hqdkNXeVhucVJCbkJiT0FOazFOcjRTZERZWS0yTnlRSHV2THZkMy1HbF9rTGMzYTVrR1BJVjQzVUtrY2RGV1Fac0Z3c2VvWldWNHUwVHZCR1NaZ0VlOGNGcFhiMmo0bkxVU0R1RE0?oc=5",
+      "title": "Guerra en Irán en directo | Irán asegura que dos buques cisterna y un remolcador ardieron tras chocar con minas en Ormuz",
+      "en": "War in Iran live | Iran says two tankers and a tugboat burned after hitting mines in Hormuz",
+      "outlet": "LaSexta",
+      "published": "2026-11-05T06:12:02.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBpUGJuM0h6NEpoT0VYZldXVVRBYWFGOTdEaXA1cnJRLXZMWmxnZ1VIQjJTem9TdWo1V0dWYXByLWd6b01LVl92Z2Q3bzlxV2VJLWRpTWpSQTg0YVZIajktbGJUU05GQQ?oc=5",
+      "title": "美参议院民主党领袖：民主党将结束伊朗战争，伊朗战事“必须结束”",
+      "en": "US Senate Democratic leader: Democrats will end the Iran war, and the Iran war 'must end'",
+      "outlet": "东方财富",
+      "published": "2026-11-05T06:09:44.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNb1F1VnVOdm44ZC1rMFBjZWxBR3dRMl9YTEZVbHIwX0ZUbEdmZXdlZE1xTnhwZGJQWnBBc0VxMS1xZENoc3BWbjZUa3I0ZTFQMEFxSlV1aEQ4T29QaTV3aTl1Z3RMN1hZZXBoUjN3NGRreW1UTXNvWHdVNWpBVFd0dnpTOXZYTFpZcHFBbUI5RVd3Z2FraWszTm4tbV9PYzJtTnA4VHZKVGxxa1ZwYnhDcFpfOW14Tk1XQlBWcVIwOHNQd2tydHp5cW1kSzEzT01oVE05cVJQQzZhRkZaM1Z0dnpxa2pqSmthaDk5V1JuZkV6X1l0V0dnaNIB_gFBVV95cUxNSDI4eFpMUTJZR0FqWXQ3Yk5IckNERTE3Tmoyd2VIdVVQNWs3QzZka0Y5VjNpc0JSR2xPT0hTejByVTZLSm9mTEZCeElLMTNHVm1tVTBDcFI3aUt2bHNMbS1qU0dkR0lxQVRncUNkWnh6OW9HcDBqa0UzeVVPMkVlRVpKSzJ2ODBZSWJtdDNQNUtSWXBkYUtlV25SZWdjUWhXMXBLS1hIX1BpcG9NdkNxSUVJSjRmY1cyOUVLa3hJemZCWU1mbnUtMWh2UEVPR2lZSmJLb01hSzB0a1dsdm9LZ0tncU85VkNpRmkxdTFGTzN4bFBDdU5sOHh5VmRLZw?oc=5",
+      "title": "Kiszivárgott: kisebb belháború robbant ki a Fehér Házban Irán miatt - Most már Trump sem tudja, mi lesz a következő lépés",
+      "en": "Leaked: a minor internal war has broken out in the White House over Iran - Now even Trump does not know what the next step will be",
+      "outlet": "Portfolio.hu",
+      "published": "2026-11-05T06:09:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CU",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOU29wX2wwX3NqUE9ZTGpaVkJNT05aN3FpcndUZmUyT0hMVnlQY0UwNC1oR01jUk8td0gzUlJOQmRVRlBFQkdRaFF2M0VrNWRYT0dMbDl1YWxvMGZlLXRQd2JYdmMwTjQ0ZDExNVpxdTNMemd5TGtrZVVTYlpVZ0NUeEdNS2RUMWpxVUJiems0ZkxYeUtLTTFWenFIZWlaODJvaHRj?oc=5",
+      "title": "Trump sopesa su próximo paso en guerra con Irán que contribuyó a las derrotas republicanas",
+      "en": "Trump weighs his next step in war with Iran that contributed to Republican defeats",
+      "outlet": "AP News",
+      "published": "2026-11-05T05:41:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IE",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPLXpGQW1ZOElORWFWdGY2T19kLVQ4RWhRejEtSlVkUXdZM3llbFN6eGFlZ1M4bnVKZlE1cDY4ajZfV3g2eU95bFdqeUlYMDZIN09yQVdWaExidUhoOFJNb1VlRWtQZkdCU3AxVk92ZGxIeGFocHNZRmkwQk1HXzY2cGNBU0RYS2JSZFJJb3pkUG44MEZwX19VNE1qOExoTlZxM0ZDRWlhU0pLSG9HdFMxdmxUTEt4Z0hReFB4QVd4bnVoQTVLMXdqZ3RtdnIyeUYxeElOdWMzb1pibUNPNktHMw?oc=5",
+      "title": "Trump defends Iran war as JD Vance distances himself from crushing Republican midterm defeat",
+      "en": "Trump defends Iran war as JD Vance distances himself from crushing Republican midterm defeat",
+      "outlet": "Irish Independent",
+      "published": "2026-11-05T05:40:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QOVVLT0ZpeUN0NzJJWjJzdXZwMlB3WEJlc2toc05Ta3ZlWHdCWWxVLVRGTVZmTzVQT3Q4aG5vaU5nN05BakwzaFhOTDZHajh3Y29EdmVWQmhYdw?oc=5",
+      "title": "חריגת ואנס מהשורות, וההערכה בבית הלבן: \"איראן? עכשיו לטראמפ אין מה להפסיד\"",
+      "en": "Vance's deviation from the lines, and the White House assessment: \"Iran? Now Trump has nothing to lose\"",
+      "outlet": "YNET",
+      "published": "2026-11-05T05:39:38.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZ1JpYXIteWp6MzN0T0JHa2tGVnpSdV90dXhmTXpJOVAwdmNDWHhybTRpcDYxR3JDUVdGUVQ1WE85NExZSGptaHlfSWMwT2VQRWQxSUpOZzJ6TW5qMUNTaUxldDgxbTdGbGVFenphMzl2V0g3d3hSSHd0aDIzdHFTYXRZcWg3dURQd0pnTml3b18xQnVYS1ZHVHdQZGR0WFRpS1N5UmpuZVlJZW00SzlMOVdR?oc=5",
+      "title": "Rzeszów celem Iranu? \"Mapa\" rozniosła się w sieci. Ukraińcy dementują",
+      "en": "Rzeszów a target of Iran? A \"map\" spread online. Ukrainians deny it",
+      "outlet": "o2",
+      "published": "2026-11-05T05:31:44.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "TW",
+      "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPeXk5VWdNSm45bWhsWGY1Z1M5NzFMR083b1plWndTTVVvX0lMYURFSHRXZE1vZkh6UmY0bU1sT2hwemdwRGttY3c3NE5SX21XTE5UdGx5cGhFbkhLbXRKN0R6cmtkZ3lzMXlnemVZUV8tQ1p4Nk9uWDZ4dGVyaXBSbnNmbEJTU3RpM0ZxWHRqUlZ5Y3FYSTVTQmFEbU13b25MdDVPQXVxNGxPOF82dERkMHJxNUl2Nnpac3dMMVNZODlVTmRtdzhxNVo1TWR1ZFB1T2FlWFdLMjRPRjRhTmtHQnNhNHp3blNUVGZWc2dZdWNIMnEwUE1KXzR6ZkVGUjBjaGJzVExlNkdGYndURGo0blBQSjFBZkM1YkF2YW5WczNITGNCanQzUUE1UEdWOVNsR01WTV9XMXdPWl9xSWJlay0zRWllTGRzcFBBanI4eDVKQXdSc1NFVFRnbTlOVVo1eVVHeHhMeWxBZVk?oc=5",
+      "title": "川普喊「不急開戰」！官員爆美軍加速備戰 隨時可攻擊伊朗",
+      "en": "Trump says 'no rush to war'! Officials reveal US military accelerating preparations, ready to strike Iran at any time",
+      "outlet": "Yahoo新聞",
+      "published": "2026-11-05T05:21:39.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxOR21LSUtPU3lvdjdKbGN2STNoV0lUWGpreEswM2NxX1lBazVyVVJ2X1hCdml0akpkNDdvR3FJeTY4MUw0TzVES0V0NXZWTW5JNXpESDRPamkxZDFPdkJxRkM3QlRoLTQzNDkyZGEzM0k5WUt4TldZcVZOallpMmFndlZLSzhzYVJMd0FNdEJFTGVNdUpabzl5WUd2TGQ0aVhjRlIzWnlRZF81YkgxMV9LRklvV3Bua2hrNWxpckVaZjlseGdKX2J5SWNQdzdMUGtvQzVSOWJnMVcyc3ZuSy1UNmxRYUxDLVE3Tng4TVV1SFBIc1Y3NkFiaGVlRHBITjhlRHhGMnpuQlZxY3VwS1Jqa3dKRkFJVXJqZ3NrNzBtamRGRVJ2dExucC1ieklERTNYMlZveWM0VWVES2QxaVJMRnJVb3ZCbXllQTFtYk5nTWxvRTFZMzd3MzJGZUo2dW1kdG9JMlZTNV9vUHU2elNR0gH0AkFVX3lxTFBRWEM2SW41OUxvZVQ4VTZTQ3pqUkJKUVpRNzZialZOeUd1ZTBOY3pOdUVZWTFpVE1EOHRlX1B3eS1DTUpjUmNSRUNqVG1XaEljT3B6cENXQWR3Z2FLN2pJdzVTcTc5Z2o4UE1SQ1FyS2w1S1F0dVk4dU44WUpTYnN0VmFDSE4zTzdVR19pVUUtQ0d2aVZKVnllUGtscC03U3Q1aHE3R3ZnMlJyNnRSS05lZGR5cW5KaUVhM3Rpb3ZzWHV1QVhXcjViSXFZVTJ1M1QydzNUdFlwR0pxSmNmaFFCb1I5T215NUg5eDlNX29YSG9KT2VyUjF5elpIdE1sbzhIRVNhM0cycDJwSHJybUZmRTV1cG9nd0YzR0hqVkJRUmRFdEhWMHlIcU9zR2NSZndHX2xEaXV5VDkxVVV1SzJFOFFnRnVRRW9JajZoTkR1d2Jld3JGV3o5OXo5S2NRMU9XQzQxWmNQVGJHcW03RGZXdGVfOA?oc=5",
+      "title": "دون ضوء أخضر أميركي.. هل تستأنف إسرائيل ضرب إيران؟",
+      "en": "Without a US green light, will Israel resume striking Iran?",
+      "outlet": "سكاي نيوز عربية",
+      "published": "2026-11-05T05:05:42.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BD",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02dXNrdXhKa3NKa2k5YWx6d2RqTkhVZmx3YmNVc3ViOW1Vd2VzNWwxX1V3VzA5bUFyaG1YY0pHS25QMDVlYnktTldvWlRhYzEyWTA3S196dFVhanc5dHlDdw?oc=5",
+      "title": "হরমুজ প্রণালি খোলা রাখতে সামরিক মিশন পাঠাবে সিউল : প্রতিরক্ষা মন্ত্রণালয় | আন্তর্জাতিক | বাংলাদেশ সংবাদ সংস্থা (বাসস)",
+      "en": "Seoul to send military mission to keep Strait of Hormuz open: Defence Ministry | International | Bangladesh Sangbad Sangstha (BSS)",
+      "outlet": "Bangladesh Sangbad Sangstha (BSS)",
+      "published": "2026-11-05T05:05:25.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "GB",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRzNsRFA0MVVkdHQzNzVtZXFtdEFYczhFaXo0SVdncGV5WHprY0FLcTAtaklOWUNCb09Ic3BBSWdycW5rMWFKWFJMbHhaejlmMmdwN2RIbElKcE5QMndxdnozdVlVd0R3TFVMOWVaXzFiZU5RaDFUZTk5Q0o2STZDb3dmREM?oc=5",
+      "title": "Russia deepened Iran support with missile launcher deal",
+      "en": "Russia deepened Iran support with missile launcher deal",
+      "outlet": "Financial Times",
+      "published": "2026-11-05T05:00:16.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "NL",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWnl5SWhWX1I5aEJ1bkhCbVVVZFVUYXlHS3c3LVJfN0QxdXk1R2UzWUhNRW5tSldwUXM3b3VFWkwtTThOeUhqQkJyMUNUbV94cTRKVlpMd2xhR3hWOU8ydk5QVENFTzh2azZJNG1SLU9jaUl3ZDYzSUJFZndSbG4wT3A0a0pveXlhbnZCd2FzdWxpTVJaQ1d4c2hRWU5Pdmdrbm5FcHRjdUdDR3dvOFc0MVdUeWREdnpJZHFTaEFfOG5NT2pyVGJBZzc2OHJoTlVFZEpkbzgxWV9objJhb0tyVDZnX0ktUUVFWXZsTUVSZFp0cDdYNUxUTXEtSQ?oc=5",
+      "title": "Bloeddorstig moordcommando sloeg in heel Europa toe, maar in Haarlem ging het mis: AIVD wijst naar land van ayatollahs",
+      "en": "Deadly murder squad struck across Europe, but in Haarlem it went wrong: AIVD points to the country of the ayatollahs",
+      "outlet": "De Telegraaf",
+      "published": "2026-11-05T05:00:00.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMiugNBVV95cUxOaTNjWW1ocTI0V2pXaHpGVk1wVEZOU2QtWTFtOTFTYXZWbzIwczlJZzVId250LVlXTEZmWmZuOEpuZE5seWpGcEUzQUpzZlBFYzQyMHNuMlBOVV9EWFNZQ185TkU1ZHRSMllQVHQzanM1YlBtLVF2d0E1cG9KMldpWmR6a3BsS0xDSHdheVJMSFVSSlVZSmhCeHVhdUwwWFp2RmRfc1VlU0V1TUV0MS1FWngybFVpMEFkaE90Q2gybGM1TTd0UjNwbnhMeWhCZEdmQk5jOUY3eFR0ZER0YmlnLWhILTg1eERIRjdHZlhCQll3SXAxM0M3UEtzblRGM1pIVGtWaHhfZVB6d1JQWll6Tmtva0V5d0lYU2RRNVgtZzA5WExFWEdDVWlLV3FVNVJhVE5id0ozSjMyQlVCR3VUc3NmX0U5SzVVWVZtb293QW44NTBKdEIxandsOHdKemlTdnZPWTJ5T0k1Q3pYUGhwRGswZ2xrYUxoTTdfVjFMQ3FZRjUtN2J3VjdNYmp1NTdVQ05pNGR5RWQ2dTN2eTIxb01zbThBRkZid1JCTVJmUURkcWdYaVlGMFFn?oc=5",
+      "title": "عقوبات أميركية على شبكة لشراء صواريخ دفاع جوي لصالح إيران",
+      "en": "US sanctions on a network that bought air defense missiles on behalf of Iran",
+      "outlet": "سكاي نيوز عربية",
+      "published": "2026-11-05T04:59:31.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMinwNBVV95cUxPSVNSYlBXODItVG8tQjVGZnFYM3N1QUJCTDJzMU9valpmLWdQZFp1STdNU21MQndMNTlaVlFIQ2lMVTVhV0hTdFJEdk9YMEx5em1zLUd5eDZiYlN6N1RvMmZoS2pLazNBMDloUVpQQlRocXZQRUc5OEhJSkp0OXJIalE5Tk13aXRXVVU1aHEtd2tZN0oyNVNqRURZbHI3WlRrSTB1ZERrek1qamtQRDdqdUVlUmt5VENaX3UwMU9oeHRrRHpvTzBrVE1xLVJOcmZITUFFVXVNdHladk1udWNka3ZiN2VBd0wtVlhDX04tU1ZmdThkazNqczgwSnFoSW9GYW0xcUFYdTU4QUZ2SDV2OUl3U01rc0xPTW1wRFBmV0NUMVFRbWRQUzBTOWlENkNkcnRST0YyalhJTWtad3l2bjZJV1NvQV95bzU3NlFJaldNMnBMem9rSXJ1WlMweVVHczNYc3BfRkFhVlJyajJmaG9RZTlnNEstcVhmXy1vTmVhZjhrY214cU9RSGdqUkdkSUFnYjZTMWpCSXVHZDVr0gGkA0FVX3lxTE01alJrdUVuY2JRcFQ5REJIcDluSHo2bm5hMWJ0aVI0OVVzOWFhSXBoVUhpWkc5VXdXZDNlQXpzRmdpaXA4WW1WVTJpV2NmWGNFdG50UkE5UXBaTEg0QXQ2OTRXMEVETjdSeEZfek9LMm1peHZhSllyVklZWXNxd21kQzhidUlUYjdXWG0ySFZGM0RIbFZxN29ZSy1JeHgtVEg4X2EtT2VqaVhycnZ4clRKWV8waVRxeVN5eDlGc2R1Z2M4UTdjamJab3ZITDFUaklvTzdoVWlqVm9KSTFMRzVMRW5Ic3NRc0djQnZ2N2ZtZGllUGVsRjlFbTFQVzRsNlFWMmRDaWJHSDViT3hNbW8za2RMbTJSMlJRRWxuODJhRHdvdXNVVmgxUVFRQVQ2RjE1bkxXNmVMUlNrdVgxbXVFZGVodGZoZWYwVnlTNkdPS09YVElaQUxZWHZkUE11UDRrb0dFX2FmeHNkMWN3MWdYWW8xWmh4Ny1RMDFRVS0tLWNnakdwbTFXclNyekZuLUtSeW8yM21wcUNqd2I0TzVZYk0zcw?oc=5",
+      "title": "هزيمة الجمهوريين تضيق خيارات ترامب.. ماذا ينتظر إيران؟",
+      "en": "Republican defeat narrows Trump's options... what awaits Iran?",
+      "outlet": "سكاي نيوز عربية",
+      "published": "2026-11-05T04:48:05.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOY3d2M1hBYmtpZXBqUWVfVHN4V0lzbzRiSml5YlZZZjBQaGpRU2ZKSXpic09Jc1JVV2hHMTR2SWhaZUl2QUJ3OHZUcGM5Vm56LU5CRlA4NjBzT3NlWFNXaVp0dWRwZWtKd3BWakRFaU13TF9sQnFXNDRiUVQyWnRKOXh1QnR1bnkxSkMwUHBpYUItbVBDOGVCalBybWxWRU1LcWJtRHNTWEgyMVdyX1N2NTY4a3d5bndaSkRtbjBDU296SldDSy1GeQ?oc=5",
+      "title": "تراجع حاد لأسعار النفط بعد تصريح لنائب ترامب عن إيران.. ما القصة؟",
+      "en": "Oil prices fall sharply after a statement by Trump's deputy about Iran.. what's the story?",
+      "outlet": "CNN Arabic",
+      "published": "2026-11-05T04:46:25.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOY3d2M1hBYmtpZXBqUWVfVHN4V0lzbzRiSml5YlZZZjBQaGpRU2ZKSXpic09Jc1JVV2hHMTR2SWhaZUl2QUJ3OHZUcGM5Vm56LU5CRlA4NjBzT3NlWFNXaVp0dWRwZWtKd3BWakRFaU13TF9sQnFXNDRiUVQyWnRKOXh1QnR1bnkxSkMwUHBpYUItbVBDOGVCalBybWxWRU1LcWJtRHNTWEgyMVdyX1N2NTY4a3d5bndaSkRtbjBDU296SldDSy1GeQ?oc=5",
+      "title": "تراجع حاد لأسعار النفط بعد تصريح لنائب ترامب عن إيران.. ما القصة؟",
+      "en": "Oil prices fall sharply after a statement by Trump's deputy about Iran.. what's the story?",
+      "outlet": "CNN Arabic",
+      "published": "2026-11-05T04:46:25.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
       "from": "AU",
-      "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOMFBGRmZqOS12X09xbUFLU2ZrV3EwSFJtZTFSbUpCaUJtVUNlZHphTFdMR1pnSlpoU2tMdU9lY2x1TnFvSEMzX29YMWs0d29iYlBDcVk1b0VMcUNMT0hsWjJHXzZsNl9pYlc4b3VNLTY3MWFqSGJzblpLWjlBWXhzb1VnVUlJalR0NXJsNGZJaldZVGxwMWgyRVRRa3FfSk1qYmJNa0w0bnVnV2hqa1MwRmJLay05Q0ExbWdUU09qV1UtTkZORWIwdmVIZThPenQ3OWt5MlJNZXZXdWRzQTJkLXc2T20yRGhYc3NtV2RsV1JNbTk1cjNsTm5WVGg2bC1Sb1dlUGhpc0RjM3E2R1ZqeTRNNXRpN2xsTFB1T2R5YmxTYXdZU0c2M1htZ2FKNzNFc1dmcTFsSE1jSjhCeW45d2kxMmlzVWdrczYyd0YwUU1GTU44Sy0zLXpaX2FjUm4wVlBSd0M3WlZ2LTZ3TlE?oc=5",
-      "title": "US midterm results 2026 LIVE updates: Trump touts ballroom renovations after ‘blue tsunami’ destroys Republican majority in House, Senate; JD Vance blames war in Iran for wipeout",
-      "en": "US midterm results 2026 LIVE updates: Trump commits to work with Democrats as 'blue tsunami' destroys Republican majority in House, Senate; JD Vance blames war in Iran for wipeout",
+      "url": "https://news.google.com/rss/articles/CBMi_gJBVV95cUxNYkJGWFJmSWZBcXhmU0pUUzBMOUQxVzN6S0RnUjdpR1p4UUZ2Tzl6ZUZjYW9CZXRFVElfaWIxaUtmS3BObHlvMTM4Mkljb3NmUU1oaVRsbDdiSV81UEdVX3RnN1dlcDNLUjhiZmdfX09jejNjbkRTODEtZmtadkxFclpJZHhFY0JwU2tRZ2JncWV5VUd1T19IVWFXaWlPZWJnVlAzV05VRmsycExBOXRnWjhFb0Z6TFJ2aGdBYU9vTEFVQ0JjNVVuX3N3ZWtWaWZRSkE0WHg4WTltUjFHWmRhLVI3WWk2SUJlMEtjc1RYTGNUS3I5dTNwT2JKeTRvYk5pcVdyMzVudmNobFdEM0xHT1kzRTFILXA3Rk5KOGg5V0M0MDZpbEVmV0k0MXc1SXN2T0ozZ3k2d0xFdDBZN0NGcDd6d290YnYwcUUxTE9kRFBRaF82M3FSRy1aOHFjSWZPODJnS3FwTXFqNnJBTjJ4NXFRUmVEWUNzLTJwR09B?oc=5",
+      "title": "As it happened US midterm results 2026: Trump touts ballroom renovations after ‘blue tsunami’ destroys Republican majority in House, Senate; JD Vance blames war in Iran for wipeout",
+      "en": "As it happened US midterm results 2026: Trump touts ballroom renovations after 'blue tsunami' destroys Republican majority in House, Senate; JD Vance blames war in Iran for wipeout",
       "outlet": "The Age",
-      "published": "2026-11-04T23:28:43.000Z",
+      "published": "2026-11-05T04:44:13.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxOU1JhQTJWNVo1TmgyZUtEazNHaTNkdE9fbEhrVXdHeUpQSW9YNm5TMlZXek1zeUZpc2ZZeExlVHdKMUFSZ2M5ZFVhcHhtS0d3djRLOFplZGhpY1RXdjBMcmhYd21RR2RHeXNvRGNzeWczLTEyb3VZb29WUzVkT1hDUTNDMlBmckxrckZibzNtRDlfdTVMbk9lVkZYQktxOC00VmJGVkpYMUxKYTNEekFRYWExZzBPMkUyWXJtbVJMZlRPUC1EY0JiVGdsUUV5ZF80V3lxXzU3dmRzS2tIOEVOQ0xTcUZJNF9xTmFXRnpHVmo2blFWVWpWUGdLTnNEalFjVkNQTHNXZzB0c3NYOVJwd3JGU0hEN090aWpUdmdFVTZQcTFhdHZGQmJTUS05ODF6VWhBNWZObUs0T2YxbnU1ZXJOczZkZlk1ZFRRSGpBYzVrU0gtTmhpal9NR0k2alF5M01GcHlfZFJaejl3dnlEUjFuSXItaDlRNmE0V3J6bkU0ZHptbXM1V0tJWF9qSTZTbzhJb0lLdmtNbldJSC1BRG5pTnZEVzRKSnkzRE14Vl9SbFZ0ci1LRTktZV9fSnhoZEpLaGI1am1hY2sxaUdPZVFuOFN4REptdUUxOFJxWnZnUnNPcF82dWJxX3JkcExNa0lzYWZYbl90VDQ?oc=5",
+      "title": "الحرس الثوري: اندلاع حرائق في ناقلتين وقاطرة بحرية بمضيق هرمز",
+      "en": "Revolutionary Guard: fires break out on two tankers and a sea tug in the Strait of Hormuz",
+      "outlet": "الشرق للأخبار",
+      "published": "2026-11-05T04:38:18.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxPX2lEX1VscEZWNjFQMDJaNXlTN05Oa0ZmcFFsWVh1T1ZCZkJjNlJMZmt4TzBtTldHcU5rM3NfQjc1OVRTNkJ2S3pRT3lBSTRyNWFJdnZrZUZhbzdCZGM3aDM1MFRZRC1QWlM4VWdRZEpVVTdZT0xnSUsxQlhxeVFHcEpnY2RXUDN1NHZoWE1RSDVUUDUtWTNrUWhsYVZ4d0tvYUg1djFWM1Vsd2ZJUEphc0NGVzlfd2w2WnZ4NThLaDAwbVdGQU5ST0tHUVhoeTlEX2pFSXJNT3Y1Tm1mTEpZeUVQd1VhRTliYkoyMGpEUHpmUklmMEkzWEFPUk4wZkphODAyYTQwdXpKVWpkYkF6UVVnMUJPUmVfbWJxWjVnbk13RjlpaTAzRnctX1hHWV9taHFPWDAzT21CV2s1TkctVFFnQV9QMmhFN1BPeTNOVjlwdw?oc=5",
+      "title": "الحرس الثوري: حرائق في ناقلتين وقاطرة بحرية بمضيق هرمز",
+      "en": "Revolutionary Guard: fires in two tankers and a sea tug in the Strait of Hormuz",
+      "outlet": "الجزيرة نت",
+      "published": "2026-11-05T04:31:44.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BD",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE83N3JnZGhOWUQ2Y3NTSkVlWFVNRWZwQjFmamE4NXc0T3lWblFNYUo1N3Yza1J5QTh2NGRoVkMtcGlGZzctLS14V1d4Z0dsUnl5Y2J1NWlzdw?oc=5",
+      "title": "ইরান, ইসরায়েল ও ইউক্রেইনের ক্ষেত্রে রিপাবলিকানদের পরাজয়ের কী প্রভাব পড়তে পারে",
+      "en": "What impact could the Republicans' defeat have on Iran, Israel and Ukraine?",
+      "outlet": "bdnews24.com",
+      "published": "2026-11-05T04:25:00.000Z",
+      "outlets": 4,
+      "trending": true
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNmdWaUk2Q2ktV1pfZnNsMlFUY1VydndRZDJzdHhGeTB4S3FEdGRjRWdUamZpdTdFMXYtb3p5dDM0QzVKcmotXzdnNlZZVk41X1g0NXdqN2FXVFhYTjVuQnpHTVU0cFhJdk5iZVJ1Rzd4M3AxLXBGbmt1aWxMVEFvNkVB?oc=5",
+      "title": "איראן טוענת: שתי מכליות נפט עלו באש במצר הורמוז",
+      "en": "Iran claims two oil tankers caught fire in the Strait of Hormuz",
+      "outlet": "כאן 11",
+      "published": "2026-11-05T04:22:17.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQN2pHcmkxeDJDM184TXNiS2xIOUdXdHNrTXcyVHFKcUNGZEgtanhxTm9TR0UxWjA5cGlXSy12RVBLT3JYYVVBVEltbXFTNWtFT09OMVBIUkFEVlZiaW1mcVhPM3JfQ2tnZm1uRnJSQlVoX1FfNTl5bmh1c1pZMUJBVlVZeVdoWnlQMURoR0g0WVZYcjU4WDloZzRxMHh3Q24zMlRSYXV3MUFZTGxEQXM3NXNuNExxUQ?oc=5",
+      "title": "Iran's IRGC says two tankers and tugboat caught fire in Strait of Hormuz",
+      "en": "Iran's IRGC says two tankers and tugboat caught fire in Strait of Hormuz",
+      "outlet": "Reuters",
+      "published": "2026-11-05T04:21:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CH",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNOXo2NkRCbTRTS0ZlQWlqRlNvd1hxQlc4SHBjaFhGbGZnUVZUUk03enJiaXdNXzdjT21RTjhNMmVsV2xHTTJDbzRMX3JNcENfX2tOTEhabmdmOFM2bzRuYkExb3NvOEx4NGl1RUNLOEtjdzZZeFF1c1gxQ1J1Z09jcnlhUUZtYkl2NkI5S0ZCMkZENFpRVVFXbFd3dnE5Rnk2ZGhpNFhLZ09qT0Nl?oc=5",
+      "title": "«Trump könnte Iran-Krieg als Ablenkung eskalieren lassen»",
+      "en": "\"Trump could escalate the Iran war as a distraction\"",
+      "outlet": "20 Minuten",
+      "published": "2026-11-05T03:47:28.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BD",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPalUxcTQ4UnJzdVVDaGttU2hWYlpCRlpWY0o5Z1hTbEdOcWlGWklfeURTNEVtVFlscE9fSjBPaG1BbWRXcDQtNnVqQnZEb0p3Sk5yak4wQ0VPb2dqZ05TRDdoWEhoQ1FSMnBMVTNJZk9SWW5jVkp1YnFSdkxJbXQ5RFQzTE1mazlCS3hpZkJPSDEyV3FGSWFjU3IxbHBFSl9Ma0xMSlpiNjBjV1JSZ1ItMEZQbmFERzBUcUFDNWtR?oc=5",
+      "title": "অবৈধ উপায়ে ইরানের তেলবাহী জাহাজকে ছাড়পত্র দেওয়ার অভিযোগ! চার ভারতীয়, দুই সংস্থার উপর মার্কিন নিষেধাজ্ঞা",
+      "en": "Allegation of illegally clearing Iranian oil tanker! Four Indians, two companies under US sanctions",
+      "outlet": "Anandabazar Patrika",
+      "published": "2026-11-05T03:30:23.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "US",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZm1ZY2VpaEM0QzJDeEwxbkt6ZjkyWUdjb3A4bEN0MWZjcDhJeVp0cDJnNlFBMVRuUlY0NXZPSXRqVXQwM0VwWHkyMlNGaW40bjZfZXY1V1U1aHhLZkdHU1ZjYW9JelpkcmpNXzRzaXBKU21McldHSkdUbDVQNUlxUE5Eel9yUDBSMmdueUNyMDFGNEpvamVsUW5velF2SGpmTm13RFZneG5hR3EzLUNZeEJQZUU0bTRfZ3kzYm50TllEdw?oc=5",
+      "title": "‘Knives out’ at Pentagon after unpopular Iran war dooms GOP in midterms",
+      "en": "'Knives out' at Pentagon after unpopular Iran war dooms GOP in midterms",
+      "outlet": "The Washington Post",
+      "published": "2026-11-05T03:23:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CL",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQR19laDJLamI1cXFkUGJ6RlBxdzYzOWg2UmstSWZkV1VyZS1iaEhqRllIcnk2N01VVzg4ODN5TzhhM05RSndZRUlwM290ck40X3MxLVg2eko4dFl2TzJXU1gwUUpzRXNhbXN4U0Rlb2VWUkpRM0xPdHBueGI3UTZKN0hsTlR5cy12dW9XTjZFM1ZVaXJlQm5aNVBqR0JCYWpCWkJGYng3YThCdTFjeHpMSF92dEZaMGhZY0ZnSGVmSzRaaDR3d3JpU2loZi0yOWkxeFRTNEVoS091V05ra1AwRVpodzFBT3EycnZkVFpTSjJ0WEgwRDFVU0Y4X0ZEWVJaajN1Sg?oc=5",
+      "title": "Trump admite que guerra con Irán está detrás de la derrota republicana y declara que volvería a atacar",
+      "en": "Trump admits that the war with Iran is behind the Republican defeat and declares he would attack again",
+      "outlet": "BioBioChile",
+      "published": "2026-11-05T02:54:11.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMiiARBVV95cUxNVjRNRmJ2TkRIOVI3OF9FcWQ0SlhLSWl5ZFA0Z1hrd2wyNWxKcjZRaFdvMWNDNjRoYzdKcHdSR1A4ZmgtXy1FUXBnbHUycV9EWmN6VXdSRXlSYUxnRGlqOHBSbC1IQ095YzNFLWdTVXpVY09zQUE0QjZZdXcyVndIZmJGOEZDMHNzMkRVMUFwSEtXTG1ERm4tc3JnSHZ2eHpQQUFIajF1TFZMZ2RNMy1ncXRNSmZYZ0NIY0Y3TU9hWjcxa1I4V0EyNjF4eElpV2JkYXFVSlA0cjdQaklubVUwRVhscFg2d3lyS2xQM19jQ0duODdoWDNwSUw2Ui1tcFFSS2RWOUVzMkNldGtGcENlZkxNMUlJa3VZa2NOdm1TcGN0SHRHVGRZX3lrMUd0ZWhXSUtHbUxzUGFPYmpMczdWT1R5bnhvNF9HX2pXUGhzVkhvcTNFZzZWQmhXVDhHcVBHWHg0YlpOUkFGbWhLUnVmTjdQd0pxXzNMSmlaVE51ZExoeXZ1UDd1WGpCLUJpM1hXVFZQZ1ZKVWZQYVdJX3M3MU5jSXlZODdqMEE5a3JIUy1SRUFDR3hiRFJSNWtGT2JTak5sSURzcV9DdHZXd0JudXZYeEJUMy12QWdQNVdUZlh5ZngxN0k0WXppQVdwdTBDMkpqRUNaMGRFcUhlQkJueDItSkVYNFlu?oc=5",
+      "title": "بعد هزيمة الجمهوريين.. ترمب يواجه 3 خيارات صعبة بشأن إيران",
+      "en": "After the Republicans' defeat, Trump faces 3 difficult options regarding Iran",
+      "outlet": "قناة الغد",
+      "published": "2026-11-05T02:36:25.000Z",
+      "outlets": 8,
+      "trending": true
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcEdNV1JWN2RYRjdvN2xSRjBna3pxLUxnWTYza0pURVlMLUg5TlVHZGExOWZvN2NiTjNGdW8yTmFQQUdwdGF6Ul9KdGwwMEY4N3I5NmtxOXFSdXZLSlpNc3hJQ0tTa2tLY0p5cTlmd3ZaM3lBNTdyVEdQWXpTR1FyaW9SdEV4dHRmYnBYR3dQX0RIMXY1T1ZCRjNFWDJHVkFGX3QwWFk5Z3g?oc=5",
+      "title": "Elezioni Midterm, Trump: «Abbiamo perso per il costo della benzina, ma rifarei la guerra in Iran",
+      "en": "Midterm elections, Trump: \"We lost because of the cost of petrol, but I would fight the war in Iran again",
+      "outlet": "Il Sole 24 ORE",
+      "published": "2026-11-05T02:34:54.000Z",
+      "outlets": 3,
+      "trending": false
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE42T2lqblZUMWl0SmJjd1k5WTNJUXFFZDltXzhiWndVNW9oaU94WnlfUWlHaDBrOG9mTWVEaHRBUnZReGo2cFJLLQ?oc=5",
+      "title": "צפו: תמונות טראמפ ונתניהו הועלו באש בעצרת בטהרן",
+      "en": "Watch: images of Trump and Netanyahu burned at a rally in Tehran",
+      "outlet": "ערוץ 7",
+      "published": "2026-11-05T02:34:16.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NG",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdzM2c3YzcktwU285aS1QaVVzTk51WFR0UnpxMXlnaFdEd2RtZWYzMm81TDZQUTJZS0ZlLXFVV3ZhcGFibkdLZm9Remo3YjlhNHJTd1lxSXNMUFNzejhIMkt0TlFRXy1RZl9TdTkxbDhfdjQxUEIzcUhaYlpOMjZJSVViNmVPV0dRV0RmaTJ3dDJ3QUs4TTFleFlnZnNyUHhVYlQ5NldaZVRZRFd5dU5nVnRKVUQ0UFE?oc=5",
+      "title": "Oil falls for a fourth day on expectations for lower risk of Iran war escalation",
+      "en": "Oil falls for a fourth day on expectations for lower risk of Iran war escalation",
+      "outlet": "Reuters",
+      "published": "2026-11-05T02:20:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdzM2c3YzcktwU285aS1QaVVzTk51WFR0UnpxMXlnaFdEd2RtZWYzMm81TDZQUTJZS0ZlLXFVV3ZhcGFibkdLZm9Remo3YjlhNHJTd1lxSXNMUFNzejhIMkt0TlFRXy1RZl9TdTkxbDhfdjQxUEIzcUhaYlpOMjZJSVViNmVPV0dRV0RmaTJ3dDJ3QUs4TTFleFlnZnNyUHhVYlQ5NldaZVRZRFd5dU5nVnRKVUQ0UFE?oc=5",
+      "title": "Oil falls for a fourth day on expectations for lower risk of Iran war escalation",
+      "en": "Oil falls for a fourth day on expectations for lower risk of Iran war escalation",
+      "outlet": "Reuters",
+      "published": "2026-11-05T02:20:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PE",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdUVBRWJody0xOThGNVZGSGNtSGxlei1PUjd5VzBEZDV1aTZoeXhtWU1mSVNsOFo3dmQ1SHp2NjhDc3d1RzR1UlNXeVZ5WHozX3ZRZURQV3Q5MU1tYWd3ZUo5QzYyMk9qTl81MnMzU0ZHUlZhRTdtME1uWFRkR1ROX0cycGJkTU1UbGZNZGdZZklsQmk2dUlKREIwR1RBdHJo0gGgAUFVX3lxTE1Od0VBcVpCeFZpUGlNMnc2SDAwbVIxLVg5VDdmUVdPNlh2d09TTU5MWllJM3dDaF9CbEhWLW5ncTlvUHl1UkdJR1hieHhzWUEzYWxNRXdPcXlIaEVPbjNVTFBiSEhnY2R0MVU4azkxQU1fWWs3MUc5cTNVblRJZmh1VE9qVDQ3NHdSTWF3c0U2a1U5c2dZVGZ5WW11LWh0czk?oc=5",
+      "title": "El vicepresidente de EE.UU., JD Vance, atribuye la derrota en las legislativas a la guerra contra Irán",
+      "en": "U.S. Vice President JD Vance blames the defeat in the midterm elections on the war against Iran",
+      "outlet": "DW.com",
+      "published": "2026-11-05T01:47:22.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi1gRBVV95cUxNMzNxVXFTTmlsbHBpR2N6bkhiSUNYNFJtREJzM1JKQi1KNjdYaXhHOFNCTkczREpHTENCaUk4THI5SlZHc0RvUG5lRVhaX2R1cG01Z2RDNF84TmhtNFNRd1poaW9oNDdkMjZZMDZ6Sy1aSjlhckhmczIwY0dTby13ZENEbTgxdGZqQXNiNUVHTENBeUtNSHcxUkhzMnIyOEhSY0lTcGc1bnlBa0hhT1hJT2laY1VpQTViRjVNV2JlNFBFeVFPd0RZbG50QlFNb0dLRUNPWTBoRk5BcE5iRkNPOEhUMDQ3WTFjU29oLU9wQ0dIaXhvbi1OazFNQ3RCSHhXSWZ2d3JpWVBtT2M1NDQ5UUtZTXRlWTk1Mk9tUjJsUmxCejQ0THJicE9sM2dDdGNzaG9fMmlEYXYxRkM1dkFPTXd0eUhicU94bEJKZnBLQ2gtdkpiZmVFaW4wRDZqTnV3d1A1QnpQNjNFWjlMOHRCRm16QUE5NWw0MGI2WnNNOGhRTkwzbmg5SFZXTUxGc3p1MzZjdERockE5LU56d0VTamJvcHJ4Wm1LcV9OUERDRjdsUmp1dG91VHEzNW5kTkN0ckFTazhHa1hPVUZ0WmhlTWNVazRSYUtxNnpuTTFKWnNjSWZDM2l5bWRBdWlkeDQxcmcyNk9OY0MyV3N3RkwzZHJ5bGZ0c1I0MkhlMTNoOFo1MTJHRlZ0SFpDblcxdEl4UkNSRUJPMUZfODFhMzZTYVR0QnB6bjVJdW9kY3FzMTl0NVdBYkh1aWlQbHNDdmNOTVNVOVNR?oc=5",
+      "title": "تقرير: خسارة الجمهوريين تربك حسابات ترمب بشأن إيران وسط انقسام داخل إدارته",
+      "en": "Report: Republican loss disrupts Trump's calculations on Iran amid divisions within his administration",
+      "outlet": "الشرق للأخبار",
+      "published": "2026-11-05T01:28:01.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi3wNBVV95cUxPOEF4Z2EwY1JNWEl0Tk1NVDFYeWdpTGZFajA1bmJnMmoyZWRHQmUzTDFWdEFDVDZqd3hnOU5MU1p3SVZPc21Ub2dGei1MajY5TUc1cVZwWWRMdU5LamljYk1JRXhYekpmdGJFMTYwNWx3eXNPaGVuQ21hU2xNc0UtZHltbVNaZWNaMFNTRVFWQzFJbWlwVERiTFBrLUNIX2c4dEl1b21HeUJNeDBsZ0dxUUZNOF9zdndYa2NYWTlFX3hCT1oyZEVvaTB3OVZ1SFVEVjJIVU9nVXozM1haU3pCSGh6Mm82dldaN1JYdlNRdGo4Q24tSG1pSEU4V3Zyd2pLMG1BcmE2c2ctQkJkOV9SbHMwM290VXlhdHpxVEMxZ0d1VWkxN2Zma2xYTEdlTG9IdUpDTXEwUE5leFB4U1Q2MFg5MnZrQUx4cnFtQ3hkd2xLRW1TUUVkdENzaWZsaUlYdl9nazA0UEhYWThyNEVCRWtLcnBEZWtxdnhKSTUzYjQxbG5NYmtPbi1ZbFlyUVlZUU9OQ0ZCYklFWEF2VGdaQk9ULUk1cVhDbXJTMHF0NXdiMFhUWlBOOWdEdy1GazlOeHpjUVN4TS1FcGdtTjdHZVhHR2ZGU293c25rN1hWUQ?oc=5",
+      "title": "طبول الحرب تُقرع مجدداً... هل يستأنف ترامب ضرباته على إيران؟",
+      "en": "Drums of war beat again... will Trump resume his strikes on Iran?",
+      "outlet": "annahar.com",
+      "published": "2026-11-05T01:22:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "PE",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUFVCRmsxQmZoY1B1RDhJSzRtNTZSZy1VZWx6eXRjS1VjRUdPcmgxRko3N3VhSmJxczNZVHFtOUhhZ2RvbExpNVVmSnY2UEw4T2JuOFZFdVo2bHR3ajhqeUxNRHBWcGpHdE9pY3VBc3ZEdzZMNU1YMEp1TGNQNzRnc2lrck1hYk8wSTNtcDBQeHlYVGs5OWdSbNIBmAFBVV95cUxPVzdudnc0bWJPOWZ0ZFVBSG1WQkVFZkUxM0xMMWN0cGpXaE5VWWxQdC1PekVVLUJFSjR1SWpVQU4tZnVjeUxjdkFjUjQxOVhhWkdzWTJ5b3RIRDlYTkdPbVVWeXpvY3ZOWjlEZG90OENsZHFjMGNiTm5ERmJ6Nm9WNHpCWkxROWtEaWs5Z2FXaDRRNGV4X3Jmag?oc=5",
+      "title": "Jamenei amenaza con extender guerra si Trump reanuda ataques",
+      "en": "Jamenei threatens to extend war if Trump resumes attacks",
+      "outlet": "DW.com",
+      "published": "2026-11-05T01:09:06.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "VE",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUFVCRmsxQmZoY1B1RDhJSzRtNTZSZy1VZWx6eXRjS1VjRUdPcmgxRko3N3VhSmJxczNZVHFtOUhhZ2RvbExpNVVmSnY2UEw4T2JuOFZFdVo2bHR3ajhqeUxNRHBWcGpHdE9pY3VBc3ZEdzZMNU1YMEp1TGNQNzRnc2lrck1hYk8wSTNtcDBQeHlYVGs5OWdSbNIBmAFBVV95cUxPVzdudnc0bWJPOWZ0ZFVBSG1WQkVFZkUxM0xMMWN0cGpXaE5VWWxQdC1PekVVLUJFSjR1SWpVQU4tZnVjeUxjdkFjUjQxOVhhWkdzWTJ5b3RIRDlYTkdPbVVWeXpvY3ZOWjlEZG90OENsZHFjMGNiTm5ERmJ6Nm9WNHpCWkxROWtEaWs5Z2FXaDRRNGV4X3Jmag?oc=5",
+      "title": "Jamenei amenaza con extender guerra si Trump reanuda ataques",
+      "en": "Jamenei threatens to extend war if Trump resumes attacks",
+      "outlet": "DW.com",
+      "published": "2026-11-05T01:09:06.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CU",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUFVCRmsxQmZoY1B1RDhJSzRtNTZSZy1VZWx6eXRjS1VjRUdPcmgxRko3N3VhSmJxczNZVHFtOUhhZ2RvbExpNVVmSnY2UEw4T2JuOFZFdVo2bHR3ajhqeUxNRHBWcGpHdE9pY3VBc3ZEdzZMNU1YMEp1TGNQNzRnc2lrck1hYk8wSTNtcDBQeHlYVGs5OWdSbNIBmAFBVV95cUxPVzdudnc0bWJPOWZ0ZFVBSG1WQkVFZkUxM0xMMWN0cGpXaE5VWWxQdC1PekVVLUJFSjR1SWpVQU4tZnVjeUxjdkFjUjQxOVhhWkdzWTJ5b3RIRDlYTkdPbVVWeXpvY3ZOWjlEZG90OENsZHFjMGNiTm5ERmJ6Nm9WNHpCWkxROWtEaWs5Z2FXaDRRNGV4X3Jmag?oc=5",
+      "title": "Jamenei amenaza con extender guerra si Trump reanuda ataques",
+      "en": "Jamenei threatens to extend war if Trump resumes attacks",
+      "outlet": "DW.com",
+      "published": "2026-11-05T01:09:06.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRWlRN0NCWlpaUFljZDdZLWZmZ2M4N3JfTC1nUXJodndwUkhTZ0MyQkNKUEdaeGJMNXMtelRxX1AtUmVpOGFwNE9OdEVhR2dGSVJMaWZnWEllSloxeDEyWUkwb1JYWkZ5TUhobmNwU2xvdW5pRHRmRGpPNUk5N1RpOVdudHhiclI5NFl0S01RZFlFdVhPMVFUcFRNRWRUMVNwNzNCaFpmTDZsT1B0amFHUF9uVngtMGhwajJj0gHAAUFVX3lxTE1fOU5FR1dUUEs5eFZPR1FNMjYydHdrOVhDSFJ0OHNEQ212U2JwZ2dZMnU1MGVRaDlURmFJRjVHalFCNGRtMGYtZV9wd1R4Tnl0aVppeGtLY2JpVjBrNHlJQ3RuVTR6cFFVTnNad2pHTk1rSjA4V2Rxb1RVaFNVTzBERTRNNFhCQXZMLTlod0FIOEdwalQ3TndBUW1UMTNuSDR2TDNTclFXS2YtVFhYRWgtc0NKTV9ZZmd2ZHRaWnk5NQ?oc=5",
+      "title": "ЦПД спростував фейк про ракетні погрози Ірану: що показали в оригінальному ефірі",
+      "en": "The Center for Countering Disinformation debunked a fake about Iranian missile threats: what was shown in the original broadcast",
+      "outlet": "ТСН",
+      "published": "2026-11-05T00:56:13.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "DE",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPQlFZSW01bW5WXzVXdHhQbGpwVEtiTEV2YXZqOWFyNXAwVnRKUDJhRVVmNVg2cVpOcWQwR09PRlVFN3FXTVFNcTF5bnhHQlFpSnZIa1hFeFo1YjBpOFc3M2N2N0p3YmF5MC12Q2dKWGNUeGdtUnVlY3cybkI1bkhvbXdYZWZUb1dzbDI5MVBZU1gxbk9YQU5SZWNpT19rOTZUaTFvUlkxQjh6ejN3Zy1KcnpoSFV4QmZDQWhtSDFGLUFURWlNd1cwR3Y5dlBPbkJQc0VxcHBHRmtKa1E?oc=5",
+      "title": "Trump verteidigt seinen Irankrieg trotz Wahlschlappe – Vance geht auf Distanz zum Chef",
+      "en": "Trump defends his Iran war despite election defeat – Vance distances himself from the boss",
+      "outlet": "Spiegel",
+      "published": "2026-11-05T00:53:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi8wRBVV95cUxQUGlobkJsWWI2LWp3TGk0ZzBONmNjZnBrcWpFU2RCMzRxTjR1Wk1vcWZzV2QzNkh5am41dUEzeTZOTUdUWmxseUV0Z0VzcTdNTldHZTNzMTU3SDJIUWhfS3A4WXF6SkRqSFNvNy1LUzZ5MWZXbDdTc013aGhNT2lEbDladHZjazlPWm5FR01wZ2Y3bDZueVFDd01HdnBMRWVGWG9HUVNMSk5keVR3emtGWWhPWkZ5bHRmNFRYOWpPdGhOTE93UTdMeWE4YW9QX3RnSXFFOFJYSldQaTFsRE1qQjN1aTVzaTVFZXBXQ2xhX1JBLWxUUWpOcFFRMzB6R3NHQWRKREJpQnJvNUtUZXUzcGxaX3NnWWluSlNBS1FwVndqa0o0c3NJSERHRlUtczdUbUgzR056ek1LcnVFSE5HNUp5ak1hbC03dncxNnhNalpYTjZhdHc0Xy1BcFFkTXpsOURnaHNpc0hZT3dKZGpQT0NVZjBXTy0tdXY3TWxvLW9UOVRBSnpwREF5dHFDVE5uYlMzOUxHQU56QlV6S0xRNEpzdkxJVGVfekE5MTE5bkhnTldVWE4zNXVGaHJVTXFpOV84Z0tPeEZBd2lBM3FXQ2hSNkJrSzZsV3NrdUQ2SWJBeDFCYXlSNGRnSnR5aDkyaFNLWGFkdDlJT3M3MEl3WExyTkNMOFNpeGVjcHJnQVZyVE4xNnJ0QmJyUlVpX1g1eGVIelV0XzlzWWFqdXNvVmtyRXN2SlBkamFjbExNUG5JbmNuWTJWMTl5M0s1bFNOOFVTdlI5QWhFWC1HX2xSY0VtMnJET2t3U1FfZTR3VWZGNWc?oc=5",
+      "title": "فوز الديمقراطيين بالكونغرس.. كيف سينعكس على حرب إيران والتجارة وأوكرانيا؟",
+      "en": "Democrats win Congress... how will it affect the war on Iran, trade and Ukraine?",
+      "outlet": "France 24",
+      "published": "2026-11-05T00:40:28.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "JP",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85OXJlMEdMMmhiWTBDLUNoRm1xVXlvZVR5RkVHdUUzX21uNUZLenlWMndna29mSlloTHFTb252RDdiX3BhYURkcUUtclVfdUluVnRhTkV2MFVyc1FPbDc1Mm9rY3J4dkt4YVhEb3luVlNub1NDYVlfdEpTXzZ0bFU?oc=5",
+      "title": "イラン、米中間選挙大敗のトランプ氏を嘲笑 「政治的敗北もたらしたのはイラン国民」（ＡＦＰ＝時事）",
+      "en": "Iran mocks Trump after his defeat in US midterm elections: \"It was the Iranian people who brought about his political defeat\" (AFP-Jiji)",
+      "outlet": "Yahoo!ニュース",
+      "published": "2026-11-05T00:34:53.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWk8xNGI0V2J0SFI4RHBvTVFnQ25oTU5wdVMzV1NaMFNobmk3MVprdkdEVDVuTjVTeldPejRmSnFBaXEtNjU1T1hibG01ckY4ZU1rT0l0ZHNYT2lxV0FnazVmbXkyMnl2T3VfSHA2Z1VuWHBzTS1lOEFzcnAyd2k3U2stemRVam05bVVOTDRtUkhSSUZacHVjYWZqUE5pdw?oc=5",
+      "title": "Tak świętują Irańczycy. Szokujący billboard w Teheranie",
+      "en": "This is how Iranians celebrate. Shocking billboard in Tehran",
+      "outlet": "WP Wiadomości",
+      "published": "2026-11-05T00:31:45.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "ET",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5uODVfY3I0STZNZk9KaG11Q2dndzZtZGg1VjdDMDdYMGQ0d2NhbU9ZakhrRmVpd0xuZ0VMT1A3RWtRNnMzVGMwcWNqTERvQk5XSnl6eQ?oc=5",
+      "title": "US imposes sanctions on international network that helped Iran acquire shoulder-fired missiles from China",
+      "en": "US imposes sanctions on international network that helped Iran acquire shoulder-fired missiles from China",
+      "outlet": "Ynetnews",
+      "published": "2026-11-05T00:28:42.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "AU",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOSl9yRVpLWlZzc3NOR1RQVF9IY0dXbVZZS2pGdmtSNUp4OXNtVTRaQjdrTGxkZkYwa3h5dUlGRGNWR1MyRm9MaldpZURJSk9DSWQzaXZiSjhON3hpb1AzUF8taUo5N3Eya1JTaThsdTc0SmNUTEwyTGxxdzdydk5lQUo2THBrWFVXTXVXQWtqdVF5WUFDRnJKdHg4V05Wa3JsRGRXR0NfYlJYRkdBb0JvWWRlN1psaVJUWjRsLU5fdGFwVy16alRUeTRPTFZwdXdYSlRFTnF4YXdEV1Z6OFlPcEJRLXJ5QQ?oc=5",
+      "title": "Pete Hegseth risks becoming midterm scapegoat over war in Iran",
+      "en": "Pete Hegseth risks becoming midterm scapegoat over war in Iran",
+      "outlet": "The Australian",
+      "published": "2026-11-05T00:18:02.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcWlVX0p0dlN0NXFBcjY4bWNrTXJFb1pfd2JLUERyeDJ1VGkwN1hMeEU2TXV5MEdpM1JHVGpiT3gwRDZVZVNxNG5FRkloUWxQQzJIbFUyYjR6V0hBaUdfVm1hSExRQTAydDl4T18xSnpaandtZF81SkFKVHh4RFBKWkI2aHBTX3pVQUUzLXpfSnZfSHZGcExFcUphMlJRR2tCN01tWmMtbXdOYk5raS1LNk5DUk53QQ?oc=5",
+      "title": "\"نكسة\" ترامب الانتخابية.. ما الذي قد تعنيه لإيران وإسرائيل وأوكرانيا؟",
+      "en": "Trump's electoral \"setback\".. what could it mean for Iran, Israel and Ukraine?",
+      "outlet": "CNN Arabic",
+      "published": "2026-11-05T00:10:12.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcWlVX0p0dlN0NXFBcjY4bWNrTXJFb1pfd2JLUERyeDJ1VGkwN1hMeEU2TXV5MEdpM1JHVGpiT3gwRDZVZVNxNG5FRkloUWxQQzJIbFUyYjR6V0hBaUdfVm1hSExRQTAydDl4T18xSnpaandtZF81SkFKVHh4RFBKWkI2aHBTX3pVQUUzLXpfSnZfSHZGcExFcUphMlJRR2tCN01tWmMtbXdOYk5raS1LNk5DUk53QQ?oc=5",
+      "title": "\"نكسة\" ترامب الانتخابية.. ما الذي قد تعنيه لإيران وإسرائيل وأوكرانيا؟",
+      "en": "Trump's electoral \"setback\".. what could it mean for Iran, Israel and Ukraine?",
+      "outlet": "CNN Arabic",
+      "published": "2026-11-05T00:10:12.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -18,69 +538,39 @@
       "title": "El vicepresidente de EE.UU., JD Vance, atribuye la derrota en las legislativas a la guerra contra Irán",
       "en": "U.S. Vice President JD Vance blames the defeat in the midterm elections on the war against Iran",
       "outlet": "DW.com",
-      "published": "2026-11-04T23:23:52.000Z",
+      "published": "2026-11-04T23:45:09.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
-      "from": "PE",
+      "from": "CO",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdUVBRWJody0xOThGNVZGSGNtSGxlei1PUjd5VzBEZDV1aTZoeXhtWU1mSVNsOFo3dmQ1SHp2NjhDc3d1RzR1UlNXeVZ5WHozX3ZRZURQV3Q5MU1tYWd3ZUo5QzYyMk9qTl81MnMzU0ZHUlZhRTdtME1uWFRkR1ROX0cycGJkTU1UbGZNZGdZZklsQmk2dUlKREIwR1RBdHJo0gGgAUFVX3lxTE1Od0VBcVpCeFZpUGlNMnc2SDAwbVIxLVg5VDdmUVdPNlh2d09TTU5MWllJM3dDaF9CbEhWLW5ncTlvUHl1UkdJR1hieHhzWUEzYWxNRXdPcXlIaEVPbjNVTFBiSEhnY2R0MVU4azkxQU1fWWs3MUc5cTNVblRJZmh1VE9qVDQ3NHdSTWF3c0U2a1U5c2dZVGZ5WW11LWh0czk?oc=5",
       "title": "El vicepresidente de EE.UU., JD Vance, atribuye la derrota en las legislativas a la guerra contra Irán",
       "en": "U.S. Vice President JD Vance blames the defeat in the midterm elections on the war against Iran",
       "outlet": "DW.com",
-      "published": "2026-11-04T23:23:52.000Z",
+      "published": "2026-11-04T23:45:09.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "GB",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNFdoTi1INVRLRUdkTG9SY3pPQ1dQcTgwTzVjMWQySGdBWUJLczFfMWV1anNEbElxY29VSy1ieGh5dzlCTUhFdEtIMUViLWNURVFEWUw2X3lsbXJVM2dCWW9jQnV2Slg3bm5NMW1iU3JzeHlja2xOSFN6U0ZUR3hwVVRuaU1zV1FmR2p3bTQtczVmMU5VS3NWR2d5d0pzdEpVcFAzNzB6VXc1MUdfVExXX0RwOXRyVEXSAbwBQVVfeXFMTUlnRGFpN3h6WmRvdWJNS1pDdkV3WGJKSC1xNFZtSjNLMWIxRjBweTZYcDZRRzVmdDYxXzNaenQxMzQwUVRqNlpuRW9MaGxHakxsV011NkVTUXZ6LXVjWGItOFZUVzRkTklkOTFYa25oRnNvZTItTWdFLTZpUkwzR3E5ZGpQMzlZdXJNdXRwc2NNRXlYQnQ4LTI0YnExc2RscHhKWEw2ZzdHOHVyWEZaZDFNelVkOGlLOGI4eDM?oc=5",
-      "title": "Presidential hopeful Vance appears to question Iran war after polls debacle",
-      "en": "Presidential hopeful Vance appears to question Iran war after polls debacle",
-      "outlet": "Al Jazeera",
-      "published": "2026-11-04T23:17:34.000Z",
+      "from": "ID",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcUQ5Q1VuQkhIcDZDNkNhYnpMVnpMcnU4eTFTZC1STnFtWndHOW82SndfQmRTN2R1QmRkVU9RX2prOEg4LXRjb1R3b0UtaUNVQXFsWWpiUmRxcFpsQVQ3NzdJNU5kR190d3VRdV9fQlRhTWw0dF9ySFhsLU1lY0RObE9SUWROYW1BeVVWZjB3T2NhQnUtZkxNbUtvcXFiaHNqVm5OM2xjdmxjZ9IBrwFBVV95cUxOc0U0NjlJSDVpY1ZDZW5fbkFMQm1sWENKemZBZ2k1MllfdnA1c2xHejZaVTdkd0xHLVNnQ1VxRXMzVjQ1Y3pZcmRZQ3Y1NmdOMUJwMnZQSVM3eFUxUlg3WUxlQVZoRmFWUDdxQlZlbERqdHlVY1JETTNjV2tuRDR4S04wMUxxTDRaQi05M0p5TGhRdXZodF9mS2dwYW10b1llSVZfRmVxVW9jNDEtV1Qw?oc=5",
+      "title": "Kala AS Sangsi Bisikan Israel soal Iran Pakai Senjata Kimia",
+      "en": "When the US Doubts Israel's Whispers About Iran Using Chemical Weapons",
+      "outlet": "detikNews",
+      "published": "2026-11-04T23:34:16.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNFdoTi1INVRLRUdkTG9SY3pPQ1dQcTgwTzVjMWQySGdBWUJLczFfMWV1anNEbElxY29VSy1ieGh5dzlCTUhFdEtIMUViLWNURVFEWUw2X3lsbXJVM2dCWW9jQnV2Slg3bm5NMW1iU3JzeHlja2xOSFN6U0ZUR3hwVVRuaU1zV1FmR2p3bTQtczVmMU5VS3NWR2d5d0pzdEpVcFAzNzB6VXc1MUdfVExXX0RwOXRyVEXSAbwBQVVfeXFMTUlnRGFpN3h6WmRvdWJNS1pDdkV3WGJKSC1xNFZtSjNLMWIxRjBweTZYcDZRRzVmdDYxXzNaenQxMzQwUVRqNlpuRW9MaGxHakxsV011NkVTUXZ6LXVjWGItOFZUVzRkTklkOTFYa25oRnNvZTItTWdFLTZpUkwzR3E5ZGpQMzlZdXJNdXRwc2NNRXlYQnQ4LTI0YnExc2RscHhKWEw2ZzdHOHVyWEZaZDFNelVkOGlLOGI4eDM?oc=5",
-      "title": "Presidential hopeful Vance appears to question Iran war after polls debacle",
-      "en": "Presidential hopeful Vance appears to question Iran war after polls debacle",
-      "outlet": "Al Jazeera",
-      "published": "2026-11-04T23:17:34.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxOc0gyTklzQjludGlIdGNmQWtmX25qN1lpT29UbmwwMmZVOFZwb0dCTFBHampYanN5czFiMjV4VzNpeXVpWk9tRlFzTmF1LXdOanpWeFVnVzZaWWl0SS1uSFM1Z0s3RUZoVDNsN0sxTy1sQlV5UEZfNHM1cHNrbWk4TS0tQkZtd0dwQ0xJUUdmd2QzdEJDc3JkNU84YkoyZ3FncnR6ZV9NdVhoYV9iU29vZ3U1MUZuaTNKa1lwYmdBenRvVENEUU1EZHlXbWdSaHFVenllLUJ6aWtCQ1lKcFpuQi13SXBNLTRXX0xmdUh0U1JRSDZNbm1oeGFwcEhPdF82WmtNTUVrcElMQ3p0M19GMDNBLVM2WkZfZU5UY3pWVFVHMFgxWkhhREVnY1g2YlBCOWFxa2U2M0NCc0U1U3NIaHg2Yw?oc=5",
-      "title": "سي إن إن: ترمب يشعر بالتضليل بشأن حرب إيران ويخشى فقدان نفوذه",
-      "en": "CNN: Trump feels misled about the Iran war and fears losing his influence",
-      "outlet": "الجزيرة نت",
-      "published": "2026-11-04T23:16:16.000Z",
-      "outlets": 4,
-      "trending": true
-    },
-    {
-      "from": "JP",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9UVWRqN1Roc3Z4R3lrVV9sX2t5cUpvTWluNm0wNU9IVjJOUnJBek52Q1RRUGVOckZva0Q3RUZRdkhrMGs0RUpTcFFOdEItN0dTeTIzNnhYeTdjWGxiVm9sbU5YT3d2bno5Wnl6Uw?oc=5",
-      "title": "トランプ氏、国防長官の交代相談か 中間選挙大敗でイラン攻撃の責任",
-      "en": "Trump may consider replacing defense secretary; responsibility for Iran strike after midterm defeat",
-      "outlet": "日本経済新聞",
-      "published": "2026-11-04T22:57:38.000Z",
+      "from": "US",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcnRLVmRNTnVEX3lyT3ZheWVqaTB0Mk9kYnk2TUJFVEY3dUlXUFNiQjlCTS1HSy0yZ0poQ0QzQlVtWWZHQUpwNXE5Snc5MFA2WUQtRXdXTW44Q3JydHM0X0pmMmtVSGp1bm5zemd3aHZyaEF6RHRHV1BpUGxJb1dkWURLbmNreXhU?oc=5",
+      "title": "Vance, in Break With Trump, Blames Iran War for Republicans’ 2026 Midterm Losses",
+      "en": "Vance, in Break With Trump, Blames Iran War for Republicans' 2026 Midterm Losses",
+      "outlet": "The New York Times",
+      "published": "2026-11-04T23:26:48.000Z",
       "outlets": 5,
       "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHNnV1WFJpbmRGWFFaOGpiUUtGZklVY2tPLUU1SEo4X2lvem5SaXFSSmxoZkZKVlVpWF8zZnR5ZFgtWG41Uk92Ry1Nc0xYUXRzR2JMeVpYYjZOd9IBX0FVX3lxTE5OS1VYYjF3WVRjblhfVWlCVWJ1Rk9IWUhUVmJpMlNncUtUMi1pVWtXSDliN0FhY2tkSHJfQkw2UFgxWFhLNDFTOWJsTlV6TmU4amVWNjhLUGFMVWdtcDRv?oc=5",
-      "title": "[미 중간선거]공화당 패배에 이란 “미국 유권자, 전쟁에 반대”···추가 공격엔 확전 경고",
-      "en": "[US midterm elections] Iran says US voters oppose war after Republican defeat... warns of escalation if further attacks come",
-      "outlet": "경향신문",
-      "published": "2026-11-04T22:53:00.000Z",
-      "outlets": 4,
-      "trending": true
     },
     {
       "from": "IN",
@@ -88,37 +578,17 @@
       "title": "Oil falls over 8% as traders weigh impact on Iran war of Democratic midterms sweep By Investing.com",
       "en": "Oil falls over 8% as traders weigh impact on Iran war of Democratic midterms sweep By Investing.com",
       "outlet": "Investing.com India",
-      "published": "2026-11-04T22:52:30.000Z",
+      "published": "2026-11-04T23:00:12.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "MY",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUkRJbEpibGdaSkZaMmg4c2JacmRXNmtoQU1pU3JDYlhHR0FCM2UtZmVhR2liT0lCWEpreU9DbDhjbEJQQWxuTDRzaVBuWkdHdUlXcWpuQjRBc2Y1WmFZbDdrMW4yWkZOVlprVVdNME5KOXFoX3BtQ1dEbk1hR0xha2lEeUxqdGM1UE1pSWV6V3huUk1JTnRXYTFiWXZFcGJKQzRSWEk3VUpnT25MUkoyLXFJWUV3bUk?oc=5",
-      "title": "Trump akui perang Iran jejas Republikan, namun pertahan keputusan ketenteraan",
-      "en": "Trump admits Iran war has hurt Republicans, but defends military decision",
-      "outlet": "Astro Awani",
-      "published": "2026-11-04T22:50:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMiowNBVV95cUxON202MjRsWUdJNklqckxGbDBmaWk3VF9ROEV5YzB1WTZlMXFPMlh4RGhySElBbm9RVGVTTzgzOU0xMEdUckQ0T3BWQzg0SGJqY1JSdWJNOXJjLTdEVkhfXzNhLXB6ZEJNekt5VWVyWlptcnJBYW5leXBZRXcwTG01WDQyQTJuTGlkUnZGTFVQVUNDTEVUWnZwUG03M3lkTmVtUDMyQWdWOC1BblNPREZ1S2NzWW85UnBKcWFMcklfRzJnZ3B3bTRwQjVHZzM3ekktWkJYRE5oUUpzRm85RlVTS2k0OGl6UmRFOGNrMlhNYl9abmVGazB5R09zSGZ4NVplTjZTdmVxTVhIOEFWUUFqM2ZqVXMyLVJhSXR6RG1hendXZ1ZuSmxoT0xMWU04TUowSjE5dUYxZ3A1Z2ZsQnBNbEZFUFRsMEFsZUV5ODB0THB2dHJtYV9yZHdPZndRaktVT053TWotUTA0ZkpmX0NTWVhiMDJ4X05QZlZlaEJJVUloNVdsTk1BamRNcDc5Vk1nSTVtYnNWMWFMRVJZeXJFR0F3RQ?oc=5",
-      "title": "ورطة الحرب على إيران: لا خيارات «جيّدة» أمام ترامب",
-      "en": "The dilemma of the war on Iran: no 'good' options for Trump",
-      "outlet": "Al Akhbar",
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRmd0SDRDdmdkYTlEalFZYldnTW9vZHctVWZGYnQ2VWtnOHI1VE9tNVE2b2xveWZRQllpR1NQbnhRZ1pKNFFKNjlWQnFCOEtaRlhfRFRjNGREU3o3bGxiQzVtRWpWWTB0R01VNXhkWmFnZlBrZDVaR2JSeThEYXFDdFp1OGJuQndjYmRmMHNMMkhtWXFhdmxXMklwc2s?oc=5",
+      "title": "Tin tức Thế giới 05/11: Ông Trump nói về vụ tấn công đảo Qeshm",
+      "en": "World news 05/11: Mr Trump speaks about attack on Qeshm Island",
+      "outlet": "Báo VietNamNet",
       "published": "2026-11-04T22:30:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "CN",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQci10cW41dUU5V1ZESkRZbF81WHh4TzVIZWRqek9rMVpUSXUyT1hJTzBMUEU2MG5TRTlnSWNyOXVBbWstdlotNFl3TFdaYkFZRUdsTXlfQ1p4dmtCNjZnWm0yME9MdEhUcEFKZWdkanZnODdlNFlYdW9lWEVmSVlzUU5iOF9ZX1RKQlFLdA?oc=5",
-      "title": "特朗普就美伊战事再表态 胡塞武装打击沙特机场等目标",
-      "en": "Trump comments again on US-Iran war; Houthi forces strike targets including airports in Saudi Arabia",
-      "outlet": "21财经",
-      "published": "2026-11-04T22:29:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -128,29 +598,19 @@
       "title": "JD Vance responsabilizó a la guerra contra Irán por la derrota y Trump le dio la razón",
       "en": "JD Vance blamed the war against Iran for the defeat and Trump agreed with him",
       "outlet": "Perfil",
-      "published": "2026-11-04T22:18:45.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONUlGcnVxOUNGdUpRN1hoM2FIcHRHMGdqQUpGRGZJeWVqb0NBNmgtbzBXV3I2eWt4bVd1U3h6MXJQTURlRnRVc1RZMEZRNm4zSlNSQnUwNzhrMWxqNmcyVFdtdmFwN3Awd0ZSNmpEckdmbXlhUkM0NmdYSjQtQlNYZllyVXRsOW9EU1BWNU9rMTJDcTAtR2FWTjdaSE9OR2RpU2JFV3c5cw?oc=5",
-      "title": "Trump concedes Iran war angered voters, triggered Democratic landslide",
-      "en": "Trump concedes Iran war angered voters, triggered Democratic landslide",
-      "outlet": "The Washington Post",
-      "published": "2026-11-04T22:16:59.000Z",
+      "published": "2026-11-04T22:20:45.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWm5pckNnT3hvMEhPaEVBcU5Id3o3OTFNUzI0al9vYnlIVlVieEltMWpuZGJ4U0FCUjByeUk0YWVEb2VzbzdhOGNiQkJMdTh5R0xQc1FWMGtsNzZheWQ2REF3djJZVE9wTEpQdTJPQTgzelNRbXhzM1pNNnNUVFFQd25IbjBCbHFKdnNOM3RWM3h3SDTSAZABQVVfeXFMUGQzMHlZN1daNC13Z2ZtWHlSVzZtM2FTbEx3X1MxSU9ZTWEyc1Q5YTVvcXRBY3htYl96c19jRWYxaWhCYmVSbzM1VWxJVWwyeFNGakZ5Mm9DOGZsNDFnVFl3ZXJXTkRtNHV3UUpVY1VpWW5sOVhMaEtkakFqaHRrVDZBcEZGX01ScTZiazg3TUFK?oc=5",
-      "title": "В Ірані зреагували на результати виборів у США",
-      "en": "Iran reacted to the results of the US elections",
-      "outlet": "Korrespondent.net",
-      "published": "2026-11-04T22:14:00.000Z",
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE90cHNJSHQyeHVUM1JkOGF0UzhfbzFPRXlhZkc2WlhtLVJ2Ym1vSWl6akxucDd0cGowR1RsbEVBWUU2RHVVVWc3X09kLUhTVFF4OHpsT1JMQ0xYS3M?oc=5",
+      "title": "Vance says Republicans lost big because of Iran war: 'Everyone knows why we lost'",
+      "en": "Vance says Republicans lost big because of Iran war: 'Everyone knows why we lost'",
+      "outlet": "BBC",
+      "published": "2026-11-04T22:20:35.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
       "from": "CO",
@@ -163,183 +623,23 @@
       "trending": false
     },
     {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5hcDltSzJzMkFNMzVKcjd6M1RnUjA5UFNha2tyMTlwVTQ4cVlnWV9LVVFVanR0dVlRUnBxRkxORmU4NG5KaGE0bGtBUFBiQ0hwZ0dQQ3lwV01nMXR0Y2JUM3JKdGFTX3lOZ3hhYUdUbGVsaWs?oc=5",
-      "title": "Vance says the Iran war cost Republicans the midterms",
-      "en": "Vance says the Iran war cost Republicans the midterms",
-      "outlet": "Axios",
-      "published": "2026-11-04T22:04:14.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IE",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00UFBBbWUzd05KOVBsWllYYjdWLUE3VHR0RmJyenptNUxRbTdNM3VVN012SUdVU21nWVhBWGRUY0hQdEFOMTNpVXYxY2JCcDg5bFpPaG9EaHNhUDN2VHF2eFZLWEk?oc=5",
-      "title": "As it happened: Midterms loss due to Iran war - Vance",
-      "en": "As it happened: Midterms loss due to Iran war - Vance",
-      "outlet": "RTE.ie",
-      "published": "2026-11-04T21:54:05.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "AU",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTkF5NGZiS09JUUxzZTdEdGZvbEdBeDJiZ1FJMTZkMW5MYVdkS2VWUjB3d0VoZVdObU8yZlFYYzFYVDlwUGVNXzJUV1Fmb3FmZjQ1dTd1blpIMVJkNGdLczdJWDRtZHdob0YzRGNxRVZPZE5Sc0Q2NEVzYnRscGhzMUxJenhlZ3N5SzRtYS11NS1SdFJVeFZqQXlTSFZDN1VVbFJNdWFTYXNWQ28?oc=5",
-      "title": "Morning Wrap: ASX 200 to rise, S&P 500 and Nasdaq rally on Democratic sweep, Brent sinks on hopes Iran conflict will end",
-      "en": "Morning Wrap: ASX 200 to rise, S&P 500 and Nasdaq rally on Democratic sweep, Brent sinks on hopes Iran conflict will end",
-      "outlet": "Market Index",
-      "published": "2026-11-04T21:53:07.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOVFEzQW1RdERZb2o1OEsxSlYtVl9XSGlTc0x6STBhVERaT0w1X0YySDlLSGJDNWJySWFFV3VTdHdwMmdPQUpUMFR2Y3Y0X0xseDB1TVFmN091LWJuV0Vfem1VeU1mckxveExXTEx5SGFLWDVBMkRIMVhQODZXTV9ST3Y2aVdhS1RvcFNkSUFKSnJfeDF6LW81Y3prckh0bHd5N3c5OFVCVU9iWm9qSUVydVYzV0NURUxVdFkxNHczbzlXUWY1aktkX0NKN19IWk9STUtxZktSMDh0UE9fMVVtVUNOYWZsalhVU3J3?oc=5",
-      "title": "LIVE Midterms VS | Trump erkent dat oorlog in Iran oorzaak is van nederlaag, flinke winsten op beurs na zege Democraten",
-      "en": "LIVE Midterms VS | Trump acknowledges that the war in Iran is the cause of defeat, large gains on the stock market after Democrats' victory",
-      "outlet": "AD.nl",
-      "published": "2026-11-04T21:30:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "EG",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOY3d2M1hBYmtpZXBqUWVfVHN4V0lzbzRiSml5YlZZZjBQaGpRU2ZKSXpic09Jc1JVV2hHMTR2SWhaZUl2QUJ3OHZUcGM5Vm56LU5CRlA4NjBzT3NlWFNXaVp0dWRwZWtKd3BWakRFaU13TF9sQnFXNDRiUVQyWnRKOXh1QnR1bnkxSkMwUHBpYUItbVBDOGVCalBybWxWRU1LcWJtRHNTWEgyMVdyX1N2NTY4a3d5bndaSkRtbjBDU296SldDSy1GeQ?oc=5",
-      "title": "تراجع حاد لأسعار النفط بعد تصريح لنائب ترامب عن إيران.. ما القصة؟",
-      "en": "Oil prices fall sharply after a statement by Trump's deputy about Iran.. what's the story?",
-      "outlet": "CNN Arabic",
-      "published": "2026-11-04T21:14:55.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOY3d2M1hBYmtpZXBqUWVfVHN4V0lzbzRiSml5YlZZZjBQaGpRU2ZKSXpic09Jc1JVV2hHMTR2SWhaZUl2QUJ3OHZUcGM5Vm56LU5CRlA4NjBzT3NlWFNXaVp0dWRwZWtKd3BWakRFaU13TF9sQnFXNDRiUVQyWnRKOXh1QnR1bnkxSkMwUHBpYUItbVBDOGVCalBybWxWRU1LcWJtRHNTWEgyMVdyX1N2NTY4a3d5bndaSkRtbjBDU296SldDSy1GeQ?oc=5",
-      "title": "تراجع حاد لأسعار النفط بعد تصريح لنائب ترامب عن إيران.. ما القصة؟",
-      "en": "Oil prices fall sharply after a statement by Trump's deputy about Iran.. what's the story?",
-      "outlet": "CNN Arabic",
-      "published": "2026-11-04T21:14:55.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "JP",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1lLVRoQnQtcWpDSkxibUdJanhkVXotSDlLOTlMOXZUM1VZdXBBdGtUUm5EY3QwWUVrX3M2ZG91WWpqaHhpZ3l0WjhWVU9pdWFTRVRYRml6OG11SGRUTG1HV1JB?oc=5",
-      "title": "共和党大敗にバンス副大統領「敗北の理由は戦争だ」…イラン攻撃決断のトランプ氏との対立招く可能性も",
-      "en": "Vice President Vance says \"the reason for defeat is the war\" after Republican rout; may trigger conflict with Trump, who decided on the Iran strike",
-      "outlet": "読売新聞",
-      "published": "2026-11-04T21:13:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "TR",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPd0ZpZnVaeHFWYmJGNnZnbzFIamZZNU1Bc0lMak4xVUppM2l2UWJPR1RBMFlfSG9wQzZYR3c4QjJkbHhEWmItMkFxc3FjaTktMldDeEV3MEdkRExsOUpUZ3gxa2Q5dm4wd2tPREtzOC0tTmc3aVZ0WjRaLWdxRVdpRjkzdFc3bWdrSzVELTRqZEp5dFRuZUFrNm9WczE?oc=5",
-      "title": "Tahran sokakları alev alev: Trump ve Netanyahu posterleri ateşe verildi",
-      "en": "Tehran streets ablaze: Trump and Netanyahu posters set on fire",
-      "outlet": "Haberler",
-      "published": "2026-11-04T21:08:52.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
       "from": "ES",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV1pEbFEyY1o5cnFTaTg0SzF3UXhrRnhwX1RMbVBfSC1QLUFXcHpEZ1dPb3NVOXp0cVNNMVM2d3FCbHVuRHhGdVh4MHZoaFRHeUR3QnBPVmJlbm0zb1d0cUFLa1dfYTFnUlA2c3BldWRxQ0VwTVpJZ2lXOC15SUZsdlQ3bjE0dFF4UEVNOUNHSlVaOG9CdGpiUXQxLUg0UkNU0gG0AUFVX3lxTFBGVEVyRmpjMDdEcG9qZ1BIaVRYbl9QN2JfaENPa2o4YlVHbDY2VHd4SE1QUlhlTExJcklJZkpCenJpTmtrNFBYbjJSZWpKT2poNkFUTzk1TDJEcUlVMDRid2VpN2tjVmh3Qm8ySzM2MllrRGdfV1d2blpIdGlyc3VDUHdBWU9ZOWFGWXI1Yk9EdUJObkF2S3Q2UXF2dDJzbld0azlWTWp5OWNuX1ZxWUZTaVk4OQ?oc=5",
-      "title": "J. D. Vance: “La razón por la que perdimos fue la guerra” con Irán",
-      "en": "J. D. Vance: \"The reason we lost was the war\" with Iran",
-      "outlet": "EL PAÍS",
-      "published": "2026-11-04T21:01:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZWpxdTY4MjlSSVE4QlMweHpTODJ4R0h4NGJJUDQ5REFvQURhVzVTc0wwRWdrR3FJeFhoSmxEZTJkS2tDRU52bmRtRGFnVjVJLWV0ZlQtMHNfYnZMTmZaSFNRWXg5SnFhQ2JGb0hlRjZtOHpWcU9FZURiZHBDWXVYYlNzNWZOeWxYbTktSGR4S0Q5VWhieXNOVXM4c180YW1KMUFZbXo1X0tiOTg5ajhFVWxaRXhoRlJWcko1ZVJWNE5GMUdlLVpHUEhkTWFobjlNMEpsVjdieDltYnRBTEVyUnIyaUsyamV3VmJxcEJ0ZHQ?oc=5",
+      "title": "Irán se burla del varapalo electoral de Trump: \"Hablaron de un cambio de régimen, lo hicimos realidad\"",
+      "en": "Iran mocks Trump's electoral setback: \"They talked about regime change, we made it happen\"",
+      "outlet": "France 24",
+      "published": "2026-11-04T21:53:51.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "MA",
+      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQVm1yWWJsN3doUnFQempUR0gwR0N0aWtVdGNOcmotRFgtcHZ4RmJfdHNvLXkxUDJ5MXBxVzNtZVQ0SG5CU25oRnV3d29KMkgtUnZiUVMzeU9uR3VTSTJjUC01dzRUcDJ1Wm1wZVdTTkpMcWY5b0RDTEhaNGNsZ285YUVIUUozQUNFWE5CdnplT0dvOTNGQ1d6SGc0RlYtaUJoTDFhdEFSazczdU1KU2V6Y0RVRk9fa1FQRDgzcXcyWi1ENk9sWXp3VE8xam1ma1paN2NFaFBkMXdtQlhXbVVaQnpjRXpjcW5PQ2lEZEhsMnk4T2pnTmdrdy1HMlEwWWhsWG41N0cyZTd1dUMwazZrOFMyX3Q2dXV4Mk9reURndUlvTnlUNy1qZW1vT19fVWl3b0p5RW9R?oc=5",
+      "title": "EN DIRECT, midterms 2026 : pour son premier discours après une défaite historique, Trump parle de sa salle de bal à la Maison Blanche",
+      "en": "LIVE, midterms 2026: Vice President J. D. Vance considers the war in Iran to be \"the reason\" the Republican Party lost",
+      "outlet": "Le Monde.fr",
+      "published": "2026-11-04T21:29:18.000Z",
       "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQemZtNHA3MndVd0YwZEZjYVZSdXA5NVpnXzhpUnY5Mkp5U2lBTnBtNEV6dVB0LUJZVXBDV2lUNnNHbTczNWFVVEtXUVhFdlUxdm5sOWl6U0JFMjhGXzgzQ19GNXdrNUVJMlB4czlkenlNOUctMGllMmFLRTJrVXl0T1hoQ1ZUcmI4N0xxU18wTEhuQUNHYm5mNFhNc0pVRjJqY0s0clotUW42czd0TTRCNw?oc=5",
-      "title": "Democratic sweep of Congress ushers in a new era as Trump acknowledges impact of the Iran war",
-      "en": "Democratic sweep of Congress ushers in a new era as Trump acknowledges impact of the Iran war",
-      "outlet": "AP News",
-      "published": "2026-11-04T20:49:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNa0Q5aFRYMzZ5OEhGUU54cXg2VzMwSVozdjNrNjRQWGx4cGxvZHM5Ry11RHh5RlZDUzNicUtpMFVVQ0I4SGkyVzU3WEdOQlRDcTZlbEVvazEtdGtfUGlvWjJGcER6RDJqejBQclVKWFZyWlBUUVAyS0ttTUJTYkdWdmN5elVjN2lBWW00?oc=5",
-      "title": "Oil prices fall on Vance's post-midterms Iran war repudiation",
-      "en": "Oil prices fall on Vance's post-midterms Iran war repudiation",
-      "outlet": "Politico",
-      "published": "2026-11-04T20:46:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNkloTkVkcHUzU0wzLUxaLUtzTC16ZS12SGg1alphWml2azVBN0dYc2VlcW9LcnZSM25wbWRyX1hQd196ZS1uUi1iRXhGTllpbHVkTEZGejgzeTJVdElUNkd4MHBsVFhqQlM3UDU0YlJZX1A1WUdCS18wMl9fdnkwakJHUk1RQXpMR0NiSFpUWE5lLTdJeG5iV0tWSWV1VVE0UURHSzVXUmdMSGJOWGl6OC01Nkp5N3hQUnR3Yw?oc=5",
-      "title": "Tramps atzīst: Irānas karš lielā mērā veicināja republikāņu sakāvi vidustermiņa vēlēšanās",
-      "en": "Trump acknowledges: the Iran war largely contributed to the Republican defeat in the midterm elections",
-      "outlet": "tv3.lv",
-      "published": "2026-11-04T20:42:17.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxPSktYV1FZMkx5M2t1M3FnVWdtbEVINmx2MmVpSUdrQWtBU3ZrNVR5ajg0aTN1NGQ4eThoVkg5ZDQtM3BfR2xYZG83cXFtTjJpbENjNVB5eTZoUnM1R0xydXd5N0gzNm9hZGdOYms5NTFLa080MVBRM18wclVBd2dzTHFqUnVHakg0UjlVeDQtUnhTM19lbEpfV1pHTm5MLW10UzRsOWtndlRrb1BkNHl6S2gyMVM5UldkbHhxOENmY2JCbEluUTU0Y1o3Zk94TG5qMm1EMDcxcWFFU2ppNkctYUJ5bXBmQWVuT1l6REJXRlRhaENza09vaGdJcHpQSDh2SFJUNW8wQkNVcUxsMGM2MW1MU3ZTRjdDeC0zRnJEZlhBZWRPWFN1Mk50VE5QemFTWjhvX19XUEYyOUlEN3VLMnJLMU1UalVTZFlfOEFVYktWQkFpVjBz?oc=5",
-      "title": "هل يستغل ترمب الفترة الانتقالية لضرب إيران؟",
-      "en": "Will Trump exploit the transition period to strike Iran?",
-      "outlet": "الجزيرة نت",
-      "published": "2026-11-04T20:41:05.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "SE",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPN0xQMkxtcEJLeDlYbWZaTDBFemdDZXFBbVRHV2VUSjByNHVzR0Q1V0hFQlRSQllYdWR6ZVFMSk1HangxUEZKbGZ5QWdKVFY3Z3JUTDFMTTNUQ1UyWlRUNnFvLVg2bno1MEpxc3o3RGxkRmR6TlFQTjdVTFlDZzZPc1hpUGlrdm1QVTAzTQ?oc=5",
-      "title": "Trump efter valförlusten: Kriget mot Iran värt det",
-      "en": "Trump after election defeat: war against Iran was worth it",
-      "outlet": "SVT Nyheter",
-      "published": "2026-11-04T20:38:24.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR1VWV3F5dWRsWFliRFUxVkpjVkhTaF84YjRhTnB2SmE4empFR29hNGZlT1RnMkZYcV9BcDd1aHJKMV9IYWVydUFVZDdDQmZYeklqRHM1TFQ3VERyX0lhYnM2QTFiTWlzckJtR1NyOEVhS05PSEU2SDlxdFUzNVFOQ0JyZXV1VS1Ha242VjBxdE5XU1poc1E2bWZsZnR0Q2c2cWNta2Zn0gGrAUFVX3lxTFA5WEJHeEtmbElpaDBBWmlxd2xBek9RWG50clVyQTF0dzZLNmZ5dHRtTkJudkIzSEtXcm1oeGx3RG9kSFFHVWdQU0dMck1BMTNNLVlZbUctTEFRZVI5YkhPMXlqWm5qM3R6UEVUTjdkZ0h4RlhnLVFHQ2FZMThvS0ppWk9nYjRnTnY0Q1k5dlYwVWYzLTY1ZmxjaEV3RjhJcnYxZlAxdDB3TVUtQQ?oc=5",
-      "title": "Τι σημαίνει η πανωλεθρία Τραμπ στις εκλογές για Ιράν, Ισραήλ και Ουκρανία",
-      "en": "What the Trump rout in the elections means for Iran, Israel and Ukraine",
-      "outlet": "News 24/7",
-      "published": "2026-11-04T20:38:00.000Z",
-      "outlets": 7,
-      "trending": true
-    },
-    {
-      "from": "AU",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPT1lxX0YxclZPZWpJX2hpZWNrYk9xSG1tU0hIdDBrMm1RQjB3M3FZLWF1a01EX2syM0h1V294aTRuTGp4bU9RZGExWm9iQlcxM3JTNkdvSkVzZmlNck1jbDlKVFhaZWc5ci1lWTlxUUZfbVZ3NzktU2FTenFuaVphYkpjUW0zSkU?oc=5",
-      "title": "Trump and Vance lead GOP blame game as fingers point at Iran war",
-      "en": "Trump and Vance lead GOP blame game as fingers point at Iran war",
-      "outlet": "ABC News & Headlines – Australian Broadcasting Corporation",
-      "published": "2026-11-04T20:37:23.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBDUHdnOS0yOTNpaVhWNkFhZWNmUGNDVExlcElrdE5ZZURIdEtwSmNGMkV3VU05TXpLSlpWUkRkZ1B1TEhrbXJQeFNXQWFKcFcwMWsxTzdjdkg4Vmx6TUQwYVN0Qm4?oc=5",
-      "title": "Šumer: Demokrate će okončati rat u Iranu kroz ovlašćenje odlučivanja o američkom budžetu",
-      "en": "Schumer: Democrats will end the war in Iran through the power to decide on the American budget",
-      "outlet": "Danas",
-      "published": "2026-11-04T20:27:35.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQRVlfUkY1cE9KUU13OHU2SGNTa3FlQWpRRm1tSEx1Qy05YWVTVXYxT2ZfWnpWLUl6cExCTUhldk4xSE91a213cjE3OFRqVTl3T1h0azZsYVMxcnQxTTIxaUJvckFvaW82RnhNd2lROWhybU9WTkd2aHdFX2YzcU44R1laT18tdUppLTlEZkdZVFZ1QktrMS0tV0hKT0dxZ2tpY3o0ZVlIRXFtZG1tdHh1WFBtMXBkNXFsX3hybmVBWDh0dmFfMTM0RnB4allUYW5RUnBHTXFvTVI0c3JwRmlLZ0kxazg3VWIxdGVFZ2tIOGpvczB6Zi1UdzQ3QUo?oc=5",
-      "title": "‘Vast criminal network’: US sanctions Indian couple, linked firms over maritime fraud aiding Iran’s oil t",
-      "en": "'Vast criminal network': US sanctions Indian couple, linked firms over maritime fraud aiding Iran's oil t",
-      "outlet": "The Times of India",
-      "published": "2026-11-04T20:18:00.000Z",
-      "outlets": 2,
       "trending": false
     },
     {
@@ -350,25 +650,25 @@
       "outlet": "Dnevnik.bg",
       "published": "2026-11-04T20:14:00.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQd2tVcDFYbzZnZ1NCNW9RektpbGFWV2hjLXBtVnp5ZmR3MTdmWFNSQUFBdkg5ZmUwZ2gyUGxPTG1RRDByMDQxTDZJN0EwVXoxb1E5SzNYUEMtTndhekZ0emN2THlrel9CYzNvRjhWOW40RDNfS3ZBc292Nmh2X3dkdUFxdDctdVQ5YVB4cUNnbU42UFRXVXM3dHNKa3l6WUtaeHBCQ0tJTW8wWWlpRDZNT18wcWNsR1hob3NneEVTcGo5Rk5QYkdoaWxDVDZ3Sl96MW9aaU9MWmNaaVRwZFVMOVJvWTI4UGZzTmZnbVh1cTJyajJrbFpENTVR?oc=5",
-      "title": "Ο Τζέι Ντι Βανς πριν κλείσει 24ωρο από την εκλογική πανωλεθρία στοχεύει τον Τραμπ – «Κάρφωσε» τις αποφάσεις του Αμερικανού προέδρου για το Ιράν",
-      "en": "JD Vance, before 24 hours pass since the electoral rout, targets Trump – 'Pierces' the decisions of the American president on Iran",
-      "outlet": "Newsbeast",
-      "published": "2026-11-04T20:10:55.000Z",
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMirwNBVV95cUxPNnRXNHdRU2pvek9jN2RIdWVtRDNMZE9qcXdlNE1zS2MwN05MMlRieTVuWV9Dell1YS1aQWtpMU9QY0lJV2JwVmxxcml3cEVmUF9FQi1ncHlhNG1qbE5kcjAtWktGSkFlbklMRURQSTVKSzRMN3dESkt5R3F1dVpDTi1GOW9oU0kwb3lnWUNLWFFWRkhtLXNOb2hKZjVQeDdYYXVEbWdYUzFFSzFGSFdiLWwxNzRLVWxWYk5mSjZrZVlCZjBrWld5dnBjZE1uSGtoN0RmQ2VtenJ0Vnk3VjBfVmdDbm96eWpiVUhtcGYyVDFHdWR3Y3M2cnJwUGo0Vnl6X0dsU2tWalJ1emJqbVBUNzNJbXlxUjJCZzhNNEEzS0VxaE1NVVhWdEtSSzBhWElXS241OF9sRlVhUjFFWFpPbC11NlotXy03Y25IZUxacjdDWVEtX2NxekNYdzFlTjJRaFNfNWEyRG0ydXJJVUFKWnFyd3p5QW5LazA1Q3F2djRCS1Zwa3JhaEp5WENGQzNxS01vdklVeUZpa3Z6WG1OanpaVExkdUhQbVk0SzQ3Yw?oc=5",
+      "title": "أمريكا تفرض عقوبات جديدة على إيران",
+      "en": "America imposes new sanctions on Iran",
+      "outlet": "صحيفة الخليج",
+      "published": "2026-11-04T20:04:22.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPejZVQ3NSNVpZYzYzQ2FSY0t1eW90VFdZMWRlWHp1Nm5HVENkWnhSdlJzVGRsUXhzUTRBMGlfSlNPVmU4QllqcGVZNm81bDgxZk5uclFsZU0xSlN3TnpJWDN2QTMzbmp3TkpBSXpOT0dOX1pvT29jXzJHNTNkZWVwM1JjLUJsU2ZPdURBUVZTWklXT1pJVDdjVXZJN25CX09kZGhvLU5BQkx2WHFHNzN1SFZTTWozN251emVHTEJVdkFOX1ExdmtoVk5VOVpaVER1WjNSS0liT1lCb3I2emNneGJmcTlTQ0VWVzVkM1htTVdyUHdCYl9CUQ?oc=5",
-      "title": "Επιμένει η Τεχεράνη: Τα Στενά του Ορμούζ θα παραμείνουν κλειστά μέχρι να ικανοποιηθούν τα αιτήματά μας, λέει Ιρανός αξιωματούχος",
-      "en": "Tehran insists: The Strait of Hormuz will remain closed until our demands are met, says Iranian official",
-      "outlet": "ProtoThema",
-      "published": "2026-11-04T20:02:00.000Z",
+      "from": "GB",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNekVkV0ZSQzFFVWNVeWw3VkNDb3puOUtuSnBnMDM4QllXbXpHNG9kWEJJa29EcF9mS1NEVUxFQTJ1M2lwQW1Bc2RzWWhkbGc4V3VvbVV0dlBHaWk3aENpWHVpQUkzVFdMYkF1QjJ0ZTZ6dk5fdFFldkkzTy02NmdVd19ac1U1X2pybTc4?oc=5",
+      "title": "JD Vance says US war on Iran is ‘real reason’ Republicans lost midterm elections",
+      "en": "JD Vance says US war on Iran is 'real reason' Republicans lost midterm elections",
+      "outlet": "The Guardian",
+      "published": "2026-11-04T19:55:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -393,123 +693,13 @@
       "trending": false
     },
     {
-      "from": "PH",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNUZjXy1DNGJHT1JRMlBGNVZ4alh1Ymc4NnI1azRtblU5YmlGWFRmTU5KeEFvNnUtdDYta2pWZEpDRENSZVd0QXk2NlNmMmRsenAzUHlBcktGZDdzUUltbUp1YVNTYkR1cE5HZXVGbDg1dXdTS0xCUEcyQ2g1dWFZR280NDhWbC1KZmsxYVZGUWhxV1N5ZGxraG4zUUloMzBPcDhCalhRaHJnZy1LNzBobGd0R25SQQ?oc=5",
-      "title": "Trump says Republicans harmed by Iran war, inability to 'transfer the love' for him",
-      "en": "Trump says Republicans harmed by Iran war, inability to 'transfer the love' for him",
-      "outlet": "Reuters",
-      "published": "2026-11-04T19:46:21.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNUZjXy1DNGJHT1JRMlBGNVZ4alh1Ymc4NnI1azRtblU5YmlGWFRmTU5KeEFvNnUtdDYta2pWZEpDRENSZVd0QXk2NlNmMmRsenAzUHlBcktGZDdzUUltbUp1YVNTYkR1cE5HZXVGbDg1dXdTS0xCUEcyQ2g1dWFZR280NDhWbC1KZmsxYVZGUWhxV1N5ZGxraG4zUUloMzBPcDhCalhRaHJnZy1LNzBobGd0R25SQQ?oc=5",
-      "title": "Trump says Republicans harmed by Iran war, inability to 'transfer the love' for him",
-      "en": "Trump says Republicans harmed by Iran war, inability to 'transfer the love' for him",
-      "outlet": "Reuters",
-      "published": "2026-11-04T19:46:21.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CL",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPOFFSTThLRmhzdXJSMHZ2enFDNWdlZDdLSzZxeHUyajBCVlg0Q1JhMUVremczbnFqX3g2VDc5TzIyN1dJd1NhVk04UFc3UGNqZXJBcFMtZk5RelNuSzZ6OHU5RjU1ZEFHWEJtM0t5a3QweVFEc3BxZ0RmUUQ2QnQ5MVYzQWtNajkweW5nZHVycll2c0ktcDdTMnFQZUFNdjJOcWZ0Nmdpa3pFVWtrYTJJWFQ0OG0xN0hxM2hmUjJvbkNYU1lFa253MlNqbUM5U0duUUZGa2huX05aQUVHZjRUMWZYQ1RvdURubWF1dG1SOHZQWS1MNkhwaWpYcWN0QzQ?oc=5",
-      "title": "\"Todo el mundo sabe por qué perdimos\": JD Vance atribuye la derrota en elecciones a la guerra en Irán",
-      "en": "\"Everyone knows why we lost\": JD Vance attributes electoral defeat to the war in Iran",
-      "outlet": "BioBioChile",
-      "published": "2026-11-04T19:41:20.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PT",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVWV4MUtPZGIyNFhfZTVsM29hc28zRWhkUmVuSlQ5TzRNYWFNSXc1SlZ1bFhaV0o4NjVJbVJNb1FTUDFHNm5xUkdKbmJPcTBpWWZCd3pWSDVLMzRZN0UxTFhtT0dwaUVFYktyZzIxLWZ4OU5uTDZQSlJDSnJtUmdDeERtODBxa2gwbGNhNGZGZHUyUkVJZnJRcEMzVHFGQ1g3WVhHaXhoMXRXYWhPcHNIbnVlNXQwSXlRcVZndF9FMUJ3cktRQmVZckdsYlg5ZHQyQTBqNEgyRTVrSjVONXc?oc=5",
-      "title": "\"Todos sabem porque é que perdemos\". Vance atribui derrota eleitoral à guerra no Irão mas Trump não recua",
-      "en": "\"Everyone knows why we lost\". Vance attributes electoral defeat to the war in Iran but Trump does not back down",
-      "outlet": "RTP",
-      "published": "2026-11-04T19:39:36.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "CZ",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdVVSR2FUMXRlOWZHZ284Wm9kbmxtb056MzZKWkFia250RUhCc29YOXhhdWtJOEd6VEVvcU9JOGttSDI2WFNSMWhTT1NoVHY1dzNoR3YzWGhXdnU1WkVyUW5uR2pKblo0V0pxYzh0MlltU2xWTnAtYjRKZkFYN3FzMTdnM1N2cXcwTmthMnBTc1lULWVVR3pPcFRPU0dZbGFqLTVnU1FVeDEzdmMxSklQZmJhNWZNemlzMXRRN044eWFTMExPeE15TEJ3?oc=5",
-      "title": "Trump souhlasí s Vancem, že volby republikánům prohrála válka v Íránu. Ničeho ale nelituje, zopakoval",
-      "en": "Trump agrees with Vance that the war in Iran cost Republicans the elections. But he regrets nothing, he repeated",
-      "outlet": "iROZHLAS",
-      "published": "2026-11-04T19:31:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBGbl9DV0tUSUlfNVp5UEdqMGk5emFrbl95T2pfaFZsaU1aTFNNLUFHTDZBOUxZY1UxazN5a2NfdXNzVmRCYkxnLUJhUGN6cEpkV1YzOUNYLTQ2WTZWUmRsQmdYRG1VcWxp?oc=5",
-      "title": "באיראן מאיימים לתקוף בטילים בסיסים אמריקאיים באירופה",
-      "en": "In Iran they threaten to strike American bases in Europe with missiles",
-      "outlet": "גלובס",
-      "published": "2026-11-04T19:26:24.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQYXJvZW1TMXY5R3RGeTA1TUZUQ3c3YWRGcmNxdm1sU1U5YUZhaWNHWnN3SjNnZWpZUEtmMUhiT2dwR0hmbG56Q3RQeTJ1WGxMN0dycVRfOVdfb3UwMnJ5djBSOFhXcXQ2YnJVQnZEaTVzdFB5c2Z1NHVQNnI0S19sX0hn?oc=5",
-      "title": "בצל האפשרות לחידוש המלחמה עם איראן: מטוס ביון אסטרטגי של צבא ארה\"ב המריא למזרח התיכון",
-      "en": "Amid the possibility of renewed war with Iran: a US Army strategic surveillance aircraft took off for the Middle East",
-      "outlet": "כאן 11",
-      "published": "2026-11-04T19:25:07.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CH",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSENGSGJRek5YTi05YlV1M0NaYkdpdzMzSVByNkFySVY4dWhtTFZfVTFkWU5OU0lJa3NUNTRMc25reGctZ0ZaN0hjWWMtTHhMc1ZnT2paUjd5cVE4dVkxdXZnMXA2S2xMbTN6eW1SVGFxdXlWMUlCOGRXSk9RMlpRb2lULUNrX3RucTE0T2owbDBaaGEzdTJrU1RGc0ZVZ196VmNrbDBvYWtoMk5FWHBPUEZ6TWNSR0VRMHVaYWtzQ2VFUQ?oc=5",
-      "title": "Trump nach der Midterms-Niederlage: «Die Iran-Sache mussten wir tun und wir tun es weiter»",
-      "en": "Trump after midterm defeat: \"We had to do the Iran thing and we are continuing to do it\"",
-      "outlet": "20 Minuten",
-      "published": "2026-11-04T18:55:55.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
       "from": "AT",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU1VhV0trWnlfdjdsN3BrcDlkUV9FanZYY0Z6ZzdpR05MRGxLSzZzSWRJdW5DUE1SelJoSC1WbWtCNXZ2MlZISGJKSGpibHpEMDJfMWVCZGdOb19wdDZDQmVGNUNraWFCTUtFZzZXU3V5LXA5VzBINUFjbHI1STRMbkVfSFg2Rnk2XzdZWkRkUENpQVN1QXJuYXVkeUVEWDdoVVptdjNqMGpWbE9DUnNCQzIxZlZLZw?oc=5",
-      "title": "Nach Wahlniederlage: Vance gibt Irankrieg Schuld, Trump verteidigt ihn",
-      "en": "After election defeat: Vance blames Iran war, Trump defends him",
-      "outlet": "Der Standard",
-      "published": "2026-11-04T18:52:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "BD",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5OZGp4OTVyVnZCbTJWbTVhbDVtcVFkWUNBVnVmd09rcmVNZTdYS2tMcWdWTGw0VndXbkxoTGNVN2xBNUdVUEc2eFV1QmFNTGlXRFhnMGxDdXNoQnZf0gFqQVVfeXFMUEVlOTlfMk94bTlVRW92M1ppMXlaYnVWVkcwX3QwUW5xNEdRZTNBREUxb252MkpIODhkVURzMEdwaHZSNGhtbGlBeF9BUFpsM1pvM0NhQUI4NWJMY25Nc0x3bkI2WklHaFZxdw?oc=5",
-      "title": "বাংলাদেশের জ্বালানি পরিবহনের নিরাপত্তায় ইরান ভূমিকা রাখতে পারে না: রাষ্ট্রদূত",
-      "en": "Iran cannot play a role in securing Bangladesh's fuel transport: ambassador",
-      "outlet": "প্রথম আলো",
-      "published": "2026-11-04T18:48:52.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUFo0cTJZRlNYSUUtSkkxa1FSQzY5amZWMy1pdGZsWkRwbXlITVpBZ18tY1NsMUlBdmJ3b0JNajdCYlFzWG5veExMa2dSa1dmYjJfRk02ZGw0Zzl1TnZKQ2pKYWxjMzVSLWpwVjNrX2xmdnduWEt5TkZZMVFVcGNCZkxOWGVZTE1DUmM3dzFzaldfNEhWNnVpak9lSDNDRVBsbW1Kb3V4NWc2YXc?oc=5",
-      "title": "Τραμπ: «Αξιζε το κόστος ο πόλεμος με το Ιράν» – Στήριξη σε Χέγκσεθ",
-      "en": "Trump: 'The war with Iran was worth the cost' – Support for Hegseth",
-      "outlet": "Kathimerini",
-      "published": "2026-11-04T18:44:50.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTUI4OVdmek9SdEhRSHpOMDhDeXZNa1NqN3JDMm1PT0JpZEFUMXlDenMzT2hvcHhpMHpnM1BfVEEwaG9SVGNtdlVKMXdHbU1jaHVvcGhseWoybmp0czYxYmFHbzFjWU9NMVNMZ1VjQXlvME91c09YTXBYdEl4b0NmbkZZSHdDS3pnWktDTG1jbDVNZG96MERwam5Mb25ZMVdwQkE2Yzhocml1bXVDMWI0c0plaXk3MGFO?oc=5",
-      "title": "Nach Trumps Wahldesaster: Kommt jetzt der nächste Krieg gegen den Iran?",
-      "en": "After Trump's election disaster: Is the next war against Iran coming now?",
-      "outlet": "STERN.de",
-      "published": "2026-11-04T18:44:00.000Z",
-      "outlets": 5,
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9nMnNnWUZhMC0wVVFma0ZmRnpRUl9HeVZjOHFObnpnakxzY1lwSHhNeGlqcVlUOHhNelRaVUh6OWNFdw?oc=5",
+      "title": "Ticker zum Nachlesen - Trump verteidigt Iran-Krieg und droht Demokraten",
+      "en": "Live blog - Trump defends Iran war and threatens Democrats",
+      "outlet": "Kronen Zeitung",
+      "published": "2026-11-04T19:42:00.000Z",
+      "outlets": 4,
       "trending": false
     },
     {
@@ -518,9 +708,19 @@
       "title": "ترامب: حرب إيران أثرت على نتائج انتخابات التجديد النصفي",
       "en": "Trump: The Iran war affected the results of the midterm elections",
       "outlet": "سكاي نيوز عربية",
-      "published": "2026-11-04T18:43:16.000Z",
+      "published": "2026-11-04T19:06:46.000Z",
+      "outlets": 6,
+      "trending": false
+    },
+    {
+      "from": "IN",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSEhmUWlhLUFxUEhVeEJxVXdwc3FtVndOSUg4YlNfQ2RyYUt2OUFlM200M1h3M3NLZEFpU2c1MHJza2JPV2dkWGRWU05sMlp2ZmRqVUxUa3Rvd2RSeGFyQXctSDZPYTNfUmEza1lLSEY5SUN2OUdmZkhHQW5tTTcza3FfbGZ2X1ZkZk5VWmVWWHRhLW9pZmx3QmJOSVJLdWR1OHRNaUJoQVVKZw?oc=5",
+      "title": "US slaps sanctions on Indian, Turkish firms and people for aiding Iran",
+      "en": "US slaps sanctions on Indian, Turkish firms and people for aiding Iran",
+      "outlet": "Reuters",
+      "published": "2026-11-04T19:06:12.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
       "from": "ID",
@@ -530,7 +730,7 @@
       "outlet": "Ahlulbait Indonesia",
       "published": "2026-11-04T18:42:37.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
       "from": "LB",
@@ -543,153 +743,23 @@
       "trending": false
     },
     {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOMXJBdWRyM1JsY19leWNEcGRoS3RUZ0oya3RzR3pCaTRxdDFsM21vRGlVOEcyOEswOHQ2ZUlfdUdFb0VIQ0ZYMG9zREdXR2ZoSVk2YmFOQ0JEZHU1UkF1QWdWeS1ZYi1rOWR2T3VzVXowRGdJV1VCMUlNQXBWdFVxWDVCNWs4Q09XZzRKdEpMbnM0VWtrYVFuc19NZEc2Q3VNaDgxb2VLTHc4dlpib3BRUGJZTDQ0enEzYWVIS0NDcGVVVWdQSnA3dndnOTJNSEk?oc=5",
-      "title": "Irane sulaikytos lietuvės sesuo: jei Iranas paprašytų išpirkos, sumokėčiau dabar pat",
-      "en": "Sister of a Lithuanian woman detained in Iran: if Iran asked for a ransom, I would pay right now",
-      "outlet": "LRT",
-      "published": "2026-11-04T18:26:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVXVGal9vTGR4M29hanBKRlJSMXdncldBZTlXMmRJd3VOSktZYnVDV0dGUjFocE15MEZISDhVQWJGa2NBVTVnU3hyTVRJUHBPZUY5cGUtcG96Y3Y5OE1iWUhDQUxFdWE0SjlOeG4tend5b3JOM3NfSkQ2VHFEMmctSzNLS0ZaTHRWYm9xZ1lrcUl4UXdxNHp1eXhsQzRNZlFMaFYxWmZsNHhPa0VpLWVKQll4emxNODlvaWx6c2VsVUtiaGdNazU5UlR0Y2d2UThf?oc=5",
-      "title": "Tα σενάρια για «ξήλωμα» του Χέγκσεθ, η μομφή Βανς και το «άξιζε» του Τραμπ για τον πόλεμο στο Ιράν",
-      "en": "The scenarios for Hegseth's ousting, Vance's criticism and Trump's 'deserved it' over the war in Iran",
-      "outlet": "ΤΑ ΝΕΑ",
-      "published": "2026-11-04T18:19:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQV053ckZNazRGbzdiUDhSZTE3cUwyeDE0SXQ2MEV2Y0xGVUw0Z195bFVJdjd4VS01aUtsTnY5UGU4MW9lV3o1eG5jdFJFMk9MNms4a3F1a3hpRU9ncjF5SmtpVktVdThQbWQtU0ExX1F1YjdqbnNZNi1aSFVrRmFZOHNUVXo2b0c5b0ZsMEhqTGplQ1Y2UUtHUHBkYVVDM01fTnZDTGR3a1JrejBUdTNV?oc=5",
-      "title": "Did Iran War Cause His Party's Midterms Defeat? \"Largely True,\" Says Trump",
-      "en": "Did Iran War Cause His Party's Midterms Defeat? \"Largely True,\" Says Trump",
-      "outlet": "NDTV",
-      "published": "2026-11-04T18:15:30.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMi_ANBVV95cUxQcTRuaFFackhjclVXNWUxZ0FRUE9RdjhaRnQ5MnBJX0hGcmF3LVJZVzZmcDhjUDNvUDZqYzB4U3QwaTN0d3V4T1otSER2ZHc4RE9WZlYzWmh0U3JxcnV6M1N0a0hFODhMWExfM2U1blgtbW5sZktkWGx0MzFiS2ptM196M29Lc0FkOFB3SDdsQnUxMDhGbE9ab1JHWHdjbmR5akZydjZZOWpvQjVFQjdUSC1fSkZyOFlkUl80UExaUW11RXA2TGp4RUVFMVdtX1VzeHYwcmJuSEhzSkhqTjFlMkFsRWlDZWxmdFhfYWtneXA5R0prNkdUVGpVYkRUYVQ0SkFMQnViRGJWVVNJN0RjckNoTU1WVndWekVLZHh2UXd6VTRERkphb2RQcDZOSmRWclJQTDd5ZnJKbWppcGoyMkhMZzd2aFNWbUZaNW1xUUVlNl92Rm1vbXcwREJTcjNKU3JHZFkxck5jQnBTUXN3Z0t4UXFUWXZaa3ZNazZCS0ZtZHBtVzdNQ3RvMExJLUNqNFNqdkFmV19Lb01MaV9zeDVfeEFXX21GR1VsaHUzN0V3a1pPMlRHRndQUUxoMTB5SENyQkVTak1feXlSUEZsZGR5Y1h3Qy1xazJKamVGeEl6cktfanNzSkFlMnVmX1o5aEFmVXZXbWI3MG160gGCBEFVX3lxTFBNZWRGNjZRTXZzd2xYQTlyTGM0NmkwUlVnYTZlUFlJSVRySEpfMnpqMFZFZEhodlo2b25RelJ3eXgtb2ROOFdHUzIzazNrakNrUExYZDV2MGoybV9RQlV6Q0ZJUEpVREpQVGhyN09kQjk0VERqODBWeU5NUHUyUWV5MjUxcmF2a0NTdXVPcUdaZVhQeVYwcEtoNUhRdldhSnJYeWxDaHV0eVpVcHRfSGdlczJIdGRnTnZTWldlSk0tbkVTOUtMclRLMEYzWnJOX2d2SHNNVjIyMVFsOFZXWXlWbnp2NlhZdFQxNFctS3FXR1VRWnpGTFloeWw0NlBsWFpxVmpHeW5rY1FLS0lHRTV3dUJZb1NJTkQ5MXhYT05DNzlxZjNZYWZCRDVRVFpxTjZPZm55ZnN6czFEYk40MGlDb3I5NnhuSGp3N25kNmxDYTY5QUZMSHlHMVc4WDBZNldybjZmVmNlSjhlRHQySWVlbGMyRkpuSEdNaDdwVXl5ZEZnLW43ckVjRy1IU19ubXpJWU9Vbnd6bzBhQWN6bTk3TUtzcFRla0JndlU3SzllN1JxdFozMWlQZlZRMVZkUGdjcVhrNDJHdGdhQmVESGRLUFFYTkZzY0xDTFNhMHRIYVprS09pS2VUNFJzTG1UU3p4MUZrajhuYkNlX3FCVjN3R1E?oc=5",
-      "title": "ترامب: حرب إيران أثرت على الانتخابات لكني اضطررت لخوضها",
-      "en": "Trump: The Iran war affected the elections, but I was forced to wage it",
-      "outlet": "العربية",
-      "published": "2026-11-04T18:15:00.000Z",
-      "outlets": 4,
-      "trending": true
-    },
-    {
-      "from": "EG",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0zTnRSWE1GRmJxWVZmZ2lROENjbUN2djU2RFpWUUs2SDFybnFTVzZZV3c0SmJ6dC1SdG1YOG1vX1FKVTVySUVKZUJPbFlYbERGSnNSOUNSMno0QmVBZlHSAWNBVV95cUxOUXREMGMxakFYQUFfUHlKTVdLRkNFMXp3aXBFeWNMQ0lfeXRCcUZiakxxYjBVU2IzQW5LS1pzVlI0UDBFUUxleC05ZlRjUGswSUdIODVjMEp6dExTY0pVYi1DM2M?oc=5",
-      "title": "الانتخابات الأمريكية 2026: ترامب يُقر بأن الحرب مع إيران أدّت إلى خسارة الانتخابات، لكنه يؤكد أنه \"سيفعل ذلك مجدداً\" إذا لزم الأمر",
-      "en": "US elections 2026: Trump admits the war with Iran led to losing the elections, but insists he \"will do it again\" if necessary",
-      "outlet": "BBC",
-      "published": "2026-11-04T18:07:45.000Z",
+      "from": "GB",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUkQ5NTdpMWVoV3hub3haaTRESHZwbnR4OVFpRW5sR2t6Y2Q0UDBDNjNSb2ppZnlTTU5tM2NuTk5NbXlZZzJOM0oxWnExSkotUXN3dTFVRVJuY3owSVluRGhaT1VYaVFlN3B6QjE0V0VxSTAxbzl1aE1wbWhFbzF3SWRZZGlHQWJZWUdYWEtuX084ZmJhdHZQN3FNZlpBZ19hSkxJLXpadnBIY2ZhQjlCYTU4OGd1RU1LdUdMeDNycVRjUQ?oc=5",
+      "title": "House Democratic leader Jeffries says will pass bill to stop tariffs and to end the Iran War",
+      "en": "House Democratic leader Jeffries says will pass bill to stop tariffs and to end the Iran War",
+      "outlet": "investingLive",
+      "published": "2026-11-04T17:49:13.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0zTnRSWE1GRmJxWVZmZ2lROENjbUN2djU2RFpWUUs2SDFybnFTVzZZV3c0SmJ6dC1SdG1YOG1vX1FKVTVySUVKZUJPbFlYbERGSnNSOUNSMno0QmVBZlE?oc=5",
-      "title": "الديمقراطيون ينتزعون الأغلبية في الكونغرس الأمريكي، وفانس يقول إن \"حرب إيران\" هي السبب",
-      "en": "Democrats seize majority in the US Congress, and Vance says the \"Iran war\" is the reason",
-      "outlet": "BBC",
-      "published": "2026-11-04T18:07:45.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0zTnRSWE1GRmJxWVZmZ2lROENjbUN2djU2RFpWUUs2SDFybnFTVzZZV3c0SmJ6dC1SdG1YOG1vX1FKVTVySUVKZUJPbFlYbERGSnNSOUNSMno0QmVBZlHSAWNBVV95cUxOUXREMGMxakFYQUFfUHlKTVdLRkNFMXp3aXBFeWNMQ0lfeXRCcUZiakxxYjBVU2IzQW5LS1pzVlI0UDBFUUxleC05ZlRjUGswSUdIODVjMEp6dExTY0pVYi1DM2M?oc=5",
-      "title": "الانتخابات الأمريكية 2026: ترامب يُقر بأن الحرب مع إيران أدّت إلى خسارة الانتخابات، لكنه يؤكد أنه \"سيفعل ذلك مجدداً\" إذا لزم الأمر",
-      "en": "US elections 2026: Trump admits the war with Iran led to losing the elections, but insists he \"will do it again\" if necessary",
-      "outlet": "BBC",
-      "published": "2026-11-04T18:07:45.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wV0lPUmQ2Vk03dmIwOGt4Skx0WmRYaDBUQU9VVXZaTnlCRmh0cEJBMmR0aWpycjQ2S3pscmpDemVadGd0Mk43NEd2UDFPMGdYYmRySXNMQ0tERlN4OE1EZWgzQmFsTnVLX1h2SXdGTFU0U3g3cHF0ZGo2RQ?oc=5",
-      "title": "Guerra Iran: \"Se Usa ci attaccano da Europa colpiremo loro basi, anche in Italia\". LIVE",
-      "en": "Iran war: \"If the US attacks us from Europe, we will strike their bases, including in Italy\". LIVE",
-      "outlet": "Sky TG24",
-      "published": "2026-11-04T18:05:52.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CZ",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSjVfb2d5MUU4eXFvQUZNUm11V1hrM2FhUEZrS08wY1cxZV9kbjRrZ1AzNVZxQUhOM09YSXIwaTJPamNQcVpRdzlDQm9Zc0h2MHJYSzh3d2xJZ202YWQzNFUzcVhkbS1SUWUxbThkRGFJR0VvNE1SRUQ5RXI1MnNLSkxhcG9QNFY5S2NyR05hRmxjRkxxQlAwd3lfejhNNm9YMnpOanBBS3p1dHhuX1FYLVF0LXl3WFdtTjZwVkZFWFU?oc=5",
-      "title": "Írán vítá porážku republikánů. Postoj Ameriky se ale nezmění, tvrdí Chameneí",
-      "en": "Iran welcomes Republican defeat. America's stance will not change, Khamenei claims",
-      "outlet": "Novinky",
-      "published": "2026-11-04T17:58:34.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNaEhGQWFncDhYT21VckM4NnYzb2NTUUV0SG8wU1dvWXV4c09NQktxcXVoRWVzNExUM3djRnlwNXgzT1llRWh6aXNtMXdoZ0wwTUs5QlYxQ3piNEtRcE1zUl95M1dEamNoeWtQdDFhRmRpbHYyamczYXQ1NEpzSXdETnJNR1V6cUxoV0J1bTJvVVVpLWhSYk5FMW9tLWtqS1ZVdDZ2dFdLc1d0RTNxeGNuX29lR1A0VUJmX2JFWmxvN0RKb3FUVzEteE5oSUR2NzJKWEhDWWl6TVhtYlp1dm5jZDYybk1oSXJmaUszTVZ5Q1pESENwQ1k1Zm5UY19NaWNnX2VGSUZmNFB1R21xMmRNcUtR0gGXAkFVX3lxTE0xbmd6b2FESFVwbmtMSmNfLUx1b0ljZW5ZYmRYUjB6bG5ocGhYMkY1UUgzb2x4bjhRM0FjLV96ZXpkQktuOFpYLVUwX1FFRVEzWkJUQnN0Mk0tWnFUWVlpUi1BV1BGMjByRzctQjdEVHZ0elBjT3dNd19KWkM5V24zWDcyOHRwSkVORzlDNXJIdWtkYW1CbWI4QmlTckJwb3BLNXV5aDVnYjhhMHVrajU1RERuTUI5cF9nRmIweEZNc2p3ZnRIemd3dUs4aWZ2eUhtYktCNWhsMlBsanp2LU00VGNSc2lKUG9XWEUxSlRicHdLam9Bb2ZUV0RtQmFfYjRHWUVnZm44allNY1VyRWZSbFg3andrQQ?oc=5",
-      "title": "Democrats' leader Chuck Schumer demands an end to the Iran war as party takes control of both Congressional houses | Hindustan Times",
-      "en": "Democrats' leader Chuck Schumer demands an end to the Iran war as party takes control of both Congressional houses | Hindustan Times",
-      "outlet": "Hindustan Times",
-      "published": "2026-11-04T17:56:42.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
       "url": "https://news.google.com/rss/articles/CBMiwANBVV95cUxNYldod2xVaGlQMkZmdzF0R1cwcWFCbGs0QXloVHprUmwtWGFWUnJ1Um1XS1lxMVowdjMzdHBEWGxsdWktUDdic2NJejZSeHh3N1lHNUFPUlNyZ3MtLXpZbE9lZENaVHVXYnZ4dUdXbHJGdzBfLUk0SzFDZjJzSFpDdkpFbGRKcTdtcEdsMURyd3lCTmJuSWJHS0dNd25YbWlNdkEtQkFQcG5wM0trcnR4MFJRamJ5MXpmT09FaEV2WHBhS0NRb3pBYVhhOWVVVWFJNWcxcUtXRUZZbU16LWU1c216MEkyQ3pFX2xVQ2x4M2ttUklSU0VXNUpQWThkYXpYSFVNMzhWOEFWRmtWQS12Sjl5ZG9ZUVZOS3NjX01kNFl0VEt3THNUS2VkQjVqTks2YVlEcm1DLTdLdXNqaXFianBaSE04aVBBQlpmX3ZCdTh0U0R1N2Rjb2ZJTEVYTzVHZEtOY2RrbXFFSWZmd1hLaUlXTWxHZEkya2dTNjh5TUZKSFZBbWU1SFNNLXVvaTZLV01MTzJLUjEwNmFnTGVadENqVE53QzRiWXBkUHAzdlpkaV9tSDZxQktrYWN3YTZT0gHGA0FVX3lxTE5HY1BJX1dhSHpjUERVdG96aXo1YXBBYjk5Y1dBSFU5TGpYOVJ3MkhhaEcyeG5EWFNNOVc4ZzduZkpTN3R2S1U5dTJYS1NMWFR6Yzd5cHE0Q1pUdHVNdGJNRUlzSEpfSjhJTWt5ZThHYXE2dlA4ZzJhTWplRWh3eFR3cVFhb3dRb1BOd0NlQ2lyM1dCUlRmMHYwZGFSczVqY1daMEpsU0V1WUZNdjU0Y0ZVdElDeWpPcWd6WXRBREo5WWRmcnBScG5XaEkwYmdiMGFRWVhxdlFKeXdLVjFZQUtvdkcyLUl5REgtWWRzVWtWUXM5VHBBc0htXzlRUWEyTTVLYnJTS05hWWExQURsUGh3QVozRmFzaHNkcmFUbHdMMGsxNkRhNFptQmlUaGZSZVA4eGotZURJSEdwVXBZOWtsdFg2cDMxbVc2aEZNSXloTUttbE9LUGlGYTh1Skk4djdZOFZ3Y0YwT3dnREdtekc1T2Rra0RneHdfZnBvRGNZdFJmQ0NkSzNEcllHTTRGSGNSZHRaTXg5RFNnWWd3b0VsZllFT0xqa3p3TnQ3LTg3TXhNemFCclo1a3hIcklydVRKMFg0dkE?oc=5",
       "title": "أميركا تفرض عقوبات على شركات وأفراد في الهند وتركيا لدعمهم إيران",
       "en": "America imposes sanctions on companies and individuals in India and Turkey for supporting Iran",
       "outlet": "العربية",
       "published": "2026-11-04T17:39:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CO",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWWRJLUpwUEVxYm0wdUZBZU1PSzd0WUdQeUhRaWtqNkVuUzlpTlN6QTl2Qy16bzIwcWVQTzRSc2psdWVxUHdlQzg3eGZDVk9FWHgweEtRNm9NRlZadjRGQ0FBRUhXeGY3Qk5oNm0zZE5qNk90eXRtS1FuTVJJSE1CMm1xYlN4My0yMXBHMWNR?oc=5",
-      "title": "Qué podría significar el revés de Trump en las elecciones intermedias para Irán, Israel y Ucrania",
-      "en": "What Trump's setback in the midterm elections could mean for Iran, Israel and Ukraine",
-      "outlet": "CNN en Español",
-      "published": "2026-11-04T17:25:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY3FaMVR5VXdUMlRXYlZvQlN5Mmk5b2lhWW1xSlUxekw1RC1vYUkzLVU0MnNfNDVqUEtUd0Y4Z1o1TjdRZndiSmZHV3pEM19KWnBWZlQ5V1M4X0luNnFoVnd5TTJjczJ4VzRCR3VHTERIRmZmT3dSc2NUT2xoWk1URXd5dVNoLTFzWXNGMU00eDZJdlR0Smc3WThDazJCbk1KaE5hS3ZZSGdKbUVyUlhDekRUOVo?oc=5",
-      "title": "Iran Says Handed Trump \"Political Defeat\" In Washington After Midterms Rout",
-      "en": "Iran Says Handed Trump \"Political Defeat\" In Washington After Midterms Rout",
-      "outlet": "NDTV",
-      "published": "2026-11-04T17:20:30.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TH",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oYXk1ZzBISzRMX1ROc21xQUU5VGZidDVHTkhYTFZwT1VDU1FmRV8wemdMT1UxVUZhV3EtQnBDSFJSWlZjRlpIaW5USjJOTkdrQnozMUVYVjQtVEU?oc=5",
-      "title": "รองประธานาธิบดีสหรัฐฯ ยอมรับ สงครามอิหร่าน ทำรีพับลิกันแพ้เลือกตั้งยับ",
-      "en": "US Vice President admits Iran war causes Republicans heavy election defeat",
-      "outlet": "Thairath.co.th",
-      "published": "2026-11-04T17:14:12.000Z",
       "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hTDBEcHpVa2F0a1dMSTVtU21YYlNPdGhENmtHOFhzZnhhcWFNWlZhTjJyRVV2Zkt2VVJtT1hWN1QtVjBRdk11RC1pN21NNGIwdXFYUlFXQmxXa3dYNnZYdEVSOUxqVXpnWFlj?oc=5",
-      "title": "이란 \"IMO 해상안보 보고서 편향됐다\"…美 해상봉쇄 반영 촉구",
-      "en": "Iran says IMO maritime security report is biased... urges reflection of US naval blockade",
-      "outlet": "해사신문",
-      "published": "2026-11-04T17:09:29.000Z",
-      "outlets": 5,
       "trending": false
     },
     {
@@ -699,6 +769,16 @@
       "en": "Trump's deputy admits: the Iran war is the reason for our defeat in the Congressional elections",
       "outlet": "Anadolu Ajansı",
       "published": "2026-11-04T17:04:36.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BR",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOMDZITUljYUltUFNmNDJBVTZubGlycG9KRGNzaG4xUDdOaFVRQTdjTlZ6VzA1LWkycDBWa1E2Rkh3c1ZpMnN6dWk1SS1BenpKQ1k2MU9CM0E2dlhfY0dSQmlsTko2ZXZJbGkxNTVfY1lHQnI4NmtCNXYxV3A4TDczTHpPLVE5RUVKQmZRN19PUmo3ZENVWUpsVkFBVks4TFF5NVJ0dEtHU2xvN19fUHBncEsxQmVwYllfZUc5MDQ2NTM5Vk1TWlU1WXNUTV9wdzgyRUFWMjQ5QdIB5gFBVV95cUxPOHA2ZGljUTFCMEg0Wk1iZy1yTEJVeGczcWdfVW9vTVZJeVd1ZWlEd0toeWFvZF9sdWE5cUFPMWh5VjlZbkhBNjdzRHN1Xy1FbGlFcUZTaHRTLUdGbkZyNVhDZm9mQVNkLXplNGpUTV9nSHc0SUZlOGdHOVhwVjJTOGtHSGtSVEVCbEVEcEJ2XzFHcGFMR1JBUU1HR0dzMTRLeFhnLVp5NEpjQV9jM3U0UWNkQVIzT0oxRWtJeEhpX2JQLW1CQ2JkbzdNeGktTHpoRGlnME50S1pZdjJGUzc3QnJMSnVyZw?oc=5",
+      "title": "Após derrota de partido de Trump nas eleições, Irã descarta mudança na política americana",
+      "en": "After Trump's party loses elections, Iran rules out change in American policy",
+      "outlet": "G1",
+      "published": "2026-11-04T17:04:05.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -723,22 +803,12 @@
       "trending": false
     },
     {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNc25JNUZ5YVBuY2E2ci1MWUV4SVk3U0FZTFp5RWd3VFBCbjJDTUNCUjhzc1h6N1ZoVERlUVZobEM2M1ZDczkwZTVmUS01eXloeDAwLXBOQktMOXdxVTRTM01lMHhaMGV5Q2ZBc2tlQ1dNZjA2bUpFbHBYcHpHLWJQTnYzaHhqQjVuSGdReWttMWVGdGxLdmFfZjlKdFFmZU92SDJoeklMRnRVLTZXT1FBWg?oc=5",
-      "title": "Viesnīcas, ko izmanto F1 un 'MotoGP' komandas, iekļautas Irānas potenciālo mērķu sarakstā",
-      "en": "Hotels used by F1 and 'MotoGP' teams included on Iran's list of potential targets",
-      "outlet": "f1.lv",
-      "published": "2026-11-04T16:18:28.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMioANBVV95cUxORFhScnpzQWw3bXJZam9SZnNhOEVaQUJscjVDcUo1OFBBWUdnMU5Wcmh6V0V2Y1lQam9KX2cxRXZOVmlYSjhRQ3pQd2xTeVF4bXA2c1RqdlIyRS1WbXo5eUR1NDM2VEttcnZwWE9BTkRZYlZEUGJyUlcwVExVamhjbzVmcXlXZkJFTDc4cW9hQ3RaLWtoSEQzUEpTRDJzV3Z1M2NpeExlS3lQR1dlQzFmUjhQZ1BTQ3pGQTFGR1FsaVZscGM1MTY0T0FJa1pRbVJhMHV1VE1hbUVzeWp6UXVERnFaZGdwTWNtSjBnQlAxWGprN3pJZFpzSzU4dEVkaXN1N0pkQzlKRmZwdEYxdjNzejdRbTdzY2RPN1lZY1NSR2pua09aek9ySmIxMDRfcmpCRGpUdmtMNE9kNFVrR19UN21ISUlIeDFhUHJYeVV5anUyZ3RxREttVFNUZG1Vczl2UEQ3M2Q4QUR1NEF5YldFd2VaNWk0ZHhiMmYxclFIbWQzRkNIRG9EV0hjY2VheVdQWmUySWtab25SU3p4UURqMNIBpgNBVV95cUxPU2xoU2xTLTVaRkNMNmxaYW15dFJLeGFFdUwyWXNKVmVUbXFkSm0yRWRPLTIzRS1BZlZ4N3EwMzZtOGJ6eGtSdWpRRlR4dWNDb3FaMVVGWndSNjlwNTFEYjkxWmlOVjJGZGl2LVN3NThtLVMxbnFyZTkxV1UyVFZPMzhMWW03TUJfTGIwVkV1NjJvTTdNdld5clNHQUZTeUdIVk94dENnSUM3cmVMNDBOYUIyTTBfQkpENDlGbUl5R01sbnpRSnpuQW1BakpIUHd3RDhJUTE1bzBZMFg2VFh0OVZqb2dzQkxnQ3gxOUwyeml2b3ZrZkhVMTl6SEJ4am9Eb3BabjkxNEpoV25vT0g4eU0zSjlBOWo4SDhHeWxjS1lyZk1xTE0tOWFZT3N4b3MwR0dxdWVOUVM1aXN1YUphWEN3QVg1WVZyeTJYbGxkb0F2NHdnVFNBUUlpQVZOT2ZWOFQzVVBHZHhyUzVidTkxWjVQaHJmMThXbm5WMDE1WTZFb0FPd0FFaW9PVlhGWTY2aFhLc1prTTFQNWdvaVI1bXVUOUluZw?oc=5",
-      "title": "قاآني: فصائل المقاومة بدأت تنفيذ توجيهات خامنئي",
-      "en": "Qaani: Resistance factions have begun implementing Khamenei's directives",
-      "outlet": "المدن",
-      "published": "2026-11-04T16:07:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiywVBVV95cUxNTVdXYUtFVEp3QVdFbVgtc1FuNFJXcEdIeDMwTXBBNHB5Qm1jcS1CWEZxblJScmx2WmQ3OFVzX0g2MTN3WEVxNE5KRm9oQVlxUHBVTGdPOEVPUktjdEJMTFRBVVZYdFdCcG1vRGhxUkdzQ0FaY1FXUFRwbHhZZHBBN2VJOTh5Y2QxMFdpMXRMeTNwQ1B5cjdqeEVpdUZNTXNHM1BLdEhtaVAwbXUwa0RuZUlnWFVxTmdXTkNObk9mbERLYjYxRkh2WVNNNGxTYXhnT1o2V1FUNHRILXl5U2RRekRzTmhrYkptRzNyaFFOT2lNT0Nzakp3V0xkMWZtY09iRnh0N1ZCUVBZa2prNG0xdjZtbXQ5R1hJVUpsNW9sTWt1QURyUGdKMUFoWlFkUVdzWG52WWRfMTNTOEV6TGx4NmpMb21zSmhFdnRCNEFkSjRUZENqbENXbzhHb19iVHBQbXpKN1o3YkNoRk9abzFOR09wX21VWlZHWjhLV0toRFpBY2lrWW84MUdRVVRaMkZKaFl5WjgxVVBISUp5MUdLTnJRUUtWS0M3X0xaaWNsd0dPRmFkY1RGemktbFh3dHBzdXdFZGpYSzJQWW1vRF9jV3RObFU1eVRZLWtRVXdlZ3dOZFJGY3VwYlhmUy1QMWxqdlg4R2NseXBlb0Q5WlU3N25mYXpvWV81Z0FBVFMwWERKTkpXdGVNdk8tZjVTWnl1d0Nfa19MUHRHa08wclhjZVAxRGZjWlY2a29udHBwczVSRUdqRW5fS2ZPRl96RkNKMmdLYTRUcks2UzhNZWM1V2x2M3dTaDJuQmtoS0piMmMyNnJsRGowT0kwVFppeVkteElxN2dYXzQyaUtfeUx2MXJlcEFoR21qRHhRVUhCdF8wY1VMS3NsRU5qa2sxMFJzblA2MzNVTC15dFR2NmVzWGU4MGEwcDh5Y3JV?oc=5",
+      "title": "بعد هزيمة حزب ترامب انتخابيا: خامنئي يحذر من حرب أوسع إذا تجددت الضربات على إيران",
+      "en": "After Trump's party's electoral defeat: Khamenei warns of a wider war if strikes on Iran are renewed",
+      "outlet": "مونت كارلو الدولية",
+      "published": "2026-11-04T16:02:58.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -749,46 +819,6 @@
       "en": "JD Vance Says Iran War \"Reason\" Why Republicans Lost US Midterm Elections",
       "outlet": "NDTV",
       "published": "2026-11-04T16:02:21.000Z",
-      "outlets": 6,
-      "trending": false
-    },
-    {
-      "from": "SI",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWGlMY090ODVJSTFUOXN6TWVIQ05vd1FtRmVKbjVCYW5tbEhCZ0RGZEtCOUhOb0NEMVZWRnFPbnp3dVRMelZKQmpKVmtOc0pwbEpKQXFLTlZSOWlFeG5aQVhoM2V6ajhTNzJzTHAxVE04Z1ZZdWkxSU4wSHRxbjdvaXFWSVh3OEVHYkw3ZFhuVEdIV0ViY2NMNmx0TlM3NDhYcGF0ZHZwN2JBb2s?oc=5",
-      "title": "Iran zagrozil Evropi: \"Naše rakete bodo poletele proti Italiji in Nemčiji\"",
-      "en": "Iran threatens Europe: \"Our missiles will fly towards Italy and Germany\"",
-      "outlet": "Žurnal24",
-      "published": "2026-11-04T15:39:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CH",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQnpvbGtPY19RVURhaTB6bHdMcUV2aVI4Vi1NQ2dTalgwV2RweFNjczNIWENIbzJMNlhJLURBelRNODRfaDg5b2dZcDY2Q25zRDJOX1hURktWdGVhdTBCanRYN1I4LWNlMDRoQlpEbnN0S2tyUTJfcDN1MDBBMC1ETEI5Y21nc0U1cUpSU1UwcTlURmFDcExGX2dRSG9yTzBrdDI2VFVVOXczc0p2Z0VWQWgxMXZaeFA5SVE2MXhxWERPa0s4Yjh1S0R0WQ?oc=5",
-      "title": "Iran: Warum die Insel Qeschm für die USA ein wichtiges Ziel ist",
-      "en": "Iran: Why the island of Qeshm is an important target for the USA",
-      "outlet": "SRF",
-      "published": "2026-11-04T15:38:22.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "MY",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcmFRNHlIQ2JkMWpjdGpnNUdLbFRDNkRZNzhhdktKRDNWREQwNllRN1g1aVAwZ1E0QWZBRFpLU05CVTdyQ0dncnB2OXNaSFItNnpoZ0xLVUJyeE5hbE5KYWNYTG0xay1IVmgxeXRSZ0FpS1FyRjRxcWJ4dUQ5VU9DNjZ2TVJheXBmU21tM3dIRzIya3pLSDg3bElFWUg5dEplSC1pSGJXcExJNm9BX1duSmZQY9IBXEFVX3lxTE1rWHFSNUM2VThwS2RUNWVIVTlUQjJFLWtJYnhpTkFRUXQycS1EUk1qS1lfTTVFUnVpUWpQVWRVdmN4bmtJemVkY2haLUlUVXdhVGNuYXdHMXVQNTl4?oc=5",
-      "title": "Kekalahan Trump dan Bibi: Implikasi politik Asia Barat | Sinar Harian",
-      "en": "Defeat of Trump and Bibi: Political implications for West Asia | Sinar Harian",
-      "outlet": "Sinar Harian",
-      "published": "2026-11-04T15:36:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1DYWVXeHF4OElPalM2MW50VHRMZ3Zab0llS1RLSjB4WUF0R3pTNG5ReGtkNThGclhCSkZiWVE1aHdDa0Jza29ZTjdlN0dodkJ2VVNr?oc=5",
-      "title": "האיראנים לועגים לטראמפ: \"הבסנו אותו\"",
-      "en": "The Iranians mock Trump: \"We defeated him\"",
-      "outlet": "הידברות",
-      "published": "2026-11-04T15:30:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -803,32 +833,12 @@
       "trending": false
     },
     {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRjYxOW1sTk0wd3k2SnhDTmVUTWpBX2ZQMDdEZThxTEpIQVNzU2xWbmF3R1Z3dURaTk9McmZnNFJDMnZTS2xYVDhaYy1yOXRYUnBQUWs1ZENvc2N2NE4xdmhTdWlVZEN6a1h2QkNqZHVQQVB4aU1xWHpRb2pvRF9zYzRCRkxZRW1DREFMZnZKUFZJQlpTb2ljR3pEWXMwdmlsUUJfRlNOSkdTRVlaMy1RR0I1T2R6bXF2N3FNQkNjaUZJSHlq?oc=5",
-      "title": "أول تعليق من مرشد إيران على نتائج انتخابات التجديد النصفي الأمريكية.. ماذا قال؟",
-      "en": "First comment from Iran's supreme leader on the US midterm election results... what did he say?",
-      "outlet": "CNN Arabic",
-      "published": "2026-11-04T12:43:58.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZjhheU5sVW00b1lGdnFFSTRaWHJ3cVVXaG9tTTJQU0dVMUNKZGVxSEE2NFl0MFl3UUhOaDM5dWtQQlFGVWxpTXJFM2xtZXhUME1jSDVjNW9kWXVFeVdHRnhNaE43T2VqbTlQUzlBQklxSmZpUHItVmZwMjFHUjAxRERJN0ZxLXNxYTBRZmlhTkw5OWFINTZKNFNHTQ?oc=5",
-      "title": "Po skaudaus smūgio Trumpui – Irano pareiškimas",
-      "en": "After a painful blow to Trump, a statement from Iran",
-      "outlet": "Delfi",
-      "published": "2026-11-04T12:41:38.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "EG",
-      "url": "https://news.google.com/rss/articles/CBMilgNBVV95cUxQRUd6NkFJa3ViOEZVRV9rcllBc2VSelg3b0k5WWZobl9FeHg5Zlhwd2c3QVRVSEY4bzEwNU5HRm0xOF9yalZCbVQycE15V0NIX3VsYjZSZTNRS2duLVlWOFBlVGJ3eXVyRWt3OEJTV1U1YTcweXliMFpLejVBS3Awb2xRRXNMTW5jaTJSSzM5ejlDSDVnZFpNbHVsN3UyU2ZhR1NvdWFubEIyMUhoOTh6MkJSNUNldlRPdXF4OWc2U0lIVU51TUxkSHUwcEVyanl5MzFncmNNZnNETjRZMUlVNnAwRW51ZzR3dXBSR0JBTFo5WjVEVU1DRlF6OHp4QnJXTXcwcjVTbDBWS0kxTWtZRVNOOUEtZzhwUkVBRmhhbzhTcnRyNEtlOVZ3R3R1UDVxYUgycnJrTl8xanVGR3ZhekJvTEJlZS1iY25qR3VxWXBkeTlxUW5HaHNDVmQwSExPZGV3Nk9odXBfLXEtR3ZfN1VCNDNKSkNvQ0NZU3BjQTBQanZyWjMzUHhhMDVwTHdDSDdxRUNB0gGbA0FVX3lxTE1aZ2hNcHZGWmJwc2RUV2lTYmE4dzRXdVhCelJ0VUN5NWgtZXRYRGpOTWZfQi0xTjhiMWZkbEw3eGVkTVFDd04zbHBDM3lyaXRJdFpkNkRaaG43RXJsSDdzcmZGSXhGelFKQUxQRTJxd0NuUEUzbkNQLVRpN1o2X25tNnRqN1ptbkdFX0NuSE55WnhpZ2xfOXJ1cVBWa3Q5R2gzd3huTS1JTWN0TzM0eHA0c3Q3WlNEWTdLNkFFS1ZRSWI3RjRHS3Izai0wOHMxNEl3UzRaQjB3b1d1SUZRMU16OTNuTjhLZkdFa2x6WEt6QXpMNGpVeUxkdTk1MVdiQWZBVmdCM2ctYWZOZXFKSVRiV1VWTFBSZEl6S19uNC1mdVFGcmhjbVRna3kzaXFvdjBpa1JfSUNsMEVjU2ctLWZqYUJyR1VIbF9VdGZKV1FPam5OLUNxdlRNZHB0WnJXeTkzT1otbWZreFptMWxobGtkaGoxUGREUGFDMExTcjV0Z2F1S2RNRF9GRzl2TEJTVFJhSm1mSUdEWjYwZw?oc=5",
-      "title": "بعد نتائج الكونغرس.. قاليباف يعلق على تصويت الأميركيين",
-      "en": "After the Congress results, Ghalibaf comments on the American vote",
-      "outlet": "سكاي نيوز عربية",
-      "published": "2026-11-04T12:29:25.000Z",
+      "from": "TR",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5qNThoU0pfb2VwSVFBTzNPRlg3c2h2aXNvM3BMSFE3bzdQcHgzemx3QjNqUlBsZy1VSTBxdjZlcVo5alhKQS10YmswSDM4UHk3bnM4Ykdob2dIQWlXbVE?oc=5",
+      "title": "Hamaney'den ara seçim mesajı: ABD'nin politikası değişir sananlar yanılır",
+      "en": "Khamenei's message on the midterm elections: Those who think US policy will change are mistaken",
+      "outlet": "BBC",
+      "published": "2026-11-04T12:42:14.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -843,42 +853,22 @@
       "trending": false
     },
     {
-      "from": "BD",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcW1TSWlGMjBVQ1pMUEd5VUxjbnpQdlgxSWloMFFPRnNNUGJ6LUJZUnpSdWRuQ3pCNEZIWkdERU5wemRhWGNNcGFlUHRlX2dXRnAtOXhZQnJ1WFVXQU9ScXlvRFpGaFlMNVlBNDVsWWNKeEJmWURLYURsOFB5cWY5Z0VuQnJ1SUgtYmR4YnFSNmZocVgxMk5FOE81M1lBM1pJNlRqbHVpZjJhUjdvWmhsaXNlQVBxUkRWemxtQlRKNHhoT1liSHZZ0gHMAUFVX3lxTE8zXzVReGdVbkpyTGpzRzBIU1JYM29nVjFtVjY0Qmluc0ZQS3BTVzhqc0NkQlFIOFhPSjl3TW9JRTdlREdMdjBFZWUweUt6bnRLTThHNHVjZ21xOVVNa1hNSzYyTjJ0bTFXMG1ULUpqRG1tNVRyRThNQmlFbnZ3VGp0UFY3NjJzS3JMdk1TWmt4UFV0TkY0eGFGZkNURVpZTFFfeldaMjR6WXZJYk00c19mcU81V0puRlo1SGNUdEUzMUxNOVVLZEFHV0U1Sg?oc=5",
-      "title": "ট্রাম্প-ইরান ‘এক সুর’! মধ্যবর্তী নির্বাচনে রিপাবলিকানদের বিপর্যয়ের কারণ নিয়ে মতান্তর নেই যুযুধান দুই পক্ষের",
-      "en": "Trump and Iran 'in one voice'! Both warring sides agree on reasons for Republican defeat in midterm elections",
-      "outlet": "Anandabazar Patrika",
-      "published": "2026-11-04T11:08:07.000Z",
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNWZlR3EyMGg0eHFwaVpOOThHX3FTNTJvM2paY29rSTkxeXNTclhqNDA5eDRFOGhrNndhQWg3WmxRRkZLVE9zR0R1OS1HRktfQmZzMlRyOHppeGJTQllYOENCYnZMWUw0TUU0Y2l2MEFwSHQ5VkRWamNURmNKVlJmWXBnbGdZVy12YnJwVE9lcjAzY2pqNE1TNnFiX25WV093amVKMjcxX19CVGdTa1RiR21fQnVvRU840gG-AUFVX3lxTE5VaEpFQ05Rb2RPVnJMamV1Sm9yV0JpS1ljaUxaZm41aU90Tm9pLTA5WVBRTC04OXNDYVRqTER0S3lNSmh1Smh6LXBFTU9nQkpDMzZCR25tbi11OG1HSzFmci16ZU5iWFdQdXdKQ015aWJGbjZkQjBrVTJ4dXJCZHlIcXU2akgzVkhuQk94ZWtuUHlTTVozX0dWaUt2OHBPLVdiYXNWWHREQ1VPSU1PTHFWZF9yX0xHejllRUQxMHc?oc=5",
+      "title": "PRVA REAKCIJA IRANA: Oglasio se Hamnei posle tektonskih promena u američkom Kongresu",
+      "en": "FIRST REACTION FROM IRAN: Khamenei speaks out after tectonic changes in the US Congress",
+      "outlet": "Novosti",
+      "published": "2026-11-04T11:45:00.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "MY",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNREpPbUwyNzhlZjFyanBuTkJHMkYtdk95amRWU0pCY0Nzdnpmby01Q3l4Tzk0cTYzVTh1dndPZlVyeU5pM0FiREpGT21QdE5kREZUMzNTRUlua3h3ZVF5eVAxR1dWUkF6WWdwRzQzSVp4enozRVcxeFRmanlFTW1ySE9vUFpMNHo0V1VhVjlnQ053UEVPLUF3?oc=5",
-      "title": "Iran anggap rakyat AS mengundi ‘menolak perang’",
-      "en": "Iran considers American people voting to 'reject war'",
-      "outlet": "Utusan Malaysia",
-      "published": "2026-11-04T10:53:00.000Z",
-      "outlets": 2,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jSUszT1RoVFFPRHBsa0RrbGlRQURFclRUbDRQc3V1cS1HY3ExOEZKTU1iRFFvLUkyRGRXRFFBTElvM25NUHlURkd4YkV0ZFJpQm9LWGJqaTlTMEnSAWBBVV95cUxQQ2I3dWZkUlhVb29RN25zWFNMMy0weVhvWjJpTnd2Z2Z4UWkzSjgxQkc2MUpQdnozbnl1NUtYa2pQUG1uUk9sNHlEdkxqblJLWXRiNmZkVVlidDZObXZDbjg?oc=5",
-      "title": "이란 \"걸프국, 미국의 이란 공격에 영토 내주면 보복 확대\"",
-      "en": "Iran: \"If Gulf states give territory for US attacks on Iran, retaliation will expand\"",
-      "outlet": "연합뉴스",
-      "published": "2026-11-04T10:31:19.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NG",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVWZHWVdZbE1LamtPRUYwU3dhVUtaWjZDanhveVJIa2ZCSFM5UjRyS1VfYUtfNi1nQVZ5eDN6aHBoUHR1S19yZEw1YnU4QXRWempvUFFsc0g4dHZsZ3U2TjlOZl8yX1BNcjFYNzg1V1Q4bHRJbVp1UVZVWWJRUm5GMEg0bl8?oc=5",
-      "title": "Trump blames Iran as Democrats sweep midterm elections",
-      "en": "Trump blames Iran as Democrats sweep midterm elections",
-      "outlet": "Daily Trust",
-      "published": "2026-11-04T10:30:11.000Z",
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1FSS1pTTlPVUhXdmJuSXJMb1UzN1pKa29TM3MzZjBwUTIxR3FZOUpaU2wtRjhuZk8wNGdrVWlIMDdIZXRQdUd3?oc=5",
+      "title": "كونغرس ديمقراطي في زمن حرب إيران.. ماذا يعني للخليج؟",
+      "en": "Democratic Congress in time of war with Iran... what does it mean for the Gulf?",
+      "outlet": "صحيفة سبق الإلكترونية",
+      "published": "2026-11-04T11:29:33.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -889,87 +879,57 @@
       "en": "Bogomil Ferfila after Trump's defeat: \"Iranian missiles can also reach Slovenia\"",
       "outlet": "Slovenske novice",
       "published": "2026-11-04T10:23:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNa1dfZzNUZlZfZ3ZlUGFvREp0NEFEQU41QzZqMmZXVGlYXzIxM29jQi1DQkN3akIzVFlhb2dVTWVjS0xENERVOVZmaXFPTG42Vk5GTDRESjVnUFczMEZHcGo2ME1UY1pSMGtscFM4OWVSVElDLWVMZjMyNU1OekFkcDdn?oc=5",
+      "title": "טרמאפ: אולי אסיים את המלאכה באיראן, אולי לא",
+      "en": "Trump: maybe I will finish the job in Iran, maybe not",
+      "outlet": "כאן 11",
+      "published": "2026-11-04T09:21:46.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IN",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUVFmWUlqa1VPdFo2a2RTZllRRkVaWXlVSU9jNHNZWGZpLVRVWVR2c2JuUHQ5MGNfNlhBYVhRTFlqSUtPb3J2Y2RBbTMySmFTMXNVZm81LWVhOUpqQk1XQlhuaFU3S2VGdDBldlZTYkZkYUNTYVRqV1lRR0U5blh4TEY1V0h1MVRacjVrOERqNDZpWTFic0xwZGxZbmlSUFXSAacBQVVfeXFMTU1iT21zOWdJeGpzMkE5SHRIVVJnc2pyRmVvRnRwQ1EzUDBBRVBPQnV4aXluNEJJbkFFaTJzV2kzS3hmcTFqOTlMOEdQTVhBQnZlU09ueUhPM1Y3XzUxVGU5WkZ2NWhEdVktZFhSbVRjTjYzcS1fcV9YMkZBYnhsVFRQUThPZ0pIU3pNMGxVbjVCNndsNDRRRnNva3ItQ0t2SEdvYm1aTTQ?oc=5",
+      "title": "'Iran Part Of It': Trump Lists Reasons For Republican Losses",
+      "en": "'Iran Part Of It': Trump Lists Reasons For Republican Losses",
+      "outlet": "NDTV",
+      "published": "2026-11-04T07:33:25.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaTRwUWFWVHZTYVpfQ0VBMmJ5aE8tU0JJOXJYbEtOMjlnTjZsTGJGNW5oMUt1aEF0ZkxJMWdJTlE0QloyQXAyazZvR0dLMzFSNnhnXzM5QjhSZmNzaEFjeFRlek11X3dSaV9FV0tVUGJYMW1XRERmckgxelM2ejl5ZGFVaGQzNVFOYzQweTU1cEVxWjZDUVp1eDBlQVpLdXNBZXRyR3gwbWR3UQ?oc=5",
+      "title": "Iranas sureagavo į Trumpo nesėkmę: „Amerikiečiai karui tarė ne“",
+      "en": "Iran reacts to Trump's failure: \"Americans said no to war\"",
+      "outlet": "tv3.lt",
+      "published": "2026-11-04T06:11:00.000Z",
       "outlets": 4,
       "trending": false
     },
     {
-      "from": "BD",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9FSF8yQTRxRHBodDlFa0hMMWExVWpMVjdNR2hzeWdkNzV0eDJIS1VmbDVUWUxUUW50Rm1pd2wydlJvZnhjaDVuaG5YWmN6MGRvaDFRM3RHeFl4NF9KYVRn0gFkQVVfeXFMTll6NnZpNkFTU2ExelpaOWE5SXYtQ1V3WkJqbDAwbkttZ3Q0OTVZQXM4V3loaTA2a3dkbV9rRDFpRW9Mc2dIMjFkMlVXRGRoeUJwbERGeS1nbXZBYl8tYTByT3ZGag?oc=5",
-      "title": "পারমাণবিক হামলা ও তেজস্ক্রিয়তা নিয়ে কেন নাগরিকদের সতর্ক করল ইরান?",
-      "en": "Why Iran warned citizens about nuclear attacks and radioactivity?",
-      "outlet": "BBC",
-      "published": "2026-11-04T10:16:35.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ0NZTGJFM3RzR0prM2hLMF9LdGltT3BtVndoWXk1ckdJemVSZGZ4MVY2NDRDbjlLLXRndEhLSEk2aHlWX0NuQ3NnVlhOSVhlQm9IMXpDVURhZlVraTIzb3A3Z3Fka2Y3azVFNnlDbTg4dlNyU3poMzBSbU54M3hCZ2JnZVlVOF9DdV9uTHRWSENGSE1WWm5JNVRWa1l3a0ZkRktPcU0yWjNkdVJpTThxaTVoMUE?oc=5",
-      "title": "\"مستعدون للتحرك إذا لزم الأمر\".. ترامب: لا خطط وشيكة لضرب إيران",
-      "en": "\"Ready to move if necessary\"... Trump: no imminent plans to strike Iran",
-      "outlet": "Euronews.com",
-      "published": "2026-11-04T08:44:35.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE51c3Q4c3A3a2wycDQzbldrZkh5Mnc5anBMdzFSb3lPOEptOWNQUDNJNktfNTlvZTZOZFJLVDZXRFJfUUdzVmtQNUJHRTFHSHFPTzZKQ3VIUQ?oc=5",
-      "title": "Юрий Кнутов: «Новый удар по Ирану может привести к глобальному экономическому кризису»",
-      "en": "Yury Knutov: \"A new strike on Iran may lead to a global economic crisis\"",
-      "outlet": "ФОНТАНКА.ру",
-      "published": "2026-11-04T07:59:38.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TH",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBlWHBpVmpSWXVOTWpLNXZwb09McTZBRU94TUE5U2hzTDFDQ1hRMFdPc1lfNlpUQkpZZ1loajhvWFhURmN1UzhvbG5HNWpycXM3WERfRzhGd08?oc=5",
-      "title": "หัวหน้าผู้เจรจาของอิหร่านกล่าวว่าชาวอเมริกันลงคะแนนเสียง 'ไม่เห็นด้วยกับสงคราม'",
-      "en": "Iran's chief negotiator says Americans voted 'against war'",
-      "outlet": "Thaipost.net",
-      "published": "2026-11-04T06:14:33.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TR",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdmJRV2dxaldqOFRTUEZuY0tseWFoUVZiTXAtVWdHU0JxMzNKZDVGRzdRYTJGcU1NRzFreElCdUItS3BnR3RsdER5V2JNc091OGJDM3hjbXR3MDJObERwbmFHc1dZak9VTUJIM1BjT2xTWmRPZ1Rpd3BqOGwtcTk5RUNEVmZzSE9NX3lEYlQ2eC1XMkdaN1Ew?oc=5",
-      "title": "İran'dan ABD'deki seçim sonuçlarına ilk yanıt",
-      "en": "Iran's first response to the election results in the US",
-      "outlet": "TRT Haber",
-      "published": "2026-11-04T05:55:00.000Z",
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMiyANBVV95cUxQOUZ2aVViMHp5UzVDSW9GVEQyMHlIRTYzYVo0WXY0Slo5NkcyX2ZaOWJvYm9ieS1HZlpyMURFcUFPTUd0VUQ3eTNvbTdlVUdONHA1bjBtaE1XelA4NWJXdVJtSEpDcTNERnJnemcyd2xLQ1BaTm1wcHRia045YjdYYTluQVVQdzE0c0NmR1dBQkZSRW5UR0ttWkh1dEpsRHhCbWRQTWRXS3Ftc0oxYzV5bHVIRWFkb1VJNmEwM3IzT1ZyOXV5VU1TRVg4bWRzSHdsdlowc3pjWG82aEdRMTlYUWtqNnNCMFB3RHNfeDc2cEtmV0NOSGZ1Mkdad3k2SHZUc3VGTUlSZXRCLVlNVWpqMnlzejY5UWctVUx1QUF6aHFmOTA3YmlieVM4OHR5Z0RJNzhrVE0xajczQ3BWYmpsM0trTG51LWthZTk0Y3hCRTZheXlqRUhrbk5YOVVDTXZhM2o1aW1CUlBMMVNiaXAtNDlQS0cyaGI0eGlndnZFMFVObGo2dGdOdUJ6SlMycDFJaXcyTm5oU085ZWppNEVFdkhNSWg3cW45dHR0TTkxbnhKWDBCNEkwTE5wbTNKZGtza19GNWFRYXLSAc4DQVVfeXFMT1dCZ3VxTjdtT19oVmxMc3VhbGhCYnpBVTg1UXpwVVVnVkJzYXBwMEF4QnVZejZxaGx0YnF6ZW1PQWlpTDdEOGRFSFJQaWMxbFlFbXZMTjNYckgtcG5UYUxwN1dsY0pkUG1tLS1VYUxEazQ2YnA1M2VyQzlvMUpHTTFfMURFSEJNaG5uQ3o1ME1GaTBLVDhIaDJ2LU5za19LSXNYM0Y3Y3VEZ1NQNlBwcjBEaUVaRHMwS0gyVWRRSzlxT09pc2pvcUltWjFwYkRiTjlwQmlmOUFQc2VHZmJEdVdiWkxSaGRObThmQ0FFVUp6eEkzY3BxZUJvbFltd1QtQlRfM014eFpuSldPRHhjbk54R29XaHZ6ZGNlSFp5UDJxaXlmSEx5d0JCMHFYR2dUTUd0NVBHRDR3ZzhYX1dQblV0dmdVdzA2XzZBMmJfVzFDQkZGVGU3R0dtTEhNbENFVXE2V3FTVkFEY2xkZ2J1MW5TdkpES3ZFSTg5bEZTX0xyMnRWcTA4bjl1NjJqVzNOakI5MDVjNkxIOF82cGotenF6a2V6UTVuZG9UQXN5OWplQ1JRclNtRTlhUkVZMkY5ekN1bVowbE4wakcwZnpB?oc=5",
+      "title": "ترامب لـ فاينانشال تايمز: لا خطة وشيكة لضرب إيران",
+      "en": "Trump to Financial Times: no imminent plan to strike Iran",
+      "outlet": "العربية",
+      "published": "2026-11-04T01:35:00.000Z",
       "outlets": 4,
       "trending": false
     },
     {
-      "from": "ID",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWWV6ZHEtQllSOFI5eGlUbWFkc0d5Zm5HemttbUtYUW9mX0o2cDF6ZVZnQ21LcTE3NFRPTGFINWE2TGhVMnhlWVRlbmRqQWg1YmE0S3ltT3RTU0stTHBtM0t6UnQ5eHR1OGxtd05VQjZpUGFHOFdMVjlRR3l3QlNVN0hZbXUxV3R3ZFNYeVJyOXhreUnSAZgBQVVfeXFMUDNIMkRRRzBwcHFOR1p1RHZDUVAwYXBqOFhIc09XZHprX24zMm9MdGJKdFhWal8zQVd2eV9RU2Vxa29ZMkFYWTZDUU1GV2NmcWNhbk5ITll3TzlSX2FQamNlclptY0JCR29nOVZZVkZoVkR5eFJkLTFmenNheVdMWkR5ZGlxeUh5RHd1X0V2SnRUMjM4Y2tNRng?oc=5",
-      "title": "Iran Negosiasi dengan AS dan Arab Saudi, Apa Agendanya?",
-      "en": "Iran Negotiates with US and Saudi Arabia, What Is the Agenda?",
-      "outlet": "detikNews",
-      "published": "2026-11-04T02:54:10.000Z",
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMivgRBVV95cUxNdTM5SmxNUXViRXFSRlJKQzdiVlhfVFdlLXBuVXBXck1DQlVHRlpFcWpwOVlRSkpJQmE0SXBtaDJPQmxmcEJuVkE4Tk9vN09KbUNoT3hhZ1RJY0w2MlBOcURnNWFvUzhOQWJMWHc0alQzdndKeHdTbGEtV0M2c0w2YkJwTHQtY3FNTVB3UUhhUXJuVHhmRDhBRl9IQUxFMDg4N1NjT0ZBVjFCNUptRzZzREFyS1QyeUw1c1N2VmRtZWNXVUhlS20tUU1Yclktd1hGYU1Nd09MSjNpaDVPVG02TkFKd01IOEZ5VnJGcVRXb0pLNXU4VzBLbW55cVRkNWlMVEhsdFlkaFdqWGJpOUZ3MTlHbjhUSzlsaVdGMUZ1VmcwTFNGbUVvU20zWVRVUWVNdFQ4RjZXZmxNM2tsY3liczR5T0EyZkpuWWd4YWpOWDJRakZBZ1NQNjVZQm9VR294THlwQjFldnJjUU9HR0I2U1hTYVctOUVtUGtRN0JWbmtLV2NUSVpSbDZqYmd0Rm85NGlDSUVSUE5KZ1RzWnF4aktTNDdtS3J4ODlYTTA1N3NabmVzWk0yQjZadjV5YWMtVHlYMjdSdnFKUjBMcVZuanpxNE1iYVo5cjN6NDNWN3EwdjYxYUhLMTg0TUdYNEVzQnZlZE1BQmdzS0ZMMUtUOXMwbFoxd1Q5c1NDb1VvZU1WU1hfTHVvOUlRVzctMkc3dVpTUmRjUzBnTXFueEhlUV9iV0wwWFRqMUdsY2RR0gG4BEFVX3lxTFBGNV92bURHTDZFVnRPaXJ2UWtaYTBQbDNNOTdRZFpyenZlNDRzbG5DQnkxX3BQZmZvYXFoWUFvenQ5N28ydHFPYUxScnplQ1VNemtFNkpVS0J5UW1QZUhWc1JJWnBlcnF6b3JZVEp6TlhfRkdxZm5MdzVRd293MXBYUmw2eU93clE3UTlZVHU0clNjeFRSdzJCcDJpZEM1UzlpMHZVdnBEZC03OW5SQVdlbjV3aTBSWDlENVpKaktvcWV6ODFXOUJialhmMzdseWFkcXpUNXlKcmtkQmV0WXNET3I2bm9qOG5GUGxhZjhPQ0N2Y3lieC1BN09mTGc1VXYySHo2ZktaTjhFaU5jc0RmRmxFb3RXZVMyNDZSaGN5MFlGbm9uZHh6UU1LVmlYNTVtakRPbGZEZlpsTFB1SkNXcHhRNEo3U1BvTTdpb0lDYUdsZ2psQkZOMlF4NHlKMXhXSk1KMi15UzAxbmFpZzI4UHdpckd1N2hzVURnRDc0Q2piQUtxTnVyOU5uU3Myc2VEOTdCdFlPR3JDNGJJZFRrUmFPMEpNNUR3Q0lUdzhvaHRybmpVUEV3czNNdEhOY2hMLW5xMjBrSDR1d21pdnFMd3NaUkZIdzJPRkNUT1h5SG5vcW5lY2VOSkZvRnZreFppZUM5cWUtLTZrVl9PVlo3TmU0RmZ1LU5jMWQyS0pfUlJCNkcwbkxJRUJWNFE5TDNDQjZaVE83eEFFTWw2a2JqdVFFdURRMkU?oc=5",
+      "title": "وزير الخارجية ونظيره الإيراني يبحثان وقف التصعيد وآخر التطورات وجهود التهدئة",
+      "en": "Foreign minister and his Iranian counterpart discuss halting escalation, latest developments and de-escalation efforts",
+      "outlet": "اليوم السابع",
+      "published": "2026-11-03T19:21:00.000Z",
       "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVnRoNXdkSFhJXzhnd3ZxdUpOaURRbEpHNGdGaDRUQWhtZE8zLVM1Q3JfZmt2RFJwSUVidHVZU1NGRTNDdGtTNmh2czBnekUzdVktUVJQQlljOWNhREZpTUxURTViUFJkSmdYQ001LUthNWpleDVPcHBlSWtQTHhIWERVRWZrLWZBTFJnWUxQN1lmNHpqWXg2eXZPY19nRTlvUmZtZUR3R2ZvZw?oc=5",
-      "title": "Tổng thống Mỹ Trump lên tiếng về thông tin sẽ đánh Iran cuối tuần này",
-      "en": "US President Trump comments on reports he will strike Iran this weekend",
-      "outlet": "Báo Tiền Phong",
-      "published": "2026-11-04T02:19:23.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TW",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5zZjlkTndNOFp6WVRwZ3dhcXhQOXU1Rk1sdzdBcXhraFJsaXpiRWRsOGFnd29XTG5yWXMyaTg5eHU4WXR2RGd4SEVFYzllbWtaU0JnVkdkeEVUc0k?oc=5",
-      "title": "伊朗要美明確答覆「7條件」! 川普再次威脅不排除動武伊稱絕不投降| 國際",
-      "en": "Iran demands US clear answer to '7 conditions'! Trump again threatens not ruling out military action; Iran says it will never surrender | International",
-      "outlet": "Newtalk新聞",
-      "published": "2026-11-04T01:51:33.000Z",
-      "outlets": 4,
       "trending": false
     }
   ]
