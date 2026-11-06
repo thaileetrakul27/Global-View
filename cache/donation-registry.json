@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-06T00:03:05.600Z",
+  "updated": "2026-11-06T07:18:29.895Z",
   "fetched": {
-    "societies": "2026-11-06T00:03:05.600Z",
-    "uncr": "2026-11-06T00:03:05.600Z"
+    "societies": "2026-11-06T07:18:29.895Z",
+    "uncr": "2026-11-06T07:18:29.895Z"
   },
   "societies": {
     "AF": {
@@ -2459,41 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "bajacalifornia.cruzrojamexicana.org.mx": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-30T00:20:11.381Z",
-      "chain": [
-        "https://bajacalifornia.cruzrojamexicana.org.mx/"
-      ]
-    },
-    "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Colombia\"",
-      "checked": "2026-10-30T00:20:11.381Z",
-      "chain": [
-        "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/"
-      ],
-      "place": "Colombia",
-      "name": "Oxfam GB",
-      "title": "Oxfam GB | Colombia Earthquake Appeal"
-    },
-    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-30T00:20:11.381Z",
-      "chain": [
-        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1"
-      ]
-    },
-    "redcross.or.ke/drought-emergency-2026": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-10-30T06:23:09.024Z",
-      "chain": [
-        "https://redcross.or.ke/drought-emergency-2026/"
-      ]
-    },
     "local4:usgs-earthquake-us6000u1cf:quenarafoundation.com/en/donation/panama-earthquake-relief": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Panama\"",
@@ -2734,14 +2699,6 @@
         "https://arcs.af/"
       ]
     },
-    "local4:ifrc-flood-8073:hidaya.org/social-welfare/disaster-relief/nepal-flash-flood": {
-      "ok": false,
-      "reason": "asks for Zelle, as scams do",
-      "checked": "2026-11-05T00:08:17.816Z",
-      "chain": [
-        "https://www.hidaya.org/social-welfare/disaster-relief/nepal-flash-flood/"
-      ]
-    },
     "local4:ifrc-flood-8073:childrenofadam.org/all-appeals/nepal-emergency": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Nepal\"",
@@ -2752,15 +2709,6 @@
       "place": "Nepal",
       "name": "Children of Adam",
       "title": "Nepal Flood Appeal 2026 | Donate Now | Children of Adam"
-    },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-05T00:08:17.816Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
     },
     "ayuda.cruzrojacolombiana.org": {
       "ok": true,
@@ -2841,62 +2789,107 @@
     "croixrouge-rdc.org": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-06T00:03:05.600Z",
       "chain": [
         "https://www.croixrouge-rdc.org/"
-      ],
-      "checked": "2026-11-06T00:03:05.600Z"
+      ]
     },
     "honduras.un.org/es": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-06T00:03:05.600Z",
       "chain": [
         "https://honduras.un.org/es"
-      ],
-      "checked": "2026-11-06T00:03:05.600Z"
+      ]
     },
     "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-06T00:03:05.600Z",
       "chain": [
         "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
       ],
-      "blocked": true,
-      "checked": "2026-11-06T00:03:05.600Z"
+      "blocked": true
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-06T00:03:05.600Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-06T00:03:05.600Z"
+      "blocked": true
     },
     "go.ifrc.org/emergencies/8013/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-06T00:03:05.600Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8013/overview"
-      ],
-      "checked": "2026-11-06T00:03:05.600Z"
+      ]
     },
     "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-06T00:03:05.600Z",
       "chain": [
         "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
       ],
-      "blocked": true,
-      "checked": "2026-11-06T00:03:05.600Z"
+      "blocked": true
     },
     "donate.bdrcs.org/blog": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-06T00:03:05.600Z",
       "chain": [
         "https://donate.bdrcs.org/blog/"
       ],
+      "blocked": true
+    },
+    "local4:ifrc-flood-8073:hidaya.org/social-welfare/disaster-relief/nepal-flash-flood": {
+      "ok": false,
+      "reason": "asks for Zelle, as scams do",
+      "chain": [
+        "https://www.hidaya.org/social-welfare/disaster-relief/nepal-flash-flood/"
+      ],
+      "checked": "2026-11-06T07:18:29.895Z"
+    },
+    "ayodonor.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/"
+      ],
       "blocked": true,
-      "checked": "2026-11-06T00:03:05.600Z"
+      "checked": "2026-11-06T07:18:29.895Z"
+    },
+    "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Colombia\"",
+      "chain": [
+        "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/"
+      ],
+      "place": "Colombia",
+      "name": "Oxfam GB",
+      "title": "Oxfam GB | Colombia Earthquake Appeal",
+      "checked": "2026-11-06T07:18:29.895Z"
+    },
+    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1"
+      ],
+      "checked": "2026-11-06T07:18:29.895Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-06T07:18:29.895Z"
     }
   }
 }

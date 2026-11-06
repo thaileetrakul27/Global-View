@@ -384,7 +384,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-05T16:54:03.811Z",
     "directSearched": "2026-11-05T16:54:03.811Z",
     "directSearchVersion": 2
@@ -577,7 +577,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|IN#2d25d059",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-05T16:54:03.811Z",
     "directSearched": "2026-11-05T16:54:03.811Z",
     "directSearchVersion": 2
@@ -680,7 +680,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
@@ -785,10 +785,10 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-06T00:03:05.600Z",
     "directSearched": "2026-11-06T00:03:05.600Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-06T00:03:05.600Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-05T07:19:24.635Z",
@@ -816,7 +816,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
@@ -1314,10 +1314,10 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-06T00:03:05.600Z",
     "directSearched": "2026-11-06T00:03:05.600Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-06T00:03:05.600Z"
+    "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -3703,53 +3703,66 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-volcano-vo-1000151": {
-    "at": "2026-11-02T09:59:51.584Z",
+    "at": "2026-11-06T07:18:29.895Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Taal Volcano in Batangas, Philippines, had a minor phreatomagmatic eruption on 8 October 2026. Residents of Agoncillo were evacuated after ashfall and a sulphur odour. Further minor eruptions were recorded on 18, 20 and 21 October. PHIVOLCS kept Alert Level 1, and entry to Taal Volcano Island remains prohibited. The latest report found is dated 21 October 2026.",
+    "summary": "Taal Volcano in Batangas, Philippines, began erupting on 8 October 2026. Phreatic eruptions with ash continued into late October, with a 300-meter plume reported on 20 October. PHIVOLCS kept Alert Level 1. Families in Agoncillo were evacuated, and ashfall was reported in several Batangas towns. No reports after 21 October were found.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Taal Volcano",
+        "admin": "Batangas",
+        "country": "PH",
+        "kind": "site",
+        "impact": "Eruptions; main crater is a Permanent Danger Zone"
+      },
       {
         "name": "Agoncillo",
         "admin": "Batangas",
         "country": "PH",
         "kind": "town",
-        "impact": "Ashfall; residents evacuated"
-      },
-      {
-        "name": "Taal Volcano Island",
-        "country": "PH",
-        "kind": "site",
-        "impact": "Eruption site; Permanent Danger Zone"
+        "impact": "Families evacuated; ashfall"
       },
       {
         "name": "Lemery",
         "admin": "Batangas",
         "country": "PH",
         "kind": "town",
-        "impact": "Thin ashfall expected; masks advised"
+        "impact": "Ashfall; residents advised to wear masks"
       },
       {
         "name": "San Nicolas",
         "admin": "Batangas",
         "country": "PH",
         "kind": "town",
-        "impact": "Thin ashfall expected; masks advised"
+        "impact": "Ashfall; residents advised to wear masks"
       },
       {
         "name": "Taal",
         "admin": "Batangas",
         "country": "PH",
         "kind": "town",
-        "impact": "Thin ashfall expected; masks advised"
+        "impact": "Ashfall; residents advised to wear masks"
       }
     ],
     "figures": [
       {
         "label": "Evacuated",
-        "value": "at least 120 people",
-        "sourceName": "philstar.com",
-        "sourceUrl": "https://www.philstar.com/nation/2026/10/09/2562036/batangas-town-residents-evacuate-after-minor-taal-volcano-eruption"
+        "value": "107 people",
+        "sourceName": "newsinfo.inquirer.net",
+        "sourceUrl": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption"
+      },
+      {
+        "label": "Families evacuated",
+        "value": "29 families",
+        "sourceName": "newsinfo.inquirer.net",
+        "sourceUrl": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption"
+      },
+      {
+        "label": "Sulfur dioxide",
+        "value": "407 tonnes per day",
+        "sourceName": "tribune.net.ph",
+        "sourceUrl": "https://tribune.net.ph/2026/10/20/taal-records-fresh-eruption-remains-at-alert-level-1"
       }
     ],
     "donation": [],
@@ -3760,21 +3773,31 @@
         "title": "Taal Volcano Erupts Again: Alert Level 1 Maintained Amid Volcanic Unrest"
       },
       {
-        "name": "mb.com.ph",
-        "url": "https://mb.com.ph/2026/10/08/phivolcs-records-minor-phreatomagmatic-eruption-at-taal-volcano",
-        "title": "Manila Bulletin - Phivolcs records minor phreatomagmatic eruption at Taal Volcano"
+        "name": "volcanodiscovery.com",
+        "url": "https://www.volcanodiscovery.com/taal/news/383845/vaac-advisory-2026-28.html",
+        "title": "Taal Volcanic Ash Advisory: eruption reported as of 21 Oct 2026, 02:10 UTC"
       },
       {
-        "name": "gulfnews.com",
-        "url": "https://gulfnews.com/world/asia/philippines/philippines-taal-volcano-blasts-ash-4000-metres-into-the-sky-in-five-minute-eruption-1.500704202",
-        "title": "Philippines: Taal Volcano blasts ash 4,000 metres into the sky in five-minute eruption"
+        "name": "newsinfo.inquirer.net",
+        "url": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption",
+        "title": "29 families flee homes after Taal Volcano minor eruption"
+      },
+      {
+        "name": "philstar.com",
+        "url": "https://www.philstar.com/nation/2026/10/10/2562095/minor-eruption-logged-taal",
+        "title": "Minor eruption logged in Taal"
+      },
+      {
+        "name": "gmanetwork.com",
+        "url": "https://www.gmanetwork.com/news/topstories/regions/1005406/taal-eruption-leaves-ashfall-in-agoncillo-batangas-over-100-residents-evacuated/story/",
+        "title": "Ashfall from Taal blankets Agoncillo, Batangas; over 100 residents evacuated"
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-06T00:03:05.600Z",
-    "donationSearched": "2026-11-02T09:59:51.584Z",
-    "directSearched": "2026-11-02T09:59:51.584Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-06T07:18:29.895Z",
+    "directSearched": "2026-11-06T07:18:29.895Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-06T07:18:29.895Z"
   },
   "gdacs-volcano-vo-1000152": {
     "at": "2026-11-04T18:26:07.453Z",
@@ -3828,7 +3851,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -5116,7 +5139,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-05T00:08:17.816Z",
     "direct": [
       {
@@ -5160,102 +5183,59 @@
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-04T01:03:04.924Z",
+    "at": "2026-11-06T07:18:29.895Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck Nagekeo and Flores in East Nusa Tenggara, Indonesia, on 15 August 2026. A later secondary-outlet report gives at least 73 deaths and 1,182 injuries, but figures conflict across sources. The tsunami warning was lifted on 15 August. Recovery and aid distribution were still reported in early October 2026.",
+    "summary": "A magnitude 7.7 earthquake struck offshore of Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026. Reports describe deaths, injuries and damage to houses, buildings, roads and ports across several districts. Latest sources, to 7 October 2026, say response and recovery were still underway. Aftershock activity had begun to decrease by 18 August, and no source reports the provincial emergency period as formally ended.",
     "ongoing": true,
     "places": [
       {
         "name": "Nagekeo",
         "country": "ID",
         "kind": "district",
-        "impact": "Epicentre area; landslides blocked roads; about 2,000 evacuated"
+        "impact": "Epicentre area; houses and government buildings damaged"
+      },
+      {
+        "name": "Aesesa",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Shaking VII MMI; houses and warehouses damaged"
+      },
+      {
+        "name": "Mbay",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Shaking VII MMI; houses and warehouses damaged"
       },
       {
         "name": "Maumere",
-        "admin": "Sikka",
         "country": "ID",
         "kind": "town",
-        "impact": "Two deaths in port area; port buildings and docks damaged"
-      },
-      {
-        "name": "Sikka",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Two deaths, minor to moderate injuries; 3,356 displaced"
+        "impact": "Two dead from falling building materials at port"
       },
       {
         "name": "Ende",
         "country": "ID",
         "kind": "town",
-        "impact": "Buildings cracked and partly damaged"
-      },
-      {
-        "name": "Ruteng",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Buildings cracked and partly damaged"
-      },
-      {
-        "name": "Labuan Bajo",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Buildings cracked and partly damaged"
-      },
-      {
-        "name": "Maurole",
-        "admin": "Ende",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Tsunami of 0.94 m recorded"
+        "impact": "Commercial buildings and hotels cracked, partly damaged"
       },
       {
         "name": "Riung",
-        "admin": "Ngada",
         "country": "ID",
         "kind": "town",
-        "impact": "Shaking and damage reported"
-      },
-      {
-        "name": "Bajawa",
-        "admin": "Ngada",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Shaking and damage reported"
+        "impact": "Shaking VII MMI"
       },
       {
         "name": "Borong",
-        "admin": "East Manggarai",
         "country": "ID",
         "kind": "town",
-        "impact": "Shaking and damage reported"
-      },
-      {
-        "name": "Manggarai",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Shaking and damage; 2,078 displaced"
-      },
-      {
-        "name": "Bima",
-        "admin": "West Nusa Tenggara",
-        "country": "ID",
-        "kind": "city",
-        "impact": "Shaking felt, no damage specified"
-      },
-      {
-        "name": "Jeneponto",
-        "admin": "South Sulawesi",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Shaking felt, no damage specified"
+        "impact": "Buildings damaged; remote homes collapsed"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "at least 73",
+        "value": "73",
         "sourceName": "karmactive.com",
         "sourceUrl": "https://www.karmactive.com/indonesia-flores-7-7-earthquake-kills-73-nagekeo-august-2026/"
       },
@@ -5264,40 +5244,15 @@
         "value": "1,182",
         "sourceName": "karmactive.com",
         "sourceUrl": "https://www.karmactive.com/indonesia-flores-7-7-earthquake-kills-73-nagekeo-august-2026/"
-      },
-      {
-        "label": "Displaced",
-        "value": "more than 5,000",
-        "sourceName": "go.ifrc.org",
-        "sourceUrl": "https://go.ifrc.org/field-reports/18533"
-      },
-      {
-        "label": "Houses destroyed",
-        "value": "at least 157",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/8/16/indonesias-magnitude-7-7-quake-kills-at-least-51-displaces-thousands"
-      },
-      {
-        "label": "Education facilities severely damaged",
-        "value": "36",
-        "sourceName": "human-initiative.org",
-        "sourceUrl": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en"
       }
     ],
     "donation": [
       {
-        "url": "https://ayodonor.pmi.or.id/?page=index",
-        "org": "Palang Merah Indonesia (PMI) Kota Bekasi",
+        "url": "https://ayodonor.pmi.or.id/",
+        "org": "PMI Kota Bekasi (Indonesian Red Cross city branch)",
         "kind": "society",
-        "note": "Local PMI Bekasi campaign on Ayodonor raising donations for NTT earthquake victims.",
+        "note": "PMI Ayodonor campaign raising donations for East Nusa Tenggara earthquake victims.",
         "specific": true
-      },
-      {
-        "url": "https://www.ifrc.org/national-societies-directory/indonesian-red-cross-society",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC directory listing for Indonesian Red Cross Society, noting DREF operation for this earthquake.",
-        "specific": false
       }
     ],
     "sources": [
@@ -5307,26 +5262,36 @@
         "title": "Situation Report #2 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
       },
       {
-        "name": "kabarbaik.co",
-        "url": "https://kabarbaik.co/donasi-warga-jember-tersalurkan-untuk-t-shelter-di-nagekeo/",
-        "title": "Donasi Warga Jember Tersalurkan untuk T-shelter di Nagekeo"
+        "name": "actalliance.org",
+        "url": "https://actalliance.org/wp-content/uploads/2026/08/ACT-Alert-Indonesia-Earthquake-August-2026.pdf",
+        "title": "1 Alert note"
       },
       {
-        "name": "ahacentre.org",
-        "url": "https://ahacentre.org/flash-update/flash-update-no-1-m7-7-earthquake-in-east-nusa-tenggara-indonesia-15-august-2026/",
-        "title": "FLASH UPDATE: No. 1"
+        "name": "tribune.com.pk",
+        "url": "https://tribune.com.pk/story/2624155/47-dead-as-77-magnitude-quake-rattles-indonesia",
+        "title": "47 dead as 7.7-magnitude quake rattles Indonesia"
       },
       {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/8/16/indonesias-magnitude-7-7-quake-kills-at-least-51-displaces-thousands",
-        "title": "Indonesia’s magnitude 7.7 quake kills at least 53, displaces thousands"
+        "name": "human-initiative.org",
+        "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
+        "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
+      },
+      {
+        "name": "en.antaranews.com",
+        "url": "https://en.antaranews.com/news/427215/east-nusatenggaras-quake-death-toll-rises-to-38-bnpb-says",
+        "title": "East NusaTenggara's quake death toll rises to 38, BNPB says - ANTARA News"
+      },
+      {
+        "name": "wikiwand.com",
+        "url": "https://www.wikiwand.com/en/2026_East_Nusa_Tenggara_earthquake",
+        "title": "2026 East Nusa Tenggara earthquake - Wikiwand"
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-06T00:03:05.600Z",
-    "donationSearched": "2026-11-04T01:03:04.924Z",
-    "directSearched": "2026-11-04T01:03:04.924Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-06T07:18:29.895Z",
+    "directSearched": "2026-11-06T07:18:29.895Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-06T07:18:29.895Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -5855,7 +5820,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -6004,7 +5969,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2,
@@ -6236,7 +6201,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2,
@@ -6698,7 +6663,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-05T00:08:17.816Z",
     "directSearched": "2026-11-05T00:08:17.816Z",
     "directSearchVersion": 2,
@@ -7655,73 +7620,6 @@
     "sources": [],
     "membersHash": "news|TW#27c6abcb",
     "seen": "2026-10-24T21:17:31.742Z"
-  },
-  "news-cyclone-cyclone-tw-c5a0658070": {
-    "at": "2026-10-23T05:22:44.752Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A typhoon called Sarika in the alert feed is expected to be closest to Taiwan from Friday to Saturday morning, 23 to 24 October 2026. Every 2026 report found calls it Champi, the CWA name, and the link between the two names is unverified. Taitung County suspended work and classes on 23 October. Over 150 flights were canceled for Thursday. Warnings could be lifted as early as Saturday afternoon.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Taitung County",
-        "country": "TW",
-        "kind": "district",
-        "impact": "Work and classes suspended 23 October"
-      },
-      {
-        "name": "Lanyu",
-        "country": "TW",
-        "kind": "town",
-        "impact": "Work and classes suspended before 23 October"
-      },
-      {
-        "name": "Green Island",
-        "country": "TW",
-        "kind": "town",
-        "impact": "Work and classes suspended before 23 October"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Flights canceled",
-        "value": "over 150 domestic and international flights",
-        "sourceName": "manilatimes.net",
-        "sourceUrl": "https://www.manilatimes.net/2026/10/23/world/asia-oceania/typhoon-spurs-warnings-cancels-flights-in-taiwan/2451831"
-      },
-      {
-        "label": "Forecast rainfall",
-        "value": "up to 900 millimeters (35 inches)",
-        "sourceName": "manilatimes.net",
-        "sourceUrl": "https://www.manilatimes.net/2026/10/23/world/asia-oceania/typhoon-spurs-warnings-cancels-flights-in-taiwan/2451831"
-      },
-      {
-        "label": "Military personnel on standby",
-        "value": "more than 23,000",
-        "sourceName": "manilatimes.net",
-        "sourceUrl": "https://www.manilatimes.net/2026/10/23/world/asia-oceania/typhoon-spurs-warnings-cancels-flights-in-taiwan/2451831"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "taipeitimes.com",
-        "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/21/2003866354",
-        "title": "Sea warning expected for typhoon - Taipei Times"
-      },
-      {
-        "name": "taipeitimes.com",
-        "url": "https://www.taipeitimes.com/News/front/archives/2026/10/22/2003866405",
-        "title": "CWA warns storm effect at top in next two days - Taipei Times"
-      },
-      {
-        "name": "manilatimes.net",
-        "url": "https://www.manilatimes.net/2026/10/23/world/asia-oceania/typhoon-spurs-warnings-cancels-flights-in-taiwan/2451831",
-        "title": "Typhoon spurs warnings, cancels flights in Taiwan"
-      }
-    ],
-    "membersHash": "news|TW#b225f1ab",
-    "seen": "2026-10-23T05:22:44.752Z"
   },
   "news-earthquake-earthquake-cn-045bab26d7": {
     "at": "2026-10-23T12:11:09.903Z",
@@ -9057,75 +8955,6 @@
     "membersHash": "news|ID#2d7007c2",
     "seen": "2026-10-23T17:38:11.860Z"
   },
-  "news-wildfire-wildfire-pg-ba2f042e78": {
-    "at": "2026-10-23T05:22:44.752Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Wildfires on Lou Island, Manus Province, Papua New Guinea, have burned about one-third of the island, according to reports up to 22 October 2026. The fire reportedly started at Baon village about two weeks earlier and spread to Lako and Rei villages. Residents say the spread is out of their control. The fire is ongoing.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Lako",
-        "admin": "Manus Province",
-        "country": "PG",
-        "kind": "town",
-        "impact": "fire reportedly close to village and health centre"
-      },
-      {
-        "name": "Rei",
-        "admin": "Manus Province",
-        "country": "PG",
-        "kind": "town",
-        "impact": "fire broke through ridgelines towards village"
-      },
-      {
-        "name": "Baon",
-        "admin": "Manus Province",
-        "country": "PG",
-        "kind": "town",
-        "impact": "where the fire started"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Area burned",
-        "value": "about one-third of the island",
-        "sourceName": "islandsbusiness.com",
-        "sourceUrl": "https://islandsbusiness.com/news-break/wildfires-devastate-png-island/"
-      },
-      {
-        "label": "People at risk",
-        "value": "about 700 people",
-        "sourceName": "abc.net.au",
-        "sourceUrl": "https://www.abc.net.au/pacific/programs/pacificbeat/manus-fire/107286512"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "islandsbusiness.com",
-        "url": "https://islandsbusiness.com/news-break/wildfires-devastate-png-island/",
-        "title": "Wildfires devastate PNG island"
-      },
-      {
-        "name": "thenational.com.pg",
-        "url": "https://www.thenational.com.pg/wild-fire-hits-island-in-manus/",
-        "title": "Wild fire hits island in Manus"
-      },
-      {
-        "name": "nbc.com.pg",
-        "url": "https://www.nbc.com.pg/post/41376/bush-fire-threatens-lou-island-villages-in-manus",
-        "title": "Bush fire threatens Lou Island villages in Manus - NBC PNG"
-      },
-      {
-        "name": "rnz.co.nz",
-        "url": "https://www.rnz.co.nz/news/pacific/2038624/i-don-t-know-what-we-can-do-anymore-lou-island-pleads-for-help-to-fight-wildfires",
-        "title": "'I don't know what we can do anymore': Lou Island pleads for help to fight wildfires"
-      }
-    ],
-    "membersHash": "news|PG#3d7e2b86",
-    "seen": "2026-10-23T05:22:44.752Z"
-  },
   "usgs-earthquake-us6000u1cf": {
     "at": "2026-10-31T00:14:33.222Z",
     "model": "claude-haiku-5-5",
@@ -9314,7 +9143,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-11-06T00:03:05.600Z",
+    "seen": "2026-11-06T07:18:29.895Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
