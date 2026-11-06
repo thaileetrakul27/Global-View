@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-06T16:19:26.112Z",
+  "updated": "2026-11-06T21:57:01.362Z",
   "fetched": {
-    "societies": "2026-11-06T16:19:26.112Z",
-    "uncr": "2026-11-06T16:19:26.112Z"
+    "societies": "2026-11-06T21:57:01.362Z",
+    "uncr": "2026-11-06T21:57:01.362Z"
   },
   "societies": {
     "AF": {
@@ -2459,17 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "local4:usgs-earthquake-us6000u1cf:quenarafoundation.com/en/donation/panama-earthquake-relief": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Panama\"",
-      "checked": "2026-10-30T19:53:42.295Z",
-      "chain": [
-        "https://quenarafoundation.com/en/donation/panama-earthquake-relief/"
-      ],
-      "place": "Panama",
-      "name": "Quenara Foundation",
-      "title": "Panama Earthquake Relief | Donate to Azuero Families"
-    },
     "donate.redcrossredcrescent.org/ifrc/nepal-flash-floods": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2843,35 +2832,35 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-06T16:19:26.112Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-06T16:19:26.112Z"
+      ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-06T16:19:26.112Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-06T16:19:26.112Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-11-06T16:19:26.112Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-11-06T16:19:26.112Z"
+      ]
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-11-06T16:19:26.112Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ],
-      "checked": "2026-11-06T16:19:26.112Z"
+      ]
     }
   }
 }

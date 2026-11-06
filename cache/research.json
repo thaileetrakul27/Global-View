@@ -1,113 +1,4 @@
 {
-  "eonet-cyclone-eonet_25290": {
-    "at": "2026-10-22T08:03:09.184Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Hurricane Trudy (EP2126) formed off Mexico's Pacific coast on 13 October 2026 and weakened to a tropical storm by 19 October. Reports describe flooding, landslides, fallen trees and temporary shelters in Colima and Jalisco, with one death reported in Guerrero. The situation after 19 October is not confirmed.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Manzanillo",
-        "admin": "Colima",
-        "country": "MX",
-        "kind": "city",
-        "impact": "flooded; residents moved to shelters"
-      },
-      {
-        "name": "Villa de Álvarez",
-        "admin": "Colima",
-        "country": "MX",
-        "kind": "city",
-        "impact": "flooded; fallen trees, stranded vehicles"
-      },
-      {
-        "name": "Armería",
-        "admin": "Colima",
-        "country": "MX",
-        "kind": "district",
-        "impact": "shelters opened"
-      },
-      {
-        "name": "Tecomán",
-        "admin": "Colima",
-        "country": "MX",
-        "kind": "district",
-        "impact": "shelters opened"
-      },
-      {
-        "name": "Ixtlahuacán",
-        "admin": "Colima",
-        "country": "MX",
-        "kind": "district",
-        "impact": "shelters opened"
-      },
-      {
-        "name": "Comala",
-        "admin": "Colima",
-        "country": "MX",
-        "kind": "district",
-        "impact": "shelters opened"
-      },
-      {
-        "name": "Cabo Corrientes",
-        "admin": "Jalisco",
-        "country": "MX",
-        "kind": "district",
-        "impact": "landslides and fallen trees; shelters opened"
-      },
-      {
-        "name": "Tomatlán",
-        "admin": "Jalisco",
-        "country": "MX",
-        "kind": "district",
-        "impact": "landslides and fallen trees; shelters opened"
-      },
-      {
-        "name": "La Huerta",
-        "admin": "Jalisco",
-        "country": "MX",
-        "kind": "district",
-        "impact": "landslides and fallen trees; shelters opened"
-      },
-      {
-        "name": "Sierra Norte",
-        "admin": "Puebla",
-        "country": "MX",
-        "kind": "region",
-        "impact": "at least 10 municipalities hit by landslides"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "1",
-        "sourceName": "meteored.mx",
-        "sourceUrl": "https://www.meteored.mx/noticias/actualidad/trudy-no-toco-tierra-pero-causo-severos-estragos-sobre-los-estados-del-suroeste-y-occidente-de-mexico.html"
-      },
-      {
-        "label": "Displaced",
-        "value": "48 people",
-        "sourceName": "punto.mx",
-        "sourceUrl": "https://punto.mx/2026/10/18/huracan-trudy-pasa-por-colima-con-lluvias-pero-sin-danos-sigue-en-categoria-2"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "diariodemexico.com",
-        "url": "https://www.diariodemexico.com/mi-nacion/trudy-se-debilita-tormenta-tropical-se-aleja-mexico-pero-siguen-alertas-estos-estados",
-        "title": "Trudy se debilita a tormenta tropical y se aleja de México, pero siguen alertas para estos estados"
-      },
-      {
-        "name": "ruptura360.mx",
-        "url": "https://ruptura360.mx/el-pais/tormenta-tropical-trudy-trayectoria-costas-jalisco/",
-        "title": "Tormenta tropical Trudy se debilita a 95 km/h frente a México"
-      }
-    ],
-    "membersHash": "eonet,gdacs|MX#72534fe3",
-    "seen": "2026-10-23T21:53:40.347Z",
-    "donationSearched": "2026-10-22T08:03:09.184Z"
-  },
   "gdacs-cyclone-tc-1001338": {
     "at": "2026-10-29T06:19:20.602Z",
     "model": "claude-haiku-5-5",
@@ -331,63 +222,51 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001343": {
-    "at": "2026-11-05T16:54:03.811Z",
+    "at": "2026-11-06T21:57:01.362Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Super Typhoon In-fa (Typhoon No. 31), which began on 23 October 2026, is moving northeast over the sea west of Chichijima, away from Japan. As of 09:00 JST on 5 November, the Japan Meteorological Agency reported a central pressure of 975 hPa, and the storm still carried gale-force winds. Japanese forecasts warned of strong winds and high waves in the Ogasawara Islands into the night of 5 November. No deaths or damage were reported in Japan.",
+    "searches": 3,
+    "summary": "Typhoon In-fa (JMA No. 31), also called Super Typhoon In-fa, formed on 23 October 2026 and was moving northeast east of Japan as of 6 November 2026. Forecast reports on 4 to 5 November expected high waves, strong winds and heavy rain around the Ogasawara and southern Izu Islands. No damage or casualties in Japan were reported in the sources found. The latest status is a JMA position report at 03:00 JST on 6 November, which said the storm had weakened and lost its gale-force…",
     "ongoing": true,
     "places": [
       {
         "name": "Ogasawara Islands",
+        "admin": "Tokyo Metropolis",
         "country": "JP",
         "kind": "region",
-        "impact": "High waves, strong winds forecast; no damage reported"
+        "impact": "forecast high waves, strong winds, heavy rain; no damage reported"
       },
       {
-        "name": "Kanto",
+        "name": "Southern Izu Islands",
+        "admin": "Tokyo Metropolis",
         "country": "JP",
         "kind": "region",
-        "impact": "Heavy rain forecast; no damage reported"
-      },
-      {
-        "name": "Shizuoka",
-        "country": "JP",
-        "kind": "region",
-        "impact": "Rain could intensify; no damage reported"
+        "impact": "heavy rain possible; no damage reported"
       }
     ],
     "figures": [],
-    "donation": [
-      {
-        "url": "https://www.jrc.or.jp/english/donate/",
-        "org": "Japanese Red Cross Society",
-        "kind": "society",
-        "note": "General Japanese Red Cross fund for disaster relief in Japan and overseas, not this typhoon.",
-        "specific": false
-      }
-    ],
+    "donation": [],
     "sources": [
       {
-        "name": "tenki.jp",
-        "url": "https://tenki.jp/forecaster/y_nakagawa/2026/11/05/41208.html",
-        "title": "台風31号 スピードアップして日本の東へ 小笠原諸島は5日夜まで強風や高波に注意(気象予報士 中川 裕美子 2026年11月05日) - 日本気象協会 tenki.jp"
+        "name": "rainbow-you.com",
+        "url": "https://rainbow-you.com/latest-typhoon-details/",
+        "title": "台風31号2026発生状況！大雨暴風日本への影響は?最新米軍進路予想・気象庁・ECMWF・Windyﾘｱﾙﾀｲﾑ・各国進路予想も"
+      },
+      {
+        "name": "weathernews.jp",
+        "url": "https://weathernews.jp/news/202611/050101/",
+        "title": "台風31号(インファ) 速度を上げて北東進 小笠原は強風や高波に注意 - ウェザーニュース"
       },
       {
         "name": "japantimes.co.jp",
         "url": "https://www.japantimes.co.jp/news/2026/11/04/japan/typhoon-infa/",
         "title": "High waves around Ogasawara Islands expected as Typhoon In-fa approaches - The Japan Times"
-      },
-      {
-        "name": "natureworldnews.com",
-        "url": "https://www.natureworldnews.com/articles/73724/20261104/fa-becomes-western-pacifics-seventh-super-typhoon-2026-noaa-gives-83-odds-record-el-nino.htm",
-        "title": "In-Fa Becomes the Western Pacific's Seventh Super Typhoon of 2026 as NOAA Gives 83% Odds of a Record El Niño"
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-06T16:19:26.112Z",
-    "donationSearched": "2026-11-05T16:54:03.811Z",
-    "directSearched": "2026-11-05T16:54:03.811Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-06T21:57:01.362Z",
+    "directSearched": "2026-11-06T21:57:01.362Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-06T21:57:01.362Z"
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -489,98 +368,80 @@
     "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001346": {
-    "at": "2026-11-05T16:54:03.811Z",
+    "at": "2026-11-06T21:57:01.362Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Tropical Cyclone Murasu made landfall near Ongole in Andhra Pradesh, India, on 3 November 2026. It felled trees, damaged power poles and fishing boats, and left many areas underwater. Preliminary reports say 10,805 people were evacuated to cyclone shelters. By 4 November the system had weakened into a depression over east Telangana and coastal Andhra Pradesh. Reports do not say whether flooding has receded.",
+    "searches": 4,
+    "summary": "Tropical Cyclone Murasu made landfall on India's eastern coast in Andhra Pradesh early on 3 November 2026, the second cyclone to hit the state within a week. Officials cited by TBS News report at least 2 deaths, about 12,230 people in cyclone shelters, and crop damage across 52,459 hectares. The latest reports date from 3-4 November 2026.",
     "ongoing": true,
     "places": [
       {
-        "name": "Ongole",
-        "admin": "Andhra Pradesh",
-        "country": "IN",
-        "kind": "city",
-        "impact": "Storm came ashore nearby"
-      },
-      {
-        "name": "Prakasam",
+        "name": "Krishna",
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Trees felled, power poles damaged, boats wrecked"
+        "impact": "among worst-affected areas"
       },
       {
         "name": "Bapatla",
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Extensive damage, areas underwater"
+        "impact": "among worst-affected areas"
       },
       {
-        "name": "Krishna",
+        "name": "Nandyala",
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Particularly severe damage"
+        "impact": "among worst-affected areas"
       },
       {
-        "name": "Nandyal",
+        "name": "Prakasam",
         "admin": "Andhra Pradesh",
         "country": "IN",
         "kind": "district",
-        "impact": "Particularly severe damage"
+        "impact": "fishing boats damaged; vehicles stranded on highways"
       }
     ],
     "figures": [
       {
-        "label": "Evacuated",
-        "value": "10,805 people",
-        "sourceName": "tribuneindia.com",
-        "sourceUrl": "https://www.tribuneindia.com/news/india/cyclone-murasu-makes-landfall-in-andhra-damages-30000-hectares-of-crops"
+        "label": "Deaths",
+        "value": "at least 2",
+        "sourceName": "tbsnews.net",
+        "sourceUrl": "https://www.tbsnews.net/world/south-asia/cyclone-murasu-kills-two-damages-crops-across-52459-hectares-indias-andhra-pradesh"
+      },
+      {
+        "label": "People in cyclone shelters",
+        "value": "12,230",
+        "sourceName": "tbsnews.net",
+        "sourceUrl": "https://www.tbsnews.net/world/south-asia/cyclone-murasu-kills-two-damages-crops-across-52459-hectares-indias-andhra-pradesh"
       },
       {
         "label": "Crop area damaged",
-        "value": "30,661 acres",
-        "sourceName": "tribuneindia.com",
-        "sourceUrl": "https://www.tribuneindia.com/news/india/cyclone-murasu-makes-landfall-in-andhra-damages-30000-hectares-of-crops"
-      }
-    ],
-    "donation": [
-      {
-        "url": "https://www.indianredcross.org/ircs/donatenow/",
-        "org": "Indian Red Cross Society (IRCS)",
-        "kind": "society",
-        "note": "General IRCS donation page with online and bank options, not for Murasu.",
-        "specific": false
-      }
-    ],
-    "sources": [
-      {
-        "name": "vajiramandravi.com",
-        "url": "https://vajiramandravi.com/current-affairs/cyclone-murasu-2026/",
-        "title": "Cyclone Murasu 2026, Tracker, Affected Areas, Warnings, Latest Updates"
+        "value": "52,459 hectares",
+        "sourceName": "tbsnews.net",
+        "sourceUrl": "https://www.tbsnews.net/world/south-asia/cyclone-murasu-kills-two-damages-crops-across-52459-hectares-indias-andhra-pradesh"
       },
       {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/11/3/cyclone-murasu-makes-landfall-on-indias-eastern-coast",
-        "title": "Cyclone Murasu makes landfall on India’s eastern coast"
+        "label": "Economic loss",
+        "value": "Rs 344 crore",
+        "sourceName": "tbsnews.net",
+        "sourceUrl": "https://www.tbsnews.net/world/south-asia/cyclone-murasu-kills-two-damages-crops-across-52459-hectares-indias-andhra-pradesh"
       },
       {
-        "name": "tribuneindia.com",
-        "url": "https://www.tribuneindia.com/news/india/cyclone-murasu-makes-landfall-in-andhra-damages-30000-hectares-of-crops",
-        "title": "Cyclone Murasu makes landfall in Andhra, damages 30,000 hectares of crops - The Tribune"
-      },
-      {
-        "name": "etvbharat.com",
-        "url": "https://www.etvbharat.com/en/bharat/live-blog--cyclone-murasu-live-updates-landfall-andhra-pradesh-coast-odisha-tamil-nadu-weather-update-enn26110300486",
-        "title": "Cyclone Murasu LIVE"
+        "label": "Electricity poles damaged",
+        "value": "about 2,750",
+        "sourceName": "tbsnews.net",
+        "sourceUrl": "https://www.tbsnews.net/world/south-asia/cyclone-murasu-kills-two-damages-crops-across-52459-hectares-indias-andhra-pradesh"
       }
     ],
-    "membersHash": "eonet,gdacs|IN#2d25d059",
-    "seen": "2026-11-06T16:19:26.112Z",
-    "donationSearched": "2026-11-05T16:54:03.811Z",
-    "directSearched": "2026-11-05T16:54:03.811Z",
-    "directSearchVersion": 2
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|IN#4b1ba0fa",
+    "donationSearched": "2026-11-06T21:57:01.362Z",
+    "directSearched": "2026-11-06T21:57:01.362Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-06T21:57:01.362Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-05T07:19:24.635Z",
@@ -680,7 +541,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
@@ -785,7 +646,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-06T00:03:05.600Z",
     "directSearched": "2026-11-06T00:03:05.600Z",
     "directSearchVersion": 2
@@ -816,7 +677,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
@@ -1044,30 +905,6 @@
         "specific": false
       }
     ]
-  },
-  "gdacs-earthquake-eq-1571367": {
-    "at": "2026-10-21T17:37:06.438Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 6.0 earthquake struck offshore near New Britain, Papua New Guinea, on 13 October 2026 at about 18:45 UTC, with a depth of about 21 km. USGS places the epicentre 126 km south of Kokopo. As of 21 October 2026, the sources found report no deaths, injuries, displacement or damage from this event. The sources do not say whether the event is over.",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "earthquake.usgs.gov",
-        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u24c",
-        "title": "M 6.0 - 126 km S of Kokopo, Papua New Guinea"
-      },
-      {
-        "name": "quakemap24.com",
-        "url": "https://quakemap24.com/en/event/fa908723c8feb14e857711cdb5955cac7080d259/earthquake-m6-0-east-new-britain-2026-10-13",
-        "title": "M6.0 Earthquake near East New Britain (Papua New Guinea)"
-      }
-    ],
-    "membersHash": "gdacs|PG#20427fcc",
-    "seen": "2026-10-23T17:38:11.860Z"
   },
   "gdacs-earthquake-eq-1571732": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -1314,7 +1151,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-06T00:03:05.600Z",
     "directSearched": "2026-11-06T00:03:05.600Z",
     "directSearchVersion": 2
@@ -1713,97 +1550,6 @@
     ],
     "membersHash": "gdacs,news|EC#5dc7dd96",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-flood-fl-1104209": {
-    "at": "2026-10-20T14:35:40.688Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Rain-related flooding in Honduras began around 2 October 2026, with sudden floods in San Pedro Sula and families affected in Cortés. Copeco reported more than 600 families affected since 2 October as of 9 October. The notes report no ongoing flooding after early October; rain alerts remained active as of 17 to 19 October, with Cenaos forecasting intense rain on 19 October.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "San Pedro Sula",
-        "admin": "Cortés",
-        "country": "HN",
-        "kind": "city",
-        "impact": "Sudden floods; at least 120 families affected, 70 vehicles trapped"
-      },
-      {
-        "name": "Cortés",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Over 200 families affected; evacuations from water entering homes"
-      },
-      {
-        "name": "Distrito Central",
-        "admin": "Francisco Morazán",
-        "country": "HN",
-        "kind": "district",
-        "impact": "Under alert only; no damage reported"
-      },
-      {
-        "name": "Lago de Yojoa",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Under green alert only; no damage reported"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Families affected",
-        "value": "more than 600",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/honduras/2026/10/09/lluvias-en-honduras-dejan-mas-de-600-familias-afectadas-en-lo-que-va-de-octubre/"
-      },
-      {
-        "label": "Families affected in San Pedro Sula",
-        "value": "at least 120",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/honduras/2026/10/03/honduras-inundaciones-afectan-a-120-familias-y-dejan-70-vehiculos-atrapados-en-el-norte-de-pais/"
-      },
-      {
-        "label": "Families affected in Cortés",
-        "value": "more than 200",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/honduras/2026/10/05/lluvias-dejan-miles-de-afectados-inundaciones-y-rescates-en-varias-zonas-de-honduras/"
-      },
-      {
-        "label": "Vehicles trapped in San Pedro Sula",
-        "value": "about 70",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/honduras/2026/10/03/honduras-inundaciones-afectan-a-120-familias-y-dejan-70-vehiculos-atrapados-en-el-norte-de-pais/"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "radiohrn.hn",
-        "url": "https://www.radiohrn.hn/alerta-verde-en-honduras-copeco-emite-medida-prevencion-lluvias-clima-cenaos-2026-10-17",
-        "title": "Copeco emite nueva alerta en estas zonas de Honduras por lluvias"
-      },
-      {
-        "name": "radiohrn.hn",
-        "url": "https://www.radiohrn.hn/vaguada-lluvias-lunes-19-octubre-cenaos-cinco-regiones-pronostico-2026-10-18",
-        "title": "Paso de dos vaguadas dejará lluvias fuertes en estas regiones este lunes: Cenaos"
-      },
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/honduras/2026/10/03/honduras-inundaciones-afectan-a-120-familias-y-dejan-70-vehiculos-atrapados-en-el-norte-de-pais/",
-        "title": "Las autoridades mantienen evaluaciones en San Pedro Sula para determinar los daños provocados por las lluvias. - Infobae"
-      },
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/honduras/2026/10/05/lluvias-dejan-miles-de-afectados-inundaciones-y-rescates-en-varias-zonas-de-honduras/",
-        "title": "Lluvias dejan miles de afectados, inundaciones y rescates en varias zonas de Honduras - Infobae"
-      },
-      {
-        "name": "tunota.com",
-        "url": "https://www.tunota.com/honduras-hoy/rios-inundaciones-y-derrumbes-copeco-activa-nuevas-alertas-2026-10-10",
-        "title": "Ríos, inundaciones y derrumbes: Copeco activa nuevas alertas"
-      }
-    ],
-    "membersHash": "gdacs|HN#37b0b7ff",
-    "seen": "2026-10-23T21:53:40.347Z"
   },
   "gdacs-flood-fl-1104216": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -2221,78 +1967,6 @@
     "membersHash": "gdacs|IT#aab5ea36",
     "seen": "2026-10-25T13:34:13.512Z"
   },
-  "gdacs-flood-fl-1104221": {
-    "at": "2026-10-22T01:04:05.836Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Heavy rain caused flooding in western Slovenia on 8–9 October 2026, mainly in the Karst and Primorska areas. In Štanjel, nine houses and the primary school were flooded by stormwater. At Kobdilje, 353 mm of rain fell overnight. Roads were blocked by landslides and cars were trapped in water in Ajdovščina and Komen. Reports from 9 October describe clean-up. No later reports of flooding were found.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Štanjel",
-        "admin": "Littoral",
-        "country": "SI",
-        "kind": "town",
-        "impact": "nine houses and primary school flooded"
-      },
-      {
-        "name": "Kobdilje",
-        "country": "SI",
-        "kind": "town",
-        "impact": "353 mm of rain overnight"
-      },
-      {
-        "name": "Ajdovščina",
-        "admin": "Primorska",
-        "country": "SI",
-        "kind": "town",
-        "impact": "homes and primary school flooded, roads flooded"
-      },
-      {
-        "name": "Komen",
-        "admin": "Littoral",
-        "country": "SI",
-        "kind": "district",
-        "impact": "roads blocked by landslides and earth collapses"
-      },
-      {
-        "name": "Gaberje",
-        "country": "SI",
-        "kind": "town",
-        "impact": "rain problems reported"
-      },
-      {
-        "name": "Budanje",
-        "country": "SI",
-        "kind": "town",
-        "impact": "rain problems reported"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Homes flooded",
-        "value": "nine houses",
-        "sourceName": "rtvslo.si",
-        "sourceUrl": "https://www.rtvslo.si/slovenija/v-kobdilju-na-krasu-padlo-kar-353-milimetrov-dezja-in-poplavilo-solo/796325"
-      },
-      {
-        "label": "Rainfall",
-        "value": "353 mm",
-        "sourceName": "rtvslo.si",
-        "sourceUrl": "https://www.rtvslo.si/slovenija/v-kobdilju-na-krasu-padlo-kar-353-milimetrov-dezja-in-poplavilo-solo/796325"
-      },
-      {
-        "label": "Firefighters deployed",
-        "value": "49 firefighters",
-        "sourceName": "rtvslo.si",
-        "sourceUrl": "https://www.rtvslo.si/slovenija/v-kobdilju-na-krasu-padlo-kar-353-milimetrov-dezja-in-poplavilo-solo/796325"
-      }
-    ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|SI#abb5ebc9",
-    "seen": "2026-10-23T21:53:40.347Z"
-  },
   "gdacs-flood-fl-1104222": {
     "at": "2026-10-22T01:04:05.836Z",
     "model": "claude-haiku-5-5",
@@ -2422,19 +2096,6 @@
     ],
     "membersHash": "gdacs|PY#a8b5e710",
     "seen": "2026-10-25T00:43:26.084Z"
-  },
-  "gdacs-flood-fl-1104223": {
-    "at": "2026-10-22T01:04:05.836Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|CN#a9b5e8a3",
-    "seen": "2026-10-23T21:53:40.347Z"
   },
   "gdacs-flood-fl-1104224": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3794,7 +3455,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-06T07:18:29.895Z",
     "directSearched": "2026-11-06T07:18:29.895Z",
     "directSearchVersion": 2
@@ -3851,117 +3512,10 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
-  },
-  "gdacs-wildfire-wf-1032497": {
-    "at": "2026-10-21T17:37:06.438Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "miragenews.com",
-        "url": "https://www.miragenews.com/bushfires-nt-tracks-large-blaze-east-of-tennant-1731148/",
-        "title": "Bushfires NT Tracks Large Blaze East of Tennant Creek"
-      },
-      {
-        "name": "wildfiretoday.com",
-        "url": "https://wildfiretoday.com/large-fires-across-top-of-australia/",
-        "title": "Large fires across top of Australia"
-      }
-    ],
-    "membersHash": "gdacs|AU#16f99bef",
-    "seen": "2026-10-23T17:38:11.860Z"
-  },
-  "gdacs-wildfire-wf-1032498": {
-    "at": "2026-10-21T22:09:59.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|AU#1bf9a3ce",
-    "seen": "2026-10-23T17:38:11.860Z"
-  },
-  "gdacs-wildfire-wf-1032507": {
-    "at": "2026-10-21T22:09:59.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "scitechdaily.com",
-        "url": "https://scitechdaily.com/the-amazon-is-burning-again-and-nasa-warns-the-worst-is-yet-to-come/",
-        "title": "The Amazon Is Burning Again, and NASA Warns the Worst Is Yet To Come"
-      },
-      {
-        "name": "ecoportal.net",
-        "url": "https://www.ecoportal.net/en/amazon-fires-el-nino-impact/43039/",
-        "title": "Amazon fires are spreading like a \"slow-moving wave\" and scientists have been watching it build for months"
-      },
-      {
-        "name": "upi.com",
-        "url": "https://www.upi.com/Top_News/World-News/2026/10/19/latam-brazil-amazon-fires/8421792431441/",
-        "title": "Amazon fires blanket northern Brazil in smoke, disrupt daily life - UPI.com"
-      },
-      {
-        "name": "actionnewsjax.com",
-        "url": "https://www.actionnewsjax.com/news/world/brazil-investigates/3TSKP4G7BA5QBICJIRUPUISWGI/",
-        "title": "Brazil investigates Amazon wildfires that disrupt daily life and have fueled political attacks"
-      },
-      {
-        "name": "abcnews.com",
-        "url": "https://abcnews.com/International/wireStory/wildfires-brazils-amazonas-state-worsen-air-quality-manaus-137144994",
-        "title": "Wildfires in Brazil’s Amazonas state worsen air quality in Manaus - ABC News"
-      }
-    ],
-    "membersHash": "gdacs|BR#a93ae3e9",
-    "seen": "2026-10-23T17:38:11.860Z"
-  },
-  "gdacs-wildfire-wf-1032508": {
-    "at": "2026-10-21T22:09:59.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [
-      {
-        "label": "Burned area",
-        "value": "35,329 ha",
-        "sourceName": "gdacs.org",
-        "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1032586&episodeid=2&eventtype=WF"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "wildfiretoday.com",
-        "url": "https://wildfiretoday.com/2026/09/",
-        "title": "September 2026"
-      },
-      {
-        "name": "gdacs.org",
-        "url": "https://www.gdacs.org/report.aspx?eventid=1032586&episodeid=2&eventtype=WF",
-        "title": "Overall Green Forest fire in Australia from 02 Oct 2026 00:00 UTC to 06 Oct 2026 00:00 UTC"
-      }
-    ],
-    "membersHash": "gdacs|AU#b23af214",
-    "seen": "2026-10-23T17:38:11.860Z"
   },
   "gdacs-wildfire-wf-1032546": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -5139,7 +4693,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-05T00:08:17.816Z",
     "direct": [
       {
@@ -5288,7 +4842,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-06T07:18:29.895Z",
     "directSearched": "2026-11-06T07:18:29.895Z",
     "directSearchVersion": 2
@@ -5657,94 +5211,78 @@
     "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-8013": {
-    "at": "2026-11-04T18:26:07.453Z",
+    "at": "2026-11-06T21:57:01.362Z",
     "model": "claude-haiku-5-5",
     "searches": 2,
-    "summary": "Monsoon flooding and landslides hit Bangladesh's Cox's Bazar district and surrounding areas from early July 2026. Sources report deaths, displacement and damaged homes, and flooding of farmland and Rohingya camps. The latest source found is dated 20 August 2026; no source reports the event as over, but later status is not confirmed.",
+    "summary": "Monsoon flooding and landslides hit Cox's Bazar and other districts of Bangladesh from 14 July 2026. By 22 July, UN reporting counted 59 deaths and 1.28 million people affected in seven districts. Heavy rain and flash floods were still affecting communities in the 23 July UN situation report. No report of the event ending was found as of 6 November 2026. An IFRC DREF operation runs to 31 January 2027.",
     "ongoing": true,
     "places": [
       {
-        "name": "Ramu",
-        "admin": "Cox's Bazar",
+        "name": "Cox's Bazar",
         "country": "BD",
-        "kind": "town",
-        "impact": "35 per cent submerged by floodwaters"
+        "kind": "district",
+        "impact": "About 49% inundated; 300,000 still affected"
+      },
+      {
+        "name": "Ramu",
+        "country": "BD",
+        "kind": "district",
+        "impact": "35% submerged"
       },
       {
         "name": "Cox's Bazar Sadar",
-        "admin": "Cox's Bazar",
         "country": "BD",
-        "kind": "town",
-        "impact": "25 per cent submerged; deaths reported"
+        "kind": "district",
+        "impact": "25% submerged"
       },
       {
         "name": "Ukhiya",
-        "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "25 per cent submerged"
+        "impact": "25% submerged"
       },
       {
         "name": "Teknaf",
-        "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "25 per cent submerged"
+        "impact": "25% submerged"
       },
       {
         "name": "Eidgaon",
-        "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "5 per cent submerged"
+        "impact": "5% submerged"
       },
       {
         "name": "Chakaria",
-        "admin": "Cox's Bazar",
-        "country": "BD",
-        "kind": "town",
-        "impact": "deaths reported"
-      },
-      {
-        "name": "Pekua",
-        "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "deaths reported"
+        "impact": "People still affected"
       },
       {
         "name": "Matamuhuri",
-        "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "deaths reported"
+        "impact": "People still affected"
       },
       {
-        "name": "Maheshkhali",
-        "admin": "Cox's Bazar",
+        "name": "Pekua",
         "country": "BD",
         "kind": "district",
-        "impact": "deaths reported"
+        "impact": "People still affected"
       },
       {
-        "name": "Kutubdia",
-        "admin": "Cox's Bazar",
-        "country": "BD",
-        "kind": "district",
-        "impact": "deaths reported"
-      },
-      {
-        "name": "Rohingya camps",
+        "name": "Rohingya refugee camps",
         "admin": "Cox's Bazar",
         "country": "BD",
         "kind": "site",
-        "impact": "33 camps affected; deaths and injuries"
+        "impact": "15 deaths, 3,127 shelters damaged"
       },
       {
-        "name": "Manikganj",
+        "name": "Chattogram Division",
         "country": "BD",
-        "kind": "district",
-        "impact": "flash floods damaged crops on 222 hectares"
+        "kind": "region",
+        "impact": "43 of 44 deaths by 11 July"
       }
     ],
     "figures": [
@@ -5756,7 +5294,7 @@
       },
       {
         "label": "People affected",
-        "value": "1.28 million",
+        "value": "1.28 million people",
         "sourceName": "bangladesh.un.org",
         "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
       },
@@ -5767,63 +5305,27 @@
         "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
       },
       {
-        "label": "People needing assistance",
-        "value": "about 436,000",
+        "label": "Water points partly or fully damaged",
+        "value": "29,076",
         "sourceName": "bangladesh.un.org",
         "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
-      },
-      {
-        "label": "Displaced",
-        "value": "4,732 people",
-        "sourceName": "go.ifrc.org",
-        "sourceUrl": "https://go.ifrc.org/field-reports/18444"
       }
     ],
     "donation": [
       {
-        "url": "https://go.ifrc.org/emergencies/8013/overview",
-        "org": "IFRC GO",
-        "kind": "society",
-        "note": "Event DREF appeal page (MDRBD040); not a donation form.",
-        "specific": true
-      },
-      {
         "url": "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/",
         "org": "Bangladesh Red Crescent Society",
         "kind": "society",
-        "note": "Emergency appeal for the nationwide monsoon emergency; no donate button seen.",
+        "note": "2026 monsoon emergency appeal document for this event; does not take donations.",
         "specific": true
-      },
-      {
-        "url": "https://donate.bdrcs.org/blog/",
-        "org": "Bangladesh Red Crescent Society",
-        "kind": "society",
-        "note": "General fund blog mentioning 2026 flood response operations.",
-        "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/emergencies/8013/overview",
-        "title": "IFRC GO - Emergency - Bangladesh: Monsoon Depression in Cox's Bazar"
-      },
-      {
-        "name": "mappr.co",
-        "url": "https://www.mappr.co/bangladesh-monsoon-floods-2026/",
-        "title": "Deadly Monsoon Floods and Landslides Hit Bangladesh: Mapping the 2026 Disaster"
-      },
-      {
-        "name": "jagonews24.com",
-        "url": "https://www.jagonews24.com/en/national/news/94272",
-        "title": "49% of Cox's Bazar inundated in 8-day deluge, 32 dead"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-06T16:19:26.112Z",
-    "donationSearched": "2026-11-04T18:26:07.453Z",
-    "directSearched": "2026-11-04T18:26:07.453Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-06T21:57:01.362Z",
+    "directSearched": "2026-11-06T21:57:01.362Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-06T21:57:01.362Z"
   },
   "ifrc-flood-8014": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -5969,7 +5471,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2,
@@ -6115,64 +5617,57 @@
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8050": {
-    "at": "2026-11-04T18:26:07.453Z",
+    "at": "2026-11-06T21:57:01.362Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Floods in Myanmar from early July 2026 affected several states and regions, including Sagaing, Rakhine, Ayeyarwady and Kachin. UNICEF reported about 600,000 people affected by the end of August. GDACS lists the event as running from 4 July to 3 September 2026, with 11 deaths and 10,233 people displaced. No reports after early September were found.",
-    "ongoing": false,
+    "searches": 2,
+    "summary": "Monsoon flooding in Myanmar began on 12 August 2026 and affected parts of Sagaing, Rakhine, Ayeyarwady, Kachin and Kayin. UNICEF reported about 600,000 people affected as of the end of August 2026. GDACS reported 11 deaths and 10,233 people displaced. No reports after end August 2026 were found, so the current status is unconfirmed.",
+    "ongoing": true,
     "places": [
       {
         "name": "Wetlet",
         "admin": "Sagaing Region",
         "country": "MM",
-        "kind": "district",
-        "impact": "Villages and paddy fields submerged; people forced from homes"
+        "kind": "town",
+        "impact": "Floodwaters covered villages and paddy fields"
       },
       {
-        "name": "Lemyethna",
-        "admin": "Ayeyarwady Region",
+        "name": "Sagaing",
         "country": "MM",
-        "kind": "district",
-        "impact": "Severe inundation in late July"
+        "kind": "region",
+        "impact": "Villages and fields flooded; 230,000 affected"
       },
       {
         "name": "Rakhine State",
         "country": "MM",
         "kind": "region",
-        "impact": "Named by UN as flood-affected"
+        "impact": "Named as affected by flooding"
       },
       {
-        "name": "Kayin State",
+        "name": "Ayeyarwady Region",
         "country": "MM",
         "kind": "region",
-        "impact": "Flooding after Salween River broke banks"
+        "impact": "Named as affected by flooding"
       },
       {
         "name": "Kachin State",
         "country": "MM",
         "kind": "region",
-        "impact": "Named by UN as flood-affected"
+        "impact": "Named as affected by flooding"
       },
       {
-        "name": "Mandalay Region",
+        "name": "Kayin State",
         "country": "MM",
         "kind": "region",
-        "impact": "Flooding reported"
-      },
-      {
-        "name": "Bago Region",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Flooding reported"
-      },
-      {
-        "name": "Shan State",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Flooding reported"
+        "impact": "Salween River reportedly broke its banks"
       }
     ],
     "figures": [
+      {
+        "label": "Affected",
+        "value": "600,000 people",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
+      },
       {
         "label": "Deaths",
         "value": "11",
@@ -6184,37 +5679,29 @@
         "value": "10,233",
         "sourceName": "gdacs.org",
         "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104011&episodeid=13&eventtype=FL"
-      },
-      {
-        "label": "People affected",
-        "value": "about 600,000",
-        "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
-      },
-      {
-        "label": "Relocated to relief centres in Sagaing",
-        "value": "more than 11,400 people",
-        "sourceName": "thestar.com.my",
-        "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected"
       }
     ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-06T16:19:26.112Z",
-    "donationSearched": "2026-11-04T18:26:07.453Z",
-    "directSearched": "2026-11-04T18:26:07.453Z",
-    "directSearchVersion": 2,
-    "direct": [
+    "donation": [
       {
-        "url": "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/",
-        "org": "Worldchefs (fundraiser led by Aktion Myanmar – Hilfe für Entwicklungsländer e.V.)",
-        "kind": "local",
-        "note": "School supply sets for children in flood-affected areas, via bank transfer.",
-        "title": "Donate to Support Children Affected by Flooding in Myanmar - WORLDCHEFS",
-        "published": "2026-08-11T18:26:07.453Z"
+        "url": "https://www.redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA/",
+        "org": "Myanmar Red Cross Society",
+        "kind": "society",
+        "note": "Standing Emergency Fund for floods and other disasters, not specific to this event.",
+        "specific": false
       }
-    ]
+    ],
+    "sources": [
+      {
+        "name": "unicef.org",
+        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
+        "title": "Myanmar 2026 Monsoon Emergency Response"
+      }
+    ],
+    "membersHash": "ifrc|MM#41a7e660",
+    "donationSearched": "2026-11-06T21:57:01.362Z",
+    "directSearched": "2026-11-06T21:57:01.362Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-06T21:57:01.362Z"
   },
   "ifrc-flood-8052": {
     "at": "2026-10-24T17:51:09.606Z",
@@ -6663,7 +6150,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-05T00:08:17.816Z",
     "directSearched": "2026-11-05T00:08:17.816Z",
     "directSearchVersion": 2,
@@ -8305,81 +7792,6 @@
     "membersHash": "news|TH#5776bb7e",
     "seen": "2026-10-24T07:44:33.939Z"
   },
-  "news-storm-storm-be-20a9561eb0": {
-    "at": "2026-10-23T17:38:11.860Z",
-    "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "Storm Austen reached Belgium on Friday 23 October 2026, bringing strong winds and rain. Code orange wind alerts were issued in several provinces, and parks and coastal areas were closed. Winds and rain were expected to ease after 22.00, with rain warnings running to Sunday 25 October. Authorities in West Flanders reported fallen trees and branches on public roads, and the Westhoek fire brigade had received 210 storm damage reports.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Zonnebeke",
-        "admin": "West Flanders",
-        "country": "BE",
-        "kind": "town",
-        "impact": "fallen trees and branches on public roads"
-      },
-      {
-        "name": "Ieper",
-        "admin": "West Flanders",
-        "country": "BE",
-        "kind": "town",
-        "impact": "fallen trees and branches on public roads"
-      },
-      {
-        "name": "Woumen",
-        "admin": "West Flanders",
-        "country": "BE",
-        "kind": "town",
-        "impact": "fallen trees and branches on public roads"
-      },
-      {
-        "name": "Kortemark",
-        "admin": "West Flanders",
-        "country": "BE",
-        "kind": "town",
-        "impact": "fallen trees and branches on public roads"
-      },
-      {
-        "name": "Lo-Reninge",
-        "admin": "West Flanders",
-        "country": "BE",
-        "kind": "town",
-        "impact": "fallen trees and branches on public roads"
-      },
-      {
-        "name": "Houthulst",
-        "admin": "West Flanders",
-        "country": "BE",
-        "kind": "town",
-        "impact": "fallen trees and branches on public roads"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Storm damage reports",
-        "value": "210 in the Westhoek fire brigade region",
-        "sourceName": "brandweerwesthoek.be",
-        "sourceUrl": "https://brandweerwesthoek.be/stormausten/"
-      },
-      {
-        "label": "Interventions",
-        "value": "170 total, 65 for storm damage",
-        "sourceName": "brandweerwesthoek.be",
-        "sourceUrl": "https://brandweerwesthoek.be/stormausten/"
-      },
-      {
-        "label": "Traffic congestion",
-        "value": "about 250 km on Flemish motorways",
-        "sourceName": "focus-wtv.be",
-        "sourceUrl": "https://focus-wtv.be/nieuws/live-storm-austen-trekt-over-west-vlaanderen"
-      }
-    ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|BE#a8ad358f",
-    "seen": "2026-10-23T17:38:11.860Z"
-  },
   "news-storm-storm-be-d0ce796215": {
     "at": "2026-10-25T07:59:52.974Z",
     "model": "claude-haiku-5-5",
@@ -8822,105 +8234,6 @@
     "membersHash": "news|NL#1751978d",
     "seen": "2026-10-25T13:34:13.512Z"
   },
-  "news-storm-storm-nl-928fdf3a3c": {
-    "at": "2026-10-23T17:38:11.860Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Storm Austen was forecast to affect the Netherlands from 23 October 2026. The KNMI issued code yellow warnings for Limburg, Zeeland and South Holland, with gusts of at least 75 km/h expected. As of 23 October, no source confirmed damage in the Netherlands, and no casualty figures were reported. A report of a tree falling on a house in Volkel, North Brabant, could not be verified. Forecasts said heavy rain and stronger gusts would return on the evening of 23 October.",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|NL#13198000",
-    "seen": "2026-10-23T17:38:11.860Z"
-  },
-  "news-wildfire-wildfire-id-cb9e0b88d2": {
-    "at": "2026-10-23T12:11:09.903Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Forest and land fires (karhutla) are burning in Indonesia. As of 22 October 2026, BNPB reported 11,202 hectares burned across three Kalimantan provinces. A fire in Bromo Tengger Semeru National Park killed four people in mid-October. BNPB says burned land is shrinking, and cloud seeding continues in West Kalimantan.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Bromo Tengger Semeru National Park",
-        "admin": "East Java",
-        "country": "ID",
-        "kind": "site",
-        "impact": "Fire killed four people, two seriously burned"
-      },
-      {
-        "name": "West Kalimantan",
-        "country": "ID",
-        "kind": "region",
-        "impact": "1,290 hectares burned; cloud seeding"
-      },
-      {
-        "name": "Central Kalimantan",
-        "country": "ID",
-        "kind": "region",
-        "impact": "7,938 hectares burned"
-      },
-      {
-        "name": "South Kalimantan",
-        "country": "ID",
-        "kind": "region",
-        "impact": "1,974 hectares burned; cloud seeding"
-      },
-      {
-        "name": "Boyolali",
-        "admin": "Central Java",
-        "country": "ID",
-        "kind": "district",
-        "impact": "2.55 hectares burned; fire reached villages"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "four",
-        "sourceName": "jatim.antaranews.com",
-        "sourceUrl": "https://jatim.antaranews.com/berita/1107417/bromo-wildfire-death-toll-rises-to-four-local-authorities-say"
-      },
-      {
-        "label": "Injured",
-        "value": "two with serious burns",
-        "sourceName": "en.antaranews.com",
-        "sourceUrl": "https://en.antaranews.com/news/436069/bromo-park-tracks-two-severely-burned-responders-as-fire-kills-four"
-      },
-      {
-        "label": "Burned area, Kalimantan",
-        "value": "11,202 hectares",
-        "sourceName": "en.tempo.co",
-        "sourceUrl": "https://en.tempo.co/read/2122138/forest-fires-burn-11202-hectares-across-three-kalimantan-provinces"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "en.tempo.co",
-        "url": "https://en.tempo.co/read/2122138/forest-fires-burn-11202-hectares-across-three-kalimantan-provinces",
-        "title": "Forest Fires Burn 11,202 Hectares Across Three Kalimantan Provinces - Environment En.tempo.co"
-      },
-      {
-        "name": "wral.com",
-        "url": "https://www.wral.com/news/ap/fa237-wildfire-traps-firefighters-and-volunteers-in-indonesia-s-mount-bromo-national-park-killing-4/",
-        "title": "Wildfire traps firefighters and volunteers in Indonesia’s Mount Bromo national park, killing 4 :: WRAL.com"
-      },
-      {
-        "name": "en.antaranews.com",
-        "url": "https://en.antaranews.com/news/437431/prabowo-approves-rp240-billion-in-wildfire-aid-for-west-kalimantan",
-        "title": "Prabowo approves Rp240 billion in wildfire aid for West Kalimantan - ANTARA News"
-      },
-      {
-        "name": "jatim.antaranews.com",
-        "url": "https://jatim.antaranews.com/berita/1107417/bromo-wildfire-death-toll-rises-to-four-local-authorities-say",
-        "title": "Bromo wildfire death toll rises to four, local authorities say - ANTARA News Jawa Timur"
-      }
-    ],
-    "membersHash": "news|ID#2d7007c2",
-    "seen": "2026-10-23T17:38:11.860Z"
-  },
   "usgs-earthquake-us6000u1cf": {
     "at": "2026-10-31T00:14:33.222Z",
     "model": "claude-haiku-5-5",
@@ -9109,7 +8422,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-11-06T16:19:26.112Z",
+    "seen": "2026-11-06T21:57:01.362Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
