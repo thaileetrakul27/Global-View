@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-06T07:18:29.895Z",
+  "updated": "2026-11-06T16:19:26.112Z",
   "fetched": {
-    "societies": "2026-11-06T07:18:29.895Z",
-    "uncr": "2026-11-06T07:18:29.895Z"
+    "societies": "2026-11-06T16:19:26.112Z",
+    "uncr": "2026-11-06T16:19:26.112Z"
   },
   "societies": {
     "AF": {
@@ -2428,10 +2428,6 @@
       "url": "https://crisisrelief.un.org/donate-bangladesh-crisis",
       "name": "Bangladesh"
     },
-    "PS": {
-      "url": "https://crisisrelief.un.org/donate-opt-crisis",
-      "name": "the Occupied Palestinian Territory"
-    },
     "MZ": {
       "url": "https://crisisrelief.un.org/donate-mozambique-crisis",
       "name": "Mozambique"
@@ -2439,6 +2435,10 @@
     "CD": {
       "url": "https://crisisrelief.un.org/donate-drc-crisis",
       "name": "the Democratic Republic of the Congo"
+    },
+    "PS": {
+      "url": "https://crisisrelief.un.org/donate-opt-crisis",
+      "name": "the Occupied Palestinian Territory"
     },
     "SS": {
       "url": "https://crisisrelief.un.org/donate-south-sudan-crisis",
@@ -2719,63 +2719,12 @@
         "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
       ]
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-05T07:19:24.635Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
     "kksh.org.al": {
       "ok": true,
       "reason": "donation word \"dhuro*\"",
       "checked": "2026-11-05T07:19:24.635Z",
       "chain": [
         "https://www.kksh.org.al/"
-      ]
-    },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-05T07:19:24.635Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
-    "ayodonor.pmi.or.id?page=index": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-05T07:19:24.635Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/?page=index"
-      ],
-      "blocked": true
-    },
-    "ifrc.org/national-societies-directory/indonesian-red-cross-society": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-05T07:19:24.635Z",
-      "chain": [
-        "https://www.ifrc.org/national-societies-directory/indonesian-red-cross-society"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-11-05T07:19:24.635Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
-    },
-    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
-      "ok": false,
-      "reason": "names another kind of disaster",
-      "checked": "2026-11-05T07:19:24.635Z",
-      "chain": [
-        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
       ]
     },
     "jrc.or.jp/english/donate": {
@@ -2849,47 +2798,80 @@
     "local4:ifrc-flood-8073:hidaya.org/social-welfare/disaster-relief/nepal-flash-flood": {
       "ok": false,
       "reason": "asks for Zelle, as scams do",
+      "checked": "2026-11-06T07:18:29.895Z",
       "chain": [
         "https://www.hidaya.org/social-welfare/disaster-relief/nepal-flash-flood/"
-      ],
-      "checked": "2026-11-06T07:18:29.895Z"
+      ]
     },
     "ayodonor.pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-06T07:18:29.895Z",
       "chain": [
         "https://ayodonor.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-06T07:18:29.895Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Colombia\"",
+      "checked": "2026-11-06T07:18:29.895Z",
       "chain": [
         "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/"
       ],
       "place": "Colombia",
       "name": "Oxfam GB",
-      "title": "Oxfam GB | Colombia Earthquake Appeal",
-      "checked": "2026-11-06T07:18:29.895Z"
+      "title": "Oxfam GB | Colombia Earthquake Appeal"
     },
     "donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-06T07:18:29.895Z",
       "chain": [
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1"
-      ],
-      "checked": "2026-11-06T07:18:29.895Z"
+      ]
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-06T07:18:29.895Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
+      "blocked": true
+    },
+    "go.ifrc.org/emergencies/8079/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8079/overview"
+      ],
+      "checked": "2026-11-06T16:19:26.112Z"
+    },
+    "ifrc.org/emergency/nepal-flash-floods-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
+      ],
       "blocked": true,
-      "checked": "2026-11-06T07:18:29.895Z"
+      "checked": "2026-11-06T16:19:26.112Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-11-06T16:19:26.112Z"
+    },
+    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
+      "ok": false,
+      "reason": "names another kind of disaster",
+      "chain": [
+        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ],
+      "checked": "2026-11-06T16:19:26.112Z"
     }
   }
 }
