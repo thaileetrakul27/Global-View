@@ -2,7 +2,7 @@
   "code": "BE",
   "name": "Belgium",
   "kind": "local",
-  "updated": "2026-11-05T16:54:03.811Z",
+  "updated": "2026-11-06T00:03:05.600Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "BE:fr",
@@ -10,56 +10,109 @@
   },
   "articles": [
     {
-      "title": "'Nous devrons, pour la deuxième année, passer à des douzièmes provisoires', annonce Bart De Wever à la Chambre",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQmNMeEdvcVBLS0RkUHNVNjdQV3JhVmV5R0JmRG5Jc1d0eXFuNkdpbWVFU1JuVEVCTnU4bmZvVWxwNFVpeTdic0tzRlJfMlRiQ3lGc1lCQ2pFMnUzeVBnR2xkVWZQVTFTb256OEZhSUo3OTFpaVNkelNOdkF5SC1xbVNCVHpMQXYxUEtraVZJR3ZZRlNSZmlzTlY1c2xZV3FTMXpvek1OVXRMWmdsc1Ewa3lPQ0tpTVVwdHA5c0JfVldNSHZzcS1NSFl4MUJ4R0JiUG1UWXdOU19ZZw?oc=5",
-      "outlet": "RTBF",
-      "outletUrl": "https://www.rtbf.be",
-      "published": "2026-11-05T15:09:37.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "\"For the second year, we will have to switch to provisional twelfths,\" announces Bart De Wever in the Chamber",
-      "about": [
-        "BE"
-      ]
-    },
-    {
-      "title": "Grève nationale en France : 270.000 manifestants dans 180 cortèges hors Paris",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOUVNtYUtnakJkTUJOeWRwUnp1X2xIY28tT3BCXzc4a3ZWV0cwSVJ2R2ZqZTN4U292VDIzYW1vbWN4QzBLd2JSSmIybEVzRkt0bXg1OHFmMmZQRXRvcVlKMGhDRVdlXzgwaHJBNXBsOF9Bc21wN3lqbWtEMlNCSk5oc0hRaXFTRVlSb2pQYlVoQWRXcVpKdWhQb3J5R0tfWHZHdUpYbUo5Z2tDdjIwT2hrNFVrbzNRZGpQR1ZaT0g0UG1KNnJrTFMwZ2tlVVh6VkdBSno4b1NIbktwNlVneFkzZjI5YmF0bVUzSDBHaEpR?oc=5",
-      "outlet": "La Libre.be",
-      "outletUrl": "https://www.lalibre.be",
-      "published": "2026-11-05T12:58:00.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "National strike in France: 270,000 protesters in 180 processions outside Paris",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Évasion à la prison de Haren : le détenu toujours en fuite",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQT0dFWFNqTmpzVnNQYzBNbWFnZGRZT2wzT3VNWWhVaU5vNFlkcXc2Ti0ya2xQV2VQWnJtYm5fek91VzlGank2NnFiUTVwV1hXRlhPaHJQT1htMzNjVjJwSW91S01PQm5JMDN1aHVaWmlqazA2Z283OTZNaGk0QjRPQkVFU2dHNW56NjlJYjZXVU5oME9oSGZTYS0xM0w0RkZZdXhiQVQwQ1RibW5CYTlNZHBlZGpOUVJkT0hxdFRVWQ?oc=5",
-      "outlet": "RTL Info",
-      "outletUrl": "https://www.rtl.be",
-      "published": "2026-11-05T14:24:20.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Escape from Haren prison: the inmate is still on the run",
-      "about": [
-        "BE"
-      ]
-    },
-    {
-      "title": "Un avion atterrit à Brussels Airport après un « signalement suspect », des alertes à la bombe sur d’autres vols européens",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbm83UGtTaWhNck9XNWVuS043QVdtOGtKd2J3MW80T3pfUm1ja2lqVkZyclJTUUFQeFVUZ3BDN2trRkVjWnRBWW9OMTVqTndSWHVtblNoT2otWWlNLVRiaGUtT29hR016RUtwaGFKZkVFeUJzRFdDMWRWczlVYmN5Rkk3d2N3NEl1djY0cUIyODBhR29fdmZZNFM0RjE5anVXUXpjQnZjblR3ZFI3M3NpVUZIN3ZHWHlScy1HZktLSGMwdS1B?oc=5",
+      "title": "Guerre en Ukraine : Donald Trump évoque un prochain « très grand » accord avec la Russie",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOW9ZZmRmaVVNYTNkVzRkRUVWQ1k1dlVvQ3diOFBYbWdIYVMwRmstVFJFbmJlejNJTm1lUmlpTUU0UXdxei14T2xKYmFVMnlWS1BBVzVoQk9VbG5fbWZqcGJCa1hSeFA0QlRrNUJONlRfVFY0NDMwR04xOWlqSkR5R0pMcExqVTZuR2dZM05tM1A2UlRwMmN3aU1UbmpzY013bE9PdDNnYnV3M3VZUmlsZ2kyWWEzTE02WTZtSThVazg?oc=5",
       "outlet": "Le Soir",
       "outletUrl": "https://www.lesoir.be",
-      "published": "2026-11-05T09:30:36.000Z",
+      "published": "2026-11-05T21:57:35.000Z",
       "outlets": 5,
-      "trending": false,
-      "en": "A plane lands at Brussels Airport after a \"suspicious signal\", bomb alerts on other European flights",
+      "trending": true,
+      "en": "War in Ukraine: Donald Trump mentions an upcoming \"very big\" deal with Russia",
+      "about": [
+        "UA",
+        "RU",
+        "US"
+      ]
+    },
+    {
+      "title": "Le Premier ministre Bart De Wever sort du silence : \"Nous devrons recourir aux douzièmes provisoires, c'est un échec cuisant\"",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQR2t3OV9QWTJNbU15WjI5b3M1Y1F1LWNIam91WG8wMGowSEcxUjJDQlMtRzBsOUxFeW9ZM1hUU2JlN044a3N2MEgxU0JwRi1ZRTJKVFJBVG9Na3dPTkhHb3oxRTdhNFhhemxnZTZoNHVoSE1iNkFpckJqU0RPTk5RZE45Q1lucmo4TXNpZG8xSXRjNnBxUWU4UkM1Q3ZXR3A3TjNnTzh4bUQxYTUweGVVeGpGUWJlcHhXNWhWVWQxUHlael9Pa2l6N2k3ZU8wZlJHMjRNX2tmUlZoY0RUTTJjUDgwQXVkcnYxbmNIalFkU1hGcmhFUFlvOEo5NGt5RGxWdXhZYmNVYS05TmFJRFZRYjFCdkw4OTRhMGtrcS1OUzQtV1lHTDdfTVc3Rl9peHc?oc=5",
+      "outlet": "La Libre.be",
+      "outletUrl": "https://www.lalibre.be",
+      "published": "2026-11-05T18:48:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Prime Minister Bart De Wever breaks his silence: \"We will have to resort to provisional twelfths, it's a resounding failure\"",
       "about": [
         "BE"
       ]
+    },
+    {
+      "title": "« Incompatible avec nos valeurs » : la Californie prend une décision historique sur la peine de mort",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQmVMMS1SRzZrUEF5Tmp2aFdJbnNIZjdjQ2g4X0hGSXRocUtVTzZSREp5QklmeE9kNzV2dUlWb296LUh2d2RTTV9ZNFV5bmEyNm1FWDBKQzBLem43NnVfOExsMTdHUTVKZERIRC1SMGhvc19ndFVLQmFCMkpsSGh1NUZmcVJsaU9SVEZfZ2R3dVBKUWFCVDIwcVd4VXBOU1k2eTdJZXMwUkFKZGdVRFB1OFIyVldSSFlSdXFvekxhd2tJQkJPd1FOUE55bVc?oc=5",
+      "outlet": "Sudinfo",
+      "outletUrl": "https://www.sudinfo.be",
+      "published": "2026-11-05T20:33:53.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "\"Incompatible with our values\": California makes a historic decision on the death penalty",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Décès d'Esekia à Frameries : 21 ans de réclusion pour le papa, 10 ans pour la maman",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWDdtZlEyb01Hb0EtOUNGOGJCOXpSTEVZbllzUmR1M3c2RDkyM1EwTnFSNVlxckF0SEkwcE1WbUMySl9jVU1Ra0VqR3NoTk0wOHlFREtCVDJLbnJDQW5NMENLUXluZTFxSTZ5MVZGbkVTZVdMZTJXd0RjclJEMVJtbk92MWxnRTZNRDVJR2hxbERObWFEZF84Y2Frd0tWN1VtaGVGLWZabTZIb1hobk5SVl9MeHBoajVkLWxaWmhTRFNZdWZudnpoZ09QZU40bXdmV2dGOWhmZ2c4NlBPNTctV3lraWgyT3czMUtEVElLd3RNLXc?oc=5",
+      "outlet": "DHnet",
+      "outletUrl": "https://www.dhnet.be",
+      "published": "2026-11-05T20:42:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Death of Esekia in Frameries: 21 years' imprisonment for the father, 10 years for the mother",
+      "about": [
+        "BE"
+      ]
+    },
+    {
+      "title": "Midterms 2026 : comment les Démocrates se sont imposés dans les États sudistes traditionnellement républicains",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNWVFZX000cjhYR0sxeDFNaGZoYVl6N2RMc3R0bGNkdDNhcWk3eDJZeTl3U0JyVllmQ0FZQXlxZlA1bTlzMXE5V2JuNXhqMWpGNm9KZ2lHYVh3ZFZ4ck1kM2diTmNIOGlHQ1J3VjUwbE1mYkFEdjNSWmpYVUZ2a1Z1R3JFLVg5eUF6ay1xLTg2bk5HZlFHM2M4cUkzN3RoY3BuTEZMeXVpemRBaWoyTnNxQlBHUTUzLU5TaUZWblZrYVQ2TjdzQ1FveGR2RlEtZmtKRlRGaUZ2d3haZTF2Z0E?oc=5",
+      "outlet": "RTBF",
+      "outletUrl": "https://www.rtbf.be",
+      "published": "2026-11-05T14:52:24.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Midterms 2026: how the Democrats prevailed in the traditionally Republican Southern states",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Le MR défend l’invitation du fils du Shah d’Iran à la Chambre",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObk1lUGNja21lNmlNMVZIWlp5T2UxRVZNQkQwd0JDZXlOQndIdTFEWVRKQ1RaNTRJakxXY0czNGxXX1RUc18wMUJXN1haQnQ0S0dPSDJoNmcxVkpHM0lEMXdBb2E0ZjBEcmE1dXVlVHpKYU1fQW9uaV9ZdHhTbHl5cV82bWVPb2h1V0hIb3ZUR0dUaGJZeFhZUndiVktiSWFKNU1laXQtODE?oc=5",
+      "outlet": "Le Soir",
+      "outletUrl": "https://www.lesoir.be",
+      "published": "2026-11-05T18:27:23.000Z",
+      "outlets": 6,
+      "trending": false,
+      "en": "The MR defends the invitation of the son of the Shah of Iran to the Chamber",
+      "about": [
+        "BE",
+        "IR"
+      ]
+    },
+    {
+      "title": "Grâce à un doublé de Zeneli, l'Union a été renversante à Vigo pour continuer à rêver du top 8 de l'Europa League avec sérénité",
+      "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxPU0hUb0NtMUd3Y3A2MGtyblU1bnBtY29BUHhpRVdSTjhHTzFjRWRrNGlJdjNIRkU0VjZsN1Y0d3dxcmZJY0Z3WnVneFVhU3lsYjY0ZzlrQVBNTzdTZ1BCbXJSYjVLUTVVUW5SQVlrU21QZnhIUjg0bHJyWVZNVFEzRDBnMXpHQU9UQWRaRkcwYy15dkU0SUhUXy1jNG9tZXpiU0ZDd2RPN1h2U1YteFl6RHRDTHJwWXdpSEFlRGk3Z3c2NXhxRzNqLXY0NHV1RFdrOGdjSG9EdFRaZnNRTkZtbW9yZlJ4T0Q5U2pKU3daQVNIVm1hQmRUd2MwWk8xWVlBakJYb3pHUzhqR09GYk1VTFo1YTd4c2cyUjRxN0RUNk1Wcm5veTZjM29VcTlxOGpmNUVGV3JkYUhFbnRzNzhqU1B0WHJKX0p5ME9wUFF5aW5tQQ?oc=5",
+      "outlet": "DHnet",
+      "outletUrl": "https://www.dhnet.be",
+      "published": "2026-11-05T21:57:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Thanks to a brace from Zeneli, Union were stunning in Vigo to keep dreaming of the Europa League top 8 with serenity",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Sony se replonge dans les eighties avec un casque filaire Walkman modernisé",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcG5hVjAxUWhjZUgyTmRESGxtYlFGcXlBRWNwdktrOUZoLVdlMVBoTlNqMEtVcDNsZ0FKcFdoYlBjSl9UdXp0a1QyX3U3T1FPUHR1eU82NEZ3VDI2SnQxcDhaTGRKdTRDVG5GZUJHUVcxUV9Fbzk5R0dIUU0zNEsxTUp2eC1GeGhDcEwwam1Ob2NRTS1pNG9RSlpDY1Bral9rNVZPcU5yaHRPU3pTVFlNLWFYYW9MZVpTS0ZJZXY5UzAtd2sxOTBqTE1fSGFlb1FIYzRjN1Z0SUFWSm5VU2tWVA?oc=5",
+      "outlet": "L'Echo",
+      "outletUrl": "https://www.lecho.be",
+      "published": "2026-11-05T20:46:21.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Sony dives back into the eighties with a modernised wired Walkman headphone",
+      "about": []
     },
     {
       "title": "Israël : la principale liste arabe annonce soutenir Eisenkot pour former le prochain gouvernement",
@@ -75,29 +128,117 @@
       ]
     },
     {
-      "title": "Météo : des températures négatives cette nuit dans une partie de la Belgique",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNU40WmNoSjZFYm1MVzhsT1lHanVJeEJWdGF3VFJaTTk5dnB1Q1F4R29WRnBDamI0VllUcmg5dFR2QmVLdFlwUlRTSVhjTFh0Rm5mWjEtS25DVGhtSVdRYlJVTVlRMWQ2cmYyWmlXaWQ1SlIyVXBNQU41VU95czN2el80Q3ZzWGRNTVl2Mmc2dmpIWVVkdHIzeFRRV0VRRGNRVnU5OTJBUF9tWEVIbjdLZS1vWmpaZ3dJd2MzSkRoZw?oc=5",
-      "outlet": "Le Soir",
-      "outletUrl": "https://www.lesoir.be",
-      "published": "2026-11-05T13:19:33.000Z",
+      "title": "Anderlecht joue avec son bonheur mais assure l’essentiel contre Salzbourg en Europa League",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQcGNmY09QMzVWR0FSZWtvTnVwMVNyMkNOYmZBZk5hR2Q4MW03aV9LY2ljOFpJTWhLNTRxcnotbHkwZGN2MkJSZ0IzcXAzSzZJOHR4ZmxHUVJjeU5MalNRTHpOaE1fQWhObGlnMW91MTZBNWxhRTR3VHJXTVgzV1NXZy04cmFUcGtxOUVJejFXZDIydXFUTWxNbWVaRzloVW9KdGJBM1dQd0dqVHNjWmhHTTBZcDY2Q2dNbGoxUzdJYXhaS3VvRUZSMkxhNFh1eTh1dGpTYWlhVHFQSEZycl8wbVVSV2xIQTg?oc=5",
+      "outlet": "RTBF",
+      "outletUrl": "https://www.rtbf.be",
+      "published": "2026-11-05T19:58:19.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Weather: negative temperatures tonight in part of Belgium",
+      "en": "Anderlecht plays with its luck but secures the essentials against Salzburg in the Europa League",
+      "about": [
+        "AT"
+      ]
+    },
+    {
+      "title": "Le verdict est tombé pour Marlon Fossey : le capitaine du Standard souffre d’une rupture du ligament croisé du genou et ne jouera plus cette saison !",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZTZmZW12ODY2MDZoMWRfbEFHVGp3LWxTQUotcEFxN0Q0NFg3Ujl0YTZBZ3BLQlRZcUFhOFphZlBUN3hGTnpGU1B1eHl5azJydWZtWUpzMUloSk1pc202UU9kamt1T3pVdHFrZkVDempMbVp4SGZKdjRSaElZLU15bnQ5ci01MGlGS1hhbktNOFFDTGF5cjdxeWxLTmpfQzF0cXpqc01fcG9Wc1NSWHNLYU0za01BRFZBRzNabEdPdVViRkhUdEF0bw?oc=5",
+      "outlet": "Sudinfo",
+      "outletUrl": "https://www.sudinfo.be",
+      "published": "2026-11-05T20:02:58.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The verdict is in for Marlon Fossey: the Standard captain has ruptured the cruciate ligament in his knee and will not play again this season!",
+      "about": []
+    },
+    {
+      "title": "« Mes lasers spatiaux n’ont pas fonctionné cette fois » : voici pourquoi la défaite républicaine lors des Midterms est un revers de taille pour… Elon Musk",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOGVFTm5FVUNGWHdWbzVRaUZTc0xCTXlnc2taQU9vYzFmVGRrSkp0QWwyVmUxSVJqUUtzeEtyOFRwV0lsbVRwb0YxRjhERnJDTkNoMG01WmxCT0ZlV1EydHNMSmpHRlpjdlcwMnJJcTBoOGRZNUJZSndpR25XQk5LX0FuUnJya2xTU0M1THNMdnpfQ3dPRE1nc1RfZ01YT3E3VWljMFAzSGstbmw5d2ltWUxXWXphT041ODh6WnRBZ0tnbzJRSXRMaGFYZ1lXa1dGNzBOTlA4Q2s?oc=5",
+      "outlet": "RTL Info",
+      "outletUrl": "https://www.rtl.be",
+      "published": "2026-11-05T18:30:11.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"My space lasers didn't work this time\": here is why the Republican defeat in the Midterms is a major setback for... Elon Musk",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Emporté par un scandale bancaire, le président Santiago Peña démissionne",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeWxuaWZEc3RSUklHNmNUXzBVX0gxX3JjYUFzbWZrb0REOWYyQWlRR1VpUUNHYnQyMG5zdGlIcS1RSHdQOFRTdGcyelhLNFEwN2Q0MXl5Mm4yQ0JGWDVjUFV5clN2OWM3LU9WSlJiSVZoNGI4UW1qTGNPd0RyY2JzQVZHckd3SnN2WDF0dk9KVUFETElfcmJUazdLY2hiRHlVZkJWZmJCaTJZX0Zn?oc=5",
+      "outlet": "7sur7.be",
+      "outletUrl": "https://www.7sur7.be",
+      "published": "2026-11-05T16:51:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Embroiled in a banking scandal, President Santiago Peña resigns",
+      "about": [
+        "PY"
+      ]
+    },
+    {
+      "title": "Incroyable découverte dans les valises de trois voyageurs à l’aéroport : plus de 3.000 mygales vivantes cachées dans des chaussettes ! (vidéo)",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNemZVZFV5UThPazNpTnhWejFVZXpSQ29XM2NFLWw0NHliX3BjdUFfRHJ3NXBPcHhEdFJKSTI4bDVIZGlEUF9BT05tck1VaXZDeVl1RmxsSTRBTFJRMlYwTFd2STFZWDVVMTZzc21uenRuOWhRN3ZNY3VlSmlwSGdJQTBvdXlWcmVFSWRoQmY3ZHhvVHBCUk80dWE3Vk1Gdi1ieXJLa09aM2NBemI0VElyMW9iNWx1RXFIQnpmRms2Q3Q2bWVyR2wxSGJsQWk?oc=5",
+      "outlet": "Sudinfo",
+      "outletUrl": "https://www.sudinfo.be",
+      "published": "2026-11-05T21:13:57.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Incredible discovery in the luggage of three travellers at the airport: more than 3,000 live tarantulas hidden in socks! (video)",
+      "about": []
+    },
+    {
+      "title": "Réforme des pensions : le site de mypension.be a enregistré un afflux massif et double son record de vues",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOb2JTa0pyMG5WX2lWMEtDbHhpUGVydEdWcXhxcW9OcFdvSEgzTzMxUHdNaFRTS2tQVDJ6S09keW5KZW9leV9kNkNUR1dJVjFtR1FMTVNxT0V5RDMwc1dzeVRIM2JEZExKc1dpOE5Dd3pUaHBRWE0yMGZVWEktUHI2bnlTZVQ0dERJQXhOdzlKa1VjVTdQbnl1d2xCYjVBMWRYZnlneW9NdVU2MGZDVEJtRk5SWDYzRXdwLXN5LXhaM2xDdi1rbVpiZ2pyMUd5RTZTeTc2YVo5bw?oc=5",
+      "outlet": "RTBF",
+      "outletUrl": "https://www.rtbf.be",
+      "published": "2026-11-05T14:35:02.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Pension reform: the mypension.be website recorded a massive influx and doubled its record number of views",
       "about": [
         "BE"
       ]
     },
     {
-      "title": "Après avoir englouti une fortune dans les élections, Elon Musk risque gros au Texas",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPM3czYWczcmwxVjJ6QjVya19ocXhMQ0hlaEhweFZRRjJ2WFRVTHZEZVNGYlJsM0JJOE1tSGM1RmVBaUNFOUhzTW1oUWhZWVNaYjV1TkFpUjlMbDh5U0VPZnhSemNSMGFfSVpxbjVsQ2dDWDdhVTg2STFpQkxYTE1ZUGlVTWlzLXl6NTNvWC1sbktVaGNNNGVPN2VuSXNNLXBIR0s2aDVmaTFRck9mdF9MbXljS3JRTGJTcXRXNGpvY3Z3Y0t5Q1JTWXp0Ny0yZS1SX19DY3ludXZjZUdTS1FnS2VybnExWFVvNXZRZENOU1UzUjVLMEYwcnoyeG9EYTI2OEJR?oc=5",
-      "outlet": "La Libre.be",
-      "outletUrl": "https://www.lalibre.be",
-      "published": "2026-11-05T15:02:00.000Z",
+      "title": "Une vingtaine de vols européens perturbés par des alertes à la bombe ce jeudi : des incidents à Zaventem et à Charleroi",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQ0M2U29zN2NwQUdvTVhYeUNOVjNJRk1sZ0M3OHZrQ1VaNTNyZzN1Mk5CV1V0bFVaOE5teTM2QjlYZFVhM1hKamtTdXNleFEwd1prckVwTWk3b2QtRTQwbUYtX2hwTi1LMThMTmJjRlQ1WEtSbFl3cnJnektSb3Z0TFI2aTM1ZUd6cGRDc2xjUy1xazR2UHdEeEpDbWxSZGpxT0Vya2VtY2dXQnhiY3dGRlV0c3VjbXp3Q1lmZnV5eHdFSUZnNGcydW13WjRmTEFWZGlRaUNHdWxOWjZxNmdEZQ?oc=5",
+      "outlet": "RTBF",
+      "outletUrl": "https://www.rtbf.be",
+      "published": "2026-11-05T14:58:19.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "After pouring a fortune into elections, Elon Musk risks big in Texas",
+      "en": "About twenty European flights disrupted by bomb threats this Thursday: incidents at Zaventem and Charleroi",
       "about": [
-        "US"
+        "BE"
+      ]
+    },
+    {
+      "title": "Cyberattaques contre des frigos de supermarchés en Belgique et en Europe : le Kremlin sort du silence et réagit aux accusations",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTkF1M0ZKU2hmbUx6NjRyZnBmQzVsbmQzVlJtZ2Z3N2Flck9CdlJQYTlaclZKSXZ2VHRKSXd6VU1LeVh0b0tXWFEwUXpRYXp3OTVxV1ZDU1hiR09pNkFvc2U4bUhlai0wNW5HNW96VHZzQUlNSVhrcnpZa3BrVXJkV1RwZ2Zic080VFNpZ0FUaC12dkV5SXBpdnZPX2E1U2dMYkpSRXJVOFZ0VU8yS2lvckZoNGJIbUpaRkd2ZkwyWFhKTmVqYVE?oc=5",
+      "outlet": "Sudinfo",
+      "outletUrl": "https://www.sudinfo.be",
+      "published": "2026-11-05T15:46:13.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Cyberattacks on supermarket fridges in Belgium and Europe: the Kremlin breaks its silence and responds to the accusations",
+      "about": [
+        "BE",
+        "RU"
+      ]
+    },
+    {
+      "title": "MR et Engagés ont besoin de l’opposition pour supprimer les provinces wallonnes, mais « pour le moment, c’est un peu flou »",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONFc5WndZSGN6dHRWVmlXbFlVb1YzYXVBYTdxckhCV2F3dFcteXdOQlRnT3lyZFd6WTZhSU9CdThqNTBqUzYtbVkySVFGVE0yQ3JBU3BzU2JzWWdfQlVDemUwbTA2RzI1M0ZPc3RvZkFiNFpIRk1CZmJRMUtDUXZnR2JZZndKUnhfQWNTOFNhaUNEZl9hNzhudHB1UzF2R0M2X0tIOEZ0VVRfdnJJZ1NYVFNxOEFJcW5qS1J0Y3BjNjdadnhxQUJxVENBZThMUUZnRHQzVjQ1VWI2OHEzUlhKTw?oc=5",
+      "outlet": "RTL Info",
+      "outletUrl": "https://www.rtl.be",
+      "published": "2026-11-05T20:03:03.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "MR and Engagés need the opposition to abolish the Walloon provinces, but \"for the moment, it's a bit unclear\"",
+      "about": [
+        "BE"
       ]
     },
     {
@@ -114,283 +255,150 @@
       ]
     },
     {
-      "title": "“Il faut une solution”: les patrons wallons veulent revoir l’indexation des salaires",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbWpRRTNMb1FvSURkR0hmR2cwVlVOQ2JGbGFIWDJnT2xTM3lFdTZHSGhVNmthT05tMFVBWUtIQkxhNk9YT1A2TXFlSnVZN3NsTTE1QUc2NXprZHpRWkJ1dnRScUg4NUl0ancyaVZzR3lnbm1WTWxlNjN2NE83dW10Z09jRk9aZ0pQLW5hQzMxSmVVcUNFUDVxUFBJV2hpWmlvb2RYQ01lbVM2bjZ2dTVNS3N1bGJkQXVKX3lyQw?oc=5",
-      "outlet": "7sur7.be",
-      "outletUrl": "https://www.7sur7.be",
-      "published": "2026-11-05T14:33:36.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"A solution is needed\": Walloon employers want to revise wage indexation",
-      "about": [
-        "BE"
-      ]
-    },
-    {
-      "title": "« Je travaille depuis mes 18 ans, sans un seul jour de chômage ! » : Christophe (52 ans), d’Houdeng, découvre sa pension reportée de plus de 2 ans, il est dégoûté",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVXJMOTRBb2ZZSlpNVzRLY3FUYU1ZZXNwZW9KZHVwRmtoa0VYSl84Qnp5aEJGbmxlVERVX05odzdPM2tCdGtqNmNfZmNELUluOTRibHRMOWo5V3pqdlpyc0JIS3JYaEUyS3lZaFFNSW52Ul9tUy1DSVplekRvME5lbjhYR3ZGV3JlSmJQM0ZERXJ2eUFVSGM3eDZaZjlzUzNCYUJFZVoybDFJMTU3dFdTQWFWMjMtOXpITV9zUDdidmF0Vk9GTXBGUA?oc=5",
-      "outlet": "Sudinfo",
-      "outletUrl": "https://www.sudinfo.be",
-      "published": "2026-11-05T12:00:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"I have been working since I was 18, without a single day of unemployment!\": Christophe (52), from Houdeng, discovers his pension postponed by more than 2 years, and he is disgusted",
-      "about": [
-        "BE"
-      ]
-    },
-    {
-      "title": "Une nouvelle cyberattaque touche un secteur critique : \"Cela devient la réalité de notre nouveau monde\"",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxONDUxbjh2dG00U1lMY1lzOWhDZXFKdW9RVjhFRlJCaWI0bzVCWHBUZmpleWkzTTlrb20xSHlZWDloaTRYYkZUckJSRUJ0SWY0UE5uNHdsT3VMcWc2NTRBSERqZ3pWOGxtRlpndUNMdVJsMlBERmtMdFZkMTZveE54RUVrbUY5UzZDQ0wtQ1NWLVFVaFFMc2o5cW1NSnlpcFJWOFhZcnIxTFRKUEVzUC1tSTM1blRFRDFuU3BPQURfNVZiOUpWMmhEMVlDaF9kWVJkZnRSVkxJLTFvVnhIZWwxYkhxYXZ2V09yWk56OTlfQkR1MXY1dUZaTzhkRmxGWHhFclZF?oc=5",
-      "outlet": "La Libre.be",
-      "outletUrl": "https://www.lalibre.be",
-      "published": "2026-11-05T10:22:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "A new cyberattack hits a critical sector: \"This is becoming the reality of our new world\"",
-      "about": []
-    },
-    {
-      "title": "Après les midterms, démocrates et républicains envisagent déjà l’après-Trump",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcnZSMEYyTzNqSlZBZjd1UUFsVEdBUC1ja0dxREx6OXBnOG9TMXJwU1Z6WUQtejk4WUY1VTB0VVBBWDNPYlBrUnZNWGlqZHJ0dHJ3dUc4NGQyVk12cEVTNHdKdHBYNFNXZW9RdVZCSjkwUWZoMVNNWW1OYUd4REdoQ0c4MjFoNjhyOTF0QTR0NFZ0SU9BUlgxblhmazkxdlRLa2I5WVczZm9jX2tJQWUyU0Jn?oc=5",
+      "title": "Guerre en Ukraine : le bilan de la frappe russe sur une école de Komychouvakha grimpe à 43 morts",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTF9TUkY0N05nanFYQUl5TE1ONmh0YXBQUGFTbWllY29jaVlHVUUzcXc5U2loNnNrS1drWUctTzNfNjducU9ENDhnX0FZU2F2RHZJb0gyWWx0TG02RmhuU3pHQlg1X0pFM19aQjdFUXNVTDVBM0o0N0lyTkJraFltV1ZCYkEzTTdLdlNqTW82aXlOcHhQTy0xWHJqRUxSWHdDclVhajNtWG5CQVphSlAtZWcxYnkwQlUtM2ZPVlJxMS1rRExFREZ4WF9hbw?oc=5",
       "outlet": "RTBF",
       "outletUrl": "https://www.rtbf.be",
-      "published": "2026-11-05T10:21:50.000Z",
+      "published": "2026-11-05T13:50:19.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "After the midterms, Democrats and Republicans are already considering the post-Trump era",
+      "en": "War in Ukraine: the toll from the Russian strike on a school in Komychouvakha rises to 43 dead",
       "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "\"Imaginez des flammes comme celles de Notre-Dame\" : grosse inquiétude sur l'état du Parlement britannique, sa rénovation pourrait coûter 48 milliards",
-      "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPREY2QjZjdnBXSnZwNXJhVTduSERzV1ZrRnUyOHV0a1BYNmozc0FCY1RCRl9kSUtSREtDRzVXVU8zQjV6XzVzdVBxWl9ycEEyWU5HTUh2RGd4RW9pMWlUWjRZZFEwOHdsRWZuNmtaRGhwVUxnYnV3Q3hFZW0xYTIwTkJBLTVGRkFFeTZqSGVObjNsODN0VzNsOGRBUFFzYzlrS2RsNk1COFo0b2c2TnhndzZMbEpvd1BCZkF2eEoza3NHUWlGZUtyZ0R4dmctMERBRDJKNWlVaUJ4VDhFM3NrZTdxdjNvVk50WmVFcmJUYjZ6M2tZSkotVHYtZmFqalNXMERBb1Ezd1hnaDBjNE0wSnBBZXdxcWs4SnhkOG95RXYwU3ByaWJBcmZqU3AzWU9Nd3V6UEdLdENIdw?oc=5",
-      "outlet": "DHnet",
-      "outletUrl": "https://www.dhnet.be",
-      "published": "2026-11-05T14:44:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"Imagine flames like those of Notre-Dame\": great concern over the state of the British Parliament, whose renovation could cost 48 billion",
-      "about": [
-        "GB"
-      ]
-    },
-    {
-      "title": "Midterms : Zelensky dit espérer plus de soutien américain pour l’Ukraine",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTi16WS1TYXJaTFFkYkktaUFtLTBwYWx6TVJLQ1FnWVZqZzRtTVhxaTFNVTlQTmFhdjM0R25naEN2RExaLUpzR3pYZE1oWExxaTJUVFhETHdyRVhveU43MUxUclAwekEwSmNqdFlEUFp1V1V0M19FUXlYSjdNM05DMzhVTktqMkJUOVZZb3dmem5sVUpXVlRYLVRzMGF3TU9uOUxCVEVhZ1ZKbS1POXJFOVdEcnQwTzlo?oc=5",
-      "outlet": "Le Soir",
-      "outletUrl": "https://www.lesoir.be",
-      "published": "2026-11-05T09:32:28.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Midterms: Zelensky says he hopes for more American support for Ukraine",
-      "about": [
-        "US",
-        "UA"
-      ]
-    },
-    {
-      "title": "Françoise Degois, la confidente de Macron mais qui n'est \"pas son amie\"",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNGtvNlBqNEowZlFIS1NaUG1Pc2VBb3Q3WWkzQTl4UlNpVnR1bGtCRFRRZU1rZC15R3RicGl5MVRiNXY3cUNVcE5oR1M0M2h3RUNwNHJpRldtTkpaQWFidUVYRjNVV2dFTjVTSi14LUd4eDZIaFQzWkJYdGJ4ZFQwbS1ablN2REFpM0pyYXVTeUEtaUlobFpBN3dlTTh0eU56bzZhN1hxNHVLcnRnZ2pjN3YzbE1mRTJvTDVvbzk2MVktcWJOLVFLdDhNS1BFSVJMdDVYMElCMjk4OGFqWVpRVG1YR3A?oc=5",
-      "outlet": "La Libre.be",
-      "outletUrl": "https://www.lalibre.be",
-      "published": "2026-11-05T13:37:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Françoise Degois, Macron's confidante but who is \"not his friend\"",
-      "about": [
-        "FR"
-      ]
-    },
-    {
-      "title": "Le trafic ferroviaire entre deux gares interrompu jusqu’à lundi après une collision entre deux trains",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQVpwa2R6MjQycjJ4ekJZeVZPa0N5b3NlbXIzdU5NbEttdGdvMGJBbWRjb1FMT2dYMWxQQ2JLZnRlV25VdWF2R1V4Z0NTb05XU2tjYndSWXZVVHV2Z3VkQVp2VVFfVUlzLUxfMFNobjdETXM2TWpRZTk2QmJtX2lvQW9sZk9jeUtvZTFkcGMxb0JHSEVNS2t0Q2MyZVNRRHJrNnA0M2VXUVptaF9tdHptYVUyVi1TREtISUFlMQ?oc=5",
-      "outlet": "Le Soir",
-      "outletUrl": "https://www.lesoir.be",
-      "published": "2026-11-05T06:56:16.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Rail traffic between two stations interrupted until Monday after a collision between two trains",
-      "about": []
-    },
-    {
-      "title": "Melania Trump réunit des représentants russes et ukrainiens à Washington avant les pourparlers d'Abou Dhabi",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOEhjRkJZcTJNR2ZwN1JwVUtZOEpjNUYxSVRTY0swZ2xYY3B5SFVUdU9lQWpzTXFvVlBXdzhZS0lBOHhFN2ZIaUc3eVRSRTlZeXYtZEFpYTl3Q3NuQm8zZHdZc181cmIyZFBPOHhfVS1PaXE3b1BxR1NERkowYmszd1FJLW41bTQtMi10MGFINkltaWY2aGc1cWd2VHBoU1RUa09lX1YyTnN3QjFLNkE?oc=5",
-      "outlet": "RTBF",
-      "outletUrl": "https://www.rtbf.be",
-      "published": "2026-11-05T06:42:59.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Melania Trump brings together Russian and Ukrainian representatives in Washington ahead of the Abu Dhabi talks",
-      "about": [
-        "US",
-        "RU",
         "UA",
-        "AE"
+        "RU"
       ]
     },
     {
-      "title": "L'Anderlecht d'Autriche a refusé de jouer dans le rouge et blanc de Red Bull : un nouveau club a été créé par les fans et lutte pour la montée en D1 !",
-      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOSkNqbXl2UzJNQWNEclg5VG45M1RVV1FqSFUzbzBKc1AzY2k5MjRmcmthbGxkNnFuRDFSSUNqUDVtN2RqLVluMGZpSlJYU3ZUTzJmd2twU2lxLV81UDdJenMtU3ZnNnZLcmM5dlJRcERXXzVMM3dfWVY3cjY5dUpsVENSNkFOZEJaeXdUT3NyWUptNU53TTVpdl9jVGxHeDExV2RZU0RMc3hlQVVqdjVqd1dFR0g5MGVLbno3RVhmQ2sxOUFTRlpHTDEyVDExcExOVFY0Y0VUQU9OX1VNNUY1b1JaTjQwcTN4VW5JS3M2WmVYQWh0dFRrMXgydzRtQnpWMkRBSHh4Q25XekF3cjZyWkRHWHFrSG5WaE5xWHlNdXpLVlI0TnU3dmJtNjBkZm5tYUJYX2FxdndUaTBWR25XMmYwM0E4TU9Ma3otYTlQN2N1N2NaVUhfSFFCejZZV21W?oc=5",
+      "title": "Grève nationale en France: Près de 1,6 million de manifestants présents, les derniers éléments de la soirée",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNLVc5YzBuX0FFa2hETnluNzJBSDFNdHdyMlFGZTlXdnpfUzdwUTNmend0M3FOOWJHS2VnWlpFem1pcHdWdGotX0JjSVZ0MTI0U1ZEZFJaSUVnSXh3dEkydWEyTnhvQVEtQjlyS1p0eENqTVVpdzdWbVUzS2VxTGtaRlI5UHBZOTMwS21sOW5pQ0hGOW1KZlpTcWhqMVY1cHl6d0hPbUh0eHEtZ3ltNnRVaEowajNiWU80Qi1FeG4zX20yOUJIQjFFdzExMVlBQnh0RTJIcG9aWE1YMVdNZ1pMb0lUdGJYUHRWbko1cmNCQ3pvdXFOZmZKS08zNW94VUFWZ0U2ZGlvMA?oc=5",
       "outlet": "DHnet",
       "outletUrl": "https://www.dhnet.be",
-      "published": "2026-11-05T08:57:00.000Z",
+      "published": "2026-11-05T13:01:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Austria's Anderlecht refused to play in Red Bull's red and white: a new club was created by fans and is fighting for promotion to the top flight!",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "Élise Lucet cambriolée: jusqu’à 100.000 euros de montres et bijoux dérobés",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONEMtTERzMzJGT3Rwa3AtbHRNMVhiSUk1VU12UUR5RWJGdDF0cXI1QV9HSlJYalZuMmJBZTg2cHRXRll1M1JLcXByVVljdE9tX0VfbDEtVk4xTk9wbUZfT3ZQZWNacEFrZks0al9wcXduOWN3MldGUEw5UDlUZmJ3MHRPdDVJb0NVLVpseVR3WnFtMWNJTXZ3Z1JSMF84TGtxczQwOW5VNnJ4SF9qekRN?oc=5",
-      "outlet": "7sur7.be",
-      "outletUrl": "https://www.7sur7.be",
-      "published": "2026-11-05T11:46:32.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Élise Lucet burgled: up to 100,000 euros of watches and jewellery stolen",
+      "en": "National strike in France: nearly 1.6 million protesters present, the latest elements of the evening",
       "about": [
         "FR"
       ]
     },
     {
-      "title": "Le roi de l’évasion risque de retourner en prison après un braquage raté: “Ils se servent de mon casier judiciaire”",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNajQ3Y2xuckJzV25VUF9LTmZhWWZrRjl5NXNtbFNraFZkT0RXV2IyRjBWSHBBWm5WOTlINXpocnBUeExra1NkLVpWZXpHWFRjNXFYUlRqMkpTMGQ1ZTFEeFlCX2ItUjJtV1ZXNGdqQXVqMmRHRkRCTThDYUNSdkJTcVpiaGpXMUlJaUU2SWFxbmtaWTVhdVpQN1RzeElBMU56WUxRTjJ1YXQ3SGNQdzlEQUYyVm9QMjZyTmgwaXJ6UXduNDZEczQtaGdGS0FJY0w0WjA5S0QxelZHQkNDWktGUFN0QXFkSTNrWDdJ?oc=5",
-      "outlet": "7sur7.be",
-      "outletUrl": "https://www.7sur7.be",
-      "published": "2026-11-05T11:15:43.000Z",
+      "title": "« Ce qui s’est passé en Amérique est une catastrophe » : après la déroute de Donald Trump, Israël craint de voir s’éloigner son plus proche allié",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxObElDb0pCTmpKZjB0RUtzSldWVGhMb2JOckRWcWM5NDhnaVFuMmVoX3pjVVlkTUxfOHBwa0J1ZFg0d1ZKSEc2cUQ0cWpUcWF5eFZlRTQ2eUpMOU9NRVVGc1NWSzhnUC12aTJIWmstb2RBZ3h3R1JVNXZkWERKcm56X01CSFM1NXFTOWlOb2I2U0J6N21fOHU1MEs3VFExelZsNURpRjR6czBPT0JBMTBzNEtVaW1ZdEFFNTd3R3FWRzloYzFTSmw3VTkwVXdFNWtjTDRuRTlacm9lblkxS1MyOXdoSHQ1X2NGOFhYU1hOM3BuWEVyUGNueVRtVEFXZDdIY2FrVkd3T000SnZOOHZPU0NGdw?oc=5",
+      "outlet": "Le Figaro",
+      "outletUrl": "https://www.lefigaro.fr",
+      "published": "2026-11-05T19:15:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "The king of escape risks returning to prison after a failed robbery: \"They are using my criminal record\"",
-      "about": []
-    },
-    {
-      "title": "Jennifer, sa fille de 20 ans et une famille brisée à tout jamais : aucune n’a pu sauver l’autre de l’enfer qu’elles vivaient…",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbFVWZzI1dF9KbTBpLWNpT24tQTBkbU5KNVQ3LVQ2cEgyOFU3R1A2TkNBendqV0J6UE5CRm5pcTF6dmttVjV5TURGNzVxY0ZLT1VtcXpEU1A5RFlCZFM5eDAxUy1BeW0yRGFkYWdlQ29XVkN6Y09rVklmT2JrOHNOSlNTZEtpcmY1SUNzR0hyT2xhZ1FLWWhRQzNwczFTbktQLWFFZlZMQ05kbTcwdmxIamxLMmE5WDU2NllWWk0yRVROXzlY?oc=5",
-      "outlet": "Sudinfo",
-      "outletUrl": "https://www.sudinfo.be",
-      "published": "2026-11-05T10:39:32.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Jennifer, her 20-year-old daughter and a family broken forever: neither could save the other from the hell they were living...",
-      "about": []
-    },
-    {
-      "title": "Une ligne de train suspendue pour trois week-ends en Wallonie",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYzh3dU9xNU5JbXVWUDlna1VhWll4UXhDOEZfcEFwRHB0aE9meE0tU29fQ2hrLWdFcDRwS2ZKTEFuWlFyQjVqdGE4YkszM3B0a2d5TlpaYjNJUURpVm1VV3hYOUNzNzlibm4wM3NnZjYxVHMwQnpWdlpLMnRjZ0VUQmo1cFhldldxdlBySFFjNUh3djhDYjhPT2t5VnJFTVNEdm1uWEhHbmxnZF9RWGc?oc=5",
-      "outlet": "Le Soir",
-      "outletUrl": "https://www.lesoir.be",
-      "published": "2026-11-05T10:30:44.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "A train line suspended for three weekends in Wallonia",
+      "en": "\"What has happened in America is a catastrophe\": after Donald Trump's defeat, Israel fears its closest ally drifting away",
       "about": [
-        "BE"
-      ]
-    },
-    {
-      "title": "Le Club de Bruges et le PSV ont joué de manière \"un peu folle\", a apprécié Ivan Leko",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTVdUeHNvREQ4RjBya2oxNDJLVW9uMXdXYUNDYW9qNFlGczZrWms0MlRyVm9iNVY5YmpRWjduc1NKOFI3MnZyek1OSWZsUExjOFFGWl9kSXlYaE10Q0YyLUlnQm9MTVN4bFlpVnBUMGMzZDZhQ0MwMlUyTEdteXhnbVZ4NFVTeFZCUHBEeFpwTzF0cGZoaUM3UUwzM1NsMDc5TVhkUlItbVNXY2dJcXBacmNadzA3aVdGZ3c?oc=5",
-      "outlet": "RTBF",
-      "outletUrl": "https://www.rtbf.be",
-      "published": "2026-11-05T07:30:07.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Club Brugge and PSV played in a \"somewhat crazy\" way, Ivan Leko appreciated",
-      "about": [
-        "BE",
-        "NL"
-      ]
-    },
-    {
-      "title": "Un magasin entièrement dédié à Noël ouvre ses portes à Bruxelles",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbXk3VzExdWJPcEVzTFVhcmlFY1FMTEFkQV9ZTmczM2xIV2c2ZE9NNDNHbGNwcG9jdnpxVmN3WGdLMzVmOTRZNDFCNDJHbE1ndlZIU0VuXzJkZTdkWVJaTkVnQVBJSXIzTEYzNHdUeDNpR19HZ3pRNFh2WHJtandtNDFNcEhISlBUOHI3YVJpcGFfajJ6dVlCVXNRalNSc2RqOHU1OWRCaWE?oc=5",
-      "outlet": "7sur7.be",
-      "outletUrl": "https://www.7sur7.be",
-      "published": "2026-11-05T09:17:28.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "A shop entirely dedicated to Christmas opens its doors in Brussels",
-      "about": [
-        "BE"
-      ]
-    },
-    {
-      "title": "QR : qui devra payer la vignette routière et où ira l'argent récolté ?",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMWc1SHQ1T29BdTBtaEQ4VnlZY3Mtd21OX2tsQ2t0d0paX2xyOV9EWjFyeFhkWjNfWDRndkl4cTRna0xVWE12NVBPeEg1eUdTenBoTnpaUnBVdmVzV2ZUT2NxNFd6bVllZDE0SkZPUnhMLUQ3ZXFGWld5QUt1Ynd6ck1UYnh5RS1pbHN2eThGSl9RSEk4dDhqQmw1VG1LOHU1MzQ2c2Rn?oc=5",
-      "outlet": "RTBF",
-      "outletUrl": "https://www.rtbf.be",
-      "published": "2026-11-05T09:16:38.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "QR: who will have to pay the road toll sticker and where will the money collected go?",
-      "about": [
-        "BE"
-      ]
-    },
-    {
-      "title": "La taxe de 5 % sur le patrimoine des milliardaires en passe d’être rejetée en Californie",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMm9PenUzY0UzbTJSdFdXTG9STlNPM2VLc2tuY3liYW1uTHFkWVRzVWE2enhZeUFYNzBjdXQ5d2pheUdXVUdIRXdXYWVtaVdsODlGOWpOTFlCd1dXSE9PWVUyQlljV3FsYlMxaHE4RUVFU1k3ZTB0X2tSdWdRcGFvWndZU1RfV2N5WmN2OTd1VzRmVk5HZkJKd2dmRGFCYzI2eDJUWjNTS3VXeVZtNi02MGcwRmd0SVNYa1RaeWJLYw?oc=5",
-      "outlet": "Le Soir",
-      "outletUrl": "https://www.lesoir.be",
-      "published": "2026-11-05T08:51:18.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The 5% tax on billionaires' wealth is set to be rejected in California",
-      "about": [
+        "IL",
         "US"
       ]
     },
     {
-      "title": "Midterms 2026: plutôt que Trump, certains républicains ciblent l'un de ses ministres et veulent sa destitution",
-      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNampFZ1FYYVBQbGhOOWl1bGlzVmcyTXJUZHg0VGZvLXpHMUFqOUlQaXZtRU1mMnZxSEprSi1VTHZFQzQzenRyckRCSW1ocnNCc1dVN19nbWRXOGQ4Y2h5UXV6UDRobEZtWTdrZGlKdzlzOV9hYWlaSkJBVUQzcGZOclc1QjZ1a3RhNDluc2lkbU1WU2RoQWZyMnZjME9SeGRiallsMkFBbFg1eDZxLWhaWUo1SjZpYWlDTndXc2VzRk5fSnF2MFJUQ2NwSWIwUWlXS0dwTnZWb3JmdG52SFBwdzh2SDZ2RUZ1N2RSOUVwMFJyWWdGeHNwT2VGeERoc1NKX1BGMGg1eFdOQQ?oc=5",
+      "title": "Des bérets basques dans la crèche de la Grand-Place pour les Plaisirs d'Hiver 2026 : Jésus y dort dans une… carapace de tortue (photos & vidéo)",
+      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPU1JIendzbk5iZE9hOTRxTUdPcDUzc0ptcERFRjFUNFoxMGRsYkNQcmpPclVNeVdFOU9yNk9vRTVpZmxrQUU5ZUpBeGZzLWZJUTVGWlRBcFhDNjFWQmFFSUJSNS1lSmtuYmd4UzY1NEd0eldlZXdCak5wXzZtdVk1ZDM0UnBCTHFrUGI1VU9relU0UEdhNzBfYk5lc29XNFBKa2gtaVprVjE5WFgzbGdEOTM1LVVUdHl5STFVbkpZRTNCRmpFVVpIZEF6SExpZ2xENFIwcHVTaUlDaWU5V21tUFZBdzZDOTBsS1pGdTJ2Sno5cF9pWHcyUFo1MHJ5OE4zNXlVNHB0S1JGYkFPRDg5Mk05VERBdTI3TnJ2d294WEo1emdEcTNrYmw0SmZGdGNt?oc=5",
       "outlet": "DHnet",
       "outletUrl": "https://www.dhnet.be",
-      "published": "2026-11-05T08:40:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Midterms 2026: rather than Trump, some Republicans target one of his ministers and want his dismissal",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Assises du Hainaut : L'avocat général réclame vingt ans contre le père d'Esekia et dix ans contre la mère",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNU190S1BBU19zWlBzOE1DMllrQkZrOE1rckpuZmNubmpCUnZzWW1HRUNtTVlkQXhMRjJ2UVA3ZmxmTGpBSEFXelpGaF9VZGN3eDJzbUM4U3VnWjRrQ29PMTBuaUFhQmlVeWxycEJJQWJlUWtCenpJQWtmOWx1QmxHLTMtRjVJMFlmQ3hva0tWeE1ONEUybFp1WDIxa1V0Y2ptWkxXMDdESGtWc3AweV9nSWNremNsNWxrd2dDT3VIYWszVGxja2tSMF9oOENZUG9qMWtWYXNB?oc=5",
-      "outlet": "RTBF",
-      "outletUrl": "https://www.rtbf.be",
-      "published": "2026-11-05T09:23:09.000Z",
+      "published": "2026-11-05T19:47:00.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "Hainaut assizes: the advocate general demands twenty years against Esekia's father and ten years against the mother",
+      "en": "Basque berets in the Grand-Place nativity scene for the Plaisirs d'Hiver 2026: Jesus sleeps in a... turtle shell (photos & video)",
       "about": [
         "BE"
       ]
     },
     {
-      "title": "Cyberattaques contre des frigos : doutes autour de l’implication de hackeurs prorusses",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRGlBQzgzZ051S09wRG1HRVRTLWVOV2E0WWpvdG51SlcycVZoQVBwY0JrWl9ieXJQcnBPTVRKX2dZb0FpS3NwSURfSFE5cGZXWDc5c2ozZkJvRWx5bjlnQ0RJbEF0NHIxSjdFV0c0ZFU1bXBXaEloWUljMGFnaHdDdURsS2xZbmNIMVhCTzJxRTBPa0Nnc01HOUtBYWRUOXBjTVRvNGhtcTBLem1mc2NVMl9vbkRyVTFuY3pScmVR?oc=5",
-      "outlet": "Le Soir",
-      "outletUrl": "https://www.lesoir.be",
-      "published": "2026-11-04T20:18:15.000Z",
+      "title": "Pourquoi la défaite des Républicains place J.D. Vance sur la corde raide : \"Si Donald Trump le lâche, il est mort\"",
+      "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOUW1PeXQzaUxuMlZGX1RkTVZ4MmZUTWt6YTVreFNaWnRyRHFvZ0QtM2F5VldjbGVyTnNzMm1DSVZkRFlYSG9ic3YzU0YwUXdiekFFTjg3am9hS1dJeGtrR1M2MEhHVFJCSDVkR0ZCZXV5b1FrUVpfQVZjRjVDVzZYZEFBaTlRMUx5REUyNXVtaWNpOHY4VzBYQ1dJWG5tS0dIcGtrQUllTThtWThCb3FUVkpRTkhDZEwxZmNUcnNJMnJRT2VST1lONDlhMHBkQlRVX2s1ZV9xUG14azN2VzFlejZ6clc4WS1DZGVjOUhDMWZ6NDRId29lVzdnR3dMTDhBQnFUSWRCakFBWDFQQldjdmFlZGNGdzhZRnFoWDd3V1gySlVnaFc1b3RiSDI4dw?oc=5",
+      "outlet": "La Libre.be",
+      "outletUrl": "https://www.lalibre.be",
+      "published": "2026-11-05T18:43:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Cyberattacks on fridges: doubts about the involvement of pro-Russian hackers",
-      "about": []
+      "en": "Why the Republicans' defeat puts J.D. Vance on a tightrope: \"If Donald Trump drops him, he is dead\"",
+      "about": [
+        "US"
+      ]
     },
     {
-      "title": "Dix ans de prison de plus pour l’inébranlable militant pro-démocratie Joshua Wong",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQN0FKYVpEUGpqWERuUE1pa21MMFdyNXlEX2Y3RmxHajJiOGtPemszeGtQYVROeWJiN2stcm85WlFidEdfOUJHaVJFWWk0cjBhdW83Y0FhYzVEcnQ3R1ZfZkstbzRYOWlhVzU4a2FKNzdQcWlQM2hDODVhVEtKTFQ0dXVPUDgzQnJ0Z2J2eXRPRVo5Wmt4ei1KUUY1VktLbEgtc2hqWW9lZmZzLXQwNEVwUllPTHMyRlZiTGFIZnVvbFJnRXl5TVMw?oc=5",
-      "outlet": "Le Soir",
-      "outletUrl": "https://www.lesoir.be",
-      "published": "2026-11-05T07:12:14.000Z",
+      "title": "Piratage des frigos de sang en France: possible en Belgique ?",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTFhKWWp3YWdOUEpteFRsZFJadFkwUlJEX3BzLUpkaXlRSDlzMllNN2hKdUszWk8tSVZkY2hoUWxpb2RaZnBieHNTNl9LVnd3Z3Bvb2pFQjhrS3JranJBNTktRTRaMWJDUl9NcWVkeFgtd1h2amFweV9PYmtmelJvbk5hNjM0YmE3YnJZVkRXbm5PNkdUT2pqR1pXcDQyVWU5bWdWcUwtMEIzazFMQ2U3X0JZOW92WDBBNkp6SUdocHRJaUlFRXRfZFgwZnFaNWdDYWFQaTZUM0FDc0dQWWRLeA?oc=5",
+      "outlet": "RTL Info",
+      "outletUrl": "https://www.rtl.be",
+      "published": "2026-11-05T18:22:09.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Ten more years in prison for the unbowed pro-democracy activist Joshua Wong",
-      "about": []
+      "en": "Hacking of blood fridges in France: possible in Belgium?",
+      "about": [
+        "FR",
+        "BE"
+      ]
+    },
+    {
+      "title": "Turquie : huit morts dans une fusillade",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNclREdU1kMDJaeGJLRktnMm9WVU53RzdhdmdJUHJ4alhBSHhYd002SjZyY3E1OTdjWmhIRGZBRU1iUGVXaGZ4SzNneVM2YUNxY1RaQ3NYM3MyVkVGOFZsNE4wOWZzN1BYRDRiNXlMWmM4NFYyNlk1NUxveEJHUHBSWTg2SmdMR3c5c05ib293?oc=5",
+      "outlet": "Le Soir",
+      "outletUrl": "https://www.lesoir.be",
+      "published": "2026-11-05T17:55:55.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Turkey: eight dead in a shooting",
+      "about": [
+        "TR"
+      ]
+    },
+    {
+      "title": "Des milliers de cas confirmés, plusieurs morts en Pennsylvanie, une vaccination en recul... Ce que l'on sait de l'épidémie de rougeole aux Etats-Unis",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNTjN0SWNmbVVQYktOR1VVbkFXRDRHMXVSZFIzTGFIMDdxdDhhcUYtM2l6U205THlnSnVqczB0Y2NjREF0UUhTMHRCWGkzSzQ0bm5YLUY0UFkzUTdWc0htY1JrMkpNaFJ1UG5BaGg5NGd4YWJiRzNhT2VnMEdfNE5TWDA5c3BmUzlsTzZ1bkhrdnpvdmNnZTZSc0lsRXF0UGhIQmRnbUdsTlpLc0ppbUVJZmpCTDlYMXRmdzdyVlFVTzkwNFUycGhRLUhrcndfczNSamN6MmdKQ0kxSjF4TlFhTFNvc19Rajc1Ml9JUzFua2hzOWVOR3EwS0VEMjN3R182WkdlNGd1MW43UXZOaE9ycVE2SFRTdlV2dEl4SU9FbFdETFE?oc=5",
+      "outlet": "franceinfo",
+      "outletUrl": "https://www.franceinfo.fr",
+      "published": "2026-11-05T13:57:37.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Thousands of confirmed cases, several deaths in Pennsylvania, vaccination declining... What we know about the measles epidemic in the United States",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Le controversé projet de loi de la ministre de l’Asile Anneleen Van Bossuyt sur les visites domiciliaires à l’ordre du jour de la séance plénière de la Chambre",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUXYyNDhJUmplQXdJdS1WNDUwS3g3R2pTaWtveVRFRmU5SXBSb2NRbUozbHhndU1pV0o0UU9VWmtjaFVJOEhzT18teEphSWY4RnNad2w3MWtUQWZKVnZ1ek5KZm1ZcDVudnhwMzJMUUxUMmQtTzhBMjJZQUVLZ2dET01wU1VLcnBJcGxmVzdpQmE1OThxY3hPRGRrekdLR1hqVGItTEJqeVMzUWx6MEw2V1htY1VNSGx2WnpCUU5xMHBybXp1dUhPTG1B?oc=5",
+      "outlet": "Sudinfo",
+      "outletUrl": "https://www.sudinfo.be",
+      "published": "2026-11-05T05:39:08.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The controversial bill by Asylum Minister Anneleen Van Bossuyt on home visits is on the agenda of the plenary session of the Chamber",
+      "about": [
+        "BE"
+      ]
+    },
+    {
+      "title": "Emmanuel Macron bat un triste record : \"La cote de confiance la plus basse jamais mesurée\"",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNcEdjZVVJb25ncWlTSnNrdm1oU3l5Zks3R05KSjRhbTJ1OE1iVEFsUzBQN0RyYmlkOHBOckhrMFlSMVNGUC1odkUzVEtrRzNUVk1kQkN1eUR1c05zTE1aLVF5cmIwelYtNW1mQ25ZVzNQdW1UVG1Sb0tudnhiQUM3NUxaVHk4VkJnQVE5NmZzYUVhY2hic2RTV0Y1TzcyWTQwNHQ3NFdYUUJ1Ykt2b2JqeTdldDFnMXlSNmROT3VvNE05azF2UG5xYjdOOXNkeTJsMmVZQ0x0YWM2NEloNEYwYURXTFk3NVRBRUNtTzV3?oc=5",
+      "outlet": "DHnet",
+      "outletUrl": "https://www.dhnet.be",
+      "published": "2026-11-05T17:21:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Emmanuel Macron sets a sad record: \"The lowest confidence rating ever measured\"",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "« On veut permettre la poursuite des services publics » : la Province de Liège va investir 55M €, avec une grosse enveloppe dédiée au nouvel internat à l’IPEA de La Reid",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVVFZVRMa1E1NUNiV0RzM1MxRjRyQmw3aUFoQ09KT2h0UGpqdk1YZXNBd2djYWxJSGgyQjB1dXBycW1kbmJ2MFNtY0lyYWRSdVp6UlVWUjlHZ2dSLU9JdEJNQzZyZHg4ZXBmenplakJlWmZtSXhmWC11UDZZMVdWVERvSHh2Y2gwZ0NLV29pN2ZkUk0zN19IOU1LZU5GY21FUkozLTdUUW1FVFZUTHBmNlc5VDJLbUZmYUlzS0RJNzl3Zw?oc=5",
+      "outlet": "Sudinfo",
+      "outletUrl": "https://www.sudinfo.be",
+      "published": "2026-11-05T17:59:29.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "\"We want to allow public services to continue\": the Province of Liège will invest €55M, with a large envelope dedicated to the new boarding school at the IPEA in La Reid",
+      "about": [
+        "BE"
+      ]
     }
   ]
 }

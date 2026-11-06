@@ -384,10 +384,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-05T16:54:03.811Z",
     "directSearched": "2026-11-05T16:54:03.811Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-05T16:54:03.811Z"
+    "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -577,10 +577,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|IN#2d25d059",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-05T16:54:03.811Z",
     "directSearched": "2026-11-05T16:54:03.811Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-05T16:54:03.811Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-05T07:19:24.635Z",
@@ -680,140 +680,115 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-11-03T19:56:18.676Z",
+    "at": "2026-11-06T00:03:05.600Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A drought affecting Central America began on 21 April 2026 and is linked to El Niño. Honduras declared a state of emergency and extended its red drought alert to 103 municipalities. El Salvador has been under a national state of emergency since 7 October 2026. Guatemala ordered red alert in its east on 12 September. A joint government and UN appeal of US$60 million for Honduras was launched on 26 September. As of late October 2026, reports describe active impacts.",
+    "searches": 4,
+    "summary": "A drought affecting Central America began on 21 April 2026. The latest source found is dated 23 October 2026. Guatemala's agriculture ministry said the drought would run through 2026 and much of 2027. Honduras's drought alert was still in effect in late October, and the government was running cloud-seeding flights. El Salvador declared a nationwide red drought alert on 25 August 2026.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Nueva Concepción",
-        "country": "HN",
-        "kind": "town",
-        "impact": "crop losses"
-      },
-      {
-        "name": "Texiguat",
-        "country": "HN",
-        "kind": "town",
-        "impact": "crop losses"
-      },
-      {
-        "name": "Valle Siria",
-        "country": "HN",
-        "kind": "town",
-        "impact": "crop losses"
-      },
-      {
-        "name": "Morazán",
-        "country": "SV",
-        "kind": "region",
-        "impact": "assistance planned for people in department"
-      },
-      {
-        "name": "La Unión",
-        "country": "SV",
-        "kind": "region",
-        "impact": "assistance planned for people in department"
-      },
       {
         "name": "Trifinio Region",
         "country": "GT",
         "kind": "region",
-        "impact": "red drought alert, 15 municipalities"
+        "impact": "15 municipalities on red drought alert"
       },
       {
-        "name": "Lake Güija",
-        "country": "GT",
-        "kind": "site",
-        "impact": "water level dropped"
+        "name": "Tegucigalpa",
+        "country": "HN",
+        "kind": "city",
+        "impact": "red drought alert"
+      },
+      {
+        "name": "Choluteca",
+        "country": "HN",
+        "kind": "region",
+        "impact": "Red Cross assessing needs"
+      },
+      {
+        "name": "Comayagua",
+        "country": "HN",
+        "kind": "region",
+        "impact": "Red Cross assessing needs"
+      },
+      {
+        "name": "El Paraíso",
+        "country": "HN",
+        "kind": "region",
+        "impact": "Red Cross assessing needs"
+      },
+      {
+        "name": "Francisco Morazán",
+        "country": "HN",
+        "kind": "region",
+        "impact": "Red Cross assessing needs"
+      },
+      {
+        "name": "La Paz",
+        "country": "HN",
+        "kind": "region",
+        "impact": "Red Cross assessing needs"
+      },
+      {
+        "name": "Valle",
+        "country": "HN",
+        "kind": "region",
+        "impact": "Red Cross assessing needs"
+      },
+      {
+        "name": "Nueva Concepción",
+        "country": "HN",
+        "kind": "town",
+        "impact": "government emergency declared"
       }
     ],
     "figures": [
       {
-        "label": "People targeted by Honduras appeal",
-        "value": "538,000 people",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
-      },
-      {
-        "label": "People in need in Honduras",
-        "value": "708,000 people",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
-      },
-      {
-        "label": "Communities assessed by Oxfam",
-        "value": "354 communities in 58 municipalities and 15 departments",
+        "label": "Families affected",
+        "value": "at least 113,825 families",
         "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/el-salvador/2026/09/11/comunidades-de-el-salvador-honduras-y-guatemala-pierden-casi-toda-su-cosecha-de-maiz-y-frijol-por-la-sequia/"
+        "sourceUrl": "https://www.infobae.com/guatemala/2026/09/21/guatemala-declara-alerta-roja-en-15-municipios-ante-los-efectos-de-la-sequia/"
       },
       {
-        "label": "Farming families out of food in Honduras",
-        "value": "56.2% of farming families",
-        "sourceName": "latinpost.com",
-        "sourceUrl": "https://www.latinpost.com/articles/167664/20261022/six-ten-central-american-farming-families-are-already-out-food-what-el-ninos-crisis-looks.htm"
+        "label": "Families planned for food aid",
+        "value": "1,212,178 families",
+        "sourceName": "icndigital.com",
+        "sourceUrl": "https://icndigital.com/guatemala-implementara-un-plan-de-emergencia-por-sequia/"
+      },
+      {
+        "label": "Municipalities under drought alert",
+        "value": "234 of 298 municipalities",
+        "sourceName": "phys.org",
+        "sourceUrl": "https://phys.org/news/2026-08-honduras-country-el-nio-drought.html"
       }
     ],
     "donation": [
       {
-        "url": "https://go.ifrc.org/countries/81",
-        "org": "IFRC (IFRC GO)",
-        "kind": "society",
-        "note": "IFRC GO page listing the Honduras Drought DREF appeal MDRHN028.",
-        "specific": true
-      },
-      {
-        "url": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026",
-        "org": "UN OCHA",
+        "url": "https://honduras.un.org/es",
+        "org": "UN in Honduras, with the Humanitarian Response Network",
         "kind": "un",
-        "note": "Honduras Drought Flash Appeal document, September 2026, for the government-led drought response.",
+        "note": "Promotes US$60M Flash Appeal for drought-affected people in Honduras, linked to El Niño.",
         "specific": true
+      },
+      {
+        "url": "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena",
+        "org": "Honduran Red Cross (Cruz Roja Hondureña)",
+        "kind": "society",
+        "note": "IFRC directory page for Honduran Red Cross with general donate link, not drought-specific.",
+        "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/el-salvador/2026/10/28/no-habra-desabastecimiento-gremial-preve-abasto-de-maiz-y-frijol-pese-a-sequia-en-el-salvador/",
-        "title": "“No habrá desabastecimiento”: gremial prevé abasto de maíz y frijol pese a sequía en El Salvador - Infobae"
-      },
-      {
-        "name": "eltiempo.com",
-        "url": "https://www.eltiempo.com/mundo/latinoamerica/el-salvador-panama-y-honduras-declaran-emergencias-ante-los-impactos-de-la-sequia-vinculada-al-fenomeno-de-el-nino-3582220",
-        "title": "El Salvador, Panamá y Honduras declaran emergencias ante los impactos de la sequía vinculada al fenómeno de El Niño - El Tiempo"
-      },
-      {
-        "name": "clickorlando.com",
-        "url": "https://www.clickorlando.com/news/world/2026/10/21/in-honduras-hard-hit-by-drought-authorities-hope-to-make-it-rain-using-contentious-tactic/",
-        "title": "In Honduras, hard hit by drought, authorities hope to make it rain using contentious tactic"
-      },
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/el-salvador/2026/09/11/respuesta-anticipada-ante-la-sequia-activan-fondos-de-emergencia-frente-a-la-sequia-para-proteger-a-22000-personas-en-centroamerica/",
-        "title": "Respuesta anticipada ante la sequía: activan fondos de emergencia frente a la sequía para proteger a 22.000 personas en Centroamérica - Infobae"
-      },
-      {
-        "name": "eldiariodehoy.com",
-        "url": "https://www.eldiariodehoy.com/noticias/internacionales/guatemala-declarara-alerta-roja-por-sequia-en-frontera-con-honduras-y-el-salvador/93086/2026/",
-        "title": "Guatemala declarará alerta roja por sequía en frontera con Honduras y El Salvador - El Diario de Hoy"
-      },
-      {
-        "name": "tunota.com",
-        "url": "https://www.tunota.com/mundo/guatemala-pide-alerta-roja-sequia-frontera-honduras-el-salvador-2026-09-13",
-        "title": "Guatemala pide alerta roja por sequía en frontera con Honduras y El Salvador"
-      }
-    ],
+    "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-05T16:54:03.811Z",
-    "donationSearched": "2026-11-03T19:56:18.676Z",
-    "directSearched": "2026-11-03T19:56:18.676Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-06T00:03:05.600Z",
+    "directSearched": "2026-11-06T00:03:05.600Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-06T00:03:05.600Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-05T07:19:24.635Z",
@@ -841,7 +816,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
@@ -1248,47 +1223,47 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-11-04T18:26:07.453Z",
+    "at": "2026-11-06T00:03:05.600Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 7.0 earthquake struck Baqen County, Nagqu City, Tibet Autonomous Region, China, on 22 October 2026. Officials reported 16 deaths and 76 injured. About 12,964 people were relocated, and 339 homes were reported damaged or destroyed. Response work and aftershock monitoring were still reported in early November.",
+    "searches": 4,
+    "summary": "A magnitude 7.0 earthquake struck Baqen County in Nagqu City, Xizang (Tibet) Autonomous Region, China, on 22 October 2026 at 22:33 Beijing time. Officials reported 16 deaths and 76 injuries as of 24 October. Official reports cited 2,054 aftershocks and relocated residents as of 2 November. Relief and recovery work was still under way in late October, and no source reports the response has ended.",
     "ongoing": true,
     "places": [
       {
         "name": "Baqen County",
-        "admin": "Tibet Autonomous Region",
+        "admin": "Xizang",
         "country": "CN",
         "kind": "district",
-        "impact": "Epicentre area"
+        "impact": "Epicentre; shallow quake; 339 homes collapsed"
       },
       {
-        "name": "Maru Township",
-        "admin": "Tibet Autonomous Region",
+        "name": "Mărú Township",
+        "admin": "Xizang",
         "country": "CN",
         "kind": "town",
-        "impact": "Building collapses, ground cracks, temporary shelters"
+        "impact": "Building collapses, ground cracks, wall damage"
       },
       {
         "name": "Kamlung Gal",
-        "admin": "Tibet Autonomous Region",
+        "admin": "Xizang",
         "country": "CN",
         "kind": "town",
-        "impact": "10 deaths reported"
+        "impact": "10 deaths, per Wikipedia citing reports"
       },
       {
         "name": "Nagqu City",
-        "admin": "Tibet Autonomous Region",
+        "admin": "Xizang",
         "country": "CN",
         "kind": "city",
-        "impact": "Relief headquarters coordinating response"
+        "impact": "Named as affected city"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "at least 16",
-        "sourceName": "cbsnews.com",
-        "sourceUrl": "https://www.cbsnews.com/news/powerful-earthquake-tibet-china/"
+        "value": "16",
+        "sourceName": "english.news.cn",
+        "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
       },
       {
         "label": "Injured",
@@ -1297,31 +1272,52 @@
         "sourceUrl": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html"
       },
       {
-        "label": "Relocated",
+        "label": "Relocated residents",
         "value": "12,964 people",
         "sourceName": "humanrightsresearch.org",
         "sourceUrl": "https://www.humanrightsresearch.org/post/china-s-information-crackdown-on-earthquake-in-tibet"
       },
       {
-        "label": "Homes damaged or destroyed",
-        "value": "339 homes",
-        "sourceName": "outlookindia.com",
-        "sourceUrl": "https://www.outlookindia.com/international/tibet-earthquake-atleast-16-killed-54-injured-as-339-homes-collapse-in-nagqu"
+        "label": "Homes collapsed in Baqen County",
+        "value": "339",
+        "sourceName": "smdailyjournal.com",
+        "sourceUrl": "https://www.smdailyjournal.com/news/world/rescuers-search-for-survivors-after-deadly-earthquake-in-chinas-tibet-region/article_e057e7dc-d5ac-4393-a299-1b28690b0540.html"
+      },
+      {
+        "label": "Aftershocks",
+        "value": "2,054",
+        "sourceName": "humanrightsresearch.org",
+        "sourceUrl": "https://www.humanrightsresearch.org/post/china-s-information-crackdown-on-earthquake-in-tibet"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake",
-        "title": "2026 Tibet earthquake"
+        "name": "humanrightsresearch.org",
+        "url": "https://www.humanrightsresearch.org/post/china-s-information-crackdown-on-earthquake-in-tibet",
+        "title": "China's Information Crackdown on Earthquake in Tibet"
+      },
+      {
+        "name": "english.kathmandupati.com",
+        "url": "https://english.kathmandupati.com/2026/10/china-earthquake-kills-16-injures-76-in-xizang/",
+        "title": "China earthquake kills 16, injures 76 in Xizang - KathmanduPati KathmanduPati"
+      },
+      {
+        "name": "tribuneindia.com",
+        "url": "https://www.tribuneindia.com/news/world/powerful-earthquake-in-chinas-tibet-collapses-hundreds-of-homes-kills-16/amp",
+        "title": "7.0-magnitude earthquake in Tibet kills 16, injures 65; over 12,000 evacuated - The Tribune"
+      },
+      {
+        "name": "english.news.cn",
+        "url": "https://english.news.cn/20261024/cf8f08c9eb9b4b49a07b9aff7162b9e1/c.html",
+        "title": "Update: Rescue efforts intensify after Xizang quake kills 16, injures 76-Xinhua"
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-05T16:54:03.811Z",
-    "donationSearched": "2026-11-04T18:26:07.453Z",
-    "directSearched": "2026-11-04T18:26:07.453Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-06T00:03:05.600Z",
+    "directSearched": "2026-11-06T00:03:05.600Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-06T00:03:05.600Z"
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -1583,19 +1579,6 @@
     ],
     "membersHash": "gdacs|MX#08cdf5f0",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-flood-fl-1104141": {
-    "at": "2026-10-21T22:09:59.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|VN#016cd7ee",
-    "seen": "2026-10-22T23:48:02.104Z"
   },
   "gdacs-flood-fl-1104167": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -2129,86 +2112,6 @@
     "membersHash": "gdacs|AR#3cb2fe75",
     "seen": "2026-10-25T13:34:13.512Z"
   },
-  "gdacs-flood-fl-1104219": {
-    "at": "2026-10-22T01:04:05.836Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Intense rains caused flooding, landslides and fallen trees in several areas of Caracas, Venezuela, from 7 October 2026, with further flooding on 10 October. Affected areas included Prados de María, El Valle and El Cementerio. No official consolidated count of deaths or displaced people was found. The latest report found is dated 10 October 2026, and no later reports were found.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Prados de María",
-        "admin": "Capital District",
-        "country": "VE",
-        "kind": "district",
-        "impact": "flooding on El Colegio street"
-      },
-      {
-        "name": "El Valle",
-        "country": "VE",
-        "kind": "district",
-        "impact": "strong waterlogging on Cajigal street"
-      },
-      {
-        "name": "El Cementerio",
-        "country": "VE",
-        "kind": "district",
-        "impact": "flooding reported"
-      },
-      {
-        "name": "Panamericana highway, Carrizal to Corralito",
-        "country": "VE",
-        "kind": "site",
-        "impact": "landslides; passage affected"
-      },
-      {
-        "name": "El Junquito, km 3",
-        "country": "VE",
-        "kind": "site",
-        "impact": "fallen trees temporarily blocked traffic"
-      },
-      {
-        "name": "Bello Monte",
-        "country": "VE",
-        "kind": "district",
-        "impact": "Guaire River rose"
-      },
-      {
-        "name": "Avenida Los Ilustres",
-        "country": "VE",
-        "kind": "site",
-        "impact": "containment slope collapsed"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Homes affected",
-        "value": "about 80 homes",
-        "sourceName": "elpitazo.net",
-        "sourceUrl": "https://elpitazo.net/regiones/lluvias-causan-inundaciones-y-deslizamientos-en-sectores-de-caracas-este-7oct/"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "eldiario.com",
-        "url": "https://eldiario.com/2026/10/10/lluvias-caracas-octubre/",
-        "title": "Fuertes lluvias provocaron inundaciones y caída de árboles en varias zonas de la Gran Caracas"
-      },
-      {
-        "name": "elpitazo.net",
-        "url": "https://elpitazo.net/regiones/lluvias-causan-inundaciones-y-deslizamientos-en-sectores-de-caracas-este-7oct/",
-        "title": "Lluvias causan inundaciones y deslizamientos en Caracas este #7Oct"
-      },
-      {
-        "name": "noticierodigital.com",
-        "url": "https://noticierodigital.com/2026/10/lluvias-provocaron-inundaciones-caida-de-arboles-y-problemas-viales-en-caracas/",
-        "title": "Lluvias provocaron inundaciones, caída de árboles y problemas viales en Caracas"
-      }
-    ],
-    "membersHash": "gdacs|VE#3bb2fce2",
-    "seen": "2026-10-22T23:48:02.104Z"
-  },
   "gdacs-flood-fl-1104220": {
     "at": "2026-10-25T00:43:26.084Z",
     "model": "claude-haiku-5-5",
@@ -2592,19 +2495,6 @@
     "sources": [],
     "membersHash": "gdacs|ID#aeb5f082",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-flood-fl-1104226": {
-    "at": "2026-10-21T22:09:59.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|MA#acb5ed5c",
-    "seen": "2026-10-22T23:48:02.104Z"
   },
   "gdacs-flood-fl-1104227": {
     "at": "2026-10-25T13:34:13.512Z",
@@ -3881,7 +3771,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-02T09:59:51.584Z",
     "directSearched": "2026-11-02T09:59:51.584Z",
     "directSearchVersion": 2
@@ -3938,7 +3828,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -4049,25 +3939,6 @@
     ],
     "membersHash": "gdacs|AU#b23af214",
     "seen": "2026-10-23T17:38:11.860Z"
-  },
-  "gdacs-wildfire-wf-1032518": {
-    "at": "2026-10-21T22:09:59.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A wildfire listed as \"Forest fires in Australia\" in GDACS alert 1032518, started 27 September 2026 and last updated 12 October 2026. The feed's coordinates lie in the Northern Territory. No source found confirms its current status or names an affected place.",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "wildfiretoday.com",
-        "url": "https://wildfiretoday.com/large-fires-across-top-of-australia/",
-        "title": "Large fires across top of Australia"
-      }
-    ],
-    "membersHash": "gdacs|AU#b83d3a1d",
-    "seen": "2026-10-22T18:59:49.151Z"
   },
   "gdacs-wildfire-wf-1032546": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -5245,7 +5116,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-05T00:08:17.816Z",
     "direct": [
       {
@@ -5452,7 +5323,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-04T01:03:04.924Z",
     "directSearched": "2026-11-04T01:03:04.924Z",
     "directSearchVersion": 2
@@ -5984,7 +5855,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2
@@ -6133,7 +6004,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2,
@@ -6365,7 +6236,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-04T18:26:07.453Z",
     "directSearched": "2026-11-04T18:26:07.453Z",
     "directSearchVersion": 2,
@@ -6827,7 +6698,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-05T00:08:17.816Z",
     "directSearched": "2026-11-05T00:08:17.816Z",
     "directSearchVersion": 2,
@@ -8536,72 +8407,6 @@
     "membersHash": "news|TH#5776bb7e",
     "seen": "2026-10-24T07:44:33.939Z"
   },
-  "news-flood-flood-us-bcd41524ce": {
-    "at": "2026-10-22T18:59:49.151Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Flash floods hit Arizona from 22 October 2026. Overnight flash flooding in Clifton, Greenlee County, left vehicles partly buried in debris, and crews are clearing roads. Officials are preparing sandbags as more storms and possible flash flooding are forecast for Thursday. A flood watch remains in place until 10 p.m. The event is ongoing.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Clifton",
-        "admin": "Arizona",
-        "country": "US",
-        "kind": "town",
-        "impact": "Flash flood overnight; vehicles partly buried in debris"
-      },
-      {
-        "name": "Chinle",
-        "admin": "Arizona",
-        "country": "US",
-        "kind": "town",
-        "impact": "Chinle Creek gauge near flood stage"
-      },
-      {
-        "name": "Overgaard area",
-        "admin": "Arizona",
-        "country": "US",
-        "kind": "district",
-        "impact": "Minor injuries; people displaced from homes"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "azfamily.com",
-        "url": "https://www.azfamily.com/2026/10/22/floodwaters-rockslides-tear-through-historic-mining-town-clifton/",
-        "title": "Floodwaters, rockslides tear through historic mining town of Clifton"
-      },
-      {
-        "name": "fox10phoenix.com",
-        "url": "https://www.fox10phoenix.com/weather/arizona-weather-forecast-102226",
-        "title": "Arizona weather forecast: Thunderstorms, hail, and flood warnings hit the state"
-      },
-      {
-        "name": "abc15.com",
-        "url": "https://www.abc15.com/weather/clifton-flash-flood-causes-significant-damage-more-rain-possible-as-cleanup-crews-work-to-clear-roads",
-        "title": "Clifton flash flood causes significant damage; more rain possible as cleanup crews work to clear roads"
-      },
-      {
-        "name": "kgun9.com",
-        "url": "https://www.kgun9.com/weather/clifton-flash-flood-causes-significant-damage-more-rain-possible-as-cleanup-crews-work-to-clear-roads",
-        "title": "Clifton flash flood causes significant damage; more rain possible as cleanup crews work to clear roads"
-      },
-      {
-        "name": "govonestop.com",
-        "url": "https://govonestop.com/nws/arizona-severe-flash-flood-warning-effective-10222026-0021",
-        "title": "Arizona Severe Flash Flood Warning"
-      },
-      {
-        "name": "foxweather.com",
-        "url": "https://www.foxweather.com/weather-news/rare-severe-storm-threat-arizona-southern-california-hail-tornadoes",
-        "title": "Renewed flood, severe weather threat targets Four Corners after Arizona's first Tornado Watch in 16 years"
-      }
-    ],
-    "membersHash": "news|US#98c0e335",
-    "seen": "2026-10-22T18:59:49.151Z"
-  },
   "news-storm-storm-be-20a9561eb0": {
     "at": "2026-10-23T17:38:11.860Z",
     "model": "claude-haiku-5-5",
@@ -8767,69 +8572,6 @@
     "donation": [],
     "sources": [],
     "membersHash": "news|BE#eba40d3a"
-  },
-  "news-storm-storm-ca-7a1e228ee8": {
-    "at": "2026-10-22T18:59:49.151Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Subtropical Storm Josephine formed in the Atlantic on 21 October 2026 and is moving away from the US. As of 22 October it is forecast to become extratropical on 23 October and stay south of Canada. Rain reached Nova Scotia on 22 October. Impacts in Atlantic Canada are forecast or warned, not yet reported as damage.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Guysborough County",
-        "admin": "Nova Scotia",
-        "country": "CA",
-        "kind": "district",
-        "impact": "Environment Canada yellow rainfall warning, 50-70 mm"
-      },
-      {
-        "name": "Richmond County",
-        "admin": "Nova Scotia",
-        "country": "CA",
-        "kind": "district",
-        "impact": "Environment Canada yellow rainfall warning, 50-70 mm"
-      },
-      {
-        "name": "Cape Breton County",
-        "admin": "Nova Scotia",
-        "country": "CA",
-        "kind": "district",
-        "impact": "Environment Canada yellow rainfall warning, 50-70 mm"
-      },
-      {
-        "name": "Sydney Metro",
-        "admin": "Nova Scotia",
-        "country": "CA",
-        "kind": "district",
-        "impact": "Environment Canada yellow rainfall warning, local outages possible"
-      },
-      {
-        "name": "Southeast Avalon",
-        "admin": "Newfoundland and Labrador",
-        "country": "CA",
-        "kind": "region",
-        "impact": "30-40 mm rain forecast"
-      },
-      {
-        "name": "Southern Avalon",
-        "admin": "Newfoundland and Labrador",
-        "country": "CA",
-        "kind": "region",
-        "impact": "Wind warning, forecast"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Forecast rainfall",
-        "value": "50-70 mm",
-        "sourceName": "weather.gc.ca",
-        "sourceUrl": "https://weather.gc.ca/warnings/report_e.html?nl21="
-      }
-    ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|CA#7511e31f",
-    "seen": "2026-10-22T18:59:49.151Z"
   },
   "news-storm-storm-fr-e02bf940cf": {
     "at": "2026-10-21T14:45:27.681Z",
@@ -9572,7 +9314,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "usgs|PK#62eeb9a4",
-    "seen": "2026-11-05T16:54:03.811Z",
+    "seen": "2026-11-06T00:03:05.600Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
