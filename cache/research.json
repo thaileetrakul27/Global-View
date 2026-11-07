@@ -222,39 +222,34 @@
     "seen": "2026-10-25T13:34:13.512Z"
   },
   "gdacs-cyclone-tc-1001343": {
-    "at": "2026-11-06T21:57:01.362Z",
+    "at": "2026-11-07T22:18:49.156Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Typhoon In-fa (JMA No. 31), also called Super Typhoon In-fa, formed on 23 October 2026 and was moving northeast east of Japan as of 6 November 2026. Forecast reports on 4 to 5 November expected high waves, strong winds and heavy rain around the Ogasawara and southern Izu Islands. No damage or casualties in Japan were reported in the sources found. The latest status is a JMA position report at 03:00 JST on 6 November, which said the storm had weakened and lost its gale-force…",
-    "ongoing": true,
+    "searches": 4,
+    "summary": "Typhoon In-fa (JMA No. 31) brought high waves and strong winds to the Ogasawara Islands in Tokyo, Japan, around 4 to 5 November 2026. A peak gust of 25.4 m/s was recorded at Chichijima on 5 November. At 09:00 JST on 6 November 2026, it became an extratropical low east of Japan. No deaths, damage or evacuations were reported in the sources found.",
+    "ongoing": false,
     "places": [
       {
         "name": "Ogasawara Islands",
-        "admin": "Tokyo Metropolis",
+        "admin": "Tokyo",
         "country": "JP",
         "kind": "region",
-        "impact": "forecast high waves, strong winds, heavy rain; no damage reported"
+        "impact": "High waves and swells"
       },
       {
-        "name": "Southern Izu Islands",
-        "admin": "Tokyo Metropolis",
+        "name": "Chichijima",
+        "admin": "Tokyo",
         "country": "JP",
-        "kind": "region",
-        "impact": "heavy rain possible; no damage reported"
+        "kind": "town",
+        "impact": "Peak gust 25.4 m/s on 5 Nov"
       }
     ],
     "figures": [],
     "donation": [],
     "sources": [
       {
-        "name": "rainbow-you.com",
-        "url": "https://rainbow-you.com/latest-typhoon-details/",
-        "title": "台風31号2026発生状況！大雨暴風日本への影響は?最新米軍進路予想・気象庁・ECMWF・Windyﾘｱﾙﾀｲﾑ・各国進路予想も"
-      },
-      {
-        "name": "weathernews.jp",
-        "url": "https://weathernews.jp/news/202611/050101/",
-        "title": "台風31号(インファ) 速度を上げて北東進 小笠原は強風や高波に注意 - ウェザーニュース"
+        "name": "tenki.jp",
+        "url": "https://tenki.jp/forecaster/deskpart/2026/11/06/41220.html",
+        "title": "【速報】台風31号は温帯低気圧に変わりました(気象予報士 日直主任 2026年11月06日) - 日本気象協会 tenki.jp"
       },
       {
         "name": "japantimes.co.jp",
@@ -263,10 +258,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-07T16:52:12.648Z",
-    "donationSearched": "2026-11-06T21:57:01.362Z",
-    "directSearched": "2026-11-06T21:57:01.362Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-07T22:18:49.156Z",
+    "directSearched": "2026-11-07T22:18:49.156Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-07T22:18:49.156Z"
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -538,7 +533,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2
@@ -643,7 +638,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-06T00:03:05.600Z",
     "directSearched": "2026-11-06T00:03:05.600Z",
     "directSearchVersion": 2
@@ -674,7 +669,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
@@ -1145,7 +1140,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
@@ -3523,29 +3518,10 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
-  },
-  "gdacs-wildfire-wf-1032546": {
-    "at": "2026-10-21T17:37:06.438Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "The GDACS alert feed lists a wildfire event titled \"Forest fires in Australia\", which started on 29 September 2026 and was last updated on 14 October 2026. The feed reports 44,594 hectares burned. No government, agency or news source found in the research confirms this event, its location or its status as of 21 October 2026.",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/20260916/1ef3ada67c0e4cc2b3dc7e3e90cfb82e/c.html",
-        "title": "Emergency warning issued for bushfire in N. Australia-Xinhua"
-      }
-    ],
-    "membersHash": "gdacs|AU#383137aa",
-    "seen": "2026-10-24T17:51:09.606Z"
   },
   "gdacs-wildfire-wf-1032639": {
     "at": "2026-10-25T00:43:26.084Z",
@@ -3943,76 +3919,6 @@
     "sources": [],
     "membersHash": "gdacs|AU#0657c86c",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-wildfire-wf-1032727": {
-    "at": "2026-10-24T21:17:31.742Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A wildfire that began on 8 October 2026 in the core zone of the Numrug Strictly Protected Area in Dornod Province, eastern Mongolia, burned 528,765.5 hectares of land, according to Mongolia's Ministry of Environment and Climate Change. Xinhua reported the fire was fully extinguished on the morning of 16 October. Authorities in Inner Mongolia, China, deployed crews along the border. Whether the fire crossed into China is unconfirmed.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Numrug Strictly Protected Area",
-        "admin": "Dornod Province",
-        "country": "MN",
-        "kind": "site",
-        "impact": "Fire started in core zone; most of reserve burned"
-      },
-      {
-        "name": "Inner Mongolia Autonomous Region",
-        "country": "CN",
-        "kind": "region",
-        "impact": "Border crews deployed; crossing unconfirmed"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Area burned",
-        "value": "528,765.5 hectares",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261020/9c701c91faf24d18825b4a46cfab9e61/c.html"
-      },
-      {
-        "label": "Protected area burned",
-        "value": "about 79.8% of the reserve",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261020/9c701c91faf24d18825b4a46cfab9e61/c.html"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/20261020/9c701c91faf24d18825b4a46cfab9e61/c.html",
-        "title": "Massive Japanese-related reserve wildfire in E. Mongolia burns over half mln hectares of land-Xinhua"
-      },
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/20261018/8fc2465973e3446a92d69b8a42c7e381/c.html",
-        "title": "Roundup: Public outcry grows in Mongolia over Japanese-linked reserve wildfire-Xinhua"
-      },
-      {
-        "name": "china.org.cn",
-        "url": "http://www.china.org.cn/2026-10/21/content_118742547.shtml",
-        "title": "Massive Japanese-related reserve wildfire in E. Mongolia burns over half mln hectares of land - China.org.cn"
-      },
-      {
-        "name": "news.cgtn.com",
-        "url": "https://news.cgtn.com/news/2026-10-13/Mongolia-grassland-fire-nears-Chinese-border-1RcKZ6rN29y/p.html",
-        "title": "Mongolia grassland fire nears Chinese border - CGTN"
-      },
-      {
-        "name": "lightreading.com",
-        "url": "https://www.lightreading.com/regulatory-politics/kddi-owned-mobicom-faces-compensation-claims-after-huge-grassland-blaze",
-        "title": "KDDI-owned Mobicom faces compensation claims after huge grassland blaze"
-      },
-      {
-        "name": "vietnam.vn",
-        "url": "https://www.vietnam.vn/en/ong-lon-vien-thong-nhat-ban-xin-loi-vi-hon-520-000-ha-rung-mong-co-bi-thieu-rui",
-        "title": "Japanese telecommunications giant apologizes for burning over 520,000 hectares of Mongolian forest."
-      }
-    ],
-    "membersHash": "gdacs|CN,MN#83527d05"
   },
   "gdacs-wildfire-wf-1032785": {
     "at": "2026-10-24T21:17:31.742Z",
@@ -4720,7 +4626,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2,
@@ -4878,7 +4784,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-06T07:18:29.895Z",
     "directSearched": "2026-11-06T07:18:29.895Z",
     "directSearchVersion": 2
@@ -5001,39 +4907,6 @@
     "membersHash": "ifrc|ID#98e9c7e0",
     "seen": "2026-10-25T13:34:13.512Z",
     "donationSearched": "2026-10-24T13:06:33.545Z"
-  },
-  "ifrc-flood-7993": {
-    "at": "2026-10-23T05:22:44.752Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Heavy rain and floods hit Senaki municipality in the Samegrelo-Zemo Svaneti region of Georgia on 27 June 2026. Several streets, residential houses, yards and farmland were flooded, and parts of bridges and internal dirt roads were damaged. Local authorities were responding in emergency mode as of 27 June. No later reports were found.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Senaki",
-        "admin": "Samegrelo-Zemo Svaneti",
-        "country": "GE",
-        "kind": "district",
-        "impact": "Streets, houses, yards and farmland flooded"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "dfwatch.net",
-        "url": "https://dfwatch.net/heavy-rain-floods-homes-and-streets-in-senaki-66919/",
-        "title": "Heavy rain floods homes and streets in Senaki - DFWatch"
-      },
-      {
-        "name": "ifrc.org",
-        "url": "https://www.ifrc.org/national-societies-directory/red-cross-society-georgia",
-        "title": "Red Cross Society of Georgia"
-      }
-    ],
-    "membersHash": "ifrc|GE#4daa02bd",
-    "seen": "2026-10-24T21:17:31.742Z",
-    "donationSearched": "2026-10-23T05:22:44.752Z"
   },
   "ifrc-flood-7996": {
     "at": "2026-10-23T05:22:44.752Z",
@@ -5358,7 +5231,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-06T21:57:01.362Z",
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
@@ -5490,7 +5363,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2,
@@ -5740,7 +5613,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-06T21:57:01.362Z",
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
@@ -6234,7 +6107,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-07T16:52:12.648Z",
+    "seen": "2026-11-07T22:18:49.156Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "direct": [
       {
@@ -6915,19 +6788,6 @@
     ],
     "membersHash": "news|JP#3946c72e",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "news-cyclone-cyclone-tw-7b74e37dd2": {
-    "at": "2026-10-24T21:17:31.742Z",
-    "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|TW#27c6abcb",
-    "seen": "2026-10-24T21:17:31.742Z"
   },
   "news-earthquake-earthquake-cn-c9b854bd15": {
     "at": "2026-10-25T13:34:13.512Z",

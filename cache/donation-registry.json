@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-07T16:52:12.648Z",
+  "updated": "2026-11-07T22:18:49.156Z",
   "fetched": {
-    "societies": "2026-11-07T16:52:12.648Z",
-    "uncr": "2026-11-07T16:52:12.648Z"
+    "societies": "2026-11-07T22:18:49.156Z",
+    "uncr": "2026-11-07T22:18:49.156Z"
   },
   "societies": {
     "AF": {
@@ -2823,26 +2823,26 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-07T16:52:12.648Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-07T16:52:12.648Z"
+      ]
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-11-07T16:52:12.648Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-11-07T16:52:12.648Z"
+      ]
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-11-07T16:52:12.648Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ],
-      "checked": "2026-11-07T16:52:12.648Z"
+      ]
     }
   }
 }
