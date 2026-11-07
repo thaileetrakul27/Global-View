@@ -263,7 +263,7 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-07T02:20:53.260Z",
+    "seen": "2026-11-07T09:15:57.008Z",
     "donationSearched": "2026-11-06T21:57:01.362Z",
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
@@ -444,67 +444,79 @@
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-11-05T07:19:24.635Z",
+    "at": "2026-11-07T09:15:57.008Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A drought across parts of Europe in 2026, which sources describe as a summer 2026 event rather than starting 21 December 2025. A JRC analysis run on 28 October said drought conditions remained critical in most of Europe. On 3 November the EEA said the drought, heat and wildfires disrupted infrastructure, costing the EU at least 1% of GDP. No formal end date has been given.",
+    "summary": "A drought affecting much of Europe began on 21 December 2025 and is ongoing. The JRC's European Drought Observatory reported drought remained critical across most of Europe in mid-October 2026. A 6 November report projects EU soybean output to fall about 20% in 2026, to 2.4 million tonnes, after heatwaves and drought.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Neuchâtel",
-        "country": "CH",
-        "kind": "region",
-        "impact": "Emergency measures enacted for farmers"
-      },
-      {
-        "name": "Schwyz",
-        "country": "CH",
-        "kind": "region",
-        "impact": "Emergency measures enacted for farmers"
-      },
       {
         "name": "Wallonia",
         "country": "BE",
         "kind": "region",
-        "impact": "Drought-related water restrictions"
+        "impact": "drought restrictions introduced"
+      },
+      {
+        "name": "Flanders",
+        "country": "BE",
+        "kind": "region",
+        "impact": "water scarcity reported"
       },
       {
         "name": "Brussels-Capital Region",
         "country": "BE",
         "kind": "region",
-        "impact": "Code yellow drought alert extended"
+        "impact": "yellow drought alert extended"
+      },
+      {
+        "name": "Neuchâtel",
+        "country": "CH",
+        "kind": "region",
+        "impact": "emergency measures for farmers"
+      },
+      {
+        "name": "Schwyz",
+        "country": "CH",
+        "kind": "region",
+        "impact": "emergency measures for farmers"
+      },
+      {
+        "name": "Neuss",
+        "country": "DE",
+        "kind": "town",
+        "impact": "low Rhine river levels"
+      },
+      {
+        "name": "Novi Sad",
+        "country": "RS",
+        "kind": "city",
+        "impact": "Danube low"
       }
     ],
     "figures": [
       {
-        "label": "Area burned by wildfires",
-        "value": "nearly 580,000 hectares",
+        "label": "Share of EU and UK land in drought…",
+        "value": "50% in watch, warning or alert (end of July); 9% at alert…",
+        "sourceName": "joint-research-centre.ec.europa.eu",
+        "sourceUrl": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en"
+      },
+      {
+        "label": "Poland municipalities affected",
+        "value": "65.47% of municipalities (reporting 21 March to 10 August…",
         "sourceName": "wodnesprawy.pl",
         "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
       },
       {
-        "label": "Rainfall in Switzerland",
-        "value": "August was the driest since measurements began in 1864",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_European_drought"
+        "label": "France maize crop projection",
+        "value": "about 35% below last year",
+        "sourceName": "farmweeknow.com",
+        "sourceUrl": "https://www.farmweeknow.com/general/persistent-heat-and-drought-slash-eu-corn-production-in-2026/article_77f95ea0-5f92-46c9-a167-78718944806f.html"
       },
       {
-        "label": "Sunflower and olive oil yields",
-        "value": "fell 6-7%",
-        "sourceName": "foodnavigator.com",
-        "sourceUrl": "https://www.foodnavigator.com/Article/2026/08/11/drought-in-europe-how-have-crops-been-impacted/"
-      },
-      {
-        "label": "Crop yields below five-year average",
-        "value": "up to 14 %",
-        "sourceName": "joint-research-centre.ec.europa.eu",
-        "sourceUrl": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/exceptionally-dry-and-hot-weather-threatens-summer-crops-2026-08-24_en"
-      },
-      {
-        "label": "Drought-related economic losses",
-        "value": "around €2 billion per year",
-        "sourceName": "brusselstimes.com",
-        "sourceUrl": "https://www.brusselstimes.com/eu-affairs/2389933/heat-and-drought-cost-eu-1-of-gdp-in-climate-driven-2026-shocks"
+        "label": "Energy sector share of drought-related…",
+        "value": "about 23% (around EUR 2 billion per year)",
+        "sourceName": "eea.europa.eu",
+        "sourceUrl": "https://www.eea.europa.eu/en/newsroom/news/what-2026s-climate-extremes-teach-europe-about-resilient-infrastructure"
       }
     ],
     "donation": [],
@@ -515,36 +527,21 @@
         "title": "EDO European Drought Observatory - Joint Research Centre"
       },
       {
-        "name": "newsy-today.com",
-        "url": "https://www.newsy-today.com/central-europe-faces-major-dry-weather-drought-threat/",
-        "title": "Central Europe Faces Major Dry Weather Drought Threat - Newsy Today"
+        "name": "agnavigator.com",
+        "url": "https://www.agnavigator.com/Article/2026/11/06/europes-soybean-harvest-set-to-plunge-as-drought-cuts-output/",
+        "title": "Europe’s soybean harvest set to plunge as drought cuts output"
       },
       {
-        "name": "brusselstimes.com",
-        "url": "https://www.brusselstimes.com/eu-affairs/2389933/heat-and-drought-cost-eu-1-of-gdp-in-climate-driven-2026-shocks",
-        "title": "Heat and drought cost EU 1% of GDP in climate-driven 2026 shocks"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_European_drought",
-        "title": "2026 European drought"
-      },
-      {
-        "name": "data.consilium.europa.eu",
-        "url": "https://data.consilium.europa.eu/doc/document/ST-13542-2026-INIT/en/pdf",
-        "title": "13542/26 1 LIFE.1 EN Council of the European Union Brussels, 24 September 2026"
-      },
-      {
-        "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/exceptionally-dry-and-hot-weather-threatens-summer-crops-2026-08-24_en",
-        "title": "Exceptionally dry and hot weather threatens summer crops - Joint Research Centre"
+        "name": "wodnesprawy.pl",
+        "url": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/",
+        "title": "The 2026 Drought in Europe. We Know the Risks, but We're Not Prepared"
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-07T02:20:53.260Z",
-    "donationSearched": "2026-11-05T07:19:24.635Z",
-    "directSearched": "2026-11-05T07:19:24.635Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-07T09:15:57.008Z",
+    "directSearched": "2026-11-07T09:15:57.008Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-07T09:15:57.008Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-06T00:03:05.600Z",
@@ -646,7 +643,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-07T02:20:53.260Z",
+    "seen": "2026-11-07T09:15:57.008Z",
     "donationSearched": "2026-11-06T00:03:05.600Z",
     "directSearched": "2026-11-06T00:03:05.600Z",
     "directSearchVersion": 2
@@ -677,7 +674,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-07T02:20:53.260Z",
+    "seen": "2026-11-07T09:15:57.008Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
@@ -1148,10 +1145,10 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
+    "seen": "2026-11-07T09:15:57.008Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-07T02:20:53.260Z"
+    "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1573344": {
     "at": "2026-10-23T17:38:11.860Z",
@@ -3452,7 +3449,7 @@
       }
     ],
     "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-07T02:20:53.260Z",
+    "seen": "2026-11-07T09:15:57.008Z",
     "donationSearched": "2026-11-06T07:18:29.895Z",
     "directSearched": "2026-11-06T07:18:29.895Z",
     "directSearchVersion": 2
@@ -3526,10 +3523,10 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
+    "seen": "2026-11-07T09:15:57.008Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-07T02:20:53.260Z"
+    "directSearchVersion": 2
   },
   "gdacs-wildfire-wf-1032546": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -4723,6 +4720,10 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
+    "seen": "2026-11-07T09:15:57.008Z",
+    "donationSearched": "2026-11-07T02:20:53.260Z",
+    "directSearched": "2026-11-07T02:20:53.260Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/colombia-earthquake-relief-fund/",
@@ -4769,11 +4770,7 @@
         "title": "Colombia Earthquake",
         "published": "2026-08-12T02:20:53.260Z"
       }
-    ],
-    "donationSearched": "2026-11-07T02:20:53.260Z",
-    "directSearched": "2026-11-07T02:20:53.260Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-07T02:20:53.260Z"
+    ]
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-06T07:18:29.895Z",
@@ -4881,7 +4878,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-07T02:20:53.260Z",
+    "seen": "2026-11-07T09:15:57.008Z",
     "donationSearched": "2026-11-06T07:18:29.895Z",
     "directSearched": "2026-11-06T07:18:29.895Z",
     "directSearchVersion": 2
@@ -5361,7 +5358,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-07T02:20:53.260Z",
+    "seen": "2026-11-07T09:15:57.008Z",
     "donationSearched": "2026-11-06T21:57:01.362Z",
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
@@ -5431,10 +5428,10 @@
     "donationSearched": "2026-10-22T18:59:49.151Z"
   },
   "ifrc-flood-8025": {
-    "at": "2026-11-05T07:19:24.635Z",
+    "at": "2026-11-07T09:15:57.008Z",
     "model": "claude-haiku-5-5",
     "searches": 2,
-    "summary": "A flash flood struck Nuristan province, Afghanistan, on 20 July 2026, with a further flash flood reported on 22 July. By 28 July, OCHA reported flood impacts across central, eastern, north-eastern and south-eastern Afghanistan, with Nuristan the most severely affected. Reported deaths, injuries and missing vary by source. No later status was found.",
+    "summary": "Flash floods hit Nuristan Province, Afghanistan, from 19-20 July 2026, with the most severe damage in Parun, the provincial capital. Reported impacts include deaths, injuries, missing people, destroyed houses and damaged roads and bridges. Search and rescue was under way on 22 July. The latest status found is an OCHA update from 28 July; no later situation report was found. Reported death and missing counts differ between sources.",
     "ongoing": true,
     "places": [
       {
@@ -5442,26 +5439,20 @@
         "admin": "Nuristan",
         "country": "AF",
         "kind": "city",
-        "impact": "flash flood overwhelmed neighbourhoods; homes, shops destroyed"
+        "impact": "Most severe damage; homes, markets and roads swept away; municipality destroyed"
       },
       {
-        "name": "Mandol District",
+        "name": "Mandol",
         "admin": "Nuristan",
         "country": "AF",
         "kind": "district",
-        "impact": "six houses, roads, farmland damaged"
+        "impact": "Six houses, roads, farmland, electricity network and watermill damaged"
       },
       {
-        "name": "Torkham border area",
+        "name": "Torkham",
         "country": "AF",
         "kind": "site",
-        "impact": "three refugees died at returnee transit camp"
-      },
-      {
-        "name": "Nuristan",
-        "country": "AF",
-        "kind": "region",
-        "impact": "most severely affected province"
+        "impact": "Three refugees died at transit camp; crossing movement briefly disrupted"
       }
     ],
     "figures": [
@@ -5474,63 +5465,75 @@
       {
         "label": "Injured",
         "value": "125",
-        "sourceName": "humanitariancoalition.ca",
-        "sourceUrl": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods"
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/afghanistan/documents/unicef-afghanistan-flash-update-1-eastern-region-flash-floods"
       },
       {
         "label": "Missing",
-        "value": "100+",
-        "sourceName": "amu.tv",
-        "sourceUrl": "https://amu.tv/247896/"
+        "value": "more than 100",
+        "sourceName": "atlaspress.news",
+        "sourceUrl": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/"
+      },
+      {
+        "label": "Affected",
+        "value": "more than 15,000 people",
+        "sourceName": "humanitariancoalition.ca",
+        "sourceUrl": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods"
       },
       {
         "label": "Houses destroyed",
         "value": "at least 22",
-        "sourceName": "news.un.org",
-        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
-      },
-      {
-        "label": "Affected people",
-        "value": "more than 15,000 people",
-        "sourceName": "humanitariancoalition.ca",
-        "sourceUrl": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods"
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
       }
     ],
     "donation": [],
-    "sources": [
-      {
-        "name": "global-flood.emergency.copernicus.eu",
-        "url": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026",
-        "title": "Floods in Nuristan Province, Afghanistan, July 2026 - News"
-      },
-      {
-        "name": "news.un.org",
-        "url": "https://news.un.org/en/story/2026/07/1167996",
-        "title": "Deadly Afghanistan floods kill at least 26 as aid agencies race to reach survivors"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-07T02:20:53.260Z",
-    "donationSearched": "2026-11-05T07:19:24.635Z",
-    "directSearched": "2026-11-05T07:19:24.635Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
         "org": "Penny Appeal USA",
         "kind": "local",
-        "note": "Emergency relief for Nuristan flood survivors, with flood emergency donation amounts.",
+        "note": "Nuristan flood relief, including shelter and blankets for Parun-area families.",
         "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan - Penny Appeal USA",
-        "published": "2026-07-25T07:19:24.635Z"
+        "published": "2026-07-25T09:15:57.008Z"
       },
       {
         "url": "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal",
         "org": "Hayrat Aid",
         "kind": "local",
-        "note": "Emergency food, shelter and water for families hit by the Nuristan flood.",
+        "note": "Nuristan flood appeal for shelter, food, clean water and basic supplies.",
         "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
+      },
+      {
+        "url": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods",
+        "org": "Humanitarian Coalition",
+        "kind": "local",
+        "note": "Cash assistance for flood-affected households in Nuristan and Nangarhar via CWS Asia.",
+        "title": "Afghanistan: Nuristan Floods"
+      },
+      {
+        "url": "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/",
+        "org": "Famidi",
+        "kind": "local",
+        "note": "Flood response in Parun and nearby areas through a secure donation form.",
+        "title": "Nuristan Flood Emergency: Famidi activates local response",
+        "published": "2026-07-24T09:15:57.008Z"
+      },
+      {
+        "url": "https://allhandsandhearts.org/news/emergency-relief-after-devastating-floods-in-nuristan-afghanistan",
+        "org": "All Hands and Hearts",
+        "kind": "local",
+        "note": "Donations funded relief packages for 80 flood-affected families with a local partner.",
+        "title": "Emergency Relief After Devastating Floods in Nuristan, Afghanistan",
+        "published": "2026-10-02T09:15:57.008Z"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-07T09:15:57.008Z",
+    "directSearched": "2026-11-07T09:15:57.008Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-07T09:15:57.008Z"
   },
   "ifrc-flood-8037": {
     "at": "2026-10-22T18:59:49.151Z",
@@ -5737,7 +5740,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-07T02:20:53.260Z",
+    "seen": "2026-11-07T09:15:57.008Z",
     "donationSearched": "2026-11-06T21:57:01.362Z",
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
@@ -6231,6 +6234,8 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
+    "seen": "2026-11-07T09:15:57.008Z",
+    "donationSearched": "2026-11-07T02:20:53.260Z",
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/emergency-flood-relief-for-families-in-nepal/donate/",
@@ -6291,9 +6296,7 @@
         "title": "Nepal Flood Appeal 2026",
         "published": "2026-08-28T00:08:17.816Z"
       }
-    ],
-    "donationSearched": "2026-11-07T02:20:53.260Z",
-    "seen": "2026-11-07T02:20:53.260Z"
+    ]
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -6913,199 +6916,6 @@
     "membersHash": "news|JP#3946c72e",
     "seen": "2026-10-25T13:34:13.512Z"
   },
-  "news-cyclone-cyclone-kr-5d118aafb4": {
-    "at": "2026-10-24T07:44:33.939Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Typhoon Champi, the 30th storm of the 2026 season, is not forecast to make landfall in Korea and has shifted its projected path toward Japan's Kyushu region. As of the morning of 24 October 2026 (KST), heavy rain and strong winds were affecting Jeju and southern South Korea. Hallasan trails were fully closed and several ferry routes were cancelled. Rain was forecast to continue until 26 October in some areas.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Hallasan",
-        "admin": "Jeju Province",
-        "country": "KR",
-        "kind": "site",
-        "impact": "trails fully closed after up to 139 mm rain"
-      },
-      {
-        "name": "Hwabuk-1-dong",
-        "admin": "Jeju Province",
-        "country": "KR",
-        "kind": "district",
-        "impact": "road median barrier collapsed"
-      },
-      {
-        "name": "Pyoseon-myeon",
-        "admin": "Jeju Province",
-        "country": "KR",
-        "kind": "district",
-        "impact": "113 mm rain in coastal area"
-      },
-      {
-        "name": "Jeju Province",
-        "country": "KR",
-        "kind": "region",
-        "impact": "heavy rain and strong wind advisories"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Rainfall, Hallasan",
-        "value": "139 mm",
-        "sourceName": "hankookilbo.com",
-        "sourceUrl": "https://www.hankookilbo.com/news/article/A2026102409260005820"
-      },
-      {
-        "label": "Peak gust, Jiguido",
-        "value": "20.2 m/s",
-        "sourceName": "insight.co.kr",
-        "sourceUrl": "https://www.insight.co.kr/news/579008"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "en.sedaily.com",
-        "url": "https://en.sedaily.com/society/2026/10/23/typhoon-champi-veers-toward-japan-but-rain-and-wind-to-hit",
-        "title": "Typhoon Champi Veers Toward Japan, but Rain and Wind to Hit Jeju - Seoul Economic Daily"
-      },
-      {
-        "name": "hankookilbo.com",
-        "url": "https://www.hankookilbo.com/news/article/A2026102409260005820",
-        "title": "한라산에 최고 139㎜ 폭우... 여객선 일부 결항·항공편 정상 운행-사회ㅣ한국일보"
-      },
-      {
-        "name": "imaeil.com",
-        "url": "https://www.imaeil.com/page/view/2026102411520841258",
-        "title": "태풍 `참피` 영향 한라산 139㎜ 폭우…탐방로 통제·여객선 결항 - 매일신문"
-      },
-      {
-        "name": "insight.co.kr",
-        "url": "https://www.insight.co.kr/news/579008",
-        "title": "태풍 ‘참피’에 제주 ‘139mm 물폭탄’... 여객선 결항·한라산 탐방로 전면 통제"
-      },
-      {
-        "name": "dailian.co.kr",
-        "url": "https://www.dailian.co.kr/news/view/1705594/%EC%A0%9C%EC%A3%BC-%ED%95%9C%EB%9D%BC%EC%82%B0-139%E3%8E%9C-%ED%8F%AD%EC%9A%B0%EA%B0%95%ED%92%8D%ED%92%8D%EB%9E%91-%EC%97%AC-2026",
-        "title": "제주 한라산에 139㎜ 폭우…강풍·풍랑에 여객선 운항 차질"
-      },
-      {
-        "name": "joongangenews.com",
-        "url": "https://www.joongangenews.com/news/articleView.html?idxno=557890",
-        "title": "[날씨] 태풍 '참피' 영향 제주·남부에 많은 비...한라산 누적 139㎜ < 사회 < 정치·사회 < 기사본문 - 중앙이코노미뉴스"
-      }
-    ],
-    "membersHash": "news|KR#b8b5f841",
-    "seen": "2026-10-24T07:44:33.939Z"
-  },
-  "news-cyclone-cyclone-tw-6575d929d1": {
-    "at": "2026-10-24T07:44:33.939Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Typhoon Champi struck Taiwan from 23 Oct 2026, bringing strong winds and heavy rain, mainly to the northeast and north. As of 24 Oct, one death was reported in Pingtung County and 527 people were injured, according to the CEOC. The storm is moving away and weakening, and the land warning is expected to be lifted Saturday evening. About 56,000 households were still without power, and crews were restoring supply.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Yilan County",
-        "country": "TW",
-        "kind": "district",
-        "impact": "Over 400mm rain Friday; 350 preventively evacuated"
-      },
-      {
-        "name": "Taipei",
-        "country": "TW",
-        "kind": "city",
-        "impact": "Downed trees; office and school closures"
-      },
-      {
-        "name": "Taichung",
-        "country": "TW",
-        "kind": "city",
-        "impact": "Injuries reported"
-      },
-      {
-        "name": "New Taipei",
-        "country": "TW",
-        "kind": "city",
-        "impact": "1,397 people expected evacuated from landslide areas"
-      },
-      {
-        "name": "Pingtung County",
-        "country": "TW",
-        "kind": "district",
-        "impact": "Man swept away by waves; died"
-      },
-      {
-        "name": "Liuqiu Township",
-        "admin": "Pingtung County",
-        "country": "TW",
-        "kind": "town",
-        "impact": "Man swept away by storm-driven waves"
-      },
-      {
-        "name": "Taitung County",
-        "country": "TW",
-        "kind": "district",
-        "impact": "Crane toppled into ocean at fishing port"
-      },
-      {
-        "name": "Keelung",
-        "country": "TW",
-        "kind": "city",
-        "impact": "Waves hit the coast"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "1",
-        "sourceName": "world-today-news.com",
-        "sourceUrl": "https://www.world-today-news.com/typhoon-champi-leaves-1-dead-and-527-injured-in-taiwan-reuters-says/"
-      },
-      {
-        "label": "Injured",
-        "value": "527",
-        "sourceName": "world-today-news.com",
-        "sourceUrl": "https://www.world-today-news.com/typhoon-champi-leaves-1-dead-and-527-injured-in-taiwan-reuters-says/"
-      },
-      {
-        "label": "Evacuated",
-        "value": "more than 4,300",
-        "sourceName": "phys.org",
-        "sourceUrl": "https://phys.org/news/2026-10-taiwan-destructive-typhoon-champi-batters.html"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "focustaiwan.tw",
-        "url": "https://focustaiwan.tw/society/202610240004",
-        "title": "Land warning for Typhoon Champi expected to be lifted Saturday evening: CWA - Focus Taiwan"
-      },
-      {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350",
-        "title": "Typhoon Champi hits Taiwan, killing one and injuring hundreds"
-      },
-      {
-        "name": "world-today-news.com",
-        "url": "https://www.world-today-news.com/typhoon-champi-leaves-1-dead-and-527-injured-in-taiwan-reuters-says/",
-        "title": "Typhoon Champi leaves 1 dead and 527 injured in Taiwan, Reuters says - World Today News"
-      },
-      {
-        "name": "wincountry.com",
-        "url": "https://wincountry.com/2026/10/23/typhoon-champi-sweeps-past-taiwan-one-dead-and-500-injured/",
-        "title": "Typhoon Champi sweeps past Taiwan, leaving 1 dead, 500 injured"
-      },
-      {
-        "name": "focustaiwan.tw",
-        "url": "https://focustaiwan.tw/society/202610230010",
-        "title": "Typhoon Champi damages roads, knocks out power across Taiwan - Focus Taiwan"
-      }
-    ],
-    "membersHash": "news|TW#28df0e8c",
-    "seen": "2026-10-24T07:44:33.939Z"
-  },
   "news-cyclone-cyclone-tw-7b74e37dd2": {
     "at": "2026-10-24T21:17:31.742Z",
     "model": "claude-haiku-5-5",
@@ -7614,138 +7424,6 @@
     ],
     "membersHash": "news|CO#78604202",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "news-flood-flood-th-3e351c39ff": {
-    "at": "2026-10-23T05:22:44.752Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Flooding has affected Bangkok and central and eastern Thailand since mid-September 2026, according to NASA citing the IFRC. The Thai Disaster Prevention and Mitigation Department (DDPM) reported 1,367,191 people still affected in 19 provinces and Bangkok on 20 October. Water levels are stabilising or receding in many places. Heavy rain is forecast through 25 October, and high tides are expected 27 to 31 October. DDPM reports 82 deaths since 16 September.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Bangkok",
-        "country": "TH",
-        "kind": "city",
-        "impact": "flooded; 210,648 households affected"
-      },
-      {
-        "name": "Lat Krabang",
-        "admin": "Bangkok",
-        "country": "TH",
-        "kind": "district",
-        "impact": "flooded"
-      },
-      {
-        "name": "Nong Chok",
-        "admin": "Bangkok",
-        "country": "TH",
-        "kind": "district",
-        "impact": "flooded"
-      },
-      {
-        "name": "Min Buri",
-        "admin": "Bangkok",
-        "country": "TH",
-        "kind": "district",
-        "impact": "flooded"
-      },
-      {
-        "name": "Pathum Thani",
-        "country": "TH",
-        "kind": "region",
-        "impact": "216,276 households affected"
-      },
-      {
-        "name": "Prachin Buri",
-        "country": "TH",
-        "kind": "region",
-        "impact": "26 deaths"
-      },
-      {
-        "name": "Chachoengsao",
-        "country": "TH",
-        "kind": "region",
-        "impact": "flooded; deaths reported"
-      },
-      {
-        "name": "Nakhon Nayok",
-        "country": "TH",
-        "kind": "region",
-        "impact": "flooded; deaths reported"
-      },
-      {
-        "name": "Samut Prakan",
-        "country": "TH",
-        "kind": "region",
-        "impact": "flooded; deaths reported"
-      },
-      {
-        "name": "Sa Kaeo",
-        "country": "TH",
-        "kind": "region",
-        "impact": "flooded; deaths reported"
-      },
-      {
-        "name": "Chon Buri",
-        "country": "TH",
-        "kind": "region",
-        "impact": "flooded; deaths reported"
-      },
-      {
-        "name": "Ayutthaya",
-        "country": "TH",
-        "kind": "region",
-        "impact": "flooding reported"
-      },
-      {
-        "name": "Suphan Buri",
-        "country": "TH",
-        "kind": "region",
-        "impact": "flooding reported"
-      },
-      {
-        "name": "Nakhon Pathom",
-        "country": "TH",
-        "kind": "region",
-        "impact": "flooding reported"
-      },
-      {
-        "name": "Kanchanaburi",
-        "country": "TH",
-        "kind": "region",
-        "impact": "flooding reported"
-      }
-    ],
-    "figures": [
-      {
-        "label": "People affected",
-        "value": "1,367,191 people",
-        "sourceName": "nationthailand.com",
-        "sourceUrl": "https://www.nationthailand.com/news/general/40072531"
-      },
-      {
-        "label": "Households affected",
-        "value": "450,944 households",
-        "sourceName": "nationthailand.com",
-        "sourceUrl": "https://www.nationthailand.com/news/general/40072531"
-      },
-      {
-        "label": "Bangkok households affected",
-        "value": "210,648 households",
-        "sourceName": "nationthailand.com",
-        "sourceUrl": "https://www.nationthailand.com/news/general/40072531"
-      },
-      {
-        "label": "Deaths",
-        "value": "82",
-        "sourceName": "ua.news",
-        "sourceUrl": "https://ua.news/en/dovkolo-svitu/poveni-v-tayilandi-trivaiut-u-bangkoku-ta-19-provintsiiakh-zaginuli-82-liudini-bangkok-post"
-      }
-    ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|TH#5776bb7e",
-    "seen": "2026-10-24T07:44:33.939Z"
   },
   "news-storm-storm-be-d0ce796215": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -8331,17 +8009,5 @@
     ],
     "membersHash": "gdacs,usgs|VU#d176ea77",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "usgs-earthquake-us6000u4kq": {
-    "at": "2026-10-24T07:44:33.939Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A shallow magnitude 6.9 earthquake struck off the coast of Vanuatu on 24 October 2026 at about 02:31 UTC, about 197 km WNW of Port-Olry, first reported as 7.2. A M6.3 aftershock followed about four minutes later. A tsunami warning was lifted within about an hour. Authorities reported no immediate casualties or damage. Reports conflict on magnitude and location.",
-    "ongoing": false,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "usgs|VU#ec22df8c"
   }
 }
