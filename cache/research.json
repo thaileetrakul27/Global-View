@@ -520,7 +520,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-08T17:03:49.486Z",
+    "seen": "2026-11-08T22:35:18.778Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2
@@ -624,7 +624,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-08T17:03:49.486Z",
+    "seen": "2026-11-08T22:35:18.778Z",
     "donationSearched": "2026-11-08T01:50:21.071Z",
     "directSearched": "2026-11-08T01:50:21.071Z",
     "directSearchVersion": 2,
@@ -671,7 +671,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-08T17:03:49.486Z",
+    "seen": "2026-11-08T22:35:18.778Z",
     "donationSearched": "2026-11-08T09:28:08.113Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2,
@@ -1060,7 +1060,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-08T17:03:49.486Z",
+    "seen": "2026-11-08T22:35:18.778Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
@@ -1350,7 +1350,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-08T17:03:49.486Z",
+    "seen": "2026-11-08T22:35:18.778Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
@@ -1492,7 +1492,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-08T17:03:49.486Z",
+    "seen": "2026-11-08T22:35:18.778Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2,
@@ -1664,7 +1664,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-08T17:03:49.486Z",
+    "seen": "2026-11-08T22:35:18.778Z",
     "donationSearched": "2026-11-08T09:28:08.113Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2,
@@ -1701,121 +1701,192 @@
     ]
   },
   "ifrc-flood-8013": {
-    "at": "2026-11-06T21:57:01.362Z",
+    "at": "2026-11-08T22:35:18.778Z",
     "model": "claude-haiku-5-5",
     "searches": 2,
-    "summary": "Monsoon flooding and landslides hit Cox's Bazar and other districts of Bangladesh from 14 July 2026. By 22 July, UN reporting counted 59 deaths and 1.28 million people affected in seven districts. Heavy rain and flash floods were still affecting communities in the 23 July UN situation report. No report of the event ending was found as of 6 November 2026. An IFRC DREF operation runs to 31 January 2027.",
+    "summary": "A monsoon depression caused flooding and landslides in Bangladesh from 14 July 2026, most severely in Cox's Bazar district and its Rohingya camps. A 15 July ministry toll reported 57 dead and 40 injured. The latest dated information is from late July 2026, and no source confirms the situation as of November 2026.",
     "ongoing": true,
     "places": [
       {
         "name": "Cox's Bazar",
         "country": "BD",
         "kind": "district",
-        "impact": "About 49% inundated; 300,000 still affected"
-      },
-      {
-        "name": "Ramu",
-        "country": "BD",
-        "kind": "district",
-        "impact": "35% submerged"
-      },
-      {
-        "name": "Cox's Bazar Sadar",
-        "country": "BD",
-        "kind": "district",
-        "impact": "25% submerged"
+        "impact": "Flooding and landslides; Rohingya camps hit"
       },
       {
         "name": "Ukhiya",
         "country": "BD",
         "kind": "district",
-        "impact": "25% submerged"
-      },
-      {
-        "name": "Teknaf",
-        "country": "BD",
-        "kind": "district",
-        "impact": "25% submerged"
-      },
-      {
-        "name": "Eidgaon",
-        "country": "BD",
-        "kind": "district",
-        "impact": "5% submerged"
+        "impact": "Rain-triggered landslide; Rohingya child killed"
       },
       {
         "name": "Chakaria",
         "country": "BD",
         "kind": "district",
-        "impact": "People still affected"
+        "impact": "Approx. 300,000 people still affected by flooding"
       },
       {
         "name": "Matamuhuri",
         "country": "BD",
         "kind": "district",
-        "impact": "People still affected"
+        "impact": "Approx. 300,000 people still affected by flooding"
       },
       {
         "name": "Pekua",
         "country": "BD",
         "kind": "district",
-        "impact": "People still affected"
+        "impact": "Approx. 300,000 people still affected by flooding"
       },
       {
-        "name": "Rohingya refugee camps",
-        "admin": "Cox's Bazar",
+        "name": "Ramu",
         "country": "BD",
-        "kind": "site",
-        "impact": "15 deaths, 3,127 shelters damaged"
+        "kind": "district",
+        "impact": "Approx. 300,000 people still affected by flooding"
       },
       {
-        "name": "Chattogram Division",
+        "name": "Cox's Bazar Sadar",
         "country": "BD",
-        "kind": "region",
-        "impact": "43 of 44 deaths by 11 July"
+        "kind": "district",
+        "impact": "Approx. 300,000 people still affected by flooding"
+      },
+      {
+        "name": "Chattogram",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Flooding affected"
+      },
+      {
+        "name": "Bandarban",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Flooding affected"
+      },
+      {
+        "name": "Rangamati",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Flooding affected"
+      },
+      {
+        "name": "Khagrachhari",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Flooding affected"
+      },
+      {
+        "name": "Moulvibazar",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Flooding affected"
+      },
+      {
+        "name": "Habiganj",
+        "country": "BD",
+        "kind": "district",
+        "impact": "Flooding affected"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "59",
-        "sourceName": "bangladesh.un.org",
-        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+        "value": "57",
+        "sourceName": "mappr.co",
+        "sourceUrl": "https://www.mappr.co/bangladesh-monsoon-floods-2026/"
+      },
+      {
+        "label": "Injured",
+        "value": "40",
+        "sourceName": "mappr.co",
+        "sourceUrl": "https://www.mappr.co/bangladesh-monsoon-floods-2026/"
       },
       {
         "label": "People affected",
-        "value": "1.28 million people",
-        "sourceName": "bangladesh.un.org",
-        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+        "value": "1.11 million",
+        "sourceName": "adrc.asia",
+        "sourceUrl": "https://www.adrc.asia/view_disaster_en.php?NationCode=50&Lang=en&Key=2834"
       },
       {
-        "label": "Houses damaged or destroyed",
-        "value": "74,479",
-        "sourceName": "bangladesh.un.org",
-        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
-      },
-      {
-        "label": "Water points partly or fully damaged",
-        "value": "29,076",
-        "sourceName": "bangladesh.un.org",
-        "sourceUrl": "https://bangladesh.un.org/en/319868-bangladesh-situation-report-2-flash-flood-and-landslides-23-july-2026"
+        "label": "People affected in Rohingya camps",
+        "value": "56,643 individuals",
+        "sourceName": "rohingyaresponse.org",
+        "sourceUrl": "https://rohingyaresponse.org/wp-content/uploads/2026/08/Inter-Sector-Flash-Situation-Update-7-as-of-19-July.pdf"
       }
     ],
     "donation": [
       {
+        "url": "https://go.ifrc.org/emergencies/8013/overview",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO emergency page for DREF operation MDRBD040 on this event.",
+        "specific": true
+      },
+      {
         "url": "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/",
         "org": "Bangladesh Red Crescent Society",
         "kind": "society",
-        "note": "2026 monsoon emergency appeal document for this event; does not take donations.",
+        "note": "National society 2026 emergency appeal covering monsoon floods and landslides; donate button unconfirmed.",
         "specific": true
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/field-reports/18466",
+        "title": "BGD: Flood - 07-2026 - Bangladesh Floods 2026"
+      },
+      {
+        "name": "adrc.asia",
+        "url": "https://www.adrc.asia/view_disaster_en.php?NationCode=50&Lang=en&Key=2834",
+        "title": "Bangladesh: Flood: 2026/07/05"
+      },
+      {
+        "name": "actalliance.org",
+        "url": "https://actalliance.org/wp-content/uploads/2026/07/ACT-Alert-Bangladesh-Floods.pdf",
+        "title": "1 Alert note Southeastern and Northeastern Bangladesh Flash Floods Emergency"
+      },
+      {
+        "name": "mappr.co",
+        "url": "https://www.mappr.co/bangladesh-monsoon-floods-2026/",
+        "title": "Deadly Monsoon Floods and Landslides Hit Bangladesh: Mapping the 2026 Disaster"
+      }
+    ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-08T17:03:49.486Z",
-    "donationSearched": "2026-11-06T21:57:01.362Z",
-    "directSearched": "2026-11-06T21:57:01.362Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-08T22:35:18.778Z",
+    "directSearched": "2026-11-08T22:35:18.778Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.salamcharity.org.uk/appeals/bangladesh-emergency/",
+        "org": "Salam Charity (UK)",
+        "kind": "local",
+        "note": "Hygiene kits and grocery boxes for flood-hit families in Bangladesh.",
+        "title": "Salam Charity UK Appeals"
+      },
+      {
+        "url": "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/",
+        "org": "Human Relief Foundation (UK)",
+        "kind": "local",
+        "note": "Emergency food, shelter and hygiene aid for flood-hit families and Rohingya refugees.",
+        "title": "Donate to Bangladesh Emergency Flood Relief 2026"
+      },
+      {
+        "url": "https://onenationuk.org/bangladeshfloods",
+        "org": "One Nation (UK)",
+        "kind": "local",
+        "note": "Hot meals, food parcels and safe drinking water, focused on Rohingya camps in Cox's Bazar.",
+        "title": "Bangladesh Floods Appeal",
+        "published": "2026-07-16T22:35:18.778Z"
+      },
+      {
+        "url": "https://islamicrelief.org.au/our-work/emergencies/bangladesh-floods/",
+        "org": "Islamic Relief Australia",
+        "kind": "local",
+        "note": "Hygiene kits, food packs, health care and shelter for vulnerable families.",
+        "title": "Bangladesh Floods : Emergency Appeal - Islamic Relief Australia",
+        "published": "2026-07-22T22:35:18.778Z"
+      }
+    ],
+    "seen": "2026-11-08T22:35:18.778Z"
   },
   "ifrc-flood-8025": {
     "at": "2026-11-07T09:15:57.008Z",
@@ -1880,7 +1951,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-08T17:03:49.486Z",
+    "seen": "2026-11-08T22:35:18.778Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2,
@@ -1926,91 +1997,28 @@
     ]
   },
   "ifrc-flood-8050": {
-    "at": "2026-11-06T21:57:01.362Z",
+    "at": "2026-11-08T22:35:18.778Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Monsoon flooding in Myanmar began on 12 August 2026 and affected parts of Sagaing, Rakhine, Ayeyarwady, Kachin and Kayin. UNICEF reported about 600,000 people affected as of the end of August 2026. GDACS reported 11 deaths and 10,233 people displaced. No reports after end August 2026 were found, so the current status is unconfirmed.",
+    "searches": 1,
+    "summary": "",
     "ongoing": true,
-    "places": [
-      {
-        "name": "Wetlet",
-        "admin": "Sagaing Region",
-        "country": "MM",
-        "kind": "town",
-        "impact": "Floodwaters covered villages and paddy fields"
-      },
-      {
-        "name": "Sagaing",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Villages and fields flooded; 230,000 affected"
-      },
-      {
-        "name": "Rakhine State",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Named as affected by flooding"
-      },
-      {
-        "name": "Ayeyarwady Region",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Named as affected by flooding"
-      },
-      {
-        "name": "Kachin State",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Named as affected by flooding"
-      },
-      {
-        "name": "Kayin State",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Salween River reportedly broke its banks"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Affected",
-        "value": "600,000 people",
-        "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
-      },
-      {
-        "label": "Deaths",
-        "value": "11",
-        "sourceName": "gdacs.org",
-        "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104011&episodeid=13&eventtype=FL"
-      },
-      {
-        "label": "Displaced",
-        "value": "10,233",
-        "sourceName": "gdacs.org",
-        "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104011&episodeid=13&eventtype=FL"
-      }
-    ],
+    "places": [],
+    "figures": [],
     "donation": [
       {
-        "url": "https://www.redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA/",
+        "url": "https://www.redcross.org.mm/donate/donate-now/",
         "org": "Myanmar Red Cross Society",
         "kind": "society",
-        "note": "Standing Emergency Fund for floods and other disasters, not specific to this event.",
+        "note": "Society's general Emergency Fund for disasters, not specific to this flood.",
         "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "unicef.org",
-        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
-        "title": "Myanmar 2026 Monsoon Emergency Response"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-08T17:03:49.486Z",
-    "donationSearched": "2026-11-06T21:57:01.362Z",
-    "directSearched": "2026-11-06T21:57:01.362Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-08T22:35:18.778Z",
+    "directSearched": "2026-11-08T22:35:18.778Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-08T22:35:18.778Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-11-07T02:20:53.260Z",
@@ -2174,56 +2182,9 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-08T17:03:49.486Z",
+    "seen": "2026-11-08T22:35:18.778Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
-    "directSearchVersion": 2
-  },
-  "news-earthquake-earthquake-cn-c9b854bd15": {
-    "at": "2026-10-25T13:34:13.512Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
-    "ongoing": false,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "news.cgtn.com",
-        "url": "https://news.cgtn.com/news/2026-10-24/Rescue-efforts-continue-after-M7-0-quake-in-China-s-Xizang-1RvsqW44L3G/p.html",
-        "title": "Rescue efforts continue after M7.0 quake in China's Xizang - CGTN"
-      },
-      {
-        "name": "china.org.cn",
-        "url": "http://www.china.org.cn/2026-10/25/content_118748300.shtml",
-        "title": "Rescue efforts continue after 7.0-magnitude quake in China's Xizang - China.org.cn"
-      },
-      {
-        "name": "news.sbs.co.kr",
-        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008811829",
-        "title": "16 Dead, 413 Aftershocks Recorded After Magnitude 7.0 Earthquake Hits Tibet"
-      },
-      {
-        "name": "watchers.news",
-        "url": "https://watchers.news/2026/10/23/m7-0-earthquake-kills-at-least-16-injures-76-in-xizang-china/",
-        "title": "M7.0 earthquake kills at least 16, injures 76 in Xizang, China - The Watchers"
-      },
-      {
-        "name": "chinadaily.com.cn",
-        "url": "https://www.chinadaily.com.cn/a/202610/24/WS6adc9a54e4b06d4aa05649ce.html",
-        "title": "Rescue and relief efforts underway after quake kills 16, injures 76 in Xizang - Chinadaily.com.cn"
-      },
-      {
-        "name": "chinadaily.com.cn",
-        "url": "https://www.chinadaily.com.cn/a/202610/25/WS6add3aa5e4b06d4aa0564a13.html",
-        "title": "Rescue efforts continue after 7.0-magnitude quake in Xizang - Chinadaily.com.cn"
-      }
-    ],
-    "membersHash": "news|CN#0bc7aa7f",
-    "seen": "2026-10-25T21:18:23.413Z",
-    "donationSearched": "2026-10-25T15:46:17.310Z",
-    "directSearched": "2026-10-25T15:46:17.310Z",
     "directSearchVersion": 2
   },
   "news-earthquake-earthquake-ve-a276235b63": {

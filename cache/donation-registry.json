@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-08T17:03:49.486Z",
+  "updated": "2026-11-08T22:35:18.778Z",
   "fetched": {
-    "societies": "2026-11-08T17:03:49.486Z",
-    "uncr": "2026-11-08T17:03:49.486Z"
+    "societies": "2026-11-08T22:35:18.778Z",
+    "uncr": "2026-11-08T22:35:18.778Z"
   },
   "societies": {
     "AF": {
@@ -2459,47 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "local4:ifrc-earthquake-8060:donate.worldvision.org/give/indonesia-earthquake-relief": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Indonesia\"",
-      "checked": "2026-11-01T20:59:19.901Z",
-      "chain": [
-        "https://donate.worldvision.org/give/indonesia-earthquake-relief"
-      ],
-      "place": "Indonesia",
-      "name": "World Vision",
-      "title": "Indonesia Earthquake Relief"
-    },
-    "local4:ifrc-earthquake-8055:rescue.org/help-survivors-of-Colombia-earthquake": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Colombia\"",
-      "checked": "2026-11-01T20:59:19.901Z",
-      "chain": [
-        "https://www.rescue.org/help-survivors-of-Colombia-earthquake"
-      ],
-      "place": "Colombia",
-      "name": "International Rescue Committee",
-      "title": "Colombia earthquake: Donate to help survivors | International Rescue Committee"
-    },
-    "colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria": {
-      "ok": true,
-      "reason": "donation word \"dona ahora\"",
-      "checked": "2026-11-01T20:59:19.901Z",
-      "chain": [
-        "https://colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria"
-      ]
-    },
-    "local4:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Afghanistan\"",
-      "checked": "2026-11-01T20:59:19.901Z",
-      "chain": [
-        "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/"
-      ],
-      "place": "Afghanistan",
-      "name": "Penny Appeal USA",
-      "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan"
-    },
     "indianredcross.org/ircs/donatenow": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2841,26 +2800,79 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-08T17:03:49.486Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-08T17:03:49.486Z"
+      ]
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-11-08T17:03:49.486Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-11-08T17:03:49.486Z"
+      ]
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-11-08T17:03:49.486Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ]
+    },
+    "redcross.org.mm/donate/donate-now": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.redcross.org.mm/donate/donate-now/"
       ],
-      "checked": "2026-11-08T17:03:49.486Z"
+      "checked": "2026-11-08T22:35:18.778Z"
+    },
+    "local4:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Afghanistan\"",
+      "chain": [
+        "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/"
+      ],
+      "place": "Afghanistan",
+      "name": "Penny Appeal USA",
+      "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan",
+      "checked": "2026-11-08T22:35:18.778Z"
+    },
+    "local4:ifrc-flood-8013:salamcharity.org.uk/appeals/bangladesh-emergency": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Bangladesh\"",
+      "chain": [
+        "https://www.salamcharity.org.uk/appeals/bangladesh-emergency/"
+      ],
+      "place": "Bangladesh",
+      "title": "Bangladesh Flood",
+      "checked": "2026-11-08T22:35:18.778Z"
+    },
+    "local4:ifrc-flood-8013:onenationuk.org/bangladeshfloods": {
+      "ok": false,
+      "reason": "published 2024-06-26, before the disaster",
+      "chain": [
+        "https://onenationuk.org/bangladeshfloods"
+      ],
+      "checked": "2026-11-08T22:35:18.778Z"
+    },
+    "local4:ifrc-flood-8013:islamicrelief.org.au/our-work/emergencies/bangladesh-floods": {
+      "ok": false,
+      "reason": "published 2024-08-26, before the disaster",
+      "chain": [
+        "https://islamicrelief.org.au/our-work/emergencies/bangladesh-floods/"
+      ],
+      "checked": "2026-11-08T22:35:18.778Z"
+    },
+    "go.ifrc.org/emergencies/8013/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8013/overview"
+      ],
+      "checked": "2026-11-08T22:35:18.778Z"
     }
   }
 }
