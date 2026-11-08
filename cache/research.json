@@ -533,7 +533,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-08T01:50:21.071Z",
+    "seen": "2026-11-08T09:28:08.113Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2
@@ -637,6 +637,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
+    "seen": "2026-11-08T09:28:08.113Z",
     "donationSearched": "2026-11-08T01:50:21.071Z",
     "directSearched": "2026-11-08T01:50:21.071Z",
     "directSearchVersion": 2,
@@ -648,13 +649,12 @@
         "note": "Watering stations, ranger equipment and food support for rural communities and forest wildlife in Nicaragua and El Salvador.",
         "title": "Emergency appeal - effects of El Nino - GlobalGiving"
       }
-    ],
-    "seen": "2026-11-08T01:50:21.071Z"
+    ]
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-11-05T07:19:24.635Z",
+    "at": "2026-11-08T09:28:08.113Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
+    "searches": 1,
     "summary": "",
     "ongoing": true,
     "places": [],
@@ -662,25 +662,42 @@
     "donation": [
       {
         "url": "https://go.ifrc.org/emergencies/8079/overview",
-        "org": "IFRC with Ethiopian Red Cross Society",
+        "org": "IFRC (IFRC GO)",
         "kind": "society",
-        "note": "Ethiopia-only drought DREF operation MDRET042, with different dates and footprint",
+        "note": "Ethiopia drought DREF appeal; covers Ethiopia only and dates do not match this event.",
         "specific": false
       },
       {
-        "url": "https://member.redcrosseth.org/donate",
+        "url": "https://redcross.or.ke/drought-emergency-2026/",
+        "org": "Kenya Red Cross Society",
+        "kind": "society",
+        "note": "General donation page for Kenya's 2026 drought, not tied to this event.",
+        "specific": false
+      },
+      {
+        "url": "https://redcrosseth.org/get-involved/donate/",
         "org": "Ethiopian Red Cross Society",
         "kind": "society",
-        "note": "General Ethiopian Red Cross donation fund, not tied to this event",
+        "note": "General fund for the society's work, not this drought specifically.",
         "specific": false
       }
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-08T01:50:21.071Z",
-    "donationSearched": "2026-11-05T07:19:24.635Z",
-    "directSearched": "2026-11-05T07:19:24.635Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-08T09:28:08.113Z",
+    "directSearched": "2026-11-08T09:28:08.113Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://animalsurvival.org/appeal/tsavo-water-project-jul-26/",
+        "org": "Animal Survival International (with Mwalua Wildlife Trust)",
+        "kind": "local",
+        "note": "Waterhole for drought-stricken wildlife in Tsavo West, Kenya, appeal dated 8 July 2026.",
+        "title": "We continue to help raise funds for drought-stricken animals in Kenya - Animal Survival International",
+        "published": "2026-08-04T09:28:08.113Z"
+      }
+    ],
+    "seen": "2026-11-08T09:28:08.113Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -906,69 +923,6 @@
       }
     ]
   },
-  "gdacs-earthquake-eq-1571732": {
-    "at": "2026-10-21T14:45:27.681Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 5.6 earthquake struck on 15 October 2026 at 11:07 UTC about 43 km north-northwest of Lake Minchumina, Alaska. USGS lists it as a potential mainshock of an earthquake sequence. Shaking was felt near Fairbanks, College and Badger. No damage, injuries or evacuations are reported. USGS forecasts a 51% chance of M 3+ aftershocks in the following week.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Fairbanks",
-        "admin": "Alaska",
-        "country": "US",
-        "kind": "city",
-        "impact": "shaking felt"
-      },
-      {
-        "name": "College",
-        "admin": "Alaska",
-        "country": "US",
-        "kind": "town",
-        "impact": "shaking felt"
-      },
-      {
-        "name": "Badger",
-        "admin": "Alaska",
-        "country": "US",
-        "kind": "town",
-        "impact": "shaking felt"
-      }
-    ],
-    "figures": [
-      {
-        "label": "People who felt the quake",
-        "value": "106 people",
-        "sourceName": "seismowatch.com",
-        "sourceUrl": "https://seismowatch.com/earthquakes/region/alaska/"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "earthquake.usgs.gov",
-        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026ukynnb",
-        "title": "M 5.6 - 43 km NNW of Lake Minchumina, Alaska"
-      },
-      {
-        "name": "newsroomamerica.com",
-        "url": "https://newsroomamerica.com/a/MT6w4dS1VR9u3hxN6LXBSDzxmZs/the_quake_struck_at_11_07_02_utc_about_43_km_north_northwest_of_lake_minchumina_with_shaking_felt_near_fairbanks_college_and_badger.html",
-        "title": "Preliminary Reports Give Magnitude 5.6 and 5.3 for Central Alaska Earthquake — newsroomamerica.com"
-      },
-      {
-        "name": "yahoo.com",
-        "url": "https://www.yahoo.com/news/science/articles/magnitude-5-6-earthquake-rattles-121832918.html",
-        "title": "Magnitude 5.6 earthquake rattles remote region of Interior Alaska"
-      },
-      {
-        "name": "seismowatch.com",
-        "url": "https://seismowatch.com/earthquakes/region/alaska/",
-        "title": "Earthquakes in Alaska today: latest news & last 30 days"
-      }
-    ],
-    "membersHash": "gdacs,usgs|US#dc9009ba",
-    "seen": "2026-10-25T07:59:52.974Z"
-  },
   "gdacs-earthquake-eq-1572122": {
     "at": "2026-10-28T23:02:19.626Z",
     "model": "claude-haiku-5-5",
@@ -1148,7 +1102,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-08T01:50:21.071Z",
+    "seen": "2026-11-08T09:28:08.113Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
@@ -1230,61 +1184,6 @@
     ],
     "membersHash": "gdacs,news,usgs|VU#95030409",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-earthquake-eq-1573709": {
-    "at": "2026-10-25T07:59:52.974Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A deep earthquake struck the Ogasawara (Bonin) Islands region of Japan at 11:10 JST on 25 October 2026. JMA gave magnitude 7.0 at about 470 km depth; USGS gave 6.5 at 492.4 km. No tsunami threat was issued. The notes report no damage or casualties, and the event is not ongoing.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Ogasawara Village",
-        "admin": "Tokyo Metropolitan Government",
-        "country": "JP",
-        "kind": "town",
-        "impact": "Shaking of intensity 3 (JMA); no damage reported"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Magnitude (JMA)",
-        "value": "7.0",
-        "sourceName": "global.chinadaily.com.cn",
-        "sourceUrl": "https://global.chinadaily.com.cn/a/202610/25/WS6add68dce4b06d4aa0564a2d.html"
-      },
-      {
-        "label": "Depth (JMA)",
-        "value": "about 470 km",
-        "sourceName": "global.chinadaily.com.cn",
-        "sourceUrl": "https://global.chinadaily.com.cn/a/202610/25/WS6add68dce4b06d4aa0564a2d.html"
-      },
-      {
-        "label": "Magnitude (USGS)",
-        "value": "6.5",
-        "sourceName": "watchers.news",
-        "sourceUrl": "https://watchers.news/2026/10/25/strong-and-deep-m6-5-earthquake-hits-bonin-islands-japan-region/"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "newscord.org",
-        "url": "https://newscord.org/article/65-magnitude-earthquake-strikes-japans-bonin-islands-no-tsunami-warning-issued--Story_20261025_65magnitudeearthquak99fb3490_82afc5fe3779",
-        "title": "6.5-Magnitude Earthquake Strikes Japan’s Bonin Islands, No Tsunami Warning Issued: 5 outlets compared"
-      },
-      {
-        "name": "global.chinadaily.com.cn",
-        "url": "https://global.chinadaily.com.cn/a/202610/25/WS6add68dce4b06d4aa0564a2d.html",
-        "title": "7.0-magnitude earthquake jolts Japan's Ogasawara Islands: JMA - Chinadaily.com.cn"
-      },
-      {
-        "name": "watchers.news",
-        "url": "https://watchers.news/2026/10/25/strong-and-deep-m6-5-earthquake-hits-bonin-islands-japan-region/",
-        "title": "Strong and deep M6.5 earthquake hits Bonin Islands, Japan region - The Watchers"
-      }
-    ],
-    "membersHash": "gdacs|JP#e78215ea"
   },
   "gdacs-flood-fl-1103888": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -3317,7 +3216,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-08T01:50:21.071Z",
+    "seen": "2026-11-08T09:28:08.113Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
@@ -3487,31 +3386,6 @@
     ],
     "membersHash": "gdacs|BR#efe30b15",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-wildfire-wf-1032672": {
-    "at": "2026-10-25T07:59:52.974Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A forest fire in Mozambique began on 5 October 2026, according to the event record. The RSOE EDIS listing gives an event date of 11 October and a last update on 16 October 2026, and marks the fire as expired. RSOE reports 12,806 hectares burned for 11 to 16 October. No named affected place or official source confirmed the event.",
-    "ongoing": false,
-    "places": [],
-    "figures": [
-      {
-        "label": "Burned area",
-        "value": "12,806 ha",
-        "sourceName": "rsoe-edis.org",
-        "sourceUrl": "https://rsoe-edis.org/eventList/details/1150766/0"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "rsoe-edis.org",
-        "url": "https://rsoe-edis.org/eventList/details/1150766/0",
-        "title": "Outdoor fire - Emergency and Disaster Information Service"
-      }
-    ],
-    "membersHash": "gdacs|MZ#f2e78cfc"
   },
   "gdacs-wildfire-wf-1032677": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -4373,7 +4247,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-08T01:50:21.071Z",
+    "seen": "2026-11-08T09:28:08.113Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2,
@@ -4426,115 +4300,160 @@
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-06T07:18:29.895Z",
+    "at": "2026-11-08T09:28:08.113Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck offshore of Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026. Reports describe deaths, injuries and damage to houses, buildings, roads and ports across several districts. Latest sources, to 7 October 2026, say response and recovery were still underway. Aftershock activity had begun to decrease by 18 August, and no source reports the provincial emergency period as formally ended.",
+    "summary": "A magnitude 7.7 earthquake struck Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026. BNPB data as of 1 September 2026 reported 127 deaths, 1,668 injured and 181,354 people in shelters. The emergency status was cut to 30 days. The latest figures found are dated 1 September 2026.",
     "ongoing": true,
     "places": [
       {
         "name": "Nagekeo",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Epicentre area; houses and government buildings damaged"
+        "impact": "epicentre offshore; buildings collapsed in Mbay"
       },
       {
-        "name": "Aesesa",
+        "name": "Sikka",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
-        "kind": "town",
-        "impact": "Shaking VII MMI; houses and warehouses damaged"
+        "kind": "district",
+        "impact": "two deaths at Maumere Port; port buildings damaged"
       },
       {
-        "name": "Mbay",
+        "name": "Manggarai",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
-        "kind": "town",
-        "impact": "Shaking VII MMI; houses and warehouses damaged"
+        "kind": "district",
+        "impact": "highest death counts"
       },
       {
-        "name": "Maumere",
+        "name": "East Manggarai",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
-        "kind": "town",
-        "impact": "Two dead from falling building materials at port"
+        "kind": "district",
+        "impact": "highest death counts"
       },
       {
         "name": "Ende",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
-        "kind": "town",
-        "impact": "Commercial buildings and hotels cracked, partly damaged"
+        "kind": "district",
+        "impact": "deaths reported"
       },
       {
-        "name": "Riung",
+        "name": "Ngada",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
-        "kind": "town",
-        "impact": "Shaking VII MMI"
+        "kind": "district",
+        "impact": "deaths reported"
       },
       {
-        "name": "Borong",
+        "name": "West Manggarai",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "deaths reported"
+      },
+      {
+        "name": "Ruteng",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "town",
-        "impact": "Buildings damaged; remote homes collapsed"
+        "impact": "cracks and partial damage to commercial buildings"
+      },
+      {
+        "name": "Labuan Bajo",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "cracks and partial damage to hotels and public facilities"
+      },
+      {
+        "name": "Bima",
+        "admin": "West Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "moderately damaged house; wall cracks"
+      },
+      {
+        "name": "Selayar Islands",
+        "admin": "South Sulawesi",
+        "country": "ID",
+        "kind": "district",
+        "impact": "displacement reported"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "73",
-        "sourceName": "karmactive.com",
-        "sourceUrl": "https://www.karmactive.com/indonesia-flores-7-7-earthquake-kills-73-nagekeo-august-2026/"
+        "value": "127",
+        "sourceName": "beritasatu.com",
+        "sourceUrl": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi"
       },
       {
         "label": "Injured",
-        "value": "1,182",
-        "sourceName": "karmactive.com",
-        "sourceUrl": "https://www.karmactive.com/indonesia-flores-7-7-earthquake-kills-73-nagekeo-august-2026/"
-      }
-    ],
-    "donation": [
+        "value": "1,668",
+        "sourceName": "beritasatu.com",
+        "sourceUrl": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi"
+      },
       {
-        "url": "https://ayodonor.pmi.or.id/",
-        "org": "PMI Kota Bekasi (Indonesian Red Cross city branch)",
-        "kind": "society",
-        "note": "PMI Ayodonor campaign raising donations for East Nusa Tenggara earthquake victims.",
-        "specific": true
+        "label": "Displaced or in shelters",
+        "value": "181,354 people",
+        "sourceName": "beritasatu.com",
+        "sourceUrl": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi"
+      },
+      {
+        "label": "Houses damaged",
+        "value": "97,215",
+        "sourceName": "beritasatu.com",
+        "sourceUrl": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi"
       }
     ],
+    "donation": [],
     "sources": [
       {
-        "name": "human-initiative.org",
-        "url": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
-        "title": "Situation Report #2 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
-      },
-      {
-        "name": "actalliance.org",
-        "url": "https://actalliance.org/wp-content/uploads/2026/08/ACT-Alert-Indonesia-Earthquake-August-2026.pdf",
-        "title": "1 Alert note"
-      },
-      {
-        "name": "tribune.com.pk",
-        "url": "https://tribune.com.pk/story/2624155/47-dead-as-77-magnitude-quake-rattles-indonesia",
-        "title": "47 dead as 7.7-magnitude quake rattles Indonesia"
-      },
-      {
-        "name": "human-initiative.org",
-        "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
-        "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
-      },
-      {
-        "name": "en.antaranews.com",
-        "url": "https://en.antaranews.com/news/427215/east-nusatenggaras-quake-death-toll-rises-to-38-bnpb-says",
-        "title": "East NusaTenggara's quake death toll rises to 38, BNPB says - ANTARA News"
-      },
-      {
-        "name": "wikiwand.com",
-        "url": "https://www.wikiwand.com/en/2026_East_Nusa_Tenggara_earthquake",
-        "title": "2026 East Nusa Tenggara earthquake - Wikiwand"
+        "name": "beritasatu.com",
+        "url": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi",
+        "title": "Gempa Nagekeo: 127 Tewas, 97.215 Rumah Rusak, dan 181.354 Mengungsi"
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-08T01:50:21.071Z",
-    "donationSearched": "2026-11-06T07:18:29.895Z",
-    "directSearched": "2026-11-06T07:18:29.895Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-08T09:28:08.113Z",
+    "directSearched": "2026-11-08T09:28:08.113Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
+        "org": "IDEP Selaras Alam",
+        "kind": "globalgiving",
+        "note": "Food, clean water, shelter, medicine and lighting for families in Manggarai.",
+        "title": "Donate to Help Families Affected by Flores Earthquake - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/nttemergencyrelief/",
+        "org": "Human Initiative",
+        "kind": "globalgiving",
+        "note": "Emergency shelter, food, clean water, hygiene kits and recovery support for affected families.",
+        "title": "East Nusa Tenggara Earthquake Relief Fund - GlobalGiving"
+      },
+      {
+        "url": "https://human-initiative.jp/campaign/nttearthquake/",
+        "org": "Human Initiative Japan",
+        "kind": "local",
+        "note": "Relief in Sikka and Nagekeo, including a community kitchen.",
+        "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
+        "published": "2026-08-24T09:28:08.113Z"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
+        "org": "GlobalGiving",
+        "kind": "globalgiving",
+        "note": "Multi-disaster Indonesia fund; only part goes to this NTT earthquake.",
+        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
+      }
+    ],
+    "seen": "2026-11-08T09:28:08.113Z"
   },
   "ifrc-earthquake-appeal-mdrid029": {
     "at": "2026-10-24T13:06:33.545Z",
@@ -4978,7 +4897,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-08T01:50:21.071Z",
+    "seen": "2026-11-08T09:28:08.113Z",
     "donationSearched": "2026-11-06T21:57:01.362Z",
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
@@ -5110,7 +5029,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-08T01:50:21.071Z",
+    "seen": "2026-11-08T09:28:08.113Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2,
@@ -5360,7 +5279,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-08T01:50:21.071Z",
+    "seen": "2026-11-08T09:28:08.113Z",
     "donationSearched": "2026-11-06T21:57:01.362Z",
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
@@ -5854,69 +5773,10 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-08T01:50:21.071Z",
+    "seen": "2026-11-08T09:28:08.113Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
-    "direct": [
-      {
-        "url": "https://www.globalgiving.org/projects/emergency-flood-relief-for-families-in-nepal/donate/",
-        "org": "United Foundation-Nepal (via GlobalGiving)",
-        "kind": "globalgiving",
-        "note": "Emergency support for flood-hit families and schools in Rasuwa and Nuwakot.",
-        "title": "Donate to Nepal Flood Relief for Rasuwa and Nuwakot Families - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/nepal-flood-relief-1/",
-        "org": "Aktion Deutschland Hilft (via GlobalGiving)",
-        "kind": "globalgiving",
-        "note": "Food, safe water, shelter, medicine and hygiene items in worst-hit districts.",
-        "title": "Nepal Flood Relief - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/nepal-flash-flood-emergency-relief-2026/",
-        "org": "OBHIZATRIK Foundation and OBHIZATRIK International (via GlobalGiving)",
-        "kind": "globalgiving",
-        "note": "Relief goods and grants to local NGOs in Rasuwa, Nuwakot and Dhading.",
-        "title": "Nepal Flash Flood Emergency Relief 2026 - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/nepal-flood-relief-fund/",
-        "org": "GlobalGiving",
-        "kind": "globalgiving",
-        "note": "Pooled fund for local groups' urgent relief and longer-term recovery.",
-        "title": "Nepal Flood Relief Fund - GlobalGiving",
-        "published": "2026-10-29T00:08:17.816Z"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/bhotekoshi-flood-relief-and-early-recovery/",
-        "org": "Civic Forum for Sustainable Development (via GlobalGiving)",
-        "kind": "globalgiving",
-        "note": "Food, water, hygiene, shelter and livelihood support for up to 200 households in Rasuwa.",
-        "title": "Bhotekoshi Flood Relief & Early Recovery - GlobalGiving"
-      },
-      {
-        "url": "https://funds.anhsdc.org/",
-        "org": "America Nepal Helping Society",
-        "kind": "local",
-        "note": "Rasuwa Flood Relief Fund for shelter, food and safe relief.",
-        "title": "Rasuwa Flood Relief Fund — ANHS"
-      },
-      {
-        "url": "https://www.hidaya.org/social-welfare/disaster-relief/nepal-flash-flood/",
-        "org": "Hidaya Foundation",
-        "kind": "local",
-        "note": "Food, water, shelter and health support in Timure, Rasuwagadhi and Syabrubesi.",
-        "title": "Nepal Flash Flood - Hidaya Foundation",
-        "published": "2026-09-01T00:08:17.816Z"
-      },
-      {
-        "url": "https://childrenofadam.org/all-appeals/nepal-emergency/",
-        "org": "Children of Adam",
-        "kind": "local",
-        "note": "Food, clean water, medical supplies and shelter for families in Rasuwa and Nuwakot.",
-        "title": "Nepal Flood Appeal 2026",
-        "published": "2026-08-28T00:08:17.816Z"
-      }
-    ]
+    "directSearched": "2026-11-08T09:28:08.113Z",
+    "directSearchVersion": 2
   },
   "ifrc-flood-8115": {
     "at": "2026-10-21T05:12:20.084Z",
@@ -6583,59 +6443,6 @@
     "directSearched": "2026-10-25T15:46:17.310Z",
     "directSearchVersion": 2
   },
-  "news-earthquake-earthquake-jp-1838d1f63b": {
-    "at": "2026-10-25T07:59:52.974Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 7.0 earthquake struck waters west of the Ogasawara (Bonin) Islands, Japan, on 25 October 2026, about 02:10 UTC, according to the Japan Meteorological Agency (JMA). The quake was deep, around 470 km, and no tsunami threat was reported. Shaking of seismic intensity 3 was measured on Chichijima and Hahajima, and the tremor was felt across eastern and north-eastern Japan. As of 25 October, no casualties or damage had been reported.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Chichijima",
-        "admin": "Ogasawara Islands",
-        "country": "JP",
-        "kind": "town",
-        "impact": "shaking measured intensity 3"
-      },
-      {
-        "name": "Hahajima",
-        "admin": "Ogasawara Islands",
-        "country": "JP",
-        "kind": "town",
-        "impact": "shaking measured intensity 3"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "yahoo.com",
-        "url": "https://www.yahoo.com/news/science/articles/magnitude-7-0-earthquake-strikes-070835740.html",
-        "title": "Magnitude 7.0 earthquake strikes deep beneath the Pacific near Japan"
-      },
-      {
-        "name": "global.chinadaily.com.cn",
-        "url": "https://global.chinadaily.com.cn/a/202610/25/WS6add68dce4b06d4aa0564a2d.html",
-        "title": "7.0-magnitude earthquake jolts Japan's Ogasawara Islands: JMA - Chinadaily.com.cn"
-      },
-      {
-        "name": "businesstoday.com.my",
-        "url": "https://www.businesstoday.com.my/2026/10/25/powerful-7-0-earthquake-strikes-near-japans-ogasawara-islands/",
-        "title": "Powerful 7.0 Earthquake Strikes Near Japan's Ogasawara Islands"
-      },
-      {
-        "name": "azernews.az",
-        "url": "https://www.azernews.az/region/266161.html",
-        "title": "Magnitude 7.0 earthquake hits Japan"
-      },
-      {
-        "name": "thestar.com.my",
-        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/25/a-70-magnitude-earthquake-jolts-japan039s-ogasawara-islands",
-        "title": "A 7.0-magnitude earthquake jolts Japan's Ogasawara Islands"
-      }
-    ],
-    "membersHash": "news|JP#3b3402c1"
-  },
   "news-earthquake-earthquake-ve-a276235b63": {
     "at": "2026-10-31T06:15:54.662Z",
     "model": "claude-haiku-5-5",
@@ -6812,133 +6619,6 @@
       }
     ]
   },
-  "news-flood-flood-ar-4614a4ca47": {
-    "at": "2026-10-25T07:59:52.974Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Floods on the Paraná and its tributaries in Chaco and Misiones provinces, Argentina, began around 24 October 2026. Evacuations were still under way on 24 October. In Chaco, 1,790 people had left their homes. In Misiones, 141 people were evacuated and 117 homes affected. The Paraná was at 7.27 m at the Chaco zone, above the 6.50 m evacuation level, and is expected to rise again in coming weeks.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Barranqueras",
-        "admin": "Chaco",
-        "country": "AR",
-        "kind": "city",
-        "impact": "Water in streets and houses; residents moved to higher ground"
-      },
-      {
-        "name": "Puerto Vilelas",
-        "admin": "Chaco",
-        "country": "AR",
-        "kind": "town",
-        "impact": "Aid and evacuations"
-      },
-      {
-        "name": "Puerto Antequera",
-        "admin": "Chaco",
-        "country": "AR",
-        "kind": "town",
-        "impact": "Aid and evacuations"
-      },
-      {
-        "name": "Chaco",
-        "country": "AR",
-        "kind": "region",
-        "impact": "1,790 people left their homes"
-      },
-      {
-        "name": "Misiones",
-        "country": "AR",
-        "kind": "region",
-        "impact": "141 evacuated, 117 homes affected, five bridges cut"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Left homes, Chaco",
-        "value": "1,790 people",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/sociedad/2026/10/25/el-nino-habia-1800-los-evacuados-en-chaco-misiones-fue-afectada-por-fuertes-tormentas-y-santa-fe-preve-otra-suba-del-parana/"
-      },
-      {
-        "label": "Evacuated, Misiones",
-        "value": "141 people",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/sociedad/2026/10/25/el-nino-habia-1800-los-evacuados-en-chaco-misiones-fue-afectada-por-fuertes-tormentas-y-santa-fe-preve-otra-suba-del-parana/"
-      },
-      {
-        "label": "Homes affected, Misiones",
-        "value": "117 homes",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/sociedad/2026/10/25/el-nino-habia-1800-los-evacuados-en-chaco-misiones-fue-afectada-por-fuertes-tormentas-y-santa-fe-preve-otra-suba-del-parana/"
-      },
-      {
-        "label": "Families affected, Barranqueras",
-        "value": "74 families, about 251 people",
-        "sourceName": "canal12misiones.com",
-        "sourceUrl": "https://www.canal12misiones.com/nacionales/inundaciones-chaco-familias-rutas"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "diariopampero.com",
-        "url": "https://diariopampero.com/crecida-del-rio-parana-deja-evacuados-en-chaco-y-misiones/",
-        "title": "Crecida del río Paraná deja evacuados en Chaco y Misiones - Diario Pampero"
-      },
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/sociedad/2026/10/25/el-nino-habia-1800-los-evacuados-en-chaco-misiones-fue-afectada-por-fuertes-tormentas-y-santa-fe-preve-otra-suba-del-parana/",
-        "title": "Inundaciones: Chaco sumó casi 1.800 evacuados, Misiones registró 141 y se espera otra crecida del Paraná - Infobae"
-      },
-      {
-        "name": "canal12misiones.com",
-        "url": "https://www.canal12misiones.com/nacionales/inundaciones-chaco-familias-rutas",
-        "title": "Inundaciones en Chaco: la crecida del Paraná dejó a familias viviendo al costado de las rutas - Canal Doce Misiones"
-      },
-      {
-        "name": "noticiasdelacalle.com.ar",
-        "url": "https://www.noticiasdelacalle.com.ar/noticias/2026/10/23/202932-la-crecida-del-parana-complica-al-chaco-hay-mas-de-1100-evacuados-y-rutas-cortadas",
-        "title": "La crecida del Paraná complica al Chaco: hay más de 1.100 evacuados y rutas cortadas"
-      }
-    ],
-    "membersHash": "news|AR#2308ab80",
-    "seen": "2026-10-25T07:59:52.974Z"
-  },
-  "news-flood-flood-au-7661665d96": {
-    "at": "2026-10-25T07:59:52.974Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Forecasts and warnings were issued for flash flooding in Victoria, Australia, for 25 October 2026, as part of a severe storm outbreak across eastern Australia. The Bureau of Meteorology's forecasts name eastern Victoria. The research notes found no reports of flooding confirmed on that date, and no reports of damage, casualties or displacement in Victoria.",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "inkl.com",
-        "url": "https://www.inkl.com/news/unusually-large-multi-state-storm-causing-severe-weather-for-australias-east-with-more-on-the-way",
-        "title": "‘Unusually large’ multi-state storm causing severe weather for Australia’s east"
-      },
-      {
-        "name": "bom.gov.au",
-        "url": "https://www.bom.gov.au/video/severe-weather-update-severe-storm-outbreak-for-eastern-australia",
-        "title": "Severe weather update: Severe storm outbreak for eastern Australia"
-      },
-      {
-        "name": "newsbytesapp.com",
-        "url": "https://www.newsbytesapp.com/news/world/severe-storms-expected-across-queensland-victoria-and-south-australia/tldr",
-        "title": "Severe storms expected across Queensland, Victoria and South Australia"
-      },
-      {
-        "name": "thenewdaily.com.au",
-        "url": "https://www.thenewdaily.com.au/news/state/vic/2026/10/02/heavy-rain-smashes-victoria",
-        "title": "'More to come': Wild storm smashes Victoria"
-      }
-    ],
-    "membersHash": "news|AU#66a4c892",
-    "seen": "2026-10-25T07:59:52.974Z"
-  },
   "news-flood-flood-co-a7b3e7fad4": {
     "at": "2026-10-25T13:34:13.512Z",
     "model": "claude-haiku-5-5",
@@ -7032,97 +6712,6 @@
     "membersHash": "news|CO#78604202",
     "seen": "2026-10-25T13:34:13.512Z"
   },
-  "news-storm-storm-be-d0ce796215": {
-    "at": "2026-10-25T07:59:52.974Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Storm Austen struck Belgium from 23 October 2026, bringing strong winds that downed trees and power lines and damaged roofs, mainly in Luxembourg, Liège, Namur, Walloon Brabant and Brussels. Emergency services responded through early Saturday 24 October. Sources describe the storm as having passed, with no reports of ongoing flooding or evacuations as of 25 October.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Luxembourg",
-        "country": "BE",
-        "kind": "region",
-        "impact": "Fallen trees on roads and power lines"
-      },
-      {
-        "name": "Theux",
-        "admin": "Liège",
-        "country": "BE",
-        "kind": "town",
-        "impact": "Gas tank leak after tree fell; five houses evacuated"
-      },
-      {
-        "name": "Spa",
-        "admin": "Liège",
-        "country": "BE",
-        "kind": "town",
-        "impact": "Tree fell on car; driver freed by rescuers"
-      },
-      {
-        "name": "Arlon",
-        "admin": "Luxembourg",
-        "country": "BE",
-        "kind": "town",
-        "impact": "Party marquee destroyed by gust"
-      },
-      {
-        "name": "Brussels",
-        "admin": "Brussels-Capital",
-        "country": "BE",
-        "kind": "region",
-        "impact": "Four people injured; large tree fell near Grand-Place"
-      },
-      {
-        "name": "Bilzen-Hoeselt",
-        "admin": "Limburg",
-        "country": "BE",
-        "kind": "town",
-        "impact": "Roof blew off and landed on parked car"
-      },
-      {
-        "name": "Namur",
-        "country": "BE",
-        "kind": "region",
-        "impact": "Trees fell on roads and power lines; roofs damaged"
-      },
-      {
-        "name": "Walloon Brabant",
-        "country": "BE",
-        "kind": "region",
-        "impact": "Trees fell on roads and power lines; roofs damaged"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Fire interventions",
-        "value": "about 300",
-        "sourceName": "lavenir.net",
-        "sourceUrl": "https://www.lavenir.net/regions/luxembourg/2026/10/23/degats-de-la-tempete-austen-en-province-de-luxembourg-les-pompiers-surcharges-5RWXNGJUFRF2XO63NAPBI3GDJM/"
-      },
-      {
-        "label": "Emergency calls",
-        "value": "over 12,000 calls",
-        "sourceName": "lalibre.be",
-        "sourceUrl": "https://www.lalibre.be/belgique/societe/2026/10/24/tempete-austen-plus-de-12000-appels-aux-numeros-durgence-en-belgique-ce-vendredi-KPA2UHFW55DBJBTQ6OBZOYTN7A/"
-      },
-      {
-        "label": "Injured",
-        "value": "4 people",
-        "sourceName": "rtbf.be",
-        "sourceUrl": "https://www.rtbf.be/article/la-tempete-austen-frappe-la-belgique-11804941"
-      },
-      {
-        "label": "Evacuated",
-        "value": "5 houses in Theux",
-        "sourceName": "lavenir.net",
-        "sourceUrl": "https://www.lavenir.net/regions/verviers/2026/10/23/tempete-austen-110-interventions-pour-les-pompiers-de-la-zone-vhp-un-arbre-sur-une-voiture-a-spa-et-5-maisons-evacuees-a-theux-MNC5KCE74FBP7DN7AMNUI3DTIE/"
-      }
-    ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|BE#eba40d3a"
-  },
   "news-storm-storm-gb-0274bd1c75": {
     "at": "2026-10-25T13:34:13.512Z",
     "model": "claude-haiku-5-5",
@@ -7142,41 +6731,6 @@
     "sources": [],
     "membersHash": "news|GB#e3ccba2f",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "news-storm-storm-ie-053b302524": {
-    "at": "2026-10-24T13:06:33.545Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Storm Boelo was reported to have started in Ireland on 24 October 2026, according to an alert feed with minor severity. Status Orange warnings were reported for Galway and Kerry. Research could not be completed, and no verified reports of damage, casualties or displacement were found. Whether the storm is still ongoing is not confirmed.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Galway",
-        "admin": "Connacht",
-        "country": "IE",
-        "kind": "city",
-        "impact": "Status Orange warning reported"
-      },
-      {
-        "name": "Kerry",
-        "admin": "Munster",
-        "country": "IE",
-        "kind": "district",
-        "impact": "Status Orange warning reported"
-      },
-      {
-        "name": "Cork",
-        "admin": "Munster",
-        "country": "IE",
-        "kind": "city",
-        "impact": "Storm reported to hit; impact not reported"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|IE#dc5f6dab",
-    "seen": "2026-10-25T07:59:52.974Z"
   },
   "news-storm-storm-nl-927e01479d": {
     "at": "2026-10-25T13:34:13.512Z",
