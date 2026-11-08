@@ -258,10 +258,10 @@
       }
     ],
     "membersHash": "eonet,gdacs|JP#d96d9cd0",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-07T22:18:49.156Z",
     "directSearched": "2026-11-07T22:18:49.156Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-07T22:18:49.156Z"
+    "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001345": {
     "at": "2026-10-29T13:38:14.413Z",
@@ -533,115 +533,123 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-11-06T00:03:05.600Z",
+    "at": "2026-11-08T01:50:21.071Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A drought affecting Central America began on 21 April 2026. The latest source found is dated 23 October 2026. Guatemala's agriculture ministry said the drought would run through 2026 and much of 2027. Honduras's drought alert was still in effect in late October, and the government was running cloud-seeding flights. El Salvador declared a nationwide red drought alert on 25 August 2026.",
+    "searches": 3,
+    "summary": "A drought affecting Central America began on 21 April 2026 and is still ongoing as of the latest reports, from October 2026. Honduras has 103 municipalities under red drought alert, and El Salvador declared a nationwide Red Alert on 25 August. Honduras faces hunger and cattle losses, and crop losses are reported across the Dry Corridor. The GDACS end date of 25 September 2026 is not supported by later reports.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Trifinio Region",
-        "country": "GT",
-        "kind": "region",
-        "impact": "15 municipalities on red drought alert"
-      },
-      {
-        "name": "Tegucigalpa",
-        "country": "HN",
-        "kind": "city",
-        "impact": "red drought alert"
-      },
-      {
-        "name": "Choluteca",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red Cross assessing needs"
-      },
-      {
-        "name": "Comayagua",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red Cross assessing needs"
-      },
-      {
-        "name": "El Paraíso",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red Cross assessing needs"
-      },
-      {
-        "name": "Francisco Morazán",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red Cross assessing needs"
-      },
-      {
-        "name": "La Paz",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red Cross assessing needs"
-      },
-      {
-        "name": "Valle",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red Cross assessing needs"
-      },
       {
         "name": "Nueva Concepción",
         "country": "HN",
         "kind": "town",
-        "impact": "government emergency declared"
+        "impact": "state of emergency declared; food aid distributed"
+      },
+      {
+        "name": "San Lorenzo",
+        "country": "HN",
+        "kind": "town",
+        "impact": "livestock losses"
+      },
+      {
+        "name": "Eastern Dry Corridor",
+        "country": "SV",
+        "kind": "region",
+        "impact": "Red Cross drought action focus"
+      },
+      {
+        "name": "Dry Corridor",
+        "country": "GT",
+        "kind": "region",
+        "impact": "named as affected; Red Cross early action activated"
+      },
+      {
+        "name": "Dry Corridor",
+        "country": "NI",
+        "kind": "region",
+        "impact": "crop losses"
       }
     ],
     "figures": [
       {
-        "label": "Families affected",
-        "value": "at least 113,825 families",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/guatemala/2026/09/21/guatemala-declara-alerta-roja-en-15-municipios-ante-los-efectos-de-la-sequia/"
+        "label": "People in need",
+        "value": "708,000 people",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
       },
       {
-        "label": "Families planned for food aid",
-        "value": "1,212,178 families",
-        "sourceName": "icndigital.com",
-        "sourceUrl": "https://icndigital.com/guatemala-implementara-un-plan-de-emergencia-por-sequia/"
+        "label": "People targeted by joint appeal",
+        "value": "538,000 people",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
       },
       {
-        "label": "Municipalities under drought alert",
-        "value": "234 of 298 municipalities",
-        "sourceName": "phys.org",
-        "sourceUrl": "https://phys.org/news/2026-08-honduras-country-el-nio-drought.html"
+        "label": "Maize-growing households reporting…",
+        "value": "78.6 percent",
+        "sourceName": "unocha.org",
+        "sourceUrl": "https://www.unocha.org/publications/report/guatemala/el-nino-2026-2027-climate-risk-humanitarian-outlook-latin-america-and-caribbean-september-2026"
       }
     ],
     "donation": [
       {
-        "url": "https://honduras.un.org/es",
-        "org": "UN in Honduras, with the Humanitarian Response Network",
-        "kind": "un",
-        "note": "Promotes US$60M Flash Appeal for drought-affected people in Honduras, linked to El Niño.",
+        "url": "https://go.ifrc.org/countries/81",
+        "org": "IFRC GO platform",
+        "kind": "society",
+        "note": "IFRC record for Honduras drought appeal MDRHN028, already fully funded.",
         "specific": true
       },
       {
+        "url": "https://honduras.un.org/es",
+        "org": "UN Honduras",
+        "kind": "un",
+        "note": "UN Honduras country page with news of a US$60M drought Flash Appeal.",
+        "specific": false
+      },
+      {
         "url": "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena",
-        "org": "Honduran Red Cross (Cruz Roja Hondureña)",
+        "org": "Honduran Red Cross (IFRC directory listing)",
         "kind": "society",
-        "note": "IFRC directory page for Honduran Red Cross with general donate link, not drought-specific.",
+        "note": "General national society donation link, not specific to this drought.",
         "specific": false
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/guatemala-power-emergency-drought-hydropower-2026/",
+        "title": "Guatemala Power Emergency: Drought Cuts Hydro Output"
+      },
+      {
+        "name": "riotimesonline.com",
+        "url": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/",
+        "title": "Honduras UN Appeal Over Dry Corridor Drought"
+      },
+      {
+        "name": "global-agriculture.com",
+        "url": "https://www.global-agriculture.com/global-agriculture/el-nino-drought-triggers-emergency-declarations-across-central-america/",
+        "title": "El Niño Drought Triggers Emergency Declarations Across Central America"
+      }
+    ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-07T22:18:49.156Z",
-    "donationSearched": "2026-11-06T00:03:05.600Z",
-    "directSearched": "2026-11-06T00:03:05.600Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-08T01:50:21.071Z",
+    "directSearched": "2026-11-08T01:50:21.071Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
+        "org": "Paso Pacífico",
+        "kind": "globalgiving",
+        "note": "Watering stations, ranger equipment and food support for rural communities and forest wildlife in Nicaragua and El Salvador.",
+        "title": "Emergency appeal - effects of El Nino - GlobalGiving"
+      }
+    ],
+    "seen": "2026-11-08T01:50:21.071Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-05T07:19:24.635Z",
@@ -669,7 +677,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-05T07:19:24.635Z",
     "directSearched": "2026-11-05T07:19:24.635Z",
     "directSearchVersion": 2
@@ -1140,7 +1148,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
@@ -1956,136 +1964,6 @@
     "membersHash": "gdacs|IT#aab5ea36",
     "seen": "2026-10-25T13:34:13.512Z"
   },
-  "gdacs-flood-fl-1104222": {
-    "at": "2026-10-22T01:04:05.836Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Flooding along the Paraná River has affected more than 4,200 families in Paraguay since early October. Ciudad del Este and districts in Alto Paraná remain under water, and families have been evacuated in several departments. The river has started to recede, but the meteorological directorate warns of more rain from 21 to 25 October.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "San Rafael",
-        "admin": "Alto Paraná",
-        "country": "PY",
-        "kind": "district",
-        "impact": "dozens of homes flooded"
-      },
-      {
-        "name": "Ciudad del Este",
-        "admin": "Alto Paraná",
-        "country": "PY",
-        "kind": "city",
-        "impact": "districts under water, 700+ people evacuated"
-      },
-      {
-        "name": "Ayolas",
-        "admin": "Misiones",
-        "country": "PY",
-        "kind": "town",
-        "impact": "1,064 families evacuated, 221 in shelters"
-      },
-      {
-        "name": "Presidente Franco",
-        "admin": "Alto Paraná",
-        "country": "PY",
-        "kind": "town",
-        "impact": "damage reported"
-      },
-      {
-        "name": "Hernandarias",
-        "admin": "Alto Paraná",
-        "country": "PY",
-        "kind": "town",
-        "impact": "damage reported"
-      },
-      {
-        "name": "Minga Guazú",
-        "admin": "Alto Paraná",
-        "country": "PY",
-        "kind": "district",
-        "impact": "damage reported"
-      },
-      {
-        "name": "Ñeembucú",
-        "country": "PY",
-        "kind": "region",
-        "impact": "several homes flooded"
-      },
-      {
-        "name": "Itapúa",
-        "country": "PY",
-        "kind": "region",
-        "impact": "several homes flooded"
-      },
-      {
-        "name": "Tres Fronteras river port",
-        "country": "PY",
-        "kind": "site",
-        "impact": "under water"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Families affected",
-        "value": "more than 4,200 families",
-        "sourceName": "noticiassin.com",
-        "sourceUrl": "https://noticiassin.com/mundo/2026/10/21/inundaciones-en-paraguay-afectan-a-4-200-familias-2150374"
-      },
-      {
-        "label": "Families evacuated",
-        "value": "1,988 families",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/paraguay-flood-4253-families-parana-river/"
-      },
-      {
-        "label": "Families still waiting for help",
-        "value": "2,672 families",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/paraguay-flood-4253-families-parana-river/"
-      },
-      {
-        "label": "Homes affected",
-        "value": "at least 100 homes",
-        "sourceName": "telesurenglish.net",
-        "sourceUrl": "https://www.telesurenglish.net/paraguay-floods-affect-3000-families-as-parana-river-rises/"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "telesurenglish.net",
-        "url": "https://www.telesurenglish.net/paraguay-floods-affect-3000-families-as-parana-river-rises/",
-        "title": "Paraguay Floods Affect 3,000 Families as Paraná River rises - teleSUR English"
-      },
-      {
-        "name": "noticiassin.com",
-        "url": "https://noticiassin.com/mundo/2026/10/19/inundaciones-en-paraguay-afectan-a-3-000-familias-2148221",
-        "title": "Las inundaciones por las lluvias en Paraguay provocan afectaciones a unas 3.000 familias"
-      },
-      {
-        "name": "telesurenglish.net",
-        "url": "https://www.telesurenglish.net/parana-flooding-evacuations-paraguay/",
-        "title": "Paraná River Flooding Forces Mass Evacuations in Paraguay"
-      },
-      {
-        "name": "hoy.com.py",
-        "url": "https://www.hoy.com.py/nacionales/2026/10/20/crecida-del-parana-ya-afecta-a-4200-familias-reporta-la-sen",
-        "title": "Diario HOY"
-      },
-      {
-        "name": "eluniversal.com.mx",
-        "url": "https://www.eluniversal.com.mx/mundo/inundaciones-por-desbordamiento-del-rio-parana-afecta-a-mas-4-mil-familias-en-paraguay-se-estiman-mas-damnificados/",
-        "title": "Inundaciones por desbordamiento del rio Paraná afecta a más 4 mil familias en Paraguay"
-      },
-      {
-        "name": "tn8.ni",
-        "url": "https://www.tn8.ni/america-latina/inundaciones-por-la-crecida-del-rio-parana-dejan-3-000-familias-afectadas-en-paraguay/",
-        "title": "Inundaciones por la crecida del río Paraná dejan 3.000 familias afectadas en Paraguay"
-      }
-    ],
-    "membersHash": "gdacs|PY#a8b5e710",
-    "seen": "2026-10-25T00:43:26.084Z"
-  },
   "gdacs-flood-fl-1104224": {
     "at": "2026-10-21T17:37:06.438Z",
     "model": "claude-haiku-5-5",
@@ -2158,85 +2036,6 @@
     "sources": [],
     "membersHash": "gdacs|CR#adb5eeef",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-flood-fl-1104228": {
-    "at": "2026-10-21T22:09:59.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "No flood was reported as occurring in Panama as of 20 October 2026. Sinaproc issued a green alert for heavy rain from 19 October in Mariato, Soná and Tonosí, districts hit by the 9 October 2026 earthquakes, with more rain forecast. The earthquakes damaged buildings, including part of a cathedral in Penonomé. Official tallies to 19 October report 29,952 people affected, and thousands remain in shelters. Official flood reports were not checked.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Penonomé",
-        "admin": "Coclé",
-        "country": "PA",
-        "kind": "city",
-        "impact": "Buildings and a hotel collapsed; part of cathedral collapsed"
-      },
-      {
-        "name": "Herrera",
-        "country": "PA",
-        "kind": "region",
-        "impact": "Epicentre area; cracked and damaged homes"
-      },
-      {
-        "name": "Mariato",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "district",
-        "impact": "Under green heavy-rain alert from 19 October"
-      },
-      {
-        "name": "Soná",
-        "admin": "Veraguas",
-        "country": "PA",
-        "kind": "district",
-        "impact": "Under green heavy-rain alert from 19 October"
-      },
-      {
-        "name": "Tonosí",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "district",
-        "impact": "Under green heavy-rain alert from 19 October"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Injured",
-        "value": "27",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_in_Panama"
-      },
-      {
-        "label": "People affected",
-        "value": "29,952 people",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/panama-rain-alert-quake-districts-2026/"
-      },
-      {
-        "label": "People in shelters",
-        "value": "3,827 people in 55 shelters",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/panama-rain-alert-quake-districts-2026/"
-      },
-      {
-        "label": "Homes with total damage",
-        "value": "2,318",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/panama-rain-alert-quake-districts-2026/"
-      },
-      {
-        "label": "Homes assessed",
-        "value": "9,124",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/panama-rain-alert-quake-districts-2026/"
-      }
-    ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|PA#b2b5f6ce",
-    "seen": "2026-10-25T00:43:26.084Z"
   },
   "gdacs-flood-fl-1104230": {
     "at": "2026-10-21T17:37:06.438Z",
@@ -3518,7 +3317,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
@@ -3688,58 +3487,6 @@
     ],
     "membersHash": "gdacs|BR#efe30b15",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "gdacs-wildfire-wf-1032663": {
-    "at": "2026-10-25T00:43:26.084Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A wildfire began on October 8, 2026, in the core zone of the Numrug Strictly Protected Area in Dornod province, eastern Mongolia. Initial investigations point to a vehicle fire from a Mobicom convoy. Mongolian officials said the fire was fully extinguished on October 16. Xinhua reported on October 20 that 528,765.5 hectares had burned, and dry weather still raised the risk of reignition. Chinese forces patrolled the Inner Mongolia border area. A police investigation is…",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Numrug Strictly Protected Area",
-        "admin": "Dornod",
-        "country": "MN",
-        "kind": "site",
-        "impact": "fire started in core zone; about 80% burned"
-      },
-      {
-        "name": "Khalkhgol",
-        "admin": "Dornod",
-        "country": "MN",
-        "kind": "district",
-        "impact": "environment minister inspected damage"
-      },
-      {
-        "name": "Inner Mongolia border area",
-        "country": "CN",
-        "kind": "region",
-        "impact": "border patrolled; firebreaks widened"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Burned area",
-        "value": "528,765.5 ha",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261020/9c701c91faf24d18825b4a46cfab9e61/c.html"
-      },
-      {
-        "label": "Share of reserve burned",
-        "value": "79.8% of the protected area",
-        "sourceName": "china.org.cn",
-        "sourceUrl": "http://www.china.org.cn/2026-10/21/content_118742547.shtml"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/20261020/9c701c91faf24d18825b4a46cfab9e61/c.html",
-        "title": "Massive Japanese-related reserve wildfire in E. Mongolia burns over half mln hectares of land-Xinhua"
-      }
-    ],
-    "membersHash": "gdacs|CN,MN#fbe9d9be"
   },
   "gdacs-wildfire-wf-1032672": {
     "at": "2026-10-25T07:59:52.974Z",
@@ -4626,7 +4373,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2,
@@ -4784,7 +4531,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-06T07:18:29.895Z",
     "directSearched": "2026-11-06T07:18:29.895Z",
     "directSearchVersion": 2
@@ -5231,7 +4978,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-06T21:57:01.362Z",
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
@@ -5363,7 +5110,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2,
@@ -5613,7 +5360,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-06T21:57:01.362Z",
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
@@ -6107,7 +5854,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-07T22:18:49.156Z",
+    "seen": "2026-11-08T01:50:21.071Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "direct": [
       {
@@ -7395,100 +7142,6 @@
     "sources": [],
     "membersHash": "news|GB#e3ccba2f",
     "seen": "2026-10-25T13:34:13.512Z"
-  },
-  "news-storm-storm-gb-f77d5e544d": {
-    "at": "2026-10-22T08:03:09.184Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Storm Austen was named by the Met Office on 20 October 2026 and is forecast to reach the UK from the Atlantic late on Thursday 22 October, bringing disruptive wind and rain through Friday 23 October. As of 22 October, no storm damage, injuries or deaths have been reported. Amber and yellow wind warnings and a yellow rain warning are in place for parts of southern England, Wales, Scotland and the Isles of Scilly.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Cornwall",
-        "country": "GB",
-        "kind": "region",
-        "impact": "amber wind warning, gusts 60-70mph forecast"
-      },
-      {
-        "name": "Plymouth",
-        "admin": "Devon",
-        "country": "GB",
-        "kind": "city",
-        "impact": "amber wind warning, gusts 60-70mph forecast"
-      },
-      {
-        "name": "Devon",
-        "country": "GB",
-        "kind": "region",
-        "impact": "amber wind warning, gusts 60-70mph forecast"
-      },
-      {
-        "name": "Isles of Scilly",
-        "country": "GB",
-        "kind": "region",
-        "impact": "amber wind warning, gusts 60-70mph forecast"
-      },
-      {
-        "name": "Herefordshire",
-        "country": "GB",
-        "kind": "region",
-        "impact": "yellow wind warning from Thursday midnight"
-      },
-      {
-        "name": "South Wales",
-        "country": "GB",
-        "kind": "region",
-        "impact": "yellow wind warning from Thursday midnight"
-      },
-      {
-        "name": "Southern Scotland",
-        "country": "GB",
-        "kind": "region",
-        "impact": "yellow rain warning, possible flooding"
-      },
-      {
-        "name": "Eastern Scotland",
-        "country": "GB",
-        "kind": "region",
-        "impact": "yellow rain warning, possible flooding"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "farmersguide.co.uk",
-        "url": "https://www.farmersguide.co.uk/rural/environmental/storm-austen-to-bring-70mph-winds-and-heavy-rain-to-parts-of-uk/",
-        "title": "Storm Austen to bring 70mph winds and heavy rain to parts of UK - Farmers Guide"
-      },
-      {
-        "name": "metoffice.gov.uk",
-        "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/amber-warning-issued-as-storm-austen-approaches",
-        "title": "Amber warning issued as Storm Austen approaches - Met Office"
-      },
-      {
-        "name": "ladbible.com",
-        "url": "https://www.ladbible.com/news/uk-news/storm-austen-hit-uk-within-hours-met-office-issues-amber-warning-014891-20261022",
-        "title": "Storm Austen to hit UK within hours as Met Office issues amber warning over 'danger to life'"
-      },
-      {
-        "name": "aol.co.uk",
-        "url": "https://www.aol.co.uk/articles/met-office-issues-21-hour-091800000.html",
-        "title": "Met Office issues new 21-hour warning as Storm Austen to batter UK - full list of 26 areas - AOL"
-      },
-      {
-        "name": "britbrief.co.uk",
-        "url": "https://britbrief.co.uk/weather/storms/storm-austen-to-hit-london-with-48mph-winds-and-heavy-rain.html",
-        "title": "Storm Austen to hit London with 48mph winds and heavy rain - Brit Brief"
-      },
-      {
-        "name": "metoffice.gov.uk",
-        "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/storm-austen-named",
-        "title": "Storm Austen named - Met Office"
-      }
-    ],
-    "membersHash": "news|GB#5b5a097b",
-    "seen": "2026-10-25T00:43:26.084Z"
   },
   "news-storm-storm-ie-053b302524": {
     "at": "2026-10-24T13:06:33.545Z",
