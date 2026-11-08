@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-08T09:28:08.113Z",
+  "updated": "2026-11-08T17:03:49.486Z",
   "fetched": {
-    "societies": "2026-11-08T09:28:08.113Z",
-    "uncr": "2026-11-08T09:28:08.113Z"
+    "societies": "2026-11-08T17:03:49.486Z",
+    "uncr": "2026-11-08T17:03:49.486Z"
   },
   "societies": {
     "AF": {
@@ -2735,30 +2735,6 @@
         "https://crisisrelief.un.org/en/donate-colombia-crisis"
       ]
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-07T16:52:12.648Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-11-07T16:52:12.648Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
-    },
-    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
-      "ok": false,
-      "reason": "names another kind of disaster",
-      "checked": "2026-11-07T16:52:12.648Z",
-      "chain": [
-        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ]
-    },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
@@ -2770,97 +2746,121 @@
     "local4:gdacs-drought-dr-1027450:animalsurvival.org/appeal/tsavo-water-project-jul-26": {
       "ok": false,
       "reason": "HTTP 403",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://animalsurvival.org/appeal/tsavo-water-project-jul-26/"
-      ],
-      "checked": "2026-11-08T09:28:08.113Z"
+      ]
     },
     "croixrouge-rdc.org": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://www.croixrouge-rdc.org/"
-      ],
-      "checked": "2026-11-08T09:28:08.113Z"
+      ]
     },
     "redcross.or.ke/drought-emergency-2026": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://redcross.or.ke/drought-emergency-2026/"
-      ],
-      "checked": "2026-11-08T09:28:08.113Z"
+      ]
     },
     "honduras.un.org/es": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://honduras.un.org/es"
-      ],
-      "checked": "2026-11-08T09:28:08.113Z"
+      ]
     },
     "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
       ],
-      "blocked": true,
-      "checked": "2026-11-08T09:28:08.113Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8060:human-initiative.jp/campaign/nttearthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Indonesia\"",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://human-initiative.jp/campaign/nttearthquake/"
       ],
       "place": "Indonesia",
       "name": "Human Initiative Japan",
-      "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
-      "checked": "2026-11-08T09:28:08.113Z"
+      "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan"
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-08T09:28:08.113Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026": {
       "ok": false,
       "reason": "HTTP 403",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-11-08T09:28:08.113Z"
+      ]
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-08T09:28:08.113Z"
+      "blocked": true
     },
     "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
       "ok": false,
       "reason": "asks for Cash App or Venmo, as scams do",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
-      ],
-      "checked": "2026-11-08T09:28:08.113Z"
+      ]
     },
     "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-08T09:28:08.113Z",
       "chain": [
         "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
       ],
-      "blocked": true,
-      "checked": "2026-11-08T09:28:08.113Z"
+      "blocked": true
+    },
+    "go.ifrc.org/emergencies/8079/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8079/overview"
+      ],
+      "checked": "2026-11-08T17:03:49.486Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-11-08T17:03:49.486Z"
+    },
+    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
+      "ok": false,
+      "reason": "names another kind of disaster",
+      "chain": [
+        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ],
+      "checked": "2026-11-08T17:03:49.486Z"
     }
   }
 }
