@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-09T02:07:50.587Z",
+  "updated": "2026-11-09T10:17:17.712Z",
   "fetched": {
-    "societies": "2026-11-09T02:07:50.587Z",
-    "uncr": "2026-11-09T02:07:50.587Z"
+    "societies": "2026-11-09T10:17:17.712Z",
+    "uncr": "2026-11-09T10:17:17.712Z"
   },
   "societies": {
     "AF": {
@@ -2459,55 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "indianredcross.org/ircs/donatenow": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-02T09:59:51.584Z",
-      "chain": [
-        "https://www.indianredcross.org/ircs/donatenow/"
-      ]
-    },
-    "nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal": {
-      "ok": true,
-      "reason": "donation word \"emergency appeal\"",
-      "checked": "2026-11-02T09:59:51.584Z",
-      "chain": [
-        "https://nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal"
-      ]
-    },
-    "local4:ifrc-earthquake-8060:aidworkers.com/appeals/indonesia-flores-earthquake-emergency-20260815": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Indonesia\"",
-      "checked": "2026-11-02T09:59:51.584Z",
-      "chain": [
-        "https://www.aidworkers.com/appeals/indonesia-flores-earthquake-emergency-20260815/"
-      ],
-      "place": "Indonesia",
-      "name": "AidWorkers.com",
-      "title": "Support the Flores earthquake appeal"
-    },
-    "local4:ifrc-earthquake-8060:beqicharity.com/campaign/peduli-gempa-ntt": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Indonesia\"",
-      "checked": "2026-11-02T09:59:51.584Z",
-      "chain": [
-        "https://beqicharity.com/campaign/peduli-gempa-ntt"
-      ],
-      "place": "Indonesia",
-      "name": "https://beqicharity.com/campaign/peduli-gempa-ntt",
-      "title": "Darurat Gempa NTT: Bersama Bantu Pulihkan Flores"
-    },
-    "local4:ifrc-flood-8050:worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Myanmar\"",
-      "checked": "2026-11-02T09:59:51.584Z",
-      "chain": [
-        "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/"
-      ],
-      "place": "Myanmar",
-      "name": "WORLDCHEFS",
-      "title": "Donate to Support Children Affected by Flooding in Myanmar"
-    },
     "local4:ifrc-flood-8013:hrf.org.uk/emergency-appeals/bangladesh-flood": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Bangladesh\"",
@@ -2694,22 +2645,6 @@
         "https://crisisrelief.un.org/en/donate-colombia-crisis"
       ]
     },
-    "local4:gdacs-drought-dr-1027450:animalsurvival.org/appeal/tsavo-water-project-jul-26": {
-      "ok": false,
-      "reason": "HTTP 403",
-      "checked": "2026-11-08T09:28:08.113Z",
-      "chain": [
-        "https://animalsurvival.org/appeal/tsavo-water-project-jul-26/"
-      ]
-    },
-    "croixrouge-rdc.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-08T09:28:08.113Z",
-      "chain": [
-        "https://www.croixrouge-rdc.org/"
-      ]
-    },
     "redcross.or.ke/drought-emergency-2026": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2717,23 +2652,6 @@
       "chain": [
         "https://redcross.or.ke/drought-emergency-2026/"
       ]
-    },
-    "honduras.un.org/es": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-08T09:28:08.113Z",
-      "chain": [
-        "https://honduras.un.org/es"
-      ]
-    },
-    "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-08T09:28:08.113Z",
-      "chain": [
-        "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
-      ],
-      "blocked": true
     },
     "local4:ifrc-earthquake-8060:human-initiative.jp/campaign/nttearthquake": {
       "ok": true,
@@ -2745,49 +2663,6 @@
       "place": "Indonesia",
       "name": "Human Initiative Japan",
       "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan"
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-08T09:28:08.113Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "HTTP 403",
-      "checked": "2026-11-08T09:28:08.113Z",
-      "chain": [
-        "https://convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026/"
-      ]
-    },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-08T09:28:08.113Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
-      "ok": false,
-      "reason": "asks for Cash App or Venmo, as scams do",
-      "checked": "2026-11-08T09:28:08.113Z",
-      "chain": [
-        "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
-      ]
-    },
-    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-08T09:28:08.113Z",
-      "chain": [
-        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
-      ],
-      "blocked": true
     },
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
@@ -2869,45 +2744,120 @@
     "local4:news-flood-flood-ps-d37dff4adf:actionforhumanity.org/projects/emergency/gaza-floods-appeal": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Palestine\"",
+      "checked": "2026-11-09T02:07:50.587Z",
       "chain": [
         "https://actionforhumanity.org/projects/emergency/gaza-floods-appeal/"
       ],
       "place": "Palestine",
-      "title": "Gaza Floods Appeal | Action For Humanity",
-      "checked": "2026-11-09T02:07:50.587Z"
+      "title": "Gaza Floods Appeal | Action For Humanity"
     },
     "local4:news-flood-flood-ps-d37dff4adf:islamic-relief.org.uk/giving/appeals/palestine/gaza": {
       "ok": false,
       "reason": "HTTP 403",
+      "checked": "2026-11-09T02:07:50.587Z",
       "chain": [
         "https://www.islamic-relief.org.uk/giving/appeals/palestine/gaza/"
-      ],
-      "checked": "2026-11-09T02:07:50.587Z"
+      ]
     },
     "palestinercs.org": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-09T02:07:50.587Z",
       "chain": [
         "https://www.palestinercs.org/"
       ],
-      "blocked": true,
-      "checked": "2026-11-09T02:07:50.587Z"
+      "blocked": true
     },
     "icrc.org/en/article/gaza-severe-winter-conditions-compound-humanitarian-crisis-displaced-palestinians": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-09T02:07:50.587Z",
       "chain": [
         "https://www.icrc.org/en/article/gaza-severe-winter-conditions-compound-humanitarian-crisis-displaced-palestinians"
-      ],
-      "checked": "2026-11-09T02:07:50.587Z"
+      ]
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-09T02:07:50.587Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
+      ]
+    },
+    "local4:gdacs-drought-dr-1027450:animalsurvival.org/appeal/tsavo-water-project-jul-26": {
+      "ok": false,
+      "reason": "HTTP 403",
+      "chain": [
+        "https://animalsurvival.org/appeal/tsavo-water-project-jul-26/"
       ],
-      "checked": "2026-11-09T02:07:50.587Z"
+      "checked": "2026-11-09T10:17:17.712Z"
+    },
+    "croixrouge-rdc.org": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.croixrouge-rdc.org/"
+      ],
+      "checked": "2026-11-09T10:17:17.712Z"
+    },
+    "honduras.un.org/es": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://honduras.un.org/es"
+      ],
+      "checked": "2026-11-09T10:17:17.712Z"
+    },
+    "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
+      ],
+      "blocked": true,
+      "checked": "2026-11-09T10:17:17.712Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-09T10:17:17.712Z"
+    },
+    "colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria": {
+      "ok": true,
+      "reason": "donation word \"dona ahora\"",
+      "chain": [
+        "https://colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria"
+      ],
+      "checked": "2026-11-09T10:17:17.712Z"
+    },
+    "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
+      "ok": false,
+      "reason": "asks for Cash App or Venmo, as scams do",
+      "chain": [
+        "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
+      ],
+      "checked": "2026-11-09T10:17:17.712Z"
+    },
+    "local4:ifrc-flood-8025:actalliance.org/appeals-rapid-response-funds/act-rrf-18-2026-afghanistan-floods-emergency": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://actalliance.org/appeals-rapid-response-funds/act-rrf-18-2026-afghanistan-floods-emergency/"
+      ],
+      "checked": "2026-11-09T10:17:17.712Z"
+    },
+    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-09T10:17:17.712Z"
     }
   }
 }

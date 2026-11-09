@@ -426,79 +426,49 @@
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-11-07T09:15:57.008Z",
+    "at": "2026-11-09T10:17:17.712Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A drought affecting much of Europe began on 21 December 2025 and is ongoing. The JRC's European Drought Observatory reported drought remained critical across most of Europe in mid-October 2026. A 6 November report projects EU soybean output to fall about 20% in 2026, to 2.4 million tonnes, after heatwaves and drought.",
+    "searches": 4,
+    "summary": "Drought in Europe, from GDACS event 1018332, started 21 Dec 2025 and is ongoing as of 9 Nov 2026. Reports from summer 2026 describe critical drought in most of Europe, record-low Rhine levels, low Po river flows and wildfires. Sources cite about 1.4 million km2 under agricultural drought and about 580,000 hectares burned. A later wet forecast is expected to ease, but not end, the drought.",
     "ongoing": true,
     "places": [
       {
-        "name": "Wallonia",
-        "country": "BE",
-        "kind": "region",
-        "impact": "drought restrictions introduced"
+        "name": "Po",
+        "country": "IT",
+        "kind": "site",
+        "impact": "reportedly dried up, seawater drained in"
       },
       {
-        "name": "Flanders",
-        "country": "BE",
-        "kind": "region",
-        "impact": "water scarcity reported"
-      },
-      {
-        "name": "Brussels-Capital Region",
-        "country": "BE",
-        "kind": "region",
-        "impact": "yellow drought alert extended"
-      },
-      {
-        "name": "Neuchâtel",
-        "country": "CH",
-        "kind": "region",
-        "impact": "emergency measures for farmers"
-      },
-      {
-        "name": "Schwyz",
-        "country": "CH",
-        "kind": "region",
-        "impact": "emergency measures for farmers"
-      },
-      {
-        "name": "Neuss",
+        "name": "Southern Germany",
         "country": "DE",
-        "kind": "town",
-        "impact": "low Rhine river levels"
+        "kind": "region",
+        "impact": "strongest precipitation shortfalls"
       },
       {
-        "name": "Novi Sad",
-        "country": "RS",
-        "kind": "city",
-        "impact": "Danube low"
+        "name": "Western Ukraine",
+        "country": "UA",
+        "kind": "region",
+        "impact": "strong shortfalls named as hotspot"
       }
     ],
     "figures": [
       {
-        "label": "Share of EU and UK land in drought…",
-        "value": "50% in watch, warning or alert (end of July); 9% at alert…",
-        "sourceName": "joint-research-centre.ec.europa.eu",
-        "sourceUrl": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en"
+        "label": "Area under agricultural drought",
+        "value": "1,412,468 km²",
+        "sourceName": "gdacs.org",
+        "sourceUrl": "https://gdacs.org/report.aspx?eventtype=DR&eventid=1018332"
       },
       {
-        "label": "Poland municipalities affected",
-        "value": "65.47% of municipalities (reporting 21 March to 10 August…",
+        "label": "Area burned by wildfires",
+        "value": "about 580,000 hectares",
         "sourceName": "wodnesprawy.pl",
         "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
       },
       {
-        "label": "France maize crop projection",
-        "value": "about 35% below last year",
-        "sourceName": "farmweeknow.com",
-        "sourceUrl": "https://www.farmweeknow.com/general/persistent-heat-and-drought-slash-eu-corn-production-in-2026/article_77f95ea0-5f92-46c9-a167-78718944806f.html"
-      },
-      {
-        "label": "Energy sector share of drought-related…",
-        "value": "about 23% (around EUR 2 billion per year)",
-        "sourceName": "eea.europa.eu",
-        "sourceUrl": "https://www.eea.europa.eu/en/newsroom/news/what-2026s-climate-extremes-teach-europe-about-resilient-infrastructure"
+        "label": "EU and UK territory under some drought",
+        "value": "half",
+        "sourceName": "smartwatermagazine.com",
+        "sourceUrl": "https://smartwatermagazine.com/news/newsroom/europes-rivers-hit-historic-lows-half-the-eu-and-uk-now-under-drought"
       }
     ],
     "donation": [],
@@ -509,21 +479,36 @@
         "title": "EDO European Drought Observatory - Joint Research Centre"
       },
       {
-        "name": "agnavigator.com",
-        "url": "https://www.agnavigator.com/Article/2026/11/06/europes-soybean-harvest-set-to-plunge-as-drought-cuts-output/",
-        "title": "Europe’s soybean harvest set to plunge as drought cuts output"
+        "name": "climateimpactcompany.com",
+        "url": "https://climateimpactcompany.com/europe-month-1-4-ahead-outlook-after-marine-heatwaves-inspire-summer-2026-heat-and-drought-super-el-nino-is-next-for-the-last-few-months-of-2026-2-2/",
+        "title": "After Marine Heatwaves Inspire Summer 2026 Heat and Drought, Super El Nino Next Influence on Europe Late 2026 Climate - Climate Impact Company"
       },
       {
-        "name": "wodnesprawy.pl",
-        "url": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/",
-        "title": "The 2026 Drought in Europe. We Know the Risks, but We're Not Prepared"
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en",
+        "title": "Worsening drought and record heat grip Europe, fuelling extraordinary wildfires and extremely low river flows - Joint Research Centre"
+      },
+      {
+        "name": "eu-space.europa.eu",
+        "url": "https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/severe-drought-affects-france",
+        "title": "Severe drought affects France"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_European_drought",
+        "title": "2026 European drought"
+      },
+      {
+        "name": "climatestrategies.org",
+        "url": "https://climatestrategies.org/what-europes-2026-drought-means-for-food-security/",
+        "title": "Preparing European Agriculture for the Next Decade"
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-09T02:07:50.587Z",
-    "donationSearched": "2026-11-07T09:15:57.008Z",
-    "directSearched": "2026-11-07T09:15:57.008Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-09T10:17:17.712Z",
+    "directSearched": "2026-11-09T10:17:17.712Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-09T10:17:17.712Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-08T01:50:21.071Z",
@@ -624,7 +609,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-09T02:07:50.587Z",
+    "seen": "2026-11-09T10:17:17.712Z",
     "donationSearched": "2026-11-08T01:50:21.071Z",
     "directSearched": "2026-11-08T01:50:21.071Z",
     "directSearchVersion": 2,
@@ -671,7 +656,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-09T02:07:50.587Z",
+    "seen": "2026-11-09T10:17:17.712Z",
     "donationSearched": "2026-11-08T09:28:08.113Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2,
@@ -972,66 +957,70 @@
     "membersHash": "usgs|PK#62eeb9a4"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-11-07T02:20:53.260Z",
+    "at": "2026-11-09T10:17:17.712Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 7.0 earthquake struck Baqen County in Nagqu, Tibet Autonomous Region, China, on 22 October 2026. Reports from 23 to 24 October gave 16 killed and dozens injured, with at least 339 households damaged and about 12,000 people evacuated. Rescue and relief work continued as of 24 October. No later reports were found.",
+    "summary": "A magnitude 7.0 earthquake struck about 191 km ENE of Nagqu, Tibet Autonomous Region, China, on 22 October 2026. The epicentre is reported in Baqên County. Reports give at least 16 deaths, 76 injuries and at least 339 collapsed homes. The most recent dated report found is from 24 October 2026, and no later report confirms the status.",
     "ongoing": true,
     "places": [
       {
-        "name": "Baqen County",
-        "admin": "Tibet Autonomous Region",
+        "name": "Baqên County",
+        "admin": "Nagqu",
         "country": "CN",
         "kind": "district",
-        "impact": "epicentre"
+        "impact": "Epicentre; 16 dead, 76 injured"
       },
       {
-        "name": "Maru Township",
-        "admin": "Tibet Autonomous Region",
+        "name": "Mărú Township",
         "country": "CN",
         "kind": "town",
-        "impact": "35 temporary resettlement sites established"
+        "impact": "Building collapses, ground cracks, wall damage"
       },
       {
-        "name": "Nagqu",
-        "admin": "Tibet Autonomous Region",
+        "name": "Kamlung Gal",
         "country": "CN",
-        "kind": "city",
-        "impact": "hundreds of homes collapsed"
+        "kind": "town",
+        "impact": "10 people died"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "16",
-        "sourceName": "news.cgtn.com",
-        "sourceUrl": "https://news.cgtn.com/news/2026-10-24/Rescue-efforts-continue-after-M7-0-quake-in-China-s-Xizang-1RvsqW44L3G/p.html"
+        "value": "at least 16",
+        "sourceName": "nbcnews.com",
+        "sourceUrl": "https://www.nbcnews.com/world/china/70-earthquake-hits-chinas-tibet-killing-16-injuring-32-rcna605100"
       },
       {
         "label": "Injured",
         "value": "76",
-        "sourceName": "globaltimes.cn",
-        "sourceUrl": "https://www.globaltimes.cn/page/202610/1372843.shtml"
+        "sourceName": "aninews.in",
+        "sourceUrl": "https://www.aninews.in/news/world/asia/tibet-earthquake-76-injured-16-killed-after-70-magnitude-quake-hits-nakchu-rescue-operations-underway20261024083711/"
       },
       {
-        "label": "Households with housing damage",
-        "value": "339 households",
-        "sourceName": "globaltimes.cn",
-        "sourceUrl": "https://www.globaltimes.cn/page/202610/1372843.shtml"
+        "label": "Homes collapsed",
+        "value": "at least 339",
+        "sourceName": "nbcnews.com",
+        "sourceUrl": "https://www.nbcnews.com/world/china/70-earthquake-hits-chinas-tibet-killing-16-injuring-32-rcna605100"
       },
       {
         "label": "Evacuated",
-        "value": "12,489 people",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Tibet_earthquake"
+        "value": "over 12,000 people",
+        "sourceName": "tribuneindia.com",
+        "sourceUrl": "https://www.tribuneindia.com/news/world/powerful-earthquake-in-chinas-tibet-collapses-hundreds-of-homes-kills-16/amp"
+      },
+      {
+        "label": "Rescue personnel",
+        "value": "more than 5,000",
+        "sourceName": "aninews.in",
+        "sourceUrl": "https://www.aninews.in/news/world/asia/tibet-earthquake-76-injured-16-killed-after-70-magnitude-quake-hits-nakchu-rescue-operations-underway20261024083711/"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "news.cgtn.com",
-        "url": "https://news.cgtn.com/news/2026-10-24/Rescue-efforts-continue-after-M7-0-quake-in-China-s-Xizang-1RvsqW44L3G/p.html",
-        "title": "Rescue efforts continue after M7.0 quake in China's Xizang - CGTN"
+        "name": "smdailyjournal.com",
+        "url": "https://www.smdailyjournal.com/news/world/rescuers-search-for-survivors-after-deadly-earthquake-in-chinas-tibet-region/article_e057e7dc-d5ac-4393-a299-1b28690b0540.html",
+        "title": "Rescuers search for survivors after deadly earthquake in China's Tibet region"
       },
       {
         "name": "en.wikipedia.org",
@@ -1039,31 +1028,13 @@
         "title": "2026 Tibet earthquake"
       },
       {
-        "name": "trendsincoming.com",
-        "url": "https://trendsincoming.com/world/tibet-earthquake-2026/",
-        "title": "Tibet earthquake October 2026: magnitude 7.0 quake in Nagqu, death toll and rescue updates"
-      },
-      {
-        "name": "nbcnews.com",
-        "url": "https://www.nbcnews.com/world/china/70-earthquake-hits-chinas-tibet-killing-16-injuring-32-rcna605100",
-        "title": "A 7.0 earthquake hits China’s Tibet, killing 16 and injuring 32"
-      },
-      {
-        "name": "globaltimes.cn",
-        "url": "https://www.globaltimes.cn/page/202610/1372843.shtml",
-        "title": "All-out rescue and relief underway after 7.0-magnitude quake hit Xizang’s Baqen - Global Times"
-      },
-      {
-        "name": "tribuneindia.com",
-        "url": "https://www.tribuneindia.com/news/world/powerful-earthquake-in-chinas-tibet-collapses-hundreds-of-homes-kills-16/amp",
-        "title": "7.0-magnitude earthquake in Tibet kills 16, injures 65; over 12,000 evacuated - The Tribune"
+        "name": "aninews.in",
+        "url": "https://www.aninews.in/news/world/asia/tibet-earthquake-76-injured-16-killed-after-70-magnitude-quake-hits-nakchu-rescue-operations-underway20261024083711/",
+        "title": "Tibet Earthquake: 76 injured, 16 killed after 7.0-magnitude quake hits Nakchu; rescue operations underway"
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-09T02:07:50.587Z",
-    "donationSearched": "2026-11-07T02:20:53.260Z",
-    "directSearched": "2026-11-07T02:20:53.260Z",
-    "directSearchVersion": 2
+    "seen": "2026-11-09T10:17:17.712Z"
   },
   "gdacs-flood-fl-1104263": {
     "at": "2026-11-03T03:51:42.335Z",
@@ -1356,193 +1327,162 @@
     "directSearchVersion": 2
   },
   "ifrc-earthquake-8055": {
-    "at": "2026-11-07T02:20:53.260Z",
+    "at": "2026-11-09T10:17:17.712Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A M7.4 earthquake struck on 10 August 2026 near San José del Palmar, Chocó, Colombia, damaging buildings in several cities. UNGRD's latest cut, dated 10 October 2026, reports 335 deaths, 4,516 injured and 103 missing, with nearly 490,000 people registered as affected. The sources do not say whether the response has ended.",
+    "summary": "A magnitude 7.4 earthquake struck near San José del Palmar, Chocó, Colombia, on 10 August 2026. The Defensoría del Pueblo reported 335 deaths (about 3 October) and the UNGRD reported 4,505 injured. The missing count was still 96 in an El País report of about 9 November. Damage was reported across 16 departments. The earthquake itself is over, but its effects continue.",
     "ongoing": true,
     "places": [
       {
         "name": "San José del Palmar",
         "admin": "Chocó",
         "country": "CO",
-        "kind": "district",
-        "impact": "epicentre; among most affected municipalities"
+        "kind": "town",
+        "impact": "Epicentre; only land route blocked by landslides"
       },
       {
-        "name": "Sipí",
+        "name": "Medio Atrato",
         "admin": "Chocó",
         "country": "CO",
         "kind": "district",
-        "impact": "among most affected municipalities"
+        "impact": "Houses destroyed or left uninhabitable"
       },
       {
         "name": "Quibdó",
         "admin": "Chocó",
         "country": "CO",
         "kind": "city",
-        "impact": "injured people, serious building damage"
+        "impact": "Damage reported"
       },
       {
         "name": "Cali",
         "admin": "Valle del Cauca",
         "country": "CO",
         "kind": "city",
-        "impact": "buildings collapsed"
+        "impact": "Damage reported"
+      },
+      {
+        "name": "Buenaventura",
+        "admin": "Valle del Cauca",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Damage reported"
+      },
+      {
+        "name": "Buga",
+        "admin": "Valle del Cauca",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Listed as affected"
+      },
+      {
+        "name": "Tuluá",
+        "admin": "Valle del Cauca",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Listed as affected"
+      },
+      {
+        "name": "Roldanillo",
+        "admin": "Valle del Cauca",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Listed as affected"
       },
       {
         "name": "Pereira",
         "admin": "Risaralda",
         "country": "CO",
         "kind": "city",
-        "impact": "buildings collapsed"
+        "impact": "Damage reported"
       },
       {
-        "name": "Caldas",
+        "name": "Dosquebradas",
+        "admin": "Risaralda",
         "country": "CO",
-        "kind": "region",
-        "impact": "among 15 departments affected"
+        "kind": "town",
+        "impact": "Aid payments began"
+      },
+      {
+        "name": "Manizales",
+        "admin": "Caldas",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Listed as affected"
+      },
+      {
+        "name": "Armenia",
+        "admin": "Quindío",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Listed as affected"
+      },
+      {
+        "name": "Quimbaya",
+        "admin": "Quindío",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Listed as affected"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
         "value": "335",
-        "sourceName": "lafm.com.co",
-        "sourceUrl": "https://www.lafm.com.co/sociedad/terremoto-colombia-dos-menses-ultimo-balance-ungrd-octubre-10-413627"
+        "sourceName": "minuto60.com",
+        "sourceUrl": "https://www.minuto60.com/colombia/terremoto-colombia-dos-meses-despues-como-va-reconstruccion/16930"
       },
       {
         "label": "Injured",
-        "value": "4,516",
-        "sourceName": "lafm.com.co",
-        "sourceUrl": "https://www.lafm.com.co/sociedad/terremoto-colombia-dos-menses-ultimo-balance-ungrd-octubre-10-413627"
+        "value": "4,505",
+        "sourceName": "elespectador.com",
+        "sourceUrl": "https://www.elespectador.com/economia/macroeconomia/asi-funcionara-el-fondo-milagro-y-otras-medidas-para-la-reconstruccion-tras-el-terremoto/"
       },
       {
         "label": "Missing",
-        "value": "103",
-        "sourceName": "lafm.com.co",
-        "sourceUrl": "https://www.lafm.com.co/sociedad/terremoto-colombia-dos-menses-ultimo-balance-ungrd-octubre-10-413627"
+        "value": "96",
+        "sourceName": "elpais.com.co",
+        "sourceUrl": "https://www.elpais.com.co/colombia/se-mantiene-aun-en-96-la-cifra-de-desaparecidos-tras-tres-meses-del-terremoto-0855.html"
       },
       {
-        "label": "People affected",
-        "value": "nearly 490,000 people",
-        "sourceName": "lafm.com.co",
-        "sourceUrl": "https://www.lafm.com.co/sociedad/terremoto-colombia-dos-menses-ultimo-balance-ungrd-octubre-10-413627"
+        "label": "Displaced or affected",
+        "value": "466,709 people",
+        "sourceName": "elespectador.com",
+        "sourceUrl": "https://www.elespectador.com/economia/macroeconomia/asi-funcionara-el-fondo-milagro-y-otras-medidas-para-la-reconstruccion-tras-el-terremoto/"
       }
     ],
     "donation": [
       {
-        "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
+        "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC donation page for the MDRCO036 Colombia earthquake emergency appeal.",
+        "note": "Red Cross Red Crescent donation platform page for the Colombia earthquake appeal.",
         "specific": true
       },
       {
         "url": "https://ayuda.cruzrojacolombiana.org/",
-        "org": "Sociedad Nacional de la Cruz Roja Colombiana",
+        "org": "Colombian Red Cross",
         "kind": "society",
-        "note": "Colombian Red Cross donation page titled Emergencia Colombia Sismo.",
+        "note": "Colombian Red Cross donation page for the Emergencia Colombia Sismo appeal.",
         "specific": true
       },
       {
-        "url": "https://crisisrelief.un.org/en/donate-colombia-crisis",
-        "org": "UN, through OCHA-managed pooled funds",
+        "url": "https://colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria",
+        "org": "UN Humanitarian Country Team in Colombia",
         "kind": "un",
-        "note": "General UN pooled fund for Colombia's wider humanitarian response, mentions the earthquake.",
+        "note": "UN page with a donate call for the earthquake, mainly directing to a regional pooled fund.",
         "specific": false
-      },
-      {
-        "url": "https://www.ifrc.org/emergency/colombia-earthquake-2026",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC emergency appeal page for the earthquake."
       }
     ],
-    "sources": [
-      {
-        "name": "lafm.com.co",
-        "url": "https://www.lafm.com.co/sociedad/terremoto-colombia-dos-menses-ultimo-balance-ungrd-octubre-10-413627",
-        "title": "Dos meses del terremoto en Colombia: la cifra de damnificados se acerca al medio millón y aún hay 103 desaparecidos"
-      },
-      {
-        "name": "es-us.noticias.yahoo.com",
-        "url": "https://es-us.noticias.yahoo.com/sismo-magnitud-5-6-sacude-095715572.html",
-        "title": "Un sismo de magnitud 5,6 sacude durante la madrugada a Colombia - Yahoo Noticias"
-      },
-      {
-        "name": "vaticannews.va",
-        "url": "https://www.vaticannews.va/es/mundo/news/2026-08/sismo-en-colombia-derrumbes-heridos-10-ago-2026.html",
-        "title": "Terremoto de 7,4 sacude Colombia: fallecidos y daños en varias ciudades - Vatican News"
-      },
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/colombia/2026/08/10/en-vivo-fuerte-temblor-de-74-se-sintio-en-colombia-cali-y-manizales-reportan-derrumbes-en-edificaciones/",
-        "title": "Fuerte temblor de 7,4 se sintió en Colombia el 10 de agosto: volvió a temblar en el Chocó y la Ungrd reporta 285 fallecidos en todo el país - Infobae"
-      },
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/colombia/2026/08/10/temblor-en-colombia-el-sismo-de-67-se-sintio-en-varias-ciudades-del-pais-incluyendo-bogota-medellin-y-cali/",
-        "title": "Temblor en Colombia: el sismo de 7,4 se sintió en varias ciudades del país, se reportan graves daños en edificaciones en Cali y Manizales - Infobae"
-      },
-      {
-        "name": "elcolombiano.com",
-        "url": "https://www.elcolombiano.com/colombia/nuevo-balance-terremoto-cifra-fallecidos-desaparecidos-colombia-CA40156307",
-        "title": "Nuevo balance del terremoto de magnitud 7,4 eleva a 321 la cifra de fallecidos y mantiene en 257 la de desaparecidos"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-09T02:07:50.587Z",
-    "donationSearched": "2026-11-07T02:20:53.260Z",
-    "directSearched": "2026-11-07T02:20:53.260Z",
+    "donationSearched": "2026-11-09T10:17:17.712Z",
+    "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://www.globalgiving.org/projects/colombia-earthquake-relief-fund/",
-        "org": "GlobalGiving",
-        "kind": "globalgiving",
-        "note": "Pooled fund for local groups' medical care, search and rescue, shelter, food, water.",
-        "title": "Colombia Earthquake Relief Fund - GlobalGiving",
-        "published": "2026-08-21T02:20:53.260Z"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/colombia-earthquake-response/",
-        "org": "GlobalGiving with Direct Relief",
-        "kind": "globalgiving",
-        "note": "Funds air transport and medical supplies for Chocó.",
-        "title": "Colombia Earthquake Response 2026 - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/colombia-earthquake-help-families-recover/",
-        "org": "TECHO Colombia",
-        "kind": "globalgiving",
-        "note": "Builds emergency homes for affected families.",
-        "title": "Rebuild Homes for Colombia Earthquake Families - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/fundraisers/89607/",
-        "org": "Fundación United Way Colombia",
-        "kind": "globalgiving",
-        "note": "Covers food, water and basic supplies.",
-        "title": "$7.4K for Colombia"
-      },
-      {
-        "url": "https://www.directrelief.org/emergency/colombia-earthquake-2026/",
-        "org": "Direct Relief",
-        "kind": "local",
-        "note": "Medical equipment and emergency grants.",
-        "title": "Colombia Earthquake 2026",
-        "published": "2026-10-29T02:20:53.260Z"
-      },
-      {
-        "url": "https://convoyofhope.org/donate/disaster-relief/colombia-earthquake-2026/",
-        "org": "Convoy of Hope",
-        "kind": "local",
-        "note": "Relief for survivors.",
-        "title": "Colombia Earthquake",
-        "published": "2026-08-12T02:20:53.260Z"
-      }
-    ]
+    "hubs": [
+      "https://www.gofundme.com/c/act/colombia-earthquake-relief"
+    ],
+    "seen": "2026-11-09T10:17:17.712Z"
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-08T09:28:08.113Z",
@@ -1664,7 +1604,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-09T02:07:50.587Z",
+    "seen": "2026-11-09T10:17:17.712Z",
     "donationSearched": "2026-11-08T09:28:08.113Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2,
@@ -1851,7 +1791,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-09T02:07:50.587Z",
+    "seen": "2026-11-09T10:17:17.712Z",
     "donationSearched": "2026-11-08T22:35:18.778Z",
     "directSearched": "2026-11-08T22:35:18.778Z",
     "directSearchVersion": 2,
@@ -1889,10 +1829,10 @@
     ]
   },
   "ifrc-flood-8025": {
-    "at": "2026-11-07T09:15:57.008Z",
+    "at": "2026-11-09T10:17:17.712Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Flash floods hit Nuristan Province, Afghanistan, from 19-20 July 2026, with the most severe damage in Parun, the provincial capital. Reported impacts include deaths, injuries, missing people, destroyed houses and damaged roads and bridges. Search and rescue was under way on 22 July. The latest status found is an OCHA update from 28 July; no later situation report was found. Reported death and missing counts differ between sources.",
+    "searches": 3,
+    "summary": "Flash floods from 19 July 2026 hit Nuristan Province in Afghanistan and spread to several central, eastern and south-eastern provinces. Nuristan was the worst hit, with damage in Parun city and Mandol District. UN News reported at least 26 deaths on 22 July, while other sources give different figures. The latest report found is from 28 July 2026; no later status was found.",
     "ongoing": true,
     "places": [
       {
@@ -1900,20 +1840,34 @@
         "admin": "Nuristan",
         "country": "AF",
         "kind": "city",
-        "impact": "Most severe damage; homes, markets and roads swept away; municipality destroyed"
+        "impact": "70 shops and 11 hotels damaged; 40 vehicles lost"
       },
       {
         "name": "Mandol",
         "admin": "Nuristan",
         "country": "AF",
         "kind": "district",
-        "impact": "Six houses, roads, farmland, electricity network and watermill damaged"
+        "impact": "Six houses, roads and farmland damaged"
+      },
+      {
+        "name": "Nuristan",
+        "country": "AF",
+        "kind": "region",
+        "impact": "Most severely affected province"
       },
       {
         "name": "Torkham",
+        "admin": "Nangarhar",
         "country": "AF",
         "kind": "site",
-        "impact": "Three refugees died at transit camp; crossing movement briefly disrupted"
+        "impact": "Three refugees died at transit camp; border movement disrupted"
+      },
+      {
+        "name": "Alingar",
+        "admin": "Laghman",
+        "country": "AF",
+        "kind": "district",
+        "impact": "Flooded"
       }
     ],
     "figures": [
@@ -1924,77 +1878,102 @@
         "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
       },
       {
-        "label": "Injured",
-        "value": "125",
-        "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/afghanistan/documents/unicef-afghanistan-flash-update-1-eastern-region-flash-floods"
-      },
-      {
         "label": "Missing",
-        "value": "more than 100",
+        "value": "over 100",
         "sourceName": "atlaspress.news",
         "sourceUrl": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/"
       },
       {
-        "label": "Affected",
-        "value": "more than 15,000 people",
-        "sourceName": "humanitariancoalition.ca",
-        "sourceUrl": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods"
+        "label": "Injured",
+        "value": "nine",
+        "sourceName": "news.un.org",
+        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
       },
       {
         "label": "Houses destroyed",
         "value": "at least 22",
-        "sourceName": "global-flood.emergency.copernicus.eu",
-        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
+        "sourceName": "news.un.org",
+        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
+      },
+      {
+        "label": "Houses severely damaged",
+        "value": "another 45",
+        "sourceName": "news.un.org",
+        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
       }
     ],
-    "donation": [],
-    "sources": [],
+    "donation": [
+      {
+        "url": "https://actalliance.org/appeals-rapid-response-funds/act-rrf-18-2026-afghanistan-floods-emergency/",
+        "org": "ACT Alliance",
+        "kind": "agency",
+        "note": "Rapid response fund appeal for the Afghanistan floods emergency."
+      }
+    ],
+    "sources": [
+      {
+        "name": "global-flood.emergency.copernicus.eu",
+        "url": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026",
+        "title": "Floods in Nuristan Province, Afghanistan, July 2026 - News"
+      },
+      {
+        "name": "news.un.org",
+        "url": "https://news.un.org/en/story/2026/07/1167996",
+        "title": "Deadly Afghanistan floods kill at least 26 as aid agencies race to reach survivors"
+      },
+      {
+        "name": "atlaspress.news",
+        "url": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/",
+        "title": "Floods in Nuristan Leave 23 Dead and Over 100 Missing"
+      },
+      {
+        "name": "actalliance.org",
+        "url": "https://actalliance.org/appeals-rapid-response-funds/act-rrf-18-2026-afghanistan-floods-emergency/",
+        "title": "ACT RRF 18/2026 - Afghanistan floods emergency - ACT Alliance"
+      },
+      {
+        "name": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan",
+        "title": "Monsoon-driven flash flooding kills at least 20 in Afghanistan"
+      }
+    ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-09T02:07:50.587Z",
-    "donationSearched": "2026-11-07T09:15:57.008Z",
-    "directSearched": "2026-11-07T09:15:57.008Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
         "org": "Penny Appeal USA",
         "kind": "local",
-        "note": "Nuristan flood relief, including shelter and blankets for Parun-area families.",
+        "note": "Flood relief donations for food and urgent aid to Parun families.",
         "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan - Penny Appeal USA",
-        "published": "2026-07-25T09:15:57.008Z"
+        "published": "2026-07-25T10:17:17.712Z"
       },
       {
         "url": "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal",
         "org": "Hayrat Aid",
         "kind": "local",
-        "note": "Nuristan flood appeal for shelter, food, clean water and basic supplies.",
+        "note": "Emergency aid for shelter, food and clean water for flood-affected families.",
         "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
       },
       {
         "url": "https://www.humanitariancoalition.ca/afghanistan-nuristan-floods",
-        "org": "Humanitarian Coalition",
+        "org": "Humanitarian Coalition (Canada)",
         "kind": "local",
-        "note": "Cash assistance for flood-affected households in Nuristan and Nangarhar via CWS Asia.",
+        "note": "Cash assistance, 170 USD per household, for over 350 households in Nuristan and Nangarhar.",
         "title": "Afghanistan: Nuristan Floods"
       },
       {
         "url": "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/",
         "org": "Famidi",
         "kind": "local",
-        "note": "Flood response in Parun and nearby areas through a secure donation form.",
+        "note": "Emergency fund for food, water, shelter and medical support based on verified needs.",
         "title": "Nuristan Flood Emergency: Famidi activates local response",
-        "published": "2026-07-24T09:15:57.008Z"
-      },
-      {
-        "url": "https://allhandsandhearts.org/news/emergency-relief-after-devastating-floods-in-nuristan-afghanistan",
-        "org": "All Hands and Hearts",
-        "kind": "local",
-        "note": "Donations funded relief packages for 80 flood-affected families with a local partner.",
-        "title": "Emergency Relief After Devastating Floods in Nuristan, Afghanistan",
-        "published": "2026-10-02T09:15:57.008Z"
+        "published": "2026-07-24T10:17:17.712Z"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-09T10:17:17.712Z",
+    "directSearched": "2026-11-09T10:17:17.712Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-09T10:17:17.712Z"
   },
   "ifrc-flood-8050": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -2015,7 +1994,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-09T02:07:50.587Z",
+    "seen": "2026-11-09T10:17:17.712Z",
     "donationSearched": "2026-11-08T22:35:18.778Z",
     "directSearched": "2026-11-08T22:35:18.778Z",
     "directSearchVersion": 2
@@ -2182,7 +2161,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-09T02:07:50.587Z",
+    "seen": "2026-11-09T10:17:17.712Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2
@@ -2363,6 +2342,80 @@
       }
     ]
   },
+  "news-flood-flood-ps-3d066bfa68": {
+    "at": "2026-11-09T10:17:17.712Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Heavy rain and flooding hit Gaza from 7 November 2026, flooding shelters and tents across the Strip. A sand embankment collapsed onto tents in Deir al-Balah on 8 November, killing five people. Health Ministry figures say 350,000 displaced people were sleeping in the open as of 9 November. Rescue searches for missing people were continuing on 9 November.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Deir al-Balah",
+        "admin": "Deir al-Balah Governorate",
+        "country": "PS",
+        "kind": "town",
+        "impact": "Sand embankment collapsed onto tents, killing five"
+      },
+      {
+        "name": "Az-Zawayda",
+        "country": "PS",
+        "kind": "town",
+        "impact": "Tents flooded by rain"
+      },
+      {
+        "name": "Nuseirat refugee camp",
+        "country": "PS",
+        "kind": "site",
+        "impact": "Displacement shelter flooded"
+      },
+      {
+        "name": "Al-Remal",
+        "admin": "Gaza City",
+        "country": "PS",
+        "kind": "district",
+        "impact": "Tents flooded"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "5",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter"
+      },
+      {
+        "label": "Injured",
+        "value": "5",
+        "sourceName": "arabnews.com",
+        "sourceUrl": "https://www.arabnews.com/middle-east/sand-cliff-collapses-onto-tents-in-gaza-killing-5-3010595"
+      },
+      {
+        "label": "Sleeping in the open",
+        "value": "350,000",
+        "sourceName": "aa.com.tr",
+        "sourceUrl": "https://www.aa.com.tr/en/middle-east/gaza-floods-leave-350-000-displaced-palestinians-without-shelter-health-ministry/4116383"
+      },
+      {
+        "label": "Tents flooded",
+        "value": "about 70,000",
+        "sourceName": "latintimes.com",
+        "sourceUrl": "https://www.latintimes.com/gaza-winter-storm-floods-displacement-tents-601032"
+      },
+      {
+        "label": "Emergency calls",
+        "value": "more than 1,500",
+        "sourceName": "newscord.org",
+        "sourceUrl": "https://newscord.org/article/heavy-rains-flood-70000-displacement-tents-in-gaza-gaza-civil-defense-reports-15--Story_20261107_Tensofthousandsoftenec9d3556"
+      }
+    ],
+    "donation": [],
+    "sources": [],
+    "membersHash": "news|PS#de27e437",
+    "donationSearched": "2026-11-09T10:17:17.712Z",
+    "directSearched": "2026-11-09T10:17:17.712Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-09T10:17:17.712Z"
+  },
   "news-flood-flood-ps-d37dff4adf": {
     "at": "2026-11-09T02:07:50.587Z",
     "model": "claude-haiku-5-5",
@@ -2396,6 +2449,7 @@
     ],
     "sources": [],
     "membersHash": "news|PS#6e9dfe0a",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-09T02:07:50.587Z",
     "directSearched": "2026-11-09T02:07:50.587Z",
     "directSearchVersion": 2,
@@ -2415,8 +2469,7 @@
         "title": "Donate to Gaza - Gaza Appeal",
         "published": "2026-11-09T02:07:50.587Z"
       }
-    ],
-    "seen": "2026-11-09T02:07:50.587Z"
+    ]
   },
   "usgs-earthquake-us6000u1cf": {
     "at": "2026-10-31T00:14:33.222Z",
