@@ -425,6 +425,30 @@
     "directSearched": "2026-11-06T21:57:01.362Z",
     "directSearchVersion": 2
   },
+  "gdacs-cyclone-tc-1001347": {
+    "at": "2026-11-09T21:11:15.143Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Typhoon Cempaka (Typhoon No. 32) formed around 6 November 2026 and is ongoing as of 9 November 2026. As of 9 November it was moving northeast over the sea south of Japan and was expected to near the Ogasawara Islands on the evening of 10 November, then weaken. No direct effects on land or landfall in Japan have been reported.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Ogasawara Islands",
+        "admin": "Tokyo Metropolis",
+        "country": "JP",
+        "kind": "region",
+        "impact": "expected to be affected; not yet reported affected"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "eonet,gdacs|JP#180d4e6d",
+    "donationSearched": "2026-11-09T21:11:15.143Z",
+    "directSearched": "2026-11-09T21:11:15.143Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-09T21:11:15.143Z"
+  },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-09T10:17:17.712Z",
     "model": "claude-haiku-5-5",
@@ -505,10 +529,10 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "seen": "2026-11-09T21:11:15.143Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-09T10:17:17.712Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-08T01:50:21.071Z",
@@ -609,7 +633,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-09T10:17:17.712Z",
+    "seen": "2026-11-09T21:11:15.143Z",
     "donationSearched": "2026-11-08T01:50:21.071Z",
     "directSearched": "2026-11-08T01:50:21.071Z",
     "directSearchVersion": 2,
@@ -656,7 +680,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-09T10:17:17.712Z",
+    "seen": "2026-11-09T21:11:15.143Z",
     "donationSearched": "2026-11-08T09:28:08.113Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2,
@@ -1034,7 +1058,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-09T10:17:17.712Z"
+    "seen": "2026-11-09T21:11:15.143Z"
   },
   "gdacs-flood-fl-1104263": {
     "at": "2026-11-03T03:51:42.335Z",
@@ -1476,13 +1500,13 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
+    "seen": "2026-11-09T21:11:15.143Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2,
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ],
-    "seen": "2026-11-09T10:17:17.712Z"
+    ]
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-08T09:28:08.113Z",
@@ -1604,7 +1628,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-09T10:17:17.712Z",
+    "seen": "2026-11-09T21:11:15.143Z",
     "donationSearched": "2026-11-08T09:28:08.113Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2,
@@ -1791,7 +1815,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-09T10:17:17.712Z",
+    "seen": "2026-11-09T21:11:15.143Z",
     "donationSearched": "2026-11-08T22:35:18.778Z",
     "directSearched": "2026-11-08T22:35:18.778Z",
     "directSearchVersion": 2,
@@ -1938,6 +1962,10 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
+    "seen": "2026-11-09T21:11:15.143Z",
+    "donationSearched": "2026-11-09T10:17:17.712Z",
+    "directSearched": "2026-11-09T10:17:17.712Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
@@ -1969,11 +1997,7 @@
         "title": "Nuristan Flood Emergency: Famidi activates local response",
         "published": "2026-07-24T10:17:17.712Z"
       }
-    ],
-    "donationSearched": "2026-11-09T10:17:17.712Z",
-    "directSearched": "2026-11-09T10:17:17.712Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-09T10:17:17.712Z"
+    ]
   },
   "ifrc-flood-8050": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1994,7 +2018,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-09T10:17:17.712Z",
+    "seen": "2026-11-09T21:11:15.143Z",
     "donationSearched": "2026-11-08T22:35:18.778Z",
     "directSearched": "2026-11-08T22:35:18.778Z",
     "directSearchVersion": 2
@@ -2161,7 +2185,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-09T10:17:17.712Z",
+    "seen": "2026-11-09T21:11:15.143Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2
@@ -2411,10 +2435,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "news|PS#de27e437",
+    "seen": "2026-11-09T10:17:17.712Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-09T10:17:17.712Z"
+    "directSearchVersion": 2
   },
   "news-flood-flood-ps-d37dff4adf": {
     "at": "2026-11-09T02:07:50.587Z",

@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-09T10:17:17.712Z",
+  "updated": "2026-11-09T21:11:15.143Z",
   "fetched": {
-    "societies": "2026-11-09T10:17:17.712Z",
-    "uncr": "2026-11-09T10:17:17.712Z"
+    "societies": "2026-11-09T21:11:15.143Z",
+    "uncr": "2026-11-09T21:11:15.143Z"
   },
   "societies": {
     "AF": {
@@ -2459,17 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "local4:ifrc-flood-8013:hrf.org.uk/emergency-appeals/bangladesh-flood": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Bangladesh\"",
-      "checked": "2026-11-02T20:48:28.917Z",
-      "chain": [
-        "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/"
-      ],
-      "place": "Bangladesh",
-      "name": "Human Relief Foundation",
-      "title": "Bangladesh Emergency Flood Relief"
-    },
     "indianredcross.org": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2664,30 +2653,6 @@
       "name": "Human Initiative Japan",
       "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan"
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-08T17:03:49.486Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-11-08T17:03:49.486Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
-    },
-    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
-      "ok": false,
-      "reason": "names another kind of disaster",
-      "checked": "2026-11-08T17:03:49.486Z",
-      "chain": [
-        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ]
-    },
     "redcross.org.mm/donate/donate-now": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2787,77 +2752,104 @@
     "local4:gdacs-drought-dr-1027450:animalsurvival.org/appeal/tsavo-water-project-jul-26": {
       "ok": false,
       "reason": "HTTP 403",
+      "checked": "2026-11-09T10:17:17.712Z",
       "chain": [
         "https://animalsurvival.org/appeal/tsavo-water-project-jul-26/"
-      ],
-      "checked": "2026-11-09T10:17:17.712Z"
+      ]
     },
     "croixrouge-rdc.org": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-09T10:17:17.712Z",
       "chain": [
         "https://www.croixrouge-rdc.org/"
-      ],
-      "checked": "2026-11-09T10:17:17.712Z"
+      ]
     },
     "honduras.un.org/es": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-09T10:17:17.712Z",
       "chain": [
         "https://honduras.un.org/es"
-      ],
-      "checked": "2026-11-09T10:17:17.712Z"
+      ]
     },
     "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-09T10:17:17.712Z",
       "chain": [
         "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
       ],
-      "blocked": true,
-      "checked": "2026-11-09T10:17:17.712Z"
+      "blocked": true
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-09T10:17:17.712Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-09T10:17:17.712Z"
+      "blocked": true
     },
     "colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria": {
       "ok": true,
       "reason": "donation word \"dona ahora\"",
+      "checked": "2026-11-09T10:17:17.712Z",
       "chain": [
         "https://colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria"
-      ],
-      "checked": "2026-11-09T10:17:17.712Z"
+      ]
     },
     "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
       "ok": false,
       "reason": "asks for Cash App or Venmo, as scams do",
+      "checked": "2026-11-09T10:17:17.712Z",
       "chain": [
         "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
-      ],
-      "checked": "2026-11-09T10:17:17.712Z"
+      ]
     },
     "local4:ifrc-flood-8025:actalliance.org/appeals-rapid-response-funds/act-rrf-18-2026-afghanistan-floods-emergency": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-09T10:17:17.712Z",
       "chain": [
         "https://actalliance.org/appeals-rapid-response-funds/act-rrf-18-2026-afghanistan-floods-emergency/"
-      ],
-      "checked": "2026-11-09T10:17:17.712Z"
+      ]
     },
     "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-09T10:17:17.712Z",
       "chain": [
         "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
       ],
-      "blocked": true,
-      "checked": "2026-11-09T10:17:17.712Z"
+      "blocked": true
+    },
+    "go.ifrc.org/emergencies/8079/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8079/overview"
+      ],
+      "checked": "2026-11-09T21:11:15.143Z"
+    },
+    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
+      "ok": false,
+      "reason": "names another kind of disaster",
+      "chain": [
+        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ],
+      "checked": "2026-11-09T21:11:15.143Z"
+    },
+    "local4:ifrc-flood-8013:hrf.org.uk/emergency-appeals/bangladesh-flood": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Bangladesh\"",
+      "chain": [
+        "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/"
+      ],
+      "place": "Bangladesh",
+      "name": "Human Relief Foundation",
+      "title": "Bangladesh Emergency Flood Relief",
+      "checked": "2026-11-09T21:11:15.143Z"
     }
   }
 }
