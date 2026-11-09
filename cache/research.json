@@ -520,7 +520,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-08T22:35:18.778Z",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2
@@ -624,7 +624,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-08T22:35:18.778Z",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-08T01:50:21.071Z",
     "directSearched": "2026-11-08T01:50:21.071Z",
     "directSearchVersion": 2,
@@ -671,7 +671,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-08T22:35:18.778Z",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-08T09:28:08.113Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2,
@@ -1060,7 +1060,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-08T22:35:18.778Z",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
@@ -1350,7 +1350,7 @@
       }
     ],
     "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-08T22:35:18.778Z",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2
@@ -1492,7 +1492,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-08T22:35:18.778Z",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-07T02:20:53.260Z",
     "directSearchVersion": 2,
@@ -1664,7 +1664,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-08T22:35:18.778Z",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-08T09:28:08.113Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2,
@@ -1851,6 +1851,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-08T22:35:18.778Z",
     "directSearched": "2026-11-08T22:35:18.778Z",
     "directSearchVersion": 2,
@@ -1885,8 +1886,7 @@
         "title": "Bangladesh Floods : Emergency Appeal - Islamic Relief Australia",
         "published": "2026-07-22T22:35:18.778Z"
       }
-    ],
-    "seen": "2026-11-08T22:35:18.778Z"
+    ]
   },
   "ifrc-flood-8025": {
     "at": "2026-11-07T09:15:57.008Z",
@@ -1951,7 +1951,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-08T22:35:18.778Z",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-07T09:15:57.008Z",
     "directSearched": "2026-11-07T09:15:57.008Z",
     "directSearchVersion": 2,
@@ -2015,10 +2015,10 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-08T22:35:18.778Z",
     "directSearched": "2026-11-08T22:35:18.778Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-08T22:35:18.778Z"
+    "directSearchVersion": 2
   },
   "ifrc-flood-8073": {
     "at": "2026-11-07T02:20:53.260Z",
@@ -2182,7 +2182,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-08T22:35:18.778Z",
+    "seen": "2026-11-09T02:07:50.587Z",
     "donationSearched": "2026-11-07T02:20:53.260Z",
     "directSearched": "2026-11-08T09:28:08.113Z",
     "directSearchVersion": 2
@@ -2362,6 +2362,61 @@
         "published": "2026-07-07T06:15:54.662Z"
       }
     ]
+  },
+  "news-flood-flood-ps-d37dff4adf": {
+    "at": "2026-11-09T02:07:50.587Z",
+    "model": "claude-haiku-5-5",
+    "searches": 1,
+    "summary": "",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [
+      {
+        "url": "https://donate.redcrossredcrescent.org/~share?cid=1074&lang=en_EN",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "General Gaza humanitarian crisis fund supporting Palestine Red Crescent's ongoing response.",
+        "specific": false
+      },
+      {
+        "url": "https://donate.redcrossredcrescent.org/ifrc/middle-east-complex-emergency-zakat",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "General Middle East complex emergency Zakat fund, not for this event.",
+        "specific": false
+      },
+      {
+        "url": "https://www.icrc.org/en/article/gaza-severe-winter-conditions-compound-humanitarian-crisis-displaced-palestinians",
+        "org": "ICRC",
+        "kind": "agency",
+        "note": "Article on Gaza winter conditions with donate link; general, not this storm.",
+        "specific": false
+      }
+    ],
+    "sources": [],
+    "membersHash": "news|PS#6e9dfe0a",
+    "donationSearched": "2026-11-09T02:07:50.587Z",
+    "directSearched": "2026-11-09T02:07:50.587Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://actionforhumanity.org/projects/emergency/gaza-floods-appeal/",
+        "org": "Action For Humanity",
+        "kind": "local",
+        "note": "Blankets, warm clothing, winter kits, water and hygiene supplies for flood-hit Gaza families.",
+        "title": "Gaza Floods Appeal"
+      },
+      {
+        "url": "https://www.islamic-relief.org.uk/giving/appeals/palestine/gaza/",
+        "org": "Islamic Relief",
+        "kind": "local",
+        "note": "Winter and shelter support for displaced Gaza families; broader appeal that names flooded tents.",
+        "title": "Donate to Gaza - Gaza Appeal",
+        "published": "2026-11-09T02:07:50.587Z"
+      }
+    ],
+    "seen": "2026-11-09T02:07:50.587Z"
   },
   "usgs-earthquake-us6000u1cf": {
     "at": "2026-10-31T00:14:33.222Z",

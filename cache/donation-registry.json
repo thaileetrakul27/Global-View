@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-08T22:35:18.778Z",
+  "updated": "2026-11-09T02:07:50.587Z",
   "fetched": {
-    "societies": "2026-11-08T22:35:18.778Z",
-    "uncr": "2026-11-08T22:35:18.778Z"
+    "societies": "2026-11-09T02:07:50.587Z",
+    "uncr": "2026-11-09T02:07:50.587Z"
   },
   "societies": {
     "AF": {
@@ -2694,14 +2694,6 @@
         "https://crisisrelief.un.org/en/donate-colombia-crisis"
       ]
     },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-08T01:50:21.071Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
     "local4:gdacs-drought-dr-1027450:animalsurvival.org/appeal/tsavo-water-project-jul-26": {
       "ok": false,
       "reason": "HTTP 403",
@@ -2824,55 +2816,98 @@
     "redcross.org.mm/donate/donate-now": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-08T22:35:18.778Z",
       "chain": [
         "https://www.redcross.org.mm/donate/donate-now/"
-      ],
-      "checked": "2026-11-08T22:35:18.778Z"
+      ]
     },
     "local4:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Afghanistan\"",
+      "checked": "2026-11-08T22:35:18.778Z",
       "chain": [
         "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/"
       ],
       "place": "Afghanistan",
       "name": "Penny Appeal USA",
-      "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan",
-      "checked": "2026-11-08T22:35:18.778Z"
+      "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan"
     },
     "local4:ifrc-flood-8013:salamcharity.org.uk/appeals/bangladesh-emergency": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Bangladesh\"",
+      "checked": "2026-11-08T22:35:18.778Z",
       "chain": [
         "https://www.salamcharity.org.uk/appeals/bangladesh-emergency/"
       ],
       "place": "Bangladesh",
-      "title": "Bangladesh Flood",
-      "checked": "2026-11-08T22:35:18.778Z"
+      "title": "Bangladesh Flood"
     },
     "local4:ifrc-flood-8013:onenationuk.org/bangladeshfloods": {
       "ok": false,
       "reason": "published 2024-06-26, before the disaster",
+      "checked": "2026-11-08T22:35:18.778Z",
       "chain": [
         "https://onenationuk.org/bangladeshfloods"
-      ],
-      "checked": "2026-11-08T22:35:18.778Z"
+      ]
     },
     "local4:ifrc-flood-8013:islamicrelief.org.au/our-work/emergencies/bangladesh-floods": {
       "ok": false,
       "reason": "published 2024-08-26, before the disaster",
+      "checked": "2026-11-08T22:35:18.778Z",
       "chain": [
         "https://islamicrelief.org.au/our-work/emergencies/bangladesh-floods/"
-      ],
-      "checked": "2026-11-08T22:35:18.778Z"
+      ]
     },
     "go.ifrc.org/emergencies/8013/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-08T22:35:18.778Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8013/overview"
+      ]
+    },
+    "local4:news-flood-flood-ps-d37dff4adf:actionforhumanity.org/projects/emergency/gaza-floods-appeal": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Palestine\"",
+      "chain": [
+        "https://actionforhumanity.org/projects/emergency/gaza-floods-appeal/"
       ],
-      "checked": "2026-11-08T22:35:18.778Z"
+      "place": "Palestine",
+      "title": "Gaza Floods Appeal | Action For Humanity",
+      "checked": "2026-11-09T02:07:50.587Z"
+    },
+    "local4:news-flood-flood-ps-d37dff4adf:islamic-relief.org.uk/giving/appeals/palestine/gaza": {
+      "ok": false,
+      "reason": "HTTP 403",
+      "chain": [
+        "https://www.islamic-relief.org.uk/giving/appeals/palestine/gaza/"
+      ],
+      "checked": "2026-11-09T02:07:50.587Z"
+    },
+    "palestinercs.org": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.palestinercs.org/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-09T02:07:50.587Z"
+    },
+    "icrc.org/en/article/gaza-severe-winter-conditions-compound-humanitarian-crisis-displaced-palestinians": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.icrc.org/en/article/gaza-severe-winter-conditions-compound-humanitarian-crisis-displaced-palestinians"
+      ],
+      "checked": "2026-11-09T02:07:50.587Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-11-09T02:07:50.587Z"
     }
   }
 }
