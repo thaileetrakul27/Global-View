@@ -2,7 +2,7 @@
   "code": "UG",
   "name": "Uganda",
   "kind": "local",
-  "updated": "2026-11-09T21:11:15.143Z",
+  "updated": "2026-11-10T04:32:08.459Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "UG:en",
@@ -10,56 +10,132 @@
   },
   "articles": [
     {
-      "title": "Fort Portal High Court Dismisses Bundibugyo Woman MP Election Petition",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOXdwb2FqUjhWaFE5cTdzQmEzM19iT2Z3OW9VOERUa1F6ZW5oWVQybFFLbVEtdm9JR1FSVzNVbjRfMjdRTmZNRkh2SklBMmFwY1RaaHlOU05LWUk1RF9tZ2pLZFU3QXBGZ2ZUOEZNamxNbjVsc3VrNU5odUZscVJteHFsQXlGaC1ibE1RTWMyVXZoVjNnbDZQUzlOcmtqZXdjVkpfMzYycENmYUE?oc=5",
-      "outlet": "Uganda Radionetwork",
-      "outletUrl": "https://ugandaradionetwork.net",
-      "published": "2026-11-09T16:55:05.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "Fort Portal High Court Dismisses Bundibugyo Woman MP Election Petition",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "Access to finance slowing Uganda's transition to mercury-free gold mining",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbExwQlFhNmUzeUVocFRPa1ROVzBHREJMbkd1QVZKUHMyN1drVVIyejM4ZkY5c3pVQy0xTGdld0ZpMV9kMVUwZ043WE5EeThNY2JRcS1EWHpHSkxQLUQzeU1ibmc3dU1wUkpDQ0ZHSTdUcXhteWZpX3VoNkhCZEJ5bDZqVVpoc3dheTlCYnpZZE5aSnRuXzNXbUNraWhvdmFhLXUzQzAzbkFvRWtYT0hiSUJaSQ?oc=5",
-      "outlet": "Nilepost",
-      "outletUrl": "https://nilepost.co.ug",
-      "published": "2026-11-09T18:04:14.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "Access to finance slowing Uganda's transition to mercury-free gold mining",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "Uganda Seeks Investors to Expand Coffee Processing, Production",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVDhfZi1lcndscEFJSVRkYWYzWFNCeWl2NjNJNkp1Z3pieHFtUzU1TkRwMGV1RGlzQW96clVtdzJLanBPS0ZNY19DMmRNUnMyOTROcEdmbTBvX1VtNTdSSU80aVlkUmpJejJITHBlMFVWZVpWZDBEWUYtdG16cW1VSW1uNDhSX0JtR205YURfVGtQNmNSTHJkX2IyNDJtZFBXbFZ1Q9IBrAFBVV95cUxPRmRKRmp2WGRsNWNqdEFkQUhhRThZaVJpX3FiN0pORWhhWGo1d09QZlJ1YnBEYkpjZ1pnVXRkZHE0WjllSWIwTmg3d09VZ1oxOW52WW04dFZackROV3U2a2FzQ2tGZU5CU1RMMnUzdmptd01xOXZpY2tjY3pYOThyb2xlQWxWRUloQVdoX3pqcy1iTEdsa29sMXVjdUUwUjdBdFFsdlYzVXRqYUhx?oc=5",
-      "outlet": "Nilepost",
-      "outletUrl": "https://nilepost.co.ug",
-      "published": "2026-11-09T17:11:03.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "Uganda Seeks Investors to Expand Coffee Processing, Production",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "France accuses Iran’s Revolutionary Guards of hacking supermarket refrigerators",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTW5DazEwaExPR0RyLVZTN1lobVY3Z21qXzNSZ0pWd256cWJWaUpIc3VaWE9acEJHSTNlcl9NWGtVYjF1TEJCNEx5OGhhdXJPZnVhcEdxRXhTdER4YlJpbmxMUGRKREhXcXoyR2lYQmpTQzR0VTVfQk5PNHVpU1Z4OUItdi0wSndwNGJ3ZXdwR1B5YnhDZ182Y1Bza1BYZDZLWGJLUnJMMXU3Q3hRUFh4dWJnZVVvYUJGaHc?oc=5",
-      "outlet": "NBC News",
-      "outletUrl": "https://www.nbcnews.com",
-      "published": "2026-11-09T18:31:07.000Z",
+      "title": "Qantas to cut 850 Australian jobs and outsource work to India under AI-driven overhaul",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdVpDdTQ4bmJiVUVKU2VTV1E5aDVib1hXa3cyVjVxTWduaFpFUmlkQmVVQWNjR1lXaDFoQml0Rlhzc3pBQ3VHa0xoanRnZm1TVDM3d3JYRkVSbVZkUm91aTdvR3NZVkRzaFY1MldsOG1WNnVFalNWY2F5WVJHalgyRGpjUDdyeEJ6X1RRUnJDcktyeDNmWW9KMm5kdW14bjVDMkpMZURjOA?oc=5",
+      "outlet": "The Guardian",
+      "outletUrl": "https://www.theguardian.com",
+      "published": "2026-11-10T02:25:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "France accuses Iran’s Revolutionary Guards of hacking supermarket refrigerators",
+      "en": "Qantas to cut 850 Australian jobs and outsource work to India under AI-driven overhaul",
       "about": [
-        "FR",
-        "IR"
+        "AU",
+        "IN"
+      ]
+    },
+    {
+      "title": "Asian Stocks to Rally on US Tech Surge, Oil Slump: Markets Wrap",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNXVKNll2bkFUUU5EVDg4eTF6a3YwZ0pIS0d4bGFTdkItMkl3SkFCbGRiZFdzSmlidHZZN3I1YzF1VkVXYlM0dDJrRlRPeDRGYXp6cVBuRGVjbl9vNWxrdlRYLTl4NTRxMnRFcGtuOUROekFvUUsxdTE1R3IwWmRKRVlUVFpFTlY0WXNlWTZTa1hIdmV1?oc=5",
+      "outlet": "Bloomberg.com",
+      "outletUrl": "https://www.bloomberg.com",
+      "published": "2026-11-10T01:59:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Asian Stocks to Rally on US Tech Surge, Oil Slump: Markets Wrap",
+      "about": []
+    },
+    {
+      "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1VYUxyVHdHSk13YlNwc0JfajNMejBiRVAwYzJPbGl1cG9fZUlsUFZOSHNhWVJodHBFYTR3dFBraWlUbVd2cTl5Vl81cjhlS21RR1hoM0x4dWI4bk0?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-11-10T01:44:53.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+      "about": [
+        "US",
+        "CN"
+      ]
+    },
+    {
+      "title": "Commercial court targets 350 intellectual property, insurance cases in two-week mediation drive",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWUl1QkJnRHZaTk5UT2hNTTl6clY0MkVKSGtGOF9VdjZsZDdQaDJaOXZGcGpBVHB1M0ZYRDI3Yi1KREtzU2JFV1RZdXFELU5zdjNPUjZtejlvbnpEYlF2TWtVQk9tSmZjWWpiR2ZOSWZoSjV4X3RBWEctbXdkRlZvZjlmWVNYbE10cWxrUUhUQmZUV01Hb2lFZGRtWnR5TlZIWGtubkV2TEVoUUo4X05lQWxsYXJsMUlvWU9TeW5oTWY2cWV4NFNiWUR6YklUNVdFWUFrOUZpRHE0cWl3a2F2aE04Zw?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-11-10T03:21:46.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Commercial court targets 350 intellectual property, insurance cases in two-week mediation drive",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Uganda: Drivers Federation Demands Answers After Killing of Two Ugandans in South Sudan",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03TVk5VEFyNkhQTzRPcVFtcld0ZjJvVDhBSUJZbG1HUWJwUkRNZ0NfZnFUUW10TEQxcU1FRnhCOHBsVTJueF9OZFRFVmhrTEY4NnpmcndNWDM3SFU?oc=5",
+      "outlet": "allAfrica.com",
+      "outletUrl": "https://allafrica.com",
+      "published": "2026-11-09T20:17:56.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Uganda: Drivers Federation Demands Answers After Killing of Two Ugandans in South Sudan",
+      "about": [
+        "UG",
+        "SS"
+      ]
+    },
+    {
+      "title": "Police struggle to identify decapitated female victim of Uganda’s serial killer",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSGN0RkNyRExYTUtqcllXZk1VR2x0V0hhWGswU2pWNk4wd1ZRRFA0dFVWTEhMbDRhWXl0MWJLX3prejVNdVA1TmZ6OFI0WkRvQXMwNmNzS2VQaXV4aUpJb3JmQ1ZmT0tMT3A1UUlMZjAyWVVZNi1nNFYzUGVwa3ZkNngyM3E5cXQ5VkpwTWpYUU1DVVNsU1l4VHd0Q3lrMWpHTmF1djFKRWh5WDl3SVVmS0NlR09Jc002emFpYWNLZHc3VkNVcGdLUHR1M3JLV00?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-11-10T02:15:58.000Z",
+      "outlets": 6,
+      "trending": false,
+      "en": "Police struggle to identify decapitated female victim of Uganda's serial killer",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "After 40 years, CERN finds evidence of a one-in-10-billion particle decay",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4ybVVpYmhkMHQ2Tk5PQUZyaE1kdkxzeVk4TXUwSUhqbFJMRXlhZFNVd09MZkhiZGJhdkRuNXkwSk5Zb0RlQ0Vmb3VIeUoyQ3dSZm12dnp3S3VwdnRjQ2JDYXJKUFhFd19uVmkyb3dmNA?oc=5",
+      "outlet": "Science Daily",
+      "outletUrl": "https://www.sciencedaily.com",
+      "published": "2026-11-10T00:44:33.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "After 40 years, CERN finds evidence of a one-in-10-billion particle decay",
+      "about": [
+        "CH"
+      ]
+    },
+    {
+      "title": "Uganda central bank holds key rate, still monitoring impact of jumbo hike",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ3pKQXdhSk43QUFkQXZsdHJ1U2ZDQnVyRmlydmhhRXpJLW8xdWZ0eDV4bTBGRkx6d09Ldl9kYmJ5NC1NdlF4eWR5anNyVlBKdGdaOG1HRnNxamVPQ1I2R2tkZmFGMzh1eEo4cnpMS0U4ZHJfaGM1VDFtRW1hX0E4T1V2a3hTOHJWRzducGJWTF9rY0NCM2xDMDNSUHJxc2Rxc2dWZ2ZEdw?oc=5",
+      "outlet": "CNBC Africa",
+      "outletUrl": "https://www.cnbcafrica.com",
+      "published": "2026-11-09T22:03:00.000Z",
+      "outlets": 2,
+      "trending": false,
+      "en": "Uganda central bank holds key rate, still monitoring impact of jumbo hike",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Kawempe sweat it out before semi-final ticket is stamped",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTmVlY3pXR05Od0tZZWF4bko1ZWVFVTNZQ1BkSWZVcjZpWEFMZFlHOWE2QS1XcmZSMzZYOUxXUkFBLVVoMS1vcm42aUlRRE1rQmhsbENkSkoybWhQYmhsOUhVYWJTa2Y4amVKOUFGQzhsdUpxMkdpd1lLdTVFZHVpcEU2RVpJY0pMT0t3dHRtSmpsd1pvZC00MTRMZUUwb3FJWWlTdHFRSUwyd1RtMVNLcw?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-11-09T10:10:54.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Kawempe sweat it out before semi-final ticket is stamped",
+      "about": []
+    },
+    {
+      "title": "Improve family planning uptake in the country",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSDh4TVdPZ2UzY3VkWnJRdFRfaDNUOWdvTGVVMWhsMmZTWW5ablRpRmh1NndLX244WW0zMW0tUWFucHlfdldHZFktd0E3SjVscXI2dTVCaHVzZkRjZUdJVHIzeTg3MmV0R05jYUJZZkNMa2lBRk5kR1dSTmlPU3Fnd3lleFYtN0kyczA5MWM1b2VNSF9kOVhlWW9CRmRNSEJLVGNz?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-11-10T02:00:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Improve family planning uptake in the country",
+      "about": [
+        "UG"
       ]
     },
     {
@@ -76,30 +152,205 @@
       ]
     },
     {
-      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA3SnFrMWdwdjhjUHBLanpUNnZ3LVJMVXp2SjdGNzZWaldUTW5pY1hNUExxUzhYR0pTSXlFLXI1LTZNTnhIOHJGXzVpYkNBdDQ2b19GeW5GSjZTLTQ?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-11-09T18:11:11.000Z",
-      "outlets": 5,
+      "title": "The Taurid meteor shower could bring bright, slow-moving shooting stars this week. Here's how to watch.",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPc0ZfQ0MwS09zNDRHeS1vWDhEMldfbnc3cDl3cldOcGNBa05ZMGdkejYza3NaNGZ0Q0Zad1NZMmlDRVB2UlB0MWRHdFZpVDdXbXdkbUExTmZVelN3VkJKRDMtdEgzTFY2NFVPelNWYjhnWW9uTkVFZ05qXzBJeGhCcEE2M2NzUU1vd0hGSG9NOURBaWhlRmJyRmpTYlc3SkdGQjFBTWF6T09iekRBM0Q2cTRVYzBDOUU1akFMWGpZRFU0ODlNZnRzZ3pJT2tsandQeVdLMEV3akU3c3ZEYjhQWA?oc=5",
+      "outlet": "newscentermaine.com",
+      "outletUrl": "https://www.newscentermaine.com",
+      "published": "2026-11-10T03:51:00.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+      "en": "The Taurid meteor shower could bring bright, slow-moving shooting stars this week. Here's how to watch.",
+      "about": []
+    },
+    {
+      "title": "Access to finance slowing Uganda's transition to mercury-free gold mining",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbExwQlFhNmUzeUVocFRPa1ROVzBHREJMbkd1QVZKUHMyN1drVVIyejM4ZkY5c3pVQy0xTGdld0ZpMV9kMVUwZ043WE5EeThNY2JRcS1EWHpHSkxQLUQzeU1ibmc3dU1wUkpDQ0ZHSTdUcXhteWZpX3VoNkhCZEJ5bDZqVVpoc3dheTlCYnpZZE5aSnRuXzNXbUNraWhvdmFhLXUzQzAzbkFvRWtYT0hiSUJaSdIBuwFBVV95cUxON2xhSUFGVVlHTW0zaDJJVWptRVJYQUFPTDVvLXVVeFhubl8xTFRPSmtwYVhIMzMybUtQSWV6cUlfVzVRdzk0STc1MDZ5U2J6My0tWnBmTFh0UFNxSndBaVVfSFpWemtFR3NQSUljRmpZTDlDX1JmbGJlOFJWdi1CSGxXWGtFR25jQWVuOTRzLVo1VmxKWWN3RzZ2TV9tQVZyME5naHA3eHhYWDR6bkw4cUV0RkZ1bWRNUlVr?oc=5",
+      "outlet": "Nilepost",
+      "outletUrl": "https://nilepost.co.ug",
+      "published": "2026-11-09T18:04:14.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Access to finance slowing Uganda's transition to mercury-free gold mining",
       "about": [
-        "CN"
+        "UG"
       ]
     },
     {
-      "title": "Uganda: Drivers Federation Demands Answers After Killing of Two Ugandans in South Sudan",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03TVk5VEFyNkhQTzRPcVFtcld0ZjJvVDhBSUJZbG1HUWJwUkRNZ0NfZnFUUW10TEQxcU1FRnhCOHBsVTJueF9OZFRFVmhrTEY4NnpmcndNWDM3SFU?oc=5",
-      "outlet": "allAfrica.com",
-      "outletUrl": "https://allafrica.com",
-      "published": "2026-11-09T20:17:56.000Z",
+      "title": "A new role for chlorine: Uncovering anion redox in solid-state battery cathodes",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVU10enY5ZmRoV3J1eTN2VDQzeHZ1SGdLc0ZXcDVZZUE5M01LQVdKRHh4cGRTY19ZbkVydEZnRHJSSVlrNk4yY3RPaFlVVzBsbjQ0WmxQVmFvenktV1psX21BOEFDNHd3b3FpMzBISkdfbUlVUmdjSUNaMFNmQUl1U2pGZ0V6MTNDWjM3MVFQSG96cDlkbTZEMUNnbl9WYTI4MURNaFptVjBhbU5VeXkw?oc=5",
+      "outlet": "Asia Research News |",
+      "outletUrl": "https://www.asiaresearchnews.com",
+      "published": "2026-11-10T03:33:16.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "A new role for chlorine: Uncovering anion redox in solid-state battery cathodes",
+      "about": []
+    },
+    {
+      "title": "Merck Ebola Vaccine Urged for Wider Use Against Bundibugyo Outbreak in Congo",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNd3NUc2VUNkhWQy1YcG05QVZkb3dWNi1IWUt3cENFRHlVb0p0bUpTbzctR2V5YjhOZndDbHhUTWtBSVptUTV2VXIxNGNWYU5iWVhfOVVEOFREWWpjbW0xbGFHVU9iY2pVMmRrSU1PeVI5Ym5ZOXVJT2pMTjA1a2ZLUUpoa2U3bm4wRmxsYVdGYmpQVXYxaF9wU0hTbzg1bkg3RlNkcEhmbnhZUFY2X01ESE9ldnlNNFNHc2l6MWdwYWV5ZVVCVDlLMEozVQ?oc=5",
+      "outlet": "Bloomberg.com",
+      "outletUrl": "https://www.bloomberg.com",
+      "published": "2026-11-09T22:23:34.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Uganda: Drivers Federation Demands Answers After Killing of Two Ugandans in South Sudan",
+      "en": "Merck Ebola Vaccine Urged for Wider Use Against Bundibugyo Outbreak in Congo",
       "about": [
-        "UG",
-        "SS"
+        "CD"
+      ]
+    },
+    {
+      "title": "Nigeria Urged to Release $54 Million for TB Drugs to Avert Epidemic",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZmdHWkozOFNRdHZad1BuSk9jeFhuRTJZUUQ5SEg4TGRNRXJTdFljTEd5Qkl2VGZvOVhLMDR1T3NxNlNjVm51b0xuNGxFSW15MmN0el9TaWYxN1ZfaEpRWnREUnFDTmJmUUVmN0MwN3FUaE5SSWJGZTF5cVBkdE9Mb3dDb3dfWEwyWjFMVWtVS0JYTXZ5TGQ2Q1dzSXRlZw?oc=5",
+      "outlet": "Head Topics",
+      "outletUrl": "https://ng.headtopics.com",
+      "published": "2026-11-10T00:08:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Nigeria Urged to Release $54 Million for TB Drugs to Avert Epidemic",
+      "about": [
+        "NG"
+      ]
+    },
+    {
+      "title": "Light-pulse pairs reveal the femtosecond decay of an inner-shell hole in xenon atoms",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE91U0ctU3pzblp4ekx3RXhhd2tpTnZqNG9LUjlmb3ZLUHB5LU0yQkZkWEdjWS1hVlNjYmJrbnBKNFRDZUgtZWU4Y1BTMU5xYlZlQy1TbU5TRVViUUVLSHVrSjZLQmNhaDBpUHd5clBudEJzRmtWZFRIUFcydw?oc=5",
+      "outlet": "Phys.org",
+      "outletUrl": "https://phys.org",
+      "published": "2026-11-10T02:20:06.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Light-pulse pairs reveal the femtosecond decay of an inner-shell hole in xenon atoms",
+      "about": []
+    },
+    {
+      "title": "203,809 candidates start UACE today",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOXzJ5ZUR0VzExOXVGcVpVQXZGNGhPUHRIVTAzekJUTTBvOWIwcW8zdDJxMFRJYS1mdUlIUU1ISXBOdHNMTU5wOUtGcWhEWkczR0VGMWFKUHY4N3RrVTBteG5fOTB2b3pSQmp5T0tfczFyYWVrdXlRRTdoTjhwMTZYelVhUGVvS0dybzVJajJ0WUpuUG9F?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-11-09T02:30:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "203,809 candidates start UACE today",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Somalia, U.S. discuss security transition and fight against al-Shabab, ISIS",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNWkN3Y3U2RGdpa1VacFBuQktRVmFteEl2aUJ6c0VUbmZldWxKMkhJcExpekx0VTFPWTh6Q2lodTVRRzVxdHRiV2k4eno0VG5zTldERmppbXZhdkxEcF9DbFZWcjlNWVFhS2NJUDRMSkx3dVNOWW5EdkFZaGNIYXhmM0k3LXQtZEZLMnpQY0pBZW1hWU5PanRYUkQyQzg0WnpDcGNNQ21YcUtxZlM4NE8xM3pMeEhkQmM2YjVmY0dzQU5XTUk?oc=5",
+      "outlet": "Hiiraan Online",
+      "outletUrl": "https://www.hiiraan.com",
+      "published": "2026-11-10T03:31:08.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Somalia, U.S. discuss security transition and fight against al-Shabab, ISIS",
+      "about": [
+        "SO",
+        "US"
+      ]
+    },
+    {
+      "title": "Uganda: Museveni Urges Universities to Prioritise Practical Skills Training",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE93aGE5QzJwLW5reDlDNHlPUTZwQ2xpbE9HR1J2TGZ2VFNLckNxRTZidkRnc3poR0xXZGh5cGpMN1ZkTWwzcWdSbDFHWTh3YlVkNnpwMk8yU0RUT2M?oc=5",
+      "outlet": "allAfrica.com",
+      "outletUrl": "https://allafrica.com",
+      "published": "2026-11-09T23:03:05.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Uganda: Museveni Urges Universities to Prioritise Practical Skills Training",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Uganda: Munyagwa Announces Common Man's Party Restructuring Ahead of Delegates Conference",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yZWRJcTRrZWhQd0tTUElVYmZpcmY2czNvVE5DempFZWNSeXJBZzR3SkE0NnMwcUp2VXB5akloZkJkYzhmSHZ0VWRKaDZtR3hzVkpPWGQwMzFLWlk?oc=5",
+      "outlet": "allAfrica.com",
+      "outletUrl": "https://allafrica.com",
+      "published": "2026-11-09T23:02:56.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Uganda: Munyagwa Announces Common Man's Party Restructuring Ahead of Delegates Conference",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Ibanda eager ahead of Balaam’s anti-corruption baraza",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNYWdDWGZiSWVKR1dSZmt0NFZVMzlJdjBOc212OVVuTGJ5NGNaSGR5MG5VVG53RTlFRWJWOXhEeXVOVkp4MUhjUnJHVHhBUG93NGktX1VFQy1xRmZqS0s0NHVyaUl1WV9KRUUyamRaTW9PbDlQaFp0bTBWZVFHd2NBSmRpbTBHYjN4SE4xazBNdU82T0l1MnlmblJwMWZVUFhfNmdRRE5DMk0xS0hL?oc=5",
+      "outlet": "Daily Monitor",
+      "outletUrl": "https://www.monitor.co.ug",
+      "published": "2026-11-10T02:44:20.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Ibanda eager ahead of Balaam's anti-corruption baraza",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Promasidor Boosts Local Production Capacity To Strengthen Nigeria’s Dairy Industry",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOHRPd1BRaHJGOVhydEtvREtQRWpZZFZyQmo2Tm5mNHVKRUVrOUg2eWJhNmM2SzZreGtqbnJMWGZEZWRnZ2FubzlGQkJWVEVIS3paRGphZ25paFpLMDhSRklDeXoxRUQtWVZRSHRSdjdGNFU2Z0ozSnpTQWE2RVZvVE5CVDhzM1poZlpLX285cjNhcTR1OENReEF1YWwydw?oc=5",
+      "outlet": "Head Topics",
+      "outletUrl": "https://ng.headtopics.com",
+      "published": "2026-11-09T20:44:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Promasidor Boosts Local Production Capacity To Strengthen Nigeria's Dairy Industry",
+      "about": [
+        "NG"
+      ]
+    },
+    {
+      "title": "Uganda: CAA Chief Engineer, 10 Others Appear in Court Over Shs3.7bn Airport Vandalism",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKelBOZkp3RHhxYjZYdHVtdnJWcV94UDNXbWkxcUdEWjA4SW5kNzdlUGtxNnJEYWV0d05hNGVMM3VQUXY3WjNUSjlRb043NVEtbUxxeWc0bHdFU00?oc=5",
+      "outlet": "allAfrica.com",
+      "outletUrl": "https://allafrica.com",
+      "published": "2026-11-09T23:02:56.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Uganda: CAA Chief Engineer, 10 Others Appear in Court Over Shs3.7bn Airport Vandalism",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "Building the health system needed for Uganda’s tenfold growth ambition",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMXB2TzdVUUVsZ1prUVV4Tjd4UmMtVW9fWUt5NlkwSzhtTWNGZkc0UkxhSXpCdkprSmE3SkF2eHJueXI2bkdkYUItOG4wZEFGbU5HZEFiaDhHNFc4ZkFQQ054dk5fUERMd1lneFFvNHA3SmszZFJZeGdVMjdjZ01HakxKem1wekhCVXg1TFMxZXBTQ3JicnRZ?oc=5",
+      "outlet": "Africa.com",
+      "outletUrl": "https://africa.com",
+      "published": "2026-11-09T20:01:26.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Building the health system needed for Uganda's tenfold growth ambition",
+      "about": [
+        "UG"
+      ]
+    },
+    {
+      "title": "INNOVATION NATION: WhatsApp-based tool simplifies bookkeeping for small businesses",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOGFvYy00WjBkSmlDRXVETHJhOXJFUlB2UEwzSXk5NF9SZzBzT0tGSzN6UWY0UFJyT25OOWswNmc2VHVmZFpNdUlEdmx3Vkh4ODNrZnZRZl9PZFY4UkVndkpld04tQVcyeEwwazFESnAycVpBY1lvak94Q0RSSFFKZm5RRTdZVkhiT0N1cmVRSklDWm00SUNvaGdOSUw3VGExemVhNVVnMA?oc=5",
+      "outlet": "NTV Uganda",
+      "outletUrl": "https://ntv.co.ug",
+      "published": "2026-11-09T21:05:32.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "INNOVATION NATION: WhatsApp-based tool simplifies bookkeeping for small businesses",
+      "about": []
+    },
+    {
+      "title": "South African telco MTN's service revenue rises over 17% as Nigeria recovers",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUEZtMUZjUmQxNTV3RFZNYlBEdjlXc1NBQ1dueHBwMWlJMFNwd1VLTmlicXFScHgwTnVtVjhiOFp1Yl94YXdNZnpQdDktSzMyX1B2WGZkb0tDblhwOTdsREEwLU9xQklSVkRNS3J6U1JyLXlzcUoyamgzTUptM3BvUEh4QmZ5c2ZsV1RvTDRkMXFkWlNCSEp4YTRZeWFxd1h3UGhSZUs4UTRETUJpSW1UQW1xSG5raUNBSEl2Zw?oc=5",
+      "outlet": "Reuters",
+      "outletUrl": "https://www.reuters.com",
+      "published": "2026-11-09T06:41:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "South African telco MTN's service revenue rises over 17% as Nigeria recovers",
+      "about": [
+        "ZA",
+        "NG"
       ]
     },
     {
@@ -118,19 +369,6 @@
       ]
     },
     {
-      "title": "Starfish Space loses contact with 1st 'Otter' servicing spacecraft, ending NASA tech-demo mission",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOc3dDYVJISXZPYlR2YVRlLW10XzMxaHRvU2Y4NGVYZ042TzdTLXNFTVJzdURZdVNYZVo4VTR4ZDJjX3QtUjJDeXg3NDBjQmMzVFc5OWtjbEJPbXR6cXFQYkZBQmZtaWV6WkNjUExFcTFJamphVks3bVl5aGJ2UW90el9kSFUtVW1vVEdycnJaNTVqamNmbTJnVl9LbzRpS2ZaNDJXRVN2RlFOV01oQTVTeDkxZ25BbWpRcXF1cnN3NFZmeVIxeHYxV0JYdXZjUXhkbm40YkdHQVRSWnVkeWJwci1mSFB0QkdrcUE?oc=5",
-      "outlet": "Space",
-      "outletUrl": "https://www.space.com",
-      "published": "2026-11-09T18:00:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Starfish Space loses contact with 1st 'Otter' servicing spacecraft, ending NASA tech-demo mission",
-      "about": [
-        "US"
-      ]
-    },
-    {
       "title": "Uganda: Baryomunsi Pledges More Support for Lacor Hospital As Italy Backs Shs58bn Health Project",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzcDNQVnBSXzU2azF3ODFMTG1yTm5ramZ6TVJYODVwcVk1Y21vWS14bVBKQ1UwX09Tc0V1OFdOXzVaTkZHY2s0Z2ZkVWlZWXYwZFMtbEV6RWxCbTg?oc=5",
       "outlet": "allAfrica.com",
@@ -145,258 +383,15 @@
       ]
     },
     {
-      "title": "Sudanese Community in Uganda Donates Food Relief to Karamoja",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZ2xfSGJhMU00djFGUk54WkZGVm5MWDNUWWttZUFlQnNZTXZTNlBmUVlsSkdBcU44MG1FZzBWVHAzTERhNDdla3VZc1ZpWXhHcXN6dUZja0swV3YyR0dvaHFId0hQRUpURlFzVmFpa3ZxSWRNdmgtY1RYS0MwQ0l5amVneTFvVHkxUE9BNmtYWQ?oc=5",
-      "outlet": "ChimpReports",
-      "outletUrl": "https://chimpreports.com",
-      "published": "2026-11-09T13:40:17.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Sudanese Community in Uganda Donates Food Relief to Karamoja",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "Michael Carrick decision update from Man United - Manager expert",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObVFkWWw2N2luNGlQZDZxSkRqODhfLUo5S3h0OU9reXVYUUR6QzNxRkdZTXVhT1hyUTVhWEEyblpXNEVXX2U0MERaWTN6SnlwOGRrcTYwV25ubHZjVDlCdFVUaHRvVWVER3VxM2EyaWpUXzd4YUJhY0t1WFpMT194TmMyYWhIem1nYkM3OA?oc=5",
-      "outlet": "Yahoo Sports",
-      "outletUrl": "https://sports.yahoo.com",
-      "published": "2026-11-09T16:33:41.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Michael Carrick decision update from Man United - Manager expert",
-      "about": []
-    },
-    {
-      "title": "Equity Bank urges Ugandans in Kenya to turn remittances into long-term investments",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPU0pEOHdBUHdtWlNSOHBtNGo3R2hvUGFRbGJJMTdUM3BPZXdRMFN0eGFhWHZ2Q25xNjlqVEd5eFdOTmx6T1VRRGx2MU1OdDd6Z2MtekVpWkpHRk5TSVJ4SjUzZ0hZd0tGT2xTRXdaVDdHRHREMk0tRWZjdW1LWkY3MTN0MHFuZ2ItY0FuLUtta1Qza0Jxb3k3Sm4xOGdYX1pHQnBwdkxfbVBuVWdxdFQwYlFPSTVrZGhS0gHAAUFVX3lxTE5iUDR3NTNhSGtEZ0h0MnJ3WkUyNGpUSDdva3RmREJtUXFTWWtyRDdQOS03MWZ5REstWm1YV3h4TThWN2htSzFDU2hSd2RLZWcyTFlxVml2aGxXdnhKeXFqM1dHVThPQzBNcDFVRFR0cnJTMjk2bWdzZXpQbFI5aDRIRmFiME5CRnJSZmlwdXhVTlBZQkRwWkFTRU5CQ0VfbTUxQU9vSkpDN3loWW9JdHZPXzFycnFmeXQtM2h2b2dHcg?oc=5",
-      "outlet": "Nilepost",
-      "outletUrl": "https://nilepost.co.ug",
-      "published": "2026-11-09T18:27:33.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Equity Bank urges Ugandans in Kenya to turn remittances into long-term investments",
-      "about": [
-        "KE",
-        "UG"
-      ]
-    },
-    {
-      "title": "Court dismisses Minister Anywar’s petition, upholds Onekalit’s victory as Kitgum MP",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUEJhYXlYdHktYXpJc2RsOFRpeEY3cFo4Z0lWMG12bWl1T0c0V2lpME9vQU1oclR0Z3B3eVdoNWNrN3JocjNNdGg4c3pjVlVZbzNfcGVRQ2ZLMEI2VjM3R05JbnppVnRfU2JnUkxmMkFHTk1sY01maEgzcVI0cFZTSkZJdWsxeXJfWmpvbVcwZWVuaG1rMVpIcFZXUVZTY3dpZkdoeVFVYlF4c3c2Y1RnN2RpUzAxbVJIeTlrZFMyZzN4OF8yMF95Rng1ZW9BM0U4N2dDbA?oc=5",
-      "outlet": "Daily Monitor",
-      "outletUrl": "https://www.monitor.co.ug",
-      "published": "2026-11-09T15:27:05.000Z",
+      "title": "Gen Z's lack of one basic skill could leave them vulnerable during a cyberattack, warn experts",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMGhYN3pSRGd6ZkpaTjRWQXNaOXV5THFqVFRHRV9OQnVpVHU5SThkamJJbHRDM285OUNXY3hWR0tPSnF5M093SWtEZEkyTWF4SEpOOGstdVM2VU1CeDhQd25vZmNYRjNSbTdMWk13NDFDS0szcmw2QkRhbWp0Y2NLbjJvd2l2SE9Mb2xMZVFXVHpZcWpVOWdrVVNfZ2JiTk1wRXdtUHJsSzFNbV9UNXlKSVFuYjR0UQ?oc=5",
+      "outlet": "LADbible",
+      "outletUrl": "https://www.ladbible.com",
+      "published": "2026-11-10T01:37:02.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Court dismisses Minister Anywar's petition, upholds Onekalit's victory as Kitgum MP",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "Timely, far-reaching theta waves help organize cognition, study shows",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5QdEpua2NnZ19KcXhVSTdSSklTQ2RKSmxHbXdIVGFOVHd4YVdkUmdJeS1EVTVRTmhsalk1enBwdDNGTUtlUVdDLTk5b0E0dG9FZzY0UFZDcW02TmRzLU50eDVCNmRzQzNqTUZF?oc=5",
-      "outlet": "Medical Xpress",
-      "outletUrl": "https://medicalxpress.com",
-      "published": "2026-11-09T20:10:01.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Timely, far-reaching theta waves help organize cognition, study shows",
+      "en": "Gen Z's lack of one basic skill could leave them vulnerable during a cyberattack, warn experts",
       "about": []
-    },
-    {
-      "title": "African leaders meet over use of nuclear power on continent",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZS13ZUdDelVuckg3NHN1TUFVbTFjemRvc3YydFZ4UEJCNEpCOE1kWTlrVV93Uk5HYjhvWDZEal9RS0JNcHhBdGFyMy04bWdKeTJ6ZVRlWUJ4R1UxVUdtTjlFU0JPcWRwZHVOVWNpbW5aQk9PRUtROWYtN2tDbElueUM0UFRHTnRmSm9R?oc=5",
-      "outlet": "Peoples Gazette Nigeria",
-      "outletUrl": "https://gazettengr.com",
-      "published": "2026-11-09T19:37:27.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "African leaders meet over use of nuclear power on continent",
-      "about": []
-    },
-    {
-      "title": "Atomic defects leave telltale optical fingerprints in quantum material",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNU0hhM244dktYOU1NSDY2NnJoZ2VTVVo3cFByNGc0ako1WFZUVldfSlRNeFZqb1I3R0FzWGlEMVRtUEx4bmIxMDY3RC1RRFBPN2FncXBWazFHUGhPeXEwaUc4NFo5b1A5WTNmR3l5Y09ZMG9WX1hTVjRNZ3VLQzcwS1dodkNPZw?oc=5",
-      "outlet": "Phys.org",
-      "outletUrl": "https://phys.org",
-      "published": "2026-11-09T19:40:09.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Atomic defects leave telltale optical fingerprints in quantum material",
-      "about": []
-    },
-    {
-      "title": "How the Southern Ocean helped fuel Earth's warmest climate in 65 million years",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBMU3VWS2JqMmFPcmFRWHVxaXE4bFpsTjdvRmI2SjRVQjBsY1F4RlBCc2NLYktBVVhFM3BQVUl1WE5wcUJRZV9NSHhnb3dxakZyXzVVeDdocWpCRjlpaHIybmJEcGVFQmZVYnlTVTA5UFY4a2s2SGVF?oc=5",
-      "outlet": "Phys.org",
-      "outletUrl": "https://phys.org",
-      "published": "2026-11-09T19:20:04.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "How the Southern Ocean helped fuel Earth's warmest climate in 65 million years",
-      "about": []
-    },
-    {
-      "title": "Uneb warns against exam malpractice as UACE starts",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNTk4SmZReXhnVEdjczYzc2FpeVBvbTktd2w3V1k4eWc4aGE1NXN2bmRyUGt6ZlA2akVrQ2l2NE1fR2doMm4zc2Y0b0x3YmpWN1I2cE9jNmtXX25JRU1ScDNid1dPdlBwRXFWMEhlRXlFb3Zib3htdE9GZmRacXF4eUxQVElTWi1uTWYzbFIzR3NBOVk2UUZpX1RDVjdvblcxc1pyMExaV1R5Zw?oc=5",
-      "outlet": "Daily Monitor",
-      "outletUrl": "https://www.monitor.co.ug",
-      "published": "2026-11-09T08:36:46.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Uneb warns against exam malpractice as UACE starts",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "Nigeria: Widow Sues Airtel, ATC for N232m Over Alleged Noise Pollution, Property Damage",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11YVltcGx2X3NRX1F0OVBWbFJlcnVmZDVNMkRfTXdSLVdrNEJFbjdUS2JXU3JURjRJNzlxeEp2Zi1WeHA0VjF3N29GT1NLNTNManJMNHJRd0tNWE0?oc=5",
-      "outlet": "allAfrica.com",
-      "outletUrl": "https://allafrica.com",
-      "published": "2026-11-09T16:12:58.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Nigeria: Widow Sues Airtel, ATC for N232m Over Alleged Noise Pollution, Property Damage",
-      "about": [
-        "NG"
-      ]
-    },
-    {
-      "title": "Uganda seeks to boost local value addition through Canton Fair",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNX0JuSEpLM0hnQlE5MlVOSC1CV2JTempHZk1FOTZub3czM2VOZkRKOVJ4M0dXMXZNRTl0cmVRYmxLRkxnVmNJWmFHR0ZkckFRRlI0R3l1R1FhcF9kWHhEUU9KRUpmUFNhZEdKb0xGX3BLNWFuTlhnSkMzOHhLMVc1ZExZNm9NUQ?oc=5",
-      "outlet": "Xinhua",
-      "outletUrl": "https://english.news.cn",
-      "published": "2026-11-09T14:14:45.000Z",
-      "outlets": 6,
-      "trending": false,
-      "en": "Uganda seeks to boost local value addition through Canton Fair",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "Ugandan among three arrested in Kenya Shs113b drug bust",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVDR2ODFpNzdkRkFNekRSdUVRVklUeVVMSDZObF9FNHp1NkNZYXg2YUF1MzAtX0dCTlI3RDVKYTZVU0llbS1Nc2Y1RERmSk1pNzFQdGxFbHF5dGVvUXBoSjNjWWlsc1g0WWRscHhoNVhrbTZKNF9tdHJadzNhVklpNk5JZWtxeUZrVjk2eGw1bnZCMXhhcmRVek1qUC03Vmk1eGhkblZWZ0lkbHZVUXRF?oc=5",
-      "outlet": "Daily Monitor",
-      "outletUrl": "https://www.monitor.co.ug",
-      "published": "2026-11-09T15:00:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Ugandan among three arrested in Kenya Shs113b drug bust",
-      "about": [
-        "KE",
-        "UG"
-      ]
-    },
-    {
-      "title": "Moïse Katumbi: ‘We will go to Goma in the DRC to meet Joseph Kabila’",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1NIM2NISWlMVDlZTVl2MlQ3d3JfWUJOSWhBSkNyTmpNZVlYX244MWs3LXZRTnl4U1R1WU1waXpJV1JaMlM2RGd6aFJmVFY0VUVWbENFQUZGS0tWOU1fVzF6VnRfbFV2NGxmbXZZWGNDWlZQbXQ0ZFVaMU04XzNpWkxlU3VURnVycEJ3Z2JSTkJXZU00c1BkUUVLV2g2R0ZNSWVhOGNVOTM?oc=5",
-      "outlet": "The Africa Report",
-      "outletUrl": "https://www.theafricareport.com",
-      "published": "2026-11-09T14:59:59.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Moïse Katumbi: 'We will go to Goma in the DRC to meet Joseph Kabila'",
-      "about": [
-        "CD"
-      ]
-    },
-    {
-      "title": "21 killed in bus-truck collision in southern Tanzania",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE11dU1hZ0lTLUlnOVdwOXhWY3FZdnhuX21GSXN4bmFQZDMwQXNyVGpBRHFEQmZYb2tUc2FiZkpvcWdOS0drd0NFRHlWRFNmbkRkY3RxYXlHbVN3ZHRJYjhwZWFnVnlLLWNxWnFJT0lZZlFlSXZDQzVydGo1djg?oc=5",
-      "outlet": "Xinhua",
-      "outletUrl": "https://english.news.cn",
-      "published": "2026-11-09T15:43:30.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "21 killed in bus-truck collision in southern Tanzania",
-      "about": [
-        "TZ"
-      ]
-    },
-    {
-      "title": "Uganda: Unite in negotations with the Eureopan Union – Tayebwa",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOU2YwbjZqVXY3QmxDNHpjTXZUOWNZMHhpY0FLVlVZdFE0YmM0ZVBBblVrNUw4LW56NVZlenJVWUxLcTlDS1E1b0JMVFZtRkg0dFJzMXFMNE0wckdsckNaM2VCMHRIeWw1TnhzVlFNdkFFbEFUYnFrdUcwNUtGaHVjY0x4TGs5U0lyX1E?oc=5",
-      "outlet": "Africa.com",
-      "outletUrl": "https://africa.com",
-      "published": "2026-11-09T14:39:58.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Uganda: Unite in negotations with the Eureopan Union – Tayebwa",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "South African telco MTN's service revenue rises over 17% as Nigeria recovers",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUEZtMUZjUmQxNTV3RFZNYlBEdjlXc1NBQ1dueHBwMWlJMFNwd1VLTmlicXFScHgwTnVtVjhiOFp1Yl94YXdNZnpQdDktSzMyX1B2WGZkb0tDblhwOTdsREEwLU9xQklSVkRNS3J6U1JyLXlzcUoyamgzTUptM3BvUEh4QmZ5c2ZsV1RvTDRkMXFkWlNCSEp4YTRZeWFxd1h3UGhSZUs4UTRETUJpSW1UQW1xSG5raUNBSEl2Zw?oc=5",
-      "outlet": "Reuters",
-      "outletUrl": "https://www.reuters.com",
-      "published": "2026-11-09T06:41:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "South African telco MTN's service revenue rises over 17% as Nigeria recovers",
-      "about": [
-        "ZA",
-        "NG"
-      ]
-    },
-    {
-      "title": "Onset of Analgesia and Ocular Akinesia Following Posterior Sub-Tenon's Anesthesia With 2% Lignocaine Using a Blunt Cannula",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNUFdmZjJOUXlhTXZJVXEybXMwS3FpTUlKWWlBTHVYQkY3YmgzMTJkQmM5ZHpSYXBKUUl3X29KVlpBQ0E1VDZuX216dHdQVWMyV1FGdk9JQk9kZWMzdWNLOWFrVHRmWlA0UDcxWTB3TU5YMGNwcmpZS2FmYi1McS0zZmZtNl82R1pRMC16R0VpR19KSXBVTzlYVzc0c0VEMzJtcm1fYTM2UG1lWl8xNGFkanpSYlBhUVFkY29OM1ZIR0NUNXJRSFZKLTVPUFRZTmxXZ3FaekNmYWVkQmhBN3c0VWQzYzBFdzRGSm8zVmstbzE?oc=5",
-      "outlet": "Cureus",
-      "outletUrl": "https://www.cureus.com",
-      "published": "2026-11-09T18:11:38.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Onset of Analgesia and Ocular Akinesia Following Posterior Sub-Tenon's Anesthesia With 2% Lignocaine Using a Blunt Cannula",
-      "about": []
-    },
-    {
-      "title": "12,000 Ghost Pupils in Mbarara District Alone \"Eat\" UGX 240M per Year",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNU3NYWXJ4RWVzVkNEa1hVUWJhYW1qUHRzaE9RcEluTHVsME9KV1BmRmxEVkQ0enlja2ZmYmEzd3FmakQ0Q2hLYzZ4NTk2LUJua3NfY0FwVktQRFhpMkZHbWI3QWFyQ3I1emZYOFR2UjhMc0NKVlYydk5BSzV1SlluUFp1VGpSUTZqMlJrWS1R?oc=5",
-      "outlet": "Uganda Radionetwork",
-      "outletUrl": "https://ugandaradionetwork.net",
-      "published": "2026-11-09T14:23:44.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "12,000 Ghost Pupils in Mbarara District Alone \"Eat\" UGX 240M per Year",
-      "about": [
-        "UG"
-      ]
-    },
-    {
-      "title": "'Terror Has No Borders': Nigeria's Military Push With Niger, Mali, Burkina Faso | Firstpost Africa",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOTXNodk12VnphNGpSV0o2QlM2ZThRMWxZMkhsbG9ZR19vWVJhcFhGNjBuaGFlRlpoNVhyaFpySEZkS21felpoT0JUcFFPQlVOemx0SUdWeFNQS1Z1bUY0X1N1My05U0laaG5QcEJxMFJoTmJISC1DMnc4X0ZGRzI4T3VoTUtiZGxxQUpBTHR4b0FvbV9KMjF2NmtaV1lLNENmZm5GQ0Z4VjZxNWFydGJfT0lIX3psS1dQVGhMNGpfc2V4U3FWMFMwNHFNT1BzRl9ndG5uVllyZnJrMUdGNTRTNVJYaVRoQXI1alHSAe8BQVVfeXFMTTZDU1JMaUhlY1JfbTZ5dkFRYzVNUmpFckMtTUNzTnNqcDZtZl9uX3JSOTYzY3ZPX3o5N0p0WG9JcG9Ld2JNYmx4RnluSGVhRlpVUmRXT0hlT2QybDNNa0p2cy16ZUxUa3NVZVd2T1BPS1JYT0R2cXkxWHdpN01KS21ZekxTWmNTOEY2ZmZpR01UdmJGaDFLdWl5WHpBYW1Pd3pKS1c2LU9NdUxUZWphc1haaWk5SFhOeG1jT3dGY0h4d0JFNDZZcmFBbUdCcUxvZGxWMkNpdEtqbExfU3hDOW52bWdvY19TM0VDWVczTEk?oc=5",
-      "outlet": "Firstpost",
-      "outletUrl": "https://www.firstpost.com",
-      "published": "2026-11-09T15:54:28.000Z",
-      "outlets": 3,
-      "trending": false,
-      "en": "'Terror Has No Borders': Nigeria's Military Push With Niger, Mali, Burkina Faso | Firstpost Africa",
-      "about": [
-        "NG",
-        "NE",
-        "ML",
-        "BF"
-      ]
-    },
-    {
-      "title": "South Sudan Churches struggle as deadly communal violence disrupts worship",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdjhZWXJxam1YWm00dVluZzB4TmlYbzNCd193NG1pamphSlFseDEyRjFDM1FIMzJjN3BVLUFvUUxJRDFld3hWVmxDVkFkRG1mek85TzhWeDF1dkxvNm9TY2U0QjdqRk5jNVQtM25FVXFaOGZISWJyTkRiZDlBRlltYlBIQTZHY1dTQkcwaXFLWGstV0ZaSFZ2NWtWZ2tBb1N3aUR2ZmNTODRQSENXaTFZ?oc=5",
-      "outlet": "www.christiandaily.com",
-      "outletUrl": "https://www.christiandaily.com",
-      "published": "2026-11-09T13:28:34.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "South Sudan Churches struggle as deadly communal violence disrupts worship",
-      "about": [
-        "SS"
-      ]
     }
   ]
 }
