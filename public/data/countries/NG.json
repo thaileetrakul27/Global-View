@@ -2,7 +2,7 @@
   "code": "NG",
   "name": "Nigeria",
   "kind": "local",
-  "updated": "2026-11-10T04:32:08.459Z",
+  "updated": "2026-11-10T13:05:48.444Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "NG:en",
@@ -10,181 +10,275 @@
   },
   "articles": [
     {
-      "title": "NFF, Musawa, Oborevwori, Others Hail World Champions Flamingos",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNV3k5WEgybEpYMG5yRldsZzlPZ2k5M1BMX0QyQzFLYkE4Qzk0R0l2NnZHY1htbVJDcnQ5MWJNYXZKNThNSG5oWTBLS3U5STJTSTRadEIwc2NQQ2lSN2NGLWRKZTBIeVZoWVcwVlpQZk5wXzI1NURQUXFBR0JZRjFkMXpzTXltYVRBUFpndjlGeGVEQml3VlczTV9GM0JHY3FO?oc=5",
-      "outlet": "THISDAYLIVE",
-      "outletUrl": "https://www.thisdaylive.com",
-      "published": "2026-11-10T00:25:23.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "NFF, Musawa, Oborevwori, Others Hail World Champions Flamingos",
-      "about": [
-        "NG"
-      ]
-    },
-    {
-      "title": "H1 2026: States Spent N621.3bn Of Healthcare Budgets, Leave 80% Unspent",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWEVSX0dIc25XWUVVMWF5UGcxWXI4cHlzT2RVUWd2TEFobUhKaHBoWjZITFEtOXhXMzBJOEVEUE1IRGhGMzFmdFUyZUhueEhYc3FDOGgwV0U5cWlYS2dOVUlHcGNGeWI4MzhFbVlfU3JqeklOOTNCaGhIVVFzd3YzTUxmNUYzLVRyWThYaWc0amhHbGtnU2Vz?oc=5",
-      "outlet": "Independent Newspaper Nigeria",
-      "outletUrl": "https://independent.ng",
-      "published": "2026-11-10T01:36:25.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "H1 2026: States Spent N621.3bn Of Healthcare Budgets, Leave 80% Unspent",
-      "about": [
-        "NG"
-      ]
-    },
-    {
-      "title": "What the ADC judgement means for the 2027 elections",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOd2NGX0ZGRTNmTU50eWY2VWp3Z2pDVHVBSVVaeTNER2g5bGY5QmhXeEVJbFZVaTg4azJnWjZwM1ZrbENUTDdRSHRpWmRKM0xROHV0WGMzTnJiQ0tFMlE3UFV1aWVGaTR4bVZROFNzUzVhY18yZ1pJakhQcHlzSE9abQ?oc=5",
-      "outlet": "Daily Trust",
-      "outletUrl": "https://dailytrust.com",
-      "published": "2026-11-10T01:40:20.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "What the ADC judgement means for the 2027 elections",
-      "about": [
-        "NG"
-      ]
-    },
-    {
-      "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1VYUxyVHdHSk13YlNwc0JfajNMejBiRVAwYzJPbGl1cG9fZUlsUFZOSHNhWVJodHBFYTR3dFBraWlUbVd2cTl5Vl81cjhlS21RR1hoM0x4dWI4bk0?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-11-10T01:44:53.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
-      "about": [
-        "US",
-        "CN"
-      ]
-    },
-    {
-      "title": "Tinubu acknowledges challenges facing Nigerian youths, promises more opportunities",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObkhzeWlxdWVvYzFrcnpVTWtqWEExX0ZBbEloX1d2WmhsOUJmb01kSWhUWFhON3lEeWIxSUVSRWZiUUtndm9BNkpBdGZ0c0diOFlSZmk0ekh1VDBWVTIwMFFfMm16S2h3SzdReEtTYW1QMF9kM1RGNVFzR29ET1V5R1pUdVRwdFdqS09raWtVZjV3WXhuYjJjUDBMellVbEdtS1JpWi1mZlNocVFGd0lpSzJXcDdhNjhmQzY2TU5PMmdReWU4N2tnakRLdDRYa1daaHpKeA?oc=5",
+      "title": "COP31: Long queues, crowded buses frustrate delegates on opening day",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNTdDdHlITFJNRXJBWWlLV2dsZ250WFZXVHpmcDYtaGp6ZkdFTVM2eWVmdmhwSzViN1YyQUt6MXNTNW93YjZBTG42UV9pVm1TbXNQZjB1OG1LWHFReFFiTm4zVGdoUzBONEVQS3hKcE1KNVlnbW5IMHlVMVRuOVJHTkZmUGFlc1pqeW9WSW9SS2NfNDlWblR5N1d4WW5HeFU4Mzhoc19JeU90WS05YlVBb3dyTS04YnFMMzl2WUxRWjM?oc=5",
       "outlet": "Premium Times Nigeria",
       "outletUrl": "https://www.premiumtimesng.com",
-      "published": "2026-11-09T22:20:18.000Z",
+      "published": "2026-11-10T12:00:35.000Z",
       "outlets": 5,
       "trending": true,
-      "en": "Tinubu acknowledges challenges facing Nigerian youths, promises more opportunities",
+      "en": "COP31: Long queues, crowded buses frustrate delegates on opening day",
+      "about": []
+    },
+    {
+      "title": "US reps to hold hearing on ‘persecution of Christians in Nigeria’",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTU4tX3IyakI3U0prMWtjZHdyZGVCb2dvdWx4VFc1clM0U1VtSFhMckZwcUxFV3pmelNtS1ZiY0J5M1RYMXB5Mzg1eGRaWkp4Y2hhN0VZai12cXM2NW9Oc3NTRlJvdlJXSm9tMXVTNzhQNHJ6ZnJKT2xobUg1dFBfcW9KUmJpWFlfbXFmcS1FQWU?oc=5",
+      "outlet": "TheCable",
+      "outletUrl": "https://www.thecable.ng",
+      "published": "2026-11-10T10:11:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "US reps to hold hearing on 'persecution of Christians in Nigeria'",
       "about": [
+        "US",
         "NG"
       ]
     },
     {
-      "title": "Gov Ododo Flags Off 37-km Road Project, 6 Bridges Linking Idah, Ibaji",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQYnAyWWkwMG9kcUx2QXluSC16X1ctYnZGX3lfRS1RWFd5M2JRVEh2LURadjZaUWotVlhqRVNmRUtLbUxjWmRqN28yLW5UUWdpdzlYX2VQRW5XMjJmb09HbTI1MUJiMmh6dERqbW5UQ0pQdFFMWFJZRU9vZGk4QVNYbWlJbHhYcWFZc2dmNnlTVUZRanVidjRz?oc=5",
-      "outlet": "Kogi Reports",
-      "outletUrl": "https://kogireports.com",
-      "published": "2026-11-09T18:44:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Gov Ododo Flags Off 37-km Road Project, 6 Bridges Linking Idah, Ibaji",
-      "about": [
-        "NG"
-      ]
-    },
-    {
-      "title": "LP candidate faults exclusion of rivals from Lagos TV debate",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcGp0RDExVHA2bmg4aFlodDlHX1JGRnVjdDBoczNBWVVyWnRHMF9KOE9TSjV3UkdBeXBoemprYldNUXZHMGtoaGVSZTdEQVVQSW9QQ2dBclgwRnJMclN2T01Md0FVbG9vRlNuZzhuRFlxS1NCRHRkVXo5QlFCWkVBWV9DQkZsQWVyVFFuRFF2d09YMjA1?oc=5",
-      "outlet": "The Guardian Nigeria News",
-      "outletUrl": "https://guardian.ng",
-      "published": "2026-11-10T03:14:08.000Z",
+      "title": "CPI Live Updates: Report to Provide Status Check on Inflation",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQVpwcENQUHRhMFlZU2YwaTBFMUhNejZDd3lWc0kyWWcxZVlPTUs4Z2NWUkpMZUFlckdoQUR1SXVfLWFIWFZ0dGVvMndxd3pqelFHRnJMT29LRkdaOVJEUk96YVlCWGkwRnMzVVp2ZTV5b29uSnZoT01zY2hPSWhCckRSaw?oc=5",
+      "outlet": "The New York Times",
+      "outletUrl": "https://www.nytimes.com",
+      "published": "2026-11-10T12:16:14.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "LP candidate faults exclusion of rivals from Lagos TV debate",
-      "about": [
-        "NG"
-      ]
+      "en": "CPI Live Updates: Report to Provide Status Check on Inflation",
+      "about": []
     },
     {
-      "title": "Offa bank robbery: ‘State govt’s withdrawal of charges proves false claims’",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQR3Y0ejdQVl9PbTZSbkZxQTV2SVQzXzdpclNnVTJPZy1BVHZuNURpUFpmSGFnYzlpZTZ5V0FfajJwLXZvcWxWY3J2NGFWTzJzeHRaVEt6LWNVN0I5ZjNlZXMxYzRERDM3N1JueHNOeU44eVl0dFhMdWhVOHdCTXo0WVhpQndoczZEUThub0VfS2RCVmNzaGlGZzNrbzdyQQ?oc=5",
-      "outlet": "The Guardian Nigeria News",
-      "outletUrl": "https://guardian.ng",
-      "published": "2026-11-10T03:08:46.000Z",
+      "title": "A mysterious 93-billion-mile cosmic structure may be the wreckage of colliding worlds",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBJaFBMWkw5RG1KbW1YdnA3TTVDZU42bC1FdHNkeDljT0FaeVlmSl9iczN3eFo5LWpzMXY5NkRWWjduTnBwV1VpeGxNc2htT0l3RTZLUERWbGdpbUt0OEJBN3d2dW1yVEZlWjZraTJn?oc=5",
+      "outlet": "Science Daily",
+      "outletUrl": "http://www.sciencedaily.com",
+      "published": "2026-11-10T12:32:08.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Offa bank robbery: ‘State govt’s withdrawal of charges proves false claims’",
+      "en": "A mysterious 93-billion-mile cosmic structure may be the wreckage of colliding worlds",
+      "about": []
+    },
+    {
+      "title": "Nigeria 2027: If Atiku is knocked out, does Tinubu or Obi gain?",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQX3ZyQ1A3T0xDMnFvN3g2cWkzU2hTQXFiREZHWlUzU2NlOE1hUzZQWGRwcGpJQ1JvOUl3V3l0d1RYRXVEbzJGdHNaeFdZcVR0bHA3bGtveEx1NkpJbTRPZmxBN2lrSVc5eTFhcmZuWXJud1JyNkFrZTBjVmQySmJEWnVPYXVyVEJSN2ptTEpvYXM4ZDREczBibmtnREE5Rm1uNXc?oc=5",
+      "outlet": "The Africa Report",
+      "outletUrl": "https://www.theafricareport.com",
+      "published": "2026-11-10T07:36:05.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Nigeria 2027: If Atiku is knocked out, does Tinubu or Obi gain?",
       "about": [
         "NG"
       ]
     },
     {
-      "title": "[VIDEO] INEC Removes 1,608,660 Invalid Registrants From Voter Register",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNYkpNQU1UR2Vockk2bkJtOWY4eXRYbWlkQ051Nm1Va1M5aFJiZnN6bi00bjRfeUFIdDh1MnF6WHpTdFJQd2Vud0U1b3dvdlE4LWVKbzBiYldtbHdHMDF2LW9WcVNCT2ZoVFhlZjVZVmp5S3E5cUk5cEl6d1RlTVpHUXhXb1FWQ1BGa3hQU2I5alhRclViS2ktZ3NJQ3pjRmNiUl9yWTFTV0NseXhO?oc=5",
+      "title": "Brent crude falls below $90 first time since August",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBtcnl3Uk9sYVdDRk83dTlHY0Qxb1p6Zk9yajVBV1N5YlV0UHBjLXRyWS15MlJ5U0pBNlNQZ0FwZGlvbndCYWRxT3lkb2hxTVdsd2RETUpmekRfNnMteUVZWGh5WExrYWtKQmdTekNuc3Ztek9Ia3ZYMVFnNFpDWTA?oc=5",
+      "outlet": "Daily Trust",
+      "outletUrl": "https://dailytrust.com",
+      "published": "2026-11-10T10:34:09.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Brent crude falls below $90 first time since August",
+      "about": []
+    },
+    {
+      "title": "Africa’s push to triple adaptation finance fails to get COP31 agenda slot",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSjJYTmpFQ0FsTlZlWk11MTU5Y2NpbmhtNmVmNmpZQXRNUm12Y3ZSSGpNMTUzXzlSZmo4RUJXQk9qOHN5bGRpbWRZQ1VXcEVWR0lqWGRQaGhHN0lwVVp3Y3NkRTI0VkFRN0wtOFUtdFB5RzV3aDJVRVY5cmtIcGFaV182Ymd5SW80UFhaOXc3ZTJHdEhOUkkwaEZDRkFwZw?oc=5",
+      "outlet": "TheCable",
+      "outletUrl": "https://www.thecable.ng",
+      "published": "2026-11-10T05:38:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Africa's push to triple adaptation finance fails to get COP31 agenda slot",
+      "about": []
+    },
+    {
+      "title": "Orji Kalu admits selling arms to anyone with money, says he traded weapons across countries",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTVJtVUJBWl9rRTBWZ3hDU0Z6cjRnek9FXzBBMDNuM2FqZ05zalZZcElDZmdsZ0MwZnBwTzI2bzhxbXI3UTE3VDM1NkZPR3NEcjBiWUJIOGVqVlJHT3Y2dktFSEViTWtKQmxlN1IwSkN4ZWpGZG9Rd1EzWGtZUkMwS3RaZGVrTEhsUmJ1YUdIM2V5bVJoR0FDb0xlRF9GNlJfVXZobUc3ZTQ5cjg1ODNBbkRRVFQwTEhadWRn?oc=5",
+      "outlet": "The ICIR",
+      "outletUrl": "https://www.icirnigeria.org",
+      "published": "2026-11-10T09:18:02.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Orji Kalu admits selling arms to anyone with money, says he traded weapons across countries",
+      "about": [
+        "NG"
+      ]
+    },
+    {
+      "title": "Ododo Flags Off 37KM Ibaji-Idah Road Construction",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaWF3VE4yRk00aVIxYUliRERiWmpJNjRXVFNJU3lqOFFFbml4THZrcExxdjIyS3ctMWpNVUFTaURCdV90akgwMDBKNmU1UUVsYTRLbW5DV0lJTmZLNU1mbU9CRkxTOWkxdks3TzRTLVVjanFTX1lEQXhoc2lqUXFrSkFhTjJReGdETU15a0drR3Vadw?oc=5",
       "outlet": "Channels Television",
       "outletUrl": "https://www.channelstv.com",
-      "published": "2026-11-09T21:08:35.000Z",
+      "published": "2026-11-10T08:36:06.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "INEC Removes 1,608,660 Invalid Registrants From Voter Register",
+      "en": "Ododo Flags Off 37KM Ibaji-Idah Road Construction",
       "about": [
         "NG"
       ]
     },
     {
-      "title": "After 40 years, CERN finds evidence of a one-in-10-billion particle decay",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4ybVVpYmhkMHQ2Tk5PQUZyaE1kdkxzeVk4TXUwSUhqbFJMRXlhZFNVd09MZkhiZGJhdkRuNXkwSk5Zb0RlQ0Vmb3VIeUoyQ3dSZm12dnp3S3VwdnRjQ2JDYXJKUFhFd19uVmkyb3dmNA?oc=5",
-      "outlet": "Science Daily",
-      "outletUrl": "https://www.sciencedaily.com",
-      "published": "2026-11-10T00:44:33.000Z",
+      "title": "Researchers identify DNA marker that could predict treatment response in myelodysplastic syndromes",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbHIzX3V5c0tWcHZXZ3RBR2xNaHpJRGdHYXRvMDAyRHUxSE9GOVQ5Wi1PREtoTnYzVmZvX0UyQVExRGIwOWRVeG1qS21OYzhHcG9qWWZqNHdqd2tVWklwdU16alkzc2p3RjF1OUc2aE9lTGxZSnV2ZlJnVVlfM0FJeVhJVklOVkh1YXo5NG40QWg0UDA?oc=5",
+      "outlet": "Medical Xpress",
+      "outletUrl": "https://medicalxpress.com",
+      "published": "2026-11-10T12:20:10.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Researchers identify DNA marker that could predict treatment response in myelodysplastic syndromes",
+      "about": []
+    },
+    {
+      "title": "NASA's twin ESCAPADE Mars probes slingshot around Earth in unprecedented double 'gravity assist'",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYjF0MGR6SXJDTmJoaUstWWRxQ2VwYUZJWjRZZXZTZ0FBSDFCOFVJTXM1RXhJb290QUh1TV9hSV9CeWpHTDNqWXRQbGd3SzZaWldSQ2NQejBFU2tTd2NsOTl1aXhqQldOOTBueTdsSkVqZlMxaUFBN05wQmkxMXNLWk5nM2pFRk92VWZiVVJnTWhxcXFvVUdBZ0RLMFRaMmV6OEFCNExEU1QxOEdrVUtuckVqN3lJaklHbnZMX01QczliWVU?oc=5",
+      "outlet": "Space",
+      "outletUrl": "https://www.space.com",
+      "published": "2026-11-10T11:00:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "After 40 years, CERN finds evidence of a one-in-10-billion particle decay",
+      "en": "NASA's twin ESCAPADE Mars probes slingshot around Earth in unprecedented double 'gravity assist'",
+      "about": []
+    },
+    {
+      "title": "2027 Polls: Wike Promises N10m To Council That Delivers Ward For Tinubu",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMEE4MC1FLURjUzJnUF9JVGZkUEFob2tvT0VvWTM2a2dWOFk2OG1MdngtdnlKUjl5Wm5CanJDUW13Q2Foa00xV3JGdk9FREp6UElITTRiU2pNZ09yZ3MzWGsxWm1VUzRqZmRIVXVTNkE4ZHY1LUZ2V3RQQVVuYzBVZUtrbnIwcWhQNjkwRXdMZE9oY2NIYU50RVNUbWxaQnVlbDNmNzhHNTNCcTFMSFE?oc=5",
+      "outlet": "Channels Television",
+      "outletUrl": "https://www.channelstv.com",
+      "published": "2026-11-10T07:35:52.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "2027 Polls: Wike Promises N10m To Council That Delivers Ward For Tinubu",
       "about": [
-        "CH"
+        "NG"
       ]
     },
     {
-      "title": "US Rep. Massie explains why impeachment articles target Hegseth, not Trump",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRVRlMnY3bERkV2xUME05cG9EOHh2QmlIalRyRHREY2hGTUgzdFhscmY0OU9ib29RTjFITUdFdHlIVGpmWnlNSThaWElWMGt0ZE5BN2dFTUpkbW1SeUpjR3B0VXpCdHdQMVQtamVOLWNsWDFiN0F0TFRaQ0NpYWY5QW5zSGRfNjZqWGdYOUF1ZXIzTFNiVkhuMTN6dmVmRUlsb0dCcUluN3I?oc=5",
-      "outlet": "Daily Post Nigeria",
-      "outletUrl": "https://dailypost.ng",
-      "published": "2026-11-09T21:52:02.000Z",
+      "title": "Return to Lagos: CAF sets date for the 2026 Best in Africa awards ceremony",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaTMzdDZHUzU0N2JWUC1PR25LSUFLWXBrTHhGMmZFV2E3LVVpNzdJODR0RElUeS0tSnFSN3FzVUZkVmV0aDFMdXoyM1B3UkJ5NHNEblFkNWdxM05oQWd4U0tLMmFzMDlZQlRER0RxN2k5Rk9kdkNOVTdIam1IQWpRNmZpbExBcGQ3Q0VkUEZjd0hCRnMwYUFWNHU0eUdpV1JQeXdNbTRyZ19Hd2JoNWNtSQ?oc=5",
+      "outlet": "Goal.com",
+      "outletUrl": "https://www.goal.com",
+      "published": "2026-11-10T09:34:34.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "US Rep. Massie explains why impeachment articles target Hegseth, not Trump",
+      "en": "Return to Lagos: CAF sets date for the 2026 Best in Africa awards ceremony",
       "about": [
+        "NG"
+      ]
+    },
+    {
+      "title": "Nigerian, Russian navies move to strengthen maritime security cooperation",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZ2JyVzRSZUJkSjlHZ2hrUkhLak9sV25BRGtMLXlhSmEzLTBlcG1tWGFZSUY0d0RORHdCSnh4S2VZV1pLTWtuelpRb1hGVW1jU2pickNWZHFVRmZ2ZUtCb25TLXg1RkhMZWYtTFExWHlQT1BMcDlMQ1ZIUFJfSjd6OEs5cUJ0elZCQndxd3hWNmlkXzYwcXRIekRpVlpRMjlhWVF3RnFnYjBhaG0yQ2hUNnhPZlBxVm11TnU0Sw?oc=5",
+      "outlet": "The Guardian Nigeria News",
+      "outletUrl": "https://guardian.ng",
+      "published": "2026-11-10T10:56:37.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Nigerian, Russian navies move to strengthen maritime security cooperation",
+      "about": [
+        "NG",
+        "RU"
+      ]
+    },
+    {
+      "title": "Obasanjo: I rejected US asylum when Abacha plotted my arrest",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNEtvOEw5SE5Ya1VSaFJ1c2VPblA1N1VvSkkwVkoyTDZwUzg2dFIwQlFxWFV5UjBtZDhKZ20ybzhCRE5nTC1xS3lTdC0tLXp0V0FveU90U2hjeEZuUm9iRU1XbVAxUW1kVkZSdnQya3AxZTlKY1B2UGV5UnFrQkRqaUV5ZTN1YTdqM19wOQ?oc=5",
+      "outlet": "TheCable",
+      "outletUrl": "https://www.thecable.ng",
+      "published": "2026-11-10T10:46:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Obasanjo: I rejected US asylum when Abacha plotted my arrest",
+      "about": [
+        "NG",
         "US"
       ]
     },
     {
-      "title": "A new catalytic shortcut turns nitrogen into ammonia with record efficiency",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU3doRlZ2WlR2aUhpTGE4ZUw4emdHWEJ6bDVMWDVpQjJoZjk2X2lCdUc3SUxYWTk4cXFjSlBNX0pGdUhZOS04Y2RzQ25nVThTdG45STFrWjJyckd3bkJkTXY0cFgtRFpYdGxkOTFqTk1raEtSRWkxd2d5TzZFQWpYVnNqaGk2dUpDQTh2Tm1sZ1dxblVfRWhYWXlIMl8wNXBudXhuMHVrdG9zSURmUGRLTmVhSjZwQU0ySEl5ZHN6WQ?oc=5",
-      "outlet": "EIN Presswire",
-      "outletUrl": "https://www.einpresswire.com",
-      "published": "2026-11-10T03:58:00.000Z",
+      "title": "DR Congo conflict: Authorities sentence at least 66 Congolese soldiers to death for disobeying orders",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5hWENNVUc2eUc4ajBIQlZ4aUF5RnF2TnJCVlFCY0RrNkhZbTBweGRlemxnbEY0ZTk0bl9CcnpFRTU2ZmdKSExyNzRMdnNnZlIzRjFoQ0dEMDV1YVlSV1HSAWNBVV95cUxQS1JVQ0YwOWdKbUs4QTlUWWFoSjZUbEhyRndCa1pvWnJPYW5KTHpoV0xqZnlwV3V6NkVnRHp4TzFJemFTcEpaYkxXNk9pVzFWaTZ0U2loXzBwMnFvYmNyamZzMmc?oc=5",
+      "outlet": "BBC",
+      "outletUrl": "https://www.bbc.com",
+      "published": "2026-11-10T10:50:50.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "DR Congo conflict: Authorities sentence at least 66 Congolese soldiers to death for disobeying orders",
+      "about": [
+        "CD"
+      ]
+    },
+    {
+      "title": "PANDEF condemns political violence in South-south, urges parties to hold rallies in secured venues",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPTlF3Qmk0SEdLRkotZGdQVmZKZjFOR3N6Nkc5aGZtcWhMbm5mamNnbjNPQkllLU83REhCYzR5d01nTmhYSkN1ZkI4anBoeEVESDM2cF9ZLVpsclByZXlOVkxLWjRtaG15Qk1JbTVvVTZWLVd2Z0JwSVNmT3BXVVoxZzVaNFdQOUxjWDZ3QXhpQS1CRk9lcUpBN1l6RDhOMVU1UTNOLUstbXpVUy0tRHJSRW9wWVBkbUFIVEJCVmk4R1RTSS1QbWxtRFBNb1VFNks2V0VPTDNVNUMwVkk0WVl6bU5GTnAyMWlRdU1j?oc=5",
+      "outlet": "Premium Times Nigeria",
+      "outletUrl": "https://www.premiumtimesng.com",
+      "published": "2026-11-10T09:47:06.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "PANDEF condemns political violence in South-south, urges parties to hold rallies in secured venues",
+      "about": [
+        "NG"
+      ]
+    },
+    {
+      "title": "Paleontologists discover “one-in-a-million” fossil with 450-million-year-old soft tissue",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ROGV4eVozUVB3YS1BcHFCeHRXWF9ubkNfX1JOd29LOFBKMWM0eEc4TzRxMTNhdDcyZlYxa1o3RFRHRVVtekx5ZVk3NFN5aVBZdFFIRWt3eHJNR2h2Z2diMlBWTk5hWjBFa1BUaEFn?oc=5",
+      "outlet": "Science Daily",
+      "outletUrl": "http://www.sciencedaily.com",
+      "published": "2026-11-10T12:18:08.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "A new catalytic shortcut turns nitrogen into ammonia with record efficiency",
+      "en": "Paleontologists discover 'one-in-a-million' fossil with 450-million-year-old soft tissue",
       "about": []
     },
     {
-      "title": "The Taurid meteor shower could bring bright, slow-moving shooting stars this week. Here's how to watch.",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPc0ZfQ0MwS09zNDRHeS1vWDhEMldfbnc3cDl3cldOcGNBa05ZMGdkejYza3NaNGZ0Q0Zad1NZMmlDRVB2UlB0MWRHdFZpVDdXbXdkbUExTmZVelN3VkJKRDMtdEgzTFY2NFVPelNWYjhnWW9uTkVFZ05qXzBJeGhCcEE2M2NzUU1vd0hGSG9NOURBaWhlRmJyRmpTYlc3SkdGQjFBTWF6T09iekRBM0Q2cTRVYzBDOUU1akFMWGpZRFU0ODlNZnRzZ3pJT2tsandQeVdLMEV3akU3c3ZEYjhQWA?oc=5",
-      "outlet": "newscentermaine.com",
-      "outletUrl": "https://www.newscentermaine.com",
-      "published": "2026-11-10T03:51:00.000Z",
-      "outlets": 1,
+      "title": "IFAD warns El Niño could cost global economy $11tr, food security",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTThCR2czbWlhalpnM3ZXV3ZqbzRxQzdSSzNueG16bmNOMzZNUkljYWVyVVdGRDF3bXRjdGhncUs4SnRGZnZNQTlSX1VxRFVoNXh0OVNvTnJyckZOMFRPMlJGVUlub2NxTDVuSTdrc0pYc3RVb1d4N3BCbjJDTVVKYzh4VUZiODhhVkJyYU1PbTlsYm8?oc=5",
+      "outlet": "The Guardian Nigeria News",
+      "outletUrl": "https://guardian.ng",
+      "published": "2026-11-10T03:20:08.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "The Taurid meteor shower could bring bright, slow-moving shooting stars this week. Here's how to watch.",
+      "en": "IFAD warns El Niño could cost global economy $11tr, food security",
       "about": []
     },
     {
-      "title": "A new role for chlorine: Uncovering anion redox in solid-state battery cathodes",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVU10enY5ZmRoV3J1eTN2VDQzeHZ1SGdLc0ZXcDVZZUE5M01LQVdKRHh4cGRTY19ZbkVydEZnRHJSSVlrNk4yY3RPaFlVVzBsbjQ0WmxQVmFvenktV1psX21BOEFDNHd3b3FpMzBISkdfbUlVUmdjSUNaMFNmQUl1U2pGZ0V6MTNDWjM3MVFQSG96cDlkbTZEMUNnbl9WYTI4MURNaFptVjBhbU5VeXkw?oc=5",
-      "outlet": "Asia Research News |",
-      "outletUrl": "https://www.asiaresearchnews.com",
-      "published": "2026-11-10T03:33:16.000Z",
-      "outlets": 1,
+      "title": "2027: INEC deletes 1.6m voter records, probes 54 officials",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQkJ6N0NxbW5KZjhWNkk3WnV1OVY0RDlHbkRFdWJNTWR1R1piN0g4VlFGVWNLN1JybklpR1F4bjliRFRuNkx6WjhrTkhsMTdqRVdjWGlaS0dxcnhPLWV1VkJlU2NIWklnU3JvMGRIV0hZYkUwRDhtSUl0MGlGTzVSRkhCaw?oc=5",
+      "outlet": "Punch Newspapers",
+      "outletUrl": "https://punchng.com",
+      "published": "2026-11-10T00:45:22.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "A new role for chlorine: Uncovering anion redox in solid-state battery cathodes",
-      "about": []
+      "en": "2027: INEC deletes 1.6m voter records, probes 54 officials",
+      "about": [
+        "NG"
+      ]
+    },
+    {
+      "title": "Son Flees After Allegedly Hammering APC Chieftain Father To Death In Edo",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUi1BUGFXV0hESlFCTU1lbERDVzhGQlphSE1DbDBKN21CV1hGUlprZDBIUWtVMDB4WEtZLWZFRl9DakoyM192VFh2TndLMWV2Tnpvb0x3MktxdE1veWdlX1RxVFRnZTYzRHBGTG9BQVVXcjRreXhzSzluV19SdkxLd29BeTNjdlRuSHdrLXVCdURPbXM3dUNnZEI5WTZTZGhMZDdXVXJCOTZRMnM1WkFqbw?oc=5",
+      "outlet": "Channels Television",
+      "outletUrl": "https://www.channelstv.com",
+      "published": "2026-11-10T08:54:56.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Son Flees After Allegedly Hammering APC Chieftain Father To Death In Edo",
+      "about": [
+        "NG"
+      ]
+    },
+    {
+      "title": "Nigerians are hungry, but Tinubu’s reforms will bring relief – Orji Kalu",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVkxSWWtkLWxyd2JoWGNfSUYxOWR1WWJaTmhiQ054cHRwLXZWSHV0ZVgyOHFhVHdick9IOTYzSGJJdlFQekptNWYzVEVyQTFNWDB5cWJjWHQwc1lWSTRaY2JoakFMRDY3eUZGeC1yMGhiOXhnNzhMTkRLek1UY0paWGlxdklKaVBrVW9TQTFNTmFhVzhJMVJyY3dVTGlUTVF1UTV1MTJLbmVrX2wybDYxWkRFZkhha1Q5VDVNRmU4SFRQcGNt?oc=5",
+      "outlet": "Premium Times Nigeria",
+      "outletUrl": "https://www.premiumtimesng.com",
+      "published": "2026-11-10T08:37:58.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Nigerians are hungry, but Tinubu's reforms will bring relief – Orji Kalu",
+      "about": [
+        "NG"
+      ]
     },
     {
       "title": "DisCos Apologise To Nigerians Over Power Outages",
@@ -200,194 +294,90 @@
       ]
     },
     {
-      "title": "2 people in Northern California plead not guilty to illegal voting charges",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbnJvQjdUamNLVXZRWGJQR1dsYk93VGJiQ1N6LW0wU0Q1anp2aFo1b2FHZkJiTGl2Q3pkX3dpcTQwTjVQdVBReVdUcW51WVo4ME1lYmh3YUt4SmdqZUdmU1BjNnQtaTNzSFRaQllUSndHRWV4bHBmMkpqMFFsRUFNSi1hQnU1TWFHc1ZCZmVmNEc1OF9vYnl0Vl96UTRPXzlFZUtzaTRaTmNRbkhkTTQzZ2hR?oc=5",
-      "outlet": "KCRA",
-      "outletUrl": "https://www.kcra.com",
-      "published": "2026-11-10T01:07:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "2 people in Northern California plead not guilty to illegal voting charges",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "ICPC amends charges against fake PFIPC DG, adds four others",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Vb3VZWXBrWjl1VmE2WEpDT0pEaGo3RDYxdGpBMExIRHg1Tk9XSjRSbjROUFVFNUl4MDZKajJ0UlhjdXh5dzZ2VlFuaXNOUFhic3lrcjRSV1QteGtFX3lBa0pZQU1IMUtCN1F1dXhHbw?oc=5",
-      "outlet": "Punch Newspapers",
-      "outletUrl": "https://punchng.com",
-      "published": "2026-11-09T15:01:12.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "ICPC amends charges against fake PFIPC DG, adds four others",
-      "about": [
-        "NG"
-      ]
-    },
-    {
-      "title": "Luanda to replace Lagos as SSA’s most populous city by 2050 – W/Bank",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQWs0cFQ0WTdncTZySXhzZ1g3NngzQWpZOFpEVW1VYWdKV1F6ZkJHU2FWYzU1ZVljTGt3ZnVkcHBrUEZlZExuVDhCZ2ZnUTdPLUFoaGNsLXlaUXdXYWlHMExCZU1ET2VFWGJaYnBqU2VsdzBXT0ZEdWVuOV9ZQlVEeGVSY19NRUNlWWIxLUJ1UXdsdDg?oc=5",
-      "outlet": "Daily Trust",
-      "outletUrl": "https://dailytrust.com",
-      "published": "2026-11-10T00:33:26.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Luanda to replace Lagos as SSA’s most populous city by 2050 – W/Bank",
-      "about": [
-        "AO",
-        "NG"
-      ]
-    },
-    {
-      "title": "COP31, diaspora investment summit… business updates to track this week",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbzI1TnZZQkZxTTZTS1pWRWJXWmlVLWJ1TWVjNWM3ZC1qNnI5cGtsVV9va1Jlakhya2NWMHVIelNPZG9qX2dDTWFGcHRFa2JWRzZGTk1CeU1LYmFEVTJUZGR4aUFOc0dhM0VZXzdoQk1HamVmZUIwUmZWZFh5amdkcUxLZmJfQWFGbXd5LVVtUkxDa2pKRW81Vw?oc=5",
-      "outlet": "TheCable",
-      "outletUrl": "https://www.thecable.ng",
-      "published": "2026-11-09T09:51:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "COP31, diaspora investment summit… business updates to track this week",
-      "about": []
-    },
-    {
-      "title": "WMO: 2026 set to rank among four hottest years on record",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUDhZRHB4dklVbXowM1RZcEg1Y1NvRjFOd2ZPbDlscmdvS0JPTTRoMW9qMFBVUUJ2emJncEthNTQtNlBXbFJmNjFmYzlWNWwwZU5GV29qOF9zOHZDMDhRN1I2QTluaGVINm80OFBFd294RG4tNnlyYm9TeHZvVVV0SDRpTWNGSjQ?oc=5",
-      "outlet": "TheCable",
-      "outletUrl": "https://www.thecable.ng",
-      "published": "2026-11-09T15:14:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "WMO: 2026 set to rank among four hottest years on record",
-      "about": []
-    },
-    {
-      "title": "Wimborne to host Bradford in FA Cup second round",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBfUTBsdjYtRWx5RlRySzBIWEZ0NmVzcWQtNkljcS1lZ3kyVjJIY3pzcUUtdmZkUWE3SE52U2pSRXlCRVdDUUJ6T29odXNQSjRwUUI2MmxRcWVVYjNiTXB3aU5QMl9wcldx?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-11-09T19:33:28.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Wimborne to host Bradford in FA Cup second round",
-      "about": []
-    },
-    {
-      "title": "FIFPRO World XI announced – and Ballon d'Or winner Harry Kane is surprisingly absent",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNcDZva01WNFZNck9jTW12UXpYbk1GLVJmQkhNSFd6SFZpbVNsUDc5OWk2N2RUUTZxTW1pYVE3OUpyRENKNl90Qnk3Mkl3MC00MmdrR0Rob2RWV2NLODR6cHlGNFEyOEx4OTZacWJnd3h4X005SnNYU0RHTjFPODBxMS05X3l0VjBpeHpKQzBKVXhKd2lYNEFUWHF1blVRZnhFdUh2bTZIekVENWJjeE04eDBtYkpnUmd3d01aTzl1alBQdl8taTQ0NUduQ2pPYkJ5LW5ZUW9PSUlSZ0I5TE5iSFZja3I?oc=5",
-      "outlet": "Goal.com",
-      "outletUrl": "https://www.goal.com",
-      "published": "2026-11-09T17:32:58.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "FIFPRO World XI announced – and Ballon d'Or winner Harry Kane is surprisingly absent",
-      "about": []
-    },
-    {
-      "title": "Power Restored to Areas Affected by Disruption, Says Tegbe",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSlNsZEhTQTJObjZ1bDNLMVlnUHI2Mll4dXVhUFI2YVpwV3Zpd1Z5aHlXYURDZGdEQ0JtemdGaW4tcHdaNUVYaHNxWXI5T2x3cUhuMk5KNFBnSGprd1U3NVhqamtmNUQzRkxkRWFyWVViNzg2WDdLd0NpUklXYUhkVVVyQUNadm85RXZyR3gxR3hxZTBWdWxOZVVyYWR2Zw?oc=5",
-      "outlet": "THISDAYLIVE",
-      "outletUrl": "https://www.thisdaylive.com",
-      "published": "2026-11-09T21:16:59.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Power Restored to Areas Affected by Disruption, Says Tegbe",
-      "about": [
-        "NG"
-      ]
-    },
-    {
-      "title": "Governor Mikie Sherrill names Shirley Emehelu as New Jersey's lieutenant governor",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdHlkYXR2OUFjSGlNZGxsNlFiajZwS0lyQmhibGdaS0xRV2l6MkYxYjktbmpVUkFDVE9xTkh2ZmVQeWI3clI5WUlaOUFxX3pDQUw5TDg3VUZHUWZfTEcyRXZYV1M2dnA4dHMwV3ZxLUFPSWpnTzhDUlpWTi1IT3pOQkFBdjhDZzZ0WDZfaTFLamlFczA0Y3NnY0JBTW41d3pZOWfSAacBQVVfeXFMUFE4N0lYOEJyZFpuZlFUOFljdFh2dDlZYnk1dUtGaDVLOERpcTB3OFc5eXFEbVFsNkdkaE9nWVc5QXhXTFNrd0ZWWkl2bW1sb1FlUkYzaC04a3Nla09JdlNvdlhmUU5SWWc5NHdmR19vWnZ5QkZJMHkwd21pNVhINlczeHE0UkRNMlF3T2NCRko2bzVzVXlfSndSSHpZdlJxMEI3RDhYUWc?oc=5",
-      "outlet": "6abc Philadelphia",
-      "outletUrl": "https://6abc.com",
-      "published": "2026-11-09T20:42:06.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Governor Mikie Sherrill names Shirley Emehelu as New Jersey's lieutenant governor",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Eisenkot Mulls Netanyahu Joining Israel’s Next Government",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPT2ZqLTZhRTlvbDVWYldmMl9wUi1CREFja2VOb1RERmR1S0VYUzBzUjhKWlpzcy1EREwzMzVDYWpEaExrWHBCMjZuc2kxVFVHUnNOaW42aEhEY0FEY0JkOGtSVTJPSUNzOGljSklzT0RzeEtOVzdFUk5LZ2lXRmlrZ0lyOVp3QQ?oc=5",
-      "outlet": "LEADERSHIP Newspapers",
-      "outletUrl": "https://leadership.ng",
-      "published": "2026-11-09T20:31:26.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Eisenkot Mulls Netanyahu Joining Israel’s Next Government",
-      "about": [
-        "IL"
-      ]
-    },
-    {
-      "title": "Follow TheCable for exclusive coverage of COP31 in Turkey",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNU3FRQzlwc1FTb0JZb3VhTGd5dWc4amkxNmNoUGVJV3RYOElnTFpwTU45U0kydGJuS2JKQlJMWU5ZbWc5bkp3X2lSTUZuZ1RvRC13cmZFQ2FIOFZXRWRaRzRJbHlTQzIyTkVmMkw2ZXdRZjdZc01DZ1EyVHo4bXR3QWtwakdlQ2NSS2c?oc=5",
-      "outlet": "TheCable",
-      "outletUrl": "https://www.thecable.ng",
-      "published": "2026-11-09T20:28:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Follow TheCable for exclusive coverage of COP31 in Turkey",
-      "about": [
-        "TR"
-      ]
-    },
-    {
-      "title": "Trump says Iran war ‘highly unlikely’ to resume",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYkV4LUtPUVdmSzBJVlczdlZZSUF3LVlqR3pWYno0My1LX1dibm1qeE5neENhdl9URTduOXZYbm9vdHlRUHVKYktJTUdyU3Ryano2THBmNk5icUctNmRoSzRYTnZaWjRfci1UQ3BxNDhUa3ZNbGE1dFR2TEZBNjBpR3R3U29IdGNnUEE?oc=5",
-      "outlet": "Vanguard News",
-      "outletUrl": "https://www.vanguardngr.com",
-      "published": "2026-11-09T08:28:46.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Trump says Iran war ‘highly unlikely’ to resume",
-      "about": [
-        "US",
-        "IR"
-      ]
-    },
-    {
-      "title": "Tinubu celebrates political ally, Ambassador Sola Iji, at 70",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPS0lqQVlxRGdSWTVmZ0gzaXJFRkdYeFZkdXBXZmg0eGxuUEY4b2NlOGlWckVzUTJ4WHhJODl1VDdLalV2ekNKVUdLbVh2a0s5ZmU5SF9iZEtocEptUUJseVJOMkpyM2tybGtGRHNCVG1uUEU3bmloN1NmNkg2ZjVySjM0bU00Wk1kX09ZUDJYV2VwcGPSAZgBQVVfeXFMTjNUV0lZTHJldG9FUm9icFM3MzZvZzJ3NXZINnBnYUVweDBRc0VaRUE5VmllbmlMaE0wSWVmNkNlMTVSM1F0aEtJQWt1alNVNTI0dmx1N1VmaUt0NVJKZS14bHA5UURwNElwZUExZWxOX0JSem1wRWJJdlo1WnlaekIxVzJiNzdVdmtzZ0otWlQxR1N2REFEVm0?oc=5",
-      "outlet": "The Nation Newspaper",
-      "outletUrl": "https://thenationonlineng.net",
-      "published": "2026-11-09T21:22:56.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Tinubu celebrates political ally, Ambassador Sola Iji, at 70",
-      "about": [
-        "NG"
-      ]
-    },
-    {
-      "title": "France Accuses Iran’s Guards Of Masterminding Cyberattacks On Fridges",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNEljcjdQN2FSMk1DbzJIV3lBY2Zmb3NTdmxrb0MwMU93SnJZS3BrY2hTcHZlMlhQck12V1N2Nm9rdDc5MkVYRlRGY1MxY3prNWpOT0h3VzczTmtsRWN2TDJFMlU1a0ZoN3NUNXpzOHFwcG5LUHI0UFpDVDZBQlFPM016OE1zNU5XazY3aHZmbDRHRVo0blFjVmRkMHlBbVZDT3hlVEJyR3hoV3M?oc=5",
+      "title": "Govt Reacts As 4,300 NYSC Members Cram Into Ogun Camp",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc0t4QURBZzMtZFNmTHBQTkVoaVNhakZtcDNuaUZpcUxaUTNhZ2VEQ0YtU2t2UXdzU2ZUOTgtSWdRbFlpQVZKb1ZCa1dUWHFZVFFjeVNmMnhGZDVHWDJCU3FCNWZGb1lnWGlvMm1rMmF2WXd3U1ZHbEZyTW1ObUp4OE1aTmFpSmdqYzJoRjJmOXl3ZVZUbFE?oc=5",
       "outlet": "Channels Television",
       "outletUrl": "https://www.channelstv.com",
-      "published": "2026-11-09T19:20:49.000Z",
+      "published": "2026-11-10T08:33:53.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "France Accuses Iran’s Guards Of Masterminding Cyberattacks On Fridges",
+      "en": "Govt Reacts As 4,300 NYSC Members Cram Into Ogun Camp",
       "about": [
-        "FR",
-        "IR"
+        "NG"
       ]
     },
     {
-      "title": "Trump reverses stance, alleges fraud in recent US midterm elections",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTnZ0UGV3RFQ2OWZpeVZQSlk0NkJTMmNfNks2T05zcGV0SjgtUEZXZXJIUDJEaVdjYjVia2YtaXRiS3lOaFh0ajVucVNkWDQ4akVXckU3RWx6NzZyT3pCQnhqYUhmS0pSQURpXzFabVhncXZTTlZFYjNnZVZWUDRROHFPM0NxenlRZVhUYTd2QVQ0c1B3VWsyUTRkcWlhOGtVcXk4OHl6TkVjenPSAbABQVVfeXFMT1UyRWYtbVdYZVF1VTB1LWdHS0dHMno5MlpwaGFnbHVuRy0tZW1CZ0JNSTlFVFZyMk5aQmlmbGF3V2VRWEMxQmNRVlc1aWtLNlZzWVVGWDFUMmVOUk04RFBGRVhLMVo1bm8xRE9vZFZwQ2NrSFBmLTFzaUdhSUlFZVhhOWtGX3VydFdGN3BFTFJOaTlQcWY2MURZaFJoUDNubE9oeGFMSS1ERlNHcG9EVGk?oc=5",
-      "outlet": "Al Jazeera",
-      "outletUrl": "https://www.aljazeera.com",
-      "published": "2026-11-09T19:10:00.000Z",
+      "title": "Reform UK Councillor Convicted Over Facebook Post Targeting Nigerians",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUU96eU42d0ltYVFzV1kzdWJXN1dTM3BGM0ZJSk5PNVRRMVhsV1c5aldPUmktVnhiSjRfMDYtYkMteFFIWkdJcjRVSmkyOEF4b2lSTmYzXzBFVnpWZDJIZk5nYVFiU3ptT1Z1TDFFcGdmTlFsSU5xd1NfaWVpUVRYZGxJVU4zQVZBeDZSaTVXY2pRSGt4TkpZ?oc=5",
+      "outlet": "LEADERSHIP Newspapers",
+      "outletUrl": "https://leadership.ng",
+      "published": "2026-11-10T08:16:17.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Trump reverses stance, alleges fraud in recent US midterm elections",
+      "en": "Reform UK Councillor Convicted Over Facebook Post Targeting Nigerians",
       "about": [
-        "US"
+        "GB",
+        "NG"
       ]
+    },
+    {
+      "title": "Climate Crisis: Over 1.5 Billion Women And Girls Live In Climate Hotspots, UN Women Warns",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORjQtOGdreVJoQ0FyQ3R2MExkekNNMU5tRXBLdFpmZnpsc19uUll2dWMxWTJNVndORzlPMGNWQlBFTHdJOC0yNkxRemY1bjJoS3JQUEN4dmtkbUwyNzhWVnNSTTBFeEhPNTdyNnA1RUJPbUlOZ1EtSFdDeS1DQ1hZTUM5TzZkSkhMdjFuSWZidXM4a2haU0QwWEpIdUNfeXk0RTEyZmo5QXdINlBPSFJN?oc=5",
+      "outlet": "LEADERSHIP Newspapers",
+      "outletUrl": "https://leadership.ng",
+      "published": "2026-11-10T08:15:20.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Climate Crisis: Over 1.5 Billion Women And Girls Live In Climate Hotspots, UN Women Warns",
+      "about": []
+    },
+    {
+      "title": "Passenger Removed From Abuja-Bound Flight After Threatening His Anger Could 'Burn Down' Aircraft",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPalJHay1fSDVSRHpDV2dQekx2MGpoajN6cEpuUWNXWjhjU3lCU0t1eVRnRTRjd1VBeGpFNEkyYS1yZEE2RmNxRHJkV05VQUp2R2tIUmQ1WkUwajhJSVc2UWczQkVWZl9qTGV6UEZ4V0ZNLWlka3RMZXI5alF6aFhaU01Wcy03QWJFZXF3MDBPWFFRUEVuT0FDOU9CUm1IQVlqeHpTTFJVUEI1MGt3aEdyeHhTLTdEMFVGQzRQMnk5VnNuWVBmdnpaZW4wWktLdw?oc=5",
+      "outlet": "Channels Television",
+      "outletUrl": "https://www.channelstv.com",
+      "published": "2026-11-10T08:10:31.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Passenger Removed From Abuja-Bound Flight After Threatening His Anger Could 'Burn Down' Aircraft",
+      "about": [
+        "NG"
+      ]
+    },
+    {
+      "title": "Monimichele Hails Flamingos, Attributes Victory to Good Preparations on Quality Turf",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbzk4cTlMTWxGQjloR092Zmh4STNIUnRBeV90LTliNUxKbUR6cG1nOWZaeFZpNkQzaU9FaGNEbllucjg0MTg2cjdqSGhMb2FZSWVyRzc1LUpQbEhYTmh2WXd0MWZzWDBfbGdFRE1NWS1JdjduS3BVN0lacDlNSzVELVRiZU9uMkFINmU2ZlJFTGFmWXFMWVhrSFVRYm14Si1mVnp5UjRHeFBJRW40bEhOVGJkSW05RnFXODF5SUgydXM?oc=5",
+      "outlet": "THISDAYLIVE",
+      "outletUrl": "https://www.thisdaylive.com",
+      "published": "2026-11-10T04:28:55.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Monimichele Hails Flamingos, Attributes Victory to Good Preparations on Quality Turf",
+      "about": []
+    },
+    {
+      "title": "Canada makes rural immigration programme permanent",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQd0QwN0owS1doR1JJUi15cTY4N0otMnJ5cXpJY0V3V2NNcEFJUThMSWlSWEZvTnF4NjJKQWZlc253Mk5NU0FlMUN3b0g0a0tMUFFBZ2ZPWlZsQm5ZUUptYW1uSENzaDY3QXY0eGpkSWJWaUVpdDNpNG9zSF91aS04enVQUXo4STVSb203Rks0LXTSAZYBQVVfeXFMTkFNZEFiVkpqbnZLZ3RZbjl2NFBrS04ydUYtMjdtUGJuaDB6YVNjWC1KaG1RY3Zta2E4elhmajlUSUtNYWtoMlBFT3JESkVibnA3Sm9OWTF5b2RDczU5TklGY1Q0S3pOMWlSTUdPMlUwdVNTdlJyeldyMThmYkwxeTd3OFg2RXVMcDlYbEVFS1dTd3VmRC1n?oc=5",
+      "outlet": "Vanguard News",
+      "outletUrl": "https://www.vanguardngr.com",
+      "published": "2026-11-10T02:11:04.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Canada makes rural immigration programme permanent",
+      "about": [
+        "CA"
+      ]
+    },
+    {
+      "title": "Arsene Wenger considers challenging Gianni Infantino in FIFA presidential election",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRjRjd1MzY0EwRXNxY2pKM3k3U0c5d0plQ3dWUDZOQUlMWE9ra2JXTGxxSGtQZWljc1Y5U3BKTkhvZ3FSOUFnV3JJeWlkZ3pGQlMyMEg1Ri10TXBPZzZ5cVNVX0hQNk9ybWZ2NWpoTDZWai13LXdlUFc2OEh0OEhDOWFfT2IxY0xGZVE3TV9tdGdaV3JSXzZVQUVlSVRFa3N1M3VDSWFUMXhKRC1LazZ1X2V3UjRORnc?oc=5",
+      "outlet": "Goal.com",
+      "outletUrl": "https://www.goal.com",
+      "published": "2026-11-10T06:29:39.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Arsene Wenger considers challenging Gianni Infantino in FIFA presidential election",
+      "about": []
     }
   ]
 }

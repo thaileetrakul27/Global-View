@@ -444,7 +444,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "eonet,gdacs|JP#180d4e6d",
-    "seen": "2026-11-10T04:32:08.459Z",
+    "seen": "2026-11-10T13:05:48.444Z",
     "donationSearched": "2026-11-09T21:11:15.143Z",
     "directSearched": "2026-11-09T21:11:15.143Z",
     "directSearchVersion": 2
@@ -529,7 +529,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-10T04:32:08.459Z",
+    "seen": "2026-11-10T13:05:48.444Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2
@@ -633,7 +633,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-10T04:32:08.459Z",
+    "seen": "2026-11-10T13:05:48.444Z",
     "donationSearched": "2026-11-08T01:50:21.071Z",
     "directSearched": "2026-11-08T01:50:21.071Z",
     "directSearchVersion": 2,
@@ -648,42 +648,29 @@
     ]
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-11-08T09:28:08.113Z",
+    "at": "2026-11-10T13:05:48.444Z",
     "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "",
+    "searches": 3,
+    "summary": "The feed records a drought in East Africa and the Central Sahel that it dates from 21 May 2026. The latest source found is a US Climate Prediction Center outlook for 5–11 November 2026, which reports drought with degraded vegetation in parts of southern and southeastern South Sudan and northern Uganda. No source found confirms the start date. No people affected, deaths or displacement figures were reported for this event. The feed gives an agricultural drought area of…",
     "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [
+    "places": [
       {
-        "url": "https://go.ifrc.org/emergencies/8079/overview",
-        "org": "IFRC (IFRC GO)",
-        "kind": "society",
-        "note": "Ethiopia drought DREF appeal; covers Ethiopia only and dates do not match this event.",
-        "specific": false
+        "name": "Northern Uganda",
+        "country": "UG",
+        "kind": "region",
+        "impact": "Drought with degraded vegetation"
       },
       {
-        "url": "https://redcross.or.ke/drought-emergency-2026/",
-        "org": "Kenya Red Cross Society",
-        "kind": "society",
-        "note": "General donation page for Kenya's 2026 drought, not tied to this event.",
-        "specific": false
-      },
-      {
-        "url": "https://redcrosseth.org/get-involved/donate/",
-        "org": "Ethiopian Red Cross Society",
-        "kind": "society",
-        "note": "General fund for the society's work, not this drought specifically.",
-        "specific": false
+        "name": "Southern and southeastern South Sudan",
+        "country": "SS",
+        "kind": "region",
+        "impact": "Drought with degraded vegetation"
       }
     ],
+    "figures": [],
+    "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-10T04:32:08.459Z",
-    "donationSearched": "2026-11-08T09:28:08.113Z",
-    "directSearched": "2026-11-08T09:28:08.113Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://animalsurvival.org/appeal/tsavo-water-project-jul-26/",
@@ -693,7 +680,9 @@
         "title": "We continue to help raise funds for drought-stricken animals in Kenya - Animal Survival International",
         "published": "2026-08-04T09:28:08.113Z"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-10T13:05:48.444Z",
+    "seen": "2026-11-10T13:05:48.444Z"
   },
   "gdacs-drought-dr-1027465": {
     "at": "2026-10-27T08:20:06.786Z",
@@ -981,18 +970,18 @@
     "membersHash": "usgs|PK#62eeb9a4"
   },
   "gdacs-earthquake-eq-1573141": {
-    "at": "2026-11-09T10:17:17.712Z",
+    "at": "2026-11-10T13:05:48.444Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 7.0 earthquake struck about 191 km ENE of Nagqu, Tibet Autonomous Region, China, on 22 October 2026. The epicentre is reported in Baqên County. Reports give at least 16 deaths, 76 injuries and at least 339 collapsed homes. The most recent dated report found is from 24 October 2026, and no later report confirms the status.",
+    "summary": "A magnitude 7.0 earthquake struck Baqên County in Nagqu City, Xizang (Tibet) Autonomous Region, China, on 22 October 2026. Officials reported 16 deaths and 76 injured, and at least 339 homes damaged or destroyed. About 12,489 residents were evacuated by 23 October. The latest dated report, from 24 October 2026, said rescue operations and aftershock monitoring would continue.",
     "ongoing": true,
     "places": [
       {
         "name": "Baqên County",
-        "admin": "Nagqu",
+        "admin": "Xizang (Tibet) Autonomous Region",
         "country": "CN",
         "kind": "district",
-        "impact": "Epicentre; 16 dead, 76 injured"
+        "impact": "339 homes damaged or destroyed; epicentre"
       },
       {
         "name": "Mărú Township",
@@ -1010,31 +999,25 @@
     "figures": [
       {
         "label": "Deaths",
-        "value": "at least 16",
-        "sourceName": "nbcnews.com",
-        "sourceUrl": "https://www.nbcnews.com/world/china/70-earthquake-hits-chinas-tibet-killing-16-injuring-32-rcna605100"
+        "value": "16",
+        "sourceName": "tribuneindia.com",
+        "sourceUrl": "https://www.tribuneindia.com/news/world/tibet-earthquake-76-injured-16-killed-after-7-0-magnitude-quake-hits-nakchu-rescue-operations-underway"
       },
       {
         "label": "Injured",
         "value": "76",
-        "sourceName": "aninews.in",
-        "sourceUrl": "https://www.aninews.in/news/world/asia/tibet-earthquake-76-injured-16-killed-after-70-magnitude-quake-hits-nakchu-rescue-operations-underway20261024083711/"
+        "sourceName": "tribuneindia.com",
+        "sourceUrl": "https://www.tribuneindia.com/news/world/tibet-earthquake-76-injured-16-killed-after-7-0-magnitude-quake-hits-nakchu-rescue-operations-underway"
       },
       {
-        "label": "Homes collapsed",
-        "value": "at least 339",
-        "sourceName": "nbcnews.com",
-        "sourceUrl": "https://www.nbcnews.com/world/china/70-earthquake-hits-chinas-tibet-killing-16-injuring-32-rcna605100"
+        "label": "Houses damaged or destroyed",
+        "value": "339",
+        "sourceName": "outlookindia.com",
+        "sourceUrl": "https://www.outlookindia.com/international/tibet-earthquake-atleast-16-killed-54-injured-as-339-homes-collapse-in-nagqu"
       },
       {
         "label": "Evacuated",
-        "value": "over 12,000 people",
-        "sourceName": "tribuneindia.com",
-        "sourceUrl": "https://www.tribuneindia.com/news/world/powerful-earthquake-in-chinas-tibet-collapses-hundreds-of-homes-kills-16/amp"
-      },
-      {
-        "label": "Rescue personnel",
-        "value": "more than 5,000",
+        "value": "12,489 people",
         "sourceName": "aninews.in",
         "sourceUrl": "https://www.aninews.in/news/world/asia/tibet-earthquake-76-injured-16-killed-after-70-magnitude-quake-hits-nakchu-rescue-operations-underway20261024083711/"
       }
@@ -1042,9 +1025,9 @@
     "donation": [],
     "sources": [
       {
-        "name": "smdailyjournal.com",
-        "url": "https://www.smdailyjournal.com/news/world/rescuers-search-for-survivors-after-deadly-earthquake-in-chinas-tibet-region/article_e057e7dc-d5ac-4393-a299-1b28690b0540.html",
-        "title": "Rescuers search for survivors after deadly earthquake in China's Tibet region"
+        "name": "tribuneindia.com",
+        "url": "https://www.tribuneindia.com/news/world/tibet-earthquake-76-injured-16-killed-after-7-0-magnitude-quake-hits-nakchu-rescue-operations-underway",
+        "title": "Tibet Earthquake: 76 injured, 16 killed after 7.0-magnitude quake hits Nakchu; rescue operations underway - The Tribune"
       },
       {
         "name": "en.wikipedia.org",
@@ -1052,13 +1035,21 @@
         "title": "2026 Tibet earthquake"
       },
       {
-        "name": "aninews.in",
-        "url": "https://www.aninews.in/news/world/asia/tibet-earthquake-76-injured-16-killed-after-70-magnitude-quake-hits-nakchu-rescue-operations-underway20261024083711/",
-        "title": "Tibet Earthquake: 76 injured, 16 killed after 7.0-magnitude quake hits Nakchu; rescue operations underway"
+        "name": "nation.com.pk",
+        "url": "https://www.nation.com.pk/23-Oct-2026/7-0-magnitude-earthquake-kills-16-tibet-s-nagqu-city",
+        "title": "7.0-magnitude earthquake kills 16 in Tibet’s Nagqu City"
+      },
+      {
+        "name": "ecns.cn",
+        "url": "http://www.ecns.cn/cns-wire/2026-10-23/detail-ihfmiwhm0741170.shtml",
+        "title": "China's Red Cross allocates emergency relief supplies to earthquake-hit Xizang"
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-10T04:32:08.459Z"
+    "donationSearched": "2026-11-10T13:05:48.444Z",
+    "directSearched": "2026-11-10T13:05:48.444Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-10T13:05:48.444Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-11-10T04:32:08.459Z",
@@ -1198,6 +1189,7 @@
       }
     ],
     "membersHash": "gdacs,news|MY#c3d5f9dd",
+    "seen": "2026-11-10T04:32:08.459Z",
     "donationSearched": "2026-11-10T04:32:08.459Z",
     "directSearched": "2026-11-10T04:32:08.459Z",
     "directSearchVersion": 2,
@@ -1210,8 +1202,7 @@
         "title": "Misi Bantuan Banjir Selangor",
         "published": "2026-11-06T04:32:08.459Z"
       }
-    ],
-    "seen": "2026-11-10T04:32:08.459Z"
+    ]
   },
   "gdacs-flood-fl-1104263": {
     "at": "2026-11-03T03:51:42.335Z",
@@ -1653,7 +1644,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-10T04:32:08.459Z",
+    "seen": "2026-11-10T13:05:48.444Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2,
@@ -1662,160 +1653,180 @@
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-08T09:28:08.113Z",
+    "at": "2026-11-10T13:05:48.444Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026. BNPB data as of 1 September 2026 reported 127 deaths, 1,668 injured and 181,354 people in shelters. The emergency status was cut to 30 days. The latest figures found are dated 1 September 2026.",
+    "summary": "A magnitude 7.7 earthquake struck off the coast of East Nusa Tenggara, Indonesia, on 15 August 2026. BNPB reported 47 deaths and 101 injured on 16 August, and more than 5,000 people were displaced or evacuated. Aftershocks began to slow and the early tsunami warning was lifted. Emergency response was still active in early October, when PMI was distributing clean water in Nagekeo. No later reports were found.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Sikka",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Two deaths at port; building collapse"
+      },
+      {
+        "name": "Maumere",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Structural damage, building collapse, port affected"
+      },
       {
         "name": "Nagekeo",
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "epicentre offshore; buildings collapsed in Mbay"
-      },
-      {
-        "name": "Sikka",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "two deaths at Maumere Port; port buildings damaged"
-      },
-      {
-        "name": "Manggarai",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "highest death counts"
-      },
-      {
-        "name": "East Manggarai",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "highest death counts"
-      },
-      {
-        "name": "Ende",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "deaths reported"
+        "impact": "Epicentre area; about 2,000 evacuated; homes damaged"
       },
       {
         "name": "Ngada",
-        "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "deaths reported"
+        "impact": "Strong shaking; buildings damaged; emergency status"
       },
       {
-        "name": "West Manggarai",
-        "admin": "East Nusa Tenggara",
+        "name": "Manggarai",
         "country": "ID",
         "kind": "district",
-        "impact": "deaths reported"
+        "impact": "Many homes collapsed in remote areas; bridges damaged"
       },
       {
-        "name": "Ruteng",
-        "admin": "East Nusa Tenggara",
+        "name": "Borong",
+        "admin": "East Manggarai",
         "country": "ID",
         "kind": "town",
-        "impact": "cracks and partial damage to commercial buildings"
+        "impact": "Buildings damaged"
+      },
+      {
+        "name": "Ende",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Hotels and public facilities cracked, partly damaged"
       },
       {
         "name": "Labuan Bajo",
-        "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "town",
-        "impact": "cracks and partial damage to hotels and public facilities"
-      },
-      {
-        "name": "Bima",
-        "admin": "West Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "moderately damaged house; wall cracks"
-      },
-      {
-        "name": "Selayar Islands",
-        "admin": "South Sulawesi",
-        "country": "ID",
-        "kind": "district",
-        "impact": "displacement reported"
+        "impact": "Hotels and public facilities cracked, partly damaged"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "127",
-        "sourceName": "beritasatu.com",
-        "sourceUrl": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi"
+        "value": "47",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/field-reports/18533"
       },
       {
         "label": "Injured",
-        "value": "1,668",
-        "sourceName": "beritasatu.com",
-        "sourceUrl": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi"
+        "value": "101",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/field-reports/18533"
       },
       {
-        "label": "Displaced or in shelters",
-        "value": "181,354 people",
-        "sourceName": "beritasatu.com",
-        "sourceUrl": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi"
+        "label": "Displaced/evacuated",
+        "value": "more than 5,000",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/field-reports/18533"
       },
       {
         "label": "Houses damaged",
-        "value": "97,215",
-        "sourceName": "beritasatu.com",
-        "sourceUrl": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi"
+        "value": "373",
+        "sourceName": "human-initiative.org",
+        "sourceUrl": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://ayodonor.pmi.or.id/",
+        "org": "PMI Kota Bekasi (Indonesian Red Cross)",
+        "kind": "society",
+        "note": "Ayodonor PMI listing; post dated 27 August 2026 opens fundraising for East Nusa Tenggara disaster victims.",
+        "specific": true
+      },
+      {
+        "url": "https://donasi.pmi.or.id/donasi/",
+        "org": "Indonesian Red Cross (PMI)",
+        "kind": "society",
+        "note": "National PMI general donation page, not specific to this earthquake.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
-        "name": "beritasatu.com",
-        "url": "https://www.beritasatu.com/nusantara/3023798/gempa-nagekeo-127-tewas-97215-rumah-rusak-dan-181354-mengungsi",
-        "title": "Gempa Nagekeo: 127 Tewas, 97.215 Rumah Rusak, dan 181.354 Mengungsi"
+        "name": "lintas86.com",
+        "url": "https://www.lintas86.com/2026/10/59rit-airbersih-pminagekeo.html",
+        "title": "59 Rit dalam Enam Hari, PMI Nagekeo Distribusikan 325 Ribu Liter Air Bersih Pascagempa - LINTAS86.com"
+      },
+      {
+        "name": "human-initiative.org",
+        "url": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
+        "title": "Situation Report #2 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
+      },
+      {
+        "name": "ahacentre.org",
+        "url": "https://ahacentre.org/flash-update/flash-update-no-1-m7-7-earthquake-in-east-nusa-tenggara-indonesia-15-august-2026/",
+        "title": "FLASH UPDATE: No. 1"
+      },
+      {
+        "name": "cnbc.com",
+        "url": "https://www.cnbc.com/2026/08/15/twenty-dead-after-indonesias-magnitude-7point7-earthquake-rescuers-say.html",
+        "title": "Death toll rises after Indonesia's magnitude 7.7 earthquake: officials"
+      },
+      {
+        "name": "wikiwand.com",
+        "url": "https://www.wikiwand.com/en/2026_East_Nusa_Tenggara_earthquake",
+        "title": "2026 East Nusa Tenggara earthquake - Wikiwand"
+      },
+      {
+        "name": "human-initiative.org",
+        "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
+        "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-10T04:32:08.459Z",
-    "donationSearched": "2026-11-08T09:28:08.113Z",
-    "directSearched": "2026-11-08T09:28:08.113Z",
-    "directSearchVersion": 2,
     "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/nttemergencyrelief/",
+        "org": "Human Initiative (GlobalGiving partner)",
+        "kind": "globalgiving",
+        "note": "Shelter, food, water and hygiene kits after the East Nusa Tenggara quake.",
+        "title": "East Nusa Tenggara Earthquake Relief Fund - GlobalGiving"
+      },
       {
         "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
         "org": "IDEP Selaras Alam",
         "kind": "globalgiving",
-        "note": "Food, clean water, shelter, medicine and lighting for families in Manggarai.",
+        "note": "Food, water, shelter and medicine via partners in Manggarai and East Manggarai.",
         "title": "Donate to Help Families Affected by Flores Earthquake - GlobalGiving"
       },
       {
-        "url": "https://www.globalgiving.org/projects/nttemergencyrelief/",
-        "org": "Human Initiative",
+        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
+        "org": "GlobalGiving partner (not named in notes)",
         "kind": "globalgiving",
-        "note": "Emergency shelter, food, clean water, hygiene kits and recovery support for affected families.",
-        "title": "East Nusa Tenggara Earthquake Relief Fund - GlobalGiving"
+        "note": "Emergency aid for the NTT quake; also covers other Indonesian quakes.",
+        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
       },
       {
         "url": "https://human-initiative.jp/campaign/nttearthquake/",
         "org": "Human Initiative Japan",
         "kind": "local",
-        "note": "Relief in Sikka and Nagekeo, including a community kitchen.",
+        "note": "Care for families whose homes, schools and health facilities were damaged.",
         "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
-        "published": "2026-08-24T09:28:08.113Z"
+        "published": "2026-08-24T13:05:48.444Z"
       },
       {
-        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
-        "org": "GlobalGiving",
-        "kind": "globalgiving",
-        "note": "Multi-disaster Indonesia fund; only part goes to this NTT earthquake.",
-        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
+        "url": "https://digital.dompetdhuafa.org/donasi/artha-bantu-korban-gempa-ntt",
+        "org": "Dompet Dhuafa",
+        "kind": "local",
+        "note": "Food, health care and shelter for survivors of the Nagekeo quake.",
+        "title": "Bantu Pulihkan Harapan Warga Terdampak Gempa NTT"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-10T13:05:48.444Z",
+    "directSearched": "2026-11-10T13:05:48.444Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-10T13:05:48.444Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1968,7 +1979,7 @@
       }
     ],
     "membersHash": "ifrc|BD#dcb1d4bd",
-    "seen": "2026-11-10T04:32:08.459Z",
+    "seen": "2026-11-10T13:05:48.444Z",
     "donationSearched": "2026-11-08T22:35:18.778Z",
     "directSearched": "2026-11-08T22:35:18.778Z",
     "directSearchVersion": 2,
@@ -2115,7 +2126,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-10T04:32:08.459Z",
+    "seen": "2026-11-10T13:05:48.444Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2,
@@ -2171,177 +2182,48 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-10T04:32:08.459Z",
+    "seen": "2026-11-10T13:05:48.444Z",
     "donationSearched": "2026-11-08T22:35:18.778Z",
     "directSearched": "2026-11-08T22:35:18.778Z",
     "directSearchVersion": 2
   },
   "ifrc-flood-8073": {
-    "at": "2026-11-07T02:20:53.260Z",
+    "at": "2026-11-10T13:05:48.444Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A flash flood on 26 August 2026 struck Rasuwa district in Bagmati Province, Nepal, along the Bhote Koshi river near the Tibet border, and spread to nearby districts. Nepal Police reported 1,452 dead and 4,718 still missing as of 23 September 2026. Search for missing people was still under way on that date, and thousands remain displaced. Sources conflict on totals.",
+    "summary": "",
     "ongoing": true,
-    "places": [
-      {
-        "name": "Rasuwa",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Epicentre area; major damage, deaths and missing"
-      },
-      {
-        "name": "Timure",
-        "admin": "Rasuwa",
-        "country": "NP",
-        "kind": "town",
-        "impact": "Major damage to customs office and nearby structures"
-      },
-      {
-        "name": "Syabrubesi",
-        "admin": "Rasuwa",
-        "country": "NP",
-        "kind": "town",
-        "impact": "Hit by flood"
-      },
-      {
-        "name": "Rasuwagadhi",
-        "admin": "Rasuwa",
-        "country": "NP",
-        "kind": "town",
-        "impact": "Hit by flood"
-      },
-      {
-        "name": "Nuwakot",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Affected by flooding"
-      },
-      {
-        "name": "Dhading",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Affected by flooding"
-      },
-      {
-        "name": "Chitwan",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Affected by flooding"
-      },
-      {
-        "name": "Gorkha",
-        "admin": "Gandaki Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Affected by flooding"
-      },
-      {
-        "name": "Tanahun",
-        "admin": "Gandaki Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Affected by flooding"
-      },
-      {
-        "name": "Nawalparasi East",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Reported deaths"
-      },
-      {
-        "name": "Nawalparasi West",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Reported deaths"
-      },
-      {
-        "name": "Makwanpur",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Reported missing residents"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "1,452 dead",
-        "sourceName": "english.nepalnews.com",
-        "sourceUrl": "https://english.nepalnews.com/s/nation/bhote-koshi-flood-death-toll-rises-to-1452-over-4700-still-missing/"
-      },
-      {
-        "label": "Missing",
-        "value": "4,718 still missing",
-        "sourceName": "english.nepalnews.com",
-        "sourceUrl": "https://english.nepalnews.com/s/nation/bhote-koshi-flood-death-toll-rises-to-1452-over-4700-still-missing/"
-      },
-      {
-        "label": "Injured",
-        "value": "267 injured",
-        "sourceName": "english.nepalnews.com",
-        "sourceUrl": "https://english.nepalnews.com/s/nation/bhote-koshi-flood-update-death-toll-reaches-734-over-2400-missing/"
-      },
-      {
-        "label": "People affected",
-        "value": "around 93,000 people",
-        "sourceName": "en.mercopress.com",
-        "sourceUrl": "https://en.mercopress.com/2026/09/14/falklands-donate-40-000-to-red-cross-appeal-for-nepal-flood-victims"
-      },
-      {
-        "label": "Displaced",
-        "value": "1,242 displaced people in holding centres",
-        "sourceName": "english.nepalnews.com",
-        "sourceUrl": "https://english.nepalnews.com/s/nation/bhote-koshi-flood-death-toll-rises-to-1452-over-4700-still-missing/"
-      }
-    ],
+    "places": [],
+    "figures": [],
     "donation": [
       {
-        "url": "https://donate.redcrossredcrescent.org/ifrc/nepal-flash-floods/",
+        "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC Nepal Flash Floods 2026 appeal, CHF 25 million; NRCS is implementing partner"
+        "note": "Donation page for IFRC Emergency Appeal for northern Nepal flash floods, via Red Cross platform.",
+        "specific": true
+      },
+      {
+        "url": "https://donate.redcrossredcrescent.org/~share?cid=1180&lang=en_EN",
+        "org": "Nepal Red Cross Society",
+        "kind": "society",
+        "note": "Nepal Red Cross flood appeal naming the Rasuwa flash flood; funds may also go elsewhere.",
+        "specific": true
+      },
+      {
+        "url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC emergency page for 2026 Nepal flash floods, directing donations to the appeal.",
+        "specific": true
       }
     ],
-    "sources": [
-      {
-        "name": "ifrc.org",
-        "url": "https://www.ifrc.org/press-release/nepal-floods-one-month-red-cross-steps-support-heavy-rains-continue",
-        "title": "Nepal floods: One month on - Red Cross steps up support as heavy rains continue"
-      },
-      {
-        "name": "greenvalleynepaltreks.com",
-        "url": "https://www.greenvalleynepaltreks.com/travel-guides/bhotekoshi-flood-in-rasuwa",
-        "title": "Bhotekoshi Flood in Rasuwa, Nepal: Causes, Damage & Updates 2026"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods",
-        "title": "2026 Nepal–Tibet floods"
-      },
-      {
-        "name": "who.int",
-        "url": "https://www.who.int/nepal/emergencies/2026-rasuwa-flash-floods",
-        "title": "2026 Rasuwa flash floods"
-      },
-      {
-        "name": "english.nepalnews.com",
-        "url": "https://english.nepalnews.com/s/nation/bhote-koshi-flood-update-death-toll-reaches-734-over-2400-missing/",
-        "title": "Bhote Koshi flood update: Death toll reaches 734, over 2,400 missing"
-      },
-      {
-        "name": "en.mercopress.com",
-        "url": "https://en.mercopress.com/2026/09/14/falklands-donate-40-000-to-red-cross-appeal-for-nepal-flood-victims",
-        "title": "Falklands donate £40,000 to Red Cross appeal for Nepal flood victims — MercoPress"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-10T04:32:08.459Z",
-    "donationSearched": "2026-11-07T02:20:53.260Z",
-    "directSearched": "2026-11-08T09:28:08.113Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-10T13:05:48.444Z",
+    "directSearched": "2026-11-10T13:05:48.444Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-10T13:05:48.444Z"
   },
   "news-earthquake-earthquake-ve-a276235b63": {
     "at": "2026-10-31T06:15:54.662Z",
