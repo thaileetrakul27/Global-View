@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-11T09:54:04.545Z",
+  "updated": "2026-11-11T18:15:18.314Z",
   "fetched": {
-    "societies": "2026-11-11T09:54:04.545Z",
-    "uncr": "2026-11-11T09:54:04.545Z"
+    "societies": "2026-11-11T18:15:18.314Z",
+    "uncr": "2026-11-11T18:15:18.314Z"
   },
   "societies": {
     "AF": {
@@ -2662,48 +2662,6 @@
       "name": "Humanitarian Coalition",
       "title": "Afghanistan: Nuristan Floods"
     },
-    "local4:gdacs-drought-dr-1027450:animalsurvival.org/appeal/tsavo-water-project-jul-26": {
-      "ok": false,
-      "reason": "HTTP 403",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://animalsurvival.org/appeal/tsavo-water-project-jul-26/"
-      ]
-    },
-    "croixrouge-rdc.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://www.croixrouge-rdc.org/"
-      ]
-    },
-    "honduras.un.org/es": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://honduras.un.org/es"
-      ]
-    },
-    "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
-      ],
-      "blocked": true
-    },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
     "local4:ifrc-earthquake-8060:digital.dompetdhuafa.org/donasi/artha-bantu-korban-gempa-ntt": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Nagekeo\"",
@@ -2714,58 +2672,6 @@
       "place": "Nagekeo",
       "name": "dompet-dhuafa",
       "title": "Bantu Pulihkan Harapan Warga Terdampak Gempa NTT"
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ayodonor.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "donasi.pmi.or.id/donasi": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://donasi.pmi.or.id/donasi/"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-flood-8025:famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response": {
-      "ok": false,
-      "reason": "asks for Cash App or Venmo, as scams do",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://famidi.com/field-journal/nuristan-flood-emergency-famidi-activates-local-response/"
-      ]
-    },
-    "local4:ifrc-flood-8025:actalliance.org/appeals-rapid-response-funds/act-rrf-18-2026-afghanistan-floods-emergency": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://actalliance.org/appeals-rapid-response-funds/act-rrf-18-2026-afghanistan-floods-emergency/"
-      ]
-    },
-    "bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-10T13:05:48.444Z",
-      "chain": [
-        "https://bdrcs.org/bdrcs-one-response-plan-emergency-appeal-2026/"
-      ],
-      "blocked": true
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
@@ -2794,18 +2700,134 @@
     "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
       "ok": false,
       "reason": "HTTP 406",
+      "checked": "2026-11-11T09:54:04.545Z",
       "chain": [
         "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ],
-      "checked": "2026-11-11T09:54:04.545Z"
+      ]
     },
     "arcs.af": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-11T09:54:04.545Z",
       "chain": [
         "https://arcs.af/"
+      ]
+    },
+    "croixrouge-rdc.org": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.croixrouge-rdc.org/"
       ],
-      "checked": "2026-11-11T09:54:04.545Z"
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
+      ],
+      "blocked": true,
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "drk.de/en/home/international-aid/where-we-work/grc-international-relief-in-europe": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.drk.de/en/home/international-aid/where-we-work/grc-international-relief-in-europe/"
+      ],
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "ifrc.org/emergency/nepal-flash-floods-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "ayodonor.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "donasi.pmi.or.id/donasi": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://donasi.pmi.or.id/donasi/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "local4:ifrc-earthquake-8055:rescue.org/help-survivors-of-Colombia-earthquake": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Colombia\"",
+      "chain": [
+        "https://www.rescue.org/help-survivors-of-Colombia-earthquake"
+      ],
+      "place": "Colombia",
+      "name": "International Rescue Committee",
+      "title": "Colombia earthquake: Donate to help survivors | International Rescue Committee",
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "cruzrojacolombiana.org/a-un-mes-del-terremoto-la-cruz-roja-colombiana-mantiene-su-respuesta-humanitaria-en-las-comunidades-afectadas": {
+      "ok": true,
+      "reason": "donation word \"donac*\"",
+      "chain": [
+        "https://www.cruzrojacolombiana.org/a-un-mes-del-terremoto-la-cruz-roja-colombiana-mantiene-su-respuesta-humanitaria-en-las-comunidades-afectadas/"
+      ],
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto-SAJU"
+      ],
+      "checked": "2026-11-11T18:15:18.314Z"
+    },
+    "local4:ifrc-flood-8025:famidi.com/nuristan-flood-emergency": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Afghanistan\"",
+      "chain": [
+        "https://famidi.com/nuristan-flood-emergency/"
+      ],
+      "place": "Afghanistan",
+      "name": "Famidi",
+      "title": "Nuristan Flood Emergency | Famidi",
+      "checked": "2026-11-11T18:15:18.314Z"
     }
   }
 }
