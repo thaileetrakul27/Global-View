@@ -444,7 +444,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "eonet,gdacs|JP#180d4e6d",
-    "seen": "2026-11-11T02:19:34.678Z",
+    "seen": "2026-11-11T09:54:04.545Z",
     "donationSearched": "2026-11-09T21:11:15.143Z",
     "directSearched": "2026-11-09T21:11:15.143Z",
     "directSearchVersion": 2
@@ -529,123 +529,91 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-11T02:19:34.678Z",
+    "seen": "2026-11-11T09:54:04.545Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-11-08T01:50:21.071Z",
+    "at": "2026-11-11T09:54:04.545Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A drought affecting Central America began on 21 April 2026 and is still ongoing as of the latest reports, from October 2026. Honduras has 103 municipalities under red drought alert, and El Salvador declared a nationwide Red Alert on 25 August. Honduras faces hunger and cattle losses, and crop losses are reported across the Dry Corridor. The GDACS end date of 25 September 2026 is not supported by later reports.",
+    "summary": "Drought in Central America began on 21 April 2026 and is linked to El Niño. Honduras declared a drought emergency on 19 August, and El Salvador declared a nationwide Red Alert on 25 August. Crop losses have been reported in several areas. As of 7 November 2026, the drought was ongoing, and sources expect effects to continue into 2027.",
     "ongoing": true,
     "places": [
       {
         "name": "Nueva Concepción",
         "country": "HN",
-        "kind": "town",
-        "impact": "state of emergency declared; food aid distributed"
+        "kind": "district",
+        "impact": "Crop losses reported"
       },
       {
-        "name": "San Lorenzo",
-        "country": "HN",
-        "kind": "town",
-        "impact": "livestock losses"
-      },
-      {
-        "name": "Eastern Dry Corridor",
+        "name": "Paracentral zone",
         "country": "SV",
         "kind": "region",
-        "impact": "Red Cross drought action focus"
+        "impact": "Forecast 70–90% chance of below-normal rain"
       },
       {
-        "name": "Dry Corridor",
-        "country": "GT",
+        "name": "Eastern zone",
+        "country": "SV",
         "kind": "region",
-        "impact": "named as affected; Red Cross early action activated"
+        "impact": "Forecast 70–90% chance of below-normal rain"
       },
       {
-        "name": "Dry Corridor",
+        "name": "Western areas",
         "country": "NI",
         "kind": "region",
-        "impact": "crop losses"
+        "impact": "Drought hitting crops"
       }
     ],
     "figures": [
       {
-        "label": "People in need",
-        "value": "708,000 people",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
+        "label": "People at risk of food insecurity",
+        "value": "4.2 million people",
+        "sourceName": "nvinoticias.com",
+        "sourceUrl": "https://www.nvinoticias.com/mundo/sequia-extrema-golpea-centroamerica-miles-pierden-sus-cosechas/194162"
       },
       {
-        "label": "People targeted by joint appeal",
-        "value": "538,000 people",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
+        "label": "Households reporting maize damage",
+        "value": "more than 70,000 households",
+        "sourceName": "nvinoticias.com",
+        "sourceUrl": "https://www.nvinoticias.com/mundo/sequia-extrema-golpea-centroamerica-miles-pierden-sus-cosechas/194162"
       },
       {
-        "label": "Maize-growing households reporting…",
-        "value": "78.6 percent",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/guatemala/el-nino-2026-2027-climate-risk-humanitarian-outlook-latin-america-and-caribbean-september-2026"
+        "label": "Communities where drought was the main…",
+        "value": "315 of 354 communities",
+        "sourceName": "lac.oxfam.org",
+        "sourceUrl": "https://lac.oxfam.org/wp-content/uploads/2026/08/Informe-CA-Fenomeno-de-El-Nino.pdf"
+      },
+      {
+        "label": "People at risk of food shortages…",
+        "value": "16 million people",
+        "sourceName": "ticotimes.net",
+        "sourceUrl": "https://ticotimes.net/2026/09/16/central-america-drought-el-nino-food-shortages"
       }
     ],
     "donation": [
       {
-        "url": "https://go.ifrc.org/countries/81",
-        "org": "IFRC GO platform",
-        "kind": "society",
-        "note": "IFRC record for Honduras drought appeal MDRHN028, already fully funded.",
+        "url": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026",
+        "org": "OCHA",
+        "kind": "un",
+        "note": "Honduras drought flash appeal launched September 2026, covering the Dry Corridor, with appeal figures.",
         "specific": true
       },
       {
-        "url": "https://honduras.un.org/es",
-        "org": "UN Honduras",
-        "kind": "un",
-        "note": "UN Honduras country page with news of a US$60M drought Flash Appeal.",
-        "specific": false
-      },
-      {
         "url": "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena",
-        "org": "Honduran Red Cross (IFRC directory listing)",
+        "org": "Cruz Roja Hondureña",
         "kind": "society",
-        "note": "General national society donation link, not specific to this drought.",
+        "note": "National society's general donation entry via IFRC directory; a general fund, not this drought.",
         "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "riotimesonline.com",
-        "url": "https://www.riotimesonline.com/guatemala-power-emergency-drought-hydropower-2026/",
-        "title": "Guatemala Power Emergency: Drought Cuts Hydro Output"
-      },
-      {
-        "name": "riotimesonline.com",
-        "url": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/",
-        "title": "Honduras UN Appeal Over Dry Corridor Drought"
-      },
-      {
-        "name": "global-agriculture.com",
-        "url": "https://www.global-agriculture.com/global-agriculture/el-nino-drought-triggers-emergency-declarations-across-central-america/",
-        "title": "El Niño Drought Triggers Emergency Declarations Across Central America"
-      }
-    ],
+    "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-11T02:19:34.678Z",
-    "donationSearched": "2026-11-08T01:50:21.071Z",
-    "directSearched": "2026-11-08T01:50:21.071Z",
+    "donationSearched": "2026-11-11T09:54:04.545Z",
+    "directSearched": "2026-11-11T09:54:04.545Z",
     "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
-        "org": "Paso Pacífico",
-        "kind": "globalgiving",
-        "note": "Watering stations, ranger equipment and food support for rural communities and forest wildlife in Nicaragua and El Salvador.",
-        "title": "Emergency appeal - effects of El Nino - GlobalGiving"
-      }
-    ]
+    "seen": "2026-11-11T09:54:04.545Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-10T13:05:48.444Z",
@@ -671,7 +639,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-11T02:19:34.678Z",
+    "seen": "2026-11-11T09:54:04.545Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "direct": [
       {
@@ -681,160 +649,6 @@
         "note": "Waterhole for drought-stricken wildlife in Tsavo West, Kenya, appeal dated 8 July 2026.",
         "title": "We continue to help raise funds for drought-stricken animals in Kenya - Animal Survival International",
         "published": "2026-08-04T09:28:08.113Z"
-      }
-    ]
-  },
-  "gdacs-drought-dr-1027465": {
-    "at": "2026-10-27T08:20:06.786Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Drought in Uganda, Kenya, Tanzania, Rwanda and Burundi began in May 2026 and remains ongoing as of 27 October 2026. The semi-arid Karamoja sub-region of north-eastern Uganda is the worst hit, where an IPC analysis released 22 October projects worsening hunger through early 2027.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Karamoja",
-        "country": "UG",
-        "kind": "region",
-        "impact": "worst-hit area; severe food insecurity"
-      },
-      {
-        "name": "Nabilatuk",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "failed rains and dwindling water"
-      },
-      {
-        "name": "Nakapiripirit",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "failed rains and dwindling water"
-      },
-      {
-        "name": "Amudat",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "failed rains and dwindling water"
-      },
-      {
-        "name": "Kotido",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "failed rains and dwindling water"
-      },
-      {
-        "name": "Karenga",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "failed rains and dwindling water"
-      },
-      {
-        "name": "Kaabong",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "failed rains and dwindling water"
-      },
-      {
-        "name": "Napak",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "failed rains and dwindling water"
-      },
-      {
-        "name": "Abim",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "failed rains and dwindling water"
-      },
-      {
-        "name": "Moroto",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "town",
-        "impact": "WFP food distribution point"
-      },
-      {
-        "name": "Mandera",
-        "country": "KE",
-        "kind": "region",
-        "impact": "milk production fell by about a third"
-      }
-    ],
-    "figures": [
-      {
-        "label": "People facing severe food shortages",
-        "value": "about 673,000 people",
-        "sourceName": "monitor.co.ug",
-        "sourceUrl": "https://www.monitor.co.ug/uganda/news/national/food-insecurity-hits-uganda-as-government-un-appeal-for-urgent-action-5646392"
-      },
-      {
-        "label": "People targeted by UN and partners'…",
-        "value": "130,000 people",
-        "sourceName": "thecooperator.news",
-        "sourceUrl": "https://thecooperator.news/un-seeks-us-50-2mln-to-tackle-ugandas-worsening-hunger-crisis-el-nino-flood-threats/"
-      },
-      {
-        "label": "People reached with food assistance",
-        "value": "1.1 million people",
-        "sourceName": "independent.co.ug",
-        "sourceUrl": "https://www.independent.co.ug/pm-nabbanja-calls-for-broader-el-nino-response-as-uganda-un-launch-61-million-appeal/"
-      },
-      {
-        "label": "People receiving cash from Uganda Red…",
-        "value": "more than 5,000 people",
-        "sourceName": "ifrc.org",
-        "sourceUrl": "https://www.ifrc.org/taxonomy/term/43"
-      },
-      {
-        "label": "People in arid and semi-arid counties",
-        "value": "about 4.1 million people",
-        "sourceName": "undp.org",
-        "sourceUrl": "https://www.undp.org/africa/resilience-hub-africa/blog/drought-deluge-preparing-eastern-africa-el-ninos-double-hit"
-      }
-    ],
-    "donation": [
-      {
-        "url": "https://redcrossug.org/donate/",
-        "org": "Uganda Red Cross Society",
-        "kind": "society",
-        "note": "General Uganda Red Cross Humanitarian Response Fund donation page, not drought-specific.",
-        "specific": false
-      }
-    ],
-    "sources": [
-      {
-        "name": "monitor.co.ug",
-        "url": "https://www.monitor.co.ug/uganda/news/national/food-insecurity-hits-uganda-as-government-un-appeal-for-urgent-action-5646392",
-        "title": "Food insecurity hits Uganda as government, UN appeal for urgent action"
-      }
-    ],
-    "membersHash": "gdacs,ifrc|BI,CD,KE,RW,TZ,UG#7b0b258e",
-    "seen": "2026-10-28T09:03:01.732Z",
-    "donationSearched": "2026-10-27T08:20:06.786Z",
-    "directSearched": "2026-10-27T08:20:06.786Z",
-    "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://www.globalgiving.org/projects/feed-families-facing-hunger-in-ugandas-karamoja/",
-        "org": "The Girl Child Foundation Uganda",
-        "kind": "globalgiving",
-        "note": "Emergency maize flour, beans and nutrition support for drought-hit families in Karamoja.",
-        "title": "Feed Families Facing Hunger in Uganda's Karamoja - GlobalGiving"
-      },
-      {
-        "url": "https://www.kara-tunga.com/social-responsibility/emergency-food-relief-support-karamoja/",
-        "org": "Kara-Tunga",
-        "kind": "local",
-        "note": "Posho, beans, cooking oil, salt and sugar for households whose crops failed.",
-        "title": "Emergency Food Relief: Support Families in Karamoja - Kara-Tunga",
-        "published": "2026-08-27T08:20:06.786Z"
       }
     ]
   },
@@ -1046,7 +860,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-11T02:19:34.678Z",
+    "seen": "2026-11-11T09:54:04.545Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2
@@ -1644,7 +1458,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-11T02:19:34.678Z",
+    "seen": "2026-11-11T09:54:04.545Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2,
@@ -1785,7 +1599,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-11T02:19:34.678Z",
+    "seen": "2026-11-11T09:54:04.545Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2,
@@ -2126,7 +1940,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-11T02:19:34.678Z",
+    "seen": "2026-11-11T09:54:04.545Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2,
@@ -2266,10 +2080,10 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-11-11T09:54:04.545Z",
     "donationSearched": "2026-11-11T02:19:34.678Z",
     "directSearched": "2026-11-11T02:19:34.678Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-11T02:19:34.678Z"
+    "directSearchVersion": 2
   },
   "ifrc-flood-8073": {
     "at": "2026-11-10T13:05:48.444Z",
@@ -2304,7 +2118,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-11T02:19:34.678Z",
+    "seen": "2026-11-11T09:54:04.545Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2
