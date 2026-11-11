@@ -444,7 +444,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "eonet,gdacs|JP#180d4e6d",
-    "seen": "2026-11-10T21:13:50.780Z",
+    "seen": "2026-11-11T02:19:34.678Z",
     "donationSearched": "2026-11-09T21:11:15.143Z",
     "directSearched": "2026-11-09T21:11:15.143Z",
     "directSearchVersion": 2
@@ -529,7 +529,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-10T21:13:50.780Z",
+    "seen": "2026-11-11T02:19:34.678Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2
@@ -633,7 +633,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-10T21:13:50.780Z",
+    "seen": "2026-11-11T02:19:34.678Z",
     "donationSearched": "2026-11-08T01:50:21.071Z",
     "directSearched": "2026-11-08T01:50:21.071Z",
     "directSearchVersion": 2,
@@ -671,7 +671,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-10T21:13:50.780Z",
+    "seen": "2026-11-11T02:19:34.678Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "direct": [
       {
@@ -1046,7 +1046,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-10T21:13:50.780Z",
+    "seen": "2026-11-11T02:19:34.678Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2
@@ -1644,7 +1644,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-10T21:13:50.780Z",
+    "seen": "2026-11-11T02:19:34.678Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2,
@@ -1785,7 +1785,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-10T21:13:50.780Z",
+    "seen": "2026-11-11T02:19:34.678Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2,
@@ -2126,7 +2126,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-10T21:13:50.780Z",
+    "seen": "2026-11-11T02:19:34.678Z",
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2,
@@ -2164,28 +2164,112 @@
     ]
   },
   "ifrc-flood-8050": {
-    "at": "2026-11-08T22:35:18.778Z",
+    "at": "2026-11-11T02:19:34.678Z",
     "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "",
+    "searches": 4,
+    "summary": "Monsoon floods in Myanmar, alert issued 12 August 2026, followed heavy rain from late July that breached river embankments and submerged villages in several regions, including Ayeyarwady, Rakhine and Sagaing. As of the end of August 2026, about 600,000 people were reported affected by ongoing flooding. Floodwaters have receded in most central and southern townships. The sources found do not cover this flood after late August.",
     "ongoing": true,
-    "places": [],
-    "figures": [],
+    "places": [
+      {
+        "name": "Laymyethna",
+        "admin": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Villages and wards flooded; river embankments breached"
+      },
+      {
+        "name": "Buthidaung",
+        "admin": "Rakhine State",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Among highest flood impact in Rakhine"
+      },
+      {
+        "name": "Kyauktaw",
+        "admin": "Rakhine State",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Among highest flood impact in Rakhine"
+      },
+      {
+        "name": "Minbya",
+        "admin": "Rakhine State",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Among highest flood impact in Rakhine"
+      },
+      {
+        "name": "Mrauk-U",
+        "admin": "Rakhine State",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Among highest flood impact in Rakhine"
+      },
+      {
+        "name": "Ponnagyun",
+        "admin": "Rakhine State",
+        "country": "MM",
+        "kind": "district",
+        "impact": "Among highest flood impact in Rakhine"
+      },
+      {
+        "name": "Sagaing Region",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Heavy rain and river flooding forced relocations"
+      }
+    ],
+    "figures": [
+      {
+        "label": "People affected",
+        "value": "about 600,000 people",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
+      }
+    ],
     "donation": [
       {
         "url": "https://www.redcross.org.mm/donate/donate-now/",
         "org": "Myanmar Red Cross Society",
         "kind": "society",
-        "note": "Society's general Emergency Fund for disasters, not specific to this flood.",
+        "note": "General donation fund for Myanmar Red Cross humanitarian programs, not this flood.",
+        "specific": false
+      },
+      {
+        "url": "https://www.unicef.org/appeals/myanmar",
+        "org": "UNICEF",
+        "kind": "un",
+        "note": "UNICEF's annual Myanmar appeal covering conflict and natural hazards generally.",
         "specific": false
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "unicef.org",
+        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
+        "title": "Myanmar 2026 Monsoon Emergency Response"
+      },
+      {
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/countries/121",
+        "title": "IFRC GO - Myanmar"
+      },
+      {
+        "name": "wfp.org",
+        "url": "https://www.wfp.org/news/wfp-launches-emergency-flood-response-myanmar-monsoon-flooding-compounds-severe-humanitarian",
+        "title": "WFP launches emergency flood response in Myanmar as monsoon flooding compounds severe humanitarian crisis"
+      },
+      {
+        "name": "myanmar.un.org",
+        "url": "https://myanmar.un.org/en/319760-rakhine-state-western-myanmar-flood-situation-update-no1",
+        "title": "Rakhine State, Western Myanmar: Flood Situation Update No.1"
+      }
+    ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-10T21:13:50.780Z",
-    "donationSearched": "2026-11-08T22:35:18.778Z",
-    "directSearched": "2026-11-08T22:35:18.778Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-11T02:19:34.678Z",
+    "directSearched": "2026-11-11T02:19:34.678Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-11T02:19:34.678Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-11-10T13:05:48.444Z",
@@ -2220,7 +2304,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-10T21:13:50.780Z",
+    "seen": "2026-11-11T02:19:34.678Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2
