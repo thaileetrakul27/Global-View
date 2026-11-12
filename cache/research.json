@@ -426,28 +426,28 @@
     "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001347": {
-    "at": "2026-11-09T21:11:15.143Z",
+    "at": "2026-11-12T01:09:33.408Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Typhoon Cempaka (Typhoon No. 32) formed around 6 November 2026 and is ongoing as of 9 November 2026. As of 9 November it was moving northeast over the sea south of Japan and was expected to near the Ogasawara Islands on the evening of 10 November, then weaken. No direct effects on land or landfall in Japan have been reported.",
+    "searches": 3,
+    "summary": "Typhoon Cempaka (Typhoon No. 32) formed in the Pacific around 6 to 7 November 2026 and passed the Ogasawara Islands near Japan by 9 November. A JMA-based update of 11 November said it was moving east-northeast at 45 km/h and was expected to become extratropical far east of Japan by 12 November. The transition is not yet confirmed. The sources reviewed report no deaths, damage or evacuations in Japan.",
     "ongoing": true,
     "places": [
       {
         "name": "Ogasawara Islands",
         "admin": "Tokyo Metropolis",
         "country": "JP",
-        "kind": "region",
-        "impact": "expected to be affected; not yet reported affected"
+        "kind": "district",
+        "impact": "storm passed nearby; no damage reported"
       }
     ],
     "figures": [],
     "donation": [],
     "sources": [],
     "membersHash": "eonet,gdacs|JP#180d4e6d",
-    "seen": "2026-11-11T18:15:18.314Z",
-    "donationSearched": "2026-11-09T21:11:15.143Z",
-    "directSearched": "2026-11-09T21:11:15.143Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-12T01:09:33.408Z",
+    "directSearched": "2026-11-12T01:09:33.408Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-12T01:09:33.408Z"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-11T18:15:18.314Z",
@@ -468,10 +468,10 @@
     ],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "seen": "2026-11-12T01:09:33.408Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-11T18:15:18.314Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-11T09:54:04.545Z",
@@ -549,7 +549,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-11T18:15:18.314Z",
+    "seen": "2026-11-12T01:09:33.408Z",
     "donationSearched": "2026-11-11T09:54:04.545Z",
     "directSearched": "2026-11-11T09:54:04.545Z",
     "directSearchVersion": 2
@@ -578,8 +578,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-11T18:15:18.314Z",
+    "seen": "2026-11-12T01:09:33.408Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
+    "directSearched": "2026-11-11T18:15:18.314Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/feed-families-facing-hunger-in-ugandas-karamoja/",
@@ -588,28 +590,7 @@
         "note": "Emergency food, child and maternal nutrition, and climate-smart farming for drought-hit Karamoja families.",
         "title": "Feed Families Facing Hunger in Uganda's Karamoja - GlobalGiving"
       }
-    ],
-    "directSearched": "2026-11-11T18:15:18.314Z",
-    "directSearchVersion": 2
-  },
-  "gdacs-earthquake-eq-1570077": {
-    "at": "2026-10-28T23:02:19.626Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 6.3 earthquake struck offshore near Vanuatu on 8 October 2026, about 102 km northeast of Norsup in Malampa Province, according to USGS. Sources report that shaking was felt but no damage, deaths or injuries were reported. No later reports of continuing effects were found as of 28 October 2026. Coverage is thin.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Malampa Province",
-        "country": "VU",
-        "kind": "region",
-        "impact": "Offshore epicentre area; shaking felt, no damage reported"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs|VU#1dba2781"
+    ]
   },
   "gdacs-earthquake-eq-1570339": {
     "at": "2026-11-01T06:49:56.328Z",
@@ -662,67 +643,6 @@
       }
     ]
   },
-  "gdacs-earthquake-eq-1572122": {
-    "at": "2026-10-28T23:02:19.626Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 5.7 earthquake (USGS; PMD gave 5.9) struck near Khuzdar, Balochistan, Pakistan, on 17 October 2026 at about 10:07 local time. One man was killed by a falling rock in Naal, Khuzdar district, and several traditional mud houses were severely damaged. The latest report found is from 18 October 2026; status as of 28 October 2026 is not reported.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Anari",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "town",
-        "impact": "Fatal rockfall; one man killed"
-      },
-      {
-        "name": "Khuzdar",
-        "admin": "Balochistan",
-        "country": "PK",
-        "kind": "district",
-        "impact": "Several traditional mud houses severely damaged"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "1",
-        "sourceName": "dawn.com",
-        "sourceUrl": "https://www.dawn.com/news/2037912/one-dead-as-earthquake-jolts-khuzdar"
-      },
-      {
-        "label": "Houses damaged",
-        "value": "several",
-        "sourceName": "ianslive.in",
-        "sourceUrl": "https://ianslive.in/pakistan-one-person-killed-after-earthquake-jolts-balochistans-khuzdar--20261018132040"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "dawn.com",
-        "url": "https://www.dawn.com/news/2037912/one-dead-as-earthquake-jolts-khuzdar",
-        "title": "One dead as earthquake jolts Khuzdar - Newspaper - DAWN.COM"
-      },
-      {
-        "name": "ianslive.in",
-        "url": "https://ianslive.in/pakistan-one-person-killed-after-earthquake-jolts-balochistans-khuzdar--20261018132040",
-        "title": "Pakistan: One killed after earthquake jolts Balochistan's Khuzdar district"
-      },
-      {
-        "name": "pakistan.shafaqna.com",
-        "url": "https://pakistan.shafaqna.com/EN/339248",
-        "title": "5.9-Magnitude Earthquake Shakes Khuzdar, Surrounding Areas in Balochistan"
-      },
-      {
-        "name": "zeenews.india.com",
-        "url": "https://zeenews.india.com/world/balochistan-khuzdar-earthquake-magnitude-5-7-depth-10km-3076241.html",
-        "title": "5.7 Magnitude earthquake shakes Khuzdar in Pakistan's Balochistan: Shallow 10 km depth causes severe shaking"
-      }
-    ],
-    "membersHash": "usgs|PK#62eeb9a4"
-  },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-11-11T18:15:18.314Z",
     "model": "claude-haiku-5-5",
@@ -734,10 +654,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
+    "seen": "2026-11-12T01:09:33.408Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-11T18:15:18.314Z"
+    "directSearchVersion": 2
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-11-10T04:32:08.459Z",
@@ -1325,9 +1245,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "hubs": [
-      "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ],
+    "seen": "2026-11-12T01:09:33.408Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2,
@@ -1364,7 +1282,9 @@
         "published": "2026-08-14T18:15:18.314Z"
       }
     ],
-    "seen": "2026-11-11T18:15:18.314Z"
+    "hubs": [
+      "https://www.gofundme.com/c/act/colombia-earthquake-relief"
+    ]
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-10T13:05:48.444Z",
@@ -1499,7 +1419,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-11T18:15:18.314Z",
+    "seen": "2026-11-12T01:09:33.408Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2,
@@ -1824,6 +1744,10 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
+    "seen": "2026-11-12T01:09:33.408Z",
+    "donationSearched": "2026-11-11T18:15:18.314Z",
+    "directSearched": "2026-11-11T18:15:18.314Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://famidi.com/nuristan-flood-emergency/",
@@ -1848,11 +1772,7 @@
         "note": "Online donations for emergency aid to Nuristan flood victims.",
         "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
       }
-    ],
-    "donationSearched": "2026-11-11T18:15:18.314Z",
-    "directSearched": "2026-11-11T18:15:18.314Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-11T18:15:18.314Z"
+    ]
   },
   "ifrc-flood-8050": {
     "at": "2026-11-11T02:19:34.678Z",
@@ -1957,7 +1877,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-11T18:15:18.314Z",
+    "seen": "2026-11-12T01:09:33.408Z",
     "donationSearched": "2026-11-11T02:19:34.678Z",
     "directSearched": "2026-11-11T02:19:34.678Z",
     "directSearchVersion": 2
@@ -1995,7 +1915,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-11T18:15:18.314Z",
+    "seen": "2026-11-12T01:09:33.408Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2
