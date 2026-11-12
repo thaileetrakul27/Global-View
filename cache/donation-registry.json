@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-12T01:09:33.408Z",
+  "updated": "2026-11-12T10:16:31.542Z",
   "fetched": {
-    "societies": "2026-11-12T01:09:33.408Z",
-    "uncr": "2026-11-12T01:09:33.408Z"
+    "societies": "2026-11-12T10:16:31.542Z",
+    "uncr": "2026-11-12T10:16:31.542Z"
   },
   "societies": {
     "AF": {
@@ -2459,14 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "kksh.org.al": {
-      "ok": true,
-      "reason": "donation word \"dhuro*\"",
-      "checked": "2026-11-05T07:19:24.635Z",
-      "chain": [
-        "https://www.kksh.org.al/"
-      ]
-    },
     "jrc.or.jp/english/donate": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2669,22 +2661,6 @@
         "https://www.cruzrojacolombiana.org/"
       ]
     },
-    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
-      "ok": false,
-      "reason": "HTTP 406",
-      "checked": "2026-11-11T09:54:04.545Z",
-      "chain": [
-        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ]
-    },
-    "arcs.af": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-11T09:54:04.545Z",
-      "chain": [
-        "https://arcs.af/"
-      ]
-    },
     "croixrouge-rdc.org": {
       "ok": false,
       "reason": "no donation word on the page",
@@ -2804,27 +2780,67 @@
     "ayuda.cruzrojacolombiana.org": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-12T01:09:33.408Z",
       "chain": [
         "https://ayuda.cruzrojacolombiana.org/",
         "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
-      ],
-      "checked": "2026-11-12T01:09:33.408Z"
+      ]
     },
     "cruzrojacolombiana.org/cruz-roja-colombiana-despliega-capacidades-para-dar-respuesta-tras-las-afectaciones-por-sismo-en-colombia": {
       "ok": true,
       "reason": "donation word \"dona ya\"",
+      "checked": "2026-11-12T01:09:33.408Z",
       "chain": [
         "https://www.cruzrojacolombiana.org/cruz-roja-colombiana-despliega-capacidades-para-dar-respuesta-tras-las-afectaciones-por-sismo-en-colombia/"
-      ],
-      "checked": "2026-11-12T01:09:33.408Z"
+      ]
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-11-12T01:09:33.408Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ]
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
       ],
-      "checked": "2026-11-12T01:09:33.408Z"
+      "checked": "2026-11-12T10:16:31.542Z"
+    },
+    "unicef.org/appeals/south-sudan": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.unicef.org/appeals/south-sudan"
+      ],
+      "checked": "2026-11-12T10:16:31.542Z"
+    },
+    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
+      "ok": false,
+      "reason": "HTTP 406",
+      "chain": [
+        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
+      ],
+      "checked": "2026-11-12T10:16:31.542Z"
+    },
+    "kksh.org.al": {
+      "ok": true,
+      "reason": "donation word \"dhuro*\"",
+      "chain": [
+        "https://www.kksh.org.al/"
+      ],
+      "checked": "2026-11-12T10:16:31.542Z"
+    },
+    "arcs.af": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://arcs.af/"
+      ],
+      "checked": "2026-11-12T10:16:31.542Z"
     }
   }
 }

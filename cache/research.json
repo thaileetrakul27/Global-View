@@ -444,10 +444,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "eonet,gdacs|JP#180d4e6d",
+    "seen": "2026-11-12T10:16:31.542Z",
     "donationSearched": "2026-11-12T01:09:33.408Z",
     "directSearched": "2026-11-12T01:09:33.408Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-12T01:09:33.408Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-11T18:15:18.314Z",
@@ -468,10 +468,61 @@
     ],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-12T01:09:33.408Z",
+    "seen": "2026-11-12T10:16:31.542Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2
+  },
+  "gdacs-drought-dr-1023877": {
+    "at": "2026-11-12T10:16:31.542Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "As of 12 November 2026, the notes found no reports dated that month. OCHA reported on 28 August 2026 that Panama and El Salvador declared nationwide states of emergency on 25 August to speed drought response through 2027. The IFRC projects more severe drought conditions from October 2026 to March 2027. In Panama's Dry Arc provinces, rainfall deficits have disrupted planting, reduced yields and raised basic food prices.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Herrera",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Rainfall deficits; planting disrupted, yields reduced"
+      },
+      {
+        "name": "Los Santos",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Rainfall deficits; planting disrupted, yields reduced"
+      },
+      {
+        "name": "Coclé",
+        "country": "PA",
+        "kind": "region",
+        "impact": "Rainfall deficits; planting disrupted, yields reduced"
+      }
+    ],
+    "figures": [],
+    "donation": [],
+    "sources": [
+      {
+        "name": "unocha.org",
+        "url": "https://www.unocha.org/publications/report/panama/latin-america-caribbean-weekly-situation-update-28-august-2026",
+        "title": "Latin America & The Caribbean Weekly Situation Update as of 28 August 2026"
+      },
+      {
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/press-release/ifrc-anticipation-and-preparedness-can-save-lives-ahead-potentially-historic-el-nino",
+        "title": "IFRC: Anticipation and preparedness can save lives ahead of a potentially historic El Niño"
+      },
+      {
+        "name": "paho.org",
+        "url": "https://www.paho.org/sites/default/files/2026/06/phsa-elnino-regional-2026.pdf",
+        "title": "El Niño in the Americas, 2026-2027"
+      }
+    ],
+    "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "donationSearched": "2026-11-12T10:16:31.542Z",
+    "directSearched": "2026-11-12T10:16:31.542Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-12T10:16:31.542Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-11T09:54:04.545Z",
@@ -549,48 +600,139 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-12T01:09:33.408Z",
+    "seen": "2026-11-12T10:16:31.542Z",
     "donationSearched": "2026-11-11T09:54:04.545Z",
     "directSearched": "2026-11-11T09:54:04.545Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-11-10T13:05:48.444Z",
+    "at": "2026-11-12T10:16:31.542Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "The feed records a drought in East Africa and the Central Sahel that it dates from 21 May 2026. The latest source found is a US Climate Prediction Center outlook for 5–11 November 2026, which reports drought with degraded vegetation in parts of southern and southeastern South Sudan and northern Uganda. No source found confirms the start date. No people affected, deaths or displacement figures were reported for this event. The feed gives an agricultural drought area of…",
+    "searches": 4,
+    "summary": "A drought in East Africa and the Central Sahel started on 21 May 2026. A FEWS NET report from October 2026 says the Sahel rainy season is ending, with widespread rainfall deficits, most pronounced in Chad. South Sudan regions recorded rainfall below 60 percent of average. A JRC report from September 2026 describes degraded rangelands and lower crop and livestock output. The notes do not say whether drought continues in East Africa as of 12 November 2026.",
     "ongoing": true,
     "places": [
       {
-        "name": "Northern Uganda",
-        "country": "UG",
+        "name": "Lac",
+        "country": "TD",
         "kind": "region",
-        "impact": "Drought with degraded vegetation"
+        "impact": "Among worst rainfall deficits"
       },
       {
-        "name": "Southern and southeastern South Sudan",
+        "name": "Kanem",
+        "country": "TD",
+        "kind": "region",
+        "impact": "Among worst rainfall deficits"
+      },
+      {
+        "name": "Bahr El Gazal",
+        "country": "TD",
+        "kind": "region",
+        "impact": "Among worst rainfall deficits"
+      },
+      {
+        "name": "Batha",
+        "country": "TD",
+        "kind": "region",
+        "impact": "Among worst rainfall deficits"
+      },
+      {
+        "name": "Wadi Fira",
+        "country": "TD",
+        "kind": "region",
+        "impact": "Among worst rainfall deficits"
+      },
+      {
+        "name": "Ouaddaï",
+        "country": "TD",
+        "kind": "region",
+        "impact": "Among worst rainfall deficits"
+      },
+      {
+        "name": "Sila",
+        "country": "TD",
+        "kind": "region",
+        "impact": "Among worst rainfall deficits"
+      },
+      {
+        "name": "Hadjer Lamis",
+        "country": "TD",
+        "kind": "region",
+        "impact": "Among worst rainfall deficits"
+      },
+      {
+        "name": "Greater Upper Nile",
         "country": "SS",
         "kind": "region",
-        "impact": "Drought with degraded vegetation"
+        "impact": "Rainfall below 60 percent of average"
+      },
+      {
+        "name": "Central Equatoria",
+        "country": "SS",
+        "kind": "region",
+        "impact": "Rainfall below 60 percent of average"
       }
     ],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "gdacs,ifrc|CD,CF,CM,ER,ET,KE,NE,NG,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-12T01:09:33.408Z",
-    "donationSearched": "2026-11-10T13:05:48.444Z",
-    "directSearched": "2026-11-11T18:15:18.314Z",
-    "directSearchVersion": 2,
-    "direct": [
+    "figures": [
       {
-        "url": "https://www.globalgiving.org/projects/feed-families-facing-hunger-in-ugandas-karamoja/",
-        "org": "The Girl Child Foundation Uganda",
-        "kind": "globalgiving",
-        "note": "Emergency food, child and maternal nutrition, and climate-smart farming for drought-hit Karamoja families.",
-        "title": "Feed Families Facing Hunger in Uganda's Karamoja - GlobalGiving"
+        "label": "Sorghum output drop (Somalia)",
+        "value": "around 40%",
+        "sourceName": "joint-research-centre.ec.europa.eu",
+        "sourceUrl": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/east-africa-middle-east-and-central-asia-hit-repeated-droughts-2021-2026-05-20_en"
+      },
+      {
+        "label": "Rainfall deficit (Lac, Chad)",
+        "value": "-129 mm to -422 mm across the year",
+        "sourceName": "actioncontrelafaim.org",
+        "sourceUrl": "https://www.actioncontrelafaim.org/en/news/headlines/cameroon-and-chad-when-climate-change-puts-millions-of-lives-at-risk/"
       }
-    ]
+    ],
+    "donation": [
+      {
+        "url": "https://www.unicef.org/appeals/south-sudan",
+        "org": "UNICEF",
+        "kind": "un",
+        "note": "2026 Humanitarian Action for Children appeal for South Sudan; general, not drought-specific.",
+        "specific": false
+      }
+    ],
+    "sources": [
+      {
+        "name": "fews.net",
+        "url": "https://fews.net/west-africa/seasonal-monitor/october-2026",
+        "title": "Rainy season draws to an end with deficits observed in Chad, Niger, and Mali"
+      },
+      {
+        "name": "cpc.ncep.noaa.gov",
+        "url": "https://www.cpc.ncep.noaa.gov/products/international/globalweatherhazard/Current.pdf",
+        "title": "Global Weather Hazards Summary October 29, 2026"
+      },
+      {
+        "name": "actioncontrelafaim.org",
+        "url": "https://www.actioncontrelafaim.org/en/news/headlines/cameroon-and-chad-when-climate-change-puts-millions-of-lives-at-risk/",
+        "title": "Cameroon and Chad: when climate change puts millions of lives at risk - Action contre la Faim"
+      },
+      {
+        "name": "fews.net",
+        "url": "https://fews.net/global/special-report/october-2026",
+        "title": "2026-2027 El Niño food security impacts"
+      },
+      {
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/el-nino-drives-crop-failure-central-america-and-east-africa-and-threatens-next-season-southern-2026-09-03_en",
+        "title": "El Niño drives crop failure in Central America and East Africa and threatens the next season in Southern Africa, East Africa, Western South America, and…"
+      },
+      {
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/east-africa-middle-east-and-central-asia-hit-repeated-droughts-2021-2026-05-20_en",
+        "title": "East Africa, the Middle East and Central Asia hit by repeated droughts since 2021 - Joint Research Centre"
+      }
+    ],
+    "membersHash": "gdacs,ifrc|BI,CD,CF,ER,ET,KE,NE,NG,RW,SD,SS,TD,TZ,UG#d3aabe2f",
+    "donationSearched": "2026-11-12T10:16:31.542Z",
+    "directSearched": "2026-11-12T10:16:31.542Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-12T10:16:31.542Z"
   },
   "gdacs-earthquake-eq-1570339": {
     "at": "2026-11-01T06:49:56.328Z",
@@ -654,7 +796,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#36d8a31f",
-    "seen": "2026-11-12T01:09:33.408Z",
+    "seen": "2026-11-12T10:16:31.542Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2
@@ -1245,7 +1387,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-12T01:09:33.408Z",
+    "seen": "2026-11-12T10:16:31.542Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2,
@@ -1419,7 +1561,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-12T01:09:33.408Z",
+    "seen": "2026-11-12T10:16:31.542Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2,
@@ -1744,7 +1886,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-12T01:09:33.408Z",
+    "seen": "2026-11-12T10:16:31.542Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2,
@@ -1877,7 +2019,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-12T01:09:33.408Z",
+    "seen": "2026-11-12T10:16:31.542Z",
     "donationSearched": "2026-11-11T02:19:34.678Z",
     "directSearched": "2026-11-11T02:19:34.678Z",
     "directSearchVersion": 2
@@ -1915,7 +2057,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-12T01:09:33.408Z",
+    "seen": "2026-11-12T10:16:31.542Z",
     "donationSearched": "2026-11-10T13:05:48.444Z",
     "directSearched": "2026-11-10T13:05:48.444Z",
     "directSearchVersion": 2
