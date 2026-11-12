@@ -1,118 +1,4 @@
 {
-  "gdacs-cyclone-tc-1001338": {
-    "at": "2026-10-29T06:19:20.602Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Tropical Cyclone Champi, known as Super Typhoon Rosal in the Philippines, began on 14 October 2026 and affected Taiwan, Okinawa in Japan, Shanghai in China, and Guam and the Northern Mariana Islands. It became extratropical on 25 October and dissipated on 27 October, according to Wikipedia. Direct effects were still reported on 26 October, when heavy rain was forecast for parts of Japan. No source gives the status as of 29 October.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Ishigaki Island",
-        "admin": "Okinawa Prefecture",
-        "country": "JP",
-        "kind": "district",
-        "impact": "utility poles across road, street trees snapped"
-      },
-      {
-        "name": "Miyakojima",
-        "admin": "Okinawa Prefecture",
-        "country": "JP",
-        "kind": "district",
-        "impact": "injuries reported"
-      },
-      {
-        "name": "Yonaguni",
-        "admin": "Okinawa Prefecture",
-        "country": "JP",
-        "kind": "district",
-        "impact": "injuries reported"
-      },
-      {
-        "name": "Haterumajima",
-        "admin": "Okinawa Prefecture",
-        "country": "JP",
-        "kind": "district",
-        "impact": "power outage, water supply disrupted"
-      },
-      {
-        "name": "Shanghai",
-        "country": "CN",
-        "kind": "city",
-        "impact": "tens of thousands evacuated"
-      },
-      {
-        "name": "Batanes",
-        "country": "PH",
-        "kind": "region",
-        "impact": "Wind Signal No. 2 raised"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "1",
-        "sourceName": "taipeitimes.com",
-        "sourceUrl": "https://www.taipeitimes.com/News/front/archives/2026/10/25/2003866564"
-      },
-      {
-        "label": "Injured",
-        "value": "616",
-        "sourceName": "taipeitimes.com",
-        "sourceUrl": "https://www.taipeitimes.com/News/front/archives/2026/10/25/2003866564"
-      },
-      {
-        "label": "Households without electricity",
-        "value": "about 56,000 households",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350"
-      },
-      {
-        "label": "Flights cancelled",
-        "value": "259",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350"
-      },
-      {
-        "label": "Households without power in Okinawa",
-        "value": "13,000 households",
-        "sourceName": "news.sbs.co.kr",
-        "sourceUrl": "https://news.sbs.co.kr/english/article.do?news_id=N1008814278"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/Typhoon_Champi_(2026)",
-        "title": "Typhoon Champi (2026)"
-      },
-      {
-        "name": "news.sbs.co.kr",
-        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008814278",
-        "title": "Typhoon Champi Leaves Trail of Damage in Okinawa and Taiwan, Heavy Rain Forecast Across Japan"
-      },
-      {
-        "name": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350",
-        "title": "Typhoon Champi hits Taiwan, killing one and injuring hundreds"
-      },
-      {
-        "name": "dawn.com",
-        "url": "https://www.dawn.com/news/2039482/tropical-storm-champi-nears-china-after-battering-taiwan-japan",
-        "title": "Tropical Storm Champi nears China after battering Taiwan, Japan - World - DAWN.COM"
-      },
-      {
-        "name": "redcross.org",
-        "url": "https://www.redcross.org/about-us/news-and-events/news/2026/tropical-cyclone-heads-to-the-islands.html",
-        "title": "Red Cross Responds as Super Typhoon Champi Moves Away from Guam, Northern Mariana Islands"
-      }
-    ],
-    "membersHash": "gdacs|CN,JP,KR,PH#472ce3cf",
-    "seen": "2026-10-29T13:38:14.413Z",
-    "donationSearched": "2026-10-29T06:19:20.602Z",
-    "directSearched": "2026-10-29T06:19:20.602Z",
-    "directSearchVersion": 2
-  },
   "gdacs-cyclone-tc-1001341": {
     "at": "2026-10-30T00:20:11.381Z",
     "model": "claude-haiku-5-5",
@@ -444,7 +330,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "eonet,gdacs|JP#180d4e6d",
-    "seen": "2026-11-12T10:16:31.542Z",
+    "seen": "2026-11-12T18:44:41.460Z",
     "donationSearched": "2026-11-12T01:09:33.408Z",
     "directSearched": "2026-11-12T01:09:33.408Z",
     "directSearchVersion": 2
@@ -468,7 +354,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-12T10:16:31.542Z",
+    "seen": "2026-11-12T18:44:41.460Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2
@@ -519,10 +405,10 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "seen": "2026-11-12T18:44:41.460Z",
     "donationSearched": "2026-11-12T10:16:31.542Z",
     "directSearched": "2026-11-12T10:16:31.542Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-12T10:16:31.542Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-11T09:54:04.545Z",
@@ -600,7 +486,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-12T10:16:31.542Z",
+    "seen": "2026-11-12T18:44:41.460Z",
     "donationSearched": "2026-11-11T09:54:04.545Z",
     "directSearched": "2026-11-11T09:54:04.545Z",
     "directSearchVersion": 2
@@ -729,10 +615,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,ER,ET,KE,NE,NG,RW,SD,SS,TD,TZ,UG#d3aabe2f",
+    "seen": "2026-11-12T18:44:41.460Z",
     "donationSearched": "2026-11-12T10:16:31.542Z",
     "directSearched": "2026-11-12T10:16:31.542Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-12T10:16:31.542Z"
+    "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1570339": {
     "at": "2026-11-01T06:49:56.328Z",
@@ -1387,7 +1273,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-12T10:16:31.542Z",
+    "seen": "2026-11-12T18:44:41.460Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2,
@@ -1429,61 +1315,73 @@
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-10T13:05:48.444Z",
+    "at": "2026-11-12T18:44:41.460Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck off the coast of East Nusa Tenggara, Indonesia, on 15 August 2026. BNPB reported 47 deaths and 101 injured on 16 August, and more than 5,000 people were displaced or evacuated. Aftershocks began to slow and the early tsunami warning was lifted. Emergency response was still active in early October, when PMI was distributing clean water in Nagekeo. No later reports were found.",
+    "summary": "A magnitude 7.7 earthquake struck East Nusa Tenggara, Indonesia, on 15 August 2026 (local time), causing deaths, injuries and building damage. BNPB reported 47 deaths and 101 injuries as of 16 August, with more than 5,000 people still displaced. Aftershocks have decreased, and monitoring of secondary hazards continues.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Sikka",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Two deaths at port; building collapse"
-      },
-      {
-        "name": "Maumere",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Structural damage, building collapse, port affected"
-      },
       {
         "name": "Nagekeo",
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Epicentre area; about 2,000 evacuated; homes damaged"
+        "impact": "Minor structural damage; about 2,000 residents evacuated"
       },
       {
-        "name": "Ngada",
+        "name": "Sikka",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Strong shaking; buildings damaged; emergency status"
+        "impact": "Two deaths; 3,356 displaced"
+      },
+      {
+        "name": "Maumere",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Port buildings and docks damaged; two deaths"
       },
       {
         "name": "Manggarai",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Many homes collapsed in remote areas; bridges damaged"
+        "impact": "Emergency response declared; 2,078 displaced"
       },
       {
-        "name": "Borong",
-        "admin": "East Manggarai",
+        "name": "Ngada",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
-        "kind": "town",
-        "impact": "Buildings damaged"
+        "kind": "district",
+        "impact": "Emergency response declared"
       },
       {
         "name": "Ende",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "town",
-        "impact": "Hotels and public facilities cracked, partly damaged"
+        "impact": "Commercial buildings and hotels cracked, partly damaged"
+      },
+      {
+        "name": "Ruteng",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Buildings and public facilities cracked, partly damaged"
       },
       {
         "name": "Labuan Bajo",
         "country": "ID",
         "kind": "town",
-        "impact": "Hotels and public facilities cracked, partly damaged"
+        "impact": "Buildings and public facilities cracked, partly damaged"
+      },
+      {
+        "name": "Bima",
+        "admin": "West Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Minor damage; wall cracks at Lambitu Sub-district Office"
       }
     ],
     "figures": [
@@ -1500,40 +1398,34 @@
         "sourceUrl": "https://go.ifrc.org/field-reports/18533"
       },
       {
-        "label": "Displaced/evacuated",
-        "value": "more than 5,000",
+        "label": "Displaced",
+        "value": "more than 5,000 people",
         "sourceName": "go.ifrc.org",
         "sourceUrl": "https://go.ifrc.org/field-reports/18533"
       },
       {
-        "label": "Houses damaged",
+        "label": "Damaged houses",
         "value": "373",
         "sourceName": "human-initiative.org",
-        "sourceUrl": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en"
+        "sourceUrl": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en"
+      },
+      {
+        "label": "Education facilities severely damaged",
+        "value": "36",
+        "sourceName": "human-initiative.org",
+        "sourceUrl": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en"
       }
     ],
     "donation": [
       {
         "url": "https://ayodonor.pmi.or.id/",
-        "org": "PMI Kota Bekasi (Indonesian Red Cross)",
+        "org": "Palang Merah Indonesia (PMI) Kota Bekasi",
         "kind": "society",
-        "note": "Ayodonor PMI listing; post dated 27 August 2026 opens fundraising for East Nusa Tenggara disaster victims.",
+        "note": "Blood-donor platform page carrying a PMI Bekasi appeal for NTT earthquake victims, dated 18 Aug 2026.",
         "specific": true
-      },
-      {
-        "url": "https://donasi.pmi.or.id/donasi/",
-        "org": "Indonesian Red Cross (PMI)",
-        "kind": "society",
-        "note": "National PMI general donation page, not specific to this earthquake.",
-        "specific": false
       }
     ],
     "sources": [
-      {
-        "name": "lintas86.com",
-        "url": "https://www.lintas86.com/2026/10/59rit-airbersih-pminagekeo.html",
-        "title": "59 Rit dalam Enam Hari, PMI Nagekeo Distribusikan 325 Ribu Liter Air Bersih Pascagempa - LINTAS86.com"
-      },
       {
         "name": "human-initiative.org",
         "url": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
@@ -1545,64 +1437,47 @@
         "title": "FLASH UPDATE: No. 1"
       },
       {
-        "name": "cnbc.com",
-        "url": "https://www.cnbc.com/2026/08/15/twenty-dead-after-indonesias-magnitude-7point7-earthquake-rescuers-say.html",
-        "title": "Death toll rises after Indonesia's magnitude 7.7 earthquake: officials"
-      },
-      {
-        "name": "wikiwand.com",
-        "url": "https://www.wikiwand.com/en/2026_East_Nusa_Tenggara_earthquake",
-        "title": "2026 East Nusa Tenggara earthquake - Wikiwand"
+        "name": "regional.kontan.co.id",
+        "url": "https://regional.kontan.co.id/news/gempa-m-77-guncang-nagekeo-ntt-bnpb-kerahkan-tim-dan-helikopter",
+        "title": "Gempa M 7,7 Guncang Nagekeo NTT, BNPB Kerahkan Tim dan Helikopter"
       },
       {
         "name": "human-initiative.org",
         "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
         "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
+      },
+      {
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/field-reports/18533",
+        "title": "IFRC GO - Field Report Details"
+      },
+      {
+        "name": "en.antaranews.com",
+        "url": "https://en.antaranews.com/news/427204/77-magnitude-quake-in-nagekeo-caused-damage-to-buildings-in-bima",
+        "title": "7.7-magnitude quake in Nagekeo caused damage to buildings in Bima - ANTARA News"
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-12T10:16:31.542Z",
-    "donationSearched": "2026-11-10T13:05:48.444Z",
-    "directSearched": "2026-11-10T13:05:48.444Z",
-    "directSearchVersion": 2,
     "direct": [
       {
-        "url": "https://www.globalgiving.org/projects/nttemergencyrelief/",
-        "org": "Human Initiative (GlobalGiving partner)",
+        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
+        "org": "BAZNAS Republic Indonesia",
         "kind": "globalgiving",
-        "note": "Shelter, food, water and hygiene kits after the East Nusa Tenggara quake.",
-        "title": "East Nusa Tenggara Earthquake Relief Fund - GlobalGiving"
+        "note": "Emergency aid for survivors of the magnitude 7.7 earthquake on Flores Island.",
+        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
       },
       {
         "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
         "org": "IDEP Selaras Alam",
         "kind": "globalgiving",
-        "note": "Food, water, shelter and medicine via partners in Manggarai and East Manggarai.",
+        "note": "Food, water, shelter and medicines for earthquake-affected families.",
         "title": "Donate to Help Families Affected by Flores Earthquake - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
-        "org": "GlobalGiving partner (not named in notes)",
-        "kind": "globalgiving",
-        "note": "Emergency aid for the NTT quake; also covers other Indonesian quakes.",
-        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
-      },
-      {
-        "url": "https://human-initiative.jp/campaign/nttearthquake/",
-        "org": "Human Initiative Japan",
-        "kind": "local",
-        "note": "Care for families whose homes, schools and health facilities were damaged.",
-        "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
-        "published": "2026-08-24T13:05:48.444Z"
-      },
-      {
-        "url": "https://digital.dompetdhuafa.org/donasi/artha-bantu-korban-gempa-ntt",
-        "org": "Dompet Dhuafa",
-        "kind": "local",
-        "note": "Food, health care and shelter for survivors of the Nagekeo quake.",
-        "title": "Bantu Pulihkan Harapan Warga Terdampak Gempa NTT"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-12T18:44:41.460Z",
+    "directSearched": "2026-11-12T18:44:41.460Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-12T18:44:41.460Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1886,7 +1761,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-12T10:16:31.542Z",
+    "seen": "2026-11-12T18:44:41.460Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2,
@@ -2019,48 +1894,180 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-12T10:16:31.542Z",
+    "seen": "2026-11-12T18:44:41.460Z",
     "donationSearched": "2026-11-11T02:19:34.678Z",
     "directSearched": "2026-11-11T02:19:34.678Z",
     "directSearchVersion": 2
   },
   "ifrc-flood-8073": {
-    "at": "2026-11-10T13:05:48.444Z",
+    "at": "2026-11-12T18:44:41.460Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "",
+    "searches": 2,
+    "summary": "A flash flood struck Rasuwa district in Nepal's Bagmati Province on 26 August 2026, damaging settlements, markets, roads and hydropower facilities and affecting nearby districts. Authorities reported deaths, missing people and displaced people. The latest source found, an IFRC update dated 12 October 2026, says humanitarian needs continue and some road access remains limited.",
     "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [
+    "places": [
       {
-        "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "Donation page for IFRC Emergency Appeal for northern Nepal flash floods, via Red Cross platform.",
-        "specific": true
+        "name": "Rasuwa",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Flash flood; severe damage to settlements, markets, roads"
       },
+      {
+        "name": "Timure",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "town",
+        "impact": "Market and customs office severely damaged"
+      },
+      {
+        "name": "Syabrubesi",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "town",
+        "impact": "Severe damage to settlement"
+      },
+      {
+        "name": "Rasuwagadhi",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "town",
+        "impact": "Severe damage reported"
+      },
+      {
+        "name": "Nuwakot",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Badly affected"
+      },
+      {
+        "name": "Dhading",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Badly affected; people displaced"
+      },
+      {
+        "name": "Chitwan",
+        "admin": "Bagmati Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Affected"
+      },
+      {
+        "name": "Gorkha",
+        "admin": "Gandaki Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Affected"
+      },
+      {
+        "name": "Tanahun",
+        "admin": "Gandaki Province",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Affected"
+      },
+      {
+        "name": "Nawalparasi East",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Bodies recovered"
+      },
+      {
+        "name": "Nawalparasi West",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Bodies recovered"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "616–626",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+      },
+      {
+        "label": "Missing",
+        "value": "384 travellers",
+        "sourceName": "travelhimalayanepal.com",
+        "sourceUrl": "https://travelhimalayanepal.com/news/nepal-bhote-koshi-flash-flood-rasuwa-2026"
+      },
+      {
+        "label": "Displaced",
+        "value": "3,761 people",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+      },
+      {
+        "label": "Households needing immediate relief",
+        "value": "around 10,000 households",
+        "sourceName": "who.int",
+        "sourceUrl": "https://www.who.int/nepal/emergencies/2026-rasuwa-flash-floods"
+      }
+    ],
+    "donation": [
       {
         "url": "https://donate.redcrossredcrescent.org/~share?cid=1180&lang=en_EN",
         "org": "Nepal Red Cross Society",
         "kind": "society",
-        "note": "Nepal Red Cross flood appeal naming the Rasuwa flash flood; funds may also go elsewhere.",
+        "note": "Nepal Flood Emergency donation page naming the Rasuwa flash flood.",
+        "specific": true
+      },
+      {
+        "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "Nepal Flash Floods 2026 appeal page, funds passed to Nepal Red Cross.",
         "specific": true
       },
       {
         "url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC emergency page for 2026 Nepal flash floods, directing donations to the appeal.",
+        "note": "IFRC emergency page for 2026 flash floods, listing MDRNP022 appeal.",
         "specific": true
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/press-release/nepal-floods-ifrc-delivers-safe-water-and-health-care-affected-communities",
+        "title": "Nepal floods: IFRC delivers safe water and health care to affected communities"
+      },
+      {
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding",
+        "title": "Nepal flash floods 2026: How the Red Cross is responding"
+      },
+      {
+        "name": "nrcs.org",
+        "url": "https://nrcs.org/resources/news-and-events/rasuwa-flood-situation-update-26-august-2026/",
+        "title": "Rasuwa Flood Situation Update (26 August 2026)"
+      },
+      {
+        "name": "who.int",
+        "url": "https://www.who.int/nepal/emergencies/2026-rasuwa-flash-floods",
+        "title": "2026 Rasuwa flash floods"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods",
+        "title": "Timeline of the 2026 Nepal–Tibet floods"
+      },
+      {
+        "name": "hopnepal.com",
+        "url": "https://www.hopnepal.com/blog/rasuwa-bhote-koshi-flood-2026-travel-update",
+        "title": "Rasuwa Bhote Koshi Flood 2026: Tourism & Travel Update"
+      }
+    ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-12T10:16:31.542Z",
-    "donationSearched": "2026-11-10T13:05:48.444Z",
-    "directSearched": "2026-11-10T13:05:48.444Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-12T18:44:41.460Z",
+    "directSearched": "2026-11-12T18:44:41.460Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-12T18:44:41.460Z"
   },
   "news-earthquake-earthquake-ve-a276235b63": {
     "at": "2026-10-31T06:15:54.662Z",

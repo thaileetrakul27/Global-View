@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-12T10:16:31.542Z",
+  "updated": "2026-11-12T18:44:41.460Z",
   "fetched": {
-    "societies": "2026-11-12T10:16:31.542Z",
-    "uncr": "2026-11-12T10:16:31.542Z"
+    "societies": "2026-11-12T18:44:41.460Z",
+    "uncr": "2026-11-12T18:44:41.460Z"
   },
   "societies": {
     "AF": {
@@ -2459,14 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "jrc.or.jp/english/donate": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-05T16:54:03.811Z",
-      "chain": [
-        "https://www.jrc.or.jp/english/donate/"
-      ]
-    },
     "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Colombia\"",
@@ -2661,73 +2653,12 @@
         "https://www.cruzrojacolombiana.org/"
       ]
     },
-    "croixrouge-rdc.org": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-11T18:15:18.314Z",
-      "chain": [
-        "https://www.croixrouge-rdc.org/"
-      ]
-    },
-    "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-11T18:15:18.314Z",
-      "chain": [
-        "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
-      ],
-      "blocked": true
-    },
     "drk.de/en/home/international-aid/where-we-work/grc-international-relief-in-europe": {
       "ok": true,
       "reason": "donation word \"donat*\"",
       "checked": "2026-11-11T18:15:18.314Z",
       "chain": [
         "https://www.drk.de/en/home/international-aid/where-we-work/grc-international-relief-in-europe/"
-      ]
-    },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-11T18:15:18.314Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-11T18:15:18.314Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ayodonor.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-11T18:15:18.314Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "donasi.pmi.or.id/donasi": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-11T18:15:18.314Z",
-      "chain": [
-        "https://donasi.pmi.or.id/donasi/"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-11-11T18:15:18.314Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
       ]
     },
     "local4:ifrc-earthquake-8055:rescue.org/help-survivors-of-Colombia-earthquake": {
@@ -2740,15 +2671,6 @@
       "place": "Colombia",
       "name": "International Rescue Committee",
       "title": "Colombia earthquake: Donate to help survivors | International Rescue Committee"
-    },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-11T18:15:18.314Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
     },
     "cruzrojacolombiana.org/a-un-mes-del-terremoto-la-cruz-roja-colombiana-mantiene-su-respuesta-humanitaria-en-las-comunidades-afectadas": {
       "ok": true,
@@ -2805,42 +2727,95 @@
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-12T10:16:31.542Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-11-12T10:16:31.542Z"
+      ]
     },
     "unicef.org/appeals/south-sudan": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-12T10:16:31.542Z",
       "chain": [
         "https://www.unicef.org/appeals/south-sudan"
-      ],
-      "checked": "2026-11-12T10:16:31.542Z"
+      ]
     },
     "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
       "ok": false,
       "reason": "HTTP 406",
+      "checked": "2026-11-12T10:16:31.542Z",
       "chain": [
         "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ],
-      "checked": "2026-11-12T10:16:31.542Z"
+      ]
     },
     "kksh.org.al": {
       "ok": true,
       "reason": "donation word \"dhuro*\"",
+      "checked": "2026-11-12T10:16:31.542Z",
       "chain": [
         "https://www.kksh.org.al/"
-      ],
-      "checked": "2026-11-12T10:16:31.542Z"
+      ]
     },
     "arcs.af": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-12T10:16:31.542Z",
       "chain": [
         "https://arcs.af/"
+      ]
+    },
+    "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
       ],
-      "checked": "2026-11-12T10:16:31.542Z"
+      "blocked": true,
+      "checked": "2026-11-12T18:44:41.460Z"
+    },
+    "ifrc.org/emergency/nepal-flash-floods-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-12T18:44:41.460Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-12T18:44:41.460Z"
+    },
+    "ayodonor.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-12T18:44:41.460Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-11-12T18:44:41.460Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-12T18:44:41.460Z"
     }
   }
 }
