@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-13T01:32:34.423Z",
+  "updated": "2026-11-13T10:00:40.667Z",
   "fetched": {
-    "societies": "2026-11-13T01:32:34.423Z",
-    "uncr": "2026-11-13T01:32:34.423Z"
+    "societies": "2026-11-13T10:00:40.667Z",
+    "uncr": "2026-11-13T10:00:40.667Z"
   },
   "societies": {
     "AF": {
@@ -2459,25 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Colombia\"",
-      "checked": "2026-11-06T07:18:29.895Z",
-      "chain": [
-        "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/"
-      ],
-      "place": "Colombia",
-      "name": "Oxfam GB",
-      "title": "Oxfam GB | Colombia Earthquake Appeal"
-    },
-    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-06T07:18:29.895Z",
-      "chain": [
-        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1"
-      ]
-    },
     "donate.redcrossredcrescent.org/ifrc/nepal-flash-floods": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2812,10 +2793,37 @@
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-11-13T01:32:34.423Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ]
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
       ],
-      "checked": "2026-11-13T01:32:34.423Z"
+      "checked": "2026-11-13T10:00:40.667Z"
+    },
+    "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Colombia\"",
+      "chain": [
+        "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/"
+      ],
+      "place": "Colombia",
+      "name": "Oxfam GB",
+      "title": "Oxfam GB | Colombia Earthquake Appeal",
+      "checked": "2026-11-13T10:00:40.667Z"
+    },
+    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1"
+      ],
+      "checked": "2026-11-13T10:00:40.667Z"
     }
   }
 }

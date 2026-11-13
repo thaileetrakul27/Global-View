@@ -330,7 +330,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "eonet,gdacs|JP#180d4e6d",
-    "seen": "2026-11-13T01:32:34.423Z",
+    "seen": "2026-11-13T10:00:40.667Z",
     "donationSearched": "2026-11-12T01:09:33.408Z",
     "directSearched": "2026-11-12T01:09:33.408Z",
     "directSearchVersion": 2
@@ -354,7 +354,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-13T01:32:34.423Z",
+    "seen": "2026-11-13T10:00:40.667Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2
@@ -405,91 +405,164 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-13T01:32:34.423Z",
+    "seen": "2026-11-13T10:00:40.667Z",
     "donationSearched": "2026-11-12T10:16:31.542Z",
     "directSearched": "2026-11-12T10:16:31.542Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-11-11T09:54:04.545Z",
+    "at": "2026-11-13T10:00:40.667Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Drought in Central America began on 21 April 2026 and is linked to El Niño. Honduras declared a drought emergency on 19 August, and El Salvador declared a nationwide Red Alert on 25 August. Crop losses have been reported in several areas. As of 7 November 2026, the drought was ongoing, and sources expect effects to continue into 2027.",
+    "searches": 4,
+    "summary": "Drought in Central America began on 21 April 2026 and is ongoing. A 12 November 2026 water watch report shows observed deficits continuing through Guatemala, El Salvador, Honduras and western Nicaragua. Honduran authorities report 103 municipalities on red alert and 80 percent of national territory under some alert level. The IFRC has warned the El Niño event could last until February 2027.",
     "ongoing": true,
     "places": [
       {
-        "name": "Nueva Concepción",
+        "name": "Choluteca",
         "country": "HN",
-        "kind": "district",
-        "impact": "Crop losses reported"
+        "kind": "region",
+        "impact": "named as very high priority"
       },
       {
-        "name": "Paracentral zone",
+        "name": "El Paraíso",
+        "country": "HN",
+        "kind": "region",
+        "impact": "named as very high priority"
+      },
+      {
+        "name": "Chiquimula",
+        "country": "GT",
+        "kind": "region",
+        "impact": "named as very high priority"
+      },
+      {
+        "name": "Jalapa",
+        "country": "GT",
+        "kind": "region",
+        "impact": "named as very high priority"
+      },
+      {
+        "name": "Morazán",
         "country": "SV",
         "kind": "region",
-        "impact": "Forecast 70–90% chance of below-normal rain"
+        "impact": "named as very high priority"
       },
       {
-        "name": "Eastern zone",
+        "name": "San Miguel",
         "country": "SV",
         "kind": "region",
-        "impact": "Forecast 70–90% chance of below-normal rain"
+        "impact": "named as very high priority"
       },
       {
-        "name": "Western areas",
+        "name": "Chiapas",
+        "country": "MX",
+        "kind": "region",
+        "impact": "exceptional deficits continuing into Guatemala"
+      },
+      {
+        "name": "Western Nicaragua",
         "country": "NI",
         "kind": "region",
-        "impact": "Drought hitting crops"
+        "impact": "observed deficits continuing"
+      },
+      {
+        "name": "Western Cuba",
+        "country": "CU",
+        "kind": "region",
+        "impact": "exceptional water deficits"
       }
     ],
     "figures": [
       {
-        "label": "People at risk of food insecurity",
-        "value": "4.2 million people",
-        "sourceName": "nvinoticias.com",
-        "sourceUrl": "https://www.nvinoticias.com/mundo/sequia-extrema-golpea-centroamerica-miles-pierden-sus-cosechas/194162"
+        "label": "People affected in Honduras",
+        "value": "about 1 million people",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/america/agencias/2026/10/22/la-cruz-roja-urge-a-america-latina-a-prepararse-ante-un-fenomeno-de-el-nino-historico/"
       },
       {
-        "label": "Households reporting maize damage",
-        "value": "more than 70,000 households",
-        "sourceName": "nvinoticias.com",
-        "sourceUrl": "https://www.nvinoticias.com/mundo/sequia-extrema-golpea-centroamerica-miles-pierden-sus-cosechas/194162"
+        "label": "People in need in Honduras",
+        "value": "708,000 people",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
       },
       {
-        "label": "Communities where drought was the main…",
-        "value": "315 of 354 communities",
+        "label": "People reached in Guatemala by Red Cross",
+        "value": "more than 10,000 people",
+        "sourceName": "noticiassin.com",
+        "sourceUrl": "https://noticiassin.com/mundo/america/2026/10/22/cruz-roja-alerta-a-america-latina-por-el-nino-historico-2151054"
+      },
+      {
+        "label": "Children in the Dry Corridor needing aid",
+        "value": "at least nine million children",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/el-salvador/2026/10/02/nueve-millones-de-ninos-del-corredor-seco-centroamericano-que-estan-en-riesgo-por-el-avance-de-el-nino-segun-unicef/"
+      },
+      {
+        "label": "Maize-producing households losing…",
+        "value": "about 80%",
         "sourceName": "lac.oxfam.org",
         "sourceUrl": "https://lac.oxfam.org/wp-content/uploads/2026/08/Informe-CA-Fenomeno-de-El-Nino.pdf"
-      },
-      {
-        "label": "People at risk of food shortages…",
-        "value": "16 million people",
-        "sourceName": "ticotimes.net",
-        "sourceUrl": "https://ticotimes.net/2026/09/16/central-america-drought-el-nino-food-shortages"
       }
     ],
     "donation": [
       {
         "url": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026",
-        "org": "OCHA",
+        "org": "UN OCHA",
         "kind": "un",
-        "note": "Honduras drought flash appeal launched September 2026, covering the Dry Corridor, with appeal figures.",
+        "note": "September 2026 Flash Appeal for Honduras drought, seeking US$60 million for affected people.",
+        "specific": true
+      },
+      {
+        "url": "https://go.ifrc.org/countries/81",
+        "org": "IFRC GO",
+        "kind": "society",
+        "note": "Tracking page for DREF operation MDRHN028, Honduras drought, 100% funded. Not a donation form.",
         "specific": true
       },
       {
         "url": "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena",
         "org": "Cruz Roja Hondureña",
         "kind": "society",
-        "note": "National society's general donation entry via IFRC directory; a general fund, not this drought.",
+        "note": "General national society donate button, not specific to this drought.",
         "specific": false
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "isciences.com",
+        "url": "https://www.isciences.com/blog/2026/11/12/isciences-worldwide-water-watch-list-november-2026",
+        "title": "ISciences Worldwide Water Watch List November 2026 — ISCIENCES"
+      },
+      {
+        "name": "noticiassin.com",
+        "url": "https://noticiassin.com/mundo/america/2026/10/22/cruz-roja-alerta-a-america-latina-por-el-nino-historico-2151054",
+        "title": "Cruz Roja alerta a América Latina por El Niño histórico"
+      },
+      {
+        "name": "infobae.com",
+        "url": "https://www.infobae.com/america/agencias/2026/10/22/la-cruz-roja-urge-a-america-latina-a-prepararse-ante-un-fenomeno-de-el-nino-historico/",
+        "title": "La Cruz Roja urge a América Latina a prepararse ante un fenómeno de El Niño \"histórico\" - Infobae"
+      },
+      {
+        "name": "elsalvador.com",
+        "url": "https://www.elsalvador.com/noticias/internacional/guatemala-alerta-roja-sequia/1293018/2026/",
+        "title": "Guatemala pide alerta roja por sequía en frontera con El Salvador"
+      }
+    ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-13T01:32:34.423Z",
-    "donationSearched": "2026-11-11T09:54:04.545Z",
-    "directSearched": "2026-11-11T09:54:04.545Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-13T10:00:40.667Z",
+    "directSearched": "2026-11-13T10:00:40.667Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
+        "org": "Paso Pacífico",
+        "kind": "globalgiving",
+        "note": "Forest wildlife and rural communities in Nicaragua and El Salvador recovering after El Niño drought",
+        "title": "Emergency appeal - effects of El Nino - GlobalGiving"
+      }
+    ],
+    "seen": "2026-11-13T10:00:40.667Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-12T10:16:31.542Z",
@@ -615,7 +688,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,ER,ET,KE,NE,NG,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-13T01:32:34.423Z",
+    "seen": "2026-11-13T10:00:40.667Z",
     "donationSearched": "2026-11-12T10:16:31.542Z",
     "directSearched": "2026-11-12T10:16:31.542Z",
     "directSearchVersion": 2
@@ -1273,7 +1346,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-13T01:32:34.423Z",
+    "seen": "2026-11-13T10:00:40.667Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2,
@@ -1458,7 +1531,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-13T01:32:34.423Z",
+    "seen": "2026-11-13T10:00:40.667Z",
     "donationSearched": "2026-11-12T18:44:41.460Z",
     "directSearched": "2026-11-12T18:44:41.460Z",
     "directSearchVersion": 2,
@@ -1761,7 +1834,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-13T01:32:34.423Z",
+    "seen": "2026-11-13T10:00:40.667Z",
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2,
@@ -1792,112 +1865,32 @@
     ]
   },
   "ifrc-flood-8050": {
-    "at": "2026-11-11T02:19:34.678Z",
+    "at": "2026-11-13T10:00:40.667Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Monsoon floods in Myanmar, alert issued 12 August 2026, followed heavy rain from late July that breached river embankments and submerged villages in several regions, including Ayeyarwady, Rakhine and Sagaing. As of the end of August 2026, about 600,000 people were reported affected by ongoing flooding. Floodwaters have receded in most central and southern townships. The sources found do not cover this flood after late August.",
+    "summary": "A news headline reports floods in Myanmar's Shan State, with nearly 5,000 people evacuated. The event started on 2026-08-12. Dates, affected townships and the current situation could not be confirmed from checked sources.",
     "ongoing": true,
     "places": [
       {
-        "name": "Laymyethna",
-        "admin": "Ayeyarwady Region",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Villages and wards flooded; river embankments breached"
-      },
-      {
-        "name": "Buthidaung",
-        "admin": "Rakhine State",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Among highest flood impact in Rakhine"
-      },
-      {
-        "name": "Kyauktaw",
-        "admin": "Rakhine State",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Among highest flood impact in Rakhine"
-      },
-      {
-        "name": "Minbya",
-        "admin": "Rakhine State",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Among highest flood impact in Rakhine"
-      },
-      {
-        "name": "Mrauk-U",
-        "admin": "Rakhine State",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Among highest flood impact in Rakhine"
-      },
-      {
-        "name": "Ponnagyun",
-        "admin": "Rakhine State",
-        "country": "MM",
-        "kind": "district",
-        "impact": "Among highest flood impact in Rakhine"
-      },
-      {
-        "name": "Sagaing Region",
+        "name": "Shan State",
         "country": "MM",
         "kind": "region",
-        "impact": "Heavy rain and river flooding forced relocations"
+        "impact": "Floods reported; nearly 5,000 evacuated"
       }
     ],
     "figures": [
       {
-        "label": "People affected",
-        "value": "about 600,000 people",
-        "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
+        "label": "Evacuated",
+        "value": "nearly 5,000 people",
+        "sourceName": "tbsnews.net",
+        "sourceUrl": "https://www.tbsnews.net/world/nearly-5000-people-evacuated-floods-hit-myanmars-shan-state-1601396"
       }
     ],
-    "donation": [
-      {
-        "url": "https://www.redcross.org.mm/donate/donate-now/",
-        "org": "Myanmar Red Cross Society",
-        "kind": "society",
-        "note": "General donation fund for Myanmar Red Cross humanitarian programs, not this flood.",
-        "specific": false
-      },
-      {
-        "url": "https://www.unicef.org/appeals/myanmar",
-        "org": "UNICEF",
-        "kind": "un",
-        "note": "UNICEF's annual Myanmar appeal covering conflict and natural hazards generally.",
-        "specific": false
-      }
-    ],
-    "sources": [
-      {
-        "name": "unicef.org",
-        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
-        "title": "Myanmar 2026 Monsoon Emergency Response"
-      },
-      {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/countries/121",
-        "title": "IFRC GO - Myanmar"
-      },
-      {
-        "name": "wfp.org",
-        "url": "https://www.wfp.org/news/wfp-launches-emergency-flood-response-myanmar-monsoon-flooding-compounds-severe-humanitarian",
-        "title": "WFP launches emergency flood response in Myanmar as monsoon flooding compounds severe humanitarian crisis"
-      },
-      {
-        "name": "myanmar.un.org",
-        "url": "https://myanmar.un.org/en/319760-rakhine-state-western-myanmar-flood-situation-update-no1",
-        "title": "Rakhine State, Western Myanmar: Flood Situation Update No.1"
-      }
-    ],
+    "donation": [],
+    "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-13T01:32:34.423Z",
-    "donationSearched": "2026-11-11T02:19:34.678Z",
-    "directSearched": "2026-11-11T02:19:34.678Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-13T10:00:40.667Z",
+    "seen": "2026-11-13T10:00:40.667Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-11-12T18:44:41.460Z",
@@ -2064,7 +2057,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-13T01:32:34.423Z",
+    "seen": "2026-11-13T10:00:40.667Z",
     "donationSearched": "2026-11-12T18:44:41.460Z",
     "directSearched": "2026-11-12T18:44:41.460Z",
     "directSearchVersion": 2
