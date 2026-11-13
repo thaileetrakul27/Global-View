@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-13T10:00:40.667Z",
+  "updated": "2026-11-13T18:10:05.921Z",
   "fetched": {
-    "societies": "2026-11-13T10:00:40.667Z",
-    "uncr": "2026-11-13T10:00:40.667Z"
+    "societies": "2026-11-13T18:10:05.921Z",
+    "uncr": "2026-11-13T18:10:05.921Z"
   },
   "societies": {
     "AF": {
@@ -2697,14 +2697,6 @@
         "https://www.cruzrojacolombiana.org/cruz-roja-colombiana-despliega-capacidades-para-dar-respuesta-tras-las-afectaciones-por-sismo-en-colombia/"
       ]
     },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-12T10:16:31.542Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
     "unicef.org/appeals/south-sudan": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2713,28 +2705,12 @@
         "https://www.unicef.org/appeals/south-sudan"
       ]
     },
-    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
-      "ok": false,
-      "reason": "HTTP 406",
-      "checked": "2026-11-12T10:16:31.542Z",
-      "chain": [
-        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ]
-    },
     "kksh.org.al": {
       "ok": true,
       "reason": "donation word \"dhuro*\"",
       "checked": "2026-11-12T10:16:31.542Z",
       "chain": [
         "https://www.kksh.org.al/"
-      ]
-    },
-    "arcs.af": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-12T10:16:31.542Z",
-      "chain": [
-        "https://arcs.af/"
       ]
     },
     "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
@@ -2801,29 +2777,53 @@
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-13T10:00:40.667Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
-      ],
-      "checked": "2026-11-13T10:00:40.667Z"
+      ]
     },
     "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Colombia\"",
+      "checked": "2026-11-13T10:00:40.667Z",
       "chain": [
         "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/"
       ],
       "place": "Colombia",
       "name": "Oxfam GB",
-      "title": "Oxfam GB | Colombia Earthquake Appeal",
-      "checked": "2026-11-13T10:00:40.667Z"
+      "title": "Oxfam GB | Colombia Earthquake Appeal"
     },
     "donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-13T10:00:40.667Z",
       "chain": [
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1"
+      ]
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
       ],
-      "checked": "2026-11-13T10:00:40.667Z"
+      "checked": "2026-11-13T18:10:05.921Z"
+    },
+    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
+      "ok": false,
+      "reason": "HTTP 406",
+      "chain": [
+        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
+      ],
+      "checked": "2026-11-13T18:10:05.921Z"
+    },
+    "arcs.af": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://arcs.af/"
+      ],
+      "checked": "2026-11-13T18:10:05.921Z"
     }
   }
 }
