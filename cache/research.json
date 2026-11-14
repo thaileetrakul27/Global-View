@@ -312,28 +312,55 @@
     "directSearchVersion": 2
   },
   "gdacs-cyclone-tc-1001347": {
-    "at": "2026-11-12T01:09:33.408Z",
+    "at": "2026-11-14T07:01:23.906Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Typhoon Cempaka (Typhoon No. 32) formed in the Pacific around 6 to 7 November 2026 and passed the Ogasawara Islands near Japan by 9 November. A JMA-based update of 11 November said it was moving east-northeast at 45 km/h and was expected to become extratropical far east of Japan by 12 November. The transition is not yet confirmed. The sources reviewed report no deaths, damage or evacuations in Japan.",
-    "ongoing": true,
+    "summary": "Typhoon Cempaka (JMA No. 32) began on 6 November 2026 near the Mariana Islands. It passed over waters south of Japan's Ogasawara Islands, where Ogasawara Village issued storm and high wave warnings. Sources report it dissipated or became an extratropical cyclone around 11–12 November. No damage, casualties or evacuations are reported in the sources reviewed.",
+    "ongoing": false,
     "places": [
       {
         "name": "Ogasawara Islands",
-        "admin": "Tokyo Metropolis",
+        "admin": "Tokyo",
         "country": "JP",
-        "kind": "district",
-        "impact": "storm passed nearby; no damage reported"
+        "kind": "region",
+        "impact": "Severe weather; storm and high wave warnings issued"
       }
     ],
     "figures": [],
     "donation": [],
-    "sources": [],
-    "membersHash": "eonet,gdacs|JP#180d4e6d",
-    "seen": "2026-11-13T23:59:18.764Z",
-    "donationSearched": "2026-11-12T01:09:33.408Z",
-    "directSearched": "2026-11-12T01:09:33.408Z",
-    "directSearchVersion": 2
+    "sources": [
+      {
+        "name": "stormatlasx.com",
+        "url": "https://stormatlasx.com/storms/cempaka-2026",
+        "title": "2026 Typhoon Cempaka - Historical Track Map, Peak Winds & Landfall Archive"
+      },
+      {
+        "name": "baike.baidu.com",
+        "url": "https://baike.baidu.com/en/item/Typhoon%20Cempaka/7554529",
+        "title": "Typhoon Cempaka_Baiduwiki"
+      },
+      {
+        "name": "agora.ex.nii.ac.jp",
+        "url": "https://agora.ex.nii.ac.jp/digital-typhoon/news/2026/TC2632/",
+        "title": "Digital Typhoon: Typhoon 202632 (CEMPAKA)"
+      },
+      {
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season",
+        "title": "2026 Pacific typhoon season"
+      },
+      {
+        "name": "sea.weathernews.com",
+        "url": "https://sea.weathernews.com/resources/202611/292",
+        "title": "Typhoon No. 32 (Cempaka) Forecast to Peak at 80 kt Before Turning East and Weakening"
+      },
+      {
+        "name": "jrc.or.jp",
+        "url": "https://www.jrc.or.jp/english/donate/",
+        "title": "Donate"
+      }
+    ],
+    "membersHash": "eonet,gdacs|JP#180d4e6d"
   },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-13T23:59:18.764Z",
@@ -424,10 +451,10 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "seen": "2026-11-14T07:01:23.906Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "directSearched": "2026-11-13T23:59:18.764Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-13T23:59:18.764Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1023877": {
     "at": "2026-11-12T10:16:31.542Z",
@@ -475,7 +502,7 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-13T23:59:18.764Z",
+    "seen": "2026-11-14T07:01:23.906Z",
     "donationSearched": "2026-11-12T10:16:31.542Z",
     "directSearched": "2026-11-12T10:16:31.542Z",
     "directSearchVersion": 2
@@ -620,7 +647,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-13T23:59:18.764Z",
+    "seen": "2026-11-14T07:01:23.906Z",
     "donationSearched": "2026-11-13T10:00:40.667Z",
     "directSearched": "2026-11-13T10:00:40.667Z",
     "directSearchVersion": 2,
@@ -758,7 +785,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,ER,ET,KE,NE,NG,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-13T23:59:18.764Z",
+    "seen": "2026-11-14T07:01:23.906Z",
     "donationSearched": "2026-11-12T10:16:31.542Z",
     "directSearched": "2026-11-12T10:16:31.542Z",
     "directSearchVersion": 2
@@ -1398,6 +1425,8 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
+    "seen": "2026-11-14T07:01:23.906Z",
+    "donationSearched": "2026-11-13T23:59:18.764Z",
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/colombia-earthquake-response/",
@@ -1433,9 +1462,7 @@
     ],
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ],
-    "donationSearched": "2026-11-13T23:59:18.764Z",
-    "seen": "2026-11-13T23:59:18.764Z"
+    ]
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-12T18:44:41.460Z",
@@ -1581,7 +1608,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-13T23:59:18.764Z",
+    "seen": "2026-11-14T07:01:23.906Z",
     "donationSearched": "2026-11-12T18:44:41.460Z",
     "directSearched": "2026-11-12T18:44:41.460Z",
     "directSearchVersion": 2,
@@ -1862,6 +1889,10 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
+    "seen": "2026-11-14T07:01:23.906Z",
+    "donationSearched": "2026-11-13T23:59:18.764Z",
+    "directSearched": "2026-11-13T23:59:18.764Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
@@ -1886,11 +1917,7 @@
         "title": "Nuristan Flood Emergency",
         "published": "2026-09-23T23:59:18.764Z"
       }
-    ],
-    "donationSearched": "2026-11-13T23:59:18.764Z",
-    "directSearched": "2026-11-13T23:59:18.764Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-13T23:59:18.764Z"
+    ]
   },
   "ifrc-flood-8050": {
     "at": "2026-11-13T10:00:40.667Z",
@@ -1917,7 +1944,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-13T23:59:18.764Z",
+    "seen": "2026-11-14T07:01:23.906Z",
     "donationSearched": "2026-11-13T10:00:40.667Z"
   },
   "ifrc-flood-8073": {
@@ -2085,7 +2112,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-13T23:59:18.764Z",
+    "seen": "2026-11-14T07:01:23.906Z",
     "donationSearched": "2026-11-12T18:44:41.460Z",
     "directSearched": "2026-11-12T18:44:41.460Z",
     "directSearchVersion": 2
@@ -2392,135 +2419,6 @@
         "note": "Winter and shelter support for displaced Gaza families; broader appeal that names flooded tents.",
         "title": "Donate to Gaza - Gaza Appeal",
         "published": "2026-11-09T02:07:50.587Z"
-      }
-    ]
-  },
-  "usgs-earthquake-us6000u1cf": {
-    "at": "2026-10-31T00:14:33.222Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A magnitude 7.5 to 7.7 earthquake (sources vary; the feed lists 6.0) struck near Tonosí, Los Santos, Panama, on 9 October 2026. Its epicentre was 39 km north-west of Tonosí. As of 30 October, SINAPROC reports 2 deaths, 27 injured and 55,245 people in affected areas. The government declared a national state of emergency on 10 October. Response and humanitarian assistance are ongoing.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Tonosí",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Most damaged town; no water or electricity; hotel and homes collapsed"
-      },
-      {
-        "name": "Flores",
-        "country": "PA",
-        "kind": "district",
-        "impact": "Landslide blocked a road"
-      },
-      {
-        "name": "Isla de Cañas",
-        "admin": "Los Santos",
-        "country": "PA",
-        "kind": "town",
-        "impact": "Unusual wave intrusion into some coastal homes"
-      },
-      {
-        "name": "Herrera",
-        "country": "PA",
-        "kind": "region",
-        "impact": "Among most affected health facilities"
-      },
-      {
-        "name": "Los Santos",
-        "country": "PA",
-        "kind": "region",
-        "impact": "Among most affected health facilities"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "2",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-26/"
-      },
-      {
-        "label": "Injured",
-        "value": "27",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-26/"
-      },
-      {
-        "label": "Homes assessed in damage and needs…",
-        "value": "17,058 homes",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-26/"
-      },
-      {
-        "label": "People in affected areas (registered)",
-        "value": "55,245 people",
-        "sourceName": "sinaproc.gob.pa",
-        "sourceUrl": "https://www.sinaproc.gob.pa/comunicado-oficial-26/"
-      },
-      {
-        "label": "People in shelters",
-        "value": "3,827 people",
-        "sourceName": "ewtnnews.com",
-        "sourceUrl": "https://www.ewtnnews.com/es/mundo/america/100-iglesias-panama-afectadas-sismo"
-      }
-    ],
-    "donation": [
-      {
-        "url": "https://donate.unhcr.org/int/en/panama-earthquake",
-        "org": "UNHCR",
-        "kind": "un",
-        "note": "Appeal for shelter and relief for families affected by the 9 October 2026 Panama quake.",
-        "specific": true
-      },
-      {
-        "url": "https://cruzroja.org.pa/donar/",
-        "org": "Cruz Roja Panameña",
-        "kind": "society",
-        "note": "General donation page for the society's programmes, with bank and card options; not earthquake-specific.",
-        "specific": false
-      }
-    ],
-    "sources": [
-      {
-        "name": "sinaproc.gob.pa",
-        "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
-        "title": "Comunicado Oficial # 26 - Sinaproc"
-      },
-      {
-        "name": "unfpa.org",
-        "url": "https://www.unfpa.org/resources/flash-update-earthquake-panama",
-        "title": "Flash Update on the Earthquake in Panama"
-      },
-      {
-        "name": "unocha.org",
-        "url": "https://www.unocha.org/publications/report/panama/panama-earthquake-azuero-veraguas-situation-report-no-02-11-october-2026-1315",
-        "title": "Panama: Earthquake in Azuero & Veraguas - Situation Report No. 02 (as of 11 October 2026, 13:15)"
-      }
-    ],
-    "membersHash": "ifrc,usgs|PA#f69ff3e4",
-    "seen": "2026-10-31T00:14:33.222Z",
-    "donationSearched": "2026-10-31T00:14:33.222Z",
-    "directSearched": "2026-10-31T00:14:33.222Z",
-    "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://quenarafoundation.com/en/donation/panama-earthquake-relief/",
-        "org": "Quenara Foundation",
-        "kind": "local",
-        "note": "Shelter, clean water and food for Azuero families unable to return home.",
-        "title": "Panama Earthquake Relief",
-        "published": "2026-10-23T00:14:33.222Z"
-      },
-      {
-        "url": "https://www.panama-properties.com/post/official-earthquake-relief-fund-pedas%C3%AD-ca%C3%B1as-tonos%C3%AD",
-        "org": "Panama Properties",
-        "kind": "local",
-        "note": "Pedasí, Cañas and Tonosí earthquake relief fund coordinated by Pedasí municipality.",
-        "title": "Earthquake Relief Fund: Pedasí, Cañas and Tonosí",
-        "published": "2026-10-12T00:14:33.222Z"
       }
     ]
   },
