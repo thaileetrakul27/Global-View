@@ -451,7 +451,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-14T15:31:04.209Z",
+    "seen": "2026-11-14T21:07:48.595Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "directSearched": "2026-11-13T23:59:18.764Z",
     "directSearchVersion": 2
@@ -467,10 +467,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "seen": "2026-11-14T21:07:48.595Z",
     "donationSearched": "2026-11-14T15:31:04.209Z",
     "directSearched": "2026-11-14T15:31:04.209Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-14T15:31:04.209Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-13T10:00:40.667Z",
@@ -612,7 +612,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-14T15:31:04.209Z",
+    "seen": "2026-11-14T21:07:48.595Z",
     "donationSearched": "2026-11-13T10:00:40.667Z",
     "directSearched": "2026-11-13T10:00:40.667Z",
     "directSearchVersion": 2,
@@ -738,8 +738,8 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,ER,ET,KE,NE,NG,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "donationSearched": "2026-11-14T15:31:04.209Z",
-    "seen": "2026-11-14T15:31:04.209Z"
+    "seen": "2026-11-14T21:07:48.595Z",
+    "donationSearched": "2026-11-14T15:31:04.209Z"
   },
   "gdacs-earthquake-eq-1570339": {
     "at": "2026-11-01T06:49:56.328Z",
@@ -1376,7 +1376,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-14T15:31:04.209Z",
+    "seen": "2026-11-14T21:07:48.595Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "direct": [
       {
@@ -1416,10 +1416,10 @@
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-12T18:44:41.460Z",
+    "at": "2026-11-14T21:07:48.595Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck East Nusa Tenggara, Indonesia, on 15 August 2026 (local time), causing deaths, injuries and building damage. BNPB reported 47 deaths and 101 injuries as of 16 August, with more than 5,000 people still displaced. Aftershocks have decreased, and monitoring of secondary hazards continues.",
+    "searches": 1,
+    "summary": "A magnitude 7.7 earthquake struck offshore Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026, according to an alert feed that has not been verified. The feed says a tsunami warning was lifted after sea-level changes were detected in several coastal areas. The research notes confirm no deaths, injuries, damage or displacement. The current status is not verified.",
     "ongoing": true,
     "places": [
       {
@@ -1427,158 +1427,48 @@
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Minor structural damage; about 2,000 residents evacuated"
-      },
-      {
-        "name": "Sikka",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Two deaths; 3,356 displaced"
-      },
-      {
-        "name": "Maumere",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Port buildings and docks damaged; two deaths"
-      },
-      {
-        "name": "Manggarai",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Emergency response declared; 2,078 displaced"
-      },
-      {
-        "name": "Ngada",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Emergency response declared"
-      },
-      {
-        "name": "Ende",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Commercial buildings and hotels cracked, partly damaged"
-      },
-      {
-        "name": "Ruteng",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Buildings and public facilities cracked, partly damaged"
-      },
-      {
-        "name": "Labuan Bajo",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Buildings and public facilities cracked, partly damaged"
-      },
-      {
-        "name": "Bima",
-        "admin": "West Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Minor damage; wall cracks at Lambitu Sub-district Office"
+        "impact": "epicentre, offshore"
       }
     ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "47",
-        "sourceName": "go.ifrc.org",
-        "sourceUrl": "https://go.ifrc.org/field-reports/18533"
-      },
-      {
-        "label": "Injured",
-        "value": "101",
-        "sourceName": "go.ifrc.org",
-        "sourceUrl": "https://go.ifrc.org/field-reports/18533"
-      },
-      {
-        "label": "Displaced",
-        "value": "more than 5,000 people",
-        "sourceName": "go.ifrc.org",
-        "sourceUrl": "https://go.ifrc.org/field-reports/18533"
-      },
-      {
-        "label": "Damaged houses",
-        "value": "373",
-        "sourceName": "human-initiative.org",
-        "sourceUrl": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en"
-      },
-      {
-        "label": "Education facilities severely damaged",
-        "value": "36",
-        "sourceName": "human-initiative.org",
-        "sourceUrl": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en"
-      }
-    ],
+    "figures": [],
     "donation": [
       {
-        "url": "https://ayodonor.pmi.or.id/",
-        "org": "Palang Merah Indonesia (PMI) Kota Bekasi",
+        "url": "https://ayodonor.pmi.or.id/index.php",
+        "org": "Palang Merah Indonesia (Indonesian Red Cross) Kota Bekasi",
         "kind": "society",
-        "note": "Blood-donor platform page carrying a PMI Bekasi appeal for NTT earthquake victims, dated 18 Aug 2026.",
+        "note": "PMI Bekasi city-branch fundraising campaign for East Nusa Tenggara earthquake victims, dated 18 Aug 2026.",
         "specific": true
       }
     ],
-    "sources": [
-      {
-        "name": "human-initiative.org",
-        "url": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
-        "title": "Situation Report #2 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
-      },
-      {
-        "name": "ahacentre.org",
-        "url": "https://ahacentre.org/flash-update/flash-update-no-1-m7-7-earthquake-in-east-nusa-tenggara-indonesia-15-august-2026/",
-        "title": "FLASH UPDATE: No. 1"
-      },
-      {
-        "name": "regional.kontan.co.id",
-        "url": "https://regional.kontan.co.id/news/gempa-m-77-guncang-nagekeo-ntt-bnpb-kerahkan-tim-dan-helikopter",
-        "title": "Gempa M 7,7 Guncang Nagekeo NTT, BNPB Kerahkan Tim dan Helikopter"
-      },
-      {
-        "name": "human-initiative.org",
-        "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
-        "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
-      },
-      {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/field-reports/18533",
-        "title": "IFRC GO - Field Report Details"
-      },
-      {
-        "name": "en.antaranews.com",
-        "url": "https://en.antaranews.com/news/427204/77-magnitude-quake-in-nagekeo-caused-damage-to-buildings-in-bima",
-        "title": "7.7-magnitude quake in Nagekeo caused damage to buildings in Bima - ANTARA News"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-14T15:31:04.209Z",
-    "donationSearched": "2026-11-12T18:44:41.460Z",
-    "directSearched": "2026-11-12T18:44:41.460Z",
-    "directSearchVersion": 2,
     "direct": [
       {
-        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
-        "org": "BAZNAS Republic Indonesia",
+        "url": "https://www.globalgiving.org/projects/nttemergencyrelief/",
+        "org": "Human Initiative (via GlobalGiving)",
         "kind": "globalgiving",
-        "note": "Emergency aid for survivors of the magnitude 7.7 earthquake on Flores Island.",
-        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
+        "note": "Emergency shelter, food, water, hygiene kits and early recovery for quake-affected families",
+        "title": "East Nusa Tenggara Earthquake Relief Fund - GlobalGiving"
       },
       {
         "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
-        "org": "IDEP Selaras Alam",
+        "org": "IDEP Selaras Alam (via GlobalGiving)",
         "kind": "globalgiving",
-        "note": "Food, water, shelter and medicines for earthquake-affected families.",
+        "note": "Food, water, shelter and medicines for affected families in Manggarai and East Manggarai",
         "title": "Donate to Help Families Affected by Flores Earthquake - GlobalGiving"
+      },
+      {
+        "url": "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita",
+        "org": "Wahdah Inspirasi Zakat (WIZ)",
+        "kind": "local",
+        "note": "Aid for earthquake survivors in Nagekeo, including a pesantren in Mbay",
+        "title": "Campaign - Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-14T21:07:48.595Z",
+    "directSearched": "2026-11-14T21:07:48.595Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-14T21:07:48.595Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1840,7 +1730,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-14T15:31:04.209Z",
+    "seen": "2026-11-14T21:07:48.595Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "directSearched": "2026-11-13T23:59:18.764Z",
     "directSearchVersion": 2,
@@ -1895,7 +1785,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-14T15:31:04.209Z",
+    "seen": "2026-11-14T21:07:48.595Z",
     "donationSearched": "2026-11-13T10:00:40.667Z",
     "directSearched": "2026-11-14T15:31:04.209Z",
     "directSearchVersion": 2
@@ -2065,7 +1955,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-14T15:31:04.209Z",
+    "seen": "2026-11-14T21:07:48.595Z",
     "donationSearched": "2026-11-12T18:44:41.460Z",
     "directSearched": "2026-11-12T18:44:41.460Z",
     "directSearchVersion": 2

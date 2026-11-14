@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-14T15:31:04.209Z",
+  "updated": "2026-11-14T21:07:48.595Z",
   "fetched": {
-    "societies": "2026-11-14T15:31:04.209Z",
-    "uncr": "2026-11-14T15:31:04.209Z"
+    "societies": "2026-11-14T21:07:48.595Z",
+    "uncr": "2026-11-14T21:07:48.595Z"
   },
   "societies": {
     "AF": {
@@ -2698,30 +2698,6 @@
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1"
       ]
     },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-13T18:10:05.921Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
-    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
-      "ok": false,
-      "reason": "HTTP 406",
-      "checked": "2026-11-13T18:10:05.921Z",
-      "chain": [
-        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ]
-    },
-    "arcs.af": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-13T18:10:05.921Z",
-      "chain": [
-        "https://arcs.af/"
-      ]
-    },
     "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
@@ -2795,18 +2771,62 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-14T15:31:04.209Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-14T15:31:04.209Z"
+      ]
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-14T15:31:04.209Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
+      ]
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
       ],
-      "checked": "2026-11-14T15:31:04.209Z"
+      "checked": "2026-11-14T21:07:48.595Z"
+    },
+    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
+      "ok": false,
+      "reason": "HTTP 406",
+      "chain": [
+        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
+      ],
+      "checked": "2026-11-14T21:07:48.595Z"
+    },
+    "local4:ifrc-earthquake-8060:donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Indonesia\"",
+      "chain": [
+        "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita"
+      ],
+      "place": "Indonesia",
+      "name": "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara…",
+      "title": "Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita",
+      "checked": "2026-11-14T21:07:48.595Z"
+    },
+    "ayodonor.pmi.or.id/index.php": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/index.php"
+      ],
+      "blocked": true,
+      "checked": "2026-11-14T21:07:48.595Z"
+    },
+    "arcs.af": {
+      "ok": true,
+      "reason": "donation word \"کمک نقدی\"",
+      "chain": [
+        "https://arcs.af/"
+      ],
+      "checked": "2026-11-14T21:07:48.595Z"
     }
   }
 }
