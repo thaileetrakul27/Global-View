@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-14T07:01:23.906Z",
+  "updated": "2026-11-14T15:31:04.209Z",
   "fetched": {
-    "societies": "2026-11-14T07:01:23.906Z",
-    "uncr": "2026-11-14T07:01:23.906Z"
+    "societies": "2026-11-14T15:31:04.209Z",
+    "uncr": "2026-11-14T15:31:04.209Z"
   },
   "societies": {
     "AF": {
@@ -2679,14 +2679,6 @@
         "https://www.kksh.org.al/"
       ]
     },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-13T10:00:40.667Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
     "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Colombia\"",
@@ -2794,11 +2786,27 @@
     "donate.redcrossredcrescent.org/ifrc/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-14T07:01:23.906Z",
       "chain": [
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
+      ]
+    },
+    "go.ifrc.org/emergencies/8079/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8079/overview"
       ],
-      "checked": "2026-11-14T07:01:23.906Z"
+      "checked": "2026-11-14T15:31:04.209Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-11-14T15:31:04.209Z"
     }
   }
 }
