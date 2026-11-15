@@ -1,99 +1,4 @@
 {
-  "gdacs-cyclone-tc-1001341": {
-    "at": "2026-10-30T00:20:11.381Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Hurricane Vance, a cyclone that formed off Mexico's Pacific coast on 21 October 2026, weakened to a tropical storm and was off Sinaloa on 29 October. Its rain caused flooding, landslides and road and beach closures in Baja California Sur and Sinaloa. Authorities reported no deaths. Sinaloa officials said the system could dissipate within 24 hours.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Los Cabos",
-        "admin": "Baja California Sur",
-        "country": "MX",
-        "kind": "town",
-        "impact": "severe flooding, dozens of cars swept away, classes suspended"
-      },
-      {
-        "name": "Mazatlán",
-        "admin": "Sinaloa",
-        "country": "MX",
-        "kind": "city",
-        "impact": "landslide on Cerro de la Nevería, no building damage reported"
-      },
-      {
-        "name": "Concordia",
-        "admin": "Sinaloa",
-        "country": "MX",
-        "kind": "town",
-        "impact": "afternoon classes suspended"
-      },
-      {
-        "name": "Escuinapa",
-        "admin": "Sinaloa",
-        "country": "MX",
-        "kind": "town",
-        "impact": "afternoon classes suspended"
-      },
-      {
-        "name": "El Rosario",
-        "admin": "Sinaloa",
-        "country": "MX",
-        "kind": "town",
-        "impact": "afternoon classes suspended"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Rescues",
-        "value": "5 people in trapped vehicles rescued",
-        "sourceName": "informador.mx",
-        "sourceUrl": "https://www.informador.mx/mexico/lluvias-de-vance-golpean-a-sinaloa-y-bcs-reportan-encharcamientos-cierre-de-playas-y-deslaves-20261028-0154.html"
-      }
-    ],
-    "donation": [
-      {
-        "url": "https://www.cruzrojamexicana.org.mx/",
-        "org": "Mexican Red Cross (Cruz Roja Mexicana)",
-        "kind": "society",
-        "note": "General Mexican Red Cross home page with annual drive and disaster-response fund.",
-        "specific": false
-      },
-      {
-        "url": "https://bajacalifornia.cruzrojamexicana.org.mx/",
-        "org": "Baja California Mexican Red Cross branch",
-        "kind": "society",
-        "note": "Baja California branch general fund with disaster-response section, covers Los Cabos.",
-        "specific": false
-      }
-    ],
-    "sources": [
-      {
-        "name": "luznoticias.mx",
-        "url": "https://www.luznoticias.mx/2026-10-29/sinaloa/vance-ya-no-representa-peligro-directo-para-sinaloa-proteccion-civil/312587",
-        "title": "\"Vance ya no representa peligro directo para Sinaloa\": Protección Civil"
-      },
-      {
-        "name": "accuweather.com",
-        "url": "https://www.accuweather.com/en/hurricane/vance-became-11th-major-eastern-pacific-hurricane-this-season-will-it-turn-toward-mexico/1949604",
-        "title": "Vance became 11th major eastern Pacific hurricane this season. Will it turn toward Mexico?"
-      },
-      {
-        "name": "lucesdelsiglo.com",
-        "url": "https://lucesdelsiglo.com/2026/10/29/la-tormenta-vance-azota-los-cabos-nacional/",
-        "title": "La tormenta 'Vance' azota Los Cabos"
-      },
-      {
-        "name": "es-us.noticias.yahoo.com",
-        "url": "https://es-us.noticias.yahoo.com/lluvias-vance-dejan-afectaciones-sinaloa-140505872.html",
-        "title": "Lluvias por Vance dejan afectaciones en Sinaloa y BCS - Yahoo Noticias"
-      }
-    ],
-    "membersHash": "eonet,gdacs|MX#0373490b",
-    "seen": "2026-11-01T20:59:19.901Z",
-    "donationSearched": "2026-10-30T00:20:11.381Z",
-    "directSearched": "2026-10-31T06:15:54.662Z",
-    "directSearchVersion": 2
-  },
   "gdacs-cyclone-tc-1001343": {
     "at": "2026-11-07T22:18:49.156Z",
     "model": "claude-haiku-5-5",
@@ -352,7 +257,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-15T17:36:05.587Z",
+    "seen": "2026-11-15T23:17:30.732Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "directSearched": "2026-11-13T23:59:18.764Z",
     "directSearchVersion": 2
@@ -368,7 +273,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-15T17:36:05.587Z",
+    "seen": "2026-11-15T23:17:30.732Z",
     "donationSearched": "2026-11-14T15:31:04.209Z",
     "directSearched": "2026-11-14T15:31:04.209Z",
     "directSearchVersion": 2
@@ -431,10 +336,10 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
+    "seen": "2026-11-15T23:17:30.732Z",
     "donationSearched": "2026-11-15T17:36:05.587Z",
     "directSearched": "2026-11-15T17:36:05.587Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-15T17:36:05.587Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-14T15:31:04.209Z",
@@ -548,7 +453,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,ER,ET,KE,NE,NG,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-15T17:36:05.587Z",
+    "seen": "2026-11-15T23:17:30.732Z",
     "donationSearched": "2026-11-14T15:31:04.209Z",
     "directSearched": "2026-11-15T17:36:05.587Z",
     "directSearchVersion": 2
@@ -1137,7 +1042,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-15T17:36:05.587Z",
+    "seen": "2026-11-15T23:17:30.732Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "direct": [
       {
@@ -1203,7 +1108,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-15T17:36:05.587Z",
+    "seen": "2026-11-15T23:17:30.732Z",
     "donationSearched": "2026-11-14T21:07:48.595Z",
     "directSearched": "2026-11-14T21:07:48.595Z",
     "directSearchVersion": 2,
@@ -1491,7 +1396,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-15T17:36:05.587Z",
+    "seen": "2026-11-15T23:17:30.732Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "directSearched": "2026-11-13T23:59:18.764Z",
     "directSearchVersion": 2,
@@ -1594,6 +1499,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-11-15T23:17:30.732Z",
     "directSearched": "2026-11-15T17:36:05.587Z",
     "directSearchVersion": 2,
     "direct": [
@@ -1605,178 +1511,45 @@
         "title": "Donate to Support Children Affected by Flooding in Myanmar - WORLDCHEFS",
         "published": "2026-08-11T17:36:05.587Z"
       }
-    ],
-    "seen": "2026-11-15T17:36:05.587Z"
+    ]
   },
   "ifrc-flood-8073": {
-    "at": "2026-11-12T18:44:41.460Z",
+    "at": "2026-11-15T23:17:30.732Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "A flash flood struck Rasuwa district in Nepal's Bagmati Province on 26 August 2026, damaging settlements, markets, roads and hydropower facilities and affecting nearby districts. Authorities reported deaths, missing people and displaced people. The latest source found, an IFRC update dated 12 October 2026, says humanitarian needs continue and some road access remains limited.",
+    "searches": 4,
+    "summary": "",
     "ongoing": true,
-    "places": [
-      {
-        "name": "Rasuwa",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Flash flood; severe damage to settlements, markets, roads"
-      },
-      {
-        "name": "Timure",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "Market and customs office severely damaged"
-      },
-      {
-        "name": "Syabrubesi",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "Severe damage to settlement"
-      },
-      {
-        "name": "Rasuwagadhi",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "Severe damage reported"
-      },
-      {
-        "name": "Nuwakot",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Badly affected"
-      },
-      {
-        "name": "Dhading",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Badly affected; people displaced"
-      },
-      {
-        "name": "Chitwan",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Affected"
-      },
-      {
-        "name": "Gorkha",
-        "admin": "Gandaki Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Affected"
-      },
-      {
-        "name": "Tanahun",
-        "admin": "Gandaki Province",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Affected"
-      },
-      {
-        "name": "Nawalparasi East",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Bodies recovered"
-      },
-      {
-        "name": "Nawalparasi West",
-        "country": "NP",
-        "kind": "district",
-        "impact": "Bodies recovered"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "616–626",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
-      },
-      {
-        "label": "Missing",
-        "value": "384 travellers",
-        "sourceName": "travelhimalayanepal.com",
-        "sourceUrl": "https://travelhimalayanepal.com/news/nepal-bhote-koshi-flash-flood-rasuwa-2026"
-      },
-      {
-        "label": "Displaced",
-        "value": "3,761 people",
-        "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
-      },
-      {
-        "label": "Households needing immediate relief",
-        "value": "around 10,000 households",
-        "sourceName": "who.int",
-        "sourceUrl": "https://www.who.int/nepal/emergencies/2026-rasuwa-flash-floods"
-      }
-    ],
+    "places": [],
+    "figures": [],
     "donation": [
-      {
-        "url": "https://donate.redcrossredcrescent.org/~share?cid=1180&lang=en_EN",
-        "org": "Nepal Red Cross Society",
-        "kind": "society",
-        "note": "Nepal Flood Emergency donation page naming the Rasuwa flash flood.",
-        "specific": true
-      },
-      {
-        "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "Nepal Flash Floods 2026 appeal page, funds passed to Nepal Red Cross.",
-        "specific": true
-      },
       {
         "url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC emergency page for 2026 flash floods, listing MDRNP022 appeal.",
+        "note": "Emergency Appeal page for the Nepal floods, with Nepal Red Cross appeal documents; no direct donate link.",
+        "specific": true
+      },
+      {
+        "url": "https://go.ifrc.org/emergencies/8073/reports",
+        "org": "IFRC GO",
+        "kind": "society",
+        "note": "Appeal tracker showing funding and timeline for the Rasuwa flash flood; does not take donations.",
+        "specific": true
+      },
+      {
+        "url": "https://nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal",
+        "org": "UN Resident Coordinator's Office, Nepal",
+        "kind": "un",
+        "note": "US$49.6 million flash appeal for Rasuwa, Nuwakot and Dhading flooding.",
         "specific": true
       }
     ],
-    "sources": [
-      {
-        "name": "ifrc.org",
-        "url": "https://www.ifrc.org/press-release/nepal-floods-ifrc-delivers-safe-water-and-health-care-affected-communities",
-        "title": "Nepal floods: IFRC delivers safe water and health care to affected communities"
-      },
-      {
-        "name": "ifrc.org",
-        "url": "https://www.ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding",
-        "title": "Nepal flash floods 2026: How the Red Cross is responding"
-      },
-      {
-        "name": "nrcs.org",
-        "url": "https://nrcs.org/resources/news-and-events/rasuwa-flood-situation-update-26-august-2026/",
-        "title": "Rasuwa Flood Situation Update (26 August 2026)"
-      },
-      {
-        "name": "who.int",
-        "url": "https://www.who.int/nepal/emergencies/2026-rasuwa-flash-floods",
-        "title": "2026 Rasuwa flash floods"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods",
-        "title": "Timeline of the 2026 Nepal–Tibet floods"
-      },
-      {
-        "name": "hopnepal.com",
-        "url": "https://www.hopnepal.com/blog/rasuwa-bhote-koshi-flood-2026-travel-update",
-        "title": "Rasuwa Bhote Koshi Flood 2026: Tourism & Travel Update"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-15T17:36:05.587Z",
-    "donationSearched": "2026-11-12T18:44:41.460Z",
-    "directSearched": "2026-11-12T18:44:41.460Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-15T23:17:30.732Z",
+    "directSearched": "2026-11-15T23:17:30.732Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-15T23:17:30.732Z"
   },
   "news-flood-flood-ps-3d066bfa68": {
     "at": "2026-11-09T10:17:17.712Z",
