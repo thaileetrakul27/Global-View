@@ -1,14 +1,984 @@
 {
   "code": "RU",
-  "updated": "2026-11-15T09:55:21.351Z",
+  "updated": "2026-11-15T17:36:05.587Z",
   "articles": [
     {
+      "from": "CH",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSEVhMFM1OFB1dkJSLVB5dUdObmV6N09wTUhvdEprZE0xSWlkYWZLeGoyZmZXSTRMdFl0SmZMYU43S3llblFOVDA5bVVBeHpvdnhrSGQ5U2lSY2xaUTBiQzdBTWo5LXhSUnZIZDNRU1E4U2JSNkNqNjFBNHdGdDNTcjVaUi1ILUpIV1ppQTlGc2RxOTRCYWNOLXhnS3ZJSlF4dFMw?oc=5",
+      "title": "Russland-Connection: Ex-Ruag-Manager kommt mit 7500 Franken davon",
+      "en": "Russia connection: Former Ruag manager gets away with 7,500 francs",
+      "outlet": "Blick",
+      "published": "2026-11-15T17:08:54.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "FR",
+      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQLVY4aG1yZXdrTVM4d21GeV9JVUttX08tSTllY3l1VFJjdTNGVmFLSHcwZ3Q0X3lnR3VMNjZTR0tpM0tDTERLRTFsTlRHMWNQUW5pRGcwczBiNTJxV1NRT0p3aUtzN1NNVzNtT3AyLXVGZUFmYjBITkxCdTI2aF91QTNtWTlKZDJYcXhmZE0xT2cwQTEtdUdtQmM1bUNVWjgtaHdSLXRWRkNHWjZ3Rjd6enNsRVp0cTRDb2MtQlBKamhadTdrRHhlc1J2dzJWSjM5Smwtdl83WDdaQVhoNi1MbnlieEJLemtSNHpkY3JSOTRGelBnd0FqWHNYMXpmaFVQQmNmS1pqVlpJYXljUjE2ejEwM01tZFA5YjlOb0g1V0Ftc1dLYzVlOGVvWXRFUllMS3NGUTUtaUd3Yldlc2NNV3liTHFjQQ?oc=5",
+      "title": "EN DIRECT, guerre en Ukraine : l’Estonie va fermer sa frontière avec la Russie après une nouvelle tentative de sabotage",
+      "en": "LIVE, war in Ukraine: Estonia will close its border with Russia after a new attempted sabotage",
+      "outlet": "Le Monde.fr",
+      "published": "2026-11-15T17:04:05.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "ES",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNkltNTY2UGhOeVFncjYyd3o5YWdJX1V1RlJIbjN2emVBNlJOYjctR0pQNjgwSUZZRWpZRUVtT0xZR19GdFJxR3lSVHJHSlJwSWVFM1pPRXFmemh4T0F6OU9NRG8xNS1fN0ZyM0xFNktYTEtZZlZsQmpaS1F2S1BYYXZfeERjckR1alUwOUEzTk8xUTdBRE1ZeV9tb21OcUtrR25OaU5VcGxmYXhKOXNv0gGvAUFVX3lxTFBWLXpUeDliZ1o1X2gzZktuZ1hGREx5SmpVd1pISGRnVmpRMzVJeWVhdE5KZk1FZ3lCMWVrc3owR2VEbVJFYzFTQkYxM1IwRzhiMEZsM3FHNUlxZzBabzgzbDVwcjFDVUpEUEJ6MXV5d3NCOUkwU2s0SXZ4Vkw5TW9tdjUyY0hvOE45Q3g4LVJ5dDdFdmNMdm0tcTNEbnZnZkJLTlREakt2MVZObkd0Y2M?oc=5",
+      "title": "Estonia cerrará su frontera con Rusia tras denunciar intento de sabotaje",
+      "en": "Estonia will close its border with Russia after denouncing a sabotage attempt",
+      "outlet": "DW.com",
+      "published": "2026-11-15T16:56:13.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SE",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaFo3YmlnUThnOFFfelFmTG9kTWFmZnAzb05laEdaWUxuLWxKaHZWTDAtWEZyQTF0bHhibXM0ODI3Z1AxMXY1eFlsazIweHhNeVlyS0FNYTNWaW9CbWxnWGlTNWQxdXBLd20tOTA2b3o0MGFZSXJTYmhvb2dERGY3VldFN2I0eEZmbklZ?oc=5",
+      "title": "Estland stänger gränsen mot Ryssland i december",
+      "en": "Estonia closes the border with Russia in December",
+      "outlet": "SVT Nyheter",
+      "published": "2026-11-15T16:41:45.000Z",
+      "outlets": 2,
+      "trending": false
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT1d4Rm5VMm5LeDhmbE1wNFhjRTZyQ19WbU5qMm9OOTRpblJWajdMejN0QUtPYTZfNVZfSWU0Q21vUzJMRWlMMGh0Y0dVUi1ucExVM0ZoOVMwQkFuV0hPb2pnVjREZUx5bUMwNFVpMm9uT2QzblIwRXlpQlJYOU1YQkZRV2ZhNVdwOEVGbW1FLVVzWkxYZ0k0QTVyMTF1UjV5UGZPckRSNA?oc=5",
+      "title": "Radikalna odluka: \"Zatvaramo sve granice sa Rusijom\"",
+      "en": "Radical decision: \"We are closing all borders with Russia\"",
+      "outlet": "B92",
+      "published": "2026-11-15T16:37:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMimwRBVV95cUxQVEpYeUpJcWFlM2w5YjFVV29DQWs4b1lLX1IxdnkxcHVOaHFjSUR5TVhaZkxlQnVyRVJfNUtIR1BIbFU2Y3RmcTVPVHNJMVlVZVNUSW9ITG51WE9aOXJiM29oMENuYnVlWUIzT1ZWNWdsbzdLbkxuOGRla1d6RUNXTW9zd0w3NmZ2b243VWU1aFVrek1LbnF6eHJaWVNMNGYwOHo4Q0tON0Y5cHVMckFsVWNEOFFyUXFkd1Q1dTlCVkFfOFFSWFR3SzlTWWFIRUFGVlRZb0R4WGNxNnlDSVdGczRIeUdMQWpVSURSUTZHa01nZ24wajlPVmM1RTRuaVd1clVNRkdUcEdrXzhwSFJlQUJ3YkxfNkdfeXd3ZGhubmNTa2p1TDhJTDI1dE1vNjVlb2ppRFFMY2NmWWI5WFQ5dVEtSm94VWEwa1UzRmlzeVpkeGlSNTF0bXlsRkJPNTA0MnRHSDFJMlpMdzlnNlN1OEgzenV2bDZMcGlBOGVqMEdweS1kLWRvcFFRa3NmWF94N0NxNnoyQWthcUt4WV8taFpNcDQ5R1dYUzFBRjRPRDJIY3dtVXU2aVEwUDd3LWR2WEV1SmpEZnV0MU9GWElhRG55akxkM05jMlFLenotRDJIYmY4TVlJdll6ckpxWi1NVjBSRjJMQXJXNUM4M2NZUmtGeGRLd2tfMFJuNjBuSHlJWHFFWVBYcjhGQQ?oc=5",
+      "title": "ضربات أوكرانية تستهدف «عاصمة البتروكيماويات» وسط روسيا",
+      "en": "Ukrainian strikes target the 'petrochemical capital' in central Russia",
+      "outlet": "الشرق الأوسط",
+      "published": "2026-11-15T16:35:33.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CH",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQzFQSC1qdjZzdVRGMVV6VkpQTDRldnJSZGVIbGc3X1FwMjQyeVZUSk05NWRaNDhUTVpKVFdBZEJMNHVQbngwWUQ5ckdlYm9zUmJMYjBaWGpEbjA5cnB2RVZzQVc3ZkpXMUFPekdCWml3ZWtHamxEcTdoN3lKUEg3SVljeGlkNnI5ZTNTNlpmRm1TV3R5OFF2RS1R?oc=5",
+      "title": "Wegen Sabotage: Estland schliesst alle Grenzen zu Russland",
+      "en": "Due to sabotage: Estonia closes all borders with Russia",
+      "outlet": "Blick",
+      "published": "2026-11-15T16:30:46.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NL",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVm5EdnI1LUR0LWpRaE1kWVM2NThaS29kek84X0pVa1c0cGpsYUllV0ZYYmhCOS1JeEdrZWUyNmVZbUh0RzNZeGFOQkFMTElwSDBlWHFuR2R4Q3NCS1FZM01JMVNkMnR0dE55a3BqTVBpR0hFeFhWYlVMM3hZXzg3Z3pfOGhiMWhvX3VuOUJnMFpGajJIdmRoalNaa0VDSDNCOGhmSVZpcmF4MkdIUTAxLUxiSFE1bXFGbW83eTV6NnM1TkJ4VW9SekFLT2NpQQ?oc=5",
+      "title": "VS legt pijnlijk vredesvoorstel op tafel, Zelensky klaagt over satellietblokkade door Elon Musk",
+      "en": "US puts painful peace proposal on the table, Zelensky complains about satellite blockade by Elon Musk",
+      "outlet": "AD.nl",
+      "published": "2026-11-15T16:30:21.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JaTBvWEdnWHlEWUpPMzNCb0thcEJYOTU5UDRTaF9fOTZfcDQwbVVYdG1LN01ucEVOcTZ1dXNrbGRhTHNoOEp1ZncweHVUQnZxb0JuVVl5bzRHM1FBdEtNYm9DU0tIeTR1TVZJ?oc=5",
+      "title": "外界忧中美俄上演“雅尔塔2.0” 学者称三国难划分势力范围",
+      "en": "Outside concern that China, the US and Russia are staging \"Yalta 2.0\"; scholars say the three countries will find it hard to divide spheres of influence",
+      "outlet": "联合早报",
+      "published": "2026-11-15T16:24:50.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BE",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUDh0UTJ4N3hrdi05ZmVWaWdXOW0zSTNuS2RnUFVXNDkzYWc5dUhnNmhLX1N3WHpxcW9OU011bHB1TVM5ZnJJMmRJcVhWQ3IxSmRFbWVHd3NTcTliMHZRc19xZXE0UWhYcTRoV0gtaHBreFoxV3FEb0Zsd1pORUE1WDEwd3JJMjhsWE9wWXlBcloyR21KbENkNkswc0ZzckE4VXZicGQ0bUVyemxtME5CYVhsV3ppcXZVQmZ2b3Rtd0VybDY0YTJ6c0lUTEdISXBPRDFzajNsNmlmME9FbFZMNzFnWUsyb2pJLVVHUHJkUEdTTE5kYVRtTA?oc=5",
+      "title": "Un pays d'Europe va fermer sa frontière avec la Russie après une nouvelle tentative de sabotage",
+      "en": "A European country will close its border with Russia after a new attempted sabotage",
+      "outlet": "DHnet",
+      "published": "2026-11-15T16:21:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1lU3VZdlVQTnR5RW5UZXlqT1l1d2hvR1R6eDlpcm14aGk0NmJET2t0bFMzMXk3aDcxNXltMzB4Z21UekQ1cGhuWlhMby1aWDB2WTUxM01VLVpRa0pQLW9PbnJWR3Z2UUVuSnFXaHI5cHE2YWlSeHp2YUVJOA?oc=5",
+      "title": "Világ: Észtország lezárja határát Oroszországgal",
+      "en": "World: Estonia is closing its border with Russia",
+      "outlet": "| hvg.hu",
+      "published": "2026-11-15T16:20:27.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5VdUEzRXpHY19ONGpodVlnNnBPVElTVTdOMVQwcVBtRTlGWGtDQVJQRWpLaGFMdjRwZzQzUTBHZC00Y1AwVkswb25Rb3I4eHM1UzFwVGFfcUlOOHFsZW530gFrQVVfeXFMTW01UEI1U1ZfckF2eldzTWY4VVlIREswM085T3NXb0p3UlRCeHMtb0VhTFVMMWRMUFNpYjk0WENfYTRQTE5OaHNwQWpPTlJ1ZlJaYzdET0JEWGwycE13QlhwOVhtNDl3eG9YYmc?oc=5",
+      "title": "Естонія закриває всі пункти пропуску на кордоні з РФ через спробу диверсії",
+      "en": "Estonia is closing all border crossings with Russia after a sabotage attempt",
+      "outlet": "Українська правда",
+      "published": "2026-11-15T16:17:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AT",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE13VzlXd3kxMFVNRWttTWdMLUJvOWY5em5ocFcwdE9aSDVBT0hZYUNnc2ZvUUJIQXJ6M29pY1NUamVnZERGT3c?oc=5",
+      "title": "Estland schließt Grenzübergänge zu Russland",
+      "en": "Estonia closes border crossings to Russia",
+      "outlet": "ORF",
+      "published": "2026-11-15T16:14:40.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNR1BISEI4WW05MmVKNUwwUUdqc0lzVV9SOHRtc3FCbDdXb0c1V3VyRVNGX3lOQ2FYZWpxellBMEJ1RG9zbXhNQXFpVTdtWVZrQkF1QndPTk5ZVlJ2Z0VrNmZGdktyWmJwcXJwSDZoN3V1NmpQSEc5N3pHZDMxRmxack5jVENkZmFxU0VZOTJkOGh6REo5eGx5WGdVX3FwenNZVkZsZHFzLWl1YlhaNjhVc3JLTzBaaEhVbkhqeVJmampxdmtmNHl6WUd2dmdsdw?oc=5",
+      "title": "Buvęs JAV ambasadorius apie derybas: Vašingtonas padovanojo Putinui 4 dideles dovanas",
+      "en": "Former US ambassador on the negotiations: Washington gave Putin 4 big gifts",
+      "outlet": "LRT",
+      "published": "2026-11-15T16:11:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "NL",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQbDNYNTVUM1VESkpIUTl6WFZhOGJNSERBMExxeGt6WFhGOXRPTnI0ZXpxcGpsNGxzcDFRNnhyTFpzTUQ4RlhrS01LbGRjcU43dDgyTS1FOVRES3R1RTU5eTVPLV9kTE96RWdUTlBsR28yZjNNNEJYVm11OEpWX1N6RGppbUNRaFZFbGVQa2ZTck5pejBqcWNBT1BWMDNBUXI5bG1Pd3ptSG5nY05qaC1oN3pWMzBHeWRxUEpfYUNDSkdlTGVIRUhWdXVPNVU1aHJLT3FNZ18tSHlhVURBbW1TVk55emZtSE1QOUNDV0dGN0pmbWs?oc=5",
+      "title": "LIVE | Estland sluit binnenkort grenzen met Rusland: ’Inlichtingendienst heeft opdracht gegeven tot sabotageaanval’",
+      "en": "LIVE | Estonia to close borders with Russia soon: 'Intelligence service has ordered a sabotage attack'",
+      "outlet": "De Telegraaf",
+      "published": "2026-11-15T16:08:26.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMitwNBVV95cUxPakxyRTNKV0g4bFBWTlZhN3VGUXl2ZzRPOUx4MWN3TklnTzlncDA0X0RhSVhSZmdtcU1zVC16cDVkbk1LaXREYzFPVncxTEtTR2hZaFIyVHVuMHREaHNDM3BIeWY0ampnMWpUMlFUY1hZQk9ZdXc5QjJBMld1ZzI4Y0YyMEhOc19Mb3JKM0ZJOU5BWlV5enkzN3ZBNGNiYVJvU0ZxUjJ2LVZEMFFPYkpBODRXZTJ2eXZrLV9aZW5mN2pZOFBMWEUxZEFRRkJuOFFGLXpFR2xLRlB4MWZkaGwwSEVJRVB4TE9abWw1dTdXVmJraVRwbm8zdzJTamZiOWk1cDhwM2dlNlQzc2x3aXktMVJkaXp5WElyd3QxZkc2YkU2R291dEdOeTlFRDJBZ2hGNE5aYWlqNzNzbTkwSnozeVRyUGhyMUZNSTJOYUVyLTdBcFZYM2JlVEJHM04xcUhxRWlwcm1xSU9ZNmFpRHBwc1BEVWU5NXBhVF9Oc29fSkxkWTROSkl4SEV4QVA4aXJCeFdqdUVwbHZ3YVNBSVRrUG5jSEt2c2pNZkJmQzg1d2NpczROQTdv0gG8A0FVX3lxTFBhYVB2UndKUHllYXQzZHlYQjRWVTQ5ZHZEMGhjLXUyQXJERVMyRzhGTjZvSXdneGF0eF9kdll6em4ycHhRMzZXdG9zMnQ3R0RTUmdwdzVMNEcyN3VTR3NVU09rTmM1ZEczWEduNC1fbFhZNjNxbW1kSGtzWDVHQ2JDbHNIMkIyUlpXRzZRY0x6N0NnWWJwcGxlNTl4aUdpdHhrZEhMQ0d2RVJWeUxiVmtwSWZqVS1nUUFuVmJHYlZ0Z19HQjVmcTIyNVRuVG1tbDNDa2pjV01oanJ5NFBkQzQ1dVp3Vk5TX1lXcUNlaTZYWXhSSXZleThMMVI1dVlROVE0Q2RXS2J5bGVyRVZfNGU4NENERUFkS2dvdkhaMndkTk1DcWRleUJCVTdzSmhoM0lmeE51M0xFXzVOLXl0RGRTazl1aWhQcUtEcmdwd2ZyOENPUXI4UHg2ZEUyVGk0XzlfVXh0S2I3Y3FFUmxXQU9PdTZsaTdJSXdNclBCTXdKSm8ybnBUTnJRZ2drMUNxelZIb2lBVUVhYzVXUnVhMy1BNlhrbm82WG5Qc3czamNjVm9FVHNKSm1LdFdaRg?oc=5",
+      "title": "اتهامات بالتخريب وإغلاق الحدود.. تصعيد إستوني تجاه روسيا",
+      "en": "Accusations of sabotage and border closure.. Estonian escalation toward Russia",
+      "outlet": "سكاي نيوز عربية",
+      "published": "2026-11-15T15:56:19.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "KR",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQmRxd0U4OE9zX01ZRkswSTQxTmFuMGRnME9udkI5Rm45Q1hoa0ljVGYxblpPTDRDVW5mSmFhcXZvOHloLU5nVGNzZUVQTWRtTl8tRUF5eG9hZTJOS3dXeVE4WjZ3Qm40X1B0Wm1sa0tsYXV0SUlscnkwR1Rha1YySTVCeUVlQXdSUFB4TzBuSzk0bXQxMFgwQnJHanNQUQ?oc=5",
+      "title": "19일 APEC서 미·중·러 사상 첫 3자 정상회담",
+      "en": "On the 19th, first-ever trilateral summit of US, China and Russia at APEC",
+      "outlet": "조선일보",
+      "published": "2026-11-15T15:53:00.000Z",
+      "outlets": 4,
+      "trending": true
+    },
+    {
+      "from": "DE",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaFgzckJZM0hrLWU1Ymo0YTQzWFRPWUZuMEJQRHVCZGZRN3RfaHdrZ21oZVlIQ2xYdzhfbV9SZ1VIam1xVEhVaEswN010c1p2c0FudXJxN2VYMzJOVUh5WjJMLUx0ZWxZU1RXRGEzTHcxamlDaXpSZ2ttU2s4SkFYLXRtc21LdUdOZk5ydmVWdTY1ZDl0TFBpeVV6SnBHQWJHbVpGLXhjYw?oc=5",
+      "title": "Eskalation im Baltikum: Estland schließt nach Sabotageakt die Grenze zu Russland",
+      "en": "Escalation in the Baltics: Estonia closes border with Russia after sabotage act",
+      "outlet": "Frankfurter Rundschau",
+      "published": "2026-11-15T15:50:23.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNZ25OdGZPZkREU0tRUTJHNFJBZ0l3WGp1UTJCNHJ6V19CWkZuWlBDSC10RDhPMFhvY2NTNTlBbXVlX3pIS1JrZkJrLUhXMnZwYWVobE9xamZIeDZHNlpxaUZKV1U3V3hJeVJ1QjRxcV8zUndGMG43cVU5c3o4SkNUR1gwOTdhQm9jcEs1M3JLc1R2Z3h0clVvZnE3YjdHb1lPcWh0cVk3SWRFV2hLLWZFQUlXOUxtZjZGSXA2YkNzY2tJVlBDYmRwZTFjR1Fad1hKYzloZjljelRRZlRjaXhEWk5WajB1aDN5U3RQcF9JTE1LU2YzTHplMmJzMGNCaE5nUUlkZXdqQW9ndnFoQks0WlA3NGN4QnlGNmc?oc=5",
+      "title": "Guerra Ucraina-Russia, le notizie in diretta | Il Cremlino: «Se non ci sarà un accordo con l'Europa useremo la forza». L'Estonia chiude i confini con la Russia dal primo dicembre",
+      "en": "Ukraine-Russia war, live news | The Kremlin: \"If there is no agreement with Europe we will use force\". Estonia closes its borders with Russia from 1 December",
+      "outlet": "Corriere della Sera",
+      "published": "2026-11-15T15:45:50.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcXhsQ203TVZyN2hvOTVJLTBZdUhyMzg1TjFEQjVrdVp1dzJTVmNGbDN4SFFXaFp5ejNmVC1sVWptdGJyT0d4aWFaaWF0Wi1LTEVaS1VKbE9uVHdTeWlyYnp5ZzRUZW51UUY0RHkzNl9peEhlOHg4LWJZRjJrTUNrSWIwOEo2M1Rj?oc=5",
+      "title": "Estonsko zavře hranice s Ruskem",
+      "en": "Estonia to close border with Russia",
+      "outlet": "Novinky",
+      "published": "2026-11-15T15:44:41.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOYWJxbVJZSkhTMWR2R0JCUElTSERMa1hCbmpBaUV3azN4SXVvd1lsWS12U2MzX01YbFhITUI5emhtaXY0cmNXUnhVd3Y5TVc3MnBLZzVxYUV2SnZpWWRLdDl0allkTkVuaHV6VHZYU0tMdlNCdzB1T01fMmtnQlliQ2NXV0F1N3dDcHRzSktmTGtPdGtCZ3pjdDVEUnY3TUx2TUFUTWdFNA?oc=5",
+      "title": "Ukrajinci zasáhli tři ruské strategické továrny",
+      "en": "Ukrainians hit three Russian strategic factories",
+      "outlet": "Novinky",
+      "published": "2026-11-15T15:40:41.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVk5rRTJKQzhOcGtLTmZfR2ppZmFCT2RFRHc1YkQtQkdleWI5VVJBbFFOaG1xVTE0TU5SNXZkSk5WT3BTbEhnTWd1V19XVVJuWDJiNkxocnkzRGtybnBxTGFFN3lXbmt6bXhUZU5teXAzaGw2RS1URnd2NVRMWDNhdzFRTmV2WUxVRk1uSGk2dEhCNmZPSWdjV1pjZG1VaGZERV9VTGZB?oc=5",
+      "title": "Estonia zamknie granicę z Rosją. Służby udaremniły dywersję GRU",
+      "en": "Estonia to close border with Russia. Services foiled GRU sabotage",
+      "outlet": "Wiadomości Onet",
+      "published": "2026-11-15T15:30:14.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSVlYN3J1d2hVM2xNdGtHSjRoMEdYTlY2OVAyZkNwOHAzMU9UbDk2T3BORHZfQjc2ME5qOUVOR1NkU3lHZVgxeXhtcy1lX3ZEdmIwMDBrd29vaHBsYmU1QVFKeHI5Qy04SjVwdzhyZXM1NzlVelJfZWtXWVgzQlNOSzJkSUhzdnFqTWFJQ0F0SFZ5eDdQdVZNQlJyTQ?oc=5",
+      "title": "Молдова рішуче відкинула російський сценарій федералізації країни",
+      "en": "Moldova firmly rejected the Russian scenario of federalizing the country",
+      "outlet": "UA.NEWS",
+      "published": "2026-11-15T15:26:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "FR",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPV2Q5Y0lFTXhkR3BaYXNnLUtaeGZ4dlUtVGtJdkpWZkR5bENMZ3hNZTh6MWtpZTBTeUJKMXhhQVRVQVN5QlR4QVRJRGZHUklIRmVtdmkzQVNxR3FRdHdQZVYxRTk2dVRhQVNYYUtmSVI2WkJKRUxDU2N0NGdRdU1mcHNkZjFXMFI2TGxJUEhnM0x1dWl5Qnp4bWpjcWd2TzNWMm9VOG9zaGMzQVdUTWdzR3FDZ3o5S2VCLXpocTJEX19tdjJ5ZkVkbUhWSE5ubXVhYm9TbnA5Z2ppa2JNMlVheE1hNXBSanJzUnRQVGtTM29pUU85VVhDbHV6cDl3aGItWjEwbFllRXNKZDYwVmdHQmJad1Vra0JLa2c?oc=5",
+      "title": "DIRECT. Guerre en Ukraine : des drones ukrainiens frappent une installation pétrolière en Russie",
+      "en": "LIVE. War in Ukraine: Ukrainian drones strike an oil facility in Russia",
+      "outlet": "ladepeche.fr",
+      "published": "2026-11-15T15:22:38.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NO",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdHFHbG02aGhYRXNCcFRoNXNnZVBhR3UwblI0ZGtxNF92RHFXOThrTGVkZVgtc05zWlJhdHhqQ0tfenNZMzlxakxZWHF6MGpuVEZ6ZjBfZmVkYXBmNkVuQ09UZEFXdkFkd0JYeGpmTFQ5X0htdlNfa3hWLWZSWjg0Q3BtN0FZNmpUOVVRdTZyQWVISVJud3l3YXRPSkdzeVR0RUtXSG1Kd056VGl4?oc=5",
+      "title": "Estland stenger alle grenseoverganger til Russland fra 1. desember",
+      "en": "Estonia closes all border crossings to Russia from 1 December",
+      "outlet": "Aftenposten",
+      "published": "2026-11-15T15:14:26.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
       "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMi0ANBVV95cUxQaUw1YmhjM2JQb3B3UC1udkhRWERHZ1BmR0RwcnRBVDdyXzJsR0ZGZ0ttTkxJeU9lUHJXdkktblk0dGxoaEtzY1RiVVR0TVh3OXdVNmhwVkRNZlZuek92d3RzNk94ZXpPVHgwSW1hRHRVamNlOTBZY2NMdGF4Q3VsQVhHbU5aUVFYM0tqc2NTUThIV1B0aTlZNWVOREgteHd4VlBodjZKMG5EdTlfY3NWRGVwT195NkpZa3BnOXQxcVo0b0hfa1dFendfYnl0RzRZUzVRaW1qUURxN0hKREZYcTg4SXpES3p2QncwQWF0NVdEcVZtdGJtNzV2blB0QVZ2SGZOSlZjS2JLV1hySlQxVkhnSFhadDZzVUlOX2hNcjZ5N2FUYjR0SXpHRW1pczAteGpzV0wydnUtTGRQWDZwNjdaR1FEMjExVW4zV3lCamhLcTJLNVc5WV91c19qRUthWE5NMjg3ZFc4ZUZ6MG5RSGZ0eXhtZlFpS3NtZ1ZuQ2RVM0FKOW5mZldvX1pGSkV3VnVnWUctYWJ6cERnNnJnSUNfV1ptYkYyNF9iQlk2X0dkQ2I2b0p2STNDYVZLbWZrX3k2LXdydlpkaXdDUVJuZA?oc=5",
-      "title": "بعد فشل التوافق على \"ممثل استثنائي\".. أوروبا تختار \"التفاوض الجماعي\" مع روسيا",
-      "en": "After failing to agree on a \"special envoy\", Europe chooses \"collective negotiation\" with Russia",
-      "outlet": "الشرق للأخبار",
-      "published": "2026-11-15T09:17:26.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwVBVV95cUxPVzZZUS1ta0xLTlN0dVVBX3AwNXRwOG5yRXpVYmpXeUp2a3ZSQlNYQXFHUmhKRFZSdjF3QnN1d01ManhyZUp3ZzlXUzloeW5IVm9DS0dJbVFQRVFGYTQ5dkxvODUxa1NYWDdzNG9ZS1c5eGVmWDRGTldJajFzQUhFMUEza2MxX2Vkc1hwSEtIaVh6dlBmeDJsVWN0YmVheUM3ODVwQzVxMWlBMXE4Z2xRMmRhYVN5UUJpVEx1OUdkb1VCUjFEaDFJeTZjc1U4dFBUdkhQbU5zeTlfR2RiZHAzRG1kNnF6WTVGVmNfUW5WVnF6OFZzQjVtaEw2N0N3M1NwWnd1S1J2S09QYzFXRU9uQzgzRlNXanZsOUVUSUY4YWdEUGJwb3JOWExRaElWTGxnZHhBQ2NhM2lwaGx0NUFhYWc2M1JhcE5RQ3R4bFhlOUpRRV9YeWFPa2F0OVl6aEY5d2dERUM5Y2xhdVhHZmJZdmk3M3hCRHhvTTZQSzNMUkFBbWVOUVZFd0JkOFBxMG9TVjZzc3hFTFFfZ3dYQ2QzWTRzcXNFbnZ5LUlQR1B6Q2hpVkt5MmdSaF9ZekUzZ2JWUnpxNTE2aUJVMUdzUHhvbE96Y3dwWUoxZkdKVjZYQkxEbWJQRHZJSGtpX2JuNDlIRXA2QjlOelVfSXVkbGlNVVFoaV9nbzg3LTNnVmNFZkMyVmNjMXBlaFJyQkJYWTlmOHRuQzNGblBHMndIRC1nTjlIZ0hCdlNRZXZhUGc4MlR2bzFpbThXU1puUkFSM3AzTjRxdGpwR29weG9wNzlyUkUyMGJCbXk5YXdLT2Y1OXNWTjBxTDctTnpIX2hyOV85aW5xYmlMYWF3M2JPeEZYTWZwdkNBZVRSUVlwZFNUNA?oc=5",
+      "title": "وزير خارجية إستونيا: ستغلق كل المعابر الحدودية بين إستونيا وروسيا اعتبارًا من 1 ديسمبر",
+      "en": "Estonian foreign minister: all border crossings between Estonia and Russia will be closed from 1 December",
+      "outlet": "https://www.akhbaralyawm.com/",
+      "published": "2026-11-15T15:11:18.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ29GdG5mSWV1ZHpaX1dIaEtOcE9LZGlMM01SNVZYOGUxeGpHNkpIeTlYVEVjc3lFak9Wblo5RURxejZVMUtSWm04NkZhX2ExcFFWSTBsVlRnWjZ6Q0ZmRTA2ejdOWlZTNU5YT2hHZlFmVHgySkljMUQ1T0JiRXJYWW9IakpJRHg0YzhWZFB30gGTAUFVX3lxTE5xaENVR0h6SXBwVUlwbnhPLVROQkhwODlqY2phdnBvSmJIeGZfSFVIYUE1UURaV0UxdGlmTkh2aEFmZVRXUlIzVFVobFJtNm9pT2N6VGRXQURUNFVlZUJSSWY0b1piUVFZbEFGS05JYlZlSnJEOEVyX1JGSUU4RDhJcnlrQW9kekZDYUtxVnlhWTNLVQ?oc=5",
+      "title": "Росіяни атакували енергетику двох областей: у Запоріжжі світло частково повернулося",
+      "en": "Russians attacked the energy sector of two regions: in Zaporizhzhia, power partially restored",
+      "outlet": "24 Канал",
+      "published": "2026-11-15T15:11:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "KR",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5YQUMyU2tWWmtvcVZwZU8wbTJrSFZBMURrbTBUTlhBbFVPTDRvZWxJMTVuUzJWRmlmT3lkTGUyMEFnT3A5dGxyTDQ4NmgzWlpnSXJJUGNPcWNEdXBj?oc=5",
+      "title": "[중국증시 주간 포인트] APEC 미·중·러 정상회담, 엔비디아 실적·젠슨 황 의회 출석, 中 10월 실물경제 지표, 앤스로픽 IPO, 첨단 기술 이벤트, 中 4대 빅테크 실적",
+      "en": "[China Stock Weekly Points] APEC US-China-Russia summit, Nvidia earnings, Jensen Huang's testimony to Congress, China's October real economy indicators, Anthropic IPO, cutting-edge tech events, earnings of China's four big tech firms",
+      "outlet": "뉴스핌",
+      "published": "2026-11-15T15:08:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObmxDdlR2VXZCQkhGVWhiSGtOSlZaZV9UOGxNYjFZcWVfZ2ZZcWhJTnJDb1Z5dC1uS20wTEVRdERjU1ZPV1ZaNEdUZ3BVSVNGejlsUHFhMmhld1k3S1cyRDJqWWNOZmdNU21kRHNjTFZIaTdqWmQzRE4wbUxjN1RhdkxOaGlQLVNrdXpzbE5lRnNrZm1FYlFBTS1NUFlLNkMxTWN3?oc=5",
+      "title": "България е спасила още две руски банки от санкции",
+      "en": "Bulgaria has saved two more Russian banks from sanctions",
+      "outlet": "Новини СЕГА",
+      "published": "2026-11-15T15:07:18.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "DE",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOY0wzbVVmNERaRWxKekZDVmw4dDB6YTE4OWQ3YlU3VzVSaHVOV2ZFT0plWXVFX2RwMEFfZEpFY2RRNDBYWVB4VklQSzM1U3hLS2hwUFU2Nmt0ODBPaDUzbW9xbkRNcEp3R09lVjlEdnN1cEU0dXlQYUdTY1ZfcHU4UlBpQU12cnBxT1JfdHV2ZVd2RjhHLW1nbTVfM3ZySFZReFBrakNxLW5uZlVuU0l1YXM4NnlBaWM?oc=5",
+      "title": "Krieg gegen die Ukraine: Russische Angriffe durch Starshield-Drosselung häufiger erfolgreich",
+      "en": "War against Ukraine: Russian attacks more often successful due to Starshield throttling",
+      "outlet": "DIE ZEIT",
+      "published": "2026-11-15T15:04:23.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQekxUSDIwU0lZSnc4OTYxaGRsanNhV0pKTWtyWjVDQ0NYTGRkTnJqRWVzb1FjUF9KRV96QUlFVk5UQ1V4dFNiZzBJZ2hGbndJaWgyTmstWVE3YTh2SlJnV0dMVXRXcGFwZVpLdWFoUE5QSDFRWERGZk9oRFlBYldVQ21qUUNMYzFsZlFR?oc=5",
+      "title": "„Cilj Kremlja da sruši mostove na Dnjepru i podeli Ukrajinu na dva dela“: Rusija nadograđuje balističke rakete Iskander",
+      "en": "\"The Kremlin's goal is to destroy the bridges over the Dnieper and split Ukraine into two parts\": Russia upgrades Iskander ballistic missiles",
+      "outlet": "Danas",
+      "published": "2026-11-15T15:01:50.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMigAVBVV95cUxPNlZ5TGhHWW9fR0QxZjU2WUdsc0J5YlprRWtGeTRGUUNLcDMtQXZBazVaU0tOQW5QNktvbGN5NEE0RjhWVW5BSFptRl94OVQ0SGVBWFlVYVJZdUMzTXVYNFlpc3M4RmxDUHhsdWI2b3VNdy12RXF5eC1TRVhZcFlOR1o3LXc5aXlEVFp3MDJETnFybVBCYXNKTkN6aDhpakxmVDZ1Q1JHYTRDZUJTdUc1U2RNemhPTVUtZjF6b2ZJeVpmbktGQk9PcER5cUstQ3lXRWFzNVA2UjVUQ3hrQVRHNGx6SE1yZEtQYjhfRGE3UDJmR1FBNHhfMTI2R3V3QjUzVlNmdWFaaFRtMENEQ1VGUXpSY1VVbDVsaklrWHNjOWVUaHZTYVNjLTk1WEs3VjgyTXF3OS1QMXpYYl9tby1SZVp0V0dYcEZ5VjZSUF9EQ2s2OFh0MmF4ZjBLdjM3dllEMkVnclltZ1hQdmcyeVNnNXcxWlkydkNkMnVfYWlnQ2VIcFRlZ21GMkZxaFhITld3anNSc0pWSHBqNEZqcjcwYmpUa2t6T0VmdjBNUkxCV3BJLVBseE9IYW1MRTdMellzOVNPNEN4SDFZbGVuRmlxWFdLRlJhejdacXFFbDcyTWN1TVN2YWRlZkNpWWNsa0NBZ0QydXgtS3I1cVJ4V0xsYXZfb0FBdkM5SkVHMFlnTHVHYmZ0NFA1RHd4WEJ0NW1KRTBqUV80b2hXTFVwZVFscWd2WGZrdWJaS0JObzl1dm5yZUExdElxZ0NLMVR6NFlIYllpUS1CaDhvTkdmVmZ1MU5kSndzZWZPN1hCanpIMG5nUVFDTm1MSUdBZUw1Vkl1?oc=5",
+      "title": "زيلينسكي: روسيا استفادت من القيود على «ستارشيلد» في مهاجمة منشآت للطاقة",
+      "en": "Zelensky: Russia benefited from restrictions on Starshield in attacking energy facilities",
+      "outlet": "الشرق الأوسط",
+      "published": "2026-11-15T14:46:21.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUDNiT2NtVXMtdm5jOFVMYzMza09KQWhTVlg2VF9nVm51cTR3emlkOFJWX0daMDF3X2NoSUVnMmR1eU1USWJiTk44dDdsM2xtbGtLME1CT2paX0xJOFpsUUF5MUxMT19EOXRjOEFSZENQOWNPUHVtUWpONGRsYmFncGFlX25yTk1hTUFYdUZLQWYxUjZTQ3dfTmRUNFVZYndiR25nRTlMOVhwdjdBY0dWSWVTMXdodmNRYlA2TdIBwgFBVV95cUxNMlFtWS03d3pqUHhXSnhoQ1pmQUpXTGRKN3pleGhjQjJvYVR5bzJFUTdaLUZGdjVUUTRlRTZDZzF3WU1FQUhEY1V5SERyVFhNeU9WMEFUZEdnQ05iblZqbUxvb05wcFAyZzV5emlnbE5UbWJQbkVTSi1VWU9POWNoeVJwX1hlMUhNRWJiZnI4ZUFsQm5BTHRLOXJ0T2VHcHlTWWZHZE54dHprSEZCdXZDTlR6Y3dHSE9yUjg2ODA3QXJCUQ?oc=5",
+      "title": "У Середземному морі перевірили танкер із російського тіньового флоту: що з'ясували",
+      "en": "A tanker from the Russian shadow fleet was inspected in the Mediterranean Sea: what was found",
+      "outlet": "Слово і Діло",
+      "published": "2026-11-15T14:46:01.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPb3UwYmVRWUZWejB3dG5uZjhDU3N6NTFTWkxPR2gzdlZ1OGo2LVBQY3FlNFE0OS05TGc4QUtXMldjOE5SdDlaT0JlTC1Da3R1elU4S2ZXbnphNDJuS19acUpBbW1xSjJJRXphem9VTm5ZVmc3RFJKWlZkbEVDbmlSUmo5VTlFY2xQdm1XX21GaWtlaXRRVDEyUVdvSHF1NDFOYnBF?oc=5",
+      "title": "Vladimir Putin ar fi ridicat interdicția privind uciderea lui Volodimir Zelenski",
+      "en": "Vladimir Putin reportedly lifted the ban on killing Volodymyr Zelensky",
+      "outlet": "Adevarul.ro",
+      "published": "2026-11-15T14:45:04.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wa0x2YzFGaWdjZHJnbVBwT3F5Y2xId1pBajVjZ0N3NVV5Q0RLandvcjJzNlVXZkZnYWxPZ0JWQ0NFblEyQk9sQ2I2NlNWaE0zS1hZ?oc=5",
+      "title": "زيلينسكي: روسيا أطلقت 2300 مسيّرة و15 صاروخاً على أوكرانيا خلال أسبوع",
+      "en": "Zelensky: Russia launched 2,300 drones and 15 missiles at Ukraine within a week",
+      "outlet": "البيان",
+      "published": "2026-11-15T14:43:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQTktmNm1kUzhoTDE4U0pvUVB5RjR3QWN4U1FoNFUxWkJ4SVdDV1FfQlJjdGNFLW8yNlI2eHFTcjhhZjh5QnVDMHEwZHZtMTZGUnU5MVZ3dmRrVkRKRDBtWjhMdm81bFNUT18yU0x0aTY1RkFTUnpOcER1VmNqWmNpbXh3ZXFiOVU2eXZhZUJTenBidVhHZW9LQTJfaVpXck9ueFg5T1MyN2dEbFp1aHc0bXJfVGpIempGMEJnaTduaUhmZnhsZG81cXMtSVNZWmpPX3lIa3EyT3dFZUFxQWZMRktMWk9mY1B6SF9HVHpZdTZreWx6a2NpSGpKOHkzZGhIZ3FteWgxVdIBkgJBVV95cUxOR2hmczBuRXhDajMxZkVwZXhnblJlNkpNQzFwbVowdnpDSk5fT0tabnhWTU8zeGVEc1hub3lyRkY5dWtrREVQUkJFem8tcC1fQnlCN1ZNZ29Pb0FVOWdpU3FDSlV4RnJMTWxTMlJ5NF9vT1RZU0NZSzNRbk1WLXZKcDQwWF96OXNSa1FULTZEbjRfeFc1QmttQmFLcmRlMy0zaFBDdUVUWkZUTWdDZUxBVVlLQnB1TkdacXo1RXlTOWY3ZWg1eWRyZW1zVzhfMnNXNDVpb19BMG1aRHVDMlBPSUY4TnFCcDRNT1ZvU0hkUEluVkVWV1hCLWh6OUg1cU5ZNHNYN2VmWUdCTWd3aEtTZHdn?oc=5",
+      "title": "Estonia a dejucat în ultimul moment un atac asupra unei fabrici de drone. În spatele operațiunii s-ar afla...",
+      "en": "Estonia foiled at the last moment an attack on a drone factory. Behind the operation may be...",
+      "outlet": "Digi24",
+      "published": "2026-11-15T14:42:06.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQUkgzUGRySnhZZERfcEJWYklfOG5aWUNEQmNITjROSzIwV0NpbHFXRDhRX2NJbWg5bHdTRkpvX0g1MV9EYTkxVlBHX2tGMDVrWUhodUl3UnoydDFRd18zNnZlX2sxU08wNmJPb0J1ZzgyZ3lvN044Y1Awc3U3UWJmT0RtRlhMazV5RlhRTW82QmpvS2pyY1V5U3BrTGFOMURMa2tZOUh5U1RFcWRoTHQzQ2U2V0ZXY1BTUTRMNjBoalowdzdQSV9BRFJuUWJISmpKR21tSm5TNDMzNlJnYk01aVBEUHNuTElMbnVXdNIB8gFBVV95cUxPLUNYa3ZtTUZwdlA4QzlyR1h2S09OeXdvbHJxNTh1NEdVRGQxV1M5dE5MMzBzR2xjTDlraHF0eUhNdUQwdGJ4aHhEeDI0cG5lUzFEVGtWMGJMR0drMVI1bFNyWVRXY1EzSXZLU3lZZ0JkVXJGa0pMb053N19NYjlGQlpYVmFIR1ZfVmNSZU82dVp1VS12bk91WGFkazQwMWhLdl9HN2xVU2Vhd3NaYldaME15dHdIYW1pYnB6ZmZTR1Fid3RwWXdoMVo3OXg5YS1FU3Qwb0M0am5QYnZ2M0FuU0ZYSExoMVRfTEJNbFBVaWpFdw?oc=5",
+      "title": "Váratlan fordulat az orosz-ukrán béketárgyalásokon: Zelenszkij kimondta, mikor mondana le területekről Ukrajna",
+      "en": "Unexpected twist in the Russian-Ukrainian peace talks: Zelensky said when Ukraine would give up territories",
+      "outlet": "Portfolio.hu",
+      "published": "2026-11-15T14:36:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMlFmd1NFdGI1b3RnYTh1Q3g0MDJqbG4xSmExNkNyM0R1ekQtREFidFlPMmM0aW5USnlVNkY0V0p4dWR4MkpkMDhjQjQ3QkhmcTM0YWpyS3hTdlJyLVdrZFhqa3FkUl8zYkV2ZDlDa3JyMWZXNjZkTkFkblFmOWJYZnl0SzVmZWFuSndYNEl6MWd0Qkdfbm9jZUljY1lZZ2s3a2w1RDBsTnp2VUJBX0pEMGxiTlVxQ3llZ1llRVY1SGNTT3ZST0ZBRU9abEl6bW45LXd2ZXhIajDSAd4BQVVfeXFMTzFicVhpNnhHbnZrak9HVzBzOVBQWmNoU08zWlF0eEVmRXFGZ2pQYzZxaklObmhrNTJPMmMwVnJxSzVLa19CMGpOZzhKVW5XcXhQckRsT21EN0VOS1ZOUEVGNGtHaWZuWEF5MlNZbEhkUkoxVFRkcTF4U29ZUjJBUkJLMXplUXdhVWlhMzlKa3Qtdm5vS3QyOG9tUUlfSHF2amhORTFVZ2t4RDlFaThhNTRzamZtcERScDB4Vlptd1RQNHByX2l6MkZoTXlEMUxoRlgzN2tLQXBFc0FDZzdn?oc=5",
+      "title": "Якщо Росія зруйнує мости Києва: Флеш відповів, що буде з поромами і понтонами",
+      "en": "If Russia destroys Kyiv's bridges: Flesh answered what will happen with ferries and pontoons",
+      "outlet": "УНІАН",
+      "published": "2026-11-15T14:32:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NO",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNb0ZFM0VHOUJiWmZYYjI5amNxSmF4VHRKSVdsSHlIMkpiaWlRanFySlNQLXZWeTk0N3VqUFZDVVhUejd5R0J0eXRJc25JRF9obFdKZ2xRZU1QQ2dBVV9JM3hkR0tuRkZ1d1FvT2U2azNrUlBYUDlnam9Kc1F0VWpZT1ZoNUQyWjRjNXRFNm5LU3N4dG8?oc=5",
+      "title": "Russland, Vladimir Putin | Putins hemmelige dødstall: Kan nå 650.000",
+      "en": "Russia, Vladimir Putin | Putin's secret death toll: Could reach 650,000",
+      "outlet": "Nettavisen",
+      "published": "2026-11-15T14:24:09.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5xLVpiV3RYWHRmSXV4NjBPejc1cHlmSG9VMjNSRDNxSGlaWl9uT1ZraDczU1RheWM2VUdabFdDcFVVNVk0X0NmODBob1U3OFlyUEI2cWZZX2htNkEzX1FBWnc4eHJrOWtiVGsyTGtR?oc=5",
+      "title": "Zapaljena jedna od najvećih ruskih petrohemijskih fabrika: Napad na industrijsku zonu u centralnoj Rusiji",
+      "en": "One of the largest Russian petrochemical plants set on fire: Attack on industrial zone in central Russia",
+      "outlet": "Danas",
+      "published": "2026-11-15T14:21:18.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "DE",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2VCTnh3TFBiTWpBQS04Nm9YdHJGRlE2SWNFTkFVWVBBRVZsbnJKNm10eTJnNmZEZTBRZDd3V25LNkJ3TGxmRHFWVjJ1UkZGdGhTWm5RY3duTFR3R1pINDVkam9xY0xWeTZBWFQxWWtvOWQ1T1NMTEU5MXA1dXBoS3dJc0paVTVZT0NZTHJJdGFxTTkzMDNCclJQaVI5ekFIQ1hpMnRuelY3UXUyTnQzdko2U0xuT2V2c09Pc3U0M3N2QzZCaHd6dENhNlI2QQ?oc=5",
+      "title": "Ukraine schießt großes russisches Industriegebiet in Brand",
+      "en": "Ukraine sets a large Russian industrial area on fire",
+      "outlet": "Spiegel",
+      "published": "2026-11-15T14:20:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "AT",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2VCTnh3TFBiTWpBQS04Nm9YdHJGRlE2SWNFTkFVWVBBRVZsbnJKNm10eTJnNmZEZTBRZDd3V25LNkJ3TGxmRHFWVjJ1UkZGdGhTWm5RY3duTFR3R1pINDVkam9xY0xWeTZBWFQxWWtvOWQ1T1NMTEU5MXA1dXBoS3dJc0paVTVZT0NZTHJJdGFxTTkzMDNCclJQaVI5ekFIQ1hpMnRuelY3UXUyTnQzdko2U0xuT2V2c09Pc3U0M3N2QzZCaHd6dENhNlI2QQ?oc=5",
+      "title": "Ukraine schießt großes russisches Industriegebiet in Brand",
+      "en": "Ukraine sets a large Russian industrial area on fire",
+      "outlet": "Spiegel",
+      "published": "2026-11-15T14:20:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1heEpOQV9HSFZqOVdIbVpwbWkyUTdReTY4cmVKdkgxVWh5Q2dVNEpPRXBZM2NSWm9BQ09YSGRrRmt5NzI5UEhMckt4d1JzM2JHQWJiR3N0OXR1TDlGNVpz0gFrQVVfeXFMTkNmVWkwMlh6RlRXN0pQbWItclFpTkJuQ3B1Y21BOTljTGNrZDRnaUh6REpra3QxdnFyQ2tTZ2pZWm5tTmppUThMN2pHajJFWGlLcWwwLS0yV2VDenkyN0FTXzFvMUdGWHRmenc?oc=5",
+      "title": "В Івано-Франківську затримали студента, який палив автомобілі на замовлення спецслужб РФ",
+      "en": "In Ivano-Frankivsk, a student who set fire to cars on the orders of Russian special services was detained",
+      "outlet": "Українська правда",
+      "published": "2026-11-15T14:13:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOYXEyTk1KZjROUVBGRlVsdzdFWFlfbVctb0llYVphMnV5WHFBWlpweWpVLWt2YTA1aXF3RFFZZEgwSThsdm5wUGVsUjBNelBzRzhxeGFjX0ZFcENhY24yY2JSOGp6R0JJM1lTUURfbVh3SldVNWtGUEY0eEp6Z3dZQWFsQ0hQUnpsYk1NOHJMdGRUOEZ4bVZSRkJrVERyYUplb3owdWJpRTY1NlBPMW1uN2ZMYUxBYjZTRVhmZFhCSnNHYUFpQ29OZm1IcjhmTndzd2QybzV2TGgzUm9BU3NMTnQ1REhQODJhdWZTZ0hR?oc=5",
+      "title": "Estija skelbia užkirtusi kelią pasikėsinimui padegti dronų gamyklą, svarsto uždaryti sieną su Rusija",
+      "en": "Estonia says it has prevented an attempt to set fire to a drone factory and is considering closing its border with Russia",
+      "outlet": "15min.lt",
+      "published": "2026-11-15T14:08:03.000Z",
+      "outlets": 4,
+      "trending": true
+    },
+    {
+      "from": "GB",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX2hUV0NzQ2diVFk2akVsWHJLa2dGenpKNHBjQkR6QS13eV9UNENTTWsySWR2WmZDNFlfSXJQZE10cjBSX1VVUXAtM2pVcnJUTDVVMGZVbjRnNTR2N3JaNGtNaTZGNDBHT0pqaDVjcFV0RnhJUmFhV250TG9sUGw2enhxdUpEQWpLX2hwTXNUcDdTOWFwcEZzR2NjcnJBTWdObjBFTlZXeUlvMXhCSEE?oc=5",
+      "title": "Estonia prepares to close border with Russia after GRU-linked sabotage attacks",
+      "en": "Estonia prepares to close border with Russia after GRU-linked sabotage attacks",
+      "outlet": "ERR",
+      "published": "2026-11-15T14:08:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "US",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYXVHdjN4S0gybDBaU3lRQXNUNGRQUGFCM0hub3hRRi1jZHZGWjRFTXFHMGlEMWFIdDllRW5lUGF0d3hrTWNvbTRSODk2b3Q4UTl1OHUyc3Bqcm8tUmZ0bzFWUm5LbjJtTXdad1pJY2RBcWZ3VmptYk9PUmZMV0ZZQlNtbE4zSG5pVXhOVGl4Y0VGZjk5TWVKNlJINXdjckp4dlNXN2gwVdIBrAFBVV95cUxPS1VjUE9OMUVfRWhoN3ZIRGJoRHF3WlktZ1VCVkRBVXdwLVprbHRMNXJMc2kwaThmaUU5NU04amdVVnJ5R0x0Nk8weVJYaTNnQ2d3WFZwQzdNRlREYi1pNm9udXg4S2ktZ1ZBS2ItR3NVbHBQLTlXYXU3UzhXQS05Nm45X0paWV9YOFIzQXhSenU4LXJocWNKak9kZDhmeWYxcmQtM29QNXdaLWI4?oc=5",
+      "title": "Putin's war machine tied to troubling recruitment of young women as new deals emerge",
+      "en": "Putin's war machine tied to troubling recruitment of young women as new deals emerge",
+      "outlet": "Fox News",
+      "published": "2026-11-15T14:00:46.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "MY",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTnloY2NSTVdqUnkySjVodEs3dWNRb0M5YjlVUkpBckt3OFRmVElzMzhfTEw0OHJCeUVJNEc1S0xrTGxWTHpqSW1GVmMzQnZPODh6el9aMF84TUhmeS01U2s3dmk1c3Z2MGlfWGdWR25FalVuZHM0dXEyX0VCV3NQMTVQajFPTHJNQUVHYW51VWR4Z2hjZ2tjLU9YR2NJYW03RXhLVXZGWEUzMzFEM0E?oc=5",
+      "title": "AS cadang Ukraine serah Donbas kepada Russia untuk sertai NATO",
+      "en": "US proposes Ukraine hand over Donbas to Russia in exchange for joining NATO",
+      "outlet": "Utusan Malaysia",
+      "published": "2026-11-15T14:00:00.000Z",
+      "outlets": 3,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE45NlItRktZYU10Rm9tYUt6OV9HMUREN0E1TWtxNEdFcHlPaXJQbzlRLWlsME9XY19tUTIxT2RaUnFzWXk2UjR2VWlzYXh5cVNhWU16bGJEektmSUM1VFhHbUpoeVg1VEl2YzB3?oc=5",
+      "title": "В Естонії на замовлення РФ здійснили спробу підпалу на оборонному підприємстві",
+      "en": "In Estonia, an arson attempt was carried out on a defense enterprise on the orders of Russia",
+      "outlet": "Європейська правда",
+      "published": "2026-11-15T13:48:41.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "SE",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQN3VQeTlHaUd1clR5UGhRdW5rTHgxdmpYa0ptVHp0ajJTMmE0Y2xZb29adWtzLU9mdU9wck9YWGZMR1BVQldUZzdsNGxLaE0yRHB5S1RjWWJoT2xYZ2sxWG53ZDZTbVZvTWVmdlBUSjUyUkxwMGQwQ2l6VW1UZDNvN0NEVm5nMm5qX2M4SmgxMXZKQlE4dzNqMlNqeFFMNmV3VkV4WQ?oc=5",
+      "title": "Anfall mot industrin i ryska Tatarstan",
+      "en": "Attacks on industry in Russia's Tatarstan",
+      "outlet": "Corren",
+      "published": "2026-11-15T13:47:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "ES",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYXVqRHdoYUN2bFc1bnRoMzNUSFdiMmxGZHFZSjl1NEFvMjU4WEdxQzdITVJxOXI4OS01OV85XzEtNktuMngtUW45VnlIb25yUVBrNnV6cXYzQ01fWWlMVlJqeTYtazZSdDV5ZG1qeVJrWDNGM0VnX0U2cUo0emlja0Y0eWhoOXZUOUNWMWQ2bDhiYk1TV29LeGx2am9ieDlCbng4WkxuejdNak9TMVVoQVFaVE4?oc=5",
+      "title": "Un ataque ucraniano provoca un incendio en una planta petroquímica rusa",
+      "en": "A Ukrainian attack causes a fire at a Russian petrochemical plant",
+      "outlet": "SWI swissinfo.ch",
+      "published": "2026-11-15T13:36:53.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53YkpjVlNteHp3UmhLTTdYUU9TSW5EOENaTzJGR0xvRmxYdi0zdmkzX2NuVHd5YmdocXJwWVhoMHJXd1ZjOWt2WF84UWRhUnQ0LUh2LUFORXJOa29uOUtNZEpsb1JLSWh3OUlDaHNXdHV1U3c?oc=5",
+      "title": "拉夫罗夫：所有参与者都积极评价阿布扎比会谈，除了泽连斯基",
+      "en": "Lavrov: All participants positively assess the Abu Dhabi talks, except Zelensky",
+      "outlet": "观察者网",
+      "published": "2026-11-15T13:31:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "TW",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9tc2drU2l6SEJOSHRJWGdvWGxQeEdQd0MtbHJBUlhHMDJPVzRIdzFBeEFrRnFUaFVYd21XM1k0XzR5YVFBSEFhQi1femFXS2M?oc=5",
+      "title": "本週操盤筆記：AI交易關鍵時刻！輝達首份無黃仁勳財報、Anthropic重磅IPO 「川習普」三方會議登場",
+      "en": "This week's trading notes: a key moment for AI trading! Nvidia's first earnings report without Jensen Huang, Anthropic's major IPO; Trump-Xi-Putin three-way meeting takes place",
+      "outlet": "鉅亨網",
+      "published": "2026-11-15T13:30:04.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "KR",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wOHlZcHVXM3NBcEFxVk56akVvY2JvVG0wWkFoS21IRGRpOEd4bDhLOF9SY0NuakdZWnNubkU1UXBfMTVoTU51YzNqcFhETHlabHVfU0d0UEx3NTlXMzRLSVJnb0JTV2U3T0E?oc=5",
+      "title": "[정치인사이드] 해킹·석탄 반출에 중러 밀착까지… 북한, 제재 피해 외화벌이 총력",
+      "en": "[Political Inside] From hacking and coal exports to close ties with China and Russia, North Korea goes all-out to earn foreign currency despite sanctions",
+      "outlet": "천지일보",
+      "published": "2026-11-15T13:30:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaG51dkZEZlk1cmN2azN0T1dpbHJJdnRrRDdLQy1HWENIMzZpTVdLQ3R4ZDRWYm9yaUdRYXNmU0h3OGRwTFJIRmpNOEExSFFPWGRxS1hMOXhEODdWa0dyenBxa0IzbGhUejZKNTF4a2RkRjJjQVJvTkVoZE0xYkNOa3hMdkpzbnM3R0dhb2FCU1kxSllRX0VIOUF3Nl9naVdETnFPekZqNnVjd1E?oc=5",
+      "title": "Patru foști ambasadori SUA în România, avertisment privind concesiile făcute lui Putin: „Hrăniți crocodilul, crezând că vă va mânca ultimii”",
+      "en": "Four former US ambassadors to Romania warn about concessions made to Putin: „You feed the crocodile, thinking it will eat you last”",
+      "outlet": "Adevarul.ro",
+      "published": "2026-11-15T13:29:58.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUEtEX0VBZ20yZkJrby1iN3pYYThodFNRUkNjSUpwWkhXZ3NhclY1WW5GZmxIaUlCbGdLRXkyVXFZOURQOHZfVjJOckpMdEpWUnhURnpibUo5SjJQV2UwZG5fU2JOVWJIRUFtLVZ2cjFaR0hnM0swcGF4WkFGQjhuYkpibVdVaTU2TTJ0eEV5akRUcFpILUI1VkdKdHlzbnFQeVdBc3FwNmtrZw?oc=5",
+      "title": "Джил Дохърти, журналист: Владимир Путин мами народа си и погубва Русия",
+      "en": "Jill Doherty, journalist: Vladimir Putin is deceiving his people and destroying Russia",
+      "outlet": "Dnevnik.bg",
+      "published": "2026-11-15T13:26:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOT1gtWlBWeWpDcHQwejVjN0dQV2F0aXljaUN0dnVOWlVybHZlRkgyQkFVYVpQQk01Zmk0Yk1kYjR2VEtWRFpFTEpFR1lNalVjRHhLdjhiNmFYMHBHeWxrajFaako5WElfUndWNU1XaDRQWkgtWFZCU1pnWG9nM3ZmYkhWZEJia0o2R200QkJ6bGdYbGNhdEtDS2hDcXhLMzUwOGgwYmcycHRqci1BcFQ1VWRUN0pLREowVGZ0WUJDUkNiY01pQjhSN0NUdVBlcWJBS2c?oc=5",
+      "title": "Điện Kremlin: Nga vẫn dùng vũ lực để đạt mục tiêu ở Ukraine nếu không đạt thỏa thuận với châu Âu",
+      "en": "Kremlin: Russia will still use force to achieve its goals in Ukraine if no agreement is reached with Europe",
+      "outlet": "Báo Tuổi Trẻ",
+      "published": "2026-11-15T13:10:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTlV2SnZ2b1Fna2YwbmtFa2Myb3JTbDV2ZXpKVFQ5NW5MSkpNMU1SdWRWa3IwcXVqU1UzZnlZVkZmNmR5WXg0QjVFTzN3R1c0Q1V1MEpMWkN3S0pNTEQ1OW1hbkFpMXJkZGtzRHRtSDRnZExoZ0oyNzY2NkhmUzRVc0tZMzE4Si00bEtjbF9pVEcxTjJOcDN0cllTQk5rcmt2UFZfdXh2RW9KWkpvb3dhajRIbDfSAboBQVVfeXFMTkJ3a0NLWkdsdGIzWEkwSWxtSXR4SXRDT1FFYmkwZUxSbTFIWUltZFpUZno3cEYxbmxoNElTQzQ4NExkVlhVYmptVDRrVE4zTjFZN044S2ZwaTlVUVd3UmNTWk93WDEtUXUzS2xKa3BISTUwLVNSSk5jQVB5SjhYQWkyLWZIQ2dVR0RicHBsYzJQQVMtLUFlX2ZyQW9RbDZ6Wm1za0k1UlB4YXVNOHdBcU9KZUF3VnExU0xB?oc=5",
+      "title": "Keményen üzent Szergej Lavrov az európai vezetőknek: Elmegy a vonat",
+      "en": "Sergei Lavrov sent a harsh message to European leaders: The train is leaving",
+      "outlet": "Portfolio.hu",
+      "published": "2026-11-15T13:04:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9iTGxEdXl3Q2VGamdVR01ZWE02OGZtdlNVUS0wQmFnQ04tZ1FBR1g3RkNfYWlKa3dDblM2ekszZGtJdGxoZV91TFA0alg5R0NuanFUT3EtdFh4b0o3clhxRHBMYlNaQQ?oc=5",
+      "title": "США готують новий раунд переговорів: Кушнер заявив про нові ідеї для завершення війни",
+      "en": "The US is preparing a new round of negotiations: Kushner announced new ideas for ending the war",
+      "outlet": "Rubryka",
+      "published": "2026-11-15T12:56:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "GB",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOFZxYzB6N3djaUJMOWI1QW1oaTFhLVc1bDZXNVlEMERPNlR5Z2FSMl9rdnJJSkNnVVhQclUteWJYWE1rM1F4amRadVRJQk1YZHNHU2UxcmtFYTRqNWk4eXhLTjhNWlBPbE1uNU1zMzFWMWJaZGpDUFgzSml5V29ZeVgwQUFuNzZMaXpWQVV2YUxaQ0wwckNfLWR4a3pYV3ROSjVHcVhCTnlEQlItWFBuctIBtgFBVV95cUxOV2YtTEY4U180dER0UjRwQUFDdUhDWVRLTnpMVzhJVkdJUTlhbXc0UEVvaHN1cnV3bWJud2FDZldDZ2h2WEtlVG9uWWlfZEI2OF82M05oMlRzUUxRaUg5cGgxM19acGEyeVpkMnNrcDZxaS1NTFQzdXNoZUJyVk9iUnFfTHQyeHZ6Nmc5cWtPcGM0LWpqVDcwUG9RNEExV0h5cEJwNXNVMzVZQ0hkM245SUdjM0F2QQ?oc=5",
+      "title": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
+      "en": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
+      "outlet": "Al Jazeera",
+      "published": "2026-11-15T12:55:59.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IN",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOFZxYzB6N3djaUJMOWI1QW1oaTFhLVc1bDZXNVlEMERPNlR5Z2FSMl9rdnJJSkNnVVhQclUteWJYWE1rM1F4amRadVRJQk1YZHNHU2UxcmtFYTRqNWk4eXhLTjhNWlBPbE1uNU1zMzFWMWJaZGpDUFgzSml5V29ZeVgwQUFuNzZMaXpWQVV2YUxaQ0wwckNfLWR4a3pYV3ROSjVHcVhCTnlEQlItWFBuctIBtgFBVV95cUxOV2YtTEY4U180dER0UjRwQUFDdUhDWVRLTnpMVzhJVkdJUTlhbXc0UEVvaHN1cnV3bWJud2FDZldDZ2h2WEtlVG9uWWlfZEI2OF82M05oMlRzUUxRaUg5cGgxM19acGEyeVpkMnNrcDZxaS1NTFQzdXNoZUJyVk9iUnFfTHQyeHZ6Nmc5cWtPcGM0LWpqVDcwUG9RNEExV0h5cEJwNXNVMzVZQ0hkM245SUdjM0F2QQ?oc=5",
+      "title": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
+      "en": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
+      "outlet": "Al Jazeera",
+      "published": "2026-11-15T12:55:59.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CA",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOFZxYzB6N3djaUJMOWI1QW1oaTFhLVc1bDZXNVlEMERPNlR5Z2FSMl9rdnJJSkNnVVhQclUteWJYWE1rM1F4amRadVRJQk1YZHNHU2UxcmtFYTRqNWk4eXhLTjhNWlBPbE1uNU1zMzFWMWJaZGpDUFgzSml5V29ZeVgwQUFuNzZMaXpWQVV2YUxaQ0wwckNfLWR4a3pYV3ROSjVHcVhCTnlEQlItWFBuctIBtgFBVV95cUxOV2YtTEY4U180dER0UjRwQUFDdUhDWVRLTnpMVzhJVkdJUTlhbXc0UEVvaHN1cnV3bWJud2FDZldDZ2h2WEtlVG9uWWlfZEI2OF82M05oMlRzUUxRaUg5cGgxM19acGEyeVpkMnNrcDZxaS1NTFQzdXNoZUJyVk9iUnFfTHQyeHZ6Nmc5cWtPcGM0LWpqVDcwUG9RNEExV0h5cEJwNXNVMzVZQ0hkM245SUdjM0F2QQ?oc=5",
+      "title": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
+      "en": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
+      "outlet": "Al Jazeera",
+      "published": "2026-11-15T12:55:59.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOFZxYzB6N3djaUJMOWI1QW1oaTFhLVc1bDZXNVlEMERPNlR5Z2FSMl9rdnJJSkNnVVhQclUteWJYWE1rM1F4amRadVRJQk1YZHNHU2UxcmtFYTRqNWk4eXhLTjhNWlBPbE1uNU1zMzFWMWJaZGpDUFgzSml5V29ZeVgwQUFuNzZMaXpWQVV2YUxaQ0wwckNfLWR4a3pYV3ROSjVHcVhCTnlEQlItWFBuctIBtgFBVV95cUxOV2YtTEY4U180dER0UjRwQUFDdUhDWVRLTnpMVzhJVkdJUTlhbXc0UEVvaHN1cnV3bWJud2FDZldDZ2h2WEtlVG9uWWlfZEI2OF82M05oMlRzUUxRaUg5cGgxM19acGEyeVpkMnNrcDZxaS1NTFQzdXNoZUJyVk9iUnFfTHQyeHZ6Nmc5cWtPcGM0LWpqVDcwUG9RNEExV0h5cEJwNXNVMzVZQ0hkM245SUdjM0F2QQ?oc=5",
+      "title": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
+      "en": "Give Donbas, take NATO seat: Could new US pitch work for Ukraine, Russia?",
+      "outlet": "Al Jazeera",
+      "published": "2026-11-15T12:55:59.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE94TWdWUFNmUUlzVEsyaU5ocDFUNDF0Z2JzMEdEb05sb3VCZEdWbHJaTzF6M2hoV0lTWTNQYTJMbHBMVkZrdDBZeFlxYklrYUpsa3lZdVJKeVVwcnpKRWZkTmtMbXdYNGhDWFJlbjg3bkRHSW5LbWg2SkNmUQ?oc=5",
+      "title": "Oglasio se Lavrov o pregovorima u Abu Dabiju",
+      "en": "Lavrov speaks out about negotiations in Abu Dhabi",
+      "outlet": "Danas",
+      "published": "2026-11-15T12:53:26.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "KR",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5UZWQzd2JsZ3dORmVzYVkwU2Q5c3BkOXlKdnQycVBJOWZNSllEWFY4bXZwLU56aGtQWFo2UFF3ZFJUU0R0VkU3WkxRVWt0UWQ1UGpVVmxDSmU3bWFEa2dFMFZFUWsyUkk?oc=5",
+      "title": "러시아, 우크라 종전협상 유럽 참여에 전향적 입장",
+      "en": "Russia takes forward-looking stance on European participation in Ukraine war ceasefire talks",
+      "outlet": "연합뉴스TV",
+      "published": "2026-11-15T12:50:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMVlxb0pjZ0NKRU9DMjF3LTBTcjFKY2Rwa3M1TFROX3FrRUx1WUVDcmxXU1NpcWhGODdxU0xRaklFdVBFT0hubzc5Z1ZodHZ3aU1haGFMRUhOZURLVXltTExOVlFEODlDczQ2c1l3b1NkNHpWR2RPdlVmLU1PeTB4M2d5eWtMdklhVldCNWtWanRFbzdSeFZCcGpxclhGblYyMHJ4SGFPX1F5cUVUX0MzNkpuOFZLMXVseTNQdW5LWHI0UTBET3JaQldmSDV4MF8tcEx6UVBZMlc?oc=5",
+      "title": "Viduržemio jūroje ES pajėgos patikrino įtariamą Rusijos šešėlinio laivyno tanklaivį",
+      "en": "In the Mediterranean Sea, EU forces checked a suspected Russian shadow fleet tanker",
+      "outlet": "15min.lt",
+      "published": "2026-11-15T12:39:03.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "CH",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMG5GNEJIVHBnRkJXVEIzS2IxeVU0Tk1jVFVlV1g3R0tPN2xmdnljb1c4dGcxbWZfR2tNV0x4VUZmTHVqNHA2VENmM1pYRWh1VDNSdlhHUmt4cVlDNUhmUm04ZTJXdGw4VDFKVkVSalhMV25Ca0tVWU43Z3l1aWFYaGVORmlQSkFYbGxrLTl0YzYxQW9xU3E0aXo2TzdsdU93XzBQSXRuU0FJYjJ6eC10Qkswem5HRllpY0tB?oc=5",
+      "title": "Ukraine-Krieg: Ukraine greift grössten petrochemischen Komplex Russlands an",
+      "en": "Ukraine war: Italy helps Ukraine: threat of pizza ban at Russian schools?",
+      "outlet": "20 Minuten",
+      "published": "2026-11-15T12:34:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMEJuMkNNczNjM09JQW1sUVlXWWFldlZuYkJoRl9KTktfTmxONkVvR1ZOYURKRTYzX2JSTjlRSEtLMzE4bEtZWndXTEdVMnVXM0kwRDlJV0xHcnFJVXB5bmNpWTE5Z2dUMUxxR0xMU0NKV1h0Tzc1dmJmTzIyX0UzRGU4aDRkcmxNcGNrZmlSRjVFRGJYN29BbzUyYXQ3ZGljUTd1WlBrU2J1c2xob2FpTDZCMHYyMlRK0gG-AUFVX3lxTE9YY0hsTmVMSUFQZTBYeEJCN2M1SHAxS1pKWE1Tci10N1BLQ2ZpdmI1R0MtMFJoaFhJb0loTGpyTW0td3JrdDJVUWhBa2M1U1RJRTRTTVZKdEw5QklFNVhZT251emVqYUt4Q2h0eEZ0V05IbWNHbkE4REtieDBfazVUNEJRdTZFSVZ5MmdhZnU5NFlCNExySmdQOGpEaGdWZ2ZxUVZKNDFKaXZ1Zkl4TnFXRVRjS2tiZENkSmVtanc?oc=5",
+      "title": "Відставка CEO NVIDIA Дженсена Хуанга зірвала контрабанду американських чипів до росії",
+      "en": "The resignation of NVIDIA CEO Jensen Huang disrupted the smuggling of American chips to Russia",
+      "outlet": "Mind.ua",
+      "published": "2026-11-15T12:31:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT1ctNHpsY1MzQjVBQ2k3SWJxVWJ6VTQtd24xUnZFTWJSZVpuYnFBdDlRRE9BR1Niby1JMmtIbnBJeWl6UG9WYnBYNEtBekdGUFg0b21zY0pzaFNkOWtURHdCNzBHRVk3QzlhSWEzX1A0UW1zZ0xTbk1OZVJLeVpVUHhtNXZIZVpySHpKVkdVeURuR0h3S1NOUw?oc=5",
+      "title": "'Putin petulante, Netanyahu come Trump'. Le memorie di Joe Biden",
+      "en": "'Petulant Putin, Netanyahu like Trump'. The memoirs of Joe Biden",
+      "outlet": "Sky TG24",
+      "published": "2026-11-15T12:30:54.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQlBObEZjbXdpUFRSTU40c3NQWFpiWFpDRy1wcWhYZ1JycVdwUFFnVnQ3VnZxTWZTRjRLNHY4XzBickJ5NXp4ZF93eVhqWjYtTjNsZkxwcDZMUzF6allJRzV1a1ZlZkZuLUpjeVBtR2didGxKdHdMVzhJa04xQ0JZQnhKS0RFcWdGcXg5ZnQ5WnkyUFhTMzFvcU5sdTVfcUtyOEwxSlpFZC0zTTVRMnZDNk5zWlZURi13SlI1N19B?oc=5",
+      "title": "Ruským útokům pomáhá omezení provozu Starshieldu, uvedl Zelenskyj",
+      "en": "Restricting Starshield operations helps Russian attacks, Zelensky says",
+      "outlet": "Novinky",
+      "published": "2026-11-15T12:30:25.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWmdBSk5lU1JBN1NIRXV4dzc1ejVZYlJEN08wRS1KVmNiMHJ1WVhOX1A1bjNEanVETG5vaTNhUGw3R2NiUmtBUUtKM21IVGtXeFd5a3B5TF80azZaX09qYUtDSGJjbVdZUWN5RzZBOWJUT3lYcXhPZTNsY2tPYmVSMXJVZ0p6LTRrU3BlejlWV0E3V0M5WS16c3JFUEhYUUlrZktPcmJSTjhyRTlqWXBBYkN1MWhYNWpMZ3RIa3Z4RUo2ODBUMjRacFNINENTVUx5RlZ5THZFYw?oc=5",
+      "title": "FSB zverejnila údajné správy poľských „špiónov“. Zvláštne slovné spojenia vyvolali pochybnosti - Svet - Správy",
+      "en": "FSB publishes alleged reports of Polish 'spies'. Strange phrasing raises doubts - World - News",
+      "outlet": "Pravda",
+      "published": "2026-11-15T12:26:12.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9WTV96eUx3SVJ6cTBZU1NLMUhSTVd6ajdEZjJnT2V4Um9QNktSSjkwelllN3Fabzd5Sm1zVy00RWxURzVvNFdqUEc0VGtaY2txX1RNRjc1QWRHUjdZRUtmUDRzSFREblFaZk1J?oc=5",
+      "title": "Прем’єр-міністр Румунії засудив атаку РФ на три комерційні судна у Чорному морі",
+      "en": "Romania's prime minister condemned Russia's attack on three commercial vessels in the Black Sea",
+      "outlet": "Європейська правда",
+      "published": "2026-11-15T12:24:39.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONHlFVnZaYnFoaWcxZHVFTHd6VmpnOV9OWGpNYnFZSjZ1Q3U1cEk5RXVwVnY3YldKcGotVXhUN05ibmc2UHhIMGppV0tFbkNSOGRkNEpva2F5alRrRFNJVTZVbkM4dnNmcmRyclVGbklJTmlRa0VuSTVDdEFOaTVoNzNJT09KTW5JRDRacUZYaWZFVGRrM0IxQXRZbmFxV1E3QWZ3WmRySHpBc3RubDdMdnlSNFVmb1RqYVBkeEJuankzcXl1ZVNxbGxzMzhHQdIB0gFBVV95cUxPU1dUTFVZTWt6S1FfR1pYOTZXLWdUVjlDZ1ByOV9zQmRSa25xTTJCeV9HeS0xVEhmX0F0RnF0bkJEOS0wUVJkTXh6ZUpxSmxnV1NGMTBYZnNMSFY3V2RxVTZTbS1zZnloUFBON0JOTDJldjlrYVZrUmQtdDlreGE4MFlkemZkMUExaHVtdGYya1V6YzJtNnl6RXM2Wk1OSlRpYlV3YzV6cHQtRmhjX3BRdVphU1B2bWwybkFRUTUxZUxKcVBRQ1lLM09HWEVGMld6Wmc?oc=5",
+      "title": "FT: Віткофф і Кушнер зіграли на руку Путіну у переговорах",
+      "en": "FT: Witkoff and Kushner played into Putin's hands in negotiations",
+      "outlet": "OBOZ.UA",
+      "published": "2026-11-15T12:14:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZWRMMEZyVmozZ2VyRFd3SW41TUFpV1ZRSy1fbjhUekxBNTdHLW5pZTMzeG8yQ2J2X3dwS0FITXJLbW8wS0laQVNjYTg5N0dDMXc2OHJMSnRmaW9Xcmx4SUhYbjFFazdzcU1wV2wxWjR1Nm0wcVV1VmxaLUNMYmU5N1RaVldZR3JGdHFIWjFuSkZhbkdtSE4wWlNxV3VqZk5QVjZmZg?oc=5",
+      "title": "Ora Mosca vuole ridisegnare la sicurezza in Europa: “Da questa dipenderà la pace in Ucraina”",
+      "en": "Now Moscow wants to redraw security in Europe: \"Peace in Ukraine will depend on this\"",
+      "outlet": "Il Fatto Quotidiano",
+      "published": "2026-11-15T12:12:10.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeVhocTVxd1R4OElhUkQ5NHpoNlBZTGVlTXMwRFVVTFppQ3UyU1dvWHVJNEQ2enVCazVMb3BiSXFEUU1jX3Bja3B1TFZnQWZDQVZldlgxanhmY0J3cG1JSzdtQmphQVB1VS1EZFZZSUZXMVJpTTBobndNOG1oWTR6MkN4WUtXVDNxd0xqYlZsa240ZlIwUGxUUDBZUnp3aDcxZ3ZtbmNDY1FMSkFCZjRRdl9POGVvWjNsUWg5bFU4SjhZallmMk9vSw?oc=5",
+      "title": "Výměna Donbasu za členství v NATO? Romancov: Směna území za funkční mír může být pozitivní",
+      "en": "Exchange Donbas for NATO membership? Romancov: Trading territory for functioning peace could be positive",
+      "outlet": "iROZHLAS",
+      "published": "2026-11-15T12:08:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "GR",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPTTdIUWVmMnFHM3RTUDNYaHdPX1JjaU1LV0taNXpWcVpKaDRzZkozRFVCTFdRQS1pVDZZWnRFVV93bll4RVdwOWNpcjVRb3dnRXROTzhubnU4eVhNWExqamdOS0pjbXh4YUJudy1Yb0V4Ulk2VEdDUndld1czRVhpZUdhRmVCOE9fcXZlWHFRbnl3OGpmcUtOR0hsZEt0Y2ctekNCc09DNkJIdUV0bXU0akZ5SGZJbHBtQjlhellXMDd3U2pocVNlYkFPWFByMGtpZGxZQ2RGZ1lTUTlBSzhzRzZySVh4TkFxR00xY2gwZTB5d9IB9wFBVV95cUxPTlVjQUhwZG9iYTVnUkd6d3ZGeG93MlB1aGZadkFUYVAzT0xPMlhpX2cwVTgwWTlLU1N6dDFIMldUUFAzelpCWlc0VnFfaWhoRU9YQnBoeHE3cEllUDZXQUZ5R2djQnJzR3JnTVRtZ2F1Tk5GWlBZZjA3eVlHSDQxX1ZuZVg5Qi0zdDVaQ281ZEdTWmhwaXBJcTk1VzhnVWZhVlctU2draER5dWZid3ZiY3RqMkxsSjBvcURZTFQ0ZWpsODR4VVRoTTdKR2tIZF9Db2tmUkxCcXkyVEMwQTYyVzRFdkZ2YUlKc0hPVHkweWdSNDZNVkd3?oc=5",
+      "title": "Ουκρανικά πλήγματα σε πετροχημικό εργοστάσιο, διυλιστήριο και μονάδα παραγωγής στρατιωτικού εξοπλισμού στη Ρωσία",
+      "en": "Ukrainian strikes on a petrochemical plant, a refinery and a military equipment production unit in Russia",
+      "outlet": "ProtoThema",
+      "published": "2026-11-15T11:54:58.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PT",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNll6Rmh2dmdDbEFNODZncUtHLTItS1FkNFV6QXg0M1U3ZnIwdHVsOHNHRjBUcE9HVVFpT2sybHNBQm1TVjRhZnhJT2pLV0pUR001TmVpOTVhdXVfUDNOems0NVJPTUNuV1FKTWNqc3EySXRRYnhnRTJjRmREQWhGQjAyZjA5d2lKVTFDeTZESHZVSi1NTXRKYUc3S3h4VzlKZVVDcW9rQ0lOZ0F1Mjhrd3d6Z2xjQWJnRmRiSQ?oc=5",
+      "title": "Ucrânia. Rússia critica Comissão Europeia e exclui trégua como condição prévia",
+      "en": "Ukraine. Russia criticises the European Commission and rules out a truce as a precondition",
+      "outlet": "RTP",
+      "published": "2026-11-15T11:53:53.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NL",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPT1RKX3d2bjRHSGtQSVA2VjlKaVNQeWUwLW1TaEFDbDJxZV8waGJhVVVvZlU1NGhrUzFTaHdwenJtZk1KaS1US1JPbmdZSlhJckszdk00Q0MzcTFqS3NJRGhjdF85eW4xck1rT3Ywem9BaDNGSGc2cUxpbkh1aGhwSnVtTGk1eml0bGpIY2V0UDJ3SEJZZjJ0SjlidDROekZOa09vdjY3ZzFHZmcxdkkwcHlZUjdiU1hWRVVrcU5XUXQ1MTJUWUJDLXg5OGN0UWQxU1BiaWx5NFNkWUxmaDBhX1poTlE3R2NQ?oc=5",
+      "title": "Historische top met Xi, Trump en Poetin kan grote gevolgen hebben voor ons, maar inspraak hebben we niet",
+      "en": "Historic summit with Xi, Trump and Putin could have major consequences for us, but we have no say",
+      "outlet": "De Telegraaf",
+      "published": "2026-11-15T11:53:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BR",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNU2ljTWtZUmZCNXpXcGkyV3VaTUlJcTV0S1pUbTAyTy01YXFKVGdUd1V6ZGlkTWVNWU5TSm9hMEh3d0lNYzdmUHJRd29iMEN0c0hmbG53NGNFd251SEkzbkdiX0lobkE1b0w2U2lSMTYwQWNTMkNPanFIN2Fvbko5aUpDbTFaeUZ2SUlQRmFYanhYbjVGZVBabUxQTTFQMlVpTGl4bThWd19mb2dhMC1pUkprYmRxSTdEdXdobw?oc=5",
+      "title": "Metástase desaparece no primeiro paciente tratado com nova vacina russa contra o câncer",
+      "en": "Metastasis disappears in first patient treated with new Russian cancer vaccine",
+      "outlet": "Brasil 247",
+      "published": "2026-11-15T11:46:25.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOGJ3Wm56anZJN3dTZXYtZ1RvWmlxNnlUYm5DTUE3WkV5U0RsUUE5RVgtWUtyeGtGUEY5YURTV2l2VzRMSTVzNU1jT0J1R0YyUGMtZXNkamRLTU1rbjBGMjhNeVlwZlM3aFlyVi1yVXhrQ3RkOFNQWU9aeERNMmMxbGIzenhPbTBZR19HTl90bGRYV1d1WUlKN2lMYWxTM1RUaEE?oc=5",
+      "title": "Rosja chce cofnąć NATO do 1997 r. Co to oznacza dla Polski?",
+      "en": "Russia wants to roll NATO back to 1997. What does it mean for Poland?",
+      "outlet": "WP Wiadomości",
+      "published": "2026-11-15T11:43:59.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "IE",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYXlmdXlFNXRLV0ptQkpuYU4xQXlQSERYd0M1Ui03cm5jSUN0VGdPN2hBOEM4NUlNQVdpeG1nWFIyQS05aXBHdkhXODhFajFGY3JQRUlwR3ZrajFPdDEzNmtJd2pNOHBCRDhNOFlEQ0VudVRaWFVZT1BhYV95TmxkdzZHdHBHMHV2S1p0TndkaE92UUFVWVc3a1dn?oc=5",
+      "title": "Ukrainian strikes hit major Russian petrochemical plant",
+      "en": "Ukrainian strikes hit major Russian petrochemical plant",
+      "outlet": "RTE.ie",
+      "published": "2026-11-15T11:29:35.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "BE",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPXzh1VGpvZTJpNEhQQ21zNGpSNG45VmdDbXBMOXNaLVh4QVNTMVF5N213b2hSWGtVTmhEQ1c1aENOM2NycDJ0NDU5cVNXMWhrMVpGbWZ2anVZcHJCMnAxdE81NnA2STdPRXRSYmFZcEppV2tEY011ZEJoVFdFZFF5Zmk2WGdxSU9WWURmdnVQOGlxbTJLX2VFSGpXSlA4S09UV2JLeHhXYUt4a2g5ZW14bEJKRWE3VEx3OUUzaTZ1c1lSU21iZnZKR25QSFd4WjhZaUJmRUNhdUk2QzIzMTZLc3g3cUVzTVpodTkw?oc=5",
+      "title": "Guerre en Ukraine : « Il n'est pas question d'accepter les exigences russes sur l'architecture de sécurité européenne",
+      "en": "War in Ukraine: \"There is no question of accepting Russian demands on the European security architecture\"",
+      "outlet": "Les Echos",
+      "published": "2026-11-15T11:26:54.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkVEdkQ4VHB3YThyTWFwVGhLMFlnclo3SG5rVVFxM0VLU1NGcEcybmZKZlp5Z095ZWM0ZkxRMXVSZHRuZHNYSFZxb0s1Q0IxZll2ejlpV3pTaWpXS1kyOGdPdVZIQ2tpWnN5OUxXOVpiODZ6Vmw1QWNlUGNYR05XR3VHWVJDT29rVHJtZVA4emxaRWdGWHl3eEN4WldTVG8?oc=5",
+      "title": "Фінал Підсумкового турніру Світоліна – Андрєєва: українка проти росіянки, досвід проти молодості",
+      "en": "Final of the Svitolina – Andreeva Season-End Tournament: Ukrainian vs Russian, experience vs youth",
+      "outlet": "Champion.com.ua",
+      "published": "2026-11-15T11:10:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NO",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNVpHRjJhbzdZT2NwVTFLQ3V2SUlkNHJqdzJETThFdThIOEJvMFVkOC05eXhtb0FERVBReTZieDhTZmZCaDhENkUtYlB4bEZETkNFVHU0a1JiT294YkVYZkNSRnlTNFpzanlDb3JNRnpSYk1KdmMtaEpRSEJxMFpudWwwV1J0MXVCZmcwb0FLX01QN3RrTkF5RmN4VQ?oc=5",
+      "title": "Ukrainsk droneangrep mot russisk petrokjemisk anlegg",
+      "en": "Ukrainian drone attack against Russian petrochemical plant",
+      "outlet": "Aftenposten",
+      "published": "2026-11-15T11:00:03.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaGdJWm1iMGVuc1JUUE0xOUNkNHp4TmJZenh4eGhEVExTeGx1WGhWNU9fck9nU3BoSWZuUllHRTVKaVhlMlNxWkZSSGRiUlNZdUQ2RHYtTDVuZDJENnlNaVVEeC04ODdOalQ4ekM3Um9iemV2RTNJZy14Qk9EUjI1eGQxRUMtUVJZbFh6YVBLRmtuWUpydGhBMmFYb3U5SGNnUkg2Q1dPVlhzMzgzNmxsOWh2RXNoQ3RCdFpZUmxB?oc=5",
+      "title": "„The Independent“: Putinas nori, kad Europa atsiklauptų dėl taikos Ukrainoje",
+      "en": "The Independent: Putin wants Europe to kneel for peace in Ukraine",
+      "outlet": "LRT",
+      "published": "2026-11-15T10:59:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPd0lyOUE3X29SLThjY1hCUm0zdk9nNDVlRFV0eXh3SnlnSmY1MXJDMGN0SndmNnVGRE5QeUsxR0RBQzB4MGNKUHRjU3dELVJydkpxRkRCS2Ewa2VYcWg0TWdaV2luUzdVc1J1TzhqM0Z0QlhVOWZOWi1GQlA4UUFLWU1QV2ZRa01HRmlqTC1Lc0M?oc=5",
+      "title": "Eiropa gatavojas sarunām ar Krieviju: Tusks sniedz paziņojumu par dalībniekiem",
+      "en": "Europe prepares for talks with Russia: Tusk makes statement on participants",
+      "outlet": "NRA",
+      "published": "2026-11-15T10:45:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNlNyZTl2TThSRUF1V3NzTm9qMGo5Z0pUY3JQQzg5LWZhX0Y4SXRjclhsdGU3OHFNSDk5MFkya1c3MkU0VUdzUFdhS3ByQXI3anNCTHR4US1vV0VKVkY1Zm9uMllVUFc5MjRveFNBN1FZWTBVUzhWR3dmOXlZdGVyY2o5TExTOUQza29iWndRUUI1b0M0Wld3REVxNkVGaWkycU5BdnlXTG1ybnRsQk9jTjl5WmlYSXA5aHlV?oc=5",
+      "title": "Linkevičius apie Putino, Trumpo ir Xi susitikimą: ko iš tiesų siekiama",
+      "en": "Linkevičius on the meeting of Putin, Trump and Xi: what is really being sought",
+      "outlet": "Delfi",
+      "published": "2026-11-15T10:42:03.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AU",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdVVlSnBZdEozSzJxR3NrX283ZzhzUXloWlhmOXRycGFhaTNfWEdLUjdFVEVxaE0xTEtVa0NrT1lqdl9idkVMOFpqU3lpcVF5VXVsaS1wMDJyY1A5Q29pMFlQZ294NGdaOVlvaWZxZjFkc1NuNG1zZjhmVGVUVWlmb2RzTTMxRDdHUENSbmRhQ2s1c0stVjZsaE9LYi1CZkpiMkNjTV80UFIwOXRhbHhPS0ZtX2RUMFVMd1JWSE5JQnFSTFJsOTViTk1rOEtNd0pNcFZfYUtxMGpOWmhLeThYTm13?oc=5",
+      "title": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
+      "en": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
+      "outlet": "The Guardian",
+      "published": "2026-11-15T10:34:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdVVlSnBZdEozSzJxR3NrX283ZzhzUXloWlhmOXRycGFhaTNfWEdLUjdFVEVxaE0xTEtVa0NrT1lqdl9idkVMOFpqU3lpcVF5VXVsaS1wMDJyY1A5Q29pMFlQZ294NGdaOVlvaWZxZjFkc1NuNG1zZjhmVGVUVWlmb2RzTTMxRDdHUENSbmRhQ2s1c0stVjZsaE9LYi1CZkpiMkNjTV80UFIwOXRhbHhPS0ZtX2RUMFVMd1JWSE5JQnFSTFJsOTViTk1rOEtNd0pNcFZfYUtxMGpOWmhLeThYTm13?oc=5",
+      "title": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
+      "en": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
+      "outlet": "The Guardian",
+      "published": "2026-11-15T10:34:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNM284cE1va01tZXliQUpfRzRfSzlPRlFINndzaHFLWkNaamctSFU0MThEYW5IUGJQUFVvM0R2MFE3eVJ3ZkF1RVVKaVJuZ2Y4QkFMRjFhbGlVZlBmOG54VzJjcFFLYUtacWJZNXNPZWdGeWc1bFFRTlQ2YXdkTDFJYUEtMWRLN2ViSklwUUxVUkJxQ0JpUVM4U3NuX1ZjY2FsbVpkRjlBU3NUaGRoRVdGb3E3NjB0OWk0RnFuXzdn0gHDAUFVX3lxTE4wa2JrbjhaLWVxOXRLWm1GMzRyZXdqaWFZMkxvSWltR1NMaFZ4NVk0ZjZlQ2NKNTNmRXM1QmVfN1NFSkVCdDRGbU9ydnFtR2tFY3VRd21IS1hmdU5haGRXczk1UTJEa2R2S3kzZWhwUk83VllwaE1HeUlpVTlCdklVYnAzT1hLRDd6U24ydFVaZ2ZPa290OHVMb1EzcHpBVFFhWThHNWdtOGthUVoybDg5VE1sR1N1c0wzRWt5ekhXTlVrOA?oc=5",
+      "title": "Сибіга відповів на вимоги путіна щодо нового порядку безпеки в Європі",
+      "en": "Sybiha responded to Putin's demands for a new security order in Europe",
+      "outlet": "Слово і Діло",
+      "published": "2026-11-15T10:31:51.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SI",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOVY1dm5TVmhjbWVfNzVuYTd6UlJKSU1FaHFWMXQtTERCZ3hhX2p3R0JWMVo5ZjRxWktTQUJaMFRrVEIwOHhCZDhibGNzVmVEQ2hCeVdkcFdOVU14djVieTNpUHliS3FoU3EtUGFFcWJHSk1PT2NtVzRSVnFqMWpVRnFUekZHU0hHWXhtSl96MG55dFBSY0NtUmJ6NlRkdw?oc=5",
+      "title": "Ukrajina napadla enega največjih ruskih petrokemičnih obratov",
+      "en": "Ukraine attacks one of the largest Russian petrochemical plants",
+      "outlet": "Siol.net",
+      "published": "2026-11-15T10:06:00.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxNOG0yUkZ4MXg3TDNISnRGdEVua2JmODRtSWZpcDVnZ2lYZ245d29OTXVEX2tKTkpGMmJYQW5JbjJTeFZYV2twOHJISlpJZEwzNVY3c2Q4NFZiM0o0cEY3c1g4MEotT0thcU44NzUtdW9kRjdyR0dxN3hzMHo5bHFCVm5QWTRCUF9wNHJQdG9rd2VLYTV0NjRuNEVNeWJ3R0ZPSmx5eFJ3V3FGY3c4MW1sdEdNU24wMjlOa292MFlsUXlIM09BNTZVMnZmRHBqR1NCSTk0QURjQVZDSGZTQ1dQOXFXaUhZd2c1TlhzYURab3F2QzdPSTFCNC1vX1M4RkdPQ0hEamZjRjJnV1hrWXluRkFqRXpMZnZyYlQzMloxYzlZeWRla0ZpdjdqNzVYVEF1VDA5eEY0TVFaeDVLOU4wNlhnUHFxRGxuU0kzbGFaT2tlcjRmYmN1czFnOThpZWlDb19SOVNQLU51d2NKaThtWWV5Wm9hYlZOaXFzekRvYjg1RHRDYXU1Z1Y1ZlVXUXlSakdWakM4R2diU1V6dnFWQnhCR1JtUdIBqwNBVV95cUxQaWpmWnNVckk4NEgtMUt6LUczc2ZpMDV6eU1zZHBObU1xSkV0bEE2elRZQjl5MUZ4bUUzVVpPM0tkVnpjcUVvUVA5dFNkdzgtTmxrTDA3MmpkMGF6QWNRU01JM0c4Q0MzaVpUai03ejE3Nzc4REc5bEsyUUVhV1BYVTN6QTlmb0JwR2dZX1RWZVdTREVhb09ES0V3UjVUVjlpdFFmNVZGdVdPRVJpeW5JZnNteWdhNmxXSzhMUkV5ZThTbVJKdmRQRVlWMVU2YVBRUXlhbW5SbGRKM2lhaXF5a2dDNW1vNksydC1LcUpVeDFtQUpqYWVFTW4xMXdUZC1rU2ZLRks5WEhCOEtwQ0l1RFl4X1I3UHdQQmhxbDZkUlZNc0VpNjBWb2puLTRvaXJMY3NvWl82NHFEQXVZY1ZpNzFuOUlDakZsWDZHWHo4TTl5VmJsS0FHYVhVN01zT1V6Qm8zSWhPdUtZd0Y5Q1hQNWUyZVAyMndmb2J0NHNkS2Y0YThNaU9GVjJtZHZtVDNhQVQ3dGh2cmhFZzNXMEt5Qjg0RGFaSXlBdHRF?oc=5",
+      "title": "ترامب وبوتين وشي.. ماذا ننتظر من لقاء يشغل العالم؟",
+      "en": "Trump, Putin and Xi... what do we expect from a meeting that occupies the world?",
+      "outlet": "العربية",
+      "published": "2026-11-15T10:05:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxNOG0yUkZ4MXg3TDNISnRGdEVua2JmODRtSWZpcDVnZ2lYZ245d29OTXVEX2tKTkpGMmJYQW5JbjJTeFZYV2twOHJISlpJZEwzNVY3c2Q4NFZiM0o0cEY3c1g4MEotT0thcU44NzUtdW9kRjdyR0dxN3hzMHo5bHFCVm5QWTRCUF9wNHJQdG9rd2VLYTV0NjRuNEVNeWJ3R0ZPSmx5eFJ3V3FGY3c4MW1sdEdNU24wMjlOa292MFlsUXlIM09BNTZVMnZmRHBqR1NCSTk0QURjQVZDSGZTQ1dQOXFXaUhZd2c1TlhzYURab3F2QzdPSTFCNC1vX1M4RkdPQ0hEamZjRjJnV1hrWXluRkFqRXpMZnZyYlQzMloxYzlZeWRla0ZpdjdqNzVYVEF1VDA5eEY0TVFaeDVLOU4wNlhnUHFxRGxuU0kzbGFaT2tlcjRmYmN1czFnOThpZWlDb19SOVNQLU51d2NKaThtWWV5Wm9hYlZOaXFzekRvYjg1RHRDYXU1Z1Y1ZlVXUXlSakdWakM4R2diU1V6dnFWQnhCR1JtUdIBqwNBVV95cUxQaWpmWnNVckk4NEgtMUt6LUczc2ZpMDV6eU1zZHBObU1xSkV0bEE2elRZQjl5MUZ4bUUzVVpPM0tkVnpjcUVvUVA5dFNkdzgtTmxrTDA3MmpkMGF6QWNRU01JM0c4Q0MzaVpUai03ejE3Nzc4REc5bEsyUUVhV1BYVTN6QTlmb0JwR2dZX1RWZVdTREVhb09ES0V3UjVUVjlpdFFmNVZGdVdPRVJpeW5JZnNteWdhNmxXSzhMUkV5ZThTbVJKdmRQRVlWMVU2YVBRUXlhbW5SbGRKM2lhaXF5a2dDNW1vNksydC1LcUpVeDFtQUpqYWVFTW4xMXdUZC1rU2ZLRks5WEhCOEtwQ0l1RFl4X1I3UHdQQmhxbDZkUlZNc0VpNjBWb2puLTRvaXJMY3NvWl82NHFEQXVZY1ZpNzFuOUlDakZsWDZHWHo4TTl5VmJsS0FHYVhVN01zT1V6Qm8zSWhPdUtZd0Y5Q1hQNWUyZVAyMndmb2J0NHNkS2Y0YThNaU9GVjJtZHZtVDNhQVQ3dGh2cmhFZzNXMEt5Qjg0RGFaSXlBdHRF?oc=5",
+      "title": "ترامب وبوتين وشي.. ماذا ننتظر من لقاء يشغل العالم؟",
+      "en": "Trump, Putin and Xi... what do we expect from a meeting that occupies the world?",
+      "outlet": "العربية",
+      "published": "2026-11-15T10:05:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxNOG0yUkZ4MXg3TDNISnRGdEVua2JmODRtSWZpcDVnZ2lYZ245d29OTXVEX2tKTkpGMmJYQW5JbjJTeFZYV2twOHJISlpJZEwzNVY3c2Q4NFZiM0o0cEY3c1g4MEotT0thcU44NzUtdW9kRjdyR0dxN3hzMHo5bHFCVm5QWTRCUF9wNHJQdG9rd2VLYTV0NjRuNEVNeWJ3R0ZPSmx5eFJ3V3FGY3c4MW1sdEdNU24wMjlOa292MFlsUXlIM09BNTZVMnZmRHBqR1NCSTk0QURjQVZDSGZTQ1dQOXFXaUhZd2c1TlhzYURab3F2QzdPSTFCNC1vX1M4RkdPQ0hEamZjRjJnV1hrWXluRkFqRXpMZnZyYlQzMloxYzlZeWRla0ZpdjdqNzVYVEF1VDA5eEY0TVFaeDVLOU4wNlhnUHFxRGxuU0kzbGFaT2tlcjRmYmN1czFnOThpZWlDb19SOVNQLU51d2NKaThtWWV5Wm9hYlZOaXFzekRvYjg1RHRDYXU1Z1Y1ZlVXUXlSakdWakM4R2diU1V6dnFWQnhCR1JtUdIBqwNBVV95cUxQaWpmWnNVckk4NEgtMUt6LUczc2ZpMDV6eU1zZHBObU1xSkV0bEE2elRZQjl5MUZ4bUUzVVpPM0tkVnpjcUVvUVA5dFNkdzgtTmxrTDA3MmpkMGF6QWNRU01JM0c4Q0MzaVpUai03ejE3Nzc4REc5bEsyUUVhV1BYVTN6QTlmb0JwR2dZX1RWZVdTREVhb09ES0V3UjVUVjlpdFFmNVZGdVdPRVJpeW5JZnNteWdhNmxXSzhMUkV5ZThTbVJKdmRQRVlWMVU2YVBRUXlhbW5SbGRKM2lhaXF5a2dDNW1vNksydC1LcUpVeDFtQUpqYWVFTW4xMXdUZC1rU2ZLRks5WEhCOEtwQ0l1RFl4X1I3UHdQQmhxbDZkUlZNc0VpNjBWb2puLTRvaXJMY3NvWl82NHFEQXVZY1ZpNzFuOUlDakZsWDZHWHo4TTl5VmJsS0FHYVhVN01zT1V6Qm8zSWhPdUtZd0Y5Q1hQNWUyZVAyMndmb2J0NHNkS2Y0YThNaU9GVjJtZHZtVDNhQVQ3dGh2cmhFZzNXMEt5Qjg0RGFaSXlBdHRF?oc=5",
+      "title": "ترامب وبوتين وشي.. ماذا ننتظر من لقاء يشغل العالم؟",
+      "en": "Trump, Putin and Xi... what do we expect from a meeting that occupies the world?",
+      "outlet": "العربية",
+      "published": "2026-11-15T10:05:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "JP",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBLZlA5ZlRlOS1lbFhuMmM0aHVWazgtRTJZWUE1QjBMbzBEOHhtX0hBZk1BdFBSWUNtaWpyOTBNMklfbXdoU2FzcGp5V0RDNVhOQWlfcUVxSUFXWC1BU1A3cGVB?oc=5",
+      "title": "「ＮＡＴＯ加盟と引き換えにドンバス撤退」米側が打診とゼレンスキー氏…正式提案なら国民投票の考え",
+      "en": "\"Withdrawal from Donbas in exchange for NATO membership\": US side has sounded out Zelensky, who says a formal proposal would call for a national referendum",
+      "outlet": "読売新聞",
+      "published": "2026-11-15T10:02:00.000Z",
+      "outlets": 6,
+      "trending": false
+    },
+    {
+      "from": "MX",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE05d0RXbHkzTUl0VUdTbndsTHhOUnFoUjk2elM2Y0N2R0NSSm54SHFlOEZLY0F0cmN1QkRHdjBuNUo1cGthUTF0WWxUSWV6eHQwbmg1b0NQak9ZaTJWY0ozazlpWVlnZw?oc=5",
+      "title": "Se espera reunión inédita de Trump, Xi y Putin en la cumbre de Shenzhen",
+      "en": "An unprecedented meeting of Trump, Xi and Putin is expected at the Shenzhen summit",
+      "outlet": "La Jornada",
+      "published": "2026-11-15T09:27:06.000Z",
+      "outlets": 6,
+      "trending": false
+    },
+    {
+      "from": "PT",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOazJ6dm5EYmtNSmVtdzBObjJiMFgwSFZxVUtMY1hodlE4T0JfSXRPd3FRMHJPcmVmdmdvN1gtUnBfcHV4TFg0a3dDRXRmYW80WmgtWXNxZW9zYVdwQmkyRVA3eWVnSGlhY2RhanIwcW5ha1I3cHd3WVVQN2NUUHo1aHR5NkxIVjVlQTJQakpFMFQ3ZGo0eUNsMW9Qb3d5QmhJUWVWXzR4UVh2UU0?oc=5",
+      "title": "Ucrânia ataca zona industrial no centro da Rússia com drones",
+      "en": "Ukraine attacks industrial zone in central Russia with drones",
+      "outlet": "Notícias ao Minuto",
+      "published": "2026-11-15T09:25:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPVDIteFZKS2lnVGRMWlA3MEotb3VMWFpFN21tZHhXQ3Q2el9mbjZyZFZFVjVpMkxScDRsM29XOVBOcGgtQ0VLeXRrcWhpcEoyRXdXZGpzYWh1VGw1YWdsNFI4Y24yZVRCcFlXejZpdFJmeFhNdlBXOWJNdjJic2tBVTE2RlUxT1lNdzZ3OE9La0xuQXlZdkwtTTNlemFwTjdhWENLbkt2cDk1dldfTlM4VllFQ2VmcEtScHNTbVRjeTVJbUJrdXpLc1NZd1BCN2tsVGpLVUp3Q3otb00zZFk3d1NzN1VBOUh3THc?oc=5",
+      "title": "Ukrajinské drony zasiahli jeden z najväčších petrochemických komplexov v Rusku aj elektrickú rozvodňu v Taganrogu",
+      "en": "Ukrainian drones hit one of the largest petrochemical complexes in Russia and an electrical substation in Taganrog",
+      "outlet": "Aktuality",
+      "published": "2026-11-15T09:12:35.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZTlQVzYxYlRGdlk5THdKaVh2MkVFS0xUdHhfM2hWUG5yZzQwSE0wck1zdUlHdzFOZ3Z0aDRLOXBUYzJDLTJIcEloWm5hOXY1Ql9wRmU2R051YWJVQkpfYm0tVjZ6dEIwYU9QVGVhTlNUS2daQWhQZXJybjI5bU5jVl9YMngtTUFVSXdKZEJTbjdDSXpkQTByNGNjMUs2Rnl4bjZ3cWdyOWozam1xUXpkTFdXTVFxZFBBWTVXU2h2dEhPUTBYUnhNdzVqR2xycTJiQWJj0gHeAUFVX3lxTE9fQ3Y5MXZYRmxyTzM3WVBQM3J1Mmg4WnhGRW44Ri1GMURTZlp5Ml8wTnlNYllPVDV0bmpZczR4NmNLdDZBRW53c0hRSndFYXo1SHhyZHdJVk9mc2xSdTBEQUdqQjJOVTNvOWtPeTVRWW5jSUMteVVoTmR3eVMweVdMRTFVMmtsUEFmY3pDcUtBWEZLUXNueUxRX3lETTZKR2FRak1NQzRoNWZ1cTBHRzBvZXRlY1l4VndvdUZPN2hkYUtEdkdKOUdzajZXOGQ3OUIwWHdHZnpZTjRDNGhMdw?oc=5",
+      "title": "Putin dă un ultimatum Regatului Unit privind armele nucleare. Ce vrea de fapt președintele rus",
+      "en": "Putin gives the United Kingdom an ultimatum on nuclear weapons. What the Russian president actually wants",
+      "outlet": "Digi24",
+      "published": "2026-11-15T09:08:51.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -20,35 +990,15 @@
       "outlet": "liepajniekiem.lv",
       "published": "2026-11-15T09:08:39.000Z",
       "outlets": 4,
-      "trending": true
-    },
-    {
-      "from": "SE",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSzF4VU9KTllLakJiX055UFZFLUwwMFJUYm1pbC10NEpxYTlzOXhfVXdrb0ppRFJYSGgwVDZwaXJVQU1GQnE2TjUxRjRlejl0TUtGSFFOQ3lyaEQ1U0dPaG5FOURHeXp6MVpnT1hVQWxjTWZHNDJKSFl3aHVoUjE0TGFmX2tHeGFM?oc=5",
-      "title": "”Västvärldens uppgift är att sätta busen Putin på plats”",
-      "en": "\"The Western world's task is to put the troublemaker Putin in his place\"",
-      "outlet": "Dagens Nyheter",
-      "published": "2026-11-15T09:05:49.000Z",
-      "outlets": 1,
       "trending": false
     },
     {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcXpzNmVZbmJ3Z2dLRVVDcVhxVTliS3Rzd0lCTHh1Q0hROUxKREZGZDFaRVVzOHRGN1VsZ090TUZ2TGFlcTNvNDluYVczQ25PLS1mMUxlcWZhQndMYlhQVGl4NlVJOVlsbVJfV09JV01RQUlDVzd0UVduczVad3dDX1YycjZGSEE0V25IbDJucFFXbUp2bzJOV01YVFNVZ0hrbWNZelBCNTZuRzQ?oc=5",
-      "title": "Cichanouska zdradza klucz do pokonania Putina. \"Łukaszenko nadal zarabia na krwi Ukraińców\"",
-      "en": "Tsikhanouskaya reveals the key to defeating Putin. \"Lukashenko still profits from the blood of Ukrainians\"",
-      "outlet": "Wiadomości Onet",
-      "published": "2026-11-15T08:57:10.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "BD",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OdzN5MUhPZHBvNHpFSU1iR0JUOEdSWS1HOTBnMF9SOWxlZFZpN3d6MjB0SGZFNl9GYkNYb0dsTXNyZE1ON2RjZEhYdWI5NXF0a3pvMmVjWEV1eWlBa1pIN2Zta00yejR1RUl2bGZCRWM?oc=5",
-      "title": "পারমাণবিক শক্তির শান্তিপূর্ণ ব্যবহারে বৈশ্বিক যুব প্ল্যাটফর্ম গঠনের প্রস্তাব রোসাটমের",
-      "en": "Rosatom proposes forming a global youth platform for peaceful use of nuclear energy",
-      "outlet": "Banglanews24",
-      "published": "2026-11-15T08:52:50.000Z",
+      "from": "UA",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnY1THJIOHFaWEw3aFpPekdFOElubFEtcFZpanlfdEdVaFl1aEpFRDktZi1tMUV6bnEyWnFkS1hZQ1dpWDYzUDhrTlBiQU5NRHFjejJLaFNnVzBiRjFNMXo0eThDcndLcWdZVHBwbzlQVC1MNDAyd1oxcDdzY0FnRG52c1UwQ0dRUTBWcjJpONIBlAFBVV95cUxOVkNyQVBnSG1rU0FTX2RrVGVUellVRzdKVU1HUVdnMm42MUJlNm1oa1VNbEttMkZPZGVnVzNHSHk4R2pUNHFsTFowZnRDcnFGR3RIaHNBT0JXVFNhWGJzVDN1VW56Tk4zbHNXVXd2UC1lc243Tjl1Nm0yQ0otcGZsN0I3U3dJVi1mOU9oUjFuelpOU2xy?oc=5",
+      "title": "Росіяни атакували енергооб'єкт на Одещині, понад 40 тисяч споживачів без світла",
+      "en": "Russians attacked an energy facility in Odesa region, more than 40,000 consumers without power",
+      "outlet": "РБК-Україна",
+      "published": "2026-11-15T09:08:09.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -63,33 +1013,13 @@
       "trending": false
     },
     {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWExsT09Dbng3UXl6UHNWQy1FOVpnYjBJbjFhQmExYWFlUnJ2Tk1PcUtrOE5HZ0d4MVRkZFdwT0NNc2EzSkw0UExmWEhqRkFjSXV0MUpOeWFxTDgtbVRYeFdacWdVdzF2LTUxLW54eHpGZVc5dlh4aU8yeG9mSHIxYW43NnBhT0I5ZVZ2UEV6SGk1U21xUmRZa1hfRTRacWhSOUlHeXY5Q1p5cEswV2xmM1BBTmJBcFVhYmxlU1ZldVQxNXdMYVdsM2Q4V2duUUx0dGt0SEIzU2pCQ2tHaTRRblQxOGY?oc=5",
-      "title": "Operațiune ucraineană extrem de periculoasă în interiorul „zonei morții” de pe linia frontului. „La început, nu-mi venea să cred”",
-      "en": "Extremely dangerous Ukrainian operation inside the \"death zone\" on the front line. \"At first, I could not believe it\"",
-      "outlet": "HotNews.ro",
-      "published": "2026-11-15T08:31:49.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbVdtUkc2d0JjWUNXSUtIU01LSUw1QnRmMy0xU2VDd1dfd2x5T3l3UVpaNTRONjVmdkhndnk3elg0MXRrMWUtazJCNFpBaWNrX3ZQZzFlZFFqVl9sSXBYOUdfdEVSVzBCUm94YzluQXc3bWFwRzVmbmdxYVRfZ1JEc1hid1d6NUg1SjVZS0pfcXNubW1TcndSUXNkR09qZUpGaUtGRzhWMFB5djByYWdfMUVpLWctWGlfbmlaMUFlWHY1MDlZUFFn0gHMAUFVX3lxTFBPVDg0QjVRVlhHcnViMndxNGVSenNlRlpVczBGdmppWVBEN0tCNXluMW1Tb2NvcTlBYTZWX21CeXBLd1oxbVJLazJSaV9QX0x6YzRURkRfQVpCSFJnT2FtajNRWl93R2JlaDVqeHF2dnF2MThWSnlxSkdqbkZ1cTRxM0xnSXRNUkVZLTM3NHZhRmFTX0JYdklRZTdSRERDaGpITnFocEJ3X0Z3RUUzNHhyUVgxcEl5blk4eGc5UjNTNVZhU09xVnM3TG5ZcA?oc=5",
-      "title": "Gallyamov, ex autore dei discorsi di Putin: «Lui continua la guerra per evitare una domanda: a cos'è servito combattere?»",
-      "en": "Gallyamov, former author of Putin's speeches: \"He continues the war to avoid a question: what was the fighting for?\"",
-      "outlet": "Corriere della Sera",
-      "published": "2026-11-15T08:25:03.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOckx0dUV3SWQxV1RLcjV4dmROTUdnSFRqSG1UYTNHenpGVWJRY2hTOEZOZ0FQbEgyTEQ2b3R6ckU4U0hoRnEtbzNZZ0lzejA0czNKX1FfMlBMLWRXZ3ZYdHoxSVQ3dGQyUTc3UnE0Yk1HZzZZNllQcm9PbURqVWpQbnFDaVJ4ZjBuSExxREltVm5QVUJKYlNORndVMVlGSjMwVnotbFVjbDVYLTQ?oc=5",
-      "title": "LIVE | Rusland meldt dode en vier gewonden bij droneaanval",
-      "en": "LIVE | Russia reports one dead and four wounded in drone attack",
-      "outlet": "De Telegraaf",
-      "published": "2026-11-15T08:18:09.000Z",
-      "outlets": 4,
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMW1CcWJZd2pmWGxDOTdPZTdlUWFON1A3S0t4LUNpOTB4WVAzNXRibG8xdHMxMHEwTHZybExhLV9GM0ZiSHJObFZ1Z0piYnl6RzZmZ25lRUt5b1dnWHhDbDdBRXQ1V29lQk9GLVR0d2U4cXpfMnUxZUxJLVFXZENUMWlWZ01rX204d2VfYzEwck5MLUUxWlRsNFpTTEhNS3VYWUJvSVg0a3V3WW5iRWFiblQyaWdzQTVtWmxv?oc=5",
+      "title": "Vyše 16-tisíc vojakov a 357 delostreleckých systémov. Kyjev vyčíslil ruské straty - Svet - Správy",
+      "en": "More than 16,000 soldiers and 357 artillery systems. Kyiv tallies Russian losses - World - News",
+      "outlet": "Pravda",
+      "published": "2026-11-15T08:30:40.000Z",
+      "outlets": 5,
       "trending": false
     },
     {
@@ -99,86 +1029,6 @@
       "en": "US, China and Russia explore order through a \"modern Yalta\"; leaders hold nuclear disarmament talks, but intentions do not align",
       "outlet": "日本経済新聞",
       "published": "2026-11-15T08:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPaHoxNklCQmZhUFF0N05SVW9qdGM0SjJLTzhGd0ZSQzJrYWJkQ1dCT29Tc1MtdER2SGMwU2FrV2FCMEZJUXNNb21mX3JmQ0NVTGlVLWxmc3lkREFYRVV3WGVneUlHZThNYm1HV3U3eUx1WHlhVHJHWjZicVlHM1dZUk9VeHJuNTBueWE4d0NKSG1uY1Z1N2tRb2lwamdqS0VhYVpYTFRDMXQ0Mk5VZDE4dllUWmZVX2RIVGJPX05ObElma2JDQ1lnU2hqUF8xN2l6QVNKVnBtY3dsYVUydWlHNkpYTHE?oc=5",
-      "title": "Η κόρη του Πούτιν θέλει να «ξεγελάσει τη φύση»: Το ρωσικό σχέδιο της Μαρίας Βοροντσόβα κατά της γήρανσης",
-      "en": "Putin's daughter wants to 'trick nature': The Russian plan of Maria Vorontsova against aging",
-      "outlet": "Newsbeast",
-      "published": "2026-11-15T07:47:05.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMixANBVV95cUxNeXpMX1p6THhmQWllcjRxZW9EbnhQUF9EdzlMQjZxd1ZhQjN4ck1jNGVSblh5bUJiQk0taGRKUW5GakxtQlNyUTNzSC1xdHZ5U1AzSnhmWlpfX1RMcDB4WkJFdmVjSFBKWU1YTk1scHNDSUh3SFphRDh1ZjdOdkhRc2ZpZU9yTHFwU2RXdDNoNGhVTTF5N2txYl9YTDlsX21UZ2Y3Vlp6YzZnU1BjdmdGcVhvR2NEQ0UtR1lUUFNhVEc4ZEEyb3JlN2duZmVjTnRNTmhZS0ZpWFNFVTdJdjRxeXBDN1E0LVFUNEkxeUJEc29NV2pkUUVGYlNaekMyNldXUi1JQlEtNUNxNWZQNkZqVktYZGJuMWJMb1pFVTJ5OTFRNUtsdU9vNGZnRkdLY0JNVkgwaG91TEV2TV9nSHVCWU1mbF9aLXFvSGFkOGItU1dPYk9PXzlJZ0x6NkpVcjV2a2I2aUE2ZEZUcnU3UHFOZk5VNXAtV1Q0VWZtOTBhekx0WXF4c3p4MGp2Tk40ZU5ESjF6R1I0dnJOT3VhTDFzRWl4ZFFYVVpWaTJiTXBrRFl5STI5c3A4RGhhaFlfUTRpTGF6bQ?oc=5",
-      "title": "روسيا تعلن قصف بنى تحتية للطاقة وموانئ في أوكرانيا",
-      "en": "Russia announces shelling of energy infrastructure and ports in Ukraine",
-      "outlet": "Anadolu Ajansı",
-      "published": "2026-11-15T07:38:47.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMixANBVV95cUxNeXpMX1p6THhmQWllcjRxZW9EbnhQUF9EdzlMQjZxd1ZhQjN4ck1jNGVSblh5bUJiQk0taGRKUW5GakxtQlNyUTNzSC1xdHZ5U1AzSnhmWlpfX1RMcDB4WkJFdmVjSFBKWU1YTk1scHNDSUh3SFphRDh1ZjdOdkhRc2ZpZU9yTHFwU2RXdDNoNGhVTTF5N2txYl9YTDlsX21UZ2Y3Vlp6YzZnU1BjdmdGcVhvR2NEQ0UtR1lUUFNhVEc4ZEEyb3JlN2duZmVjTnRNTmhZS0ZpWFNFVTdJdjRxeXBDN1E0LVFUNEkxeUJEc29NV2pkUUVGYlNaekMyNldXUi1JQlEtNUNxNWZQNkZqVktYZGJuMWJMb1pFVTJ5OTFRNUtsdU9vNGZnRkdLY0JNVkgwaG91TEV2TV9nSHVCWU1mbF9aLXFvSGFkOGItU1dPYk9PXzlJZ0x6NkpVcjV2a2I2aUE2ZEZUcnU3UHFOZk5VNXAtV1Q0VWZtOTBhekx0WXF4c3p4MGp2Tk40ZU5ESjF6R1I0dnJOT3VhTDFzRWl4ZFFYVVpWaTJiTXBrRFl5STI5c3A4RGhhaFlfUTRpTGF6bQ?oc=5",
-      "title": "روسيا تعلن قصف بنى تحتية للطاقة وموانئ في أوكرانيا",
-      "en": "Russia announces shelling of energy infrastructure and ports in Ukraine",
-      "outlet": "Anadolu Ajansı",
-      "published": "2026-11-15T07:38:47.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "HU",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQUkgzUGRySnhZZERfcEJWYklfOG5aWUNEQmNITjROSzIwV0NpbHFXRDhRX2NJbWg5bHdTRkpvX0g1MV9EYTkxVlBHX2tGMDVrWUhodUl3UnoydDFRd18zNnZlX2sxU08wNmJPb0J1ZzgyZ3lvN044Y1Awc3U3UWJmT0RtRlhMazV5RlhRTW82QmpvS2pyY1V5U3BrTGFOMURMa2tZOUh5U1RFcWRoTHQzQ2U2V0ZXY1BTUTRMNjBoalowdzdQSV9BRFJuUWJISmpKR21tSm5TNDMzNlJnYk01aVBEUHNuTElMbnVXdNIB8gFBVV95cUxPLUNYa3ZtTUZwdlA4QzlyR1h2S09OeXdvbHJxNTh1NEdVRGQxV1M5dE5MMzBzR2xjTDlraHF0eUhNdUQwdGJ4aHhEeDI0cG5lUzFEVGtWMGJMR0drMVI1bFNyWVRXY1EzSXZLU3lZZ0JkVXJGa0pMb053N19NYjlGQlpYVmFIR1ZfVmNSZU82dVp1VS12bk91WGFkazQwMWhLdl9HN2xVU2Vhd3NaYldaME15dHdIYW1pYnB6ZmZTR1Fid3RwWXdoMVo3OXg5YS1FU3Qwb0M0am5QYnZ2M0FuU0ZYSExoMVRfTEJNbFBVaWpFdw?oc=5",
-      "title": "Váratlan fordulat az orosz-ukrán béketárgyalásokon: Zelenszkij kimondta, mikor mondana le területekről Ukrajna",
-      "en": "Unexpected twist in the Russian-Ukrainian peace talks: Zelensky said when Ukraine would give up territories",
-      "outlet": "Portfolio.hu",
-      "published": "2026-11-15T07:37:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaUxpdXJSZ2NEVHNBalQzc3E0WmprbUVSNXJvS1Zta204R0xtWVU0dGdwNzNlT2JLMXVXMkNvYzVmWGNEYzJ5R2VfQnEtdElUbVpUTTlTcUg2aEJrLVc1N1plSWJvcllUU1pYSm1Yby1HVE1QVXdfYi1jeHFjZzBVV1UxV0l6cnFTTkVYUkNqMW5lbDFXVkd1ZVpxdEY5Nk1WTVlQLWlOVDQxTllrTkdDaDZZaXZDODlWSnRRRmJ4SEpqdG9EUlBkeFdQYjJ5YVVfVjZkaE1YNWNfOGFkV2VpbFNR?oc=5",
-      "title": "Rusijos karo nusikaltimų tyrime Lietuvoje – netikėtas posūkis ir 7 įtariamieji",
-      "en": "Unexpected turn in the investigation of Russian war crimes in Lithuania and 7 suspects",
-      "outlet": "Lrytas",
-      "published": "2026-11-15T07:36:41.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SMmVEazE2eXRQMzZMSmwtV0dSTTduMXU5aG1EQUZqSjBZZDE0ak9udVpQRURManhZeFBTaHg3Zm4taGFvVlVXeERjdW9uRTJnWDZnUw?oc=5",
-      "title": "Росіяни атакували Житомир та Черняхів: пошкоджена енергетична інфраструктура й чотири будинки, Коростень без світла",
-      "en": "Russians attacked Zhytomyr and Chernyakhiv: energy infrastructure and four houses damaged, Korosten without power",
-      "outlet": "Житомир.інфо",
-      "published": "2026-11-15T07:34:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NO",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMUMtZzRYMEtjdWgzcENKbFhhLXpHdVp6NnBRcHd4cXdXRTJpUTBaUG9mSGNpdGhDM1Rzb3lQclluRDUyMWtMU2thY2RBZzdzZXZFVm5nMnVWTzFYX1JqaVQ3ZDBUeEZnZFdOcFVrY2VNeXJEdkpGT2VPMl9RdFJRYkZMRncwNUF1cjBBZ2dRbnEyY01fY2xVTFpVTE1ZbEdzTHZmYUVOaTRYRW0wbFBuNnRxc0k?oc=5",
-      "title": "Russland bekrefter: Putin, Trump og Xi møtes i Kina",
-      "en": "Russia confirms: Putin, Trump and Xi meet in China",
-      "outlet": "Dagbladet",
-      "published": "2026-11-15T07:29:29.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQblpYb3lFRjRCZzF6R19QWEV0WndUcU9rclVEMTk2MTUwRENkNnpkYlVlV18tVk5fY1p3eEFTMkV0S0lvYnVaSVd6UWw0YWQtVTZZVV9DQTd2ZDBxSjZJQ05oQ3J6blNQeG9GWWZvNEZ4QkJZNXJUcFRUZGEzN25sMWR3?oc=5",
-      "title": "시진핑은 핵 군축 소극적…미·중·러 정상회담 ‘외화내빈’ 우려",
-      "en": "Xi Jinping passive on nuclear disarmament; concerns over US-China-Russia summit being 'all show, no substance'",
-      "outlet": "한겨레",
-      "published": "2026-11-15T07:29:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -193,16 +1043,6 @@
       "trending": false
     },
     {
-      "from": "FR",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQa2MxVW9JM3ZpRE5IZ0hOT2t5YkxvcU1fVlk5VFRuMlp5S0VzbFRESm40akdnRHhDUW1jNUFvLUxFS09hcm1jZ2NqTTJpV0xVa244djRRNTVfNkw0aDBZUUotaGZXdmJyUUxJTVVkaERYRzZWelIyLUZVUWJocnZja25aSFNMQjlWZElfZTFwcVlIQ3ZLSXJfUUlDYno2NC1vUUVxRHkxMUdsQXc2R1VtR3ZHTjhJMUxoektwZEo5UUJsaEMtUnVzZzdiUlZiUQ?oc=5",
-      "title": "Stress et règlements de compte interne… Ambassadeur russe est-il le métier le plus dangereux au monde ?",
-      "en": "Stress and internal settling of scores... Is being a Russian ambassador the most dangerous job in the world?",
-      "outlet": "20 Minutes",
-      "published": "2026-11-15T07:17:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "LV",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYXNONzBKRkVmWWY5MlRPR0RRVVdfQkFYVDJRb1VUTVMwQ29NT3VMZmc1bHVDendra3VUZHlqX204dzdzS2diektGMVVuc0JXMENURVdWS2dUa0l0YVF0S092eU5US3ZpMDllRHh6OGlTOE5fOUFqT3BfNV9JNG1WYU1pYmk?oc=5",
       "title": "Tramps un Putins vēlas tikties Ķīnā, bet Sji Dzjiņpins nevēlas tikšanos rīkot",
@@ -210,106 +1050,6 @@
       "outlet": "NRA",
       "published": "2026-11-15T07:14:00.000Z",
       "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "SI",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPelFrVDE0QXVjZzZCaHdVNktyMURlOGhFWnlaSFF3WDVLZW15R1R4SjlaUDZUREx5eGM3ZFNIRmIxRDhZSHJ4SkpnSHU5OWtud2RJZVlMeU9Ed1BFODZ5QXp6dFFSMFVNTHhxaHBPdXhhc0FWbzZoQ3Ric05JSUhWdWx2UEduYWZlWXdYRFI4NDc3VGRiNTQwZ3o0cXdJV3k3QmJBR0dn?oc=5",
-      "title": "Konec tega slovitega prizora: superjahta ruskega milijarderja zapušča Tržaški zaliv",
-      "en": "End of this famous sight: superyacht of a Russian billionaire leaves the Gulf of Trieste",
-      "outlet": "Siol.net",
-      "published": "2026-11-15T07:10:00.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA0UzJrQXkzZWVQR0lwemhqRkItdnJSeW5vWmk1WHRHQmlMYk9FN0kxN2pycy1rZzFLT3FpcF9iNWZZOVhobUNSUGVqckJTYmE4eVFVUmxsbDQ2Zw?oc=5",
-      "title": "사상 첫 미·중·러 3국 정상회담…엇갈린 속내 속 ‘제2 얄타회담’ 우려",
-      "en": "First-ever US-China-Russia trilateral summit of leaders… amid divergent intentions, concerns over a \"second Yalta conference\"",
-      "outlet": "경향신문",
-      "published": "2026-11-15T07:09:00.000Z",
-      "outlets": 9,
-      "trending": true
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNRzZhSmMxSVZkamNyUFBPZVBKRFVFb2pVR0p2NWVTbk5GbWVlNDBwQjFJZk5jU0xia0pXVm82LVNFQUdNQVpkMjJsRVp3dW83RUV2NUJZbndfNHFBenFIMmZUQ2xvMkk1aVZ2ejBjTmg1MDd1TjBvNUZubGNvclhRR1J4MUN2d29Ib2lSczRMS0JDdG90YWZwUXVWNDFFUFpXa21vLWFjUkN2ZG1neC1Yb09paGVUc01HTUtNdHFxdzNXTXhDalM0bF9aRFQ?oc=5",
-      "title": "Wokół polityki USA wciąż krąży dramatyczne pytanie o atak Rosji na Polskę",
-      "en": "The dramatic question of a Russian attack on Poland still circulates around US policy",
-      "outlet": "Rzeczpospolita",
-      "published": "2026-11-15T07:08:00.000Z",
-      "outlets": 2,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZ3llSUp4cDdFZnU4dVEtS0pCcW4xcWtwOFJaMkVZeUU2UGZ3OVZ3UlBheGlOMUZZNDFWTnNfNjUyQTk5SVladWtaS2hZNFV6bUJIMGNoc1BGeDlFRW1qQVhxQkxqRE9JX25DdGlMYVJWNHBwdVZ6Z3Y5YlB4SkxfOGlIMkwxbm1ydUN2c1BETUZaLXc4bUNjdFVxaGdKTHpzYmtjakNvLW4zVmFoT1U1VU96WQ?oc=5",
-      "title": "Ukraińcy trafili jeden z największych kompleksów Rosji. Pożar w rafinerii [WIDEO]",
-      "en": "Ukrainians hit one of Russia's largest complexes. Refinery fire [VIDEO]",
-      "outlet": "Wiadomości Onet",
-      "published": "2026-11-15T07:05:29.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1WTjhBWUFzcWZtb0ZtM25lc1QyNUxocm45NjJGNS1qXzU1NE9PTEZ0eHU1MjRwVUxreUxNbDZIZHJqRGZDOGx5aHNXOUFkaUd1Tktj?oc=5",
-      "title": "موسكو تؤكد.. قمة تاريخية تجمع بوتين وترامب وشي في الصين",
-      "en": "Moscow confirms: historic summit bringing together Putin, Trump and Xi in China",
-      "outlet": "البيان",
-      "published": "2026-11-15T07:03:31.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DTE9ETzF3UTIwV1ZHaldxR3pBLWNuLUVyek1YU0hfdlJlNE4wSlpWNkwtcUwySDdsUHgyV2YyVHljZEtUTmx3dERvWXp3MmtaR3E1c3RDYTJuZkk?oc=5",
-      "title": "הנכד של פוטין לא יקבל את שם המשפחה של אביו - זלנסקי",
-      "en": "Putin's grandson will not receive his father's surname - Zelensky",
-      "outlet": "YNET",
-      "published": "2026-11-15T07:00:11.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdTlkOUU0X1dQaWlCQ2M1UlBQdlhlMzkyczZRQXdfR21YTF8tNGNMaGl4NDd2OHl2bzJnLXB4MFhsZndnYm1Yd0s0TzhiRVY2bTNxUDJNT1pKM1EtUkJHcl82MDd3aXBjbTBZVE5CVEVDOHY2VTQ2Z09DaTV1NG9NYnZpZXBkZnhOc2lXR3M4QmZvSGxsRV94ZTh3UmwtM3JDX1dDcXA3OHhhTjUyTlg1VzV2UdIBvgFBVV95cUxPaEU5TXV5OGprSmkxQ2JJZXRLRC1rYkE4Vld3NHBYdWJqcE9zRmhidW1TcWwxck5fcmktQ0NnWEgycXRwN3hBb0M5ZjlSbkRzc0FoV2Jsc0J6NGRWYTd1bTViWW0zaTYyaDdDaUxnZURaNm5qYTFzZFA2cTFTQmxmenFUQk1qNm15cDM4Q3ljMjJ6cUpyUF92Mkp0ZjRtSlZKNWNPUXB4MXdZRGY0bWpUZDNqQ0FKb0J6ZjhNbURn?oc=5",
-      "title": "Ce spune Kremlinul despre întâlnirea lui Putin cu Trump și Xi Jinping",
-      "en": "What the Kremlin says about Putin's meeting with Trump and Xi Jinping",
-      "outlet": "Digi24",
-      "published": "2026-11-15T06:48:43.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTlpnQzFUb0lZN3dNYUg3TTRvajFZMFowWTI4WWl1OTFXclJHVndxQjlqLVhHQ2hPU2pYTF9aSVZKcTNlMTIydFFlQm9HQ2J4ZWJLcEtTbklaYTlfWDJZcEZ5NDY0Z0tCSTZudlpFWnNEX0xQdkY2eU85SXhTTmNKRTZKeTlnZnVQYXNLSUZfX1lMUnpIS0xXV295YUh5UXBrcmRIaHMweXVERGluMzdaVlhSTzJ5X2VuRDlieUItQnpQUQ?oc=5",
-      "title": "Co działo się w nocy? Atak na bazę USA, pożar w Rosji i zderzenie Boeingów",
-      "en": "What happened at night? Attack on a US base, fire in Russia and Boeing collision",
-      "outlet": "Rzeczpospolita",
-      "published": "2026-11-15T06:47:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQNXJJYVFVeEhsVEFzRkNoeXN4bGlHSVRSbDhMNVJwNS16OEJ2ZWZ0R25LS0RxZlJZdkc5a3VSSFBuTHVVUlRVaS1jMXRoQnBxSWFmcWNkUDY1WWlQRWJ5YS1RRzdRQnNGcUJlMXEtSFc5a0NETkZKMjluX2tIazVXOXRQNnNlMTA5LXpjUEpvSGNVejMya0NQdnMxOVJUbEpUVjZUWWlrZk91cktwSlpadGdNV0V6MnFxclNaX1NmcE1tTVFqX0xOZ1NSMmx4TGd0Q2l6MXllYXFiTHhlNnJ2WVlNekxVLWp6dDdkQ1ZQSWFLQl9t0gH6AUFVX3lxTE9VRGhRS1JLT0JadWtCQkZaYW1GZ1hraVZGS3dBZ2ZiZG9sdFkxTktmSUlyVGlCdVZSNUw2XzVjYmxqN1NraVBSdFhqR3JFOHBpYmlTYTdSN20wcXJUQlBkZ0pUV3RFUHdOcnlIYWxXaHFJajZNS0owNTV6bWM4c3R0ZlRPczFFdzJhM2RvRDhYN2cyYmRoZEFQRS1QVWNUb01ZVkF5ODNvdC0yR210VXdDUXl3RDdHbDhCdGRKTjktZk9YX01HdkRqR1ViYzl4YTJvQ19SS2JuWUhxMmxBemxFVWpWOW5oNEFraGNsTnR5ei1xcXFUQzlhaHc?oc=5",
-      "title": "Mosca: abbattuti 533 droni ucraini nella notte su diverse regioni russe",
-      "en": "Moscow: 533 Ukrainian drones shot down overnight over several Russian regions",
-      "outlet": "ANSA",
-      "published": "2026-11-15T06:36:00.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "SE",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZNmQ3akU3MUZCTzBDWFd2WXhpTVhhWm9CRVdLajdXNGRJbDNOc0U3STJIV0VJSmZIMG0zNXNfOXZ0NVJsSUVXaVBUVFV6TW9wa3ZRNjRJU3VTUDNsQW8ySnJOQzhWLUlxakZjQU8wMWJnUnJLNGJwTS1CUXJCQQ?oc=5",
-      "title": "Rutte: Ryssland förlorar tiotusentals varje månad",
-      "en": "Rutte: Russia is losing tens of thousands every month",
-      "outlet": "Omni – Alla nyheter. Alla perspektiv.",
-      "published": "2026-11-15T06:35:36.000Z",
-      "outlets": 5,
       "trending": false
     },
     {
@@ -323,76 +1063,6 @@
       "trending": false
     },
     {
-      "from": "GB",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdVVlSnBZdEozSzJxR3NrX283ZzhzUXloWlhmOXRycGFhaTNfWEdLUjdFVEVxaE0xTEtVa0NrT1lqdl9idkVMOFpqU3lpcVF5VXVsaS1wMDJyY1A5Q29pMFlQZ294NGdaOVlvaWZxZjFkc1NuNG1zZjhmVGVUVWlmb2RzTTMxRDdHUENSbmRhQ2s1c0stVjZsaE9LYi1CZkpiMkNjTV80UFIwOXRhbHhPS0ZtX2RUMFVMd1JWSE5JQnFSTFJsOTViTk1rOEtNd0pNcFZfYUtxMGpOWmhLeThYTm13?oc=5",
-      "title": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
-      "en": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
-      "outlet": "The Guardian",
-      "published": "2026-11-15T06:25:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AU",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdVVlSnBZdEozSzJxR3NrX283ZzhzUXloWlhmOXRycGFhaTNfWEdLUjdFVEVxaE0xTEtVa0NrT1lqdl9idkVMOFpqU3lpcVF5VXVsaS1wMDJyY1A5Q29pMFlQZ294NGdaOVlvaWZxZjFkc1NuNG1zZjhmVGVUVWlmb2RzTTMxRDdHUENSbmRhQ2s1c0stVjZsaE9LYi1CZkpiMkNjTV80UFIwOXRhbHhPS0ZtX2RUMFVMd1JWSE5JQnFSTFJsOTViTk1rOEtNd0pNcFZfYUtxMGpOWmhLeThYTm13?oc=5",
-      "title": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
-      "en": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
-      "outlet": "The Guardian",
-      "published": "2026-11-15T06:25:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PH",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdVVlSnBZdEozSzJxR3NrX283ZzhzUXloWlhmOXRycGFhaTNfWEdLUjdFVEVxaE0xTEtVa0NrT1lqdl9idkVMOFpqU3lpcVF5VXVsaS1wMDJyY1A5Q29pMFlQZ294NGdaOVlvaWZxZjFkc1NuNG1zZjhmVGVUVWlmb2RzTTMxRDdHUENSbmRhQ2s1c0stVjZsaE9LYi1CZkpiMkNjTV80UFIwOXRhbHhPS0ZtX2RUMFVMd1JWSE5JQnFSTFJsOTViTk1rOEtNd0pNcFZfYUtxMGpOWmhLeThYTm13?oc=5",
-      "title": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
-      "en": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
-      "outlet": "The Guardian",
-      "published": "2026-11-15T06:25:00.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdVVlSnBZdEozSzJxR3NrX283ZzhzUXloWlhmOXRycGFhaTNfWEdLUjdFVEVxaE0xTEtVa0NrT1lqdl9idkVMOFpqU3lpcVF5VXVsaS1wMDJyY1A5Q29pMFlQZ294NGdaOVlvaWZxZjFkc1NuNG1zZjhmVGVUVWlmb2RzTTMxRDdHUENSbmRhQ2s1c0stVjZsaE9LYi1CZkpiMkNjTV80UFIwOXRhbHhPS0ZtX2RUMFVMd1JWSE5JQnFSTFJsOTViTk1rOEtNd0pNcFZfYUtxMGpOWmhLeThYTm13?oc=5",
-      "title": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
-      "en": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
-      "outlet": "The Guardian",
-      "published": "2026-11-15T06:25:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFByY3pQYVVMLVRCRzI0TnJSSFl5a2hwdEQ4NnMwUGV6M3F3a1RTX0V2NEdjaTZlLU54bVZ4RWNsYWdxMS14cTFEdUhaRzQwTG0xSWloYVdwU2dQZ9IBX0FVX3lxTE1ZTnJGbXJYWDd4MmRTZkZRdXQzMXVMZkd3eTYwdUxwS2trSnlMT1I5UUhWNGtCMnpFcEVJa0JwVUx4VDNESTFCaDJ6azlkQ2FRc29aTWtWTm14RGNjMFFR?oc=5",
-      "title": "젤렌스키 “미국, 우크라이나 나토 가입 대가로 돈바스 러시아에 넘기는 안 제안”",
-      "en": "Zelensky: \"US proposes giving Donbas to Russia in exchange for Ukraine's NATO membership\"",
-      "outlet": "경향신문",
-      "published": "2026-11-15T06:23:00.000Z",
-      "outlets": 6,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOVFmN09yNk16M24wUThyeTJwbXNHcGNYMTRsVUJiMzJ5dWF4SmkwVk9iZFQtT2xWUC1LMFI3RTliYU9rQ04zdDROREFqTFdESW9kcV9Sak1SQ3lqaHdNU3J5R2ZjdFQydV9ab2Q3VTZtZ2UyUGpLRmJKa2Y4VjFFMS1WNnQxdFZ2bTRtTEVXS1FLbzNlWHBnYklHNXJLLUpxMVhrVU5YVEdJMVJMN2tRc1V0bzlodl9SVlkxV9IBwgFBVV95cUxPeFBFNUlZRHFzNFZoRzBfNEF3Yng5a0wwbnI0MTUtN1VBYUdvVUJrOGtlMXExU3c1RnRCUFNkTGkzVl9hRGNBTTBRQmYxa0xXLVN1eVFKYTRZUjRvZERsc2FzOFNmM0ZHZE14UjRKRmM1WFE0WWMwMFRNS2hPRXBuXzF0YnB3Mm9ab3FTUTVSVTg1WUFLSlhtY2Z3NzlfQ2hhNmI5dmtYdklfa21ubWE4ZlNYejctdWw4ZWhZWXFtT3lYUQ?oc=5",
-      "title": "РФ пішла у наступ на \"пояс фортець\" з чотирьох напрямків — що там відбувається",
-      "en": "Russia went on the offensive against the 'fortress belt' from four directions – what is happening there",
-      "outlet": "ТСН",
-      "published": "2026-11-15T06:22:30.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBQaC12LVA4WDF1UnV3MS1iX3l2VDd1ZmZ3b0VUU0FMN1o3WDBBYjU4OFZjM0FPNVBwb3dVYW1fVEpZY1FHSV9XM3RjNHBDRndUdVd6OUNyQUthb2JhT0FqSXNCcE5lRzZkdmxF?oc=5",
-      "title": "Кушнер про мирні переговори: з’явилися нові ідеї, які можуть привести до прориву",
-      "en": "Kushner on peace talks: new ideas have emerged that could lead to a breakthrough",
-      "outlet": "Європейська правда",
-      "published": "2026-11-15T06:21:35.000Z",
-      "outlets": 10,
-      "trending": true
-    },
-    {
       "from": "SI",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVUoydFZRVmN1dzhRWFdTRmpsUHdsX2dVVjZTNWdDLWNsWWZXODd0ME5kaXdqQ2xCRVBCTVFXbmFydVYyX0ptNDdudG55M3FWV2lSZ2taWFQ3RXM1a1lVSWtTMFhJT2xrX0xMbFlHckgtbDlyUURfV1Ewb3lDUTVyRk1wZUZQekl0b1VKUVRHRnlFdTlpSGF2TFgtWHZjaUxCVWhrbzJ3?oc=5",
       "title": "Evropa vendarle za pogajalsko mizo? Moskva spremenila stališče",
@@ -400,166 +1070,26 @@
       "outlet": "24ur.com",
       "published": "2026-11-15T06:20:44.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
-      "from": "GB",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNLUdDWFpKYTFpLXBKakFwVW5DYjA5eXdONUZZUi1vVGlpcjZlSlJaQmFCNmk0ZDAyOWZMSlh4T2FwZVFCMVRYLWxQb3MwdmMzUHNhQWdFWGV2RHdsZmZPYzdMd3RTdHZ4QzFxazlDVzE4cll5MnBOSHFnM2IwX1Q5RHJPbW1DOXpmMFVJVzFTMVhvc0NuWmlYWEhFeFpaZ1dEN0hTUkJQS2x3Ql9IV2VVMWtvUWlYTndJbVRETFhvT2tCUQ?oc=5",
-      "title": "Ukraine war live: Russia strikes Kyiv hospital as Starshield restrictions continue",
-      "en": "Ukraine war live: Russia strikes Kyiv hospital as Starshield restrictions continue",
-      "outlet": "The Independent",
-      "published": "2026-11-15T06:18:48.000Z",
+      "from": "TW",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6ZUxiUFU4ZkZPSjJNVkRlU1FOQXMwVmw1U3Y0M2NySmJnVWNlTnFTR3lsNS1yT0tKVFJwbWhWbWVVVG03RXpoN0hPWmJvSVVhR3diQVE5ZlFKWnc3Z05FaFk1aTByTknSAWxBVV95cUxQWElfbnBONDNVZFZvVUt1NUl6YmhMZGZHSWtteFA5eUZTMmJUejZ5ZS1MbmVaMlZnQjNmY19DOGZlYlk4TFNGOHBKMWo3bjk1M0VsVDFpU25SU2JKZHc3VkhQOU5DSkU3ZGh5ZE4?oc=5",
+      "title": "白宮確認特朗普、習近平和普京將在深圳APEC期間舉行歷史性三方會晤",
+      "en": "White House confirms Trump, Xi Jinping and Putin will hold a historic trilateral meeting during APEC in Shenzhen",
+      "outlet": "BBC",
+      "published": "2026-11-15T06:16:28.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNLUdDWFpKYTFpLXBKakFwVW5DYjA5eXdONUZZUi1vVGlpcjZlSlJaQmFCNmk0ZDAyOWZMSlh4T2FwZVFCMVRYLWxQb3MwdmMzUHNhQWdFWGV2RHdsZmZPYzdMd3RTdHZ4QzFxazlDVzE4cll5MnBOSHFnM2IwX1Q5RHJPbW1DOXpmMFVJVzFTMVhvc0NuWmlYWEhFeFpaZ1dEN0hTUkJQS2x3Ql9IV2VVMWtvUWlYTndJbVRETFhvT2tCUQ?oc=5",
-      "title": "Ukraine war live: Russia strikes Kyiv hospital as Starshield restrictions continue",
-      "en": "Ukraine war live: Russia strikes Kyiv hospital as Starshield restrictions continue",
-      "outlet": "The Independent",
-      "published": "2026-11-15T06:18:48.000Z",
+      "from": "ID",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ1QzNkxNNDkzTXRzSHFMQ2hOX0ljMHVSS05rQXBHWW1HYUlQMXI3M0EtbEQ3d2FlY0xRX3A2ZHJsd2VsSDl5N3J4Si1LNjhYanVQcFZkS0NpcWhlZTZ0MlF6c2tUekJJS2RNTkd3VTBhanI4QkdaLUk1WWFqVkpNczJnOGJMalZFN25ubFZNMTNMc0xyU1llNjFmV1ExaE4xZVk0amZ5MXd3dTA2a1hScGUwTkI0MTlBNnZCZ3dxbDlKQdIBxwFBVV95cUxOUGd6ZjJzOUtJbEczU05qOEU3Rk5Cd2NpV0k2WS1XdDlmTDZiZlQ0MG1uTEh1Q3NpeHlJNll6VTBDOXBkZVdNYWdISVBfblk5NWZ3STNNWFcteTNSSVNKRmNaeFVaSmFiSXl1elJBM0lxTHlReE9rVVpkSktHbEtncHFQZEJZS3pnZHNSQzVfaTFJekN0TzduaEtkaW1ZM2xNeXV0UGZaOHV4c2VKTlgxN25OME14Z3JZeUlFNGZoVEgwSE5vRTNF?oc=5",
+      "title": "Rusia Konfirmasi Pertemuan Bersejarah Trump, Xi dan Putin di China Pekan Depan",
+      "en": "Russia Confirms Historic Trump, Xi and Putin Meeting in China Next Week",
+      "outlet": "detikNews",
+      "published": "2026-11-15T04:50:42.000Z",
       "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPejgwU2xIZlU1YkZEeDJOZXFUUV92M0UtbXU5QlRUdXdzWXphRVFYTlNCTzRRRWtHZGpaeHA4TzJHNk1nQnFzQTV0cFRMaFJRUXlvRk0xNVhGSVdvMU5qMndQY0lDb1FZajZMLVlpY2JJYUM4QXFld2dPUVBOc2NmbzRuSXRoODVteFpJUmNVWmwwZmFfMHVlNFREeDlKTUZvVF9MTzlmRlFMbVlwZjRDV1NtQzF1YW1CUTBoZ1JB?oc=5",
-      "title": "Rosja chce cofnąć NATO do granic z 1997 r. ISW ostrzega przed planami Kremla",
-      "en": "Russia wants to roll NATO back to its 1997 borders. ISW warns about the Kremlin's plans",
-      "outlet": "WP Wiadomości",
-      "published": "2026-11-15T06:17:58.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQM3J6NHdURWFRaGk1MkhobEtpQVE2UzZ4a3JoNXlBR29iQ1pZbVlqNzR2ZEozNUtVOHRVR25yR2FFWU9tbVVDYUxRX2tEQkU2N0RLaXMyTE5CV1FzZEVQMW1FczB1V253c3BsY0hpOVk3RjFTbzAzdENUNm9iR2ljQ251U0R2b0xRNm1iRzRkMGJpZmY4X1k3ZTNRV29RMjQ4enBKa3ZOLWpSTl9rVnMtQ05HcUtJdW56aWpXck42b19aNFQtVURySjZvTC14TGV0NUxXMWhyNDVpd2ZGRjFGWUZGdFROcWFpSXZKSGFCMDlfRnNVUmlIT0ppWDhnOFFWSG5kNnJ2N0VWNlBlVlZWYXlFNFYweE1fNHM3UlNLRG03VnZqOGgtT0Ywc2ZacF9kSjNuQmVLQ3FReDhmcDdnNGxuUQ?oc=5",
-      "title": "موسكو تؤكد انعقاد القمة التي ستجمع بوتين وترمب وشي في الصين",
-      "en": "Moscow confirms the summit that will bring together Putin, Trump and Xi in China will take place",
-      "outlet": "الجزيرة نت",
-      "published": "2026-11-15T06:07:50.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORE92bXpGV2NNY0RWUGUtaWpCVlVpbTc5Z2w1NHFwc3VITnkwVkc1Zm9vdG9Oa25SdDdIMlJMVjgxb0dZMHVqYUlabWRPcUVfaFJ5WlBYZDZ5N3RKVjdxd1BYNVdKdmNNcGVVMHpzX1l3RVVldk5xamlOazB1YWFBLUpNWUoxdFRwb1dlSkh4YkVJbHI3MTVvVHF5aGNBcW1NTVlvSUFfc01wT0RuNmNJdGxXX1IwS0xqRHlpN1JvSdIB1gFBVV95cUxOeXdCOFVvbWF2WDZBSnJyR3VlVU9wM3h0cXVqRUFxTGlDU1lkNmVqSUpZcXlxVEtJakllVW5ONHg3b2xuYVdlNnFyamswNUtESVctQ01xdVBlVV9GLUlJNlQtNHN0SGlfTEotcm9aSFc4azFodGZNVFEyRHRHUDIwMFFMd0xWOG5HNXRzRVlvRjFTUUFrbjR6WExhYy13cHhoRXJPRUpsTEdfQXNtYkk3cHFsT191aTIyV1daZXdFaF9CazY0dVFmbHFBd2l5RVdIdEpXSGd3?oc=5",
-      "title": "Іран потай від Трампа накопичив тисячі ракет, і не без допомоги Росії, - WSJ",
-      "en": "Iran secretly from Trump accumulated thousands of missiles, with help from Russia, – WSJ",
-      "outlet": "УНІАН",
-      "published": "2026-11-15T06:04:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNeTgxOTBKeGE5TTdEa2p4NGcyZWJnVldoRGNYWTRLckMzc055TnljY24yZWZSemttY2pjdjBsYUFyTlcxeG4teE44aXE5SnJpLU90U1JWSm0wQ1VnZDB1Y2p3dkhRTFpGSl9fbVRsSXpmbTNPRVNldE9SMDUtR0RpRGRGRHRhLVlqcGtNVFR6ZkdIVG10OWZsZUZQSnZPTGJWZ3phVVpjdDBuUWdNSVBuMkhyRnkyUUgtV2hqTktILTF2Zw?oc=5",
-      "title": "Maskva patvirtino – Kinijoje įvyks Trumpo, Xi Jinpingo ir Putino susitikimas",
-      "en": "Moscow confirms – a meeting of Trump, Xi Jinping and Putin will take place in China",
-      "outlet": "Delfi",
-      "published": "2026-11-15T06:03:41.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5QX0lQQmlrVklLUVBaQmFwRXNVV0dzSWxNVG5aWTlRNjh4b1ZMT0JMMEZ2Q0RuNi11VlI3aWNuMnpxN3NtX0NIUGFXT05lVzlsdUd5UXpabmM4cHJKaVZVNklDMUJ4Y29TY05pckFFTXBZeEHSAWZBVV95cUxPenZXaGxWM1A4R1BITVY1OEl3TmRJOTFJOHVUNENIbksyWVAxakdETmR6amJzVlRmVUxSRm4yLU0xa0R1dmZfa0FkVEQ2SjNVOUZYb21fUTZ6Unc4UktQcmpMSVpMTGc?oc=5",
-      "title": "美, ‘우크라 NATO 가입-돈바스는 러 할양’ 중재안 추진",
-      "en": "US pushes mediation plan: Ukraine joins NATO, Russia gets Donbas",
-      "outlet": "동아일보",
-      "published": "2026-11-15T06:03:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSmhUTEJBX1VyMm1lLXdJcVpsREY3aXV6OUFWTTRPVnE4WFhxTC1RcFZ2TkNINUFsWUFDY0c1NkpRbWlkX25DR3pRaDJNblJBX0JyV1JvVkluXzVGNm5DM05nSUZFZnRPY3FQelZkSlg5UVl5Z0R6LXJnb1F1VjRRVld6ZVZjdldBbEx1R3lzQTZ3SjR2QWZ1R0lhMXV3NWFwTDhOSEpLcHduZmZQdjhNdjE1a3HSAaQBQVVfeXFMTmdVMVBPb2NmODFPbkFFcHg5NkxCTlhiYktfc25oZ0FWM1RxWEN0Nk91NHdUX0RRel9xam1TdGZPZDZLcHBNUzRTUEdKRnJDWnhhYWR1cWVBcERsaXdvMmJUbXhCOEEzSTh2TlRpR2hvXzVTNTlaS0FmRHVja0tSRy1qZ1NSdFFoejF6UV9MU2ROUXYxM0JMdXRicHBWc014ekpNSTE?oc=5",
-      "title": "Один із важливих енергооб'єктів. У Таганрозі дрони уразили електропідстанцію — OSINT-аналіз",
-      "en": "One of the important energy facilities. In Taganrog, drones hit an electrical substation – OSINT analysis",
-      "outlet": "NV",
-      "published": "2026-11-15T05:56:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWVFORkFndXVFNENyYmVYTWlZcm5abnBYby1zSWJOVkZJZzZ6VGwwNXd5TV9Dc0VldGlHakZ3NkxhQ3hEM0lGakV1VWk0MHppVW1qWnhUZllCYU9HM3oxM1JiVzZvS2FKbDJIZk5iUWRqSDc4Yk5SdTZOalE0eWFIWDRVSHNSdkRmVUhvcEwwWWp6ZEFua256ek9UT2lBUjVvblc5X3FZeGpXZVVhWS1LTEV6UjhzLXdWbi1XRWFDLWdXVlJ4SEQ2M0l2TVJ1NloyM0E?oc=5",
-      "title": "Rückabwicklung der Nato-Osterweiterung: Putin stellt radikale Forderung",
-      "en": "Reversal of NATO eastward expansion: Putin makes radical demand",
-      "outlet": "T-Online",
-      "published": "2026-11-15T05:55:06.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UUmhTNDZ1Mzl4Z1l2V1FkdS13R2hURG90aWRhZmU1UDN3Z0s1MFBma19USzBoYm0xRU9QSEcxMFQwdHNJcTVXQmdjMWF4dWtiVm5hZDBfUUl4QzhEMzZR0gFrQVVfeXFMT0hobnBES0dSTlJBbXh2MC1IX2N5YnA2a0Y0R2tXNkllSkhpT2FiTDV6VXNwRDZ2bHBDWWxhZWVydXRadjlpSTRpV0pMcEltZzQ3SU5VblBmYnpZZkM5dlpEdnNqVHoxOXFlTUk?oc=5",
-      "title": "У Росії горить один з найбільших нафтокомплексів Європи: Татарстан атакували дрони",
-      "en": "One of Europe's largest oil complexes is burning in Russia: Tatarstan attacked by drones",
-      "outlet": "Українська правда",
-      "published": "2026-11-15T05:51:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNUR2cG5sN0RsQldQdDNNUzJ2OHVaVThXVEVTNDg0WDAyeHN6dUFucHdPUV9pSGtwU0JUQ3N2S0xtYjk5Mm5YTFNzaE9QRElTTjE0RnFWcFliZVhteTd1QXRLNWlWcEZaSU9EMVo4SmFndEQzQ2NzWVdaaHNpRnozNk5WQWlqV2hiWGN0TktaSmMwOUt2N2xqV2luVnhHQQ?oc=5",
-      "title": "Nocne uderzenia w Rosji. Drony nad zakładami lotniczymi i przemysłowymi",
-      "en": "Night strikes in Russia. Drones over aviation and industrial plants",
-      "outlet": "WP Wiadomości",
-      "published": "2026-11-15T05:33:24.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOXNCbzJ3SndGOU5tb1EzSE14OF91a0dBZHBWd1hWSU9SSm1tTkZrRjhNREs2cEJJNUt6OWJkNW16QzJ4dU9vQ3JncUFPLVM3T1ZjcG5HdlBTbEdfbE5XRGxsOV9UbVl4a1dyZ1NoTXIzeGZESUFvQndGWmhLT0ZJdzhqYi0wOVozZzRBaEc3LS1LVnlHUkx3?oc=5",
-      "title": "VIDEO. Jānis Kasalis par Krievijas kravām caur Lietuvā: \"Tās tur ir bijušas vēsturiski un daudz lielākos apjomos nekā Latvijā\"",
-      "en": "VIDEO. Jānis Kasalis on Russian cargo through Lithuania: \"They have been there historically and in much larger volumes than in Latvia\"",
-      "outlet": "NRA",
-      "published": "2026-11-15T05:20:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUndzTFdaTkNuY3NzdE1CRmFDUG9JRFlJaFhzUTdVbDJKbTVUVnZpTGRFalhNRXgxeG9OYktibUlna1FycXJZUzZ1My00T0ZWZjFjTE1GNEkwWlJZYlB2S0tra2JtOGpYWFZubFB4d1dCc1JBbFNpSjJmQkxxa0xKRU9mWDZvVFhzZE15MC12aUNkZ3M5SGxXSTRFcWZFWkdSZnBqeFVzX0dvSjRIR2ZLRGhrNU5mc09ET3pBaWh6TEdCSk0tdkd5SzlLV2x3WEZNMXJwaHhkUkhraWZoa015OA?oc=5",
-      "title": "Trump, Putin und Xi: Historisches Dreier-Treffen in Shenzhen geplant",
-      "en": "Trump, Putin and Xi: historic three-way meeting planned in Shenzhen",
-      "outlet": "BILD",
-      "published": "2026-11-15T05:10:44.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "JP",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmUVI1OHZ2d19aNDJjUEU0N2hWbDFidDJMZ09sbEpGdVJmMWIzZFhjS1lFSk5yMGJ5VXZZcEpSRm01YjNVTnpIOG5ZdkVDV2ZfbUhlQXUtdWlfV0ZBQW0wWFNEaXhiZEF1empLTlByWWw1VzV0dDZkNjZ0dk9qX1E?oc=5",
-      "title": "高市首相が中国開催APECへ 日中関係に打開策は？「米中露会談」への懸念（日テレNEWS NNN）",
-      "en": "PM Takaichi to attend APEC hosted by China; is there a way to break the impasse in Japan-China relations? Concerns over a \"US-China-Russia meeting\" (NTV News NNN)",
-      "outlet": "Yahoo!ニュース",
-      "published": "2026-11-15T05:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "JP",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBLUVN1TjU0Rk5XY0txTUxqeHIxOGJtd1BfajJpejBwUDFOQ25yR085Rmo2VEg3YVVvc184NmlKOC1ESXo0MF9BOW1LbnlYeDlFZFhKeVdpUTFmcnk5WnRlSVJGRQ?oc=5",
-      "title": "「ＮＡＴＯ加盟と引き換えにドンバス撤退を」 米から打診とゼレンスキー氏",
-      "en": "Zelensky says US has proposed withdrawal from Donbas in exchange for NATO membership",
-      "outlet": "時事ドットコム",
-      "published": "2026-11-15T04:59:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CZ",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNGZRZlZFRmNITnVCNWxwaU1xWFk1cHZkeTc3RWxhS1RFSkNiVlpEUndxWHdwQkQ3WlBGNjBDOERuQXZ6Qm9GUDNURWJQa0JadW11OU1EbjVrRTBBVWVWODROZjBSbjM5RVRnSFZpQnA2ZFBubnFCb3FRa3JnZ1pqRjF1SmE1NWw2M2oxZ1BVenVabGg0cllPb1FvNXF1emdsZTBGYzVoVDQ1NUM1QjVkci1uYUwwM3B6NnhsMVdnYw?oc=5",
-      "title": "Bezprecedentní krok Ruska. Své strategické bombardéry poslalo na jedno místo",
-      "en": "Unprecedented move by Russia. It sent its strategic bombers to one place",
-      "outlet": "TN.cz",
-      "published": "2026-11-15T04:50:00.000Z",
-      "outlets": 3,
       "trending": false
     },
     {
@@ -570,7 +1100,7 @@
       "outlet": "LRT",
       "published": "2026-11-15T04:50:00.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
       "from": "LT",
@@ -579,206 +1109,6 @@
       "en": "War in Ukraine. One of Europe's largest petrochemical complexes in Russia hit",
       "outlet": "LRT",
       "published": "2026-11-15T04:50:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9jdG95T3pfQ0NzaWZRMWZpaDZDN3RGaFZZM2RfWDVKbzZWRERDN0VsOG9CZG51bzl3bjlsWWh1cjcyeWdBT2tVT3Z1TWtCRktwNnREVGhwVjBYM20zRURV0gFrQVVfeXFMUE9DeENWTEhPeWNacHkwLXRZQWx2eEE1cGVVY082dHh1emdIaVd4LW1XM09tTjc3QTBJVlNZcHNpY1Rtc1dPd1FPRjFoNlRUVnhNYTl2czcwLU4wQ0JoTU91OHJ0V25DRlZnM1U?oc=5",
-      "title": "За минулу добу Сили оборони ліквідували понад 2000 російських військових – Генштаб",
-      "en": "Over the past day, Defense Forces eliminated more than 2,000 Russian military personnel – General Staff",
-      "outlet": "Українська правда",
-      "published": "2026-11-15T04:40:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNaVhpZGxNTXFQalFNN0ZlYUw2dnZCZk9TNlhGelNweDByT01fTk9laUpDcE5IaUlkRkhEa1RobExWR2RBMjhsaWNkV19PLWJIX1JnSURTSHhZdU5BcGR6VDlEVXY2VW1PbXZ4X1VfcmxUbkhmM2x6b0dVR3J0TTV3RTU3WEFVNHhsR1lvbldZUnhXMjBMQWpwZFhNUXZpR3pyV1FrcG13WWhRWkE2NnQzSms4eXVlaVVWUDZLMQ?oc=5",
-      "title": "Điểm chung, bất đồng và triển vọng sau đàm phán 3 bên Mỹ - Nga - Ukraine",
-      "en": "Common ground, disagreements and prospects after trilateral US-Russia-Ukraine talks",
-      "outlet": "Báo Dân trí",
-      "published": "2026-11-15T04:39:09.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNcGxuX0JiWFBMSHBFbm9kUUcwbjNfTU1Ca3UzSGVxa2huUTMxYVlpdjRQV0RWYkEtTllOd2NYUFdoZlFnbmRPX1VrSmhNcC1vSTA3TDR3MHM2VXlabXFsM04zYXptLVlDWHBkdmR0bFpqdnV1UzYybnZxR3BRS1R1dEVtMG5PNTNsdW9hSE92RGpERElsaE1TSUtNVzVYeFJ0eHc4U2RXdUg5WmhDN1dtMl9BTklvSy13UHdwXzctOVZiV01qcDN1Y3ZISl9Dd9IB0wFBVV95cUxOQlVyZWI0Q1VVVWFVT2dhUU1oTkpGTUNDMU5LSl9wb3VzTnRINmJGb2pMTXBfM1RWSjRydnl3RFFJRmxvcGx3cTRpWlpsZTBTQXFSNmlTRWlNOWR3S3JZNmpKXzBLa2lsTS1xcUNRYnM4Zi12TVJVcjhSdThmVk5UR3laai02Q3lYSDAzN1dRWUFPV1BsVE5jTU1JaE5IOVQzSmNiWmt0VXppaW9rd0M0RThxTzFxYkFTVXBqU0RsZklTRXlGZnRwVWpGbWRHU0xOWnpv?oc=5",
-      "title": "Путіну загрожують ударами по ядерному тилу: Британія має бути готовою атакувати Кольський півострів",
-      "en": "Putin faces threats of strikes on nuclear rear: Britain must be ready to attack the Kola Peninsula",
-      "outlet": "ТСН",
-      "published": "2026-11-15T04:30:33.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "ES",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPS2ZvVUkzMnkzOGs0SlRSQjNnV0J1QlJkVVdKY3lucU5NZ3Y2VDNjYl9xTHFuWER5enQ3UjJaMW40WGtobGxzcmNtOWU4OUV0bmlvckZ0bFAwZmJBR2RyOC1CbkFsY0ZqeFVmN2FEbDRtLVlNN01yYnlHVWsyYmZxQnFZS2UzSG5MY0hGYmMzNWNOZW5QMmpjVnBOYmJIY2o1aVHSAbYBQVVfeXFMTmY3TTZpeE53azdoZXZvSjlVYWJzbDYwdzAzeHhpZV9QZnNESnp4RjJxcGw0Ry1OSXg2Yl9lVkFjNEh2eXlvY19xSHpXVnZUYnlYZDBkNEdzV25PdTJLTlJQQkhBZDNYV0JzUFBxRTNBNlRueURKNTg0ZkpOZVAwQ1MxMU14dW1nVS1DM1JmT1BuRHcybFUtMlBtckMwY1VDc3JhYlRkVmZxSVRMRjRVWGNNci1FNmc?oc=5",
-      "title": "Putin y Trump buscan un cambio de régimen en Europa",
-      "en": "Putin and Trump seek a regime change in Europe",
-      "outlet": "EL PAÍS",
-      "published": "2026-11-15T04:30:01.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CU",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPS2ZvVUkzMnkzOGs0SlRSQjNnV0J1QlJkVVdKY3lucU5NZ3Y2VDNjYl9xTHFuWER5enQ3UjJaMW40WGtobGxzcmNtOWU4OUV0bmlvckZ0bFAwZmJBR2RyOC1CbkFsY0ZqeFVmN2FEbDRtLVlNN01yYnlHVWsyYmZxQnFZS2UzSG5MY0hGYmMzNWNOZW5QMmpjVnBOYmJIY2o1aVHSAbYBQVVfeXFMTmY3TTZpeE53azdoZXZvSjlVYWJzbDYwdzAzeHhpZV9QZnNESnp4RjJxcGw0Ry1OSXg2Yl9lVkFjNEh2eXlvY19xSHpXVnZUYnlYZDBkNEdzV25PdTJLTlJQQkhBZDNYV0JzUFBxRTNBNlRueURKNTg0ZkpOZVAwQ1MxMU14dW1nVS1DM1JmT1BuRHcybFUtMlBtckMwY1VDc3JhYlRkVmZxSVRMRjRVWGNNci1FNmc?oc=5",
-      "title": "Putin y Trump buscan un cambio de régimen en Europa",
-      "en": "Putin and Trump seek a regime change in Europe",
-      "outlet": "EL PAÍS",
-      "published": "2026-11-15T04:30:01.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQckJpa3JOM1I1UW1BYWZUTF9uMy0teWZqUlRlbXl2YlRYZXNXbWpSQ1ZtOVRneG1LWkFDUUFPZlJ0cUFOaGdwSHVsUnFPSVJFeTN1a24za2dYU01jMTZ3SWZTNkhMSmJWM1Z6SDlXcFJvOXBsTnpSX3h4QUhqQUg5eW1sdGxfMjJHalk4?oc=5",
-      "title": "Hai đòn bẩy của Nga trong cuộc chiến với Ukraine",
-      "en": "Two levers of Russia in the war with Ukraine",
-      "outlet": "VnExpress",
-      "published": "2026-11-15T04:16:36.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQU0x6X3prTmdxdXlVNU1GdjBSdThpaDdHT2ZzYkVqVzlTMkQyTG5Fc3Z0NFJVSUVJTWk5QjdfZkhIaTNPOEJJTVU3Mk41NWlPZVl4SHctSmZ4dXhLT0s4RWYyNVUwd0p0Qk9hOWtwRkF3Uy1YOWdyUnZJbVg5dU9RM3UwblUxYi13dnJuUmZvOWNVY29VYVNCSnNyMS1wVWs0dWd3bXd6T3BnTy04aV94ZUxB0gG3AUFVX3lxTE5kbXVNakk4aUFZU3NlYkRkWUxvalJraFN3VWc5bjhBSzdyLVJ6MS1zVTVqeVRySm5kQ1VNOGVTX2JEMm9GMjFRVTVMS21WSzVxbGNULUNhMmdJRVdoTFlBVjBKUnpXWE0zRUFnRVlBYlJ3WEUzcFdIdmgyQzZrNTVyZWpkUFhJcDJhVlkzakZtUXFQRTNwN3RuQ3pQai1YUnA4YlFPMkR2NnBQMEEwR3FwQ1ZPY0QyQQ?oc=5",
-      "title": "US envoy Kushner says he aims to broker Europe-Russia talks on Ukraine",
-      "en": "US envoy Kushner says he aims to broker Europe-Russia talks on Ukraine",
-      "outlet": "Al Jazeera",
-      "published": "2026-11-15T04:06:46.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQU0x6X3prTmdxdXlVNU1GdjBSdThpaDdHT2ZzYkVqVzlTMkQyTG5Fc3Z0NFJVSUVJTWk5QjdfZkhIaTNPOEJJTVU3Mk41NWlPZVl4SHctSmZ4dXhLT0s4RWYyNVUwd0p0Qk9hOWtwRkF3Uy1YOWdyUnZJbVg5dU9RM3UwblUxYi13dnJuUmZvOWNVY29VYVNCSnNyMS1wVWs0dWd3bXd6T3BnTy04aV94ZUxB0gG3AUFVX3lxTE5kbXVNakk4aUFZU3NlYkRkWUxvalJraFN3VWc5bjhBSzdyLVJ6MS1zVTVqeVRySm5kQ1VNOGVTX2JEMm9GMjFRVTVMS21WSzVxbGNULUNhMmdJRVdoTFlBVjBKUnpXWE0zRUFnRVlBYlJ3WEUzcFdIdmgyQzZrNTVyZWpkUFhJcDJhVlkzakZtUXFQRTNwN3RuQ3pQai1YUnA4YlFPMkR2NnBQMEEwR3FwQ1ZPY0QyQQ?oc=5",
-      "title": "US envoy Kushner says he aims to broker Europe-Russia talks on Ukraine",
-      "en": "US envoy Kushner says he aims to broker Europe-Russia talks on Ukraine",
-      "outlet": "Al Jazeera",
-      "published": "2026-11-15T04:06:46.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TR",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQLUdPM2dVVDVVUjZycnBTd2N4dHRXYmZhZFY1bnQzQzFYT0R3TzZJcE9MM0NqSThUcXRBR2hReE02N0tIcWJTbVdyS25UUDI2WWNPLUZxQ0t1VG5CTW5RaHhoek9KcnRXWXBOX1Q0MFZnUkR1Q051dWtCZDVNT1pqdnktTTVwVlBVVjkxX1dycmZldkJ3aTJCczM2Q3BCa21tY05FQjlZeU1iYjJKSWhpTnctLWt3WTNZ?oc=5",
-      "title": "Zenit - Trabzonspor maçı ne zaman, saat kaçta, hangi kanalda? (Hazırlık maçı)",
-      "en": "Zenit - Trabzonspor match: when, what time, which channel? (Friendly match)",
-      "outlet": "Fanatik",
-      "published": "2026-11-15T03:59:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CH",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbkc2b1EteXRhT0V1QllRWHBydG9fUHM4WjdDNU1Fa1QtYjhzZ3drTzl3SUFqQzkwRjN4TEtaQ3BhOTh6SUhOYmgtTnNKTkNpb0ZHblhxR3g4TmVuZW9SSjZfV19WYThzOVh0eURybEJKa2xDSkgzUFIxTnVKNUxXQjJUc0xKb25qUHpKcnRJX1Z2TlZY?oc=5",
-      "title": "Putin will Nato auf Stand von 1997 sehen",
-      "en": "Putin wants to see NATO back to its 1997 status",
-      "outlet": "Blick",
-      "published": "2026-11-15T03:52:54.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GB",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONDZhdzBhLVdGZk1vZFdVY1E5MmhQMWVMWjAyRFJ4RzB6NUlfLWVBbmdsb1BQMFpLbnNlQ2J4bUdWNVpuUE1jbzNseWhuREhsYkRUWm1oRTNLUVhMLVNWWEE5ejh0OVpZakN3YkNjWDNvYUUybUtMVVhsVmladkljQ2h6ZDNvUWREdUVaNkpBclpHTkY2Uktzd3lYMnltNmZEeUh4MUV2RllDSWZPUWNlZjJsaEJ0T29BeDVfLTJydUV2aVVlbncwVTVKc3pEZEJ4YzY3LQ?oc=5",
-      "title": "Ukraine war briefing: US proposes Kyiv cede land to Russia for Nato membership, Zelenskyy says",
-      "en": "Ukraine war briefing: US proposes Kyiv cede land to Russia for Nato membership, Zelenskyy says",
-      "outlet": "The Guardian",
-      "published": "2026-11-15T03:41:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONDZhdzBhLVdGZk1vZFdVY1E5MmhQMWVMWjAyRFJ4RzB6NUlfLWVBbmdsb1BQMFpLbnNlQ2J4bUdWNVpuUE1jbzNseWhuREhsYkRUWm1oRTNLUVhMLVNWWEE5ejh0OVpZakN3YkNjWDNvYUUybUtMVVhsVmladkljQ2h6ZDNvUWREdUVaNkpBclpHTkY2Uktzd3lYMnltNmZEeUh4MUV2RllDSWZPUWNlZjJsaEJ0T29BeDVfLTJydUV2aVVlbncwVTVKc3pEZEJ4YzY3LQ?oc=5",
-      "title": "Ukraine war briefing: US proposes Kyiv cede land to Russia for Nato membership, Zelenskyy says",
-      "en": "Ukraine war briefing: US proposes Kyiv cede land to Russia for Nato membership, Zelenskyy says",
-      "outlet": "The Guardian",
-      "published": "2026-11-15T03:41:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONDZhdzBhLVdGZk1vZFdVY1E5MmhQMWVMWjAyRFJ4RzB6NUlfLWVBbmdsb1BQMFpLbnNlQ2J4bUdWNVpuUE1jbzNseWhuREhsYkRUWm1oRTNLUVhMLVNWWEE5ejh0OVpZakN3YkNjWDNvYUUybUtMVVhsVmladkljQ2h6ZDNvUWREdUVaNkpBclpHTkY2Uktzd3lYMnltNmZEeUh4MUV2RllDSWZPUWNlZjJsaEJ0T29BeDVfLTJydUV2aVVlbncwVTVKc3pEZEJ4YzY3LQ?oc=5",
-      "title": "Ukraine war briefing: US proposes Kyiv cede land to Russia for Nato membership, Zelenskyy says",
-      "en": "Ukraine war briefing: US proposes Kyiv cede land to Russia for Nato membership, Zelenskyy says",
-      "outlet": "The Guardian",
-      "published": "2026-11-15T03:41:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SK",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOLUxmV1JjdWhNM0JKeFhPWEktcjlQY0RQUlo0SFhsWXFaUU9XeWFzS3dMekFmLWp2UnFGMmd4dnVBdnl4cG12QUVUQ0xJckoyNG04ZEFHZUdGSmZ5aWM5YzMxcVdSSm1Yc0lLcENCV19jUlk3bGo4V0ZpbEw0cGQxbEJmeVFCZndCWGg3S0YzZjdld2xuUllyQk5aRF94MUpTV1QyMzEyejRsYmwxTk5zcE1XQVFTVUJhWXl3R21LY01nZmN3RURadUZZb0hXbWxGa1VSTGM4Wk5iZGFIbWk4M0VVd08?oc=5",
-      "title": "Ukrajinský veterán: Rusi nájdu vaše slabé miesto a zaútočia. Čo si myslí o Ficovej zahraničnej politike? - Svet - Správy",
-      "en": "Ukrainian veteran: Russians will find your weak spot and attack. What does he think of Fico's foreign policy? - World - News",
-      "outlet": "Pravda",
-      "published": "2026-11-15T03:32:02.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOTJSbjdPSWFhQ2J3MDctNWNqM1VUY2haSDFvY01sekdsSDlzQW16NFpvSS1sVjUwaHdnSkh6ZEJNUVgxU2t5STRGbEU2NHBoZnRJSzBwcFBLX194czgwY0lkelh3TWZ1ajdGMHJHSFFtcWtoZ0p5aTRCLWtFalV4dm14UERUU2xXME9ySmcxY3MtdUpXZkU4QUhJUTRfQ0FfTFdrWEY0Yw?oc=5",
-      "title": "Fire reported at industrial facility in Russia's Tatarstan amid drone attack",
-      "en": "Fire reported at industrial facility in Russia's Tatarstan amid drone attack",
-      "outlet": "The Kyiv Independent",
-      "published": "2026-11-15T03:23:36.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nQkYycjVhM3NsSWVnTm1peV9pbkk3Q3gwd2ZEX0V2bU14UUZWdWlHU3FSRnJHMFVBVjRVTS1fcmpDeEpVWVJBYjM1Si05djVJV2VvOTNDZGJQYlHSAWBBVV95cUxPZHl1aWwtUW5JMG1jemtsUXZsYjlBaVBzOF85cTdqbFdBSTRSaGEwV1NiNF9KaWhDcjdQNldoR29DLWJCTGtweGF1QjFNYzlrNnJQNzE5NURlNnlVQjlJV0M?oc=5",
-      "title": "'김정은 최측근' 조용원 방러…北 \"동맹관계 날로 고도화\"(종합)",
-      "en": "Kim Jong-un's right-hand man Cho Yong-won visits Russia; North Korea says alliance relations are increasingly advancing (comprehensive)",
-      "outlet": "연합뉴스",
-      "published": "2026-11-15T03:12:22.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPS2dzRlY4SWNabkxjaV9oeW1uOEk4cHpzNGpiWkk5MUhYUDhNcFdfLWRtRXJBT3EwbG9vc2w4LS1Qa29KS01HYTN0NTYzTWZudDBwRXlwX1FHR010bHYydW95YWgyaGtiYVljOHpPS1dodnQzckRNZEJsRV9YWk1TcTRqQjQzMnUwTElLRFc0RXNFU3pTQkdQSnFrMGtLeVBNbDY3WDlhLUl0TG1OUGNwN2RpMDh4czBwb1F2UkdLdGZ0VXd6TVlQX1hsSW9LVmo0R2hWY1laZW9tbmNuZkRvOEpVdw?oc=5",
-      "title": "Putino planas nugalėti Ukrainoje sužlugo: frontas atsilaikė, net Trumpo pasiuntinys į tai atkreipė dėmesį",
-      "en": "Putin's plan to win in Ukraine has failed: the front held, even Trump's envoy noticed",
-      "outlet": "tv3.lt",
-      "published": "2026-11-15T03:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdFYxeTRJOUhPRzliRWVhSDAwZ2szSGhaS0l6NDQ1VGc0RmxqRjRYNGdldGd5RjEzbXZBZjY4WjE0NkFzLTVINkdWblF0OFVUaXVsbVNPNkw4Q0pKZzhnMnU0LUctdW0xQzQwWHJCN2VNOFlzUXI2aW5CYzNQUUItUl9SRmtzUGFaNE5CX2F1TzBuTEp0RThRLU9fWDdTOVRlcVRrbTF5T3hKajBveXc0QUlBQVZhQTZRUlJCVNIBwgFBVV95cUxQc1hFMDdFLXE5VmJWV2dJOFg0SFlOeUlldk1CWmdSck00YVJaSmlXclJ2VDNPV0ZMS3FqaFZhNTBRejZxUXEzeVZxenBKMHdlWjY5NGw1S2lNVXRXR3duZS1FNElab1BJSDNoQ2tVX0hjTEduZ2pSWUVlc0I3RUVWZVBXX2xEVXk2MklMeWFYaUJIWXIxSDAtcmZjaHZuOWQ3YU9kY2RPSlJxVzJRNi1IRVQ0cTRfVUU5ZTJZT19JcHlqdw?oc=5",
-      "title": "Путін хоче обеззброїти Європу: Кремль висунув Британії приголомшливу ядерну вимогу",
-      "en": "Putin wants to disarm Europe: Kremlin makes stunning nuclear demand of Britain",
-      "outlet": "ТСН",
-      "published": "2026-11-15T01:20:54.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbE1iOXZXV3RhYXNlYXh5T1FDcWlscm9XQ1R5V2tsQU1kM01zU2NwR1dQWnJPRDQwZ1ZOcE82Zk5pTWlYVlBmTkFyZ3ptaXhUclZFUm1RMXY1R2dlcmZYb0t6WmRfcjZBcGVaQWZ3bzZiZS1qZG5SYVlTWnEwUWNOOU5fVzhzY2xsQk1VdFloYkdFdExyQnJ1WDhhVXNnT2dMaFRUeWN1M1hyR1hmdDFfRXhHMlJrd0FqckFsSjJsM1BHSzFZX0tORHRqZDVGVEVt0gHCAUFVX3lxTE8yR0c0ZzZqUW15N0NuWWtFam1HV0s2eFQtQi1FYTd2Q043ODNITV81TmpIV1ZjcUdzVExhZk5LT1BZcnRhcHRhMk9hTW5lRlpUZndyUXBrSV9oNTNYZC15ZGZweXEybzJtdjE1azNFc1NqbkNRRUtDOVhSX2QwYnYtTDFwbVZ2TGNjcENRNUxJbGZod25OTm9zVmp3aUN0Z2ZJc24xd09sSlEtMjlnVGVaYXFJU00zV3ZjajVRX0lmTEhn?oc=5",
-      "title": "Росіяни завдали 12 ударів по Запоріжжю: шестеро людей постраждали, серед них дворічна дитина",
-      "en": "Russians carried out 12 strikes on Zaporizhzhia: six people injured, including a two-year-old child",
-      "outlet": "NV",
-      "published": "2026-11-15T00:18:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQ2ZFeDd1ZU1XQ0hjR3lsZkxDbVJseDdGUlJpeVlPNFctRktmdW5LNklINWdtTlFGejFJX2tMcXl0OUZCRWlQNUhKenFIUkNXTG44cHcwWll5VGFsVmRnN1pQOGtoUDl3T1BybjZzb05mV1FlU1JweUMxSWF0RXgxaU0xU2FnOVJKU2h6LUFqTjZJZzYyV0E0Ul9uekZ5NE1qc2xtcGV5bjhvQlYxNHVWNXcwSlI5VmFl?oc=5",
-      "title": "Nga tung tên lửa có khả năng hiệu chỉnh đường bay, nhắm vào huyết mạch Ukraina",
-      "en": "Russia deploys missile capable of adjusting its flight path, targeting Ukraine's lifelines",
-      "outlet": "Laodong.vn",
-      "published": "2026-11-15T00:00:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -793,26 +1123,6 @@
       "trending": false
     },
     {
-      "from": "ET",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONkVYWVZLX1lZaWs2em5uMk55R2RMSkU5aUxtczFCRjFPbmR2bG41Y1BRTTFIeU1ZS2l2SGtybjVJemp5S2d0UjQwNTNwR3lHekdJanIyYTRrWkZzdmU0d0pvd21kdGxVN0QtQ3lNRm9mc2RsOW1naGxRWG5aRkRha0Eyc2RyZy1GU3h3OEl1RXlZWmh3cE9sT2JWNTktV1dnWHBuRlo4ZVdQdw?oc=5",
-      "title": "From Rhetoric to Realpolitic: Inside the Third Russia–Africa Summit",
-      "en": "From Rhetoric to Realpolitic: Inside the Third Russia–Africa Summit",
-      "outlet": "CapitalEthiopia",
-      "published": "2026-11-14T22:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxOaDJ6elhBa3liaFBjVHFKSWhSV3UxVVByRExZRGJrV2w5ZE4tSmlqdndtMWpfaTR3MWJhcUU1a2VwM3lUa3BSUUV1N3dCWVZvdFowWE9nQUZieTRWc2lvQkhKbXhtRV9Vb2VuNjZJVUNTbWRUTmJaQWtxSzlJZUpGXzh3NVF3SnFRS21zak45T2hDUkxJczdrTzk1YXJvWk9KZ3lSeXhIUmVfVkFWRzFhMWxabnVZM2xaZm5LNkJ1d3EtZFJzNUo5dUZHUlR0bU5pd3NvaktYV3dXakQxMEdQMkI0cEY0ZmlvVEo4YVF1QUM0eHNpaUJ6SVRncmxhMm1tREdhMUlEbF8yZWktdFBLeTlwUFZBWV9URWdJdVA5OWF0cWQxMXlyRUJTSEpkVzhCM1FjOTN5S1NMT0FHc05pZm9IUVBIVDNINUpfaWc3TXc4NFFObFhFZ1RWaHp1QUxTbm1vY2FrcHVvZw?oc=5",
-      "title": "Русия: Европа би била по-сигурна без НАТО",
-      "en": "Russia: Europe would be safer without NATO",
-      "outlet": "nova.bg",
-      "published": "2026-11-14T20:57:47.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "MA",
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcUJTVGJpZlluWHFOSGdON2YzTFphMENaXzhfX3c3VEVWZkZKVGxZVkpYN1RkX0VfbHNoOFJOYkpFOHlYWXVxdEgxWEd3eDB1YXNNU1VzZ28xSWc3SDhMRUlFLTREWmVUMDhQOVEwUHhqTHdVY0djVnlmdjYyZkJ5THU3aFFRSG9UdktWR25leGJMdlM4dkQ2OF80NjVoU3drV1RWaUh2YmNlbHdRM2pPaE96cGZpNy05NDBTTHhzNml2NldiS0ZtN3Y2cXc5cFU?oc=5",
       "title": "Ukraine : Kushner dit vouloir faciliter un dialogue direct entre Moscou et les Européens",
@@ -823,232 +1133,42 @@
       "trending": false
     },
     {
-      "from": "CH",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQUzRMMUpEcVRWZVhRdTNsaHlWSWdnU1hiRXpIXzNYUmFubmFVS3hBVk5XZTExTE1CekliRnVyOG41S3QzdmlfT1BSZHA0T0RQdmlfQm12Wm1nR2xDcldxTExVajljdjBNS1N6ZnlnSnQ5MWY5bXZNT1REM0hualJ6amlYTTRiRXllQklRcFY0XzRvM2JDcEdOWHNYLU5vYjRROWtpTHhCb21IelBHUU9aSWZlSUJySDhEd3ZobTdwelVYWnlVeHhVTFJLOTVuQ2s?oc=5",
-      "title": "Mitten im Krieg: Schweizer Scharfschützenmunition landet illegal in Russland",
-      "en": "Amid war: Swiss sniper ammunition illegally ends up in Russia",
-      "outlet": "Neue Zürcher Zeitung",
-      "published": "2026-11-14T20:45:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CH",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMG5GNEJIVHBnRkJXVEIzS2IxeVU0Tk1jVFVlV1g3R0tPN2xmdnljb1c4dGcxbWZfR2tNV0x4VUZmTHVqNHA2VENmM1pYRWh1VDNSdlhHUmt4cVlDNUhmUm04ZTJXdGw4VDFKVkVSalhMV25Ca0tVWU43Z3l1aWFYaGVORmlQSkFYbGxrLTl0YzYxQW9xU3E0aXo2TzdsdU93XzBQSXRuU0FJYjJ6eC10Qkswem5HRllpY0tB?oc=5",
-      "title": "Ukraine-Krieg: Italien hilft Ukraine: Droht Pizza-Verbot an russischen Schulen?",
-      "en": "Ukraine war: Italy helps Ukraine: threat of pizza ban at Russian schools?",
-      "outlet": "20 Minuten",
-      "published": "2026-11-14T20:23:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcGI3S1BpTzZxN1pSRnJNSkp6M0pJLWM1eHpkZllFeXZiQTVBSDJ5U3NfYVZ2ZDRlM2tIZVA2MG9ISWhocFhJSUdIQ1JtOHRfMWlzaUdXTVRSWkdrZ202MUE0VEowQjNkYXl4MU1mYTNwRkxkVGxralRodzNISUQzQVNFZDFJalFEbjZtdF9pNERET0ticmhzcFkxa3BmV1JrdkM1bi1Ta1M3RWt4ZVFsdExHRlpUWU0xNFlwblgyM2VSQmhEZ0cxbThVY3FQZmFqYmdpR2xn?oc=5",
-      "title": "LIVE | Drie doden en meer dan dertig gewonden door Russische aanvallen op Oekraïense steden",
-      "en": "LIVE | Three dead and more than thirty injured in Russian attacks on Ukrainian cities",
-      "outlet": "De Telegraaf",
-      "published": "2026-11-14T20:12:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "UA",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTGx0N2Y0YmIzZnpsTHdQMVoxTjJRNFVTd2lqejVURzRWLTNCSXB6ekhZTzRLdEdVS0FWVTNvcDY2aWUtQXpoUloya0drRmFHMWFHOV8tMlgwcHUzcnhGVUtWdXpQS1VYSnlHc05PYlZock03QWtucnBKbUduTDdfeGcwb3VaMXU5MmpsZjI5Y2s1TER0RW5oU2VtY05jc2M?oc=5",
-      "title": "Росіяни атакували промисловий об’єкт у Кропивницькому: що відомо - Гречка - Новини Кропивницький",
-      "en": "Russians attacked an industrial facility in Kropyvnytskyi: what is known – Hrechka – Kropyvnytskyi news",
-      "outlet": "Гречка - Новини Кропивницький",
-      "published": "2026-11-14T20:10:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AR",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMXhEd3B1cjFDTE8xN0d4alRielI1QkNzNjVnLWE2UkdLM0UydUtXTWVYWG1mMVEzTlBUNTNuT19wSmRhZmFDdUw3Y19EVnA4M3VjU2Vrakw1Z044NmFOVHlfQ0ZWV2ZSSEJIUEhVVTduUkxqQ09oLVdlMXNacjE2Slk2TGg3cGM0NUpNQUl2RmFuZmExS29oRFlBUjNTcWE0aEhmS1NDUlV4U0E3em00anNnMXZjVWJ1bnU2V0VZbXdlWG9QblMwSHhn?oc=5",
-      "title": "La Casa Blanca confirma una cumbre inédita entre Donald Trump, Xi Jinping y Vladimir Putin: ¿De qué hablarán?",
-      "en": "The White House confirms an unprecedented summit between Donald Trump, Xi Jinping and Vladimir Putin: what will they talk about?",
-      "outlet": "Clarin.com",
-      "published": "2026-11-14T19:45:30.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNbFVuRlVyZm56N2J3NEVnbFFKWFQzT1pyNHdqWUxBRFhWMnFPZDd6VFRRY3pUZ1NscVI0V2dPcV9wQjNhOFo0QXo4aTZ5SGd4b0hjVmtWYTkzLUlyQXMyemYtbjBGTkplZkl1Z3JUMmt4Qi1lVmFoaUpGdUtEenRaZm9hSWpfYlNpY1lZTnlwMmRURWRDNVpsM1lPbW1TeElVaFlxNXlWM3J5VFNWcGFmbFM2MnlCU3Z4YTBUT2FzbUYxM0N5YTZ5RHVLcGJLSVpkbHFaN3VsY3YyM0FfbDZsX3YzYXdVbkdXUldjNlhmdlVwVUZaWGdHSFNGaldwcWhHRHBpWEJ6eXpUbC1oX1d6aVZCV2M5YXAyRzFYaGYwV2NXc1MxNkxvcVctc1dmWG8xUjZyS0tKT0swZ0hPV2t5ckczcWs2X1VNVkZiYzUxaw?oc=5",
-      "title": "من يالطا إلى الصين.. هل يتقاسم ترمب وبوتين وشي العالم؟",
-      "en": "From Yalta to China.. Will Trump, Putin and Xi share the world?",
-      "outlet": "الجزيرة نت",
-      "published": "2026-11-14T18:47:34.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SK",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVmNXS3czelEwbkdUVENtV0tFN2VZWmVEZFVPZjhRMGZLZ0lybjlqU1lic2FCZlFRYmROM3Q4VmhqQXl1bUhfVjZQTnhLSTdjWDU4cEMwYXg4LTJaVVN6YkVGbXNtcUFOTGx0d1E5LTJmeFE4WkNybjBuQ1FWQXZ1T29VMHNKemNXQk4ya1VLTnFLUmhqbU9CdVhB?oc=5",
-      "title": "Rusko vraj v Abú Zabí žiadalo odchod Fínska z NATO",
-      "en": "Russia reportedly demanded in Abu Dhabi that Finland leave NATO",
-      "outlet": "Marker.sk",
-      "published": "2026-11-14T17:01:02.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "MX",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNDJjZWZ6LXByQnA3M1ZaYUpuQm9VY0d4bUpwd3VDNnFwRGVPNmYwbG1YMHI1MGMxY2tqUVZObVFSZUVRTTdidk9XLU9BekdlenFmWElvUjZtZFBsMC1ETTdCWEcza1VxVlZfYzBPSjljOGVidzhYdGZnYmsyRl9UOXY1alpoeE1mM1dTd2FBZlFEX19xdkU1WExSWmdzQUVSSWsxUDF0Yi0ySm91SVE?oc=5",
-      "title": "Trump, Xi y Putin planean reunión trilateral sin precedentes en China",
-      "en": "Trump, Xi and Putin plan unprecedented trilateral meeting in China",
-      "outlet": "La Jornada",
-      "published": "2026-11-14T16:58:00.000Z",
+      "from": "PT",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNFMyT0prXzg4TVg2WTE1T3lCMUJCbTBkVHhXQWQweDdVWDlmSW9LYWlVUktaNU1yVkRjaTRzZnYyX2pDZGs0U2QwT3h3eHJycHVLbXA2ZEJndFpqX1pGU2Q0MG5xaVlTSHdodERqY2tmTk1tTDctVWE4U0Y1SEdUMVBXUGhMNXJvXzVUaGlqM0t1TDBtYmw1WmY1YUNDRUhMT25FZktIZ3F3d1hNZTZ6TkZVM1g2SVFnRlM0?oc=5",
+      "title": "Kremlin confirma encontro entre Putin, Trump e Xi na quinta-feira em Shenzhen",
+      "en": "Kremlin confirms meeting between Putin, Trump and Xi on Thursday in Shenzhen",
+      "outlet": "RTP",
+      "published": "2026-11-14T17:01:20.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSmZlUW1RRjhqZmVVUUZFdkNDcjRhblRVN2pkcXJYOWZfQVBYdFJEMmlOMXVMazJSNjdtVlJJNzVuM2lFTDlvZE53dmg2N0RIb3p6R3hMa09qMHNXR21QYWY4eHlELW00SXlaRVg1V1R3dmx3RHItMHk5WW53SF83djhEWFFaZEVDb09na1ZhUWc2alExTlhTVEpZd3hpMEl3SFU3UjhR?oc=5",
-      "title": "Путин е поискал в Абу Даби руската сфера на контрол да се върне до Берлинската стена",
-      "en": "Putin has asked in Abu Dhabi for the Russian sphere of control to be rolled back to the Berlin Wall",
-      "outlet": "Dnevnik.bg",
-      "published": "2026-11-14T16:56:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AT",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPREtZNVRidlpfeHNWc1NlQVQxMV8xa2x2eVhJVWRiQXBCZmxjZ0VpLVl4RGpZSHJUSDBweVJhZmdkRzVLUEc2SzFYMmIxWlBlaHRlZ2t2b3VGcEJlOVRUVTBFejRqQUk4b2xEek1nTU1lb0ZCOFI1cUFBcWFzYjdlMEk5M09LNElWOC1nSw?oc=5",
-      "title": "Trump trifft Xi und Putin nächste Woche in China",
-      "en": "Trump meets Xi and Putin in China next week",
-      "outlet": "DiePresse.com",
-      "published": "2026-11-14T16:35:04.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LOHcxNTR4amtlVnVDcnVGYWpHQ052a21ZQmktRV9WWlJHWFlubWljYmoxZ2NEX19PWGd0MFltMmIxV2xSN2l5ZEt4OUZ1Vk5PTU5TRHBKenFHZW96b3fSAWNBVV95cUxNY2VNTGhTRm5hQWVMNFo5bnJFekZ4RXdpYkx0TDRHaDN3UHpCMnR5M0VrcktVUTVwZmZMbVVfMk5NTzZmX3VIOEk1ZXFHZUo5N1lRWWl4a2tmLVY5MTFyV1UwcUU?oc=5",
-      "title": "ماذا نعرف عن \"الاجتماع التاريخي\" المتوقع بين ترامب وبوتين وشي جينبينغ في الصين؟",
-      "en": "What do we know about the \"historic meeting\" expected between Trump, Putin and Xi Jinping in China?",
-      "outlet": "BBC",
-      "published": "2026-11-14T14:28:49.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "JP",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9nME9TRk9XUUZVZ2ZBTVR0UHZPMDNoaUMzZW5EcWtRLUx0cXAtX3VSdkhRa3hveGhiNUk1NGJzbWZlQk14cHFHcHB4SnA1VFhkTnlOTEZvN0JPRzNPSWhrSHpR?oc=5",
-      "title": "ロシアがＮＡＴＯへ「旧共産圏加盟前」まで撤退要求か…ラトビア首相、議論に応じれば「プーチン氏のわなにはまる」",
-      "en": "Russia may demand NATO withdraw to its positions before the former communist states joined; Latvian prime minister says if talks are accepted, it would be \"falling into Putin's trap\"",
-      "outlet": "読売新聞",
-      "published": "2026-11-14T13:04:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOU0tWUXgwODJSWmkwSlhYblZaM3dBWVVNQVY1dGlZRm9DT1BodHl5VGx5UkZQUUVvQkVHOUFDM0p1ejFfclRTaktFNEdGV1JYc1BYVmtSblRxam15Ml9vVm1vamVReUtLYWhSTXNYZWNaSlFXdkRrS2cwdHNIdi0weGplbkk3MUsteG5qWkQxN1VmZmtsV2ZYc0JEYVEtaXhva3dGcg?oc=5",
-      "title": "Mișcare neașteptată din partea lui Putin, anunțată de emisarul lui Trump în negocierile de pace. „Moment pe care îl considerăm foarte important”",
-      "en": "Unexpected move by Putin, announced by Trump's envoy in peace negotiations. \"A moment we consider very important\"",
-      "outlet": "HotNews.ro",
-      "published": "2026-11-14T11:45:56.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "CL",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOc2RUeURWNWZxN1F5cjlkYkRvY2xjUkdId05pM0M2Z2t0NWZoSDFwalRXVUtZVENpcHZsOGpOMTRMU18zWmNyUy1CQmE0M0V0c1NfeTVyZEw2TXB3dlpsN0NlXzdMRl8zeGRHNGp6LXJ3a0d0d0hic3ppZXdNS0lCc0hTbFJyX1gwTTc5UmJ5dVQwVkx4czdKcDZEU2FSX0FvQ3ZZNjNQVFF2bTJuODNVRnVxMTFSMmFaQzJRSlZTRklzaDlydlVrQXNzMmtxVGhUeXpTMGV2X3VWN0plRkVtSmhxTy1kOVIxMFRfVGVJNFV5QjR1RUpEQm9NRXVuaXfSAf8BQVVfeXFMUGoxcWJsNjJ0TEpuX082YnFkbmt6LWJiR1hJaE1kSy1LcTg1aXpGQjFfeTd3UXdybld3VGRTZGhUNUpPWTFmaS13RVhQZUtvdlBVUE9vQlBNRUVJVlk2dHg1RGYzRVhBcy1zcndXb1I1UE92ODIyS0EtZkdzUzRIaXMycDRXSkRVb0huS01meE9ZWW11R0s1LThZYng3b25SSm5nRWhGenVOTkNnejFrTXBycGJaOG9QRDl6N1NiWlBPNzRxVHMxbG85ZzEwOXdraXlENm1TbEQwWkFGTDB5ZVp5V0ZDYlNZMnJOZWw3NWNpbXNFRkVNVERaY2JXLWNZ?oc=5",
-      "title": "La Casa Blanca confirma una cumbre inédita entre Donald Trump, Xi Jinping y Vladimir Putin",
-      "en": "The White House confirms an unprecedented summit between Donald Trump, Xi Jinping and Vladimir Putin",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ0hTUXUweE1tT0tIRWtjc2NVZWwzWFhzbnctOUNKNVhueUFaWGRMU1k5eGh4Zkx3NXB3Vm1BVnduejdEQzZTdHQ1VlB4clFDSTh1dC1WZlJnWHN5Zk1GWXktQ0pCdUdPWm1jeVlaaHNoNmdyT3E5WFppUzVTVnZKbUNRLVdaeE9GcjRJ0gGLAUFVX3lxTE9XTmRjeXBiNWN3QmNRQWRuRWpZaUFpeTNvZWRuOVlqMUZFeDlRbmFQaXlIQTh1NVZudDV2OUNITTZYNWhLenVTVi1nNlh0WEF6azRqNXptOFRqd3BvNHFSNDNuYU9fZ21ra3VQYnhmc252LXZ0c3cwbGJXeTI2MXRwTkVrVUxoUnFnS0E?oc=5",
+      "title": "Как Путин мечтае да унищожи НАТО с помощта на Тръмп",
+      "en": "How Putin dreams of destroying NATO with Trump's help",
       "outlet": "DW.com",
-      "published": "2026-11-14T11:42:28.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOT203LVFvWVpsbHpyQTdjalRLWFUySmxidi1IMmVySWx3ZGlLaTVqNENXdEZYcTZ4R2M4cklDZHpCWFpkWmtoM0ZVV0pfb1A5NDRMZEZEQ2FsVDVvSXRlTS1IQ0s0UC1feDF4X2VqM3A4T2Q3VmZTUkVBT0VqVThKTnp2dU5kTHN5M2ZhakdEcm9ZLTNaWW5LaDhkZ0hTX0p3ZVhjRWN0Rk1rOEZyeFdUVkVQcE1wdUN3c3lILXg5Q0xaZw?oc=5",
-      "title": "Zelenskis paaiškino, kokiu atveju Putinas padarys nuolaidų taikos derybose",
-      "en": "Zelensky explained in what case Putin will make concessions in peace talks",
-      "outlet": "Delfi",
-      "published": "2026-11-14T11:03:56.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "MA",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5QSXZxWGt5QjkwZ0txcEU5SzRHQmt0Z25CdEZ0NmhhN0NBSjIxeGo0ZExDZWpvSDU2SFZOemFveDJEa0Y0ZnBxR015RU8wZXFyNFpiQVVZTXctT0VnaGprd0xlM3ZsVXMtN200WDQtaTY0b08tNUE?oc=5",
-      "title": "Trump, Xi et Poutine : une rencontre au sommet sur fond de tensions internationales",
-      "en": "Trump, Xi and Putin: a summit meeting against a backdrop of international tensions",
-      "outlet": "Finances News Hebdo",
-      "published": "2026-11-14T10:28:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRUlMU1VGczIyMms5bkNxcml6eUtfRFpUaVlhWTFON3RyamVNaTFzOUVxTXVnUWN6eTgwckJOaExZTXQ5SVJlSFh3Z1FjRWd5MzZDMGs5XzlnOFhoa2lhVko2ZlZCT2NOaXZzMjU4V1VYRmZwVWZqM0lfQjFDSjFQOGVadzBBTEtpZW1rYkJJSzE4blRWMGR5eE9pUzdhQm5CaWVDNmZkdWdGSTRCc2xWVndrM3NQT1BidkZBb1NFME1WbEl0?oc=5",
-      "title": "Latvijos premjeras: Rusija „neturi galimybių“ kelti saugumo reikalavimus Europai",
-      "en": "Latvian prime minister: Russia \"has no possibilities\" to set security demands for Europe",
-      "outlet": "LRT",
-      "published": "2026-11-14T08:50:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "HU",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdWNWaTUyT1A0S1hQVU11U1RJdWFPbVZIZVlDdzJFNWFXNlpSVF8yTGFOSkVxay1BbVBCQjRidmd3OHQxMzFlNVhpLTd3TEtPODA1VmJPS3ZzdUZjQ0pPUnE1bnVKVmVHYXQtQ1ZVR1RQV2daMGNyMWZaeG1vT2tmLTdud3RfU3VRZkVOUXJteVFRRlRiOTFYS2I0MUNZZ2xlV1hxTWtDTGpMYWlhcnJRWjJQSE5QbjJrNlJmV3ptbw?oc=5",
-      "title": "A Fehér Ház szerint Kínában találkozik először Donald Trump, Hszi Csin-ping és Vlagyimir Putyin",
-      "en": "According to the White House, Donald Trump, Xi Jinping and Vladimir Putin will meet for the first time in China",
-      "outlet": "Telex",
-      "published": "2026-11-14T08:21:12.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUUxLMjk5dmtUZU5lVmdOaVpaYVVnckxMYUpoNzJkVnRueTVnQVJyeHpwM2tMRWZHYmJDRmdpS0FVRlhta0NwaTRsc3NYY2NjbDMtVU4weWxoQV93aHJTN0lRbUh3NW5BSGpuMDZrZDhiYi0tSHNINk93eWh3T3BlbmowY1lsOTRHdURJeW1RWVRiUWdkMWZ2X1FfR0NuN055dExPV2xZZ3doUQ?oc=5",
-      "title": "\"Politico\": Putins Abū Dabī sarunās no Trampa saņēmis tieši to, ko bija vēlējies",
-      "en": "\"Politico\": Putin received exactly what he wanted from Trump in Abu Dhabi talks",
-      "outlet": "Apollo.lv",
-      "published": "2026-11-14T07:30:28.000Z",
+      "published": "2026-11-14T11:48:16.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "PE",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPeFpyWE1LX3RBbUVVMlVPZU1RLXRraS0xU1dXRUR2ZVB3Y3hHZUFNSGxpci1GX3VRaGlfYTNMWjAwX0phREJtTVBXbmNteEdxQ295QkdjVEZ4bmctSHZsN2wyc0JOdi03RE52RHM2WlFVZlVTS1FxdUhwSGJBaFNRSlczTzE2LUg3eUU0RHdDeDFvcUo5LXZtRVpkbGx3S1R4UEJsZ3oyMFVUT2VhcEh5MmpmRXZ6Q0lWWDZEQlN6STgxTUZRZHZoeDJ5VE5tRG5WaE9JWDlIZ0FZUlFaY3hHZ2xYQzhaRGdLWVl4OXZCaUI0aVU0a1ViaHhKX3F1TjJYNExV0gGkAkFVX3lxTE54TjJBY2ltbWEzbllaN0hpS0haenJCaEhOWTRLU2dWNUs0Tk5XZGlCN0tYNjl2TTJqZHVrNlk1aElLTDJNTlpXZGV1UHpXVm5CMkk1a0owU0djX1JFUHpBVWlTV2tLa0FyVGp3V2lFU0I5aTN4cHhIZTNMNXJmWmZnLVFPSU9VMTc4NmNnMTFVUWxFLVd2alRrTFVjcWl6Rlk0MTdzdURQbFFtbHdwSVJ0NUNpcHhjVzNPMzNGY1lfcnVKRktPOWlPR09jMTNzbzJxcDA3c3d5eGo2SUFVRWVMN3dqeWhVdkp0UjRiYWN3aGxfdUx5OFFWWEw5SS0xWXJNQUR2Xy1VZVl0aklVZ3ZfZFZQRURrclJyY1JyVG5XeGxEZkc?oc=5",
-      "title": "La Casa Blanca confirma reunión trilateral de Trump, Putin y Xi en China: la cita histórica se centrará en la no proliferación nuclear",
-      "en": "The White House confirms trilateral meeting of Trump, Putin and Xi in China: the historic meeting will focus on nuclear non-proliferation",
-      "outlet": "La Tercera",
-      "published": "2026-11-14T04:07:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOQ21jZktVNFNYbk8yOEcyQjg1QXpWTnBkdTM0R1ZveUhMRzZHb2g5R3AwZVp1WHJFRmRwRG43eTlMTEdrUGFIZWxMOFE2RGR6QWh0dUJxdFJ3ZDczRGxUTHZ0TWd4SUJJRXlXWEc4QWNMRFM4LUVseUhvNFZUS0ZMb3UyRGlBdExGWklYMVE4bGFiWFZGUFA5WVpleEs3MHRNN1FoWkdUWjRWVFJTdUNOVHhNakFIRVozZWJldmdxOU1NVHlhS2tKSE1mUHh4ekxmanl4LUh1Mjk3MWVfLXBRN3pVS3c1N044c1HSAYQCQVVfeXFMTkFqdlAxZmc2MlRrZnhPTlJjTnRFV21HOW5GXzNQbWxOZ1BCOFF1ZGhxTGVEUC1BVDFMaGI3d3ZjNlJDbjdNRTNhbnp2cmVSRFdyX1V0U3Y1M3U0NU05QUFxQU1BV1pjT0M0QnYxRXJaNEI0cFlPaW1sTkJjS3J5U01ST0cxaWtaaE54VVBoVURPLVNTcUhBNWxZYWFKZE4yeFFTb3Q4cE9ZX0FKaEFXdEx2OGk0aHpPUVFwbDVzSnp6cUlTRGwzTEdPSC01RWVHYzZIS0VZeDVtRmUyZTBHS2JLdWVXa3Y3RGJjeXRCYjUwTU16QjNuelFHUkJwUEpKbWs2YUo?oc=5",
+      "title": "Trump, Xi y Putin celebrarán una reunión centrada en la reducción de armas nucleares al margen de la APEC",
+      "en": "Trump, Xi and Putin will hold a meeting focused on reducing nuclear weapons on the sidelines of APEC",
+      "outlet": "Infobae",
+      "published": "2026-11-14T07:12:00.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "BW",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ1dUVGtMNjlpcG5UQ0R3ZEJNcS1FUWVBZm54Zk04allwRnNIenZuTTdXV3hvZkpnZjluMUl6YWl5RTJIZk1Oc0V4R1lTclp2LWxIbzhJSmdaTlk3UTVUSkhmWEoyMEF3dGUyM29TX0lCYTgxOUlCYklaMnpxNnNONkROX2hFajFRdHpibXBSYWVyRG9OLVRhUWJvdlpjZzIyNWln?oc=5",
-      "title": "Russia’s influence in Africa faces test despite growing engagement – Minns",
-      "en": "Russia’s influence in Africa faces test despite growing engagement – Minns",
-      "outlet": "Realnews Magazine",
-      "published": "2026-11-14T00:41:26.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NA",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ1dUVGtMNjlpcG5UQ0R3ZEJNcS1FUWVBZm54Zk04allwRnNIenZuTTdXV3hvZkpnZjluMUl6YWl5RTJIZk1Oc0V4R1lTclp2LWxIbzhJSmdaTlk3UTVUSkhmWEoyMEF3dGUyM29TX0lCYTgxOUlCYklaMnpxNnNONkROX2hFajFRdHpibXBSYWVyRG9OLVRhUWJvdlpjZzIyNWln?oc=5",
-      "title": "Russia’s influence in Africa faces test despite growing engagement – Minns",
-      "en": "Russia’s influence in Africa faces test despite growing engagement – Minns",
-      "outlet": "Realnews Magazine",
-      "published": "2026-11-14T00:41:26.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PT",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYzhSUmlWQ29KMDBXVnJGeWdDSHljYURCcHVkVm02ZlN4blVhcmwyMS1PWmlVZXEyd3FwVVpOUjVMRFA4Z1duQk44XzRFTGt0VmpKRVVOV3RFMGdTaVJYYnBSWWQwM0NGZ2hEZF9xVlVZVjUwY1R6T0JNZFl2RTZWOUl1UzRWTjV2bXMzTFI3REo1cVMtdEpnRk4wQWxGMXN1amg1ZjRrV3BqQQ?oc=5",
-      "title": "UE vai enviar seis representantes para negociar com a Rússia",
-      "en": "EU to send six representatives to negotiate with Russia",
-      "outlet": "Observador",
-      "published": "2026-11-13T23:44:00.000Z",
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNU05qcVktdnBnaGZFbnluMnlZZDliTjkwM0tGWjhOUFhWZmVDQ0NTaUh6U1ltUFhfdmdSaFRJOVVGcDBBRllwajA2S3g1TG5VeHZlQUFfT0NOVnREdXVIUXZLOERjZ0oxT1lJMGx3TFVqd2VPNGxjZ3RWS3E0c3RmbFBnNldmcVNLTmNNbGFYd2Z0RkpEZlJJYlpBdDBEYzQ?oc=5",
+      "title": "Белият дом: Срещата между Тръмп, Путин и Си ще е на 19 ноември",
+      "en": "White House: The meeting between Trump, Putin and Xi will be on November 19",
+      "outlet": "Mediapool.bg",
+      "published": "2026-11-14T07:10:32.000Z",
       "outlets": 5,
       "trending": false
     }

@@ -352,7 +352,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-15T09:55:21.351Z",
+    "seen": "2026-11-15T17:36:05.587Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "directSearched": "2026-11-13T23:59:18.764Z",
     "directSearchVersion": 2
@@ -368,164 +368,73 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-15T09:55:21.351Z",
+    "seen": "2026-11-15T17:36:05.587Z",
     "donationSearched": "2026-11-14T15:31:04.209Z",
     "directSearched": "2026-11-14T15:31:04.209Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-11-13T10:00:40.667Z",
+    "at": "2026-11-15T17:36:05.587Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Drought in Central America began on 21 April 2026 and is ongoing. A 12 November 2026 water watch report shows observed deficits continuing through Guatemala, El Salvador, Honduras and western Nicaragua. Honduran authorities report 103 municipalities on red alert and 80 percent of national territory under some alert level. The IFRC has warned the El Niño event could last until February 2027.",
+    "searches": 3,
+    "summary": "Drought affecting Central America, with Honduras hit hardest. Honduras drought alerts began in summer 2026, and 103 municipalities were placed under red alert in September. As of 14 November 2026, UN News reports drought conditions still worsening, and WFP is scaling up its response. NOAA says El Niño is present.",
     "ongoing": true,
     "places": [
       {
-        "name": "Choluteca",
+        "name": "Nueva Concepción",
         "country": "HN",
-        "kind": "region",
-        "impact": "named as very high priority"
+        "kind": "town",
+        "impact": "cloud seeding over parched cornfields"
       },
       {
-        "name": "El Paraíso",
-        "country": "HN",
-        "kind": "region",
-        "impact": "named as very high priority"
-      },
-      {
-        "name": "Chiquimula",
+        "name": "Camotán",
+        "admin": "Chiquimula",
         "country": "GT",
-        "kind": "region",
-        "impact": "named as very high priority"
-      },
-      {
-        "name": "Jalapa",
-        "country": "GT",
-        "kind": "region",
-        "impact": "named as very high priority"
-      },
-      {
-        "name": "Morazán",
-        "country": "SV",
-        "kind": "region",
-        "impact": "named as very high priority"
-      },
-      {
-        "name": "San Miguel",
-        "country": "SV",
-        "kind": "region",
-        "impact": "named as very high priority"
+        "kind": "district",
+        "impact": "communities storing grain under preparedness measures"
       },
       {
         "name": "Chiapas",
         "country": "MX",
         "kind": "region",
-        "impact": "exceptional deficits continuing into Guatemala"
-      },
-      {
-        "name": "Western Nicaragua",
-        "country": "NI",
-        "kind": "region",
-        "impact": "observed deficits continuing"
-      },
-      {
-        "name": "Western Cuba",
-        "country": "CU",
-        "kind": "region",
-        "impact": "exceptional water deficits"
+        "impact": "exceptional long-term water deficits"
       }
     ],
     "figures": [
       {
-        "label": "People affected in Honduras",
+        "label": "People estimated to need aid",
+        "value": "708,000 people",
+        "sourceName": "tunota.com",
+        "sourceUrl": "https://www.tunota.com/honduras-hoy/la-sequia-cambia-de-escala-708-mil-hondurenos-podrian-necesitar-ayuda-2026-09-23"
+      },
+      {
+        "label": "People affected",
         "value": "about 1 million people",
         "sourceName": "infobae.com",
         "sourceUrl": "https://www.infobae.com/america/agencias/2026/10/22/la-cruz-roja-urge-a-america-latina-a-prepararse-ante-un-fenomeno-de-el-nino-historico/"
       },
       {
-        "label": "People in need in Honduras",
-        "value": "708,000 people",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
-      },
-      {
-        "label": "People reached in Guatemala by Red Cross",
-        "value": "more than 10,000 people",
-        "sourceName": "noticiassin.com",
-        "sourceUrl": "https://noticiassin.com/mundo/america/2026/10/22/cruz-roja-alerta-a-america-latina-por-el-nino-historico-2151054"
-      },
-      {
-        "label": "Children in the Dry Corridor needing aid",
-        "value": "at least nine million children",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/el-salvador/2026/10/02/nueve-millones-de-ninos-del-corredor-seco-centroamericano-que-estan-en-riesgo-por-el-avance-de-el-nino-segun-unicef/"
-      },
-      {
-        "label": "Maize-producing households losing…",
-        "value": "about 80%",
-        "sourceName": "lac.oxfam.org",
-        "sourceUrl": "https://lac.oxfam.org/wp-content/uploads/2026/08/Informe-CA-Fenomeno-de-El-Nino.pdf"
+        "label": "People receiving food and cash…",
+        "value": "more than 470,000 people",
+        "sourceName": "news.un.org",
+        "sourceUrl": "https://news.un.org/en/story/2026/11/1168776"
       }
     ],
     "donation": [
       {
-        "url": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026",
-        "org": "UN OCHA",
-        "kind": "un",
-        "note": "September 2026 Flash Appeal for Honduras drought, seeking US$60 million for affected people.",
-        "specific": true
-      },
-      {
         "url": "https://go.ifrc.org/countries/81",
         "org": "IFRC GO",
         "kind": "society",
-        "note": "Tracking page for DREF operation MDRHN028, Honduras drought, 100% funded. Not a donation form.",
+        "note": "IFRC GO Honduras listing of DREF drought operation, funding coverage shown; not a donation form.",
         "specific": true
-      },
-      {
-        "url": "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena",
-        "org": "Cruz Roja Hondureña",
-        "kind": "society",
-        "note": "General national society donate button, not specific to this drought.",
-        "specific": false
       }
     ],
-    "sources": [
-      {
-        "name": "isciences.com",
-        "url": "https://www.isciences.com/blog/2026/11/12/isciences-worldwide-water-watch-list-november-2026",
-        "title": "ISciences Worldwide Water Watch List November 2026 — ISCIENCES"
-      },
-      {
-        "name": "noticiassin.com",
-        "url": "https://noticiassin.com/mundo/america/2026/10/22/cruz-roja-alerta-a-america-latina-por-el-nino-historico-2151054",
-        "title": "Cruz Roja alerta a América Latina por El Niño histórico"
-      },
-      {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/america/agencias/2026/10/22/la-cruz-roja-urge-a-america-latina-a-prepararse-ante-un-fenomeno-de-el-nino-historico/",
-        "title": "La Cruz Roja urge a América Latina a prepararse ante un fenómeno de El Niño \"histórico\" - Infobae"
-      },
-      {
-        "name": "elsalvador.com",
-        "url": "https://www.elsalvador.com/noticias/internacional/guatemala-alerta-roja-sequia/1293018/2026/",
-        "title": "Guatemala pide alerta roja por sequía en frontera con El Salvador"
-      }
-    ],
+    "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-15T09:55:21.351Z",
-    "donationSearched": "2026-11-13T10:00:40.667Z",
-    "directSearched": "2026-11-13T10:00:40.667Z",
+    "donationSearched": "2026-11-15T17:36:05.587Z",
+    "directSearched": "2026-11-15T17:36:05.587Z",
     "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
-        "org": "Paso Pacífico",
-        "kind": "globalgiving",
-        "note": "Forest wildlife and rural communities in Nicaragua and El Salvador recovering after El Niño drought",
-        "title": "Emergency appeal - effects of El Nino - GlobalGiving"
-      }
-    ]
+    "seen": "2026-11-15T17:36:05.587Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-14T15:31:04.209Z",
@@ -639,8 +548,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,ER,ET,KE,NE,NG,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-15T09:55:21.351Z",
-    "donationSearched": "2026-11-14T15:31:04.209Z"
+    "seen": "2026-11-15T17:36:05.587Z",
+    "donationSearched": "2026-11-14T15:31:04.209Z",
+    "directSearched": "2026-11-15T17:36:05.587Z",
+    "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-11-11T18:15:18.314Z",
@@ -1226,7 +1137,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-15T09:55:21.351Z",
+    "seen": "2026-11-15T17:36:05.587Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "direct": [
       {
@@ -1292,7 +1203,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-15T09:55:21.351Z",
+    "seen": "2026-11-15T17:36:05.587Z",
     "donationSearched": "2026-11-14T21:07:48.595Z",
     "directSearched": "2026-11-14T21:07:48.595Z",
     "directSearchVersion": 2,
@@ -1580,7 +1491,7 @@
       }
     ],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-15T09:55:21.351Z",
+    "seen": "2026-11-15T17:36:05.587Z",
     "donationSearched": "2026-11-13T23:59:18.764Z",
     "directSearched": "2026-11-13T23:59:18.764Z",
     "directSearchVersion": 2,
@@ -1611,34 +1522,91 @@
     ]
   },
   "ifrc-flood-8050": {
-    "at": "2026-11-13T10:00:40.667Z",
+    "at": "2026-11-15T17:36:05.587Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A news headline reports floods in Myanmar's Shan State, with nearly 5,000 people evacuated. The event started on 2026-08-12. Dates, affected townships and the current situation could not be confirmed from checked sources.",
+    "searches": 2,
+    "summary": "Monsoon flooding in Myanmar, starting in July and reported from August 2026, has affected Sagaing, Rakhine, Ayeyarwady, Kachin and Kayin. UNICEF reported about 600,000 people affected by the end of August 2026. Flooding was still ongoing as of late August. No later source confirms whether it has ended.",
     "ongoing": true,
     "places": [
       {
-        "name": "Shan State",
+        "name": "Sagaing",
         "country": "MM",
         "kind": "region",
-        "impact": "Floods reported; nearly 5,000 evacuated"
+        "impact": "Villages and paddy fields swamped; 11,400+ people moved to relief centres"
+      },
+      {
+        "name": "Wetlet",
+        "country": "MM",
+        "kind": "town",
+        "impact": "flooded"
+      },
+      {
+        "name": "Ayeyarwady",
+        "country": "MM",
+        "kind": "region",
+        "impact": "63K affected; embankment breaches under repair"
+      },
+      {
+        "name": "Kayin",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Households displaced to relief camps; one death"
+      },
+      {
+        "name": "Rakhine",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Flooding reported"
+      },
+      {
+        "name": "Kachin",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Flooding reported"
       }
     ],
     "figures": [
       {
-        "label": "Evacuated",
-        "value": "nearly 5,000 people",
-        "sourceName": "tbsnews.net",
-        "sourceUrl": "https://www.tbsnews.net/world/nearly-5000-people-evacuated-floods-hit-myanmars-shan-state-1601396"
+        "label": "Affected",
+        "value": "about 600,000",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
+      },
+      {
+        "label": "Displaced",
+        "value": "more than 11,400 people from 3,220 households",
+        "sourceName": "thestar.com.my",
+        "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected"
+      },
+      {
+        "label": "Deaths",
+        "value": "1 in Kayin",
+        "sourceName": "ahacentre.org",
+        "sourceUrl": "https://ahacentre.org/flash-update/flash-update-no-1-flooding-in-ayeyarwady-and-kayin-myanmar-19-august-2026/"
       }
     ],
     "donation": [],
-    "sources": [],
+    "sources": [
+      {
+        "name": "thestar.com.my",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected",
+        "title": "Monsoon rains submerge villages, fields in Myanmar; thousands of people affected"
+      }
+    ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-15T09:55:21.351Z",
-    "donationSearched": "2026-11-13T10:00:40.667Z",
-    "directSearched": "2026-11-14T15:31:04.209Z",
-    "directSearchVersion": 2
+    "directSearched": "2026-11-15T17:36:05.587Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/",
+        "org": "Worldchefs",
+        "kind": "local",
+        "note": "School supplies for flood-hit children in Sagaing and Irrawaddy regions, run by Aktion Myanmar.",
+        "title": "Donate to Support Children Affected by Flooding in Myanmar - WORLDCHEFS",
+        "published": "2026-08-11T17:36:05.587Z"
+      }
+    ],
+    "seen": "2026-11-15T17:36:05.587Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-11-12T18:44:41.460Z",
@@ -1805,7 +1773,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-15T09:55:21.351Z",
+    "seen": "2026-11-15T17:36:05.587Z",
     "donationSearched": "2026-11-12T18:44:41.460Z",
     "directSearched": "2026-11-12T18:44:41.460Z",
     "directSearchVersion": 2
@@ -1938,18 +1906,6 @@
         "published": "2026-11-09T02:07:50.587Z"
       }
     ]
-  },
-  "usgs-earthquake-us6000u1wn": {
-    "at": "2026-11-01T15:38:18.986Z",
-    "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "A magnitude 6.1 earthquake struck 17 km west of Río Grande, Panama, on 12 October 2026 at 23:20 UTC, at a depth of 11 km (USGS). Washington Post and CNN Español reported no immediate casualties or property damage. Panama City was shown only light shaking. No update was found after 13 October 2026.",
-    "ongoing": false,
-    "places": [],
-    "figures": [],
-    "donation": [],
-    "sources": [],
-    "membersHash": "usgs|PA#bb438b36"
   },
   "usgs-earthquake-us6000u2y1": {
     "at": "2026-11-05T07:19:24.635Z",

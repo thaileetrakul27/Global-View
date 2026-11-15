@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-15T09:55:21.351Z",
+  "updated": "2026-11-15T17:36:05.587Z",
   "fetched": {
-    "societies": "2026-11-15T09:55:21.351Z",
-    "uncr": "2026-11-15T09:55:21.351Z"
+    "societies": "2026-11-15T17:36:05.587Z",
+    "uncr": "2026-11-15T17:36:05.587Z"
   },
   "societies": {
     "AF": {
@@ -2688,22 +2688,6 @@
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
       ]
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-14T15:31:04.209Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-14T15:31:04.209Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
@@ -2799,6 +2783,33 @@
       "chain": [
         "https://hadirelief.org/appeals/afghanistan-nuristan-flood-emergency/"
       ]
+    },
+    "go.ifrc.org/emergencies/8079/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8079/overview"
+      ],
+      "checked": "2026-11-15T17:36:05.587Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-11-15T17:36:05.587Z"
+    },
+    "local4:ifrc-flood-8050:worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Myanmar\"",
+      "chain": [
+        "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/"
+      ],
+      "place": "Myanmar",
+      "name": "WORLDCHEFS",
+      "title": "Donate to Support Children Affected by Flooding in Myanmar",
+      "checked": "2026-11-15T17:36:05.587Z"
     }
   }
 }
