@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-14T21:07:48.595Z",
+  "updated": "2026-11-15T02:19:06.680Z",
   "fetched": {
-    "societies": "2026-11-14T21:07:48.595Z",
-    "uncr": "2026-11-14T21:07:48.595Z"
+    "societies": "2026-11-15T02:19:06.680Z",
+    "uncr": "2026-11-15T02:19:06.680Z"
   },
   "societies": {
     "AF": {
@@ -2698,67 +2698,6 @@
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1"
       ]
     },
-    "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-13T23:59:18.764Z",
-      "chain": [
-        "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
-      ],
-      "blocked": true
-    },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-13T23:59:18.764Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-13T23:59:18.764Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ayodonor.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-13T23:59:18.764Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-11-13T23:59:18.764Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
-    },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-13T23:59:18.764Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-flood-8025:hadirelief.org/appeals/afghanistan-nuristan-flood-emergency": {
-      "ok": false,
-      "reason": "HTTP 403",
-      "checked": "2026-11-13T23:59:18.764Z",
-      "chain": [
-        "https://hadirelief.org/appeals/afghanistan-nuristan-flood-emergency/"
-      ]
-    },
     "donate.redcrossredcrescent.org/ifrc/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2787,46 +2726,98 @@
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-14T21:07:48.595Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-11-14T21:07:48.595Z"
+      ]
     },
     "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
       "ok": false,
       "reason": "HTTP 406",
+      "checked": "2026-11-14T21:07:48.595Z",
       "chain": [
         "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ],
-      "checked": "2026-11-14T21:07:48.595Z"
+      ]
     },
     "local4:ifrc-earthquake-8060:donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Indonesia\"",
+      "checked": "2026-11-14T21:07:48.595Z",
       "chain": [
         "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita"
       ],
       "place": "Indonesia",
       "name": "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara…",
-      "title": "Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita",
-      "checked": "2026-11-14T21:07:48.595Z"
+      "title": "Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita"
     },
     "ayodonor.pmi.or.id/index.php": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-14T21:07:48.595Z",
       "chain": [
         "https://ayodonor.pmi.or.id/index.php"
       ],
-      "blocked": true,
-      "checked": "2026-11-14T21:07:48.595Z"
+      "blocked": true
     },
     "arcs.af": {
       "ok": true,
       "reason": "donation word \"کمک نقدی\"",
+      "checked": "2026-11-14T21:07:48.595Z",
       "chain": [
         "https://arcs.af/"
+      ]
+    },
+    "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
       ],
-      "checked": "2026-11-14T21:07:48.595Z"
+      "blocked": true,
+      "checked": "2026-11-15T02:19:06.680Z"
+    },
+    "ifrc.org/emergency/nepal-flash-floods-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-15T02:19:06.680Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-15T02:19:06.680Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-11-15T02:19:06.680Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-15T02:19:06.680Z"
+    },
+    "local4:ifrc-flood-8025:hadirelief.org/appeals/afghanistan-nuristan-flood-emergency": {
+      "ok": false,
+      "reason": "HTTP 403",
+      "chain": [
+        "https://hadirelief.org/appeals/afghanistan-nuristan-flood-emergency/"
+      ],
+      "checked": "2026-11-15T02:19:06.680Z"
     }
   }
 }
