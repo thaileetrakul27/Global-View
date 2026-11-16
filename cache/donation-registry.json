@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-16T07:04:53.455Z",
+  "updated": "2026-11-16T19:00:06.803Z",
   "fetched": {
-    "societies": "2026-11-16T07:04:53.455Z",
-    "uncr": "2026-11-16T07:04:53.455Z"
+    "societies": "2026-11-16T19:00:06.803Z",
+    "uncr": "2026-11-16T19:00:06.803Z"
   },
   "societies": {
     "AF": {
@@ -2459,14 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria": {
-      "ok": true,
-      "reason": "donation word \"dona ahora\"",
-      "checked": "2026-11-09T10:17:17.712Z",
-      "chain": [
-        "https://colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria"
-      ]
-    },
     "local4:ifrc-flood-8013:hrf.org.uk/emergency-appeals/bangladesh-flood": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Bangladesh\"",
@@ -2660,22 +2652,6 @@
         "https://arcs.af/"
       ]
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-15T17:36:05.587Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-15T17:36:05.587Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
     "local4:ifrc-flood-8050:worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Myanmar\"",
@@ -2731,53 +2707,85 @@
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-16T07:04:53.455Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-16T07:04:53.455Z"
+      "blocked": true
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-16T07:04:53.455Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-16T07:04:53.455Z"
+      "blocked": true
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-16T07:04:53.455Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-16T07:04:53.455Z"
+      "blocked": true
     },
     "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
       "ok": false,
       "reason": "names another kind of disaster",
+      "checked": "2026-11-16T07:04:53.455Z",
       "chain": [
         "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
-      ],
-      "checked": "2026-11-16T07:04:53.455Z"
+      ]
     },
     "local4:ifrc-flood-8025:hadirelief.org/appeals/afghanistan-nuristan-flood-emergency": {
       "ok": false,
       "reason": "HTTP 403",
+      "checked": "2026-11-16T07:04:53.455Z",
       "chain": [
         "https://hadirelief.org/appeals/afghanistan-nuristan-flood-emergency/"
-      ],
-      "checked": "2026-11-16T07:04:53.455Z"
+      ]
     },
     "local4:ifrc-flood-8025:rushd.ngo/index.php/donation": {
       "ok": false,
       "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
+      "checked": "2026-11-16T07:04:53.455Z",
       "chain": [
         "https://www.rushd.ngo/index.php/donation"
+      ]
+    },
+    "go.ifrc.org/emergencies/8079/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8079/overview"
       ],
-      "checked": "2026-11-16T07:04:53.455Z"
+      "checked": "2026-11-16T19:00:06.803Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-11-16T19:00:06.803Z"
+    },
+    "redcross.org.mm/donate/donate-now": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.redcross.org.mm/donate/donate-now/"
+      ],
+      "checked": "2026-11-16T19:00:06.803Z"
+    },
+    "redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA/"
+      ],
+      "checked": "2026-11-16T19:00:06.803Z"
     }
   }
 }
