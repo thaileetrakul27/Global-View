@@ -169,98 +169,88 @@
     "membersHash": "eonet,gdacs|JP#180d4e6d"
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-11-13T23:59:18.764Z",
+    "at": "2026-11-16T07:04:53.455Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Drought has affected much of Europe since spring 2026, according to the sources. In July, the JRC reported that half of the EU and UK was under drought at some intensity, with 9% at alert level. The EU Drought Observatory said drought was still critical in most of Europe in late September. Its 28 October analysis was not clear enough to confirm the current state. A forecast of a wetter November may ease the drought but not end it. The feed's start date of 21 December 2025…",
+    "searches": 4,
+    "summary": "A drought has affected much of Europe since spring 2026. JRC data showed that in late July 2026, 50% of EU and UK territory was under some drought, and 9% was at alert level. The JRC map for mid-October 2026 still showed warning conditions. Harvests are reported lower: EU corn is estimated at 16% below last year, and an apple harvest decline is linked to drought. The latest source found is from November 2026, and the drought is described as ongoing.",
     "ongoing": true,
     "places": [
       {
         "name": "Southern Germany",
         "country": "DE",
         "kind": "region",
-        "impact": "strongest precipitation shortfalls"
+        "impact": "alert-level drought, July 2026"
       },
       {
-        "name": "Central France",
-        "country": "FR",
+        "name": "Northern Italy",
+        "country": "IT",
         "kind": "region",
-        "impact": "strongest precipitation shortfalls"
+        "impact": "alert-level drought, July 2026"
       },
       {
-        "name": "Western Ukraine",
-        "country": "UA",
+        "name": "Northeastern Spain",
+        "country": "ES",
         "kind": "region",
-        "impact": "strongest precipitation shortfalls"
-      },
-      {
-        "name": "Wallonia",
-        "country": "BE",
-        "kind": "region",
-        "impact": "drought-related water restrictions"
+        "impact": "alert-level drought, July 2026"
       }
     ],
     "figures": [
       {
-        "label": "Area under drought",
-        "value": "50% of EU and UK",
+        "label": "Share of EU and UK territory under…",
+        "value": "50%",
         "sourceName": "joint-research-centre.ec.europa.eu",
         "sourceUrl": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en"
       },
       {
-        "label": "Area burned by wildfires",
-        "value": "505,683 hectares",
-        "sourceName": "openaccessgovernment.org",
-        "sourceUrl": "https://www.openaccessgovernment.org/worsening-drought-and-record-heat-grip-europe-as-wildfires-spread/213195/"
+        "label": "Share of EU and UK territory at alert…",
+        "value": "9%",
+        "sourceName": "joint-research-centre.ec.europa.eu",
+        "sourceUrl": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en"
       },
       {
-        "label": "EU apple harvested area",
-        "value": "430,500 hectares (down 1.4%)",
-        "sourceName": "freshplaza.com",
-        "sourceUrl": "https://www.freshplaza.com/north-america/article/9892292/drought-frost-and-heat-push-eu-apple-harvest-to-near-decade-low/"
-      }
-    ],
-    "donation": [
+        "label": "EU corn crop",
+        "value": "48 million metric tons, 16% less than last year",
+        "sourceName": "farmweeknow.com",
+        "sourceUrl": "https://www.farmweeknow.com/general/persistent-heat-and-drought-slash-eu-corn-production-in-2026/article_77f95ea0-5f92-46c9-a167-78718944806f.html"
+      },
       {
-        "url": "https://www.drk.de/en/home/international-aid/where-we-work/grc-international-relief-in-europe/",
-        "org": "German Red Cross",
-        "kind": "society",
-        "note": "General fund for humanitarian aid across Europe, not specific to this drought.",
-        "specific": false
+        "label": "Estimated grain losses, France",
+        "value": "5.8 million tonnes (€1.47bn), industry-forecast estimate",
+        "sourceName": "eciu.net",
+        "sourceUrl": "https://eciu.net/media/press-releases/european-drought-and-heat-hits-grain-farmers-harder-than-feared-costs-up-to-3-2-billion"
       }
     ],
+    "donation": [],
     "sources": [
       {
-        "name": "climateimpactcompany.com",
-        "url": "https://climateimpactcompany.com/europe-month-1-4-ahead-outlook-after-marine-heatwaves-inspire-summer-2026-heat-and-drought-super-el-nino-is-next-for-the-last-few-months-of-2026-2-2/",
-        "title": "After Marine Heatwaves Inspire Summer 2026 Heat and Drought, Super El Nino Next Influence on Europe Late 2026 Climate - Climate Impact Company"
-      },
-      {
         "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en",
-        "title": "Worsening drought and record heat grip Europe, fuelling extraordinary wildfires and extremely low river flows - Joint Research Centre"
+        "url": "https://joint-research-centre.ec.europa.eu/european-and-global-drought-observatories/current-drought-situation-europe_en",
+        "title": "EDO European Drought Observatory - Joint Research Centre"
       },
       {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_European_drought",
-        "title": "2026 European drought"
+        "name": "publications.jrc.ec.europa.eu",
+        "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147362",
+        "title": "Drought in Europe May 2026"
       },
       {
-        "name": "wodnesprawy.pl",
-        "url": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/",
-        "title": "The 2026 Drought in Europe. We Know the Risks, but We're Not Prepared"
+        "name": "smartwatermagazine.com",
+        "url": "https://smartwatermagazine.com/news/newsroom/europes-rivers-hit-historic-lows-half-the-eu-and-uk-now-under-drought",
+        "title": "Europe’s rivers hit historic lows: half the EU and UK now under drought"
       },
       {
-        "name": "openaccessgovernment.org",
-        "url": "https://www.openaccessgovernment.org/worsening-drought-and-record-heat-grip-europe-as-wildfires-spread/213195/",
-        "title": "Worsening drought and record heat grip Europe as wildfires spread"
+        "name": "eciu.net",
+        "url": "https://eciu.net/media/press-releases/european-drought-and-heat-hits-grain-farmers-harder-than-feared-costs-up-to-3-2-billion",
+        "title": "Energy & Climate Intelligence Unit"
+      },
+      {
+        "name": "farmweeknow.com",
+        "url": "https://www.farmweeknow.com/general/persistent-heat-and-drought-slash-eu-corn-production-in-2026/article_77f95ea0-5f92-46c9-a167-78718944806f.html",
+        "title": "Persistent heat and drought slash EU corn production in 2026"
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-15T23:17:30.732Z",
-    "donationSearched": "2026-11-13T23:59:18.764Z",
-    "directSearched": "2026-11-13T23:59:18.764Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-16T07:04:53.455Z",
+    "seen": "2026-11-16T07:04:53.455Z"
   },
   "gdacs-drought-dr-1023877": {
     "at": "2026-11-14T15:31:04.209Z",
@@ -273,7 +263,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-15T23:17:30.732Z",
+    "seen": "2026-11-16T07:04:53.455Z",
     "donationSearched": "2026-11-14T15:31:04.209Z",
     "directSearched": "2026-11-14T15:31:04.209Z",
     "directSearchVersion": 2
@@ -336,7 +326,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-15T23:17:30.732Z",
+    "seen": "2026-11-16T07:04:53.455Z",
     "donationSearched": "2026-11-15T17:36:05.587Z",
     "directSearched": "2026-11-15T17:36:05.587Z",
     "directSearchVersion": 2
@@ -453,7 +443,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,ER,ET,KE,NE,NG,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-15T23:17:30.732Z",
+    "seen": "2026-11-16T07:04:53.455Z",
     "donationSearched": "2026-11-14T15:31:04.209Z",
     "directSearched": "2026-11-15T17:36:05.587Z",
     "directSearchVersion": 2
@@ -918,168 +908,140 @@
     "directSearchVersion": 2
   },
   "ifrc-earthquake-8055": {
-    "at": "2026-11-13T23:59:18.764Z",
+    "at": "2026-11-16T07:04:53.455Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "A magnitude 7.4 earthquake struck Colombia on 10 August 2026 at 07:34 local time, with its epicentre about 20 km from San José del Palmar in Chocó department. UNGRD's latest national balance, dated 31 August 2026, reports 16 departments and 497 municipalities affected. Deaths were reported at 335 in early September. Sources do not say whether search and rescue is still active.",
+    "searches": 4,
+    "summary": "A magnitude 7.4 earthquake struck near San José del Palmar, Chocó, Colombia, on 10 August 2026. A later UNGRD balance reports 331 deaths, 4,439 injured and 240 missing across 16 departments. Homes were destroyed and damaged in several regions. Recovery aid is ongoing: the registry was open until 4 September 2026, and a second aid stage is scheduled for October 2026 and March 2027.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Cali",
-        "admin": "Valle del Cauca",
-        "country": "CO",
-        "kind": "city",
-        "impact": "184 deaths"
-      },
-      {
-        "name": "Pereira",
-        "admin": "Risaralda",
-        "country": "CO",
-        "kind": "city",
-        "impact": "108 deaths"
-      },
-      {
-        "name": "Chocó",
-        "country": "CO",
-        "kind": "region",
-        "impact": "Epicentre department; at least 14 deaths"
-      },
-      {
-        "name": "Quibdó",
-        "admin": "Chocó",
-        "country": "CO",
-        "kind": "city",
-        "impact": "Building damage reported"
-      },
       {
         "name": "San José del Palmar",
         "admin": "Chocó",
         "country": "CO",
         "kind": "town",
-        "impact": "Epicentre 20 km away"
+        "impact": "epicentre"
+      },
+      {
+        "name": "Chocó",
+        "country": "CO",
+        "kind": "region",
+        "impact": "IFRC-backed priority area"
+      },
+      {
+        "name": "Risaralda",
+        "country": "CO",
+        "kind": "region",
+        "impact": "5,535 homes destroyed, dozens dead"
+      },
+      {
+        "name": "Cali",
+        "admin": "Valle del Cauca",
+        "country": "CO",
+        "kind": "city",
+        "impact": "collapsed building, rescue work"
       },
       {
         "name": "Manizales",
         "admin": "Caldas",
         "country": "CO",
         "kind": "city",
-        "impact": "6 deaths"
-      },
-      {
-        "name": "Armenia",
-        "admin": "Quindío",
-        "country": "CO",
-        "kind": "city",
-        "impact": "3 deaths"
-      },
-      {
-        "name": "Cauca",
-        "country": "CO",
-        "kind": "region",
-        "impact": "2 deaths"
-      },
-      {
-        "name": "Antioquia",
-        "country": "CO",
-        "kind": "region",
-        "impact": "1 death"
+        "impact": "response led by vice president"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "335",
-        "sourceName": "elnacional.com",
-        "sourceUrl": "https://www.elnacional.com/2026/09/el-balance-de-victimas-por-el-terremoto-en-colombia-se-eleva-a-335-fallecidos-tras-confirmarse-cuatro-nuevos-decesos/"
+        "value": "331",
+        "sourceName": "pulzo.com",
+        "sourceUrl": "https://www.pulzo.com/nacion/terremoto-en-colombia-balance-de-danos-victimas-y-plan-de-reconstruccion-segun-ungrd-PP5284386A"
+      },
+      {
+        "label": "Injured",
+        "value": "4,439",
+        "sourceName": "pulzo.com",
+        "sourceUrl": "https://www.pulzo.com/nacion/terremoto-en-colombia-balance-de-danos-victimas-y-plan-de-reconstruccion-segun-ungrd-PP5284386A"
       },
       {
         "label": "Missing",
-        "value": "136",
-        "sourceName": "radiosantafe.com",
-        "sourceUrl": "https://www.radiosantafe.com/2026/08/31/nueva-actualizacion-de-afectaciones-por-terremoto-331-personas-fallecidas-136-desaparecidas-198-720-viviendas-averiadas-37-255-destruidas/"
+        "value": "240",
+        "sourceName": "pulzo.com",
+        "sourceUrl": "https://www.pulzo.com/nacion/terremoto-en-colombia-balance-de-danos-victimas-y-plan-de-reconstruccion-segun-ungrd-PP5284386A"
+      },
+      {
+        "label": "People affected",
+        "value": "361,353 people",
+        "sourceName": "pulzo.com",
+        "sourceUrl": "https://www.pulzo.com/nacion/terremoto-en-colombia-balance-de-danos-victimas-y-plan-de-reconstruccion-segun-ungrd-PP5284386A"
       },
       {
         "label": "Homes destroyed",
-        "value": "37,255",
-        "sourceName": "radiosantafe.com",
-        "sourceUrl": "https://www.radiosantafe.com/2026/08/31/nueva-actualizacion-de-afectaciones-por-terremoto-331-personas-fallecidas-136-desaparecidas-198-720-viviendas-averiadas-37-255-destruidas/"
-      },
-      {
-        "label": "Homes damaged",
-        "value": "198,720",
-        "sourceName": "radiosantafe.com",
-        "sourceUrl": "https://www.radiosantafe.com/2026/08/31/nueva-actualizacion-de-afectaciones-por-terremoto-331-personas-fallecidas-136-desaparecidas-198-720-viviendas-averiadas-37-255-destruidas/"
+        "value": "19,148 homes",
+        "sourceName": "wintorabc.com.co",
+        "sourceUrl": "https://wintorabc.com.co/subsidios/damnificados/balance-rud-sismo-octubre-2026/"
       }
     ],
     "donation": [
       {
-        "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC donation page for the Colombia Earthquake 2026 emergency appeal.",
-        "specific": true
-      },
-      {
         "url": "https://ayuda.cruzrojacolombiana.org/",
         "org": "Colombian Red Cross",
         "kind": "society",
-        "note": "Colombian Red Cross donation page for earthquake emergency humanitarian aid.",
+        "note": "Colombian Red Cross donation page for the 10 August 2026 earthquake.",
+        "specific": true
+      },
+      {
+        "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC donation page for the Colombia Earthquake 2026 emergency appeal (MDRCO036).",
         "specific": true
       },
       {
         "url": "https://www.ifrc.org/emergency/colombia-earthquake-2026",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC emergency page for the MDRCO036 appeal; reference only, no donations.",
-        "specific": true
+        "note": "IFRC emergency page for this earthquake with donate option"
       }
     ],
     "sources": [
       {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Colombia_earthquake",
-        "title": "2026 Colombia earthquake"
+        "name": "ciudadregion.com",
+        "url": "https://ciudadregion.com/regiones/risaralda/damnificados-terremoto-risaralda-esperan-ayudas-gobierno-ungrd",
+        "title": "Terremoto en Risaralda: damnificados siguen esperando ayudas"
+      },
+      {
+        "name": "wintorabc.com.co",
+        "url": "https://wintorabc.com.co/subsidios/damnificados/desembolsos-damnificados-terremoto-10-agosto/",
+        "title": "Damnificados del terremoto del 10 de agosto: iniciaron desembolsos y el RUD estará abierto hasta el 4 de septiembre - Wintor ABC"
+      },
+      {
+        "name": "portafolio.co",
+        "url": "https://www.portafolio.co/mis-finanzas/vivienda/terremoto-en-colombia-damnificados-recibiran-subsidios-de-arriendo-por-100-000-millones-500795",
+        "title": "Terremoto en Colombia: damnificados recibirán subsidios de arriendo por $100.000 millones"
+      },
+      {
+        "name": "seismosoft.com",
+        "url": "https://seismosoft.com/preliminary-report-10-august-2026-earthquake-in-colombia/",
+        "title": "Preliminary report: 10 August 2026 earthquake in Colombia - Seismosoft"
+      },
+      {
+        "name": "deultimominuto.com",
+        "url": "https://deultimominuto.com/en/international/red-cross-requests-30-million-dollars-to-assist-colombia-after-the-earthquake/",
+        "title": "Red Cross requests 30 million dollars to assist Colombia after the earthquake"
+      },
+      {
+        "name": "cnn.com",
+        "url": "https://www.cnn.com/2026/08/10/americas/colombia-earthquake-intl",
+        "title": "Powerful earthquake in Colombia kills more than 100 people"
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-15T23:17:30.732Z",
-    "donationSearched": "2026-11-13T23:59:18.764Z",
-    "direct": [
-      {
-        "url": "https://www.globalgiving.org/projects/colombia-earthquake-response/",
-        "org": "Direct Relief (GlobalGiving partner)",
-        "kind": "globalgiving",
-        "note": "Funds air transport of medical staff, supplies and blood to hard-to-reach areas near the epicentre.",
-        "title": "Colombia Earthquake Response 2026 - GlobalGiving"
-      },
-      {
-        "url": "https://www.directrelief.org/emergency/colombia-earthquake-2026/",
-        "org": "Direct Relief",
-        "kind": "local",
-        "note": "Funds mobile medical teams and medical supplies in Eje Cafetero and Chocó.",
-        "title": "Colombia Earthquake 2026",
-        "published": "2026-10-28T18:15:18.314Z"
-      },
-      {
-        "url": "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/",
-        "org": "Oxfam GB",
-        "kind": "local",
-        "note": "Supports communities in Chocó, especially Buenaventura and rural Chocó.",
-        "title": "Donate to Colombia Earthquake Appeal",
-        "published": "2026-08-13T18:15:18.314Z"
-      },
-      {
-        "url": "https://www.rescue.org/help-survivors-of-Colombia-earthquake",
-        "org": "International Rescue Committee",
-        "kind": "local",
-        "note": "Funds aid delivered through local partners to affected communities.",
-        "title": "Colombia earthquake: Donate to help survivors",
-        "published": "2026-08-14T18:15:18.314Z"
-      }
-    ],
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ]
+    ],
+    "donationSearched": "2026-11-16T07:04:53.455Z",
+    "directSearched": "2026-11-16T07:04:53.455Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-16T07:04:53.455Z"
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-14T21:07:48.595Z",
@@ -1108,7 +1070,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-15T23:17:30.732Z",
+    "seen": "2026-11-16T07:04:53.455Z",
     "donationSearched": "2026-11-14T21:07:48.595Z",
     "directSearched": "2026-11-14T21:07:48.595Z",
     "directSearchVersion": 2,
@@ -1325,106 +1287,105 @@
     ]
   },
   "ifrc-flood-8025": {
-    "at": "2026-11-13T23:59:18.764Z",
+    "at": "2026-11-16T07:04:53.455Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "Flash floods struck Nuristan Province, Afghanistan, from 20 July 2026, hitting Parun city hardest with shops, hotels and homes destroyed. Dozens were reported dead and over a hundred injured. Floods continued in nearby Mandol District on 22 July. UNICEF reported on flash floods through 3 August, and an IFRC aid operation was announced on 6 August. Sources do not report the situation after early August.",
-    "ongoing": false,
+    "searches": 4,
+    "summary": "A flash flood hit Nuristan Province in eastern Afghanistan on 20 July 2026, with Parun, the provincial capital, among the worst affected. UN News reported at least 26 deaths across eastern Afghanistan, including 23 in Nuristan, and an initial report gave over 100 people missing in Parun. The latest dated report found is from late July 2026, and the current status is not reported.",
+    "ongoing": true,
     "places": [
       {
         "name": "Parun",
-        "admin": "Nuristan Province",
+        "admin": "Nuristan",
         "country": "AF",
         "kind": "city",
-        "impact": "Flash flood; shops, hotels, homes destroyed"
+        "impact": "Flash flood swept homes, markets and roads; people missing"
       },
       {
-        "name": "Mandol District",
-        "admin": "Nuristan Province",
+        "name": "Mandol",
+        "admin": "Nuristan",
         "country": "AF",
         "kind": "district",
-        "impact": "Fresh flash floods; at least 30 injured, houses and roads destroyed"
+        "impact": "Six houses, roads, farmland and watermill damaged"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "23 in Parun",
+        "value": "at least 26",
         "sourceName": "news.un.org",
         "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
       },
       {
         "label": "Injured",
         "value": "125",
-        "sourceName": "news.un.org",
-        "sourceUrl": "https://news.un.org/en/story/2026/07/1167996"
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
       },
       {
         "label": "Missing",
         "value": "more than 100",
-        "sourceName": "atlaspress.news",
-        "sourceUrl": "https://atlaspress.news/en/2026/07/21/nuristan-floods-23-dead-100-missing-afghanistan/"
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
       },
       {
-        "label": "Houses damaged or destroyed",
-        "value": "92 in Parun",
-        "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/afghanistan/documents/unicef-afghanistan-flash-update-2-central-eastern-and-northern-regions-flash-floods"
+        "label": "Houses destroyed",
+        "value": "at least 22",
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
+      },
+      {
+        "label": "Houses severely damaged",
+        "value": "about 45",
+        "sourceName": "global-flood.emergency.copernicus.eu",
+        "sourceUrl": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026"
       }
     ],
     "donation": [],
-    "sources": [
-      {
-        "name": "global-flood.emergency.copernicus.eu",
-        "url": "https://global-flood.emergency.copernicus.eu/news/257-floods-in-nuristan-province-afghanistan-july-2026",
-        "title": "Floods in Nuristan Province, Afghanistan, July 2026 - News"
-      },
-      {
-        "name": "news.un.org",
-        "url": "https://news.un.org/en/story/2026/07/1167996",
-        "title": "Deadly Afghanistan floods kill at least 26 as aid agencies race to reach survivors"
-      },
-      {
-        "name": "amu.tv",
-        "url": "https://amu.tv/247896/",
-        "title": "Death toll on rise in Nuristan flash floods as 15 bodies recovered"
-      },
-      {
-        "name": "kabulnow.com",
-        "url": "https://kabulnow.com/2026/07/fresh-floods-hit-afghanistans-nuristan-leaving-30-injured-and-widespread-damage/",
-        "title": "Fresh Floods Hit Afghanistan’s Nuristan, Leaving 30 Injured and Widespread Damage"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|AF#46b93760",
-    "seen": "2026-11-15T23:17:30.732Z",
-    "donationSearched": "2026-11-13T23:59:18.764Z",
-    "directSearched": "2026-11-13T23:59:18.764Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/",
         "org": "Penny Appeal USA",
         "kind": "local",
-        "note": "Flood emergency relief for Parun and nearby Nuristan communities.",
+        "note": "Emergency flood relief appeal for Nuristan, tied to Parun flash floods.",
         "title": "Emergency Alert: Flash Floods Hit Nuristan, Afghanistan - Penny Appeal USA",
-        "published": "2026-07-24T23:59:18.764Z"
+        "published": "2026-07-25T07:04:53.455Z"
+      },
+      {
+        "url": "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal",
+        "org": "Hayrat Aid",
+        "kind": "local",
+        "note": "Shelter, food, clean water and basic supplies for flood-affected families in Nuristan.",
+        "title": "Afghanistan Earthquake Relief - Emergency Aid Donation"
       },
       {
         "url": "https://hadirelief.org/appeals/afghanistan-nuristan-flood-emergency/",
         "org": "HADI Relief",
         "kind": "local",
-        "note": "Food packs, medical kits, tents and shelter items for flood-hit families.",
+        "note": "Medical kits, food packs, tents and medical aid for Nuristan flood victims.",
         "title": "Afghanistan Nuristan Flood Emergency"
       },
       {
         "url": "https://famidi.com/nuristan-flood-emergency/",
         "org": "Famidi",
         "kind": "local",
-        "note": "Verified, locally informed relief for families affected by July 2026 floods.",
+        "note": "Water, food, shelter and medical support for families hit by July 2026 Nuristan floods.",
         "title": "Nuristan Flood Emergency",
-        "published": "2026-09-23T23:59:18.764Z"
+        "published": "2026-09-23T07:04:53.455Z"
+      },
+      {
+        "url": "https://www.rushd.ngo/index.php/donation",
+        "org": "Rushd Charity Foundation",
+        "kind": "local",
+        "note": "Bank transfers to Nuristan Flood Livelihood Recovery Campaign, reference NUR-FLOOD-2026.",
+        "title": "Rushd"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-16T07:04:53.455Z",
+    "directSearched": "2026-11-16T07:04:53.455Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-16T07:04:53.455Z"
   },
   "ifrc-flood-8050": {
     "at": "2026-11-15T17:36:05.587Z",
@@ -1499,7 +1460,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-15T23:17:30.732Z",
+    "seen": "2026-11-16T07:04:53.455Z",
     "directSearched": "2026-11-15T17:36:05.587Z",
     "directSearchVersion": 2,
     "direct": [
@@ -1546,10 +1507,10 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
+    "seen": "2026-11-16T07:04:53.455Z",
     "donationSearched": "2026-11-15T23:17:30.732Z",
     "directSearched": "2026-11-15T23:17:30.732Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-15T23:17:30.732Z"
+    "directSearchVersion": 2
   },
   "news-flood-flood-ps-3d066bfa68": {
     "at": "2026-11-09T10:17:17.712Z",

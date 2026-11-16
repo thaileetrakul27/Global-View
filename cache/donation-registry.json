@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-15T23:17:30.732Z",
+  "updated": "2026-11-16T07:04:53.455Z",
   "fetched": {
-    "societies": "2026-11-15T23:17:30.732Z",
-    "uncr": "2026-11-15T23:17:30.732Z"
+    "societies": "2026-11-16T07:04:53.455Z",
+    "uncr": "2026-11-16T07:04:53.455Z"
   },
   "societies": {
     "AF": {
@@ -2459,24 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "local4:news-flood-flood-ps-d37dff4adf:actionforhumanity.org/projects/emergency/gaza-floods-appeal": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Palestine\"",
-      "checked": "2026-11-09T02:07:50.587Z",
-      "chain": [
-        "https://actionforhumanity.org/projects/emergency/gaza-floods-appeal/"
-      ],
-      "place": "Palestine",
-      "title": "Gaza Floods Appeal | Action For Humanity"
-    },
-    "icrc.org/en/article/gaza-severe-winter-conditions-compound-humanitarian-crisis-displaced-palestinians": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-09T02:07:50.587Z",
-      "chain": [
-        "https://www.icrc.org/en/article/gaza-severe-winter-conditions-compound-humanitarian-crisis-displaced-palestinians"
-      ]
-    },
     "colombia.un.org/es/321436-colombia-adenda-al-plan-de-respuesta-humanitaria": {
       "ok": true,
       "reason": "donation word \"dona ahora\"",
@@ -2678,58 +2660,6 @@
         "https://arcs.af/"
       ]
     },
-    "ifrc.org/es/national-societies-directory/cruz-roja-hondurena": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-15T02:19:06.680Z",
-      "chain": [
-        "https://www.ifrc.org/es/national-societies-directory/cruz-roja-hondurena"
-      ],
-      "blocked": true
-    },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-15T02:19:06.680Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-15T02:19:06.680Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-11-15T02:19:06.680Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
-    },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-15T02:19:06.680Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-flood-8025:hadirelief.org/appeals/afghanistan-nuristan-flood-emergency": {
-      "ok": false,
-      "reason": "HTTP 403",
-      "checked": "2026-11-15T02:19:06.680Z",
-      "chain": [
-        "https://hadirelief.org/appeals/afghanistan-nuristan-flood-emergency/"
-      ]
-    },
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
@@ -2760,43 +2690,94 @@
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-15T23:17:30.732Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-11-15T23:17:30.732Z"
+      ]
     },
     "go.ifrc.org/emergencies/8073/reports": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-15T23:17:30.732Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8073/reports"
-      ],
-      "checked": "2026-11-15T23:17:30.732Z"
+      ]
     },
     "nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal": {
       "ok": true,
       "reason": "donation word \"emergency appeal\"",
+      "checked": "2026-11-15T23:17:30.732Z",
       "chain": [
         "https://nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal"
-      ],
-      "checked": "2026-11-15T23:17:30.732Z"
+      ]
     },
     "ayodonor.pmi.or.id/index.php": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-15T23:17:30.732Z",
       "chain": [
         "https://ayodonor.pmi.or.id/index.php"
       ],
-      "blocked": true,
-      "checked": "2026-11-15T23:17:30.732Z"
+      "blocked": true
     },
     "local4:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-15T23:17:30.732Z",
       "chain": [
         "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/"
+      ]
+    },
+    "ifrc.org/emergency/nepal-flash-floods-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "checked": "2026-11-15T23:17:30.732Z"
+      "blocked": true,
+      "checked": "2026-11-16T07:04:53.455Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-16T07:04:53.455Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-16T07:04:53.455Z"
+    },
+    "local4:ifrc-flood-8025:hayratyardim.org/en/donation/afghanistan-emergency-appeal": {
+      "ok": false,
+      "reason": "names another kind of disaster",
+      "chain": [
+        "https://hayratyardim.org/en/donation/afghanistan-emergency-appeal"
+      ],
+      "checked": "2026-11-16T07:04:53.455Z"
+    },
+    "local4:ifrc-flood-8025:hadirelief.org/appeals/afghanistan-nuristan-flood-emergency": {
+      "ok": false,
+      "reason": "HTTP 403",
+      "chain": [
+        "https://hadirelief.org/appeals/afghanistan-nuristan-flood-emergency/"
+      ],
+      "checked": "2026-11-16T07:04:53.455Z"
+    },
+    "local4:ifrc-flood-8025:rushd.ngo/index.php/donation": {
+      "ok": false,
+      "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
+      "chain": [
+        "https://www.rushd.ngo/index.php/donation"
+      ],
+      "checked": "2026-11-16T07:04:53.455Z"
     }
   }
 }
