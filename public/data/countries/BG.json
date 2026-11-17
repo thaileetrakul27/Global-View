@@ -2,7 +2,7 @@
   "code": "BG",
   "name": "Bulgaria",
   "kind": "local",
-  "updated": "2026-11-17T03:26:05.310Z",
+  "updated": "2026-11-17T13:58:20.966Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "BG:bg",
@@ -10,78 +10,247 @@
   },
   "articles": [
     {
-      "title": "Папа Лъв XIV бе ударен в окото от броеница, която не успя да хване",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSVhMVXdzS1A5SHBwVjV3Ym14U2lFMnFTSGJDcUpHX29hWjJ6MWVuR0FRZHI0VXU2Z3NFWXdGSmZyZkc4dktXWVdKMVZJNGpTRUNMLWRMbFBfNlJwekQycmJmR09wTW5iYVNSQXY1b09hQVVDZmhFNlhzOXpNU1R0cU42WmI0d3hZOXNrT3c1UlJiSy1FTk9kOWxqY1JNRVIxakE?oc=5",
-      "outlet": "Mediapool.bg",
-      "outletUrl": "https://www.mediapool.bg",
-      "published": "2026-11-16T19:47:49.000Z",
+      "title": "Мощен взрив в центъра на Пловдив: Отнесена е стена на жилищна сграда",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWTVva3RNd0p4QlpwZVhpUVMtWjhJX29USDFoV1Z3dHpYV3VNc1V2aG0zLTBKSDJSemdGaG80V1RYY1ptSWdHenZ6anlnM3VKM1FNT21CTFlQYjJUeEgzS2stRXFGcGh1d25CSWtWc2FvS0x5cnUwOFd3RFVwQWtnVVFSWlAySlNORlhYOFhfSlhWZmNPSXRuTTBDcDhnQ1dzcERwWUJTWTRhM2Vyb3c?oc=5",
+      "outlet": "bTV Новините",
+      "outletUrl": "https://btvnovinite.bg",
+      "published": "2026-11-17T11:06:25.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Powerful explosion in the center of Plovdiv: wall of a residential building blown off",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "\"Демократична България\" видя празен чек за 1 млрд. евро за строителство",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdHIzZU1GaDVQbWNMbVdFNS12LXNlZ1hyZnppWEVXMVVyY2dTUGV6Y2VIQVkxb0YwZVNNcFJjb3laVWthX2JVbzRkbGNtVjRmbmF1bjE4cHFZWkVLZEpHcGZYY25Tb1ZMVGliZUZkTEtaM3Nlbk5FMW1FT2U2NENxSmgzRTRpR0JNYzBpUWFnZGZia0dQQjd5Rmp1aS14Ujg1NHpF?oc=5",
+      "outlet": "Dnevnik.bg",
+      "outletUrl": "https://www.dnevnik.bg",
+      "published": "2026-11-17T09:20:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "\"Democratic Bulgaria\" saw an empty check for 1 billion euro for construction",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "САМО ПРЕД БНТ: Бившият шеф на „Гранична полиция“ - Драгоман отрече да е доведен баща на полицая, убил 18-годишната Милена",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPTHFyUFVrUUFnZ1Zsb2g3bVg2RUdwcjRNeUd2WE9SdE5BbmxuU3RkTEk2VmpuYlUzdzBlNS1aaWI0LTBEZ3FWZ0J4cnBnclpmN1ZfN1hfdlVoOWJ5UGRUOUNrNnk5aHRsMGhOakZvY2tRa2R3dXVEZmZfWFNwWlhmMWxDUHpqY29ORE9YWnlZLTN4TDBYRnlwNEVNQkpPdGg0XzY0SjRHLURTSTJ6Yk9GakNscklNWGNxQzJ5YmN0ejNBY0xpU2tDYl81YWVKX2Rzb1lRaTFXNEdWWXR3T213aVJjWm01VFlaZ3U5em5CSmFfdER6dlhhYzR3?oc=5",
+      "outlet": "БНТ Новини",
+      "outletUrl": "https://bntnews.bg",
+      "published": "2026-11-17T10:03:00.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "EXCLUSIVE ON BNT: Former head of the \"Border Police\" Dragoman denied being the stepfather of the police officer who killed 18-year-old Milena",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Кораб с пропан-бутан потъна край Калиакра",
+      "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxPUnhLMXd1R3NLMVVyOTd2X0VTMlRpSWFpb3VxbjFVM3ZXcVB5aVc4QjhzUlNlRFdkTmkwSmpWbkJxU1dZcmZMRWVDME53U2xESXdhNG1sWWwwQlZjXzZqOHZ2YjVyYllCVjFxYzFBUUpyR2xMNnl5cHNHNUJOXzBuMExVLVJiODlFdHlLb3NDT2tCVWtXVGNoZmVUM3ZaT01DQjdOdHM1ZUt5X2hVMjJYZFFnTEZfdmFkY2FGTzJfOERaLWtiLUV1SkhDQWkwQWJVVDR6WU1NVU1kaGV5R3MzRVpQOHFTamNWaTE2U0VXMVpCczllLW1neHJwTUhrakZHNG1CRnJVdThaTWJTbG1lem16eTY4ODhVSm0xRjNnMUxFSDVmSmF5VUNSeU9MVk5ZXzJIM096RGdMQXdpdzRQd3dZd2piWWNZM1pmdExtS3Z3Y2pvemIwNHJSTm1jcV9wRU84WE83NjlCNUpldkl2d2RPQTQ2SEdK?oc=5",
+      "outlet": "nova.bg",
+      "outletUrl": "https://nova.bg",
+      "published": "2026-11-17T07:44:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Ship carrying propane-butane sank near Kaliakra",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Изтребител МиГ-29 се разби край Стара Пазова, пилотът загина",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSnZSeGVyVFpNaGZ3NnhUclFRNkZOVGxPVmhjWk1fYlNsbENsMjB0RTg0OXJSTnU3X3prMlhuRjl0WmNDek4xRG5yQW9NV1VpTno5Wk5UT3hkNF94WEZKSndPWjdEZzQwRlZaRWlUZm0zOGcyYWx2RGxZTU8xenB1SEhYTF9jLWpSTXVZSjQyLXRSc2c4SUtWWUh3?oc=5",
+      "outlet": "bTV Новините",
+      "outletUrl": "https://btvnovinite.bg",
+      "published": "2026-11-17T09:46:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "MiG-29 fighter jet crashed near Stara Pazova, pilot killed",
+      "about": [
+        "RS"
+      ]
+    },
+    {
+      "title": "Украйна разруши част от Кримския мост, Русия удари два в Киев",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVGV4bmdqcEFkRTAxRk8tN1NPalp4enVPOEFyQ2dOaGRkYVdWa01kVjZkdHpFOEtqWGNHYS1fR0pDMnU4Q3BrdU8xbUU0SVNBcFVxN0lWQzM3cERDQ01MUkxRdnFQX1ZIYUVGLWtGZF9uZkZEWGJvcjdIVmVqSUZRYkxBZlhna2ZNalpnWnAyUDNqS0tpYV9rSGFxek5vMDhnYXg2alhCcjhicGwydndNR1pWUkNQTkZPeTFDdA?oc=5",
+      "outlet": "Dnevnik.bg",
+      "outletUrl": "https://www.dnevnik.bg",
+      "published": "2026-11-17T05:40:00.000Z",
       "outlets": 6,
       "trending": false,
-      "en": "Pope Leo XIV was hit in the eye by a rosary bead he failed to catch",
-      "about": []
-    },
-    {
-      "title": "След недоволство кабинетът върна парите за дрехи на чиновниците и даде повече за култура",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSEo3TE5lalo1QzJSdHpxaElUVmdkVzVVU1ZrNHB2UEd2Q2dsZWp6Y0pDQng3ZmNrRFJPdG5IUUo1YVlNa2REYWdCTjRGTE5kVWNQUjdGWno1SW5Vc25SZE4wMDJxbThHczF5V2owSXAzbTdCYkhnZkhkWllCQTQteHJaNnNvZl9fYWxvYTNlRWFMZ2pEdl8wQlhxODl2YkxpRDFZ?oc=5",
-      "outlet": "Dnevnik.bg",
-      "outletUrl": "https://www.dnevnik.bg",
-      "published": "2026-11-16T16:15:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "After public discontent, the cabinet returned the money for officials' clothing and allocated more for culture",
+      "en": "Ukraine destroyed part of the Crimean Bridge, Russia strikes two in Kyiv",
       "about": [
-        "BG"
-      ]
-    },
-    {
-      "title": "Бдение в памет на блъснатата от пияния граничен полицай Милена",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMUF2Q2FhSXZXNF9IXzRwTHdWYVB6amVTLVBQU1BKMWhQWUtDckx0cFlWMjZONXdPWmVJb0xNYUZrSVp4SUpqU2JRX2N6N2xydWhteUpCb09hLXg4OVE5MjF0MXlXamNPSGhlY0JfTlpFbzMydnFzWG85MUYwYW5YaFJIeFBqTHlLYmQtcmFSRlY2Y0preVd4UmE1QV80UmVXZXdqNUZKaS16Zw?oc=5",
-      "outlet": "offnews.bg",
-      "outletUrl": "https://offnews.bg",
-      "published": "2026-11-16T18:06:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Vigil in memory of Milena, who was hit by a drunk border police officer",
-      "about": [
-        "BG"
-      ]
-    },
-    {
-      "title": "Европейския съюз санкционира руски тролове, е-магазини, банки и търговци на петрол",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc3hZc29Jd0hoNGJYQ3BVMXpxR1RiS2dQT2s3c3pTb0FxY2E3WWkwR2hiRENaU3dScjk2SDBvaWUxX1kyMlpNVGJZZDVtN2hqaHZDd0pCTEYwRjJVSEFYalRqMElSTFQ1UUMzcUVleWNjSUdIQmhQekktc0k1V1dGTVdrREc3LXFSbHJNWllKZmRWQW1GYXdVdW5KZEhaZw?oc=5",
-      "outlet": "Dnevnik.bg",
-      "outletUrl": "https://www.dnevnik.bg",
-      "published": "2026-11-16T15:47:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The European Union sanctions Russian trolls, online stores, banks and oil traders",
-      "about": [
+        "UA",
         "RU"
       ]
     },
     {
-      "title": "Тръмп подкрепи завръщането на Дженсън Хуанг начело на Nvidia",
-      "url": "https://news.google.com/rss/articles/CBMi2wNBVV95cUxPbnBMYnZwc1BFaGt3RHBBOHdBZ1psdWJTNUtQbnJWSTJoWmxRTDdwRFNoanJ0OWpTNFAta2xoVHA2WldQbXNOdnRiSkx4Z084c3dBU2JJaEN0Z3Rra1FHSjY4SWZUNzVXNkFjbFVfNVVLX1VqY2dnaDdHWHlTVE54TVpYNFVkQWVuQTNJWFdXNm5OZ29rd09YZU5RUk13V0hIblhJaG1yYWJHaU01YjhyMjN1a3N3QXc3YnlSeV9wa0Jpa0pzQV9oSjRqSXUtNTNEcmI4M3FRTEJrX1ktZWNVcXRKZGYwSGJNOTRQRHpPOFRfRzUxNXh3UFpVZkFCX0dWNVVnUTc2M3VOa0taTHYxeGFyRHh2X05rZVA4NTNwY2JvUnlCMTc2VnZIZkROZE41YVhjNmktZzhVU1gwRUxoQmJSTTB5REJFOTdyWHNKdFJ0OFNBZ2MyT0pFZ0wycWVBQ1RsUmtpRVJBaGt3VWxQQm1sdXZWQXBoTy05SHlaajRyNU5fRkltY00xd091cU5KSWZZQzZiLVI1OXpxYzBtSEZlc2NaWk5tb1cwem5rRG1LdGlUWnpuUG4yODBpLUllVi1Db01fejY3UFVDbks3eExpdkJPN2NhLXdz?oc=5",
+      "title": "Мило Борисов с коментар за бъдещето на Ботев Пловдив",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZFkwY1EzbnFJNWp6VklVUlVjNVE1UWk1Zk96UVVfdHlsSzB4Nk1jUlBRMHJBaUNSM0ZkdFRobHVQRE96cmJzUVRyT3dobjNaTDdPcE14MkxIQTBPdlpxQWg5b1FobHJpczBjenFfZmswOGo1dlVuclBwb1Y4VjB2eEJoYzJpSTh5MFJheTRQTXZ2TEU?oc=5",
+      "outlet": "Gong.bg",
+      "outletUrl": "https://gong.bg",
+      "published": "2026-11-17T11:21:41.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Milo Borisov comments on the future of Botev Plovdiv",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "20 години България в Европейския съюз: Пътят от кандидатурата до Шенген и еврозоната",
+      "url": "https://news.google.com/rss/articles/CBMikwVBVV95cUxOSDVLamU5eUI5VUNkVGQ2em1jSTF4VkRTcE9IcjhBdVhtaWNCWkFrRlQ5aEtYS3QwM0VnbUNnVWxXS2w4V3pIUUlqWFVKSGJHb0lfQjRldFRGV1pyZGFtN09wRzJtaWlWOGQ5RGpEWEc5Nmw4UUNHekdjYmQyc212TVlydnVNVXdFc0hxTnZ1NzQwbkp5X3duYXBfV3FCaDFqdUVVRFN4a0tRMkdiTmV1WWtFYXNmajFGS2FDbXk2cmhnXzAyUHk1enRwZGJON2lxcVJmWmR5MVhBQy1RSzRaRjBfemg4QUdhWFRUV2FUS2VrRFBtV3YtckhRX3lUTDl0cDIyMEFEWWp6OERoeEk2TVJzbC1DWEhiQVNsODJieWdqaEIzOE95bG1ldmltcTJvNERxWnZUNnd2VjN5RW9jRVFJUTBRX1dVYjJUbXQ0RXI4MTEtc3NmdVY4WG8wOXFfZ0x6c0NSVVFCUFBGZTQydDRGX3JqWXowNmE4Q1VDdFBwSVp5TkdvMHVqQmpyc19IME5jSk1mVXFxVFA1SnRSMENUSnM1dS05SlZzOWMyMFAxTFVxRXc1Y1BIWVY4aG9DbEQ2elA4RGw0UnFrNkwweExHOHZxZlVyeTFoWUladnV6d3Q0dVYxWjFxUUkwVmtkLVppcS1OVmdHUHNEYS1iZ3c4Mk5faEh6dFFaZDZLSzYwZ3dib0JJYndyOVhVdGtDLUV4b3lodXd2dm5kenMzTVhFMnU3U1E4eUxHTGZYSGpFcExiMjJENm9ROVllOTJGeGUtajlvWlBxMWdjcmJ0U3Foc1gtUFhkdU1OOTlOSGtMMnpNUVV0dFpoMVFjSjVPYlN6Y3l1MWR2d2puTGJBQnowQQ?oc=5",
       "outlet": "nova.bg",
       "outletUrl": "https://nova.bg",
-      "published": "2026-11-16T15:13:40.000Z",
+      "published": "2026-11-17T04:00:33.000Z",
       "outlets": 6,
       "trending": false,
-      "en": "Trump supports Jensen Huang's return to the helm of Nvidia",
+      "en": "20 years of Bulgaria in the European Union: The path from candidacy to Schengen and the eurozone",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Търговците на нехранителни сотки: Краде се всичко, персонал няма, разходите растат",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV2ZTZXFySGZ3YmJUelBoSmxqZlpsS2w4THEwRkdtN3JmMnhDREYyYVpINmpWSnFFZ2tpTlhIcjhCRVBNcXlFZ0tNQTZKNFVOZVlac2FNS25UMWpKdnM0YWVnZDFBU2ZKSlVxN0VhY3Zub0xpMEhlc0pXdGV3NnZkX2tyTDM2SDZjRW1KeHRwTERWdVo2XzE4WnNxT2w5bHNh?oc=5",
+      "outlet": "Dnevnik.bg",
+      "outletUrl": "https://www.dnevnik.bg",
+      "published": "2026-11-17T12:20:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Non-food retailers: Everything is being stolen, there is no staff, costs are rising",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Зам.-шеф на КЗК: Немският собственик на Kaufland за първи път ще разбере какво се е случвало с веригата в България",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPQ3ZBMFVQdkdzSzlyejEtZHJISmxDRFhIWWtLZVdzZWRZd2c4YzJ3X05xLW9TSGV1bzA3QXl6TUp0Nm1FNUlSckdvQUt1VkoyQ1U3TVRUbjRKcTF2Zlpab0thQ2JCOFNLRjVHd1FodmtDZDFEUmVNMGl3Q0pzS1gwa3FOQjcwREU1WHZaenF1S19rT2hOaEN5eWVXUHZQaTVwVW5ZMzB3aTZFTzZCdHhpWmE5XzA0RE1zMVZlZG9Fa2lpYXVka0t2QThFcC1GWkNQZmp1M2VGUm1lM0otVHA2dzd4ZG0?oc=5",
+      "outlet": "Mediapool.bg",
+      "outletUrl": "https://www.mediapool.bg",
+      "published": "2026-11-17T11:55:17.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Deputy chief of the CPC: German owner of Kaufland will for the first time learn what has been happening with the chain in Bulgaria",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Иван Шишков: През 2027 г. ще бъдат изградени интелигентни системи за безопасност по всички магистрали",
+      "url": "https://news.google.com/rss/articles/CBMi-AVBVV95cUxPeVhlbWdxRmVzeEd1M1puU0JiY0I2c3NTZDZRbHRYckdIclFIRl9fckhXM1c2Uzc1clNvZm4ybTlxazdwNGpqVUJRYVJBaUZrLXN2Z2x5eDk2aHdTNGxMRTBMQnZlOWY0Qm10SExqT1dabmJ4dmJOVi1TdnRrWVktYnJTTVVsSlR3d09IbzNKRUo3bWpWT1VWbDdDMkw2RzFING53c2t3eVZsYi1ZZklMdUk4cW5CTEh5OHo2R0pnbkRlb0Y2aXg2RFFUTXhrcGZfM0wtQkFxbWhYUEZyWnJwZDg3RDd1N3lZQV9Xb3dUalZlbHBhUk5PUmx6YW1TQjhxNlZUeDdYZmFqdjFoaGR1TzZvQXNqQjhsOWlXY1BuQ1lJbFVkQnBDaFltQ1hlcVVubUNKSG85aTNVRi0yNF94TndHc1BNZzVGcWR6bkFmekw3WHBvdWJNLU1VZU5GVDVTTFU5NjdOUUFPSFlibUYwWTdsUnNFNVBWYVZGT3VSMDUtQmZicnRDLVZfT2lzcXA4cTR6Q0tKQ3ozanR6NjBFUjR5MWhPZFFMSjBOR1RIZ3ltYW5mcHJEQUhGcGNibDRaQXp1eklkLUFLbE8xQlFXeG9zLTNYQVY5UGw2ZmFpVjk3YXFzOHpiX1NRdTlmR2JraVZKRkx6V1Z6dG5rOWdhNXhJVzkwUkxma29yMWhfZS1VMnowQ3drM1lQd0NrNVBnaGRYcjBtVWpZMVNjWGtjZk4yRGY5MzBLVFRXOTVOLVpXMUl2bno4WWZHeFE0TjlSVzhXY2I0VHowMXpZWFdCM3dNMnZNN2xLR3NGb0VQYjlRcTVyYnFUTVBjbDBZTzhTRjZ6ZE9tWnp6RWhCUnJZX3BycFNDc21CNGE1TFBQX2h1eTJybmZxVDZSbVowZDMydnJDZFNUVUxkaklXLTFrTGVkcDd0ak1rc2ZsN1VKQmxTWWo0enBHWjNIWkRfOGxDXzJFWjd3SXFvYk5NV29qQUxlNDJmV1N1?oc=5",
+      "outlet": "nova.bg",
+      "outletUrl": "https://nova.bg",
+      "published": "2026-11-17T06:54:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Ivan Shishkov: By 2027 intelligent safety systems will be built on all highways",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Асен Василев към управляващите: Няма да стане по този начин, да не влизаме в този мач, вече сме го играли",
+      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFBhUU8yNS03Zlp3V3hTUW9KUF9TOFh5NTJ1WHFXZmhtd183ZkxtdzJ3SjJqamFZWVA4Szk0?oc=5",
+      "outlet": "Клуб 'Z'",
+      "outletUrl": "https://clubz.bg",
+      "published": "2026-11-17T11:52:31.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Asen Vassilev to the ruling parties: It won't work this way, let's not enter this match, we've already played it",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "SpaceX планира България да стане регионален комуникационен център",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeU1JQmJud0daS3FYS0F5V08tMTNPMUpwSGFwc0dablJGVi1NNV9od1ZlbkJHZ05RNjdoR2RIa0E1WFNITERSZXFpUVJkcjJhTmNCRjdGN2ZOY1N0ZkZGRUpsMTdSYVNLWWlJdUtvM1JPRTA5TnVvOWVJUTlNbUtxaS12Mm0zUzJNUEl3OXBwRlhmbGRVV0hILWZESnhfbDR6Smc?oc=5",
+      "outlet": "Mediapool.bg",
+      "outletUrl": "https://www.mediapool.bg",
+      "published": "2026-11-17T10:48:30.000Z",
+      "outlets": 6,
+      "trending": false,
+      "en": "SpaceX plans for Bulgaria to become a regional communications center",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Колко още кораба трябва да потънат, за да започнем да защитаваме Черно море?",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSUhLVm9ZQ3FCTm5HVDYtejFqMUdISlRNVHdmbTR4VVhsLVY1NDBBTjRqbjNtRkRocGZtakdPd2poblNsV0xjTGdMSmc4bjJLWE1mVXlpUFNISWRfZFJyWk1ocWJYT2ctTGdHck5EeFRHdEpiUmp6M3I1UElRX1lwZ1Q4dl9xbHBKN3JEb21Rdk42UEZMWmFROUt2ZnhmYXRYMXFNbmh3RkthX3B0WWhTTUttMWM0bUU?oc=5",
+      "outlet": "Mediapool.bg",
+      "outletUrl": "https://www.mediapool.bg",
+      "published": "2026-11-17T10:53:47.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "How many more ships must sink before we start protecting the Black Sea?",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Французин попадна в плановете на Левски",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVHpFMGhUVGtVS2tGb1lQRlluRzVBRmxzVmJ0bWNESDBwTUN6OW56TXdrMU40RGFiTlhFMklBZTZZQ29FdWo5NVJVU2dObERqTzVIclRnQWxhVkZTQjc2NVd2UjRLQW1ncEtHY1hTRHVCZHJuQ1ljU1R0aS1ob3RrRHRsanBvR0JsNmx1NnVR?oc=5",
+      "outlet": "Gong.bg",
+      "outletUrl": "https://gong.bg",
+      "published": "2026-11-17T07:36:09.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Frenchman enters Levski's plans",
       "about": []
     },
     {
-      "title": "Германия разкъса Нидерландия и спечели групата в Лигата на нациите",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZ0ZCWGlZTTN6N1VjeXNJcThwOURteHJhWUVabVp6cVJETDRsbmdVMmVEczZnemF1R0txRkZBdmlua0NpVldZVzBnX1gzMzhFbWpDaGdjd1NHblpmdENOQkpFV2gxdUEwdnR2TGNjTVctTk9qSGp3Z1FZOG5nOW1OSVhMenNjUVdla0I4RUhLVy1yYzFuWURmZ0VrTURVcEhINlo1UmFUcmttZkhBaVJZbzVMVlBBcDI0TWxyRXFLeTA?oc=5",
-      "outlet": "Gong.bg",
-      "outletUrl": "https://gong.bg",
-      "published": "2026-11-16T21:37:03.000Z",
+      "title": "EК прогнозира инфлация от 4,6% у нас през 2026 г. и 3,9% догодина",
+      "url": "https://news.google.com/rss/articles/CBMirANBVV95cUxPd3pwOFhBb1FCcnFGZ0hlUWlvMmFKTl9yemJDUUJENFF4UXZEX0ZVTGo3TU9BVTU2bWl1d2JTX1JWQjZhaTIwVmthcTBKM3BJMzU3aDBVcGZyZEo0c1hJSlR3YmpPMnlVbzludTh5eVU2eWo4T2tLNG12N0hma0JqSHAxY0Q1bXRpelpLSHBPMTFnN19Zd1VLMzVXaXRYWENPWTB5WW13cUVZdlNydEFMNzRlOGdpUTBabjdTZXVKd052QzJXcTBiTzBMSkRjc1Buczg2MDVmOUNycnZMQkF5dFZVWHhDWUI0a3F1M1FPbUlRX19pSFBJTllzVTg1UTlGaExqMXRZcklTeVVEdGdrajhTT3NVUTRyYnI0cjZWaTItSXY0dTdZcHpuSGdxSGJELTBfVXZEYWt0YUZxeFpHbHJpR0FXV2RWMGZ4TTF3dDQwSzB1NDRFdXhqYmU0dXA3aGVkY29fZUJ6bXBEWXktTVZJSXF1Sm4yRFhCOGk3Zi1GaXY2ZUZaYXpmaWx0eTVWRHQ3MVRLTmZYTnhuY1M1TTRQcDJHb0ZOempxZg?oc=5",
+      "outlet": "nova.bg",
+      "outletUrl": "https://nova.bg",
+      "published": "2026-11-17T10:31:20.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Germany tore apart the Netherlands and won the group in the Nations League",
+      "en": "EC forecasts inflation of 4.6% in our country in 2026 and 3.9% next year",
       "about": [
-        "DE",
-        "NL"
+        "BG"
+      ]
+    },
+    {
+      "title": "ЦСКА с ударна селекция за новия си стил",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQnV5THlXQTVqMFZUZldTdnlYRDhjUDVGbVNhSGVWZm5UNHNYMElHOVFMWHYydmh2LUo5dDhheDdIMU1td1VzbE1EZnYwdFRvWmN4Wjc5YjNMYWVXVGRsZDlENmcwX01hQ1lQY3E3aTl1M1paTHh6WGViNHlDd3VXU1FvZnVhaDMwaElyRUxhVnQ?oc=5",
+      "outlet": "Gong.bg",
+      "outletUrl": "https://gong.bg",
+      "published": "2026-11-17T07:17:01.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "CSKA with a strong selection for its new style",
+      "about": []
+    },
+    {
+      "title": "Обвиненият за смъртта на кучето Кнопа поиска да излезе от ареста, за да плаща издръжката на детето си",
+      "url": "https://news.google.com/rss/articles/CBMihwZBVV95cUxQdDN4UF80Zk51dE04eU5SRVlJN2thd2ZGbUpOQzZEX3RCVzJHcjl6VlV1SGVVREpnY25NRzk1eVAwOHUzRmp3d09DalBkRWlYN20yQ1BkS1psVDI3QUtZXzJKZjJiRlRpaExBV2JueDBUcWU0c3UyUFN3dUV4VDV6LVlneWtFakp3MlhtT29ISHFvZC1ZV3RTZmlOR2pkZEdnZDlfX28zSjNRLWJld1k4S3FqbTRiMW1ZTkFuLUNxaHoxRXFfSEpfMGJIYmR4NXJodXVDTlFKLUY4VDZyTlE3TWJMQTRYTm9lU0gzanBmWG4wanRqeTZkOTdIMjVLd3phbW1CbldXT3ZvTm1La2hYVXc2cDR4ajBFR0ZPMlFjQkYyUW9xVzhIWTRkclZJTzJLNG8zZjVHWnhFSEx0blByOTkteUVjZDdHcl9mck15Rm9zVHY5Skl2TF9hc05yRS00aGU4TFl5SGM3TkU5dmdTUXk1ZC1xMlZXVEtzcFc3a2F2YXlNRUt0UURjS1ZoRlhfUXFmUTU4VHFrV09aQmpJeUVPU0lmMDA5RV9NMVFDRUpTRnROUjZ6YW1iVmpGRVJiRlAtUlFfRHI1TlN6cGEtWmFGQ0M4V3o1cXg2OW9MNnpQaWc3ZmhybzNLR1NmS21yT0UzY0JaWUVmTTFsZzQxcFJTRkpFcmFkNi12b2JYTHBjTkxKd0lnZUJsSGl4M0lsXzEwS1QwY3lMNjZERWhNZHZkZmNfbnVybGtKZWVDcjVVc2l4cU5SRWd0aWh2RXI0ekNKdVNxeEd2T1NxLUZXb19Nd3hJbjlsQ2pYTGJNNE5oRlFJVDNXdmtuVUNWS1U0TXRxb2tIVEJqVHpraDBsSWE0Y091NkRRRVNCSXpmM3BlZTV4YUZZZE1LZVVLTlFZd0RLcy1tdnJYMGRoaG95TUpkbTN4NEw5M29lUU9VM2Z5UVBmNTBudGRVVDVpZVpOajV6aS1FTy15eUZNN2JNank1OFA5UkZJWUdDNmM2MlFMbnlyOU5B?oc=5",
+      "outlet": "nova.bg",
+      "outletUrl": "https://nova.bg",
+      "published": "2026-11-17T09:51:50.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The man charged over the death of the dog Knopa wants to leave custody so he can pay child support",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Спасителна операция в Черно море за бедстващи моряци: Вдигнаха два самолета Су-25 и хеликоптер „Кугар“",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUFJDU0xVSnlDSGpzT1BuTWlVNFV5Y1g5MXNZY0VlZHZ2b08ybDVWcW1JMmVwUjlLQmJqU2tiaVI4MUlJY05henRPOVg4UFB1SWZWT045Q1p6XzNjZDNsRzZ1a0VrUEFoZlJpVWdRN2ZVVmczU29NRjdwem1lb1E5enFDVFQwRDJZZWg2dWp2R2xjQTFLeXpPemI4X2xjdmhpOEMxMlFFLXF0M3dueHJYY191OA?oc=5",
+      "outlet": "bTV Новините",
+      "outletUrl": "https://btvnovinite.bg",
+      "published": "2026-11-17T09:18:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Rescue operation in the Black Sea for stranded sailors: Two Su-25 aircraft and a Cougar helicopter lifted",
+      "about": [
+        "BG"
       ]
     },
     {
@@ -89,7 +258,7 @@
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOamFDeG1qdm1jRWE3OXF0dGpVb0J6YTljN1lURHA1N2NsTjcyMFNJV1dWd25xZXpVcXhwSHo4YUUxWVlSY1F6aVJ1SlZLUk9QQnpKRUhpM3NrZUlQTU9uS2xnbkNENXVFYS03TmsyWHhTa0NrenVqQ1dCODREcGRtVWo2dEpjcHZycUQ0Q1FYNGZXNkVZUnRNX1Q0cG5MT1k?oc=5",
       "outlet": "Новини СЕГА",
       "outletUrl": "https://www.segabg.com",
-      "published": "2026-11-17T01:49:14.000Z",
+      "published": "2026-11-17T10:55:06.000Z",
       "outlets": 3,
       "trending": false,
       "en": "Candidate for the Supreme Judicial Council takes part in saving Sarafov from a case",
@@ -98,308 +267,137 @@
       ]
     },
     {
-      "title": "Сривове в онлайн банкирането на големи американски банки",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZUpNNjFERDlWZmdETlZFeHRyM0VnR1NSUkRtM21seDNjYUdRbjc3b2NyeUVlVXVVRzFrTWtPN1VkOXIyX2I4a0Fpd29mR3NHSE1wV3pweHJERjFqNnhHVUZYTlZuVFc1a2RGX050WG1jRkkxb3VpNUhBcVRCbjdPVGV4NjF5MmxZUlNYN0hfQmt6LUk?oc=5",
-      "outlet": "Mediapool.bg",
-      "outletUrl": "https://www.mediapool.bg",
-      "published": "2026-11-16T20:02:40.000Z",
+      "title": "Полиция влезе в офис на голям търговец на злато в центъра на София",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNT1JLYXZHeldnbHhuVjVrZ0ktejU5SmdVRFdwam1xcHM2SFd2ZG9CYnZSYnhfS1hValVJak1oYlE1NTBRZTRvVlhBWklENG5fSER0ZTFEdHRBeksyY0xxZm5vSFdDakZRb3VlOGlZajl5MGtOS1lMUktYcUVJbU5EV1JhejhDdEpEZGtsWG1vOEMwMERGby1WV2xFTWpFTW90Rnc3VGwybEw5QQ?oc=5",
+      "outlet": "bTV Новините",
+      "outletUrl": "https://btvnovinite.bg",
+      "published": "2026-11-17T08:21:28.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Outages in online banking at major American banks",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "България отстъпи на Естония в последния си мач за годината",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQM19ESkhJY1Y2LW9iU2ppVzdiOTkzd2kwSk51T1oyWDJPd1VQUnNGSVZ3UHV6a3pJUElOeFBxS2tIU29nTWxKRlV4d3RsQm5UcnRCYkNNdGpycjdwQkpjeFcyTkI4S3ZNTEFHTExSNlp3Nl9CbmFydGdSVkRYR0tOdVBpSFN2cVZWdFU4ZlN4UWJUMll6N0ZRc1Jia1dHT2R3ZkIwczl3?oc=5",
-      "outlet": "БНТ Новини",
-      "outletUrl": "https://bntnews.bg",
-      "published": "2026-11-16T21:58:34.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Bulgaria lost to Estonia in its last match of the year",
-      "about": [
-        "BG",
-        "EE"
-      ]
-    },
-    {
-      "title": "Българин призна в германски съд за сексуални нападения срещу четири жени, сред жертвите е 13-годишно момиче",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRVljdWRURWhoQmQ4d0UtbXRWWXVFSHlCbmJUbi1aVWxfSmJUWDZWXzZvY09nT2YwNGRqRUpjM01MYTVVUGdOLUxOdXNiNklyT01wWi0xMFpLSkYyVnVHdnU0V09HUnM5b3pkOHBNQTBNOHVRRDMtN0ZaUl9SNHozLTk5NWplcVRFUElFTHpabEo4Ui1tTTdncVBYeFVHdEl0bVlmeVY0YTFrVnBIbktaSVY2STJJOWE0RGFOc3hZclhPMHY0dHRnVEhxREc?oc=5",
-      "outlet": "БГНЕС",
-      "outletUrl": "https://www.bgnes.bg",
-      "published": "2026-11-17T02:12:00.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "A Bulgarian man admitted in a German court to sexual assaults against four women, among the victims is a 13-year-old girl",
-      "about": [
-        "DE",
-        "BG"
-      ]
-    },
-    {
-      "title": "Бургас реши: без строителни площадки по време на \"Евровизия\"",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeFpwdnZ2U2NvT1BSdlNoRjBSVWFGNVpYRE1qS0ZCYWkxMzhydzhPcHB0YTdMbmhUMC05NWw4MnNxVFc2WEtMQ0VGa2sxeUlCUnllZ2ZjTmhHcC1qVGU0Y19CYWt1TGkxa2xlSmg2aW9XNnQtZmVDUXd0bTNOWlZrNkg5WExxdmtBczhmWWFLX29LLWdFd3FtNC1XalRlTGJGUU80MFRHakxRUQ?oc=5",
-      "outlet": "Новини СЕГА",
-      "outletUrl": "https://www.segabg.com",
-      "published": "2026-11-16T22:51:54.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Burgas decides: no construction sites during \"Eurovision\"",
+      "en": "Police entered the office of a major gold dealer in the center of Sofia",
       "about": [
         "BG"
       ]
     },
     {
-      "title": "Кога откриват Коледния базар в Пловдив?",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOV2Vib0JPNGdFMVdCMlVadWx6cWJwTFhFV01FaU1BczN1MERnUnVteUVQUEtjNDhzZHVsaEZsbFdySWI4RXZjSkRQMzBKaGFCRjFvQmxNQkZKTWQtME1help1REl5clVpVzFtS1F2aTJzVVU1RXNHeW9sTnNNOTI5eEpJcnRoNHc?oc=5",
-      "outlet": "LostInPlovdiv",
-      "outletUrl": "https://lostinplovdiv.com",
-      "published": "2026-11-16T22:26:11.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "When is the Christmas market in Plovdiv opening?",
-      "about": [
-        "BG"
-      ]
-    },
-    {
-      "title": "Имаше опит да се решат дълго отлагани проблеми при личните асистенти. Защо трябваше да сме против?",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdldySFU3aWRXdGJZWlNKdTdTb3NhZzdQQk5tME04aTIxQkQ4eEVfY1Z3VHZHS1BqWUdHa0tPMUtUVE5JV29UQUZaR003OERQVzFWelVxMUZpSlBfRXVhWElUQWtMZGRrZ2d6aVBfaEVPbWtNZ3djSVY3Vk9mSld6V1ZkZ3lzOG5VUTVMVlBIMEhaeDkzUmRBdVZudWZlODNuYk9SQUpycU9RdVpZWUhiSkF5enVYX1BTMFJhdUlCS0xFZXBISl94clJraFRTcklnakMtcGZTb29pUG1BaXVPQWlMZw?oc=5",
-      "outlet": "Mediapool.bg",
-      "outletUrl": "https://www.mediapool.bg",
-      "published": "2026-11-16T12:10:17.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "There was an attempt to solve long-postponed problems with personal assistants. Why should we have been against it?",
-      "about": [
-        "BG"
-      ]
-    },
-    {
-      "title": "И месечната, и годишната инфлация нарастват през октомври",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQY2xZWkpBZlVKbnBnMEItZFY3ZDBINk9vWFVNSTNpRW9GLVBHVVBDNzBMOG5CTXIwc1pZZzhnTXBHM2RraF8tbmtYNGhhcl9xMUdfS1NvakY0d2pSMVVDdVdZTExQRWk4THoxWTNsQUowbHUxNWJlRFJlN3JEckFiRXFoelJQSFcyY0YzX1hfSDdPR2h0VGJpRUdmdjR5czlhSXc?oc=5",
+      "title": "Русия няма да преговаря с европейците засега, Финландия видя риск от \"нова Ялта\"",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObjZ3R3A2dmlwNC1kSm5kbmlPdlRmbXcxOE01M18xNFFMTVRrNkNJUmxPOW5rTWt4dkNqYTY0ZV9wYUdsakNtOWtGb1UtN3pMQmlHaE94c3F0MWJRMFAwd3FyQ0gxSkYxVDJPS1BBME1xWG14VVA5U3dXVzhlQ2Z6MEVOWTYwdWppeGlJVFdhS2txMUhqXzk4dm5DZE5HRFZvYVZ2eGQtb0lZZDBOOFB3WDI1Zi0?oc=5",
       "outlet": "Dnevnik.bg",
       "outletUrl": "https://www.dnevnik.bg",
-      "published": "2026-11-16T09:08:00.000Z",
+      "published": "2026-11-17T08:19:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Both monthly and annual inflation rise in October",
+      "en": "Russia will not negotiate with the Europeans for now, Finland sees a risk of a \"new Yalta\"",
       "about": [
-        "BG"
+        "RU",
+        "FI"
       ]
     },
     {
-      "title": "Пекин не желае обсъждане на Украйна на срещата Тръмп - Си - Путин",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSnV6ZlZ6SUhLS29UU1h6a2V0SkdHUnFJTGZ6aFBla1BrckpGTVdOa3hxTGJyUWxJR1BrSktlczJlVVZ2RGdJeE1wb2RZVnpaTmVxVkZ0OXFYWHJ1SjFCamdLclZaTUpOeUNHZzlCdUkteEhxTnYyZHRRcmRWcDQ5ZnlFTGRQZGFzanMxRUowckJhaGtWekdfdGp6WGtvdw?oc=5",
-      "outlet": "Dnevnik.bg",
-      "outletUrl": "https://www.dnevnik.bg",
-      "published": "2026-11-16T03:06:00.000Z",
+      "title": "Турският външен министър: Русия не иска споразумение за прекратяване на огъня в Черно море без траен мир с Украйна",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOU1ctMXNtWFBNZG03UkxkVTlvSm1BNFA2YTR2MXJILTQ1WEZ3V19vTE1fajBLTGNEZFJzZTNQVHRoNkZzdWlZc241czk4cFYtd1BsazNlWm1oTFoyWVRpMkxMVVVnLVVCTGotTzBOOHhha09sVVlZWENkeWgzdWs3aEhOQXBGLUNWYk16MTFrcERoOHNtSEZZUUZQeFJISVM3OUh6N0hyMkQxMkVmYVRuUEZhUHBRSWwtdk5xLW5acVMzTlJBTnEybXdUS19GQ3loY2xTbUNrVTkwMTBoODJuNVJkanRIdw?oc=5",
+      "outlet": "Mediapool.bg",
+      "outletUrl": "https://www.mediapool.bg",
+      "published": "2026-11-17T08:15:39.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Beijing does not want Ukraine discussed at the Trump - Xi - Putin meeting",
+      "en": "Turkish foreign minister: Russia does not want a Black Sea ceasefire agreement without lasting peace with Ukraine",
       "about": [
-        "CN",
-        "US",
+        "TR",
         "RU",
         "UA"
       ]
     },
     {
-      "title": "Инцидент с товарен кораб в българската икономическа зона на Черно море",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVEtaRnVFVE9ueWUtRWhPMDRRMDF6Umx5VUxfYm5SSHRTYlF0Rzd4ck1YU25ZanhMV0h0ZVQ4a0V5ZUhzdnRFQTQ2YnQ4dEl3VWI0cFBHZTJaMUpZNWxBTExVOGR4ZkoyZUZ6T053d19BSUhFM1RYNFlib1ktV0Q1UFY3dkJBbzR2UlhSMzlQbVdnSy1yUXhyaDZ4YWQtYkZhZ3pZd1RqdFVrZE8telJIYlhTWQ?oc=5",
-      "outlet": "БНТ Новини",
-      "outletUrl": "https://bntnews.bg",
-      "published": "2026-11-16T10:29:11.000Z",
-      "outlets": 4,
+      "title": "\"Кризисен пиар\". Управляващите тихомълком добавиха 21.3 млн. евро за култура",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd2xGaW93Wk1WM2pfQTFVclB6OFV0QXQyYnlvVkg3bVROMzNWUDRLVFVoRGdLZXJjOFNPLXpzWTZqTVF3eU5wODZtVnFUUENHNUNqSzNVYUVIUjVTeENYSFVDTGtxSEpqaldDUFg3REdab2t6V3VRTHFqYjgtTmU5T2tTZHI1WEFoMG52OE13NEt5NEhMZGZtOEhXX0lFY0N5dlNuZ1AwRC1fQVVY?oc=5",
+      "outlet": "Mediapool.bg",
+      "outletUrl": "https://www.mediapool.bg",
+      "published": "2026-11-16T17:39:02.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Incident involving a cargo ship in Bulgaria's economic zone in the Black Sea",
+      "en": "\"Crisis PR\". The ruling parties quietly added 21.3 million euro for culture",
       "about": [
         "BG"
       ]
     },
     {
-      "title": "Световната икономика се крепи само на крака на ИИ, предупреди Кристалина Георгиева",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQXl0Y0FJX1RDOTdreXRrdGJ5MHBoTDBRd0R4VGFmYUxQNTNMSHF4XzFYalFWTGFwMXhhMndvUVJvSmRldzlxZzRCNkJvMUJRR2lWaU1oOEJJdjY2SmlIbXdXYVAzaXlhT0RoNzZGaUE4MXF3ZmtqNjNscG0zRFRLUWtFdEdlZDZBb3gzVEdIQ2s3Z1lTdTFrLVgyWkN0aDhmV0licmxmWElCLUh2Wnp1c0RB?oc=5",
+      "title": "Големи количества вода се изливат по бул. „Васил Левски“ (снимки)",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBTYTFVbWotM1Z5UFZNRDRkSF84dDBEUFdxdGlRazdvb2J1NlI0NVV0c0hsd3RyQ2F3eDJweVVneXFZeTNES3RaWTd1aUZVTnhsWjFCeg?oc=5",
+      "outlet": "Moreto.net",
+      "outletUrl": "https://www.moreto.net",
+      "published": "2026-11-17T08:34:32.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Large amounts of water are pouring along Vasil Levski Boulevard (photos)",
+      "about": [
+        "BG"
+      ]
+    },
+    {
+      "title": "Рейтингът на Тръмп е близо до най-ниското си равнище",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZzY1Z0VaaWZNODRFbUhmYTRHUmVTSEpzV0lBdGE4Vy0wc3FVNlZBb24xNnJIRUFNZURnbllmcTVkRFEyWWMxRldoV1VkMHFmUEVnT3pYelFWd2dYbnluRDZaWW5ieXdTYXJIdzN4dkZKNEkxNzZveW54QTd1UGZuMXFraE5nYXA4dWpRTGJLNA?oc=5",
       "outlet": "Mediapool.bg",
       "outletUrl": "https://www.mediapool.bg",
-      "published": "2026-11-16T12:31:05.000Z",
+      "published": "2026-11-17T07:05:19.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "The world economy relies solely on AI, Kristalina Georgieva warns",
-      "about": []
-    },
-    {
-      "title": "Днес ние [германците] се учим от китайците, а не обратното",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOemYyQlE5dC1JVnVxU3g2VG12Z1lZTXIxcFpiUi01SVNyREFXMXVBYmdTU0ZBZ0dhM0pCdmg3cFMyNlpGOUJVX2p5LVJObDlGbTN5d3VUM3pFWGVXR3czc1R6b3ZQV3pIcjZKcGJ5dzZjSS15VjVOXzN3NUF4MVZQallHS0NoaUxoZHlxbi11S1hhWHc?oc=5",
-      "outlet": "Carmarket.bg",
-      "outletUrl": "https://carmarket.bg",
-      "published": "2026-11-16T12:51:14.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Today we [Germans] are learning from the Chinese, and not the other way around",
+      "en": "Trump's rating is close to its lowest level",
       "about": [
-        "DE",
-        "CN"
+        "US"
       ]
     },
     {
-      "title": "Ето как 19-годишната Мира Андреева даде ценен урок на Свитолина след финала на WTA",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVlc5R0xqcWY2M280YVEydEdYZDlRVWVteWJuOVBuNEVzeXI0OWx4UXY4M3BZd3Y1c1pFQXBxd3BIUGk5Y2pudVZDbFlRMWFiOUZ0aVFZdExTelB6V1daMUtRMDlBQzA4aEwtY1ZtdUxPNlpQb1V2aTFIZTduSDk5YW10ZnpYbmowVEVBbDhqb1Q4RXVTMVRIUjhBOEhwNHJuQWVfQWg3V1d5Qm5POFhTdFU4cmFjb2VI?oc=5",
-      "outlet": "Gong.bg",
-      "outletUrl": "https://gong.bg",
-      "published": "2026-11-16T16:35:17.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Here is how 19-year-old Mira Andreeva gave a valuable lesson to Svitolina after the WTA final",
-      "about": []
-    },
-    {
-      "title": "Кая Калас: Имаме архитектура на сигурност, с която Русия се е съгласила",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQmtTN2RlV0lpWi1yM253WnR6Z2gxbEpVcWc3Wl96TDdzVW5MdTI5VXJvUG1NZ3pIUGk5ajNjUUU4NXhiWGs5TmZXb21nVnhQTDJzd3J1SmkxQWFfMFVYMzdwSjY2cHJjMGNRblJwekdsM0l6eEVYOEtoS0trb0V4WDVUNFFjd1VkVllfY3VYNm9wX0hUck50ajY5Z2xZU0E?oc=5",
-      "outlet": "Dir.bg",
-      "outletUrl": "https://dnes.dir.bg",
-      "published": "2026-11-16T08:42:15.000Z",
+      "title": "Последният проект на бюджет на НЗОК: Увеличават парите в ПИМП, СИМП и дентална помощ, по-малко има за болниците",
+      "url": "https://news.google.com/rss/articles/CBMi4gZBVV95cUxNNlBtaUFKUlVRTkJjYjVETGZFNGNSY2ZrT2tYNldNbl9CS1o0dXM2SDYya0VCMU9FLWZFQ1FCcGVMdjlQRzVKTXI4RnNxTk1OQ08xZXI4Tm8ybHJZak5GVHM0akZLTWFPbjVXd0FmSHd6UEpwZzQ5YlpHakE4WGlBbUt3RmVMR3VHZ1M0OVhQRVVicE9uZkVCdUZobWdNNmVFWmVkNG00ejNfME1nWHpmWHRkeVpNQzRjUERJUjF0b2dNN0ZsdkFoVi1JU0lsWHJfMG5LYUczRlZvdkY0Y1JWclFxeUVBcURlMjltN1E2RDhzSmNUWHhPRlhXNDhjNlhncWlLN3plUVBBekJBM2t2TjQtRnh6MmZvNmR2ZVRhU2JiN3lzeXNWbFhhOTQwZEhQS0ljN3EyMlZJOHliT0pKX1R0X0hJSVVESWVKaGJpWTh6Z3hJckQ4a291SHc2YWRkTE52clM0WjB1dktqMW9DdGhzclZiQndrbGgwSFk1RmpJUlVCYnhyMDVRRXEybVNkdU5ZcEZKcXlFeExnakVGVHV1MnhmVTk0MGRYMjNOYzRqSHZ3SzRlZ1FPTExqVEpzYUtfMmVGSDRlVDBWUUJUYTE5MmFvTG93bkJ2MzlCZTJFb3lVVDZjMGozdW9YdUlDUDdzbDR1Nktwa0Z5SzBxdFdVOTIzUmhFbFFQVHpXWHh6cG5MSlplUXI0cUZSc0ZIekJFaXlmWTFOb29VT1ZwSkJiMXV2d0FISDJULXFWVkk2Z1ZVT3diclMyUFFHRnhLaGU4VTNya2JKQWVqMktiMENkZHdQSHlCY2lLR1pZMDd0d0dfNkZqbURPSUZvaWIzRG1ramY1Q2N4M1NNakwwUjRfckRKcGs5NjdHN1FaUnUxaDZuZnZMc3p3R2VPOWRmZkVWWFI1MHl3clB2c3VXN0xwUVYtV3MzVTdxTnM2aVhGSTV0NHBlMV9XTWo0dGlRbmNob2hFRUFSVVhEaHRqNzJDMlJYNnp4TEIzTlhyZmV5YmQySHNuSTlfd2pJR1VlT3kzYng5MDJSSEduV2lCVU5pb3NCUTFtTk1HVjU3Z0VHc2F3UHczMnVyNnhuZlBJNDFVQnlYbTY5QjFiODdzN3RXNkFEVkp1OFB2cHFIS3B3Zw?oc=5",
+      "outlet": "Zdrave.net",
+      "outletUrl": "https://www.zdrave.net",
+      "published": "2026-11-16T14:02:43.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Kaja Kallas: We have a security architecture that Russia has agreed to",
+      "en": "The latest draft NHIF budget: More money for PIMP, SIMP and dental care, less for hospitals",
       "about": [
-        "RU"
+        "BG"
       ]
     },
     {
-      "title": "Украинските роботи са уязвими от руските дронове, Русия съобщава за удар по Кримския мост",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOX25HMUk0S0lKOExBMWdMVDNyWWxCRktJakZXMndDYjFIUVdvOHFUWnpJeHcwdFhEekNrczNPaXBNRmgzdUZMMWIwWDloR0kzY2lrbmJUeFJLNWJTOEFmTEJqbzFUbkRvNDR3bFozWWFTaEtBS0RtQWYwWnktbkQzTHF6d0tqbzFQS29LbEJRT3FTeEtwQ0FNT2lweHFTYmVWaTlQVFd1UkV2YnlQR2w2d1hGTTJKTktjb1psOHhTVXVTZnRsRmh1eFN0UElvR25fS2FuZlJKMDlVNXZNUlhaRjZkMlI?oc=5",
-      "outlet": "Investor.bg",
-      "outletUrl": "https://www.investor.bg",
-      "published": "2026-11-16T05:38:00.000Z",
+      "title": "Два руски изтребителя са навлезли във въздушното пространство на Япония",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcFhBVDBva1RkUTBFMXF3bE1YaWhMdFNCNC1JY2JEQW5qOVNzRVg4NVMtVGVieUw4eUFsTlVtc0tZLUZadVc5dUFHcC0xTld5OWI2Ql9ZYU5MRlQ2TEFwT1BWTFhuTFZ2anhxQzdtdHgxeFJfa1lvQ3NzUjBYM28xREV4cGtSX3ltODRzcGp6V1B4Mi1sRnd2OUFTTUg0U3hQSEZiT01zcjJyQWs?oc=5",
+      "outlet": "Mediapool.bg",
+      "outletUrl": "https://www.mediapool.bg",
+      "published": "2026-11-17T06:42:55.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Ukrainian robots are vulnerable to Russian drones, Russia reports a strike on the Crimean Bridge",
+      "en": "Two Russian fighter jets have entered Japan's airspace",
       "about": [
-        "UA",
-        "RU"
+        "RU",
+        "JP"
       ]
     },
     {
-      "title": "Позицията на Европа за Украйна ще се определя на среща на \"Коалицията на желаещите\"",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcTRrazhDdHpRbkR6eFBQR1lJekhtaEdFeVZkMDVXcHhxQUYzcEF0Wk41RG53WlZ3Q3JYT09jV1JKbU5XUHlhRlhyUGtjOVl1MFgwRHdQV0Y1MHRrbXUxMlhubFhVeGZvNTZHcWhFajRzUW9udUFZZUtBUmxDSGUxTm5MOUREYkpYd0dDYUJJWFFjemJrdWFXRC1jUjRFMHZMUHRpZmQ2bHIycmFX?oc=5",
-      "outlet": "Dnevnik.bg",
-      "outletUrl": "https://www.dnevnik.bg",
-      "published": "2026-11-16T05:47:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Europe's position on Ukraine will be determined at a meeting of the \"Coalition of the Willing\"",
-      "about": [
-        "UA"
-      ]
-    },
-    {
-      "title": "Пулев: Водим преговори с компании от автомобилния сектор, за да започне производство на коли у нас",
-      "url": "https://news.google.com/rss/articles/CBMi9AVBVV95cUxNdjliN3QtRjA5cUU5SC1MZ1BuZ1ZfM1FEcGVQRXZXdV80X3VSWVZqRTFLblVfUzRDZFpLR1pZRWlFM1ppOW1tV01fOU5PS21GY3NuaUN1TkU4NVIwdVdLOTJ0ck9BdUsxTWJaTHNaZU1SdFRvcUxqQjR5bUc1S0xlZ01oTC1tV0ZKRVV5MDI5YTg3TzB6Umt2UjdFdFpPUVE0NjNhUWZSNjlzZkJ0S0NVdXhTMGxMelQyYUVkaW1odHdrZ0ktbWUtQnUtUVRNMHRHTGNFYnJkS1JPY2ktNUYxcF8wb3JtRjY5WHZXRzJJaEJZVFpsbHptLXZybXFvR0tZUDVRUmx2RGQ4OXNVNkRVRERUbDI0VVB1NHBCQTg0MDlOR1dPd0JURTVvOVVDTzUwcXlucjc2TTliZVYzUE9ZQ2RNeTVnU3NQQktOc0ViNVFhcEh4R19pc1pfdS1WNmJnN21mVVVYVnNycTdxWTduX1Q5SzhnNXZlMWNvTnRsQXBOUS1yVkltNHpsMmZfMTY1RmtfNjNremZSVWI2RDdsU3VUNFNmSmF1ZXVzVUhScjFjNDJzS3laaDlmMF9ud3FKdjdoTlpkdUVzVFBKYXl6RzBpazJhLXNtaXNDZFd6eHA1YnNLRjNOVkw5d2d3UlI4eE8yYnRfeEk5VGVEVnFYWS1KSTU1TGd0UDFUY3Q3X2Y3SXlySkhObmJPVDhFUEFKVUxHS1ExY0RwbU9EaUUxXzV3WldfM2lEY2VUVmhTbnVDaWhjSEFCVDlwWHE5OExzZDhEVlQwaUdFQXl5Z25QM2xBeVBFd255clRkMWVheGdVcUJJZk9OQ2JQU0lfMTNfX3oxOFZqbHpEa3ZLWVlMSnZuTUJRTllSWFAzMW9oWUdXVWVRVmlvVXZBUFpjVTF5N0JCODc2OXBKbC1NZW52ZGRXa2MtWDQxSkhYRHl2UTZwaE5zY1BlSDdGNGZfVkg2SnhxVXFMYW05V3pGOWUwZlpyUWc?oc=5",
+      "title": "Удариха с броеница папа Лъв XIV в окото по време на литургия в Перу (ВИДЕО)",
+      "url": "https://news.google.com/rss/articles/CBMirwRBVV95cUxNWElXVnFQUG1JM2FGRDRMd0ZudmYxdW1fWGN2TGRfMWIxZ1l1TmV6MklDVENJb0dkRnN0M0E2dTN6VTAxZmNwTmlXLTYxd0xKRnBUQm5YdmRyd0tablMzMm5kV0hQWjYySHFKenZNZHFNNTc2dFhmalhGaHN3d1B4N1dIcW02U0dnMGYwdEZZbV8zVnBjUjFkNHJfdUs5T2VGaWxtdzBhbWYwYWMyUmd4MFIycmpBMGFmY3Z6M2IxZXluX3AwVzczcEp1X01ic21jTkQ4MW5CYkQ5OW00b2hOdjh5OXdhdkFzWF9lSU5JeVA3WGk2VzlSZDJpeXNEYmU5NUFmUnBrbHR4Mm5zUmx6SmpoR3BYSWh6MU92cVUzYXBDOUZHckJWaFNETHNabldkRkFyS0lCRXdVbUhxcGU4ZnV2WWdwRWpmVjFodDZ3aFZtc1BKREkyUHN0TC1xdjBmVmVrdV9lV1ZnSXNkY2dmRklZYlhiM3JoRXRlZDFkc1FlNFI0RkFDdkRtY1Y1SHhXZC15cDJqT3ZXOWJsbV9jc2pWSWVJWjBXU0xncmxzWWhLci1lUW0ycXVYSDVHeTU0ekFwTDNmQTBYZHo5Tk1JS2gzQkpIQmVrQ19qVDlBendyUE5jSUxYRUJyb2ZhUTJ0V2hvTmYybmFFSThlOVNiMzBFSnpKWkV3UzJoeGlUT1ZaLTRCam9qRWVLaXl4T1doalBZbEdIempwWHU5Ri04?oc=5",
       "outlet": "nova.bg",
       "outletUrl": "https://nova.bg",
-      "published": "2026-11-16T18:17:39.000Z",
+      "published": "2026-11-16T19:11:36.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Pulev: We are negotiating with companies from the automotive sector to start car production in our country",
+      "en": "Rosary beads hit Pope Leo XIV in the eye during a mass in Peru (VIDEO)",
       "about": [
-        "BG"
+        "PE"
       ]
     },
     {
-      "title": "Тръмп: Путин отстъпва за Украйна",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5HSTFyQUJBdWwxT3g2cEplLWxLMVlXQVVlb3gtZzNQNDAwa2VNSWZYdmpGM3RlQV81ME9sbWk2UlFWY2h1WkVhelpsUElIWjRhZFN5bllHUUxQZjg5Qk9lWDRtZmJfQ2R6WWJhZVV0Zk0wZmpSOVF3SkY4WFY?oc=5",
+      "title": "Румен Радев: Искам да се извиня на майките на децата с увреждания, това е най-социалният бюджет",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNaVhQbVVqV1Qxekl3WEtxQndSNnZfdW8xc3NVMlRNM3JHU01CTGlHcVFQOVljUnl5SThvY3FKX1ZNY3N0Y0w3VDNxVVFzTDdtRGhrUDFTY3NlbnFvUXQ4RFhIVTBKVk4tR1FfcXVQeERJeG9iOG94amVTeE96RWUzNkk3WURzVG1aSDJ1ckJndXoyWHZwd09oaWxFR00xQ3Zxdmk4MGpPbl8wTTA2akM0Rlhzb0lJNXViSDlURnJwY21fWHZEY0NlblZpUkJOQmVKYXgzRA?oc=5",
       "outlet": "БНТ Новини",
       "outletUrl": "https://bntnews.bg",
-      "published": "2026-11-16T18:09:00.000Z",
+      "published": "2026-11-16T06:58:43.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Trump: Putin is backing down on Ukraine",
-      "about": [
-        "UA",
-        "RU",
-        "US"
-      ]
-    },
-    {
-      "title": "Драгоман, Сливница и Алдомировци потънаха в скръб заради смъртта на 18-годишната Милена",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbXUyaTNSNW5POVRwV2tVSTRrSzlDaldKUk5qLWViN1VkM1ROV29DSTZaTzZKaUJKQ2ZFZDJKbDFBZzE0VFBSUjVnYzdJcXBFS0FQSjVnS1lXNW5jZ2Nhdmx0MWVBbTBtSVJMd09jN0d3T3pQOTA5TjJHeVh5Q2RHOHY0ZkN3dDRTeTI2VmVmWlV3SkJFX05jUEtoRFlNZkd6Vnpiel9oMzhqUElrVjRfZ2QySW9tVkFYWUdRZ2VOQWk2aHZfOFFr?oc=5",
-      "outlet": "БНТ Новини",
-      "outletUrl": "https://bntnews.bg",
-      "published": "2026-11-16T18:04:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Dragoman, Slivnitsa and Aldomirovtsi are plunged into grief over the death of 18-year-old Milena",
+      "en": "Rumen Radev: I want to apologize to the mothers of children with disabilities, this is the most social budget",
       "about": [
         "BG"
-      ]
-    },
-    {
-      "title": "Бивш служебен външен министър на Донев е новият посланик на България в САЩ",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ2g0cFdiaFpBOGlHZ2ZNSW9aTW1tNEpia0RETVczc253c25zMXl3SUNacDhWWEpKX3lMVkhlcWpTX29zdGJPTFZSSy1SV0ZhR0I5THJRZ0VlSDQycGtMN2VGSWs5dlNKR1JrWWhWNzl2UzdCb3FIelJEX1ZoWDZwbjVqZm16bTlwaU5pWEVwQ3ZxejM1XzlDYzdCU2xZUWRqMmE3eA?oc=5",
-      "outlet": "Dnevnik.bg",
-      "outletUrl": "https://www.dnevnik.bg",
-      "published": "2026-11-16T17:51:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Former caretaker foreign minister under Donev is the new Bulgarian ambassador to the USA",
-      "about": [
-        "BG",
-        "US"
-      ]
-    },
-    {
-      "title": "Янка Такева заплаши Урсула фон дер Лайен с мащабен учителски протест в Брюксел",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeURpYTVTMUdOajFydmtVYThSY1JBUVZsM2VxVW9VYlkzMjNkb1RpOXl5ODd0dUZBVGxFU2QtRlJNUEMwaHBkZGJ4eWxDUUtyVHM3UGYxUHppYjBabWlRLVBic1c4YWNnd3psbTBwa2JpZmZGSTltTE5uM2FUYkxHN2IwLVN0eU05ZUVMZkRNLTNOVjZvbE9qSWFTdU1JV05YNV9ZUjBqTlB6eHlpbHV1X3VLdUlOWjRtMndhMUVJbw?oc=5",
-      "outlet": "Mediapool.bg",
-      "outletUrl": "https://www.mediapool.bg",
-      "published": "2026-11-16T17:06:20.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Yanka Takeva threatens Ursula von der Leyen with a large-scale teachers' protest in Brussels",
-      "about": [
-        "BG"
-      ]
-    },
-    {
-      "title": "Рискът от ядрена авария в Украйна нараства тази зима, предупреждават ядрените регулатори",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWG9NYUNLSUJIblAzTGRlNUljWVl6a2cwcTRaSFJUX2ktTF9wQVF6dmhtcExQZzVXZmJrRGx0RDJBSksweG1jT2tpeUs2RnM4amgtaXRVMGJNX3pKZ0VLa3BlSDUyY1VpNmVYeWl4N1RLNnRzZzhEM2FVZFNsLVIzYlo2WEZQRFI5OUxwZHJUOFpQTDRGd3phQzhKeXFNaUotejl5TXlxUlp0c0p1eUFVdFlnQzdJRTFVVVdrYnVxekpWMXpJTnV1T1I3SFZiQQ?oc=5",
-      "outlet": "Mediapool.bg",
-      "outletUrl": "https://www.mediapool.bg",
-      "published": "2026-11-16T17:04:02.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The risk of a nuclear accident in Ukraine grows this winter, nuclear regulators warn",
-      "about": [
-        "UA"
-      ]
-    },
-    {
-      "title": "Разходите, свързани с ТЕЛК, са нараснали с близо 200% за шест години",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZzRaaTJtSktlUVRzQU9BXzJvRkJYRFBWS1JJQXI1bGtUeG5kWTlSOVh2WVhRRmlxWUJPZzI5X01tNjVKakE0UHZvbEJTWXdabHg1OUJqeXAzNGxTZ0FCakhLelZtUjBENG5sU2ZOMzZWOFBWSGtnNnBVajl6clZPaXFoei1qc2otNEtBcU9wR2hUTGpyeFllUXZwazk1ZUFpNUNv?oc=5",
-      "outlet": "Mediapool.bg",
-      "outletUrl": "https://www.mediapool.bg",
-      "published": "2026-11-16T16:24:22.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Costs related to the TELK (medical expert commissions) have risen by nearly 200% in six years",
-      "about": [
-        "BG"
-      ]
-    },
-    {
-      "title": "Испания за първата загуба от 43 мача: Това не е краят на Непобедимата армада",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONjBCaHBWXy1tcGVpZnQ2b1RjQ0t2b0pRb3VQOW5ENmw0RF9ISU1oQk1LSDFyT0liV2JGVWFDQWdmZkI2QTdVYk04OEtkbThyT3B3a1hLQ01aVUNGSFY4TmxVa21iNjhvalJndmFXa194QlJ2VXU4eVdTallhVzNXanlCMlVwV2dOam1DNUdsYWh6T0VTVGFWbU9HdnlkNUpCVHQ2VWE4cFRlTms?oc=5",
-      "outlet": "Dir.bg",
-      "outletUrl": "https://corner.dir.bg",
-      "published": "2026-11-16T06:30:25.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Spain on its first loss in 43 matches: This is not the end of the Invincible Armada",
-      "about": [
-        "ES"
       ]
     }
   ]
