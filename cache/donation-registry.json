@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-16T19:00:06.803Z",
+  "updated": "2026-11-17T03:26:05.310Z",
   "fetched": {
-    "societies": "2026-11-16T19:00:06.803Z",
-    "uncr": "2026-11-16T19:00:06.803Z"
+    "societies": "2026-11-17T03:26:05.310Z",
+    "uncr": "2026-11-17T03:26:05.310Z"
   },
   "societies": {
     "AF": {
@@ -2459,17 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "local4:ifrc-flood-8013:hrf.org.uk/emergency-appeals/bangladesh-flood": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Bangladesh\"",
-      "checked": "2026-11-09T21:11:15.143Z",
-      "chain": [
-        "https://www.hrf.org.uk/emergency-appeals/bangladesh-flood/"
-      ],
-      "place": "Bangladesh",
-      "name": "Human Relief Foundation",
-      "title": "Bangladesh Emergency Flood Relief"
-    },
     "redcross.org.cn": {
       "ok": true,
       "reason": "donation word \"捐\"",
@@ -2663,45 +2652,12 @@
       "name": "WORLDCHEFS",
       "title": "Donate to Support Children Affected by Flooding in Myanmar"
     },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-15T23:17:30.732Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
-    "go.ifrc.org/emergencies/8073/reports": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-15T23:17:30.732Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8073/reports"
-      ]
-    },
     "nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal": {
       "ok": true,
       "reason": "donation word \"emergency appeal\"",
       "checked": "2026-11-15T23:17:30.732Z",
       "chain": [
         "https://nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal"
-      ]
-    },
-    "ayodonor.pmi.or.id/index.php": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-15T23:17:30.732Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/index.php"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-flood-8025:pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-15T23:17:30.732Z",
-      "chain": [
-        "https://www.pennyappealusa.org/campaigns/emergency-alert-flash-floods-hit-nuristan-afghanistan/"
       ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
@@ -2758,34 +2714,91 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-16T19:00:06.803Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-16T19:00:06.803Z"
+      ]
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-16T19:00:06.803Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
-      ],
-      "checked": "2026-11-16T19:00:06.803Z"
+      ]
     },
     "redcross.org.mm/donate/donate-now": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-16T19:00:06.803Z",
       "chain": [
         "https://www.redcross.org.mm/donate/donate-now/"
-      ],
-      "checked": "2026-11-16T19:00:06.803Z"
+      ]
     },
     "redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-16T19:00:06.803Z",
       "chain": [
         "https://www.redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA/"
+      ]
+    },
+    "indianredcross.org": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.indianredcross.org/"
       ],
-      "checked": "2026-11-16T19:00:06.803Z"
+      "checked": "2026-11-17T03:26:05.310Z"
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
+      ],
+      "checked": "2026-11-17T03:26:05.310Z"
+    },
+    "go.ifrc.org/emergencies/8073/reports": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8073/reports"
+      ],
+      "checked": "2026-11-17T03:26:05.310Z"
+    },
+    "local4:ifrc-earthquake-8060:support.savethechildren.or.id/donasi-gempa-ntt": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Indonesia\"",
+      "chain": [
+        "https://support.savethechildren.or.id/donasi-gempa-ntt"
+      ],
+      "place": "Indonesia",
+      "name": "Save the Children",
+      "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT",
+      "checked": "2026-11-17T03:26:05.310Z"
+    },
+    "local4:ifrc-earthquake-8060:human-initiative.jp/campaign/nttearthquake": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Indonesia\"",
+      "chain": [
+        "https://human-initiative.jp/campaign/nttearthquake/"
+      ],
+      "place": "Indonesia",
+      "name": "Human Initiative Japan",
+      "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
+      "checked": "2026-11-17T03:26:05.310Z"
+    },
+    "local4:ifrc-earthquake-8060:barnabasaid.org/us/latest-needs/please-support-christians-after-devastating-earthquake-hits-indonesia": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Indonesia\"",
+      "chain": [
+        "https://www.barnabasaid.org/us/latest-needs/please-support-christians-after-devastating-earthquake-hits-indonesia/"
+      ],
+      "place": "Indonesia",
+      "name": "Barnabas Aid",
+      "title": "Please Support Christians After Devastating Earthquake Hits Indonesia",
+      "checked": "2026-11-17T03:26:05.310Z"
     }
   }
 }

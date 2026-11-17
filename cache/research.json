@@ -168,6 +168,113 @@
     ],
     "membersHash": "eonet,gdacs|JP#180d4e6d"
   },
+  "gdacs-cyclone-tc-1001351": {
+    "at": "2026-11-17T03:26:05.310Z",
+    "model": "claude-haiku-5-5",
+    "searches": 3,
+    "summary": "Tropical Cyclone Akvan formed over the Bay of Bengal, began 16 November 2026. As of 17 November it had not made landfall. The India Meteorological Department forecasts landfall on the Andhra Pradesh coast around 20 November as a very severe cyclonic storm. Odisha has ordered or planned evacuations. No damage or casualties are reported yet.",
+    "ongoing": true,
+    "places": [
+      {
+        "name": "Nellore",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Forecast landfall area, heavy rain expected"
+      },
+      {
+        "name": "Tuni",
+        "admin": "Andhra Pradesh",
+        "country": "IN",
+        "kind": "town",
+        "impact": "Forecast landfall area, heavy rain expected"
+      },
+      {
+        "name": "Ganjam",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Collectors asked to evacuate landslide-prone areas"
+      },
+      {
+        "name": "Gajapati",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Collectors asked to evacuate landslide-prone areas"
+      },
+      {
+        "name": "Kandhamal",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Collectors asked to evacuate landslide-prone areas"
+      },
+      {
+        "name": "Rayagada",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Collectors asked to evacuate landslide-prone areas"
+      },
+      {
+        "name": "Koraput",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Collectors asked to evacuate landslide-prone areas"
+      },
+      {
+        "name": "Malkangiri",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Collectors asked to evacuate landslide-prone areas"
+      },
+      {
+        "name": "Puri",
+        "admin": "Odisha",
+        "country": "IN",
+        "kind": "district",
+        "impact": "Named as a focus district"
+      },
+      {
+        "name": "Yanam",
+        "country": "IN",
+        "kind": "town",
+        "impact": "Named in IMD forecast landfall area"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Maximum sustained winds (forecast)",
+        "value": "120–130 kmph, gusting to 145 kmph",
+        "sourceName": "thefederal.com",
+        "sourceUrl": "https://thefederal.com/category/news/cyclone-akvan-bay-of-bengal-east-coast-rainfall-weather-forecast-imd-263072"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "thefederal.com",
+        "url": "https://thefederal.com/category/news/cyclone-akvan-bay-of-bengal-east-coast-rainfall-weather-forecast-imd-263072",
+        "title": "Cyclone Akvan set for Andhra landfall as ‘very severe’ storm; Odisha, TN brace for rain"
+      },
+      {
+        "name": "fredpickhardt.substack.com",
+        "url": "https://fredpickhardt.substack.com/p/tropical-cyclone-05b-akvan-develops",
+        "title": "Tropical Cyclone 05B (Akvan) develops over Bay of Bengal"
+      },
+      {
+        "name": "vajiramandravi.com",
+        "url": "https://vajiramandravi.com/current-affairs/cyclone-akvan/",
+        "title": "Cyclone Akvan 2026, Origin, Formation, Affected Areas and Impact"
+      }
+    ],
+    "membersHash": "gdacs|IN#4a1dddfe",
+    "donationSearched": "2026-11-17T03:26:05.310Z",
+    "seen": "2026-11-17T03:26:05.310Z"
+  },
   "gdacs-drought-dr-1018332": {
     "at": "2026-11-16T07:04:53.455Z",
     "model": "claude-haiku-5-5",
@@ -249,7 +356,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,MD,ME,NL,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-16T19:00:06.803Z",
+    "seen": "2026-11-17T03:26:05.310Z",
     "donationSearched": "2026-11-16T07:04:53.455Z"
   },
   "gdacs-drought-dr-1023877": {
@@ -364,10 +471,10 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "seen": "2026-11-17T03:26:05.310Z",
     "donationSearched": "2026-11-16T19:00:06.803Z",
     "directSearched": "2026-11-16T19:00:06.803Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-16T19:00:06.803Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-15T17:36:05.587Z",
@@ -427,7 +534,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,HT,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-16T19:00:06.803Z",
+    "seen": "2026-11-17T03:26:05.310Z",
     "donationSearched": "2026-11-15T17:36:05.587Z",
     "directSearched": "2026-11-15T17:36:05.587Z",
     "directSearchVersion": 2
@@ -458,10 +565,10 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BI,CD,CF,ER,ET,KE,NE,NG,RW,SD,SS,TD,TZ,UG#d3aabe2f",
+    "seen": "2026-11-17T03:26:05.310Z",
     "donationSearched": "2026-11-16T19:00:06.803Z",
     "directSearched": "2026-11-16T19:00:06.803Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-16T19:00:06.803Z"
+    "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-11-11T18:15:18.314Z",
@@ -1050,7 +1157,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-16T19:00:06.803Z",
+    "seen": "2026-11-17T03:26:05.310Z",
     "donationSearched": "2026-11-16T07:04:53.455Z",
     "directSearched": "2026-11-16T07:04:53.455Z",
     "directSearchVersion": 2,
@@ -1059,10 +1166,10 @@
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-14T21:07:48.595Z",
+    "at": "2026-11-17T03:26:05.310Z",
     "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "A magnitude 7.7 earthquake struck offshore Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026, according to an alert feed that has not been verified. The feed says a tsunami warning was lifted after sea-level changes were detected in several coastal areas. The research notes confirm no deaths, injuries, damage or displacement. The current status is not verified.",
+    "searches": 4,
+    "summary": "A magnitude 7.7 earthquake struck offshore Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026 at 04:58 WIB. The early tsunami warning was lifted. BNPB reported 75 dead, 907 injured and 92,735 displaced by 20 August. Aftershocks and displacement were still being recorded in late August. Recovery, including shelter donations, was under way in October. No report after early October confirming the current status was found.",
     "ongoing": true,
     "places": [
       {
@@ -1070,48 +1177,185 @@
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "epicentre, offshore"
-      }
-    ],
-    "figures": [],
-    "donation": [
-      {
-        "url": "https://ayodonor.pmi.or.id/index.php",
-        "org": "Palang Merah Indonesia (Indonesian Red Cross) Kota Bekasi",
-        "kind": "society",
-        "note": "PMI Bekasi city-branch fundraising campaign for East Nusa Tenggara earthquake victims, dated 18 Aug 2026.",
-        "specific": true
-      }
-    ],
-    "sources": [],
-    "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-16T19:00:06.803Z",
-    "donationSearched": "2026-11-14T21:07:48.595Z",
-    "directSearched": "2026-11-14T21:07:48.595Z",
-    "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://www.globalgiving.org/projects/nttemergencyrelief/",
-        "org": "Human Initiative (via GlobalGiving)",
-        "kind": "globalgiving",
-        "note": "Emergency shelter, food, water, hygiene kits and early recovery for quake-affected families",
-        "title": "East Nusa Tenggara Earthquake Relief Fund - GlobalGiving"
+        "impact": "Strongest shaking; building collapsed, residents fled"
       },
       {
+        "name": "Mbay",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Building collapsed; residents fled"
+      },
+      {
+        "name": "Aesesa",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Strongest shaking; residents fled, minor damage"
+      },
+      {
+        "name": "Riung",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Strongest shaking; residents fled, minor damage"
+      },
+      {
+        "name": "Sikka",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Two dead after struck by building materials"
+      },
+      {
+        "name": "Maumere Port",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "site",
+        "impact": "Two residents died; port affected"
+      },
+      {
+        "name": "Reo Port",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "site",
+        "impact": "Port affected"
+      },
+      {
+        "name": "Ende",
+        "country": "ID",
+        "kind": "city",
+        "impact": "Cracked or partly damaged buildings"
+      },
+      {
+        "name": "Ruteng",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Cracked or partly damaged buildings"
+      },
+      {
+        "name": "Labuan Bajo",
+        "admin": "West Manggarai",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Damaged hotels"
+      },
+      {
+        "name": "Lambaleda Subdistrict",
+        "admin": "East Manggarai",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Building damage"
+      },
+      {
+        "name": "Bima City",
+        "admin": "West Nusa Tenggara",
+        "country": "ID",
+        "kind": "city",
+        "impact": "Wall cracks at sub-district office"
+      },
+      {
+        "name": "Bima Regency",
+        "admin": "West Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Building damage"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "75",
+        "sourceName": "databoks.katadata.co.id",
+        "sourceUrl": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026"
+      },
+      {
+        "label": "Injured",
+        "value": "907",
+        "sourceName": "databoks.katadata.co.id",
+        "sourceUrl": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026"
+      },
+      {
+        "label": "Displaced",
+        "value": "92,735 people",
+        "sourceName": "databoks.katadata.co.id",
+        "sourceUrl": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026"
+      },
+      {
+        "label": "Houses damaged",
+        "value": "157 heavily damaged, 41 moderately damaged, 148 lightly…",
+        "sourceName": "cnbcindonesia.com",
+        "sourceUrl": "https://www.cnbcindonesia.com/research/20260816070119-128-759743/gempa-ntt-m77-masuk-daftar-terbesar-dunia-2026-ini-urutannya"
+      }
+    ],
+    "donation": [],
+    "sources": [
+      {
+        "name": "human-initiative.org",
+        "url": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
+        "title": "Situation Report #2 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
+      },
+      {
+        "name": "databoks.katadata.co.id",
+        "url": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026",
+        "title": "Update Korban Gempa NTT: 75 Meninggal, 907 Luka-Luka (20 Agustus 2026)"
+      },
+      {
+        "name": "en.antaranews.com",
+        "url": "https://en.antaranews.com/news/427204/77-magnitude-quake-in-nagekeo-caused-damage-to-buildings-in-bima",
+        "title": "7.7-magnitude quake in Nagekeo caused damage to buildings in Bima - ANTARA News"
+      },
+      {
+        "name": "human-initiative.org",
+        "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
+        "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
+      },
+      {
+        "name": "dompetdhuafa.org",
+        "url": "https://www.dompetdhuafa.org/en/7-7-magnitude-earthquake-strikes-ntt-mosque-built-by-dompet-dhuafa-collapses/",
+        "title": "7.7-Magnitude Earthquake Strikes NTT; Mosque Built by Dompet Dhuafa Collapses"
+      }
+    ],
+    "membersHash": "ifrc|ID#d3af87fb",
+    "direct": [
+      {
         "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
-        "org": "IDEP Selaras Alam (via GlobalGiving)",
+        "org": "IDEP Foundation",
         "kind": "globalgiving",
-        "note": "Food, water, shelter and medicines for affected families in Manggarai and East Manggarai",
+        "note": "Food, clean water, emergency shelter, medicines and lighting for families in Manggarai and East Manggarai.",
         "title": "Donate to Help Families Affected by Flores Earthquake - GlobalGiving"
       },
       {
-        "url": "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita",
-        "org": "Wahdah Inspirasi Zakat (WIZ)",
+        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
+        "org": "GlobalGiving (NTT Earthquake and Indonesia - Send Emergency Aid)",
+        "kind": "globalgiving",
+        "note": "Staple food, safe water, emergency shelters and health services in NTT and other quake-hit areas.",
+        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
+      },
+      {
+        "url": "https://support.savethechildren.or.id/donasi-gempa-ntt",
+        "org": "Save the Children Indonesia with local partner CIS Timor",
         "kind": "local",
-        "note": "Aid for earthquake survivors in Nagekeo, including a pesantren in Mbay",
-        "title": "Campaign - Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita"
+        "note": "Support for children and families affected by the August 2026 NTT earthquake.",
+        "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT"
+      },
+      {
+        "url": "https://human-initiative.jp/campaign/nttearthquake/",
+        "org": "Human Initiative Japan",
+        "kind": "local",
+        "note": "Bedding, food, hygiene kits, tents and a community kitchen in Sikka and Nagekeo.",
+        "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
+        "published": "2026-08-24T03:26:05.310Z"
+      },
+      {
+        "url": "https://www.barnabasaid.org/us/latest-needs/please-support-christians-after-devastating-earthquake-hits-indonesia/",
+        "org": "Barnabas Aid",
+        "kind": "local",
+        "note": "Blankets, hygiene items and food for displaced Christian families on Flores.",
+        "title": "Please Support Christians After Devastating Earthquake Hits Indonesia"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-17T03:26:05.310Z",
+    "directSearched": "2026-11-17T03:26:05.310Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-17T03:26:05.310Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1490,7 +1734,8 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-16T19:00:06.803Z",
+    "seen": "2026-11-17T03:26:05.310Z",
+    "donationSearched": "2026-11-16T19:00:06.803Z",
     "directSearched": "2026-11-15T17:36:05.587Z",
     "directSearchVersion": 2,
     "direct": [
@@ -1502,8 +1747,7 @@
         "title": "Donate to Support Children Affected by Flooding in Myanmar - WORLDCHEFS",
         "published": "2026-08-11T17:36:05.587Z"
       }
-    ],
-    "donationSearched": "2026-11-16T19:00:06.803Z"
+    ]
   },
   "ifrc-flood-8073": {
     "at": "2026-11-15T23:17:30.732Z",
@@ -1538,7 +1782,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-16T19:00:06.803Z",
+    "seen": "2026-11-17T03:26:05.310Z",
     "donationSearched": "2026-11-15T23:17:30.732Z",
     "directSearched": "2026-11-15T23:17:30.732Z",
     "directSearchVersion": 2
