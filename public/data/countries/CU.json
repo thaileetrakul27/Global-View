@@ -2,7 +2,7 @@
   "code": "CU",
   "name": "Cuba",
   "kind": "local",
-  "updated": "2026-11-18T08:02:19.281Z",
+  "updated": "2026-11-18T17:43:26.607Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "CU:es-419",
@@ -10,78 +10,280 @@
   },
   "articles": [
     {
-      "title": "India y Asean establecen nuevas iniciativas de cooperación",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQU25wOHJBRnFrVUd2MmFjeWptcGEwWHpwdTU0Sl9mS3c5WnJIbVBUUTE1VDF2WTE5bUoyTGsxVnhlM0xlYm9xZDItUnBieEJwaHpPQkc5STlZcm1pazhtV0R6eTg4RktmTm03bjhqcjZUZTRYdTZOb2xIczlzMDc0Ykp2SGUxLW1iaEFsQ1VfVEFJZlBhWENhcEg2Z2xzUW9y?oc=5",
-      "outlet": "Prensa Latina",
-      "outletUrl": "https://www.prensa-latina.cu",
-      "published": "2026-11-18T06:56:39.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "India and Asean establish new cooperation initiatives",
-      "about": [
-        "IN"
-      ]
-    },
-    {
-      "title": "Escuelas de arte cubanas celebran el Día Internacional de los Estudiantes (+Fotos)",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTDFYaVRPb3hITXpoZlhrSW44c3VUZERTUE1oUE1wOWpzZUxoSWVvTW51T3N2T055S2xFSnNHWVZXLWtGdkxBRFBhVVVkNmp3dU9acms5c3FnMktlRDR4dXBtYmp0YThZbHZBN015bE5tQ05QOGhrUmwydFJGbWQybkw0Q1RrRzhBS3V6OFNoSDZhOU1EZ1ZZZ0tsUVBObVNBazdaOVR4RHNOZw?oc=5",
-      "outlet": "Agencia Cubana de Noticias, ACN",
-      "outletUrl": "https://www.acn.cu",
-      "published": "2026-11-18T06:16:56.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "Cuban art schools celebrate International Students' Day (+Photos)",
-      "about": [
-        "CU"
-      ]
-    },
-    {
-      "title": "Cuba establece metodología para incorporar IA en la Administración Pública",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UWlBPUFhuSTliR1NBMk9MeWVTNkY4bDFLa2RjMC11ajRHRlV5aWEzeTNzTmtXX3J6MWNiWVhUdzc2cjhJalRMNVgwNWVqakQ1UU1DZXBVU1RNMjc0STR0UWlIVEFKZlVnYzFjdGtqYkM0eWVJeWlJRmdFT1k?oc=5",
-      "outlet": "新华网",
-      "outletUrl": "https://spanish.news.cn",
-      "published": "2026-11-18T02:45:30.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Cuba establishes methodology to incorporate AI in Public Administration",
-      "about": [
-        "CU"
-      ]
-    },
-    {
-      "title": "Google lanza Ask Maps en más de 30 países europeos para planificar viajes",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLUpsZ0FGel82NTNYYTlWc2k0WUlpVklvdmVRWHpyemh5YlFkajFRaGZrdUJGUnowbEFodTYyMnhaZ240R0ZRdm5MZGpITm9kekNJRXltSnV4alBOcGR2U0xkQjlWRE1sajItSEp5MV9FMGYtak1RQjRwUGNZNTEyWGVsMS1lM0hlaEZVZEFnaGQwTU5yX21hV1o5eFVacER1dEV5NjRyZEtVcmZs?oc=5",
-      "outlet": "Euronews.com",
-      "outletUrl": "https://es.euronews.com",
-      "published": "2026-11-18T06:00:01.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Google launches Ask Maps in more than 30 European countries to plan trips",
-      "about": []
-    },
-    {
-      "title": "La sentencia de Lázaro López: a 190 años del natalicio del Generalísimo",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQb2hIcndmMzJ1ZlBldmlGQ2hSRGlOWEVfV2tBWjRLM245YldrTDFhcVUzS3p6VjZzNE9scmFwV0Y2LXZ2VUI3NlJwMVk1bmVsbjdRbFQxc3RKejVtS3N3MHBRSkxFSko0LWhWVHhhT2RnalpwbmpycmdDM0duV2hMRDNTdlVQT1Y3azR6djNGaWl2cGxpRkRCTmpveEpqMmNOM21YaklKc2kwdzRrWVpMSFI1OGtLMzNCMmF0blhTdW5RZ09UT1VF?oc=5",
+      "title": "De la participación de los estudiantes como jóvenes cubanos en Revolución",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUFZSZHRaclM0MDY0V1IzQXp6S1JxOGZTY0gtSjNVUHktYmtyMHBBSTNFaUZ6a0k5NVhDNXV1eG9YR2hubE1YNUlTNFlyMmVfVEg1RUF3VTk4ZmZkMmlrZ0FoSGlaMEdWWUJSRFVMMmowXzdJWVZMVG9wa1FfY3dSZFU3Z2NkS25NSTFXUTZKMk1ud0NRb2FKMjJpWmtTOUxnWm9PTjJLcVA0R29xTWlWUGZoMHp3eklSc0FhMV8xRnh3UHR0YXNQUzR0Yw?oc=5",
       "outlet": "Granma",
       "outletUrl": "https://www.granma.cu",
-      "published": "2026-11-17T22:11:44.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The sentence of Lázaro López: 190 years since the birth of the Generalissimo",
+      "published": "2026-11-18T15:11:01.000Z",
+      "outlets": 6,
+      "trending": true,
+      "en": "On the participation of students as young Cubans in the Revolution",
       "about": [
         "CU"
       ]
     },
     {
-      "title": "Las violencias machistas no se pueden reducir a una efeméride",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVlVfbnpMZ0FKYTRKblVNTnppQzI0ck1zQ3lLdnozQjhNbjhWdS1xZ2pWQUtuanhIMFJ6N1JBUEh3cnp1cEdmTEZjSEZWLVYzWUtIR241TmdfYko3UjlMSkt3OVZYM0FBTWZ0MmdsaFB6RWFXOTlTaVdqMjJXTXFqWXN4TWdLYkxWdmRpcVF2YkpRY2lFdWc0c0tMRG9zd3BJNmxtNHZMMG1YVzNocHAtVWpQNERLeG5nUzRIeTV4RQ?oc=5",
-      "outlet": "Cubainformación",
-      "outletUrl": "https://www.cubainformacion.tv",
-      "published": "2026-11-18T06:00:00.000Z",
+      "title": "Unión Eléctrica de Cuba pronostica una afectación de 1 790 MW en el horario pico",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUHhXUTdYd3hZYVJPOF9lT1ZJUTFpUUZWQUl4SDB0Umd4RWctN3E0TVY3MU5vRmlqdjdyczZURXVaSXBwY3h3N3loMHEzdTlKclp5UWVsYW1oa2pGbjlyWW81ejJFRE1FVTlGSUtXX2EzMllzWnM1bVhwTGVGWmlYanhvZl9zR19hZ1pFWU5iQVp2TzREeERLTmtwc3o3ZDhLVWtnRWwwVk00clY2NHNqb3RRTmsxbVRLN1l5aFk2ODhfdHlLSkE?oc=5",
+      "outlet": "Juventud Rebelde",
+      "outletUrl": "https://www.juventudrebelde.cu",
+      "published": "2026-11-18T15:22:08.000Z",
+      "outlets": 6,
+      "trending": true,
+      "en": "Unión Eléctrica de Cuba forecasts an impact of 1,790 MW at peak hours",
+      "about": [
+        "CU"
+      ]
+    },
+    {
+      "title": "De ‘GTA 2’ a ‘San Andreas’: los siete Grand Theft Auto, del peor al mejor",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdkhLSk4xck1HdVBVUDV1b2NVcENVRzVMYjJHbER3SzA4Tkp5aHpmNE05NG85WjBYVDVqelVZQ21sNXBGMEFHbWtxN3E3WXFGeVBES1hvaTBFbXhNakhnTDJ2OURCN2xKYW4yY3JaYmJEbHJVSHkzampub0tsZlp5b1lTRkVZVDBmUEQ2aF9JbFBTemJQOU5HbUd0bFFvTGVXSGlHN0lEMXNISjlNZGZj?oc=5",
+      "outlet": "EL PAÍS",
+      "outletUrl": "https://elpais.com",
+      "published": "2026-11-18T17:00:24.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Macho violence cannot be reduced to a commemorative date",
+      "en": "From 'GTA 2' to 'San Andreas': the seven Grand Theft Auto games, from worst to best",
       "about": []
+    },
+    {
+      "title": "Máximo Gómez: De Baní a Cuba",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBZV3dyVWlKY1Q1YjZNRjZjSkZaMGN1YWRNSVhOTWFFaDhGTnl3THdZNUl5ZmhScGRpcFMycVVvN3VRcXJJY2ZrbnBIcy1BVGN5Z2JHWFNlTFFaWVA1SG9GOA?oc=5",
+      "outlet": "La Demajagua",
+      "outletUrl": "https://lademajagua.cu",
+      "published": "2026-11-18T11:59:22.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Máximo Gómez: From Baní to Cuba",
+      "about": [
+        "DO",
+        "CU"
+      ]
+    },
+    {
+      "title": "Un equipo de astrónomos observa por primera vez una fusión estelar completa en la galaxia de Andrómeda - UB - Universitat de Barcelona",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOV3VRalNOX0RVYTJGYTByMHB5aTVRS014ZkNIUWdtZUNhQXFLRU8ybkZMa1lEd0ZzWWh3MDlUNUR5Z3dvV2ZCM09odjk0bm0xanliYjVRTnBSQnUzNHZTT1cycHR3YVVIWDBrY2k0TExybnM0THRvX0RVaG85M3JZWW9WWjJYR2s2ZUVzY0tLLTdvQQ?oc=5",
+      "outlet": "UB - Universitat de Barcelona",
+      "outletUrl": "https://web.ub.edu",
+      "published": "2026-11-18T16:13:57.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "A team of astronomers observes for the first time a complete stellar merger in the Andromeda galaxy - UB - Universitat de Barcelona",
+      "about": []
+    },
+    {
+      "title": "La fiebre de GTA 6 amenaza con dejar oficinas vacías en EEUU",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOVlkWTlrX2owelFqWEx2NTZmRFE0Sm56WjVJU2d0cFBlWWRlT2V1c25KNUp3aTlhanJKeFM1MUlrRmFwYkRnWTZLLURpZ2NRZkJycldfOWxfWkhEblpzNU1LOXJvNmRTbWRfUlp5Qi1IaUNaSjlVOXRST0MtajdFM0t0UXZSTkZSQnfSAZIBQVVfeXFMT3RrZks2eEt0MmpUaUNSUTdzMjk4eTA1TnZSVUg1UnF0ZXRMR0U5bWE5ZUN1eFExQ0VNejVnUm8wOHZfVXNrdThyckJvblFWN0daeS1TOE5kb2lyWmRfZkJPYXVvRjJJUVlDOC1yR2FzR0xKa2dKSjFpTDlqbnBBblc2VHp5MVJlaGJUclBva2ZXblE?oc=5",
+      "outlet": "Telemundo Dallas",
+      "outletUrl": "https://www.telemundodallas.com",
+      "published": "2026-11-18T16:00:33.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The GTA 6 fever threatens to leave offices empty in the US",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Trump, Xi y Putin preparan el terreno antes de su inédita cumbre en China",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNLXBLTDRZd1doWlQwM2lqeElTamRFb2JXXzduZjc3cHhOSUJadE5tb1dDU1NkMHZObmtYOUx6WnhoaF9BeHl1Sno0VHNUd2IyLUt1ZnFxbGpRT3pRaDhMdjhtcXVDQVV0a2VZUWF2b2N3dU1GcXZKZE5jRnJWSHNsUV80cEZKTmQ5V3hfQ25TQm5Td3hvTHQwSUxZbUk4cU5JS2JJM29uZzJNdnFDWXNnOTRTVQ?oc=5",
+      "outlet": "China en las Américas",
+      "outletUrl": "https://chinalasamericas.com",
+      "published": "2026-11-18T15:11:54.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Trump, Xi and Putin pave the way before their unprecedented summit in China",
+      "about": [
+        "US",
+        "CN",
+        "RU"
+      ]
+    },
+    {
+      "title": "Presidente vietnamita se reúne con Putin en China",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObzNmeEl4ek9FT19VNHlFWkR3R1F6Z0pqenBxeFdyQUJrRHNINzJxaGdTcy0tUDltQXNzT0xsVl9OT1doXzlxb0RUWnRlcld6ZW5iUlR0THNJcWRVdVZpbFJ1cTROOGMxWkdvdzY0R2U2dkZ1ZzdyTHVpRDY5bFdrd2ROazU1dzdzbzZrYkZJUTMtYndp?oc=5",
+      "outlet": "Prensa Latina",
+      "outletUrl": "https://www.prensa-latina.cu",
+      "published": "2026-11-18T15:38:00.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Vietnamese president meets Putin in China",
+      "about": [
+        "VN",
+        "RU",
+        "CN"
+      ]
+    },
+    {
+      "title": "ONU y embajadores constataron proceso de desarme en Tigray, Etiopía",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTFNmczNyaExhS3QyNENJbGtqbEJLc2VMRGd6NTlkZ05VS3poX1BicEhpdURqREVmY1JPWWtiVmVRR3ppMHBxMTZ6NjJxUGM0OE1LN211ZFpPd0tYRFJkN2tpMUVEWkdyME9CVmJhRVdDNHc3NTEzU2FiSy14RmN2M3EtRjRxbzRtMlZKZXotcGZVeTVDWnRvc2ROQXduVjd1LVpYWnpidkxzdnc?oc=5",
+      "outlet": "Prensa Latina",
+      "outletUrl": "https://www.prensa-latina.cu",
+      "published": "2026-11-18T15:10:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "UN and ambassadors confirm disarmament process in Tigray, Ethiopia",
+      "about": [
+        "ET"
+      ]
+    },
+    {
+      "title": "Escritores y artistas de Cuba refuerzan proyección internacional",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVlF4RndWRFNhSHlMdURUM1o4S3NJRmRtaWNjTnZRdnRDdG5aUWZnR2tlUFhKZ3czNUtuNTViMXFjUTR0ejNpTFg0Mkk5REFQVE9oejRiZlk4QXoxbHRKb0E1alJBSTU1Z0dLVmVxaGNrdXVDcXJsYmRSa1ZFVGxvNk4zaXdxcmpGQzZQVjNtMDV1Zm8xeXUycV9ad3haQW5ZOVl0SG5tcUU?oc=5",
+      "outlet": "Prensa Latina",
+      "outletUrl": "https://www.prensa-latina.cu",
+      "published": "2026-11-18T15:52:00.000Z",
+      "outlets": 2,
+      "trending": false,
+      "en": "Writers and artists of Cuba strengthen international projection",
+      "about": [
+        "CU"
+      ]
+    },
+    {
+      "title": "GTA 6 ha generado más de US$ 1.500 millones antes de que nadie lo haya jugado",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOckNPcGppMVM0SWNVSm1najhleU5jdTFHX0UwbWxjNHNkMXpWYkxsNXM1cEplZzZ5RW5mdHhvcE1VZXBBRHBubG9iYzNqZHljQnlGbDAzRTgxb3psTjY3YXA5U3RFaXZzVVdJVDllVm5LeGRXMFFBMi0xanlnX3JJa0RxRlhqUkpiYlVvaWl0LTlSZFFlM05ZTjNwSnRiTE0?oc=5",
+      "outlet": "CNN en Español",
+      "outletUrl": "https://cnnespanol.cnn.com",
+      "published": "2026-11-18T15:13:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "GTA 6 has generated more than US$1.5 billion before anyone has played it",
+      "about": []
+    },
+    {
+      "title": "Manila, Yemen, pensiones y alpacas… las noticias del miércoles",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8zUnljT0dfMVdSbWJxVWgxT2RQd1ZTUEc4YU1pbEplSTN4eHVDZFhwNE5iaXN2ZF81ZFlUQ0dhc3BYUnF0aUtHOEpVU1RqLWpXMkxROFg1WQ?oc=5",
+      "outlet": "UN News",
+      "outletUrl": "https://news.un.org",
+      "published": "2026-11-18T17:17:42.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Manila, Yemen, pensions and alpacas… the Wednesday news",
+      "about": [
+        "PH",
+        "YE"
+      ]
+    },
+    {
+      "title": "Santiago busca oportunidades en FIHAV 2026",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUjBOVUJzVlF1SnVwa05NZm1PeHA5eWt2ZjRhZ2VTRjhlTWZydG9YX2VGRDNNeHhkdVNLSXRVbnVpM1gxUGdfQmFPN3k3OXBXZTYyOEhTREgtdGkyaGE0M09tTENuNFZMblVrTVljd0JuMTE4V3ZDTi1BZ0lndWYyN0kxRXdhTUZla3hlblItNEMtUDA?oc=5",
+      "outlet": "Juventud Rebelde",
+      "outletUrl": "https://www.juventudrebelde.cu",
+      "published": "2026-11-18T17:13:33.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Santiago seeks opportunities at FIHAV 2026",
+      "about": [
+        "CU"
+      ]
+    },
+    {
+      "title": "La Cintumbare fue detenida por la policía en La Habana",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUGpCQTFvWkZXdEhnV3E3OFBxRW9tX3prWVZjazRwMWtCZEIwN0pDcGI3dl9lSTlmcVk0d1VqN2NzeEFlUEs3akR6dmNCU1NzMXNSXzZkN2dRNHJ3bjlzNl9yMEhZalNxd3FDRHNCeGFWTjJSSjRHYVBUOEN4M2ZhTnJBNHk5eHd5QXRxSnhpRWY?oc=5",
+      "outlet": "Cubanoticias 360",
+      "outletUrl": "https://www.cubanoticias360.com",
+      "published": "2026-11-18T17:15:04.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "La Cintumbare was detained by police in Havana",
+      "about": [
+        "CU"
+      ]
+    },
+    {
+      "title": "El euro vuelve a tocar la puerta de los mil pesos en Cuba",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ1ZZSkpBRnNjS1hCNVFaUXY5czFBUE9oamoyRkFIRmFUUVZQT1V6R2dkXzF3dGVhcW5tUjI0UTJMd2dxbDF5Y1MwYWxFQ2tLQndEMFVYM2ZPVHFxR0NLdG93dnRNS2k3NWhnYW55Y3NyWWY3R1U3dlhFOFVEQWJJUFRNcEZQY0hqNm9URU5raDF6a1dCaS0zLWl3aW9melpoWnh2V0JUbENIQ0I3WmpEdXJOQdIBswFBVV95cUxQZ1ZZSkpBRnNjS1hCNVFaUXY5czFBUE9oamoyRkFIRmFUUVZQT1V6R2dkXzF3dGVhcW5tUjI0UTJMd2dxbDF5Y1MwYWxFQ2tLQndEMFVYM2ZPVHFxR0NLdG93dnRNS2k3NWhnYW55Y3NyWWY3R1U3dlhFOFVEQWJJUFRNcEZQY0hqNm9URU5raDF6a1dCaS0zLWl3aW9melpoWnh2V0JUbENIQ0I3WmpEdXJOQQ?oc=5",
+      "outlet": "CiberCuba",
+      "outletUrl": "https://www.cibercuba.com",
+      "published": "2026-11-18T15:20:41.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "The euro once again knocks on the door of one thousand pesos in Cuba",
+      "about": [
+        "CU"
+      ]
+    },
+    {
+      "title": "Pensiones en Cuba: cuidar a un familiar dependiente y combinar trabajo estatal y privado tendrá efecto en la jubilación",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9UenJQNFUzcTdhWnY4UXkydHdKVkc5c2lac2xrbWZWQTdocHVxdVlwQXI1d0J0VlgycHhNdWlnLUREVEY5UVBQaFAwMm5xZU12TExuei1DcHY0NkZ5MjRJNmVZS3dDLXlYelQ2eXdGRnl3VUp4Y3c?oc=5",
+      "outlet": "elTOQUE",
+      "outletUrl": "https://eltoque.com",
+      "published": "2026-11-18T16:44:49.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Pensions in Cuba: caring for a dependent relative and combining state and private work will affect retirement",
+      "about": [
+        "CU"
+      ]
+    },
+    {
+      "title": "Cubanos en Campeonato Mundial Juvenil de Ajedrez en Venezuela",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQnRHdHlsdlhWTTJlXzZYd3JVaG5BVGZ0cHdEX051VDh6Q2FiYnQtb0ZQVHZkSlFHbmFlS0tmdV9wQU5neWgtZnBSbUd5c1VlVjhmbjhTT1lqWkNFczB2eW1ralhDM0VVRTg0RHF5MkV6T0luUjJsOUNEMGcwUERRUVVMcmNkR2EwOU10SHRR?oc=5",
+      "outlet": "Radio Habana Cuba",
+      "outletUrl": "https://www.radiohc.cu",
+      "published": "2026-11-18T14:04:59.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Cubans at the World Youth Chess Championship in Venezuela",
+      "about": [
+        "CU",
+        "VE"
+      ]
+    },
+    {
+      "title": "Díaz-Canel destaca la importancia de fortalecer la atención a la población",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOX0FWb1RKZ1drRGhwSWhZalR4cVhEdVJyOWJXNXJ6ZFo5NTc1eEoxSWE2M3Z3UHpUNWdtZHptVzdEc3AxM3o5WGY1WTgzVVZCOTlfQlFiRl9uVTZhMXVXbHhTOVhuLVBZYUFfMC1VaG5OSGl1d3hzdHE4N1BDTm9rR1RneE1KRU9LLWVFOERIUzlRNkxzWkd6bzRKZnMwSFVmZnprdnFDQkJMemw3dVgxVk5pVURYT1hzWHUwR2U0dzk0MFJoZ3pUN3NfeEQ?oc=5",
+      "outlet": "Granma",
+      "outletUrl": "https://www.granma.cu",
+      "published": "2026-11-18T15:11:49.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Díaz-Canel highlights the importance of strengthening care for the population",
+      "about": [
+        "CU"
+      ]
+    },
+    {
+      "title": "Las noticias del miércoles 18 de noviembre de 2026: Reunión trilateral entre Trump, Putin y Xi",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNLWJrcGN2dThodzVwcWxwZWdxNjhjV3hsajd0SEZlVExXbEdERER0R0NLR053cmxKY1FCcFFMT21YU0s0OVV2MGRuOFlQUi1oMVcxcWZibDhFNGk2djBIQ0lSYmFpcEpKY3dXU1h6V05keFdOai11WERrV3JxYWlTd1RnU2RseDFJemlSYVEyMy0xdzNvdnZKamo3NjRfU202dU9weklWdE5LVW5mMjA1dG9nX056TFB2TldPeVJ2YmZZeW8?oc=5",
+      "outlet": "Euronews.com",
+      "outletUrl": "https://es.euronews.com",
+      "published": "2026-11-18T17:00:41.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "The Wednesday news of November 18, 2026: Trilateral meeting between Trump, Putin and Xi",
+      "about": [
+        "US",
+        "RU",
+        "CN"
+      ]
+    },
+    {
+      "title": "Una encuesta dentro de Cuba revela lo que muchos piensan de Díaz-Canel y el régimen",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOU1l4MzY2SGpYUi1iZEp3cmZfUWMydEw5OERHNktRbHBwWXdUa2Zpd19sYkFIelBrU2hjRVNxWDc5aldMLWRrR3BxaXRHM2dZV2tXQXJjc1NxNm5UM21TcjljWjU5S18xQmp0dlZaV0FsdFZKd1owckZRZXpYdkVZVFJYbU5OMVNXLU1kRkotRGFQZzFzYkMwa0FaUzBsQmhzanVqSzlXTDBVYTNRYlREU1RKUmNlVGpmcHhTRXlB0gG-AUFVX3lxTE5TWXgzNjZIalhSLWJkSndyZl9RYzJ0TDk4REc2S1FscHBZd1RrZml3X2xiQUh6UGtTaGNFU3FYNzlqV0wtZGtHcHFpdEczZ1lXa1dBcmNzU3E2blQzbVNyOWNaNTlLXzFCanR2VlpXQWx0Vkp3WjByRlFlelh2RVlUUlhtTk4xU1ctTWRGSi1EYVBnMXNiQzBrQVpTMGxCaHNqdWpLOVdMMFVhM1FiVERTVEpSY2VUamZweFNFeUE?oc=5",
+      "outlet": "CiberCuba",
+      "outletUrl": "https://www.cibercuba.com",
+      "published": "2026-11-18T16:59:58.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "A survey inside Cuba reveals what many think of Díaz-Canel and the regime",
+      "about": [
+        "CU"
+      ]
+    },
+    {
+      "title": "Sudán: terribles ataques con drones de las RSF contra civiles - Amnistía Internacional España - Derechos humanos",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOb2ZJLXdObUtBNi1UTEhYNnRHQUNyQUkzQ19SZU1HVWdZbXZfcFQ3blNFdlE4ZHIyRmd6ZnBRcHlZWkE0a0RySDR4RlNMRmhsMS1BakV5TGExc2h3WWt2U1hvUFJaamJscWZfR2wwa05LNy05M3hjWEpxRGhkVFROdWotLWFhLWN4MDAwamtmVmRhaHRkT05VUklhNFVGZk9EMzZxUkd2WE5ORjhsUTRZQlhKNFU1aDBfZ3hWa0t2Z24tZ05BdnRNZHhWMk9QbzAwbTVsb2RfSEUwQ0IydzEwVFlqX0FoQjhPWW9ZY1RhcVZDT3F1SWhfdHUySXI0SVNSbzVEUDhjUjJWczJUX2xRbmFuZ3BkX0U?oc=5",
+      "outlet": "Amnistía Internacional España - Derechos humanos",
+      "outletUrl": "https://www.es.amnesty.org",
+      "published": "2026-11-18T15:38:48.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Sudan: terrible drone attacks by the RSF against civilians - Amnesty International Spain - Human rights",
+      "about": [
+        "SD"
+      ]
     },
     {
       "title": "Díaz-Canel en Pinar del Río: Hay que innovar, hay que hacer cosas distintas para seguir adelante (+Audio)",
@@ -97,297 +299,112 @@
       ]
     },
     {
-      "title": "La voluntad de educar en tiempos difíciles",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPT3lLcmVURDFCSVV6cXY4cWpaXzluZno0c3lERmVNZW0zV2ZyUm5ncXl5M1F0Y2p2cXhQenpDQ3FRM3AzcEg1S0RoRmVOVl81ZFZpdjFTbW5tTmlTX3p3cTdPVmE2c2pMc3VUeDRzSkJkR2l1SW9QclVMU29ocmJsOWJYV3dIVUl6ZFp4SUFYZw?oc=5",
-      "outlet": "Vanguardia.cu",
-      "outletUrl": "https://www.vanguardia.cu",
-      "published": "2026-11-18T06:12:04.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "The will to educate in difficult times",
-      "about": []
-    },
-    {
-      "title": "Arrestados cubanoamericanos Cubanoamericanos en protesta contra el bloqueo en Congreso de EEUU",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQUlTMDVpRWhXeXBQVS03RW13VHFrSXh5cnJjc044SGduNVF3YjF0QkgtNmZXTWJscEp1TnI5VkNISFhoS2tRUzJ5VG9NRTV1VVlvdWx4dnZMbm9yUmdOOXFQWE5ja2sxV2l2SWhxOWp2azBpZ2JGYVBpYkpsTDZmc2p2dW5URndRZEZHV1VERnhHT05namktN3pUX0N2dnNLcXF3NkdEMnVVM0Rad0wtSEpZYkM0RmhpdUE?oc=5",
+      "title": "Impulsan en Granma proyecto vietnamita para la siembra de arroz",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUllETWQ1aUwwOWMwUUxDZEpMQkZPS0s1bDZjNVlHcEtxcmYwSW0wcTRJRUIwRHR4YjItQjRvQ3I4TEk1Y3pJeWlGb19haENWS1pzNGlYRW1NaFhNSm9jY010dVg3UlhZRXRsM0dsQ1NxNDh2RU1HaUZnRXhXS0xmcGlqODVJbHBZdXFYUGtfR28?oc=5",
       "outlet": "Radio Habana Cuba",
       "outletUrl": "https://www.radiohc.cu",
-      "published": "2026-11-18T06:11:52.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Cuban-Americans arrested Cuban-Americans protesting the blockade in US Congress",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Maximo Gómez: Cubano ciento por ciento, mil por mil",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdm1KYm95NzZNTlYzMDkxbV9RRFpaeVoyWXpwaW9EdFVzYUx4dW1FamFyZTN1enltczFTS2tDRHZLeTlyZDRWSEREYWd6aHpBeURvNXBaTnJmdndrZkg1Mm9NY3lMNm9mUVREdF8tdXd4Qm9Cd0VtWTNRZkExRGpJa1FJMGZ4SjYtbERBOUl3?oc=5",
-      "outlet": "Cubahora",
-      "outletUrl": "https://www.cubahora.cu",
-      "published": "2026-11-18T06:01:31.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Maximo Gómez: One hundred percent Cuban, a thousand percent",
-      "about": [
-        "CU"
-      ]
-    },
-    {
-      "title": "Mañana en Criterio Compartido: La falta de respuesta de las instituciones a las quejas de la población",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZm5DTFBUekNTeGpGYmhYb0lTdWZoby1ha1NHNzgwWEh2d1VJM1RKOHNyTm14RERSYjNNT25Id0FiRUN3azdvR2hvMUMzaHVmSHFfLWE5N00zYzkwdEZqLVRIYUxhN1BIRWEwakhncXd4MWJxV3F3WkJWczZMTEprQ2RZZjZPWlFlRllKVTBGTHVoWC1NVm92TWhaYkk4SXB6ZnkwVmkyVGpqZHRJaU5SX21qUXNvUkZSbUVsWGE4VFZSMEt6M2JEZlQzUjczOWZPNVFVYS1aVUg5eXN4LUw5UtIB5gFBVV95cUxOV2ttR0Fpbkc2UXViOFNSeGZTb1dIbVBpd3hLbFpFWjczWDg3VlI5Wm5WYmU5STFVUnBhclUzUGo5NkNSa2FIUmd3QUJ6bndmeU1pUDlfb25nRF9CRktBUzE0OFBEdmstSnFQc3J1TlhwYi14VmtQNmw0d1pYMmZDbHp1cGpKV2M4VldnVTFLMVBySGw4cXl4S0pndDJzNlNITUd3RzVuWHh2Vm1iMmE5ZDh3S0w3YmZoTDFtdXlNRUtTZ2NkY1pMZWVkbnFEbTNpM1Bxd0c2WFYyTVhTTlF2Q0Nnc1BTZw?oc=5",
-      "outlet": "Cubadebate",
-      "outletUrl": "http://www.cubadebate.cu",
-      "published": "2026-11-18T02:06:07.000Z",
-      "outlets": 3,
-      "trending": false,
-      "en": "Tomorrow on Criterio Compartido: The lack of response from institutions to the population's complaints",
-      "about": [
-        "CU"
-      ]
-    },
-    {
-      "title": "EE.UU.: la debacle republicana y el mundo",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTVVLMlZBenljUkRzX19wZDZseEMtTjVyRXZRNFo0Z1h5d2QxRFFwLWlPZVdKbTBSTVhjMy0wdWdtQlg2b0h1bDBNX1Z5c3dFZUh1NHlTeXhRNzYxbzBnZ1NCQkh2LVN5ckxKcU1PQk9NNGNNUmtpMDV4Tzk5Z1BwcDRMTTZtSm5XTUVjZVpQbVV2SUtjVXViTnpiN252UdIBowFBVV95cUxQcTcwbEZXV19xY01RcUxvLS1YWjh1c3VieG9tLVNsdFZFSnJvNFdnNDJ3TV9RZ0JFbTJmcXI5dUcybXo0Mm9mM05qMEZqRmV3N25FSkt1LXE0VlVvbzJkN0Z0bE5hblh4LTVGSGFrTk5SeFR3YlNpdEE4WWlnemQzNzBocS1VTklkdVFPa05nWFlGOC1EanNaMldCT0t1ajU5RXY4?oc=5",
-      "outlet": "La Vanguardia",
-      "outletUrl": "https://www.lavanguardia.com",
-      "published": "2026-11-18T05:00:00.000Z",
+      "published": "2026-11-18T15:34:44.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "US: the Republican debacle and the world",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Cepal divulgará en Chile Panorama Social con foco en las pensiones",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWFdqbDJ1dXhTWEowNEEzWExyM0ZzR1BjelBZMHcxT3VGT3dPSHIyck5pa1RnblJOdTV1WElMNDBwOXVpcHZOb2dMSURmWkN3ZHpKemY0WE0yYVhNOGhaYzYya3JBZHZqZ0JwSDdTMzhpNlRPUTJENHRoNjlfNGRGTzJEREhEVWVXVE8wZWhIU2NfNHVQQXpYMHhkTnpNd0FYXzhRQWRLaGZIU19wVVE?oc=5",
-      "outlet": "Prensa Latina",
-      "outletUrl": "https://www.prensa-latina.cu",
-      "published": "2026-11-18T05:42:12.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "ECLAC to release Social Panorama in Chile focusing on pensions",
-      "about": [
-        "CL"
-      ]
-    },
-    {
-      "title": "Máximas autoridades de la provincia recorren instalaciones del centro de la ciudad de Santa Clara",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWjM1RGVRa054bGNmS2ZUS1pmOEVRd2E3d0lBVkQwNjAyQ0FwMnh6cjduNm90bEJZVGpQclJacE5FV0d3T28yd1c1em5PbnFuUDdzNEE5ZlVLN3Exd1R0TXRDWndfY0FyY1R6R3F2OGNLOXlHLXN5eHoxRXdWM3NONUlOeTlTUjVvcmxpQnVualBUUDE1MzViQzF4Wk0tblJVUkF0Vmdrd3RqWWs5SVRWbVJnTXppWTVQX2tSQlNxLTQzeTY3UDlsVnRCVkJhMm1VeUZSSXNKb0s?oc=5",
-      "outlet": "Vanguardia.cu",
-      "outletUrl": "https://www.vanguardia.cu",
-      "published": "2026-11-18T06:12:04.000Z",
-      "outlets": 3,
-      "trending": false,
-      "en": "Top provincial authorities tour facilities in the city center of Santa Clara",
-      "about": [
-        "CU"
-      ]
-    },
-    {
-      "title": "ARCTIC presenta las PX-1, una alternativa moldeable a las almohadillas térmicas tradicionales",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNXlCTG5jVFpFRXJxak5JZ2U3enNsc0NYbmRLZE9KSm9qcXg2ZDc0RHFvYVY2aldYem1Kc0Y4bTFaNVY4TVFHVmlNY0RRVVQ3bHFtbi1sWXFIMTlDQzZDYVFYWmU2bUtuWnVVcXY0OExTOUNtQWdHWUFpZ01HZF90VUZDOTRYQzhXbENnNUVMdTdUYzR5SEZ3bG1vT3ZqTWJBT05sRDRPTDIxZi0zUlk1RkFvQzdLMUhTcjNCMGNlOHdKQ0Y0ZFk1WENHN1pLT0c0SlE?oc=5",
-      "outlet": "Geeknetic",
-      "outletUrl": "https://www.geeknetic.es",
-      "published": "2026-11-18T06:32:36.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "ARCTIC presents the PX-1, a moldable alternative to traditional heat pads",
-      "about": []
-    },
-    {
-      "title": "Presidente de Indonesia llega a Shenzhen para reunión del APEC",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMWhFdEtGN2c0bmFBeHRWZWFhZkdXWnRYTTNyVnBGbWxMTl9mbWY3UU4wNXdtb1hpYkVkYjJJTGtEM1dydTFEQ2NvcXR6Z2dQM3hKcWpMMi1kSWhVNVRleEtLUTE4SjlxaC1wWDZNVmpud3pJRXFRZmo4SWZ1UXhpUjBZRWU?oc=5",
-      "outlet": "Xinhua Español",
-      "outletUrl": "https://spanish.xinhuanet.com",
-      "published": "2026-11-18T04:22:45.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "President of Indonesia arrives in Shenzhen for APEC meeting",
-      "about": [
-        "ID",
-        "CN"
-      ]
-    },
-    {
-      "title": "SpamExperts presenta problemas de acceso a su consola de administración y afecta a la gestión del correo",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQlJIbU9WMndwM0ktWXVTZGFrNnc1MUpfOXMxcEVVN2dyWFpkZ0xqNDhPME55Wkk5bHpVdXZURnVSVEdOQlpEandlRkZIZlp2QzVKNXpnbWlwU2Q5Qkx3TVkxdUhQNzVxdUNpbnVvTWZ0NS1PbXQtN055TUpGVm9yY1pnOHlZZTdJTWRGc05iUkw3N1lJUk1MZ2p6Z3FqNnhiSkJCdDdGZzFmTzVKZmw0c3RwaGxzRWUyVzNpNWpsVnNJeFQ3UkRRdUQ1aE5ONXFoSVYzTmtoT1ZIaVBOaVZaMDdJZlI2cTJO?oc=5",
-      "outlet": "Geeknetic",
-      "outletUrl": "https://pronetic.geeknetic.es",
-      "published": "2026-11-18T06:24:30.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "SpamExperts reports access problems to its administration console affecting email management",
-      "about": []
-    },
-    {
-      "title": "Números ganadores del Mega Millions: mira los resultados del sorteo del 17 de noviembre de 2026, con un premio mayor de $600 millones",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcG9uT2g2WHdWNHcxRE5fTU1yb01KdGdKYlgxNFp5Z2g0Yy1fSGtiQlBzNFl0VU12RnFiengyWFQ5bERyYTF3cFFDRzRRV0xfQlREcVpMa3dhN3BTVHRpVmNNbnJ2NjB6TzhrQjgtMW9yX21EUWlBX3l6QXJUOGp1X3BoWUlTUGJsUnVuXzdJZmt0WEFmbjJWVFplRGNybGx3ckNsQ25meF9MRTNpNml4UUYtc1pKUTFSX0VncDBEYVRHT3VkZ0lCN3ln?oc=5",
-      "outlet": "Univision",
-      "outletUrl": "https://www.univision.com",
-      "published": "2026-11-18T04:10:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Mega Millions winning numbers: see the results of the November 17, 2026 drawing, with a jackpot of $600 million",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Unión Eléctrica estima 1730 MW de afectación para el pico nocturno de hoy",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSHZ5MWREVk4zWkFMTE5RVFY1SG5hbkpfUmNoU2dzUk9EakRfRldKRVVYVXZlQ2QxWDVtSmI1dkRSYjg0YkU5UDJ5eEcyQ2VZT0tiY0Y0VVJ1YmFDR05oUFRqV1lVc1Z3QnJWeXVIRVYwanlqSklwT0tkeDIzV1F2U2xaMjdFamdBY3lsR2FRSmVsQk1CX1JqbWlBNm5OODlnM2hFN3U1bGUwd01Way1DZlZHNlpEVURwbjI40gHAAUFVX3lxTE0xbzYwT2xnNkV2RjBfUEwyWkk2eHZCalZ3Sk1fSWo3cnhnQ2VjcmhwX1lydzQwVGdSdlpJMGdnd1ZjUkNQT3NlUVhUSHpNRHpVWHN5QTJsU01MZlc4WUZLcWVTLXJFaldTd3JRSGxyeTh5MUVGWVRSOGNZN2g5a3VXSHI3cy1HTjRuNEJXeHBTb29XckZ6NlllZ3puRlFYV1R4dGlQZ3Y3V3U3QlJyX3NWeXRCaVBGbHNlaVNZNmhlSQ?oc=5",
-      "outlet": "Cubadebate",
-      "outletUrl": "http://www.cubadebate.cu",
-      "published": "2026-11-17T14:17:29.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Unión Eléctrica estimates 1730 MW of impact for today's evening peak",
-      "about": [
-        "CU"
-      ]
-    },
-    {
-      "title": "La adaptación climática debe ser una prioridad regional. CEPAL",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQREJUai1ENGlhWGFQTkZtVW45RmJ2a1ZudVpIeW0wV0FiQmxNWW5pdTQ4VGtsbWRqTHIwa0pWU3oxMFlBb3V2R0ctLTVQdHV3MFlkbVdQakNTSUlxUWw0VVowcjFHYWpuQUwxelpCeDZuNkVwWUF2Tjlwc3hUNkNILUpTZzZSN2p4TkRxOFdJdkNtUWQxTUN5ZGY4VTJVbzA?oc=5",
-      "outlet": "http://rm-forwarding.com/",
-      "outletUrl": "http://rm-forwarding.com",
-      "published": "2026-11-17T17:15:14.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Climate adaptation must be a regional priority. ECLAC",
-      "about": []
-    },
-    {
-      "title": "17 de noviembre de 2005: Un discurso de Fidel para no olvidar",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNT2tPNmpSTzJYUXh6QzE0Z0RWMFBfQndZV1JaZEw0bUhXRmZ4UzhrVjBoRzNFTXdFU3lMV1VNQ29IdHRtbFUwUTRtaXhQalc2cVh4WUhJMUg3dVJaRVUwb1RsTDcxWTBoZXJ2R1ROamNGZlNnUlZBVURCTE5LQy1WVV9VWTNwc0xvclJWYWFnRVlDcWVrTVE?oc=5",
-      "outlet": "Escambray",
-      "outletUrl": "https://www.escambray.cu",
-      "published": "2026-11-17T15:10:40.000Z",
-      "outlets": 3,
-      "trending": false,
-      "en": "November 17, 2005: A Fidel speech not to be forgotten",
-      "about": [
-        "CU"
-      ]
-    },
-    {
-      "title": "Acer apuesta por paneles VA curvos para sus nuevos monitores gaming de 34 pulgadas y hasta 360 Hz",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTFF5b2kxZHRjQzlMZUQwcXFhTUV0T3g1VFk3UURBaXdISkNPYUJ4SW5Xc0tFUVhuT21JcVpEbDg0VlVFcS16UE8tNHRPazEwM1FCdTNRLVJ4dm5FS21CQzBYUV9DaHdOOEQ0ZUJnb0ZZVVdOMkdialQwUHVuZVo0V3o1aWY3YlhpaGdzV0dWc2hGM1p5T2hfQTVkaEpxR3J1a2s1YkZqRlIzRl9wMGZhMjMzcjZyMXVsaVpyeDFXUWtYT2xqLTFHeHU0eTdYS05mNmF6dHliZ0Q?oc=5",
-      "outlet": "Geeknetic",
-      "outletUrl": "https://www.geeknetic.es",
-      "published": "2026-11-18T05:55:36.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Acer bets on curved VA panels for its new 34-inch gaming monitors with up to 360 Hz",
-      "about": []
-    },
-    {
-      "title": "Presentarán a la Asamblea Nacional del Poder Popular el Anteproyecto de Ley de Educación",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOS2VxY0hESmNLZVUxQVp4ejFNMFFmbTNGTWVZSTNmVjlLbEJ6Vndaam9MVVVKOFpXb1ljcUQwUkdSSzZKWEN1YlphN3EtT1VtUnE1bGpnMDZNNHUwbjFRLVFyU3o3QXRpVVN5YkE5NlI5WE9SZmpKQzhxMWtpbHBKQkdfd1I0UmlKWjZIZUFlN1lyX2J4NzhQQzVjWFZKRWtWVTMzMWxEZzZkNVoyQkdqSXZtNjNZRThkSDJQb2dEWWdvaS1C?oc=5",
-      "outlet": "Radio Rebelde -",
-      "outletUrl": "https://www.radiorebelde.cu",
-      "published": "2026-11-18T02:30:18.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Draft Education Law to be presented to the National Assembly of People's Power",
-      "about": [
-        "CU"
-      ]
-    },
-    {
-      "title": "Denuncia viceministro del Minrex agresión de EE.UU. contra Cuba -",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZnFfTElUdnVBWU8wcmZkdWlVVzdyMmJTQlNIUlp0dDBVSkZQaDJJRDYzTUZYUEdwS1Q0SzlsNTdweW42QmowNVVob251MXR4WGxjc2VIMU5LQlV6bXBlTnJHdFlEcHExcFA0SnBwUmxXdHFtUGJLM3R4RG9YREF1b01BZDZOQ2tmb1BDRGpDRmtjUzRyYnZ0X2JwNkdhZ1QtQ0E?oc=5",
-      "outlet": "Radio Rebelde -",
-      "outletUrl": "https://www.radiorebelde.cu",
-      "published": "2026-11-18T02:30:18.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Deputy Foreign Minister of Minrex denounces US aggression against Cuba -",
+      "en": "Granma promotes Vietnamese project for rice planting",
       "about": [
         "CU",
-        "US"
+        "VN"
       ]
     },
     {
-      "title": "Confirma Irán derribo e incautación de drones estadounidenses",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQazdVNlhJRWxjZjB2TEd0MEZLdHE0WFhLdkhhRFkxM2dSVXN3dG92Ml9yZGdpdHZqdENscEVORnhpNC1PdzFXUnRmcmNLdDNzVElJbDlZZ0NES0tYckZqRGV4aDdxUXJEWDdDMU41bHRkMVlpRUFWTXk3Y0VjYnVkTUxhT3BzcUNhQXdzbUpLcUxFdDBsc09Z?oc=5",
-      "outlet": "Escambray",
-      "outletUrl": "https://www.escambray.cu",
-      "published": "2026-11-18T02:16:11.000Z",
+      "title": "Más de 60 capturados deja nueva megatoma por la seguridad en el Valle",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeUc4Y0FpRkR4Z3Q3dUdBdk5IQWNNUW9YY3kxaldTU004X0F3RTNYWmI4V1pSYy1UbkhuaFc1V25CZDdYUTVMLWtUd3JPYkxaeC15enl6Yk9Ldm85b2JuM2VDZThBMWkxdTgzX1hfcGI2dU82Q2R6S2RaT0JCb3ZCSlEtbnM2M0JaMUVjZHluYmRzYWxzMzdxaml0UnlTVl9pN3VJRTdfaEU4MUo0VDFndjVaekFLNHRIVmNXM3RObmE?oc=5",
+      "outlet": "Gobernación del valle",
+      "outletUrl": "https://www.valledelcauca.gov.co",
+      "published": "2026-11-18T15:24:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Iran confirms shooting down and seizure of American drones",
+      "en": "Over 60 arrested in new mega-operation for security in the Valle",
       "about": [
-        "IR",
-        "US"
+        "CU"
       ]
     },
     {
-      "title": "Llegó el período invernal de siembra de arroz",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPS3dnWnlQWjlkR1JoVU5HMDRLRUdteDVOb2J4N3VqWEUzSnlxSUxNSWs4V19fUDc1dVZTbFJ6V21iS1kzYUozTGtDakxpQy1lTk9UVi1tT1JONHY5dGxJVWowSy1heDZEYXEyQXZSSWZndE9sdWFCak9sWC0xbVotUkZsX3FwUExVdDRfSXp4bHF5Rzg?oc=5",
-      "outlet": "Vanguardia.cu",
-      "outletUrl": "https://www.vanguardia.cu",
-      "published": "2026-11-18T05:24:45.000Z",
+      "title": "El Niño prolongará la escasez de lluvias en El Salvador durante los primeros meses de 2027",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaGZFeG5pVFY5YmZpcXNfUU43cGdiMFYweW9qTjJScGFfUHk5MkV4My1xaFhjb3M2WWpKTnl0QjA0c3RQN3pmLUk4VUVqZU5GUDM0S0xOd2ZxbngtQjBtd3NVQkJlZnVNS2lpY1hNSXB2TWk2dDZWOXdUZkxVMHhqeWdjQk0xUWs2cVRSV0tEbS1KbHZsMXA1Y3FzSGhGNDlkWm04RUtxS2pLWVIzZmN2UTBnVVZfSFl1V19QSkRVWWdkeHRCdUhEdDJGSE1kRUlNTGFuQdIB7wFBVV95cUxNNmR5NDItZ2ZrT25JQThLelRmNW4zQnhwNTZwTEpPRng2ckdURVktdjdGb1gyQ29UMkNObGtBYkhQQ1V1SmJvY25CTDZXUVBRRm1PbGpHaUpDMi02R1MyQUpvSm1fZTNUTDFIN1lXeVVCSHpSLWJad3ZrdzRjcTIyYVp0cDE3V2tRdk50eVdiVnUzeTBkcEViVXZ1ZjFSVmtYRWNPb2FZRHNNUUN5UThjWFVyNTVJUFlCbXp1WmsyVEg2NEtSVnpKSHZUWWV0Yl9pdzZFc2hlQ1BmTWQ5NjAtcUl6QVZVa1hEMTQzS3dnZw?oc=5",
+      "outlet": "Infobae",
+      "outletUrl": "https://www.infobae.com",
+      "published": "2026-11-18T15:02:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "El Niño will prolong the scarcity of rain in El Salvador during the first months of 2027",
+      "about": [
+        "SV"
+      ]
+    },
+    {
+      "title": "Policías franceses expresan su hartazgo y reclaman mejores condiciones laborales",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVGtxdHZYNHNVLXJPeWlKZ3NGcl9LcTFYaEt4VTY2dVdzYXZydFFyNXVtSnY0a3luLXRLRG5hejh4MGM5QzVGVVFMOFl3VTU0S1ktWVhQek9tQU9Ya3ZYWkpLZ0FTbC1LNFdOTWphS1Y2bDNaelg5bjZyNDktYkZONjNqUzRKMFdRSHlpZGVXUThMQVIwRm4wSzVWSkJMdGpGV28xYlE3dGRHdzIyUFNLYWdVSmpiWE5Gdll0cU5Gb04?oc=5",
+      "outlet": "SWI swissinfo.ch",
+      "outletUrl": "https://www.swissinfo.ch",
+      "published": "2026-11-18T14:58:21.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "French police express their exhaustion and demand better working conditions",
+      "about": [
+        "FR"
+      ]
+    },
+    {
+      "title": "Más allá de la crónica roja: robos y asesinatos aumentan en Cuba ante el abandono oficial",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSW5XTzBRdFBYb2tQRkVWeUR2aThtY2stRDhLZGlZT25EZDkxVXVhQzZWdzRCT2pHTU5FRkp1cUUxNmV2ZDNxczVDZnBjLVR1OUNUR01IeG1hdmRvT2p0Z3hBX2VjdVBrZlhLd1A3WVVmdnZvQndHZTkzQTBMdjQycDREYTREb2pnNUltRW5Zay1rNHlfbzJpbXI5MjRscE5zcmowTFlvdmN3M015c2pQMGZGVm51VFprOUhvNzdUbEU4OEdFTTI0cFZlYVBqSGh2RUIwSmo3RURMbV9ldTBDTtIB4wFBVV95cUxNUnF2TVktTE5nZ2FpQ05XY2hwTFdpNVhuRmdva1psTEtEajdvVUI5czlEcHVoY3ZXOVN5dzBmOFY2ZGx0aktjTXdCNlBjQ04wMlhWX1Nja2xRQ2FsLTd6SVAzaHItYlg1bWdmS2NGZXUwV0NKZ05uWjF1MWhtckJKVVo4UzRQMTFoV1dkbWtERnU5T1BmbTVLdzFhU2RCLTFreDZIT3NWMFZJVC1vaXNicmhaM0plWmpKOEtoa0VaVXQzdzJFMElIUk9qejlTU2lXa1dndTRvTVd4cDlvQVp0VVNVNA?oc=5",
+      "outlet": "Martí Noticias",
+      "outletUrl": "https://www.martinoticias.com",
+      "published": "2026-11-18T17:11:48.000Z",
       "outlets": 2,
       "trending": false,
-      "en": "Winter rice planting period has arrived",
+      "en": "Beyond the crime news: robberies and murders increase in Cuba amid official abandonment",
       "about": [
         "CU"
       ]
     },
     {
-      "title": "EE.UU. ensaya en la Base Naval de Guantánamo cómo neutralizar drones ante posibles amenazas",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTVhnNWVPdTJyU01CQWhjYTVmTFFYSFJJM2ZIdjBaV29Yc0VaX1lta3ZVeWVnemhqY0lkalZKVW02YVktcmp5TFhneGFsRk9aLXNZbWtyaWx6X2Y1bFlvZWJMRTZDWU5RZkRlWnZxQmkzT0FjZUZtMDVhVVp4bDRKRFlmbjBlWjZzOW9tZzZTYjBmb1V6XzFrcnNsNWh6cGlrRmNQOE90UXFVaXJlOEU4TGFNZEkzZWMzNmEzRjRUUUdNb2dr0gHEAUFVX3lxTE1NWGc1ZU91MnJTTUJBaGNhNWZMUVhIUkkzZkh2MFpXb1hzRVpfWW1rdlV5ZWd6aGpjSWRqVkpVbTZhWS1yanlMWGd4YWxGT1otc1lta3JpbHpfZjVsWW9lYkxFNkNZTlFmRGVadnFCaTNPQWNlRm0wNWFVWnhsNEpEWWZuMGVaNnM5b21nNlNiMGZvVXpfMWtyc2w1aHpwaWtGY1A4T3RRcVVpcmU4RThMYU1kSTNlYzM2YTNGNFRRR01vZ2s?oc=5",
-      "outlet": "CiberCuba",
-      "outletUrl": "https://www.cibercuba.com",
-      "published": "2026-11-18T02:33:25.000Z",
-      "outlets": 4,
+      "title": "Ataques en países del Golfo tras un bombardeo de EEUU en una isla iraní",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbUtuWnNDR2JINFdjUzRBZVBaSl9qUm5pQ3hCQjdzVEd3OTJCR3BFSnZHNjBSN0I0ckp2cTl4N3NZZVU2VDN0aDhHRzB1QjZOUzgxemc5N3MySnMtNVBTTnM5dmYxLUN5MDJ2WUFMX3lZUGwtRkVIVlV0SXFyUUkxLXBnSkRPSmRVVnJjWVlicVRCRkhLdGNOY0o5TC00NU1kRWZVVzlNdERsNldNOHdlZmJrcnNXa1FSXzBn?oc=5",
+      "outlet": "SWI swissinfo.ch",
+      "outletUrl": "https://www.swissinfo.ch",
+      "published": "2026-11-18T14:43:04.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "US tests at Guantánamo Naval Base how to neutralize drones against possible threats",
+      "en": "Attacks in Gulf countries after a US bombing on an Iranian island",
       "about": [
-        "CU",
-        "US"
+        "US",
+        "IR"
       ]
     },
     {
-      "title": "Basilea (Suiza) vuelve a alzar la voz contra el bloqueo de EEUU a Cuba en su acción solidaria del día 17 (+Fotos)",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxONG92aDRqRDJQYVBaVlRTdGJacG92RjFMbFBwWXcxRjlNSWtrZHVYV1lDSy1YM091QUkxeHo0blpOdHJteGhNclZneGt5NWJZQXZLZlFwTHZQcWVQTkpoLXpIU1k2N1pyRUNwUjZsbHpwMkVyNWdKaXQ0NEU1clVnM2JaQVpHSjFvN1Z2bS1xNl9ZekxCZGhoZmo1UXgyRGZ4TWZCTW1nNlQwZmV0M1EycE4zLVZvVm1ESi1iSlphOHBNZ3YxZl9tMmVmYXJ4Rl9xYzl6TnpfZDgyTk5HUWJDd2t0WGVTRkF2cWNXaHI1dkJPM21uY1E3a1BlOGFmQms1MmNwNQ?oc=5",
-      "outlet": "Cubainformación",
-      "outletUrl": "https://www.cubainformacion.tv",
-      "published": "2026-11-18T06:43:00.000Z",
+      "title": "Embajador del estado Palestino denuncia en La Habana el genocidio contra su pueblo",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPcUZQaGFLNVZqS1E1aXVXRk1mS20zQ3hoUVJRWkI5WVc0RW9UWm1nN1pRa19XdU00S3pFVEliSXZfOE13UG9QSjdTLU50cWE4Smd0NmVUMHlfMnpCa1VKM2tVZTNCRW45MFJyRzhVWFdaMkxRRzdXLUJwSXQ0S0VfUTlReURtMFVzemJYT2VEODdBOV9sNndaSDFvOWktZzR5NktuZTZQVThYc0l3YUpxNkxnaVBJU3hLQ3NiVUpvYXF4LWcyNjFCcWhDU1FKdnBNRGpudTRxbw?oc=5",
+      "outlet": "Granma",
+      "outletUrl": "https://www.granma.cu",
+      "published": "2026-11-18T15:11:23.000Z",
       "outlets": 1,
       "trending": false,
-      "en": "Basel (Switzerland) once again raises its voice against the US blockade of Cuba in its solidarity action on the 17th (+Photos)",
+      "en": "Ambassador of the Palestinian state denounces in Havana the genocide against his people",
       "about": [
-        "CH",
-        "CU",
-        "US"
+        "PS",
+        "CU"
       ]
     },
     {
-      "title": "Encuesta a hispanos de Florida: Rubio arrasa entre republicanos para 2028 y la mayoría quiere frenar las...",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMjZXZUxHaEMzMjUwaUoxOVJRLVVkcGk1LUxrR3M4ekQ4Tl9WYUIxUGRfcE1nUW1Wck5yc1ZEV2d4Q2lfWmZobk44dXVOd2VvZm1EUEl5eXRPUmJNd0p4ZDdqdnVBTVJYU0lDSHFKQjYyNmRoMGR2VFp2anhGVjFCc2lJTUlIN1hwUFBack1EOS1IaGtwYlpQX2dRNDNoMnJqSUVsY1BRWkZwd0hFbVZmajRDUG1pSzNyWU5TUGhGQ3M1MG_SAcMBQVVfeXFMTjI2V2VMR2hDMzI1MGlKMTlSUS1VZHBpNS1Ma0dzOHpEOE5fVmFCMVBkX3BNZ1FtVnJOcnNWRFdneENpX1pmaG5OOHV1Tndlb2ZtRFBJeXl0T1JiTXdKeGQ3anZ1QU1SWFNJQ0hxSkI2MjZkaDBkdlRadmp4RlYxQnNpSU1JSDdYcFBQWnJNRDktSGhrcGJaUF9nUTQzaDJyaklFbGNQUVpGcHdIRW1WZmo0Q1BtaUszcllOU1BoRkNzNTBv?oc=5",
-      "outlet": "CiberCuba",
-      "outletUrl": "https://www.cibercuba.com",
-      "published": "2026-11-18T01:19:23.000Z",
+      "title": "Miles se manifiestan en la capital de Haití para elogiar a Bukele y a las tropas salvadoreñas que combaten a las pandillas",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS0p4clBJUy1OUXlMTk1EbEtMMHJSSkpzMWs1NHFBY1BYdU1UVlhiRDFmZWJlVHdQOHpZeUxwN0lrZWw1dnVIU2pIZ3ZLenpYWkEtZ3g1VTZxcHFVOUE1R3F1dHJzUUZGWlhwRzd3TG5oSVQ4MjZrN1pPY2xDWU9ucjdTd3o1ejRzUEs2UFptM1Zocm9zRE8yOEFWbzdkZDByMzRj?oc=5",
+      "outlet": "CNN en Español",
+      "outletUrl": "https://cnnespanol.cnn.com",
+      "published": "2026-11-18T14:07:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Poll of Florida Hispanics: Rubio sweeps among Republicans for 2028 and the majority wants to stop the...",
+      "en": "Thousands demonstrate in the Haitian capital to praise Bukele and the Salvadoran troops fighting gangs",
       "about": [
-        "US"
+        "HT",
+        "SV"
       ]
-    },
-    {
-      "title": "Los Yankees se habrían puesto en contacto con los representantes de Arozarena",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdDhIQlg1d3lOczFzNzVQWXZ4UG9pWHQ4NkNjYmh2WGljc19fTmk3Y2dZTTVsajJtWnVwWnBPcEt5M09TOF9JMEpFT0M3Znd4NXZfUXYzbGNNeTZiRjE3TVEzLWdfQTJZbFVscG1LMTZHb2pSWW04LXpVb2RMckxYVWJreFluV0ozTHhqelJjWFpSek15WVB3SktVT0l1cHpnVDRLQ0M4Y9IBswFBVV95cUxQVHpKMDMzam9vUlZLOU83SGlaSmJmcWFqcWRtaWpfUkpwbDlGaXdIM3pzMVI3TEtKV1k5djBJZnZfY2RmNXozQ0hXWWFmOUhWN0dPMkNQT2xFNUZDdnowZ3pzb0hJSDk0MnlxZTFwZC1CNzllVFpSZEdDV3ZOOUs5Y21tRkZqN19CZmFoV1hjV283ZjFQaGJkUlhYcXAwTFRpanNxV044MUZOSFgzbW9VMEM0TQ?oc=5",
-      "outlet": "MLB.com",
-      "outletUrl": "https://www.mlb.com",
-      "published": "2026-11-17T21:18:18.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The Yankees reportedly contacted Arozarena's representatives",
-      "about": []
     }
   ]
 }
