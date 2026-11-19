@@ -227,7 +227,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-19T10:50:53.757Z",
+    "seen": "2026-11-19T21:09:40.926Z",
     "donationSearched": "2026-11-18T08:02:19.281Z",
     "directSearched": "2026-11-18T08:02:19.281Z",
     "directSearchVersion": 2
@@ -313,7 +313,7 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-19T10:50:53.757Z",
+    "seen": "2026-11-19T21:09:40.926Z",
     "donationSearched": "2026-11-19T00:51:38.537Z",
     "directSearched": "2026-11-19T00:51:38.537Z",
     "directSearchVersion": 2
@@ -422,88 +422,113 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-19T10:50:53.757Z",
+    "seen": "2026-11-19T21:09:40.926Z",
     "donationSearched": "2026-11-17T22:50:03.877Z",
     "directSearched": "2026-11-17T22:50:03.877Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-11-17T13:58:20.966Z",
+    "at": "2026-11-19T21:09:40.926Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Drought in Karamoja subregion of Uganda, which began in May 2026, is ongoing as of 17 November 2026. Light rains have returned to parts of Karamoja after about seven months of drought, but a Monitor report says more intervention is needed into next year. A UN and partners appeal issued in October says no seasonal improvement is expected. Over 473,000 people are in acute food insecurity.",
+    "summary": "Drought in East Africa is reported as ongoing as of 19 November 2026, according to FEWS NET, which says abnormal dryness persists in the region while rain-driven flood risk rises. No source confirms the alert feed's start date of 21 May 2026. In Ethiopia, IFRC GO reports crop failure, dried water points and livestock deaths in Oromia, Northern Amhara and Tigray. A later report expects below-average harvests and reduced pasture across the region.",
     "ongoing": true,
     "places": [
       {
-        "name": "Kotido",
-        "admin": "Karamoja",
-        "country": "UG",
+        "name": "West Hararge",
+        "admin": "Oromia",
+        "country": "ET",
         "kind": "district",
-        "impact": "Critical acute malnutrition; among hardest-hit districts"
+        "impact": "Widespread drought impacts, crop failure"
       },
       {
-        "name": "Kaabong",
-        "admin": "Karamoja",
-        "country": "UG",
+        "name": "East Hararge",
+        "admin": "Oromia",
+        "country": "ET",
         "kind": "district",
-        "impact": "Critical acute malnutrition; among hardest-hit districts"
+        "impact": "Widespread drought impacts, crop failure"
       },
       {
-        "name": "Moroto",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Among hardest-hit districts; herders seeking pasture"
+        "name": "Oromia",
+        "country": "ET",
+        "kind": "region",
+        "impact": "Widespread impacts, dried water points, livestock deaths"
       },
       {
-        "name": "Amudat",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Among hardest-hit districts"
+        "name": "Northern Amhara",
+        "admin": "Amhara",
+        "country": "ET",
+        "kind": "region",
+        "impact": "Widespread impacts, crop failure, livestock deaths"
       },
       {
-        "name": "Napak",
-        "admin": "Karamoja",
-        "country": "UG",
-        "kind": "district",
-        "impact": "Light rains; households planting backyard gardens"
+        "name": "Tigray",
+        "country": "ET",
+        "kind": "region",
+        "impact": "Parts affected, crop failure, livestock deaths"
       }
     ],
     "figures": [
       {
-        "label": "Deaths",
-        "value": "at least 19",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/7/29/why-is-uganda-experiencing-a-food-crisis"
-      },
-      {
-        "label": "People in acute food insecurity",
-        "value": "over 473,000",
-        "sourceName": "monitor.co.ug",
-        "sourceUrl": "https://www.monitor.co.ug/uganda/news/national/backyard-gardens-sprout-along-karamoja-greenbelt-after-light-rains-5673520"
-      },
-      {
-        "label": "Children under five projected with…",
-        "value": "154,200",
-        "sourceName": "savethechildren.org",
-        "sourceUrl": "https://www.savethechildren.org/us/about-us/media-and-news/2026-press-releases/uganda-child-malnutrition-conditions-worsen-karamoja"
+        "label": "People affected",
+        "value": "over 3.5 million people",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/emergencies/8079/overview"
       }
     ],
     "donation": [
       {
-        "url": "https://www.unicef.org/uganda/reports/united-nations-and-partners-appeal",
-        "org": "UNICEF Uganda",
-        "kind": "un",
-        "note": "UN and partners' Karamoja appeal page; donation mechanism not confirmed"
+        "url": "https://go.ifrc.org/emergencies/8079/overview",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO emergency overview for Ethiopia 2026 drought DREF response; no donate link.",
+        "specific": false
+      },
+      {
+        "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC appeals listing for Ethiopia Drought Response (MDRET042), a DREF operation.",
+        "specific": false
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "fews.net",
+        "url": "https://fews.net/global/global-weather-hazards/november-2026-1",
+        "title": "El Niño is present. Abnormal dryness and drought conditions persist in East Africa, northwestern and southeastern Kazakhstan, and parts of Central America…"
+      },
+      {
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/emergencies/8079/overview",
+        "title": "IFRC GO - Emergency - ETH: Drought - 08-2026 - Ethiopia 2026 Drought"
+      },
+      {
+        "name": "peopledaily.digital",
+        "url": "https://peopledaily.digital/news/east-africa-drought-hit-crops-now-face-el-nino-flood-threat-report",
+        "title": "East Africa drought-hit crops now face El Niño flood threat"
+      },
+      {
+        "name": "global-agriculture.com",
+        "url": "https://www.global-agriculture.com/farming-agriculture/east-africa-braces-for-poor-harvests-after-one-of-its-driest-rainy-seasons-on-record/",
+        "title": "East Africa Braces for Poor Harvests After One of Its Driest Rainy Seasons on Record"
+      },
+      {
+        "name": "cpc.ncep.noaa.gov",
+        "url": "https://www.cpc.ncep.noaa.gov/products/international/globalweatherhazard/Current.pdf",
+        "title": "Global Weather Hazards Summary November 12, 2026"
+      },
+      {
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/climate-risks-east-africa-and-latin-america-bumper-crops-southern-africa-and-asia-2026-08-11_en",
+        "title": "Climate risks in East Africa and Latin America; bumper crops in Southern Africa and Asia - Joint Research Centre"
+      }
+    ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-19T10:50:53.757Z",
-    "donationSearched": "2026-11-17T13:58:20.966Z",
-    "directSearched": "2026-11-17T13:58:20.966Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-19T21:09:40.926Z",
+    "directSearched": "2026-11-19T21:09:40.926Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-19T21:09:40.926Z"
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-11-11T18:15:18.314Z",
@@ -985,13 +1010,13 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-19T10:50:53.757Z",
+    "seen": "2026-11-19T21:09:40.926Z",
     "donationSearched": "2026-11-18T08:02:19.281Z",
+    "directSearched": "2026-11-19T10:50:53.757Z",
+    "directSearchVersion": 2,
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ],
-    "directSearched": "2026-11-19T10:50:53.757Z",
-    "directSearchVersion": 2
+    ]
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-19T10:50:53.757Z",
@@ -1088,10 +1113,10 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
+    "seen": "2026-11-19T21:09:40.926Z",
     "donationSearched": "2026-11-19T10:50:53.757Z",
     "directSearched": "2026-11-19T10:50:53.757Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-19T10:50:53.757Z"
+    "directSearchVersion": 2
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1451,7 +1476,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-19T10:50:53.757Z",
+    "seen": "2026-11-19T21:09:40.926Z",
     "donationSearched": "2026-11-19T00:51:38.537Z",
     "directSearched": "2026-11-19T00:51:38.537Z",
     "directSearchVersion": 2
@@ -1593,7 +1618,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-19T10:50:53.757Z",
+    "seen": "2026-11-19T21:09:40.926Z",
     "donationSearched": "2026-11-18T08:02:19.281Z",
     "directSearched": "2026-11-18T08:02:19.281Z",
     "directSearchVersion": 2
