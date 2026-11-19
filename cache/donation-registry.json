@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-19T00:51:38.537Z",
+  "updated": "2026-11-19T10:50:53.757Z",
   "fetched": {
-    "societies": "2026-11-19T00:51:38.537Z",
-    "uncr": "2026-11-19T00:51:38.537Z"
+    "societies": "2026-11-19T10:50:53.757Z",
+    "uncr": "2026-11-19T10:50:53.757Z"
   },
   "societies": {
     "AF": {
@@ -2459,39 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "ayuda.cruzrojacolombiana.org": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-12T01:09:33.408Z",
-      "chain": [
-        "https://ayuda.cruzrojacolombiana.org/",
-        "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
-      ]
-    },
-    "cruzrojacolombiana.org/cruz-roja-colombiana-despliega-capacidades-para-dar-respuesta-tras-las-afectaciones-por-sismo-en-colombia": {
-      "ok": true,
-      "reason": "donation word \"dona ya\"",
-      "checked": "2026-11-12T01:09:33.408Z",
-      "chain": [
-        "https://www.cruzrojacolombiana.org/cruz-roja-colombiana-despliega-capacidades-para-dar-respuesta-tras-las-afectaciones-por-sismo-en-colombia/"
-      ]
-    },
-    "unicef.org/appeals/south-sudan": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-12T10:16:31.542Z",
-      "chain": [
-        "https://www.unicef.org/appeals/south-sudan"
-      ]
-    },
-    "kksh.org.al": {
-      "ok": true,
-      "reason": "donation word \"dhuro*\"",
-      "checked": "2026-11-12T10:16:31.542Z",
-      "chain": [
-        "https://www.kksh.org.al/"
-      ]
-    },
     "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Colombia\"",
@@ -2631,14 +2598,6 @@
         "https://www.redcross.org.mm/"
       ]
     },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-18T08:02:19.281Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
     "cruzrojacolombiana.org": {
       "ok": true,
       "reason": "donation word \"donar\"",
@@ -2677,10 +2636,53 @@
     "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
       "ok": false,
       "reason": "HTTP 406",
+      "checked": "2026-11-19T00:51:38.537Z",
       "chain": [
         "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
+      ]
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
       ],
-      "checked": "2026-11-19T00:51:38.537Z"
+      "checked": "2026-11-19T10:50:53.757Z"
+    },
+    "kksh.org.al": {
+      "ok": true,
+      "reason": "donation word \"dhuro*\"",
+      "chain": [
+        "https://www.kksh.org.al/"
+      ],
+      "checked": "2026-11-19T10:50:53.757Z"
+    },
+    "ayodonor.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-19T10:50:53.757Z"
+    },
+    "ifrc.org/national-societies-directory/indonesian-red-cross-society": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/national-societies-directory/indonesian-red-cross-society"
+      ],
+      "blocked": true,
+      "checked": "2026-11-19T10:50:53.757Z"
+    },
+    "ayuda.cruzrojacolombiana.org": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://ayuda.cruzrojacolombiana.org/",
+        "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
+      ],
+      "checked": "2026-11-19T10:50:53.757Z"
     }
   }
 }

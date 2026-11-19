@@ -179,7 +179,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "eonet,gdacs|IN#4fee066c",
-    "seen": "2026-11-19T00:51:38.537Z",
+    "seen": "2026-11-19T10:50:53.757Z",
     "donationSearched": "2026-11-17T22:50:03.877Z",
     "directSearched": "2026-11-17T22:50:03.877Z",
     "directSearchVersion": 2
@@ -227,7 +227,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-19T00:51:38.537Z",
+    "seen": "2026-11-19T10:50:53.757Z",
     "donationSearched": "2026-11-18T08:02:19.281Z",
     "directSearched": "2026-11-18T08:02:19.281Z",
     "directSearchVersion": 2
@@ -313,10 +313,10 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "seen": "2026-11-19T10:50:53.757Z",
     "donationSearched": "2026-11-19T00:51:38.537Z",
     "directSearched": "2026-11-19T00:51:38.537Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-19T00:51:38.537Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-17T22:50:03.877Z",
@@ -422,7 +422,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-19T00:51:38.537Z",
+    "seen": "2026-11-19T10:50:53.757Z",
     "donationSearched": "2026-11-17T22:50:03.877Z",
     "directSearched": "2026-11-17T22:50:03.877Z",
     "directSearchVersion": 2
@@ -500,7 +500,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-19T00:51:38.537Z",
+    "seen": "2026-11-19T10:50:53.757Z",
     "donationSearched": "2026-11-17T13:58:20.966Z",
     "directSearched": "2026-11-17T13:58:20.966Z",
     "directSearchVersion": 2
@@ -985,203 +985,113 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-19T00:51:38.537Z",
+    "seen": "2026-11-19T10:50:53.757Z",
     "donationSearched": "2026-11-18T08:02:19.281Z",
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ]
+    ],
+    "directSearched": "2026-11-19T10:50:53.757Z",
+    "directSearchVersion": 2
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-17T03:26:05.310Z",
+    "at": "2026-11-19T10:50:53.757Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck offshore Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026 at 04:58 WIB. The early tsunami warning was lifted. BNPB reported 75 dead, 907 injured and 92,735 displaced by 20 August. Aftershocks and displacement were still being recorded in late August. Recovery, including shelter donations, was under way in October. No report after early October confirming the current status was found.",
+    "summary": "A magnitude 7.7 earthquake struck offshore near Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026, triggering minor tsunamis and damaging buildings. Manggarai and East Manggarai had the largest death tolls. The latest figures found, from late August, give 111 deaths and about 179,000 displaced, and aftershocks were easing.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Manggarai",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "largest death toll and displaced population"
+      },
+      {
+        "name": "East Manggarai",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "34 deaths by 25 Aug; large displaced population"
+      },
       {
         "name": "Nagekeo",
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Strongest shaking; building collapsed, residents fled"
-      },
-      {
-        "name": "Mbay",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Building collapsed; residents fled"
-      },
-      {
-        "name": "Aesesa",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Strongest shaking; residents fled, minor damage"
-      },
-      {
-        "name": "Riung",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Strongest shaking; residents fled, minor damage"
+        "impact": "epicentre offshore; 13 deaths by 25 Aug; building collapsed"
       },
       {
         "name": "Sikka",
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Two dead after struck by building materials"
-      },
-      {
-        "name": "Maumere Port",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "site",
-        "impact": "Two residents died; port affected"
-      },
-      {
-        "name": "Reo Port",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "site",
-        "impact": "Port affected"
+        "impact": "6 deaths by 25 Aug"
       },
       {
         "name": "Ende",
-        "country": "ID",
-        "kind": "city",
-        "impact": "Cracked or partly damaged buildings"
-      },
-      {
-        "name": "Ruteng",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Cracked or partly damaged buildings"
-      },
-      {
-        "name": "Labuan Bajo",
-        "admin": "West Manggarai",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Damaged hotels"
-      },
-      {
-        "name": "Lambaleda Subdistrict",
-        "admin": "East Manggarai",
+        "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Building damage"
+        "impact": "two deaths"
       },
       {
-        "name": "Bima City",
+        "name": "Manggarai Barat",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "one death"
+      },
+      {
+        "name": "Bima",
         "admin": "West Nusa Tenggara",
         "country": "ID",
         "kind": "city",
-        "impact": "Wall cracks at sub-district office"
-      },
-      {
-        "name": "Bima Regency",
-        "admin": "West Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Building damage"
+        "impact": "house moderately damaged; warehouse wall cracked"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "75",
-        "sourceName": "databoks.katadata.co.id",
-        "sourceUrl": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026"
+        "value": "111",
+        "sourceName": "archynewsy.com",
+        "sourceUrl": "https://www.archynewsy.com/ntt-quake-evacuees-drop-as-aftershocks-ease-death-toll-reaches-111/"
       },
       {
         "label": "Injured",
-        "value": "907",
-        "sourceName": "databoks.katadata.co.id",
-        "sourceUrl": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026"
+        "value": "1,678",
+        "sourceName": "thejakartapost.com",
+        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
       },
       {
         "label": "Displaced",
-        "value": "92,735 people",
-        "sourceName": "databoks.katadata.co.id",
-        "sourceUrl": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026"
-      },
-      {
-        "label": "Houses damaged",
-        "value": "157 heavily damaged, 41 moderately damaged, 148 lightly…",
-        "sourceName": "cnbcindonesia.com",
-        "sourceUrl": "https://www.cnbcindonesia.com/research/20260816070119-128-759743/gempa-ntt-m77-masuk-daftar-terbesar-dunia-2026-ini-urutannya"
+        "value": "179,037",
+        "sourceName": "thejakartapost.com",
+        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
       }
     ],
-    "donation": [],
-    "sources": [
+    "donation": [
       {
-        "name": "human-initiative.org",
-        "url": "https://human-initiative.org/situation-report-2-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
-        "title": "Situation Report #2 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
+        "url": "https://ayodonor.pmi.or.id/",
+        "org": "Indonesian Red Cross (PMI)",
+        "kind": "society",
+        "note": "Ayodonor platform fundraising drive for quake-affected people in East Nusa Tenggara, run by Bekasi branch.",
+        "specific": true
       },
       {
-        "name": "databoks.katadata.co.id",
-        "url": "https://databoks.katadata.co.id/lingkungan/statistik/6a87b921db042/update-korban-gempa-ntt-75-meninggal-907-luka-luka-20-agustus-2026",
-        "title": "Update Korban Gempa NTT: 75 Meninggal, 907 Luka-Luka (20 Agustus 2026)"
-      },
-      {
-        "name": "en.antaranews.com",
-        "url": "https://en.antaranews.com/news/427204/77-magnitude-quake-in-nagekeo-caused-damage-to-buildings-in-bima",
-        "title": "7.7-magnitude quake in Nagekeo caused damage to buildings in Bima - ANTARA News"
-      },
-      {
-        "name": "human-initiative.org",
-        "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
-        "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
-      },
-      {
-        "name": "dompetdhuafa.org",
-        "url": "https://www.dompetdhuafa.org/en/7-7-magnitude-earthquake-strikes-ntt-mosque-built-by-dompet-dhuafa-collapses/",
-        "title": "7.7-Magnitude Earthquake Strikes NTT; Mosque Built by Dompet Dhuafa Collapses"
+        "url": "https://www.ifrc.org/national-societies-directory/indonesian-red-cross-society",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "Directory page listing the IFRC DREF document for this earthquake; not a donation form.",
+        "specific": true
       }
     ],
+    "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-19T00:51:38.537Z",
-    "donationSearched": "2026-11-17T03:26:05.310Z",
-    "directSearched": "2026-11-17T03:26:05.310Z",
+    "donationSearched": "2026-11-19T10:50:53.757Z",
+    "directSearched": "2026-11-19T10:50:53.757Z",
     "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
-        "org": "IDEP Foundation",
-        "kind": "globalgiving",
-        "note": "Food, clean water, emergency shelter, medicines and lighting for families in Manggarai and East Manggarai.",
-        "title": "Donate to Help Families Affected by Flores Earthquake - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
-        "org": "GlobalGiving (NTT Earthquake and Indonesia - Send Emergency Aid)",
-        "kind": "globalgiving",
-        "note": "Staple food, safe water, emergency shelters and health services in NTT and other quake-hit areas.",
-        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
-      },
-      {
-        "url": "https://support.savethechildren.or.id/donasi-gempa-ntt",
-        "org": "Save the Children Indonesia with local partner CIS Timor",
-        "kind": "local",
-        "note": "Support for children and families affected by the August 2026 NTT earthquake.",
-        "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT"
-      },
-      {
-        "url": "https://human-initiative.jp/campaign/nttearthquake/",
-        "org": "Human Initiative Japan",
-        "kind": "local",
-        "note": "Bedding, food, hygiene kits, tents and a community kitchen in Sikka and Nagekeo.",
-        "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
-        "published": "2026-08-24T03:26:05.310Z"
-      },
-      {
-        "url": "https://www.barnabasaid.org/us/latest-needs/please-support-christians-after-devastating-earthquake-hits-indonesia/",
-        "org": "Barnabas Aid",
-        "kind": "local",
-        "note": "Blankets, hygiene items and food for displaced Christian families on Flores.",
-        "title": "Please Support Christians After Devastating Earthquake Hits Indonesia"
-      }
-    ]
+    "seen": "2026-11-19T10:50:53.757Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1541,10 +1451,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-11-19T10:50:53.757Z",
     "donationSearched": "2026-11-19T00:51:38.537Z",
     "directSearched": "2026-11-19T00:51:38.537Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-19T00:51:38.537Z"
+    "directSearchVersion": 2
   },
   "ifrc-flood-8073": {
     "at": "2026-11-18T08:02:19.281Z",
@@ -1683,7 +1593,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-19T00:51:38.537Z",
+    "seen": "2026-11-19T10:50:53.757Z",
     "donationSearched": "2026-11-18T08:02:19.281Z",
     "directSearched": "2026-11-18T08:02:19.281Z",
     "directSearchVersion": 2
