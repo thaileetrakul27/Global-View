@@ -1,24 +1,364 @@
 {
   "code": "IR",
-  "updated": "2026-11-18T17:43:26.607Z",
+  "updated": "2026-11-19T00:51:38.537Z",
   "articles": [
     {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMiuAVBVV95cUxOS1VVM2tWbFJSTDlqZHAtREI5VHFpd0RjMGQ3Tm1IbERPdG9EMlhyN1ZySzdjLWhkMVN1YjJXelNOaUNES29hZXJDZWViemZtN2xSdjkzUTlUWFpSOVZhNFQteW9OVG9RN21OYUd4NUp0N29FRVdmTVJ5MFNVbVZhdFhnazJWT29hQzdrRTN3MjQ4MS1LWjV1YWtvWjVqSHBmdkQ0R1RhbXVwM3N0Nm9qVkxkNlp4VUpGbE1QeTRMeDJJZ3JtSFJzR1dVb2FIcFFnbVJtakJLZnZlYkotTnc2Tmx0WnlOUEJxZ0tDc2p2U1dLcnZUWU1JaTl1d0YtYndJQ0k1TW5qYkF6UTVJRm42UE41dHIwbkdWTUd5MmJLREdNWXZQakJBV1RuMVBFN0FyVU9mUG5PZU5ISzNIT3F5cGswZmRIUTJ6NHc2Z21LOF9jM0w1Tm45aW1ONmFFYjJqbC1USVRPUmJ2WFNYVVVWY2ZzN1dEX0gxTGN6X2R6NXlOY19VTWNMUUJ6OTRoNU0taEJNcFRzYWFIbHR3cWNDcU4yVGJBMlYyeGhSZ2t2UkZuVlo0SDFyQ0xvdGliWGwxSVZfTWRMeEQ4ZXd2ODRnbE1KSVFRYkcwS3RjbG5DUVpfc3d4U0tXWExlYTFLLVowZDZ1N1J1UlBQaWoxcmkwbG4wMUNyY0VTNzZqZE44Y0w1T2tGTndYQTFqdU5XVmRldnRhcVZOeENhRVJkalBDZjFXaHNVeGZrZERLUHZGcG5QNnk1b2VWUnhFVW03WWZ6N2EyQTJ5bW9sT3lOUW02VHdCTEF4QkVYUTh3SWtmZWJiZ0pIZ0ViNUtZQ3VEVjdOR25iRHJIcjJhdGVHRjlNQnBoQWxOVVVxMlNyZXExdGQ4Q1F6ZWF0Z242b1k3X3ctcXhsRVlGVmrSAb4FQVVfeXFMUFJCcmtvX1Z4S1g5cTVYcXBYd2d5LWVycmVDaFcyMTNSd2hTMWRGOEUtOU45NGxoVFo1M1VqQ09maTJWMkNjTlZVdDRWMWVuRXNscm9WZFd6ZnFCOTdvaXlXVFVhUzhyeDNoRHdTMFNzOUNEdUNhNExxSVZOc2wwczI3R19rcGQwUzBxR2tIc2g4Y1hXaXcxRlNUR1NLWWd5eXJTNzA4NEN2MWhiN1ZxdEhtR3dYTzNXMDhwdFd4N21JdWsxYnBScmNfTnBqVjVtcGpZNzRQWkpXR2NOWnJZMDBlNHdXX0JlZzhVeWp4Vk5PdVlPVFRWQTVxM0tyU21qR0Q3OXBKLUJ3ZFliTF9UNWFuQVVmcTRRZkVNX0JwWmdZMGg5Zm9odmxickRyV0VMZzFubm90RFhVN2ZQQ3BVdklJU0lFX2d6eVlCeW9HWDhxNE9lV0ttSmlEU0dGdFNzdjBGY0FycExBRnEzXzhraXhCZFB5ejhkOGRoMnFpYXdiZ1RieEZXWk4yZllpdVd1dUhXX2hDZmR1X1JNT1dyTFJ0SnJaWmYtSTlYcVd6aGo5X3BZRWJvbjVjbHRKWGs3QTJSaW9qY1l5bkttSTdYT2ZhaFVZRG52ZGpHSGRxQ3lRV0tNeEdGa3RwZmd6RDQ1VXpsWW02dURtN3dKV0ozMXNuOXA2M0lIWlNNR0JGUXZVV3phWFlzZEFwSVZpNEhPTC1EUHZRbGU0TkNBc1VFS0JTTXhaQmp1bjBrY3d0SzczSzFJUm5qN2g0dlZHbFlPbHVtRU5aZXlGQWNYUWQ3dEhneVEwa1hzRHZCYlp3VVVqSnZEdm8zUTJHWTBWZGw4MEFiblFLaW9LdzZKamhMUENBSVBLOWoyVkVOSzNVcXFrdEIycFJLZHhwbDdFQUNvMUN6ZjBweWpKbGFacEFn?oc=5",
-      "title": "وزير الأمن القومي الأميركي: جهات سيبرانية إيرانية استهدفت بنيتنا التحتية",
-      "en": "US National Security Secretary: Iranian cyber actors targeted our infrastructure",
-      "outlet": "العربية",
-      "published": "2026-11-18T17:13:38.000Z",
+      "from": "US",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNczRzemtDSHlJLXZIOHl1WHVMYUZkLTFMd1Z4TDJHNWhDa2E3djdWWnM4MXlwbXpnYjNyUU9TcXR6YjhsOWRVS29ub25Dd0pLVWNZRFZWR25CdnNxeTQ4VDRYX2g1dlFqZmQ1N1o1WWowQk5XRTJvSnhwWENzaXlBSF83RW5kbE5FelFKa0J2dnlhQVJJTkE?oc=5",
+      "title": "Iran War Updates: Gulf states and tankers under fire as U.S. and Iran ramp back up tit-for-tat strikes",
+      "en": "Iran War Updates: Gulf states and tankers under fire as U.S. and Iran ramp back up tit-for-tat strikes",
+      "outlet": "CBS News",
+      "published": "2026-11-18T23:29:00.000Z",
       "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE91cnBIMFpvOGJSTkNoUGoxcDhJQUJkVFpvTVdGOTBFNE1fZVVVczRPdFFsWXpQUFgyWjlsSjFsREJKd3JXWXJuUXpvYzhxNXNfT2hlY2dPTUJOLWhqLWwxcndkT1ZkcmVMd1Jqd2VjcE8?oc=5",
+      "title": "伊朗再袭美军基地，战火蔓延至科威特和巴林",
+      "en": "Iran attacks US base again, fighting spreads to Kuwait and Bahrain",
+      "outlet": "观察者网",
+      "published": "2026-11-18T23:15:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BD",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE45RWhJMTV2b1EyQUFlUDdSSndSY19lclloTEIwQThfVTd4QnhhYms2NE5vNTh3MU1SRzdRVUc0RTRFMWw5T0dHVVZ3VU1lYnMwSi15ejVucE56cXZzbkhsaWRteGVuR2JxRTZLempIWUhPQQ?oc=5",
+      "title": "আমরা তোমাদের খুঁজে বের করব: মার্কিন দুই নৌ-কর্মকর্তাকে ইরানের হুঁশিয়ারি",
+      "en": "We will track you down: Iran warns two US naval officers",
+      "outlet": "The Business Standard",
+      "published": "2026-11-18T22:54:57.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi9wNBVV95cUxOTy1xZ1RpQU03Rk9sSHFDWFFyN2VHRUtMMnZlc2h1eEhfWmxWbG9LMzhPV3RyWExXN002OVNoUmxaSHl4ZjdpTU5BbmtDNU1NNm56cWN5VW9veGU2ck9BZGhELVJpY1BYX19Lc1dUd0t3QjBudjVYQ3Z2STFXamMyQU1tVXhhaXdkMjl1cER2TlZDRU9RWkN4dGk1blN5ZnhzNXYxcVIxU2p2QzgwSWQwQTF3YjJaQWpCSTBGQTcwRGhVd042T19qRmozRlgzUWtabjhKdTE1MlZsa2VnRDd4T3VONzlwSU5IUklScnBGdzJzNldHd0VleUk0OExVZ3Y2RnBLS2JTWTJYV0hTbnlaSDVELWswUXNaeDNabVVGdHloSUdJRFROUjFuYXZsejhCck1aMkxtQk5Qc3ltb0tMam1Pdnl4bnBrNThiejZJekZSdmJNTHZ2azZTemRpMFhnS2NxRFN2WHBwYXdYTnF0c185dmFpanNIaFJIVGtrQ0xPS2haZjBLc1NkWlRIbDRoN2VDVWN5M25YU2VBc2dDbnZyUHYwN3BtbXZtdW53N1RHOHBXZlZGTEpqVE54dkF1NDVNQlhYenRaWDJNTFljRXlpbXpuM0xWRFpiS2ZrczNOWWY3Ml8wQmZDc1dEUEc4ZFFvTFlrcw?oc=5",
+      "title": "واشنطن تتهم إيران بتكثيف الهجمات السيبرانية على قطاعات حيوية داخل الولايات المتحدة",
+      "en": "Washington accuses Iran of intensifying cyberattacks on vital sectors inside America",
+      "outlet": "الشرق للأخبار",
+      "published": "2026-11-18T22:41:15.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMilwRBVV95cUxQNHRRWWtvd29HZzh5bXZlaXg1Njg5a0ZNMTRvZWVZLTJ0Z19qMGRoak1CY3hTdVNrQjI2SXRIVFpoY01xZ203cUVYTTZFZzdJNmFSNk5qaEJWTkoxMGtpSVVuYUl0Wnc5QWtPMWdPOXdkWENDWGwxOXVSaXg1QjJYRTlWZWkxRVBpMmxJSEpENGhtTzBFNG1RWVZ5OFJrX3g5eGM3aU1ES1oyS19nWkppV2xjUGRyTzBoS1R6MGc3ZTg1TnhKSDhlS2o4X2c2YmxOd1A3RlR0Zko4cDJPM2xZdDZHNnRRY2F3ZXgxYTc5eXNPRG1JZ1FfbG8tMUtSZ0htZHV0S2xJNk5pck11SFVfOVNDeTZILWZ4a0Z0Rk9vbkV0b0c5ZG9Rcy1LODdpaDEzUmI4UVpXcXBmeUpxU1VwT1llbTJMSWdRYVN3Z2RlZHNVZHRSc2Z4UVB1ZjM5V09DNElsRTVFblM4Nl9oTEczdUVzcWQwZkJVNy1UY2ZvX2F0SGRjcUsyQmFQQmpEZ0FsY1BDZy1KQXdoZ1FwU0YyczBCeTlrQXJhVGJRNzRyQmhPVGE3QkR1SmdmdGtnNEQ1X2tFNlZmZzZ1SlE5UzJ0OS0yNW5GLU90amhkS21IMi1PU09FSjlucDZqNVRwZWZPblRvTkRfdy1aVXA0YzhhTU16LVRXUHJ5VmNpdVV6Ul9OS3A4eWIw?oc=5",
+      "title": "特朗普、普京和习近平星期四深圳会晤：乌克兰、台湾、伊朗、人工智能、核武器等领域受关注",
+      "en": "Trump, Putin and Xi to meet in Shenzhen on Thursday: Ukraine, Taiwan, Iran, artificial intelligence and nuclear weapons draw attention",
+      "outlet": "RFI",
+      "published": "2026-11-18T22:41:04.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxNc3hyR2F1ZHdzM1BoSFhPeEtOUDZNck82LUVfczRucnpNOVpPVkdEcUF5bmhYRFRCZmlJQV9LV2pxSU1rSHEzOEZxd1p2bkVDaXNtWGVUd0xERVV1UDRIY29QdE1OWWs1WGRSQWVDQmNGRWp6NmFxY3BubnNsSi0tU3RIeDdXYXl1WmVKTWE4MGI1UjdQYmk2eWhTN0ZJWTJFYTl1SVNOUlU0R240emhzbmNITEFVR0hpOGprdkRUdlJCMVdEblZ1MEdFRG1SQkpSVU1zQ3lDbzAteHkzQVVyWkdOZlc1aDRPQjJ2N2NrLVNtMzNHVDl5aFVPRlBJYVV0YnJDR19Jb09rNVRzZUs0ejU2YjlvRk1JUktya0Q0UDYyVk1TVEdRZm5TYjh2THBZWFBWM3k3aW5XU1RJcV9wUDNjOUNtRUx0Uy1JQ1BDbTI0RGJCbWNCMUU1dHgwMFJ4RVQ0VFdDQmg1YmItTmlxTGhBUEtRRmJkMmFaczRzX3Q4Zkt6TnVyX2xHNEc2Nmlnc3ZVNV9vc3JxT2lNOGJRVDNFSFpISnBGaGtRRVJYOHQ1NlhmdFVORGxjOVhPNjMwWmtxd2FkeGhGMGdKSHRaRGNibnBnY2NDaXB5T3FrM1FfYlJYcTRhbWpWaW5uQndPQW9acjFlVkN6OHBwajY0eVRIZmdnNUhwbHVrUA?oc=5",
+      "title": "«اتفاقية الدفاع المشترك» بين قطر وتركيا: حرب إيران تفرّخ تحالفات إقليمية",
+      "en": "'Joint defense agreement' between Qatar and Turkey: Iran war breeds regional alliances",
+      "outlet": "Al Akhbar",
+      "published": "2026-11-18T22:30:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SE",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZUtubjFtM2REdXFTUXRTdEdUUEp1N041QjhOLXBnUGw5eWNmTWJLOFZRVTVYTVZwRGk5cTExUFd2VU83eXZSQ085Y2Uzb0JudUZMam53TW9rejZ2YjBlZzl5cTk2eGJBdXlmOGhvdXZtNTFsTkFPSjlhcl9heDhCcGE0S2pqLU9pNU9wWjQxUFNXcEtEekR4MXhncnhha0RkdEhCcExmOUgxSDhKMG83eFM0V180UlRJZzJiUm5RZW1ramN2SkxIUg?oc=5",
+      "title": "Tanker träffad av projektil i Hormuzsundet – Senaste nytt om kriget mellan Iran, USA och Israel",
+      "en": "Tanker hit by projectile in the Strait of Hormuz – latest news on the war between Iran, USA and Israel",
+      "outlet": "SVT Nyheter",
+      "published": "2026-11-18T22:20:16.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdm1lSVY2dXVfS0lUMG5KZjVRVjgxa3FSdkpXOXlWakdVLTBfMk1SSHNHR0tEZFRlZm10MnVTRG9yV2hPUHlfWkxZX2N1Sk0tcjU2UktRT3pfZUpkdzJadHc0OE8xYy1NbkdNcGx0QWZCOG1yV3RydUVjN2JzT3FmRm5aTGN5WjNaa3pObw?oc=5",
+      "title": "Cuộc chiến Iran vào thế bế tắc nguy hiểm",
+      "en": "The Iran war reaches a dangerous deadlock",
+      "outlet": "Thanh Niên",
+      "published": "2026-11-18T22:19:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AR",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ3Y4Mmw3TmxfYTVzZEs0bEJEdEduMUtXVTZIaGw5eGNUODZvUS1DNkhRV1dnVVdwYVNzTUFsUzBNd3o0STRFSURkZ3FvTTZrYmU0SjZZTnhXUFBsYno5WEY5SmpNTG91VDY4V1o1ODk1a1kyci0xRUtBSTFzOEFncG1PS1lYUG9CaHc?oc=5",
+      "title": "Irán amplía sus ataques en el golfo Pérsico después de que EE.UU. atacara un sitio de lanzamiento de misiles",
+      "en": "Iran expands its attacks in the Persian Gulf after the US attacked a missile launch site",
+      "outlet": "CNN en Español",
+      "published": "2026-11-18T21:57:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CO",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ3Y4Mmw3TmxfYTVzZEs0bEJEdEduMUtXVTZIaGw5eGNUODZvUS1DNkhRV1dnVVdwYVNzTUFsUzBNd3o0STRFSURkZ3FvTTZrYmU0SjZZTnhXUFBsYno5WEY5SmpNTG91VDY4V1o1ODk1a1kyci0xRUtBSTFzOEFncG1PS1lYUG9CaHc?oc=5",
+      "title": "Irán amplía sus ataques en el golfo Pérsico después de que EE.UU. atacara un sitio de lanzamiento de misiles",
+      "en": "Iran expands its attacks in the Persian Gulf after the US attacked a missile launch site",
+      "outlet": "CNN en Español",
+      "published": "2026-11-18T21:57:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PE",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ3Y4Mmw3TmxfYTVzZEs0bEJEdEduMUtXVTZIaGw5eGNUODZvUS1DNkhRV1dnVVdwYVNzTUFsUzBNd3o0STRFSURkZ3FvTTZrYmU0SjZZTnhXUFBsYno5WEY5SmpNTG91VDY4V1o1ODk1a1kyci0xRUtBSTFzOEFncG1PS1lYUG9CaHc?oc=5",
+      "title": "Irán amplía sus ataques en el golfo Pérsico después de que EE.UU. atacara un sitio de lanzamiento de misiles",
+      "en": "Iran expands its attacks in the Persian Gulf after the US attacked a missile launch site",
+      "outlet": "CNN en Español",
+      "published": "2026-11-18T21:57:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BW",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWXB2WVdRaS1oWXoxcl9ON2dEbEw0NURjcGtXeF9YdEdPcGpQOE1HOTRWME5ZQjBRYnVYYWlKdENWWFhlSDFZQmdGOGQ1TUhrbzA4b1RvQjdORTQ2dEotcmpjTjNoTkJmUUhEOE8xUnExSVpBXzNXTEQ4TmRtdV9fdEdubk4ycHh5YmxocllkZ2VrZmNRdXEwTVNQVGZweU9CQm52YVdpaVN2MUhpakdQeDd1eFFuT1U5dU1hbXZYUXRnRUxGVm94UjZ3?oc=5",
+      "title": "Saudi Arabia and other Gulf states among world’s safest despite Iran war, survey finds",
+      "en": "Saudi Arabia and other Gulf states among world's safest despite Iran war, survey finds",
+      "outlet": "Arab News",
+      "published": "2026-11-18T21:56:47.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMi1gNBVV95cUxNbHU1VWdQY2FHQTlzQnFidV9qTF9kZGlBRXVDamlKR3YyLUVpcmpjVHo4UThJNllDd0owYk1yTTFUUTZHQW0xNWw1cVdSSGg1cVAwV0tscXBEcTg5RFZQMFBoX25TdWNMQkNRd19aTVNOazJFbDFMV1RhdC1rMG9aWGduNF91QnRUaFRsSGo5NU5XRmJtR2RXUS1IaUE5N2pZcWt1MC0zZ2k1c0VnQUpYWk9uTWRsaTVUZV9BTVd0T3pUY0ZVZnZXSU8tN241WmpKVXQ4NDVxSEd6eUFXbnVnOWE5N3ZyNzdtRmVRczlFbm00NENocHJ2V0t1SlpBb0h6cHpfSlprYl9VeEh0QndNdmhUZTFkRlllckFfTXBTSm5paV9Edkx4dmZCa0xBVlN6RVItR1RPYlBSMmlYVG5GWWhhci1MWXRFSjRzYzJjUUNzQnBQZTB0czVEVmRVR2ttSVl2ZmRBWVFmeWxvZ0QwX2hFVEQ4TUNlUnhYdnE5NG5RX2hZcXJHNUJvWVo2LTlOZS1ZRzdOV0xkc0hXZlBqeUVnSEtBQVo0OGx0YWZwdkNfSHhuSmloazltaUVXSXEyR25hTW45Qms0SHN4ZWR4MWMtQ0UyZ9IB2wNBVV95cUxPWTdfVl9qQm5xZmpIS1NPcURCT3NqbWpIeTllMkJ3X09nRGdxc2l6ZFlyLXNZZndDUEg5SHZlX1oxUzlKSmhQMXByQU1ycjNib041X0kyQjhYMDRiSXE2WW1GUDlNMG5ISXVJLU1TclcxZmx4d3RPeHhGckFMVjZrdU5ST0FGdVptOUJER19ibXR5YnQyal9kZUFIRzVVdHRqdE1TeDNrR2w5dkpOLWpLVS1FVXlxUW16Vll5ckk1RWwxdUlLS2tURlVnUTZBT01JTlpGQS1QYUE0YWdzaUpMMTdxc2pzblNWd0VfeWZ2OW5BZG9EdnZCZ3FzSnY2b1hMcTlfWGwyR0N4VE1SREVZeGpBZ2pQUlRuejc0a01manVJOVNGQ2lpeTYtWjRya2dkR2pkZDlIeDRWdW5KOWR6cW13V2dBZnlqazRObWJ3MWJZU1IzSWdCVDlFMVh2UFBJOVFFdHl5YXowcHpJU2E5YnZ2ZHdRUnNpVktUaGQzLUdORGdRRWtCU3VkV3AxSzlfU1J4RTRCTHVEQzdKMUZLSTBjbzhBenhaM2UtalNWdFY0QVRKOTBubDNza1lQa2JNeHN5ZXpQWHp4NzctejNraWFZbnR1dU1rdXdn?oc=5",
+      "title": "Gaza, operazione israeliana nel centro della Striscia - Tre petroliere in fiamme dopo collisione con delle mine nello Stretto di Hormuz",
+      "en": "Massive IDF operation in Gaza. Iran: US soldiers wounded in Bahrain - Update of 18 November, 17:09",
+      "outlet": "RaiNews",
+      "published": "2026-11-18T21:34:08.000Z",
+      "outlets": 8,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi8wNBVV95cUxPR1B0V1VJb01fRnBGYkpzbnQtb1UxaE9uWkNtU0cyZ2ZlQ2VneTltbGl4a0I0SXJvQTBWVGFNcWFDMmY2aEowM25EZXRJZG1DOXZCYVhSU3JYT21UN1pvejZjWEE5alc5d2FieEk5MXpiakZiVGhwNkc4d2hoSlMyMUZYMk5JVnozaFkwaXdOb0ZNRjVEZ05QTElKbVJFQkt1azNBMUJfaHRfMHF4Z0dsaHlKclNZck9wUlRja3VRRVBsdFd0S3VFNl9fM243ZUNvbnZuVThndUl5ZU1xdWdSQk4tRnd4c181QmJxT21DNERacDVSVHBJZVluMkNUaU9rSGNUcVQwNFpKVVhZdjA2MjZYZGpjYjJKaG0zOXZrX0VTQTJuekNmUjlwSDAtWklXSEFURmhMOVVlSkpMZVdJVXZqY1JhLWM0ZEZETVBxclNMSUItc3A3dWg0OWliS21Fb3J3R0lHMkhxRmNLVDZzQTVidmdRMkhJalNHVHBmRFZfS08xUThGUWwzVWFVZnpfNS10bzZVdE16b1ROYnMxZzlmcjJaMFV4QmZ1YTdPSlZJRGpaZVZvaVc2Zm5pXzVMRDd5LURoR05MSTlINzhNMUJ5ai16cnNRbzBwR1Buc3lYMl9jZ3ZOQUItRzFZOElDT1JB?oc=5",
+      "title": "رئيس الموساد دعا إلى توجيه ضربات مشتركة لإيران خلال لقائه مسؤولين أميركيين",
+      "en": "Mossad chief called for joint strikes on Iran during his meeting with American officials",
+      "outlet": "Al Akhbar",
+      "published": "2026-11-18T21:23:22.000Z",
+      "outlets": 6,
       "trending": true
     },
     {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi1ANBVV95cUxQdXFWbUtwWFlabUZHNVBuTGJOQUVTanZpX0dnM1JEbFNTOWxLcTI3ekZTMEJ1N1pPZ1pCejVVX3hfZU5DZ0YwRVlLcTFmczdMa09IYUxtcUxXTVBQSlZhRGNsRWZhMUlWdVl1dFlaeXcybmN5T0lheWpoR2pqbVh0RWVvcElXRUk0LVg4b01rRjEzVUVEREs5RVcySWVzbVNkcFN3dWxqdXR2d3R6M3l2Z2JJZUlPdGtxNFBNdnJaUWgyUnRlUm9QM3pNQkE5dk8ySkxEVFlWNW9lR3hFSmFHR1Y0ZEMxV0pldXJsbkNvUUROTnhFTVMyaDhQNGJaZFZ1YWt1dy1qd3BwcnRhUkpvR2NnVDdjYlpnTG94UU9oUU1GUEVrYlp0Yzc1QjR3VGJKZ3VuVzJrRVhJWEJlc3lGRnN6ekhVV1JMaFc4QllWbGJVWm9IVy01YW5CeWpRQjduUmxyY3M4aWVDTzVfR1hIOUhoUXBSZ1BSM0hWNHBZbEJnYXVuQ05DZlVHNk5vYjFYMko0WmE5N1YtMzhPSHJHa2xjVFprS3Q1X2NfdjNKbkQtaWN1cjJwMWtldENGVW4teFU5cEpfWFBicmFRdWhNcjVxa0zSAdoDQVVfeXFMTXd1N0xTX3lLdS1BalpqOUc0cWtYWl80c2dQZjUwSWZpUklRc1EzdHJEOFZNTkVXUTZILXlPVDFsRkxHZm1uNG9XeE9Yamh6NzlPNWRyR2NDNFFLdkNqMDM1QWR0YTFwZlRoT1lNOFB0SlAyVUxuTGhNMFhsWTRicUlmZ0FfSFI1cE5OM1lpLWdkVUYyTFRmTUxzelp1WU1DdlVhdUtsbmlzdndpcVBETDZVSHJEQ3E0WWw2T2NQTTlSV21wS3NRQjBYWUtxeUZfWWozVDBIcURLanNKamktYVB2ZmYxQXZYeThEaS1VTVpaNG8tQkp5RzlHamdraVNFclZTUVpxOVlPcmZfZTBza2hwbWxMWGpSeVRvaXlOakVnT2ZIQ3ZxUGdBeDFjaTdJaTFYTzBZcG1qM0I0ejd2RzdHeDI0VjQtZGEzQ2I3UlBJREdwT3Vqa2lJOFZteWg4WUJhb1E5MU9icERQakdKZkpZajFFR29HOEdGbXRwdm1EWFdLSEt1bzFIVE10dFhRaFBFZVR2cFhsdG11Y09VcmM4dXdXM2FESmJhZklLQ1R2eTNYUUtEYmFidzVVcndRMWhNUzRKY0FGcjQ1cjNaUVpWb3UzOThjWDFB?oc=5",
+      "title": "عراقجي: يجب أن يستمر الدور الدبلوماسي الإيجابي لعُمان",
+      "en": "Araghchi: Oman's positive diplomatic role must continue",
+      "outlet": "تسنیم",
+      "published": "2026-11-18T21:05:07.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "MY",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOeXBBTFlYRURxbHlWc1g1SU5JUllQY0pFejFrcUYwLU9faWRxWnUzWl9WMDY1LURzcWN1RWJqR05XdEhJc3dRSXFxU0tNcHlnTWhGVzVEb1VtZC1OeHpOTnUxOWxyeFV0UGVIb2dqaFJFZW9zWnhHT25vUmFjYXpsN2d0U2RSbnpBR2JCMmlOaHQ4YktiVE5SeF92MW1IMmUwVVlpQTJvWXNRMmdWY1hvWUljb0xpcXVjbVk4cVo0R3dXQmt1R3VWbUcwS3NKRXRLcTQxRHBPOA?oc=5",
+      "title": "Kembali kepada diplomasi, rundingan program nuklear Iran amat penting",
+      "en": "Back to diplomacy, negotiations on Iran's nuclear programme are very important",
+      "outlet": "Portal Berita RTM",
+      "published": "2026-11-18T20:50:23.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxOUlQyUnZNRHg1cm9xV0luX0Yya3JqM1B6NzBGU24wSzNaOVd0QjVRY3pESDhDcmlyejloT2NsSFUyR1g1UFdsMFhodThkYW5vdC01dGFGYi01ejRXd3lzeFF4YkVwSDN0UmNiYmtYdVJBOWFESlZJUmlsVGR1MlphOG1MT2dRLW1JZjByNGFHLTh4QmhYSGRjd1lxeDFWTE0xbmtGTHFjS0dIQnJkN09RYVotc1NiU0ZsbUwtY19vY2FIQmF1UTFKTy1zNXZPUzJ0R2ZSSDV0MkFfdDhqcklYbkJ6MU14b3AyVzk3T1hkVTFfNkFRNGRmZlVyRzluMFRKNmpZaHpITlo5aEZDb0J6SU1iRXFVWXhtcTZ5V3h6X2dZd2RfTEtERUQ1OHY3RFg4TVdydXhaOEtaZkVnUUVHOVhGT0lzbWJsY3hrXzlweERZUUFQN2xoeWZR?oc=5",
+      "title": "الاستخبارات الأمريكية: لا أيادٍ خارجية وراء أعطال الإنترنت والتهديد الإيراني زاد بشدة",
+      "en": "US intelligence: no foreign hands behind internet outages, and the Iranian threat has grown sharply",
+      "outlet": "الجزيرة نت",
+      "published": "2026-11-18T20:42:31.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "GB",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcXV1M2NaelBoOU5QRzYySzJURi13TzQ5WnhwWnBVX0o0c1IwLUlYalRMOVdHc1U1VzFuUjU5OWhQR0dwbmFXUWdMM0J1eFp4bHZRNWhGVVZmM3NfMVdFME9xRXFZZVFuMXdRZ3M0MUlxVzRVQUJiaFdVUVV2RUVqR0ZGQlhnODUwemNmSlVfZ2ZrNGhSd3NBai1DdXcxR0djcXNlb01obHN0dG9neFNFaw?oc=5",
+      "title": "Trump’s anger with Vance is growing after VP blamed the Iran war for the Republican midterm losses: report",
+      "en": "Trump’s anger with Vance is growing after VP blamed the Iran war for the Republican midterm losses: report",
+      "outlet": "The Independent",
+      "published": "2026-11-18T20:33:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE85Qkk5cXVTUzBCMHg4TkNudWtpMGZFeEtCSjFJUzF5UTZZeVdFMS1QTDNUbUJnczMzcnpPeGNQRXpiaWlwczNwRXk2UWtKa3JNeC1TUzBDenlna1o4V0l0b0doTlA5ZWlkcGVGT0YwMDRYWEcwRGcwbTlR?oc=5",
+      "title": "الجيش الإيراني: اشتعال 3 ناقلات نفط شرق مضيق هرمز إثر اصطدامها بألغام بحرية",
+      "en": "Iranian army: 3 oil tankers catch fire east of the Strait of Hormuz after hitting naval mines",
+      "outlet": "新华网",
+      "published": "2026-11-18T20:25:45.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE84bmRBb2lERlBLUU1HZlBsb3g0TTE5b3pjdEJVUUlsRGFsaThhR3huaUNnWGFDeXdwYTB2OXVB?oc=5",
+      "title": "اجتماع عسكري رفيع بين أميركا وإسرائيل.. وإيران على الطاولة",
+      "en": "High-level military meeting between America and Israel: Iran on the table",
+      "outlet": "الحرة",
+      "published": "2026-11-18T20:20:21.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1vQ19tenJLa0wtNkFnZ0lYVE1iQ1hvMWVwSUtVZjlKZGJBQ2dGdEd6SXZMU0hBaXduYjluYm90ZE9hbzhkVGVXMW91UldVektVSTRFU0ZMQWE2dXBPS2VFMUVTRG9NaVhOMWEzM1labTdsdl9aRS1relRB?oc=5",
+      "title": "Iráni szigetet lőttek az amerikaiak, Irán cserébe Kuvaitot támadta",
+      "en": "Americans fired on an Iranian island, and Iran in return attacked Kuwait",
+      "outlet": "Telex",
+      "published": "2026-11-18T20:00:23.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
       "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE8yWVJSWlZLbFUwdkNLQWVmTEN3RzBEVnVYdnYtUVJQRE45VDJMdGh2SkJnbEpMNVAzZkZMdzhZYS00V1U?oc=5",
-      "title": "איש עסקים בכיר: נחשף היעד לחיסול של החוליה האיראנית ביוון",
-      "en": "Senior businessman: target for eliminating the Iranian cell in Greece revealed",
-      "outlet": "המחדש",
-      "published": "2026-11-18T17:13:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0ybnJ0YkFsWGVGU1lqQWdtMTNlU1JnWkE3c3pvSU5BMUJHNGl2NU80X3VhQ3RqVnhqX2ZHVWM2bjl1Q0J0TF9KVzloODN6S19adHQ4THFKN2VLdw?oc=5",
+      "title": "טראמפ מתוסכל מוואנס על רקע הביקורת שלו על המלחמה באיראן | דיווח",
+      "en": "Trump frustrated with Vance over his criticism of the war in Iran | Report",
+      "outlet": "YNET",
+      "published": "2026-11-18T19:54:29.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMi8gRBVV95cUxOUmw2MWRObFRQY05mVktMWktXMkE1elVtV2ZpeU9wdWZ5aDhGZTZOc0NoLVJfQzJBNV9td0xQSUpGN2M2QWhWRDQ1TjI2cm1JNFplbGIyZ3gxQTFQdmNyREtnbnhIckZwVlZ1TXpuOGZuLTc3Z0VnM29hRWhRc3ROeThIMHFnaEl2b0k3M3JzdFFMVW85QUVLQlhOUGI2R3ZOYW1MT0tJaHhBQW9xMGQwSDZYal90bThDNnlpYWh5VEtNZkh2VmxQankzbFRtQmdzcHFGOEpvWEwyZEEtM0xlUWsxaklLdDBvT094dkpLaEpqRkt0cUUwRFBPMUNRVXFGV0xLRVQ0TU1heGYtRVJOS0N1NktBeUdOS2x5eHd4d1ZfZ1dCcFY0REJGTk1VSWdlSHFZeFlvOThMMU95MGVUYWgtQUpYYjR1cVNrN0s5WG5yNlh1emhpTXFGd2pJb2puN3BGcUFTaURnX1d6WTV2c25HRUMtYzdYZ2hsaE1ESWpWUXZCYm01YXRkc0hkQTFLUy1obC1ybldwZE1aM01yemRVZ1I2alFod3hRVjctSDBSVTZNRXpacldqOEFuRk1NUUhrVHZmSnY2SkJYUVY1enF3TXp0YzhqeXdoZXo1YXhkS09RWi1ZSFhhUWhzT3pCZWEta1RhMTFWbmFqalJMZ085bTJ3RFFiR2ozdzd3eFRCa2Q2ZDJKcnhRTW94TzZxNHdrcEZxTlJ0a2k4cWFJTXpQalRrTi1hZFNmRzFXM2ZjTkREdWF3bV9nZGtEWVRJQTlGS0NwUjd1QVlFTGY4dnYzdm9sTlFCZF9rYXc0cS1CUdIB9wRBVV95cUxOZWlrY3N3VmJjemNaekZMcGVjSlkzWUdBdWZwc2k1UjhmcXZnNDR1alNnTjJJeUNxSlF0ZklzSFBOSDB0b0toS3JacjNNa253NVRzV1lpYUgtYnVTX0t6ODVhcTR6N2ZQTUNRODNZbnY3Tl84QlVoeDlXTkh2cmZIRFlIZjQ1Q1d3MTc1Q2U3REM4OVA4b0tJWmpVVGhXQTVRb1VjOFcwX052bkVPcEN6cFdqX2hfeE03bEpsVnNJT0NNOUE0dXA0RWpoWGhMd1JzTWd4RU1teTlfU1R2cTlZLWE2NzR2Rm02Y3VPU2tXNm1ZSG4xbVRZa3pTNXpVbEMxTERYWEpWSGhoNnVLeFNQOENKdEVzSWdSazRWMEVranFxaXhUNzNUaThFUHRXZEJ5VS1XZW1reEU2Y1kzanRUM0FFeHlZRVVrYXB1eUdNdVNBWjE0OGVqUkhzWWo1NDJFNmg3RFJCZ1JmandqMjZFN0FIY0Z5U19CV3hqbU0wb21PNXJmeHVOMFdZY1pua1F2T01FNzJGMVJ2ODdVLVpGbzVSMnlKSHBpN2RSNUkwN2llZkdWNnluSWlKWklUQ3FsOEZ6eFFGVnZMdFhZNDl5bjZMT1U4b3VyNC10b2UzaVhQVXl0LWtFTU1kOFhpVk4zUEFWam1vMERlWGd5VER2eDJMLUNoOHJZdEFlSlRacjBnZ1czaEpVc28tMWE4YzFPbnYyYTFNOTlVdENjZUgxdi01eFI1QU5BTDJibW5ERFZwVVN5NkVKUFRBeWxncFM3aE41a2FIaTRScFhmeGhGZ0lwS0NPd3lDZ3BYZFdEOTlkeDlFWE5j?oc=5",
+      "title": "توتر بين ترامب وفانس بسبب حرب إيران.. وروبيو يبرز منافساً محتملاً على خلافته",
+      "en": "Tension between Trump and Vance over the Iran war... and Rubio emerges as a potential rival for his succession",
+      "outlet": "العربية",
+      "published": "2026-11-18T19:38:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMi8gRBVV95cUxOUmw2MWRObFRQY05mVktMWktXMkE1elVtV2ZpeU9wdWZ5aDhGZTZOc0NoLVJfQzJBNV9td0xQSUpGN2M2QWhWRDQ1TjI2cm1JNFplbGIyZ3gxQTFQdmNyREtnbnhIckZwVlZ1TXpuOGZuLTc3Z0VnM29hRWhRc3ROeThIMHFnaEl2b0k3M3JzdFFMVW85QUVLQlhOUGI2R3ZOYW1MT0tJaHhBQW9xMGQwSDZYal90bThDNnlpYWh5VEtNZkh2VmxQankzbFRtQmdzcHFGOEpvWEwyZEEtM0xlUWsxaklLdDBvT094dkpLaEpqRkt0cUUwRFBPMUNRVXFGV0xLRVQ0TU1heGYtRVJOS0N1NktBeUdOS2x5eHd4d1ZfZ1dCcFY0REJGTk1VSWdlSHFZeFlvOThMMU95MGVUYWgtQUpYYjR1cVNrN0s5WG5yNlh1emhpTXFGd2pJb2puN3BGcUFTaURnX1d6WTV2c25HRUMtYzdYZ2hsaE1ESWpWUXZCYm01YXRkc0hkQTFLUy1obC1ybldwZE1aM01yemRVZ1I2alFod3hRVjctSDBSVTZNRXpacldqOEFuRk1NUUhrVHZmSnY2SkJYUVY1enF3TXp0YzhqeXdoZXo1YXhkS09RWi1ZSFhhUWhzT3pCZWEta1RhMTFWbmFqalJMZ085bTJ3RFFiR2ozdzd3eFRCa2Q2ZDJKcnhRTW94TzZxNHdrcEZxTlJ0a2k4cWFJTXpQalRrTi1hZFNmRzFXM2ZjTkREdWF3bV9nZGtEWVRJQTlGS0NwUjd1QVlFTGY4dnYzdm9sTlFCZF9rYXc0cS1CUdIB9wRBVV95cUxOZWlrY3N3VmJjemNaekZMcGVjSlkzWUdBdWZwc2k1UjhmcXZnNDR1alNnTjJJeUNxSlF0ZklzSFBOSDB0b0toS3JacjNNa253NVRzV1lpYUgtYnVTX0t6ODVhcTR6N2ZQTUNRODNZbnY3Tl84QlVoeDlXTkh2cmZIRFlIZjQ1Q1d3MTc1Q2U3REM4OVA4b0tJWmpVVGhXQTVRb1VjOFcwX052bkVPcEN6cFdqX2hfeE03bEpsVnNJT0NNOUE0dXA0RWpoWGhMd1JzTWd4RU1teTlfU1R2cTlZLWE2NzR2Rm02Y3VPU2tXNm1ZSG4xbVRZa3pTNXpVbEMxTERYWEpWSGhoNnVLeFNQOENKdEVzSWdSazRWMEVranFxaXhUNzNUaThFUHRXZEJ5VS1XZW1reEU2Y1kzanRUM0FFeHlZRVVrYXB1eUdNdVNBWjE0OGVqUkhzWWo1NDJFNmg3RFJCZ1JmandqMjZFN0FIY0Z5U19CV3hqbU0wb21PNXJmeHVOMFdZY1pua1F2T01FNzJGMVJ2ODdVLVpGbzVSMnlKSHBpN2RSNUkwN2llZkdWNnluSWlKWklUQ3FsOEZ6eFFGVnZMdFhZNDl5bjZMT1U4b3VyNC10b2UzaVhQVXl0LWtFTU1kOFhpVk4zUEFWam1vMERlWGd5VER2eDJMLUNoOHJZdEFlSlRacjBnZ1czaEpVc28tMWE4YzFPbnYyYTFNOTlVdENjZUgxdi01eFI1QU5BTDJibW5ERFZwVVN5NkVKUFRBeWxncFM3aE41a2FIaTRScFhmeGhGZ0lwS0NPd3lDZ3BYZFdEOTlkeDlFWE5j?oc=5",
+      "title": "توتر بين ترامب وفانس بسبب حرب إيران.. وروبيو يبرز منافساً محتملاً على خلافته",
+      "en": "Tension between Trump and Vance over the Iran war... and Rubio emerges as a potential rival for his succession",
+      "outlet": "العربية",
+      "published": "2026-11-18T19:38:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNS21BSEJXWHdIUGpZcWRtZm0tT084cTd5WFpvbFZUeE9wdHkyelI4Y2pFamp5YmY3S09BRm9zMWQ3VE5NcHVnSGZNM20yZ3B5NE1mXzZ4VVg3NUZ5RTVuQ2owQzE4MkxpaTBIcEhCNng4MDE1ZnpyTUVOMUVHVFdzcm14Mkl2TlNGZmNuVFQ1NFMwdGFOT1JSTEFURDNOQ005cWVaUG5ybmtyNWQyTW1QMG82SHhGQXNmb3VMTUtB?oc=5",
+      "title": "US tightens Iran blockade with curbs on oil transfers at sea, advisory shows",
+      "en": "US tightens Iran blockade with curbs on oil transfers at sea, advisory shows",
+      "outlet": "Reuters",
+      "published": "2026-11-18T19:32:18.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IT",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxObTZuQjk1Z0d3WEdIM2ZMZmY1Y0c4RzBqSURoNnpFejRlQlNYUzRPX0V6LWJfb2VGbm52bkU2YWVVX3pUTWFRa00yNmRTOXNwZUFsM2JxRVNHQXNsYnNwbzFveExyMGlvcWhRTWJSdThpbXRqRUVRbndacXBoVThDNHRKT24ySjlUUy1zRVNlZ1JwVnpFZnBaZGp0LU83ekdsUUR2ckRnODRWSE4yMmlPOG5RQjN6MTYzekRxbExtMkNDSDVXUGVwZ1pweEhvdmM5UEhJcGhRWnVKRGo2bDRPQ0ZLVUNwamd1ZUlMOEh5YS0tZXVQNnRnTk9lRHhOY09fNWtHYlBhM2hVUE0xQllyTG1pU1htTTYyRHc?oc=5",
+      "title": "Guerra Iran-Usa, le notizie in diretta dal Medio Oriente | Incursione via terra dell'esercito israeliano nel centro di Gaza: è la prima dal cessate il fuoco. Attacco Houthi sull'aeroporto di Riad",
+      "en": "Iran-US war, live news from the Middle East | Israeli army ground incursion into central Gaza: the first since the ceasefire. Houthi attack on Riyadh airport",
+      "outlet": "Corriere della Sera",
+      "published": "2026-11-18T19:18:34.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMiuwNBVV95cUxNRk44X1VIYzdFMzd5MWljOFNpT2dtQzZJRVlGTGhIaHVCbE80OE4xaWVoeGpRVVg5RWJ2RTNrVmd2b3lrVTExY1VHcnZrU3EtS2lHcXVKaFBvNkdiZmdiNlJUYlAwWUNzYkpQRW1tMmNUNGpmb2ZONW9uNnNyRVBkZmhUMlZlMDRBbV9jaDhROHMtNUJJb2FrNU4xeW5MUG45c1NYaUVvbC02MDZMeDdFVDVhZGtzQzJWM1FUbmloeUFlRzI3eUFYdGJqZmJmZzRrS0VCS2dxcU52UHhmY3RfM3pZQ0ZFRzJwQnhueTBTd0xROG5rdkxiTFBOUUNray1VZjlEM2FSLUhPMzgteFFtdDJZV0hWUnZrZDNZYkppTkwyc1NPNjBmVmRkdktEdzNJWXUwOUdFU3VkYlA3SW1uQVdRWmwxNGZvSnFEeDB2SVI5bzJuZXhPbmRiaW9ydlVTX0czZmRqSjRYbVY1cTVnQlhMbW9FNHY2M1NmMDYzcFVyX2xhR0lKYVpFNjhvRFhmVjNIM1pDeEhybmJ6VGw0dDE1N2t6bkRla1l6aGpVYTZPNVdvMV92SVZVbw?oc=5",
+      "title": "إيران تهاجم مواقع في الكويت بعد قصف أمريكي لجزيرة قشم",
+      "en": "Iran attacks sites in Kuwait after American shelling of Qeshm Island",
+      "outlet": "SWI swissinfo.ch",
+      "published": "2026-11-18T19:17:51.000Z",
+      "outlets": 9,
+      "trending": true
+    },
+    {
+      "from": "BR",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM0g4eEtfaWFBYmk5bHVYc0FPSXBlWThSalVhWC1BZGNSb21BdERUY1k0T1Z0WUtia01RWE1aWEVOWV9kemFpNDlfT0F4ZDZRaHpjSWRwQjZCM0t1bHBmV3F6UEViRzZaRGh3bm1nSVFBX1JLN3pWTmM1aU94aEdYTmlxenZvd0gxU01tZVZuS1ppVU5oMld2SVZHeS1PYjVGSHBfdWQzNm9KV1ZLb1haa0FyTQ?oc=5",
+      "title": "Diretor de Inteligência dos EUA alerta para aumento de ameaças do Irã",
+      "en": "US Director of National Intelligence warns of increasing threats from Iran",
+      "outlet": "CNN Brasil",
+      "published": "2026-11-18T19:13:11.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "ES",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOR2MwTTVaaEZUaDNsNEcyUDJVVHhuWDJ1cW1FMGlheEZsTDNKNENUOWJDLU0wbm5jVVB3X1llcHZTQkZMV1pQR2g2NVlROFo3MmFzUW8yRDBjS3FUMUROWm55LW95R2VvcXdrQkhaNHhKcms2ZGRTMTFER0NOZjRQRFFhSlp0SlRxU0pyTWZnVi1Ob0lNSUFGemNJeWpyS0xVNWhGb1gtWXhIRWZsVTg4Z0RRLTFyTWlORndJSjAxRXZmQlJlTjFvbE0wMnVWWlJ1SlRDZ1k2VmJXWWxqd1lIaG1EeFNIbWFnMnFaUFRrMlV0b05rRVdOSXFtbHUwdHowQVUyWkhWeE1tY195aXMzek1FT3E?oc=5",
+      "title": "Sin final a la vista: Irán promete ataques \"más devastadores\" y Arabia Saudita prevé un conflicto largo con los hutíes",
+      "en": "No end in sight: Iran promises \"more devastating\" attacks and Saudi Arabia foresees a long conflict with the Houthis",
+      "outlet": "France 24",
+      "published": "2026-11-18T19:12:40.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNLXM0ZmZQandSdm5UTkdSM1ZjY2M1c1FZWGw2YzIyeS1ZbF81VWRjdXBNdVByNnBtOHhlZURYald4Mmh3ZUZDTDdLNFh0ZDZZUGJKLUZYNmx4M1duR3VucHZiQTVVUlp1OFZtUnhjbkI4Q0NPSHQ2V0R3S1plS29SX2kzU2dDQl94S3JVWUpfZE9KMTcyalZFOFZWZUQyODlESGZGSFdJV1dDOWpqdlBoaWt6NWkwekh4Rk1LdmRtWXEzbjFvUEtHNTd3?oc=5",
+      "title": "بيان من الجيش الأمريكي بشأن ضحايا ضربات إيران هذا الأسبوع",
+      "en": "Statement from the US military regarding casualties of Iranian strikes this week",
+      "outlet": "CNN Arabic",
+      "published": "2026-11-18T18:08:45.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNLXM0ZmZQandSdm5UTkdSM1ZjY2M1c1FZWGw2YzIyeS1ZbF81VWRjdXBNdVByNnBtOHhlZURYald4Mmh3ZUZDTDdLNFh0ZDZZUGJKLUZYNmx4M1duR3VucHZiQTVVUlp1OFZtUnhjbkI4Q0NPSHQ2V0R3S1plS29SX2kzU2dDQl94S3JVWUpfZE9KMTcyalZFOFZWZUQyODlESGZGSFdJV1dDOWpqdlBoaWt6NWkwekh4Rk1LdmRtWXEzbjFvUEtHNTd3?oc=5",
+      "title": "بيان من الجيش الأمريكي بشأن ضحايا ضربات إيران هذا الأسبوع",
+      "en": "Statement from the US military regarding casualties of Iranian strikes this week",
+      "outlet": "CNN Arabic",
+      "published": "2026-11-18T18:08:45.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNLXM0ZmZQandSdm5UTkdSM1ZjY2M1c1FZWGw2YzIyeS1ZbF81VWRjdXBNdVByNnBtOHhlZURYald4Mmh3ZUZDTDdLNFh0ZDZZUGJKLUZYNmx4M1duR3VucHZiQTVVUlp1OFZtUnhjbkI4Q0NPSHQ2V0R3S1plS29SX2kzU2dDQl94S3JVWUpfZE9KMTcyalZFOFZWZUQyODlESGZGSFdJV1dDOWpqdlBoaWt6NWkwekh4Rk1LdmRtWXEzbjFvUEtHNTd3?oc=5",
+      "title": "بيان من الجيش الأمريكي بشأن ضحايا ضربات إيران هذا الأسبوع",
+      "en": "Statement from the US military regarding casualties of Iranian strikes this week",
+      "outlet": "CNN Arabic",
+      "published": "2026-11-18T18:08:45.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LB",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE83cTFkOWY0RjY1ZGdwQl92anFhZkNNYmU4THJZT0VQUk9wd3JzV3BvcmhhbWJuSGFfcFhjMTNuQUNsRzgyY3d3MzltR2F4NWVWT3o0Rnp0dlR2WmFEMFZPWWxNU0xuV3Z0YlJPWXE2YnZoRE5TbW5xc1JyTQ?oc=5",
+      "title": "بيان: أمريكا تشدد حصار إيران بتقييد نقل النفط عبر البحر",
+      "en": "Statement: America tightens its siege of Iran by restricting oil transport by sea",
+      "outlet": "Reuters",
+      "published": "2026-11-18T17:27:53.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5",
+      "title": "Trump Grows Frustrated With Vance Over Iran War Critique",
+      "en": "Trump Grows Frustrated With Vance Over Iran War Critique",
+      "outlet": "The New York Times",
+      "published": "2026-11-18T17:15:08.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "EG",
+      "url": "https://news.google.com/rss/articles/CBMivwRBVV95cUxQZGNjNFlKZHhRSllTWm5pTDBoZ0hfTDlvS0JsOXM3Y2dMZzNOR1JJWURTVnJZMXZMdXlvT3FQSUtIRVdrZFd3c0RZa25kdFk3YWs4czlEZjM5OUFkNG1IdG80dE04bU83VDRhOURBaldRUEFKeEpQdDZoeU1ONEZnQlRNLW82TVNXd1RuVUhKOEtzMTVqWlA3Rm5HTmhOS1lfNktReTg0UTB3c1B0TS11MGdnejNTX1RaMHlOdEc5QkNpcVdENHdCOFJPNzJuY0hpeGdhbmxJS1pPSW5yYVB5SDQycm5CNm02OWxKQzl0LVNVTlhqai1meEY3OU1DTkEtNXZza1hTd1BYbUJHN053Vlh0RmVWRTJDZmdMcUNVTDlDRHVNY0JuOE82SkJZYVYxdlE2SDZJc1BFQnNEYTJVUzZLQVlhYm5CVkd4SmdxdjFQMFJXeGpFVmhwZXlaYWRRT1BDZlRBVGpHWV9fNDRfTDlncmxwcUlBYmstclk3WUV5U2VGRGt3bWdlY0ZQYkxTaGRHNF93QmlwMERKWUpWZktFeVZNaWlYeW5WMFlBdzhTS1BfZzNCWnNwUEJMRFoxelNsSTRaYUdSbnY5XzB0bzJFTk1ZUE5KbWtJSjNTNWY3RUVxdDdUWnBGTjFPYmF3cE85ZUl3QjZvbU00eGFkVmdzSTA2czVVdjRCODBGN19RZF9WOFJTbU16VDRWZ1IyVnFKTFhnNS1DcjJONG9fWDZrcEZqem9mamxBbUxXa9IBxARBVV95cUxQZTdpVkkwQ3VDZldCUnZVSDExenFTMmdrTTk5N1piSVlkMThqSmV4akZPTzZiQ1BuOTdCTmtjaGNqZXQtMU85bERNSVc3UTg2V2VRdXBWS1ZnQ0xLclJUbGpXdnBvcUJrcHN3SGN6eUozS2VhSFBlX0tINzFPM2lGQW1teHlNQ3VMeGdSWnJJOVZBbnZCS2dNeGlRekMzWmFRcE1wWXl3TUUxMWZiN1k3ZWhYd1ZuNVNZcm1kZXNmWVM0T1c1VDJYYi1zVFE1ZE55aklrUnVkQW80dkxTLTVMdl9oTHNfMEp0WUY4aDlkS2hjMU9KWUJXbU9SazVmVGFtdjIxRFA2ODI0a0N0UVpWaFkxaDhxTXNFRWFnR3FFRHlYcnRNdDBkdDJ2NXJTRWRjYVlWeFVfSE5JbjdUR19QbkIzM1FqQzRSa2ZjajlLVWtJd1B5cldnNVNGQWJZNXdpQ0VVVXMwbGpGSm1oTFpxWFIzQTJMRFdCNldjWXNWTm9kYUxwLWI4bHNUR1pJakVvUndDUkRGQVM3blR1LXZpM2ExcDczNWZubXBFTEFZNUJNQlFqbmR6RFg1MkppT1VrVjVsSENUekItZENQSC0xcTFxVDhycGJSLVRXMlQzaFRNSDBZajl3ckgzUG5Lc3NJTFM0b3RBck1BOUg5QWRhYnZiVmk5Q1RkTXlScUY4eEhoWjA1Z2hDcTBuYVY1ay1zSzJoMUg1dGFaejJCWGNuZWp3S2txUjhUdHJJa2hYd1daZGR3?oc=5",
+      "title": "رويترز: رئيس الموساد ضغط على أميركا لتوجيه ضربات مشتركة إلى إيران",
+      "en": "Reuters: Mossad chief pressed America to launch joint strikes on Iran",
+      "outlet": "العربية",
+      "published": "2026-11-18T17:13:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SA",
+      "url": "https://news.google.com/rss/articles/CBMivwRBVV95cUxQZGNjNFlKZHhRSllTWm5pTDBoZ0hfTDlvS0JsOXM3Y2dMZzNOR1JJWURTVnJZMXZMdXlvT3FQSUtIRVdrZFd3c0RZa25kdFk3YWs4czlEZjM5OUFkNG1IdG80dE04bU83VDRhOURBaldRUEFKeEpQdDZoeU1ONEZnQlRNLW82TVNXd1RuVUhKOEtzMTVqWlA3Rm5HTmhOS1lfNktReTg0UTB3c1B0TS11MGdnejNTX1RaMHlOdEc5QkNpcVdENHdCOFJPNzJuY0hpeGdhbmxJS1pPSW5yYVB5SDQycm5CNm02OWxKQzl0LVNVTlhqai1meEY3OU1DTkEtNXZza1hTd1BYbUJHN053Vlh0RmVWRTJDZmdMcUNVTDlDRHVNY0JuOE82SkJZYVYxdlE2SDZJc1BFQnNEYTJVUzZLQVlhYm5CVkd4SmdxdjFQMFJXeGpFVmhwZXlaYWRRT1BDZlRBVGpHWV9fNDRfTDlncmxwcUlBYmstclk3WUV5U2VGRGt3bWdlY0ZQYkxTaGRHNF93QmlwMERKWUpWZktFeVZNaWlYeW5WMFlBdzhTS1BfZzNCWnNwUEJMRFoxelNsSTRaYUdSbnY5XzB0bzJFTk1ZUE5KbWtJSjNTNWY3RUVxdDdUWnBGTjFPYmF3cE85ZUl3QjZvbU00eGFkVmdzSTA2czVVdjRCODBGN19RZF9WOFJTbU16VDRWZ1IyVnFKTFhnNS1DcjJONG9fWDZrcEZqem9mamxBbUxXa9IBxARBVV95cUxQZTdpVkkwQ3VDZldCUnZVSDExenFTMmdrTTk5N1piSVlkMThqSmV4akZPTzZiQ1BuOTdCTmtjaGNqZXQtMU85bERNSVc3UTg2V2VRdXBWS1ZnQ0xLclJUbGpXdnBvcUJrcHN3SGN6eUozS2VhSFBlX0tINzFPM2lGQW1teHlNQ3VMeGdSWnJJOVZBbnZCS2dNeGlRekMzWmFRcE1wWXl3TUUxMWZiN1k3ZWhYd1ZuNVNZcm1kZXNmWVM0T1c1VDJYYi1zVFE1ZE55aklrUnVkQW80dkxTLTVMdl9oTHNfMEp0WUY4aDlkS2hjMU9KWUJXbU9SazVmVGFtdjIxRFA2ODI0a0N0UVpWaFkxaDhxTXNFRWFnR3FFRHlYcnRNdDBkdDJ2NXJTRWRjYVlWeFVfSE5JbjdUR19QbkIzM1FqQzRSa2ZjajlLVWtJd1B5cldnNVNGQWJZNXdpQ0VVVXMwbGpGSm1oTFpxWFIzQTJMRFdCNldjWXNWTm9kYUxwLWI4bHNUR1pJakVvUndDUkRGQVM3blR1LXZpM2ExcDczNWZubXBFTEFZNUJNQlFqbmR6RFg1MkppT1VrVjVsSENUekItZENQSC0xcTFxVDhycGJSLVRXMlQzaFRNSDBZajl3ckgzUG5Lc3NJTFM0b3RBck1BOUg5QWRhYnZiVmk5Q1RkTXlScUY4eEhoWjA1Z2hDcTBuYVY1ay1zSzJoMUg1dGFaejJCWGNuZWp3S2txUjhUdHJJa2hYd1daZGR3?oc=5",
+      "title": "رويترز: رئيس الموساد ضغط على أميركا لتوجيه ضربات مشتركة إلى إيران",
+      "en": "Reuters: Mossad chief pressed America to launch joint strikes on Iran",
+      "outlet": "العربية",
+      "published": "2026-11-18T17:13:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -33,372 +373,52 @@
       "trending": false
     },
     {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNczRzemtDSHlJLXZIOHl1WHVMYUZkLTFMd1Z4TDJHNWhDa2E3djdWWnM4MXlwbXpnYjNyUU9TcXR6YjhsOWRVS29ub25Dd0pLVWNZRFZWR25CdnNxeTQ4VDRYX2g1dlFqZmQ1N1o1WWowQk5XRTJvSnhwWENzaXlBSF83RW5kbE5FelFKa0J2dnlhQVJJTkE?oc=5",
-      "title": "Iran War Updates: Gulf states and tankers under fire as U.S. and Iran ramp back up tit-for-tat strikes",
-      "en": "Iran War Updates: Gulf states and tankers under fire as U.S. and Iran ramp back up tit-for-tat strikes",
-      "outlet": "CBS News",
-      "published": "2026-11-18T17:02:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NG",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdTNrNm5hd0NlSW9sNVo1VDVMVDA3eEtIMXhDdzJ3LTVjbGNxQ1J3dEVnWFFuMlQxTjVGYVhWaWVVaW5yRHJ3LWFrNkYwMGZjN3FrSENvdDlpQTRLNUNUQUhjb3hUX3BoUWRwMW5iSGZENWo3dm1xeUZIOU1FZm9EZDV5bHZYLU5mTENabEpoa1Y1ZEQyZXNZQk9sQkRzVVpNQ0VpR1lSdjBFRjRBNXow0gG0AUFVX3lxTE4xUnJGLWRBLUtPLWw0TjhrZjNZQUFVcmlHSjZrSURWSno1Z2JhUHBJOEFTcWN4X1R1cHdWLUFhc25RR25vbWtVUEN4S2J2TzdvdkJaLUxHeWJZX1BIbHpfeTlIcW53bkVSU2VoMzBRRnFKX1JvcG9ROHZtcW5jb0RMNnhLdjJUaDBmSWVPM3NRbUJUcmdHN0JkVU1fMW9fZm1kUU16WGJYOTR1eThhNEljVW5lcQ?oc=5",
-      "title": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
-      "en": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
-      "outlet": "Al Jazeera",
-      "published": "2026-11-18T16:54:44.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMi9wNBVV95cUxOTy1xZ1RpQU03Rk9sSHFDWFFyN2VHRUtMMnZlc2h1eEhfWmxWbG9LMzhPV3RyWExXN002OVNoUmxaSHl4ZjdpTU5BbmtDNU1NNm56cWN5VW9veGU2ck9BZGhELVJpY1BYX19Lc1dUd0t3QjBudjVYQ3Z2STFXamMyQU1tVXhhaXdkMjl1cER2TlZDRU9RWkN4dGk1blN5ZnhzNXYxcVIxU2p2QzgwSWQwQTF3YjJaQWpCSTBGQTcwRGhVd042T19qRmozRlgzUWtabjhKdTE1MlZsa2VnRDd4T3VONzlwSU5IUklScnBGdzJzNldHd0VleUk0OExVZ3Y2RnBLS2JTWTJYV0hTbnlaSDVELWswUXNaeDNabVVGdHloSUdJRFROUjFuYXZsejhCck1aMkxtQk5Qc3ltb0tMam1Pdnl4bnBrNThiejZJekZSdmJNTHZ2azZTemRpMFhnS2NxRFN2WHBwYXdYTnF0c185dmFpanNIaFJIVGtrQ0xPS2haZjBLc1NkWlRIbDRoN2VDVWN5M25YU2VBc2dDbnZyUHYwN3BtbXZtdW53N1RHOHBXZlZGTEpqVE54dkF1NDVNQlhYenRaWDJNTFljRXlpbXpuM0xWRFpiS2ZrczNOWWY3Ml8wQmZDc1dEUEc4ZFFvTFlrcw?oc=5",
-      "title": "واشنطن تتهم إيران بتكثيف هجمات سيبرانية على قطاعات حيوية داخل أميركا",
-      "en": "Washington accuses Iran of intensifying cyberattacks on vital sectors inside America",
-      "outlet": "الشرق للأخبار",
-      "published": "2026-11-18T16:49:34.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBaODNtOE1LWTVJT1lXSGZJdExjVDdtWHowVHJOa0lnV1k5cGVEVWtqeWhwNHc0MXlvc2JQQlZ2MFJvSm1ZaGF0YWJKdTYwUEQ5c2dIMUZxdHdtZHphVF9OQ3VSV1UtdVk?oc=5",
-      "title": "ראש המוסד נפגש עם בכירים אמריקנים לטובת תקיפה משותפת באיראן",
-      "en": "Mossad chief met senior Americans regarding a joint strike on Iran",
-      "outlet": "כאן 11",
-      "published": "2026-11-18T16:43:57.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5oY1lTcWZtTkdsZVpSQlIydTN4Y2hfZ1hsVVhzeWFUTnJ6cmFXTjkydWlQby0tbXBvbnd1VW50ZzVRMUxPTjE4X0lFU3lnTU1ncEdyVDdnVzgtOS15UFdSQkY3SkXSAWdBVV95cUxPNW82RDBIVmVjT0hTWVJfUERsTXg5akxGLTlEb3JobTFoOFhCMDZTSnMyN1FqNHdBenZ1SWtoLVBzdkV3WmRlNXBaODhyejdXRTNZbUpGMWJaVmpZSkFadFlXa1hNX2FJ?oc=5",
-      "title": "루비오 미 국무장관 “워싱턴에 임박한 위협 없어”…이란 ‘더티밤’ 보도 부인",
-      "en": "US Secretary of State Rubio: \"No imminent threat to Washington\"… denies Iran \"dirty bomb\" report",
-      "outlet": "VOA 한국어 홈페이지",
-      "published": "2026-11-18T16:43:24.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE45cElSN0tGWmxydlRsOHZ2WnpWdUhoRFgxNEt4bXlKSXgxYlhuZGdaQ19ld01nb2xWUFdmSGhvcWpSRDJPWkdta1NBMlk3SlRZcklEaDRzMTBNQQ?oc=5",
-      "title": "כוננות שיא: הביקור הקריטי - והניסיון לקדם תקיפות משותפות | זו מפת הכוחות מול איראן",
-      "en": "Peak alert: the critical visit - and the attempt to advance joint strikes | This is the map of forces against Iran",
-      "outlet": "YNET",
-      "published": "2026-11-18T16:36:36.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxQeWZ1VjVJZWswTTZ1ekZpQUZJQ2twblpRbGNqdWJuVmNJbzFCcTdkQjMyTFlnaXg4Um92Si04UE5GX2JFcVdwUzBXemljZXZ6eTlKTWQ2Q2cyVWYxUEQxbU8yTy1lUTQzeGY3UnhsWmphTHhSQ01GZm8xZWdpOUU1RFEtZzRBR09scnkxMVZ2b1Vza0NGc0xZMnBXYm8ybERvRW9CVFdpcF9WRFUxU294X3gzNUxpQ2VPRWl5NDZGbVdPeTlEQ0RPMzF6ZXhDUkkyX0oxWEw3aXpIT0pjS05SUzRIc3podVQtVkZtMlRVcnlvTWpxT0hnanlLbFg4Mm1oWEVTOGlFby0wYU1NZWpVeGo0TVM2a0JPb0swV0loUW1PbXZac1RBbUp0d3MtMWZIZVRGcm4ydmVZYW9IX0puZ0NwTzgyd0NLaFNEOGp2Sk1OV3RUQzFueWphcl93SkRpSjRBZXV2d1pfWFBNV1RxaWg4RFRnd3RoeFJrZGthRldXdXNCdWtGbzFnMHFCd1pocmVacUpMOUFLN29XS2c?oc=5",
-      "title": "إيران تعلن إسقاط مسيرة أمريكية شرقي مضيق هرمز",
-      "en": "Iran announces downing an American drone east of the Strait of Hormuz",
-      "outlet": "Anadolu Ajansı",
-      "published": "2026-11-18T16:30:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IE",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAyajc4VEp2SXp3THNtWlBkdnMyY3h5N3VrMzREc2FRekczZ2VyVmFtVHRkNEFpZDBPa1J4ZUVEMHdvQV92WERmNmFLeU8xeW1JTkVISENYWXhmM0dBSjR1UTBtT0dHZjQwYkRaMm00VQ?oc=5",
-      "title": "Iran attacks Gulf neighbours after US strike on Qeshm",
-      "en": "Iran attacks Gulf neighbours after US strike on Qeshm",
-      "outlet": "RTE.ie",
-      "published": "2026-11-18T16:23:29.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMi1gNBVV95cUxNbHU1VWdQY2FHQTlzQnFidV9qTF9kZGlBRXVDamlKR3YyLUVpcmpjVHo4UThJNllDd0owYk1yTTFUUTZHQW0xNWw1cVdSSGg1cVAwV0tscXBEcTg5RFZQMFBoX25TdWNMQkNRd19aTVNOazJFbDFMV1RhdC1rMG9aWGduNF91QnRUaFRsSGo5NU5XRmJtR2RXUS1IaUE5N2pZcWt1MC0zZ2k1c0VnQUpYWk9uTWRsaTVUZV9BTVd0T3pUY0ZVZnZXSU8tN241WmpKVXQ4NDVxSEd6eUFXbnVnOWE5N3ZyNzdtRmVRczlFbm00NENocHJ2V0t1SlpBb0h6cHpfSlprYl9VeEh0QndNdmhUZTFkRlllckFfTXBTSm5paV9Edkx4dmZCa0xBVlN6RVItR1RPYlBSMmlYVG5GWWhhci1MWXRFSjRzYzJjUUNzQnBQZTB0czVEVmRVR2ttSVl2ZmRBWVFmeWxvZ0QwX2hFVEQ4TUNlUnhYdnE5NG5RX2hZcXJHNUJvWVo2LTlOZS1ZRzdOV0xkc0hXZlBqeUVnSEtBQVo0OGx0YWZwdkNfSHhuSmloazltaUVXSXEyR25hTW45Qms0SHN4ZWR4MWMtQ0UyZ9IB2wNBVV95cUxPWTdfVl9qQm5xZmpIS1NPcURCT3NqbWpIeTllMkJ3X09nRGdxc2l6ZFlyLXNZZndDUEg5SHZlX1oxUzlKSmhQMXByQU1ycjNib041X0kyQjhYMDRiSXE2WW1GUDlNMG5ISXVJLU1TclcxZmx4d3RPeHhGckFMVjZrdU5ST0FGdVptOUJER19ibXR5YnQyal9kZUFIRzVVdHRqdE1TeDNrR2w5dkpOLWpLVS1FVXlxUW16Vll5ckk1RWwxdUlLS2tURlVnUTZBT01JTlpGQS1QYUE0YWdzaUpMMTdxc2pzblNWd0VfeWZ2OW5BZG9EdnZCZ3FzSnY2b1hMcTlfWGwyR0N4VE1SREVZeGpBZ2pQUlRuejc0a01manVJOVNGQ2lpeTYtWjRya2dkR2pkZDlIeDRWdW5KOWR6cW13V2dBZnlqazRObWJ3MWJZU1IzSWdCVDlFMVh2UFBJOVFFdHl5YXowcHpJU2E5YnZ2ZHdRUnNpVktUaGQzLUdORGdRRWtCU3VkV3AxSzlfU1J4RTRCTHVEQzdKMUZLSTBjbzhBenhaM2UtalNWdFY0QVRKOTBubDNza1lQa2JNeHN5ZXpQWHp4NzctejNraWFZbnR1dU1rdXdn?oc=5",
-      "title": "Massiccia operazione dell'Idf a Gaza. Iran: soldati Usa feriti in Bahrein - Aggiornamento del 18 Novembre delle ore 17:09",
-      "en": "Massive IDF operation in Gaza. Iran: US soldiers wounded in Bahrain - Update of 18 November, 17:09",
-      "outlet": "RaiNews",
-      "published": "2026-11-18T16:09:45.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWE1ReU9uZ3dGbXlkREpmMlczVmVkb1B1bm9FcEZUdFlYVG00NXFRclhMMmdjRjFmb0R2YTRGSmxzRVJQckJkNGF5Tmg1UTdxRTh4Mkd5RXpjakNkQlpoZFRrZWNQRGdJOUZwaVRiQTNPblhnMG1wQlN2QjhIcGVRemxGamdkbmxBY084MkN6NDJIMGhDS1BucVJXNWhZelA3V1VF?oc=5",
-      "title": "Trump is trying to put the Iran war behind him, but it’s not over",
-      "en": "Trump is trying to put the Iran war behind him, but it's not over",
-      "outlet": "The Washington Post",
-      "published": "2026-11-18T15:55:56.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TZ",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ0lzY3ZrMFh5d2NtZUhOSDdPYjZlbXpnTnZZU3ZYN1lVc28wOGpXdDJqUDRWdVNLMG1UTnlxc184TkUyaF9qeEJfY09iRGlab2RPZUNrNjZkQzdzR25KclhCVG92bnNTMU8wS2J4NFYwMU9CcGNscEJRX2JIbXRObWUyTFpwb2w0TGxBTHZYTjdncTFWWVYzV1JlSWdWcHhtV0U3OUhmOA?oc=5",
-      "title": "BOE’s Bailey Sees Length of Iran War as Key to Rate Path",
-      "en": "BOE's Bailey Sees Length of Iran War as Key to Rate Path",
-      "outlet": "WSJ",
-      "published": "2026-11-18T15:45:00.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "NA",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ0lzY3ZrMFh5d2NtZUhOSDdPYjZlbXpnTnZZU3ZYN1lVc28wOGpXdDJqUDRWdVNLMG1UTnlxc184TkUyaF9qeEJfY09iRGlab2RPZUNrNjZkQzdzR25KclhCVG92bnNTMU8wS2J4NFYwMU9CcGNscEJRX2JIbXRObWUyTFpwb2w0TGxBTHZYTjdncTFWWVYzV1JlSWdWcHhtV0U3OUhmOA?oc=5",
-      "title": "BOE’s Bailey Sees Length of Iran War as Key to Rate Path",
-      "en": "BOE's Bailey Sees Length of Iran War as Key to Rate Path",
-      "outlet": "WSJ",
-      "published": "2026-11-18T15:45:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxNSXFWWThlWk9DQUl3Sy1yNnFrWHJaQ09Fckw3TVd0N0w2cGhnZmg1UVIyWG9tTjc0YzdRbWhBX2dacVkybERBV2xEUzZlS0kzQVNqRTdMRkY3RjVVQ3ZaNDg5MWZrMVRRa3lEZ0s4Rnc5TE9DOC14aVdZTUxhZkhPY0t5eFg2Uno4Xy1uT2xQbDUwUEttZ0h3bUJBVXVMcUJPQmoyVXlMNURkVl96eTNKS0FZOHVSd2NGMEFBX2NYQjFTTHdFREJaN2hZWGVjTDZQT1AwZ2JYbWhsMlUycDlOUzhqYkNBM3MyN01XQXVLMWs3ZTNPLThXbkkxVDRDbkFqZHQyRkFqdG9VcjdlVGlOYnRjMkR1Nld5WXRzX1ZObGh0N3JkR0dEX096RjdWMER3WlR4VGdVZF9EYUNCRHV3RlVOdENWOHZTdEJxblBJNFl4MDR5?oc=5",
-      "title": "\"العبور المظلم\" ينتعش في مضيق هرمز.. ماذا تكشف بيانات التتبع؟",
-      "en": "\"Dark transit\" surges in the Strait of Hormuz: what do tracking data reveal?",
-      "outlet": "الجزيرة نت",
-      "published": "2026-11-18T15:43:32.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SI",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTVBMa3F6MTFnZHMza0trV1BMZWljREpmQ0FfME1nZzZpOUxDSTJiR2xEWlhhZG9RcldvR2tsS1RYY0ZNa0VyZFdWbTRiZTRJMVZQRE5zc09JYWVuSHVXWHBWSkpKazZESFZtdEIzSWtmNk5GdEJzUWxYNVFXOTEtTHF0OWc5UllQTFE?oc=5",
-      "title": "Iran napadel Bahrajn, Kuvajt in Savdsko Arabijo",
-      "en": "Iran attacks Bahrain, Kuwait and Saudi Arabia",
-      "outlet": "Siol.net",
-      "published": "2026-11-18T15:40:54.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYmoyZGdFcnYxTUpGVkgyRTZNY0ItSVc2cmNScnVneWlNVnpYYTdscmRLSl9hNHV5YjQydl9VaHFDYi1ZZWZuUUZRMTlFcm1EWXBNcnRxV0hZMnlXTmVNYVZWa0VkY19FSGVqMTlacldfTlhYRDdGM0p5Yml2ZUdLM2UxeXh5MXp6TTcwR3MtVnFWY3VRbi03Q3N30gGfAUFVX3lxTE03TE45NWJOS3dIaXZoVjVKNDlNTTU3UnAxSkVFMDNHQVlpSWxGMExfb1dwNGpuQU5CMXFuUXVsWGN1ZnA1VGYwak5yR2VRSnJRa2wwS3lQWEVnMnFRTXN0aERzZ3U3aWYyUkUxSHotMk12NEhnMzZ0YmZUUjF4MlgzN2RRdUxoc3o4YUg1SVk5ME12Tkc3cFk5ZFRfLWh0RQ?oc=5",
-      "title": "WSJ: Οι ΗΠΑ χρησιμοποίησαν «ληγμένους» πυραύλους Tomahawk στο Ιράν",
-      "en": "WSJ: The US used \"expired\" Tomahawk missiles in Iran",
-      "outlet": "Skai.gr",
-      "published": "2026-11-18T15:30:14.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZnpaSHBKZkNWT3FINHoxNWoxcjh2TUhvZ1VRSTBETG1PRjh6YVpXd1YxVmNPQzJ1dUVWTlNGdWhpWmJDVy1rUkt2UkZyaWRXZHM3bFZmYnB1LVRIUTZJbzBpWWowaVN5aUNwWnJ2NkZHNDlQRkQza1JjVDI2TWxJN0RFQnpoaVAzTkRHekF4eC1HUdIBmgFBVV95cUxOYkpRcllGZ3JSLUZCVk1vUzdyZFlQeFl1bTI1V25sYldMdVRacWpXeW16NUxIZU5XQXVHeS05TEo5cks5VzNpSzJQQ2d1SEx0YnNHQ0pDWFJSVHZfQ1RDVWYtbmVKbDhZaDcwUGhtbERCMDRVMEJxbkVxYnRIUEh2aXpmZ3NYR1VDc3Iyb2pvdmtGMEtGb0hvTnZR?oc=5",
-      "title": "Armata americană a tras cu muniție expirată în Iran. Dezvăluirile făcute de secretarul interimar al...",
-      "en": "The US army fired expired ammunition in Iran. The revelations made by the acting secretary of...",
-      "outlet": "Ziare.com",
-      "published": "2026-11-18T15:18:47.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcGVKcXlHY1EycS1qaFBrcVduLWwzS1B4RmhJeDg5eFlxR0FIeVNFclFqZVczdXFBVGVLa0xpcHZXZkVWa3JEeHJxVXA5YWxVa3YtejhlaHd1T1JmWDd1NHp3V1E1SEdsS0tkOEc2bVpZNER2elNveGdNTk9xanNjSDZZM2NwSXhULUVPSk84TW1JRFJUbkRRZVBYN2JHd0NnQkYxN0hhVDhVaVYzUEtlTGUwUUpuZw?oc=5",
-      "title": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait",
-      "en": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait",
-      "outlet": "WSJ",
-      "published": "2026-11-18T14:56:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcGVKcXlHY1EycS1qaFBrcVduLWwzS1B4RmhJeDg5eFlxR0FIeVNFclFqZVczdXFBVGVLa0xpcHZXZkVWa3JEeHJxVXA5YWxVa3YtejhlaHd1T1JmWDd1NHp3V1E1SEdsS0tkOEc2bVpZNER2elNveGdNTk9xanNjSDZZM2NwSXhULUVPSk84TW1JRFJUbkRRZVBYN2JHd0NnQkYxN0hhVDhVaVYzUEtlTGUwUUpuZw?oc=5",
-      "title": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait",
-      "en": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait",
-      "outlet": "WSJ",
-      "published": "2026-11-18T14:56:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CU",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbUtuWnNDR2JINFdjUzRBZVBaSl9qUm5pQ3hCQjdzVEd3OTJCR3BFSnZHNjBSN0I0ckp2cTl4N3NZZVU2VDN0aDhHRzB1QjZOUzgxemc5N3MySnMtNVBTTnM5dmYxLUN5MDJ2WUFMX3lZUGwtRkVIVlV0SXFyUUkxLXBnSkRPSmRVVnJjWVlicVRCRkhLdGNOY0o5TC00NU1kRWZVVzlNdERsNldNOHdlZmJrcnNXa1FSXzBn?oc=5",
-      "title": "Ataques en países del Golfo tras un bombardeo de EEUU en una isla iraní",
-      "en": "Attacks in Gulf countries after a US bombing on an Iranian island",
-      "outlet": "SWI swissinfo.ch",
-      "published": "2026-11-18T14:43:04.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPZ0Z6Ymc2c1hGQWFLNE5XRFRVek9kMU5GSm1kTC1hV0tOMG8tQUdxUmpHaktxQ2ZqaUFSUjZLcFVlZndkTU8tVEI2U0x5TDZCSHR3blRqUFpjZXhBS1J4UlllSHZXOUplc3hHQ056S0REcHRXZ19QVzNQVVpiTHo3NkJqZk8tcmdwbk9uWTFWOGNFcDFmenNRa0lmSmptbE9ITVFzdVp4eVBBbmFTZjkyUHh1dUltNjl2WFh2ZUdlSDk2aHhRUXZsMzJHeVAzeVVlMGs3NkZ6eVFUMVJBVlpvdjJCX1lCbEQ2WXdvU0FTMW41aHY3QVVTTE5SLUd0Z1Y2Q1lxdEt2dHBsLVFpeTN4OA?oc=5",
-      "title": "US used expired missiles in Op Epic Fury against Iran; navy officer gives odd 'stale bread' comparison",
-      "en": "US used expired missiles in Op Epic Fury against Iran; navy officer gives odd 'stale bread' comparison",
-      "outlet": "The Times of India",
-      "published": "2026-11-18T14:41:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbGNDR0Z2Z005TDhGUFhZRXRTU3FkWTUxUmdURHFsaTYzYTBDbF8tUjFvLVJSWUgxa25pbnBZZjFUMUd5Rks2T0VRYVpZendaTThLWUZISlA3NVIzQ25ZdjFya1dEV2NvTUdtZkx0a1dPWV90RUQxSlk5aHdUTjRvZU9sWXduVHJnOXcxZTVPRkFrSGJyZm82OG0weTNydlBIcXNtUEpDc2kycGN6d1h5ONIBtgFBVV95cUxQWnFkWE9kZXQyLXJYaFNYRlFnbUdCZ2tSck9NRlhJcmF3R0lXRGpuTlBOM3ZkQm53c0lVYmoxQ3pUTlJuQ1VJbFViX2QzV01aMkU1U2hsc2RLbjhQcFp5Z3FCQi1RbnpkQTV3UW96dG5qbnl6Z19sVjhGeFpubFJjNGlpQmlWRlZsUnRTbFc5cnNzM29JbGxJQzEtVjhJMTNwSWNYRzhqc2ZlbVpPTDdpdjlmMHdlUQ?oc=5",
-      "title": "‘Status quo’ between US and Iran could break out into war, analysts warn",
-      "en": "'Status quo' between US and Iran could break out into war, analysts warn",
-      "outlet": "Al Jazeera",
-      "published": "2026-11-18T14:40:16.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbGNDR0Z2Z005TDhGUFhZRXRTU3FkWTUxUmdURHFsaTYzYTBDbF8tUjFvLVJSWUgxa25pbnBZZjFUMUd5Rks2T0VRYVpZendaTThLWUZISlA3NVIzQ25ZdjFya1dEV2NvTUdtZkx0a1dPWV90RUQxSlk5aHdUTjRvZU9sWXduVHJnOXcxZTVPRkFrSGJyZm82OG0weTNydlBIcXNtUEpDc2kycGN6d1h5ONIBtgFBVV95cUxQWnFkWE9kZXQyLXJYaFNYRlFnbUdCZ2tSck9NRlhJcmF3R0lXRGpuTlBOM3ZkQm53c0lVYmoxQ3pUTlJuQ1VJbFViX2QzV01aMkU1U2hsc2RLbjhQcFp5Z3FCQi1RbnpkQTV3UW96dG5qbnl6Z19sVjhGeFpubFJjNGlpQmlWRlZsUnRTbFc5cnNzM29JbGxJQzEtVjhJMTNwSWNYRzhqc2ZlbVpPTDdpdjlmMHdlUQ?oc=5",
-      "title": "‘Status quo’ between US and Iran could break out into war, analysts warn",
-      "en": "'Status quo' between US and Iran could break out into war, analysts warn",
-      "outlet": "Al Jazeera",
-      "published": "2026-11-18T14:40:16.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMikARBVV95cUxOZVBmRXd6eHoyVF9hVGlRLWxVQTVEMVk0QlZkREluN0FqOUZmM3h1aWlzOU9PTUxla1ZrVzFOOFhWbHpET1hJMTR3ZGxHWE1pSk54VXVlQk5UZXhuUU56VTYycTNkZWdPZ3I2cDdlVC1qQXV3WVB1WTQ0MUx3YkV1VDNQZ2kwRk92VXRuLUdWV2lMYnJjSzhMcmYyOUJnT09WaWdjWGNSaFM2bkF0MU9WcG5IbmhkT1pJUTNhbTVmcmhsSFBFaExkaTBjNGRKSG5ScTQySFhsQ2hPcWlkTkowVnBHZlRrc082MDRhVnBEZnRURlZPVVdkSmRpMmtGMU9WVXFhTmVibTlBMnl6OGVOYW10MUR4azNBZ1F0TVdKVGdFdlRUdFNLc0dqeFd3bjF1bkgzbU1iQlZVYWxNSWpXejYyRWp2YkdfdjJ5aUUxUGtWSzJ6TkZIdm5KTnoxdEU2RnY0R09KQjhqcklZVkNpVDM1bTVDYmhlay1LR0JyWFVhaFpZekp2OVloVEllaVRaWVRGTml5LUNYNEVRVGM0LXFvWEM2SVgxc2ZvTElrVjB2QlIyd19YcUpDVzRsYWdXQTZfUXJKZVFGbG04d0pIaE1yTjFkNC01dEdfSEo0WXEzOTl6WE12NHRZd3lLcDA2Z2ZXQWtlMU9UVERmeTF4TnF4dk1OdlNjX2JpRjBoWVY?oc=5",
-      "title": "الإمارات تدين الهجوم الإيراني على البحرين وتدعم أمنها",
-      "en": "UAE condemns the Iranian attack on Bahrain and supports its security",
-      "outlet": "annahar.com",
-      "published": "2026-11-18T13:52:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "EG",
-      "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxNbzQ3emdzSjA2U0hfOWhsVlVMWmF6NUF6SFIySUU3QUw2OFlXMGRqbkN4N3plSC0yemJJT09XdWdmY01LWEI2d2tIZURrcG4yV2RiM0tHR1FkLXB2OXk1ZXlDVkgwUzFNdDM4ZkV6c290WF9ydEFHcWRSbVdmQTBsZWRNdGtWRmRJb253c0RJcmVBbEVlOURZa3c1YkVORFg5UUNldnNxRFBxQzlpVGxtMlVfMHpNTEdFWV9wWnU2TTdCNTV1cHRwRXBzSGk1c05CNlFGRWhacU1Ba21iSHJyQ0NIME01QVR0enYtV2ZQbW52VzhnbXJwNDVFbVVWMDhWbUVMdTh6TkVCVWxLb1ktQ2g2bkU0c2JRVU1sYkIwR2ZjTmtwX29CQTl5MGxWcU5Nek1QbktaZktjY29zT0UwT0NULW54SmJzc2FjdW9YcGxsYzJ3ZG9uamRQOFA1bFdyRFRZQzZKUHZnZE1rbHpLbXBQcFRQcFVkSmJIbU9pTXJPSkY1eUkwX19Xb2tpdHRldGg0OFJEcWNRaXlHVE44UzZhSkpGVFBHNUJaMHRwRmTSAbYDQVVfeXFMUEtqTTQ4V19PdWFmcmhfZ3N2QjNOYV9YQi1HMExtUDdTaU80UHNfRGg1ZUVXVEJVVm01ejk5ek90eEJ1T1VkeVpMaGt6S250QkFkX1UwWk1OYVZhck5pYVBVTTRXZDFCdlNDTmk0RlNmdkVJeWdQTjc0S3NndnpIMFVxQWR0aHFtbEhyVm96QVd2OVY2SjFmSWVDRXJGcEdkUU9ueENqQWxtUUlSSVc1dzM3eW1KN0dKNHhoS0tKRjZUQ3lWVUhCRjhuMFdNMmNqTk9aYTJralpFclU0anBJTkcyTmJSZllYZ3hyRjFNd2RKb0xYSzVmSTRBRmFnbzJzNXR3dGZmVjdhc29QQ3BaakYyTm5tYlNkZDRGWE8yWnZRRG9KZnRoQVBnelhhNDRKN0J5OGJSazlKdVh4SUl1cGVkSndhVHF4ZHNyRUxMT3VWTE5Wdi1zM29MZU5nYUt4OGdmOEVOa3hNOHVQOTIwYjZrM0tWQlp1Mk1hRnlwaldhVGZRZWtMV284SUtac3hyeS1HMTQ3VDVVVGk2Wnh0MS15UEUydWVhVmdTX0FDTkxVbEdMYk1B?oc=5",
-      "title": "قائد \"سنتكوم\" في إسرائيل.. وإيران تهدد برد يتجاوز الحدود",
-      "en": "CENTCOM commander in Israel, and Iran threatens a response that exceeds the limits",
-      "outlet": "سكاي نيوز عربية",
-      "published": "2026-11-18T13:44:21.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxNbzQ3emdzSjA2U0hfOWhsVlVMWmF6NUF6SFIySUU3QUw2OFlXMGRqbkN4N3plSC0yemJJT09XdWdmY01LWEI2d2tIZURrcG4yV2RiM0tHR1FkLXB2OXk1ZXlDVkgwUzFNdDM4ZkV6c290WF9ydEFHcWRSbVdmQTBsZWRNdGtWRmRJb253c0RJcmVBbEVlOURZa3c1YkVORFg5UUNldnNxRFBxQzlpVGxtMlVfMHpNTEdFWV9wWnU2TTdCNTV1cHRwRXBzSGk1c05CNlFGRWhacU1Ba21iSHJyQ0NIME01QVR0enYtV2ZQbW52VzhnbXJwNDVFbVVWMDhWbUVMdTh6TkVCVWxLb1ktQ2g2bkU0c2JRVU1sYkIwR2ZjTmtwX29CQTl5MGxWcU5Nek1QbktaZktjY29zT0UwT0NULW54SmJzc2FjdW9YcGxsYzJ3ZG9uamRQOFA1bFdyRFRZQzZKUHZnZE1rbHpLbXBQcFRQcFVkSmJIbU9pTXJPSkY1eUkwX19Xb2tpdHRldGg0OFJEcWNRaXlHVE44UzZhSkpGVFBHNUJaMHRwRmTSAbYDQVVfeXFMUEtqTTQ4V19PdWFmcmhfZ3N2QjNOYV9YQi1HMExtUDdTaU80UHNfRGg1ZUVXVEJVVm01ejk5ek90eEJ1T1VkeVpMaGt6S250QkFkX1UwWk1OYVZhck5pYVBVTTRXZDFCdlNDTmk0RlNmdkVJeWdQTjc0S3NndnpIMFVxQWR0aHFtbEhyVm96QVd2OVY2SjFmSWVDRXJGcEdkUU9ueENqQWxtUUlSSVc1dzM3eW1KN0dKNHhoS0tKRjZUQ3lWVUhCRjhuMFdNMmNqTk9aYTJralpFclU0anBJTkcyTmJSZllYZ3hyRjFNd2RKb0xYSzVmSTRBRmFnbzJzNXR3dGZmVjdhc29QQ3BaakYyTm5tYlNkZDRGWE8yWnZRRG9KZnRoQVBnelhhNDRKN0J5OGJSazlKdVh4SUl1cGVkSndhVHF4ZHNyRUxMT3VWTE5Wdi1zM29MZU5nYUt4OGdmOEVOa3hNOHVQOTIwYjZrM0tWQlp1Mk1hRnlwaldhVGZRZWtMV284SUtac3hyeS1HMTQ3VDVVVGk2Wnh0MS15UEUydWVhVmdTX0FDTkxVbEdMYk1B?oc=5",
-      "title": "قائد \"سنتكوم\" في إسرائيل.. وإيران تهدد برد يتجاوز الحدود",
-      "en": "CENTCOM commander in Israel, and Iran threatens a response that exceeds the limits",
-      "outlet": "سكاي نيوز عربية",
-      "published": "2026-11-18T13:44:21.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcVVIOHhPWnFWVF94TVJ0cTI0YU5hNERTcWNyU0phOVlSejlUbVFmYmkwSlZUNGNHenVpZHlydHpHdW9kWHc2UFF6aXJfQVZYcElYVlFsT0Y1RUV4Wnl2aVloNU1nY196aHRMNmV0NTFhWDhtVFlSV19MTElzZVRpUEJNYkpKcURQLUtFd1JfNlB3cmRvYmtONW1vNzBHTmgtYXhmMnNLNE54c1hpd2dZNi1mSlRnOG8?oc=5",
+      "title": "Threats from Iran have increased substantially, US intelligence director says",
+      "en": "Threats from Iran have increased substantially, US intelligence director says",
+      "outlet": "Reuters",
+      "published": "2026-11-18T17:10:25.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "GB",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBTa1F2RExCTGE2dGZ5eTN2YlZzRnNyQk5WUjAxT1lFNEg5NHd5c09VZTdTZmhvaXNsTW9GNzIwX3dqTDNDV19xazJtSFIxeHFzeFhCRXRZa3NRQm51eVE?oc=5",
-      "title": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
-      "en": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
-      "outlet": "BBC",
-      "published": "2026-11-18T13:04:48.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "PH",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tWnoyWlg0TUFyMGtaaVMyblRiUl9GTEozTGRJSWRfMkhKbTVyLUs4NmswN3phb1gzQ3h1UDdoQWlKWDMtY1htVWFrcGdCMThKM0pyX0FMbldyNzg?oc=5",
-      "title": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
-      "en": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
-      "outlet": "BBC",
-      "published": "2026-11-18T13:04:48.000Z",
-      "outlets": 5,
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdTNrNm5hd0NlSW9sNVo1VDVMVDA3eEtIMXhDdzJ3LTVjbGNxQ1J3dEVnWFFuMlQxTjVGYVhWaWVVaW5yRHJ3LWFrNkYwMGZjN3FrSENvdDlpQTRLNUNUQUhjb3hUX3BoUWRwMW5iSGZENWo3dm1xeUZIOU1FZm9EZDV5bHZYLU5mTENabEpoa1Y1ZEQyZXNZQk9sQkRzVVpNQ0VpR1lSdjBFRjRBNXow0gG0AUFVX3lxTE4xUnJGLWRBLUtPLWw0TjhrZjNZQUFVcmlHSjZrSURWSno1Z2JhUHBJOEFTcWN4X1R1cHdWLUFhc25RR25vbWtVUEN4S2J2TzdvdkJaLUxHeWJZX1BIbHpfeTlIcW53bkVSU2VoMzBRRnFKX1JvcG9ROHZtcW5jb0RMNnhLdjJUaDBmSWVPM3NRbUJUcmdHN0JkVU1fMW9fZm1kUU16WGJYOTR1eThhNEljVW5lcQ?oc=5",
+      "title": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
+      "en": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
+      "outlet": "Al Jazeera",
+      "published": "2026-11-18T16:56:45.000Z",
+      "outlets": 4,
       "trending": false
     },
     {
-      "from": "CA",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNN0x6M1JRQWdrMkJ1ZmgzWGVhUVRqMHJwMW5DbXJnYUtVakJMX0tSMVMxUWo4Uld3a29VbDRrWkpsU2gtUmdrcWZTamVhbU1RSzBMdXRXQktab3Y5LVh1bzc4UkZaQ18tWEE2UWxuMkROSDAwS3hlZnVwSlBHT1RPMlMzV3g2djBWM2VWTm5fYnBCanYx?oc=5",
-      "title": "Iran widens attacks on Gulf neighbours in retaliation for U.S. strikes",
-      "en": "Iran widens attacks on Gulf neighbours in retaliation for U.S. strikes",
-      "outlet": "The Globe and Mail",
-      "published": "2026-11-18T12:58:28.000Z",
-      "outlets": 5,
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdTNrNm5hd0NlSW9sNVo1VDVMVDA3eEtIMXhDdzJ3LTVjbGNxQ1J3dEVnWFFuMlQxTjVGYVhWaWVVaW5yRHJ3LWFrNkYwMGZjN3FrSENvdDlpQTRLNUNUQUhjb3hUX3BoUWRwMW5iSGZENWo3dm1xeUZIOU1FZm9EZDV5bHZYLU5mTENabEpoa1Y1ZEQyZXNZQk9sQkRzVVpNQ0VpR1lSdjBFRjRBNXow0gG0AUFVX3lxTE4xUnJGLWRBLUtPLWw0TjhrZjNZQUFVcmlHSjZrSURWSno1Z2JhUHBJOEFTcWN4X1R1cHdWLUFhc25RR25vbWtVUEN4S2J2TzdvdkJaLUxHeWJZX1BIbHpfeTlIcW53bkVSU2VoMzBRRnFKX1JvcG9ROHZtcW5jb0RMNnhLdjJUaDBmSWVPM3NRbUJUcmdHN0JkVU1fMW9fZm1kUU16WGJYOTR1eThhNEljVW5lcQ?oc=5",
+      "title": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
+      "en": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
+      "outlet": "Al Jazeera",
+      "published": "2026-11-18T16:56:45.000Z",
+      "outlets": 4,
       "trending": false
     },
     {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMiogNBVV95cUxOaDhyM0xSRU13bXFrSVlJQzFmUV9lRmxQdlRzbUh5WnE3eHdBOGhzdnFadXpRTlpOekdUNHM0ZTJoZDRlT2k1WVN1Z1RPdzBiV3N2UWdKQWVodUNUVXZldXMxc1B2dTJmRzlaMGtJby1scno3VFFHT1lQTElIMVdXZmdhV0w0OXBncVJnSmd4Skl5c2VvZG1yMU1ZTjdHY0JjMTl2VVRueVFxOVlFaHdVRmJ4aGpJNUt5Rllud0c0VGxUQzF1ZUsybzBtVjNSV1BQaUp2VWVGZWRjVGNjWHpHdldZYjRDc2czRTBNdHZjNkhaVjRaRXVBZV9NSGt5UjlMLWdNcnhKa29mN3VjWmxzQ25hWUZuOTJyRURVblRWUTVvZTFMMnN1Zmw3eGppQW9jTjd4ZDBuN1F2X3pzQ1dKOV9vc29HTkpfM1VMX1Vkdjk4bTkyZlV2YXk1OWt4QllHSVlJR3VZS2VYREl5R1Vyc19ITUZ2ODBjclB3SVFFeXN4TXBwaVoxUXZXSzZSVlVHb3lCdXZjWUF6a01aVkJ1b0FR?oc=5",
-      "title": "إيران تهاجم مواقع في الكويت بعد قصف أمريكي لجزيرة",
-      "en": "Iran attacks sites in Kuwait after American bombing of an island",
-      "outlet": "SWI swissinfo.ch",
-      "published": "2026-11-18T12:44:11.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1ydkRZZUkxU3VWdVVsd3VURzExeUU2V1ktakVjTFRsSm5OTV8zdnpQVGlHcExrWW9kQkt1VkJvM0JQUU9jNkw4?oc=5",
-      "title": "ארה\"ב תקפה אתר שיגור טילים באיראן, המגעים המדיניים נמשכים",
-      "en": "US struck a missile launch site in Iran, diplomatic contacts continue",
-      "outlet": "אתר החדשות דבר",
-      "published": "2026-11-18T12:19:00.000Z",
+      "from": "IN",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcmRray1IZHlsaTktZ1d6Ylc0WFJWYkt0QUpmX0VHelB0eGpqOVpONWVfZmlDQmZfOXZvMXVzWDU3RlgxWDlnRG9NRDFDd3YtY3pnc0tObUlFblZ0VXhFNExWSzQxX1FDcnd4NzVpdnd2YUNWQVE2YlJqNnpvMDAtM24ydmZzdFhsZzVsbGY3cnh5QlExVmN4Yms4d3FMeTUyVkJuZ0h5UFZkT3JFTkVNVWwyRjhPMWRVUFhjcHdRemMwcW5MbnY0Mk1WT0JJRE9s?oc=5",
+      "title": "Israeli spy agency Mossad chief Roman Gofman pushed for joint strikes on Iran during US visit: Report",
+      "en": "Israeli spy agency Mossad chief Roman Gofman pushed for joint strikes on Iran during US visit: Report",
+      "outlet": "Deccan Herald",
+      "published": "2026-11-18T16:15:36.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "EG",
-      "url": "https://news.google.com/rss/articles/CBMiywRBVV95cUxNYlpzX1hpb0w1ZUk4Mm95a2liZ1I5b0gxQk1NSGxHQ1ZNMi1tcnJxVFdvWDdmN3ZDMG52S2ZLRDV1Slh4SmxlYWU0WXd0Tkc1Q2Z2QWY4cWh3ZzlWVmE1SmkyZkVPZlEtMjhNVmVDVGx1VDcwY2RYYWR0ejVlTUQtci0tOUg4M1pEQ1p6WVEwbzROcUYtWUhaRFpWdVJza2ZGTjRMX0x1cFVtQzZfR0RJdGJkcmdwZVVfc194RFJkWEwtbG5PbW9Gc3pYUE9pcnFKUVlQcDljRGEtZ2hhUnhYSkZwb2VOd0pzVWd6SmFIQm91LWlpam8xTkFOS1hKRW5lVklUT0kyMVRJT1pWN08yamU3VlJhci1QWmtodmdpSzJjdXVibENENUhfQXlNdjB2VnVMcVN4U2pFZWR2VVlZdHdwVHFZM2VSdVJiSDRrTG9VQS1MdzMtdl9XSGVTNDlvb0JHOWdfRFpIUkFiWkxIcGNlcmFVY1Vzb0F4TU5VYjJaMEtLamFDanRfX0lDcW1aZzBtWFlxNWVDWFBkU0pUeUNTcjBkT0pfX2Y4eEEwZWlaNkZ1amd4a1JSdGxZWFA1ZFRVTWpnQnBuMXE4RUVPX3JqbjU3NThxSDVORGxuc1JGWUhFbzRUOXVLanBUb21KekhZTExsWENlaV8yZEc2czVBSm4xMThvZy15ME02dUNNMDZUZS1NOWVyeVVhTVdibk9mODJzcWZzTE8yeF9vU3piMW15R3c4TXpDem85ZlZuUERWOFl5WnBJVdIB0ARBVV95cUxOdHpiUmpuUkFtcWE4ZGFsVzljSXlOZk9ab3FSVERJWmtYVzN5NFV6Q2x6V1JVZmJuMFNPQzRvdVJzcjJpWkhOekUweUxzZElGeEtXQW00N0F6cUZzb1ZsdjU1VEd0VnBTNlBMMnZRTFVuUnVhY3BocGJZR0l1MDJIcFpQRDhQWG5HT1JGYWNvM3k2TUJudUI4UHBVcW9pNnVXVGZ0U1ljNmJCeHFuN001WVJ4eWVDcVM3d3EzLWlQVHVjRHQzaS1ZVlZKQTc0ZjdLRTA5T2FWM0tucnFWRGF1c1pPMzZrWnlrMUVuaF9FT0JoUXJpcGlUcGx1bmZzUkZKcmplRUJLQUhRUlItUDNhanp1eXROM3NpMjBPNDVyQV9wTS1iWjN6Z2ZYUjhBQW5kc3RtVnVidTBEVkN2MDBSMTlsZHZWOGM2dlA2ZFlzcEZMVlhSYkRBQkpqelI2aHFIV3pwQ0xUZHBfOWh3RllFVkJiYTNDNHNBTzlUV19LWUNFdzBXVG1tQ2tzV1F1UlFGOE9aV3gtRUhGbFFKNmdGZ0w0TWVQbmVyY2o1Vk4zSlVpQjZuZjJ6VkJFSTNhbVQ2RW1wTXl0ZXZqRUJSMnhnZ2djZGNRTmFuYnp0YVNURjdEV3ZwZE80d0hwUTJzcnEzbFFoRk1BbmZ4OW16SXFwVGFKNlFmbDNfR0tkMTFRTVRDUXRIVUVCOFowV2xDYWdJOHlXT1BsdE9FZFlrNDh1dmdpSFJxMi1OZzZDbGtIYm1vOGcxS1h6M1BuU3l5OExk?oc=5",
-      "title": "حرب التصريحات متواصلة بين أميركا وإيران.. والاثنان يراهنان على عامل الوقت",
-      "en": "War of statements continues between America and Iran, and both are betting on the factor of time",
+      "url": "https://news.google.com/rss/articles/CBMiuAVBVV95cUxOS1VVM2tWbFJSTDlqZHAtREI5VHFpd0RjMGQ3Tm1IbERPdG9EMlhyN1ZySzdjLWhkMVN1YjJXelNOaUNES29hZXJDZWViemZtN2xSdjkzUTlUWFpSOVZhNFQteW9OVG9RN21OYUd4NUp0N29FRVdmTVJ5MFNVbVZhdFhnazJWT29hQzdrRTN3MjQ4MS1LWjV1YWtvWjVqSHBmdkQ0R1RhbXVwM3N0Nm9qVkxkNlp4VUpGbE1QeTRMeDJJZ3JtSFJzR1dVb2FIcFFnbVJtakJLZnZlYkotTnc2Tmx0WnlOUEJxZ0tDc2p2U1dLcnZUWU1JaTl1d0YtYndJQ0k1TW5qYkF6UTVJRm42UE41dHIwbkdWTUd5MmJLREdNWXZQakJBV1RuMVBFN0FyVU9mUG5PZU5ISzNIT3F5cGswZmRIUTJ6NHc2Z21LOF9jM0w1Tm45aW1ONmFFYjJqbC1USVRPUmJ2WFNYVVVWY2ZzN1dEX0gxTGN6X2R6NXlOY19VTWNMUUJ6OTRoNU0taEJNcFRzYWFIbHR3cWNDcU4yVGJBMlYyeGhSZ2t2UkZuVlo0SDFyQ0xvdGliWGwxSVZfTWRMeEQ4ZXd2ODRnbE1KSVFRYkcwS3RjbG5DUVpfc3d4U0tXWExlYTFLLVowZDZ1N1J1UlBQaWoxcmkwbG4wMUNyY0VTNzZqZE44Y0w1T2tGTndYQTFqdU5XVmRldnRhcVZOeENhRVJkalBDZjFXaHNVeGZrZERLUHZGcG5QNnk1b2VWUnhFVW03WWZ6N2EyQTJ5bW9sT3lOUW02VHdCTEF4QkVYUTh3SWtmZWJiZ0pIZ0ViNUtZQ3VEVjdOR25iRHJIcjJhdGVHRjlNQnBoQWxOVVVxMlNyZXExdGQ4Q1F6ZWF0Z242b1k3X3ctcXhsRVlGVmrSAb4FQVVfeXFMUFJCcmtvX1Z4S1g5cTVYcXBYd2d5LWVycmVDaFcyMTNSd2hTMWRGOEUtOU45NGxoVFo1M1VqQ09maTJWMkNjTlZVdDRWMWVuRXNscm9WZFd6ZnFCOTdvaXlXVFVhUzhyeDNoRHdTMFNzOUNEdUNhNExxSVZOc2wwczI3R19rcGQwUzBxR2tIc2g4Y1hXaXcxRlNUR1NLWWd5eXJTNzA4NEN2MWhiN1ZxdEhtR3dYTzNXMDhwdFd4N21JdWsxYnBScmNfTnBqVjVtcGpZNzRQWkpXR2NOWnJZMDBlNHdXX0JlZzhVeWp4Vk5PdVlPVFRWQTVxM0tyU21qR0Q3OXBKLUJ3ZFliTF9UNWFuQVVmcTRRZkVNX0JwWmdZMGg5Zm9odmxickRyV0VMZzFubm90RFhVN2ZQQ3BVdklJU0lFX2d6eVlCeW9HWDhxNE9lV0ttSmlEU0dGdFNzdjBGY0FycExBRnEzXzhraXhCZFB5ejhkOGRoMnFpYXdiZ1RieEZXWk4yZllpdVd1dUhXX2hDZmR1X1JNT1dyTFJ0SnJaWmYtSTlYcVd6aGo5X3BZRWJvbjVjbHRKWGs3QTJSaW9qY1l5bkttSTdYT2ZhaFVZRG52ZGpHSGRxQ3lRV0tNeEdGa3RwZmd6RDQ1VXpsWW02dURtN3dKV0ozMXNuOXA2M0lIWlNNR0JGUXZVV3phWFlzZEFwSVZpNEhPTC1EUHZRbGU0TkNBc1VFS0JTTXhaQmp1bjBrY3d0SzczSzFJUm5qN2g0dlZHbFlPbHVtRU5aZXlGQWNYUWQ3dEhneVEwa1hzRHZCYlp3VVVqSnZEdm8zUTJHWTBWZGw4MEFiblFLaW9LdzZKamhMUENBSVBLOWoyVkVOSzNVcXFrdEIycFJLZHhwbDdFQUNvMUN6ZjBweWpKbGFacEFn?oc=5",
+      "title": "وزير الأمن القومي الأميركي: جهات سيبرانية إيرانية استهدفت بنيتنا التحتية",
+      "en": "US National Security Secretary: Iranian cyber actors targeted our infrastructure",
       "outlet": "العربية",
-      "published": "2026-11-18T12:13:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMiywRBVV95cUxNYlpzX1hpb0w1ZUk4Mm95a2liZ1I5b0gxQk1NSGxHQ1ZNMi1tcnJxVFdvWDdmN3ZDMG52S2ZLRDV1Slh4SmxlYWU0WXd0Tkc1Q2Z2QWY4cWh3ZzlWVmE1SmkyZkVPZlEtMjhNVmVDVGx1VDcwY2RYYWR0ejVlTUQtci0tOUg4M1pEQ1p6WVEwbzROcUYtWUhaRFpWdVJza2ZGTjRMX0x1cFVtQzZfR0RJdGJkcmdwZVVfc194RFJkWEwtbG5PbW9Gc3pYUE9pcnFKUVlQcDljRGEtZ2hhUnhYSkZwb2VOd0pzVWd6SmFIQm91LWlpam8xTkFOS1hKRW5lVklUT0kyMVRJT1pWN08yamU3VlJhci1QWmtodmdpSzJjdXVibENENUhfQXlNdjB2VnVMcVN4U2pFZWR2VVlZdHdwVHFZM2VSdVJiSDRrTG9VQS1MdzMtdl9XSGVTNDlvb0JHOWdfRFpIUkFiWkxIcGNlcmFVY1Vzb0F4TU5VYjJaMEtLamFDanRfX0lDcW1aZzBtWFlxNWVDWFBkU0pUeUNTcjBkT0pfX2Y4eEEwZWlaNkZ1amd4a1JSdGxZWFA1ZFRVTWpnQnBuMXE4RUVPX3JqbjU3NThxSDVORGxuc1JGWUhFbzRUOXVLanBUb21KekhZTExsWENlaV8yZEc2czVBSm4xMThvZy15ME02dUNNMDZUZS1NOWVyeVVhTVdibk9mODJzcWZzTE8yeF9vU3piMW15R3c4TXpDem85ZlZuUERWOFl5WnBJVdIB0ARBVV95cUxOdHpiUmpuUkFtcWE4ZGFsVzljSXlOZk9ab3FSVERJWmtYVzN5NFV6Q2x6V1JVZmJuMFNPQzRvdVJzcjJpWkhOekUweUxzZElGeEtXQW00N0F6cUZzb1ZsdjU1VEd0VnBTNlBMMnZRTFVuUnVhY3BocGJZR0l1MDJIcFpQRDhQWG5HT1JGYWNvM3k2TUJudUI4UHBVcW9pNnVXVGZ0U1ljNmJCeHFuN001WVJ4eWVDcVM3d3EzLWlQVHVjRHQzaS1ZVlZKQTc0ZjdLRTA5T2FWM0tucnFWRGF1c1pPMzZrWnlrMUVuaF9FT0JoUXJpcGlUcGx1bmZzUkZKcmplRUJLQUhRUlItUDNhanp1eXROM3NpMjBPNDVyQV9wTS1iWjN6Z2ZYUjhBQW5kc3RtVnVidTBEVkN2MDBSMTlsZHZWOGM2dlA2ZFlzcEZMVlhSYkRBQkpqelI2aHFIV3pwQ0xUZHBfOWh3RllFVkJiYTNDNHNBTzlUV19LWUNFdzBXVG1tQ2tzV1F1UlFGOE9aV3gtRUhGbFFKNmdGZ0w0TWVQbmVyY2o1Vk4zSlVpQjZuZjJ6VkJFSTNhbVQ2RW1wTXl0ZXZqRUJSMnhnZ2djZGNRTmFuYnp0YVNURjdEV3ZwZE80d0hwUTJzcnEzbFFoRk1BbmZ4OW16SXFwVGFKNlFmbDNfR0tkMTFRTVRDUXRIVUVCOFowV2xDYWdJOHlXT1BsdE9FZFlrNDh1dmdpSFJxMi1OZzZDbGtIYm1vOGcxS1h6M1BuU3l5OExk?oc=5",
-      "title": "حرب التصريحات متواصلة بين أميركا وإيران.. والاثنان يراهنان على عامل الوقت",
-      "en": "War of statements continues between America and Iran, and both are betting on the factor of time",
-      "outlet": "العربية",
-      "published": "2026-11-18T12:13:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMiywRBVV95cUxNYlpzX1hpb0w1ZUk4Mm95a2liZ1I5b0gxQk1NSGxHQ1ZNMi1tcnJxVFdvWDdmN3ZDMG52S2ZLRDV1Slh4SmxlYWU0WXd0Tkc1Q2Z2QWY4cWh3ZzlWVmE1SmkyZkVPZlEtMjhNVmVDVGx1VDcwY2RYYWR0ejVlTUQtci0tOUg4M1pEQ1p6WVEwbzROcUYtWUhaRFpWdVJza2ZGTjRMX0x1cFVtQzZfR0RJdGJkcmdwZVVfc194RFJkWEwtbG5PbW9Gc3pYUE9pcnFKUVlQcDljRGEtZ2hhUnhYSkZwb2VOd0pzVWd6SmFIQm91LWlpam8xTkFOS1hKRW5lVklUT0kyMVRJT1pWN08yamU3VlJhci1QWmtodmdpSzJjdXVibENENUhfQXlNdjB2VnVMcVN4U2pFZWR2VVlZdHdwVHFZM2VSdVJiSDRrTG9VQS1MdzMtdl9XSGVTNDlvb0JHOWdfRFpIUkFiWkxIcGNlcmFVY1Vzb0F4TU5VYjJaMEtLamFDanRfX0lDcW1aZzBtWFlxNWVDWFBkU0pUeUNTcjBkT0pfX2Y4eEEwZWlaNkZ1amd4a1JSdGxZWFA1ZFRVTWpnQnBuMXE4RUVPX3JqbjU3NThxSDVORGxuc1JGWUhFbzRUOXVLanBUb21KekhZTExsWENlaV8yZEc2czVBSm4xMThvZy15ME02dUNNMDZUZS1NOWVyeVVhTVdibk9mODJzcWZzTE8yeF9vU3piMW15R3c4TXpDem85ZlZuUERWOFl5WnBJVdIB0ARBVV95cUxOdHpiUmpuUkFtcWE4ZGFsVzljSXlOZk9ab3FSVERJWmtYVzN5NFV6Q2x6V1JVZmJuMFNPQzRvdVJzcjJpWkhOekUweUxzZElGeEtXQW00N0F6cUZzb1ZsdjU1VEd0VnBTNlBMMnZRTFVuUnVhY3BocGJZR0l1MDJIcFpQRDhQWG5HT1JGYWNvM3k2TUJudUI4UHBVcW9pNnVXVGZ0U1ljNmJCeHFuN001WVJ4eWVDcVM3d3EzLWlQVHVjRHQzaS1ZVlZKQTc0ZjdLRTA5T2FWM0tucnFWRGF1c1pPMzZrWnlrMUVuaF9FT0JoUXJpcGlUcGx1bmZzUkZKcmplRUJLQUhRUlItUDNhanp1eXROM3NpMjBPNDVyQV9wTS1iWjN6Z2ZYUjhBQW5kc3RtVnVidTBEVkN2MDBSMTlsZHZWOGM2dlA2ZFlzcEZMVlhSYkRBQkpqelI2aHFIV3pwQ0xUZHBfOWh3RllFVkJiYTNDNHNBTzlUV19LWUNFdzBXVG1tQ2tzV1F1UlFGOE9aV3gtRUhGbFFKNmdGZ0w0TWVQbmVyY2o1Vk4zSlVpQjZuZjJ6VkJFSTNhbVQ2RW1wTXl0ZXZqRUJSMnhnZ2djZGNRTmFuYnp0YVNURjdEV3ZwZE80d0hwUTJzcnEzbFFoRk1BbmZ4OW16SXFwVGFKNlFmbDNfR0tkMTFRTVRDUXRIVUVCOFowV2xDYWdJOHlXT1BsdE9FZFlrNDh1dmdpSFJxMi1OZzZDbGtIYm1vOGcxS1h6M1BuU3l5OExk?oc=5",
-      "title": "حرب التصريحات متواصلة بين أميركا وإيران.. والاثنان يراهنان على عامل الوقت",
-      "en": "War of statements continues between America and Iran, and both are betting on the factor of time",
-      "outlet": "العربية",
-      "published": "2026-11-18T12:13:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOX3hpNzJBX2xBdkJBUVBuTTY4UHhjeDVPa1NFRkFEc01Ick1fWGp0U2lIQzdSN0RkY0phdnJDRlZJYjBHaGpyeG9kWWdtbW9qV0VCaWRTY0FIQmwxa21TSzFuRldXQ3RyaW1YVjBYbndZbDZxdENRZ3BkeGZXY3pEOXlkWW5GU3ZnaHdhalE5bFFLc3dZM3BXN0RjM3RQUDA4NGxLaVphTDY?oc=5",
-      "title": "Irāna uzbrukusi mērķiem Bahreinā un Kuveitā, ko izmanto ASV",
-      "en": "Iran attacks targets in Bahrain and Kuwait that are used by the US",
-      "outlet": "Diena",
-      "published": "2026-11-18T12:01:35.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "MX",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPd0JoVGdVZk9xOFZ6Y2g5RG83alpiN291N09MUTVpU2tQcUZKeGxaMkUxVVBSNnJLZmtoY0hNUGRnR1dqMzREOWdyZkF2VTZwTUhqeGhkb0NmTHh1SDAxaTNEd1Z4dWFqc3NQMTZXYjBxS25tVEloTlI2STVsazZ6X2xxSEZMODhPM3hYM1dTNWF0SjZlclV2d2VPQzJHUWtjeDREdV9RdVdVcDFXOW1lYkkxcEZBOUJqd0VrUE81OGdmdkhPaGpsRC1BMG5aT1pLNExBUW40NjZReVJ1QkhmNWp4d9IB4wFBVV95cUxQNExlLVdITE5QN3IyQkc4MEVnMldZclNhaTBJMDBHVHFaUmpOa2V1dzZKZHZNNnhkTFR6OENZcE1jM2wtTEQwNnZpcnNDRTdCVEdDVkw4dkZnQ1QwVExRRXpGUUhUd3Z5VHl6S1dBVTlpTGNHdFNTVURoWmxwelFSSDBUVUJidEtLblN2bUVtZ1BQV0Z6T1VDbUdxR3ZFSkpaOXRiQy1fWmVHLUZPNm9YaU5fTk1zV0ZLeXA4UnVRZVJPdXZjTXdZbGUzNnlKaHBoTUdObFZ4eVh0TTBEdmtQRkl3WQ?oc=5",
-      "title": "Respuesta a EE. UU. \"sin límites geográficos\": Irán lanza drones contra Kuwait y Baréin",
-      "en": "Response to the US \"without geographic limits\": Iran launches drones against Kuwait and Bahrain",
-      "outlet": "DW.com",
-      "published": "2026-11-18T12:00:44.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CO",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPd0JoVGdVZk9xOFZ6Y2g5RG83alpiN291N09MUTVpU2tQcUZKeGxaMkUxVVBSNnJLZmtoY0hNUGRnR1dqMzREOWdyZkF2VTZwTUhqeGhkb0NmTHh1SDAxaTNEd1Z4dWFqc3NQMTZXYjBxS25tVEloTlI2STVsazZ6X2xxSEZMODhPM3hYM1dTNWF0SjZlclV2d2VPQzJHUWtjeDREdV9RdVdVcDFXOW1lYkkxcEZBOUJqd0VrUE81OGdmdkhPaGpsRC1BMG5aT1pLNExBUW40NjZReVJ1QkhmNWp4d9IB4wFBVV95cUxQNExlLVdITE5QN3IyQkc4MEVnMldZclNhaTBJMDBHVHFaUmpOa2V1dzZKZHZNNnhkTFR6OENZcE1jM2wtTEQwNnZpcnNDRTdCVEdDVkw4dkZnQ1QwVExRRXpGUUhUd3Z5VHl6S1dBVTlpTGNHdFNTVURoWmxwelFSSDBUVUJidEtLblN2bUVtZ1BQV0Z6T1VDbUdxR3ZFSkpaOXRiQy1fWmVHLUZPNm9YaU5fTk1zV0ZLeXA4UnVRZVJPdXZjTXdZbGUzNnlKaHBoTUdObFZ4eVh0TTBEdmtQRkl3WQ?oc=5",
-      "title": "Respuesta a EE. UU. \"sin límites geográficos\": Irán lanza drones contra Kuwait y Baréin",
-      "en": "Response to the US \"without geographic limits\": Iran launches drones against Kuwait and Bahrain",
-      "outlet": "DW.com",
-      "published": "2026-11-18T12:00:44.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CL",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPd0JoVGdVZk9xOFZ6Y2g5RG83alpiN291N09MUTVpU2tQcUZKeGxaMkUxVVBSNnJLZmtoY0hNUGRnR1dqMzREOWdyZkF2VTZwTUhqeGhkb0NmTHh1SDAxaTNEd1Z4dWFqc3NQMTZXYjBxS25tVEloTlI2STVsazZ6X2xxSEZMODhPM3hYM1dTNWF0SjZlclV2d2VPQzJHUWtjeDREdV9RdVdVcDFXOW1lYkkxcEZBOUJqd0VrUE81OGdmdkhPaGpsRC1BMG5aT1pLNExBUW40NjZReVJ1QkhmNWp4d9IB4wFBVV95cUxQNExlLVdITE5QN3IyQkc4MEVnMldZclNhaTBJMDBHVHFaUmpOa2V1dzZKZHZNNnhkTFR6OENZcE1jM2wtTEQwNnZpcnNDRTdCVEdDVkw4dkZnQ1QwVExRRXpGUUhUd3Z5VHl6S1dBVTlpTGNHdFNTVURoWmxwelFSSDBUVUJidEtLblN2bUVtZ1BQV0Z6T1VDbUdxR3ZFSkpaOXRiQy1fWmVHLUZPNm9YaU5fTk1zV0ZLeXA4UnVRZVJPdXZjTXdZbGUzNnlKaHBoTUdObFZ4eVh0TTBEdmtQRkl3WQ?oc=5",
-      "title": "Respuesta a EE. UU. \"sin límites geográficos\": Irán lanza drones contra Kuwait y Baréin",
-      "en": "Response to the US \"without geographic limits\": Iran launches drones against Kuwait and Bahrain",
-      "outlet": "DW.com",
-      "published": "2026-11-18T12:00:44.000Z",
+      "published": "2026-11-18T16:03:00.000Z",
       "outlets": 4,
       "trending": false
     },
@@ -423,82 +443,12 @@
       "trending": false
     },
     {
-      "from": "BR",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZFd5aDg5VTBaQkNwcUpSdUFnV2lvenRfcGpVOXFUOUU2bG83WWdmR2ZuTzh6eE5GdDlUc3YyZ3BUZXRVZDJiVUJoU0FiX1h4UVZCdmpMYlg0WEVMemdZMTNUQ19SRUV1UkUwUnprRndjcXlja0tvc2stdjh5aFk2eHc3b2Z5YmhCREhGMGpfQVU0R2ZwbGstWDdRRlNzZThPWWxjM1FFa2lINDBseEt3?oc=5",
-      "title": "Irã diz ter atacado bases dos EUA no Kuwait após ofensiva em Qeshm",
-      "en": "Iran says it attacked US bases in Kuwait after offensive in Qeshm",
-      "outlet": "CNN Brasil",
-      "published": "2026-11-18T11:53:50.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA3MWJZR0gzdzY5a1VQMHZCeUpxdXExVVJEQWd1dFpaQTVmRG10cU5pdnR5eXEzLTlSYWtIc2tfbXkxa0lXMnd4by1MSWE3TU96RUhzZFY5T25FdU4z?oc=5",
-      "title": "이란, 쿠웨이트 미군기지 공격…트럼프 \"더티밤 계획 사실이면 혹독한 대가\"",
-      "en": "Iran attacks US military base in Kuwait… Trump: \"If the dirty bomb plan is true, severe price will be paid\"",
-      "outlet": "뉴스핌",
-      "published": "2026-11-18T11:32:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbEhzSG15U3FBQzVYZldXNldLUEZIUlJqdjIzdjFwT3BQOFJwcHVuQUtIRzlxQUxxSjNHYTB4VXZlUlJDM29kOGx1STdhbi1FYXdnaHBPSEgxS0VhMHR2VVdBQmdYcjAxbGlvUkRoRjFRajRsdG53anJPb09Jajd2UmdJSTlPN3JzSjZJRUh6ZXRsWFRxaF9IcWNxUW1rOTZOcnhMOVp2T3pPVVVMemJ0d055M1NfNXVJSV9xMU43NVRvanEwLUdKVFlKT1ZKRTltUjJ3?oc=5",
-      "title": "Krieg in Nahost: Golfstaaten fangen nach US-Angriff iranische Raketen und Drohnen ab",
-      "en": "War in the Middle East: Gulf states intercept Iranian missiles and drones after US attack",
-      "outlet": "Spiegel",
-      "published": "2026-11-18T11:24:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdFhqNERBdmtqRzJSU0xwdDdNOU5vcmhSOTEzY1RRdldKdU9QajJVSk0yenoycUdfcy1GNUZLZWl6Q1RGZjZienlyZmlvUGtSUWl6ajhnbS0tb19HSWQxQW50eERKX05nYjN3SXIyWGJ1RFJ4NGdfd1otUU9QRFJiTXZ1ZFh6a1ZjSE5yVy1janpFRmtxeUxGWktpQ0twRVRxYl81cnByZWxBZFlsdXpxYjZJblNLMnhwSi02RlNHMmxaSU5qdDNlTmxUbFhDQlJqV2RVYmpB?oc=5",
-      "title": "Priimdamas Irano ambasadoriaus raštus Nausėda iškėlė šalyje sulaikytų lietuvių klausimą",
-      "en": "Accepting the credentials of the Iranian ambassador, Nausėda raised the issue of Lithuanians detained in the country",
-      "outlet": "LRT",
-      "published": "2026-11-18T11:23:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMikwVBVV95cUxNa3dyUWpWMVE5a3pfTEd0SWFpVm9zdzZ5ZVhtM1dQQW1tTzFHT2d3eGpVTExEb3RqekgwcXM5VlBLV0ZCTU9mLTA0dGJHbWJrUWtfaXduUHE2cWwxTDV3NUJZZklhNnZtTURsb1ltOGM0QkozNmROSllDQ1FyeHE1eGJ3LW1kWGpiREg1RzhnOFNNbkg1czRfWUxDbDZkQXZFV1pMSzFMR2lDbUVGbDItQUdIWERGSUpfeHBjQXdSdy02VnhMMXRKeXFnbmRSYU9WbzFHZjZITEh4ajNJa3NaNDRRZ1cxa3ZyQ2RLekFHSkRYN0ZPNU1SampOd1pnLWRKdmxKZ1ZBTHdsR2FRMDdUR2lBMm5aanNZQnBTdE10Q3lmdnZfdDdvUmdfaFBpdEhHVlE3LVRhWVdpOW54eDZ0UnJUaEM4aFdtQWVIelFEOHJTTW12bnZ1X2RWd18xZW1oTGg2Tkl4T29xaWJ3MmE0YVBlTnBsVVppTGZucnlPRGFCTVJnZmpRaFhYU3VMMmM5QmJ3WHNFNk9DWUtBX3BOemI1aU9RZDdLbkdCVURRdGwwSnVUMHM5eW9hUm1yVlVHYnBGVjA0Nmg5ZEFmSW5ReDdDQnR1Z1ZoT2t3VVM4aDMxZWd3TlNoRW5ySUhuZkZidVVhbW9tX296NVY4WnpYajVwODJXSFJUYWkwMEFoVGxoaGtZeHdmOUpDSTAzMUZGZmNub1Faa0Zyazh6M0VLY0tRbGNmQTFRM2pUME1rVXQtVHBFWWJsZG44WHhIS21jVVJtMllwcGlYcFRTZjFWLXJuMC1aS3ZndEt5a05yRTd6MVdnVHhaM2wxZlNfM1Rnem9QVGhvamJ6TDF2ajBiOEZCa9IBmAVBVV95cUxPOEJXMGZ0ejAxRmowMXVDRjZONlZSNzJxVG1GMndFbHpUenBmWHlpNFBTRGlDNE1IR2wydndOYUZYb0NqZVc5ZU1ralNXX19vaXFDSVNPX3NHOFgwTzJGRzQ0dldFaExhZXBhSnJDcnFYNVR6ZndDdHB0V1FNMk1HVzB6MjY5cHY2ZzV4VnJiVUgtc3RscU1LQUlOZ1Y0aEs1S0lpWFNlZ2l2d2dDU1pyNEhraXAwd3dLbVlmR3A1ZGhZbVFqZVo0RDhlbW56RmhVRjBOdzhBd0lxaUplY1JVc1VMTnI1dGVXcW1jaVlZYV9uTWhpam9PR2ctNlRvUmRTT1J0Z1YwSkdMbDYzUG12T1VUYk9PdXlybk5JODNaQ1VfZ25jbTNoWG1CY1d5bVhNYkVyV29WcGMwVUJHOHhmZVpaN3Jmd1NIU3Q1WGdWZllQbGNwT284UHlYQUJHbVdkNmd6NnZUSFhXUFFsYVlmSFRsWlhXWWhLckt1djQyR2FBUHU2UWtQdHM3OTZGd0l3UFhWejI4aHhMTFVDWUpwREpGbWt6R21HNHBsR1ZlVXVKeXNnYTM2a0I1WWF2R0E1ZmtNcW1oQmZEdlNFUER3X19nWHpQazRyTWtKNGZobjNEVjJ3VHJ5NC0yZTZqUndvWlhQVFp3cjNFdW93NHBkMS12VVZKZVRXMmFPcVNTSF9ZUUh5MndNQ0szbGJ4UmZBa1RoQW4tb3haYkZ3U0lKbC04enV1OFNyclBvNWJpYkhXTmZqMkREeGYzNDNNVmxSTl9XYTlNLTY1bUhvX3Jka3FfNHBzaTBXdUZiWTdPUjNYSW1PQjZkbnJuc2pjNl9wZ3J2bDI3eFpFMzFraWczeXZkQWVNTmhq?oc=5",
-      "title": "السعودية تدين الاعتداءات الإيرانية على الكويت والبحرين واستهداف ناقلة نفط إماراتية",
-      "en": "Saudi Arabia condemns Iranian attacks on Kuwait and Bahrain and targeting of an Emirati oil tanker",
-      "outlet": "العربية",
-      "published": "2026-11-18T10:54:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PT",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPd3ZzZ2xJclJjNG9JRm50MUxqOTdaeVRmMjF3My0yQ18tZGprWDFRS2FSamJ6bGJ0djJ4dHU1NUg1NkhnV21RamZoMUNaT2c0cVFFMTBVZ3h4dTl5Q2pnUkhrRE9zSzFubTdpNXZLdVk5WlBRTFF6cUtRRnlwRXZFT25HYnlLZHZwSFJkTUpIVHNMdzFUa2JLZWZWZkZoZ3JPa2cwTkFLTDNUQdIBngFBVV95cUxOeUdqci02Ujh4ckNaQlFBRHpzV3c1Zy1Ia2EtaW9SNW1mQzYxQlgyUEhoOVZ3TkR1Tk5RWXRIZXFGZ0xaMlZVRlF6RUg4dDB2TFJiM01iUE9Ob3F2RDlKeGJWT0N4U3pfNjRPREJXdXJJak82cTRyTTZOWG5ZSjFuRWc1TnpiX0RVTlBZRVhMbTIteHFXbVZodHFvVno1UQ?oc=5",
-      "title": "Irão em alerta máximo após chegada de porta-aviões norte-americano",
-      "en": "Iran on maximum alert after arrival of US aircraft carrier",
-      "outlet": "Jornal de Notícias",
-      "published": "2026-11-18T10:13:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "FR",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNcm5wN2F0dGxSZEo3c1RKOXByN2x5Q053WFJOTEw4WEQ1OFpveVk1dXF0R19ScXpKcklsazFfM1doRG9Ca1hrYkxJck5Cd1pFeGx2bUwxcF8tTGdTeTBJajN5aDU1bWcySjNkZ1hRZ2FvdnNTblRLTmRjeDQ1U2Vaa2l3Wk5kMThmTjIzenVnNGkyZFoxMm9mQTRQVzB0UlBBZUFUZ2FpLThVZ2NkYmRINHAwNlFSenMwZnFMZUlPOF92SkJWOVl0SUpOZ2pyRVJMZUw5MS10dk16a1RwN3Rlc29wNkxGVFJoSFp6RW5hVQ?oc=5",
-      "title": "L'Iran frappe au Bahreïn et au Koweït après des frappes américaines contre l'île de Qeshm",
-      "en": "Iran strikes Bahrain and Kuwait after American strikes on the island of Qeshm",
-      "outlet": "RFI",
-      "published": "2026-11-18T10:05:17.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IL",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcWpuczVqckRfbW5ZazZOLXNkUWxSR24xU1NWQ3hVMHpkUXNHSUw2OFRzUVVNWGRFbXhRaGstaERRak5GZkdNTnNEM0YzMmZoNVU1X0NPdWtLbDVwcnl2dHFoNHZtVmNteXpWNVRaVjlpWkJuYjB6S2xEOVJqME5yNVo4MkdsWFA0QWdyUkFSN3plOEp4bHlxZ1ZkN09KOFRDZnRMbF9Kb2dxNFU?oc=5",
-      "title": "מקורות: איראן הקשיחה את עמדותיה במשא ומתן מול ארה\"ב מאז בחירות האמצע",
-      "en": "Sources: Iran hardened its positions in negotiations with the US since the midterm elections",
-      "outlet": "הארץ",
-      "published": "2026-11-18T09:15:00.000Z",
+      "from": "MA",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuLTdLUmpPSDZaSXMxVnhEQkVtMEl2bGdpcHlveFFaTkFIZkF3aTBDODJGRERnOWVoYnhtM2hubmp5VURabHpaa1lXLVpxZWpHa0F6eTJtLWdFbEFW?oc=5",
+      "title": "L'Iran affirme avoir frappé une base américaine au Koweït, les Houthis visent Riyad",
+      "en": "Iran claims to have struck a US base in Kuwait, the Houthis target Riyadh",
+      "outlet": "TRT Français",
+      "published": "2026-11-18T10:46:52.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -508,7 +458,7 @@
       "title": "News: El Niño, Iran war shocks could push nearly one million more Ethiopians into poverty, new report warns",
       "en": "News: El Niño, Iran war shocks could push nearly one million more Ethiopians into poverty, new report warns",
       "outlet": "Addis Standard",
-      "published": "2026-11-18T08:59:32.000Z",
+      "published": "2026-11-18T08:58:42.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -523,32 +473,22 @@
       "trending": false
     },
     {
-      "from": "CN",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4xY0gtT0l5dnoxNlRLOWpMTFhERS1ORWlMY0loY0doaU56VktCcU5ucmNncUl0RkJDTXlCLVNNajBMTGcxdm5PYkhySFBBVUV2blQw?oc=5",
-      "title": "美伊再度交火！伊朗袭击科威特、巴林，美国空袭伊朗导弹基地",
-      "en": "US and Iran clash again! Iran attacks Kuwait and Bahrain, US airstrikes Iranian missile bases",
-      "outlet": "华尔街见闻",
-      "published": "2026-11-18T08:37:16.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "MA",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9TTl9jaG44ZjdhZkNCNXQ4MTdDbTdkYzh1YTdvZm1zRWVKQ1VyQjVXRGFnLU5BdjFmak9TbEtnemxlbHNaTVA3bThSWk9SX3lnQ18zemIzT1o5TmtYSi0zYjNWMVNFWFhVS0R4Q2k1cU1nUHJhUl9ObDdPbw?oc=5",
-      "title": "(Multimédia) L'armée iranienne dit avoir pris pour cible une base militaire américaine au Koweït à l'aide de drones",
-      "en": "(Multimedia) The Iranian army says it targeted a US military base in Kuwait with drones",
-      "outlet": "新华网",
-      "published": "2026-11-18T08:37:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "VN",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNM1BXTWR2ZGFuX3R1UEhTMGJ6NHBTYzZxSTNmVnVrcVQ4YVlGNU9TZjgzVVM1Q2lnX0R5YmxvdzJuLVNfaktYZjN0bkVpNUk2NjF1aTRqZThmQnNHUmZ4N3dtUnVCVDZocS1fcVNMLW9RUHBobEJ4Qk1CZS1tR1JVaTlSS1VZT1VWa1NsZ09XTHpMdWplVC03VVZRem9ta3JhYWdxVFJR?oc=5",
       "title": "Lầu Năm Góc giấu thông tin Mỹ và Iran giao tranh gần như hằng ngày",
       "en": "Pentagon hides information on US and Iran fighting almost daily",
       "outlet": "Báo Tiền Phong",
       "published": "2026-11-18T08:20:45.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMi8ANBVV95cUxNQWNkUjhocy13ZUtxWXZVWHg2QmVPQVNKc0hKS3gyZTNvSXg5Uno4Xzc2TWlEZ3Zselp6LXZXWHVzdEZKcGp5REVncDlHc25tSDRLN0hVejJLLXBCVEZyVkZCSTlxLUxnemo3cUhFUHRkOVp6MWJxXzJobDFBRU4wY1dkV2pydjhEN0tJc29jckpXS2l0MV9sUFVtdDRkRkVtZjkxOVljeEdIanZxaXBzRlNqclNhSW9IbVUyaEFYakRKZERkQnpRLV9qWkJESWNxaTdjM3NsYzR3LWMybnQ4RVVIV3FpREpQTFhxM3RaSmJVZ3NfZ2tvODR0eEtZMUNXVG15SFVZalNzbnl2Yml0Rm85amRpbjBiQXVwMkpCXzNQQUpqVlBYeGFhMWtTWDF4UFdNa09jVG9KRzJuYU9Zcm9vX3JZckV6eC14SUxyRThHeTZfY3pHNGM1MmhOYmFWLWRmbmhrTTRyRmd4VC1xUVBrQ25SZkZZcVRWNllfdGVyaWNucUFWdDBNT3V4NlY3UVV1emRfYlFNWFp3c3pJWVJLVTJ4OC1uSmZkVG1pVkxUTUlqd3o3V1ZZb1Y3bGduQldOaFFBa1JoWTNqS2x0T3RmTWZ4bjBiellxdkpCUFlpMW45Q1dMdHhoWXZRMll60gH2A0FVX3lxTFBha1Q0RlRNdGpaa3RfemVjblJMNWwwWXc0QktPSHJkbG9DaDIxWEFNS0VUWURvbndJMEczLS1YVEJVNER2dXlpeUJyaERsX1YyVUpZbzZnX2NjeUdZNEt2SFVIc3c1b1Fhd1VfTjFGNkNkc2gzVGU1N0NHVDMwNGdJdjRiVFMyd01aOW12TFh1LXdwUTdzemZnSVZiUWw5M2c5QmxreXF4MHpRajg4RmdmMWg5NG9LZHlfZi1mWmxqSm43UE82bXdORlBIblI4VE54cERIbUZpV3RwdFpENW1yN0hSVk5HOFJ5UGx4emZyY19UMnNVUXdtUnhkZWtRTUVTcDNUamNZWHZDaWp3NU5ud0RpUjk0NzNUMEJOeFR6QjdYdTFKcXVhLXZacTlOekRjaW51OXkteHBEMVIxRXVoVzh3b3dtaUM5WVRVZDVOZFJ6YTRTMzVYLV9VZ21KYjI2Z3FXaExSUUxDRGRsbHBEZy1xMzdQYmRjOEVvMXVPYms4cU5DazgxeXdzUE1hUVd3bHE0WFdPVUlRZGVzb0JfM2hRTmZUaWJLaHRSaWo4SGxwRXBrSXd3YTVIRThKY1VaTUNudG43QjNWeWFXSzE0am05NEF1ZUd0LTNVWGRDeEs1aWF5d3BZOXJTYVNjb05rWFBnZ1E?oc=5",
+      "title": "הבסיס האמריקאי בכווית הותקף על ידי כטב״מים של הצבא האיראני",
+      "en": "US base in Kuwait attacked by drones of the Iranian army",
+      "outlet": "تسنیم",
+      "published": "2026-11-18T08:00:32.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -557,7 +497,7 @@
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qV0o2a1owMjN0Q1JCNHY4ZGFBQ1d0M0o5Zm0wcUcwQXY0dmg2VEVjTEFlVzVacEZNVXFnemVhbkVTX2FxNmJMMGh4VmswSHFYWHNOcTJhTC1uWEU?oc=5",
       "title": "สหรัฐ ถล่มฐานยิงขีปนาวุธอิหร่าน บนเกาะเกชม์ เอาคืนเตหะราน โจมตีระบบเรดาร์มะกันในบาห์เรน",
       "en": "US strikes Iranian missile base on Qeshm island, retaliating against Tehran; Iran attacks US radar in Bahrain",
-      "outlet": "Matichon Online",
+      "outlet": "มติชนออนไลน์",
       "published": "2026-11-18T07:55:50.000Z",
       "outlets": 5,
       "trending": false
@@ -573,43 +513,13 @@
       "trending": false
     },
     {
-      "from": "HU",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWkVOY2h3Ty1pOTdxaXB2bkhMcEo1SXRXQjd0MUlEQW5VOFJHRTZ0TkRGNEotcV9yd3FoVW9qLXE5c1VuX0U3clAxNHotdFdoTUZRMkhYcGxjVmVFOTVwWlA1Nm05bGNvMU9kWDU3V2NoT0M3dWlqQ1ItT2pDUXh6cVNlMVZpT0FLU01uWmhiSkNzNW5ydldBanBEb3NXTHhub0g0VkdZWUwxcnBJVTRSZi05YTRobXdGNXBHMHp4SmdkYUlPUnRxZW5xdlJSSkk5WEZ0Z3ZBM2xzN3BPVk85V09aWdIB6AFBVV95cUxPaVE3TVdOOVEyajN0bjZvNHh6aDBjREtHYzNNZTd6VmtxOFF5dlpoVl9MbF9NXzVVLXJNWEljZUhCWFRxWFctOHZvLXpIdzNPbDhLV0JraWc0anhRcTZtb1BfTlZVUFhqSXJkN2NQTXUwMnVjU29maHZSMTNxLVNrbjdoT0EycE5WVFoxNl9QLWRpaVFsMjJIUTVCbXlKeTlvZFh3SWp0MDBpaFI0eHIyYThRaEplMzJTaFhGbVJSdC10RUh5OWd0YUx2MUl0NGxHS0dKSVNZblBGOXREY08tbEFkeWQxODB2?oc=5",
-      "title": "Ismét felrobbant a Közel-Kelet: lövi egymást Irán és Amerika - Záporoznak a drónok Bahreinre és Kuvaitra",
-      "en": "The Middle East has exploded again: Iran and America are shooting at each other - drones rain down on Bahrain and Kuwait",
-      "outlet": "Portfolio.hu",
-      "published": "2026-11-18T07:25:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "JP",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9SSzhHdmFXNjBSeHg4djBpY0NYWlBoeXNlT01SbEdLblZuWlRMaGtWdXJzeU1ReExVR2t2UGpIM2FHWG82S3h1TEpLajBuZnRN?oc=5",
-      "title": "トランプ氏がイランに警告、「汚い爆弾」攻撃を実行すれば大きな代償",
-      "en": "Trump warns Iran that if a \"dirty bomb\" attack is carried out, there will be a great price to pay",
-      "outlet": "CNN",
-      "published": "2026-11-18T07:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "IN",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbjMzWDBzaDVUcDlSRm5OSFQ4Zllldzhpc2JKb2tyLWs0NXVDa2Q0NU9YWm45NFdhYW9fRXZ1SUZpVnoyclN6UXM0VXNLOW9nd21aQkVIN2hORXduUVBZT0RyVENMYklvbTdLdTVxSERMclRGcXM2d3JnWU1aX0dkZWU4YmdZa2M1X3JaUGdCVWRNUQ?oc=5",
-      "title": "Iran army attacks US Patriot, launch sites in Kuwait",
-      "en": "Iran army attacks US Patriot, launch sites in Kuwait",
-      "outlet": "Mehr News Agency",
-      "published": "2026-11-18T04:04:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMi6gRBVV95cUxQNXpKR1BRc1VuT3RzU09QYjFkR0U4NDVsYnoteGtlb2ZnY0ZVQTh3d3ZCR05xSXZ6a2xrNmk3T0hvLW9LUFdoX0pqQURRTlZVN3k5ejJYQzlzb3FhcHEwTlpvbTlKMFlkdFd3aTVHNXo5b09yUTRFaEpaQzFpbThUSWo4RTAySTQ4UVdVeDJJS0NmWVl1VnVZWERrcGZRQ0tPczBLZWFnR1MteDdLSGlHV3QwUzVEbTNHMUZ6NTEwRWJKX0toYUduYTJrUzlJM1NUcTJWeVRiaTRMQmotalRxRmExcFdoYXNfRU5USTVPYTVuOElKb01idGJMclZKQmkyVHFBbzc2ekpOczhReTVCREdlblVOUVpBVUhIM18zVDBOVGlLOXFmcndXaVh4VG5SNzFlWEV0Zi1VeUpudHdmdDRtMGd0SlhqT2NLbnZEY0Vwd2VvMXNYOUNHVFEzenU3UndHeEs4eVRoeDhxRTViWnlia3VHZHpQQm5ycW0wUTFrVFFwRTlvSzRtVTluZnJTMHBHYlpSRE1FV1pYOTkwMlcwYVBDaTFseE9wN2FYUFlJNHh5WVJlYWh6MFZLY0VhNUN1SXg0WTlVQTYwSkdtMURQanZFczR2d0s4QUtfaVctTl9RM3ZydVNyMVRNUGJpYndMM3ExR3VnekxsV25rSXh3ZVYteGZQMy1VS0xZQ0puajBkN1VtM2hxa3JXUE84LVNFeDZoMGJjRmFHMFhVMnNWM1pnU0F2bkowejg5N1Jvb1R5YjZBa2RQVHBLM3NkNXR1RC1KaHJ1QlRIdkhqQzZBbHU4N0RVV2fSAYsFQVVfeXFMTjBzU1NLc0Y0UmloMjZReHpOamNLaUE3b0hsYlJBNHFHdzdjaDRBLXltVWZFTjF4RDREdlNneGNuWmJvQnNkSEY2ODk1SkNJZXBLNlRLMHhUQlpMZi1qdGl4cS1NX1Z0T1gwdHlQQ2twaDJsZjVKM044LTNFNEduNms2MTkwandEVThOTmtHeno2aHRCdEZLVXRHNVhLeUpVQUFORm9JbmRBOUhEcXVsTHFKWlBPaTNLOTBUTUFJaE51UUh2a2M4c0dtM0JfUHFRSHpNOTZseTRzWU9hVUhqTmNXMEp2VTdwbFZOTTU4ajVOZ1NOcUhmUTI2aE9FeTQ2WkoyRENwNk9wNFNqNXFvN25NeHFpTzgwcVROSGtXYXZyVUJnaVVibERTOHJoTDZMeDVZRzFnSnB1MjQtVmlHZEg2QTJ1NVB5czZHYjM3SEY4cEZNRzQydlhSR1pnQ1BMNU9KV0g0QVlkR0lOSlJ2YXEwSmRLR2ZxY3NueEc3N2NtRnVFMWtiaXQ1LUpDY2xCOTU0R1J1WTU5cUtmMC1sdDljRFlvS3dfYlFSMWdJTFVEeTNlOHg3NU9Oa21FSlRiSkRPWTVFLUVwcTg5TkZzbFJhLUVPM3lNMEZWZ3owQmg4LVRJZTUzQ0xaOVhwaW9LNGxqNUh5NkhtR25nc3FVWFg3anVIZDRMdlNzYjRITEVYbk1NNFpkbmx4bmpZSVhaX2gyWjREVHo4aEswbTdCMHlRQXJQQXk2ZG43SENlUWZlaUczNUhNenNQcjJtbHJiUHlGNmxNRWxlTXBBdU5HT2RKa2tsZjUzX2RHY0lhQ2prTUZvZnlxVUFGWGVIWHRzb05OeEdpd2g5cG1F?oc=5",
-      "title": "القيادة العامة لقوة دفاع البحرين تعلن تصدي دفاعاتها الجوية لاعتداءات إيرانية",
-      "en": "Bahrain Defence Force General Command announces its air defenses confronted Iranian attacks",
-      "outlet": "الحدث",
-      "published": "2026-11-18T01:18:00.000Z",
-      "outlets": 5,
+      "from": "AE",
+      "url": "https://news.google.com/rss/articles/CBMi6wNBVV95cUxPOGxBcE9lTUVSRnVjeUxzRUNneDFHaWQwNTR2UVRnWm44Zk80V21iM2ZXNW5MSXJmWmxiVmJkbHBFcS1vblVvNm5DN1NybUU0LWlULUhOY1NhemJRWFR3U2Z0a1d6ekF2Qzg1LTUwT09tcXVUT1gxd0pTcFNnMC0tLVNsYk54cXZrVnA0c25Zb3Ria0stdk5ZTHlHNkVSM0hFWEhiYTRtU0h3d01vdnk1YmNyOHVSZmxOcGwyUnFTSkQwVWZ1R1ViUmh1ckNfMnVwOVNwdHJSeHRUeTVWUUhJS25CajdYSzlYWFktUjFVZ3JnVWNBUWJuc05HSmJCOFFkdXRLMnJOSEtIYldMbjJrcGwxS0dzVlI2TVFYNVdmQWRLSTVkeWRQRENPUjVLWmZVOEEyYl9vVkxrdzRzM2hQSHBEZXQxZjR1cU43S21nU3FJSkI5QWNveEtoVUU2WGxVUVI2M1JxZFZpXzc1ZWk2djNWV0dzc2dKUTRuV2NlRG9OMkd3c2dkZXFPaXphNW1YbHRfdGYwdng2R0pfaVRtb3ltMjBTcHdXRWNIZ3gxRFpFZFV3dFRySzBDLUctLU5neDRtaUg5bTdmRnJybWd3YTRibFRmRW1KaGJCNV9CNC14ZGs4aXJHS1VhZw?oc=5",
+      "title": "الجيش الإيراني يعلن استهداف قاعدة جوية أمريكية بالكويت",
+      "en": "Iranian army announces targeting of US air base in Kuwait",
+      "outlet": "Anadolu Ajansı",
+      "published": "2026-11-18T06:41:33.000Z",
+      "outlets": 4,
       "trending": false
     },
     {
@@ -618,18 +528,8 @@
       "title": "Aviones de Estados Unidos atacan una base iraní de misiles en la isla de Qeshm",
       "en": "US aircraft attack an Iranian missile base on Qeshm island",
       "outlet": "DW.com",
-      "published": "2026-11-17T21:13:17.000Z",
+      "published": "2026-11-17T21:35:36.000Z",
       "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "SA",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ3JmNjhYRDNWYWk5dl9hWHdBOHR2RFQ3SENKdEVRRkIydmktbG8yOE9xUnJKVEpuM055TF82d2VLN2tiQmFOOXpaNzB3RW9MQ1hvX2tndUtVM1dvSm5zS21rU1V4cm9FcmFCd3VoRzJKTkFXWWFqbFAyMXU0aGs2d3ZnQWxhT1JaaXIxQ1Q1NnlYZEdvNVhXMnl4T1oybU13YUxNUmpwZ1ZoUndXRkdJSTk0X0ZLTDRBLV9hRg?oc=5",
-      "title": "سنتكوم ترد على مزاعم إيران بشأن استهداف موقع رادار أمريكي في البحرين",
-      "en": "CENTCOM responds to Iranian claims about targeting a US radar site in Bahrain",
-      "outlet": "CNN Arabic",
-      "published": "2026-11-17T14:30:25.000Z",
-      "outlets": 5,
       "trending": false
     }
   ]
