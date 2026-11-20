@@ -2,7 +2,7 @@
   "code": "BR",
   "name": "Brazil",
   "kind": "local",
-  "updated": "2026-11-20T03:50:13.771Z",
+  "updated": "2026-11-20T13:29:50.903Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "BR:pt-419",
@@ -10,42 +10,304 @@
   },
   "articles": [
     {
-      "title": "Dólar dispara a R$ 5,93, apesar de intervenção do BC; Ibovespa recua",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUnRZcEE3clJYLVRyNjRudnlFOWh3bkZqVi1sSGhSU21aUUJJS0EyLWJ6eXpzMzF2WEtnNWx5akZnYW1YcVJEc21KcTdwN0VfdG1GV2RkRGZPa016SDRnWkFxckxpYlNGUVAwRF9KcVRqMUltY0s3OTU1T09sWnJ3SW9oU2VPbWZSczZFUC15VXI5WjBDNTZhdzR6WHpwZkt2TEJkY18tcW5mZ3hJV3BMNDgwUWtJQWpjTExKZVpGcC1YSDdCWnFuMnRsVVlHQQ?oc=5",
-      "outlet": "UOL Economia",
-      "outletUrl": "https://economia.uol.com.br",
-      "published": "2026-11-20T01:11:46.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Dollar soars to R$5.93 despite Central Bank intervention; Ibovespa falls",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Após pressão de Motta e Alcolumbre, STF marca julgamento da Lei da Dosimetria",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYWJnVG03UHFGRmhSNWtFa2R2V1JXa2s0eThaQUg5c0dJbWFsWkUwcVNiaDBjV0hjLXRwMC1Ub3lEWVB4a2QtYmVUQXp2Rl9iTkUtYWtTa1NjOWliVlN1dVZUTUFTUW9YV2o3Yk1QTkQyNDJob2dRY19vTTFPUlhCRTRfd0pwV1VoVzdESDluUjQ4MzlKdmszY04wLUtIekhmOVFYaHlQcjBEbGpVY0p4R1ljVzhKeEwz?oc=5",
-      "outlet": "CartaCapital",
-      "outletUrl": "https://www.cartacapital.com.br",
-      "published": "2026-11-19T21:42:00.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "After pressure from Motta and Alcolumbre, STF schedules trial of the Sentencing Law (Lei da Dosimetria)",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Anthropic é responsável pela maior oferta pública de ações da história; papéis dispararam na estreia na bolsa de Nova York",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNaS16di10VUs0WWNnemhkbGYtVE1JT2ZPLUZCY0NYeXc3UkZERjNpRjhIYU1hTHdWQTR4UUwyVHJKbnJDVHRXN1IwX0VXUkxkdDh1ODhlVW9kVnJ3SXE2ZHhDQ3lRbW1SckJIUmdaTzdzQUpmSVg3d3NzVlp3NndnWE9sMTV3SGVCNmpHZjBXSzAxZXNGU0RrU1pyeEdlZkROREhXVXpOSmpuYmNvM3pKSzF6bEY4dC1YR1VnbkEzMHdQZl8xdjgxNk5zbXphTFlyVHhrNUZfTmlYb3hnRkdzbEtzTXBLV3M2T19SaF81eHJ5TVVRWVFLNm5qVC10ejV2dUdtLWgzVDY3bzBIT3hr0gGeAkFVX3lxTE1ULXRfaUY3MWFVY2Q5ZEw2NW9NSGZ6RlJMMmtYWkxOalJ6VjlJX1NMeU8zN0UzeEtDMXZOWmg5cDhNY2tzOE1jdlZ1QkRmT21NRGIwa0p0WUxRcWE0QTkxSVVNbGx5YkF4Y1NvYlh5dDNXcklIc19jQ3A5bDY4MzVIX1c5d1FmaWdXcXhkeGJjQllxMmVlWGdjR09aV2lOV1I5a01zMHlqZ0NUMk9aWTEwMEk5eDIzTDNWbmRqNno4MGVMTVNGb2ZuUWpvSVh5YzdkSzBPZy1rU0lTVkU2STdFSTRLZFFzekR4WDNtQm40dE1uUEFRcUV6OHFjWDdCX0RkVDBUQlptekRySS1XSmRBMTJfMWFoT3lSNzlJa2c?oc=5",
+      "title": "'Destruiu a cidade': Tempestade no RS causa uma morte e destelha milhares de casas, diz prefeito",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWjljQnpGb01vcVZoMXZNVmV6YVpPRmgwM1VmS05GcE43OERxeFV6eWw2RndWeUQxeHd6VGhSZE1WTXpqbk1ranRzaHAzS09RNERhb3pmZF9iMy12azhHTjBTQjdBUDB5LTRZN2NMeFcyMnhpQWI4MHd1SnpERmdVTEFrSzAzbTVsSkFKV1RXR25heF80SmZlMnBnNm5na1hYdG5XUUdiODJsN3Mz0gG7AUFVX3lxTFBNRDlyQ1c1VXdWRWp6MldnNXZkckNXSExCb2ZtUGFkRG9STlZ6SGhrdkFXZjZ0QnF4QWZLRHNWNVpfa1NOV1RnUTN5dGVtYlRmS0hWQzNmbzl6MUI0X2daUlpMRXhNaDBoaGg5Mmx4RkpJYlNMZGw0S2tfUVVueThtMjluQmxDbWZXbXJlVDFJSmI5RGJuM1A1MDIzcWZLYm0wanVoN0NyMnpWeUVYbFl6YWpUSzFGak01MFU?oc=5",
       "outlet": "G1",
       "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-20T00:27:42.000Z",
+      "published": "2026-11-20T09:09:35.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "'She destroyed the city': Storm in RS causes one death and strips thousands of houses of their roofs, says mayor",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Fachin tira sigilo de relatório da PF sobre Mendonça no caso Master a pedido do ministro",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOWi1lNEoyV0dkbndiY2VfQld6ZnUwQ2c4cy1jUGhGdVIxT0Zjb2ZWOFZDellMVVZLTTJieWl1aXgtS3BWMkhOek9wVnpkTDEtTHdzbmctbHhUWGR1WV8ybDVYTXZPMTRzWHg3RnAyTS1NUEloVUVCVVRJMUZKemRqMVNkMU9YWTRsY0U1anlTS1lNMHVPR1A4bGl2c1E0dHdPS2EtdkNpUHoyOENqSTBNWng0SGYxUFdxUjFFaFdpTS1ZLTZZYVp1SkRTa0s3SHJ1WVpCT1FBQmstNlhELUp5VmtZMmpJWTdDM0E?oc=5",
+      "outlet": "Estadão",
+      "outletUrl": "https://www.estadao.com.br",
+      "published": "2026-11-20T10:40:01.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Fachin lifts secrecy on Federal Police report on Mendonça in Master case at the minister's request",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Saída do Rio para o feriadão provoca congestionamento na Ponte Rio-Niterói",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZHBXUUVlQVNDWTR2VmNvLVBaam05aDZkdzk5Uk5HdHhsQ1Jab0xXMUVCTUF0cFYtOUZ6Z3FQTVJxaHZXUUZ0cllYOW1PX3N5Z3l6c09YakNISjVuQXJjaFFJRVpTOTB5S2ZxN2hJcFlLVVVzNUp3OFNMN2VtR01qTDZNYjVVV2NTVzNfRmZLOGtqbXZ4RHdoXzh2TFR5RWFQV194RdIBswFBVV95cUxPLXIwTVBUNExfaGlNOHk0Znk4MUlWSmxCb3daWlZaQk0yVC1rNTdZZy1XQkZnU0dBZDNjVE9NYkw1bEFiV3A0OWY1Y082STktbk5NZEJyelU1dnRHcl9vS1ZaNUZwRmg5UjhzTS1uUGRtc2JjRjByb3N2bUpRSloxVTNMNmM3ZkNTTjhrQ09Ba2MxVEg5YkpJRmx3UC0tWGFpX1dIcTE1Z1NtMGcyYlNGT25DUQ?oc=5",
+      "outlet": "G1",
+      "outletUrl": "https://g1.globo.com",
+      "published": "2026-11-20T10:31:12.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "Departure from Rio for the long weekend causes traffic jam on Rio-Niterói Bridge",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Thais Bilenky: Cisjordânia tem recorde de ataques de israelenses; Exército diz não conter",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaXdWLWJEdDhHX2JVUUdqdHd2UDJBOTRHVnp5NWFiVmNtZ0xIWU4yZkZPS25HaV9EOXpUeUo1WGN0ejRpNFhjNjVHQi1RT28wZEZoQ2RxdncyRG96N2FhY2ZDYjBxSVlLWXJoalhjbEVtdTl1cHdxOUFBbTN1bmZNSGlNdmNEN0swamw1aFZobElkeEtPdnAyQXlwbGZWVDhraURQd2JMWE15YlZUOUZEM29kdHBJVlo4dGEzMkpPM0oydFpXSnJsWkRqaFdNVVVTNWw5OQ?oc=5",
+      "outlet": "UOL Notícias",
+      "outletUrl": "https://noticias.uol.com.br",
+      "published": "2026-11-20T13:02:30.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Anthropic is responsible for the largest public share offering in history; shares soared on New York Stock Exchange debut",
+      "en": "Thais Bilenky: West Bank records highest number of attacks by Israelis; army says it cannot contain them",
+      "about": [
+        "PS",
+        "IL"
+      ]
+    },
+    {
+      "title": "Metade dos reeleitos na Alesp faltou a 76% das sessões durante a campanha",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZWxpU0c5bEFwMjhxYVR5TEQ4a180dVBVRXQzUUZjOHBqWGF5N1hQZkxzWW1LR2o1T0p2U2dDYzVWLWNTazlVM3hyODU0VHFNOU0teGQxNWprTlNSUEFQZGxOaGVOb1ozU3NJX3dZemNFTGV2SUFvRGZNMDZpLUxUdXFDbVhubjBxejRFd1I3WmsxR1dKZGU4RVRITVg0eUhjbWdLZ2lObmdyZG80Vm1oZEZnbVpuZmJCSHctTTVheE5uQi1yVVBTaWhvdkJFUXAtaVBxVkFB?oc=5",
+      "outlet": "UOL Notícias",
+      "outletUrl": "https://noticias.uol.com.br",
+      "published": "2026-11-20T12:17:42.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Half of those re-elected to Alesp missed 76% of sessions during the campaign",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Rússia ataca Kiev após Putin prometer retaliação; 6 morrem, há apagões e pontes são atingidas",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVlhVdUFzdHZjV1ROTXFuWVZnUkNMUUpnNkpuYjM0dzBsVmRXWTNzMlFZQVZmVHktSW9zaW1FVkhFelFhSVZiOHF4VHRIcmQwM0FNaEhleTZ6anJYTDV2bUVUYXI1dzQ3aUxWTm5lejBaaWdnbmRvT29nbXctZmNIaXZtM3Q3eDVIT0Y0MWxMdlFpMWtMYldsX1R2dWZiZ1MyTkHSAbABQVVfeXFMTndYU3E3c196eFhsaWtOVUNzV2IwQU50NUlrZTJOYll5bGNzNk1tVmZCc3U4cTNWek9ERzV2dG1FYXpLZ192X3pLbVY3Q1lXUDdWV1NuRHVIYTZOOTl2dnRMbTZrc3IxalNvOUpxbXVrWF9zWldaQWNQVXhQc0N2a2Q0aDd1MEZTajJJaS1RY2tMaC1PNE16MUIwcEZyeGp1Z2pBSG9Ga05NdnFRQ0JNNkw?oc=5",
+      "outlet": "G1",
+      "outletUrl": "https://g1.globo.com",
+      "published": "2026-11-20T08:39:08.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Russia attacks Kyiv after Putin promises retaliation; 6 dead, blackouts, and bridges hit",
+      "about": [
+        "RU",
+        "UA"
+      ]
+    },
+    {
+      "title": "Mianmar chama de ‘injusta’ decisão da Corte da ONU sobre genocídio de rohingyas",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSGIzQ1RkY0J1bjRUWFdsT3lCRF9NcEJzVlNmYnVoUk5XZEsyNW9XSGFaTXpkb1pFV3dzdHk5ekpJWGVIZXhKYjhmRFJYYnNuZFhqUWlqa2JvV0FpRHk1R3duV21PNW43SlBDaVpoUkZucFJPT2hGOEREUGRMTHEwazhuMUtKaHA4VFlnMjIzbm9NQkVBeHNKd3FYTnpGWVFHeEhUcS12RnFodDI1NTROLTB0N0JQSkV1bG5aeVBwbEVtMjlFcWw5TtIB1wFBVV95cUxNWU10SGFmTUw0aUhHT0U4VVRZYVk4TU1RUzVOTDdhVWt5ZlIxM2gwcG92SF9SdmtqNzJzYTl2UFdJVGJpNWFweVRpQ1JVaGpjNm8tX20zUHRCa2JXMHRKSE0tUlhPbzBOcEQ1VEJaUzd1ZlZDcTd4em5yNmtvRWNScEdMb3I4YUVkNVVZZzJDV2x0RnN5NjE3Z2J1WGZTTXRlYU9zSjJDWmVnNGh2RWNORlUxVGdybUhmdlRvbGhXYmNYTDlnekttcndjMk1jR3pqQXNLMXlmTQ?oc=5",
+      "outlet": "G1",
+      "outletUrl": "https://g1.globo.com",
+      "published": "2026-11-20T08:29:36.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Myanmar calls International Court of Justice ruling on Rohingya genocide 'unfair'",
+      "about": [
+        "MM"
+      ]
+    },
+    {
+      "title": "Tributaço de Lula teve ‘toma lá, dá cá’ para ser aprovado no Senado",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQkFXallYN1hvOFVhMmVqVDl4eVdZWkx1WGJmQVEyekE1cmdkTE5wdGtFU3N5eDRhaHJ6UDVncldsVW1kNE1NNU1SMlJzTkx1VVZVdDBCS0k0MlktMHNHaU5wMEtWTjFaMFQ0enNTZkRURkVCQ3lFQ0hBMlJyYTNMWUpqV2RZMVlVZEpyYU5oblJESE9iXzhtaVpLWmxNUXVYazM4dXFEcVpoV1ItYTN1RzJyN1Z6VFVM0gG-AUFVX3lxTE1VRzc4cEExMTBkZGFDSGNTNU5RQV9lZldjTi1wMi14VXotdHJNYTcyUmhDRTY5czRIX2xXTEkzWUxMSU1lUmhlUG95Z0RISUdsV3YwWDl2NmpTdm8xc2czbjFHQkJJMzJJWEFtUUFMUWYzUU1wUk44UzAwVk41OEd1cll1TndZNks4enZyY3FxeHBOSjgtVlc4WmtGeUxNN2Z4RlBRYWJZOV8tYmJQZkNaYVJnc0NfckxxRE9Uamc?oc=5",
+      "outlet": "Diário do Poder",
+      "outletUrl": "https://diariodopoder.com.br",
+      "published": "2026-11-20T10:16:24.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Lula's tax hike had 'you scratch my back, I scratch yours' deal to be approved in the Senate",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Anthropic x OpenAI: como a rivalidade entre os CEOs virou símbolo da corrida pelo domínio da IA",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSzViMURrQVM3cTB4REUzdEhrY0JtNTljYnBNWHgxamMtaUxpamdVdmFOMEdyQlFPREliUFE5dzR1MVhyOFhrZHRQSTZmbzhFTFEwSHpKdUNWSE1ERld4dGpWY1VaMlE5R1VKbFBfcFNUYndjZmdGWEVSOTBLVzlCUFBKUmpLWHF2eUp2b0FJQUVESFlsMTA0SzQxTVc4VWgzUXoyNXBjd241Y2R6d19ZY2lzbWRVM2JsNkJFX3lnNURhbzc5Tk5SS0ZfaHlfanZBNjhneWNMS0NGZ3Q2enZaT19LNjFYZ9IB9AFBVV95cUxPMzdnNzcyZnVGRkdjYjl2b2ZxbnROc1ZKSGk2T1F1a0NIR3VrRXVMNUFhZnA2MVJFTU82Y2pkQ3EzSDlVOE90Z2dTeEdTRGhoejE1ZWNRck5oVi1oel9SUkRRV1BVWlJoQ0xRRHNrbzRSeE5qRnltRWJ6S1RHMl9MTWxCZEFmMmNNaWxybWNQajVWSDhrSF9OeFZISW1lNmJEdmN0cnBCMnNQZE03aFdiWWpMNmRxMHk4bEp6cE5MZkp0Ymc3R3hHWlFJbVJLUWNMc2Q5SW1qdTU3NUJRdGJHdjk3X20tQjF5bC1ZNWtiRzVoYlVR?oc=5",
+      "outlet": "G1",
+      "outletUrl": "https://g1.globo.com",
+      "published": "2026-11-20T06:00:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Anthropic vs OpenAI: how the rivalry between the CEOs became a symbol of the race for AI dominance",
+      "about": []
+    },
+    {
+      "title": "'Fora da Bolha': O papel da esquerda em um governo de esquerda e o racha no PL de Nikolas",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRTQ3UUFvM1VxNk85bW1ubkhJUkpFRlc0ZDVvaUNaNmJXd1Z0YnZmNUxPeHAwMGxTR1cwdnZQRnZqNUpYNjZnbEMzX043ZE5DZGVxOHJBd2dZdmJ4X0xTNUdUSlJZQmRnalNaenF0SVcwbWg5eERpUll5alZnWHFGSGZSMFFIdHRBd3poNndBQ1ZJeTAyd0VWT29EV013aFlKdHdhWHhINmtMOUNKZmk4MWhpUXlKTjhkdjVEOVNJVTBES0VCVEhFQmlZakdjZkJ5dkp0RlBIQ0MwLS1ScHfSAewBQVVfeXFMUEhUUlk1X0tiMlZDVzlkeDBYWFNSZEc4UUd5SjBtaUw3eHFzbFhPVlpBZXB6MWg4MzY4Y2RuVklUdnFsRllfcU42NDByS041Q3RjeW5FaHVYakc1X1JqdG9YR2phZXI4MlFIYWp4YU5Cb0Ixa3NNOHBlTzRhVy1hNGxHbTFRVXdxcEptUzdTeXM0Nm1qWnA0YmpnZTIySkZUenQzQ3hUUzdKRWluWi1PYmFDM1AtR2ZrVjJMYUhOODNyLTRBd2NkdFlZUXFqeUloMEFJN2t6NnFWWmcyQmNQUU1LWkFKbEtVenhKeGc?oc=5",
+      "outlet": "O GLOBO",
+      "outletUrl": "https://oglobo.globo.com",
+      "published": "2026-11-20T10:15:10.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "'Outside the Bubble': The role of the left in a left-wing government and the split in Nikolas's PL",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "OAB discorda de Dino e pede que STF julgue Van Hattem presencialmente",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPS1ltdWlzaFBGalJpUDZMODhhLXdPX0JpNW96aGlVZDlSd1luRkY1cnFrQ082elBIalpXZ295TGdnaHN3RUVkS19ONDFYR3I3UEphZFg0QTFFWmpSbUVnbkVsN1ZPMG12R25oY2RCdUVQUjNxdnFFYzVwRk01Q0dCRGJHY3FPR1AyN3JZa3BsOTRKbHpENkktS2t6dGlTZG9raTBSLUlvVExQaGRyTm9ITHJR?oc=5",
+      "outlet": "Poder360",
+      "outletUrl": "https://www.poder360.com.br",
+      "published": "2026-11-20T10:54:06.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "OAB disagrees with Dino and asks STF to judge Van Hattem in person",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Moraes se antecipa a Fachin para marcar posição sobre dosimetria",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRTJmV1o3czZQb1FLYVRoeVZlUzNJM3BuTW1hUG9lckN5MkxXNENId19ON282azVvMWtqTmRsNmNlVS1aNWI3dWdZNXloSHVBZ2hKSjg0WjlHMEF2V2ZFVlRWQkpuLVJCeGM4bTBMMVdUcXBTU1AwM00xYXBxZ0JZX1Q0dF9RUzFWN3ZKWHl1WXVfUnFOMjF5WV94MDVYenFiNVduRDJR?oc=5",
+      "outlet": "CNN Brasil",
+      "outletUrl": "https://www.cnnbrasil.com.br",
+      "published": "2026-11-20T00:17:41.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Moraes gets ahead of Fachin to set position on sentence reduction (dosimetria)",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Perto de novo título, Arrascaeta e Bruno Henrique podem igualar Zico e miram recorde de Pelé no Brasileirão",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPa0dBMFhJTEZJcXNIN0hValdMZ2dBVlVMWUlXbnd2VEl2dTNvQ2ZxU281dERhakNRMk9sQ1VnRkN6Mml3djJ6Q09RV3J4b1pBcW54Mk1jd0dFdGFhOFlxM2RhdHh6US14VGFBZEhmS0VTZUs3NTNtQnFId08zbk9yc19QcmpYMlhPdVdxcHFZYzZVdmdmbnlONmF4QzNUNVdkandzVHhWQ093WXp2dnBXXzV4aXdmYmRqanVXQ3hTWV9yQi1sVDVfSG50UDBQdFNtZnFlQnRqOGVPNDFKRjlPbklwQWRYUlZ1TWs3MW12V1dHcHNuRFJsV2NRdGxCdFZ0emNjWjhB0gGUAkFVX3lxTFAyYV9UaUJ6TDZuWGYzSGcweHVDbkl0bXQ3QkxCaXlyUHIyc2hCajFUX3RNYXJFN1VlZXFjWmpqeXA5QjV3cDhZTTd4Yy1SZDFtR1B4NHQwZHJrcUk0blRlTERFTjJBbXJKNXdacWNPeVFScW5yRExCUDhPellBRnVkcTZUWUcxNU9XNUJmcjJqLS11dGRtSnZqa3RlQk9fUFFreGJpR05LNnkta3dtTktrV05MNUgxdVpaMWFLTzhMbDlLTEp5R1E2WEtNU2JvS1drNUdVcnhFMWJhNUVDeER6U2g5UlVOZzY0V2x0N0FRNC16ekI3ZTFvWmNjbmlwZGkzSElNd04tcER2YXJZUHZtQ3NhYg?oc=5",
+      "outlet": "ge",
+      "outletUrl": "https://ge.globo.com",
+      "published": "2026-11-20T07:00:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Close to a new title, Arrascaeta and Bruno Henrique could match Zico and aim at Pelé's record in the Brasileirão",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Empresária de 37 anos morre após ser atropelada por caminhão em Valença",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaXJIcWRhVWFNajRSbXlWMWhhVUhacTk1WlQwcFZQZHl1NHVzWnBVa2p3cVNPT0VnQXdVQ0FVY1pMS1hCU1d6RFJEVnUtV3hPTDk1a2N3dHo5X2xrYjh3UkY4elpwTVpfaUM2emZRNDRsdDYwNllpMDl5UE9IeXE4cjduWllyWDBNWVZmbC1VSE1xaEtKbHIzTkxyQTVuYXlyYlNBR2ViclFLUXFycjZIRTVvcXVob3M?oc=5",
+      "outlet": "Jornal Correio",
+      "outletUrl": "https://www.correio24horas.com.br",
+      "published": "2026-11-20T11:04:16.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "37-year-old businesswoman dies after being run over by a truck in Valença",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Bukele tenta 3º mandato após El Salvador liberar reeleição indefinida",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZkZvQzdISDRxUjVsUkQ2cVNrZ0ROUUFRcV9uT0NBQ2JYdHc5dVVRZEZfWTJ4ZVR2d01tNlZYYUNxY25lWUJuMjg1UkQ1WFZEbHpIYklmUnc5eFNzdTZpRUliY2h1ZU5Cdk4wcUd0R2I0c0xnM05OU1hnZng2SVdFY1EyemtvazFGa3ZsbHJpY1VJQ0Z6dHFSaS1OaXJmRjVNRWNaV0RnWDF3V1BCbldKOG1Jdlg3VXNM0gHHAUFVX3lxTFBXb0J5LVVEVTZFRVg5WGJlQVhsdmZsOWg3RlVSeGRCRlVNTlBSYXJ0X3JISTkxLUdEUkowelQ2U08wczhweUtYU2hFbGxCN2NVSTlIR19SLW5RalZsWWI1QnhRaHNSY0lsVGd2MFU1QWt4X003YjhxN0Q2QTY0TlFxemNJaDBsdGZqdVZCLUlhcVdLdXNLVlRaS1ZIVTZRZGE2N2RZTHlKVTd0T0djMFpGSVFONVlvSGlwUGljQmVPemFubXJKOG8?oc=5",
+      "outlet": "G1",
+      "outletUrl": "https://g1.globo.com",
+      "published": "2026-11-20T04:05:37.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Bukele seeks a 3rd term after El Salvador allows indefinite re-election",
+      "about": [
+        "SV"
+      ]
+    },
+    {
+      "title": "A história por trás do 20 de novembro: como a luta pelo Dia da Consciência Negra começou na ditadura e virou feriado nacional",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUXhHNlEtTDNxeE9tdV9qbjVVTjVNUFpENVZuOHNrV2UwQUtMVkxoS28zaWcxUmZycFpCWWtKNHZKWEt3Zkc0MGNFTDk1TWk2ZnRzcGZBaGFZb0JQdlozaEswRUZLT1hTSjZRTjMwcDZQSk1nb21aV3BBMVNHN3VlazRreTRHbUZRRVprNHVhYUZDOHk4d1VPck0wZjVRTjJsbzhqdkozQldTZ9IBuAFBVV95cUxOMFBzQi1lQzdDU1dCei0wR0o4cWxFV0I4WXNPMG5uemxIVk5RVnN1RjU3SXRnVFVWd2FfM09EWnF3RVBZVmgxdDdFZ2ZCVmJaeVMtcU1KazVEVlIxVmNZNmZmNlo4Z1VFUUotWVhtUjBPWWpxdzNxWEtMYkJwaW1XTWZBS3FEUmNYbUd1OHZnMTM1ZUhiMTN5Xzg5ZXpPeGFncGxFNXV1anV5RngxODBsWWxUYWh3Nnlf?oc=5",
+      "outlet": "G1",
+      "outletUrl": "https://g1.globo.com",
+      "published": "2026-11-20T03:00:00.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "The story behind November 20: how the fight for Black Consciousness Day began under the dictatorship and became a national holiday",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Saiba como votou cada senador nos destaques do ajuste fiscal",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZ0lSQjZicUlVV3Q5czJuZjZNUFctLWFrNXlkb3dTOE4xbzQzbkQwZ2FDZ3pmV0I2bFlRLUp1NDNrV1YxVzZmQXc1NVFEVFdxdnkta2VoX3dpMUxmb1dTUUZ3MDI3Sk5oT1hOTjNGVkpNNkZERTJSQXN1WlFReTlYeTdtWDZ2QkhueS0wY2NHS0xHYTQ2d3FjMUVzZ0Z6akd2VXFVVGh0Um0?oc=5",
+      "outlet": "Poder360",
+      "outletUrl": "https://www.poder360.com.br",
+      "published": "2026-11-19T09:12:08.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "See how each senator voted on the highlights of the fiscal adjustment",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Dorival já falava em tom de despedida do São Paulo. ‘Futuro? Esquece isso.’ Enquanto isso, a torcida repetia o coro no Morumbi.‘Time sem vergonha...’",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOS2h6eU5NRno1akw2akhRb0lIUE9BeWdNUHVuTEVQZFU2aFRmQURuQTRzd1ZZR2pmWkdxQ0J0Z3JJVHN4ekhNRlJXdWV5NlJkX0toXzFkWlhSVkVlVDdSRXNSYnFQUlMzc1Y4SGJTN3FWWEhZMFc1MmZhSkszd3BWRDBtUGpNOHR0bUtQTE40M0R4ZklPUWFYTTRBT0Z0Z21hTHE1a0h3RXRFWHFXbm5pTGlwOWFnWlIweWFqaDNCTHF2cmwxNWVLOExra0hFM2tmWThVNU42SVpJZ3F2TzhYSktZM1RmbEJiS0xWVVcxeWlDd1JhWlBBeDY0b0VlaDZ6b1R5VU5KNm9YT05GS0JBQjBGRFdGMm5BekFz?oc=5",
+      "outlet": "R7 Esportes",
+      "outletUrl": "https://esportes.r7.com",
+      "published": "2026-11-20T05:29:54.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Dorival already spoke in a farewell tone at São Paulo. 'Future? Forget it.' Meanwhile, the fans repeated the chant at the Morumbi. 'Shameless team...'",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Mega-Sena acumula e prêmio vai para R$ 45 milhões",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN3VDbGdRTzJaMVFONEVaM2tXWTZjcTRXWUNCUnZLWDdaOHczWnF5emJqLXo3SVVPS3NQVjNXaHdha1ZJY3JhSDRseV9sSU1tN2FaV0g5alpyR0pLUFpsN2lKYTVzbWtORW5jcU5TRzJNaHcyUWFBblNMUWFfMkFBN1hSSVUtbVk0N0wwVk5neFpUb1Y1dnV3Y1ZUU0tpeS1mZ3B5YmtWQ3E3dw?oc=5",
+      "outlet": "Agência Brasil",
+      "outletUrl": "https://agenciabrasil.ebc.com.br",
+      "published": "2026-11-20T01:20:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Mega-Sena jackpot accumulates and prize rises to R$ 45 million",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "China é a grande vencedora de reunião entre Xi, Trump e Putin, avalia Jamil Chade",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNlp5bVJDQzlic0xCWGx5Mkx2Njd6a0l5OU1kbGJsczJidVRsTGROOEJJdWwwOVRHeXVaejJmLXZZTDdlbmxjRllKMmJ4WXA1SkROREZsZFpmV2gxUW5sWmNNaGFDeUl3Z0I0ZDkyZ29IcWQzVFlrS3lMajZKVVVmYXNUdTNQWm1DSmJzR3lEVVhaeUdxRXM3T1EtSGt4NGZPMjFIRUEyY1dON2NJVEVuRENuM3U4YXRMOEE?oc=5",
+      "outlet": "CartaCapital",
+      "outletUrl": "https://www.cartacapital.com.br",
+      "published": "2026-11-19T21:37:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "China is the big winner of meeting between Xi, Trump and Putin, assesses Jamil Chade",
+      "about": [
+        "CN",
+        "US",
+        "RU"
+      ]
+    },
+    {
+      "title": "Trump derrotado: como a 'onda azul' chegou a redutos republicanos e mudou o mapa político dos EUA",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOV1VXX24tNEpIdU5fSzZaUjIyMUhyeDdsNUlWT0RvWmxLQUN5RmJGY0Z0eWIwZERZbC1MaUlhRnlHUWtnenVTUU5VUFRZdWZMMzRRNnp0SGdkRVg3cEl1eXRUTHhIQWdycHJENTl2aWdtNmUwZ094Mmd2cm9rWVZPaTFwN3ZwMUJwOVl2QmV5MmljdmJxcHZGQms3MlVRSWQ3Y05jVVdHMzM0VlRQV3dETDlyZHRZZ0xqLWUzVEozOVRMT2t3UzBmWHpwQzhvd3A5VDNHRGZvcHN4bVpDaWE40gHuAUFVX3lxTE1wTy1lUEJycnlBbVRZM0NhMmQ0RXdmQ29YRXFmWUdFcHlZYTBMeEtyVUtQbUtYbTV4Q3d3WUtMZ1lMSHFRRnlsWjVGWU5OX0ZqNDhRUjZhLWxKNl92ek1jTm0wVDhDMzJTNHdKR01fZnhDdzhadlJ3cnc1RnNZRXM4c00waW4zdG4ydjQ2VGdleTh5dXRGb1RJWGxBVkdNd2lrNXZnZEdSU2FKczZtejVhLUN0bm81bVI3Mk5hYk9VeThIdW9xNFE0Ymk1TXdhWVhxYnFtYnhmV1hjYjNUYUxyT00zMHpUb3lIRFc5eHc?oc=5",
+      "outlet": "G1",
+      "outletUrl": "https://g1.globo.com",
+      "published": "2026-11-20T07:01:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Trump defeated: how the 'blue wave' reached Republican strongholds and changed the US political map",
       "about": [
         "US"
+      ]
+    },
+    {
+      "title": "Aeroporto da Polônia suspende voos após suspeita de invasão do espaço aéreo",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYjdaZUtENWRRa0J4ZjBXRjJMa3A3YWw5QlNpbVJXU21VTHRmUFhXZzJhejhJYzN1MjZSVlQyT0JOMmRjcGx5eE4zMjgwZENlcXJLSWsweWx1YThDV01xT3BVQzBCN29ZNDF3SUctMVZ0MlJmbXdLNHJYRU1nYmxjZ3dDVXJHbldPdWJxYkJ6dzBGN0pfWmFJMjZUb1ZsejRqclB5S3JGNS15bVhrMG5lUjVTc1B2U2Q4ZGxF?oc=5",
+      "outlet": "CNN Brasil",
+      "outletUrl": "https://www.cnnbrasil.com.br",
+      "published": "2026-11-20T06:58:19.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Poland airport suspends flights after suspected airspace invasion",
+      "about": [
+        "PL"
+      ]
+    },
+    {
+      "title": "'Vaias estão certas', diz Calleri após tropeço do São Paulo no Morumbis",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeHlndl9rNzBDSHdVYVAyM2Q2aWQzLWhQY0Z6ci1fbU9lVnZaMVlzMVZYSHFKN3RjZ2VGX2lraWNZLTNLZ2dwWGUtTEhjMjdyeXVqTzlFeXZuOS1waUtJVVp4M0NIcmk2SlZMdWZNaUxFM0paTGNjQ2dlZkhraGdJX3FwYkFCUUhQRjNldFFmU2Z1OGZ5VEZEVmRadUE3QnEweXc?oc=5",
+      "outlet": "UOL",
+      "outletUrl": "https://www.uol.com.br",
+      "published": "2026-11-20T02:48:53.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "'The boos are right', says Calleri after São Paulo's stumble at the Morumbis",
+      "about": [
+        "BR"
       ]
     },
     {
@@ -60,152 +322,16 @@
       "about": []
     },
     {
-      "title": "Guiana afirma que EUA apoiam decisão da Corte Internacional em disputa com a Venezuela por Essequibo",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOTJHOGYyc3F5Yk44dnhVYV9kNXh3WFE3ekVQYW84Rm5SOGMxcG5SLWtSWnZwUE5NSFAyMnVIZHZRZEszMnU4T1JFUW9MSzk4VGI2al9WMFphQ2NvUHVFalowZndYNzVIT2xOLWhOSjM0blFQYWstVGM3SGxFYkdOQkVZa1hyZnczM0V3UEIzUDJJMDB2cWN3eXpMOTFrWGMwRmVvVmRJT2ZKV0FkUGVIR00tRkhhN0lHTHfSAcgBQVVfeXFMUDN0LVBHbjFjc0ozN3JDQnl6cFdxaFo0QWRBaG1SMWZUT3c5WExXV3BfUEVaRHpOOUxDZHpJUFVfSDlNUWs2YUFzLXJoMnlVemw5Q2JBR2RMUjFYOXU5NHoxQjRIYXFjdDZlZEYxMmVWdXNlYVQ2aVlhSXhOeVk4al9Nd09vcTE2WDQtTWM2WTFEUHpvbGZOY0ZVNm5vZDY3SEdReG1OSVZ3S205YVZlSnBoOUwzUE1pV21wZE5MS0p1cHl2b0tvVUQ?oc=5",
-      "outlet": "G1",
-      "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-19T23:30:07.000Z",
+      "title": "Idosos, Segurança e Direitos Humanos: com fusões e novos ministérios, Lula redesenha a Esplanada",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQcXg2OEd0amt6WFFPNWhJUGdRVzZxbnJsdGUyVnhUSTRMdVBSUVlZbVJVaktleFMzLWZTRXQ5U0o1RGRtbndzV01jbFIycG5iU0d6WXBDR3UwZ0RZcjlPMVBZYWdoMFdqT3FMeFN5VlhHOGZXRzdKWmQzUmgycEFhSHh4SHk4ekpuRFdvYVhzYjg5VEl1UmMyb0FUcmtHVmxmWENuMWxYRnRsa3k4X3FQdnpyYnM0QmJpZ3RDcm05X09hd3RtbVNMSGRNWW95Vk9Rek1pUDJ1dkJuQlU3VERpbjlhMlNjQ0HSAfYBQVVfeXFMTmMtdkJMQkhFVU1KMkE4QmswMVVoRE9QaTFlRnRpTkEzSG13VDhGdFI0Sk1HQmp0elFWbEhLNkNjOXVXaGtqSTRPSHpDS3VES3k5RzFyZnNpV0R6T0Q1UmFzMjBpT21UcTJGcjJHYTVkbnVJeXVKYzBnWGRlYS11cGNyazJFRWRTcE45eEtzTWd3RG5uODRNU1FncHhXcHNrUHl6YTgyNHBHbVBJZlF1cXZpZmdycnA5YVZfTVdLUHZUaHNvdUJIbU5hdjRNVXUxbzladEN6MUN1LURneVlqZzJ2MEVmTGV2UUZGd0tLbHlxYndlRm5R?oc=5",
+      "outlet": "O GLOBO",
+      "outletUrl": "https://oglobo.globo.com",
+      "published": "2026-11-20T06:30:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Guyana says US supports International Court decision in dispute with Venezuela over Essequibo",
-      "about": [
-        "GY",
-        "VE",
-        "US"
-      ]
-    },
-    {
-      "title": "Mega-Sena hoje, concurso 3088: Confira o resultado sorteado nesta quinta-feira (19)",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZ3dZUWVPbGJqTlNjOC1JSzA5dHB5T0tKWTNoRHFoUEhMWUE4LWczR2JNRVRQSDUtSVZycmZSeElMMmYtUzZmTTBSaVNPdURTNGpZRkJIZncwQ2lpeHd2QnN5UzFmbkRtYnNSZjZQSlFNNFozazBKN3JQTlJpV2haLVp2MUpVSWtyNTJyV2xpTEcyMW5jWGEzM0Q4UUhjc2pvenBsRXItZVRvUFI2dUN3VXJ3U2xQenBS0gG-AUFVX3lxTFBKNmh1UzdYLTBaWEhacUx4WnJNZS1YMlRNV3lBTXlOM3dnSVZ4eGJicmFBSHdLYllIVVh1MmxkSDNMSmFOYW90M3kyMTFYRjUxQ2RaSWNaaEhVZ3dfcEpaOHNycy1HdU1IaWNGQkpDM0RzZDBZZWFNbU92bG5MU2pnUHc2TWxpTnJWa296Tmo5Mjg3WVB2WGNxODAwa0pCQ2FHSXNtQVhMZDNSYXFqWlhNTW45LU05LXg2YjJqc0E?oc=5",
-      "outlet": "InfoMoney",
-      "outletUrl": "https://www.infomoney.com.br",
-      "published": "2026-11-20T00:07:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Mega-Sena today, contest 3088: Check the result drawn this Thursday (19)",
+      "en": "Elderly, Security and Human Rights: with mergers and new ministries, Lula redraws the Esplanada",
       "about": [
         "BR"
-      ]
-    },
-    {
-      "title": "Sexta-feira tem alto risco de novos temporais de chuva forte, vento e granizo",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVjlMaDVVbFBBcjIwQmdNN2Zvak5lOTlFUTdwV3NzY3A1Ylp5VEU5cFRCWHJZZUVkQjBHc3ZoY3hMd3kxOE54NjY5NVA5SHhGYkgzeVdzSnNxUjRxS0tRZlJ4d2Y5NGRQMzRGQ1NqelFXTUw5MXpwTEtIS1dfR2Z4SnRRUjlRT3lHLXc4eHN4RGlRYjRZS0VrUG9fV2g?oc=5",
-      "outlet": "MetSul Meteorologia",
-      "outletUrl": "https://metsul.com",
-      "published": "2026-11-19T22:17:34.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Friday has high risk of new storms with heavy rain, wind and hail",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "São Paulo x Fluminense: onde assistir ao vivo e escalações do jogo do Brasileirão",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPeFBGZ0pJVkkyX2twTnBrR0RCbEdMYkljbnZSaXdaQ3V2TDVHS3o0em1BbkNFN1N2ODNpb21fQ3gyVU9wUC1zd0RYb1NHYTVYV0ZaRGEyajZUVWlsSkxvckZGaDB1SldtbTl4SXkzRmNhREVONERuWEhHS3NkT01Kd2JKYkVrNmQweEhzb0M1M3pVTWsxbjlHcG92MjE3Q3ZTOFZyNC1SemlUako4M2Q3NDh3dWpfWWVmeFkwRDhTQXhrU0lHSHliOWlRS0Z1bW5E?oc=5",
-      "outlet": "ESPN Brasil",
-      "outletUrl": "https://www.espn.com.br",
-      "published": "2026-11-20T00:32:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "São Paulo vs Fluminense: where to watch live and lineups for the Brasileirão match",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Brasileirão: Vasco bate Internacional, escapa de vez e deixa gaúchos no Z4",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQa0VoalpSYmtQYzl2UGxVb0lYM1hubG5mM3BXb0xUcmZVUHpNRS1HVm84MnZTZU1OY0JLLUhIejluWkZwd3h2Z0JkZmx0UHM4VHkwZlU4c2VTeFhKMEl1UUFHcl9NYjNxNXFVbHdSNGJJdHNfd2U3SDlJN09xV2twTV96MDV1cm5QaG0zU0FnbjY4QXR6Zl82dzVMVGlXQUhoWjQwNFJzWThuNGNDUUNUQlktVzZPOERNSGlxS0lZVlJQUU0?oc=5",
-      "outlet": "CNN Brasil",
-      "outletUrl": "https://www.cnnbrasil.com.br",
-      "published": "2026-11-20T00:30:45.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Brasileirão: Vasco beats Internacional, escapes relegation zone for good and leaves Rio Grande do Sul clubs in the Z4",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Lula assina regulamentação da escala 5x2; medida está prevista para começar a valer em dezembro",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMjZqelpab0xtbV9rQkdISEN3eHFsWlN3ZFNRdmtiMXEyV1ZENTBhLXhLVzJ1VmtmNzRkbGJoX2RUeHpTN09SWVFxcG5lVzRKNmUzcTNHRlRZcWdMZVJVblVUclFsNDFXTkV2Z3NnekptcVVxRG5kSVU3b2JwN2cxeWtzUmFJNHJpMTczTEZoai1paUYzLTBGd1dzaFpSVjk1TEtDcWIyeWtmN2lhR0FTMkFOUWVxMFJRanVqRjRDeWtmRnlsV0FVRm0tdHhKNUZVcHJFd1dQSzN3N3hkYmRvZGN6b9IB8gFBVV95cUxQU1NQMG1kMnlZOGo3d2RGczRHbUVJVjIyNUJCamxpOHJ2Vnl2cGpuUGpDdzEzTHZ6ZnFpSW1RejdWaFlZSjFuQzRiWGFSb0FOZlRCdEZNU2pSaGo3emZ1OEI2UXl2X2FMNDU3QjM3WmtDX1JCOUNVSTJ5SnFiWndnR1hXOUVoUlotbExVZEFHa2VwRlBfY0Z6Z3AwenBUd1VWUk1QWS1FQzZpMl9aVDlWMTVlUkpQR0xkLTFQZjM1VUJ0bzdPVUJvVTRtei1oZFlSR25TMHFJSnNmMWtHQmR3TkhEeEJEUUx6ZDdlVnhFakxRdw?oc=5",
-      "outlet": "G1",
-      "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-19T13:33:23.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Lula signs regulation of the 5x2 work schedule; measure is set to take effect in December",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Aliados da Ucrânia alertam contra partilha ao estilo da 2ª Guerra Mundial enquanto Trump se reúne com 'amigo' Putin",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPRmxCQmZDSzdGelhNTU05Z2NGTGRTYTBIY1Q4Vm5SZDViYzA2VGhzckl0cHptWEJSNHBwRjBCMUR4ajYtcDNpallReW9QVllrMlhvZDlYdUVGOHFKM3VIUGZDN2xpVWpWbTQySUxYcXlNcXdPRldEUThwRlRabnFNaEhZUG1ob2pzR2oyRTdIbHZmQndlSlZudWhpYzU2SFBkU0ZVWVo5LXlGRjJOV25Ramc3Y2FkZFJiRlVmd1hlQmFkNFZNZDNaM3BLcDNEUms4NDlrLTBZU2ZXU1BDSlItby0zSmVuNmwtS0dCa2phY0hqZEwwYkR3QdIBhwJBVV95cUxQODVOZGttSXVlanVnX2phQWdWbGhDazNQUDFLR1N6Y1dIMFctNEpkX0c0MWduajdYVlRDMVpkX1o3Y29HVFltYnpOYkZfcGFya0owYVViQlpBQzQ0VVRvME15Um1CYnY2bHhFQUI4VjktUE1xcjVXdUcySHJDNEtZaFRITmlUd2lVTjl4VmVyNEJPcmQzZ05lZmxORDNOeGpndE1FSVdCSi02aDJramdha3MtMHJtVnpTbFJiOVF2NllaVUxibllldEFMUXAwbWNCbnVRcWdCNTU2R3k4LW5JTDNvYTVMcUVXMGtIM1NsN3pvQmxPaDJKOWtfZGFoY1ppUVhsemhLRQ?oc=5",
-      "outlet": "G1",
-      "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-19T21:25:54.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Allies of Ukraine warn against WWII-style partition as Trump meets 'friend' Putin",
-      "about": [
-        "UA",
-        "US",
-        "RU"
-      ]
-    },
-    {
-      "title": "Trump, Xi e Putin defendem reforma da ONU e falam em risco nuclear",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUXoydUUwdm8wa2p4SUJCZ25GWkRrT1c5V2QwMnV5MU55ZXEtUkZhU0wxMlF1NmFER1ZJTC12TDZWbnJrOTdMOW9xYktxUmh1dlhsd1RRX0djZnkwb3lsRU9CRmh0QUR1M0RkVUx5MlpwcHhUXzRKNWtsbWZSdFliUjhhWVQxSTRDNFlkZmM1UFZQQlBwV2pXUHZ4bVc3TERmQ0xZRVk0bEo?oc=5",
-      "outlet": "Poder360",
-      "outletUrl": "https://www.poder360.com.br",
-      "published": "2026-11-19T12:34:49.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Trump, Xi and Putin defend UN reform and talk of nuclear risk",
-      "about": [
-        "US",
-        "CN",
-        "RU"
-      ]
-    },
-    {
-      "title": "Josias de Souza: Gonet tem 15 dias para escolher entre os charutos e a integridade",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbGFHcm5TSXJpZ2JTRjVVTDJwZ3BhencwNmlWOUV5NGRBTG93b1NkamxEZHo3SExYeFI2NzhLNHVfMVA2bmJfQ2laMmZrV1JwOXEzX2xmdFd0S3FwX3paNWk0VDlzaE50UU5LY0hrNDZSbjN6cnAtR2R4Uk9mTlluNUQxaGRzVnFyYlBhSUpMb0RKOG51bTFJNFNGRnJLdmZfMGRRSWVYT0VsbHI3cEF5MjdLcUhNS3lUd3dnd0xLTXUyZGp2cW1oamVDUlM?oc=5",
-      "outlet": "UOL Notícias",
-      "outletUrl": "https://noticias.uol.com.br",
-      "published": "2026-11-19T10:24:28.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Josias de Souza: Gonet has 15 days to choose between the cigars and integrity",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "O primeiro país a ser condenado na ONU por genocídio",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBUT0MzR3VUS1pJMERiUzlCSGVmdl9ucnNPcVJFTFA5ODFncE5NaVU1UzJvT0dCVnM3QzQyNVdYV3NkYkVtVVhoMGxyNmZaSmRBb0M0ME1RMmhxOUI3VHRjV3JIONIBaEFVX3lxTFBjWE9tNXlPM0Z2aC0waWRwUEtYQWtZdHNiZ0NlTWVIckNaY2dxNkJGOWZpUjR0dDlFRGpKZC0yM2dGcTVGLUVBX0d3bVZXTm9PQ1hCOUQ1UU5nczJDSDdLZWVzYVpwRHVQ?oc=5",
-      "outlet": "BBC",
-      "outletUrl": "https://www.bbc.com",
-      "published": "2026-11-19T18:31:18.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The first country to be convicted at the UN of genocide",
-      "about": []
-    },
-    {
-      "title": "Primeiro encontro entre líderes da China, EUA e Rússia termina com compromisso para reduzir riscos de uma guerra nuclear",
-      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPcDBxWTl6ZEYxUFRIZ2hhdEVhYnJOVS1jblg4bTRMX21vMFN3MzJVdVN6Wi1pUENrcE16NFBKZVNCYUowak1VS1Q1d3NLakZEbW43Y0pKb3g5YURlYjFiOE5YdWxWYlNjNkNQVW9ZaXpRc1kzZUZwM2N5T2RPNk4zZi00d0plcHAwUkVtbGxEcXRaMUxIcGtvN0E5SWRnX3hEY3lnaWF2NzRGV2lRLU5MZ2ZBaVZIcmhFd0U1YzhfRHlYSjlHb2t0S0RUMURZdTBvNC14cXFMa2o3Qi1VX2RWVTluSUhDVG5sTVdUdF9YVkk5MTFsbXZ5TWplRVo3bGFlbGtaLXdJV0V6ckR4eGfSAZwCQVVfeXFMUFFYNVhsekp0dFN6WGpDQl85a0VPYk4zZ0JaZGFQSF90RmlURlZWMG1udGg5QkFESmljeW95U0pLczJqcWZjZEE3WF9MQy1Yd2ZWZGFkal9xT2lnS0NrXzF5eHlZbjAtM1F4OUpwWGZyN01QT2RNNEE3dnVTTEo1T0NHUlhPZFRoM2E0bm4yMzZHcU8zRDJSMUd3OEhYUkxFZFl3VUQxbEdnM3YtSGdfcG9HcURsQURVYWMzWXJWaWtTQWpZeldzLTdzY1p0ZzdRaldfa2x3VTM3YjNWWm1WY0ttcG80bFk3cVBwbU9CZ3ZIa1JSSHY5TEl3QVFUWkwyTDRLN1lsekpRQjVDZHBEdEJjRGZRbkdHNU1jaEE?oc=5",
-      "outlet": "G1",
-      "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-19T23:28:40.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "First meeting between leaders of China, US and Russia ends with commitment to reduce risks of nuclear war",
-      "about": [
-        "CN",
-        "US",
-        "RU"
       ]
     },
     {
@@ -214,7 +340,7 @@
       "outlet": "CartaCapital",
       "outletUrl": "https://www.cartacapital.com.br",
       "published": "2026-11-19T12:41:00.000Z",
-      "outlets": 5,
+      "outlets": 4,
       "trending": false,
       "en": "The musical chairs between Haddad, Alckmin and Camilo in Lula's new ministerial team",
       "about": [
@@ -222,182 +348,57 @@
       ]
     },
     {
-      "title": "Novo vídeo mostra prédio desabar em segundos no Brooklyn; oito pessoas morreram",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOOExoWFlPX3ZCWFdCZ29xMjRTb0VDR3pTMkFuVENWcGJyRk5xb3phZlJWZmlxNjN6T1dkWUVUZGxFTlVjb05jVy0ta2xaOHF1SzhkVWt4cGJzZzZoX1I3QUlvWnVpck04WDFqdHUzak5oaUxWWlRjcEhoMW53QVpkeEZkcmFGQ2tmYl9CUFVrMUhueWxmZXJuQ01iYmlWeHMwckNjVmRPZXhkbHR2RzdfemUwd0hfemJDWVduWnBpNHRkR0xRQXE2TDVRUFUtZFnSAd4BQVVfeXFMTUFuMkd1LWJuUzdpaWFUTjFJRjJfM011UjJ1NzR1LXZsYVdFdG5nM0lKWDAybFUxOHhOY1JrY0xkdE1yd0F5dG1nbDdHMFpEUmV6MzhMSFhvbUIwV2tHZHlReUJMUVN4M3B2Rm50N1BjTmJGZ3F6bjVqUjBrS3k1SHUteW5oZjA4TlJDZ1lXV1RRX1Y5U2Z4ZXIwMHlJT1dNRHFVYmZVWl9mM0VpWkNpclhzUGxYbXhIbk05OE1iWGJCekZKcEpoc24xZm42MjhiVmJ2T1hSTmJUd2dDdVl3?oc=5",
+      "title": "Vídeo mostra momento em que milhões de caranguejos-vermelhos iniciam migração anual na Austrália; assista",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdDdoR2ltVVFXeW9KMUVMUFE5TWhnZ1ZpTlFRRFpuRHdMb3UzaDNGX2k4UFBHeUp5MExVTVJHUUFkYnhpaHhHamVHM1NaQUVCa3FIbW04VURwM0dYenB1NUo4MlN1a3FzV0pKY2drZFFZdF9FTlM0S1JoZDZiNFhZSEEtUFljUklUVnUySjd4UTc4MzVUYUJURzlGN1pfVDBDdjBqNzVvQVpaWXFMejRGM1dldzlIa1RhSDAwazVOV1ZuTExnUlRIZ1FxSlBpX1k1MDBuaGp0eUhyLXFlejh2czVpd19ERnU3QTlONW9sQdIB_gFBVV95cUxQWGNOMzVIUFdpUkYwQTNESlhTYXJ6akhPUmVtenEzaWJId1drU011ajJPV1VySTlHN21NTXAyMDJFLXA5MGg2dmt1VjRkUUVaVHYyREhiREJLMllLb3UtLXY0WTZndm9TNWdyS2huNkxSdVRNVzg2RE5Hak4yRXMwSDhpMlRRZ1ptN2t5Tm1hQU1Od3VudG9VOE9BR1BEQXh0bW11eDZ0R09LUXhFVThObDU2Q2swdXRWWW9OckwwcjNnSkxQWWoySjFDTTdjdTRsRm9pSFVCQ2JiMUx4Q25wdjlHb3BOejRac1dVS3VtV2o2T3M2VXNHdTN3YmZoUQ?oc=5",
       "outlet": "O GLOBO",
       "outletUrl": "https://oglobo.globo.com",
-      "published": "2026-11-19T23:10:40.000Z",
+      "published": "2026-11-20T06:00:01.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "New video shows building collapsing in seconds in Brooklyn; eight people died",
+      "en": "Video shows the moment millions of red crabs begin annual migration in Australia; watch",
+      "about": [
+        "AU"
+      ]
+    },
+    {
+      "title": "Vasco vence, empurra Inter de volta para a zona de rebaixamento, e Corinthians segue fora",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbFRuUTJMRng0WnNrWFBuY3BvaEJ5elhqYjRlSEFuOUpzUVVlTTVITG1rNzhHUjBQY2toMEZvRWhONEo0MmN6WGFELU10OGtQTVZVblhOaGROeTl5NWhqeTVnVzk2YXlxVVQ1alNrSVdBOHNPZkRTSVhiQ21sUmVIZW9Bajl3MEhsdjl2UDFsTGFjYzFzR1ZEMWt3VDlwQVhtTkx6WDFBRkxZT1JsNUtyVTlVTHBWREViWUdENEhCTUUtekNDekJHeEI2MkRoaVFRUC03enJvZw?oc=5",
+      "outlet": "ESPN Brasil",
+      "outletUrl": "https://www.espn.com.br",
+      "published": "2026-11-20T01:28:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Vasco wins, pushes Inter back into the relegation zone, and Corinthians remains out",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Arranha-céu mais alto da Arábia Saudita é danificado em ataque de houthis",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNU1FS0hUNDNjTGtqQXVvZzF3Y2NOdy13Z2lidFJZN1p6TGtvdUhIeEUyR3BtWUVsaTdfajVDcE81eFQ0T0RqN1lQQm9HODgydHo5OWlHc0lGbVpCeE1EN3B0cXBOdVlCYU9nUElHWnRvcFNYLWRVbjFBRmdPaDJOU3Zhc19JbTZOdktnZ2VoMUY2R0s1bk1OS2FESF9kT3ptQ3MtUHJ6WmxMV1VNQnRlWEJHdGk2R0V2TkZRaEsyZEdhRTRPcVdiZtIB1wFBVV95cUxNaGJaSm8wUXZQUmZCUHYwWjBHOUhzMmpyM2xNSS1MUms1MDhTMXdGQThIVENJRnRFbkZoSU9kNGFCbXhqWWpXbzVWc3Q1WjJ4UGxJWHlhamlyVnVSTVgxeFpzM0pfWl9QLVBXQTZENDJCX2ZhZDNJS2xlRFpyOHdmNFFvcGVISFhoZWg1amM2YkhtZlRTM0JVU3NaS0JnNHIxS3FQZ2l0VElySkVXZ0tQbzY2c3VQNzNjZl9CZzV2dGV5U2tTX00wdnNha25hRmtJeGRJMTJoVQ?oc=5",
+      "outlet": "O GLOBO",
+      "outletUrl": "https://oglobo.globo.com",
+      "published": "2026-11-20T05:45:48.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Tallest skyscraper in Saudi Arabia damaged in Houthi attack",
+      "about": [
+        "SA",
+        "YE"
+      ]
+    },
+    {
+      "title": "Execução nos EUA dura uma hora e condenado relata dor durante o processo",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcnhHdHVranBNbUVBNS1FTnZFdjVzeEZOcDR3WE9rZmtCVjU3Qk1iRGZaeEZ5VHNPR1VHRHQzT0lWSVFMU1FGeDlBNmNFbVJsNndKeDhrYjVWc2lYN0ZHNC1hby0zenVsM1o2dUJjZ2JWV1c2WjJrXzVLXzlCVTZWOUxpOGctMGdtcXJOYjg0dEVPNWw3RlpjWlY4X0N0bWRZT2EweTlrZW8?oc=5",
+      "outlet": "Metrópoles",
+      "outletUrl": "https://www.metropoles.com",
+      "published": "2026-11-20T07:41:00.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Execution in the US lasts one hour and condemned man reports pain during the process",
       "about": [
         "US"
       ]
-    },
-    {
-      "title": "13º salário de 2026 será um pouco maior para quem ganha até R$ 5 mil. Entenda motivo",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQOG5yWTAxOGh4RXpURW5SUElpcWp1dkJKRXdJa1JKR2Q3RHllYkREZC1pNUlZekNDUThScFNVQmpEdHZPQlNaRUZNeEJVSG1pc2RvUjJMRnpHMUZ2MDJSOUdLLUlJWmFiaUhxWjVZdjJiZkZTd0w0WC1JZGVHRGF6NnQtX2lib2V0Qk1MeGg0N3NER2F6SmhHUGFuWVJHOGtlQ3c4Q0djSnQ2T0JLQlJUN3VJaDJfcnFacHNwLVdoZmxtVlB6MGNBQUNsMkNnVU1hNWVR0gHiAUFVX3lxTE4zR195YW5yek40aEh5LWJZXzBxZGlCRVVMaDhGTUhOUzN0VVJsNGtReExYTUxlN2ZpcjRNN21UM3RSb1haQWZCWEx1Wl9ENnJtbXlHZWxaUnFaZEJzWlJmX3RjUTVSZlVBNU0xN0xVLTFacUgwREJwYXlud01FQXVGcXJpZm5hMExOSVIybWJQZnl5N0JyWUdPbmt3NXpJNFlXOWhTTWN4dHF6MmpGRk5qZVBuTy1OTnU5MDRTNmJBSlJ1S09ONGVzTXdQMnByZHprYUxGRkxPMTBZVXN0RHUwSUE?oc=5",
-      "outlet": "Extra online",
-      "outletUrl": "https://extra.globo.com",
-      "published": "2026-11-19T17:58:23.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "13th salary of 2026 will be slightly larger for those who earn up to R$ 5 thousand. Understand why",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Senado faz acordo sobre Lei Kandir e aprova ajuste fiscal de Lula",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTmFJR05zQ3lObFk0UzNiTUJBRXFmMVJLMkhpeHBPVFg4ajdZcWxFRVdIN3U5eVdHZEV4QXhKN3RwQzQ4SkhjYkFiOXE3RGd3MXFXNFlLMU9VMU5iZDhIS241VXJnSHNJNmpqckl5cUtkdE9XSDhyWHB5YTlzYzJ1Zmp3NnZmZHdUVEFacjJCbndWS2Q5Y3dUdE8tMldCb2tZREpXWDVyMWZjS3hnSnJB?oc=5",
-      "outlet": "Poder360",
-      "outletUrl": "https://www.poder360.com.br",
-      "published": "2026-11-19T04:36:06.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Senate reaches agreement on Lei Kandir and approves Lula's fiscal adjustment",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "WhatsApp libera função de agendar mensagens para mais pessoas",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdXd4NmNTMFNNU1hrdUJPODctUU52dlZmcG5CR2NpSnpUc3ZiVlM5RXZ6WXE0LUFiMURWZVZtYnk1SWxCOXdKUXR5S1Rmc1pVMWxqSVd4N1dXM0tsNjBHanNKZHBGb19VWVBSZlpVR3M1TDhfU2FNSFpoTEVZYy1wUGpUcm95c203bGliZk1lb1gxaTNjbThxbGRzMnJKR1JldmJ5YnJpTGVjRTFrbTZPX3p4RWc5OUlpTGp2dG5vUHlWckNOb1dCN2VB?oc=5",
-      "outlet": "UOL",
-      "outletUrl": "https://www.uol.com.br",
-      "published": "2026-11-19T18:30:25.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "WhatsApp releases message scheduling feature to more people",
-      "about": []
-    },
-    {
-      "title": "São Paulo recebe mil doses da vacina contra a mpox; veja quem pode tomar",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdmZMYnNEUER4ZHpPaDVEV28zNDlnSi10UXBmRDZXYVBLcExRTXlqaDI2R0FSQTRtR1FoRE9vVjhVTUtIRlFNdU11U3dVRWk0enExWE1xV295OTBLcWthNjNONmg5aHZ2X2o3TDA1N3BmajRmOWlDWFV3YmJGSkRjZ3llTGhwenZLeUE5cHNaMm00RGEwNXRYWDhXSjNKSHNZdUFpdW53QlgyS2ZaRF9CTXRaeEY4eFBzbWduNTgzUUVJeDM5RjBMQmx2U2JNWWNxMWJwT3o5Tll5OFU0RlNF?oc=5",
-      "outlet": "UOL Notícias",
-      "outletUrl": "https://noticias.uol.com.br",
-      "published": "2026-11-19T19:18:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "São Paulo receives one thousand doses of mpox vaccine; see who can take it",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Pesquisadora explica história dos Awá-Guajá e ameaças enfrentadas por indígenas isolados",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdG9yYTB6MTF4WUVPN1gtbWtSdXhzNkpSZ0FHV2xuX2drZzY3M1dYLWhpMzY0aGVzWEF5WFFlY0dxMkpRZjhtdnkzYmRyWF9MQWl4R25Xak5zNjVQSm9GSThjU3RxdC00TFpNS3dkS3lXT1pKd0sxcG5paTdpemhmN3lGN2pIeDZOcG9QU0EtUExMZU1nSC1LR3dsRklvc2puMVJrOHV3eFJHbVU2bWcxSGJCN1JfZ0FRbVBGM3BZYkNlQWRHOTdvU3J0cVpoX0ZwM2NVMzVvazVzUdIB6AFBVV95cUxQZGRnRk1sWTdNT0M5U2NIMjlfTE56N1BDYk9JeDFlclN0ZUQxTHcwS3ZiZ3VDWGxQeDB0bHMzT3pDZTVEbVA4LXdDck9tVmdvQ0thLS01bjBsT0VaNXpZZ3VGNEx1Mk1sYk94aFhESUJPOUY0ejNTRG5XWEpOem9fbzU1NDBUWVpDY0U0UVg5eU1OTTA4RmFSQ1k3TlRidFU3QktiSFdUS1RYSEpJME9WcUNhZWI1eXNCYTJYdHhVOWRUcnctUTBuOVNxa3ppYzg2QzBEcmpJRkRhUllBOWZ4UlcxWlduS0ZY?oc=5",
-      "outlet": "G1",
-      "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-20T01:11:19.000Z",
-      "outlets": 2,
-      "trending": false,
-      "en": "Researcher explains history of the Awá-Guajá and threats faced by isolated Indigenous people",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Orçamento do Rio prevê corte de 99,8% nos investimentos em cultura e redução de 87% na assistência social em 2027",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOeEZGS0lrZmY1RDZHNzNQOVpwdGUxMDZVb095YlJYS0czSkZ1czhzaWdFZDFjV0ZjNXFZc0xMWkU4LWJaV3pXcXd3eXdiOEtHRTZPczFobTdUcjY4WFNGa2w1ajNEck9TUjl1Z2tnbkJhbTU2WGl1akl2amZITXVWY2dHVDF6bzNPd2d2MmpDbmhfandibktSZzl3d1p6cWF2b1ByX0k0VndrLVJiUTl1ZU1vSjY4MTBSc1BGbmszWThLam93UzlRcXVCMW1XUkFHM1pBaEYwT196WnJRSk5pTzZnZjUyaVhOVGpaNHpGUUZ2LVpQOWNtV1J5VnMwQU9FaXhMcHVmN25YdDRkbndHcE9qQ0pZZHfSAaYCQVVfeXFMTUZ2T0JTa3hXT3h0a1pxc21XUzZpYjF6MXBtY1NJaFBLblN5eXg3Z2FQSnpwbHZteVJ0aTV2cG1UYnVvM1A5UTNSajF3SmstRDVMcTF3QzhTZ1ktN0dXbGJabFEta3JRNHNqNkVfTTd4cHFTbjVMN2gzVmE3ZGZiRVRsWUprWEloa19UQmZNa2h2b0tyYlNuMXV4T2FKdDRHRGlRMDBDYkg1SFBKdFRkQUo0U3FZY0tnOHhiM0ZpUVFQcjJCbjFWaTdDdmV5SWJlT1NKYlJHSlVBT1U0V2lISHA2aTBaSGtyOWYxMFQ2dWNlV1BkWmxJeWhfcUJyUEhiYTFLZmdHeXlQZlVIeER3QU5XNjl0dTlwd0thTUVEVUV2aHozcnd3?oc=5",
-      "outlet": "G1",
-      "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-19T22:04:15.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Rio budget foresees 99.8% cut in culture investments and 87% reduction in social assistance in 2027",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Feriado do Dia Nacional de Zumbi e da Consciência Negra: veja o que abre e fecha em Fortaleza nesta sexta (20)",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNVlUwTHBkWFVDc1JjcXBnMzd6ZjBsb01qa0pSZE9jUm5uUTRreDVLaGtKT3A1TFo1UmpUSU9mODFCQXBFUjREbWJZM2lhd1FCTmRXVnIwQzVvOUxLa3BIaU9zT3d2SndfZXZxWVJHY3cwZC1nMUFkVHFYR0ZPZGw1cHZzQS02R01hN3hiMDMxVkZjZFIzSzhGUTdIU2ZpMDZwWnFoTjhpTHlnQ2EzcTVxUl93Y0tYN003MGFqUWhvcm9WVHBGZ0pQQnRJdzdZUlAxQlVKMXlmNC1hZV9pZGZKbW1hbVI5NEFLVzZmM0w5OXhYXzdG0gGDAkFVX3lxTE9PamdQV3ZGWmg0MkMtd0RldjRDbTRvU3NoUXEteTZ6dXZsZlRHdV8tSUZsMldQdDR1OF91RTd1NUtYR3lZOVdVcTVXSUpnYTVkeHdsMmlGM0NSMGNSdnZSYTBqQy1iczFuYWRuMkx5b3QtNGF3dTA5MmN0dUxIb0tKMHVOQ2ZUSGp1akNFajZPN2E3TkpyY0hqSWw4aWhkblpyc1h0T1RldlBlS2dwVnJTZFRTRjVnRUFTOHduWTFvZFJQVHQ4a3I2RDdxeGl4WkVmWXVha1R0RV9XNVhlX3BOSEhGMXQtUmI2Yzc1SWNEX2taTEtjeXNEcG93SnJrMlh2a3M?oc=5",
-      "outlet": "G1",
-      "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-19T12:12:55.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Holiday of Dia Nacional de Zumbi e da Consciência Negra: see what opens and closes in Fortaleza this Friday (20)",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Quem serão os substitutos? Sem Pulgar e Léo Pereira, Flamengo avalia soluções para decisão no Brasileirão",
-      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOb09rTWF0X1JnQXBTZXJzTDFXaGZQOE5BTXVQNlJfd3hfbWlJaDc1VEEwcG9sVEVHYllfOV9GbUU5V0V5MGRuX05HSkRJYlctYlZ5RUlTTDY0THhqRHNySS1uREN4ZWo2a1VyT2pzX2JHMjBwODlvRVF6bjFrbU9YZG1LR0pEcTd4bnE4dl9SLUtPY3hwRHNqZ3IxdWxzU1NXRkJZTHNIWDFRT1VNNjVuNXdJeXgtNzFwSWk0b0FMdzcwYjRUMUhzUl9hRGctT0dxRlJMbmlIRS1waEloQVd3b0hpcjRMSkJfcXRCNjQzSGlpUDVlaERmZko1ck10YVNKWlU5ZzY3ZGNHNjDSAZoCQVVfeXFMTzJNN3VJWGYzcVpOcUNyZWZpSVdQUHRoMkpMOGxsMVgzZ3JmOUJISUp3Q25OZjVRRUtRdTZ2al9ZeUEwTkdWUTktZTVlTVlwbVNJa3RIdnM2WUpWbW01aUF2OGJ2NjhNUnptcEhfUzlQNjVvV3BBazFydzMzMWkwdGVXRUxYZzdsb3JZVFRaMUlHODBrWG50elJ1N2xWd3dkVUptWnVyYWp4bUxWLXBRRHdDUHRXNU83ZmxqZVlLVmtNN2dlSnIyenN0ZUl5OENia3I0ZElFQzdnZVJ6VW8zTXZ3dllFMmt6X013QmNTbHNMbG5XSzlkbkRxN3l5UWJQMDlvYnIxS25kazM4dGZmcnNMREk0QjFIRnVB?oc=5",
-      "outlet": "O GLOBO",
-      "outletUrl": "https://oglobo.globo.com",
-      "published": "2026-11-19T18:28:15.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Who will be the substitutes? Without Pulgar and Léo Pereira, Flamengo evaluates solutions for Brasileirão decision",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Feriadão tem alerta de tempestade com granizo e vento de até 100 km/h em SC; veja previsão",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdDEyblRzY0ZzRWREX3NzSW9OY0pnYVV5WF90ZVNXN2V3aVAwLXVxeXp3TVA0MlJfUmdlMlY3dGdwQjNMR2tPUWkyV3oxTVQtR01rMEhibzdpVTZVZkRRY3VUTm5tbVRvOTVMRlJuWmxyNzRyMEw5aXJnTGxyWm96VVZyYVVGVmVJTXh2cmdOakprNEhsdlBGVXd3UXgzTHdtejFORVlrU3dZOEFQS0JlVlJDRXZCWWN5QkJlbkV0NGJaREEwbGfSAdQBQVVfeXFMUFk0SWxic0ozRFZPV2ZfeGdMRnRjZ0prNVowc0Y1ZnBRX2tZS1I0a3VWXzV6ZFdybTFoS0RRYWVLS0sxajRwRkZ6ZGE0ZG1rZFZpOTRpcHBMTUVwV3dRSGdPeENNaVpQYXlRTERwUXVpeGZEMDdKcm92VmZHNmh0MU11ZUdIQkR5bHNsM3UtSUMyLTR2WUJVRnFfTzJkLWh1anlmTElqZWVyRmhINHJWLUlST1NXelVBWVNUZG5xZkVjTnRlVFd3SzY4Tk51bk45ZEt6Vlc?oc=5",
-      "outlet": "G1",
-      "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-19T21:31:53.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Long weekend has storm alert with hail and wind of up to 100 km/h in SC; see forecast",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Fiona, hipopótamo famoso nas redes, morre após engolir gorro de tricô em zoológico nos EUA",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVGREOEpqMjlfMG5sSWVLX3NIZVdBTzV0MjViR0tDNWlHYlJlOFBWeEZyRF9zeDVGTnBnbEpITzVwQ3pvYUVaNlN3YmVNdld1RjJxRzFjLUpnUDdqT1pWdHZfeHZiOGJaVlNCR2o0dUlydVlZNXFGSDE3OUtlSTAwT21wOUI4dGE4cDgtSFh1b0c0U2dQX3NXa3JTbWJrdEFBOVBrYdIBswFBVV95cUxONjh6MVl4bzhaMXZ4X3BKaDlXZ3FNLVJYSm1jVTdHajhHWnVWclktOXp3T0JlVDVkMjN0bGt1M0Z1ZzZmWGpDcVNVU3JZSlZnZEZyNHE3QWJEMzdrek1TYW02Ym11UVdRUWZqeE1OdzNSMGRZSjQ0cHlha1dJN0w0VjNoZTFSd3REeFVsY3FvTXdqLWtRRVNKTnhOMS1NMEE2NllVVUZQcHpoVnNpQm1XZzg5SQ?oc=5",
-      "outlet": "G1",
-      "outletUrl": "https://g1.globo.com",
-      "published": "2026-11-19T21:16:09.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Fiona, hippo famous on social media, dies after swallowing knitted hat at zoo in US",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Mulher é resgatada após viver por 35 anos em situação análoga à escravidão em SP",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAyTkhBbjlnNlBld2xXSWVtM0JMVW1rSzZab3h1UWdkT2J0SnczZmUzMG5BTFl4b0tuRG1CYzZ6a191czdBM1VFNjlJTHVqcWt4YTVqNENsZXpwVFctUkw3MGUyY1VIbWFwQ2NZLVFYLUdlWWlXUjIycmZBWDh0RW8?oc=5",
-      "outlet": "ICL Notícias",
-      "outletUrl": "https://iclnoticias.com.br",
-      "published": "2026-11-19T20:32:45.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Woman rescued after living 35 years in conditions analogous to slavery in SP",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "CV orienta presos no Ceará a simularem desmaios para atrair policiais penais",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPM3VHekFRc2JyZHB5QWdrUTJKSWx1UVhqblBRUk0xcWJkVnYyZFp3TjBOYXV0eUJYVmxQVDdYVm5GZTI1cWR0RV9yV2NONkNRSXBid2l5S0JtWE9XVVA1UWxmdXVVTEtWcjR5S1BhM1Y3SDVnVk05cERnV2VZVDlTMld3OXl4NnF3WW1LVUw1OEV3MGdLUWx6cWJfUkFPUkVXN01vcjMxYWdPQnVvc1l2RC1PMWVUQ01RbU5HTzlsTjVGTEhkVU1wbUd1ckl2Q1BTeFh0UXMwU0kwcWJO?oc=5",
-      "outlet": "O POVO",
-      "outletUrl": "https://www.opovo.com.br",
-      "published": "2026-11-19T20:28:00.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "CV instructs prisoners in Ceará to simulate fainting to lure prison guards",
-      "about": [
-        "BR"
-      ]
-    },
-    {
-      "title": "Os relógios do GTA 6 que existem na vida real",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTjRGT0VwRlNzbV8zeTlGWHRHMnVZVFF2anJwdURxRDBwOHpXaS1CZlIyN2NfejRub1Rfck41YkUyZFpwTE1DVkpPMmNZX0taU1dodEw2WDA0eDZXN192WkdSTXdLdDBIU2tDemNwNkF0NGJOUnBlal9UZjNvMGdJMGQ5SFo3VjVsWWc0aEduY2xNX3oyN1VPaENIa9IBqgFBVV95cUxNWmJDT3kwdUpnOFFneWVmVU5FcXFxdTFjUHpwU1lKZW9hOS1zZGlVLV9PSVJpYVV3NkVrUEZsZFBBbjQzbTBUSmpBUDhlNExiUlB5UUhNS01seHBhWXBtc1Q1SThQU0RLSGxPRnFNQVdPUFI1MW5YU1dlNEp4OXNyUUZIUDBzQTFEMTAzTHR5Q3BQQllzLU9zcWhxUkI2ckItUHNtMGxmclZwZw?oc=5",
-      "outlet": "Globo",
-      "outletUrl": "https://gq.globo.com",
-      "published": "2026-11-19T13:46:50.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The GTA 6 watches that exist in real life",
-      "about": []
     }
   ]
 }
