@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-20T13:29:50.903Z",
+  "updated": "2026-11-20T22:13:19.590Z",
   "fetched": {
-    "societies": "2026-11-20T13:29:50.903Z",
-    "uncr": "2026-11-20T13:29:50.903Z"
+    "societies": "2026-11-20T22:13:19.590Z",
+    "uncr": "2026-11-20T22:13:19.590Z"
   },
   "societies": {
     "AF": {
@@ -2604,41 +2604,6 @@
         "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
       ]
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-19T21:09:40.926Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-19T21:09:40.926Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-19T21:09:40.926Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-19T21:09:40.926Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
-    },
     "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2650,60 +2615,95 @@
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-20T13:29:50.903Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-11-20T13:29:50.903Z"
+      ]
     },
     "local4:ifrc-flood-8073:oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Nepal\"",
+      "checked": "2026-11-20T13:29:50.903Z",
       "chain": [
         "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods/"
       ],
       "place": "Nepal",
       "name": "Oxfam GB",
-      "title": "Oxfam GB | Nepal Floods Appeal",
-      "checked": "2026-11-20T13:29:50.903Z"
+      "title": "Oxfam GB | Nepal Floods Appeal"
     },
     "local4:ifrc-flood-8073:childrenofadam.org/all-appeals/nepal-emergency": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Nepal\"",
+      "checked": "2026-11-20T13:29:50.903Z",
       "chain": [
         "https://childrenofadam.org/all-appeals/nepal-emergency/"
       ],
       "place": "Nepal",
       "name": "Children of Adam",
-      "title": "Nepal Flood Appeal 2026 | Donate Now | Children of Adam",
-      "checked": "2026-11-20T13:29:50.903Z"
+      "title": "Nepal Flood Appeal 2026 | Donate Now | Children of Adam"
     },
     "local4:ifrc-flood-8073:chay-ya.org/en/projects/humanitarian-aid/district-rasuwa-flash-flood-2026": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Nepal\"",
+      "checked": "2026-11-20T13:29:50.903Z",
       "chain": [
         "https://chay-ya.org/en/projects/humanitarian-aid/district-rasuwa-flash-flood-2026"
       ],
       "place": "Nepal",
-      "title": "District Rasuwa – Flash flood 2026 – Chay Ya",
-      "checked": "2026-11-20T13:29:50.903Z"
+      "title": "District Rasuwa – Flash flood 2026 – Chay Ya"
     },
     "ayodonor.pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-20T13:29:50.903Z",
       "chain": [
         "https://ayodonor.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-20T13:29:50.903Z"
+      "blocked": true
     },
     "ifrc.org/national-societies-directory/indonesian-red-cross-society": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-20T13:29:50.903Z",
       "chain": [
         "https://www.ifrc.org/national-societies-directory/indonesian-red-cross-society"
       ],
+      "blocked": true
+    },
+    "go.ifrc.org/emergencies/8079/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8079/overview"
+      ],
+      "checked": "2026-11-20T22:13:19.590Z"
+    },
+    "ifrc.org/emergency/nepal-flash-floods-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
+      ],
       "blocked": true,
-      "checked": "2026-11-20T13:29:50.903Z"
+      "checked": "2026-11-20T22:13:19.590Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-20T22:13:19.590Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-20T22:13:19.590Z"
     }
   }
 }
