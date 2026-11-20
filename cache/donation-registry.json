@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-19T21:09:40.926Z",
+  "updated": "2026-11-20T03:50:13.771Z",
   "fetched": {
-    "societies": "2026-11-19T21:09:40.926Z",
-    "uncr": "2026-11-19T21:09:40.926Z"
+    "societies": "2026-11-20T03:50:13.771Z",
+    "uncr": "2026-11-20T03:50:13.771Z"
   },
   "societies": {
     "AF": {
@@ -2606,14 +2606,6 @@
         "https://www.cruzrojacolombiana.org/"
       ]
     },
-    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
-      "ok": false,
-      "reason": "HTTP 406",
-      "checked": "2026-11-19T00:51:38.537Z",
-      "chain": [
-        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ]
-    },
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
@@ -2660,37 +2652,45 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-19T21:09:40.926Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-19T21:09:40.926Z"
+      ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-19T21:09:40.926Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-19T21:09:40.926Z"
+      "blocked": true
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-19T21:09:40.926Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-19T21:09:40.926Z"
+      "blocked": true
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-19T21:09:40.926Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-19T21:09:40.926Z"
+      "blocked": true
+    },
+    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
+      ],
+      "checked": "2026-11-20T03:50:13.771Z"
     }
   }
 }
