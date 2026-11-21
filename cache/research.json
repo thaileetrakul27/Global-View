@@ -188,7 +188,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-21T03:36:27.910Z",
+    "seen": "2026-11-21T13:08:19.870Z",
     "donationSearched": "2026-11-20T13:29:50.903Z",
     "directSearched": "2026-11-20T13:29:50.903Z",
     "directSearchVersion": 2
@@ -317,119 +317,57 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "seen": "2026-11-21T13:08:19.870Z",
     "donationSearched": "2026-11-21T03:36:27.910Z",
     "directSearched": "2026-11-21T03:36:27.910Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-21T03:36:27.910Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-11-17T22:50:03.877Z",
+    "at": "2026-11-21T13:08:19.870Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Drought in Central America is ongoing as of 17 November 2026, according to UN News and Guyana Chronicle reports from 14 and 16 November. Honduras is the most affected country in the sources, with drought alerts covering 233 of 298 municipalities and 708,459 people classified as facing imminent crisis. El Salvador declared a nationwide red alert on 25 August 2026. Guatemala and Nicaragua also report dryness. WFP provides food and cash assistance. No source confirms the 21…",
+    "summary": "An agricultural drought affecting about 728,311 km² was listed in an automated GDACS alert feed, which names ten countries including Belize, Costa Rica, Cuba, Honduras, Guatemala, Mexico and the United States. It started on 21 April 2026, and the feed was last updated on 21 November 2026. No news, government, Red Cross, IFRC, UN or ReliefWeb sources were verified, and whether the drought is still ongoing is not confirmed.",
     "ongoing": true,
-    "places": [
-      {
-        "name": "Choluteca",
-        "country": "HN",
-        "kind": "region",
-        "impact": "municipalities on red alert"
-      },
-      {
-        "name": "Comayagua",
-        "country": "HN",
-        "kind": "region",
-        "impact": "municipalities on red alert"
-      },
-      {
-        "name": "El Paraíso",
-        "country": "HN",
-        "kind": "region",
-        "impact": "municipalities on red alert"
-      },
-      {
-        "name": "Francisco Morazán",
-        "country": "HN",
-        "kind": "region",
-        "impact": "municipalities on red alert"
-      },
-      {
-        "name": "La Paz",
-        "country": "HN",
-        "kind": "region",
-        "impact": "municipalities on red alert"
-      },
-      {
-        "name": "Valle",
-        "country": "HN",
-        "kind": "region",
-        "impact": "municipalities on red alert"
-      },
-      {
-        "name": "Intibucá",
-        "country": "HN",
-        "kind": "region",
-        "impact": "municipalities on red alert"
-      },
-      {
-        "name": "Lempira",
-        "country": "HN",
-        "kind": "region",
-        "impact": "red alert; high emergency food insecurity"
-      },
-      {
-        "name": "Copán",
-        "country": "HN",
-        "kind": "region",
-        "impact": "high emergency food insecurity"
-      },
-      {
-        "name": "Santa Bárbara",
-        "country": "HN",
-        "kind": "region",
-        "impact": "high emergency food insecurity"
-      },
-      {
-        "name": "Nueva Concepción",
-        "country": "HN",
-        "kind": "town",
-        "impact": "corn fields withered"
-      }
-    ],
-    "figures": [
-      {
-        "label": "People in municipalities under drought…",
-        "value": "5.6 million people",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/honduras/latin-america-caribbean-weekly-situation-update-25-september-2026"
-      },
-      {
-        "label": "People facing imminent crisis",
-        "value": "708,459 people",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/honduras/latin-america-caribbean-weekly-situation-update-25-september-2026"
-      },
-      {
-        "label": "People receiving WFP food and cash…",
-        "value": "more than 470,000 people",
-        "sourceName": "guyanachronicle.com",
-        "sourceUrl": "https://guyanachronicle.com/2026/11/16/when-the-rains-fail-preparing-for-drought-in-central-america/"
-      }
-    ],
+    "places": [],
+    "figures": [],
     "donation": [
       {
         "url": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026",
-        "org": "UN OCHA",
+        "org": "OCHA",
         "kind": "un",
-        "note": "Honduras Drought Flash Appeal page, September 2026; UN appeal information."
+        "note": "Flash appeal document for the September 2026 Honduras drought.",
+        "specific": true
+      },
+      {
+        "url": "https://go.ifrc.org/countries/81",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO Honduras country page listing drought DREF; funding shows 100%.",
+        "specific": false
+      },
+      {
+        "url": "https://honduras.un.org/es",
+        "org": "UN in Honduras",
+        "kind": "un",
+        "note": "General UN Honduras news feed mentioning a US$60 million drought flash appeal.",
+        "specific": false
       }
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-21T03:36:27.910Z",
-    "donationSearched": "2026-11-17T22:50:03.877Z",
-    "directSearched": "2026-11-17T22:50:03.877Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-21T13:08:19.870Z",
+    "directSearched": "2026-11-21T13:08:19.870Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
+        "org": "Paso Pacifico",
+        "kind": "globalgiving",
+        "note": "Recovery support for rural communities and forest wildlife in Nicaragua and El Salvador after El Niño drought.",
+        "title": "Emergency appeal - effects of El Nino - GlobalGiving"
+      }
+    ],
+    "seen": "2026-11-21T13:08:19.870Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-19T21:09:40.926Z",
@@ -529,7 +467,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-21T03:36:27.910Z",
+    "seen": "2026-11-21T13:08:19.870Z",
     "donationSearched": "2026-11-19T21:09:40.926Z",
     "directSearched": "2026-11-19T21:09:40.926Z",
     "directSearchVersion": 2
@@ -549,6 +487,22 @@
     "donationSearched": "2026-11-11T18:15:18.314Z",
     "directSearched": "2026-11-11T18:15:18.314Z",
     "directSearchVersion": 2
+  },
+  "gdacs-earthquake-eq-1578540": {
+    "at": "2026-11-21T13:08:19.870Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "A M5.9 earthquake struck northwestern China at 10:45 UTC on 21 November 2026, at a depth of 10 km according to USGS. USGS places the epicentre at 37.196°N, 96.640°E, though other sources give different locations. No affected places, casualties or damage have been reported in the sources checked, and official Chinese sources were not retrieved. The latest feed update was at 12:51 UTC that day.",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs,usgs|CN#a49711a3",
+    "donationSearched": "2026-11-21T13:08:19.870Z",
+    "directSearched": "2026-11-21T13:08:19.870Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-21T13:08:19.870Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-11-10T04:32:08.459Z",
@@ -703,103 +657,6 @@
       }
     ]
   },
-  "gdacs-volcano-vo-1000151": {
-    "at": "2026-11-06T07:18:29.895Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Taal Volcano in Batangas, Philippines, began erupting on 8 October 2026. Phreatic eruptions with ash continued into late October, with a 300-meter plume reported on 20 October. PHIVOLCS kept Alert Level 1. Families in Agoncillo were evacuated, and ashfall was reported in several Batangas towns. No reports after 21 October were found.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Taal Volcano",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "site",
-        "impact": "Eruptions; main crater is a Permanent Danger Zone"
-      },
-      {
-        "name": "Agoncillo",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "town",
-        "impact": "Families evacuated; ashfall"
-      },
-      {
-        "name": "Lemery",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "town",
-        "impact": "Ashfall; residents advised to wear masks"
-      },
-      {
-        "name": "San Nicolas",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "town",
-        "impact": "Ashfall; residents advised to wear masks"
-      },
-      {
-        "name": "Taal",
-        "admin": "Batangas",
-        "country": "PH",
-        "kind": "town",
-        "impact": "Ashfall; residents advised to wear masks"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Evacuated",
-        "value": "107 people",
-        "sourceName": "newsinfo.inquirer.net",
-        "sourceUrl": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption"
-      },
-      {
-        "label": "Families evacuated",
-        "value": "29 families",
-        "sourceName": "newsinfo.inquirer.net",
-        "sourceUrl": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption"
-      },
-      {
-        "label": "Sulfur dioxide",
-        "value": "407 tonnes per day",
-        "sourceName": "tribune.net.ph",
-        "sourceUrl": "https://tribune.net.ph/2026/10/20/taal-records-fresh-eruption-remains-at-alert-level-1"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "tribune.net.ph",
-        "url": "https://tribune.net.ph/2026/10/20/taal-records-fresh-eruption-remains-at-alert-level-1",
-        "title": "Taal Volcano Erupts Again: Alert Level 1 Maintained Amid Volcanic Unrest"
-      },
-      {
-        "name": "volcanodiscovery.com",
-        "url": "https://www.volcanodiscovery.com/taal/news/383845/vaac-advisory-2026-28.html",
-        "title": "Taal Volcanic Ash Advisory: eruption reported as of 21 Oct 2026, 02:10 UTC"
-      },
-      {
-        "name": "newsinfo.inquirer.net",
-        "url": "https://newsinfo.inquirer.net/2320462/29-families-flee-homes-after-taal-volcano-minor-eruption",
-        "title": "29 families flee homes after Taal Volcano minor eruption"
-      },
-      {
-        "name": "philstar.com",
-        "url": "https://www.philstar.com/nation/2026/10/10/2562095/minor-eruption-logged-taal",
-        "title": "Minor eruption logged in Taal"
-      },
-      {
-        "name": "gmanetwork.com",
-        "url": "https://www.gmanetwork.com/news/topstories/regions/1005406/taal-eruption-leaves-ashfall-in-agoncillo-batangas-over-100-residents-evacuated/story/",
-        "title": "Ashfall from Taal blankets Agoncillo, Batangas; over 100 residents evacuated"
-      }
-    ],
-    "membersHash": "gdacs|PH#ffdc6edb",
-    "seen": "2026-11-07T09:15:57.008Z",
-    "donationSearched": "2026-11-06T07:18:29.895Z",
-    "directSearched": "2026-11-06T07:18:29.895Z",
-    "directSearchVersion": 2
-  },
   "gdacs-volcano-vo-1000152": {
     "at": "2026-11-07T02:20:53.260Z",
     "model": "claude-haiku-5-5",
@@ -893,111 +750,43 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-21T03:36:27.910Z",
+    "seen": "2026-11-21T13:08:19.870Z",
     "donationSearched": "2026-11-20T13:29:50.903Z",
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-19T10:50:53.757Z",
+    "at": "2026-11-21T13:08:19.870Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck offshore near Nagekeo, East Nusa Tenggara, Indonesia, on 15 August 2026, triggering minor tsunamis and damaging buildings. Manggarai and East Manggarai had the largest death tolls. The latest figures found, from late August, give 111 deaths and about 179,000 displaced, and aftershocks were easing.",
+    "summary": "A magnitude 7.7 earthquake struck offshore off Nagekeo Regency, East Nusa Tenggara, Indonesia, on 15 August 2026, according to an automated alert feed. The feed says a tsunami warning was lifted after sea-level changes in several coastal areas. The reports could not be verified against news, government or humanitarian sources, and the current status is not confirmed.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Manggarai",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "largest death toll and displaced population"
-      },
-      {
-        "name": "East Manggarai",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "34 deaths by 25 Aug; large displaced population"
-      },
       {
         "name": "Nagekeo",
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "epicentre offshore; 13 deaths by 25 Aug; building collapsed"
-      },
-      {
-        "name": "Sikka",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "6 deaths by 25 Aug"
-      },
-      {
-        "name": "Ende",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "two deaths"
-      },
-      {
-        "name": "Manggarai Barat",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "one death"
-      },
-      {
-        "name": "Bima",
-        "admin": "West Nusa Tenggara",
-        "country": "ID",
-        "kind": "city",
-        "impact": "house moderately damaged; warehouse wall cracked"
+        "impact": "Offshore epicentre of M7.7 quake"
       }
     ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "111",
-        "sourceName": "archynewsy.com",
-        "sourceUrl": "https://www.archynewsy.com/ntt-quake-evacuees-drop-as-aftershocks-ease-death-toll-reaches-111/"
-      },
-      {
-        "label": "Injured",
-        "value": "1,678",
-        "sourceName": "thejakartapost.com",
-        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
-      },
-      {
-        "label": "Displaced",
-        "value": "179,037",
-        "sourceName": "thejakartapost.com",
-        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
-      }
-    ],
+    "figures": [],
     "donation": [
       {
         "url": "https://ayodonor.pmi.or.id/",
-        "org": "Indonesian Red Cross (PMI)",
+        "org": "Palang Merah Indonesia (PMI)",
         "kind": "society",
-        "note": "Ayodonor platform fundraising drive for quake-affected people in East Nusa Tenggara, run by Bekasi branch.",
-        "specific": true
-      },
-      {
-        "url": "https://www.ifrc.org/national-societies-directory/indonesian-red-cross-society",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "Directory page listing the IFRC DREF document for this earthquake; not a donation form.",
+        "note": "Ayodonor platform; PMI city-branch campaign for East Nusa Tenggara quake victims, among general campaigns.",
         "specific": true
       }
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-21T03:36:27.910Z",
-    "donationSearched": "2026-11-19T10:50:53.757Z",
-    "directSearched": "2026-11-19T10:50:53.757Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-21T13:08:19.870Z",
+    "directSearched": "2026-11-21T13:08:19.870Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-21T13:08:19.870Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1365,10 +1154,10 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-11-21T13:08:19.870Z",
     "donationSearched": "2026-11-21T03:36:27.910Z",
     "directSearched": "2026-11-21T03:36:27.910Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-21T03:36:27.910Z"
+    "directSearchVersion": 2
   },
   "ifrc-flood-8073": {
     "at": "2026-11-20T13:29:50.903Z",
@@ -1526,7 +1315,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-21T03:36:27.910Z",
+    "seen": "2026-11-21T13:08:19.870Z",
     "donationSearched": "2026-11-20T13:29:50.903Z",
     "directSearched": "2026-11-20T13:29:50.903Z",
     "directSearchVersion": 2,

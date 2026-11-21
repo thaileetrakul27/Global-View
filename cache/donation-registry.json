@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-21T03:36:27.910Z",
+  "updated": "2026-11-21T13:08:19.870Z",
   "fetched": {
-    "societies": "2026-11-21T03:36:27.910Z",
-    "uncr": "2026-11-21T03:36:27.910Z"
+    "societies": "2026-11-21T13:08:19.870Z",
+    "uncr": "2026-11-21T13:08:19.870Z"
   },
   "societies": {
     "AF": {
@@ -2459,15 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-14T07:01:23.906Z",
-      "chain": [
-        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
-        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
-      ]
-    },
     "local4:ifrc-earthquake-8060:donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Indonesia\"",
@@ -2708,11 +2699,37 @@
     "cruzroja.org.pa/donar": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-21T03:36:27.910Z",
       "chain": [
         "https://cruzroja.org.pa/donar/"
       ],
-      "blocked": true,
-      "checked": "2026-11-21T03:36:27.910Z"
+      "blocked": true
+    },
+    "redcross.org.cn": {
+      "ok": true,
+      "reason": "donation word \"捐\"",
+      "chain": [
+        "https://www.redcross.org.cn/",
+        "https://www.redcross.org.cn/login",
+        "https://www.redcross.org.cn/autoweb/hlwmh/index.html"
+      ],
+      "checked": "2026-11-21T13:08:19.870Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-11-21T13:08:19.870Z"
+    },
+    "honduras.un.org/es": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://honduras.un.org/es"
+      ],
+      "checked": "2026-11-21T13:08:19.870Z"
     }
   }
 }
