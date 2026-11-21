@@ -2,7 +2,7 @@
   "code": "GR",
   "name": "Greece",
   "kind": "local",
-  "updated": "2026-11-20T22:13:19.590Z",
+  "updated": "2026-11-21T03:36:27.910Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "GR:el",
@@ -10,46 +10,80 @@
   },
   "articles": [
     {
-      "title": "Ο Τραμπ αποτιμά τη συνάντηση με Σι και Πούτιν: Εξελίξεις στο Ουκρανικό, εμπορικές συμφωνίες και αιχμές για Ιράν και Fed",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUmZtU3BuOElBelJQTkxhYXhETTJWdm9aMkQxMDZxQkM4SUcxakc5eHBMYnFnem53OE45QWoyMVFVM2gxaFI1Q1RScDkyYk9tSWt4OGVjb2dldjdUMURPYktSb0FmWGc5SFd1eVc5ZDRuT2RIcEp2Q28yWm03T09LR2ZxLWRWal9HU18wbWJyWl9WQWR2NWNndUFzVjVaZE1pWmpjR0pQVW9ROGl4cWVsTVpBYXhjTE1nTkRqNWdtVnUzRVlndFVKYlpJc09zbExZb1FuMWh4NzBKTzVJem92Rw?oc=5",
-      "outlet": "η ναυτεμπορικη",
-      "outletUrl": "https://www.naftemporiki.gr",
-      "published": "2026-11-20T17:55:15.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Trump assesses meeting with Xi and Putin: Developments on Ukraine, trade agreements and jabs on Iran and the Fed",
-      "about": [
-        "US",
-        "CN",
-        "RU",
-        "UA",
-        "IR"
-      ]
-    },
-    {
-      "title": "Wall Street: Sell off στις τεχνολογικές μετοχές - O Nasdaq έχασε όλα τα κέρδη του 2026",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMkZzbFI3dW16NGcwU2ZxaFFXU3ZTY0NGeEl0eFNuVmVZVnozaWdZZTVaSDlnSkx1cnhJRHBZS1RNanNYNVE4eXBEekR0VTNVMHlYa1VvU1Fjei1udUJKSU9iTGI1ZHlER1RjYk1pOVFUdk9fTjJFQjh5QXNBUktNanpaYnlJRmVnUW1UNzRTMTlDQ1pmZDgyVkZia9IBoAFBVV95cUxNa1JQMmJ1ZVNzckVXdXhRSENIZzlrdktmZF94bjdYVk9QNXlOUmtpX1JDb3VleVMtVERXVmxQd1dsWlAxRkE3cmRQY2tNck1SeE5yRjRYTGtiUzVFUzAybWVMWHp0dERuY29OOFlqblV0dFV4UG9RQUFCaU8tVmoxa1E5UE5aWTZuUms5R0FpczdZSGNRTTNIdkFtOTFKN3ZL?oc=5",
-      "outlet": "Liberal.gr",
-      "outletUrl": "https://www.liberal.gr",
-      "published": "2026-11-20T21:11:41.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Wall Street: Sell-off in tech stocks - Nasdaq has lost all its gains of 2026",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Απίστευτο περιστατικό σε σχολείο στον Άγιο Δημήτριο: Άντρας κατέβασε το παντελόνι του την ώρα του μαθήματος, έδειξε τα γεννητικά του όργανα και πήγε να φιλήσει τη δασκάλα",
-      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxNSmhzSkFTMDROR0YwOGVCNmN3M1pqR3VmN1Vyd041d01XTUptLVJTWWxmTHF2RVVGTHhhY1dwQVJXbVljS2Y5b2pFd200aUw2aEw4MzZGWTFtc3EwM1Bka1FUTVBmWVpudTdNNTZMRWtqcjU3OEFQUVZCaWtJbGJCaktlWm8zeHh2QlpHQm5ELVRBZzE5RHlKal93NzNXdzdkYlAxZTAwV0tkV0EzTXZBWUVRVTFrUGN6NmRVQnpIYjhkeUFaUXpxM3EwU3oxUjB3eEtPemFzWlg2RjVzRG92Vng4TEZYNlNDektxdE5acVhZSzNDeVpRSVh3Mk8xdkNYbU40QWV6N3poOHN5THRrRHo3UFVuaFI5ekM1LThyU0EyRF9LWGgtSHNKeFZVWmluZklGc2QtVk5mZEY1QzIw?oc=5",
+      "title": "Το καψόνι θανάτου σε 21χρονο καταδρομέα των ΟΥΚ – Οι «δολοφονικές πατητές» και οι καταγγελίες της οικογένειας",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVEJWYkMydWtkUFRGcmVna2pxNk1ERUMxdjFZVWtHdlhyRWUzSmlCXzBfRXhySDUwaVVtakt5REZBQkVRYkxoNmJ5VjZ3T0FpRFdtLTNHVVMtWkNqMnNrQXlNRXRKeFJsaG9Xb3VRWEhQdDUwWng0MWhHaDVOa1N3MGdmQWhGcnhvWXU0UjlSQ0gydk9hSUh5WG1nM3B2V3BEWjJNTnU3aXR2SGJXdlhYVm00dWxEVkV4ZE0wc2hjSW9zUlJuYU9CTHc2dG1oVXM0NGJMdXpWa05vbG1PRHFyVjFpOU5SUjFjeHNXa3hR?oc=5",
       "outlet": "Newsbeast",
       "outletUrl": "https://www.newsbeast.gr",
-      "published": "2026-11-20T19:47:06.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Incredible incident at a school in Agios Dimitrios: Man pulled down his trousers during class, exposed his genitals and tried to kiss the teacher",
+      "published": "2026-11-21T02:26:07.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "The deadly hazing of a 21-year-old commando of the OUK – The \"murderous stomps\" and the family's complaints",
       "about": [
         "GR"
+      ]
+    },
+    {
+      "title": "Αγιος Παντελεήμονας: Βίντεο με τον ύποπτο να μεταφέρει τη βαλίτσα με τη σορό της 24χρονης",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN0s2MXlsTkloWktsdnRkWUJDTVBPLVBsUzdJLTlzMzlOakloS2VEOWFodGd6cm9mZ1JKa0xqTHpUQ2dac2pmTnpaUFMxR291Vjh5am5wRmJ4b2tqNkJoNW5jQnBHMmstUndwR2Y1c1ZDdnAxcWxESG93SkdQcHd4N3ZuWVU2azR5NXc1d29hZjFwZEI3ZWZQOW91ZzRjUlRUcnJaQjVJdXMtUGlZYndKTXRaR05mdXNJaDN3THdmRzlYZWxvWHlNcHFvbjdCTzltN0hVQVVBNnFSU0lkZ1JF?oc=5",
+      "outlet": "Kathimerini",
+      "outletUrl": "https://www.kathimerini.gr",
+      "published": "2026-11-20T18:48:41.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Agios Panteleimonas: Video of the suspect carrying the suitcase with the body of the 24-year-old woman",
+      "about": [
+        "GR"
+      ]
+    },
+    {
+      "title": "Παγκόσμια φρενίτιδα για το GTA 6: Ρεκόρ πωλήσεων 3,79 δισ. δολαρίων σε 24 ώρες, άδειες από τη δουλειά και «συμφωνίες» με συντρόφους",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaGdoTXN1N3pfVjROT2V0Rk9tNU9Ycy10MDFqd2VwLVZVT2pNb2pySlkyaFRuZG4wSC16RV9PZU1vWkMtbjdidkpjWHR5b0Y3eWJjaGZBdnEwamZGZE1mbkZndXptRnhodHVabXlGcnhTNWRkRF82a1RfX0owQXFCWHJHN0ZJTi1FVnBrTndEOXFmcGZSTHQ5bDdUTkQ4eUdfclZNdm9sdnRxOUFRaEo1UlpBRVpMUUZpcnpNMlhfSXJBVWh2U003SFItWkF3V2FwTlhYM3VRSXhLLTBGZkkw0gHkAUFVX3lxTE8wWHE0WW83cXNyNGtaRkJjR21lQjNMRlAtWkJSQXBmNUFmTFdzbjJ2S2pON3lIcGhQbzJtQkNUWVlGbEI3emhBaC05RXlNbEVObVNORkQweGQ4RUFPajRMdzEzekJMX1J3RV9walBfQWlyZ3BTZTZTaVZnTmtxZEZ0UmRmaEpFVGt2ZVBycjZsUUJJTUk1Q1RibFJWR3ZteTAzR3hFU3d2UVVaak8xQkQtanFIVlY1N1dhMzlOV01YY2lVaktmdVFIaGk1cEZZYzZyaXFDYWdIcEFzTnRsdEIxT29VMw?oc=5",
+      "outlet": "ProtoThema",
+      "outletUrl": "https://www.protothema.gr",
+      "published": "2026-11-20T23:51:02.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Worldwide frenzy over GTA 6: Record sales of $3.79 billion in 24 hours, leave from work and \"agreements\" with partners",
+      "about": []
+    },
+    {
+      "title": "Σε νοσοκομείο διακομίστηκε ο πρώην πρόεδρος της Βραζιλίας Ζαΐχ Μπολσονάρο",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWXp1OFE4X3BDN1pzWE5Qa3RIOFJKQzZ6X3BWZXJjYnFqN2lxTlhjd0R5dmQ0UHRQU0ZwbVhXcV8zTEJlVTVHNnNKc2hfR2JlZkphekpHc3BKZGd6cEpHTXg0T2dLajJXSV82bE5vTF9FRXl5ODJxYUFDSnBQVlY0dVdJV0cxWUpWYUthT0RUcXlOS29GMmpyVlhTU2czT3V3M0wtR3pQZW80ajTSAbABQVVfeXFMTzdnd09rNnZBNXp3Y3NyY1pwY2lNYV9GT1UwcjBIbWpJVE92WjNxeXRxa1ltQkduNmpMWW5KUGRTZG1mdEZhaXZ4QmFLNTRZY0gxVGVzdUZwRUJrX0xJRlg0c24yWHhjMUlwelIxN3BheWFhRWpHWk9JQ21JSlBRa05ROGlTT3ZVZ3l0S0VOaXdhSE9nbm43SmRrLTItd0E2azRGLUlzblRHWTJWZlhtekw?oc=5",
+      "outlet": "ProtoThema",
+      "outletUrl": "https://www.protothema.gr",
+      "published": "2026-11-20T21:55:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Former Brazilian president Zaich Bolsonaro taken to hospital",
+      "about": [
+        "BR"
+      ]
+    },
+    {
+      "title": "Ο Παναγιώτης που «σκλάβωσε» τον Κυριάκο Μητσοτάκη: «Κύριε πρωθυπουργέ να σας κάνω το τραπέζι;»",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWXI5b3I3VXo1TzYtZWRycEYyREh2YmtFZzRYNy1GMGJWN0pwSG9hYUVJcW9OMktfMjdONjhTY2lqYzlZRkViN053WklCRkVycDZEeDVQYjNFT2tyRndHZm1tMWROM2xIVFBRYi15aldZYjV5MVNoNzgxcW9qajV3S1prdXA4UHNmcFJqYXlhV2cwSUViMzBqdzJRZTg0YUkzaV9Mbjk2N2d6OWFiTGh5MzlvU2NMV3M0a1ZPeTJKbE5YaFJtMG5ZV3Q3T1AxV0ZheUVjUk9B?oc=5",
+      "outlet": "Newsbeast",
+      "outletUrl": "https://www.newsbeast.gr",
+      "published": "2026-11-20T17:51:23.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "The Panagiotis who \"enslaved\" Kyriakos Mitsotakis: \"Mr. Prime Minister, shall I make you the table?\"",
+      "about": [
+        "GR"
+      ]
+    },
+    {
+      "title": "Στη Σενζέν ο Πούτιν επέστρεψε στο παγκόσμιο τραπέζι – Η Κίνα μοίρασε την τράπουλα",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdkJncHJpQS13c1NSQTF2RHRQeU9sYjRYODdFYlRIZGZLYU1vdHRoeGNhdElITmpZY1JsRlZSUDljZkIyZ0ZhRy01NWhWSUxmVUY3MGVEcFppRnpvOTB0N1YxVXZpYVhiazNBRlgtZVVBSEZyUWN3V3ZMbUxBN1JBa0pQaW5pWWhNQW50MUo5aUVtVTlNT1BzcjZ0cHJWZHJYejdIbl9EMF9UeEx0b1M4YdIBtgFBVV95cUxQbVBFbnF5R0NrZWM3V3M1aVh5bk9COUp1bHVaaTVaSExWV3gzOW5ZQWlFemJsUkgwaEtRMlJmUDl6RkJRdlZEeUdhVFlQU0JVRjhEX0RmUEhHSlRERXVhQmROcUJoVGxMd0FESGRialVmSGYzSXFIUHJhN2daUDlRNlV3Q25GcFphYXVrQTZnSTZFeDRKTTlsaTI1aUdrOVptZUNtUDgxeDkzTFhMc1lOOEF5MGJhZw?oc=5",
+      "outlet": "News 24/7",
+      "outletUrl": "https://www.news247.gr",
+      "published": "2026-11-20T16:35:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "In Shenzhen, Putin returned to the global table – China shuffled the deck",
+      "about": [
+        "CN",
+        "RU"
       ]
     },
     {
@@ -66,6 +100,67 @@
       ]
     },
     {
+      "title": "Απίστευτο περιστατικό σε σχολείο στον Άγιο Δημήτριο: Άντρας κατέβασε το παντελόνι του την ώρα του μαθήματος, έδειξε τα γεννητικά του όργανα και πήγε να φιλήσει τη δασκάλα",
+      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxNSmhzSkFTMDROR0YwOGVCNmN3M1pqR3VmN1Vyd041d01XTUptLVJTWWxmTHF2RVVGTHhhY1dwQVJXbVljS2Y5b2pFd200aUw2aEw4MzZGWTFtc3EwM1Bka1FUTVBmWVpudTdNNTZMRWtqcjU3OEFQUVZCaWtJbGJCaktlWm8zeHh2QlpHQm5ELVRBZzE5RHlKal93NzNXdzdkYlAxZTAwV0tkV0EzTXZBWUVRVTFrUGN6NmRVQnpIYjhkeUFaUXpxM3EwU3oxUjB3eEtPemFzWlg2RjVzRG92Vng4TEZYNlNDektxdE5acVhZSzNDeVpRSVh3Mk8xdkNYbU40QWV6N3poOHN5THRrRHo3UFVuaFI5ekM1LThyU0EyRF9LWGgtSHNKeFZVWmluZklGc2QtVk5mZEY1QzIw?oc=5",
+      "outlet": "Newsbeast",
+      "outletUrl": "https://www.newsbeast.gr",
+      "published": "2026-11-20T19:46:47.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Incredible incident at a school in Agios Dimitrios: Man pulled down his trousers during class, exposed his genitals and tried to kiss the teacher",
+      "about": [
+        "GR"
+      ]
+    },
+    {
+      "title": "Κύκλωμα εικονικών επιστροφών: Εταιρείες τριών ημερών με έσοδα εκατομμυρίων – Ο ρόλος δύο διευθυντών τράπεζας",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOQXFuaXh6RzVsaTQtaDE3ZjMwMEtnQVlNcEI2Q0Q3LW0tcmpEdmhaaWdoUHYyU29aN3pMMl84S1BXQnAta2VBSVdRZ212cV9LTmxDV3Ewd1FSS2JpQWxFYkVoaWw0SkVZXzgzN0pST1lLQ1RfcTZETjA3MFpOd2RuY1g1YldTcl80ZWRUckVuV1c5VTFOdGpnUXFiSmY0a25OcGFKWDhnQlpLS29WWHJaRmljXzVIOXBDR2RQUUlhc3JsYkU4b3A0YXdoNXBRRE1QYl90ZlpVUEFGazZmU0tWT2JBM2FXd1huRkhxQ09sVQ?oc=5",
+      "outlet": "Kathimerini",
+      "outletUrl": "https://www.kathimerini.gr",
+      "published": "2026-11-20T21:33:36.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Fake refund ring: Three-day companies with millions in revenue – The role of two bank directors",
+      "about": [
+        "GR"
+      ]
+    },
+    {
+      "title": "Έκλεισε τμήμα της οδού Δημητρακοπούλου στην Καλλιθέα εξαιτίας φωτιάς",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQc1h5WHo5V1E1MzR5UHpXQkdyZUdkRFBxUmJER2pBVkdyNW9NTjdUV3BvN1hxSGZYdlVKbC01dnR3OFd3ZU03cnBweWlhRFNET0lwMTJlTEhBbWZEN0Q4NGNiYWhVSXg1dkpadGtldmFLQ1VwQl9vRWNVUW9uWHFnTEQ4X25sSkZDa0ZSQ25nbGlpZ2o2Q2JXOGkzZDQ3OFZ0R2ZOSjV1M0h2a2c2Qkw5RkZhNHpWTE41aC1Z0gHAAUFVX3lxTE9yZl91Nl9waXRSS3M1NFZiWXhuUWMyaXZ5UXpDWEJNM1lfQVJnY2t5clR3STI3MnVPb2FhdmpKVk5oYWN0WHpxOFo0Q21QX0N1WWpEZkFtTnBxWER1ZFZ6b3RuRFpSZHgtX1JaZWlaRTFxd1hOTWRlN1lPUHJacjZzUTFxZWtlQ0FmQ1JTRTVodW9ackZvNmhxNFFHYXNNcnhKRTg0Q1pkb2FNY2lMYWx1dXdDamk0U3RIc2VURW40NQ?oc=5",
+      "outlet": "ProtoThema",
+      "outletUrl": "https://www.protothema.gr",
+      "published": "2026-11-20T18:35:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Part of Dimitrakopoulou Street in Kallithea closed due to a fire",
+      "about": [
+        "GR"
+      ]
+    },
+    {
+      "title": "Η Gen Z στους δρόμους της Ευρώπης – “Αγώνες για το μέλλον μας, όχι για τους πολέμους τους”",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNV1pGalFkMEpQdS1wanVqV2lNU0RONFBpcDl3TTFhankwNE5IZ2hqeEdQd1VxWDl2NTN0TVJFMzVEQTBrUzNBS0dOX0s2dDNtYlFTQVh1OWhYODdnaFpQQWVTQURIYU0temJWVnpGV25FLUp2cEZ1WHN2akcyNi1vU254QndSOTd6VXVYcmdEUFRaTTdrWU82RWNYb25KYUVSQk1rNkpmZ0ZOekpEZzQwdG8xT2NEbVnSAbwBQVVfeXFMTW5ZZV8tZGQwVW1MZi1PUzN2amtIYXB0ZnktazdjMk9pQm43R1RSeWJWWHliaU9zR0NYLTdXcVdUOEpzWDNtV2dNRnhkN1JMajU3SV9pXzEwc0p2bE45a2dVZEhCc2xHNTg2Y0VHM0FKZzNZSW1oUmp4bjduR1luMXRndjBmd2dJY2RBTG11YXR3VTFpbWxTa3ZnLWwtZjJ1bmFWOUhSc2oza3o3bHl0NkVOaEJPbXRqWEFqTF8?oc=5",
+      "outlet": "News 24/7",
+      "outletUrl": "https://www.news247.gr",
+      "published": "2026-11-20T20:38:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Gen Z on the streets of Europe – \"Struggles for our future, not for their wars\"",
+      "about": []
+    },
+    {
+      "title": "Βαθμολογία Euroleague: Ο Ολυμπιακός συγκατοικεί με τη Βαλένθια στην κορυφή, 3ος ο Παναθηναϊκός",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORnhCYWNLWjRGUkF1d0dMd2w2YUo2OXdYcDZTOGsyLXlEUm1zaDF4cGZsdmFyS3dYWmxYaGxlTC1kaHhMeDhVWmlSbmIwTkNlcW1yVjJLRjhaTWdneGd1RzcyRGl2dmphWEFhN2pxWl9xX19tazNYZ2xzQVZnYi1HNGZQTldnaU5aN2RTMTFhT3NCUVVNMG56REdpVEs4NW9jOWdUUWdTREZyMHdsUkg5dmRScXYwbVN3cnRvR29HallkUjhnV3BXTU9Tb1M2S25maFHSAdcBQVVfeXFMTTlyWTB0cWllUHd3eDlKc19WaW1hWlZvOWVEWnd4dUpNRTdvQ3liYW40U3poUUZhSmNFX25TY1Z4bjJIM01mQTVsbGRVV0RsYm9fM3o1WVA1cHp5M0VDRGlDQzB5WDJfdWpNV01oTndDZnZwQjBBX3FmdlpiNW50enY5cU9qeEhucTYwTzA4R2tHdmlvUFA2NkItdThaOU43VHVKdVZMRkFXd2dJMi1uSEFjamV4dmJibGItcXRLY3JrTXpkd21wTG1UTVZFNU0xQ2NTcmE3MWs?oc=5",
+      "outlet": "NewsIT",
+      "outletUrl": "https://www.newsit.gr",
+      "published": "2026-11-20T22:36:20.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Euroleague standings: Olympiacos shares the top with Valencia, Panathinaikos 3rd",
+      "about": []
+    },
+    {
       "title": "Ολυμπιακός – Ρεάλ Μαδρίτης: Το απίθανο buzzer beater του Ταϊρίκ Τζόουνς από το κέντρο! (vid)",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRFBYcXdBRS1GUTFKaDZsY2wtejJXR29mVUYxNUwzRnBfVUs5UlU4YU5ZYWNjeHhTOG9vSjhZQkE5TktNREdXdlJjNFpfYnVXc1U4U3ZoNU1jMXEzamRIaEZ4RkpCQ1hBRHNUcEdYa1N6N04xV0syZEJ6by1FNEkzenEzdWk5QWlUTnZWSDZfU19zZFlyYTgtXzNTRnBPOVNyLWdodWZUS25LcGtvOENMNmJZMjJqQV9LMFdGQnpoY0FlUnlIeTZGcEpMLTkwby1o0gHWAUFVX3lxTFBETW5DSXM2Ymh6cVlZWER5bi12VUVXZmpIWWEzNDVvWVdFcXpEeklqWVlUTHJjV3A0akI1MF9NZDR1bE1meEQ5UTlHNXRRQUM5VWRVWXNPNkhHTTkwaVpTY3UtX3lIUXkwN0Z5YUJFUzZjX0hFSDdKTkJ5SHFlV3JUWmd0RWQ5bjJGWF9lV1FwRlUwUHA4TkU4c21uc3Zjclp4SEFONTR1cnNRTktKQmd4dnFnQTc2Rk1SQXJfblUxM0hLcmZwRVVKQXJLUXlkR0lHMzQxRFE?oc=5",
       "outlet": "In.gr",
@@ -77,280 +172,154 @@
       "about": []
     },
     {
-      "title": "H σπαρακτική μαρτυρία της 51χρονης από τον Ασπρόπυργο που ζούσε έναν εφιάλτη για 25 χρόνια – «Προκαλούσα τη σύλληψή μου για να γλιτώσω",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNZlNVOVFBT1lHUVZ2dTFvWlRVYllMdXRndWp5ZlA1NnE1Umx6WEdfV1pabU4xSkZuUzJEN2h3M28tdU5KTk1rdVdkbmE4ek5XMGNSZ081Zk5YSk9FMDFZUXQtTVlVckxvQmVhbUZQb1FveE40Q0JZNXJLUGo1S2s4NC1HaWZ3eHRFV3VpRWV1R0cwN3QtRnJkamhaakJZZXhjX1FZdUViTFhxT2xNYVNzQzBZN3JOYTMyLVlEUEljY3pFUVZfRG12d2MtNGh1LTNCZGxzdEFzTjQ2NWlraFRqT3VTTjhVZm15RGVmMzRoTWlLaG83bnFUTFRzdzdBYzFlNDNNQ0xaSFpWNk03b0lJ?oc=5",
-      "outlet": "Newsbeast",
-      "outletUrl": "https://www.newsbeast.gr",
-      "published": "2026-11-20T16:26:09.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "The heartbreaking testimony of the 51-year-old woman from Aspropyrgos who lived a nightmare for 25 years - \"I was provoking my arrest to escape",
+      "title": "Δένδιας: Υπαρκτή η απειλή για την Ελλάδα – «Αν δεν αλλάξουμε, κινδυνεύουμε»",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbVl1clJiVTc4cllZYzFWTlBIN1BoTnliR2wxRU5vVVNZeG42TlRPVXBfTnQ0Z1gwdm9weXBycUpCdjVxNmVETHlDdnJuLWlOMU9GWmsya0lrVVB0enFBS3JVY2pqSVNEVW5IYTN6Wm54MC1fRnpnTjhPTV8xRUlmcy1rNlJNTVBoNHpYaVNTc2tmUFNRZk4wYzhaZWNtekRCbjNnY2pWQnBxWTc1T1hOcS1Ebw?oc=5",
+      "outlet": "CNN.gr",
+      "outletUrl": "https://www.cnn.gr",
+      "published": "2026-11-20T13:41:37.000Z",
+      "outlets": 6,
+      "trending": false,
+      "en": "Dendias: The threat to Greece is real – \"If we don't change, we are in danger\"",
       "about": [
         "GR"
       ]
     },
     {
-      "title": "Μητσοτάκης: Η ΝΔ είναι η μόνη πολιτική δύναμη με αξιόπιστη πρόταση - Στην αντιπολίτευση είναι ίδιοι, απλώς φόρτωσαν 11 χρόνια στην πλάτη τους",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWTRwNEFScjE2WHVleVN5OFFtVWtELW9ha1hVYlZnZ0tPRkxKUDNmQzIyeDl3OTJ1SDExVG92eldYOUJ3TC1Vd1VYT29ZMTNOZ1AtLVJzSGw1UGtaQVZ3NV9KTlZ3X1c4VzlrN2V0Vml2ZW9RVkc0MmJlUnBrdWluOGdqUUlfUUZfTEdHUy01UVY3bHpKbjhzeFJwSTFwYmF0SXFHcHZ5VEp3Rlc2MWFxd0xWYTlXT0k4?oc=5",
-      "outlet": "ProtoThema",
-      "outletUrl": "https://www.protothema.gr",
-      "published": "2026-11-20T17:08:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Mitsotakis: New Democracy is the only political force with a credible proposal - The opposition is the same, they just loaded 11 years onto their shoulders",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "«Να καταγραφεί ότι είπε \"ναι\"»: Βουλευτής στην Αυστραλία έκανε πρόταση γάμου στη σύντροφό του μέσα στο Κοινοβούλιο, βίντεο",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPd3RtSWVNdmcwTGh0ZXU5TUNERFRmajJhQ3hkVEhTRzZMM0FGS09JSEhKcGNERDQzbDVVOGw2dmNEMHUwd1BnNUw3SUpFcTV3aGtwQVgtd3dYQVlTQ256ZmtSQi03b1hCeHhianZPVTZkdXFUNjBqMnpIYlhZcFRtdnRROHlhQll3OXQtVFVXZE9tSTV4eENYNURIUHNEdDZlMlBETHpHUXFHdmpqaUNSQWJrSlhoNURydUt6YTlOMTRKNXNFdTI0V1pqN25lLVp0aTdidFpnbG9JVnlveTNCZS03a3BHaHJoSjEtOGVFOVBzYTJQdDh6ZGpB0gH_AUFVX3lxTE5kX1BnZFZyaXZCT21QNlI1NVN6SUdXQWJCT2pnaG5STF9PWURCQmo1TVFJSklfTlVyb1A0clA3T1ZtOTlidjdjdXlIVDA1Ri0zdndIT1p5WWxydHVHUjVhdnF4djY4ZWZyaFNEZWtDSU1nN09EblBINUxNLXlQWUR4QjFzV01saU04M3pIVlVDWFVyZXFTUzY4WU1MQkNMSXJpWXVHQ0hMemUzcThOTVg3WU1xTXpPeTJyRFFiMnM4MUl5c1A2Q29oS09BbXowRFlEblRadXdzeUs2Y2RLN190dHp2RmtiamNHRVJ6NC14eW92dFU5UWxFcXQ3X3p0aw?oc=5",
-      "outlet": "ProtoThema",
-      "outletUrl": "https://www.protothema.gr",
-      "published": "2026-11-20T17:24:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "\"Let it be recorded that she said 'yes'\": Australian MP proposed marriage to his partner inside Parliament, video",
-      "about": [
-        "AU"
-      ]
-    },
-    {
-      "title": "Στη Sunel Arena για το Ολυμπιακός - Ρεάλ ο Ντόρσεϊ, αποδοκιμάστηκε από τον κόσμο των Πειραιωτών, δείτε βίντεο",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNM3ZrWk5iZ1pCbXhaS3pJal8xQ2NXeElLSjQzWVJ5UGhmODlFT05EWGpVQWJibENaNkNaM1l3QlJ2WXpIa3V0UkpiM05OVEFOeGZfMWhwUnJMUzFCUmpJaGlyMWhOeEFlM1VxWXE0UGliamFIckpyOVhid2gxU2FfMzRqbzgyTWQ5YTNfT2VNb0JfRGdaRnJXUkM4YVRHcU1wajNHZmI1WFJEY0g2RllCQ0RrRTdMQlVNSDdIVFhYazZ2OFA5TVV3bkdQdWlDR3FkQjZMV1hqYmp0aElYM2xwRXVVMWhxdWNJSm9xRw?oc=5",
-      "outlet": "ProtoThema",
-      "outletUrl": "https://www.protothema.gr",
-      "published": "2026-11-20T19:09:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "At Sunel Arena for Olympiacos - Real Madrid, Dorsey, booed by the Piraeus crowd, see video",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "Ο εθνικιστής δήμαρχος Βελιγραδίου ξυλοκόπησε άγρια δημοτική σύμβουλο, του απαγγέλθηκαν κατηγορίες",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQSWhzOU1PeUNWQVBkckhHV243dVRBQjNxbDZaSHBUd1RGZW1BcVdrV1RqT2lOX2pRQWZOUHhnazNSX2YzVUxTX3l4NGxRREVZbXBnbGktV19PY3JNUjgyZXYwUTZMMUdpSzZZU1FBV2JjX3diUjNVcUtYUU1fLWJJbk1WTkMwWG41ZDBnZGR0M3h3NERhNjFJQXp5Skx2WDBCMEh6bXRXWTZiRjFQZGpxZ1VyQzZhNzlOTmNCZmlXY09hQjdPVy00blNnTWRSQ2JFVXJOd3pkR3NicGtMVGdhWFRlbTZDU2ozM1HSAe8BQVVfeXFMTlFFamg4dE5WVzFjWjdaemJ5bXZkbENkLXkwdEJ5QWJLZXlJVmZEZ3hVRlJ3bjdUVXp6NTZfQWhGa25vSWJXTWVsSHpmTWJURnI1NW1YNkJWa1VGeXpZV0Z4RlNidkZpenVDYTFFMkZGOGdpanlJMTR6NGhqTTh0czFmSXYtUkw2ek40d3NSMm9hTC1NZEt6ZG9aQjNIN1lmYlB0Z2I3TUxocVFFVG01YVJySVZhdkluVnZ5RTRrN0xGRGwwWGFYQ29wS2ptWDdiWGQ3aFJjemdJWXZJSzVZTTlMS1NGck91ZkZxbFV3S00?oc=5",
-      "outlet": "ProtoThema",
-      "outletUrl": "https://www.protothema.gr",
-      "published": "2026-11-20T17:33:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Nationalist mayor of Belgrade brutally beat up a city councillor, charges brought against him",
-      "about": [
-        "RS"
-      ]
-    },
-    {
-      "title": "Ενταξη Ουκρανίας στο ΝΑΤΟ – Τα δύο σενάρια των ΗΠΑ και οι απαιτήσεις της Ρωσίας",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNX25mMUw2S0c2TERzemNpRzZ3MUFrZ1ZBZVdyTmtaWTluRkhOaHdEWGQzVnlUUFZkQ2wwb29ObExNS0NIbU5oUHBveGlaa1ctNXVCbXoyTVBqMS1WZDZfblNqMkVoem5qRkprS0RfZVJ1LWs1V0xNYTJ3U3JsN2FkemlqY3JzTHVVSjNwZnlycDlVLTR0OU52TVdUd0RqRDlkUm9Lcjl3eHdrWlpwWFJSWFF3bmIyR1pZSkNfNjduRm5yUzdBTTRGUnJmdV9wTklocWc?oc=5",
+      "title": "«Θα σας βασανίζω μέχρι να γίνετε σπουδαίοι»: Πώς ο Χουάνγκ διοικούσε μέσω του εξευτελισμού",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTEx3YmhUU2h3OS13RGp2RFE0WEJLVU5OQzRJQTZlNzRKNEhPaTl0Uk5vSjhVajJodkNKUmltaXA2Rm1UZFN6MmJyY2VZUVRJZWxyV0U0Qmc2UHpPQlNNSDktV1RIRjBGa1NSTzJ2N1NLajY4b2NjbUJLT2hJVm9BeVlQUFBPZ2I3bnEwUVFBeFNOamFOZ2ZPUDFFSmpvbUF0V1Ewd3pfdk9sQUpPUDlFMkk0TjJYQzBidlp6ekVSdzRlaGxmOGxEQ3RxTm12N2M?oc=5",
       "outlet": "Kathimerini",
       "outletUrl": "https://www.kathimerini.gr",
-      "published": "2026-11-20T16:45:42.000Z",
+      "published": "2026-11-20T15:29:48.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Ukraine's NATO membership - The two US scenarios and Russia's demands",
+      "en": "\"I will torment you until you become great\": How Huang ran things through humiliation",
+      "about": []
+    },
+    {
+      "title": "Σε αναμμένα κάρβουνα η Μπάγερν για τον Κέιν: Τραυματίστηκε και αποχώρησε από το ματς με την Κολωνία, δείτε βίντεο",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNeTZ4RnpPNWpnT3ZwSTNxWGlGQVRFejNRd2Nybm5vbEh5QXJDSTdMOTZ1YXk2Uk1uOXZKSFNVcTZUZWc0OFN0NEpEMTlXVzFhZEtDQU9DNHpHVzBORXBLNE9oY1JhUml0SUVVVjBHSlRUY3JtYWRjMTV4OW4yTFAzMWFrT2lwN3NoR3hTZWtlMDBMSXFCN3BqcTNXQWdvNk5CY08zQ00tOVZuNzFNSmhxa1l4WjAwWmxnN3o4TUtzaGpDOFk5ZGpRNm0tb1VsZFBYNzBuSGRGV2prMS1JenZLYmQzMG4wVGp0Z1BaYWxGSXE?oc=5",
+      "outlet": "ProtoThema",
+      "outletUrl": "https://www.protothema.gr",
+      "published": "2026-11-20T20:38:49.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Bayern on burning coals over Kane: Injured and left the match against Cologne, watch video",
+      "about": []
+    },
+    {
+      "title": "Απελάθηκαν από την Κύπρο δύο Ρώσοι διπλωμάτες για κατασκοπεία, στόχευαν κρατικά μυστικά και ευρωπαϊκή τεχνολογία",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNREtZVk9YLTJpSXhwXzJoa05qWWtMeTh6Q202V3NNdDdIREVqUVpDRDBSSVluUlBOa3BNYTExNWZUYWZFRFZHd1ZfeXV3ZllTa2VMblhsWG15WmZuWDVLdXd5aVdVdkVsSTlBaVFWQ2tBZmRIb3ZSbU5iWTJoSXNmblNKYUJQMmxxWVFXVkFFNUdMcGN0NktiZ3Nvd2VnWXhVdFB0M2VUQUxLSXhxQTBVb0xHUFVNQWFNRV8yRDR1MU1oemM0V2pWZ1J2ZkdRbDYtSUxteGhUTk00NlN5c0hFY2ZtdW1rbEpEUlZ1UkR5dW9OMzTSAfgBQVVfeXFMUGZMMzBScllYSHRySXlWSWNNYjNuaHVwVDRrU1dYbkJNX1hUT1dPdkFvdFoxby1aalkyaVJ2QTNxU2VXTjIwNkd0aC1zbjY4cVlwWGVUX1c1WTNaNUdaSjZSVm42UHNCR0NHM190VnpRUm45WW00SjRtUFFDMWRPM3JXSmZqU0hfdVVhbnI5bkFCRzJ1eXJwd1R3ekVNUnZoOGNRNWwyeW10R2huZGUtY1F3SC1MVDk5TENzSGN2U2ZBektVdnNRUnd5cDltUWJmZ1ljWS1VYWlfTE5oQk13MFN6OTlnVVFvdVpXVmdmQXJzVEg3cXdWVG8?oc=5",
+      "outlet": "ProtoThema",
+      "outletUrl": "https://www.protothema.gr",
+      "published": "2026-11-20T22:08:58.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Two Russian diplomats expelled from Cyprus for espionage, targeting state secrets and European technology",
       "about": [
-        "UA",
-        "US",
+        "CY",
         "RU"
       ]
     },
     {
-      "title": "ΜΕΤΚΑ: Στα €10 η τελική τιμή διάθεσης - H ισχυρή ανταπόκριση αποτελεί ξεκάθαρη ψήφο εμπιστοσύνης, λέει ο CEO",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPa215TGotWDVxQ3NsVE1GUXhULXhoYnRtX3ZCa3JTOXF6dHJBc3JCXzZJOGcxU2N2UWhxRVk0OHdTcFR4QmtzSDRMNmFJa0hpQVlXdVBtRi1qUWlCcVJhSkh3YURRX0dURmoxRlBweV9JeHhTQ0hwajkzYjlvalJiQXZjaTRLeGt2NHlmanBXX0l1VTdpOUV5Ujh4LTY0ZnAwZTZBM0RuWFV5d09zdVdWZDZNUFd6V2J2T053MVM2VVNqYzF4YUNoYnI5ekJkUmdMZVI5cld3alFEdDdFSjNCVWdPUktOQdIB8gFBVV95cUxNQy1aZWVzU1dZcjZVRWlaUmVoTm9VdF9xV0xCZDlMVWNOLThGVUFsc3h6ZU1OMWVrUGhGczlZSXVnUG9OdkQ3Rk5PVC1IT2hFdnVaallva256OGlCZWs2SFBsX05yekZvRkZEWEwxZFdDLVRtZ3pHQUxlNW5JS0Vpc1FkOWVnLUJ1RDFVSzVJOHhiLU9ZT1R5R2JOLVFoem92cjFYTFBtR1pjTk1icURtRW53MWthNmpGOXcxb214d0w5bm1kekNHWHlHT2ExVVl6MXAtVTdORXIxbEpNMWpTQ1M1Vk9NTEVqZlpKOHJ3RFVVZw?oc=5",
-      "outlet": "Capital.gr",
-      "outletUrl": "https://www.capital.gr",
-      "published": "2026-11-20T16:57:00.000Z",
-      "outlets": 5,
+      "title": "Wall Street: Sell off στις τεχνολογικές μετοχές - O Nasdaq έχασε όλα τα κέρδη του 2026",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMkZzbFI3dW16NGcwU2ZxaFFXU3ZTY0NGeEl0eFNuVmVZVnozaWdZZTVaSDlnSkx1cnhJRHBZS1RNanNYNVE4eXBEekR0VTNVMHlYa1VvU1Fjei1udUJKSU9iTGI1ZHlER1RjYk1pOVFUdk9fTjJFQjh5QXNBUktNanpaYnlJRmVnUW1UNzRTMTlDQ1pmZDgyVkZia9IBoAFBVV95cUxNa1JQMmJ1ZVNzckVXdXhRSENIZzlrdktmZF94bjdYVk9QNXlOUmtpX1JDb3VleVMtVERXVmxQd1dsWlAxRkE3cmRQY2tNck1SeE5yRjRYTGtiUzVFUzAybWVMWHp0dERuY29OOFlqblV0dFV4UG9RQUFCaU8tVmoxa1E5UE5aWTZuUms5R0FpczdZSGNRTTNIdkFtOTFKN3ZL?oc=5",
+      "outlet": "Liberal.gr",
+      "outletUrl": "https://www.liberal.gr",
+      "published": "2026-11-20T17:27:00.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "METKA: Final offer price set at €10 - The strong response is a clear vote of confidence, says the CEO",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "ΠΑΟΚ - Άρης: Οι προϋπολογισμοί και τα συμβόλαια των παικτών",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNE0yWXZiQ0Z3bHhFVDRCTlU1dkFXeVNpak9JTXFYVkkwVjAteHMzdWpyakd2Tl9WaHotRFIyUHBlMnBtNnBFZDg3U3V1NzJWd1FLZDlIR2Z5RlZoMjB3TXRKcW9jMHZiSUhXMFVSdlpSZEtrZ2J1dVpxc2VhLW1FYl8yR0MtMTdIaEZoYnA2bXExMTlOM0JGYkNhTU5HR3R1cktyYXJnSk1KQ21tSXpqcWM3Z9IBuAFBVV95cUxOUzB3ODlhYU5WUEt3RUJ6LVRZT0xtUG1iUExNb2lMUVhVWjhzTnc0ZzhoTERyeTJtVVU0bGVVM0E0M1gzYndoVDB5VENNNzFtSzh4a1IwY081ZS1HS2x2cEdUZGVpV0Y5bERPSGtIamRWUmpBNGpLaXBFN0RmSFJzS2ZoVGx1U3hTVlNuMWwtV0J2eVQ3YW55dFJPb0lYSUVRNVd5WENCWlhOQnFBRUNNUkowSmpPNHlS?oc=5",
-      "outlet": "Gazzetta.gr",
-      "outletUrl": "https://www.gazzetta.gr",
-      "published": "2026-11-20T17:27:59.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "PAOK - Aris: The budgets and player contracts",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "Περού: Η στιγμή που ένοπλος εκτελεί εν ψυχρώ κομμώτρια ενώ χτένιζε πελάτισσα - Σκληρό βίντεο",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOVpxenBtLWVId1UtMmtVckVPbWY1NlhQdVlZSG4xX3dsZlJZVzMtQUlUZ3NzVXUxWDVsOURYVmZqY1JIUjQtM3NWNmlfYjBkUV9TbTFXNXZNVWxjR0dOazRjdl9mckVqNWttRERKMW9CYVhHZGQ1T0hoVlNiNEZsZlVBYXRXZHNnNlVyLUVxNmt5NGU1VUFiQVZvaEVIbVBrQ3ZZV0Fib1JGb2FQeXVYVjZYbUtGSDgxUXhzYzVsZWFSek1Fb08w?oc=5",
-      "outlet": "NewsIT",
-      "outletUrl": "https://www.newsit.gr",
-      "published": "2026-11-20T19:41:08.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Peru: The moment an armed man executes a hairdresser in cold blood while she was styling a client - Harsh video",
-      "about": [
-        "PE"
-      ]
-    },
-    {
-      "title": "Τι θα δώσει πριν από τις εκλογές ο Μητσοτάκης",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQkdUb0xrQktWclBKS3lidHVYTnAySmJSb2dUbG9PTkhueFBTQTRTWFd6MFJXN2dQSGxzR29FWUs1WWVRZ0ZWa25pM2dKUjNqRVd6blExTEpfU2hDQl82WVhUazdsZmVqY2NMSzJxMEhadHRXdUlrc0ZpU253Y3hveGEzRDAxS3NFclJEYVJ3bXpPNzVycmQzdFlhSQ?oc=5",
-      "outlet": "Protagon.gr",
-      "outletUrl": "https://www.protagon.gr",
-      "published": "2026-11-20T16:30:00.000Z",
-      "outlets": 3,
-      "trending": false,
-      "en": "What Mitsotakis will give before the elections",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "Καλύβια: Σύλληψη 39χρονου για οπλοκατοχή και εντοπισμός εγγράφων με πλαστά στοιχεία",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUkx4cHNVeENvc2FPSTlualkxelB5UHJxVE1FVkh1bi11bUhXY3A5djNzQ2lja0s2SjRZNHRWcUptWm1qU0hVRHh2LWhPRG5yZVRhVUFtYU1DSnNsa2VwcjNac0QyU2djSTBlek1uNDg3a2h2Uk9HWFBSQVdqVlBjSm5lSzhWUVhvMk1nVklhY1ZUdFVBeGhaeUJ6aUh3MTd3WGNxa0d1RTNXamltQlJlcHZiYU5RTVlQZDV1ekdnanU?oc=5",
-      "outlet": "ΤΑ ΝΕΑ",
-      "outletUrl": "https://www.tanea.gr",
-      "published": "2026-11-20T09:27:29.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Kalyvia: Arrest of 39-year-old for weapons possession and discovery of documents with forged details",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "Κύκλωμα με εικονικά τιμολόγια: Δίωξη για έξι κακουργήματα στους 15 συλληφθέντες",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRkY5Tms5bWFvNlhQY2l0T3pqR3JqLXpITG8wUktxVlVHVGFZX2E3bkx4bWlXTS1meU1tZ0NGM1JBaG16VUpHY3JqRjAxb21nejlKdmo2MTItWFlHcEpYU1E1X3lDZzRiZ09XNnNsRV9uSk0zRXJPZ1VpekM0dGJLSUNINk15YTF0N1dvcnprT3h4MzIyUHZFOW9HeUY5UmIzLVd3VG5sTVhNbEwwY1JjbTdGUdIBuAFBVV95cUxQZllUdEgxMmlBS1RrUWRtVl9VM0JiRGlXaFV5MGZLTUFJc2JFekcyQUdEV2I2b0M1U3VBTVpqdzR4VFdHQ0g3dTFiSVUyV3pPbjZGVlMyYTF0LU1tcU40TGdYVWw5M0hDRERuendlNjdYc29seVpuMExkYWpBYTZIcV91MXFDVE5xeEhrc2R4NHMxM3ZRX0hpSU9VeWdLeWt2X0JKQ29ubnp6aFJwNWNjNl93V19sVldm?oc=5",
-      "outlet": "Skai.gr",
-      "outletUrl": "https://www.skai.gr",
-      "published": "2026-11-20T12:03:51.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Ring with fake invoices: Prosecution for six felonies for the 15 arrested",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "Γκάφα Μητσοτάκη με το GTA 6: Διαφημίζει παιχνίδι βίας που απευθύνεται μόνο σε ενήλικες",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZjRydWxxbUxoQk5leFAwajJfQjlGOEhlZXZNQTFNUVpaWDhqVXJ0WWlKUVJwRXM5b1NiRkpGSm1lV2NWclBNMU91amtQQ3BYWWxNSzA0UDdGbmdUZ3pCajU5Y2F6Rm9HS0p5VDJLUmhzV19TY3AzbEhsSnZtYTZmdTZXQXJMcVdnekhPVG5Pa0JPN3JLNnhlcUQxaTQyM0R5eWtsVnpadXZEelBTaVc5ekRqMGFrWXhlS3pnd2VqRmo?oc=5",
-      "outlet": "Η Εφημερίδα των Συντακτών",
-      "outletUrl": "https://www.efsyn.gr",
-      "published": "2026-11-20T14:46:25.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Mitsotakis' gaffe with GTA 6: Promotes a violent game aimed only at adults",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "Κωδικός «Fortress America»: Το σχέδιο του Πενταγώνου για το χειρότερο σενάριο κρίσης - 90 ημέρες χωρίς ρεύμα και ανεφοδιασμό, φόβοι για γενικευμένο μπλακάουτ",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNNWl0cV8tZVctdVJtMUNCMy1qZ2lRWTJqQlIzajdKdk9JUnNIVlVRWVVGbEI2N2NVZk5pSTM3MDBCWVA5Q0N4bnVjR3RfWGhjWmNQSlpKc2hScDgzV0lxUmo1R2hhQ21ZSW85Ty1SMldzVUhDanJpcWItSmdsMEdXaHJUM042V1ltTjFDekFMT2c2Qmt6MnFQNXUxcnd1RUxDWHY1VVI1azJLcnhyMUZ1MUhXamR6S1hUcFBMNWJ6S3plN2E0WXF0UUNEY2I0eWUzV3NmeWhldFJ3NlMwV2FJbjNnNHZ6ZlQ1SEZmYUw3MXg0cmJKYUFUTDR2MA?oc=5",
-      "outlet": "ProtoThema",
-      "outletUrl": "https://www.protothema.gr",
-      "published": "2026-11-20T19:03:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Codename \"Fortress America\": The Pentagon's plan for the worst crisis scenario - 90 days without electricity and supplies, fears of a widespread blackout",
+      "en": "Wall Street: Sell-off in tech stocks - Nasdaq has lost all its gains of 2026",
       "about": [
         "US"
       ]
     },
     {
-      "title": "Μιμή Ντενίση: Οικοδέσποινα σε μία λαμπερή βραδιά - Στο πλευρό της ο Σωτήρης Πολύζος",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYXgwLUE2dXktX2FQMncwZTk1WjlvNnRXNVAxeG5fV3o0UkRqS09MMUYyWmVfa0JjQzJLMkp1MEhZSm0tZWZxd05aaGQzSWMtWnRocU5xR0hTQm9FYV84amd3Q3dsQW1mM1FHaG9DTGt1LUR0b0FmTFRRRzZVYnVyNjB0a2x5UVFHSi1RNHhrUUlrTXpOZ3F3T3FIeDVjS2tQUmxnYTlSS3Vyem9EREJmN3gwNjZqYnY0NUZrS2JIRW9kS21i0gHQAUFVX3lxTFA1ZTA5Zkl5aTc0QmpETXF0d0hUT3VVY3lxdk51UXBfWTVVcnB2WThSanh6azU2d29RS21YZTVacllLX2dCbE9QSXp3SVR5YjFEUmFMcV92eTZlX2VLWUZLYzJIS0hsQzZwcUxValJ3MDZyQVNiaGZ1S0ttOU9jX3doOW9OY3F0QXBKQVR3SlpVWXRBYXkyeFRSeGJHZWx6QXVWdUVKLWw4ZHY2YVBUVE1iLWNveTgtUlMzYzh5STJoSDlUbDNKZEdBc0JzSlJoVDI?oc=5",
-      "outlet": "The TOC",
-      "outletUrl": "https://www.thetoc.gr",
-      "published": "2026-11-20T18:50:28.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Mimi Denisi: Hostess of a glamorous evening - With her, Sotiris Polyzos",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "Βάρη: Πώς έγινε το σοβαρό τροχαίο με την κόρη του Βακάκη των Jumbo - Βίντεο-ντοκουμέντο",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNT0NGbnZaRjREWHRTeF9uR2JkTkpFSC1lS1VlNDRueXlWbzlFMnZkTVV1VUU2MGVLY2tEU0FRNS1PZjR2Y0EybnZNaU9xSmhIM0t0MklJdGZCNG5ZU0xLaDZSNVBaa1E1aXBtWlR3QUlwM1RLTk4zcjNtaUdmTEpSdjFtSTV5UklUaGR4MDdjTFB5VHIzSmRzRlJvUVB4NUMwX2szWUZCaTRsQUZ5Ym9mRFIxcmFSNXFBMkpKZnRqaE9WZWNWMm9feWVB?oc=5",
-      "outlet": "η ναυτεμπορικη",
-      "outletUrl": "https://www.naftemporiki.gr",
-      "published": "2026-11-20T08:18:08.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Vari: How the serious traffic accident involving the daughter of Bakakis of Jumbo happened - Video footage",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "Χαλκιδική: Έκρηξη σε γιοτ - Ένας τραυματίας",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1xVmdhMmpacWw2dE5rU2ZEeFhBNkNnbVAxNEQzYUxCS1JOZmtNYXhuU01rYW5YZ3lseWZTc05HbEJkRzRGUVMyQmYwTDZqR0pWTHlXQVdvZS1MV0FZMnh0QTJTOEF4RHVfV3BNWE13NXB3ZFlxNGM5d2h2NNIBgAFBVV95cUxQN194ZHIzbWFsVDJ3Z3JfbERDTzMwa05KaGpkNWlaX2lIU205QjNTcTlzNGFNbVJBNU1leXdkeXNhNzRDUjdJa0FBRldvWF9Xb3BOdHA2NHNuVjNUNTRrR2JLSnh4dVVsdVRUNy1XcWtCM29zOVl5Y012aEowb1hMQg?oc=5",
-      "outlet": "Zougla",
-      "outletUrl": "https://www.zougla.gr",
-      "published": "2026-11-20T18:17:18.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Chalkidiki: Explosion on a yacht - One injured",
-      "about": [
-        "GR"
-      ]
-    },
-    {
-      "title": "Έξαλλος ο Ντόναλντ Τραμπ στην πόρτα του Air Force One μετά την επιστροφή του από την Κίνα: Με ποιον αντάλλαξε βαριές κουβέντες – Δείτε το βίντεο",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQQVZQaGlNdi1ZMHJwSGh1bWt1Nm9XbEtnU3NDMzgyS3Q2Z0NLUFgzczViZ21JWlo4dGZyYUVpc1dqZ3lQc01CWmpuY2dtQjJBaWp0YnVuc2dCc1BaNU5nNjY5X2NhNXBSclc3NlFyMWUyUzRmRW5Cd2wzVVAwcndBREIzUUJLZjN4YUlEQzBTMDdoS3ViZGtlLXI4cDc2eWhhWGVOVE5jZWVramg4UkxIbUFUMGlESHdFOExlekRsNVhaX1N3ZTZyNnNRbS1aWV90djdoaGpJU3kxZnVMOXZnX2JwRXJnb3VSZ2lyZXJDLTVkZE14Smo3VFdCOWdPNDI1?oc=5",
+      "title": "«Όλοι οι βιαστές παίζουν GTA 6», λέει γνωστή κωμικός και καλεί τα σχολεία να εκπαιδεύσουν τα αγόρια",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQZ3NZZkhmYTBrSVpuWFRuS1A0bGRZMHdHUkY5TUxnUEpwcjVxS2xQTGkwSTJlREsyNm5tREtFeDMtYjJKcFRnT0ljS3l2ZzB0TDQtNWc4ay1hSHZkS2tZTkpkMmhrU1VKVklvejJ3TVZGd2V2OWdJRElmT09HTHBvX2FIME1hZUpHN0cydzN6Qk1IeWp1MURBWldqX1F2YXAxTUpPb0VZb1Y3Vl9DQ2JHbzExMy1VeTVROXl3MkZtMFdXWVlTaXl2YWRIU1VsWG91aTFZYWZNZnRaSGh5?oc=5",
       "outlet": "Newsbeast",
       "outletUrl": "https://www.newsbeast.gr",
-      "published": "2026-11-20T18:06:39.000Z",
+      "published": "2026-11-20T17:11:09.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Furious Donald Trump at the door of Air Force One after returning from China: With whom he exchanged heated words - Watch the video",
+      "en": "\"All rapists play GTA 6,\" says well-known comedian and calls on schools to educate boys",
+      "about": []
+    },
+    {
+      "title": "ΟΗΕ: Πρώτη η Γκρίνσπαν στην ψηφοφορία για Γενική Γραμματέας - Τα δύο «βέτο» που την μπλοκάρουν",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUktjY1RxNVJTYXN6T1pjVmtUdjVsS0N4aXhRdk5IX2w2SjdmTDJybjl2d2pXRGhkYmdud2U5emZGcFhaUHVhSXFkbHBVck9MdjlhZG11SklZeGZ2dG15dFVNQUNkNWxvWkliTWJCbkhGd1I0MGpKdU9hamd2b0JkaHE4V3hra3c4WG5VNWs1Y3A2TDhSNjNLMVpRSTlER2NibVJOXzdlQ2pJLXFBV2JFaEt0eTN4TTZaajh2dHotMklndFEtZ3c?oc=5",
+      "outlet": "CNN.gr",
+      "outletUrl": "https://www.cnn.gr",
+      "published": "2026-11-20T21:39:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "UN: Grynspan first in the vote for Secretary-General – The two \"vetoes\" blocking her",
+      "about": []
+    },
+    {
+      "title": "Γυναικοκτονία στο Θησείο: Βίντεο ντοκουμέντο από τη σύλληψη του 63χρονου συζυγοκτόνου",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUmZma3F4MXZsTDNxZUVrZi1lWWlrVjBaT1hPeVZ2a1ZrcGF3NTdFZmlEUGN5VUpvZ0M4MUl4MEx3eHRxaU11cEtBZDFvSDVnTUt0WFdVeFRFVUpuNkIzWDBLN01JSDN5dFV0b0ZLMXFNS3Bfcm5PUTJaQ1lmemRvQzFFZy0wMk9HNVNTZmZVYXhpZmFvREJqT0cyaTk3b0EyWkFkSHItc0dKa0ZiZVVfc25VOTdpWVhw?oc=5",
+      "outlet": "LiFO",
+      "outletUrl": "https://www.lifo.gr",
+      "published": "2026-11-20T09:12:03.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Femicide in Thiseio: Documentary video from the arrest of the 63-year-old spousal killer",
       "about": [
+        "GR"
+      ]
+    },
+    {
+      "title": "Τα γυρίζει τώρα ο Παύλος Μαρινάκης για Λιάκο – Ομολογεί «σύγκρουση συμφερόντων»",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZmpZLURaUnlQTTAxbG1aMVRyQmlvSUZHQzRwU2E5UFhPc1VNOUV5Rno3WmxGRHc5YnpnY3o3Q1ptTlpEa1MwQzdBcmtGRGRRMmxnVkp2b0JqQ2JQTkpaeUVmV1BEZFg1TWwwQ2NpOXVwVTBFa0pqRC1MTm10dU9qdS1kWjNKRERDckgzRUQxQ1pXeS1Pdk1XN3NGaU50LXFUcmVaWHppWEVWalJ5THdERGNvUzM1OWxUam8yRkkyWklQbDV4a0FJbHFrajU0LVnSAdQBQVVfeXFMTWFzMTBoQjlkZmlLY2ppN1dBVks2QjlqaVRRSl9pZVdyTnRXa3lEN2U1Y24tbVBjaHNLQnU2VnltcldPRnh5bTRFZEZoSzZ2OHpNQkViQWxJNFV6aTdfR3hCczdqUVJ1eFFDWmQ3Y3l6aW9oZTdkLTNwMHE1T21qNWlydjdKZDN0YVpCVW40VFJhUUFsdGM0eTRwSnFwbUVSdmR0Vm5VNU5nRFRiaFYtdTFZZ0VPYmxtdjB5b3RlVXF2QXQ1MmxuemlsV1hFLVJCSzBPZ1k?oc=5",
+      "outlet": "In.gr",
+      "outletUrl": "https://www.in.gr",
+      "published": "2026-11-20T21:10:42.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Pavlos Marinakis now changes his tune on Liakos – Admits \"conflict of interest\"",
+      "about": [
+        "GR"
+      ]
+    },
+    {
+      "title": "Μητσοτάκης για τα 400 ευρώ στους συνταξιούχους: «Ποιος θα ζητήσει το GTA 6 από τον παππού και τη γιαγιά",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQ2NrT1AyZzlmV1JyZFpwUmszNTEydWduYlR1bEJ4RFd2Wi12QkFMZENlVUw0Qjcwb2Ewb29zVjNBbV9aVkVnNGhSZWpGZHJSUnFuelVPc3djVGdKVU9hNzZfMTEtZkIwTXRCd2tvandBemRpdjA0SWoxako2YlZkNUNBaXNhYU0zUzF6b21Oc2tyV280Mm5aakVobEJYeHpQUFVjTmMxZ1d3ZEFWMG1LZk93Q25vRGM?oc=5",
+      "outlet": "LiFO",
+      "outletUrl": "https://www.lifo.gr",
+      "published": "2026-11-20T14:59:18.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Mitsotakis on the 400 euros for pensioners: \"Who will ask grandpa and grandma for GTA 6\"",
+      "about": [
+        "GR"
+      ]
+    },
+    {
+      "title": "CBS: Ισραήλ και ΗΠΑ εξετάζουν νέα επίθεση στο Ιράν το προσεχές διάστημα",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOGhuTmhwS3RrNHdWS1RoRXBWRzNOMmxfT0t3c29VczFqNEVaQ0dOWkIwbnBlWVY4Zlk2ZmVoQ0xMOUpJRHR2UWVOb0ltWkVST2kxaUJBd3o4WjExQTQ3anU2VXJBQTY5anI0WFV0eW9VUWdXQmMxTmg4d2RSVzM0bE9JT1RvSG4zZC1tby1VMjhSbHUwa3o0NEVxWW1CMDNKZlFIaDhMMkNzNE85WmNV0gG0AUFVX3lxTFBITjJUakpfclpxaEpoc0ZGVzZReTNhci13ZVFBMVY3bDlmTTJrUDUyS3o0VTFibGF2ZmdNdFc0R1hTa0ZqSlIwa1dfSkstalhWZHUzczRNSkNoSHBiVEpPU2YzUzRwQmFGLTJkS0NmdTJNN21TMGVjWmlvRDU0Q0E1YXhFaUQyRmUtMG5VeDJ4Skh3M0p0cVZIaXVyOUFieGpyUnBwSl9rVEF5OU94ckZHeGsxRA?oc=5",
+      "outlet": "NewsIT",
+      "outletUrl": "https://www.newsit.gr",
+      "published": "2026-11-20T12:35:07.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "CBS: Israel and the US considering a new attack on Iran in the coming period",
+      "about": [
+        "IL",
         "US",
-        "CN"
+        "IR"
       ]
     },
     {
-      "title": "Έξαλλος ο Ράσελ Μπραντ στη φυλακή: Του κατάσχεσαν τα χάπια και το σαμπουάν για την τριχόπτωση",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQeWU1SURJSXloeUdqS2pESWhLelBSX2EwX0tQSFRRUlNOSXctRXlkWF90bkFCbmdHYWQtQS10Ukx2RHlETjIxXzlKX2dKQkRQd1BUQlFiejBGQW9fUDBPd1lGZ29XWXotQjRubnl1b2hpNDJUSDZVakR1VUttSndxY2RxaG4yaWJrcXhJNHdYbm12MlhpN1pkZWpYTlctZzdMYktwTU5UXzlSR0dJQmRwR21WendIRm9qUkxBczlyeXJDNU12b2JaSUNjMFNqa2QxR0pMVVBtczUtWGdC?oc=5",
-      "outlet": "Newsbeast",
-      "outletUrl": "https://www.newsbeast.gr",
-      "published": "2026-11-20T17:31:30.000Z",
+      "title": "Η στιγμή που ο ήλιος δύει για τελευταία φορά φέτος σε πόλη της Αλάσκας, στο σκοτάδι οι κάτοικοι για 65 ημέρες, βίντεο",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOaDdYcUxRdTRFVGVUQXlHd2JPaktVVnRJZEJzdml2RlNUY2dySS1wNC1MTlZVdy0wSzZrRjMyQXpjTXNUaGtTdXJGMENsa1ROOW9YZWpCZ1RNaDcxVGRiQnJlUjY1RGJmazFqXzk0a3FfTlJZYjFsZ3pCcEQwdWtQNVdfdjhsQXlBZlFndFZRczRPTDZTZnhGT2RTZVpXdHhzMmJyQUJYNV9xeXRlcGJvOUFtZFRUMFNhNVZOaVljYjJWdGF6T19uUEZSRVYyWkdVb05ienctWEd2YnFXOUJFYl9OVWx5YkVPT0ZGQlJVeDRhRllRcmc?oc=5",
+      "outlet": "ProtoThema",
+      "outletUrl": "https://www.protothema.gr",
+      "published": "2026-11-20T20:18:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Furious Russell Brand in prison: His pills and shampoo for hair loss were confiscated",
+      "en": "The moment the sun sets for the last time this year in an Alaskan city, residents in darkness for 65 days, video",
       "about": [
-        "GB"
-      ]
-    },
-    {
-      "title": "Άγιος Παντελεήμονας: Συνελήφθη στο Στρασβούργο ο δολοφόνος της 24χρονης",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMk0yU3huOUswUG00dG4zNUN2VndFVDB0UmViMnFseHdpMnFTVzQyMGxYS1JUSHZkeHVqWlVYZjBSRV9Vc3lyVVRkOTc5TVZIUkg0ZExBM3N5T3NsbHRiTVlxR3M1NXdqZ1V6V05ETjJzWHNaTUFjdVgyYUEwSTZXd1p0elRTWTRvY2FEOGV1eXhPVEtmX0M2UzZ3czF5cVBQUW9pd3Y0LXkzRHY5YjItUmNHaw?oc=5",
-      "outlet": "ΤΟ ΒΗΜΑ",
-      "outletUrl": "https://www.tovima.gr",
-      "published": "2026-11-19T17:47:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Agios Panteleimonas: Killer of 24-year-old arrested in Strasbourg",
-      "about": [
-        "GR",
-        "FR"
-      ]
-    },
-    {
-      "title": "Σερβία: Αντεγκλήσεις, αποφάσεις α λα σοβιέτ και διχασμός",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRjlNX2xKQTJTNkRabkZ1cWlWSWdyQVJJMUxLTDZ3ZVdYR29xQlllbXI5aEpZLUNlM25GT0ktOHFjWWhLdk43WUFMUHRsQUFrSDExSUZrT2NOUDNxYkVKb2tDN1o0UkdzZHJqSkFqNUFNbW1HNE5uQks3eFNJRVh4bmdlOWFXSWJjeUV1dHhBb2otc094YTNvc3VuNmJIMWVI?oc=5",
-      "outlet": "Kathimerini",
-      "outletUrl": "https://www.kathimerini.gr",
-      "published": "2026-11-20T17:29:02.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Serbia: Exchanges of accusations, Soviet-style decisions and division",
-      "about": [
-        "RS"
+        "US"
       ]
     },
     {
@@ -367,42 +336,54 @@
       ]
     },
     {
-      "title": "Αποτροπιασμός στις ΗΠΑ: Μητέρα από το Κεντάκι κακοποιούσε σεξουαλικά τον 11χρονο γιο της λέγοντάς του πως «είναι φυσιολογικό",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOU0JieVhLZm9XS1VUSGt1aE81VGpnQ0wyeE04VlpqLVVjZW5JNU45NzIxWEpMWDM3aTI5VmQxMmtzTFNMRGpkanh1dV9fQUdtaER2eFRqWHhzUXJPV3NwQmR0N2NITy1QRHNWbHowZkZJdHphMGNjaUs5VS0tblVTOWZqREZzSmZPbXN1MDM5OVFOR3F5b1c1TXNidmtDMWJGMm82R0xOQ3dWY25GMFZhX1ozSkRncXRJVEF3aXFwRlhNN0tOQV8wYjJ5bzdfOHoyWkV3SC10MFo2dnNNWGsybTF5MVJQbkVCb1RqMWJTS2ZrR09XYkNvTEUzRlRUVjQ?oc=5",
-      "outlet": "Newsbeast",
-      "outletUrl": "https://www.newsbeast.gr",
-      "published": "2026-11-20T16:46:26.000Z",
+      "title": "Ρωσία: «Την Κάγια Κάλας θέλουν να στείλουν οι Ευρωπαίοι στις διαπραγματεύσεις; Δείχνουν τι αποτέλεσμα θέλουν»",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMzc1UWY4dVZLWjhwOHRFOHFOb3d2dzg1RjJaZ3JEZFJSSzUwcGJHSFNhZG1mWmo3ellHaUhqMVZ3TkZkaWhWUmJtREhnZ1d0S0pUcnBmNk0tQ0NiMW5yUUFiN2syU3V5cTB1Qk82by1Hd3BnTFhnbmhfYXdjMWVuaVFfZUFOdk1aQ3c4eDY5T3d1YWs3SnVpZlJXXzJSNVllWFdmVVY1WDRfb3NQbWhKME5DOWRsZUc1LS13TXVwSElqWHJaVUtCN0hKeDN4SWpGZEJWRE5hLXU3SUHSAeABQVVfeXFMTlZWc1hHZ3Zua28tY0llQ1h4d1A1MVRUUzZ3Y0xMOEJzQzMxSG9heXFVZUlLM1ZrUkNxZXBxX05iNHRyUG4zNS1rdFJUUWRteXYtUklDNVVnYWF1c1pzLWtLOHV1NlJBM2dRanRZZkpORkxmRnp1bTJRbmQzU3RwaUlzOUI0QWVBeExvN2hkdHpMR2lvV3Y4a2dCNG9adl81MWl1anZUaWUwRUdpeHVRUGhLWUNjM2lJYktWUTJOZGczVWxYazc3VzlPVml2dDVWZ014akMzMm4zUkJTREpYU2g?oc=5",
+      "outlet": "In.gr",
+      "outletUrl": "https://www.in.gr",
+      "published": "2026-11-20T20:04:05.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Outrage in the US: Mother from Kentucky sexually abused her 11-year-old son, telling him \"it is normal",
+      "en": "Russia: \"Do the Europeans want to send Kaja Kallas to the negotiations? They show what result they want\"",
+      "about": [
+        "RU"
+      ]
+    },
+    {
+      "title": "«Fortress America»: Μυστικό σχέδιο του Πενταγώνου για 90 ημέρες χωρίς ρεύμα, φόβοι για γενικευμένο μπλακάουτ και εκτίναξη 450% στις πωλήσεις ειδών επιβίωσης",
+      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPdENJT2J4eE82V0NXRUlyZlEwSDROTnNfaXBVenFDUlJTbGYzb003VUFHTHZpeTdnajctNFVPQ3dOQWVBdElhcHBBbGItcld0WnUyaG9TaU14RzRNcDBWYzBaU240YjcwSW1DN2FtLXlSRTc3RkpGY0VYVktVN0NxTnIzcXF6Vkh0NVVYaDdYZzc3QlhoeUQ2SFNKREVBLVJ6cUdFN0tKVUx2VmlMQ0ZvRzlCVlVMMTRmenZ6SVhSbzZlTVYwV3BXZ1M1cmpkSGxNVk94RVNEdF9IaUE5OXZtYXl4akpDZUdCZ2dyc0N6MHNPcGtLX2kxNDdWaE1jNlNQQ0R3NUpLejRBNTk5T2tKV04tWGZMY3hTWnRjOGoyTTk5Y2MzLVE?oc=5",
+      "outlet": "Newsbeast",
+      "outletUrl": "https://www.newsbeast.gr",
+      "published": "2026-11-20T19:59:37.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "\"Fortress America\": Pentagon secret plan for 90 days without power, fears of a widespread blackout and a 450% surge in sales of survival goods",
       "about": [
         "US"
       ]
     },
     {
-      "title": "Τροχαίο στον Κηφισό στο ύψος της Λεωφόρου Αθηνών, καθυστερήσεις προς Πειραιά",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPLU5FU200UmZkaVFFOWZ4MG9QOWhDbjdNdnFWdXhoVEtxR3RTN0xSamZrMWFVU2JrRkdSZU9Eb0lUSm4wQW9ESV9HamJNSi1vTkFzVktybFRhSjVfMFVoY09wbDdLWUpfM01nZUc2R2RHT1Z4UUlYdXRhZ2JNTk5hWVJMWGd2ZVl0dDhVblVrQ3A3WUNTdUJ6ZjJxODllMmRVcW9KRFlVT04yWmkxcDNmX1VtRnp3YnlMRmc1RXZaMTJOV08wb0JN?oc=5",
-      "outlet": "ProtoThema",
-      "outletUrl": "https://www.protothema.gr",
-      "published": "2026-11-20T16:02:47.000Z",
+      "title": "ΑΕΚ: Τα διλήμματα Νίκολιτς εν όψει Καλαμάτας",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNT0w5MUZMbWhhQ0htc1RwR2hCd2ZXQ3A5M2M3ckJlZm9DWWQtcWxYRWpzWXphRGhQNHhPX013aEhWak0ydDV5cHZuVVdfczJhYUNlTVJKQi1GTHNmdTE4dEwwYnlHUmRSUEpxVml5Umk4VGQ0YXhpX1dLX1F4d3Zwb0RYR1FGTXRkZktaMGNVTnFqWkpMRVJSbEhIMGExRlk3ZUhzamxYcENJU2dJ0gGXAUFVX3lxTFBQU1kzempVNWNyU0p1bWY3eEdXMEtPeEJpSUF4dkY5NEp4NkZ4RUVsQ1hwN3hfMDRMX3hjaWdfbzN1NTBpdnVxaUZySERJM1cxampSZ28yRGpBY2tTejl1VDlSbDFBNWFIRTVtMHFZdXYxeDRZN3FZV251V040QUx3MGtJaVZqbldGSkFwN2hnZ05OQUtzU0U?oc=5",
+      "outlet": "bwinΣΠΟΡ FM 94.6",
+      "outletUrl": "https://www.sport-fm.gr",
+      "published": "2026-11-20T13:39:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Traffic accident on Kifisos at the height of Athens Avenue, delays towards Piraeus",
+      "en": "AEK: Nikolic's dilemmas ahead of Kalamata",
       "about": [
         "GR"
       ]
     },
     {
-      "title": "Η Ελληνίδα πριγκίπισσα που έφερε την Ορθοδοξία στο Μπάκιγχαμ: Γιατί δεν άφησαν τα ελληνικά έθιμα να μπουν στο Αββαείο",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcDRFdzJuSHFCZGUtTFNZSm1ISE0yUlhRNG5UT2dKX1R6NXVWLXdiZEw4dkpqeFZTbGxmMHFXRzZNMlZONnZxNzdvMjhGS09LdzVxaW4wbC1aNUMybEF4ZVZaT3ZBUll1YUJMR0RiRThvbFVZYmVyM1A2WVZKQU5Ec29vYXkwN0dsSHNNOVoxdlh5TTU5M19rN3NzcEc5bm9TZWxrXzgyYXpjOTRqSXpEX2pZSjRYM05uY0w3dDRiT3hzRTRfZkU3elhFWXMwdUFhZy1Tdl9OeF82bi1HQ3RwSUdRUUNHTy1ZX3JkVm9hUF9aVHlIZWtrU21kOGE?oc=5",
-      "outlet": "Newsbeast",
-      "outletUrl": "https://www.newsbeast.gr",
-      "published": "2026-11-20T20:50:15.000Z",
-      "outlets": 1,
+      "title": "Μιμή Ντενίση: Οικοδέσποινα σε μία λαμπερή βραδιά - Στο πλευρό της ο Σωτήρης Πολύζος",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYXgwLUE2dXktX2FQMncwZTk1WjlvNnRXNVAxeG5fV3o0UkRqS09MMUYyWmVfa0JjQzJLMkp1MEhZSm0tZWZxd05aaGQzSWMtWnRocU5xR0hTQm9FYV84amd3Q3dsQW1mM1FHaG9DTGt1LUR0b0FmTFRRRzZVYnVyNjB0a2x5UVFHSi1RNHhrUUlrTXpOZ3F3T3FIeDVjS2tQUmxnYTlSS3Vyem9EREJmN3gwNjZqYnY0NUZrS2JIRW9kS21i0gHQAUFVX3lxTFA1ZTA5Zkl5aTc0QmpETXF0d0hUT3VVY3lxdk51UXBfWTVVcnB2WThSanh6azU2d29RS21YZTVacllLX2dCbE9QSXp3SVR5YjFEUmFMcV92eTZlX2VLWUZLYzJIS0hsQzZwcUxValJ3MDZyQVNiaGZ1S0ttOU9jX3doOW9OY3F0QXBKQVR3SlpVWXRBYXkyeFRSeGJHZWx6QXVWdUVKLWw4ZHY2YVBUVE1iLWNveTgtUlMzYzh5STJoSDlUbDNKZEdBc0JzSlJoVDI?oc=5",
+      "outlet": "The TOC",
+      "outletUrl": "https://www.thetoc.gr",
+      "published": "2026-11-20T18:50:28.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "The Greek princess who brought Orthodoxy to Buckingham: Why they did not let Greek customs enter the Abbey",
+      "en": "Mimi Denisi: Hostess of a glamorous evening - With her, Sotiris Polyzos",
       "about": [
-        "GB",
         "GR"
       ]
     }

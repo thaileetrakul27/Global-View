@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-20T22:13:19.590Z",
+  "updated": "2026-11-21T03:36:27.910Z",
   "fetched": {
-    "societies": "2026-11-20T22:13:19.590Z",
-    "uncr": "2026-11-20T22:13:19.590Z"
+    "societies": "2026-11-21T03:36:27.910Z",
+    "uncr": "2026-11-21T03:36:27.910Z"
   },
   "societies": {
     "AF": {
@@ -2673,37 +2673,46 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-20T22:13:19.590Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-20T22:13:19.590Z"
+      ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-20T22:13:19.590Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-20T22:13:19.590Z"
+      "blocked": true
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-20T22:13:19.590Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-20T22:13:19.590Z"
+      "blocked": true
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-20T22:13:19.590Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
+      "blocked": true
+    },
+    "cruzroja.org.pa/donar": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://cruzroja.org.pa/donar/"
+      ],
       "blocked": true,
-      "checked": "2026-11-20T22:13:19.590Z"
+      "checked": "2026-11-21T03:36:27.910Z"
     }
   }
 }
