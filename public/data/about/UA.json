@@ -1,54 +1,604 @@
 {
   "code": "UA",
-  "updated": "2026-11-21T13:08:19.870Z",
+  "updated": "2026-11-21T20:56:07.402Z",
   "articles": [
     {
       "from": "IT",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOb1g1SjhmTU1QUG9sUW1kV2JSdWdyVjdsVmRsVGoxS0g4NEpjNmVvVDItdWt5MG5YejB4V1ZNT3U3a05VYVRjRThKOVU2T243bWtpaGFsb3pod3RZVm9YMUppQ1YzUlRIcUtLdDQ4ZV9lQXQ2al9jZ0ZJOGczdjZQUG9ia2dIRGtN?oc=5",
-      "title": "Guerra Ucraina, Mosca: nave cargo attaccata nel Golfo di Finlandia. LIVE",
+      "title": "Mosca: Nave cargo russa attaccata. In Mar Nero colpita nave di Kiev",
       "en": "Ukraine war, Moscow: cargo ship attacked in the Gulf of Finland. LIVE",
       "outlet": "Sky TG24",
-      "published": "2026-11-21T12:42:54.000Z",
-      "outlets": 9,
+      "published": "2026-11-21T20:30:45.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "DE",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRG1iUXhhMVNjTkxpN3VfSFNNVkdlWVA1dWRtejVzVDV2NmszZThoblJ6S2xyMzRqb0g5MWdtYUhWN2txdWtkckM0bVZUYkY5Y0VfaU1uZVlySk83TXlkX2hxQ1ZCbnpSc2Z6WUxodFN1d3hESHBUU3BjbjVDeF9ld21oVmxBdGxtMjJRdlFSZHU?oc=5",
+      "title": "Ukraine-Krieg - Selenskyj: \"Krimbrücke wird nicht stehen bleiben\"",
+      "en": "Ukraine war - Zelensky: \"Crimea bridge will not remain standing\"",
+      "outlet": "Deutschlandfunk",
+      "published": "2026-11-21T20:22:27.000Z",
+      "outlets": 6,
+      "trending": true
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbWh6WDhZZWJqUXV0eFFHQWVSWXdfNEJ4SnI1bWQzaGtSUEcwRjJ3Y3JXdkcweU9PR1ZWSnpLeWRfSUMwUzNtVUlUd1pWVGpBT2ZHVVF3a1d2LVZWb09JTF9PenFMUWxlakYyZmdYSGowd3kzTWFoVUlIQmxzdVNOb19pY0kxRWlsQWF5RExkQ2tzLUJmaXJVbnktWlZzX3JiS1lXVlg0QnlFT0NkMDlzdjhsOXUyTXhkZE1JRA?oc=5",
+      "title": "Zełenski zadrwił z planów Putina. \"Nie udała się Jałta 2.0\"",
+      "en": "Zelensky mocks Putin's plans. \"Yalta 2.0 didn't work out\"",
+      "outlet": "Gazeta",
+      "published": "2026-11-21T20:06:47.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NO",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc0hyUWpZLXZGMUdJcngwU3RRUWtTaGsyeDJMcFNZOHhmLXRmNUpxT1NWWHJTZnRDRmxxTnBWbzQ0TG5mbnNRQVhrNU1XazhlVXlaT216NUxrX0dpQjJRY29KX1F6cFBUWVhVM3ZRZUFvVTRVbUsyZU9TdmVheTZ0RnlKdUZBOUhjT3pKUEhxM3FxZTQ?oc=5",
+      "title": "Nye satellittbilder viser skadeomfanget på Kertsjbroen",
+      "en": "New satellite images show the extent of damage to the Kerch Bridge",
+      "outlet": "Aftenposten",
+      "published": "2026-11-21T20:03:48.000Z",
+      "outlets": 5,
       "trending": false
     },
     {
       "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE52Sy03dGl5dW15N1hqMUVrVWVkR3VxWWFIaXJ1QVluUDNJcFJjMTQyRks3SXJFMDdvSlVkMnUtTVJpT2lDU2JxQkNHV1NEWkJFR2o4WEN4TVFoeTA3YUcyMjdtMTBBYmhBZFZqbDJpb3RDNDl4U2REYWJFY0k0Zw?oc=5",
-      "title": "Karas Ukrainoje. „Laikėsi griežtų slaptumo reikalavimų“: kaip Ukrainos kariuomenė „apsuko“ rusus Charkivo srityje",
-      "en": "War in Ukraine. \"Followed strict secrecy requirements\": how the Ukrainian army \"outmanoeuvred\" Russians in Kharkiv region",
-      "outlet": "15min.lt",
-      "published": "2026-11-21T12:41:14.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNS0ZpdmRtMmF5cXlkZnVKUkpKMjg5bmRFNzlGRW5oY2dhWW9JVHl3VnRzbVA1RWJySGNLSk94Z3R4TkMzYjh0Z1dRaFJWY0M1S19xUWFTTkFHY1JJUTVrbk1nU3lidzhoSWlLcDBaOWdFcUtlcE42ME43OUg0dG13My0xWi1CMTZIMmJXbG03anYzNjlzVUxxanV3bzdWRng4RGotZV8yRXB0WmN3TjNqSElzdTB6dFBSTmFmOUdMdUNSR0dMM043WnhjVHFpY3hz?oc=5",
+      "title": "Ukrainos žiniasklaida: dronai pirmą kartą nuo karo pradžios atakuoja Kaliningrado sritį",
+      "en": "Ukrainian media: drones attack Kaliningrad region for the first time since the war began",
+      "outlet": "LRT",
+      "published": "2026-11-21T19:48:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOU2hjZVVUUl9SQ2dKX2M4cGNfb0hac0UtYmdfQVRGUm1LOXkzbzNpaEpTbGlBZU1nN2VKWlNuYVVTSEIzRzVlR1o3dlNMSXNlVVF0UlNrNHVzX1FxVWpKUktpR2Z3Ukc3Umh1T29yRHZRams4MjdOUGt3LXJQQUFicDYyMzNkTGZoa0lxSEpWRjEzZC05Q253TTJvbGJ0cG0yZTRhZDBsUEJjRF9nUjJiN3o5dHF1RllrMUdlN1psZTFZQjNyaEs2aUY1YlFOdw?oc=5",
+      "title": "VIDEO Kēnigsbergai pirmo reizi uzbrūk droni: Ukraiņi ziņo par uzbrukumiem Krievijas Baltijas jūras flotei",
+      "en": "VIDEO Drones attack Königsberg for the first time: Ukrainians report attacks on Russia's Baltic Sea Fleet",
+      "outlet": "TVNET",
+      "published": "2026-11-21T19:40:01.000Z",
       "outlets": 1,
       "trending": false
     },
     {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQnFUM1RLQVB6bERnTWRxNXFzalpUdjBtcTMxcDMzb05CaFV4eU9fblpMSml5c3VZTWV2bEUzSlJoYlpsN1NlTm1YWHFIYWVTcUdfcDNtZ280dy1ZN185LUhSd21jekh1ZlVRclVzd1JxSW9NRFRlQUlqOWRQTXAtbVpESmUxQWRQZGhwdWl3dEpOTnVuMkZTTTFzSTlGRFhoUmpmZE5GNHctZlRHMDJlOW93ZXgtVDhVOEU1ZERSVjlOb1JXd183UFdjYWxSZ29WUGNHQmJNX0E?oc=5",
-      "title": "Kijiva: Krievijai būs nepieciešami vairāki mēneši, lai paceltu Krimas tilta bojāto posmu",
-      "en": "Kyiv: Russia will need several months to raise the damaged section of the Crimean bridge",
-      "outlet": "liepajniekiem.lv",
-      "published": "2026-11-21T12:36:34.000Z",
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOXF3cWtiUW9zRWJzYVZnMTZYRVVMZHZKX0pVLXNobG40SzZoOHZFTUdXZHQ1aGFCdFhVN2htazRZTDdIR3EtRl9rOXVjTkl6Mmo0LWQtZ0kxUUQyRV9rSmRjaGhsOTBNN2R1dkJQRlg0LWpqdndUSkE3ZW4tZWowbW4weU51Tm5TNExPcUsxY21pQQ?oc=5",
+      "title": "Uživo Uništavanje; Novi talas napada: Žestok udar ruske vojske; Pogođena važna meta FOTO/VIDEO",
+      "en": "Live Destruction; New wave of attacks: Fierce blow from the Russian army; Important target hit PHOTO/VIDEO",
+      "outlet": "B92",
+      "published": "2026-11-21T19:38:34.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CA",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4xS29ZZ1VBUFIzaUVKd24zYjJxakUwWXNSbHZfUVR3ZVoxZ2JBMXRCU3V3TXFhdFNUcnpqYlFrenJnbHE4eFlLSEZMNGk1LXN0a0Vlb1BTRHlmaTl2OUllSHk1d1JOYTJBVkN6cGJLSTV3YS1GOFpUVDRwRVlydw?oc=5",
+      "title": "Russian strike on Zelenskyy's hometown in central Ukraine kills 2, wounds 60",
+      "en": "Russian strike on Zelenskyy's hometown in central Ukraine kills 2, wounds 60",
+      "outlet": "CBC",
+      "published": "2026-11-21T19:36:16.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "GR",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPa2R2T1FSTmJrMEVDVno0RGxrTUllVkNkZHhLWkFubFNkMzZtYVpJTnhPc3VkM1BuQjVNSUlocFZPdmxsR01FQVhGRURxaU5HbUwwdVByNi1ldTd0TWxCbGZ2RFQ3MkpKV3Y3NWxpRENpWWJiM25LZ1MxN1ZQYV9odE5zRS1oTTVEUUxFa1Ixc3gwNEZ2cENUSEk5aHpuSTFKMTgtaFdJYkV0SWdwQjZmb3FzWmVvOG9jSEpxZmxQaUYwcDZ0ZWJoNDFwLVlDUGMwWFJJSGlQQdIB3AFBVV95cUxPVU9Mc2dqRjFOOGxGSWdVU3pFYWZkekNDbEE2cks2Zk81MjAtbGtjcjI4V05uek5aWmlweW42T1BVZDdNTW5nUV80M0x4ck1uSmpzbkRQMDRjMTRqNHpoQnZKMjgtQ3lTX29DdWs4TGlENzJsOVJYUXktbmdKOE1vdUx6ZjRIZ2Vkd2p1bENWV1FKemlIYkp4Zmx5OTNWeEE2RDNxWjJ2UC1uSktYZlhCTFlVX0xXbDItR09MMnBLamhSTnJsRVA4RURfNlRWTVluQm0ycUp4dGJiazF4?oc=5",
+      "title": "Η Ρωσία ανακινεί τις προ της εισβολής απαιτήσεις: Στο τραπέζι όροι για το ΝΑΤΟ και την ευρωπαϊκή ασφάλεια",
+      "en": "Russia revives pre-invasion demands: Terms on NATO and European security on the table",
+      "outlet": "In.gr",
+      "published": "2026-11-21T19:04:27.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbG92eW5CNUpJc3ZfNDRaRVRYR2c3dGFsaFZmeFIyd1U3Q2dhQjR6M0poTHpNLWUyS3ZORUhMY25RbnI5a3NySV9aUzIwdXdLM3pVaS10amFWc3R1d1lKOUg1QjU5ZTF4aWF0RDZhTURmMXVpMzU4OHdfcWlxRUhBQ3diUnhSYTZyUFh3M2M4Zw?oc=5",
+      "title": "Fontos megállapodást kötött Zelenszkij",
+      "en": "Zelensky reached an important agreement",
+      "outlet": "Portfolio.hu",
+      "published": "2026-11-21T18:51:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "NO",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaHJTMVQwcEZkRHNma0lBMHlmMjVkbmhtVnhwejFKa3gxOVFBT3l3Yk5GcmJoZFZwWnZ2MVh4Z2VxU1lIbF9ka3Y0bXZXYjhrZzRUa3Z5akZwdEZvc2N2RlVXcXFyaEhqWF9RQ2d0bEN6SVQyOW85ZTJVWms4dFZMeU9DRXFYUk1RWkdwM0tYQXIyZ01RRkhIVkFOYlFHNTUwc0hzYzhvMFloZHJfZXgxS2ZKRzA1SUF1Yjdj?oc=5",
+      "title": "Trolig Ukraina som står bak droneangrep på russisk lasteskip i Finskebukta",
+      "en": "Likely Ukraine behind drone attack on Russian cargo ship in the Gulf of Finland",
+      "outlet": "Aftenposten",
+      "published": "2026-11-21T18:47:15.000Z",
       "outlets": 5,
       "trending": true
     },
     {
       "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQU1dvWHZ4SmwzNnJzTHpwNDREZ1hpQkJyWWZIUnFWczhuWDQwNzBIaVRoMlhIeV95YnRUemVoN2cwN3RBb3FYSktLV0NmZFUxdDh1MlF1SGRVYndpUFpJY2tKbEN6cTFfQ1VlV2tSYklVbnBSM2JpUGV0SktOS2x5TXlEcmF4MlM5WGRqRXBQM0RtNDNKcTFqLVJSZ09BMkhYSDVnUE9JZ3oxNVFMa1IycA?oc=5",
-      "title": "Po Lavrovo žodžių apie „rusų žemes“ – ironiškas Ukrainos atsakas",
-      "en": "After Lavrov's words about \"Russian lands\" – ironic Ukrainian response",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOc05nMHp4U25POUV2VHE5b3FlaXNOOHFnVV9Rb0otWHR2d1BtNU5JREFKT2xGajJSLWNLc3M1Ry1kMGkzX19JeG4zemhTYng3VDUyREZ4NUF2ellXRm9YUDFhOXAwRGE1R0M4cDVZNnB2cHZHNGlNcVAzM3k4bFEwc2xpMlVvcDQ0OVhmS0NYLWJsVGg0V1J5Yl9uRVpELVI3ei1nVXlXeGVoSDlSM3BFTUpHbEtLbWJWd2I5NWpjd0VWSjlwc1pxMXF3MTRiVERSOWc?oc=5",
+      "title": "Zelenskis: Ukraina dar negavo rašytinių įsipareigojimų dėl NATO tipo saugumo garantijų",
+      "en": "Zelensky: Ukraine has not yet received written commitments on NATO-type security guarantees",
       "outlet": "Delfi",
-      "published": "2026-11-21T12:17:04.000Z",
+      "published": "2026-11-21T18:42:36.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CN",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMTJDbzVjNmZxUGFMLV9mS1kwNHJ5NC13eFZWaGQxMnFEaTJzN00wQUNnZzM3MGswVk9hTWNDRkFmemRkSFJTWW5DYXFoRVhyTlgxaGpmdlpLMGpRaEN2ajZsLS1tWThmcGZ4dzBIaGwxOURwd3NrRnpfQ3VVMGhqWVZFcUhwaXhZNFFKVldzZWZFSS1MUi1LZEdoNGJqS2J1Yl9OVFhiZ2hwaWZjSm5FVWIwb3kxR2h4dExsanQ5bUtjYzNTSWlRNTBxVk1DVV9nb3pUc1lTS0NSTjlH0gHfAUFVX3lxTE44MkpFRTlSbkp6UDktTFpGSTF6bU1GNUJHWmFKZVZjQzQzZmtfcG9haFV5T2s3cXVFclVxQUVwdzlLTUk0ajZsZS1yN1EzaHd4Vk1HNkpnb29QcDdfSF9WZXhLd3V3MHA0V3NUNGZqenFwVE5WSkt1X3I5QlJITmhQRThOY19DZktBZFNibUtfWnBBeW05SFNnRVExOUxueUpOZk5BV0g5a0c4bDNnQWVKUWdBWXhQaVpnUlhLb0ZCNDAtcGtHM3ItRmlaS2t3dG5hWE85MkxYRXhVQWZZN1k?oc=5",
+      "title": "泽连斯基家乡遭俄罗斯弹道导弹袭击，导致2死60伤",
+      "en": "Zelensky's hometown hit by Russian ballistic missile attack, causing 2 deaths and 60 injuries",
+      "outlet": "美国之音",
+      "published": "2026-11-21T18:39:57.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NO",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZDN2RzlieDFFeV9JdkJabExXX0pmbmtHRzNEQ3Q4NEItWnRHOGtuQmQwX3N2TzhaSndzU0NCcUVJYThTeDlHcy1ObGg3bVB5VmhGZjlURTBpLTF5TkxTRkQ2amJhc3VyM2doTmk3cFNCOV9oNEo4WEVQUVR6aml3NjFXaDI4Y00zcVVJa0JkM05iTW41aGtGOFhjRlM2OGhhVlFXaw?oc=5",
+      "title": "Strømmen kuttet til ukrainsk atomkraftverk",
+      "en": "Power cut to Ukrainian nuclear power plant",
+      "outlet": "Nettavisen",
+      "published": "2026-11-21T18:27:25.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1WbjJxVVNUTHoyclRJTWFtXzlQUC1aby1Ya01nVV90VktvOVBZUm11UWZNYlhUYlpfdm12VDFubGR5Z1hxdjZ2X0lIMVA?oc=5",
+      "title": "Зеленский собрал срочное совещание с министром обороны: главное об СВО 21 ноября",
+      "en": "Zelensky convened an urgent meeting with the defence minister: the main points on the SVO for November 21",
+      "outlet": "URA.RU",
+      "published": "2026-11-21T18:13:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWnUzVFNoRVZMMU12UnFFa19GNlFJQm1PY3pHUHdCQlJ2ZkwwQkVYNTdIR1VESEFaQkdIR0s3cHd6ZlowRE04ajZ5S3ltaFdPcUR6LVRuTzI5ZG9TWFV0YnFBUjN6RU1OOTd4elNUeGhfN2RDd2NKLVQ5bDZ2eHkyZ282LTZxUXo5aU1FeGkxN0dfa0oxZHNB?oc=5",
+      "title": "„Inkább elájulunk, mint hogy feladjuk” – öt sebesült ukrán katona küzdelme Afrika tetején",
+      "en": "\"We would rather faint than give up\" – the struggle of five wounded Ukrainian soldiers on top of Africa",
+      "outlet": "Index.hu",
+      "published": "2026-11-21T18:04:00.000Z",
       "outlets": 4,
       "trending": false
     },
     {
+      "from": "FR",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTnM0WmVQTnBQdjhOS0swbDU0ZFh4LWpBRUdUNXRoVURya1pScHQzaUJHUlBPbDhzS3ZhdnBpR2ZBN0VOQm0xZlVVRWZSSWp2SXlhMWdGcDRUa1k5dXlsMnVDWVdxNThHbmk5WXdiZUFNOEcybnA0T1pOSFUtLUl4M0phejlrWHVPa0drRGkwMFk0a3YxVnVKY1F0bU5OZkZFMGsyYW44amJjeDlUN1g2aTh5bnJyV05r?oc=5",
+      "title": "Guerre en Ukraine : L'Otan défendra « chaque pouce de territoire polonais »",
+      "en": "War in Ukraine: NATO will defend \"every inch of Polish territory\"",
+      "outlet": "20 Minutes",
+      "published": "2026-11-21T18:02:00.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "FR",
+      "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxQVGlXOE1vc0NOVjh4NW5xVUZ0VWJxSGh6UWVaaW1WQ0ttdTgwbUdHUFByeVg1WnlTMkFIRFA4NmZFX0hCVnBxM1JyeVUyUUZMbzNIN0o2LVU3c1lMdUo1aFNkYTdwa0Z3eWMxaGJxVURONzlSREtGbzZIQXotSC1qcGJ5enVZM3k1MDk5VVNwb2xCM1dXNDh4RXVjcXBld2tXcEVJTkVITVNybWM0a09lY0V4cHMyWGkzYlNFdW1jejVJM0VkUVFTX1l2ZkNVQVh4MThvakJWUUQ5b1gtN2w1dHlmYW1MRkRDb1NXNmg2MHl2ZTEtU1NSLXVDRms4bXJpeE8yOUwxWFBmR3A1dlp1dE9SYlI4b2R4MFZkdUh3a2hHbXNDVEFCRVF2LU5wSm1tazI5ZW0yUDBIcTM5SWt3bGloX0NLNHlaRFdBOFVTQXBFMUFTTGpkbll0bkxUMFBRSkgwbExLc1lpcTh5TUtKaA?oc=5",
+      "title": "EN DIRECT, guerre en Ukraine : la Finlande soupçonne un hélicoptère russe d’être entré dans son espace aérien, quelques heures après une attaque au drone d’un cargo russe en mer Baltique",
+      "en": "LIVE, war in Ukraine: Finland suspects a Russian helicopter entered its airspace, a few hours after a drone attack on a Russian cargo ship in the Baltic Sea",
+      "outlet": "Le Monde.fr",
+      "published": "2026-11-21T18:00:02.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPM2h6WW14el8tT2JRdnpMWFNudEdRZXNpNUJZNjMwMFZLMEIxdFBZdHd6S3M1NUlGdlVhSXBlY3Y4dFYxbjJYRDZVRU83SXhNZnQybzhGOXhvVHhnSGEzY1pKUllGTmR2dGUxUHBnLVp2Y1czNlhGZjFFb1pkTzdPb2dMd2czRVZaMlVyYy1uNTlZMEoxN2p6QUdhcFB5bGItREhrMFpxaTBJVVctVXdMbTdNOGFNUQ?oc=5",
+      "title": "Germanii sunt mai puțin dispuși să accepte continuarea sprijinului pentru Ucraina, arată un sondaj",
+      "en": "Germans are less willing to accept continued support for Ukraine, a survey shows",
+      "outlet": "HotNews.ro",
+      "published": "2026-11-21T17:56:11.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNOURmWVBXUUExc010bVhqRkxUbWFyc2V5bmh5ZkRqQVhjeTRoeEprV2tYNDBjcFB1T2NXamJza2w2bkU5RW1NRUJMSHJ4N2l0b0hrSzJIOENpR3FVRktfMkV0aFJDbXhiVHJRbjA3d1ZvaDliNmpGQ2dqbFZhX1FlUXBOanVCMXdMVldlZ1hJNldRSHctMHJ2TXg0RGl6aDlyajBPRG83VzhQb2JTekR5Z01SdEdOWVc4cmt3TmJvaTVOaGNndjRsWTBndUREZjJPQWc?oc=5",
+      "title": "Brovdis: kol Putinas užsiima premijų skyrimu, aš prognozuoju smūgius į taikinius Rusijoje",
+      "en": "Brovdi: while Putin is busy awarding bonuses, I predict strikes on targets in Russia",
+      "outlet": "LRT",
+      "published": "2026-11-21T17:52:00.000Z",
+      "outlets": 1,
+      "trending": false
+    },
+    {
+      "from": "SE",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWHRZV2hsNkJTN08xZzFabHhFcE55LWRzRllnQ3NMTkdSNzNQTUwzYWkxYWRzVnVwWjY1VHNDc1NsZy1vZlpIUFgxc3RadWFSYmk0TUc5S3FrXzBhWXFPSjhTZGFQT1VzcnBUVzdES1BJYnkwLVpSakxhTVI4Y01CbVh2ckVJZl9tODltcmF0U2lFVWt3VDh5SloyLTVHRXBCdlBVVGNrTElhZzdQdW8wM0xfb3lONkFKcTBURE1B?oc=5",
+      "title": "Fartyg attackerat i Finska viken - Ukraina misstänks",
+      "en": "Ship attacked in the Gulf of Finland - Ukraine suspected",
+      "outlet": "Corren",
+      "published": "2026-11-21T17:43:34.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "ES",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNQVJwMVVsNF9MYzJqQ1UybG1UVFNadGMxT0J0Q2pFbU9TUE5ab1Vfb2NZUTVlZlIzdnJob0puU05HYmtyT1N0SXlyTUV1RGw2MFE0ZDBEbXRrVXpBWmZSYUoxUHo3NG5PVTI1MVJKWHZ5OHhoV2loZks0OVhaUXJERnRJTEw4QjcwamRBQ0I5SElNaFBha3ZFZHJxR25ReWE3bWNZZU11T2h5bG5XVjhjN3JzTW5IU1EwelFSdm4xUUNlVVEzdmYwU3d0eklKM3ZDa3pCNGhEbmdHX3ZXNzg4?oc=5",
+      "title": "Dos muertos y decenas de heridos en ataque a ciudad natal de Zelenskyy en centro de Ucrania",
+      "en": "Two dead and dozens injured in attack on Zelenskyy's hometown in central Ukraine",
+      "outlet": "Los Angeles Times",
+      "published": "2026-11-21T17:33:19.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMzVWWXFvRWN3SXJfc3NEbGRIa25yR0oybVlCRE5kRWFtNXpETEY0UFhkNXZDUU1JZkFScFdEN2F5Y2hMUkltSlUyd3ZUeGg3UDB3UE0ycGZxWThxVUdFMWQ1VS1naVRYa0VPVWZRQjZySWxsR1lkVzNscXFxdlppcXh6TEY2UEt2T19yWVFSWkxnTUI0dXNCeVY5ZzE5eXBKNlc0NHFVY21keENKSHRVQ05UOWtMQzV4STNwRg?oc=5",
+      "title": "„Ukrajina má právo bojovat proti agresorovi.“ Loď ve finských vodách zasáhly drony",
+      "en": "\"Ukraine has the right to fight the aggressor.\" Drones struck a ship in Finnish waters",
+      "outlet": "Seznam Zprávy",
+      "published": "2026-11-21T17:28:04.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
       "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQM3EybGlxaGtaNVNFclNlOWRETnh0VXo2amg4WVpUdS15WmYwZkd0UG84OW4zTzQ2OE5pN2s2M0lsTWtOQ1Yxb0lYMFFEbExwaHUycW9GYVFnZUdMRjZwZTBxWUZUeEE1b3JOdmg3N19vdTQ1RUNfRy1PX1N1RmRfbF9UeEFJZDdDcTVnRGVTMjJVQml2WVVhNFlWOXZrbHdFUi1NRHJuYTBWQjRYbU9QTlQ4X3NndUdOUVVaMVh0ZDFlX0pNMjIxSkJMNA?oc=5",
-      "title": "Putin u intervjuu Kusturici pozvao ukrajinske vojnike da pređu na rusku stranu: \"To je prava strana istorije\"",
-      "en": "In an interview with Kusturica, Putin calls on Ukrainian soldiers to switch to the Russian side: 'That is the right side of history'",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdWtrX0RnZlBDXzVNcGFIWGszRHVUXzhkUVpsNTlyOW9LWGxRTTRQTndyQU1MZ3c3ZU9NdjNqWERJLVlOZ3BVRXpELWpuYzFIZ29aMHFrREZUOTlfUU1IUzJra3NkVmpkZ09tOUkzanFJdktIVzAyWE9EcTgyUm5BbFg3SG1KZWNkVWp2NDF1WlkzZG0wa1g0RTFtUVYwRHlib0M4?oc=5",
+      "title": "Masovna evakuacija u Ukrajini?",
+      "en": "Mass evacuation in Ukraine?",
+      "outlet": "B92",
+      "published": "2026-11-21T17:28:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BE",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQUNvNUJoZExHcDR2dXdLWWM4WXpQWG9JcGN0WFJmZmVHNlJTblRDVjV5SFhhQ2pzQUpsVUJodWJ6VmVRV0hZeEl5MkRxY3BJQV9wZTlfbWtBMWdBTUl1NUx1WFF1ZFNwTG1ndVFzbHNtNy1ZODljNFQ2cWc0Wkc1c18tSlhYNDNuWkVqUXdDU2hJQk5IZ0NYREJzenBYYVBRbzhpUDJYUFBaeXQ5R29NVk9RMUw0SzRVX2p5WDU2YkowcWgyNlJnZWktcU85akdpdGNxZ3F5SkktZnJRaHNFZV93?oc=5",
+      "title": "Une entreprise d’armes néerlandaise se targue sur LinkedIn d’avoir participé aux attaques contre le pont de Crimée",
+      "en": "A Dutch arms company boasts on LinkedIn of having taken part in the attacks on the Crimean bridge",
+      "outlet": "RTBF",
+      "published": "2026-11-21T17:26:17.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "TH",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9XelhFTjRhTUh3VWhJak83R0JLRENZYUxFN3NvbDZvQjNBSURZSTJuUkszZ0JHVllNWHVrOVZ0dV9MdjdjSE5zdHNhalNObFdvdGliUzN1WlJZUGNsQlY0?oc=5",
+      "title": "ผลต่อสงครามยูเครนเมื่อเดโมแครตครองสภา2026",
+      "en": "Effects on the Ukraine war if the Democrats control the House in 2026",
+      "outlet": "ไทยโพสต์",
+      "published": "2026-11-21T17:02:54.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPc3FrMTZCeURaNUJ3MVZWR3MteW15Ni13cHEtMkhnWjJXRmVBVEU0cnBPel9FNjJtQlR6WlROZ0Z3VjRDSXAwZFZ0ZEVDckxDNXh6eFhPX2VEZjFIUDFZek55UVBlWXYwNGhmdWc5MzB5VVd6MmFrZllpb0xOZGNpN1hzS1hEWHpnbHVmbzJhZWpMa0tIZThUcmxvcnJLWkh2VnFYdTVxZlpfdXFCSHd4Mk5RX3YtdTJZVkd6UGpqRWd4d1d6WVFSS3d3UmJBNktXaEF1NmRiNDhzU3RodF83RVVCazhxY2xXT3V0ZVlxOS3SAfsBQVVfeXFMTkRlUVNrQURzZV9aZk1JY3dSdURtZUxKNWtSNVVUcGdxWXF3R18tNzVIZUZhXzZhcXRXSmFfUnZ0UnVFSlVlYXFmQ2VfdzdobmlveVZyV3YzYmhQMDdkZUtwUWRUVV9LQklLSU53RXF2bVZwTnRmcENEVVlpQW9CTzZoN3dVUEN4ZjduOVNseFFKRWY0cm1jcndibkpyZ2NZazl2TVd3Qk9nODQySi1sX3d4a21vZ2h2VGpTYmNxbmpNNFROSnNlSkxMQ1RPUVRvRVllbHk4ZnBsQVRrSGlBWVNPd3pkbkt2U3NLQkRJaDJTb1Z4dTZFZjRjX28?oc=5",
+      "title": "Zelenski: Trump le-a spus liderilor europeni că cheltuiesc prea mult pentru Ucraina. Ce le-a sugerat să...",
+      "en": "Zelensky: Trump told European leaders they are spending too much on Ukraine. What he suggested they should...",
+      "outlet": "Digi24",
+      "published": "2026-11-21T16:50:25.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "IL",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTE1fZWZEYUd2enlEQ3hRR29TZDhHbTNPazB3dGFUZ2hqRkRwajJqdFBiY1huNld5bHQwV25qVU15dXhlUEgwbmMzZlREb1FTSlNLaHBONWZ1UXdNTjlRWkNJdGpOR081VTdZaTY0Q2s1UW93cUQ5cGtia2VhcEJqVGRoYUc0MnczZ2RLUTBCVHhLWkRfbTUxcGFhQTNGaWhBbk8tZmw3MUR6OWNKa2QtRzJYRURkZHduRVp6ZA?oc=5",
+      "title": "\"אז יש חור, אז מה\": בקייב לא מתרגשים מהתקיפות הרוסיות על גשרי העיר",
+      "en": "\"So there's a hole, so what\": in Kyiv they are not bothered by Russian strikes on the city's bridges",
+      "outlet": "הארץ",
+      "published": "2026-11-21T16:50:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPZDJFZnVKXzk4alFIMG1hMjNuT0I3RENLNVVMMHRnb0hERThQZVFUX2hVSWVqeGxRSDhiSXhsUExVLUlnd2lOUXlod3dCOWJtX3hJM2hVSEk1Z3ZoMDRDejJJb0ZJT1ptemtpUHJJUWtkbXdUR2J6dUVfNGlkVUZ6V3VvTzJWLXpOUXRpemdvS2JZLW1TZDZYVkZYLWE2U2J4clhyS1RfbVRPSWVaMVBFMi0yNHhCNGpIRElnZC1ydm9mOUJnZm04SUdGOV9US3p4al90QmtiRVczSEQ5QUFBZkZtYzFfZ0phT1FhWDExUQ?oc=5",
+      "title": "Trump odkázal Európe, že na Ukrajinu míňa priveľa peňazí. Zelenskyj prezradil, čo zaznelo za zatvorenými dverami",
+      "en": "Trump told Europe that it spends too much money on Ukraine. Zelensky revealed what was said behind closed doors",
+      "outlet": "Pravda",
+      "published": "2026-11-21T16:50:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RS",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQLVNmS0NCZE5mdUxzUUpBS2NpYS12ZERoa1IwNDlZWDZZQ1c5ejhCRmYzQnNJZEJ3VnlpV1JsTHhvNGx2QzFDeV9qTHF5U2o3UFpoNzB6d1NMRlJWRF83QWstZGwxQnBBSkNGeG9kdWlsZWM5NjNLQ296TjdNS2ZQYV96Rkp1aHVTeHFHZGhseE1HWFhSM3VQX0tTX3RVWmhnY3Q4V3lWck16Zmc2emc?oc=5",
+      "title": "Anketa u Nemačkoj: Skoro polovina građana želi smanjenje ili obustavu pomoći Ukrajini",
+      "en": "Survey in Germany: Almost half of citizens want reduced or suspended aid to Ukraine",
       "outlet": "N1",
-      "published": "2026-11-21T12:11:13.000Z",
+      "published": "2026-11-21T16:40:17.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LT",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbHZPR1NJanl3R2FPUWlEZnhnSXVrVWhLMm9qSk5wdmY1U2pUOU4zLTNwU2doaWlaVkdfMlBxMVZyMUJWa2diN0JURndGTEE0czNpMjVnM0hsU1VXOHo5cU9QTHdxd1ZvLWUwTTZMVmNYenBUcmpPNHhoMmRHbzBiVmN6OHlHd3pIU0VUVkdoZ2pab1o4bU44dkVHOGJEY19qcmppanZucm4yRTFOdzRjTlRwZUQ?oc=5",
+      "title": "„Pinigai visko neišsprendžia“: Zelenskis atsakė į Musko kaltinimus",
+      "en": "\"Money doesn't solve everything\": Zelensky responds to Musk's accusations",
+      "outlet": "Delfi",
+      "published": "2026-11-21T16:36:08.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObEhJS045N3BsUTB0MFo5U0hWUzVwTkM1T3doX0JOeHJnQ3ZocEpYZ0c3T3JBYV9TNHlDZzJSaXlhczRZUTNaMWRRQkpkM3NFUlJON09HRFFPTzdCZGRpVTBoQzJXQVEtTlQzOXQyekhveHoycFR1WUZ3REo3STFtUi0wN1BQWVRWN0tCY1hvZnNwV2JjWm5EM1o0bjViMkxvQTdpSklvSldFRDBtT1MzS09n?oc=5",
+      "title": "Zelenskyj: Trump Európanom povedal, že po mieri môžu peniaze na vojnu minúť doma",
+      "en": "Zelensky: Trump told Europeans that after peace they can spend money on the war at home",
+      "outlet": "HNonline",
+      "published": "2026-11-21T16:30:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "NL",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPdXFpZ05tc0FzMGhNYk9tMkpOUUUzRFhfNk5KZ1hnck5OUi00Sy1PZ0daUzBrc1dFdTVCak5DRFJlaUdLbkdWaWpPRmhZQUx6XzFrNHNvZTVuV3VzVTZmcmhsUXZkVUhIdXdzRGJLSmlyMnVaVkRXMmw4ZERqeUVGbjJVdW1PeTRyNHgwWlAtbGdlVG5fYlZLUHM4Wk95VHRkVks4VUthSDJob0NKWE1uUnZjZW85dk1lNkFLWU9teDd1cXFGM2x2cW5FdWcxaDZoYXdSTHd4UTI0ZmlnNk5iMEd0NWNsSW8ybmo3cVQ3OUQzdmlSYlRmM013?oc=5",
+      "title": "’Killerrobots’ rukken op van Oekraïne tot Gaza terwijl teleurstellende VN-top harde regels blokkeert: ’Genadeloze wapens’",
+      "en": "'Killer robots' spreading from Ukraine to Gaza while disappointing UN summit blocks strict rules: 'Merciless weapons'",
+      "outlet": "De Telegraaf",
+      "published": "2026-11-21T16:25:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOX2ZGYy1xX2QwNlVEU0tKQ3NheC1kV3JLa0owakdZV3hxTm1tdlUtcGhuQVZ0YnAxRnBLRDU0VTRJbm1aWmQ3ekZkUGpLcFVYRFIyNlFwbThzNjVhMkMtR3dVVzN2M3NIQ0VkVHVUOG5ldElsUzdnMW9DemhiRTVNeTdIbXhQT0tWdzVQSWJqMWxyejTSAZcBQVVfeXFMTW1Wa0lJMVpPWW1Sb2hmak1sOVFIMXdnS1BMX0pqZlRwLWd6TmExLU5vV004eEJxTEVNZ2lYa1RrcFZQWjFVLV9iVkJLQm81Y1lmcHFfRU5RVGNqeUZiWDRjTXQwRjRaV0JwSEk1NUcyU3JPU3Q5QnFGMUVxSG13M0pLZWRSaVhhZmxZSjJWVzFjYmVPazdpTQ?oc=5",
+      "title": "Зеленский всё ещё ищет посла отпущения",
+      "en": "Zelensky is still looking for a scapegoat",
+      "outlet": "EADaily",
+      "published": "2026-11-21T16:23:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NL",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcU1vWURwTzNFVXM3ZzdmTnhvbF8wRWxId3FGa1pPLXQ0VU5ocGJYb2RDYTF3V1prS0lhX0VZUi04a3JveWI2RUhIYXkwQ25GZEJWTk1IcVNFQ2o4WEppVjQzbE15RldEV0diRjJCWWFuaEttMHlhb0pFZEl5bG02M2xrUjhGRUVPMXJlSGh3MllGWmlqOFBPZl9pN2dzakNnVHFQSG41U0NERlJMd01ENmxPdER6Zw?oc=5",
+      "title": "Oekraïne | Zeker 20 gewonden bij aanval op geboorteplaats Zelensky",
+      "en": "Ukraine | At least 20 injured in attack on Zelensky's birthplace",
+      "outlet": "NU",
+      "published": "2026-11-21T16:22:12.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "TH",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1NSWQtWmRUTmNBdVd1YlE0dkpMdHYxZWVGSnQ0Q3VDSTdkcUttTy1HVnhLb2JjU1I4ZzlOS0Z3OXo4Wk5oY0JmS1djZ09tZXloeXIycGJveXZHZDA?oc=5",
+      "title": "เซเลนสกีลั่น โจมตีสะพานไครเมียเป็นการตอบโต้ที่ “ยุติธรรม” แล้ว",
+      "en": "Zelensky says the attack on the Crimean bridge was a 'fair' response",
+      "outlet": "thairath.co.th",
+      "published": "2026-11-21T16:20:20.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdVFtQ3hrS2ZlLTk2ME85RzVoTnJSTVZKR0RfZWV0UmpHaGp1b3JoNmhBTVEySU5HWlp1N0p5a2VtN0RFT0xDQnk3d2t5dDJtbGtBcy1Gazk2Z1o4Q0Rkcl9HRWtURU8yY2kyQ1lzRFJ4Y0QtZjhFci1EMjhmWXBibF9ObF9zYjllNk11V1JDcWdjS3R6YUVlMGc0NXdmaWdiX1ozaFdFMHZUNXpNUVhLYVMtWFdTa2huaXVJ?oc=5",
+      "title": "Trump le-a spus liderilor UE că ar putea folosi pentru propriile țări banii trimiși Ucrainei",
+      "en": "Trump told EU leaders they could use the money sent to Ukraine for their own countries",
+      "outlet": "HotNews.ro",
+      "published": "2026-11-21T16:10:57.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RO",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPYTFhcFVKcDBtcl9nUjdRRl8wVTF4aE15cHRjbTRYQzBVbGF2WlUwSWtiZklFaWdJdGl2N25GNnQ4Ml9ZTXN1Nk5FSmJiTW9BSTBBVmhPa3ZBeTd5dVc3d0tZNG5BVVJhN0cxc1JnRzFUUXBBRE0zMnpBeElTNlBmMktvTWwwNThqeFhmdll5Sm5hVjlLX0pXVU5jU0hRZmw2ZjB2N3ZzV29ZQnpLTWRpQUpDRl9rME9sNXNnRnF4emVEb2VqdWJIdERTN1gxaW5USlFhZENqTDRackUxclFRaW95aHVWRXI1WnNZaXJzSVJ4NDU5TU5DYXFkejRKYkU?oc=5",
+      "title": "Ucraina insistă pentru aderarea la NATO, în pline negocieri de pace. Zelenski cere garanții ferme de securitate pentru Kiev",
+      "en": "Ukraine insists on NATO membership, amid peace negotiations. Zelensky demands firm security guarantees for Kyiv",
+      "outlet": "Stirile ProTV",
+      "published": "2026-11-21T16:10:57.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNc3RYRkRlZnNCMnBWQmM3WFRRNDlHU2FEM2ZUeGtQemtEY1VuQ2V1RTdmMDZ5aDlOUXBrREFUQjdIXzhBekdTQU1wbFJyRG9vYTdaS0hOZ2NZXzNEd3J0T1l2cm1JWFpxZ0pXY3dEd09fQVRGdDR0U3RiQmV0ZFh4MUZBSE0wSlcwSHFrV2RkQWtjZjcyZG9GajRGNFBEc21DSy02bGhiXzdCeVVNQ3c?oc=5",
+      "title": "Ukrainas un Krievijas pamiers līdz Ziemassvētkiem: ko paziņoja Melānija Trampa?",
+      "en": "Ukraine and Russia ceasefire until Christmas: what did Melania Trump announce?",
+      "outlet": "NRA",
+      "published": "2026-11-21T16:06:46.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PL",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZnRTUV9uR3FNWXNwelRzM05SMzk3c245UGhNenN3UkR6RjZvNGtsWVNwb1VCZUE0RWlETmhJa1F0dFJrOUtxeFhQTDhmMjZvQmlEdEZfeGZGbUszUDNqTHdPRHI4aEpVNUo2Y2w5OFctMlhrUW1NdFNGLWx5UUVmRzUwVnhJMHFob243TDUxVHIzTDloVU9sa2Zka3ZYRW5USXRiSHlFNHBLSUJ1V1g3bF96S0FjcTZ4TjdnY05JOTJDUQ?oc=5",
+      "title": "\"Putinowi nie udało się\". Zełenski po szczycie w Shenzhen, wspomniał m.in. o Polsce",
+      "en": "\"Putin didn't succeed\". Zelensky after the Shenzhen summit, mentioned Poland among others",
+      "outlet": "PolsatNews.pl",
+      "published": "2026-11-21T15:56:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSExqcmdXT1VsVDM3eERqRWtKOHQ2OTNaandnTEFoWVdDdHRZLUNGTnpGUjY0enVhdTlnbVJhX3ptVzhwTGhyeTRTU0ZpeV9NSVNpOEdpUGlaSURfRHJTbTh1emdKTFctdnhUTnBLUDhqaEdzZGdvbm5XRjJRc1JHTWF2YWVQUzI5OXJBODN4Y2RiSnJZLTJBSm9jalA5a3djMXY3TzNDUE5qNnFia3B1RlR5OE81VTdKem1GNDVxOThXS3ZrQ1BIRQ?oc=5",
+      "title": "Zelenskyj: Trump Evropanům řekl, že po míru mohou peníze na válku utratit doma",
+      "en": "Zelensky: Trump told Europeans that after peace they can spend war money at home",
+      "outlet": "Seznam Zprávy",
+      "published": "2026-11-21T15:49:32.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUFIwZ3BfdkZZZkpDVWkzNU90cThMUTlBM3prTG5sQXNVbWZqdFNoMDJTNWptUzZQU2dyOWkwcFBRRmozX0o4SDhHLWhDLUcwS29pcXVUU251eFVJR3Q4UjJlYmQ2LVhGaGt6bkhOSWItdVRBQlJ6WWFYaTR5czlTMEZFdjJ1cHl6dWtfN1NJRlcxYnFqc08wMVVZOFkySzUwNHpN0gGoAUFVX3lxTE40cEFBZVAwbHdHUnhRMHFwbTJBZi1iZEtrNHg5NF96cjIwNGNNT0JMcFY3dVg2aWdNdXU3S04yNDZlWkF5Z1paX29Ma0d1X0YxbVEwNHRSUUVwOTllZFJGUDVuS2FjbXpiSTVsLUxra1RzVldsUmUtTldiejU4UEZlQ19kWm12Z1h4c29rY1Q4SGxuRVd0WEM1SklPTnVrbjBYemhUa2tZaQ?oc=5",
+      "title": "Раскрыто число нашедших убежище в Евросоюзе украинских мужчин",
+      "en": "Number of Ukrainian men who found refuge in the European Union revealed",
+      "outlet": "Lenta News",
+      "published": "2026-11-21T15:41:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "KR",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBUX3RiWjJBa1pkQWtMZ3ZPMWJvOTBaTVlaaHZxaWxMUmtRdG11STFLMmdsYXQ2MVhSa1VYaUNJaHM2UGFyamF0V010QlZnQ1dlUk9wVDExd0owR1BSeU1JVUUxb1ExVE5ZMUNJWGI2N1J0bEo1NnZ3?oc=5",
+      "title": "푸틴 “보복한다”더니 ‘젤렌스키 고향’ 더블탭 공격, 7세 사망…절규 가득 쑥대밭 [배틀라인]",
+      "en": "Putin said 'we will retaliate', then double-tap attack on Zelensky's hometown kills 7-year-old… full of screams, devastated [Battleline]",
+      "outlet": "서울신문",
+      "published": "2026-11-21T15:03:16.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVm1lc3oyNlRRN0JhVU1xVXVZYkhMR3FmWVBSQWg3di1xamtGcjQ3OW1OUEZqQWdOY0hMQTlkSmFrbUNqTmhLMzQ4UHRWdDlxMHJkSjlUOVlQWUthbnFRU2ZRMUxRazR0eW16RkZhaHc5aF9CZi1UWXdBQXA5WmhRTHBtb0tIdWhSQTR5ak1IMW1oeXlLanYtT1NycXowN2czUjVlaE1hM2RxNTZ1d1ZBd3BaZjAwU3JvX3Yydm5QT2I0a0pMMFE?oc=5",
+      "title": "Costa chce danit technologické giganty. Merz trvá na podpoře Ukrajiny od všech",
+      "en": "Costa wants to tax tech giants. Merz insists on support for Ukraine from everyone",
+      "outlet": "iDNES.cz",
+      "published": "2026-11-21T15:01:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQVzQwQmRjdzZQbERFUUFEVFpxeUd5aDB5QmJjYVpsOVhVQVAxdFZ6dFpQVWc1OHRlSDZkMDdTWWw3MkpCNHoxVVVOR2ZFVjVuQ2U0azc2RFo0WjB4Skpwdzh2bmlKWmJOWXBZSDU1RnhkcU04TXVLbkRLOUk1cGVQUGs4dUZ3Skszek8xSHhRbGZJU3l3Z20zb3IzMDZvRTh6UlNnT0pfb1dOa2F1UjBteHlwOU42cG52YXJuQWRjUTR3bE5xaU83SERYaWxxeTRtX3JHbWxySC1jOTRFaDBDMkQ0dw?oc=5",
+      "title": "Britové pošlou Ukrajině tajemnou zbraň. Dokáže zasáhnout cíle hluboko v Rusku",
+      "en": "Britain will send Ukraine a mysterious weapon. It can hit targets deep inside Russia",
+      "outlet": "Aktuálně.cz",
+      "published": "2026-11-21T14:56:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NG",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWWNfMkhUcW5UdU5ZbnJLTGVjOUtMYkJ5UWk1dEs0TEU4bXVpZXduOUN0b1FwTjE5RFhPU01QUlM2d3htZFFxUHFkbWNmZTRpU3hmQUpqSWpxZkhwMlRRcWdDdnB2WjNYRGp1QzRvM0NQdGwteVgzZWoxcXVUMEtTam9KejlONVl0Z1HSAY8BQVVfeXFMTnNQeDFFY2hDMjQ0UW14eURrakZwYVA3SFhFUk40UTQwRmV3dHM0dEE2cVFwWlJkaUFEVEF3ZWZ2Z1lkNE1BWXBUcXEwNklNMG5ZOWpvamZqSXRicEVjMk82NGROeVl1cG1XMHY3N3lIa1UyMW9xTUozY1FxS19DWlVYQjFtd0pySHN3UUVEYkk?oc=5",
+      "title": "Zelensky reaffirms Ukraine’s wish to join NATO",
+      "en": "Zelensky reaffirms Ukraine's wish to join NATO",
+      "outlet": "Vanguard News",
+      "published": "2026-11-21T14:54:59.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUGRSdG9xWC04MEZnWnVfbkpSakRTN1J6SGNsbkdibWQ2OGdVTlVwUGgtT1NsVzhNX1E0SFFWYjAweTZtTHhlN0JZNXdWVzRkT3BjMDJhbDFYNGtUdmlsd3h5ZFhsSmgtSk5EMlpCVzBwTFpxdVllY2luNEtZRnF6bWRydWZuOEJCNHR5OEdybmg4SUkyd2t4Q3ZTUXRyUmJfdlNzVUk1TW5YZE1fY3ZyekFSem8zT2lWM3h1aVcwUzRFdXllYVRtRUZoVmo?oc=5",
+      "title": "Cầu Crimea: Nga nói đã khôi phục đường sắt; Ukraine ước tính mất 1 năm để xử lý phần cầu sập",
+      "en": "Crimea bridge: Russia says railway restored; Ukraine estimates it will take 1 year to clear the collapsed bridge section",
+      "outlet": "Báo Tuổi Trẻ",
+      "published": "2026-11-21T14:54:00.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "NL",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVnNtbzNKYmxjekFZTTdaSVE2XzRIcThjbnV4ZGU2Y3AtcFlhcFdPN040RW5IRG1CRHZmamxTZ2dnZmtQT1B4dlFUcy1vV2k0dFBMRy1LSlJ3VTBuRWNEalZyR2lzTjllQmkyMnV0SWt3ZzhESENMdUFDY2JxZ3loMVdlUDRqdlZzZHMxczRyZGVJZVZSMDdUc01GSEdhSVVFUnE2WEhuNA?oc=5",
+      "title": "Finland: Russisch vrachtschip geraakt door Oekraïense drones in Finse Golf",
+      "en": "Finland: Russian cargo ship hit by Ukrainian drones in the Gulf of Finland",
+      "outlet": "NOS",
+      "published": "2026-11-21T14:45:31.000Z",
+      "outlets": 5,
+      "trending": true
+    },
+    {
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdVJYYmdMRHFOZkppRHV5Mkxvay1OR0VNY242VXh3OEZMMFNCbzBDajUteVZZMU9qaEVDYmlWdkhVbThLT1RVeHNjTFQ1Zl9jR3dyeFlJNWlXNjlaUV9JcE53Z21WdnJ3WFdqQjRxZ1ZUUEc4TGFEVjJYUnNYaDdpMWswcUI5eUREYy1ESjFtVHRMVXpyMDYwZy1VR0NIVFRseTVCQzVSdFVza2JmYnJ5cGNyc0pNQS1Hbno5Sk0xNjJUa2N1bzdtbnRPMzhSTDNDX2tDUU5veWZLc3BCcWpXWW5KbnZtVEdpckVIMXVPTVI5OFE?oc=5",
+      "title": "Merz tlačí na spoločné financovanie Ukrajiny, inak hrozí blokovaním rozpočtu EÚ. Costa navrhuje škrty aj nové dane",
+      "en": "Merz presses for joint financing of Ukraine, otherwise threatens to block the EU budget. Costa proposes cuts and new taxes",
+      "outlet": "Pravda",
+      "published": "2026-11-21T14:37:49.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "CZ",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNTNFMXNpYVBhdFNsZ0NOWV9UcUpJVVpNMFRhQUtzS3c5RE5MUHpyNF82YTYzWER4c0dIM3M1c3d6UmVqYlpuX1dUS3o4TTFhV05WY3RwenhGeXJudHRpek54d0Z4bGJEcjUydGJOR1ZKRlRKWGMzX0xRMmY0WkpJLTRybmhBQmtjX1MycjNGZVVhZm1QUmRfS3NuZjNjdTl6bHNOTTd3Uy1oWGc2MndV?oc=5",
+      "title": "Zelenskyj práskl do stolu. Jasně řekl, jak ukončit válku s Ruskem",
+      "en": "Zelensky slammed the table. He clearly said how to end the war with Russia",
+      "outlet": "TN.cz",
+      "published": "2026-11-21T14:17:00.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "ID",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPV00tQjdHSGFMUDlBOFoxZy1KVy1pWl9yMjAzbFhuVTdRSVlWdl9Ld2U1RG1YRlhTZlptblhUZEFrUXlsMElNdUN0QW1KbzNNOGRaUG8tZGJfd3ZLRzNHbnh3Vi1hbFJSeHZjdEFzTERacVBaM2dNSGZCb1FRXzBSZ0JvdWI2S09jQ0s0Rm1IUXN5T2tzUksyd9IBngFBVV95cUxNaldFNThpWml3OVZmZWVVbUlMVFJrNnpIcTV1TVVIRndKMDhpWXNyV0d3WWNEN3k5VzdXbThQcm9YRXNfMWpIaVFtM3BRMVRfbHFjVW9tdUJka0x3d001c2NQYk5lRG9rTFR1YkJvckpUeENyS0l0ajVodWtCZEV2Wk9ONU9NdzgtYzkwTHRPWHRTbGljcl9YdjA4TkZwZw?oc=5",
+      "title": "Beda Putin di Mata Zelensky dan Trump Saat Ini",
+      "en": "The Difference Between Putin in the Eyes of Zelensky and Trump Right Now",
+      "outlet": "detikNews",
+      "published": "2026-11-21T13:51:36.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "SK",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE00QWdHSFJFbExhNmJYcndXajJxTXFpTEZHSkc0NmNnSzhUTnBoQ3BaVHlfTG9OZmpnenRLMEpsblA4ellHUmpNMmZR?oc=5",
+      "title": "Krymský most nezostane stáť, je legitímnym cieľom, vyhlásil Volodymyr Zelenskyj",
+      "en": "Crimean bridge will not remain standing, it is a legitimate target, declared Volodymyr Zelensky",
+      "outlet": "Denník N",
+      "published": "2026-11-21T13:22:39.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "HU",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNT3dnLVZoV2NIWkU0X2lZMW4tUkZ5ZUo3a3pHUlRqQi1LTWZNQkNBYXN3bmNFcEpCd01nUl9UYWRVaVM3TUhsbjJzUnN6dTBOaTRnU01hNkdoYTU5OEFtbHB0U3hPTFpXM0VFZmNuLVRFbFUyRVZxUm9JS0l0U0tGbXlZZmxtVktHeWNfakhUYmZidFB4eWJQUU1Xck9sNzRQZ09oWEFzWHBXNWVodTV1dzRVLThrMnpoczRqYmQ2SUlyQzNKOW5JNlZyQ2FVVDlOQVhLVzNfaw?oc=5",
+      "title": "Egy 7 éves gyerek is meghalt és több tucatnyian megsérültek a Zelenszkij szülővárosát ért orosz légicsapásban",
+      "en": "A 7-year-old child also died and dozens were injured in a Russian airstrike on Zelensky's hometown",
+      "outlet": "Telex",
+      "published": "2026-11-21T13:20:53.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "PK",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94cXdVVUc1b3ZQMTdhdXdRUWF4RFVlNTNMYlJDeWxoR0NZX3hxd3BBOEJwTzhYdDJMQnZNRkZ4TDc3c0pTN3hyX0xBbkVUanpHejhWQUJKMzR2VEE?oc=5",
+      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+      "en": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+      "outlet": "BBC",
+      "published": "2026-11-21T13:17:38.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVHczUnNjYVpPTi1xTFZmWWEyMHFiT3NPWDJnWEFQS2NBcDRBN2FaSmNXOEFPRVBTNktYbGRwY1U5TVFGTzloaXgtRVZ1bGFMWXJJNi16bUNLcnV1dllEWnR0M3VrNkFOZ3d3ZmExc1NvSHViSkpKWjFWbG52MGRNUmxISXpjUTRwd0JwR0FlRlhuU2c5a2xONDdBZXdtaURsNE5GbA?oc=5",
+      "title": "Как Украйна изобщо удари Кримския мост, китайският шамар за Европа и две форми на бягство",
+      "en": "How Ukraine struck the Crimean Bridge at all, China's slap for Europe and two forms of escape",
+      "outlet": "Dnevnik.bg",
+      "published": "2026-11-21T13:15:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "BR",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWFR5YWs3Sng0U3pmLVJ3SDllSXo4cmlzNGNSYmlpMG11TTFYTnU0bHd5R3BhSTk3MXI0U2l1OXhwVGtPQzlXV3IwR2xBWXpvckw1V1BTTFpjY1B4eWpWNDViQ2hFalJFMkpuazAzMnpPbVpCZ2tVbVJVcXNrSGp6dDhmdkhHOUZlbUZzakw5VXFMNDMtZ2x4TXhILWVhMGdGZXBwbEl2ZnRCT2tWaW9MRzVoQUg1MU3SAcYBQVVfeXFMTkRyUVBZUUF5ZVNwTzI4WUpYUHdlRmVkaDl0M1p6eEp2b0dDdVFUSmt5VmpoaXhDRWlKa1JTczhtUUhEQ1NzcHFJdjF2Q0kxMWY4c0tGMWR4YkM3WmtiaXUzcVd0LWVqSmRpc3ptOGlIcGtuLVl1WThOWjNiYjhiMlk2cXhkb1VYWmxpTjFpZHBxelAtRzdsb1Q0RG1QNnd3RHZLNm5sUjBDTmxmcTBIbTVkZnhib3I3T2NlNU13bGJPYjhRQjl3?oc=5",
+      "title": "Cúpula na China foi 'muito malsucedida' para a Rússia, diz Zelensky",
+      "en": "Summit in China was 'very unsuccessful' for Russia, says Zelensky",
+      "outlet": "G1",
+      "published": "2026-11-21T13:14:18.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONGJpT2EtRzl5eHhiS0tzWXAyRlE1ck5fZExpTkIzVFFUSUFMcktWajBJZkVzcjVPc05MTnFEVk1ua0NqYWZhWFRYUHQxbEFDRW9SVldCZUZZeGFvWGJ6VXhYWVhfS2d0d3hpSWxnS28tcFQxYkpOeG5EaGVWb0dUWGJjQTRLaFVIWW5RdThyaTZnT0NEeDl6TlFyS0hLWGRnRHphZ2lpVkZVbEFV?oc=5",
+      "title": "Nga tung cảnh báo đanh thép, gạt bà Kaja Kallas khỏi bàn đàm phán về Ukraine",
+      "en": "Russia issues stern warning, excludes Ms Kaja Kallas from Ukraine negotiation talks",
+      "outlet": "Báo Dân Việt",
+      "published": "2026-11-21T13:07:00.000Z",
+      "outlets": 4,
+      "trending": false
+    },
+    {
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeWxIRHZDUDFoTy1Gd3ItdEJPQ1U4VlZyRU1fTy1oZmRXVHVLYmg3ZHZTc3VLNmF4bGpFYVE3ZHlvWVliWjdkTG5YRUJMcmJ5WGpiY2ZsODJiYXRhRW5XVGp0WWZ3aE5YTUVmRmw1a0huclhxNmtGUjVza1Z2TWI0aGVzcE4yX0I5WWtFMzVvMVJhcFZZ0gGUAUFVX3lxTE1NMUNRWkpOQ2I3ODNXOWpZOWtrLW5oenBFX3Q1RlBEaG9COFU5d1owVzFfNi0wZ2d0YVNMMUNmeVlqbDB4WXpuemNuMVFmNjZkSGFHLXFtR0tzSzBzaThQMnVRbi0yY296UUoxQi1aNHRMejRXVUM5ZXRpeVlNUGFENGtXc3BGcktEd1o4T1FKNm9EV1c?oc=5",
+      "title": "Володимир Зеленски: Нека Путин знае, че Кримският мост няма да оцелее",
+      "en": "Volodymyr Zelensky: Let Putin know that the Crimean Bridge will not survive",
+      "outlet": "DW.com",
+      "published": "2026-11-21T12:54:18.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "NO",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZFRob3lQTnZhdjZET0FZeE1fdXBSWUJqY0pkSXJDRVN1OFRoYy1oc3RIOUZkejR6YkpLaGRZOVVlVzBlSkVENGhvaE53SXFHNFpmMURkOGNCMHlBa1l1Q1p4ZTRlYmg4QTNiMWw3Umdmc3Bqdjg4YlRDOGR1OTNBMFRkWEpnU1VjQ0FxaC03aC10MGNtemJVRENxcnJyR3JJbjNuU2hPcU5RRVc1Zi1sNWhB?oc=5",
+      "title": "Dette bildet er et lyspunkt for Putin, og kan bety trøbbel for Ukraina",
+      "en": "This picture is a bright spot for Putin, and may mean trouble for Ukraine",
+      "outlet": "Dagsavisen",
+      "published": "2026-11-21T12:21:51.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "RU",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE90OFp2RlIzUEUxUXBWZ0NNRGtwZmFGRllubWJtTWtOWlkweC1GUll4V1llSVZhSjBlY0FnYzVRT2kxbDl1MDhJ?oc=5",
+      "title": "Зеленский жалобно попросил НАТО взять его армию на содержание",
+      "en": "Zelensky pleadingly asked NATO to take his army under its support",
+      "outlet": "URA.RU",
+      "published": "2026-11-21T12:17:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -60,56 +610,6 @@
       "outlet": "Siol.net",
       "published": "2026-11-21T12:07:35.000Z",
       "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "CZ",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOLTZIWURIcXdpSzRQNFozOUx5aGh6aHI2MXdDLWxneGVvU1E5S282NlNwVHBwWXNxRzlzQTZoNk82ZXJzUlBzcWRQWkMtMmhZR0V2SnZ0V3BrUlFXZ1F0bzlfYURPS3VPeXhZSGFsOFZyZFRuQ1B6ZXFYaEY4aDBOQ2Ywbmp5cU5mQUptUk9EajVJRnJEZER1bkd6T2FYTGJzQjgzVkpQbEFyelNJd2FFdXFueG5BbGxDb3JDM2l3RQ?oc=5",
-      "title": "Melania Trumpová: Jednáme o příměří na Ukrajině, snad bude do Vánoc",
-      "en": "Melania Trump: We are negotiating a ceasefire in Ukraine, hopefully it will be by Christmas",
-      "outlet": "Novinky",
-      "published": "2026-11-21T12:06:22.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNkhSWVNkdkdYSzIxM2dHMTlvdy1QRjBOZjQxMGNOMzFRWDRxMVNtV2hvQkppVmxab3V4bnZNc2s0eDJwVUZvSGNweXFMUkw0TkNBblNudUJXR19NSm40SlFaWmFNVlkxUjJwNFlqcmhobnNIX0hfWHdqeFkzWGNoTks5eGhodG1nRGJVZS1uUENwN25DUV9XTmVpWjh0c00zV05jQTNHVDdCTnc?oc=5",
-      "title": "Бюджет ЕС на 2028–2034 годы: сокращение расходов на регионы, науку и образование при сохранении помощи Украине",
-      "en": "EU budget for 2028–2034: cuts to spending on regions, science and education while aid to Ukraine is maintained",
-      "outlet": "Финансы Mail",
-      "published": "2026-11-21T12:05:04.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SE",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5DUldUSkRZT0JuWHlGa00wbEppTG1MenhRX1JRUERlVFNTVDR6NXJlUXMycjZCaVhXNUdjVUxNY1lrN0ljMGFPaUVnMjhYZkJwNlJyeWFINkM3SXh0S2J4N19GTl8taUwx?oc=5",
-      "title": "USA tokhyllar Ukraina",
-      "en": "USA lavishly praises Ukraine",
-      "outlet": "Marcus Oscarsson",
-      "published": "2026-11-21T12:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVUdHajVWVUV5N2llYjFkVUtvMV9tTndwYjBfTTJZTUFWYVdLSlE3dEVsRlVSOVhyMC1keEVxRnppaHROOEEzNDF5SnIycmFQU1lLUHBWdk0zcmItWkhLektJM3pWWmc2X0JGV1NZTUR4dDBmaUplNDlSNDE1TTFnamxYTUw3Uy1WTDR2ejNLREhSZHVPUmM3alVOVlUzUF9ITGJSRkhyMTdlLUNQM3d5S1RnLVVIV2ZKS3VRWkg1YlVadFhjem1wak02VGw0MlJQYW5qMHVKbWI?oc=5",
-      "title": "Естонија затвара све граничне прелазе са Русијом; Зеленски: Кримски мост неће остати на месту",
-      "en": "Estonia closing all border crossings with Russia; Zelensky: Crimean Bridge will not stay in place",
-      "outlet": "РТС",
-      "published": "2026-11-21T12:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSXRaR3BfWVNzdVZSdUpPbjBFLTVoOG8wTmRXMU9Ub0ZZMXlqU0NkZjJ2emp3YUlrUFlUbnYwa1BnSjNtaEhxeUh3djdoNk9WbUdDU3g1RnNQZWF0aU91NlBWZmFkdkJFbjRDWWNKNzJQNTZmcGlzSVU5MkFLQ2wwUjJGWjhzd19HY2llbEN2dGVrbmtmcUs1YjJVODF1R2xGakJSRWZ5LVJIMWd3WUZuQ3VwNDNBZk1yMXNxSg?oc=5",
-      "title": "Trump se joacă cu focul. Ce se poate întâmpla dacă Ucraina cade în urma baletului său cu Putin",
-      "en": "Trump is playing with fire. What could happen if Ukraine falls as a result of his ballet with Putin",
-      "outlet": "HotNews.ro",
-      "published": "2026-11-21T11:57:37.000Z",
-      "outlets": 5,
       "trending": false
     },
     {
@@ -120,46 +620,36 @@
       "outlet": "BBC",
       "published": "2026-11-21T11:53:38.000Z",
       "outlets": 5,
-      "trending": true
+      "trending": false
     },
     {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94cXdVVUc1b3ZQMTdhdXdRUWF4RFVlNTNMYlJDeWxoR0NZX3hxd3BBOEJwTzhYdDJMQnZNRkZ4TDc3c0pTN3hyX0xBbkVUanpHejhWQUJKMzR2VEE?oc=5",
-      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "en": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "outlet": "BBC",
-      "published": "2026-11-21T11:53:38.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "AU",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94cXdVVUc1b3ZQMTdhdXdRUWF4RFVlNTNMYlJDeWxoR0NZX3hxd3BBOEJwTzhYdDJMQnZNRkZ4TDc3c0pTN3hyX0xBbkVUanpHejhWQUJKMzR2VEE?oc=5",
-      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "en": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "outlet": "BBC",
-      "published": "2026-11-21T11:53:38.000Z",
+      "from": "MX",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPN2pZVVdmQVF4eGZtcDRiYzhLREFBSDNUeGJXV0I2NXI2VVBUNUVNSHVFUFhfbEJLMnBTR0twOFg1Z0x0V1pneFl1RXVYOUhjU1JnWFFOUlM3TUM5cWZ3WTJNVVBKX1Zicm1kQ1BSbU9LZ2hQZ0tlN2VOSlk5a2xuX05XTjV5TVVuOFptc2JQZGpzWlVIa3JMMHdDWDFqdkVZUlFhQUVnb9IBpwFBVV95cUxQVFBGSXlKSEhaQ1RDYVVSM3FjczBCNGxsd2piU2RDNnRTTFVBZTJvUEpaQm1SZlc1OW50bENwM2VwTlZnLXJ4VXQ2RzhKNXJ0b1RIMWF4SnVNSUZFNERHY2lGUHNpQnhrNVJHY2ZWZUdMaFhqMUtvMThWU1VQeFd1Y2JLUWgzM2o2QUhsMUM3YTNvTWhleEVWSkJTdGdXVkpfSU9MVTl3TQ?oc=5",
+      "title": "Dos muertos y 60 heridos por un ataque ruso en la ciudad ucraniana de Krivói Rog",
+      "en": "Two dead and 60 injured in a Russian attack on the Ukrainian city of Kryvyi Rih",
+      "outlet": "DW.com",
+      "published": "2026-11-21T11:51:36.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "NG",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94cXdVVUc1b3ZQMTdhdXdRUWF4RFVlNTNMYlJDeWxoR0NZX3hxd3BBOEJwTzhYdDJMQnZNRkZ4TDc3c0pTN3hyX0xBbkVUanpHejhWQUJKMzR2VEE?oc=5",
-      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "en": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "outlet": "BBC",
-      "published": "2026-11-21T11:53:38.000Z",
-      "outlets": 5,
+      "from": "CO",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPN2pZVVdmQVF4eGZtcDRiYzhLREFBSDNUeGJXV0I2NXI2VVBUNUVNSHVFUFhfbEJLMnBTR0twOFg1Z0x0V1pneFl1RXVYOUhjU1JnWFFOUlM3TUM5cWZ3WTJNVVBKX1Zicm1kQ1BSbU9LZ2hQZ0tlN2VOSlk5a2xuX05XTjV5TVVuOFptc2JQZGpzWlVIa3JMMHdDWDFqdkVZUlFhQUVnb9IBpwFBVV95cUxQVFBGSXlKSEhaQ1RDYVVSM3FjczBCNGxsd2piU2RDNnRTTFVBZTJvUEpaQm1SZlc1OW50bENwM2VwTlZnLXJ4VXQ2RzhKNXJ0b1RIMWF4SnVNSUZFNERHY2lGUHNpQnhrNVJHY2ZWZUdMaFhqMUtvMThWU1VQeFd1Y2JLUWgzM2o2QUhsMUM3YTNvTWhleEVWSkJTdGdXVkpfSU9MVTl3TQ?oc=5",
+      "title": "Dos muertos y 60 heridos por un ataque ruso en la ciudad ucraniana de Krivói Rog",
+      "en": "Two dead and 60 injured in a Russian attack on the Ukrainian city of Kryvyi Rih",
+      "outlet": "DW.com",
+      "published": "2026-11-21T11:51:36.000Z",
+      "outlets": 4,
       "trending": false
     },
     {
-      "from": "IE",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94cXdVVUc1b3ZQMTdhdXdRUWF4RFVlNTNMYlJDeWxoR0NZX3hxd3BBOEJwTzhYdDJMQnZNRkZ4TDc3c0pTN3hyX0xBbkVUanpHejhWQUJKMzR2VEE?oc=5",
-      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "en": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "outlet": "BBC",
-      "published": "2026-11-21T11:53:38.000Z",
-      "outlets": 5,
+      "from": "CL",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPN2pZVVdmQVF4eGZtcDRiYzhLREFBSDNUeGJXV0I2NXI2VVBUNUVNSHVFUFhfbEJLMnBTR0twOFg1Z0x0V1pneFl1RXVYOUhjU1JnWFFOUlM3TUM5cWZ3WTJNVVBKX1Zicm1kQ1BSbU9LZ2hQZ0tlN2VOSlk5a2xuX05XTjV5TVVuOFptc2JQZGpzWlVIa3JMMHdDWDFqdkVZUlFhQUVnb9IBpwFBVV95cUxQVFBGSXlKSEhaQ1RDYVVSM3FjczBCNGxsd2piU2RDNnRTTFVBZTJvUEpaQm1SZlc1OW50bENwM2VwTlZnLXJ4VXQ2RzhKNXJ0b1RIMWF4SnVNSUZFNERHY2lGUHNpQnhrNVJHY2ZWZUdMaFhqMUtvMThWU1VQeFd1Y2JLUWgzM2o2QUhsMUM3YTNvTWhleEVWSkJTdGdXVkpfSU9MVTl3TQ?oc=5",
+      "title": "Dos muertos y 60 heridos por un ataque ruso en la ciudad ucraniana de Krivói Rog",
+      "en": "Two dead and 60 injured in a Russian attack on the Ukrainian city of Kryvyi Rih",
+      "outlet": "DW.com",
+      "published": "2026-11-21T11:51:36.000Z",
+      "outlets": 4,
       "trending": false
     },
     {
@@ -173,102 +663,12 @@
       "trending": false
     },
     {
-      "from": "HU",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSHkzbzJkNXZvRFB5UDRwWThNZkVGZzBRLVJtV1UzMEZaeHNKc0syc2czR1AtR3h0SXQ2NXRUbXYtRTE1Vi1vc01rbG5vaGFwZDF5bHJCWEtxdlpGVTN6Y2htRHdlZmdfMmNrMmpMNm1ZMkJjZkxkLUJVWlhHc1NvX0ZRMVZtRnZ6UlJ0XzI3b2RiUHpMYTZYcHl6SXJDUjNyUk1FUGhONkkzMGpIcFNrTU5YUHl2TnhLT29xRjBsOE5UTkZmWlFLSVdYTGZQblhBM1VHQ1Z4emlyN1U?oc=5",
-      "title": "Ha Musk nem beszél világosan az ukrajnai Starlink-lelassulásról, a demokraták megvonják a SpaceX állami pénzeit",
-      "en": "If Musk does not speak clearly about the Starlink slowdown in Ukraine, Democrats will withdraw SpaceX's state funds",
-      "outlet": "| hvg.hu",
-      "published": "2026-11-21T11:39:21.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQbzh0Q2ZESW1iZm1kcjF0ZWxjTG54el9ZemFHeGhGSjB4SGpscnpKZlhuaF9qUVBpUUZlbjU2YTJzWGNkcnF4N056enk5SDlINFl2VU85UHJQRDNMcDNjV3dndERpRkRidmpuaVZENF9JbzFTcG5sOTFSR0xBY1czVHlZdW5hSWFYeW90QnJYYWJWUkNmNVFkbkJXUzNqdVFkUl9oeWk0UkdkNThzbHNQeGxZYUcxSmRZd1ZIcXRNRE11YnZoX19IS3lCYWxkOXB6UUFFenlCaEh3bzRtUVBJNw?oc=5",
-      "title": "Wolodymyr Selenskyj: Putin müsse verstehen, dass die Krimbrücke »sowieso nicht stehen bleiben wird«",
-      "en": "Volodymyr Zelensky: Putin must understand that the Crimean bridge \"will not stand anyway\"",
-      "outlet": "Spiegel",
-      "published": "2026-11-21T11:37:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWGl5NjIxS1JQbE4waHhTUGNJVThwd1RLSUppUVdQNU5Ta2k4ZXBOUWtlYURVeHplRk5jQUxndm0wS2h0amdaZ0k3WXNKMlY3c25xMVNkbUJDbXVBcVlnSjJfcnpuNVJQbUE1LW9OWW1UX2E1LXU3VHlOZnNQZ1dEckJiOXQ3WVRocl9STlN2cHl1VUdxdno4UmEtZkJ5ZVNPMFFpS0VRc1ViZlFBSmxfNg?oc=5",
-      "title": "Nga: Ông Zelensky nói chuyện với châu Âu giống như chư hầu của Ukraine",
-      "en": "Russia: Zelensky talking with Europe like a vassal of Ukraine",
-      "outlet": "Báo Tuổi Trẻ",
-      "published": "2026-11-21T11:20:00.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9TRVh1dXNiNGgySC1iR0ZUNEpUemsxT0g1ekhrQ2ptYmVLUV84V3J6cUVodnVnNnRmUGdhdTFNWGNPR0tFanVqbDRjWEE3X0N1OUJ6RTRNRDN5SUl3X0JYQ3p1cVc4NVhpdkoyTkVn0gFzQVVfeXFMUG5MZmpfN0xHdW81M1VzTk9hdkhMZEJxZXFtQ1M1bFBRd0xpTVdXRDByMFJwNUlpdGlTN1ZhZ2Q0bkg3X2JMYzFMMHQ0YUNVUnNHZ25SWmc3cXFkdGZPaGpudGdhNVV0anZGR1NxMTdBVUJjTQ?oc=5",
-      "title": "Зеленский дал совет Маску",
-      "en": "Zelensky gave advice to Musk",
-      "outlet": "Lenta News",
-      "published": "2026-11-21T11:12:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOMEg4LXpIM3BoR05pSHA0VXFFZ1FBV2pMaExNR2dJX0syeXdpMVgzdnVDdkhvRmphWTZnb2lyNTRMNFU5R01PYWQwTV9hM1dzQ0NrNmVSZlJNZE9oNzR3a3pRb2NEUUVQc2lRa1c1U3g2YUcwekIwZjRZbC1lOTM5T0Y2dzUwd0VMaUtzdmZEd0lpMndnYWw2djJWOUZTUlByQ1Qtc1BDRTNoRjR0R0ZtVVhpYTZPMWRYSFZnTTlqc3AzeWNzdHdLT3FQVWVPU0JOc1Awbk9EYUJwSk1Rb0dkeUlFc0loSVdDU1l2WDFhcFQ?oc=5",
-      "title": "«Ja ir klusi, tad ir slikti.» Saruna ar mākslinieku, kas zīmējis Ukrainas armijas pazemes pretuzbrukumu",
-      "en": "\"If it's quiet, then it's bad.\" Interview with the artist who drew the underground counterattack of the Ukrainian army",
-      "outlet": "LSM",
-      "published": "2026-11-21T11:05:52.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQS28wSUdzYTVOOEVqVkh2QXhnakFZS0tzWXpERWFrSEp4VG91TjFMMzFKX25fM0l2SnRRZ01vcFNHNEpucFlJRnpRTEVFT19sSFd3eVYxUFdvVFQ5c0JUVTZIdVNXX2dXd2pnMklRMjZNcWJFNkE3U29BeFFWeU5MdFdR?oc=5",
-      "title": "Zelenskis: Putinam jāsaprot, ka Krimas tilta nebūs",
-      "en": "Zelensky: Putin must understand that the Crimean bridge will not be there",
-      "outlet": "ReTV",
-      "published": "2026-11-21T11:01:06.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTm5jdWw5MVdVbjdpWnZ2b0cyNnlpdnNqU0owNThlVDY0S1hSbkpOMGpZdm5TVU5QZ2lpSndBQnA2Q050RjA4M3VUYU02YVduem1ZUDI0NUlVeHE4OTVQSXVfRHZPZThocERscE1IUlpCWS1TbEJoaXk0NDN5RkQxQVRfLWF0Y2d6U1ZUTGRZWVZkX0k0dnd0aVZ0OXRxRGFJS3lkcmJlTHBUZ1VSVlBFYldac0VVckXSAbwBQVVfeXFMUGpWZzN4UHkyVDNNOVAtS0F4N1phV2ZzOWZxRXFnTWRKLXlKYUJURlJUQS1xanYzTEpBLWQ1TDNVaVBmLTFxZ0cya25VWER6SVhQX29RZ2tzYXNlV2VEYWV6RGdEVkFnVW56eS1JSkQ4VUMtUWx4M2lySTItQTFseTZMMFNZLUdvZy1COWh4d1M4dUp4Wk5yZWhpRVZVZkU2TnRlVFBRQ3p1MVNNdmdFeVBSX0o5ZUc2QU14ZVM?oc=5",
-      "title": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
-      "en": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
-      "outlet": "Al Jazeera",
-      "published": "2026-11-21T10:49:13.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90V3lsZEFBXzdPTlh6dWtZSk9uZGZtTHA3ZUVmSGlMNUtvTlJKeHJ6ZDc3aGFkVTNlandDMUdUUWE3czZDNGpkZnpqSFBFY0RkaEhqYm9pZU81QU9NTWpSaU1OSFlfcjhkazhLNHFjUlJIS1h3?oc=5",
-      "title": "Karas Ukrainoje. Zelenskis: Krymo tilto neliks",
-      "en": "War in Ukraine. Zelensky: Crimea bridge will not remain",
-      "outlet": "Delfi",
-      "published": "2026-11-21T10:44:57.000Z",
-      "outlets": 4,
-      "trending": true
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTGd1dFNpQUh2Nm0tOWFNNHlKWmphelNXc1hiTnNxSUZiN2V5SjljQkhUTWhKbFQzZ0NHalgtQ3hFaU1GWEVTQ2lnODRmMzFBMFUzZG0wMy16emVaYVBnZzJ0SGpJTHJVSVJsUmdEQVlXRk5kU3FRSUt1bHdiTmJ2MXNpV1ZoYWVnZElrMm9BY3cxVTcyVTMyWTl6bkpmMFM1TUJBNXZwTmZ5WmVBUkppa3c2RmxEV3BXNEI5eGtn?oc=5",
-      "title": "Kolejne uderzenie Rosji w rodzinne miasto Zełenskiego. Dziesiątki rannych, są ofiary",
-      "en": "Another Russian strike on Zelensky's hometown. Dozens injured, there are casualties",
-      "outlet": "PolsatNews.pl",
-      "published": "2026-11-21T10:42:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AT",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOU3h6WjZiN0M5ZEIwRzE2Q3lteTVId0dYQWdnNVJtakd4eXpfeHBzZk8yUzROcjlCbk9KMU1PLWRGZlB1TzVJSW90VmxvLVp3cVRmLUVtNmt1eDg2YjdVd2tta3NBcjJ4M3JrSGxDenBpVE1QMGszYmRRZTVuemlOMnktU1p3SmZVYWMw?oc=5",
-      "title": "Selenskyj: Krim-Brücke wird nicht stehen bleiben",
-      "en": "Zelensky: Crimea bridge will not be left standing",
-      "outlet": "DiePresse.com",
-      "published": "2026-11-21T10:40:38.000Z",
+      "from": "CO",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMnpWbGtIbFE4MjllZWpyNjktdXBsRnhXNTJNc2FuWFkzUml2V0thV1hibkJIZF90T1l0SG8xT19iZkNpMlhJZ3JsWHg1dDhocmxxS1Bid1Y4LVdSZzRCd2FWTllTRlFuaWFvY3lncnY0N185RHhEalFOVTNnN2thZ0dJblQ5UjFyU2fSAYoBQVVfeXFMTVZRd00wM0lEUVhHQzVQUF91WXIyenNBSlJDMFBGeUVyRFVqa0ZxeFJvMmZKRE9Hc0RKR1RROWxVX2JaT2lzcTUteUp0VDJzTUJLRHV6ZU84TXBsNkhHalNBYk1TSnhJMzVGcVk1ZHdHNmljSnoweVd2SURvRDhRZFRBQ2dIem5lcWd3?oc=5",
+      "title": "Un ataque ucraniano derriba parte del puente de Kerch e interrumpe el tráfico marítimo ruso",
+      "en": "Ukrainian attack brings down part of the Kerch bridge and interrupts Russian maritime traffic",
+      "outlet": "DW.com",
+      "published": "2026-11-21T10:56:58.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -303,43 +703,13 @@
       "trending": false
     },
     {
-      "from": "IT",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSFdKdENTQnd0MktvdXFPNlpqVnhFcFBpMU8yc19wTzEyVVNpZ3BlVUhjd0RqZUljU1ZmbW1UTm0tMXd6OHZwLTdUZFhaNkFFTXZnV2xBZkd4RnJ4YWZGck5PVG4wTC1tSkMxelI1M1V0R3VoQk9XdnNUVWZ1ZmZEekJuTDZjWjdqUVpWTlEwSkI?oc=5",
-      "title": "Guerra Ucraina ultime notizie. Ft: «Trump ha detto a europei e ucraini che vuole accordo di pace entro inizio gennaio",
-      "en": "Ukraine, Polish minister: “Two Russian missiles and a drone fell on our territory.” Zelensky: “Putin, weak in China, is attacking us massively”",
-      "outlet": "Il Sole 24 ORE",
-      "published": "2026-11-21T10:27:21.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNDZndXZ5X2s2X2JscVoyQmJaRnBlQUhEVjhsN0c4eGc2STg1OTFOMjRxeWxnczVRbWpjcVpSUDRIUWd2S1BOb1pmM1VFb0dDeUtWWTBibUhFQTl2emw1SHMwUG56S210VDVibnpGU2ZNRkI5RGpqV3NsazRRTkNDdDlSQzJWa3VQUnV2UWZ3aGFaLW5NQWtGZERQTlZwT1lmckdqTm1ZTTYxT2JYbE5GWVRLY0QzamdSSXk1ZWtFYTduZ0k1dTNPdzBGRWw?oc=5",
-      "title": "Operation \"Bärenfalle\": Wie Ukraine fast 200 Quadratkilometer zurückerobert",
-      "en": "Operation \"Bear Trap\": how Ukraine recaptured almost 200 square kilometres",
-      "outlet": "T-Online",
-      "published": "2026-11-21T10:21:41.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "SE",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa2l6X1dlWVFNN1dfcHlVMFJqS2hldDR1QU9CYXNBOUUzc3d5ai0zNmlMTjJMTUFsNmlOS0lkSlNxOW9zd0cxS0tOMDZKX21PWnJMZ3g4QzM1OF94VmpTQVJRM210eGN5WlBqSTlRaGJpR1plTjFLSHN5UXYyeThydTdvMDdvUmFzU3RkS0JzUGlqb0l0dmxidFlvSVlqSVN0aG5Z?oc=5",
-      "title": "Explosioner och bränder i Kiev",
-      "en": "Explosions and fires in Kyiv",
-      "outlet": "Göteborgs-Posten",
-      "published": "2026-11-21T10:09:30.000Z",
-      "outlets": 6,
-      "trending": true
-    },
-    {
-      "from": "RS",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52OV9qakhWUWYxU1lJUkZ3WHNZZzVmSUJBVXl1Sm1JUlRNOTg4bXAtZ1N4Yk92bzh2aVpkVjgwSXdrT2otTHUzTVJOcF9zM1RmRVZuVy04QUhGQUttc3hTRzVmZWVKTl9MMHBkaTJsOTR5ZU0?oc=5",
-      "title": "Uživo Kijev pod novim udarom; Raste broj mrtvih i povređenih; Zelenski zapretio Putinu FOTO/VIDEO",
-      "en": "LIVE Kyiv under new attack; death toll and injuries rising; Zelensky threatens Putin PHOTO/VIDEO",
-      "outlet": "B92",
-      "published": "2026-11-21T10:07:17.000Z",
-      "outlets": 4,
+      "from": "BG",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSmw3M3B1eEFxUWs5bHhOWHhGN3duR2ZldHZYeGNTOGlOOEI1VGR1THMtVGRTZUliVXVWQVZQY2dMLXpHclZkNHNqbnlmV2JUQkZrbGRyX0oxZmZDZUpXMjVKV3B1SF9nTWZnTmxuM1pod2hLakhkMFlKekMzV0k0MzBCcGV0TDZFRkNIRUNvT2ZwWFR1YVZaYnRaV2VwenVpRkpla1AyNEo?oc=5",
+      "title": "Нови руски удари в Украйна: Тръмп иска край на войната до януари",
+      "en": "New Russian strikes in Ukraine: Trump wants an end to the war by January",
+      "outlet": "БНТ Новини",
+      "published": "2026-11-21T10:04:00.000Z",
+      "outlets": 9,
       "trending": false
     },
     {
@@ -353,162 +723,12 @@
       "trending": false
     },
     {
-      "from": "SI",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMzNJM2pnc0dOSm1PUG1BckpuSDB0ei1CbHlFRzZUSHhzRlY4WWtiVHZQbmZadzhjd3RVdTZ6Y09EYTZjekh3ZjczQzlfV3VYR1hIOERPTXU4Sm4tUW0zWEVYNkVnYVJFYng5d181V25udFc3N05ObnkxMUE1UFVSMFRVa0I3aHdfeC1fVjBuNm5nckI3MGFQeVhLSzZVZE43dG1TUQ?oc=5",
-      "title": "Melania Trump namignila na premirje v Ukrajini še pred božičem",
-      "en": "Melania Trump hints at a ceasefire in Ukraine before Christmas",
-      "outlet": "24ur.com",
-      "published": "2026-11-21T09:55:59.000Z",
-      "outlets": 3,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE13UDRiSjFjcUExRnh3M2g2OHVITDBrcnhFOEpaZnZlbzFuVUNzT3Q0WDNmVW9ZUDNMRlIyM3VLVGYtREJaSFRr?oc=5",
-      "title": "Ключевой переговорщик от Украины оценил шансы завершения конфликта до конца года",
-      "en": "Key Ukrainian negotiator assessed the chances of ending the conflict by the end of the year",
-      "outlet": "URA.RU",
-      "published": "2026-11-21T09:54:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PT",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNVc1STN5QWVrRG9VUzl5SEpjdlpoejVTcmtfU0FEbm5aVWt0MWc2bm5DTzYwWFFxUXpwMUZxQl9YMHJldk0yaWgxVEZlb0w2M1M1dy1KeWtLZUY4V3N3R2Z1VG5QdnRtbDREV0RkaFI2TXVUN2dGeFFQQmNRbnBPRXVUdUpUMmFPR2praUlSNXktelBhRWdaYmZ6a3lDQzh0OV8tR3NFRjhhQjRidm53TDg3NXhicnpFUVV2ekxIdE45NUtmUDZJN3h0UTlienJwUFE?oc=5",
-      "title": "Ataque noturno russo volta a fazer vítimas mortais na Ucrânia",
-      "en": "Russian night attack again causes fatalities in Ukraine",
-      "outlet": "SIC Notícias",
-      "published": "2026-11-21T09:49:45.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CN",
-      "url": "https://news.google.com/rss/articles/CBMijwRBVV95cUxNSUd1bTd5bUJjckZsZXl5S2x5b2pkc1FBWjhkTHVybWVHS2JBeklYR2FoMkE1Ykl5UUtDS2ExS1dPcVExVTJlSzVpVlhKblBjYnFoRWpad0dtR0tBUUh3UkNBcXltSVpjQ0pIRV8yaTZZR0NCTElKeV9tc180YzJNREgzb2l4S2hWeTdoSmVsaVNVbG1Yb2MySldGUzJJR2RQVDA2RFV2TnlQaGFEN3Zld09jaTVWSXdQTDU1MnRDbExuNnhTRGpfOGhpbXZlZ2pWeVdOWG02blpMLVlNX2VKcHYwQ01kOWVFVFIwOU1hVGR1cEhrR3FsNHNjaHJjX09oOWJjTjgtSktPWXVQWVhpX1lIcEhCSGdDTF9WMl8wWUROQThKa29TclUza3FNSENDVmM3UjNSV18wV1pXdjF5TGFiY1NUVnRfUFl3ZEJuTUlfUnl5Ym01MG40a3MyWklPMjd1Wmc2TDZjZnRfQmd4VUNpeGJkWFFLNjhyRy1hejNvcmx1YnFoOGFuQWhwaWw2TWdINDNJbWs2WTdDZFBMbVI2V3EtM1VsUUdaRUpoWFhlaWd5NFJ4bjVtOFM3R3NSUkV0Z3BzWjdDbGlWeExtVzBCRno5NVpHYWkzVXFwMDhUaG5oTE1kRGtwdTRIUW56QVRzeDd5OFFnSy1oSEctNXhKTkJpb1ZJT2tUOWlpVQ?oc=5",
-      "title": "特朗普称与普京就乌克兰问题进行了良好会谈，但不愿讨论向乌提供安全保障问题",
-      "en": "Trump says he had a good talk with Putin on the Ukraine issue, but is unwilling to discuss providing security guarantees to Ukraine",
-      "outlet": "RFI",
-      "published": "2026-11-21T09:44:55.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUVNfYTA5MnhpWlFaZ2RzNU5DSngyNjJ6RU1HWVZsakJvZGZvVEpBa2lqS2Qxa3FYQVpGMG1Wb1plZmVIazljOHFZTEx2UnoydUh0bVBSSUhzOTk3ZENyRm1yVHljTHZxWVZzRkw3WWR5Q2pUdzBsQ0l4ZlRpbVJxblNZY19nVFpQclIweFdjeUtDWGpvNHl3ZDVRRjJadWlYd09iQVN6Mkx4QQ?oc=5",
-      "title": "Ukraine-Krieg im Liveticker: +++ 10:21 Ukrainer wehren nur vier von fünf russischen Drohnen ab +++",
-      "en": "Ukraine war live ticker: +++ 10:21 Ukrainians repel only four of five Russian drones +++",
-      "outlet": "n-tv.de",
-      "published": "2026-11-21T09:40:34.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
       "from": "NO",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbHRwUTNhUVR6R0txb1F5TlR2aUdDZHJ1bC1PSDdfMWNhZjhoWkpkd3VtWHRjOTM3SVQ4Q2RlWndVOEtvcUp4RUxKZWdoYm1QcVY4MnhTRnZGUXl3MndvNWhIYWZTcU5Rb0lDMmY4Y1RJRWh5YmNRNjIwbm8xMkk4NXNIUm9qUQ?oc=5",
       "title": "Zelenskyj: –⁠ For oss er han en drapsmann. Han dreper dag og natt.",
       "en": "Zelensky: – For us, he is a murderer. He kills day and night.",
       "outlet": "VG",
       "published": "2026-11-21T09:27:24.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "HU",
-      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPeFY3elZoUGR5WUZPMnFPaU83ckc2SU1ZZFBnVWtOWFBORU9zTzlFY1IwTTBuWE5ZdW1vR0N1WGdXVnN5cTJiUEhTUnhhSjRFUGdveHQzN2o3T1diQUZNVzhJNzhWWjFVQnM0b1BzUXg0MHpQb3E3djRBUTgtOG5hVlNvbnJaTjU2LTREdk1QT2FWMjFMYVJRWjg3dklKbkswb1FraHhZSXRpZktyTmxGU1BUVFRKVzVybmxDQk9QWWpwdEI4ZzA0UV8tR0QwYjZPVUIzcTJ3TzI3QnlEaTI5Y0U1RW1qSFBsRFlrbExvdzBSLURscXFMNmZkWkF0dUhIYkV3MkpR0gGLAkFVX3lxTFBILUU2UmcxcFVuNTk5Nk1qX3F0bnFjNjZ0S2ZHYjVWRDAzMFAyWXFRZjM3LWpsa3pFMmlIZF9ranlsLWNOcXU1S1BKdjlhcnZSdGJNZk9Jbkh6TDNXLXhCNk5OWWVqX3I2bzY0amJmWGFySTJkX2VtelZtN1lMTEJKbHhoZS03VVRJb0NPb2xaSkZoMVhHUVFZYTdBUlZodXF1U3B5MFBXRWowam1PX25HUm1fZHpfRUFqMkRWWnZmd2xTY1JhSHpMZlhDOWVVeGZ1bk5RRE5JTnVWVENtanhNUDNweldrZ1JnNVZRWUNIOERaOU5OOUZlVnhwT1FfRU5mMnNBdE9KVEp3QQ?oc=5",
-      "title": "Az utolsó szalmaszálba kapaszkodva csatlakozna Európa a tárgyalásokhoz, újabb támadások érték Ukrajnát - Háborús híreink szombaton",
-      "en": "Clutching at a straw, Europe would join negotiations, new attacks hit Ukraine - Wartime news on Saturday",
-      "outlet": "Portfolio.hu",
-      "published": "2026-11-21T09:27:00.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPalRsRWRERFZFMHBOcHhXTDBlcDVYWFhaVmpJTlJGYVEyc1ZQQXczdnFxSFhoVUotaHVuQ2Mya0xnM0Zvb3hGYUZoaVRidFp5Ukw5NVlpc05vQ3lhYUx1bzNka2xfZVlGbTNSTEZKYmR2RGFwNVdlLVdjTzRIN1VwTW1kV1d4WDFZSlJmdnZkU1htUnlrVjJNM0RRQnZNOGh1bC04bVUwSENVSjFQellNZEJ0R3N1SXlteEJhWGwwOExGTXpxTFZDbndB?oc=5",
-      "title": "Rampscenario dreigt voor Kyiv na Russische aanvallen op bruggen: ‘Ze willen de boel afsnijden’",
-      "en": "Disaster scenario looms for Kyiv after Russian attacks on bridges: 'They want to cut off the city'",
-      "outlet": "AD.nl",
-      "published": "2026-11-21T09:24:00.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YTE5fSWJPalRHNy1QRlplWDhSb001Z0xJaFRKTGUzRWI5cTZNTEV1YXg4VjJzdXp0MFJEejJSUDE4RTJIWkN2dUJNYm5JbnPSAUtBVV95cUxNelRCX0M2d3NWeTh6Mk5JeGs3MFlXbUJSSV80bWdYbFdMRkdEdERLdUwwVnJzRURtcmliOUliekd1a1AtUy1yNEt4LTA?oc=5",
-      "title": "ВС РФ нанесли удар по месту совещания высокопоставленных представителей ВСУ и ВПК",
-      "en": "Russian Armed Forces struck the meeting place of senior representatives of the Ukrainian Armed Forces and the military-industrial complex",
-      "outlet": "Интерфакс",
-      "published": "2026-11-21T09:19:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQjE1SjZXNGthT1Ffb2luNGdvdmJLTFdla2pLazJpNFlsT28zYVVRWGlIN3YzaGdXSTRycTBXQWoza25RSk0zNHczZHJOeDNJVmE1alQxVVVFNjhnazJJTl9XUUh5NlZuZmowdEF2U0V1bFo5VG4wZk54cnMwd0hwbVZfMVdZVzBVT0hQYVNELS10MU95ZThELWc5Tms2WUpMdDRLVmdjSFlHcUtqSm4wanFFb0FFRkdSZDFoS2MydXRxYjZC?oc=5",
-      "title": "Ukraine-Krieg aktuell: Trump spricht über Vieraugengespräch mit Putin – Selenskyj kritisiert USA",
-      "en": "Ukraine war live: Russia takes revenge for Crimea bridge – Trump: \"Friedrich, Putin wants peace\"",
-      "outlet": "Frankfurter Rundschau",
-      "published": "2026-11-21T09:06:40.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcU1vWURwTzNFVXM3ZzdmTnhvbF8wRWxId3FGa1pPLXQ0VU5ocGJYb2RDYTF3V1prS0lhX0VZUi04a3JveWI2RUhIYXkwQ25GZEJWTk1IcVNFQ2o4WEppVjQzbE15RldEV0diRjJCWWFuaEttMHlhb0pFZEl5bG02M2xrUjhGRUVPMXJlSGh3MllGWmlqOFBPZl9pN2dzakNnVHFQSG41U0NERlJMd01ENmxPdER6Zw?oc=5",
-      "title": "Oekraïne | Zeker 20 gewonden bij aanval op geboorteplaats Zelensky",
-      "en": "Ukraine | At least 20 injured in attack on Zelensky's birthplace",
-      "outlet": "NU",
-      "published": "2026-11-21T09:04:34.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "ES",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNmpxZG94cG9xaWtZTkJDeGYtN2FsWXQxa0ZtaDhxVjJTQVpDVWJmVmt2ekttdzJLLVpzUjQ4blp5VHZ4WVRSVlpkcUQ3QjJNQktuVXBZVGhZTjVPakhZUVNNVEppdF9fWHpfcGxmOEJYaWhtVHpURGhnQTVkbWdGOGZWekN2bFo3OW1YS3lNM2cxTUZBbE1STUt3V2l1amlFdncySlBPYTV4QUNjeVRzRzJjQ3F6ejl1Y2ZxUkZCZHhHN1FNZWJKUUVneXZ2WXV0dW9F?oc=5",
-      "title": "La reacción de Zelenski después de que Trump llamase \"amigo\" a Putin: \"Para nosotros es un asesino\"",
-      "en": "Zelensky's reaction after Trump called Putin \"friend\": \"For us he is a murderer\"",
-      "outlet": "20 Minutos",
-      "published": "2026-11-21T08:50:52.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "PL",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUW85T1BMVFpjeEVOUl83R2ZjcmNnSVlIWFc4d1FZZGIwUlFPTlZ6U3FYMk5SZERoSFRVSkNWSEJlVDk5cjN1ZjViSU4wejc1YnA2cGJoTXN2ZG9kaUZuZTNsRGtOazlaOTdKSXdnRVNCbzdVVzc4TjhVb0p3SkJnQk9IYm0yY2xRVi1QV3ZRRlB3aHdqOFZTRllvUGZ6ME1oRG0xTS1oaEJWTWJHS2VCTGRadEotTDZjQVJz?oc=5",
-      "title": "Z deklaracji Xi, Trumpa i Putina usunięto jeden punkt. Dotyczył Ukrainy",
-      "en": "One point was removed from the declaration by Xi, Trump and Putin. It concerned Ukraine",
-      "outlet": "Gazeta",
-      "published": "2026-11-21T08:41:29.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AE",
-      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxNengzNTNnTFNfTWQ4dGZQaW1QcjUwWjg0ZThHTFJGR3BjS1lYOUpFX3VvYXVCX3R1eFVXU2I5d2tfS2JNS1hzdXZLdm5NTlZYS192Si1ZUThtU2E5RV8zYjNlSTRlOEFPcHBzb1ZIc0dNUi1JWGJHVmh4MVJUNGsyc1FWTVZBSkctSGp2c3JaeVpsUmFkWFZOb0g0VjR0Q3dYZHA1WEw2NXBrOHp0cUhrWWlSWWdIVnlNSGxuOU9NV3JQUl9iOENONm4wT1RSNUwtakZYaGpfc21DTHZ3cUVuWWM4aE9Ba1BtR2xBQWRKdGU1ZTdYSzBGQTBjVXlFOW5qNFNpUEhNMlladUNHNnNPaUhBcWJwNGdEc2VLMHAzWWJyS2V6dk13LUtCT3I3QUx4d1ZJQ3UwUUUyRHM?oc=5",
-      "title": "من بولندا إلى كوبنهاغن.. تفاصيل محاولة اغتيال مغني الراب الأوكراني كييفستونر",
-      "en": "From Poland to Copenhagen... details of the assassination attempt on Ukrainian rapper Kyivstoner",
-      "outlet": "الجزيرة نت",
-      "published": "2026-11-21T08:34:10.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "GR",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUWRoM3RZVWZZcXZuWC0wTmtDdkVlOXhUUTdNTFdTVG9xRmVvckh0ZW5PVlBydlJDZ0VpU0pCRXZHTEwtS1ZBSGdDN2k3ZF9VWEF5X0pQbi1SRjZiSnJnU2U1djVqQS1yX1ZiZ1Q1TGxYNDV4OWNJdjRESmY2UER5Y3JrVDRVNGRmLTJxdmZKOThFbmZTVUVkZjI3b180dGQybTVLbGNLaGVHUjg0NC01bExYa1RIcURrTDdTX0ZLOGk?oc=5",
-      "title": "Ουκρανικό: Σκληρό πόκερ για τη μεταπολεμική αρχιτεκτονική ασφαλείας στην Ευρώπη",
-      "en": "Ukraine: Hard poker over post-war security architecture in Europe",
-      "outlet": "Kathimerini",
-      "published": "2026-11-21T08:26:51.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPX0hvamJMOFVGS3I4cl9hbDBtZnV0ZkJkRmxIOFJKTG10RkQ3bXZNRXl1bkIwWnQ1N3l0SDUyUEhsbDJITjZiSWgzRkdjQWRWRWU1Z1FxVFdGbGE3ZzVkeGpFLXNZN1Bxd2drZUtkUlBGVkN3Zk1ET2lxTTA1VnUyQno5LVk3YkxpWXVSM2s5UE9EeGk5b3c1MXoxMWFZcmhENjV0RDM1dDZaa1drazF5Z20zTGp4RThsWkt4ejg3UUx2cVc4SHBWdlVOcWwyeUpfbUd4WXpuaVhLbVRYNURvblhfcF9KblFLU2c?oc=5",
-      "title": "Eiropas līderi dosies uz Maskavu, ja tiks garantēta dalība Ukrainas sarunās, saka Makrona padomnieks",
-      "en": "European leaders will travel to Moscow if participation in Ukraine talks is guaranteed, says Macron's adviser",
-      "outlet": "Inbox.lv",
-      "published": "2026-11-21T08:25:05.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -523,143 +743,33 @@
       "trending": false
     },
     {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVnhrNXlrdGtYSmZ2OHQ1S01wRTB4STdpR3ZJYzdqVC1uWU5lOXlJNmV5YldpZExSZTl0anlUUjVhN0R0WF9Ia1AzMGN6M1EzVEFVajlZZEplT3drMlVTZGdNRVAxczNpSkhHSVBoaUU4NmJwUGxsVUY1MXBkQUhsZWZObmF4MllQVFB1NVU0ZjBvVlBKN055MVpBclRiYkd3SnkwWmJiSGo2X3drTzRtdTUybVFRVk5MV1J2SXpKVFTSAcYBQVVfeXFMUEYtN09tc2paeXhmZGhnTjNWSTJjMVI4UkR2ZEU3UUFfM0dTMERaaWN5NGFYejVmTkRKaE5ERHFMZkFsejZYMXJ0d2VQS2g5SzFHYnZHR0tyaGRTdGhuLThuWWl2aGJBUFNEUTBwR0VLNjZBWDRwT1VrTmVZVU5Ba1hCb2pNX1lOSFI4TTV4Y3BnVXg1VmlRSDVaSloyNkpiY1B3SWFjcmRDZkd2S20zSDZwd1ZWVFR4aXhfR3FFWi1OSTlOOFlR?oc=5",
-      "title": "В России высказались о возможности урегулирования украинского конфликта до Нового года",
-      "en": "Russia commented on the possibility of settling the Ukrainian conflict before New Year",
-      "outlet": "Lenta News",
-      "published": "2026-11-21T08:23:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SE",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRldQRVBHTmVWbExUNUNUNjl5czRWZF9VXy0wcW5aLTZsZXJfaXFHVjI5MktFcmR3MFNFLU52X2NTUjUwWjhlTDViemNzVGNkZ2ZMSE4wUHExczctUHNLQnp2eWh2dUFFTjIzM01RMVZhckIzN2ZrbkFMd2RDZHY0NkZTR2RVTFNUZDczVmhnTklNekpDYmx2ZnZDSQ?oc=5",
-      "title": "Direkt – Kriget i Ukraina – Drönarlarm i Finland och Estland – Natoflyg i luften",
-      "en": "Live – War in Ukraine – Drone alarm in Finland and Estonia – NATO aircraft in the air",
-      "outlet": "Dagens Nyheter",
-      "published": "2026-11-21T08:18:52.000Z",
-      "outlets": 1,
-      "trending": false
-    },
-    {
-      "from": "LB",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lb0ZJZ2ljTkpab1JkT0RueHhYME1ZU3lpUmYzaDV4MVZoYS1ya3pfanZhYTktc0hSUG5NRU9rcGJ3VEpJT2RwOGptd0xrNzdIUHBOR3pPaGFHcktnNy1OTzhNZG1IdlAycjhNcWNraWNUUWV3ZGYtREVDSQ?oc=5",
-      "title": "روسيا: استهداف محطتي طاقة وسفينة شحن في أوكرانيا خلال الليل",
-      "en": "Russia: energy stations and a cargo ship in Ukraine targeted overnight",
-      "outlet": "Reuters",
-      "published": "2026-11-21T08:03:43.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcTJ0bkozSnRtNUxfRXlqYUxndXVfUS1GYkt3TFZ3S0g2U04zejRVLUlMNzFOVDhoX2pkUXRzWnU3bHhwV241OGRnSG5ZRDRyQUxEeC1ZOHJ3QjFLTUNtR2plRXlZaHJDZmpNdWJJT09xanJkWEJ6YXVsVFI4cWhkc1ZEZHFPeUxOSkRNZnBBZlRYUUduMlIwb3NaRUFhVkJuVjFTSE5UWnFZRVFZWW5uMThWdmxaanRHczdINHZEb1Z6M1VsMFY3ZFFybEg4QQ?oc=5",
-      "title": "Dėl „Starshield“ apribojimų Ukrainoje E. Muskui gresia rimti nemalonumai",
-      "en": "Due to restrictions on \"Starshield\" in Ukraine, Elon Musk faces serious trouble",
-      "outlet": "Lrytas",
-      "published": "2026-11-21T07:59:31.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVl9WVHJrbE9DNmdNemFlOXNuSXZ3WFFBeUZQdzAxMUZSVkhqTFN6M2szODFGUjRxX0tsRTdINFVMYlNHR2JlSTdKa2pjdGVVYlM3dm1TaVlGc2tiNWJFM1pfb281MVgyMjNRUDNyQnM1d3Jsb2ZqbTROQVpqeDFKb3QxQWRCSGxkV2l5WXpFaWlpQW5EMHRiRUZqTU9WUmVk?oc=5",
-      "title": "Mỹ cảnh báo xét lại ngân sách cho SpaceX vì vấn đề Starlink tại Ukraine",
-      "en": "US warns it will reconsider the budget for SpaceX over Starlink issues in Ukraine",
-      "outlet": "Báo VietNamNet",
-      "published": "2026-11-21T07:42:00.000Z",
-      "outlets": 5,
-      "trending": true
-    },
-    {
-      "from": "FR",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTDFpZGRDdlVXcTFUczZYZUFJWmVPUzRHR1FMcXYxeGtDeEtOYU5HdG1EOE8xcXZfZDkyaFZlUHFzQVVIWmY0SVdEeEdfYkVfVjVldGU3eUszcTZ1VG5kUk1ManVUWW5INklfTHpkek13WUpWWWN0Q09iY0l4U3dXRUFsei01X1RUZUU1NXExR1RrMmx0QmQ2NVVnNkd2MXZTbzdtakFNRFA4Z2tZUnlvMlp1cThlZw?oc=5",
-      "title": "Zelensky dit de Poutine qu'il est un \"tueur\" quand Trump le considère comme son \"ami\"",
-      "en": "Zelensky calls Putin a \"killer\" while Trump considers him his \"friend\"",
-      "outlet": "Euronews.com",
-      "published": "2026-11-21T07:34:05.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "TR",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNV9nTEkwdEx4NDhJdGh0SDA2OXltRG02TG9wNTFWR1dMNUtVTE5XSGNURzdkRkxnRFNPRGJxVWI4SS1tYnB2VkpBcXZjYlRSNk90OE53bTNmYkRCbEpUWklEWVV0WW1EbklickhJQjgzYU1IdWljcnZvbDZ0ZUlwU3M3b3dwVEg1RzBMZWpsZlpPdGFoX05qaTRXWjk2MTVBVUd4ZVFyT3pyaWc?oc=5",
-      "title": "Trump ‘Putin barış istiyor dedi’ ama... Rusya’dan Kiev’e ağır misilleme",
-      "en": "Trump said 'Putin wants peace' but... Heavy retaliation from Russia against Kyiv",
-      "outlet": "Hürriyet",
-      "published": "2026-11-21T07:17:28.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CH",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQ05yOHI5eEhwUlM0cEs0VHhxTjZaS1h4dE81WXNnZFFPeGFTTER2REdLTUFCSC15djNsRVFHWEpyNUsyN2FPaTB0SU1XZmFIVjcwcEplUHBSU3oxeGRTTVZoeE9reHBMWW5yd0ZIaU02cVBERDQxQ2g1WlpqN2w1R2VrMmlnVDVLcUZjcTdqQ2RYb0VrdGM4bW5paVVScm95VHJFZ195aEZBVXEydGlocmF3?oc=5",
-      "title": "Wer ist Michail Kokorich?: Er lebt in der Schweiz und liefert Raketen an Kiew",
-      "en": "Who is Mikhail Kokorich?: He lives in Switzerland and supplies rockets to Kyiv",
-      "outlet": "20 Minuten",
-      "published": "2026-11-21T07:05:16.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPREZZSmdycU9BR3pRUENXdUowc3c2NlRRZm1RYTdycmRkbXJIdlFXVEJJRElmc3dZY2thMEE4X1FMRS1VUV9oUlJUTkFuY3B4Y0hsVERFME5pVGp6Z2p5djJwaG9jSXItOEVSZU5icVVDdDNEWF8xQ0RySWRmOWVOdkF0Vnc0bkM3S1d3c3o0YUsyQzNjc240dHMtVFdaMTJBb1RlOFB3SmlFeFhaS1hLei01VGMydw?oc=5",
-      "title": "Тръмп иска да постигне \"мирно споразумение\" за Украйна до края на годината",
-      "en": "Trump wants to reach a \"peace agreement\" for Ukraine by the end of the year",
-      "outlet": "Mediapool.bg",
-      "published": "2026-11-21T07:02:31.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTGp3OHI4U2FDWWw4dFhQeF9GNFZEakppZ3lXaW5INXpBR3dTcHV0Z0IwcFBMZGtDVnVVREtyUjVWMmdIaUV6alBiU2VydmFaSVFXODFib1NmbjRhMTg1MU5EYWc2cXFDdkJJY2hNLTRaSzdQZjA0SjFxMXdENnhPb0QzakNub0NkTGhXa3FKUmhDS3VSN1BBMzlwWmQxZlRrX1lWSW50U3ZlV2YtaWljem41dXlSSWtDZ3FnQXIxV2ptaDhpTXJVdFhOcUFObV9qQ0k0RW1pMlhvRnAtTk5RYTlncw?oc=5",
-      "title": "Prancūzijos prezidentas Emmanuelis Macronas pasmerkė Rusijos agresiją Ukrainoje ir Europoje",
-      "en": "French President Emmanuel Macron condemned Russia's aggression in Ukraine and Europe",
-      "outlet": "15min.lt",
-      "published": "2026-11-21T06:50:03.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "DE",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeXF3Y0JxMzNwZzFZTEFVUk1laWh5blBZeW52X2JJNldYS2Vka25LbkxSWDNmNjZuVXppM0ZhQmFzRWptZFZEd0pfV1E2ZVRlMGRvWlFaT1lqWFF5amVlWWpqYmdOeUgwSUVfUTVZRG9sUFpNV0N3cExUbmpPakhZdGZnRkRuOEpnaHBMbUtzV2pqLXF4WmhfVzFqN294WlF5RmVnWTlRRXIzYWVDcVlzNmFFX3laREh6bDk1eW5TdDJHeFJfOVpCcmEtaTcxeC1VVXFGSk94b2xMb19MZkpUXw?oc=5",
-      "title": "Kritik an Ukraine-Unterstützung: Die koordinierte Kampagne der USA gegen Kiew",
-      "en": "Criticism of Ukraine support: the coordinated US campaign against Kyiv",
-      "outlet": "WELT",
-      "published": "2026-11-21T06:43:51.000Z",
+      "from": "VE",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdWpVSExBLV8wZl8yaWlJeWZBUjBxNmczQmo3aEVWTjR4ZkRhSFVJV3R2SzQ2Rno3ZkZYNWJ1UXRNUlZzRExLWjBTMzl3S1N3UkJFbUtHYVdkZ25HRE13ZXJ0RHJ5alB4RWxDOTRtSG9hdmRaeHJqWHlMZzJxOTlnZjgyV3gtUThvZzhDOGdqSHpRMGl5NEpocTE5MWZodlMwOWfSAaIBQVVfeXFMTjBLVHA3RGFPblZ2T2NydnhTZm83UGVLcEd0ZnJWOTZxeVJZMjd2WmxnWlM0aVc0UmNnMmM5Sjhvb1VpUXh3Z3VuX19JMV93Q1FMR3dNYTVnNGtLUlBhLWgwRHpsUUhUY05rSnpTYk5BX0FUYi1pdEg2MmpDSDQ0MmYxNDZ6OTc3UDk0Q0R6dkM1TkVZUkpYS3FyRmxoQm9KaFRB?oc=5",
+      "title": "La UE acuerda quién la representará en futuras negociaciones de paz entre Ucrania y Rusia",
+      "en": "EU agrees who will represent it in future peace negotiations between Ukraine and Russia",
+      "outlet": "DW.com",
+      "published": "2026-11-21T07:31:36.000Z",
       "outlets": 5,
       "trending": false
     },
     {
       "from": "CZ",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeE91TC1xWG5oSEJlSHpmVy1xNkcxaUFxTnBBZklNQXY1LUpHcjFoZnBXZ0ZDVVZDakE3SlZMbmFzQU5sSEJhLVoxcGhna3FMWVBRR3lId2ZSOE1CcFB1eGdaR0dvVnlWUmwxdW81RDMwOXZCR09SeVlzRlpDdDFLcmZROWo0NzF5QlBZR2l0UnpaQXIwb19UTlAxVVhzZw?oc=5",
-      "title": "Ruské rakety a drony zasáhly Kryvyj Rih, zabily sedmileté dítě a mladou záchranářku",
-      "en": "Russian missiles and drones hit Kryvyi Rih, killing a seven-year-old child and a young rescue worker",
-      "outlet": "Novinky",
-      "published": "2026-11-21T06:34:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSXVwUkljaWtpelRBWU1YMGZ6bHJKSmNVMEoxTkFZeWd6WlVTWWVwZHRUY3RzQ1JqSHdvUFZ0MGlQcXVMY0FBUXdNTWU4WTVBOHQzOTBiNHo1NjFqVmpXUElMSVJ0U05UeDFQTnYzaEhsNkhGV2taRmRlQU1saHRhamJrZVlNZ3ZYZWF0Wm83bnV5OGRHUkdyeldFVTI1ZEdNbnpEUkZtVzdzaWFpTTZlTU0zaTJ4LVMxTG8tRzJ6dHd0NG04bVRrZ0RqZw?oc=5",
+      "title": "ONLINE: Ruské rakety a drony zasáhly Kryvyj Rih, zemřeli dva lidé. Poničených je 25 panelových domů",
+      "en": "ONLINE: Russian missiles and drones hit Kryvyi Rih, two people died. 25 panel houses are damaged",
+      "outlet": "iROZHLAS",
+      "published": "2026-11-21T06:58:00.000Z",
       "outlets": 5,
       "trending": false
     },
     {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNclVMcm9xTDJwdkxKX3MzcFlqWGN2R1ZJSDkyWVVJczlOMld2WmtoQnBuVXhrLXlTNkt3NGRZbVpMdFo4ZVBaOE1BUHR3d1ozTUpDNjQ2Qks4bFBTRjJZWlNSSWhDTE1TNDFFYnZhVlRvb202WlRxanMwT2t0dC1hbGNINEc5WE1pclJaaE04VFhOWlJRQ1c0R0VxM05iVGFMRGRSdVN4NDB1U21zTThVbS16SGxOSnpYblhwR2pKZHpUaXd1RkhmclhrSUFhS3RrUG1hNjhraUZRckVkaHJyQg?oc=5",
-      "title": "След Кримския мост ВСУ унищожават и други мостове, по които Русия снабдява полуострова и войските си",
-      "en": "After the Crimean Bridge, the AFU are destroying other bridges through which Russia supplies the peninsula and its troops",
-      "outlet": "Mediapool.bg",
-      "published": "2026-11-21T06:25:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "KR",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91Ymo0SEpnSzI4cDJrTnNEb3lmN1IwQ1FzYWppYld0SXhWWlVmY1VlNnFEeDRNTkRMbXVCOVpGNS1wTHRhRDNnRGxVVTdRM3U0UHBsbG56eDNyQdIBX0FVX3lxTE5rMXhzNFNHUUZxRzBTUHB2VFBhMk0zVjVWeWoxaFd6VkkwR1FYZ3cwY2RHMG1XSk0zZVVROUgzWkFGWHlhS0dUMlRSUlRnVFpQZ3RqRm13N1pnNFV3QVlr?oc=5",
-      "title": "“트럼프, 내년 1월 전 러·우 종전 협상 타결 희망”",
-      "en": "\"Trump hopes to conclude Russia-Ukraine war negotiations by January next year\"",
-      "outlet": "경향신문",
-      "published": "2026-11-21T06:21:00.000Z",
-      "outlets": 5,
+      "from": "LV",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNlgyT3E1OTJTQk4xVzlfTHd3SWd2dER3UVdOenpMZ3c3U080c1ktYUgyUkpGYXJaTUN1bjZ1NDVrVE5qN1hwRW1ZTlpNS2pwbzV6elh1VER5d3NWYW1aMlVlN0RHbm9xb3JuamlhQUlSRWgtSkNBMUMwclBLNFYxckctamdNTkJZc3JwalM3NmQtQzBUTjF1dW5IM2EtZUg4Q0RYUWVJOEFlUThYeUNUWkN5UkhjWW5XdVpxNEVscFNUb1R4S1E?oc=5",
+      "title": "Kamēr diplomāti mēģina vienoties, Latvija palīdz Ukrainai izturēt ziemu / Raksts",
+      "en": "While diplomats try to reach agreement, Latvia helps Ukraine endure the winter / Article",
+      "outlet": "LSM",
+      "published": "2026-11-21T06:02:48.000Z",
+      "outlets": 2,
       "trending": false
     },
     {
@@ -683,182 +793,22 @@
       "trending": false
     },
     {
-      "from": "RU",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZk9rWGMtYTNMd25CYWhYcGdZaGp5TkF1NXFZVU5UQzJjdEdQcldwcElmYm5WQVV4QlpVdF9RTGVvbWg1QU1aUldnLTVDMTFON3FFSWZWZUJjb1NwVmN2ZTFRSlVMMWRvczN2ODl3REJnSHNTMHlRUnJfQkNvOWFNam1IbFNocWFfNkM3dlhDNzlxQzBZNXhPOV80MWp3TlcwSUlEM3Rn0gGqAUFVX3lxTE5BWHhhYnJoNGwwekpkdEFOTXJIdFdMSHVqNWJVa0ExdlYwbmg2emVRMnZmYUp6VnpURjJoNkEweEh5RlNLd0tiN1VLRFUtb18xUTAtMkVxb3R3cjRxTVdaSW9XSnV1NjJzU19mUk5FYUVoY3l2cnFQNldvUHN6S21UY0E5Z0Z6NEZfVW5ydHpiREVmWkZla2I1UGo5TVBGQ19tdUlaR2JBcndR?oc=5",
-      "title": "Масштабная атака на 12 регионов: Киев бросил в атаку сотни БПЛА",
-      "en": "Massive attack on 12 regions: Kyiv launched hundreds of drones at attack",
-      "outlet": "EADaily",
-      "published": "2026-11-21T05:37:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CZ",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcmpkRUlmQzFaaE4xRDNsRDEteTRfdG5DbjBoWmRCdmRITS1tVENVTVRzb1VtT3M5bXRRVUFJSG45cC1xUHdEaGZodW1EZVg1Rk9pcDJoWXFqZkxXelI0OF9fUWVRbGNSSzhhZThkUEQxQ0JVcHozdFMyYzB1dUtDUkdFUkM1ZTdsZWRTNlRCSHdtb25XY0plam5NNnJIN242YkoxN1pR?oc=5",
-      "title": "Vlastní satelity místo závislosti na USA? Ukrajina řeší klíčovou schopnost",
-      "en": "Own satellites instead of dependence on the USA? Ukraine is addressing a key capability",
-      "outlet": "ARMYWEB.cz",
-      "published": "2026-11-21T05:25:35.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "AR",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQXh0UGFvaFNGUGFua2E1T18zNXNrRVp4a1pyVS1LbVFiOFRNSkx1aEVqS2FDS0M4WDhob01WMkMwQy1PQUx4SnRjaGpvbTNyQzlWRTZuVXlHOEpZUGNSQmJKR2h0NVdFa1Q1QTJ5XzJCZG9CYU1rWVJ6ZnVrT1VtLW45VXZxcTc5akNuYzYyeGh1OWc1TTM1ZnNwd0xSV0RTSXU4MUo2bUFBTDc5aTU3dkVvZVM5a3FCd0FfRkYwTdIBvwFBVV95cUxPMlUwQ1k2dEVyMmM4clpqVjRQN0VEdWV0VFJqNktpV3lzdUhaMUJkOFc3cjJHd0txcGpkbjU1cnNJd1E5b3J3a0syMzZjalZUVEJjdmZmY2FNRzQtRlVlNVhhb1RNODlvRlRjcVpTbG01R2VTdy1iVjE1VkRHRW1sZi0wSmRETDk5VlY1Vkl6T2MtcjJSTW95ei1UdnNBRnl2WlRBTFE0RkFweW9qZ0Z3SGZ1S1RiUjRoRC1ITWlzZw?oc=5",
-      "title": "Rusia lanza uno de los \"mayores ataques\" contra Ucrania desde que comenzó la guerra en 2022",
-      "en": "Russia launches one of the \"largest attacks\" on Ukraine since the war began in 2022",
-      "outlet": "DW.com",
-      "published": "2026-11-21T05:06:17.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CO",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQXh0UGFvaFNGUGFua2E1T18zNXNrRVp4a1pyVS1LbVFiOFRNSkx1aEVqS2FDS0M4WDhob01WMkMwQy1PQUx4SnRjaGpvbTNyQzlWRTZuVXlHOEpZUGNSQmJKR2h0NVdFa1Q1QTJ5XzJCZG9CYU1rWVJ6ZnVrT1VtLW45VXZxcTc5akNuYzYyeGh1OWc1TTM1ZnNwd0xSV0RTSXU4MUo2bUFBTDc5aTU3dkVvZVM5a3FCd0FfRkYwTdIBvwFBVV95cUxPMlUwQ1k2dEVyMmM4clpqVjRQN0VEdWV0VFJqNktpV3lzdUhaMUJkOFc3cjJHd0txcGpkbjU1cnNJd1E5b3J3a0syMzZjalZUVEJjdmZmY2FNRzQtRlVlNVhhb1RNODlvRlRjcVpTbG01R2VTdy1iVjE1VkRHRW1sZi0wSmRETDk5VlY1Vkl6T2MtcjJSTW95ei1UdnNBRnl2WlRBTFE0RkFweW9qZ0Z3SGZ1S1RiUjRoRC1ITWlzZw?oc=5",
-      "title": "Rusia lanza uno de los \"mayores ataques\" contra Ucrania desde que comenzó la guerra en 2022",
-      "en": "Russia launches one of the \"largest attacks\" on Ukraine since the war began in 2022",
-      "outlet": "DW.com",
-      "published": "2026-11-21T05:06:17.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CL",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQXh0UGFvaFNGUGFua2E1T18zNXNrRVp4a1pyVS1LbVFiOFRNSkx1aEVqS2FDS0M4WDhob01WMkMwQy1PQUx4SnRjaGpvbTNyQzlWRTZuVXlHOEpZUGNSQmJKR2h0NVdFa1Q1QTJ5XzJCZG9CYU1rWVJ6ZnVrT1VtLW45VXZxcTc5akNuYzYyeGh1OWc1TTM1ZnNwd0xSV0RTSXU4MUo2bUFBTDc5aTU3dkVvZVM5a3FCd0FfRkYwTdIBvwFBVV95cUxPMlUwQ1k2dEVyMmM4clpqVjRQN0VEdWV0VFJqNktpV3lzdUhaMUJkOFc3cjJHd0txcGpkbjU1cnNJd1E5b3J3a0syMzZjalZUVEJjdmZmY2FNRzQtRlVlNVhhb1RNODlvRlRjcVpTbG01R2VTdy1iVjE1VkRHRW1sZi0wSmRETDk5VlY1Vkl6T2MtcjJSTW95ei1UdnNBRnl2WlRBTFE0RkFweW9qZ0Z3SGZ1S1RiUjRoRC1ITWlzZw?oc=5",
-      "title": "Rusia lanza uno de los \"mayores ataques\" contra Ucrania desde que comenzó la guerra en 2022",
-      "en": "Russia launches one of the \"largest attacks\" on Ukraine since the war began in 2022",
-      "outlet": "DW.com",
-      "published": "2026-11-21T05:06:17.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "PK",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xYl8yM1IzNEgxZ1JNRjVSb0VnZ1JaYVhIRU54VWlsRlpaNFo3MlItWWR2QmhUVldESGg4N0F4MDBsbHpwWno1QTlsWUROZVgxaTlOcTQtLWxqQ0g5d1RGSDNhRjc2OFdyYVZZTm44T2dPd3JvekQ1ZXhCTEVBeUU?oc=5",
-      "title": "‘So what if there’s a hole? It hasn’t collapsed’: Kyiv residents unbothered by Russian attacks on city’s bridges",
-      "en": "‘So what if there’s a hole? It hasn’t collapsed’: Kyiv residents unbothered by Russian attacks on city’s bridges",
-      "outlet": "The Guardian",
-      "published": "2026-11-21T05:06:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "RO",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPX0ZidFA4U1d4dUxOWUtkOUYtTWl4WTFSMU5FMVhmbzMxMFBVdzd5ZG1icjNwcTdZRjNPbGJ0OE9DaWJNUWtXZ2tkSzVsREV6a2U4NTVxd1c5aFZud1hNbkN6S0FtaXltdjNTNTZQWGloeHBRc29acklDb1RLYkxKeGxiT2FQTDhELUMyOTdKbXplay1Gd0t1OGpESlRzaDdNVFJaNk1iNS1fZ3BnRWVTLVhXam1DQW1sYzJGV0pxTnlPUU9lanfSAdABQVVfeXFMTTkydlJXZEI2MmJWNHhuS0RTTkViT1ZPOWZTdnhRVTY5dnp3dnVudDdBVi1QdlVJaFhQVm5pd0EtZEJpeUU3RVI5R0JtbTlreV9VVGhQUEFqQmhfN1ZvRVBjVmZJVngyX3c3TnhXb2FpN0pJZnZjbF9YRVh0NkdrSm00bk5yM2Jnd0taRFJRM3V2Rk9BUGRoWmtfZEFvRmJUOEVLOXdHWllNcFNxdnNCdTlhb3gwa0wyak40OWNYUlgyUlppQTZmRFFMc1BWV2w2Rg?oc=5",
-      "title": "Trump insistă asupra unui acord de pace cu Ucraina până în ianuarie (Financial Times)",
-      "en": "Trump insists on a peace agreement with Ukraine by January (Financial Times)",
-      "outlet": "Digi24",
-      "published": "2026-11-21T05:00:25.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSTlIdzNTRll0cFIxYUxrX1NDWnVFUFhjRk9nX3BKUXI3MnZfQTlsVzhCSmg5YmpaOFdjRzBZaTVVZ3BPcF9RY3l5aDUtYmxEOGtCWXJtMlJYcmJLNzBIcTZteG9STFRSOE5vd1hHcWdTcGk1UHNLajBuTHRoUUtEeTFhQVJzZm84ZzN6Qw?oc=5",
-      "title": "Nợ của Ukraina với EU và IMF vượt 101 tỉ USD",
-      "en": "Ukraine's debt to the EU and IMF exceeds 101 billion USD",
-      "outlet": "Laodong.vn",
-      "published": "2026-11-21T04:37:40.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SK",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaHVEZjI1NUdTcmlGc3ZpQU43Ulc2OFVfMDJ2Wng2c1Y1RFlaYzFDMmkyNjJPc1ljd0FHb0N1dzJSNkJXTUhHUFg5b0s2bTZ1eEN0cWpFd1hpeFVTT1hwLURGUnZNOVZUbl8tSFlDa2hCYW9UV3Y3MWMya1c5YWNFNFpmOVd1aXpsTjJtQjY3d09tc3dYRkdHbHpjbUI0NWFGN1NZMFdVTkNqT2RxLVBoSXZQbHhIVlY1OGtUU3dEa2VzOVNXZml5MGd6ZnlMbzJLNjNpWHVrUQ?oc=5",
-      "title": "Putin stopol rokovania o čiastočnom prímerí. Politológ z Moskvy vysvetlil, čo to znamená (rozhovor)",
-      "en": "Putin halts talks on a partial ceasefire. Moscow political scientist explains what it means (interview)",
-      "outlet": "TA3",
-      "published": "2026-11-21T04:00:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNaENjaDhnN1V1dlVtTm5kdm1hN1pnZS1jRmlHdW8zR0t3M1BXeVpqQ19nNzJQSnB1T1FSS0lNcDN4TnNIT2h4a21Ud0xnblljRzZTRmxCYXdqM2x2NlgwUURObnpZSjc2a2p5NzdyazFsSDB6WTQ3dlkwUUZZOTdmcDZzSG5vMGtwSXU2ejY1LTZYRFZiU1VYMmVNMVBVTGIzRjdxTU1BenNVLUFfUUFyVXE1bDd0UHNxeGdKRHFvSTA1WHhhNDV0UGd0TlI3SE94eVE?oc=5",
-      "title": "Karas Ukrainoje. FT: Baltieji rūmai nori, kad taikos susitarimas būtų pasiektas iki sausio",
-      "en": "War in Ukraine. FT: White House wants peace agreement reached by January",
-      "outlet": "LRT",
-      "published": "2026-11-21T03:59:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "US",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQV3ZsTlVPVEN2STFrWVYtZFA1eWpCd3BxdHhwU1U5Zm5JeFdTVXJmUXYyamFEZklBdGZxVE1rN3VtSDZLWDhzNGVnT294RkxVbGEwc1lVc1ViZ3Q3QVJYMG53bVNaeVNSbEVscnh1di1vNDBDQ0h1TkpGek00Y1BjeUJ2YVktZkYxcDdyVGZyalhkUkNob0FOejNCM0laNy04Mm1BUmtjR2dZa1dkdnBjRVEyZXRmdWNYODU2bnNkUnZNNndCb3N1NGpSNTEwRHR1VmN4dWs0ZDRhTDZvM3Bwak85Zw?oc=5",
-      "title": "Ukraine war briefing: European leaders react with anger and alarm after Russian missiles crash in Poland",
-      "en": "Ukraine war briefing: European leaders react with anger and alarm after Russian missiles crash in Poland",
-      "outlet": "The Guardian",
-      "published": "2026-11-21T02:41:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "VN",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdFF0blNFdXo0c3U1b2dTOEVzQ0lWc1VkR1lLUDJ5YkxTX2dxSW1hNWhoOVkzTVowbmpOREVhMnVwSy1WLXZzQkZFbkZlYTdXUHVtRElrM29IY1NuMTZkQzdrRlFKc194Q0V1V3o3UkFDZEE0WGtPdE1yNXcwQ1VnU2E0NmdGajhjY2t3ZUxwUDdSQXR4X0t6UW9HTnNtUkViZmRRcVRnaVlpeVVNOFpFa0FBZlRiZw?oc=5",
-      "title": "Hãng vũ khí liên quan vụ đánh cầu Crimea nhận hậu thuẫn khổng lồ từ châu Âu",
-      "en": "Weapons company linked to Crimean bridge attack receives huge support from Europe",
-      "outlet": "Laodong.vn",
-      "published": "2026-11-21T02:06:48.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "JP",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5RS0t0LXlxREZoWXdEdDIxSmItWWx3bUZWZmd6NTlGUVZPLTdURUdqZTdGeGFIRXVhbXRLTWYxQ3ZBbHlpTTY4aUloRzdweDdrUTdTT3FjYzFoc1htakNIOS1n?oc=5",
-      "title": "ポーランドにロシアの巡航ミサイルなど落下、トゥスク首相「意図的」と批判…近くでウクライナ支援「有志連合」が軍事演習中",
-      "en": "Russian cruise missiles and others fall in Poland; PM Tusk criticizes as 'intentional'... 'Coalition of the Willing' supporting Ukraine conducting military exercises nearby",
-      "outlet": "読売新聞",
-      "published": "2026-11-21T01:50:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CO",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMnpWbGtIbFE4MjllZWpyNjktdXBsRnhXNTJNc2FuWFkzUml2V0thV1hibkJIZF90T1l0SG8xT19iZkNpMlhJZ3JsWHg1dDhocmxxS1Bid1Y4LVdSZzRCd2FWTllTRlFuaWFvY3lncnY0N185RHhEalFOVTNnN2thZ0dJblQ5UjFyU2fSAYoBQVVfeXFMTVZRd00wM0lEUVhHQzVQUF91WXIyenNBSlJDMFBGeUVyRFVqa0ZxeFJvMmZKRE9Hc0RKR1RROWxVX2JaT2lzcTUteUp0VDJzTUJLRHV6ZU84TXBsNkhHalNBYk1TSnhJMzVGcVk1ZHdHNmljSnoweVd2SURvRDhRZFRBQ2dIem5lcWd3?oc=5",
-      "title": "Un ataque ucraniano derriba parte del puente de Kerch e interrumpe el tráfico marítimo ruso",
-      "en": "Ukrainian attack brings down part of the Kerch bridge and interrupts Russian maritime traffic",
-      "outlet": "DW.com",
-      "published": "2026-11-21T01:42:39.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CA",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQUGhaX2lNaUJjZTdCZUd5Z2xQSFVLYU9UMEdWS3ZBUWhVcDhWRy1LRnlYYkZ4ZHh3UFJNT1VBVE1hc1FQSFlLdUhXcUlQV0lJVDNISmhjb2h6WHlPRFZ3Q1V2dUlTQ1RhOUw4dTVuSmlIV0ZIcTNnWFRkTmEyRlVlN0ExVURuU0JxOXNHVVFRZFZnSk1TdXdicVoxeEdhZ0E2akdHdU5wZ3R5djVfYnZ4MUV5aDZwMkF0akduZHN0NmgwVDBjN3Z2ZGxtTE1NSE1SY3hNRWxyUWp3TDBFOTNibFc5bWxXeFdJM2NR?oc=5",
-      "title": "Incoming Democratic chairman warns US lawmakers could halt SpaceX funding following Starshield slowdown in Ukraine, CNN reports",
-      "en": "Incoming Democratic chairman warns US lawmakers could halt SpaceX funding following Starshield slowdown in Ukraine, CNN reports",
-      "outlet": "The Kyiv Independent",
-      "published": "2026-11-20T23:54:11.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "SK",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUnktdGFWRDY5LTk4cjdvdy1iamFQcnZIbGdLZ3VZRk41Y3E2VUYwZ0FQLXhqNl9RRmZPRFJJOGtKZDdmNEtUSk43WFVSbUdFRnhLbTB5T09GQUFxNVpad1FRRjc4V2hiNDJuN1pQNWlmc1lvdU1FR25mS1F1cjQ1X2tObVFhLUt6b1V4UGxCR1JWNHNYQXB5UjhzSHpFdw?oc=5",
-      "title": "Ukrajina Rusko Online: Moskva nesúhlasí s účasťou Kallasovej na najbližších rokovaniach o vojne na Ukrajine",
-      "en": "Ukraine Russia Online: Moscow does not agree to Kallas taking part in the next negotiations on the war in Ukraine",
-      "outlet": "SME.sk",
-      "published": "2026-11-20T22:59:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQT2s2d3BLdFMtclF4bVpzQlRSR0VpajBTMEU4Vm1jc2c3V1lLMFN2Wk01azBDQTdObmE5Z29NRlJ4RkxaR0JmalZhU0pmV19FOUpNbWR4N290TDVCTUxDX0FSYWl4LWZZN3kwcmd4V0FVTGpuSFhsZXJGczlEVjVVVGt4UDFoOVROaW1tNS1QQ09TVG9IQU9Mb0hwbEJxMWJuNC15Mzl3RGdrUDJ0VGFlWmVXUGM?oc=5",
-      "title": "\"Минете на наша страна\": Путин призова украинците да дезертират в Русия",
-      "en": "\"Welcome to our country\": Putin called on Ukrainians to desert to Russia",
-      "outlet": "Dnevnik.bg",
-      "published": "2026-11-20T21:02:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
       "from": "LV",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSC11U0FnT1UtV1dPTEpsMEQ5RmUydGMwWE1tSkhMUEQ2bnRqM0VreWFkajBtUDJQRFYwZmlDbi1sUWp6bER1TGxlbE9nYVhxeHhJUjEtbXowcF9ncHFzWm4zV3lqNWYzY3ByOTcwM1h4MURQRTRtYU5qNFMyeFdrc3ZJRzRsdWxybFhxWE1aOF9lS2RCOFJuUA?oc=5",
-      "title": "Tramps apgalvo, ka Putins vēlas diplomātiski izbeigt karu Ukrainā",
-      "en": "Trump claims Putin wants to end the war in Ukraine diplomatically",
-      "outlet": "TVNET",
-      "published": "2026-11-20T21:00:47.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdXk3S1pEQlVDTjRydGRneHB2SWNOQk9lb3doWHJhUy03XzFXdTBhWmpYY29ybTlaR1NEWW5aVzIwdm1xM1gwRXQ3OUVtemc5UHNrNmxNdjBUY0tHZ0JFVHYwbDJaa1dmTU9QQ0hodkp3SXhuOFlsbGtYZTEwOGlZWWs0UnRGcjZWR3UxU1RSbUt1S2h1YzIyc0lYUjVHWlNkZzNfbEEyOA?oc=5",
+      "title": "Putinam ir jāsaprot, ka Krimas tilta nebūs, saka Zelenskis",
+      "en": "Putin must understand that there will be no Crimean bridge, says Zelensky",
+      "outlet": "DELFI",
+      "published": "2026-11-21T03:59:38.000Z",
+      "outlets": 5,
+      "trending": false
+    },
+    {
+      "from": "VN",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSmRUbzFaSG8zNWhGX0NpNzFOWkg2Z3NIWnYwdXZFV1dWTF9EVDNNWHlmWmdyUEhhOEROUGMxYWZHcTlGb0l4Z0ZTTUMtVmRLSnQwaFhOZ1ZGbFBZQ1paZ2lPSEc1WWNiLVVfVE9TUVBaT3JTZEFqc2FQaEJRX29Yc1RUby1jTm5yNGNEMWg0R3hPaGc1a2ZR?oc=5",
+      "title": "Châu Âu mở lại khả năng Ukraine gia nhập EU, NATO",
+      "en": "Europe reopens possibility of Ukraine joining EU and NATO",
+      "outlet": "Thanh Niên",
+      "published": "2026-11-20T21:57:00.000Z",
       "outlets": 5,
       "trending": false
     },
@@ -883,26 +833,6 @@
       "trending": false
     },
     {
-      "from": "MX",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNV1JDM0lkMGkwWG9JelRNemY0SzhTZUNybkdfQmUwLTAtMUNSOEczRk1tQV9rajY0YkNiOFctb19Vd1UtaDhabmpwX2xuakdhVTRvR0tSalpHelNhbEZzT29MMmxjelZhMHk2LWJXenYwT192YzBuTDJBd0FFVlRTNWdhcFRBQ09uRDlDUGVGczJFQy1Pd2EtQXBkb1ZKX1M0bXprTmlhTHRUQlJNOHlkblRhYUI?oc=5",
-      "title": "‘Putin fue particularmente cruel’: Rusia lanza 110 misiles contra Ucrania y destruye puentes y trenes",
-      "en": "'Putin was particularly cruel': Russia launches 110 missiles against Ukraine and destroys bridges and trains",
-      "outlet": "El Financiero",
-      "published": "2026-11-20T17:33:12.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
-      "from": "PE",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdnBoUE14ZW5INjJ1N0ZkX1VMVExuME54QXg3UWFVekpMeUtnaEVVOEw0d0NheVlCYzFPY1dXYnZNdlF6c09GNEhJQjBQbjNIQmx4OUtWOTFyQWdRNWlWd3YydHFYeUhjS0FadS1kLXRoSUFWMUxSZm5MM1NFLWVoblhTalZEaDlULS1RcE1JaGlpZl9CaDE3WEE0UHZITXRyMm1VbGxVLTFwNkpUSDF3QUtUOVUzdkpxMUhDem1ONXVyczDSAcMBQVVfeXFMTmJBc0dTMDFJSnEwbjJXOTFjNXgtM2RTWUVJaFAyZ2VGcWZyRVZ3dzJENXNtaHNJUU9NaFh0VkdLUHlrcGRNMlkzV2xReFdaSmZVSU1XLUJWbHY1OThFM2tZRTRjMzF3SWd5WEF6bVZaY05veUtVUl8zTWZZYXFVTUh3Z1I3bE9BOXhtSUhwMkE3ekJhYjYxekpScjFiVy0yRldBcVlER2RyZW9kRDE1WWpha3lIUVRfOW1wc3pTNmYzMk1n?oc=5",
-      "title": "Misiles rusos dañan tres puentes y dejan tres muertos en Kiev",
-      "en": "Russian missiles damage three bridges and leave three dead in Kyiv",
-      "outlet": "DW.com",
-      "published": "2026-11-20T17:05:51.000Z",
-      "outlets": 4,
-      "trending": false
-    },
-    {
       "from": "PT",
       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOU05zbnBocmJhMUswVG01S1I1c056ZjN6VVJhVGtGQlY5QTZNSUdZSEpjNmhHanVFdDczWG1DVmU4RnpEX1lMdFRDYlZoeGowVXoyWXFLbDJHOHhySkpVWVNxS0xsQ09hbmk4aDJEU1hKR3B4TzV0Xy05amVGVHRQM1k4WDc0X2JxRW9jS2xmS1BiNWZ5VXlJMkxSc2Z4aHhGNXZfTmEzTWFTVHRWZWhTVy1BUU5aNkJkN21rUkJ5SkNCeERZRTg5WkFGbTBtWkk2cTBYQ3hmbW0?oc=5",
       "title": "Donald Trump quer acordo de paz entre Ucrânia e Rússia fechado até janeiro",
@@ -913,52 +843,22 @@
       "trending": false
     },
     {
-      "from": "NL",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMkhsazcxVGE3U29pRVZOeWUzWlBPYUQ4VGR0dEw0Mmx3cmloTERHMnR3cVZ5VHpwWGxCa3A1S19CbGVTSmtjeVJ3Ym50OUtXSjJmRXk4SlRBc09iQnRpSGJrXzlGdGtvNmU1UEg0X0hoTXNSU2Jra1h5N2xnOUVGWUgyNGM5Qm9aYldidnJld0R5M3VvYTNoNk5FMGpENEZMUHdZazctYzFKMjJhQXc?oc=5",
-      "title": "Rusland roept Nederland op diplomaten uit Kyiv te evacueren",
-      "en": "Russia calls on the Netherlands to evacuate diplomats from Kyiv",
-      "outlet": "bnr.nl",
-      "published": "2026-11-20T13:34:00.000Z",
-      "outlets": 5,
+      "from": "MX",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOG5qWWxldVBwRDJrVUVSNW9wSzhUUFROcVJvYmtqTHpUOWh3aWRPeFlydTFMRkk3ZUJFQXBMTzBqbE02LUE3RHRzNVNDWkZNdExPWjZuc1Qzb2hXRk9aSkplQjFvVGlYRW1jZVlPdzNnTWhlbk45bXRWSUEwNHhTczh1RUNON3M?oc=5",
+      "title": "Rusia ataca Ucrania horas después de que Trump dijera que un Putin “cansado” está dispuesto a un acuerdo",
+      "en": "Hours after Trump says a \"tired\" Putin is willing to reach an agreement, Ukraine receives a massive attack",
+      "outlet": "CNN en Español",
+      "published": "2026-11-20T16:05:00.000Z",
+      "outlets": 4,
       "trending": false
     },
     {
-      "from": "LT",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcFllbTBabXdDOU1hNHhsRlhObkNrVDY0SEJJRGFUendoX2ljMFZ6N09KQnh0a1I3eTN2cXZ5cWN4TzRMRVl4aUlfa3NJZm5CTVc2N09oNUdFRGE5VkdBZ2VmYklaWVBDd0tSNkkxd1F0ODBfcUNxZWJxZG1kTlpMVVdTcGtieTJKS041RG5UZ01xbVBQc3J0YkpjTlFKdk15TFFHUmphdVlXQlROc1Nid1ZNTFRTaEt6dDFGeG1sX2xEVmtZeXdDci1EU29ia3F5V0E?oc=5",
-      "title": "„Vis dar nesielgiame su Ukraina kaip viena iš mūsų“: patarimai Lietuvai pirmininkaujant ES",
-      "en": "\"We still don't treat Ukraine as one of us\": advice for Lithuania as it chairs the EU",
-      "outlet": "LRT",
-      "published": "2026-11-20T13:03:00.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BE",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV0JfZ0hhUGVSdzIwRHZVSUMtSnB0Z2pEdjFZdC1kYm9MNUZuQ1l5bEV3TDJUckxDb1ZXMzZzYXEwV2d1SU9ib2FYM2RYd3pTQmJTeDdOY2FzM3FRQkI4a2xiOGhZNEZua1hJSFhJM1dxUW5rWk5MZmhWT1g0V1B1WUVjbHFGU3RmSTl2a21XMVdVWmE5YmVVZ1Vyd1N5ZzJVZm05SkVUQ1cteHY1dnZtQnZQN0lieXNhMTJOUlRfaw?oc=5",
-      "title": "Paris demande une réunion du Conseil de sécurité de l’ONU après des frappes russes sur Kiev",
-      "en": "Paris requests a UN Security Council meeting after Russian strikes on Kyiv",
-      "outlet": "Le Soir",
-      "published": "2026-11-20T12:13:18.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "CA",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPU3hGTmdmR183eVRxdnRxa2xhSmEwNkpPcjM3WGx5R1VnbXl0RTY1ZGNnQ1ZLb0tjXzdtcG9wRm96Q1pfa2p6cFhDT1pFTlZmOVdKZl8zZkNLd3dlOUZBdlJ0THRqU2Q0SHdlMW95YWFBM2lEZ2JtdlVyTEVYNUZGX0k2aUlpd0FiTjR0OWF5bjhfSjM2c2paRVdR?oc=5",
-      "title": "NATO condemns Russian violation of Polish airspace as Ukraine allies hold drills",
-      "en": "NATO condemns Russian violation of Polish airspace as Ukraine allies hold drills",
-      "outlet": "The Globe and Mail",
-      "published": "2026-11-20T11:35:57.000Z",
-      "outlets": 5,
-      "trending": false
-    },
-    {
-      "from": "BG",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWVVlaDE1Y1ltTGU3TGlPejdfM1hOVXdqVzB1dzdfckNidjN6SmthLVVRVHl5WU9HbmxDOEhPSlNyY2VUSElQeUFlbTVSdTdMblNNb2p3NHpiNFhwbmtVbHdyX0EwVTUyZ3Z2OXBoRVNUNUttMHVsYXFvTXBIOVg0ZnJnUlJWemZv0gGIAUFVX3lxTFBkcDgyQm8tZ3hBQTllZkZ3VXFSdzBKSEtZYXdOMnFjbzduZTdaQTdzamNnRVVOeXVVWE1LX05zZHJUV0RnRHVoV2JubVl0eFh5VS14b0w3MkwtMEl0alE2dDhJX3ZYUjJKWDJ6blE0Sml6emRMcjBwVHdPejZ4QVdyaEx2Q0pYODI?oc=5",
-      "title": "Руски ракети поразяват мостове в Киев, има жертви",
-      "en": "Russian missiles hit bridges in Kyiv, there are casualties",
-      "outlet": "DW.com",
-      "published": "2026-11-20T09:56:52.000Z",
+      "from": "PE",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNV1dCS2pHQW1OZEphRlZaR0FROC1yS2hXM1ltR2VOWC1fdmtjTmpFREcxMFZJT2F1ZEhHUW1OWnZVRzJtVV92c0haS2tGWTM4YXRLQUItR1lXQjhyRWdUazl2dWpwU2FQQkdaWV9ReTlpa0JiRXRrd2REZnEzVDZOU1hSQjRHcGZFZVJZS040V2ZtM0RIUGVXZDI1U3lEd2lKMm1wVWRqbTktZUtvNFA0V3pXNGhkczdHcFRvNk9aNVNVa3N3NE5RMjFsNFhvM3hhN3h2YlN3U3JXT3BpX0gxVUZBbXBkQXNuZHJaNFBuTGtYN2RVT1Ryc21wV2hKZnBrWDRqQnI4bS1POGMwQXfSAagCQVVfeXFMUEVjTXF6RFF6RW96dkFPaHg3dy12RUJKMmduY2cyNEl6Z3ZHUElBeTcxU20ybVBrWkF1V3VHN0JJa0U3S3dYVzhudF9Ya1l5VUJNUEVPaWFqbzFaM2RzTjBnbGlrZFBKX1FpRlBXYW5RLVlvOGlYU0VGUXhpQzFhMTJCNVJtVEdfb1pOVWRMZk5LNzZLeXFNMWc0bkVGNjUzcVctU29ibzFPbWRSVWFSNGZMZ0s1UFJxcmc4WnBwT3FXa3VHZjhCMEhhcE5PdUhvMExrSTNIWXREZUZnNVROSzlJdXdvbTU2eFdsODJ5MGhrQUVmMktRMXJYMmZTX1kxRmlRanZzMWpJQTZ2UGY4ZWFyLXZaSVBscDA5TngtQm9RMlp4LVFKN2w?oc=5",
+      "title": "Vladimir Putin ordenó un bombardeo masivo contra Ucrania: más de 100 misiles, 400 drones y al menos ocho muertos",
+      "en": "Vladimir Putin ordered a massive bombing of Ukraine: more than 100 missiles, 400 drones and at least eight dead",
+      "outlet": "Infobae",
+      "published": "2026-11-20T10:47:00.000Z",
       "outlets": 5,
       "trending": false
     }

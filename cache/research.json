@@ -188,7 +188,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-21T13:08:19.870Z",
+    "seen": "2026-11-21T20:56:07.402Z",
     "donationSearched": "2026-11-20T13:29:50.903Z",
     "directSearched": "2026-11-20T13:29:50.903Z",
     "directSearchVersion": 2
@@ -317,7 +317,7 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-21T13:08:19.870Z",
+    "seen": "2026-11-21T20:56:07.402Z",
     "donationSearched": "2026-11-21T03:36:27.910Z",
     "directSearched": "2026-11-21T03:36:27.910Z",
     "directSearchVersion": 2
@@ -355,6 +355,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
+    "seen": "2026-11-21T20:56:07.402Z",
     "donationSearched": "2026-11-21T13:08:19.870Z",
     "directSearched": "2026-11-21T13:08:19.870Z",
     "directSearchVersion": 2,
@@ -366,8 +367,7 @@
         "note": "Recovery support for rural communities and forest wildlife in Nicaragua and El Salvador after El Niño drought.",
         "title": "Emergency appeal - effects of El Nino - GlobalGiving"
       }
-    ],
-    "seen": "2026-11-21T13:08:19.870Z"
+    ]
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-19T21:09:40.926Z",
@@ -467,7 +467,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-21T13:08:19.870Z",
+    "seen": "2026-11-21T20:56:07.402Z",
     "donationSearched": "2026-11-19T21:09:40.926Z",
     "directSearched": "2026-11-19T21:09:40.926Z",
     "directSearchVersion": 2
@@ -499,10 +499,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#a49711a3",
+    "seen": "2026-11-21T20:56:07.402Z",
     "donationSearched": "2026-11-21T13:08:19.870Z",
     "directSearched": "2026-11-21T13:08:19.870Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-21T13:08:19.870Z"
+    "directSearchVersion": 2
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-11-10T04:32:08.459Z",
@@ -750,10 +750,67 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-21T13:08:19.870Z",
+    "seen": "2026-11-21T20:56:07.402Z",
     "donationSearched": "2026-11-20T13:29:50.903Z",
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
+    ],
+    "directSearched": "2026-11-21T20:56:07.402Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/colombia-earthquake-relief-fund/",
+        "org": "GlobalGiving (local partner groups)",
+        "kind": "globalgiving",
+        "note": "Medical care, search and rescue, shelter, food and water through local groups.",
+        "title": "Colombia Earthquake Relief Fund - GlobalGiving",
+        "published": "2026-08-20T20:56:07.402Z"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/colombia-earthquake-response/",
+        "org": "GlobalGiving with Direct Relief",
+        "kind": "globalgiving",
+        "note": "Medical supplies and air transport to hard-to-reach Chocó communities.",
+        "title": "Colombia Earthquake Response 2026 - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/colombia-earthquake-help-families-recover/",
+        "org": "TECHO Colombia via GlobalGiving",
+        "kind": "globalgiving",
+        "note": "Building emergency homes for displaced families in Valle del Cauca, Chocó, Coffee Region.",
+        "title": "Rebuild Homes for Colombia Earthquake Families - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/fundraisers/89607/",
+        "org": "Supporter fundraiser for Fundación United Way Colombia",
+        "kind": "globalgiving",
+        "note": "Food, clean water and basic supplies for affected families.",
+        "title": "$7.4K for Colombia"
+      },
+      {
+        "url": "https://www.directrelief.org/emergency/colombia-earthquake-2026/",
+        "org": "Direct Relief",
+        "kind": "local",
+        "note": "Medical equipment and emergency grants for Colombian health organisations.",
+        "title": "Colombia Earthquake 2026",
+        "published": "2026-10-28T20:56:07.402Z"
+      },
+      {
+        "url": "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/",
+        "org": "Oxfam GB",
+        "kind": "local",
+        "note": "Support for affected communities in the Chocó region.",
+        "title": "Donate to Colombia Earthquake Appeal",
+        "published": "2026-08-13T20:56:07.402Z"
+      },
+      {
+        "url": "https://www.savethechildren.net/donate/colombia-earthquake",
+        "org": "Save the Children International",
+        "kind": "local",
+        "note": "Appeal for the earthquake; specific use of funds not stated in notes.",
+        "title": "Save the Children International",
+        "published": "2020-04-15T20:56:07.402Z"
+      }
     ]
   },
   "ifrc-earthquake-8060": {
@@ -783,10 +840,10 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
+    "seen": "2026-11-21T20:56:07.402Z",
     "donationSearched": "2026-11-21T13:08:19.870Z",
     "directSearched": "2026-11-21T13:08:19.870Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-21T13:08:19.870Z"
+    "directSearchVersion": 2
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1154,7 +1211,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-21T13:08:19.870Z",
+    "seen": "2026-11-21T20:56:07.402Z",
     "donationSearched": "2026-11-21T03:36:27.910Z",
     "directSearched": "2026-11-21T03:36:27.910Z",
     "directSearchVersion": 2
@@ -1315,7 +1372,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-21T13:08:19.870Z",
+    "seen": "2026-11-21T20:56:07.402Z",
     "donationSearched": "2026-11-20T13:29:50.903Z",
     "directSearched": "2026-11-20T13:29:50.903Z",
     "directSearchVersion": 2,
