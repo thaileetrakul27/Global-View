@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-22T13:01:47.393Z",
+  "updated": "2026-11-22T21:07:12.393Z",
   "fetched": {
-    "societies": "2026-11-22T13:01:47.393Z",
-    "uncr": "2026-11-22T13:01:47.393Z"
+    "societies": "2026-11-22T21:07:12.393Z",
+    "uncr": "2026-11-22T21:07:12.393Z"
   },
   "societies": {
     "AF": {
@@ -2459,17 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "local4:ifrc-flood-8050:worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Myanmar\"",
-      "checked": "2026-11-15T17:36:05.587Z",
-      "chain": [
-        "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/"
-      ],
-      "place": "Myanmar",
-      "name": "WORLDCHEFS",
-      "title": "Donate to Support Children Affected by Flooding in Myanmar"
-    },
     "nepal.un.org/en/322156-nepal-floods-un-and-partners-launch-496-million-emergency-appeal": {
       "ok": true,
       "reason": "donation word \"emergency appeal\"",
@@ -2626,47 +2615,6 @@
         "https://www.redcross.org.cn/autoweb/hlwmh/index.html"
       ]
     },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-21T13:08:19.870Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
-    "honduras.un.org/es": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-21T13:08:19.870Z",
-      "chain": [
-        "https://honduras.un.org/es"
-      ]
-    },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-21T20:56:07.402Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
-    "ayodonor.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-21T20:56:07.402Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-11-21T20:56:07.402Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
-    },
     "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Colombia\"",
@@ -2716,11 +2664,69 @@
     "cruzroja.org.pa/donar": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-22T13:01:47.393Z",
       "chain": [
         "https://cruzroja.org.pa/donar/"
       ],
+      "blocked": true
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
+      ],
+      "checked": "2026-11-22T21:07:12.393Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-11-22T21:07:12.393Z"
+    },
+    "honduras.un.org/es": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://honduras.un.org/es"
+      ],
+      "checked": "2026-11-22T21:07:12.393Z"
+    },
+    "ayodonor.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/"
+      ],
       "blocked": true,
-      "checked": "2026-11-22T13:01:47.393Z"
+      "checked": "2026-11-22T21:07:12.393Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-11-22T21:07:12.393Z"
+    },
+    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo?_cv=1"
+      ],
+      "checked": "2026-11-22T21:07:12.393Z"
+    },
+    "donate.redcrossredcrescent.org/ifrc/colombia-earthquake": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
+        "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
+      ],
+      "checked": "2026-11-22T21:07:12.393Z"
     }
   }
 }
