@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-21T20:56:07.402Z",
+  "updated": "2026-11-22T02:40:38.622Z",
   "fetched": {
-    "societies": "2026-11-21T20:56:07.402Z",
-    "uncr": "2026-11-21T20:56:07.402Z"
+    "societies": "2026-11-22T02:40:38.622Z",
+    "uncr": "2026-11-22T02:40:38.622Z"
   },
   "societies": {
     "AF": {
@@ -2459,25 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "local4:ifrc-earthquake-8060:donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita": {
-      "ok": true,
-      "reason": "donation word \"donat*\", names \"Indonesia\"",
-      "checked": "2026-11-14T21:07:48.595Z",
-      "chain": [
-        "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita"
-      ],
-      "place": "Indonesia",
-      "name": "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara…",
-      "title": "Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita"
-    },
-    "arcs.af": {
-      "ok": true,
-      "reason": "donation word \"کمک نقدی\"",
-      "checked": "2026-11-14T21:07:48.595Z",
-      "chain": [
-        "https://arcs.af/"
-      ]
-    },
     "local4:ifrc-flood-8050:worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Myanmar\"",
@@ -2635,41 +2616,6 @@
       "place": "Nepal",
       "title": "District Rasuwa – Flash flood 2026 – Chay Ya"
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-20T22:13:19.590Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-20T22:13:19.590Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-20T22:13:19.590Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-20T22:13:19.590Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
-    },
     "cruzroja.org.pa/donar": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
@@ -2708,38 +2654,73 @@
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-21T20:56:07.402Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-11-21T20:56:07.402Z"
+      ]
     },
     "ayodonor.pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-21T20:56:07.402Z",
       "chain": [
         "https://ayodonor.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-21T20:56:07.402Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-11-21T20:56:07.402Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-11-21T20:56:07.402Z"
+      ]
     },
     "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Colombia\"",
+      "checked": "2026-11-21T20:56:07.402Z",
       "chain": [
         "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/"
       ],
       "place": "Colombia",
       "name": "Oxfam GB",
-      "title": "Oxfam GB | Colombia Earthquake Appeal",
-      "checked": "2026-11-21T20:56:07.402Z"
+      "title": "Oxfam GB | Colombia Earthquake Appeal"
+    },
+    "go.ifrc.org/emergencies/8079/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8079/overview"
+      ],
+      "checked": "2026-11-22T02:40:38.622Z"
+    },
+    "ifrc.org/emergency/nepal-flash-floods-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-22T02:40:38.622Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-22T02:40:38.622Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-22T02:40:38.622Z"
     }
   }
 }

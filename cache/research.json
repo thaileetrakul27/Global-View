@@ -1,46 +1,4 @@
 {
-  "gdacs-cyclone-tc-1001343": {
-    "at": "2026-11-07T22:18:49.156Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Typhoon In-fa (JMA No. 31) brought high waves and strong winds to the Ogasawara Islands in Tokyo, Japan, around 4 to 5 November 2026. A peak gust of 25.4 m/s was recorded at Chichijima on 5 November. At 09:00 JST on 6 November 2026, it became an extratropical low east of Japan. No deaths, damage or evacuations were reported in the sources found.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Ogasawara Islands",
-        "admin": "Tokyo",
-        "country": "JP",
-        "kind": "region",
-        "impact": "High waves and swells"
-      },
-      {
-        "name": "Chichijima",
-        "admin": "Tokyo",
-        "country": "JP",
-        "kind": "town",
-        "impact": "Peak gust 25.4 m/s on 5 Nov"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "tenki.jp",
-        "url": "https://tenki.jp/forecaster/deskpart/2026/11/06/41220.html",
-        "title": "【速報】台風31号は温帯低気圧に変わりました(気象予報士 日直主任 2026年11月06日) - 日本気象協会 tenki.jp"
-      },
-      {
-        "name": "japantimes.co.jp",
-        "url": "https://www.japantimes.co.jp/news/2026/11/04/japan/typhoon-infa/",
-        "title": "High waves around Ogasawara Islands expected as Typhoon In-fa approaches - The Japan Times"
-      }
-    ],
-    "membersHash": "eonet,gdacs|JP#d96d9cd0",
-    "seen": "2026-11-08T01:50:21.071Z",
-    "donationSearched": "2026-11-07T22:18:49.156Z",
-    "directSearched": "2026-11-07T22:18:49.156Z",
-    "directSearchVersion": 2
-  },
   "gdacs-cyclone-tc-1001347": {
     "at": "2026-11-14T07:01:23.906Z",
     "model": "claude-haiku-5-5",
@@ -188,7 +146,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-21T20:56:07.402Z",
+    "seen": "2026-11-22T02:40:38.622Z",
     "donationSearched": "2026-11-20T13:29:50.903Z",
     "directSearched": "2026-11-20T13:29:50.903Z",
     "directSearchVersion": 2
@@ -317,7 +275,7 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-21T20:56:07.402Z",
+    "seen": "2026-11-22T02:40:38.622Z",
     "donationSearched": "2026-11-21T03:36:27.910Z",
     "directSearched": "2026-11-21T03:36:27.910Z",
     "directSearchVersion": 2
@@ -355,7 +313,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-21T20:56:07.402Z",
+    "seen": "2026-11-22T02:40:38.622Z",
     "donationSearched": "2026-11-21T13:08:19.870Z",
     "directSearched": "2026-11-21T13:08:19.870Z",
     "directSearchVersion": 2,
@@ -370,44 +328,23 @@
     ]
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-11-19T21:09:40.926Z",
+    "at": "2026-11-22T02:40:38.622Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Drought in East Africa is reported as ongoing as of 19 November 2026, according to FEWS NET, which says abnormal dryness persists in the region while rain-driven flood risk rises. No source confirms the alert feed's start date of 21 May 2026. In Ethiopia, IFRC GO reports crop failure, dried water points and livestock deaths in Oromia, Northern Amhara and Tigray. A later report expects below-average harvests and reduced pasture across the region.",
+    "searches": 2,
+    "summary": "A drought affecting East Africa and the Central Sahel started on 21 May 2026 and was still ongoing as of 19 November 2026, according to FEWS NET. Poor rainfall, prolonged dry spells and above-average temperatures were reported during June–September 2026. Ethiopia's IFRC GO operation reports onset delays of up to 4 weeks in parts of the country. No end date has been reported.",
     "ongoing": true,
     "places": [
       {
-        "name": "West Hararge",
-        "admin": "Oromia",
-        "country": "ET",
-        "kind": "district",
-        "impact": "Widespread drought impacts, crop failure"
-      },
-      {
-        "name": "East Hararge",
-        "admin": "Oromia",
-        "country": "ET",
-        "kind": "district",
-        "impact": "Widespread drought impacts, crop failure"
-      },
-      {
-        "name": "Oromia",
+        "name": "Northern Eastern Ethiopia",
         "country": "ET",
         "kind": "region",
-        "impact": "Widespread impacts, dried water points, livestock deaths"
+        "impact": "Rainy season onset delayed up to 4 weeks"
       },
       {
-        "name": "Northern Amhara",
-        "admin": "Amhara",
+        "name": "Southeastern Ethiopia",
         "country": "ET",
         "kind": "region",
-        "impact": "Widespread impacts, crop failure, livestock deaths"
-      },
-      {
-        "name": "Tigray",
-        "country": "ET",
-        "kind": "region",
-        "impact": "Parts affected, crop failure, livestock deaths"
+        "impact": "Rainy season onset delayed up to 4 weeks"
       }
     ],
     "figures": [
@@ -423,14 +360,7 @@
         "url": "https://go.ifrc.org/emergencies/8079/overview",
         "org": "IFRC",
         "kind": "society",
-        "note": "IFRC GO emergency overview for Ethiopia 2026 drought DREF response; no donate link.",
-        "specific": false
-      },
-      {
-        "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC appeals listing for Ethiopia Drought Response (MDRET042), a DREF operation.",
+        "note": "IFRC operation page for Ethiopia drought appeal MDRET042; donation not confirmed.",
         "specific": false
       }
     ],
@@ -441,36 +371,31 @@
         "title": "El Niño is present. Abnormal dryness and drought conditions persist in East Africa, northwestern and southeastern Kazakhstan, and parts of Central America…"
       },
       {
+        "name": "fews.net",
+        "url": "https://fews.net/east-africa/seasonal-monitor/november-2026",
+        "title": "An erratic start of September through December rainfall season across East Africa"
+      },
+      {
+        "name": "fews.net",
+        "url": "https://fews.net/topics/el-nino-2026-2027",
+        "title": "El Niño 2026-2027"
+      },
+      {
         "name": "go.ifrc.org",
         "url": "https://go.ifrc.org/emergencies/8079/overview",
         "title": "IFRC GO - Emergency - ETH: Drought - 08-2026 - Ethiopia 2026 Drought"
       },
       {
-        "name": "peopledaily.digital",
-        "url": "https://peopledaily.digital/news/east-africa-drought-hit-crops-now-face-el-nino-flood-threat-report",
-        "title": "East Africa drought-hit crops now face El Niño flood threat"
-      },
-      {
-        "name": "global-agriculture.com",
-        "url": "https://www.global-agriculture.com/farming-agriculture/east-africa-braces-for-poor-harvests-after-one-of-its-driest-rainy-seasons-on-record/",
-        "title": "East Africa Braces for Poor Harvests After One of Its Driest Rainy Seasons on Record"
-      },
-      {
-        "name": "cpc.ncep.noaa.gov",
-        "url": "https://www.cpc.ncep.noaa.gov/products/international/globalweatherhazard/Current.pdf",
-        "title": "Global Weather Hazards Summary November 12, 2026"
-      },
-      {
-        "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/climate-risks-east-africa-and-latin-america-bumper-crops-southern-africa-and-asia-2026-08-11_en",
-        "title": "Climate risks in East Africa and Latin America; bumper crops in Southern Africa and Asia - Joint Research Centre"
+        "name": "circleofblue.org",
+        "url": "https://www.circleofblue.org/newsletter/the-stream-november-10-2026-el-nino-likely-to-uproot-millions-in-eastern-africa/",
+        "title": "The Stream, November 10, 2026: El Niño Likely To Uproot Millions in Eastern Africa - Circle of Blue"
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-21T20:56:07.402Z",
-    "donationSearched": "2026-11-19T21:09:40.926Z",
-    "directSearched": "2026-11-19T21:09:40.926Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-22T02:40:38.622Z",
+    "directSearched": "2026-11-22T02:40:38.622Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-22T02:40:38.622Z"
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-11-11T18:15:18.314Z",
@@ -499,7 +424,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#a49711a3",
-    "seen": "2026-11-21T20:56:07.402Z",
+    "seen": "2026-11-22T02:40:38.622Z",
     "donationSearched": "2026-11-21T13:08:19.870Z",
     "directSearched": "2026-11-21T13:08:19.870Z",
     "directSearchVersion": 2
@@ -750,11 +675,8 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-21T20:56:07.402Z",
+    "seen": "2026-11-22T02:40:38.622Z",
     "donationSearched": "2026-11-20T13:29:50.903Z",
-    "hubs": [
-      "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ],
     "directSearched": "2026-11-21T20:56:07.402Z",
     "directSearchVersion": 2,
     "direct": [
@@ -811,6 +733,9 @@
         "title": "Save the Children International",
         "published": "2020-04-15T20:56:07.402Z"
       }
+    ],
+    "hubs": [
+      "https://www.gofundme.com/c/act/colombia-earthquake-relief"
     ]
   },
   "ifrc-earthquake-8060": {
@@ -840,7 +765,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-21T20:56:07.402Z",
+    "seen": "2026-11-22T02:40:38.622Z",
     "donationSearched": "2026-11-21T13:08:19.870Z",
     "directSearched": "2026-11-21T13:08:19.870Z",
     "directSearchVersion": 2
@@ -1211,7 +1136,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-21T20:56:07.402Z",
+    "seen": "2026-11-22T02:40:38.622Z",
     "donationSearched": "2026-11-21T03:36:27.910Z",
     "directSearched": "2026-11-21T03:36:27.910Z",
     "directSearchVersion": 2
@@ -1372,7 +1297,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-21T20:56:07.402Z",
+    "seen": "2026-11-22T02:40:38.622Z",
     "donationSearched": "2026-11-20T13:29:50.903Z",
     "directSearched": "2026-11-20T13:29:50.903Z",
     "directSearchVersion": 2,
