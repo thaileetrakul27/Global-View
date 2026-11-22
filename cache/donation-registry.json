@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-22T02:40:38.622Z",
+  "updated": "2026-11-22T13:01:47.393Z",
   "fetched": {
-    "societies": "2026-11-22T02:40:38.622Z",
-    "uncr": "2026-11-22T02:40:38.622Z"
+    "societies": "2026-11-22T13:01:47.393Z",
+    "uncr": "2026-11-22T13:01:47.393Z"
   },
   "societies": {
     "AF": {
@@ -2616,15 +2616,6 @@
       "place": "Nepal",
       "title": "District Rasuwa – Flash flood 2026 – Chay Ya"
     },
-    "cruzroja.org.pa/donar": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-21T03:36:27.910Z",
-      "chain": [
-        "https://cruzroja.org.pa/donar/"
-      ],
-      "blocked": true
-    },
     "redcross.org.cn": {
       "ok": true,
       "reason": "donation word \"捐\"",
@@ -2690,37 +2681,46 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-22T02:40:38.622Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-22T02:40:38.622Z"
+      ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-22T02:40:38.622Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
-      "blocked": true,
-      "checked": "2026-11-22T02:40:38.622Z"
+      "blocked": true
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-22T02:40:38.622Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-22T02:40:38.622Z"
+      "blocked": true
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-22T02:40:38.622Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
+      "blocked": true
+    },
+    "cruzroja.org.pa/donar": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://cruzroja.org.pa/donar/"
+      ],
       "blocked": true,
-      "checked": "2026-11-22T02:40:38.622Z"
+      "checked": "2026-11-22T13:01:47.393Z"
     }
   }
 }
