@@ -84,186 +84,187 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-23T03:16:34.030Z",
+    "seen": "2026-11-23T15:14:55.038Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1023877": {
-    "at": "2026-11-21T03:36:27.910Z",
+    "at": "2026-11-23T15:14:55.038Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Drought affecting Northern South America and the Panama Isthmus. The feed gives a start of 21 September 2022, but another source lists 21 February 2026 to 20 October 2026, and this could not be reconciled. Colombia's weather agency said October's wet season was not normal. The Panama Canal cut daily transits from 38 to 32 because of falling water levels. Panama declared a nationwide emergency on 25 August 2026. Latest update 20 November 2026; ongoing.",
+    "summary": "A drought in Northern South America and the Panama Isthmus, starting 21 September 2022, is listed in a GDACS alert feed, last updated 23 November 2026. The feed gives an area of about 1,683,760 km² and a severity of significant. Official reports and current conditions could not be confirmed, and no affected places or impacts were verified.",
+    "ongoing": true,
+    "places": [],
+    "figures": [],
+    "donation": [],
+    "sources": [],
+    "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "donationSearched": "2026-11-23T15:14:55.038Z",
+    "directSearched": "2026-11-23T15:14:55.038Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-23T15:14:55.038Z"
+  },
+  "gdacs-drought-dr-1027449": {
+    "at": "2026-11-23T15:14:55.038Z",
+    "model": "claude-haiku-5-5",
+    "searches": 4,
+    "summary": "Drought has affected Central America since March 2026, according to a Copernicus report; the feed dates it from 21 April 2026. By 16 September, Honduras had 233 of 298 municipalities under drought alerts, 103 of them under red alert. Guatemala declared red alert in 15 Trifinio municipalities on 21 September, and food distribution began in mid-November. El Salvador declared a nationwide red alert on 25 August. As of 20 November 2026, the drought is ongoing.",
     "ongoing": true,
     "places": [
       {
-        "name": "Panama Canal",
-        "country": "PA",
-        "kind": "site",
-        "impact": "Daily transits cut from 38 to 32"
+        "name": "Choluteca",
+        "country": "HN",
+        "kind": "region",
+        "impact": "Red drought alert"
       },
       {
-        "name": "Tolima",
-        "country": "CO",
+        "name": "Comayagua",
+        "country": "HN",
         "kind": "region",
-        "impact": "Wildfires in August; Red Cross early action"
+        "impact": "Red drought alert"
       },
       {
-        "name": "Cesar",
-        "country": "CO",
+        "name": "El Paraíso",
+        "country": "HN",
         "kind": "region",
-        "impact": "Rainfall deficit in October; Red Cross early action"
+        "impact": "Red drought alert"
       },
       {
-        "name": "La Guajira",
-        "country": "CO",
+        "name": "Francisco Morazán",
+        "country": "HN",
         "kind": "region",
-        "impact": "Rainfall deficit in October"
+        "impact": "Red drought alert"
       },
       {
-        "name": "Atlántico",
-        "country": "CO",
+        "name": "La Paz",
+        "country": "HN",
         "kind": "region",
-        "impact": "Rainfall deficit in October"
+        "impact": "Red drought alert"
       },
       {
-        "name": "Norte de Santander",
-        "country": "CO",
+        "name": "Valle",
+        "country": "HN",
         "kind": "region",
-        "impact": "Rainfall deficit in October"
+        "impact": "Red drought alert"
       },
       {
-        "name": "Santander",
-        "country": "CO",
+        "name": "Intibucá",
+        "country": "HN",
         "kind": "region",
-        "impact": "Rainfall deficit in October"
+        "impact": "Red drought alert"
       },
       {
-        "name": "Antioquia",
-        "country": "CO",
+        "name": "Lempira",
+        "country": "HN",
         "kind": "region",
-        "impact": "Rainfall deficit in October"
+        "impact": "Red drought alert"
       },
       {
-        "name": "Huila",
-        "country": "CO",
+        "name": "Santa Rosa",
+        "country": "GT",
         "kind": "region",
-        "impact": "Rainfall deficit in October"
+        "impact": "Food rations delivered"
       },
       {
-        "name": "Vaupés",
-        "country": "CO",
+        "name": "San Marcos",
+        "country": "GT",
         "kind": "region",
-        "impact": "Rainfall deficit in October"
+        "impact": "Food rations delivered"
+      },
+      {
+        "name": "Suchitepéquez",
+        "country": "GT",
+        "kind": "region",
+        "impact": "Food rations delivered"
+      },
+      {
+        "name": "Morazán",
+        "country": "SV",
+        "kind": "region",
+        "impact": "Red Cross early action"
+      },
+      {
+        "name": "La Unión",
+        "country": "SV",
+        "kind": "region",
+        "impact": "Red Cross early action"
       }
     ],
     "figures": [
       {
-        "label": "People targeted by Red Cross early…",
-        "value": "2,400 people",
-        "sourceName": "ifrc.org",
-        "sourceUrl": "https://www.ifrc.org/press-release/red-cross-activates-early-action-protocols-first-signs-drought-el-salvador-guatemala"
+        "label": "People in acute food insecurity",
+        "value": "621,651 people",
+        "sourceName": "unocha.org",
+        "sourceUrl": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
       },
       {
-        "label": "Area burned by wildfires in Tolima",
-        "value": "more than 50,000 hectares",
-        "sourceName": "en.mercopress.com",
-        "sourceUrl": "https://en.mercopress.com/2026/08/31/the-panama-canal-will-cut-daily-transits-from-wednesday-because-of-drought"
+        "label": "People in need",
+        "value": "708,000 people",
+        "sourceName": "riotimesonline.com",
+        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
+      },
+      {
+        "label": "Families affected",
+        "value": "570,267 families",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/guatemala/2026/10/01/gobierno-de-guatemala-entregara-en-noviembre-82879-raciones-a-familias-afectadas-por-la-sequia-en-210-municipios/"
+      },
+      {
+        "label": "Rations delivered",
+        "value": "more than 53,000 rations",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/guatemala/2026/11/18/el-gobierno-de-guatemala-entrega-mas-de-53000-raciones-a-familias-afectadas-por-la-sequia-en-tres-departamentos/"
+      },
+      {
+        "label": "Rainfall deficit in May",
+        "value": "41 per cent",
+        "sourceName": "unocha.org",
+        "sourceUrl": "https://www.unocha.org/publications/report/panama/latin-america-caribbean-weekly-situation-update-28-august-2026"
       }
     ],
     "donation": [
       {
-        "url": "https://cruzroja.org.pa/donar/",
-        "org": "Cruz Roja Panameña (Panamanian Red Cross)",
+        "url": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026",
+        "org": "UN OCHA",
+        "kind": "un",
+        "note": "Honduras drought Flash Appeal, US$60 million, opened September 2026 for red-alert municipalities.",
+        "specific": true
+      },
+      {
+        "url": "https://www.cruzroja.gt/en/donate/",
+        "org": "Guatemalan Red Cross",
         "kind": "society",
-        "note": "General donation fund for nationwide social programmes, not an appeal for this drought.",
+        "note": "General donation fund tied to a yellow alert over rains and dengue, not this drought.",
         "specific": false
       }
     ],
     "sources": [
       {
-        "name": "infobae.com",
-        "url": "https://www.infobae.com/colombia/2026/11/12/el-gobierno-reforzara-el-ahorro-de-agua-energia-y-gas-ante-la-posible-extension-de-la-sequia-por-el-nino-en-que-departamentos-habria-problemas/",
-        "title": "El Gobierno reforzará el ahorro de agua, energía y gas ante la posible extensión de la sequía por El Niño: en qué departamentos habría problemas - Infobae"
+        "name": "eu-space.europa.eu",
+        "url": "https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/severe-drought-affecting-central-and-south-america-march-2026",
+        "title": "Severe drought is affecting Central and South America since March 2026"
       },
       {
-        "name": "gdacs.org",
-        "url": "https://www.gdacs.org/report.aspx?eventtype=DR&amp=&eventid=1023877",
-        "title": "Overall Green Drought for Northern South America, Panama Isthmus-2026 in Brazil, French Guiana, Suriname from 21 Feb 2026 00:00 UTC to 20 Oct 2026 00:00 UTC"
-      },
-      {
-        "name": "semana.com",
-        "url": "https://www.semana.com/nacion/articulo/ideam-revela-que-departamentos-enfrentan-deficit-de-lluvias-por-el-nino-y-que-pasara-en-noviembre/202620/",
-        "title": "IDEAM revela qué departamentos enfrentan déficit de lluvias por El Niño y qué pasará en noviembre - Semana"
-      },
-      {
-        "name": "ifrc.org",
-        "url": "https://www.ifrc.org/press-release/red-cross-activates-early-action-protocols-first-signs-drought-el-salvador-guatemala",
-        "title": "Red Cross activates Early Action Protocols at the first signs of drought in El Salvador, Guatemala and Colombia"
-      },
-      {
-        "name": "en.mercopress.com",
-        "url": "https://en.mercopress.com/2026/08/31/the-panama-canal-will-cut-daily-transits-from-wednesday-because-of-drought",
-        "title": "The Panama Canal will cut daily transits from Wednesday because of drought — MercoPress"
-      },
-      {
-        "name": "isciences.com",
-        "url": "https://www.isciences.com/blog/2026/11/12/isciences-worldwide-water-watch-list-november-2026",
-        "title": "ISciences Worldwide Water Watch List November 2026 — ISCIENCES"
+        "name": "global-agriculture.com",
+        "url": "https://www.global-agriculture.com/global-agriculture/el-nino-drought-triggers-emergency-declarations-across-central-america/",
+        "title": "El Niño Drought Triggers Emergency Declarations Across Central America"
       }
     ],
-    "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-23T03:16:34.030Z",
-    "donationSearched": "2026-11-21T03:36:27.910Z",
-    "directSearched": "2026-11-21T03:36:27.910Z",
-    "directSearchVersion": 2
-  },
-  "gdacs-drought-dr-1027449": {
-    "at": "2026-11-21T13:08:19.870Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "An agricultural drought affecting about 728,311 km² was listed in an automated GDACS alert feed, which names ten countries including Belize, Costa Rica, Cuba, Honduras, Guatemala, Mexico and the United States. It started on 21 April 2026, and the feed was last updated on 21 November 2026. No news, government, Red Cross, IFRC, UN or ReliefWeb sources were verified, and whether the drought is still ongoing is not confirmed.",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [
-      {
-        "url": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026",
-        "org": "OCHA",
-        "kind": "un",
-        "note": "Flash appeal document for the September 2026 Honduras drought.",
-        "specific": true
-      },
-      {
-        "url": "https://go.ifrc.org/countries/81",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC GO Honduras country page listing drought DREF; funding shows 100%.",
-        "specific": false
-      },
-      {
-        "url": "https://honduras.un.org/es",
-        "org": "UN in Honduras",
-        "kind": "un",
-        "note": "General UN Honduras news feed mentioning a US$60 million drought flash appeal.",
-        "specific": false
-      }
-    ],
-    "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-23T03:16:34.030Z",
-    "donationSearched": "2026-11-21T13:08:19.870Z",
-    "directSearched": "2026-11-21T13:08:19.870Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
-        "org": "Paso Pacifico",
+        "org": "Paso Pacífico",
         "kind": "globalgiving",
-        "note": "Recovery support for rural communities and forest wildlife in Nicaragua and El Salvador after El Niño drought.",
+        "note": "Rural communities and forest wildlife hit by drought in Nicaragua and El Salvador",
         "title": "Emergency appeal - effects of El Nino - GlobalGiving"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-23T15:14:55.038Z",
+    "directSearched": "2026-11-23T15:14:55.038Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-23T15:14:55.038Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-22T02:40:38.622Z",
@@ -330,7 +331,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-23T03:16:34.030Z",
+    "seen": "2026-11-23T15:14:55.038Z",
     "donationSearched": "2026-11-22T02:40:38.622Z",
     "directSearched": "2026-11-22T02:40:38.622Z",
     "directSearchVersion": 2
@@ -352,20 +353,35 @@
     "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1578540": {
-    "at": "2026-11-21T13:08:19.870Z",
+    "at": "2026-11-23T15:14:55.038Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A M5.9 earthquake struck northwestern China at 10:45 UTC on 21 November 2026, at a depth of 10 km according to USGS. USGS places the epicentre at 37.196°N, 96.640°E, though other sources give different locations. No affected places, casualties or damage have been reported in the sources checked, and official Chinese sources were not retrieved. The latest feed update was at 12:51 UTC that day.",
+    "summary": "A magnitude 5.9 earthquake (USGS; other agencies gave 5.6 and 5.7) struck northern Qinghai Province, China, on 21 November 2026 at 10:45 UTC, with epicentre near Delingha City. Preliminary local assessments reported no casualties and no collapsed buildings. Emergency inspections in surrounding areas were continuing as of 22 November.",
     "ongoing": true,
-    "places": [],
+    "places": [
+      {
+        "name": "Delingha",
+        "admin": "Haixi Mongol and Tibetan Autonomous Prefecture, Qinghai",
+        "country": "CN",
+        "kind": "city",
+        "impact": "Epicentre area; strong shaking felt"
+      },
+      {
+        "name": "Dulan County",
+        "admin": "Haixi Prefecture, Qinghai",
+        "country": "CN",
+        "kind": "district",
+        "impact": "Strong shaking felt"
+      }
+    ],
     "figures": [],
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#a49711a3",
-    "seen": "2026-11-23T03:16:34.030Z",
-    "donationSearched": "2026-11-21T13:08:19.870Z",
-    "directSearched": "2026-11-21T13:08:19.870Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-23T15:14:55.038Z",
+    "directSearched": "2026-11-23T15:14:55.038Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-23T15:14:55.038Z"
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-11-10T04:32:08.459Z",
@@ -604,7 +620,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-23T03:16:34.030Z",
+    "seen": "2026-11-23T15:14:55.038Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
     "directSearchVersion": 2,
@@ -653,10 +669,10 @@
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-21T13:08:19.870Z",
+    "at": "2026-11-23T15:14:55.038Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A magnitude 7.7 earthquake struck offshore off Nagekeo Regency, East Nusa Tenggara, Indonesia, on 15 August 2026, according to an automated alert feed. The feed says a tsunami warning was lifted after sea-level changes in several coastal areas. The reports could not be verified against news, government or humanitarian sources, and the current status is not confirmed.",
+    "summary": "On 15 August 2026, a magnitude 7.7 earthquake struck Nagekeo Regency in East Nusa Tenggara, Indonesia. BNPB reported 105 deaths, 1,678 injuries and 179,037 displaced as of 25 August. Aftershocks continued, and 188,161 people remained at evacuation centers on 30 August, with evacuee numbers falling. The latest report found is dated 1 September 2026.",
     "ongoing": true,
     "places": [
       {
@@ -664,25 +680,210 @@
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Offshore epicentre of M7.7 quake"
+        "impact": "Epicentre; shaking VII MMI; 50,574 displaced"
+      },
+      {
+        "name": "Mbay",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Shaking VII MMI; residents rushed out of buildings"
+      },
+      {
+        "name": "Maumere Port",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "site",
+        "impact": "Structural damage to port complex and piers"
+      },
+      {
+        "name": "Sikka",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Two deaths from falling building materials"
+      },
+      {
+        "name": "Ngada",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Shaking up to VII MMI"
+      },
+      {
+        "name": "Bajawa",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Shaking VI MMI"
+      },
+      {
+        "name": "Manggarai",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "50,556 displaced"
+      },
+      {
+        "name": "Ruteng",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Shaking V MMI; partial building damage"
+      },
+      {
+        "name": "East Manggarai",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "district",
+        "impact": "Building damage, including Lambaleda Subdistrict"
+      },
+      {
+        "name": "Ende",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Cracks and partial damage to buildings"
+      },
+      {
+        "name": "Labuan Bajo",
+        "admin": "East Nusa Tenggara",
+        "country": "ID",
+        "kind": "town",
+        "impact": "Cracks and partial damage to buildings"
+      },
+      {
+        "name": "Bima",
+        "admin": "West Nusa Tenggara",
+        "country": "ID",
+        "kind": "city",
+        "impact": "Damage to several buildings"
       }
     ],
-    "figures": [],
+    "figures": [
+      {
+        "label": "Deaths",
+        "value": "105",
+        "sourceName": "thejakartapost.com",
+        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
+      },
+      {
+        "label": "Injuries",
+        "value": "1,678",
+        "sourceName": "thejakartapost.com",
+        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
+      },
+      {
+        "label": "Displaced",
+        "value": "188,161 people",
+        "sourceName": "en.antaranews.com",
+        "sourceUrl": "https://en.antaranews.com/news/429081/bnpb-reports-ntt-quake-evacuees-decline-as-aftershocks-begin-to-ease"
+      },
+      {
+        "label": "Homes damaged",
+        "value": "nearly 78,000",
+        "sourceName": "thejakartapost.com",
+        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
+      }
+    ],
     "donation": [
       {
         "url": "https://ayodonor.pmi.or.id/",
-        "org": "Palang Merah Indonesia (PMI)",
+        "org": "PMI Kota Bekasi (Indonesian Red Cross)",
         "kind": "society",
-        "note": "Ayodonor platform; PMI city-branch campaign for East Nusa Tenggara quake victims, among general campaigns.",
+        "note": "Ayodonor platform branch campaign appealing for help for quake-affected East Nusa Tenggara people.",
         "specific": true
+      },
+      {
+        "url": "https://go.ifrc.org/countries/85",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO appeal listing for DREF MDRID029 East Nusa Tenggara Earthquake, 0% funded.",
+        "specific": true
+      },
+      {
+        "url": "https://donasi.pmi.or.id/donasi/",
+        "org": "PMI (Indonesian Red Cross)",
+        "kind": "society",
+        "note": "General PMI donation fund page; does not mention this earthquake.",
+        "specific": false
       }
     ],
-    "sources": [],
+    "sources": [
+      {
+        "name": "thejakartapost.com",
+        "url": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget",
+        "title": "Analysis: When a disaster-prone nation cuts its safety net budget - Academia - The Jakarta Post"
+      },
+      {
+        "name": "en.antaranews.com",
+        "url": "https://en.antaranews.com/news/429081/bnpb-reports-ntt-quake-evacuees-decline-as-aftershocks-begin-to-ease",
+        "title": "BNPB reports NTT quake evacuees decline as aftershocks begin to ease - ANTARA News"
+      },
+      {
+        "name": "genupdate.id",
+        "url": "https://genupdate.id/gempa-bumi-ntt-m7-7-nagekeo/",
+        "title": "Gempa Bumi NTT M7,7 Guncang Nagekeo."
+      },
+      {
+        "name": "ahacentre.org",
+        "url": "https://ahacentre.org/flash-update/flash-update-no-1-m7-7-earthquake-in-east-nusa-tenggara-indonesia-15-august-2026/",
+        "title": "FLASH UPDATE: No. 1"
+      },
+      {
+        "name": "human-initiative.org",
+        "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
+        "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
+      },
+      {
+        "name": "human-initiative.org",
+        "url": "https://human-initiative.org/wp-content/uploads/2026/08/SITREP-1-EARTHQUAKE-NTT-ENG.pdf",
+        "title": "SITREP I Saturday, 15 August 2026 NAGEKEO EARTHQUAKE, EAST NUSA TENGGARA pg. 1"
+      }
+    ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-23T03:16:34.030Z",
-    "donationSearched": "2026-11-21T13:08:19.870Z",
-    "directSearched": "2026-11-21T13:08:19.870Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-23T15:14:55.038Z",
+    "directSearched": "2026-11-23T15:14:55.038Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
+        "org": "IDEP Selaras Alam",
+        "kind": "globalgiving",
+        "note": "Food, water, shelter, medicine and lighting for families in Manggarai and East Manggarai.",
+        "title": "Donate to Help Families Affected by Flores Earthquake - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
+        "org": "GlobalGiving",
+        "kind": "globalgiving",
+        "note": "Emergency aid for the NTT earthquake and wider Indonesia response.",
+        "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
+      },
+      {
+        "url": "https://human-initiative.jp/campaign/nttearthquake/",
+        "org": "Human Initiative Japan",
+        "kind": "local",
+        "note": "Emergency appeal funding bedding, food, hygiene kits and community kitchen in Sikka, Nagekeo.",
+        "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
+        "published": "2026-08-23T15:14:55.038Z"
+      },
+      {
+        "url": "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita",
+        "org": "Wahdah Inspirasi Zakat",
+        "kind": "local",
+        "note": "Collects for quake survivors in Nagekeo, including a Mbay pesantren and emergency mosque.",
+        "title": "Campaign - Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita"
+      },
+      {
+        "url": "https://www.barnabasaid.org/us/latest-needs/please-support-christians-after-devastating-earthquake-hits-indonesia/",
+        "org": "Barnabas Aid",
+        "kind": "local",
+        "note": "Appeal for Christian families on Flores funding blankets, hygiene items and emergency food.",
+        "title": "Please Support Christians After Devastating Earthquake Hits Indonesia"
+      }
+    ],
+    "seen": "2026-11-23T15:14:55.038Z"
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -974,57 +1175,63 @@
     ]
   },
   "ifrc-flood-8050": {
-    "at": "2026-11-21T03:36:27.910Z",
+    "at": "2026-11-23T15:14:55.038Z",
     "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "Monsoon flooding in Myanmar began in August 2026, affecting parts of Sagaing, Ayeyarwady, Rakhine, Kachin and northwest Myanmar. UNICEF estimated about 600,000 people affected as of end of August. Mapping showed inundation in Ayeyarwady in mid-September 2026. Status as of 21 November 2026 is not reported.",
+    "searches": 3,
+    "summary": "Monsoon flooding in Myanmar started around 12 August 2026 and affected about 600,000 people, including communities in Sagaing, Rakhine, Ayeyarwady and Kachin, according to UNICEF's end-August brief. Reports in August cited at least one death and more than 11,400 people moved to relief centres in Sagaing. The latest flood-specific update found is dated 8 September 2026. No source confirms the flooding continued after September.",
     "ongoing": true,
     "places": [
       {
         "name": "Wetlet",
         "admin": "Sagaing Region",
         "country": "MM",
-        "kind": "town",
-        "impact": "residents in floodwater; relocations"
-      },
-      {
-        "name": "Ayeyarwady",
-        "country": "MM",
-        "kind": "region",
-        "impact": "flooded; 1 dead; evacuation centres opened"
+        "kind": "district",
+        "impact": "Villages and paddy fields swamped, people forced from homes"
       },
       {
         "name": "Lemyethna",
         "admin": "Ayeyarwady Region",
         "country": "MM",
-        "kind": "town",
-        "impact": "probable inundation mapped"
+        "kind": "district",
+        "impact": "Probable flood inundation mapped (13 Sep)"
       },
       {
-        "name": "Rakhine",
+        "name": "Rakhine State",
         "country": "MM",
         "kind": "region",
-        "impact": "affected by flooding"
+        "impact": "Flood-affected"
       },
       {
-        "name": "Kachin",
+        "name": "Ayeyarwady Region",
         "country": "MM",
         "kind": "region",
-        "impact": "affected by flooding"
+        "impact": "Flood-affected"
+      },
+      {
+        "name": "Kachin State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Flood-affected"
+      },
+      {
+        "name": "Sagaing Region",
+        "country": "MM",
+        "kind": "region",
+        "impact": "Flooded; people relocated to relief centres"
       }
     ],
     "figures": [
       {
-        "label": "People affected",
-        "value": "about 600,000 people",
-        "sourceName": "aidworkers.com",
-        "sourceUrl": "https://www.aidworkers.com/aid-news/myanmar-monsoon-floods-20260704/"
-      },
-      {
-        "label": "People relocated to flood relief…",
-        "value": "over 11,400 people from 3,220 households",
+        "label": "Affected",
+        "value": "600,000 people",
         "sourceName": "unicef.org",
         "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
+      },
+      {
+        "label": "Displaced",
+        "value": "more than 11,400 people from 3,220 households",
+        "sourceName": "thestar.com.my",
+        "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected"
       },
       {
         "label": "Deaths",
@@ -1033,27 +1240,33 @@
         "sourceUrl": "https://adinet.ahacentre.org/report/myanmar-flooding-in-ayeyarwady-region-20260730"
       },
       {
-        "label": "Farmland inundated",
-        "value": "over 90,000 acres",
+        "label": "Evacuation centres",
+        "value": "56",
         "sourceName": "adinet.ahacentre.org",
         "sourceUrl": "https://adinet.ahacentre.org/report/myanmar-flooding-in-ayeyarwady-region-20260730"
       }
     ],
-    "donation": [
+    "donation": [],
+    "sources": [
       {
-        "url": "https://www.redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA/",
-        "org": "Myanmar Red Cross Society",
-        "kind": "society",
-        "note": "General emergency fund for floods, cyclones and other emergencies, not this event.",
-        "specific": false
+        "name": "unicef.org",
+        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
+        "title": "Myanmar 2026 Monsoon Emergency Response"
+      },
+      {
+        "name": "thestar.com.my",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected",
+        "title": "Monsoon rains submerge villages, fields in Myanmar; thousands of people affected"
+      },
+      {
+        "name": "adinet.ahacentre.org",
+        "url": "https://adinet.ahacentre.org/report/myanmar-flooding-in-ayeyarwady-region-20260730",
+        "title": "Myanmar, Flooding in Ayeyarwady Region"
       }
     ],
-    "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-23T03:16:34.030Z",
-    "donationSearched": "2026-11-21T03:36:27.910Z",
-    "directSearched": "2026-11-21T03:36:27.910Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-23T15:14:55.038Z",
+    "seen": "2026-11-23T15:14:55.038Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-11-22T21:07:12.393Z",
@@ -1168,7 +1381,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-23T03:16:34.030Z",
+    "seen": "2026-11-23T15:14:55.038Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
     "directSearchVersion": 2,
@@ -1233,79 +1446,5 @@
         "title": "Bhotekoshi Flood Relief & Early Recovery - GlobalGiving"
       }
     ]
-  },
-  "news-flood-flood-ps-3d066bfa68": {
-    "at": "2026-11-09T10:17:17.712Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Heavy rain and flooding hit Gaza from 7 November 2026, flooding shelters and tents across the Strip. A sand embankment collapsed onto tents in Deir al-Balah on 8 November, killing five people. Health Ministry figures say 350,000 displaced people were sleeping in the open as of 9 November. Rescue searches for missing people were continuing on 9 November.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Deir al-Balah",
-        "admin": "Deir al-Balah Governorate",
-        "country": "PS",
-        "kind": "town",
-        "impact": "Sand embankment collapsed onto tents, killing five"
-      },
-      {
-        "name": "Az-Zawayda",
-        "country": "PS",
-        "kind": "town",
-        "impact": "Tents flooded by rain"
-      },
-      {
-        "name": "Nuseirat refugee camp",
-        "country": "PS",
-        "kind": "site",
-        "impact": "Displacement shelter flooded"
-      },
-      {
-        "name": "Al-Remal",
-        "admin": "Gaza City",
-        "country": "PS",
-        "kind": "district",
-        "impact": "Tents flooded"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Deaths",
-        "value": "5",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter"
-      },
-      {
-        "label": "Injured",
-        "value": "5",
-        "sourceName": "arabnews.com",
-        "sourceUrl": "https://www.arabnews.com/middle-east/sand-cliff-collapses-onto-tents-in-gaza-killing-5-3010595"
-      },
-      {
-        "label": "Sleeping in the open",
-        "value": "350,000",
-        "sourceName": "aa.com.tr",
-        "sourceUrl": "https://www.aa.com.tr/en/middle-east/gaza-floods-leave-350-000-displaced-palestinians-without-shelter-health-ministry/4116383"
-      },
-      {
-        "label": "Tents flooded",
-        "value": "about 70,000",
-        "sourceName": "latintimes.com",
-        "sourceUrl": "https://www.latintimes.com/gaza-winter-storm-floods-displacement-tents-601032"
-      },
-      {
-        "label": "Emergency calls",
-        "value": "more than 1,500",
-        "sourceName": "newscord.org",
-        "sourceUrl": "https://newscord.org/article/heavy-rains-flood-70000-displacement-tents-in-gaza-gaza-civil-defense-reports-15--Story_20261107_Tensofthousandsoftenec9d3556"
-      }
-    ],
-    "donation": [],
-    "sources": [],
-    "membersHash": "news|PS#de27e437",
-    "seen": "2026-11-09T10:17:17.712Z",
-    "donationSearched": "2026-11-09T10:17:17.712Z",
-    "directSearched": "2026-11-09T10:17:17.712Z",
-    "directSearchVersion": 2
   }
 }
