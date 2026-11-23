@@ -84,10 +84,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
+    "seen": "2026-11-23T03:16:34.030Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-22T21:07:12.393Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1023877": {
     "at": "2026-11-21T03:36:27.910Z",
@@ -213,7 +213,7 @@
       }
     ],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-22T21:07:12.393Z",
+    "seen": "2026-11-23T03:16:34.030Z",
     "donationSearched": "2026-11-21T03:36:27.910Z",
     "directSearched": "2026-11-21T03:36:27.910Z",
     "directSearchVersion": 2
@@ -251,7 +251,7 @@
     ],
     "sources": [],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-22T21:07:12.393Z",
+    "seen": "2026-11-23T03:16:34.030Z",
     "donationSearched": "2026-11-21T13:08:19.870Z",
     "directSearched": "2026-11-21T13:08:19.870Z",
     "directSearchVersion": 2,
@@ -330,7 +330,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-22T21:07:12.393Z",
+    "seen": "2026-11-23T03:16:34.030Z",
     "donationSearched": "2026-11-22T02:40:38.622Z",
     "directSearched": "2026-11-22T02:40:38.622Z",
     "directSearchVersion": 2
@@ -362,7 +362,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#a49711a3",
-    "seen": "2026-11-22T21:07:12.393Z",
+    "seen": "2026-11-23T03:16:34.030Z",
     "donationSearched": "2026-11-21T13:08:19.870Z",
     "directSearched": "2026-11-21T13:08:19.870Z",
     "directSearchVersion": 2
@@ -520,80 +520,6 @@
       }
     ]
   },
-  "gdacs-volcano-vo-1000152": {
-    "at": "2026-11-07T02:20:53.260Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Kanlaon Volcano in Negros, Philippines, erupted on 10 October 2026, sending ash plumes above the summit. The Office of Civil Defense reports about 24,000 families and 94,000 people affected, with ashfall and sulfur odor in several Negros Occidental towns and cities. In the latest reports, from 12-13 October, Alert Level 2 remains in effect and PHIVOLCS says another explosive eruption is possible.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Don Salvador Benedicto",
-        "admin": "Negros Occidental",
-        "country": "PH",
-        "kind": "district",
-        "impact": "Ashfall in seven barangays"
-      },
-      {
-        "name": "La Carlota City",
-        "admin": "Negros Occidental",
-        "country": "PH",
-        "kind": "city",
-        "impact": "Ashfall and sulfur odor"
-      },
-      {
-        "name": "San Carlos City",
-        "admin": "Negros Occidental",
-        "country": "PH",
-        "kind": "city",
-        "impact": "Sulfur odor, no ashfall recorded"
-      },
-      {
-        "name": "Bago City",
-        "admin": "Negros Occidental",
-        "country": "PH",
-        "kind": "city",
-        "impact": "Volcanic cloud, booming, ground shaking"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Families affected",
-        "value": "about 24,000",
-        "sourceName": "english.news.cn",
-        "sourceUrl": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html"
-      },
-      {
-        "label": "People affected",
-        "value": "about 94,000",
-        "sourceName": "thestar.com.my",
-        "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/13/some-24000-families-affected-by-central-philippine-volcano-eruption"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "english.news.cn",
-        "url": "https://english.news.cn/20261012/d1b13692d7724a8595a44141823b82f6/c.html",
-        "title": "Some 24,000 families affected by C. Philippine volcano eruption-Xinhua"
-      },
-      {
-        "name": "dailyguardian.com.ph",
-        "url": "https://www.dailyguardian.com.ph/blog/kanlaon-ashfall-hits-eight-negros-occidental-villages",
-        "title": "Kanlaon ashfall hits eight Negros Occidental villages"
-      },
-      {
-        "name": "negrosnowdaily.com",
-        "url": "https://negrosnowdaily.com/sulfur-fumes-ashfall-affect-parts-of-negros/",
-        "title": "Sulfur fumes, ashfall affect parts of Negros"
-      }
-    ],
-    "membersHash": "gdacs|PH#00dc706e",
-    "seen": "2026-11-09T02:07:50.587Z",
-    "donationSearched": "2026-11-07T02:20:53.260Z",
-    "directSearched": "2026-11-07T02:20:53.260Z",
-    "directSearchVersion": 2
-  },
   "ifrc-earthquake-8055": {
     "at": "2026-11-22T21:07:12.393Z",
     "model": "claude-haiku-5-5",
@@ -678,6 +604,10 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
+    "seen": "2026-11-23T03:16:34.030Z",
+    "donationSearched": "2026-11-22T21:07:12.393Z",
+    "directSearched": "2026-11-22T21:07:12.393Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/colombia-earthquake-response/",
@@ -720,11 +650,7 @@
     ],
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ],
-    "donationSearched": "2026-11-22T21:07:12.393Z",
-    "directSearched": "2026-11-22T21:07:12.393Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-22T21:07:12.393Z"
+    ]
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-21T13:08:19.870Z",
@@ -753,7 +679,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-22T21:07:12.393Z",
+    "seen": "2026-11-23T03:16:34.030Z",
     "donationSearched": "2026-11-21T13:08:19.870Z",
     "directSearched": "2026-11-21T13:08:19.870Z",
     "directSearchVersion": 2
@@ -1124,7 +1050,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-22T21:07:12.393Z",
+    "seen": "2026-11-23T03:16:34.030Z",
     "donationSearched": "2026-11-21T03:36:27.910Z",
     "directSearched": "2026-11-21T03:36:27.910Z",
     "directSearchVersion": 2
@@ -1242,6 +1168,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
+    "seen": "2026-11-23T03:16:34.030Z",
+    "donationSearched": "2026-11-22T21:07:12.393Z",
+    "directSearched": "2026-11-22T21:07:12.393Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods/",
@@ -1302,11 +1232,7 @@
         "note": "Food, water, hygiene kits and temporary shelter for up to 200 households in Rasuwa.",
         "title": "Bhotekoshi Flood Relief & Early Recovery - GlobalGiving"
       }
-    ],
-    "donationSearched": "2026-11-22T21:07:12.393Z",
-    "directSearched": "2026-11-22T21:07:12.393Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-22T21:07:12.393Z"
+    ]
   },
   "news-flood-flood-ps-3d066bfa68": {
     "at": "2026-11-09T10:17:17.712Z",
@@ -1381,60 +1307,5 @@
     "donationSearched": "2026-11-09T10:17:17.712Z",
     "directSearched": "2026-11-09T10:17:17.712Z",
     "directSearchVersion": 2
-  },
-  "news-flood-flood-ps-d37dff4adf": {
-    "at": "2026-11-09T02:07:50.587Z",
-    "model": "claude-haiku-5-5",
-    "searches": 1,
-    "summary": "",
-    "ongoing": true,
-    "places": [],
-    "figures": [],
-    "donation": [
-      {
-        "url": "https://donate.redcrossredcrescent.org/~share?cid=1074&lang=en_EN",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "General Gaza humanitarian crisis fund supporting Palestine Red Crescent's ongoing response.",
-        "specific": false
-      },
-      {
-        "url": "https://donate.redcrossredcrescent.org/ifrc/middle-east-complex-emergency-zakat",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "General Middle East complex emergency Zakat fund, not for this event.",
-        "specific": false
-      },
-      {
-        "url": "https://www.icrc.org/en/article/gaza-severe-winter-conditions-compound-humanitarian-crisis-displaced-palestinians",
-        "org": "ICRC",
-        "kind": "agency",
-        "note": "Article on Gaza winter conditions with donate link; general, not this storm.",
-        "specific": false
-      }
-    ],
-    "sources": [],
-    "membersHash": "news|PS#6e9dfe0a",
-    "seen": "2026-11-09T02:07:50.587Z",
-    "donationSearched": "2026-11-09T02:07:50.587Z",
-    "directSearched": "2026-11-09T02:07:50.587Z",
-    "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://actionforhumanity.org/projects/emergency/gaza-floods-appeal/",
-        "org": "Action For Humanity",
-        "kind": "local",
-        "note": "Blankets, warm clothing, winter kits, water and hygiene supplies for flood-hit Gaza families.",
-        "title": "Gaza Floods Appeal"
-      },
-      {
-        "url": "https://www.islamic-relief.org.uk/giving/appeals/palestine/gaza/",
-        "org": "Islamic Relief",
-        "kind": "local",
-        "note": "Winter and shelter support for displaced Gaza families; broader appeal that names flooded tents.",
-        "title": "Donate to Gaza - Gaza Appeal",
-        "published": "2026-11-09T02:07:50.587Z"
-      }
-    ]
   }
 }
