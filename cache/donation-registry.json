@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-23T15:14:55.038Z",
+  "updated": "2026-11-24T03:18:08.542Z",
   "fetched": {
-    "societies": "2026-11-23T15:14:55.038Z",
-    "uncr": "2026-11-23T15:14:55.038Z"
+    "societies": "2026-11-24T03:18:08.542Z",
+    "uncr": "2026-11-24T03:18:08.542Z"
   },
   "societies": {
     "AF": {
@@ -2459,22 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "redcross.org.mm/donate/donate-now": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-16T19:00:06.803Z",
-      "chain": [
-        "https://www.redcross.org.mm/donate/donate-now/"
-      ]
-    },
-    "redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-16T19:00:06.803Z",
-      "chain": [
-        "https://www.redcross.org.mm/my/%E1%80%9A%E1%80%81%E1%80%AF-%E1%80%9C%E1%80%BE%E1%80%B0%E1%80%92%E1%80%AB%E1%80%94%E1%80%BA%E1%80%B8%E1%80%9B%E1%80%94%E1%80%BA/"
-      ]
-    },
     "indianredcross.org": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2618,47 +2602,6 @@
       "name": "Oxfam GB",
       "title": "Oxfam GB | Colombia Earthquake Appeal"
     },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-22T21:07:12.393Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-22T21:07:12.393Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
-    "honduras.un.org/es": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-22T21:07:12.393Z",
-      "chain": [
-        "https://honduras.un.org/es"
-      ]
-    },
-    "ayodonor.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-22T21:07:12.393Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-11-22T21:07:12.393Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
-    },
     "donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~mi-donativo": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2676,67 +2619,92 @@
         "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/~my-donation?_cv=1"
       ]
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-23T03:16:34.030Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-23T03:16:34.030Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-23T03:16:34.030Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
-    },
     "cruzroja.gt/en/donate": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-23T15:14:55.038Z",
       "chain": [
         "https://www.cruzroja.gt/en/donate/"
-      ],
-      "checked": "2026-11-23T15:14:55.038Z"
+      ]
     },
     "local4:ifrc-earthquake-8060:donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Indonesia\"",
+      "checked": "2026-11-23T15:14:55.038Z",
       "chain": [
         "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita"
       ],
       "place": "Indonesia",
       "name": "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara…",
-      "title": "Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita",
-      "checked": "2026-11-23T15:14:55.038Z"
+      "title": "Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita"
     },
     "go.ifrc.org/countries/85": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-23T15:14:55.038Z",
       "chain": [
         "https://go.ifrc.org/countries/85"
-      ],
-      "checked": "2026-11-23T15:14:55.038Z"
+      ]
     },
     "donasi.pmi.or.id/donasi": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-23T15:14:55.038Z",
       "chain": [
         "https://donasi.pmi.or.id/donasi/"
       ],
+      "blocked": true
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
+      ],
+      "checked": "2026-11-24T03:18:08.542Z"
+    },
+    "redcross.or.ke/drought-emergency-2026": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://redcross.or.ke/drought-emergency-2026/"
+      ],
+      "checked": "2026-11-24T03:18:08.542Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
       "blocked": true,
-      "checked": "2026-11-23T15:14:55.038Z"
+      "checked": "2026-11-24T03:18:08.542Z"
+    },
+    "ayodonor.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-24T03:18:08.542Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-11-24T03:18:08.542Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-24T03:18:08.542Z"
     }
   }
 }

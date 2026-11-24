@@ -84,7 +84,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-23T15:14:55.038Z",
+    "seen": "2026-11-24T03:18:08.542Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
     "directSearchVersion": 2
@@ -100,10 +100,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "seen": "2026-11-24T03:18:08.542Z",
     "donationSearched": "2026-11-23T15:14:55.038Z",
     "directSearched": "2026-11-23T15:14:55.038Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-23T15:14:55.038Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-23T15:14:55.038Z",
@@ -252,6 +252,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
+    "seen": "2026-11-24T03:18:08.542Z",
+    "donationSearched": "2026-11-23T15:14:55.038Z",
+    "directSearched": "2026-11-23T15:14:55.038Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
@@ -260,30 +264,52 @@
         "note": "Rural communities and forest wildlife hit by drought in Nicaragua and El Salvador",
         "title": "Emergency appeal - effects of El Nino - GlobalGiving"
       }
-    ],
-    "donationSearched": "2026-11-23T15:14:55.038Z",
-    "directSearched": "2026-11-23T15:14:55.038Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-23T15:14:55.038Z"
+    ]
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-11-22T02:40:38.622Z",
+    "at": "2026-11-24T03:18:08.542Z",
     "model": "claude-haiku-5-5",
-    "searches": 2,
-    "summary": "A drought affecting East Africa and the Central Sahel started on 21 May 2026 and was still ongoing as of 19 November 2026, according to FEWS NET. Poor rainfall, prolonged dry spells and above-average temperatures were reported during June–September 2026. Ethiopia's IFRC GO operation reports onset delays of up to 4 weeks in parts of the country. No end date has been reported.",
+    "searches": 4,
+    "summary": "Drought in East Africa and the Central Sahel, listed by GDACS from 21 May 2026 across 13 countries. FEWS NET reports abnormal dryness and drought persisting in East Africa in late November 2026. Reports describe crop failure, livestock deaths and food insecurity in Ethiopia and Kenya, and displacement in Somalia. The sources found do not directly tie to this GDACS event.",
     "ongoing": true,
     "places": [
       {
-        "name": "Northern Eastern Ethiopia",
+        "name": "West Hararghe",
+        "admin": "Oromia",
         "country": "ET",
-        "kind": "region",
-        "impact": "Rainy season onset delayed up to 4 weeks"
+        "kind": "district",
+        "impact": "Crop failure and livestock deaths"
       },
       {
-        "name": "Southeastern Ethiopia",
+        "name": "East Hararghe",
+        "admin": "Oromia",
+        "country": "ET",
+        "kind": "district",
+        "impact": "Crop failure and livestock deaths"
+      },
+      {
+        "name": "Amhara",
         "country": "ET",
         "kind": "region",
-        "impact": "Rainy season onset delayed up to 4 weeks"
+        "impact": "Northern parts affected by drought impacts"
+      },
+      {
+        "name": "Tigray",
+        "country": "ET",
+        "kind": "region",
+        "impact": "Parts affected by drought impacts"
+      },
+      {
+        "name": "Somali Region",
+        "country": "ET",
+        "kind": "region",
+        "impact": "Rainfed crops largely failed"
+      },
+      {
+        "name": "Turkana County",
+        "country": "KE",
+        "kind": "district",
+        "impact": "Drought-hit, livestock deaths"
       }
     ],
     "figures": [
@@ -292,15 +318,26 @@
         "value": "over 3.5 million people",
         "sourceName": "go.ifrc.org",
         "sourceUrl": "https://go.ifrc.org/emergencies/8079/overview"
+      },
+      {
+        "label": "Displaced",
+        "value": "more than 185,000 people",
+        "sourceName": "aa.com.tr",
+        "sourceUrl": "https://www.aa.com.tr/en/africa/poor-rainy-seasons-deepen-drought-risks-across-horn-of-africa-un-agency/3775639"
+      },
+      {
+        "label": "People facing hunger",
+        "value": "over two million people",
+        "sourceName": "aljazeera.com",
+        "sourceUrl": "https://www.aljazeera.com/gallery/2026/2/10/severe-drought-leaves-over-two-million-kenyans-hungry-and-desperate"
       }
     ],
     "donation": [
       {
-        "url": "https://go.ifrc.org/emergencies/8079/overview",
-        "org": "IFRC",
+        "url": "https://redcross.or.ke/drought-emergency-2026/",
+        "org": "Kenya Red Cross Society",
         "kind": "society",
-        "note": "IFRC operation page for Ethiopia drought appeal MDRET042; donation not confirmed.",
-        "specific": false
+        "note": "Drought Crisis 2026 appeal page, Kenya only"
       }
     ],
     "sources": [
@@ -310,31 +347,26 @@
         "title": "El Niño is present. Abnormal dryness and drought conditions persist in East Africa, northwestern and southeastern Kazakhstan, and parts of Central America…"
       },
       {
-        "name": "fews.net",
-        "url": "https://fews.net/east-africa/seasonal-monitor/november-2026",
-        "title": "An erratic start of September through December rainfall season across East Africa"
+        "name": "joint-research-centre.ec.europa.eu",
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/east-africa-middle-east-and-central-asia-hit-repeated-droughts-2021-2026-05-20_en",
+        "title": "East Africa, the Middle East and Central Asia hit by repeated droughts since 2021 - Joint Research Centre"
       },
       {
-        "name": "fews.net",
-        "url": "https://fews.net/topics/el-nino-2026-2027",
-        "title": "El Niño 2026-2027"
+        "name": "birrmetrics.com",
+        "url": "https://birrmetrics.com/horn-of-africa-faces-humanitarian-crisis-should-2026-rains-underperform/",
+        "title": "Horn of Africa Faces Humanitarian Crisis Should 2026 Rains Underperform - Birr Metrics"
       },
       {
-        "name": "go.ifrc.org",
-        "url": "https://go.ifrc.org/emergencies/8079/overview",
-        "title": "IFRC GO - Emergency - ETH: Drought - 08-2026 - Ethiopia 2026 Drought"
-      },
-      {
-        "name": "circleofblue.org",
-        "url": "https://www.circleofblue.org/newsletter/the-stream-november-10-2026-el-nino-likely-to-uproot-millions-in-eastern-africa/",
-        "title": "The Stream, November 10, 2026: El Niño Likely To Uproot Millions in Eastern Africa - Circle of Blue"
+        "name": "redcross.or.ke",
+        "url": "https://redcross.or.ke/drought-emergency-2026/",
+        "title": "Drought Crisis 2026"
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-23T15:14:55.038Z",
-    "donationSearched": "2026-11-22T02:40:38.622Z",
-    "directSearched": "2026-11-22T02:40:38.622Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-24T03:18:08.542Z",
+    "directSearched": "2026-11-24T03:18:08.542Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-24T03:18:08.542Z"
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-11-11T18:15:18.314Z",
@@ -378,10 +410,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#a49711a3",
+    "seen": "2026-11-24T03:18:08.542Z",
     "donationSearched": "2026-11-23T15:14:55.038Z",
     "directSearched": "2026-11-23T15:14:55.038Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-23T15:14:55.038Z"
+    "directSearchVersion": 2
   },
   "gdacs-flood-fl-1104239": {
     "at": "2026-11-10T04:32:08.459Z",
@@ -620,7 +652,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-23T15:14:55.038Z",
+    "seen": "2026-11-24T03:18:08.542Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
     "directSearchVersion": 2,
@@ -842,6 +874,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
+    "seen": "2026-11-24T03:18:08.542Z",
     "donationSearched": "2026-11-23T15:14:55.038Z",
     "directSearched": "2026-11-23T15:14:55.038Z",
     "directSearchVersion": 2,
@@ -882,8 +915,7 @@
         "note": "Appeal for Christian families on Flores funding blankets, hygiene items and emergency food.",
         "title": "Please Support Christians After Devastating Earthquake Hits Indonesia"
       }
-    ],
-    "seen": "2026-11-23T15:14:55.038Z"
+    ]
   },
   "ifrc-flood-8013": {
     "at": "2026-11-08T22:35:18.778Z",
@@ -1265,8 +1297,8 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "donationSearched": "2026-11-23T15:14:55.038Z",
-    "seen": "2026-11-23T15:14:55.038Z"
+    "seen": "2026-11-24T03:18:08.542Z",
+    "donationSearched": "2026-11-23T15:14:55.038Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-11-22T21:07:12.393Z",
@@ -1381,7 +1413,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-23T15:14:55.038Z",
+    "seen": "2026-11-24T03:18:08.542Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
     "directSearchVersion": 2,
