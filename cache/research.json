@@ -84,7 +84,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-24T03:18:08.542Z",
+    "seen": "2026-11-24T15:20:33.215Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
     "directSearchVersion": 2
@@ -100,7 +100,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-24T03:18:08.542Z",
+    "seen": "2026-11-24T15:20:33.215Z",
     "donationSearched": "2026-11-23T15:14:55.038Z",
     "directSearched": "2026-11-23T15:14:55.038Z",
     "directSearchVersion": 2
@@ -252,7 +252,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-24T03:18:08.542Z",
+    "seen": "2026-11-24T15:20:33.215Z",
     "donationSearched": "2026-11-23T15:14:55.038Z",
     "directSearched": "2026-11-23T15:14:55.038Z",
     "directSearchVersion": 2,
@@ -363,10 +363,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
+    "seen": "2026-11-24T15:20:33.215Z",
     "donationSearched": "2026-11-24T03:18:08.542Z",
     "directSearched": "2026-11-24T03:18:08.542Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-24T03:18:08.542Z"
+    "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-11-11T18:15:18.314Z",
@@ -410,163 +410,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs,usgs|CN#a49711a3",
-    "seen": "2026-11-24T03:18:08.542Z",
+    "seen": "2026-11-24T15:20:33.215Z",
     "donationSearched": "2026-11-23T15:14:55.038Z",
     "directSearched": "2026-11-23T15:14:55.038Z",
     "directSearchVersion": 2
-  },
-  "gdacs-flood-fl-1104239": {
-    "at": "2026-11-10T04:32:08.459Z",
-    "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Flooding has affected Selangor, Perak and Pahang, according to reports dated 5 to 10 November 2026. Eight people were swept away at Sungai Pertak in Kuala Kubu Bharu on 9 November; five bodies have been found and three remain missing. Evacuee numbers fell in Selangor but rose in Perak. A flood warning covers Jerantut and Rompin from 11 to 14 November. Cash aid payments for affected Selangor households were due to begin on 10 November.",
-    "ongoing": true,
-    "places": [
-      {
-        "name": "Kuala Selangor",
-        "admin": "Selangor",
-        "country": "MY",
-        "kind": "district",
-        "impact": "Most evacuees at relief centres (864 victims)"
-      },
-      {
-        "name": "Sungai Pertak",
-        "admin": "Selangor",
-        "country": "MY",
-        "kind": "site",
-        "impact": "Five bodies found, three missing"
-      },
-      {
-        "name": "Kuala Kubu Bharu",
-        "admin": "Selangor",
-        "country": "MY",
-        "kind": "town",
-        "impact": "Eight swept away, nine stranded"
-      },
-      {
-        "name": "Kampung Melayu Subang",
-        "admin": "Selangor",
-        "country": "MY",
-        "kind": "town",
-        "impact": "Repeated flash floods; 92 houses flooded"
-      },
-      {
-        "name": "Shah Alam",
-        "admin": "Selangor",
-        "country": "MY",
-        "kind": "city",
-        "impact": "Relief centres opened"
-      },
-      {
-        "name": "Klang",
-        "admin": "Selangor",
-        "country": "MY",
-        "kind": "town",
-        "impact": "Relief centre opened"
-      },
-      {
-        "name": "Hilir Perak",
-        "admin": "Perak",
-        "country": "MY",
-        "kind": "district",
-        "impact": "Flood and storm victims in relief centres"
-      },
-      {
-        "name": "Manjung",
-        "admin": "Perak",
-        "country": "MY",
-        "kind": "district",
-        "impact": "Storm-affected group in relief centres"
-      },
-      {
-        "name": "Jerantut",
-        "admin": "Pahang",
-        "country": "MY",
-        "kind": "district",
-        "impact": "Flooding forecast 11-14 November"
-      },
-      {
-        "name": "Rompin",
-        "admin": "Pahang",
-        "country": "MY",
-        "kind": "district",
-        "impact": "Flooding forecast 11-14 November"
-      }
-    ],
-    "figures": [
-      {
-        "label": "Evacuees (Selangor, 9 Nov, 11 am)",
-        "value": "632 people from 177 families",
-        "sourceName": "mediaselangor.com",
-        "sourceUrl": "https://mediaselangor.com/en/2026/11/405820"
-      },
-      {
-        "label": "Deaths (Sungai Pertak)",
-        "value": "5 bodies located",
-        "sourceName": "malaymail.com",
-        "sourceUrl": "https://www.malaymail.com/news/malaysia/2026/11/10/water-surge-at-pertak-river-four-more-bodies-found-bringing-toll-to-five/242667"
-      },
-      {
-        "label": "Missing (Sungai Pertak)",
-        "value": "3 still missing",
-        "sourceName": "malaymail.com",
-        "sourceUrl": "https://www.malaymail.com/news/malaysia/2026/11/10/water-surge-at-pertak-river-four-more-bodies-found-bringing-toll-to-five/242667"
-      },
-      {
-        "label": "Rescued (Sungai Pertak)",
-        "value": "19 people saved",
-        "sourceName": "freemalaysiatoday.com",
-        "sourceUrl": "https://www.freemalaysiatoday.com/category/nation/2026/11/10/9-stranded-8-swept-away-by-surging-waters-at-sg-pertak"
-      }
-    ],
-    "donation": [],
-    "sources": [
-      {
-        "name": "malaymail.com",
-        "url": "https://www.malaymail.com/news/malaysia/2026/11/10/flood-warning-issued-for-low-lying-areas-in-jerantut-rompin-in-pahang-from-tomorrow/242637",
-        "title": "Flood warning issued for low-lying areas in Jerantut, Rompin in Pahang from tomorrow"
-      },
-      {
-        "name": "mediaselangor.com",
-        "url": "https://mediaselangor.com/en/2026/11/405275",
-        "title": "Selangor flood victims rise to 1,242 as rivers swell"
-      },
-      {
-        "name": "mediaselangor.com",
-        "url": "https://mediaselangor.com/en/2026/11/405820",
-        "title": "Five temporary relief centres opened; 632 victims relocated in Selangor as of 11 am"
-      },
-      {
-        "name": "freemalaysiatoday.com",
-        "url": "https://www.freemalaysiatoday.com/category/nation/2026/11/07/flood-alert-for-coastal-residents-with-5-2m-high-tide-tomorrow",
-        "title": "Flood alert for coastal residents, with 5.2m high tide tomorrow"
-      },
-      {
-        "name": "mediaselangor.com",
-        "url": "https://mediaselangor.com/en/2026/11/405483",
-        "title": "Flood victims in Selangor, Perak rise to over 1,400"
-      },
-      {
-        "name": "thestar.com.my",
-        "url": "https://www.thestar.com.my/news/nation/2026/11/09/eligible-households-affected-by-floods-in-selangor-to-receive-rm2500-says-pmo",
-        "title": "Eligible households affected by floods in Selangor to receive RM2,500, says PMO"
-      }
-    ],
-    "membersHash": "gdacs,news|MY#c3d5f9dd",
-    "seen": "2026-11-10T04:32:08.459Z",
-    "donationSearched": "2026-11-10T04:32:08.459Z",
-    "directSearched": "2026-11-10T04:32:08.459Z",
-    "directSearchVersion": 2,
-    "direct": [
-      {
-        "url": "https://www.pikdm.org.my/misi-bantuan-banjir-selangor/",
-        "org": "PIKDM",
-        "kind": "local",
-        "note": "Selangor flood appeal seeking cash, goods and volunteers for food, clothing, hygiene items, blankets and water.",
-        "title": "Misi Bantuan Banjir Selangor",
-        "published": "2026-11-06T04:32:08.459Z"
-      }
-    ]
   },
   "ifrc-earthquake-8055": {
     "at": "2026-11-22T21:07:12.393Z",
@@ -652,7 +499,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-24T03:18:08.542Z",
+    "seen": "2026-11-24T15:20:33.215Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
     "directSearchVersion": 2,
@@ -874,7 +721,7 @@
       }
     ],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-24T03:18:08.542Z",
+    "seen": "2026-11-24T15:20:33.215Z",
     "donationSearched": "2026-11-23T15:14:55.038Z",
     "directSearched": "2026-11-23T15:14:55.038Z",
     "directSearchVersion": 2,
@@ -1297,8 +1144,10 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-24T03:18:08.542Z",
-    "donationSearched": "2026-11-23T15:14:55.038Z"
+    "seen": "2026-11-24T15:20:33.215Z",
+    "donationSearched": "2026-11-23T15:14:55.038Z",
+    "directSearched": "2026-11-24T15:20:33.215Z",
+    "directSearchVersion": 2
   },
   "ifrc-flood-8073": {
     "at": "2026-11-22T21:07:12.393Z",
@@ -1413,7 +1262,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-24T03:18:08.542Z",
+    "seen": "2026-11-24T15:20:33.215Z",
     "donationSearched": "2026-11-22T21:07:12.393Z",
     "directSearched": "2026-11-22T21:07:12.393Z",
     "directSearchVersion": 2,
