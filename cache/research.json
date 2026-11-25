@@ -144,26 +144,120 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-25T11:48:24.724Z",
+    "seen": "2026-11-25T22:10:28.555Z",
     "donationSearched": "2026-11-25T01:13:09.815Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1023877": {
-    "at": "2026-11-23T15:14:55.038Z",
+    "at": "2026-11-25T22:10:28.555Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A drought in Northern South America and the Panama Isthmus, starting 21 September 2022, is listed in a GDACS alert feed, last updated 23 November 2026. The feed gives an area of about 1,683,760 km² and a severity of significant. Official reports and current conditions could not be confirmed, and no affected places or impacts were verified.",
+    "summary": "A drought linked to the 2026 El Niño is affecting Colombia and the Panama Canal watershed, and it was ongoing at the latest reports in late November 2026. Rainfall in Cundinamarca, Colombia, was 96% below normal in November, and the regional authority lists 18 critical municipalities. The IDEAM expects dry conditions to continue nationwide, with December 2026 and January 2027 the most critical months. Gatún and Alhajuela lakes are low, and Panama Canal daily transits have…",
     "ongoing": true,
-    "places": [],
-    "figures": [],
+    "places": [
+      {
+        "name": "Cundinamarca",
+        "country": "CO",
+        "kind": "region",
+        "impact": "Extreme drought; record rainfall deficit in November 2026"
+      },
+      {
+        "name": "Puerto Salgar",
+        "admin": "Cundinamarca",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Under public calamity"
+      },
+      {
+        "name": "Pulí",
+        "admin": "Cundinamarca",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Under public calamity"
+      },
+      {
+        "name": "Viotá",
+        "admin": "Cundinamarca",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Under public calamity"
+      },
+      {
+        "name": "Caparrapí",
+        "admin": "Cundinamarca",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Red alert for drought"
+      },
+      {
+        "name": "Vergara",
+        "admin": "Cundinamarca",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Red alert for drought"
+      },
+      {
+        "name": "Villeta",
+        "admin": "Cundinamarca",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Red alert for drought"
+      },
+      {
+        "name": "Silvania",
+        "admin": "Cundinamarca",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Red alert for drought"
+      },
+      {
+        "name": "El Colegio",
+        "admin": "Cundinamarca",
+        "country": "CO",
+        "kind": "town",
+        "impact": "Red alert for drought"
+      },
+      {
+        "name": "Gatún Lake",
+        "country": "PA",
+        "kind": "site",
+        "impact": "Water levels low; canal transit restrictions"
+      },
+      {
+        "name": "Alhajuela Lake",
+        "country": "PA",
+        "kind": "site",
+        "impact": "Water levels low; canal transit restrictions"
+      }
+    ],
+    "figures": [
+      {
+        "label": "Rainfall deficit",
+        "value": "96% below normal",
+        "sourceName": "eltiempo.com",
+        "sourceUrl": "https://www.eltiempo.com/amp/bogota/sequia-en-cundinamarca-rompe-registros-lluvias-caen-un-96-y-la-situacion-ya-supera-la-de-el-nino-de-3603320"
+      },
+      {
+        "label": "Panama Canal watershed rainfall",
+        "value": "about 34% below average (May to August 2026)",
+        "sourceName": "industrialinfo.com",
+        "sourceUrl": "https://www.industrialinfo.com/news/article/panama-canal-faces-growing-drought-and-transit-curtailments--362420"
+      },
+      {
+        "label": "Daily Panama Canal transits",
+        "value": "34 per day",
+        "sourceName": "fenixgc.com",
+        "sourceUrl": "https://fenixgc.com/en/news/the-years-first-transit-restriction-at-the-panama-canal/"
+      }
+    ],
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-25T11:48:24.724Z",
-    "donationSearched": "2026-11-23T15:14:55.038Z",
-    "directSearched": "2026-11-23T15:14:55.038Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-25T22:10:28.555Z",
+    "directSearched": "2026-11-25T22:10:28.555Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-25T22:10:28.555Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-23T15:14:55.038Z",
@@ -312,7 +406,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-25T11:48:24.724Z",
+    "seen": "2026-11-25T22:10:28.555Z",
     "donationSearched": "2026-11-23T15:14:55.038Z",
     "directSearched": "2026-11-23T15:14:55.038Z",
     "directSearchVersion": 2,
@@ -423,7 +517,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-25T11:48:24.724Z",
+    "seen": "2026-11-25T22:10:28.555Z",
     "donationSearched": "2026-11-24T03:18:08.542Z",
     "directSearched": "2026-11-24T03:18:08.542Z",
     "directSearchVersion": 2
@@ -445,35 +539,62 @@
     "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1578540": {
-    "at": "2026-11-23T15:14:55.038Z",
+    "at": "2026-11-25T22:10:28.555Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "A magnitude 5.9 earthquake (USGS; other agencies gave 5.6 and 5.7) struck northern Qinghai Province, China, on 21 November 2026 at 10:45 UTC, with epicentre near Delingha City. Preliminary local assessments reported no casualties and no collapsed buildings. Emergency inspections in surrounding areas were continuing as of 22 November.",
+    "searches": 3,
+    "summary": "A magnitude 5.9 earthquake (USGS; other agencies reported 5.6 to 5.7) struck near Delingha City in Qinghai Province, northwest China, on 21 November 2026 at 10:45 UTC. The epicentre was about 70 km from Delingha City. As of 22 November, local authorities were continuing emergency inspections. No casualties or collapsed buildings were reported.",
     "ongoing": true,
     "places": [
       {
         "name": "Delingha",
-        "admin": "Haixi Mongol and Tibetan Autonomous Prefecture, Qinghai",
+        "admin": "Haixi Mongol and Tibetan Autonomous Prefecture",
         "country": "CN",
         "kind": "city",
-        "impact": "Epicentre area; strong shaking felt"
+        "impact": "strong shaking felt; inspections carried out; no casualties or collapses reported"
       },
       {
         "name": "Dulan County",
-        "admin": "Haixi Prefecture, Qinghai",
+        "admin": "Haixi Mongol and Tibetan Autonomous Prefecture",
         "country": "CN",
         "kind": "district",
-        "impact": "Strong shaking felt"
+        "impact": "strong shaking felt"
+      },
+      {
+        "name": "Qinghai",
+        "country": "CN",
+        "kind": "region",
+        "impact": "tremors felt further away; no damage reported"
       }
     ],
     "figures": [],
     "donation": [],
-    "sources": [],
+    "sources": [
+      {
+        "name": "thepeninsulaqatar.com",
+        "url": "https://thepeninsulaqatar.com/article/21/11/2026/56-magnitude-quake-hits-qinghai-in-nw-china",
+        "title": "5.6-magnitude quake hits Qinghai in NW China"
+      },
+      {
+        "name": "chinadailyhk.com",
+        "url": "https://www.chinadailyhk.com/hk/article/265320",
+        "title": "6.0-magnitude quake hits Qinghai"
+      },
+      {
+        "name": "quakemap24.com",
+        "url": "https://quakemap24.com/en/event/5ce787c79f37c0a36255fc8335ff2238403658cb/earthquake-m5-7-delingha-city-qinghai-2026-11-21",
+        "title": "M5.7 Earthquake near Delingha City, Qinghai (China)"
+      },
+      {
+        "name": "webull.com",
+        "url": "https://www.webull.com/news/15962098962711552",
+        "title": "At 18:45 on the 21st, a 5.6 magnitude earthquake occurred in Delingha, Haixi Mongol and Tibetan Autonomous Prefecture, Qinghai Province. The depth of the…"
+      }
+    ],
     "membersHash": "gdacs,usgs|CN#a49711a3",
-    "seen": "2026-11-25T11:48:24.724Z",
-    "donationSearched": "2026-11-23T15:14:55.038Z",
-    "directSearched": "2026-11-23T15:14:55.038Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-25T22:10:28.555Z",
+    "directSearched": "2026-11-25T22:10:28.555Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-25T22:10:28.555Z"
   },
   "ifrc-earthquake-8055": {
     "at": "2026-11-25T01:13:09.815Z",
@@ -568,7 +689,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-25T11:48:24.724Z",
+    "seen": "2026-11-25T22:10:28.555Z",
     "donationSearched": "2026-11-25T01:13:09.815Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2,
@@ -639,10 +760,10 @@
     ]
   },
   "ifrc-earthquake-8060": {
-    "at": "2026-11-23T15:14:55.038Z",
+    "at": "2026-11-25T22:10:28.555Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "On 15 August 2026, a magnitude 7.7 earthquake struck Nagekeo Regency in East Nusa Tenggara, Indonesia. BNPB reported 105 deaths, 1,678 injuries and 179,037 displaced as of 25 August. Aftershocks continued, and 188,161 people remained at evacuation centers on 30 August, with evacuee numbers falling. The latest report found is dated 1 September 2026.",
+    "summary": "A magnitude 7.7 earthquake struck off Nagekeo Regency, East Nusa Tenggara, Indonesia, on 15 August 2026 at 04:58 WIB. Damage was reported to buildings in Nagekeo and Bima. Reports cite 100 deaths and more than 5,000 people in evacuation shelters. The research tool failed, so these figures come from source headlines, and no later status was found.",
     "ongoing": true,
     "places": [
       {
@@ -650,172 +771,54 @@
         "admin": "East Nusa Tenggara",
         "country": "ID",
         "kind": "district",
-        "impact": "Epicentre; shaking VII MMI; 50,574 displaced"
-      },
-      {
-        "name": "Mbay",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Shaking VII MMI; residents rushed out of buildings"
-      },
-      {
-        "name": "Maumere Port",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "site",
-        "impact": "Structural damage to port complex and piers"
-      },
-      {
-        "name": "Sikka",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Two deaths from falling building materials"
-      },
-      {
-        "name": "Ngada",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Shaking up to VII MMI"
-      },
-      {
-        "name": "Bajawa",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Shaking VI MMI"
-      },
-      {
-        "name": "Manggarai",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "50,556 displaced"
-      },
-      {
-        "name": "Ruteng",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Shaking V MMI; partial building damage"
-      },
-      {
-        "name": "East Manggarai",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "district",
-        "impact": "Building damage, including Lambaleda Subdistrict"
-      },
-      {
-        "name": "Ende",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Cracks and partial damage to buildings"
-      },
-      {
-        "name": "Labuan Bajo",
-        "admin": "East Nusa Tenggara",
-        "country": "ID",
-        "kind": "town",
-        "impact": "Cracks and partial damage to buildings"
+        "impact": "Epicentre area; buildings damaged"
       },
       {
         "name": "Bima",
-        "admin": "West Nusa Tenggara",
         "country": "ID",
-        "kind": "city",
-        "impact": "Damage to several buildings"
+        "kind": "town",
+        "impact": "Buildings damaged"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "105",
-        "sourceName": "thejakartapost.com",
-        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
-      },
-      {
-        "label": "Injuries",
-        "value": "1,678",
-        "sourceName": "thejakartapost.com",
-        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
+        "value": "100",
+        "sourceName": "tempo.co",
+        "sourceUrl": "https://www.tempo.co/politik/korban-tewas-gempa-ntt-mencapai-100-orang-2283640"
       },
       {
         "label": "Displaced",
-        "value": "188,161 people",
-        "sourceName": "en.antaranews.com",
-        "sourceUrl": "https://en.antaranews.com/news/429081/bnpb-reports-ntt-quake-evacuees-decline-as-aftershocks-begin-to-ease"
-      },
-      {
-        "label": "Homes damaged",
-        "value": "nearly 78,000",
-        "sourceName": "thejakartapost.com",
-        "sourceUrl": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget"
+        "value": "more than 5,000 people",
+        "sourceName": "bnpb.go.id",
+        "sourceUrl": "https://www.bnpb.go.id/berita/update-pascagempa-ntt-lebih-5000-warga-bertahan-di-pengungsian"
       }
     ],
     "donation": [
       {
         "url": "https://ayodonor.pmi.or.id/",
-        "org": "PMI Kota Bekasi (Indonesian Red Cross)",
+        "org": "Palang Merah Indonesia (PMI)",
         "kind": "society",
-        "note": "Ayodonor platform branch campaign appealing for help for quake-affected East Nusa Tenggara people.",
+        "note": "PMI campaign appeal for the NTT earthquake via Ayodonor; check page before donating.",
         "specific": true
       },
       {
         "url": "https://go.ifrc.org/countries/85",
-        "org": "IFRC",
+        "org": "IFRC GO",
         "kind": "society",
-        "note": "IFRC GO appeal listing for DREF MDRID029 East Nusa Tenggara Earthquake, 0% funded.",
+        "note": "IFRC DREF appeal listing (MDRID029) for the earthquake; not a donation form.",
         "specific": true
       },
       {
-        "url": "https://donasi.pmi.or.id/donasi/",
-        "org": "PMI (Indonesian Red Cross)",
+        "url": "https://ayodonor.pmi.or.id/?page=index",
+        "org": "UDD PMI Kota Bekasi",
         "kind": "society",
-        "note": "General PMI donation fund page; does not mention this earthquake.",
-        "specific": false
+        "note": "News item on donations for NTT earthquake victims; links to no donation form.",
+        "specific": true
       }
     ],
-    "sources": [
-      {
-        "name": "thejakartapost.com",
-        "url": "https://www.thejakartapost.com/opinion/2026/09/02/analysis-when-a-disaster-prone-nation-cuts-its-safety-net-budget",
-        "title": "Analysis: When a disaster-prone nation cuts its safety net budget - Academia - The Jakarta Post"
-      },
-      {
-        "name": "en.antaranews.com",
-        "url": "https://en.antaranews.com/news/429081/bnpb-reports-ntt-quake-evacuees-decline-as-aftershocks-begin-to-ease",
-        "title": "BNPB reports NTT quake evacuees decline as aftershocks begin to ease - ANTARA News"
-      },
-      {
-        "name": "genupdate.id",
-        "url": "https://genupdate.id/gempa-bumi-ntt-m7-7-nagekeo/",
-        "title": "Gempa Bumi NTT M7,7 Guncang Nagekeo."
-      },
-      {
-        "name": "ahacentre.org",
-        "url": "https://ahacentre.org/flash-update/flash-update-no-1-m7-7-earthquake-in-east-nusa-tenggara-indonesia-15-august-2026/",
-        "title": "FLASH UPDATE: No. 1"
-      },
-      {
-        "name": "human-initiative.org",
-        "url": "https://human-initiative.org/situation-report-1-nagekeo-earthquake-east-nusa-tenggara/?lang=en",
-        "title": "Situation Report #1 Nagekeo Earthquake, East Nusa Tenggara - Human Initiative"
-      },
-      {
-        "name": "human-initiative.org",
-        "url": "https://human-initiative.org/wp-content/uploads/2026/08/SITREP-1-EARTHQUAKE-NTT-ENG.pdf",
-        "title": "SITREP I Saturday, 15 August 2026 NAGEKEO EARTHQUAKE, EAST NUSA TENGGARA pg. 1"
-      }
-    ],
+    "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-25T11:48:24.724Z",
-    "donationSearched": "2026-11-23T15:14:55.038Z",
-    "directSearched": "2026-11-23T15:14:55.038Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
@@ -853,7 +856,9 @@
         "note": "Appeal for Christian families on Flores funding blankets, hygiene items and emergency food.",
         "title": "Please Support Christians After Devastating Earthquake Hits Indonesia"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-25T22:10:28.555Z",
+    "seen": "2026-11-25T22:10:28.555Z"
   },
   "ifrc-flood-8025": {
     "at": "2026-11-16T07:04:53.455Z",
@@ -957,10 +962,10 @@
     ]
   },
   "ifrc-flood-8050": {
-    "at": "2026-11-23T15:14:55.038Z",
+    "at": "2026-11-25T22:10:28.555Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "Monsoon flooding in Myanmar started around 12 August 2026 and affected about 600,000 people, including communities in Sagaing, Rakhine, Ayeyarwady and Kachin, according to UNICEF's end-August brief. Reports in August cited at least one death and more than 11,400 people moved to relief centres in Sagaing. The latest flood-specific update found is dated 8 September 2026. No source confirms the flooding continued after September.",
+    "summary": "Monsoon flooding in Myanmar began on 12 August 2026 and has swamped villages and paddy fields in Sagaing and Ayeyarwady regions. UNICEF reports about 600,000 people affected as of late August 2026. Sources also name other flood-affected regions. No source reports that the flooding has ended, and rivers remain at or above danger levels as the monsoon continues.",
     "ongoing": true,
     "places": [
       {
@@ -968,72 +973,56 @@
         "admin": "Sagaing Region",
         "country": "MM",
         "kind": "district",
-        "impact": "Villages and paddy fields swamped, people forced from homes"
+        "impact": "Villages and paddy fields swamped"
       },
       {
         "name": "Lemyethna",
         "admin": "Ayeyarwady Region",
         "country": "MM",
         "kind": "district",
-        "impact": "Probable flood inundation mapped (13 Sep)"
-      },
-      {
-        "name": "Rakhine State",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Flood-affected"
-      },
-      {
-        "name": "Ayeyarwady Region",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Flood-affected"
-      },
-      {
-        "name": "Kachin State",
-        "country": "MM",
-        "kind": "region",
-        "impact": "Flood-affected"
+        "impact": "Severe inundation"
       },
       {
         "name": "Sagaing Region",
         "country": "MM",
         "kind": "region",
-        "impact": "Flooded; people relocated to relief centres"
+        "impact": "At least 12 townships hit by floods"
+      },
+      {
+        "name": "Ayeyarwady Region",
+        "country": "MM",
+        "kind": "region",
+        "impact": "14 townships severely inundated"
       }
     ],
     "figures": [
       {
-        "label": "Affected",
+        "label": "People affected",
         "value": "600,000 people",
         "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response"
+        "sourceUrl": "https://www.unicef.org/myanmar/media/14256/file/Myanmar%202026%20Monsoon%20Emergency%20Response.pdf"
       },
       {
-        "label": "Displaced",
-        "value": "more than 11,400 people from 3,220 households",
+        "label": "People affected in Sagaing",
+        "value": "230,000 people",
         "sourceName": "thestar.com.my",
         "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected"
-      },
-      {
-        "label": "Deaths",
-        "value": "1",
-        "sourceName": "adinet.ahacentre.org",
-        "sourceUrl": "https://adinet.ahacentre.org/report/myanmar-flooding-in-ayeyarwady-region-20260730"
-      },
-      {
-        "label": "Evacuation centres",
-        "value": "56",
-        "sourceName": "adinet.ahacentre.org",
-        "sourceUrl": "https://adinet.ahacentre.org/report/myanmar-flooding-in-ayeyarwady-region-20260730"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://www.redcross.org.mm/donate/donate-now/",
+        "org": "Myanmar Red Cross Society",
+        "kind": "society",
+        "note": "General Emergency Fund for crises including floods; not tied to this event.",
+        "specific": false
+      }
+    ],
     "sources": [
       {
         "name": "unicef.org",
-        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
-        "title": "Myanmar 2026 Monsoon Emergency Response"
+        "url": "https://www.unicef.org/myanmar/media/14256/file/Myanmar%202026%20Monsoon%20Emergency%20Response.pdf",
+        "title": "Myanmar 2026 Monsoon Emergency Response Supporting Children and Families"
       },
       {
         "name": "thestar.com.my",
@@ -1041,16 +1030,26 @@
         "title": "Monsoon rains submerge villages, fields in Myanmar; thousands of people affected"
       },
       {
-        "name": "adinet.ahacentre.org",
-        "url": "https://adinet.ahacentre.org/report/myanmar-flooding-in-ayeyarwady-region-20260730",
-        "title": "Myanmar, Flooding in Ayeyarwady Region"
+        "name": "ispmyanmar.com",
+        "url": "https://ispmyanmar.com/sb2026-02/",
+        "title": "Myanmar’s Floods Threaten 1.3m People ‣ ISP-Myanmar"
+      },
+      {
+        "name": "ispmyanmar.com",
+        "url": "https://ispmyanmar.com/community/wp-content/uploads/2026/08/SB2026_02_English.pdf",
+        "title": "ISP Situation Brief 2026 SB2026-02"
+      },
+      {
+        "name": "unicef.org",
+        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
+        "title": "Myanmar 2026 Monsoon Emergency Response"
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-25T11:48:24.724Z",
-    "donationSearched": "2026-11-23T15:14:55.038Z",
-    "directSearched": "2026-11-24T15:20:33.215Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-25T22:10:28.555Z",
+    "directSearched": "2026-11-25T22:10:28.555Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-25T22:10:28.555Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-11-25T01:13:09.815Z",
@@ -1189,7 +1188,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-25T11:48:24.724Z",
+    "seen": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2,
     "direct": [
