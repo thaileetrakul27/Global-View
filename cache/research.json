@@ -144,7 +144,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-26T14:21:53.716Z",
+    "seen": "2026-11-26T23:24:59.071Z",
     "donationSearched": "2026-11-25T01:13:09.815Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2
@@ -254,127 +254,87 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-26T14:21:53.716Z",
+    "seen": "2026-11-26T23:24:59.071Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T22:10:28.555Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
-    "at": "2026-11-23T15:14:55.038Z",
+    "at": "2026-11-26T23:24:59.071Z",
     "model": "claude-haiku-5-5",
-    "searches": 4,
-    "summary": "Drought has affected Central America since March 2026, according to a Copernicus report; the feed dates it from 21 April 2026. By 16 September, Honduras had 233 of 298 municipalities under drought alerts, 103 of them under red alert. Guatemala declared red alert in 15 Trifinio municipalities on 21 September, and food distribution began in mid-November. El Salvador declared a nationwide red alert on 25 August. As of 20 November 2026, the drought is ongoing.",
+    "searches": 3,
+    "summary": "A drought linked to El Niño has affected Central America since spring 2026, with crop failures and food insecurity reported across the region. Guatemala's agriculture ministry reported 708,469 families affected in 13 departments on 24 November. Honduras declared a drought emergency on 19 August, and El Salvador has been on nationwide red alert since 25 August. Impacts are continuing, and El Niño is still intensifying.",
     "ongoing": true,
     "places": [
+      {
+        "name": "Chiquimula",
+        "country": "GT",
+        "kind": "region",
+        "impact": "Crops failed"
+      },
+      {
+        "name": "Camotán",
+        "admin": "Chiquimula",
+        "country": "GT",
+        "kind": "district",
+        "impact": "Crops failed"
+      },
+      {
+        "name": "Jocotán",
+        "admin": "Chiquimula",
+        "country": "GT",
+        "kind": "district",
+        "impact": "Crops failed"
+      },
+      {
+        "name": "Chimaltenango",
+        "country": "GT",
+        "kind": "region",
+        "impact": "Hard-hit by drought"
+      },
+      {
+        "name": "El Triunfo",
+        "country": "HN",
+        "kind": "district",
+        "impact": "Municipality on red drought alert"
+      },
       {
         "name": "Choluteca",
         "country": "HN",
         "kind": "region",
-        "impact": "Red drought alert"
-      },
-      {
-        "name": "Comayagua",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red drought alert"
-      },
-      {
-        "name": "El Paraíso",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red drought alert"
-      },
-      {
-        "name": "Francisco Morazán",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red drought alert"
-      },
-      {
-        "name": "La Paz",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red drought alert"
-      },
-      {
-        "name": "Valle",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red drought alert"
-      },
-      {
-        "name": "Intibucá",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red drought alert"
-      },
-      {
-        "name": "Lempira",
-        "country": "HN",
-        "kind": "region",
-        "impact": "Red drought alert"
-      },
-      {
-        "name": "Santa Rosa",
-        "country": "GT",
-        "kind": "region",
-        "impact": "Food rations delivered"
-      },
-      {
-        "name": "San Marcos",
-        "country": "GT",
-        "kind": "region",
-        "impact": "Food rations delivered"
-      },
-      {
-        "name": "Suchitepéquez",
-        "country": "GT",
-        "kind": "region",
-        "impact": "Food rations delivered"
-      },
-      {
-        "name": "Morazán",
-        "country": "SV",
-        "kind": "region",
-        "impact": "Red Cross early action"
-      },
-      {
-        "name": "La Unión",
-        "country": "SV",
-        "kind": "region",
-        "impact": "Red Cross early action"
+        "impact": "Drought-affected"
       }
     ],
     "figures": [
       {
-        "label": "People in acute food insecurity",
-        "value": "621,651 people",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      },
-      {
-        "label": "People in need",
-        "value": "708,000 people",
-        "sourceName": "riotimesonline.com",
-        "sourceUrl": "https://www.riotimesonline.com/honduras-un-drought-appeal-60-million-2026/"
-      },
-      {
         "label": "Families affected",
-        "value": "570,267 families",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/guatemala/2026/10/01/gobierno-de-guatemala-entregara-en-noviembre-82879-raciones-a-familias-afectadas-por-la-sequia-en-210-municipios/"
+        "value": "708,469 families",
+        "sourceName": "contracorriente.red",
+        "sourceUrl": "https://contracorriente.red/2026/11/24/la-sequia-del-corredor-seco-impacta-la-seguridad-alimentaria-en-honduras-y-guatemala"
       },
       {
-        "label": "Rations delivered",
-        "value": "more than 53,000 rations",
-        "sourceName": "infobae.com",
-        "sourceUrl": "https://www.infobae.com/guatemala/2026/11/18/el-gobierno-de-guatemala-entrega-mas-de-53000-raciones-a-familias-afectadas-por-la-sequia-en-tres-departamentos/"
+        "label": "People receiving food and cash aid",
+        "value": "more than 470,000 people",
+        "sourceName": "guyanachronicle.com",
+        "sourceUrl": "https://guyanachronicle.com/2026/11/16/when-the-rains-fail-preparing-for-drought-in-central-america/"
       },
       {
-        "label": "Rainfall deficit in May",
-        "value": "41 per cent",
-        "sourceName": "unocha.org",
-        "sourceUrl": "https://www.unocha.org/publications/report/panama/latin-america-caribbean-weekly-situation-update-28-august-2026"
+        "label": "People receiving aid from Oxfam and…",
+        "value": "more than 8,300 people",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/america/agencias/2026/11/18/la-sequia-deja-a-miles-de-centroamericanos-en-inseguridad-alimentaria-en-el-corredor-seco/"
+      },
+      {
+        "label": "Maize producers reporting losses",
+        "value": "97.7%",
+        "sourceName": "contracorriente.red",
+        "sourceUrl": "https://contracorriente.red/2026/11/24/la-sequia-del-corredor-seco-impacta-la-seguridad-alimentaria-en-honduras-y-guatemala"
+      },
+      {
+        "label": "Maize lost in first 2026 harvest (El…",
+        "value": "about 2.39 million quintals",
+        "sourceName": "todanoticia.com",
+        "sourceUrl": "https://todanoticia.com/2026/11/25/cuatro-paises-centroamericanos-preparan-respuesta-ante-sequia-por-el-fenomeno-de-el-nino/"
       }
     ],
     "donation": [
@@ -382,14 +342,28 @@
         "url": "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026",
         "org": "UN OCHA",
         "kind": "un",
-        "note": "Honduras drought Flash Appeal, US$60 million, opened September 2026 for red-alert municipalities.",
+        "note": "Event-specific report on the Honduras drought flash appeal; not a donation form.",
+        "specific": true
+      },
+      {
+        "url": "https://fts.unocha.org/plans/overview/2026/plans",
+        "org": "UN OCHA Financial Tracking Service",
+        "kind": "un",
+        "note": "Funding tracker listing the Honduras Drought Flash Appeal 2026, about 2.4% funded.",
+        "specific": true
+      },
+      {
+        "url": "https://go.ifrc.org/countries/81",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC GO Honduras page listing the DREF operation for this drought; not a donation form.",
         "specific": true
       },
       {
         "url": "https://www.cruzroja.gt/en/donate/",
-        "org": "Guatemalan Red Cross",
+        "org": "Cruz Roja Guatemalteca",
         "kind": "society",
-        "note": "General donation fund tied to a yellow alert over rains and dengue, not this drought.",
+        "note": "General Guatemalan Red Cross donation page, tied to a yellow alert for rains and dengue.",
         "specific": false
       }
     ],
@@ -400,16 +374,17 @@
         "title": "Severe drought is affecting Central and South America since March 2026"
       },
       {
-        "name": "global-agriculture.com",
-        "url": "https://www.global-agriculture.com/global-agriculture/el-nino-drought-triggers-emergency-declarations-across-central-america/",
-        "title": "El Niño Drought Triggers Emergency Declarations Across Central America"
+        "name": "publications.jrc.ec.europa.eu",
+        "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC149184",
+        "title": "Drought in the Intertropical Americas October 2026"
+      },
+      {
+        "name": "contracorriente.red",
+        "url": "https://contracorriente.red/2026/11/24/la-sequia-del-corredor-seco-impacta-la-seguridad-alimentaria-en-honduras-y-guatemala",
+        "title": "La sequía del Corredor Seco impacta la seguridad alimentaria en Honduras y Guatemala - Contra Corriente"
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-26T14:21:53.716Z",
-    "donationSearched": "2026-11-23T15:14:55.038Z",
-    "directSearched": "2026-11-23T15:14:55.038Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
@@ -418,7 +393,9 @@
         "note": "Rural communities and forest wildlife hit by drought in Nicaragua and El Salvador",
         "title": "Emergency appeal - effects of El Nino - GlobalGiving"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-26T23:24:59.071Z",
+    "seen": "2026-11-26T23:24:59.071Z"
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-26T04:34:25.672Z",
@@ -510,7 +487,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-26T14:21:53.716Z",
+    "seen": "2026-11-26T23:24:59.071Z",
     "donationSearched": "2026-11-26T04:34:25.672Z",
     "directSearched": "2026-11-26T04:34:25.672Z",
     "directSearchVersion": 2
@@ -568,7 +545,7 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#a49711a3",
-    "seen": "2026-11-26T14:21:53.716Z",
+    "seen": "2026-11-26T23:24:59.071Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T22:10:28.555Z",
     "directSearchVersion": 2
@@ -666,7 +643,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-26T14:21:53.716Z",
+    "seen": "2026-11-26T23:24:59.071Z",
     "donationSearched": "2026-11-25T01:13:09.815Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2,
@@ -796,46 +773,48 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-26T14:21:53.716Z",
+    "seen": "2026-11-26T23:24:59.071Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "direct": [
       {
-        "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
-        "org": "IDEP Selaras Alam",
+        "url": "https://www.globalgiving.org/projects/nttemergencyrelief/donate/",
+        "org": "GlobalGiving (East Nusa Tenggara Earthquake Relief Fund, project #78873)",
         "kind": "globalgiving",
-        "note": "Food, water, shelter, medicine and lighting for families in Manggarai and East Manggarai.",
+        "note": "Relief for families whose homes and public facilities were damaged by the quake.",
+        "title": "Donate to East Nusa Tenggara Earthquake Relief Fund - GlobalGiving"
+      },
+      {
+        "url": "https://human-initiative.jp/campaign/nttearthquake/",
+        "org": "Human Initiative",
+        "kind": "local",
+        "note": "Emergency appeal for affected communities' safety, recovery and rebuilding.",
+        "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
+        "published": "2026-08-23T23:24:59.071Z"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
+        "org": "IDEP Selaras Alam (via GlobalGiving)",
+        "kind": "globalgiving",
+        "note": "Support for families affected by the Flores earthquake.",
         "title": "Donate to Help Families Affected by Flores Earthquake - GlobalGiving"
       },
       {
         "url": "https://www.globalgiving.org/projects/indonesia-disaster/donate/",
-        "org": "GlobalGiving",
+        "org": "GlobalGiving (NTT Earthquake and Indonesia - Send Emergency Aid, project #68013)",
         "kind": "globalgiving",
-        "note": "Emergency aid for the NTT earthquake and wider Indonesia response.",
+        "note": "Emergency aid for people hurt or displaced by the Flores Island quake.",
         "title": "Donate to NTT Earthquake and Indonesia - Send Emergency Aid - GlobalGiving"
       },
       {
-        "url": "https://human-initiative.jp/campaign/nttearthquake/",
-        "org": "Human Initiative Japan",
+        "url": "https://support.savethechildren.or.id/donasi-gempa-ntt",
+        "org": "Save the Children Indonesia",
         "kind": "local",
-        "note": "Emergency appeal funding bedding, food, hygiene kits and community kitchen in Sikka, Nagekeo.",
-        "title": "M7.7 East Nusa Tenggara Earthquake and Tsunami Emergency Appeal - Human Initiative Japan",
-        "published": "2026-08-23T15:14:55.038Z"
-      },
-      {
-        "url": "https://donasi.wiz.or.id/campaign/peduli-gempa-ntt-ulurkan-tangan-untuk-saudara-kita",
-        "org": "Wahdah Inspirasi Zakat",
-        "kind": "local",
-        "note": "Collects for quake survivors in Nagekeo, including a Mbay pesantren and emergency mosque.",
-        "title": "Campaign - Peduli Gempa NTT: Ulurkan Tangan untuk Saudara Kita"
-      },
-      {
-        "url": "https://www.barnabasaid.org/us/latest-needs/please-support-christians-after-devastating-earthquake-hits-indonesia/",
-        "org": "Barnabas Aid",
-        "kind": "local",
-        "note": "Appeal for Christian families on Flores funding blankets, hygiene items and emergency food.",
-        "title": "Please Support Christians After Devastating Earthquake Hits Indonesia"
+        "note": "Donations for children and families affected in Nagekeo, Sikka and nearby areas.",
+        "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT"
       }
-    ]
+    ],
+    "directSearched": "2026-11-26T23:24:59.071Z",
+    "directSearchVersion": 2
   },
   "ifrc-flood-8025": {
     "at": "2026-11-16T07:04:53.455Z",
@@ -1023,7 +1002,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-26T14:21:53.716Z",
+    "seen": "2026-11-26T23:24:59.071Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T22:10:28.555Z",
     "directSearchVersion": 2
@@ -1187,7 +1166,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-26T14:21:53.716Z",
+    "seen": "2026-11-26T23:24:59.071Z",
     "donationSearched": "2026-11-26T04:34:25.672Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2,

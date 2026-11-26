@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-26T14:21:53.716Z",
+  "updated": "2026-11-26T23:24:59.071Z",
   "fetched": {
-    "societies": "2026-11-26T14:21:53.716Z",
-    "uncr": "2026-11-26T14:21:53.716Z"
+    "societies": "2026-11-26T23:24:59.071Z",
+    "uncr": "2026-11-26T23:24:59.071Z"
   },
   "societies": {
     "AF": {
@@ -2613,23 +2613,6 @@
         "https://www.cruzrojacolombiana.org/"
       ]
     },
-    "go.ifrc.org/countries/85": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-25T22:10:28.555Z",
-      "chain": [
-        "https://go.ifrc.org/countries/85"
-      ]
-    },
-    "ayodonor.pmi.or.id?page=index": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-25T22:10:28.555Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/?page=index"
-      ],
-      "blocked": true
-    },
     "redcross.org.mm/donate/donate-now": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2674,62 +2657,106 @@
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-26T14:21:53.716Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-11-26T14:21:53.716Z"
+      ]
     },
     "ifrc.org/emergency/kenya-complex-emergency": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-26T14:21:53.716Z",
       "chain": [
         "https://www.ifrc.org/emergency/kenya-complex-emergency"
       ],
-      "blocked": true,
-      "checked": "2026-11-26T14:21:53.716Z"
+      "blocked": true
     },
     "kksh.org.al": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-26T14:21:53.716Z",
       "chain": [
         "https://www.kksh.org.al/"
-      ],
-      "checked": "2026-11-26T14:21:53.716Z"
+      ]
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-26T14:21:53.716Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-26T14:21:53.716Z"
+      "blocked": true
     },
     "ayodonor.pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-26T14:21:53.716Z",
       "chain": [
         "https://ayodonor.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-26T14:21:53.716Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-11-26T14:21:53.716Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-11-26T14:21:53.716Z"
+      ]
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-26T14:21:53.716Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
+      "blocked": true
+    },
+    "fts.unocha.org/plans/overview/2026/plans": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://fts.unocha.org/plans/overview/2026/plans"
+      ],
+      "checked": "2026-11-26T23:24:59.071Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-11-26T23:24:59.071Z"
+    },
+    "local4:ifrc-earthquake-8060:support.savethechildren.or.id/donasi-gempa-ntt": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Indonesia\"",
+      "chain": [
+        "https://support.savethechildren.or.id/donasi-gempa-ntt"
+      ],
+      "place": "Indonesia",
+      "name": "Save the Children",
+      "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT",
+      "checked": "2026-11-26T23:24:59.071Z"
+    },
+    "go.ifrc.org/countries/85": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/85"
+      ],
+      "checked": "2026-11-26T23:24:59.071Z"
+    },
+    "ayodonor.pmi.or.id?page=index": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/?page=index"
+      ],
       "blocked": true,
-      "checked": "2026-11-26T14:21:53.716Z"
+      "checked": "2026-11-26T23:24:59.071Z"
     }
   }
 }
