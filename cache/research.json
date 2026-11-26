@@ -144,7 +144,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-25T22:10:28.555Z",
+    "seen": "2026-11-26T04:34:25.672Z",
     "donationSearched": "2026-11-25T01:13:09.815Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2
@@ -254,10 +254,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "seen": "2026-11-26T04:34:25.672Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T22:10:28.555Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-25T22:10:28.555Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-23T15:14:55.038Z",
@@ -406,7 +406,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-25T22:10:28.555Z",
+    "seen": "2026-11-26T04:34:25.672Z",
     "donationSearched": "2026-11-23T15:14:55.038Z",
     "directSearched": "2026-11-23T15:14:55.038Z",
     "directSearchVersion": 2,
@@ -421,106 +421,99 @@
     ]
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-11-24T03:18:08.542Z",
+    "at": "2026-11-26T04:34:25.672Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Drought in East Africa and the Central Sahel, listed by GDACS from 21 May 2026 across 13 countries. FEWS NET reports abnormal dryness and drought persisting in East Africa in late November 2026. Reports describe crop failure, livestock deaths and food insecurity in Ethiopia and Kenya, and displacement in Somalia. The sources found do not directly tie to this GDACS event.",
+    "summary": "Drought in East Africa and the Central Sahel began on 21 May 2026, linked to El Niño. Between June and September 2026, drought and high temperatures reduced crop and pasture yields across East Africa, according to a JRC report dated 7 October 2026. Reported impacts include rainfall deficits in Karamoja, Uganda, and reduced harvests in Kenya. Forecasts indicate wetter conditions from October to December, with flood risk in the Horn of Africa. No reports after early October…",
     "ongoing": true,
     "places": [
       {
-        "name": "West Hararghe",
-        "admin": "Oromia",
-        "country": "ET",
-        "kind": "district",
-        "impact": "Crop failure and livestock deaths"
-      },
-      {
-        "name": "East Hararghe",
-        "admin": "Oromia",
-        "country": "ET",
-        "kind": "district",
-        "impact": "Crop failure and livestock deaths"
-      },
-      {
-        "name": "Amhara",
-        "country": "ET",
+        "name": "Karamoja",
+        "country": "UG",
         "kind": "region",
-        "impact": "Northern parts affected by drought impacts"
-      },
-      {
-        "name": "Tigray",
-        "country": "ET",
-        "kind": "region",
-        "impact": "Parts affected by drought impacts"
-      },
-      {
-        "name": "Somali Region",
-        "country": "ET",
-        "kind": "region",
-        "impact": "Rainfed crops largely failed"
-      },
-      {
-        "name": "Turkana County",
-        "country": "KE",
-        "kind": "district",
-        "impact": "Drought-hit, livestock deaths"
+        "impact": "rainfall deficits"
       }
     ],
     "figures": [
       {
-        "label": "People affected",
-        "value": "over 3.5 million people",
-        "sourceName": "go.ifrc.org",
-        "sourceUrl": "https://go.ifrc.org/emergencies/8079/overview"
+        "label": "Harvest yield shortfall",
+        "value": "36% below average",
+        "sourceName": "wisevoter.com",
+        "sourceUrl": "https://wisevoter.com/world/2026/10/03/east-africa-drought-harvest-decline"
       },
       {
-        "label": "Displaced",
-        "value": "more than 185,000 people",
-        "sourceName": "aa.com.tr",
-        "sourceUrl": "https://www.aa.com.tr/en/africa/poor-rainy-seasons-deepen-drought-risks-across-horn-of-africa-un-agency/3775639"
-      },
-      {
-        "label": "People facing hunger",
-        "value": "over two million people",
-        "sourceName": "aljazeera.com",
-        "sourceUrl": "https://www.aljazeera.com/gallery/2026/2/10/severe-drought-leaves-over-two-million-kenyans-hungry-and-desperate"
+        "label": "People facing high acute food…",
+        "value": "more than 2.12 million people",
+        "sourceName": "redcross.or.ke",
+        "sourceUrl": "https://redcross.or.ke/drought-emergency-2026/"
       }
     ],
     "donation": [
       {
-        "url": "https://redcross.or.ke/drought-emergency-2026/",
-        "org": "Kenya Red Cross Society",
+        "url": "https://go.ifrc.org/emergencies/8079/overview",
+        "org": "IFRC (with Ethiopian Red Cross Society)",
         "kind": "society",
-        "note": "Drought Crisis 2026 appeal page, Kenya only"
+        "note": "DREF operation MDRET042 for the 2026 drought in Ethiopia, covering Ethiopia only.",
+        "specific": true
+      },
+      {
+        "url": "https://www.unicef.org/uganda/reports/united-nations-and-partners-appeal",
+        "org": "UNICEF Uganda",
+        "kind": "un",
+        "note": "UN and partners appeal covering Karamoja drought and El Niño floods in Uganda; only partly this drought.",
+        "specific": false
+      },
+      {
+        "url": "https://redcross.or.ke/drought-emergency-2026/",
+        "org": "Kenya Red Cross",
+        "kind": "society",
+        "note": "Kenya Red Cross drought appeal for Kenya."
+      },
+      {
+        "url": "https://donations.redcross.or.ke/home",
+        "org": "Kenya Red Cross",
+        "kind": "society",
+        "note": "Donation portal listing the Drought Crisis in Kenya campaign."
+      },
+      {
+        "url": "https://www.ifrc.org/emergency/kenya-complex-emergency",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "IFRC appeal MDRKE068 for Kenya, covering drought and hunger."
       }
     ],
     "sources": [
       {
-        "name": "fews.net",
-        "url": "https://fews.net/global/global-weather-hazards/november-2026-1",
-        "title": "El Niño is present. Abnormal dryness and drought conditions persist in East Africa, northwestern and southeastern Kazakhstan, and parts of Central America…"
-      },
-      {
         "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/east-africa-middle-east-and-central-asia-hit-repeated-droughts-2021-2026-05-20_en",
-        "title": "East Africa, the Middle East and Central Asia hit by repeated droughts since 2021 - Joint Research Centre"
+        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/el-nino-weather-extremes-worsen-food-security-east-africa-and-central-america-and-threaten-next-2026-10-07_en",
+        "title": "El Niño weather extremes worsen food security in East Africa and Central America and threaten next season crops in Southern Africa and South America - Joint…"
       },
       {
-        "name": "birrmetrics.com",
-        "url": "https://birrmetrics.com/horn-of-africa-faces-humanitarian-crisis-should-2026-rains-underperform/",
-        "title": "Horn of Africa Faces Humanitarian Crisis Should 2026 Rains Underperform - Birr Metrics"
+        "name": "global-agriculture.com",
+        "url": "https://www.global-agriculture.com/farming-agriculture/east-africa-braces-for-poor-harvests-after-one-of-its-driest-rainy-seasons-on-record/",
+        "title": "East Africa Braces for Poor Harvests After One of Its Driest Rainy Seasons on Record"
       },
       {
-        "name": "redcross.or.ke",
-        "url": "https://redcross.or.ke/drought-emergency-2026/",
-        "title": "Drought Crisis 2026"
+        "name": "africa-newsroom.com",
+        "url": "https://www.africa-newsroom.com/press/resilience-starts-at-home-preparing-communities-for-el-nino-before-disaster-strikes?lang=en",
+        "title": "APO Group - Africa Newsroom / Press release"
+      },
+      {
+        "name": "wisevoter.com",
+        "url": "https://wisevoter.com/world/2026/10/03/east-africa-drought-harvest-decline",
+        "title": "Record Heat and Drought Stunted East African Harvests"
+      },
+      {
+        "name": "donations.redcross.or.ke",
+        "url": "https://donations.redcross.or.ke/home",
+        "title": "Kenya Red Cross"
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-25T22:10:28.555Z",
-    "donationSearched": "2026-11-24T03:18:08.542Z",
-    "directSearched": "2026-11-24T03:18:08.542Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-26T04:34:25.672Z",
+    "directSearched": "2026-11-26T04:34:25.672Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-26T04:34:25.672Z"
   },
   "gdacs-earthquake-eq-1573141": {
     "at": "2026-11-11T18:15:18.314Z",
@@ -591,10 +584,10 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#a49711a3",
+    "seen": "2026-11-26T04:34:25.672Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T22:10:28.555Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-25T22:10:28.555Z"
+    "directSearchVersion": 2
   },
   "ifrc-earthquake-8055": {
     "at": "2026-11-25T01:13:09.815Z",
@@ -689,7 +682,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-25T22:10:28.555Z",
+    "seen": "2026-11-26T04:34:25.672Z",
     "donationSearched": "2026-11-25T01:13:09.815Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2,
@@ -819,6 +812,8 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
+    "seen": "2026-11-26T04:34:25.672Z",
+    "donationSearched": "2026-11-25T22:10:28.555Z",
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/flores-earthquake/donate/",
@@ -856,9 +851,7 @@
         "note": "Appeal for Christian families on Flores funding blankets, hygiene items and emergency food.",
         "title": "Please Support Christians After Devastating Earthquake Hits Indonesia"
       }
-    ],
-    "donationSearched": "2026-11-25T22:10:28.555Z",
-    "seen": "2026-11-25T22:10:28.555Z"
+    ]
   },
   "ifrc-flood-8025": {
     "at": "2026-11-16T07:04:53.455Z",
@@ -1046,10 +1039,10 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-11-26T04:34:25.672Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T22:10:28.555Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-25T22:10:28.555Z"
+    "directSearchVersion": 2
   },
   "ifrc-flood-8073": {
     "at": "2026-11-25T01:13:09.815Z",
@@ -1154,7 +1147,29 @@
         "sourceUrl": "http://nrcs.org/highlight/9/"
       }
     ],
-    "donation": [],
+    "donation": [
+      {
+        "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "Donation page for IFRC Emergency Appeal supporting Nepal Red Cross flood response.",
+        "specific": true
+      },
+      {
+        "url": "https://donate.redcrossredcrescent.org/~share?cid=1180&lang=en_EN",
+        "org": "Nepal Red Cross Society",
+        "kind": "society",
+        "note": "Donation page for Rasuwa flash flood and ongoing Nepal monsoon floods.",
+        "specific": true
+      },
+      {
+        "url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026",
+        "org": "IFRC",
+        "kind": "society",
+        "note": "Event page with appeal documents; points to IFRC donations, not a donation form.",
+        "specific": true
+      }
+    ],
     "sources": [
       {
         "name": "nrcs.org",
@@ -1188,7 +1203,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-25T22:10:28.555Z",
+    "seen": "2026-11-26T04:34:25.672Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2,
     "direct": [
@@ -1250,6 +1265,7 @@
         "note": "Relief goods and funding for vetted local NGOs in Rasuwa, Nuwakot and Dhading.",
         "title": "Nepal Flash Flood Emergency Relief 2026 - GlobalGiving"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-26T04:34:25.672Z"
   }
 }

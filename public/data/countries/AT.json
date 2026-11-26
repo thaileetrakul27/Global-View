@@ -2,88 +2,115 @@
   "code": "AT",
   "name": "Austria",
   "kind": "local",
-  "updated": "2026-11-25T22:10:28.555Z",
+  "updated": "2026-11-26T04:34:25.672Z",
   "source": {
-    "name": "Google News and Bing News",
+    "name": "Google News",
     "edition": "AT:de",
     "url": "https://news.google.com/rss?hl=de&gl=AT&ceid=AT%3Ade"
   },
   "articles": [
     {
-      "title": "Ringen um besseren Gewaltschutz für Frauen",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwNWZiWE9WTFdIbmNzcmxibDZaSGhwQVhBMlVfX0w5b28wdlRJVDdPd3hCZVFNOVhWZHE3TmF1S2oxUjYyRGRjWUxqelV3WGhYelhFblprcjhjVWs?oc=5",
-      "outlet": "ORF",
-      "outletUrl": "https://orf.at",
-      "published": "2026-11-25T21:34:27.000Z",
-      "outlets": 4,
-      "trending": true,
-      "en": "Struggle for better protection of women from violence",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "„Nicht nur eine b'soffene G'schicht“: Strache wieder vor Gericht",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcGdPOUJIUkVObHhpeXoyVUptRHYtNHN2bVBsUnB3ZzJ5X2dudW5IYkVnR1Z3ZjZtdEljUkptTmswekhZTTVPNHZyQVl2UEhOc0h3THU4LURmR3ZybDM4bHpuX3ZJSGE1OHE5bHdZY3gwS0JCYXJpVGRwWlhGdTFTajM0ZF84VVJiaWhZVXMyNEZoYjVIU2NuWWJHLXl0VENzN1lKOHF2V0NFYzdnYUJCWTl5ZmpxZw?oc=5",
-      "outlet": "Kurier",
-      "outletUrl": "https://kurier.at",
-      "published": "2026-11-25T18:30:00.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "\"Not just a boozy story\": Strache back in court",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "„16 Tage“-Kampagne - Kampf gegen Gewalt an Frauen wird immer digitaler",
-      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBfWEZJdG1oSVVTTUhVNGdibm1YUy1kNlpMenNsVTBKcGthcFFvUDJxX2J3V1diQlNPLXluYXBwaTZ2QQ?oc=5",
-      "outlet": "Kronen Zeitung",
-      "outletUrl": "https://www.krone.at",
-      "published": "2026-11-25T15:00:00.000Z",
+      "title": "Kompany steht vor einem Rätsel und zieht PSG-Vergleich",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdUU1cjNuVTI2YUw1VFhmbHNaNU1zelkwWC1uSWdMdXRqdU9rUGlyR2M1dnFMTHlNb0g5aGFGc0lIV3JkTFdPNTdpNFlnaS1nYm0xV0tkb1JmNW5ObE9zLUtDVllOVmpBMlFEV2szbndqc1Q3U3hObDlpM3NKTEZJamRaTFhUU3NCMy1ZbkF6VjdiMnNQRnVNZFhrdTV2X1ZZdjJ6dWYwYWgwUHBIc3UxRg?oc=5",
+      "outlet": "FAZ",
+      "outletUrl": "https://www.faz.net",
+      "published": "2026-11-26T04:14:37.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "\"16 Days\" campaign: fight against violence against women is becoming increasingly digital",
+      "en": "Kompany faces a puzzle and draws PSG comparison",
       "about": [
-        "AT"
+        "BE",
+        "FR"
       ]
     },
     {
-      "title": "Polen richtet Flugverbotszone an Ukraine-Grenze ein",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNV3lSUFlYWWJ5MElFUk83eFltcmd6S19UOXFUdjRJdkp1X3gzUkhjTTgxTlZkOXYwN255VlFGanI0WHAzS21vazctZG1la2tNbDJHMjQ3WVcyS2FBakJab3AtUWQycEs5WWl2LXZGcnBVSjM2YzQySDdhb1FSQkhCdTh6WE5DVnp2Nkc2SkZiSFROWkVYWTdFQ2RRaw?oc=5",
-      "outlet": "Kurier",
-      "outletUrl": "https://kurier.at",
-      "published": "2026-11-25T18:54:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Poland sets up no-fly zone at Ukraine border",
-      "about": [
-        "PL",
-        "UA"
-      ]
-    },
-    {
-      "title": "Wohin mit Tonnen an Tiefkühlgemüse? Im Marchfeld werden die Karten neu gemischt",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcW91ZmlYSl9DX20zdnBNZHFKYW1PTU5wMlIzaXg3M3VOYVVsRUViVUhuNHoxeGJ2NzdKMlpocE05TlJ3TEZab3Q1RW9PUDdLSzdXRHFGQko3d0ZjTWlfVTBIMGdTYWFucUN2OGJwT3IxTnl3cU9sY1BralVEQkNUV21nN1NHUWNPa2doWC1DbWRfUWJubmQ3VWtjWks2SEdPMlpKRnlaMFJvRVNEV1Y4SlJWZjRwYTJISThUU0lOT2loUzlNdnc?oc=5",
+      "title": "Neuer Rekord: Mehr als 2.000 Migranten erreichten am Dienstag El Hierro",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNT0hUcnY2WGJHSFVuNDlUQTlYTGg5S0E1TlRjWUlqRWpWZTJFVjlXYUdlNUJHak1CQ0UtMjFaMExXOVNfb01zYjFfSzM4eHo4RUxJeEZZUUVabzRIeXk5NHFoMDFSRHA5QXU4d1cxX2JfNFFoWnhsODc4WE5OZlBQSXk2SFpyQ1BZT2dCLWVrRVZwRWlYT0ltNmgyYTdYTXpoQ2RVQVdNdUlBRzl0N0NjTw?oc=5",
       "outlet": "Der Standard",
       "outletUrl": "https://www.derstandard.at",
-      "published": "2026-11-25T15:31:00.000Z",
+      "published": "2026-11-25T20:42:00.000Z",
+      "outlets": 6,
+      "trending": false,
+      "en": "New record: more than 2,000 migrants reached El Hierro on Tuesday",
+      "about": [
+        "ES"
+      ]
+    },
+    {
+      "title": "Vorarlbergs ÖVP-Landesrätin verteidigt „Nur Ja-heißt-Ja-Prinzip“",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNkdIbUVuMURjbk9SeTM5R041MTBxN2oyV1F2dWFFRkdrV0lmQnlRUm53aU9Eb1RRN28xbUQ5UUtoRlo0TjFmOFRWbkZvWmhRb1l2bXNQcXNDQXZCR3NOYktlSFI5MG5xSlEzbE1hSmIwc0tqYTVKaHF4d2xhS29lSWppWU9xa0lDY0VmTENyOHNIdnE4VjI0SjJ4SHpJbjRpTGhjY2w1Y1dGSklUNG1DR3VYZFpWc3NFWEE?oc=5",
+      "outlet": "Kurier",
+      "outletUrl": "https://kurier.at",
+      "published": "2026-11-25T21:35:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Where to put tonnes of frozen vegetables? The cards are being reshuffled in the Marchfeld",
+      "en": "Vorarlberg's ÖVP state councillor defends \"Only yes-means-yes principle\"",
       "about": [
         "AT"
       ]
     },
     {
-      "title": "Wintereinbruch: Bis zu 15 Zentimeter Schnee im Osten Österreichs erwartet",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR3pOM1dieklpazZvc0t6MWZFZGJWUUluRG9NUmdfVE1LdjJOY1NKTmVXV2UzU0JNMXhweXhSUFVVYWxFVHgtV2JyYWpUVE9ySktUY1hjbmlFTElONU00UWxzeTJSbmkxeENLejVxVG1rb25nOHh4bU5XTDVYN0ZpRlY4bFZCdUhMSExMaWpyX2JFZHd4MkpGTkRJYw?oc=5",
-      "outlet": "Der Standard",
-      "outletUrl": "https://www.derstandard.at",
-      "published": "2026-11-25T16:45:00.000Z",
+      "title": "Erste Bank Aktie: Polska-Aktionäre tragen Angebot über 50 %",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZ2owaHZOS2dHZ2ZYU1JYQ1hJRl9UV2JxS3lBcWYtem9BVlVYSnBWamxpUFM3UFRzWGx3dXNPb01ZNmNpRVBUZmtIT29hSUJYekFEdGdiaEk0b0phcGpNLVJYaElMSXF6djQxRXlDcG80cW1sdjF3NUVZeDR3MjdSbmo5T2lsQ2lUNnUzdXhMOWdndk51N3E4ZE5xRUpzazJyYWdwdm1NaEhPbzRwbllUaQ?oc=5",
+      "outlet": "Börse Express",
+      "outletUrl": "https://www.boerse-express.com",
+      "published": "2026-11-26T02:26:12.000Z",
       "outlets": 5,
-      "trending": true,
-      "en": "Winter arrives: up to 15 centimetres of snow expected in eastern Austria",
+      "trending": false,
+      "en": "Erste Bank share: Polska shareholders carry offer above 50%",
+      "about": [
+        "AT",
+        "PL"
+      ]
+    },
+    {
+      "title": "TSG-Coach Ilzer trifft Ex-Club Graz - Freiburg gegen Twente",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQQXRaQnJVazJJbzFFeWxlazUyYmZrajh2Ti1Ec1JBUmNneE8wRDBnbFVhYThWaVZIYjFIS1plNjRlTDY0QjlYN3JUTFd3X1pRdVplSmtGOHdoanpGSlh3RERtd2ZySXNMVjk2a0VvUDJmS2FkWGY3SW9LTEJBcHlvRklDUDlWQzRFVkZPdU9GeFJITWRjTjdUVXZuekFUSnE3Y0hHcV84c0x1SG9nNHFpY1gwdmU3MnNoR1RZTDFBZUNrLWRWS0VoY2dSczJPUW5RUGhwNmdybm1DZUdo?oc=5",
+      "outlet": "WELT",
+      "outletUrl": "https://www.welt.de",
+      "published": "2026-11-26T02:33:47.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "TSG coach Ilzer meets former club Graz - Freiburg against Twente",
+      "about": []
+    },
+    {
+      "title": "Grand Prix d’Horlogerie de Genève geht an Rexhep Rexhepi",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORGc5MmtRUnZOcGlxSUJ2UURkM01oUWpKemlYYkkydEhFTkNOcGRVSGtRR0xVaGhyYTF2b3BOQ2N6VmdYY09HczhPcWJJX2t5bzRjZGc0MVg1ZUdyYjBFMFJ3QXVzY19QUS1sSEo1WTVvNzFOSjMxWS1PWUkxOE05c3JNa3ZxbkpScmVObXM4YmhWdVZG?oc=5",
+      "outlet": "DiePresse.com",
+      "outletUrl": "https://www.diepresse.com",
+      "published": "2026-11-26T04:00:00.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Grand Prix d'Horlogerie de Genève goes to Rexhep Rexhepi",
+      "about": [
+        "CH"
+      ]
+    },
+    {
+      "title": "Russischer Angriffskrieg: Rutte lobt Trump: Stellt Putin auf die Probe",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcGU3djBxbjVIa2I2V00zT3dfa1VPZkNEeXkyZVBiNDY4SmdxWVg2VjBsc3BzakRIc291c3NFbnh1OTJCOThBb1B6MUF5VTZ6YWRWRU1yaWxhWUZjZ2w3ZnlHbG04VjlmT0F0cDBMNDN6Y2xLMWt3ZU9pcXhabThCbnRqcTRBUQ?oc=5",
+      "outlet": "DIE ZEIT",
+      "outletUrl": "https://www.zeit.de",
+      "published": "2026-11-25T16:52:59.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Russian war of aggression: Rutte praises Trump: puts Putin to the test",
+      "about": [
+        "RU",
+        "UA",
+        "US"
+      ]
+    },
+    {
+      "title": "Notarzt-Reform in NÖ: Wie sicher ist das künftige Rettungsnetz?",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVm9rMTZXMXVwbHE0ZVJSclktOUxSYkdIODROaEFKZ29qY3pjRDdTcFlndUlkUW1LOGRscXk2aU9DclEteUpneElHeUJpQ213X3owa1d0aGFfNnhWNGpCZnFfaXEyU0FRWE5EYU04OHo4LUFNMjQxcmQtQm1mNlE1UUpIYjZFMXA3TVVjU2FzZHNWWEhpaU9Icnp6dlFEUlJWem5UdUxKNA?oc=5",
+      "outlet": "Kurier",
+      "outletUrl": "https://kurier.at",
+      "published": "2026-11-25T14:12:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Emergency doctor reform in Lower Austria: how safe is the future rescue network?",
       "about": [
         "AT"
       ]
@@ -102,62 +129,25 @@
       ]
     },
     {
-      "title": "Oberösterreich rüstet sich für ersten Schnee",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5LYkZOX0FVZEZiVThBUFZOaUpvMzJQd1UyUzlQckk5dE9UQ2hlMW1NNldyYTl0cXBGaHVRVzBjTG4xVHhrUllYekhqbw?oc=5",
-      "outlet": "ooe.ORF.at",
-      "outletUrl": "https://ooe.orf.at",
-      "published": "2026-11-25T16:45:15.000Z",
+      "title": "Gewalt an Frauen: „Männer in der Pflicht“",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1KTnV5VHlfbmprN1FaeVZHMFRkQXBBVjNsWlNnU3Rzb0NzbmxwR3VMb2E0MDlPZC1waEg3c1JJalh0RWZWQ0g0LVBvMA?oc=5",
+      "outlet": "noe.ORF.at",
+      "outletUrl": "https://noe.orf.at",
+      "published": "2026-11-25T04:13:19.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Upper Austria prepares for first snow",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "Jürgen Melzer und seine schwerste Entscheidung",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOeGxidXBUTGMyN3BFV19ncVdRQ3lxb0d5U2VOODJ4bWhjbFJFSzR1V3JZWUhtdUtpTEUzYjJ6Q3AySTYzNXhCOVU2aVRLMDZvODhkSFZ6encxOVhjUXlfd2NCZWpBTlRLS2ttWHRLMElraE1uLVRJMG9WakJNSHA4MkpPclRMQQ?oc=5",
-      "outlet": "ÖTV",
-      "outletUrl": "https://www.oetv.at",
-      "published": "2026-11-25T18:49:07.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Jürgen Melzer and his most difficult decision",
+      "en": "Violence against women: \"Men have a duty\"",
       "about": []
     },
     {
-      "title": "Aktien Wien Schluss: ATX weitet Vortagesabschläge deutlich aus",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdzVvOFBNWGwxb0VyV1NOOWxKR1VzQ0pBOENXN01QVkV1eWY5OTRoWnFxcGdLWm50bFBQT0xvTTdpZWpFRnNQVm9DT19UWldwQldram5TV2huT0piT0wydjAxaWQ2WTRmc3lLZ2YyNms0MWp3S2pFSUJyNzVnRVozRmtCLUZmbTh2Mm5SV0RYeXZpZ1RjSVdnaHpHOXBSVnNxVzZjOEthSk5zaUtod0tnbG1hVEM0ZzM4RU5LWm4xRnVucUxSSFRlTWJCY0ZjcDl1X2ttUE5Pdkk5Y3Z3?oc=5",
-      "outlet": "Deutsche Börse Frankfurt",
-      "outletUrl": "https://live.deutsche-boerse.com",
-      "published": "2026-11-25T17:18:51.000Z",
+      "title": "Wetter-Achterbahn in Tirol: „Es kommt zu einem kräftigen Wintereinbruch“",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQc1d0T245bGtha2NhTDQzeC02RUhUM0tycGgydnlDYzJrbXdsNlptaTZvSkFrMGNxbzNDUzBfWnpXSFl2SU81NXdGaXpUZWdQRGhIYTlOZjdKMDFQMGtpdERvaTNkWkNhdU5nR1pRYzB2dUJUOFlFOGRwd0lNT3I1YXdTYnlvMk1pVUt6TnYzSThGM1pzWTYzZHpqbERuLWFOT3dtY3BmOExlUQ?oc=5",
+      "outlet": "Tiroler Tageszeitung",
+      "outletUrl": "https://www.tt.com",
+      "published": "2026-11-25T14:03:09.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Vienna stocks close: ATX significantly extends previous day's losses",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "ESA-Sonde Hera erreicht Dimorphos: Was der NASA-Einschlag hinterließ",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQmZUNVNvTFdKU21qb2ZiTGo5Z3JmOEc1ZjRLZjdHZ3RCUkFuSVo4V3EzTDh1WDdTdmZCZzliUjY2c3JJc3BQbmhtdmlvX2szWHIwNEZkRFRnc0ZOLVM4cU5SeHFaSWgtRlRSWVlqTy1xLThONXlqMUZsTmdSSEtpcFp5YVU2QVFmQXNzNXFzc3R4V2pPSTJpZmdOS1dVWE5XdXM1VUlNeFhPRDQ2djNaVG5GLTRHRHpZdjJ0QVNHVUJudlZsMUE?oc=5",
-      "outlet": "FAZ",
-      "outletUrl": "https://www.faz.net",
-      "published": "2026-11-25T17:43:22.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "ESA probe Hera reaches Dimorphos: what NASA's impact left behind",
-      "about": []
-    },
-    {
-      "title": "Notarzt-Reform in NÖ: Wie sicher ist das künftige Rettungsnetz?",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVm9rMTZXMXVwbHE0ZVJSclktOUxSYkdIODROaEFKZ29qY3pjRDdTcFlndUlkUW1LOGRscXk2aU9DclEteUpneElHeUJpQ213X3owa1d0aGFfNnhWNGpCZnFfaXEyU0FRWE5EYU04OHo4LUFNMjQxcmQtQm1mNlE1UUpIYjZFMXA3TVVjU2FzZHNWWEhpaU9Icnp6dlFEUlJWem5UdUxKNA?oc=5",
-      "outlet": "Kurier",
-      "outletUrl": "https://kurier.at",
-      "published": "2026-11-25T14:12:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Emergency doctor reform in Lower Austria: how safe is the future rescue network?",
+      "en": "Weather rollercoaster in Tyrol: \"A strong winter onset is coming\"",
       "about": [
         "AT"
       ]
@@ -176,76 +166,102 @@
       ]
     },
     {
-      "title": "Buch Wien eröffnet",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1NdTdWOW5VT2M0OVVhaEdOZG8tOGpCNms5cHpOZHQ1ZVY2Yk16XzVrczdMQ0ZudU9XUzh6enJYekswaVJ0SzVpVzA3UXk2eTBtOTc5ZTd6emUwN0k?oc=5",
-      "outlet": "ORF",
-      "outletUrl": "https://orf.at",
-      "published": "2026-11-25T19:21:07.000Z",
+      "title": "Aktien Wien Schluss: ATX weitet Vortagesabschläge deutlich aus",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdzVvOFBNWGwxb0VyV1NOOWxKR1VzQ0pBOENXN01QVkV1eWY5OTRoWnFxcGdLWm50bFBQT0xvTTdpZWpFRnNQVm9DT19UWldwQldram5TV2huT0piT0wydjAxaWQ2WTRmc3lLZ2YyNms0MWp3S2pFSUJyNzVnRVozRmtCLUZmbTh2Mm5SV0RYeXZpZ1RjSVdnaHpHOXBSVnNxVzZjOEthSk5zaUtod0tnbG1hVEM0ZzM4RU5LWm4xRnVucUxSSFRlTWJCY0ZjcDl1X2ttUE5Pdkk5Y3Z3?oc=5",
+      "outlet": "Deutsche Börse Frankfurt",
+      "outletUrl": "https://live.deutsche-boerse.com",
+      "published": "2026-11-25T17:18:51.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Book Vienna opens",
+      "en": "Vienna stocks close: ATX significantly extends previous day's losses",
       "about": [
         "AT"
       ]
     },
     {
-      "title": "Österreich wächst nur noch bis 2040",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JQlluQjV4d0phOHBnb3NLVXJvWktrejBUTmRyQ3dfUkhWMVJOblcydHlKdThFUHBJUzVrMldtbHphMVZMVUVveUItQWprNG5HaUotc2ItYUVmeVk?oc=5",
-      "outlet": "ORF",
-      "outletUrl": "https://orf.at",
-      "published": "2026-11-25T19:18:46.000Z",
+      "title": "Blick in die Straßenmeistereien: Wenn der Schnee leise rieselt, geht's an den Winterdienst",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM3FyVnMzZUFFdjVFd1dFdXpRSlNic3BLR05RcTNCZmVKWVhWbFJJWDl5M1RSeVRuVTlYVElENWprZE4wXzlfQzJVU1Q1b3V0ZW9rNEQ2MVoxNlJqZDhIcG04N3RzZWtaQVJMd1REbmdLUDE2bGM0bjFtaVY3S3VvYmlMejByZUhWUWdZdkY3d0NEY2h3cU5yVktwdktkNFJ4b2FpblRqRW4zQ3NFSUN2Z253?oc=5",
+      "outlet": "MeinBezirk.at",
+      "outletUrl": "https://www.meinbezirk.at",
+      "published": "2026-11-25T23:00:08.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Austria only grows until 2040",
+      "en": "Look inside the road maintenance depots: when the snow falls quietly, winter service begins",
       "about": [
         "AT"
       ]
     },
     {
-      "title": "„Aufregen allein bringt nichts, man muss handeln“",
-      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5DMGx3X0JBUzRmbEQ5TUtmQTBfRzVaZm5uU21RbDAzUWdBVnhuTTQtUm5hS0Ntc1hfWEozMHJHSl94QQ?oc=5",
-      "outlet": "Kronen Zeitung",
-      "outletUrl": "https://www.krone.at",
-      "published": "2026-11-25T19:00:00.000Z",
+      "title": "ESA-Sonde Hera erreicht Dimorphos: Was der NASA-Einschlag hinterließ",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQmZUNVNvTFdKU21qb2ZiTGo5Z3JmOEc1ZjRLZjdHZ3RCUkFuSVo4V3EzTDh1WDdTdmZCZzliUjY2c3JJc3BQbmhtdmlvX2szWHIwNEZkRFRnc0ZOLVM4cU5SeHFaSWgtRlRSWVlqTy1xLThONXlqMUZsTmdSSEtpcFp5YVU2QVFmQXNzNXFzc3R4V2pPSTJpZmdOS1dVWE5XdXM1VUlNeFhPRDQ2djNaVG5GLTRHRHpZdjJ0QVNHVUJudlZsMUE?oc=5",
+      "outlet": "FAZ",
+      "outletUrl": "https://www.faz.net",
+      "published": "2026-11-25T17:43:22.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "\"Getting worked up alone achieves nothing, you have to act\"",
+      "en": "ESA probe Hera reaches Dimorphos: what NASA's impact left behind",
       "about": []
     },
     {
-      "title": "Neuer Rekord von Flüchtlings-Ankünften auf El Hierro am Dienstag",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWFp1dWx1X1FNQ0tMUXpBcmFIbDZUSmd0VkFPellBRHhndU1qOGpMdnd5Q1dtcEhrTTZHb0ZSQldJRzNKWjYtMjYwX2QtTlVXMGxYaEp1b09qMXpVTmY0dlpNcjFmQm80YWtMTkJYeWtjeHlWclQ5NW1iMWNUZjREZHZJRTJkbXQwS1IzdWItdkFRQlE?oc=5",
+      "title": "EU-Budget für 2027 in Höhe von knapp 200 Milliarden Euro angenommen",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcEhfZE9tLWJGeVpHZHFfc01mN2NUY0JKTHBsZ1BwQkJsR2dHaW5TMEdsclQtVjRaNnEtVVRpc0xkLWlGbUtucVJDYXlLbU5iallqeDRUbFNsNWFCTjFYYVk0UVBaajBObUthMnN0VWhDaFV5Q3hjdDN0ZDBJQk1VaDd4RWNZbE8yZ3lhRXRBUmR4Q2lsRE1SVmNIdHBoSGpfcVZ0OGdVYTlMMXpWaUZ6d2loYUJidjQ?oc=5",
+      "outlet": "derStandard.de",
+      "outletUrl": "https://www.derstandard.de",
+      "published": "2026-11-25T12:37:00.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "EU budget for 2027 of just under 200 billion euros adopted",
+      "about": []
+    },
+    {
+      "title": "Nobelpreis trifft BookTok: Die Highlights der Buch Wien",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNM0EySjhrdXZjaXpHcm9hOGR4bVBYNk4tUnBtQWZNaTROQkl6Y2tDcFJkV2JHNWVpckF2Sno1OEJSS01tVllDMmVDbkpuZWlUa0VKYmQ4a252YmVVMnhEbnp1N0NvcFFyaFBRVVN4dGtiUnRlUmJ3cTdXaEwtZmFrazJPcWxnUnpSckxLTjljMVhoV0lnSXctVEZLZnRPUDRCemVtYVIydjg?oc=5",
+      "outlet": "DiePresse.com",
+      "outletUrl": "https://www.diepresse.com",
+      "published": "2026-11-25T09:31:27.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Nobel Prize meets BookTok: The highlights of Buch Wien",
+      "about": [
+        "AT"
+      ]
+    },
+    {
+      "title": "Strache wegen Novomatic-Affäre erneut vor Gericht",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9XcXlZVDZKMlpxWnlkaXNxem5QOFhKVlpZelAwOVNhLUlIWDZhTDBrdXlmOEw0UGVXTTluWjdYeWg1ekcxcUxkMXF6X3ctbllDWHRUUG1iR28yaWM?oc=5",
+      "outlet": "ORF",
+      "outletUrl": "https://orf.at",
+      "published": "2026-11-25T21:36:10.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Strache back in court over Novomatic affair",
+      "about": [
+        "AT"
+      ]
+    },
+    {
+      "title": "Scheitern von COP31: Ölstaaten tragen laut OPEC keine Schuld daran",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWWVqX3Z6c1RlUjczYTdvR0hyb3B6c0YxNGFEZjNSWEtydjBMeGxMb1ZMa1J5Qk1JdDRYai1Ld3JBZy1GODJ3SjNJQURFanJ4U1BIanFUQ3d1amZfMVdTSm9YajVjbTdfYVhRcjNZOGI3aXJSNGhiRktocFQ1N2pEVFFoSlBNc1ZtMnBGSnlDSDFweGFwdjFWMUI5eXgzSlQ1Q1hhQTFLNG5FVFE?oc=5",
       "outlet": "Kurier",
       "outletUrl": "https://kurier.at",
-      "published": "2026-11-25T18:51:00.000Z",
-      "outlets": 5,
+      "published": "2026-11-25T22:12:00.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "New record of refugee arrivals on El Hierro on Tuesday",
-      "about": [
-        "ES"
-      ]
+      "en": "Failure of COP31: oil states bear no blame for it, according to OPEC",
+      "about": []
     },
     {
-      "title": "Vanillekipferl im Test",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwZE9jWjNiNXk1N0ZudUVndTdiUG9KV3M5X2szSTFnTTcxci1KWWQxUWJjWG8yMXJRcG9zZVltbVUxWFpJTVdwQS1GZDFBeGd3Q2Zic0Q4eDhmdDQ?oc=5",
+      "title": "Ringen um besseren Gewaltschutz für Frauen",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwNWZiWE9WTFdIbmNzcmxibDZaSGhwQVhBMlVfX0w5b28wdlRJVDdPd3hCZVFNOVhWZHE3TmF1S2oxUjYyRGRjWUxqelV3WGhYelhFblprcjhjVWs?oc=5",
       "outlet": "ORF",
       "outletUrl": "https://orf.at",
-      "published": "2026-11-25T18:28:57.000Z",
-      "outlets": 5,
+      "published": "2026-11-25T21:34:27.000Z",
+      "outlets": 4,
       "trending": false,
-      "en": "Vanilla crescents tested",
-      "about": []
-    },
-    {
-      "title": "TSG Hoffenheim - Sturm Graz Tipps: Europa-League-Prognose & Quoten am 26.11.26",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWS11TFlsSy1fYnpjYW1yTW9oS1NtMFdqRU1Ndi1xai1WSDN3Y0pVR25wclB0S0J4OGlVSlFyV21iMGVZakl1Tl9NemNXZmVQRzJIQ1pHa0tyaDg5ZmxBblhFVWlIY2k3QWxTRnE1dFozc3JRVHFvRU5PUXVsaUpQUS02RQ?oc=5",
-      "outlet": "RTL.de",
-      "outletUrl": "https://www.rtl.de",
-      "published": "2026-11-25T15:18:54.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "TSG Hoffenheim - Sturm Graz tips: Europa League prediction & odds for 26.11.26",
-      "about": []
+      "en": "Struggle for better protection of women from violence",
+      "about": [
+        "AT"
+      ]
     },
     {
       "title": "ISTA Klosterneuburg: Forscherteam entschlüsselt Schaltzentrale von Pockenviren",
@@ -261,30 +277,92 @@
       ]
     },
     {
-      "title": "TKMS Aktie: IG Metall ruft Kieler Werften zum Warnstreik",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYXNyYzF0aVpoLVJjSlhaa0lWenM1SHFtNUhQUzAzR2FjdWhNcEZZUGY1UWJSZFFsQUFWVzJBOHpUdkowN2MwSldBazZkVUZycGprclYyWFRUS0lacGpsemhsT2hXWmpoOXdnS2U1bGJxUUJra1czUE5QTjFrMWVjV0xqXzF6elllMUxJd0JKZXd4d1o2U1FOQmxVRHprazcycjFqVEJLQjk2OFk?oc=5",
-      "outlet": "Börse Express",
-      "outletUrl": "https://www.boerse-express.com",
-      "published": "2026-11-25T17:50:17.000Z",
+      "title": "Post schreitet bei Elektrifizierung der Zustellflotte voran",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOFB2QnRpNlNheWplOHljVEh4b3FKTkZWRC0ydjhiWmJlOV9YcER5YVA3VkNpRm5yeUh2WDV5NHJXNEVJQ045VFQzelU1eDJJMVZYTjJYdTdXMG5mTUtyY0RsVjNELUQ4cTZNS0NCdFl2OEtkelhjNlVza0twRkprZ3ZGNmtYMGR6MS1TWmN2NFZseXI2UXVnblE3ZGZBNHphNmNUMg?oc=5",
+      "outlet": "Wiener Börse",
+      "outletUrl": "https://www.wienerborse.at",
+      "published": "2026-11-25T09:07:00.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "TKMS share: IG Metall calls Kiel shipyards to warning strike",
-      "about": [
-        "DE"
-      ]
-    },
-    {
-      "title": "Landtag: Viele Fragen zu Rechenzentren",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9xSVpQblMwQk93NnZTbzlGUmVVS1UxNHVSdGJuN2U0RVZrcVRMaExtUHdIcFpzTHMtY1Fid1hrYjgydUF0NkVMYW1xeF81TDdvYVhVbA?oc=5",
-      "outlet": "burgenland.ORF.at",
-      "outletUrl": "https://burgenland.orf.at",
-      "published": "2026-11-25T17:48:46.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "State parliament: many questions about data centres",
+      "en": "Post advances electrification of its delivery fleet",
       "about": [
         "AT"
       ]
+    },
+    {
+      "title": "Lungenkrebsscreening für Österreich gefordert",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUWNGZ2cyREVvYWQ4Ml9IMkVNZU4zU0d1dTdQekZSS3VvYUVjOFdTSl85NkVlOHpwLW95VnljWGRidnp6cUZ0M1EtbUxKMkJySjQzeGtHZDFQdlRSQ01Gci1QX1JtbTRMXzRSMkJZSmZPazdVNzd3eTFVNEU2S1BsQjM3bDkyaVR1RTAwR2tIRHR5QlhMalE0N2xn?oc=5",
+      "outlet": "derStandard.de",
+      "outletUrl": "https://www.derstandard.de",
+      "published": "2026-11-25T15:36:00.000Z",
+      "outlets": 8,
+      "trending": false,
+      "en": "Lung cancer screening demanded for Austria",
+      "about": [
+        "AT"
+      ]
+    },
+    {
+      "title": "Polen richtet Flugverbotszone an Grenze zur Ukraine ein",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA3aFNHRUYzY3lNeENvWDBfOW5FR0JIOHFCeGpjYkpyN1pyTFYwd1ZBYjA5NFd4YlhnajhNUzBySEdjRU1jYVE?oc=5",
+      "outlet": "ORF",
+      "outletUrl": "https://orf.at",
+      "published": "2026-11-24T21:27:24.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Poland sets up no-fly zone on border with Ukraine",
+      "about": [
+        "PL",
+        "UA"
+      ]
+    },
+    {
+      "title": "Oberösterreich rüstet sich für ersten Schnee",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRYVJVbWwzNVR1d3BMQ0VkTXZqdy1Lc09sUHNwaUhkZEdDbHVWSU1fa0ZfbExTSWVYdUJjUmVuSEtORGlDUnRfdllxTFhST3lTUWZHMkh3Q0d3Unc?oc=5",
+      "outlet": "ORF",
+      "outletUrl": "https://orf.at",
+      "published": "2026-11-25T16:40:45.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Upper Austria prepares for first snow",
+      "about": [
+        "AT"
+      ]
+    },
+    {
+      "title": "Vanillekipferln im Test",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwZE9jWjNiNXk1N0ZudUVndTdiUG9KV3M5X2szSTFnTTcxci1KWWQxUWJjWG8yMXJRcG9zZVltbVUxWFpJTVdwQS1GZDFBeGd3Q2Zic0Q4eDhmdDQ?oc=5",
+      "outlet": "ORF",
+      "outletUrl": "https://orf.at",
+      "published": "2026-11-25T18:28:57.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Vanilla crescents tested",
+      "about": []
+    },
+    {
+      "title": "Österreich wächst nur noch bis 2040",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JQlluQjV4d0phOHBnb3NLVXJvWktrejBUTmRyQ3dfUkhWMVJOblcydHlKdThFUHBJUzVrMldtbHphMVZMVUVveUItQWprNG5HaUotc2ItYUVmeVk?oc=5",
+      "outlet": "ORF",
+      "outletUrl": "https://orf.at",
+      "published": "2026-11-25T19:18:46.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Austria only grows until 2040",
+      "about": [
+        "AT"
+      ]
+    },
+    {
+      "title": "Tupperware im Lokal: Wer macht das schon und wie reagieren die Wirte?",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbVZxVEVNZ05RcjN5eHhrNVdrQTYyVGYyVzlpdE9WbkxfQWd6M3FMRjRqT1pPalZnYkR4LS04X21wYW5GdFZUQnBmR3VkREhpZnd6dTN4N1A3MjVwZGxfMGgtdHZ6dDRvcEhFSVBjYzY2OFljSXFfckgtOVNtVkxMa0pibWtDVGplcUViZkNHalRxb1NNNHFMSUZHWUotcm9KZDNCRjhBX0JSSXgzc25wal85Z2w?oc=5",
+      "outlet": "Der Standard",
+      "outletUrl": "https://www.derstandard.at",
+      "published": "2026-11-25T17:35:34.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Tupperware in restaurants: who does that and how do landlords react?",
+      "about": []
     },
     {
       "title": "EU-Parlament befürwortet Lockerung von Umweltvorgaben",
@@ -298,94 +376,17 @@
       "about": []
     },
     {
-      "title": "Ein sichtbares Zeichen gegen Gewalt an Frauen",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQb2NBSnVpMWQ3TVFZZzZDaWdYZGpuVFI4a1FWeElsc0ZlNjBDS2dNZU4yWGs5cGlVWVpwMWl1UGNSY1AxcmNhYWFyS3FyVk1QT2treDJiQWFDNExjYnNfQUQxVDZEcl9aeEhTWmhZeWxRa3JrQ1FSbkVLbXhYaVFPa0gxWG8yNDZxODZCMHhCdjVWam5TTHJ5Z2F4MnZOWGV0RGpB?oc=5",
-      "outlet": "MeinBezirk.at",
-      "outletUrl": "https://www.meinbezirk.at",
-      "published": "2026-11-25T18:20:29.000Z",
+      "title": "Galerie: FC Salzburg U19 vs FK Roter Stern Belgrad U19",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWXlnZmgtRkdDSU1Fd1YzQmUwbEJLUVRiOTExR3h6d01FeWZrV1dYLWJPbTAzWUVodVRhZmZYYUJYeWN5QWVnQmRhRnZzaWtrM2lzUG50Rmg3bVJKZTBCRWlRY2Ytek1Od3FLWnRyLVNSM1NBM3NEbGpNZFpUeTF4ZmYzbVVPU2tSbUhxYjVHaw?oc=5",
+      "outlet": "FC Red Bull Salzburg",
+      "outletUrl": "https://www.redbullsalzburg.at",
+      "published": "2026-11-25T13:03:08.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "A visible sign against violence against women",
+      "en": "Gallery: FC Salzburg U19 vs FK Red Star Belgrade U19",
       "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "OECD: Österreichs Gesundheitssystem teuer, digitale Angebote wenig genutzt",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOOUd0c2J6ZXpITWVCQy1GWTZ1LVVxVFFpaGpYcnk5MzluWEQ3SVQ1NjN1QUZGZFQxMXo3VS04dVBVbDlsdWdqQ0o5dmdfNEVmQTV1alZLaUNtaHg2OHEtYUhzX2FqdVpGNklVSk1JWl9XNi1sMmtFVzdUSGFWbWZyVFpVZUFqYTNPMENSYm5uMEttdXdvbDBqUF9oVnhrT3hPQmdiR0daYjVsRUU3YVNkcXM0V2ZUdTVyWDZRVE8wUEhBOW11aUhxYklJcEI?oc=5",
-      "outlet": "Der Standard",
-      "outletUrl": "https://www.derstandard.at",
-      "published": "2026-11-25T11:30:33.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "OECD: Austria's health system expensive, digital services little used",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "Budgetdebatte im Fokus - Merz schockt mit ehrlicher Schulden-Beichte",
-      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBpUkJaSHRaU2ZCOS1leE44R29GdngtM3o5RWhvNHhiRTJLVG1Gc1BsenlaQ095V2wwcVBFRUNFbUtrUQ?oc=5",
-      "outlet": "Kronen Zeitung",
-      "outletUrl": "https://www.krone.at",
-      "published": "2026-11-25T17:05:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Budget debate in focus: Merz shocks with honest confession of debt",
-      "about": [
-        "DE"
-      ]
-    },
-    {
-      "title": "Nvidia Aktie: Trump erwägt Staatseinstieg",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRE1sSXdlb3Z5XzVZWUdkd3VpYVJwSmVmM3UxaVlWX1RhT1diV0hUcW1XWFlNd0VORWEzZlpOTGdaZ0V3ZjYxNGdwRVdwSFRtTWNyNnJFT2dhMFVFRHRaSjlHSlAxeXBVVThXd3VwbHVVbWRSMWg4d0NGLWZOZFA2UDJpVEdhS3RXdU1uR3hmaVBENXRPQWR3Mg?oc=5",
-      "outlet": "Börse Express",
-      "outletUrl": "https://www.boerse-express.com",
-      "published": "2026-11-25T11:50:16.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Nvidia share: Trump considers government stake",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Wissenschaftsausschuss unterstützt mit breiter Mehrheit Maßnahmen für Gewaltschutz im Hochschulbereich",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5KWnFudEllV3FXU3BOeXJqZk94cXpubHlDWVhXNTJGanNpbDlVSXV2NHExM1dWUmNQTnBjYkFvY2dnaFBZR1piZU9HSG9OSC1aSFZMMXUtQzMtc0ZNZlFBc29lSHJmbFIw?oc=5",
-      "outlet": "Parlament Österreich",
-      "outletUrl": "https://www.parlament.gv.at",
-      "published": "2026-11-25T17:26:18.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Science committee supports measures for protection against violence in higher education with broad majority",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "Meinungsforscher zu Umfrage-Eklat der Salzburger SPÖ: „So etwas kommt normal nie vor“",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMVhGOHRFSFYyZ1Z1RGE5cDBsc1JYU2ZBRHN4Sm13dGN4OXJ2WWJQMU5Pc1hxcnF0MVRSN2JxVjBkYk5tajM1WVhCcEVEOGYwbldoUGtmOWkwYXBOc0ZweTZKQWdJN0VfVXhLWlBsR1dDbjJWRTBKLU9tWmtjUEoxYkU2c29sdmVSb1ZDMW1HbnNFdTlmTzN1Umd2YUUyd0RLM2tocXhSMzZJQ3hvaEhYaURMRnEtRUwzcFMzWXI4TnNud2tFUFhqaA?oc=5",
-      "outlet": "Salzburger Nachrichten",
-      "outletUrl": "https://www.sn.at",
-      "published": "2026-11-25T17:21:00.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Pollster on the survey scandal of the Salzburg SPÖ: \"Something like this normally never happens\"",
-      "about": [
-        "AT"
-      ]
-    },
-    {
-      "title": "Einigung auf den letzten Metern: Regierung zurrt neues IG-Luft im Bund fest",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORzdaUEdRMmk1bmNkb0tLNVNGY3BTYnFnemlScVZJaFA5M2VHQzVxWndGZXVBWnA0MlVsdU5DTkVFWl92U0UzVkxOLTBaUlZWN0h2eXIxR2VQNmlNUlBlRUxaWjF4aXZZX0RZd2NsWm43STZQRWd1S1RpQTVER2s4Z3kzcm52bW52LV9ybmEyUlBteXBBdEhuWElNOEdiWmNtUDBCYTZmOEJ1OU5aX1dZ?oc=5",
-      "outlet": "Tiroler Tageszeitung",
-      "outletUrl": "https://www.tt.com",
-      "published": "2026-11-25T16:24:08.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Agreement at the last minute: government finalises new IG-Luft at federal level",
-      "about": [
-        "AT"
+        "AT",
+        "RS"
       ]
     }
   ]
