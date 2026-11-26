@@ -2,7 +2,7 @@
   "code": "NO",
   "name": "Norway",
   "kind": "local",
-  "updated": "2026-11-26T04:34:25.672Z",
+  "updated": "2026-11-26T14:21:53.716Z",
   "source": {
     "name": "Google News and Bing News",
     "edition": "NO:no",
@@ -10,94 +10,159 @@
   },
   "articles": [
     {
-      "title": "Statsbudsjettet 2027, Budsjettforhandlinger | Slakter skattegrep i budsjettet: – Alle får det verre",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOajZ4ZjZkT25DSUFHdWtBcU8xbXFGTE1FM1h2WHBRTy1od2pMYnU4c3JuY0tYdlBTUjMwemVvZ0hZRXhnZ3lYRlpGUFpMYU1xUlZtS0d1c0tnejlldmc1cUFHT0tsUEtMd3BHd2l0eHZkVV9vOS16YU1LdkdRR3ZGaUNmNFNVekptVFl4alhLOFRtZUd2aXUzRWNJM0F6YUE3?oc=5",
-      "outlet": "Nettavisen",
-      "outletUrl": "https://www.nettavisen.no",
-      "published": "2026-11-26T02:48:21.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "State budget 2027, budget negotiations | Strikes tax measures in the budget: – Everyone gets worse off",
-      "about": [
-        "NO"
-      ]
-    },
-    {
-      "title": "Island: Fiske­fartøy har forlist – 17 personer i vannet",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yYWhEeUVCT29RSG01dlZxMy1fbjRzRVUtaFRuUkduVmRMV0cwMnhwcmtwbm9QUFlGZ1R2WEZNN0Z2WTNhZFlZUEFBTUlJX29ZTW1zemZ5bGtrbFB3NzcxWnplWWpwei0wRUpLVXZrdHFSemJfOHJGeUZ1eTRrRkk?oc=5",
-      "outlet": "smp.no",
-      "outletUrl": "https://www.smp.no",
-      "published": "2026-11-25T22:50:52.000Z",
-      "outlets": 5,
-      "trending": true,
-      "en": "Iceland: Fishing vessel has sunk – 17 people in the water",
-      "about": [
-        "IS"
-      ]
-    },
-    {
-      "title": "Ordføreren i Kyiv sier byen er under angrep fra ballistiske missiler",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYnFyNkIwWWQ1OWtKbERHSVZXWUNVT19IZEpTX1pSSkgwcWx4T1QteFZvQVZLZmxlU1pfd3d1NjRWRlVROE9xYlVoc1dlbEJTODZ4cU9tS3FHTUU0cF9YT2lHeFJ4SFZZOENua2RidEI0RnNMeF8wbUV6ejRIV1ItM043NXVkOEdxRVJSSE1sMGhxZVdGZUN0eGpTWHNuWmZ6U3kzRTRFTQ?oc=5",
-      "outlet": "NRK",
-      "outletUrl": "https://www.nrk.no",
-      "published": "2026-11-25T20:58:22.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The mayor of Kyiv says the city is under attack from ballistic missiles",
-      "about": [
-        "UA"
-      ]
-    },
-    {
-      "title": "– USA utelukker soldater og baser i Ukraina",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd1lOeUVGa3ZMYlNhVW5vMENxd2pNVFVXR1ktY0JidUZ0QzhKejlVRWQ2OVpjaEdQcXpNVU9hWThuSFZ6SmJrV01DS3pfMHNQRU43Mm5WUlM4TmkzaXN2S3pBTVQwY2V4R2FUOG1hTU1uYjRIaG0yWEJxMURCU1hJZF9UNA?oc=5",
-      "outlet": "Dagsavisen",
-      "outletUrl": "https://www.dagsavisen.no",
-      "published": "2026-11-25T15:00:45.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "– USA rules out soldiers and bases in Ukraine",
-      "about": [
-        "US",
-        "UA"
-      ]
-    },
-    {
-      "title": "Søvnforsker: – Søvnløshet er et skjevfordelt folkehelseproblem.",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOHNFUGJLc05qdHFCMUR4TlI5dkVNSTB1ajktYXBhUE16Q2RTbG5VLUtrUWltRTJhZjZnM3JreTVYUUo3Q0QycTlwNVBiN28wTTBBVlp5NlFKVG1tU2RvTC1PNG9aNmhIWHk4MmRCUkRDWUF5dlYteE8zV0QxNzlGbE9QM21saGkxaVRMbnI3YkRiWG5WcEpkazh2cWxCLUJWY2tfRlV0RQ?oc=5",
+      "title": "FHI: Vinterens influensautbrudd er i gang",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZExKUjI0SzNIN21RWVFSZ29ZcGVEeUxaaEI0VkVlUXowUHpOT3FVUEFvYzRCeV9CdU1pQk02VllMOXpiUGxEaE5XdGpDZjRRWU5Wb0VHVXBMTWJlQkZSM3NKZV9NVFNXWVNjRUV4eDZCUWJXWVFjLWlSaEQ5dHMtWm1NR1lycV9iemc?oc=5",
       "outlet": "Aftenposten",
       "outletUrl": "https://www.aftenposten.no",
-      "published": "2026-11-25T21:16:29.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Sleep researcher: – Insomnia is an unevenly distributed public health problem.",
+      "published": "2026-11-26T12:06:39.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "FHI: The winter influenza outbreak is under way",
       "about": [
         "NO"
       ]
     },
     {
-      "title": "Kongens takkekonsert: Dronning Mette-Marit kommer også",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWVZmUW1LLW1EY3lod3ZpVllfS0Q3R191ek9aeHdTVm1kYXF3cXBmTkdjbFFqUHI2RkJ4Wmt2Y0p1WUJWZUgwVmR0RjNHa2hvSU9CUnhmeXE4ZGdQRXVya1kzY294M0tuWG5FbGhQdnV2NmUzX3dzUFJmMWQ1aXNBZlBJNVc0ZXdid1lObmFmY2tZV09LTWRwVWExY2haa055T3RmWHVaMnIxT2s1M3VSRkNfcTl0NGNmTWdFUmZ3?oc=5",
+      "title": "Nammo-sjefen: –⁠ Flere trusler mot meg som person",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcW1wb0JnUkYzZVNydDJSeXdFcHdsU1pNYTRUTTA5WW1JdVQ5LWJLSVFFV25LczlVcXpCQk8xcU5oOGxhLXo3eENFRFMzMzNOajdwS3AzNEthZ3M3N3ZyVk45ZUNFZDlITjVyUndBTC10NFlGT3F6NS1nYWpFcVNjZERPbFJaQjRH?oc=5",
+      "outlet": "E24",
+      "outletUrl": "https://e24.no",
+      "published": "2026-11-26T12:48:56.000Z",
+      "outlets": 5,
+      "trending": true,
+      "en": "The Nammo chief: – Several threats against me as a person",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "Arne Torp er død – språkforskeren ble 84 år",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9jRXcybF9mbl9Db09raXlmZ1Jmbm9kV19GcVFYUVBISEJHVDVXRXRrc3Q5cmpNRGN3cFVac1VuMFcxcWVPT3lmd2tkMmlzZjdibncwcXJzcW0wZktNdjlsM1Q2M0F3MmNlSkk4?oc=5",
       "outlet": "TV 2",
       "outletUrl": "https://www.tv2.no",
-      "published": "2026-11-25T16:39:12.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The King's thanksgiving concert: Queen Mette-Marit also coming",
+      "published": "2026-11-26T08:15:20.000Z",
+      "outlets": 6,
+      "trending": true,
+      "en": "Arne Torp has died – the linguist became 84 years old",
       "about": [
         "NO"
       ]
     },
     {
-      "title": "Ble angrepet av elev – frykter flere skolekutt",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObXcyME51ZzZBTklTZ2padEVqcHM4Z3FMT2s0dTFpcDF5LVZfYWZ4LVQ0YW9Ga1ZGY1kyY25MazRNMEJ5cXhCRndFQUJXQW9XMUZiU25TdWlTczZieWtxU2VOak01d0xnbk15b0RmS05kR2lUeXBIZS1NT1VBdU44bXozOHlFYlhMNm5V?oc=5",
-      "outlet": "rbnett.no",
-      "outletUrl": "https://www.rbnett.no",
-      "published": "2026-11-25T18:46:35.000Z",
+      "title": "Eliteserien: Rosenborg-treneren kan forsvinne: – En marerittsituasjon",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQT0tGbW92R2pwQzdzUHFaSGtDMk1zeElVZG50M2lUZEc4SXIxWlMyLXFRNGJaOFNwTXg0Y3l0N2pQTXNhd2JraFlKekFVQmhkcnZlbnhDb0RpdkM1cy0tcTlaUlBCbHp5Rko3X3QwWXlSYXZ4bTZ0NXM1SmV5Q0hnaFlZUkJCeTJLYUJNQ1pHN3U3QU1EUW9VWHF5Q0djMkE?oc=5",
+      "outlet": "VG",
+      "outletUrl": "https://www.vg.no",
+      "published": "2026-11-26T13:26:13.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Attacked by a pupil – fears more school cuts",
+      "en": "Eliteserien: The Rosenborg coach may disappear: – A nightmare situation",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "Israel truer med å fordrive en million palestinere sørover på Gazastripen",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT2daSFlUSTdVaXB2NTRJTGVwalA4QVVqOEZRTWdhQW5HOW1vWkJKSk1hSEhZLUNfVzNoR3dzR1pWelBCcWFlMUw5RE9ib29QVi1CVWkzNXF3UFJ2V2plcGRvTHRHb3BHR1Q3dldRcTZvblFaR0RELXlmM0lSVkZwYlJ2cWNOalVKZzVzX1JxSy1QNXd0RUNaS3BHVnhiNlpJVkJPXzZ3SzZXdWwzbWtTWERoaGZoOGV3bF9B?oc=5",
+      "outlet": "Aftenposten",
+      "outletUrl": "https://www.aftenposten.no",
+      "published": "2026-11-26T12:02:39.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Israel threatens to drive a million Palestinians southward in the Gaza Strip",
+      "about": [
+        "IL",
+        "PS"
+      ]
+    },
+    {
+      "title": "Ruka: Friskmeldt Høsflot Klæbo hemmelighetsfull rundt egen skade",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNWU5VlVwZFA0Qlk3YXd5NkJpWEM3c1BJTEtRQlJ5aFBza1k1dXIzYU9PRUU0Q1otNGRrRFNiWC1ZR2V3YkN3QmhfYUpMNHZCOVRhN3U1Z2lyenJXRDdGM1oxWE9hR3BCem5xYnVFVWlFRUZBbjNWcUc0aDMwWmpnQzNLRjBUWWk4b1dTM2h3LWdTeFRLQld3OE9vc05sRjQ2M0Nz?oc=5",
+      "outlet": "NRK",
+      "outletUrl": "https://www.nrk.no",
+      "published": "2026-11-26T11:43:18.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Ruka: Recovered Høsflot Klæbo secretive about his own injury",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "MDG-lederen åpner for kompromiss",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TMk5CWHRYRTQzc3JqMURfNzBSTTNTRHN6Tk5oNGk5T1ZqcC1SUV9FVFNlYXBCRGkzamZlM2lMVGpLcVB1dnZyR1RmNG1xeXJhWnNzaHVBZ3ozWXlfajgtWTdiRl9MS0w4TE4yWTVCcWNWek1zV0tj?oc=5",
+      "outlet": "VG",
+      "outletUrl": "https://www.vg.no",
+      "published": "2026-11-26T06:33:23.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "The MDG leader opens for compromise",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "Mann i helse­vesenet skal ha voldtatt pasient",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWXRkandUNThwVEwyblFPczlhNXZVYnJPVkg0QVowRU5SNjByTFNXMUQteVVLbWN6SEV2d3Z5LTVsNkRuYXgzNFRYSjVKZGs2ekJrN1cwUGdSWTlJWDIyVWNTazJxT01TYWtURkdlRDN6OHp1WkJMdWZwYzgtSjZET1o3YWh6MEU?oc=5",
+      "outlet": "NRK",
+      "outletUrl": "https://www.nrk.no",
+      "published": "2026-11-26T08:28:41.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Man in the health service is said to have raped a patient",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "Riksrevisjonen: Effektiviteten i sykehusene har falt siden 2017",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUnBieEZYYUJPV0ZHSFRTNUFTZEhEeVozQ24xaW1wMmxibGdidmIyZDVFYm8xeDR1OFhUME9CbnFDNW9hSGVkQjNVdnMzd0hlMlFoZk9qYTBwOWgwZW1xWlhWSmJyc1o1SktLaEFzbmMzY1AtTXRYazVjN0tmQ050NEFFeEZCMklYNUNXenZiSlpnU1pOWGVkNGM0RW9kb3BHZEtZWGhCRQ?oc=5",
+      "outlet": "Aftenposten",
+      "outletUrl": "https://www.aftenposten.no",
+      "published": "2026-11-26T08:39:28.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "The Office of the Auditor General: Efficiency in hospitals has fallen since 2017",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "Utbrudd av influensa: – Ta vaksinen nå – Siste nytt",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZ2p3QUpTNlhwMkpqeF9jVVN3M1FOMEdBY2JKR21PZjJIRmUzSnZQU2hqMGM0WnJzZmo3RThmZFJYOWRpUUVNdHVxMFRMWTV5bjdyUk5SOU50SHJvYzJmY3l2bWVEQTNNTUtvZjZvZkZjZ012eWI1SXZGdmg5cVpaY2RR?oc=5",
+      "outlet": "NRK",
+      "outletUrl": "https://www.nrk.no",
+      "published": "2026-11-26T12:14:16.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Influenza outbreak: – Take the vaccine now – Latest news",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "Han var valgets taper. Så tok han et grep som snudde opp ned på alt.",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMmZ6bUJiMXFib3A1aVNVZC02UDhRTndsQ1hTYy1VREpCakxNZjdoZmw1U3Bpb2VFeXk4VlZudDR4d0pvVF9pMEpqcWhKSllYeW9maWxpYWc4ZHczenNBSlgxSmlhU3BENVRQdVhmMWJ1aFJXaHJzX2NYMjNibkRhcTJWY3gtamlJRDZnQk1OTWRSRWlYNk1leldOaEpTS1hIcWlBSGs4RDZzWG1neEozZEp0aHE1cU51ZlpzbTZGQ0NmVjFabS1QUmVkMms2TzRReDN5MGZB?oc=5",
+      "outlet": "Aftenposten",
+      "outletUrl": "https://www.aftenposten.no",
+      "published": "2026-11-26T07:30:25.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "He was the loser of the election. Then he took a step that turned everything upside down.",
       "about": []
+    },
+    {
+      "title": "Vurderer å utsette avlivning av 225.000 unghøner",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOLVF5RWhHSjMyT2VzcldvUEdETmlaQ19NTXVHSWxWMTZ3ODk5aE45Ujc5ei1zN01JYmNQbXBEV0tzZV9RbGZpWTUyc1oyd1llZ29iOHRlbk0tRjRRdnVvXzdQVi1zRmMybWdHVklwLTNfN2dXd0Q0QVBFMlA1eDhtSnZ1QzhZWlBxMFNCd2UyRTIzMmFLUGlGYQ?oc=5",
+      "outlet": "Stavanger Aftenblad",
+      "outletUrl": "https://www.aftenbladet.no",
+      "published": "2026-11-26T11:52:48.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Considering postponing the culling of 225,000 young hens",
+      "about": [
+        "NO"
+      ]
     },
     {
       "title": "Sitter i Thailand med Norse-billett: –⁠ Lever på mine siste kroner",
@@ -105,7 +170,7 @@
       "outlet": "E24",
       "outletUrl": "https://e24.no",
       "published": "2026-11-25T20:17:58.000Z",
-      "outlets": 5,
+      "outlets": 4,
       "trending": false,
       "en": "Sitting in Thailand with a Norse ticket: –⁠ I'm living on my last kroner",
       "about": [
@@ -114,286 +179,222 @@
       ]
     },
     {
-      "title": "Alexander Isak med måldobbel og lekker chip – senket Club Brugge",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zRzdIc3FRUjl1RjF4ZWpQUTN6Q2RseDZmcmN3MzZrNjB1OU1oYWdGX0lmS2R5bnk1cTRDVE9OOFJEbEh1ZmQ1Wjg3emkyRzJvbUx6Y3c0NUI0U1pOcmF2Rmc4VTBBb0VGOTZJbE1ycXRZQjBMWV9QcV9VVQ?oc=5",
+      "title": "Droner krever stadig flere ofre i Sudan – Mohammed ble bare ti år gammel",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Xa3hCY0dRZ1pQUkpLZmdkN3BwSEhYQnY3emRPb2VjNnhicXNaZGFmSlZaclVYNXUzdjNOTkZmRllxa1FNSmlRalAyQkh6aGJPenVEZ0lWVS1VRjNtSTNIWXdlRjFvb1N0aGt0cF9nWQ?oc=5",
       "outlet": "VG",
       "outletUrl": "https://www.vg.no",
-      "published": "2026-11-25T22:05:55.000Z",
+      "published": "2026-11-26T11:25:38.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Alexander Isak with a goal double and a neat chip – sank Club Brugge",
-      "about": []
-    },
-    {
-      "title": "Sørloth scoret og haltet av banen da Viking ble utspilt i Madrid",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTjE0WWRfcEhTQ2JDUUdUNlUwMm5DbXkweWxEREFXeF9VRmdUbHhPLVBWYkhPcEZzN3JKUWFQQWNKSTRJbVFqRXlvc0JkS1BDWVVWazgyQlhRQnNKcFJvUjd6dVpRLVJEZzFmRjFHQ2RQSHpRVDI1Y0VkUWlGQ2NLSjM0SjdQS3haV3dKUjgxNW8zOU5XajJLUEJaUVgxczA0blRiaE9B?oc=5",
-      "outlet": "VG",
-      "outletUrl": "https://www.vg.no",
-      "published": "2026-11-25T21:51:32.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Sørloth scored and limped off the pitch as Viking were outplayed in Madrid",
-      "about": []
-    },
-    {
-      "title": "Ekspertene raser etter nok en United-nedtur",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX2VmcE9nTzQzRmNxQm81OFFMTjRXRnZJb3RQd1hRQ3p5VFFPa3dKYlo5R0RjSHFPV21YODNoMVdiLXFQb09DVlVOZnNDTDQ1YzNCS1U0bkdZTmhRU3dmLUxuaHZZcmljOW01NXM3M1pLa3JhaV9tYmZha09vY1M1QTAtQ25GQQ?oc=5",
-      "outlet": "NRK",
-      "outletUrl": "https://www.nrk.no",
-      "published": "2026-11-25T21:55:43.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Experts rage after yet another United fall",
-      "about": []
-    },
-    {
-      "title": "Minst 30 døde i brann i Kairo",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9zd3JEQ3lDaW9WSnhRU3JCcjZvcUtKbUdtcHhCQWxZcUJlSkEydElSclg1dnlYX3JfRHBmMHViN2JkUVk0S1BSZFltVnVHV2daRm1HR3lXa3AxY1NfRlhSVU8yVVRhdDBXR212YlowRzd2ZDdr?oc=5",
-      "outlet": "TV 2",
-      "outletUrl": "https://www.tv2.no",
-      "published": "2026-11-25T19:34:42.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "At least 30 dead in fire in Cairo",
+      "en": "Drones claim more and more victims in Sudan – Mohammed was only ten years old",
       "about": [
-        "EG"
+        "SD"
       ]
     },
     {
-      "title": "Sendte hjemmelagde bomber i posten: –⁠ Mangel på respekt",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQQkszTVBlOGhVSzlTQkVCUzlWX0NZOURPU3FJTXZ3OG1hRVJYYl95Ty04SFRpWC1iLV9RaXVYQktfcnVOckMtYU9faHpvUlVHRmthMnFqeVdabkk2TWR5a2lMSk5TY1AxeTNZOVN5cDdhb1JyY2pueVVEa3p5QlNfQW9B?oc=5",
+      "title": "Kushner: Putin lover å ikke bruke atomvåpen",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVkRUbUhVZ3MyLVpOdnp2SnY4M3RKWE5jMFU0UWFDdUk2YmZKMURDNmw4emQ2SC10TG5GRm9rZkxobTF0d2RoZjNxYU5zREwwVS1aX1FkQmlJeGp1VlNFbWtCdnRKU3RhZll2ak5jQjRnMlM5SkdRdXpFUl9PRXkzZmNSYTNCa0M2YXBZU2hqT2JuSGNaeDdYRzk1ekRkV1EzWERoYmxOckZiNUZzcXc?oc=5",
       "outlet": "VG",
       "outletUrl": "https://www.vg.no",
-      "published": "2026-11-26T01:25:57.000Z",
-      "outlets": 1,
+      "published": "2026-11-26T06:24:21.000Z",
+      "outlets": 5,
       "trending": false,
-      "en": "Sent homemade bombs in the post: – Lack of respect",
+      "en": "Kushner: Putin promises not to use nuclear weapons",
+      "about": [
+        "RU",
+        "US"
+      ]
+    },
+    {
+      "title": "Kunst, Kvinner | Skjerf dukker opp i bybildet igjen - dette er årsaken",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMy1PbzJfd2FZd3ltN1FvdWlvLWkybzVxT1pUMVpFclJ2V1ZUaTVqbkpWQVduWFJWc0pMc2p3dVcwWUgxVnhFVXNsU1VDOVpHb0tpSkRfZ3NieXZuN2VsX0NtQ2F2U0FkTnFRaXl5SmY1cllKMTJoM0s3Q3lBME1ZYjJJM01uVmNnMlBwTXYzc1Z4c2RsWWc?oc=5",
+      "outlet": "Glåmdalen",
+      "outletUrl": "https://www.glomdalen.no",
+      "published": "2026-11-26T11:15:36.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Art, Women | Scarves appear in the cityscape again – this is the reason",
       "about": []
     },
     {
-      "title": "Fire partier enige om statsbudsjett – kutter i drivstoffavgift",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZkYtT2hxME1BdG1NYXFBd1JlNjV0bUJ5MEZHcEZoM1lpMVdKM0RxUjNVUDY2dFNsVWI0ZnBteWxXMjd4S2NWSThBUzRPdkJ4SlVtdnBqZ1N2dzNhNFZIZTl0QkZZQUk5dHc0R09zMTdDZFhGd2RDcjZ1R05jSUJsV1JERmR3QkJleVUxUGJfZjhObGNBTWJfSThVRTJoX01pcnJnR181NnhxbThXZ3NNVg?oc=5",
+      "title": "Tre av fire produkter ble billigere etter black week",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbHAxaF9LQ2c1NWp2THd3MW9lTVpvbElTeVRvRE9NMVlVaTRKdXVjQ0R0bk42S0N4RkZpa2lxUWtEWHgyeVZVN3poMmN5WlBFX1BrTnBockp1RFIycVRxU0xRYUVUUWNQMGlIdTZTTTZVc2hmZFZWVkVkY0JGRzZEUDRqeEVQWDJWZC1YamI4YmhIWGZQTjI1NWFEY1I?oc=5",
       "outlet": "Aftenposten",
       "outletUrl": "https://www.aftenposten.no",
-      "published": "2026-11-25T06:08:39.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Four parties agree on state budget – cuts in fuel tax",
-      "about": [
-        "NO"
-      ]
-    },
-    {
-      "title": "Levanger, Næringsliv | Skyhøye strømpriser: Arild har valgt å ikke kreve inn husleie",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVC1yd0NpZUpVRnRhTjBuS3pJX2d2NldzWnZFbHBnU2djRkNWSnRRN0tkTGU1UkRvb1FEd1FQYlZTLUZuSzNidjdqZnYxQ0NYWnAtOVBIZ0F0VmoyTW5tdHplcDRFMmZrelZVN0tmV3FGNUJRQUlOenNaWXlFZVBaM0VtWnpqVUloa0pZcVpreG12UnVsbFZaYWRn?oc=5",
-      "outlet": "Trønder-Avisa",
-      "outletUrl": "https://www.t-a.no",
-      "published": "2026-11-25T23:22:05.000Z",
+      "published": "2026-11-26T06:47:17.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Levanger, Business | Sky-high electricity prices: Arild has chosen not to collect rent",
-      "about": [
-        "NO"
-      ]
+      "en": "Three out of four products became cheaper after Black Week",
+      "about": []
     },
     {
-      "title": "Trump møtte Nato-sjefen: Viktig at Russland ikke eskalerer krigen",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYkJoZVlDbGd6TEJfODg4V292dnRSel9BTGdHb0tiOTRsUktmSkpSV3RHY2twT0ZpTG9lbnhjUTZ6OUZfWG55alFMZjJMUDhWRGVJTkdZUExDOGVRbWZzeEJqV2Rod0JvWkdjckREaDliQXZVS3Q4a2ozR3B2NDZZVmRObE4wdEEtd1hkMnRFa25SMk5kSlZsbVhYb1lrMGk0Vnc?oc=5",
-      "outlet": "VG",
-      "outletUrl": "https://www.vg.no",
-      "published": "2026-11-26T03:51:29.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Trump met the NATO chief: Important that Russia does not escalate the war",
-      "about": [
-        "US",
-        "RU",
-        "UA"
-      ]
-    },
-    {
-      "title": "Fugleinfluensautbruddet: Nytt fuglehold i Agder må avlives",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTmlLZEtCN1JBT2IzOHg0OURObUlvTENCb0RmTGZLWlJwSEVoZFF6eE55a19PVTZfYkJJLWplN1ZCUTY2U3cyRWZsdFRwdTVNWFdJZ0duS2Q2MWV0R0VoTzhxVTlDMklRQ0NiY1ppMnBhOWRVVm0yUlRDMWhGUkpxYWtIbXRrWDB0UmpZYndqcHVEbFJCODU0LTFSb1BidWo0U1dhMFY4V3htQ3c?oc=5",
-      "outlet": "fvn.no",
-      "outletUrl": "https://www.fvn.no",
-      "published": "2026-11-25T11:42:42.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "The bird flu outbreak: New poultry flock in Agder must be culled",
-      "about": [
-        "NO"
-      ]
-    },
-    {
-      "title": "Drap, Lyngen | Henvendte seg direkte til drapsmannen: – Du hater det jeg står for",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTExCMmh5UTY3MkRLX2RXcE0zUVdMY2tubXBFdkxUbW9XeEFZTko2TzRfWU9EUnlQazJxTzNsd0IxcWVTTlhXZmo5WHp5eEd3S2wyUnIwUEhXdldjNmwzZGNGMnRkZWtNX1BsNU9kekFKVlAwWFpDNjZlMlhMbFY3ZmpzOHZIZGhKYy1scG5UNkFkbG44YTFlWjNVV2xyM1F0NVE?oc=5",
+      "title": "Lyngen, Drap | – Han kommer til å bli avvist fra lokalsamfunnet",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNl9kcE5KZlJBNTVfSU11ZTNRZmVJUmRndTlxVEM2YUd0MjFqTmQ5VFd6S1k4cU1JWDF0Uk9Uenp2MEVyQzB0bFplTGVNLUZEdDZmSXkwWFNBOFdyLVRKOG14dkR6bTcyRFNEbmxSbjFTWVhBZEhKRS1NU1RIV1lJWGlXUWNYS28xdUt3?oc=5",
       "outlet": "Nordlys",
       "outletUrl": "https://www.nordlys.no",
-      "published": "2026-11-25T23:02:09.000Z",
+      "published": "2026-11-26T11:34:37.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "Homicide, Lyngen | Addressed the murderer directly: – You hate what I stand for",
+      "en": "Lyngen, Murder | – He is going to be rejected by the local community",
       "about": [
         "NO"
       ]
     },
     {
-      "title": "Latvias president: Russland kan tape krigen i 2027",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTFpqV2F4Y0htRkpMWVAweFpVM29TRm5qLVQzeEh0LXEwa0dhNW5wZzI3M1NaajRSazZBRGlvUDlnWGdVRWxmTFhxMGZnNmRIb29kR3hyNEs2Tk9xdTlDcXJObDFKTXlTSG5HSlBxV2JtVmJ6UW1ZN2dXZXBHTjdtbU1INVExeGY5ZFhPbzNwZ1UwTDRIS3c?oc=5",
-      "outlet": "ABC Nyheter",
-      "outletUrl": "https://www.abcnyheter.no",
-      "published": "2026-11-25T12:42:15.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Latvia's president: Russia could lose the war in 2027",
-      "about": [
-        "LV",
-        "RU",
-        "UA"
-      ]
-    },
-    {
-      "title": "Tre til helsesjekk etter boligbrann i Bergen – Siste nytt",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOT1A4eGdmdkppVHBfNk03U29wWHQ0c25yYzU3VXVSMjg3bDgwdFNiMFlZaG00Wk1EZkVHXy0wUFVGb1huR29nQjVCdkxGcmxqb0J4WWR1aVY3Nm84VXp4TUt0QVFwUWR1cmxlT2stb1ZEVS1wVjNraEZjOEM0X0lDcEJ5Z1hWMGZTSVE?oc=5",
-      "outlet": "NRK",
-      "outletUrl": "https://www.nrk.no",
-      "published": "2026-11-25T22:45:03.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Three to health check after residential fire in Bergen – Latest news",
-      "about": [
-        "NO"
-      ]
-    },
-    {
-      "title": "Elleville svingninger på Wall Street – Nvidia endte ned fire prosent",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcll3LWJmSlVHOVFtM3dTT2F5QlFmSkpRTlV3TmRNUWIwQXIzLUwxRGY4Q29lWElxX0t2bkxRdGFSbC1fRWhhakdGdVhqSUtEbXpYTV91T0xKZnprS09CMjJtZ3pwT3AzYV9aRkdOdFo0QThLTFBjQlUyeWxSZm1CMktleVNwYk5wTWtLcXZWamJJV1Q5ZFJ0ZnhKQnpXVDhwUjFz?oc=5",
-      "outlet": "Dagens Næringsliv",
-      "outletUrl": "https://www.dn.no",
-      "published": "2026-11-25T13:31:00.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Wild swings on Wall Street – Nvidia ended down four percent",
-      "about": [
-        "US"
-      ]
-    },
-    {
-      "title": "Ikkje ny USA–toll for Noreg i denne omgangen",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNN3NaYm80Q1dVbHA1U3QyTU9faTd1VFRvNHpHNTRBSTBScW1rNTBmREFjU0FFOWZSN0ZZdkFlcE1hd0lidGNfeFA5M1ZLY0o5VDZlV1VOYlM1UWFVNHRmTVV2RzE1UjRQczQyd0JLSl93bjRVN1hZMTBMbWpwc01Jb0tMc2VzUQ?oc=5",
-      "outlet": "NRK",
-      "outletUrl": "https://www.nrk.no",
-      "published": "2026-11-25T13:16:11.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "No new US tariff for Norway this time around",
-      "about": [
-        "NO",
-        "US"
-      ]
-    },
-    {
-      "title": "Stavanger-mann siktet for draps­forsøk i Arendal",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQanZjcml6QS1NU0s4b2VJeFBJZTBPVXV5RjJpNTh5R01OMEhwcmJZbW9MWVdMbFV4aXNkR2ljc0xuZTc4dXIzeUJVejFZZk5UdnZOSURwYnhnbHBFTTVDcWdfUEpJWThfWjBYVHdJUkg5djBHLVAtaU9rSUtQeUl2WjFxWGZhZlFvWG50UHltUTRXcHk4SVE?oc=5",
-      "outlet": "Stavanger Aftenblad",
-      "outletUrl": "https://www.aftenbladet.no",
-      "published": "2026-11-25T20:38:39.000Z",
-      "outlets": 1,
-      "trending": false,
-      "en": "Stavanger man charged with attempted homicide in Arendal",
-      "about": [
-        "NO"
-      ]
-    },
-    {
-      "title": "Russland, Ukraina | Fem russiske jagerfly ødelagt i angrep",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa1NNQVYxbXl4QTVJbnFtclRhWEowZGpFZG9JdUw2dEJVR2R3X3JMZ2EwUDR3eUhRRnVoN2JkRUJqWE5wa2xQUGVxeHZTMmNFa1VKaDVPNS16YVQ2aGcyMDRpckc0UUEtWHItRjFlNDRiNE5yVHR5QkJzemZCTEdIUXZ6aWVPX2V2LWoyeTVndmU?oc=5",
-      "outlet": "Nettavisen",
-      "outletUrl": "https://www.nettavisen.no",
-      "published": "2026-11-25T19:53:20.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "Russia, Ukraine | Five Russian fighter jets destroyed in attack",
-      "about": [
-        "RU",
-        "UA"
-      ]
-    },
-    {
-      "title": "Fire russere påmeldt til verdenscup i Trondheim – skiforbundet trenger svar",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTnQ2RExwUkdEM3JUNWVUUU5paTd5WTZFMS1QN1pIQzVMbkRjT3FkZDdGVlNpdHUwaXhxcFpSaXgwSXE1SkxoUG9STTNUWHRHVDI5WDdUby1zcVN2eS1qeG5FaEo5NFhKZ0JQR0pvb0l2Q1J4NnI5WGxjb0NCTnNpbmNTX2pCbUpLUWpWX2I1aVg2N0M1X2pYWVp2bXppMy1w?oc=5",
+      "title": "Vestfoldbanen utsatt igjen: –⁠ Vi trenger mer opplæring",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWFpBRU8yOXphTUJGLXRQNmpfVkJnd0NOOGFTeGQxb2VOU0lTWkpJQmdLbGRtR083anVzVmItZ0l3R0lnUlZLOE5LX3BtWGtiWjhqSlRjUzVyTWJTTWl4VE1jdTlrMkNsbE94RkRiN0hEd1JyOTFMOXZMdVQ3a3ptSnBkMERxcy1NMzdxcDdlVmQ?oc=5",
       "outlet": "VG",
       "outletUrl": "https://www.vg.no",
-      "published": "2026-11-25T13:18:46.000Z",
+      "published": "2026-11-26T09:54:11.000Z",
       "outlets": 5,
       "trending": false,
-      "en": "Four Russians registered for world cup in Trondheim – ski federation needs answers",
+      "en": "Vestfold line postponed again: – We need more training",
       "about": [
-        "RU",
         "NO"
       ]
     },
     {
-      "title": "Sjelden innrømmelse fra Putin: – Situasjonen er krevende",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMGxOaW8zbV96ajhjdWhLU2t2TGc2MHBkVXdYcjl5aHlObFNwcFZIM3JoZVdIRXJvOTluUl94VlpPOFRtSjVrQWdaYThXNjgtRGhSTjFBX00wcTRaX1dIWktnZHo0OXFPaDJic1hiZm9uMlhLeDd3ZmlzV2lvaGc3VDNQVFNBQVN5WnlTUXJmNDdndkNfeWM4QUhHQQ?oc=5",
-      "outlet": "ABC Nyheter",
-      "outletUrl": "https://www.abcnyheter.no",
-      "published": "2026-11-25T18:56:13.000Z",
-      "outlets": 5,
+      "title": "DNB kutter fastrenten på boliglån",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOVNPekppMkExbERGdzYzMEY4c19DUGpuZjNBbF9hTFloQnRIWUFuT3V0dEEzcVE2U3Q1VU0zYi1CdjYzVEhUck9VNUdlM2R0aDhKRjZIazJWMWY1TFFxMEhtT2h4N2o5OFNGNXkxRFpQNTM2cHhUTlYwbmUzMFYxa0s5Q2h0UGk4?oc=5",
+      "outlet": "Nettavisen",
+      "outletUrl": "https://www.nettavisen.no",
+      "published": "2026-11-26T11:33:12.000Z",
+      "outlets": 1,
       "trending": false,
-      "en": "Rare admission from Putin: – The situation is demanding",
+      "en": "DNB cuts the fixed rate on home loans",
       "about": [
-        "RU"
-      ]
-    },
-    {
-      "title": "Først fjernet Xi sine fremste rivaler. Nå forsvinner også folk han selv har håndplukket.",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZF9ReHpXMDlkTXVJWWVTSEVjOGZ6OTBaZUZ3X3JMVmN6ZlJ0Z3g2ckNvQlhMckt4czhqSU5OTVRjSGJRSlJCaUNLRzdza3lVeVI4endPZjN0a2dmek94UTQ3R25XS19DcW01RW12M1pqZVprSS1wLUJZcDFmSWJIZXJRckxsUzlyR21oMzdjR0pUYk9UdzVTSUpyeEEycHVHQk5ld0tNY2hsaUxZM0xoYmpsRjZMSTVXLWNaMFlWTTJVdlZselRUWmJ2OA?oc=5",
-      "outlet": "Aftenposten",
-      "outletUrl": "https://www.aftenposten.no",
-      "published": "2026-11-25T18:27:26.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "First Xi removed his leading rivals. Now people he personally handpicked are also disappearing.",
-      "about": [
-        "CN"
-      ]
-    },
-    {
-      "title": "GTA 6-utviklere forklarer hvordan Rockstar moderniserte HUD-designet uten å miste seriens stemning",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPM1prUHNBVmhUVlhlRlZTaEpWMm9IQ0t4VjB3OEw4WEhWYVJfMXQzOUtHRWVEelhtUmxBaTRTdWQ3aXNyOEE3OXRzWjhJdm4teHFWZzdqOWlmOG5SM1lHaG00cDBGck5FdUxuTHJYdUZqYnNncnloX3BGUE1KV2dBa1NKRzF5eWl2dEZvUHdiMTFna3lZTVlKSk5jNTkyeWtQTVlRRUlQLXpvVHFiWGVGaHlTazVFelpQY01PZVRGQk4yTDMyMFlXVkxaTEoxRnlFbXVnYjRBUQ?oc=5",
-      "outlet": "TechRadar",
-      "outletUrl": "https://global.techradar.com",
-      "published": "2026-11-25T05:33:21.000Z",
-      "outlets": 5,
-      "trending": false,
-      "en": "GTA 6 developers explain how Rockstar modernised the HUD design without losing the series' atmosphere",
-      "about": []
-    },
-    {
-      "title": "Advarselen fra Putins nabo: Fred stopper ikke russisk sabotasje",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQWxMblNvSDh2dVdCVk9yOVlpem9qWEN2dXk4TXpTNGdTN2UtUW84TTZWT2JuNGYyOWxXc0hhM2ZHaTFVTW5EN092V3B5Vk8wVEEwRktEbl9rS0JucVUzZFkzcUpBbko3NG5USVlXTGhDdXNTR3Jjd3FxeEprSUdpRWFxQW5OUW9haEltSTVteC10b0Y0THFVemdTMmpnVW1QeGdWYjJxZGk?oc=5",
-      "outlet": "Dagsavisen",
-      "outletUrl": "https://www.dagsavisen.no",
-      "published": "2026-11-25T19:36:24.000Z",
-      "outlets": 4,
-      "trending": false,
-      "en": "Warning from Putin's neighbour: Peace is not stopping Russian sabotage",
-      "about": [
-        "RU",
         "NO"
       ]
     },
     {
-      "title": "Jensen Huang: – Jeg går i terapi hver dag",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaTlTS3RFX09KdjE0QVN6M3c0ZHJaaWZtQ1lqQ3NScldvM2FiSnBJdjIwUVcwYmw4R2tQSEh2VzdBYXowcFozTVlQd0hTUFAydzJmb3RaSXlqZnZOZG1OMjMtam5oQk91QXRsRE9TUG9uMmJiU1BCbGxPU0RLRmNESjJLNlczaDQyQ3NB?oc=5",
-      "outlet": "Aftenposten",
-      "outletUrl": "https://www.aftenposten.no",
-      "published": "2026-11-25T08:58:59.000Z",
+      "title": "Tre døde etter båtforlis ved Island",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVWpkMV9TbnhEWWZtZ0VURi1RT2phaVNjU2szUVVGY210ZHVJdms4NVlkclFPcC1oNENtOUdDU2N1czBOR2ZEdEtZekxZNXJ6WWk0RGFQMmo4MzAxZlRSa04xM3FiYU5xRWp0UndPSVgwNkRycVZhWkstTGhpOEIxbXNXZw?oc=5",
+      "outlet": "smp.no",
+      "outletUrl": "https://www.smp.no",
+      "published": "2026-11-26T10:20:24.000Z",
       "outlets": 4,
       "trending": false,
-      "en": "Jensen Huang: – I go to therapy every day",
+      "en": "Three dead after boat capsizes off Iceland",
+      "about": [
+        "IS"
+      ]
+    },
+    {
+      "title": "Lærere meldte om slag, spark og bitt – setter ned arbeidsgruppe",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQckt5cWlmSk5fUmt5bXBuekEzQUtmMTRySVU3WF9WNVNadHN6RUdhVTJNVUJoQXJ4Zm5yOTRUakl6TGpaQkNQTE1tdUVoZWN4b1lQQnQwblBhZDcweUFsaVVySGJtVW5wYTBrQlI2TExJdnM2aXdxSUMxNkxWS3NLZnRvMGRpTUJLZUFzVzlxTWxfNUVFbGo2TlhSaGNuSVhhY0ZsSU9ESWxZcktWM1EzeW5QNGdVS3Rfd3c?oc=5",
+      "outlet": "rbnett.no",
+      "outletUrl": "https://www.rbnett.no",
+      "published": "2026-11-26T10:17:26.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "Teachers reported beatings, kicks and bites – sets up working group",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "USA stopper europeiske leveranser av Patriot-missiler til Ukraina. – Ukraina må få hjelp til å beskytte menneskeliv",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNYkRwb0NhSnZ0WE56MVFGVnpob0pfOUZRU1JDSEVLWTRJMWVMZDF3Z0RXRWU3MDdmUmx3dnRQWDZqcC1HT2IzYURsb3VPRVFySVUyQmdVQTJSM2ZGTUZUMnlaZkNUNmRPZlV3b1pqZ0ZtRm5UNkdTY0xqU1BMT25DN2NjYWdwTzBjcWJEU3FFbmJfdm9FaVJTRGlBaTF5cU1aRXJtVC1pVlBnX01yX2gyWmtRTHJHU2dQWWNOcTg1emZUYlJqRlFhR1pRTE93dTNaaGN5R3ZsVHNvcGY2SW0wVw?oc=5",
+      "outlet": "Aftenposten",
+      "outletUrl": "https://www.aftenposten.no",
+      "published": "2026-11-26T09:52:39.000Z",
+      "outlets": 4,
+      "trending": false,
+      "en": "USA stops European deliveries of Patriot missiles to Ukraine. – Ukraine must get help to protect human lives",
+      "about": [
+        "US",
+        "UA"
+      ]
+    },
+    {
+      "title": "Øysamfunn trues med nedleggelse av skolen: – Frykter fraflytting",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVzNrd3RIazRaVXRkalctTVppMHlsSU1fQllVTkhoQmpZNDZYc1JEbmlxV3VUZ0E3UzhSLXdHNmRLUTk2ZlBQYW1hR1JrVzgzazJDMDNPXzFaMnVSRXNKeklPTDc0YWRReWN5aHBnS3NSSWZ1XzAxMFg2R2xmWkQ5bkNzTmVqU25zX2RZek53aHJuYXBPS19MTFd4VWhqQ2ZBQ2psZg?oc=5",
+      "outlet": "NRK",
+      "outletUrl": "https://www.nrk.no",
+      "published": "2026-11-26T04:29:25.000Z",
+      "outlets": 3,
+      "trending": false,
+      "en": "Island community threatened with school closure: – Fear of out-migration",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "Måtte vente tre kvarter på «ja til operasjonsrobot i Rana», men så kunne champagnekorken sprettes: – På tide!",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNb3A3S3p5T0lXVy1mdm5SZV9SWGQtYkZESU5KRWpXUW5CblJROXlyN0o3RlNacGpkNHhKUGtUQmJBVnpSNTBrU0RUM2J4bmF2TFlQaFdwVDRtZkJUdTZHWlRDTUM5azJYZ2lObnFyWTN5TUZnS0h0bkVpeGRMaFo0T3hXVnRCNGoxaVFfelQ4NzZ1Y3NFTGIzblBtUWtYVVlFX0pIMDI2ekphWHFQV2ZVWm1wWUZJQzA3NnQ4UlJQR25qY3I3YUNSNHQzYzlucEZCdHdoUg?oc=5",
+      "outlet": "Rana Blad",
+      "outletUrl": "https://www.ranablad.no",
+      "published": "2026-11-26T08:59:26.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Had to wait three quarters of an hour for “yes to surgical robot in Rana”, but then the champagne cork could be popped: – About time!",
+      "about": [
+        "NO"
+      ]
+    },
+    {
+      "title": "Rogan slakter Republikanerne: – Ødelegger alt",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNUtPWkI2cHVZN3MteFdGeGNKMjdPejZBWWNtS1RMcGhneHhqTmVtaE9SNXZ1amgxaEp2VklwYUg0UC1hYVJUU0RRakVFZkRaazBCLUstTExfUXNWRTlDYUxWZHp5eFNvaFhjazlmdjZoN19sMEJHdUhjNk5BZzQ0MEZXT09Cb1dsanAyQ3EwRGdvbUlUa2ZXZW5FZHZmNTVOUkRQODJzWm93S2d6?oc=5",
+      "outlet": "Nettavisen",
+      "outletUrl": "https://www.nettavisen.no",
+      "published": "2026-11-26T08:16:19.000Z",
+      "outlets": 1,
+      "trending": false,
+      "en": "Rogan slams the Republicans: – Ruining everything",
+      "about": [
+        "US"
+      ]
+    },
+    {
+      "title": "Ukraina styrker sin marine - med norsk hjelp",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZ00wcHdPV001Y3ZBNDYyQlNIMTdUQWt4YURQRENRM0p2Q2tLU1FaYi1ZbjFOaS1yMkkyWmxVV1FQVEVBeGZzdFJzWDVwR25TN2NkSG9mVTBCZzctNFV3M1lETEpZSVJhMVJRMzlKMUxsb2dnaWJEdUNiZDJtZ1JuWUdVNA?oc=5",
+      "outlet": "VG",
+      "outletUrl": "https://www.vg.no",
+      "published": "2026-11-26T11:51:18.000Z",
+      "outlets": 2,
+      "trending": false,
+      "en": "Ukraine strengthens its navy – with Norwegian help",
+      "about": [
+        "UA",
+        "NO"
+      ]
+    },
+    {
+      "title": "Vraker omstridt plan midt i 200-millionersstrid",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcDdnb0RvSklKSm84T1JBaTRmeGdnbDY3MjNPeEZCdUJxekV6cWxMY2dHZWJHeGNhT2Vydk9WWjNKQk1aMTdUbnhlQUk3cm1Rb2JPSW5QM1czNWpZOUFOYS1WZDJvNm1JVjZ4LWxXZVM4ZjVnN0s1bEYzbTZIYXRrcWtEck1DRDFCRnV3SkRKeF8xOW4y?oc=5",
+      "outlet": "Stavanger Aftenblad",
+      "outletUrl": "https://www.aftenbladet.no",
+      "published": "2026-11-26T08:26:49.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Scraps controversial plan amid 200-million dispute",
       "about": []
+    },
+    {
+      "title": "Kraftig eksplosjon i Bangkok – flere skadet",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTkpWbm96T3AzWEVRUlJNZ194ekdMNEdIa1hZV1RfQXIzZkFUdFVSZDd1Rlgzakw4WjJpQVFkOGNQQjZ3b2hBWmk3ZEVrcnQwU0ZuQ1dnczV1Zk04TmJXSk5WV1dFN3psYnFYdGpOcXUyNTVQU1NUakNyWXdEWG9HQmRnMURtUzU1ZHJadzJmZjRzeWFMbUtYdU40aWh1akc0a1hZ?oc=5",
+      "outlet": "VG",
+      "outletUrl": "https://www.vg.no",
+      "published": "2026-11-26T08:21:58.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Strong explosion in Bangkok – several injured",
+      "about": [
+        "TH"
+      ]
+    },
+    {
+      "title": "Oppgang på Oslo Børs – Thor Medical raser",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPQWREdkFFcFRuRnllMWMyNGNFY2dYeEZ0U1VSdlNXOHJPZzV0Qko0TVk3RHVjc0Vablh2dW9ONDlwNmF4WWc4Y096d0ZMVlB4R0MyZlhXVV9vcGJaNUdTOUFVb21IWko4cUo3RmFNTQ?oc=5",
+      "outlet": "E24",
+      "outletUrl": "https://e24.no",
+      "published": "2026-11-26T08:07:40.000Z",
+      "outlets": 5,
+      "trending": false,
+      "en": "Rise on the Oslo Stock Exchange – Thor Medical plummets",
+      "about": [
+        "NO"
+      ]
     }
   ]
 }

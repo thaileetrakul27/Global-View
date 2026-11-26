@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-26T04:34:25.672Z",
+  "updated": "2026-11-26T14:21:53.716Z",
   "fetched": {
-    "societies": "2026-11-26T04:34:25.672Z",
-    "uncr": "2026-11-26T04:34:25.672Z"
+    "societies": "2026-11-26T14:21:53.716Z",
+    "uncr": "2026-11-26T14:21:53.716Z"
   },
   "societies": {
     "AF": {
@@ -2459,23 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "kksh.org.al": {
-      "ok": true,
-      "reason": "donation word \"dhuro*\"",
-      "checked": "2026-11-19T10:50:53.757Z",
-      "chain": [
-        "https://www.kksh.org.al/"
-      ]
-    },
-    "ayuda.cruzrojacolombiana.org": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-19T10:50:53.757Z",
-      "chain": [
-        "https://ayuda.cruzrojacolombiana.org/",
-        "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
-      ]
-    },
     "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2622,40 +2605,6 @@
       "name": "Basecamp Charity",
       "title": "Rasuwa Flash Flood Emergency Relief | Basecamp Charity"
     },
-    "croixrouge.bi": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-25T11:48:24.724Z",
-      "chain": [
-        "https://croixrouge.bi/"
-      ]
-    },
-    "pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-25T11:48:24.724Z",
-      "chain": [
-        "https://www.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "ayodonor.pmi.or.id": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-25T11:48:24.724Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/"
-      ],
-      "blocked": true
-    },
-    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "asks for crypto, as scams do",
-      "checked": "2026-11-25T11:48:24.724Z",
-      "chain": [
-        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ]
-    },
     "cruzrojacolombiana.org": {
       "ok": true,
       "reason": "donation word \"donar\"",
@@ -2663,15 +2612,6 @@
       "chain": [
         "https://www.cruzrojacolombiana.org/"
       ]
-    },
-    "ifrc.org/emergency/colombia-earthquake-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-25T11:48:24.724Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
-      ],
-      "blocked": true
     },
     "go.ifrc.org/countries/85": {
       "ok": false,
@@ -2701,35 +2641,95 @@
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-26T04:34:25.672Z",
       "chain": [
         "https://go.ifrc.org/emergencies/8079/overview"
-      ],
-      "checked": "2026-11-26T04:34:25.672Z"
+      ]
     },
     "unicef.org/uganda/reports/united-nations-and-partners-appeal": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-26T04:34:25.672Z",
       "chain": [
         "https://www.unicef.org/uganda/reports/united-nations-and-partners-appeal"
-      ],
-      "checked": "2026-11-26T04:34:25.672Z"
+      ]
     },
     "donations.redcross.or.ke/home": {
       "ok": true,
       "reason": "donation word \"donat*\"",
+      "checked": "2026-11-26T04:34:25.672Z",
       "chain": [
         "https://donations.redcross.or.ke/home"
-      ],
-      "checked": "2026-11-26T04:34:25.672Z"
+      ]
     },
     "ifrc.org/emergency/nepal-flash-floods-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-26T04:34:25.672Z",
       "chain": [
         "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
       ],
+      "blocked": true
+    },
+    "croixrouge.bi": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://croixrouge.bi/"
+      ],
+      "checked": "2026-11-26T14:21:53.716Z"
+    },
+    "ifrc.org/emergency/kenya-complex-emergency": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/kenya-complex-emergency"
+      ],
       "blocked": true,
-      "checked": "2026-11-26T04:34:25.672Z"
+      "checked": "2026-11-26T14:21:53.716Z"
+    },
+    "kksh.org.al": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://www.kksh.org.al/"
+      ],
+      "checked": "2026-11-26T14:21:53.716Z"
+    },
+    "pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-26T14:21:53.716Z"
+    },
+    "ayodonor.pmi.or.id": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/"
+      ],
+      "blocked": true,
+      "checked": "2026-11-26T14:21:53.716Z"
+    },
+    "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "asks for crypto, as scams do",
+      "chain": [
+        "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
+      ],
+      "checked": "2026-11-26T14:21:53.716Z"
+    },
+    "ifrc.org/emergency/colombia-earthquake-2026": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://www.ifrc.org/emergency/colombia-earthquake-2026"
+      ],
+      "blocked": true,
+      "checked": "2026-11-26T14:21:53.716Z"
     }
   }
 }
