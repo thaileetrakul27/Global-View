@@ -144,7 +144,7 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-26T23:24:59.071Z",
+    "seen": "2026-11-27T09:08:28.864Z",
     "donationSearched": "2026-11-25T01:13:09.815Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2
@@ -254,7 +254,7 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-26T23:24:59.071Z",
+    "seen": "2026-11-27T09:08:28.864Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T22:10:28.555Z",
     "directSearchVersion": 2
@@ -385,6 +385,8 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
+    "seen": "2026-11-27T09:08:28.864Z",
+    "donationSearched": "2026-11-26T23:24:59.071Z",
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
@@ -393,9 +395,7 @@
         "note": "Rural communities and forest wildlife hit by drought in Nicaragua and El Salvador",
         "title": "Emergency appeal - effects of El Nino - GlobalGiving"
       }
-    ],
-    "donationSearched": "2026-11-26T23:24:59.071Z",
-    "seen": "2026-11-26T23:24:59.071Z"
+    ]
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-26T04:34:25.672Z",
@@ -487,7 +487,7 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-26T23:24:59.071Z",
+    "seen": "2026-11-27T09:08:28.864Z",
     "donationSearched": "2026-11-26T04:34:25.672Z",
     "directSearched": "2026-11-26T04:34:25.672Z",
     "directSearchVersion": 2
@@ -545,63 +545,91 @@
       }
     ],
     "membersHash": "gdacs,usgs|CN#a49711a3",
-    "seen": "2026-11-26T23:24:59.071Z",
+    "seen": "2026-11-27T09:08:28.864Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T22:10:28.555Z",
     "directSearchVersion": 2
   },
   "ifrc-earthquake-8055": {
-    "at": "2026-11-25T01:13:09.815Z",
+    "at": "2026-11-27T09:08:28.864Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "A magnitude 7.4 earthquake struck San José del Palmar, Chocó, Colombia, on 10 August 2026. Colombia's national disaster agency (UNGRD) reported 329 dead, 4,600 injured and 247 missing in its tally cut off on 22 August, with damage in 16 departments. Landslides blocked the town's only land route. The sources found do not confirm the current state of the response.",
+    "searches": 4,
+    "summary": "A magnitude 7.4 earthquake struck near San José del Palmar, Chocó, Colombia, on 10 August 2026. The latest official UNGRD figures, dated 10 October 2026, report 335 deaths, 4,516 injured and 103 missing. Recovery work was still under way in October. The notes do not say whether the emergency is still active on 27 November 2026.",
     "ongoing": true,
     "places": [
       {
         "name": "San José del Palmar",
         "admin": "Chocó",
         "country": "CO",
+        "kind": "district",
+        "impact": "Epicentre of the earthquake"
+      },
+      {
+        "name": "Quibdó",
+        "admin": "Chocó",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Health facilities affected"
+      },
+      {
+        "name": "Condoto",
+        "admin": "Chocó",
+        "country": "CO",
         "kind": "town",
-        "impact": "Epicentre; only land route blocked by landslides"
+        "impact": "Named as an affected community"
       },
       {
         "name": "Cali",
         "admin": "Valle del Cauca",
         "country": "CO",
         "kind": "city",
-        "impact": "Collapsed building; rescuers at site"
+        "impact": "Strongly felt"
+      },
+      {
+        "name": "Pereira",
+        "admin": "Risaralda",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Strongly felt"
+      },
+      {
+        "name": "Manizales",
+        "admin": "Caldas",
+        "country": "CO",
+        "kind": "city",
+        "impact": "Strongly felt"
       }
     ],
     "figures": [
       {
         "label": "Deaths",
-        "value": "329",
-        "sourceName": "x.com",
-        "sourceUrl": "https://x.com/UNGRD/status/2091142037840028010"
+        "value": "335",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/colombia/2026/10/10/dos-meses-del-terremoto-en-colombia-defensoria-pidio-reabrir-el-registro-de-damnificados-y-ungrd-entrego-nuevo-balance-de-la-emergencia/"
       },
       {
         "label": "Injured",
-        "value": "4,600",
-        "sourceName": "x.com",
-        "sourceUrl": "https://x.com/UNGRD/status/2091142037840028010"
+        "value": "4,516",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/colombia/2026/10/10/dos-meses-del-terremoto-en-colombia-defensoria-pidio-reabrir-el-registro-de-damnificados-y-ungrd-entrego-nuevo-balance-de-la-emergencia/"
       },
       {
         "label": "Missing",
-        "value": "247",
-        "sourceName": "x.com",
-        "sourceUrl": "https://x.com/UNGRD/status/2091142037840028010"
+        "value": "103",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/colombia/2026/10/10/dos-meses-del-terremoto-en-colombia-defensoria-pidio-reabrir-el-registro-de-damnificados-y-ungrd-entrego-nuevo-balance-de-la-emergencia/"
       },
       {
         "label": "People affected",
-        "value": "314,751 people",
-        "sourceName": "x.com",
-        "sourceUrl": "https://x.com/UNGRD/status/2091142037840028010"
+        "value": "more than 486,000 people",
+        "sourceName": "larepublica.co",
+        "sourceUrl": "https://www.larepublica.co/economia/tras-dos-meses-de-terremoto-243-409-viviendas-afectadas-y-mas-de-486-000-damnificados-4500998"
       },
       {
-        "label": "Houses damaged",
-        "value": "176,890",
-        "sourceName": "x.com",
-        "sourceUrl": "https://x.com/UNGRD/status/2091142037840028010"
+        "label": "Homes affected",
+        "value": "243,409",
+        "sourceName": "larepublica.co",
+        "sourceUrl": "https://www.larepublica.co/economia/tras-dos-meses-de-terremoto-243-409-viviendas-afectadas-y-mas-de-486-000-damnificados-4500998"
       }
     ],
     "donation": [
@@ -609,44 +637,64 @@
         "url": "https://donate.redcrossredcrescent.org/ifrc/colombia-earthquake/",
         "org": "IFRC",
         "kind": "society",
-        "note": "Donation page for the Colombia: Earthquake 2026 emergency appeal.",
+        "note": "IFRC donation platform for the MDRCO036 earthquake appeal; funds Colombian Red Cross.",
+        "specific": true
+      },
+      {
+        "url": "https://ayuda.cruzrojacolombiana.org/",
+        "org": "Colombian Red Cross",
+        "kind": "society",
+        "note": "Colombian Red Cross national campaign 'Emergencia Colombia Sismo' for direct donations.",
         "specific": true
       },
       {
         "url": "https://www.ifrc.org/emergency/colombia-earthquake-2026",
         "org": "IFRC",
         "kind": "society",
-        "note": "Emergency page for the Colombia earthquake appeal MDRCO036 with donation link.",
+        "note": "IFRC emergency page for the MDRCO036 appeal, with appeal document and updates.",
+        "specific": true
+      },
+      {
+        "url": "https://www.cruzrojacolombiana.org/cruz-roja-colombiana-despliega-capacidades-para-dar-respuesta-tras-las-afectaciones-por-sismo-en-colombia/",
+        "org": "Colombian Red Cross",
+        "kind": "society",
+        "note": "August 2026 announcement of national donation campaign with bank and app channels.",
         "specific": true
       }
     ],
     "sources": [
+      {
+        "name": "larepublica.co",
+        "url": "https://www.larepublica.co/economia/tras-dos-meses-de-terremoto-243-409-viviendas-afectadas-y-mas-de-486-000-damnificados-4500998",
+        "title": "Tras dos meses del terremoto: 243.409 viviendas afectadas y más de 486.000 damnificados"
+      },
+      {
+        "name": "infobae.com",
+        "url": "https://www.infobae.com/colombia/2026/10/10/dos-meses-del-terremoto-en-colombia-defensoria-pidio-reabrir-el-registro-de-damnificados-y-ungrd-entrego-nuevo-balance-de-la-emergencia/",
+        "title": "Dos meses del terremoto en Colombia: Defensoría pidió reabrir el registro de damnificados y Ungrd entregó nuevo balance de la emergencia - Infobae"
+      },
       {
         "name": "www2.sgc.gov.co",
         "url": "https://www2.sgc.gov.co/Noticias/Paginas/SGC-actualiza-la-informacion-sobre-el-sismo-ocurrido-en-San-Jose-del-Palmar-Choco.aspx",
         "title": "Servicio Geológico Colombiano actualiza la información sobre el sismo ocurrido en San José del Palmar, Chocó"
       },
       {
-        "name": "elcolombiano.com",
-        "url": "https://www.elcolombiano.com/colombia/cronica-terremoto-colombia-san-jose-del-palmar-victimas-cifras-por-que-ocurrio-GA39820666",
-        "title": "Cuando la tierra tiembla sobre un territorio fracturado: las heridas que el terremoto vuelve a abrir en Chocó"
+        "name": "earthquaketrack.com",
+        "url": "https://earthquaketrack.com/quakes/2026-08-10-12-34-28-utc-7-4-110",
+        "title": "7.4 Magnitude Earthquake Near San José del Palmar, Chocó, Colombia - Earthquake Track"
       },
       {
-        "name": "cnn.com",
-        "url": "https://www.cnn.com/2026/08/10/world/live-news/colombia-earthquake-san-jose-del-palmar",
-        "title": "August 10, 2026: Death toll rises to 132 following 7.4 magnitude earthquake in Colombia"
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/List_of_earthquakes_in_2026",
+        "title": "List of earthquakes in 2026"
       },
       {
-        "name": "co.usembassy.gov",
-        "url": "https://co.usembassy.gov/natural-disaster-alert-colombia-earthquake-update-2-august-12-2026/",
-        "title": "Natural Disaster Alert: Colombia Earthquake Update 2"
+        "name": "paho.org",
+        "url": "https://www.paho.org/sites/default/files/2026/08/sitrep3-terremoto-colombia-2026.pdf",
+        "title": "Sismo San José del Palmar, Colombia. Mw 7,4"
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-26T23:24:59.071Z",
-    "donationSearched": "2026-11-25T01:13:09.815Z",
-    "directSearched": "2026-11-25T01:13:09.815Z",
-    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/colombia-earthquake-relief-fund/",
@@ -711,7 +759,9 @@
     ],
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ]
+    ],
+    "donationSearched": "2026-11-27T09:08:28.864Z",
+    "seen": "2026-11-27T09:08:28.864Z"
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-25T22:10:28.555Z",
@@ -773,8 +823,10 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-26T23:24:59.071Z",
+    "seen": "2026-11-27T09:08:28.864Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
+    "directSearched": "2026-11-26T23:24:59.071Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/nttemergencyrelief/donate/",
@@ -812,9 +864,7 @@
         "note": "Donations for children and families affected in Nagekeo, Sikka and nearby areas.",
         "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT"
       }
-    ],
-    "directSearched": "2026-11-26T23:24:59.071Z",
-    "directSearchVersion": 2
+    ]
   },
   "ifrc-flood-8025": {
     "at": "2026-11-16T07:04:53.455Z",
@@ -1002,233 +1052,190 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-26T23:24:59.071Z",
+    "seen": "2026-11-27T09:08:28.864Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-25T22:10:28.555Z",
     "directSearchVersion": 2
   },
   "ifrc-flood-8073": {
-    "at": "2026-11-25T01:13:09.815Z",
+    "at": "2026-11-27T09:08:28.864Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "On 26 August 2026, a flash flood on the Bhote Koshi river hit Rasuwa district in Nepal's Bagmati Province, damaging settlements, roads, bridges and hydropower projects. Areas downstream in Nuwakot, Dhading and Chitwan were also affected. Sources give conflicting death tolls. The latest update found, dated 13 September 2026, reported search and rescue and relief still under way. No later status was found.",
+    "searches": 2,
+    "summary": "Severe flash floods struck parts of central Nepal on 26 August 2026, affecting communities along the Bhote Koshi and Trishuli river corridors in Rasuwa and nearby districts. Reported death tolls differ between sources. The latest dated report found is an IFRC operations update of 12 October 2026, which describes ongoing rehabilitation and assessment work.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Timure",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "largely swept away; homes, shops and vehicles lost"
-      },
-      {
-        "name": "Syabrubesi",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "settlements, markets and hydropower damaged"
-      },
-      {
-        "name": "Rasuwagadhi",
-        "admin": "Bagmati Province",
-        "country": "NP",
-        "kind": "town",
-        "impact": "settlements, police infrastructure and roads damaged"
-      },
       {
         "name": "Rasuwa",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "flood damage; access restricted by damaged roads and bridges"
+        "impact": "Flood entered via Bhote Koshi corridor; most affected"
+      },
+      {
+        "name": "Rasuwagadhi",
+        "country": "NP",
+        "kind": "site",
+        "impact": "Border post swept away"
       },
       {
         "name": "Nuwakot",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "affected; displaced people counted"
+        "impact": "Hit hardest, with Rasuwa"
       },
       {
         "name": "Dhading",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "affected; displaced people counted"
+        "impact": "Badly affected"
       },
       {
         "name": "Chitwan",
         "admin": "Bagmati Province",
         "country": "NP",
         "kind": "district",
-        "impact": "affected by flood"
+        "impact": "Bodies recovered"
       },
       {
         "name": "Gorkha",
         "admin": "Gandaki Province",
         "country": "NP",
         "kind": "district",
-        "impact": "affected; buildings damaged"
+        "impact": "Affected"
       },
       {
         "name": "Tanahun",
         "admin": "Gandaki Province",
         "country": "NP",
         "kind": "district",
-        "impact": "affected by flood"
+        "impact": "Affected"
+      },
+      {
+        "name": "Nawalparasi",
+        "country": "NP",
+        "kind": "district",
+        "impact": "Bodies recovered"
       }
     ],
     "figures": [
       {
-        "label": "Confirmed deaths",
-        "value": "1,384",
-        "sourceName": "nepaldisasterupdatelive.nxtimaginelabs.com",
-        "sourceUrl": "https://nepaldisasterupdatelive.nxtimaginelabs.com/nepal-flood/rasuwa/damage/"
+        "label": "Deaths",
+        "value": "1,355",
+        "sourceName": "en.wikipedia.org",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
       },
       {
-        "label": "Missing",
-        "value": "384 travellers, including three Americans",
-        "sourceName": "travelhimalayanepal.com",
-        "sourceUrl": "https://travelhimalayanepal.com/news/nepal-bhote-koshi-flash-flood-rasuwa-2026"
+        "label": "People affected",
+        "value": "84,270 people in 17 municipalities",
+        "sourceName": "undp.org",
+        "sourceUrl": "https://www.undp.org/asia-pacific/nepal-floods-2026"
       },
       {
         "label": "Displaced",
-        "value": "around 3,761 people",
+        "value": "about 3,761 people",
         "sourceName": "en.wikipedia.org",
-        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Nepal_floods"
-      },
-      {
-        "label": "Households needing immediate relief",
-        "value": "around 10,000 households",
-        "sourceName": "who.int",
-        "sourceUrl": "https://www.who.int/nepal/emergencies/2026-rasuwa-flash-floods"
-      },
-      {
-        "label": "Private buildings damaged",
-        "value": "7,570 buildings, affecting 8,317 households",
-        "sourceName": "nrcs.org",
-        "sourceUrl": "http://nrcs.org/highlight/9/"
+        "sourceUrl": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
       }
     ],
     "donation": [
       {
-        "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "Donation page for IFRC Emergency Appeal supporting Nepal Red Cross flood response.",
-        "specific": true
-      },
-      {
         "url": "https://donate.redcrossredcrescent.org/~share?cid=1180&lang=en_EN",
         "org": "Nepal Red Cross Society",
         "kind": "society",
-        "note": "Donation page for Rasuwa flash flood and ongoing Nepal monsoon floods.",
+        "note": "Flood appeal page asking donors to help Rasuwa flash flood families with relief and water.",
         "specific": true
       },
       {
-        "url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026",
+        "url": "https://donate.redcrossredcrescent.org/?cid=1186&lang=en_EN",
         "org": "IFRC",
         "kind": "society",
-        "note": "Event page with appeal documents; points to IFRC donations, not a donation form.",
+        "note": "IFRC Emergency Appeal MDRNP022 donation page for Rasuwa flash flood response.",
         "specific": true
       }
     ],
     "sources": [
-      {
-        "name": "nrcs.org",
-        "url": "http://nrcs.org/highlight/9/",
-        "title": "Nepal Red Cross Society"
-      },
-      {
-        "name": "nrcs.org",
-        "url": "https://nrcs.org/resources/news-and-events/rasuwa-flood-situation-update-26-august-2026/",
-        "title": "Rasuwa Flood Situation Update (26 August 2026)"
-      },
-      {
-        "name": "storymaps.arcgis.com",
-        "url": "https://storymaps.arcgis.com/stories/f2b2425eac544929a7d18f4c90b41d66",
-        "title": "August 2026 Nepal Trishuli Flood"
-      },
       {
         "name": "who.int",
         "url": "https://www.who.int/nepal/emergencies/2026-rasuwa-flash-floods",
         "title": "2026 Rasuwa flash floods"
       },
       {
-        "name": "travelhimalayanepal.com",
-        "url": "https://travelhimalayanepal.com/news/nepal-bhote-koshi-flash-flood-rasuwa-2026",
-        "title": "Bhote Koshi Flash Flood, 26 August 2026: What Happened in Nepal’s Rasuwa District"
+        "name": "adpc.net",
+        "url": "https://www.adpc.net/igo/category/ID2395/doc/2026-rWNy51-ADPC-BhoteKoshiFlood_FieldAssessmentReport_Finals.pdf",
+        "title": "Bhote Koshi Flash Flood, Nepal A Preliminary Field Assessment Report of the"
       },
       {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Nepal_floods",
-        "title": "2026 Nepal–Tibet floods"
+        "name": "ifrc.org",
+        "url": "https://www.ifrc.org/article/nepal-flash-floods-2026-how-red-cross-responding",
+        "title": "Nepal flash floods 2026: How the Red Cross is responding"
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-26T23:24:59.071Z",
-    "donationSearched": "2026-11-26T04:34:25.672Z",
-    "directSearched": "2026-11-25T01:13:09.815Z",
-    "directSearchVersion": 2,
     "direct": [
+      {
+        "url": "https://www.globalgiving.org/projects/nepal-flash-flood-emergency-relief-2026/",
+        "org": "OBHIZATRIK Foundation",
+        "kind": "globalgiving",
+        "note": "Funds vetted NGOs in Rasuwa, Nuwakot and Dhading, plus relief supplies.",
+        "title": "Nepal Flash Flood Emergency Relief 2026 - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/urgent-flash-flood-response-in-nepal/",
+        "org": "ActionAid USA",
+        "kind": "globalgiving",
+        "note": "Food and water for affected families, with ActionAid Nepal and local partners.",
+        "title": "Urgent Flash Flood Response in Nepal - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/nepal-flash-floods-relief-fund/",
+        "org": "The Nepal Trust",
+        "kind": "globalgiving",
+        "note": "Emergency aid through local delivery partners.",
+        "title": "Nepal Flash Floods Emergency Aid Fund 2026 - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/emergency-support-for-flood-affected-families/",
+        "org": "PHASE Nepal",
+        "kind": "globalgiving",
+        "note": "Clean water, hygiene, food and shelter for flood-hit families.",
+        "title": "Nepal Flood Emergency: Help vulnerable people - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/fuel-for-nepal-flood-relief/",
+        "org": "Fuel Relief Fund",
+        "kind": "globalgiving",
+        "note": "Free fuel for generators, clinics and vehicles.",
+        "title": "Fuel for Nepal Flood Relief - GlobalGiving"
+      },
+      {
+        "url": "https://www.globalgiving.org/projects/nepal-floods-helping-families-recover-and-rebuild/",
+        "org": "Child Rescue Nepal",
+        "kind": "globalgiving",
+        "note": "Food, medical supplies, clothing and care for children who lost family.",
+        "title": "Nepal Floods: Helping Families Recover and Rebuild - GlobalGiving"
+      },
       {
         "url": "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods/",
         "org": "Oxfam",
         "kind": "local",
-        "note": "Water tanks and shelter kits for flood-affected families in Rasuwa.",
+        "note": "Nepal Floods Appeal for Rasuwa, Nuwakot and Dhading.",
         "title": "Donate to Nepal Floods Appeal",
-        "published": "2026-09-25T01:13:09.815Z"
+        "published": "2026-09-25T09:08:28.864Z"
       },
       {
         "url": "https://childrenofadam.org/all-appeals/nepal-emergency/",
         "org": "Children of Adam",
         "kind": "local",
-        "note": "Emergency food, water, medical supplies and shelter for Rasuwa and Nuwakot families.",
+        "note": "Food, clean water, medical supplies and shelter.",
         "title": "Nepal Flood Appeal 2026",
-        "published": "2026-08-28T01:13:09.815Z"
-      },
-      {
-        "url": "https://chay-ya.org/en/projects/humanitarian-aid/district-rasuwa-flash-flood-2026",
-        "org": "Chay Ya",
-        "kind": "local",
-        "note": "Food packs, support for lactating mothers and hygiene sets for Rasuwa families.",
-        "title": "District Rasuwa"
-      },
-      {
-        "url": "https://funds.anhsdc.org/",
-        "org": "America Nepal Helping Society",
-        "kind": "local",
-        "note": "Relief fund for flood-affected communities in Rasuwa.",
-        "title": "Rasuwa Flood Relief Fund — ANHS"
-      },
-      {
-        "url": "https://charity.friscobasecamp.com/programs/rasuwa-flash-flood",
-        "org": "Basecamp Charity",
-        "kind": "local",
-        "note": "Shelter, food, water and medical aid for Rasuwa flood survivors.",
-        "title": "Rasuwa Flash Flood Emergency Relief"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/emergency-flood-relief-for-families-in-nepal/",
-        "org": "United Foundation-Nepal via GlobalGiving",
-        "kind": "globalgiving",
-        "note": "Direct aid for flood-hit families in Rasuwa and Nuwakot.",
-        "title": "Nepal Flood Relief for Rasuwa and Nuwakot Families - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/nepal-flood-relief-1/",
-        "org": "Aktion Deutschland Hilft via GlobalGiving",
-        "kind": "globalgiving",
-        "note": "Food, water, shelter, medicines and psychosocial support for flood survivors.",
-        "title": "Nepal Flood Relief - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/nepal-flash-flood-emergency-relief-2026/",
-        "org": "OBHIZATRIK Foundation via GlobalGiving",
-        "kind": "globalgiving",
-        "note": "Relief goods and funding for vetted local NGOs in Rasuwa, Nuwakot and Dhading.",
-        "title": "Nepal Flash Flood Emergency Relief 2026 - GlobalGiving"
+        "published": "2026-08-28T09:08:28.864Z"
       }
-    ]
+    ],
+    "donationSearched": "2026-11-27T09:08:28.864Z",
+    "directSearched": "2026-11-27T09:08:28.864Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-27T09:08:28.864Z"
   }
 }

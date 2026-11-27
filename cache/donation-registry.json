@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-26T23:24:59.071Z",
+  "updated": "2026-11-27T09:08:28.864Z",
   "fetched": {
-    "societies": "2026-11-26T23:24:59.071Z",
-    "uncr": "2026-11-26T23:24:59.071Z"
+    "societies": "2026-11-27T09:08:28.864Z",
+    "uncr": "2026-11-27T09:08:28.864Z"
   },
   "societies": {
     "AF": {
@@ -2459,14 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
-      "ok": true,
-      "reason": "donation word \"donat*\"",
-      "checked": "2026-11-20T03:50:13.771Z",
-      "chain": [
-        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
-      ]
-    },
     "local4:ifrc-flood-8073:oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Nepal\"",
@@ -2621,14 +2613,6 @@
         "https://www.redcross.org.mm/donate/donate-now/"
       ]
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-26T04:34:25.672Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
     "unicef.org/uganda/reports/united-nations-and-partners-appeal": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2644,15 +2628,6 @@
       "chain": [
         "https://donations.redcross.or.ke/home"
       ]
-    },
-    "ifrc.org/emergency/nepal-flash-floods-2026": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-26T04:34:25.672Z",
-      "chain": [
-        "https://www.ifrc.org/emergency/nepal-flash-floods-2026"
-      ],
-      "blocked": true
     },
     "croixrouge.bi": {
       "ok": false,
@@ -2717,46 +2692,79 @@
     "fts.unocha.org/plans/overview/2026/plans": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-26T23:24:59.071Z",
       "chain": [
         "https://fts.unocha.org/plans/overview/2026/plans"
-      ],
-      "checked": "2026-11-26T23:24:59.071Z"
+      ]
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-26T23:24:59.071Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
-      ],
-      "checked": "2026-11-26T23:24:59.071Z"
+      ]
     },
     "local4:ifrc-earthquake-8060:support.savethechildren.or.id/donasi-gempa-ntt": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Indonesia\"",
+      "checked": "2026-11-26T23:24:59.071Z",
       "chain": [
         "https://support.savethechildren.or.id/donasi-gempa-ntt"
       ],
       "place": "Indonesia",
       "name": "Save the Children",
-      "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT",
-      "checked": "2026-11-26T23:24:59.071Z"
+      "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT"
     },
     "go.ifrc.org/countries/85": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-26T23:24:59.071Z",
       "chain": [
         "https://go.ifrc.org/countries/85"
-      ],
-      "checked": "2026-11-26T23:24:59.071Z"
+      ]
     },
     "ayodonor.pmi.or.id?page=index": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-26T23:24:59.071Z",
       "chain": [
         "https://ayodonor.pmi.or.id/?page=index"
       ],
-      "blocked": true,
-      "checked": "2026-11-26T23:24:59.071Z"
+      "blocked": true
+    },
+    "go.ifrc.org/emergencies/8079/overview": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/emergencies/8079/overview"
+      ],
+      "checked": "2026-11-27T09:08:28.864Z"
+    },
+    "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://www.unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026"
+      ],
+      "checked": "2026-11-27T09:08:28.864Z"
+    },
+    "ayuda.cruzrojacolombiana.org": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://ayuda.cruzrojacolombiana.org/",
+        "https://ayuda.cruzrojacolombiana.org/emergencia-colombia-terremoto"
+      ],
+      "checked": "2026-11-27T09:08:28.864Z"
+    },
+    "cruzrojacolombiana.org/cruz-roja-colombiana-despliega-capacidades-para-dar-respuesta-tras-las-afectaciones-por-sismo-en-colombia": {
+      "ok": true,
+      "reason": "donation word \"dona ya\"",
+      "chain": [
+        "https://www.cruzrojacolombiana.org/cruz-roja-colombiana-despliega-capacidades-para-dar-respuesta-tras-las-afectaciones-por-sismo-en-colombia/"
+      ],
+      "checked": "2026-11-27T09:08:28.864Z"
     }
   }
 }
