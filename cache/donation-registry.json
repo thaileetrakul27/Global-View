@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-28T03:08:26.060Z",
+  "updated": "2026-11-28T13:35:02.302Z",
   "fetched": {
-    "societies": "2026-11-28T03:08:26.060Z",
-    "uncr": "2026-11-28T03:08:26.060Z"
+    "societies": "2026-11-28T13:35:02.302Z",
+    "uncr": "2026-11-28T13:35:02.302Z"
   },
   "societies": {
     "AF": {
@@ -2459,16 +2459,6 @@
   },
   "uncrGeneral": "https://crisisrelief.un.org/donate-global-emergency-fund",
   "verdicts": {
-    "redcross.org.cn": {
-      "ok": true,
-      "reason": "donation word \"捐\"",
-      "checked": "2026-11-21T13:08:19.870Z",
-      "chain": [
-        "https://www.redcross.org.cn/",
-        "https://www.redcross.org.cn/login",
-        "https://www.redcross.org.cn/autoweb/hlwmh/index.html"
-      ]
-    },
     "local4:ifrc-earthquake-8055:oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Colombia\"",
@@ -2608,14 +2598,6 @@
       "name": "Save the Children",
       "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT"
     },
-    "go.ifrc.org/emergencies/8079/overview": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-27T09:08:28.864Z",
-      "chain": [
-        "https://go.ifrc.org/emergencies/8079/overview"
-      ]
-    },
     "unocha.org/publications/report/honduras/honduras-drought-flash-appeal-sep-2026": {
       "ok": true,
       "reason": "donation word \"donat*\"",
@@ -2726,64 +2708,73 @@
     "local4:gdacs-drought-dr-1027449:missionsdoor.org/project/honduras-relief-fund": {
       "ok": false,
       "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
+      "checked": "2026-11-28T03:08:26.060Z",
       "chain": [
         "https://www.missionsdoor.org/project/honduras-relief-fund/"
-      ],
-      "checked": "2026-11-28T03:08:26.060Z"
+      ]
     },
     "fts.unocha.org/plans/overview/2026/plans": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-28T03:08:26.060Z",
       "chain": [
         "https://fts.unocha.org/plans/overview/2026/plans"
-      ],
-      "checked": "2026-11-28T03:08:26.060Z"
+      ]
     },
     "go.ifrc.org/countries/81": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-28T03:08:26.060Z",
       "chain": [
         "https://go.ifrc.org/countries/81"
-      ],
-      "checked": "2026-11-28T03:08:26.060Z"
+      ]
     },
     "go.ifrc.org/countries/85": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-28T03:08:26.060Z",
       "chain": [
         "https://go.ifrc.org/countries/85"
-      ],
-      "checked": "2026-11-28T03:08:26.060Z"
+      ]
     },
     "ayodonor.pmi.or.id?page=index": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-28T03:08:26.060Z",
       "chain": [
         "https://ayodonor.pmi.or.id/?page=index"
       ],
-      "blocked": true,
-      "checked": "2026-11-28T03:08:26.060Z"
+      "blocked": true
     },
     "local4:ifrc-flood-8050:worldchefswithoutborders.org/disaster-relief/donate-to-support-children-affected-by-flooding-in-myanmar": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Myanmar\"",
+      "checked": "2026-11-28T03:08:26.060Z",
       "chain": [
         "https://www.worldchefswithoutborders.org/disaster-relief/donate-to-support-children-affected-by-flooding-in-myanmar/"
       ],
       "place": "Myanmar",
-      "title": "Donate to Support Children Affected by Flooding in Myanmar – WORLDCHEFS WITHOUT BORDERS",
-      "checked": "2026-11-28T03:08:26.060Z"
+      "title": "Donate to Support Children Affected by Flooding in Myanmar – WORLDCHEFS WITHOUT BORDERS"
     },
     "local4:ifrc-flood-8050:worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Myanmar\"",
+      "checked": "2026-11-28T03:08:26.060Z",
       "chain": [
         "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/"
       ],
       "place": "Myanmar",
       "name": "WORLDCHEFS",
-      "title": "Donate to Support Children Affected by Flooding in Myanmar",
-      "checked": "2026-11-28T03:08:26.060Z"
+      "title": "Donate to Support Children Affected by Flooding in Myanmar"
+    },
+    "member.redcrosseth.org/donate": {
+      "ok": true,
+      "reason": "donation word \"donat*\"",
+      "chain": [
+        "https://member.redcrosseth.org/donate",
+        "https://member.redcrosseth.org/en/donate"
+      ],
+      "checked": "2026-11-28T13:35:02.302Z"
     }
   }
 }

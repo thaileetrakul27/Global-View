@@ -1,55 +1,4 @@
 {
-  "gdacs-cyclone-tc-1001347": {
-    "at": "2026-11-14T07:01:23.906Z",
-    "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Typhoon Cempaka (JMA No. 32) began on 6 November 2026 near the Mariana Islands. It passed over waters south of Japan's Ogasawara Islands, where Ogasawara Village issued storm and high wave warnings. Sources report it dissipated or became an extratropical cyclone around 11–12 November. No damage, casualties or evacuations are reported in the sources reviewed.",
-    "ongoing": false,
-    "places": [
-      {
-        "name": "Ogasawara Islands",
-        "admin": "Tokyo",
-        "country": "JP",
-        "kind": "region",
-        "impact": "Severe weather; storm and high wave warnings issued"
-      }
-    ],
-    "figures": [],
-    "donation": [],
-    "sources": [
-      {
-        "name": "stormatlasx.com",
-        "url": "https://stormatlasx.com/storms/cempaka-2026",
-        "title": "2026 Typhoon Cempaka - Historical Track Map, Peak Winds & Landfall Archive"
-      },
-      {
-        "name": "baike.baidu.com",
-        "url": "https://baike.baidu.com/en/item/Typhoon%20Cempaka/7554529",
-        "title": "Typhoon Cempaka_Baiduwiki"
-      },
-      {
-        "name": "agora.ex.nii.ac.jp",
-        "url": "https://agora.ex.nii.ac.jp/digital-typhoon/news/2026/TC2632/",
-        "title": "Digital Typhoon: Typhoon 202632 (CEMPAKA)"
-      },
-      {
-        "name": "en.wikipedia.org",
-        "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season",
-        "title": "2026 Pacific typhoon season"
-      },
-      {
-        "name": "sea.weathernews.com",
-        "url": "https://sea.weathernews.com/resources/202611/292",
-        "title": "Typhoon No. 32 (Cempaka) Forecast to Peak at 80 kt Before Turning East and Weakening"
-      },
-      {
-        "name": "jrc.or.jp",
-        "url": "https://www.jrc.or.jp/english/donate/",
-        "title": "Donate"
-      }
-    ],
-    "membersHash": "eonet,gdacs|JP#180d4e6d"
-  },
   "gdacs-cyclone-tc-1001351": {
     "at": "2026-11-17T22:50:03.877Z",
     "model": "claude-haiku-5-5",
@@ -67,87 +16,63 @@
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1018332": {
-    "at": "2026-11-25T01:13:09.815Z",
+    "at": "2026-11-28T13:35:02.302Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Drought in Europe, which started on 21 December 2025, is ongoing across much of the continent. Rhine water levels reached a record low at the Kaub gauge on 12 August 2026, and the Golfech nuclear plant in France shut down on 9 July because of river temperature. Rainfall in October and November improved soil moisture in many regions, while drought worsened in the Iberian Peninsula in early November. The GDACS feed was last updated on 24 November 2026.",
+    "summary": "Drought across much of Europe began on 21 Dec 2025 and remains ongoing as of 28 Nov 2026. JRC and Copernicus reports said it stayed critical through October and early November, worsening in the Iberian Peninsula. Moisture reached affected areas in mid-November, but drought remains in Western Europe. No end date has been reported.",
     "ongoing": true,
     "places": [
-      {
-        "name": "Kaub",
-        "country": "DE",
-        "kind": "site",
-        "impact": "Rhine record low of 14 cm on 12 August"
-      },
-      {
-        "name": "Cologne",
-        "country": "DE",
-        "kind": "city",
-        "impact": "Rhine riverbanks dried in July"
-      },
-      {
-        "name": "Golfech",
-        "country": "FR",
-        "kind": "site",
-        "impact": "Unit 2 nuclear plant shut down 9 July"
-      },
       {
         "name": "Wallonia",
         "country": "BE",
         "kind": "region",
-        "impact": "Drought restrictions and code yellow alert"
+        "impact": "drought-related water restrictions"
+      },
+      {
+        "name": "Flanders",
+        "country": "BE",
+        "kind": "region",
+        "impact": "water scarcity"
       },
       {
         "name": "Brussels-Capital Region",
         "country": "BE",
         "kind": "region",
-        "impact": "Drought restrictions and code yellow alert"
+        "impact": "yellow drought alert extended"
+      },
+      {
+        "name": "Novi Sad",
+        "country": "RS",
+        "kind": "city",
+        "impact": "low Danube water"
       }
     ],
     "figures": [
       {
-        "label": "Area in drought",
-        "value": "50% of EU and UK territory by late July 2026",
-        "sourceName": "joint-research-centre.ec.europa.eu",
-        "sourceUrl": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/worsening-drought-and-record-heat-grip-europe-fuelling-extraordinary-wildfires-and-extremely-low-2026-08-12_en"
-      },
-      {
-        "label": "Municipalities affected",
-        "value": "1,623 municipalities (spring cereal drought, 21 March to…",
+        "label": "Municipalities with drought in spring…",
+        "value": "1,623 municipalities (65.47% of total)",
         "sourceName": "wodnesprawy.pl",
         "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
-      },
-      {
-        "label": "Wildfire area",
-        "value": "nearly 580,000 ha burned in Europe in 2026",
-        "sourceName": "wodnesprawy.pl",
-        "sourceUrl": "https://wodnesprawy.pl/en/the-2026-drought-in-europe-weve-known-about-the-risk-for-years-but-were-still-not-prepared/"
-      },
-      {
-        "label": "Lost revenue estimate",
-        "value": "$30–50 million for Viking river cruises (company-specific…",
-        "sourceName": "rivercruiseadvisor.com",
-        "sourceUrl": "https://rivercruiseadvisor.com/2026/09/what-did-europes-2026-drought-really-cost-river-cruising-and-will-it-cost-you/"
       }
     ],
     "donation": [],
     "sources": [
       {
-        "name": "drought.emergency.copernicus.eu",
-        "url": "https://drought.emergency.copernicus.eu/",
-        "title": "Drought Observatories"
+        "name": "bakingbusiness.com",
+        "url": "https://www.bakingbusiness.com/articles/67297-brazil-weather-holds-market-attention-as-droughts-break",
+        "title": "Brazil weather holds market attention as droughts break"
       },
       {
-        "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/generally-favourable-start-new-winter-crop-season-2026-11-20_en",
-        "title": "Generally favourable start to the new winter crop season - Joint Research Centre"
+        "name": "en.wikipedia.org",
+        "url": "https://en.wikipedia.org/wiki/2026_European_drought",
+        "title": "2026 European drought"
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-28T03:08:26.060Z",
-    "donationSearched": "2026-11-25T01:13:09.815Z",
-    "directSearched": "2026-11-25T01:13:09.815Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-28T13:35:02.302Z",
+    "directSearched": "2026-11-28T13:35:02.302Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-28T13:35:02.302Z"
   },
   "gdacs-drought-dr-1023877": {
     "at": "2026-11-28T03:08:26.060Z",
@@ -202,10 +127,10 @@
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
+    "seen": "2026-11-28T13:35:02.302Z",
     "donationSearched": "2026-11-28T03:08:26.060Z",
     "directSearched": "2026-11-28T03:08:26.060Z",
-    "directSearchVersion": 2,
-    "seen": "2026-11-28T03:08:26.060Z"
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-26T23:24:59.071Z",
@@ -333,8 +258,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-28T03:08:26.060Z",
+    "seen": "2026-11-28T13:35:02.302Z",
     "donationSearched": "2026-11-26T23:24:59.071Z",
+    "directSearched": "2026-11-28T03:08:26.060Z",
+    "directSearchVersion": 2,
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
@@ -351,92 +278,95 @@
         "title": "Honduras Relief Fund - Missions Door",
         "published": "2026-09-15T03:08:26.060Z"
       }
-    ],
-    "directSearched": "2026-11-28T03:08:26.060Z",
-    "directSearchVersion": 2
+    ]
   },
   "gdacs-drought-dr-1027450": {
-    "at": "2026-11-26T04:34:25.672Z",
+    "at": "2026-11-28T13:35:02.302Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "Drought in East Africa and the Central Sahel began on 21 May 2026, linked to El Niño. Between June and September 2026, drought and high temperatures reduced crop and pasture yields across East Africa, according to a JRC report dated 7 October 2026. Reported impacts include rainfall deficits in Karamoja, Uganda, and reduced harvests in Kenya. Forecasts indicate wetter conditions from October to December, with flood risk in the Horn of Africa. No reports after early October…",
+    "summary": "Drought in East Africa and the Central Sahel, with the alert dated from 21 May 2026; that start date is not confirmed by the sources reviewed. As of 26 November 2026, FEWS NET and NOAA CPC report persistent dryness in East Africa and the Horn of Africa. No November 2026 source covers the Central Sahel. The notes give no death or displacement totals. Ethiopia reports over 3.5 million people affected (IFRC GO, September 2026).",
     "ongoing": true,
     "places": [
       {
-        "name": "Karamoja",
-        "country": "UG",
+        "name": "Oromia",
+        "country": "ET",
         "kind": "region",
-        "impact": "rainfall deficits"
+        "impact": "widespread impacts from June–September 2026 season"
+      },
+      {
+        "name": "Northern Amhara",
+        "country": "ET",
+        "kind": "region",
+        "impact": "widespread impacts from June–September 2026 season"
+      },
+      {
+        "name": "Tigray",
+        "country": "ET",
+        "kind": "region",
+        "impact": "widespread impacts from June–September 2026 season"
+      },
+      {
+        "name": "Eastern Equatoria",
+        "country": "SS",
+        "kind": "region",
+        "impact": "worsening drought conditions"
       }
     ],
     "figures": [
       {
-        "label": "Harvest yield shortfall",
-        "value": "36% below average",
-        "sourceName": "wisevoter.com",
-        "sourceUrl": "https://wisevoter.com/world/2026/10/03/east-africa-drought-harvest-decline"
-      },
-      {
-        "label": "People facing high acute food…",
-        "value": "more than 2.12 million people",
-        "sourceName": "redcross.or.ke",
-        "sourceUrl": "https://redcross.or.ke/drought-emergency-2026/"
+        "label": "People affected",
+        "value": "over 3.5 million people",
+        "sourceName": "go.ifrc.org",
+        "sourceUrl": "https://go.ifrc.org/emergencies/8079/overview"
       }
     ],
     "donation": [
       {
-        "url": "https://go.ifrc.org/emergencies/8079/overview",
-        "org": "IFRC (with Ethiopian Red Cross Society)",
+        "url": "https://www.ifrc.org/appeals?ac=MDRSY003",
+        "org": "IFRC",
         "kind": "society",
-        "note": "DREF operation MDRET042 for the 2026 drought in Ethiopia, covering Ethiopia only.",
+        "note": "IFRC appeals listing for the Ethiopia Drought Response DREF operation (MDRET042).",
         "specific": true
       },
       {
-        "url": "https://www.unicef.org/uganda/reports/united-nations-and-partners-appeal",
-        "org": "UNICEF Uganda",
-        "kind": "un",
-        "note": "UN and partners appeal covering Karamoja drought and El Niño floods in Uganda; only partly this drought.",
-        "specific": false
-      },
-      {
-        "url": "https://redcross.or.ke/drought-emergency-2026/",
-        "org": "Kenya Red Cross",
+        "url": "https://member.redcrosseth.org/donate",
+        "org": "Ethiopian Red Cross Society",
         "kind": "society",
-        "note": "Kenya Red Cross drought appeal for Kenya."
+        "note": "Ethiopian Red Cross Society's standing donation page for its general fund.",
+        "specific": false
       },
       {
         "url": "https://donations.redcross.or.ke/home",
         "org": "Kenya Red Cross",
         "kind": "society",
-        "note": "Donation portal listing the Drought Crisis in Kenya campaign."
-      },
-      {
-        "url": "https://www.ifrc.org/emergency/kenya-complex-emergency",
-        "org": "IFRC",
-        "kind": "society",
-        "note": "IFRC appeal MDRKE068 for Kenya, covering drought and hunger."
+        "note": "Lists Drought Crisis in Kenya appeal and El-Nino 2026 section; Kenya only."
       }
     ],
     "sources": [
       {
-        "name": "joint-research-centre.ec.europa.eu",
-        "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/el-nino-weather-extremes-worsen-food-security-east-africa-and-central-america-and-threaten-next-2026-10-07_en",
-        "title": "El Niño weather extremes worsen food security in East Africa and Central America and threaten next season crops in Southern Africa and South America - Joint…"
+        "name": "fews.net",
+        "url": "https://fews.net/global/global-weather-hazards/november-2026-1",
+        "title": "El Niño is present. Abnormal dryness and drought conditions persist in East Africa, northwestern and southeastern Kazakhstan, and parts of Central America…"
       },
       {
-        "name": "global-agriculture.com",
-        "url": "https://www.global-agriculture.com/farming-agriculture/east-africa-braces-for-poor-harvests-after-one-of-its-driest-rainy-seasons-on-record/",
-        "title": "East Africa Braces for Poor Harvests After One of Its Driest Rainy Seasons on Record"
+        "name": "cpc.ncep.noaa.gov",
+        "url": "https://www.cpc.ncep.noaa.gov/products/international/globalweatherhazard/Current.pdf",
+        "title": "November 26, 2026"
       },
       {
-        "name": "africa-newsroom.com",
-        "url": "https://www.africa-newsroom.com/press/resilience-starts-at-home-preparing-communities-for-el-nino-before-disaster-strikes?lang=en",
-        "title": "APO Group - Africa Newsroom / Press release"
+        "name": "mesoscalenews.com",
+        "url": "https://www.mesoscalenews.com/p/disaster-briefs-nov-23-2026",
+        "title": "Disaster Briefs, Nov. 23, 2026"
       },
       {
-        "name": "wisevoter.com",
-        "url": "https://wisevoter.com/world/2026/10/03/east-africa-drought-harvest-decline",
-        "title": "Record Heat and Drought Stunted East African Harvests"
+        "name": "go.ifrc.org",
+        "url": "https://go.ifrc.org/emergencies/8079/overview",
+        "title": "IFRC GO - Emergency - ETH: Drought - 08-2026 - Ethiopia 2026 Drought"
+      },
+      {
+        "name": "kayleevanderbergh.substack.com",
+        "url": "https://kayleevanderbergh.substack.com/p/fault-lines-when-the-rains-become",
+        "title": "Fault Lines: When the Rains Become Political"
       },
       {
         "name": "donations.redcross.or.ke",
@@ -445,10 +375,10 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-28T03:08:26.060Z",
-    "donationSearched": "2026-11-26T04:34:25.672Z",
-    "directSearched": "2026-11-26T04:34:25.672Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-28T13:35:02.302Z",
+    "directSearched": "2026-11-28T13:35:02.302Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-28T13:35:02.302Z"
   },
   "gdacs-earthquake-eq-1578540": {
     "at": "2026-11-28T03:08:26.060Z",
@@ -614,73 +544,13 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-28T03:08:26.060Z",
+    "seen": "2026-11-28T13:35:02.302Z",
     "donationSearched": "2026-11-27T09:08:28.864Z",
-    "direct": [
-      {
-        "url": "https://www.globalgiving.org/projects/colombia-earthquake-relief-fund/",
-        "org": "GlobalGiving",
-        "kind": "globalgiving",
-        "note": "Pooled fund for local groups' medical care, search and rescue, shelter, food and water.",
-        "title": "Colombia Earthquake Relief Fund - GlobalGiving",
-        "published": "2026-08-21T01:13:09.815Z"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/colombia-earthquake-response/",
-        "org": "Direct Relief",
-        "kind": "globalgiving",
-        "note": "Air transport of medical supplies and blood into Condoto and other Chocó municipalities.",
-        "title": "Colombia Earthquake Response 2026 - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/colombia-earthquake-help-families-recover/",
-        "org": "TECHO Colombia",
-        "kind": "globalgiving",
-        "note": "Emergency homes for families in Valle del Cauca, Chocó and the Coffee Region.",
-        "title": "Rebuild Homes for Colombia Earthquake Families - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/earthquake-relief-cali-buenaventura-choco/",
-        "org": "Fundación Ser para Ser",
-        "kind": "globalgiving",
-        "note": "Food, hygiene kits, shelter and home repair in Cali, Buenaventura and Chocó.",
-        "title": "Earthquake Relief: Cali, Buenaventura, Choco - GlobalGiving"
-      },
-      {
-        "url": "https://www.globalgiving.org/projects/keep-earthquake-hit-students-learning-in-colombia/",
-        "org": "Makaia",
-        "kind": "globalgiving",
-        "note": "STEM learning and scholarships for students whose schools were damaged.",
-        "title": "Keep Earthquake-Hit Students Learning in Colombia - GlobalGiving"
-      },
-      {
-        "url": "https://www.directrelief.org/emergency/colombia-earthquake-2026/",
-        "org": "Direct Relief",
-        "kind": "local",
-        "note": "Colombia Earthquake Response Fund for medical resources and emergency grants.",
-        "title": "Colombia Earthquake 2026",
-        "published": "2026-10-29T01:13:09.815Z"
-      },
-      {
-        "url": "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/colombia-earthquake/",
-        "org": "Oxfam GB",
-        "kind": "local",
-        "note": "Emergency appeal for clean water, food and supplies in the affected Chocó area.",
-        "title": "Donate to Colombia Earthquake Appeal",
-        "published": "2026-08-13T01:13:09.815Z"
-      },
-      {
-        "url": "https://www.savethechildren.net/donate/colombia-earthquake",
-        "org": "Save the Children",
-        "kind": "local",
-        "note": "Children's Emergency Fund for children and families displaced by the quake.",
-        "title": "Save the Children International",
-        "published": "2020-04-16T01:13:09.815Z"
-      }
-    ],
     "hubs": [
       "https://www.gofundme.com/c/act/colombia-earthquake-relief"
-    ]
+    ],
+    "directSearched": "2026-11-28T13:35:02.302Z",
+    "directSearchVersion": 2
   },
   "ifrc-earthquake-8060": {
     "at": "2026-11-25T22:10:28.555Z",
@@ -742,7 +612,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-28T03:08:26.060Z",
+    "seen": "2026-11-28T13:35:02.302Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-26T23:24:59.071Z",
     "directSearchVersion": 2,
@@ -965,6 +835,7 @@
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
+    "seen": "2026-11-28T13:35:02.302Z",
     "donationSearched": "2026-11-28T03:08:26.060Z",
     "directSearched": "2026-11-28T03:08:26.060Z",
     "directSearchVersion": 2,
@@ -984,8 +855,7 @@
         "title": "Donate to Support Children Affected by Flooding in Myanmar - WORLDCHEFS",
         "published": "2026-08-12T03:08:26.060Z"
       }
-    ],
-    "seen": "2026-11-28T03:08:26.060Z"
+    ]
   },
   "ifrc-flood-8073": {
     "at": "2026-11-27T09:08:28.864Z",
@@ -1103,7 +973,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-28T03:08:26.060Z",
+    "seen": "2026-11-28T13:35:02.302Z",
     "donationSearched": "2026-11-27T09:08:28.864Z",
     "directSearched": "2026-11-27T09:08:28.864Z",
     "directSearchVersion": 2,
