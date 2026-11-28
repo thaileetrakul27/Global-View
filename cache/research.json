@@ -144,120 +144,68 @@
       }
     ],
     "membersHash": "gdacs|AL,AT,BA,BE,BG,BY,CH,CZ,DE,DK,ES,FR,HR,HU,IE,IT,LU,ME,PL,RO,RS,SE,SI,SK,UA#22223994",
-    "seen": "2026-11-27T19:53:06.152Z",
+    "seen": "2026-11-28T03:08:26.060Z",
     "donationSearched": "2026-11-25T01:13:09.815Z",
     "directSearched": "2026-11-25T01:13:09.815Z",
     "directSearchVersion": 2
   },
   "gdacs-drought-dr-1023877": {
-    "at": "2026-11-25T22:10:28.555Z",
+    "at": "2026-11-28T03:08:26.060Z",
     "model": "claude-haiku-5-5",
     "searches": 4,
-    "summary": "A drought linked to the 2026 El Niño is affecting Colombia and the Panama Canal watershed, and it was ongoing at the latest reports in late November 2026. Rainfall in Cundinamarca, Colombia, was 96% below normal in November, and the regional authority lists 18 critical municipalities. The IDEAM expects dry conditions to continue nationwide, with December 2026 and January 2027 the most critical months. Gatún and Alhajuela lakes are low, and Panama Canal daily transits have…",
+    "summary": "Drought affecting parts of northern South America and the Panama Isthmus, according to GDACS, with a reported start in late February 2026. In Colombia, extreme drought has hit parts of Cundinamarca, where November rainfall fell 96%. Panama's government declared a national state of emergency on 25 August. The drought is ongoing as of late November 2026, and no end date is reported.",
     "ongoing": true,
     "places": [
       {
         "name": "Cundinamarca",
         "country": "CO",
         "kind": "region",
-        "impact": "Extreme drought; record rainfall deficit in November 2026"
+        "impact": "extreme drought; November rainfall down 96%"
       },
       {
         "name": "Puerto Salgar",
         "admin": "Cundinamarca",
         "country": "CO",
-        "kind": "town",
-        "impact": "Under public calamity"
-      },
-      {
-        "name": "Pulí",
-        "admin": "Cundinamarca",
-        "country": "CO",
-        "kind": "town",
-        "impact": "Under public calamity"
-      },
-      {
-        "name": "Viotá",
-        "admin": "Cundinamarca",
-        "country": "CO",
-        "kind": "town",
-        "impact": "Under public calamity"
+        "kind": "district",
+        "impact": "red-alert municipality for drought"
       },
       {
         "name": "Caparrapí",
         "admin": "Cundinamarca",
         "country": "CO",
-        "kind": "town",
-        "impact": "Red alert for drought"
-      },
-      {
-        "name": "Vergara",
-        "admin": "Cundinamarca",
-        "country": "CO",
-        "kind": "town",
-        "impact": "Red alert for drought"
+        "kind": "district",
+        "impact": "red-alert municipality for drought"
       },
       {
         "name": "Villeta",
         "admin": "Cundinamarca",
         "country": "CO",
-        "kind": "town",
-        "impact": "Red alert for drought"
+        "kind": "district",
+        "impact": "red-alert municipality for drought"
       },
       {
-        "name": "Silvania",
+        "name": "Anolaima",
         "admin": "Cundinamarca",
         "country": "CO",
-        "kind": "town",
-        "impact": "Red alert for drought"
-      },
-      {
-        "name": "El Colegio",
-        "admin": "Cundinamarca",
-        "country": "CO",
-        "kind": "town",
-        "impact": "Red alert for drought"
-      },
-      {
-        "name": "Gatún Lake",
-        "country": "PA",
-        "kind": "site",
-        "impact": "Water levels low; canal transit restrictions"
-      },
-      {
-        "name": "Alhajuela Lake",
-        "country": "PA",
-        "kind": "site",
-        "impact": "Water levels low; canal transit restrictions"
+        "kind": "district",
+        "impact": "red-alert municipality for drought"
       }
     ],
     "figures": [
       {
-        "label": "Rainfall deficit",
-        "value": "96% below normal",
-        "sourceName": "eltiempo.com",
-        "sourceUrl": "https://www.eltiempo.com/amp/bogota/sequia-en-cundinamarca-rompe-registros-lluvias-caen-un-96-y-la-situacion-ya-supera-la-de-el-nino-de-3603320"
-      },
-      {
-        "label": "Panama Canal watershed rainfall",
-        "value": "about 34% below average (May to August 2026)",
-        "sourceName": "industrialinfo.com",
-        "sourceUrl": "https://www.industrialinfo.com/news/article/panama-canal-faces-growing-drought-and-transit-curtailments--362420"
-      },
-      {
-        "label": "Daily Panama Canal transits",
-        "value": "34 per day",
-        "sourceName": "fenixgc.com",
-        "sourceUrl": "https://fenixgc.com/en/news/the-years-first-transit-restriction-at-the-panama-canal/"
+        "label": "People susceptible to water-supply…",
+        "value": "about 4.3 million people",
+        "sourceName": "infobae.com",
+        "sourceUrl": "https://www.infobae.com/america/medio-ambiente/2026/11/20/el-otro-extremo-de-el-nino-dos-paises-declaran-la-emergencia-por-sequias-y-corren-riesgo-las-cosechas/"
       }
     ],
     "donation": [],
     "sources": [],
     "membersHash": "gdacs|BR,CO,CR,GY,PA,SR,VE#e3290820",
-    "seen": "2026-11-27T19:53:06.152Z",
-    "donationSearched": "2026-11-25T22:10:28.555Z",
-    "directSearched": "2026-11-25T22:10:28.555Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-28T03:08:26.060Z",
+    "directSearched": "2026-11-28T03:08:26.060Z",
+    "directSearchVersion": 2,
+    "seen": "2026-11-28T03:08:26.060Z"
   },
   "gdacs-drought-dr-1027449": {
     "at": "2026-11-26T23:24:59.071Z",
@@ -385,17 +333,27 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BZ,CR,CU,DO,GT,HN,MX,NI,SV,US#0d2a1d89",
-    "seen": "2026-11-27T19:53:06.152Z",
+    "seen": "2026-11-28T03:08:26.060Z",
     "donationSearched": "2026-11-26T23:24:59.071Z",
     "direct": [
       {
         "url": "https://www.globalgiving.org/projects/emergency-appeal-effects-of-el-nino/",
-        "org": "Paso Pacífico",
+        "org": "Paso Pacifico (via GlobalGiving)",
         "kind": "globalgiving",
-        "note": "Rural communities and forest wildlife hit by drought in Nicaragua and El Salvador",
+        "note": "Water-supply stations, wildlife and rural-community recovery in Nicaragua and El Salvador.",
         "title": "Emergency appeal - effects of El Nino - GlobalGiving"
+      },
+      {
+        "url": "https://www.missionsdoor.org/project/honduras-relief-fund/",
+        "org": "Missions Door",
+        "kind": "local",
+        "note": "Food assistance for families in drought-hit Honduran departments including Intibucá, Lempira, Choluteca.",
+        "title": "Honduras Relief Fund - Missions Door",
+        "published": "2026-09-15T03:08:26.060Z"
       }
-    ]
+    ],
+    "directSearched": "2026-11-28T03:08:26.060Z",
+    "directSearchVersion": 2
   },
   "gdacs-drought-dr-1027450": {
     "at": "2026-11-26T04:34:25.672Z",
@@ -487,68 +445,29 @@
       }
     ],
     "membersHash": "gdacs,ifrc|BI,CD,CF,CM,ER,ET,KE,RW,SD,SS,TD,TZ,UG#d3aabe2f",
-    "seen": "2026-11-27T19:53:06.152Z",
+    "seen": "2026-11-28T03:08:26.060Z",
     "donationSearched": "2026-11-26T04:34:25.672Z",
     "directSearched": "2026-11-26T04:34:25.672Z",
     "directSearchVersion": 2
   },
   "gdacs-earthquake-eq-1578540": {
-    "at": "2026-11-25T22:10:28.555Z",
+    "at": "2026-11-28T03:08:26.060Z",
     "model": "claude-haiku-5-5",
     "searches": 3,
-    "summary": "A magnitude 5.9 earthquake (USGS; other agencies reported 5.6 to 5.7) struck near Delingha City in Qinghai Province, northwest China, on 21 November 2026 at 10:45 UTC. The epicentre was about 70 km from Delingha City. As of 22 November, local authorities were continuing emergency inspections. No casualties or collapsed buildings were reported.",
-    "ongoing": true,
+    "summary": "A magnitude 5.9 earthquake struck on 21 November 2026 at 10:45 UTC, about 238 km southwest of Yanglong, China, near Qinghai Province. The USGS and GDACS alerts were reviewed. No deaths, injuries, displacement or damage were reported in the sources found, and the event is not ongoing.",
+    "ongoing": false,
     "places": [
-      {
-        "name": "Delingha",
-        "admin": "Haixi Mongol and Tibetan Autonomous Prefecture",
-        "country": "CN",
-        "kind": "city",
-        "impact": "strong shaking felt; inspections carried out; no casualties or collapses reported"
-      },
-      {
-        "name": "Dulan County",
-        "admin": "Haixi Mongol and Tibetan Autonomous Prefecture",
-        "country": "CN",
-        "kind": "district",
-        "impact": "strong shaking felt"
-      },
       {
         "name": "Qinghai",
         "country": "CN",
         "kind": "region",
-        "impact": "tremors felt further away; no damage reported"
+        "impact": "epicentre area, no damage reported"
       }
     ],
     "figures": [],
     "donation": [],
-    "sources": [
-      {
-        "name": "thepeninsulaqatar.com",
-        "url": "https://thepeninsulaqatar.com/article/21/11/2026/56-magnitude-quake-hits-qinghai-in-nw-china",
-        "title": "5.6-magnitude quake hits Qinghai in NW China"
-      },
-      {
-        "name": "chinadailyhk.com",
-        "url": "https://www.chinadailyhk.com/hk/article/265320",
-        "title": "6.0-magnitude quake hits Qinghai"
-      },
-      {
-        "name": "quakemap24.com",
-        "url": "https://quakemap24.com/en/event/5ce787c79f37c0a36255fc8335ff2238403658cb/earthquake-m5-7-delingha-city-qinghai-2026-11-21",
-        "title": "M5.7 Earthquake near Delingha City, Qinghai (China)"
-      },
-      {
-        "name": "webull.com",
-        "url": "https://www.webull.com/news/15962098962711552",
-        "title": "At 18:45 on the 21st, a 5.6 magnitude earthquake occurred in Delingha, Haixi Mongol and Tibetan Autonomous Prefecture, Qinghai Province. The depth of the…"
-      }
-    ],
-    "membersHash": "gdacs,usgs|CN#a49711a3",
-    "seen": "2026-11-27T19:53:06.152Z",
-    "donationSearched": "2026-11-25T22:10:28.555Z",
-    "directSearched": "2026-11-25T22:10:28.555Z",
-    "directSearchVersion": 2
+    "sources": [],
+    "membersHash": "gdacs,usgs|CN#a49711a3"
   },
   "ifrc-earthquake-8055": {
     "at": "2026-11-27T09:08:28.864Z",
@@ -695,7 +614,7 @@
       }
     ],
     "membersHash": "ifrc|CO#46a7ee3f",
-    "seen": "2026-11-27T19:53:06.152Z",
+    "seen": "2026-11-28T03:08:26.060Z",
     "donationSearched": "2026-11-27T09:08:28.864Z",
     "direct": [
       {
@@ -823,7 +742,7 @@
     ],
     "sources": [],
     "membersHash": "ifrc|ID#d3af87fb",
-    "seen": "2026-11-27T19:53:06.152Z",
+    "seen": "2026-11-28T03:08:26.060Z",
     "donationSearched": "2026-11-25T22:10:28.555Z",
     "directSearched": "2026-11-26T23:24:59.071Z",
     "directSearchVersion": 2,
@@ -968,62 +887,66 @@
     ]
   },
   "ifrc-flood-8050": {
-    "at": "2026-11-25T22:10:28.555Z",
+    "at": "2026-11-28T03:08:26.060Z",
     "model": "claude-haiku-5-5",
-    "searches": 3,
-    "summary": "Monsoon flooding in Myanmar began on 12 August 2026 and has swamped villages and paddy fields in Sagaing and Ayeyarwady regions. UNICEF reports about 600,000 people affected as of late August 2026. Sources also name other flood-affected regions. No source reports that the flooding has ended, and rivers remain at or above danger levels as the monsoon continues.",
+    "searches": 4,
+    "summary": "Monsoon flooding in Myanmar from July 2026 affected Sagaing, Rakhine, Ayeyarwady, and Kachin states. Ministry figures reported more than 11,400 people in relief centres in Sagaing by 11 August. A UNICEF brief using end-August figures reported about 600,000 people affected. An IFRC DREF operation started 12 August 2026. No source confirms the flood status as of 28 November 2026.",
     "ongoing": true,
     "places": [
       {
         "name": "Wetlet",
         "admin": "Sagaing Region",
         "country": "MM",
-        "kind": "district",
-        "impact": "Villages and paddy fields swamped"
+        "kind": "town",
+        "impact": "flooded villages and paddy fields"
       },
       {
         "name": "Lemyethna",
         "admin": "Ayeyarwady Region",
         "country": "MM",
         "kind": "district",
-        "impact": "Severe inundation"
+        "impact": "severe inundation"
       },
       {
         "name": "Sagaing Region",
         "country": "MM",
         "kind": "region",
-        "impact": "At least 12 townships hit by floods"
+        "impact": "at least 12 townships hit by floods"
       },
       {
         "name": "Ayeyarwady Region",
         "country": "MM",
         "kind": "region",
         "impact": "14 townships severely inundated"
+      },
+      {
+        "name": "Rakhine State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "named by UN as affected"
+      },
+      {
+        "name": "Kachin State",
+        "country": "MM",
+        "kind": "region",
+        "impact": "named by UN as affected"
       }
     ],
     "figures": [
       {
-        "label": "People affected",
-        "value": "600,000 people",
-        "sourceName": "unicef.org",
-        "sourceUrl": "https://www.unicef.org/myanmar/media/14256/file/Myanmar%202026%20Monsoon%20Emergency%20Response.pdf"
-      },
-      {
-        "label": "People affected in Sagaing",
-        "value": "230,000 people",
+        "label": "Displaced",
+        "value": "11,400+ people from 3,220 households",
         "sourceName": "thestar.com.my",
         "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/15/monsoon-rains-submerge-villages-fields-in-myanmar-thousands-of-people-affected"
-      }
-    ],
-    "donation": [
+      },
       {
-        "url": "https://www.redcross.org.mm/donate/donate-now/",
-        "org": "Myanmar Red Cross Society",
-        "kind": "society",
-        "note": "General Emergency Fund for crises including floods; not tied to this event.",
-        "specific": false
+        "label": "People affected",
+        "value": "about 600,000 people",
+        "sourceName": "unicef.org",
+        "sourceUrl": "https://www.unicef.org/myanmar/media/14256/file/Myanmar%202026%20Monsoon%20Emergency%20Response.pdf"
       }
     ],
+    "donation": [],
     "sources": [
       {
         "name": "unicef.org",
@@ -1037,25 +960,32 @@
       },
       {
         "name": "ispmyanmar.com",
-        "url": "https://ispmyanmar.com/sb2026-02/",
-        "title": "Myanmar’s Floods Threaten 1.3m People ‣ ISP-Myanmar"
-      },
-      {
-        "name": "ispmyanmar.com",
         "url": "https://ispmyanmar.com/community/wp-content/uploads/2026/08/SB2026_02_English.pdf",
         "title": "ISP Situation Brief 2026 SB2026-02"
-      },
-      {
-        "name": "unicef.org",
-        "url": "https://www.unicef.org/myanmar/documents/myanmar-2026-monsoon-emergency-response",
-        "title": "Myanmar 2026 Monsoon Emergency Response"
       }
     ],
     "membersHash": "ifrc|MM#41a7e660",
-    "seen": "2026-11-27T19:53:06.152Z",
-    "donationSearched": "2026-11-25T22:10:28.555Z",
-    "directSearched": "2026-11-25T22:10:28.555Z",
-    "directSearchVersion": 2
+    "donationSearched": "2026-11-28T03:08:26.060Z",
+    "directSearched": "2026-11-28T03:08:26.060Z",
+    "directSearchVersion": 2,
+    "direct": [
+      {
+        "url": "https://www.worldchefswithoutborders.org/disaster-relief/donate-to-support-children-affected-by-flooding-in-myanmar/",
+        "org": "Worldchefs Without Borders",
+        "kind": "local",
+        "note": "School supplies for children in flood-hit Sagaing and Ayeyarwady, via Aktion Myanmar appeal",
+        "title": "Donate to Support Children Affected by Flooding in Myanmar"
+      },
+      {
+        "url": "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/",
+        "org": "Worldchefs",
+        "kind": "local",
+        "note": "School supplies for children in flood-hit Sagaing and Ayeyarwady, via Aktion Myanmar appeal",
+        "title": "Donate to Support Children Affected by Flooding in Myanmar - WORLDCHEFS",
+        "published": "2026-08-12T03:08:26.060Z"
+      }
+    ],
+    "seen": "2026-11-28T03:08:26.060Z"
   },
   "ifrc-flood-8073": {
     "at": "2026-11-27T09:08:28.864Z",
@@ -1173,7 +1103,7 @@
       }
     ],
     "membersHash": "ifrc|NP#4cac74df",
-    "seen": "2026-11-27T19:53:06.152Z",
+    "seen": "2026-11-28T03:08:26.060Z",
     "donationSearched": "2026-11-27T09:08:28.864Z",
     "directSearched": "2026-11-27T09:08:28.864Z",
     "directSearchVersion": 2,

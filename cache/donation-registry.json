@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-27T19:53:06.152Z",
+  "updated": "2026-11-28T03:08:26.060Z",
   "fetched": {
-    "societies": "2026-11-27T19:53:06.152Z",
-    "uncr": "2026-11-27T19:53:06.152Z"
+    "societies": "2026-11-28T03:08:26.060Z",
+    "uncr": "2026-11-28T03:08:26.060Z"
   },
   "societies": {
     "AF": {
@@ -2597,22 +2597,6 @@
         "https://donations.redcross.or.ke/home"
       ]
     },
-    "fts.unocha.org/plans/overview/2026/plans": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-26T23:24:59.071Z",
-      "chain": [
-        "https://fts.unocha.org/plans/overview/2026/plans"
-      ]
-    },
-    "go.ifrc.org/countries/81": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-26T23:24:59.071Z",
-      "chain": [
-        "https://go.ifrc.org/countries/81"
-      ]
-    },
     "local4:ifrc-earthquake-8060:support.savethechildren.or.id/donasi-gempa-ntt": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Indonesia\"",
@@ -2623,23 +2607,6 @@
       "place": "Indonesia",
       "name": "Save the Children",
       "title": "Beri Dukungan Terbaikmu untuk Masa Depan Anak Indonesia - Donasi Gempa NTT"
-    },
-    "go.ifrc.org/countries/85": {
-      "ok": false,
-      "reason": "no donation word on the page",
-      "checked": "2026-11-26T23:24:59.071Z",
-      "chain": [
-        "https://go.ifrc.org/countries/85"
-      ]
-    },
-    "ayodonor.pmi.or.id?page=index": {
-      "ok": false,
-      "reason": "blocked to scripts (HTTP 403)",
-      "checked": "2026-11-26T23:24:59.071Z",
-      "chain": [
-        "https://ayodonor.pmi.or.id/?page=index"
-      ],
-      "blocked": true
     },
     "go.ifrc.org/emergencies/8079/overview": {
       "ok": false,
@@ -2677,84 +2644,146 @@
     "croixrouge.bi": {
       "ok": false,
       "reason": "no donation word on the page",
+      "checked": "2026-11-27T19:53:06.152Z",
       "chain": [
         "https://croixrouge.bi/"
-      ],
-      "checked": "2026-11-27T19:53:06.152Z"
+      ]
     },
     "ifrc.org/emergency/kenya-complex-emergency": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-27T19:53:06.152Z",
       "chain": [
         "https://www.ifrc.org/emergency/kenya-complex-emergency"
       ],
-      "blocked": true,
-      "checked": "2026-11-27T19:53:06.152Z"
+      "blocked": true
     },
     "kksh.org.al": {
       "ok": true,
       "reason": "donation word \"dhuro*\"",
+      "checked": "2026-11-27T19:53:06.152Z",
       "chain": [
         "https://www.kksh.org.al/"
-      ],
-      "checked": "2026-11-27T19:53:06.152Z"
+      ]
     },
     "local4:ifrc-flood-8073:oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Nepal\"",
+      "checked": "2026-11-27T19:53:06.152Z",
       "chain": [
         "https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/nepal-floods/"
       ],
       "place": "Nepal",
       "name": "Oxfam GB",
-      "title": "Oxfam GB | Nepal Floods Appeal",
-      "checked": "2026-11-27T19:53:06.152Z"
+      "title": "Oxfam GB | Nepal Floods Appeal"
     },
     "local4:ifrc-flood-8073:childrenofadam.org/all-appeals/nepal-emergency": {
       "ok": true,
       "reason": "donation word \"donat*\", names \"Nepal\"",
+      "checked": "2026-11-27T19:53:06.152Z",
       "chain": [
         "https://childrenofadam.org/all-appeals/nepal-emergency/"
       ],
       "place": "Nepal",
       "name": "Children of Adam",
-      "title": "Nepal Flood Appeal 2026 | Donate Now | Children of Adam",
-      "checked": "2026-11-27T19:53:06.152Z"
+      "title": "Nepal Flood Appeal 2026 | Donate Now | Children of Adam"
     },
     "pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-27T19:53:06.152Z",
       "chain": [
         "https://www.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-27T19:53:06.152Z"
+      "blocked": true
     },
     "ayodonor.pmi.or.id": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-27T19:53:06.152Z",
       "chain": [
         "https://ayodonor.pmi.or.id/"
       ],
-      "blocked": true,
-      "checked": "2026-11-27T19:53:06.152Z"
+      "blocked": true
     },
     "local4:ifrc-earthquake-8055:directrelief.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "asks for crypto, as scams do",
+      "checked": "2026-11-27T19:53:06.152Z",
       "chain": [
         "https://www.directrelief.org/emergency/colombia-earthquake-2026/"
-      ],
-      "checked": "2026-11-27T19:53:06.152Z"
+      ]
     },
     "ifrc.org/emergency/colombia-earthquake-2026": {
       "ok": false,
       "reason": "blocked to scripts (HTTP 403)",
+      "checked": "2026-11-27T19:53:06.152Z",
       "chain": [
         "https://www.ifrc.org/emergency/colombia-earthquake-2026"
       ],
+      "blocked": true
+    },
+    "local4:gdacs-drought-dr-1027449:missionsdoor.org/project/honduras-relief-fund": {
+      "ok": false,
+      "reason": "its title, heading and address name neither the disaster's hazard nor a place of its title",
+      "chain": [
+        "https://www.missionsdoor.org/project/honduras-relief-fund/"
+      ],
+      "checked": "2026-11-28T03:08:26.060Z"
+    },
+    "fts.unocha.org/plans/overview/2026/plans": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://fts.unocha.org/plans/overview/2026/plans"
+      ],
+      "checked": "2026-11-28T03:08:26.060Z"
+    },
+    "go.ifrc.org/countries/81": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/81"
+      ],
+      "checked": "2026-11-28T03:08:26.060Z"
+    },
+    "go.ifrc.org/countries/85": {
+      "ok": false,
+      "reason": "no donation word on the page",
+      "chain": [
+        "https://go.ifrc.org/countries/85"
+      ],
+      "checked": "2026-11-28T03:08:26.060Z"
+    },
+    "ayodonor.pmi.or.id?page=index": {
+      "ok": false,
+      "reason": "blocked to scripts (HTTP 403)",
+      "chain": [
+        "https://ayodonor.pmi.or.id/?page=index"
+      ],
       "blocked": true,
-      "checked": "2026-11-27T19:53:06.152Z"
+      "checked": "2026-11-28T03:08:26.060Z"
+    },
+    "local4:ifrc-flood-8050:worldchefswithoutborders.org/disaster-relief/donate-to-support-children-affected-by-flooding-in-myanmar": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Myanmar\"",
+      "chain": [
+        "https://www.worldchefswithoutborders.org/disaster-relief/donate-to-support-children-affected-by-flooding-in-myanmar/"
+      ],
+      "place": "Myanmar",
+      "title": "Donate to Support Children Affected by Flooding in Myanmar – WORLDCHEFS WITHOUT BORDERS",
+      "checked": "2026-11-28T03:08:26.060Z"
+    },
+    "local4:ifrc-flood-8050:worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar": {
+      "ok": true,
+      "reason": "donation word \"donat*\", names \"Myanmar\"",
+      "chain": [
+        "https://worldchefs.org/donate-to-support-children-affected-by-flooding-in-myanmar/"
+      ],
+      "place": "Myanmar",
+      "name": "WORLDCHEFS",
+      "title": "Donate to Support Children Affected by Flooding in Myanmar",
+      "checked": "2026-11-28T03:08:26.060Z"
     }
   }
 }
